@@ -6,8 +6,8 @@ English–Latin vocabulary only; previously supplied Bulgarian glosses remain.
 
 ## Coverage
 
-13 new grouped cards (159–171), plus eight extensions/cross-links. All 158
-previous cards and their IDs remain. The total becomes 171.
+17 new grouped cards (159–175), plus eight extensions/cross-links. All 158
+previous cards and their IDs remain. The total becomes 175.
 
 | Requested English | Card | Choice / qualification |
 | --- | --- | --- |
@@ -113,18 +113,35 @@ is attested with **ex + ablative** for the support from which something hangs.
 The choice depends on the action, not on whether the hooked shape was manufactured.
 **Affīgere** remains for fastening/attachment, not as a universal English “hook.”
 
+## Scaffolding extension
+
+Four further cards (172–175) cover the scaffold, its members, working deck,
+connections and assembly/dismantling vocabulary. English–Latin only.
+
+- **Māchina, māchinae f.**: [Lewis & Short I.B.3](https://www.alatius.com/ls/index.php?l=machina) explicitly records a scaffold for building, citing Digest 13.6.5 and Pliny 19.2.8 §30. [Morgan–Owens](https://neolatinlexicon.org/latin/scaffolding/) lists **machina** (Levine) and **compages**.
+- **Compāgēs, compāgis f.**: framework; ancient general structure/joint senses, with the scaffolding sense recorded by Morgan–Owens.
+- **Pēgma**: ancient theatrical machinery/board fixtures. Its theatrical examples are not used to claim exact ancient tube-scaffold terminology.
+- **Fistula ferrea**, **fistula ad perpendiculum posita**: our descriptions of a scaffold tube and upright. Ancient **ad perpendiculum** supplies the vertical relation.
+- **Ferrum trānsversum**: recorded [gymnastics horizontal bar](https://neolatinlexicon.org/latin/horizontal_bar/), applied here to the scaffold crossbar; **fistula trānsversa** specifies a hollow tube. No exact ledger/transom distinction is claimed.
+- **Fulcīmentum**: ancient post-classical support/stay; **fulcīmentum oblīquum** is our diagonal-brace description.
+- **Tabulātum**, **tabula**, **scālae**, **gradus**: ancient platform/floor, board, ladder and step vocabulary applied in the scaffold context. Existing cards retain their original senses.
+- **Repāgula**: ancient bars/barriers, especially door bars; guardrail is an explicitly marked functional extension. **Lāmina sub fistulā posita** is our base-plate description.
+- **Iūnctūra**: ancient joint/connection; **vinculum quō duae fistulae coniunguntur** is our functional coupler description. It is not an attested specialized hardware name.
+- **Cōnstruere, ērigere, coniungere, firmāre, fulcīre, dissolvere**: ancient verbs used in composed scaffold sentences. **Dissolvere** has ancient bridge-dismantling use.
+- A search of the Traupman PDF text returned no scaffold headword; this is not a claim that the topic cannot occur anywhere in his work. The named Vatican online selection supplied no independently verified exact component terms. Machine-translated industrial sites were excluded.
+
 ## Validation
 
 - Parsed the final HTML and executed its actual embedded search/filter script
   against a DOM implementation (LinkeDOM).
 - Retained all 158 previous IDs; 150 unaffected cards are byte-equivalent after
   DOM serialization. The eight intended old cards were checked separately.
-- Confirmed 13 unique new IDs, total 171, and accurate hero/category counts.
+- Confirmed 17 unique new IDs, total 175, and accurate hero/category counts.
 - Verified all 29 requested English senses with 29 search queries, plus six
-  searches without macrons, plus two hooked-stick searches; all 37 found their expected cards.
+  searches without macrons, plus two hooked-stick searches; all 37 found their expected cards. A further 12 scaffold/member/action queries also pass (49 total).
 - Checked all 13 filter buttons (12 categories plus All), their pressed state,
-  the no-results display, Clear, and the final `Showing 171 of 171` state.
-- Verified source links on all 21 affected cards and valid internal anchors.
+  the no-results display, Clear, and the final `Showing 175 of 175` state.
+- Verified source links on all 25 affected cards and valid internal anchors.
 - Confirmed the existing CSS and search implementation are unchanged. New cards
   use the existing mobile layout; no new wide tables were introduced.
 - `git diff --check` passes.

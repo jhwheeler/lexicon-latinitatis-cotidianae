@@ -101,6 +101,18 @@ contero, collido, fragor, munus, mandatum, expeditio*, and others.
 - [Vicipaedia: Lodix](https://la.wikipedia.org/wiki/Lodix) supports contemporary blanket usage and supplies ancient dictionary references. It is corroboration, not the sole authority for quantities.
 - Quest/mission choices are explicitly contextual: ancient *expeditio* is primarily a campaign/expedition; a playful quest is our application. *Investigatio* names searching, while *munus* and *mandatum* name an assigned duty or commission. Card 96's established *ausum* preference for adventure remains.
 
+## Hooked-stick clarification
+
+Theo’s stick hooked over a scaffolding bar is now distinguished from fastening
+with a separate hook. **Baculum aduncum** is directly supported by Livy 1.18
+through [Lewis & Short: aduncus](https://www.alatius.com/ls/index.php?l=aduncus).
+The composed example **Theodōrus baculum aduncum ex vecte suspendit** describes
+leaving the stick hanging from the bar; **baculō aduncō vectem prehendit** describes
+catching the bar while holding the stick. [Suspendere](https://www.alatius.com/ls/index.php?l=suspendo)
+is attested with **ex + ablative** for the support from which something hangs.
+The choice depends on the action, not on whether the hooked shape was manufactured.
+**Affīgere** remains for fastening/attachment, not as a universal English “hook.”
+
 ## Validation
 
 - Parsed the final HTML and executed its actual embedded search/filter script
@@ -109,7 +121,7 @@ contero, collido, fragor, munus, mandatum, expeditio*, and others.
   DOM serialization. The eight intended old cards were checked separately.
 - Confirmed 13 unique new IDs, total 171, and accurate hero/category counts.
 - Verified all 29 requested English senses with 29 search queries, plus six
-  searches without macrons; all 35 found their expected cards.
+  searches without macrons, plus two hooked-stick searches; all 37 found their expected cards.
 - Checked all 13 filter buttons (12 categories plus All), their pressed state,
   the no-results display, Clear, and the final `Showing 171 of 171` state.
 - Verified source links on all 21 affected cards and valid internal anchors.

@@ -148,3 +148,8 @@ connections and assembly/dismantling vocabulary. English–Latin only.
 - Full visual browser/mobile rendering was not available: Playwright is
   installed, but its Chromium executable is absent. DOM checks do not establish
   a pixel-level rendering result. No deployment is performed for this unmerged PR.
+
+
+## 25 October playground extension
+
+See [playground-vocabulary-audit.md](playground-vocabulary-audit.md) for 14 further grouped cards (176–189), bringing the PR total to 189. The swing card is now in the new Lūdī et lūdibria category. Earlier counts above describe the construction/play stage; playground validation preserves all 175 of those cards and adds 41 further search checks.

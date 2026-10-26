@@ -113,6 +113,13 @@ is attested with **ex + ablative** for the support from which something hangs.
 The choice depends on the action, not on whether the hooked shape was manufactured.
 **Affīgere** remains for fastening/attachment, not as a universal English “hook.”
 
+*Correction, 26 October 2026:* Livy 1.18.7 (*baculum sine nōdō aduncum*) is the
+augur's crook, the *lituus*, so card 159 now cites it with that sense. The card
+uses **bacillum aduncum**, the series' diminutive. A scaffold tube is not a
+*vectis* (lever, crowbar), so the examples are now **Theodōrus bacillum aduncum
+ex trānsversāriō māchinae suspendit** and **bacillō aduncō trānsversārium
+prehendit**. See [site-vocabulary-corrections.md](site-vocabulary-corrections.md).
+
 ## Scaffolding extension
 
 Four further cards (172–175) cover the scaffold, its members, working deck,
@@ -129,6 +136,7 @@ connections and assembly/dismantling vocabulary. English–Latin only.
 - **Iūnctūra**: ancient joint/connection; **vinculum quō duae fistulae coniunguntur** is our functional coupler description. It is not an attested specialized hardware name.
 - **Cōnstruere, ērigere, coniungere, firmāre, fulcīre, dissolvere**: ancient verbs used in composed scaffold sentences. **Dissolvere** has ancient bridge-dismantling use.
 - A search of the Traupman PDF text returned no scaffold headword; this is not a claim that the topic cannot occur anywhere in his work. The named Vatican online selection supplied no independently verified exact component terms. Machine-translated industrial sites were excluded.
+- *Correction, 26 October 2026:* the ancient member names are attested; only the steel coupler is modern. Card 172 now leads with **māchina** on Digest 13.6.5.7, Vitruvius 7.2.2 and 10.1.1. Pliny 19.2.8 §30 (NH 19.30) means building machinery such as hoists, not scaffolding. **Compāgēs** is demoted to modern lexicographic use (Morgan–Owens): classically it is only "joint, structure". Card 173 now leads with Vitruvius's **arrēctāria** (uprights) and **trānsversāria** (crosspieces) (2.8.20; 7.3.11; 10.1.1) and the Digest's **perticae**. *Fistula ferrea* and *ferrum trānsversum* remain as material and descriptive glosses. Its example is now **Theodōrus bacillum aduncum ex trānsversāriō māchinae suspendit**. See [site-vocabulary-corrections.md](site-vocabulary-corrections.md).
 
 ## Validation
 

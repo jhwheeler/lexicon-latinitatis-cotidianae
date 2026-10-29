@@ -36,7 +36,11 @@ implementation; no translation service or runtime dependency was added.
 - [Older Morgan draft, text edition](https://archive.org/stream/TheLexiconAnglumEtLatinumByDavidMorgan/MorganAndSilvaFurmanUniversityLexicon_djvu.txt):
   its warning under **attic** about the uncertain sense of *subtegulaneus*
   in Pliny was checked, rather than projecting the modern dictionary sense
-  backwards without qualification.
+  backwards without qualification. *Correction, 26 October 2026:* Pliny's
+  sense is not uncertain. NH 36.185 *pavimenta … barbarica atque
+  subtegulanea* means floors "under the roof, indoors" (Lewis & Short); "attic"
+  is a modern application. See
+  [site-vocabulary-corrections.md](site-vocabulary-corrections.md).
 - Lewis & Short through [Alatius](https://www.alatius.com/ls/): readable entries
   were obtained for **forceps, trulla, cochlea/coclea, spatula, tabulatus,
   vectis, lamina, forfex, fastigium, trabs, fundamentum, supellex, reficio,
@@ -78,12 +82,12 @@ specialized shear attachment's identity and name.
 | 147 | Metal shears and the photographed drill attachment | **Forfex** and **lāmina** have ancient relevant senses. The purpose phrase and attachment description are ours. |
 | 148 | Bucket and plumb bob/line | **Situla**, **perpendiculum**; link to the existing **scālae** entry for a ladder. |
 | 149 | Builder, craftsman, carpenter, bricklayer, plasterer, architect | Traupman and ancient lexical bases; modern trade boundaries are context-sensitive. |
-| 150 | Brick, stone, timber, board, beam | Ancient material/tool vocabulary, with Bulgarian construction meanings. |
+| 150 | Brick, stone, timber, board, beam | Ancient material/tool vocabulary, with Bulgarian construction meanings. *Later coctilis* has a short i (Lewis & Short *coctĭlis*; corrected 26 October 2026). |
 | 151 | Plaster, lime, sand, mortar, cement, concrete | Distinguish **calx** (вар), **lithocolla** (цимент), **concrētum** (бетон) and mortar (строителен разтвор / хоросан). Do not turn ancient *caementum* or *calx* into an unqualified modern shopping equivalent. |
 | 152 | Insulation and insulation board | Morgan–Owens records **insulatio**; the thermal qualifier and heat-retaining-board description are explicitly ours. Do not infer a particular EPS/XPS product solely from that functional term. |
 | 153 | Building site, foundations, building, repair, demolition | Ancient nouns/verbs; the site relative clause and examples are composed. |
 | 154 | Roof, tile, gable, two roof slopes | **Tēctum, tēgula, fastīgium**; gable-roof shape is described rather than declared a verified fixed expression. |
-| 155 | Storey, top floor, attic/loft, upstairs | **Tabulātum** has an ancient storey sense. **Subtēgulāneum** is supported by modern lexicography with the ancient-meaning caveat retained. A habitable loft is not defined as a storeroom. |
+| 155 | Storey, top floor, attic/loft, upstairs | **Tabulātum** has an ancient storey sense. **Subtēgulāneum** "attic" is a modern application; the ancient adjective means "under the roof, indoors" (Pliny, NH 36.185; corrected 26 October 2026). A habitable loft is not defined as a storeroom. |
 | 156 | Low side wall/knee wall, height, raising the walls/roof | Descriptive **pariēs humilis**; no universal equivalence asserted between an exterior Bulgarian **надзид** and an internal attic partition. |
 | 157 | Door, window, ceiling, flooring cross-reference | Explain Bulgarian **таван** as both ceiling and attic in different contexts; **lacūnar** is specifically a panelled/coffered ceiling. |
 | 158 | Living room, artist's studio, furniture, armchair, sofa | Traupman's room/furniture phrases; **officīna artificis** in Morgan–Owens; **supellex** as a collective ancient noun. |

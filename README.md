@@ -14,6 +14,7 @@ Site: https://jhwheeler.github.io/lexicon-latinitatis-cotidianae/
 - `src/styles.css`: styling.
 - `src/search.js`: browser search and filters.
 - `scripts/build.py`: validates the data and generates the self-contained `index.html`.
+- `scripts/html_to_data.py`: the reverse; extracts data from a lexicon page, for porting content that was edited directly in an old `index.html`.
 
 Edit the topic JSON, then run these commands from the repository root (Python 3.10 or newer; no packages to install):
 

@@ -87,6 +87,22 @@ Unknown fields, unsupported block types, duplicate entry IDs or HTML anchors, un
 6. Open generated `index.html` in a browser and check affected searches and filters.
 7. Commit both sources and generated output. Open a PR; merging still publishes through the existing Pages configuration.
 
+## Converting a hand-edited page
+
+`scripts/html_to_data.py` is the reverse of the builder. It reads a lexicon page (a hand-edited one from before this migration, or a generated one) and writes `data/catalog.json` and `data/entries/*.json`; `--template` also writes `src/page.html`, `src/styles.css` and `src/search.js`. Rich text is serialized as the data files store it: entities decoded and re-escaped, attributes in alphabetical order. Markup outside the schema (an unknown block element or class, stray text, an entry outside a category) stops the conversion instead of being dropped. Category counts in the old page are ignored, since the builder regenerates them.
+
+Use it to port a branch that still edits `index.html` directly:
+
+```sh
+git show some-branch:index.html > /tmp/old.html
+python3 scripts/html_to_data.py /tmp/old.html --out /tmp/converted
+diff -r data /tmp/converted/data   # review, then copy the intended changes into data/
+```
+
+Entry numbers that collide with entries already in `data/` need fresh IDs before rebuilding. The tests check that converting the generated page reproduces `data/` and `src/` exactly.
+
+Run on `index.html` from main commit `da9364b`, the converter reproduces this PR's original 189-entry data and `src/` byte for byte.
+
 ## Migration verification
 
 Against main commit `da9364bcb61a476709c96f44249bd1147c7039c5`:

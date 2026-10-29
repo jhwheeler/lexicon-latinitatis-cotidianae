@@ -116,3 +116,5 @@ Against main commit `da9364bcb61a476709c96f44249bd1147c7039c5`:
 - No vocabulary corrections or additions are bundled with this structural migration.
 
 The larger open vocabulary PR (#1) still edits the old page directly. When integrating that branch, migrate its intended content changes into the appropriate JSON files and regenerate; do not resolve it by replacing the generated page with the old HTML. Existing overlapping entry numbers will need fresh unique IDs. This PR does not alter or close #1.
+
+PR #5 and the rebased PR #1 (`fabulae-vocab-rebased`) were later ported this way, each converted with `html_to_data.py` and merged entry by entry into the j-orthography data: #5's new cards became entry-194 and entry-195, and #1's 76 cards became entry-196 to entry-270 (its adze card was folded into entry-194).

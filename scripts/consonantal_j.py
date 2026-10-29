@@ -53,6 +53,7 @@ KEEP = {
     # not Latin: English prose and names
     'apuleius': 'English form of the author’s name in English prose',
     'logeion': 'name of the dictionary site',
+    'yields': 'English verb in unmarked prose (y counts as a vowel)',
     # citation labels keep the dictionary's own headword (L&S prints janua, jus, but deicio)
     'deicio': 'Lewis & Short headword in a citation label (L&S: dē-ĭcĭo, also dejicio)',
 }

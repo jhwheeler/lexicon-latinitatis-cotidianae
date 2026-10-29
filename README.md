@@ -6,12 +6,30 @@ Site: https://jhwheeler.github.io/lexicon-latinitatis-cotidianae/
 
 ## Editing
 
-**This repository is the authoritative source.** Read and edit the current `index.html` on `main`, then commit here. GitHub Pages publishes those changes automatically.
+**This repository is the authoritative source.** Fetch current `main` before editing.
 
-The ChatGPT Library file `Lexicon_Latinitatis_Cotidianae.html` is a snapshot/export and may be out of date. Never edit only that copy or import it over newer repository content.
+- `data/catalog.json`: ordered categories, their headings, and filter order.
+- `data/entries/<category>.json`: dictionary entries, grouped by topic.
+- `src/page.html`: page shell and editorial review notes.
+- `src/styles.css`: styling.
+- `src/search.js`: browser search and filters.
+- `scripts/build.py`: validates the data and generates the self-contained `index.html`.
+- `scripts/html_to_data.py`: the reverse; extracts data from a lexicon page, for porting content that was edited directly in an old `index.html`.
 
-There is no automatic GitHub–Library synchronization. To refresh the Library copy, export the committed `index.html` and replace the existing Library item, retaining its identity and snapshot notice. See [AGENTS.md](AGENTS.md) for the editing workflow.
+Edit the topic JSON, then run these commands from the repository root (Python 3.10 or newer; no packages to install):
 
-## Publishing
+```sh
+python3 scripts/build.py
+python3 scripts/build.py --check
+python3 -m unittest discover -s tests -v
+```
 
-GitHub Pages is configured to deploy from `main`, folder `/(root)`. The site is the self-contained `index.html`; no build or external dependencies are needed.
+Commit the source changes **and regenerated `index.html`** together. Do not edit `index.html` directly: it is generated. The PR check rejects invalid data or a stale generated page. The hero total, category totals, filter labels and category markup are generated automatically.
+
+See [the data format and architecture decision](docs/data-format.md) for an entry example, field definitions, and why generation happens before publication rather than in the browser.
+
+## Publishing and exports
+
+GitHub Pages continues to publish `main`, folder `/(root)`. No deployment-setting change is needed. The generated page includes its CSS, search code and vocabulary: it can still be downloaded, opened directly and searched offline. Entries remain readable when JavaScript is disabled.
+
+The ChatGPT Library file `Lexicon_Latinitatis_Cotidianae.html` is a snapshot/export and may be out of date. Never edit only that copy or import it over newer repository content. There is no automatic GitHub–Library synchronization. To refresh an export, use the **committed, generated** `index.html`, retaining its snapshot notice and the Library item's identity. See [AGENTS.md](AGENTS.md).

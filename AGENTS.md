@@ -2,13 +2,13 @@
 
 ## Source of truth
 
-The authoritative lexicon is `index.html` on the `main` branch of this repository:
+The authoritative lexicon is the structured data in `data/` on the `main` branch of this repository:
 https://github.com/jhwheeler/lexicon-latinitatis-cotidianae
 
 Published site:
 https://jhwheeler.github.io/lexicon-latinitatis-cotidianae/
 
-For any request to read, extend, correct, or edit the lexicon, fetch the current repository version first. Make and commit edits here so they reach the live site through GitHub Pages.
+For any request to read, extend, correct, or edit the lexicon, fetch the current repository version first. Edit topic JSON in `data/entries/` and category metadata in `data/catalog.json`. Page layout, styles and search live in `src/`. Run `python3 scripts/build.py` and commit the source changes together with the regenerated `index.html`; never edit the generated page directly. Run `python3 scripts/build.py --check` and `python3 -m unittest discover -s tests -v` before committing. GitHub Pages still publishes the generated root page. See `docs/data-format.md` for the data format. To port content from a branch or export that edited `index.html` directly, extract it with `python3 scripts/html_to_data.py <page> --out <dir>` and merge the resulting JSON into `data/`; never resolve such a branch by copying its page over the generated one.
 
 ## Exported copies
 

@@ -101,7 +101,7 @@ diff -r data /tmp/converted/data   # review, then copy the intended changes into
 
 Entry numbers that collide with entries already in `data/` need fresh IDs before rebuilding. The tests check that converting the generated page reproduces `data/` and `src/` exactly.
 
-Run on `index.html` from main commit `da9364b`, the converter reproduces this PR's original 189-entry data and `src/` byte for byte.
+Run on `index.html` from main commit `da9364b`, the converter reproduces this PR's original 189-entry data and `src/` byte for byte. Main's entries 190–193 (commit `56a2108`) were brought into the data with it; the page generated from the result matches that commit's hand-edited page in a browser DOM comparison of every entry, heading, tag, link, text node, category count, filter and the total, and in 418 search queries.
 
 ## Migration verification
 

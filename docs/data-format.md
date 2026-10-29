@@ -81,7 +81,7 @@ Unknown fields, unsupported block types, duplicate entry IDs or HTML anchors, un
 
 1. Fetch current `main` and read `AGENTS.md`.
 2. Edit the relevant topic JSON. Add a catalog category and filter only when necessary.
-3. Keep attested words, later technical uses and our working formations clearly distinguished; preserve citations and macrons.
+3. Keep attested words, later technical uses and our working formations clearly distinguished; preserve citations and macrons. Write consonantal i as j (`python3 scripts/consonantal_j.py --list`, then `--write`; rules in `AGENTS.md`).
 4. Run `python3 scripts/build.py`.
 5. Run `python3 scripts/build.py --check` and `python3 -m unittest discover -s tests -v`.
 6. Open generated `index.html` in a browser and check affected searches and filters.

@@ -9,7 +9,7 @@
   const total = entries.length;
   let active = 'all';
 
-  const fold = s => String(s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/æ/g,'ae').replace(/œ/g,'oe');
+  const fold = s => String(s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/æ/g,'ae').replace(/œ/g,'oe').replace(/j/g,'i'); // jam = iam
 
   function apply() {
     const q = fold(search.value.trim());

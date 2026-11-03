@@ -1,10 +1,30 @@
 (() => {
+  const themeToggle = document.getElementById('theme-toggle');
+  function syncTheme() {
+    const light = document.documentElement.dataset.theme === 'light';
+    document.getElementById('theme-label').textContent = light ? 'Dark mode' : 'Light mode';
+    themeToggle.setAttribute('aria-label', light ? 'Switch to dark mode' : 'Switch to light mode');
+    document.querySelector('meta[name="theme-color"]').content = light ? '#f4f0e8' : '#171512';
+  }
+  themeToggle.addEventListener('click', () => {
+    const theme = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
+    document.documentElement.dataset.theme = theme;
+    try { localStorage.setItem('lexicon-theme', theme); } catch {}
+    syncTheme();
+  });
+  syncTheme();
   const search = document.getElementById('search'), clear = document.getElementById('clear');
   const count = document.getElementById('results'), empty = document.getElementById('empty');
   const results = document.getElementById('search-results'), list = document.getElementById('search-result-list');
   const entries = [...document.querySelectorAll('[data-entry]')];
   const sections = [...document.querySelectorAll('[data-category-section]')];
   const chips = [...document.querySelectorAll('[data-filter]')];
+  const categoryMenu = document.getElementById('category-menu');
+  const categoryLabel = document.getElementById('active-category');
+  const desktop = window.matchMedia('(min-width: 960px)');
+  const adaptCategories = () => { categoryMenu.open = desktop.matches; };
+  desktop.addEventListener('change', adaptCategories);
+  adaptCategories();
   let active = 'all';
   let renderedQuery = null, renderedCategory = null;
   const fold = s => String(s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/æ/g, 'ae').replace(/œ/g, 'oe').replace(/j/g, 'i');
@@ -99,6 +119,7 @@
   }
   function apply() {
     const query = fold(search.value.trim());
+    categoryLabel.textContent = chips.find(chip => chip.dataset.filter === active).textContent;
     // Blurring the search field fires change even when the query is unchanged.
     // Keep result nodes stable so that click still reaches a disclosure/link.
     if (query === renderedQuery && active === renderedCategory) return;
@@ -138,6 +159,7 @@
   ['input', 'change', 'search'].forEach(event => search.addEventListener(event, apply));
   chips.forEach(chip => chip.addEventListener('click', () => {
     active = chip.dataset.filter; chips.forEach(other => other.setAttribute('aria-pressed', String(other === chip))); apply();
+    if (!desktop.matches) { categoryMenu.open = false; categoryMenu.querySelector('summary').focus(); }
   }));
   clear.addEventListener('click', () => { reset(); search.focus(); });
   search.addEventListener('keydown', event => { if (event.key === 'Escape') clear.click(); });

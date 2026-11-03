@@ -112,3 +112,84 @@ test('phone and dark layouts keep matching text usable without horizontal overfl
   await page.locator('.search-result').first().locator('.search-context .entry-body').waitFor();
   assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
 });
+
+test('desktop has a single-line title and a sidebar beside the primary search', async () => {
+  await search('pyjama');
+  for (const width of [1024, 1280, 1440]) {
+    await page.setViewportSize({ width, height: 900 });
+    const layout = await page.evaluate(() => {
+      const rect = selector => document.querySelector(selector).getBoundingClientRect();
+      return {
+        headerHeight: rect('.hero').height,
+        titleHeight: rect('h1').height,
+        titleLineHeight: parseFloat(getComputedStyle(document.querySelector('h1')).lineHeight),
+        sidebarRight: rect('.categories').right,
+        searchLeft: rect('.toolbar').left,
+        resultTop: rect('.search-result').top,
+        open: document.getElementById('category-menu').open,
+        overflow: document.documentElement.scrollWidth > innerWidth
+      };
+    });
+    assert.equal(layout.open, true);
+    assert.equal(layout.overflow, false);
+    assert.ok(layout.titleHeight < layout.titleLineHeight * 1.1);
+    assert.ok(layout.headerHeight < 120);
+    assert.ok(layout.sidebarRight < layout.searchLeft);
+    assert.ok(layout.resultTop < 250);
+  }
+  assert.doesNotMatch(await page.locator('.hero').textContent(), /Theo|Theodore|Theodōr/);
+  await page.evaluate(() => window.scrollTo(0, 300));
+  assert.ok(Math.abs((await page.locator('.toolbar').boundingBox()).y) < 2);
+});
+
+test('mobile category disclosure preserves the query, selected filter and keyboard focus', async () => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.locator('#category-menu:not([open])').waitFor();
+  await search('pyjama');
+  await page.locator('#category-menu > summary').click();
+  await page.locator('[data-filter="vestitus"]').click();
+  assert.equal(await page.locator('#category-menu').getAttribute('open'), null);
+  assert.equal(await page.locator('#active-category').textContent(), 'Vestītus');
+  assert.equal(await page.locator('#search').inputValue(), 'pyjama');
+  assert.equal(await page.locator('.search-result').count(), 2);
+  assert.equal(await page.evaluate(() => document.activeElement === document.querySelector('#category-menu > summary')), true);
+  await page.setViewportSize({ width: 1280, height: 900 });
+  await page.locator('#category-menu[open]').waitFor({ state: 'attached' });
+  assert.equal(await page.locator('[data-filter="vestitus"]').getAttribute('aria-pressed'), 'true');
+  await page.setViewportSize({ width: 320, height: 700 });
+  await page.locator('#category-menu:not([open])').waitFor();
+  assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
+  assert.ok((await page.locator('.search-result').first().boundingBox()).y < 300);
+});
+
+test('dark is the default even on a light system; the keyboard toggle persists its choice', async () => {
+  await page.emulateMedia({ colorScheme: 'light' });
+  await page.evaluate(() => localStorage.removeItem('lexicon-theme'));
+  await page.reload();
+  assert.equal(await page.locator('html').getAttribute('data-theme'), 'dark');
+  assert.equal(await page.evaluate(() => getComputedStyle(document.documentElement).colorScheme), 'dark');
+  await search('pyjama');
+  const toggle = page.getByRole('button', { name: 'Switch to light mode' });
+  await toggle.focus(); await toggle.press('Space');
+  assert.equal(await page.locator('html').getAttribute('data-theme'), 'light');
+  assert.equal(await page.locator('#search').inputValue(), 'pyjama');
+  assert.equal(await page.locator('.search-result').count(), 5);
+  await page.reload();
+  assert.equal(await page.locator('html').getAttribute('data-theme'), 'light');
+  assert.equal(await page.evaluate(() => getComputedStyle(document.documentElement).colorScheme), 'light');
+  await page.getByRole('button', { name: 'Switch to dark mode' }).click();
+  await page.reload();
+  assert.equal(await page.locator('html').getAttribute('data-theme'), 'dark');
+});
+
+test('mobile theme toggle works when saving preferences is blocked', async () => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.evaluate(() => Object.defineProperty(window, 'localStorage', { get() { throw new Error('Storage blocked'); } }));
+  await page.getByRole('button', { name: 'Switch to light mode' }).click();
+  assert.equal(await page.locator('html').getAttribute('data-theme'), 'light');
+  await page.getByRole('button', { name: 'Switch to dark mode' }).click();
+  assert.equal(await page.locator('html').getAttribute('data-theme'), 'dark');
+  await search('pyjama');
+  assert.equal(await page.locator('.search-result').count(), 5);
+  assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
+});

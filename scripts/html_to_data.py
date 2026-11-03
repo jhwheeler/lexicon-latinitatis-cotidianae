@@ -235,7 +235,12 @@ def template(page):
     shell, search = cut(r'<script>\n(.*?)</script>', '{{search}}', shell)
     shell, _ = cut(r'<div class="chips">(.*?)</div>', '{{filters}}', shell)
     shell, _ = cut(r'<p id="empty"[^>]*>.*?</p>\n(.*)\n</main>', '{{entries}}', shell)
-    shell, _ = cut(r'<p class="eyebrow">[^<]*?· (\d+) grouped entries', '{{entry_count}}', shell)
+    # Current pages keep the count in the footer; older exports used the hero.
+    count_pattern = (r'<p class="footer-note">(\d+) grouped entries'
+                     if '<p class="footer-note">' in shell and
+                     re.search(r'<p class="footer-note">\d+ grouped entries', shell)
+                     else r'<p class="eyebrow">[^<]*?· (\d+) grouped entries')
+    shell, _ = cut(count_pattern, '{{entry_count}}', shell)
     if not shell.startswith(GENERATED):
         shell = GENERATED + shell
     return shell, styles, search

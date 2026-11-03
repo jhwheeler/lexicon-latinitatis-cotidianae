@@ -62,6 +62,30 @@ test('category filters constrain search; Clear and Escape restore all original c
   assert.equal(await page.locator('[data-filter="all"]').getAttribute('aria-pressed'), 'true');
 });
 
+test('scoped empty searches name the category and can search all categories without losing the query', async () => {
+  for (const width of [1280, 390]) {
+    await page.setViewportSize({ width, height: 900 });
+    await page.locator('#clear').click();
+    if (width < 960) await page.locator('#category-menu > summary').click();
+    await page.locator('[data-filter="vestitus"]').click();
+    await search('climb');
+    assert.equal(await page.locator('.search-result').count(), 0);
+    assert.equal(await page.locator('#empty-message').textContent(), 'No matches in Vestītus.');
+    assert.match(await page.locator('#results').textContent(), /0 matching entries in Vestītus/);
+    await page.getByRole('button', { name: 'Search all categories', exact: true }).click();
+    assert.equal(await page.locator('#search').inputValue(), 'climb');
+    assert.equal(await page.locator('[data-filter="all"]').getAttribute('aria-pressed'), 'true');
+    assert.equal(await page.locator('[data-filter="vestitus"]').getAttribute('aria-pressed'), 'false');
+    assert.equal(await page.locator('#active-category').textContent(), 'Omnia');
+    assert.equal(await page.locator('#search').evaluate(node => node === document.activeElement), true);
+    assert.equal(await page.locator('#empty').isVisible(), false);
+    assert.match(await page.locator('#search-result-list').textContent(), /scandō/);
+    await search('no-such-lemma-12345');
+    assert.equal(await page.locator('#empty-message').textContent(), 'No entries match that search.');
+    assert.equal(await page.locator('#search-all').isVisible(), false);
+  }
+});
+
 test('source-only and alias-only matches are explained and retain context', async () => {
   await search('John C. Traupman');
   const source = page.locator('.search-result').filter({ hasText: 'Source note' }).first();

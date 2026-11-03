@@ -69,6 +69,7 @@ details.principles summary { cursor:pointer; font:700 .9rem ui-sans-serif, syste
 @media (max-width:720px) { .sources-grid { grid-template-columns:1fr; } }
 
 .empty { display:none; margin:52px 0; text-align:center; color:var(--muted); font:600 1rem ui-sans-serif, system-ui, sans-serif; }
+.empty > span { display:block; margin-bottom:16px; }
 [hidden] { display:none !important; }
 footer { border-top:1px solid var(--line); color:var(--muted); padding:24px 0 48px; font:500 .82rem ui-sans-serif, system-ui, sans-serif; }
 @media (max-width:959px) {

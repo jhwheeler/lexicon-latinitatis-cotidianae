@@ -87,6 +87,7 @@ details.principles summary { cursor:pointer; font:700 .9rem ui-sans-serif, syste
 @media (max-width:720px) { .sources-grid { grid-template-columns:1fr; } }
 
 .empty { display:none; margin:52px 0; text-align:center; color:var(--muted); font:600 1rem ui-sans-serif, system-ui, sans-serif; }
+.empty > span { display:block; margin-bottom:16px; }
 [hidden] { display:none !important; }
 footer { border-top:1px solid var(--line); color:var(--muted); padding:24px 0 48px; font:500 .82rem ui-sans-serif, system-ui, sans-serif; }
 @media (max-width:959px) {
@@ -182,7 +183,7 @@ mark { background:#f5dfa1; color:#352510; border-radius:3px; padding:0 .08em; bo
   </details>
 </aside>
 <main><section id="search-results" aria-label="Search results" hidden><div id="search-result-list" class="entries"></div></section>
-<p id="empty" class="empty">No entries match that search.</p>
+<p id="empty" class="empty"><span id="empty-message">No entries match that search.</span><button id="search-all" class="clear" type="button" hidden>Search all categories</button></p>
 <section class="category" data-category-section="corpus" id="corpus"><div class="category-heading"><div><p class="eyebrow">Body, health &amp; movement</p><h2 lang="la">Corpus et mōtus</h2></div><span class="category-count">12 entries</span></div><div class="entries"><article class="entry" data-entry data-entry-id="entry-1" data-category="corpus" data-search="Scratch scabō, scabere, scābī Ancient Latin scabō, scabere, scābī — scratch or scrape; no attested supine is supplied in Lewis &amp; Short. scalpō, scalpere, scalpsī, scalptum — scratch, scrape, carve, engrave. scabiēs f. — an itching or scabby skin condition; mange. It is broader than the modern diagnosis “scabies.” The classical dictionaries give accusative scabiem and ablative scabiē , without supplying a genitive. scaber, scabra, scabrum — rough, scabby. Nōlī scabere. — Don’t scratch. scrībō, scrībere, scrīpsī, scrīptum — write; historically associated with scratching or incising. English script belongs to this family.">
 <header class="entry-head"><div><p class="eyebrow">Scratch</p><h3 lang="la">scabō, scabere, scābī</h3></div><div class="tags"><span class="tag">Ancient Latin</span></div></header>
 <div class="entry-body"><ul>
@@ -4276,6 +4277,7 @@ mark { background:#f5dfa1; color:#352510; border-radius:3px; padding:0 .08em; bo
   syncTheme();
   const search = document.getElementById('search'), clear = document.getElementById('clear');
   const count = document.getElementById('results'), empty = document.getElementById('empty');
+  const emptyMessage = document.getElementById('empty-message'), searchAll = document.getElementById('search-all');
   const results = document.getElementById('search-results'), list = document.getElementById('search-result-list');
   const entries = [...document.querySelectorAll('[data-entry]')];
   const sections = [...document.querySelectorAll('[data-category-section]')];
@@ -4399,7 +4401,10 @@ mark { background:#f5dfa1; color:#352510; border-radius:3px; padding:0 .08em; bo
       const fragment = document.createDocumentFragment();
       matching.forEach(item => fragment.append(result(item, query))); list.append(fragment);
     }
-    count.textContent = query ? matching.length + ' matching entries · definitions first' : 'Showing ' + matching.length + ' of ' + entries.length;
+    const scope = active === 'all' ? '' : ' in ' + categoryLabel.textContent;
+    count.textContent = query ? matching.length + ' matching entries' + scope + ' · definitions first' : 'Showing ' + matching.length + ' of ' + entries.length + scope;
+    emptyMessage.textContent = active === 'all' ? 'No entries match that search.' : 'No matches' + scope + '.';
+    searchAll.hidden = active === 'all' || matching.length > 0;
     empty.style.display = matching.length ? 'none' : 'block';
   }
   function reset() {
@@ -4423,6 +4428,11 @@ mark { background:#f5dfa1; color:#352510; border-radius:3px; padding:0 .08em; bo
     if (!desktop.matches) { categoryMenu.open = false; categoryMenu.querySelector('summary').focus(); }
   }));
   clear.addEventListener('click', () => { reset(); search.focus(); });
+  searchAll.addEventListener('click', () => {
+    active = 'all';
+    chips.forEach(chip => chip.setAttribute('aria-pressed', String(chip.dataset.filter === 'all')));
+    apply(); search.focus();
+  });
   search.addEventListener('keydown', event => { if (event.key === 'Escape') clear.click(); });
   apply();
 })();

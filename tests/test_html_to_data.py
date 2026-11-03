@@ -55,6 +55,15 @@ class ConverterTests(unittest.TestCase):
                                             '<a href="https://logeion.uchicago.edu/probo" target="_blank">L&amp;S</a>'}]},
                 {'type': 'paragraph', 'html': 'Note.', 'class': 'source-note'}]})
 
+    def test_legacy_hero_count_can_still_be_extracted(self):
+        _, entries = converter.convert(self.page)
+        count = sum(len(items) for items in entries.values())
+        page = self.page.replace(f'<p class="footer-note">{count} grouped entries · ', '<p class="footer-note">', 1)
+        page = page.replace('<header class="hero wrap">',
+                            f'<header class="hero wrap"><p class="eyebrow">Lexicon vīvum · {count} grouped entries</p>', 1)
+        shell, _, _ = converter.template(page)
+        self.assertIn('<p class="eyebrow">Lexicon vīvum · {{entry_count}} grouped entries</p>', shell)
+
     def test_markup_outside_schema_rejected(self):
         for old, new in (('<div class="entry-body"><ul>', '<div class="entry-body"><table></table><ul>'),
                          ('<div class="entry-body"><ul>', '<div class="entry-body">stray text<ul>'),

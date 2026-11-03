@@ -33,6 +33,8 @@ See [the data format and architecture decision](docs/data-format.md) for an entr
 
 A search shows matching passages with their Latin expression, with short definition rows ranked before examples. Matches are highlighted using the same macron-insensitive and i/j-insensitive normalization as filtering. Each result can expand to show its complete entry and source notes; clearing the query returns to the original grouped cards. Matches found only in search aliases are identified explicitly. Macron guidance and editorial review notes are in the footer, linked by “About this lexicon”.
 
+Search stays above the results. Category filters appear in a sticky sidebar on desktop and in a collapsible panel below search on smaller screens. Selecting a category on mobile closes the panel, shows the selected category in its summary and returns keyboard focus to that summary. Resizing preserves the active category and query. The compact header uses a single-line title on desktop; entry counts and review history stay in the footer. Dark mode is the default; the header toggle switches to light mode and saves the choice locally. Saved preferences are applied before rendering the page, and the toggle still works when browser storage is unavailable.
+
 Browser regression checks use Node.js and Playwright (development only; the published page has no runtime dependencies):
 
 ```sh

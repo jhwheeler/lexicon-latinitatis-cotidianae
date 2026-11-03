@@ -15,6 +15,7 @@
   syncTheme();
   const search = document.getElementById('search'), clear = document.getElementById('clear');
   const count = document.getElementById('results'), empty = document.getElementById('empty');
+  const emptyMessage = document.getElementById('empty-message'), searchAll = document.getElementById('search-all');
   const results = document.getElementById('search-results'), list = document.getElementById('search-result-list');
   const entries = [...document.querySelectorAll('[data-entry]')];
   const sections = [...document.querySelectorAll('[data-category-section]')];
@@ -138,7 +139,10 @@
       const fragment = document.createDocumentFragment();
       matching.forEach(item => fragment.append(result(item, query))); list.append(fragment);
     }
-    count.textContent = query ? matching.length + ' matching entries · definitions first' : 'Showing ' + matching.length + ' of ' + entries.length;
+    const scope = active === 'all' ? '' : ' in ' + categoryLabel.textContent;
+    count.textContent = query ? matching.length + ' matching entries' + scope + ' · definitions first' : 'Showing ' + matching.length + ' of ' + entries.length + scope;
+    emptyMessage.textContent = active === 'all' ? 'No entries match that search.' : 'No matches' + scope + '.';
+    searchAll.hidden = active === 'all' || matching.length > 0;
     empty.style.display = matching.length ? 'none' : 'block';
   }
   function reset() {
@@ -162,6 +166,11 @@
     if (!desktop.matches) { categoryMenu.open = false; categoryMenu.querySelector('summary').focus(); }
   }));
   clear.addEventListener('click', () => { reset(); search.focus(); });
+  searchAll.addEventListener('click', () => {
+    active = 'all';
+    chips.forEach(chip => chip.setAttribute('aria-pressed', String(chip.dataset.filter === 'all')));
+    apply(); search.focus();
+  });
   search.addEventListener('keydown', event => { if (event.key === 'Escape') clear.click(); });
   apply();
 })();

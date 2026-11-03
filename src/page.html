@@ -17,7 +17,24 @@
 <header class="hero wrap">
   <p class="eyebrow">Lexicon vīvum · {{entry_count}} grouped entries · updated 29 October 2026</p>
   <h1 lang="la">Lexicon Latīnitātis Cotīdiānae</h1>
-  <p class="lede">Everyday Latin for conversation, family routines and play with Theo. Long vowels carry macrons; uncertain loanword quantities and our own modern formations are clearly identified.</p>
+  <p class="lede">Everyday Latin for conversation, family routines and play with Theo. </p>
+  <p class="about-link"><a href="#about">About this lexicon</a></p>
+</header>
+<nav class="toolbar" aria-label="Lexicon search and filters">
+  <div class="wrap">
+    <div class="search-row">
+      <input id="search" class="search" type="search" autocomplete="off" placeholder="Search Latin, English or Bulgarian…" aria-label="Search the lexicon">
+      <button id="clear" class="clear" type="button">Clear</button>
+    </div>
+    <div class="meta"><span id="results" role="status" aria-live="polite">Search is starting… If this stays visible, reopen the file in a browser that allows JavaScript.</span><span>Macrons optional in search</span></div>
+    <div class="chips">{{filters}}</div>
+  </div>
+</nav>
+<main class="wrap"><section id="search-results" aria-label="Search results" hidden><div id="search-result-list" class="entries"></div></section>
+<p id="empty" class="empty">No entries match that search.</p>
+{{entries}}
+</main>
+<footer id="about"><div class="wrap"><h2>About this lexicon</h2>
   <details class="principles"><summary>Macrons, usage and evidence</summary>
 <p>Macrons mark long vowels; short vowels are left plain. A heavy syllable is not automatically a long vowel. Consonantal i is written j (<span lang="la">jam, ejus, conjungō</span>), and the vowel before intervocalic j is left unmarked (<span lang="la">major</span>); search treats i and j alike. Inflected examples, genitives, principal parts and Latin headings are included in the review.</p>
 <p>For ancient vocabulary, the main references are Lewis &amp; Short and Lewis’s <em>Elementary Latin Dictionary</em> through Perseus and Logeion, with Dickinson’s core list for cross-checking. Hidden quantities are also compared against Bennett’s discussion with Michelson’s corrections and notes on Allen. Dictionary omissions are not automatically proof of shortness; disputed lengths are identified where relevant.</p>
@@ -41,21 +58,7 @@
 <p class="source-note">29 October 2026 addition: the everyday words worked into the fābulae in the 29 October vocabulary pass, with an everyday-vocabulary survey of the texts. 14 grouped entries (<a href="#vocab-271">entry-271</a> to entry-284) cover electric light and sockets, kitchen appliances, the bathroom, the car, getting about, Dad’s bag, fine weather, geography, time, exclamations and spoken phrases, quiet and gestures, and cooking words from the <span lang="la">Culīna Theodōrī</span>; 42 existing entries gain words and examples (family, sleep, bed, clothes, towels, teeth, body, feelings, rooms, cupboards, stairs, doors and shutters, ball games, birds, shops, the table). Every example is quoted from the current texts; Traupman pages were checked in the book. The bath towel is <span lang="la">linteum</span> and the hand towel <span lang="la">mantēle</span> (not <span lang="la">gausapina</span> or <span lang="la">manutergium</span>); <span lang="la">trulla</span> is also the ladle; the toothbrush is <span lang="la">pēniculus dentārius</span> beside <span lang="la">pēnicillus</span>; <span lang="la">lābellum</span> has a long ā (de Vaan). Search <strong>vocabulary</strong> to see the addition.</p><div class="sources-grid"><div class="source-card"><strong>Selected quantity corrections</strong><ul><li>ramus / ramulus / ramos → <span lang="la">rāmus / rāmulus / rāmōs</span></li><li>gravedō / gravedinis → <span lang="la">gravēdō / gravēdinis</span></li><li>involucrum / manubrium → <span lang="la">involūcrum / manūbrium</span></li><li>scabī / vesīca / semita → <span lang="la">scābī / vēsīca / sēmita</span></li><li>vaccinium / morum → <span lang="la">vaccīnium / mōrum</span></li><li>frīgeō / algēō / fervēō / languēō → <span lang="la">frīgeō / algeō / ferveō / langueō</span></li><li>elaborātiō / recognitiō → <span lang="la">ēlabōrātiō / recōgnitiō</span></li><li>program(m)ātum as a noun genitive plural → <span lang="la">programmatum; verbal programmātum is a different form</span></li></ul></div><div class="source-card"><strong>Usage corrections</strong><p>Ancient <span lang="la">fermentō, fermentēscō</span> and <span lang="la">vapōrō</span> are no longer called exclusively later inventions. Berry names distinguish modern botanical use from uncertain ancient identification. Totoro, the magnetic-toy phrase and specific Git phrases are labelled as our own adaptations.</p><p>The kettle expression and unsupported yogurt or coffee stem quantities are described with their actual level of evidence. Source links appear inside each entry.</p></div></div>
 <p class="source-note"><a href="https://logeion.uchicago.edu/" target="_blank" rel="noopener noreferrer">Logeion dictionaries</a> · <a href="https://github.com/PerseusDL/lexica" target="_blank" rel="noopener noreferrer">Perseus dictionary texts</a> · <a href="https://www.alatius.com/latin/bennetthidden.html" target="_blank" rel="noopener noreferrer">Hidden quantities: evidence and disputes</a> · <a href="https://dcc.dickinson.edu/latin-core-list1" target="_blank" rel="noopener noreferrer">Dickinson core vocabulary</a> · <a href="https://neolatinlexicon.org/" target="_blank" rel="noopener noreferrer">Morgan–Owens Neo-Latin Lexicon</a></p>
 </details>
-</header>
-<nav class="toolbar" aria-label="Lexicon search and filters">
-  <div class="wrap">
-    <div class="search-row">
-      <input id="search" class="search" type="search" autocomplete="off" placeholder="Search Latin, English or Bulgarian…" aria-label="Search the lexicon">
-      <button id="clear" class="clear" type="button">Clear</button>
-    </div>
-    <div class="meta"><span id="results" role="status" aria-live="polite">Search is starting… If this stays visible, reopen the file in a browser that allows JavaScript.</span><span>Macrons optional in search</span></div>
-    <div class="chips">{{filters}}</div>
-  </div>
-</nav>
-<main class="wrap"><p id="empty" class="empty">No entries match that search.</p>
-{{entries}}
-</main>
-<footer><div class="wrap">Single-file HTML · no external dependencies · searchable offline · construction &amp; Bulgarian vocabulary reviewed 24 October 2026 · Fābulae I–VII vocabulary added 29 October 2026</div></footer>
+<p class="footer-note">Single-file HTML · no external dependencies · searchable offline · construction &amp; Bulgarian vocabulary reviewed 24 October 2026 · Fābulae I–VII vocabulary added 29 October 2026</p></div></footer>
 <script>
 {{search}}</script>
 </body>

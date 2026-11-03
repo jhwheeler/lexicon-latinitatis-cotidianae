@@ -39,6 +39,7 @@ a { color:var(--accent); }
 .hero { padding:64px 0 28px; }
 .hero h1 { font-size:clamp(2.35rem,6vw,5.2rem); line-height:.96; letter-spacing:-.045em; margin:.15em 0 .22em; max-width:900px; }
 .hero .lede { max-width:760px; color:var(--muted); font-size:1.08rem; }
+.about-link { margin:.5em 0 0; font:500 .82rem ui-sans-serif,system-ui,sans-serif; }
 .eyebrow { margin:0 0 5px; color:var(--muted); font-family: ui-sans-serif, system-ui, sans-serif; font-size:.72rem; font-weight:700; letter-spacing:.11em; text-transform:uppercase; }
 .toolbar { position:sticky; top:0; z-index:20; padding:12px 0; background:color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter:blur(12px); border-block:1px solid color-mix(in srgb, var(--line) 76%, transparent); }
 .search-row { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:10px; align-items:center; }
@@ -55,7 +56,7 @@ main { padding:24px 0 80px; }
 .category-heading h2 { margin:0; font-size:clamp(1.6rem,3vw,2.35rem); letter-spacing:-.025em; }
 .category-count { color:var(--muted); font:600 .78rem ui-sans-serif, system-ui, sans-serif; white-space:nowrap; }
 .entries { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
-.entry { background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:20px 20px 18px; box-shadow:var(--shadow); min-width:0; }
+.entry { background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:20px 20px 18px; box-shadow:var(--shadow); min-width:0; scroll-margin-top:180px; }
 .entry-head { display:flex; justify-content:space-between; gap:12px; align-items:flex-start; margin-bottom:10px; }
 .entry h3 { margin:0; font-size:1.26rem; line-height:1.2; letter-spacing:-.015em; overflow-wrap:anywhere; }
 .tags { display:flex; flex-wrap:wrap; justify-content:flex-end; gap:5px; }
@@ -95,6 +96,20 @@ footer { border-top:1px solid var(--line); color:var(--muted); padding:24px 0 48
 .entry-sources { margin-top:14px; border-top:1px solid var(--line); padding-top:9px; font-size:.84rem; color:var(--muted); }
 .entry-sources summary { cursor:pointer; font-family:ui-sans-serif,system-ui,sans-serif; font-size:.78rem; }
 .entry-sources a { overflow-wrap:anywhere; }
+.search-result .eyebrow { margin-bottom:8px; }
+.search-result h3 { font-size:1.35rem; }
+.search-example h3 { font-size:1.08rem; font-weight:500; line-height:1.45; }
+.search-snippets { margin-top:10px; }
+.search-match { margin:.65em 0; overflow-wrap:anywhere; }
+mark { background:#f5dfa1; color:#352510; border-radius:3px; padding:0 .08em; box-decoration-break:clone; }
+.search-context { border-top:1px solid var(--line); margin-top:15px; padding-top:10px; }
+.search-context summary { cursor:pointer; color:var(--accent); font:600 .82rem ui-sans-serif,system-ui,sans-serif; }
+.search-context[open] summary { margin-bottom:14px; }
+#search-results { margin-top:12px; }
+#about { scroll-margin-top:180px; }
+#about h2 { margin:0; font:600 1.1rem ui-sans-serif,system-ui,sans-serif; color:var(--ink); }
+#about details { font-family:ui-serif,Georgia,serif; font-size:.95rem; }
+.footer-note { margin-top:20px; }
 .source-card ul { padding-left:1.2em; margin:.5em 0; font-size:.9rem; }
 @media (min-width:761px) { .tags { max-width:45%; } }
 </style>
@@ -103,30 +118,8 @@ footer { border-top:1px solid var(--line); color:var(--muted); padding:24px 0 48
 <header class="hero wrap">
   <p class="eyebrow">Lexicon vīvum · 290 grouped entries · updated 29 October 2026</p>
   <h1 lang="la">Lexicon Latīnitātis Cotīdiānae</h1>
-  <p class="lede">Everyday Latin for conversation, family routines and play with Theo. Long vowels carry macrons; uncertain loanword quantities and our own modern formations are clearly identified.</p>
-  <details class="principles"><summary>Macrons, usage and evidence</summary>
-<p>Macrons mark long vowels; short vowels are left plain. A heavy syllable is not automatically a long vowel. Consonantal i is written j (<span lang="la">jam, ejus, conjungō</span>), and the vowel before intervocalic j is left unmarked (<span lang="la">major</span>); search treats i and j alike. Inflected examples, genitives, principal parts and Latin headings are included in the review.</p>
-<p>For ancient vocabulary, the main references are Lewis &amp; Short and Lewis’s <em>Elementary Latin Dictionary</em> through Perseus and Logeion, with Dickinson’s core list for cross-checking. Hidden quantities are also compared against Bennett’s discussion with Michelson’s corrections and notes on Allen. Dictionary omissions are not automatically proof of shortness; disputed lengths are identified where relevant.</p>
-<p>Bulgarian translations accompany the construction, workshop and house-layout vocabulary reviewed on 24 October 2026; search accepts all three languages.</p>
-<p>For modern words, the classical lengths of inherited roots and regular Latin endings are retained where justified. Loanword stem quantities that the checked sources do not establish are explicitly labelled. “Reading convention” marks an adopted reconstruction, rather than an attested ancient pronunciation.</p>
-<p><strong>Ancient Latin</strong> means the word and its relevant basic sense are ancient. <strong>Lexicographic evidence</strong> means a modern dictionary records the expression; it does not imply universal acceptance. <strong>Modern extension</strong> applies an older word to a modern object. <strong>Working formation</strong> identifies our own phrase or name adaptation.</p>
-<p>Example sentences are composed for conversation with Theo. They are not quotations unless an author and passage are identified. Noun genitives and genders, important sense distinctions, and known alternative forms are supplied where useful.</p>
-</details>
-<details class="sources"><summary>Review notes · 29 October 2026</summary>
-<p class="source-note">All 53 original grouped entries were reviewed; 39 household and family entries were added. Quantities, examples, definitions and attestation labels were checked separately. The review also removes unsupported precise dates, unsourced principal parts and blanket “attested” tags.</p>
-<p class="source-note">5 October 2026 addition: three family-play entries cover trampoline jumping, <span lang="la">Sīmius et arbor</span> and <span lang="la">Nauta et undae</span>. The game titles and spoken prompts are our own; modern senses are labelled. The plural <span lang="la">genua</span> has short <span lang="la">u</span>.</p>
-<p class="source-note">7 October 2026 addition: <span lang="la">ausum</span> is the preferred ancient word for “adventure” in the sense of a daring undertaking or venture; <span lang="la">adventūra</span> is retained as a medieval/modern alternative, with its semantic development explicitly noted.</p>
-<p class="source-note">11 October 2026 addition: seven workshop-and-repair entries distinguish ancient tool vocabulary from later technical Latin and our own descriptive formations. The review replaces the earlier unsupported <span lang="la">cochleārius</span> for “screwdriver” with lexicographically attested <span lang="la">vertitōrium</span>, prefers <span lang="la">forceps</span> for pliers, records variable vowel quantity in <span lang="la">cochlea</span> and <span lang="la">terebra</span>, and distinguishes English “dowel” (<span lang="la">scalmus</span>) from Bulgarian <span lang="bg">дюбел</span>. For the latter, <span lang="la">ancora mūrālis plastica</span> is explicitly marked as our provisional descriptive formation, not as an attested traditional term.</p>
-<p class="source-note">18 October 2026 addition: 27 grouped entries cover the family smoothie guide: ingredients, equipment, materials, measurements, preparation verbs and phrases for cooking with Theodōrus. Traupman’s uploaded <em>Conversational Latin for Oral Proficiency</em>, Morgan–Owens and ancient dictionaries were compared. Recorded modern terms, older words with modern senses, uncertain quantities and our composed descriptions are labelled separately. <a href="#smoothie-105">Start with smoothie ingredients</a> · <a href="https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md">Source audit</a>.</p>
-<p class="source-note">24 October 2026 addition: 17 grouped entries cover construction, house layout, furnishings, trowels, a crowbar, extension leads, cable reels and sheet-metal shears. Existing workshop entries were extended with Bulgarian terminology and the recorded tape-measure phrase. Descriptive formations and uncertain ancient senses remain explicit. <a href="https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/construction-vocabulary-audit.md">Construction vocabulary source audit</a>.</p>
-<p class="source-note">24 October 2026 addition: 17 grouped entries cover hooks, swinging, pipes, gravel, movement, flips, trenches, dirt, heaps, squeezing/crushing, crashes, missions/quests, caps, scaffolding and its parts/actions. Eight existing entries were extended or cross-linked for rods/bars, blankets, lids, planks, wiping and food-preparation verbs. This batch adds English–Latin vocabulary only. Physical senses, modern applications and our composed descriptions remain distinct. <a href="https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/site-and-play-vocabulary-audit.md">Site and play vocabulary source audit</a>.</p>
-<p class="source-note">25 October 2026: a dedicated Lūdī et lūdibria category adds 14 grouped playground/toy entries and brings the existing swing entry into the same filter. <a href="https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/playground-vocabulary-audit.md">Playground source audit</a>.</p>
-<p class="source-note">26 October 2026: classical sources and corrections for the site and construction vocabulary. Two entries are added: <a href="#site-194">the adze, <span lang="la">ascia</span></a>, and <a href="#site-195">ground level, basement, terrace, wing and extension</a>. Scaffolding now leads with <span lang="la">māchina</span> and Vitruvius’s <span lang="la">arrēctāria / trānsversāria</span>; <span lang="la">norma</span> is written without a macron; <span lang="la">coctilis</span> has a short i. <span lang="la">tabula spūmea</span> is our working formation for EPS board. <a href="https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/site-vocabulary-corrections.md">Site vocabulary corrections</a>.</p>
-<p class="source-note">29 October 2026: the sitting room is <span lang="la">exedra</span> (Vitruvius, Cicero; Traupman p. 125), not <span lang="la">sessōrium</span>, whose ancient senses are “seat” and, in one passage of Petronius, “dwelling”; concrete is <span lang="la">opus caementīcium</span>, after Vitruvius’s <span lang="la">caementīcius</span>, not Traupman’s <span lang="la">concrētum</span>; <span lang="la">jentāculum</span> and <span lang="la">jentō</span> have a short e, as Lewis &amp; Short leaves them.</p>
-<p class="source-note">29 October 2026 addition: the daily-life vocabulary of the seven fābulae <span lang="la">Theodōrus et pater</span> (I <span lang="la">Iter in Lūsitāniam</span> to VII <span lang="la">Diēs ūnus Osoitsae</span>), first proposed on 23 October and rebased on the revised texts: 75 grouped entries (entry-196 to entry-270) cover travel, town and shops, place names, weather and landscape, trees, animals, market food, kitchen work, the house and its rebuilding, and phrases for the day with Theodōrus. A new category, <span lang="la">Urbs, vīcus et loca</span>, holds town, shop and place-name vocabulary. Where a proposed card duplicated an existing one (body parts, vegetables, playground, slide, swing, sandpit, ball games, balance bike, rooms, builders, building timber, family, and the adze card of 26 October), its new words and examples were added to that card instead. Every example marked “Fābula” was re-quoted from the texts as revised on 29 October, in their j orthography. The fork is <span lang="la">furcilla</span> (not <span lang="la">fuscinula</span>), and <span lang="la">mantēle</span> leads with its classical sense, the hand towel. Corrections made on 23 October: <span lang="la">jentāculum</span> (short e), <span lang="la">būtȳrum</span>, <span lang="la">pōtiō</span>, <span lang="la">lac</span>, <span lang="la">lacūna</span>, <span lang="la">īnstrūmentum</span>, <span lang="la">vēsīca īnflāta</span> and <span lang="la">ēlectricus</span>; alternatives were added to the coffee, tram, trampoline, stick, back, balloon, wake-up, hug, pepper, pumpkin, cutting-board, peel and berry entries. Search <strong>fabulae</strong> to see the addition.</p>
-<p class="source-note">29 October 2026 addition: the everyday words worked into the fābulae in the 29 October vocabulary pass, with an everyday-vocabulary survey of the texts. 14 grouped entries (<a href="#vocab-271">entry-271</a> to entry-284) cover electric light and sockets, kitchen appliances, the bathroom, the car, getting about, Dad’s bag, fine weather, geography, time, exclamations and spoken phrases, quiet and gestures, and cooking words from the <span lang="la">Culīna Theodōrī</span>; 42 existing entries gain words and examples (family, sleep, bed, clothes, towels, teeth, body, feelings, rooms, cupboards, stairs, doors and shutters, ball games, birds, shops, the table). Every example is quoted from the current texts; Traupman pages were checked in the book. The bath towel is <span lang="la">linteum</span> and the hand towel <span lang="la">mantēle</span> (not <span lang="la">gausapina</span> or <span lang="la">manutergium</span>); <span lang="la">trulla</span> is also the ladle; the toothbrush is <span lang="la">pēniculus dentārius</span> beside <span lang="la">pēnicillus</span>; <span lang="la">lābellum</span> has a long ā (de Vaan). Search <strong>vocabulary</strong> to see the addition.</p><div class="sources-grid"><div class="source-card"><strong>Selected quantity corrections</strong><ul><li>ramus / ramulus / ramos → <span lang="la">rāmus / rāmulus / rāmōs</span></li><li>gravedō / gravedinis → <span lang="la">gravēdō / gravēdinis</span></li><li>involucrum / manubrium → <span lang="la">involūcrum / manūbrium</span></li><li>scabī / vesīca / semita → <span lang="la">scābī / vēsīca / sēmita</span></li><li>vaccinium / morum → <span lang="la">vaccīnium / mōrum</span></li><li>frīgeō / algēō / fervēō / languēō → <span lang="la">frīgeō / algeō / ferveō / langueō</span></li><li>elaborātiō / recognitiō → <span lang="la">ēlabōrātiō / recōgnitiō</span></li><li>program(m)ātum as a noun genitive plural → <span lang="la">programmatum; verbal programmātum is a different form</span></li></ul></div><div class="source-card"><strong>Usage corrections</strong><p>Ancient <span lang="la">fermentō, fermentēscō</span> and <span lang="la">vapōrō</span> are no longer called exclusively later inventions. Berry names distinguish modern botanical use from uncertain ancient identification. Totoro, the magnetic-toy phrase and specific Git phrases are labelled as our own adaptations.</p><p>The kettle expression and unsupported yogurt or coffee stem quantities are described with their actual level of evidence. Source links appear inside each entry.</p></div></div>
-<p class="source-note"><a href="https://logeion.uchicago.edu/" target="_blank" rel="noopener noreferrer">Logeion dictionaries</a> · <a href="https://github.com/PerseusDL/lexica" target="_blank" rel="noopener noreferrer">Perseus dictionary texts</a> · <a href="https://www.alatius.com/latin/bennetthidden.html" target="_blank" rel="noopener noreferrer">Hidden quantities: evidence and disputes</a> · <a href="https://dcc.dickinson.edu/latin-core-list1" target="_blank" rel="noopener noreferrer">Dickinson core vocabulary</a> · <a href="https://neolatinlexicon.org/" target="_blank" rel="noopener noreferrer">Morgan–Owens Neo-Latin Lexicon</a></p>
-</details>
+  <p class="lede">Everyday Latin for conversation, family routines and play with Theo. </p>
+  <p class="about-link"><a href="#about">About this lexicon</a></p>
 </header>
 <nav class="toolbar" aria-label="Lexicon search and filters">
   <div class="wrap">
@@ -138,7 +131,8 @@ footer { border-top:1px solid var(--line); color:var(--muted); padding:24px 0 48
     <div class="chips"><button class="chip" type="button" data-filter="ludi" aria-pressed="false" lang="la">Lūdī et lūdibria</button><button class="chip" type="button" data-filter="all" aria-pressed="true">Omnia</button><button class="chip" type="button" data-filter="corpus" aria-pressed="false" lang="la">Corpus et mōtus</button><button class="chip" type="button" data-filter="natura" aria-pressed="false" lang="la">Nātūra et alimenta</button><button class="chip" type="button" data-filter="vectura" aria-pressed="false" lang="la">Itinera et vectūra</button><button class="chip" type="button" data-filter="urbs" aria-pressed="false" lang="la">Urbs, vīcus et loca</button><button class="chip" type="button" data-filter="theodorus" aria-pressed="false" lang="la">Cum Theodōrō</button><button class="chip" type="button" data-filter="culina" aria-pressed="false" lang="la">Culīna et potūs</button><button class="chip" type="button" data-filter="vestitus" aria-pressed="false" lang="la">Vestītus</button><button class="chip" type="button" data-filter="domus" aria-pressed="false" lang="la">Domus et cūra</button><button class="chip" type="button" data-filter="officina" aria-pressed="false" lang="la">Officīna et īnstrūmenta</button><button class="chip" type="button" data-filter="aedificatio" aria-pressed="false" lang="la">Aedificātiō et materiae</button><button class="chip" type="button" data-filter="domus-structura" aria-pressed="false" lang="la">Domūs partēs et supellex</button><button class="chip" type="button" data-filter="labor" aria-pressed="false" lang="la">Labor et cūra</button><button class="chip" type="button" data-filter="computatra" aria-pressed="false" lang="la">Ars computātrālis</button></div>
   </div>
 </nav>
-<main class="wrap"><p id="empty" class="empty">No entries match that search.</p>
+<main class="wrap"><section id="search-results" aria-label="Search results" hidden><div id="search-result-list" class="entries"></div></section>
+<p id="empty" class="empty">No entries match that search.</p>
 <section class="category" data-category-section="corpus" id="corpus"><div class="category-heading"><div><p class="eyebrow">Body, health &amp; movement</p><h2 lang="la">Corpus et mōtus</h2></div><span class="category-count">12 entries</span></div><div class="entries"><article class="entry" data-entry data-entry-id="entry-1" data-category="corpus" data-search="Scratch scabō, scabere, scābī Ancient Latin scabō, scabere, scābī — scratch or scrape; no attested supine is supplied in Lewis &amp; Short. scalpō, scalpere, scalpsī, scalptum — scratch, scrape, carve, engrave. scabiēs f. — an itching or scabby skin condition; mange. It is broader than the modern diagnosis “scabies.” The classical dictionaries give accusative scabiem and ablative scabiē , without supplying a genitive. scaber, scabra, scabrum — rough, scabby. Nōlī scabere. — Don’t scratch. scrībō, scrībere, scrīpsī, scrīptum — write; historically associated with scratching or incising. English script belongs to this family.">
 <header class="entry-head"><div><p class="eyebrow">Scratch</p><h3 lang="la">scabō, scabere, scābī</h3></div><div class="tags"><span class="tag">Ancient Latin</span></div></header>
 <div class="entry-body"><ul>
@@ -4188,52 +4182,175 @@ footer { border-top:1px solid var(--line); color:var(--muted); padding:24px 0 48
 <details class="entry-sources"><summary>Sources &amp; evidence</summary><p><a href="https://logeion.uchicago.edu/computo" rel="noopener noreferrer" target="_blank">Lewis &amp; Short: computo</a></p><p>John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: pp. 260–262, checked against the searchable text of the book on 29 October 2026.</p><p><span lang="la">Theodōrus et pater: Fābulae Latīnae ad vītam cotīdiānam</span> I–VII, as revised on 29 October 2026, with their glosses. Examples marked “Fābula” quote those texts word for word; classical passages are cited by author.</p></details></div>
 </article></div></section>
 </main>
-<footer><div class="wrap">Single-file HTML · no external dependencies · searchable offline · construction &amp; Bulgarian vocabulary reviewed 24 October 2026 · Fābulae I–VII vocabulary added 29 October 2026</div></footer>
+<footer id="about"><div class="wrap"><h2>About this lexicon</h2>
+  <details class="principles"><summary>Macrons, usage and evidence</summary>
+<p>Macrons mark long vowels; short vowels are left plain. A heavy syllable is not automatically a long vowel. Consonantal i is written j (<span lang="la">jam, ejus, conjungō</span>), and the vowel before intervocalic j is left unmarked (<span lang="la">major</span>); search treats i and j alike. Inflected examples, genitives, principal parts and Latin headings are included in the review.</p>
+<p>For ancient vocabulary, the main references are Lewis &amp; Short and Lewis’s <em>Elementary Latin Dictionary</em> through Perseus and Logeion, with Dickinson’s core list for cross-checking. Hidden quantities are also compared against Bennett’s discussion with Michelson’s corrections and notes on Allen. Dictionary omissions are not automatically proof of shortness; disputed lengths are identified where relevant.</p>
+<p>Bulgarian translations accompany the construction, workshop and house-layout vocabulary reviewed on 24 October 2026; search accepts all three languages.</p>
+<p>For modern words, the classical lengths of inherited roots and regular Latin endings are retained where justified. Loanword stem quantities that the checked sources do not establish are explicitly labelled. “Reading convention” marks an adopted reconstruction, rather than an attested ancient pronunciation.</p>
+<p><strong>Ancient Latin</strong> means the word and its relevant basic sense are ancient. <strong>Lexicographic evidence</strong> means a modern dictionary records the expression; it does not imply universal acceptance. <strong>Modern extension</strong> applies an older word to a modern object. <strong>Working formation</strong> identifies our own phrase or name adaptation.</p>
+<p>Example sentences are composed for conversation with Theo. They are not quotations unless an author and passage are identified. Noun genitives and genders, important sense distinctions, and known alternative forms are supplied where useful.</p>
+</details>
+<details class="sources"><summary>Review notes · 29 October 2026</summary>
+<p class="source-note">All 53 original grouped entries were reviewed; 39 household and family entries were added. Quantities, examples, definitions and attestation labels were checked separately. The review also removes unsupported precise dates, unsourced principal parts and blanket “attested” tags.</p>
+<p class="source-note">5 October 2026 addition: three family-play entries cover trampoline jumping, <span lang="la">Sīmius et arbor</span> and <span lang="la">Nauta et undae</span>. The game titles and spoken prompts are our own; modern senses are labelled. The plural <span lang="la">genua</span> has short <span lang="la">u</span>.</p>
+<p class="source-note">7 October 2026 addition: <span lang="la">ausum</span> is the preferred ancient word for “adventure” in the sense of a daring undertaking or venture; <span lang="la">adventūra</span> is retained as a medieval/modern alternative, with its semantic development explicitly noted.</p>
+<p class="source-note">11 October 2026 addition: seven workshop-and-repair entries distinguish ancient tool vocabulary from later technical Latin and our own descriptive formations. The review replaces the earlier unsupported <span lang="la">cochleārius</span> for “screwdriver” with lexicographically attested <span lang="la">vertitōrium</span>, prefers <span lang="la">forceps</span> for pliers, records variable vowel quantity in <span lang="la">cochlea</span> and <span lang="la">terebra</span>, and distinguishes English “dowel” (<span lang="la">scalmus</span>) from Bulgarian <span lang="bg">дюбел</span>. For the latter, <span lang="la">ancora mūrālis plastica</span> is explicitly marked as our provisional descriptive formation, not as an attested traditional term.</p>
+<p class="source-note">18 October 2026 addition: 27 grouped entries cover the family smoothie guide: ingredients, equipment, materials, measurements, preparation verbs and phrases for cooking with Theodōrus. Traupman’s uploaded <em>Conversational Latin for Oral Proficiency</em>, Morgan–Owens and ancient dictionaries were compared. Recorded modern terms, older words with modern senses, uncertain quantities and our composed descriptions are labelled separately. <a href="#smoothie-105">Start with smoothie ingredients</a> · <a href="https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md">Source audit</a>.</p>
+<p class="source-note">24 October 2026 addition: 17 grouped entries cover construction, house layout, furnishings, trowels, a crowbar, extension leads, cable reels and sheet-metal shears. Existing workshop entries were extended with Bulgarian terminology and the recorded tape-measure phrase. Descriptive formations and uncertain ancient senses remain explicit. <a href="https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/construction-vocabulary-audit.md">Construction vocabulary source audit</a>.</p>
+<p class="source-note">24 October 2026 addition: 17 grouped entries cover hooks, swinging, pipes, gravel, movement, flips, trenches, dirt, heaps, squeezing/crushing, crashes, missions/quests, caps, scaffolding and its parts/actions. Eight existing entries were extended or cross-linked for rods/bars, blankets, lids, planks, wiping and food-preparation verbs. This batch adds English–Latin vocabulary only. Physical senses, modern applications and our composed descriptions remain distinct. <a href="https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/site-and-play-vocabulary-audit.md">Site and play vocabulary source audit</a>.</p>
+<p class="source-note">25 October 2026: a dedicated Lūdī et lūdibria category adds 14 grouped playground/toy entries and brings the existing swing entry into the same filter. <a href="https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/playground-vocabulary-audit.md">Playground source audit</a>.</p>
+<p class="source-note">26 October 2026: classical sources and corrections for the site and construction vocabulary. Two entries are added: <a href="#site-194">the adze, <span lang="la">ascia</span></a>, and <a href="#site-195">ground level, basement, terrace, wing and extension</a>. Scaffolding now leads with <span lang="la">māchina</span> and Vitruvius’s <span lang="la">arrēctāria / trānsversāria</span>; <span lang="la">norma</span> is written without a macron; <span lang="la">coctilis</span> has a short i. <span lang="la">tabula spūmea</span> is our working formation for EPS board. <a href="https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/site-vocabulary-corrections.md">Site vocabulary corrections</a>.</p>
+<p class="source-note">29 October 2026: the sitting room is <span lang="la">exedra</span> (Vitruvius, Cicero; Traupman p. 125), not <span lang="la">sessōrium</span>, whose ancient senses are “seat” and, in one passage of Petronius, “dwelling”; concrete is <span lang="la">opus caementīcium</span>, after Vitruvius’s <span lang="la">caementīcius</span>, not Traupman’s <span lang="la">concrētum</span>; <span lang="la">jentāculum</span> and <span lang="la">jentō</span> have a short e, as Lewis &amp; Short leaves them.</p>
+<p class="source-note">29 October 2026 addition: the daily-life vocabulary of the seven fābulae <span lang="la">Theodōrus et pater</span> (I <span lang="la">Iter in Lūsitāniam</span> to VII <span lang="la">Diēs ūnus Osoitsae</span>), first proposed on 23 October and rebased on the revised texts: 75 grouped entries (entry-196 to entry-270) cover travel, town and shops, place names, weather and landscape, trees, animals, market food, kitchen work, the house and its rebuilding, and phrases for the day with Theodōrus. A new category, <span lang="la">Urbs, vīcus et loca</span>, holds town, shop and place-name vocabulary. Where a proposed card duplicated an existing one (body parts, vegetables, playground, slide, swing, sandpit, ball games, balance bike, rooms, builders, building timber, family, and the adze card of 26 October), its new words and examples were added to that card instead. Every example marked “Fābula” was re-quoted from the texts as revised on 29 October, in their j orthography. The fork is <span lang="la">furcilla</span> (not <span lang="la">fuscinula</span>), and <span lang="la">mantēle</span> leads with its classical sense, the hand towel. Corrections made on 23 October: <span lang="la">jentāculum</span> (short e), <span lang="la">būtȳrum</span>, <span lang="la">pōtiō</span>, <span lang="la">lac</span>, <span lang="la">lacūna</span>, <span lang="la">īnstrūmentum</span>, <span lang="la">vēsīca īnflāta</span> and <span lang="la">ēlectricus</span>; alternatives were added to the coffee, tram, trampoline, stick, back, balloon, wake-up, hug, pepper, pumpkin, cutting-board, peel and berry entries. Search <strong>fabulae</strong> to see the addition.</p>
+<p class="source-note">29 October 2026 addition: the everyday words worked into the fābulae in the 29 October vocabulary pass, with an everyday-vocabulary survey of the texts. 14 grouped entries (<a href="#vocab-271">entry-271</a> to entry-284) cover electric light and sockets, kitchen appliances, the bathroom, the car, getting about, Dad’s bag, fine weather, geography, time, exclamations and spoken phrases, quiet and gestures, and cooking words from the <span lang="la">Culīna Theodōrī</span>; 42 existing entries gain words and examples (family, sleep, bed, clothes, towels, teeth, body, feelings, rooms, cupboards, stairs, doors and shutters, ball games, birds, shops, the table). Every example is quoted from the current texts; Traupman pages were checked in the book. The bath towel is <span lang="la">linteum</span> and the hand towel <span lang="la">mantēle</span> (not <span lang="la">gausapina</span> or <span lang="la">manutergium</span>); <span lang="la">trulla</span> is also the ladle; the toothbrush is <span lang="la">pēniculus dentārius</span> beside <span lang="la">pēnicillus</span>; <span lang="la">lābellum</span> has a long ā (de Vaan). Search <strong>vocabulary</strong> to see the addition.</p><div class="sources-grid"><div class="source-card"><strong>Selected quantity corrections</strong><ul><li>ramus / ramulus / ramos → <span lang="la">rāmus / rāmulus / rāmōs</span></li><li>gravedō / gravedinis → <span lang="la">gravēdō / gravēdinis</span></li><li>involucrum / manubrium → <span lang="la">involūcrum / manūbrium</span></li><li>scabī / vesīca / semita → <span lang="la">scābī / vēsīca / sēmita</span></li><li>vaccinium / morum → <span lang="la">vaccīnium / mōrum</span></li><li>frīgeō / algēō / fervēō / languēō → <span lang="la">frīgeō / algeō / ferveō / langueō</span></li><li>elaborātiō / recognitiō → <span lang="la">ēlabōrātiō / recōgnitiō</span></li><li>program(m)ātum as a noun genitive plural → <span lang="la">programmatum; verbal programmātum is a different form</span></li></ul></div><div class="source-card"><strong>Usage corrections</strong><p>Ancient <span lang="la">fermentō, fermentēscō</span> and <span lang="la">vapōrō</span> are no longer called exclusively later inventions. Berry names distinguish modern botanical use from uncertain ancient identification. Totoro, the magnetic-toy phrase and specific Git phrases are labelled as our own adaptations.</p><p>The kettle expression and unsupported yogurt or coffee stem quantities are described with their actual level of evidence. Source links appear inside each entry.</p></div></div>
+<p class="source-note"><a href="https://logeion.uchicago.edu/" target="_blank" rel="noopener noreferrer">Logeion dictionaries</a> · <a href="https://github.com/PerseusDL/lexica" target="_blank" rel="noopener noreferrer">Perseus dictionary texts</a> · <a href="https://www.alatius.com/latin/bennetthidden.html" target="_blank" rel="noopener noreferrer">Hidden quantities: evidence and disputes</a> · <a href="https://dcc.dickinson.edu/latin-core-list1" target="_blank" rel="noopener noreferrer">Dickinson core vocabulary</a> · <a href="https://neolatinlexicon.org/" target="_blank" rel="noopener noreferrer">Morgan–Owens Neo-Latin Lexicon</a></p>
+</details>
+<p class="footer-note">Single-file HTML · no external dependencies · searchable offline · construction &amp; Bulgarian vocabulary reviewed 24 October 2026 · Fābulae I–VII vocabulary added 29 October 2026</p></div></footer>
 <script>
 (() => {
-  const search = document.getElementById('search');
-  const clear = document.getElementById('clear');
-  const resultText = document.getElementById('results');
+  const search = document.getElementById('search'), clear = document.getElementById('clear');
+  const count = document.getElementById('results'), empty = document.getElementById('empty');
+  const results = document.getElementById('search-results'), list = document.getElementById('search-result-list');
   const entries = [...document.querySelectorAll('[data-entry]')];
   const sections = [...document.querySelectorAll('[data-category-section]')];
   const chips = [...document.querySelectorAll('[data-filter]')];
-  const empty = document.getElementById('empty');
-  const total = entries.length;
   let active = 'all';
-
-  const fold = s => String(s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/æ/g,'ae').replace(/œ/g,'oe').replace(/j/g,'i'); // jam = iam
-
-  function apply() {
-    const q = fold(search.value.trim());
-    let shown = 0;
-    entries.forEach(entry => {
-      const categoryOK = active === 'all' || entry.dataset.category === active;
-      const textOK = !q || fold((entry.dataset.search || '') + ' ' + entry.textContent).includes(q);
-      const visible = categoryOK && textOK;
-      entry.hidden = !visible;
-      if (visible) shown++;
+  let renderedQuery = null, renderedCategory = null;
+  const fold = s => String(s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/æ/g, 'ae').replace(/œ/g, 'oe').replace(/j/g, 'i');
+  const index = entries.map((entry, order) => {
+    const section = entry.closest('[data-category-section]');
+    if (!entry.id) entry.id = entry.dataset.entryId;
+    const lines = [...entry.querySelectorAll('.entry-body > ul > li, .entry-body > p, .entry-sources > p')].map(node => {
+      const latin = node.querySelector('strong[lang="la"]')?.textContent.trim();
+      const definition = latin && latin.split(/\s+/).length <= 10
+        && (/^[a-zāēīōūȳæœ]/.test(latin) || /\b[mfn]\.\s*(pl\.)?$/.test(latin));
+      return {node, text: fold(node.textContent), kind: node.closest('.entry-sources') ? 'Source note' : definition ? 'Definition' : 'Example or phrase'};
     });
-    sections.forEach(section => {
-      section.hidden = ![...section.querySelectorAll('[data-entry]')].some(e => !e.hidden);
+    return {entry, order, lines, category: entry.dataset.category, label: section.querySelector('h2').textContent,
+      heading: fold(entry.querySelector('.entry-head').textContent), text: fold((entry.dataset.search || '') + ' ' + entry.textContent)};
+  });
+
+  // Map normalized matches back to original Unicode characters across inline markup.
+  function highlight(root, query) {
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT), nodes = [];
+    let text = '', node, normalized = '', offset = 0;
+    while ((node = walker.nextNode())) { nodes.push({node, start: text.length}); text += node.data; }
+    const starts = [], ends = [];
+    for (const ch of text) {
+      const f = fold(ch);
+      for (let i = 0; i < f.length; i++) { starts.push(offset); ends.push(offset + ch.length); }
+      if (!f && ends.length) ends[ends.length - 1] = offset + ch.length;
+      normalized += f; offset += ch.length;
+    }
+    const ranges = [];
+    for (let at = normalized.indexOf(query); at !== -1; at = normalized.indexOf(query, at + query.length)) {
+      ranges.push([starts[at], ends[at + query.length - 1]]);
+    }
+    nodes.forEach(({node: n, start}) => {
+      const fragment = document.createDocumentFragment();
+      let cursor = 0;
+      for (const [from, to] of ranges) {
+        const a = Math.max(0, from - start), b = Math.min(n.length, to - start);
+        if (a >= b) continue;
+        fragment.append(document.createTextNode(n.data.slice(cursor, a)));
+        const mark = document.createElement('mark'); mark.textContent = n.data.slice(a, b); fragment.append(mark);
+        cursor = b;
+      }
+      if (cursor) { fragment.append(document.createTextNode(n.data.slice(cursor))); n.replaceWith(fragment); }
     });
-    resultText.textContent = `Showing ${shown} of ${total}`;
-    empty.style.display = shown ? 'none' : 'block';
   }
-
+  function copy(source, query) {
+    const node = document.createElement('div');
+    source.childNodes.forEach(child => node.append(child.cloneNode(true)));
+    node.querySelectorAll('[id]').forEach(child => child.removeAttribute('id'));
+    highlight(node, query);
+    return node;
+  }
+  function result(item, query) {
+    const card = document.createElement('article'); card.className = 'entry search-result';
+    card.dataset.resultFor = item.entry.dataset.entryId;
+    const best = item.matches[0], lemma = best?.node.querySelector('strong[lang="la"]');
+    if (best?.kind === 'Example or phrase') card.classList.add('search-example');
+    const label = document.createElement('p'); label.className = 'eyebrow';
+    label.textContent = item.label + ' · ' + (best?.kind || 'Related entry');
+    const title = document.createElement('h3'); title.lang = 'la';
+    title.textContent = lemma?.textContent || item.entry.querySelector('h3').textContent;
+    highlight(title, query); card.append(label, title);
+    const snippets = document.createElement('div'); snippets.className = 'search-snippets';
+    item.matches.slice(0, 3).forEach((match, i) => {
+      const line = copy(match.node, query); line.className = 'search-match';
+      if (i === 0 && lemma) {
+        line.querySelector('strong[lang="la"]')?.remove();
+        if (line.firstChild?.nodeType === Node.TEXT_NODE) line.firstChild.data = line.firstChild.data.replace(/^\s*[—–-]\s*/, '');
+      }
+      snippets.append(line);
+    });
+    if (!best) {
+      const note = document.createElement('p'); note.className = 'source-note';
+      note.textContent = 'Matches ' + (item.heading.includes(query) ? 'this entry’s heading' : 'an alternative search term') + '. Open the full entry for its terms and examples.';
+      snippets.append(note);
+    }
+    card.append(snippets);
+    const context = document.createElement('details'); context.className = 'search-context';
+    const summary = document.createElement('summary');
+    summary.textContent = 'Full entry' + (item.matches.length > 3 ? ' · ' + item.matches.length + ' matching passages' : '');
+    context.append(summary);
+    context.addEventListener('toggle', () => {
+      if (!context.open || context.childElementCount > 1) return;
+      const heading = document.createElement('p'); heading.className = 'eyebrow';
+      heading.textContent = item.entry.querySelector('.eyebrow').textContent;
+      const body = copy(item.entry.querySelector('.entry-body'), query); body.className = 'entry-body';
+      body.querySelectorAll('.entry-sources').forEach(source => { if (source.querySelector('mark')) source.open = true; });
+      context.append(heading, body);
+    });
+    card.append(context);
+    return card;
+  }
+  function apply() {
+    const query = fold(search.value.trim());
+    // Blurring the search field fires change even when the query is unchanged.
+    // Keep result nodes stable so that click still reaches a disclosure/link.
+    if (query === renderedQuery && active === renderedCategory) return;
+    renderedQuery = query; renderedCategory = active;
+    const matching = index.filter(item => (active === 'all' || item.category === active) && (!query || item.text.includes(query)));
+    results.hidden = !query; list.replaceChildren();
+    entries.forEach(entry => { entry.hidden = !!query || (active !== 'all' && entry.dataset.category !== active); });
+    sections.forEach(section => { section.hidden = !!query || !section.querySelector('[data-entry]:not([hidden])'); });
+    if (query) {
+      const rank = line => line.kind === 'Definition' ? 0 : line.kind === 'Source note' ? 2 : 1;
+      matching.forEach(item => {
+        item.matches = item.lines.filter(line => line.text.includes(query)).sort((a, b) => rank(a) - rank(b));
+        item.rank = item.matches[0]?.kind === 'Definition' ? 0 : item.heading.includes(query) ? 1 : item.matches.length ? 2 : 3;
+      });
+      matching.sort((a, b) => a.rank - b.rank || a.order - b.order);
+      const fragment = document.createDocumentFragment();
+      matching.forEach(item => fragment.append(result(item, query))); list.append(fragment);
+    }
+    count.textContent = query ? matching.length + ' matching entries · definitions first' : 'Showing ' + matching.length + ' of ' + entries.length;
+    empty.style.display = matching.length ? 'none' : 'block';
+  }
+  function reset() {
+    search.value = ''; active = 'all';
+    chips.forEach(chip => chip.setAttribute('aria-pressed', String(chip.dataset.filter === 'all'))); apply();
+  }
+  // Reveal original targets when following cross-references from search results.
+  function reveal(hash) {
+    let target;
+    try { target = document.getElementById(decodeURIComponent(hash.slice(1))); } catch { return; }
+    if (target?.closest('[data-category-section]')) { reset(); target.scrollIntoView(); }
+  }
+  document.addEventListener('click', event => {
+    const link = event.target.closest('a[href^="#"]');
+    if (link && !event.ctrlKey && !event.metaKey && !event.shiftKey && !event.altKey) reveal(link.hash);
+  });
+  window.addEventListener('hashchange', () => reveal(location.hash));
   ['input', 'change', 'search'].forEach(event => search.addEventListener(event, apply));
   chips.forEach(chip => chip.addEventListener('click', () => {
-    active = chip.dataset.filter;
-    chips.forEach(c => c.setAttribute('aria-pressed', String(c === chip)));
-    apply();
+    active = chip.dataset.filter; chips.forEach(other => other.setAttribute('aria-pressed', String(other === chip))); apply();
   }));
-  clear.addEventListener('click', () => {
-    search.value = '';
-    active = 'all';
-    chips.forEach(c => c.setAttribute('aria-pressed', String(c.dataset.filter === 'all')));
-    search.focus();
-    apply();
-  });
-  search.addEventListener('keydown', e => { if (e.key === 'Escape') clear.click(); });
+  clear.addEventListener('click', () => { reset(); search.focus(); });
+  search.addEventListener('keydown', event => { if (event.key === 'Escape') clear.click(); });
   apply();
 })();
 </script>

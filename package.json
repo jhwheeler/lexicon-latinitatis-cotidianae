@@ -1,0 +1,10 @@
+{
+  "name": "lexicon-latinitatis-cotidianae",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/search.browser.test.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}

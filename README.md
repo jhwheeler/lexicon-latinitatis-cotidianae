@@ -29,6 +29,20 @@ Commit the source changes **and regenerated `index.html`** together. Do not edit
 
 See [the data format and architecture decision](docs/data-format.md) for an entry example, field definitions, and why generation happens before publication rather than in the browser.
 
+## Search
+
+A search shows matching passages with their Latin expression, with short definition rows ranked before examples. Matches are highlighted using the same macron-insensitive and i/j-insensitive normalization as filtering. Each result can expand to show its complete entry and source notes; clearing the query returns to the original grouped cards. Matches found only in search aliases are identified explicitly. Macron guidance and editorial review notes are in the footer, linked by “About this lexicon”.
+
+Browser regression checks use Node.js and Playwright (development only; the published page has no runtime dependencies):
+
+```sh
+npm ci
+npx playwright install chromium
+npm test
+```
+
+The checks cover the pyjama lookup, highlighting and Unicode normalization, category filters, complete context, cross-references, alias/source matches, literal input, the footer and phone layout. CI also runs them in Chromium. For an existing browser installation, set `LEXICON_CHROMIUM_EXECUTABLE`; `LEXICON_CHROMIUM_ARGS` optionally supplies a JSON array of launch arguments.
+
 ## Publishing and exports
 
 GitHub Pages continues to publish `main`, folder `/(root)`. No deployment-setting change is needed. The generated page includes its CSS, search code and vocabulary: it can still be downloaded, opened directly and searched offline. Entries remain readable when JavaScript is disabled.

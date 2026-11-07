@@ -22,6 +22,12 @@ Jack's decision (29 October 2026): the lexicon follows the orthography of the Th
 
 After adding or editing Latin, run `python3 scripts/consonantal_j.py --list` and review both the proposed changes and the kept candidates, then `--write` and rebuild. `--check`, also run by the tests, fails while any Latin still needs j; record a genuine exception in the script's `KEEP` list with its reason. Content ported from older branches (written with i) needs this pass. Search treats i and j alike, so *iam* finds *jam*.
 
+## Examples from the Theodōrus et pater readers
+
+The readers are cited as *Libellus I*–*VII* with their titles, e.g. `(Libellus III, <span lang="la">Apud avum et aviam</span>)`; the cookbook as `(<span lang="la">Culīna Theodōrī</span>)`. In the readers *fābula* now means only the tales told inside them, so it is not used for the readers themselves (Jack, 30 October 2026); public anchors such as `#fabulae-265` keep the old word so that links still work.
+
+Examples cited this way quote the text word for word, and the readers are still being revised, so quotations drift. Whenever the readers change, run `python3 scripts/check_libelli.py --latinitas <path to a latinitas checkout>`: it checks every cited example against the current texts and each title against the reader's `@title`, and lists looser mentions to look over. Re-quote what it reports from the current text and correct the English to match. Household words follow the series bible in the latinitas repository (pyjamas are *vestis nocturna*, not Traupman's *synthesis dormītōria*); when a reader drops or changes a word, correct any entry that calls it "the word of the libellī".
+
 ## Exported copies
 
 Library and downloaded HTML files are snapshots. They may be stale and are not automatically synchronized with this repository. Never make a requested lexicon change only in an exported copy, and never overwrite newer repository content with an older export.

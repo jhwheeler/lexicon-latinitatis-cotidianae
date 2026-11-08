@@ -41,7 +41,9 @@
       const latin = node.querySelector('strong[lang="la"]')?.textContent.trim();
       const definition = latin && latin.split(/\s+/).length <= 10
         && (/^[a-zāēīōūȳæœ]/.test(latin) || /\b[mfn]\.\s*(pl\.)?$/.test(latin));
-      return {node, text: fold(node.textContent), kind: node.closest('.entry-sources, .footnotes') ? 'Source note' : definition ? 'Definition' : 'Example or phrase'};
+      // A record's answer line carries its English headword in data-search.
+      return {node, text: fold(node.textContent + ' ' + (node.dataset.search || '')),
+        kind: node.closest('.entry-sources, .footnotes') ? 'Source note' : definition ? 'Definition' : 'Example or phrase'};
     });
     return {entry, order, lines, category: entry.dataset.category, label: section.querySelector('h2').textContent,
       heading: fold(entry.querySelector('.entry-head').textContent), text: fold((entry.dataset.search || '') + ' ' + entry.textContent)};

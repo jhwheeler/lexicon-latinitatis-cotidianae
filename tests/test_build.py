@@ -183,7 +183,8 @@ class BuildTests(unittest.TestCase):
         card = index[index.index('id="c-cooking-pot"'):]
         card = card[:card.index('</article>')]
         self.assertIn('<h3>cooking pot <span class="pos">noun</span>', card)
-        self.assertIn('<li class="term lead" data-status="recommended"><strong lang="la"><a href="l/caccabus.html">caccabus</a>', card)
+        self.assertIn('<li class="term lead" data-status="recommended" data-search="cooking pot"><strong lang="la">'
+                      '<a href="l/caccabus.html">caccabus</a>', card)
         self.assertIn('<span class="rec-meta">noun, second declension · <span class="lab">classical</span>', card)
         self.assertIn('<h4 class="rec-label">Examples</h4><ul class="rec ex">', card)
 

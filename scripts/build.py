@@ -472,9 +472,11 @@ def render_record(record, site):
         gloss = term.get('gloss', '')
         gloss = (f' <span class="gloss">— {escape(gloss)}</span>'
                  if gloss and gloss.strip().lower() != record['english'].strip().lower() else '')
+        # The answer's line doesn't repeat the headword, but search finds it there as the definition.
+        found = f' data-search="{escape(record["english"], quote=True)}"' if lead and not gloss else ''
         register = f'<span class="rec-meta register">({term["register"]})</span>' if 'register' in term else ''
         comment = f'<span class="rec-comment">{term["comment"]}</span>' if 'comment' in term else ''
-        return (f'<li class="term{" lead" if lead else ""}" data-status="{term["status"]}"><strong lang="la">{head}{escape(rest)}</strong>'
+        return (f'<li class="term{" lead" if lead else ""}" data-status="{term["status"]}"{found}><strong lang="la">{head}{escape(rest)}</strong>'
                 f'{refs(term)}{gloss}<span class="rec-meta">{term_meta(term)}</span>{register}{comment}</li>')
 
     terms = ordered_terms(record)

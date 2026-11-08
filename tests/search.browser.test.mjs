@@ -267,6 +267,14 @@ test('concept records are searchable, notes count as source notes, and old ancho
   assert.equal(await page.locator('#c-swimming').isVisible(), true);
 });
 
+test('a record is found as a definition by its headword, which its answer line does not repeat', async () => {
+  await search('cooking pot');
+  const first = page.locator('.search-result').first();
+  assert.equal(await first.getAttribute('data-result-for'), 'c-cooking-pot');
+  assert.match(await first.locator('.eyebrow').textContent(), /Definition/);
+  assert.equal(await first.locator('h3').textContent(), 'caccabus (cacabus), caccabī m.');
+});
+
 test('record cards on the index use the format of their pages', async () => {
   await page.goto(url + '#culina');
   const card = page.locator('#c-cooking-pot');

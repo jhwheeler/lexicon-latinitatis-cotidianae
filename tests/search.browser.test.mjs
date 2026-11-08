@@ -25,14 +25,14 @@ test('pyjama shows the matching lemma first, with focused text and expandable co
   await search('pyjama');
   const first = page.locator('.search-result').first();
   assert.equal(await first.locator('h3').textContent(), 'synthesis dormītōria');
-  assert.equal(await first.getAttribute('data-result-for'), 'entry-59');
-  assert.equal(await page.locator('.search-result').count(), 5);
+  assert.equal(await first.getAttribute('data-result-for'), 'c-pyjamas');
+  assert.equal(await page.locator('.search-result').count(), 6);
   assert.match(await first.locator('.search-snippets').textContent(), /pyjamas/);
   assert.equal(await first.locator('mark').count() > 0, true);
   assert.equal(await first.locator('.search-context .entry-body').count(), 0);
   await first.locator('.search-context > summary').click();
   await first.locator('.search-context .entry-body').waitFor();
-  assert.match(await first.locator('.search-context').textContent(), /subūcula/);
+  assert.match(await first.locator('.search-context').textContent(), /dinner gown/);
   assert.match(await first.locator('.search-context').textContent(), /Sources & evidence/);
 });
 
@@ -51,7 +51,7 @@ test('macrons, decomposed accents and i/j share matching and visible highlights'
 test('category filters constrain search; Clear and Escape restore all original content', async () => {
   await search('pyjama');
   await page.locator('[data-filter="vestitus"]').click();
-  assert.equal(await page.locator('.search-result').count(), 2);
+  assert.equal(await page.locator('.search-result').count(), 3);
   await page.locator('[data-filter="corpus"]').click();
   assert.equal(await page.locator('#empty').isVisible(), true);
   await page.locator('#search').press('Escape');
@@ -69,7 +69,7 @@ test('source-only and alias-only matches are explained and retain context', asyn
   await source.locator('.search-context > summary').click();
   await source.locator('.entry-sources[open]').waitFor();
   await search('pajamas');
-  assert.match(await page.locator('[data-result-for="entry-59"]').textContent(), /alternative search term/);
+  assert.match(await page.locator('[data-result-for="c-pyjamas"]').textContent(), /alternative search term/);
 });
 
 test('cross-references reveal their original target and clones have no duplicate IDs', async () => {
@@ -91,7 +91,7 @@ test('literal input never becomes HTML and no-match state recovers', async () =>
   assert.equal(await page.locator('#empty').isVisible(), true);
   assert.equal(await page.locator('#search-results img').count(), 0);
   await search('pyjama');
-  assert.equal(await page.locator('.search-result').count(), 5);
+  assert.equal(await page.locator('.search-result').count(), 6);
 });
 
 test('guidance and review notes live in the footer and remain reachable', async () => {
@@ -151,7 +151,7 @@ test('mobile category disclosure preserves the query, selected filter and keyboa
   assert.equal(await page.locator('#category-menu').getAttribute('open'), null);
   assert.equal(await page.locator('#active-category').textContent(), 'Vestītus');
   assert.equal(await page.locator('#search').inputValue(), 'pyjama');
-  assert.equal(await page.locator('.search-result').count(), 2);
+  assert.equal(await page.locator('.search-result').count(), 3);
   assert.equal(await page.evaluate(() => document.activeElement === document.querySelector('#category-menu > summary')), true);
   await page.setViewportSize({ width: 1280, height: 900 });
   await page.locator('#category-menu[open]').waitFor({ state: 'attached' });
@@ -173,7 +173,7 @@ test('dark is the default even on a light system; the keyboard toggle persists i
   await toggle.focus(); await toggle.press('Space');
   assert.equal(await page.locator('html').getAttribute('data-theme'), 'light');
   assert.equal(await page.locator('#search').inputValue(), 'pyjama');
-  assert.equal(await page.locator('.search-result').count(), 5);
+  assert.equal(await page.locator('.search-result').count(), 6);
   await page.reload();
   assert.equal(await page.locator('html').getAttribute('data-theme'), 'light');
   assert.equal(await page.evaluate(() => getComputedStyle(document.documentElement).colorScheme), 'light');
@@ -190,7 +190,7 @@ test('mobile theme toggle works when saving preferences is blocked', async () =>
   await page.getByRole('button', { name: 'Switch to dark mode' }).click();
   assert.equal(await page.locator('html').getAttribute('data-theme'), 'dark');
   await search('pyjama');
-  assert.equal(await page.locator('.search-result').count(), 5);
+  assert.equal(await page.locator('.search-result').count(), 6);
   assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
 });
 

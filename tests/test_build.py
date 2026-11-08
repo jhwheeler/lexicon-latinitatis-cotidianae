@@ -59,7 +59,10 @@ class BuildTests(unittest.TestCase):
         total = sum(len(self.read(f'data/entries/{c["id"]}.json')) for c in self.read('data/catalog.json')['categories'])
         records = sum(1 for p in (self.root / 'data/concepts').glob('*.json') if self.read(p)['domain'] == self.category)
         self.assertIn(f'{total} grouped entries', page)
-        self.assertIn(f'{len(entries) + records} entries</span>', page)
+        # The front page's contents give each category's count.
+        latin = self.read('data/catalog.json')['categories'][0]['latin']
+        self.assertIn(f'<a href="#{self.category}"><span class="toc-la" lang="la">{latin}</span>'
+                      f'<span class="toc-n">{len(entries) + records}<span class="vh"> entries</span></span>', page)
         self.assertIn('A &lt; B &amp; C', page)
         self.assertIn('lūdicrum, lūdicrī n.', page)
 
@@ -160,6 +163,30 @@ class BuildTests(unittest.TestCase):
         self.assertIn('url(fonts/lexicon-serif-400.woff2)', outputs['assets/lexicon.css'])
         self.assertIsInstance(outputs['assets/fonts/lexicon-serif-400.woff2'], bytes)
 
+    def test_a_note_on_a_form_opens_with_form_claim_and_authority(self):
+        outputs = builder.build_site(self.root)
+        opening = ('<b class="nf" lang="la">fortasse</b>: short final e (Lewis &amp; Short '
+                   '<span lang="la">fortassē</span>, without evidence). Catull. 85.1')
+        for path in ('index.html', 'c/perhaps.html', 'l/fortasse.html'):
+            self.assertIn(opening, outputs[path], path)
+        self.assertEqual(builder.note_html({'html': 'Plain note.'}), 'Plain note.')
+        self.assertEqual(builder.note_html({'form': 'ānsāta', 'claim': 'long a before ns', 'html': 'From ānsa.'}),
+                         '<b class="nf" lang="la">ānsāta</b>: long a before ns. From ānsa.')
+
+    def test_index_opens_on_contents_and_cards_follow_the_page_format(self):
+        index = builder.build_site(self.root)['index.html']
+        self.assertIn('<section id="contents" class="home"', index)
+        self.assertIn('<a class="chip chip-home" href="#contents" data-filter="all">Contents</a>', index)
+        self.assertIn('<a class="chip" href="#culina" data-filter="culina" lang="la">', index)
+        self.assertIn('data-theme="light"', index)
+        self.assertIn("=== 'dark' ? 'dark' : 'light'", index)
+        card = index[index.index('id="c-cooking-pot"'):]
+        card = card[:card.index('</article>')]
+        self.assertIn('<h3>cooking pot <span class="pos">noun</span>', card)
+        self.assertIn('<li class="term lead" data-status="recommended"><strong lang="la"><a href="l/caccabus.html">caccabus</a>', card)
+        self.assertIn('<span class="rec-meta">noun, second declension · <span class="lab">classical</span>', card)
+        self.assertIn('<h4 class="rec-label">Examples</h4><ul class="rec ex">', card)
+
     def test_note_numbers_follow_reading_order(self):
         record = self.record('perhaps')
         record['notes']['second'] = {'html': 'Second note.'}
@@ -180,6 +207,9 @@ class BuildTests(unittest.TestCase):
             'which still exists': lambda r: r.update(replaces=['entry-1']),
             'Unknown fields': lambda r: r.update(lattin='x'),
             'Invalid review': lambda r: r['review'].update(status='done'),
+            'needs both form and claim': lambda r: r['notes']['short-e'].pop('claim'),
+            'has against without a form': lambda r: r['notes'].update(
+                **{'short-e': {'html': 'Evidence.', 'against': 'Lewis &amp; Short'}}),
         }
         original = self.record('perhaps')
         for message, change in cases.items():

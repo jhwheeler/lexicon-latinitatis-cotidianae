@@ -1,17 +1,17 @@
 (() => {
-  // Theme toggle (dark is the default; the choice is kept where storage allows).
+  // Theme toggle (light is the default; the choice is kept where storage allows).
   const root = document.documentElement;
   const toggle = document.getElementById('theme-toggle');
   const label = document.getElementById('theme-label');
   const color = document.querySelector('meta[name="theme-color"]');
   function sync() {
-    const light = root.dataset.theme === 'light';
-    if (label) label.textContent = light ? 'Dark mode' : 'Light mode';
-    if (toggle) toggle.setAttribute('aria-label', light ? 'Switch to dark mode' : 'Switch to light mode');
-    if (color) color.content = light ? '#ffffff' : '#121212';
+    const dark = root.dataset.theme === 'dark';
+    if (label) label.textContent = dark ? 'Light mode' : 'Dark mode';
+    if (toggle) toggle.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+    if (color) color.content = dark ? '#1c1b19' : '#ffffff';
   }
   if (toggle) toggle.addEventListener('click', () => {
-    const theme = root.dataset.theme === 'light' ? 'dark' : 'light';
+    const theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
     root.dataset.theme = theme;
     try { localStorage.setItem('lexicon-theme', theme); } catch {}
     sync();

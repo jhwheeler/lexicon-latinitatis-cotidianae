@@ -42,12 +42,13 @@ TAG_ORDER = ('Ancient Latin', 'Late Latin', 'Medieval & Renaissance', 'Neo-Latin
 RULING_KINDS = {'orthography': 'Spelling', 'quantity': 'Vowel length', 'usage': 'Usage', 'word': 'Word choices'}
 RULING_STATUSES = ('current', 'provisional', 'withdrawn')
 THEME_INIT = ("<script>\ntry {\n  document.documentElement.dataset.theme = "
-              "localStorage.getItem('lexicon-theme') === 'light' ? 'light' : 'dark';\n} catch {}\n</script>")
-THEME_TOGGLE = ('<button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to light mode">'
+              "localStorage.getItem('lexicon-theme') === 'dark' ? 'dark' : 'light';\n} catch {}\n</script>")
+DARK_PAPER = '#1c1b19'
+THEME_TOGGLE = ('<button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to dark mode">'
                 '<svg class="theme-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">'
                 '<circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg>'
                 '<svg class="theme-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">'
-                '<path d="M20.9 13A9 9 0 0 1 11 3.1 7 7 0 1 0 20.9 13Z"/></svg><span id="theme-label">Light mode</span></button>')
+                '<path d="M20.9 13A9 9 0 0 1 11 3.1 7 7 0 1 0 20.9 13Z"/></svg><span id="theme-label">Dark mode</span></button>')
 NAV = (('index.html', 'Search'), ('how-we-decide.html', 'How we decide'), ('rulings.html', 'Rulings'))
 REPO = 'https://github.com/jhwheeler/lexicon-latinitatis-cotidianae'
 POS = ('noun', 'verb', 'adjective', 'adverb', 'pronoun', 'preposition', 'conjunction', 'interjection', 'numeral', 'phrase')
@@ -242,8 +243,13 @@ def load_records(root, categories, legacy, rulings):
         require(isinstance(notes, dict), f'Notes in {where} must be an object')
         for name, note in notes.items():
             require(re.fullmatch(SLUG, name), f'Invalid note key in {where}: {name}')
-            fields(note, ('html',), ('ruling',))
+            fields(note, ('html',), ('ruling', 'form', 'claim', 'against'))
             rich(note['html'])
+            require(('form' in note) == ('claim' in note), f'Note {name} in {where} needs both form and claim')
+            require('against' not in note or 'form' in note, f'Note {name} in {where} has against without a form')
+            for part in ('form', 'claim', 'against'):
+                if part in note:
+                    rich(note[part])
             if 'ruling' in note:
                 require(note['ruling'] in rulings, f'Unknown ruling in {where}: {note["ruling"]}')
         used = []
@@ -289,6 +295,15 @@ def load_records(root, categories, legacy, rulings):
             require(target in records or target in legacy, f'Unknown related target in concept {record["id"]}: {target}')
             require(target != record['id'], f'Concept {record["id"]} relates to itself')
     return records
+
+
+def note_html(note):
+    """A note as printed. A note on a form opens in one fixed shape, the form, what we write and the
+    authority we depart from: "fortasse: short final e (Lewis & Short fortassē)", then its evidence."""
+    if 'form' not in note:
+        return note['html']
+    against = f' ({note["against"]})' if 'against' in note else ''
+    return f'<b class="nf" lang="la">{note["form"]}</b>: {note["claim"]}{against}. {note["html"]}'
 
 
 def ordered_terms(record):
@@ -428,32 +443,55 @@ class Links:
         return linked, rest
 
 
-def render_record(record, site, on_concept_page=False):
-    key, links = record['id'], Links(site, 'concept' if on_concept_page else 'index')
+def review_state(review):
+    return (f'Reviewed by {escape(review["by"])}, {human_date(review["date"])}.' if review['status'] == 'reviewed'
+            else f'Draft of {human_date(review["date"])}, not yet reviewed.')
+
+
+def term_meta(term):
+    """The line under a term: its grammar, its status unless recommended, its period and evidence."""
+    status = (f'<span class="lab status-{term["status"]}">{STATUS_LABELS[term["status"]]}</span>'
+              if term['status'] != 'recommended' else '')
+    return ' · '.join(x for x in (escape(grammar(term)), status, f'<span class="lab">{PERIODS[term["period"]]}</span>',
+                                  '; '.join(term.get('evidence', []))) if x)
+
+
+def render_record(record, site):
+    """A record's card in its category on the index, in the format of its page: the English headword
+    and part of speech, the Latin to say with its grammar and period, the other words, the examples,
+    the notes and the sources. Search reads the same lines as on a grouped card."""
+    key, links = record['id'], Links(site, 'index')
     numbers = note_numbers(record)
 
     def refs(item):
         return ''.join(f'<sup class="fn-ref"><a href="#fn-{key}-{numbers[n]}" aria-label="Note {numbers[n]}">{numbers[n]}</a></sup>'
                        for n in item.get('notes', []))
 
-    lines = []
-    for term in ordered_terms(record):
-        register = f' <span class="register">({term["register"]})</span>' if 'register' in term else ''
-        status = (f' <span class="pill status-{term["status"]}">{STATUS_LABELS[term["status"]]}</span>'
-                  if term['status'] != 'recommended' else '')
-        evidence = f' ({"; ".join(term["evidence"])})' if term.get('evidence') else ''
-        comment = f' {term["comment"]}' if 'comment' in term else ''
+    def term_line(term, lead=False):
         head, rest = links.latin(term['latin'])
-        lines.append(f'<li class="term" data-status="{term["status"]}"><strong lang="la">{head}{escape(rest)}</strong>'
-                     f' — {escape(term.get("gloss", record["english"]))}{register}'
-                     f' <span class="pill period">{PERIODS[term["period"]]}</span>{status}{evidence}{refs(term)}{comment}</li>')
-    for phrase in record.get('phrases', []):
-        source = ' <span class="pill">composed</span>' if phrase['source'] == 'composed' else f' ({phrase["source"]})'
-        lines.append(f'<li class="phrase"><strong lang="la">{escape(phrase["latin"])}</strong>'
-                     f' — {escape(phrase["english"])}{source}{refs(phrase)}</li>')
-    body = '<ul>\n' + '\n'.join(lines) + '\n</ul>'
+        gloss = term.get('gloss', '')
+        gloss = (f' <span class="gloss">— {escape(gloss)}</span>'
+                 if gloss and gloss.strip().lower() != record['english'].strip().lower() else '')
+        register = f'<span class="rec-meta register">({term["register"]})</span>' if 'register' in term else ''
+        comment = f'<span class="rec-comment">{term["comment"]}</span>' if 'comment' in term else ''
+        return (f'<li class="term{" lead" if lead else ""}" data-status="{term["status"]}"><strong lang="la">{head}{escape(rest)}</strong>'
+                f'{refs(term)}{gloss}<span class="rec-meta">{term_meta(term)}</span>{register}{comment}</li>')
+
+    terms = ordered_terms(record)
+    body = '<ul class="rec">' + term_line(terms[0], lead=True) + '</ul>'
+    if terms[1:]:
+        body += ('<h4 class="rec-label">Other words</h4><ul class="rec words">'
+                 + ''.join(term_line(t) for t in terms[1:]) + '</ul>')
+    if record.get('phrases'):
+        items = []
+        for phrase in record['phrases']:
+            source = ('<span class="src composed">composed</span>' if phrase['source'] == 'composed'
+                      else f'<span class="src">{phrase["source"]}</span>')
+            items.append(f'<li class="phrase"><strong lang="la">{escape(phrase["latin"])}</strong>{refs(phrase)}'
+                         f'<span class="en">{escape(phrase["english"])} {source}</span></li>')
+        body += '<h4 class="rec-label">Examples</h4><ul class="rec ex">' + ''.join(items) + '</ul>'
     if record.get('related'):
-        body += ('<p class="related">See also: '
+        body += ('<p class="related">See also '
                  + ', '.join(f'<a href="{links.related(r)}">{links.label(r)}</a>' for r in record['related']) + '.</p>')
     if numbers:
         notes = []
@@ -463,23 +501,20 @@ def render_record(record, site, on_concept_page=False):
             if 'ruling' in note:
                 ruling = (f' <a class="ruling-link" href="{links.ruling(note["ruling"])}">'
                           f'Ruling: {escape(site["rulings"][note["ruling"]]["title"])}</a>')
-            notes.append(f'<li id="fn-{key}-{number}">{note["html"]}{ruling}</li>')
+            notes.append(f'<li id="fn-{key}-{number}">{note_html(note)}{ruling}</li>')
         body += '<ol class="footnotes" aria-label="Notes">' + ''.join(notes) + '</ol>'
-    review = record['review']
-    state = (f'Reviewed by {escape(review["by"])}, {human_date(review["date"])}.' if review['status'] == 'reviewed'
-             else f'Draft of {human_date(review["date"])}, not yet reviewed.')
     body += ('<details class="entry-sources"><summary>Sources &amp; evidence</summary>'
-             + ''.join(f'<p>{s}</p>' for s in record['sources']) + f'<p>{state}</p></details>')
+             + ''.join(f'<p>{s}</p>' for s in record['sources']) + f'<p>{review_state(record["review"])}</p></details>')
     anchors = ''.join(f'<span class="legacy-anchor" id="{escape(old)}"></span>' for old in record.get('replaces', []))
-    tags = ''.join(f'<span class="tag">{escape(t)}</span>' for t in record_tags(record))
-    page = '' if on_concept_page else f'<p class="record-meta"><a href="c/{key}.html">Page for this word</a></p>'
-    search = ' '.join(record.get('also', []))
-    html_id = '' if on_concept_page else f' id="c-{key}"'
-    return (f'<article class="entry record"{html_id} data-entry data-record data-entry-id="c-{key}" '
-            f'data-category="{record["domain"]}" data-search="{escape(search, quote=True)}">{anchors}\n'
-            f'<header class="entry-head"><div><p class="eyebrow">{escape(record_english(record))}</p>'
-            f'<h3 lang="la">{escape(record_heading(record))}</h3></div><div class="tags">{tags}</div></header>\n'
-            f'<div class="entry-body">{body}</div>\n{page}</article>')
+    pos = pos_label(record)
+    draft = ' <span class="tag">draft</span>' if record['review']['status'] == 'draft' else ''
+    sense = f' <span class="sense">{escape(record["sense"])}</span>' if 'sense' in record else ''
+    return (f'<article class="entry record" id="c-{key}" data-entry data-record data-entry-id="c-{key}" '
+            f'data-category="{record["domain"]}" data-search="{escape(" ".join(record.get("also", [])), quote=True)}">{anchors}\n'
+            f'<header class="entry-head"><h3>{escape(record["english"])}'
+            + (f' <span class="pos">{escape(pos)}</span>' if pos else '') + f'{sense}{draft}</h3></header>\n'
+            f'<div class="entry-body">{body}</div>\n'
+            f'<p class="record-meta"><a href="c/{key}.html">Page for this word</a></p></article>')
 
 
 def plain(text):
@@ -501,20 +536,15 @@ def site_footer(up):
 
 
 def page_shell(title, description, canonical, up, body, current=None):
-    return (GENERATED + '<!doctype html>\n<html lang="en" data-theme="dark">\n<head>\n<meta charset="utf-8">\n'
+    return (GENERATED + '<!doctype html>\n<html lang="en" data-theme="light">\n<head>\n<meta charset="utf-8">\n'
             '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
-            '<meta name="color-scheme" content="light dark">\n<meta name="theme-color" content="#121212">\n'
+            '<meta name="color-scheme" content="light dark">\n<meta name="theme-color" content="#ffffff">\n'
             f'<title>{escape(title)}</title>\n<meta name="description" content="{escape(description, quote=True)}">\n'
             f'<link rel="canonical" href="{SITE_URL}{canonical}">\n{THEME_INIT}\n'
             f'<link rel="stylesheet" href="{up}assets/lexicon.css">\n<script src="{up}assets/lexicon.js" defer></script>\n'
             '</head>\n<body class="subpage">\n'
             f'{site_header(up, current)}\n<main class="wrap page-main">\n{body}\n</main>\n{site_footer(up)}\n'
             '</body>\n</html>\n')
-
-
-def review_state(review):
-    return (f'Reviewed by {escape(review["by"])}, {human_date(review["date"])}.' if review['status'] == 'reviewed'
-            else f'Draft of {human_date(review["date"])}, not yet reviewed.')
 
 
 def render_concept(record, site):
@@ -540,7 +570,7 @@ def render_concept(record, site):
                 state = f' ({found["status"]})' if found['status'] != 'current' else ''
                 ruling = f' <a class="ruling-link" href="{links.ruling(note["ruling"])}">Ruling: {escape(found["title"])}</a>{state}.'
             out.append(f'<aside class="side note" id="fn-{key}-{numbers[name]}"><p><span class="n">{numbers[name]}</span>'
-                       f'{note["html"]}{ruling}</p></aside>')
+                       f'{note_html(note)}{ruling}</p></aside>')
         return ''.join(out)
 
     def labels(term):
@@ -600,7 +630,7 @@ def render_concept(record, site):
         for term in others:
             head, rest = links.latin(term['latin'])
             side = notes(term)
-            meta = ' · '.join(x for x in (escape(grammar(term)), labels(term), '; '.join(term.get('evidence', []))) if x)
+            meta = term_meta(term)
             gloss = f'<span class="gloss" lang="en"> — {escape(term["gloss"])}</span>' if term.get('gloss') else ''
             item = [side, f'<p class="lemma" lang="la"><b>{head}</b>{refs(term)}{escape(rest)}{gloss}</p>',
                     f'<p class="meta-line">{meta}</p>']
@@ -669,7 +699,7 @@ def render_word_page(head, info, site):
                 found = site['rulings'][note['ruling']]
                 state = f' ({found["status"]})' if found['status'] != 'current' else ''
                 ruling = f' <a class="ruling-link" href="{links.ruling(note["ruling"])}">Ruling: {escape(found["title"])}</a>{state}.'
-            notes.append(f'<li><span class="n">{len(notes) + 1}</span>{note["html"]}{ruling}</li>')
+            notes.append(f'<li><span class="n">{len(notes) + 1}</span>{note_html(note)}{ruling}</li>')
     cited = {record['notes'][n].get('ruling') for record, term in uses for n in term.get('notes', [])}
     for ruling in sorted(site['rulings'].values(), key=lambda r: r['id']):
         if head in ruling.get('forms', []) and ruling['id'] not in cited:
@@ -802,31 +832,34 @@ def load_site(root):
 
 
 def render_index(root, site):
-    sections = []
+    sections, counts = [], {}
     for key, category in site['categories'].items():
         cards = [render_entry(entry, key) for entry in site['entries'][key]]
         records = sorted((r for r in site['records'].values() if r['domain'] == key), key=lambda r: (r['english'].lower(), r['id']))
         cards += [render_record(r, site) for r in records]
+        counts[key] = len(cards)
         aliases = ''.join(f'<span class="legacy-anchor" id="{a}"></span>' for a in category.get('aliases', []))
         sections.append(f'<section class="category" data-category-section="{key}" id="{key}">{aliases}'
-                        '<div class="category-heading"><div>'
-                        f'<p class="eyebrow">{escape(string(category["english"]))}</p>'
-                        f'<h2 lang="la">{escape(string(category["latin"]))}</h2></div>'
-                        f'<span class="category-count">{len(cards)} entries</span></div>'
+                        f'<div class="category-heading"><h2 lang="la">{escape(string(category["latin"]))}</h2>'
+                        f'<p class="eyebrow">{escape(string(category["english"]))}</p></div>'
                         '<div class="entries">' + '\n'.join(cards) + '</div></section>')
     filters = site['catalog']['filters']
     require(isinstance(filters, list) and all(isinstance(f, str) for f in filters), 'Invalid filters')
     require(len(filters) == len(set(filters)) and set(filters) == set(site['categories']) | {'all'}, 'Filters must cover every category once')
-    labels = {k: c['latin'] for k, c in site['categories'].items()} | {'all': 'Omnia'}
-    chips = ''.join(f'<button class="chip" type="button" data-filter="{key}" '
-                    f'aria-pressed="{str(key == "all").lower()}"'
-                    + ('' if key == 'all' else ' lang="la"')
-                    + f'>{escape(string(labels[key]))}</button>' for key in filters)
+    # The front page lists the categories in the order of the filters; "all" is the front page itself,
+    # whose search covers every category.
+    contents = ''.join(f'<li><a href="#{key}"><span class="toc-la" lang="la">{escape(site["categories"][key]["latin"])}</span>'
+                       f'<span class="toc-n">{counts[key]}<span class="vh"> entries</span></span>'
+                       f'<span class="toc-en">{escape(site["categories"][key]["english"])}</span></a></li>'
+                       for key in filters if key != 'all')
+    chips = ''.join(('<a class="chip chip-home" href="#contents" data-filter="all">Contents</a>' if key == 'all' else
+                     f'<a class="chip" href="#{key}" data-filter="{key}" lang="la">{escape(string(site["categories"][key]["latin"]))}</a>')
+                    for key in filters)
     # The index inlines its styles so that a saved copy still works; its fonts sit in assets/.
     styles = (root / 'src/styles.css').read_text(encoding='utf-8').replace('url(fonts/', 'url(assets/fonts/')
     replacements = {'styles': styles, 'theme_toggle': THEME_TOGGLE,
                     'search': (root / 'src/search.js').read_text(encoding='utf-8'),
-                    'filters': chips, 'entries': '\n'.join(sections),
+                    'filters': chips, 'contents': contents, 'entries': '\n'.join(sections),
                     'entry_count': str(len(site['legacy'])), 'record_count': str(len(site['records']))}
     return fill(root / 'src/page.html', replacements)
 

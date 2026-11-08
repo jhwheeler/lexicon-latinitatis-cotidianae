@@ -27,7 +27,7 @@ References:
 
 - `version`: currently `1`.
 - `categories`: ordered objects with `id`, `english`, and `latin`. IDs are lowercase letters, digits and hyphens, beginning with a letter. Each category has a matching `data/entries/<id>.json` file containing an array of entries.
-- `filters`: the category IDs plus `all`, each exactly once, in the desired toolbar order.
+- `filters`: the category IDs plus `all`, each exactly once, in the order of the contents and the category menu. `all` stands for the front page (the contents, and a search of every category); it is listed first.
 
 Category headings, filter labels, per-category counts and the hero entry total are generated. Dates and review notes are editorial text in `src/page.html`; rebuilding does not invent a new review date.
 

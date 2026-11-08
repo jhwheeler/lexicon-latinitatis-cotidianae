@@ -6,6 +6,8 @@ let browser, page, originals;
 const url = new URL('../index.html', import.meta.url).href;
 const resultIds = () => page.locator('.search-result').evaluateAll(nodes => nodes.map(n => n.dataset.resultFor));
 const search = query => page.locator('#search').fill(query);
+const pageUrl = path => new URL('../' + path, import.meta.url).href;
+const overflows = () => page.evaluate(() => document.documentElement.scrollWidth > innerWidth);
 
 before(async () => {
   browser = await chromium.launch({
@@ -48,18 +50,48 @@ test('macrons, decomposed accents and i/j share matching and visible highlights'
   assert.equal(await page.locator('.search-result mark').count() > 0, true);
 });
 
-test('category filters constrain search; Clear and Escape restore all original content', async () => {
+test('the index opens on the contents, which lead to each category and back', async () => {
+  assert.equal(await page.locator('#contents').isVisible(), true);
+  assert.equal(await page.locator('.categories').isVisible(), false);
+  assert.equal(await page.locator('[data-entry]:visible').count(), 0);
+  assert.equal(await page.locator('.toc a').count(), await page.locator('[data-category-section]').count());
+  assert.equal(await page.locator('#results').textContent(), `${originals.length} entries`);
+  await page.locator('.toc a[href="#culina"]').click();
+  await page.waitForURL(/#culina$/);
+  assert.equal(await page.locator('#contents').isVisible(), false);
+  assert.equal(await page.locator('[data-category-section]:visible').count(), 1);
+  assert.equal(await page.locator('#culina').isVisible(), true);
+  assert.equal(await page.locator('[data-filter="culina"]').getAttribute('aria-current'), 'true');
+  assert.equal(await page.evaluate(() => scrollY), 0);
+  await page.goBack();
+  await page.locator('#contents').waitFor();
+  assert.equal(await page.locator('[data-entry]:visible').count(), 0);
+  await page.goto(pageUrl('c/cooking-pot.html'));
+  await page.locator('.kind a').click();
+  await page.waitForURL(/index\.html#culina$/);
+  await page.locator('#culina').waitFor();
+  assert.equal(await page.locator('#contents').isVisible(), false);
+});
+
+test('a category keeps a search within it; Clear and Escape return to the view, entries intact', async () => {
+  await page.locator('.toc a[href="#vestitus"]').click();
   await search('pyjama');
-  await page.locator('[data-filter="vestitus"]').click();
   assert.equal(await page.locator('.search-result').count(), 3);
+  assert.match(await page.locator('#results').textContent(), /in Vestītus/);
   await page.locator('[data-filter="corpus"]').click();
   assert.equal(await page.locator('#empty').isVisible(), true);
   await page.locator('#search').press('Escape');
-  assert.equal(await page.locator('[data-entry]:visible').count(), originals.length);
+  assert.equal(await page.locator('#search').inputValue(), '');
+  assert.equal(await page.locator('[data-entry]:visible').count(), await page.locator('[data-entry][data-category="corpus"]').count());
   assert.deepEqual(await page.locator('[data-entry]').evaluateAll(nodes => nodes.map(n => n.innerHTML)), originals);
   await search('nītere'); await page.locator('#clear').click();
   assert.equal(await page.locator('#search').inputValue(), '');
-  assert.equal(await page.locator('[data-filter="all"]').getAttribute('aria-pressed'), 'true');
+  assert.equal(await page.locator('[data-filter="corpus"]').getAttribute('aria-current'), 'true');
+  await page.locator('.chip-home').click();
+  await page.locator('#contents').waitFor();
+  assert.equal(await page.locator('[data-entry]:visible').count(), 0);
+  await search('pyjama');
+  assert.equal(await page.locator('.search-result').count(), 6);
 });
 
 test('source-only and alias-only matches are explained and retain context', async () => {
@@ -113,7 +145,8 @@ test('phone and dark layouts keep matching text usable without horizontal overfl
   assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
 });
 
-test('desktop has a single-line title and a sidebar beside the primary search', async () => {
+test('desktop has a single-line title and, in a category, a sidebar beside the search', async () => {
+  await page.goto(url + '#vestitus');
   await search('pyjama');
   for (const width of [1024, 1280, 1440]) {
     await page.setViewportSize({ width, height: 900 });
@@ -121,8 +154,8 @@ test('desktop has a single-line title and a sidebar beside the primary search', 
       const rect = selector => document.querySelector(selector).getBoundingClientRect();
       return {
         headerHeight: rect('.hero').height,
-        titleHeight: rect('h1').height,
-        titleLineHeight: parseFloat(getComputedStyle(document.querySelector('h1')).lineHeight),
+        titleLines: (() => { const range = document.createRange(); range.selectNodeContents(document.querySelector('h1 a'));
+          return new Set([...range.getClientRects()].map(r => Math.round(r.top))).size; })(),
         sidebarRight: rect('.categories').right,
         searchLeft: rect('.toolbar').left,
         resultTop: rect('.search-result').top,
@@ -132,18 +165,37 @@ test('desktop has a single-line title and a sidebar beside the primary search', 
     });
     assert.equal(layout.open, true);
     assert.equal(layout.overflow, false);
-    assert.ok(layout.titleHeight < layout.titleLineHeight * 1.1);
+    assert.equal(layout.titleLines, 1);
     assert.ok(layout.headerHeight < 120);
     assert.ok(layout.sidebarRight < layout.searchLeft);
     assert.ok(layout.resultTop < 250);
   }
   assert.doesNotMatch(await page.locator('.hero').textContent(), /Theo|Theodore|Theodōr/);
+  await search('');
   await page.evaluate(() => window.scrollTo(0, 300));
   assert.ok(Math.abs((await page.locator('.toolbar').boundingBox()).y) < 2);
+  assert.ok(Math.abs((await page.locator('.categories').boundingBox()).y) < 2, 'the sidebar sticks level with the search');
+});
+
+test('rules that run one above the other end at the same edges', async () => {
+  for (const [width, hash] of [[1280, ''], [1280, '#culina'], [390, ''], [390, '#culina']]) {
+    await page.setViewportSize({ width, height: 900 });
+    await page.goto(pageUrl('rulings.html'));
+    await page.goto(url + hash);
+    const edges = await page.evaluate(() => {
+      const box = selector => { const b = document.querySelector(selector).getBoundingClientRect(); return [Math.round(b.left), Math.round(b.right)]; };
+      return { toolbar: box('.toolbar'), clear: box('.clear'), main: box('main'),
+        heading: box(location.hash ? '.category:not([hidden]) .category-heading' : '.home h2') };
+    });
+    assert.deepEqual(edges.toolbar, edges.main, `search rule at ${width}px ${hash}`);
+    assert.deepEqual(edges.heading, edges.main, `heading rule at ${width}px ${hash}`);
+    assert.ok(edges.clear[1] <= edges.toolbar[1] && edges.clear[0] > edges.toolbar[0], 'Clear stands on the search rule');
+  }
 });
 
 test('mobile category disclosure preserves the query, selected filter and keyboard focus', async () => {
   await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto(url + '#corpus');
   await page.locator('#category-menu:not([open])').waitFor();
   await search('pyjama');
   await page.locator('#category-menu > summary').click();
@@ -155,40 +207,49 @@ test('mobile category disclosure preserves the query, selected filter and keyboa
   assert.equal(await page.evaluate(() => document.activeElement === document.querySelector('#category-menu > summary')), true);
   await page.setViewportSize({ width: 1280, height: 900 });
   await page.locator('#category-menu[open]').waitFor({ state: 'attached' });
-  assert.equal(await page.locator('[data-filter="vestitus"]').getAttribute('aria-pressed'), 'true');
+  assert.equal(await page.locator('[data-filter="vestitus"]').getAttribute('aria-current'), 'true');
   await page.setViewportSize({ width: 320, height: 700 });
   await page.locator('#category-menu:not([open])').waitFor();
   assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
   assert.ok((await page.locator('.search-result').first().boundingBox()).y < 300);
 });
 
-test('dark is the default even on a light system; the keyboard toggle persists its choice', async () => {
-  await page.emulateMedia({ colorScheme: 'light' });
+test('light is the default even on a dark system; the keyboard toggle persists its choice', async () => {
+  await page.emulateMedia({ colorScheme: 'dark' });
   await page.evaluate(() => localStorage.removeItem('lexicon-theme'));
-  await page.reload();
-  assert.equal(await page.locator('html').getAttribute('data-theme'), 'dark');
-  assert.equal(await page.evaluate(() => getComputedStyle(document.documentElement).colorScheme), 'dark');
-  await search('pyjama');
-  const toggle = page.getByRole('button', { name: 'Switch to light mode' });
-  await toggle.focus(); await toggle.press('Space');
-  assert.equal(await page.locator('html').getAttribute('data-theme'), 'light');
-  assert.equal(await page.locator('#search').inputValue(), 'pyjama');
-  assert.equal(await page.locator('.search-result').count(), 6);
   await page.reload();
   assert.equal(await page.locator('html').getAttribute('data-theme'), 'light');
   assert.equal(await page.evaluate(() => getComputedStyle(document.documentElement).colorScheme), 'light');
-  await page.getByRole('button', { name: 'Switch to dark mode' }).click();
+  await search('pyjama');
+  const toggle = page.getByRole('button', { name: 'Switch to dark mode' });
+  await toggle.focus(); await toggle.press('Space');
+  assert.equal(await page.locator('html').getAttribute('data-theme'), 'dark');
+  assert.equal(await page.locator('#search').inputValue(), 'pyjama');
+  assert.equal(await page.locator('.search-result').count(), 6);
   await page.reload();
   assert.equal(await page.locator('html').getAttribute('data-theme'), 'dark');
+  assert.equal(await page.evaluate(() => getComputedStyle(document.documentElement).colorScheme), 'dark');
+  await page.getByRole('button', { name: 'Switch to light mode' }).click();
+  await page.reload();
+  assert.equal(await page.locator('html').getAttribute('data-theme'), 'light');
+});
+
+test('in dark mode, headings and labels are not red', async () => {
+  await page.evaluate(() => localStorage.setItem('lexicon-theme', 'dark'));
+  await page.goto(pageUrl('c/perhaps.html'));
+  const colours = await page.evaluate(() => ['.sec-head h2', '.lab', '.side .n'].map(s => getComputedStyle(document.querySelector(s)).color));
+  const red = colour => { const [r, g, b] = colour.match(/\d+/g).map(Number); return r - Math.max(g, b) > 40; };
+  assert.deepEqual(colours.slice(0, 2).map(red), [false, false], `headings and labels: ${colours}`);
+  await page.evaluate(() => localStorage.removeItem('lexicon-theme'));
 });
 
 test('mobile theme toggle works when saving preferences is blocked', async () => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.evaluate(() => Object.defineProperty(window, 'localStorage', { get() { throw new Error('Storage blocked'); } }));
-  await page.getByRole('button', { name: 'Switch to light mode' }).click();
-  assert.equal(await page.locator('html').getAttribute('data-theme'), 'light');
   await page.getByRole('button', { name: 'Switch to dark mode' }).click();
   assert.equal(await page.locator('html').getAttribute('data-theme'), 'dark');
+  await page.getByRole('button', { name: 'Switch to light mode' }).click();
+  assert.equal(await page.locator('html').getAttribute('data-theme'), 'light');
   await search('pyjama');
   assert.equal(await page.locator('.search-result').count(), 6);
   assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
@@ -206,6 +267,23 @@ test('concept records are searchable, notes count as source notes, and old ancho
   assert.equal(await page.locator('#c-swimming').isVisible(), true);
 });
 
+test('record cards on the index use the format of their pages', async () => {
+  await page.goto(url + '#culina');
+  const card = page.locator('#c-cooking-pot');
+  assert.match(await card.locator('h3').textContent(), /^cooking pot noun/);
+  assert.equal(await card.locator('.rec .lead strong[lang="la"]').textContent(), 'caccabus (cacabus), caccabī m.');
+  assert.match(await card.locator('.rec .lead .rec-meta').textContent(), /^noun, second declension · classical/);
+  assert.equal(await card.locator('.rec.ex > li').count(), 1);
+  assert.match(await card.locator('.footnotes').textContent(), /^caccabus: short a, double c \(Lewis & Short cācabus/);
+  assert.equal(await card.locator('.rec > li').evaluateAll(items => items.every(li => getComputedStyle(li).listStyleType === 'none')), true);
+});
+
+test('a note on a form opens with the form, the claim and the authority it departs from', async () => {
+  await page.goto(pageUrl('c/perhaps.html'));
+  assert.match(await page.locator('.side.note').textContent(), /^1fortasse: short final e \(Lewis & Short fortassē, without evidence\)\. Catull\. 85\.1/);
+  assert.equal(await page.locator('.side.note span[lang="la"]').first().evaluate(el => getComputedStyle(el).fontStyle), 'italic');
+});
+
 test('a concept page has its notes, a ruling link and no horizontal overflow on a phone', async () => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto(new URL('../c/perhaps.html', import.meta.url).href);
@@ -220,8 +298,6 @@ test('a concept page has its notes, a ruling link and no horizontal overflow on 
   assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
 });
 
-const pageUrl = path => new URL('../' + path, import.meta.url).href;
-const overflows = () => page.evaluate(() => document.documentElement.scrollWidth > innerWidth);
 
 test('examples can be narrowed to quotations or to composed sentences', async () => {
   await page.goto(pageUrl('c/tickle.html'));
@@ -264,14 +340,14 @@ test('on a wide screen the reasons stand in the margin; on a phone they follow t
 });
 
 test('every page is usable on a phone: no sideways scrolling, 44px controls, no zoom on search', async () => {
-  const pages = ['index.html', 'c/cooking-pot.html', 'c/tickle.html', 'c/perhaps.html', 'l/fortasse.html', 'rulings.html', 'how-we-decide.html'];
+  const pages = ['index.html', 'index.html#culina', 'c/cooking-pot.html', 'c/tickle.html', 'c/perhaps.html', 'l/fortasse.html', 'rulings.html', 'how-we-decide.html'];
   for (const width of [320, 375, 390]) {
     await page.setViewportSize({ width, height: 800 });
     for (const path of pages) {
       await page.goto(pageUrl(path));
       assert.equal(await overflows(), false, `${path} overflows at ${width}px`);
       const small = await page.evaluate(() => [...document.querySelectorAll(
-        '.site-nav a, .theme-toggle, .filter button, #category-menu > summary, .clear, .page-contents a, .search-context > summary, .entry-sources > summary')]
+        '.site-nav a, .theme-toggle, .filter button, #category-menu > summary, .clear, .page-contents a, .search-context > summary, .entry-sources > summary, .toc a, .hero h1 a, .record-meta a')]
         .filter(el => el.getClientRects().length && getComputedStyle(el).visibility !== 'hidden')
         .map(el => [el.textContent.trim().slice(0, 24), Math.round(el.getBoundingClientRect().height)])
         .filter(([, height]) => height < 44));
@@ -280,6 +356,7 @@ test('every page is usable on a phone: no sideways scrolling, 44px controls, no 
   }
   await page.goto(url);
   assert.ok(parseFloat(await page.locator('#search').evaluate(el => getComputedStyle(el).fontSize)) >= 16);
+  await page.goto(url + '#corpus');
   await page.locator('#category-menu > summary').click();
   const chips = await page.locator('.chip').evaluateAll(nodes => nodes.map(n => n.getBoundingClientRect().height));
   assert.ok(chips.every(height => height >= 44));
@@ -289,12 +366,12 @@ test('the theme toggle works on every page and the choice carries across pages',
   await page.goto(pageUrl('c/tickle.html'));
   await page.evaluate(() => localStorage.removeItem('lexicon-theme'));
   await page.reload();
-  assert.equal(await page.locator('html').getAttribute('data-theme'), 'dark');
-  await page.getByRole('button', { name: 'Switch to light mode' }).click();
-  assert.equal(await page.locator('html').getAttribute('data-theme'), 'light');
-  await page.goto(pageUrl('rulings.html'));
   assert.equal(await page.locator('html').getAttribute('data-theme'), 'light');
   await page.getByRole('button', { name: 'Switch to dark mode' }).click();
-  await page.goto(url);
   assert.equal(await page.locator('html').getAttribute('data-theme'), 'dark');
+  await page.goto(pageUrl('rulings.html'));
+  assert.equal(await page.locator('html').getAttribute('data-theme'), 'dark');
+  await page.getByRole('button', { name: 'Switch to light mode' }).click();
+  await page.goto(url);
+  assert.equal(await page.locator('html').getAttribute('data-theme'), 'light');
 });

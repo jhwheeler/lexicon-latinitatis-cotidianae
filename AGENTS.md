@@ -24,11 +24,15 @@ After adding or editing Latin, run `python3 scripts/consonantal_j.py --list` and
 
 ## Languages: English and Latin
 
-Jack's decision (8 November 2026): the lexicon is English–Latin. Don't add glosses, labels, headings or search terms in Bulgarian or any other language by default. Cite another language only where it helps to explain a Latin word's meaning or form, as a cf. (for example, Lithuanian *ūdra* and Russian *vydra* in the note on *lutra*). Describe local things in English (white brined cheese, not *sirene*).
+Jack's decision (8 November 2026): the lexicon is English–Latin. Don't add glosses, labels, headings or search terms in Bulgarian or any other language by default. Cite another language only where it helps to explain a Latin word's meaning or form, as a cf. (for example, Lithuanian *ūdra* and Russian *vydra* in the ruling on *lutra*). Describe local things in English (white brined cheese, not *sirene*).
 
 ## Design
 
-Jack's choice (9 November 2026): the "Minium" design. The rule is "say the black, do the red": Latin and its English are ink, and the rubrics (section heads, periods, note numbers, the control in use) are red. The text face is Gentium Book Plus, subset and renamed Lexicon Serif as its licence requires, with its own small capitals. Alegreya Sans is used only for controls. The layout uses rules, not boxes or pills. Dark is the default, and the light theme is black and red on white. On a concept page the reasons (period, evidence, notes) stand in the margin beside the line they explain, and on a phone they fold under it. The site must work well on a phone: nothing scrolls sideways, every control is at least 44px tall, and the search field's text is at least 16px. The browser tests check all three. The fonts and their licences are in `src/fonts/` (see its README).
+Jack's choice (9 November 2026): the "Minium" design. The rule is "say the black, do the red": Latin and its English are ink, and the rubrics (section heads, periods, note numbers, the control in use) are red. The text face is Gentium Book Plus, subset and renamed Lexicon Serif as its licence requires, with its own small capitals. Alegreya Sans is used only for controls. The layout uses rules, not boxes or pills, and rules that run one above the other end at the same edges: the search has a single rule, under the field and Clear alike. Latin quoted in English prose (notes, rulings, comments) is italic.
+
+Light, black and red on white, is the default. Jack found red on black hard to read (9 November 2026), so the dark theme is warm grey with cream ink: its headings and labels are cream, and red is kept to the small marks (note numbers, underlines, the control in use), as a soft rose. In the stylesheet, `--rubric` colours headings and labels and `--accent` the marks; in light both are red.
+
+The index opens on a front page, the search and the contents (Jack, 9 November 2026), not on the first category. A category's address (`index.html#culina`) opens that category, with the categories beside it. Record cards on the index use the format of the record's page, without the margin. On a concept page the reasons (period, evidence, notes) stand in the margin beside the line they explain, and on a phone they fold under it. The site must work well on a phone: nothing scrolls sideways, every control is at least 44px tall, and the search field's text is at least 16px. The browser tests check all three. The fonts and their licences are in `src/fonts/` (see its README).
 
 ## Exported copies
 

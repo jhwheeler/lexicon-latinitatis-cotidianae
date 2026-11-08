@@ -3,19 +3,58 @@
   "english": "underpants",
   "pos": "noun",
   "also": [
-    "briefs"
+    "briefs",
+    "boxers",
+    "boxer shorts"
   ],
   "domain": "vestitus",
   "terms": [
     {
-      "latin": "femorālia, femorālium n. pl.",
+      "latin": "subligāculum, subligāculī n.",
       "status": "recommended",
-      "period": "late",
-      "gloss": "coverings for the thighs",
+      "period": "classical",
+      "gloss": "underpants, briefs",
       "evidence": [
-        "Mir, morning routine"
+        "Cic. Off. 1.129",
+        "M-O s.v. undershorts"
       ],
-      "comment": "Used by Mir for underpants."
+      "comment": "Cicero’s word for the loin-cloth that no actor went on stage without; Morgan–Owens gives it, with <span lang=\"la\">subligar</span>, for briefs."
+    },
+    {
+      "latin": "subligar, subligāris n.",
+      "status": "alternative",
+      "period": "classical",
+      "evidence": [
+        "Mart. 3.87.4; Juv. 6.70 (Lewis &amp; Short)",
+        "M-O s.v. undershorts"
+      ]
+    },
+    {
+      "latin": "femorālia, femorālium n. pl.",
+      "status": "alternative",
+      "period": "late",
+      "gloss": "coverings for the thighs; boxer shorts",
+      "evidence": [
+        "Vulg. Sir. 45.10 (Lewis &amp; Short, s.v. <span lang=\"la\">femorāle</span>)",
+        "Mir, morning routine",
+        "M-O s.v. undershorts"
+      ],
+      "comment": "Mir’s word for underpants; Morgan–Owens keeps it for boxer shorts."
+    },
+    {
+      "latin": "brācae interiōrēs",
+      "status": "alternative",
+      "period": "modern",
+      "evidence": [
+        "Traupman 400"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Subligāculum indue.",
+      "english": "Put your underpants on.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -23,7 +62,9 @@
     "entry-317"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/femoralia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: femoralia</a> · <a href=\"https://gikanenos.blogspot.com/\" rel=\"noopener noreferrer\" target=\"_blank\">Mir: morning routine (transcription)</a>"
+    "<a href=\"https://logeion.uchicago.edu/subligaculum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: subligaculum</a> · <a href=\"https://logeion.uchicago.edu/subligar\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: subligar</a> · <a href=\"https://logeion.uchicago.edu/femorale\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: femorale</a> · <a href=\"https://gikanenos.blogspot.com/\" rel=\"noopener noreferrer\" target=\"_blank\">Mir: morning routine (transcription)</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. undershorts. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 400.",
+    "The example sentence marked “composed” is ours."
   ],
   "review": {
     "status": "draft",

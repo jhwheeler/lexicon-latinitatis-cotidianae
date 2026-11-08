@@ -1,6 +1,8 @@
 """How the first clothing batch was converted (kept as a record and a pattern for later batches; it refuses to run twice).
 Batch 1 of the clothing domain: cards entry-39, 58, 59, 60, 61 → concept records.
-Every Latin form and phrase is checked to occur verbatim in its card before anything is written."""
+Every Latin form and phrase is checked to occur verbatim in its card before anything is written.
+Records edited after the conversion are not updated here: on Jack's review (9 November 2026) underpants
+leads with subligāculum, not femorālia; see data/concepts/underpants.json."""
 import json, re, sys
 from pathlib import Path
 ROOT = Path(sys.argv[1])

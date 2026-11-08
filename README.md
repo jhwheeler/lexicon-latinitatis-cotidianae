@@ -33,9 +33,11 @@ See [the data format and architecture decision](docs/data-format.md) for an entr
 
 ## Search
 
-A search shows matching passages with their Latin expression, with short definition rows ranked before examples. Matches are highlighted using the same macron-insensitive and i/j-insensitive normalization as filtering. Each result can expand to show its complete entry and source notes; clearing the query returns to the original grouped cards. Matches found only in search aliases are identified explicitly. Macron guidance and editorial review notes are in the footer, linked by “About this lexicon”.
+The page opens on a front page: the search, a line on what the lexicon is, and the contents, a list of the categories with their entry counts. Choosing a category shows its entries; the address says which (`index.html#culina`), so the back button returns to the contents and a category or an entry can be linked to. A search from the front page covers every category; a search inside a category stays within it, and the line under the search says so. Clear empties the search and returns to the view it came from.
 
-Search stays above the results. Category filters appear in a sticky sidebar on desktop and in a collapsible panel below search on smaller screens. Selecting a category on mobile closes the panel, shows the selected category in its summary and returns keyboard focus to that summary. Resizing preserves the active category and query. The compact header uses a single-line title on desktop; entry counts and review history stay in the footer. Dark mode is the default; the header toggle switches to light mode and saves the choice locally. Saved preferences are applied before rendering the page, and the toggle still works when browser storage is unavailable.
+A search shows matching passages with their Latin expression, with short definition rows ranked before examples. Matches are highlighted using the same macron-insensitive and i/j-insensitive normalization as filtering. Each result can expand to show its complete entry and source notes. Matches found only in search aliases are identified explicitly. Macron guidance and editorial review notes are in the footer, linked by “About this lexicon”.
+
+The search stays at the top of the screen. In a category, the categories appear in a sticky sidebar on desktop, headed by a link back to the contents, and in a collapsible panel below the search on smaller screens. Selecting a category on mobile closes the panel, shows the selected category in its summary and returns keyboard focus to that summary. Resizing preserves the active category and query. Light mode is the default; the header toggle switches to dark mode and saves the choice locally. Saved preferences are applied before rendering the page, and the toggle still works when browser storage is unavailable.
 
 Words in the record format have their own pages (`c/<concept>.html`), and so does every Latin word that heads a term (`l/<word>.html`); see [docs/records.md](docs/records.md). On a concept page the reasons stand in the margin beside the line they explain and fold under it on a phone. A filter shows all examples, only the quotations or only the composed sentences. The design ("Minium") and its phone requirements are in AGENTS.md; the fonts and their licences are in `src/fonts/`.
 
@@ -47,7 +49,7 @@ npx playwright install chromium
 npm test
 ```
 
-The checks cover the pyjama lookup, highlighting and Unicode normalization, category filters, complete context, cross-references, alias/source matches, literal input, the footer and phone layout. CI also runs them in Chromium. For an existing browser installation, set `LEXICON_CHROMIUM_EXECUTABLE`; `LEXICON_CHROMIUM_ARGS` optionally supplies a JSON array of launch arguments.
+The checks cover the front page and its contents, the pyjama lookup, highlighting and Unicode normalization, category views and the search within them, complete context, cross-references, alias/source matches, literal input, the footer and phone layout. CI also runs them in Chromium. For an existing browser installation, set `LEXICON_CHROMIUM_EXECUTABLE`; `LEXICON_CHROMIUM_ARGS` optionally supplies a JSON array of launch arguments.
 
 ## Publishing and exports
 

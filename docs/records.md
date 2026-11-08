@@ -2,7 +2,7 @@
 
 The lexicon is moving from grouped topic cards (`data/entries/`, see `data-format.md`) to **one record per concept**: one sense of an English word, with every Latin form for it. The first 23 records (8 November 2026) are a pilot converted from four grouped entries; new words go in as records, and the grouped entries are converted batch by batch, each split checked by a person.
 
-The builder renders each record in four places: as a card in its topic on `index.html` (so search and filters work as before), as a page of its own at `c/<id>.html`, on `rulings.html` under each ruling its notes cite, and on the page of each Latin word it uses (`l/<word>.html`, below). `how-we-decide.html` states the general rules and links to the rulings page, and back. `sitemap.xml` lists every page.
+The builder renders each record in four places: as a card in its category on `index.html`, in the same format as its page but without the margin (so search and the category views work as before), as a page of its own at `c/<id>.html`, on `rulings.html` under each ruling its notes cite, and on the page of each Latin word it uses (`l/<word>.html`, below). `how-we-decide.html` states the general rules and links to the rulings page, and back. `sitemap.xml` lists every page.
 
 ## A record: `data/concepts/<id>.json`
 
@@ -20,7 +20,10 @@ The builder renders each record in four places: as a card in its topic on `index
     {"latin": "forsan", "status": "alternative", "period": "classical", "register": "vōx plērumque poētica: Verg., Hor."}
   ],
   "phrases": [{"latin": "Fortasse pluet; paenulam indue.", "english": "Maybe it’ll rain; put your coat on.", "source": "composed"}],
-  "notes": {"short-e": {"html": "Why <span lang=\"la\">fortasse</span>, not …", "ruling": "fortasse"}},
+  "notes": {"short-e": {"form": "fortasse", "claim": "short final e",
+                         "against": "Lewis &amp; Short <span lang=\"la\">fortassē</span>, without evidence",
+                         "html": "Catull. 85.1, … the fifth foot, <span lang=\"la\">-tasse re-</span>, is a dactyl. …",
+                         "ruling": "fortasse"}},
   "related": ["entry-300"],
   "sources": ["<a href=\"https://logeion.org/fortasse\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fortasse</a>"],
   "review": {"status": "draft", "date": "2026-11-08", "by": "Claude"},
@@ -40,7 +43,7 @@ The builder renders each record in four places: as a card in its topic on `index
 | `audience` | no | `child` (default) or `adult` |
 | `terms` | yes | the Latin forms; at least one `recommended` |
 | `phrases` | no | examples: `latin`, `english`, and `source` (`composed`, or a citation in rich text) |
-| `notes` | no | footnotes, by key: `html` (rich text) and optionally `ruling` (an ID in `data/rulings.json`) |
+| `notes` | no | footnotes, by key: `html` (rich text); for a note on a form, `form`, `claim` and optionally `against` (below); optionally `ruling` (an ID in `data/rulings.json`) |
 | `related` | no | other concept IDs, or grouped-entry IDs (`entry-291`) not yet converted |
 | `sources` | yes | the lines of “Sources & evidence”, in rich text |
 | `review` | yes | `status` (`draft` or `reviewed`), `date` (YYYY-MM-DD), `by` |
@@ -64,7 +67,20 @@ Every Latin word that heads a one-word term (`caccabus` in `caccabus (cacabus), 
 
 ## Notes (footnotes)
 
-Wherever a record departs from Lewis & Short or from one of its sources, a note says why, with the evidence: “Why *lutra*, not *lūtra*: …”. Terms and phrases cite notes by key; the builder numbers them in reading order and prints them under the entry. Every note must be cited, and every cited key must exist. A note that applies a ruling names it, and the note links to the ruling.
+Wherever a record departs from Lewis & Short or from one of its sources, a note says so, with the evidence. Terms and phrases cite notes by key; the builder numbers them in reading order and prints them beside the line that cites them (on a card, under it). Every note must be cited, and every cited key must exist. A note that applies a ruling names it, and the note links to the ruling.
+
+A note on a form (a vowel length, a spelling) has a fixed shape, so that hundreds of them read alike and none opens with “Why *abc*, not *ābc*?” (Jack, 9 November 2026). The builder prints
+
+> **fortasse**: short final e (Lewis & Short *fortassē*, without evidence). Catull. 85.1, … the fifth foot, *-tasse re-*, is a dactyl. Also Hor. S. 1.3.20, 1.6.98. De Vaan 236, s.v. *fors*: “short final vowel”.
+
+from four fields:
+
+- `form`: the form as we write it (rich text).
+- `claim`: what we write, in a few words: `short final e`, `long o`, `short a, double c`, `long a before ns`. No full stop.
+- `against` (optional): the authority we depart from and its form, with a word on why it fails if that is short: `Lewis &amp; Short <span lang="la">fortassē</span>, without evidence`; `Lewis &amp; Short leaves it unmarked`.
+- `html`: the evidence only, in citation style: the passage and what it proves, the etymology, the dictionary and page. It doesn't repeat the claim. Latin in it is marked `<span lang="la">` and prints in italic.
+
+A note on anything else (usage, a sense, a source's error) is plain `html`, written the same way: the point first, then the evidence. A ruling keeps the full argument; the note gives the reader what they need on the spot.
 
 The notes answer the reader who asks why we differ from a dictionary, and they let us trace a mistake to the decision that caused it.
 

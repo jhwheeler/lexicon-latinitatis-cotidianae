@@ -210,7 +210,7 @@ test('a concept page has its notes, a ruling link and no horizontal overflow on 
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto(new URL('../c/perhaps.html', import.meta.url).href);
   assert.match(await page.locator('h1').textContent(), /perhaps/);
-  assert.equal(await page.locator('.footnotes li').count(), 1);
+  assert.equal(await page.locator('.side.note').count(), 1);
   const ruling = page.locator('.ruling-link').first();
   assert.match(await ruling.getAttribute('href'), /rulings\.html#r-fortasse$/);
   assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
@@ -218,4 +218,83 @@ test('a concept page has its notes, a ruling link and no horizontal overflow on 
   await page.waitForURL(/rulings\.html#r-fortasse$/);
   assert.equal(await page.locator('#r-fortasse').isVisible(), true);
   assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
+});
+
+const pageUrl = path => new URL('../' + path, import.meta.url).href;
+const overflows = () => page.evaluate(() => document.documentElement.scrollWidth > innerWidth);
+
+test('examples can be narrowed to quotations or to composed sentences', async () => {
+  await page.goto(pageUrl('c/tickle.html'));
+  const filter = page.getByRole('group', { name: 'Show examples' });
+  assert.equal(await filter.isVisible(), true);
+  const visible = () => page.locator('.ex > li:visible').count();
+  assert.equal(await visible(), 4);
+  await filter.getByRole('button', { name: 'From authors' }).click();
+  assert.equal(await visible(), 1);
+  assert.match(await page.locator('.ex > li:visible').textContent(), /Plin\. NH 11\.198/);
+  await filter.getByRole('button', { name: 'Composed' }).click();
+  assert.equal(await visible(), 3);
+  assert.equal(await filter.getByRole('button', { name: 'Composed' }).getAttribute('aria-pressed'), 'true');
+  await filter.getByRole('button', { name: 'All' }).click();
+  assert.equal(await visible(), 4);
+});
+
+test('Latin words link to their own pages, which lead back to every entry that uses them', async () => {
+  await page.goto(pageUrl('c/perhaps.html'));
+  await page.locator('.term .lemma a', { hasText: 'fortasse' }).click();
+  await page.waitForURL(/l\/fortasse\.html$/);
+  assert.equal(await page.locator('h1').textContent(), 'fortasse');
+  assert.match(await page.locator('.uses').textContent(), /perhaps/);
+  assert.match(await page.locator('.notes-list').textContent(), /short final vowel/);
+  await page.locator('.uses a', { hasText: 'perhaps' }).click();
+  await page.waitForURL(/c\/perhaps\.html$/);
+});
+
+test('on a wide screen the reasons stand in the margin; on a phone they follow the word', async () => {
+  await page.goto(pageUrl('c/cooking-pot.html'));
+  const box = selector => page.locator(selector).first().boundingBox();
+  let lemma = await box('.term .lemma'), note = await box('.side.note');
+  assert.ok(note.x >= lemma.x + 500, 'the note sits in the right margin');
+  assert.ok(Math.abs(note.y - lemma.y) < 120, 'beside the word it explains');
+  await page.setViewportSize({ width: 390, height: 844 });
+  lemma = await box('.term .lemma'); note = await box('.side.note');
+  assert.ok(note.y > lemma.y + lemma.height, 'below the word');
+  assert.ok(Math.abs(note.x - lemma.x) < 24);
+  assert.equal(await overflows(), false);
+});
+
+test('every page is usable on a phone: no sideways scrolling, 44px controls, no zoom on search', async () => {
+  const pages = ['index.html', 'c/cooking-pot.html', 'c/tickle.html', 'c/perhaps.html', 'l/fortasse.html', 'rulings.html', 'how-we-decide.html'];
+  for (const width of [320, 375, 390]) {
+    await page.setViewportSize({ width, height: 800 });
+    for (const path of pages) {
+      await page.goto(pageUrl(path));
+      assert.equal(await overflows(), false, `${path} overflows at ${width}px`);
+      const small = await page.evaluate(() => [...document.querySelectorAll(
+        '.site-nav a, .theme-toggle, .filter button, #category-menu > summary, .clear, .page-contents a, .search-context > summary, .entry-sources > summary')]
+        .filter(el => el.getClientRects().length && getComputedStyle(el).visibility !== 'hidden')
+        .map(el => [el.textContent.trim().slice(0, 24), Math.round(el.getBoundingClientRect().height)])
+        .filter(([, height]) => height < 44));
+      assert.deepEqual(small, [], `${path} at ${width}px has controls under 44px`);
+    }
+  }
+  await page.goto(url);
+  assert.ok(parseFloat(await page.locator('#search').evaluate(el => getComputedStyle(el).fontSize)) >= 16);
+  await page.locator('#category-menu > summary').click();
+  const chips = await page.locator('.chip').evaluateAll(nodes => nodes.map(n => n.getBoundingClientRect().height));
+  assert.ok(chips.every(height => height >= 44));
+});
+
+test('the theme toggle works on every page and the choice carries across pages', async () => {
+  await page.goto(pageUrl('c/tickle.html'));
+  await page.evaluate(() => localStorage.removeItem('lexicon-theme'));
+  await page.reload();
+  assert.equal(await page.locator('html').getAttribute('data-theme'), 'dark');
+  await page.getByRole('button', { name: 'Switch to light mode' }).click();
+  assert.equal(await page.locator('html').getAttribute('data-theme'), 'light');
+  await page.goto(pageUrl('rulings.html'));
+  assert.equal(await page.locator('html').getAttribute('data-theme'), 'light');
+  await page.getByRole('button', { name: 'Switch to dark mode' }).click();
+  await page.goto(url);
+  assert.equal(await page.locator('html').getAttribute('data-theme'), 'dark');
 });

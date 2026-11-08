@@ -39,7 +39,10 @@ class BuildTests(unittest.TestCase):
         self.assertEqual(builder.build(), (ROOT / 'index.html').read_text(encoding='utf-8'))
         for path, text in builder.build_site().items():
             with self.subTest(path=path):
-                self.assertEqual(text, (ROOT / path).read_text(encoding='utf-8'))
+                if isinstance(text, bytes):
+                    self.assertEqual(text, (ROOT / path).read_bytes())
+                else:
+                    self.assertEqual(text, (ROOT / path).read_text(encoding='utf-8'))
         self.assertEqual(builder.stale(ROOT, builder.build_site()), [])
 
     def test_deterministic_build(self):
@@ -144,6 +147,18 @@ class BuildTests(unittest.TestCase):
         self.assertIn('c/perhaps.html</loc>', outputs['sitemap.xml'])
         self.assertIn('rulings.html</loc>', outputs['sitemap.xml'])
         self.assertIn('<span class="legacy-anchor" id="theodorus"></span>', index)
+        self.assertIn('href="../l/fortasse.html"', page)
+        self.assertIn('<h1 class="hw">perhaps <span class="pos">adverb</span></h1>', page)
+        word = outputs['l/fortasse.html']
+        self.assertIn('<h1 class="hw" lang="la">fortasse</h1>', word)
+        self.assertIn('href="../c/perhaps.html"', word)
+        self.assertIn('href="../rulings.html#r-fortasse"', word)
+        self.assertIn('l/fortasse.html</loc>', outputs['sitemap.xml'])
+        self.assertIn('<a href="l/fortasse.html" lang="la">fortasse</a>', rulings)
+        self.assertIn('href="l/caccabus.html"', index)
+        self.assertIn('url(assets/fonts/lexicon-serif-400.woff2)', index)
+        self.assertIn('url(fonts/lexicon-serif-400.woff2)', outputs['assets/lexicon.css'])
+        self.assertIsInstance(outputs['assets/fonts/lexicon-serif-400.woff2'], bytes)
 
     def test_note_numbers_follow_reading_order(self):
         record = self.record('perhaps')
@@ -176,6 +191,40 @@ class BuildTests(unittest.TestCase):
                     builder.build_site(self.root)
         self.save_record(original)
 
+    def test_grammar_is_read_from_the_dictionary_form(self):
+        cases = {'caccabus (cacabus), caccabī m.': 'noun, second declension', 'rādula, rādulae f.': 'noun, first declension',
+                 'cortex, corticis m.': 'noun, third declension', 'ructus, ructūs m.': 'noun, fourth declension',
+                 'diēs, diēī m.': 'noun, fifth declension', 'ferrāmenta, ferrāmentōrum n. pl.': 'noun, second declension, plural',
+                 'subtēgulāneum, -ī n.': 'noun, second declension', 'tītillō, tītillāre': 'verb, first conjugation',
+                 'singultiō, singultīre': 'verb, fourth conjugation', 'dēcoquō, dēcoquere, dēcoxī, dēcoctum': 'verb, third conjugation',
+                 'loquor, loquī': 'verb, third conjugation, deponent', 'ōlla ānsāta': '', 'fortasse': ''}
+        for latin, expected in cases.items():
+            with self.subTest(latin=latin):
+                self.assertEqual(builder.grammar({'latin': latin}), expected)
+        self.assertEqual(builder.grammar({'latin': 'tītillō, tītillāre', 'grammar': 'verb, transitive'}), 'verb, transitive')
+
+    def test_part_of_speech_validated(self):
+        record = self.record('perhaps')
+        for pos in ('adverbial', ['adverb', 'adverb'], []):
+            with self.subTest(pos=pos):
+                record['pos'] = pos
+                self.save_record(record)
+                with self.assertRaisesRegex(ValueError, 'Invalid part of speech'):
+                    builder.build_site(self.root)
+
+    def test_word_pages_get_distinct_slugs_and_link_within_longer_terms(self):
+        record = self.record('cooking-pot')
+        record['terms'].append({'latin': 'malum, malī n.', 'status': 'alternative', 'period': 'classical'})
+        record['terms'].append({'latin': 'mālum, mālī n.', 'status': 'alternative', 'period': 'classical'})
+        record['terms'].append({'latin': 'caccabus magnus', 'status': 'alternative', 'period': 'ours'})
+        self.save_record(record)
+        outputs = builder.build_site(self.root)
+        self.assertIn('l/malum.html', outputs)
+        self.assertIn('l/malum-2.html', outputs)
+        concept = outputs['c/cooking-pot.html']
+        self.assertIn('<b><a href="../l/caccabus.html">caccabus</a> magnus</b>', concept)
+        self.assertIn('<b lang="la">caccabus magnus</b>', outputs['l/caccabus.html'])
+
     def test_record_file_name_must_match_id(self):
         record = self.record('perhaps')
         self.save_record(record, key='maybe')
@@ -190,9 +239,11 @@ class BuildTests(unittest.TestCase):
             builder.build_site(self.root)
 
     def test_stale_concept_page_detected(self):
-        (self.root / 'c').mkdir()
-        (self.root / 'c/removed.html').write_text('old', encoding='utf-8')
-        self.assertEqual(builder.stale(self.root, builder.build_site(self.root)), ['c/removed.html'])
+        for path in ('c/removed.html', 'l/gone.html', 'assets/fonts/old.woff2'):
+            (self.root / path).parent.mkdir(parents=True, exist_ok=True)
+            (self.root / path).write_text('old', encoding='utf-8')
+        self.assertEqual(builder.stale(self.root, builder.build_site(self.root)),
+                         ['assets/fonts/old.woff2', 'c/removed.html', 'l/gone.html'])
 
     def test_broken_link_between_pages_rejected(self):
         record = self.record('perhaps')

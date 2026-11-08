@@ -2,7 +2,7 @@
 
 The lexicon is moving from grouped topic cards (`data/entries/`, see `data-format.md`) to **one record per concept**: one sense of an English word, with every Latin form for it. The first 23 records (8 November 2026) are a pilot converted from four grouped entries; new words go in as records, and the grouped entries are converted batch by batch, each split checked by a person.
 
-The builder renders each record three ways: as a card in its topic on `index.html` (so search and filters work as before), as a page of its own at `c/<id>.html`, and on `rulings.html` under each ruling its notes cite. `how-we-decide.html` states the general rules and links to the rulings page, and back. `sitemap.xml` lists every page.
+The builder renders each record in four places: as a card in its topic on `index.html` (so search and filters work as before), as a page of its own at `c/<id>.html`, on `rulings.html` under each ruling its notes cite, and on the page of each Latin word it uses (`l/<word>.html`, below). `how-we-decide.html` states the general rules and links to the rulings page, and back. `sitemap.xml` lists every page.
 
 ## A record: `data/concepts/<id>.json`
 
@@ -10,8 +10,9 @@ The builder renders each record three ways: as a card in its topic on `index.htm
 {
   "id": "perhaps",
   "english": "perhaps",
+  "pos": "adverb",
   "also": ["maybe", "perchance"],
-  "domain": "theodorus",
+  "domain": "sermo",
   "terms": [
     {"latin": "fortasse", "status": "recommended", "period": "classical", "gloss": "maybe, perhaps",
      "evidence": ["Cic. Div. Caec. 40: <span lang=\"la\">fortasse dīcēs</span>"],
@@ -32,6 +33,7 @@ The builder renders each record three ways: as a card in its topic on `index.htm
 | `id` | yes | a slug (`a-z`, digits, hyphens), the same as the file name; the page is `c/<id>.html`, the card `#c-<id>` |
 | `english` | yes | the English headword, one sense |
 | `sense` | no | a short disambiguation, shown after the headword (“the activity”) |
+| `pos` | no | the headword’s part of speech, shown after it: `noun`, `verb`, `adjective`, `adverb`, `pronoun`, `preposition`, `conjunction`, `interjection`, `numeral`, `phrase`, or a list of them (`["verb", "noun"]`) |
 | `also` | no | other English words that should find this concept in search |
 | `domain` | yes | a category ID from `data/catalog.json` |
 | `wikidata` | no | the Wikidata item (`Q…`) for the sense |
@@ -44,9 +46,21 @@ The builder renders each record three ways: as a card in its topic on `index.htm
 | `review` | yes | `status` (`draft` or `reviewed`), `date` (YYYY-MM-DD), `by` |
 | `replaces` | no | IDs and anchors of grouped entries this record absorbs; they stay valid links |
 
-A **term** has `latin` (lemma with genitive and gender, or principal parts), `status` (`recommended`, `alternative`, `avoid`), `period` (`classical`, `post-classical`, `late`, `medieval`, `renaissance`, `modern`, `ours`), and optionally `gloss` (English, if narrower than the headword), `register` (rich text, in the house’s Latin labels), `evidence` (a list of citations in rich text: “Traupman 50”, “M-O s.v. swimming”, “Plin. NH 7.78”, with a quotation where it helps), `comment` (rich text) and `notes` (footnote keys).
+A **term** has `latin` (lemma with genitive and gender, or principal parts), `status` (`recommended`, `alternative`, `avoid`), `period` (`classical`, `post-classical`, `late`, `medieval`, `renaissance`, `modern`, `ours`), and optionally `gloss` (English, if narrower than the headword), `grammar` (see below), `register` (rich text, in the house’s Latin labels), `evidence` (a list of citations in rich text: “Traupman 50”, “M-O s.v. swimming”, “Plin. NH 7.78”, with a quotation where it helps), `comment` (rich text) and `notes` (footnote keys).
 
 Rich text follows the rules of `data-format.md`: `<strong lang="la">`, `<span lang="la">`, `<em>`, external `<a>` links; macrons and j as everywhere else.
+
+### How a page shows a record
+
+- The headword line is the English word in bold with its part of speech (`perhaps` *adverb*), then `sense` and `also`.
+- The first recommended term is the answer: its headword is bold and links to the word's page, and its grammar line follows. The builder reads the grammar from the dictionary form: `caccabī m.` gives "noun, second declension" and `tītillāre` gives "verb, first conjugation". A term's own `grammar` overrides it, as in "verb, first conjugation, transitive". The term's `gloss` is shown only when it differs from the headword.
+- The period and the evidence of the answer stand in the margin. So do the notes, each beside the line that cites it. On a phone they fold under that line.
+- Examples follow, each with its source. When a record has both quotations and composed sentences, a filter offers All, From authors and Composed.
+- The other terms come under "Other words", each with its gloss, grammar, status, period and evidence.
+
+## Latin word pages: `l/<word>.html`
+
+Every Latin word that heads a one-word term (`caccabus` in `caccabus (cacabus), caccabī m.`) gets a page. It lists every record that uses the word, and the longer terms it appears in (`ōlla` in `ōlla ānsāta`, once `ōlla` has a term of its own). It also gives the notes on the word, the rulings whose `forms` include it, and the examples from the entries where it is the recommended word or that contain it. Wherever a term is shown, each of its words that has a page links to it. The page name drops macrons (`l/tyrocnestis.html`). Two words that differ only in macrons get `-2` and so on, in sorted order.
 
 ## Notes (footnotes)
 
@@ -62,7 +76,7 @@ Change a ruling by editing it and adding a `history` line; withdraw it rather th
 
 ## Checks
 
-`python3 scripts/build.py` validates records and rulings (fields, slugs, statuses, periods, notes cited and defined, rulings and related targets that exist, replaced entries that are really gone) and checks every link between the generated pages. A renamed category keeps its old ID in `aliases` in `data/catalog.json`, so old links still land on it. `--check` also fails on a stale or leftover page in `c/`. `scripts/consonantal_j.py` covers records and rulings. The tests include records, notes, pages and the rulings page.
+`python3 scripts/build.py` validates records and rulings (fields, slugs, statuses, periods, notes cited and defined, rulings and related targets that exist, replaced entries that are really gone) and checks every link between the generated pages. A renamed category keeps its old ID in `aliases` in `data/catalog.json`, so old links still land on it. `--check` also fails on a stale or leftover page in `c/` or `l/`, or a leftover font in `assets/fonts/`. `scripts/consonantal_j.py` covers records and rulings. The tests include records, notes, pages and the rulings page.
 
 ## Converting a grouped entry
 

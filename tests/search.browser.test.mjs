@@ -212,10 +212,10 @@ test('a concept page has its notes, a ruling link and no horizontal overflow on 
   assert.match(await page.locator('h1').textContent(), /perhaps/);
   assert.equal(await page.locator('.footnotes li').count(), 1);
   const ruling = page.locator('.ruling-link').first();
-  assert.match(await ruling.getAttribute('href'), /how-we-decide\.html#r-fortasse$/);
+  assert.match(await ruling.getAttribute('href'), /rulings\.html#r-fortasse$/);
   assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
   await ruling.click();
-  await page.waitForURL(/how-we-decide\.html#r-fortasse$/);
+  await page.waitForURL(/rulings\.html#r-fortasse$/);
   assert.equal(await page.locator('#r-fortasse').isVisible(), true);
   assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
 });

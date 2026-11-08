@@ -10,7 +10,7 @@ Site: https://jhwheeler.github.io/lexicon-latinitatis-cotidianae/
 
 - `data/catalog.json`: ordered categories, their headings, and filter order.
 - `data/concepts/<concept>.json`: one record per concept, with notes (footnotes) on every departure from a dictionary or source; each gets its own page in `c/`. See [docs/records.md](docs/records.md).
-- `data/rulings.json`: editorial rulings, listed on `how-we-decide.html`.
+- `data/rulings.json`: editorial rulings, listed on `rulings.html`; `src/how-we-decide.html` holds the editorial policy.
 - `data/entries/<category>.json`: older dictionary entries, grouped by topic, being converted to records.
 - `src/page.html`: page shell and editorial review notes; `src/how-we-decide.html`: the policy page.
 - `src/styles.css`: styling.
@@ -27,7 +27,7 @@ python3 scripts/build.py --check
 python3 -m unittest discover -s tests -v
 ```
 
-Commit the source changes **and the regenerated files** (`index.html`, `c/`, `how-we-decide.html`, `sitemap.xml`, `assets/lexicon.css`) together. Do not edit generated files directly. The PR check rejects invalid data, a broken link between pages, or a stale generated file. The hero total, category totals, filter labels and category markup are generated automatically.
+Commit the source changes **and the regenerated files** (`index.html`, `c/`, `how-we-decide.html`, `rulings.html`, `sitemap.xml`, `assets/lexicon.css`) together. Do not edit generated files directly. The PR check rejects invalid data, a broken link between pages, or a stale generated file. The hero total, category totals, filter labels and category markup are generated automatically.
 
 See [the data format and architecture decision](docs/data-format.md) for an entry example, field definitions, and why generation happens before publication rather than in the browser.
 

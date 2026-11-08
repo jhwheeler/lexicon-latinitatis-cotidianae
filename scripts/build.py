@@ -6,8 +6,9 @@ data/concepts/<concept>.json (one record per concept), data/rulings.json
 (editorial rulings) and the templates in src/.
 
 Outputs: index.html (the searchable single page), c/<concept>.html (one page
-per concept record), how-we-decide.html (policy and rulings), sitemap.xml and
-assets/lexicon.css. See docs/data-format.md and docs/records.md.
+per concept record), how-we-decide.html (editorial policy), rulings.html (the
+rulings register), sitemap.xml and assets/lexicon.css. See docs/data-format.md
+and docs/records.md.
 """
 import argparse
 from html import escape
@@ -311,7 +312,7 @@ class Links:
         return f'{self.up}index.html#{target}' if self.concept_page else f'#{target}'
 
     def ruling(self, key):
-        return f'{self.up}how-we-decide.html#r-{key}'
+        return f'{self.up}rulings.html#r-{key}'
 
     def label(self, key):
         if key in self.site['records']:
@@ -390,7 +391,7 @@ def page_shell(title, description, canonical, up, body):
             '<p class="brand-note">Everyday English–Latin</p></div>'
             f'<p class="about-link"><a href="{up}index.html">Search the lexicon</a></p></header>\n'
             f'<main class="wrap page-main">\n{body}\n</main>\n'
-            f'<footer><div class="wrap"><p><a href="{up}how-we-decide.html">How we decide</a> · '
+            f'<footer><div class="wrap"><p><a href="{up}how-we-decide.html">How we decide</a> · <a href="{up}rulings.html">Rulings</a> · '
             f'<a href="{up}index.html">Search the lexicon</a> · '
             '<a href="https://github.com/jhwheeler/lexicon-latinitatis-cotidianae">Source and history</a></p></div></footer>\n'
             '</body>\n</html>\n')
@@ -480,9 +481,11 @@ def load_site(root):
     categories, legacy, anchors = {}, {}, set()
     entries = {}
     for category in catalog['categories']:
-        fields(category, ('id', 'english', 'latin'))
+        fields(category, ('id', 'english', 'latin'), ('aliases',))
         key = string(category['id'])
         require(re.fullmatch(r'[a-z][a-z0-9-]*', key), 'Invalid category ID')
+        for alias in strings(category.get('aliases', []), f'Aliases of category {key}'):
+            require(re.fullmatch(r'[a-z][a-z0-9-]*', alias), f'Invalid alias of category {key}: {alias}')
         require(key not in categories and key != 'all', f'Duplicate/reserved category: {key}')
         categories[key] = category
         items = json.loads((root / f'data/entries/{key}.json').read_text(encoding='utf-8'))
@@ -510,7 +513,8 @@ def render_index(root, site):
         cards = [render_entry(entry, key) for entry in site['entries'][key]]
         records = sorted((r for r in site['records'].values() if r['domain'] == key), key=lambda r: (r['english'].lower(), r['id']))
         cards += [render_record(r, site) for r in records]
-        sections.append(f'<section class="category" data-category-section="{key}" id="{key}">'
+        aliases = ''.join(f'<span class="legacy-anchor" id="{a}"></span>' for a in category.get('aliases', []))
+        sections.append(f'<section class="category" data-category-section="{key}" id="{key}">{aliases}'
                         '<div class="category-heading"><div>'
                         f'<p class="eyebrow">{escape(string(category["english"]))}</p>'
                         f'<h2 lang="la">{escape(string(category["latin"]))}</h2></div>'
@@ -542,7 +546,7 @@ def fill(path, replacements):
 
 
 def render_sitemap(site):
-    pages = ['', 'how-we-decide.html'] + [f'c/{key}.html' for key in sorted(site['records'])]
+    pages = ['', 'how-we-decide.html', 'rulings.html'] + [f'c/{key}.html' for key in sorted(site['records'])]
     return ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
             + ''.join(f'<url><loc>{SITE_URL}{page}</loc></url>\n' for page in pages) + '</urlset>\n')
 
@@ -552,6 +556,8 @@ def build_site(root=ROOT):
     site = load_site(root)
     outputs = {'index.html': render_index(root, site)}
     outputs['how-we-decide.html'] = fill(root / 'src/how-we-decide.html', {
+        'ruling_count': str(len(site['rulings'])), 'theme': THEME_INIT})
+    outputs['rulings.html'] = fill(root / 'src/rulings.html', {
         'rulings': render_rulings(site), 'ruling_count': str(len(site['rulings'])), 'theme': THEME_INIT})
     for key, record in sorted(site['records'].items()):
         outputs[f'c/{key}.html'] = render_concept_page(record, site, site['categories'])

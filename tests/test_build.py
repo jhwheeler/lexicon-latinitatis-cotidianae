@@ -129,17 +129,21 @@ class BuildTests(unittest.TestCase):
         self.assertIn('id="c-perhaps"', index)
         self.assertIn('data-record', index)
         self.assertIn('<li id="fn-perhaps-1">', index)
-        self.assertIn('href="how-we-decide.html#r-fortasse"', index)
+        self.assertIn('href="rulings.html#r-fortasse"', index)
         self.assertIn('<span class="legacy-anchor" id="entry-550"></span>', index)
         self.assertIn('href="c/perhaps.html"', index)
         page = outputs['c/perhaps.html']
         self.assertIn('<title>perhaps in Latin: fortasse · ', page)
-        self.assertIn('href="../how-we-decide.html#r-fortasse"', page)
+        self.assertIn('href="../rulings.html#r-fortasse"', page)
         self.assertIn('<link rel="canonical" href="https://jhwheeler.github.io/lexicon-latinitatis-cotidianae/c/perhaps.html">', page)
-        rulings = outputs['how-we-decide.html']
+        rulings = outputs['rulings.html']
         self.assertIn('id="r-fortasse"', rulings)
+        self.assertIn('href="rulings.html"', outputs['how-we-decide.html'])
+        self.assertIn('href="how-we-decide.html"', rulings)
         self.assertIn('<a href="c/perhaps.html">perhaps</a>', rulings)
         self.assertIn('c/perhaps.html</loc>', outputs['sitemap.xml'])
+        self.assertIn('rulings.html</loc>', outputs['sitemap.xml'])
+        self.assertIn('<span class="legacy-anchor" id="theodorus"></span>', index)
 
     def test_note_numbers_follow_reading_order(self):
         record = self.record('perhaps')

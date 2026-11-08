@@ -2,7 +2,7 @@
 
 The lexicon is moving from grouped topic cards (`data/entries/`, see `data-format.md`) to **one record per concept**: one sense of an English word, with every Latin form for it. The first 23 records (8 November 2026) are a pilot converted from four grouped entries; new words go in as records, and the grouped entries are converted batch by batch, each split checked by a person.
 
-The builder renders each record three ways: as a card in its topic on `index.html` (so search and filters work as before), as a page of its own at `c/<id>.html`, and in the lists of `how-we-decide.html` wherever its notes cite a ruling. `sitemap.xml` lists every page.
+The builder renders each record three ways: as a card in its topic on `index.html` (so search and filters work as before), as a page of its own at `c/<id>.html`, and on `rulings.html` under each ruling its notes cite. `how-we-decide.html` states the general rules and links to the rulings page, and back. `sitemap.xml` lists every page.
 
 ## A record: `data/concepts/<id>.json`
 
@@ -56,13 +56,13 @@ The notes answer the reader who asks why we differ from a dictionary, and they l
 
 ## Rulings: `data/rulings.json`
 
-A ruling is a recorded decision: a rule for many words (consonantal j, which authority settles a vowel), or a choice on one word where we depart from a dictionary or a source (*lutra*, *fortasse*). Each has `id`, `kind` (`orthography`, `quantity`, `usage`, `word`), `title`, `decision` and `html` (the reasons, with citations), `date` (YYYY-MM or YYYY-MM-DD), `by`, `status` (`current`, `provisional` until confirmed, `withdrawn`), and optionally `forms` and `history` (dated changes). `how-we-decide.html` lists them by kind, with the records that cite each one.
+A ruling is a recorded decision: a rule for many words (consonantal j, which authority settles a vowel), or a choice on one word where we depart from a dictionary or a source (*lutra*, *fortasse*). Each has `id`, `kind` (`orthography`, `quantity`, `usage`, `word`), `title`, `decision` and `html` (the reasons, with citations), `date` (YYYY-MM or YYYY-MM-DD), `by`, `status` (`current`, `provisional` until confirmed, `withdrawn`), and optionally `forms` and `history` (dated changes). `rulings.html` lists them by kind, with the records that cite each one; `how-we-decide.html` links to it.
 
 Change a ruling by editing it and adding a `history` line; withdraw it rather than deleting it, so that its trace remains.
 
 ## Checks
 
-`python3 scripts/build.py` validates records and rulings (fields, slugs, statuses, periods, notes cited and defined, rulings and related targets that exist, replaced entries that are really gone) and checks every link between the generated pages. `--check` also fails on a stale or leftover page in `c/`. `scripts/consonantal_j.py` covers records and rulings. The tests include records, notes, pages and the rulings page.
+`python3 scripts/build.py` validates records and rulings (fields, slugs, statuses, periods, notes cited and defined, rulings and related targets that exist, replaced entries that are really gone) and checks every link between the generated pages. A renamed category keeps its old ID in `aliases` in `data/catalog.json`, so old links still land on it. `--check` also fails on a stale or leftover page in `c/`. `scripts/consonantal_j.py` covers records and rulings. The tests include records, notes, pages and the rulings page.
 
 ## Converting a grouped entry
 

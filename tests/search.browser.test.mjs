@@ -55,7 +55,7 @@ test('category filters constrain search; Clear and Escape restore all original c
   await page.locator('[data-filter="corpus"]').click();
   assert.equal(await page.locator('#empty').isVisible(), true);
   await page.locator('#search').press('Escape');
-  assert.equal(await page.locator('[data-entry]:visible').count(), 290);
+  assert.equal(await page.locator('[data-entry]:visible').count(), originals.length);
   assert.deepEqual(await page.locator('[data-entry]').evaluateAll(nodes => nodes.map(n => n.innerHTML)), originals);
   await search('nītere'); await page.locator('#clear').click();
   assert.equal(await page.locator('#search').inputValue(), '');

@@ -53,6 +53,8 @@ KEEP = {
     'iātralīptēn': 'Greek ἰᾱτραλείπτης, vocalic i',
     'iatraliptice': 'Lewis & Short headword in a citation label (Greek ἰατραλειπτική)',
     'iūlus': 'decide per passage: three syllables in Vergil keeps i',
+    'oiei': 'interjection (Terence), written oiei in the editions and Lewis & Short',
+    'subium': 'noun in -ium, vocalic i (Egger, from a word-list in Charisius; M-O s.v. moustache)',
     # not Latin: English prose and names
     'apuleius': 'English form of the author’s name in English prose',
     'logeion': 'name of the dictionary site',

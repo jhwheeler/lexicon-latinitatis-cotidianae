@@ -181,7 +181,8 @@ def convert_entry(article):
     body = one(article, lambda n: n.tag == 'div' and 'entry-body' in n.classes(), 'entry body')
     only_whitespace(body, 'entry body')
     entry = {'id': article.attr('data-entry-id')}
-    if article.attr('id'):
+    # Cards without an anchor carry their entry ID as their HTML ID.
+    if article.attr('id') and article.attr('id') != entry['id']:
         entry['anchor'] = article.attr('id')
     entry.update(english=english.text(), latin=latin.text(), tags=tags)
     if article.attr('data-search'):
@@ -200,14 +201,16 @@ def convert(page):
         english = one(heading, lambda n: n.tag == 'p' and 'eyebrow' in n.classes(), 'category English heading')
         latin = one(heading, lambda n: n.tag == 'h2', 'category Latin heading')
         categories.append({'id': key, 'english': english.text(), 'latin': latin.text()})
-        articles = section.find_all(lambda n: n.tag == 'article' and n.has('data-entry'))
+        cards = section.find_all(lambda n: n.tag == 'article' and n.has('data-entry'))
+        # Concept records (data-record) are generated from data/concepts, not data/entries.
+        articles = [a for a in cards if not a.has('data-record')]
         for article in articles:
             if article.attr('data-category') != key:
                 fail(article, f'Entry is in section {key} but says data-category={article.attr("data-category")}')
         entries[key] = [convert_entry(a) for a in articles]
         count = heading.find_all(lambda n: 'category-count' in n.classes())
-        if count and count[0].text().strip() != f'{len(articles)} entries':
-            print(f'Note: {key} heading said {count[0].text().strip()!r}; it has {len(articles)} entries '
+        if count and count[0].text().strip() != f'{len(cards)} entries':
+            print(f'Note: {key} heading said {count[0].text().strip()!r}; it has {len(cards)} entries '
                   '(the builder regenerates counts)', file=sys.stderr)
     stray = [a for a in root.find_all(lambda n: n.tag == 'article' and n.has('data-entry'))
              if not any(p.tag == 'section' and p.has('data-category-section') for p in ancestors(a))]
@@ -241,6 +244,8 @@ def template(page):
                      re.search(r'<p class="footer-note">\d+ grouped entries', shell)
                      else r'<p class="eyebrow">[^<]*?· (\d+) grouped entries')
     shell, _ = cut(count_pattern, '{{entry_count}}', shell)
+    if re.search(r'\d+ words with their own page', shell):
+        shell, _ = cut(r'(\d+) words with their own page', '{{record_count}}', shell)
     if not shell.startswith(GENERATED):
         shell = GENERATED + shell
     return shell, styles, search

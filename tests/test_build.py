@@ -26,11 +26,21 @@ class BuildTests(unittest.TestCase):
     def read(self, path):
         return json.loads((self.root / path).read_text(encoding='utf-8'))
 
+    def record(self, key):
+        return self.read(f'data/concepts/{key}.json')
+
+    def save_record(self, record, key=None):
+        self.write(f'data/concepts/{key or record["id"]}.json', record)
+
     def write(self, path, data):
         (self.root / path).write_text(json.dumps(data, ensure_ascii=False), encoding='utf-8')
 
     def test_committed_output_matches_sources(self):
         self.assertEqual(builder.build(), (ROOT / 'index.html').read_text(encoding='utf-8'))
+        for path, text in builder.build_site().items():
+            with self.subTest(path=path):
+                self.assertEqual(text, (ROOT / path).read_text(encoding='utf-8'))
+        self.assertEqual(builder.stale(ROOT, builder.build_site()), [])
 
     def test_deterministic_build(self):
         self.assertEqual(builder.build(self.root), builder.build(self.root))
@@ -44,8 +54,9 @@ class BuildTests(unittest.TestCase):
         self.write(self.path, entries)
         page = builder.build(self.root)
         total = sum(len(self.read(f'data/entries/{c["id"]}.json')) for c in self.read('data/catalog.json')['categories'])
+        records = sum(1 for p in (self.root / 'data/concepts').glob('*.json') if self.read(p)['domain'] == self.category)
         self.assertIn(f'{total} grouped entries', page)
-        self.assertIn(f'{len(entries)} entries</span>', page)
+        self.assertIn(f'{len(entries) + records} entries</span>', page)
         self.assertIn('A &lt; B &amp; C', page)
         self.assertIn('lūdicrum, lūdicrī n.', page)
 
@@ -109,6 +120,87 @@ class BuildTests(unittest.TestCase):
         path.write_text(path.read_text(encoding='utf-8').replace('{{entry_count}}', '123'), encoding='utf-8')
         with self.assertRaisesRegex(ValueError, 'Missing template token'):
             builder.build(self.root)
+
+    # Concept records, notes and rulings ---------------------------------------------
+
+    def test_records_render_with_notes_pages_and_rulings(self):
+        outputs = builder.build_site(self.root)
+        index = outputs['index.html']
+        self.assertIn('id="c-perhaps"', index)
+        self.assertIn('data-record', index)
+        self.assertIn('<li id="fn-perhaps-1">', index)
+        self.assertIn('href="how-we-decide.html#r-fortasse"', index)
+        self.assertIn('<span class="legacy-anchor" id="entry-550"></span>', index)
+        self.assertIn('href="c/perhaps.html"', index)
+        page = outputs['c/perhaps.html']
+        self.assertIn('<title>perhaps in Latin: fortasse · ', page)
+        self.assertIn('href="../how-we-decide.html#r-fortasse"', page)
+        self.assertIn('<link rel="canonical" href="https://jhwheeler.github.io/lexicon-latinitatis-cotidianae/c/perhaps.html">', page)
+        rulings = outputs['how-we-decide.html']
+        self.assertIn('id="r-fortasse"', rulings)
+        self.assertIn('<a href="c/perhaps.html">perhaps</a>', rulings)
+        self.assertIn('c/perhaps.html</loc>', outputs['sitemap.xml'])
+
+    def test_note_numbers_follow_reading_order(self):
+        record = self.record('perhaps')
+        record['notes']['second'] = {'html': 'Second note.'}
+        record['terms'][-1]['notes'] = ['second']
+        record['phrases'][0]['notes'] = ['short-e']
+        self.save_record(record)
+        index = builder.build_site(self.root)['index.html']
+        self.assertIn('<li id="fn-perhaps-2">Second note.</li>', index)
+
+    def test_record_errors_rejected(self):
+        cases = {
+            'Unknown note': lambda r: r['terms'][0].update(notes=['missing']),
+            'Unused notes': lambda r: r['notes'].update(spare={'html': 'Never cited.'}),
+            'Unknown ruling': lambda r: r['notes']['short-e'].update(ruling='no-such-ruling'),
+            'No recommended term': lambda r: [t.update(status='alternative') for t in r['terms']],
+            'Invalid period': lambda r: r['terms'][0].update(period='ancient'),
+            'Unknown related': lambda r: r.update(related=['no-such-concept']),
+            'which still exists': lambda r: r.update(replaces=['entry-1']),
+            'Unknown fields': lambda r: r.update(lattin='x'),
+            'Invalid review': lambda r: r['review'].update(status='done'),
+        }
+        original = self.record('perhaps')
+        for message, change in cases.items():
+            with self.subTest(message=message):
+                record = copy.deepcopy(original)
+                change(record)
+                self.save_record(record)
+                with self.assertRaisesRegex(ValueError, message):
+                    builder.build_site(self.root)
+        self.save_record(original)
+
+    def test_record_file_name_must_match_id(self):
+        record = self.record('perhaps')
+        self.save_record(record, key='maybe')
+        with self.assertRaisesRegex(ValueError, 'matching its file name'):
+            builder.build_site(self.root)
+
+    def test_duplicate_ruling_rejected(self):
+        rulings = self.read('data/rulings.json')
+        rulings.append(copy.deepcopy(rulings[0]))
+        self.write('data/rulings.json', rulings)
+        with self.assertRaisesRegex(ValueError, 'Duplicate ruling'):
+            builder.build_site(self.root)
+
+    def test_stale_concept_page_detected(self):
+        (self.root / 'c').mkdir()
+        (self.root / 'c/removed.html').write_text('old', encoding='utf-8')
+        self.assertEqual(builder.stale(self.root, builder.build_site(self.root)), ['c/removed.html'])
+
+    def test_broken_link_between_pages_rejected(self):
+        record = self.record('perhaps')
+        record['related'] = ['entry-1']
+        self.save_record(record)
+        builder.build_site(self.root)
+        entries = self.read(self.path)
+        entries = [e for e in entries if e['id'] != 'entry-1']
+        if len(entries) != len(self.read(self.path)):
+            self.write(self.path, entries)
+            with self.assertRaisesRegex(ValueError, 'Unknown related'):
+                builder.build_site(self.root)
 
 
 if __name__ == '__main__':

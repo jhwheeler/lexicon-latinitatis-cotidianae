@@ -1,5 +1,7 @@
 # Structured lexicon data
 
+> Grouped entries (this document) are being converted to concept records, one per sense, with their own pages, notes and rulings: see [records.md](records.md). Every card now has a static HTML ID: its anchor if it has one, otherwise its entry ID.
+
 ## Architecture decision
 
 The repository previously combined dictionary content, layout, CSS and search in one manually maintained page. The source of truth is now topic JSON plus a page template; a small Python script produces the same kind of self-contained HTML as before.

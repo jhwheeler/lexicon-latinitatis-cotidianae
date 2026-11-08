@@ -31,11 +31,11 @@
   const index = entries.map((entry, order) => {
     const section = entry.closest('[data-category-section]');
     if (!entry.id) entry.id = entry.dataset.entryId;
-    const lines = [...entry.querySelectorAll('.entry-body > ul > li, .entry-body > p, .entry-sources > p')].map(node => {
+    const lines = [...entry.querySelectorAll('.entry-body > ul > li, .entry-body > p, .entry-body > ol > li, .entry-sources > p')].map(node => {
       const latin = node.querySelector('strong[lang="la"]')?.textContent.trim();
       const definition = latin && latin.split(/\s+/).length <= 10
         && (/^[a-zāēīōūȳæœ]/.test(latin) || /\b[mfn]\.\s*(pl\.)?$/.test(latin));
-      return {node, text: fold(node.textContent), kind: node.closest('.entry-sources') ? 'Source note' : definition ? 'Definition' : 'Example or phrase'};
+      return {node, text: fold(node.textContent), kind: node.closest('.entry-sources, .footnotes') ? 'Source note' : definition ? 'Definition' : 'Example or phrase'};
     });
     return {entry, order, lines, category: entry.dataset.category, label: section.querySelector('h2').textContent,
       heading: fold(entry.querySelector('.entry-head').textContent), text: fold((entry.dataset.search || '') + ' ' + entry.textContent)};

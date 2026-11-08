@@ -45,10 +45,10 @@ class ConsonantalJTests(unittest.TestCase):
     def test_html_respells_text_not_attributes_or_other_languages(self):
         changes = cj.Changes()
         html = ('<strong lang="la">Iam iānua</strong> — <a href="https://logeion.uchicago.edu/iam">iam</a> '
-                '<span lang="bg">iam</span> &amp; coniungō')
+                '<span lang="de">iam</span> &amp; coniungō')
         self.assertEqual(cj.respell_html(html, changes, 'test'),
                          '<strong lang="la">Jam jānua</strong> — <a href="https://logeion.uchicago.edu/iam">jam</a> '
-                         '<span lang="bg">iam</span> &amp; coniungō')
+                         '<span lang="de">iam</span> &amp; coniungō')
 
 
 if __name__ == '__main__':

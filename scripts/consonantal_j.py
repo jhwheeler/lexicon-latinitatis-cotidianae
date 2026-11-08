@@ -11,7 +11,7 @@ wherever it is a vowel (diēs, cliēns, quiēs, audiō, gaudium).
 
 Only Latin is changed: entry headings, text inside lang="la", and Latin words
 in unmarked prose (a narrower rule set, since that prose is mostly English).
-English headings, tags, Bulgarian text and link targets are never touched.
+English headings, tags, text in other languages and link targets are never touched.
 Search keywords get the same word changes as the visible text, except that
 compounds given an extra j (abice → abjice) keep the classical spelling
 there, so a search for either spelling finds them (search also folds j to i).

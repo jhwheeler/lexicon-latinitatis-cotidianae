@@ -18,9 +18,13 @@ Jack's decision (29 October 2026): the lexicon follows the orthography of the Th
 - No macron on the vowel before intervocalic j (*major, ejus, pejus*: the vowel is short, the syllable heavy). Long prefixes keep theirs (*dējectus, prōjēcit, ējēcī*).
 - Compounds: *abjicit, objice, dējiciō, subjēcit, conjungō, conjūnx, adjuvō*.
 - i stays a vowel in the interjection *iō*, in forms of *eō* (*iērunt, adiērunt*), in *superior, interior, Plēiades*, in *Iūlus* where it scans as three syllables, after *qu/gu* (*quiēs, reliquiae*), and wherever it is a vowel (*diēs, cliēns, audiō, gaudium*).
-- Only Latin changes. English, Bulgarian and other text and link targets keep their spelling; citation labels give the dictionary's own headword (Lewis & Short prints *janua, jus* but *deicio*).
+- Only Latin changes. English, text in other languages and link targets keep their spelling; citation labels give the dictionary's own headword (Lewis & Short prints *janua, jus* but *deicio*).
 
 After adding or editing Latin, run `python3 scripts/consonantal_j.py --list` and review both the proposed changes and the kept candidates, then `--write` and rebuild. `--check`, also run by the tests, fails while any Latin still needs j; record a genuine exception in the script's `KEEP` list with its reason. Content ported from older branches (written with i) needs this pass. Search treats i and j alike, so *iam* finds *jam*.
+
+## Languages: English and Latin
+
+Jack's decision (8 November 2026): the lexicon is English–Latin. Don't add glosses, labels, headings or search terms in Bulgarian or any other language by default. Cite another language only where it helps to explain a Latin word's meaning or form, as a cf. (for example, Lithuanian *ūdra* and Russian *vydra* in the note on *lutra*). Describe local things in English (white brined cheese, not *sirene*).
 
 ## Exported copies
 

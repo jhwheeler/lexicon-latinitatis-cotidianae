@@ -131,3 +131,43 @@ mark { background:#f5dfa1; color:#352510; border-radius:3px; padding:0 .08em; bo
 }
 @media (min-width:1200px) { .entries { grid-template-columns:repeat(2,minmax(0,1fr)); } }
 @media (max-width:600px) { .header-actions .about-link, #theme-label { display:none; } }
+
+/* Concept records: periods, notes, pages (lexicon 2.0) */
+:root { --warn:#e8a08f; }
+:root[data-theme="light"] { --warn:#9b3b2a; }
+.pill { display:inline-block; border:1px solid var(--line); border-radius:999px; padding:0 6px; color:var(--muted); background:var(--surface-2); font:600 .66rem/1.5 ui-sans-serif,system-ui,sans-serif; white-space:nowrap; vertical-align:.12em; }
+.status-avoid, .status-withdrawn { color:var(--warn); border-color:color-mix(in srgb, var(--warn) 55%, transparent); }
+.status-provisional { color:var(--accent); border-color:color-mix(in srgb, var(--accent) 55%, transparent); }
+.register { color:var(--muted); font-style:italic; }
+.fn-ref { font:700 .68em ui-sans-serif,system-ui,sans-serif; line-height:0; margin-left:2px; }
+.fn-ref a { text-decoration:none; padding:0 1px; }
+.footnotes { margin:12px 0 0; padding:10px 0 0 1.5em; border-top:1px dashed var(--line); color:var(--muted); font-size:.88rem; }
+.footnotes li { margin:.45em 0; scroll-margin-top:112px; }
+.footnotes li:target { color:var(--ink); }
+.ruling-link { font:600 .78rem ui-sans-serif,system-ui,sans-serif; white-space:nowrap; }
+.related { font-size:.92rem; }
+.record-meta { margin:10px 0 0; font:500 .78rem ui-sans-serif,system-ui,sans-serif; }
+.legacy-anchor { display:block; scroll-margin-top:112px; }
+.site-name { margin:0; font-size:clamp(1.15rem,2.4vw,1.7rem); font-weight:700; line-height:1.15; letter-spacing:-.025em; }
+.site-name a { color:var(--ink); text-decoration:none; }
+.subpage .wrap { width:min(calc(100% - 32px), 880px); }
+.page-main { padding:8px 0 56px; }
+.page-title { margin:4px 0 16px; font-size:clamp(1.6rem,4vw,2.4rem); line-height:1.1; letter-spacing:-.025em; }
+.page-title-note { color:var(--muted); font-weight:400; }
+.breadcrumb { margin:8px 0 0; font:600 .8rem ui-sans-serif,system-ui,sans-serif; }
+.breadcrumb a { text-decoration:none; }
+.subpage .entry h3 { font-size:1.45rem; }
+.lead { font-size:1.08rem; }
+.page-contents { margin:0 0 8px; font:600 .85rem ui-sans-serif,system-ui,sans-serif; color:var(--muted); }
+.page-main h2 { margin:34px 0 10px; font-size:1.35rem; letter-spacing:-.015em; }
+.rules li { margin:.6em 0; }
+.ruling-group { margin-top:8px; }
+.ruling-group h2 { font-size:1.1rem; font-family:ui-sans-serif,system-ui,sans-serif; color:var(--muted); text-transform:uppercase; letter-spacing:.08em; }
+.ruling { background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:16px 18px; margin:12px 0; scroll-margin-top:24px; }
+.ruling:target { border-color:var(--accent); }
+.ruling h3 { margin:0; font-size:1.18rem; }
+.ruling-meta { margin:4px 0 0; color:var(--muted); font:500 .8rem ui-sans-serif,system-ui,sans-serif; }
+.ruling-decision { font-weight:600; }
+.ruling-forms, .ruling-cited { color:var(--muted); font-size:.9rem; }
+.ruling-history { color:var(--muted); font-size:.88rem; padding-left:1.2em; }
+.subpage footer a { color:var(--accent); }

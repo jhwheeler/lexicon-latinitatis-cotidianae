@@ -193,3 +193,29 @@ test('mobile theme toggle works when saving preferences is blocked', async () =>
   assert.equal(await page.locator('.search-result').count(), 5);
   assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
 });
+
+test('concept records are searchable, notes count as source notes, and old anchors still lead to them', async () => {
+  await search('hiccup');
+  assert.equal(await page.locator('.search-result').first().getAttribute('data-result-for'), 'c-hiccup');
+  assert.match(await page.locator('.search-result').first().locator('.eyebrow').textContent(), /Definition/);
+  await search('short final vowel');
+  const note = page.locator('[data-result-for="c-perhaps"]');
+  assert.match(await note.locator('.eyebrow').textContent(), /Source note/);
+  await search('');
+  await page.goto(url + '#entry-528');
+  assert.equal(await page.locator('#c-swimming').isVisible(), true);
+});
+
+test('a concept page has its notes, a ruling link and no horizontal overflow on a phone', async () => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto(new URL('../c/perhaps.html', import.meta.url).href);
+  assert.match(await page.locator('h1').textContent(), /perhaps/);
+  assert.equal(await page.locator('.footnotes li').count(), 1);
+  const ruling = page.locator('.ruling-link').first();
+  assert.match(await ruling.getAttribute('href'), /rulings\.html#r-fortasse$/);
+  assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
+  await ruling.click();
+  await page.waitForURL(/rulings\.html#r-fortasse$/);
+  assert.equal(await page.locator('#r-fortasse').isVisible(), true);
+  assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
+});

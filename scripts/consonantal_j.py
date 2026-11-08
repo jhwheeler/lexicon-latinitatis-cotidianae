@@ -215,6 +215,41 @@ def process(root=ROOT):
                     block['html'] = respell_html(block['html'], changes, where)
                 if 'paragraphs' in block:
                     block['paragraphs'] = [respell_html(p, changes, where) for p in block['paragraphs']]
+    # Concept records: Latin terms and phrases, and every rich-text field.
+    folder = root / 'data/concepts'
+    for path in sorted(folder.glob('*.json')) if folder.exists() else []:
+        record = json.loads(path.read_text(encoding='utf-8'))
+        where = 'c/' + record['id']
+        for text in [record['english'], record.get('sense', '')] + record.get('also', []):
+            changes.skipped(text, 'English heading', where)
+        for term in record['terms']:
+            term['latin'] = respell_text(term['latin'], True, changes, where)
+            for key in ('register', 'comment'):
+                if key in term:
+                    term[key] = respell_html(term[key], changes, where)
+            if 'evidence' in term:
+                term['evidence'] = [respell_html(e, changes, where) for e in term['evidence']]
+        for phrase in record.get('phrases', []):
+            phrase['latin'] = respell_text(phrase['latin'], True, changes, where)
+            phrase['source'] = respell_html(phrase['source'], changes, where)
+        for note in record.get('notes', {}).values():
+            note['html'] = respell_html(note['html'], changes, where)
+        record['sources'] = [respell_html(s, changes, where) for s in record['sources']]
+        results[path] = record
+    # Rulings: titles are unmarked prose; decisions, reasons and history are rich text.
+    rulings_path = root / 'data/rulings.json'
+    if rulings_path.exists():
+        rulings = json.loads(rulings_path.read_text(encoding='utf-8'))
+        for ruling in rulings:
+            where = 'ruling ' + ruling['id']
+            ruling['title'] = respell_text(ruling['title'], False, changes, where)
+            ruling['decision'] = respell_html(ruling['decision'], changes, where)
+            ruling['html'] = respell_html(ruling['html'], changes, where)
+            if 'forms' in ruling:
+                ruling['forms'] = [respell_text(f, True, changes, where) for f in ruling['forms']]
+            for change in ruling.get('history', []):
+                change['html'] = respell_html(change['html'], changes, where)
+        results[rulings_path] = rulings
     # Search keywords repeat the visible text: give them the same word changes.
     for path, entries in loaded.items():
         for entry in entries:

@@ -1,0 +1,66 @@
+{
+  "id": "senate",
+  "english": "senate",
+  "pos": "noun",
+  "also": [
+    "the Senate",
+    "upper house"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "senātus, senātūs m.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "the senate",
+      "evidence": [
+        "Cic. Sen. 19",
+        "Traupman 180",
+        "Levi–Bini p. 46"
+      ],
+      "comment": "The council of the elders, named from <span lang=\"la\">senex</span>, as Cicero says (Sen. 19). The Roman senate was a standing council of former magistrates, enrolled by the censors and sitting for life; it advised the magistrates, and its decrees (<span lang=\"la\">senātūs cōnsulta</span>) were not laws. A modern senate is the upper house of a parliament and votes on laws; Latin keeps the word for it (Levi–Bini p. 46, of the Italian Senate). The senate house is <span lang=\"la\">cūria</span> (Traupman 180)."
+    },
+    {
+      "latin": "camera superior",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "the upper house of a parliament",
+      "grammar": "noun phrase: camera with the adjective superior",
+      "evidence": [
+        "M-O s.v. legislature: British: House of Lords"
+      ],
+      "comment": "Tursellinus’s name (1652) for the House of Lords; <span lang=\"la\">camera</span>, classically a vaulted room (Lewis &amp; Short), is Morgan–Owens’s word for a chamber of a parliament."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "quae nisi essent in senibus, nōn summum cōnsilium majōrēs nostrī appellāssent senātum",
+      "english": "if these qualities were not found in old men, our ancestors would not have called their highest council the senate",
+      "source": "Cic. Sen. 19"
+    },
+    {
+      "latin": "senātus fidem atque ingenium puerī exōsculātur",
+      "english": "the senate warmly praised the boy’s loyalty and wit",
+      "source": "Gell. 1.23.13"
+    }
+  ],
+  "related": [
+    "senator",
+    "parliament",
+    "council",
+    "consul"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/senatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: senatus</a> · <a href=\"https://logeion.uchicago.edu/camera\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: camera</a> · <a href=\"https://logeion.uchicago.edu/superior\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: superior</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. legislature, parliament; legislature: British: House of Lords.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 180, checked against the searchable text of the book (9 November 2026).",
+    "Enrico Levi and Arturo Bini, <em>Il latino come lingua viva</em> (1937), p. 46, s.v. parlamento.",
+    "Cicero, <em>De senectute</em> 19, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-gellius), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

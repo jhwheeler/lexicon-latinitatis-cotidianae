@@ -1,0 +1,83 @@
+{
+  "id": "parliament",
+  "english": "parliament",
+  "pos": "noun",
+  "also": [
+    "Parliament",
+    "legislature",
+    "national assembly",
+    "congress",
+    "member of parliament",
+    "MP"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "parlāmentum, parlāmentī n.",
+      "status": "recommended",
+      "period": "medieval",
+      "gloss": "a parliament",
+      "evidence": [
+        "Traupman 356",
+        "M-O s.v. legislature, parliament"
+      ],
+      "comment": "The medieval word for an assembly, from Old French <em>parlement</em>; Milton’s for the Parliament of the English Commonwealth, and Traupman’s for a parliament today. A member of parliament is <span lang=\"la\">parlāmentārius</span> (Traupman 356) or <span lang=\"la\">populī lēgātus</span> (Levi–Bini p. 21); a chamber of parliament, <span lang=\"la\">camera</span> (M-O)."
+    },
+    {
+      "latin": "comitia, comitiōrum n. pl.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the assemblies of the Roman people",
+      "evidence": [
+        "Cic. Leg. 3.44 (Lewis &amp; Short)"
+      ],
+      "comment": "Rome had no parliament. The people voted laws in these assemblies, on a magistrate’s proposal, and elected the magistrates there, while the senate only advised (see senate). A parliament is an elected assembly of representatives that makes the laws itself."
+    },
+    {
+      "latin": "senātus, senātūs m.",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "a parliament (Neo-Latin); classically the senate",
+      "evidence": [
+        "M-O s.v. legislature, parliament"
+      ],
+      "comment": "Milton and Tursellinus call the English Parliament and the Paris <em>parlement</em> <span lang=\"la\">senātus</span> (Morgan–Owens)."
+    },
+    {
+      "latin": "lēgātī populārēs",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "the elected deputies; the lower house",
+      "grammar": "noun phrase, plural: lēgātus with the adjective populāris",
+      "evidence": [
+        "Levi–Bini p. 46"
+      ],
+      "comment": "Levi and Bini’s phrase for a chamber of deputies; for a senate whose members sit for life they keep <span lang=\"la\">senātus</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Parlāmentum Reī Pūblicae Angliae",
+      "english": "the Parliament of the Commonwealth of England",
+      "source": "Milton (1674), in M-O s.v. legislature, parliament"
+    }
+  ],
+  "related": [
+    "senate",
+    "government",
+    "political",
+    "law",
+    "party-political"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/comitia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: comitia</a> · <a href=\"https://logeion.uchicago.edu/senatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: senatus</a> · <a href=\"https://logeion.uchicago.edu/legatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: legatus</a> · <a href=\"https://logeion.uchicago.edu/popularis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: popularis</a>. Lewis &amp; Short has no entry for <span lang=\"la\">parlāmentum</span>.",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. legislature, parliament; legislator, member of parliament; legislature: chamber.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 356, checked against the searchable text of the book (9 November 2026).",
+    "Enrico Levi and Arturo Bini, <em>Il latino come lingua viva</em> (1937), pp. 21, 46, s.v. deputato, parlamento."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

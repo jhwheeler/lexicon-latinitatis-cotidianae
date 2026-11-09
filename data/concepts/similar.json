@@ -1,0 +1,81 @@
+{
+  "id": "similar",
+  "english": "similar",
+  "pos": "adjective",
+  "also": [
+    "alike",
+    "similar to",
+    "very similar",
+    "as like as two peas",
+    "resemble"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "similis, simile",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "similar, like",
+      "grammar": "adjective, third declension; with the genitive or the dative",
+      "evidence": [
+        "Cic. Sen. 80: <span lang=\"la\">nihil esse mortī tam simile quam somnum</span>",
+        "Ter. Ad. 411: <span lang=\"la\">est similis majōrum suum</span>"
+      ],
+      "comment": "What a thing is like goes in the genitive in Plautus and Terence (<span lang=\"la\">tuī similis</span>, like you); Cicero keeps the genitive for persons and uses the dative for things, and after Augustus the dative is usual (Lewis &amp; Short). Alike, of two or more, is <span lang=\"la\">inter sē similēs</span>; the opposite is <span lang=\"la\">dissimilis</span> (see different)."
+    },
+    {
+      "latin": "persimilis, persimile",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "very similar, very like",
+      "grammar": "adjective, third declension",
+      "evidence": [
+        "Cic. Pis. 93: <span lang=\"la\">statuam istīus persimilem</span> (Lewis &amp; Short)",
+        "Hor. Ars 6–7 (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "cōnsimilis, cōnsimile",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "just like, similar in every way",
+      "grammar": "adjective, third declension",
+      "evidence": [
+        "Caes. BG 2.11 (Lewis &amp; Short)",
+        "Cic. de Or. 1.149 (Lewis &amp; Short)"
+      ],
+      "comment": "Most frequent in Plautus, Terence and Lucretius (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "neque aqua aquae nec lacte est lactis, crēde mī, usquam similius, quam hic tuī est, tūque hujus autem",
+      "english": "water is not more like water, nor milk more like milk, believe me, than he is like you and you like him",
+      "source": "Plaut. Men. 1089–1090"
+    },
+    {
+      "latin": "jam vērō vidētis nihil esse mortī tam simile quam somnum",
+      "english": "and you see that nothing is so like death as sleep",
+      "source": "Cic. Sen. 80"
+    },
+    {
+      "latin": "incidī in māteriam vēram sed simillimam fictae",
+      "english": "I have come upon a story that is true, but very like a made-up one",
+      "source": "Plin. Ep. 9.33.1"
+    }
+  ],
+  "related": [
+    "same",
+    "different"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/similis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: similis</a> · <a href=\"https://logeion.uchicago.edu/persimilis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: persimilis</a> · <a href=\"https://logeion.uchicago.edu/consimilis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: consimilis</a> · <a href=\"https://logeion.uchicago.edu/dissimilis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dissimilis</a>",
+    "Quotations from the Latinitas loci collections (loci-cicero-philosophica, loci-plinius), checked against the editions named there.",
+    "Plautus (Men. 1089–1090, Leo’s text) and Terence (Ad. 411, Parry’s text) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

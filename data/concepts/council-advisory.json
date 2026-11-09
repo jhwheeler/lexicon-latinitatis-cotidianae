@@ -1,0 +1,83 @@
+{
+  "id": "council-advisory",
+  "english": "council",
+  "sense": "an advisory body",
+  "pos": "noun",
+  "also": [
+    "council of war",
+    "council of elders",
+    "advisory council",
+    "Security Council",
+    "church council",
+    "synod"
+  ],
+  "also_under": [
+    "ecclesia"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "cōnsilium, cōnsiliī n.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a council, a body of advisers",
+      "evidence": [
+        "Caes. BG 3.3.1",
+        "Liv. 30.16.3",
+        "M-O s.v. committee, commission"
+      ],
+      "comment": "Counsel, and then the people who give it (Lewis &amp; Short): a general’s council of war, the elders of Carthage, and the Roman senate itself, <span lang=\"la\">orbis terrae cōnsilium</span> (Cic. Phil. 4.14). Morgan–Owens gives it for a committee or commission, and Egger for the Security Council, <span lang=\"la\">cōnsilium sēcūritātī tuendae</span>."
+    },
+    {
+      "latin": "concilium, conciliī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "an assembly, a council of delegates",
+      "evidence": [
+        "Caes. BG 1.30 (Lewis &amp; Short)",
+        "M-O s.v. council (eccl.), synod"
+      ],
+      "comment": "An assembly called together to take counsel, as the councils of the Gallic peoples in Caesar; Lewis &amp; Short warn that the manuscripts often confuse it with <span lang=\"la\">cōnsilium</span>. The usual word for a council of the Church (Morgan–Owens)."
+    },
+    {
+      "latin": "synodus, synodī f.",
+      "status": "alternative",
+      "period": "late",
+      "gloss": "a council of the Church, a synod",
+      "evidence": [
+        "Amm. 15.7.7 (Lewis &amp; Short)",
+        "Cod. Just. 1.3.23 (Lewis &amp; Short)",
+        "M-O s.v. council (eccl.), synod"
+      ],
+      "comment": "Greek σύνοδος: in inscriptions a college of priests, in late Latin an assembly of bishops (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "id erat sānctius apud illōs cōnsilium maximaque ad ipsum senātum regendum vīs",
+      "english": "this was their more sacred council, with the greatest power to guide the senate itself (the thirty elders of Carthage)",
+      "source": "Liv. 30.16.3"
+    },
+    {
+      "latin": "cōnsiliō celeriter convocātō sententiās exquīrere coepit",
+      "english": "he quickly called a council and began to ask for opinions",
+      "source": "Caes. BG 3.3.1"
+    }
+  ],
+  "related": [
+    "council",
+    "senate",
+    "government"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/consilium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: consilium</a> · <a href=\"https://logeion.uchicago.edu/concilium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: concilium</a> · <a href=\"https://logeion.uchicago.edu/synodus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: synodus</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. committee, commission; council (eccl.), synod; United Nations: Security Council.",
+    "Caesar, <em>Gallic War</em> 3.3, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026).",
+    "Livy 30.16.3, in Conway and Walters’s text, checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

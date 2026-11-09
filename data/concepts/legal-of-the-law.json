@@ -1,0 +1,87 @@
+{
+  "id": "legal-of-the-law",
+  "english": "legal",
+  "sense": "to do with the law",
+  "pos": "adjective",
+  "also": [
+    "legal system",
+    "legal advice",
+    "legal expert",
+    "legal knowledge",
+    "legal matters",
+    "legal profession"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "jūs, jūris n.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "law; in the genitive with a noun, legal: jūris scientia, legal knowledge",
+      "grammar": "noun, third declension; its genitive serves for “legal”",
+      "evidence": [
+        "Cic. Off. 2.47: <span lang=\"la\">jūris scientiae</span>",
+        "Cic. Brut. 145: <span lang=\"la\">jūris perītōrum ēloquentissimus</span>"
+      ],
+      "comment": "Latin puts the law in the genitive where English says “legal”: <span lang=\"la\">jūris perītus</span>, a legal expert; <span lang=\"la\">jūris scientia</span>, legal knowledge. For the law itself see law."
+    },
+    {
+      "latin": "lēgitimus, lēgitima, lēgitimum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "of the law, legal (of questions and terms)",
+      "grammar": "adjective",
+      "evidence": [
+        "Quint. 3.6.72 (Lewis &amp; Short)",
+        "M-O s.v. legal (related to law or the legal system)"
+      ],
+      "comment": "In this sense post-Augustan (Lewis &amp; Short); classically “lawful” (see legal, allowed by law)."
+    },
+    {
+      "latin": "lēgālis, lēgāle",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "of the law, legal",
+      "grammar": "adjective, third declension",
+      "evidence": [
+        "Quint. 3.5.4: <span lang=\"la\">lēgāle genus</span>",
+        "M-O s.v. legal (related to law or the legal system)"
+      ],
+      "comment": "Quintilian’s term for the kind of question that turns on written law; post-Augustan and rare."
+    },
+    {
+      "latin": "forēnsis, forēnse",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "of the courts and public business",
+      "grammar": "adjective, third declension",
+      "evidence": [
+        "Cic. Or. 170: <span lang=\"la\">ōrātiō jūdiciālis et forēnsis</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Of the forum, where the courts sat: what belongs to a lawyer’s work and public life."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ut ēloquentium jūris perītissimus Crassus, jūris perītōrum ēloquentissimus Scaevola putārētur",
+      "english": "so that Crassus was held the best lawyer among the orators, and Scaevola the best orator among the lawyers",
+      "source": "Cic. Brut. 145"
+    }
+  ],
+  "related": [
+    "law",
+    "legal-lawful",
+    "case-law",
+    "judge"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/jus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: jus</a> · <a href=\"https://logeion.uchicago.edu/legitimus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: legitimus</a> · <a href=\"https://logeion.uchicago.edu/legalis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: legalis</a> · <a href=\"https://logeion.uchicago.edu/forensis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: forensis</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: legal (related to law or the legal system).",
+    "Cicero (Off. 2.47, Brut. 145) and Quintilian (3.5.4) checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

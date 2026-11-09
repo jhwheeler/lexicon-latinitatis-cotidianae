@@ -1,0 +1,76 @@
+{
+  "id": "council",
+  "english": "council",
+  "sense": "of a town or city",
+  "pos": "noun",
+  "also": [
+    "town council",
+    "city council",
+    "local council",
+    "county council",
+    "local authority",
+    "councillor",
+    "councilor"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "senātus, senātūs m.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a town council",
+      "evidence": [
+        "Plin. Ep. 10.79.1",
+        "Pollio in Cic. Fam. 10.32.2 (Lewis &amp; Short): of Gades",
+        "M-O s.v. city council"
+      ],
+      "comment": "Classically the council of any community, not only Rome’s: of Gades and of the Aedui (Lewis &amp; Short), and of the Greek towns of Bithynia in Pliny’s letters to Trajan (Ep. 10.79–80, 112–115). Morgan–Owens gives it for a modern city council, after Milton; <span lang=\"la\">senātus mūnicipālis</span> keeps it apart from a national senate."
+    },
+    {
+      "latin": "senātus mūnicipālis",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "a town council",
+      "grammar": "noun phrase: senātus with the adjective mūnicipālis",
+      "evidence": [
+        "M-O s.v. city council"
+      ]
+    },
+    {
+      "latin": "decuriōnēs, decuriōnum m. pl.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the councillors of a Roman town",
+      "evidence": [
+        "Cic. Fam. 6.18.1: <span lang=\"la\">in mūnicipiīs decuriōnēs</span>",
+        "Plin. Ep. 10.113",
+        "Traupman 178, 291"
+      ],
+      "comment": "The members of the council of a <span lang=\"la\">mūnicipium</span> or colony (Lewis &amp; Short); one councillor is <span lang=\"la\">decuriō</span> (Traupman 178, 297). Traupman’s word for a city council."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nē quis capiat magistrātum nēve sit in senātū minor annōrum trīgintā",
+      "english": "that no one under thirty may hold office or sit on the council (in the towns of Bithynia)",
+      "source": "Plin. Ep. 10.79.1"
+    }
+  ],
+  "related": [
+    "town-hall",
+    "mayor",
+    "council-advisory",
+    "senate"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/senatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: senatus</a> · <a href=\"https://logeion.uchicago.edu/municipalis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: municipalis</a> · <a href=\"https://logeion.uchicago.edu/decurio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: decurio</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. city council; city councilman.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 178, 291, 297, checked against the searchable text of the book (9 November 2026).",
+    "Pliny, <em>Letters</em> 10, and Cicero, <em>Ad familiares</em> 6.18, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

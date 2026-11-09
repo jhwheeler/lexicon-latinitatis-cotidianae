@@ -1,0 +1,111 @@
+{
+  "id": "popular",
+  "english": "popular",
+  "sense": "liked by many",
+  "pos": "adjective",
+  "also": [
+    "popularity",
+    "well liked",
+    "popular with",
+    "in favour",
+    "a popular place"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "grātiōsus, grātiōsa, grātiōsum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "popular, well liked, in favour (of a person)",
+      "grammar": "adjective; popular with someone, grātiōsus apud aliquem",
+      "evidence": [
+        "Cic. Off. 3.58: <span lang=\"la\">apud omnēs ōrdinēs grātiōsus</span> (Lewis &amp; Short)",
+        "Traupman 156, 363: popular, grātiōsus; to be popular with someone, grātiōsus esse apud aliquem"
+      ],
+      "comment": "A favourite word of Cicero’s, used mostly of persons (Lewis &amp; Short). Popularity is <span lang=\"la\">grātia</span> (Traupman 156)."
+    },
+    {
+      "latin": "populāris, populāre",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "popular, pleasing to the people",
+      "grammar": "adjective, third declension",
+      "evidence": [
+        "Cic. Lig. 37: <span lang=\"la\">nihil est tam populāre quam bonitās</span>",
+        "Cic. Agr. 2.9: <span lang=\"la\">quid enim est tam populāre quam pāx?</span>"
+      ],
+      "comment": "Of things and measures that please the public. Of a politician, <span lang=\"la\">populāris</span> is one who courts the crowd: Cicero glosses it <span lang=\"la\">assentātor</span>, a flatterer (Lael. 95). As a noun it is a fellow countryman."
+    },
+    {
+      "latin": "acceptus, accepta, acceptum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "welcome, popular (with someone: dative)",
+      "grammar": "adjective (participle of accipiō)",
+      "evidence": [
+        "Caes. BG 1.3: <span lang=\"la\">maximē plēbī acceptus erat</span>"
+      ]
+    },
+    {
+      "latin": "favōrābilis, favōrābile",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "in favour, popular",
+      "grammar": "adjective, third declension",
+      "evidence": [
+        "Vell. 2.34.2 (Lewis &amp; Short)",
+        "Quint. 12.10.74 (Lewis &amp; Short)"
+      ],
+      "comment": "Not before Augustus; perhaps first in Vell. 2.34 (Lewis &amp; Short)."
+    },
+    {
+      "latin": "celeber, celebris, celebre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "of a place: much frequented, busy, popular",
+      "grammar": "adjective, third declension",
+      "evidence": [
+        "Cic. Imp. Pomp. 33: <span lang=\"la\">portus celeberrimus</span> (Lewis &amp; Short)",
+        "Cic. Verr. 2.3.133: <span lang=\"la\">in forō celeberrimō</span> (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "vulgō",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "commonly, generally (as most people say or think)",
+      "grammar": "adverb",
+      "evidence": [
+        "Gell. 16.5.1: <span lang=\"la\">vocābula quibus vulgō ūtimur</span>"
+      ],
+      "comment": "For “popular” in the sense “of people in general”: a popular belief is one held by most people, vulgō."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nihil est tam populāre quam bonitās",
+      "english": "nothing is so popular as kindness",
+      "source": "Cic. Lig. 37"
+    },
+    {
+      "latin": "quantō plūs propinquōrum, quantō major adfīnium numerus, tantō grātiōsior senectūs",
+      "english": "the more kinsfolk and the greater the number of in-laws, the more cherished is old age",
+      "source": "Tac. Germ. 20.5"
+    }
+  ],
+  "related": [
+    "social",
+    "people"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/gratiosus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gratiosus</a> · <a href=\"https://logeion.uchicago.edu/popularis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: popularis</a> · <a href=\"https://logeion.uchicago.edu/accipio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: accipio</a> · <a href=\"https://logeion.uchicago.edu/favorabilis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: favorabilis</a> · <a href=\"https://logeion.uchicago.edu/celeber\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: celeber</a> · <a href=\"https://logeion.uchicago.edu/vulgo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vulgo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 156, 363, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-tacitus, loci-gellius), checked against the editions named there.",
+    "Cicero (Lig. 37, Agr. 2.9, Lael. 95) and Caesar (BG 1.3) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

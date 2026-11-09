@@ -1,0 +1,94 @@
+{
+  "id": "traditional",
+  "english": "traditional",
+  "pos": "adjective",
+  "also": [
+    "tradition",
+    "traditionally",
+    "time-honoured",
+    "ancestral",
+    "handed down"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "patrius, patria, patrium",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "traditional, handed down from one’s fathers; native",
+      "grammar": "adjective",
+      "evidence": [
+        "Cic. Sen. 37: <span lang=\"la\">vigēbat in illā domō mōs patrius et disciplīna</span>",
+        "Curt. 3.3.9: <span lang=\"la\">patrium carmen canēbant</span>"
+      ],
+      "comment": "Of one’s fathers, and so of one’s people: a traditional song is <span lang=\"la\">carmen patrium</span>; one’s native language, <span lang=\"la\">patrius sermō</span> (Cic. Fin. 1.4, Lewis &amp; Short)."
+    },
+    {
+      "latin": "mōre majōrum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "traditionally, by ancestral custom",
+      "grammar": "phrase: mōs in the ablative",
+      "evidence": [
+        "Cic. Sen. 46: <span lang=\"la\">is sermō, quī mōre majōrum ā summō adhibētur in pōculō</span>"
+      ],
+      "comment": "Tradition itself is <span lang=\"la\">mōs majōrum</span>, the custom of the ancestors (see practice)."
+    },
+    {
+      "latin": "trālātīcius (trānslātīcius), trālātīcia, trālātīcium",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "handed down, customary; ordinary",
+      "grammar": "adjective",
+      "evidence": [
+        "Cic. Fam. 3.8.4: <span lang=\"la\">hoc vērō … trālātīcium est</span>",
+        "Phaedr. 5.7.24: <span lang=\"la\">mōre trānslātīciō</span> (Lewis &amp; Short)",
+        "M-O s.v. traditional"
+      ],
+      "comment": "Of edicts and practices passed on from one holder to the next: traditional, and therefore nothing remarkable."
+    },
+    {
+      "latin": "avītus, avīta, avītum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "ancestral, of one’s grandfathers",
+      "grammar": "adjective",
+      "evidence": [
+        "Cic. Cael. 34: <span lang=\"la\">bona paterna et avīta</span> (Lewis &amp; Short)",
+        "M-O s.v. traditional: ancestral, time-honoured"
+      ],
+      "comment": "For what is so old that it is held in reverence (Morgan–Owens)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "metuēbant servī, verēbantur līberī, cārum omnēs habēbant; vigēbat in illā domō mōs patrius et disciplīna",
+      "english": "the slaves feared him, the children revered him, all held him dear; in that house the ways of the fathers and the old discipline were strong",
+      "source": "Cic. Sen. 37"
+    },
+    {
+      "latin": "mē vērō et magisteria dēlectant ā majōribus īnstitūta et is sermō, quī mōre majōrum ā summō adhibētur in pōculō",
+      "english": "for my part I enjoy the presiding at feasts that our ancestors established, and the talk over the cup that, by ancestral custom, the head of the table begins",
+      "source": "Cic. Sen. 46"
+    },
+    {
+      "latin": "Magī proximī patrium carmen canēbant",
+      "english": "next came the Magi, singing their traditional hymn",
+      "source": "Curt. 3.3.9"
+    }
+  ],
+  "related": [
+    "practice-custom",
+    "grandfather"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/patrius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: patrius</a> · <a href=\"https://logeion.uchicago.edu/mos\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mos</a> · <a href=\"https://logeion.uchicago.edu/translaticius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: translaticius</a> · <a href=\"https://logeion.uchicago.edu/tralaticius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tralaticius</a> · <a href=\"https://logeion.uchicago.edu/avitus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: avitus</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. traditional.",
+    "Cicero (Sen. 37, 46; Fam. 3.8.4) and Curtius (3.3.9) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "id": "national",
+  "english": "national",
+  "sense": "of a whole country or people",
+  "pos": "adjective",
+  "also": [
+    "nationwide",
+    "national holiday",
+    "national language",
+    "national team",
+    "national costume",
+    "national debt"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "pūblicus, pūblica, pūblicum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "of the state or the whole people: national, as against private or local",
+      "grammar": "adjective",
+      "evidence": [
+        "Caes. BG 6.13.4: <span lang=\"la\">sacrificia pūblica ac prīvāta</span>",
+        "M-O s.v. national debt: <span lang=\"la\">dēbitum pūblicum</span>"
+      ],
+      "comment": "Latin says “national” with the state’s own words: <span lang=\"la\">pūblicus</span> for what belongs to the whole state, and the people’s own adjective (<span lang=\"la\">Rōmānus, Graecus</span>) for what belongs to one nation."
+    },
+    {
+      "latin": "patrius, patria, patrium",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "of one’s own country, native: national (language, customs, songs)",
+      "grammar": "adjective",
+      "evidence": [
+        "Curt. 3.3.9: <span lang=\"la\">Magī proximī patrium carmen canēbant</span>",
+        "Cic. Fin. 1.4: <span lang=\"la\">patrius sermō</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Lewis &amp; Short translate Curtius’s <span lang=\"la\">patrium carmen</span> “a national song”."
+    },
+    {
+      "latin": "nostrās, nostrātis",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "of our country, home-grown",
+      "grammar": "adjective, third declension, one ending",
+      "evidence": [
+        "Cic. Fam. 9.15.2: <span lang=\"la\">facētiīs, maximē nostrātibus</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Cicero’s word for what is our own: <span lang=\"la\">verba nostrātia</span>, home-grown words (Fam. 2.11.1, Lewis &amp; Short)."
+    },
+    {
+      "latin": "genticus, gentica, genticum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "national, of a people",
+      "grammar": "adjective",
+      "evidence": [
+        "Tac. Ann. 3.43: <span lang=\"la\">mōre genticō</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Rare and post-Augustan: Tacitus, of a people’s own custom."
+    },
+    {
+      "latin": "nātiōnālis, nātiōnāle",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "national",
+      "grammar": "adjective, third declension",
+      "evidence": [
+        "M-O s.v. nation-state: <span lang=\"la\">cīvitās nātiōnālis</span>"
+      ],
+      "comment": "Not ancient: classical <span lang=\"la\">nātiō</span> is a people or a tribe, and has no adjective."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Illī rēbus dīvīnīs intersunt, sacrificia pūblica ac prīvāta prōcūrant, religiōnēs interpretantur",
+      "english": "They take part in worship, look after the sacrifices of the state and of private people, and interpret religious questions",
+      "source": "Caes. BG 6.13.4"
+    },
+    {
+      "latin": "Magī proximī patrium carmen canēbant",
+      "english": "Next came the Magi, singing their national hymn",
+      "source": "Curt. 3.3.9"
+    }
+  ],
+  "related": [
+    "state-country",
+    "international",
+    "foreign",
+    "people",
+    "language"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/publicus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: publicus</a> · <a href=\"https://logeion.uchicago.edu/patrius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: patrius</a> · <a href=\"https://logeion.uchicago.edu/nostras\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nostras</a> · <a href=\"https://logeion.uchicago.edu/genticus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: genticus</a> · <a href=\"https://logeion.uchicago.edu/natio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: natio</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: national debt; nation-state.",
+    "Caesar (BG 6.13.4) and Curtius (3.3.9) checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a>, with section numbers from the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "id": "international",
+  "english": "international",
+  "pos": "adjective",
+  "also": [
+    "international law",
+    "internationally",
+    "between nations",
+    "multinational",
+    "international relations"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "gēns, gentis f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a nation, a people; in the genitive plural, of the nations: international",
+      "grammar": "noun, third declension; its genitive plural gentium serves for “international”",
+      "evidence": [
+        "Cic. Off. 3.69: <span lang=\"la\">aliud jūs gentium, aliud jūs cīvīle</span>",
+        "Traupman 187: <span lang=\"la\">jūs gentium</span>, international law",
+        "M-O s.v. international law"
+      ],
+      "comment": "Latin has no adjective for “international”; it puts the nations in the genitive: <span lang=\"la\">jūs gentium</span>, international law, the law the Romans held common to all peoples."
+    },
+    {
+      "latin": "inter populōs",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "between peoples",
+      "grammar": "phrase: inter with the accusative",
+      "evidence": [
+        "M-O s.v. international relations: <span lang=\"la\">necessitūdinis ratiōnēs inter populōs</span> (Egger)"
+      ],
+      "comment": "A description, not a word: international relations as relations between peoples."
+    },
+    {
+      "latin": "internātiōnālis, internātiōnāle",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "international",
+      "grammar": "adjective, third declension",
+      "evidence": [
+        "M-O s.v. international (Egger)"
+      ],
+      "comment": "A coinage from the modern languages, marked as such by Morgan–Owens, with <span lang=\"la\">multinātiōnālis</span> and <span lang=\"la\">plūrinātiōnālis</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Itaque majōrēs aliud jūs gentium, aliud jūs cīvīle esse voluērunt",
+      "english": "So our ancestors held the law of nations to be one thing and the law of our own state another",
+      "source": "Cic. Off. 3.69"
+    }
+  ],
+  "related": [
+    "national",
+    "foreign",
+    "world",
+    "law"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/gens\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gens</a> · <a href=\"https://logeion.uchicago.edu/inter\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: inter</a> · <a href=\"https://logeion.uchicago.edu/populus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: populus</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: international; international law; international relations.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 187, checked against the searchable text of the book (9 November 2026).",
+    "Cicero (Off. 3.69) checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

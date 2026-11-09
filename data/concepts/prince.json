@@ -1,0 +1,84 @@
+{
+  "id": "prince",
+  "english": "prince",
+  "pos": "noun",
+  "also": [
+    "crown prince",
+    "king’s son"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "rēgis fīlius",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a king’s son, a prince",
+      "grammar": "noun phrase: fīlius with the genitive rēgis",
+      "evidence": [
+        "Liv. 1.46.4: <span lang=\"la\">Prīscī Tarquinī rēgis fīlius</span>",
+        "Cic. Amic. 70: <span lang=\"la\">rēgum fīliī</span>"
+      ],
+      "comment": "Latin says it with a phrase. The heir to the throne is <span lang=\"la\">rēgnī hērēs</span> (M-O s.v. king: heir apparent)."
+    },
+    {
+      "latin": "rēgulus, rēgulī m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a king’s son; more often a petty king",
+      "evidence": [
+        "Liv. 42.24.10 (Lewis &amp; Short)",
+        "Liv. 45.14.6 (Lewis &amp; Short)",
+        "M-O s.v. prince"
+      ],
+      "comment": "Livy’s word for Masinissa’s sons; most often the ruler of a small people, a chieftain (Sall., Liv., Tac.), and not found in Caesar or Cicero (Lewis &amp; Short)."
+    },
+    {
+      "latin": "puer rēgius",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the king’s boy, a young prince",
+      "grammar": "noun phrase: puer with the adjective rēgius",
+      "evidence": [
+        "Verg. A. 1.677 (Lewis &amp; Short, s.v. <span lang=\"la\">rēgius</span>)"
+      ],
+      "comment": "Vergil’s phrase for the young Ascanius."
+    },
+    {
+      "latin": "prīnceps, prīncipis m.",
+      "status": "alternative",
+      "period": "renaissance",
+      "gloss": "a ruling prince",
+      "evidence": [
+        "M-O s.v. prince",
+        "Levi–Bini p. 4"
+      ],
+      "comment": "Classically the first man in the state, and from Augustus on the emperor (see emperor). Vives (1540) uses it for the ruler of a principality, and Levi and Bini say that a prince can be addressed in Latin only as <span lang=\"la\">prīnceps</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ut in fābulīs, quī aliquamdiū propter ignōrātiōnem stirpis et generis in famulātū fuērunt, cum cognitī sunt et aut deōrum aut rēgum fīliī inventī, retinent tamen cāritātem in pāstōrēs, quōs patrēs multōs annōs esse dūxērunt",
+      "english": "as in stories: those who, not knowing their birth and family, have lived for a while as servants, and then are recognised and found to be the sons of gods or kings, still keep their love for the shepherds they took for their fathers for many years",
+      "source": "Cic. Amic. 70"
+    }
+  ],
+  "related": [
+    "king",
+    "queen",
+    "princess",
+    "palace",
+    "castle"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/rex\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: rex</a> · <a href=\"https://logeion.uchicago.edu/filius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: filius</a> · <a href=\"https://logeion.uchicago.edu/regulus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: regulus</a> · <a href=\"https://logeion.uchicago.edu/puer\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: puer</a> · <a href=\"https://logeion.uchicago.edu/regius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: regius</a> · <a href=\"https://logeion.uchicago.edu/princeps\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: princeps</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. prince; king: heir apparent.",
+    "Enrico Levi and Arturo Bini, <em>Il latino come lingua viva</em> (1937), p. 4, s.v. altezza reale.",
+    "Livy 1.46.4, in Conway and Walters’s text, checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-cicero-philosophica), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

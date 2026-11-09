@@ -1,0 +1,83 @@
+{
+  "id": "private-confidential",
+  "english": "private",
+  "sense": "confidential",
+  "pos": [
+    "adjective",
+    "adverb"
+  ],
+  "also": [
+    "in private",
+    "privately",
+    "confidential",
+    "secretly",
+    "between ourselves"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "sēcrētus, sēcrēta, sēcrētum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "private, secret",
+      "grammar": "adjective",
+      "evidence": [
+        "Quint. 2.18.4: <span lang=\"la\">ex sēcrētīs studiīs</span> (Lewis &amp; Short)",
+        "Plin. Ep. 7.9.4 (Lewis &amp; Short)"
+      ],
+      "comment": "Set apart, and so private or secret (Lewis &amp; Short). As a noun, <span lang=\"la\">sēcrētum</span> is a secret or a private talk: <span lang=\"la\">sēcrētum petit</span>, he asks for a word in private (Plin. Ep. 1.5.11, Lewis &amp; Short)."
+    },
+    {
+      "latin": "sēcrētō",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "in private, privately",
+      "grammar": "adverb",
+      "evidence": [
+        "Cic. Fam. 7.25.2",
+        "Hor. S. 1.9.67 (Lewis &amp; Short)",
+        "Traupman 365"
+      ],
+      "comment": "Lewis &amp; Short: in secret, without witnesses, in private. Traupman: <span lang=\"la\">velim tēcum loquī sēcrētō</span>, I want to speak with you privately."
+    },
+    {
+      "latin": "in prīvātō",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "in private, not in public",
+      "grammar": "phrase: in with the ablative",
+      "evidence": [
+        "Liv. 39.18 (Lewis &amp; Short)",
+        "Traupman 91, 365"
+      ],
+      "comment": "Against <span lang=\"la\">in pūblicō</span>, in public (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Sēcrētō hoc audī, tēcum habētō, nē Apellae quidem, lībertō tuō, dīxerīs.",
+      "english": "This is between ourselves: keep it to yourself, and don’t tell even your freedman Apella.",
+      "source": "Cic. Fam. 7.25.2"
+    },
+    {
+      "latin": "Mālim tēcum dē eā in prīvātō loquī.",
+      "english": "I’d rather talk to you about that in private.",
+      "source": "Traupman 91"
+    }
+  ],
+  "related": [
+    "private",
+    "talk",
+    "personal"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/secretus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: secretus</a> · <a href=\"https://logeion.uchicago.edu/secreto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: secreto</a> · <a href=\"https://logeion.uchicago.edu/privatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: privatus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 91, 365, checked against the searchable text of the book (9 November 2026).",
+    "Cicero, <em>Ad familiares</em> 7.25.2, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

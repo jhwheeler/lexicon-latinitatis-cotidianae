@@ -1,0 +1,75 @@
+{
+  "id": "couple-people",
+  "english": "couple",
+  "sense": "two people together: a married couple, partners",
+  "pos": "noun",
+  "also": [
+    "married couple",
+    "a young couple",
+    "husband and wife",
+    "they’re a couple"
+  ],
+  "domain": "sermo",
+  "terms": [
+    {
+      "latin": "conjūnx, conjugis m./f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a spouse; in the plural, husband and wife",
+      "grammar": "noun, third declension; in the plural, conjugēs, a married couple",
+      "evidence": [
+        "Catull. 61.225–226: <span lang=\"la\">at, bonī conjugēs, bene vīvite</span>"
+      ],
+      "comment": "Lewis &amp; Short: in the plural for the married pair (Catull. 61, 66). See spouse."
+    },
+    {
+      "latin": "pār, paris n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a pair: two who belong together",
+      "evidence": [
+        "Cic. Amic. 15: <span lang=\"la\">vix tria aut quattuor nōminantur paria amīcōrum</span>",
+        "Ov. Met. 13.833: <span lang=\"la\">pār columbārum</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Lewis &amp; Short: a pair, a couple, of people or animals."
+    },
+    {
+      "latin": "marītī, marītōrum m. pl.",
+      "status": "alternative",
+      "period": "post-classical",
+      "gloss": "married people, husband and wife",
+      "evidence": [
+        "Apul. Met. 8 (Lewis &amp; Short): <span lang=\"la\">novī marītī</span>, a young couple",
+        "Dig. 24.1.52 (Lewis &amp; Short)"
+      ],
+      "comment": "Lewis &amp; Short mark this plural post-classical: the jurists and Apuleius."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "lūsimus satis. at, bonī conjugēs, bene vīvite",
+      "english": "we have played enough. And you, good husband and wife, live happily",
+      "source": "Catull. 61.225–226"
+    },
+    {
+      "latin": "ex omnibus saeculīs vix tria aut quattuor nōminantur paria amīcōrum",
+      "english": "from all the ages hardly three or four pairs of friends are named",
+      "source": "Cic. Amic. 15"
+    }
+  ],
+  "related": [
+    "spouse",
+    "husband",
+    "wife",
+    "couple-a-few"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/conjunx\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: conjunx</a> · <a href=\"https://logeion.uchicago.edu/par\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: par</a> · <a href=\"https://logeion.uchicago.edu/maritus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: maritus</a>",
+    "Catullus 61 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> and cited in Mynors’s numbering, as in the Latinitas loci collection (232–233 in the Perseus text); Cicero (Amic. 15) checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

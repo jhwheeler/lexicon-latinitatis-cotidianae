@@ -1,0 +1,91 @@
+{
+  "id": "necessary",
+  "english": "necessary",
+  "pos": "adjective",
+  "also": [
+    "necessarily",
+    "it is necessary",
+    "unnecessary",
+    "not necessary",
+    "essential"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "necessārius, necessāria, necessārium",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "necessary, indispensable",
+      "grammar": "adjective",
+      "evidence": [
+        "Cic. Fam. 14.20.1: <span lang=\"la\">cētera quae sunt ad vīctum et ad valētūdinem necessāria</span>",
+        "Traupman 350"
+      ],
+      "comment": "As a noun, <span lang=\"la\">necessārius</span> is a relative or a close friend, someone bound to one by ties (Lewis &amp; Short)."
+    },
+    {
+      "latin": "necesse est",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "it is necessary, one has to",
+      "grammar": "phrase: with an infinitive, an accusative and infinitive, or a subjunctive",
+      "evidence": [
+        "Hor. S. 2.6.26: <span lang=\"la\">īre necesse est</span>",
+        "Publil. Q 75: <span lang=\"la\">quidquid plūs quam necesse est possideās, premit</span>",
+        "Traupman 56: <span lang=\"la\">necesse est tibi manēre in lectō</span>"
+      ],
+      "notes": [
+        "debeo"
+      ]
+    },
+    {
+      "latin": "opus est",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "there is need, it is needed",
+      "grammar": "phrase: what is needed in the ablative or as the subject",
+      "evidence": [
+        "Quint. 6.3.66: <span lang=\"la\">nōn pluit, nōn opus est tibi</span>",
+        "Sen. Ep. 80.4: <span lang=\"la\">quid tibi opus est ut sīs bonus?</span>"
+      ],
+      "comment": "Not necessary: <span lang=\"la\">nihil opus est</span> (see require)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "lābrum sī in balineō nōn est, ut sit, item cētera quae sunt ad vīctum et ad valētūdinem necessāria",
+      "english": "if there is no basin in the bath, see that there is one, and everything else necessary for food and health",
+      "source": "Cic. Fam. 14.20.1"
+    },
+    {
+      "latin": "sīve Aquilō rādit terrās seu brūma nivālem interiōre diem gȳrō trahit, īre necesse est",
+      "english": "whether the north wind is scouring the land or midwinter is dragging the snowy day round its shorter circle, I have to go",
+      "source": "Hor. S. 2.6.25–26"
+    },
+    {
+      "latin": "nōn pluit, nōn opus est tibi; sī pluit, ipse ūtar",
+      "english": "if it isn’t raining, you don’t need it; if it is, I’ll wear it myself",
+      "source": "Quint. 6.3.66"
+    }
+  ],
+  "notes": {
+    "debeo": {
+      "html": "Of what has to be, Latin says <span lang=\"la\">necesse est</span>; <span lang=\"la\">dēbeō</span> with an infinitive is for duty or obligation.",
+      "ruling": "debeo-duty"
+    }
+  },
+  "related": [
+    "require",
+    "basic"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/necessarius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: necessarius</a> · <a href=\"https://logeion.uchicago.edu/necesse\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: necesse</a> · <a href=\"https://logeion.uchicago.edu/opus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: opus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 56, 350, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-horatius, loci-publilius, loci-quintilianus, loci-seneca-epistulae), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

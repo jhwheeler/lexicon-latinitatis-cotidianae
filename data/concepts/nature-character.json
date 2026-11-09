@@ -1,0 +1,83 @@
+{
+  "id": "nature-character",
+  "english": "nature",
+  "sense": "the character a person or thing is born with",
+  "pos": "noun",
+  "also": [
+    "human nature",
+    "by nature",
+    "temperament",
+    "disposition",
+    "personality"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "nātūra, nātūrae f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "nature, character: what one is born with",
+      "evidence": [
+        "Hor. Ep. 1.10.24: <span lang=\"la\">nātūram expellēs furcā, tamen ūsque recurret</span>",
+        "Cic. Sen. 65: <span lang=\"la\">nōn omnis nātūra vetustāte coacēscit</span>"
+      ],
+      "comment": "By nature is <span lang=\"la\">nātūrā</span>, in the ablative."
+    },
+    {
+      "latin": "ingenium, ingeniī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a person’s nature, temperament; natural talent",
+      "evidence": [
+        "Tac. Agr. 42.4: <span lang=\"la\">proprium hūmānī ingeniī est ōdisse quem laeserīs</span>",
+        "Cic. Att. 6.2.2: <span lang=\"la\">multiplex puerī ingenium</span>",
+        "Traupman 349: nature (of a person)"
+      ],
+      "comment": "Traupman’s word for a person’s nature. Lewis &amp; Short call this general sense mostly poetic and post-Augustan, but Cicero uses it of a boy’s character, and it is everywhere a person’s talent."
+    },
+    {
+      "latin": "indolēs, indolis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "natural disposition, especially of the young",
+      "evidence": [
+        "Cic. Sen. 26: <span lang=\"la\">adulēscentibus bonā indole praeditīs</span>"
+      ],
+      "comment": "Lewis &amp; Short: an inborn or native quality; natural abilities, disposition."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nātūram expellēs furcā, tamen ūsque recurret",
+      "english": "you may drive nature out with a pitchfork, but she will keep coming back",
+      "source": "Hor. Ep. 1.10.24"
+    },
+    {
+      "latin": "proprium hūmānī ingeniī est ōdisse quem laeserīs",
+      "english": "it is human nature to hate the one you have hurt",
+      "source": "Tac. Agr. 42.4"
+    },
+    {
+      "latin": "est magnum illud quidem vērum tamen multiplex puerī ingenium; quō ego regendō habeō negōtī satis",
+      "english": "the boy has a great nature, but a complicated one, and steering it keeps me quite busy enough",
+      "source": "Cic. Att. 6.2.2"
+    }
+  ],
+  "related": [
+    "nature-world",
+    "naughty",
+    "human",
+    "kind"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/natura\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: natura</a> · <a href=\"https://logeion.uchicago.edu/ingenium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ingenium</a> · <a href=\"https://logeion.uchicago.edu/indoles\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: indoles</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 349, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-horatius, loci-tacitus, loci-cicero-epistulae, loci-cicero-philosophica), checked against the editions named there.",
+    "Cicero (Sen. 26) checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

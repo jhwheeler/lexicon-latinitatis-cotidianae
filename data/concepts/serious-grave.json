@@ -1,0 +1,89 @@
+{
+  "id": "serious-grave",
+  "english": "serious",
+  "sense": "of an illness, an injury or a problem: grave, dangerous",
+  "pos": "adjective",
+  "also": [
+    "seriously ill",
+    "a serious illness",
+    "a serious wound",
+    "nothing serious"
+  ],
+  "domain": "verba",
+  "also_under": [
+    "corpus"
+  ],
+  "terms": [
+    {
+      "latin": "gravis, grave",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "serious, grave, heavy (of an illness, a wound, a danger)",
+      "grammar": "adjective, third declension",
+      "evidence": [
+        "Cic. Cat. 1.31: <span lang=\"la\">hominēs aegrī morbō gravī</span>",
+        "Liv. 21.48.4: <span lang=\"la\">gravis vulnere</span>, badly wounded (Lewis &amp; Short)",
+        "Traupman 64, 331: <span lang=\"la\">gravis valētūdō</span>, a serious illness"
+      ],
+      "comment": "Of a problem or a mistake, plain <span lang=\"la\">magnus</span> often does (see major)."
+    },
+    {
+      "latin": "graviter aegrōtāre",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "to be seriously ill",
+      "grammar": "phrase (aegrōtō, aegrōtāre)",
+      "evidence": [
+        "Cic. Off. 1.32: <span lang=\"la\">graviter aegrōtāre fīlius coeperit</span>"
+      ]
+    },
+    {
+      "latin": "perīculōsus, perīculōsa, perīculōsum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "dangerous, serious (of a wound, an illness, a war)",
+      "grammar": "adjective",
+      "evidence": [
+        "Cic. Phil. 14.26: <span lang=\"la\">vulnera</span> (Lewis &amp; Short)",
+        "Cic. Att. 8.2.3: <span lang=\"la\">perīculōsē aegrōtāns</span>, dangerously ill (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ut saepe hominēs aegrī morbō gravī, cum aestū febrīque jactantur, sī aquam gelidam biberunt, prīmō relevārī videntur, deinde multō gravius vehementiusque adflīctantur",
+      "english": "as people with a serious illness, tossing in the heat of a fever, often seem relieved at first if they drink cold water, and are then struck down far more heavily and violently",
+      "source": "Cic. Cat. 1.31"
+    },
+    {
+      "latin": "sī cōnstituerīs cuipiam tē advocātum in rem praesentem esse ventūrum atque interim graviter aegrōtāre fīlius coeperit, nōn sit contrā officium nōn facere quod dīxerīs",
+      "english": "if you have promised someone to come and support him on the spot, and meanwhile your son falls seriously ill, it is no breach of duty not to do what you said",
+      "source": "Cic. Off. 1.32",
+      "notes": [
+        "eris"
+      ]
+    }
+  ],
+  "notes": {
+    "eris": {
+      "html": "Perfect subjunctive with a long <span lang=\"la\">ī</span>, <span lang=\"la\">cōnstituerīs … dīxerīs</span>: the condition depends on the subjunctive <span lang=\"la\">nōn sit</span>, and the relative clause is drawn into it (the house rule on <span lang=\"la\">-erīs</span> and <span lang=\"la\">-eris</span>).",
+      "ruling": "perfect-subjunctive"
+    }
+  },
+  "related": [
+    "serious-earnest",
+    "ill",
+    "wound",
+    "major"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/gravis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gravis</a> · <a href=\"https://logeion.uchicago.edu/aegroto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aegroto</a> · <a href=\"https://logeion.uchicago.edu/periculosus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: periculosus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 64, 157, 331, checked against the searchable text of the book (9 November 2026).",
+    "Cicero (Cat. 1.31, Off. 1.32) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "id": "original-first",
+  "english": "original",
+  "sense": "first, earliest, as it was at the start",
+  "pos": "adjective",
+  "also": [
+    "originally",
+    "at first",
+    "from the beginning",
+    "earliest",
+    "the original plan"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "prīmus, prīma, prīmum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "first, original",
+      "grammar": "adjective",
+      "evidence": [
+        "Verg. A. 1.372: <span lang=\"la\">prīmā repetēns ab orīgine</span>"
+      ],
+      "comment": "Latin calls the original state of a thing its first: going back to the very beginning is <span lang=\"la\">prīmā repetere ab orīgine</span>. Originally is <span lang=\"la\">ā prīncipiō</span> or <span lang=\"la\">prīmō</span>."
+    },
+    {
+      "latin": "ā prīncipiō",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "originally, from the beginning",
+      "grammar": "phrase",
+      "evidence": [
+        "Tac. Ann. 1.1: <span lang=\"la\">Urbem Rōmam ā prīncipiō rēgēs habuēre</span>"
+      ]
+    },
+    {
+      "latin": "prīstinus, prīstina, prīstinum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "original, former (of a state or condition)",
+      "grammar": "adjective",
+      "evidence": [
+        "Caes. BG 7.54: <span lang=\"la\">in prīstinum statum</span>",
+        "Nep. Timol. 1.1: <span lang=\"la\">in prīstinum restituere</span>, to restore to its original state (Lewis &amp; Short)"
+      ],
+      "notes": [
+        "pristinus"
+      ]
+    },
+    {
+      "latin": "prīmigenius, prīmigenia, prīmigenium",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "original, first of its kind",
+      "grammar": "adjective",
+      "evidence": [
+        "Varr. LL 6.36: <span lang=\"la\">verba prīmigenia</span>, original words, from which others are formed (Lewis &amp; Short)"
+      ],
+      "comment": "Rare: Varro, then late writers (Lewis &amp; Short)."
+    },
+    {
+      "latin": "orīginālis, orīgināle",
+      "status": "alternative",
+      "period": "late",
+      "gloss": "original, from the source",
+      "grammar": "adjective, third declension",
+      "evidence": [
+        "Apul. M. 11.2: <span lang=\"la\">Cerēs … frūgum parēns orīginālis</span> (Lewis &amp; Short)",
+        "Hier. in Gal. 3.10: <span lang=\"la\">orīginālēs librī</span>, the books in their original language (Lewis &amp; Short)"
+      ],
+      "comment": "Late Latin (Apuleius, Jerome, Macrobius), not classical."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Urbem Rōmam ā prīncipiō rēgēs habuēre",
+      "english": "the city of Rome was originally ruled by kings",
+      "source": "Tac. Ann. 1.1"
+    },
+    {
+      "latin": "ut nōn sōlum in prīstinum statum redīssent, sed omnium temporum dignitātem et grātiam antecessisse vidērentur",
+      "english": "so that they had not only been restored to their original position, but seemed to have surpassed their standing and influence at any time before",
+      "source": "Caes. BG 7.54"
+    }
+  ],
+  "notes": {
+    "pristinus": {
+      "form": "prīstinus",
+      "claim": "long first i",
+      "against": "Lewis &amp; Short leaves it unmarked",
+      "html": "De Vaan 489, s.v. <span lang=\"la\">prior</span>: from the zero grade <span lang=\"la\">*prīs-</span> of the comparative, as in <span lang=\"la\">prīscus</span> and <span lang=\"la\">prīdem</span>."
+    }
+  },
+  "related": [
+    "original-new",
+    "original-not-a-copy",
+    "former",
+    "early-beginning"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/primus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: primus</a> · <a href=\"https://logeion.uchicago.edu/principium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: principium</a> · <a href=\"https://logeion.uchicago.edu/pristinus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pristinus</a> · <a href=\"https://logeion.uchicago.edu/primigenius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: primigenius</a> · <a href=\"https://logeion.uchicago.edu/originalis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: originalis</a>",
+    "Michiel de Vaan, <em>Etymological Dictionary of Latin and the other Italic Languages</em> (2008), p. 489.",
+    "Quotations from the Latinitas loci collections (loci-tacitus), checked against the editions named there.",
+    "Caesar (BG 7.54) and Vergil (A. 1.372) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "id": "ambassador",
+  "english": "ambassador",
+  "pos": "noun",
+  "also": [
+    "envoy",
+    "diplomat",
+    "emissary"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "lēgātus, lēgātī m.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "an ambassador, an envoy",
+      "evidence": [
+        "Liv. 21.30.8",
+        "Traupman 176, 271",
+        "Levi–Bini p. 4",
+        "M-O s.v. diplomat"
+      ],
+      "comment": "One sent with a commission (<span lang=\"la\">lēgāre</span>); also a general’s or a governor’s deputy (Lewis &amp; Short). Traupman and Levi–Bini give it for an ambassador, Morgan–Owens for any diplomat."
+    },
+    {
+      "latin": "ōrātor, ōrātōris m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "an envoy who speaks for his people",
+      "evidence": [
+        "Liv. 1.15.5: <span lang=\"la\">Vejentēs pācem petītum ōrātōrēs Rōmam mittunt</span>",
+        "M-O s.v. diplomat: ambassador"
+      ],
+      "comment": "The spokesman of an embassy (Lewis &amp; Short); in Renaissance and modern Latin the usual title of an ambassador (Busbecq, Milton and Egger, in Morgan–Owens)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "eōs ipsōs quōs cernant lēgātōs nōn pinnīs sublīme ēlātōs Alpēs trānsgressōs",
+      "english": "the very envoys they could see had not crossed the Alps lifted up on wings",
+      "source": "Liv. 21.30.8"
+    }
+  ],
+  "related": [
+    "embassy",
+    "consul-diplomat"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/legatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: legatus</a> · <a href=\"https://logeion.uchicago.edu/orator\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: orator</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. diplomat; diplomat: ambassador.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 176, 271, checked against the searchable text of the book (9 November 2026).",
+    "Enrico Levi and Arturo Bini, <em>Il latino come lingua viva</em> (1937), p. 4, s.v. ambasciatore.",
+    "Livy 1.15.5, in Conway and Walters’s text, checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-livius), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

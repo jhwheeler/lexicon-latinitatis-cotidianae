@@ -1,0 +1,87 @@
+{
+  "id": "positive-optimistic",
+  "english": "positive",
+  "sense": "hopeful, confident that things will go well",
+  "pos": "adjective",
+  "also": [
+    "optimistic",
+    "be positive",
+    "think positive",
+    "a positive attitude",
+    "look on the bright side"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "bonō animō esse",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "to be of good heart, to be positive",
+      "grammar": "phrase: bonō animō es! be positive, cheer up",
+      "evidence": [
+        "Cic. Att. 5.18.3: <span lang=\"la\">quā rē bonō animō es</span>",
+        "Ter. Ad. 696: <span lang=\"la\">Bonō animō es</span>"
+      ],
+      "comment": "Also <span lang=\"la\">bonum animum habēre</span> (Plaut. Capt. 152), and in a letter, just <span lang=\"la\">bonum animum</span> (Cic. Att. 16.12.1). To someone downcast, <span lang=\"la\">Bonō animō es!</span> (see cheer up)."
+    },
+    {
+      "latin": "bene spērāre",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "to be hopeful, to expect the best",
+      "grammar": "phrase (spērō, spērāre)",
+      "evidence": [
+        "Cic. Att. 5.14.2: <span lang=\"la\">sed bene spērāmus</span>",
+        "Nep. Milt. 1.1: <span lang=\"la\">dē eō bene spērāre</span> (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "positīvus, positīva, positīvum",
+      "status": "avoid",
+      "period": "post-classical",
+      "gloss": "positive (in grammar); laid down by convention",
+      "grammar": "adjective",
+      "evidence": [
+        "Gell. 10.4 lemma: <span lang=\"la\">nōmina nōn positīva esse sed nātūrālia</span> (Lewis &amp; Short)",
+        "Traupman 232, 246, 248: gradus positīvus, the positive degree",
+        "M-O s.v. positive (math.)"
+      ],
+      "comment": "A term of grammar, the positive degree (<span lang=\"la\">gradus positīvus</span>), or of words fixed by convention rather than by nature (Gellius); in Gauss, a positive number (Morgan–Owens). Never “hopeful”."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "tamen magnō timōre sum sed bene spērāmus",
+      "english": "all the same, I am very anxious; but we are hopeful",
+      "source": "Cic. Att. 5.14.2"
+    },
+    {
+      "latin": "sed quid tibi dīcam? bonum animum.",
+      "english": "but what am I to say to you? Keep your spirits up.",
+      "source": "Cic. Att. 16.12.1"
+    },
+    {
+      "latin": "Bonō animō es: dūcēs uxōrem hanc. — Hem. — Bonō animō es, inquam.",
+      "english": "Cheer up: you’ll marry her. — What? — Cheer up, I tell you.",
+      "source": "Ter. Ad. 696"
+    }
+  ],
+  "related": [
+    "cheer-up",
+    "hope",
+    "cheerful",
+    "positive-favourable"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/animus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: animus</a> · <a href=\"https://logeion.uchicago.edu/spero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: spero</a> · <a href=\"https://logeion.uchicago.edu/positivus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: positivus</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. positive (math.).",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 232, 246, 248, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-terentius, loci-plautus), checked against the editions named there.",
+    "Cicero (Att. 5.14.2, 5.18.3, 16.12.1) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

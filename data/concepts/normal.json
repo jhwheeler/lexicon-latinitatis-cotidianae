@@ -1,0 +1,92 @@
+{
+  "id": "normal",
+  "english": "normal",
+  "pos": "adjective",
+  "also": [
+    "usual",
+    "it’s normal",
+    "as normal",
+    "back to normal",
+    "customary"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "ūsitātus, ūsitāta, ūsitātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "normal, usual, customary, ordinary",
+      "grammar": "adjective",
+      "evidence": [
+        "Cic. Verr. 2.5.117: <span lang=\"la\">ūsitātum est</span> (Lewis &amp; Short)",
+        "Caes. BG 7.22: <span lang=\"la\">nōtum atque ūsitātum</span> (Lewis &amp; Short)",
+        "Traupman 299: current, in general use, ūsitātus"
+      ],
+      "comment": "“That’s normal” is <span lang=\"la\">ūsitātum est</span>, or with a verb <span lang=\"la\">ita fierī solet</span>. Back to normal: <span lang=\"la\">in prīstinum statum redīre</span> (Caes. BG 7.54; see former)."
+    },
+    {
+      "latin": "solitus, solita, solitum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "usual, accustomed",
+      "grammar": "participle of soleō, used as an adjective",
+      "evidence": [
+        "Liv. 3.38.9: <span lang=\"la\">quod solitum quicquam līberae cīvitātis fieret</span> (Lewis &amp; Short)",
+        "Ov. M. 7.84: <span lang=\"la\">solitō fōrmōsior</span> (Lewis &amp; Short)",
+        "Traupman 401: usual, solitus"
+      ],
+      "comment": "Augustan and later, not in Cicero or Caesar (Lewis &amp; Short). With a comparative, <span lang=\"la\">solitō</span> is “than usual”: <span lang=\"la\">solitō fōrmōsior</span>, better-looking than usual."
+    },
+    {
+      "latin": "ut fit",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "as normally happens",
+      "grammar": "phrase",
+      "evidence": [
+        "Liv. 3.1.7: <span lang=\"la\">fēcit statim, ut fit, fastīdium cōpia</span>",
+        "Hor. Ep. 2.2.14–15"
+      ]
+    },
+    {
+      "latin": "normālis, normāle",
+      "status": "avoid",
+      "period": "classical",
+      "gloss": "made by the square, at right angles",
+      "grammar": "adjective, third declension",
+      "evidence": [
+        "Quint. 11.3.141: <span lang=\"la\">normālis angulus</span>, a right angle (Lewis &amp; Short)",
+        "M-O s.v. normal, ordinary, average (marked as a modern sense; Grosse 1846)"
+      ],
+      "comment": "From <span lang=\"la\">norma</span>, a carpenter’s square. The sense “normal” is nineteenth-century medical Latin (<span lang=\"la\">pulsūs frequentia normālis</span>, Grosse 1846, in Morgan–Owens)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "fēcit statim, ut fit, fastīdium cōpia",
+      "english": "as normally happens, plenty soon bred boredom",
+      "source": "Liv. 3.1.7"
+    },
+    {
+      "latin": "semel hic cessāvit et, ut fit, in scālīs latuit",
+      "english": "once he played truant and, as boys will, hid on the stairs",
+      "source": "Hor. Ep. 2.2.14–15"
+    }
+  ],
+  "related": [
+    "as-usual",
+    "practice-custom",
+    "average"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/usitatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: usitatus</a> · <a href=\"https://logeion.uchicago.edu/usitor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: usitor</a> · <a href=\"https://logeion.uchicago.edu/soleo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: soleo</a> · <a href=\"https://logeion.uchicago.edu/fio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fio</a> · <a href=\"https://logeion.uchicago.edu/normalis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: normalis</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. normal, ordinary, average.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 299, 401, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-livius, loci-horatius), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "id": "republic",
+  "english": "republic",
+  "pos": "noun",
+  "also": [
+    "the Republic",
+    "Roman Republic",
+    "republican"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "rēs pūblica, reī pūblicae f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a republic; the Roman Republic",
+      "grammar": "noun, fifth declension, with an adjective",
+      "evidence": [
+        "Cic. Rep. 1.39: <span lang=\"la\">rēs pūblica rēs populī</span>",
+        "Levi–Bini p. 54",
+        "M-O s.v. era"
+      ],
+      "comment": "Classically the state, whatever its constitution: for Cicero a kingdom is a <span lang=\"la\">rēs pūblica</span> too (Rep. 1.42). It means a republic where the context sets it against kings, as Levi and Bini allow (p. 54), and in the names of states: <span lang=\"la\">annō sextō Reī Pūblicae Gallicae</span>, in the sixth year of the French Republic (Desfontaines, 1798, in Morgan–Owens)."
+    },
+    {
+      "latin": "lībertās, lībertātis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "liberty: a state free of kings",
+      "evidence": [
+        "Tac. Ann. 1.1: <span lang=\"la\">lībertātem et cōnsulātum L. Brūtus īnstituit</span>",
+        "Cic. Phil. 6.19 (Lewis &amp; Short)"
+      ],
+      "comment": "Lewis &amp; Short: the political freedom of a people not under monarchical rule. To the Romans the end of the kings was the beginning of liberty."
+    },
+    {
+      "latin": "populāris rēs pūblica",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "a republic, a state of the people",
+      "grammar": "noun phrase: rēs pūblica with the adjective populāris",
+      "evidence": [
+        "Levi–Bini p. 54"
+      ],
+      "comment": "Levi and Bini’s phrase, with <span lang=\"la\">populāre imperium</span>, for a republic as against a kingdom."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "līberī jam hinc populī Rōmānī rēs pāce bellōque gestās, annuōs magistrātūs, imperiaque lēgum potentiōra quam hominum peragam",
+      "english": "from here on I shall tell the deeds of the Roman people, now free, in peace and war: their magistrates elected for a year, and the rule of laws stronger than the rule of men",
+      "source": "Liv. 2.1.1"
+    }
+  ],
+  "related": [
+    "democracy",
+    "state-country",
+    "government",
+    "king"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/res\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: res</a> · <a href=\"https://logeion.uchicago.edu/publicus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: publicus</a> · <a href=\"https://logeion.uchicago.edu/libertas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: libertas</a> · <a href=\"https://logeion.uchicago.edu/popularis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: popularis</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. era: other eras.",
+    "Enrico Levi and Arturo Bini, <em>Il latino come lingua viva</em> (1937), p. 54, s.v. repubblica.",
+    "Cicero, <em>De re publica</em> 1, and Tacitus, <em>Annals</em> 1.1, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026).",
+    "Livy 2.1.1, in Conway and Walters’s text, checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

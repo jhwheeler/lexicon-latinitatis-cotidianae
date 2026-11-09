@@ -51,6 +51,23 @@ def inflections(word):
                  'put': 'put', 'give': 'gave given', 'come': 'came', 'see': 'saw seen', 'fall': 'fell fallen',
                  'leaf': 'leaves', 'knife': 'knives', 'wife': 'wives', 'life': 'lives', 'shelf': 'shelves'}
     forms |= set(irregular.get(word, '').split())
+    # The lists spell American; the lexicon spells British (color/colour, center/centre, organize/organise).
+    for us, uk in (('or', 'our'), ('er', 're'), ('ize', 'ise'), ('yze', 'yse'), ('og', 'ogue'), ('ense', 'ence')):
+        if word.endswith(us) and len(word) > len(us) + 2:
+            forms |= inflections_of(word[:-len(us)] + uk)
+    forms |= {f.replace('ization', 'isation') for f in forms}
+    british = {'gray': 'grey', 'program': 'programme', 'mom': 'mum', 'math': 'maths', 'jewelry': 'jewellery',
+               'pajamas': 'pyjamas', 'cozy': 'cosy', 'plow': 'plough', 'mold': 'mould'}
+    if word in british:
+        forms |= inflections_of(british[word])
+    return forms
+
+
+def inflections_of(word):
+    """The plain inflections of a variant spelling (no further variants)."""
+    forms = {word, word + 's', word + 'es', word + 'ed', word + 'd', word + 'ing'}
+    if word.endswith('e'):
+        forms.add(word[:-1] + 'ing')
     return forms
 
 

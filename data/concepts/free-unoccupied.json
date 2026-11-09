@@ -1,0 +1,65 @@
+{
+  "id": "free-unoccupied",
+  "english": "free",
+  "sense": "not taken: of a seat or a room",
+  "pos": "adjective",
+  "also": [
+    "vacant",
+    "not taken",
+    "unoccupied",
+    "is this seat free?"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "vacō, vacāre, vacāvī, vacātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "be free, be empty, not be taken",
+      "grammar": "verb, first conjugation; of a place",
+      "evidence": [
+        "Cic. Att. 13.52.1: <span lang=\"la\">ut vix triclīnium … vacāret</span>",
+        "Caes. BG 1.28: <span lang=\"la\">locus</span> (Lewis &amp; Short)"
+      ],
+      "comment": "The same verb serves for a person who is free (see available, of a person). A seat in a theatre is <span lang=\"la\">locus</span> (Cic. Sen. 63)."
+    },
+    {
+      "latin": "vacuus, vacua, vacuum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "empty, unoccupied, free",
+      "grammar": "adjective",
+      "evidence": [
+        "Hor. Ep. 2.2.130: <span lang=\"la\">vacuum theātrum</span> (Lewis &amp; Short)",
+        "Liv. 25.3.18: <span lang=\"la\">per vacuum locum</span> (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "vīlla ita complēta ā mīlitibus est ut vix triclīnium ubi cēnātūrus ipse Caesar esset vacāret",
+      "english": "the house was so full of soldiers that hardly a dining room was left free for Caesar himself to dine in",
+      "source": "Cic. Att. 13.52.1"
+    },
+    {
+      "latin": "Vacatne hic locus?",
+      "english": "Is this seat free?",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "available-free",
+    "seat",
+    "free-liberty"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/vaco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vaco</a> · <a href=\"https://logeion.uchicago.edu/vacuus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vacuus</a>",
+    "Cicero (Att. 13.52.1) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>; Cicero (Sen. 63) from the Latinitas loci collection (loci-cicero-philosophica).",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "id": "main",
+  "english": "main",
+  "sense": "chief, most important",
+  "pos": "adjective",
+  "also": [
+    "chief",
+    "principal",
+    "the main thing",
+    "main point",
+    "main road"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "praecipuus, praecipua, praecipuum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "main, chief, principal",
+      "grammar": "adjective",
+      "evidence": [
+        "Tac. Dial. 28.4: <span lang=\"la\">cujus praecipua laus erat tuērī domum</span>",
+        "Quint. 1.3.1: <span lang=\"la\">ingeniī signum in parvīs praecipuum memoria est</span>"
+      ],
+      "comment": "The one taken before the others (<span lang=\"la\">prae</span> and <span lang=\"la\">capiō</span>, Lewis &amp; Short)."
+    },
+    {
+      "latin": "caput est",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "the main thing is",
+      "grammar": "phrase, with an infinitive or an accusative and infinitive",
+      "evidence": [
+        "Cic. Att. 1.17.4: <span lang=\"la\">id quod caput est</span>",
+        "Cic. de Or. 1.132: <span lang=\"la\">caput esse artis decēre</span> (Lewis &amp; Short)",
+        "Traupman 105: <span lang=\"la\">id caput est</span>, that’s the main point"
+      ],
+      "comment": "The main dish of a dinner is <span lang=\"la\">caput cēnae</span> (see main dish)."
+    },
+    {
+      "latin": "prīncipālis, prīncipāle",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "principal, chief",
+      "grammar": "adjective, third declension",
+      "evidence": [
+        "Cic. Fat. 41: <span lang=\"la\">causae … prīncipālēs</span> (Lewis &amp; Short)",
+        "Traupman 343: <span lang=\"la\">via prīncipālis</span>, main road"
+      ],
+      "comment": "In Cicero a term of philosophy, more frequent from Pliny on. <span lang=\"la\">Via prīncipālis</span> was the main street of a Roman camp (Liv. 10.33, Lewis &amp; Short).",
+      "notes": [
+        "principalis"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "cujus praecipua laus erat tuērī domum et īnservīre līberīs",
+      "english": "whose chief praise was to look after the house and devote herself to the children",
+      "source": "Tac. Dial. 28.4"
+    },
+    {
+      "latin": "et, id quod caput est, nōbīs inter nōs nostra sīve incommoda sīve vitia sīve injūriās esse tolerandās",
+      "english": "and, what is the main thing, that we must bear with one another’s annoyances, faults and wrongs",
+      "source": "Cic. Att. 1.17.4"
+    }
+  ],
+  "notes": {
+    "principalis": {
+      "form": "prīncipālis",
+      "claim": "long first i",
+      "against": "Lewis &amp; Short leaves it unmarked",
+      "html": "From <span lang=\"la\">prīnceps</span>, which de Vaan derives from <span lang=\"la\">prīmus</span> and <span lang=\"la\">capiō</span> (p. 489, s.v. <span lang=\"la\">prīmus</span>). Traupman 343 marks it."
+    }
+  },
+  "related": [
+    "major",
+    "main-dish",
+    "important",
+    "special"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/praecipuus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praecipuus</a> · <a href=\"https://logeion.uchicago.edu/caput\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: caput</a> · <a href=\"https://logeion.uchicago.edu/principalis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: principalis</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 105, 343.",
+    "Michiel de Vaan, <em>Etymological Dictionary of Latin and the other Italic Languages</em> (2008), p. 489.",
+    "Quotations from the Latinitas loci collections (loci-tacitus, loci-quintilianus), checked against the editions named there. Cicero (Att. 1.17.4) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

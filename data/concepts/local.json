@@ -1,0 +1,82 @@
+{
+  "id": "local",
+  "english": "local",
+  "pos": "adjective",
+  "also": [
+    "locals",
+    "local people",
+    "home-grown"
+  ],
+  "domain": "verba",
+  "also_under": [
+    "urbs"
+  ],
+  "terms": [
+    {
+      "latin": "vernāculus, vernācula, vernāculum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "local, native, home-grown (of produce, breeds and words)",
+      "grammar": "adjective",
+      "evidence": [
+        "Varr. LL 5.77: <span lang=\"la\">aquātilium vocābula partim sunt vernācula partim peregrīna</span> (Lewis &amp; Short)",
+        "Col. 8.2.5: <span lang=\"la\">gallīnae</span> (Lewis &amp; Short)",
+        "M-O s.v. local"
+      ],
+      "comment": "Lewis &amp; Short: “native, domestic, indigenous”, the classical sense, as against <span lang=\"la\">peregrīnus</span>, foreign: local hens and vines, local names. Morgan–Owens gives it for “local”, and <span lang=\"la\">ferculum vernāculum</span> for a local speciality."
+    },
+    {
+      "latin": "vīcīnus, vīcīna, vīcīnum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "nearby, of the neighbourhood",
+      "grammar": "adjective",
+      "register": "vōx ut adjectīvum plērumque poētica: Hor., Verg., Ov.; in ōrātiōne solūtā Liv.",
+      "evidence": [
+        "Hor. Ep. 1.14.24: <span lang=\"la\">nec vīcīna subest vīnum praebēre taberna</span>",
+        "Liv. 1.14.6: <span lang=\"la\">bellum</span> (Lewis &amp; Short)"
+      ],
+      "comment": "The shop or the tavern round the corner. As an adjective mostly poetic (Lewis &amp; Short); in prose <span lang=\"la\">vīcīnus</span> is mostly the noun, a neighbour (see neighbour), and the local people are the <span lang=\"la\">vīcīnitās</span> (see community)."
+    },
+    {
+      "latin": "locālis, locāle",
+      "status": "alternative",
+      "period": "late",
+      "gloss": "of a place, local",
+      "grammar": "adjective, third declension",
+      "evidence": [
+        "Tert. Scap. 3; Amm. 14.7.5 (Lewis &amp; Short)",
+        "Traupman 341: <span lang=\"la\">numerus locālis</span>, a local telephone number"
+      ],
+      "comment": "Late Latin; Traupman uses it for a local call. Classical Latin says <span lang=\"la\">vernāculus</span> or <span lang=\"la\">vīcīnus</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nec vīcīna subest vīnum praebēre taberna quae possit tibi",
+      "english": "and there is no tavern nearby that could serve you wine",
+      "source": "Hor. Ep. 1.14.24–25"
+    },
+    {
+      "latin": "vernācula: lactūca ā lacte, quod holus id habet lac",
+      "english": "native plants: lettuce, lactūca, from lac, milk, because the plant has milk in it",
+      "source": "Varr. LL 5.104"
+    }
+  ],
+  "related": [
+    "community",
+    "neighbour",
+    "local-train"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/vernaculus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vernaculus</a> · <a href=\"https://logeion.uchicago.edu/vicinus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vicinus</a> · <a href=\"https://logeion.uchicago.edu/localis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: localis</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. local.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 341.",
+    "Quotations from the Latinitas loci collections (loci-varro), checked against the editions named there. Horace (Ep. 1.14.24–25) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

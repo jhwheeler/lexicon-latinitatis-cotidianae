@@ -3,7 +3,11 @@
   "english": "I feel better",
   "pos": "phrase",
   "also": [
-    "feel better"
+    "feel better",
+    "better (in health)",
+    "are you better?",
+    "I’m better",
+    "get better"
   ],
   "domain": "corpus",
   "terms": [
@@ -22,13 +26,28 @@
       "evidence": [
         "Traupman 56, 98"
       ]
+    },
+    {
+      "latin": "convalēscō, convalēscere, convaluī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "get better, recover",
+      "grammar": "verb, third conjugation; ex morbō, from an illness",
+      "evidence": [
+        "Cic. Fam. 13.29.4: <span lang=\"la\">ex morbō</span> (Lewis &amp; Short)",
+        "Dolabella in Cic. Fam. 9.9.1: <span lang=\"la\">certum sciō jam convaluisse eam</span>"
+      ],
+      "comment": "Getting better, as against feeling better: <span lang=\"la\">jam convaluisse eam</span>, that she is better now (Dolabella, of Terentia)."
     }
   ],
   "related": [
-    "i-dont-feel-well"
+    "i-dont-feel-well",
+    "better"
   ],
   "sources": [
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): pp. 56, 98."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): pp. 56, 98.",
+    "<a href=\"https://logeion.uchicago.edu/convalesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: convalesco</a>",
+    "Dolabella (Cic. Fam. 9.9.1) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
   ],
   "review": {
     "status": "draft",

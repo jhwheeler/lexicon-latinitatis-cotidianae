@@ -168,6 +168,10 @@ class BuildTests(unittest.TestCase):
         self.assertIn('href="../rulings.html#r-fortasse"', word)
         self.assertIn('<a href="l/fortasse.html" lang="la">fortasse</a>', rulings)
         self.assertIn('<a href="l/caccabus.html"><span class="w-la" lang="la">caccabus</span>', outputs['latin.html'])
+        # Every entry and word page offers a correction, filled in with its address.
+        self.assertIn('issues/new?title=Correction%3A%20perhaps&amp;body=Page%3A%20https%3A//jhwheeler.github.io/'
+                      'lexicon-latinitatis-cotidianae/c/perhaps.html', page)
+        self.assertIn('issues/new?title=Correction%3A%20fortasse', word)
         self.assertIn('url(fonts/lexicon-serif-400.woff2)', outputs['assets/lexicon.css'])
         self.assertIsInstance(outputs['assets/fonts/lexicon-serif-400.woff2'], bytes)
 

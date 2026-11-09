@@ -338,7 +338,7 @@ test('every page is usable on a phone: no sideways scrolling, 44px controls, no 
       await page.goto(pageUrl(path));
       assert.equal(await overflows(), false, `${path} overflows at ${width}px`);
       const small = await page.evaluate(() => [...document.querySelectorAll(
-        '.site-nav a, .theme-toggle, .filter button, .cat-menu > summary, .cat-home, .clear, .page-contents a, .toc a, .hero h1 a, .display-menu > summary, .wlist a, .az-nav a, .az a')]
+        '.site-nav a, .theme-toggle, .filter button, .cat-menu > summary, .cat-home, .clear, .page-contents a, .toc a, .hero h1 a, .display-menu > summary, .wlist a, .az-nav a, .az a, .suggest a')]
         .filter(el => el.getClientRects().length && getComputedStyle(el).visibility !== 'hidden')
         .map(el => [el.textContent.trim().slice(0, 24), Math.round(el.getBoundingClientRect().height)])
         .filter(([, height]) => height < 44));

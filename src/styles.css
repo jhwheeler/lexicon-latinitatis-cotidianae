@@ -318,6 +318,8 @@ span.kind, p.kind:not(:has(a)) { display:block; padding:10px 0; }
 .c-sources p { margin:.4em 0; }
 .c-sources .sc { margin-right:.4em; color:var(--ink); font-variant-caps:small-caps; letter-spacing:.04em; }
 .c-sources a { overflow-wrap:anywhere; }
+.suggest { margin-top:14px !important; font:400 1rem var(--sans); }
+.suggest a { display:inline-flex; align-items:center; min-height:44px; color:var(--soft); }
 
 /* The margin: what to say in the column, why beside it. On a narrow screen the margin
    folds under the block it explains; from 1000px it stands in the right margin. */

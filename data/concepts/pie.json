@@ -1,0 +1,85 @@
+{
+  "id": "pie",
+  "english": "pie",
+  "pos": "noun",
+  "also": [
+    "apple pie",
+    "pumpkin pie"
+  ],
+  "domain": "culina",
+  "terms": [
+    {
+      "latin": "crustum, crustī n.",
+      "status": "recommended",
+      "period": "classical",
+      "evidence": [
+        "Traupman 72"
+      ],
+      "notes": [
+        "crustum"
+      ]
+    },
+    {
+      "latin": "crustum ex mālīs",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "apple pie",
+      "evidence": [
+        "Traupman 70"
+      ]
+    },
+    {
+      "latin": "crustum ex cucurbitā",
+      "status": "alternative",
+      "period": "ours",
+      "gloss": "pumpkin pie",
+      "comment": "Descriptive, after Traupman’s pattern."
+    },
+    {
+      "latin": "crustum cucurbitīnum",
+      "status": "alternative",
+      "period": "ours",
+      "gloss": "pumpkin pie",
+      "comment": "The adjective <strong lang=\"la\">cucurbitīnus</strong> is attested (Plin. <em>NH</em> XV 55, of a pear)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "«Duo crusta faciēmus,» inquit pater, «alterum ex mālīs, alterum ex cucurbitā …»",
+      "english": "“We’ll make two pies,” said Dad, “one apple, the other pumpkin",
+      "source": "Libellus IV, <span lang=\"la\">Diēs Grātulātiōnis</span>"
+    },
+    {
+      "latin": "Mēnsa deinde secunda in ferculō allāta est: crusta, alterum ex mālīs, alterum ex cucurbitā",
+      "english": "Then dessert was brought in on a tray: the pies, one apple, the other pumpkin",
+      "source": "Libellus IV, <span lang=\"la\">Diēs Grātulātiōnis</span>"
+    }
+  ],
+  "notes": {
+    "crustum": {
+      "form": "crustum",
+      "claim": "short u",
+      "against": "Traupman 70, 72 <span lang=\"la\">crūstum</span>",
+      "html": "As in <span lang=\"la\">crusta</span>; Lewis &amp; Short leaves it unmarked."
+    }
+  },
+  "related": [
+    "pie-dish",
+    "vent",
+    "custard-tart"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/crustum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: crustum</a> · <a href=\"https://logeion.uchicago.edu/cucurbitinus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cucurbitinus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: pp. 70, 72, checked against the searchable text of the book on 29 October 2026.",
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+  ],
+  "replaces": [
+    "entry-253",
+    "libelli-253"
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

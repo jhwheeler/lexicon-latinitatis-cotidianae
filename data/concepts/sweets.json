@@ -1,0 +1,99 @@
+{
+  "id": "sweets",
+  "english": "sweets",
+  "pos": "noun",
+  "also": [
+    "candy",
+    "a sweet",
+    "dainties",
+    "treats"
+  ],
+  "domain": "culina",
+  "terms": [
+    {
+      "latin": "dulcia, dulcium n.",
+      "status": "recommended",
+      "period": "classical",
+      "evidence": [
+        "M-O s.v. sweets",
+        "Lewis &amp; Short under <span lang=\"la\">dulcis</span>"
+      ]
+    },
+    {
+      "latin": "cuppēdia, cuppēdiōrum n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "dainties, treats",
+      "evidence": [
+        "Lewis &amp; Short",
+        "Plaut."
+      ],
+      "notes": [
+        "cuppedia"
+      ]
+    },
+    {
+      "latin": "dulciolum, dulciolī n.",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "a sweet",
+      "evidence": [
+        "Traupman 286"
+      ],
+      "comment": "Not in Lewis &amp; Short."
+    },
+    {
+      "latin": "tragēmata",
+      "status": "alternative",
+      "period": "classical",
+      "grammar": "noun, third declension, plural",
+      "evidence": [
+        "M-O",
+        "Plin."
+      ]
+    },
+    {
+      "latin": "cuppēdia saccharīna",
+      "status": "alternative",
+      "period": "modern",
+      "evidence": [
+        "M-O"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Ūnum tantum dulciolum, deinde dentēs pūrgābimus.",
+      "english": "Just one sweet, then we’ll brush your teeth.",
+      "source": "composed"
+    }
+  ],
+  "notes": {
+    "cuppedia": {
+      "form": "cuppēdia, cuppēdiōrum n.",
+      "claim": "neuter plural",
+      "against": "Traupman 70 <span lang=\"la\">cuppēdiae</span>, feminine",
+      "html": "Lewis &amp; Short has the feminine singular only as “daintiness” (Cic. Tusc. 4.26)."
+    }
+  },
+  "related": [
+    "dessert",
+    "chocolate",
+    "cream",
+    "pastry"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.org/dulcis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dulcis</a> · <a href=\"https://logeion.org/cuppedia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cuppedia</a> · <a href=\"https://logeion.org/tragemata\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tragemata</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. sweets, candy.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): pp. 70, 286.",
+    "The example sentences marked “composed” are ours."
+  ],
+  "replaces": [
+    "entry-407"
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

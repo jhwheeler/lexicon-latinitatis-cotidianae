@@ -411,6 +411,214 @@ def fold(text):
     return ''.join(c for c in text if not unicodedata.combining(c))
 
 
+# The search finds a Latin word from any of its forms (piscīnam finds piscīna, dīxit finds dīcō):
+# each term gives the stems its forms are built on, each with a class of endings, and the search
+# (src/search.js) takes an ending off what was typed and looks up what is left. Stems and endings
+# are folded as the search folds what is typed: no macrons, and j as i.
+def _persons(base, passive=False):
+    return [base + e for e in (('r', 'ris', 're', 'tur', 'mur', 'mini', 'ntur') if passive
+                               else ('m', 's', 't', 'mus', 'tis', 'nt'))]
+
+
+def _tense(base):
+    return _persons(base) + _persons(base, passive=True)
+
+
+_A12 = ['us', 'a', 'um', 'i', 'ae', 'o', 'am', 'orum', 'arum', 'is', 'os', 'as', 'e']
+_A3 = ['is', 'e', 'i', 'em', 'es', 'ia', 'ium', 'ibus', 'um', 'a']
+_PF = (['i', 'isti', 'it', 'imus', 'istis', 'erunt', 'ere', 'ero', 'eris', 'erit', 'erimus', 'eritis', 'erint', 'isse']
+       + _persons('era') + _persons('eri') + _persons('isse'))
+
+
+def _participles(vowel):
+    """Present participle, gerund and gerundive: amāns, amantis, amandum, amandus."""
+    return [vowel + 'ns'] + [vowel + 'nt' + e for e in _A3 if e != 'um'] + [vowel + 'nd' + e for e in _A12]
+
+
+ENDINGS = {
+    'n1': ['a', 'ae', 'am', 'arum', 'is', 'as'],
+    'n2': ['us', 'e', 'i', 'o', 'um', 'orum', 'is', 'os'],
+    'n2n': ['um', 'i', 'o', 'a', 'orum', 'is'],
+    'n3': ['is', 'i', 'em', 'e', 'es', 'um', 'ium', 'ibus', 'im'],
+    'n3n': ['is', 'i', 'e', 'a', 'ia', 'um', 'ium', 'ibus'],
+    'n4': ['us', 'ui', 'u', 'um', 'uum', 'ibus', 'ubus'],
+    'n4n': ['u', 'ua', 'us', 'uum', 'ibus'],
+    'n5': ['es', 'ei', 'em', 'e', 'erum', 'ebus'],
+    'a12': _A12,
+    'a3': _A3 + ['iter'],
+    'cmp': ['or', 'us', 'oris', 'ori', 'orem', 'ore', 'ores', 'ora', 'orum', 'oribus'],
+    'v1': (['o', 'as', 'at', 'amus', 'atis', 'ant', 'or', 'aris', 'are', 'atur', 'amur', 'amini', 'antur',
+            'abo', 'abis', 'abit', 'abimus', 'abitis', 'abunt', 'abor', 'aberis', 'abere', 'abitur', 'abimur', 'abimini', 'abuntur',
+            'a', 'ate', 'ato', 'atote', 'anto', 'ator', 'antor', 'ari']
+           + _tense('aba') + _tense('e') + _tense('are') + _participles('a')),
+    'v2': (['eo', 'es', 'et', 'emus', 'etis', 'ent', 'eor', 'eris', 'ere', 'etur', 'emur', 'emini', 'entur',
+            'ebo', 'ebis', 'ebit', 'ebimus', 'ebitis', 'ebunt', 'ebor', 'eberis', 'ebere', 'ebitur', 'ebimur', 'ebimini', 'ebuntur',
+            'e', 'ete', 'eto', 'etote', 'ento', 'etor', 'entor', 'eri']
+           + _tense('eba') + _tense('ea') + _tense('ere') + _participles('e')),
+    'v3': (['o', 'is', 'it', 'imus', 'itis', 'unt', 'or', 'eris', 'ere', 'itur', 'imur', 'imini', 'untur',
+            'es', 'et', 'emus', 'etis', 'ent', 'etur', 'emur', 'emini', 'entur',
+            'e', 'ite', 'ito', 'itote', 'unto', 'itor', 'untor', 'i']
+           + _tense('eba') + _tense('a') + _tense('ere') + _participles('e') + ['und' + e for e in _A12]),
+    'v3i': (['io', 'is', 'it', 'imus', 'itis', 'iunt', 'ior', 'eris', 'ere', 'itur', 'imur', 'imini', 'iuntur',
+             'ies', 'iet', 'iemus', 'ietis', 'ient', 'ieris', 'iere', 'ietur', 'iemur', 'iemini', 'ientur',
+             'e', 'ite', 'ito', 'itote', 'iunto', 'i']
+            + _tense('ieba') + _tense('ia') + _tense('ere') + _participles('ie')),
+    'v4': (['io', 'is', 'it', 'imus', 'itis', 'iunt', 'ior', 'iris', 'ire', 'itur', 'imur', 'imini', 'iuntur',
+            'ies', 'iet', 'iemus', 'ietis', 'ient', 'ieris', 'iere', 'ietur', 'iemur', 'iemini', 'ientur',
+            'i', 'ite', 'ito', 'itote', 'iunto', 'iri']
+           + _tense('ieba') + _tense('ia') + _tense('ire') + _participles('ie')),
+    'pf': _PF,
+    'ppp': _A12 + ['ur' + e for e in _A12] + ['u'],
+    # eō and its compounds (redeō, adeō), on the prefix
+    'ire': (['eo', 'is', 'it', 'imus', 'itis', 'eunt', 'ibo', 'ibis', 'ibit', 'ibimus', 'ibitis', 'ibunt',
+             'i', 'ite', 'ito', 'itote', 'eunto', 'ire', 'iri', 'itur', 'iens', 'eundum', 'eundi', 'eundo',
+             'ii', 'iit', 'iimus', 'isti', 'istis', 'ierunt', 'iere', 'ivi', 'ivit', 'itum']
+            + _persons('iba') + _persons('ea') + _persons('ire') + ['eunt' + e for e in _A3 if e != 'um']
+            + ['i' + e for e in _PF if e.startswith('e')] + _persons('isse') + ['isse'] + ['itur' + e for e in _A12]),
+    # sum and its compounds (absum, adsum, dēsum), on the prefix
+    'esse': (['sum', 'es', 'est', 'sumus', 'estis', 'sunt', 'ero', 'eris', 'erit', 'erimus', 'eritis', 'erunt',
+              'esse', 'este', 'esto', 'estote', 'sunto', 'fore']
+             + _persons('era') + _persons('si') + _persons('esse') + _persons('fore')
+             + ['fu' + e for e in _PF] + ['futur' + e for e in _A12]),
+    # ferō and its compounds (afferō, referō), on the stem with fer
+    'fer': (['', 'o', 's', 't', 'imus', 'tis', 'unt', 'or', 'ris', 're', 'tur', 'imur', 'imini', 'untur',
+             'es', 'et', 'emus', 'etis', 'ent', 'eris', 'ere', 'etur', 'emur', 'emini', 'entur', 'te', 'to', 'tote', 'unto', 'ri']
+            + _tense('eba') + _tense('a') + _tense('re') + _participles('e')),
+    # a whole form of an irregular verb
+    'x': [''],
+}
+_IRREGULAR = {
+    'possum': (['possum', 'potes', 'potest', 'possumus', 'potestis', 'possunt', 'posse', 'potens', 'potentis']
+               + _persons('potera') + ['potero', 'poteris', 'poterit', 'poterimus', 'poteritis', 'poterunt']
+               + _persons('possi') + _persons('posse'), 'potu'),
+    'volo': (['volo', 'vis', 'vult', 'volt', 'volumus', 'vultis', 'voltis', 'volunt', 'velle', 'volens', 'volentis',
+              'volam', 'voles', 'volet', 'volemus', 'voletis', 'volent'] + _persons('voleba') + _persons('veli') + _persons('velle'), 'volu'),
+    'nolo': (['nolo', 'nolumus', 'nolunt', 'nolle', 'noli', 'nolite', 'nolito', 'nolens', 'nolam', 'noles', 'nolet', 'nolemus',
+              'noletis', 'nolent'] + _persons('noleba') + _persons('noli') + _persons('nolle'), 'nolu'),
+    'malo': (['malo', 'mavis', 'mavult', 'malumus', 'mavultis', 'malunt', 'malle', 'malam', 'males', 'malet', 'malemus',
+              'maletis', 'malent'] + _persons('maleba') + _persons('mali') + _persons('malle'), 'malu'),
+    'fio': (['fio', 'fis', 'fit', 'fimus', 'fitis', 'fiunt', 'fieri', 'fi', 'fite', 'fies', 'fiet', 'fiemus', 'fietis', 'fient']
+            + _persons('fieba') + _persons('fia') + _persons('fiere'), None),
+}
+
+
+def search_fold(text):
+    """Folded as the search folds what is typed: also j as i."""
+    return fold(text).replace('j', 'i')
+
+
+def _verb_stems(parts):
+    """Stems of a verb from its principal parts: dīcō, dīcere, dīxī, dictum; loquor, loquī, locūtus sum."""
+    head, inf = parts[0], parts[1]
+    h, f = search_fold(head), search_fold(inf)
+    cls = stem = None
+    if h in _IRREGULAR:
+        forms, perfect = _IRREGULAR[h]
+        stems = [('x', form) for form in forms] + ([('pf', perfect)] if perfect else [])
+    elif h.endswith('sum') and f.endswith('esse'):
+        prefix = h[:-3]                         # absum, abesse; prōsum, prōdesse
+        stems = [('esse', prefix)] + ([('esse', prefix + 'd')] if prefix in ('pro', 're') else [])
+    elif h.endswith('eo') and f == h[:-2] + 'ire':
+        stems = [('ire', h[:-2])]               # eō, īre; redeō, redīre
+    elif f.endswith('ferre'):
+        stems = [('fer', f[:-2])]               # ferō, ferre; afferō, afferre
+    else:
+        endings = (('āre', 'v1'), ('ārī', 'v1'), ('ēre', 'v2'), ('ērī', 'v2'), ('īre', 'v4'), ('īrī', 'v4'), ('ere', 'v3'))
+        cls, stem = next(((c, inf[:-len(e)]) for e, c in endings if inf.endswith(e)), (None, None))
+        if cls is None and head.endswith('or') and inf.endswith('ī'):
+            cls, stem = 'v3', inf[:-1]          # loquor, loquī
+        if cls is None:
+            return []
+        if cls == 'v3' and h.endswith(('io', 'ior')):
+            cls = 'v3i'                         # capiō, capere; patior, patī
+        stem = search_fold(stem)
+        stems = [(cls, stem)]
+    regular = cls in ('v1', 'v4')
+    perfect = next((p for p in parts[2:3] if p.endswith('ī')), None)
+    if perfect:
+        stems.append(('pf', search_fold(perfect)[:-1]))
+    elif regular and not head.endswith('or'):     # the regular perfect: amāvī; audīvī, audiī
+        stems += [('pf', stem + 'av')] if cls == 'v1' else [('pf', stem + 'iv'), ('pf', stem + 'i')]
+    supine = next((p for p in parts[2:] if p.endswith((' sum', 'um', 'ūrus'))), None)
+    if supine:
+        word = search_fold(supine.removesuffix(' sum'))
+        stems.append(('ppp', word[:-4] if word.endswith('urus') else word[:-2]))
+    elif regular:
+        stems.append(('ppp', stem + ('at' if cls == 'v1' else 'it')))
+    return list(dict.fromkeys(stems))
+
+
+_NOUN_SEARCH = re.compile(r'^(?P<head>[^\s,]+), (?P<gen>[^\s,]+)(?: or [^\s,]+)? (?P<gender>[mfnc])\.'
+                          r'(?:\s*(?:/|or)\s*[mfnc]\.)?(?: pl\.)?(?:\s.*)?$')
+
+
+def search_stems(term):
+    """The stems the search reaches a term by: [class, stem] pairs. A term that is a phrase, or
+    whose form the parser doesn't know, has none; its words are still found as written."""
+    latin = re.sub(r'\s*\([^)]*\)', '', term['latin']).strip()
+    if ';' in latin:                            # magister, magistrī m.; magistra, magistrae f.
+        stems = [s for chunk in latin.split(';') if not chunk.strip().startswith('plural')
+                 for s in search_stems({'latin': chunk.strip()})]
+        return [list(s) for s in dict.fromkeys(map(tuple, stems))]
+    parts = [re.sub(r'\s*\+.*$', '', p).strip() for p in latin.split(',')]   # canō, canere, cecinī + abl.
+    head = parts[0]
+    if ' ' in head or not head:
+        return []
+    if len(parts) >= 2 and re.search(r'[aei]t$', head) and parts[1].endswith('re'):
+        # an impersonal verb: tonat, tonāre, tonuit; fulget, fulgēre, fulsit
+        stems = search_stems({'latin': ', '.join([head[:-1] + ('ō' if head.endswith('at') else 'eō' if parts[1].endswith('ēre') else 'ō'),
+                                                  parts[1]])})
+        return stems + [['pf', search_fold(p)[:-2]] for p in parts[2:3] if p.endswith('it')]
+    if len(parts) == 2 and head.endswith('ī') and parts[1].endswith('isse'):
+        return [['pf', search_fold(head)[:-1]]]  # ōdī, ōdisse
+    match = _NOUN_SEARCH.match(', '.join(parts))
+    if match:
+        gen, neuter = match['gen'], match['gender'] == 'n'
+        if gen.startswith('-'):                 # vertitōrium, -ī n.
+            gen = head[:-2] + gen[1:] if head.endswith(('us', 'um')) else head + gen[1:]
+        for ending, cut, cls in (('ēī', 2, 'n5'), ('eī', 2, 'n5'), ('ārum', 4, 'n1'), ('ae', 2, 'n1'), ('ōrum', 4, 'n2'),
+                                 ('uum', 3, 'n4'), ('ūs', 2, 'n4'), ('is', 2, 'n3'), ('ium', 3, 'n3'), ('um', 2, 'n3'), ('ī', 1, 'n2')):
+            if gen.endswith(ending):
+                if cls == 'n5' and not head.endswith('ēs'):
+                    cut, cls = 1, 'n2'          # malleus, malleī
+                if neuter and cls in ('n2', 'n3', 'n4'):
+                    cls += 'n'
+                return [[cls, search_fold(gen[:-cut])]]
+        return []
+    if len(parts) >= 2 and re.search(r'(ō|or|sum)$', head) and re.search(r'(re|rī|ī|sse|lle)$', parts[1]):
+        return [list(s) for s in _verb_stems(parts)]
+    folded = [search_fold(p) for p in parts]
+    if len(parts) == 3:
+        if folded[1:] == ['-a', '-um'] and folded[0].endswith('us'):
+            stem = folded[0][:-2]
+        elif folded[1].endswith('a') and folded[2] == folded[1][:-1] + 'um':
+            stem = folded[1][:-1]               # tepidus, tepida, tepidum; piger, pigra, pigrum
+        elif folded[1].endswith('is') and folded[2] == folded[1][:-2] + 'e':
+            stem = folded[1][:-2]               # ācer, ācris, ācre
+            return [['a3', stem], ['cmp', stem + 'i'], ['a12', folded[0] + 'rim']]
+        else:
+            return []
+        superlative = folded[0] + 'rim' if folded[0].endswith('er') else stem + 'issim'
+        return [['a12', stem], ['cmp', stem + 'i'], ['a12', superlative]]
+    if len(parts) == 2 and folded[0].endswith('is') and folded[1] == folded[0][:-2] + 'e':
+        stem = folded[0][:-2]                   # grandis, grande
+        return [['a3', stem], ['cmp', stem + 'i'], ['a12', stem + 'issim']]
+    if len(parts) == 2 and folded[1].endswith('is') and folded[0][:2] == folded[1][:2]:
+        stem = folded[1][:-2]                   # edāx, edācis
+        return [['a3', stem], ['cmp', stem + 'i'], ['a12', stem + 'issim']]
+    if len(parts) == 1:
+        word = folded[0]
+        for ending, cls in (('are', 'v1'), ('ire', 'v4'), ('us', 'a12'), ('um', 'n2n'), ('a', 'n1'), ('at', 'v1'), ('et', 'v2'), ('it', 'v3')):
+            if word.endswith(ending) and len(word) > len(ending) + 1:
+                if ending == 'are' and not head.endswith('āre'):
+                    continue
+                return [[cls, word[:-len(ending)]]]
+        for ending, cls in (('ēre', 'v2'), ('ere', 'v3')):
+            if head.endswith(ending):
+                return [[cls, word[:-3]]]
+    return []
+
+
 def word_index(records):
     """Latin words that head a one-word term, each with the terms it heads, the longer terms
     it begins or appears in, and a unique page slug ("caccabus" → l/caccabus.html)."""
@@ -1009,9 +1217,13 @@ def search_data(site):
                 lines = [['d', t['latin'], t.get('gloss', ''), plain(term_meta(t))] for t in ordered_terms(record)]
                 lines += [['e', p['latin'], p['english'], plain(p['source'])] for p in record.get('phrases', [])]
                 lines += [['n', plain(note_html(record['notes'][n]))] for n in note_numbers(record)]
+                # Each term's head and the stems its forms are built on: [head, class, stem, class, stem…]
+                forms = [[term_head(t['latin'])] + [part for pair in stems for part in pair]
+                         for t in ordered_terms(record) if (stems := search_stems(t))]
                 items.append({'id': f'c-{record["id"]}', 'u': path, 'k': key, 'en': english, 'pos': pos,
-                              'al': ' '.join(record.get('also', [])), 'l': lines,
-                              **({'x': record['also_under']} if record.get('also_under') else {})})
+                              'al': '; '.join(record.get('also', [])), 'l': lines,
+                              **({'x': record['also_under']} if record.get('also_under') else {}),
+                              **({'f': forms} if forms else {})})
             else:
                 entry, lines = item, []
                 for block in entry['blocks']:
@@ -1023,7 +1235,7 @@ def search_data(site):
                         lines.append(['n', plain(paragraph)])
                 items.append({'id': entry['id'], 'u': path, 'k': key, 'en': english, 'la': latin,
                               'al': entry.get('keywords', ''), 'l': lines})
-    data = {'categories': {key: c['latin'] for key, c in site['categories'].items()}, 'items': items}
+    data = {'categories': {key: c['latin'] for key, c in site['categories'].items()}, 'endings': ENDINGS, 'items': items}
     return 'window.lexiconData = ' + json.dumps(data, ensure_ascii=False, separators=(',', ':')) + ';\n'
 
 

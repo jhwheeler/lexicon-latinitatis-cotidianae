@@ -1,0 +1,91 @@
+{
+  "id": "witness",
+  "english": "witness",
+  "pos": "noun",
+  "also": [
+    "eyewitness",
+    "witnesses",
+    "testify",
+    "bear witness"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "testis, testis m./f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "witness",
+      "grammar": "noun, third declension",
+      "evidence": [
+        "Plaut. <em>Truc.</em> 489",
+        "Cic. <em>Phil.</em> 2.8: <span lang=\"la\">quō mē teste convincēs?</span> (Lewis &amp; Short)",
+        "Traupman 192, 197"
+      ],
+      "comment": "To call a witness, <span lang=\"la\">testem citāre</span> (Cic. <em>Verr.</em> 2.2.146; M-O s.v. subpoena); to come forward as a witness, <span lang=\"la\">testis prōdīre</span> (Traupman 197)."
+    },
+    {
+      "latin": "oculātus testis",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "eyewitness",
+      "grammar": "phrase: oculātus, oculāta, oculātum (having eyes) with testis",
+      "evidence": [
+        "Plaut. <em>Truc.</em> 489",
+        "Traupman 192, 195",
+        "M-O s.v. eyewitness"
+      ],
+      "comment": "Plautus’s phrase, set against <span lang=\"la\">aurītī</span>, those who have only heard."
+    },
+    {
+      "latin": "arbiter, arbitrī m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "an onlooker: someone present who sees or overhears",
+      "evidence": [
+        "Cic. <em>Att.</em> 15.16a",
+        "Cic. <em>Off.</em> 3.112: <span lang=\"la\">remōtīs arbitrīs</span> (Lewis &amp; Short)"
+      ],
+      "comment": "The witness who happens to be there, not one called to court: <span lang=\"la\">remōtīs arbitrīs</span>, with no one by."
+    },
+    {
+      "latin": "testimōnium dīcere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "testify, give testimony",
+      "grammar": "phrase: testimōnium, testimōniī n. (testimony) with dīcere",
+      "evidence": [
+        "Cic. <em>Rosc. Am.</em> 102: <span lang=\"la\">testimōnium in aliquem dīcere</span> (Lewis &amp; Short)",
+        "Traupman 195"
+      ],
+      "comment": "Against someone, <span lang=\"la\">in aliquem</span>; for someone, <span lang=\"la\">prō aliquō</span> (Traupman 197)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "plūris est oculātus testis ūnus quam aurītī decem",
+      "english": "one eyewitness is worth more than ten who have only heard",
+      "source": "Plaut. Truc. 489"
+    },
+    {
+      "latin": "narrō tibi, haec loca venusta sunt, abdita certē et, sī quid scrībere velīs, ab arbitrīs lībera",
+      "english": "I tell you, this place is lovely: hidden, certainly, and free of onlookers, if you want to write",
+      "source": "Cic. Att. 15.16a"
+    }
+  ],
+  "related": [
+    "trial-law",
+    "court-law"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/testis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: testis</a> · <a href=\"https://logeion.uchicago.edu/oculatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: oculatus</a> · <a href=\"https://logeion.uchicago.edu/arbiter\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: arbiter</a> · <a href=\"https://logeion.uchicago.edu/testimonium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: testimonium</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 192, 195, 197, checked against the searchable text of the book (9 November 2026).",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. eyewitness; subpoena.",
+    "Quotations from the Latinitas loci collections (loci-cicero-epistulae), checked against the editions named there.",
+    "Plautus checked against the Latin Library text (<a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">CLTK mirror</a>, 9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

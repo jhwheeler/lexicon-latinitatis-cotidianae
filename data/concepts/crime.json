@@ -1,0 +1,101 @@
+{
+  "id": "crime",
+  "english": "crime",
+  "pos": "noun",
+  "also": [
+    "crimes",
+    "offence",
+    "offense",
+    "commit a crime",
+    "wrongdoing"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "scelus, sceleris n.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a crime, a wicked deed",
+      "evidence": [
+        "Cic. <em>Verr.</em> 2.5.170",
+        "Cic. <em>Cat.</em> 2.27",
+        "Traupman 194"
+      ],
+      "comment": "The strongest general word for a wicked act (Lewis &amp; Short). To commit a crime, <span lang=\"la\">scelus committere</span> (Traupman 194) or <span lang=\"la\">admittere</span> (Cic. <em>Att.</em> 9.10.3, Lewis &amp; Short)."
+    },
+    {
+      "latin": "facinus, facinoris n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a misdeed, a crime; in comedy also simply a deed",
+      "evidence": [
+        "Cic. <em>Verr.</em> 2.5.170",
+        "Caes. <em>BG</em> 7.38.8: <span lang=\"la\">nefāriō facinore admissō</span> (Lewis &amp; Short)",
+        "Traupman 194"
+      ]
+    },
+    {
+      "latin": "maleficium, maleficiī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "an offence, a crime",
+      "evidence": [
+        "Cic. <em>Caec.</em> 6",
+        "Cic. <em>Rosc. Am.</em> 62: <span lang=\"la\">maleficium committere</span> (Lewis &amp; Short)"
+      ],
+      "comment": "The law’s word for a criminal act, as in Cicero’s <span lang=\"la\">pūniendōrum maleficiōrum causā</span>."
+    },
+    {
+      "latin": "dēlictum, dēlictī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a fault, a lesser offence",
+      "evidence": [
+        "Cic. <em>Off.</em> 1.145",
+        "Traupman 196: <span lang=\"la\">dēlicta</span>, offences"
+      ]
+    },
+    {
+      "latin": "crīmen, crīminis n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a crime (mostly in poets and later prose); classically the charge",
+      "evidence": [
+        "Lucr. 3.49 (Lewis &amp; Short)",
+        "Liv. 40.12.10 (Lewis &amp; Short)",
+        "Traupman 194"
+      ],
+      "comment": "Above all the accusation (see charge); the sense ‘crime’ is rare in prose before Augustus (Lewis &amp; Short). Traupman: “more often means merely the charge”."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Facinus est vincīre cīvem Rōmānum, scelus verberāre, prope parricīdium necāre",
+      "english": "It is a crime to bind a Roman citizen, a wickedness to flog him, almost parricide to kill him",
+      "source": "Cic. Verr. 2.5.170"
+    },
+    {
+      "latin": "ex eā cāritāte quae est inter nātōs et parentēs, quae dirimī nisi dētestābilī scelere nōn potest",
+      "english": "the love between children and parents, which nothing but a hateful crime can break",
+      "source": "Cic. Amic. 27"
+    }
+  ],
+  "related": [
+    "criminal",
+    "punishment",
+    "steal",
+    "law",
+    "charge-accusation"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/scelus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: scelus</a> · <a href=\"https://logeion.uchicago.edu/facinus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: facinus</a> · <a href=\"https://logeion.uchicago.edu/maleficium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: maleficium</a> · <a href=\"https://logeion.uchicago.edu/delictum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: delictum</a> · <a href=\"https://logeion.uchicago.edu/crimen\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: crimen</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 194, 196, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-cicero-philosophica), checked against the editions named there.",
+    "Cicero checked against the Latin Library text (<a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">CLTK mirror</a>, 9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

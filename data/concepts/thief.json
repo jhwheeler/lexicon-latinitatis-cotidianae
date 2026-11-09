@@ -1,0 +1,85 @@
+{
+  "id": "thief",
+  "english": "thief",
+  "pos": "noun",
+  "also": [
+    "thieves",
+    "robber",
+    "burglar"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "fūr, fūris m./f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "thief",
+      "grammar": "noun, third declension",
+      "evidence": [
+        "Cic. <em>Rosc. Am.</em> 56 (Lewis &amp; Short)",
+        "Hor. <em>S.</em> 1.3.106 (Lewis &amp; Short)",
+        "Traupman 197"
+      ],
+      "comment": "The thief who steals by stealth; in comedy also a term of abuse, ‘you thief!’ (Lewis &amp; Short)."
+    },
+    {
+      "latin": "latrō, latrōnis m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "robber, highwayman, bandit",
+      "evidence": [
+        "Hor. <em>S.</em> 1.3.106: <span lang=\"la\">nē quis fūr esset, neu latrō</span> (Lewis &amp; Short)",
+        "Phaedr. 5.2.1",
+        "Traupman 196"
+      ],
+      "comment": "One who robs by force, on the road or in a band; in Plautus still a hired soldier (Lewis &amp; Short)."
+    },
+    {
+      "latin": "fūrunculus, fūrunculī m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a petty thief, pilferer",
+      "evidence": [
+        "Cic. <em>Pis.</em> 66 (Lewis &amp; Short)"
+      ],
+      "comment": "The diminutive of <span lang=\"la\">fūr</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nocturnus cum fūr pānem mīsisset canī, objectō temptāns an cibō posset capī",
+      "english": "when a thief in the night threw a dog some bread, trying whether the food would win him over",
+      "source": "Phaedr. 1.23.3–4"
+    },
+    {
+      "latin": "arca, quod arcēbantur fūrēs ab eā clausā",
+      "english": "a chest (arca), because when it was shut thieves were kept off (arcēbantur) from it",
+      "source": "Varr. LL 5.128",
+      "notes": [
+        "arca"
+      ]
+    }
+  ],
+  "notes": {
+    "arca": {
+      "html": "Varro’s etymology is right: de Vaan 50–51, s.v. <span lang=\"la\">arca</span>, derives the noun from the root of <span lang=\"la\">arceō</span>, ‘to contain, keep out’."
+    }
+  },
+  "related": [
+    "steal",
+    "crime",
+    "prison",
+    "police"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/fur\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fur</a> · <a href=\"https://logeion.uchicago.edu/latro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: latro</a> · <a href=\"https://logeion.uchicago.edu/furunculus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: furunculus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 196, 197, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-phaedrus, loci-varro), checked against the editions named there.",
+    "Michiel de Vaan, <em>Etymological Dictionary of Latin and the other Italic Languages</em> (2008), pp. 50–51."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "id": "lawyer",
+  "english": "lawyer",
+  "pos": "noun",
+  "also": [
+    "attorney",
+    "solicitor",
+    "barrister",
+    "advocate",
+    "counsel",
+    "defence lawyer",
+    "defense lawyer"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "jūriscōnsultus, jūriscōnsultī m.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "lawyer, legal expert",
+      "evidence": [
+        "Cic. <em>de Or.</em> 1.212",
+        "Cic. <em>Mur.</em> 25 (Lewis &amp; Short)",
+        "Traupman 192, 196",
+        "Levi–Bini p. 37"
+      ],
+      "comment": "One skilled in the law, who gave opinions, pleaded and drew up documents (Cic. <em>de Or.</em> 1.212). Also written as two words, <span lang=\"la\">jūris cōnsultus</span>."
+    },
+    {
+      "latin": "advocātus, advocātī m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "advocate: the lawyer who speaks for someone in court",
+      "evidence": [
+        "Quint. 12.1.13 (Lewis &amp; Short)",
+        "Plin. <em>Ep.</em> 7.22 (Lewis &amp; Short)",
+        "Traupman 196"
+      ],
+      "comment": "In Cicero’s day a friend called in to stand by a party with advice; from Quintilian on, the pleader himself (Lewis &amp; Short). Traupman’s lawyer for the defence."
+    },
+    {
+      "latin": "patrōnus, patrōnī m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the advocate who pleads a case",
+      "evidence": [
+        "Cic. <em>Off.</em> 2.51",
+        "Cic. <em>Rosc. Am.</em> 5: <span lang=\"la\">huic causae patrōnus exstitī</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Cicero’s word for the speaker who defends a client in court; also a patron or protector."
+    },
+    {
+      "latin": "causidicus, causidicī m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "pleader",
+      "evidence": [
+        "Cic. <em>de Or.</em> 1.202 (Lewis &amp; Short)",
+        "Quint. 12.1.25 (Lewis &amp; Short)",
+        "Traupman 196"
+      ],
+      "comment": "Often contemptuous: the mere pleader, as against the true orator (Lewis &amp; Short). Traupman’s trial lawyer."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Sīn autem quaererētur quisnam jūris cōnsultus vērē nōminārētur, eum dīcerem, quī lēgum et cōnsuētūdinis ejus, quā prīvātī in cīvitāte ūterentur, et ad respondendum et ad agendum et ad cavendum perītus esset",
+      "english": "But if it were asked who truly deserves the name of lawyer, I would say the man who is skilled in the laws and in the customs that private citizens follow in the state, at giving opinions, at pleading and at drawing up documents",
+      "source": "Cic. de Or. 1.212"
+    },
+    {
+      "latin": "Jūdicis est semper in causīs vērum sequī, patrōnī nōn numquam vērī simile, etiam sī minus sit vērum, dēfendere",
+      "english": "It is always the judge’s part in a trial to follow the truth; the advocate’s, sometimes, to defend what looks like the truth, even if it is less true",
+      "source": "Cic. Off. 2.51"
+    }
+  ],
+  "related": [
+    "court-law",
+    "trial-law",
+    "case-law",
+    "law"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/jurisconsultus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: jurisconsultus</a> · <a href=\"https://logeion.uchicago.edu/advocatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: advocatus</a> · <a href=\"https://logeion.uchicago.edu/patronus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: patronus</a> · <a href=\"https://logeion.uchicago.edu/causidicus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: causidicus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 192, 196, checked against the searchable text of the book (9 November 2026).",
+    "Enrico Levi and Arturo Bini, <em>Il latino come lingua viva</em> (1937), p. 37, s.v. legale (avvocato).",
+    "Cicero checked against the Latin Library text (<a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">CLTK mirror</a>, 9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

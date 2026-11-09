@@ -1,0 +1,52 @@
+{
+  "id": "operate-surgery",
+  "english": "operate",
+  "sense": "on a patient",
+  "pos": "verb",
+  "also": [
+    "operate on",
+    "be operated on",
+    "have an operation"
+  ],
+  "domain": "corpus",
+  "terms": [
+    {
+      "latin": "secō, secāre, secuī, sectum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "operate on (literally, cut)",
+      "evidence": [
+        "Cic. Tusc. 2.53: <span lang=\"la\">C. Marius … cum secārētur</span>",
+        "Traupman 169, 354, 388: <span lang=\"la\">chīrurgus eam secuit</span>, the surgeon operated on her"
+      ],
+      "comment": "To have an operation is to be cut: <span lang=\"la\">secārī</span>. The surgeon is <span lang=\"la\">chīrurgus</span> (Traupman 169; Greek χειρουργός)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "C. Marius, rūsticānus vir, sed plānē vir, cum secārētur, ut suprā dīxī, prīncipiō vetuit sē alligārī",
+      "english": "Gaius Marius, a countryman but every inch a man, when he was being operated on, as I said above, at first refused to be tied down",
+      "source": "Cic. Tusc. 2.53"
+    },
+    {
+      "latin": "nec quisquam ante Marium solūtus dīcitur esse sectus",
+      "english": "and no one before Marius is said to have been operated on without being tied down",
+      "source": "Cic. Tusc. 2.53"
+    }
+  ],
+  "related": [
+    "operation-surgery",
+    "doctor",
+    "hospital"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/seco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: seco</a> · <a href=\"https://logeion.uchicago.edu/chirurgus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: chirurgus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 169, 354, 388, checked against the searchable text of the book (9 November 2026).",
+    "Cicero, <em>Tusculans</em> 2, checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> and the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

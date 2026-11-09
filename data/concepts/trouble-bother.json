@@ -1,0 +1,91 @@
+{
+  "id": "trouble-bother",
+  "english": "trouble",
+  "sense": "bother, inconvenience",
+  "pos": [
+    "noun",
+    "verb"
+  ],
+  "also": [
+    "bother",
+    "sorry to trouble you",
+    "if it’s no trouble",
+    "no trouble",
+    "nuisance",
+    "be a nuisance",
+    "stop bothering me!",
+    "inconvenience"
+  ],
+  "also_under": [
+    "sermo"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "molestia, molestiae f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "trouble, bother, annoyance",
+      "evidence": [
+        "Cic. Fam. 9.25.3: <span lang=\"la\">molestiā Fadium līberā</span>",
+        "Traupman 398: <span lang=\"la\">molestiam gravem alicui exhibēre</span>, to cause someone big trouble"
+      ]
+    },
+    {
+      "latin": "molestus esse",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "be a nuisance, trouble (someone)",
+      "grammar": "phrase: molestus agreeing with the subject, with the dative of the person troubled",
+      "evidence": [
+        "Cic. Att. 7.7.3: <span lang=\"la\">nē molestus familiae veniam</span>",
+        "Plaut. Men. 627: <span lang=\"la\">Potin' ut mihi molestus nē sīs?</span>"
+      ],
+      "comment": "“Stop bothering me!” is comic: <span lang=\"la\">Molestus nē sīs!</span> (Plaut. Most. 74, 601; Men. 250), <span lang=\"la\">Potin' ut mihi molestus nē sīs?</span>"
+    },
+    {
+      "latin": "nisi molestum est",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "if it’s no trouble, if you don’t mind",
+      "grammar": "phrase, with a request (velim and the subjunctive)",
+      "evidence": [
+        "Cic. Rep. 1.46: <span lang=\"la\">nisi molestum est, … velim scīre</span>",
+        "Cic. Acad. 1.14: <span lang=\"la\">renovārī ā tē, nisi molestum est, velim</span>"
+      ],
+      "comment": "Also <span lang=\"la\">ubi molestum nōn erit</span>, when it’s no trouble (Ter. Eun. 483); Traupman (p. 110) gives <span lang=\"la\">sī grave nōn erit</span>. Without any trouble: <span lang=\"la\">nūllō negōtiō</span> (see problem)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "sed tamen, nisi molestum est, ex tribus istīs modīs rērum pūblicārum velim scīre quod optimum jūdicēs",
+      "english": "but still, if it’s no trouble, I should like to know which of those three kinds of state you think best",
+      "source": "Cic. Rep. 1.46"
+    },
+    {
+      "latin": "nōlō eō diē in Albānum venīre, nē molestus familiae veniam",
+      "english": "I don’t want to come to the Alban villa on that day, so as not to be a nuisance to the household",
+      "source": "Cic. Att. 7.7.3"
+    },
+    {
+      "latin": "Potin' ut mihi molestus nē sīs? num tē appellō?",
+      "english": "Can’t you stop bothering me? I’m not talking to you, am I?",
+      "source": "Plaut. Men. 627"
+    }
+  ],
+  "related": [
+    "problem",
+    "trouble-misfortune",
+    "please"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/molestia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: molestia</a> · <a href=\"https://logeion.uchicago.edu/molestus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: molestus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 110, 398, checked against the searchable text of the book (9 November 2026).",
+    "Cicero, <em>De re publica</em> 1, <em>Academica</em> 1 and the letters (Purser); Plautus, <em>Menaechmi</em> and <em>Mostellaria</em> (Leo, cited by his lines); Terence, <em>Eunuchus</em>, checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> and the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

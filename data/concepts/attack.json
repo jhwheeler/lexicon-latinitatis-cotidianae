@@ -1,0 +1,106 @@
+{
+  "id": "attack",
+  "english": "attack",
+  "sense": "with force",
+  "pos": [
+    "verb",
+    "noun"
+  ],
+  "also": [
+    "an attack",
+    "assault",
+    "set upon",
+    "go for",
+    "charge (in battle)",
+    "be attacked"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "adorior, adorīrī, adortus sum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "attack, fall upon",
+      "grammar": "verb, fourth conjugation, deponent, transitive",
+      "evidence": [
+        "Liv. 21.58.3: <span lang=\"la\">adeō atrōx adorta tempestās est</span>",
+        "Traupman 274"
+      ],
+      "comment": "Also of storms that fall upon someone."
+    },
+    {
+      "latin": "aggredior, aggredī, aggressus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "attack; set about",
+      "evidence": [
+        "Caes. BG 1.12.3: <span lang=\"la\">eōs impedītōs et inopīnantēs adgressus</span>"
+      ],
+      "comment": "Properly “go up to”; also of approaching a person or tackling a task (see approach)."
+    },
+    {
+      "latin": "invādō, invādere, invāsī, invāsum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "rush at, fall on",
+      "evidence": [
+        "Sen. Ep. 104.6: <span lang=\"la\">in pāscuum ēmissus cibum meum invāsī</span>"
+      ]
+    },
+    {
+      "latin": "oppugnō, oppugnāre, oppugnāvī, oppugnātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "attack, storm (a town, a camp)",
+      "evidence": [
+        "Traupman 188: <span lang=\"la\">oppidum oppugnāre</span>, to storm a town",
+        "Traupman 274"
+      ]
+    },
+    {
+      "latin": "impetus, impetūs m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "an attack, a charge",
+      "evidence": [
+        "Liv. 2.10.4: <span lang=\"la\">sē impetum hostium … exceptūrum</span>",
+        "Traupman 274"
+      ],
+      "comment": "To make an attack on: <span lang=\"la\">impetum facere in</span> with the accusative. An attack of illness is also <span lang=\"la\">impetus</span> (Traupman 62, 274)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Eōs impedītōs et inopīnantēs adgressus magnam partem eōrum concīdit",
+      "english": "He attacked them while they were encumbered and off their guard, and cut down a great part of them",
+      "source": "Caes. BG 1.12.3"
+    },
+    {
+      "latin": "adeō atrōx adorta tempestās est, ut Alpium prope foeditātem superāverit",
+      "english": "so fierce a storm fell on them that it almost outdid the horrors of the Alps",
+      "source": "Liv. 21.58.3"
+    },
+    {
+      "latin": "sē impetum hostium, quantum corpore ūnō posset obsistī, exceptūrum",
+      "english": "he would take the enemy’s attack himself, as far as one body could hold it back",
+      "source": "Liv. 2.10.4"
+    }
+  ],
+  "related": [
+    "attack-criticize",
+    "enemy",
+    "war",
+    "approach"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/adorior\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: adorior</a> · <a href=\"https://logeion.uchicago.edu/aggredior\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aggredior</a> · <a href=\"https://logeion.uchicago.edu/invado\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: invado</a> · <a href=\"https://logeion.uchicago.edu/oppugno\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: oppugno</a> · <a href=\"https://logeion.uchicago.edu/impetus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: impetus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 62, 188, 274, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-livius, loci-seneca-epistulae), checked against the editions named there.",
+    "Caesar, <em>Gallic War</em> 1, checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> and the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

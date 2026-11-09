@@ -1,0 +1,113 @@
+{
+  "id": "lack",
+  "english": "lack",
+  "pos": [
+    "verb",
+    "noun"
+  ],
+  "also": [
+    "be lacking",
+    "be without",
+    "do without",
+    "go without",
+    "shortage",
+    "lack of",
+    "be missing",
+    "be short of"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "careō, carēre, caruī, caritūrus",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "lack, be without, go without",
+      "grammar": "verb, second conjugation: with the ablative",
+      "evidence": [
+        "Ov. Met. 6.354: <span lang=\"la\">caret ōs ūmōre loquentis</span>",
+        "Liv. 3.29.2: <span lang=\"la\">carēbis … praedae parte, mīles</span>"
+      ],
+      "comment": "Cicero defines it: <span lang=\"la\">carēre igitur hoc significat: egēre eō quod habēre velīs</span>, to lack means to be without what you would like to have (Tusc. 1.88). Also of what one is well without: <span lang=\"la\">caret perīclō</span>, he runs no risk (Publil. Sent. C 32)."
+    },
+    {
+      "latin": "inopia, inopiae f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "lack, shortage, want",
+      "evidence": [
+        "Liv. 5.47.4: <span lang=\"la\">in summā inopiā cibī</span>",
+        "Publil. Sent. I 7: <span lang=\"la\">inopiae dēsunt multa</span>"
+      ],
+      "comment": "The noun: a lack of something, with the genitive; also poverty."
+    },
+    {
+      "latin": "dēsum, deesse, dēfuī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "be lacking, be missing",
+      "grammar": "verb, irregular: what is lacking is the subject, the person who lacks it in the dative",
+      "evidence": [
+        "Publil. Sent. S 31: <span lang=\"la\">semper cōnsilium tunc deest, cum opus est maximē</span>",
+        "Traupman 162: <span lang=\"la\">quod tibi plānē deest</span>"
+      ]
+    },
+    {
+      "latin": "dēficiō, dēficere, dēfēcī, dēfectum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "run short, fail (someone)",
+      "evidence": [
+        "Hor. Ep. 1.11.30: <span lang=\"la\">animus sī tē nōn dēficit aequus</span>"
+      ],
+      "comment": "Of what gives out: strength, time, supplies, courage."
+    },
+    {
+      "latin": "egeō, egēre, eguī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "be in want of, need",
+      "grammar": "verb, second conjugation: with the ablative (or the genitive)",
+      "evidence": [
+        "Gell. 13.24.1: <span lang=\"la\">sī nōn est, egeō</span>"
+      ],
+      "comment": "Lacking what one needs; see require."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Semper cōnsilium tunc deest, cum opus est maximē.",
+      "english": "Good advice is always lacking just when it is needed most.",
+      "source": "Publil. Sent. S 31"
+    },
+    {
+      "latin": "Inopiae dēsunt multa, avāritiae omnia.",
+      "english": "Poverty lacks many things; greed lacks everything.",
+      "source": "Publil. Sent. I 7"
+    },
+    {
+      "latin": "caret ōs ūmōre loquentis et faucēs ārent, vixque est via vōcis in illīs",
+      "english": "my mouth lacks moisture as I speak, my throat is parched, and my voice can hardly get through",
+      "source": "Ov. Met. 6.354–355"
+    },
+    {
+      "latin": "Quod tibi plānē deest, mī fīlī, nōn est ingenium sed ambitiō!",
+      "english": "What you plainly lack, my son, is not talent but ambition!",
+      "source": "Traupman 162"
+    }
+  ],
+  "related": [
+    "require",
+    "poor-needy",
+    "enough"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/careo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: careo</a> · <a href=\"https://logeion.uchicago.edu/inopia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: inopia</a> · <a href=\"https://logeion.uchicago.edu/desum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: desum</a> · <a href=\"https://logeion.uchicago.edu/deficio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: deficio</a> · <a href=\"https://logeion.uchicago.edu/egeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: egeo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 162, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-ovidius, loci-livius, loci-publilius, loci-horatius, loci-gellius), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

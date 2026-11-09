@@ -1,0 +1,96 @@
+{
+  "id": "risk",
+  "english": "risk",
+  "pos": [
+    "noun",
+    "verb"
+  ],
+  "also": [
+    "danger",
+    "dangerous",
+    "risky",
+    "at your own risk",
+    "take a risk",
+    "run a risk",
+    "at risk",
+    "in danger"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "perīculum (perīclum), perīculī n.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "risk, danger",
+      "evidence": [
+        "Plaut. Bacch. 752: <span lang=\"la\">meō perīclō rem gerō</span>",
+        "Cic. Rosc. Am. 110: <span lang=\"la\">perīculum adīre capitis</span> (Lewis &amp; Short)",
+        "Traupman 107, 371"
+      ],
+      "comment": "At your own risk: <span lang=\"la\">tuō perīculō</span> (Traupman 107, 371). To run a risk: <span lang=\"la\">perīculum adīre</span> or <span lang=\"la\">subīre</span>; Traupman’s <span lang=\"la\">perīculum facere</span> is in Plautus (Lewis &amp; Short), though more often it means “make trial of”. In danger: <span lang=\"la\">in perīculō esse</span>. Risky: <span lang=\"la\">perīculōsus</span> (Cato Agr. praef. 1), <span lang=\"la\">anceps</span> (Traupman 372)."
+    },
+    {
+      "latin": "discrīmen, discrīminis n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a critical risk, a decisive moment",
+      "evidence": [
+        "Cic. Imp. Pomp. 12: <span lang=\"la\">in perīculum ac discrīmen vocātur</span> (Lewis &amp; Short)"
+      ],
+      "comment": "To put at risk: <span lang=\"la\">in discrīmen vocāre</span>."
+    },
+    {
+      "latin": "ālea, āleae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a gamble, a risk (properly, dice)",
+      "evidence": [
+        "Hor. C. 2.1.6: <span lang=\"la\">perīculōsae plēnum opus āleae</span>"
+      ]
+    },
+    {
+      "latin": "perīclitor, perīclitārī, perīclitātus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "risk, put at risk; put to the test",
+      "evidence": [
+        "Cic. Cat. 1.11: <span lang=\"la\">salūs summa perīclitanda reī pūblicae</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Lewis &amp; Short: “to put in peril, endanger, risk (rare but class.)”; more often “try, test”."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "mea fīdūciā opus condūxī et meō perīclō rem gerō",
+      "english": "I’ve taken on the job on my own credit, and I’m running it at my own risk",
+      "source": "Plaut. Bacch. 752"
+    },
+    {
+      "latin": "perīculōsae plēnum opus āleae tractās et incēdis per ignīs suppositōs cinerī dolōsō",
+      "english": "you are handling a work full of dangerous risk, and walking over fires hidden under treacherous ash",
+      "source": "Hor. C. 2.1.6–8"
+    },
+    {
+      "latin": "Caret perīclō, quī etiam cum est tūtus cavet.",
+      "english": "He runs no risk who takes care even when he is safe.",
+      "source": "Publil. Sent. C 32"
+    }
+  ],
+  "related": [
+    "lack",
+    "chance-luck",
+    "safe-journey"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/periculum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: periculum</a> · <a href=\"https://logeion.uchicago.edu/discrimen\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: discrimen</a> · <a href=\"https://logeion.uchicago.edu/alea\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: alea</a> · <a href=\"https://logeion.uchicago.edu/periclitor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: periclitor</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 107, 371, 372, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-publilius, loci-cato), checked against the editions named there.",
+    "Plautus, <em>Bacchides</em> (Leo, cited by his lines), and Horace, <em>Odes</em> 2, checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> and the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026).",
+    "Citations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them and have not been checked against an edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

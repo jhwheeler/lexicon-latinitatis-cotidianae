@@ -1,0 +1,83 @@
+{
+  "id": "affect",
+  "english": "affect",
+  "sense": "have an effect on",
+  "pos": "verb",
+  "also": [
+    "be affected",
+    "be affected by",
+    "move (the feelings)",
+    "be moved",
+    "be deeply affected",
+    "be upset by"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "afficiō, afficere, affēcī, affectum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "affect, act on (body or mind)",
+      "grammar": "verb, third conjugation (-iō): with the accusative, often with an ablative of the state produced",
+      "evidence": [
+        "Cic. Fam. 16.4.1: <span lang=\"la\">variē sum adfectus tuīs litterīs</span>",
+        "Liv. 28.15: <span lang=\"la\">famēs sitisque corpora adficerent</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Lewis &amp; Short: “to do something to one, i.e. to exert an influence on body or mind, so that it is brought into such or such a state”. Passive: be affected, often with an ablative: <span lang=\"la\">dolōre afficī</span>, to feel pain (Traupman 105, 152); <span lang=\"la\">morbō affectus</span>, ill. Where “affect” means “concern, apply to”, see concern (be about, matter to): <span lang=\"la\">attinet, pertinet ad</span>."
+    },
+    {
+      "latin": "commoveō, commovēre, commōvī, commōtum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "move deeply, shake, upset",
+      "evidence": [
+        "Cic. Fam. 3.10.1: <span lang=\"la\">graviter prīmō nūntiō commōtus sum</span>",
+        "Cic. Fam. 12.19.2: <span lang=\"la\">sānē mē commōvit</span>"
+      ],
+      "comment": "Of news and events that disturb the mind; Augustine uses it of being moved to tears."
+    },
+    {
+      "latin": "moveō, movēre, mōvī, mōtum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "move, touch (the feelings)",
+      "evidence": [
+        "Phaedr. 3.6.4: <span lang=\"la\">verbīs nōn moveor tuīs</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Variē sum adfectus tuīs litterīs, valdē priōre pāginā perturbātus, paulum alterā recreātus.",
+      "english": "Your letter affected me in two ways: the first page upset me badly, the second cheered me up a little.",
+      "source": "Cic. Fam. 16.4.1"
+    },
+    {
+      "latin": "etsī graviter prīmō nūntiō commōtus sum",
+      "english": "although I was badly shaken by the first news",
+      "source": "Cic. Fam. 3.10.1"
+    },
+    {
+      "latin": "quantum flēvī in hymnīs et canticīs tuīs, suāve sonantis ecclēsiae tuae vōcibus commōtus ācriter!",
+      "english": "how I wept at your hymns and songs, deeply moved by the voices of your sweetly singing church!",
+      "source": "Aug. Conf. 9.6.14"
+    }
+  ],
+  "related": [
+    "effect",
+    "concern-matter",
+    "feel-perceive"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/afficio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: afficio</a> · <a href=\"https://logeion.uchicago.edu/commoveo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: commoveo</a> · <a href=\"https://logeion.uchicago.edu/moveo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: moveo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 105, 152, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-augustinus, loci-phaedrus), checked against the editions named there.",
+    "Cicero’s letters to his friends (Purser), checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> and the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026).",
+    "Citations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them and have not been checked against an edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

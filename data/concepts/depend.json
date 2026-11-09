@@ -1,0 +1,109 @@
+{
+  "id": "depend",
+  "english": "depend",
+  "sense": "be decided by",
+  "pos": "verb",
+  "also": [
+    "depend on",
+    "it depends",
+    "that depends",
+    "depending on",
+    "be up to",
+    "hinge on",
+    "rest on"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "pendeō, pendēre, pependī",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "depend on (literally, hang from)",
+      "grammar": "verb, second conjugation: with ex and the ablative",
+      "evidence": [
+        "Cic. Parad. 2.17: <span lang=\"la\">pendet ex fortūnā</span>",
+        "Cic. de Or. 2.107: <span lang=\"la\">ex quō verbō … tōta illa causa pendēbat</span>"
+      ],
+      "comment": "What a thing depends on goes in <span lang=\"la\">ex</span> with the ablative; Lewis &amp; Short also give <span lang=\"la\">in</span>, <span lang=\"la\">ab</span>, <span lang=\"la\">dē</span> or the plain ablative. Of people: <span lang=\"la\">tuōrum, quī ex tē pendent</span>, your family, who depend on you (Cic. Fam. 6.22.2)."
+    },
+    {
+      "latin": "in aliquō positum esse",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "depend on someone, be up to someone",
+      "grammar": "phrase: in with the ablative; positum agrees with what depends",
+      "evidence": [
+        "Cic. Fam. 9.25.3: <span lang=\"la\">id ille in tē positum esse putat</span>",
+        "Traupman 96: <span lang=\"la\">tōtum in tē positum est</span>, it all depends on you"
+      ],
+      "comment": "Also of the self: <span lang=\"la\">ut omnia tua in tē posita esse dūcās</span>, that you think everything that is yours depends on yourself (Cic. Lael. 7)."
+    },
+    {
+      "latin": "interest",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "it depends (who, what, how, whether …); it makes a difference",
+      "grammar": "impersonal verb (from intersum): with an indirect question",
+      "evidence": [
+        "Plin. Ep. 6.24.1: <span lang=\"la\">Quam multum interest quid ā quōque fīat!</span>",
+        "Cic. Fam. 13.10.4: <span lang=\"la\">interest quālis prīmus aditus sit</span>"
+      ],
+      "comment": "“It depends” is a construction of its own: <span lang=\"la\">interest</span> or <span lang=\"la\">rēfert</span>, it matters, with an indirect question, its verb in the subjunctive. Traupman (p. 96) gives <span lang=\"la\">plūrimum rēfert num …</span>, it depends a lot on whether …. That it makes no difference is <span lang=\"la\">nihil interest, nīl rēfert</span> (see it makes no difference)."
+    },
+    {
+      "latin": "prout",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "depending on, according as",
+      "grammar": "conjunction, with the indicative",
+      "evidence": [
+        "Liv. 38.40.14: <span lang=\"la\">prout animus pugnantium est</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "cui spēs omnis et ratiō et cōgitātiō pendet ex fortūnā, huic nihil potest esse certī",
+      "english": "a man whose every hope, plan and thought depends on fortune can be sure of nothing",
+      "source": "Cic. Parad. 2.17"
+    },
+    {
+      "latin": "id ille in tē positum esse putat mihique persuādet",
+      "english": "he thinks it depends on you, and he has convinced me",
+      "source": "Cic. Fam. 9.25.3"
+    },
+    {
+      "latin": "Quam multum interest quid ā quōque fīat!",
+      "english": "How much depends on who does a thing!",
+      "source": "Plin. Ep. 6.24.1"
+    },
+    {
+      "latin": "sīc ignis nōn rēfert quam magnus sed quō incidat",
+      "english": "so with a fire, it depends not on how big it is but on where it falls",
+      "source": "Sen. Ep. 18.15"
+    },
+    {
+      "latin": "prout locus inīquus aequusve hīs aut illīs, prout animus pugnantium est, prout numerus …, varia fortūna pugnae est",
+      "english": "depending on whether the ground favoured one side or the other, on the fighters’ spirit and on their numbers, the fortune of the fight varied",
+      "source": "Liv. 38.40.14"
+    }
+  ],
+  "related": [
+    "depend-rely",
+    "it-makes-no-difference",
+    "concern-matter",
+    "cause"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/pendeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pendeo</a> · <a href=\"https://logeion.uchicago.edu/pono\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pono</a> · <a href=\"https://logeion.uchicago.edu/intersum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: intersum</a> · <a href=\"https://logeion.uchicago.edu/refert\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: refert</a> · <a href=\"https://logeion.uchicago.edu/pro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pro</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 96, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-seneca-epistulae), checked against the editions named there.",
+    "Cicero, <em>Paradoxa</em>, <em>De oratore</em> 2, <em>Laelius</em> and the letters to his friends (Purser), Pliny’s letters and Livy 38 (Weissenborn), checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> and the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026).",
+    "Citations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them and have not been checked against an edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

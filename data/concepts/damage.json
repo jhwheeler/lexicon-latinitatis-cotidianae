@@ -1,0 +1,102 @@
+{
+  "id": "damage",
+  "english": "damage",
+  "pos": [
+    "verb",
+    "noun"
+  ],
+  "also": [
+    "damaged",
+    "be damaged",
+    "spoil",
+    "ruin",
+    "storm damage"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "laedō, laedere, laesī, laesum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "damage, harm, hurt",
+      "evidence": [
+        "Verg. G. 2.220: <span lang=\"la\">nec scabiē et salsā laedit rōbīgine ferrum</span>",
+        "Ov. F. 6.150: <span lang=\"la\">frondēs laedit hiems</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Lewis &amp; Short: “to hurt by striking, wound, injure, damage”; of frost, rust and weather as of blows."
+    },
+    {
+      "latin": "vitium, vitiī n.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "damage, a defect (in a building or a thing)",
+      "evidence": [
+        "Cic. Fam. 9.15.5: <span lang=\"la\">sī enim nihil est in parietibus aut in tēctō vitī</span>",
+        "Cic. Top. 15: <span lang=\"la\">sī aedēs corruērunt vitiumve fēcērunt</span> (Lewis &amp; Short)"
+      ],
+      "comment": "To become damaged, of a building: <span lang=\"la\">vitium facere</span> (Cic. Top. 15); of water going bad, <span lang=\"la\">vitium capere</span> (Ov. Pont. 1.5.6)."
+    },
+    {
+      "latin": "corrumpō, corrumpere, corrūpī, corruptum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "spoil, ruin (food, goods, crops)",
+      "evidence": [
+        "Cato Agr. 3.2: <span lang=\"la\">nē corrumpātur</span>",
+        "Plaut. Ps. 892: <span lang=\"la\">corrumpitur jam cēna</span>"
+      ]
+    },
+    {
+      "latin": "damnum, damnī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "harm, loss suffered",
+      "evidence": [
+        "Cato Agr. 3.3: <span lang=\"la\">damnī nihil erit ex tempestāte</span>"
+      ],
+      "comment": "The damage as what it costs the owner (see loss)."
+    },
+    {
+      "latin": "afflīctō, afflīctāre, afflīctāvī, afflīctātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "batter, knock about (of storms)",
+      "evidence": [
+        "Caes. BG 4.29.2: <span lang=\"la\">tempestās adflīctābat</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "sī enim nihil est in parietibus aut in tēctō vitī, cētera mihi probābuntur",
+      "english": "for if there’s no damage in the walls or the roof, I’ll be happy with the rest",
+      "source": "Cic. Fam. 9.15.5"
+    },
+    {
+      "latin": "cernis ut ignāvum corrumpant ōtia corpus, ut capiant vitium, nī moveantur, aquae",
+      "english": "you see how idleness spoils a lazy body, as water goes bad if it doesn’t move",
+      "source": "Ov. Pont. 1.5.5–6"
+    },
+    {
+      "latin": "onerāriās, quae ad ancorās erant dēligātae, tempestās adflīctābat",
+      "english": "the storm was battering the transports that were riding at anchor",
+      "source": "Caes. BG 4.29.2"
+    }
+  ],
+  "related": [
+    "broken",
+    "hurt-yourself",
+    "loss"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/laedo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: laedo</a> · <a href=\"https://logeion.uchicago.edu/vitium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vitium</a> · <a href=\"https://logeion.uchicago.edu/corrumpo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: corrumpo</a> · <a href=\"https://logeion.uchicago.edu/damnum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: damnum</a> · <a href=\"https://logeion.uchicago.edu/afflicto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: afflicto</a>",
+    "Quotations from the Latinitas loci collections (loci-ovidius, loci-cato, loci-plautus), checked against the editions named there.",
+    "Cicero, Fam. 9.15 (Purser; the Perseus text misprints probabuntun), Caesar, <em>Gallic War</em> 4, and Vergil, <em>Georgics</em> 2, checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> and the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026).",
+    "Citations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them and have not been checked against an edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

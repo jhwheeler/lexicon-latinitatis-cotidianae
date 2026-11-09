@@ -1,0 +1,104 @@
+{
+  "id": "limit",
+  "english": "limit",
+  "pos": [
+    "noun",
+    "verb"
+  ],
+  "also": [
+    "limits",
+    "set a limit",
+    "there’s a limit",
+    "within limits",
+    "speed limit",
+    "limited",
+    "restrict"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "modus, modī m.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "measure, limit (how far, how much)",
+      "evidence": [
+        "Hor. S. 1.1.106: <span lang=\"la\">est modus in rēbus</span>",
+        "Plaut. Poen. 238: <span lang=\"la\">modus omnibus rēbus … optimus est habitū</span>",
+        "Traupman 218, 383: <span lang=\"la\">vēlōcitātis modus</span>, speed limit"
+      ],
+      "comment": "To set a limit: <span lang=\"la\">modum facere</span> with the genitive (<span lang=\"la\">inimīcitiārum modum facere</span>, Cic. Sull. 48, Lewis &amp; Short) or <span lang=\"la\">modum statuere</span> with the dative (<span lang=\"la\">cupidinibus statuat nātūra modum</span>, Hor. S. 1.2.111); without limit, <span lang=\"la\">sine modō</span>."
+    },
+    {
+      "latin": "fīnis, fīnis m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a boundary, a limit; (plural) territory",
+      "evidence": [
+        "Hor. S. 1.1.106: <span lang=\"la\">sunt certī dēnique fīnēs</span>"
+      ],
+      "comment": "Also the end of something (see end)."
+    },
+    {
+      "latin": "terminus, terminī m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a boundary stone, a bound",
+      "evidence": [
+        "Cic. de Or. 1.70: <span lang=\"la\">nūllīs ut terminīs circumscrībat aut dēfīniat jūs suum</span> (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "terminō, termināre, termināvī, terminātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "limit, bound",
+      "evidence": [
+        "Cic. Tusc. 1.62: <span lang=\"la\">paucīs litterārum notīs termināvit</span>"
+      ]
+    },
+    {
+      "latin": "circumscrībō, circumscrībere, circumscrīpsī, circumscrīptum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "restrict, hem in",
+      "evidence": [
+        "Cic. Mil. 88: <span lang=\"la\">senātus, crēdō, praetōrem eum circumscrīpsisset</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "est modus in rēbus, sunt certī dēnique fīnēs",
+      "english": "there is a measure in things; there are, in short, fixed limits",
+      "source": "Hor. S. 1.1.106"
+    },
+    {
+      "latin": "modus omnibus rēbus, soror, optimus est habitū",
+      "english": "keeping within limits, sister, is best in everything",
+      "source": "Plaut. Poen. 238"
+    },
+    {
+      "latin": "quī sonōs vōcis, quī īnfīnītī vidēbantur, paucīs litterārum notīs termināvit",
+      "english": "the man who confined the sounds of the voice, which seemed limitless, to a few letters",
+      "source": "Cic. Tusc. 1.62"
+    }
+  ],
+  "related": [
+    "end",
+    "border",
+    "edge",
+    "enough"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/modus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: modus</a> · <a href=\"https://logeion.uchicago.edu/finis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: finis</a> · <a href=\"https://logeion.uchicago.edu/terminus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: terminus</a> · <a href=\"https://logeion.uchicago.edu/termino\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: termino</a> · <a href=\"https://logeion.uchicago.edu/circumscribo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: circumscribo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 218, 383, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-horatius, loci-cicero-philosophica), checked against the editions named there.",
+    "Plautus, <em>Poenulus</em> (Leo, cited by his lines), Horace, <em>Satires</em> 1.2, and Cicero, <em>Pro Milone</em>, checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> and the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026).",
+    "Citations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them and have not been checked against an edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

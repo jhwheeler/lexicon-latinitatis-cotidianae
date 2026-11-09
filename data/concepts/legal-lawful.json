@@ -1,0 +1,74 @@
+{
+  "id": "legal-lawful",
+  "english": "legal",
+  "sense": "allowed by law",
+  "pos": "adjective",
+  "also": [
+    "lawful",
+    "legally",
+    "legitimate",
+    "is it legal?",
+    "legal age",
+    "illegal"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "lēgitimus, lēgitima, lēgitimum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "lawful, legal: fixed or allowed by law",
+      "grammar": "adjective",
+      "evidence": [
+        "Liv. 25.2.6: <span lang=\"la\">quod nōndum ad petendum lēgitima aetās esset</span>",
+        "Traupman 196, 339: legal"
+      ],
+      "comment": "The legal age is <span lang=\"la\">aetās lēgitima</span>; legally is <span lang=\"la\">lēgitimē</span> or <span lang=\"la\">lēge</span> (Traupman 196). Traupman also gives <span lang=\"la\">secundum lēgem</span> (or <span lang=\"la\">lēgēs</span>). What is illegal is <span lang=\"la\">contrā lēgēs</span>."
+    },
+    {
+      "latin": "per lēgēs licet",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "it is legal: the laws allow it",
+      "grammar": "phrase: licet, impersonal, “it is allowed”",
+      "evidence": [
+        "Cic. Mil. 43: <span lang=\"la\">nihil, quod per lēgēs licēret</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Cicero’s way of saying that something is legal."
+    },
+    {
+      "latin": "licitus, licita, licitum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "permitted, lawful",
+      "grammar": "adjective",
+      "register": "vōx poētica: Verg.; also post-Augustan prose (Tac.)",
+      "evidence": [
+        "Tac. Ann. 15.37: <span lang=\"la\">per licita atque illicita</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Lewis &amp; Short: poetic and post-Augustan, for classical <span lang=\"la\">permissus</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "huic petentī aedīlitātem cum obsisterent tribūnī plēbis, negantēs ratiōnem ejus habendam esse quod nōndum ad petendum lēgitima aetās esset, sī mē, inquit, omnēs Quirītēs aedīlem facere volunt, satis annōrum habeō",
+      "english": "When the tribunes of the people opposed his standing for the aedileship, saying he could not be considered because he was not yet of the legal age to stand, he said: “If all the citizens want to make me aedile, I am old enough.”",
+      "source": "Liv. 25.2.6–7"
+    }
+  ],
+  "related": [
+    "law",
+    "legal-of-the-law",
+    "rule-regulation"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/legitimus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: legitimus</a> · <a href=\"https://logeion.uchicago.edu/licet\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: licet</a> · <a href=\"https://logeion.uchicago.edu/licitus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: licitus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 196, 339, checked against the searchable text of the book (9 November 2026).",
+    "Livy (25.2.6–7) checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a>, with section numbers from the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "id": "society-association",
+  "english": "society",
+  "sense": "an association, a club",
+  "pos": "noun",
+  "also": [
+    "club",
+    "clubs",
+    "association",
+    "join a society",
+    "learned society"
+  ],
+  "domain": "res-publica",
+  "also_under": [
+    "verba"
+  ],
+  "terms": [
+    {
+      "latin": "sodālitās, sodālitātis f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a society, a club: a circle of members who meet",
+      "evidence": [
+        "Cic. Sen. 45: <span lang=\"la\">sodālitātēs autem mē quaestōre cōnstitūtae sunt</span>",
+        "M-O s.v. organization, society, association"
+      ],
+      "comment": "Lewis &amp; Short: a society, an association of any kind, especially for religious purposes; also a dining club. Its members are <span lang=\"la\">sodālēs</span> (see member). The senate once dissolved the political clubs (Cic. Q. Fr. 2.3.5, Lewis &amp; Short)."
+    },
+    {
+      "latin": "collēgium, collēgiī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "an association of people with one calling: a guild, a college",
+      "evidence": [
+        "Liv. 2.27.5: <span lang=\"la\">mercātōrum collēgium īnstituere</span>"
+      ],
+      "comment": "A body of colleagues bound by common rules: priests, magistrates, merchants, craftsmen."
+    },
+    {
+      "latin": "circulus, circulī m.",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "a club",
+      "evidence": [
+        "M-O s.v. organization: club"
+      ],
+      "comment": "Classically a circle of people gathered to talk (see group); Morgan–Owens uses it for a club."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Sodālitātēs autem mē quaestōre cōnstitūtae sunt sacrīs Īdaeīs Magnae Mātris acceptīs. Epulābar igitur cum sodālibus omnīnō modicē.",
+      "english": "Clubs were founded when I was quaestor, when the Idaean rites of the Great Mother were taken up. So I used to dine with my fellow members, quite moderately.",
+      "source": "Cic. Sen. 45"
+    }
+  ],
+  "related": [
+    "member",
+    "organization",
+    "group",
+    "president-society",
+    "society-people"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/sodalitas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sodalitas</a> · <a href=\"https://logeion.uchicago.edu/collegium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: collegium</a> · <a href=\"https://logeion.uchicago.edu/circulus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: circulus</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: organization, society, association; organization: club.",
+    "Cicero (Sen. 45) and Livy (2.27.5) checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a>, with section numbers from the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

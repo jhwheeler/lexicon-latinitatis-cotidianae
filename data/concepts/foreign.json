@@ -1,0 +1,99 @@
+{
+  "id": "foreign",
+  "english": "foreign",
+  "sense": "from or of another country",
+  "pos": "adjective",
+  "also": [
+    "foreigner",
+    "foreigners",
+    "from abroad",
+    "foreign country",
+    "foreign affairs",
+    "foreign words",
+    "foreign accent",
+    "exotic"
+  ],
+  "domain": "res-publica",
+  "also_under": [
+    "verba"
+  ],
+  "terms": [
+    {
+      "latin": "externus, externa, externum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "foreign: of another country, as against ours",
+      "grammar": "adjective",
+      "evidence": [
+        "Cic. Off. 2.64: <span lang=\"la\">apud externōs populōs</span>",
+        "Traupman 318: foreign (of another country)"
+      ],
+      "comment": "What belongs to other states: foreign peoples, wars and affairs. Lewis &amp; Short set it against <span lang=\"la\">domesticus</span> and <span lang=\"la\">noster</span>: <span lang=\"la\">rēbus externīs … īnstitūtīs domesticīs</span>, in foreign and in home affairs (Cic. Phil. 2.69)."
+    },
+    {
+      "latin": "peregrīnus, peregrīna, peregrīnum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "foreign: coming from abroad (people, goods, words); as a noun, a foreigner",
+      "grammar": "adjective",
+      "evidence": [
+        "Quint. 1.5.55: <span lang=\"la\">verba aut Latīna aut peregrīna sunt</span>",
+        "Traupman 318: foreign (coming from abroad); foreigner"
+      ],
+      "comment": "Traupman’s word for what comes from abroad, and his noun for a foreigner, <span lang=\"la\">peregrīnus, peregrīna</span>. In Rome a <span lang=\"la\">peregrīnus</span> was a free resident who was not a citizen."
+    },
+    {
+      "latin": "aliēnigena, aliēnigenae m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "born abroad; a foreigner",
+      "evidence": [
+        "Nep. Eum. 7.1: <span lang=\"la\">sī potius ipse aliēnigena summī imperiī potīrētur</span>"
+      ],
+      "comment": "Very frequent in Cicero’s speeches; also used as an adjective (Lewis &amp; Short)."
+    },
+    {
+      "latin": "exōticus, exōtica, exōticum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "foreign, exotic (of goods)",
+      "grammar": "adjective",
+      "register": "vōx cōmica: Plaut.; later Gell., Apul.",
+      "evidence": [
+        "Plaut. Most. 42: <span lang=\"la\">unguenta exōtica</span>",
+        "M-O s.v. foreign"
+      ],
+      "comment": "Ante- and post-classical (Lewis &amp; Short); Morgan–Owens keeps it for foods and goods."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "verba aut Latīna aut peregrīna sunt. Peregrīna porrō ex omnibus prope dīxerim gentibus ut hominēs, ut īnstitūta etiam multa vēnērunt.",
+      "english": "Words are either Latin or foreign. And foreign words have come to us, I would almost say, from every nation, as people have, and many customs too.",
+      "source": "Quint. 1.5.55"
+    },
+    {
+      "latin": "quae in hortīs nāscuntur, alia peregrīnīs vocābulīs, ut Graecīs ōcimum, menta, rūta",
+      "english": "of the plants that grow in gardens, some have foreign names, Greek ones, like ocimum, menta, ruta",
+      "source": "Varr. LL 5.103"
+    }
+  ],
+  "related": [
+    "abroad",
+    "language",
+    "national",
+    "international"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/externus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: externus</a> · <a href=\"https://logeion.uchicago.edu/peregrinus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: peregrinus</a> · <a href=\"https://logeion.uchicago.edu/alienigena\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: alienigena</a> · <a href=\"https://logeion.uchicago.edu/exoticus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: exoticus</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: foreign.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 318, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-varro), checked against the editions named there.",
+    "Cicero (Off. 2.64, Phil. 2.69), Nepos (Eum. 7.1), Quintilian (1.5.55) and Plautus (Most. 42) checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

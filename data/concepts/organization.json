@@ -1,0 +1,79 @@
+{
+  "id": "organization",
+  "english": "organization",
+  "sense": "an organized body: an association, a company, an institution",
+  "pos": "noun",
+  "also": [
+    "organisation",
+    "organizations",
+    "organisations",
+    "association",
+    "body (an organization)"
+  ],
+  "domain": "res-publica",
+  "also_under": [
+    "pecunia"
+  ],
+  "terms": [
+    {
+      "latin": "societās, societātis f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "an association formed for a common purpose; a company",
+      "evidence": [
+        "Cic. Sest. 32: <span lang=\"la\">nūlla Rōmae societās vectīgālium, nūllum conlēgium aut concilium</span>",
+        "Cic. Planc. 32: <span lang=\"la\">maximārum societātum auctor</span>"
+      ],
+      "comment": "Lewis &amp; Short: union for a common purpose, not a mere gathering; also a partnership, and a company of tax-farmers or traders."
+    },
+    {
+      "latin": "collēgium, collēgiī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a body of colleagues or members: a guild, a college, a corporation",
+      "evidence": [
+        "Liv. 2.27.5: <span lang=\"la\">mercātōrum collēgium īnstituere</span>",
+        "Cic. Sest. 32"
+      ],
+      "comment": "Lewis &amp; Short: persons united by the same office or calling, or living by common rules."
+    },
+    {
+      "latin": "cōnsociātiō, cōnsociātiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "an association, a union",
+      "evidence": [
+        "Cic. Off. 1.157: <span lang=\"la\">cōnsociātiō hominum atque commūnitās</span> (Lewis &amp; Short)",
+        "M-O s.v. organization, society, association"
+      ],
+      "comment": "Classically the abstract union of people (Cicero); Morgan–Owens takes it, from twentieth-century Church Latin, for an organization."
+    },
+    {
+      "latin": "sodālitās, sodālitātis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a society, a club",
+      "evidence": [
+        "M-O s.v. organization, society, association"
+      ],
+      "comment": "See society, an association."
+    }
+  ],
+  "related": [
+    "society-association",
+    "group",
+    "member",
+    "office-workplace",
+    "president-society"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/societas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: societas</a> · <a href=\"https://logeion.uchicago.edu/collegium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: collegium</a> · <a href=\"https://logeion.uchicago.edu/consociatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: consociatio</a> · <a href=\"https://logeion.uchicago.edu/sodalitas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sodalitas</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: organization, society, association.",
+    "Cicero (Sest. 32, Planc. 32) and Livy (2.27.5) checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a>, with section numbers from the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

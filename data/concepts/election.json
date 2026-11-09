@@ -1,0 +1,94 @@
+{
+  "id": "election",
+  "english": "election",
+  "pos": "noun",
+  "also": [
+    "elections",
+    "elect",
+    "be elected",
+    "election day",
+    "general election",
+    "hold an election",
+    "hold elections",
+    "stand for election",
+    "electoral"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "comitia, comitiōrum n. pl.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "elections; the Roman assemblies that elected the magistrates",
+      "evidence": [
+        "Plin. Ep. 3.20.2: <span lang=\"la\">comitiōrum diē</span>, on election day",
+        "Traupman 179: <span lang=\"la\">comitia habēre</span>, hold elections",
+        "M-O s.v. vote: election"
+      ],
+      "comment": "The Roman people elected its magistrates in the <span lang=\"la\">comitia</span>, named after the office at stake (<span lang=\"la\">comitia cōnsulāria, praetōria, tribūnicia</span>); to hold an election is <span lang=\"la\">comitia habēre</span> (Lewis &amp; Short). Traupman and Morgan–Owens use the word for modern elections. A day on which the assembly could meet was a <span lang=\"la\">diēs comitiālis</span>, Morgan–Owens’s election day (M-O; Liv. 25.2.4: <span lang=\"la\">prīmō comitiālī diē</span>)."
+    },
+    {
+      "latin": "creō, creāre, creāvī, creātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "elect (a magistrate)",
+      "grammar": "verb, first conjugation, transitive",
+      "evidence": [
+        "Cic. Sest. 137: <span lang=\"la\">magistrātūs annuōs creāvērunt</span>",
+        "Caes. BC 3.1 (Lewis &amp; Short)",
+        "Traupman 179: elect"
+      ],
+      "comment": "The usual verb for choosing magistrates, of the voters and of the officer who presided (Lewis &amp; Short): <span lang=\"la\">cōnsulēs creāre</span>. Traupman gives <span lang=\"la\">coöptāre</span> for the choice of Roman senators."
+    },
+    {
+      "latin": "creātiō, creātiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the election of a magistrate",
+      "evidence": [
+        "Cic. Leg. 3.10: <span lang=\"la\">creātiō magistrātuum</span>"
+      ],
+      "comment": "Rare (Lewis &amp; Short)."
+    },
+    {
+      "latin": "ēlēctiō, ēlēctiōnis f.",
+      "status": "alternative",
+      "period": "renaissance",
+      "gloss": "an election (of a pope or an emperor)",
+      "evidence": [
+        "M-O s.v. vote: election (Turselinus, 1652)",
+        "Cic. Or. 68: a choice (Lewis &amp; Short)"
+      ],
+      "comment": "Classically a choice or selection (Cicero, Quintilian); the sense “election” is the Church’s and the Empire’s, as in Morgan–Owens’s seventeenth-century source."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Proximīs comitiīs in quibusdam tabellīs multa joculāria atque etiam foeda dictū, in ūnā vērō prō candidātōrum nōminibus suffrāgātōrum nōmina inventa sunt.",
+      "english": "At the last election some ballots were found to have plenty of jokes on them, and even obscenities, and one had the names of the voters instead of the candidates.",
+      "source": "Plin. Ep. 4.25.1"
+    },
+    {
+      "latin": "omnēs comitiōrum diē tabellās postulāvērunt",
+      "english": "on election day they all asked for ballots",
+      "source": "Plin. Ep. 3.20.2"
+    }
+  ],
+  "related": [
+    "vote",
+    "office-public",
+    "political",
+    "party-political"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/comitium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: comitium</a> · <a href=\"https://logeion.uchicago.edu/comitialis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: comitialis</a> · <a href=\"https://logeion.uchicago.edu/creo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: creo</a> · <a href=\"https://logeion.uchicago.edu/creatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: creatio</a> · <a href=\"https://logeion.uchicago.edu/electio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: electio</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: vote: election; vote: election day.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 179, checked against the searchable text of the book (9 November 2026).",
+    "Pliny (Ep. 3.20.2, 4.25.1), Cicero (Leg. 3.10, Sest. 137) and Livy (25.2.4) checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a>, with section numbers from the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

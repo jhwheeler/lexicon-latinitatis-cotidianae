@@ -1,0 +1,64 @@
+{
+  "id": "couple-a-few",
+  "english": "couple",
+  "sense": "a couple of: two or so, a few",
+  "pos": "phrase",
+  "also": [
+    "a couple of",
+    "one or two",
+    "two or three",
+    "a few"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "ūnus et alter",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "one or two, a couple",
+      "grammar": "phrase: both words agree with the noun",
+      "evidence": [
+        "Cic. Clu. 72: <span lang=\"la\">ūnus et alter diēs intercesserat</span>",
+        "Hor. Ep. 2.1.74: <span lang=\"la\">versus paulō concinnior ūnus et alter</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Lewis &amp; Short: of an indefinite number, one and another, one or two. Also <span lang=\"la\">ūnus alterve</span>: <span lang=\"la\">ūnum alterumve diem</span>, a day or two (Cic. Fam. 3.9.2)."
+    },
+    {
+      "latin": "paucī, paucae, pauca",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a few",
+      "grammar": "adjective, plural",
+      "evidence": [
+        "Catull. 13.1–2: <span lang=\"la\">paucīs … diēbus</span>"
+      ],
+      "comment": "A few, without a number."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Ūnus et alter diēs intercesserat",
+      "english": "a day or two had gone by",
+      "source": "Cic. Clu. 72"
+    },
+    {
+      "latin": "cēnābis bene, mī Fabulle, apud mē paucīs, sī tibi dī favent, diēbus",
+      "english": "you’ll dine well at my house, Fabullus, in a couple of days, if the gods are kind to you",
+      "source": "Catull. 13.1–2"
+    }
+  ],
+  "related": [
+    "two",
+    "couple-people"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/unus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: unus</a> · <a href=\"https://logeion.uchicago.edu/alter\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: alter</a> · <a href=\"https://logeion.uchicago.edu/paucus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: paucus</a>",
+    "Quotations from the Latinitas loci collections (loci-catullus), checked against the editions named there.",
+    "Cicero (Clu. 72, Fam. 3.9.2) checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a>, with section numbers from the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

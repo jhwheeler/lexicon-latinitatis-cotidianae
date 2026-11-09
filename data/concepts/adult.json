@@ -1,0 +1,84 @@
+{
+  "id": "adult",
+  "english": "adult",
+  "pos": [
+    "noun",
+    "adjective"
+  ],
+  "also": [
+    "adults",
+    "grown-up",
+    "grown-ups",
+    "grownup",
+    "of age",
+    "come of age",
+    "for adults"
+  ],
+  "domain": "sermo",
+  "terms": [
+    {
+      "latin": "adultus, adulta, adultum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "grown up, adult",
+      "grammar": "adjective, the participle of adolēscō; as a noun, a grown-up",
+      "evidence": [
+        "Liv. 26.50.1: <span lang=\"la\">adulta virgō</span>",
+        "Plin. NH 9.21: <span lang=\"la\">adultōs diū comitantur</span>",
+        "Traupman 77, 149, 269"
+      ],
+      "comment": "From <span lang=\"la\">adolēscō</span>, “grow up”. Traupman gives <span lang=\"la\">adultus homō</span> for an adult (Traupman 269)."
+    },
+    {
+      "latin": "pūberēs, pūberum m. pl.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "grown-ups, adults: those past puberty",
+      "evidence": [
+        "Caes. BG 5.56.2: <span lang=\"la\">omnēs pūberēs armātī convenīre cōnsuērunt</span>"
+      ],
+      "comment": "Lewis &amp; Short: grown-up persons, adults, men. Festus puts the age at fourteen for a boy and twelve for a girl."
+    },
+    {
+      "latin": "majōrēs, majōrum m. pl.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "grown-ups, as against children; one’s elders",
+      "grammar": "noun, third declension, plural",
+      "evidence": [
+        "Aug. Conf. 1.9.15: <span lang=\"la\">majōrum nūgae negōtia vocantur</span>",
+        "Cic. Off. 1.122: <span lang=\"la\">majōrēs nātū</span>"
+      ],
+      "comment": "In classical prose <span lang=\"la\">majōrēs nātū</span> are one’s elders, and <span lang=\"la\">majōrēs</span> alone usually one’s ancestors; Augustine uses it for the grown-ups of a child’s world."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "sed majōrum nūgae negōtia vocantur, puerōrum autem tālia cum sint, pūniuntur ā majōribus",
+      "english": "but grown-ups’ games are called business, and when children play the same games, the grown-ups punish them",
+      "source": "Aug. Conf. 1.9.15"
+    },
+    {
+      "latin": "ex quō togam virīlem sūmpsit nūllō diē prius ūllam pūblicam prīvātamque rem ēgit quam in Capitōlium īret",
+      "english": "from the day he came of age, he never did any business, public or private, without first going up to the Capitol",
+      "source": "Liv. 26.19.5"
+    }
+  ],
+  "related": [
+    "man",
+    "lady",
+    "older",
+    "baby"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/adolesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: adolesco</a> · <a href=\"https://logeion.uchicago.edu/pubes\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pubes</a> · <a href=\"https://logeion.uchicago.edu/major\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: major</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 77, 149, 269, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-augustinus, loci-livius, loci-plinius, loci-cicero-philosophica), checked against the editions named there.",
+    "Caesar (BG 5.56.2) and Livy (26.50.1) checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a>, with section numbers from the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

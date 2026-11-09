@@ -50,7 +50,7 @@ document.documentElement.dataset.view = /^#?(contents)?$/.test(location.hash) ? 
 <ol class="toc">{{contents}}</ol>
 </section>
 <section id="search-results" aria-label="Search results" hidden><div id="search-result-list" class="entries"></div></section>
-<p id="empty" class="empty">No entries match that search.</p>
+<p id="empty" class="empty"><span id="empty-message">No entries match that search.</span><button id="search-all" class="search-all" type="button" hidden>Search all categories</button></p>
 {{entries}}
 </main>
 </div>

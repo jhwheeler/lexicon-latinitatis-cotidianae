@@ -94,6 +94,32 @@ test('a category keeps a search within it; Clear and Escape return to the view, 
   assert.equal(await page.locator('.search-result').count(), 6);
 });
 
+test('an empty search in a category names it and can search everything, keeping the query', async () => {
+  for (const width of [1280, 390]) {
+    await page.setViewportSize({ width, height: 900 });
+    await page.goto(pageUrl('rulings.html'));
+    await page.goto(url + '#vestitus');
+    await search('climb');
+    assert.equal(await page.locator('.search-result').count(), 0);
+    assert.equal(await page.locator('#empty-message').textContent(), 'No matches in Vestītus.');
+    assert.match(await page.locator('#results').textContent(), /^0 matching entries in Vestītus/);
+    await page.getByRole('button', { name: 'Search all categories', exact: true }).click();
+    assert.equal(await page.locator('#search').inputValue(), 'climb');
+    assert.match(page.url(), /#contents$/);
+    assert.equal(await page.locator('[data-filter="all"]').getAttribute('aria-current'), 'true');
+    assert.equal(await page.locator('[data-filter="vestitus"]').getAttribute('aria-current'), null);
+    assert.equal(await page.locator('#search').evaluate(node => node === document.activeElement), true);
+    assert.equal(await page.locator('#empty').isVisible(), false);
+    assert.match(await page.locator('#search-result-list').textContent(), /scandō/);
+    await search('no-such-lemma-12345');
+    assert.equal(await page.locator('#empty-message').textContent(), 'No entries match that search.');
+    assert.equal(await page.locator('#search-all').isVisible(), false);
+    await page.goBack();
+    await page.waitForURL(/#vestitus$/);
+    assert.equal(await page.locator('[data-filter="vestitus"]').getAttribute('aria-current'), 'true');
+  }
+});
+
 test('source-only and alias-only matches are explained and retain context', async () => {
   await search('John C. Traupman');
   const source = page.locator('.search-result').filter({ hasText: 'Source note' }).first();

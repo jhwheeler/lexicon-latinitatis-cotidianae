@@ -230,6 +230,8 @@ mark { background:var(--mark); color:var(--ink); padding:0 .06em; border-radius:
 .search-context[open] > summary { color:var(--ink); }
 .search-context > .eyebrow { margin:4px 0 0; color:var(--ink); font:700 1.06rem var(--serif); }
 .empty { display:none; margin:48px 0; text-align:center; color:var(--muted); font:400 1.05rem var(--sans); }
+.empty > span { display:block; margin-bottom:8px; }
+.search-all { min-height:44px; padding:0 4px; border:0; background:none; color:var(--ink); font:400 1rem var(--sans); cursor:pointer; text-decoration:underline; text-decoration-color:var(--accent); text-underline-offset:.25em; }
 
 /* Footers -------------------------------------------------------------------------------- */
 footer { border-top:1px solid var(--rule); color:var(--soft); padding:16px 0 56px; }
@@ -373,7 +375,7 @@ span.kind, p.kind:not(:has(a)) { display:block; padding:10px 0; }
 <ol class="toc"><li><a href="#ludi"><span class="toc-la" lang="la">Lūdī et lūdibria</span><span class="toc-n">40<span class="vh"> entries</span></span><span class="toc-en">Playground equipment, sandbox toys, vehicles and play</span></a></li><li><a href="#corpus"><span class="toc-la" lang="la">Corpus et mōtus</span><span class="toc-n">26<span class="vh"> entries</span></span><span class="toc-en">Body, health &amp; movement</span></a></li><li><a href="#natura"><span class="toc-la" lang="la">Nātūra et alimenta</span><span class="toc-n">58<span class="vh"> entries</span></span><span class="toc-en">Nature &amp; food</span></a></li><li><a href="#vectura"><span class="toc-la" lang="la">Itinera et vectūra</span><span class="toc-n">29<span class="vh"> entries</span></span><span class="toc-en">Travel &amp; transport</span></a></li><li><a href="#urbs"><span class="toc-la" lang="la">Urbs, vīcus et loca</span><span class="toc-n">23<span class="vh"> entries</span></span><span class="toc-en">Town, shops &amp; places</span></a></li><li><a href="#sermo"><span class="toc-la" lang="la">Sermō cotīdiānus</span><span class="toc-n">69<span class="vh"> entries</span></span><span class="toc-en">Conversation, family &amp; daily routines</span></a></li><li><a href="#culina"><span class="toc-la" lang="la">Culīna et potūs</span><span class="toc-n">72<span class="vh"> entries</span></span><span class="toc-en">Kitchen, meals &amp; drinks</span></a></li><li><a href="#vestitus"><span class="toc-la" lang="la">Vestītus</span><span class="toc-n">28<span class="vh"> entries</span></span><span class="toc-en">Clothes &amp; getting dressed</span></a></li><li><a href="#domus"><span class="toc-la" lang="la">Domus et cūra</span><span class="toc-n">27<span class="vh"> entries</span></span><span class="toc-en">Household, washing &amp; chores</span></a></li><li><a href="#officina"><span class="toc-la" lang="la">Officīna et īnstrūmenta</span><span class="toc-n">17<span class="vh"> entries</span></span><span class="toc-en">Tools, fasteners &amp; household repair</span></a></li><li><a href="#aedificatio"><span class="toc-la" lang="la">Aedificātiō et materiae</span><span class="toc-n">13<span class="vh"> entries</span></span><span class="toc-en">Construction, trades &amp; building materials</span></a></li><li><a href="#domus-structura"><span class="toc-la" lang="la">Domūs partēs et supellex</span><span class="toc-n">10<span class="vh"> entries</span></span><span class="toc-en">House layout, roofs, rooms &amp; furnishings</span></a></li><li><a href="#labor"><span class="toc-la" lang="la">Labor et cūra</span><span class="toc-n">2<span class="vh"> entries</span></span><span class="toc-en">Work &amp; responsibility</span></a></li><li><a href="#computatra"><span class="toc-la" lang="la">Ars computātrālis</span><span class="toc-n">23<span class="vh"> entries</span></span><span class="toc-en">Computing &amp; programming</span></a></li></ol>
 </section>
 <section id="search-results" aria-label="Search results" hidden><div id="search-result-list" class="entries"></div></section>
-<p id="empty" class="empty">No entries match that search.</p>
+<p id="empty" class="empty"><span id="empty-message">No entries match that search.</span><button id="search-all" class="search-all" type="button" hidden>Search all categories</button></p>
 <section class="category" data-category-section="corpus" id="corpus"><div class="category-heading"><h2 lang="la">Corpus et mōtus</h2><p class="eyebrow">Body, health &amp; movement</p></div><div class="entries"><article class="entry" id="entry-1" data-entry data-entry-id="entry-1" data-category="corpus" data-search="Scratch scabō, scabere, scābī Ancient Latin scabō, scabere, scābī — scratch or scrape; no attested supine is supplied in Lewis &amp; Short. scalpō, scalpere, scalpsī, scalptum — scratch, scrape, carve, engrave. scabiēs f. — an itching or scabby skin condition; mange. It is broader than the modern diagnosis “scabies.” The classical dictionaries give accusative scabiem and ablative scabiē , without supplying a genitive. scaber, scabra, scabrum — rough, scabby. Nōlī scabere. — Don’t scratch. scrībō, scrībere, scrīpsī, scrīptum — write; historically associated with scratching or incising. English script belongs to this family.">
 <header class="entry-head"><div><p class="eyebrow">Scratch</p><h3 lang="la">scabō, scabere, scābī</h3></div><div class="tags"><span class="tag">Ancient Latin</span></div></header>
 <div class="entry-body"><ul>
@@ -6360,6 +6362,7 @@ span.kind, p.kind:not(:has(a)) { display:block; padding:10px 0; }
   syncTheme();
   const search = document.getElementById('search'), clear = document.getElementById('clear');
   const count = document.getElementById('results'), empty = document.getElementById('empty');
+  const emptyMessage = document.getElementById('empty-message'), searchAll = document.getElementById('search-all');
   const home = document.getElementById('contents');
   const results = document.getElementById('search-results'), list = document.getElementById('search-result-list');
   const entries = [...document.querySelectorAll('[data-entry]')];
@@ -6498,6 +6501,9 @@ span.kind, p.kind:not(:has(a)) { display:block; padding:10px 0; }
     const plural = matching.length === 1 ? 'entry' : 'entries';
     count.textContent = query ? `${matching.length} matching ${plural}${browsing ? ' in ' + names[active] : ''} · definitions first`
       : `${matching.length} ${plural}`;
+    // An empty search inside a category says so and offers the whole lexicon, keeping the query.
+    emptyMessage.textContent = browsing ? 'No matches in ' + names[active] + '.' : 'No entries match that search.';
+    searchAll.hidden = !browsing || matching.length > 0;
     empty.style.display = query && !matching.length ? 'block' : 'none';
   }
   // A view starts at the top of the page. Loading an address with a category in it, the browser
@@ -6540,6 +6546,10 @@ span.kind, p.kind:not(:has(a)) { display:block; padding:10px 0; }
     if (!desktop.matches) { categoryMenu.open = false; categoryMenu.querySelector('summary').focus(); }
   }));
   clear.addEventListener('click', () => { search.value = ''; apply(); search.focus(); });
+  searchAll.addEventListener('click', () => {
+    if (location.hash !== '#contents') history.pushState(null, '', '#contents');
+    route('#contents'); search.focus();
+  });
   search.addEventListener('keydown', event => { if (event.key === 'Escape') clear.click(); });
   apply();
   route(location.hash);

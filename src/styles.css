@@ -210,6 +210,8 @@ mark { background:var(--mark); color:var(--ink); padding:0 .06em; border-radius:
 .search-context[open] > summary { color:var(--ink); }
 .search-context > .eyebrow { margin:4px 0 0; color:var(--ink); font:700 1.06rem var(--serif); }
 .empty { display:none; margin:48px 0; text-align:center; color:var(--muted); font:400 1.05rem var(--sans); }
+.empty > span { display:block; margin-bottom:8px; }
+.search-all { min-height:44px; padding:0 4px; border:0; background:none; color:var(--ink); font:400 1rem var(--sans); cursor:pointer; text-decoration:underline; text-decoration-color:var(--accent); text-underline-offset:.25em; }
 
 /* Footers -------------------------------------------------------------------------------- */
 footer { border-top:1px solid var(--rule); color:var(--soft); padding:16px 0 56px; }

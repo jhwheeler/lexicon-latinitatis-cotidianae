@@ -17,6 +17,7 @@
   syncTheme();
   const search = document.getElementById('search'), clear = document.getElementById('clear');
   const count = document.getElementById('results'), empty = document.getElementById('empty');
+  const emptyMessage = document.getElementById('empty-message'), searchAll = document.getElementById('search-all');
   const home = document.getElementById('contents');
   const results = document.getElementById('search-results'), list = document.getElementById('search-result-list');
   const entries = [...document.querySelectorAll('[data-entry]')];
@@ -155,6 +156,9 @@
     const plural = matching.length === 1 ? 'entry' : 'entries';
     count.textContent = query ? `${matching.length} matching ${plural}${browsing ? ' in ' + names[active] : ''} · definitions first`
       : `${matching.length} ${plural}`;
+    // An empty search inside a category says so and offers the whole lexicon, keeping the query.
+    emptyMessage.textContent = browsing ? 'No matches in ' + names[active] + '.' : 'No entries match that search.';
+    searchAll.hidden = !browsing || matching.length > 0;
     empty.style.display = query && !matching.length ? 'block' : 'none';
   }
   // A view starts at the top of the page. Loading an address with a category in it, the browser
@@ -197,6 +201,10 @@
     if (!desktop.matches) { categoryMenu.open = false; categoryMenu.querySelector('summary').focus(); }
   }));
   clear.addEventListener('click', () => { search.value = ''; apply(); search.focus(); });
+  searchAll.addEventListener('click', () => {
+    if (location.hash !== '#contents') history.pushState(null, '', '#contents');
+    route('#contents'); search.focus();
+  });
   search.addEventListener('keydown', event => { if (event.key === 'Escape') clear.click(); });
   apply();
   route(location.hash);

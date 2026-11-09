@@ -5,11 +5,14 @@
   "domain": "urbs",
   "terms": [
     {
-      "latin": "Alfama",
+      "latin": "Alfāma",
       "status": "recommended",
       "period": "ours",
       "grammar": "noun, indeclinable",
-      "comment": "Indeclinable."
+      "comment": "Indeclinable.",
+      "notes": [
+        "alfama"
+      ]
     }
   ],
   "related": [
@@ -22,5 +25,13 @@
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
+  },
+  "notes": {
+    "alfama": {
+      "form": "Alfāma",
+      "claim": "long a",
+      "html": "The long ā keeps the stress of Portuguese Alfama on its second syllable, as the ruling says.",
+      "ruling": "place-name-stress"
+    }
   }
 }

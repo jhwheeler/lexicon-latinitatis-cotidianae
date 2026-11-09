@@ -1,20 +1,5 @@
 (() => {
   const root = document.documentElement;
-  const themeToggle = document.getElementById('theme-toggle');
-  // Light is the default; dark is kept where storage allows.
-  function syncTheme() {
-    const dark = root.dataset.theme === 'dark';
-    document.getElementById('theme-label').textContent = dark ? 'Light mode' : 'Dark mode';
-    themeToggle.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
-    document.querySelector('meta[name="theme-color"]').content = dark ? '#1c1b19' : '#ffffff';
-  }
-  themeToggle.addEventListener('click', () => {
-    const theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
-    root.dataset.theme = theme;
-    try { localStorage.setItem('lexicon-theme', theme); } catch {}
-    syncTheme();
-  });
-  syncTheme();
   const search = document.getElementById('search'), clear = document.getElementById('clear');
   const count = document.getElementById('results'), empty = document.getElementById('empty');
   const emptyMessage = document.getElementById('empty-message'), searchAll = document.getElementById('search-all');
@@ -206,6 +191,8 @@
     route('#contents'); search.focus();
   });
   search.addEventListener('keydown', event => { if (event.key === 'Escape') clear.click(); });
+  // A change of display (macrons, j or i) redraws the results from the entries, which show it.
+  document.addEventListener('lexicon-display', () => { renderedQuery = null; apply(); });
   apply();
   route(location.hash);
 })();

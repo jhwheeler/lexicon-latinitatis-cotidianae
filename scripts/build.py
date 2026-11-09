@@ -49,6 +49,13 @@ THEME_TOGGLE = ('<button id="theme-toggle" class="theme-toggle" type="button" ar
                 '<circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg>'
                 '<svg class="theme-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">'
                 '<path d="M20.9 13A9 9 0 0 1 11 3.1 7 7 0 1 0 20.9 13Z"/></svg><span id="theme-label">Dark mode</span></button>')
+DISPLAY_MENU = ('<details class="display-menu"><summary aria-label="Display options"><span class="display-aa" aria-hidden="true">'
+                'ā/a</span><span class="display-label">Display</span></summary><div class="display-panel">'
+                '<p class="display-row"><span>Macrons</span><button type="button" data-display="macrons" data-value="on" '
+                'aria-pressed="true">Shown</button><button type="button" data-display="macrons" data-value="off" '
+                'aria-pressed="false">Hidden</button></p><p class="display-row"><span>Consonantal i</span><button type="button" '
+                'data-display="j" data-value="j" aria-pressed="true">jam</button><button type="button" data-display="j" '
+                'data-value="i" aria-pressed="false">iam</button></p></div></details>')
 NAV = (('index.html', 'Search'), ('how-we-decide.html', 'How we decide'), ('rulings.html', 'Rulings'))
 REPO = 'https://github.com/jhwheeler/lexicon-latinitatis-cotidianae'
 POS = ('noun', 'verb', 'adjective', 'adverb', 'pronoun', 'preposition', 'conjunction', 'interjection', 'numeral', 'phrase')
@@ -535,7 +542,7 @@ def site_header(up, current=None):
     links = ''.join(f'<a href="{up}{href}"' + (' aria-current="page"' if href == current else '') + f'>{label}</a>'
                     for href, label in NAV)
     return (f'<header class="site-top wrap"><a class="site-name" href="{up}index.html" lang="la">{SITE_NAME}</a>'
-            f'<div class="site-tools"><nav class="site-nav" aria-label="Pages">{links}</nav>{THEME_TOGGLE}</div></header>')
+            f'<div class="site-tools"><nav class="site-nav" aria-label="Pages">{links}</nav>{DISPLAY_MENU}{THEME_TOGGLE}</div></header>')
 
 
 def site_footer(up):
@@ -872,7 +879,8 @@ def render_index(root, site):
                     for key in filters)
     # The index inlines its styles so that a saved copy still works; its fonts sit in assets/.
     styles = (root / 'src/styles.css').read_text(encoding='utf-8').replace('url(fonts/', 'url(assets/fonts/')
-    replacements = {'styles': styles, 'theme_toggle': THEME_TOGGLE,
+    replacements = {'styles': styles, 'theme_toggle': THEME_TOGGLE, 'display_menu': DISPLAY_MENU,
+                    'page_script': (root / 'src/page.js').read_text(encoding='utf-8'),
                     'search': (root / 'src/search.js').read_text(encoding='utf-8'),
                     'filters': chips, 'contents': contents, 'entries': '\n'.join(sections),
                     'entry_count': str(len(site['legacy'])), 'record_count': str(len(site['records']))}

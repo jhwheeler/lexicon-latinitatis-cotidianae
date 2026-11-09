@@ -5,11 +5,14 @@ Inputs: data/catalog.json, data/entries/<category>.json (grouped entries),
 data/concepts/<concept>.json (one record per concept), data/rulings.json
 (editorial rulings) and the templates in src/.
 
-Outputs: index.html (the searchable single page), c/<concept>.html (one page
-per concept record), l/<word>.html (one page per Latin word that heads a term),
-how-we-decide.html (editorial policy), rulings.html (the rulings register),
-sitemap.xml, assets/lexicon.css, assets/lexicon.js and assets/fonts/. See
-docs/data-format.md and docs/records.md.
+Outputs, all plain pages that work without scripts: index.html (the front page:
+search and contents), k/<category>.html (a category's entries), words.html and
+latin.html (the English and Latin headwords from A to Z), c/<concept>.html (one
+page per concept record), l/<word>.html (one page per Latin word that heads a
+term), how-we-decide.html (editorial policy), rulings.html (the rulings
+register), sitemap.xml, and in assets/ the stylesheet, the page and search
+scripts, the search data, the redirects from the old single page (legacy.js)
+and the fonts. See docs/data-format.md and docs/records.md.
 """
 import unicodedata
 import argparse
@@ -41,7 +44,7 @@ TAG_ORDER = ('Ancient Latin', 'Late Latin', 'Medieval & Renaissance', 'Neo-Latin
              'Quotations', 'Composed phrases', 'Draft')
 RULING_KINDS = {'orthography': 'Spelling', 'quantity': 'Vowel length', 'usage': 'Usage', 'word': 'Word choices'}
 RULING_STATUSES = ('current', 'provisional', 'withdrawn')
-THEME_INIT = ("<script>\ntry {\n  document.documentElement.dataset.theme = "
+THEME_INIT = ("<script>\ndocument.documentElement.classList.add('js');\ntry {\n  document.documentElement.dataset.theme = "
               "localStorage.getItem('lexicon-theme') === 'dark' ? 'dark' : 'light';\n} catch {}\n</script>")
 DARK_PAPER = '#1c1b19'
 THEME_TOGGLE = ('<button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to dark mode">'
@@ -231,7 +234,7 @@ def load_records(root, categories, legacy, rulings):
     for path in sorted(folder.glob('*.json')) if folder.exists() else []:
         record = json.loads(path.read_text(encoding='utf-8'))
         fields(record, ('id', 'english', 'domain', 'terms', 'sources', 'review'),
-               ('sense', 'pos', 'also', 'wikidata', 'audience', 'phrases', 'notes', 'related', 'replaces'))
+               ('sense', 'pos', 'also', 'also_under', 'wikidata', 'audience', 'phrases', 'notes', 'related', 'replaces'))
         key = string(record['id'])
         where = f'concept {key}'
         require(re.fullmatch(SLUG, key) and path.stem == key, f'Concept ID must be a slug matching its file name: {path.name}')
@@ -244,6 +247,9 @@ def load_records(root, categories, legacy, rulings):
             string(record['sense'])
         strings(record.get('also', []), f'Also in {where}')
         require(record['domain'] in categories, f'Unknown domain in {where}')
+        under = strings(record.get('also_under', []), f'Also under in {where}')
+        require(all(c in categories and c != record['domain'] for c in under) and len(under) == len(set(under)),
+                f'Invalid also_under in {where}: {under}')
         require(re.fullmatch(r'Q[1-9][0-9]*', record.get('wikidata', 'Q1')), f'Invalid Wikidata item in {where}')
         require(record.get('audience', 'child') in ('child', 'adult'), f'Invalid audience in {where}')
         notes = record.get('notes', {})
@@ -365,6 +371,8 @@ def grammar(term):
     if match:
         genitive = match['gen'].lstrip('-')
         name = next((n for ending, n in DECLENSIONS if genitive.endswith(ending)), None)
+        if name == 'fifth' and not match['head'].endswith('ēs'):
+            name = 'second'   # malleus, malleī; hypogēum, hypogēī
         return (f'noun, {name} declension' if name else 'noun') + (', plural' if match['pl'] else '')
     match = VERB_FORM.match(term['latin'])
     if match:
@@ -412,8 +420,8 @@ def word_index(records):
 
 
 class Links:
-    """Where links point from a given page: the index ('index'), a concept page ('concept'),
-    a Latin word's page ('word') or another page at the root ('root')."""
+    """Where links point from a given page: a concept page ('concept'), a Latin word's page
+    ('word') or a page at the root ('index', 'root')."""
     def __init__(self, site, where='index', current_word=None):
         self.site, self.where, self.current_word = site, where, current_word
         self.up = '../' if where in ('concept', 'word') else ''
@@ -421,11 +429,11 @@ class Links:
     def concept(self, key):
         if self.where == 'concept':
             return f'{key}.html'
-        return f'../c/{key}.html' if self.where == 'word' else (f'#c-{key}' if self.where == 'index' else f'c/{key}.html')
+        return f'../c/{key}.html' if self.where == 'word' else f'c/{key}.html'
 
     def entry(self, key):
-        target = entry_html_id(self.site['legacy'][key])
-        return f'#{target}' if self.where == 'index' else f'{self.up}index.html#{target}'
+        """A grouped card, on its category's page."""
+        return self.up + self.site['anchors'][key]
 
     def ruling(self, key):
         return f'{self.up}rulings.html#r-{key}'
@@ -470,69 +478,6 @@ def term_meta(term):
                                   '; '.join(term.get('evidence', []))) if x)
 
 
-def render_record(record, site):
-    """A record's card in its category on the index, in the format of its page: the English headword
-    and part of speech, the Latin to say with its grammar and period, the other words, the examples,
-    the notes and the sources. Search reads the same lines as on a grouped card."""
-    key, links = record['id'], Links(site, 'index')
-    numbers = note_numbers(record)
-
-    def refs(item):
-        return ''.join(f'<sup class="fn-ref"><a href="#fn-{key}-{numbers[n]}" aria-label="Note {numbers[n]}">{numbers[n]}</a></sup>'
-                       for n in item.get('notes', []))
-
-    def term_line(term, lead=False):
-        head, rest = links.latin(term['latin'])
-        gloss = term.get('gloss', '')
-        gloss = (f' <span class="gloss">— {escape(gloss)}</span>'
-                 if gloss and gloss.strip().lower() != record['english'].strip().lower() else '')
-        # The answer's line doesn't repeat the headword, but search finds it there as the definition.
-        found = f' data-search="{escape(record["english"], quote=True)}"' if lead and not gloss else ''
-        register = f'<span class="rec-meta register">({term["register"]})</span>' if 'register' in term else ''
-        comment = f'<span class="rec-comment">{term["comment"]}</span>' if 'comment' in term else ''
-        return (f'<li class="term{" lead" if lead else ""}" data-status="{term["status"]}"{found}><strong lang="la">{head}{escape(rest)}</strong>'
-                f'{refs(term)}{gloss}<span class="rec-meta">{term_meta(term)}</span>{register}{comment}</li>')
-
-    terms = ordered_terms(record)
-    body = '<ul class="rec">' + term_line(terms[0], lead=True) + '</ul>'
-    if terms[1:]:
-        body += ('<h4 class="rec-label">Other words</h4><ul class="rec words">'
-                 + ''.join(term_line(t) for t in terms[1:]) + '</ul>')
-    if record.get('phrases'):
-        items = []
-        for phrase in record['phrases']:
-            source = ('<span class="src composed">composed</span>' if phrase['source'] == 'composed'
-                      else f'<span class="src">{phrase["source"]}</span>')
-            items.append(f'<li class="phrase"><strong lang="la">{escape(phrase["latin"])}</strong>{refs(phrase)}'
-                         f'<span class="en">{escape(phrase["english"])} {source}</span></li>')
-        body += '<h4 class="rec-label">Examples</h4><ul class="rec ex">' + ''.join(items) + '</ul>'
-    if record.get('related'):
-        body += ('<p class="related">See also '
-                 + ', '.join(f'<a href="{links.related(r)}">{links.label(r)}</a>' for r in record['related']) + '.</p>')
-    if numbers:
-        notes = []
-        for name, number in numbers.items():
-            note = record['notes'][name]
-            ruling = ''
-            if 'ruling' in note:
-                ruling = (f' <a class="ruling-link" href="{links.ruling(note["ruling"])}">'
-                          f'Ruling: {escape(site["rulings"][note["ruling"]]["title"])}</a>')
-            notes.append(f'<li id="fn-{key}-{number}">{note_html(note)}{ruling}</li>')
-        body += '<ol class="footnotes" aria-label="Notes">' + ''.join(notes) + '</ol>'
-    body += ('<details class="entry-sources"><summary>Sources &amp; evidence</summary>'
-             + ''.join(f'<p>{s}</p>' for s in record['sources']) + f'<p>{review_state(record["review"])}</p></details>')
-    anchors = ''.join(f'<span class="legacy-anchor" id="{escape(old)}"></span>' for old in record.get('replaces', []))
-    pos = pos_label(record)
-    draft = ' <span class="tag">draft</span>' if record['review']['status'] == 'draft' else ''
-    sense = f' <span class="sense">{escape(record["sense"])}</span>' if 'sense' in record else ''
-    return (f'<article class="entry record" id="c-{key}" data-entry data-record data-entry-id="c-{key}" '
-            f'data-category="{record["domain"]}" data-search="{escape(" ".join(record.get("also", [])), quote=True)}">{anchors}\n'
-            f'<header class="entry-head"><h3>{escape(record["english"])}'
-            + (f' <span class="pos">{escape(pos)}</span>' if pos else '') + f'{sense}{draft}</h3></header>\n'
-            f'<div class="entry-body">{body}</div>\n'
-            f'<p class="record-meta"><a href="c/{key}.html">Page for this word</a></p></article>')
-
-
 def plain(text):
     return re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', '', text)).strip()
 
@@ -551,14 +496,15 @@ def site_footer(up):
             f'<a href="{REPO}">Source and history</a> · <a href="{REPO}/issues">Report a problem</a></p></div></footer>')
 
 
-def page_shell(title, description, canonical, up, body, current=None):
+def page_shell(title, description, canonical, up, body, current=None, scripts=()):
     return (GENERATED + '<!doctype html>\n<html lang="en" data-theme="light">\n<head>\n<meta charset="utf-8">\n'
             '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
             '<meta name="color-scheme" content="light dark">\n<meta name="theme-color" content="#ffffff">\n'
             f'<title>{escape(title)}</title>\n<meta name="description" content="{escape(description, quote=True)}">\n'
             f'<link rel="canonical" href="{SITE_URL}{canonical}">\n{THEME_INIT}\n'
             f'<link rel="stylesheet" href="{up}assets/lexicon.css">\n<script src="{up}assets/lexicon.js" defer></script>\n'
-            '</head>\n<body class="subpage">\n'
+            + ''.join(f'<script src="{up}assets/{name}.js" defer></script>\n' for name in scripts)
+            + '</head>\n<body class="subpage">\n'
             f'{site_header(up, current)}\n<main class="wrap page-main">\n{body}\n</main>\n{site_footer(up)}\n'
             '</body>\n</html>\n')
 
@@ -598,7 +544,9 @@ def render_concept(record, site):
     main, others = terms[0], terms[1:]
     domain = site['categories'][record['domain']]
     pos = pos_label(record)
-    parts = [f'<p class="kind"><a href="../index.html#{record["domain"]}">{escape(domain["english"])}</a></p>',
+    kinds = ' · '.join(f'<a href="../k/{key}.html">{escape(site["categories"][key]["english"])}</a>'
+                       for key in [record['domain']] + record.get('also_under', []))
+    parts = [f'<p class="kind">{kinds}</p>',
              f'<h1 class="hw">{escape(record["english"])}' + (f' <span class="pos">{escape(pos)}</span>' if pos else '') + '</h1>']
     if 'sense' in record:
         parts.append(f'<p class="sense">{escape(record["sense"])}</p>')
@@ -667,18 +615,12 @@ def render_concept(record, site):
     return '<article class="concept" data-record>\n' + '\n'.join(parts) + '\n</article>'
 
 
-def outside_index(html, up):
-    """Point links into the index (href="#anchor", as rich text copied from a card has them) at
-    the index from another page; a page's own notes (#fn-…) stay where they are."""
-    return re.sub(r'href="#(?!fn-)', f'href="{up}index.html#', html)
-
-
 def render_concept_page(record, site, categories):
     english, heading = record['english'], record_heading(record)
     lemma = term_head(ordered_terms(record)[0]['latin'])
     return page_shell(f'{english} in Latin: {lemma} · {SITE_NAME}',
                       f'How to say “{english}” in Latin: {heading}. With the period of each form, its sources and examples.',
-                      f'c/{record["id"]}.html', '../', outside_index(render_concept(record, site), '../'))
+                      f'c/{record["id"]}.html', '../', resolve_anchors(render_concept(record, site), site, '../', f'c/{record["id"]}.html'))
 
 
 def render_word_page(head, info, site):
@@ -750,7 +692,7 @@ def render_word_page(head, info, site):
                  ' (Lewis &amp; Short and others)</p></footer>')
     return page_shell(f'{head}: a Latin word · {SITE_NAME}',
                       f'The Latin word {head} ({"; ".join(meanings)}): where the lexicon uses it, with its notes and examples.',
-                      f'l/{info["slug"]}.html', '../', outside_index('<article class="word">\n' + '\n'.join(parts) + '\n</article>', '../'))
+                      f'l/{info["slug"]}.html', '../', resolve_anchors('<article class="word">\n' + '\n'.join(parts) + '\n</article>', site, '../', f'l/{info["slug"]}.html'))
 
 
 def render_rulings(site):
@@ -848,43 +790,244 @@ def load_site(root):
     site = {'catalog': catalog, 'categories': categories, 'entries': entries, 'legacy': legacy, 'rulings': rulings}
     site['records'] = load_records(root, categories, legacy, rulings)
     site['words'] = word_index(site['records'])
+    site['anchors'] = anchor_map(site)
     for key in categories:
         require(entries[key] or any(r['domain'] == key for r in site['records'].values()), f'Empty category: {key}')
     return site
 
 
-def render_index(root, site):
-    sections, counts = [], {}
+def anchor_map(site):
+    """Where the anchors of the old single-page index lead now, as paths from the site's root:
+    categories to their pages, records (and the cards they replaced) to theirs, cards not yet
+    converted to their place on their category's page."""
+    target = {}
     for key, category in site['categories'].items():
-        cards = [render_entry(entry, key) for entry in site['entries'][key]]
-        records = sorted((r for r in site['records'].values() if r['domain'] == key), key=lambda r: (r['english'].lower(), r['id']))
-        cards += [render_record(r, site) for r in records]
-        counts[key] = len(cards)
-        aliases = ''.join(f'<span class="legacy-anchor" id="{a}"></span>' for a in category.get('aliases', []))
-        sections.append(f'<section class="category" data-category-section="{key}" id="{key}">{aliases}'
-                        f'<div class="category-heading"><h2 lang="la">{escape(string(category["latin"]))}</h2>'
-                        f'<p class="eyebrow">{escape(string(category["english"]))}</p></div>'
-                        '<div class="entries">' + '\n'.join(cards) + '</div></section>')
+        target[key] = f'k/{key}.html'
+        for alias in category.get('aliases', []):
+            target[alias] = f'k/{key}.html'
+        for entry in site['entries'][key]:
+            target[entry['id']] = target[entry_html_id(entry)] = f'k/{key}.html#{entry_html_id(entry)}'
+    for key, record in site['records'].items():
+        target[f'c-{key}'] = f'c/{key}.html'
+        for old in record.get('replaces', []):
+            target[old] = f'c/{key}.html'
+        for n in note_numbers(record).values():
+            target[f'fn-{key}-{n}'] = f'c/{key}.html#fn-{key}-{n}'
+    return target
+
+
+def resolve_anchors(html, site, up, page):
+    """Point links to anchors of the old index (href="#…", as card text has them) at the page that
+    now holds the target; a link to this page's own anchors stays as it is."""
+    targets = site['anchors']
+
+    def resolve(match):
+        key = match.group(1)
+        if key not in targets:
+            return match.group(0)
+        path, _, fragment = targets[key].partition('#')
+        if path == page:
+            return f'href="#{fragment or key}"'
+        return f'href="{up}{targets[key]}"'
+    return re.sub(r'href="#([^"]+)"', resolve, html)
+
+
+def search_block(up, category=None, total=0):
+    """The search bar, its status line and the place for results (they need scripts; without them
+    the bar is hidden and the page's own lists remain)."""
+    scope = (f'<input type="hidden" name="cat" value="{category}">' if category else '')
+    return (f'<form class="toolbar" role="search" action="{up}index.html" method="get">'
+            '<input id="search" class="search" type="search" name="q" autocomplete="off" '
+            'placeholder="Search English or Latin…" aria-label="Search the lexicon">'
+            f'{scope}<button id="clear" class="clear" type="button">Clear</button></form>\n'
+            f'<div class="meta"><span id="results" role="status" aria-live="polite">{total:,} entries</span>'
+            '<span class="search-hint">Macrons optional</span></div>\n'
+            '<section id="search-results" aria-label="Search results" hidden><div id="search-result-list" class="results"></div></section>\n'
+            '<p id="empty" class="empty"><span id="empty-message">No entries match that search.</span>'
+            '<button id="search-all" class="search-all" type="button" hidden>Search all categories</button></p>')
+
+
+def category_entries(key, site):
+    """A category's entries in alphabetical order: (sort key, English, part of speech, Latin, link
+    from the site's root, record or card)."""
+    rows = []
+    for record in site['records'].values():
+        if record['domain'] == key or key in record.get('also_under', []):
+            english = record['english'] + (f' ({record["sense"]})' if 'sense' in record else '')
+            rows.append((fold(english), english, pos_label(record), term_head(ordered_terms(record)[0]['latin']),
+                         f'c/{record["id"]}.html', record))
+    for entry in site['entries'][key]:
+        rows.append((fold(entry['english']), entry['english'], '', entry['latin'],
+                     f'k/{key}.html#{entry_html_id(entry)}', entry))
+    return sorted(rows, key=lambda row: (row[0], row[4]))
+
+
+def word_list(rows, up, show_category=None):
+    items = []
+    for _, english, pos, latin, path, _ in rows:
+        extra = (f'<span class="w-cat" lang="la">{escape(show_category(path))}</span>' if show_category else '')
+        items.append(f'<li><a href="{up}{path}"><span class="w-en">{escape(english)}'
+                     + (f' <span class="w-pos">{escape(pos)}</span>' if pos else '')
+                     + f'</span><span class="w-la" lang="la">{escape(latin)}</span>{extra}</a></li>')
+    return '<ul class="wlist">' + ''.join(items) + '</ul>'
+
+
+def category_nav(site, up, current=None):
+    links = ''.join(f'<li><a href="{up}k/{key}.html" lang="la"' + (' aria-current="page"' if key == current else '')
+                    + f'>{escape(site["categories"][key]["latin"])}</a></li>'
+                    for key in site['catalog']['filters'] if key != 'all')
+    return (f'<nav class="cat-side" aria-label="Categories"><a class="cat-home" href="{up}index.html">Contents</a>'
+            f'<ol>{links}</ol></nav>'
+            f'<details class="cat-menu"><summary><span>Categories</span><span class="cat-current" lang="la">'
+            + (escape(site['categories'][current]['latin']) if current else '') + '</span></summary>'
+            f'<a class="cat-home" href="{up}index.html">Contents</a><ol>{links}</ol></details>')
+
+
+def render_category_page(key, site):
+    category, up = site['categories'][key], '../'
+    rows = category_entries(key, site)
+    cards = [entry for entry in site['entries'][key]]
+    older = ''
+    if cards:
+        older = ('<section class="older" aria-labelledby="older-h"><h2 id="older-h">In the older format</h2>'
+                 '<p class="older-note">These entries are being converted to pages of their own.</p>'
+                 '<div class="entries">' + '\n'.join(render_entry(entry, key) for entry in cards) + '</div></section>')
+    aliases = ''.join(f'<span class="legacy-anchor" id="{a}"></span>' for a in category.get('aliases', []))
+    body = (f'<div class="catpage" data-category="{key}" data-category-name="{escape(category["latin"], quote=True)}">'
+            + category_nav(site, up, key) + '<div class="cat-main">' + search_block(up, key, len(rows))
+            + f'<div id="category-view">{aliases}<header class="category-heading"><h1 lang="la">{escape(category["latin"])}</h1>'
+            f'<p class="eyebrow">{escape(category["english"])} · {len(rows)} entries</p></header>'
+            + word_list(rows, up) + older + '</div></div></div>')
+    body = resolve_anchors(body, site, up, f'k/{key}.html')
+    return page_shell(f'{category["latin"]}: {category["english"]} · {SITE_NAME}',
+                      f'Everyday Latin for {category["english"].lower()}: {len(rows)} entries, each with its sources.',
+                      f'k/{key}.html', up, body, scripts=('search',))
+
+
+def render_az_pages(site):
+    """The English and the Latin words from A to Z."""
+    # A record listed under several categories appears once, under its own.
+    rows = sorted({row[4]: row for key in site['categories'] for row in category_entries(key, site)}.values(),
+                  key=lambda row: (row[0], row[4]))
+    names = {f'k/{key}.html': c['latin'] for key, c in site['categories'].items()}
+
+    def category_of(path):
+        if path.startswith('k/'):
+            return names[path.split('#')[0]]
+        return site['categories'][site['records'][path[2:-5]]['domain']]['latin']
+
+    def letters(items, letter_of, render):
+        groups = {}
+        for item in items:
+            groups.setdefault(letter_of(item), []).append(item)
+        nav = ''.join(f'<a href="#letter-{c}">{c.upper()}</a>' for c in groups)
+        return (f'<nav class="az-nav" aria-label="Letters">{nav}</nav>'
+                + ''.join(f'<section class="az-letter" id="letter-{c}"><h2>{c.upper()}</h2>{render(group)}</section>'
+                          for c, group in groups.items()))
+    first = lambda text: (re.sub(r'[^a-z]', '', text) or '#')[0]
+    english = letters(rows, lambda row: first(row[0]), lambda group: word_list(group, '', category_of).replace('class="wlist"', 'class="wlist az-list"', 1))
+    words = sorted(site['words'].items(), key=lambda item: (fold(item[0]), item[1]['slug']))
+
+    def latin_list(group):
+        items = []
+        for head, info in group:
+            # Each meaning once, though several records gloss the word alike.
+            meanings = ', '.join(dict.fromkeys(part.strip() for r, t in info['uses']
+                                               for part in re.split(r'[,;] ', t.get('gloss', r['english'])) if part.strip()))
+            items.append(f'<li><a href="l/{info["slug"]}.html"><span class="w-la" lang="la">{escape(head)}</span>'
+                         f'<span class="w-en">{escape(meanings)}</span></a></li>')
+        return '<ul class="wlist az-list latin">' + ''.join(items) + '</ul>'
+    latin = letters(words, lambda item: first(fold(item[0])), latin_list)
+    pages = {}
+    pages['words.html'] = page_shell(f'English words A–Z · {SITE_NAME}',
+                                     'Every English headword of the lexicon, from A to Z, with its Latin.', 'words.html', '',
+                                     f'<h1 class="page-title">English words, A–Z</h1><p class="lead">{len(rows)} entries. '
+                                     'For the Latin words, see <a href="latin.html">the Latin index</a>.</p>' + english)
+    pages['latin.html'] = page_shell(f'Latin words A–Z · {SITE_NAME}',
+                                     'Every Latin word that heads an entry of the lexicon, from A to Z, with its meanings.', 'latin.html', '',
+                                     f'<h1 class="page-title">Latin words, A–Z</h1><p class="lead">{len(words)} words, each with a page '
+                                     'that gathers its entries. For the English words, see <a href="words.html">the English index</a>.</p>' + latin)
+    return pages
+
+
+def line_kind(html):
+    """A grouped card's line, as the search ranks it: a definition starts with a Latin headword,
+    an example with a Latin sentence."""
+    m = re.match(r'\s*<strong lang="la">(.*?)</strong>', html)
+    if not m:
+        return 'e', '', plain(html)
+    latin = plain(m.group(1))
+    definition = len(latin.split()) <= 10 and (re.match(r'[a-zāēīōūȳæœ]', latin) or re.search(r'\b[mfn]\.\s*(pl\.)?$', latin))
+    return ('d' if definition else 'e'), latin, plain(html[m.end():]).lstrip('—–- ').strip()
+
+
+def search_data(site):
+    """The search index, as a script (so that search also works on pages opened from disk)."""
+    items = []
+    for key in site['catalog']['filters']:
+        if key == 'all':
+            continue
+        for _, english, pos, latin, path, item in category_entries(key, site):
+            if path.startswith('c/'):
+                record = item
+                if record['domain'] != key:
+                    continue   # listed here too, but indexed once, under its own category
+                lines = [['d', t['latin'], t.get('gloss', ''), plain(term_meta(t))] for t in ordered_terms(record)]
+                lines += [['e', p['latin'], p['english'], plain(p['source'])] for p in record.get('phrases', [])]
+                lines += [['n', plain(note_html(record['notes'][n]))] for n in note_numbers(record)]
+                items.append({'id': f'c-{record["id"]}', 'u': path, 'k': key, 'en': english, 'pos': pos,
+                              'al': ' '.join(record.get('also', [])), 'l': lines,
+                              **({'x': record['also_under']} if record.get('also_under') else {})})
+            else:
+                entry, lines = item, []
+                for block in entry['blocks']:
+                    for li in block.get('items', []):
+                        lines.append(list(line_kind(li['html'])))
+                    if block['type'] == 'paragraph':
+                        lines.append(['n', plain(block['html'])])
+                    for paragraph in block.get('paragraphs', []):
+                        lines.append(['n', plain(paragraph)])
+                items.append({'id': entry['id'], 'u': path, 'k': key, 'en': english, 'la': latin,
+                              'al': entry.get('keywords', ''), 'l': lines})
+    data = {'categories': {key: c['latin'] for key, c in site['categories'].items()}, 'items': items}
+    return 'window.lexiconData = ' + json.dumps(data, ensure_ascii=False, separators=(',', ':')) + ';\n'
+
+
+def render_index(root, site):
     filters = site['catalog']['filters']
     require(isinstance(filters, list) and all(isinstance(f, str) for f in filters), 'Invalid filters')
     require(len(filters) == len(set(filters)) and set(filters) == set(site['categories']) | {'all'}, 'Filters must cover every category once')
-    # The front page lists the categories in the order of the filters; "all" is the front page itself,
-    # whose search covers every category.
-    contents = ''.join(f'<li><a href="#{key}"><span class="toc-la" lang="la">{escape(site["categories"][key]["latin"])}</span>'
-                       f'<span class="toc-n">{counts[key]}<span class="vh"> entries</span></span>'
+    # The front page lists the categories in the order of the filters.
+    contents = ''.join(f'<li><a href="k/{key}.html"><span class="toc-la" lang="la">{escape(site["categories"][key]["latin"])}</span>'
+                       f'<span class="toc-n">{len(category_entries(key, site))}<span class="vh"> entries</span></span>'
                        f'<span class="toc-en">{escape(site["categories"][key]["english"])}</span></a></li>'
                        for key in filters if key != 'all')
-    chips = ''.join(('<a class="chip chip-home" href="#contents" data-filter="all">Contents</a>' if key == 'all' else
-                     f'<a class="chip" href="#{key}" data-filter="{key}" lang="la">{escape(string(site["categories"][key]["latin"]))}</a>')
-                    for key in filters)
-    # The index inlines its styles so that a saved copy still works; its fonts sit in assets/.
-    styles = (root / 'src/styles.css').read_text(encoding='utf-8').replace('url(fonts/', 'url(assets/fonts/')
-    replacements = {'styles': styles, 'theme_toggle': THEME_TOGGLE, 'display_menu': DISPLAY_MENU,
-                    'page_script': (root / 'src/page.js').read_text(encoding='utf-8'),
-                    'search': (root / 'src/search.js').read_text(encoding='utf-8'),
-                    'filters': chips, 'contents': contents, 'entries': '\n'.join(sections),
-                    'entry_count': str(len(site['legacy'])), 'record_count': str(len(site['records']))}
-    return fill(root / 'src/page.html', replacements)
+    # Old links (#culina, #entry-528) need the table of where things are now; a link within the page doesn't.
+    redirect = ("<script>(function () { function go() { var id = location.hash.slice(1); "
+                "if (id && !document.getElementById(id)) { var s = document.createElement('script'); "
+                "s.src = 'assets/legacy.js'; document.head.appendChild(s); } } go(); addEventListener('hashchange', go); })();</script>")
+    total = len(site['records']) + len(site['legacy'])
+    replacements = {'theme': THEME_INIT, 'legacy': redirect, 'theme_toggle': THEME_TOGGLE, 'display_menu': DISPLAY_MENU,
+                    'search': search_block('', None, total), 'contents': contents, 'total': f'{total:,}',
+                    'record_count': f'{len(site["records"]):,}'}
+    return resolve_anchors(fill(root / 'src/page.html', replacements), site, '', 'index.html')
+
+
+def legacy_script(site):
+    """Links to the old single page (#culina, #entry-528, #c-socks) lead to the page that holds
+    them now. Records and their notes follow a pattern; categories and old cards need the table."""
+    table = {old: path for old, path in site['anchors'].items()
+             if not (old.startswith('c-') and path == f'c/{old[2:]}.html')
+             and not (old.startswith('fn-') and path.endswith('#' + old))}
+    return ('(function () {\n'
+            f'  var to = {json.dumps(table, ensure_ascii=False, separators=(",", ":"), sort_keys=True)};\n'
+            '  var key, m;\n'
+            '  try { key = decodeURIComponent(location.hash.slice(1)); } catch (e) { return; }\n'
+            '  var path = to[key];\n'
+            "  if (!path && (m = /^c-([a-z0-9-]+)$/.exec(key))) path = 'c/' + m[1] + '.html';\n"
+            "  if (!path && (m = /^fn-([a-z0-9-]+?)-[0-9]+$/.exec(key))) path = 'c/' + m[1] + '.html#' + key;\n"
+            '  if (path) location.replace(path);\n'
+            '})();\n')
 
 
 def fill(path, replacements):
@@ -898,7 +1041,8 @@ def fill(path, replacements):
 
 
 def render_sitemap(site):
-    pages = (['', 'how-we-decide.html', 'rulings.html'] + [f'c/{key}.html' for key in sorted(site['records'])]
+    pages = (['', 'how-we-decide.html', 'rulings.html', 'words.html', 'latin.html']
+             + [f'k/{key}.html' for key in site['categories']] + [f'c/{key}.html' for key in sorted(site['records'])]
              + [f'l/{slug}.html' for slug in sorted(w['slug'] for w in site['words'].values())])
     return ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
             + ''.join(f'<url><loc>{SITE_URL}{page}</loc></url>\n' for page in pages) + '</urlset>\n')
@@ -908,6 +1052,12 @@ def build_site(root=ROOT):
     """Return every generated file as {path relative to the repository root: text}."""
     site = load_site(root)
     outputs = {'index.html': render_index(root, site)}
+    for key in site['categories']:
+        outputs[f'k/{key}.html'] = render_category_page(key, site)
+    outputs.update(render_az_pages(site))
+    outputs['assets/search-data.js'] = search_data(site)
+    outputs['assets/legacy.js'] = legacy_script(site)
+    outputs['assets/search.js'] = (root / 'src/search.js').read_text(encoding='utf-8')
     outputs['how-we-decide.html'] = fill(root / 'src/how-we-decide.html', {
         'ruling_count': str(len(site['rulings'])), 'theme': THEME_INIT,
         'header': site_header('', 'how-we-decide.html'), 'footer': site_footer('')})
@@ -929,13 +1079,13 @@ def build_site(root=ROOT):
 
 
 def build(root=ROOT):
-    """The main page alone (kept for the converter and its tests)."""
+    """The front page alone (for the tests)."""
     return build_site(root)['index.html']
 
 
 def stale(root, outputs):
     """Generated pages and fonts that no longer have a source."""
-    found = [p for folder, pattern in (('c', '*.html'), ('l', '*.html'), ('assets/fonts', '*'))
+    found = [p for folder, pattern in (('c', '*.html'), ('l', '*.html'), ('k', '*.html'), ('assets/fonts', '*'))
              if (root / folder).exists() for p in (root / folder).glob(pattern)]
     return sorted(str(PurePosixPath(p.relative_to(root))) for p in found
                   if str(PurePosixPath(p.relative_to(root))) not in outputs)

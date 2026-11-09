@@ -1,8 +1,8 @@
 # Concept records, notes and rulings
 
-The lexicon is moving from grouped topic cards (`data/entries/`, see `data-format.md`) to **one record per concept**: one sense of an English word, with every Latin form for it. The first 23 records (8 November 2026) are a pilot converted from four grouped entries; new words go in as records, and the grouped entries are converted batch by batch, each split checked by a person.
+The lexicon has **one record per concept**: one sense of an English word, with every Latin form for it. The first 23 records (8 November 2026) were a pilot converted from four grouped entries; by 9 November every grouped topic card (`data/entries/`, see `data-format.md`) had been converted, batch by batch, into records that stay drafts until a person has read them. New words go in as records.
 
-The builder renders each record in four places: as a card in its category on `index.html`, in the same format as its page but without the margin (so search and the category views work as before), as a page of its own at `c/<id>.html`, on `rulings.html` under each ruling its notes cite, and on the page of each Latin word it uses (`l/<word>.html`, below). `how-we-decide.html` states the general rules and links to the rulings page, and back. `sitemap.xml` lists every page.
+The builder renders each record as a page of its own at `c/<id>.html`; lists it, with its leading Latin, on its category's page (`k/<domain>.html`, and on the pages of any categories in `also_under`) and in `words.html`; indexes it for the search (`assets/search-data.js`); shows it on `rulings.html` under each ruling its notes cite; and lists it on the page of each Latin word it uses (`l/<word>.html`, below), which `latin.html` lists in turn. `how-we-decide.html` states the general rules and links to the rulings page, and back. `sitemap.xml` lists every page.
 
 ## A record: `data/concepts/<id>.json`
 
@@ -33,18 +33,19 @@ The builder renders each record in four places: as a card in its category on `in
 
 | Field | Required | Holds |
 | --- | --- | --- |
-| `id` | yes | a slug (`a-z`, digits, hyphens), the same as the file name; the page is `c/<id>.html`, the card `#c-<id>` |
+| `id` | yes | a slug (`a-z`, digits, hyphens), the same as the file name; the page is `c/<id>.html` (old links to `index.html#c-<id>` lead there) |
 | `english` | yes | the English headword, one sense |
 | `sense` | no | a short disambiguation, shown after the headword (“the activity”) |
 | `pos` | no | the headword’s part of speech, shown after it: `noun`, `verb`, `adjective`, `adverb`, `pronoun`, `preposition`, `conjunction`, `interjection`, `numeral`, `phrase`, or a list of them (`["verb", "noun"]`) |
 | `also` | no | other English words that should find this concept in search |
-| `domain` | yes | a category ID from `data/catalog.json` |
+| `domain` | yes | a category ID from `data/catalog.json`: the record's own category |
+| `also_under` | no | other categories whose pages list the record too (soap is a kitchen record listed under the household); the search counts it in each |
 | `wikidata` | no | the Wikidata item (`Q…`) for the sense |
 | `audience` | no | `child` (default) or `adult` |
 | `terms` | yes | the Latin forms; at least one `recommended` |
 | `phrases` | no | examples: `latin`, `english`, and `source` (`composed`, or a citation in rich text) |
 | `notes` | no | footnotes, by key: `html` (rich text); for a note on a form, `form`, `claim` and optionally `against` (below); optionally `ruling` (an ID in `data/rulings.json`) |
-| `related` | no | other concept IDs, or grouped-entry IDs (`entry-291`) not yet converted |
+| `related` | no | other concept IDs (or the ID of a grouped card, should one remain) |
 | `sources` | yes | the lines of “Sources & evidence”, in rich text |
 | `review` | yes | `status` (`draft` or `reviewed`), `date` (YYYY-MM-DD), `by` |
 | `replaces` | no | IDs and anchors of grouped entries this record absorbs; they stay valid links |

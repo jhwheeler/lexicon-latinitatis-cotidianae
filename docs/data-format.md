@@ -1,6 +1,6 @@
 # Structured lexicon data
 
-> Grouped entries (this document) are being converted to concept records, one per sense, with their own pages, notes and rulings: see [records.md](records.md). Every card now has a static HTML ID: its anchor if it has one, otherwise its entry ID.
+> Every grouped entry (this document) was converted to concept records, one per sense, with their own pages, notes and rulings, by 9 November 2026: see [records.md](records.md). The catalog below still applies; the entry format and the history are kept for reference. Since 9 November the site is generated as many pages (a front page, a page per category, A–Z lists, a page per record and per Latin word) rather than one; the reasons below for generating before publication still hold.
 
 ## Architecture decision
 
@@ -86,24 +86,12 @@ Unknown fields, unsupported block types, duplicate entry IDs or HTML anchors, un
 3. Keep attested words, later technical uses and our working formations clearly distinguished; preserve citations and macrons. Write consonantal i as j (`python3 scripts/consonantal_j.py --list`, then `--write`; rules in `AGENTS.md`).
 4. Run `python3 scripts/build.py`.
 5. Run `python3 scripts/build.py --check` and `python3 -m unittest discover -s tests -v`.
-6. Open generated `index.html` in a browser and check affected searches and filters.
+6. Open the affected pages in a browser (the category page, the entry's page) and check the search.
 7. Commit both sources and generated output. Open a PR; merging still publishes through the existing Pages configuration.
 
 ## Converting a hand-edited page
 
-`scripts/html_to_data.py` is the reverse of the builder. It reads a lexicon page (a hand-edited one from before this migration, or a generated one) and writes `data/catalog.json` and `data/entries/*.json`; `--template` also writes `src/page.html`, `src/styles.css` and `src/search.js`. Rich text is serialized as the data files store it: entities decoded and re-escaped, attributes in alphabetical order. Markup outside the schema (an unknown block element or class, stray text, an entry outside a category) stops the conversion instead of being dropped. Category counts in the old page are ignored, since the builder regenerates them.
-
-Use it to port a branch that still edits `index.html` directly:
-
-```sh
-git show some-branch:index.html > /tmp/old.html
-python3 scripts/html_to_data.py /tmp/old.html --out /tmp/converted
-diff -r data /tmp/converted/data   # review, then copy the intended changes into data/
-```
-
-Entry numbers that collide with entries already in `data/` need fresh IDs before rebuilding. The tests check that converting the generated page reproduces `data/` and `src/` exactly.
-
-Run on `index.html` from main commit `da9364b`, the converter reproduces this PR's original 189-entry data and `src/` byte for byte. Main's entries 190–193 (commit `56a2108`) were brought into the data with it; the page generated from the result matches that commit's hand-edited page in a browser DOM comparison of every entry, heading, tag, link, text node, category count, filter and the total, and in 418 search queries.
+Until November 2026 `scripts/html_to_data.py` read a hand-edited lexicon page and wrote the catalog and the entries, for porting branches that still edited `index.html` directly (PRs #1 and #5 were ported this way, below). It was removed once every card was a record and the site was no longer one page; it remains in the repository's history.
 
 ## Migration verification
 

@@ -64,14 +64,17 @@ class BuildTests(unittest.TestCase):
         new.pop('anchor', None)
         entries.append(new)
         self.write(self.path, entries)
-        page = builder.build(self.root)
-        total = sum(len(self.read(f'data/entries/{c["id"]}.json')) for c in self.read('data/catalog.json')['categories'])
-        records = sum(1 for p in (self.root / 'data/concepts').glob('*.json') if self.read(p)['domain'] == self.category)
-        self.assertIn(f'{total} grouped entries', page)
-        # The front page's contents give each category's count.
+        outputs = builder.build_site(self.root)
+        cards = sum(len(self.read(f'data/entries/{c["id"]}.json')) for c in self.read('data/catalog.json')['categories'])
+        records = [self.read(p) for p in (self.root / 'data/concepts').glob('*.json')]
+        listed = sum(1 for r in records if self.category in [r['domain']] + r.get('also_under', []))
+        self.assertIn(f'{cards + len(records):,} entries</span>', outputs['index.html'])
+        # The front page's contents give each category's count and link to its page.
         latin = next(c['latin'] for c in self.read('data/catalog.json')['categories'] if c['id'] == self.category)
-        self.assertIn(f'<a href="#{self.category}"><span class="toc-la" lang="la">{latin}</span>'
-                      f'<span class="toc-n">{len(entries) + records}<span class="vh"> entries</span></span>', page)
+        self.assertIn(f'<a href="k/{self.category}.html"><span class="toc-la" lang="la">{latin}</span>'
+                      f'<span class="toc-n">{len(entries) + listed}<span class="vh"> entries</span></span>', outputs['index.html'])
+        page = outputs[f'k/{self.category}.html']
+        self.assertIn(f'{len(entries) + listed} entries</p>', page)
         self.assertIn('A &lt; B &amp; C', page)
         self.assertIn('lūdicrum, lūdicrī n.', page)
 
@@ -132,7 +135,7 @@ class BuildTests(unittest.TestCase):
 
     def test_missing_template_token_rejected(self):
         path = self.root / 'src/page.html'
-        path.write_text(path.read_text(encoding='utf-8').replace('{{entry_count}}', '123'), encoding='utf-8')
+        path.write_text(path.read_text(encoding='utf-8').replace('{{record_count}}', '123'), encoding='utf-8')
         with self.assertRaisesRegex(ValueError, 'Missing template token'):
             builder.build(self.root)
 
@@ -140,62 +143,96 @@ class BuildTests(unittest.TestCase):
 
     def test_records_render_with_notes_pages_and_rulings(self):
         outputs = builder.build_site(self.root)
-        index = outputs['index.html']
-        self.assertIn('id="c-perhaps"', index)
-        self.assertIn('data-record', index)
-        self.assertIn('<li id="fn-perhaps-1">', index)
-        self.assertIn('href="rulings.html#r-fortasse"', index)
-        self.assertIn('<span class="legacy-anchor" id="entry-550"></span>', index)
-        self.assertIn('href="c/perhaps.html"', index)
+        category = outputs['k/sermo.html']
+        self.assertIn('<a href="../c/perhaps.html"><span class="w-en">perhaps <span class="w-pos">adverb</span></span>'
+                      '<span class="w-la" lang="la">fortasse</span></a>', category)
+        self.assertIn('"id":"c-perhaps","u":"c/perhaps.html","k":"sermo"', outputs['assets/search-data.js'])
         page = outputs['c/perhaps.html']
         self.assertIn('<title>perhaps in Latin: fortasse · ', page)
+        self.assertIn('<aside class="side note" id="fn-perhaps-1">', page)
         self.assertIn('href="../rulings.html#r-fortasse"', page)
+        self.assertIn('<a href="../k/sermo.html">', page)
         self.assertIn('<link rel="canonical" href="https://jhwheeler.github.io/lexicon-latinitatis-cotidianae/c/perhaps.html">', page)
         rulings = outputs['rulings.html']
         self.assertIn('id="r-fortasse"', rulings)
         self.assertIn('href="rulings.html"', outputs['how-we-decide.html'])
         self.assertIn('href="how-we-decide.html"', rulings)
         self.assertIn('<a href="c/perhaps.html">perhaps</a>', rulings)
-        self.assertIn('c/perhaps.html</loc>', outputs['sitemap.xml'])
-        self.assertIn('rulings.html</loc>', outputs['sitemap.xml'])
-        self.assertIn('<span class="legacy-anchor" id="theodorus"></span>', index)
+        for path in ('', 'c/perhaps.html', 'k/sermo.html', 'words.html', 'latin.html', 'rulings.html', 'l/fortasse.html'):
+            self.assertIn(f'cotidianae/{path}</loc>', outputs['sitemap.xml'])
         self.assertIn('href="../l/fortasse.html"', page)
         self.assertIn('<h1 class="hw">perhaps <span class="pos">adverb</span></h1>', page)
         word = outputs['l/fortasse.html']
         self.assertIn('<h1 class="hw" lang="la">fortasse</h1>', word)
         self.assertIn('href="../c/perhaps.html"', word)
         self.assertIn('href="../rulings.html#r-fortasse"', word)
-        self.assertIn('l/fortasse.html</loc>', outputs['sitemap.xml'])
         self.assertIn('<a href="l/fortasse.html" lang="la">fortasse</a>', rulings)
-        self.assertIn('href="l/caccabus.html"', index)
-        self.assertIn('url(assets/fonts/lexicon-serif-400.woff2)', index)
+        self.assertIn('<a href="l/caccabus.html"><span class="w-la" lang="la">caccabus</span>', outputs['latin.html'])
         self.assertIn('url(fonts/lexicon-serif-400.woff2)', outputs['assets/lexicon.css'])
         self.assertIsInstance(outputs['assets/fonts/lexicon-serif-400.woff2'], bytes)
+
+    def test_old_single_page_links_lead_to_the_new_pages(self):
+        outputs = builder.build_site(self.root)
+        index = outputs['index.html']
+        self.assertIn("s.src = 'assets/legacy.js'", index)
+        self.assertLess(len(index), 60000)
+        legacy = outputs['assets/legacy.js']
+        # Categories, their old names and the converted cards are in the table; records and their
+        # notes follow a pattern.
+        self.assertIn('"culina":"k/culina.html"', legacy)
+        self.assertIn('"theodorus":"k/sermo.html"', legacy)
+        self.assertIn('"entry-550":"c/perhaps.html"', legacy)
+        self.assertNotIn('"c-perhaps"', legacy)
+        self.assertIn("'c/' + m[1] + '.html'", legacy)
 
     def test_a_note_on_a_form_opens_with_form_claim_and_authority(self):
         outputs = builder.build_site(self.root)
         opening = ('<b class="nf" lang="la">fortasse</b>: short final e (Lewis &amp; Short '
                    '<span lang="la">fortassē</span>, without evidence). Catull. 85.1')
-        for path in ('index.html', 'c/perhaps.html', 'l/fortasse.html'):
+        for path in ('c/perhaps.html', 'l/fortasse.html'):
             self.assertIn(opening, outputs[path], path)
         self.assertEqual(builder.note_html({'html': 'Plain note.'}), 'Plain note.')
         self.assertEqual(builder.note_html({'form': 'ānsāta', 'claim': 'long a before ns', 'html': 'From ānsa.'}),
                          '<b class="nf" lang="la">ānsāta</b>: long a before ns. From ānsa.')
 
-    def test_index_opens_on_contents_and_cards_follow_the_page_format(self):
-        index = builder.build_site(self.root)['index.html']
+    def test_front_page_lists_the_categories_and_each_has_a_page(self):
+        outputs = builder.build_site(self.root)
+        index = outputs['index.html']
         self.assertIn('<section id="contents" class="home"', index)
-        self.assertIn('<a class="chip chip-home" href="#contents" data-filter="all">Contents</a>', index)
-        self.assertIn('<a class="chip" href="#culina" data-filter="culina" lang="la">', index)
+        self.assertIn('<a href="k/culina.html"><span class="toc-la" lang="la">Culīna et potūs</span>', index)
+        self.assertIn('<a href="words.html">the English words</a>', index)
         self.assertIn('data-theme="light"', index)
         self.assertIn("=== 'dark' ? 'dark' : 'light'", index)
-        card = index[index.index('id="c-cooking-pot"'):]
-        card = card[:card.index('</article>')]
-        self.assertIn('<h3>cooking pot <span class="pos">noun</span>', card)
-        self.assertIn('<li class="term lead" data-status="recommended" data-search="cooking pot"><strong lang="la">'
-                      '<a href="l/caccabus.html">caccabus</a>', card)
-        self.assertIn('<span class="rec-meta">noun, second declension · <span class="lab">classical</span>', card)
-        self.assertIn('<h4 class="rec-label">Examples</h4><ul class="rec ex">', card)
+        self.assertIn('<form class="toolbar" role="search" action="index.html" method="get">', index)
+        page = outputs['k/culina.html']
+        self.assertIn('<div class="catpage" data-category="culina"', page)
+        self.assertIn('<a href="../k/culina.html" lang="la" aria-current="page">Culīna et potūs</a>', page)
+        self.assertIn('<form class="toolbar" role="search" action="../index.html" method="get">', page)
+        self.assertIn('<input type="hidden" name="cat" value="culina">', page)
+        self.assertIn('<a href="../c/cooking-pot.html"><span class="w-en">cooking pot <span class="w-pos">noun</span></span>'
+                      '<span class="w-la" lang="la">caccabus</span></a>', page)
+        self.assertIn('<script src="../assets/search.js" defer></script>', page)
+        words = outputs['words.html']
+        self.assertIn('<nav class="az-nav" aria-label="Letters"><a href="#letter-a">A</a>', words)
+        self.assertIn('<span class="w-cat" lang="la">Culīna et potūs</span>', words)
+
+    def test_a_record_can_be_listed_under_other_categories(self):
+        record = self.record('cooking-pot')
+        record['also_under'] = ['domus']
+        self.save_record(record)
+        outputs = builder.build_site(self.root)
+        self.assertIn('href="../c/cooking-pot.html"', outputs['k/domus.html'])
+        self.assertIn('<a href="../k/culina.html">Kitchen, meals &amp; drinks</a> · <a href="../k/domus.html">',
+                      outputs['c/cooking-pot.html'])
+        self.assertEqual(outputs['words.html'].count('href="c/cooking-pot.html"'), 1)
+        self.assertEqual(outputs['assets/search-data.js'].count('"id":"c-cooking-pot"'), 1)
+        self.assertIn('"x":["domus"]', outputs['assets/search-data.js'])
+        for bad in (['culina'], ['nowhere'], ['domus', 'domus']):
+            with self.subTest(also_under=bad):
+                record['also_under'] = bad
+                self.save_record(record)
+                with self.assertRaisesRegex(ValueError, 'Invalid also_under'):
+                    builder.build_site(self.root)
 
     def test_note_numbers_follow_reading_order(self):
         record = self.record('perhaps')
@@ -203,8 +240,8 @@ class BuildTests(unittest.TestCase):
         record['terms'][-1]['notes'] = ['second']
         record['phrases'][0]['notes'] = ['short-e']
         self.save_record(record)
-        index = builder.build_site(self.root)['index.html']
-        self.assertIn('<li id="fn-perhaps-2">Second note.</li>', index)
+        page = builder.build_site(self.root)['c/perhaps.html']
+        self.assertRegex(page, r'id="fn-perhaps-2">(?:(?!</aside>).)*Second note\.')
 
     def test_record_errors_rejected(self):
         cases = {

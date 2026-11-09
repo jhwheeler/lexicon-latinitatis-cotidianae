@@ -31,6 +31,8 @@ Records: `https://jhwheeler.github.io/lexicon-latinitatis-cotidianae/c/<id>.html
   - *pictūra* has a short *i*, against Traupman's *pīctūra* (#49).
   - *camīsula* has a long *i* (`t-shirt`; #34).
   - *pappa* is written with a double *p* and a short *a* (#48).
+  - *acroāsis* has a short first *a*, from Greek ἀκρόασις, against Lewis & Short's *ācroāsis* (`lecture`; #65).
+  - *glōssārium* has a long *ō*, from Greek (`dictionary`; #65).
   - *exīstimō* is left out until its first vowel is settled (#55).
 
 ## Recommended words to confirm
@@ -48,6 +50,12 @@ Records: `https://jhwheeler.github.io/lexicon-latinitatis-cotidianae/c/<id>.html
   - `next-year` recommends *ad annum* (Cic. Att. 5.2.1), because Traupman's *proximō annō* can mean last year (#60).
   - `council` recommends *senātus* over Traupman's *decuriōnēs* (#63).
   - `strike` now covers hitting people too; a separate *hit* record under common words may sit better (#59).
+- **School:**
+  - `conjugation` recommends *conjugātiō*, which is late (Diomedes, Priscian; earlier grammarians said *dēclīnātiō*), because "first conjugation" needs it. The brief wrongly put it in Varro and Quintilian.
+  - `adjective` recommends Quintilian's *appositum* over the late *adjectīvum*.
+  - `pencil-sharpener` recommends Morgan–Owens's *cōticula*, classically a touchstone, over Traupman's *īnstrūmentum cuspidārium*.
+  - `recite` recommends *reddō* (Hor. Ep. 1.18.14) and `lecture` recommends *schola* (Cic. Tusc. 1.7), rather than Traupman's *recitō* and *acroāsis*.
+  - `times-table` uses our own *tabula multiplicātiōnis* (#65).
 - **From the converted cards:**
   - `shirt` recommends *subūcula*, which is the undershirt (#34).
   - `pillow`: *pulvīnus* or the readers' *cervīcal* (#32).

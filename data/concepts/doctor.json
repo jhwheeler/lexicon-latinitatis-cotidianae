@@ -1,0 +1,56 @@
+{
+  "id": "doctor",
+  "english": "doctor",
+  "pos": "noun",
+  "also": [
+    "GP",
+    "physician"
+  ],
+  "domain": "urbs",
+  "terms": [
+    {
+      "latin": "medicus, medicī m.",
+      "status": "recommended",
+      "period": "classical",
+      "evidence": [
+        "Traupman 166"
+      ]
+    },
+    {
+      "latin": "medica, medicae f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "doctor (woman)",
+      "evidence": [
+        "Traupman 166"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Medicus aurēs tuās īnspiciet; nihil dolēbit.",
+      "english": "The doctor will look in your ears; it won’t hurt.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "dentist",
+    "nurse",
+    "hospital",
+    "doctors-surgery",
+    "pharmacist"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.org/medicus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: medicus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 166.",
+    "The example sentence marked “composed” is ours."
+  ],
+  "replaces": [
+    "entry-542"
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

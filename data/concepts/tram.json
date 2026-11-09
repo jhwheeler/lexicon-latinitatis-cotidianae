@@ -1,0 +1,69 @@
+{
+  "id": "tram",
+  "english": "tram",
+  "pos": "noun",
+  "also": [
+    "streetcar"
+  ],
+  "domain": "vectura",
+  "terms": [
+    {
+      "latin": "currus ēlectricus",
+      "status": "recommended",
+      "period": "modern",
+      "evidence": [
+        "Traupman 218",
+        "Morgan–Owens"
+      ],
+      "comment": "Our preferred everyday term, used in Libellus V for the Lisbon tram."
+    },
+    {
+      "latin": "currus trānsviārius",
+      "status": "alternative",
+      "period": "modern",
+      "evidence": [
+        "Morgan–Owens, citing <em>Palaestra Latina</em>"
+      ],
+      "comment": "<strong lang=\"la\">currus, currūs m.</strong> — vehicle or carriage; <strong lang=\"la\">trānsviārius, trānsviāria, trānsviārium</strong> — pertaining to a tramway."
+    },
+    {
+      "latin": "pūblicus currus ēlectricus",
+      "status": "alternative",
+      "period": "modern",
+      "evidence": [
+        "<em>Lexicon Recentis Latinitatis</em>, cited by Morgan–Owens"
+      ],
+      "comment": "Another documented tram expression."
+    },
+    {
+      "latin": "currus tramviārius",
+      "status": "alternative",
+      "period": "ours",
+      "comment": "A retained working alternative, with a borrowed <strong lang=\"la\">tram-</strong> stem whose vowel length is not established here."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Currum trānsviārium exspectāmus.",
+      "english": "We’re waiting for the tram.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "train",
+    "bus"
+  ],
+  "sources": [
+    "<a href=\"https://neolatinlexicon.org/silva-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: Silva</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 218 (<span lang=\"la\">currus ēlectricus</span>).",
+    "The example sentences marked “composed” are ours."
+  ],
+  "replaces": [
+    "entry-18"
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "id": "perform-stage",
+  "english": "perform",
+  "sense": "on stage: act, play, sing",
+  "pos": "verb",
+  "also": [
+    "act in a play",
+    "put on a play",
+    "performance",
+    "performer",
+    "give a performance"
+  ],
+  "domain": "verba",
+  "also_under": [
+    "ludi"
+  ],
+  "terms": [
+    {
+      "latin": "agō, agere, ēgī, āctum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "perform (a play), play (a part)",
+      "grammar": "verb, third conjugation, transitive",
+      "evidence": [
+        "Plaut. Amph. 88: <span lang=\"la\">ipse hanc āctūrust Juppiter cōmoediam</span>"
+      ],
+      "comment": "Of actors: <span lang=\"la\">fābulam agere</span>, to perform a play; <span lang=\"la\">partēs agere</span>, to play a part (Lewis &amp; Short). Of music, <span lang=\"la\">canere</span> or <span lang=\"la\">cantāre</span> (see sing)."
+    },
+    {
+      "latin": "peragō, peragere, perēgī, perāctum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "perform to the end, play through",
+      "grammar": "verb, third conjugation, transitive",
+      "evidence": [
+        "Cic. Sen. 70: <span lang=\"la\">neque enim histriōnī, ut placeat, peragenda fābula est</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "neque enim histriōnī, ut placeat, peragenda fābula est, modo, in quōcumque fuerit āctū, probētur",
+      "english": "An actor need not play the piece through to the end to please; it is enough that he wins approval in whatever act he appears.",
+      "source": "Cic. Sen. 70"
+    },
+    {
+      "latin": "Crās puerī fābulam agent.",
+      "english": "Tomorrow the children are putting on a play.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "play-drama",
+    "actor",
+    "stage-theatre",
+    "theatre",
+    "sing",
+    "concert"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/ago\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ago</a> · <a href=\"https://logeion.uchicago.edu/perago\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: perago</a>",
+    "Quotations from the Latinitas loci collections (loci-cicero-philosophica), checked against the editions named there.",
+    "Plautus’s <em>Amphitruo</em> checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

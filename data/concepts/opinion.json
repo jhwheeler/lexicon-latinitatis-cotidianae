@@ -1,0 +1,83 @@
+{
+  "id": "opinion",
+  "english": "opinion",
+  "pos": "noun",
+  "also": [
+    "view",
+    "point of view",
+    "in my opinion",
+    "what’s your opinion?",
+    "difference of opinion",
+    "give an opinion"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "sententia, sententiae f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "opinion, view, judgement",
+      "evidence": [
+        "Ter. Ph. 454: <span lang=\"la\">quot hominēs, tot sententiae</span>",
+        "Cic. Att. 7.13a.3: <span lang=\"la\">vir meā sententiā magnus</span>",
+        "Traupman 21, 354"
+      ],
+      "comment": "In my opinion: <span lang=\"la\">meā sententiā</span> (Cic. Att. 7.13a.3; Traupman 21, 354) or <span lang=\"la\">meā quidem sententiā</span> (Cic. de Or. 1.20). To give one’s opinion: <span lang=\"la\">sententiam dīcere</span> (Traupman 177, 354). “What’s your opinion?” is <span lang=\"la\">quid tibi vidētur?</span> or <span lang=\"la\">quid cēnsēs?</span> (see seem, think)."
+    },
+    {
+      "latin": "opīniō, opīniōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a belief, an impression, what one supposes (often against the facts); expectation; reputation",
+      "evidence": [
+        "Sen. Ep. 13.4: <span lang=\"la\">saepius opīniōne quam rē labōrāmus</span>",
+        "Cic. Fam. 14.23.1: <span lang=\"la\">opīniōne celerius</span>"
+      ],
+      "comment": "Lewis &amp; Short: “opinion, supposition, conjecture, imagination, fancy, belief”. <span lang=\"la\">Ut opīniō mea fert</span>, as I believe (Cic. Fam. 1.9.22); <span lang=\"la\">opīniōne celerius</span>, sooner than expected; and the opinion others hold of someone, his reputation."
+    },
+    {
+      "latin": "jūdicium, jūdiciī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "judgement, a considered opinion",
+      "evidence": [
+        "Cic. Att. 5.1.4: <span lang=\"la\">meō jūdiciō</span>",
+        "Traupman 354"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Quot hominēs, tot sententiae; suus cuique mōs.",
+      "english": "So many men, so many opinions; everyone has his own way.",
+      "source": "Ter. Ph. 454"
+    },
+    {
+      "latin": "Labiēnus, vir meā sententiā magnus",
+      "english": "Labienus, a great man in my opinion",
+      "source": "Cic. Att. 7.13a.3"
+    },
+    {
+      "latin": "saepius opīniōne quam rē labōrāmus",
+      "english": "we suffer more often from what we imagine than from what is",
+      "source": "Sen. Ep. 13.4"
+    }
+  ],
+  "related": [
+    "think-believe",
+    "agree",
+    "idea-notion",
+    "seem"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/sententia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sententia</a> · <a href=\"https://logeion.uchicago.edu/opinio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: opinio</a> · <a href=\"https://logeion.uchicago.edu/judicium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: judicium</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 21, 177, 354, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-terentius, loci-seneca-epistulae), checked against the editions named there.",
+    "Cicero (Att. 5.1.4, 7.13a.3; Fam. 1.9.22, 14.23.1; de Or. 1.20) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

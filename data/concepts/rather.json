@@ -9,7 +9,9 @@
     "rather than",
     "prefer",
     "instead",
-    "or rather"
+    "or rather",
+    "prefer … to",
+    "preference"
   ],
   "domain": "verba",
   "terms": [
@@ -47,6 +49,28 @@
         "Cic. Brut. 332: <span lang=\"la\">propemodum, vel plānē potius</span> (Lewis &amp; Short)"
       ],
       "comment": "A sharper correction is <span lang=\"la\">immō</span> (see “actually”)."
+    },
+    {
+      "latin": "praeferō, praeferre, praetulī, praelātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "prefer (one thing to another)",
+      "grammar": "verb, irregular: aliquid alicui praeferre",
+      "evidence": [
+        "Cic. Amic. 63: <span lang=\"la\">pecūniam praeferre amīcitiae</span>",
+        "Traupman 364"
+      ],
+      "comment": "Lewis &amp; Short: “to place before another in esteem, to prefer” (very frequent)."
+    },
+    {
+      "latin": "antepōnō, antepōnere, anteposuī, antepositum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "prefer, put before",
+      "grammar": "verb, third conjugation: aliquid alicui antepōnere",
+      "evidence": [
+        "Cic. Amic. 17: <span lang=\"la\">amīcitiam omnibus rēbus hūmānīs antepōnātis</span>"
+      ]
     }
   ],
   "phrases": [
@@ -64,6 +88,11 @@
       "latin": "vel sōlī tamen dīcāmus potius quam omnīnō nōn dīcāmus",
       "english": "let us speak even on our own, rather than not speak at all",
       "source": "Quint. 10.7.25"
+    },
+    {
+      "latin": "ego vōs hortārī tantum possum, ut amīcitiam omnibus rēbus hūmānīs antepōnātis",
+      "english": "all I can do is urge you to put friendship before everything else in human life",
+      "source": "Cic. Amic. 17"
     }
   ],
   "related": [
@@ -72,7 +101,10 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/potis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: potis (potius)</a> · <a href=\"https://logeion.uchicago.edu/malo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: malo</a>",
-    "Quotations from the Latinitas loci collections (loci-martialis, loci-terentius, loci-cicero-epistulae, loci-quintilianus), checked against the editions named there."
+    "Quotations from the Latinitas loci collections (loci-martialis, loci-terentius, loci-cicero-epistulae, loci-quintilianus), checked against the editions named there.",
+    "<a href=\"https://logeion.uchicago.edu/praefero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praefero</a> · <a href=\"https://logeion.uchicago.edu/antepono\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: antepono</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 364, checked against the searchable text of the book (9 November 2026).",
+    "Cic. Amic. 17, 63 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
   ],
   "review": {
     "status": "draft",

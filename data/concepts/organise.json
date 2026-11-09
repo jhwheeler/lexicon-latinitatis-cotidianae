@@ -1,0 +1,82 @@
+{
+  "id": "organise",
+  "english": "organise",
+  "sense": "arrange (an event)",
+  "pos": "verb",
+  "also": [
+    "organize",
+    "arrange",
+    "organiser",
+    "organizer"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "apparō, apparāre, apparāvī, apparātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "organise, get up (a dinner, a wedding, games)",
+      "grammar": "verb, first conjugation, transitive",
+      "evidence": [
+        "Ter. Ad. 966: <span lang=\"la\">apparāre dē diē convīvium</span>",
+        "Cic. Q. fr. 3.8 (Lewis &amp; Short): <span lang=\"la\">lūdōs magnificentissimōs</span>"
+      ],
+      "comment": "Lewis &amp; Short: to prepare “esp. with effort, care, expense”; its noun <span lang=\"la\">apparātus</span> is the preparations (see prepare)."
+    },
+    {
+      "latin": "īnstruō, īnstruere, īnstrūxī, īnstrūctum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "lay on, set up (a meal, a feast)",
+      "grammar": "verb, third conjugation, transitive",
+      "evidence": [
+        "Liv. 3.29.5: <span lang=\"la\">epulae īnstrūctae dīcuntur fuisse ante omnium domūs</span>"
+      ]
+    },
+    {
+      "latin": "cūrō, cūrāre, cūrāvī, cūrātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "arrange for (something to be done)",
+      "grammar": "verb, first conjugation; with an accusative and a gerundive",
+      "evidence": [
+        "Caes. BG 1.13 (Lewis &amp; Short): <span lang=\"la\">pontem in Ararī faciundum</span>"
+      ],
+      "comment": "Lewis &amp; Short: “to cause something to be done … (in good prose and very freq.; predominant in Cæsar)”: <span lang=\"la\">cēnam parandam cūrāre</span>, to see that dinner is made."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Occīdunt mē quidem dum nimis sānctās nūptiās student facere: in apparandō cōnsūmunt diem.",
+      "english": "They’re killing me, wanting to make the wedding too perfect: they’re spending the whole day on the arrangements.",
+      "source": "Ter. Ad. 900–901"
+    },
+    {
+      "latin": "sī bellī homunculī conlēctī sunt, sī ēlēctus locus, sī tempus lēctum, sī apparātus nōn neglēctus",
+      "english": "if nice people have been brought together, if the place has been chosen, the time picked, and the preparations not neglected",
+      "source": "Gell. 13.11.3 (Varro)"
+    },
+    {
+      "latin": "Quis convīvium apparat?",
+      "english": "Who’s organising the party?",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "prepare",
+    "dinner-party",
+    "organise-arrange"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/apparo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: apparo</a> · <a href=\"https://logeion.uchicago.edu/instruo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: instruo</a> · <a href=\"https://logeion.uchicago.edu/curo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: curo</a>",
+    "Quotations from the Latinitas loci collections (loci-livius, loci-gellius), checked against the editions named there.",
+    "Terence’s <em>Adelphoe</em> checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition.",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

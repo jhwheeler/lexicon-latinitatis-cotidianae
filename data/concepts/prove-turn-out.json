@@ -1,0 +1,68 @@
+{
+  "id": "prove-turn-out",
+  "english": "prove",
+  "sense": "turn out to be",
+  "pos": "verb",
+  "also": [
+    "turn out",
+    "turn out to be",
+    "prove true",
+    "prove false",
+    "prove useless"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "ēvādō, ēvādere, ēvāsī, ēvāsum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "turn out, prove (true, false, empty)",
+      "grammar": "verb, third conjugation, intransitive, with a predicate adjective or noun",
+      "evidence": [
+        "Cic. Div. 2.108: <span lang=\"la\">sī quandō aliquod somnium vērum ēvāserit</span>",
+        "Liv. 23.12.12: <span lang=\"la\">vāna ēvādat</span>"
+      ],
+      "comment": "Of how a thing turns out (<span lang=\"la\">vērum</span>, <span lang=\"la\">vānum</span>), and of what a person becomes: <span lang=\"la\">perfectus Epicūrius ēvāserat</span> (Cic. Brut. 131)."
+    },
+    {
+      "latin": "exsistō, exsistere, exstitī, exstitum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "arise, turn out (to be)",
+      "evidence": [
+        "Caes. BC 3.104.1: <span lang=\"la\">ex amīcīs inimīcī exsistunt</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "sī quandō aliquod somnium vērum ēvāserit",
+      "english": "if ever some dream has turned out true",
+      "source": "Cic. Div. 2.108"
+    },
+    {
+      "latin": "vereor, nē haec quoque laetitia luxuriet nōbīs ac vāna ēvādat",
+      "english": "I fear that this joy too may run riot with us and prove empty",
+      "source": "Liv. 23.12.12"
+    },
+    {
+      "latin": "ut plērumque in calamitāte ex amīcīs inimīcī exsistunt",
+      "english": "as friends so often turn out enemies in misfortune",
+      "source": "Caes. BC 3.104.1"
+    }
+  ],
+  "related": [
+    "prove",
+    "appear",
+    "seem"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/evado\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: evado</a> · <a href=\"https://logeion.uchicago.edu/exsisto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: exsisto</a>",
+    "Cicero (Div. 2.108, Brut. 131), Livy (23.12.12) and Caesar (BC 3.104.1) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

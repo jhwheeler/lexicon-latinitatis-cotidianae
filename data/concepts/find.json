@@ -2,6 +2,10 @@
   "id": "find",
   "english": "find",
   "pos": "verb",
+  "also": [
+    "discover",
+    "come across"
+  ],
   "also_under": [
     "verba"
   ],
@@ -11,6 +15,16 @@
       "latin": "inveniō, invenīre, invēnī, inventum",
       "status": "recommended",
       "period": "classical"
+    },
+    {
+      "latin": "reperiō, reperīre, repperī, repertum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "find (by searching), discover",
+      "evidence": [
+        "Varro RR 1.2.9: <span lang=\"la\">quod nūllus in ejus fundō reperīrī poterat stolō</span>"
+      ],
+      "comment": "Lewis &amp; Short: “to find, meet with, find out, either by searching or by accident”."
     }
   ],
   "phrases": [
@@ -24,7 +38,8 @@
     "look-for"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/invenio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: invenio</a>",
+    "<a href=\"https://logeion.uchicago.edu/invenio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: invenio</a> · <a href=\"https://logeion.uchicago.edu/reperio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: reperio</a>",
+    "Quotations from the Latinitas loci collections (loci-varro), checked against the editions named there.",
     "The example sentence marked “composed” is ours."
   ],
   "review": {

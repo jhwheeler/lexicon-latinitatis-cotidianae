@@ -1,0 +1,83 @@
+{
+  "id": "document",
+  "english": "document",
+  "sense": "an official paper",
+  "pos": "noun",
+  "also": [
+    "documents",
+    "papers",
+    "paperwork",
+    "official document"
+  ],
+  "also_under": [
+    "pecunia"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "īnstrūmentum, īnstrūmentī n.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a document, a deed; in the plural, the papers of a case or a business",
+      "evidence": [
+        "Quint. 12.8.12: <span lang=\"la\">omne lītis īnstrūmentum</span>",
+        "Suet. Calig. 8: <span lang=\"la\">pūblicī īnstrūmentī auctōritās</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Of writings, an instrument, document or record (Lewis &amp; Short): post-Augustan prose and the jurists. Otherwise <span lang=\"la\">īnstrūmentum</span> is a tool or equipment, so the context must show the sense."
+    },
+    {
+      "latin": "tabulae, tabulārum f. pl.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "written records: accounts, registers, a will",
+      "evidence": [
+        "Cic. Arch. 8: <span lang=\"la\">tabulae pūblicae</span>, the public records (Lewis &amp; Short)"
+      ],
+      "comment": "Cicero’s word for documents kept on record, from the writing-tablets they were written on."
+    },
+    {
+      "latin": "diplōma, diplōmatis n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "an official document granting a privilege",
+      "evidence": [
+        "M-O s.v. document: official document",
+        "Cic. Fam. 6.12.3 (Lewis &amp; Short)"
+      ],
+      "comment": "A letter folded double: a state warrant or passport for travel, later any document by which a magistrate granted a favour (Lewis &amp; Short)."
+    },
+    {
+      "latin": "documentum, documentī n.",
+      "status": "avoid",
+      "period": "classical",
+      "gloss": "a lesson, an example, a warning; a proof",
+      "evidence": [
+        "Traupman 106, 366: <span lang=\"la\">documentō est</span>, this proves"
+      ],
+      "comment": "A false friend for a paper document: classically what teaches, a lesson or a warning (Lewis &amp; Short). Traupman keeps it for a file on a computer (see document, on a computer)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ideōque opus est intuērī omne lītis īnstrūmentum; quod vidēre nōn est satis, perlegendum erit.",
+      "english": "So you must look over all the documents of the case: seeing them is not enough, they must be read through.",
+      "source": "Quint. 12.8.12"
+    }
+  ],
+  "related": [
+    "document-computer",
+    "sign-name",
+    "paper"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/instrumentum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: instrumentum</a> · <a href=\"https://logeion.uchicago.edu/tabula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tabula</a> · <a href=\"https://logeion.uchicago.edu/diploma\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: diploma</a> · <a href=\"https://logeion.uchicago.edu/documentum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: documentum</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. document: official document.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 106, 366, checked against the searchable text of the book (9 November 2026).",
+    "Quintilian checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "id": "earn",
+  "english": "earn",
+  "sense": "get money by working",
+  "pos": "verb",
+  "also": [
+    "earn a living",
+    "make a living",
+    "make money",
+    "earnings",
+    "how much do you earn?"
+  ],
+  "domain": "labor",
+  "also_under": [
+    "pecunia"
+  ],
+  "terms": [
+    {
+      "latin": "mereō, merēre, meruī, meritum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "earn (pay, a sum)",
+      "evidence": [
+        "Cic. Rosc. Com. 28: <span lang=\"la\">merēre per sē nōn amplius poterant duodecim aeris</span>",
+        "Suet. Cal. 40 (Lewis &amp; Short)"
+      ],
+      "comment": "Of wages and pay; <span lang=\"la\">stīpendia merēre</span> is to serve as a soldier. The deponent <span lang=\"la\">mereor</span> is more often “deserve” (see earn, deserve)."
+    },
+    {
+      "latin": "vīctum quaeritāre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "earn a living",
+      "grammar": "verb phrase",
+      "register": "vōx cōmica: Plaut., Ter.",
+      "evidence": [
+        "Ter. And. 75: <span lang=\"la\">lānā ac tēlā vīctum quaeritāns</span>",
+        "Traupman 102, 162"
+      ],
+      "comment": "<span lang=\"la\">quaeritō</span> is ante-classical (Lewis &amp; Short); Cato says <span lang=\"la\">rem quaerere</span> for making money (Agr. praef. 1)."
+    },
+    {
+      "latin": "quaestum facere",
+      "status": "avoid",
+      "period": "classical",
+      "gloss": "make a living (Traupman)",
+      "grammar": "verb phrase",
+      "evidence": [
+        "Traupman 102"
+      ],
+      "comment": "Used absolutely in comedy of a prostitute’s trade (Ter. Haut. 640: <span lang=\"la\">utī quaestum faceret</span>; Lewis &amp; Short s.v. quaestus)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "lānā ac tēlā vīctum quaeritāns",
+      "english": "earning her living by spinning and weaving",
+      "source": "Ter. And. 75"
+    },
+    {
+      "latin": "nam illa membra merēre per sē nōn amplius poterant duodecim aeris",
+      "english": "for that body on its own could not earn more than twelve asses",
+      "source": "Cic. Rosc. Com. 28"
+    }
+  ],
+  "related": [
+    "income",
+    "job",
+    "earn-deserve",
+    "position-post"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/mereo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mereo</a> · <a href=\"https://logeion.uchicago.edu/quaerito\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quaerito</a> · <a href=\"https://logeion.uchicago.edu/quaestus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quaestus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 102, 162, checked against the searchable text of the book (9 November 2026).",
+    "Terence and Cicero checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

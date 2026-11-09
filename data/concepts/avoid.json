@@ -1,0 +1,102 @@
+{
+  "id": "avoid",
+  "english": "avoid",
+  "pos": "verb",
+  "also": [
+    "keep away from",
+    "steer clear of",
+    "shun",
+    "dodge",
+    "avoid doing"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "vītō, vītāre, vītāvī, vītātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "avoid, keep away from",
+      "grammar": "verb, first conjugation, transitive",
+      "evidence": [
+        "Liv. praef. 10: <span lang=\"la\">inde foedum inceptū foedum exitū quod vītēs</span>",
+        "Publ. I 20: <span lang=\"la\">Īrātum breviter vītēs, inimīcum diū.</span>"
+      ]
+    },
+    {
+      "latin": "ēvītō, ēvītāre, ēvītāvī, ēvītātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "avoid, get out of the way of",
+      "grammar": "verb, first conjugation, transitive",
+      "evidence": [
+        "Cic. Amic. 88: <span lang=\"la\">quās tum ēvītāre, tum ēlevāre, tum ferre sapientis est</span>",
+        "Traupman 97, 307: <span lang=\"la\">rem ēvītāre</span>, to duck the issue"
+      ]
+    },
+    {
+      "latin": "dēclīnō, dēclīnāre, dēclīnāvī, dēclīnātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "turn aside from, steer clear of",
+      "grammar": "verb, first conjugation; with an accusative, or ab and the ablative",
+      "evidence": [
+        "Cic. Off. 1.145: <span lang=\"la\">ab iīs est dīligentius dēclīnandum</span>"
+      ]
+    },
+    {
+      "latin": "fugiō, fugere, fūgī, fugitum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "shun, keep away from",
+      "grammar": "verb, third conjugation (-iō), transitive",
+      "evidence": [
+        "Publ. I 43: <span lang=\"la\">Inertia indicātur, cum fugitur labor.</span>"
+      ]
+    },
+    {
+      "latin": "caveō, cavēre, cāvī, cautum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "beware of, take care not to",
+      "grammar": "verb, second conjugation; with an accusative, or nē and the subjunctive",
+      "evidence": [
+        "Plaut. Most. 324: <span lang=\"la\">Cavē nē cadās</span>",
+        "Cic. Off. 1.123: <span lang=\"la\">nihil autem magis cavendum est senectūtī, quam nē languōrī sē dēsidiaeque dēdat</span>"
+      ],
+      "comment": "To avoid doing something is <span lang=\"la\">cavē nē</span> with the subjunctive, or <span lang=\"la\">cavē</span> with the subjunctive alone. See careful, don’t fall."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "inde tibi tuaeque reī pūblicae quod imitēre capiās, inde foedum inceptū foedum exitū quod vītēs",
+      "english": "From it you may take for yourself and your country what to imitate, and from it what to avoid, foul in its beginning, foul in its end.",
+      "source": "Liv. praef. 10"
+    },
+    {
+      "latin": "ferās, nōn culpēs, quod vītārī nōn potest",
+      "english": "What cannot be avoided you must bear, not blame.",
+      "source": "Gell. 17.14.4 (Publilius)"
+    },
+    {
+      "latin": "est enim varius et multiplex ūsus amīcitiae multaeque causae suspīciōnum offēnsiōnumque dantur, quās tum ēvītāre, tum ēlevāre, tum ferre sapientis est",
+      "english": "For friendship has many uses and many sides, and many causes of suspicion and offence arise, which it is the wise man’s part now to avoid, now to make light of, now to bear.",
+      "source": "Cic. Amic. 88"
+    }
+  ],
+  "related": [
+    "careful-dont-fall",
+    "protect"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/vito\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vito</a> · <a href=\"https://logeion.uchicago.edu/evito\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: evito</a> · <a href=\"https://logeion.uchicago.edu/declino\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: declino</a> · <a href=\"https://logeion.uchicago.edu/fugio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fugio</a> · <a href=\"https://logeion.uchicago.edu/caveo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: caveo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 97, 307, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-livius, loci-gellius, loci-publilius, loci-cicero-philosophica, loci-plautus), checked against the editions named there.",
+    "Cicero’s <em>De amicitia</em> checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Publilius is cited as the loci collection numbers him, by position under each initial letter in the Latin Library text; from N onwards that numbering differs from Meyer’s."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

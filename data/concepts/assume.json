@@ -1,0 +1,94 @@
+{
+  "id": "assume",
+  "english": "assume",
+  "sense": "take for granted",
+  "pos": "verb",
+  "also": [
+    "take for granted",
+    "presume",
+    "I assume",
+    "take it that",
+    "assuming that"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "crēdō, crēdere, crēdidī, crēditum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "assume, take it (that)",
+      "grammar": "verb, third conjugation, with an accusative and infinitive",
+      "evidence": [
+        "Cic. Fam. 9.2.1: <span lang=\"la\">oblītum crēdidī</span>"
+      ],
+      "comment": "In conversation an assumption is simply what one believes or thinks: <span lang=\"la\">crēdō</span>, <span lang=\"la\">putō</span> (see believe, think)."
+    },
+    {
+      "latin": "pōnō, pōnere, posuī, positum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "take it (that), lay down as given",
+      "grammar": "verb, third conjugation, with an accusative and infinitive",
+      "evidence": [
+        "Cic. Brut. 165: <span lang=\"la\">pōnō satis in eō fuisse ōrātiōnis atque ingenī</span>",
+        "Cic. Div. 1.118: <span lang=\"la\">hōc autem positō atque concessō</span>"
+      ],
+      "comment": "<span lang=\"la\">Hōc positō</span>: on this assumption. The imperative <span lang=\"la\">pōne</span>, “suppose”, is late (Ambrose: Lewis &amp; Short); for “suppose that …” see suppose."
+    },
+    {
+      "latin": "sūmō, sūmere, sūmpsī, sūmptum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "assume, take as granted (in an argument)",
+      "grammar": "verb, third conjugation, with an accusative and infinitive",
+      "evidence": [
+        "Cic. N.D. 1.89: <span lang=\"la\">beātōs esse deōs sūmpsistī</span>",
+        "Cic. Div. 2.104 (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "prō certō habēre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "take for granted, regard as certain",
+      "evidence": [
+        "Cic. Att. 10.6.3 (Lewis &amp; Short, s.v. <span lang=\"la\">habeō</span>)"
+      ],
+      "comment": "See sure."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "cōnscrīpsī epistulam noctū; nec ille ad mē rediit; oblītum crēdidī.",
+      "english": "I wrote the letter during the night; he never came back for it; I assumed he had forgotten.",
+      "source": "Cic. Fam. 9.2.1"
+    },
+    {
+      "latin": "Beātōs esse deōs sūmpsistī: concēdimus.",
+      "english": "You assumed that the gods are happy: we grant it.",
+      "source": "Cic. N.D. 1.89"
+    },
+    {
+      "latin": "tamen pōnō satis in eō fuisse ōrātiōnis atque ingenī",
+      "english": "yet I take it that he had eloquence and talent enough",
+      "source": "Cic. Brut. 165"
+    }
+  ],
+  "related": [
+    "think-believe",
+    "believe",
+    "suppose",
+    "sure"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/credo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: credo</a> · <a href=\"https://logeion.uchicago.edu/pono\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pono</a> · <a href=\"https://logeion.uchicago.edu/sumo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sumo</a> · <a href=\"https://logeion.uchicago.edu/habeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: habeo</a>",
+    "Quotations from the Latinitas loci collections (loci-cicero-epistulae), checked against the editions named there.",
+    "Cicero (N.D. 1.89, Brut. 165, Div. 1.118) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

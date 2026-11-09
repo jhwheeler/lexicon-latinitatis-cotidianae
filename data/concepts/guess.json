@@ -1,0 +1,96 @@
+{
+  "id": "guess",
+  "english": "guess",
+  "pos": [
+    "verb",
+    "noun"
+  ],
+  "also": [
+    "a guess",
+    "make a guess",
+    "guess right",
+    "guess wrong",
+    "at a guess",
+    "I’d guess",
+    "conjecture"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "conjiciō, conjicere, conjēcī, conjectum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "guess, conjecture, work out",
+      "grammar": "verb, third conjugation, with an accusative and infinitive or a question",
+      "evidence": [
+        "Ter. Heaut. 62–63: <span lang=\"la\">ut conjiciō</span>",
+        "Cic. Att. 14.21.1: <span lang=\"la\">cito conjēcī Lānuvī tē fuisse</span>"
+      ],
+      "comment": "Literally “throw together”: to put two and two together. <span lang=\"la\">Ut conjiciō</span>, at a guess (Ter. Heaut. 63)."
+    },
+    {
+      "latin": "conjectūra, conjectūrae f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a guess, a conjecture",
+      "evidence": [
+        "Cic. Att. 14.22.1: <span lang=\"la\">nē nihil conjectūrā aberrem</span>",
+        "M-O s.v. guess right, guess wrong"
+      ],
+      "comment": "<span lang=\"la\">Conjectūram facere</span>, to make a guess (Plaut., Ter., Cic.: Lewis &amp; Short); <span lang=\"la\">conjectūrā assequī</span>, to guess right, and <span lang=\"la\">conjectūrā aberrāre</span>, to guess wrong (M-O)."
+    },
+    {
+      "latin": "dīvīnō, dīvīnāre, dīvīnāvī, dīvīnātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "foresee, guess (what is coming)",
+      "evidence": [
+        "Cic. Att. 16.8.2: <span lang=\"la\">nōn equidem hoc dīvīnāvī</span>"
+      ]
+    },
+    {
+      "latin": "hariolor, hariolārī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "guess wildly; talk nonsense",
+      "register": "vōx cōmica hōc sēnsū: Plaut., Ter.",
+      "evidence": [
+        "Ter. Ad. 202: <span lang=\"la\">sed ego hoc hariolor</span>",
+        "M-O s.v. guess: make a wild guess"
+      ],
+      "comment": "Properly “prophesy” (Cic. Div. 1.132); “talk nonsense, be dreaming” in comedy (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "annōs sexāgintā nātus es aut plūs eō, ut conjiciō",
+      "english": "you are sixty or more, I’d guess",
+      "source": "Ter. Heaut. 62–63"
+    },
+    {
+      "latin": "sed cito conjēcī Lānuvī tē fuisse",
+      "english": "but I soon guessed that you had been at Lanuvium",
+      "source": "Cic. Att. 14.21.1"
+    },
+    {
+      "latin": "nōn equidem hoc dīvīnāvī sed aliquid tāle putāvī fore",
+      "english": "I certainly did not guess this, but I did think something of the kind would happen",
+      "source": "Cic. Att. 16.8.2"
+    }
+  ],
+  "related": [
+    "probably",
+    "think-believe",
+    "suppose"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/conicio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: conicio</a> · <a href=\"https://logeion.uchicago.edu/conjectura\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: conjectura</a> · <a href=\"https://logeion.uchicago.edu/divino\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: divino</a> · <a href=\"https://logeion.uchicago.edu/hariolor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: hariolor</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. guess right, guess wrong, guess: make a wild guess.",
+    "Terence (Heaut. 62–63, Ad. 202) and Cicero’s letters (Att. 14.21.1, 14.22.1, 16.8.2) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

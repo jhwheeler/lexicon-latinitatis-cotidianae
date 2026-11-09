@@ -1,0 +1,81 @@
+{
+  "id": "achieve",
+  "english": "achieve",
+  "pos": "verb",
+  "also": [
+    "accomplish",
+    "attain",
+    "reach a goal",
+    "achievement",
+    "get somewhere"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "cōnsequor, cōnsequī, cōnsecūtus sum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "achieve, attain, get",
+      "grammar": "verb, third conjugation, deponent; with an accusative, or ut and the subjunctive",
+      "evidence": [
+        "Cic. Fam. 9.24.3: <span lang=\"la\">id forīs cēnitandō facillimē cōnsequēre</span>",
+        "Traupman 179, 321: <span lang=\"la\">aliquid cōnsequī</span>, to get somewhere, to accomplish something"
+      ],
+      "comment": "Lewis &amp; Short: “to obtain, acquire, get, attain, reach”: of reaching what one wanted."
+    },
+    {
+      "latin": "assequor (adsequor), assequī, assecūtus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "attain, achieve (by effort)",
+      "grammar": "verb, third conjugation, deponent, transitive",
+      "evidence": [
+        "Tac. Germ. 46.5–6: <span lang=\"la\">rem difficillimam adsecūtī sunt</span>",
+        "Traupman 179, 353: <span lang=\"la\">magistrātum adsequī</span>"
+      ],
+      "comment": "Lewis &amp; Short: with the idea of active exertion, where <span lang=\"la\">cōnsequī</span> is rather the attainment of a wish."
+    },
+    {
+      "latin": "adipīscor, adipīscī, adeptus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "reach, obtain",
+      "grammar": "verb, third conjugation, deponent, transitive",
+      "evidence": [
+        "Cic. Sen. 4: <span lang=\"la\">quam ut adipīscantur omnēs optant, eandem accūsant adeptam</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "cūrā ut valeās; id forīs cēnitandō facillimē cōnsequēre",
+      "english": "Look after your health; you’ll achieve that most easily by eating out a lot.",
+      "source": "Cic. Fam. 9.24.3"
+    },
+    {
+      "latin": "sēcūrī adversus hominēs, sēcūrī adversus deōs rem difficillimam adsecūtī sunt, ut illīs nē vōtō quidem opus esset",
+      "english": "Safe from men, safe from gods, they have achieved the hardest thing of all: they have no need even to pray for anything.",
+      "source": "Tac. Germ. 46.5–6"
+    },
+    {
+      "latin": "quam ut adipīscantur omnēs optant, eandem accūsant adeptam",
+      "english": "Everyone hopes to reach it, and complains of it once it is reached.",
+      "source": "Cic. Sen. 4"
+    }
+  ],
+  "related": [
+    "manage-to",
+    "complete",
+    "try"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/consequor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: consequor</a> · <a href=\"https://logeion.uchicago.edu/assequor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: assequor</a> · <a href=\"https://logeion.uchicago.edu/adipiscor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: adipiscor</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 179, 321, 353, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-tacitus, loci-cicero-philosophica), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "id": "possibility",
+  "english": "possibility",
+  "sense": "a chance or means to do something",
+  "pos": "noun",
+  "also": [
+    "the possibility of",
+    "chance to",
+    "a chance",
+    "opportunity"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "facultās, facultātis f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "possibility, means, opportunity (to do something)",
+      "grammar": "noun, third declension; with the genitive of a gerund, or ut",
+      "evidence": [
+        "Cic. Mil. 45: <span lang=\"la\">Milōnī manendī nūlla facultās</span>",
+        "Caes. BG 1.32.5: <span lang=\"la\">fugae facultās</span>"
+      ],
+      "comment": "Lewis &amp; Short: “capability, possibility, power, means, opportunity”. For “it is possible that …” see possible: <span lang=\"la\">fierī potest ut</span>."
+    },
+    {
+      "latin": "potestās, potestātis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the chance, the opportunity (to do something)",
+      "evidence": [
+        "Cic. Fam. 10.13.1: <span lang=\"la\">ut prīmum potestās data est</span>"
+      ],
+      "comment": "<span lang=\"la\">Potestātem facere</span>, to give someone the chance (Cic. Cat. 3.11, Lewis &amp; Short)."
+    },
+    {
+      "latin": "occāsiō, occāsiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "an opportunity, the right moment",
+      "evidence": [
+        "Cic. Mil. 38: <span lang=\"la\">quantae quotiēs occāsiōnēs</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Milōnī manendī nūlla facultās, exeundī nōn causa sōlum sed etiam necessitās fuit",
+      "english": "Milo had no possibility of staying, and for setting out not only a reason but a necessity",
+      "source": "Cic. Mil. 45"
+    },
+    {
+      "latin": "ut prīmum potestās data est augendae dignitātis tuae, nihil praetermīsī in tē ōrnandō",
+      "english": "as soon as I had the chance to add to your standing, I left nothing undone to honour you",
+      "source": "Cic. Fam. 10.13.1"
+    },
+    {
+      "latin": "proptereā quod reliquīs tamen fugae facultās darētur",
+      "english": "because the rest, at least, had the possibility of flight",
+      "source": "Caes. BG 1.32.5"
+    }
+  ],
+  "related": [
+    "possible",
+    "able",
+    "perhaps"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/facultas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: facultas</a> · <a href=\"https://logeion.uchicago.edu/potestas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: potestas</a> · <a href=\"https://logeion.uchicago.edu/occasio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: occasio</a>",
+    "Cicero (Mil. 38, 45; Fam. 10.13.1) and Caesar (BG 1.32.5) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

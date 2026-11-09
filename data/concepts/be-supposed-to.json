@@ -1,0 +1,70 @@
+{
+  "id": "be-supposed-to",
+  "english": "be supposed to",
+  "sense": "be expected or meant to",
+  "pos": "phrase",
+  "also": [
+    "supposed to",
+    "not supposed to",
+    "you were supposed to",
+    "be meant to",
+    "was meant to"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "oportet, oportēre, oportuit",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "it is right, one should; what is expected",
+      "grammar": "verb, second conjugation, impersonal, with an infinitive or an accusative and infinitive",
+      "evidence": [
+        "Plaut. Cas. 765–766: <span lang=\"la\">cēnam jam esse coctam oportuit</span>",
+        "Ter. Heaut. 536: <span lang=\"la\">haec facta ab illō oportēbat</span>"
+      ],
+      "comment": "What was supposed to happen and did not: <span lang=\"la\">oportuit</span> or <span lang=\"la\">oportēbat</span>, in comedy often with a perfect passive infinitive (Plautus, Terence). “Not supposed to”, not allowed, is <span lang=\"la\">nōn licet</span> (see allow)."
+    },
+    {
+      "latin": "dēbeō, dēbēre, dēbuī, dēbitum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "ought, be bound to (a duty)",
+      "grammar": "verb, second conjugation, with an infinitive",
+      "evidence": [
+        "Petr. 45.1: <span lang=\"la\">nōn dēbēmus dēlicātī esse</span>",
+        "Plin. Ep. 8.16.5: <span lang=\"la\">plūra fortasse quam dēbuī</span>"
+      ],
+      "comment": "Of duty or obligation (Lewis &amp; Short: classical prose uses it of moral necessity); for what had to happen of necessity, <span lang=\"la\">necesse est</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "quīn agitis hodiē? quīn datis, sī quid datis? properāte, cēnam jam esse coctam oportuit.",
+      "english": "Come on, get moving! Hand it over, if you’re handing anything! Hurry: dinner was supposed to be ready by now.",
+      "source": "Plaut. Cas. 765–766"
+    },
+    {
+      "latin": "Haec facta ab illō oportēbat, Syre.",
+      "english": "That is what he ought to have done, Syrus.",
+      "source": "Ter. Heaut. 536"
+    },
+    {
+      "latin": "nōn dēbēmus dēlicātī esse; ubīque medius caelus est",
+      "english": "we mustn’t be fussy; the sky is the same everywhere",
+      "source": "Petr. 45.1"
+    }
+  ],
+  "related": [
+    "allow"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/oportet\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: oportet</a> · <a href=\"https://logeion.uchicago.edu/debeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: debeo</a>",
+    "Quotations from the Latinitas loci collections (loci-plautus, loci-petronius, loci-plinius), checked against the editions named there.",
+    "Terence (Heaut. 536) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

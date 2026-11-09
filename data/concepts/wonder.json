@@ -1,0 +1,88 @@
+{
+  "id": "wonder",
+  "english": "wonder",
+  "sense": "ask oneself",
+  "pos": "verb",
+  "also": [
+    "I wonder",
+    "I wonder whether",
+    "I wonder why",
+    "I wonder what",
+    "I wonder where"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "mīror, mīrārī, mīrātus sum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "wonder (what, why, where)",
+      "grammar": "verb, first conjugation, deponent, with a question",
+      "evidence": [
+        "Ter. Eun. 290: <span lang=\"la\">mīror quid ex Pīraeeō abierit</span>",
+        "Caes. BG 1.32.2: <span lang=\"la\">ejus reī quae causa esset mīrātus</span>",
+        "Traupman 111, 408"
+      ],
+      "comment": "With a question it wonders with a touch of surprise: <span lang=\"la\">mīror quid hoc sit negōtī</span>, I wonder what’s up (Traupman 111, 408). Plain curiosity is <span lang=\"la\">velim scīre</span>. To wonder at something, or marvel, see be surprised."
+    },
+    {
+      "latin": "velim scīre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "I’d like to know, I wonder (whether, what)",
+      "grammar": "with a question; num or -ne for “whether”",
+      "evidence": [
+        "Cic. Att. 4.9.1: <span lang=\"la\">sānē velim scīre num cēnsum impediant tribūnī</span>",
+        "Cic. Att. 10.17.4",
+        "Cic. Att. 12.48.1"
+      ],
+      "comment": "The polite wondering of Cicero’s letters, where it is very frequent."
+    },
+    {
+      "latin": "dēmīror, dēmīrārī, dēmīrātus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "wonder, can’t think (what, where)",
+      "grammar": "verb, first conjugation, deponent, with a question",
+      "register": "vōx sermōnis cotīdiānī: Plaut., Ter.; Cic. in epistulīs",
+      "evidence": [
+        "Plaut. As. 51: <span lang=\"la\">dēmīror quid sit</span>",
+        "Plaut. Men. 706"
+      ],
+      "comment": "Lewis &amp; Short: mostly in the first person present, and peculiar to the language of conversation."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Mīror quid ex Pīraeeō abierit; nam ibi custōs pūblicē est nunc.",
+      "english": "I wonder why he has left the Piraeus; he is on guard duty there just now.",
+      "source": "Ter. Eun. 290"
+    },
+    {
+      "latin": "et tamen velim scīre quid cōgitēs",
+      "english": "and yet I wonder what you have in mind",
+      "source": "Cic. Att. 10.17.4"
+    },
+    {
+      "latin": "Dēmīror ubi nunc ambulet Messēniō.",
+      "english": "I wonder where Messenio has wandered off to now.",
+      "source": "Plaut. Men. 706"
+    }
+  ],
+  "related": [
+    "be-surprised",
+    "ask",
+    "curious",
+    "question"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/miror\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: miror</a> · <a href=\"https://logeion.uchicago.edu/scio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: scio</a> · <a href=\"https://logeion.uchicago.edu/demiror\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: demiror</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 111, 408, checked against the searchable text of the book (9 November 2026).",
+    "Terence (Eun. 290), Caesar (BG 1.32.2), Cicero’s letters (Att. 4.9.1, 10.17.4, 12.48.1) and Plautus (As. 51, Men. 706) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

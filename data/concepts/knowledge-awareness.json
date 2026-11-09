@@ -1,0 +1,97 @@
+{
+  "id": "knowledge-awareness",
+  "english": "knowledge",
+  "sense": "awareness: without my knowledge, to my knowledge",
+  "pos": "noun",
+  "also": [
+    "without my knowledge",
+    "to my knowledge",
+    "to the best of my knowledge",
+    "knowingly",
+    "unknowingly",
+    "behind my back"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "mē īnsciente",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "without my knowledge",
+      "grammar": "ablative absolute with īnsciēns, īnscientis, not knowing; likewise tē, eō īnsciente",
+      "evidence": [
+        "Cic. Fam. 5.2.3: <span lang=\"la\">nihil … mē īnsciente esse factum</span>",
+        "Plaut. Trin. 167: <span lang=\"la\">mē apsente atque īnsciente</span>"
+      ]
+    },
+    {
+      "latin": "clam (+ accusative)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "without the knowledge of, behind someone’s back",
+      "register": "vōx cōmica: Plaut., Ter.; in ōrātiōne solūtā rāra",
+      "evidence": [
+        "Ter. Heaut. 98: <span lang=\"la\">haec clam mē omnia</span>",
+        "Caes. BC 2.32.8, with the ablative: <span lang=\"la\">clam vōbīs</span>",
+        "Traupman 337"
+      ],
+      "comment": "As a preposition, the Latin of comedy; classical prose uses <span lang=\"la\">clam</span> as an adverb, “secretly” (Lewis &amp; Short)."
+    },
+    {
+      "latin": "quod sciam",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "to my knowledge, as far as I know",
+      "grammar": "relative clause with the subjunctive",
+      "evidence": [
+        "Cic. Off. 3.59: <span lang=\"la\">nūllae, quod sciam</span>",
+        "Plaut., Ter. (Lewis &amp; Short)"
+      ],
+      "comment": "See know."
+    },
+    {
+      "latin": "sciēns, scientis",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "knowingly, with full knowledge, on purpose",
+      "grammar": "present participle of sciō, used as an adjective",
+      "evidence": [
+        "Cic. Ac. 2.146: <span lang=\"la\">sī sciēns falleret</span>",
+        "Plaut. Poen. 112: <span lang=\"la\">dissimulat sciēns sē scīre</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "tantum tē suspicārī volō, nihil in eā rē per conlēgam meum mē īnsciente esse factum",
+      "english": "I only want you to suspect that nothing in that business was done by my colleague without my knowledge",
+      "source": "Cic. Fam. 5.2.3"
+    },
+    {
+      "latin": "mē apsente atque īnsciente, incōnsultū meō",
+      "english": "while I was away, without my knowledge, without asking me",
+      "source": "Plaut. Trin. 167"
+    },
+    {
+      "latin": "et is omnīs linguās scit, sed dissimulat sciēns sē scīre",
+      "english": "and he knows every language, but knowingly pretends that he does not",
+      "source": "Plaut. Poen. 112"
+    }
+  ],
+  "related": [
+    "know",
+    "knowledge"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/insciens\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: insciens</a> · <a href=\"https://logeion.uchicago.edu/clam\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: clam</a> · <a href=\"https://logeion.uchicago.edu/scio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: scio</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 337, checked against the searchable text of the book (9 November 2026).",
+    "Cicero (Fam. 5.2.3, Ac. 2.146), Plautus (Trin. 167, Poen. 112), Terence (Heaut. 98) and Caesar (BC 2.32.8) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Plautus and Terence are quoted in the spelling of the Perseus texts (<span lang=\"la\">apsente</span>, <span lang=\"la\">omnīs</span>).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

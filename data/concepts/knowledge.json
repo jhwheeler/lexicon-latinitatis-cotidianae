@@ -1,0 +1,80 @@
+{
+  "id": "knowledge",
+  "english": "knowledge",
+  "sense": "what one knows, learning",
+  "pos": "noun",
+  "also": [
+    "learning",
+    "general knowledge",
+    "thirst for knowledge",
+    "knowledge of"
+  ],
+  "also_under": [
+    "schola"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "scientia, scientiae f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "knowledge (of a subject), knowing",
+      "evidence": [
+        "Cic. Off. 1.18: <span lang=\"la\">ad cognitiōnis et scientiae cupiditātem</span>",
+        "Caes. BG 3.8.1: <span lang=\"la\">scientiā atque ūsū rērum nauticārum</span>",
+        "Traupman 337"
+      ],
+      "comment": "What one knows goes in the genitive (<span lang=\"la\">scientia rērum nauticārum</span>). Set against <span lang=\"la\">ūsus</span>, practice, it is knowledge in theory (Cic. Rep. 1.2; see theory)."
+    },
+    {
+      "latin": "cognitiō, cognitiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "getting to know, knowledge gained",
+      "evidence": [
+        "Cic. Off. 1.153: <span lang=\"la\">cognitiō contemplātiōque nātūrae</span>",
+        "Traupman 337"
+      ],
+      "comment": "Traupman’s word for “acquisition of knowledge” (p. 337)."
+    },
+    {
+      "latin": "doctrīna, doctrīnae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "learning, what one has been taught",
+      "evidence": [
+        "Cic. Fam. 6.12.5: <span lang=\"la\">est ūnum perfugium doctrīna ac litterae</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Omnēs enim trahimur et dūcimur ad cognitiōnis et scientiae cupiditātem, in quā excellere pulchrum putāmus",
+      "english": "for we are all drawn and led to the desire for learning and knowledge, and we think it a fine thing to excel in it",
+      "source": "Cic. Off. 1.18"
+    },
+    {
+      "latin": "sed est ūnum perfugium doctrīna ac litterae, quibus semper ūsī sumus",
+      "english": "but there is one refuge, learning and books, which we have always made use of",
+      "source": "Cic. Fam. 6.12.5"
+    }
+  ],
+  "related": [
+    "know",
+    "learn",
+    "experience",
+    "information",
+    "knowledge-awareness",
+    "theory-practice"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/scientia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: scientia</a> · <a href=\"https://logeion.uchicago.edu/cognitio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cognitio</a> · <a href=\"https://logeion.uchicago.edu/doctrina\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: doctrina</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 337, checked against the searchable text of the book (9 November 2026).",
+    "Cicero (Off. 1.18, 1.153; Fam. 6.12.5) and Caesar (BG 3.8.1) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

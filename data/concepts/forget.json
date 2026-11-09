@@ -1,0 +1,85 @@
+{
+  "id": "forget",
+  "english": "forget",
+  "pos": "verb",
+  "also": [
+    "forget to",
+    "I forgot",
+    "forgotten",
+    "don’t forget",
+    "slip one’s mind"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "oblīvīscor, oblīvīscī, oblītus sum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "forget",
+      "evidence": [
+        "Cic. Sen. 21: <span lang=\"la\">oblītum quō locō thēsaurum obruisset</span>",
+        "Petr. 49.1: <span lang=\"la\">sē oblītum esse exinterāre</span>",
+        "Traupman 318"
+      ],
+      "comment": "Lewis &amp; Short: the person forgotten in the genitive, a thing in the genitive or the accusative; less often an infinitive, forget to (Petr. 49.1), or a question, forget where or what (Cic. Sen. 21). “Don’t forget” is <span lang=\"la\">nōlī oblīvīscī</span> (Traupman 163), or <span lang=\"la\">mementō</span> with an infinitive (see remember)."
+    },
+    {
+      "latin": "excidō, excidere, excidī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "slip from the memory: excidit mihi, it has slipped my mind",
+      "grammar": "verb, third conjugation, intransitive: what is forgotten is the subject, the person in the dative",
+      "evidence": [
+        "Cic. Att. 6.1.7: <span lang=\"la\">mihi nōn excidisse illud</span>",
+        "Liv. 29.19.12: <span lang=\"la\">excidisse dē memoriā</span>",
+        "M-O s.v. forget"
+      ],
+      "comment": "Literally “fall out”: also <span lang=\"la\">ex animō</span> or <span lang=\"la\">dē memoriā excidere</span> (Lewis &amp; Short)."
+    },
+    {
+      "latin": "dēdiscō, dēdiscere, dēdidicī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "unlearn, forget what one has learned",
+      "evidence": [
+        "Plaut. Am. 688: <span lang=\"la\">quī quod didicit id dēdiscit</span>"
+      ],
+      "comment": "Lewis &amp; Short: rare, but classical."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "sē oblītum esse exinterāre. — quid, oblītus?",
+      "english": "he said he had forgotten to gut it. — What, forgotten?",
+      "source": "Petr. 49.1"
+    },
+    {
+      "latin": "nec vērō quemquam senem audīvī oblītum quō locō thēsaurum obruisset",
+      "english": "and I never heard of an old man who forgot where he had buried his treasure",
+      "source": "Cic. Sen. 21"
+    },
+    {
+      "latin": "sed plānē tē intellegere voluī mihi nōn excidisse illud quod tū ad mē quibusdam litterīs scrīpsissēs",
+      "english": "but I wanted you to see quite clearly that I had not forgotten what you once wrote to me in a letter",
+      "source": "Cic. Att. 6.1.7"
+    }
+  ],
+  "related": [
+    "remember",
+    "memory",
+    "learn-by-heart"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/obliviscor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: obliviscor</a> · <a href=\"https://logeion.uchicago.edu/excido\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: excido</a> · <a href=\"https://logeion.uchicago.edu/dedisco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dedisco</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 163, 318, checked against the searchable text of the book (9 November 2026).",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. forget.",
+    "Michiel de Vaan, <em>Etymological Dictionary of Latin and the other Italic Languages</em> (2008), p. 422, s.v. <span lang=\"la\">oblīvīscor</span>, for the long ī of -vīscor, which Lewis &amp; Short leaves unmarked.",
+    "Quotations from the Latinitas loci collections (loci-cicero-philosophica, loci-petronius), checked against the editions named there.",
+    "Cicero (Att. 6.1.7), Livy (29.19.12) and Plautus (Am. 688) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

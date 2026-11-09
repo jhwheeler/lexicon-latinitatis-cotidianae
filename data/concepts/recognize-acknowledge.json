@@ -1,0 +1,81 @@
+{
+  "id": "recognize-acknowledge",
+  "english": "recognize",
+  "sense": "acknowledge, admit",
+  "pos": "verb",
+  "also": [
+    "acknowledge",
+    "admit",
+    "own up",
+    "I admit",
+    "I must admit"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "agnōscō, agnōscere, agnōvī, agnitum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "acknowledge, own (as one’s own or as true)",
+      "evidence": [
+        "Cic. Fam. 4.4.1: <span lang=\"la\">mē nōn esse verbōrum admodum inopem agnōscō</span>",
+        "Cic. Fam. 5.20.5: <span lang=\"la\">id ego agnōvī meō jussū esse factum</span>"
+      ],
+      "comment": "Lewis &amp; Short: to acknowledge a thing as one’s own, a deed, a debt, a child, a fault (<span lang=\"la\">culpam agnōscere</span>, see accept blame); with an accusative and infinitive, to admit that."
+    },
+    {
+      "latin": "fateor, fatērī, fassus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "admit, confess; said in passing, “I admit”",
+      "evidence": [
+        "Ter. Heaut. 158: <span lang=\"la\">ita rēs est, fateor</span>",
+        "Cic. Att. 2.1.5: <span lang=\"la\">fateor; sed ego illam ōdī</span>"
+      ],
+      "comment": "Usually with an accusative and infinitive (Lewis &amp; Short)."
+    },
+    {
+      "latin": "cōnfiteor, cōnfitērī, cōnfessus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "confess, own up to",
+      "evidence": [
+        "Cic. N.D. 2.11 (Lewis &amp; Short): <span lang=\"la\">peccātum suum</span>"
+      ],
+      "comment": "Lewis &amp; Short: of owning to an error or to something denied before, at some cost to one’s will; <span lang=\"la\">fateor</span> is a plain acknowledgement."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "et ego ipse … mē nōn esse verbōrum admodum inopem agnōscō",
+      "english": "and I myself admit that I am not altogether short of words",
+      "source": "Cic. Fam. 4.4.1"
+    },
+    {
+      "latin": "Ita rēs est, fateor: peccātum ā mē maximum est.",
+      "english": "That is how it is, I admit: I have done a very great wrong.",
+      "source": "Ter. Heaut. 158"
+    },
+    {
+      "latin": "Ego mē amāre hanc fateor: sī id peccāre est, fateor id quoque.",
+      "english": "I admit that I love her; if that is a sin, I admit that too.",
+      "source": "Ter. And. 896"
+    }
+  ],
+  "related": [
+    "accept-blame",
+    "recognize",
+    "agree",
+    "true"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/agnosco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: agnosco</a> · <a href=\"https://logeion.uchicago.edu/fateor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fateor</a> · <a href=\"https://logeion.uchicago.edu/confiteor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: confiteor</a>",
+    "Cicero’s letters (Fam. 4.4.1, 5.20.5; Att. 2.1.5) and Terence (Heaut. 158, And. 896) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

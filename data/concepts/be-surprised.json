@@ -4,7 +4,12 @@
   "pos": "verb",
   "also": [
     "surprised",
-    "amazed"
+    "amazed",
+    "wonder at",
+    "marvel",
+    "no wonder",
+    "it’s no wonder",
+    "I’m not surprised"
   ],
   "domain": "sermo",
   "terms": [
@@ -16,11 +21,36 @@
       "evidence": [
         "Traupman 388"
       ]
+    },
+    {
+      "latin": "nec mīrum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "and no wonder; it is not surprising",
+      "grammar": "phrase",
+      "evidence": [
+        "Cic. Att. 9.14.2: <span lang=\"la\">nec mīrum</span>",
+        "Cic. Fam. 16.15.2",
+        "Traupman 111, 408"
+      ],
+      "comment": "Said after the fact it explains. Also <span lang=\"la\">nīl mīrum</span> (Cic. Att. 16.1.3) and <span lang=\"la\">quid mīrum?</span> (Cic. Div. 2.81)."
     }
+  ],
+  "phrases": [
+    {
+      "latin": "accēpī tuam epistulam vacillantibus litterulīs, nec mīrum tam gravī morbō.",
+      "english": "I have had your letter in shaky handwriting, and no wonder, after so serious an illness.",
+      "source": "Cic. Fam. 16.15.2"
+    }
+  ],
+  "related": [
+    "wonder"
   ],
   "sources": [
     "<a href=\"https://logeion.org/miror\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: miror</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 388."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 388.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 111, 408, checked against the searchable text of the book (9 November 2026).",
+    "Cicero (Att. 9.14.2, 16.1.3; Fam. 16.15.2; Div. 2.81) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
   ],
   "review": {
     "status": "draft",

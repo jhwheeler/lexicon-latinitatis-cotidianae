@@ -7,7 +7,12 @@
     "in all likelihood",
     "I suppose",
     "I expect",
-    "presumably"
+    "presumably",
+    "likely",
+    "it is likely that",
+    "unlikely",
+    "I guess",
+    "I imagine"
   ],
   "domain": "verba",
   "terms": [
@@ -44,9 +49,11 @@
       "grammar": "with an accusative and infinitive",
       "evidence": [
         "Cic. Tusc. 2.5: <span lang=\"la\">id quod vērī simile occurrit</span> (Lewis &amp; Short)",
-        "Caes. BG 3.13.6: <span lang=\"la\">quod est magis vērī simile</span>"
+        "Caes. BG 3.13.6: <span lang=\"la\">quod est magis vērī simile</span>",
+        "M-O s.v. probable, likely",
+        "Traupman 340"
       ],
-      "comment": "Cicero writes it as two words; later it is often one, <span lang=\"la\">vērīsimile</span> (Lewis &amp; Short)."
+      "comment": "Cicero writes it as two words; later it is often one, <span lang=\"la\">vērīsimile</span> (Lewis &amp; Short). As an adjective, of a story or an explanation: <span lang=\"la\">vērī similis</span>, likely (M-O s.v. probable, likely; Traupman 340, <span lang=\"la\">vērīsimilis</span>)."
     },
     {
       "latin": "nisi fallor",
@@ -85,6 +92,11 @@
       "latin": "sed nisi fallor citius tē quam scrībis vidēbō",
       "english": "but unless I’m mistaken I’ll see you sooner than you say",
       "source": "Cic. Att. 4.19.1"
+    },
+    {
+      "latin": "etsī vix vērī simile est, mīsī tamen Puteolōs puerōs quī pervestīgārent",
+      "english": "though it was hardly likely, I still sent slaves to Puteoli to track him down",
+      "source": "Cic. Att. 9.11.1"
     }
   ],
   "related": [
@@ -93,7 +105,10 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/opinor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: opinor</a> · <a href=\"https://logeion.uchicago.edu/credo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: credo</a> · <a href=\"https://logeion.uchicago.edu/verus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: verus (vērī simile)</a> · <a href=\"https://logeion.uchicago.edu/fallo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fallo</a> · <a href=\"https://logeion.uchicago.edu/probabilis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: probabilis (probābiliter)</a>",
-    "Quotations from the Latinitas loci collections (loci-cicero-philosophica, loci-gellius), checked against the editions named there; Cicero (Att. 4.19.1, 9.6.2), Plautus (Bacch. 106) and Caesar (BG 3.13.6) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+    "Quotations from the Latinitas loci collections (loci-cicero-philosophica, loci-gellius), checked against the editions named there; Cicero (Att. 4.19.1, 9.6.2), Plautus (Bacch. 106) and Caesar (BG 3.13.6) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>.",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. probable, likely.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 340, checked against the searchable text of the book (9 November 2026).",
+    "Cic. Att. 9.11.1 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
   ],
   "review": {
     "status": "draft",

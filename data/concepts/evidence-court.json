@@ -1,0 +1,67 @@
+{
+  "id": "evidence-court",
+  "english": "evidence",
+  "sense": "in a court: testimony",
+  "pos": "noun",
+  "also": [
+    "testimony",
+    "give evidence",
+    "testify",
+    "bear witness",
+    "witness statement"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "testimōnium, testimōniī n.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "evidence, testimony (of a witness)",
+      "evidence": [
+        "Cic. Brut. 293: <span lang=\"la\">quam sī testimōnium dīcerēmus</span>",
+        "Ter. Ph. 293: <span lang=\"la\">neque testimōnī dictiō est</span>",
+        "Traupman 195, 311"
+      ],
+      "comment": "To give evidence: <span lang=\"la\">testimōnium dīcere</span> (Cic.); against someone, <span lang=\"la\">testimōnium dīcere in aliquem</span> (Traupman 195, 311). A witness is <span lang=\"la\">testis</span>; to bear witness, <span lang=\"la\">testificārī</span>, frequent in Cicero (Lewis &amp; Short)."
+    },
+    {
+      "latin": "indicium, indiciī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "information laid, an informer’s evidence",
+      "evidence": [
+        "Sall. Jug. 35.6: <span lang=\"la\">indicium profitētur</span> (M-O s.v. turn state’s evidence)",
+        "Traupman 195"
+      ],
+      "comment": "<span lang=\"la\">Indicium profitērī</span>, to turn informer (Traupman 195; M-O)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "vidē nē religiō nōbīs tam adhibenda sit quam sī testimōnium dīcerēmus",
+      "english": "take care: we may need to be as scrupulous as if we were giving evidence",
+      "source": "Cic. Brut. 293"
+    },
+    {
+      "latin": "tum quī testimōnium dīceret ut arbitrārī sē dīceret etiam quod ipse vīdisset",
+      "english": "and that a witness should say “I think” even of what he had seen himself",
+      "source": "Cic. Ac. 2.146"
+    }
+  ],
+  "related": [
+    "evidence",
+    "prove",
+    "charge-accusation"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/testimonium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: testimonium</a> · <a href=\"https://logeion.uchicago.edu/testis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: testis</a> · <a href=\"https://logeion.uchicago.edu/testificor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: testificor</a> · <a href=\"https://logeion.uchicago.edu/indicium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: indicium</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 195, 311, checked against the searchable text of the book (9 November 2026).",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. turn state’s evidence.",
+    "Cicero (Brut. 293, Ac. 2.146) and Terence (Ph. 293) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

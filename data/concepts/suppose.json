@@ -1,0 +1,82 @@
+{
+  "id": "suppose",
+  "english": "suppose",
+  "sense": "for the sake of argument",
+  "pos": "verb",
+  "also": [
+    "suppose that",
+    "supposing",
+    "let’s suppose",
+    "let’s say",
+    "what if",
+    "for the sake of argument"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "fac (+ accusative and infinitive)",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "suppose, say (that)",
+      "grammar": "imperative of faciō, with an accusative and infinitive",
+      "evidence": [
+        "Cic. Tusc. 1.82: <span lang=\"la\">fac … animōs nōn remanēre post mortem</span>",
+        "Cic. Fam. 7.23.1: <span lang=\"la\">fac, quaesō, quī ego sum esse tē</span>"
+      ],
+      "comment": "Lewis &amp; Short: <span lang=\"la\">fac</span>, used hypothetically, “suppose, assume”. Not <span lang=\"la\">fac ut</span>, make sure that (see sure)."
+    },
+    {
+      "latin": "fingō, fingere, fīnxī, fictum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "suppose, imagine (that)",
+      "grammar": "verb, third conjugation, with an accusative and infinitive: finge, fingāmus",
+      "evidence": [
+        "Cic. Ac. 2.117: <span lang=\"la\">finge aliquem nunc fierī sapientem, nōndum esse</span>",
+        "Quint. 1.1.24: <span lang=\"la\">fingāmus igitur Alexandrum darī nōbīs</span>"
+      ]
+    },
+    {
+      "latin": "quid sī …?",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "what if …?",
+      "grammar": "with the subjunctive of a supposed case",
+      "evidence": [
+        "Ter. Eun. 368: <span lang=\"la\">Quid sī nunc tūte fortūnātus fīās?</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "sed fac, ut istī volunt, animōs nōn remanēre post mortem",
+      "english": "but suppose, as those people would have it, that souls do not survive death",
+      "source": "Cic. Tusc. 1.82"
+    },
+    {
+      "latin": "fingāmus igitur Alexandrum darī nōbīs impositum gremiō, dignum tantā cūrā īnfantem (quamquam suus cuique dignus est)",
+      "english": "so let us imagine that an Alexander is given to us and laid in our lap, a baby worthy of so much care (though everyone’s own child is worthy of it)",
+      "source": "Quint. 1.1.24"
+    },
+    {
+      "latin": "Quid sī nunc tūte fortūnātus fīās?",
+      "english": "What if you were the lucky one now?",
+      "source": "Ter. Eun. 368"
+    }
+  ],
+  "related": [
+    "assume",
+    "imagine",
+    "example",
+    "think-believe"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/facio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: facio</a> · <a href=\"https://logeion.uchicago.edu/fingo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fingo</a> · <a href=\"https://logeion.uchicago.edu/si\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: si</a>",
+    "Cicero (Tusc. 1.82, Fam. 7.23.1, Ac. 2.117), Quintilian (1.1.24) and Terence (Eun. 368) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

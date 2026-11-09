@@ -1,0 +1,95 @@
+{
+  "id": "enjoy",
+  "english": "enjoy",
+  "sense": "take pleasure in",
+  "pos": "verb",
+  "also": [
+    "enjoy doing",
+    "enjoy oneself",
+    "enjoy yourself",
+    "did you enjoy it?",
+    "have a good time"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "dēlectō, dēlectāre, dēlectāvī, dēlectātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "delight; in the passive, enjoy",
+      "grammar": "verb, first conjugation: the thing enjoyed is the subject (mē dēlectat), or the passive dēlector takes the ablative",
+      "evidence": [
+        "Cic. Sen. 51: <span lang=\"la\">quibus ego incrēdibiliter dēlector</span>",
+        "Cic. Att. 2.6.1: <span lang=\"la\">aut librīs mē dēlectō</span>",
+        "Aug. Conf. 1.9.15: <span lang=\"la\">sed dēlectābat lūdere</span>"
+      ],
+      "comment": "Latin turns the sentence round: what one enjoys delights one (<span lang=\"la\">mē dēlectat</span>, with an infinitive as subject: <span lang=\"la\">dēlectābat lūdere</span>), or one is delighted by it (<span lang=\"la\">dēlector</span> with the ablative). “Did you enjoy it?” is <span lang=\"la\">placuitne?</span> (see what did you like best?)."
+    },
+    {
+      "latin": "juvat",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "it pleases; I enjoy (doing)",
+      "grammar": "impersonal of juvō, with an infinitive or a thing as subject",
+      "evidence": [
+        "Hor. S. 2.6.32: <span lang=\"la\">hoc juvat et mellī est</span>",
+        "Hor. Ep. 1.14.35: <span lang=\"la\">cēna brevis juvat</span>"
+      ]
+    },
+    {
+      "latin": "fruor, fruī, frūctus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "enjoy (what one has: life, company, sleep)",
+      "grammar": "verb, third conjugation, deponent, with the ablative",
+      "evidence": [
+        "Mart. 12.18.13: <span lang=\"la\">ingentī fruor inprobōque somnō</span>",
+        "Mart. 5.20.1–2: <span lang=\"la\">sēcūrīs liceat fruī diēbus</span>"
+      ],
+      "comment": "Lewis &amp; Short: the enjoyment of a thing, narrower than <span lang=\"la\">ūtī</span>, “use” (see enjoy, have the benefit of)."
+    },
+    {
+      "latin": "oblectō, oblectāre, oblectāvī, oblectātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "amuse; oblectāre sē, enjoy oneself, have a good time",
+      "evidence": [
+        "Cic. Q. fr. 2.11.4: <span lang=\"la\">oblectā tē cum Cicerōne nostrō</span>",
+        "Cic. Off. 3.58: <span lang=\"la\">ubi sē oblectāre … posset</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "veniō nunc ad voluptātēs agricolārum, quibus ego incrēdibiliter dēlector",
+      "english": "I come now to the pleasures of farmers, which I enjoy beyond belief",
+      "source": "Cic. Sen. 51"
+    },
+    {
+      "latin": "sed dēlectābat lūdere",
+      "english": "but what we enjoyed was playing",
+      "source": "Aug. Conf. 1.9.15"
+    },
+    {
+      "latin": "oblectā tē cum Cicerōne nostrō quam bellissimē",
+      "english": "have as lovely a time as you can with our little Cicero",
+      "source": "Cic. Q. fr. 2.11.4"
+    }
+  ],
+  "related": [
+    "what-did-you-like-best",
+    "im-having-a-lovely-time",
+    "love",
+    "enjoy-have"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/delecto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: delecto</a> · <a href=\"https://logeion.uchicago.edu/juvo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: juvo</a> · <a href=\"https://logeion.uchicago.edu/fruor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fruor</a> · <a href=\"https://logeion.uchicago.edu/oblecto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: oblecto</a>",
+    "Quotations from the Latinitas loci collections (loci-cicero-philosophica, loci-cicero-epistulae, loci-augustinus, loci-horatius, loci-martialis), checked against the editions named there.",
+    "Cic. Q. fr. 2.11.4 as the loci collection gives it: the Perseus text misprints <span lang=\"la\">quani</span> for <span lang=\"la\">quam</span>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

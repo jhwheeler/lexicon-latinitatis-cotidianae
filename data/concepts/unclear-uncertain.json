@@ -1,0 +1,82 @@
+{
+  "id": "unclear-uncertain",
+  "english": "unclear",
+  "sense": "not known for certain",
+  "pos": "adjective",
+  "also": [
+    "uncertain",
+    "it’s unclear whether",
+    "it isn’t clear",
+    "unknown"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "incertus, incerta, incertum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "uncertain, not known for sure",
+      "grammar": "adjective; incertum est with a question: it is unclear whether …",
+      "evidence": [
+        "Cic. Sen. 74: <span lang=\"la\">et incertum an hoc ipsō diē</span>",
+        "Plin. Ep. 4.11.5 (Lewis &amp; Short): <span lang=\"la\">incertum, utrum quia vērum erat</span>"
+      ]
+    },
+    {
+      "latin": "dubius, dubia, dubium",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "doubtful, uncertain; dubium est, it is uncertain",
+      "grammar": "adjective; dubium est with a question",
+      "evidence": [
+        "Varr. LL 6.5: <span lang=\"la\">multīs dubium</span>"
+      ],
+      "comment": "See doubt."
+    },
+    {
+      "latin": "nōn liquet",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "it is not clear, not proven",
+      "grammar": "impersonal of liqueō, alone or with a question",
+      "evidence": [
+        "Cic. Div. 1.6: <span lang=\"la\">dē quō Panaetiō nōn liquet</span>"
+      ],
+      "comment": "First the verdict of a juror who could not decide: <span lang=\"la\">nōn liquēre dīxērunt</span> (Cic. Clu. 76, Lewis &amp; Short). <span lang=\"la\">Liquet</span>, it is clear (Plaut., Cic.)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "moriendum enim certē est, et incertum an hoc ipsō diē",
+      "english": "for die we certainly must, and it is uncertain whether it may not be this very day",
+      "source": "Cic. Sen. 74"
+    },
+    {
+      "latin": "quod crepusculum diēs etiam nunc sit an jam nox multīs dubium",
+      "english": "because at dusk many are unsure whether it is still day or already night",
+      "source": "Varr. LL 6.5"
+    },
+    {
+      "latin": "praesertim cum id, dē quō Panaetiō nōn liquet, reliquīs ejusdem disciplīnae sōlis lūce videātur clārius",
+      "english": "especially since what is unclear to Panaetius seems clearer than daylight to the rest of his school",
+      "source": "Cic. Div. 1.6"
+    }
+  ],
+  "related": [
+    "doubt",
+    "sure",
+    "unclear",
+    "know"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/incertus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: incertus</a> · <a href=\"https://logeion.uchicago.edu/dubius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dubius</a> · <a href=\"https://logeion.uchicago.edu/liqueo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: liqueo</a>",
+    "Quotations from the Latinitas loci collections (loci-varro), checked against the editions named there.",
+    "Cicero (Sen. 74, Div. 1.6) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

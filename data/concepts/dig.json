@@ -8,19 +8,30 @@
       "latin": "fodiō, fodere, fōdī, fossum",
       "status": "recommended",
       "period": "classical",
-      "comment": "<strong lang=\"la\">Fossam fodere</strong>, dig a trench; Lewis &amp; Short cites Livy 3.26.9 for this combination."
+      "comment": "<strong lang=\"la\">Fossam fodere</strong>, dig a trench; Lewis &amp; Short cites Livy 3.26.9 for this combination. An ancient verb."
+    },
+    {
+      "latin": "effodiō, effodere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "dig out",
+      "comment": "An ancient verb."
     }
   ],
   "related": [
     "trench",
     "dirt-earth",
     "tend-the-garden",
-    "hoe"
+    "hoe",
+    "hole",
+    "shovel",
+    "scoop-up"
   ],
   "sources": [
     "<a href=\"https://www.alatius.com/ls/index.php?l=fodio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fodio</a>",
     "<a href=\"https://logeion.uchicago.edu/fodio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fodio</a>",
-    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026. Examples marked “Libellus” quote those texts word for word."
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026. Examples marked “Libellus” quote those texts word for word.",
+    "The example sentences marked “composed” are ours."
   ],
   "review": {
     "status": "draft",
@@ -32,10 +43,18 @@
       "latin": "fodiēbat ubi nōn erat fodiendum, rigābat quod jam rigātum erat",
       "english": "He dug where there was no digging to be done and watered what was already watered.",
       "source": "Libellus VII, <span lang=\"la\">Diēs ūnus Osoitsae</span>"
+    },
+    {
+      "latin": "Foveam fodiāmus.",
+      "english": "Let’s dig a hole.",
+      "source": "composed"
     }
   ],
   "replaces": [
     "entry-266",
     "libelli-266"
+  ],
+  "also": [
+    "dig out"
   ]
 }

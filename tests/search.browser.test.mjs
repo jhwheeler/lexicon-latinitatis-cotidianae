@@ -131,17 +131,17 @@ test('source-only and alias-only matches are explained and retain context', asyn
 });
 
 test('cross-references reveal their original target and clones have no duplicate IDs', async () => {
-  await search('foothold');
-  const result = page.locator('[data-result-for="entry-285"]');
+  await search('pyjama');
+  const result = page.locator('[data-result-for="c-pyjamas"]');
   await result.locator('.search-context > summary').click();
   await result.locator('.search-context .entry-body').waitFor();
   assert.equal(await page.evaluate(() => {
     const ids = [...document.querySelectorAll('[id]')].map(n => n.id);
     return ids.length === new Set(ids).size;
   }), true);
-  await result.locator('a[href="#play-179"]').click();
+  await result.locator('.search-context a[href="#c-nightclothes"]').click();
   assert.equal(await page.locator('#search').inputValue(), '');
-  assert.equal(await page.locator('#play-179').isVisible(), true);
+  assert.equal(await page.locator('#c-nightclothes').isVisible(), true);
 });
 
 test('literal input never becomes HTML and no-match state recovers', async () => {

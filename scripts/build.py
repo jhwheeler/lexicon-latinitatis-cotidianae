@@ -792,7 +792,8 @@ def load_site(root):
     site['words'] = word_index(site['records'])
     site['anchors'] = anchor_map(site)
     for key in categories:
-        require(entries[key] or any(r['domain'] == key for r in site['records'].values()), f'Empty category: {key}')
+        require(entries[key] or any(key in [r['domain']] + r.get('also_under', []) for r in site['records'].values()),
+                f'Empty category: {key}')
     return site
 
 

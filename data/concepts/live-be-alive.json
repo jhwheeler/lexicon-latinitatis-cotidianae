@@ -1,0 +1,70 @@
+{
+  "id": "live-be-alive",
+  "english": "live",
+  "sense": "be alive",
+  "pos": "verb",
+  "also": [
+    "be alive",
+    "alive",
+    "living",
+    "live on",
+    "as long as I live"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "vīvō, vīvere, vīxī, vīctum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "live, be alive",
+      "evidence": [
+        "Ter. Haut. 429: <span lang=\"la\">valet atque vīvit</span>",
+        "Cic. Sen. 24: <span lang=\"la\">annum … posse vīvere</span>"
+      ],
+      "comment": "What one lives on goes in the ablative: <span lang=\"la\">lacte atque pecore vīvunt</span> (Caes. BG 4.1.8). <span lang=\"la\">Dum vīvō</span>, as long as I live; <span lang=\"la\">ita vīvam!</span>, as I live! (Cic. Fam. 2.13.3, Lewis &amp; Short; Traupman 102)."
+    },
+    {
+      "latin": "vīvus, vīva, vīvum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "alive, living",
+      "evidence": [
+        "Phaedr. 3.16.19: <span lang=\"la\">sīc vīva quod negārat tribuit mortua</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "līberī quid agunt meī, quōs relīquī hīc, fīlium atque fīliam? — Vīvont, valent.",
+      "english": "How are my children, whom I left here, my son and my daughter? — Alive and well.",
+      "source": "Plaut. Trin. 1074–1075"
+    },
+    {
+      "latin": "nēmō enim est tam senex quī sē annum nōn putet posse vīvere",
+      "english": "for no one is so old that he does not think he can live another year",
+      "source": "Cic. Sen. 24"
+    },
+    {
+      "latin": "neque multum frūmentō, sed maximam partem lacte atque pecore vīvunt",
+      "english": "they live not much on grain, but mostly on milk and the meat of their herds",
+      "source": "Caes. BG 4.1.8"
+    }
+  ],
+  "related": [
+    "live-dwell",
+    "life",
+    "die",
+    "be-born"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/vivo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vivo</a> · <a href=\"https://logeion.uchicago.edu/vivus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vivus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 102, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-plautus, loci-cicero-philosophica, loci-phaedrus), checked against the editions named there.",
+    "Terence’s <em>Heauton timorumenos</em> and Caesar, <em>Gallic War</em> 4, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> and the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

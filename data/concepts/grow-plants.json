@@ -1,0 +1,85 @@
+{
+  "id": "grow-plants",
+  "english": "grow",
+  "sense": "plants, a beard",
+  "pos": "verb",
+  "also": [
+    "grow vegetables",
+    "cultivate",
+    "grow a beard",
+    "grow one’s hair"
+  ],
+  "domain": "natura",
+  "also_under": [
+    "domus"
+  ],
+  "terms": [
+    {
+      "latin": "colō, colere, coluī, cultum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "grow, cultivate (plants, a field, a garden)",
+      "evidence": [
+        "Cic. Fin. 4.38: <span lang=\"la\">vītem</span> (Lewis &amp; Short)",
+        "Ov. Met. 14.624: <span lang=\"la\">hortōs</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Of tending crops through the year: <span lang=\"la\">vītem, pōma, hortum colere</span>. Putting them in the ground is <span lang=\"la\">serere</span>."
+    },
+    {
+      "latin": "serō, serere, sēvī, satum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "sow, plant",
+      "evidence": [
+        "Caecilius in Cic. Sen. 24: <span lang=\"la\">serit arborēs</span>",
+        "Varr. RR 1.35.1: <span lang=\"la\">serere līlium et crocum</span>"
+      ]
+    },
+    {
+      "latin": "barbam (capillum) prōmittere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "grow a beard (one’s hair), let it grow",
+      "grammar": "phrase: prōmittō, let grow",
+      "evidence": [
+        "Liv. 6.16.4: <span lang=\"la\">multōs mortālēs capillum ac barbam prōmīsisse</span>",
+        "Caes. BG 5.14.3: <span lang=\"la\">capillōque sunt prōmissō</span>"
+      ],
+      "comment": "In Livy men let hair and beard grow in mourning; <span lang=\"la\">prōmissus</span> is long, of hair or a beard (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "laudātō ingentia rūra, exiguum colitō",
+      "english": "praise big farms; farm a small one",
+      "source": "Verg. G. 2.412–413"
+    },
+    {
+      "latin": "serit arborēs, quae alterī saeclō prōsint",
+      "english": "he plants trees to be of use to the next generation",
+      "source": "Caecilius in Cic. Sen. 24"
+    },
+    {
+      "latin": "spēs ūnica imperiī populī Rōmānī L. Quīnctius trāns Tiberim … quattuor jūgerum colēbat agrum",
+      "english": "the one hope of Rome’s empire, Lucius Quinctius, farmed a plot of four acres across the Tiber",
+      "source": "Liv. 3.26.8"
+    }
+  ],
+  "related": [
+    "sow",
+    "tend-the-garden",
+    "garden",
+    "harvest",
+    "grow-get-bigger"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/colo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: colo</a> · <a href=\"https://logeion.uchicago.edu/sero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sero</a> · <a href=\"https://logeion.uchicago.edu/promitto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: promitto</a>",
+    "Quotations from the Latinitas loci collections (loci-vergilius, loci-cicero-philosophica, loci-varro, loci-livius), checked against the editions named there.",
+    "Livy 6 and Caesar, <em>Gallic War</em> 5, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> and the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

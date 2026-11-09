@@ -1,0 +1,56 @@
+{
+  "id": "hymn",
+  "english": "hymn",
+  "pos": "noun",
+  "domain": "ecclesia",
+  "terms": [
+    {
+      "latin": "hymnus, hymnī m.",
+      "status": "recommended",
+      "period": "classical",
+      "evidence": [
+        "Lucil. ap. Non. 330.9 (Lewis &amp; Short)",
+        "Vulg. Mt. 26.30",
+        "Aug. Conf. 9.7.15"
+      ],
+      "comment": "Greek ὕμνος. Rare before the Christian writers; Augustine defines it as a song with the praise of God (<span lang=\"la\">hymnus cantus est cum laude Deī</span>, Enarr. in Ps. 148.17, Lewis &amp; Short). The hymns of Ambrose and Prudentius are still sung."
+    },
+    {
+      "latin": "canticum, canticī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a song; a canticle",
+      "evidence": [
+        "Aug. Conf. 9.6.14: <span lang=\"la\">in hymnīs et canticīs tuīs</span>"
+      ],
+      "comment": "In comedy the sung part of a play; in the Church a canticle, a song of Scripture outside the Psalms, such as the Magnificat."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Et hymnō dictō, exiērunt in montem Olīvētī.",
+      "english": "And when they had sung a hymn, they went out to the Mount of Olives.",
+      "source": "Vulg. Mt. 26.30"
+    },
+    {
+      "latin": "tunc hymnī et psalmī ut canerentur secundum mōrem orientālium partium, nē populus maerōris taediō contābēsceret, īnstitūtum est",
+      "english": "then it was laid down that hymns and psalms should be sung after the custom of the eastern parts, so that the people should not waste away in weariness and grief",
+      "source": "Aug. Conf. 9.7.15"
+    }
+  ],
+  "related": [
+    "psalm",
+    "chant",
+    "song"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/hymnus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: hymnus</a> · <a href=\"https://logeion.uchicago.edu/canticum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: canticum</a>",
+    "Quotations from the Latinitas loci collections (loci-augustinus), checked against the editions named there.",
+    "Vulgate quotations checked against the Clementine text (the <em>VulgClementine</em> file of the <a href=\"https://github.com/scrollmapper/bible_databases\" rel=\"noopener noreferrer\" target=\"_blank\">scrollmapper Bible databases</a>, the text the loci collection uses) (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

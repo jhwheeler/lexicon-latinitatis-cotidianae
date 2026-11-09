@@ -1,0 +1,51 @@
+{
+  "id": "bible",
+  "english": "Bible",
+  "pos": "noun",
+  "also": [
+    "Scripture",
+    "the Scriptures",
+    "Holy Scripture"
+  ],
+  "domain": "ecclesia",
+  "terms": [
+    {
+      "latin": "Scrīptūra sacra",
+      "status": "recommended",
+      "period": "late",
+      "gloss": "Holy Scripture, the Bible",
+      "evidence": [
+        "Hier. Ep. 112.19: <span lang=\"la\">scrīptūrae sacrae</span> (M-O s.v. Bible)",
+        "Vulg. Mt. 21.42: <span lang=\"la\">in Scrīptūrīs</span> (Lewis &amp; Short)"
+      ],
+      "comment": "The Fathers’ word, often plural, <span lang=\"la\">Scrīptūrae</span>, the Scriptures; classically <span lang=\"la\">scrīptūra</span> is any writing."
+    },
+    {
+      "latin": "Biblia, Bibliōrum n. pl.",
+      "status": "alternative",
+      "period": "medieval",
+      "gloss": "the Bible as a book",
+      "evidence": [
+        "M-O s.v. Bible: <span lang=\"la\">sacra biblia</span> (Ducrue, 1784; Egger)",
+        "Levi–Bini p. 10"
+      ],
+      "comment": "Greek τὰ βιβλία, the books; later also a feminine singular (Lewis &amp; Short)."
+    }
+  ],
+  "related": [
+    "gospel",
+    "epistle",
+    "psalm",
+    "book"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/scriptura\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: scriptura</a> · <a href=\"https://logeion.uchicago.edu/biblia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: biblia</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. Bible. Enrico Levi and Arturo Bini, <em>Il latino come lingua viva</em> (1937), p. 10, s.v. bibbia.",
+    "Vulgate quotations checked against the Clementine text (the <em>VulgClementine</em> file of the <a href=\"https://github.com/scrollmapper/bible_databases\" rel=\"noopener noreferrer\" target=\"_blank\">scrollmapper Bible databases</a>, the text the loci collection uses) (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

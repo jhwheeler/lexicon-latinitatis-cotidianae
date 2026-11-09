@@ -16,24 +16,52 @@
     {
       "latin": "hōra, hōrae f.",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "evidence": [
+        "Traupman 80–81",
+        "Plin. Ep. 3.1.4: <span lang=\"la\">hōrā secundā calceōs poscit</span>",
+        "Gell. 3.2.16: <span lang=\"la\">ā sextā noctis hōrā</span>"
+      ],
+      "comment": "A Roman hour was a twelfth of the time from sunrise to sunset, so it was longer in summer than in winter: <span lang=\"la\">hōra prīma</span> was the first hour after sunrise, <span lang=\"la\">hōra sexta</span> ended at noon and <span lang=\"la\">hōra duodecima</span> at sunset; the night had twelve hours of its own, and midnight was <span lang=\"la\">sexta noctis hōra</span> (Gell. 3.2.16). The modern way puts the same words on our clock (Traupman 80–81): <span lang=\"la\">prīma hōra</span> is one o’clock, with <span lang=\"la\">ante merīdiem</span> or <span lang=\"la\">post merīdiem</span> where needed, and the <span lang=\"la\">Culīna Theodōrī</span> counts the twenty-four hours (<span lang=\"la\">hōrā ūndēvīcēsimā</span>, at 7 p.m.). So <span lang=\"la\">hōrā nōnā</span> is 9 a.m. on our clock but mid-afternoon on the Roman one."
     }
   ],
   "phrases": [
     {
-      "latin": "hōrā nōnā et dīmidiā",
+      "latin": "hōrā nōnā et sēmihōrā",
       "english": "at 9:30",
       "source": "composed"
+    },
+    {
+      "latin": "māne lectulō continētur, hōrā secundā calceōs poscit, ambulat mīlia passuum tria",
+      "english": "in the morning he stays in bed; at the second hour (the Roman way, counted from sunrise) he calls for his shoes and walks three miles",
+      "source": "Plin. Ep. 3.1.4"
+    },
+    {
+      "latin": "Est secunda hōra.",
+      "english": "It’s two o’clock (the modern way).",
+      "source": "Traupman 81"
+    },
+    {
+      "latin": "Hōrā septimā et sēmihōrā.",
+      "english": "At half past seven.",
+      "source": "Traupman 81"
     }
   ],
   "related": [
     "quarter-of-an-hour",
     "half-an-hour",
     "what-time-is-it",
-    "minute"
+    "minute",
+    "before-noon",
+    "in-the-afternoon",
+    "noon",
+    "midnight"
   ],
   "sources": [
     "<a href=\"https://logeion.org/hora\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: hora</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 80–81, checked against the searchable text of the book (9 November 2026).",
+    "Pliny’s letters and Gellius from the Latinitas loci collections.",
+    "<span lang=\"la\">Theodōrus et pater: Culīna Theodōrī</span>, the recipe book that goes with the libellī (<span lang=\"la\">Ad Libellōs I–VII</span>), for its twenty-four-hour clock.",
     "The example sentences marked “composed” are ours."
   ],
   "replaces": [

@@ -1,0 +1,93 @@
+{
+  "id": "remain-stay",
+  "english": "remain",
+  "sense": "stay, not leave",
+  "pos": "verb",
+  "also": [
+    "stay",
+    "stay behind",
+    "stay put",
+    "stay on",
+    "remain behind"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "maneō, manēre, mānsī, mānsum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "stay, remain",
+      "evidence": [
+        "Plaut. As. 597: <span lang=\"la\">quīn tū hīc manēs?</span>",
+        "Cic. Att. 8.3.7: <span lang=\"la\">in Ītaliā fortasse manēbitur</span> (Lewis &amp; Short)",
+        "Traupman 370, 385"
+      ],
+      "comment": "Of staying where one is: at home, in a place, with someone (<span lang=\"la\">apud aliquem</span>). With an adjective, of staying in a state: <span lang=\"la\">clausae fenestrae manent</span>, the shutters stay shut (Plin. Ep. 9.36.1). The imperative <span lang=\"la\">manē</span> is “wait!”."
+    },
+    {
+      "latin": "remaneō, remanēre, remānsī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "stay behind",
+      "evidence": [
+        "Cic. Att. 7.14.3: <span lang=\"la\">mulierēs nostrae praeter cēterās Rōmae remānsērunt</span>"
+      ],
+      "comment": "Of those who stay when others leave."
+    },
+    {
+      "latin": "commoror, commorārī, commorātus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "stay on, stay for a while",
+      "grammar": "verb, first conjugation, deponent",
+      "evidence": [
+        "Cic. Fam. 14.20: <span lang=\"la\">diūtius ibi commorābimur</span>",
+        "Traupman 104"
+      ],
+      "comment": "Cicero’s word for stopping somewhere on a journey, or staying longer than planned."
+    },
+    {
+      "latin": "permaneō, permanēre, permānsī, permānsum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "stay to the end; last",
+      "evidence": [
+        "Cic. Sen. 22: <span lang=\"la\">modo permaneat studium et industria</span>"
+      ],
+      "comment": "Of what lasts or holds out."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Quō nunc abīs? quīn tū hīc manēs?",
+      "english": "Where are you off to now? Why don’t you stay here?",
+      "source": "Plaut. As. 597"
+    },
+    {
+      "latin": "signifer, statue signum; hīc manēbimus optimē",
+      "english": "standard-bearer, plant the standard: this is the best place for us to stay",
+      "source": "Liv. 5.55.2"
+    },
+    {
+      "latin": "clausae fenestrae manent",
+      "english": "the shutters stay closed",
+      "source": "Plin. Ep. 9.36.1"
+    }
+  ],
+  "related": [
+    "remain-be-left",
+    "wait",
+    "come-back-soon"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/maneo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: maneo</a> · <a href=\"https://logeion.uchicago.edu/remaneo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: remaneo</a> · <a href=\"https://logeion.uchicago.edu/commoror\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: commoror</a> · <a href=\"https://logeion.uchicago.edu/permaneo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: permaneo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 104, 370, 385, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-plautus, loci-livius, loci-plinius, loci-cicero-epistulae, loci-cicero-philosophica), checked against the editions named there.",
+    "Cicero, Att. 7.14 and 8.3, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "id": "include",
+  "english": "include",
+  "pos": "verb",
+  "also": [
+    "including",
+    "be included",
+    "count in",
+    "count among"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "contineō, continēre, continuī, contentum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "include, contain, comprise",
+      "evidence": [
+        "Quint. 1 pr. 21: <span lang=\"la\">liber prīmus ea quae sunt ante officium rhētoris continēbit</span>",
+        "Traupman 140, 332"
+      ],
+      "comment": "Of a whole that has the part in it: a book, a meal, a price. In the passive with the ablative, the part “is included in” it (Lewis &amp; Short). “Including” is usually <span lang=\"la\">etiam</span> or <span lang=\"la\">cum</span>: <span lang=\"la\">omnēs, etiam līberī</span>."
+    },
+    {
+      "latin": "complector, complectī, complexus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "embrace, take in, include",
+      "grammar": "verb, third conjugation, deponent",
+      "evidence": [
+        "Cic. Off. 1.57: <span lang=\"la\">omnēs omnium cāritātēs patria ūna complexa est</span>"
+      ],
+      "comment": "Of something that takes in many things at once."
+    },
+    {
+      "latin": "inclūdō, inclūdere, inclūsī, inclūsum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "put in, include (in a book, a letter)",
+      "evidence": [
+        "Cic. Att. 13.19.3: <span lang=\"la\">nēminem inclūdere in dialogōs</span>",
+        "Cic. Att. 1.16.10: <span lang=\"la\">ōrātiōnem in epistulam</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Its first sense is “shut in”: one includes something in a text, not a friend in a game."
+    },
+    {
+      "latin": "in numerō habēre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "count among, include in a group",
+      "grammar": "phrase: numerus in the ablative, with a genitive",
+      "evidence": [
+        "Cic. N. D. 3.48: <span lang=\"la\">in deōrum numerō habērī</span> (Lewis &amp; Short)",
+        "Cic. Phil. 2.33: <span lang=\"la\">mē adscrībe tālem in numerum</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Cicero’s <span lang=\"la\">mē adscrībe tālem in numerum</span> is “count me in that number”."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Cārī sunt parentēs, cārī līberī, propinquī, familiārēs, sed omnēs omnium cāritātēs patria ūna complexa est",
+      "english": "Dear are our parents, dear our children, our relatives and friends; but our country alone includes all our love for all of them",
+      "source": "Cic. Off. 1.57"
+    },
+    {
+      "latin": "nam liber prīmus ea quae sunt ante officium rhētoris continēbit",
+      "english": "for the first book will include what comes before the teacher of rhetoric takes over",
+      "source": "Quint. 1 pr. 21"
+    },
+    {
+      "latin": "sīc enim cōnstitueram, nēminem inclūdere in dialogōs eōrum quī vīverent",
+      "english": "for I had decided to include in my dialogues no one who was still alive",
+      "source": "Cic. Att. 13.19.3"
+    }
+  ],
+  "related": [
+    "involve",
+    "group",
+    "member"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/contineo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: contineo</a> · <a href=\"https://logeion.uchicago.edu/complector\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: complector</a> · <a href=\"https://logeion.uchicago.edu/includo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: includo</a> · <a href=\"https://logeion.uchicago.edu/numerus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: numerus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 140, 332, checked against the searchable text of the book (9 November 2026).",
+    "Cicero, <em>De officiis</em> 1 and Att. 13.19, and Quintilian 1, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

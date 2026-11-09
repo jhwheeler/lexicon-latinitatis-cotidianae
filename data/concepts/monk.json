@@ -1,0 +1,53 @@
+{
+  "id": "monk",
+  "english": "monk",
+  "pos": "noun",
+  "domain": "ecclesia",
+  "terms": [
+    {
+      "latin": "monachus, monachī m.",
+      "status": "recommended",
+      "period": "late",
+      "evidence": [
+        "Hier. Ep. 22.34 (Lewis &amp; Short)",
+        "Aug. Conf. 8.6.14",
+        "M-O s.v. monk",
+        "Levi–Bini p. 41"
+      ],
+      "comment": "Greek μοναχός, one who lives alone. Monks call one another brothers, <span lang=\"la\">frātrēs</span> (Aug. Conf. 8.6.15). The same word in East and West."
+    },
+    {
+      "latin": "coenobīta, coenobītae m.",
+      "status": "alternative",
+      "period": "late",
+      "gloss": "a monk who lives in a community",
+      "evidence": [
+        "Hier. Ep. 22.34 (Lewis &amp; Short)",
+        "M-O s.v. monk"
+      ],
+      "comment": "From <span lang=\"la\">coenobium</span>, a house of common life (see monastery)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ortus est sermō ipsō narrante dē Antōniō Aegyptiō monachō",
+      "english": "and talk turned, as he told it, to Antony, the Egyptian monk",
+      "source": "Aug. Conf. 8.6.14"
+    }
+  ],
+  "related": [
+    "nun",
+    "monastery",
+    "prayer-rope"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/monachus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: monachus</a> · <a href=\"https://logeion.uchicago.edu/coenobita\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: coenobita</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. monk. Enrico Levi and Arturo Bini, <em>Il latino come lingua viva</em> (1937), p. 41, s.v. monaco.",
+    "Augustine, <em>Confessions</em> 8, checked against O’Donnell’s text in the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "id": "gospel",
+  "english": "Gospel",
+  "sense": "the book",
+  "pos": "noun",
+  "also": [
+    "Gospel book",
+    "the Gospels"
+  ],
+  "domain": "ecclesia",
+  "terms": [
+    {
+      "latin": "ēvangelium, ēvangeliī n.",
+      "status": "recommended",
+      "period": "late",
+      "gloss": "a Gospel; the Gospel book",
+      "evidence": [
+        "Vulg. Mt. 4.23 (Lewis &amp; Short)",
+        "Itin. Eger. 24.10: <span lang=\"la\">prendet ēvangelium</span>, the book"
+      ],
+      "comment": "Greek εὐαγγέλιον, good news, which Cicero writes in Greek (Att. 2.3.1); English gospel means the same. In Orthodox churches the Gospel book lies on the altar and is carried out in procession before it is read; Egeria saw the bishop read the Resurrection from it at the Anastasis."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Initium Ēvangeliī Jēsū Chrīstī, Fīliī Deī.",
+      "english": "The beginning of the Gospel of Jesus Christ, the Son of God.",
+      "source": "Vulg. Mc. 1.1"
+    },
+    {
+      "latin": "Et tunc ubi stat episcopus intrō cancellōs, prendet ēvangelium et accēdet ad ōstium et leget resurrēctiōnem Dominī episcopus ipse.",
+      "english": "Then the bishop, standing inside the rails, takes the Gospel book, goes to the door, and reads the Resurrection of the Lord himself.",
+      "source": "Itin. Eger. 24.10"
+    }
+  ],
+  "related": [
+    "bible",
+    "epistle",
+    "deacon"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/evangelium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: evangelium</a>",
+    "Vulgate quotations checked against the Clementine text (the <em>VulgClementine</em> file of the <a href=\"https://github.com/scrollmapper/bible_databases\" rel=\"noopener noreferrer\" target=\"_blank\">scrollmapper Bible databases</a>, the text the loci collection uses) (9 November 2026).",
+    "Egeria’s <em>Itinerarium</em> checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> only, one transcription (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

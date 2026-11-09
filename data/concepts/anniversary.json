@@ -1,0 +1,57 @@
+{
+  "id": "anniversary",
+  "english": "anniversary",
+  "pos": "noun",
+  "domain": "tempus",
+  "terms": [
+    {
+      "latin": "diēs anniversārius",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "anniversary, a day that comes round every year",
+      "evidence": [
+        "Traupman 271: <span lang=\"la\">fēstus diēs anniversārius</span>",
+        "Cic. Verr. 2.4.107: <span lang=\"la\">fēstōs diēs anniversāriōs</span>"
+      ],
+      "comment": "<span lang=\"la\">anniversārius</span> is “returning every year” (Lewis &amp; Short): yearly feasts and rites are <span lang=\"la\">fēstī diēs anniversāriī</span> and <span lang=\"la\">sacra anniversāria</span> in Cicero."
+    },
+    {
+      "latin": "nātālis, nātālis m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "anniversary (of the founding of a city, a colony, a temple)",
+      "evidence": [
+        "Cic. Att. 4.1.4",
+        "Plin. NH 14.55: <span lang=\"la\">nātālī urbis</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Properly a birthday; transferred to “any anniversary, a commemorative festival” (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ibi mihi Tulliola mea fuit praestō nātālī suō ipsō diē, quī cāsū īdem nātālis erat et Brundisīnae colōniae et tuae vīcīnae Salūtis",
+      "english": "my little Tullia was there to meet me on her very birthday, which happened also to be the anniversary of the colony of Brundisium and of your neighbour, the temple of Salus",
+      "source": "Cic. Att. 4.1.4"
+    },
+    {
+      "latin": "ubi ūsque ad hoc tempus Syrācūsānī fēstōs diēs anniversāriōs agunt celeberrimō virōrum mulierumque conventū",
+      "english": "where to this day the Syracusans keep a yearly festival, with great crowds of men and women",
+      "source": "Cic. Verr. 2.4.107"
+    }
+  ],
+  "related": [
+    "birthday",
+    "festival",
+    "celebrate"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/anniversarius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: anniversarius</a> · <a href=\"https://logeion.uchicago.edu/natalis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: natalis</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 271, checked against the searchable text of the book (9 November 2026).",
+    "Cicero’s letters and the Verrines checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

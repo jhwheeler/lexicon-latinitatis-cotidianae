@@ -1,0 +1,69 @@
+{
+  "id": "case-law",
+  "english": "case",
+  "sense": "at law",
+  "pos": "noun",
+  "also": [
+    "lawsuit",
+    "legal case",
+    "court case"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "causa, causae f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a case at law; one’s side in it",
+      "evidence": [
+        "Cic. de Or. 2.199: <span lang=\"la\">causam agere</span> (Lewis &amp; Short)",
+        "Cic. Fam. 1.4.1: <span lang=\"la\">causam obtinēre</span> (Lewis &amp; Short)",
+        "Traupman 194"
+      ],
+      "comment": "<span lang=\"la\">causam agere</span>, to plead a case; <span lang=\"la\">causam dīcere</span>, to defend oneself; <span lang=\"la\">causam obtinēre</span>, to win it; <span lang=\"la\">causā cadere</span>, to lose it (Lewis &amp; Short). A civil case is a <span lang=\"la\">causa prīvāta</span>, a criminal case a <span lang=\"la\">causa pūblica</span> (Traupman 194)."
+    },
+    {
+      "latin": "līs, lītis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a lawsuit; a dispute",
+      "evidence": [
+        "Hor. Ars 78: <span lang=\"la\">adhūc sub jūdice līs est</span>",
+        "Phaedr. 3.13.3",
+        "Traupman 194–195"
+      ],
+      "comment": "Properly a quarrel, then a quarrel taken to court: <span lang=\"la\">lītem alicui intendere</span>, to bring a lawsuit against someone (Cic. de Or. 1.42, Lewis &amp; Short; Traupman 195)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "līs ad forum dēducta est, vespā jūdice",
+      "english": "the case went to court, with a wasp as judge",
+      "source": "Phaedr. 3.13.3"
+    },
+    {
+      "latin": "grammaticī certant et adhūc sub jūdice līs est",
+      "english": "the scholars are at odds, and the case is still before the judge",
+      "source": "Hor. Ars 78"
+    },
+    {
+      "latin": "Estne causa prīvāta an causa pūblica?",
+      "english": "Is it a civil case or a criminal case?",
+      "source": "Traupman 192"
+    }
+  ],
+  "related": [
+    "law",
+    "case-instance"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/causa\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: causa</a> · <a href=\"https://logeion.uchicago.edu/lis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lis</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 192, 194–195, checked against the searchable text of the book (9 November 2026).",
+    "Phaedrus and Horace’s <em>Ars poetica</em> checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

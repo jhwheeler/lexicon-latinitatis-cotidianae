@@ -1,0 +1,95 @@
+{
+  "id": "festival",
+  "english": "festival",
+  "sense": "a day of celebration",
+  "pos": "noun",
+  "also": [
+    "feast day",
+    "holy day",
+    "festivity"
+  ],
+  "domain": "tempus",
+  "terms": [
+    {
+      "latin": "diēs fēstus",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a feast day, a festival",
+      "evidence": [
+        "Cato, Agr. 143.2",
+        "Cic. Arch. 13: <span lang=\"la\">fēstōs diēs lūdōrum</span>",
+        "Plaut. Aul. 380–381"
+      ],
+      "comment": "A day kept for the gods, as against a working day, <span lang=\"la\">diēs profēstus</span> (Plaut. Aul. 380–381); a festival of several days is <span lang=\"la\">diēs fēstī</span> or <span lang=\"la\">fēriae</span>. Most Roman festivals are neuter plurals: <span lang=\"la\">Sāturnālia, Parīlia</span>.",
+      "notes": [
+        "festus"
+      ]
+    },
+    {
+      "latin": "fēriae, fēriārum f. pl.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a festival; holidays",
+      "evidence": [
+        "Liv. 41.16.1: <span lang=\"la\">Latīnae fēriae</span>",
+        "Cic. Off. 3.59: <span lang=\"la\">fēriae quaedam piscātōrum</span>"
+      ],
+      "comment": "Days of rest kept for a festival; also the holidays (see holidays)."
+    },
+    {
+      "latin": "fēstum, fēstī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a feast, a festival",
+      "register": "vōx plērumque poētica: Ov.",
+      "evidence": [
+        "Ov. F. 4.877 (Lewis &amp; Short)"
+      ],
+      "comment": "Poetic and late Latin for <span lang=\"la\">diēs fēstus</span> (Lewis &amp; Short); in Church Latin a feast of the Church (<span lang=\"la\">fēstum nātīvitātis Chrīstī</span>, Traupman 291).",
+      "notes": [
+        "festus"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Kal., Īdibus, Nōnīs, fēstus diēs cum erit, corōnam in focum indat",
+      "english": "on the Kalends, the Ides and the Nones, and whenever there is a feast day, she is to put a garland on the hearth",
+      "source": "Cato, Agr. 143.2"
+    },
+    {
+      "latin": "Sāturnālibus, optimō diērum!",
+      "english": "on the Saturnalia, the best of days!",
+      "source": "Catull. 14.15"
+    }
+  ],
+  "notes": {
+    "festus": {
+      "form": "fēstus",
+      "claim": "long e",
+      "against": "Lewis &amp; Short leaves it unmarked",
+      "html": "De Vaan 212, s.v. <span lang=\"la\">fēriae</span>: <span lang=\"la\">fēriae</span> and <span lang=\"la\">fēstus</span> rest on <span lang=\"la\">*fēs-</span>, “divine, holy”.",
+      "ruling": "quantity-authorities"
+    }
+  },
+  "related": [
+    "holidays",
+    "celebrate",
+    "anniversary",
+    "christmas",
+    "easter",
+    "weekday"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/festus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: festus</a> · <a href=\"https://logeion.uchicago.edu/feriae\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: feriae</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 291, checked against the searchable text of the book (9 November 2026).",
+    "Michiel de Vaan, <em>Etymological Dictionary of Latin and the other Italic Languages</em> (2008), p. 212.",
+    "Cicero’s Pro Archia, Plautus and Livy checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Cato, Cicero’s De officiis and Catullus from the Latinitas loci collections."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "id": "difference",
+  "english": "difference",
+  "sense": "how things differ",
+  "pos": "noun",
+  "also": [
+    "what’s the difference?",
+    "the difference between",
+    "make a difference",
+    "distinction"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "interest",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "there is a difference",
+      "grammar": "verb: impersonal, from intersum; inter … et … for the things compared",
+      "evidence": [
+        "Cic. Off. 1.11: <span lang=\"la\">inter hominem et bēluam hoc maximē interest</span>",
+        "Ter. Ad. 76: <span lang=\"la\">hoc pater ac dominus interest</span>"
+      ],
+      "comment": "Latin usually says “difference” with the verb: <span lang=\"la\">quid interest inter … et …?</span>, what’s the difference between … and …?; <span lang=\"la\">multum interest</span>, it makes a big difference; <span lang=\"la\">nihil interest</span>, there’s no difference (see it makes no difference)."
+    },
+    {
+      "latin": "discrīmen, discrīminis n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "difference, distinction",
+      "evidence": [
+        "Gell. 2.26.3: <span lang=\"la\">colōrum discrīmina</span>",
+        "Cic. Balb. 49: <span lang=\"la\">sit hoc discrīmen inter grātiōsōs cīvēs atque fortēs</span> (Lewis &amp; Short)"
+      ],
+      "comment": "<span lang=\"la\">Sine discrīmine</span>, without distinction."
+    },
+    {
+      "latin": "differentia, differentiae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "difference, diversity",
+      "evidence": [
+        "Cic. Off. 1.94: <span lang=\"la\">honestī et decōrī</span> (Lewis &amp; Short)",
+        "Traupman 303"
+      ],
+      "comment": "A word of philosophy and of teaching (Cicero, Quintilian)."
+    },
+    {
+      "latin": "dissimilitūdō, dissimilitūdinis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "unlikeness, difference",
+      "evidence": [
+        "Cic. Lael. 74 (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Dī inmortālēs, hominī homō quid praestat? stultō intellegēns quid inter est?",
+      "english": "Good gods, how one man can outdo another! What a difference there is between a fool and a man of sense!",
+      "source": "Ter. Eun. 232–233"
+    },
+    {
+      "latin": "Hoc pater ac dominus interest: hoc quī nequit, fateātur nescīre imperāre līberīs.",
+      "english": "That is the difference between a father and a master; whoever can’t do it should admit he doesn’t know how to bring up children.",
+      "source": "Ter. Ad. 76–77"
+    },
+    {
+      "latin": "sed inter hominem et bēluam hoc maximē interest, quod haec tantum, quantum sēnsū movētur, ad id sōlum, quod adest quodque praesēns est, sē accommodat",
+      "english": "but the chief difference between man and beast is this: the beast, as far as its senses move it, adapts itself only to what is here and now",
+      "source": "Cic. Off. 1.11"
+    }
+  ],
+  "related": [
+    "different",
+    "it-makes-no-difference",
+    "interest-advantage"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/intersum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: intersum</a> · <a href=\"https://logeion.uchicago.edu/discrimen\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: discrimen</a> · <a href=\"https://logeion.uchicago.edu/differentia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: differentia</a> · <a href=\"https://logeion.uchicago.edu/dissimilitudo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dissimilitudo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 303, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-gellius), checked against the editions named there.",
+    "Terence’s <em>Eunuchus</em> and <em>Adelphoe</em> and Cicero, <em>De officiis</em> 1, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> and the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

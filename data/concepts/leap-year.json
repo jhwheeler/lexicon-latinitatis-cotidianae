@@ -1,0 +1,69 @@
+{
+  "id": "leap-year",
+  "english": "leap year",
+  "pos": "noun",
+  "also": [
+    "leap day"
+  ],
+  "domain": "tempus",
+  "terms": [
+    {
+      "latin": "annus intercalārius",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "leap year",
+      "evidence": [
+        "Plin. NH 18.207: <span lang=\"la\">annō intercalāriō</span>",
+        "Plin. NH 2.130"
+      ],
+      "comment": "Pliny’s term for the year with the added day. Caesar fixed the year at 365 days, adding a day every fourth year (Suet. Jul. 40.1). The Romans did not add a 29 February: they counted the sixth day before the Kalends of March twice, whence late Latin <span lang=\"la\">bisextus</span>, the leap day."
+    },
+    {
+      "latin": "diēs intercalārius",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the leap day",
+      "evidence": [
+        "Plin. NH 2.35: <span lang=\"la\">ūnus intercalārius diēs additur</span>",
+        "Traupman 78–79: <span lang=\"la\">ante diem bis VI Kalendās Mārtiās</span>"
+      ]
+    },
+    {
+      "latin": "annus bisextilis",
+      "status": "alternative",
+      "period": "late",
+      "gloss": "leap year",
+      "evidence": [
+        "Isid. Orig. 6.17.25 (Lewis &amp; Short)"
+      ],
+      "comment": "The medieval and Church term, from <span lang=\"la\">bisextus</span>, the leap day (Censorinus, Ammianus; Lewis &amp; Short, who call the spelling <span lang=\"la\">bissextus</span> an error)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ūnus diēs quārtō quōque annō intercalārētur",
+      "english": "(Caesar arranged that) one day should be added every fourth year",
+      "source": "Suet. Jul. 40.1"
+    },
+    {
+      "latin": "quam ob causam quīntō annō ūnus intercalārius diēs additur",
+      "english": "for this reason an extra day is added every fourth year (“in the fifth year”, counting both ends)",
+      "source": "Plin. NH 2.35"
+    }
+  ],
+  "related": [
+    "february",
+    "calendar",
+    "kalends"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/intercalarius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: intercalarius</a> · <a href=\"https://logeion.uchicago.edu/bisextus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: bisextus</a> · <a href=\"https://logeion.uchicago.edu/bisextilis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: bisextilis</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 78–79, checked against the searchable text of the book (9 November 2026).",
+    "Pliny’s Natural History and Suetonius checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

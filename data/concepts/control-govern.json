@@ -1,0 +1,104 @@
+{
+  "id": "control-govern",
+  "english": "control",
+  "sense": "direct, run, steer",
+  "pos": [
+    "verb",
+    "noun"
+  ],
+  "also": [
+    "be in control",
+    "under control",
+    "have control of",
+    "keep under control",
+    "out of control"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "regō, regere, rēxī, rēctum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "control, guide, run",
+      "evidence": [
+        "Cic. Sen. 37: <span lang=\"la\">tantam domum … Appius regēbat</span>",
+        "Liv. 35.11: <span lang=\"la\">impotentēs regendī equī</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Of steering a ship or a horse, running a house, governing a people: whatever needs a hand on it to go straight."
+    },
+    {
+      "latin": "moderor, moderārī, moderātus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "control, manage, guide",
+      "grammar": "verb, first conjugation, deponent; with the accusative",
+      "evidence": [
+        "Caes. BG 4.33.3: <span lang=\"la\">brevī moderārī ac flectere</span>",
+        "Cic. Fam. 2.7.1: <span lang=\"la\">ut omnia gubernēs et moderēre prūdentiā tuā</span>"
+      ],
+      "comment": "With the dative it means “hold back” (see control, hold back)."
+    },
+    {
+      "latin": "gubernō, gubernāre, gubernāvī, gubernātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "steer; direct, manage",
+      "evidence": [
+        "Cic. Fam. 2.7.1: <span lang=\"la\">ut omnia gubernēs</span>"
+      ],
+      "comment": "Properly the helmsman’s word (Greek κυβερνάω); figuratively of running affairs, a favourite with Cicero (Lewis &amp; Short)."
+    },
+    {
+      "latin": "potestās, potestātis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "power, control",
+      "evidence": [
+        "Cic. Phil. 6.4: <span lang=\"la\">ut sit in senātūs populīque Rōmānī potestāte</span> (Lewis &amp; Short)",
+        "Traupman 150"
+      ],
+      "comment": "“Under control”, “in someone’s control”: <span lang=\"la\">in potestāte esse, habēre</span>."
+    },
+    {
+      "latin": "effrēnātus, effrēnāta, effrēnātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "out of control, unbridled",
+      "evidence": [
+        "Liv. 37.41.10: <span lang=\"la\">velut effrēnātī passim incertō cursū ferrentur</span>",
+        "Traupman 150"
+      ],
+      "comment": "Properly of horses without a bridle; of people and passions, a favourite word of Cicero (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "quattuor rōbustōs fīliōs, quīnque fīliās, tantam domum, tantās clientēlās Appius regēbat et caecus et senex",
+      "english": "four strong sons, five daughters, so great a household, so many clients: Appius kept them all under control, blind and old as he was",
+      "source": "Cic. Sen. 37"
+    },
+    {
+      "latin": "tantum ūsū cotīdiānō et exercitātiōne efficiunt utī in dēclīvī ac praecipitī locō incitātōs equōs sustinēre et brevī moderārī ac flectere … cōnsuērint",
+      "english": "by daily use and practice they get so good that on a steep slope they can hold their galloping horses, and control and turn them in a moment",
+      "source": "Caes. BG 4.33.3"
+    }
+  ],
+  "related": [
+    "in-charge",
+    "control-restrain",
+    "remote-control",
+    "button-control",
+    "government"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/rego\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: rego</a> · <a href=\"https://logeion.uchicago.edu/moderor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: moderor</a> · <a href=\"https://logeion.uchicago.edu/guberno\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: guberno</a> · <a href=\"https://logeion.uchicago.edu/potestas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: potestas</a> · <a href=\"https://logeion.uchicago.edu/effrenatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: effrenatus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 150, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-cicero-philosophica), checked against the editions named there.",
+    "Caesar, <em>Gallic War</em> 4, Livy 35 and 37, and Cicero, Fam. 2.7, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> and the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

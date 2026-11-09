@@ -1,0 +1,67 @@
+{
+  "id": "epistle",
+  "english": "epistle",
+  "pos": "noun",
+  "domain": "ecclesia",
+  "terms": [
+    {
+      "latin": "epistula, epistulae f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a letter; an epistle",
+      "evidence": [
+        "Cic. Q. fr. 3.1.8 (Lewis &amp; Short)",
+        "Vulg. Col. 4.16"
+      ],
+      "comment": "Any letter; in church the reading from the letters of the apostles. The Vulgate spells it <span lang=\"la\">epistola</span>."
+    },
+    {
+      "latin": "apostolus, apostolī m.",
+      "status": "alternative",
+      "period": "late",
+      "gloss": "the Apostle: Paul’s letters, the epistle reading",
+      "evidence": [
+        "Aug. Conf. 8.12.29: <span lang=\"la\">cōdicem apostolī</span>"
+      ],
+      "comment": "In the Fathers “the apostle” is Paul, and his letters; the Orthodox still call the book of the Epistles and its reading “the Apostle”."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Et cum lēcta fuerit apud vōs epistola haec, facite ut et in Lāodicēnsium ecclēsiā legātur",
+      "english": "And when this letter has been read among you, see that it is read in the church of the Laodiceans too",
+      "source": "Vulg. Col. 4.16",
+      "notes": [
+        "epistola"
+      ]
+    },
+    {
+      "latin": "ibi enim posueram cōdicem apostolī cum inde surrēxeram. arripuī, aperuī, et lēgī in silentiō",
+      "english": "for I had left the book of the Apostle there when I got up. I snatched it up, opened it, and read in silence",
+      "source": "Aug. Conf. 8.12.29"
+    }
+  ],
+  "notes": {
+    "epistola": {
+      "form": "epistola",
+      "claim": "short i",
+      "against": "Lewis &amp; Short <span lang=\"la\">ĕpīstŏla</span>, taking the heavy syllable for a long vowel",
+      "html": "Greek ἐπιστολή, from ἐπί, with short ι; Lewis &amp; Short’s main entry, <span lang=\"la\">ĕpistŭla</span>, leaves the i unmarked."
+    }
+  },
+  "related": [
+    "bible",
+    "gospel",
+    "apostle"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/epistula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: epistula</a> · <a href=\"https://logeion.uchicago.edu/apostolus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: apostolus</a>",
+    "Vulgate quotations checked against the Clementine text (the <em>VulgClementine</em> file of the <a href=\"https://github.com/scrollmapper/bible_databases\" rel=\"noopener noreferrer\" target=\"_blank\">scrollmapper Bible databases</a>, the text the loci collection uses) (9 November 2026).",
+    "Augustine, <em>Confessions</em> 8, checked against O’Donnell’s text in the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

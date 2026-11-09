@@ -1,0 +1,95 @@
+{
+  "id": "result",
+  "english": "result",
+  "sense": "outcome",
+  "pos": [
+    "noun",
+    "verb"
+  ],
+  "also": [
+    "outcome",
+    "as a result",
+    "result in",
+    "result from",
+    "consequence"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "ēventus, ēventūs m.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "outcome, result",
+      "evidence": [
+        "Cic. Inv. 1.42: <span lang=\"la\">ēventus est alicujus exitus negōtiī</span> (Lewis &amp; Short)",
+        "Liv. 8.29.5: <span lang=\"la\">ēventus docuit</span>"
+      ],
+      "comment": "How a thing turns out, well or badly. Latin often says the result with a clause instead: <span lang=\"la\">ex quō fit ut</span>, <span lang=\"la\">ita fit ut</span>, with the result that; <span lang=\"la\">quid ēvēnerit</span>, what came of it."
+    },
+    {
+      "latin": "exitus, exitūs m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "end, outcome",
+      "evidence": [
+        "Caes. BC 3.22: <span lang=\"la\">celerem et facilem exitum habuērunt</span> (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "cōnsequor, cōnsequī, cōnsecūtus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "follow as a result, result",
+      "grammar": "verb, third conjugation, deponent",
+      "evidence": [
+        "Cic. Tusc. 4.19: <span lang=\"la\">ex quō fit ut pudōrem rubor, terrōrem pallor et tremor cōnsequātur</span> (Lewis &amp; Short)"
+      ],
+      "comment": "The result is the subject, the cause the object: blushing “follows” shame."
+    },
+    {
+      "latin": "ex quō fit ut",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "as a result, so that",
+      "grammar": "phrase: with the subjunctive",
+      "evidence": [
+        "Cic. Sen. 72: <span lang=\"la\">ex quō fit, ut animōsior etiam senectūs sit quam adulēscentia</span>",
+        "Cic. Off. 1.101: <span lang=\"la\">ita fit, ut ratiō praesit</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ēventus docuit fortēs fortūnam juvāre",
+      "english": "the result showed that fortune favours the brave",
+      "source": "Liv. 8.29.5"
+    },
+    {
+      "latin": "ex quō fit, ut animōsior etiam senectūs sit quam adulēscentia et fortior",
+      "english": "and the result is that old age is bolder and braver even than youth",
+      "source": "Cic. Sen. 72"
+    },
+    {
+      "latin": "ēventus … stultōrum iste magister est",
+      "english": "the result is the teacher of fools",
+      "source": "Liv. 22.39.10"
+    }
+  ],
+  "related": [
+    "effect",
+    "cause",
+    "happen",
+    "actual-result",
+    "expected-result"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/eventus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: eventus</a> · <a href=\"https://logeion.uchicago.edu/exitus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: exitus</a> · <a href=\"https://logeion.uchicago.edu/consequor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: consequor</a>",
+    "Quotations from the Latinitas loci collections (loci-livius, loci-cicero-philosophica), checked against the editions named there.",
+    "Cicero, <em>De senectute</em>, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

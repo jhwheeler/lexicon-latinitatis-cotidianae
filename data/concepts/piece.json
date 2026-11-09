@@ -3,7 +3,8 @@
   "english": "piece",
   "pos": "noun",
   "also": [
-    "chunk"
+    "chunk",
+    "bit"
   ],
   "domain": "culina",
   "terms": [
@@ -21,6 +22,17 @@
       "status": "alternative",
       "period": "classical",
       "gloss": "little piece"
+    },
+    {
+      "latin": "particula, particulae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a little bit, a small part of anything",
+      "evidence": [
+        "Cic. de Or. 2.162: <span lang=\"la\">tenuissimae particulae</span> (Lewis &amp; Short)",
+        "Hor. C. 1.28.23 (Lewis &amp; Short)"
+      ],
+      "comment": "Not only of food: <span lang=\"la\">frustum</span> is properly a piece of food, <span lang=\"la\">particula</span> a little part of anything, as of sand in Horace (Lewis &amp; Short)."
     }
   ],
   "phrases": [
@@ -37,7 +49,7 @@
     "cut"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/frustum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: frustum</a> · <a href=\"https://atlas.perseus.tufts.edu/dictionaries/entry/urn%3Acite2%3Ascaife-viewer%3Adictionaries.v1%3Aelementary-latin-n6508/\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis: frustum</a> · <a href=\"https://www.alatius.com/latin/bennetthidden.html\" rel=\"noopener noreferrer\" target=\"_blank\">Bennett: hidden quantities, with later corrections</a>",
+    "<a href=\"https://logeion.uchicago.edu/frustum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: frustum</a> · <a href=\"https://atlas.perseus.tufts.edu/dictionaries/entry/urn%3Acite2%3Ascaife-viewer%3Adictionaries.v1%3Aelementary-latin-n6508/\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis: frustum</a> · <a href=\"https://www.alatius.com/latin/bennetthidden.html\" rel=\"noopener noreferrer\" target=\"_blank\">Bennett: hidden quantities, with later corrections</a> · <a href=\"https://logeion.uchicago.edu/particula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: particula</a>",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio: numbered food and kitchen sections</a>",
     "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>",
     "The example sentence marked “composed” is ours."

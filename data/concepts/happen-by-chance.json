@@ -1,0 +1,82 @@
+{
+  "id": "happen-by-chance",
+  "english": "happen",
+  "sense": "to do something, by chance",
+  "pos": "verb",
+  "also": [
+    "happen to",
+    "by chance",
+    "as it happens",
+    "do you happen to know?",
+    "if by any chance"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "forte",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "by chance, as it happened",
+      "grammar": "adverb (the ablative of fors)",
+      "evidence": [
+        "Hor. S. 1.9.1: <span lang=\"la\">ībam forte viā Sacrā</span>",
+        "Cic. Planc. 65: <span lang=\"la\">Puteolōs forte vēnissem</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Latin says “I happened to …” with the verb and <span lang=\"la\">forte</span>: <span lang=\"la\">forte vīdī</span>, I happened to see. <span lang=\"la\">Sī forte</span>, if by any chance; <span lang=\"la\">nisi forte</span>, unless perhaps; <span lang=\"la\">forte fortūnā</span>, by sheer luck (Ter. Eun. 134, Lewis &amp; Short).",
+      "notes": [
+        "forte"
+      ]
+    },
+    {
+      "latin": "cāsū",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "by chance, by accident",
+      "grammar": "adverb (the ablative of cāsus)",
+      "evidence": [
+        "Cic. Planc. 65: <span lang=\"la\">cum cāsū diēbus iīs</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Often beside <span lang=\"la\">forte</span>; the opposite is <span lang=\"la\">cōnsiliō</span>, on purpose."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Ībam forte viā Sacrā, sīcut meus est mōs",
+      "english": "I happened to be walking along the Sacred Way, as is my habit",
+      "source": "Hor. S. 1.9.1"
+    },
+    {
+      "latin": "erat forte brūmae tempus et nivālis diēs",
+      "english": "it happened to be midwinter, and a snowy day",
+      "source": "Liv. 21.54.7"
+    },
+    {
+      "latin": "ut vēlōcissimus quoque, sī forte iter cum parvulō faciat, det manum et gradum suum minuat",
+      "english": "as even the fastest walker, if he happens to be travelling with a little child, gives him his hand and shortens his step",
+      "source": "Quint. 2.3.7"
+    }
+  ],
+  "notes": {
+    "forte": {
+      "form": "forte",
+      "claim": "short final e",
+      "against": "Lewis &amp; Short <span lang=\"la\">fortē</span>",
+      "html": "The ablative of the third-declension <span lang=\"la\">fors</span> (de Vaan 236, s.v. <span lang=\"la\">fors</span>: “abl. <span lang=\"la\">forte</span> ‘by chance’”). Verg. A. 1.377, <span lang=\"la\">forte suā Libycīs tempestās adpulit ōrīs</span>, and Hor. S. 1.9.1, <span lang=\"la\">ībam forte viā Sacrā</span>: in both, <span lang=\"la\">forte su-</span> and <span lang=\"la\">forte vi-</span> are dactyls."
+    }
+  },
+  "related": [
+    "happen",
+    "perhaps"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/fors\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fors</a> · <a href=\"https://logeion.uchicago.edu/casus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: casus</a>",
+    "Michiel de Vaan, <em>Etymological Dictionary of Latin and the other Italic Languages</em> (2008), p. 236.",
+    "Quotations from the Latinitas loci collections (loci-horatius, loci-livius, loci-quintilianus), checked against the editions named there.",
+    "Vergil, <em>Aeneid</em> 1, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> and the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

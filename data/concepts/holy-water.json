@@ -1,0 +1,62 @@
+{
+  "id": "holy-water",
+  "english": "holy water",
+  "pos": "noun",
+  "also": [
+    "blessed water"
+  ],
+  "domain": "ecclesia",
+  "terms": [
+    {
+      "latin": "aqua benedicta",
+      "status": "recommended",
+      "period": "medieval",
+      "gloss": "holy water",
+      "evidence": [
+        "M-O s.v. holy water, after Du Cange and Marco Polo (c. 1300)"
+      ],
+      "comment": "Water blessed by a priest, from <span lang=\"la\">benedīcere</span>. The West keeps it in a stoup by the church door for the sign of the cross; the East blesses water solemnly at Theophany, and the faithful drink it and sprinkle their houses with it."
+    },
+    {
+      "latin": "aqua sāncta",
+      "status": "alternative",
+      "period": "late",
+      "evidence": [
+        "Vulg. Num. 5.17: <span lang=\"la\">assūmetque aquam sānctam in vāse fictilī</span>"
+      ],
+      "comment": "The Vulgate’s phrase, of the holy water of the Law."
+    },
+    {
+      "latin": "aqua lustrālis",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "lustral water, for pagan purification",
+      "evidence": [
+        "Ov. Pont. 3.2.73 (Lewis &amp; Short)"
+      ],
+      "comment": "Lewis &amp; Short translate Ovid’s phrase “holy water”; it is the water of pagan rites."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Sacerdōs domum aquā benedictā aspergit.",
+      "english": "The priest is sprinkling the house with holy water.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "priest",
+    "church"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/aqua\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aqua</a> · <a href=\"https://logeion.uchicago.edu/benedico\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: benedico</a> · <a href=\"https://logeion.uchicago.edu/lustralis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lustralis</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. holy water.",
+    "Vulgate quotations checked against the Clementine text (the <em>VulgClementine</em> file of the <a href=\"https://github.com/scrollmapper/bible_databases\" rel=\"noopener noreferrer\" target=\"_blank\">scrollmapper Bible databases</a>, the text the loci collection uses) (9 November 2026).",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

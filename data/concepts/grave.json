@@ -1,0 +1,69 @@
+{
+  "id": "grave",
+  "english": "grave",
+  "sense": "a burial place",
+  "pos": "noun",
+  "also": [
+    "tomb",
+    "burial place"
+  ],
+  "domain": "ecclesia",
+  "terms": [
+    {
+      "latin": "sepulcrum, sepulcrī n.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "grave, tomb",
+      "evidence": [
+        "Cic. Leg. 2.57 (Lewis &amp; Short)",
+        "Traupman 323"
+      ],
+      "comment": "Any burial place, from <span lang=\"la\">sepelīre</span>, to bury."
+    },
+    {
+      "latin": "tumulus, tumulī m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a grave mound",
+      "evidence": [
+        "Verg. Ecl. 5.42: <span lang=\"la\">tumulum facite</span>"
+      ],
+      "comment": "Properly a mound of earth (see mound)."
+    },
+    {
+      "latin": "monumentum, monumentī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a tomb, a memorial",
+      "evidence": [
+        "Vulg. Mt. 27.60: <span lang=\"la\">posuit illud in monumentō suō novō</span>",
+        "Cic. Mil. 17 (Lewis &amp; Short)"
+      ],
+      "comment": "The Vulgate’s word for the tomb of Christ."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "saeptum undique et vestītum vepribus et dūmētīs indāgāvī sepulcrum",
+      "english": "I tracked down the tomb, fenced in on every side and overgrown with brambles and thickets",
+      "source": "Cic. Tusc. 5.64"
+    }
+  ],
+  "related": [
+    "cemetery",
+    "funeral",
+    "monument",
+    "mound"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/sepulcrum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sepulcrum</a> · <a href=\"https://logeion.uchicago.edu/tumulus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tumulus</a> · <a href=\"https://logeion.uchicago.edu/monumentum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: monumentum</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 323, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-cicero-philosophica), checked against the editions named there.",
+    "Vulgate quotations checked against the Clementine text (the <em>VulgClementine</em> file of the <a href=\"https://github.com/scrollmapper/bible_databases\" rel=\"noopener noreferrer\" target=\"_blank\">scrollmapper Bible databases</a>, the text the loci collection uses) (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

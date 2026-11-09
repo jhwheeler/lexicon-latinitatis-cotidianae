@@ -1,0 +1,78 @@
+{
+  "id": "next-year",
+  "english": "next year",
+  "pos": "phrase",
+  "domain": "tempus",
+  "terms": [
+    {
+      "latin": "ad annum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "next year, a year from now",
+      "evidence": [
+        "Cic. Att. 5.2.1",
+        "Cic. de Or. 3.92: <span lang=\"la\">faciendum est ad annum</span>"
+      ],
+      "comment": "“For the coming year, a year hence” (Lewis &amp; Short); unlike <span lang=\"la\">proximō annō</span>, it cannot mean last year."
+    },
+    {
+      "latin": "in proximum annum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "for next year",
+      "evidence": [
+        "Plin. Ep. 4.15.5",
+        "Caelius in Cic. Fam. 8.9.2"
+      ],
+      "comment": "With verbs of putting off, wishing or choosing."
+    },
+    {
+      "latin": "proximō annō",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "next year; last year",
+      "evidence": [
+        "Traupman 89: <span lang=\"la\">proximus annus</span>, “the following year”",
+        "Plin. Ep. 10.5.1"
+      ],
+      "comment": "<span lang=\"la\">proximus</span> is the nearest year either way: Pliny’s <span lang=\"la\">proximō annō</span> (Ep. 10.5.1) is last year."
+    },
+    {
+      "latin": "īnsequentī annō",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the following year (in narrative)",
+      "evidence": [
+        "Liv. 3.2.1"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Furnium nostrum quem ad annum tribūnum pl. vidēbam fore",
+      "english": "our friend Furnius, who I could see would be tribune next year",
+      "source": "Cic. Att. 5.2.1"
+    },
+    {
+      "latin": "optāmus enim tibi ōmināmurque in proximum annum cōnsulātum",
+      "english": "for we wish you, and foresee for you, the consulship next year",
+      "source": "Plin. Ep. 4.15.5"
+    }
+  ],
+  "related": [
+    "next-week",
+    "every-year",
+    "last-week",
+    "year"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/annus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: annus</a> · <a href=\"https://logeion.uchicago.edu/proximus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: proximus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 89, checked against the searchable text of the book (9 November 2026).",
+    "Cicero’s letters and De oratore, Pliny’s letters and Livy checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

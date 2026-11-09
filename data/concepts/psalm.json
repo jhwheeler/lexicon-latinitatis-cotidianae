@@ -1,0 +1,54 @@
+{
+  "id": "psalm",
+  "english": "psalm",
+  "pos": "noun",
+  "domain": "ecclesia",
+  "terms": [
+    {
+      "latin": "psalmus, psalmī m.",
+      "status": "recommended",
+      "period": "late",
+      "evidence": [
+        "Tert. Prax. 11 (Lewis &amp; Short)",
+        "Vulg. Lc. 20.42"
+      ],
+      "comment": "Greek ψαλμός, a song to the strings (<span lang=\"la\">psallere</span>, to play the cithara). The book is the <span lang=\"la\">psaltērium</span>, the Psalter (Hier. Ep. 53.8, Lewis &amp; Short). The Orthodox and the Latin psalter number the psalms as the Septuagint does, mostly one behind the Hebrew numbering of English Bibles: the Shepherd psalm is 22 in the Vulgate and 23 in the Hebrew."
+    },
+    {
+      "latin": "psalma, psalmatis n.",
+      "status": "alternative",
+      "period": "late",
+      "evidence": [
+        "Aug. in Ps. 4 (Lewis &amp; Short)",
+        "Hier. Ep. 28 (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "psalmīs et hymnīs cum ōrātis Deum, hoc versētur in corde quod prōfertur in vōce",
+      "english": "when you pray to God in psalms and hymns, let the heart turn over what the voice brings out",
+      "source": "Aug. Reg. 2.3"
+    },
+    {
+      "latin": "et ipse David dīcit in librō Psalmōrum",
+      "english": "and David himself says in the book of Psalms",
+      "source": "Vulg. Lc. 20.42"
+    }
+  ],
+  "related": [
+    "hymn",
+    "bible",
+    "chant"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/psalmus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: psalmus</a> · <a href=\"https://logeion.uchicago.edu/psalma\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: psalma</a> · <a href=\"https://logeion.uchicago.edu/psalterium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: psalterium</a>",
+    "Quotations from the Latinitas loci collections (loci-augustinus), checked against the editions named there.",
+    "Vulgate quotations checked against the Clementine text (the <em>VulgClementine</em> file of the <a href=\"https://github.com/scrollmapper/bible_databases\" rel=\"noopener noreferrer\" target=\"_blank\">scrollmapper Bible databases</a>, the text the loci collection uses) (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "id": "life",
+  "english": "life",
+  "pos": "noun",
+  "also": [
+    "lifetime",
+    "all my life",
+    "in my life",
+    "way of life",
+    "that’s life"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "vīta, vītae f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "life: being alive, a lifetime, a way of living",
+      "evidence": [
+        "Cic. Att. 5.20.6: <span lang=\"la\">in vītā meā</span>",
+        "Cic. Fam. 9.20.3: <span lang=\"la\">haec igitur est nunc vīta nostra</span>"
+      ],
+      "comment": "It covers both senses of English “life”: being alive (<span lang=\"la\">in vītā manēre</span>, to stay alive, Cic. Fam. 5.15.3, Lewis &amp; Short) and the life one leads (<span lang=\"la\">vīta rūstica</span>, Cic. Rosc. Am. 48, Lewis &amp; Short). <span lang=\"la\">Mea vīta</span> is also an endearment (Cic. Fam. 14.4.1)."
+    },
+    {
+      "latin": "aetās, aetātis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "lifetime; a time of life",
+      "evidence": [
+        "Cic. Sen. 70: <span lang=\"la\">breve enim tempus aetātis satis longum est ad bene honestēque vīvendum</span>"
+      ],
+      "comment": "The span of a life, or one stage of it, from childhood to old age."
+    },
+    {
+      "latin": "vīctus, vīctūs m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "way of living, daily life",
+      "evidence": [
+        "Cic. Off. 1.58: <span lang=\"la\">vīta vīctusque commūnis</span> (Lewis &amp; Short, s.v. <span lang=\"la\">vīta</span>)"
+      ],
+      "comment": "The means and manner of living, food above all (see diet)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ego in vītā meā nūllā umquam voluptāte tantā sum adfectus quantā adficior hāc integritāte",
+      "english": "never in my life have I felt such pleasure as I feel at this honesty of mine",
+      "source": "Cic. Att. 5.20.6"
+    },
+    {
+      "latin": "haec igitur est nunc vīta nostra: māne salūtāmus domī",
+      "english": "so this is our life now: in the morning we receive callers at home",
+      "source": "Cic. Fam. 9.20.3"
+    },
+    {
+      "latin": "Ita vīta est hominum quasi cum lūdās tesserīs",
+      "english": "human life is like a game of dice",
+      "source": "Ter. Ad. 739"
+    },
+    {
+      "latin": "quod hodiē nōn est, crās erit: sīc vīta trūditur",
+      "english": "what isn’t here today will be tomorrow: that’s how life goes on",
+      "source": "Petr. 45.1"
+    }
+  ],
+  "related": [
+    "live-be-alive",
+    "die",
+    "be-born",
+    "health"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/vita\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vita</a> · <a href=\"https://logeion.uchicago.edu/aetas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aetas</a> · <a href=\"https://logeion.uchicago.edu/victus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: victus</a>",
+    "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-cicero-philosophica, loci-terentius, loci-petronius), checked against the editions named there.",
+    "Cicero, Att. 5.20, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

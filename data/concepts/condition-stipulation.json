@@ -1,0 +1,92 @@
+{
+  "id": "condition-stipulation",
+  "english": "condition",
+  "sense": "something that must be met first",
+  "pos": "noun",
+  "also": [
+    "on condition that",
+    "provided that",
+    "providing",
+    "on one condition"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "condiciō, condiciōnis f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "condition, terms",
+      "evidence": [
+        "Cic. Arch. 25: <span lang=\"la\">sed eā condiciōne, nē quid posteā scrīberet</span>",
+        "Phaedr. 3.13.12: <span lang=\"la\">apibus condiciō placet</span>"
+      ],
+      "comment": "“On condition that” is <span lang=\"la\">eā condiciōne ut</span> (or <span lang=\"la\">nē</span>) with the subjunctive; to turn down the terms, <span lang=\"la\">condiciōnem respuere</span> (Caes. BG 1.42, Lewis &amp; Short). The spelling <span lang=\"la\">conditiō</span> is a manuscript error that took the word for a derivative of <span lang=\"la\">condō</span> (Lewis &amp; Short)."
+    },
+    {
+      "latin": "lēx, lēgis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "condition, terms (of an agreement)",
+      "register": "sēnsus plērumque cōmicus: Plaut., Ter.; also Cato",
+      "evidence": [
+        "Ter. Eun. 102: <span lang=\"la\">hāc lēge tibi meam adstringō fidem</span>",
+        "Traupman 95: <span lang=\"la\">eā lēge ut</span>"
+      ],
+      "comment": "<span lang=\"la\">Hāc lēge, eā lēge ut</span>, on these terms; in this sense mostly before Cicero (Lewis &amp; Short)."
+    },
+    {
+      "latin": "dum, dummodo",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "provided that, so long as",
+      "grammar": "conjunctions, with the subjunctive",
+      "evidence": [
+        "Accius in Cic. Off. 1.97: <span lang=\"la\">ōderint, dum metuant</span>",
+        "Cic. Brut. 285: <span lang=\"la\">dummodo sit polīta</span> (Lewis &amp; Short)"
+      ],
+      "comment": "The negative is <span lang=\"la\">dum nē</span>, <span lang=\"la\">dummodo nē</span>."
+    },
+    {
+      "latin": "sī modo",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "if only, provided that",
+      "grammar": "conjunction with an adverb",
+      "evidence": [
+        "Cic. Off. 1.48: <span lang=\"la\">sī modo possīs</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "jubēre eī praemium tribuī, sed eā condiciōne, nē quid posteā scrīberet",
+      "english": "(we saw Sulla) order a reward to be given him, but on condition that he write nothing more",
+      "source": "Cic. Arch. 25"
+    },
+    {
+      "latin": "vērum heus tū, hāc lēge tibi meam adstringō fidem: quae vēra audīvī taceō et contineō optumē",
+      "english": "but listen, I give you my word on this condition: what I hear that’s true, I keep to myself and hold in perfectly",
+      "source": "Ter. Eun. 102–103"
+    },
+    {
+      "latin": "fūcī recūsant: apibus condiciō placet",
+      "english": "the drones refuse; the bees accept the terms",
+      "source": "Phaedr. 3.13.12"
+    }
+  ],
+  "related": [
+    "state-condition",
+    "situation"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/condicio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: condicio</a> · <a href=\"https://logeion.uchicago.edu/lex\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lex</a> · <a href=\"https://logeion.uchicago.edu/dum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dum</a> · <a href=\"https://logeion.uchicago.edu/dummodo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dummodo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 95, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-phaedrus, loci-cicero-philosophica), checked against the editions named there.",
+    "Cicero, <em>Pro Archia</em> and <em>De officiis</em> 1, and Terence’s <em>Eunuchus</em>, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

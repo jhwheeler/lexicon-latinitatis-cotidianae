@@ -1,0 +1,78 @@
+{
+  "id": "case-instance",
+  "english": "case",
+  "sense": "an instance, a situation",
+  "pos": "noun",
+  "also": [
+    "instance",
+    "if that’s the case",
+    "in that case",
+    "in such a case",
+    "in the same case"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "sī ita est",
+      "status": "recommended",
+      "period": "classical",
+      "grammar": "phrase",
+      "gloss": "if that is the case; in that case",
+      "evidence": [
+        "Cic. Fam. 7.7.2: <span lang=\"la\">id sī ita est</span>",
+        "Cic. Att. 6.5.1: <span lang=\"la\">quō tē, sī ita est, salvum vēnisse gaudeō</span>",
+        "Traupman 95: <span lang=\"la\">sī rēs sīc habet</span>"
+      ],
+      "comment": "Latin needs no noun for “case”: “if it is so”, and for the other case <span lang=\"la\">sīn aliter</span>, if not (Cic. Fam. 11.14.3). Since that is the case, <span lang=\"la\">quae cum ita sint</span> (Traupman 95). Traupman also gives <span lang=\"la\">eō cāsū</span>, in that case (p. 95); Cicero’s letters say <span lang=\"la\">sī ita est</span>."
+    },
+    {
+      "latin": "causa, causae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a person’s case, the position someone is in",
+      "evidence": [
+        "Cic. Off. 1.112: <span lang=\"la\">alius in eādem causā nōn dēbeat</span>",
+        "Cic. Att. 11.2.3: <span lang=\"la\">quī videntur in eādem causā esse</span>"
+      ],
+      "comment": "<span lang=\"la\">in eādem causā esse</span>, to be in the same case (Lewis &amp; Short: = <span lang=\"la\">condiciō</span>). Also a case at law (see case, at law)."
+    },
+    {
+      "latin": "cāsus, cāsūs m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "an occurrence; an emergency",
+      "evidence": [
+        "Caes. BG 5.33.4: <span lang=\"la\">in ejusmodī cāsū</span>"
+      ],
+      "comment": "What happens unexpectedly: in such a case, of a crisis (Lewis &amp; Short: “such an emergency”). In grammar, the case of a noun (Varro, Cicero)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "in Britanniā nihil esse audiō neque aurī neque argentī. id sī ita est, essedum aliquod capiās suādeō et ad nōs quam prīmum recurrās",
+      "english": "I hear there is nothing in Britain, neither gold nor silver. If that’s the case, I suggest you grab a war chariot and race back to us as soon as you can",
+      "source": "Cic. Fam. 7.7.2"
+    },
+    {
+      "latin": "id sī ita est, omnia faciliōra; sīn aliter, magnum negōtium",
+      "english": "if that is the case, everything is easier; if not, it’s a big job",
+      "source": "Cic. Fam. 11.14.3"
+    }
+  ],
+  "related": [
+    "situation",
+    "at-least",
+    "case-law",
+    "test-case"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/si\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: si</a> · <a href=\"https://logeion.uchicago.edu/ita\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ita</a> · <a href=\"https://logeion.uchicago.edu/causa\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: causa</a> · <a href=\"https://logeion.uchicago.edu/casus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: casus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 95, checked against the searchable text of the book (9 November 2026).",
+    "Cicero’s letters and <em>De officiis</em> and Caesar’s <em>Gallic War</em> checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

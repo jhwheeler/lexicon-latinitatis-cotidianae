@@ -1,0 +1,85 @@
+{
+  "id": "concern-matter",
+  "english": "concern",
+  "sense": "be about, matter to",
+  "pos": "verb",
+  "also": [
+    "as far as I’m concerned",
+    "none of your business",
+    "it’s no concern of yours"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "attinet (ad)",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "it concerns, it has to do with",
+      "grammar": "verb: third person of attineō, with ad and the accusative",
+      "evidence": [
+        "Plaut. Trin. 1065: <span lang=\"la\">quid id ad mē attinet?</span>",
+        "Traupman 294"
+      ],
+      "comment": "<span lang=\"la\">Quod ad mē attinet</span>, as far as I am concerned (Cic. Q. fr. 2.1, Att. 5.17, Lewis &amp; Short). Often shortened: <span lang=\"la\">istae quid ad mē?</span>, what have these to do with me? (Plaut. Pers. 497)."
+    },
+    {
+      "latin": "pertinet (ad)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "it concerns, it relates to",
+      "grammar": "verb: third person of pertineō, with ad and the accusative",
+      "evidence": [
+        "Cic. Rosc. Am. 36: <span lang=\"la\">illa rēs ad meum officium pertinet</span> (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "rēfert (meā, tuā …)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "it matters (to me, to you)",
+      "grammar": "impersonal verb, with meā, tuā or a genitive",
+      "evidence": [
+        "Plaut. Pers. 497: <span lang=\"la\">et tuā rēfert</span>",
+        "Traupman 294, 302"
+      ],
+      "comment": "<span lang=\"la\">Interest</span> is used the same way: <span lang=\"la\">meā interest</span>, it matters to me (Traupman 302)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "quid id ad mē attinet?",
+      "english": "what has that to do with me?",
+      "source": "Plaut. Trin. 1065"
+    },
+    {
+      "latin": "Istae quid ad mē? — Immō ad tē attinent et tuā rēfert.",
+      "english": "What have these to do with me? — Oh, they concern you, and it matters to you.",
+      "source": "Plaut. Pers. 497"
+    },
+    {
+      "latin": "tantumne est ab rē tuā ōtī tibi, aliēna ut cūrēs eaque nihil quae ad tē attinent?",
+      "english": "have you so much time to spare from your own affairs that you look after other people’s, which don’t concern you?",
+      "source": "Ter. Heaut. 75–76 (Parry’s text)"
+    },
+    {
+      "latin": "nam tua rēs agitur, pariēs cum proximus ārdet",
+      "english": "for it is your concern when the wall next door is on fire",
+      "source": "Hor. Ep. 1.18.84"
+    }
+  ],
+  "related": [
+    "concern",
+    "question-matter"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/attineo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: attineo</a> · <a href=\"https://logeion.uchicago.edu/pertineo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pertineo</a> · <a href=\"https://logeion.uchicago.edu/refert\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: refert</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 294, 302, checked against the searchable text of the book (9 November 2026).",
+    "Quotations of Plautus (Leo, 1896; cited by his lines), Terence (Parry, 1857; cited by the lines of the Oxford text) and Horace (Fairclough, 1929) that are not in the loci collections were checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "id": "example",
+  "english": "example",
+  "pos": "noun",
+  "also": [
+    "for example",
+    "for instance",
+    "set an example"
+  ],
+  "also_under": [
+    "schola"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "exemplum, exemplī n.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "an example, an instance; a model to follow",
+      "evidence": [
+        "Cic. Phil. 13.2: <span lang=\"la\">exemplī causā paucōs nōmināvī</span>",
+        "Traupman 146: <span lang=\"la\">exemplum praebet</span>"
+      ],
+      "comment": "<span lang=\"la\">Exemplī causā</span> or <span lang=\"la\">grātiā</span>, for example; <span lang=\"la\">exemplum dare</span> or <span lang=\"la\">praebēre</span>, set an example (Tac., Lewis &amp; Short)."
+    },
+    {
+      "latin": "ut",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "as, for instance (before the example)",
+      "grammar": "conjunction",
+      "evidence": [
+        "Traupman 221: <span lang=\"la\">genus masculīnum, ut “hic magister”</span>"
+      ]
+    },
+    {
+      "latin": "puta",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "say, for instance",
+      "grammar": "imperative of putō, used as an adverb",
+      "register": "poetic and post-Augustan (L&amp;S)",
+      "evidence": [
+        "Hor. S. 2.5.32: <span lang=\"la\">Quīnte, puta, aut Pūblī</span> (Lewis &amp; Short)",
+        "Traupman 171, 272: <span lang=\"la\">ut putā</span>"
+      ],
+      "notes": [
+        "puta"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "longum iter est per praecepta, breve et efficāx per exempla",
+      "english": "the road through rules is long; through examples it is short and effective",
+      "source": "Sen. Ep. 6.5"
+    },
+    {
+      "latin": "ducēs exemplō potius quam imperiō, sī prōmptī, sī cōnspicuī, sī ante aciem agant, admīrātiōne praesunt",
+      "english": "leaders lead by example rather than by command: if they are ready, if they are seen, if they fight in front, they lead because they are admired",
+      "source": "Tac. Germ. 7.1"
+    },
+    {
+      "latin": "exemplī causā paucōs nōmināvī",
+      "english": "I have named a few, by way of example",
+      "source": "Cic. Phil. 13.2"
+    }
+  ],
+  "notes": {
+    "puta": {
+      "form": "puta",
+      "claim": "short final a",
+      "against": "Traupman 171, 272 <span lang=\"la\">putā</span>",
+      "html": "Lewis &amp; Short, s.v. <span lang=\"la\">putō</span>: <span lang=\"la\">pŭtă</span>, imperative, used for “for example”."
+    }
+  },
+  "related": [
+    "lesson",
+    "detail"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/exemplum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: exemplum</a> · <a href=\"https://logeion.uchicago.edu/ut\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ut</a> · <a href=\"https://logeion.uchicago.edu/puto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: puto</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 146, 171, 221, 272, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-seneca-epistulae, loci-tacitus), checked against the editions named there.",
+    "Quotations of the <em>Philippics</em> (Clark) that are not in the loci collections were checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "id": "sure",
+  "english": "sure",
+  "pos": "adjective",
+  "also": [
+    "certain",
+    "for sure",
+    "are you sure?",
+    "make sure"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "certus, certa, certum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "sure, certain",
+      "evidence": [
+        "Ter. Ad. 329: <span lang=\"la\">Satin' hoc certum est? — Certum.</span>",
+        "Cic. Att. 2.19.5: <span lang=\"la\">certī sumus perīsse omnia</span>",
+        "Traupman 108, 388"
+      ],
+      "comment": "Of a thing, <span lang=\"la\">certum est</span>, it is certain; of a person, <span lang=\"la\">certus sum</span> with an accusative and infinitive, I am sure that (Cicero, of bad news). But <span lang=\"la\">certum est mihi</span> with an infinitive is “I have decided” (see decide), and <span lang=\"la\">certior fierī</span> is “be told, be informed”."
+    },
+    {
+      "latin": "certō (certum) sciō",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "I’m sure, I know for certain",
+      "grammar": "phrase: adverb with sciō",
+      "register": "vōx sermōnis cotīdiānī: Plaut., Ter.; Cic. in epistulīs",
+      "evidence": [
+        "Ter. Eun. 110: <span lang=\"la\">certum nōn scīmus</span>",
+        "Traupman 95, 102"
+      ],
+      "comment": "Lewis &amp; Short: the adverb <span lang=\"la\">certō</span> is found only in comedy and in Cicero, most often in his letters; <span lang=\"la\">certē</span>, certainly, belongs to every period."
+    },
+    {
+      "latin": "prō certō habēre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "take as certain, be sure of",
+      "grammar": "phrase",
+      "evidence": [
+        "Cic. Att. 10.6.3 (Lewis &amp; Short, s.v. <span lang=\"la\">habeō</span>)",
+        "Traupman 95"
+      ]
+    },
+    {
+      "latin": "fac (ut)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "make sure (that) …, be sure to …",
+      "grammar": "phrase: imperative of faciō, with the subjunctive",
+      "evidence": [
+        "Cic. Fam. 16.18.3: <span lang=\"la\">fac ut sciam</span>",
+        "Traupman 108, 388: <span lang=\"la\">fac modo ut veniās</span>"
+      ],
+      "comment": "Also <span lang=\"la\">cūrā ut</span>, as in Cicero’s sign-off <span lang=\"la\">cūrā ut valeās</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Satin' hoc certum est? — Certum: hīsce oculīs egomet vīdī.",
+      "english": "Is that quite certain? — Certain: I saw it with these very eyes.",
+      "source": "Ter. Ad. 329"
+    },
+    {
+      "latin": "Cīvemne? — Arbitror: certum nōn scīmus.",
+      "english": "A citizen? — I think so; we don’t know for sure.",
+      "source": "Ter. Eun. 110"
+    },
+    {
+      "latin": "tē quandō exspectēmus fac ut sciam",
+      "english": "make sure you let me know when to expect you",
+      "source": "Cic. Fam. 16.18.3"
+    }
+  ],
+  "related": [
+    "certain",
+    "know",
+    "decide",
+    "of-course"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/certus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: certus</a> · <a href=\"https://logeion.uchicago.edu/scio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: scio</a> · <a href=\"https://logeion.uchicago.edu/habeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: habeo</a> · <a href=\"https://logeion.uchicago.edu/facio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: facio</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 95, 102, 108, 388, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-cicero-epistulae), checked against the editions named there.",
+    "Quotations of Terence (Parry, 1857; cited by the lines of the Oxford text) and Cicero’s letters (Purser) that are not in the loci collections were checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

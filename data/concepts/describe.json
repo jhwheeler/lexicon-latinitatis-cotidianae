@@ -1,0 +1,78 @@
+{
+  "id": "describe",
+  "english": "describe",
+  "pos": "verb",
+  "also": [
+    "description"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "dēscrībō, dēscrībere, dēscrīpsī, dēscrīptum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "describe (in words); draw, depict",
+      "evidence": [
+        "Cic. Or. 138: <span lang=\"la\">hominum sermōnēs mōrēsque</span> (Lewis &amp; Short)",
+        "Traupman 24: <span lang=\"la\">Quae monumenta dēscrīpsistī?</span>"
+      ],
+      "comment": "Also of drawing, as of figures in the sand (Cic. Rep. 1.17, Lewis &amp; Short). Manuscripts often confuse it with <span lang=\"la\">discrībō</span>, distribute (Lewis &amp; Short)."
+    },
+    {
+      "latin": "dēpingō, dēpingere, dēpīnxī, dēpictum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "paint in words, portray",
+      "evidence": [
+        "Plaut. Poen. 5.2.154: <span lang=\"la\">fōrmam verbīs</span> (Lewis &amp; Short)",
+        "Cic. Rosc. Am. 74: <span lang=\"la\">vītam hujusce</span> (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "ēnarrō, ēnarrāre, ēnarrāvī, ēnarrātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "tell in full, describe point by point",
+      "evidence": [
+        "Ter. Ad. 364: <span lang=\"la\">omnem rem … ēnarrāmus ōrdine</span>"
+      ]
+    },
+    {
+      "latin": "dēscrīptiō, dēscrīptiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a description",
+      "evidence": [
+        "Cic. Inv. 2.18: <span lang=\"la\">nōminis brevis et aperta dēscrīptiō</span> (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nōn potuit pictor rēctius dēscrībere ejus fōrmam",
+      "english": "a painter couldn’t have described his looks more exactly",
+      "source": "Plaut. As. 402"
+    },
+    {
+      "latin": "omnem rem modo senī, quō pactō sē habēret, ēnarrāmus ōrdine",
+      "english": "we have just told the old man the whole business, how it stood, from start to finish",
+      "source": "Ter. Ad. 364"
+    }
+  ],
+  "related": [
+    "explain",
+    "detail",
+    "story"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/describo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: describo</a> · <a href=\"https://logeion.uchicago.edu/depingo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: depingo</a> · <a href=\"https://logeion.uchicago.edu/enarro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: enarro</a> · <a href=\"https://logeion.uchicago.edu/descriptio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: descriptio</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 24, checked against the searchable text of the book (9 November 2026).",
+    "Quotations of Plautus (Leo, 1896; cited by his lines) and Terence (Parry, 1857; cited by the lines of the Oxford text) that are not in the loci collections were checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

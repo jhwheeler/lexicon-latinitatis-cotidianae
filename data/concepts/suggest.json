@@ -1,0 +1,101 @@
+{
+  "id": "suggest",
+  "english": "suggest",
+  "pos": "verb",
+  "also": [
+    "suggestion",
+    "how about …?"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "suādeō, suādēre, suāsī, suāsum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "advise, recommend, suggest",
+      "evidence": [
+        "Cic. Att. 11.16.1: <span lang=\"la\">ita faciam, ut suādēs</span>",
+        "Traupman 386: <span lang=\"la\">quemadmodum suādēs</span>, as you suggest"
+      ],
+      "comment": "The person advised in the dative; what is suggested with <span lang=\"la\">ut</span> or <span lang=\"la\">nē</span> and the subjunctive, or the subjunctive alone (Lewis &amp; Short). <span lang=\"la\">Itane suādēs?</span>, is that your advice? (Ter. Eun. 76)."
+    },
+    {
+      "latin": "sī (tibi) vidētur",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "if you agree, if you like: the polite way to put a suggestion",
+      "grammar": "phrase",
+      "evidence": [
+        "Cic. Tusc. 1.23: <span lang=\"la\">nunc, sī vidētur, hoc, illud aliās</span>",
+        "Cic. Q. fr. 3.1.7: <span lang=\"la\">sī tibi vidētur</span>"
+      ],
+      "comment": "Latin often makes the suggestion itself, with a subjunctive (<span lang=\"la\">eāmus</span>, let’s go), and softens it with <span lang=\"la\">sī tibi vidētur</span>."
+    },
+    {
+      "latin": "auctor esse (ut)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "suggest, advise (that); tē auctōre, at your suggestion",
+      "grammar": "phrase: with ut and the subjunctive, or the dative of the person",
+      "evidence": [
+        "Plaut. Ps. 231: <span lang=\"la\">quid mī es auctor huic ut mittam?</span>",
+        "Traupman 108, 386: <span lang=\"la\">tē auctōre</span>"
+      ]
+    },
+    {
+      "latin": "subjiciō, subjicere, subjēcī, subjectum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "prompt, put forward (a word, a point)",
+      "evidence": [
+        "Ter. Ph. 387: <span lang=\"la\">sī meministī id quod ōlim dictum est, subjice</span>",
+        "Traupman 386"
+      ],
+      "comment": "Traupman’s word for “suggest”; classically of prompting someone with what to say."
+    },
+    {
+      "latin": "suggerō, suggerere, suggessī, suggestum",
+      "status": "avoid",
+      "period": "late",
+      "gloss": "suggest, in the sense “propose” (late)",
+      "evidence": [
+        "Dig. 4.6.26 (Lewis &amp; Short)"
+      ],
+      "comment": "Classically “put under; supply, furnish; add”: in Terence a father is blamed for supplying a son’s spending money (Ad. 62). The sense “put forward, advise” is found only in the Digest and late writers (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ita faciam, ut suādēs",
+      "english": "I’ll do as you suggest",
+      "source": "Cic. Att. 11.16.1"
+    },
+    {
+      "latin": "quid mī es auctor huic ut mittam?",
+      "english": "what do you suggest I send him?",
+      "source": "Plaut. Ps. 231"
+    },
+    {
+      "latin": "Eāmus ad flūmen, sī tibi vidētur.",
+      "english": "Let’s go down to the river, if you like.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "idea",
+    "seem",
+    "agree-to"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/suadeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: suadeo</a> · <a href=\"https://logeion.uchicago.edu/video\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: video</a> · <a href=\"https://logeion.uchicago.edu/auctor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: auctor</a> · <a href=\"https://logeion.uchicago.edu/subicio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: subicio</a> · <a href=\"https://logeion.uchicago.edu/suggero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: suggero</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 108, 386, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-cicero-epistulae), checked against the editions named there.",
+    "Quotations of Plautus (Leo, 1896; cited by his lines), Terence (Parry, 1857; cited by the lines of the Oxford text), Cicero’s letters (Purser) and the <em>Tusculans</em> (Pohlenz) that are not in the loci collections were checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

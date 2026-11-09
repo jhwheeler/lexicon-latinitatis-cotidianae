@@ -1,0 +1,93 @@
+{
+  "id": "consider",
+  "english": "consider",
+  "sense": "think about",
+  "pos": "verb",
+  "also": [
+    "think over",
+    "think about",
+    "weigh up",
+    "take into account"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "cōnsīderō, cōnsīderāre, cōnsīderāvī, cōnsīderātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "look at closely; think over, consider",
+      "evidence": [
+        "Cic. Att. 7.13.3: <span lang=\"la\">sed velim cōnsīderēs, quid faciendum putēs</span>"
+      ],
+      "comment": "With an object, <span lang=\"la\">dē</span> and the ablative, or an indirect question (Lewis &amp; Short). First of looking carefully, as at the stars (<span lang=\"la\">lūcentia sīdera cōnsīderābāmus</span>, Gell. 2.21.2), then of thinking a thing over."
+    },
+    {
+      "latin": "dēlīberō, dēlīberāre, dēlīberāvī, dēlīberātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "weigh up, deliberate (before deciding)",
+      "evidence": [
+        "Ter. Ph. 457: <span lang=\"la\">ego amplius dēlīberandum cēnseō</span>"
+      ],
+      "comment": "With <span lang=\"la\">dē</span>, with <span lang=\"la\">utrum … an</span>, or alone (Lewis &amp; Short)."
+    },
+    {
+      "latin": "cōgitō, cōgitāre, cōgitāvī, cōgitātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "think over, think about (dē + ablative)",
+      "evidence": [
+        "Sen. NQ 6.25: <span lang=\"la\">dē exitū cōgitāre</span> (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "ratiōnem habēre (+ genitive)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "take into account, have regard for",
+      "grammar": "phrase",
+      "evidence": [
+        "Cic. Sen. 36: <span lang=\"la\">habenda ratiō valētūdinis</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "sed velim cōnsīderēs, quid faciendum putēs",
+      "english": "but I’d like you to consider what you think should be done",
+      "source": "Cic. Att. 7.13.3"
+    },
+    {
+      "latin": "ego amplius dēlīberandum cēnseō: rēs magna est",
+      "english": "I think we must weigh it up further: it’s a big matter",
+      "source": "Ter. Ph. 457"
+    },
+    {
+      "latin": "Cōnsīderāte līlia agrī quōmodo crēscunt: nōn labōrant, neque nent.",
+      "english": "Consider the lilies of the field, how they grow: they neither toil nor spin.",
+      "source": "Vulg. Mt. 6.28 (the Stuttgart text has <span lang=\"la\">nec nent</span>)"
+    },
+    {
+      "latin": "Theodōrus saxa diū spectābat, dē gigante cōgitāns quī nōn est",
+      "english": "Theo looked at the rocks for a long time, thinking about the giant who isn’t there",
+      "source": "Libellus II, <span lang=\"la\">Sintra: castellum et puteus</span>"
+    }
+  ],
+  "related": [
+    "consider-regard",
+    "decide",
+    "decision"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/considero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: considero</a> · <a href=\"https://logeion.uchicago.edu/delibero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: delibero</a> · <a href=\"https://logeion.uchicago.edu/cogito\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cogito</a> · <a href=\"https://logeion.uchicago.edu/ratio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ratio</a>",
+    "Quotations from the Latinitas loci collections (loci-gellius, loci-cicero-philosophica, loci-vulgata), checked against the editions named there.",
+    "Quotations of Terence (Parry, 1857; cited by the lines of the Oxford text) and Cicero’s letters (Purser) that are not in the loci collections were checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition.",
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 9 November 2026. Examples marked “Libellus” quote those texts word for word."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

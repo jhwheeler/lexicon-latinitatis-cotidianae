@@ -1,0 +1,76 @@
+{
+  "id": "seem",
+  "english": "seem",
+  "pos": "verb",
+  "also": [
+    "it seems",
+    "it seems to me"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "videor, vidērī, vīsus sum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "seem, appear (to be or to do)",
+      "grammar": "verb, second conjugation: the passive of videō, with a nominative and infinitive",
+      "evidence": [
+        "Cic. Off. 1.83: <span lang=\"la\">ut imbellēs timidīque videāmur</span>",
+        "Traupman 376"
+      ],
+      "comment": "Latin makes the person or thing the subject: <span lang=\"la\">vidēris fessus esse</span>, “you seem tired”. The impersonal <span lang=\"la\">vidētur</span> with an accusative and infinitive is rare (Lewis &amp; Short). <span lang=\"la\">Ut vidētur</span>, as it seems (Traupman 27)."
+    },
+    {
+      "latin": "mihi vidētur",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "it seems to me, I think",
+      "grammar": "phrase: the person in the dative",
+      "evidence": [
+        "Cic. Lael. 27: <span lang=\"la\">ā nātūrā mihi vidētur potius quam ab indigentiā orta amīcitia</span> (Lewis &amp; Short)",
+        "Traupman 148, 184"
+      ],
+      "comment": "With <span lang=\"la\">sī</span>, the polite form of a suggestion: <span lang=\"la\">sī tibi vidētur</span>, if you agree."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nōn semper ea sunt quae videntur",
+      "english": "things are not always what they seem",
+      "source": "Phaedr. 4.2.5"
+    },
+    {
+      "latin": "nunc ego tibi īrāscī videor?",
+      "english": "do I seem angry to you now?",
+      "source": "Gell. 1.26.8"
+    },
+    {
+      "latin": "quia videor ācer, alligant mē interdiū",
+      "english": "because I seem fierce, they tie me up by day",
+      "source": "Phaedr. 3.7.15–20"
+    },
+    {
+      "latin": "aliquid natābat quod prīmō aspectū alga ipsa vidēbātur",
+      "english": "something was swimming that at first sight seemed to be the seaweed itself",
+      "source": "Libellus V, <span lang=\"la\">Lisbōna: castellum et ōceanārium</span>"
+    }
+  ],
+  "related": [
+    "suggest",
+    "believe",
+    "i-think-so"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/video\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: video</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 27, 148, 184, 376, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-phaedrus, loci-gellius), checked against the editions named there.",
+    "Quotations of <em>De officiis</em> (Miller) that are not in the loci collections were checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition.",
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 9 November 2026. Examples marked “Libellus” quote those texts word for word."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

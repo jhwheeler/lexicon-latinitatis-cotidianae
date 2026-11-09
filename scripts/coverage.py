@@ -3,7 +3,7 @@
 
 A word counts as covered only when it is itself, whole, the headword of a record, one of its "also"
 words or the English gloss of one of its terms. Nothing is inflected on the lexicon's side: until
-10 November 2026 "see" passed because the lexicon has a saw, "flow" because it has a flower and
+9 November 2026 "see" passed because the lexicon has a saw, "flow" because it has a flower and
 "child" because it has children, which hid fifty words of the list. A list may give a plural
 (carrots) where the lexicon has the singular, and may spell American where the lexicon spells
 British; those two are allowed for. A word that appears only inside a longer heading, as go does

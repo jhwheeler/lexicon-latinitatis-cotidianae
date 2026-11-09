@@ -1,0 +1,74 @@
+{
+  "id": "bring",
+  "english": "bring",
+  "pos": "verb",
+  "also": [
+    "bring along",
+    "bring here",
+    "bring over"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "afferō, afferre, attulī, allātum",
+      "status": "recommended",
+      "period": "classical",
+      "grammar": "verb, irregular (ad + ferō)",
+      "gloss": "bring (a thing)",
+      "evidence": [
+        "Catull. 13.3–4: <span lang=\"la\">sī tēcum attuleris bonam atque magnam cēnam</span>",
+        "Plin. Ep. 4.30.1: <span lang=\"la\">attulī tibi ex patriā meā prō mūnusculō quaestiōnem</span>"
+      ],
+      "comment": "Of things that are carried; people and animals, who walk, are brought with <span lang=\"la\">addūcō</span> (Lewis &amp; Short). Also spelled <span lang=\"la\">adferō</span>. “Bring me …” is <span lang=\"la\">affer mihi …</span>."
+    },
+    {
+      "latin": "addūcō, addūcere, addūxī, adductum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "bring (a person or an animal)",
+      "evidence": [
+        "Plaut. Ps. 711c: <span lang=\"la\">addūxī voluī dīcere</span>",
+        "Cic. Fam. 16.21.5: <span lang=\"la\">quōs sēcum … Cratippus addūxit</span>"
+      ],
+      "comment": "<span lang=\"la\">sēcum addūcere</span>, to bring someone along. Plautus and Terence also have the imperative <span lang=\"la\">addūce</span> for <span lang=\"la\">addūc</span> (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Attulī hunc. — Quid, attulistī? — Addūxī voluī dīcere.",
+      "english": "I’ve carried him here. — What, carried him? — Brought him, I meant to say.",
+      "source": "Plaut. Ps. 711–711c"
+    },
+    {
+      "latin": "sī tēcum attuleris bonam atque magnam cēnam",
+      "english": "if you bring a good big dinner with you",
+      "source": "Catull. 13.3–4"
+    },
+    {
+      "latin": "attulī tibi ex patriā meā prō mūnusculō quaestiōnem",
+      "english": "I’ve brought you a little present from my home town: a puzzle",
+      "source": "Plin. Ep. 4.30.1"
+    },
+    {
+      "latin": "sī quid bellī habēs, affer",
+      "english": "if you’ve got anything nice, bring it out",
+      "source": "Petr. 68.1"
+    }
+  ],
+  "related": [
+    "carry",
+    "get-fetch",
+    "give",
+    "send"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/affero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: affero</a> · <a href=\"https://logeion.uchicago.edu/adduco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: adduco</a>",
+    "Plautus and Cicero’s letters checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-catullus, loci-plinius, loci-petronius), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "id": "hit-bump",
+  "english": "hit",
+  "sense": "knock against, bump",
+  "pos": "verb",
+  "also": [
+    "bump",
+    "bang",
+    "hit one’s head",
+    "bump into",
+    "knock against",
+    "stub one’s toe"
+  ],
+  "also_under": [
+    "corpus"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "offendō, offendere, offendī, offēnsum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "knock, bump (a part of the body, or someone)",
+      "evidence": [
+        "Quint. 6.3.67: <span lang=\"la\">caput … ad fornicem Fabium offendisse</span>",
+        "Plaut. Curc. 282: <span lang=\"la\">nē quem … capite … offendam</span>"
+      ],
+      "comment": "The part of the body is the object, with <span lang=\"la\">ad</span> and what it hits (<span lang=\"la\">caput, pedem offendere</span>); or the person bumped is the object and the part of the body is in the ablative (Plaut. Curc. 282)."
+    },
+    {
+      "latin": "illīdō, illīdere, illīsī, illīsum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "dash, bang (against)",
+      "register": "plērumque poētica; in Cicerōnis ōrātiōne solūtā nōn invenītur (Lewis &amp; Short)",
+      "evidence": [
+        "Suet. Aug. 23: <span lang=\"la\">caput foribus</span> (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nē quem in cursū capite aut cubitō aut pectore offendam aut genū",
+      "english": "so that I don’t bump into anyone with my head or elbow or chest or knee as I run",
+      "source": "Plaut. Curc. 282"
+    },
+    {
+      "latin": "caput eum ad fornicem Fabium offendisse",
+      "english": "that he had hit his head on the Arch of Fabius (Cicero’s joke about a very tall man)",
+      "source": "Quint. 6.3.67"
+    },
+    {
+      "latin": "In manibus portābunt tē, nē forte offendās ad lapidem pedem tuum.",
+      "english": "They will carry you in their hands, so that you do not strike your foot against a stone.",
+      "source": "Vulg. Ps. 90 (91), 12"
+    },
+    {
+      "latin": "Cavē nē caput offendās.",
+      "english": "Mind you don’t bump your head.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "bump-lump",
+    "strike",
+    "fall",
+    "meet-by-chance"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/offendo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: offendo</a> · <a href=\"https://logeion.uchicago.edu/illido\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: illido</a>",
+    "Plautus checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-quintilianus, loci-vulgata), checked against the editions named there.",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

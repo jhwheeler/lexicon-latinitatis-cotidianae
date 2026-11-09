@@ -2,12 +2,22 @@
   "id": "pour-out",
   "english": "pour out",
   "pos": "verb",
+  "also": [
+    "dump",
+    "tip out",
+    "empty out"
+  ],
   "domain": "ludi",
   "terms": [
     {
       "latin": "effundō, effundere",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "evidence": [
+        "Liv. 23.12.1: <span lang=\"la\">effundī … jussit ānulōs aureōs</span>",
+        "Petr. 135.2: <span lang=\"la\">partem legūminis super mēnsam effūdit</span>"
+      ],
+      "comment": "Of solid things too, tipped out of a container: rings, beans, sand."
     }
   ],
   "phrases": [
@@ -15,14 +25,27 @@
       "latin": "Harēnam effunde.",
       "english": "Pour out the sand.",
       "source": "composed"
+    },
+    {
+      "latin": "effundī in vestibulō cūriae jussit ānulōs aureōs",
+      "english": "he had the gold rings tipped out in the entrance of the senate house",
+      "source": "Liv. 23.12.1"
+    },
+    {
+      "latin": "partem legūminis super mēnsam effūdit jussitque mē dīligenter pūrgāre",
+      "english": "she tipped some of the beans out on the table and told me to pick them over carefully",
+      "source": "Petr. 135.2"
     }
   ],
   "related": [
     "empty",
     "fill",
-    "dump-truck"
+    "dump-truck",
+    "dump"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/effundo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: effundo</a>",
+    "Quotations from the Latinitas loci collections (loci-livius, loci-petronius), checked against the editions named there.",
     "The example sentences marked “composed” are ours."
   ],
   "review": {

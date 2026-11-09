@@ -1,0 +1,86 @@
+{
+  "id": "spend-time",
+  "english": "spend",
+  "sense": "time",
+  "pos": "verb",
+  "also": [
+    "spend time",
+    "pass the day",
+    "spend the day",
+    "spend the holidays"
+  ],
+  "also_under": [
+    "verba"
+  ],
+  "domain": "tempus",
+  "terms": [
+    {
+      "latin": "agō, agere, ēgī, āctum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "spend, pass (time)",
+      "evidence": [
+        "Tac. Germ. 17.1: <span lang=\"la\">tōtōs diēs jūxtā focum atque ignem agunt</span>",
+        "Traupman 383: spend (time), <span lang=\"la\">agō, cōnsūmō</span>",
+        "Traupman 54: <span lang=\"la\">fēriās agere</span>"
+      ],
+      "comment": "With the time as its object: <span lang=\"la\">diem, aestātem, fēriās, vītam agere</span>; “very frequent and classical” in this sense (Lewis &amp; Short)."
+    },
+    {
+      "latin": "dēgō, dēgere, dēgī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "spend, pass (a day, one’s life)",
+      "evidence": [
+        "Plaut. Most. 534: <span lang=\"la\">in forō dēgō diem</span>"
+      ],
+      "comment": "Most often with <span lang=\"la\">aetātem</span> or <span lang=\"la\">vītam</span>: to live out one’s days."
+    },
+    {
+      "latin": "cōnsūmō, cōnsūmere, cōnsūmpsī, cōnsūmptum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "spend (time) in or on something",
+      "evidence": [
+        "Cic. Fam. 11.27.5: <span lang=\"la\">hōrāsque multās saepe suāvissimō sermōne cōnsūmerēs</span>",
+        "Servius Sulpicius in Cic. Fam. 4.12.1: <span lang=\"la\">eumque diem ibi cōnsūmpsī</span>"
+      ],
+      "comment": "With the ablative, or <span lang=\"la\">in</span> and the ablative, of what fills the time."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "cētera intēctī tōtōs diēs jūxtā focum atque ignem agunt",
+      "english": "otherwise unclothed, they spend whole days by the hearth and the fire",
+      "source": "Tac. Germ. 17.1"
+    },
+    {
+      "latin": "ut domum ventitārēs hōrāsque multās saepe suāvissimō sermōne cōnsūmerēs",
+      "english": "that you would often come to my house and spend many hours in the most delightful conversation",
+      "source": "Cic. Fam. 11.27.5"
+    },
+    {
+      "latin": "ā mānī ad noctem ūsque in forō dēgō diem",
+      "english": "from morning to night I spend the whole day in the forum",
+      "source": "Plaut. Most. 534"
+    }
+  ],
+  "related": [
+    "pass-the-time",
+    "waste-time",
+    "spend-the-night",
+    "spend-the-winter",
+    "spend-money"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/ago\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ago</a> · <a href=\"https://logeion.uchicago.edu/dego\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dego</a> · <a href=\"https://logeion.uchicago.edu/consumo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: consumo</a>",
+    "Cicero’s letters and Plautus checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-tacitus), checked against the editions named there.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: pp. 54, 383, checked against the searchable text of the book (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

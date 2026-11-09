@@ -1,0 +1,85 @@
+{
+  "id": "meet-by-chance",
+  "english": "meet",
+  "sense": "by chance, or on the way",
+  "pos": "verb",
+  "also": [
+    "run into",
+    "bump into",
+    "come across",
+    "go to meet",
+    "meet someone off the train"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "occurrō, occurrere, occurrī, occursum",
+      "status": "recommended",
+      "period": "classical",
+      "grammar": "verb, third conjugation, with the dative",
+      "gloss": "meet, run into; go to meet",
+      "evidence": [
+        "Phaedr. 3.7.2–3: <span lang=\"la\">canī perpāstō … lupus forte occurrit</span>",
+        "Traupman 94, 284: bump into s.o., <span lang=\"la\">alicui occurrere</span>"
+      ],
+      "comment": "With the dative of the person met; <span lang=\"la\">forte</span>, “by chance”, makes it an accident."
+    },
+    {
+      "latin": "obviam fierī (venīre)",
+      "status": "alternative",
+      "period": "classical",
+      "grammar": "phrase, with the dative",
+      "gloss": "meet (someone) on one’s way",
+      "evidence": [
+        "Cic. Fam. 9.23.1: <span lang=\"la\">cum mihi … obviam vēnisset</span>",
+        "Traupman 94: <span lang=\"la\">alicui obviam fierī</span>"
+      ]
+    },
+    {
+      "latin": "obviam īre (prōdīre)",
+      "status": "alternative",
+      "period": "classical",
+      "grammar": "phrase, with the dative",
+      "gloss": "go to meet, go and meet (someone arriving)",
+      "evidence": [
+        "Cic. Fam. 14.5.1: <span lang=\"la\">obviam nōbīs prōdeās</span>",
+        "M-O s.v. meet, pick up: <span lang=\"la\">obviam īre</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "cum mihi in silvā Gallīnāriā obviam vēnisset quaesīssemque quid agerēs, dīxit tē in lectō esse",
+      "english": "when [Caeparius] met me in the Gallinarian Wood and I asked how you were, he told me you were in bed",
+      "source": "Cic. Fam. 9.23.1"
+    },
+    {
+      "latin": "canī perpāstō maciē cōnfectus lupus forte occurrit",
+      "english": "a wolf worn thin with hunger happened to meet a well-fed dog",
+      "source": "Phaedr. 3.7.2–3"
+    },
+    {
+      "latin": "quam longissimē poteris obviam nōbīs prōdeās",
+      "english": "come out along the road to meet us as far as you can",
+      "source": "Cic. Fam. 14.5.1"
+    }
+  ],
+  "related": [
+    "meet",
+    "receive-guest",
+    "arrive",
+    "hit-bump"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/occurro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: occurro</a> · <a href=\"https://logeion.uchicago.edu/obviam\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: obviam</a>",
+    "Cicero’s letters checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-phaedrus, loci-cicero-epistulae), checked against the editions named there.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: pp. 94, 284, checked against the searchable text of the book (9 November 2026).",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. meet, pick up."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

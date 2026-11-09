@@ -1,0 +1,84 @@
+{
+  "id": "end",
+  "english": "end",
+  "sense": "the last part, the finish",
+  "pos": "noun",
+  "also": [
+    "ending",
+    "the end",
+    "close",
+    "finish"
+  ],
+  "also_under": [
+    "tempus"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "fīnis, fīnis m.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "end; limit",
+      "evidence": [
+        "Hor. S. 1.5.104: <span lang=\"la\">Brundisium longae fīnis chartaeque viaeque est</span>",
+        "Gell. 7.13.3: <span lang=\"la\">edundī fīnis</span>"
+      ],
+      "comment": "Masculine in classical prose, feminine mostly in poetry (Lewis &amp; Short). The plural <span lang=\"la\">fīnēs</span> means borders, territory."
+    },
+    {
+      "latin": "exitus, exitūs m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "end, outcome (of an event or a story)",
+      "evidence": [
+        "Liv. praef. 10: <span lang=\"la\">foedum inceptū foedum exitū</span>",
+        "Cic. Clu. 7: <span lang=\"la\">fīnis aliquis atque exitus</span> (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "extrēmus, extrēma, extrēmum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "last, at the end (agreeing with its noun)",
+      "evidence": [
+        "Sen. Ep. 16.9: <span lang=\"la\">via euntī aliquid extrēmum est</span>",
+        "Cic. Fam. 2.13.3: <span lang=\"la\">extrēmā pāgellā</span>"
+      ],
+      "comment": "Latin often says “the end of” with an adjective that agrees: <span lang=\"la\">extrēmā pāgellā</span>, on the last page, at the end of the letter (Cic. Fam. 2.13.3)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Brundisium longae fīnis chartaeque viaeque est",
+      "english": "Brundisium is the end of a long story and a long road",
+      "source": "Hor. S. 1.5.104"
+    },
+    {
+      "latin": "erātque initium loquendī edundī fīnis",
+      "english": "and the end of eating was the start of talking",
+      "source": "Gell. 7.13.3"
+    },
+    {
+      "latin": "via euntī aliquid extrēmum est: error immēnsus est",
+      "english": "a road has an end for the traveller; wandering has none",
+      "source": "Sen. Ep. 16.9"
+    }
+  ],
+  "related": [
+    "end-come-to-an-end",
+    "end-bring-to-an-end",
+    "finally-at-last",
+    "at-the-end-of-winter",
+    "begin"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/finis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: finis</a> · <a href=\"https://logeion.uchicago.edu/exitus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: exitus</a> · <a href=\"https://logeion.uchicago.edu/extremus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: extremus</a>",
+    "Cicero’s letters checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-horatius, loci-gellius, loci-seneca-epistulae, loci-livius), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

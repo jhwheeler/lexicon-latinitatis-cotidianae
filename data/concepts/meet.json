@@ -1,0 +1,70 @@
+{
+  "id": "meet",
+  "english": "meet",
+  "sense": "see someone, get together",
+  "pos": "verb",
+  "also": [
+    "meet up",
+    "get together",
+    "meet with",
+    "see someone"
+  ],
+  "also_under": [
+    "sermo"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "conveniō, convenīre, convēnī, conventum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "meet (someone); come together",
+      "evidence": [
+        "Cic. Fam. 4.12.1: <span lang=\"la\">ibi M. Mārcellum … convēnī</span>",
+        "Cic. Sen. 32: <span lang=\"la\">nēmō adhūc convenīre mē voluit</span>",
+        "Traupman 17, 344: meet, tr. and intr."
+      ],
+      "comment": "Transitive of meeting a person (<span lang=\"la\">aliquem convenīre</span>); intransitive of people coming together in one place."
+    },
+    {
+      "latin": "congredior, congredī, congressus sum",
+      "status": "alternative",
+      "period": "classical",
+      "grammar": "verb, third conjugation (-iō), deponent",
+      "gloss": "meet with, talk with",
+      "evidence": [
+        "Cic. Att. 2.24.2: <span lang=\"la\">cum eō saepe congressus</span> (Lewis &amp; Short)"
+      ],
+      "comment": "With <span lang=\"la\">cum</span>: to meet someone, usually to talk."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "itaque nēmō adhūc convenīre mē voluit, cui fuerim occupātus",
+      "english": "so no one who wanted to see me has ever yet found me busy",
+      "source": "Cic. Sen. 32"
+    },
+    {
+      "latin": "cum ab Epidaurō Pīraeum nāvī advectus essem, ibi M. Mārcellum, conlēgam nostrum, convēnī eumque diem ibi cōnsūmpsī, ut cum eō essem",
+      "english": "when I had come by ship from Epidaurus to the Piraeus, I met our colleague Marcus Marcellus there, and spent the day there so as to be with him",
+      "source": "Servius Sulpicius in Cic. Fam. 4.12.1"
+    }
+  ],
+  "related": [
+    "meet-by-chance",
+    "pleased-to-meet-you",
+    "visit",
+    "spend-time"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/convenio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: convenio</a> · <a href=\"https://logeion.uchicago.edu/congredior\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: congredior</a>",
+    "Cicero’s letters checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-cicero-philosophica), checked against the editions named there.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: pp. 17, 344, checked against the searchable text of the book (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

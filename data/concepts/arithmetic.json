@@ -1,0 +1,65 @@
+{
+  "id": "arithmetic",
+  "english": "arithmetic",
+  "pos": "noun",
+  "also": [
+    "arithmetical",
+    "mental arithmetic",
+    "numbers"
+  ],
+  "domain": "schola",
+  "terms": [
+    {
+      "latin": "arithmētica, arithmēticae f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "arithmetic",
+      "evidence": [
+        "Plin. NH 35.76: <span lang=\"la\">praecipuē arithmēticā et geōmetriā</span>",
+        "Vitr. 1.1.4: <span lang=\"la\">per arithmēticēn</span>"
+      ],
+      "comment": "Greek ἀριθμητική, the art of numbers. Vitruvius declines it in Greek, <span lang=\"la\">arithmēticē, -ēs</span>; Cicero says <span lang=\"la\">arithmētica</span>, neuter plural (Att. 14.12.3)."
+    },
+    {
+      "latin": "numerī, numerōrum m. pl.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "numbers, arithmetic",
+      "evidence": [
+        "Quint. 1.10.35: <span lang=\"la\">numerōrum quidem nōtitia</span>"
+      ],
+      "comment": "Quintilian divides geometry, as mathematics was called, into numbers and figures (<span lang=\"la\">in numerōs atque fōrmās</span>). Learning to count and reckon is <span lang=\"la\">numerāre discere</span> (see count)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ubi legere et scrībere et numerāre discitur",
+      "english": "where one learns to read, to write and to count",
+      "source": "Aug. Conf. 1.13.20"
+    },
+    {
+      "latin": "hominem remōtum ā dialecticīs, in arithmēticīs satis exercitātum",
+      "english": "a man far from logic, but well practised in arithmetic (Cicero’s host, the banker Vestorius)",
+      "source": "Cic. Att. 14.12.3"
+    }
+  ],
+  "related": [
+    "maths",
+    "sum-calculation",
+    "subtract",
+    "multiply",
+    "divide-arithmetic",
+    "times-table",
+    "count"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/arithmetica\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: arithmetica</a> · <a href=\"https://logeion.uchicago.edu/arithmeticus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: arithmeticus</a> · <a href=\"https://logeion.uchicago.edu/numerus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: numerus</a>",
+    "Pliny, Vitruvius, Quintilian and Cicero’s letters checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-augustinus), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

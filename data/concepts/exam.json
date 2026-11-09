@@ -1,0 +1,92 @@
+{
+  "id": "exam",
+  "english": "exam",
+  "pos": "noun",
+  "also": [
+    "examination",
+    "test",
+    "school test",
+    "quiz",
+    "take an exam",
+    "pass an exam"
+  ],
+  "domain": "schola",
+  "terms": [
+    {
+      "latin": "probātiō, probātiōnis f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a test, an examination",
+      "evidence": [
+        "Cic. Off. 1.144: <span lang=\"la\">in athlētārum probātiōne</span>",
+        "Traupman 26, 27, 32",
+        "M-O s.v. test, quiz"
+      ],
+      "comment": "Classically a trial or inspection, of athletes or recruits; Traupman’s word for a test. To pass a test is <span lang=\"la\">probātiōnem sustinēre</span>, to fail it <span lang=\"la\">in probātiōne cadere</span> (Traupman 29, 30; see fail); to study for one, <span lang=\"la\">ad probātiōnem sē parāre</span> (Morgan–Owens)."
+    },
+    {
+      "latin": "exāmen, exāminis n.",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "an exam",
+      "evidence": [
+        "M-O s.v. test: exam, examination, after Grosse (1846) and Egger"
+      ],
+      "comment": "Classically a swarm of bees, then the tongue of a balance, and so a weighing (Pers. 1.6; Ov. Met. 9.552, Lewis &amp; Short). To take an exam is <span lang=\"la\">exāmen subīre</span>, to pass it <span lang=\"la\">exāmen superāre</span> (Morgan–Owens)."
+    },
+    {
+      "latin": "perīculum, perīculī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a trial, a test",
+      "evidence": [
+        "Ter. Eun. 476: <span lang=\"la\">fac perīclum in litterīs</span>",
+        "M-O s.v. test, quiz"
+      ],
+      "comment": "With <span lang=\"la\">facere</span>, to put to the test; its everyday sense is danger."
+    },
+    {
+      "latin": "experīmentum, experīmentī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a trial, a test",
+      "evidence": [
+        "Levi–Bini p. 271: <span lang=\"la\">experīmentum Latīnī sermōnis</span>, an exam in Latin",
+        "M-O s.v. test, quiz"
+      ],
+      "comment": "A proof or trial, mostly after Augustus (Quint. 2.5.15, Lewis &amp; Short); Levi and Bini’s word for a school exam."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Fac perīclum in litterīs, fac in palaestrā, in mūsicīs.",
+      "english": "Test him in letters, test him at wrestling, in music.",
+      "source": "Ter. Eun. 476–477"
+    },
+    {
+      "latin": "Ad crāstinam probātiōnem tē parā.",
+      "english": "Get ready for tomorrow’s test.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "fail",
+    "grade-mark",
+    "homework",
+    "school",
+    "testing"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/probatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: probatio</a> · <a href=\"https://logeion.uchicago.edu/examen\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: examen</a> · <a href=\"https://logeion.uchicago.edu/periculum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: periculum</a> · <a href=\"https://logeion.uchicago.edu/experimentum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: experimentum</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. test, quiz; test: exam, examination; fail; pass.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 26, 27, 29, 30, 32, checked against the searchable text of the book (9 November 2026).",
+    "Enrico Levi and Arturo Bini, <em>Il latino come lingua viva</em> (1937), p. 271.",
+    "Terence (Parry’s numbering corrected to the OCT, as in loci-terentius) and Cicero’s <em>De officiis</em> checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "id": "divide-split",
+  "english": "divide",
+  "sense": "split into parts, share out",
+  "pos": "verb",
+  "also": [
+    "divide up",
+    "split up",
+    "share out"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "dīvidō, dīvidere, dīvīsī, dīvīsum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "divide, split; share out",
+      "evidence": [
+        "Caes. BG 1.1: <span lang=\"la\">Gallia est omnis dīvīsa in partēs trēs</span>",
+        "Sen. Ep. 88.11: <span lang=\"la\">cum frātre dīvidere</span>"
+      ],
+      "comment": "Into parts (<span lang=\"la\">in partēs</span>) or among people (<span lang=\"la\">inter sē</span>, <span lang=\"la\">cum aliquō</span>); Seneca sets the surveyor’s division of a field beside sharing with a brother (Ep. 88.11)."
+    },
+    {
+      "latin": "partior, partīrī, partītus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "share out, divide among",
+      "evidence": [
+        "Cic. Verr. 2.4.37 (Lewis &amp; Short)",
+        "Sall. J. 43.1, the active (Lewis &amp; Short)"
+      ],
+      "comment": "Cicero and Caesar use the deponent; the active <span lang=\"la\">partiō</span> is in Plautus and Sallust (Lewis &amp; Short)."
+    },
+    {
+      "latin": "distribuō, distribuere, distribuī, distribūtum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "distribute, share out",
+      "evidence": [
+        "Caes. BG 3.10 (Lewis &amp; Short)",
+        "Cic. Rep. 2.22: <span lang=\"la\">populum in quīnque classēs</span> (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Gallia est omnis dīvīsa in partēs trēs",
+      "english": "Gaul as a whole is divided into three parts",
+      "source": "Caes. BG 1.1"
+    },
+    {
+      "latin": "Quid mihi prōdest scīre agellum in partēs dīvidere, sī nesciō cum frātre dīvidere?",
+      "english": "What use is it to me to know how to divide a plot of land into parts, if I don’t know how to share it with my brother?",
+      "source": "Sen. Ep. 88.11"
+    }
+  ],
+  "related": [
+    "divide-arithmetic",
+    "share",
+    "separate",
+    "part",
+    "cut"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/divido\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: divido</a> · <a href=\"https://logeion.uchicago.edu/partio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: partio</a> · <a href=\"https://logeion.uchicago.edu/distribuo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: distribuo</a>",
+    "Caesar and Seneca checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

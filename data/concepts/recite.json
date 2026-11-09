@@ -1,0 +1,67 @@
+{
+  "id": "recite",
+  "english": "recite",
+  "pos": "verb",
+  "also": [
+    "recitation",
+    "say by heart",
+    "recite a poem",
+    "say your lesson"
+  ],
+  "domain": "schola",
+  "terms": [
+    {
+      "latin": "reddō, reddere, reddidī, redditum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "recite, say back (a lesson, a poem) from memory",
+      "evidence": [
+        "Hor. Ep. 1.18.13–14: <span lang=\"la\">puerum … dictāta magistrō reddere</span>",
+        "Cic. Brut. 301: <span lang=\"la\">ea sine scrīptō verbīs eīsdem redderet</span>",
+        "Hor. C. 4.6.43 (Lewis &amp; Short)"
+      ],
+      "comment": "The schoolboy says back to the master what has been dictated to him: <span lang=\"la\">dictāta reddere</span>. To make plain that it is from memory, add <span lang=\"la\">memoriter</span> (Cic. Lael. 1, Lewis &amp; Short): <span lang=\"la\">carmen memoriter reddere</span>."
+    },
+    {
+      "latin": "recitō, recitāre, recitāvī, recitātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "recite; read out to an audience",
+      "evidence": [
+        "Hor. Ars 438: <span lang=\"la\">Quīntiliō sī quid recitārēs</span>",
+        "Cels. 3.18 (Lewis &amp; Short)",
+        "Traupman 31"
+      ],
+      "comment": "Classically to read out a text, a law, or one’s own poems to listeners (see read aloud); from memory in Celsus, of patients made to say what they remember (Lewis &amp; Short). Traupman’s word for recite; a recitation is <span lang=\"la\">recitātiō</span> (Traupman 31)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ut puerum saevō crēdās dictāta magistrō reddere vel partīs mīmum tractāre secundās",
+      "english": "that you would think it a boy saying his lessons back to a stern master, or a mime playing the second part",
+      "source": "Hor. Ep. 1.18.13–14"
+    },
+    {
+      "latin": "Reddenda est memoriter hesterna lēctiō, satis prōlixa. Vereor ut possim.",
+      "english": "We have to recite yesterday’s lesson by heart, and it’s a long one. I’m afraid I can’t.",
+      "source": "Erasm. Coll., <span lang=\"la\">Euntēs in lūdum litterārium</span>"
+    }
+  ],
+  "related": [
+    "learn-by-heart",
+    "read-aloud",
+    "lesson",
+    "homework"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/reddo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: reddo</a> · <a href=\"https://logeion.uchicago.edu/recito\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: recito</a> · <a href=\"https://logeion.uchicago.edu/recitatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: recitatio</a> · <a href=\"https://logeion.uchicago.edu/memor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: memor</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 31, checked against the searchable text of the book (9 November 2026).",
+    "Horace and Cicero’s <em>Brutus</em> checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Erasmus from the Latinitas loci collections (loci-erasmus)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

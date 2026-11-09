@@ -1,0 +1,66 @@
+{
+  "id": "times-table",
+  "english": "times table",
+  "pos": "noun",
+  "also": [
+    "times tables",
+    "multiplication table",
+    "tables",
+    "twice two"
+  ],
+  "domain": "schola",
+  "terms": [
+    {
+      "latin": "tabula multiplicātiōnis",
+      "status": "recommended",
+      "period": "ours",
+      "gloss": "a times table",
+      "comment": "Our plain description, since none of the works consulted names it: <span lang=\"la\">multiplicātiō</span> is multiplication in Columella (5.2.1, Lewis &amp; Short), and a <span lang=\"la\">tabula</span> any written list."
+    },
+    {
+      "latin": "bis bīna",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "twice two: the table as it is said",
+      "evidence": [
+        "Cic. N. D. 2.49",
+        "Varr. RR 2.1.12: <span lang=\"la\">ter ternās</span>, three times three (Lewis &amp; Short, s.v. <span lang=\"la\">ternī</span>)"
+      ],
+      "comment": "Latin says the table with a numeral adverb and a distributive: <span lang=\"la\">bis bīna quattuor, ter terna novem</span>. Cicero’s Balbus says that Epicurus had not even learned what twice two makes (N. D. 2.49)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "quae sī bis bīna quot essent didicisset Epicūrus, certē nōn dīceret",
+      "english": "if Epicurus had learned what twice two makes, he would certainly not say this",
+      "source": "Cic. N. D. 2.49"
+    },
+    {
+      "latin": "jam vērō ūnum et ūnum duo, duo et duo quattuor, odiōsa cantiō mihi erat",
+      "english": "and ‘one and one is two, two and two is four’ was a hateful chant to me",
+      "source": "Aug. Conf. 1.13.22"
+    },
+    {
+      "latin": "Ter terna quot sunt? — Novem.",
+      "english": "What are three threes? — Nine.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "multiply",
+    "arithmetic",
+    "learn-by-heart",
+    "sum-calculation"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/multiplicatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: multiplicatio</a> · <a href=\"https://logeion.uchicago.edu/tabula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tabula</a> · <a href=\"https://logeion.uchicago.edu/bini\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: bini</a> · <a href=\"https://logeion.uchicago.edu/terni\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: terni</a>",
+    "Cicero’s <em>De natura deorum</em> checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-augustinus), checked against the editions named there.",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "merge",
+  "english": "merge",
+  "sense": "version control",
+  "pos": [
+    "verb",
+    "noun"
+  ],
+  "domain": "computatra",
+  "terms": [
+    {
+      "latin": "conjungō, conjungere, conjūnxī, conjūnctum",
+      "status": "recommended",
+      "period": "ours",
+      "gloss": "join or unite",
+      "comment": "Extended to merging code. These are ancient words applied to a modern operation, not verified Git terminology. Preserve literal command names such as <code>merge</code> when discussing syntax."
+    },
+    {
+      "latin": "conjūnctiō, conjūnctiōnis f.",
+      "status": "recommended",
+      "period": "ours",
+      "gloss": "joining or union",
+      "comment": "A descriptive name for a merge."
+    }
+  ],
+  "related": [
+    "pull-request",
+    "commit"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/conjungo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: conjungo</a> · <a href=\"https://logeion.uchicago.edu/conjunctio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: conjunctio</a> · <a href=\"https://dcc.dickinson.edu/latin-core-list1\" rel=\"noopener noreferrer\" target=\"_blank\">Dickinson: Latin Core Vocabulary</a>"
+  ],
+  "replaces": [
+    "entry-45"
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

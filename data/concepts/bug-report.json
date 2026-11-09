@@ -1,0 +1,55 @@
+{
+  "id": "bug-report",
+  "english": "bug report",
+  "pos": [
+    "noun",
+    "verb"
+  ],
+  "also": [
+    "report a bug"
+  ],
+  "domain": "computatra",
+  "terms": [
+    {
+      "latin": "relātiō dē mendō",
+      "status": "recommended",
+      "period": "ours",
+      "comment": "Our descriptive phrase. <strong lang=\"la\">relātiō, relātiōnis f.</strong> — report or account. The earlier discussion used <strong lang=\"la\">relātiō dē vitiō</strong>; both describe a report about a fault."
+    },
+    {
+      "latin": "relātiō dē vitiō",
+      "status": "alternative",
+      "period": "ours"
+    },
+    {
+      "latin": "dē mendō referre",
+      "status": "recommended",
+      "period": "ours",
+      "gloss": "report a bug"
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Dē hōc mendō jam rettulī.",
+      "english": "I’ve already reported this bug.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "bug",
+    "debug",
+    "reproduce-a-bug"
+  ],
+  "sources": [
+    "<a href=\"https://alatius.com/ls/index.php?l=relatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: relatio</a> · <a href=\"https://alatius.com/ls/index.php?l=mendum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mendum</a>. Dictionary links support the component words; the modern technical expressions are labelled separately.",
+    "The example sentence marked “composed” is ours."
+  ],
+  "replaces": [
+    "entry-137"
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

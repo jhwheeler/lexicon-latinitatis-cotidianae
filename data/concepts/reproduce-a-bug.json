@@ -1,0 +1,42 @@
+{
+  "id": "reproduce-a-bug",
+  "english": "reproduce a bug",
+  "pos": "verb",
+  "also": [
+    "reproduce"
+  ],
+  "domain": "computatra",
+  "terms": [
+    {
+      "latin": "mendum iterum efficere",
+      "status": "recommended",
+      "period": "ours",
+      "gloss": "make the bug occur again",
+      "comment": "Our explicit working description of reproducing a software bug. <strong lang=\"la\">efficiō, efficere, effēcī, effectum</strong> — bring about or cause. The earlier QA conversation used “reproducere vitium” and “gradūs ad vitium reproducendum.” That wording is recorded here as a prior proposal, not as an independently verified technical term; this preferred description avoids relying on that verb’s modern technical sense."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Hoc mendum iterum efficere nōn possum.",
+      "english": "I can’t reproduce this bug.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "reproduction-steps",
+    "bug",
+    "bug-report"
+  ],
+  "sources": [
+    "<a href=\"https://alatius.com/ls/index.php?l=efficio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: efficio</a> · <a href=\"https://alatius.com/ls/index.php?l=mendum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mendum</a>. Dictionary links support the component words; the modern technical expressions are labelled separately.",
+    "The example sentence marked “composed” is ours."
+  ],
+  "replaces": [
+    "entry-138"
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

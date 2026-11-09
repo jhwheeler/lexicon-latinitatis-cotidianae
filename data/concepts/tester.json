@@ -1,0 +1,69 @@
+{
+  "id": "tester",
+  "english": "tester",
+  "pos": "noun",
+  "also": [
+    "QA tester"
+  ],
+  "domain": "computatra",
+  "terms": [
+    {
+      "latin": "probātor, probātōris m.",
+      "status": "recommended",
+      "period": "ours",
+      "gloss": "approver",
+      "comment": "Also examiner in ecclesiastical Latin. Applied here to a software tester."
+    },
+    {
+      "latin": "probātrīx, probātrīcis f.",
+      "status": "alternative",
+      "period": "ours",
+      "gloss": "tester (a woman)",
+      "comment": "Our transparent feminine formation; its software use is not independently verified."
+    },
+    {
+      "latin": "probātor programmatum",
+      "status": "alternative",
+      "period": "ours",
+      "gloss": "tester of programs",
+      "comment": "<strong lang=\"la\">programmatum</strong> is the genitive plural of <strong lang=\"la\">programma, programmatis n.</strong>, with short stem <strong lang=\"la\">a</strong>."
+    },
+    {
+      "latin": "probātrīx programmatum",
+      "status": "alternative",
+      "period": "ours",
+      "gloss": "a female tester of programs"
+    },
+    {
+      "latin": "artifex probātiōnis quālitātis",
+      "status": "alternative",
+      "period": "ours",
+      "gloss": "a quality-testing specialist",
+      "comment": "A longer descriptive proposal from the earlier conversation. <strong lang=\"la\">artifex, artificis m./f.</strong> denotes a skilled practitioner; it is not an established translation of the job title “QA engineer.”"
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Probātor mendum invēnit.",
+      "english": "The tester found a bug.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "testing",
+    "quality-assurance",
+    "bug"
+  ],
+  "sources": [
+    "<a href=\"https://alatius.com/ls/index.php?l=probator\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: probator</a> · <a href=\"https://alatius.com/ls/index.php?l=programma\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: programma</a> · <a href=\"https://alatius.com/ls/index.php?l=artifex\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: artifex</a>. Dictionary links support the component words; the modern technical expressions are labelled separately.",
+    "The example sentence marked “composed” is ours."
+  ],
+  "replaces": [
+    "entry-134"
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

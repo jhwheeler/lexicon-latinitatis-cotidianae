@@ -1,0 +1,44 @@
+{
+  "id": "actual-result",
+  "english": "actual result",
+  "pos": "noun",
+  "also": [
+    "observed result"
+  ],
+  "domain": "computatra",
+  "terms": [
+    {
+      "latin": "exitus repertus",
+      "status": "recommended",
+      "period": "ours",
+      "gloss": "observed / actual result, literally the result found",
+      "comment": "This and <strong lang=\"la\">exitus exspectātus</strong> recover the practical distinctions from the earlier QA discussion. <strong lang=\"la\">exitus repertus</strong> makes the intended “observed result” more explicit. The full expression is not presented as established QA terminology."
+    },
+    {
+      "latin": "exitus rēālis",
+      "status": "alternative",
+      "period": "modern",
+      "comment": "The earlier alternative; a modern formation."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Exitus repertus ab exspectātō differt.",
+      "english": "The actual result differs from the expected result.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "expected-result",
+    "test-case"
+  ],
+  "sources": [
+    "<a href=\"https://alatius.com/ls/index.php?l=exitus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: exitus</a>. Dictionary links support the component words; the modern technical expressions are labelled separately.",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

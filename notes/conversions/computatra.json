@@ -1,0 +1,1730 @@
+{
+  "batch": "computatra",
+  "cards": [
+    "entry-42",
+    "entry-43",
+    "entry-44",
+    "entry-45",
+    "entry-46",
+    "entry-47",
+    "entry-48",
+    "entry-49",
+    "entry-50",
+    "entry-51",
+    "entry-52",
+    "entry-53",
+    "entry-132",
+    "entry-133",
+    "entry-134",
+    "entry-135",
+    "entry-136",
+    "entry-137",
+    "entry-138",
+    "entry-139",
+    "entry-140",
+    "entry-141",
+    "entry-267"
+  ],
+  "records": [
+    {
+      "id": "programming",
+      "english": "programming",
+      "pos": "noun",
+      "also": [
+        "computer programming"
+      ],
+      "domain": "computatra",
+      "terms": [
+        {
+          "latin": "programmātiō, programmātiōnis f.",
+          "status": "recommended",
+          "period": "modern",
+          "comment": "A modern formation; not claimed to be a uniquely settled term."
+        },
+        {
+          "latin": "programmātūra, programmātūrae f.",
+          "status": "alternative",
+          "period": "modern",
+          "comment": "Another modern choice."
+        },
+        {
+          "latin": "programmātūra computātrālis",
+          "status": "alternative",
+          "period": "ours",
+          "gloss": "computer programming"
+        }
+      ],
+      "related": [
+        "program",
+        "programmer",
+        "programming-language",
+        "software",
+        "development-cycle"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/silva-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: Silva</a>"
+      ],
+      "replaces": [
+        "entry-42"
+      ]
+    },
+    {
+      "id": "program",
+      "english": "program",
+      "sense": "computing",
+      "pos": [
+        "noun",
+        "verb"
+      ],
+      "also": [
+        "write a program"
+      ],
+      "domain": "computatra",
+      "terms": [
+        {
+          "latin": "programma, programmatis n.",
+          "status": "recommended",
+          "period": "modern",
+          "gloss": "a program",
+          "evidence": [
+            "Traupman 262"
+          ],
+          "comment": "Plural <strong lang=\"la\">programmata</strong>, genitive plural <strong lang=\"la\">programmatum</strong>; the third-declension stem has short <strong lang=\"la\">a</strong>."
+        },
+        {
+          "latin": "programmō, programmāre, programmāvī, programmātum",
+          "status": "recommended",
+          "period": "modern",
+          "gloss": "to program",
+          "evidence": [
+            "M-O, Silva, citing <em>Vox Latina</em>"
+          ]
+        },
+        {
+          "latin": "programma compōnere",
+          "status": "alternative",
+          "period": "modern",
+          "gloss": "write a program",
+          "evidence": [
+            "Traupman 262"
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "«Programmata,» inquit, «in computātrulō compōnō …»",
+          "english": "“I write programs,” he said, “on the laptop …”",
+          "source": "Libellus III, <span lang=\"la\">Apud avum et aviam</span>"
+        },
+        {
+          "latin": "corpus programmatum",
+          "english": "a collection or body of programs",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "programming",
+        "programmer",
+        "software",
+        "computer"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/programma\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: programma</a>",
+        "<a href=\"https://neolatinlexicon.org/silva-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: Silva</a>",
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 262, checked against the searchable text of the book (29 October 2026).",
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026. Examples marked “Libellus” quote those texts word for word.",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "programmer",
+      "english": "programmer",
+      "pos": "noun",
+      "domain": "computatra",
+      "terms": [
+        {
+          "latin": "programmātor, programmātōris m.",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "M-O, Silva, citing <em>Vox Latina</em>"
+          ]
+        },
+        {
+          "latin": "programmātrīx, programmātrīcis f.",
+          "status": "alternative",
+          "period": "modern",
+          "gloss": "programmer (a woman)",
+          "comment": "A transparent feminine counterpart."
+        }
+      ],
+      "related": [
+        "programming",
+        "program"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/silva-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: Silva</a>"
+      ]
+    },
+    {
+      "id": "programming-language",
+      "english": "programming language",
+      "pos": "noun",
+      "domain": "computatra",
+      "terms": [
+        {
+          "latin": "lingua programmātiōnis",
+          "status": "recommended",
+          "period": "ours",
+          "comment": "Like <strong lang=\"la\">lingua programmandī</strong>, a descriptive phrase rather than a claim of universal standardization."
+        },
+        {
+          "latin": "lingua programmandī",
+          "status": "alternative",
+          "period": "ours"
+        }
+      ],
+      "related": [
+        "programming"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/silva-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: Silva</a>"
+      ]
+    },
+    {
+      "id": "software",
+      "english": "software",
+      "pos": "noun",
+      "domain": "computatra",
+      "terms": [
+        {
+          "latin": "programmātūra, programmātūrae f.",
+          "status": "recommended",
+          "period": "modern",
+          "comment": "Our convenient working term for software; its scope varies among modern users."
+        },
+        {
+          "latin": "partēs programmātiōnis",
+          "status": "alternative",
+          "period": "modern",
+          "evidence": [
+            "M-O s.v. software"
+          ],
+          "comment": "A reported lexical proposal, not our preferred everyday expression.",
+          "notes": [
+            "partes-programmationis"
+          ]
+        }
+      ],
+      "notes": {
+        "partes-programmationis": {
+          "form": "partēs programmātiōnis",
+          "claim": "genitive singular",
+          "against": "the new Morgan–Owens entry, which actually displays the problematic <span lang=\"la\">partes programmationes</span>",
+          "html": "That spelling is not evidence for the corrected genitive’s exact attestation."
+        }
+      },
+      "related": [
+        "program",
+        "hardware",
+        "programming"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/latin/software/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: software</a> · <a href=\"https://neolatinlexicon.org/silva-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: Silva</a>"
+      ],
+      "replaces": [
+        "entry-43"
+      ]
+    },
+    {
+      "id": "hardware",
+      "english": "hardware",
+      "pos": "noun",
+      "also": [
+        "equipment"
+      ],
+      "domain": "computatra",
+      "terms": [
+        {
+          "latin": "apparātūra, apparātūrae f.",
+          "status": "recommended",
+          "period": "modern",
+          "gloss": "equipment or hardware",
+          "comment": "A modern working term; it is not the only possible choice."
+        }
+      ],
+      "related": [
+        "software",
+        "computer"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/latin/software/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: software</a> · <a href=\"https://neolatinlexicon.org/silva-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: Silva</a>"
+      ]
+    },
+    {
+      "id": "source-code",
+      "english": "source code",
+      "pos": "noun",
+      "domain": "computatra",
+      "terms": [
+        {
+          "latin": "cōdex fontālis",
+          "status": "recommended",
+          "period": "ours",
+          "comment": "Our working expression for source code; no claim of established major-source usage. <strong lang=\"la\">fontālis, fontāle</strong> — pertaining to a source, a post-Classical adjective; <strong lang=\"la\">fōns, fontis m.</strong> — source or spring. The noun’s nominative <strong lang=\"la\">ō</strong> is long before <strong lang=\"la\">ns</strong>; it is not mechanically carried into <strong lang=\"la\">fontis</strong>."
+        }
+      ],
+      "related": [
+        "code",
+        "code-review"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/codex\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: codex</a> · <a href=\"https://logeion.uchicago.edu/fons\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fons</a> · <a href=\"https://neolatinlexicon.org/silva-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: Silva</a>"
+      ],
+      "replaces": [
+        "entry-44"
+      ]
+    },
+    {
+      "id": "code",
+      "english": "code",
+      "sense": "computing",
+      "pos": "noun",
+      "domain": "computatra",
+      "terms": [
+        {
+          "latin": "cōdex, cōdicis m.",
+          "status": "recommended",
+          "period": "ours",
+          "comment": "Ancient book or tablet; computing “code” is a modern extension."
+        }
+      ],
+      "related": [
+        "source-code",
+        "code-review",
+        "program"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/codex\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: codex</a>"
+      ]
+    },
+    {
+      "id": "merge",
+      "english": "merge",
+      "sense": "version control",
+      "pos": [
+        "verb",
+        "noun"
+      ],
+      "domain": "computatra",
+      "terms": [
+        {
+          "latin": "conjungō, conjungere, conjūnxī, conjūnctum",
+          "status": "recommended",
+          "period": "ours",
+          "gloss": "join or unite",
+          "comment": "Extended to merging code. These are ancient words applied to a modern operation, not verified Git terminology. Preserve literal command names such as <code>merge</code> when discussing syntax."
+        },
+        {
+          "latin": "conjūnctiō, conjūnctiōnis f.",
+          "status": "recommended",
+          "period": "ours",
+          "gloss": "joining or union",
+          "comment": "A descriptive name for a merge."
+        }
+      ],
+      "related": [
+        "pull-request",
+        "commit"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/conjungo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: conjungo</a> · <a href=\"https://logeion.uchicago.edu/conjunctio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: conjunctio</a> · <a href=\"https://dcc.dickinson.edu/latin-core-list1\" rel=\"noopener noreferrer\" target=\"_blank\">Dickinson: Latin Core Vocabulary</a>"
+      ],
+      "replaces": [
+        "entry-45"
+      ]
+    },
+    {
+      "id": "pull-request",
+      "english": "pull request",
+      "pos": "noun",
+      "also": [
+        "PR"
+      ],
+      "domain": "computatra",
+      "terms": [
+        {
+          "latin": "petītiō conjungendī",
+          "status": "recommended",
+          "period": "ours",
+          "gloss": "request to merge",
+          "comment": "Our functional description “request to merge,” not an established Latin GitHub label. <strong lang=\"la\">petītiō, petītiōnis f.</strong> — request; <strong lang=\"la\">conjungendī</strong> is a genitive gerund, “of joining.” It describes the proposed merge, not literally the Git pull operation. Retain <code>pull request</code> or <code>PR</code> when an exact platform label matters."
+        }
+      ],
+      "related": [
+        "merge",
+        "code-review"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/petitio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: petitio</a> · <a href=\"https://logeion.uchicago.edu/conjungo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: conjungo</a>"
+      ],
+      "replaces": [
+        "entry-46"
+      ]
+    },
+    {
+      "id": "development-cycle",
+      "english": "development cycle",
+      "pos": "noun",
+      "domain": "computatra",
+      "terms": [
+        {
+          "latin": "cursus ēlabōrātiōnis",
+          "status": "recommended",
+          "period": "ours",
+          "comment": "Our description for a development cycle. <strong lang=\"la\">cursus, cursūs m.</strong> — course or progression; <strong lang=\"la\">ēlabōrātiō, ēlabōrātiōnis f.</strong> — elaboration or working out. The phrase’s computing sense is a semantic extension; it is not claimed to be a standardized technical equivalent. The noun supplies both <strong lang=\"la\">ē-</strong> and <strong lang=\"la\">-bōr-</strong>."
+        }
+      ],
+      "related": [
+        "programming",
+        "code-review"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/cursus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cursus</a> · <a href=\"https://logeion.uchicago.edu/elaboratio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: elaboratio</a>"
+      ],
+      "replaces": [
+        "entry-47"
+      ]
+    },
+    {
+      "id": "script",
+      "english": "script",
+      "sense": "computing",
+      "pos": "noun",
+      "domain": "computatra",
+      "terms": [
+        {
+          "latin": "scrīptum, scrīptī n.",
+          "status": "recommended",
+          "period": "ours",
+          "gloss": "a written piece",
+          "comment": "Extended here to a computer script. <strong lang=\"la\">scrībō, scrībere, scrīpsī, scrīptum</strong> — write. The computing sense is our working application. Preserve literal filenames and executable names."
+        }
+      ],
+      "related": [
+        "program",
+        "code"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/scriptum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: scriptum</a> · <a href=\"https://logeion.uchicago.edu/scribo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: scribo</a>"
+      ],
+      "replaces": [
+        "entry-48"
+      ]
+    },
+    {
+      "id": "commit",
+      "english": "commit",
+      "sense": "version control",
+      "pos": [
+        "verb",
+        "noun"
+      ],
+      "domain": "computatra",
+      "terms": [
+        {
+          "latin": "cōnsignō, cōnsignāre, cōnsignāvī, cōnsignātum",
+          "status": "recommended",
+          "period": "ours",
+          "gloss": "seal or record",
+          "comment": "Applied here to committing a version. The Git meaning is a working extension. Preserve <code>commit</code> in literal commands.",
+          "notes": [
+            "short-i"
+          ]
+        },
+        {
+          "latin": "cōnsignātiō, cōnsignātiōnis f.",
+          "status": "recommended",
+          "period": "ours",
+          "gloss": "recording or registration",
+          "comment": "Our descriptive noun for a commit.",
+          "notes": [
+            "short-i"
+          ]
+        }
+      ],
+      "notes": {
+        "short-i": {
+          "form": "cōnsignō, cōnsignātiō",
+          "claim": "short i before gn",
+          "against": "some older dictionaries lengthen it",
+          "html": "That reading is disputed; no general rule of vowel lengthening before <span lang=\"la\">gn</span> is applied here.",
+          "ruling": "short-before-gn"
+        }
+      },
+      "related": [
+        "merge",
+        "code"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/consigno\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: consigno</a> · <a href=\"https://logeion.uchicago.edu/consignatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: consignatio</a> · <a href=\"https://www.alatius.com/latin/bennetthidden.html\" rel=\"noopener noreferrer\" target=\"_blank\">Bennett: hidden quantities, with later corrections</a>"
+      ],
+      "replaces": [
+        "entry-49"
+      ]
+    },
+    {
+      "id": "bug",
+      "english": "bug",
+      "sense": "software",
+      "pos": "noun",
+      "also": [
+        "error",
+        "defect",
+        "software bug"
+      ],
+      "domain": "computatra",
+      "terms": [
+        {
+          "latin": "mendum, mendī n.",
+          "status": "recommended",
+          "period": "ours",
+          "gloss": "fault or error",
+          "comment": "Applied to a software bug."
+        },
+        {
+          "latin": "menda, mendae f.",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "a fault or blemish",
+          "comment": "A related form."
+        },
+        {
+          "latin": "vitium, vitiī n.",
+          "status": "alternative",
+          "period": "ours",
+          "gloss": "defect or fault",
+          "comment": "Applied here to software; plural <strong lang=\"la\">vitia</strong>. Our existing preferred everyday “bug” is <strong lang=\"la\">mendum, mendī n.</strong>; keeping that choice makes related phrases consistent."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Mendum est sīcut lapillus quī in calceō tuō latet: nōn bene ambulās, dōnec lapillum invēneris et ējēceris.",
+          "english": "A bug is like a pebble hiding in your shoe: you can’t walk properly until you’ve found the pebble and thrown it out.",
+          "source": "Libellus III, <span lang=\"la\">Apud avum et aviam</span>"
+        },
+        {
+          "latin": "Mendum invēnī.",
+          "english": "I found a bug.",
+          "source": "composed"
+        },
+        {
+          "latin": "mendum invenīre / reperīre",
+          "english": "find a bug",
+          "source": "composed"
+        },
+        {
+          "latin": "vitium invenīre",
+          "english": "find a bug (an earlier alternative)",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "debug",
+        "bug-report",
+        "reproduce-a-bug",
+        "tester"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/mendum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mendum</a> · <a href=\"https://logeion.uchicago.edu/menda\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: menda</a>",
+        "<a href=\"https://alatius.com/ls/index.php?l=vitium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vitium</a>. Dictionary links support the component words; the modern technical expressions are labelled separately.",
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026. Examples marked “Libellus” quote those texts word for word.",
+        "The example sentences marked “composed” are ours."
+      ],
+      "replaces": [
+        "entry-50"
+      ]
+    },
+    {
+      "id": "debug",
+      "english": "debug",
+      "pos": [
+        "verb",
+        "noun"
+      ],
+      "also": [
+        "fix an error",
+        "fix a bug",
+        "correction"
+      ],
+      "domain": "computatra",
+      "terms": [
+        {
+          "latin": "ēmendō, ēmendāre, ēmendāvī, ēmendātum",
+          "status": "recommended",
+          "period": "ours",
+          "gloss": "correct or amend",
+          "comment": "Applied to fixing code. This covers correction generally; “debugging” can also include investigation before a fix exists."
+        },
+        {
+          "latin": "mendum ēmendāre",
+          "status": "alternative",
+          "period": "ours",
+          "gloss": "fix an error, fix a bug"
+        },
+        {
+          "latin": "vitium corrigere",
+          "status": "alternative",
+          "period": "ours",
+          "gloss": "fix a bug",
+          "comment": "An earlier alternative."
+        },
+        {
+          "latin": "ēmendātiō, ēmendātiōnis f.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "correction"
+        },
+        {
+          "latin": "ēmendātiō mendī",
+          "status": "alternative",
+          "period": "ours",
+          "gloss": "correction of a bug"
+        },
+        {
+          "latin": "corrēctiō, corrēctiōnis f.",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "correction"
+        }
+      ],
+      "related": [
+        "bug",
+        "bug-report"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/emendo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: emendo</a> · <a href=\"https://logeion.uchicago.edu/emendatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: emendatio</a>",
+        "<a href=\"https://alatius.com/ls/index.php?l=corrigo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: corrigo</a>. Dictionary links support the component words; the modern technical expressions are labelled separately."
+      ],
+      "replaces": [
+        "entry-51"
+      ]
+    },
+    {
+      "id": "code-review",
+      "english": "code review",
+      "pos": "noun",
+      "domain": "computatra",
+      "terms": [
+        {
+          "latin": "recōgnitiō cōdicis",
+          "status": "recommended",
+          "period": "ours",
+          "comment": "Our description for a code review. <strong lang=\"la\">recōgnitiō, recōgnitiōnis f.</strong> — examination or review; <strong lang=\"la\">cōdicis</strong> is the genitive of <strong lang=\"la\">cōdex</strong>. The computing phrase is not presented as an independently attested standard. Use ordinary Latin case syntax to make the relationship between technical nouns explicit: <strong lang=\"la\">recōgnitiō cōdicis</strong>, <strong lang=\"la\">cursus ēlabōrātiōnis</strong>. The grammaticality of a phrase does not establish that it is idiomatic or widely used technical Latin; our new computing phrases remain labelled as working formations. Preserve exact commands, filenames, branch names and protocol tokens where translation would alter their identity.",
+          "notes": [
+            "recognitio"
+          ]
+        }
+      ],
+      "notes": {
+        "recognitio": {
+          "form": "recōgnitiō",
+          "claim": "long o",
+          "against": "Lewis &amp; Short leaves it unmarked",
+          "html": "Lewis’s Elementary Latin Dictionary explicitly gives <span lang=\"la\">re-cōgnitiō</span>."
+        }
+      },
+      "related": [
+        "code",
+        "source-code",
+        "pull-request",
+        "development-cycle"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/recognitio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: recognitio</a> · <a href=\"https://logeion.uchicago.edu/codex\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: codex</a> · <a href=\"https://atlas.perseus.tufts.edu/dictionaries/entry/urn%3Acite2%3Ascaife-viewer%3Adictionaries.v1%3Aelementary-latin-n13773/\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis: recognitio</a>"
+      ],
+      "replaces": [
+        "entry-52",
+        "entry-53"
+      ]
+    },
+    {
+      "id": "project",
+      "english": "project",
+      "pos": "noun",
+      "also": [
+        "undertaking"
+      ],
+      "domain": "computatra",
+      "terms": [
+        {
+          "latin": "opus, operis n.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "work or undertaking",
+          "comment": "Our everyday choice for a project being carried out. Plural <strong lang=\"la\">opera, operum n. pl.</strong> Recovered from our 24 September 2026 discussion: both words were proposed, and Jack used <strong lang=\"la\">Opus incipiāmus.</strong> These are contextual choices, not a claim that either word always corresponds to every English use of “project.”"
+        },
+        {
+          "latin": "cōnsilium, cōnsiliī n.",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "plan, intention or design",
+          "comment": "Useful when the planned undertaking is the focus."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Opus incipiāmus.",
+          "english": "Let’s begin the project.",
+          "source": "composed"
+        },
+        {
+          "latin": "Hoc opus suscipiāmus.",
+          "english": "Let’s undertake this project.",
+          "source": "composed"
+        },
+        {
+          "latin": "In hōc opere labōrō.",
+          "english": "I’m working on this project.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "plan"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=opus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: opus</a> · <a href=\"https://alatius.com/ls/index.php?l=consilium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: consilium</a>. Dictionary links support the component words; the modern technical expressions are labelled separately.",
+        "The example sentences marked “composed” are ours."
+      ],
+      "replaces": [
+        "entry-132"
+      ]
+    },
+    {
+      "id": "plan",
+      "english": "plan",
+      "sense": "of action",
+      "pos": "noun",
+      "domain": "computatra",
+      "terms": [
+        {
+          "latin": "cōnsilium, cōnsiliī n.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "plan, intention or design"
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Quid dē hōc cōnsiliō putās?",
+          "english": "What do you think of this plan?",
+          "source": "composed"
+        },
+        {
+          "latin": "Cōnsilium investīgātiōnis",
+          "english": "a research plan (a descriptive phrase)",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "project"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=consilium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: consilium</a>. Dictionary links support the component words; the modern technical expressions are labelled separately.",
+        "The example sentences marked “composed” are ours."
+      ]
+    },
+    {
+      "id": "quality-assurance",
+      "english": "quality assurance",
+      "pos": "noun",
+      "also": [
+        "QA"
+      ],
+      "domain": "computatra",
+      "terms": [
+        {
+          "latin": "cūrātiō quālitātis",
+          "status": "recommended",
+          "period": "ours",
+          "comment": "Our descriptive expression for the broader work of quality assurance. <strong lang=\"la\">cūrātiō, cūrātiōnis f.</strong> — care, oversight or management; <strong lang=\"la\">quālitās, quālitātis f.</strong> — quality, property or character. Classical <strong lang=\"la\">quālitās</strong> does not by itself mean “high quality.” Testing is one part of QA, so this and <strong lang=\"la\">probātiō quālitātis</strong>, quality testing, are not exact synonyms. Both expressions recover proposals from our 21 September 2026 conversation. The dictionary sources establish the component words and their older senses; they do not establish these complete phrases as standardized software terminology."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Quālitātem programmātūrae cūrō.",
+          "english": "I look after software quality.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "testing",
+        "tester"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=curatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: curatio</a> · <a href=\"https://alatius.com/ls/index.php?l=qualitas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: qualitas</a>. Dictionary links support the component words; the modern technical expressions are labelled separately.",
+        "The example sentence marked “composed” is ours."
+      ],
+      "replaces": [
+        "entry-133"
+      ]
+    },
+    {
+      "id": "testing",
+      "english": "testing",
+      "pos": "noun",
+      "also": [
+        "test",
+        "tests",
+        "quality testing",
+        "testing types"
+      ],
+      "domain": "computatra",
+      "terms": [
+        {
+          "latin": "probātiō, probātiōnis f.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "testing, inspection or examination"
+        },
+        {
+          "latin": "probātiō quālitātis",
+          "status": "alternative",
+          "period": "ours",
+          "gloss": "quality testing",
+          "comment": "Testing is one part of QA, so this and <strong lang=\"la\">cūrātiō quālitātis</strong> are not exact synonyms. Both expressions recover proposals from our 21 September 2026 conversation. The dictionary sources establish the component words and their older senses; they do not establish these complete phrases as standardized software terminology."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Programma probandum est.",
+          "english": "The program needs testing.",
+          "source": "composed"
+        },
+        {
+          "latin": "probātiōnēs exercēre",
+          "english": "carry out tests",
+          "source": "composed"
+        },
+        {
+          "latin": "probātiōnēs repetere",
+          "english": "repeat the tests",
+          "source": "composed"
+        },
+        {
+          "latin": "Post mūtātiōnem cōdicis probātiōnēs repetāmus.",
+          "english": "Let’s repeat the tests after changing the code.",
+          "source": "composed"
+        },
+        {
+          "latin": "genera probātiōnum",
+          "english": "testing types",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "quality-assurance",
+        "tester",
+        "automated-testing",
+        "manual-testing",
+        "regression-testing",
+        "integration-testing",
+        "unit-test",
+        "acceptance-testing",
+        "test-case"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=probatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: probatio</a>. Dictionary links support the component words; the modern technical expressions are labelled separately.",
+        "The example sentences marked “composed” are ours."
+      ],
+      "replaces": [
+        "entry-135"
+      ]
+    },
+    {
+      "id": "tester",
+      "english": "tester",
+      "pos": "noun",
+      "also": [
+        "QA tester"
+      ],
+      "domain": "computatra",
+      "terms": [
+        {
+          "latin": "probātor, probātōris m.",
+          "status": "recommended",
+          "period": "ours",
+          "gloss": "approver",
+          "comment": "Also examiner in ecclesiastical Latin. Applied here to a software tester."
+        },
+        {
+          "latin": "probātrīx, probātrīcis f.",
+          "status": "alternative",
+          "period": "ours",
+          "gloss": "tester (a woman)",
+          "comment": "Our transparent feminine formation; its software use is not independently verified."
+        },
+        {
+          "latin": "probātor programmatum",
+          "status": "alternative",
+          "period": "ours",
+          "gloss": "tester of programs",
+          "comment": "<strong lang=\"la\">programmatum</strong> is the genitive plural of <strong lang=\"la\">programma, programmatis n.</strong>, with short stem <strong lang=\"la\">a</strong>."
+        },
+        {
+          "latin": "probātrīx programmatum",
+          "status": "alternative",
+          "period": "ours",
+          "gloss": "a female tester of programs"
+        },
+        {
+          "latin": "artifex probātiōnis quālitātis",
+          "status": "alternative",
+          "period": "ours",
+          "gloss": "a quality-testing specialist",
+          "comment": "A longer descriptive proposal from the earlier conversation. <strong lang=\"la\">artifex, artificis m./f.</strong> denotes a skilled practitioner; it is not an established translation of the job title “QA engineer.”"
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Probātor mendum invēnit.",
+          "english": "The tester found a bug.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "testing",
+        "quality-assurance",
+        "bug"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=probator\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: probator</a> · <a href=\"https://alatius.com/ls/index.php?l=programma\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: programma</a> · <a href=\"https://alatius.com/ls/index.php?l=artifex\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: artifex</a>. Dictionary links support the component words; the modern technical expressions are labelled separately.",
+        "The example sentence marked “composed” is ours."
+      ],
+      "replaces": [
+        "entry-134"
+      ]
+    },
+    {
+      "id": "automated-testing",
+      "english": "automated testing",
+      "pos": "noun",
+      "domain": "computatra",
+      "terms": [
+        {
+          "latin": "probātiō automatica",
+          "status": "recommended",
+          "period": "ours",
+          "comment": "This and <strong lang=\"la\">probātiō manuālis</strong> recover our earlier proposals; the quantity of every modern technical stem is not independently established here."
+        }
+      ],
+      "related": [
+        "testing",
+        "manual-testing"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=probatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: probatio</a>. Dictionary links support the component words; the modern technical expressions are labelled separately."
+      ]
+    },
+    {
+      "id": "manual-testing",
+      "english": "manual testing",
+      "pos": "noun",
+      "domain": "computatra",
+      "terms": [
+        {
+          "latin": "probātiō manuālis",
+          "status": "recommended",
+          "period": "ours",
+          "comment": "This and <strong lang=\"la\">probātiō automatica</strong> recover our earlier proposals; the quantity of every modern technical stem is not independently established here."
+        }
+      ],
+      "related": [
+        "testing",
+        "automated-testing"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=probatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: probatio</a>. Dictionary links support the component words; the modern technical expressions are labelled separately."
+      ]
+    },
+    {
+      "id": "regression-testing",
+      "english": "regression testing",
+      "pos": "noun",
+      "domain": "computatra",
+      "terms": [
+        {
+          "latin": "probātiō regressiōnis",
+          "status": "recommended",
+          "period": "ours",
+          "comment": "A technical calque whose meaning must be supplied by context: checking that changes have not broken previously working behaviour."
+        }
+      ],
+      "related": [
+        "testing"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=probatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: probatio</a>. Dictionary links support the component words; the modern technical expressions are labelled separately."
+      ]
+    },
+    {
+      "id": "integration-testing",
+      "english": "integration testing",
+      "pos": "noun",
+      "domain": "computatra",
+      "terms": [
+        {
+          "latin": "probātiō integrātiōnis",
+          "status": "recommended",
+          "period": "ours",
+          "comment": "A working technical calque, not an independently attested standard."
+        }
+      ],
+      "related": [
+        "testing",
+        "unit-test"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=probatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: probatio</a>. Dictionary links support the component words; the modern technical expressions are labelled separately."
+      ]
+    },
+    {
+      "id": "unit-test",
+      "english": "unit test",
+      "pos": "noun",
+      "also": [
+        "unit testing",
+        "testing of a unit"
+      ],
+      "domain": "computatra",
+      "terms": [
+        {
+          "latin": "probātiō ūnitātis",
+          "status": "recommended",
+          "period": "ours",
+          "gloss": "testing of a unit",
+          "comment": "A working technical calque, not an independently attested standard."
+        }
+      ],
+      "related": [
+        "testing",
+        "integration-testing"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=probatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: probatio</a>. Dictionary links support the component words; the modern technical expressions are labelled separately."
+      ]
+    },
+    {
+      "id": "acceptance-testing",
+      "english": "acceptance testing",
+      "pos": "noun",
+      "domain": "computatra",
+      "terms": [
+        {
+          "latin": "probātiō acceptātiōnis",
+          "status": "recommended",
+          "period": "ours",
+          "comment": "A working technical calque, not an independently attested standard."
+        }
+      ],
+      "related": [
+        "testing"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=probatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: probatio</a>. Dictionary links support the component words; the modern technical expressions are labelled separately."
+      ]
+    },
+    {
+      "id": "test-case",
+      "english": "test case",
+      "pos": "noun",
+      "domain": "computatra",
+      "terms": [
+        {
+          "latin": "cāsus probātiōnis",
+          "status": "recommended",
+          "period": "ours",
+          "comment": "Our descriptive calque. <strong lang=\"la\">cāsus, cāsūs m.</strong> — case or occurrence. The full expression is not presented as established QA terminology."
+        }
+      ],
+      "related": [
+        "test-condition",
+        "expected-result",
+        "actual-result",
+        "testing"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=casus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: casus</a> · <a href=\"https://alatius.com/ls/index.php?l=probatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: probatio</a>. Dictionary links support the component words; the modern technical expressions are labelled separately."
+      ],
+      "replaces": [
+        "entry-136"
+      ]
+    },
+    {
+      "id": "test-condition",
+      "english": "test condition",
+      "pos": "noun",
+      "domain": "computatra",
+      "terms": [
+        {
+          "latin": "condiciō probātiōnis",
+          "status": "recommended",
+          "period": "ours",
+          "comment": "<strong lang=\"la\">condiciō, condiciōnis f.</strong> — condition. The full expression is not presented as established QA terminology."
+        }
+      ],
+      "related": [
+        "test-case"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=condicio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: condicio</a> · <a href=\"https://alatius.com/ls/index.php?l=probatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: probatio</a>. Dictionary links support the component words; the modern technical expressions are labelled separately."
+      ]
+    },
+    {
+      "id": "expected-result",
+      "english": "expected result",
+      "pos": "noun",
+      "domain": "computatra",
+      "terms": [
+        {
+          "latin": "exitus exspectātus",
+          "status": "recommended",
+          "period": "ours",
+          "comment": "<strong lang=\"la\">exitus, exitūs m.</strong> — outcome or result. This and <strong lang=\"la\">exitus repertus</strong> recover the practical distinctions from the earlier QA discussion. The full expression is not presented as established QA terminology."
+        }
+      ],
+      "related": [
+        "actual-result",
+        "test-case"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=exitus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: exitus</a>. Dictionary links support the component words; the modern technical expressions are labelled separately."
+      ]
+    },
+    {
+      "id": "actual-result",
+      "english": "actual result",
+      "pos": "noun",
+      "also": [
+        "observed result"
+      ],
+      "domain": "computatra",
+      "terms": [
+        {
+          "latin": "exitus repertus",
+          "status": "recommended",
+          "period": "ours",
+          "gloss": "observed / actual result, literally the result found",
+          "comment": "This and <strong lang=\"la\">exitus exspectātus</strong> recover the practical distinctions from the earlier QA discussion. <strong lang=\"la\">exitus repertus</strong> makes the intended “observed result” more explicit. The full expression is not presented as established QA terminology."
+        },
+        {
+          "latin": "exitus rēālis",
+          "status": "alternative",
+          "period": "modern",
+          "comment": "The earlier alternative; a modern formation."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Exitus repertus ab exspectātō differt.",
+          "english": "The actual result differs from the expected result.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "expected-result",
+        "test-case"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=exitus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: exitus</a>. Dictionary links support the component words; the modern technical expressions are labelled separately.",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "bug-report",
+      "english": "bug report",
+      "pos": [
+        "noun",
+        "verb"
+      ],
+      "also": [
+        "report a bug"
+      ],
+      "domain": "computatra",
+      "terms": [
+        {
+          "latin": "relātiō dē mendō",
+          "status": "recommended",
+          "period": "ours",
+          "comment": "Our descriptive phrase. <strong lang=\"la\">relātiō, relātiōnis f.</strong> — report or account. The earlier discussion used <strong lang=\"la\">relātiō dē vitiō</strong>; both describe a report about a fault."
+        },
+        {
+          "latin": "relātiō dē vitiō",
+          "status": "alternative",
+          "period": "ours"
+        },
+        {
+          "latin": "dē mendō referre",
+          "status": "recommended",
+          "period": "ours",
+          "gloss": "report a bug"
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Dē hōc mendō jam rettulī.",
+          "english": "I’ve already reported this bug.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "bug",
+        "debug",
+        "reproduce-a-bug"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=relatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: relatio</a> · <a href=\"https://alatius.com/ls/index.php?l=mendum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mendum</a>. Dictionary links support the component words; the modern technical expressions are labelled separately.",
+        "The example sentence marked “composed” is ours."
+      ],
+      "replaces": [
+        "entry-137"
+      ]
+    },
+    {
+      "id": "reproduce-a-bug",
+      "english": "reproduce a bug",
+      "pos": "verb",
+      "also": [
+        "reproduce"
+      ],
+      "domain": "computatra",
+      "terms": [
+        {
+          "latin": "mendum iterum efficere",
+          "status": "recommended",
+          "period": "ours",
+          "gloss": "make the bug occur again",
+          "comment": "Our explicit working description of reproducing a software bug. <strong lang=\"la\">efficiō, efficere, effēcī, effectum</strong> — bring about or cause. The earlier QA conversation used “reproducere vitium” and “gradūs ad vitium reproducendum.” That wording is recorded here as a prior proposal, not as an independently verified technical term; this preferred description avoids relying on that verb’s modern technical sense."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Hoc mendum iterum efficere nōn possum.",
+          "english": "I can’t reproduce this bug.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "reproduction-steps",
+        "bug",
+        "bug-report"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=efficio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: efficio</a> · <a href=\"https://alatius.com/ls/index.php?l=mendum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mendum</a>. Dictionary links support the component words; the modern technical expressions are labelled separately.",
+        "The example sentence marked “composed” is ours."
+      ],
+      "replaces": [
+        "entry-138"
+      ]
+    },
+    {
+      "id": "reproduction-steps",
+      "english": "reproduction steps",
+      "pos": "noun",
+      "also": [
+        "steps to reproduce"
+      ],
+      "domain": "computatra",
+      "terms": [
+        {
+          "latin": "gradūs ad mendum iterum efficiendum",
+          "status": "recommended",
+          "period": "ours",
+          "gloss": "steps to reproduce a bug",
+          "comment": "<strong lang=\"la\">gradus, gradūs m.</strong> — step."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Eīsdem gradibus adhibitīs, idem mendum iterum accidit.",
+          "english": "Following the same steps, the same bug occurs again.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "reproduce-a-bug"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=gradus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gradus</a>. Dictionary links support the component words; the modern technical expressions are labelled separately.",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "metric",
+      "english": "metric",
+      "pos": "noun",
+      "also": [
+        "metrics",
+        "analytics",
+        "figures"
+      ],
+      "domain": "computatra",
+      "terms": [
+        {
+          "latin": "index numericus",
+          "status": "recommended",
+          "period": "ours",
+          "gloss": "numerical metric",
+          "comment": "Plural <strong lang=\"la\">indicēs numericī</strong>; our working technical expression for numerical metrics. Recovered from our 16 October discussion. These are proposals, not a verified community standard. API resource names must be interpreted from the platform’s own definitions: some “metrics” resources describe tracked event types rather than numerical values."
+        },
+        {
+          "latin": "index, indicis m.",
+          "status": "alternative",
+          "period": "ours",
+          "gloss": "indicator or pointer",
+          "comment": "<strong lang=\"la\">index</strong> also has other senses, including a list; the qualifier <strong lang=\"la\">numericus</strong> can disambiguate."
+        },
+        {
+          "latin": "numerus, numerī m.",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "numbers or figures",
+          "comment": "Plural <strong lang=\"la\">numerī</strong>; our informal choice when thinking about the reported statistics."
+        },
+        {
+          "latin": "mēnsūra, mēnsūrae f.",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "measure or measurement",
+          "comment": "Useful when the measure itself is the focus."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Quōs indicēs observāmus?",
+          "english": "Which metrics are we tracking?",
+          "source": "composed"
+        },
+        {
+          "latin": "indicēs praecipuī",
+          "english": "key metrics",
+          "source": "composed"
+        },
+        {
+          "latin": "indicēs incrēmentī",
+          "english": "growth metrics",
+          "source": "composed"
+        },
+        {
+          "latin": "Numerōs inspicere debeō.",
+          "english": "I need to check the figures.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "api-key"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=index\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: index</a> · <a href=\"https://alatius.com/ls/index.php?l=numerus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: numerus</a> · <a href=\"https://alatius.com/ls/index.php?l=mensura\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mensura</a>. Dictionary links support the component words; the modern technical expressions are labelled separately.",
+        "The example sentences marked “composed” are ours."
+      ],
+      "replaces": [
+        "entry-139"
+      ]
+    },
+    {
+      "id": "mailing-list",
+      "english": "mailing list",
+      "pos": "noun",
+      "also": [
+        "recipient list"
+      ],
+      "domain": "computatra",
+      "terms": [
+        {
+          "latin": "catalogus dēstinātāriōrum",
+          "status": "recommended",
+          "period": "ours",
+          "gloss": "recipient list",
+          "comment": "Our descriptive “recipient list” from the email-platform discussion. <strong lang=\"la\">catalogus, catalogī m.</strong> — catalogue or list; <strong lang=\"la\">dēstinātārius, dēstinātāriī m.</strong> is modern vocabulary for a recipient; the full phrase is not claimed as an established platform label."
+        },
+        {
+          "latin": "grex Internetī",
+          "status": "alternative",
+          "period": "modern",
+          "evidence": [
+            "Vocabula computatralia s.v. list"
+          ],
+          "comment": "The computing glossary instead proposes <strong lang=\"la\">grex Internetī</strong> for a mailing list. That emphasizes a group; an email-marketing platform’s stored list of recipients can be described more directly with <strong lang=\"la\">catalogus</strong>. These alternatives need not name exactly the same kind of resource."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Catalogum inspiciam.",
+          "english": "I’ll inspect the list.",
+          "source": "composed"
+        },
+        {
+          "latin": "Hunc dēstinātārium catalogō adde.",
+          "english": "Add this recipient to the list.",
+          "source": "composed"
+        }
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=catalogus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: catalogus</a> · <a href=\"https://www.culturaclasica.com/lingualatina/vocabula_computatralia.pdf\" rel=\"noopener noreferrer\" target=\"_blank\">Vocabula computatralia: list</a>. Dictionary links support the component words; the modern technical expressions are labelled separately.",
+        "The example sentences marked “composed” are ours."
+      ],
+      "replaces": [
+        "entry-140"
+      ]
+    },
+    {
+      "id": "api-key",
+      "english": "API key",
+      "pos": "noun",
+      "domain": "computatra",
+      "terms": [
+        {
+          "latin": "clāvis API",
+          "status": "recommended",
+          "period": "ours",
+          "comment": "Our working “API key.” <strong lang=\"la\">clāvis, clāvis f.</strong> — key. Retain the technical abbreviation <code>API</code> when its exact identity matters. These descriptions supplement the email-platform discussion; they are not recovered quotations from an older vocabulary list."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Hāc clāve numerōs legere mihi licet.",
+          "english": "This key lets me read the figures.",
+          "source": "composed"
+        },
+        {
+          "latin": "Hāc clāve data mūtāre mihi nōn licet.",
+          "english": "This key does not let me change the data.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "permission",
+        "read-access",
+        "read-and-write-permission",
+        "full-access",
+        "metric"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=clavis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: clavis</a> · <a href=\"https://alatius.com/ls/index.php?l=lego\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lego</a>. Dictionary links support the component words; the modern technical expressions are labelled separately.",
+        "The example sentences marked “composed” are ours."
+      ],
+      "replaces": [
+        "entry-141"
+      ]
+    },
+    {
+      "id": "permission",
+      "english": "permission",
+      "sense": "access right",
+      "pos": "noun",
+      "also": [
+        "permissions",
+        "scope",
+        "scopes"
+      ],
+      "domain": "computatra",
+      "terms": [
+        {
+          "latin": "jūs, jūris n.",
+          "status": "recommended",
+          "period": "ours",
+          "gloss": "right or permission",
+          "comment": "A scope defines a particular extent of authorization; “permissions” is useful ordinary wording, not an assertion that scope and permission are technically identical on every platform."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "jūra clāvis API",
+          "english": "the API key’s permissions",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "api-key",
+        "read-access",
+        "read-and-write-permission",
+        "full-access"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=ius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: jus</a>. Dictionary links support the component words; the modern technical expressions are labelled separately.",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "read-access",
+      "english": "read access",
+      "pos": "noun",
+      "also": [
+        "read permission"
+      ],
+      "domain": "computatra",
+      "terms": [
+        {
+          "latin": "jūs legendī",
+          "status": "recommended",
+          "period": "ours",
+          "gloss": "read permission"
+        }
+      ],
+      "related": [
+        "permission",
+        "read-and-write-permission",
+        "full-access"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=ius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: jus</a> · <a href=\"https://alatius.com/ls/index.php?l=lego\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lego</a>. Dictionary links support the component words; the modern technical expressions are labelled separately."
+      ]
+    },
+    {
+      "id": "read-and-write-permission",
+      "english": "read-and-write permission",
+      "pos": "noun",
+      "domain": "computatra",
+      "terms": [
+        {
+          "latin": "jūs legendī et scrībendī",
+          "status": "recommended",
+          "period": "ours"
+        }
+      ],
+      "related": [
+        "read-access",
+        "full-access",
+        "permission"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=ius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: jus</a> · <a href=\"https://alatius.com/ls/index.php?l=lego\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lego</a> · <a href=\"https://alatius.com/ls/index.php?l=scribo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: scribo</a>. Dictionary links support the component words; the modern technical expressions are labelled separately."
+      ]
+    },
+    {
+      "id": "full-access",
+      "english": "full access",
+      "pos": "noun",
+      "also": [
+        "all permissions"
+      ],
+      "domain": "computatra",
+      "terms": [
+        {
+          "latin": "omnia jūra",
+          "status": "recommended",
+          "period": "ours",
+          "gloss": "all permissions",
+          "comment": "“All permissions,” when that is what the platform grants. “Full access” may include additional actions, depending on the platform."
+        }
+      ],
+      "related": [
+        "permission",
+        "read-access",
+        "read-and-write-permission",
+        "api-key"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=ius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: jus</a>. Dictionary links support the component words; the modern technical expressions are labelled separately."
+      ]
+    },
+    {
+      "id": "computer",
+      "english": "computer",
+      "pos": "noun",
+      "domain": "computatra",
+      "terms": [
+        {
+          "latin": "computātrum, computātrī n.",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "Traupman 260"
+          ]
+        }
+      ],
+      "related": [
+        "laptop",
+        "keyboard",
+        "screen",
+        "program",
+        "bug",
+        "debug",
+        "commit"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/computo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: computo</a>",
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 260, checked against the searchable text of the book (29 October 2026)."
+      ],
+      "replaces": [
+        "entry-267",
+        "libelli-267"
+      ]
+    },
+    {
+      "id": "laptop",
+      "english": "laptop",
+      "pos": "noun",
+      "domain": "computatra",
+      "terms": [
+        {
+          "latin": "computātrulum portābile",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "Traupman 261"
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Pater in tablīnum iit, jānuam clausit, computātrulum in mēnsā scrīptōriā aperuit",
+          "english": "Dad went into the study, shut the door and opened his laptop on the desk",
+          "source": "Libellus III, <span lang=\"la\">Apud avum et aviam</span>"
+        }
+      ],
+      "related": [
+        "computer"
+      ],
+      "sources": [
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 261, checked against the searchable text of the book (29 October 2026).",
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026. Examples marked “Libellus” quote those texts word for word."
+      ]
+    },
+    {
+      "id": "keyboard",
+      "english": "keyboard",
+      "pos": "noun",
+      "domain": "computatra",
+      "terms": [
+        {
+          "latin": "plēctrologium, plēctrologiī n.",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "Traupman 261"
+          ]
+        }
+      ],
+      "related": [
+        "computer",
+        "screen"
+      ],
+      "sources": [
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 261, checked against the searchable text of the book (29 October 2026)."
+      ]
+    },
+    {
+      "id": "screen",
+      "english": "screen",
+      "sense": "of a device",
+      "pos": "noun",
+      "also": [
+        "monitor",
+        "display"
+      ],
+      "domain": "computatra",
+      "terms": [
+        {
+          "latin": "quadrum vīsificum",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "Traupman 262"
+          ]
+        },
+        {
+          "latin": "quadrum, quadrī n.",
+          "status": "alternative",
+          "period": "modern",
+          "evidence": [
+            "Traupman 262"
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "quadrum vīsificum illūxit, plēctrologium crepitāre coepit",
+          "english": "the screen lit up, the keyboard began to clatter",
+          "source": "Libellus III, <span lang=\"la\">Apud avum et aviam</span>"
+        }
+      ],
+      "related": [
+        "computer",
+        "keyboard",
+        "telephone"
+      ],
+      "sources": [
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 262, checked against the searchable text of the book (29 October 2026).",
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026. Examples marked “Libellus” quote those texts word for word."
+      ]
+    },
+    {
+      "id": "telephone",
+      "english": "telephone",
+      "pos": "noun",
+      "also": [
+        "phone",
+        "smartphone"
+      ],
+      "domain": "computatra",
+      "terms": [
+        {
+          "latin": "tēlephōnum, tēlephōnī n.",
+          "status": "recommended",
+          "period": "modern"
+        }
+      ],
+      "related": [
+        "app",
+        "screen"
+      ],
+      "sources": [
+        "A modern word; no source is cited for it here."
+      ]
+    },
+    {
+      "id": "app",
+      "english": "app",
+      "pos": "noun",
+      "also": [
+        "phone app"
+      ],
+      "domain": "computatra",
+      "terms": [
+        {
+          "latin": "tēlephōnī programma",
+          "status": "recommended",
+          "period": "ours",
+          "gloss": "phone app",
+          "comment": "A working phrase (<span lang=\"la\">locūtiō nostra</span>)."
+        }
+      ],
+      "related": [
+        "telephone",
+        "program"
+      ],
+      "sources": [
+        "Our working phrase, built from <span lang=\"la\">tēlephōnum</span> and <span lang=\"la\">programma</span>."
+      ]
+    }
+  ],
+  "added": {},
+  "dropped": {},
+  "flags": [
+    "Periods, the judgement calls: where a card says only that a classical word’s computing sense is “a modern extension” or “applied to” it and cites no modern source, I could not tell whether the usage is ours or established, so I chose the later period, ours: cōdex “code”, conjungō “merge”, mendum “bug”, ēmendō “debug”. Also marked ours on the card’s wording alone: programmātūra computātrālis (no label of its own) and lingua programmātiōnis / lingua programmandī (“descriptive phrases”). Make them modern if they are established usage.",
+    "programmātrīx: the card says only “a transparent feminine counterpart”, without a source. Traupman 261 gives it (programmer: programmātor, -tōris m. (-trīx, -trīcis f.)), so I marked it modern; the citation could be added.",
+    "partēs programmātiōnis: the “reported lexical proposal” is Traupman’s (p. 262, software: partēs, -ium f. pl. programmātiōnis), which the card does not cite. Marked modern. Traupman 261 gives hardware as apparātus computātrālis, not the card’s apparātūra.",
+    "Traupman gives programma on p. 261; p. 262 has programma compōnere. The card cites 262 for both, and I kept its citation.",
+    "program (verb): programmō leads, as the Programming card (entry-42) gives it, and programma compōnere (Traupman 262) is an alternative. Libellus III uses programma compōnere, and its gloss gives that form, so you may prefer it as the lead, as with vestis nocturna for pyjamas.",
+    "telephone: the card gives no source for tēlephōnum (the sources line says so). Traupman 38 has tēlephōnum, -ī n.",
+    "recōgnitiō (code review): the card marks the o long after Lewis’s Elementary (re-cōgnitiō); Lewis & Short (rĕcognĭtĭo) leaves it unmarked, and the quantity-authorities ruling sends hidden quantities to Bennett. The short-before-gn ruling may bear on it, and entry-312 (sermo) writes cognātus with a short o. The note follows the card.",
+    "Suspected macron errors, copied as printed: entry-139 “Numerōs inspicere debeō.” (Lewis & Short dēbĕo; the house writes īnspicere, as in four other entries and Libellus III’s īnspexit) and entry-140 “Catalogum inspiciam.” (→ īnspiciam). Entry-138 quotes the earlier proposals “reproducere vitium” and “gradūs ad vitium reproducendum” without macrons; I kept them as quotations in the comment, unmarked as Latin, as the card has them.",
+    "entry-53 (Technical noun relationships) is a usage note, not a word. I folded it into code-review (its first example) as part of the comment and in replaces. It might be better as a usage ruling.",
+    "Merges within the batch: defect (vitium) is an alternative in bug, since entry-137 keeps mendum as the everyday “bug”. “Report a bug” is in bug-report (noun and verb). “Fix a bug / an error” and the correction nouns are in debug. Quality testing (probātiō quālitātis) is in testing, and QA is its own record, since the card says they are not synonyms. Kinds of testing and the parts of a test case have records of their own.",
+    "Likely overlaps with other batches: telephone and screen with sermo entry-240 (tēlephōnum sonat; in quadrō appāruit), which may produce its own telephone or phone record; project (opus) with sermo entry-170 (opus, a job). “Key” itself (clāvis) is in domus entry-89, so I made no key record; clāvis is explained inside api-key. project and plan are general words that I kept in computatra, the card’s category.",
+    "Senses were added to headwords that other categories may also use: bug (software), code and script and program (computing), merge and commit (version control), screen (of a device), plan (of action), permission (access right).",
+    "audience is left at the default (child), although these are adult words: the cards do not say."
+  ]
+}

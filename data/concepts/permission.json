@@ -1,0 +1,43 @@
+{
+  "id": "permission",
+  "english": "permission",
+  "sense": "access right",
+  "pos": "noun",
+  "also": [
+    "permissions",
+    "scope",
+    "scopes"
+  ],
+  "domain": "computatra",
+  "terms": [
+    {
+      "latin": "jūs, jūris n.",
+      "status": "recommended",
+      "period": "ours",
+      "gloss": "right or permission",
+      "comment": "A scope defines a particular extent of authorization; “permissions” is useful ordinary wording, not an assertion that scope and permission are technically identical on every platform."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "jūra clāvis API",
+      "english": "the API key’s permissions",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "api-key",
+    "read-access",
+    "read-and-write-permission",
+    "full-access"
+  ],
+  "sources": [
+    "<a href=\"https://alatius.com/ls/index.php?l=ius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: jus</a>. Dictionary links support the component words; the modern technical expressions are labelled separately.",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

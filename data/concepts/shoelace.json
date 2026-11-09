@@ -1,0 +1,52 @@
+{
+  "id": "shoelace",
+  "english": "shoelace",
+  "pos": "noun",
+  "also": [
+    "shoelaces"
+  ],
+  "domain": "vestitus",
+  "terms": [
+    {
+      "latin": "vincula calceōrum",
+      "status": "recommended",
+      "period": "ours",
+      "gloss": "shoelaces",
+      "comment": "A description, from <strong lang=\"la\">vinculum, vinculī n.</strong>, tie or fastening."
+    },
+    {
+      "latin": "corrigia, corrigiae f.",
+      "status": "alternative",
+      "period": "classical",
+      "evidence": [
+        "Traupman 117, 377",
+        "M-O s.v. shoelace",
+        "Cic. Div. 2.84: <span lang=\"la\">abruptiō corrigiae</span>, a snapped shoelace as a bad omen"
+      ],
+      "notes": [
+        "corrigia"
+      ]
+    }
+  ],
+  "notes": {
+    "corrigia": {
+      "form": "corrigia",
+      "claim": "second vowel left unmarked",
+      "against": "Lewis &amp; Short <span lang=\"la\">corrī^gia</span>, which marks its length as doubtful",
+      "html": "Traupman 117 and Morgan–Owens s.v. shoelace print it unmarked."
+    }
+  },
+  "related": [
+    "tie",
+    "shoe"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/vinculum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vinculum</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 117, 377. <a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. shoelace."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

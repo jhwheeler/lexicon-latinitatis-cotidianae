@@ -208,7 +208,12 @@ class BuildTests(unittest.TestCase):
         self.assertIn('data-theme="light"', index)
         self.assertIn("=== 'dark' ? 'dark' : 'light'", index)
         self.assertIn('<form class="toolbar" role="search" action="index.html" method="get">', index)
+        self.assertIn('<details class="menu"><summary aria-label="Menu">', index)
+        self.assertIn('<nav class="menu-nav" aria-label="Pages"><a href="how-we-decide.html">How we decide</a>'
+                      '<a href="rulings.html">Rulings</a><a href="#about">About</a></nav>', index)
         page = outputs['k/culina.html']
+        self.assertIn('<nav class="menu-nav" aria-label="Pages"><a href="../index.html">Search</a>', page)
+        self.assertIn('data-theme-choice="dark"', page)
         self.assertIn('<div class="catpage" data-category="culina"', page)
         self.assertIn('<a href="../k/culina.html" lang="la" aria-current="page">Culīna et potūs</a>', page)
         self.assertIn('<form class="toolbar" role="search" action="../index.html" method="get">', page)

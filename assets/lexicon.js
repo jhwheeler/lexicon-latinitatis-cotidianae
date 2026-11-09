@@ -4,19 +4,31 @@
   const toggle = document.getElementById('theme-toggle');
   const label = document.getElementById('theme-label');
   const color = document.querySelector('meta[name="theme-color"]');
+  const choices = [...document.querySelectorAll('[data-theme-choice]')];
   function sync() {
     const dark = root.dataset.theme === 'dark';
     if (label) label.textContent = dark ? 'Light mode' : 'Dark mode';
     if (toggle) toggle.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+    choices.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.themeChoice === root.dataset.theme)));
     if (color) color.content = dark ? '#1c1b19' : '#ffffff';
   }
-  if (toggle) toggle.addEventListener('click', () => {
-    const theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+  function choose(theme) {
     root.dataset.theme = theme;
     try { localStorage.setItem('lexicon-theme', theme); } catch {}
     sync();
-  });
+  }
+  if (toggle) toggle.addEventListener('click', () => choose(root.dataset.theme === 'dark' ? 'light' : 'dark'));
+  choices.forEach(button => button.addEventListener('click', () => choose(button.dataset.themeChoice)));
   sync();
+
+  // The phone menu closes with Escape, or with a tap outside it.
+  const menu = document.querySelector('details.menu');
+  if (menu) {
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && menu.open) { menu.open = false; menu.querySelector('summary').focus(); }
+    });
+    document.addEventListener('click', event => { if (menu.open && !menu.contains(event.target)) menu.open = false; });
+  }
 
   // Display options: macrons shown or hidden, consonantal i written j or i. They change only what
   // is shown (search ignores both anyway); each text node under lang="la" keeps its original.

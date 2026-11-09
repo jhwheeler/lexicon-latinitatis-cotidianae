@@ -1,10 +1,13 @@
 import { before, beforeEach, after, test } from 'node:test';
 import assert from 'node:assert/strict';
+import { spawn } from 'node:child_process';
+import { fileURLToPath } from 'node:url';
 import { chromium } from 'playwright';
 
-let browser, page;
-const pageUrl = path => new URL('../' + path, import.meta.url).href;
-const url = pageUrl('index.html');
+// The pages are served over HTTP, as the published site is: pages opened from disk share their
+// saved preferences unreliably between one page and the next.
+let browser, page, server, base, url;
+const pageUrl = path => base + path;
 const resultIds = () => page.locator('.search-result').evaluateAll(nodes => nodes.map(n => n.dataset.resultFor));
 // Typing searches at once; only the first search waits for the data to load.
 const search = async query => {
@@ -12,8 +15,20 @@ const search = async query => {
   if (query) await page.waitForFunction(() => /matching/.test(document.getElementById('results').textContent));
 };
 const overflows = () => page.evaluate(() => document.documentElement.scrollWidth > innerWidth);
+// A preference saved on one page is read by the next.
+const settle = () => page.waitForTimeout(200);
 
 before(async () => {
+  const root = fileURLToPath(new URL('..', import.meta.url));
+  server = spawn('python3', ['-u', '-m', 'http.server', '0', '--bind', '127.0.0.1', '--directory', root],
+                 { stdio: ['ignore', 'pipe', 'pipe'] });
+  base = await new Promise((resolve, reject) => {
+    const read = chunk => { const port = /port (\d+)/.exec(String(chunk)); if (port) resolve(`http://127.0.0.1:${port[1]}/`); };
+    server.stdout.on('data', read);
+    server.stderr.on('data', read);
+    server.on('exit', code => reject(new Error(`The test server stopped (${code})`)));
+  });
+  url = pageUrl('index.html');
   browser = await chromium.launch({
     executablePath: process.env.LEXICON_CHROMIUM_EXECUTABLE || undefined,
     args: JSON.parse(process.env.LEXICON_CHROMIUM_ARGS || '[]')
@@ -24,7 +39,7 @@ beforeEach(async () => {
   await page.setViewportSize({ width: 1280, height: 900 });
   await page.goto(url);
 });
-after(async () => { await browser?.close(); });
+after(async () => { await browser?.close(); server?.kill(); });
 
 // Search ------------------------------------------------------------------------------------
 
@@ -220,7 +235,7 @@ test('the A–Z pages list every entry and every Latin word, by letter', async (
 });
 
 test('guidance and review notes live in the footer and remain reachable', async () => {
-  assert.equal(await page.locator('.hero details:not(.display-menu)').count(), 0);
+  assert.equal(await page.locator('.hero details:not(.display-menu):not(.menu)').count(), 0);
   assert.equal(await page.locator('footer details').count(), 2);
   await page.locator('.about-link a').click();
   assert.match(page.url(), /#about$/);
@@ -250,6 +265,10 @@ test('without scripts every page still works: the contents and the lists stand i
   assert.equal(await plain.locator('.wlist a[href="c/pyjamas.html"]').isVisible(), true);
   await plain.setViewportSize({ width: 390, height: 844 });
   await plain.goto(pageUrl('k/culina.html'));
+  await plain.locator('.menu > summary').click();
+  assert.equal(await plain.locator('.menu-nav a').first().isVisible(), true, 'the menu opens without scripts');
+  assert.equal(await plain.locator('.menu-options').isVisible(), false, 'its options need scripts');
+  await plain.locator('.menu > summary').click();
   await plain.locator('.cat-menu > summary').click();
   await plain.locator('.cat-menu a[href="../k/vestitus.html"]').click();
   await plain.waitForURL(/k\/vestitus\.html$/);
@@ -338,7 +357,7 @@ test('every page is usable on a phone: no sideways scrolling, 44px controls, no 
       await page.goto(pageUrl(path));
       assert.equal(await overflows(), false, `${path} overflows at ${width}px`);
       const small = await page.evaluate(() => [...document.querySelectorAll(
-        '.site-nav a, .theme-toggle, .filter button, .cat-menu > summary, .cat-home, .clear, .page-contents a, .toc a, .hero h1 a, .display-menu > summary, .wlist a, .az-nav a, .az a, .suggest a')]
+        '.site-nav a, .theme-toggle, .filter button, .cat-menu > summary, .cat-home, .clear, .page-contents a, .toc a, .hero h1 a, .display-menu > summary, .wlist a, .az-nav a, .az a, .suggest a, .menu > summary')]
         .filter(el => el.getClientRects().length && getComputedStyle(el).visibility !== 'hidden')
         .map(el => [el.textContent.trim().slice(0, 24), Math.round(el.getBoundingClientRect().height)])
         .filter(([, height]) => height < 44));
@@ -353,6 +372,47 @@ test('every page is usable on a phone: no sideways scrolling, 44px controls, no 
 
 // Theme and display ----------------------------------------------------------------------------
 
+test('on a phone the header folds into one menu: the links, the display options and the theme', async () => {
+  for (const path of ['index.html', 'k/culina.html', 'c/perhaps.html']) {
+    await page.setViewportSize({ width: 390, height: 844 });
+    await page.goto(pageUrl(path));
+    assert.equal(await page.locator('.menu > summary').isVisible(), true, path);
+    assert.equal(await page.locator('.site-nav').first().isVisible(), false, path);
+    assert.equal(await page.locator('.theme-toggle').isVisible(), false, path);
+    await page.locator('.menu > summary').click();
+    const links = page.locator('.menu-nav a');
+    assert.equal(await links.count(), 3);
+    assert.ok((await links.evaluateAll(nodes => nodes.map(n => n.getBoundingClientRect().height))).every(h => h >= 44));
+    assert.ok((await page.locator('.menu-options button').evaluateAll(nodes => nodes.map(n => n.getBoundingClientRect().height))).every(h => h >= 44));
+    await page.keyboard.press('Escape');
+    assert.equal(await page.locator('.menu').getAttribute('open'), null);
+    assert.equal(await overflows(), false);
+    await page.setViewportSize({ width: 1280, height: 900 });
+    assert.equal(await page.locator('.menu').isVisible(), false, `${path}: no menu on a wide screen`);
+  }
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto(url);
+  await page.evaluate(() => { localStorage.removeItem('lexicon-macrons'); localStorage.removeItem('lexicon-theme'); });
+  await settle();
+  await page.reload();
+  await page.locator('.menu > summary').click();
+  await page.locator('.menu-options').getByRole('button', { name: 'Hidden', exact: true }).click();
+  assert.equal(await page.locator('.hero h1').textContent(), 'Lexicon Latinitatis Cotidianae');
+  await page.locator('.menu-options').getByRole('button', { name: 'Dark', exact: true }).click();
+  assert.equal(await page.locator('html').getAttribute('data-theme'), 'dark');
+  assert.equal(await page.locator('.menu-options [data-theme-choice="dark"]').getAttribute('aria-pressed'), 'true');
+  await settle();
+  await page.locator('.menu-nav a', { hasText: 'Rulings' }).click();
+  await page.waitForURL(/rulings\.html$/);
+  await page.waitForLoadState('load');
+  assert.equal(await page.locator('html').getAttribute('data-theme'), 'dark');
+  await page.locator('.menu > summary').click();
+  assert.equal(await page.locator('.menu-options [data-display="macrons"][data-value="off"]').getAttribute('aria-pressed'), 'true');
+  await page.locator('.menu-options').getByRole('button', { name: 'Shown', exact: true }).click();
+  await page.locator('.menu-options').getByRole('button', { name: 'Light', exact: true }).click();
+  await settle();
+});
+
 test('light is the default even on a dark system; the keyboard toggle persists its choice', async () => {
   await page.emulateMedia({ colorScheme: 'dark' });
   await page.evaluate(() => localStorage.removeItem('lexicon-theme'));
@@ -365,10 +425,12 @@ test('light is the default even on a dark system; the keyboard toggle persists i
   assert.equal(await page.locator('html').getAttribute('data-theme'), 'dark');
   assert.equal(await page.locator('#search').inputValue(), 'pyjama');
   assert.equal(await page.locator('.search-result').count(), 6);
+  await settle();
   await page.reload();
   assert.equal(await page.locator('html').getAttribute('data-theme'), 'dark');
   assert.equal(await page.evaluate(() => getComputedStyle(document.documentElement).colorScheme), 'dark');
   await page.getByRole('button', { name: 'Switch to light mode' }).click();
+  await settle();
   await page.reload();
   assert.equal(await page.locator('html').getAttribute('data-theme'), 'light');
   await page.emulateMedia({ colorScheme: 'light' });
@@ -376,6 +438,7 @@ test('light is the default even on a dark system; the keyboard toggle persists i
 
 test('in dark mode, headings and labels are not red', async () => {
   await page.evaluate(() => localStorage.setItem('lexicon-theme', 'dark'));
+  await settle();
   for (const [path, selectors] of [['c/perhaps.html', ['.sec-head h2', '.lab']], ['k/culina.html', ['.category-heading h1', '.cat-home']]]) {
     await page.goto(pageUrl(path));
     const colours = await page.evaluate(list => list.map(s => getComputedStyle(document.querySelector(s)).color), selectors);
@@ -383,15 +446,19 @@ test('in dark mode, headings and labels are not red', async () => {
     assert.deepEqual(colours.map(red), selectors.map(() => false), `${path}: ${colours}`);
   }
   await page.evaluate(() => localStorage.removeItem('lexicon-theme'));
+  await settle();
 });
 
-test('the theme toggle works when saving preferences is blocked', async () => {
+test('the theme can be chosen when saving preferences is blocked', async () => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.evaluate(() => Object.defineProperty(window, 'localStorage', { get() { throw new Error('Storage blocked'); } }));
-  await page.getByRole('button', { name: 'Switch to dark mode' }).click();
+  await page.locator('.menu > summary').click();
+  await page.getByRole('button', { name: 'Dark', exact: true }).click();
   assert.equal(await page.locator('html').getAttribute('data-theme'), 'dark');
-  await page.getByRole('button', { name: 'Switch to light mode' }).click();
+  await page.getByRole('button', { name: 'Light', exact: true }).click();
   assert.equal(await page.locator('html').getAttribute('data-theme'), 'light');
+  await page.mouse.click(4, 820);   // in the margin, away from any link
+  assert.equal(await page.locator('.menu').getAttribute('open'), null, 'a tap outside closes the menu');
   await search('pyjama');
   assert.equal(await page.locator('.search-result').count(), 6);
   assert.equal(await overflows(), false);
@@ -404,17 +471,20 @@ test('the theme toggle works on every page and the choice carries across pages',
   assert.equal(await page.locator('html').getAttribute('data-theme'), 'light');
   await page.getByRole('button', { name: 'Switch to dark mode' }).click();
   assert.equal(await page.locator('html').getAttribute('data-theme'), 'dark');
+  await settle();
   for (const path of ['rulings.html', 'k/culina.html', 'words.html']) {
     await page.goto(pageUrl(path));
     assert.equal(await page.locator('html').getAttribute('data-theme'), 'dark', path);
   }
   await page.getByRole('button', { name: 'Switch to light mode' }).click();
+  await settle();
   await page.goto(url);
   assert.equal(await page.locator('html').getAttribute('data-theme'), 'light');
 });
 
 test('display options hide macrons or write i for j on every page, and search still finds words', async () => {
   await page.evaluate(() => { localStorage.removeItem('lexicon-macrons'); localStorage.removeItem('lexicon-j'); });
+  await settle();
   await page.reload();
   const brand = () => page.locator('.hero h1').textContent();
   assert.equal(await brand(), 'Lexicon Latīnitātis Cotīdiānae');
@@ -427,15 +497,17 @@ test('display options hide macrons or write i for j on every page, and search st
   await search('jam');
   assert.equal(await page.locator('.search-result').count() > 0, true);
   assert.doesNotMatch(await page.locator('#search-result-list [lang="la"]').allTextContents().then(t => t.join(' ')), /j/);
+  await settle();
   await page.goto(pageUrl('k/culina.html'));
   assert.doesNotMatch(await page.locator('.wlist').textContent(), /[āēīōūȳ]/);
   await page.goto(pageUrl('c/perhaps.html'));
   assert.match(await page.locator('.ex').textContent(), /Venietne avia\?/);
-  assert.equal(await page.locator('[data-display="macrons"][data-value="off"]').getAttribute('aria-pressed'), 'true');
+  assert.equal(await page.locator('.display-menu [data-display="macrons"][data-value="off"]').getAttribute('aria-pressed'), 'true');
   await page.locator('.display-menu > summary').click();
   await page.getByRole('button', { name: 'Shown', exact: true }).click();
   await page.getByRole('button', { name: 'jam', exact: true }).click();
   assert.match(await page.locator('.ex').textContent(), /Veniētne avia\?/);
+  await settle();
   await page.goto(url);
   assert.equal(await brand(), 'Lexicon Latīnitātis Cotīdiānae');
 });

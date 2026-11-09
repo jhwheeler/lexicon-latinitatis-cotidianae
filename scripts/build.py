@@ -61,6 +61,24 @@ DISPLAY_MENU = ('<details class="display-menu"><summary aria-label="Display opti
                 'data-display="j" data-value="j" aria-pressed="true">jam</button><button type="button" data-display="j" '
                 'data-value="i" aria-pressed="false">iam</button></p></div></details>')
 NAV = (('index.html', 'Search'), ('how-we-decide.html', 'How we decide'), ('rulings.html', 'Rulings'))
+
+
+def phone_menu(links):
+    """On a phone the header's links, the display options and the theme fold into one menu
+    (Jack, 9 November 2026). The links work without scripts; the options need them."""
+    return ('<details class="menu"><summary aria-label="Menu">'
+            '<svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">'
+            '<path d="M4 7h16M4 12h16M4 17h16"/></svg>'
+            '<svg class="menu-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">'
+            '<path d="M6 6l12 12M18 6L6 18"/></svg></summary>'
+            f'<div class="menu-panel"><nav class="menu-nav" aria-label="Pages">{links}</nav><div class="menu-options">'
+            '<p class="display-row"><span>Macrons</span><button type="button" data-display="macrons" data-value="on" '
+            'aria-pressed="true">Shown</button><button type="button" data-display="macrons" data-value="off" '
+            'aria-pressed="false">Hidden</button></p><p class="display-row"><span>Consonantal i</span><button type="button" '
+            'data-display="j" data-value="j" aria-pressed="true">jam</button><button type="button" data-display="j" data-value="i" '
+            'aria-pressed="false">iam</button></p><p class="display-row"><span>Theme</span><button type="button" '
+            'data-theme-choice="light" aria-pressed="true">Light</button><button type="button" data-theme-choice="dark" '
+            'aria-pressed="false">Dark</button></p></div></div></details>')
 REPO = 'https://github.com/jhwheeler/lexicon-latinitatis-cotidianae'
 POS = ('noun', 'verb', 'adjective', 'adverb', 'pronoun', 'preposition', 'conjunction', 'interjection', 'numeral', 'phrase')
 # Grammar derived from a term's dictionary form: "caccabus, caccabī m." is a noun of the second
@@ -499,7 +517,8 @@ def site_header(up, current=None):
     links = ''.join(f'<a href="{up}{href}"' + (' aria-current="page"' if href == current else '') + f'>{label}</a>'
                     for href, label in NAV)
     return (f'<header class="site-top wrap"><a class="site-name" href="{up}index.html" lang="la">{SITE_NAME}</a>'
-            f'<div class="site-tools"><nav class="site-nav" aria-label="Pages">{links}</nav>{DISPLAY_MENU}{THEME_TOGGLE}</div></header>')
+            f'<div class="site-tools"><nav class="site-nav" aria-label="Pages">{links}</nav>{DISPLAY_MENU}{THEME_TOGGLE}</div>'
+            f'{phone_menu(links)}</header>')
 
 
 def site_footer(up):
@@ -1022,7 +1041,8 @@ def render_index(root, site):
                 "if (id && !document.getElementById(id)) { var s = document.createElement('script'); "
                 "s.src = 'assets/legacy.js'; document.head.appendChild(s); } } go(); addEventListener('hashchange', go); })();</script>")
     total = len(site['records']) + len(site['legacy'])
-    replacements = {'theme': THEME_INIT, 'legacy': redirect, 'theme_toggle': THEME_TOGGLE, 'display_menu': DISPLAY_MENU,
+    menu = phone_menu('<a href="how-we-decide.html">How we decide</a><a href="rulings.html">Rulings</a><a href="#about">About</a>')
+    replacements = {'theme': THEME_INIT, 'legacy': redirect, 'theme_toggle': THEME_TOGGLE, 'display_menu': DISPLAY_MENU, 'menu': menu,
                     'search': search_block('', None, total), 'contents': contents, 'total': f'{total:,}',
                     'record_count': f'{len(site["records"]):,}'}
     return resolve_anchors(fill(root / 'src/page.html', replacements), site, '', 'index.html')

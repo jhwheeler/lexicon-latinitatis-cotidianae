@@ -1,0 +1,64 @@
+{
+  "id": "in-charge",
+  "english": "in charge",
+  "pos": "phrase",
+  "also": [
+    "be in charge of",
+    "be responsible for",
+    "run",
+    "head",
+    "put in charge",
+    "who’s in charge?"
+  ],
+  "also_under": [
+    "verba"
+  ],
+  "domain": "labor",
+  "terms": [
+    {
+      "latin": "praesum, praeesse, praefuī",
+      "status": "recommended",
+      "period": "classical",
+      "grammar": "verb, irregular (prae + sum), with the dative",
+      "gloss": "be in charge of, head, run",
+      "evidence": [
+        "Caes. BC 3.61: <span lang=\"la\">alicui negōtiō praeesse</span>, to have charge of a business (Lewis &amp; Short)",
+        "Cic. Fam. 1.6.1: <span lang=\"la\">omnibus negōtiīs nōn interfuit sōlum, sed praefuit</span>"
+      ],
+      "comment": "With the dative of what one is in charge of: <span lang=\"la\">quī oppidō praeerat</span> (Caes. BG 2.6, Lewis &amp; Short)."
+    },
+    {
+      "latin": "praeficiō, praeficere, praefēcī, praefectum",
+      "status": "alternative",
+      "period": "classical",
+      "grammar": "verb, third conjugation, with the accusative and the dative",
+      "gloss": "put in charge of",
+      "evidence": [
+        "Cic. Planc. 62: <span lang=\"la\">aliquem pecorī</span> (Lewis &amp; Short)",
+        "Caes. BG 5.24: <span lang=\"la\">lēgātōs legiōnibus</span> (Lewis &amp; Short)"
+      ],
+      "comment": "<span lang=\"la\">aliquem reī praeficere</span>: to put someone in charge of something."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "quae gerantur, accipiēs ex Polliōne, quī omnibus negōtiīs nōn interfuit sōlum, sed praefuit",
+      "english": "what is going on you will hear from Pollio, who was not only involved in all the business but in charge of it",
+      "source": "Cic. Fam. 1.6.1"
+    }
+  ],
+  "related": [
+    "undertake-responsibility",
+    "be-involved",
+    "position-post"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/praesum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praesum</a> · <a href=\"https://logeion.uchicago.edu/praeficio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praeficio</a>",
+    "Cicero’s letters checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

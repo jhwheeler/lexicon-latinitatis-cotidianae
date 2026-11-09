@@ -1,0 +1,90 @@
+{
+  "id": "charge-accusation",
+  "english": "charge",
+  "sense": "an accusation",
+  "pos": [
+    "noun",
+    "verb"
+  ],
+  "also": [
+    "accusation",
+    "accuse",
+    "charge with",
+    "be charged with",
+    "bring charges"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "crīmen, crīminis n.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "charge, accusation",
+      "evidence": [
+        "Phaedr. 1.10.4: <span lang=\"la\">lupus arguēbat vulpem fūrtī crīmine</span>",
+        "Traupman 194"
+      ],
+      "comment": "To bring charges against someone: <span lang=\"la\">crīmina alicuī īnferre</span> (Traupman 194)."
+    },
+    {
+      "latin": "arguō, arguere, arguī, argūtum",
+      "status": "alternative",
+      "period": "classical",
+      "grammar": "verb, third conjugation, with the accusative of the person and the genitive or ablative of the charge",
+      "gloss": "charge (someone with), accuse",
+      "evidence": [
+        "Phaedr. 1.10.4: <span lang=\"la\">fūrtī crīmine</span>",
+        "Traupman 194"
+      ],
+      "comment": "<span lang=\"la\">aliquem crīmine</span> (or <span lang=\"la\">dē crīmine</span>, <span lang=\"la\">crīminis</span>) <span lang=\"la\">arguere</span> (Traupman 194)."
+    },
+    {
+      "latin": "accūsō, accūsāre, accūsāvī, accūsātum",
+      "status": "alternative",
+      "period": "classical",
+      "grammar": "verb, first conjugation, with the accusative of the person and the genitive or dē of the charge",
+      "gloss": "accuse; blame",
+      "evidence": [
+        "Traupman 193",
+        "Publil. Sent. N 25: <span lang=\"la\">Nēminem citō accūsāverīs</span>"
+      ],
+      "comment": "Of a formal accusation, and of finding fault in general."
+    },
+    {
+      "latin": "reum facere",
+      "status": "alternative",
+      "period": "classical",
+      "grammar": "phrase: reus, reī m. (the accused) with facere and the accusative of the person",
+      "gloss": "bring a charge against, prosecute",
+      "evidence": [
+        "Nep. Alc. 4.3 (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "lupus arguēbat vulpem fūrtī crīmine; negābat illa sē esse culpae proximam",
+      "english": "the wolf charged the fox with theft; she denied that she was anywhere near guilty",
+      "source": "Phaedr. 1.10.4–5"
+    },
+    {
+      "latin": "Difficilem habēre oportet aurem ad crīmina.",
+      "english": "one should have an ear that is slow to listen to accusations",
+      "source": "Publil. Sent. D 11"
+    }
+  ],
+  "related": [
+    "accept-blame",
+    "police-officer"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/crimen\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: crimen</a> · <a href=\"https://logeion.uchicago.edu/arguo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: arguo</a> · <a href=\"https://logeion.uchicago.edu/accuso\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: accuso</a> · <a href=\"https://logeion.uchicago.edu/reus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: reus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 193–194, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-phaedrus, loci-publilius), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "id": "approach",
+  "english": "approach",
+  "sense": "come near",
+  "pos": [
+    "verb",
+    "noun"
+  ],
+  "also": [
+    "come near",
+    "come closer",
+    "draw near",
+    "go up to",
+    "get closer",
+    "be coming"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "appropinquō, appropinquāre, appropinquāvī, appropinquātum",
+      "status": "recommended",
+      "period": "classical",
+      "grammar": "verb, first conjugation, with the dative or ad",
+      "gloss": "come near, approach (in place or time)",
+      "evidence": [
+        "Caes. BC 3.9: <span lang=\"la\">jamque hiems appropinquābat</span> (Lewis &amp; Short)",
+        "Cic. Fam. 2.6.1: <span lang=\"la\">cum adpropinquāre tuus adventus putārētur</span>"
+      ],
+      "comment": "Of places and of times: winter, a birthday, someone’s arrival."
+    },
+    {
+      "latin": "accēdō, accēdere, accessī, accessum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "go up to, come near",
+      "evidence": [
+        "Gell. 5.14.11: <span lang=\"la\">ad hominem accēdit</span>",
+        "Plaut. Rud. 242: <span lang=\"la\">accēde ad mē</span>"
+      ],
+      "comment": "With <span lang=\"la\">ad</span>: to go right up to someone or something."
+    },
+    {
+      "latin": "adeō, adīre, adiī, aditum",
+      "status": "alternative",
+      "period": "classical",
+      "grammar": "verb, irregular (ad + eō)",
+      "gloss": "go to, approach (a person)",
+      "evidence": [
+        "Plaut. Rud. 242: <span lang=\"la\">accēde ad mē atque adī contrā</span>"
+      ],
+      "comment": "Of going to someone, often to speak to him or ask for something."
+    },
+    {
+      "latin": "adventus, adventūs m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "coming, arrival; approach",
+      "evidence": [
+        "Cic. Fam. 2.6.1: <span lang=\"la\">cum adpropinquāre tuus adventus putārētur</span>"
+      ],
+      "comment": "The noun for someone’s coming."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "deinde sēnsim atque placidē, tamquam nōscitābundus, ad hominem accēdit",
+      "english": "then slowly and gently, as if recognising him, it came up to the man",
+      "source": "Gell. 5.14.11"
+    },
+    {
+      "latin": "itaque iīs ūnctus quī accessit, pungunt",
+      "english": "so if anyone comes near them wearing scent, they sting",
+      "source": "Varr. RR 3.16.6"
+    },
+    {
+      "latin": "ubi es? — Ecce mē. accēde ad mē atque adī contrā.",
+      "english": "where are you? — Here I am. Come up to me, come this way.",
+      "source": "Plaut. Rud. 241–242"
+    }
+  ],
+  "related": [
+    "approach-method",
+    "come-here",
+    "arrive"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/appropinquo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: appropinquo</a> · <a href=\"https://logeion.uchicago.edu/accedo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: accedo</a> · <a href=\"https://logeion.uchicago.edu/adeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: adeo</a> · <a href=\"https://logeion.uchicago.edu/adventus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: adventus</a>",
+    "Cicero’s letters and Plautus’ <em>Rudens</em> checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-gellius, loci-varro, loci-plautus), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

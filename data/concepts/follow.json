@@ -1,0 +1,77 @@
+{
+  "id": "follow",
+  "english": "follow",
+  "sense": "go or come after",
+  "pos": "verb",
+  "also": [
+    "come after",
+    "go after",
+    "follow me",
+    "it follows that"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "sequor, sequī, secūtus sum",
+      "status": "recommended",
+      "period": "classical",
+      "grammar": "verb, third conjugation, deponent",
+      "gloss": "follow, go or come after",
+      "evidence": [
+        "Plaut. Rud. 184b–c: <span lang=\"la\">Sequere mē hāc ergō. — Sequor.</span>",
+        "Sen. Ep. 107.8: <span lang=\"la\">noctem diēs sequitur</span>"
+      ],
+      "comment": "With the accusative, of people and of what comes after in time. In argument, <span lang=\"la\">sequitur ut …</span> is “it follows that …” (Cic. Fat. 28, Lewis &amp; Short)."
+    },
+    {
+      "latin": "īnsequor, īnsequī, īnsecūtus sum",
+      "status": "alternative",
+      "period": "classical",
+      "grammar": "verb, third conjugation, deponent",
+      "gloss": "follow hard after; chase",
+      "evidence": [
+        "Verg. A. 5.321 (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "subsequor, subsequī, subsecūtus sum",
+      "status": "alternative",
+      "period": "classical",
+      "grammar": "verb, third conjugation, deponent",
+      "gloss": "follow close behind",
+      "evidence": [
+        "Quint. 1.1.14: <span lang=\"la\">nōn longē itaque Latīna subsequī dēbent</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Sequere mē hāc ergō. — Sequor.",
+      "english": "Follow me this way, then. — Coming.",
+      "source": "Plaut. Rud. 184b–c"
+    },
+    {
+      "latin": "dextrae sē parvus Iūlus implicuit sequiturque patrem nōn passibus aequīs",
+      "english": "little Iulus took hold of my right hand and followed his father with shorter steps",
+      "source": "Verg. A. 2.723–724"
+    },
+    {
+      "latin": "nūbilō serēna succēdunt; turbantur maria cum quiēvērunt; flant invicem ventī; noctem diēs sequitur",
+      "english": "clear skies come after cloud; the seas are stirred up when they have been calm; the winds blow by turns; day follows night",
+      "source": "Sen. Ep. 107.8"
+    }
+  ],
+  "related": [
+    "follow-advice",
+    "do-you-get-it"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/sequor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sequor</a> · <a href=\"https://logeion.uchicago.edu/insequor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: insequor</a> · <a href=\"https://logeion.uchicago.edu/subsequor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: subsequor</a>",
+    "Quotations from the Latinitas loci collections (loci-plautus, loci-vergilius, loci-seneca-epistulae, loci-quintilianus), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

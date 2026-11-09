@@ -1,0 +1,72 @@
+{
+  "id": "provide",
+  "english": "provide",
+  "sense": "supply, give",
+  "pos": "verb",
+  "also": [
+    "supply",
+    "provide with",
+    "furnish",
+    "make available"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "praebeō, praebēre, praebuī, praebitum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "provide, supply, offer",
+      "evidence": [
+        "Liv. 5.55.3: <span lang=\"la\">tēgula pūblicē praebita est</span>",
+        "Cato Agr. 14: <span lang=\"la\">quae opus sunt dominus praebēbit</span>"
+      ],
+      "comment": "With the dative of the person provided for: <span lang=\"la\">alicui aliquid praebēre</span>. Things provide too: <span lang=\"la\">quae praebet lātās arbor spatiantibus umbrās</span>, the tree that gives wide shade to those who walk under it (Ov. Rem. 85)."
+    },
+    {
+      "latin": "suppeditō, suppeditāre, suppeditāvī, suppeditātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "supply in plenty; be on hand",
+      "evidence": [
+        "Cic. Off. 1.12: <span lang=\"la\">ea, quae suppeditent ad cultum et ad victum</span>"
+      ],
+      "comment": "Transitive, to supply; intransitive, of things that are there in plenty."
+    },
+    {
+      "latin": "īnstruō, īnstruere, īnstrūxī, īnstrūctum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "equip, provide with everything needed",
+      "evidence": [
+        "Cic. Verr. 2.4.62: <span lang=\"la\">īnstruere et parāre convīvium omnibus rēbus</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Of fitting out a house or a meal with everything needed."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "tēgula pūblicē praebita est",
+      "english": "roof tiles were provided at public expense",
+      "source": "Liv. 5.55.3"
+    },
+    {
+      "latin": "hae reī māteriem et quae opus sunt dominus praebēbit",
+      "english": "for this work the owner will provide the timber and whatever is needed",
+      "source": "Cato Agr. 14"
+    }
+  ],
+  "related": [
+    "provide-for",
+    "require"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/praebeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praebeo</a> · <a href=\"https://logeion.uchicago.edu/suppedito\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: suppedito</a> · <a href=\"https://logeion.uchicago.edu/instruo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: instruo</a>",
+    "Cicero’s <em>De officiis</em> checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-livius, loci-cato, loci-ovidius), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

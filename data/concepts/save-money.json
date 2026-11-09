@@ -1,0 +1,96 @@
+{
+  "id": "save-money",
+  "english": "save",
+  "sense": "money: spend less, put by",
+  "pos": "verb",
+  "also": [
+    "save money",
+    "save up",
+    "savings",
+    "economise",
+    "economize",
+    "thrifty"
+  ],
+  "domain": "pecunia",
+  "terms": [
+    {
+      "latin": "parcō, parcere, pepercī, parsum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "be sparing with, save (on)",
+      "grammar": "verb, third conjugation; with the dative",
+      "evidence": [
+        "Publ. N 5: <span lang=\"la\">Nūllus est tam tūtus quaestus, quam quod habeās parcere.</span>",
+        "Cic. Fam. 16.4.2: <span lang=\"la\">tē rogō sūmptū nē parcās ūllā in rē</span>"
+      ],
+      "comment": "Lewis &amp; Short: “to act sparingly, be sparing with respect to a thing”: to spend less is to be sparing with expense (<span lang=\"la\">sūmptū parcere</span>). Publilius has the older accusative. Thrifty is <span lang=\"la\">frūgī</span> or <span lang=\"la\">frūgālis</span> (Traupman 158)."
+    },
+    {
+      "latin": "comparcō (conparcō), comparcere, comparsī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "save up, scrape together",
+      "grammar": "verb, third conjugation, transitive",
+      "register": "vōx cōmica: Ter.; posteā Fronto",
+      "evidence": [
+        "Ter. Ph. 43–44: <span lang=\"la\">quod ille ūnciātim vix dē dēmēnsō suō, suum dēfrūdāns genium, comparsit miser</span>"
+      ],
+      "comment": "Lewis &amp; Short: “to save, husband well, lay up (ante- and post-class.)”; it quotes Terence’s line with the reading <span lang=\"la\">compersit</span>."
+    },
+    {
+      "latin": "pecūlium, pecūliī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "savings, one’s own little hoard",
+      "evidence": [
+        "Verg. E. 1.32: <span lang=\"la\">nec spēs lībertātis erat, nec cūra pecūlī</span>",
+        "Traupman 174, 374"
+      ],
+      "comment": "Classically the money a slave or a son was allowed to keep as his own; Traupman’s savings bank is <span lang=\"la\">argentāria pecūliīs asservandīs</span>."
+    },
+    {
+      "latin": "compendium facere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "make a saving",
+      "evidence": [
+        "Plaut. Pers. 471: <span lang=\"la\">ego hodiē compendī fēcī bīnōs pānēs in diēs</span>"
+      ],
+      "comment": "Lewis &amp; Short: <span lang=\"la\">compendium</span>, “a saving or gain, profit acquired by saving (opp. <span lang=\"la\">dispendium</span>)”."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Nūllus est tam tūtus quaestus, quam quod habeās parcere.",
+      "english": "There is no profit as safe as saving what you have.",
+      "source": "Publ. N 5"
+    },
+    {
+      "latin": "quod ille ūnciātim vix dē dēmēnsō suō, suum dēfrūdāns genium, comparsit miser",
+      "english": "what the poor fellow has scraped together, ounce by ounce, out of his monthly ration, cheating himself of every pleasure",
+      "source": "Ter. Ph. 43–44"
+    },
+    {
+      "latin": "nec spēs lībertātis erat, nec cūra pecūlī",
+      "english": "I had no hope of freedom, and no thought of savings.",
+      "source": "Verg. E. 1.32"
+    }
+  ],
+  "related": [
+    "money",
+    "save-for-later",
+    "value"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/parco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: parco</a> · <a href=\"https://logeion.uchicago.edu/comparco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: comparco</a> · <a href=\"https://logeion.uchicago.edu/peculium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: peculium</a> · <a href=\"https://logeion.uchicago.edu/compendium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: compendium</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 158, 174, 374, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-publilius, loci-ranieri-eclogae), checked against the editions named there.",
+    "Terence’s <em>Phormio</em>, Plautus’s <em>Persa</em> and Cicero’s letters checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Publilius is cited as the loci collection numbers him, by position under each initial letter in the Latin Library text; from N onwards that numbering differs from Meyer’s."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

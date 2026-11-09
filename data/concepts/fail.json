@@ -1,0 +1,116 @@
+{
+  "id": "fail",
+  "english": "fail",
+  "sense": "not succeed",
+  "pos": "verb",
+  "also": [
+    "failure",
+    "be unsuccessful",
+    "it didn’t work",
+    "fail an exam",
+    "come to nothing",
+    "fall through"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "nōn succēdere",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "fail, not work out",
+      "grammar": "verb phrase, intransitive; often impersonal (nōn successit, it didn’t work)",
+      "evidence": [
+        "Ter. And. 670: <span lang=\"la\">Hāc nōn successit, aliā aggrediēmur viā.</span>",
+        "Cic. Or. 98 (Lewis &amp; Short): <span lang=\"la\">sī quandō minus succēdet</span>"
+      ],
+      "comment": "Of a plan or an attempt: <span lang=\"la\">nōn successit</span>, it didn’t work; <span lang=\"la\">minus succēdit</span>, it isn’t going well (Lewis &amp; Short s.v. <span lang=\"la\">succēdō</span>)."
+    },
+    {
+      "latin": "cadō, cadere, cecidī, cāsum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "fail, fall flat (of a play); fail (an exam)",
+      "grammar": "verb, third conjugation, intransitive",
+      "evidence": [
+        "Hor. Epist. 2.1.176: <span lang=\"la\">sēcūrus cadat an rēctō stet fābula tālō</span>",
+        "Traupman 312: <span lang=\"la\">in exāmine cadere</span>"
+      ],
+      "comment": "Of a play that fails on the stage, the opposite of <span lang=\"la\">stāre</span> (Lewis &amp; Short); hence Traupman’s “fail an exam”. Morgan–Owens (s.v. fail) suggests, with a query, the passive <span lang=\"la\">improbārī</span>, to be failed."
+    },
+    {
+      "latin": "frūstrā",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "in vain, without success",
+      "grammar": "adverb",
+      "evidence": [
+        "Phaedr. 1.26.10: <span lang=\"la\">quae cum lagōnae collum frūstrā lamberet</span>"
+      ],
+      "comment": "With a verb of trying it says that the attempt failed: <span lang=\"la\">frūstrā cōnātus est</span>. As a cry, “missed!” (see miss)."
+    },
+    {
+      "latin": "nihil prōficere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "get nowhere, achieve nothing",
+      "evidence": [
+        "Caes. BG 7.20 (Lewis &amp; Short): <span lang=\"la\">sī nihil in oppugnātiōne oppidī prōfēcisset</span>"
+      ]
+    },
+    {
+      "latin": "ad irritum cadere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "come to nothing",
+      "evidence": [
+        "Liv. 2.6 (Lewis &amp; Short): <span lang=\"la\">spēs ad irritum cadēns</span>"
+      ]
+    },
+    {
+      "latin": "repulsam ferre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "be turned down (for a post, in an election)",
+      "evidence": [
+        "Cic. de Or. 2.280 (Lewis &amp; Short)"
+      ],
+      "comment": "See apply, for a post."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Dēceptus sum, at nōn dēfatīgātus. … Hāc nōn successit, aliā aggrediēmur viā.",
+      "english": "I’ve been foiled, but I’m not worn out… That way didn’t work; we’ll go at it another way.",
+      "source": "Ter. And. 669–670"
+    },
+    {
+      "latin": "gestit enim nummum in loculōs dēmittere, post hoc sēcūrus cadat an rēctō stet fābula tālō",
+      "english": "For he is eager to drop the money into his purse; after that he does not care whether his play falls flat or stands firm on its feet.",
+      "source": "Hor. Epist. 2.1.175–176"
+    },
+    {
+      "latin": "quae cum lagōnae collum frūstrā lamberet, peregrīnam sīc locūtam volucrem accēpimus: sua quisque exempla dēbet aequō animō patī",
+      "english": "As the fox licked the neck of the jar in vain, the stranger bird, so we are told, said: “Everyone should bear patiently being treated as he treats others.”",
+      "source": "Phaedr. 1.26.10–12"
+    }
+  ],
+  "related": [
+    "fail-give-out",
+    "miss",
+    "try",
+    "apply-for"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/succedo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: succedo</a> · <a href=\"https://logeion.uchicago.edu/cado\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cado</a> · <a href=\"https://logeion.uchicago.edu/frustra\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: frustra</a> · <a href=\"https://logeion.uchicago.edu/proficio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: proficio</a> · <a href=\"https://logeion.uchicago.edu/irritus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: irritus</a> · <a href=\"https://logeion.uchicago.edu/repulsa\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: repulsa</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 312, checked against the searchable text of the book (9 November 2026).",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. fail.",
+    "Quotations from the Latinitas loci collections (loci-terentius, loci-phaedrus), checked against the editions named there.",
+    "Terence’s <em>Andria</em>, Horace’s <em>Epistles</em> and Phaedrus checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

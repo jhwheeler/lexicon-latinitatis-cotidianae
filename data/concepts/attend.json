@@ -1,0 +1,111 @@
+{
+  "id": "attend",
+  "english": "attend",
+  "sense": "be present at",
+  "pos": "verb",
+  "also": [
+    "be present at",
+    "go to a meeting",
+    "attend a lecture",
+    "attendance"
+  ],
+  "domain": "verba",
+  "also_under": [
+    "schola"
+  ],
+  "terms": [
+    {
+      "latin": "intersum, interesse, interfuī",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "be present at, attend",
+      "grammar": "verb, irregular (sum); with the dative",
+      "evidence": [
+        "Tac. Dial. 34.2–3: <span lang=\"la\">hujus omnibus dictiōnibus interesse</span>",
+        "Traupman 127: <span lang=\"la\">saltātiōnī intererō</span>",
+        "M-O s.v. attend, take (a class, course): <span lang=\"la\">lēctiōnibus interesse</span>"
+      ],
+      "comment": "Lewis &amp; Short: “to be present at, take part in, attend”. For taking part, see be involved."
+    },
+    {
+      "latin": "adsum, adesse, adfuī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "be there, be present (at)",
+      "grammar": "verb, irregular (sum); with the dative",
+      "evidence": [
+        "Ov. Tr. 4.10.11: <span lang=\"la\">Lūcifer ambōrum nātālibus adfuit īdem</span>",
+        "Traupman 295: <span lang=\"la\">concentuī adesse</span>"
+      ]
+    },
+    {
+      "latin": "frequentō, frequentāre, frequentāvī, frequentātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "attend regularly (a school, lectures)",
+      "grammar": "verb, first conjugation, transitive",
+      "evidence": [
+        "Traupman 31, 76, 374: <span lang=\"la\">scholam frequentāre</span>",
+        "M-O s.v. attend, go to (a university, school)"
+      ],
+      "comment": "Classically to visit a place or a person often (Lewis &amp; Short: “to visit or resort to frequently, to frequent”); see go to school."
+    },
+    {
+      "latin": "frequentia, frequentiae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "attendance, a full house",
+      "evidence": [
+        "Cic. de Or. 1.200 (Lewis &amp; Short): <span lang=\"la\">maximā … frequentiā cīvium</span>"
+      ],
+      "comment": "Lewis &amp; Short: “a numerous attendance … (class.; a favorite expression of Cicero)”."
+    },
+    {
+      "latin": "attendō, attendere, attendī, attentum",
+      "status": "avoid",
+      "period": "classical",
+      "gloss": "pay attention",
+      "grammar": "verb, third conjugation",
+      "evidence": [
+        "Phaedr. 2.5.6: <span lang=\"la\">pretium est operae attendere</span>"
+      ],
+      "comment": "Latin <span lang=\"la\">attendō</span> is to pay attention (see pay attention!), never to be present at something."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "hunc sectārī, hunc prōsequī, hujus omnibus dictiōnibus interesse … adsuēscēbat",
+      "english": "He would get used to following him about, escorting him, being present at all his speeches.",
+      "source": "Tac. Dial. 34.2–3"
+    },
+    {
+      "latin": "Lūcifer ambōrum nātālibus adfuit īdem: ūna celebrāta est per duo lība diēs",
+      "english": "The same morning star was there at both our births: one day was kept with two birthday cakes.",
+      "source": "Ov. Tr. 4.10.11–12"
+    },
+    {
+      "latin": "Crās convīviō intereris?",
+      "english": "Will you be at the dinner tomorrow?",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "be-involved",
+    "go-to-school",
+    "pay-attention",
+    "concert"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/intersum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: intersum</a> · <a href=\"https://logeion.uchicago.edu/adsum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: adsum</a> · <a href=\"https://logeion.uchicago.edu/frequento\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: frequento</a> · <a href=\"https://logeion.uchicago.edu/frequentia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: frequentia</a> · <a href=\"https://logeion.uchicago.edu/attendo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: attendo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 31, 76, 127, 295, 374, checked against the searchable text of the book (9 November 2026).",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. attend, go to (a university, school); attend, take (a class, course).",
+    "Quotations from the Latinitas loci collections (loci-tacitus, loci-ovidius, loci-phaedrus), checked against the editions named there.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition.",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

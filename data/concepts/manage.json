@@ -1,0 +1,109 @@
+{
+  "id": "manage",
+  "english": "manage",
+  "sense": "run (a business, a household, money)",
+  "pos": "verb",
+  "also": [
+    "run a business",
+    "administer",
+    "manage money",
+    "manage a household"
+  ],
+  "domain": "labor",
+  "also_under": [
+    "pecunia"
+  ],
+  "terms": [
+    {
+      "latin": "administrō, administrāre, administrāvī, administrātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "manage, run, conduct",
+      "grammar": "verb, first conjugation, transitive",
+      "evidence": [
+        "Cic. Inv. 1.25 (Lewis &amp; Short): <span lang=\"la\">rem familiārem</span>",
+        "Cic. Fam. 13.11 (Lewis &amp; Short): <span lang=\"la\">negōtium alicujus</span>",
+        "Traupman 343"
+      ],
+      "comment": "Lewis &amp; Short: “to take charge of, to manage, guide, administer … (the most usual signif. of this word; very freq. in Cic. and the histt.)”. Traupman gives it for managing on a large scale."
+    },
+    {
+      "latin": "cūrō, cūrāre, cūrāvī, cūrātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "see to, take charge of",
+      "grammar": "verb, first conjugation, transitive",
+      "evidence": [
+        "Cic. Fam. 4.13.7 (Lewis &amp; Short): <span lang=\"la\">cūrāre omnia studiōsissimē ac dīligentissimē</span>",
+        "Traupman 343"
+      ],
+      "comment": "Traupman’s first word for “manage”; see care, look after."
+    },
+    {
+      "latin": "gerō, gerere, gessī, gestum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "conduct, carry on (business, affairs)",
+      "grammar": "verb, third conjugation, transitive",
+      "evidence": [
+        "Cic. Att. 13.3.1: <span lang=\"la\">sī ipse negōtium meum gererem</span>"
+      ]
+    },
+    {
+      "latin": "dispēnsō, dispēnsāre, dispēnsāvī, dispēnsātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "manage (household money and stores)",
+      "grammar": "verb, first conjugation, transitive",
+      "evidence": [
+        "Cic. Att. 11.1.1: <span lang=\"la\">quī eās dispēnsāvit</span>"
+      ],
+      "comment": "The word of the steward (<span lang=\"la\">dispēnsātor</span>) who keeps the household accounts."
+    },
+    {
+      "latin": "moderor, moderārī, moderātus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "direct, run (a bank, a firm)",
+      "grammar": "verb, first conjugation, deponent; with an accusative or the dative",
+      "evidence": [
+        "Traupman 164, 276, 343: <span lang=\"la\">argentāriam moderārī</span>"
+      ],
+      "comment": "Classically to guide or govern, to keep within bounds (Lewis &amp; Short); Traupman’s word for running a bank."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "quī sī ipse negōtium meum gererem, nihil gererem nisi cōnsiliō tuō",
+      "english": "For if I were managing my business myself, I would do nothing without your advice.",
+      "source": "Cic. Att. 13.3.1"
+    },
+    {
+      "latin": "ex quō nihil scīre potuī dē nostrīs domesticīs rēbus. dē quibus acerbissimē adflīctor quod quī eās dispēnsāvit neque adest istīc neque ubi terrārum sit sciō",
+      "english": "From it I could learn nothing about our household affairs; and they distress me bitterly, because the man who managed them is not there with you, and I do not know where in the world he is.",
+      "source": "Cic. Att. 11.1.1"
+    },
+    {
+      "latin": "Quis rem familiārem administrat? — Māter.",
+      "english": "Who manages the household money? — Mum.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "in-charge",
+    "manage-to",
+    "care-look-after"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/administro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: administro</a> · <a href=\"https://logeion.uchicago.edu/curo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: curo</a> · <a href=\"https://logeion.uchicago.edu/gero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gero</a> · <a href=\"https://logeion.uchicago.edu/dispenso\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dispenso</a> · <a href=\"https://logeion.uchicago.edu/moderor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: moderor</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 164, 276, 343, checked against the searchable text of the book (9 November 2026).",
+    "Cicero’s letters to Atticus checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition.",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

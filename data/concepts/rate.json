@@ -1,0 +1,85 @@
+{
+  "id": "rate",
+  "english": "rate",
+  "sense": "so much a day or a month: pay, interest, exchange",
+  "pos": "noun",
+  "also": [
+    "hourly rate",
+    "daily rate",
+    "rate of pay",
+    "interest rate",
+    "exchange rate",
+    "per day"
+  ],
+  "domain": "pecunia",
+  "terms": [
+    {
+      "latin": "in diem",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a day, per day",
+      "grammar": "phrase: in with the accusative",
+      "evidence": [
+        "Tac. Ann. 1.17: <span lang=\"la\">dēnīs in diem assibus</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Latin has no noun for a rate: it puts the price in the ablative and the unit after <span lang=\"la\">in</span>, <span lang=\"la\">dēnīs in diem assibus</span>, at ten asses a day; for every year, <span lang=\"la\">in singulōs annōs</span> (Cic. Att. 6.3.5)."
+    },
+    {
+      "latin": "mercēs, mercēdis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "pay, wages, a fee",
+      "evidence": [
+        "Sall. Cat. 37.7: <span lang=\"la\">manuum mercēde inopiam tolerāre</span> (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "centēsimae, centēsimārum f. pl.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "interest at one per cent a month, twelve a year",
+      "evidence": [
+        "Cic. Att. 6.3.5"
+      ],
+      "comment": "The standard Roman rate of interest; a third of it was <span lang=\"la\">triēns</span>, two thirds <span lang=\"la\">bēs</span> (Cic. Att. 4.15.7). See interest, on money lent."
+    },
+    {
+      "latin": "collybus, collybī m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the rate of exchange; the money-changer’s premium",
+      "evidence": [
+        "Cic. Verr. 2.3.181 (Lewis &amp; Short)",
+        "Cic. Att. 12.6.1 (Lewis &amp; Short)"
+      ],
+      "comment": "Greek κόλλυβος."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "dēnīs in diem assibus animam et corpus aestimārī",
+      "english": "(they complain) that body and soul are valued at ten asses a day",
+      "source": "Tac. Ann. 1.17"
+    },
+    {
+      "latin": "Scaptius centēsimīs, renovātō in singulōs annōs faenore, contentus nōn fuit",
+      "english": "Scaptius was not content with twelve per cent, with the interest added to the debt every year",
+      "source": "Cic. Att. 6.3.5"
+    }
+  ],
+  "related": [
+    "price",
+    "percent",
+    "interest-money",
+    "change-money"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/in\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: in</a> · <a href=\"https://logeion.uchicago.edu/merces\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: merces</a> · <a href=\"https://logeion.uchicago.edu/centesimus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: centesimus</a> · <a href=\"https://logeion.uchicago.edu/collybus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: collybus</a>",
+    "Cicero, Att. 6.3 checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

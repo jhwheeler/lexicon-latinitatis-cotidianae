@@ -1,0 +1,66 @@
+{
+  "id": "police",
+  "english": "police",
+  "pos": "noun",
+  "also": [
+    "the police",
+    "police force"
+  ],
+  "domain": "res-publica",
+  "also_under": [
+    "urbs"
+  ],
+  "terms": [
+    {
+      "latin": "vigilēs, vigilum m. pl.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "the police; classically the watch",
+      "evidence": [
+        "Traupman 191, 193",
+        "Suet. <em>Aug.</em> 30 (Lewis &amp; Short s.v. <span lang=\"la\">vigil</span>)"
+      ],
+      "comment": "Augustus’ seven cohorts of the watch, Rome’s night police and fire brigade (Lewis &amp; Short); Traupman’s word for the police. Their commander, the <span lang=\"la\">praefectus vigilum</span>, is his chief of police (p. 194)."
+    },
+    {
+      "latin": "pūblicae sēcūritātis custōdēs",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "guardians of public safety: police officers",
+      "evidence": [
+        "M-O s.v. policeman (Egger)",
+        "Levi–Bini p. 49: <span lang=\"la\">cūrātōrēs pūblicae disciplīnae</span> (or <span lang=\"la\">sēcūritātis</span>)"
+      ],
+      "comment": "Egger’s name for a police officer, in the plural."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Arcessīvistīne vigilēs? — Arcessīvī.",
+      "english": "Did you call the police? — I did.",
+      "source": "Traupman 193"
+    },
+    {
+      "latin": "vigilēs, quī custōdiēbant vīcīnam regiōnem, ratī ārdēre Trimalchiōnis domum, effrēgērunt jānuam subitō",
+      "english": "the watch, who were guarding the neighbourhood, thought Trimalchio’s house was on fire and suddenly broke the door down",
+      "source": "Petr. 78"
+    }
+  ],
+  "related": [
+    "police-officer",
+    "police-station",
+    "firefighter"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/vigil\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vigil</a> · <a href=\"https://logeion.uchicago.edu/publicus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: publicus</a> · <a href=\"https://logeion.uchicago.edu/securitas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: securitas</a> · <a href=\"https://logeion.uchicago.edu/custos\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: custos</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 191, 193, 194.",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. policeman.",
+    "Enrico Levi and Arturo Bini, <em>Il latino come lingua viva</em> (1937), p. 49, s.v. polizia.",
+    "Petronius checked against the Latin Library text (<a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">CLTK mirror</a>)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

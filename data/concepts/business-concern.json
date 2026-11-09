@@ -1,0 +1,80 @@
+{
+  "id": "business-concern",
+  "english": "business",
+  "sense": "what concerns someone",
+  "pos": "noun",
+  "also": [
+    "none of your business",
+    "mind your own business",
+    "it’s none of my business",
+    "that’s my business"
+  ],
+  "also_under": [
+    "verba"
+  ],
+  "domain": "sermo",
+  "terms": [
+    {
+      "latin": "nihil ad tē attinet",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "it’s none of your business",
+      "grammar": "phrase: attineō with ad",
+      "evidence": [
+        "Ter. Haut. 75–76",
+        "Plaut. Trin. 4.2.136: <span lang=\"la\">quid id ad mē attinet?</span> (Lewis &amp; Short)",
+        "Traupman 94: <span lang=\"la\">nihil ad mē attinet</span>"
+      ],
+      "comment": "<span lang=\"la\">Attinet ad mē</span>, it concerns me, is the usual classical sense of the verb (Lewis &amp; Short). What business is it of yours? <span lang=\"la\">Quid id ad tē attinet?</span> (Traupman 94)."
+    },
+    {
+      "latin": "ipse vīderit",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "that’s his business: let him see to it",
+      "grammar": "phrase: perfect subjunctive of videō",
+      "evidence": [
+        "Cic. Att. 12.21.1",
+        "M-O s.v. business: that’s his business"
+      ]
+    },
+    {
+      "latin": "aliēna negōtia cūrāre",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "to mind other people’s business",
+      "grammar": "phrase",
+      "evidence": [
+        "Traupman 104"
+      ],
+      "comment": "After Terence’s <span lang=\"la\">aliēna ut cūrēs</span>. Minding one’s own is <span lang=\"la\">sua negōtia cūrāre</span> (Traupman 104); I always mind my own business, <span lang=\"la\">meum negōtium agō semper</span> (Traupman 94)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "tantumne est ab rē tuā ōtī tibi, aliēna ut cūrēs, eaque nihil quae ad tē attinent?",
+      "english": "have you so much time to spare from your own affairs that you mind other people’s, things that are none of your business?",
+      "source": "Ter. Haut. 75–76"
+    },
+    {
+      "latin": "sed ipse vīderit",
+      "english": "but that’s his business",
+      "source": "Cic. Att. 12.21.1"
+    }
+  ],
+  "related": [
+    "business",
+    "interest-advantage"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/attineo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: attineo</a> · <a href=\"https://logeion.uchicago.edu/video\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: video</a> · <a href=\"https://logeion.uchicago.edu/alienus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: alienus</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. business: that’s his business.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 94, 104, checked against the searchable text of the book (9 November 2026).",
+    "Terence checked against Parry’s edition in the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>, the text the loci collection uses (9 November 2026). Cicero, Att. 12.21 checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

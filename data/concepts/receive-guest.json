@@ -1,0 +1,82 @@
+{
+  "id": "receive-guest",
+  "english": "receive",
+  "sense": "a guest",
+  "pos": "verb",
+  "also": [
+    "welcome",
+    "entertain",
+    "have guests",
+    "put someone up",
+    "take in"
+  ],
+  "also_under": [
+    "verba"
+  ],
+  "domain": "sermo",
+  "terms": [
+    {
+      "latin": "accipiō, accipere, accēpī, acceptum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "receive, entertain (a guest)",
+      "evidence": [
+        "Cic. Fam. 9.26.3: <span lang=\"la\">nōn multī cibī hospitem accipiēs, multī jocī</span>",
+        "Hor. S. 2.6.80–81: <span lang=\"la\">rūsticus urbānum mūrem mūs paupere fertur accēpisse cavō</span>"
+      ],
+      "comment": "Of a host and his guests: to receive and treat them."
+    },
+    {
+      "latin": "excipiō, excipere, excēpī, exceptum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "welcome (someone arriving)",
+      "evidence": [
+        "Liv. 3.26.11: <span lang=\"la\">trēs obviam ēgressī fīliī excipiunt</span>"
+      ],
+      "comment": "Of coming out to meet someone and taking them in."
+    },
+    {
+      "latin": "recipiō, recipere, recēpī, receptum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "take in, give shelter",
+      "evidence": [
+        "Hor. S. 1.5.80: <span lang=\"la\">vīlla recēpisset</span>"
+      ],
+      "comment": "Of taking someone in under one’s roof."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "quā rē nihil est quod adventum nostrum extimēscās; nōn multī cibī hospitem accipiēs, multī jocī.",
+      "english": "so there is no reason to dread my coming: you will be receiving a guest of little food and many jokes.",
+      "source": "Cic. Fam. 9.26.3"
+    },
+    {
+      "latin": "ōlim rūsticus urbānum mūrem mūs paupere fertur accēpisse cavō, veterem vetus hospes amīcum",
+      "english": "once upon a time, they say, a country mouse welcomed a town mouse to his poor hole, an old host his old friend",
+      "source": "Hor. S. 2.6.79–81"
+    },
+    {
+      "latin": "trānsvectumque trēs obviam ēgressī fīliī excipiunt",
+      "english": "when he had crossed, his three sons came out to meet him and took him in",
+      "source": "Liv. 3.26.11"
+    }
+  ],
+  "related": [
+    "guest",
+    "guest-room",
+    "receive"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/accipio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: accipio</a> · <a href=\"https://logeion.uchicago.edu/excipio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: excipio</a> · <a href=\"https://logeion.uchicago.edu/recipio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: recipio</a>",
+    "Cicero’s letters and Horace’s <em>Satires</em> checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-livius), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

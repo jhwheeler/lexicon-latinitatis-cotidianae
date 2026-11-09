@@ -1,0 +1,103 @@
+{
+  "id": "different",
+  "english": "different",
+  "pos": "adjective",
+  "also": [
+    "differently",
+    "unlike",
+    "not the same",
+    "different from"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "alius, alia, aliud",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "other, different",
+      "grammar": "adjective and pronoun; “different from” is alius ac (atque)",
+      "evidence": [
+        "Ter. Ph. 684: <span lang=\"la\">aliud mihi respondēs ac rogō?</span>",
+        "Sall. Cat. 6.2: <span lang=\"la\">alius aliō mōre vīventēs</span>",
+        "Ter. And. 189: <span lang=\"la\">nunc hic diēs aliam vītam affert, aliōs mōrēs postulat</span>"
+      ],
+      "comment": "Latin says “different” with <span lang=\"la\">alius</span>: <span lang=\"la\">alius ac</span> (<span lang=\"la\">atque</span>) is “different from”; <span lang=\"la\">aliud est … aliud …</span> is “… is one thing, … another”; and a doubled <span lang=\"la\">alius</span> gives “each a different …”: <span lang=\"la\">alius aliō mōre</span>, each in a different way."
+    },
+    {
+      "latin": "aliter",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "differently, otherwise",
+      "grammar": "adverb; “differently from” is aliter ac (atque)",
+      "evidence": [
+        "Verg. A. 2.428: <span lang=\"la\">dīs aliter vīsum</span>",
+        "Cic. Fam. 3.7.5: <span lang=\"la\">tū sī aliter exīstimās</span>, “if you think differently”"
+      ]
+    },
+    {
+      "latin": "dīversus, dīversa, dīversum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "different, opposite; going different ways",
+      "evidence": [
+        "Sen. Ep. 123.14",
+        "Tac. Ann. 6.28: <span lang=\"la\">ā cēterīs avibus dīversum</span>"
+      ],
+      "comment": "Stronger than <span lang=\"la\">alius</span>: turned the other way, contrary."
+    },
+    {
+      "latin": "dissimilis, dissimile",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "unlike, dissimilar",
+      "grammar": "adjective, with a genitive or dative",
+      "evidence": [
+        "Sall. Cat. 6.2: <span lang=\"la\">dissimilī linguā</span>",
+        "Cic.; Hor. (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "differō, differre, distulī, dīlātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "differ, be different",
+      "grammar": "verb, irregular; intransitive in this sense, with ab",
+      "evidence": [
+        "Cic. Caecin. 39: <span lang=\"la\">quid hoc ab illō differt?</span>"
+      ],
+      "comment": "Transitive, the same verb means “put off”, “postpone”."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Eho, verberō, aliud mihi respondēs ac rogō?",
+      "english": "Hey, you rascal, you’re answering something different from what I asked?",
+      "source": "Ter. Ph. 684"
+    },
+    {
+      "latin": "aliud est properāre, aliud festīnāre",
+      "english": "hurrying is one thing, rushing another",
+      "source": "Cato in Gell. 16.14.2"
+    },
+    {
+      "latin": "disparī genere, dissimilī linguā, alius aliō mōre vīventēs",
+      "english": "of different stock and different speech, each living in a different way",
+      "source": "Sall. Cat. 6.2"
+    },
+    {
+      "latin": "nōn vidēs quam dīversus sit dēscendentium habitus et ēscendentium?",
+      "english": "don’t you see how differently people carry themselves going down and going up?",
+      "source": "Sen. Ep. 123.14"
+    }
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/alius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: alius</a> · <a href=\"https://logeion.uchicago.edu/aliter\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aliter</a> · <a href=\"https://logeion.uchicago.edu/diverto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: diverto (dīversus)</a> · <a href=\"https://logeion.uchicago.edu/dissimilis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dissimilis</a> · <a href=\"https://logeion.uchicago.edu/differo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: differo</a>",
+    "Quotations from the Latinitas loci collections (loci-gellius, loci-seneca-epistulae, loci-tacitus, loci-vergilius), checked against the editions named there.",
+    "Terence (And. 189, Ph. 684), Sallust (Cat. 6.2), Cicero (Fam. 3.7.5, Caecin. 39) and Gellius (16.14.2, Cato’s words from his speech <span lang=\"la\">Dē suīs virtūtibus</span>) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "id": "else",
+  "english": "else",
+  "pos": "adverb",
+  "also": [
+    "anything else",
+    "something else",
+    "someone else",
+    "what else",
+    "everyone else",
+    "or else",
+    "somewhere else",
+    "elsewhere"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "alius, alia, aliud",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "else, other",
+      "grammar": "adjective and pronoun: quid aliud? what else?; nēmō alius, nobody else",
+      "evidence": [
+        "Ter. Eun. 191: <span lang=\"la\">numquid vīs aliud?</span>",
+        "Tac. Dial. 29.3: <span lang=\"la\">quī domī quicquam aliud loquātur</span>",
+        "Traupman 309"
+      ],
+      "comment": "Latin has no separate word: “someone else” is <span lang=\"la\">alius</span>, “something else” <span lang=\"la\">aliud</span>. <span lang=\"la\">Numquid vīs aliud?</span>, “Anything else?”, is how one takes leave in comedy (Ter. Eun. 191, Ph. 151)."
+    },
+    {
+      "latin": "praetereā",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "besides, else (in addition)",
+      "grammar": "adverb: quid praetereā? what else?",
+      "evidence": [
+        "Cic. de Or. 1.60: <span lang=\"la\">nihilne vōbīs in mentem venit, quod praetereā Crassō requīrātis?</span> (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "cēterī, cēterae, cētera",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "everyone else, the rest, the others",
+      "grammar": "adjective, mostly plural"
+    },
+    {
+      "latin": "alibī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "elsewhere, somewhere else",
+      "grammar": "adverb; “to somewhere else” is aliō, “from somewhere else” aliunde",
+      "evidence": [
+        "Tac. Germ. 19.5: <span lang=\"la\">quam alibī bonae lēgēs</span>"
+      ]
+    },
+    {
+      "latin": "sīn aliter",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "or else, but if not, otherwise",
+      "evidence": [
+        "Cic. Att. 1.2.1: <span lang=\"la\">sīn aliter acciderit, hūmāniter ferēmus</span>",
+        "Ter. Ph. 116: <span lang=\"la\">sīn aliter, negat</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "In hoc biduum, Thāis, valē. — Mī Phaedria, et tū; numquid vīs aliud?",
+      "english": "Goodbye for these two days, Thais. — Phaedria dear, you too; anything else?",
+      "source": "Ter. Eun. 190–191"
+    },
+    {
+      "latin": "quotum quemque inveniēs quī domī quicquam aliud loquātur?",
+      "english": "how many will you find who talk about anything else at home?",
+      "source": "Tac. Dial. 29.3"
+    },
+    {
+      "latin": "sīn aliter acciderit, hūmāniter ferēmus",
+      "english": "if it turns out otherwise, we shall take it like sensible people",
+      "source": "Cic. Att. 1.2.1"
+    }
+  ],
+  "related": [
+    "different",
+    "further-additional"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/alius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: alius</a> · <a href=\"https://logeion.uchicago.edu/praeterea\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praeterea</a> · <a href=\"https://logeion.uchicago.edu/ceterus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ceterus</a> · <a href=\"https://logeion.uchicago.edu/alibi\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: alibi</a> · <a href=\"https://logeion.uchicago.edu/sin\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sin</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 309.",
+    "Quotation from the Latinitas loci collection (loci-tacitus), checked against the editions named there; Terence (Eun. 190–191, Ph. 116) and Cicero (Att. 1.2.1) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

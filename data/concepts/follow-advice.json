@@ -1,0 +1,81 @@
+{
+  "id": "follow-advice",
+  "english": "follow",
+  "sense": "advice, a rule, an example",
+  "pos": "verb",
+  "also": [
+    "obey",
+    "comply with",
+    "go by",
+    "take advice"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "sequor, sequī, secūtus sum",
+      "status": "recommended",
+      "period": "classical",
+      "grammar": "verb, third conjugation, deponent",
+      "gloss": "follow (a guide, advice, an example)",
+      "evidence": [
+        "Cic. Sen. 5: <span lang=\"la\">nātūram optimam ducem tamquam deum sequimur</span>",
+        "Cic. Fam. 4.3.2 (Lewis &amp; Short: <span lang=\"la\">auctōritātem et cōnsilium alicujus</span>)"
+      ],
+      "comment": "To take someone or something as one’s guide: <span lang=\"la\">cōnsilium, auctōritātem, nātūram sequī</span>."
+    },
+    {
+      "latin": "pāreō, pārēre, pāruī, pāritum",
+      "status": "alternative",
+      "period": "classical",
+      "grammar": "verb, second conjugation, with the dative",
+      "gloss": "obey",
+      "evidence": [
+        "Cic. Off. 2.40: <span lang=\"la\">lēgibus</span> (Lewis &amp; Short)",
+        "Cic. Sen. 5: <span lang=\"la\">eīque pārēmus</span>"
+      ],
+      "comment": "Of orders, rules and laws."
+    },
+    {
+      "latin": "obtemperō, obtemperāre, obtemperāvī, obtemperātum",
+      "status": "alternative",
+      "period": "classical",
+      "grammar": "verb, first conjugation, with the dative",
+      "gloss": "comply with, go by",
+      "evidence": [
+        "Cic. Fam. 2.7.2: <span lang=\"la\">tē audī, tibi obtemperā</span>"
+      ],
+      "comment": "Of doing what someone advises or asks."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "in hōc sumus sapientēs, quod nātūram optimam ducem tamquam deum sequimur eīque pārēmus",
+      "english": "this is where we are wise: we follow nature, the best of guides, as a god, and obey her",
+      "source": "Cic. Sen. 5"
+    },
+    {
+      "latin": "tē audī, tibi obtemperā",
+      "english": "listen to yourself, follow your own advice",
+      "source": "Cic. Fam. 2.7.2"
+    },
+    {
+      "latin": "videō meliōra probōque, dēteriōra sequor",
+      "english": "I see the better course and approve of it; I follow the worse",
+      "source": "Ov. Met. 7.20–21"
+    }
+  ],
+  "related": [
+    "follow",
+    "obedient"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/sequor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sequor</a> · <a href=\"https://logeion.uchicago.edu/pareo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pareo</a> · <a href=\"https://logeion.uchicago.edu/obtempero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: obtempero</a>",
+    "Cicero’s letters and <em>De senectute</em> checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-ovidius), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

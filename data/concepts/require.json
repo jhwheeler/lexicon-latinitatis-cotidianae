@@ -1,0 +1,89 @@
+{
+  "id": "require",
+  "english": "require",
+  "pos": "verb",
+  "also": [
+    "need",
+    "call for",
+    "be needed",
+    "requirement",
+    "demand"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "requīrō, requīrere, requīsīvī, requīsītum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "need, require; miss",
+      "evidence": [
+        "Caes. BG 6.34: <span lang=\"la\">magnam rēs dīligentiam requīrēbat</span> (Lewis &amp; Short)",
+        "Cic. Imp. Pomp. 64: <span lang=\"la\">virtūtēs animī magnae et multae requīruntur</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Of what a task or a situation calls for; in the passive, “to be required”."
+    },
+    {
+      "latin": "opus est",
+      "status": "recommended",
+      "period": "classical",
+      "grammar": "impersonal: the dative of the person, the thing needed in the ablative or the nominative",
+      "gloss": "there is need of; it is needed",
+      "evidence": [
+        "Cato Agr. 14: <span lang=\"la\">quae opus sunt</span>",
+        "Ter. Ad. 996: <span lang=\"la\">quid factō opus est</span>"
+      ],
+      "comment": "The everyday way to say “need”: <span lang=\"la\">mihi opus est librō</span> or <span lang=\"la\">liber mihi opus est</span>, I need a book; with a participle in the ablative, <span lang=\"la\">quid factō opus est?</span>, what needs doing? (Lewis &amp; Short, s.v. <span lang=\"la\">opus</span>)."
+    },
+    {
+      "latin": "postulō, postulāre, postulāvī, postulātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "call for, demand",
+      "evidence": [
+        "Ter. And. 189: <span lang=\"la\">aliōs mōrēs postulat</span>"
+      ],
+      "comment": "Of a person or a situation that asks for something."
+    },
+    {
+      "latin": "egeō, egēre, eguī",
+      "status": "alternative",
+      "period": "classical",
+      "grammar": "verb, second conjugation, with the ablative or the genitive",
+      "gloss": "need, be in want of",
+      "evidence": [
+        "Cic. Lael. 17: <span lang=\"la\">egetque exercitātiōne nōn parvā</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Nunc hic diēs aliam vītam affert, aliōs mōrēs postulat.",
+      "english": "Now this day brings a different life with it and calls for different ways.",
+      "source": "Ter. And. 189"
+    },
+    {
+      "latin": "magnum opus est egetque exercitātiōne nōn parvā",
+      "english": "it is a great task and needs no small practice",
+      "source": "Cic. Lael. 17"
+    },
+    {
+      "latin": "Plūs scīs quid factō opus est.",
+      "english": "You know better what needs to be done.",
+      "source": "Ter. Ad. 996"
+    }
+  ],
+  "related": [
+    "involve",
+    "practice"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/requiro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: requiro</a> · <a href=\"https://logeion.uchicago.edu/opus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: opus</a> · <a href=\"https://logeion.uchicago.edu/postulo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: postulo</a> · <a href=\"https://logeion.uchicago.edu/egeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: egeo</a>",
+    "Terence’s <em>Andria</em> and <em>Adelphoe</em> (Parry numbers the line 997) and Cicero’s <em>Laelius</em> checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-cato), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

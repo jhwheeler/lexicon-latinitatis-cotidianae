@@ -3,7 +3,10 @@
   "english": "price",
   "pos": "noun",
   "also": [
-    "ask the price"
+    "ask the price",
+    "charge",
+    "fee",
+    "what do you charge?"
   ],
   "also_under": [
     "pecunia"
@@ -14,6 +17,28 @@
       "latin": "pretium, pretiī n.",
       "status": "recommended",
       "period": "classical"
+    },
+    {
+      "latin": "mercēs, mercēdis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "fee, charge (for work or a service); wages, rent",
+      "evidence": [
+        "Cic. de Or. 1.126: <span lang=\"la\">quī cum mercēde docēret</span>",
+        "Phaedr. 1.8.12: <span lang=\"la\">et mercēdem postulēs</span>"
+      ],
+      "comment": "What is paid for work or for the use of something, as <span lang=\"la\">pretium</span> is what goods cost."
+    },
+    {
+      "latin": "indicō, indicāre, indicāvī, indicātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "name a price, ask so much: charge",
+      "evidence": [
+        "Plaut. Pers. 586: <span lang=\"la\">Indicā, fac pretium.</span>",
+        "M-O s.v. sale: ask (a certain price) for something, charge"
+      ],
+      "comment": "With the genitive of price: <span lang=\"la\">quantī indicās?</span>, how much are you asking? (Vives, cited by Morgan–Owens). Not to be confused with <span lang=\"la\">indīcō, indīcere</span>, to proclaim."
     }
   ],
   "phrases": [
@@ -21,6 +46,11 @@
       "latin": "mercis pretium inquīrere",
       "english": "ask the price",
       "source": "Traupman 130–131"
+    },
+    {
+      "latin": "Indicā, fac pretium. — Tua mers est, tua indicātiōst.",
+      "english": "Name your price. — They’re your goods; the pricing is yours.",
+      "source": "Plaut. Pers. 586"
     }
   ],
   "related": [
@@ -32,7 +62,10 @@
   ],
   "sources": [
     "<a href=\"https://logeion.org/pretium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pretium</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): pp. 130–131."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): pp. 130–131.",
+    "<a href=\"https://logeion.uchicago.edu/merces\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: merces</a> · <a href=\"https://logeion.uchicago.edu/indico\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: indico</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. sale.",
+    "Plautus’ <em>Persa</em> and Cicero’s <em>De oratore</em> checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026); Phaedrus from the Latinitas loci collection (loci-phaedrus)."
   ],
   "review": {
     "status": "draft",

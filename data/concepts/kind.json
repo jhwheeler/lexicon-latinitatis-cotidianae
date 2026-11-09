@@ -3,7 +3,12 @@
   "english": "kind",
   "pos": "noun",
   "also": [
-    "variety"
+    "variety",
+    "sort",
+    "type",
+    "what kind of",
+    "what sort of",
+    "that sort of thing"
   ],
   "also_under": [
     "verba"
@@ -14,7 +19,32 @@
       "latin": "genus, generis n.",
       "status": "recommended",
       "period": "classical",
-      "gloss": "kind or variety"
+      "gloss": "kind or variety",
+      "evidence": [
+        "Cic. Amic. 71: <span lang=\"la\">odiōsum sānē genus hominum</span>"
+      ]
+    },
+    {
+      "latin": "quālis, quāle",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "what kind of? what sort of?; of the kind that",
+      "grammar": "adjective, interrogative and relative",
+      "evidence": [
+        "Mart. 12.92.4: <span lang=\"la\">sī fīās tū leō, quālis eris?</span>",
+        "Traupman 406: what kind of, what sort of, <span lang=\"la\">quālis</span>"
+      ]
+    },
+    {
+      "latin": "ejus modī (hujus modī)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "of that (this) kind, that sort of",
+      "grammar": "genitive of quality, after its noun",
+      "evidence": [
+        "Cic. Fin. 5.48: <span lang=\"la\">pompā, lūdīs atque ejus modī spectāculīs</span>"
+      ],
+      "comment": "Also written as one word, <span lang=\"la\">ejusmodī, hujusmodī</span>."
     }
   ],
   "phrases": [
@@ -22,14 +52,27 @@
       "latin": "Quod genus gelātī vīs?",
       "english": "What kind of ice cream do you want?",
       "source": "composed"
+    },
+    {
+      "latin": "dīc mihi, sī fīās tū leō, quālis eris?",
+      "english": "tell me, if you turned into a lion, what kind of lion would you be?",
+      "source": "Mart. 12.92.4"
+    },
+    {
+      "latin": "odiōsum sānē genus hominum officia exprobrantium",
+      "english": "a tiresome sort indeed, people who throw their favours in your face",
+      "source": "Cic. Amic. 71"
     }
   ],
   "related": [
     "ice-cream",
-    "flavour"
+    "flavour",
+    "sort-of"
   ],
   "sources": [
-    "A plain classical word; the grouped card cited no source for it.",
+    "<a href=\"https://logeion.uchicago.edu/genus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: genus</a> · <a href=\"https://logeion.uchicago.edu/qualis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: qualis</a> · <a href=\"https://logeion.uchicago.edu/modus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: modus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 406.",
+    "Quotations from the Latinitas loci collections (loci-martialis, loci-cicero-philosophica), checked against the editions named there.",
     "The example sentence marked “composed” is ours."
   ],
   "review": {

@@ -1,0 +1,91 @@
+{
+  "id": "less",
+  "english": "less",
+  "pos": [
+    "adverb",
+    "adjective"
+  ],
+  "also": [
+    "fewer",
+    "less than",
+    "more or less"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "minus",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "less",
+      "grammar": "adverb; as a noun with a genitive, “less of”: minus pecūniae",
+      "evidence": [
+        "Ov. Rem. 94: <span lang=\"la\">crās minus aptus erit</span>",
+        "Liv. praef. 12: <span lang=\"la\">quantō rērum minus, tantō minus cupiditātis erat</span>",
+        "Cic. Div. 1.68: <span lang=\"la\">minus XXX diēbus</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Before a number it often stands without <span lang=\"la\">quam</span>: <span lang=\"la\">minus XXX diēbus</span>, in less than thirty days. “The less …, the less …” is <span lang=\"la\">quantō minus …, tantō minus …</span>."
+    },
+    {
+      "latin": "minor, minus",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "smaller, less; younger",
+      "grammar": "adjective, comparative of parvus",
+      "evidence": [
+        "Hor. Ep. 1.10.42–43: <span lang=\"la\">sī pede major erit, subvertet, sī minor, ūret</span>"
+      ]
+    },
+    {
+      "latin": "pauciōrēs, pauciōra",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "fewer",
+      "grammar": "adjective, comparative of paucī",
+      "evidence": [
+        "Sall. Jug. 49.2: <span lang=\"la\">nē pauciōrēs cum plūribus manum cōnsererent</span> (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "plūs minus",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "more or less, about (with numbers)",
+      "evidence": [
+        "Hirt. BG 8.20; Mart. 9.100 (M-O)",
+        "M-O s.v. back and forth: more or less"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "quī nōn est hodiē, crās minus aptus erit",
+      "english": "whoever is not ready today will be less so tomorrow",
+      "source": "Ov. Rem. 94"
+    },
+    {
+      "latin": "adeō quantō rērum minus, tantō minus cupiditātis erat",
+      "english": "so true is it that the less they had, the less they wanted",
+      "source": "Liv. praef. 12"
+    },
+    {
+      "latin": "Terentia minus bellē habuit, sed certum sciō jam convaluisse eam",
+      "english": "Terentia has been less well, but I know for certain that she is better now",
+      "source": "Dolabella in Cic. Fam. 9.9.1"
+    }
+  ],
+  "related": [
+    "more",
+    "least",
+    "a-little"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/parvus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: parvus (minor, minus)</a> · <a href=\"https://logeion.uchicago.edu/paucus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: paucus</a> · <a href=\"https://logeion.uchicago.edu/multus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: multus (plus)</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. back and forth: more or less.",
+    "Quotations from the Latinitas loci collections (loci-ovidius, loci-livius, loci-horatius, loci-cicero-epistulae), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

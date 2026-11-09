@@ -1,0 +1,102 @@
+{
+  "id": "actually",
+  "english": "actually",
+  "pos": "adverb",
+  "also": [
+    "in fact",
+    "in reality",
+    "really",
+    "as a matter of fact"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "rē vērā (rēvērā)",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "actually, in fact, in reality",
+      "grammar": "adverbial ablative",
+      "evidence": [
+        "Cic. Off. 3.75: <span lang=\"la\">quī rē vērā nōn esset hērēs</span>",
+        "Cic. Quinct. 56; Fam. 3.5.1 (Lewis &amp; Short)",
+        "M-O s.v. really: <span lang=\"la\">rē vērā, rēapse</span>"
+      ],
+      "comment": "The fact set against words or appearances. <span lang=\"la\">Rē</span> alone does the same against <span lang=\"la\">verbō</span>: “in word … in fact”."
+    },
+    {
+      "latin": "immō",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "actually (correcting what was said): no, rather; on the contrary",
+      "grammar": "adverb, opening the correction",
+      "evidence": [
+        "Sen. Ep. 47.1: <span lang=\"la\">‘servī sunt.’ immō hominēs.</span>",
+        "Cic. Off. 3.90: <span lang=\"la\">Immō vērō obsecrābit patrem</span>",
+        "de Vaan 300, s.v. <span lang=\"la\">immō</span>"
+      ],
+      "comment": "The “actually” of a correction. Never an answer on its own, unlike <span lang=\"la\">minimē</span>: it always brings the corrected statement (Lewis &amp; Short)."
+    },
+    {
+      "latin": "rēapse",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "in fact, in reality",
+      "grammar": "adverb",
+      "evidence": [
+        "Cic. Rep. 1.2: <span lang=\"la\">rēapse, nōn ōrātiōne</span> (Lewis &amp; Short)",
+        "Plaut. Truc. 4.3.41 (Lewis &amp; Short)"
+      ],
+      "comment": "An old word, not found after Cicero (Lewis &amp; Short)."
+    },
+    {
+      "latin": "rē ipsā",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "in fact, in the event",
+      "grammar": "adverbial ablative",
+      "evidence": [
+        "Cic. Rosc. Am. 123: <span lang=\"la\">tametsī verbō nōn audeat, tamen rē ipsā</span> (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "āctuāliter",
+      "status": "avoid",
+      "period": "late",
+      "gloss": "actively",
+      "evidence": [
+        "Myth. Vat. 3 (Lewis &amp; Short, s.v. <span lang=\"la\">actualis</span>)"
+      ],
+      "comment": "Late Latin for “actively”, from <span lang=\"la\">āctuālis</span>, “active, practical” (Macr.). It never means “in fact”."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "et quidem multō parcius scrīpsī quam rē vērā furere eōs invēnī",
+      "english": "and indeed I wrote much more mildly than the frenzy I actually found them in",
+      "source": "Lentulus in Cic. Fam. 12.14.3"
+    },
+    {
+      "latin": "‘servī sunt.’ immō hominēs. ‘servī sunt.’ immō contubernālēs.",
+      "english": "“They’re slaves.” No, actually, they’re people. “They’re slaves.” No, actually, they share our roof.",
+      "source": "Sen. Ep. 47.1"
+    },
+    {
+      "latin": "silēbitne fīlius? Immō vērō obsecrābit patrem, nē id faciat",
+      "english": "will the son say nothing? Actually, no: he will beg his father not to do it",
+      "source": "Cic. Off. 3.90"
+    }
+  ],
+  "related": [
+    "truly"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/res\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: res (rē vērā, rē ipsā)</a> · <a href=\"https://logeion.uchicago.edu/immo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: immo</a> · <a href=\"https://logeion.uchicago.edu/reapse\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: reapse</a> · <a href=\"https://logeion.uchicago.edu/actualis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: actualis</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. really. Michiel de Vaan, <em>Etymological Dictionary of Latin and the other Italic Languages</em> (2008), p. 300.",
+    "Quotation from the Latinitas loci collection (loci-seneca-epistulae), checked against the editions named there; Cicero (Off. 3.75, 3.90; Fam. 12.14.3) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

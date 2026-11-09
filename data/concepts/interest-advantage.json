@@ -1,0 +1,68 @@
+{
+  "id": "interest-advantage",
+  "english": "interest",
+  "sense": "what is good for someone",
+  "pos": "noun",
+  "also": [
+    "in your interest",
+    "it matters",
+    "it makes no difference",
+    "interests"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "interest",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "it is in the interest of, it matters to",
+      "grammar": "verb: impersonal, from intersum; with meā, tuā or a genitive",
+      "evidence": [
+        "Cic. Fam. 16.4.4: <span lang=\"la\">tuā et meā maximē interest tē valēre</span>",
+        "Cic. Fam. 2.4.1",
+        "Traupman 101"
+      ],
+      "comment": "With the genitive of the person, or <span lang=\"la\">meā, tuā, nostrā</span>, and an infinitive or a clause: <span lang=\"la\">illud meā magnī interest, tē ut videam</span> (Cic. Att. 11.22.2, Lewis &amp; Short), it matters a lot to me to see you. How much it matters goes in the genitive: <span lang=\"la\">magnī, permagnī, tantī</span>."
+    },
+    {
+      "latin": "rēfert",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "it matters (to me: meā)",
+      "grammar": "verb: impersonal",
+      "evidence": [
+        "Phaedr. 1.15.9–10",
+        "Sen. Ep. 77.20: <span lang=\"la\">nōn quam diū, sed quam bene ācta sit, rēfert</span>"
+      ],
+      "comment": "It makes no difference to me: <span lang=\"la\">nīl meā interest</span> or <span lang=\"la\">rēfert</span> (Traupman 96)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "tuā et meā maximē interest tē valēre",
+      "english": "it matters most to you and to me that you get well",
+      "source": "Cic. Fam. 16.4.4"
+    },
+    {
+      "latin": "ergō quid rēfert meā cui serviam, clītellās cum portem meās?",
+      "english": "then what difference does it make to me whom I serve, so long as I carry my own packs?",
+      "source": "Phaedr. 1.15.9–10"
+    }
+  ],
+  "related": [
+    "interest-curiosity",
+    "issue",
+    "business-concern"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/intersum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: intersum</a> · <a href=\"https://logeion.uchicago.edu/refert\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: refert</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 96, 101, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-phaedrus, loci-seneca-epistulae), checked against the editions named there.",
+    "Cicero, Fam. 16.4 checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

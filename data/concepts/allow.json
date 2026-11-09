@@ -1,0 +1,91 @@
+{
+  "id": "allow",
+  "english": "allow",
+  "pos": "verb",
+  "also": [
+    "let",
+    "permit",
+    "be allowed",
+    "may I?",
+    "permission"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "sinō, sinere, sīvī, situm",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "let, allow",
+      "evidence": [
+        "Ov. Pont. 1.3.36: <span lang=\"la\">immemorēs nōn sinit esse suī</span>",
+        "Cic. Cat. 1.10: <span lang=\"la\">nōn feram, nōn patiar, nōn sinam</span> (Lewis &amp; Short)"
+      ],
+      "comment": "With an accusative and infinitive, or the subjunctive: <span lang=\"la\">sine sciam</span>, let me know (Liv. 2.40.5, Lewis &amp; Short)."
+    },
+    {
+      "latin": "licet, licēre, licuit (licitum est)",
+      "status": "recommended",
+      "period": "classical",
+      "grammar": "verb, impersonal, with the dative and an infinitive",
+      "gloss": "it is allowed; you may",
+      "evidence": [
+        "Cic. Off. 1.103: <span lang=\"la\">lūdō autem et jocō ūtī illō quidem licet</span>",
+        "Plaut. Men. 158: <span lang=\"la\">Licet.</span>"
+      ],
+      "comment": "“Am I allowed to?” is <span lang=\"la\">licetne?</span>, and the answer <span lang=\"la\">licet</span>, “yes, you may; all right”."
+    },
+    {
+      "latin": "permittō, permittere, permīsī, permissum",
+      "status": "alternative",
+      "period": "classical",
+      "grammar": "verb, third conjugation, with the dative",
+      "gloss": "give leave, permit",
+      "evidence": [
+        "Cic. Fam. 13.71.1: <span lang=\"la\">nisi ego eī permīsissem</span>"
+      ],
+      "comment": "With <span lang=\"la\">ut</span> or an infinitive."
+    },
+    {
+      "latin": "patior, patī, passus sum",
+      "status": "alternative",
+      "period": "classical",
+      "grammar": "verb, third conjugation (-iō), deponent",
+      "gloss": "let happen, put up with",
+      "evidence": [
+        "Gell. 5.2.3: <span lang=\"la\">haud umquam īnscendī sēsē ab aliō nisi ab rēge passus sit</span>",
+        "Cic. de Or. 1.126: <span lang=\"la\">nōn patiēbātur</span>"
+      ],
+      "comment": "Often with a negative: <span lang=\"la\">nōn patiar</span>, I won’t have it."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "lūdō autem et jocō ūtī illō quidem licet, sed sīcut somnō et quiētibus cēterīs tum, cum gravibus sēriīsque rēbus satis fēcerimus",
+      "english": "we may enjoy play and jokes, but as we enjoy sleep and other rest: when we have done enough serious and weighty work",
+      "source": "Cic. Off. 1.103"
+    },
+    {
+      "latin": "Concēde hūc ā foribus. — Fīat. — Etiam concēde hūc. — Licet.",
+      "english": "Come away from the door. — All right. — Further this way. — OK.",
+      "source": "Plaut. Men. 158"
+    },
+    {
+      "latin": "nesciō quā nātāle solum dulcēdine cūnctōs dūcit et immemorēs nōn sinit esse suī",
+      "english": "by some sweetness or other our native soil draws us all and does not let us forget it",
+      "source": "Ov. Pont. 1.3.35–36"
+    }
+  ],
+  "related": [
+    "let-me-go"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/sino\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sino</a> · <a href=\"https://logeion.uchicago.edu/licet\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: licet</a> · <a href=\"https://logeion.uchicago.edu/permitto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: permitto</a> · <a href=\"https://logeion.uchicago.edu/patior\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: patior</a>",
+    "Cicero’s letters, <em>De officiis</em> and <em>De oratore</em> checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-plautus, loci-ovidius, loci-gellius), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

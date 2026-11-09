@@ -1,0 +1,69 @@
+{
+  "id": "interest-money",
+  "english": "interest",
+  "sense": "on money lent",
+  "pos": "noun",
+  "also": [
+    "interest rate",
+    "at interest",
+    "lend at interest"
+  ],
+  "domain": "pecunia",
+  "terms": [
+    {
+      "latin": "faenus, faenoris n.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "interest on money lent",
+      "evidence": [
+        "Cic. Att. 4.15.7",
+        "Hor. Epod. 2.4: <span lang=\"la\">faenore omnī solūtus</span> (Lewis &amp; Short)",
+        "M-O s.v. interest",
+        "Traupman 164"
+      ],
+      "comment": "Lewis &amp; Short prefers <span lang=\"la\">faenus</span> to <span lang=\"la\">fēnus</span>. To lend at interest, <span lang=\"la\">pecūniam faenorī dare</span> (Traupman 333)."
+    },
+    {
+      "latin": "ūsūra, ūsūrae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "interest; properly, the use of money lent",
+      "evidence": [
+        "Caes. BC 3.21: <span lang=\"la\">sine ūsūrīs</span> (Lewis &amp; Short)",
+        "Cic. Sen. 51",
+        "M-O s.v. interest"
+      ],
+      "comment": "Reckoned by the month: <span lang=\"la\">centēsimae</span>, one per cent a month (see rate)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nec umquam sine ūsūrā reddit quod accēpit",
+      "english": "(the earth) never returns what it has received without interest",
+      "source": "Cic. Sen. 51"
+    },
+    {
+      "latin": "faenus ex triente Īdibus Quīntīlibus factum erat bessibus",
+      "english": "on the Ides of July interest had gone up from a third to two thirds of a per cent a month",
+      "source": "Cic. Att. 4.15.7"
+    }
+  ],
+  "related": [
+    "rate",
+    "debt",
+    "bank",
+    "percent"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/faenus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: faenus</a> · <a href=\"https://logeion.uchicago.edu/usura\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: usura</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. interest.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 164, 333, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-cicero-philosophica), checked against the editions named there.",
+    "Cicero, Att. 4.15 checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

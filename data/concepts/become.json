@@ -1,0 +1,66 @@
+{
+  "id": "become",
+  "english": "become",
+  "pos": "verb",
+  "also": [
+    "turn into",
+    "come to be",
+    "what will become of …?"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "fīō, fierī, factus sum",
+      "status": "recommended",
+      "period": "classical",
+      "grammar": "verb, irregular: the passive of faciō",
+      "gloss": "become, be made",
+      "evidence": [
+        "Cic. Fam. 16.21.7: <span lang=\"la\">rūsticus Rōmānus factus es</span>",
+        "Hor. Ars 25–26: <span lang=\"la\">brevis esse labōrō, obscūrus fīō</span>"
+      ],
+      "comment": "With a noun or an adjective that agrees with the subject (<span lang=\"la\">obscūrus fīō</span>). <span lang=\"la\">Quid mē fīet?</span> is “what will become of me?”, with the ablative of the person, the dative or <span lang=\"la\">dē</span> (Lewis &amp; Short, s.v. <span lang=\"la\">faciō</span>); <span lang=\"la\">ut fit</span> is “as usually happens” (Liv. 3.1.7). Many changes of state have a verb of their own in <span lang=\"la\">-scō</span>: <span lang=\"la\">jam advesperāscit</span>, it’s getting dark (Ter. And. 581)."
+    },
+    {
+      "latin": "ēvādō, ēvādere, ēvāsī, ēvāsum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "turn out, end up as",
+      "evidence": [
+        "Cic. de Or. 1.126: <span lang=\"la\">quōs jūdicābat nōn posse ōrātōrēs ēvādere</span>"
+      ],
+      "comment": "Of how someone or something turns out in the end."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "sed quid Tulliolā meā fīet? jam id vōs vidēte; mihi deest cōnsilium.",
+      "english": "but what will become of my little Tullia? You must see to that now; I am at a loss.",
+      "source": "Cic. Fam. 14.4.3"
+    },
+    {
+      "latin": "dēpōnendae tibi sunt urbānitātēs; rūsticus Rōmānus factus es",
+      "english": "you must put away your town manners: you have become a Roman countryman",
+      "source": "Cic. Fam. 16.21.7"
+    },
+    {
+      "latin": "lēnior et melior fīs accēdente senectā?",
+      "english": "are you growing gentler and better as old age comes on?",
+      "source": "Hor. Ep. 2.2.211"
+    }
+  ],
+  "related": [
+    "make",
+    "when-youre-big"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/fio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fio</a> · <a href=\"https://logeion.uchicago.edu/facio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: facio</a> · <a href=\"https://logeion.uchicago.edu/evado\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: evado</a>",
+    "Cicero’s letters and <em>De oratore</em>, and Horace’s <em>Epistles</em> and <em>Ars poetica</em>, checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-livius, loci-terentius), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

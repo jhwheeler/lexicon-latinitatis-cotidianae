@@ -1,0 +1,108 @@
+{
+  "id": "individual",
+  "english": "individual",
+  "pos": [
+    "noun",
+    "adjective"
+  ],
+  "also": [
+    "individuals",
+    "individually",
+    "each one",
+    "a private individual",
+    "one at a time"
+  ],
+  "domain": "verba",
+  "also_under": [
+    "res-publica"
+  ],
+  "terms": [
+    {
+      "latin": "singulī, singulae, singula",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "individual, one each, one by one; as a noun, individuals",
+      "grammar": "distributive adjective, plural; opposed to ūniversī, all together",
+      "evidence": [
+        "Tac. Agr. 12.2: <span lang=\"la\">singulī pugnant, ūniversī vincuntur</span>",
+        "Phaedr. 3 prol. 49: <span lang=\"la\">neque enim notāre singulōs mēns est mihi</span>",
+        "Tac. Germ. 22.1: <span lang=\"la\">sēparātae singulīs sēdēs et sua cuique mēnsa</span>"
+      ],
+      "comment": "Each to their own is <span lang=\"la\">suus cuique</span>: <span lang=\"la\">sua cuique mēnsa</span>, individual tables."
+    },
+    {
+      "latin": "prīvātus, prīvātī m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a private individual, a private citizen",
+      "grammar": "noun (the adjective prīvātus used as a noun)",
+      "evidence": [
+        "Tac. H. 1.49: <span lang=\"la\">major prīvātō vīsus dum prīvātus fuit</span>"
+      ],
+      "comment": "The individual as against the state or an office-holder."
+    },
+    {
+      "latin": "proprius, propria, proprium",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "one’s own, individual, peculiar to",
+      "grammar": "adjective, with the genitive or dative",
+      "evidence": [
+        "Quint. 11.3.18: <span lang=\"la\">propria cuique est</span> (of each person’s voice)"
+      ]
+    },
+    {
+      "latin": "homō, hominis m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a person, an individual",
+      "evidence": [
+        "M-O s.v. individual (a person)"
+      ]
+    },
+    {
+      "latin": "indīviduum, indīviduī n.",
+      "status": "avoid",
+      "period": "medieval",
+      "gloss": "an individual (of a kind or species)",
+      "evidence": [
+        "M-O s.v. individual: the sense marked medieval (Dante)",
+        "Cic. Fin. 1.17: <span lang=\"la\">corpora indīvidua</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Classically “indivisible”: Cicero’s word for the atoms, <span lang=\"la\">indīvidua</span>. The sense “an individual” belongs to medieval logic."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ita singulī pugnant, ūniversī vincuntur",
+      "english": "so they fight as individuals and are beaten as a whole",
+      "source": "Tac. Agr. 12.2"
+    },
+    {
+      "latin": "neque enim notāre singulōs mēns est mihi, vērum ipsam vītam et mōrēs hominum ostendere",
+      "english": "for I don’t mean to single out individuals, but to show life itself and the ways of people",
+      "source": "Phaedr. 3 prol. 49–50"
+    },
+    {
+      "latin": "lautī cibum capiunt: sēparātae singulīs sēdēs et sua cuique mēnsa",
+      "english": "when they have washed they eat, each at a separate seat and an individual table",
+      "source": "Tac. Germ. 22.1"
+    }
+  ],
+  "related": [
+    "people",
+    "separate",
+    "particular-specific",
+    "human"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/singuli\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: singuli</a> · <a href=\"https://logeion.uchicago.edu/privatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: privatus</a> · <a href=\"https://logeion.uchicago.edu/proprius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: proprius</a> · <a href=\"https://logeion.uchicago.edu/homo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: homo</a> · <a href=\"https://logeion.uchicago.edu/individuus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: individuus</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. individual.",
+    "Quotations from the Latinitas loci collections (loci-tacitus, loci-phaedrus, loci-quintilianus), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

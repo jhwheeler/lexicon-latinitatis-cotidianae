@@ -1,0 +1,92 @@
+{
+  "id": "be-involved",
+  "english": "be involved",
+  "sense": "take part",
+  "pos": "verb",
+  "also": [
+    "take part",
+    "get involved",
+    "participate",
+    "involvement",
+    "involve someone",
+    "keep out of it"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "intersum, interesse, interfuī",
+      "status": "recommended",
+      "period": "classical",
+      "grammar": "verb, irregular (inter + sum), with the dative",
+      "gloss": "take part in, be present at",
+      "evidence": [
+        "Cic. Fam. 1.6.1: <span lang=\"la\">omnibus negōtiīs nōn interfuit sōlum, sed praefuit</span>",
+        "Cic. Att. 14.22.2: <span lang=\"la\">cōnsiliīs</span> (Lewis &amp; Short)"
+      ],
+      "comment": "With the dative of what one takes part in, or <span lang=\"la\">in</span> and the ablative."
+    },
+    {
+      "latin": "particeps esse",
+      "status": "alternative",
+      "period": "classical",
+      "grammar": "adjective particeps, participis, with esse and the genitive",
+      "gloss": "have a part in, share in",
+      "evidence": [
+        "Cic. Att. 9.10.5: <span lang=\"la\">hujus igitur bellī ego particeps et socius et adjūtor esse cōgor</span>"
+      ]
+    },
+    {
+      "latin": "admisceō, admiscēre, admiscuī, admixtum",
+      "status": "alternative",
+      "period": "classical",
+      "grammar": "verb, second conjugation",
+      "gloss": "draw in, involve; (with sē) get mixed up in",
+      "evidence": [
+        "Ter. Haut. 975: <span lang=\"la\">Nē tē admisce</span>",
+        "Cic. Q. Fr. 3.1.3 (Lewis &amp; Short)"
+      ],
+      "comment": "Of drawing someone into an affair, or meddling in it."
+    },
+    {
+      "latin": "implicō, implicāre, implicāvī (implicuī), implicātum (implicitum)",
+      "status": "alternative",
+      "period": "classical",
+      "grammar": "verb, first conjugation",
+      "gloss": "entangle, involve",
+      "evidence": [
+        "Cic. Off. 2.40: <span lang=\"la\">contrahendīs negōtiīs implicārī</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Mostly passive: to be caught up in business, a war, mistakes."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "quī nōn sōlum interfuit iīs rēbus, sed etiam praefuit",
+      "english": "who was not only involved in these matters but in charge of them",
+      "source": "Cic. Fam. 1.8.1"
+    },
+    {
+      "latin": "Ita tū istaec tua miscētō nē mē admisceās.",
+      "english": "Stir up those affairs of yours, then, without involving me.",
+      "source": "Ter. Haut. 783"
+    },
+    {
+      "latin": "Nē tē admisce: nēmō accūsat, Syre, tē",
+      "english": "Keep out of it: nobody is accusing you, Syrus",
+      "source": "Ter. Haut. 975"
+    }
+  ],
+  "related": [
+    "involve",
+    "in-charge"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/intersum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: intersum</a> · <a href=\"https://logeion.uchicago.edu/particeps\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: particeps</a> · <a href=\"https://logeion.uchicago.edu/admisceo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: admisceo</a> · <a href=\"https://logeion.uchicago.edu/implico\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: implico</a>",
+    "Cicero’s letters and Terence’s <em>Heauton timorumenos</em> checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

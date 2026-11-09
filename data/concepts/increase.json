@@ -1,0 +1,82 @@
+{
+  "id": "increase",
+  "english": "increase",
+  "pos": [
+    "verb",
+    "noun"
+  ],
+  "also": [
+    "grow",
+    "go up",
+    "make bigger",
+    "growth"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "augeō, augēre, auxī, auctum",
+      "status": "recommended",
+      "period": "classical",
+      "grammar": "verb, second conjugation, transitive",
+      "gloss": "increase, make greater",
+      "evidence": [
+        "Cic. Sen. 46: <span lang=\"la\">quae mihi sermōnis aviditātem auxit</span>",
+        "Liv. 21.33.6: <span lang=\"la\">quōs nemora etiam repercussaeque vallēs augēbant</span>"
+      ],
+      "comment": "Transitive; in the passive, “to increase, grow”."
+    },
+    {
+      "latin": "crēscō, crēscere, crēvī, crētum",
+      "status": "recommended",
+      "period": "classical",
+      "grammar": "verb, third conjugation, intransitive",
+      "gloss": "increase, grow",
+      "evidence": [
+        "Liv. 3.26.4: <span lang=\"la\">crēvit ex metū aliēnō, ut fit, audācia</span>",
+        "Plin. Ep. 9.33.6: <span lang=\"la\">crēscit audācia experīmentō</span>"
+      ],
+      "comment": "Of what grows or increases by itself."
+    },
+    {
+      "latin": "incrēmentum, incrēmentī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "increase, growth",
+      "evidence": [
+        "Cic. Sen. 52: <span lang=\"la\">vītium ortūs, satūs, incrēmenta</span>",
+        "Quint. 11.2.41: <span lang=\"la\">sēnsum incrēmentī</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "habeōque senectūtī magnam grātiam, quae mihi sermōnis aviditātem auxit, pōtiōnis et cibī sustulit",
+      "english": "and I am very grateful to old age, which has increased my appetite for conversation and taken away my appetite for food and drink",
+      "source": "Cic. Sen. 46"
+    },
+    {
+      "latin": "crēvit ex metū aliēnō, ut fit, audācia",
+      "english": "as usually happens, their boldness grew with the other side’s fear",
+      "source": "Liv. 3.26.4"
+    },
+    {
+      "latin": "crēscit audācia experīmentō",
+      "english": "courage grows by trying",
+      "source": "Plin. Ep. 9.33.6"
+    }
+  ],
+  "related": [
+    "make-smaller",
+    "develop-grow"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/augeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: augeo</a> · <a href=\"https://logeion.uchicago.edu/cresco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cresco</a> · <a href=\"https://logeion.uchicago.edu/incrementum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: incrementum</a>",
+    "Cicero’s <em>De senectute</em> checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-cicero-philosophica, loci-livius, loci-plinius, loci-quintilianus), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

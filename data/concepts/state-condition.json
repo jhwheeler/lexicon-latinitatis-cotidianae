@@ -1,0 +1,60 @@
+{
+  "id": "state-condition",
+  "english": "state",
+  "sense": "condition",
+  "pos": "noun",
+  "also": [
+    "condition",
+    "state of things"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "status, statūs m.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "condition, state, situation",
+      "evidence": [
+        "Cic. Verr. 1.12: <span lang=\"la\">restituī in antīquum statum</span> (Lewis &amp; Short)",
+        "Cic. Fam. 3.11.4: <span lang=\"la\">reī pūblicae statum</span> (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "quō locō rēs est?",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "what state are things in?",
+      "grammar": "phrase: locus in the ablative",
+      "evidence": [
+        "Liv. 2.47.5: <span lang=\"la\">quō locō rēs essent</span> (Lewis &amp; Short)",
+        "Hor. Ep. 1.12.25: <span lang=\"la\">quō sit Rōmāna locō rēs</span> (Lewis &amp; Short)"
+      ],
+      "comment": "<span lang=\"la\">In aliquō locō esse</span>, to be in a certain position or state (Lewis &amp; Short s.v. <span lang=\"la\">locus</span>); Cicero has the genitive, <span lang=\"la\">eōdem locī</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "rēs eōdem est locī quō relīquistī",
+      "english": "things are in the same state as you left them",
+      "source": "Cic. Att. 1.13.5"
+    },
+    {
+      "latin": "Siciliam ita vexāvit ac perdidit ut ea restituī in antīquum statum nūllō modō possit",
+      "english": "he so harried and ruined Sicily that it can never be put back in its former state",
+      "source": "Cic. Verr. 1.12"
+    }
+  ],
+  "related": [
+    "state-country",
+    "situation"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/status\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: status</a> · <a href=\"https://logeion.uchicago.edu/locus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: locus</a>",
+    "Cicero, Att. 1.13 checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "id": "government",
+  "english": "government",
+  "pos": "noun",
+  "also": [
+    "the authorities",
+    "those in power",
+    "governing"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "quī rērum potiuntur",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "those in power, the government",
+      "grammar": "phrase: potior with the genitive",
+      "evidence": [
+        "Cic. Fam. 1.8.4: <span lang=\"la\">iī, quī potiuntur rērum</span>",
+        "Cic. Rosc. Am. 70: <span lang=\"la\">cīvitās Athēniēnsium, dum ea rērum potīta est</span> (Lewis &amp; Short)"
+      ],
+      "comment": "<span lang=\"la\">Rērum potīrī</span> is to hold power in the state (Lewis &amp; Short); Cicero’s phrase for the men in power in his day."
+    },
+    {
+      "latin": "rēs pūblica, reī pūblicae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the state; public affairs and their management",
+      "grammar": "noun, fifth declension, with an adjective",
+      "evidence": [
+        "Traupman 179, 323",
+        "M-O s.v. government"
+      ],
+      "comment": "Traupman’s and Morgan–Owens’s first word for government; classically the commonwealth itself rather than the men who govern it."
+    },
+    {
+      "latin": "magistrātūs, magistrātuum m. pl.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the magistrates, the authorities",
+      "evidence": [
+        "Cic. Lael. 63 (Lewis &amp; Short)"
+      ],
+      "comment": "Properly the offices, then the men who hold them."
+    },
+    {
+      "latin": "gubernātiō, gubernātiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "governing, the steering of a state",
+      "evidence": [
+        "Cic. Rep. 1.2: <span lang=\"la\">cīvitātis</span> (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "regimen, regiminis n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "rule, direction",
+      "evidence": [
+        "Tac. (Lewis &amp; Short)",
+        "Traupman 323",
+        "M-O s.v. government"
+      ],
+      "comment": "Post-Augustan, above all in Tacitus; not in Cicero or Caesar."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ōtium nōbīs exoptandum est, quod iī, quī potiuntur rērum, praestātūrī videntur",
+      "english": "we must hope for the peace and quiet that those in power seem ready to guarantee",
+      "source": "Cic. Fam. 1.8.4"
+    }
+  ],
+  "related": [
+    "state-country",
+    "political",
+    "policy"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/potior\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: potior</a> · <a href=\"https://logeion.uchicago.edu/res\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: res</a> · <a href=\"https://logeion.uchicago.edu/publicus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: publicus</a> · <a href=\"https://logeion.uchicago.edu/magistratus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: magistratus</a> · <a href=\"https://logeion.uchicago.edu/gubernatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gubernatio</a> · <a href=\"https://logeion.uchicago.edu/regimen\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: regimen</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. government.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 179, 323, checked against the searchable text of the book (9 November 2026).",
+    "Cicero, Fam. 1.8 checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

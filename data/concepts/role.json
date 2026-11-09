@@ -1,0 +1,73 @@
+{
+  "id": "role",
+  "english": "role",
+  "sense": "a function, the part someone plays",
+  "pos": "noun",
+  "also": [
+    "function",
+    "play a part",
+    "it’s your job to",
+    "part to play"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "partēs, partium f. pl.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "one’s part, role, function",
+      "evidence": [
+        "Cic. Fam. 11.5.3: <span lang=\"la\">tuum est hoc mūnus, tuae partēs</span>",
+        "Cic. de Or. 2.26: <span lang=\"la\">Antōniī audiō esse partēs, ut dē tōtā ēloquentiā disserat</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Plural. “It’s your job to …” is <span lang=\"la\">tuum est</span>, or <span lang=\"la\">tuae partēs sunt</span> with <span lang=\"la\">ut</span>."
+    },
+    {
+      "latin": "mūnus, mūneris n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "task, function, duty",
+      "evidence": [
+        "Cic. Off. 1.20: <span lang=\"la\">jūstitiae prīmum mūnus est ut nē cui quis noceat</span>"
+      ],
+      "comment": "The task that falls to someone or something."
+    },
+    {
+      "latin": "persōna, persōnae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the part one plays in life",
+      "evidence": [
+        "Cic. de Or. 2.194: <span lang=\"la\">neque āctor sim aliēnae persōnae, sed auctor meae</span> (Lewis &amp; Short)"
+      ],
+      "comment": "The character or part a person sustains."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "tuum est hoc mūnus, tuae partēs, ā tē hoc cīvitās vel omnēs potius gentēs nōn exspectant sōlum sed etiam postulant",
+      "english": "this is your task, your role: the state, or rather all nations, not only expect it of you but demand it",
+      "source": "Cic. Fam. 11.5.3"
+    },
+    {
+      "latin": "jūstitiae prīmum mūnus est ut nē cui quis noceat nisi lacessītus injūriā",
+      "english": "the first role of justice is that no one should harm another unless provoked by a wrong",
+      "source": "Cic. Off. 1.20"
+    }
+  ],
+  "related": [
+    "role-part",
+    "mission",
+    "position-post"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/pars\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pars</a> · <a href=\"https://logeion.uchicago.edu/munus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: munus</a> · <a href=\"https://logeion.uchicago.edu/persona\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: persona</a>",
+    "Cicero’s letters checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-cicero-philosophica), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "id": "finally-lastly",
+  "english": "finally",
+  "sense": "lastly, in the last place",
+  "pos": "adverb",
+  "also": [
+    "lastly",
+    "last of all",
+    "in conclusion"
+  ],
+  "domain": "verba",
+  "also_under": [
+    "tempus"
+  ],
+  "terms": [
+    {
+      "latin": "postrēmō",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "lastly, finally; in the end",
+      "grammar": "adverb; closing a series: prīmum … deinde … postrēmō",
+      "evidence": [
+        "Cic. Fam. 15.14.2: <span lang=\"la\">prīmum … deinde … tum … postrēmō</span>",
+        "Tac. Agr. 3.1: <span lang=\"la\">prīmō … postrēmō</span>"
+      ]
+    },
+    {
+      "latin": "dēnique",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "finally, lastly; in short",
+      "grammar": "adverb",
+      "evidence": [
+        "Hor. S. 1.1.106: <span lang=\"la\">sunt certī dēnique fīnēs</span>",
+        "Cic. Att. 1.6.2: <span lang=\"la\">tum dēnique</span>, “only then”"
+      ],
+      "notes": [
+        "denique"
+      ]
+    },
+    {
+      "latin": "ad extrēmum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "at the last, finally",
+      "evidence": [
+        "Cic. Off. 3.90: <span lang=\"la\">ad extrēmum … patriae salūtem antepōnet salūtī patris</span>",
+        "Traupman 315"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "invīsa prīmō dēsidia postrēmō amātur",
+      "english": "idleness, hateful at first, is loved in the end",
+      "source": "Tac. Agr. 3.1"
+    },
+    {
+      "latin": "prīmum ut tē … tantō intervallō vidērem, deinde ut tibi … possem praesēns grātulārī, … postrēmō ut amīcitia nostra … cōnfirmārētur vehementius",
+      "english": "first, to see you after so long; then, to congratulate you in person; … and finally, to make our friendship stronger",
+      "source": "Cic. Fam. 15.14.2"
+    }
+  ],
+  "notes": {
+    "denique": {
+      "form": "dēnique",
+      "claim": "short final e",
+      "against": "Lewis &amp; Short <span lang=\"la\">dēnĭquē</span>",
+      "html": "Hor. S. 1.1.106, <span lang=\"la\">est modus in rēbus, sunt certī dēnique fīnēs</span>: the fifth foot, <span lang=\"la\">dēnique</span>, is a dactyl. The ending is the enclitic <span lang=\"la\">-que</span>."
+    }
+  },
+  "related": [
+    "finally-at-last",
+    "then-next"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/posterus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: posterus (postrēmō)</a> · <a href=\"https://logeion.uchicago.edu/denique\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: denique</a> · <a href=\"https://logeion.uchicago.edu/extremus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: extremus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 315.",
+    "Quotations from the Latinitas loci collections (loci-tacitus, loci-horatius, loci-cicero-epistulae), checked against the editions named there; Cicero (Fam. 15.14.2, Off. 3.90) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

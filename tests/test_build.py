@@ -302,14 +302,16 @@ class BuildTests(unittest.TestCase):
         record = self.record('cooking-pot')
         record['terms'].append({'latin': 'malum, malī n.', 'status': 'alternative', 'period': 'classical'})
         record['terms'].append({'latin': 'mālum, mālī n.', 'status': 'alternative', 'period': 'classical'})
-        record['terms'].append({'latin': 'caccabus magnus', 'status': 'alternative', 'period': 'ours'})
+        # A word of a longer term links to its own page only where it has one (an invented word has none).
+        record['terms'].append({'latin': 'caccabus fictīcius', 'status': 'alternative', 'period': 'ours'})
         self.save_record(record)
         outputs = builder.build_site(self.root)
         self.assertIn('l/malum.html', outputs)
         self.assertIn('l/malum-2.html', outputs)
+        self.assertNotIn('l/ficticius.html', outputs)
         concept = outputs['c/cooking-pot.html']
-        self.assertIn('<b><a href="../l/caccabus.html">caccabus</a> magnus</b>', concept)
-        self.assertIn('<b lang="la">caccabus magnus</b>', outputs['l/caccabus.html'])
+        self.assertIn('<b><a href="../l/caccabus.html">caccabus</a> fictīcius</b>', concept)
+        self.assertIn('<b lang="la">caccabus fictīcius</b>', outputs['l/caccabus.html'])
 
     def test_record_file_name_must_match_id(self):
         record = self.record('perhaps')

@@ -1,0 +1,83 @@
+{
+  "id": "involve",
+  "english": "involve",
+  "sense": "entail, include",
+  "pos": "verb",
+  "also": [
+    "entail",
+    "include",
+    "bring with it"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "īnsum, inesse, īnfuī",
+      "status": "recommended",
+      "period": "classical",
+      "grammar": "verb, irregular (in + sum), with in and the ablative, or the dative",
+      "gloss": "be in, be part of",
+      "evidence": [
+        "Ter. Eun. 59: <span lang=\"la\">In amōre haec omnia īnsunt vitia</span>",
+        "Cic. N. D. 1.117: <span lang=\"la\">superstitiōnem … in quā inest timor inānis deōrum</span>"
+      ],
+      "comment": "Latin turns “X involves Y” round: <span lang=\"la\">in X inest Y</span>, “in X there is Y”."
+    },
+    {
+      "latin": "afferō, afferre, attulī, allātum",
+      "status": "alternative",
+      "period": "classical",
+      "grammar": "verb, irregular (ad + ferō)",
+      "gloss": "bring with it, cause",
+      "evidence": [
+        "Ter. And. 189: <span lang=\"la\">Nunc hic diēs aliam vītam affert</span>"
+      ],
+      "comment": "Of what a thing brings with it: work, worry, risk."
+    },
+    {
+      "latin": "contineō, continēre, continuī, contentum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "consist in, contain",
+      "evidence": [
+        "Cic. N. D. 1.117: <span lang=\"la\">religiōnem, quae deōrum cultū piō continētur</span>"
+      ],
+      "comment": "In the passive with the ablative, “to consist in”."
+    },
+    {
+      "latin": "involvō, involvere, involvī, involūtum",
+      "status": "avoid",
+      "period": "classical",
+      "gloss": "roll up, wrap up",
+      "evidence": [
+        "Caes. BC 1.75: <span lang=\"la\">sinistrās sagīs involvunt</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Classically to wrap up or envelop, and figuratively <span lang=\"la\">sē litterīs involvere</span>, to bury oneself in books (Cic. Fam. 9.20.3); it never means “to include” or “to entail”."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "In amōre haec omnia īnsunt vitia: injūriae, suspīciōnēs, inimīcitiae, indūtiae, bellum, pāx rūrsum.",
+      "english": "Love involves all these troubles: wrongs, suspicions, quarrels, truces, war, then peace again.",
+      "source": "Ter. Eun. 59–61"
+    },
+    {
+      "latin": "nōn modo superstitiōnem tollunt, in quā inest timor inānis deōrum, sed etiam religiōnem, quae deōrum cultū piō continētur",
+      "english": "they do away not only with superstition, which involves an empty fear of the gods, but also with religion, which consists in the pious worship of the gods",
+      "source": "Cic. N. D. 1.117"
+    }
+  ],
+  "related": [
+    "be-involved",
+    "require"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/insum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: insum</a> · <a href=\"https://logeion.uchicago.edu/affero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: affero</a> · <a href=\"https://logeion.uchicago.edu/contineo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: contineo</a> · <a href=\"https://logeion.uchicago.edu/involvo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: involvo</a>",
+    "Terence’s <em>Andria</em> and Cicero’s <em>De natura deorum</em> checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-terentius), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

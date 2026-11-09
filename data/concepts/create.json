@@ -1,0 +1,70 @@
+{
+  "id": "create",
+  "english": "create",
+  "pos": "verb",
+  "also": [
+    "produce",
+    "bring into being",
+    "creator",
+    "creation"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "creō, creāre, creāvī, creātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "create, bring forth; cause",
+      "evidence": [
+        "Cic. Div. 2.55: <span lang=\"la\">nōn numquam etiam errōrem creat similitūdō</span>",
+        "Mart. 5.78.14: <span lang=\"la\">quās docta Neāpolis creāvit</span>"
+      ],
+      "comment": "Of nature or a place producing something, and of causing: <span lang=\"la\">errōrem, lītēs, moram creāre</span> (Lewis &amp; Short). In Christian Latin, of God’s creating (Gen. 1.1). Classically it is also to elect a magistrate: <span lang=\"la\">cōnsulēs creāre</span>."
+    },
+    {
+      "latin": "fingō, fingere, fīnxī, fictum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "shape, form; make up",
+      "evidence": [
+        "Cic. de Or. 2.23: <span lang=\"la\">fingere et cōnstruere nīdōs</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Of shaping something with the hands, or in the mind."
+    },
+    {
+      "latin": "condō, condere, condidī, conditum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "found, establish",
+      "evidence": [
+        "Cic. Cat. 3.2: <span lang=\"la\">urbem</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Of founding a city, a people, an institution."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nōn numquam etiam errōrem creat similitūdō",
+      "english": "sometimes, too, a likeness creates confusion",
+      "source": "Cic. Div. 2.55"
+    },
+    {
+      "latin": "In prīncipiō creāvit Deus caelum et terram.",
+      "english": "In the beginning God created the heaven and the earth.",
+      "source": "Vulg. Gen. 1.1"
+    }
+  ],
+  "related": [
+    "make"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/creo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: creo</a> · <a href=\"https://logeion.uchicago.edu/fingo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fingo</a> · <a href=\"https://logeion.uchicago.edu/condo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: condo</a>",
+    "Cicero’s <em>De divinatione</em> checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-martialis, loci-vulgata), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

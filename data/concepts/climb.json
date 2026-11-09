@@ -3,14 +3,19 @@
   "english": "climb",
   "pos": "verb",
   "also": [
-    "climb up"
+    "climb up",
+    "clamber",
+    "climbing",
+    "bouldering"
   ],
   "domain": "ludi",
   "terms": [
     {
       "latin": "scandō, scandere",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "gloss": "climb or clamber",
+      "comment": "L&amp;S gives no perfect or supine for this verb; none is invented here."
     },
     {
       "latin": "ascendō, ascendere",
@@ -25,22 +30,46 @@
     "climbing-frame",
     "climbing-wall",
     "slide-down",
-    "entry-287",
-    "entry-288",
-    "entry-289",
-    "entry-290"
+    "grasp",
+    "here-location",
+    "well-done-praise",
+    "climb-up",
+    "climb-down",
+    "jump-down",
+    "climbing-hold"
   ],
   "sources": [
     "<a href=\"https://www.alatius.com/ls/index.php?l=scando\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: scando</a>",
-    "The example sentences marked “composed” are ours."
+    "The example sentences marked “composed” are ours.",
+    "<a href=\"https://logeion.org/scando\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: scando</a>",
+    "Examples are composed for conversation with Theo; dictionary links document the component words, not these exact sentences or standardized modern climbing terminology."
   ],
   "replaces": [
     "entry-188",
-    "play-188"
+    "play-188",
+    "entry-287",
+    "climb-287"
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "Vīsne scandere?",
+      "english": "Do you want to climb?",
+      "source": "composed"
+    },
+    {
+      "latin": "Scandāmus.",
+      "english": "Let’s climb.",
+      "source": "composed"
+    },
+    {
+      "latin": "Scande, Theodōre.",
+      "english": "Climb, Theo.",
+      "source": "composed"
+    }
+  ]
 }

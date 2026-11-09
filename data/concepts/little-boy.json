@@ -3,7 +3,8 @@
   "english": "little boy",
   "pos": "noun",
   "also": [
-    "small child"
+    "small child",
+    "kid"
   ],
   "domain": "sermo",
   "terms": [
@@ -18,13 +19,46 @@
       "period": "classical",
       "gloss": "boy",
       "comment": "Has no universally fixed minimum age of seven in every Latin context."
+    },
+    {
+      "latin": "pūsiō, pūsiōnis m.",
+      "status": "recommended",
+      "period": "classical",
+      "evidence": [
+        "Cic. Tusc. 1.57"
+      ]
+    },
+    {
+      "latin": "puerculus",
+      "status": "alternative",
+      "period": "late",
+      "evidence": [
+        "Traupman 410"
+      ],
+      "comment": "Traupman 410 gives <span lang=\"la\">puerculus</span>, which is late (Arnobius)."
+    },
+    {
+      "latin": "frustum puerī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "“you scrap of a boy!”",
+      "register": "vōx cōmica",
+      "evidence": [
+        "Traupman 336",
+        "Plaut. Pers. 5.2.68, in L&amp;S"
+      ]
     }
   ],
   "related": [
-    "son"
+    "son",
+    "baby",
+    "darling",
+    "father"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/puer\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: puer</a>"
+    "<a href=\"https://logeion.uchicago.edu/puer\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: puer</a>",
+    "<a href=\"https://logeion.org/pusio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pusio</a> · <a href=\"https://logeion.org/frustum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: frustum</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): pp. 336, 410."
   ],
   "review": {
     "status": "draft",

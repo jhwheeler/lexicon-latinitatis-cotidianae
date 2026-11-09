@@ -16,14 +16,37 @@
     "demolish",
     "build-up",
     "build-on",
-    "assemble"
+    "assemble",
+    "make",
+    "put",
+    "join",
+    "take-apart",
+    "tower",
+    "above"
   ],
   "sources": [
-    "<a href=\"https://www.alatius.com/ls/index.php?l=aedifico\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aedifico</a>"
+    "<a href=\"https://www.alatius.com/ls/index.php?l=aedifico\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aedifico</a>",
+    "<a href=\"https://logeion.uchicago.edu/aedifico\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aedifico</a> · <a href=\"https://dcc.dickinson.edu/latin-core-list1\" rel=\"noopener noreferrer\" target=\"_blank\">Dickinson: Latin Core Vocabulary</a>",
+    "The example sentences marked “composed” are ours."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "Aedificēmus turrim.",
+      "english": "Let’s build a tower.",
+      "source": "composed"
+    },
+    {
+      "latin": "Theodōre, quid aedificās?",
+      "english": "Theo, what are you building?",
+      "source": "composed"
+    }
+  ],
+  "replaces": [
+    "entry-32"
+  ]
 }

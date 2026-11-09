@@ -116,7 +116,7 @@ test('literal input never becomes HTML and no-match state recovers', async () =>
 test('the front page lists the categories; each opens its own page, with the categories beside it', async () => {
   assert.equal(await page.locator('#contents').isVisible(), true);
   const categories = await page.locator('.toc a').count();
-  assert.equal(categories, 14);
+  assert.equal(categories, 20);
   assert.match(await page.locator('#results').textContent(), /^[\d,]+ entries$/);
   await page.locator('.toc a[href="k/culina.html"]').click();
   await page.waitForURL(/k\/culina\.html$/);

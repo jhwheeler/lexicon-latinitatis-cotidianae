@@ -56,6 +56,13 @@ Records: `https://jhwheeler.github.io/lexicon-latinitatis-cotidianae/c/<id>.html
   - `pencil-sharpener` recommends Morgan–Owens's *cōticula*, classically a touchstone, over Traupman's *īnstrūmentum cuspidārium*.
   - `recite` recommends *reddō* (Hor. Ep. 1.18.14) and `lecture` recommends *schola* (Cic. Tusc. 1.7), rather than Traupman's *recitō* and *acroāsis*.
   - `times-table` uses our own *tabula multiplicātiōnis* (#65).
+- **Money:**
+  - Should *wealth* have a record of its own led by *dīvitiae*? Today it sits in `resources`.
+  - `pension` recommends the classical *annua* (an annual stipend), with Levi–Bini's *beneficium annuum* as the modern form.
+  - `salary` prefers *salārium* to Traupman's *mercēs*.
+  - `employer` (*conductor*), `haggle` (*dē pretiō pacīscī*, Suet. Gram. 7.2) and `budget` (*ratiō impēnsārum*, Suet. Ner. 30.1) are thin.
+  - `cash-machine` uses our own *māchina nummāria*.
+  - `insurance` (*cautiō*) is labelled modern (#65).
 - **From the converted cards:**
   - `shirt` recommends *subūcula*, which is the undershirt (#34).
   - `pillow`: *pulvīnus* or the readers' *cervīcal* (#32).
@@ -98,4 +105,5 @@ The drafters found these while checking quotations. Nothing here quotes the faul
 - **loci-vulgata:** Lc. 15.22 *Citō*; Lewis & Short has *citŏ*. (#60)
 - **loci-ovidius:** Met. 6.350 *āera*; the house writes *āëra*. (#57)
 - **loci-livius:** praef. 1 *facturusne* should be *factūrusne*. (#65)
+- **loci-comenius:** OP 126 lacks the macrons on *Vēnditor* and *Ēmptor*. (#65)
 - ***fūrtum*:** the loci write it long, but de Vaan (s.v. *fūr*, after Forssman) gives *furtum* a short vowel. (#64)

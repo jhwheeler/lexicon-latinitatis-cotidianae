@@ -1,0 +1,77 @@
+{
+  "id": "holy-spirit",
+  "english": "the Holy Spirit",
+  "pos": "noun",
+  "also": [
+    "Holy Spirit",
+    "Holy Ghost",
+    "the Spirit",
+    "the Paraclete",
+    "the Comforter"
+  ],
+  "domain": "ecclesia",
+  "terms": [
+    {
+      "latin": "Spīritus Sānctus, Spīritūs Sānctī m.",
+      "status": "recommended",
+      "period": "late",
+      "gloss": "the Holy Spirit",
+      "evidence": [
+        "Vulg. Mt. 28.19",
+        "Aus. Ephem. 2.18 (Lewis &amp; Short)",
+        "Cod. Just. 1.1.1 (Lewis &amp; Short)"
+      ],
+      "comment": "The two churches’ Creed differs here: the Latin Church confesses the Spirit <span lang=\"la\">quī ex Patre Fīliōque prōcēdit</span>, the Orthodox Church, with the Greek text of 381, as proceeding from the Father (τὸ ἐκ τοῦ Πατρὸς ἐκπορευόμενον)."
+    },
+    {
+      "latin": "Paraclītus, Paraclītī m.",
+      "status": "alternative",
+      "period": "late",
+      "gloss": "the Paraclete, the Comforter",
+      "evidence": [
+        "Vulg. Jo. 14.26"
+      ],
+      "comment": "Greek παράκλητος, the one called to help.",
+      "notes": [
+        "paraclitus"
+      ]
+    }
+  ],
+  "notes": {
+    "paraclitus": {
+      "form": "Paraclītus",
+      "claim": "spelled with ī",
+      "against": "Lewis &amp; Short <span lang=\"la\">paraclētus</span>",
+      "html": "The Clementine Vulgate’s and the Roman Breviary’s spelling (Jo. 14.26), from Greek παράκλητος with η said as ī; the Stuttgart Vulgate prints <span lang=\"la\">paraclētus</span> (Latinitas <span lang=\"la\">Precēs</span>, Notae)."
+    }
+  },
+  "phrases": [
+    {
+      "latin": "in nōmine Patris, et Fīliī, et Spīritūs Sānctī",
+      "english": "in the name of the Father, and of the Son, and of the Holy Spirit",
+      "source": "Vulg. Mt. 28.19"
+    },
+    {
+      "latin": "Paraclītus autem Spīritus Sānctus, quem mittet Pater in nōmine meō, ille vōs docēbit omnia",
+      "english": "But the Comforter, the Holy Spirit, whom the Father will send in my name, will teach you all things",
+      "source": "Vulg. Jo. 14.26"
+    }
+  ],
+  "related": [
+    "trinity",
+    "god",
+    "pentecost",
+    "sign"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/spiritus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: spiritus</a> · <a href=\"https://logeion.uchicago.edu/sanctus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sanctus</a> · <a href=\"https://logeion.uchicago.edu/paracletus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: paracletus</a>",
+    "Quotations from the Latinitas loci collections (loci-vulgata), checked against the editions named there.",
+    "Prayers from the Latinitas <em>Precēs</em> collection (preces.md), checked against the sources named there.",
+    "Vulgate verses checked against the Clementine Vulgate (CrossWire <em>VulgClementine</em>, via the <a href=\"https://github.com/scrollmapper/bible_databases\" rel=\"noopener noreferrer\" target=\"_blank\">scrollmapper <em>bible_databases</em></a> repository) and Hetzenauer’s edition, in Clementine spelling."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

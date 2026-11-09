@@ -1,0 +1,80 @@
+{
+  "id": "prayer",
+  "english": "prayer",
+  "pos": "noun",
+  "also": [
+    "prayers",
+    "a prayer"
+  ],
+  "domain": "ecclesia",
+  "terms": [
+    {
+      "latin": "precēs, precum f. pl.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "prayer, prayers (to God)",
+      "evidence": [
+        "Cic. Planc. 97: <span lang=\"la\">eōrum precēs et vōta exaudiēns</span> (Lewis &amp; Short)",
+        "Ambr. hymn. <span lang=\"la\">Deus creātor</span> 10"
+      ],
+      "comment": "The classical word for prayer to God or the gods, nearly always plural; the singular lives on in the ablative <span lang=\"la\">prece</span> (Hor., Ov.). To say one’s prayers is <span lang=\"la\">precēs dīcere</span> (Schottennius) or <span lang=\"la\">recitāre</span> (Vives)."
+    },
+    {
+      "latin": "ōrātiō, ōrātiōnis f.",
+      "status": "alternative",
+      "period": "late",
+      "gloss": "a prayer; prayer",
+      "evidence": [
+        "Vulg. Act. 1.14: <span lang=\"la\">erant persevērantēs ūnanimiter in ōrātiōne</span>",
+        "Vulg. Jac. 5.15"
+      ],
+      "comment": "Classically a speech; in the Vulgate and the Church a prayer, and prayer itself (Lewis &amp; Short), as in <span lang=\"la\">Ōrātiō Dominica</span>, the Lord’s Prayer."
+    },
+    {
+      "latin": "precātiō, precātiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a prayer, a set form of prayer",
+      "evidence": [
+        "Cic. Mur. 1: <span lang=\"la\">sollemnis comitiōrum precātiō</span> (Lewis &amp; Short)",
+        "M-O s.v. Lord's Prayer"
+      ],
+      "comment": "One prayer or its set words; the school dialogues call the Lord’s Prayer <span lang=\"la\">precātiō Dominica</span> (Vives, Corderius; Morgan–Owens)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "grātēs perāctō jam diē et noctis exortū precēs",
+      "english": "thanks, now the day is done, and prayers as night comes on",
+      "source": "Ambr. hymn. <span lang=\"la\">Deus creātor</span> 9–10"
+    },
+    {
+      "latin": "Porcōrum est edere, nūllīs precibus dictīs.",
+      "english": "Eating without saying grace is for pigs.",
+      "source": "Schott. Conf., <span lang=\"la\">Ante et post cibum hymnum esse dīcendum</span>"
+    },
+    {
+      "latin": "et ōrātiō fideī salvābit īnfirmum",
+      "english": "and the prayer of faith will save the sick man",
+      "source": "Vulg. Jac. 5.15"
+    }
+  ],
+  "related": [
+    "pray",
+    "lords-prayer",
+    "amen",
+    "give-thanks",
+    "kneel"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/prex\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: prex</a> · <a href=\"https://logeion.uchicago.edu/oratio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: oratio</a> · <a href=\"https://logeion.uchicago.edu/precatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: precatio</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. Lord's Prayer.",
+    "Quotations from the Latinitas loci collections (loci-augustinus, loci-schottenius), checked against the editions named there.",
+    "Vulgate verses checked against the Clementine Vulgate (CrossWire <em>VulgClementine</em>, via the <a href=\"https://github.com/scrollmapper/bible_databases\" rel=\"noopener noreferrer\" target=\"_blank\">scrollmapper <em>bible_databases</em></a> repository) and Hetzenauer’s edition, in Clementine spelling."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

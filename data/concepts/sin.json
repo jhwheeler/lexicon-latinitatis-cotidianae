@@ -1,0 +1,87 @@
+{
+  "id": "sin",
+  "english": "sin",
+  "pos": [
+    "noun",
+    "verb"
+  ],
+  "also": [
+    "sins",
+    "sinner",
+    "commit a sin"
+  ],
+  "domain": "ecclesia",
+  "terms": [
+    {
+      "latin": "peccātum, peccātī n.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a sin, a wrong",
+      "evidence": [
+        "Ter. And. 903: <span lang=\"la\">Prō peccātō magnō paulum supplicī satis est patrī</span>",
+        "Cic. Fin. 3.32 (Lewis &amp; Short)"
+      ],
+      "comment": "A fault, a wrong; in the Church, a sin (Lewis &amp; Short)."
+    },
+    {
+      "latin": "peccō, peccāre, peccāvī, peccātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "sin, do wrong",
+      "evidence": [
+        "Cic. Par. 3.20: <span lang=\"la\">peccāre est tamquam trānsilīre līneās</span> (Lewis &amp; Short)",
+        "Ter. And. 139"
+      ],
+      "comment": "To do wrong, to sin; against someone, <span lang=\"la\">in aliquem</span> (<span lang=\"la\">peccāvī in caelum</span>, Lc. 15.21)."
+    },
+    {
+      "latin": "peccātor, peccātōris m.",
+      "status": "alternative",
+      "period": "late",
+      "gloss": "a sinner",
+      "evidence": [
+        "Tert. Spect. 3 (Lewis &amp; Short)",
+        "Vulg. Lc. 18.13",
+        "Aug. Conf. 1.12.19"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Pater, peccāvī in caelum, et cōram tē: jam nōn sum dignus vocārī fīlius tuus.",
+      "english": "Father, I have sinned against heaven and before you; I am no longer worthy to be called your son.",
+      "source": "Vulg. Lc. 15.21"
+    },
+    {
+      "latin": "Quid fēcī? quid commeruī aut peccāvī, pater?",
+      "english": "What have I done? What have I deserved, what wrong have I done, father?",
+      "source": "Ter. And. 139"
+    },
+    {
+      "latin": "tantillus puer et tantus peccātor",
+      "english": "such a little boy and such a great sinner",
+      "source": "Aug. Conf. 1.12.19"
+    },
+    {
+      "latin": "Deus propitius estō mihi peccātōrī.",
+      "english": "God, be merciful to me, a sinner.",
+      "source": "Vulg. Lc. 18.13"
+    }
+  ],
+  "related": [
+    "forgive",
+    "forgiveness",
+    "repent",
+    "confession"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/peccatum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: peccatum</a> · <a href=\"https://logeion.uchicago.edu/pecco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pecco</a> · <a href=\"https://logeion.uchicago.edu/peccator\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: peccator</a>",
+    "Quotations from the Latinitas loci collections (loci-terentius, loci-augustinus, loci-vulgata), checked against the editions named there.",
+    "Vulgate verses checked against the Clementine Vulgate (CrossWire <em>VulgClementine</em>, via the <a href=\"https://github.com/scrollmapper/bible_databases\" rel=\"noopener noreferrer\" target=\"_blank\">scrollmapper <em>bible_databases</em></a> repository) and Hetzenauer’s edition, in Clementine spelling."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

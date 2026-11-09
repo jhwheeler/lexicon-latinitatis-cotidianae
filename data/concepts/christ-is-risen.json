@@ -1,0 +1,59 @@
+{
+  "id": "christ-is-risen",
+  "english": "Christ is risen!",
+  "pos": "phrase",
+  "also": [
+    "He is risen indeed",
+    "Truly he is risen",
+    "Easter greeting",
+    "Christ is risen"
+  ],
+  "domain": "ecclesia",
+  "also_under": [
+    "sermo"
+  ],
+  "terms": [
+    {
+      "latin": "Chrīstus surrēxit! — Vērē surrēxit!",
+      "status": "recommended",
+      "period": "ours",
+      "gloss": "Christ is risen! — He is risen indeed!",
+      "evidence": [
+        "Vulg. Lc. 24.34"
+      ],
+      "comment": "The Easter greeting of the Greek and Slavonic churches, Χριστὸς ἀνέστη — Ἀληθῶς ἀνέστη, given and answered from Easter night to the Ascension, put into the Latin of the Gospel: <span lang=\"la\">surrēxit Dominus vērē</span>."
+    },
+    {
+      "latin": "Surrēxit Dominus vērē.",
+      "status": "alternative",
+      "period": "late",
+      "gloss": "The Lord is risen indeed.",
+      "evidence": [
+        "Vulg. Lc. 24.34"
+      ],
+      "comment": "The disciples’ news to the two from Emmaus, the root of the greeting."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "surrēxit Dominus vērē",
+      "english": "the Lord is risen indeed",
+      "source": "Vulg. Lc. 24.34"
+    }
+  ],
+  "related": [
+    "easter",
+    "alleluia",
+    "merry-christmas"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/surgo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: surgo</a> · <a href=\"https://logeion.uchicago.edu/vere\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vere</a>",
+    "Prayers from the Latinitas <em>Precēs</em> collection (preces.md), checked against the sources named there.",
+    "Vulgate verses checked against the Clementine Vulgate (CrossWire <em>VulgClementine</em>, via the <a href=\"https://github.com/scrollmapper/bible_databases\" rel=\"noopener noreferrer\" target=\"_blank\">scrollmapper <em>bible_databases</em></a> repository) and Hetzenauer’s edition, in Clementine spelling."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

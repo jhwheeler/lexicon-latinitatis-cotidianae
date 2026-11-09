@@ -1,0 +1,84 @@
+{
+  "id": "kneel",
+  "english": "kneel",
+  "pos": "verb",
+  "also": [
+    "kneel down",
+    "kneeling",
+    "on one’s knees",
+    "go down on one’s knees",
+    "genuflect"
+  ],
+  "domain": "corpus",
+  "also_under": [
+    "ecclesia"
+  ],
+  "terms": [
+    {
+      "latin": "genua flectere",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "kneel, bend the knee",
+      "evidence": [
+        "Ov. Met. 4.340: <span lang=\"la\">flexum genū</span> (Lewis &amp; Short s.v. <span lang=\"la\">flectō</span>)",
+        "Sen. Herc. F. 410: <span lang=\"la\">inflexō genū adōrāre</span> (Lewis &amp; Short s.v. <span lang=\"la\">genū</span>)",
+        "Vulg. Eph. 3.14"
+      ],
+      "comment": "To bend the knee; kneeling is <span lang=\"la\">flexīs genibus</span>, the school dialogues’ phrase for kneeling to pray (Corderius, Erasmus); Ovid and Seneca have the singular. The Orthodox churches keep the rule of the Council of Nicaea (canon 20) that on Sundays and from Easter to Pentecost prayer is made standing, until the kneeling prayers of Pentecost evening; in the Latin rite kneeling is a regular posture at Mass."
+    },
+    {
+      "latin": "genua pōnere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "kneel down",
+      "evidence": [
+        "Curt. 4.6.28 (Lewis &amp; Short s.v. <span lang=\"la\">genū</span>)",
+        "Vulg. Lc. 22.41"
+      ],
+      "comment": "Curtius’s phrase (<span lang=\"la\">genū pōnere</span>), and the Vulgate’s: <span lang=\"la\">positīs genibus ōrābat</span>, he knelt down and prayed."
+    },
+    {
+      "latin": "in genua subsīdere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "go down on one’s knees (outside church too)",
+      "evidence": [
+        "Sen. Ep. 85.41"
+      ],
+      "comment": "To sink onto one’s knees, of anyone kneeling down."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "flectō genua mea ad Patrem Dominī nostrī Jēsū Chrīstī",
+      "english": "I bend my knees before the Father of our Lord Jesus Christ",
+      "source": "Vulg. Eph. 3.14"
+    },
+    {
+      "latin": "Flexīs genibus, et conjūnctīs manibus dīxī precātiōnem Dominicam, cum grātiārum āctiōne.",
+      "english": "On my knees, with my hands together, I said the Lord’s Prayer and a thank-you.",
+      "source": "Cord. Coll. 1.2"
+    },
+    {
+      "latin": "elephantum minimus Aethiops jubet subsīdere in genua et ambulāre per fūnem",
+      "english": "the smallest African boy makes the elephant kneel down and walk the tightrope",
+      "source": "Sen. Ep. 85.41"
+    }
+  ],
+  "related": [
+    "bow-in-worship",
+    "bow-ones-head",
+    "fold-ones-hands",
+    "pray"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/genu\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: genu</a> · <a href=\"https://logeion.uchicago.edu/flecto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: flecto</a> · <a href=\"https://logeion.uchicago.edu/pono\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pono</a> · <a href=\"https://logeion.uchicago.edu/subsido\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: subsido</a>",
+    "Quotations from the Latinitas loci collections (loci-corderius, loci-seneca-epistulae), checked against the editions named there.",
+    "Vulgate verses checked against the Clementine Vulgate (CrossWire <em>VulgClementine</em>, via the <a href=\"https://github.com/scrollmapper/bible_databases\" rel=\"noopener noreferrer\" target=\"_blank\">scrollmapper <em>bible_databases</em></a> repository) and Hetzenauer’s edition, in Clementine spelling."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "id": "forgive",
+  "english": "forgive",
+  "pos": "verb",
+  "also": [
+    "pardon",
+    "forgive me"
+  ],
+  "domain": "verba",
+  "also_under": [
+    "ecclesia"
+  ],
+  "terms": [
+    {
+      "latin": "ignōscō, ignōscere, ignōvī, ignōtum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "forgive, pardon",
+      "evidence": [
+        "Traupman 255, 311, 356",
+        "Cic. Att. 7.12.1: <span lang=\"la\">velim mihi ignōscās</span> (Lewis &amp; Short)"
+      ],
+      "comment": "With the dative of the person and the accusative of the thing: <span lang=\"la\">ignōsce mihi</span>, forgive me (see excuse me)."
+    },
+    {
+      "latin": "dīmittō, dīmittere, dīmīsī, dīmissum",
+      "status": "alternative",
+      "period": "late",
+      "gloss": "forgive (a debt, a sin)",
+      "evidence": [
+        "Vulg. Mt. 6.12",
+        "Vulg. Mt. 18.21"
+      ],
+      "comment": "Classically to send away, let go; the Vulgate’s verb for forgiving debts and sins and the people who owe them (<span lang=\"la\">dīmitte nōbīs dēbita nostra</span>, the Lord’s Prayer)."
+    },
+    {
+      "latin": "remittō, remittere, remīsī, remissum",
+      "status": "alternative",
+      "period": "late",
+      "gloss": "forgive (sins)",
+      "evidence": [
+        "Vulg. Jo. 20.23",
+        "Vulg. 1 Jo. 1.9"
+      ],
+      "comment": "Of sins: <span lang=\"la\">quōrum remīseritis peccāta, remittuntur eīs</span> (Jo. 20.23)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "sīc ignōvisse putātō mē tibi, sī cēnās hodiē mēcum",
+      "english": "consider yourself forgiven, if you dine with me today",
+      "source": "Hor. Ep. 1.7.69–70"
+    },
+    {
+      "latin": "Errāre hūmānum est, ignōscere dīvīnum.",
+      "english": "To err is human, to forgive divine.",
+      "source": "Traupman 255"
+    },
+    {
+      "latin": "Domine, quotiēs peccābit in mē frāter meus, et dīmittam eī? ūsque septiēs?",
+      "english": "Lord, how often shall my brother sin against me and I forgive him? As many as seven times?",
+      "source": "Vulg. Mt. 18.21"
+    },
+    {
+      "latin": "Sī peccāverit in tē frāter tuus, increpā illum: et sī poenitentiam ēgerit, dīmitte illī.",
+      "english": "If your brother sins against you, rebuke him; and if he repents, forgive him.",
+      "source": "Vulg. Lc. 17.3"
+    }
+  ],
+  "related": [
+    "forgiveness",
+    "excuse-me",
+    "im-sorry",
+    "sin",
+    "repent"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/ignosco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ignosco</a> · <a href=\"https://logeion.uchicago.edu/dimitto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dimitto</a> · <a href=\"https://logeion.uchicago.edu/remitto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: remitto</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 255, 311, 356, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-horatius, loci-vulgata), checked against the editions named there.",
+    "Vulgate verses checked against the Clementine Vulgate (CrossWire <em>VulgClementine</em>, via the <a href=\"https://github.com/scrollmapper/bible_databases\" rel=\"noopener noreferrer\" target=\"_blank\">scrollmapper <em>bible_databases</em></a> repository) and Hetzenauer’s edition, in Clementine spelling."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

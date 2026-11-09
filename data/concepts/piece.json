@@ -8,13 +8,16 @@
   "domain": "culina",
   "terms": [
     {
-      "latin": "frūstum, frūstī n.",
+      "latin": "frustum, frustī n.",
       "status": "recommended",
       "period": "classical",
-      "gloss": "piece or chunk"
+      "gloss": "piece or chunk",
+      "notes": [
+        "frustum"
+      ]
     },
     {
-      "latin": "frūstulum, frūstulī n.",
+      "latin": "frustulum, frustulī n.",
       "status": "alternative",
       "period": "classical",
       "gloss": "little piece"
@@ -22,7 +25,7 @@
   ],
   "phrases": [
     {
-      "latin": "Parvum frūstum cape.",
+      "latin": "Parvum frustum cape.",
       "english": "Take a small piece.",
       "source": "composed"
     }
@@ -43,5 +46,14 @@
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
+  },
+  "notes": {
+    "frustum": {
+      "form": "frustum",
+      "claim": "short u",
+      "against": "Traupman <span lang=\"la\">frūstum</span>, pp. 72, 360",
+      "html": "A different word from <span lang=\"la\">frūstrā</span>, “in vain”, whose u is long; Traupman himself prints <span lang=\"la\">frustum</span> on pp. 282 and 336.",
+      "ruling": "frustra"
+    }
   }
 }

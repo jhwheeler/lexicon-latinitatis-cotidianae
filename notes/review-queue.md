@@ -1,17 +1,12 @@
 # Questions for review
 
-Every record converted from the cards or drafted since is on the site and marked *Draft*. Most need only reading. The points below need a decision first. Each names the records concerned and the pull request where the evidence is set out. Collected on 9 November 2026 from the pull requests' "For your review" sections. Once a point is settled, delete it here; a ruling that applies across the house goes in `data/rulings.json`.
+Every record converted from the cards or drafted since is on the site and marked *Draft*. Most need only reading. The points below need a decision first. Each names the records concerned and the pull request where the evidence is set out. Collected on 9 November 2026 from the pull requests' "For your review" sections. Settled the same day and now in the rulings: *heri*, *sēsquihōra* and Lachmann's law (*frāctus*). Once a point is settled, delete it here; a ruling that applies across the house goes in `data/rulings.json`.
 
 Records: `https://jhwheeler.github.io/lexicon-latinitatis-cotidianae/c/<id>.html`. Pull requests: `https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/pull/<n>`.
 
 ## Vowel lengths that want a house ruling
 
-- ***heri* or *herī*.** `yesterday` writes *heri*: de Vaan 283 explains it as iambic shortening of an older *herī*, and takes the one long *herī* in Terence for an analogy with *domī* and *rūrī*. `yesterday-morning`, `yesterday-evening` and an example in `courier` write *herī*, as Traupman 89 and the readers do. (#54)
-- ***re-* before *s* and a consonant.** The lexicon writes a short *re-* in all of these (*respondeō, respōnsum* in `answer`, *restō* in `remain-be-left`). Lewis & Short writes *rē-* in every one of them (64 headwords), but leaves *ob-sto, per-sto, sub-sto* and *di-spicio* unmarked, so its macron seems meant as a long vowel, not as the mark of a heavy syllable that #56 and #60 took it for. For the short vowel: de Vaan 516 derives the prefix from *\*wre*, and Traupman writes *respondēre*. But de Vaan does not discuss this position, and verse cannot decide it. (#56, #60)
-- ***sēsquihōra* or *sesquihōra*.** De Vaan (s.v. *sēmi-*) derives *sēsque-* from *\*sēmis-que*, beside *sēstertius* and *sēlībra*, and Traupman 87 prints *sēsqui-*. Lewis & Short gives the same derivation but leaves the vowel unmarked, as the readers do. (#40)
-- **Lachmann's law.**
-  - *frāctus* and *frāctūra* are written long (`broken`, `fracture`; #57, #60), and so are *dēlēctus* and *ēlēctiō* (#65).
-  - *contractus* and *pactum* are written short (`contract`, `agreement`; #61). Both fit the law as it is usually stated: *pactum* belongs to *pacīscor*, whose root *\*pak-* ends in a voiceless stop, and de Vaan 627 gives *trahō* a root ending in an aspirate (*\*trHgʰ-*), which the law does not lengthen (*vehō, vectus*).
+- ***re-* before *s* and a consonant.** The lexicon writes a short *re-* in all of these (*respondeō, respōnsum* in `answer`, *restō* in `remain-be-left`); Lewis & Short writes *rē-* in every one (64 headwords), and only with this prefix and *dis-* (*dī-scindō, dī-scrībō*). The reason seems to be compensatory lengthening for the lost *d* of *red-*: Lewis & Short's article on the prefix gives *rĕ, rĕd-* and explains the poets' *rēdūcō, rēlātum* by "the suppression of the d". Marx (1883) extended the idea to *āscendō, dīstinguō, sūspiciō*; Bennett §48 rejects it as "an untenable theory of compensatory lengthening"; Lewis's *Elementary Latin Dictionary* (1890) prints *re-spondeō*; de Vaan 516 derives the prefix from *\*wre*; Traupman writes *respondēre*. The short vowel stands unless Jack rules otherwise. (#56, #60)
 - **Final *o*.** *aliquandō*, *immō*, *porrō* and *quandō* are written long, after de Vaan; *aliquandō* may want a ruling of its own. (#53)
 - ***coërceō*** is written with a diaeresis, like the house's *āër* (`control-restrain`). (#60)
 - **Greek words.**
@@ -21,7 +16,8 @@ Records: `https://jhwheeler.github.io/lexicon-latinitatis-cotidianae/c/<id>.html
   - *acadēmīa* has a long *ī*, after Lewis & Short and Cicero's verse, against Traupman and Morgan–Owens.
   - *Paraclītus* follows the Clementine spelling.
   - (#58, #60, #61)
-- ***citō* or *cito*.** The house texts write *citō* 56 times and *cito* 8; Lewis & Short has *cĭto*. Like *heri*, it is an iambically shortened word, while *modo*, *mihi* and *tibi* are written short. Lc. 15.22 was flagged as a slip and left as *Citō*.
+- ***citō* or *cito*.** The house texts write *citō* 56 times and *cito* 8; Lewis & Short has *cĭto*. It is an iambically shortened word like *heri*, which is now written short (ruling of 9 November), as *modo*, *mihi* and *tibi* are. Lc. 15.22 was flagged as a slip and left as *Citō*.
+- ***ustus*.** The readers write *adustus, perustus, praeustus* short, and the lexicon now does too (*ambustiō, adustiō, adustus color*; it had them long). Bennett §52 gives *ūstus*, "acc. to the Romance"; Michelson's review allows a short *u* for Classical Latin, and the zero grade of the root would be short. By the house order Bennett should decide, so this wants a ruling.
 - ***fūrtum*.** The loci write it long (*fūrta*, *fūrtī*, *fūrtīvī*, *fūrtum*), and so do Bennett and most school texts. De Vaan reports Forssman's view that it originally had a short vowel (from *\*bʰr̥tom*, not a derivative of *fūr*); Lewis & Short leaves it unmarked.
 - **Single words with notes:**
   - *hic* has a short *i* (de Vaan 284; #63).

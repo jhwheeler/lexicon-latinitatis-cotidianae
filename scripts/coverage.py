@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """Measure how much of a core English word list the lexicon covers.
 
-A word counts as covered when it is the headword of a record, one of its "also" words or the
-English gloss of one of its terms, or a heading or gloss of a grouped card (with simple English
-inflections: child/children, go/going). Function words (the, of, which…) need no entry and are
-left out, as the plan says.
+A word counts as covered when it is, whole, the headword of a record, one of its "also" words or
+the English gloss of one of its terms (in any simple English inflection: child/children,
+go/going). A word that appears only inside a longer heading, as go does in "go to school", has no
+entry of its own and is not covered; the report marks such words with an asterisk. Function words
+(the, of, which…) need no entry and are left out, as the plan says.
 
     python3 scripts/coverage.py                          # the New General Service List, refs/ngsl-1.01.tsv
     python3 scripts/coverage.py --list words.txt         # any list, one word per line
@@ -76,31 +77,49 @@ def plain(text):
     return html.unescape(re.sub(r'<[^>]+>', ' ', text)).lower()
 
 
-def covered_words(root=ROOT):
-    """The English words the lexicon has an entry for, and its headwords and glosses whole
-    (so that "ice cream" counts as one item)."""
-    words = set()
+def names_in(text):
+    """The whole names in a headword, "also" word or gloss: each part between commas or semicolons,
+    without a sense in brackets, and also without a leading article or "to" (so "the sun" and
+    "to go" name sun and go)."""
+    names = set()
+    for part in re.split(r'[,;/]', plain(text)):
+        words = WORD.findall(re.sub(r'\([^)]*\)', ' ', part))
+        if words:
+            names.add(' '.join(words))
+            if len(words) > 1 and words[0] in ('the', 'a', 'an', 'to'):
+                names.add(' '.join(words[1:]))
+    return names
 
-    def add(text):
-        words.update(WORD.findall(plain(text)))
-        for part in re.split(r'[,;/]', plain(text)):
-            if ' ' in part.strip():
-                words.add(' '.join(WORD.findall(part)))
+
+def covered_words(root=ROOT):
+    """The names the lexicon has an entry for: its headwords, "also" words and glosses, whole. A word
+    that appears only inside a longer heading ("go" in "go to school") has no entry of its own."""
+    names = set()
     for path in (root / 'data/concepts').glob('*.json'):
         record = json.loads(path.read_text(encoding='utf-8'))
-        add(record['english'])
+        names |= names_in(record['english'])
         for also in record.get('also', []):
-            add(also)
+            names |= names_in(also)
         for term in record['terms']:
-            add(term.get('gloss', ''))
+            names |= names_in(term.get('gloss', ''))
     for path in (root / 'data/entries').glob('*.json'):
         for entry in json.loads(path.read_text(encoding='utf-8')):
-            add(entry['english'])
+            names |= names_in(entry['english'])
             for block in entry['blocks']:
                 for item in block.get('items', []):
                     # The gloss after a Latin form: "<strong lang="la">X</strong> — gloss; …"
                     for gloss in re.findall(r'</strong>\s*—\s*([^<;(.]+)', item['html']):
-                        add(gloss)
+                        names |= names_in(gloss)
+    return names
+
+
+def inside_words(root=ROOT):
+    """Every word that appears in a headword or an "also" word, whole or inside a longer one."""
+    words = set()
+    for path in (root / 'data/concepts').glob('*.json'):
+        record = json.loads(path.read_text(encoding='utf-8'))
+        for text in [record['english'], *record.get('also', [])]:
+            words.update(WORD.findall(plain(text)))
     return words
 
 
@@ -110,20 +129,33 @@ NOT_WORDS = {'child own name', 'pet name', 'babysitter name', 'gonna', 'gotta', 
              'can.auxiliary', 'need/need to', 'try/try to'}
 
 
-def covered(item, have):
-    """Whether a list item has an entry: one word in any inflection, or a phrase whole or word by
-    word ("ice cream", "on top of"). A sense after a dot (chicken.food) is dropped."""
+def forms_of(item):
+    """The names a list item may have in the lexicon: the item with its last word in any inflection
+    (a list may give the plural, carrots, where the lexicon has the singular). A sense after a dot
+    (chicken.food) is dropped, and a call said twice (baa baa) is the call once."""
     item = item.split('.')[0].strip()
     item = {'firetruck': 'fire engine', 'teddybear': 'teddy bear'}.get(item, item)
-    if ' ' not in item:
-        # A list may give the plural (carrots); the lexicon has the singular.
-        singular = {item[:-1]} if item.endswith('s') and not item.endswith('ss') else set()
-        return bool((inflections(item) | {f for w in singular for f in inflections(w)}) & have)
-    if item in have or any(f in have for f in inflections(item.split()[-1])
-                          if ' '.join(item.split()[:-1] + [f]) in have):
-        return True
-    content = [w for w in item.split() if w not in FUNCTION_WORDS]
-    return bool(content) and all(inflections(w) & have for w in content) and len(content) > 1
+    words = item.split()
+    if len(words) > 1 and len(set(words)) == 1:
+        words = words[:1]
+    last = words[-1]
+    forms = inflections(last)
+    if last.endswith('s') and not last.endswith('ss'):
+        forms |= inflections(last[:-1])
+    return {' '.join(words[:-1] + [form]) for form in forms}
+
+
+def covered(item, have):
+    """Whether a list item has an entry of its own: a headword, "also" word or gloss that is the item
+    whole, in any inflection, written as one word or two (high chair, highchair)."""
+    names, joined = have
+    forms = forms_of(item)
+    return bool(forms & names) or any(form.replace(' ', '') in joined for form in forms)
+
+
+def lexicon_names(root=ROOT):
+    names = covered_words(root)
+    return names, {name.replace(' ', '') for name in names}
 
 
 def load_list(path):
@@ -139,7 +171,8 @@ def main():
     parser.add_argument('--list', type=Path, default=ROOT / 'refs/ngsl-1.01.tsv')
     parser.add_argument('--out', type=Path, help='write a Markdown report of the gaps here')
     args = parser.parse_args()
-    have = covered_words()
+    have = lexicon_names()
+    inside = inside_words()
     targets = [w for w in load_list(args.list) if w not in FUNCTION_WORDS and w not in NOT_WORDS]
     gaps = [w for w in targets if not covered(w, have)]
     share = 100 * (len(targets) - len(gaps)) / len(targets)
@@ -150,9 +183,10 @@ def main():
         lines = [f'# Coverage of {args.list.name}', '',
                  f'{len(targets)} content words (function words left out), {len(targets) - len(gaps)} covered '
                  f'({share:.0f}%), {len(gaps)} without an entry. Generated by `scripts/coverage.py`; '
-                 'a word counts as covered when a record or card has it as a headword, an "also" word or a gloss.', '']
+                 'a word counts as covered when a record has it, whole, as a headword, an "also" word or a gloss. '
+                 'A word marked * appears inside a longer heading (go in "go to school") but has no entry of its own.', '']
         for low, high in bands:
-            band = [w for w in gaps if low <= rank[w] <= high]
+            band = [w + ('*' if set(w.split('.')[0].split()) <= inside else '') for w in gaps if low <= rank[w] <= high]
             if band:
                 lines += [f'## Ranks {low}–{high if high < 10 ** 6 else len(rank)}: {len(band)} gaps', '', ', '.join(band), '']
         if args.list.name.startswith('ngsl'):

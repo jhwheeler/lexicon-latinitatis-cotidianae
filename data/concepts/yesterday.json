@@ -1,0 +1,80 @@
+{
+  "id": "yesterday",
+  "english": "yesterday",
+  "pos": [
+    "adverb",
+    "noun"
+  ],
+  "also": [
+    "yesterday’s"
+  ],
+  "domain": "tempus",
+  "terms": [
+    {
+      "latin": "heri (here)",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "yesterday",
+      "grammar": "adverb",
+      "evidence": [
+        "Cic. Fam. 11.1.1: <span lang=\"la\">heri vesperī</span> (Lewis &amp; Short)",
+        "Sen. Ep. 64.1: <span lang=\"la\">fuistī here nōbīscum</span>",
+        "Traupman 89"
+      ],
+      "comment": "Lewis &amp; Short: <span lang=\"la\">heri</span> is perhaps the only form in Cicero; <span lang=\"la\">here</span> is the usual one after the Augustan age (Quint. 1.7.22).",
+      "notes": [
+        "heri"
+      ]
+    },
+    {
+      "latin": "hesternus, hesterna, hesternum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "yesterday’s, of yesterday",
+      "grammar": "adjective",
+      "evidence": [
+        "Catull. 50.1: <span lang=\"la\">hesternō … diē</span>",
+        "Ov. Fast. 5.506: <span lang=\"la\">ignis in hesternō stīpite parvus erat</span>"
+      ],
+      "comment": "<span lang=\"la\">hesternō diē</span> is “yesterday” too (Cic. N. D. 2.73, Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "fuistī here nōbīscum",
+      "english": "you were with us yesterday",
+      "source": "Sen. Ep. 64.1"
+    },
+    {
+      "latin": "ignis in hesternō stīpite parvus erat",
+      "english": "a small fire was still burning in yesterday’s log",
+      "source": "Ov. Fast. 5.506"
+    }
+  ],
+  "notes": {
+    "heri": {
+      "form": "heri",
+      "claim": "short final i",
+      "against": "Traupman 89 and the libellī <span lang=\"la\">herī</span>; Lewis &amp; Short leaves it unmarked",
+      "html": "De Vaan 283, s.v. <span lang=\"la\">heri</span>: <span lang=\"la\">here</span> continues Proto-Italic *<span lang=\"la\">-si</span>, so in <span lang=\"la\">heri</span> the long final vowel of *<span lang=\"la\">herī</span> has been shortened after the light first syllable; long <span lang=\"la\">herī</span>, made on <span lang=\"la\">domī</span> and <span lang=\"la\">rūrī</span>, occurs once, in Terence."
+    }
+  },
+  "related": [
+    "today",
+    "the-day-before-yesterday",
+    "yesterday-morning",
+    "yesterday-evening",
+    "last-night"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/heri\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: heri</a> · <a href=\"https://logeion.uchicago.edu/hesternus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: hesternus</a>",
+    "Michiel de Vaan, <em>Etymological Dictionary of Latin and the other Italic Languages</em> (2008), p. 283.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 89, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-seneca-epistulae, loci-catullus, loci-ovidius), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

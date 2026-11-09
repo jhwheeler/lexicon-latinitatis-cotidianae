@@ -1,0 +1,82 @@
+{
+  "id": "anything",
+  "english": "anything",
+  "sense": "in questions and after a negative",
+  "pos": "pronoun",
+  "also": [
+    "not anything",
+    "anything else?",
+    "is there anything?"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "quicquam (quidquam)",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "anything (after a negative, and in questions that expect “no”)",
+      "grammar": "pronoun (neuter of quisquam)",
+      "evidence": [
+        "Cic. Off. 1.101: <span lang=\"la\">nec vērō agere quicquam</span>",
+        "Cic. Sen. 66: <span lang=\"la\">potest enim quicquam esse absurdius …?</span>"
+      ],
+      "comment": "“Not anything” is <span lang=\"la\">nihil</span>, “and not anything” <span lang=\"la\">nec quicquam</span>. After <span lang=\"la\">sī, nisi, num, nē</span>, “anything” is <span lang=\"la\">quid</span> (see something)."
+    },
+    {
+      "latin": "ecquid",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "anything? (in an eager question)",
+      "grammar": "pronoun",
+      "evidence": [
+        "Cic. Fam. 7.11.2: <span lang=\"la\">quid agis? ecquid fit?</span>",
+        "Cic. Att. 2.8.1: <span lang=\"la\">quaerō ecquid litterārum</span>"
+      ],
+      "comment": "Lewis &amp; Short: in impassioned questions, = <span lang=\"la\">num quid</span>. As an adverb, “at all?”: <span lang=\"la\">ecquid audīs?</span>, can you hear me? (Plaut. Aul. 269–270)."
+    },
+    {
+      "latin": "numquid",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "anything? (expecting “no”)",
+      "grammar": "pronoun",
+      "evidence": [
+        "Ter. Ph. 151: <span lang=\"la\">Numquid … aliud mē vīs?</span>",
+        "Plaut. Ps. 664–665"
+      ],
+      "comment": "<span lang=\"la\">Numquid vīs?</span> or <span lang=\"la\">Numquid aliud mē vīs?</span>, anything else?, is the leave-taking of comedy."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "sed heus tū! quid agis? ecquid fit?",
+      "english": "but hey, you! how are you? is anything happening?",
+      "source": "Cic. Fam. 7.11.2"
+    },
+    {
+      "latin": "Numquid, Geta, aliud mē vīs? — Ut bene sit tibi.",
+      "english": "Anything else you want from me, Geta? — Just that you’re well.",
+      "source": "Ter. Ph. 151"
+    },
+    {
+      "latin": "potest enim quicquam esse absurdius quam, quō viae minus restet, eō plūs viāticī quaerere?",
+      "english": "for can anything be more absurd than to pack more provisions the less of the road is left?",
+      "source": "Cic. Sen. 66"
+    }
+  ],
+  "related": [
+    "something",
+    "anything-whatever",
+    "someone",
+    "zero"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/quisquam\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quisquam</a> · <a href=\"https://logeion.uchicago.edu/ecquis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ecquis</a> · <a href=\"https://logeion.uchicago.edu/numquid\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: numquid</a>",
+    "Quotations from the Latinitas loci collections (loci-cicero-philosophica, loci-cicero-epistulae, loci-terentius, loci-plautus), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

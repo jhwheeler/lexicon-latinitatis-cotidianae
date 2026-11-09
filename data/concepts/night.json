@@ -1,0 +1,68 @@
+{
+  "id": "night",
+  "english": "night",
+  "pos": "noun",
+  "also": [
+    "nights",
+    "at night",
+    "by night"
+  ],
+  "domain": "tempus",
+  "terms": [
+    {
+      "latin": "nox, noctis f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "night",
+      "evidence": [
+        "Mart. 2.90.10: <span lang=\"la\">sit nox cum somnō</span>",
+        "Traupman 88"
+      ],
+      "comment": "At night is <span lang=\"la\">noctū</span> or <span lang=\"la\">nocte</span>; late at night, <span lang=\"la\">multā nocte</span> (see late at night); last night, <span lang=\"la\">proximā nocte</span> (see last night); at this time of night, <span lang=\"la\">hōc noctis</span> (Traupman 88)."
+    },
+    {
+      "latin": "noctū",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "at night, by night",
+      "grammar": "adverb",
+      "evidence": [
+        "Gell. 17.10.11: <span lang=\"la\">interdius fūmāre Aetnam, noctū flammigāre</span>",
+        "Cic. Fam. 9.2.1: <span lang=\"la\">cōnscrīpsī epistulam noctū</span>"
+      ],
+      "comment": "The opposite of <span lang=\"la\">interdiū</span>, by day."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "sit nox cum somnō, sit sine līte diēs",
+      "english": "let the night have sleep, and the day no quarrels",
+      "source": "Mart. 2.90.10"
+    },
+    {
+      "latin": "nox ubi jam media est somnōque silentia praebet, et canis et variae conticuistis avēs",
+      "english": "when it is midnight and the night offers silence for sleep, you too fall silent, dog, and you, many-coloured birds",
+      "source": "Ov. Fast. 5.429–430"
+    }
+  ],
+  "related": [
+    "day",
+    "good-night",
+    "tonight",
+    "last-night",
+    "every-night",
+    "late-at-night",
+    "midnight",
+    "day-and-night"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/nox\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nox</a> · <a href=\"https://logeion.uchicago.edu/noctu\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: noctu</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 88, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-martialis, loci-ovidius, loci-gellius, loci-cicero-epistulae), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

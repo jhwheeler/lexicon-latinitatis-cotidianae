@@ -3,7 +3,10 @@
   "english": "change money",
   "pos": "verb",
   "also": [
-    "exchange money"
+    "exchange money",
+    "exchange",
+    "currency exchange",
+    "exchange currency"
   ],
   "also_under": [
     "pecunia"
@@ -14,19 +17,42 @@
       "latin": "permūtāre",
       "status": "recommended",
       "period": "classical",
+      "gloss": "exchange money, coin for coin or one currency for another",
       "evidence": [
-        "M-O"
+        "M-O",
+        "Plin. NH 33.45: <span lang=\"la\">placuitque dēnārium XVI assibus permūtārī</span>",
+        "Cic. Att. 12.24.1 (Lewis &amp; Short)"
+      ],
+      "comment": "In business Latin, to exchange money, and to send it abroad by a bill of exchange (Cic. Att. 12.24.1; Lewis &amp; Short)."
+    },
+    {
+      "latin": "permūtātiō, permūtātiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "an exchange of money; payment by a bill of exchange",
+      "evidence": [
+        "Cic. Fam. 3.5.4: <span lang=\"la\">quae mihi ex pūblicā permūtātiōne dēbētur</span>, (the money) due to me from the public exchange"
       ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "placuitque dēnārium XVI assibus permūtārī, quīnārium octōnīs, sēstertium quaternīs",
+      "english": "and it was decided that a denarius should be exchanged for sixteen asses, a quinarius for eight and a sesterce for four",
+      "source": "Plin. NH 33.45"
     }
   ],
   "related": [
     "money-changer",
     "currency",
-    "change"
+    "change",
+    "rate",
+    "trade-exchange"
   ],
   "sources": [
-    "<a href=\"https://logeion.org/permuto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: permuto</a>",
-    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. exchange (vb)."
+    "<a href=\"https://logeion.org/permuto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: permuto</a> · <a href=\"https://logeion.uchicago.edu/permutatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: permutatio</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. exchange (vb).",
+    "Pliny, NH 33.45, checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (Mayhoff’s text), and Cicero, Fam. 3.5.4, against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
   ],
   "review": {
     "status": "draft",

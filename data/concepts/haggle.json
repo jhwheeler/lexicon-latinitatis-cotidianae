@@ -1,0 +1,86 @@
+{
+  "id": "haggle",
+  "english": "haggle",
+  "pos": "verb",
+  "also": [
+    "haggling",
+    "bargain over the price",
+    "haggle over the price",
+    "beat down the price"
+  ],
+  "domain": "pecunia",
+  "also_under": [
+    "urbs"
+  ],
+  "terms": [
+    {
+      "latin": "dē pretiō pacīscī",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "bargain over the price, haggle",
+      "grammar": "verb phrase: pacīscor, deponent",
+      "evidence": [
+        "Suet. Gram. 7.2: <span lang=\"la\">nec unquam dē mercēdibus pactus</span>, he never bargained over his fees",
+        "Plaut. Bacch. 865–866: <span lang=\"la\">pacīscī cum illō paululā pecūniā potes</span>, you can strike a bargain with him for a little money"
+      ],
+      "comment": "<span lang=\"la\">pacīscor</span> is to bargain, to settle terms (with long ī, de Vaan 452, <span lang=\"la\">pacīscere</span>); once buyer and seller agree, <span lang=\"la\">dē pretiō convēnit</span> (Quint. 4.2.41)."
+    },
+    {
+      "latin": "nūndinor, nūndinārī, nūndinātus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "haggle, chaffer (with contempt)",
+      "evidence": [
+        "Liv. 22.56.3: <span lang=\"la\">in captīvōrum pretiīs … nec magnī ducis mōre nūndinantem</span>, haggling over the prisoners’ ransoms, not as a great general would"
+      ],
+      "comment": "Properly to trade at the market (<span lang=\"la\">nūndinae</span>, with long ū, de Vaan 415); said with contempt of haggling, and of trafficking in what should not be sold (Cic. Phil. 3.10, Lewis &amp; Short)."
+    },
+    {
+      "latin": "licitor, licitārī, licitātus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "bid, make an offer",
+      "evidence": [
+        "Plaut. Merc. 441: <span lang=\"la\">nē licitēre advorsum meī animī sententiam</span>, don’t go bidding against my wishes",
+        "Comen. OP 126: <span lang=\"la\">Ēmptor licitātur, et pretium offert</span>"
+      ],
+      "comment": "In Plautus to bid against a rival buyer; Comenius uses it of the customer making his offer at a stall."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "In portum vēnī, nāvem prōspexī, quantī veheret interrogāvī, dē pretiō convēnit, cōnscendī, sublātae sunt ancorae, solvimus ōram, profectī sumus.",
+      "english": "I came to the harbour, looked over a ship, asked what the fare was, we agreed on the price, I went aboard, the anchors were weighed, we cast off and set out.",
+      "source": "Quint. 4.2.41"
+    },
+    {
+      "latin": "praetereā cōmī facilīque nātūrā, nec unquam dē mercēdibus pactus, eōque plūra ex līberālitāte discentium cōnsecūtus",
+      "english": "a kindly, easy-going man besides, who never bargained over his fees and so received all the more from his pupils’ generosity",
+      "source": "Suet. Gram. 7.2"
+    },
+    {
+      "latin": "Vēnditor ostentat rem prōmercālem, et indicat pretium, quantī liceat. Ēmptor licitātur, et pretium offert.",
+      "english": "The seller shows his goods and names the price, what they cost; the buyer bargains and offers a price.",
+      "source": "Comen. OP 126"
+    }
+  ],
+  "related": [
+    "price",
+    "bargain",
+    "market",
+    "buy",
+    "sell",
+    "set-a-price"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/paciscor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: paciscor</a> · <a href=\"https://logeion.uchicago.edu/nundinor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nundinor</a> · <a href=\"https://logeion.uchicago.edu/licitor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: licitor</a>",
+    "Michiel de Vaan, <em>Etymological Dictionary of Latin and the other Italic Languages</em> (2008), pp. 415 (s.v. <span lang=\"la\">novem</span>: <span lang=\"la\">nūndinae</span>) and 452 (s.v. <span lang=\"la\">pāx</span>: <span lang=\"la\">pacīscere</span>).",
+    "Quintilian, Suetonius, Plautus and Livy checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-comenius), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

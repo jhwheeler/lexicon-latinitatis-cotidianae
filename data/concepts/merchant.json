@@ -1,0 +1,68 @@
+{
+  "id": "merchant",
+  "english": "merchant",
+  "pos": "noun",
+  "also": [
+    "merchants",
+    "trader",
+    "dealer",
+    "wholesaler"
+  ],
+  "domain": "pecunia",
+  "also_under": [
+    "urbs"
+  ],
+  "terms": [
+    {
+      "latin": "mercātor, mercātōris m.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a merchant, a trader",
+      "evidence": [
+        "Cato Agr. praef. 3: <span lang=\"la\">mercātōrem autem strēnuum studiōsumque reī quaerendae exīstimō</span>",
+        "Hor. C. 1.1.16"
+      ],
+      "comment": "Especially the wholesale trader who buys in bulk and ships goods, as against the retailer (Lewis &amp; Short)."
+    },
+    {
+      "latin": "negōtiātor, negōtiātōris m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a businessman, a dealer",
+      "evidence": [
+        "Suet. Claud. 18.2: <span lang=\"la\">negōtiātōribus certa lucra prōposuit</span>, he offered merchants a sure profit",
+        "Traupman 165: businessman"
+      ],
+      "comment": "A wholesale dealer or banker (Lewis &amp; Short); see business."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "luctantem Īcariīs flūctibus Āfricum mercātor metuēns ōtium et oppidī laudat rūra suī; mox reficit ratēs quassās, indocilis pauperiem patī.",
+      "english": "The merchant, afraid of the south-west wind wrestling with the Icarian waves, praises a quiet life and the fields of his home town; soon he is refitting his battered ships, unable to learn to put up with being poor.",
+      "source": "Hor. C. 1.1.15–18"
+    },
+    {
+      "latin": "Mercātōrem autem strēnuum studiōsumque reī quaerendae exīstimō, vērum, ut suprā dīxī, perīculōsum et calamitōsum.",
+      "english": "The merchant I consider energetic and keen to make money, but, as I said above, exposed to danger and disaster.",
+      "source": "Cato Agr. praef. 3"
+    }
+  ],
+  "related": [
+    "business",
+    "shopkeeper",
+    "seller",
+    "trade-exchange",
+    "market"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/mercator\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mercator</a> · <a href=\"https://logeion.uchicago.edu/negotiator\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: negotiator</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 165, checked against the searchable text of the book (9 November 2026).",
+    "Cato, Horace and Suetonius checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

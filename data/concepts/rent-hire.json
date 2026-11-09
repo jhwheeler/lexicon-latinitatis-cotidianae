@@ -1,0 +1,78 @@
+{
+  "id": "rent-hire",
+  "english": "rent",
+  "sense": "pay to use; let out",
+  "pos": "verb",
+  "also": [
+    "rent out",
+    "let",
+    "hire",
+    "rent a flat",
+    "rent a car",
+    "rented",
+    "to let"
+  ],
+  "domain": "pecunia",
+  "also_under": [
+    "domus"
+  ],
+  "terms": [
+    {
+      "latin": "condūcō, condūcere, condūxī, conductum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "rent, hire (as the tenant or hirer)",
+      "evidence": [
+        "Cic. Cael. 18: <span lang=\"la\">condūxit in Palātiō nōn magnō domum</span>",
+        "Traupman 370; 215: <span lang=\"la\">autoraedam condūcere</span>, to rent a car"
+      ],
+      "comment": "The one who pays <span lang=\"la\">condūcit</span>, the owner <span lang=\"la\">locat</span>. A rented house is <span lang=\"la\">domus conductīcia</span> (Lewis &amp; Short s.v. <span lang=\"la\">conductīcius</span>)."
+    },
+    {
+      "latin": "locō, locāre, locāvī, locātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "rent out, let",
+      "evidence": [
+        "Plin. Ep. 9.37.3: <span lang=\"la\">sī nōn nummō sed partibus locem</span>, if I let (the farms) not for money but for a share of the crop",
+        "Traupman 370: <span lang=\"la\">locāre</span>, to rent out"
+      ],
+      "comment": "Also to give out a job on contract; whoever takes it on <span lang=\"la\">condūcit</span> (see contractor)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "in omnīque rē contrahendā, vendundō emendō, condūcendō locandō, vīcīnitātibus et cōnfīniīs, aequum, facilem, multa multīs dē suō jūre cēdentem",
+      "english": "in every bargain, selling and buying, renting and letting, as a neighbour and over boundaries, (he should be) fair and easy, giving up much of his right to many",
+      "source": "Cic. Off. 2.64"
+    },
+    {
+      "latin": "cum domus patris ā forō longē abesset, quō facilius et nostrās domūs obīre et ipse ā suīs colī posset, condūxit in Palātiō nōn magnō domum",
+      "english": "since his father’s house was a long way from the Forum, so that he could visit our houses more easily and be visited by his own friends, he rented a house on the Palatine, at no great price",
+      "source": "Cic. Cael. 18"
+    },
+    {
+      "latin": "In quā domō habitat? — In quādam conductītiā. — Eho, nūllamne habet propriam domum? — Habet quidem, sed eam locat quibusdam inquilīnīs.",
+      "english": "What house does he live in? — A rented one. — What, hasn’t he a house of his own? — He has, but he lets it to some tenants.",
+      "source": "Cord. Coll. 2.26"
+    }
+  ],
+  "related": [
+    "rent-money",
+    "landlord",
+    "tenant",
+    "lend",
+    "contractor"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/conduco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: conduco</a> · <a href=\"https://logeion.uchicago.edu/loco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: loco</a> · <a href=\"https://logeion.uchicago.edu/conducticius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: conducticius</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 215, 370, checked against the searchable text of the book (9 November 2026).",
+    "Cicero and Pliny checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-cicero-philosophica, loci-corderius), checked against the editions named there; the Corderius against a single transcription."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

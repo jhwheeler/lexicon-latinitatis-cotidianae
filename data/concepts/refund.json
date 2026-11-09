@@ -1,0 +1,75 @@
+{
+  "id": "refund",
+  "english": "refund",
+  "pos": [
+    "verb",
+    "noun"
+  ],
+  "also": [
+    "refunds",
+    "give a refund",
+    "get a refund",
+    "money back",
+    "give the money back",
+    "pay back",
+    "repay",
+    "reimburse"
+  ],
+  "domain": "pecunia",
+  "also_under": [
+    "urbs"
+  ],
+  "terms": [
+    {
+      "latin": "pecūniam reddere",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "give the money back, refund",
+      "grammar": "verb phrase",
+      "evidence": [
+        "Cic. Verr. 2.1.92: <span lang=\"la\">sī nōn redderet pecūniam</span>, if he would not give back the money",
+        "Liv. 33.13: <span lang=\"la\">obsidēs pecūniamque reddī Philippō</span>"
+      ],
+      "comment": "Latin has no word of its own for it: <span lang=\"la\">reddere</span>, give back (see give back), with the money as its object; comedy says <span lang=\"la\">argentum reddere</span>."
+    },
+    {
+      "latin": "redhibeō, redhibēre, —, redhibitum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "return a faulty purchase (for the price back); of the seller, take it back",
+      "evidence": [
+        "Plaut. Merc. 419: <span lang=\"la\">dīxit sē redhibēre, sī nōn placeat</span>, he said he would take her back if she did not suit",
+        "Cic. Off. 3.91 (Lewis &amp; Short)"
+      ],
+      "comment": "A trader’s word: the goods go back to the seller, and the price to the buyer (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "tū huic argentum redde. hoc jūdicium meum est. — Tū autem in nervō jam jacēbis, nisi mī argentum redditur.",
+      "english": "You, give him his money back: that is my judgment. — And you’ll soon be lying in chains if I don’t get my money back.",
+      "source": "Plaut. Curc. 717–718"
+    },
+    {
+      "latin": "sī pāx nōn impetrāta ab senātū foret, obsidēs pecūniamque reddī Philippō receptum est",
+      "english": "it was guaranteed that if the senate did not grant peace, the hostages and the money would be given back to Philip",
+      "source": "Liv. 33.13"
+    }
+  ],
+  "related": [
+    "give-back",
+    "pay",
+    "price",
+    "receipt",
+    "shop"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/reddo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: reddo</a> · <a href=\"https://logeion.uchicago.edu/redhibeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: redhibeo</a>",
+    "Cicero, Livy and Plautus checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

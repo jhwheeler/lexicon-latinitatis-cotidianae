@@ -1,0 +1,70 @@
+{
+  "id": "wage",
+  "english": "wage",
+  "pos": "noun",
+  "also": [
+    "wages",
+    "pay",
+    "daily wage",
+    "a day’s pay"
+  ],
+  "domain": "pecunia",
+  "also_under": [
+    "labor"
+  ],
+  "terms": [
+    {
+      "latin": "mercēs, mercēdis f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "pay, wages (for work done)",
+      "evidence": [
+        "Sall. Cat. 37.7: <span lang=\"la\">manuum mercēde inopiam tolerāverat</span>, had kept poverty off with the wages of their hands",
+        "Traupman 403: <span lang=\"la\">mercēdem accipere</span>, to receive wages; <span lang=\"la\">mercēdem tribuere</span>, to pay wages",
+        "M-O s.v. salary, pay (of employees), wages"
+      ],
+      "comment": "What any work earns: a labourer’s wages, a teacher’s fee, an actor’s pay; also rent (see rent, money paid for a house or flat). A day’s wage is <span lang=\"la\">mercēs diurna</span>: <span lang=\"la\">mercēde diurnā conductum</span>, a man hired by the day (Hor. S. 2.7.18)."
+    },
+    {
+      "latin": "mercēdula, mercēdulae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "small wages, poor pay",
+      "evidence": [
+        "Cic. de Or. 1.198: <span lang=\"la\">īnfimī hominēs mercēdulā adductī</span>, the lowest of men, drawn by a little pay"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ingrāta es, inquit, ōre quae nostrō caput incolume abstulerīs et mercēdem postulēs",
+      "english": "‘Ungrateful creature,’ he said, ‘you got your head out of my mouth unharmed, and now you want paying?’",
+      "source": "Phaedr. 1.8.11–12"
+    },
+    {
+      "latin": "dignus enim est operārius mercēde suā",
+      "english": "for the labourer deserves his wages",
+      "source": "Vulg. Lc. 10.7"
+    }
+  ],
+  "related": [
+    "salary",
+    "earn",
+    "employee",
+    "employer",
+    "rate",
+    "income"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/merces\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: merces</a> · <a href=\"https://logeion.uchicago.edu/mercedula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mercedula</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. salary, pay (of employees), wages.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 403, checked against the searchable text of the book (9 November 2026).",
+    "Sallust, Cicero, Horace and the Vulgate checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-phaedrus), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

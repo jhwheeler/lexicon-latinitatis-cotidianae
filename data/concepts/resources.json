@@ -9,6 +9,7 @@
     "funds",
     "assets",
     "wealth",
+    "riches",
     "natural resources"
   ],
   "domain": "pecunia",
@@ -23,6 +24,17 @@
         "Cic. Tusc. 5.61: <span lang=\"la\">cōpiās ejus, opēs, majestātem dominātūs</span>"
       ],
       "comment": "Means of every kind: money, property, power (Lewis &amp; Short)."
+    },
+    {
+      "latin": "dīvitiae, dīvitiārum f. pl.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "riches, wealth",
+      "evidence": [
+        "Plaut. Rud. 1320: <span lang=\"la\">dīvitiās tū quidem habuistī lūculentās</span>",
+        "Cic. Att. 1.4.3: <span lang=\"la\">superō Crassum dīvitiīs</span>, I am richer than Crassus"
+      ],
+      "comment": "Riches as such, the opposite of poverty (see poverty); <span lang=\"la\">opēs</span> are means and power as well."
     },
     {
       "latin": "facultātēs, facultātum f. pl.",
@@ -54,17 +66,24 @@
       "latin": "Sunt quidem omnīnō nōbīs modicae facultātēs, dignitās sūmptuōsa",
       "english": "My means, it is true, are modest, and my position is costly",
       "source": "Plin. Ep. 2.4.3"
+    },
+    {
+      "latin": "homō doctus in sē semper dīvitiās habet",
+      "english": "a learned man always has his riches within himself",
+      "source": "Phaedr. 4.23.1"
     }
   ],
   "related": [
     "money",
     "fund",
     "supply",
-    "property-possessions"
+    "property-possessions",
+    "rich",
+    "poverty"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/ops\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ops</a> · <a href=\"https://logeion.uchicago.edu/facultas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: facultas</a> · <a href=\"https://logeion.uchicago.edu/copia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: copia</a>",
-    "Quotations from the Latinitas loci collections (loci-ovidius, loci-cicero-philosophica), checked against the editions named there.",
+    "<a href=\"https://logeion.uchicago.edu/ops\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ops</a> · <a href=\"https://logeion.uchicago.edu/facultas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: facultas</a> · <a href=\"https://logeion.uchicago.edu/copia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: copia</a> · <a href=\"https://logeion.uchicago.edu/divitiae\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: divitiae</a>",
+    "Quotations from the Latinitas loci collections (loci-ovidius, loci-cicero-philosophica, loci-phaedrus, loci-plautus), checked against the editions named there.",
     "Cicero and Pliny checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
   ],
   "review": {

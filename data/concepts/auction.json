@@ -1,0 +1,80 @@
+{
+  "id": "auction",
+  "english": "auction",
+  "pos": "noun",
+  "also": [
+    "auctions",
+    "sell at auction",
+    "auctioneer",
+    "bid",
+    "bidding",
+    "public sale"
+  ],
+  "domain": "pecunia",
+  "terms": [
+    {
+      "latin": "auctiō, auctiōnis f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "an auction",
+      "evidence": [
+        "Plaut. Men. 1157: <span lang=\"la\">Auctiō fīet Menaechmī māne sānē septimī</span>",
+        "Cic. Att. 13.14: <span lang=\"la\">auctiōnis diem</span> (Lewis &amp; Short)"
+      ],
+      "comment": "A sale to the highest bidder: a spear (<span lang=\"la\">hasta</span>) was set up, a crier (<span lang=\"la\">praecō</span>) called the bids and a banker took the money (Lewis &amp; Short). To hold one, <span lang=\"la\">auctiōnem facere</span>."
+    },
+    {
+      "latin": "sub hastā vēndere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "sell at auction",
+      "grammar": "verb phrase",
+      "evidence": [
+        "Liv. 23.38.7: <span lang=\"la\">comitibusque eōrum sub hastā vēnditīs</span>, and their companions sold at auction"
+      ]
+    },
+    {
+      "latin": "liceor, licērī, licitus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "bid (at an auction)",
+      "evidence": [
+        "Caes. BG 1.18.3: <span lang=\"la\">illō licente contrā licērī audeat nēmō</span>, no one dares bid against him",
+        "Cic. Verr. 2.3.27: <span lang=\"la\">quī digitō sit licitus</span>, who bid with a raised finger"
+      ],
+      "comment": "The goods themselves <span lang=\"la\">licent</span>, fetch a price: <span lang=\"la\">vēnībunt quīquī licēbunt</span> (Plaut. Men. 1159)."
+    },
+    {
+      "latin": "praecō, praecōnis m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the crier who calls an auction; an auctioneer",
+      "evidence": [
+        "Hor. AP 419: <span lang=\"la\">ut praecō, ad mercēs turbam quī cōgit emendās</span>, like a crier who gathers a crowd to buy the goods"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Auctiō fīet Menaechmī māne sānē septimī. vēnībunt servī, supellex, fundī, aedēs, omnia. vēnībunt quīquī licēbunt, praesentī pecūniā.",
+      "english": "Menaechmus’s auction will be held bright and early on the seventh day. For sale: slaves, furniture, farms, house, everything. Sold at whatever they fetch, cash down.",
+      "source": "Plaut. Men. 1157–1159"
+    }
+  ],
+  "related": [
+    "sale-selling",
+    "sell",
+    "price",
+    "buy"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/auctio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: auctio</a> · <a href=\"https://logeion.uchicago.edu/hasta\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: hasta</a> · <a href=\"https://logeion.uchicago.edu/liceor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: liceor</a> · <a href=\"https://logeion.uchicago.edu/praeco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praeco</a>",
+    "Plautus, Livy, Caesar, Cicero and Horace checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

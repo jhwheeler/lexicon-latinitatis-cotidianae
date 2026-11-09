@@ -1,0 +1,100 @@
+{
+  "id": "animal",
+  "english": "animal",
+  "pos": "noun",
+  "also": [
+    "animals",
+    "creature",
+    "beast"
+  ],
+  "domain": "natura",
+  "terms": [
+    {
+      "latin": "animal, animālis n.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "animal, living creature",
+      "evidence": [
+        "Cic. <em>ND</em> 2.122",
+        "Plin. <em>NH</em> 9.42",
+        "Traupman 141",
+        "M-O s.v. animal"
+      ],
+      "comment": "Any living creature, man included (<span lang=\"la\">animal … homō</span>, Cic. <em>Leg.</em> 1.22), but as often the beasts as against man (Lewis &amp; Short). An i-stem: ablative <span lang=\"la\">animālī</span>, plural <span lang=\"la\">animālia, animālium</span>."
+    },
+    {
+      "latin": "bēstia, bēstiae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "beast, any creature but man",
+      "evidence": [
+        "Cic. <em>Amic.</em> 81: <span lang=\"la\">in bēstiīs, volucribus, nantibus, agrestibus, cicuribus, ferīs</span>",
+        "M-O s.v. animal"
+      ],
+      "comment": "Cicero’s word for every creature but man, tame or wild (Lewis &amp; Short); also the wild beast of the arena. Its diminutive <span lang=\"la\">bēstiola</span> is a little creature, a bug (Cic. <em>ND</em> 2.123).",
+      "notes": [
+        "bestia"
+      ]
+    },
+    {
+      "latin": "fera, ferae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "wild animal",
+      "evidence": [
+        "Traupman 138: <span lang=\"la\">Quās ferās ibi vīdistī?</span>",
+        "Phaedr. 1 prol. 5–7: <span lang=\"la\">quod arborēs loquantur, nōn tantum ferae</span>"
+      ],
+      "comment": "The wild animal, the talking beast of the fables; properly the feminine of <span lang=\"la\">ferus</span>, wild."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "alia animālia gradiendō, alia serpendō ad pāstum accēdunt, alia volandō, alia nandō",
+      "english": "some animals come to their food walking, some crawling, some flying, some swimming",
+      "source": "Cic. <em>ND</em> 2.122"
+    },
+    {
+      "latin": "nūllum animal graviōre somnō premitur",
+      "english": "no animal sleeps more soundly (of the seal)",
+      "source": "Plin. <em>NH</em> 9.42"
+    },
+    {
+      "latin": "Aperīs tū manum tuam, et implēs omne animal benedictiōne.",
+      "english": "You open your hand and fill every living thing with blessing (the grace before meals).",
+      "source": "Vulg. Ps. 144 (145), 16"
+    },
+    {
+      "latin": "Quod animal tē potissimum dēlectāvit?",
+      "english": "Which animal did you like best?",
+      "source": "Traupman 138"
+    }
+  ],
+  "notes": {
+    "bestia": {
+      "form": "bēstia",
+      "claim": "long e",
+      "against": "Lewis &amp; Short leaves it unmarked",
+      "html": "De Vaan 71, s.v. <span lang=\"la\">bēstia</span>; the series spelling of the libellī."
+    }
+  },
+  "related": [
+    "pet",
+    "zoo",
+    "livestock",
+    "feed",
+    "stuffed-animal"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/animal\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: animal</a> · <a href=\"https://logeion.uchicago.edu/bestia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: bestia</a> · <a href=\"https://logeion.uchicago.edu/bestiola\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: bestiola</a> · <a href=\"https://logeion.uchicago.edu/fera\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fera</a>",
+    "Michiel de Vaan, <em>Etymological Dictionary of Latin and the other Italic Languages</em> (2008), p. 71, s.v. bēstia.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 138, 141.",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. animal.",
+    "Cicero checked against the Latin Library text (<a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">CLTK mirror</a>); Pliny against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (Mayhoff); the psalm and Phaedrus from the Latinitas loci collections (loci-vulgata, loci-phaedrus)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

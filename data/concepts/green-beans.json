@@ -1,0 +1,54 @@
+{
+  "id": "green-beans",
+  "english": "green beans",
+  "pos": "noun",
+  "also": [
+    "green bean",
+    "string beans",
+    "French beans"
+  ],
+  "domain": "natura",
+  "terms": [
+    {
+      "latin": "phaseolī viridēs",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "green beans, eaten pod and all",
+      "evidence": [
+        "Col. 12.9.1: <span lang=\"la\">phaseolī viridēs integrī</span>",
+        "Apic. 5.8.1: <span lang=\"la\">faseolī viridēs</span>",
+        "M-O s.v. green beans"
+      ],
+      "comment": "Columella’s <span lang=\"la\">phaseolus</span>, the diminutive of <span lang=\"la\">phasēlus</span> (see bean), with <span lang=\"la\">viridis</span>, green: the unripe pods, which Pliny says are eaten with the beans inside (<em>NH</em> 18.125, as Morgan–Owens cites it). Apicius spells it <span lang=\"la\">faseolus</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Faseolī viridēs et cicer ex sale, cumīnō, oleō et merō modicō īnferuntur.",
+      "english": "Green beans and chickpeas are served with salt, cumin, oil and a little neat wine.",
+      "source": "Apic. 5.8.1"
+    },
+    {
+      "latin": "Ūnum saltem phaseolum gustā.",
+      "english": "Just try one green bean.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "bean",
+    "pea",
+    "pod",
+    "vegetable"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/phaseolus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: phaseolus</a> · <a href=\"https://logeion.uchicago.edu/phaselus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: phaselus</a> · <a href=\"https://logeion.uchicago.edu/viridis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: viridis</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. legume: beans, common: green beans.",
+    "Columella and Apicius checked against the Latin Library text (<a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">CLTK mirror</a>).",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "id": "camping",
+  "english": "camping",
+  "pos": "noun",
+  "also": [
+    "go camping",
+    "camp out"
+  ],
+  "domain": "vectura",
+  "terms": [
+    {
+      "latin": "sub pellibus pernoctāre",
+      "status": "recommended",
+      "period": "ours",
+      "gloss": "camp out, sleep in a tent",
+      "evidence": [
+        "Caes. <em>BC</em> 3.13: <span lang=\"la\">sub pellibus hiemāre</span>",
+        "Cic. <em>Clu.</em> 37: <span lang=\"la\">cum ibi pernoctāret</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Our phrase. <span lang=\"la\">Sub pellibus</span>, “under hides”, is Caesar’s and Livy’s for soldiers living in tents, which were made of leather; <span lang=\"la\">pernoctāre</span> is to spend the night. No word for camping as a pastime is known; Traupman gives only the campsite and the tent."
+    },
+    {
+      "latin": "sub dīvō pernoctāre",
+      "status": "alternative",
+      "period": "ours",
+      "gloss": "sleep out under the open sky",
+      "evidence": [
+        "Hor. <em>C.</em> 3.2.5: <span lang=\"la\">vītamque sub dīvō … agat</span>"
+      ],
+      "comment": "<span lang=\"la\">Sub dīvō</span>, under the open sky, in the open air (Cic., Hor.)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "sub pellibus hiemāre cōnstituit",
+      "english": "he decided to winter in tents (Caesar, of his army)",
+      "source": "Caes. <em>BC</em> 3.13"
+    },
+    {
+      "latin": "Hāc aestāte sub pellibus pernoctābimus.",
+      "english": "This summer we’ll go camping.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "tent",
+    "campsite",
+    "camp-bed",
+    "camping-stove",
+    "picnic"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/pellis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pellis</a> · <a href=\"https://logeion.uchicago.edu/pernocto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pernocto</a> · <a href=\"https://logeion.uchicago.edu/divum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: divum</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 286, 392 (campsite and tent; no word for camping). Morgan–Owens has only the camping stove.",
+    "Caesar and Horace checked against the Latin Library text (<a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">CLTK mirror</a>).",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

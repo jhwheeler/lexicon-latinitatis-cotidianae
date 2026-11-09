@@ -1,0 +1,89 @@
+{
+  "id": "lip",
+  "english": "lip",
+  "pos": "noun",
+  "also": [
+    "lips"
+  ],
+  "domain": "corpus",
+  "terms": [
+    {
+      "latin": "labrum, labrī n.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "lip",
+      "evidence": [
+        "Caes. <em>BG</em> 5.14: <span lang=\"la\">labrum superius</span>",
+        "Plin. <em>NH</em> 9.64: <span lang=\"la\">īnferiōrī labrō</span>",
+        "Traupman 58, 340"
+      ],
+      "comment": "The ordinary word. <span lang=\"la\">Labrum superius</span>, the upper lip; <span lang=\"la\">labrum īnferius</span>, the lower (Traupman). Not <span lang=\"la\">lābrum</span>, a basin.",
+      "notes": [
+        "labrum"
+      ]
+    },
+    {
+      "latin": "labellum, labellī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "little lip; a baby’s lips",
+      "evidence": [
+        "Cic. <em>Div.</em> 1.78",
+        "Catull. 61.209–213"
+      ],
+      "comment": "The diminutive, of a baby’s lips; in Plautus a pet name too (Lewis &amp; Short)."
+    },
+    {
+      "latin": "labium, labiī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "lip; mostly in the plural, labia",
+      "evidence": [
+        "Plin. <em>NH</em> 29.46 (Lewis &amp; Short)",
+        "Vulg. Ps. 50 (51), 17"
+      ],
+      "comment": "Ante- and post-classical for <span lang=\"la\">labrum</span> (Lewis &amp; Short): Plautus’s and Terence’s feminine <span lang=\"la\">labea</span>, Pliny’s neuter plural <span lang=\"la\">labia</span>, and so in Church Latin."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Torquātus volō parvulus mātris ē gremiō suae porrigēns tenerās manūs dulce rīdeat ad patrem sēmihiante labellō",
+      "english": "I want a little Torquatus, reaching out his tender hands from his mother’s lap, to laugh sweetly at his father with half-open lips",
+      "source": "Catull. 61.209–213"
+    },
+    {
+      "latin": "Platōnī cum in cūnīs parvulō dormientī apēs in labellīs cōnsēdissent",
+      "english": "when Plato was a baby asleep in his cradle and bees settled on his little lips",
+      "source": "Cic. <em>Div.</em> 1.78"
+    },
+    {
+      "latin": "Domine, labia mea aperiēs, et ōs meum annūntiābit laudem tuam.",
+      "english": "Lord, open my lips, and my mouth shall proclaim your praise.",
+      "source": "Vulg. Ps. 50 (51), 17"
+    }
+  ],
+  "notes": {
+    "labrum": {
+      "form": "labrum",
+      "claim": "short a",
+      "against": "Lewis &amp; Short <span lang=\"la\">lā̆brum</span>, common",
+      "html": "Hor. <em>C.</em> 1.13.12, <span lang=\"la\">dente labrīs notam</span>, the close of a lesser asclepiad: <span lang=\"la\">la-</span> takes a short place; Vergil makes the syllable heavy before br (<em>E.</em> 3.43, <span lang=\"la\">necdum illīs labra admōvī</span>). De Vaan 319, s.v. <span lang=\"la\">labium</span>. <span lang=\"la\">Lābrum</span>, a basin, is another word, from <span lang=\"la\">lavābrum</span> (de Vaan 330)."
+    }
+  },
+  "related": [
+    "mouth",
+    "kiss",
+    "put-a-finger-to-ones-lips"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/labrum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: labrum</a> · <a href=\"https://logeion.uchicago.edu/labellum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: labellum</a> · <a href=\"https://logeion.uchicago.edu/labia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: labia</a>",
+    "Michiel de Vaan, <em>Etymological Dictionary of Latin and the other Italic Languages</em> (2008), p. 319, s.v. labium, and p. 330, s.v. lavō.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 58, 340.",
+    "Caesar, Horace, Vergil, Cicero and Catullus checked against the Latin Library text (<a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">CLTK mirror</a>); Pliny and the psalm from the Latinitas loci collections (loci-plinius, loci-vulgata)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

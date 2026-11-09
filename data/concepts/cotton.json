@@ -1,0 +1,77 @@
+{
+  "id": "cotton",
+  "english": "cotton",
+  "pos": [
+    "noun",
+    "adjective"
+  ],
+  "domain": "vestitus",
+  "terms": [
+    {
+      "latin": "gossypium, gossypiī n.",
+      "status": "recommended",
+      "period": "classical",
+      "evidence": [
+        "M-O s.v. cloth, types: cotton",
+        "Plin. NH 19.14: <span lang=\"la\">fruticem, quem aliquī gossypion vocant, plūrēs xylon</span>"
+      ],
+      "comment": "Traupman has no word for cotton.",
+      "notes": [
+        "gossypium"
+      ]
+    },
+    {
+      "latin": "gossypinus, gossypina, gossypinum",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "of cotton",
+      "evidence": [
+        "M-O, citing Pliny"
+      ]
+    },
+    {
+      "latin": "xylina",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "cotton cloth",
+      "evidence": [
+        "Plin. NH 19.14"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Ex quō facta est haec tunicula? — Ex gossypiō.",
+      "english": "What is this T-shirt made of? — Cotton.",
+      "source": "composed"
+    }
+  ],
+  "notes": {
+    "gossypium": {
+      "form": "gossypium",
+      "claim": "Latin ending -um",
+      "against": "Pliny’s Greek form <span lang=\"la\">gossypion</span>",
+      "html": "Plin. NH 19.14. Neither <span lang=\"la\">gossypium</span> nor <span lang=\"la\">gossypinus</span> is a headword in the local Lewis &amp; Short."
+    }
+  },
+  "related": [
+    "linen",
+    "wool",
+    "cloth",
+    "t-shirt"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.org/gossypion\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gossypion</a> · <a href=\"https://logeion.org/xylon\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: xylon</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. cloth, types: cotton.",
+    "Pliny (NH 19.14) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>.",
+    "The example sentences marked “composed” are ours."
+  ],
+  "replaces": [
+    "entry-319"
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

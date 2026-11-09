@@ -16,6 +16,26 @@
       "period": "ours",
       "gloss": "cloth for wiping the nose",
       "comment": "A descriptive phrase."
+    },
+    {
+      "latin": "sūdārium, sūdāriī n.",
+      "status": "recommended",
+      "period": "classical",
+      "evidence": [
+        "M-O s.v. handkerchief",
+        "Mart.",
+        "Petr.",
+        "Suet."
+      ]
+    },
+    {
+      "latin": "sūdāriolum, sūdāriolī n.",
+      "status": "alternative",
+      "period": "post-classical",
+      "evidence": [
+        "Apul.",
+        "Cordier, Coll. 2.69: <span lang=\"la\">Dēterge faciem sūdāriolō</span>"
+      ]
     }
   ],
   "phrases": [
@@ -31,11 +51,17 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/linteolum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: linteolum</a>",
-    "The example sentence marked “composed” is ours."
+    "The example sentence marked “composed” is ours.",
+    "<a href=\"https://logeion.org/sudarium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sudarium</a> · <a href=\"https://logeion.org/sudariolum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sudariolum</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. handkerchief.",
+    "Cordier from the Latinitas loci collection."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "hanky"
+  ]
 }

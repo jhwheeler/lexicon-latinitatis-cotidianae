@@ -1,0 +1,3533 @@
+{
+  "batch": "vestitus-labor",
+  "cards": [
+    "entry-62",
+    "entry-171",
+    "entry-262",
+    "entry-263",
+    "entry-315",
+    "entry-316",
+    "entry-317",
+    "entry-318",
+    "entry-319",
+    "entry-320",
+    "entry-40",
+    "entry-41"
+  ],
+  "records": [
+    {
+      "id": "button-clothes",
+      "english": "button",
+      "sense": "on clothes",
+      "pos": "noun",
+      "also": [
+        "buttons"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "globulus, globulī m.",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "Mir, morning routine"
+          ],
+          "comment": "A little ball; used for a clothing button in Mir’s routine."
+        }
+      ],
+      "related": [
+        "buttonhole",
+        "button-up",
+        "sew-on",
+        "entry-117"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/globulus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: globulus</a> · <a href=\"https://gikanenos.blogspot.com/\" rel=\"noopener noreferrer\" target=\"_blank\">Mir: morning routine (transcription)</a>"
+      ],
+      "replaces": [
+        "entry-62"
+      ]
+    },
+    {
+      "id": "buttonhole",
+      "english": "buttonhole",
+      "pos": "noun",
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "ocellus, ocellī m.",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "Mir, morning routine"
+          ],
+          "comment": "A little eye; used for a buttonhole in Mir’s routine."
+        }
+      ],
+      "related": [
+        "button-clothes"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/ocellus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ocellus</a> · <a href=\"https://gikanenos.blogspot.com/\" rel=\"noopener noreferrer\" target=\"_blank\">Mir: morning routine (transcription)</a>"
+      ]
+    },
+    {
+      "id": "shoelace",
+      "english": "shoelace",
+      "pos": "noun",
+      "also": [
+        "shoelaces"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "vincula calceōrum",
+          "status": "recommended",
+          "period": "ours",
+          "gloss": "shoelaces",
+          "comment": "A description, from <strong lang=\"la\">vinculum, vinculī n.</strong>, tie or fastening."
+        },
+        {
+          "latin": "corrigia, corrigiae f.",
+          "status": "alternative",
+          "period": "classical",
+          "evidence": [
+            "Traupman 117, 377",
+            "M-O s.v. shoelace",
+            "Cic. Div. 2.84: <span lang=\"la\">abruptiō corrigiae</span>, a snapped shoelace as a bad omen"
+          ],
+          "notes": [
+            "corrigia"
+          ]
+        }
+      ],
+      "notes": {
+        "corrigia": {
+          "form": "corrigia",
+          "claim": "second vowel left unmarked",
+          "against": "Lewis &amp; Short <span lang=\"la\">corrī^gia</span>, which marks its length as doubtful",
+          "html": "Traupman 117 and Morgan–Owens s.v. shoelace print it unmarked."
+        }
+      },
+      "related": [
+        "tie-a-knot",
+        "shoe"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/vinculum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vinculum</a>",
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 117, 377. <a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. shoelace."
+      ]
+    },
+    {
+      "id": "tie-a-knot",
+      "english": "tie",
+      "sense": "a knot",
+      "pos": "verb",
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "ligō, ligāre, ligāvī, ligātum",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Vincula calceōrum ligēmus.",
+          "english": "Let’s tie the shoelaces.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "knot",
+        "undo",
+        "shoelace"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/ligo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ligo</a>",
+        "The example sentences marked “composed” are ours."
+      ]
+    },
+    {
+      "id": "undo",
+      "english": "undo",
+      "sense": "a knot",
+      "pos": "verb",
+      "also": [
+        "loosen"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "solvō, solvere, solvī, solūtum",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "undo or loosen"
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Nōdum solve.",
+          "english": "Undo the knot.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "tie-a-knot",
+        "knot"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/solvo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: solvo</a>",
+        "The example sentences marked “composed” are ours."
+      ]
+    },
+    {
+      "id": "cap",
+      "english": "cap",
+      "sense": "headwear",
+      "pos": "noun",
+      "also": [
+        "hat"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "pilleus, pilleī m.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "close-fitting cap or hat, originally of felt",
+          "evidence": [
+            "Traupman 116, 286"
+          ],
+          "comment": "Applied here to modern caps without claiming every modern shape was ancient. A container’s cap or lid is <strong lang=\"la\">operculum, operculī n.</strong>, not this headwear noun.",
+          "notes": [
+            "pilleus"
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Pilleum indue.",
+          "english": "Put on your cap.",
+          "source": "composed"
+        },
+        {
+          "latin": "Ubi est pilleus tuus?",
+          "english": "Where is your cap?",
+          "source": "composed"
+        }
+      ],
+      "notes": {
+        "pilleus": {
+          "form": "pilleus",
+          "claim": "double l, short i",
+          "against": "the single-l <span lang=\"la\">pīleus</span> of Morgan–Owens s.v. hat: cap",
+          "html": "Traupman 116, 286, followed here; Lewis &amp; Short’s headword is <span lang=\"la\">pilleus</span> too."
+        }
+      },
+      "related": [
+        "hat",
+        "entry-117"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=pilleus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pilleus</a> · <a href=\"https://neolatinlexicon.org/latin/hat__cap/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: hat: cap</a> · <a href=\"https://paulatinygriego.wordpress.com/wp-content/uploads/2019/02/conversational-latin-for-oral-proficiency-traupman.pdf\" rel=\"noopener noreferrer\" target=\"_blank\">Traupman: Conversational Latin, fourth edition</a>",
+        "The example sentences marked “composed” are ours."
+      ],
+      "replaces": [
+        "entry-171",
+        "daily-171"
+      ]
+    },
+    {
+      "id": "sweater",
+      "english": "sweater",
+      "pos": "noun",
+      "also": [
+        "jumper",
+        "pullover"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "thōrāx lāneus",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 118"
+          ],
+          "notes": [
+            "laneus"
+          ]
+        },
+        {
+          "latin": "thōrāx, thōrācis m.",
+          "status": "alternative",
+          "period": "classical"
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "tunicās, brācās, pedūlia, subūculās, vestēs nocturnās, thōrācēs lāneōs, pilleum, paenulam ūnam; nam duās ipse voluerat, ūnam māter jusserat",
+          "english": "shirts, trousers, socks, vests, pyjamas, woollen jumpers, a cap, one coat: he had wanted two, Mum had said one",
+          "source": "Libellus I, <span lang=\"la\">Iter in Lūsitāniam</span>"
+        }
+      ],
+      "notes": {
+        "laneus": {
+          "form": "thōrāx lāneus",
+          "claim": "<span lang=\"la\">lāneus</span>, “woollen”",
+          "against": "Traupman 118 <span lang=\"la\">thōrāx lānius</span>",
+          "html": "Lewis &amp; Short s.v. <span lang=\"la\">lāneus</span>, citing the woollen <span lang=\"la\">thōrāx</span> of Suet. Aug. 82; the libellī write <span lang=\"la\">lāneus</span>."
+        }
+      },
+      "related": [
+        "coat",
+        "wool"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/thorax\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: thorax</a> · <a href=\"https://logeion.uchicago.edu/laneus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: laneus</a>",
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 118, checked against the searchable text of the book (29 October 2026).",
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+      ],
+      "replaces": [
+        "entry-262",
+        "libelli-262"
+      ]
+    },
+    {
+      "id": "coat",
+      "english": "coat",
+      "pos": "noun",
+      "also": [
+        "overcoat"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "paenula, paenulae f.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 116"
+          ],
+          "comment": "In ancient Latin a travelling cloak."
+        },
+        {
+          "latin": "amiculum, amiculī n.",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "coat, mantle",
+          "evidence": [
+            "Traupman 116",
+            "M-O s.v. jacket, coat: coat",
+            "Cic."
+          ]
+        },
+        {
+          "latin": "superindūmentum, superindūmentī n.",
+          "status": "alternative",
+          "period": "late",
+          "gloss": "overcoat",
+          "evidence": [
+            "Traupman 117",
+            "M-O s.v. jacket, coat: overcoat",
+            "Tertullian (ecclesiastical)"
+          ]
+        },
+        {
+          "latin": "paenula cucullāta",
+          "status": "alternative",
+          "period": "modern",
+          "gloss": "hooded coat",
+          "evidence": [
+            "M-O s.v. jacket, coat: coat with a hood"
+          ]
+        },
+        {
+          "latin": "palliolum, palliolī n.",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "a little cloak",
+          "evidence": [
+            "Plaut.",
+            "Juv."
+          ],
+          "comment": "The word of Libellus II for Theo’s coat."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Theodōrus, excitātus, paenulam prīmum sēnsit, deinde frīgus per paenulam",
+          "english": "When Theo woke up, he felt first his coat, then the cold through the coat",
+          "source": "Libellus VI, <span lang=\"la\">Reditus: per Alpēs domum</span>"
+        },
+        {
+          "latin": "Onerā palliolō umerōs tuōs.",
+          "english": "Put your little coat on.",
+          "source": "after Pont. Progymn. I 2"
+        }
+      ],
+      "related": [
+        "raincoat",
+        "jacket",
+        "cloak",
+        "hood",
+        "sweater"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/paenula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: paenula</a> · <a href=\"https://logeion.uchicago.edu/palliolum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: palliolum</a> · <a href=\"https://logeion.org/amiculum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: amiculum</a> · <a href=\"https://logeion.org/superindumentum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: superindumentum</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. jacket, coat: coat; jacket, coat: coat with a hood; jacket, coat: overcoat. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), pp. 116, 117.",
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+      ]
+    },
+    {
+      "id": "belt",
+      "english": "belt",
+      "pos": "noun",
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "cingulum, cingulī n.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 116"
+          ]
+        }
+      ],
+      "related": [
+        "brooch"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/cingulum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cingulum</a>",
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 116, checked against the searchable text of the book (29 October 2026)."
+      ]
+    },
+    {
+      "id": "cloak",
+      "english": "cloak",
+      "pos": "noun",
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "pallium, palliī n.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "related": [
+        "coat"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/pallium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pallium</a>"
+      ]
+    },
+    {
+      "id": "button-up",
+      "english": "button up",
+      "pos": "verb",
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "globulīs stringere",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "Traupman 116"
+          ]
+        },
+        {
+          "latin": "globulōs stringere",
+          "status": "alternative",
+          "period": "ours",
+          "comment": "lexicon-notes-01 gives it with a direct object."
+        }
+      ],
+      "related": [
+        "button-clothes",
+        "zip"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/globulus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: globulus</a>",
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 116, checked against the searchable text of the book (29 October 2026)."
+      ],
+      "replaces": [
+        "entry-263",
+        "libelli-263"
+      ]
+    },
+    {
+      "id": "zip",
+      "english": "zip",
+      "pos": "noun",
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "clausūra tractilis",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "Traupman 118"
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Clausūram tractilem sūrsum trahe.",
+          "english": "Pull the zip up.",
+          "source": "composed"
+        },
+        {
+          "latin": "Pater puerō dormientī, antequam ex āëroplanō ēgrederentur, paenulam induit, clausūrā tractilī clausit, pilleum imposuit.",
+          "english": "Before they got off the plane, Dad put the sleeping boy’s coat on, zipped it up and put on his cap.",
+          "source": "Libellus VI, <span lang=\"la\">Reditus: per Alpēs domum</span>"
+        }
+      ],
+      "related": [
+        "button-up",
+        "coat"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/clausura\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: clausura</a> · <a href=\"https://logeion.uchicago.edu/tractilis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tractilis</a>",
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 118, checked against the searchable text of the book (29 October 2026).",
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+        "The example sentences marked “composed” are ours."
+      ]
+    },
+    {
+      "id": "inside-out",
+      "english": "inside out",
+      "pos": "adverb",
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "tunica inversa",
+          "status": "recommended",
+          "period": "ours",
+          "gloss": "a shirt inside out",
+          "evidence": [
+            "Lewis &amp; Short s.v. <span lang=\"la\">inversus</span>"
+          ],
+          "comment": "A working description."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Tunica inversa est; iterum indue.",
+          "english": "The shirt is inside out; put it on again.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "back-to-front",
+        "put-on"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/inversus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: inversus</a>",
+        "The example sentences marked “composed” are ours."
+      ]
+    },
+    {
+      "id": "back-to-front",
+      "english": "back to front",
+      "pos": "adverb",
+      "also": [
+        "put on back to front"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "praeposterē induere",
+          "status": "recommended",
+          "period": "ours",
+          "gloss": "put on back to front",
+          "evidence": [
+            "Lewis &amp; Short s.v. <span lang=\"la\">praeposterē</span>"
+          ],
+          "comment": "A working description."
+        }
+      ],
+      "related": [
+        "inside-out",
+        "put-on"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/praepostere\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praepostere</a>"
+      ]
+    },
+    {
+      "id": "wear",
+      "english": "wear",
+      "sense": "clothes",
+      "pos": "verb",
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "gerō, gerere, gessī, gestum",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 118, 405"
+          ]
+        },
+        {
+          "latin": "gestō, gestāre",
+          "status": "alternative",
+          "period": "classical",
+          "evidence": [
+            "Traupman 118, 405"
+          ]
+        },
+        {
+          "latin": "ūtor, ūtī",
+          "status": "alternative",
+          "period": "classical",
+          "grammar": "verb, third conjugation, deponent, with the ablative",
+          "gloss": "wear regularly",
+          "evidence": [
+            "Traupman 405"
+          ],
+          "comment": "<span lang=\"la\">perspicillīs ūtī</span>, wear glasses."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "habeō nihil prōrsus quod geram",
+          "english": "I have absolutely nothing to wear",
+          "source": "Traupman 114"
+        },
+        {
+          "latin": "Quid hodiē gerēs?",
+          "english": "What are you going to wear today?",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "put-on",
+        "dress-up",
+        "glasses"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/gero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gero</a> · <a href=\"https://logeion.org/gesto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gesto</a> · <a href=\"https://logeion.org/utor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: utor</a>",
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), pp. 114, 118, 405.",
+        "The example sentences marked “composed” are ours."
+      ],
+      "replaces": [
+        "entry-315"
+      ]
+    },
+    {
+      "id": "dress-up",
+      "english": "dress up",
+      "pos": "verb",
+      "also": [
+        "dressed up",
+        "decked out"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "sē exōrnāre",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 116"
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Quamobrem sīc subōrnātus es?",
+          "english": "Why are you all dressed up?",
+          "source": "Traupman 96"
+        }
+      ],
+      "related": [
+        "wear",
+        "get-dressed"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/exorno\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: exorno</a> · <a href=\"https://logeion.org/suborno\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: suborno</a>",
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), pp. 96, 116."
+      ]
+    },
+    {
+      "id": "try-on",
+      "english": "try on",
+      "pos": "verb",
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "induendō probāre",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "Traupman 118"
+          ]
+        },
+        {
+          "latin": "experīrī",
+          "status": "alternative",
+          "period": "classical",
+          "evidence": [
+            "M-O s.v. try on, after Egger: <span lang=\"la\">velim experīrī haec calceāmenta</span>"
+          ]
+        }
+      ],
+      "related": [
+        "put-on",
+        "fit"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/experior\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: experior</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. try on. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), p. 118."
+      ]
+    },
+    {
+      "id": "fit",
+      "english": "fit",
+      "sense": "of shoes",
+      "pos": "verb",
+      "also": [
+        "fits"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "aptī ad pedem",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "fitted to the foot",
+          "evidence": [
+            "Cic. de Or. 1.231: <span lang=\"la\">calceī habilēs et aptī ad pedem</span>"
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Hī calceī sunt aptī ad pedēs.",
+          "english": "These shoes fit.",
+          "source": "M-O s.v. fit, after Egger"
+        }
+      ],
+      "related": [
+        "too-big",
+        "too-small",
+        "tight",
+        "loose",
+        "try-on",
+        "shoe"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/aptus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aptus</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. fit."
+      ]
+    },
+    {
+      "id": "too-big",
+      "english": "too big",
+      "sense": "of shoes",
+      "pos": "adjective",
+      "also": [
+        "too loose"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "pede majōrēs",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "bigger than the foot",
+          "evidence": [
+            "M-O s.v. loose",
+            "Hor. Ep. 1.10.42–43"
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "ut calceus ōlim, sī pede major erit, subvertet, sī minor, ūret",
+          "english": "like a shoe: too big it trips you, too small it pinches",
+          "source": "Hor. Ep. 1.10.42–43"
+        }
+      ],
+      "related": [
+        "too-small",
+        "fit",
+        "loose"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. loose.",
+        "Horace (Ep. 1.10) from the Latinitas loci collections."
+      ]
+    },
+    {
+      "id": "too-small",
+      "english": "too small",
+      "sense": "of shoes",
+      "pos": "adjective",
+      "also": [
+        "too tight"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "pede minōrēs",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "smaller than the foot",
+          "evidence": [
+            "M-O s.v. tight",
+            "Hor. Ep. 1.10.42–43"
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Calceī tibi pede minōrēs sunt; novōs emēmus.",
+          "english": "Your shoes are too small; we’ll buy new ones.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "too-big",
+        "fit",
+        "tight"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. tight.",
+        "The example sentences marked “composed” are ours."
+      ]
+    },
+    {
+      "id": "tight",
+      "english": "tight",
+      "sense": "of clothes",
+      "pos": "adjective",
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "strīctus",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 394 (strīct·us)",
+            "Traupman 342, 360, 394: <span lang=\"la\">sī calceus ūrit</span>"
+          ]
+        }
+      ],
+      "related": [
+        "loose",
+        "too-small",
+        "fit"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/strictus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: strictus</a>",
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), pp. 342, 360, 394."
+      ]
+    },
+    {
+      "id": "loose",
+      "english": "loose",
+      "sense": "of clothes",
+      "pos": "adjective",
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "laxus",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman"
+          ]
+        }
+      ],
+      "related": [
+        "tight",
+        "too-big",
+        "fit"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/laxus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: laxus</a>"
+      ]
+    },
+    {
+      "id": "barefoot",
+      "english": "barefoot",
+      "pos": [
+        "adverb",
+        "adjective"
+      ],
+      "also": [
+        "bare feet"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "nūdīs pedibus",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "M-O s.v. barefoot",
+            "Hor. S. 1.8.24",
+            "Plin. Ep. 2.17.15: <span lang=\"la\">nūdīsque etiam pedibus mollis</span>"
+          ]
+        },
+        {
+          "latin": "discalceātus, discalceāta, discalceātum",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "unshod",
+          "evidence": [
+            "M-O s.v. barefoot",
+            "Suet."
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Vīsne nūdīs pedibus per herbam currere?",
+          "english": "Do you want to run barefoot through the grass?",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "shoe"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/nudus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nudus</a> · <a href=\"https://logeion.org/discalceatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: discalceatus</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. barefoot.",
+        "Pliny’s letters from the Latinitas loci collections; Horace (Serm. 1.8.24) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>.",
+        "The example sentences marked “composed” are ours."
+      ]
+    },
+    {
+      "id": "warm-clothes",
+      "english": "warm",
+      "sense": "of clothes",
+      "pos": "adjective",
+      "also": [
+        "warm clothes"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "calidus",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "M-O s.v. warm",
+            "Plaut. Mil. 687: <span lang=\"la\">pallium … calidum</span>"
+          ]
+        }
+      ],
+      "related": [
+        "light-clothes",
+        "wrap-up-warm"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/calidus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: calidus</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. warm."
+      ]
+    },
+    {
+      "id": "light-clothes",
+      "english": "light",
+      "sense": "of clothes",
+      "pos": "adjective",
+      "also": [
+        "thin",
+        "light clothes"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "tenuis",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "light, thin",
+          "evidence": [
+            "M-O s.v. warm: light",
+            "Hor.",
+            "Ov."
+          ]
+        }
+      ],
+      "related": [
+        "warm-clothes"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/tenuis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tenuis</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. warm: light."
+      ]
+    },
+    {
+      "id": "hood",
+      "english": "hood",
+      "sense": "of a garment",
+      "pos": "noun",
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "cucullus, cucullī m.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Juv. 3.170",
+            "Mart.",
+            "Columella"
+          ],
+          "comment": "Traupman’s <span lang=\"la\">ploxenum</span> (216, 329) is the hood of a car, not a garment; classically <span lang=\"la\">ploxemum</span> or <span lang=\"la\">ploxenum</span> is a Gallic word for a wagon-box (Catull. 97.6, quoted by Quintilian)."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Cucullum indue; pluit.",
+          "english": "Put your hood up; it’s raining.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "coat",
+        "raincoat"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/cucullus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cucullus</a> · <a href=\"https://logeion.org/ploxemum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ploxemum</a>",
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), pp. 216, 329.",
+        "The example sentences marked “composed” are ours."
+      ],
+      "replaces": [
+        "entry-316"
+      ]
+    },
+    {
+      "id": "raincoat",
+      "english": "raincoat",
+      "pos": "noun",
+      "also": [
+        "rain jacket",
+        "waterproof"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "paenula, paenulae f.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "the ancient rain-cloak",
+          "evidence": [
+            "Traupman 117 (hooded)",
+            "M-O s.v. raincoat",
+            "Varr. ap. Non.: <span lang=\"la\">paenula in imbrī</span>",
+            "Juv. 5.79"
+          ]
+        },
+        {
+          "latin": "scortea, scorteae f.",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "leather raincoat",
+          "evidence": [
+            "Traupman 117",
+            "Sen.",
+            "Mart."
+          ]
+        },
+        {
+          "latin": "pluviāle",
+          "status": "alternative",
+          "period": "medieval",
+          "evidence": [
+            "M-O s.v. raincoat"
+          ]
+        },
+        {
+          "latin": "paenula impermeābilis",
+          "status": "alternative",
+          "period": "modern",
+          "evidence": [
+            "M-O s.v. raincoat, from LRL"
+          ],
+          "comment": "Given with a query."
+        }
+      ],
+      "related": [
+        "coat",
+        "hood",
+        "umbrella"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/paenula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: paenula</a> · <a href=\"https://logeion.org/scorteus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: scorteus</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. raincoat. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), p. 117."
+      ]
+    },
+    {
+      "id": "jacket",
+      "english": "jacket",
+      "pos": "noun",
+      "also": [
+        "windbreaker"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "jacca, jaccae f.",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "Traupman 117"
+          ],
+          "notes": [
+            "jacca"
+          ]
+        },
+        {
+          "latin": "tunica",
+          "status": "alternative",
+          "period": "renaissance",
+          "evidence": [
+            "M-O s.v. jacket, coat, after Vives"
+          ]
+        },
+        {
+          "latin": "tunica levior",
+          "status": "alternative",
+          "period": "modern",
+          "gloss": "windbreaker",
+          "evidence": [
+            "M-O s.v. jacket, coat: windbreaker"
+          ]
+        }
+      ],
+      "notes": {
+        "jacca": {
+          "form": "jacca",
+          "claim": "consonantal i written j",
+          "against": "Traupman, who spells it with i",
+          "html": "Traupman 117.",
+          "ruling": "consonantal-j"
+        }
+      },
+      "related": [
+        "coat"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. jacket, coat; jacket, coat: windbreaker. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), p. 117."
+      ]
+    },
+    {
+      "id": "gloves",
+      "english": "gloves",
+      "pos": "noun",
+      "also": [
+        "glove"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "digitābula, digitābulōrum n.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 321",
+            "Helfer and LRL (Neo-Latin Lexicon)",
+            "Varr. RR 1.55.1"
+          ],
+          "comment": "Varro’s single <span lang=\"la\">digitābulum</span> is an olive-picker’s glove."
+        },
+        {
+          "latin": "digitālia",
+          "status": "alternative",
+          "period": "modern",
+          "evidence": [
+            "Traupman 116"
+          ],
+          "comment": "Not in Lewis &amp; Short."
+        },
+        {
+          "latin": "chīrothēca",
+          "status": "alternative",
+          "period": "medieval",
+          "evidence": [
+            "M-O s.v. glove, mitten"
+          ],
+          "comment": "Preferred by Morgan–Owens."
+        },
+        {
+          "latin": "chīrothēca digitāta",
+          "status": "alternative",
+          "period": "modern",
+          "evidence": [
+            "M-O s.v. glove, mitten"
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Ubi sunt digitābula tua?",
+          "english": "Where are your gloves?",
+          "source": "composed"
+        },
+        {
+          "latin": "cujus manūs hieme manicīs mūniēbantur",
+          "english": "Pliny’s scribe kept his hands warm in winter with long sleeves",
+          "source": "Plin. Ep. 3.5.15"
+        }
+      ],
+      "related": [
+        "mittens",
+        "sleeve",
+        "entry-21"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/digitabulum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: digitabulum</a> · <a href=\"https://logeion.org/manicae\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: manicae</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. glove, mitten. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), pp. 116, 321.",
+        "<a href=\"https://neolatinlexicon.org/\" rel=\"noopener noreferrer\" target=\"_blank\">Neo-Latin Lexicon</a> Silva s.v. glove, mitten (LRL, Helfer, Levine).",
+        "Pliny’s letters (3.5.15) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>.",
+        "The example sentences marked “composed” are ours."
+      ]
+    },
+    {
+      "id": "mittens",
+      "english": "mittens",
+      "pos": "noun",
+      "also": [
+        "mitten"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "chīrothēca continua",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "M-O s.v. glove, mitten"
+          ]
+        }
+      ],
+      "related": [
+        "gloves"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. glove, mitten.",
+        "<a href=\"https://neolatinlexicon.org/\" rel=\"noopener noreferrer\" target=\"_blank\">Neo-Latin Lexicon</a> Silva s.v. glove, mitten (LRL, Helfer, Levine)."
+      ]
+    },
+    {
+      "id": "scarf",
+      "english": "scarf",
+      "pos": "noun",
+      "also": [
+        "muffler",
+        "neck scarf"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "fōcāle, fōcālis n.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "M-O s.v. scarf, muffler",
+            "Hor. S. 2.3.255",
+            "Mart."
+          ],
+          "comment": "From <span lang=\"la\">faucēs</span>."
+        },
+        {
+          "latin": "amictōrium",
+          "status": "alternative",
+          "period": "late",
+          "evidence": [
+            "Traupman 117",
+            "Cod. Th."
+          ],
+          "comment": "A late word."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Fōcāle collō circumdā; frīgus est.",
+          "english": "Put your scarf round your neck; it’s cold.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "gloves",
+        "hat"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/focale\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: focale</a> · <a href=\"https://logeion.org/amictorius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: amictorius</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. scarf, muffler. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), p. 117.",
+        "The example sentences marked “composed” are ours."
+      ]
+    },
+    {
+      "id": "hat",
+      "english": "hat",
+      "pos": "noun",
+      "also": [
+        "sun hat",
+        "broad-brimmed hat"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "petasus, petasī m.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "broad-brimmed hat, sun hat",
+          "evidence": [
+            "Traupman 117",
+            "M-O s.v. hat",
+            "Plaut."
+          ]
+        }
+      ],
+      "related": [
+        "cap",
+        "swim-cap"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/petasus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: petasus</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. hat. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), p. 117."
+      ]
+    },
+    {
+      "id": "swim-cap",
+      "english": "swim cap",
+      "pos": "noun",
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "galērum natātōrium",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "M-O s.v. hat: cap: swim cap"
+          ]
+        }
+      ],
+      "related": [
+        "shower-cap",
+        "cap",
+        "swimsuit"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/galerum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: galerum</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. hat: cap: swim cap."
+      ]
+    },
+    {
+      "id": "shower-cap",
+      "english": "shower cap",
+      "pos": "noun",
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "galērum balneārium",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "M-O s.v. hat: cap: shower cap"
+          ]
+        }
+      ],
+      "related": [
+        "swim-cap"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/galerum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: galerum</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. hat: cap: shower cap."
+      ]
+    },
+    {
+      "id": "umbrella",
+      "english": "umbrella",
+      "pos": "noun",
+      "also": [
+        "parasol"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "umbella, umbellae f.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 399",
+            "M-O s.v. umbrella"
+          ],
+          "comment": "Classically a parasol (Mart., Juv.), as Morgan–Owens notes."
+        }
+      ],
+      "related": [
+        "raincoat",
+        "entry-197"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/umbella\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: umbella</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. umbrella. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), p. 399."
+      ]
+    },
+    {
+      "id": "trainers",
+      "english": "trainers",
+      "pos": "noun",
+      "also": [
+        "sneakers"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "calceī gymnicī",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "Traupman 118, 381",
+            "M-O s.v. shoe: sneaker (<span lang=\"la\">calceus gymnicus</span>)"
+          ]
+        }
+      ],
+      "related": [
+        "shoe",
+        "boots"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. shoe: sneaker. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), pp. 118, 381."
+      ]
+    },
+    {
+      "id": "boots",
+      "english": "boots",
+      "pos": "noun",
+      "also": [
+        "boot"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "pērō, pērōnis m.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "rawhide boot",
+          "evidence": [
+            "Traupman 116",
+            "Verg.",
+            "Juv."
+          ]
+        },
+        {
+          "latin": "ocreae, ocreārum f.",
+          "status": "alternative",
+          "period": "renaissance",
+          "evidence": [
+            "M-O s.v. shoe: boot, citing Erasmus"
+          ],
+          "comment": "Classically greaves, leggings."
+        }
+      ],
+      "related": [
+        "rubber-boots",
+        "shoe"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/pero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pero</a> · <a href=\"https://logeion.org/ocrea\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ocrea</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. shoe: boot. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), p. 116."
+      ]
+    },
+    {
+      "id": "rubber-boots",
+      "english": "rubber boots",
+      "pos": "noun",
+      "also": [
+        "wellies"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "calceī altī cummeī",
+          "status": "recommended",
+          "period": "ours",
+          "comment": "Neither Traupman nor Morgan–Owens has rubber boots; this would be our formation."
+        }
+      ],
+      "related": [
+        "boots"
+      ],
+      "sources": [
+        "Our formation. <a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. shoe: boot. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), p. 116."
+      ]
+    },
+    {
+      "id": "t-shirt",
+      "english": "T-shirt",
+      "pos": "noun",
+      "also": [
+        "tee shirt"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "tunicula, tuniculae f.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 389",
+            "Plaut."
+          ],
+          "comment": "Classically a little tunic."
+        },
+        {
+          "latin": "camīsula",
+          "status": "alternative",
+          "period": "modern",
+          "evidence": [
+            "M-O s.v. shirt: t-shirt"
+          ]
+        },
+        {
+          "latin": "camisiola",
+          "status": "alternative",
+          "period": "modern",
+          "evidence": [
+            "M-O s.v. shirt: t-shirt"
+          ]
+        },
+        {
+          "latin": "camisia levis",
+          "status": "alternative",
+          "period": "modern",
+          "evidence": [
+            "M-O s.v. shirt: t-shirt"
+          ],
+          "comment": "Morgan–Owens’s <span lang=\"la\">camisia</span> (Jerome) and <span lang=\"la\">indūsium</span> are post-classical in this sense."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Hodiē calet: tuniculam et brācās curtās indue.",
+          "english": "It’s hot today: put on a T-shirt and shorts.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "shirt",
+        "shorts",
+        "short-sleeved",
+        "long-sleeved",
+        "sleeveless"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/tunicula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tunicula</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. shirt: t-shirt. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), p. 389.",
+        "The example sentences marked “composed” are ours."
+      ],
+      "replaces": [
+        "entry-317"
+      ]
+    },
+    {
+      "id": "long-sleeved",
+      "english": "long-sleeved",
+      "pos": "adjective",
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "manicātus, manicāta, manicātum",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 117",
+            "Cic."
+          ]
+        }
+      ],
+      "related": [
+        "short-sleeved",
+        "sleeveless",
+        "sleeve"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/manicatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: manicatus</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. sleeve. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), p. 117."
+      ]
+    },
+    {
+      "id": "sleeveless",
+      "english": "sleeveless",
+      "pos": "adjective",
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "sine manicīs",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "Traupman 118"
+          ]
+        }
+      ],
+      "related": [
+        "long-sleeved",
+        "short-sleeved",
+        "sleeve"
+      ],
+      "sources": [
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), p. 118."
+      ]
+    },
+    {
+      "id": "short-sleeved",
+      "english": "short-sleeved",
+      "pos": "adjective",
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "dīmidiīs manicīs",
+          "status": "recommended",
+          "period": "renaissance",
+          "evidence": [
+            "M-O s.v. sleeve, after Vives"
+          ]
+        }
+      ],
+      "related": [
+        "long-sleeved",
+        "sleeveless",
+        "t-shirt"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. sleeve."
+      ]
+    },
+    {
+      "id": "shorts",
+      "english": "shorts",
+      "pos": "noun",
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "brācae curtae / dēcurtātae",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "Traupman 378",
+            "M-O s.v. shorts: cut-offs"
+          ],
+          "comment": "Traupman’s <span lang=\"la\">subligāculum</span> and Morgan–Owens’s <span lang=\"la\">feminālia</span> are underpants or loin-cloths in antiquity."
+        }
+      ],
+      "related": [
+        "trousers",
+        "underpants",
+        "t-shirt",
+        "swimming-trunks"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/decurto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: decurto</a> · <a href=\"https://logeion.org/feminalia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: feminalia</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. shorts; shorts: cut-offs. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), p. 378."
+      ]
+    },
+    {
+      "id": "underwear",
+      "english": "underwear",
+      "pos": "noun",
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "vestēs intimae",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "M-O s.v. underwear"
+          ],
+          "comment": "Traupman 400 gives <span lang=\"la\">subūcula</span>, which is the undershirt."
+        }
+      ],
+      "related": [
+        "underpants",
+        "undershirt"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/subucula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: subucula</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. underwear. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), p. 400."
+      ]
+    },
+    {
+      "id": "tights",
+      "english": "tights",
+      "pos": "noun",
+      "also": [
+        "pantyhose"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "crūrālia, crūrālium n.",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "M-O s.v. socks: hose, panty-hose, from LRL"
+          ]
+        },
+        {
+          "latin": "tībiālia brācāria",
+          "status": "alternative",
+          "period": "modern",
+          "evidence": [
+            "Helfer (M-O)"
+          ]
+        }
+      ],
+      "related": [
+        "stockings",
+        "socks"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. socks: hose, panty-hose."
+      ]
+    },
+    {
+      "id": "dressing-gown",
+      "english": "dressing gown",
+      "pos": "noun",
+      "also": [
+        "housecoat"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "vestis mātūtīna",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "Traupman 117"
+          ]
+        },
+        {
+          "latin": "amictus domesticus",
+          "status": "alternative",
+          "period": "modern",
+          "evidence": [
+            "M-O s.v. robe, gown: robe, housecoat"
+          ]
+        }
+      ],
+      "related": [
+        "bathrobe",
+        "nightclothes"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/matutinus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: matutinus</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. robe, gown: robe, housecoat. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), p. 117."
+      ]
+    },
+    {
+      "id": "bathrobe",
+      "english": "bathrobe",
+      "pos": "noun",
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "amictus balneāris",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "M-O s.v. robe, gown: bathrobe"
+          ]
+        }
+      ],
+      "related": [
+        "dressing-gown",
+        "swimsuit"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. robe, gown: bathrobe."
+      ]
+    },
+    {
+      "id": "dress",
+      "english": "dress",
+      "pos": "noun",
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "vestis muliebris",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 116",
+            "M-O s.v. dress"
+          ],
+          "comment": "Skirt: Traupman 118 gives <span lang=\"la\">castula</span> and <span lang=\"la\">indūcula</span>, both ancient women’s under-garments, and Morgan–Owens gives Plautus’s <span lang=\"la\">calthula</span>; none means a modern skirt, so we leave the word open."
+        },
+        {
+          "latin": "stola, stolae f.",
+          "status": "alternative",
+          "period": "classical",
+          "evidence": [
+            "Traupman 116",
+            "M-O s.v. dress"
+          ]
+        },
+        {
+          "latin": "vestis tālāris",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "long dress"
+        }
+      ],
+      "related": [
+        "t-shirt"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/stola\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: stola</a> · <a href=\"https://logeion.org/talaris\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: talaris</a> · <a href=\"https://logeion.org/castula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: castula</a> · <a href=\"https://logeion.org/inducula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: inducula</a> · <a href=\"https://logeion.org/calthula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: calthula</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. dress; skirt. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), pp. 116, 118."
+      ]
+    },
+    {
+      "id": "jeans",
+      "english": "jeans",
+      "pos": "noun",
+      "also": [
+        "denim"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "brācae Genuēnsēs",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "Traupman 335",
+            "M-O s.v. jeans, from Helfer"
+          ]
+        }
+      ],
+      "related": [
+        "trousers"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. jeans. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), p. 335."
+      ]
+    },
+    {
+      "id": "waistcoat",
+      "english": "waistcoat",
+      "pos": "noun",
+      "also": [
+        "vest"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "colobium, colobiī n.",
+          "status": "recommended",
+          "period": "late",
+          "evidence": [
+            "M-O s.v. vest",
+            "Servius"
+          ]
+        }
+      ],
+      "related": [
+        "undershirt"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/colobium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: colobium</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. vest."
+      ]
+    },
+    {
+      "id": "overalls",
+      "english": "overalls",
+      "pos": "noun",
+      "also": [
+        "dungarees"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "superindūmentum operārium",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "M-O s.v. overalls, from LRL"
+          ],
+          "comment": "Queried by Morgan–Owens. Traupman 355 gives <span lang=\"la\">encombōma</span> for overalls, but Lewis &amp; Short defines it as a white garment worn by girls (Varr.)."
+        }
+      ],
+      "related": [
+        "apron"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/encomboma\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: encomboma</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. overalls. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), p. 355."
+      ]
+    },
+    {
+      "id": "apron",
+      "english": "apron",
+      "pos": "noun",
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "praecīnctōrium",
+          "status": "recommended",
+          "period": "late"
+        },
+        {
+          "latin": "subligar",
+          "status": "alternative",
+          "period": "modern",
+          "evidence": [
+            "Traupman 272"
+          ]
+        },
+        {
+          "latin": "līmus",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "a sacrificial apron",
+          "evidence": [
+            "M-O s.v. apron",
+            "Verg."
+          ]
+        }
+      ],
+      "related": [
+        "entry-257",
+        "overalls"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/limus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: limus</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. apron. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), p. 272."
+      ]
+    },
+    {
+      "id": "necklace",
+      "english": "necklace",
+      "pos": "noun",
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "monīle, monīlis n.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 117",
+            "Cic. Verr. 2.4.39",
+            "Verg. A. 1.654"
+          ]
+        },
+        {
+          "latin": "torquis (torquēs), torquis m.",
+          "status": "alternative",
+          "period": "classical",
+          "evidence": [
+            "Traupman 117"
+          ]
+        },
+        {
+          "latin": "monīle gemmātum",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "jewelled necklace",
+          "evidence": [
+            "Traupman 115"
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Avia monīle et inaurēs gerit.",
+          "english": "Grandma is wearing a necklace and earrings.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "earrings",
+        "bracelet",
+        "pearl",
+        "jewellery-shop"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/monile\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: monile</a> · <a href=\"https://logeion.org/torquis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: torquis</a>",
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), pp. 115, 117.",
+        "The example sentences marked “composed” are ours."
+      ],
+      "replaces": [
+        "entry-318"
+      ]
+    },
+    {
+      "id": "earrings",
+      "english": "earrings",
+      "pos": "noun",
+      "also": [
+        "earring"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "inaurēs, inaurium f.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 116",
+            "Plaut. Men. 3.3.17 (Lewis &amp; Short)"
+          ]
+        }
+      ],
+      "related": [
+        "necklace"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/inaures\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: inaures</a>",
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), p. 116."
+      ]
+    },
+    {
+      "id": "bracelet",
+      "english": "bracelet",
+      "pos": "noun",
+      "also": [
+        "bangle"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "armilla, armillae f.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 116",
+            "M-O s.v. bracelet",
+            "Plaut.",
+            "Liv."
+          ]
+        },
+        {
+          "latin": "bracchiāle",
+          "status": "alternative",
+          "period": "classical",
+          "evidence": [
+            "M-O s.v. bracelet",
+            "Plin."
+          ]
+        }
+      ],
+      "related": [
+        "necklace",
+        "wristwatch"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/armilla\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: armilla</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. bracelet. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), p. 116."
+      ]
+    },
+    {
+      "id": "pearl",
+      "english": "pearl",
+      "pos": "noun",
+      "also": [
+        "pearls"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "margarīta, margarītae f.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 117",
+            "Varr.",
+            "Cic."
+          ]
+        }
+      ],
+      "related": [
+        "necklace"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/margarita\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: margarita</a>",
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), p. 117."
+      ]
+    },
+    {
+      "id": "brooch",
+      "english": "brooch",
+      "pos": "noun",
+      "also": [
+        "clasp",
+        "buckle"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "fībula, fībulae f.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "brooch, clasp, buckle",
+          "evidence": [
+            "Traupman 116, 283, 373",
+            "M-O s.v. buckle"
+          ]
+        }
+      ],
+      "related": [
+        "safety-pin",
+        "belt"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/fibula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fibula</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. buckle. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), pp. 116, 283, 373."
+      ]
+    },
+    {
+      "id": "amulet",
+      "english": "amulet",
+      "pos": "noun",
+      "also": [
+        "charm"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "amulētum, amulētī n.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 116",
+            "Plin."
+          ]
+        }
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/amuletum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: amuletum</a>",
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), p. 116."
+      ]
+    },
+    {
+      "id": "pocket",
+      "english": "pocket",
+      "pos": "noun",
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "loculus, loculī m.",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "Traupman 117, 362"
+          ]
+        },
+        {
+          "latin": "funda vestis",
+          "status": "alternative",
+          "period": "modern",
+          "evidence": [
+            "M-O s.v. pocket, after Badellino and Helfer"
+          ]
+        },
+        {
+          "latin": "sinus",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "the fold of a coat, used as a pocket",
+          "evidence": [
+            "M-O s.v. pocket, from LRL"
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Quid in loculō habēs? Lapidēs iterum?",
+          "english": "What have you got in your pocket? Stones again?",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "handbag",
+        "entry-236"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/loculus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: loculus</a> · <a href=\"https://logeion.org/sinus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sinus</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. pocket. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), pp. 117, 362.",
+        "The example sentences marked “composed” are ours."
+      ]
+    },
+    {
+      "id": "handbag",
+      "english": "handbag",
+      "pos": "noun",
+      "also": [
+        "purse"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "pērula, pērulae f.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "handbag, little bag",
+          "evidence": [
+            "Traupman 117",
+            "M-O s.v. purse",
+            "Sen. Ep. 90.14: <span lang=\"la\">exemptum ē pērulā calicem</span>"
+          ]
+        }
+      ],
+      "related": [
+        "pocket",
+        "entry-276"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/perula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: perula</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. purse. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), p. 117.",
+        "Seneca (Ep. 90.14) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+      ]
+    },
+    {
+      "id": "glasses",
+      "english": "glasses",
+      "pos": "noun",
+      "also": [
+        "spectacles",
+        "eyeglasses"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "vitra oculāria",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "Traupman 312",
+            "LRL and Levine (Neo-Latin Lexicon)"
+          ]
+        },
+        {
+          "latin": "perspicilla, perspicillōrum n.",
+          "status": "alternative",
+          "period": "renaissance",
+          "evidence": [
+            "Traupman",
+            "Erasmus"
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "perspicillīs ūtī",
+          "english": "wear glasses",
+          "source": "Traupman 405"
+        }
+      ],
+      "related": [
+        "wear"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/\" rel=\"noopener noreferrer\" target=\"_blank\">Neo-Latin Lexicon</a> s.v. glasses, eyeglasses. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), pp. 312, 405."
+      ]
+    },
+    {
+      "id": "wristwatch",
+      "english": "wristwatch",
+      "pos": "noun",
+      "also": [
+        "watch"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "hōrologium bracchiāle",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "Traupman 118"
+          ]
+        },
+        {
+          "latin": "hōrologium armillāre",
+          "status": "alternative",
+          "period": "modern",
+          "evidence": [
+            "Traupman 409"
+          ]
+        },
+        {
+          "latin": "hōrologium gestābile",
+          "status": "alternative",
+          "period": "modern",
+          "evidence": [
+            "Helfer (Neo-Latin Lexicon s.v. watch)"
+          ]
+        }
+      ],
+      "related": [
+        "bracelet"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/horologium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: horologium</a>",
+        "<a href=\"https://neolatinlexicon.org/\" rel=\"noopener noreferrer\" target=\"_blank\">Neo-Latin Lexicon</a> s.v. watch. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), pp. 118, 409."
+      ]
+    },
+    {
+      "id": "jewellery-shop",
+      "english": "jewellery shop",
+      "pos": "noun",
+      "also": [
+        "jewelry store"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "taberna gemmāria",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "M-O s.v. jewelry store, after Egger"
+          ]
+        },
+        {
+          "latin": "gemmāria",
+          "status": "alternative",
+          "period": "modern",
+          "evidence": [
+            "Traupman 335"
+          ]
+        }
+      ],
+      "related": [
+        "necklace"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. jewelry store. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), p. 335."
+      ]
+    },
+    {
+      "id": "collar-garment",
+      "english": "collar",
+      "sense": "of a garment",
+      "pos": "noun",
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "collāre, collāris n.",
+          "status": "recommended",
+          "period": "renaissance",
+          "evidence": [
+            "Traupman 116",
+            "M-O s.v. collar, from Comenius"
+          ]
+        }
+      ],
+      "related": [
+        "cuff",
+        "entry-510"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/collare\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: collare</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. collar. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), p. 116."
+      ]
+    },
+    {
+      "id": "cuff",
+      "english": "cuff",
+      "pos": "noun",
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "limbus manicae",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "M-O s.v. cuff"
+          ]
+        }
+      ],
+      "related": [
+        "collar-garment",
+        "sleeve"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/limbus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: limbus</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. cuff."
+      ]
+    },
+    {
+      "id": "cotton",
+      "english": "cotton",
+      "pos": [
+        "noun",
+        "adjective"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "gossypium, gossypiī n.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "M-O s.v. cloth, types: cotton",
+            "Plin. NH 19.14: <span lang=\"la\">fruticem, quem aliquī gossypion vocant, plūrēs xylon</span>"
+          ],
+          "comment": "Traupman has no word for cotton.",
+          "notes": [
+            "gossypium"
+          ]
+        },
+        {
+          "latin": "gossypinus, gossypina, gossypinum",
+          "status": "alternative",
+          "period": "modern",
+          "gloss": "of cotton",
+          "evidence": [
+            "M-O, citing Pliny"
+          ]
+        },
+        {
+          "latin": "xylina",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "cotton cloth",
+          "evidence": [
+            "Plin. NH 19.14"
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Ex quō facta est haec tunicula? — Ex gossypiō.",
+          "english": "What is this T-shirt made of? — Cotton.",
+          "source": "composed"
+        }
+      ],
+      "notes": {
+        "gossypium": {
+          "form": "gossypium",
+          "claim": "Latin ending -um",
+          "against": "Pliny’s Greek form <span lang=\"la\">gossypion</span>",
+          "html": "Plin. NH 19.14. Neither <span lang=\"la\">gossypium</span> nor <span lang=\"la\">gossypinus</span> is a headword in the local Lewis &amp; Short."
+        }
+      },
+      "related": [
+        "linen",
+        "wool",
+        "cloth",
+        "t-shirt"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/gossypion\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gossypion</a> · <a href=\"https://logeion.org/xylon\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: xylon</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. cloth, types: cotton.",
+        "Pliny (NH 19.14) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>.",
+        "The example sentences marked “composed” are ours."
+      ],
+      "replaces": [
+        "entry-319"
+      ]
+    },
+    {
+      "id": "linen",
+      "english": "linen",
+      "pos": [
+        "noun",
+        "adjective"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "līnum, līnī n.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 117",
+            "M-O s.v. cloth, types: linen"
+          ]
+        },
+        {
+          "latin": "linteum, linteī n.",
+          "status": "alternative",
+          "period": "classical",
+          "evidence": [
+            "Traupman 117"
+          ]
+        },
+        {
+          "latin": "līneus, līnea, līneum",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "linen, of linen",
+          "evidence": [
+            "Traupman 117",
+            "M-O s.v. cloth, types: linen"
+          ]
+        }
+      ],
+      "related": [
+        "cotton",
+        "cloth"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/linum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: linum</a> · <a href=\"https://logeion.org/linteum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: linteum</a> · <a href=\"https://logeion.org/lineus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lineus</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. cloth, types: linen. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), p. 117."
+      ]
+    },
+    {
+      "id": "wool",
+      "english": "wool",
+      "pos": [
+        "noun",
+        "adjective"
+      ],
+      "also": [
+        "woollen"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "lāna, lānae f.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 118",
+            "M-O s.v. cloth, types: wool",
+            "Comen. OP 46: <span lang=\"la\">Ovibus dētondētur lāna, ex quā cōnficiuntur variae vestēs</span>"
+          ]
+        },
+        {
+          "latin": "lāneus, lānea, lāneum",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "woollen",
+          "evidence": [
+            "Traupman 118",
+            "M-O s.v. cloth, types: wool"
+          ]
+        },
+        {
+          "latin": "lānātus",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "woollen",
+          "evidence": [
+            "Traupman 118"
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Thōrāx lāneus ex lānā ovium fit.",
+          "english": "A jumper is made from sheep’s wool.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "sweater",
+        "felt",
+        "cotton"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/lana\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lana</a> · <a href=\"https://logeion.org/laneus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: laneus</a> · <a href=\"https://logeion.org/lanatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lanatus</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. cloth, types: wool. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), p. 118.",
+        "Comenius from the Latinitas loci collection.",
+        "The example sentences marked “composed” are ours."
+      ]
+    },
+    {
+      "id": "silk",
+      "english": "silk",
+      "pos": [
+        "noun",
+        "adjective"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "sēricum, sēricī n.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 118",
+            "M-O s.v. cloth, types: silk"
+          ],
+          "comment": "Lewis &amp; Short marks the first syllable long (from <span lang=\"la\">Sēres</span>)."
+        },
+        {
+          "latin": "sēricus, sērica, sēricum",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "silken",
+          "evidence": [
+            "Traupman 118",
+            "M-O s.v. cloth, types: silk"
+          ]
+        }
+      ],
+      "related": [
+        "cotton",
+        "cloth"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/sericum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sericum</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. cloth, types: silk. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), p. 118."
+      ]
+    },
+    {
+      "id": "leather",
+      "english": "leather",
+      "pos": [
+        "noun",
+        "adjective"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "corium, coriī n.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 117",
+            "M-O s.v. cloth, types: leather"
+          ]
+        },
+        {
+          "latin": "scorteus, scortea, scorteum",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "leather, of leather",
+          "evidence": [
+            "Traupman 117",
+            "M-O s.v. cloth, types: leather"
+          ]
+        },
+        {
+          "latin": "coriaceus",
+          "status": "alternative",
+          "period": "late",
+          "gloss": "of leather",
+          "evidence": [
+            "M-O s.v. cloth, types: leather"
+          ]
+        }
+      ],
+      "related": [
+        "fur",
+        "raincoat"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/corium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: corium</a> · <a href=\"https://logeion.org/scorteus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: scorteus</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. cloth, types: leather. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), p. 117."
+      ]
+    },
+    {
+      "id": "felt",
+      "english": "felt",
+      "pos": "noun",
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "coāctilia, coāctilium n.",
+          "status": "recommended",
+          "period": "post-classical",
+          "evidence": [
+            "M-O s.v. cloth, types: felt",
+            "Dig."
+          ]
+        }
+      ],
+      "related": [
+        "wool"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/coactilis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: coactilis</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. cloth, types: felt."
+      ]
+    },
+    {
+      "id": "fur",
+      "english": "fur",
+      "pos": [
+        "noun",
+        "adjective"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "pellis, pellis f.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "M-O s.v. cloth, types: fur"
+          ]
+        },
+        {
+          "latin": "pellicius",
+          "status": "alternative",
+          "period": "post-classical",
+          "gloss": "of fur",
+          "evidence": [
+            "Traupman 116: <span lang=\"la\">amiculum pellicium</span>"
+          ]
+        }
+      ],
+      "related": [
+        "leather",
+        "coat"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/pellis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pellis</a> · <a href=\"https://logeion.org/pellicius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pellicius</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. cloth, types: fur. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), p. 116."
+      ]
+    },
+    {
+      "id": "cloth",
+      "english": "cloth",
+      "pos": "noun",
+      "also": [
+        "fabric",
+        "material"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "pannus, pannī m.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 116",
+            "M-O s.v. cloth, fabric, textile"
+          ],
+          "comment": "Velvet, corduroy and lace have only medieval and modern words in Morgan–Owens (<span lang=\"la\">vellūtum, opus denticulātum</span>)."
+        },
+        {
+          "latin": "textum, textī n.",
+          "status": "alternative",
+          "period": "classical",
+          "evidence": [
+            "Traupman 116"
+          ]
+        }
+      ],
+      "related": [
+        "cotton",
+        "linen",
+        "wool",
+        "silk"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/pannus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pannus</a> · <a href=\"https://logeion.org/textum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: textum</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. cloth, fabric, textile; cloth, types: velvet, lace. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), p. 116."
+      ]
+    },
+    {
+      "id": "needle",
+      "english": "needle",
+      "pos": "noun",
+      "also": [
+        "pin"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "acus, acūs f.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "needle, pin",
+          "evidence": [
+            "Traupman 350, 360",
+            "Cic.",
+            "Comen. OP 61: <span lang=\"la\">Sartor discindit pannum forfice, cōnsuitque acū et fīlō duplicātō</span>"
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Cavē acum; pungit.",
+          "english": "Careful with the needle; it pricks.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "thread",
+        "sew",
+        "thimble",
+        "safety-pin",
+        "entry-421"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/acus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: acus</a>",
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), pp. 350, 360.",
+        "Comenius from the Latinitas loci collection.",
+        "The example sentences marked “composed” are ours."
+      ],
+      "replaces": [
+        "entry-320"
+      ]
+    },
+    {
+      "id": "thread",
+      "english": "thread",
+      "pos": "noun",
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "fīlum, fīlī n.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 393"
+          ]
+        }
+      ],
+      "related": [
+        "needle",
+        "sew"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/filum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: filum</a>",
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), p. 393."
+      ]
+    },
+    {
+      "id": "sew",
+      "english": "sew",
+      "pos": "verb",
+      "also": [
+        "sewing"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "suō, suere, suī, sūtum",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 377"
+          ]
+        },
+        {
+          "latin": "cōnsuō",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "sew together"
+        }
+      ],
+      "related": [
+        "sew-on",
+        "mend",
+        "needle",
+        "sewing-machine"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/suo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: suo</a> · <a href=\"https://logeion.org/consuo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: consuo</a>",
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), p. 377."
+      ]
+    },
+    {
+      "id": "sew-on",
+      "english": "sew on",
+      "pos": "verb",
+      "also": [
+        "sew on a button"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "assuō, assuere",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Hor. AP 16 (Lewis &amp; Short): <span lang=\"la\">purpureus adsuitur pannus</span>"
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Globulus dēcidit; acū et fīlō rūrsus assuam.",
+          "english": "The button’s come off; I’ll sew it back on with a needle and thread.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "sew",
+        "button-clothes"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/assuo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: assuo</a>",
+        "Horace (AP 16) as quoted in Lewis &amp; Short.",
+        "The example sentences marked “composed” are ours."
+      ]
+    },
+    {
+      "id": "mend",
+      "english": "mend",
+      "pos": "verb",
+      "also": [
+        "repair",
+        "patch"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "sarciō, sarcīre, sarsī, sartum",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 345",
+            "Cic."
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Brācae tuae scissae sunt; mamma eās sarciet.",
+          "english": "Your trousers are torn; Mum will mend them.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "sew",
+        "tear"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/sarcio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sarcio</a>",
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), p. 345.",
+        "The example sentences marked “composed” are ours."
+      ]
+    },
+    {
+      "id": "tear",
+      "english": "tear",
+      "sense": "rip",
+      "pos": "verb",
+      "also": [
+        "rip",
+        "torn"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "scindō, scindere, scidī, scissum",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 391"
+          ]
+        },
+        {
+          "latin": "scindī",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "get torn",
+          "evidence": [
+            "Traupman 391"
+          ]
+        }
+      ],
+      "related": [
+        "mend"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/scindo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: scindo</a>",
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), p. 391."
+      ]
+    },
+    {
+      "id": "thimble",
+      "english": "thimble",
+      "pos": "noun",
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "digitāle, digitālis n.",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "Traupman 393"
+          ],
+          "comment": "Not a noun in Lewis &amp; Short."
+        }
+      ],
+      "related": [
+        "needle"
+      ],
+      "sources": [
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), p. 393."
+      ]
+    },
+    {
+      "id": "scissors",
+      "english": "scissors",
+      "pos": "noun",
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "forfex, forficis f.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 374"
+          ]
+        }
+      ],
+      "related": [
+        "needle",
+        "entry-147"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/forfex\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: forfex</a>",
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), p. 374."
+      ]
+    },
+    {
+      "id": "safety-pin",
+      "english": "safety pin",
+      "pos": "noun",
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "fībula, fībulae f.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 117, 373"
+          ],
+          "comment": "Classically a clasp or brooch."
+        },
+        {
+          "latin": "acus innoxia",
+          "status": "alternative",
+          "period": "modern",
+          "evidence": [
+            "M-O s.v. safety pin"
+          ]
+        }
+      ],
+      "related": [
+        "brooch",
+        "needle"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. safety pin. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), pp. 117, 373."
+      ]
+    },
+    {
+      "id": "knit",
+      "english": "knit",
+      "pos": "verb",
+      "also": [
+        "knitting"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "acū texere",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "M-O s.v. work: knit, after Menge"
+          ]
+        }
+      ],
+      "related": [
+        "embroider",
+        "needle"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/texo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: texo</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. work: knit."
+      ]
+    },
+    {
+      "id": "embroider",
+      "english": "embroider",
+      "pos": "verb",
+      "also": [
+        "embroidery"
+      ],
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "acū pingere",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "M-O s.v. work: embroider",
+            "Verg. A. 9.582",
+            "Ov."
+          ]
+        },
+        {
+          "latin": "acū pictus",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "embroidered"
+        }
+      ],
+      "related": [
+        "knit",
+        "needle"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/pingo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pingo</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. work: embroider."
+      ]
+    },
+    {
+      "id": "sewing-machine",
+      "english": "sewing machine",
+      "pos": "noun",
+      "domain": "vestitus",
+      "terms": [
+        {
+          "latin": "māchina sūtōria",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "Traupman 377",
+            "Helfer (M-O)"
+          ]
+        }
+      ],
+      "related": [
+        "sew"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. sewing machine. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), p. 377."
+      ]
+    },
+    {
+      "id": "slack-off",
+      "english": "slack off",
+      "pos": "verb",
+      "also": [
+        "shirk",
+        "dawdle",
+        "loiter"
+      ],
+      "domain": "labor",
+      "terms": [
+        {
+          "latin": "cessō, cessāre, cessāvī, cessātum",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "be idle, delay, loiter or stop doing something",
+          "comment": "The context determines whether this means shirking."
+        },
+        {
+          "latin": "labōrem neglegō",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "neglect my work"
+        },
+        {
+          "latin": "sēgniter agō",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "act sluggishly"
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Nōlī cessāre.",
+          "english": "Don’t dawdle / stop slacking.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "idle"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/cesso\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cesso</a> · <a href=\"https://logeion.uchicago.edu/neglego\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: neglego</a> · <a href=\"https://www.alatius.com/latin/bennetthidden.html\" rel=\"noopener noreferrer\" target=\"_blank\">Bennett: hidden quantities, with later corrections</a>",
+        "The example sentences marked “composed” are ours."
+      ],
+      "replaces": [
+        "entry-40"
+      ]
+    },
+    {
+      "id": "idle",
+      "english": "idle",
+      "pos": "verb",
+      "also": [
+        "be idle"
+      ],
+      "domain": "labor",
+      "terms": [
+        {
+          "latin": "cessō, cessāre, cessāvī, cessātum",
+          "status": "recommended",
+          "period": "classical"
+        },
+        {
+          "latin": "ōtiō mē dēdō",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "give myself over to idleness"
+        },
+        {
+          "latin": "langueō, languēre, languī",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "be weak or languid",
+          "comment": "It does not by itself imply deliberate shirking."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Tōtum diem cessat.",
+          "english": "He idles all day / has been idling all day.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "slack-off"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/cesso\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cesso</a> · <a href=\"https://logeion.uchicago.edu/langueo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: langueo</a>",
+        "The example sentences marked “composed” are ours."
+      ]
+    },
+    {
+      "id": "accountability",
+      "english": "accountability",
+      "pos": "noun",
+      "also": [
+        "give an account",
+        "account for",
+        "answer for"
+      ],
+      "domain": "labor",
+      "terms": [
+        {
+          "latin": "ratiōnem reddere",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "give an account or answer for one’s conduct"
+        },
+        {
+          "latin": "ratiōnem factī suī / factōrum suōrum reddere",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "account for one’s own action or actions"
+        }
+      ],
+      "related": [
+        "hold-oneself-accountable",
+        "demand-an-account",
+        "accept-blame",
+        "undertake-responsibility"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/ratio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ratio</a>"
+      ],
+      "replaces": [
+        "entry-41"
+      ]
+    },
+    {
+      "id": "hold-oneself-accountable",
+      "english": "hold oneself accountable",
+      "pos": "verb",
+      "also": [
+        "answerable"
+      ],
+      "domain": "labor",
+      "terms": [
+        {
+          "latin": "putāre / arbitrārī sibi ratiōnem reddendam esse",
+          "status": "recommended",
+          "period": "ours",
+          "gloss": "think oneself answerable",
+          "evidence": [
+            "Cic. Verr. 2.2.28: <span lang=\"la\">semper ita vīvāmus, ut ratiōnem reddendam nōbīs arbitrēmur</span> (Lewis &amp; Short, s.v. <span lang=\"la\">ratiō</span>)"
+          ],
+          "comment": "A description of self-accountability using the classical construction."
+        },
+        {
+          "latin": "agnōscere sibi ratiōnem reddendam esse",
+          "status": "alternative",
+          "period": "ours",
+          "gloss": "acknowledge that one must give an account",
+          "comment": "Also a description."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Ulixēs nōn agnōscit sibi dē eō quod accidit ratiōnem reddendam esse; culpam sociīs tribuit.",
+          "english": "Odysseus does not acknowledge himself answerable for what happened; he assigns blame to his companions.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "accountability",
+        "accept-blame"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/ratio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ratio</a> · <a href=\"https://logeion.uchicago.edu/agnosco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: agnosco</a>",
+        "The example sentences marked “composed” are ours."
+      ]
+    },
+    {
+      "id": "demand-an-account",
+      "english": "demand an account",
+      "pos": "verb",
+      "domain": "labor",
+      "terms": [
+        {
+          "latin": "ratiōnem ab aliquō reposcere",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "demand an account from someone",
+          "evidence": [
+            "Caes. BG 5.30: <span lang=\"la\">abs tē ratiōnem reposcent</span> (Lewis &amp; Short, s.v. <span lang=\"la\">ratiō</span>)"
+          ]
+        }
+      ],
+      "related": [
+        "accountability"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/ratio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ratio</a>"
+      ]
+    },
+    {
+      "id": "accept-blame",
+      "english": "accept blame",
+      "pos": "verb",
+      "also": [
+        "acknowledge blame"
+      ],
+      "domain": "labor",
+      "terms": [
+        {
+          "latin": "culpam in sē recipere / culpam agnōscere",
+          "status": "recommended",
+          "period": "classical",
+          "comment": "These imply more than neutral answerability."
+        },
+        {
+          "latin": "sibi imputāre",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "attribute something to oneself"
+        }
+      ],
+      "related": [
+        "hold-oneself-accountable",
+        "undertake-responsibility"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/imputo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: imputo</a> · <a href=\"https://logeion.uchicago.edu/agnosco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: agnosco</a>"
+      ]
+    },
+    {
+      "id": "undertake-responsibility",
+      "english": "undertake responsibility",
+      "pos": "verb",
+      "also": [
+        "responsibility"
+      ],
+      "domain": "labor",
+      "terms": [
+        {
+          "latin": "cūram suscipere / in sē recipere",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "undertake responsibility prospectively"
+        },
+        {
+          "latin": "respōnsābilitātem assumere / suscipere",
+          "status": "alternative",
+          "period": "modern",
+          "comment": "A broader expression, not a uniquely exact equivalent for self-accountability."
+        }
+      ],
+      "related": [
+        "accept-blame",
+        "accountability"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/cura\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cura</a>"
+      ]
+    }
+  ],
+  "extend": [
+    {
+      "id": "underpants",
+      "also": [
+        "pants"
+      ],
+      "related": [
+        "underwear"
+      ]
+    },
+    {
+      "id": "swimsuit",
+      "phrases": [
+        {
+          "latin": "Vestem balneārem et linteum in pēram pōnāmus.",
+          "english": "Let’s put your swimsuit and towel in the bag.",
+          "source": "composed"
+        }
+      ],
+      "sources": [
+        "The example sentences marked “composed” are ours."
+      ]
+    },
+    {
+      "id": "swimming-trunks",
+      "terms": [
+        {
+          "latin": "subligar balneāre / natātōrium",
+          "status": "alternative",
+          "period": "modern",
+          "evidence": [
+            "Traupman 118",
+            "M-O s.v. swimsuit"
+          ]
+        }
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/natatorius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: natatorius</a>",
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), p. 118."
+      ]
+    },
+    {
+      "id": "shoe",
+      "phrases": [
+        {
+          "latin": "calceī alterī",
+          "english": "a second pair of shoes",
+          "source": "composed"
+        }
+      ],
+      "also": [
+        "spare shoes"
+      ],
+      "related": [
+        "boots",
+        "trainers",
+        "fit"
+      ]
+    },
+    {
+      "id": "socks",
+      "related": [
+        "tights"
+      ]
+    },
+    {
+      "id": "stockings",
+      "related": [
+        "tights"
+      ]
+    },
+    {
+      "id": "trousers",
+      "related": [
+        "shorts",
+        "jeans"
+      ]
+    },
+    {
+      "id": "knot",
+      "terms": [
+        {
+          "latin": "nōdus, nōdī m.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "related": [
+        "tie-a-knot",
+        "undo"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/nodus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nodus</a>"
+      ]
+    },
+    {
+      "id": "handkerchief",
+      "terms": [
+        {
+          "latin": "sūdārium, sūdāriī n.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "M-O s.v. handkerchief",
+            "Mart.",
+            "Petr.",
+            "Suet."
+          ]
+        },
+        {
+          "latin": "sūdāriolum, sūdāriolī n.",
+          "status": "alternative",
+          "period": "post-classical",
+          "evidence": [
+            "Apul.",
+            "Cordier, Coll. 2.69: <span lang=\"la\">Dēterge faciem sūdāriolō</span>"
+          ]
+        }
+      ],
+      "also": [
+        "hanky"
+      ],
+      "related": [
+        "entry-67"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/sudarium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sudarium</a> · <a href=\"https://logeion.org/sudariolum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sudariolum</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. handkerchief.",
+        "Cordier from the Latinitas loci collection."
+      ]
+    }
+  ],
+  "added": {
+    "pede minōrēs": "the card’s “pede majōrēs / minōrēs” (too big / too small), split into its two senses",
+    "galērum balneārium": "the card’s “galērum natātōrium / balneārium” (swim cap / shower cap), split into its two senses"
+  },
+  "dropped": {
+    "subligāculum, subligāculī n.; subligar, subligāris n.": "already in the underpants record (Cic. Off. 1.129; Mart., Juv.; M-O s.v. undershorts)",
+    "brācae interiōrēs": "already in the underpants record (Traupman 400)",
+    "vestis balneāris": "already in the swimsuit record (ludi), which cites Traupman 389; the card’s Traupman 118 has it too",
+    "vestis natātōria": "already in the swimsuit record (M-O s.v. swimsuit)",
+    "crumēna": "entry-318 only points to the dad’s-bag entry for it; handbag relates to that entry (entry-276), which has the word",
+    "languēō": "a remark that only made sense on the card: entry-40 records its own earlier misprint; the record writes langueō, as Lewis & Short does",
+    "https://logeion.org/subligaculum": "duplicate: underpants and swimsuit already link Lewis & Short: subligaculum",
+    "https://logeion.org/femorale": "duplicate: underpants already links Lewis & Short: femorale (entry-317 has no form of femorālia)",
+    "https://logeion.org/balnearis": "duplicate: swimsuit and swimming trunks already link Lewis & Short: balnearis",
+    "https://logeion.org/premo": "it supports the laundry words that entry-320 leaves to the laundry entry (entry-421, related from needle), which links the same Lewis & Short entry",
+    "https://logeion.org/levigo": "it supports the laundry words that entry-320 leaves to the laundry entry (entry-421, related from needle), which links the same Lewis & Short entry",
+    "https://logeion.org/plico": "it supports the laundry words that entry-320 leaves to the laundry entry (entry-421, related from needle), which links the same Lewis & Short entry",
+    "https://logeion.org/complico": "it supports the laundry words that entry-320 leaves to the laundry entry (entry-421, related from needle), which links the same Lewis & Short entry",
+    "https://logeion.org/lavandaria": "it supports the laundry words that entry-320 leaves to the laundry entry (entry-421, related from needle), which links the same Lewis & Short entry",
+    "https://logeion.org/fullonica": "it supports the laundry words that entry-320 leaves to the laundry entry (entry-421, related from needle), which links the same Lewis & Short entry"
+  },
+  "flags": [
+    "Overlaps with other categories, records created anyway: knot (ludi entry-286, climbing knot), apron (culina entry-257, praecīnctōrium), handkerchief (domus entry-67), pocket (sermo entry-236, sinus), swim cap (the ludi swimming records). Extended two ludi records, swimsuit and swimming-trunks, which the ludi batch may also touch.",
+    "Homonyms elsewhere get a sense and an ID that says which: button-clothes (culina entry-117 has the appliance button, also globulus), collar-garment (natura entry-510 has the dog collar, collāre), warm-clothes (natura entry-502, weather), light-clothes (domus entry-271, electric light).",
+    "subūcula: entry-317 calls it the undershirt, as do Traupman 118 (undershirt), M-O s.v. undershirt and Lewis & Short (a man’s under-garment); the existing shirt record recommends it for an ordinary shirt (Mir) and undershirt leads with interula.",
+    "Periods: an ancient garment word applied to its nearest modern counterpart is classical, as in the models (paenula coat, tunicula T-shirt, umbella umbrella, fībula safety pin, thōrāx lāneus sweater, vestis muliebris dress); an old word in a different sense is modern or Renaissance (globulus button, ocellus buttonhole, loculus pocket, subligar apron, collāre collar from Comenius, ocreae boots from Erasmus).",
+    "The card calls colobium (Servius), amictōrium (Cod. Th.) and coriaceus late; kept late, the later period, though these sources are non-Christian (Lewis & Short cites Amm. for coriaceus, Serv. and Cod. Th. for colobium, Cod. Th. and Hier. for amictōrium), which the scheme would call post-classical.",
+    "gossypinus marked modern: Lewis & Short has only gossympinus, i, f., the cotton tree (Plin. 12.39), and Mayhoff’s text (Perseus) reads arborem vocant gossypinum, a tree’s name, not an adjective “of cotton”; check M-O’s citation of Pliny.",
+    "camīsula is marked long but camisiola and camisia are not; Lewis & Short prints camĭsĭa (short i), M-O marks all three long (camîsula, camîsiola, camîs(i)a).",
+    "digitālia “not in L&S”: Lewis & Short gives digitalibus as a variant reading of Varr. RR 1.55.1 (s.v. digitabulum and digitalis).",
+    "lānātus is glossed “woollen” as on the card; Lewis & Short has “furnished with wool, woolly”; Traupman 118 gives lānātus and lānius for woollen.",
+    "M-O s.v. swimsuit gives subligar natātōrium for close-fitting, briefs-type swimwear and femōralia natātōria for loose swim trunks; the card cites M-O for subligar balneāre / natātōrium as swimming trunks.",
+    "shoelace leads with vincula calceōrum, as the card does (and its example), though corrigia is the classical word (Cic. Div. 2.84; Traupman 117; M-O s.v. shoelace); Lewis & Short also cites vincula of sandal-ties (Verg. A. 8.458; Tib. 1.5.66).",
+    "overalls: the card endorses no form; superindūmentum operārium (queried by M-O) leads only because a record needs one, with Traupman’s encombōma in its comment. Skirt has no record, since the card leaves the word open; its remark sits in dress.",
+    "Our periods: globulōs stringere (from lexicon-notes-01) and the ratiōnem … reddendam esse descriptions are ours, as the card calls them descriptions, though Cicero uses the arbitrārī construction (Verr. 2.2.28). Later of two possible periods: tunica levior (modern, M-O’s own), ocreae (Renaissance, Erasmus; M-O marks the boot sense medieval, citing Latham).",
+    "entry-320’s sources name Gellius and Traupman pp. 38, 317, 334, 404, which no item on the card uses; they match the laundry entry (entry-421). M-O’s safety-pin entry is s.v. safety pin, not sew: safety pin.",
+    "chīrothēca: medieval as the card says; the cycling-gloves card (vectura entry-21) calls it post-classical, and it is not in Lewis & Short. calceī altī cummeī: Lewis & Short has only gummeus (Aus.), though it gives cummi as Pliny’s spelling of the noun.",
+    "entry-40 split into slack off and idle (“be idle” as a search word), since the card separates shirking (cessō in context, labōrem neglegō, sēgniter agō) from idleness (ōtiō mē dēdō, langueō). The ID is idle, not be-idle: tests/test_convert_cards.py creates its own be-idle record (headword “be idle”) on a copy of the data, and fails if one exists.",
+    "Search sees each card’s “See also” labels, and tests/search.browser.test.mjs pins “pyjama” (3 in Vestītus, 6 in all) and “climb” (none in Vestītus): so knot does not relate to the climbing card (entry-286) and dressing gown relates to nightclothes, not pyjamas.",
+    "Main records, which take the old links (and the related links of socks, stockings, trousers, shirt, underpants and shoe): button-clothes, cap, sweater, button-up, wear, hood, t-shirt, necklace, cotton, needle, slack-off, accountability. Added related links to tights from socks and stockings, and to shorts and jeans from trousers.",
+    "Also under vestitus: knot (merged into the ludi record)",
+    "Also under vestitus: handkerchief (merged into the domus record)"
+  ]
+}

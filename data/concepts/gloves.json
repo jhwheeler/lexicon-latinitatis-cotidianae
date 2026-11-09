@@ -1,0 +1,77 @@
+{
+  "id": "gloves",
+  "english": "gloves",
+  "pos": "noun",
+  "also": [
+    "glove"
+  ],
+  "domain": "vestitus",
+  "terms": [
+    {
+      "latin": "digitābula, digitābulōrum n.",
+      "status": "recommended",
+      "period": "classical",
+      "evidence": [
+        "Traupman 321",
+        "Helfer and LRL (Neo-Latin Lexicon)",
+        "Varr. RR 1.55.1"
+      ],
+      "comment": "Varro’s single <span lang=\"la\">digitābulum</span> is an olive-picker’s glove."
+    },
+    {
+      "latin": "digitālia",
+      "status": "alternative",
+      "period": "modern",
+      "evidence": [
+        "Traupman 116"
+      ],
+      "comment": "Not in Lewis &amp; Short."
+    },
+    {
+      "latin": "chīrothēca",
+      "status": "alternative",
+      "period": "medieval",
+      "evidence": [
+        "M-O s.v. glove, mitten"
+      ],
+      "comment": "Preferred by Morgan–Owens."
+    },
+    {
+      "latin": "chīrothēca digitāta",
+      "status": "alternative",
+      "period": "modern",
+      "evidence": [
+        "M-O s.v. glove, mitten"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Ubi sunt digitābula tua?",
+      "english": "Where are your gloves?",
+      "source": "composed"
+    },
+    {
+      "latin": "cujus manūs hieme manicīs mūniēbantur",
+      "english": "Pliny’s scribe kept his hands warm in winter with long sleeves",
+      "source": "Plin. Ep. 3.5.15"
+    }
+  ],
+  "related": [
+    "mittens",
+    "sleeve",
+    "entry-21"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.org/digitabulum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: digitabulum</a> · <a href=\"https://logeion.org/manicae\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: manicae</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. glove, mitten. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), pp. 116, 321.",
+    "<a href=\"https://neolatinlexicon.org/\" rel=\"noopener noreferrer\" target=\"_blank\">Neo-Latin Lexicon</a> Silva s.v. glove, mitten (LRL, Helfer, Levine).",
+    "Pliny’s letters (3.5.15) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>.",
+    "The example sentences marked “composed” are ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

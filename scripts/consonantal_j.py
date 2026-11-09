@@ -2,7 +2,7 @@
 """Write consonantal i as j in the lexicon's Latin text (stdlib only).
 
 House orthography (shared with the Theodōrus et pater readers): jam, ejus,
-cujus, major, Troja, Jēsus, Joannēs. The vowel before intervocalic j takes no
+cujus, major, Troja, Jēsus, Jōannēs. The vowel before intervocalic j takes no
 macron (major, ejus, pejus: the vowel is short, the syllable heavy), but long
 prefixes keep theirs (dējectus, prōjēcit, ējēcī). Compounds: abjicit, objice,
 subjēcit, conjūnx. i stays a vowel in the interjection iō, in forms of eō

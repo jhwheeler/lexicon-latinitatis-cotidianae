@@ -5,7 +5,8 @@
   "pos": "verb",
   "also": [
     "pluck",
-    "harvest"
+    "harvest",
+    "gather"
   ],
   "domain": "domus",
   "terms": [
@@ -20,17 +21,33 @@
       "status": "alternative",
       "period": "classical",
       "gloss": "pluck"
+    },
+    {
+      "latin": "carpō, carpere, carpsī, carptum",
+      "status": "recommended",
+      "period": "classical"
     }
   ],
   "related": [
-    "sow"
+    "sow",
+    "basket",
+    "olive"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/decerpo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: decerpo</a>"
+    "<a href=\"https://logeion.uchicago.edu/decerpo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: decerpo</a>",
+    "<a href=\"https://logeion.uchicago.edu/carpo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: carpo</a>",
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "Olīvās avia in corbem lēgit",
+      "english": "Grandma gathered the olives into a basket",
+      "source": "Libellus III, <span lang=\"la\">Apud avum et aviam</span>"
+    }
+  ]
 }

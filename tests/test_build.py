@@ -20,7 +20,9 @@ class BuildTests(unittest.TestCase):
         self.root = Path(self.temp.name)
         for path in ('data', 'src'):
             shutil.copytree(ROOT / path, self.root / path)
-        self.category = self.read('data/catalog.json')['categories'][0]['id']
+        # Grouped cards are being converted to records, so pick a category that still has some.
+        categories = [c['id'] for c in self.read('data/catalog.json')['categories']]
+        self.category = next((c for c in categories if self.read(f'data/entries/{c}.json')), categories[0])
         self.path = f'data/entries/{self.category}.json'
 
     def read(self, path):
@@ -50,7 +52,7 @@ class BuildTests(unittest.TestCase):
 
     def test_new_entry_updates_counts_and_preserves_unicode(self):
         entries = self.read(self.path)
-        new = copy.deepcopy(entries[0])
+        new = copy.deepcopy(entries[0]) if entries else {'tags': [], 'blocks': [{'type': 'paragraph', 'html': 'Test.'}]}
         new.update(id='entry-99999', english='A < B & C', latin='lūdicrum, lūdicrī n.')
         new.pop('anchor', None)
         entries.append(new)
@@ -60,7 +62,7 @@ class BuildTests(unittest.TestCase):
         records = sum(1 for p in (self.root / 'data/concepts').glob('*.json') if self.read(p)['domain'] == self.category)
         self.assertIn(f'{total} grouped entries', page)
         # The front page's contents give each category's count.
-        latin = self.read('data/catalog.json')['categories'][0]['latin']
+        latin = next(c['latin'] for c in self.read('data/catalog.json')['categories'] if c['id'] == self.category)
         self.assertIn(f'<a href="#{self.category}"><span class="toc-la" lang="la">{latin}</span>'
                       f'<span class="toc-n">{len(entries) + records}<span class="vh"> entries</span></span>', page)
         self.assertIn('A &lt; B &amp; C', page)

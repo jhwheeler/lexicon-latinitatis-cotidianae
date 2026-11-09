@@ -15,15 +15,46 @@
       "latin": "ante merīdiem",
       "status": "recommended",
       "period": "classical",
-      "gloss": "a.m."
+      "gloss": "a.m.",
+      "evidence": [
+        "Cic. Tusc. 2.9 (Lewis &amp; Short)",
+        "Traupman 81"
+      ],
+      "comment": "English a.m. is short for it."
+    },
+    {
+      "latin": "mātūtīnus, mātūtīna, mātūtīnum",
+      "status": "alternative",
+      "period": "classical",
+      "grammar": "adjective",
+      "gloss": "of the morning; after an hour, a.m.",
+      "evidence": [
+        "Traupman 81: <span lang=\"la\">hōrā septimā mātūtīnā</span>",
+        "Cic. Fam. 7.1.1: <span lang=\"la\">mātūtīna tempora</span> (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Est prīma hōra ante merīdiem.",
+      "english": "It’s one a.m.",
+      "source": "Traupman 81"
+    },
+    {
+      "latin": "Hōrā septimā mātūtīnā.",
+      "english": "At seven in the morning.",
+      "source": "Traupman 81"
     }
   ],
   "related": [
     "in-the-afternoon",
-    "noon"
+    "noon",
+    "hour"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/meridies\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: meridies</a>"
+    "<a href=\"https://logeion.uchicago.edu/meridies\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: meridies</a>",
+    "<a href=\"https://logeion.uchicago.edu/matutinus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: matutinus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 81, checked against the searchable text of the book (9 November 2026)."
   ],
   "review": {
     "status": "draft",

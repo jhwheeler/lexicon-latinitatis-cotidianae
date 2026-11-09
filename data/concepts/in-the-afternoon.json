@@ -6,21 +6,51 @@
     "afternoon",
     "p.m."
   ],
+  "also_under": [
+    "tempus"
+  ],
   "domain": "sermo",
   "terms": [
     {
       "latin": "post merīdiem",
       "status": "recommended",
       "period": "classical",
-      "gloss": "in the afternoon, p.m."
+      "gloss": "in the afternoon, p.m.",
+      "evidence": [
+        "Cic. Tusc. 2.9 (Lewis &amp; Short)",
+        "Traupman 81"
+      ],
+      "comment": "English p.m. is short for it."
+    },
+    {
+      "latin": "pōmerīdiānus (postmerīdiānus), pōmerīdiāna, pōmerīdiānum",
+      "status": "alternative",
+      "period": "classical",
+      "grammar": "adjective",
+      "gloss": "of the afternoon; after an hour, p.m.",
+      "evidence": [
+        "Traupman 81: <span lang=\"la\">prīma hōra postmerīdiāna</span>",
+        "Cic. de Or. 3.17: <span lang=\"la\">pōmerīdiānum tempus</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Lewis &amp; Short’s headword; Cicero preferred <span lang=\"la\">pō-</span> to <span lang=\"la\">post-</span> (Orat. 157, quoted there)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Est prīma hōra post merīdiem.",
+      "english": "It’s one p.m.",
+      "source": "Traupman 81"
     }
   ],
   "related": [
     "before-noon",
-    "noon"
+    "noon",
+    "hour"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/meridies\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: meridies</a>"
+    "<a href=\"https://logeion.uchicago.edu/meridies\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: meridies</a>",
+    "<a href=\"https://logeion.uchicago.edu/pomeridianus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pomeridianus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 81, checked against the searchable text of the book (9 November 2026)."
   ],
   "review": {
     "status": "draft",

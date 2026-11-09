@@ -1,0 +1,48 @@
+{
+  "id": "wash",
+  "english": "wash",
+  "pos": "verb",
+  "domain": "culina",
+  "terms": [
+    {
+      "latin": "lavō, lavāre",
+      "status": "recommended",
+      "period": "classical"
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Pōma lavā.",
+      "english": "Wash the fruit.",
+      "source": "composed"
+    },
+    {
+      "latin": "Prīmum manūs lavēmus.",
+      "english": "First, let’s wash our hands.",
+      "source": "composed"
+    },
+    {
+      "latin": "Tū pōma lavā; ego secābō.",
+      "english": "You wash the fruit; I’ll do the cutting.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "rinse",
+    "dry-verb"
+  ],
+  "sources": [
+    "<a href=\"https://alatius.com/ls/index.php?l=lavo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lavo</a>",
+    "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>",
+    "The example sentences marked “composed” are ours."
+  ],
+  "replaces": [
+    "entry-122",
+    "smoothie-122"
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

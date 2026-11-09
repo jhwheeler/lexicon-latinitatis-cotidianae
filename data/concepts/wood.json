@@ -4,7 +4,8 @@
   "sense": "the material",
   "pos": "noun",
   "also": [
-    "timber"
+    "timber",
+    "wooden"
   ],
   "domain": "aedificatio",
   "terms": [
@@ -16,14 +17,28 @@
   ],
   "related": [
     "beam",
-    "board"
+    "board",
+    "glass-material",
+    "steel",
+    "plastic",
+    "cutting-board"
   ],
   "sources": [
-    "<a href=\"https://www.alatius.com/ls/index.php?l=lignum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lignum</a>"
+    "<a href=\"https://www.alatius.com/ls/index.php?l=lignum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lignum</a>",
+    "<a href=\"https://alatius.com/ls/index.php?l=lignum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lignum</a>",
+    "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>",
+    "The example sentence marked “composed” is ours."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "Incīsōrium ligneum",
+      "english": "wooden cutting board",
+      "source": "composed"
+    }
+  ]
 }

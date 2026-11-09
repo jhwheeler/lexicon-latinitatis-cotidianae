@@ -1,0 +1,70 @@
+{
+  "id": "debug",
+  "english": "debug",
+  "pos": [
+    "verb",
+    "noun"
+  ],
+  "also": [
+    "fix an error",
+    "fix a bug",
+    "correction"
+  ],
+  "domain": "computatra",
+  "terms": [
+    {
+      "latin": "ēmendō, ēmendāre, ēmendāvī, ēmendātum",
+      "status": "recommended",
+      "period": "ours",
+      "gloss": "correct or amend",
+      "comment": "Applied to fixing code. This covers correction generally; “debugging” can also include investigation before a fix exists."
+    },
+    {
+      "latin": "mendum ēmendāre",
+      "status": "alternative",
+      "period": "ours",
+      "gloss": "fix an error, fix a bug"
+    },
+    {
+      "latin": "vitium corrigere",
+      "status": "alternative",
+      "period": "ours",
+      "gloss": "fix a bug",
+      "comment": "An earlier alternative."
+    },
+    {
+      "latin": "ēmendātiō, ēmendātiōnis f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "correction"
+    },
+    {
+      "latin": "ēmendātiō mendī",
+      "status": "alternative",
+      "period": "ours",
+      "gloss": "correction of a bug"
+    },
+    {
+      "latin": "corrēctiō, corrēctiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "correction"
+    }
+  ],
+  "related": [
+    "bug",
+    "bug-report"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/emendo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: emendo</a> · <a href=\"https://logeion.uchicago.edu/emendatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: emendatio</a>",
+    "<a href=\"https://alatius.com/ls/index.php?l=corrigo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: corrigo</a>. Dictionary links support the component words; the modern technical expressions are labelled separately."
+  ],
+  "replaces": [
+    "entry-51"
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

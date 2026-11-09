@@ -1,0 +1,56 @@
+{
+  "id": "commit",
+  "english": "commit",
+  "sense": "version control",
+  "pos": [
+    "verb",
+    "noun"
+  ],
+  "domain": "computatra",
+  "terms": [
+    {
+      "latin": "cōnsignō, cōnsignāre, cōnsignāvī, cōnsignātum",
+      "status": "recommended",
+      "period": "ours",
+      "gloss": "seal or record",
+      "comment": "Applied here to committing a version. The Git meaning is a working extension. Preserve <code>commit</code> in literal commands.",
+      "notes": [
+        "short-i"
+      ]
+    },
+    {
+      "latin": "cōnsignātiō, cōnsignātiōnis f.",
+      "status": "recommended",
+      "period": "ours",
+      "gloss": "recording or registration",
+      "comment": "Our descriptive noun for a commit.",
+      "notes": [
+        "short-i"
+      ]
+    }
+  ],
+  "notes": {
+    "short-i": {
+      "form": "cōnsignō, cōnsignātiō",
+      "claim": "short i before gn",
+      "against": "some older dictionaries lengthen it",
+      "html": "That reading is disputed; no general rule of vowel lengthening before <span lang=\"la\">gn</span> is applied here.",
+      "ruling": "short-before-gn"
+    }
+  },
+  "related": [
+    "merge",
+    "code"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/consigno\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: consigno</a> · <a href=\"https://logeion.uchicago.edu/consignatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: consignatio</a> · <a href=\"https://www.alatius.com/latin/bennetthidden.html\" rel=\"noopener noreferrer\" target=\"_blank\">Bennett: hidden quantities, with later corrections</a>"
+  ],
+  "replaces": [
+    "entry-49"
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

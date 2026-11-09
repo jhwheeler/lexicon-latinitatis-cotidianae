@@ -1,0 +1,78 @@
+{
+  "id": "metric",
+  "english": "metric",
+  "pos": "noun",
+  "also": [
+    "metrics",
+    "analytics",
+    "figures"
+  ],
+  "domain": "computatra",
+  "terms": [
+    {
+      "latin": "index numericus",
+      "status": "recommended",
+      "period": "ours",
+      "gloss": "numerical metric",
+      "comment": "Plural <strong lang=\"la\">indicēs numericī</strong>; our working technical expression for numerical metrics. Recovered from our 16 October discussion. These are proposals, not a verified community standard. API resource names must be interpreted from the platform’s own definitions: some “metrics” resources describe tracked event types rather than numerical values."
+    },
+    {
+      "latin": "index, indicis m.",
+      "status": "alternative",
+      "period": "ours",
+      "gloss": "indicator or pointer",
+      "comment": "<strong lang=\"la\">index</strong> also has other senses, including a list; the qualifier <strong lang=\"la\">numericus</strong> can disambiguate."
+    },
+    {
+      "latin": "numerus, numerī m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "numbers or figures",
+      "comment": "Plural <strong lang=\"la\">numerī</strong>; our informal choice when thinking about the reported statistics."
+    },
+    {
+      "latin": "mēnsūra, mēnsūrae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "measure or measurement",
+      "comment": "Useful when the measure itself is the focus."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Quōs indicēs observāmus?",
+      "english": "Which metrics are we tracking?",
+      "source": "composed"
+    },
+    {
+      "latin": "indicēs praecipuī",
+      "english": "key metrics",
+      "source": "composed"
+    },
+    {
+      "latin": "indicēs incrēmentī",
+      "english": "growth metrics",
+      "source": "composed"
+    },
+    {
+      "latin": "Numerōs īnspicere dēbeō.",
+      "english": "I need to check the figures.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "api-key"
+  ],
+  "sources": [
+    "<a href=\"https://alatius.com/ls/index.php?l=index\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: index</a> · <a href=\"https://alatius.com/ls/index.php?l=numerus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: numerus</a> · <a href=\"https://alatius.com/ls/index.php?l=mensura\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mensura</a>. Dictionary links support the component words; the modern technical expressions are labelled separately.",
+    "The example sentences marked “composed” are ours."
+  ],
+  "replaces": [
+    "entry-139"
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

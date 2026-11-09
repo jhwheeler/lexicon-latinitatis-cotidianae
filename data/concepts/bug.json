@@ -1,0 +1,77 @@
+{
+  "id": "bug",
+  "english": "bug",
+  "sense": "software",
+  "pos": "noun",
+  "also": [
+    "error",
+    "defect",
+    "software bug"
+  ],
+  "domain": "computatra",
+  "terms": [
+    {
+      "latin": "mendum, mendī n.",
+      "status": "recommended",
+      "period": "ours",
+      "gloss": "fault or error",
+      "comment": "Applied to a software bug."
+    },
+    {
+      "latin": "menda, mendae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a fault or blemish",
+      "comment": "A related form."
+    },
+    {
+      "latin": "vitium, vitiī n.",
+      "status": "alternative",
+      "period": "ours",
+      "gloss": "defect or fault",
+      "comment": "Applied here to software; plural <strong lang=\"la\">vitia</strong>. Our existing preferred everyday “bug” is <strong lang=\"la\">mendum, mendī n.</strong>; keeping that choice makes related phrases consistent."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Mendum est sīcut lapillus quī in calceō tuō latet: nōn bene ambulās, dōnec lapillum invēneris et ējēceris.",
+      "english": "A bug is like a pebble hiding in your shoe: you can’t walk properly until you’ve found the pebble and thrown it out.",
+      "source": "Libellus III, <span lang=\"la\">Apud avum et aviam</span>"
+    },
+    {
+      "latin": "Mendum invēnī.",
+      "english": "I found a bug.",
+      "source": "composed"
+    },
+    {
+      "latin": "mendum invenīre / reperīre",
+      "english": "find a bug",
+      "source": "composed"
+    },
+    {
+      "latin": "vitium invenīre",
+      "english": "find a bug (an earlier alternative)",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "debug",
+    "bug-report",
+    "reproduce-a-bug",
+    "tester"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/mendum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mendum</a> · <a href=\"https://logeion.uchicago.edu/menda\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: menda</a>",
+    "<a href=\"https://alatius.com/ls/index.php?l=vitium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vitium</a>. Dictionary links support the component words; the modern technical expressions are labelled separately.",
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026. Examples marked “Libellus” quote those texts word for word.",
+    "The example sentences marked “composed” are ours."
+  ],
+  "replaces": [
+    "entry-50"
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

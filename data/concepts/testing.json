@@ -1,0 +1,77 @@
+{
+  "id": "testing",
+  "english": "testing",
+  "pos": "noun",
+  "also": [
+    "test",
+    "tests",
+    "quality testing",
+    "testing types"
+  ],
+  "domain": "computatra",
+  "terms": [
+    {
+      "latin": "probātiō, probātiōnis f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "testing, inspection or examination"
+    },
+    {
+      "latin": "probātiō quālitātis",
+      "status": "alternative",
+      "period": "ours",
+      "gloss": "quality testing",
+      "comment": "Testing is one part of QA, so this and <strong lang=\"la\">cūrātiō quālitātis</strong> are not exact synonyms. Both expressions recover proposals from our 21 September 2026 conversation. The dictionary sources establish the component words and their older senses; they do not establish these complete phrases as standardized software terminology."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Programma probandum est.",
+      "english": "The program needs testing.",
+      "source": "composed"
+    },
+    {
+      "latin": "probātiōnēs exercēre",
+      "english": "carry out tests",
+      "source": "composed"
+    },
+    {
+      "latin": "probātiōnēs repetere",
+      "english": "repeat the tests",
+      "source": "composed"
+    },
+    {
+      "latin": "Post mūtātiōnem cōdicis probātiōnēs repetāmus.",
+      "english": "Let’s repeat the tests after changing the code.",
+      "source": "composed"
+    },
+    {
+      "latin": "genera probātiōnum",
+      "english": "testing types",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "quality-assurance",
+    "tester",
+    "automated-testing",
+    "manual-testing",
+    "regression-testing",
+    "integration-testing",
+    "unit-test",
+    "acceptance-testing",
+    "test-case"
+  ],
+  "sources": [
+    "<a href=\"https://alatius.com/ls/index.php?l=probatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: probatio</a>. Dictionary links support the component words; the modern technical expressions are labelled separately.",
+    "The example sentences marked “composed” are ours."
+  ],
+  "replaces": [
+    "entry-135"
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

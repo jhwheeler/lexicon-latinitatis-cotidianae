@@ -1,0 +1,33 @@
+{
+  "id": "pull-request",
+  "english": "pull request",
+  "pos": "noun",
+  "also": [
+    "PR"
+  ],
+  "domain": "computatra",
+  "terms": [
+    {
+      "latin": "petītiō conjungendī",
+      "status": "recommended",
+      "period": "ours",
+      "gloss": "request to merge",
+      "comment": "Our functional description “request to merge,” not an established Latin GitHub label. <strong lang=\"la\">petītiō, petītiōnis f.</strong> — request; <strong lang=\"la\">conjungendī</strong> is a genitive gerund, “of joining.” It describes the proposed merge, not literally the Git pull operation. Retain <code>pull request</code> or <code>PR</code> when an exact platform label matters."
+    }
+  ],
+  "related": [
+    "merge",
+    "code-review"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/petitio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: petitio</a> · <a href=\"https://logeion.uchicago.edu/conjungo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: conjungo</a>"
+  ],
+  "replaces": [
+    "entry-46"
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

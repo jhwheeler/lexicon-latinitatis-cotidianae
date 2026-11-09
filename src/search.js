@@ -1,14 +1,16 @@
 (() => {
+  const root = document.documentElement;
   const themeToggle = document.getElementById('theme-toggle');
+  // Light is the default; dark is kept where storage allows.
   function syncTheme() {
-    const light = document.documentElement.dataset.theme === 'light';
-    document.getElementById('theme-label').textContent = light ? 'Dark mode' : 'Light mode';
-    themeToggle.setAttribute('aria-label', light ? 'Switch to dark mode' : 'Switch to light mode');
-    document.querySelector('meta[name="theme-color"]').content = light ? '#f4f0e8' : '#171512';
+    const dark = root.dataset.theme === 'dark';
+    document.getElementById('theme-label').textContent = dark ? 'Light mode' : 'Dark mode';
+    themeToggle.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+    document.querySelector('meta[name="theme-color"]').content = dark ? '#1c1b19' : '#ffffff';
   }
   themeToggle.addEventListener('click', () => {
-    const theme = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
-    document.documentElement.dataset.theme = theme;
+    const theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+    root.dataset.theme = theme;
     try { localStorage.setItem('lexicon-theme', theme); } catch {}
     syncTheme();
   });
@@ -16,27 +18,33 @@
   const search = document.getElementById('search'), clear = document.getElementById('clear');
   const count = document.getElementById('results'), empty = document.getElementById('empty');
   const emptyMessage = document.getElementById('empty-message'), searchAll = document.getElementById('search-all');
+  const home = document.getElementById('contents');
   const results = document.getElementById('search-results'), list = document.getElementById('search-result-list');
   const entries = [...document.querySelectorAll('[data-entry]')];
   const sections = [...document.querySelectorAll('[data-category-section]')];
   const chips = [...document.querySelectorAll('[data-filter]')];
+  const names = Object.fromEntries(chips.map(chip => [chip.dataset.filter, chip.textContent]));
   const categoryMenu = document.getElementById('category-menu');
   const categoryLabel = document.getElementById('active-category');
   const desktop = window.matchMedia('(min-width: 960px)');
   const adaptCategories = () => { categoryMenu.open = desktop.matches; };
   desktop.addEventListener('change', adaptCategories);
   adaptCategories();
+  // 'all' is the front page: the contents, and a search of every category. Any other value is a
+  // category: its entries, and a search within it. The address (#corpus) says which.
   let active = 'all';
   let renderedQuery = null, renderedCategory = null;
   const fold = s => String(s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/æ/g, 'ae').replace(/œ/g, 'oe').replace(/j/g, 'i');
   const index = entries.map((entry, order) => {
     const section = entry.closest('[data-category-section]');
     if (!entry.id) entry.id = entry.dataset.entryId;
-    const lines = [...entry.querySelectorAll('.entry-body > ul > li, .entry-body > p, .entry-sources > p')].map(node => {
+    const lines = [...entry.querySelectorAll('.entry-body > ul > li, .entry-body > p, .entry-body > ol > li, .entry-sources > p')].map(node => {
       const latin = node.querySelector('strong[lang="la"]')?.textContent.trim();
       const definition = latin && latin.split(/\s+/).length <= 10
         && (/^[a-zāēīōūȳæœ]/.test(latin) || /\b[mfn]\.\s*(pl\.)?$/.test(latin));
-      return {node, text: fold(node.textContent), kind: node.closest('.entry-sources') ? 'Source note' : definition ? 'Definition' : 'Example or phrase'};
+      // A record's answer line carries its English headword in data-search.
+      return {node, text: fold(node.textContent + ' ' + (node.dataset.search || '')),
+        kind: node.closest('.entry-sources, .footnotes') ? 'Source note' : definition ? 'Definition' : 'Example or phrase'};
     });
     return {entry, order, lines, category: entry.dataset.category, label: section.querySelector('h2').textContent,
       heading: fold(entry.querySelector('.entry-head').textContent), text: fold((entry.dataset.search || '') + ' ' + entry.textContent)};
@@ -110,7 +118,7 @@
     context.addEventListener('toggle', () => {
       if (!context.open || context.childElementCount > 1) return;
       const heading = document.createElement('p'); heading.className = 'eyebrow';
-      heading.textContent = item.entry.querySelector('.eyebrow').textContent;
+      heading.textContent = item.entry.querySelector('.entry-head .eyebrow, .entry-head h3').textContent;
       const body = copy(item.entry.querySelector('.entry-body'), query); body.className = 'entry-body';
       body.querySelectorAll('.entry-sources').forEach(source => { if (source.querySelector('mark')) source.open = true; });
       context.append(heading, body);
@@ -120,57 +128,84 @@
   }
   function apply() {
     const query = fold(search.value.trim());
-    categoryLabel.textContent = chips.find(chip => chip.dataset.filter === active).textContent;
+    const browsing = active !== 'all';
+    root.dataset.view = browsing ? 'browse' : 'home';
+    categoryLabel.textContent = names[active]; categoryLabel.lang = browsing ? 'la' : 'en';
+    chips.forEach(chip => chip.dataset.filter === active ? chip.setAttribute('aria-current', 'true') : chip.removeAttribute('aria-current'));
     // Blurring the search field fires change even when the query is unchanged.
     // Keep result nodes stable so that click still reaches a disclosure/link.
     if (query === renderedQuery && active === renderedCategory) return;
     renderedQuery = query; renderedCategory = active;
-    const matching = index.filter(item => (active === 'all' || item.category === active) && (!query || item.text.includes(query)));
+    const matching = index.filter(item => (!browsing || item.category === active) && (!query || item.text.includes(query)));
+    home.hidden = browsing || !!query;
     results.hidden = !query; list.replaceChildren();
-    entries.forEach(entry => { entry.hidden = !!query || (active !== 'all' && entry.dataset.category !== active); });
-    sections.forEach(section => { section.hidden = !!query || !section.querySelector('[data-entry]:not([hidden])'); });
+    entries.forEach(entry => { entry.hidden = !!query || entry.dataset.category !== active; });
+    sections.forEach(section => { section.hidden = !!query || section.dataset.categorySection !== active; });
     if (query) {
       const rank = line => line.kind === 'Definition' ? 0 : line.kind === 'Source note' ? 2 : 1;
       matching.forEach(item => {
         item.matches = item.lines.filter(line => line.text.includes(query)).sort((a, b) => rank(a) - rank(b));
-        item.rank = item.matches[0]?.kind === 'Definition' ? 0 : item.heading.includes(query) ? 1 : item.matches.length ? 2 : 3;
+        // A definition under a matching headword first, then other definitions, then the rest.
+        const definition = item.matches[0]?.kind === 'Definition', heading = item.heading.includes(query);
+        item.rank = definition && heading ? 0 : definition ? 1 : heading ? 2 : item.matches.length ? 3 : 4;
       });
       matching.sort((a, b) => a.rank - b.rank || a.order - b.order);
       const fragment = document.createDocumentFragment();
       matching.forEach(item => fragment.append(result(item, query))); list.append(fragment);
     }
-    const scope = active === 'all' ? '' : ' in ' + categoryLabel.textContent;
-    count.textContent = query ? matching.length + ' matching entries' + scope + ' · definitions first' : 'Showing ' + matching.length + ' of ' + entries.length + scope;
-    emptyMessage.textContent = active === 'all' ? 'No entries match that search.' : 'No matches' + scope + '.';
-    searchAll.hidden = active === 'all' || matching.length > 0;
-    empty.style.display = matching.length ? 'none' : 'block';
+    const plural = matching.length === 1 ? 'entry' : 'entries';
+    count.textContent = query ? `${matching.length} matching ${plural}${browsing ? ' in ' + names[active] : ''} · definitions first`
+      : `${matching.length} ${plural}`;
+    // An empty search inside a category says so and offers the whole lexicon, keeping the query.
+    emptyMessage.textContent = browsing ? 'No matches in ' + names[active] + '.' : 'No entries match that search.';
+    searchAll.hidden = !browsing || matching.length > 0;
+    empty.style.display = query && !matching.length ? 'block' : 'none';
   }
-  function reset() {
-    search.value = ''; active = 'all';
-    chips.forEach(chip => chip.setAttribute('aria-pressed', String(chip.dataset.filter === 'all'))); apply();
+  // A view starts at the top of the page. Loading an address with a category in it, the browser
+  // scrolls to that category's heading once more after the load event, so wait a frame past it.
+  function top() {
+    window.scrollTo(0, 0);
+    if (document.readyState !== 'complete') window.addEventListener('load', () => requestAnimationFrame(() =>
+      requestAnimationFrame(() => { if (scrollY < 200) window.scrollTo(0, 0); })), { once: true });
   }
-  // Reveal original targets when following cross-references from search results.
-  function reveal(hash) {
-    let target;
-    try { target = document.getElementById(decodeURIComponent(hash.slice(1))); } catch { return; }
-    if (target?.closest('[data-category-section]')) { reset(); target.scrollIntoView(); }
+  // The address decides the view: nothing or #contents is the front page, a category's ID its
+  // entries, and the ID of an entry, an old anchor or a note opens its category at that point.
+  function destination(hash) {
+    let key;
+    try { key = decodeURIComponent(hash.replace(/^#/, '')); } catch { return null; }
+    if (!key || key === 'contents') return { home: true };
+    const target = document.getElementById(key), section = target?.closest('[data-category-section]');
+    return section ? { target, section } : null;
   }
+  function route(hash) {
+    const to = destination(hash);
+    if (!to) return false;
+    if (to.home) { active = 'all'; apply(); top(); return true; }
+    if (to.target === to.section) { active = to.section.dataset.categorySection; apply(); top(); return true; }
+    search.value = ''; active = to.section.dataset.categorySection; apply();
+    to.target.scrollIntoView();
+    return true;
+  }
+  // Links within the page change the view at once, and the address with it, so that the back
+  // button returns to the view before. Other links (#about) are left to the browser.
   document.addEventListener('click', event => {
     const link = event.target.closest('a[href^="#"]');
-    if (link && !event.ctrlKey && !event.metaKey && !event.shiftKey && !event.altKey) reveal(link.hash);
+    if (!link || event.button || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey || !destination(link.hash)) return;
+    event.preventDefault();
+    if (link.hash !== location.hash) history.pushState(null, '', link.hash);
+    route(link.hash);
   });
-  window.addEventListener('hashchange', () => reveal(location.hash));
+  ['popstate', 'hashchange'].forEach(event => window.addEventListener(event, () => route(location.hash)));
   ['input', 'change', 'search'].forEach(event => search.addEventListener(event, apply));
   chips.forEach(chip => chip.addEventListener('click', () => {
-    active = chip.dataset.filter; chips.forEach(other => other.setAttribute('aria-pressed', String(other === chip))); apply();
     if (!desktop.matches) { categoryMenu.open = false; categoryMenu.querySelector('summary').focus(); }
   }));
-  clear.addEventListener('click', () => { reset(); search.focus(); });
+  clear.addEventListener('click', () => { search.value = ''; apply(); search.focus(); });
   searchAll.addEventListener('click', () => {
-    active = 'all';
-    chips.forEach(chip => chip.setAttribute('aria-pressed', String(chip.dataset.filter === 'all')));
-    apply(); search.focus();
+    if (location.hash !== '#contents') history.pushState(null, '', '#contents');
+    route('#contents'); search.focus();
   });
   search.addEventListener('keydown', event => { if (event.key === 'Escape') clear.click(); });
   apply();
+  route(location.hash);
 })();

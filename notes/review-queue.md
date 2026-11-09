@@ -56,6 +56,13 @@ Records: `https://jhwheeler.github.io/lexicon-latinitatis-cotidianae/c/<id>.html
   - `pencil-sharpener` recommends Morgan–Owens's *cōticula*, classically a touchstone, over Traupman's *īnstrūmentum cuspidārium*.
   - `recite` recommends *reddō* (Hor. Ep. 1.18.14) and `lecture` recommends *schola* (Cic. Tusc. 1.7), rather than Traupman's *recitō* and *acroāsis*.
   - `times-table` uses our own *tabula multiplicātiōnis* (#65).
+- **The last words of ranks 501–1000:**
+  - `department` recommends *prōvincia* (Ter. Ph. 72–73), because classical Latin has no word for a division of an organization.
+  - `agent-representative` recommends the classical *prōcūrātor* (Cic. Caecin. 57).
+  - `target-mark` labels *scopus* modern (Traupman 45): Lewis & Short's one classical instance reads *prō scopulō* in Ihm's text.
+  - `round-game` recommends *missus* (Suet. Dom. 4.3).
+  - *quālitās* means a trait classically (Cic. Ac. 1.25), but `quality-assurance` and the computing records use it for "how good".
+  - "street" is a search word of `road` (*via*, *vīcus*); it may deserve a record of its own, with *platea*, the street of comedy (#66).
 - **Money:**
   - Should *wealth* have a record of its own led by *dīvitiae*? Today it sits in `resources`.
   - `pension` recommends the classical *annua* (an annual stipend), with Levi–Bini's *beneficium annuum* as the modern form.

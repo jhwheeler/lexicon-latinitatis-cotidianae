@@ -1,0 +1,103 @@
+{
+  "id": "probably",
+  "english": "probably",
+  "pos": "adverb",
+  "also": [
+    "most likely",
+    "in all likelihood",
+    "I suppose",
+    "I expect",
+    "presumably"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "opīnor (ut opīnor)",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "probably; I suppose, I think",
+      "grammar": "verb (opīnor, opīnārī, opīnātus sum) set into the sentence, like English “I expect”",
+      "evidence": [
+        "Cic. Tusc. 1.92: <span lang=\"la\">nōndum, opīnor, est experrēctus</span>",
+        "Cic. Att. 9.6.2: <span lang=\"la\">sed, opīnor, quiēscāmus</span>",
+        "Gell. 2.22.20: <span lang=\"la\">ā turbine, opīnor, ejus ac vertīgine</span>"
+      ],
+      "comment": "Latin has no everyday adverb for “probably”: it says what the speaker supposes, with <span lang=\"la\">opīnor</span>, <span lang=\"la\">putō</span> or <span lang=\"la\">crēdō</span> set into the clause."
+    },
+    {
+      "latin": "crēdō",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "I suppose, I dare say; often ironic",
+      "grammar": "verb, set into the sentence",
+      "evidence": [
+        "Plaut. Bacch. 106: <span lang=\"la\">nam utī nāvī vecta es, crēdō timida es</span>",
+        "Plaut., Ter., Cic., Caes., Sall., Liv. (Lewis &amp; Short)"
+      ],
+      "comment": "Polite, modest or ironic (Lewis &amp; Short): it can mean “no doubt” said with a smile."
+    },
+    {
+      "latin": "vērī simile est",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "it is likely, probably",
+      "grammar": "with an accusative and infinitive",
+      "evidence": [
+        "Cic. Tusc. 2.5: <span lang=\"la\">id quod vērī simile occurrit</span> (Lewis &amp; Short)",
+        "Caes. BG 3.13.6: <span lang=\"la\">quod est magis vērī simile</span>"
+      ],
+      "comment": "Cicero writes it as two words; later it is often one, <span lang=\"la\">vērīsimile</span> (Lewis &amp; Short)."
+    },
+    {
+      "latin": "nisi fallor",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "unless I’m mistaken, very likely",
+      "evidence": [
+        "Cic. Att. 4.19.1: <span lang=\"la\">sed nisi fallor citius tē quam scrībis vidēbō</span>",
+        "Verg. A. 5.49 (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "probābiliter",
+      "status": "avoid",
+      "period": "classical",
+      "gloss": "plausibly, convincingly",
+      "evidence": [
+        "Cic. Or. 122: <span lang=\"la\">rem breviter expōnere et probābiliter</span> (Lewis &amp; Short)",
+        "Liv. 33.28 (Lewis &amp; Short)"
+      ],
+      "comment": "Lewis &amp; Short’s “probably” is the old English sense “credibly”: every classical example is of telling or arguing a thing convincingly, never “in all likelihood”."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nōndum, opīnor, est experrēctus",
+      "english": "he probably hasn’t woken up yet",
+      "source": "Cic. Tusc. 1.92"
+    },
+    {
+      "latin": "nam utī nāvī vecta es, crēdō timida es.",
+      "english": "since you came by ship, you were probably frightened.",
+      "source": "Plaut. Bacch. 106"
+    },
+    {
+      "latin": "sed nisi fallor citius tē quam scrībis vidēbō",
+      "english": "but unless I’m mistaken I’ll see you sooner than you say",
+      "source": "Cic. Att. 4.19.1"
+    }
+  ],
+  "related": [
+    "perhaps",
+    "i-think-so"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/opinor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: opinor</a> · <a href=\"https://logeion.uchicago.edu/credo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: credo</a> · <a href=\"https://logeion.uchicago.edu/verus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: verus (vērī simile)</a> · <a href=\"https://logeion.uchicago.edu/fallo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fallo</a> · <a href=\"https://logeion.uchicago.edu/probabilis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: probabilis (probābiliter)</a>",
+    "Quotations from the Latinitas loci collections (loci-cicero-philosophica, loci-gellius), checked against the editions named there; Cicero (Att. 4.19.1, 9.6.2), Plautus (Bacch. 106) and Caesar (BG 3.13.6) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "id": "at-least",
+  "english": "at least",
+  "pos": "adverb",
+  "also": [
+    "at any rate",
+    "at the very least",
+    "if nothing else"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "saltem",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "at least, at all events",
+      "grammar": "adverb, after the word it limits",
+      "evidence": [
+        "Ter. Eun. 638–639: <span lang=\"la\">sī illud nōn licet, saltem hoc licēbit</span>",
+        "Cic. Att. 9.6.5: <span lang=\"la\">ēripe mihi hunc dolōrem aut minue saltem</span>",
+        "Traupman 338"
+      ],
+      "comment": "What still holds when something greater is refused: “if not that, at least this”."
+    },
+    {
+      "latin": "certē",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "at least, at any rate; surely",
+      "grammar": "adverb",
+      "evidence": [
+        "Phaedr. 4 epil. 7: <span lang=\"la\">sī nōn ingenium, certē brevitātem approbā</span>",
+        "Quint. 1.1.11: <span lang=\"la\">at ūnus certē sit assiduus loquendī nōn imperītus</span>"
+      ]
+    },
+    {
+      "latin": "minimum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "at least (with numbers)",
+      "grammar": "adverb",
+      "evidence": [
+        "Varr. RR 2.1.12: <span lang=\"la\">minimum octōgintā et ūna</span> (Lewis &amp; Short)",
+        "Plin. NH 18.146 (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "utique",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "at any rate, at least; above all",
+      "grammar": "adverb",
+      "evidence": [
+        "Cic. Att. 13.48.2: <span lang=\"la\">velim M. Varrōnis et Ollī mittās laudātiōnem, Ollī utique</span>",
+        "Traupman 338"
+      ],
+      "comment": "In Cicero mostly in the letters (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "sī illud nōn licet, saltem hoc licēbit",
+      "english": "if that isn’t allowed, at least this will be",
+      "source": "Ter. Eun. 638–639"
+    },
+    {
+      "latin": "ēripe mihi hunc dolōrem aut minue saltem",
+      "english": "take this pain away from me, or at least make it less",
+      "source": "Cic. Att. 9.6.5"
+    },
+    {
+      "latin": "sī nōn ingenium, certē brevitātem approbā",
+      "english": "if not my talent, at least approve my brevity",
+      "source": "Phaedr. 4 epil. 7"
+    }
+  ],
+  "related": [
+    "least"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/saltem\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: saltem</a> · <a href=\"https://logeion.uchicago.edu/certe\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: certe</a> · <a href=\"https://logeion.uchicago.edu/parvus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: parvus (minimum)</a> · <a href=\"https://logeion.uchicago.edu/utique\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: utique</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 338.",
+    "Quotations from the Latinitas loci collections (loci-phaedrus, loci-quintilianus), checked against the editions named there; Terence (Eun. 638–639) and Cicero (Att. 9.6.5, 13.48.2) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "id": "human",
+  "english": "human",
+  "pos": [
+    "adjective",
+    "noun"
+  ],
+  "also": [
+    "human being",
+    "humans",
+    "the human race",
+    "humankind",
+    "mankind"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "hūmānus, hūmāna, hūmānum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "human, of people",
+      "evidence": [
+        "Ter. Heaut. 77: <span lang=\"la\">hūmānī nihil ā mē aliēnum putō</span>",
+        "Liv. 21.30.7: <span lang=\"la\">hūmānō generī</span>",
+        "Plin. NH 8.1: <span lang=\"la\">proximumque hūmānīs sēnsibus</span>"
+      ],
+      "comment": "The human race is <span lang=\"la\">genus hūmānum</span> (Cic. Amic. 20, Lewis &amp; Short). Of a person, <span lang=\"la\">hūmānus</span> also means “kind, civilised, cultivated” (<span lang=\"la\">hūmānitās</span>)."
+    },
+    {
+      "latin": "homō, hominis m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a human being",
+      "evidence": [
+        "Ter. Heaut. 77: <span lang=\"la\">Homō sum</span>",
+        "Traupman 330: human being, <span lang=\"la\">homō</span>"
+      ]
+    },
+    {
+      "latin": "mortālis, mortālis m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a mortal, a human (as against the gods)",
+      "grammar": "noun (the adjective mortālis used as a noun)",
+      "evidence": [
+        "Verg. A. 1.327–328: <span lang=\"la\">haud tibi vultus mortālis</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Homō sum: hūmānī nihil ā mē aliēnum putō.",
+      "english": "I am human: I count nothing human foreign to me.",
+      "source": "Ter. Heaut. 77"
+    },
+    {
+      "latin": "nūllās profectō terrās caelum contingere nec inexsuperābilēs hūmānō generī esse",
+      "english": "no land actually touches the sky, and none is beyond the human race to cross",
+      "source": "Liv. 21.30.7"
+    },
+    {
+      "latin": "maximum est elephāns proximumque hūmānīs sēnsibus",
+      "english": "the largest is the elephant, and the nearest to human feeling",
+      "source": "Plin. NH 8.1"
+    }
+  ],
+  "related": [
+    "people",
+    "individual"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/humanus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: humanus</a> · <a href=\"https://logeion.uchicago.edu/homo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: homo</a> · <a href=\"https://logeion.uchicago.edu/mortalis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mortalis</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 330.",
+    "Quotations from the Latinitas loci collections (loci-livius, loci-plinius, loci-vergilius), checked against the editions named there; Terence (Heaut. 77) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>, where Parry prints <span lang=\"la\">nihil</span> (the Oxford text <span lang=\"la\">nīl</span>)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

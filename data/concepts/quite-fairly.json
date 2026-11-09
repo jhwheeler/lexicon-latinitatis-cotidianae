@@ -1,0 +1,71 @@
+{
+  "id": "quite-fairly",
+  "english": "quite",
+  "sense": "fairly, to some degree",
+  "pos": "adverb",
+  "also": [
+    "fairly",
+    "pretty",
+    "rather",
+    "somewhat",
+    "reasonably",
+    "a bit"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "satis",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "quite, fairly, well enough",
+      "grammar": "adverb, with adjectives and adverbs: satis bene, satis bonus",
+      "evidence": [
+        "Cic. Off. 3.58: <span lang=\"la\">nec īnfacētus et satis litterātus</span>",
+        "Cic. Off. 2.89: <span lang=\"la\">satis bene pāscere</span>"
+      ],
+      "comment": "Like English “enough”, <span lang=\"la\">satis</span> can lower a quality: “tolerably, pretty, fairly” (Lewis &amp; Short); <span lang=\"la\">satis bene</span>, quite well."
+    },
+    {
+      "latin": "aliquantum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "somewhat, rather; quite a bit",
+      "grammar": "adverb; with a genitive, quite a lot of",
+      "evidence": [
+        "Plaut. Bacch. 106: <span lang=\"la\">Aliquantum, soror</span>, “Somewhat, sister”",
+        "Cic. Div. 2.3: <span lang=\"la\">mihi quidem ipsī sānē aliquantum medētur</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Latin also says “rather” with the comparative (<span lang=\"la\">longior</span>, rather long) or with <span lang=\"la\">sub-</span>: <span lang=\"la\">subtristis</span>, rather glum (Ter. And. 447); <span lang=\"la\">subdifficilis</span>, rather hard (Cic. Amic. 67)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nec īnfacētus et satis litterātus",
+      "english": "not without wit, and quite well read",
+      "source": "Cic. Off. 3.58"
+    },
+    {
+      "latin": "respondit: ‘bene pāscere’; quid secundum: ‘satis bene pāscere’",
+      "english": "he answered, “good grazing”; and second best? “quite good grazing”",
+      "source": "Cato in Cic. Off. 2.89"
+    },
+    {
+      "latin": "Subtristis vīsus est esse aliquantulum mihi.",
+      "english": "He seemed to me a little on the glum side.",
+      "source": "Ter. And. 447"
+    }
+  ],
+  "related": [
+    "quite-completely",
+    "a-little"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/satis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: satis</a> · <a href=\"https://logeion.uchicago.edu/aliquantus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aliquantus (aliquantum)</a> · <a href=\"https://logeion.uchicago.edu/subtristis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: subtristis</a> · <a href=\"https://logeion.uchicago.edu/subdifficilis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: subdifficilis</a>",
+    "Quotation from the Latinitas loci collection (loci-cicero-philosophica), checked against the editions named there; Cicero (Off. 3.58), Plautus (Bacch. 106) and Terence (And. 447) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

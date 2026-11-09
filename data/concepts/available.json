@@ -1,0 +1,83 @@
+{
+  "id": "available",
+  "english": "available",
+  "sense": "at hand, to be had",
+  "pos": "adjective",
+  "also": [
+    "at hand",
+    "to hand",
+    "obtainable",
+    "make available"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "suppetō, suppetere, suppetīvī, suppetītum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "be available, be at hand, be in store",
+      "grammar": "verb, third conjugation, intransitive; to whom, the dative",
+      "evidence": [
+        "Caes. BG 1.16.2: <span lang=\"la\">nē pābulī quidem satis magna cōpia suppetēbat</span>",
+        "Cic. Fam. 15.13.2: <span lang=\"la\">mihi ad remūnerandum nihil suppetat praeter voluntātem</span>"
+      ],
+      "comment": "Latin says “X is available” with a verb: <span lang=\"la\">suppetit</span>, it is there to be had."
+    },
+    {
+      "latin": "in prōmptū esse",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "be ready to hand; be obvious",
+      "evidence": [
+        "Gell. 2.29.20: <span lang=\"la\">hoc erit tibi argūmentum semper in prōmptū situm</span>",
+        "Quint. 11.2.43: <span lang=\"la\">nec in prōmptū ratiō</span>"
+      ]
+    },
+    {
+      "latin": "parābilis, parābile",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "easy to get, readily available",
+      "evidence": [
+        "Cic. Fin. 1.36; Tusc. 5.93 (Lewis &amp; Short)",
+        "M-O s.v. available: easily available"
+      ]
+    },
+    {
+      "latin": "cōpiam facere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "make available, give access to",
+      "grammar": "to whom, the dative; of what, the genitive",
+      "evidence": [
+        "Ter. Ph. 113: <span lang=\"la\">sibi ut ejus faciat cōpiam</span>",
+        "M-O s.v. available: make available"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "hoc erit tibi argūmentum semper in prōmptū situm: nē quid expectēs amīcōs, quod tūte agere possiēs",
+      "english": "keep this lesson always to hand: don’t wait for your friends to do what you can do yourself",
+      "source": "Ennius in Gell. 2.29.20"
+    },
+    {
+      "latin": "ut tibi ad mē ōrnandum semper dētur facultās, mihi ad remūnerandum nihil suppetat praeter voluntātem",
+      "english": "that you always have the means to do me honour, and I have nothing available to repay you with but goodwill",
+      "source": "Cic. Fam. 15.13.2"
+    }
+  ],
+  "related": [
+    "available-free"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/suppeto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: suppeto</a> · <a href=\"https://logeion.uchicago.edu/promptus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: promptus (in prōmptū)</a> · <a href=\"https://logeion.uchicago.edu/parabilis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: parabilis</a> · <a href=\"https://logeion.uchicago.edu/copia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: copia</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. available: easily available; available: make available.",
+    "Quotations from the Latinitas loci collections (loci-gellius, loci-quintilianus), checked against the editions named there; Terence (Ph. 113), Cicero (Fam. 15.13.2) and Caesar (BG 1.16.2) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

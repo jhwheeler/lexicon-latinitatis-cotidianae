@@ -1,0 +1,81 @@
+{
+  "id": "least",
+  "english": "least",
+  "pos": [
+    "adverb",
+    "adjective"
+  ],
+  "also": [
+    "the least",
+    "least of all",
+    "not in the least",
+    "smallest"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "minimē",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "least; not at all",
+      "grammar": "adverb, superlative of parum",
+      "evidence": [
+        "Ov. Ars 3.426: <span lang=\"la\">quō minimē crēdās gurgite, piscis erit</span>",
+        "Ter. Ph. 1033: <span lang=\"la\">Minimē gentium</span>"
+      ],
+      "comment": "As an answer, “not in the least”, “not at all”: <span lang=\"la\">Minimē</span>; stronger, <span lang=\"la\">Minimē gentium</span>, “not for the world” (Ter.)."
+    },
+    {
+      "latin": "minimus, minima, minimum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "least, smallest; youngest",
+      "grammar": "adjective, superlative of parvus",
+      "evidence": [
+        "Publil. Syr. N 32: <span lang=\"la\">necesse est maximōrum minima esse initia</span>",
+        "Sen. Ep. 85.41: <span lang=\"la\">minimus Aethiops</span>"
+      ]
+    },
+    {
+      "latin": "minimum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the least; very little",
+      "grammar": "noun (neuter of minimus), with a genitive; also an adverb",
+      "evidence": [
+        "Publil. Syr. I 57: <span lang=\"la\">quī minimum cupit</span>",
+        "Hor. C. 1.11.8: <span lang=\"la\">quam minimum crēdula posterō</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "quō minimē crēdās gurgite, piscis erit",
+      "english": "in the pool where you least expect it, there will be a fish",
+      "source": "Ov. Ars 3.426"
+    },
+    {
+      "latin": "is minimō eget mortālis quī minimum cupit",
+      "english": "the man who wants least needs least",
+      "source": "Publil. Syr. I 57, quoted by Sen. Ep. 108.11"
+    },
+    {
+      "latin": "Ah, minimē gentium: nōn faciam.",
+      "english": "Oh no, not in the least: I won’t do it.",
+      "source": "Ter. Ad. 342"
+    }
+  ],
+  "related": [
+    "less",
+    "at-least"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/parvus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: parvus (minimus, minimē)</a> · <a href=\"https://logeion.uchicago.edu/minime\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: minime</a>",
+    "Quotations from the Latinitas loci collections (loci-ovidius, loci-terentius, loci-publilius, loci-seneca-epistulae, loci-horatius), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

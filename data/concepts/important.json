@@ -1,0 +1,106 @@
+{
+  "id": "important",
+  "english": "important",
+  "pos": "adjective",
+  "also": [
+    "it matters",
+    "it is important",
+    "importance"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "magnī interest",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "it is important, it matters a great deal",
+      "grammar": "impersonal verb (intersum); to whom, meā, tuā or a genitive; how much, magnī, plūris, maximē, nihil",
+      "evidence": [
+        "Cic. Att. 11.22.2: <span lang=\"la\">illud meā magnī interest tē ut videam</span>",
+        "Cic. Fam. 16.4.4: <span lang=\"la\">tuā et meā maximē interest tē valēre</span>",
+        "Traupman 332"
+      ],
+      "comment": "Latin says “X is important” as “X matters”: the thing that matters is the subject, as a clause (infinitive, <span lang=\"la\">ut</span>, or a question) or a neuter pronoun; <span lang=\"la\">nihil interest</span>, “it makes no difference”. Traupman gives <span lang=\"la\">magnus</span> for the adjective and <span lang=\"la\">id magnī aestimāre</span>, “to consider it important” (p. 332)."
+    },
+    {
+      "latin": "magnī rēfert",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "it is important, it matters",
+      "grammar": "impersonal verb, built like interest",
+      "evidence": [
+        "Sen. Ep. 77.20",
+        "Phaedr. 1.15: <span lang=\"la\">quid rēfert meā cui serviam</span>, “what does it matter to me whom I serve”"
+      ],
+      "comment": "Frequent in comedy, rare in Cicero, who says <span lang=\"la\">interest</span> (Lewis &amp; Short). <span lang=\"la\">Quid rēfert?</span> “What does it matter?”"
+    },
+    {
+      "latin": "magnī mōmentī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "of great importance (of a thing)",
+      "grammar": "genitive of quality: rēs magnī mōmentī",
+      "evidence": [
+        "Tac. H. 3.8; Liv. 10.16.5 (Lewis &amp; Short)",
+        "Cic. Vatin. 19: <span lang=\"la\">maximī mōmentī et ponderis</span> (Lewis &amp; Short)",
+        "M-O s.v. important"
+      ]
+    },
+    {
+      "latin": "gravis, grave",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "weighty, important, serious",
+      "evidence": [
+        "Cic. Off. 1.103: <span lang=\"la\">cum gravibus sēriīsque rēbus satis fēcerimus</span>",
+        "M-O s.v. important"
+      ]
+    },
+    {
+      "latin": "amplus, ampla, amplum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "of a person: important, eminent",
+      "evidence": [
+        "Cic. Rosc. Am. 83 (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "mōmentōsus, mōmentōsa, mōmentōsum",
+      "status": "avoid",
+      "period": "modern",
+      "gloss": "important",
+      "evidence": [
+        "M-O s.v. important (marked as a modern word; Trappen 1843)"
+      ],
+      "comment": "Its only ancient use (Ps.-Quint. Decl. 13.12) means “momentary, quick”; <span lang=\"la\">magnī mōmentī</span> says “important” classically."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "illud meā magnī interest tē ut videam",
+      "english": "it matters a great deal to me to see you",
+      "source": "Cic. Att. 11.22.2"
+    },
+    {
+      "latin": "tuā et meā maximē interest tē valēre",
+      "english": "it matters above all, to you and to me, that you get well",
+      "source": "Cic. Fam. 16.4.4"
+    },
+    {
+      "latin": "quōmodo fābula, sīc vīta: nōn quam diū, sed quam bene ācta sit, rēfert",
+      "english": "life is like a play: what matters is not how long it runs, but how well it is acted",
+      "source": "Sen. Ep. 77.20"
+    }
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/intersum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: intersum</a> · <a href=\"https://logeion.uchicago.edu/refert\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: refert</a> · <a href=\"https://logeion.uchicago.edu/momentum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: momentum</a> · <a href=\"https://logeion.uchicago.edu/gravis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gravis</a> · <a href=\"https://logeion.uchicago.edu/magnus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: magnus</a> · <a href=\"https://logeion.uchicago.edu/amplus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: amplus</a> · <a href=\"https://logeion.uchicago.edu/momentosus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: momentosus</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. important. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 332.",
+    "Quotations from the Latinitas loci collections (loci-seneca-epistulae, loci-phaedrus, loci-cicero-philosophica), checked against the editions named there; Cicero’s letters (Att. 11.22.2, Fam. 16.4.4) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

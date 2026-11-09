@@ -1,0 +1,90 @@
+{
+  "id": "particular-specific",
+  "english": "particular",
+  "sense": "specific, this and not another",
+  "pos": "adjective",
+  "also": [
+    "specific",
+    "in particular",
+    "particularly",
+    "especially"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "certus, certa, certum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "particular, fixed, specified",
+      "evidence": [
+        "Ov. Rem. 189: <span lang=\"la\">temporibus certīs</span>",
+        "Varr. RR 2.1.19: <span lang=\"la\">certō tempore</span>"
+      ],
+      "comment": "Particular as against any at all: <span lang=\"la\">certīs diēbus</span>, on particular days; “this particular …” is often <span lang=\"la\">ipse</span>: <span lang=\"la\">hōc ipsō diē</span>."
+    },
+    {
+      "latin": "praecipuē",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "in particular, especially, above all",
+      "grammar": "adverb",
+      "evidence": [
+        "Sen. Ep. 7.1: <span lang=\"la\">quid tibi vītandum praecipuē exīstimēs quaeris? turbam</span>",
+        "Hor. Ep. 1.1.108: <span lang=\"la\">praecipuē sānus, nisi cum pītuīta molesta est</span>"
+      ]
+    },
+    {
+      "latin": "praesertim",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "particularly, especially (adding a weighty reason)",
+      "grammar": "adverb; most often with cum or sī",
+      "evidence": [
+        "Varr. RR 3.2.3: <span lang=\"la\">tē praesertim</span>"
+      ],
+      "comment": "Traupman gives <span lang=\"la\">potissimum</span>, “above all”, for “in particular” (p. 356)."
+    },
+    {
+      "latin": "particulāris, particulāre",
+      "status": "avoid",
+      "period": "post-classical",
+      "gloss": "of a part, partial; in logic, particular",
+      "evidence": [
+        "Apul. Dogm. Plat. 3 (Lewis &amp; Short)",
+        "Traupman 356"
+      ],
+      "comment": "Traupman’s word for “particular”, but post-classical and a term of logic (<span lang=\"la\">prōpositiōnēs particulārēs</span>, opposed to universal ones); <span lang=\"la\">certus</span> and <span lang=\"la\">praecipuus</span> say it classically."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "quid tibi vītandum praecipuē exīstimēs quaeris? turbam",
+      "english": "you ask what I think you should avoid in particular? Crowds",
+      "source": "Sen. Ep. 7.1"
+    },
+    {
+      "latin": "dextera praecipuē capit indulgentia mentēs",
+      "english": "it is kindness, in particular, that wins hearts",
+      "source": "Ov. Ars 2.145"
+    },
+    {
+      "latin": "temporibus certīs mātūram rūsticus ūvam dēligit",
+      "english": "at particular times the farmer picks the ripe grapes",
+      "source": "Ov. Rem. 189–190"
+    }
+  ],
+  "related": [
+    "particular-fussy",
+    "individual"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/certus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: certus</a> · <a href=\"https://logeion.uchicago.edu/praecipuus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praecipuus (praecipuē)</a> · <a href=\"https://logeion.uchicago.edu/praesertim\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praesertim</a> · <a href=\"https://logeion.uchicago.edu/particularis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: particularis</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 356.",
+    "Quotations from the Latinitas loci collections (loci-ovidius, loci-varro, loci-seneca-epistulae, loci-horatius), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

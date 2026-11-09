@@ -1,0 +1,97 @@
+{
+  "id": "ever",
+  "english": "ever",
+  "sense": "at any time",
+  "pos": "adverb",
+  "also": [
+    "at any time",
+    "have you ever",
+    "if ever",
+    "hardly ever",
+    "ever since"
+  ],
+  "domain": "tempus",
+  "also_under": [
+    "verba"
+  ],
+  "terms": [
+    {
+      "latin": "umquam (unquam)",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "ever, at any time",
+      "grammar": "adverb; mostly after a negative, in conditions and in questions",
+      "evidence": [
+        "Cic. Fam. 14.3.5: <span lang=\"la\">nec umquam fuisse</span>",
+        "Ter. Eun. 852: <span lang=\"la\">sī aliam admīserō umquam, occīditō</span>",
+        "Plin. Ep. 5.16.1: <span lang=\"la\">nihil umquam fēstīvius</span>"
+      ],
+      "comment": "“Never” is <span lang=\"la\">numquam</span>, and “not … ever” <span lang=\"la\">nec umquam, nēmō umquam</span>. “Ever since” is <span lang=\"la\">ex quō</span> or <span lang=\"la\">ūsque ab</span> (Traupman 379)."
+    },
+    {
+      "latin": "aliquandō",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "ever (asking about a time not fixed); at some time",
+      "grammar": "adverb",
+      "evidence": [
+        "Plin. Ep. 8.8.1: <span lang=\"la\">vīdistīne aliquandō Clitumnum fontem?</span>",
+        "Sen. Ep. 72.8: <span lang=\"la\">vīdistī aliquandō canem …?</span>"
+      ],
+      "comment": "Where <span lang=\"la\">umquam</span> belongs to denials and doubt, <span lang=\"la\">aliquandō</span> belongs to plain statements and open questions (Lewis &amp; Short).",
+      "notes": [
+        "aliquando"
+      ]
+    },
+    {
+      "latin": "quandō",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "ever (after sī, nisi, nē, num)",
+      "grammar": "indefinite adverb: sī quandō, if ever",
+      "evidence": [
+        "Mor. 67: <span lang=\"la\">sī quandō vacuum casula pluviaeve tenēbant</span>",
+        "Catull. 84.1: <span lang=\"la\">sī quandō commoda vellet dīcere</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "cūrā ut valeās et ita tibi persuādeās, mihi tē cārius nihil esse nec umquam fuisse",
+      "english": "look after yourself, and be sure that nothing is or ever was dearer to me than you",
+      "source": "Cic. Fam. 14.3.5"
+    },
+    {
+      "latin": "vīdistīne aliquandō Clitumnum fontem?",
+      "english": "have you ever seen the spring of Clitumnus?",
+      "source": "Plin. Ep. 8.8.1"
+    },
+    {
+      "latin": "Ūnam hanc noxiam mitte: sī aliam admīserō umquam, occīditō.",
+      "english": "Let this one fault go: if I ever do another, kill me.",
+      "source": "Ter. Eun. 851–852"
+    }
+  ],
+  "notes": {
+    "aliquando": {
+      "form": "aliquandō",
+      "claim": "long final o",
+      "against": "Lewis &amp; Short <span lang=\"la\">aliquandŏ</span>",
+      "html": "A compound of <span lang=\"la\">quandō</span>, which de Vaan gives with a long final vowel (p. 507, s.v. <span lang=\"la\">quī</span>); Festus records an older form <span lang=\"la\">quandōd</span> (Lewis &amp; Short s.v. <span lang=\"la\">quando</span>). The Latinitas loci write <span lang=\"la\">aliquandō</span> throughout, and the libellī <span lang=\"la\">quandō</span>."
+    }
+  },
+  "related": [
+    "once",
+    "sometimes"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/umquam\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: umquam</a> · <a href=\"https://logeion.uchicago.edu/aliquando\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aliquando</a> · <a href=\"https://logeion.uchicago.edu/quando\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quando</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 379. Michiel de Vaan, <em>Etymological Dictionary of Latin and the other Italic Languages</em> (2008), p. 507.",
+    "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-plinius, loci-seneca-epistulae, loci-vergilius, loci-catullus), checked against the editions named there; Terence (Eun. 851–852) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

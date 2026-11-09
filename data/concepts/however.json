@@ -1,0 +1,91 @@
+{
+  "id": "however",
+  "english": "however",
+  "sense": "but, nevertheless",
+  "pos": "adverb",
+  "also": [
+    "nevertheless",
+    "all the same",
+    "though",
+    "yet",
+    "still"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "tamen",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "however, nevertheless, all the same",
+      "grammar": "adverb; at the head of its clause or after the word it stresses",
+      "evidence": [
+        "Cic. Att. 12.41.1: <span lang=\"la\">scīre tamen volēbam ubi essēs</span>",
+        "Cic. Fam. 9.20.2: <span lang=\"la\">sine pāvōne tamen</span>",
+        "Hor. Ep. 1.10.24"
+      ],
+      "comment": "The “however” that answers a concession, said or understood (<span lang=\"la\">etsī, quamquam, quamvīs, cum</span>): “even so”."
+    },
+    {
+      "latin": "autem",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "however, but, on the other hand",
+      "grammar": "conjunction; never first in its clause, but after its first word or phrase",
+      "evidence": [
+        "Cic. Fam. 14.18.2: <span lang=\"la\">maximē autem date operam ut valeātis</span>",
+        "Traupman 330"
+      ],
+      "comment": "A light “but” that sets one thing beside another, not “nevertheless”; where nothing is set against it, leave it out."
+    },
+    {
+      "latin": "vērumtamen (vērum tamen)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "but even so, however",
+      "evidence": [
+        "Cic. Att. 6.2.2: <span lang=\"la\">est magnum illud quidem vērum tamen multiplex puerī ingenium</span>",
+        "Cic. Rosc. Am. 55 (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "nihilōminus (nihilō minus)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "nonetheless, none the less",
+      "evidence": [
+        "Cic. Off. 1.51: <span lang=\"la\">nihilō minus ipsī lūcet</span>",
+        "Cato Agr. 39.2: <span lang=\"la\">nihilō minus sūmptum futūrum</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nihil erat quod scrīberem. scīre tamen volēbam ubi essēs",
+      "english": "I had nothing to write; however, I wanted to know where you were",
+      "source": "Cic. Att. 12.41.1"
+    },
+    {
+      "latin": "etiam Hirtiō cēnam dedī, sine pāvōne tamen",
+      "english": "I even gave Hirtius dinner, without a peacock, however",
+      "source": "Cic. Fam. 9.20.2"
+    },
+    {
+      "latin": "nātūram expellēs furcā, tamen ūsque recurret",
+      "english": "drive nature out with a pitchfork, and she will keep coming back all the same",
+      "source": "Hor. Ep. 1.10.24"
+    }
+  ],
+  "related": [
+    "however-no-matter-how"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/tamen\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tamen</a> · <a href=\"https://logeion.uchicago.edu/autem\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: autem</a> · <a href=\"https://logeion.uchicago.edu/verumtamen\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: verumtamen</a> · <a href=\"https://logeion.uchicago.edu/nihil\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nihil (nihilominus)</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 330.",
+    "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-cicero-philosophica, loci-cato, loci-horatius), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

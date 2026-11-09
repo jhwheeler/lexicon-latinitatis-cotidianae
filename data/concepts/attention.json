@@ -1,0 +1,93 @@
+{
+  "id": "attention",
+  "english": "attention",
+  "sense": "heeding, noticing, concentrating",
+  "pos": "noun",
+  "also": [
+    "attentiveness",
+    "attract attention",
+    "draw attention",
+    "your attention, please"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "attentiō, attentiōnis f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "attention, attentiveness",
+      "evidence": [
+        "Cic. de Or. 2.150: <span lang=\"la\">attentiōne animī</span> (Lewis &amp; Short)",
+        "Quint. 4.1.34 (Lewis &amp; Short)"
+      ],
+      "comment": "Not a common word: Latin mostly says it with a verb, <span lang=\"la\">animum attendere</span> or <span lang=\"la\">operam dare</span>, and an attentive listener is <span lang=\"la\">attentus</span>."
+    },
+    {
+      "latin": "operam dare",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "give one’s attention, attend",
+      "evidence": [
+        "Ter. Eun. 44: <span lang=\"la\">date operam</span>",
+        "Ter. Ph. 30: <span lang=\"la\">date operam, adeste aequō animō</span>"
+      ]
+    },
+    {
+      "latin": "animum attendere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "pay attention, turn one’s mind to",
+      "evidence": [
+        "Ter. Ph. 24: <span lang=\"la\">nunc quid velim animum attendite</span>"
+      ]
+    },
+    {
+      "latin": "animadversiō, animadversiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "noticing, observation, attention",
+      "evidence": [
+        "Cic. Off. 1.103: <span lang=\"la\">excitanda animadversiō et dīligentia</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Also censure or punishment, from animadvertere in aliquem."
+    },
+    {
+      "latin": "oculōs in sē convertere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "draw attention to oneself",
+      "evidence": [
+        "Cic. Cat. 4.1",
+        "Nep. Alc. 3.5 (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "date operam, cum silentiō animum attendite",
+      "english": "give us your attention, and listen in silence",
+      "source": "Ter. Eun. 44"
+    },
+    {
+      "latin": "videō, patrēs cōnscrīptī, in mē omnium vestrum ōra atque oculōs esse conversōs",
+      "english": "I see, members of the senate, that all your faces and eyes are turned on me",
+      "source": "Cic. Cat. 4.1"
+    }
+  ],
+  "related": [
+    "pay-attention",
+    "attend",
+    "notice",
+    "listen-carefully"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/attentio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: attentio</a> · <a href=\"https://logeion.uchicago.edu/opera\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: opera</a> · <a href=\"https://logeion.uchicago.edu/attendo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: attendo</a> · <a href=\"https://logeion.uchicago.edu/animadversio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: animadversio</a> · <a href=\"https://logeion.uchicago.edu/converto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: converto</a>",
+    "Terence checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a>, which follow the Oxford text. Cicero, <em>In Catilinam</em> 4, checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Citations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them and have not been checked against an edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

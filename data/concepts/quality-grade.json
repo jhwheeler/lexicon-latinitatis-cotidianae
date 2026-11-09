@@ -1,0 +1,89 @@
+{
+  "id": "quality-grade",
+  "english": "quality",
+  "sense": "how good something is",
+  "pos": "noun",
+  "also": [
+    "good quality",
+    "high quality",
+    "high-quality",
+    "top quality",
+    "poor quality",
+    "first-rate",
+    "second-rate"
+  ],
+  "also_under": [
+    "pecunia"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "bonitās, bonitātis f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "good quality, goodness (of a thing)",
+      "evidence": [
+        "Phaedr. 4.9.8: <span lang=\"la\">tanta bonitās est aquae</span>",
+        "Plin. NH 18.105: <span lang=\"la\">siliginis bonitāte</span>",
+        "Cic. Rosc. Am. 20: <span lang=\"la\">bonitās praediōrum</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Of land, water, wine and goods as well as of people. Pliny grades it: <span lang=\"la\">secunda bonitās</span>, the second quality (NH 12.48, Lewis &amp; Short)."
+    },
+    {
+      "latin": "virtūs, virtūtis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "worth, quality (of a thing as well as a person)",
+      "evidence": [
+        "Plaut. Mil. 728: <span lang=\"la\">prō virtūte ut vēneat</span>",
+        "Cic. Leg. 1.45: <span lang=\"la\">nec arboris nec equī virtūs</span> (Lewis &amp; Short)"
+      ],
+      "comment": "The opposite is <span lang=\"la\">vitium</span>, a fault: so in Plautus, of goods on the market."
+    },
+    {
+      "latin": "nota, notae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a grade, the quality of goods",
+      "evidence": [
+        "Cic. Brut. 287: <span lang=\"la\">hae notae sunt optimae</span>, of wines",
+        "Col. 9.15.3: <span lang=\"la\">secundae notae mel</span> (Lewis &amp; Short)",
+        "M-O s.v. quality: high-quality, first-rate; quality: second-rate"
+      ],
+      "comment": "From the mark on a wine jar that showed its vintage; Morgan–Owens gives <span lang=\"la\">prīmae</span> or <span lang=\"la\">optimae notae</span> for first-rate, <span lang=\"la\">secundae notae</span> for second-rate."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "dēscende, amīce; tanta bonitās est aquae, voluptās ut satiārī nōn possit mea",
+      "english": "come down, friend: the water is so good that I can’t drink my fill",
+      "source": "Phaedr. 4.9.8–9"
+    },
+    {
+      "latin": "quae probast mers, pretium eī statuit, prō virtūte ut vēneat",
+      "english": "goods that are good he prices so that they sell for what they are worth",
+      "source": "Plaut. Mil. 728"
+    },
+    {
+      "latin": "atquī hae notae sunt optimae",
+      "english": "and yet these vintages are the best",
+      "source": "Cic. Brut. 287"
+    }
+  ],
+  "related": [
+    "quality-trait",
+    "goods",
+    "quality-assurance"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/bonitas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: bonitas</a> · <a href=\"https://logeion.uchicago.edu/virtus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: virtus</a> · <a href=\"https://logeion.uchicago.edu/nota\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nota</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. quality; quality: high-quality, first-rate; quality: second-rate.",
+    "Quotations from the Latinitas loci collections (loci-phaedrus, loci-plinius), checked against the editions named there. Plautus, <em>Miles</em>, and Cicero, <em>Brutus</em>, checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Citations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them and have not been checked against an edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

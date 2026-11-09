@@ -1,0 +1,93 @@
+{
+  "id": "campaign-political",
+  "english": "campaign",
+  "sense": "an organized effort to win votes or support",
+  "pos": [
+    "noun",
+    "verb"
+  ],
+  "also": [
+    "election campaign",
+    "canvass",
+    "canvassing",
+    "run for office",
+    "stand for office"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "petītiō, petītiōnis f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a candidacy, an election campaign",
+      "evidence": [
+        "Cic. Att. 1.1.1: <span lang=\"la\">petītiōnis nostrae</span>",
+        "Traupman 178: campaign, <span lang=\"la\">petītiō</span>"
+      ]
+    },
+    {
+      "latin": "ambiō, ambīre, ambīvī, ambītum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "canvass, go round for votes",
+      "evidence": [
+        "Traupman 178, 286: campaign, <span lang=\"la\">ambiō</span>"
+      ]
+    },
+    {
+      "latin": "prēnsō, prēnsāre, prēnsāvī, prēnsātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "canvass, go round shaking hands",
+      "evidence": [
+        "Cic. Att. 1.1.1: <span lang=\"la\">prēnsat ūnus P. Galba</span>",
+        "Traupman 180: <span lang=\"la\">manūs prēnsāre</span>, shake hands when campaigning"
+      ]
+    },
+    {
+      "latin": "ambitiō, ambitiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "canvassing (by lawful means)",
+      "evidence": [
+        "Cic. Tusc. 2.62: <span lang=\"la\">quid dē nostrīs ambitiōnibus loquar?</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Lawful canvassing; <span lang=\"la\">ambitus</span> is the unlawful kind."
+    },
+    {
+      "latin": "ambitus, ambitūs m.",
+      "status": "avoid",
+      "period": "classical",
+      "gloss": "electoral bribery, unlawful canvassing",
+      "evidence": [
+        "Traupman 178: illegal campaign practices, <span lang=\"la\">ambitus</span>"
+      ],
+      "comment": "Not a campaign but the crime, as in <span lang=\"la\">lēx dē ambitū</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "petītiōnis nostrae, quam tibi summae cūrae esse sciō, hujus modī ratiō est, quod adhūc conjectūrā prōvidērī possit. prēnsat ūnus P. Galba",
+      "english": "as for my campaign, which I know matters a great deal to you, this is how it stands, as far as one can guess so far: only Publius Galba is canvassing",
+      "source": "Cic. Att. 1.1.1"
+    }
+  ],
+  "related": [
+    "election",
+    "vote",
+    "office-public",
+    "political",
+    "campaign-military"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/petitio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: petitio</a> · <a href=\"https://logeion.uchicago.edu/ambio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ambio</a> · <a href=\"https://logeion.uchicago.edu/prenso\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: prenso</a> · <a href=\"https://logeion.uchicago.edu/ambitio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ambitio</a> · <a href=\"https://logeion.uchicago.edu/ambitus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ambitus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 178, 180, 286, checked against the searchable text of the book (9 November 2026).",
+    "Cicero, <em>Letters to Atticus</em> 1, checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Citations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them and have not been checked against an edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

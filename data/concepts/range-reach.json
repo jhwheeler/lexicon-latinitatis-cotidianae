@@ -1,0 +1,80 @@
+{
+  "id": "range-reach",
+  "english": "range",
+  "sense": "how far something can reach",
+  "pos": "noun",
+  "also": [
+    "within range",
+    "out of range",
+    "range of a weapon",
+    "within sight",
+    "out of sight"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "jactus, jactūs m.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a throw; the range of a throw",
+      "evidence": [
+        "Verg. A. 11.608: <span lang=\"la\">intrā jactum tēlī</span>",
+        "Liv. 8.7.1: <span lang=\"la\">vix tēlī jactū ab statiōne proximā abesset</span>"
+      ],
+      "comment": "Within range is <span lang=\"la\">intrā tēlī jactum</span>; a spear’s throw away, <span lang=\"la\">tēlī jactū</span>."
+    },
+    {
+      "latin": "conjectus, conjectūs m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a throw; range",
+      "evidence": [
+        "Liv. 28.14.19: <span lang=\"la\">nōndum ad tēlī conjectum vēnissent</span>",
+        "Petr. 90.2: <span lang=\"la\">extrā tēlī conjectum</span> (Lewis &amp; Short)"
+      ],
+      "comment": "<span lang=\"la\">ad tēlī conjectum venīre</span>, to come within range."
+    },
+    {
+      "latin": "cōnspectus, cōnspectūs m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "sight, the range of the eyes",
+      "evidence": [
+        "Phaedr. App. 28.10: <span lang=\"la\">sēque ē cōnspectū abstulit</span>"
+      ],
+      "comment": "<span lang=\"la\">in cōnspectū</span>, within sight; <span lang=\"la\">ē cōnspectū</span>, out of sight."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "jamque intrā jactum tēlī prōgressus uterque substiterat",
+      "english": "and now each side had come within range and halted",
+      "source": "Verg. A. 11.608–609"
+    },
+    {
+      "latin": "ita ut vix tēlī jactū ab statiōne proximā abesset",
+      "english": "so that he was hardly a spear’s throw from the nearest outpost",
+      "source": "Liv. 8.7.1"
+    },
+    {
+      "latin": "vēnātor citus nōn intellēxit sēque ē cōnspectū abstulit",
+      "english": "the hunter, in a hurry, did not understand, and went off out of sight",
+      "source": "Phaedr. App. 28.10"
+    }
+  ],
+  "related": [
+    "range-variety",
+    "far"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/jactus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: jactus</a> · <a href=\"https://logeion.uchicago.edu/conjectus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: conjectus</a> · <a href=\"https://logeion.uchicago.edu/conspectus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: conspectus</a>",
+    "Vergil, <em>Aeneid</em> 11, and Livy 8 and 28 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-phaedrus), checked against the editions named there.",
+    "Citations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them and have not been checked against an edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

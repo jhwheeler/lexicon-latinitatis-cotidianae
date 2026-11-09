@@ -1,0 +1,87 @@
+{
+  "id": "enter",
+  "english": "enter",
+  "sense": "go or come into",
+  "pos": "verb",
+  "also": [
+    "go in",
+    "come in",
+    "come in!",
+    "go inside",
+    "come inside",
+    "walk in"
+  ],
+  "also_under": [
+    "sermo"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "intrō, intrāre, intrāvī, intrātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "go in, come in, enter",
+      "evidence": [
+        "Phaedr. 5.9.2: <span lang=\"la\">cum vix intrāre posset ad praesēpia</span>",
+        "Cic. Phil. 2.68: <span lang=\"la\">tū illud sānctissimum līmen intrāre?</span> (Lewis &amp; Short)",
+        "Traupman 310: enter, <span lang=\"la\">intrāre</span>"
+      ]
+    },
+    {
+      "latin": "ingredior, ingredī, ingressus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "step in, enter",
+      "evidence": [
+        "Cic. Phil. 2.68: <span lang=\"la\">tū ingredī illam domum ausus es?</span> (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "intrō",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "in, inside (with verbs of motion)",
+      "grammar": "adverb",
+      "evidence": [
+        "Plaut. Mil. 1387: <span lang=\"la\">quīn intrō īs?</span>",
+        "Plaut. Aul. 89: <span lang=\"la\">abī intrō</span>"
+      ],
+      "comment": "<span lang=\"la\">intrō īre</span>, to go in; also written as one word, as in Terence’s <span lang=\"la\">intrōībās</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Quis hīc loquitur? ehem, tūne hīc erās, mī Phaedria? Quid hīc stābās? cūr nōn rēctā intrōībās?",
+      "english": "who’s that talking? Oh, is it you, Phaedria dear? Why were you standing out here? Why didn’t you come straight in?",
+      "source": "Ter. Eun. 86–87"
+    },
+    {
+      "latin": "quid stās? quīn intrō īs?",
+      "english": "why are you standing there? Go on in!",
+      "source": "Plaut. Mil. 1387"
+    },
+    {
+      "latin": "angustō in aditū taurus luctāns cornibus cum vix intrāre posset ad praesēpia",
+      "english": "a bull, struggling with his horns in a narrow doorway, could hardly get in to his stall",
+      "source": "Phaedr. 5.9.1–2"
+    }
+  ],
+  "related": [
+    "inside",
+    "get-in",
+    "go-away",
+    "door",
+    "enter-data"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/intro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: intro</a> · <a href=\"https://logeion.uchicago.edu/ingredior\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ingredior</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 310, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-phaedrus, loci-plautus, loci-terentius), checked against the editions named there.",
+    "Citations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them and have not been checked against an edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

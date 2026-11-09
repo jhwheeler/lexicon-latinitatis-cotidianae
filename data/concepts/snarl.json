@@ -3,7 +3,9 @@
   "english": "snarl",
   "pos": "verb",
   "also": [
-    "growl"
+    "growl",
+    "grrr",
+    "grr"
   ],
   "domain": "natura",
   "terms": [
@@ -15,14 +17,45 @@
         "Traupman 142",
         "Ter. <em>Phorm.</em> 341: <span lang=\"la\">ille ringitur, tū rīdeās</span>"
       ]
+    },
+    {
+      "latin": "err",
+      "status": "alternative",
+      "period": "renaissance",
+      "grammar": "interjection",
+      "gloss": "grrr, a dog’s snarl",
+      "evidence": [
+        "Comen. OP Alph.: <span lang=\"la\">Canis ringitur</span>, under R",
+        "Pers. 1.109 (Lewis &amp; Short s.v. <span lang=\"la\">canīnus</span>): <span lang=\"la\">littera canīna</span>, the letter R"
+      ],
+      "comment": "The snarl as Comenius spells it in his animal alphabet (1658); Persius already calls R the dog’s letter."
+    },
+    {
+      "latin": "fremō, fremere, fremuī, fremitum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "growl, of dogs and big cats",
+      "evidence": [
+        "Lucr. 5.1064 (Lewis &amp; Short s.v. <span lang=\"la\">fremō</span>): <span lang=\"la\">mollia ricta fremunt</span>, of angry Molossian hounds",
+        "Traupman 145, of tigers"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Canis ringitur.",
+      "english": "The dog snarls (R, err, in the animal alphabet).",
+      "source": "Comen. OP Alph."
     }
   ],
   "related": [
-    "dog"
+    "dog",
+    "roar"
   ],
   "sources": [
-    "<a href=\"https://logeion.org/ringor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ringor</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 142."
+    "<a href=\"https://logeion.org/ringor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ringor</a> · <a href=\"https://logeion.uchicago.edu/fremo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fremo</a> · <a href=\"https://logeion.uchicago.edu/caninus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: caninus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): pp. 142, 145.",
+    "Comenius from the Latinitas loci collection (loci-comenius)."
   ],
   "review": {
     "status": "draft",

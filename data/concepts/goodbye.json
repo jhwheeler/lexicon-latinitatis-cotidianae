@@ -2,6 +2,11 @@
   "id": "goodbye",
   "english": "goodbye",
   "pos": "phrase",
+  "also": [
+    "bye",
+    "bye-bye",
+    "bye bye"
+  ],
   "domain": "sermo",
   "terms": [
     {
@@ -9,6 +14,16 @@
       "status": "recommended",
       "period": "classical",
       "gloss": "goodbye (to one person; to several)"
+    },
+    {
+      "latin": "Bene valē! Bene valēte!",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "bye-bye (to one person; to several)",
+      "evidence": [
+        "Traupman 17, 285",
+        "Plaut. <em>Curc.</em> 203"
+      ]
     }
   ],
   "phrases": [
@@ -16,17 +31,25 @@
       "latin": "«Valēte,» inquit, «bene volāte! Theodōre, patrī pārē, et aviae meīs verbīs salūtem dīc.»",
       "english": "“Goodbye,” she said, “have a good flight! Theo, do what Dad says, and give Grandma my love.”",
       "source": "Libellus I, <span lang=\"la\">Iter in Lūsitāniam</span>"
+    },
+    {
+      "latin": "Bene valē, ocule mī.",
+      "english": "Bye-bye, apple of my eye.",
+      "source": "Plaut. <em>Curc.</em> 203"
     }
   ],
   "related": [
     "have-a-good-flight",
     "safe-journey",
     "come-back-soon",
-    "im-glad-youre-back"
+    "im-glad-youre-back",
+    "hello"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/valeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: valeo</a>",
-    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): pp. 17, 285.",
+    "Plautus from the Latinitas loci collection (loci-plautus)."
   ],
   "replaces": [
     "entry-237",

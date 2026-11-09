@@ -1,0 +1,91 @@
+{
+  "id": "also",
+  "english": "also",
+  "pos": "adverb",
+  "also": [
+    "too",
+    "as well",
+    "me too"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "etiam",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "also, too; even",
+      "grammar": "adverb",
+      "evidence": [
+        "Plin. Ep. 8.8.6: <span lang=\"la\">īnfrā etiam natāre concessum</span>",
+        "Cic. Tusc. 5.100: <span lang=\"la\">nōn sōlum in praesentiā, sed etiam posterō diē</span>"
+      ],
+      "comment": "Adds a further fact or person, before or after the word: <span lang=\"la\">nōn sōlum (modo) … sed etiam</span>, not only … but also. In a question, <span lang=\"la\">Etiamne …?</span>: <span lang=\"la\">etiamne hoc negābis?</span> (Plaut. Am. 2.2.128, Lewis &amp; Short)."
+    },
+    {
+      "latin": "quoque",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "also, too",
+      "grammar": "adverb",
+      "evidence": [
+        "Ov. Rem. 104: <span lang=\"la\">crās quoque fīet idem</span>",
+        "Liv. 1.9.3: <span lang=\"la\">urbēs quoque, ut cētera, ex īnfimō nāscī</span>"
+      ],
+      "comment": "Always straight after the word it marks: <span lang=\"la\">mē quoque</span>, me too (Hor. C. 1.16.22, Lewis &amp; Short)."
+    },
+    {
+      "latin": "et",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "too, also (before the word)",
+      "grammar": "adverb",
+      "evidence": [
+        "Plaut. Stich. 2.1.44: <span lang=\"la\">Salvus sīs. — Et tū salvē.</span> (Lewis &amp; Short)",
+        "Ter. Eun. 191: <span lang=\"la\">Et tū</span>"
+      ],
+      "comment": "In greetings and answers: <span lang=\"la\">et tū</span>, you too; <span lang=\"la\">et ego</span>, so did I (Cic. Sen. 26). In narrative, Lewis &amp; Short: frequent in Livy, rare in Cicero."
+    },
+    {
+      "latin": "item",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "likewise, in the same way",
+      "grammar": "adverb",
+      "evidence": [
+        "Cic. Leg. 2.52 (Lewis &amp; Short)",
+        "Cic. Div. 2.107 (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Valē. — Et tū; numquid vīs aliud?",
+      "english": "Goodbye. — You too. Is there anything else you want?",
+      "source": "Ter. Eun. 190–191"
+    },
+    {
+      "latin": "dīcimus adsiduē 'crās quoque fīet idem'",
+      "english": "we keep saying, ‘it will be the same tomorrow too’",
+      "source": "Ov. Rem. 104"
+    },
+    {
+      "latin": "et ego fēcī quī litterās Graecās senex didicī",
+      "english": "so did I, who learned Greek as an old man",
+      "source": "Cic. Sen. 26"
+    }
+  ],
+  "related": [
+    "too-excessively",
+    "same",
+    "only-merely"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/etiam\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: etiam</a> · <a href=\"https://logeion.uchicago.edu/quoque\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quoque</a> · <a href=\"https://logeion.uchicago.edu/et\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: et</a> · <a href=\"https://logeion.uchicago.edu/item\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: item</a>",
+    "Quotations from the Latinitas loci collections (loci-terentius, loci-ovidius, loci-cicero-philosophica, loci-plinius, loci-livius), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

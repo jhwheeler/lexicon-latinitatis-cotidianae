@@ -3,7 +3,9 @@
   "english": "just now",
   "pos": "adverb",
   "also": [
-    "a moment ago"
+    "a moment ago",
+    "just",
+    "had just"
   ],
   "also_under": [
     "tempus"
@@ -16,21 +18,54 @@
       "period": "classical",
       "gloss": "just now, a moment ago",
       "evidence": [
-        "Traupman 87–88"
+        "Traupman 87–88",
+        "Ter. Eun. 697: <span lang=\"la\">Quam dūdum? — Modo.</span>"
+      ]
+    },
+    {
+      "latin": "commodum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "just, just then; had just … (when)",
+      "grammar": "adverb",
+      "register": "vōx sermōnis cotīdiānī: Plaut., Ter.; Cic. in epistulīs",
+      "evidence": [
+        "Plaut. Cas. 3.4.3: <span lang=\"la\">ad tē hercle ībam commodum</span>, I was just coming to you (Lewis &amp; Short)",
+        "Cic. Att. 13.9.1 (Lewis &amp; Short)"
+      ],
+      "comment": "With a pluperfect and <span lang=\"la\">cum</span> it is “had just … when …” (Cic. Att. 13.9.1; Ter. Eun. 2.3.52, Lewis &amp; Short). Lewis &amp; Short: colloquial, and in post-classical prose."
+    },
+    {
+      "latin": "tantum quod",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "only just; had just (… when)",
+      "evidence": [
+        "Cic. Fam. 7.23.1: <span lang=\"la\">tantum quod ex Arpīnātī vēneram, cum mihi ā tē litterae redditae sunt</span> (Lewis &amp; Short)"
       ]
     }
   ],
   "related": [
     "a-little-while-ago",
-    "lately"
+    "lately",
+    "just-exactly",
+    "today"
   ],
   "sources": [
     "<a href=\"https://logeion.org/modo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: modo</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): pp. 87–88."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): pp. 87–88.",
+    "<a href=\"https://logeion.uchicago.edu/commodum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: commodum</a> · <a href=\"https://logeion.uchicago.edu/tantum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tantum</a>. Quotations from the Latinitas loci collections (loci-terentius), checked against the editions named there."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "Quandō? — Hodiē. — Quam dūdum? — Modo.",
+      "english": "When? — Today. — How long ago? — Just now.",
+      "source": "Ter. Eun. 697"
+    }
+  ]
 }

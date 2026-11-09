@@ -1,0 +1,65 @@
+{
+  "id": "always",
+  "english": "always",
+  "pos": "adverb",
+  "also": [
+    "as always",
+    "all the time"
+  ],
+  "also_under": [
+    "verba"
+  ],
+  "domain": "tempus",
+  "terms": [
+    {
+      "latin": "semper",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "always",
+      "grammar": "adverb",
+      "evidence": [
+        "Mart. 5.58.1: <span lang=\"la\">crās dīcis … semper</span>",
+        "Cic. Off. 1.90: <span lang=\"la\">īdem semper vultus</span>",
+        "Traupman 86"
+      ],
+      "comment": "For a habit, Latin often prefers <span lang=\"la\">soleō</span>: <span lang=\"la\">ut soleō</span>, as I always do (Cic. Att. 2.8.1)."
+    },
+    {
+      "latin": "numquam nōn",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "always (never not)",
+      "evidence": [
+        "Quint. 1.1.20: <span lang=\"la\">numquam nōn fēcisse sē gaudeat</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "crās tē vīctūrum, crās dīcis, Postume, semper: dīc mihi, crās istud, Postume, quandō venit?",
+      "english": "‘Tomorrow I’ll start living,’ you always say, Postumus, ‘tomorrow’: tell me, Postumus, when does this tomorrow come?",
+      "source": "Mart. 5.58.1–2"
+    },
+    {
+      "latin": "Cicerō meus quid aget? iste vērō sit in sinū semper et complexū meō",
+      "english": "and what will my little Cicero do? Let him always be in my lap and in my arms",
+      "source": "Cic. Fam. 14.4.3"
+    }
+  ],
+  "related": [
+    "never",
+    "every-year",
+    "every-night",
+    "as-usual"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/semper\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: semper</a> · <a href=\"https://logeion.uchicago.edu/soleo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: soleo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 86, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-martialis, loci-cicero-epistulae, loci-cicero-philosophica, loci-quintilianus), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

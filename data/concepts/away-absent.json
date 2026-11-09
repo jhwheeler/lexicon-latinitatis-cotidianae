@@ -1,0 +1,61 @@
+{
+  "id": "away-absent",
+  "english": "away",
+  "sense": "not here, absent",
+  "pos": "adverb",
+  "also": [
+    "absent",
+    "be away",
+    "out",
+    "not at home"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "absum, abesse, āfuī",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "be away, be absent; be … away (of distance)",
+      "grammar": "verb, irregular (like sum)",
+      "evidence": [
+        "Gell. 15.7.3: <span lang=\"la\">cum ā mē abes</span>",
+        "Cic. Fam. 2.7.1: <span lang=\"la\">longē absum, audiō sērō</span> (Lewis &amp; Short)"
+      ],
+      "comment": "The opposite of <span lang=\"la\">adsum</span>. Of distance too: <span lang=\"la\">Quantum abest?</span>, how far is it? (see how far)."
+    },
+    {
+      "latin": "forīs",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "out, not at home",
+      "grammar": "adverb",
+      "evidence": [
+        "Plaut. Capt. 1.2.5: <span lang=\"la\">sī forīs, sī intus volent</span> (Lewis &amp; Short)",
+        "Cic. Fam. 9.24.3: <span lang=\"la\">forīs cēnitandō</span>"
+      ],
+      "comment": "The opposite of <span lang=\"la\">domī</span> and <span lang=\"la\">intus</span>; going out is <span lang=\"la\">forās</span>. Away abroad is <span lang=\"la\">peregrē</span> (see abroad)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "avē, mī Gāī, meus asellus jūcundissimus, quem semper medius fidius dēsīderō, cum ā mē abes",
+      "english": "hello, my Gaius, my dearest little donkey, whom I always miss, I swear, when you’re away from me",
+      "source": "Gell. 15.7.3"
+    }
+  ],
+  "related": [
+    "away-off",
+    "abroad",
+    "how-far",
+    "far"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/absum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: absum</a> · <a href=\"https://logeion.uchicago.edu/foris\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: foris</a>",
+    "Quotations from the Latinitas loci collections (loci-gellius, loci-cicero-epistulae), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

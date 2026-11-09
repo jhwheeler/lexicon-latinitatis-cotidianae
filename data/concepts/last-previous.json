@@ -1,0 +1,82 @@
+{
+  "id": "last-previous",
+  "english": "last",
+  "sense": "the one before this",
+  "pos": "adjective",
+  "also": [
+    "last year",
+    "last time",
+    "previous",
+    "the night before"
+  ],
+  "domain": "tempus",
+  "terms": [
+    {
+      "latin": "superior, superius",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "last, previous, earlier",
+      "grammar": "adjective (comparative)",
+      "evidence": [
+        "Cic. Har. Resp. 15: <span lang=\"la\">annō superiōre</span> (Lewis &amp; Short)",
+        "M-O s.v. last year: <span lang=\"la\">superiōre annō</span>",
+        "Traupman 89: the previous year, superior annus"
+      ],
+      "comment": "<span lang=\"la\">annō superiōre</span>, last year; <span lang=\"la\">superiōribus diēbus</span>, in the previous days (Caes. BG 7.58, Lewis &amp; Short); <span lang=\"la\">superiōre hebdomade</span>, last week (see last week). Of nights, though, <span lang=\"la\">proximā nocte</span> is last night and <span lang=\"la\">superiōre nocte</span> the night before (Cic. Cat. 1.1)."
+    },
+    {
+      "latin": "proximus, proxima, proximum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "last, most recent; or next",
+      "grammar": "adjective",
+      "evidence": [
+        "Cic. Cat. 1.1: <span lang=\"la\">quid proximā, quid superiōre nocte ēgerīs</span>",
+        "Traupman 87: last night, proximā nocte"
+      ],
+      "comment": "It means either the last or the next; the tense tells which (see last night, next week)."
+    },
+    {
+      "latin": "proximē",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "last time, most recently",
+      "grammar": "adverb",
+      "evidence": [
+        "Caes. BG 3.29: <span lang=\"la\">cīvitātēs quae proximē bellum fēcerant</span> (Lewis &amp; Short)",
+        "Plin. Ep. 4.13.3 (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "quid proximā, quid superiōre nocte ēgerīs",
+      "english": "what you did last night, and what the night before",
+      "source": "Cic. Cat. 1.1"
+    },
+    {
+      "latin": "Annō superiōre in Lūsitāniā fuimus.",
+      "english": "Last year we were in Portugal.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "last-night",
+    "last-week",
+    "next-week",
+    "year",
+    "last-final"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/superior\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: superior</a> · <a href=\"https://logeion.uchicago.edu/proximus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: proximus</a> · <a href=\"https://logeion.uchicago.edu/proxime\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: proxime</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. last year.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 87, 89, checked against the searchable text of the book (9 November 2026).",
+    "Cicero, Cat. 1.1, as Lewis &amp; Short quotes it (s.v. proximus).",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

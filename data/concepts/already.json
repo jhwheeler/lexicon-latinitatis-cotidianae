@@ -1,0 +1,67 @@
+{
+  "id": "already",
+  "english": "already",
+  "pos": "adverb",
+  "also": [
+    "so soon",
+    "by now",
+    "for a long time already"
+  ],
+  "also_under": [
+    "verba"
+  ],
+  "domain": "tempus",
+  "terms": [
+    {
+      "latin": "jam",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "already, by now",
+      "grammar": "adverb",
+      "evidence": [
+        "Plaut. Men. 2.3.86: <span lang=\"la\">jamne ībis?</span>, are you going so soon? (Lewis &amp; Short)",
+        "Cic. Imp. Pomp. 52: <span lang=\"la\">obsolēvit jam ista ōrātiō</span> (Lewis &amp; Short)"
+      ],
+      "comment": "<span lang=\"la\">Jamne …?</span> asks “already?”. With a negative, “no longer”: <span lang=\"la\">jam nōn</span>, <span lang=\"la\">nōn jam</span>; “not yet” is <span lang=\"la\">nōndum</span> (see not yet)."
+    },
+    {
+      "latin": "jam dūdum (jam diū)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "for a long time already (with a present tense)",
+      "evidence": [
+        "Ter. Eun. 816: <span lang=\"la\">Jam dūdum animus est in patinīs.</span>",
+        "Cic. Fam. 7.9.1: <span lang=\"la\">jam diū ignōrō quid agās</span>",
+        "Traupman 88: I’ve been here a long time already, jam dūdum adsum"
+      ],
+      "comment": "Latin keeps the present where English says “have been”: <span lang=\"la\">jam dūdum adsum</span>, I’ve been here for ages (Traupman 88)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Jam dūdum animus est in patinīs.",
+      "english": "My mind’s been on the dishes for ages.",
+      "source": "Ter. Eun. 816"
+    },
+    {
+      "latin": "jam diū ignōrō quid agās; nihil enim scrībis",
+      "english": "I haven’t known how you are for a long time now; you don’t write",
+      "source": "Cic. Fam. 7.9.1"
+    }
+  ],
+  "related": [
+    "not-yet",
+    "now",
+    "its-getting-dark"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/jam\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: jam</a> · <a href=\"https://logeion.uchicago.edu/dudum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dudum</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 88, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-terentius, loci-cicero-epistulae), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

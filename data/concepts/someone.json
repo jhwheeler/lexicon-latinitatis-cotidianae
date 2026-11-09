@@ -1,0 +1,99 @@
+{
+  "id": "someone",
+  "english": "someone",
+  "pos": "pronoun",
+  "also": [
+    "somebody",
+    "anyone",
+    "anybody"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "aliquis",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "someone, somebody",
+      "grammar": "pronoun",
+      "evidence": [
+        "Cic. Amic. 88: <span lang=\"la\">sī aliquem cui narrāret habuisset</span>"
+      ],
+      "comment": "Lewis &amp; Short: <span lang=\"la\">aliquis</span> says that someone exists, though it does not matter who; <span lang=\"la\">quis</span> leaves even that open; <span lang=\"la\">quīdam</span> is someone the speaker knows but does not name."
+    },
+    {
+      "latin": "quis",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "someone, anyone (after sī, nisi, num, nē)",
+      "grammar": "pronoun",
+      "evidence": [
+        "Cic. Sen. 83: <span lang=\"la\">sī quis deus mihi largiātur</span>",
+        "Cic. Amic. 88: <span lang=\"la\">sī quis in caelum ascendisset</span>"
+      ]
+    },
+    {
+      "latin": "quisquam",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "anyone (after a negative, and in questions that expect “no”)",
+      "grammar": "pronoun",
+      "evidence": [
+        "Cic. Sen. 21: <span lang=\"la\">nec vērō quemquam senem audīvī oblītum</span>",
+        "Ter. Hec. 3.1.13 (Lewis &amp; Short)"
+      ],
+      "comment": "“Not anyone” is <span lang=\"la\">nēmō</span>, “and no one” <span lang=\"la\">nec quisquam</span> (Lewis &amp; Short)."
+    },
+    {
+      "latin": "ecquis",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "is anyone …? (in an eager question)",
+      "grammar": "pronoun",
+      "evidence": [
+        "Ter. Eun. 530: <span lang=\"la\">Ecquis hīc?</span>",
+        "Plaut. Amph. 1020: <span lang=\"la\">heus, ecquis hīc est?</span>"
+      ]
+    },
+    {
+      "latin": "quīdam, quaedam, quiddam",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "someone, a certain person (known but not named)",
+      "grammar": "pronoun",
+      "evidence": [
+        "Cic. Clu. 177: <span lang=\"la\">quīdam ex advocātīs</span> (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Heus, heus. Ecquis hīc? Ego sum Chremēs.",
+      "english": "Hello, hello! Is anyone there? It’s me, Chremes.",
+      "source": "Ter. Eun. 530–531"
+    },
+    {
+      "latin": "nec vērō quemquam senem audīvī oblītum quō locō thēsaurum obruisset",
+      "english": "and I never heard of any old man who forgot where he had buried his treasure",
+      "source": "Cic. Sen. 21"
+    },
+    {
+      "latin": "sī quis in caelum ascendisset nātūramque mundī et pulchritūdinem sīderum perspexisset, īnsuāvem illam admīrātiōnem eī fore; quae jūcundissima fuisset, sī aliquem cui narrāret habuisset",
+      "english": "if someone went up into heaven and saw the nature of the universe and the beauty of the stars, the wonder of it would give him no pleasure; it would have been the sweetest thing if he had had someone to tell",
+      "source": "Cic. Amic. 88"
+    }
+  ],
+  "related": [
+    "something",
+    "anything",
+    "everything"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/aliquis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aliquis</a> · <a href=\"https://logeion.uchicago.edu/quis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quis</a> · <a href=\"https://logeion.uchicago.edu/quisquam\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quisquam</a> · <a href=\"https://logeion.uchicago.edu/ecquis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ecquis</a> · <a href=\"https://logeion.uchicago.edu/quidam\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quidam</a>",
+    "Quotations from the Latinitas loci collections (loci-terentius, loci-plautus, loci-cicero-philosophica), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "something",
+  "english": "something",
+  "pos": "pronoun",
+  "also": [
+    "something or other",
+    "something new"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "aliquid",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "something",
+      "grammar": "pronoun (neuter of aliquis)",
+      "evidence": [
+        "Cic. Fam. 9.26.3: <span lang=\"la\">cotīdiē aliquid legitur aut scrībitur</span>",
+        "Cic. Sen. 38: <span lang=\"la\">senīle aliquid … aliquid adulēscentis</span>"
+      ],
+      "comment": "“Something old, something new” takes an agreeing adjective or a genitive: <span lang=\"la\">senīle aliquid</span>, <span lang=\"la\">aliquid adulēscentis</span> (Cic. Sen. 38). Lewis &amp; Short (s.v. <span lang=\"la\">aliquis</span>): <span lang=\"la\">aliquid</span> says that the thing exists, though not which; <span lang=\"la\">quid</span> leaves even that open."
+    },
+    {
+      "latin": "quid",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "something, anything (after sī, nisi, num, nē)",
+      "grammar": "pronoun",
+      "evidence": [
+        "Col. 12.2.6: <span lang=\"la\">sī quid forte abest</span>",
+        "Cic. Att. 15.16a: <span lang=\"la\">sī quid scrībere velīs</span>"
+      ],
+      "comment": "After <span lang=\"la\">sī, nisi, num</span> and <span lang=\"la\">nē</span> the <span lang=\"la\">ali-</span> drops: <span lang=\"la\">sī quid</span>, if anything; <span lang=\"la\">nē quid</span>, so that nothing."
+    },
+    {
+      "latin": "nesciō quid",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "something or other",
+      "evidence": [
+        "Cic. Att. 13.38.1: <span lang=\"la\">exarāvī nesciō quid ad tē</span>",
+        "Cic. Att. 9.10.1: <span lang=\"la\">hoc nesciō quid</span>"
+      ]
+    },
+    {
+      "latin": "quiddam",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a certain something",
+      "grammar": "pronoun",
+      "evidence": [
+        "Cic. Sen. 33: <span lang=\"la\">nātūrāle quiddam</span>",
+        "Cic. Leg. 3.23: <span lang=\"la\">quiddam malī</span> (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "sīc igitur vīvitur: cotīdiē aliquid legitur aut scrībitur",
+      "english": "so this is how we live: every day something gets read or written",
+      "source": "Cic. Fam. 9.26.3"
+    },
+    {
+      "latin": "ut enim adulēscentem in quō est senīle aliquid, sīc senem in quō est aliquid adulēscentis probō",
+      "english": "as I like a young man with something of the old man in him, so I like an old man with something of the young",
+      "source": "Cic. Sen. 38"
+    },
+    {
+      "latin": "sī quid forte abest, ipse vacuus locus admonet, ut, quod deest, requīrātur",
+      "english": "if anything happens to be missing, the empty place itself reminds you to look for what is gone",
+      "source": "Col. 12.2.6"
+    }
+  ],
+  "related": [
+    "anything",
+    "everything",
+    "someone",
+    "whats-new"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/aliquis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aliquis</a> · <a href=\"https://logeion.uchicago.edu/quis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quis</a> · <a href=\"https://logeion.uchicago.edu/nescio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nescio</a> · <a href=\"https://logeion.uchicago.edu/quidam\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quidam</a>",
+    "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-cicero-philosophica, loci-cato), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

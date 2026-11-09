@@ -48,6 +48,7 @@ KEEP = {
     'superior': 'comparative, vocalic i', 'superius': 'comparative, vocalic i',
     'interior': 'comparative (also English), vocalic i', 'interius': 'comparative, vocalic i',
     'plēiades': 'Greek Πλειάδες', 'gāius': 'trisyllabic Gāĭus', 'cāius': 'trisyllabic Cāĭus',
+    'gāium': 'trisyllabic Gāĭus', 'gāiō': 'trisyllabic Gāĭus', 'gāiī': 'trisyllabic Gāĭus', 'gāī': 'trisyllabic Gāĭus',
     'iambus': 'Greek ἴαμβος', 'iōnia': 'Greek Ἰωνία', 'iōnēs': 'Greek Ἴωνες', 'iōta': 'Greek ἰῶτα',
     'iātralīptēs': 'Greek ἰᾱτραλείπτης, vocalic i', 'iātralīptae': 'Greek ἰᾱτραλείπτης, vocalic i',
     'iātralīptēn': 'Greek ἰᾱτραλείπτης, vocalic i',

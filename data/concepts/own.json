@@ -1,0 +1,93 @@
+{
+  "id": "own",
+  "english": "own",
+  "sense": "my own, one’s own",
+  "pos": "adjective",
+  "also": [
+    "my own",
+    "your own",
+    "his own",
+    "her own",
+    "of one’s own accord"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "suus, sua, suum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "his, her, its, their own; one’s own",
+      "grammar": "pronoun (possessive)",
+      "evidence": [
+        "Liv. 2.32.9: <span lang=\"la\">singulīs membrīs suum cuique cōnsilium, suus sermō</span>",
+        "Plaut. Stich. 1.2.76: <span lang=\"la\">suus rēx rēgīnae placet</span>, a queen likes her own king (Lewis &amp; Short)"
+      ],
+      "comment": "Latin’s “own” is the possessive itself: <span lang=\"la\">meus, tuus, noster, vester</span> for the other persons, put first for weight (<span lang=\"la\">meā manū</span>, with my own hand: Cic. Sen. 59)."
+    },
+    {
+      "latin": "proprius, propria, proprium",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "one’s own, not shared",
+      "grammar": "adjective",
+      "evidence": [
+        "Cic. Rosc. Am. 21: <span lang=\"la\">tria praedia … propria trāduntur</span> (Lewis &amp; Short)",
+        "Phaedr. 1.4.1: <span lang=\"la\">āmittit meritō proprium quī aliēnum adpetit</span>"
+      ],
+      "comment": "The opposite of <span lang=\"la\">commūnis</span>: what is yours alone.",
+      "notes": [
+        "proprius"
+      ]
+    },
+    {
+      "latin": "suā sponte",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "of one’s own accord",
+      "evidence": [
+        "Ter. Ad. 1.1.50: <span lang=\"la\">suā sponte rēctē facere</span> (Lewis &amp; Short)",
+        "Cic. Fam. 1.7.3 (Lewis &amp; Short)"
+      ],
+      "comment": "<span lang=\"la\">meā</span>, <span lang=\"la\">tuā sponte</span> for the other persons; in good prose <span lang=\"la\">sponte</span> always has the possessive (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "meī sunt ōrdinēs, mea dīscrīptiō, multae etiam istārum arborum meā manū sunt satae",
+      "english": "the rows are mine, the plan is mine, and many of those trees were planted with my own hand",
+      "source": "Cic. Sen. 59"
+    },
+    {
+      "latin": "singulīs membrīs suum cuique cōnsilium, suus sermō fuerit",
+      "english": "each limb had its own mind and its own voice",
+      "source": "Liv. 2.32.9"
+    },
+    {
+      "latin": "āmittit meritō proprium quī aliēnum adpetit",
+      "english": "whoever grabs at what is another’s deserves to lose his own",
+      "source": "Phaedr. 1.4.1"
+    }
+  ],
+  "notes": {
+    "proprius": {
+      "form": "proprius",
+      "claim": "short o",
+      "against": "Lewis &amp; Short <span lang=\"la\">prō̆prius</span>, marking the o both long and short",
+      "html": "De Vaan 490, s.v. <span lang=\"la\">prō</span>: short <span lang=\"la\">pro-</span> occurs “in some older compounds, such as <span lang=\"la\">procul, probus, proprius</span>”. The first syllable is heavy only by position, before <span lang=\"la\">pr</span>."
+    }
+  },
+  "related": [
+    "own-possess",
+    "only-sole"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/suus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: suus</a> · <a href=\"https://logeion.uchicago.edu/proprius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: proprius</a> · <a href=\"https://logeion.uchicago.edu/sponte\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sponte</a>",
+    "Michiel de Vaan, <em>Etymological Dictionary of Latin and the other Italic Languages</em> (2008), p. 490.",
+    "Quotations from the Latinitas loci collections (loci-cicero-philosophica, loci-livius, loci-phaedrus), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

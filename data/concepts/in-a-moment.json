@@ -11,19 +11,47 @@
       "evidence": [
         "Traupman 87"
       ]
+    },
+    {
+      "latin": "jam",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "in a moment (with a future)",
+      "grammar": "adverb",
+      "evidence": [
+        "Plaut. Cas. 526: <span lang=\"la\">jam hīc erō</span>",
+        "Ter. Eun. 85: <span lang=\"la\">jam calēscēs</span>",
+        "Traupman 88: soon (in a minute), jam"
+      ],
+      "comment": "The spoken way to say it: <span lang=\"la\">jam aderō</span>, I’ll be there in a moment (Ter. Eun. 4.6.26, Lewis &amp; Short; see coming); <span lang=\"la\">jam hīc erō</span>, I’ll be back in a moment. <span lang=\"la\">Mōmentō temporis</span> is the narrator’s phrase (Liv. 21.33, Lewis &amp; Short)."
     }
   ],
   "related": [
     "any-day-now",
-    "just-now"
+    "just-now",
+    "coming",
+    "moment"
   ],
   "sources": [
     "<a href=\"https://logeion.org/momentum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: momentum</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 87."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): pp. 87–88.",
+    "<a href=\"https://logeion.uchicago.edu/jam\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: jam</a>. Quotations from the Latinitas loci collections (loci-plautus, loci-terentius), checked against the editions named there."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "in a minute",
+    "in a second",
+    "I’ll be right back"
+  ],
+  "phrases": [
+    {
+      "latin": "cūrā, ego ad forum modo ībō: jam hīc erō. — Bene ambulā.",
+      "english": "Look after things; I’m just going to the forum: I’ll be back in a moment. — Have a good walk.",
+      "source": "Plaut. Cas. 526"
+    }
+  ]
 }

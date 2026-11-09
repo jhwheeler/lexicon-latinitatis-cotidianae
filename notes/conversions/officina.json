@@ -1,0 +1,2000 @@
+{
+  "batch": "officina",
+  "cards": [
+    "entry-97",
+    "entry-98",
+    "entry-99",
+    "entry-100",
+    "entry-101",
+    "entry-102",
+    "entry-103",
+    "entry-142",
+    "entry-143",
+    "entry-194",
+    "entry-144",
+    "entry-145",
+    "entry-146",
+    "entry-147",
+    "entry-148",
+    "entry-159",
+    "entry-161"
+  ],
+  "records": [
+    {
+      "id": "tool",
+      "english": "tool",
+      "pos": "noun",
+      "also": [
+        "implement",
+        "instrument",
+        "hand tool"
+      ],
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "īnstrūmentum, īnstrūmentī n.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "tool, implement or instrument",
+          "comment": "An excellent general word for a practical tool."
+        }
+      ],
+      "related": [
+        "hammer",
+        "saw",
+        "file-tool",
+        "chisel",
+        "axe",
+        "spade"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/instrumentum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: instrumentum</a>"
+      ],
+      "replaces": [
+        "entry-97"
+      ]
+    },
+    {
+      "id": "hammer",
+      "english": "hammer",
+      "pos": "noun",
+      "also": [
+        "mallet",
+        "maul"
+      ],
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "malleus, malleī m.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "hammer, mallet or maul",
+          "grammar": "noun, second declension"
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Malleum mihi dā.",
+          "english": "Give me the hammer.",
+          "source": "composed"
+        },
+        {
+          "latin": "Dā mihi, ōrō, ūtendum malleum, tata!",
+          "english": "Lend me the hammer, please, Dad!",
+          "source": "Libellus VII, <span lang=\"la\">Diēs ūnus Osoitsae</span>"
+        }
+      ],
+      "related": [
+        "nail-fastener",
+        "tool"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/malleus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: malleus</a>",
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+        "<span lang=\"la\">Dā mihi, ōrō, ūtendum malleum, tata!</span> is after Pont. Progymn. I 35; quoted in Libellus VII.",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "nail-fastener",
+      "english": "nail",
+      "sense": "fastener",
+      "pos": "noun",
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "clāvus, clāvī m.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Clāvum malleō fīge.",
+          "english": "Drive the nail with the hammer.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "hammer",
+        "box-of-nails"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/clavus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: clavus</a>",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "saw",
+      "english": "saw",
+      "pos": "noun",
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "serra, serrae f.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "related": [
+        "tool"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/serra\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: serra</a>"
+      ]
+    },
+    {
+      "id": "file-tool",
+      "english": "file",
+      "sense": "tool",
+      "pos": "noun",
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "līma, līmae f.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "related": [
+        "tool"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/lima\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lima</a>"
+      ]
+    },
+    {
+      "id": "chisel",
+      "english": "chisel",
+      "pos": "noun",
+      "also": [
+        "graver"
+      ],
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "scalprum, scalprī n.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "sharp cutting tool, especially a chisel or graver"
+        }
+      ],
+      "related": [
+        "tool"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/scalprum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: scalprum</a>"
+      ]
+    },
+    {
+      "id": "axe",
+      "english": "axe",
+      "pos": "noun",
+      "also": [
+        "hatchet"
+      ],
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "secūris, secūris f.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "axe or hatchet"
+        }
+      ],
+      "related": [
+        "adze"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/securis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: securis</a>"
+      ]
+    },
+    {
+      "id": "spade",
+      "english": "spade",
+      "pos": "noun",
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "pāla, pālae f.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "spade",
+          "comment": "Exact English distinctions depend on the form of the tool."
+        }
+      ],
+      "related": [
+        "shovel"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/latin/spade/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: spade</a>"
+      ]
+    },
+    {
+      "id": "shovel",
+      "english": "shovel",
+      "pos": "noun",
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "pāla, pālae f.",
+          "status": "recommended",
+          "period": "modern",
+          "gloss": "shovel",
+          "comment": "Spade; also usable more broadly for a shovel in later lexicographic tradition. Exact English distinctions depend on the form of the tool."
+        }
+      ],
+      "related": [
+        "spade"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/latin/shovel/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: shovel</a>"
+      ]
+    },
+    {
+      "id": "screw",
+      "english": "screw",
+      "pos": "noun",
+      "also": [
+        "bolt"
+      ],
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "cōchlea / cochlea, -ae f.",
+          "status": "recommended",
+          "period": "modern",
+          "gloss": "screw",
+          "grammar": "noun, first declension",
+          "evidence": [
+            "M-O s.v. screw"
+          ],
+          "comment": "Ancient <span lang=\"la\">cochlea</span> already denotes spiral and screw mechanisms; later technical Latin applies it directly to the modern threaded fastener. Lewis &amp; Short marks the first vowel of <strong lang=\"la\">cochlea</strong> as variable (<span lang=\"la\">cō̆-</span>), so this lexicon does not pretend that one quantity is uniquely correct. The modern English distinction between <em>screw</em> and <em>bolt</em> is not mapped consistently onto one fixed pair of Latin nouns in the sources checked; <strong lang=\"la\">cochlea</strong> is therefore kept broad here rather than creating a false precision. Modern Latin sources do not maintain a single universally standardized terminology for every modern screwdriver, screw and wrench subtype; specific types should therefore be formed or selected case by case."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Cochleam vertitōriō intorque.",
+          "english": "Screw the screw in with the screwdriver.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "screwdriver",
+        "nut-bolt",
+        "screw-thread",
+        "screw-in",
+        "unscrew"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=coclea\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: coclea / cochlea</a> · <a href=\"https://neolatinlexicon.org/latin/screw/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: screw</a>",
+        "The example sentence marked “composed” is ours."
+      ],
+      "replaces": [
+        "entry-98"
+      ]
+    },
+    {
+      "id": "screwdriver",
+      "english": "screwdriver",
+      "pos": "noun",
+      "also": [
+        "screw driver"
+      ],
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "vertitōrium, -ī n.",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "Helfer"
+          ],
+          "comment": "A Neo-Latin lexicographic term."
+        },
+        {
+          "latin": "īnstrūmentum cochleīs extorquendīs",
+          "status": "alternative",
+          "period": "modern",
+          "gloss": "screwdriver (a description)",
+          "evidence": [
+            "Latham, through M-O s.v. screwdriver"
+          ],
+          "comment": "The descriptive phrase Morgan–Owens records from Latham."
+        }
+      ],
+      "related": [
+        "screw",
+        "powered-screwdriver",
+        "wrench"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/latin/screwdriver/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: screwdriver</a>"
+      ]
+    },
+    {
+      "id": "wrench",
+      "english": "wrench",
+      "pos": "noun",
+      "also": [
+        "spanner"
+      ],
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "clāvis mēchanica",
+          "status": "recommended",
+          "period": "modern",
+          "gloss": "wrench, spanner",
+          "evidence": [
+            "M-O s.v. wrench"
+          ],
+          "comment": "A Neo-Latin lexicographic term."
+        },
+        {
+          "latin": "clāvis Anglica",
+          "status": "alternative",
+          "period": "modern",
+          "gloss": "universal or adjustable wrench",
+          "evidence": [
+            "M-O s.v. wrench"
+          ],
+          "comment": "Also recorded, for a universal or adjustable wrench."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Clāvem mēchanicam affer.",
+          "english": "Bring the wrench.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "screwdriver",
+        "nut-bolt",
+        "pliers"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/latin/wrench/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: wrench</a>",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "powered-screwdriver",
+      "english": "powered screwdriver",
+      "pos": "noun",
+      "also": [
+        "drill-driver",
+        "drill driver"
+      ],
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "vertitōrium ēlectricum",
+          "status": "recommended",
+          "period": "ours",
+          "gloss": "powered screwdriver, drill-driver",
+          "comment": "Our descriptive qualification of the recorded noun; a drill-driver also drills, which a hand screwdriver cannot."
+        }
+      ],
+      "related": [
+        "screwdriver",
+        "electric-drill"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/latin/screwdriver/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: screwdriver</a>"
+      ]
+    },
+    {
+      "id": "nut-bolt",
+      "english": "nut",
+      "sense": "for a bolt",
+      "pos": "noun",
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "mātrix cochleae",
+          "status": "recommended",
+          "period": "modern",
+          "gloss": "nut used with a bolt or screw",
+          "evidence": [
+            "Scheller 1783, through M-O s.v. nut used with bolt"
+          ]
+        },
+        {
+          "latin": "cochlea fēmina",
+          "status": "alternative",
+          "period": "modern",
+          "gloss": "nut",
+          "evidence": [
+            "M-O s.v. nut used with bolt"
+          ],
+          "comment": "Another recorded expression."
+        }
+      ],
+      "related": [
+        "screw",
+        "screw-thread",
+        "wrench"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/latin/nut_used_with_bolt/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: nut used with bolt</a> · <a href=\"https://logeion.uchicago.edu/matrix\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: matrix</a>"
+      ],
+      "replaces": [
+        "entry-99"
+      ]
+    },
+    {
+      "id": "screw-thread",
+      "english": "screw thread",
+      "pos": "noun",
+      "also": [
+        "thread"
+      ],
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "rūgae f. pl.",
+          "status": "recommended",
+          "period": "modern",
+          "gloss": "screw threads",
+          "grammar": "noun, first declension, plural",
+          "comment": "So in later technical lexicography. The connection is old: Pliny uses singular <span lang=\"la\">rūga</span> for a female screw."
+        }
+      ],
+      "related": [
+        "screw",
+        "nut-bolt"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/ruga\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ruga</a>"
+      ]
+    },
+    {
+      "id": "screw-in",
+      "english": "screw in",
+      "pos": "verb",
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "cochleam intorquēre",
+          "status": "recommended",
+          "period": "modern",
+          "gloss": "turn a screw in",
+          "evidence": [
+            "18th-century evidence"
+          ]
+        }
+      ],
+      "related": [
+        "screw",
+        "unscrew",
+        "fasten-with-a-screw",
+        "screwdriver"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/latin/screw_bolt_verb/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: screw / bolt (verb)</a> · <a href=\"https://neolatinlexicon.org/latin/screw_in_screw_tight/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: screw in / tighten</a>"
+      ]
+    },
+    {
+      "id": "fasten-with-a-screw",
+      "english": "fasten with a screw",
+      "pos": "verb",
+      "also": [
+        "tighten with a screw"
+      ],
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "firmāre cochleā",
+          "status": "recommended",
+          "period": "modern",
+          "gloss": "fasten or tighten with a screw",
+          "evidence": [
+            "19th-century evidence; Helfer"
+          ]
+        }
+      ],
+      "related": [
+        "screw-in",
+        "screw"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/latin/screw_bolt_verb/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: screw / bolt (verb)</a> · <a href=\"https://neolatinlexicon.org/latin/screw_in_screw_tight/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: screw in / tighten</a>"
+      ]
+    },
+    {
+      "id": "unscrew",
+      "english": "unscrew",
+      "pos": "verb",
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "cochleam retorquēre",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "M-O s.v. unscrew"
+          ]
+        },
+        {
+          "latin": "cochleam evolvere",
+          "status": "alternative",
+          "period": "modern",
+          "evidence": [
+            "M-O s.v. unscrew"
+          ],
+          "comment": "Another recorded expression."
+        }
+      ],
+      "related": [
+        "screw-in",
+        "screw"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/latin/unscrew/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: unscrew</a>"
+      ]
+    },
+    {
+      "id": "drill",
+      "english": "drill",
+      "pos": "noun",
+      "also": [
+        "boring tool",
+        "auger",
+        "gimlet",
+        "drill bit"
+      ],
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "terēbra / terebra, -ae f.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "boring tool, auger or gimlet",
+          "grammar": "noun, first declension",
+          "comment": "The ancient boring tool, and the natural inherited word for a modern drill. Lewis &amp; Short marks the second vowel as variable (<span lang=\"la\">tĕrē̆bra</span>). Both forms are therefore shown rather than silently choosing one reconstruction; the example <span lang=\"la\">Terēbram affer</span> adopts the long-vowel variant."
+        },
+        {
+          "latin": "perforaculum",
+          "status": "alternative",
+          "period": "late",
+          "evidence": [
+            "M-O s.v. drill"
+          ],
+          "comment": "Morgan–Owens also records <strong lang=\"la\">perforaculum</strong> and <strong lang=\"la\">furfuraculum</strong>; for ordinary speech we prefer the historically established <span lang=\"la\">terebra</span>."
+        },
+        {
+          "latin": "furfuraculum",
+          "status": "alternative",
+          "period": "modern",
+          "evidence": [
+            "M-O s.v. drill"
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Terēbram affer.",
+          "english": "Bring the drill.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "electric-drill",
+        "adze"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=terebra\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: terebra</a> · <a href=\"https://neolatinlexicon.org/latin/drill/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: drill</a>",
+        "The example sentence marked “composed” is ours."
+      ],
+      "replaces": [
+        "entry-100"
+      ]
+    },
+    {
+      "id": "electric-drill",
+      "english": "electric drill",
+      "pos": "noun",
+      "also": [
+        "power drill"
+      ],
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "terebra ēlectrica",
+          "status": "recommended",
+          "period": "ours",
+          "gloss": "electric drill",
+          "comment": "Our transparent modern extension of the ancient tool-name."
+        },
+        {
+          "latin": "terebra māchinālis",
+          "status": "alternative",
+          "period": "modern",
+          "gloss": "power drill",
+          "evidence": [
+            "M-O s.v. power drill, citing Eichenseer"
+          ],
+          "comment": "The inherited noun retains its variable vowel quantity."
+        }
+      ],
+      "related": [
+        "drill",
+        "powered-screwdriver",
+        "shear-attachment"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/latin/power_drill/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: power drill</a>"
+      ]
+    },
+    {
+      "id": "pliers",
+      "english": "pliers",
+      "pos": "noun",
+      "also": [
+        "pincers",
+        "tongs"
+      ],
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "forceps, forcipis m./f.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "tongs or pincers",
+          "grammar": "noun, third declension",
+          "comment": "The strongest ancient basis for ordinary modern pliers."
+        },
+        {
+          "latin": "flexibulum, -ī n.",
+          "status": "alternative",
+          "period": "modern",
+          "gloss": "pliers, pincers",
+          "evidence": [
+            "M-O s.v. pliers / pincers, citing Kirsch and Helfer"
+          ],
+          "comment": "Neo-Latin; not in Lewis &amp; Short. It is not presented as ancient Latin."
+        },
+        {
+          "latin": "forceps ad clāvōs ēvellendōs",
+          "status": "alternative",
+          "period": "ours",
+          "gloss": "nail-pulling pincers",
+          "comment": "This complete phrase is our description, specifying the purpose of the curved-jaw tool photographed on site. The same broad noun <strong lang=\"la\">forceps</strong> covers ordinary gripping pliers."
+        },
+        {
+          "latin": "forfex, forficis f.",
+          "status": "avoid",
+          "period": "classical",
+          "gloss": "shears, scissors",
+          "comment": "Primarily denotes shears or scissors in ancient usage. It does occur as one later proposal for a wrench, but we do not use it as our generic word for pliers."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Forcipem mihi dā.",
+          "english": "Give me the pliers.",
+          "source": "composed"
+        },
+        {
+          "latin": "Forcipe tene.",
+          "english": "Hold it with the pliers.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "shears",
+        "wrench"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/forceps\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: forceps</a> · <a href=\"https://logeion.uchicago.edu/forfex\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: forfex</a> · <a href=\"https://neolatinlexicon.org/latin/pliers_pincers/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: pliers / pincers</a> · <a href=\"https://neolatinlexicon.org/latin/wrench/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: wrench</a>",
+        "The example sentences marked “composed” are ours."
+      ],
+      "replaces": [
+        "entry-101"
+      ]
+    },
+    {
+      "id": "dowel",
+      "english": "dowel",
+      "pos": "noun",
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "scalmus, scalmī m.",
+          "status": "recommended",
+          "period": "modern",
+          "gloss": "dowel, a solid joining pin",
+          "evidence": [
+            "M-O s.v. dowel",
+            "Helfer"
+          ],
+          "comment": "Anciently a peg or thole-pin; Morgan–Owens/Helfer extends it to an English <em>dowel</em>, i.e. a solid joining pin. A dowel is <strong>not</strong> the plastic insert for a screw in a wall. That object is usually a <strong>wall plug</strong>, <strong>wall anchor</strong> or <strong>expansion plug</strong>: an insert placed in a drilled hole so that a screw can grip masonry or another material."
+        }
+      ],
+      "related": [
+        "wall-plug"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=scalmus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: scalmus</a> · <a href=\"https://neolatinlexicon.org/latin/dowel/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: dowel</a>"
+      ],
+      "replaces": [
+        "entry-102"
+      ]
+    },
+    {
+      "id": "wall-plug",
+      "english": "wall plug",
+      "pos": "noun",
+      "also": [
+        "wall anchor",
+        "expansion plug"
+      ],
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "ancora mūrālis plastica",
+          "status": "recommended",
+          "period": "ours",
+          "gloss": "plastic wall anchor, wall plug",
+          "comment": "Our provisional descriptive formation. It is intentionally labelled rather than presented as an established Neo-Latin dictionary term; no securely established exact equivalent was found in the Latin sources checked."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Ancoram mūrālem plasticam in forāmen pōne.",
+          "english": "Put the plastic wall plug into the hole.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "dowel",
+        "drill"
+      ],
+      "sources": [
+        "Our provisional descriptive formation; no exact equivalent was found in the Latin sources checked.",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "ruler",
+      "english": "ruler",
+      "pos": "noun",
+      "also": [
+        "straightedge",
+        "measuring rule"
+      ],
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "rēgula, rēgulae f.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "ruler, straightedge or measuring rule"
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Rēgulā mētīre.",
+          "english": "Measure with the ruler.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "tape-measure",
+        "measure",
+        "level-instrument"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/regula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: regula</a>",
+        "The example sentence marked “composed” is ours."
+      ],
+      "replaces": [
+        "entry-103"
+      ]
+    },
+    {
+      "id": "level-instrument",
+      "english": "level",
+      "sense": "instrument",
+      "pos": "noun",
+      "also": [
+        "spirit level",
+        "levelling instrument"
+      ],
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "lībella, lībellae f.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "level, levelling instrument",
+          "evidence": [
+            "Plin. NH 7.198: <span lang=\"la\">normam autem et lībellam et tornum et clāvem Theodōrus Samius</span>"
+          ],
+          "comment": "An unusually good ancient match for the modern spirit-level function. Pliny credits its invention, with the square, to Theodorus of Samos."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Lībellā explōrā.",
+          "english": "Check it with the level.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "square-tool",
+        "ruler",
+        "plumb-bob"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/libella\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: libella</a>",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "tape-measure",
+      "english": "tape measure",
+      "pos": "noun",
+      "also": [
+        "measuring tape"
+      ],
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "taenia mēnsūrālis; taeniae mēnsūrālis f.",
+          "status": "recommended",
+          "period": "modern",
+          "gloss": "tape measure, measuring tape",
+          "evidence": [
+            "M-O s.v. tape measure, citing Levine"
+          ],
+          "comment": "Morgan–Owens explicitly records the complete phrase, citing Levine. Inherited root and suffix quantities are supplied here."
+        },
+        {
+          "latin": "fūniculus metricus",
+          "status": "alternative",
+          "period": "modern",
+          "gloss": "measuring tape, tape measure",
+          "comment": "So in later technical lexicography. Lewis &amp; Short marks the first vowel of <span lang=\"la\">metricus</span> as variable, so it is left unmarked here."
+        },
+        {
+          "latin": "mēnsūra metrica",
+          "status": "alternative",
+          "period": "modern",
+          "gloss": "metre rule, tape measure",
+          "evidence": [
+            "M-O s.v. measuring stick, meter rule, tape measure"
+          ],
+          "comment": "Another recorded expression; Morgan–Owens notes that the phrase can feel pleonastic."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Taeniam mēnsūrālem affer. Mētiāmur!",
+          "english": "Bring the tape measure. Let’s measure!",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "ruler",
+        "measure"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/latin/measuring_stick_meter_rule_tape_measure/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: tape measure / meter rule</a> · <a href=\"https://neolatinlexicon.org/latin/tape_measure/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: tape measure</a> · <a href=\"https://logeion.uchicago.edu/funiculus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: funiculus</a> · <a href=\"https://logeion.uchicago.edu/mensura\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mensura</a>",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "measure",
+      "english": "measure",
+      "pos": "verb",
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "mētior, mētīrī, mēnsus sum",
+          "status": "recommended",
+          "period": "classical",
+          "grammar": "verb, fourth conjugation, deponent"
+        }
+      ],
+      "related": [
+        "ruler",
+        "tape-measure"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=metior\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: metior</a>"
+      ]
+    },
+    {
+      "id": "trowel",
+      "english": "trowel",
+      "pos": "noun",
+      "also": [
+        "mason’s trowel",
+        "plasterer’s trowel"
+      ],
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "trulla, trullae f.",
+          "status": "recommended",
+          "period": "post-classical",
+          "gloss": "mason’s or plasterer’s trowel",
+          "evidence": [
+            "Traupman 168",
+            "Smith &amp; Hall s.v. trowel",
+            "Pall. 1.13.2; 1.15"
+          ],
+          "comment": "Ancient building use in Palladius. In the kitchen the same word is a ladle."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Trullā tēctōrium aequā.",
+          "english": "Level the plaster with the trowel.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "notched-trowel",
+        "spatula-blade",
+        "skimming-blade",
+        "ladle"
+      ],
+      "sources": [
+        "<a href=\"https://www.bolchazy.com/product/conversational-latin-for-oral-proficiency-4th-edition-p3388/\" rel=\"noopener noreferrer\" target=\"_blank\">Traupman: Conversational Latin (printed page references in entry)</a> · <a href=\"https://www.alatius.com/ls/index.php?l=trulla\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: trulla</a> · <a href=\"https://la.wikisource.org/wiki/Opus_agriculturae/I\" rel=\"noopener noreferrer\" target=\"_blank\">Palladius, Opus agriculturae 1.13.2 and 1.15</a> · <a href=\"https://neolatinlexicon.org/latin/trowel/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: trowel</a> · <a href=\"https://latinitium.com/latin-dictionaries/?t=sh26271\" rel=\"noopener noreferrer\" target=\"_blank\">Smith &amp; Hall: trowel</a>",
+        "The example sentence marked “composed” is ours."
+      ],
+      "replaces": [
+        "entry-142"
+      ]
+    },
+    {
+      "id": "notched-trowel",
+      "english": "notched trowel",
+      "pos": "noun",
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "trulla dentāta",
+          "status": "recommended",
+          "period": "ours",
+          "gloss": "notched trowel",
+          "comment": "Our description of the modern toothed version, used to comb adhesive into ridges."
+        }
+      ],
+      "related": [
+        "trowel"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=dentatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dentatus</a> · <a href=\"https://www.alatius.com/ls/index.php?l=trulla\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: trulla</a>"
+      ]
+    },
+    {
+      "id": "spatula-blade",
+      "english": "spatula",
+      "sense": "spreading blade",
+      "pos": "noun",
+      "also": [
+        "spreading blade"
+      ],
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "spatula, spatulae f.",
+          "status": "recommended",
+          "period": "modern",
+          "gloss": "spatula, spreading blade",
+          "evidence": [
+            "M-O s.v. spatula"
+          ],
+          "comment": "Morgan–Owens records the utensil noun; the exact plastering sense and modern wide-blade shape are an application."
+        }
+      ],
+      "related": [
+        "skimming-blade",
+        "trowel"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/latin/spatula/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: spatula</a>"
+      ]
+    },
+    {
+      "id": "skimming-blade",
+      "english": "skimming blade",
+      "pos": "noun",
+      "also": [
+        "taping knife",
+        "jointing knife"
+      ],
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "spatula tēctōria",
+          "status": "recommended",
+          "period": "ours",
+          "gloss": "wide taping or jointing knife; skimming blade",
+          "comment": "Our descriptive qualification, not a verified dictionary headword."
+        }
+      ],
+      "related": [
+        "spatula-blade",
+        "trowel"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/latin/spatula/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: spatula</a>"
+      ]
+    },
+    {
+      "id": "ladle",
+      "english": "ladle",
+      "pos": "noun",
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "trulla, trullae f.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "ladle",
+          "evidence": [
+            "Traupman 71"
+          ],
+          "comment": "In the kitchen <strong lang=\"la\">trulla</strong> is a ladle, the word’s first sense in Lewis &amp; Short; on the building site it is a trowel."
+        }
+      ],
+      "related": [
+        "trowel",
+        "slotted-spoon",
+        "entry-257"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=trulla\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: trulla</a>",
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 71, checked against the searchable text of the book (29 October 2026)."
+      ]
+    },
+    {
+      "id": "plane-tool",
+      "english": "plane",
+      "sense": "carpenter’s tool",
+      "pos": "noun",
+      "also": [
+        "carpenter’s plane"
+      ],
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "runcīna, runcīnae f.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "carpenter’s plane",
+          "evidence": [
+            "Traupman 165"
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Runcīnā tabulam aequā.",
+          "english": "Make the board even with the plane.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "square-tool",
+        "adze"
+      ],
+      "sources": [
+        "<a href=\"https://www.bolchazy.com/product/conversational-latin-for-oral-proficiency-4th-edition-p3388/\" rel=\"noopener noreferrer\" target=\"_blank\">Traupman: Conversational Latin (printed page references in entry)</a> · <a href=\"https://www.alatius.com/ls/index.php?l=runcina\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: runcina</a>",
+        "The example sentence marked “composed” is ours."
+      ],
+      "replaces": [
+        "entry-143"
+      ]
+    },
+    {
+      "id": "square-tool",
+      "english": "square",
+      "sense": "carpenter’s tool",
+      "pos": "noun",
+      "also": [
+        "carpenter’s square",
+        "builder’s square"
+      ],
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "norma, normae f.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "carpenter’s or builder’s square",
+          "evidence": [
+            "Traupman 165",
+            "Plin. NH 7.198: <span lang=\"la\">normam autem et lībellam et tornum et clāvem Theodōrus Samius</span>"
+          ],
+          "comment": "A square checks right angles; a level is a <span lang=\"la\">lībella</span>. Pliny, NH 7.198 credits Theodorus of Samos with inventing the square and the level; Daedalus, in the same list, invents the saw, the adze and the plumb line.",
+          "notes": [
+            "norma"
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Normam et lībellam Theodōrus invēnit.",
+          "english": "Theodorus invented the square and the level.",
+          "source": "composed"
+        }
+      ],
+      "notes": {
+        "norma": {
+          "form": "norma",
+          "claim": "short o",
+          "against": "Traupman <span lang=\"la\">nōrma</span>, p. 165",
+          "html": "Lewis &amp; Short leaves the vowel unmarked, and the reader series writes <span lang=\"la\">norma</span>."
+        }
+      },
+      "related": [
+        "level-instrument",
+        "plane-tool",
+        "adze"
+      ],
+      "sources": [
+        "<a href=\"https://www.bolchazy.com/product/conversational-latin-for-oral-proficiency-4th-edition-p3388/\" rel=\"noopener noreferrer\" target=\"_blank\">Traupman: Conversational Latin (printed page references in entry)</a> · <a href=\"https://www.alatius.com/ls/index.php?l=norma\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: norma</a> · <a href=\"https://www.alatius.com/ls/index.php?l=libella\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: libella</a>",
+        "The example sentence marked “composed” is ours, after Pliny, NH 7.198."
+      ]
+    },
+    {
+      "id": "adze",
+      "english": "adze",
+      "pos": "noun",
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "ascia, asciae f.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "adze, the carpenter’s axe for dressing timber",
+          "evidence": [
+            "Plin. NH 7.198: <span lang=\"la\">fabricam māteriāriam Daedalus et in eā serram, asciam, perpendiculum, terebram</span>",
+            "Plin. NH 16.207: <span lang=\"la\">mollissima tilia … quod citissimē asciās retundat</span>",
+            "Vitr. 7.2.2: <span lang=\"la\">sūmātur ascia et, quemadmodum māteria dolātur, sīc calx in lacū mācerāta asciētur</span>",
+            "Libellus VII, <span lang=\"la\">Diēs ūnus Osoitsae</span>, gloss: <span lang=\"la\">secūris fabrī quā trabēs dolantur</span>"
+          ],
+          "comment": "Lewis &amp; Short: “an axe for hewing wood, a carpenter’s axe”; <strong lang=\"la\">secūris</strong> is the ordinary axe. Pliny, NH 7.198 makes Daedalus the inventor of carpentry and of its first tools; the square and the level go to Theodorus of Samos. In NH 16.207 lime wood blunts adzes fastest. In Vitruvius 7.2.2 the adze also tests slaked lime: if the lime clings to the iron like glue, it is ready for plastering."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Asciam mihi dā.",
+          "english": "Give me the adze.",
+          "source": "composed"
+        },
+        {
+          "latin": "«Asciam nōvī!» inquit Theodōrus. «Asciam volō!»",
+          "english": "I know the adze! I want the adze!",
+          "source": "Libellus VII, <span lang=\"la\">Diēs ūnus Osoitsae</span>"
+        },
+        {
+          "latin": "malleus, serra, ascia, quam Bulgarī teslam vocant, secūris, terebra, scalprum, rēgula, norma, forceps, runcīna, trulla, quā tēctōrēs tēctōrium indūcunt, līnea cum perpendiculō, capsa clāvōrum",
+          "english": "hammer, saw, the adze the Bulgarians call tesla, axe, drill, chisel, ruler, square, pincers, plane, the trowel plasterers spread plaster with, a plumb line, a box of nails",
+          "source": "Libellus VII, <span lang=\"la\">Diēs ūnus Osoitsae</span>"
+        }
+      ],
+      "related": [
+        "hew",
+        "axe",
+        "square-tool",
+        "plane-tool",
+        "trowel",
+        "plumb-bob",
+        "hammer",
+        "saw",
+        "nail-fastener",
+        "chisel"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=ascia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ascia</a> · <a href=\"https://www.alatius.com/ls/index.php?l=securis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: securis</a> · <a href=\"https://www.alatius.com/ls/index.php?l=terebra\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: terebra</a>",
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+        "The example sentence marked “composed” is ours."
+      ],
+      "replaces": [
+        "entry-194",
+        "site-194"
+      ]
+    },
+    {
+      "id": "hew",
+      "english": "hew",
+      "pos": "verb",
+      "also": [
+        "dress timber",
+        "chip into shape"
+      ],
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "dolō, dolāre, dolāvī, dolātum",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "hew, chip into shape with an axe or adze",
+          "evidence": [
+            "Cato, Agr. 14: <span lang=\"la\">dolābit, secābit</span>, of the contractor’s timber work",
+            "Cic. Div. 2.86 (Lewis &amp; Short)"
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Faber tignum asciā dolat.",
+          "english": "The carpenter is dressing the beam with the adze.",
+          "source": "composed"
+        },
+        {
+          "latin": "quī trabem asciā dolābat",
+          "english": "who was dressing a beam with the adze",
+          "source": "Libellus VII, <span lang=\"la\">Diēs ūnus Osoitsae</span>"
+        }
+      ],
+      "related": [
+        "adze"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=dolo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dolo</a>",
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "box-of-nails",
+      "english": "box of nails",
+      "pos": "noun",
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "capsa clāvōrum",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "related": [
+        "nail-fastener",
+        "adze"
+      ],
+      "sources": [
+        "<span lang=\"la\">capsa clāvōrum</span> is in the list of tools in Libellus VII, <span lang=\"la\">Diēs ūnus Osoitsae</span>; see adze."
+      ]
+    },
+    {
+      "id": "strike",
+      "english": "strike",
+      "sense": "hit",
+      "pos": "verb",
+      "also": [
+        "knock"
+      ],
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "pulsō, pulsāre",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "strike, knock"
+        }
+      ],
+      "related": [
+        "hammer"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/pulso\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pulso</a>"
+      ]
+    },
+    {
+      "id": "crowbar",
+      "english": "crowbar",
+      "pos": "noun",
+      "also": [
+        "pry bar",
+        "lever",
+        "bar"
+      ],
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "vectis, vectis m.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "lever; crowbar, pry bar",
+          "evidence": [
+            "M-O s.v. crowbar"
+          ],
+          "comment": "Lewis &amp; Short explicitly records the demolition and prying sense; Morgan–Owens gives the same noun for crowbar. <strong lang=\"la\">vectis</strong> also denotes a strong pole or bar."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Vectem affer.",
+          "english": "Bring the crowbar.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "iron-rod"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=vectis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vectis</a> · <a href=\"https://neolatinlexicon.org/latin/crowbar/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: crowbar</a>",
+        "The example sentence marked “composed” is ours."
+      ],
+      "replaces": [
+        "entry-144"
+      ]
+    },
+    {
+      "id": "iron-rod",
+      "english": "iron rod",
+      "pos": "noun",
+      "also": [
+        "metal rod"
+      ],
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "virga ferrea; virgae ferreae f.",
+          "status": "recommended",
+          "period": "ours",
+          "gloss": "slender metal rod",
+          "comment": "Our descriptive “iron rod”; <strong lang=\"la\">virga</strong> names the shape and <strong lang=\"la\">ferrea</strong> the material. Do not assume every thin bar is a lever."
+        }
+      ],
+      "related": [
+        "crowbar"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=virga\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: virga</a>"
+      ]
+    },
+    {
+      "id": "electric-cable",
+      "english": "electric cable",
+      "pos": "noun",
+      "also": [
+        "power cable",
+        "electric cord",
+        "electrical cable"
+      ],
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "fūniculus ēlectricus",
+          "status": "recommended",
+          "period": "modern",
+          "gloss": "electric cord, power cable",
+          "evidence": [
+            "Traupman 309"
+          ],
+          "comment": "Traupman explicitly records this phrase."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Fūniculum ēlectricum affer.",
+          "english": "Bring the electrical cable.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "extension-cord",
+        "cord",
+        "cable-reel"
+      ],
+      "sources": [
+        "<a href=\"https://www.bolchazy.com/product/conversational-latin-for-oral-proficiency-4th-edition-p3388/\" rel=\"noopener noreferrer\" target=\"_blank\">Traupman: Conversational Latin (printed page references in entry)</a> · <a href=\"https://neolatinlexicon.org/latin/cable/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: cable</a>",
+        "The example sentence marked “composed” is ours."
+      ],
+      "replaces": [
+        "entry-145"
+      ]
+    },
+    {
+      "id": "cord",
+      "english": "cord",
+      "sense": "small rope",
+      "pos": "noun",
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "fūniculus, fūniculī m.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "cord, small rope"
+        }
+      ],
+      "related": [
+        "electric-cable"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=funiculus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: funiculus</a>"
+      ]
+    },
+    {
+      "id": "extension-cord",
+      "english": "extension cord",
+      "pos": "noun",
+      "also": [
+        "extension lead"
+      ],
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "fūniculus ēlectricus prōlongātōrius",
+          "status": "recommended",
+          "period": "ours",
+          "gloss": "extension cord, extension lead",
+          "comment": "Our working formation for the specific extension function. No exact extension-cord entry was verified in the named lexicons; the adjective is not presented as an established technical standard."
+        }
+      ],
+      "related": [
+        "electric-cable",
+        "cable-reel"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=prolongo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: prolongo</a>"
+      ]
+    },
+    {
+      "id": "reel",
+      "english": "reel",
+      "pos": "noun",
+      "also": [
+        "spool"
+      ],
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "fūsus, fūsī m.",
+          "status": "recommended",
+          "period": "modern",
+          "gloss": "spindle; later also spool, reel",
+          "evidence": [
+            "M-O s.v. spool, reel, bobbin",
+            "M-O s.v. reel"
+          ],
+          "comment": "Morgan–Owens records the spool / reel sense, citing Eichenseer and Helfer. This does not establish an ancient portable cable-storage device."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Fūniculum in fūsum involve.",
+          "english": "Wind the cable onto the reel.",
+          "source": "composed"
+        },
+        {
+          "latin": "Fūniculum ēvolve.",
+          "english": "Unwind the cable.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "cable-reel",
+        "windlass",
+        "electric-cable"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/latin/spool_reel_bobbin/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: spool reel bobbin</a> · <a href=\"https://neolatinlexicon.org/latin/reel/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: reel</a> · <a href=\"https://www.alatius.com/ls/index.php?l=fusus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fusus</a> · <a href=\"https://www.alatius.com/ls/index.php?l=involvo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: involvo</a> · <a href=\"https://www.alatius.com/ls/index.php?l=evolvo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: evolvo</a>",
+        "The example sentences marked “composed” are ours."
+      ],
+      "replaces": [
+        "entry-146"
+      ]
+    },
+    {
+      "id": "cable-reel",
+      "english": "cable reel",
+      "pos": "noun",
+      "also": [
+        "extension-cord reel"
+      ],
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "fūsus fūniculī ēlectricī",
+          "status": "recommended",
+          "period": "ours",
+          "gloss": "cable reel, extension-cord reel",
+          "comment": "Our compositional description using the recorded reel noun."
+        }
+      ],
+      "related": [
+        "reel",
+        "extension-cord",
+        "electric-cable"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/latin/reel/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: reel</a>"
+      ]
+    },
+    {
+      "id": "windlass",
+      "english": "windlass",
+      "pos": "noun",
+      "also": [
+        "winch",
+        "capstan"
+      ],
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "sucula, suculae f.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "windlass, winch, capstan",
+          "evidence": [
+            "Cato; Vitruvius"
+          ],
+          "comment": "An ancient rope-winding lifting mechanism, useful as a historical comparison. Its primary function is hauling, so <strong lang=\"la\">fūsus</strong> is preferred for the storage reel."
+        }
+      ],
+      "related": [
+        "reel"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=sucula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sucula</a>"
+      ]
+    },
+    {
+      "id": "sheet-metal-shears",
+      "english": "sheet-metal shears",
+      "pos": "noun",
+      "also": [
+        "tin snips"
+      ],
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "forfex ad lāminās metallicās secandās",
+          "status": "recommended",
+          "period": "ours",
+          "gloss": "sheet-metal shears, tin snips",
+          "comment": "Our purpose phrase built from ancient nouns; not a verified standardized modern tool name."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Hōc īnstrūmentō lāminās metallicās secāmus.",
+          "english": "We cut sheet metal with this tool.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "shears",
+        "sheet-metal",
+        "shear-attachment"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=seco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: seco</a>",
+        "The example sentence marked “composed” is ours."
+      ],
+      "replaces": [
+        "entry-147"
+      ]
+    },
+    {
+      "id": "shears",
+      "english": "shears",
+      "pos": "noun",
+      "also": [
+        "scissors"
+      ],
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "forfex, forficis f.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "shears, scissors"
+        }
+      ],
+      "related": [
+        "sheet-metal-shears",
+        "pliers"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=forfex\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: forfex</a>"
+      ]
+    },
+    {
+      "id": "sheet-metal",
+      "english": "sheet metal",
+      "pos": "noun",
+      "also": [
+        "metal sheet",
+        "thin plate"
+      ],
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "lāmina, lāminae f.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "thin plate or sheet, including metal sheet"
+        }
+      ],
+      "related": [
+        "sheet-metal-shears"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=lamina\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lamina</a>"
+      ]
+    },
+    {
+      "id": "shear-attachment",
+      "english": "shear attachment",
+      "pos": "noun",
+      "also": [
+        "sheet-metal shear attachment",
+        "drill-powered shear attachment"
+      ],
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "accessōrium ad lāminās metallicās secandās",
+          "status": "recommended",
+          "period": "ours",
+          "gloss": "sheet-metal shear attachment",
+          "comment": "Our modern descriptive phrase. The photographed yellow DeWalt item matches the DT70620 shear attachment: it mounts on a drill or impact driver; the long arm stabilizes it."
+        }
+      ],
+      "related": [
+        "sheet-metal-shears",
+        "electric-drill"
+      ],
+      "sources": [
+        "<a href=\"https://www.dewalt.co.uk/en-gb/product/dt70620-qz/extreme-18ga-hex-impact-shear-attachment\" rel=\"noopener noreferrer\" target=\"_blank\">DeWalt DT70620: tool identification</a>"
+      ]
+    },
+    {
+      "id": "bucket",
+      "english": "bucket",
+      "pos": "noun",
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "situla, situlae f.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 122"
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Situlam hūc affer.",
+          "english": "Bring the bucket here.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "plumb-bob",
+        "entry-88"
+      ],
+      "sources": [
+        "<a href=\"https://www.bolchazy.com/product/conversational-latin-for-oral-proficiency-4th-edition-p3388/\" rel=\"noopener noreferrer\" target=\"_blank\">Traupman: Conversational Latin (printed page references in entry)</a> · <a href=\"https://www.alatius.com/ls/index.php?l=situla\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: situla</a>",
+        "The example sentence marked “composed” is ours."
+      ],
+      "replaces": [
+        "entry-148"
+      ]
+    },
+    {
+      "id": "plumb-bob",
+      "english": "plumb bob",
+      "pos": "noun",
+      "also": [
+        "plummet",
+        "plumb line"
+      ],
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "perpendiculum, perpendiculī n.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "plumb bob, plummet; plumb line by extension",
+          "evidence": [
+            "Traupman 168"
+          ],
+          "comment": "A plumb bob checks vertical alignment."
+        }
+      ],
+      "related": [
+        "level-instrument",
+        "bucket"
+      ],
+      "sources": [
+        "<a href=\"https://www.bolchazy.com/product/conversational-latin-for-oral-proficiency-4th-edition-p3388/\" rel=\"noopener noreferrer\" target=\"_blank\">Traupman: Conversational Latin (printed page references in entry)</a> · <a href=\"https://www.alatius.com/ls/index.php?l=perpendiculum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: perpendiculum</a>"
+      ]
+    },
+    {
+      "id": "hook",
+      "english": "hook",
+      "pos": "noun",
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "uncus, uncī m.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "hook, in general",
+          "comment": "Traupman gives a clothes hook as <strong lang=\"la\">uncus vestiārius</strong> (p. 123). <strong lang=\"la\">uncus</strong> need not name a separately manufactured item, but describing a whole hooked stick as a <strong lang=\"la\">bacillum aduncum</strong> is clearer."
+        },
+        {
+          "latin": "hāmus, hāmī m.",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "hook, especially a fishhook",
+          "evidence": [
+            "Traupman 47 (fishhook)"
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Uncum affer.",
+          "english": "Bring the hook.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "hook-onto",
+        "catch-with-a-hook",
+        "hooked",
+        "entry-87"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=uncus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: uncus</a> · <a href=\"https://www.alatius.com/ls/index.php?l=hamus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: hamus</a> · <a href=\"https://paulatinygriego.wordpress.com/wp-content/uploads/2019/02/conversational-latin-for-oral-proficiency-traupman.pdf\" rel=\"noopener noreferrer\" target=\"_blank\">Traupman: Conversational Latin, fourth edition</a>",
+        "The example sentence marked “composed” is ours."
+      ],
+      "replaces": [
+        "entry-159",
+        "daily-159"
+      ]
+    },
+    {
+      "id": "hook-onto",
+      "english": "hook onto",
+      "pos": "verb",
+      "also": [
+        "fasten with a hook"
+      ],
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "uncō affīgere",
+          "status": "recommended",
+          "period": "ours",
+          "gloss": "fasten with a hook",
+          "comment": "Our descriptive phrase. <strong lang=\"la\">uncō</strong> can also be the dative “to a hook”; the construction and context determine the relation. The two English verb senses (hook onto, catch with a hook) are expressed compositionally; neither phrase is presented as a separately verified technical headword."
+        },
+        {
+          "latin": "affīgō, affīgere, affīxī, affīxum",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "fasten or attach",
+          "comment": "<strong lang=\"la\">affīgere</strong> emphasizes attachment or fastening; it is not a universal equivalent of English “hook.” Choose the verb according to the action and result."
+        },
+        {
+          "latin": "suspendō, suspendere",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "hang up, suspend",
+          "evidence": [
+            "Verg. G. 2.389: <span lang=\"la\">oscilla ex altā suspendunt mollia pīnū</span>"
+          ],
+          "comment": "For hooking something over a bar and leaving it hanging, as in the composed example of the stick on the scaffolding; compare Vergil for <span lang=\"la\">suspendere ex</span> + ablative. <strong lang=\"la\">trānsversārium</strong> is Vitruvius’s crosspiece; a scaffold tube is not a <strong lang=\"la\">vectis</strong> (lever, crowbar)."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Hoc huic uncō affīge.",
+          "english": "Hook this onto this hook / attach this to this hook.",
+          "source": "composed"
+        },
+        {
+          "latin": "Theodōrus bacillum aduncum ex trānsversāriō māchinae suspendit.",
+          "english": "Theo hung the hooked stick from the scaffold’s crossbar.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "hook",
+        "catch-with-a-hook",
+        "entry-173"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=affigo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: affigo</a> · <a href=\"https://www.alatius.com/ls/index.php?l=suspendo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: suspendo</a> · <a href=\"https://www.alatius.com/ls/index.php?l=transversarius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: transversarius</a>",
+        "The example sentences marked “composed” are ours."
+      ]
+    },
+    {
+      "id": "catch-with-a-hook",
+      "english": "catch with a hook",
+      "pos": "verb",
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "uncō prehendere",
+          "status": "recommended",
+          "period": "ours",
+          "gloss": "catch with a hook",
+          "comment": "Our descriptive phrase. The two English verb senses (hook onto, catch with a hook) are expressed compositionally; neither phrase is presented as a separately verified technical headword."
+        },
+        {
+          "latin": "prehendō, prehendere",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "catch or take hold of",
+          "comment": "The composed example is for when he keeps holding the stick and catches the bar with its curved end."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Bacillō aduncō trānsversārium prehendit.",
+          "english": "He caught / hooked the crossbar with the hooked stick.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "hook",
+        "hook-onto",
+        "hooked"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=prehendo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: prehendo</a>",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "hooked",
+      "english": "hooked",
+      "pos": "adjective",
+      "also": [
+        "hook-shaped"
+      ],
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "aduncus, adunca, aduncum",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "hook-shaped, hooked",
+          "grammar": "adjective",
+          "evidence": [
+            "Liv. 1.18.7: <span lang=\"la\">baculum sine nōdō aduncum</span>, of the augur’s crook, the <strong lang=\"la\">lituus</strong>"
+          ],
+          "comment": "Our reader series uses the diminutive <strong lang=\"la\">bacillum</strong> for Theo’s stick. Livy’s hooked staff is the augur’s crook, not an ordinary stick. A stick can have a hooked end without being a purpose-made hook."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "bacillum aduncum",
+          "english": "a hooked stick",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "hook",
+        "catch-with-a-hook"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=aduncus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aduncus (Livy 1.18.7)</a> · <a href=\"https://www.alatius.com/ls/index.php?l=lituus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lituus</a> · <a href=\"https://www.alatius.com/ls/index.php?l=bacillum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: bacillum</a>",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "pipe-plumbing",
+      "english": "pipe",
+      "sense": "plumbing",
+      "pos": "noun",
+      "also": [
+        "water pipe",
+        "tube"
+      ],
+      "domain": "officina",
+      "terms": [
+        {
+          "latin": "fistula, fistulae f.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "pipe or tube",
+          "evidence": [
+            "Varro, LL 5.123: <span lang=\"la\">fistula, ā quā fūsus aquae</span>"
+          ],
+          "comment": "These are the construction and plumbing senses; English “pipe” as a smoking implement or musical instrument needs its own context."
+        },
+        {
+          "latin": "fistula aquāria; fistulae aquāriae f.",
+          "status": "alternative",
+          "period": "modern",
+          "gloss": "water pipe",
+          "evidence": [
+            "M-O s.v. pipe (plumbing)",
+            "Traupman 124"
+          ]
+        },
+        {
+          "latin": "tubulus, tubulī m.",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "small pipe or tube",
+          "comment": "Morgan–Owens also records it for plumbing."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Fistulam aquāriam affer.",
+          "english": "Bring the water pipe.",
+          "source": "composed"
+        },
+        {
+          "latin": "Aqua per fistulam fluit.",
+          "english": "Water flows through the pipe.",
+          "source": "composed"
+        },
+        {
+          "latin": "fistulīs plumbeīs seu tubulīs fictilibus",
+          "english": "lead pipes or clay tubes",
+          "source": "Vitr. 8.6.1"
+        }
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/latin/pipe_plumbing/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: pipe (plumbing)</a> · <a href=\"https://www.alatius.com/ls/index.php?l=fistula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fistula</a> · <a href=\"https://www.alatius.com/ls/index.php?l=tubulus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tubulus</a> · <a href=\"https://paulatinygriego.wordpress.com/wp-content/uploads/2019/02/conversational-latin-for-oral-proficiency-traupman.pdf\" rel=\"noopener noreferrer\" target=\"_blank\">Traupman: Conversational Latin, fourth edition</a>",
+        "The example sentences marked “composed” are ours."
+      ],
+      "replaces": [
+        "entry-161",
+        "daily-161"
+      ]
+    }
+  ],
+  "added": {
+    "nōrma": "Traupman’s form (p. 165, checked in the local text of the book), named in the “against” of the norma note as records.md requires; the card says only “Traupman’s long ō is not followed”. It is not used as a term or example."
+  },
+  "dropped": {
+    "scālae, scālārum f. pl.": "A cross-reference on the bucket card to the stairs / ladder card (entry-88), which carries the word itself; kept as a related link on bucket."
+  },
+  "flags": [
+    "Overlaps with cards in other batches, recorded here anyway: ladle (culina entry-257 also gives trulla = ladle, Traupman 71; the concept belongs in culina, kept in officina as the card's category); bucket, spade and shovel (ludi entry-180: situla, sitella, pāla); tool (culina entry-128: īnstrūmentum); shears (vestitus entry-320 gives forfex for scissors and points to the shears card); pipe (culina entry-257: fistula, water pipe, Traupman 124); hook (domus entry-87 has uncus vestiārius for a clothes hook, kept here only in a comment; ludi entry-530 points to the hook card for hāmus); the hook-onto example also stands on aedificatio entry-173. Culina entry-119 gives rudicula for a kitchen spatula, so spatula here has the sense “spreading blade”.",
+    "Suspected errors in the cards, copied as they are: cochleam evolvere lacks the long ē (Lewis & Short ēvolvō; entry-146 itself writes ēvolve); perforaculum lacks the long ā (Lewis & Short perfŏrācŭlum, from perforāre). furfuraculum is not in Lewis & Short; if it is the same -āculum formation it needs the macron too.",
+    "Periods chosen where the card is not explicit: cōchlea / cochlea modern for the threaded fastener (the card: later technical Latin), although Vitruvius has the press screw; trulla (trowel) post-classical on Palladius; perforaculum late (Lewis & Short: post-classical, Arnobius); furfuraculum and īnstrūmentum cochleīs extorquendīs modern as the later period. The card takes the latter “from Latham”, which in Morgan–Owens is the medieval word-list (its sources run to the 17th century), so it may be medieval or Renaissance. capsa clāvōrum and bacillum aduncum are classical: free phrases of classical words that the card does not call ours.",
+    "Tape measure leads with taenia mēnsūrālis, which the card's example uses and for which it gives the only explicit attestation (Morgan–Owens, citing Levine); the card lists fūniculus metricus first.",
+    "norma: the note records the card's departure from Traupman's nōrma (p. 165; his p. 168 prints norma). The only grounds given are Lewis & Short's unmarked vowel and the readers' spelling; the Greek behind the word (γνώμων, or Lewis & Short's γνώριμος) has ω, which may be why Traupman marks it long. No ruling covers it.",
+    "Vitr. 7.2.2: Lewis & Short files this ascia under “a mason’s trowel” (with Pall. 1.14); the card reads it as the adze, which quemadmodum māteria dolātur supports. Worth a look before the quotation is used in a reader.",
+    "spatula: the local Adumbratio (the older Morgan–Owens) gives rudicula (Col. 12.46.3) s.v. spatula; the card's claim that Morgan–Owens records spatula rests on the newer site, which could not be opened from here.",
+    "Wind up / unwind: the card gives no lemma, only the imperatives involve and ēvolve in its examples, so no verb records were made; both examples are on reel, with the Lewis & Short links for involvo and evolvo.",
+    "The card cites Dā mihi, ōrō, ūtendum malleum, tata! as “after Pont. Progymn. I 35; quoted in Libellus VII”. The example's source is the formal Libellus VII citation, which check_libelli.py requires; the Pontanus origin is a line in the hammer record's sources.",
+    "Grammar is given by hand where the builder cannot read it from the form: malleus (the builder reads malleī as fifth declension, because it ends in -eī: a bug for every second-declension noun in -eus), the slash forms cōchlea / cochlea and terēbra / terebra, forceps (m./f.), rūgae f. pl., mētior (mēnsus sum) and aduncus. The slash forms, kept as the cards print them, get no word page; the cooking-pot pattern “x (y), gen.” would give them one.",
+    "Left out of the skimming-blade comment: “The flat, wide red-handled tool in the earlier photograph is this type”, which refers to a photograph shown in conversation, not on the card.",
+    "Senses chosen to keep headwords apart from likely records elsewhere: nail (fastener), file (tool), level (instrument), plane and square (carpenter’s tool), nut (for a bolt), pipe (plumbing), spatula (spreading blade), cord (small rope), strike (hit)."
+  ]
+}

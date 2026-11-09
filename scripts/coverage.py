@@ -51,6 +51,24 @@ def inflections(word):
                  'put': 'put', 'give': 'gave given', 'come': 'came', 'see': 'saw seen', 'fall': 'fell fallen',
                  'leaf': 'leaves', 'knife': 'knives', 'wife': 'wives', 'life': 'lives', 'shelf': 'shelves'}
     forms |= set(irregular.get(word, '').split())
+    # The lists spell American; the lexicon spells British (color/colour, center/centre, organize/organise).
+    for us, uk in (('or', 'our'), ('er', 're'), ('ize', 'ise'), ('yze', 'yse'), ('og', 'ogue'), ('ense', 'ence')):
+        if word.endswith(us) and len(word) > len(us) + 2:
+            forms |= inflections_of(word[:-len(us)] + uk)
+    forms |= {f.replace('ization', 'isation') for f in forms}
+    british = {'gray': 'grey', 'program': 'programme', 'mom': 'mum', 'mommy': 'mummy', 'math': 'maths',
+               'jewelry': 'jewellery', 'pajamas': 'pyjamas', 'cozy': 'cosy', 'plow': 'plough', 'mold': 'mould',
+               'airplane': 'aeroplane'}
+    if word in british:
+        forms |= inflections_of(british[word])
+    return forms
+
+
+def inflections_of(word):
+    """The plain inflections of a variant spelling (no further variants)."""
+    forms = {word, word + 's', word + 'es', word + 'ed', word + 'd', word + 'ing'}
+    if word.endswith('e'):
+        forms.add(word[:-1] + 'ing')
     return forms
 
 
@@ -59,11 +77,15 @@ def plain(text):
 
 
 def covered_words(root=ROOT):
-    """The English words the lexicon has an entry for."""
+    """The English words the lexicon has an entry for, and its headwords and glosses whole
+    (so that "ice cream" counts as one item)."""
     words = set()
 
     def add(text):
         words.update(WORD.findall(plain(text)))
+        for part in re.split(r'[,;/]', plain(text)):
+            if ' ' in part.strip():
+                words.add(' '.join(WORD.findall(part)))
     for path in (root / 'data/concepts').glob('*.json'):
         record = json.loads(path.read_text(encoding='utf-8'))
         add(record['english'])
@@ -82,6 +104,28 @@ def covered_words(root=ROOT):
     return words
 
 
+# Items of a word list that are not words: the CDI's placeholders for a name, and the contractions
+# and auxiliaries a toddler's list records (gonna, wanna), which need no entry.
+NOT_WORDS = {'child own name', 'pet name', 'babysitter name', 'gonna', 'gotta', 'hafta', 'lemme', 'wanna', 'dont',
+             'can.auxiliary', 'need/need to', 'try/try to'}
+
+
+def covered(item, have):
+    """Whether a list item has an entry: one word in any inflection, or a phrase whole or word by
+    word ("ice cream", "on top of"). A sense after a dot (chicken.food) is dropped."""
+    item = item.split('.')[0].strip()
+    item = {'firetruck': 'fire engine', 'teddybear': 'teddy bear'}.get(item, item)
+    if ' ' not in item:
+        # A list may give the plural (carrots); the lexicon has the singular.
+        singular = {item[:-1]} if item.endswith('s') and not item.endswith('ss') else set()
+        return bool((inflections(item) | {f for w in singular for f in inflections(w)}) & have)
+    if item in have or any(f in have for f in inflections(item.split()[-1])
+                          if ' '.join(item.split()[:-1] + [f]) in have):
+        return True
+    content = [w for w in item.split() if w not in FUNCTION_WORDS]
+    return bool(content) and all(inflections(w) & have for w in content) and len(content) > 1
+
+
 def load_list(path):
     words = []
     for line in path.read_text(encoding='utf-8').splitlines():
@@ -96,8 +140,8 @@ def main():
     parser.add_argument('--out', type=Path, help='write a Markdown report of the gaps here')
     args = parser.parse_args()
     have = covered_words()
-    targets = [w for w in load_list(args.list) if w not in FUNCTION_WORDS]
-    gaps = [w for w in targets if not inflections(w) & have]
+    targets = [w for w in load_list(args.list) if w not in FUNCTION_WORDS and w not in NOT_WORDS]
+    gaps = [w for w in targets if not covered(w, have)]
     share = 100 * (len(targets) - len(gaps)) / len(targets)
     print(f'{args.list.name}: {len(targets)} content words, {len(targets) - len(gaps)} covered ({share:.0f}%), {len(gaps)} gaps.')
     if args.out:

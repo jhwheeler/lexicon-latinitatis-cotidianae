@@ -96,8 +96,4 @@ Change a ruling by editing it and adding a `history` line; withdraw it rather th
 
 ## Converting a grouped entry
 
-1. Split the card into concepts: one per English sense. Keep every Latin form, citation, quotation and note; nothing is dropped.
-2. Write one record per concept; put the card’s ID (and anchor, if it has one) in `replaces` on one of them.
-3. Move explanations of a departure from a dictionary into notes; link a note to a ruling where one applies, or add the ruling.
-4. Delete the card from `data/entries/`, rebuild, and run the checks.
-5. Mark the records `draft` until a person has read them against the old card.
+Batches of cards are converted with `scripts/convert_cards.py` from a spec in `notes/conversions/`; `docs/converting.md` gives the rules for splitting a card and filling the fields, and the checks the script makes. The converted records are drafts until a person has read them against the old card.

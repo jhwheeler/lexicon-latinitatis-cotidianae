@@ -288,6 +288,13 @@ def load_records(root, categories, legacy, rulings):
             require(old not in legacy and old not in {entry_html_id(e) for e in legacy.values()},
                     f'{where} replaces {old}, which still exists')
         records[key] = record
+    headwords = {}
+    for record in records.values():
+        key = (record['english'].strip().lower(), record.get('sense', '').strip().lower())
+        require(key not in headwords, f'Two records for “{record["english"]}”'
+                + (f' ({record["sense"]})' if 'sense' in record else '')
+                + f': {headwords.get(key)} and {record["id"]}; merge them, or give each its own sense')
+        headwords[key] = record['id']
     replaced = [old for r in records.values() for old in r.get('replaces', [])]
     require(len(replaced) == len(set(replaced)), 'An old entry is replaced by two concepts')
     for record in records.values():
@@ -653,12 +660,18 @@ def render_concept(record, site):
     return '<article class="concept" data-record>\n' + '\n'.join(parts) + '\n</article>'
 
 
+def outside_index(html, up):
+    """Point links into the index (href="#anchor", as rich text copied from a card has them) at
+    the index from another page; a page's own notes (#fn-…) stay where they are."""
+    return re.sub(r'href="#(?!fn-)', f'href="{up}index.html#', html)
+
+
 def render_concept_page(record, site, categories):
     english, heading = record['english'], record_heading(record)
     lemma = term_head(ordered_terms(record)[0]['latin'])
     return page_shell(f'{english} in Latin: {lemma} · {SITE_NAME}',
                       f'How to say “{english}” in Latin: {heading}. With the period of each form, its sources and examples.',
-                      f'c/{record["id"]}.html', '../', render_concept(record, site))
+                      f'c/{record["id"]}.html', '../', outside_index(render_concept(record, site), '../'))
 
 
 def render_word_page(head, info, site):
@@ -730,7 +743,7 @@ def render_word_page(head, info, site):
                  ' (Lewis &amp; Short and others)</p></footer>')
     return page_shell(f'{head}: a Latin word · {SITE_NAME}',
                       f'The Latin word {head} ({"; ".join(meanings)}): where the lexicon uses it, with its notes and examples.',
-                      f'l/{info["slug"]}.html', '../', '<article class="word">\n' + '\n'.join(parts) + '\n</article>')
+                      f'l/{info["slug"]}.html', '../', outside_index('<article class="word">\n' + '\n'.join(parts) + '\n</article>', '../'))
 
 
 def render_rulings(site):

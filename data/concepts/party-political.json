@@ -1,0 +1,74 @@
+{
+  "id": "party-political",
+  "english": "party",
+  "sense": "a political party",
+  "pos": "noun",
+  "also": [
+    "political party",
+    "faction",
+    "side"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "partēs, partium f. pl.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a party, a side in politics",
+      "evidence": [
+        "Pollio in Cic. Fam. 10.31.2: <span lang=\"la\">nūllīus partis esse</span>",
+        "Traupman 179, 356",
+        "M-O s.v. political party, citing Egger"
+      ],
+      "comment": "Usually plural; the singular in <span lang=\"la\">nūllīus partis esse</span>, to belong to no party. Rome had sides rather than organised parties; Morgan–Owens gives <span lang=\"la\">partēs</span> for a modern party. To join a party, <span lang=\"la\">partī sē adjungere</span> (Traupman 179)."
+    },
+    {
+      "latin": "factiō, factiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a faction, a clique",
+      "evidence": [
+        "Sall. Jug. 31.15: <span lang=\"la\">inter malōs factiō est</span>",
+        "Traupman 356"
+      ],
+      "comment": "Classically mostly a word of reproach: the few and their partisans (Lewis &amp; Short)."
+    },
+    {
+      "latin": "factiō polītica",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "a political party",
+      "evidence": [
+        "M-O s.v. political party, citing Egger and earlier writers"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "cum vērō nōn licēret mihi nūllīus partis esse, quia utrubīque magnōs inimīcōs habēbam",
+      "english": "since I could not stay out of both parties, having powerful enemies on each side",
+      "source": "Pollio in Cic. Fam. 10.31.2"
+    },
+    {
+      "latin": "sed haec inter bonōs amīcitia, inter malōs factiō est",
+      "english": "but among good men this is friendship; among bad men it is a faction",
+      "source": "Sall. Jug. 31.15"
+    }
+  ],
+  "related": [
+    "political",
+    "government",
+    "state-country"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/pars\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pars</a> · <a href=\"https://logeion.uchicago.edu/factio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: factio</a> · <a href=\"https://logeion.uchicago.edu/politicus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: politicus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 179, 356, checked against the searchable text of the book (9 November 2026).",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. political party.",
+    "Cicero’s letters and Sallust’s <em>Jugurtha</em> checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

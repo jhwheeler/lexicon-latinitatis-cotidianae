@@ -14,7 +14,23 @@
       "latin": "ante",
       "status": "recommended",
       "period": "classical",
-      "comment": "One of the card’s useful spatial words for building."
+      "comment": "One of the card’s useful spatial words for building.",
+      "evidence": [
+        "Traupman 204, 319: in front of, <span lang=\"la\">ante</span> + accusative"
+      ]
+    },
+    {
+      "latin": "prō",
+      "status": "alternative",
+      "period": "classical",
+      "grammar": "preposition with the ablative",
+      "gloss": "in front of, before (a building, a camp, a gate)",
+      "evidence": [
+        "Cic. Phil. 3.27: <span lang=\"la\">sedēns prō aede Castoris</span> (Lewis &amp; Short)",
+        "Caes. BG 4.32: <span lang=\"la\">prō portīs castrōrum</span> (Lewis &amp; Short)",
+        "Traupman 278, 319"
+      ],
+      "comment": "Right in front of a thing and facing out from it, like men posted before a gate; <span lang=\"la\">ante</span> with the accusative is the everyday word (Traupman 319)."
     }
   ],
   "related": [
@@ -22,11 +38,24 @@
     "build"
   ],
   "sources": [
-    "<a href=\"https://dcc.dickinson.edu/latin-core-list1\" rel=\"noopener noreferrer\" target=\"_blank\">Dickinson: Latin Core Vocabulary</a>"
+    "<a href=\"https://logeion.uchicago.edu/ante\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ante</a> · <a href=\"https://logeion.uchicago.edu/pro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pro</a>",
+    "<a href=\"https://dcc.dickinson.edu/latin-core-list1\" rel=\"noopener noreferrer\" target=\"_blank\">Dickinson: Latin Core Vocabulary</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 204, 278, 319, checked against the searchable text of the book (9 November 2026).",
+    "Gellius from the Latinitas loci collection (loci-gellius)."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "in front"
+  ],
+  "phrases": [
+    {
+      "latin": "locum ante jānuam domūs vacuum, per quem ā viā aditus accessusque ad aedīs est",
+      "english": "the empty space in front of the door of a house, through which one comes in from the street",
+      "source": "Gell. 16.5.3"
+    }
+  ]
 }

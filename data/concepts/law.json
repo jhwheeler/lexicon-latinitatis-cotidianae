@@ -1,0 +1,70 @@
+{
+  "id": "law",
+  "english": "law",
+  "pos": "noun",
+  "also": [
+    "laws",
+    "the law",
+    "against the law",
+    "by law"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "lēx, lēgis f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a law; in the plural, the laws",
+      "evidence": [
+        "Tac. Germ. 19.5: <span lang=\"la\">bonae lēgēs</span>",
+        "Traupman 179–180, 195"
+      ],
+      "comment": "A particular law, passed by the people: <span lang=\"la\">lēgem ferre</span>, to propose a law (Traupman 180); <span lang=\"la\">contrā lēgem</span>, against a law; <span lang=\"la\">lēge</span>, by law (Traupman 195)."
+    },
+    {
+      "latin": "jūs, jūris n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "law as a whole; right",
+      "evidence": [
+        "Cic. Verr. 2.1.109: <span lang=\"la\">jūs cīvīle</span> (Lewis &amp; Short)",
+        "Cic. Off. 1.33: <span lang=\"la\">summum jūs summa injūria</span>",
+        "Traupman 195"
+      ],
+      "comment": "The law as a body, and what is right by it: <span lang=\"la\">contrā jūs</span>, against the law (Traupman 195); <span lang=\"la\">jūs cīvīle</span>, the civil law, as a subject of study."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "plūsque ibi bonī mōrēs valent quam alibī bonae lēgēs",
+      "english": "and good customs count for more there than good laws elsewhere",
+      "source": "Tac. Germ. 19.5"
+    },
+    {
+      "latin": "ollīs salūs populī suprēma lēx estō",
+      "english": "for them the safety of the people shall be the highest law",
+      "source": "Cic. Leg. 3.8"
+    },
+    {
+      "latin": "ex quō illud ‘summum jūs summa injūria’ factum est jam trītum sermōne prōverbium",
+      "english": "hence “the strictest law is the greatest injustice” has become a common proverb",
+      "source": "Cic. Off. 1.33"
+    }
+  ],
+  "related": [
+    "rule-regulation",
+    "case-law",
+    "government",
+    "state-country"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/lex\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lex</a> · <a href=\"https://logeion.uchicago.edu/jus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: jus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 179–180, 195, checked against the searchable text of the book (9 November 2026).",
+    "Tacitus from the Latinitas loci collection (loci-tacitus); Cicero’s <em>De officiis</em> checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> and <em>De legibus</em> against the Latin Library text (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

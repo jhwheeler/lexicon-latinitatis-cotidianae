@@ -1,0 +1,64 @@
+{
+  "id": "term-school",
+  "english": "term",
+  "sense": "a part of the school year",
+  "pos": "noun",
+  "also": [
+    "school term",
+    "semester",
+    "trimester",
+    "autumn term",
+    "spring term",
+    "summer term"
+  ],
+  "domain": "schola",
+  "terms": [
+    {
+      "latin": "studiōrum spatium",
+      "status": "recommended",
+      "period": "modern",
+      "gloss": "a term at school or university",
+      "evidence": [
+        "Traupman 392"
+      ],
+      "comment": "A plain description from classical words: <span lang=\"la\">spatium</span> is a stretch of time (<span lang=\"la\">spatium temporis</span>)."
+    },
+    {
+      "latin": "sēmestre, sēmestris n.",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "a half-year term, a semester",
+      "evidence": [
+        "Traupman 376, 392",
+        "M-O s.v. semester (academic), citing Gauss and Mosellanus’s <em>Paedologia</em>"
+      ],
+      "comment": "The neuter of <span lang=\"la\">sēmestris</span>, lasting six months (Cic. Att. 10.8.7; Caes. BC 1.9, Lewis &amp; Short).",
+      "notes": [
+        "semestre"
+      ]
+    }
+  ],
+  "notes": {
+    "semestre": {
+      "form": "sēmestre",
+      "claim": "second e left unmarked",
+      "html": "Lewis &amp; Short marks only the first e (<span lang=\"la\">sēmestris</span>, from <span lang=\"la\">sex</span> and <span lang=\"la\">mēnsis</span>); Traupman prints <span lang=\"la\">semestre</span> on p. 376 and <span lang=\"la\">sēmēstre</span> on p. 392. The length of the second vowel is not settled here."
+    }
+  },
+  "related": [
+    "school",
+    "holidays",
+    "lesson",
+    "class"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/studium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: studium</a> · <a href=\"https://logeion.uchicago.edu/spatium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: spatium</a> · <a href=\"https://logeion.uchicago.edu/semestris\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: semestris</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 376, 392, checked against the searchable text of the book (9 November 2026).",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. semester (academic)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

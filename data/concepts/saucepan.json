@@ -1,6 +1,7 @@
 {
   "id": "saucepan",
   "english": "saucepan",
+  "pos": "noun",
   "domain": "culina",
   "terms": [
     {
@@ -19,11 +20,16 @@
   ],
   "notes": {
     "olla": {
-      "html": "<span lang=\"la\">ōlla</span> has a long o: it is the later form of <span lang=\"la\">aula</span>.",
+      "form": "ōlla",
+      "claim": "long o",
+      "against": "Lewis &amp; Short leaves it unmarked",
+      "html": "The later form of <span lang=\"la\">aula</span>: Festus, <span lang=\"la\">aulās antīquī dīcēbant, quās nōs dīcimus ōllās</span>.",
       "ruling": "olla"
     },
     "ns": {
-      "html": "The vowel before ns is long, so <span lang=\"la\">ānsāta</span>, from <span lang=\"la\">ānsa</span>, a handle."
+      "form": "ānsāta",
+      "claim": "long a before ns",
+      "html": "From <span lang=\"la\">ānsa</span>, a handle."
     }
   },
   "related": [

@@ -240,8 +240,15 @@ def template(page):
         return text[:match.start(1)] + token + text[match.end(1):], match.group(1)
 
     shell, styles = cut(r'<style>\n(.*?)</style>', '{{styles}}', page)
+    # The page inlines src/styles.css with its font paths pointed at assets/fonts/.
+    styles = styles.replace('url(assets/fonts/', 'url(fonts/')
     shell, search = cut(r'<script>\n(.*?)</script>', '{{search}}', shell)
+    if re.search(r'<button id="theme-toggle"', shell):
+        shell = re.sub(r'<button id="theme-toggle".*?</button>', '{{theme_toggle}}', shell, count=1, flags=re.S)
     shell, _ = cut(r'<div class="chips">(.*?)</div>', '{{filters}}', shell)
+    # The front page's contents list is generated from the catalog (pages from before it have none).
+    if '<ol class="toc">' in shell:
+        shell, _ = cut(r'<ol class="toc">(.*?)</ol>', '{{contents}}', shell)
     shell, _ = cut(r'<p id="empty"[^>]*>.*?</p>\n(.*)\n</main>', '{{entries}}', shell)
     # Current pages keep the count in the footer; older exports used the hero.
     count_pattern = (r'<p class="footer-note">(\d+) grouped entries'

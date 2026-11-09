@@ -1,0 +1,81 @@
+{
+  "id": "represent",
+  "english": "represent",
+  "sense": "act or speak for",
+  "pos": "verb",
+  "also": [
+    "on behalf of",
+    "in the name of",
+    "speak for",
+    "stand in for"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "persōnam gerere",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "represent, act for (a person, a body)",
+      "grammar": "phrase: persōnam with the genitive of whom one represents",
+      "evidence": [
+        "Cic. Off. 1.124: <span lang=\"la\">intellegere sē gerere persōnam cīvitātis</span>",
+        "M-O s.v. represent: <span lang=\"la\">persōnam gerere</span>"
+      ],
+      "comment": "<span lang=\"la\">Persōna</span> is the actor’s mask and so the part one plays; <span lang=\"la\">persōnam sustinēre</span> is the same (Cic. Pis. 24, Lewis &amp; Short). Morgan–Owens also give <span lang=\"la\">vicem gerere</span>."
+    },
+    {
+      "latin": "nōmine",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "on behalf of, in the name of",
+      "grammar": "the ablative of nōmen, with a genitive or a possessive: meō, tuō nōmine",
+      "evidence": [
+        "Cic. Att. 1.16.16: <span lang=\"la\">tuō nōmine grātiās ēgī</span>",
+        "Cic. Att. 3.15.8: <span lang=\"la\">meō nōmine litterās darī</span>"
+      ]
+    },
+    {
+      "latin": "repraesentō, repraesentāre, repraesentāvī, repraesentātum",
+      "status": "avoid",
+      "period": "classical",
+      "gloss": "not “act for”: classically, bring before the mind, show; portray; pay at once",
+      "evidence": [
+        "Quint. 6.2.29; Plin. NH 34.88 (Lewis &amp; Short)"
+      ],
+      "comment": "Lewis &amp; Short give “bring before one, show, exhibit”, “represent, portray” (of artists, post-Augustan) and, in trade, “pay on the spot”; never acting on someone’s behalf."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Est igitur proprium mūnus magistrātūs intellegere sē gerere persōnam cīvitātis",
+      "english": "It is, then, the particular duty of a magistrate to understand that he represents the state",
+      "source": "Cic. Off. 1.124"
+    },
+    {
+      "latin": "Antōniō tuō nōmine grātiās ēgī",
+      "english": "I thanked Antonius on your behalf",
+      "source": "Cic. Att. 1.16.16"
+    },
+    {
+      "latin": "sī quī erunt quibus putēs opus esse meō nōmine litterās darī, velim cōnscrībās cūrēsque dandās",
+      "english": "if there is anyone you think should have a letter in my name, please write it and see that it is delivered",
+      "source": "Cic. Att. 3.15.8"
+    }
+  ],
+  "related": [
+    "role",
+    "mean-signify",
+    "represent-portray"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/persona\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: persona</a> · <a href=\"https://logeion.uchicago.edu/gero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gero</a> · <a href=\"https://logeion.uchicago.edu/nomen\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nomen</a> · <a href=\"https://logeion.uchicago.edu/repraesento\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: repraesento</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. represent.",
+    "Cicero, <em>De officiis</em> 1 and the letters to Atticus (Purser), checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> and the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026).",
+    "Citations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them and have not been checked against an edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

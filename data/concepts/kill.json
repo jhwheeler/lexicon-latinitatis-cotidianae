@@ -1,0 +1,103 @@
+{
+  "id": "kill",
+  "english": "kill",
+  "pos": "verb",
+  "also": [
+    "killing",
+    "slay",
+    "put to death",
+    "kill time",
+    "you’re killing me!"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "interficiō, interficere, interfēcī, interfectum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "kill",
+      "evidence": [
+        "Caes. BG 1.12.5: <span lang=\"la\">L. Cassium cōnsulem interfēcerat</span>"
+      ],
+      "comment": "The general word of prose (Lewis &amp; Short, with the synonyms necō, occīdō, trucīdō)."
+    },
+    {
+      "latin": "occīdō, occīdere, occīdī, occīsum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "strike down, kill",
+      "evidence": [
+        "Cic. Off. 2.89: <span lang=\"la\">quid hominem occīdere?</span>",
+        "Traupman 336"
+      ],
+      "comment": "From <span lang=\"la\">caedō</span>, with a long ī; not <span lang=\"la\">occidō</span>, fall, set (of the sun)."
+    },
+    {
+      "latin": "necō, necāre, necāvī, necātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "kill, put to death (usually without a weapon)",
+      "evidence": [
+        "Ov. Rem. 421: <span lang=\"la\">parva necat morsū spatiōsum vīpera taurum</span>",
+        "Phaedr. 5.3.10: <span lang=\"la\">optem necāre</span>",
+        "Traupman 336"
+      ],
+      "comment": "Lewis &amp; Short: “usually without a weapon, by poison, hunger, etc.”; Festus (in Paulus’ epitome) distinguishes it from <span lang=\"la\">occīdere</span>, killing by a blow."
+    },
+    {
+      "latin": "trucīdō, trucīdāre, trucīdāvī, trucīdātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "slaughter, butcher",
+      "evidence": [
+        "Cic. Imp. Pomp. 7: <span lang=\"la\">cīvēs Rōmānōs necandōs trucīdandōsque cūrāvit</span> (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "ēnecō (ēnicō), ēnecāre, ēnecuī, ēnectum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "kill off; wear out: ēnicās, you’re killing me!",
+      "register": "vōx cōmica in the sense “wear out”: Plaut.",
+      "evidence": [
+        "Plaut. Merc. 157: <span lang=\"la\">verba tua mihi addunt, ēnicās</span>",
+        "Traupman 336: <span lang=\"la\">mē ēnicās!</span>"
+      ],
+      "comment": "In comedy, the complaint of someone pestered past bearing."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "parva necat morsū spatiōsum vīpera taurum",
+      "english": "a small viper kills a huge bull with its bite",
+      "source": "Ov. Rem. 421"
+    },
+    {
+      "latin": "et cum ille, quī quaesierat, dīxisset: «quid faenerārī?», tum Catō: «quid hominem,» inquit, «occīdere?»",
+      "english": "and when the man who had asked said, “What about lending money at interest?”, Cato replied, “What about killing a man?”",
+      "source": "Cic. Off. 2.89"
+    },
+    {
+      "latin": "lassitūdinem hercle verba tua mihi addunt, ēnicās",
+      "english": "your words are wearing me out, really — you’re killing me",
+      "source": "Plaut. Merc. 157"
+    }
+  ],
+  "related": [
+    "die",
+    "wound",
+    "attack"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/interficio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: interficio</a> · <a href=\"https://logeion.uchicago.edu/occido\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: occido</a> · <a href=\"https://logeion.uchicago.edu/neco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: neco</a> · <a href=\"https://logeion.uchicago.edu/trucido\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: trucido</a> · <a href=\"https://logeion.uchicago.edu/eneco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: eneco</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 336, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-ovidius, loci-cicero-philosophica, loci-phaedrus), checked against the editions named there.",
+    "Caesar, <em>Gallic War</em> 1, and Plautus, <em>Mercator</em> (Leo, cited by his lines), checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> and the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026).",
+    "Citations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them and have not been checked against an edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

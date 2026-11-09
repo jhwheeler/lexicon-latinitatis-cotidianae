@@ -1,0 +1,88 @@
+{
+  "id": "suffer-from",
+  "english": "suffer",
+  "sense": "from an illness or pain",
+  "pos": "verb",
+  "also": [
+    "suffer from",
+    "be suffering from",
+    "be in pain",
+    "have (an illness)",
+    "suffering"
+  ],
+  "also_under": [
+    "verba"
+  ],
+  "domain": "corpus",
+  "terms": [
+    {
+      "latin": "labōrō, labōrāre, labōrāvī, labōrātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "suffer from, be troubled by",
+      "grammar": "verb, first conjugation: with ex and the ablative of the part, or the ablative of the illness",
+      "evidence": [
+        "Cic. Fam. 7.26.1: <span lang=\"la\">graviter ex intestīnīs labōrārem</span>",
+        "Cic. Fam. 9.23: <span lang=\"la\">ex pedibus labōrārēs</span>",
+        "Traupman 56, 64, 387"
+      ],
+      "comment": "Properly “toil, be in difficulty”. Of the part that hurts, <span lang=\"la\">ex</span>: <span lang=\"la\">ex pedibus, ex rēnibus</span> (Cic. Tusc. 2.60, Lewis &amp; Short); of the illness, the ablative: <span lang=\"la\">gravēdine labōrāre</span>, to have a cold (Traupman 56, 63)."
+    },
+    {
+      "latin": "afficior, afficī, affectus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "be suffering (from), be afflicted with",
+      "grammar": "the passive of afficiō, with the ablative",
+      "evidence": [
+        "Cic. Fam. 6.19: <span lang=\"la\">dolōribus pedum</span> (Lewis &amp; Short, s.v. afficiō)",
+        "Traupman 64"
+      ],
+      "comment": "<span lang=\"la\">dolōre afficī</span>, to be in pain (Traupman 105, 152); <span lang=\"la\">morbō affectus</span>, ill."
+    },
+    {
+      "latin": "doleō, dolēre, doluī, dolitum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "be in pain, hurt",
+      "evidence": [
+        "Cic. Tusc. 2.35: <span lang=\"la\">cum varicēs secābantur C. Mariō, dolēbat</span>"
+      ],
+      "comment": "See hurt. Cicero keeps the two verbs apart: <span lang=\"la\">aliud est dolēre, aliud labōrāre</span>: Marius felt pain when his varicose veins were cut, and toiled when he led the march in great heat (Tusc. 2.35); there <span lang=\"la\">labōrāre</span> is toil, not illness."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Cum decimum jam diem graviter ex intestīnīs labōrārem",
+      "english": "When I had been suffering badly with my stomach for ten days now",
+      "source": "Cic. Fam. 7.26.1"
+    },
+    {
+      "latin": "dīxit tē in lectō esse, quod ex pedibus labōrārēs",
+      "english": "he told me you were in bed because you were suffering with your feet",
+      "source": "Cic. Fam. 9.23"
+    },
+    {
+      "latin": "Gravēdine labōrās.",
+      "english": "You’ve got a cold (literally, you are suffering from a cold).",
+      "source": "Traupman 56"
+    }
+  ],
+  "related": [
+    "ill",
+    "hurt",
+    "disease",
+    "suffer-undergo"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/laboro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: laboro</a> · <a href=\"https://logeion.uchicago.edu/afficio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: afficio</a> · <a href=\"https://logeion.uchicago.edu/doleo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: doleo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 56, 63, 64, 105, 152, 387, checked against the searchable text of the book (9 November 2026).",
+    "Cicero’s letters to his friends (Purser) and the <em>Tusculans</em> 2, checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> and the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026).",
+    "Citations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them and have not been checked against an edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

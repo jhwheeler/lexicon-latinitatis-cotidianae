@@ -1,0 +1,77 @@
+{
+  "id": "exist",
+  "english": "exist",
+  "pos": "verb",
+  "also": [
+    "existence",
+    "still exist",
+    "be real",
+    "survive (of things)"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "sum, esse, fuī",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "be, exist",
+      "grammar": "verb, irregular",
+      "evidence": [
+        "Cic. N. D. 1.44: <span lang=\"la\">esse igitur deōs cōnfitendum est</span>",
+        "Cic. Top. 27: <span lang=\"la\">esse ea dīcō quae cernī tangīque possunt</span>"
+      ],
+      "comment": "Latin needs no special verb: <span lang=\"la\">esse</span> itself asserts existence (Lewis &amp; Short: “Asserting existence, to be, exist, live”), and then often stands first: <span lang=\"la\">sunt quī Propertium mālint</span>, there are people who prefer Propertius (Quint. 10.1.93)."
+    },
+    {
+      "latin": "exstō, exstāre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "still exist, be extant (of letters, books, buildings)",
+      "evidence": [
+        "Cic. Off. 2.48: <span lang=\"la\">exstant epistulae et Philippī ad Alexandrum</span>"
+      ],
+      "comment": "Properly “stand out”."
+    },
+    {
+      "latin": "in rērum nātūrā esse",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "exist (in the world, in reality)",
+      "evidence": [
+        "Cic. Acad. 2.84: <span lang=\"la\">negās tantam similitūdinem in rērum nātūrā esse</span>",
+        "Gai. Inst. 3.97a: <span lang=\"la\">rem quae in rērum nātūrā esse nōn potest, velut hippocentaurum</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "esse ea dīcō quae cernī tangīque possunt, ut fundum, aedēs, parietem …",
+      "english": "by things that exist I mean things that can be seen and touched, like a farm, a house, a wall …",
+      "source": "Cic. Top. 27"
+    },
+    {
+      "latin": "esse igitur deōs cōnfitendum est",
+      "english": "we must admit, then, that the gods exist",
+      "source": "Cic. N. D. 1.44"
+    },
+    {
+      "latin": "Exstant epistulae et Philippī ad Alexandrum …",
+      "english": "There still exist letters of Philip to Alexander …",
+      "source": "Cic. Off. 2.48"
+    }
+  ],
+  "related": [
+    "real",
+    "live-be-alive"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/sum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sum</a> · <a href=\"https://logeion.uchicago.edu/exsto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: exsto</a> · <a href=\"https://logeion.uchicago.edu/natura\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: natura</a>",
+    "Quotations from the Latinitas loci collections (loci-quintilianus), checked against the editions named there.",
+    "Cicero, <em>De natura deorum</em> 1, <em>Topica</em>, <em>De officiis</em> 2 and <em>Academica</em> 2, and Gai. <em>Inst.</em> 3, checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> and the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

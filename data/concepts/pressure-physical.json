@@ -1,0 +1,75 @@
+{
+  "id": "pressure-physical",
+  "english": "pressure",
+  "sense": "a pressing force",
+  "pos": "noun",
+  "also": [
+    "blood pressure",
+    "air pressure",
+    "water pressure",
+    "tyre pressure"
+  ],
+  "also_under": [
+    "corpus"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "pressiō, pressiōnis f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "pressure, pressing",
+      "evidence": [
+        "Vitr. 10.8 (Lewis &amp; Short)",
+        "Traupman 62: <span lang=\"la\">pressiō sanguinis</span>, blood pressure",
+        "Traupman 215, 270: <span lang=\"la\">pressiō āeria</span>, air pressure",
+        "M-O s.v. air pressure: <span lang=\"la\">āeris pressiō</span>"
+      ],
+      "comment": "Classically a technical word of Vitruvius; Traupman and Morgan–Owens use it for blood and air pressure."
+    },
+    {
+      "latin": "pressus, pressūs m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "pressure, a pressing",
+      "evidence": [
+        "Cic. Tusc. 2.54: <span lang=\"la\">dēpellit pressum omnem ponderum</span>"
+      ]
+    },
+    {
+      "latin": "pressūra, pressūrae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "pressure",
+      "evidence": [
+        "Plin. NH 18.317 (Lewis &amp; Short)",
+        "Traupman 280: <span lang=\"la\">pressūra sanguinis</span>, blood pressure"
+      ],
+      "comment": "Lewis &amp; Short: post-Augustan; in Pliny, one pressing of grapes or olives."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ut onera contentīs corporibus facilius feruntur, remissīs opprimunt, simillimē animus intentiōne suā dēpellit pressum omnem ponderum",
+      "english": "as loads are carried more easily when the body is braced, and crush it when it is slack, just so the mind, by bracing itself, throws off all the pressure of its burdens",
+      "source": "Cic. Tusc. 2.54"
+    }
+  ],
+  "related": [
+    "press",
+    "force",
+    "pressure-urging"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/pressio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pressio</a> · <a href=\"https://logeion.uchicago.edu/pressus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pressus</a> · <a href=\"https://logeion.uchicago.edu/pressura\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pressura</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 62, 215, 270, 280, checked against the searchable text of the book (9 November 2026).",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. air pressure.",
+    "Cicero, <em>Tusculans</em> 2, checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> and the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026).",
+    "Citations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them and have not been checked against an edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "id": "depend-rely",
+  "english": "depend",
+  "sense": "rely on",
+  "pos": "verb",
+  "also": [
+    "depend on",
+    "rely on",
+    "count on",
+    "you can count on me",
+    "dependent",
+    "rely"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "nītor, nītī, nīsus sum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "rely on, rest on, lean on",
+      "grammar": "verb, third conjugation, deponent: with the ablative, or in and the ablative",
+      "evidence": [
+        "Cic. Off. 1.122: <span lang=\"la\">quōrum cōnsiliō atque auctōritāte nītātur</span>",
+        "Traupman 96, 297: <span lang=\"la\">potes nītī mē</span>, you can count on me"
+      ],
+      "comment": "Properly “lean on, press against”, then “rely on” whatever holds one up: <span lang=\"la\">spē nītī</span> (Cic. Att. 3.9.2, Lewis &amp; Short). Lewis &amp; Short give the perfect as <span lang=\"la\">nīsus</span> or <span lang=\"la\">nixus</span>. To depend on someone for one’s keep is to be fed by them: <span lang=\"la\">Ā parentibus adhūc alitur</span>, he still depends on his parents (M-O s.v. support: dependent)."
+    },
+    {
+      "latin": "cōnfīdō, cōnfīdere, cōnfīsus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "trust, rely on",
+      "grammar": "verb, third conjugation, semi-deponent: with the dative of a person, the ablative of a thing",
+      "evidence": [
+        "Cic. Att. 8.13.2: <span lang=\"la\">illum, quō anteā cōnfīdēbant, metuunt</span> (Lewis &amp; Short)",
+        "Traupman 157, 370"
+      ]
+    },
+    {
+      "latin": "frētus, frēta, frētum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "relying on, trusting in",
+      "grammar": "adjective, with the ablative",
+      "evidence": [
+        "Plaut. Cas. 348: <span lang=\"la\">omnēs mortālēs dīs sunt frētī</span>",
+        "Cic. Planc. 103: <span lang=\"la\">vōbīs frētus</span> (Lewis &amp; Short)",
+        "Traupman 157, 370"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Est igitur adulēscentis majōrēs nātū verērī exque iīs dēligere optimōs et probātissimōs, quōrum cōnsiliō atque auctōritāte nītātur",
+      "english": "It is a young man’s part, then, to respect his elders and to choose from among them the best and most approved, on whose advice and authority he can rely",
+      "source": "Cic. Off. 1.122"
+    },
+    {
+      "latin": "quō cōnfugiēs? ubi nītēre?",
+      "english": "where will you run to? what will you rely on?",
+      "source": "Cic. Verr. 2.2.155"
+    },
+    {
+      "latin": "nam omnēs mortālēs dīs sunt frētī, sed tamen vīdī ego dīs frētōs saepe multōs dēcipī",
+      "english": "for all men rely on the gods; and yet I have often seen many who relied on the gods let down",
+      "source": "Plaut. Cas. 348–349"
+    }
+  ],
+  "related": [
+    "depend",
+    "faith",
+    "help"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/nitor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nitor</a> · <a href=\"https://logeion.uchicago.edu/confido\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: confido</a> · <a href=\"https://logeion.uchicago.edu/fretus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fretus</a> · <a href=\"https://logeion.uchicago.edu/alo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: alo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 96, 157, 297, 370, checked against the searchable text of the book (9 November 2026).",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. support: dependent.",
+    "Cicero, <em>De officiis</em> 1 and the <em>Verrines</em>, and Plautus, <em>Casina</em> (Leo, cited by his lines), checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Citations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them and have not been checked against an edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

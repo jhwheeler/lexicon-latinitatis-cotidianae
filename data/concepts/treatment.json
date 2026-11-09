@@ -1,0 +1,92 @@
+{
+  "id": "treatment",
+  "english": "treatment",
+  "sense": "medical",
+  "pos": "noun",
+  "also": [
+    "medical treatment",
+    "therapy",
+    "cure",
+    "treat (a patient)",
+    "be treated"
+  ],
+  "domain": "corpus",
+  "terms": [
+    {
+      "latin": "cūrātiō, cūrātiōnis f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "medical treatment, cure",
+      "evidence": [
+        "Cic. Fam. 16.4.1: <span lang=\"la\">plānē cūrātiōnēs ejus nōn probō</span>",
+        "M-O s.v. therapy, treatment (medical)",
+        "Traupman 66, 397"
+      ],
+      "comment": "With the genitive of the illness (Traupman 66). To treat a patient or an illness: <span lang=\"la\">cūrāre</span> (Traupman 66, 397); Lewis &amp; Short call the medical sense very frequent."
+    },
+    {
+      "latin": "cūra, cūrae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "care, treatment",
+      "evidence": [
+        "Cels. 2.10 (Lewis &amp; Short)",
+        "Traupman 166"
+      ]
+    },
+    {
+      "latin": "medicīna, medicīnae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a remedy, treatment",
+      "evidence": [
+        "Ov. Rem. 91: <span lang=\"la\">sērō medicīna parātur</span>"
+      ],
+      "comment": "Also the art of medicine (see medicine)."
+    },
+    {
+      "latin": "therapīa, therapīae f.",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "therapy",
+      "evidence": [
+        "M-O s.v. therapy, treatment (medical) (1843)",
+        "Traupman 393"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "sed plānē cūrātiōnēs ejus nōn probō",
+      "english": "but I really do not approve of his treatment",
+      "source": "Cic. Fam. 16.4.1"
+    },
+    {
+      "latin": "prīncipiīs obstā; sērō medicīna parātur, cum mala per longās convaluēre morās",
+      "english": "resist at the start: treatment comes too late when the trouble has grown strong through long delay",
+      "source": "Ov. Rem. 91–92"
+    }
+  ],
+  "related": [
+    "doctor",
+    "medicine-drug",
+    "remedy",
+    "hospital",
+    "disease",
+    "operation-surgery",
+    "treatment-people"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/curatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: curatio</a> · <a href=\"https://logeion.uchicago.edu/cura\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cura</a> · <a href=\"https://logeion.uchicago.edu/medicina\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: medicina</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. therapy, treatment (medical).",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 66, 166, 393, 397, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-ovidius), checked against the editions named there.",
+    "Cicero, Fam. 16.4 (Purser), where the doctor is Tiro’s, checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> and the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026).",
+    "Citations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them and have not been checked against an edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

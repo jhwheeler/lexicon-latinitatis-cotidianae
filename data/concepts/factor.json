@@ -1,0 +1,78 @@
+{
+  "id": "factor",
+  "english": "factor",
+  "sense": "something that helps bring about a result",
+  "pos": "noun",
+  "also": [
+    "a factor",
+    "key factor",
+    "contributing factor",
+    "count for a lot",
+    "tip the balance"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "mōmentum, mōmentī n.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a factor, something that tips the balance; weight, influence",
+      "evidence": [
+        "Liv. 21.4.2: <span lang=\"la\">ut pater in sē minimum mōmentum ad favōrem conciliandum esset</span>",
+        "Caes. BC 3.70: <span lang=\"la\">ita parvae rēs magnum in utramque partem mōmentum habuērunt</span>"
+      ],
+      "comment": "Properly the weight that tips a balance, and so a circumstance that decides an outcome: <span lang=\"la\">magnum mōmentum habēre</span>, to be a big factor. Lewis &amp; Short: “a cause, a circumstance; weight, influence, importance”. Of time, a moment (see moment)."
+    },
+    {
+      "latin": "valēre ad",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "count for something in, be a factor in",
+      "grammar": "phrase: valeō with ad and the accusative, often a gerund",
+      "evidence": [
+        "Cic. de Or. 2.182: <span lang=\"la\">valet igitur multum ad vincendum probārī mōrēs … eōrum, quī agent causās</span>",
+        "Cic. Phil. 9.12: <span lang=\"la\">multum valuisse ad patris honōrem pietās fīliī vidēbitur</span> (Lewis &amp; Short)"
+      ],
+      "comment": "<span lang=\"la\">Multum valet ad</span>, it is a big factor in; <span lang=\"la\">nihil valet ad</span>, it plays no part in."
+    },
+    {
+      "latin": "causa, causae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a cause, one of the reasons",
+      "comment": "See reason and cause: <span lang=\"la\">in causā esse</span>, to be a cause (Livy)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "dein brevī effēcit, ut pater in sē minimum mōmentum ad favōrem conciliandum esset",
+      "english": "soon he made his father the least of the factors that won him favour",
+      "source": "Liv. 21.4.2"
+    },
+    {
+      "latin": "quod saepe in bellō parvīs mōmentīs magnī cāsūs intercēderent",
+      "english": "because in war great reversals often turn on small factors",
+      "source": "Caes. BC 1.21.1"
+    },
+    {
+      "latin": "Minimīs mōmentīs, patrēs cōnscrīptī, maximae inclīnātiōnēs temporum fīunt",
+      "english": "The greatest turns of fortune, senators, come about through the smallest factors",
+      "source": "Cic. Phil. 5.26"
+    }
+  ],
+  "related": [
+    "cause",
+    "reason",
+    "important",
+    "influence"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/momentum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: momentum</a> · <a href=\"https://logeion.uchicago.edu/valeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: valeo</a> · <a href=\"https://logeion.uchicago.edu/causa\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: causa</a>",
+    "Livy 21 against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>; Caesar, <em>Bellum civile</em> 1 and 3, and Cicero, <em>De oratore</em> 2 and <em>Philippics</em> 5, against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

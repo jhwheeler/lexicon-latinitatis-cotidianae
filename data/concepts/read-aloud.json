@@ -1,0 +1,79 @@
+{
+  "id": "read-aloud",
+  "english": "read aloud",
+  "pos": "verb",
+  "also": [
+    "read out",
+    "read out loud",
+    "read to someone"
+  ],
+  "domain": "schola",
+  "also_under": [
+    "sermo"
+  ],
+  "terms": [
+    {
+      "latin": "recitō, recitāre, recitāvī, recitātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "read aloud, read out",
+      "evidence": [
+        "Plaut. Pers. 500: <span lang=\"la\">at clārē recitātō</span>",
+        "Cic. Att. 8.9.2 (Lewis &amp; Short)",
+        "Traupman 27, 34"
+      ],
+      "comment": "To read a text out to listeners: a letter, a law, a list, one’s own poems; <span lang=\"la\">clārē</span>, out loud. Under the Empire authors read their new works to invited audiences, the <span lang=\"la\">recitātiōnēs</span> of Pliny’s letters (Lewis &amp; Short)."
+    },
+    {
+      "latin": "clārē legere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "read out loud",
+      "evidence": [
+        "Plin. Ep. 9.36.3: <span lang=\"la\">clārē et intentē … legō</span>",
+        "Traupman 34: <span lang=\"la\">lege clārē</span>"
+      ]
+    },
+    {
+      "latin": "praelegō, praelegere, praelēgī, praelēctum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "read aloud to a class, read with explanations",
+      "evidence": [
+        "Quint. 1.5.11 (Lewis &amp; Short)",
+        "Suet. Gram. 16: <span lang=\"la\">Vergilium et aliōs poētās</span> (Lewis &amp; Short)"
+      ],
+      "comment": "The teacher’s reading, to show how a text should be read and to explain it; Lewis &amp; Short: post-Augustan. The reading is <span lang=\"la\">praelēctiō</span> (see lecture)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Cedo sānē mihi. — At clārē recitātō. — Tacē, dum pellegō.",
+      "english": "Give it here, then. — But read it out loud. — Quiet, while I read it through.",
+      "source": "Plaut. Pers. 500"
+    },
+    {
+      "latin": "ōrātiōnem Graecam Latīnamve clārē et intentē nōn tam vōcis causā quam stomachī legō",
+      "english": "I read a speech, Greek or Latin, aloud and with effort, not so much for my voice’s sake as for my digestion’s",
+      "source": "Plin. Ep. 9.36.3"
+    }
+  ],
+  "related": [
+    "read",
+    "recite",
+    "book",
+    "lesson",
+    "lecture"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/recito\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: recito</a> · <a href=\"https://logeion.uchicago.edu/clare\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: clare</a> · <a href=\"https://logeion.uchicago.edu/praelego\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praelego</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 27, 34, checked against the searchable text of the book (9 November 2026).",
+    "Plautus checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-plinius), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

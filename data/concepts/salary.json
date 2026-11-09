@@ -1,0 +1,82 @@
+{
+  "id": "salary",
+  "english": "salary",
+  "pos": "noun",
+  "also": [
+    "salaries",
+    "monthly salary",
+    "annual salary"
+  ],
+  "domain": "pecunia",
+  "also_under": [
+    "labor"
+  ],
+  "terms": [
+    {
+      "latin": "salārium, salāriī n.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a salary, fixed pay",
+      "evidence": [
+        "Tac. Agr. 42.2: <span lang=\"la\">salārium tamen prōcōnsulāre solitum offerrī</span>",
+        "Suet. Tib. 46: <span lang=\"la\">numquam salāriō, cibāriīs tantum sustentāvit</span>",
+        "Plin. Ep. 4.12.2: <span lang=\"la\">ante lēgitimum salāriī tempus</span>",
+        "M-O s.v. salary, pay (of employees), wages"
+      ],
+      "comment": "In imperial prose the fixed pay of officials and of the emperor’s companions (Lewis &amp; Short); the source of the English word. Pliny says it was named from salt (NH 31.89, Lewis &amp; Short)."
+    },
+    {
+      "latin": "mercēs, mercēdis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "pay, wages; a fee",
+      "evidence": [
+        "Traupman 373: <span lang=\"la\">aequam mercēdem alicui solvere</span>, to pay someone a fair salary",
+        "M-O s.v. salary, pay (of employees), wages"
+      ],
+      "comment": "Pay for work of any kind (see wage); Traupman’s word for a salary."
+    },
+    {
+      "latin": "stīpendium, stīpendiī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "pay; properly a soldier’s pay",
+      "evidence": [
+        "Liv. 1.20.3: <span lang=\"la\">stīpendium dē pūblicō statuit</span>, (Numa) gave (the Vestals) a salary from public funds",
+        "M-O s.v. salary, pay (of employees), wages"
+      ],
+      "comment": "The soldier’s pay (Caes., Liv.), and so any regular stipend (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Pecūniae parcus ac tenāx comitēs peregrīnātiōnum expedītiōnumque numquam salāriō, cibāriīs tantum sustentāvit",
+      "english": "Sparing and close with money, he never kept the companions of his travels and campaigns on a salary, only on their food",
+      "source": "Suet. Tib. 46"
+    },
+    {
+      "latin": "Salārium tamen prōcōnsulāre solitum offerrī et quibusdam ā sē ipsō concessum Agricolae nōn dedit",
+      "english": "But the salary of a proconsul, which was usually offered, and which he had himself granted to some, he did not give Agricola",
+      "source": "Tac. Agr. 42.2"
+    }
+  ],
+  "related": [
+    "wage",
+    "income",
+    "employee",
+    "employer",
+    "pension",
+    "earn"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/salarium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: salarium</a> · <a href=\"https://logeion.uchicago.edu/salarius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: salarius</a> · <a href=\"https://logeion.uchicago.edu/merces\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: merces</a> · <a href=\"https://logeion.uchicago.edu/stipendium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: stipendium</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. salary, pay (of employees), wages.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 373, checked against the searchable text of the book (9 November 2026).",
+    "Tacitus, Suetonius, Livy and Pliny checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

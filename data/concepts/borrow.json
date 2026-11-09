@@ -1,0 +1,85 @@
+{
+  "id": "borrow",
+  "english": "borrow",
+  "pos": "verb",
+  "also": [
+    "borrowing",
+    "borrow money",
+    "can I borrow",
+    "may I borrow"
+  ],
+  "domain": "pecunia",
+  "also_under": [
+    "verba"
+  ],
+  "terms": [
+    {
+      "latin": "mūtuor, mūtuārī, mūtuātus sum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "borrow (money)",
+      "evidence": [
+        "Cic. Att. 7.3.11: <span lang=\"la\">ā Caeliō mūtuābimur</span>, we’ll borrow from Caelius",
+        "Cic. Att. 15.15.3: <span lang=\"la\">cōgor mūtuārī</span>, I am forced to borrow"
+      ],
+      "comment": "Of money above all; also of words or ideas taken from another (Quint. 1.5.58: <span lang=\"la\">sīcut illī ā nōbīs nōnnumquam mūtuantur</span>, as they sometimes borrow from us)."
+    },
+    {
+      "latin": "ūtendum petere",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "ask to borrow, borrow (a thing, to use and give back)",
+      "grammar": "verb phrase: the gerundive agrees with the thing borrowed",
+      "evidence": [
+        "Plaut. Aul. 400: <span lang=\"la\">artoptam ex proximō ūtendam petō</span>",
+        "Cato Agr. 5.4: <span lang=\"la\">unde ūtenda roget</span>"
+      ],
+      "comment": "Also <span lang=\"la\">ūtendum rogāre</span> (Cato); to lend a thing so is <span lang=\"la\">ūtendum dare</span> (Plaut. Asin. 444)."
+    },
+    {
+      "latin": "pecūniam mūtuam sūmere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "borrow money, take a loan",
+      "grammar": "verb phrase",
+      "evidence": [
+        "Caes. BC 1.39.3: <span lang=\"la\">ā tribūnīs mīlitum centuriōnibusque mūtuās pecūniās sūmpsit</span>",
+        "Cic. Phil. 10.26: <span lang=\"la\">pecūniāsque … mūtuās sūmat</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "'solvāmus' inquis. age, ā Caeliō mūtuābimur.",
+      "english": "‘Let’s pay,’ you say. All right, we’ll borrow from Caelius.",
+      "source": "Cic. Att. 7.3.11"
+    },
+    {
+      "latin": "ego hinc artoptam ex proximō ūtendam petō ā Congriōne.",
+      "english": "I’ll go and borrow a bread-pan from next door, from Congrio.",
+      "source": "Plaut. Aul. 400–401"
+    },
+    {
+      "latin": "Duās aut trēs familiās habeat, unde ūtenda roget et quibus det, praetereā nēminī.",
+      "english": "Let him have two or three households to borrow things from and to lend them to, and no one else.",
+      "source": "Cato Agr. 5.4"
+    }
+  ],
+  "related": [
+    "loan",
+    "lend",
+    "give-back",
+    "owe",
+    "debt"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/mutuor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mutuor</a> · <a href=\"https://logeion.uchicago.edu/mutuus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mutuus</a> · <a href=\"https://logeion.uchicago.edu/utor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: utor</a>",
+    "Cicero, Plautus, Cato and Caesar checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-quintilianus), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

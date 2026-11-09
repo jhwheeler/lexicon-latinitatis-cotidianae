@@ -12,7 +12,8 @@
     "besides",
     "any further",
     "nothing further",
-    "in addition"
+    "in addition",
+    "in addition to"
   ],
   "domain": "verba",
   "terms": [
@@ -61,6 +62,17 @@
       "evidence": [
         "Cic. Att. 13.21; Caes. BG 3.2 (Lewis &amp; Short)"
       ]
+    },
+    {
+      "latin": "praeter (+ accusative)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "besides, in addition to",
+      "grammar": "preposition, with the accusative",
+      "evidence": [
+        "Caes. BC 3.57: <span lang=\"la\">ut praeter auctōritātem vīrēs quoque ad coercendum habēret</span>"
+      ],
+      "comment": "Lewis &amp; Short: “of that besides which there is something else in addition, besides, together with, in addition to”. It also means “except”: <span lang=\"la\">hoc nēminī praeter mē vidētur</span> (Cic. Att. 1.1.2, Lewis &amp; Short)."
     }
   ],
   "phrases": [
@@ -86,9 +98,10 @@
     "else"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/amplus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: amplus (amplius)</a> · <a href=\"https://logeion.uchicago.edu/praeterea\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praeterea</a> · <a href=\"https://logeion.uchicago.edu/porro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: porro</a> · <a href=\"https://logeion.uchicago.edu/accedo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: accedo</a>",
+    "<a href=\"https://logeion.uchicago.edu/amplus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: amplus (amplius)</a> · <a href=\"https://logeion.uchicago.edu/praeterea\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praeterea</a> · <a href=\"https://logeion.uchicago.edu/porro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: porro</a> · <a href=\"https://logeion.uchicago.edu/accedo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: accedo</a> · <a href=\"https://logeion.uchicago.edu/praeter\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praeter</a>",
     "Michiel de Vaan, <em>Etymological Dictionary of Latin and the other Italic Languages</em> (2008), p. 481.",
-    "Quotations from the Latinitas loci collections (loci-horatius, loci-livius, loci-tacitus, loci-quintilianus), checked against the editions named there."
+    "Quotations from the Latinitas loci collections (loci-horatius, loci-livius, loci-tacitus, loci-quintilianus), checked against the editions named there.",
+    "Caesar, <em>Bellum civile</em> 3, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
   ],
   "review": {
     "status": "draft",

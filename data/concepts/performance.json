@@ -1,0 +1,87 @@
+{
+  "id": "performance",
+  "english": "performance",
+  "sense": "how well someone or something does",
+  "pos": "noun",
+  "also": [
+    "do well",
+    "do badly",
+    "how did you do?",
+    "how did it go?",
+    "acquit oneself"
+  ],
+  "domain": "verba",
+  "also_under": [
+    "labor"
+  ],
+  "terms": [
+    {
+      "latin": "rem gerere",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "do (well or badly) at something, manage",
+      "grammar": "phrase: gerō with rem and an adverb (bene, male, fēlīciter)",
+      "evidence": [
+        "Ennius in Cic. Fam. 7.6.1: <span lang=\"la\">multī suam rem bene gessēre</span>",
+        "Cic. Sen. 22: <span lang=\"la\">male rem gerentibus patribus</span>"
+      ],
+      "comment": "Latin has no noun for how well someone does; it says how they managed, with an adverb: <span lang=\"la\">bene rem gessit</span>, he did well; <span lang=\"la\">male rem gerere</span>, to make a poor job of one’s affairs (Cic. Sen. 22). Lewis &amp; Short gives <span lang=\"la\">rem gerere</span> of public business and, in Plautus and Cicero, of private affairs."
+    },
+    {
+      "latin": "sē gerere (in + ablative)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "acquit oneself, perform (in a role or an office)",
+      "grammar": "phrase: gerō with the reflexive and an adverb or a clause of manner",
+      "evidence": [
+        "Cic. Leg. agr. 1.26: <span lang=\"la\">sīc mē in hōc magistrātū geram</span>"
+      ],
+      "comment": "The same phrase is used of behaviour (see behaviour)."
+    },
+    {
+      "latin": "quid ēgistī?",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "how did you get on? what came of it?",
+      "grammar": "phrase: perfect of agō",
+      "evidence": [
+        "Ter. Ph. 682: <span lang=\"la\">Quid ēgistī? — Ēmūnxī argentō senēs.</span>",
+        "Plin. Ep. 1.9.2: <span lang=\"la\">hodiē quid ēgistī?</span>"
+      ],
+      "comment": "Asks what someone has got done, or how a thing they went off to do turned out."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Multī suam rem bene gessēre et pūblicam patriā procul; multī, quī domī aetātem agerent, proptereā sunt improbātī.",
+      "english": "Many have done well for themselves and for the state far from home; many who spent their lives at home have been thought the less of for it.",
+      "source": "Ennius in Cic. Fam. 7.6.1"
+    },
+    {
+      "latin": "Sīc mē in hōc magistrātū geram, patrēs cōnscrīptī, ut possim tribūnum plēbis reī pūblicae īrātum coercēre, mihi īrātum contemnere.",
+      "english": "I shall so acquit myself in this office, senators, that I can restrain a tribune who is angry with the state and disregard one who is angry with me.",
+      "source": "Cic. Leg. agr. 1.26"
+    },
+    {
+      "latin": "Quid ēgistī? — Ēmūnxī argentō senēs.",
+      "english": "How did you get on? — I’ve cleaned the old men out of their money.",
+      "source": "Ter. Ph. 682"
+    }
+  ],
+  "related": [
+    "success",
+    "behaviour",
+    "develop-grow",
+    "result"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/gero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gero</a> · <a href=\"https://logeion.uchicago.edu/ago\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ago</a>",
+    "Pliny from the Latinitas loci collection (loci-plinius), checked against the editions named there.",
+    "Cicero’s letters <em>Ad familiares</em> and Terence, <em>Phormio</em>, against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>; Cicero, <em>De senectute</em> and <em>De lege agraria</em> 1, against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "id": "lecture",
+  "english": "lecture",
+  "pos": "noun",
+  "also": [
+    "lectures",
+    "give a lecture",
+    "go to a lecture"
+  ],
+  "domain": "schola",
+  "terms": [
+    {
+      "latin": "schola, scholae f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a lecture, a learned talk",
+      "evidence": [
+        "Cic. Tusc. 1.7–8: <span lang=\"la\">scholās Graecōrum mōre habēre</span>",
+        "Suet. Tib. 11.3",
+        "M-O s.v. class, after Egger"
+      ],
+      "comment": "Greek σχολή, leisure and what scholars do with it: a lecture or a learned discussion, and then the place where it is given, a school (Lewis &amp; Short). To give a lecture is <span lang=\"la\">scholam habēre</span>; to attend a teacher’s lectures, simply <span lang=\"la\">audīre</span> (<span lang=\"la\">tē, Marce fīlī, annum jam audientem Cratippum</span>, Cic. Off. 1.1)."
+    },
+    {
+      "latin": "acroāsis, acroāsis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a public lecture",
+      "evidence": [
+        "Cic. Att. 15.17.2: <span lang=\"la\">vel in acroāsī audeam legere</span>",
+        "Suet. Gram. 2 (Lewis &amp; Short)",
+        "Traupman 339",
+        "M-O s.v. lecture"
+      ],
+      "comment": "Greek ἀκρόασις, a hearing: a lecture or reading before an audience. To give one, <span lang=\"la\">acroāsin facere</span> (Suet. Gram. 2; Traupman 339).",
+      "notes": [
+        "acroasis"
+      ]
+    },
+    {
+      "latin": "praelēctiō, praelēctiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a reading of a text aloud, with explanation",
+      "evidence": [
+        "Quint. 1.2.15; 2.5.4 (Lewis &amp; Short)",
+        "Traupman 339"
+      ],
+      "comment": "The teacher reads a text aloud and explains it (see read aloud, <span lang=\"la\">praelegere</span>); Lewis &amp; Short: post-Augustan."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ut jam etiam scholās Graecōrum mōre habēre audērēmus … itaque diērum quīnque scholās, ut Graecī appellant, in totidem librōs contulī",
+      "english": "so that I even dared to give lectures in the Greek manner … so I have gathered the five days’ lectures, as the Greeks call them, into as many books",
+      "source": "Cic. Tusc. 1.7–8"
+    },
+    {
+      "latin": "ipsīus litterae sīc et φιλοστόργως et εὐπινῶς scrīptae ut eās vel in acroāsī audeam legere",
+      "english": "his own letters are written so affectionately and so elegantly that I would dare to read them out even at a public lecture",
+      "source": "Cic. Att. 15.17.2"
+    }
+  ],
+  "notes": {
+    "acroasis": {
+      "form": "<span lang=\"la\">acroāsis</span>",
+      "claim": "short first a",
+      "against": "Lewis &amp; Short <span lang=\"la\">ācroāsis</span>, without evidence",
+      "html": "Greek ἀκρόασις, from ἀκροάομαι, with the short ἀ of ἄκρος; Lewis &amp; Short marks the same a short in <span lang=\"la\">acrochordon, acropodium, acrōtēria</span>, also from ἄκρος."
+    }
+  },
+  "related": [
+    "professor",
+    "university",
+    "lesson",
+    "student",
+    "read-aloud"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/schola\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: schola</a> · <a href=\"https://logeion.uchicago.edu/acroasis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: acroasis</a> · <a href=\"https://logeion.uchicago.edu/praelectio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praelectio</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. lecture; class.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 339, checked against the searchable text of the book (9 November 2026).",
+    "Cicero’s <em>Tusculans</em> and letters checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

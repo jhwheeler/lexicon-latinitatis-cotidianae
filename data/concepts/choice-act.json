@@ -1,0 +1,63 @@
+{
+  "id": "choice-act",
+  "english": "choice",
+  "sense": "choosing, what is chosen",
+  "pos": "noun",
+  "also": [
+    "make a choice",
+    "a good choice",
+    "selection",
+    "choice of words"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "dēlēctus (dīlēctus), dēlēctūs m.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a choosing, a careful selection; discernment",
+      "evidence": [
+        "Caesar in Cic. Brut. 253: <span lang=\"la\">verbōrum dīlēctum orīginem esse ēloquentiae</span>",
+        "Cic. Off. 1.49: <span lang=\"la\">acceptōrum autem beneficiōrum sunt dīlēctūs habendī</span>"
+      ],
+      "comment": "Lewis &amp; Short gives both spellings (<span lang=\"la\">dīlēctus</span> in many editions, after the best manuscripts); <span lang=\"la\">sine dēlēctū</span>, without discrimination. Also the levy of soldiers. Making a choice is usually the verb, <span lang=\"la\">ēligere</span> (see choose)."
+    },
+    {
+      "latin": "ēlēctiō, ēlēctiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a choice, a selection",
+      "evidence": [
+        "Cic. Or. 68: <span lang=\"la\">jūdicium ēlēctiōque verbōrum</span>",
+        "Quint. 1.12.4; Tac. Dial. 23 (Lewis &amp; Short)"
+      ],
+      "comment": "Once in Cicero, then in Quintilian, Tacitus and other imperial prose (Lewis &amp; Short); in Christian Latin the election of the faithful."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "verbōrum dīlēctum orīginem esse ēloquentiae",
+      "english": "that the choice of words is the origin of eloquence",
+      "source": "Caesar in Cic. Brut. 253"
+    },
+    {
+      "latin": "Acceptōrum autem beneficiōrum sunt dīlēctūs habendī",
+      "english": "But among favours received we must make distinctions",
+      "source": "Cic. Off. 1.49"
+    }
+  ],
+  "related": [
+    "choose",
+    "choice",
+    "decide"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/delectus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: delectus</a> · <a href=\"https://logeion.uchicago.edu/electio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: electio</a>",
+    "Cicero, <em>Brutus</em>, <em>De officiis</em> 1 and <em>Orator</em>, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

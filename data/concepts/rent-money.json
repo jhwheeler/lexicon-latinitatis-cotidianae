@@ -1,0 +1,82 @@
+{
+  "id": "rent-money",
+  "english": "rent",
+  "sense": "money paid for a house or flat",
+  "pos": "noun",
+  "also": [
+    "rents",
+    "the rent",
+    "pay the rent",
+    "house rent"
+  ],
+  "domain": "pecunia",
+  "also_under": [
+    "domus"
+  ],
+  "terms": [
+    {
+      "latin": "mercēs, mercēdis f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "rent",
+      "evidence": [
+        "Caes. BC 3.21.1: <span lang=\"la\">mercēdēs habitātiōnum annuās conductōribus dōnāvit</span>",
+        "Cic. Att. 12.32.2: <span lang=\"la\">mercēdēs Argīlētī et Aventīnī</span>, the rents from (his houses in) the Argiletum and on the Aventine",
+        "Traupman 370: <span lang=\"la\">mercēdem huic cellae dare</span>, to pay the rent for this room"
+      ],
+      "comment": "A house’s pay, as wages are a worker’s: <span lang=\"la\">mercēdēs habitātiōnum</span>, the rents of dwellings. Cicero meant his son’s allowance at Athens to come out of the rents of two houses (Att. 12.32.2)."
+    },
+    {
+      "latin": "pēnsiō, pēnsiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "rent; a payment, an instalment",
+      "evidence": [
+        "Suet. Ner. 44.2: <span lang=\"la\">pēnsiōnem annuam</span>, a year’s rent",
+        "Juv. 9.63: <span lang=\"la\">pēnsiō clāmat</span>, the rent cries out"
+      ],
+      "comment": "In Cicero a payment or instalment (see pay in instalments); rent in Suetonius and Juvenal (Lewis &amp; Short). Not a pension (see pension)."
+    },
+    {
+      "latin": "habitātiō, habitātiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "house rent; properly a dwelling",
+      "evidence": [
+        "Cic. Cael. 17: <span lang=\"la\">sūmptus ūnīus generis objectus est, habitātiōnis</span>",
+        "Suet. Jul. 38.2: <span lang=\"la\">annuam etiam habitātiōnem … remīsit</span>, he let them off a year’s rent"
+      ],
+      "comment": "What one pays for a dwelling: Caelius, said his accusers, lived at thirty thousand, <span lang=\"la\">trīgintā mīlibus habitāre</span> (Cic. Cael. 17)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Sūmptus ūnīus generis objectus est, habitātiōnis; trīgintā mīlibus dīxistis eum habitāre. Nunc dēmum intellegō P. Clōdī īnsulam esse vēnālem, cujus hic in aediculīs habitat decem, ut opīnor, mīlibus.",
+      "english": "Only one kind of spending has been laid against him, his rent: you said he paid thirty thousand. Now at last I understand that Publius Clodius’s block of flats is up for sale: he lives in a little flat in it for ten thousand, I believe.",
+      "source": "Cic. Cael. 17"
+    },
+    {
+      "latin": "ūnam, quā mercēdēs habitātiōnum annuās conductōribus dōnāvit",
+      "english": "one (law), by which he let tenants off a year’s rent",
+      "source": "Caes. BC 3.21.1"
+    }
+  ],
+  "related": [
+    "rent-hire",
+    "landlord",
+    "tenant",
+    "house",
+    "pay",
+    "pay-in-instalments"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/merces\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: merces</a> · <a href=\"https://logeion.uchicago.edu/pensio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pensio</a> · <a href=\"https://logeion.uchicago.edu/habitatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: habitatio</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 370, checked against the searchable text of the book (9 November 2026).",
+    "Caesar, Cicero, Suetonius and Juvenal checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

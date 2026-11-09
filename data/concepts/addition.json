@@ -1,0 +1,75 @@
+{
+  "id": "addition",
+  "english": "addition",
+  "sense": "something added",
+  "pos": "noun",
+  "also": [
+    "an addition",
+    "a new addition",
+    "extension",
+    "add-on"
+  ],
+  "domain": "verba",
+  "also_under": [
+    "aedificatio"
+  ],
+  "terms": [
+    {
+      "latin": "accessiō, accessiōnis f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "an addition; something added on, an extension",
+      "evidence": [
+        "Cic. Off. 1.138: <span lang=\"la\">accessiōnem adjūnxit aedibus</span>",
+        "Cic. Lael. 11: <span lang=\"la\">paucōrum annōrum accessiō</span>"
+      ],
+      "comment": "From <span lang=\"la\">accēdere</span>, to come to, be added: what is added is said to <span lang=\"la\">accēdere</span>, as in <span lang=\"la\">accēdit quod</span>, there is also the fact that (see further). Lewis &amp; Short: “the thing added, the addition”."
+    },
+    {
+      "latin": "additāmentum, additāmentī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "an addition, something tacked on",
+      "evidence": [
+        "Cic. Sest. 68: <span lang=\"la\">Ligus iste nescio quī, additāmentum inimīcōrum meōrum</span>",
+        "Sen. Ep. 17.6 (Lewis &amp; Short)"
+      ],
+      "comment": "Rare: once in Cicero, of a nobody who merely swells the ranks of his enemies; then Seneca (Lewis &amp; Short)."
+    },
+    {
+      "latin": "adjectiō, adjectiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the adding of something, an addition",
+      "evidence": [
+        "Liv. 1.30.6: <span lang=\"la\">Rōmānam rem nūper etiam adjectiōne populī Albānī auctam</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Hanc Scaurus dēmōlītus accessiōnem adjūnxit aedibus.",
+      "english": "Scaurus pulled it down and added it to his own house as an extension.",
+      "source": "Cic. Off. 1.138"
+    },
+    {
+      "latin": "Quid igitur hunc paucōrum annōrum accessiō juvāre potuisset?",
+      "english": "So what good could the addition of a few years have done him?",
+      "source": "Cic. Lael. 11"
+    }
+  ],
+  "related": [
+    "further-additional",
+    "add",
+    "increase"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/accessio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: accessio</a> · <a href=\"https://logeion.uchicago.edu/additamentum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: additamentum</a> · <a href=\"https://logeion.uchicago.edu/adjectio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: adjectio</a>",
+    "Cicero, <em>De officiis</em> 1, <em>Laelius</em> and <em>Pro Sestio</em>, and Livy 1, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> and the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

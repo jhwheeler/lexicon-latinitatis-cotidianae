@@ -1,0 +1,60 @@
+{
+  "id": "landlord",
+  "english": "landlord",
+  "sense": "who lets a house or flat",
+  "pos": "noun",
+  "also": [
+    "landlady",
+    "landlords"
+  ],
+  "domain": "pecunia",
+  "also_under": [
+    "domus"
+  ],
+  "terms": [
+    {
+      "latin": "dominus, dominī m.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "the owner; a landlord",
+      "evidence": [
+        "Suet. Jul. 41.3: <span lang=\"la\">vīcātim per dominōs īnsulārum</span>, street by street, through the landlords of the blocks of flats",
+        "Cic. Phil. 2.105: <span lang=\"la\">tē inquilīnō (nōn enim dominō)</span>, with you as tenant (for you were not the owner)"
+      ],
+      "comment": "The owner, set against the tenant (<span lang=\"la\">inquilīnus</span>); a landlady is <span lang=\"la\">domina</span>."
+    },
+    {
+      "latin": "locātor, locātōris m.",
+      "status": "alternative",
+      "period": "post-classical",
+      "gloss": "the lessor (in law)",
+      "evidence": [
+        "Dig. 19.2.60 (Lewis &amp; Short)"
+      ],
+      "comment": "The one who <span lang=\"la\">locat</span>, lets (see rent, pay to use); a lawyers’ word."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Recēnsum populī nec mōre nec locō solitō, sed vīcātim per dominōs īnsulārum ēgit",
+      "english": "He took the count of the people neither in the usual way nor in the usual place, but street by street, through the landlords of the blocks of flats",
+      "source": "Suet. Jul. 41.3"
+    }
+  ],
+  "related": [
+    "tenant",
+    "rent-money",
+    "rent-hire",
+    "house",
+    "property-real-estate"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/dominus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dominus</a> · <a href=\"https://logeion.uchicago.edu/locator\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: locator</a>",
+    "Suetonius and Cicero checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

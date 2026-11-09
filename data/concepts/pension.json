@@ -1,0 +1,89 @@
+{
+  "id": "pension",
+  "english": "pension",
+  "pos": "noun",
+  "also": [
+    "pensions",
+    "pensioner",
+    "state pension",
+    "old-age pension",
+    "retirement pay"
+  ],
+  "domain": "pecunia",
+  "also_under": [
+    "labor"
+  ],
+  "terms": [
+    {
+      "latin": "annua, annuōrum n. pl.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a yearly allowance; a pension",
+      "evidence": [
+        "Suet. Tib. 50.1: <span lang=\"la\">praebitīsque annuīs fraudāvit</span>, he cheated her of the yearly payments",
+        "Plin. Ep. 10.31.2: <span lang=\"la\">ut pūblicī servī annua accipiunt</span>, they draw a yearly allowance like public slaves"
+      ],
+      "comment": "Money paid every year: an annuity, a stipend, a pension (Lewis &amp; Short); Nero granted impoverished senators <span lang=\"la\">annua salāria</span> (Suet. Ner. 10.1). Not <span lang=\"la\">pēnsiō</span>, which is classically a payment or rent (see rent, money paid for a house or flat)."
+    },
+    {
+      "latin": "commoda missiōnum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a soldier’s benefits on discharge",
+      "grammar": "noun and genitive",
+      "evidence": [
+        "Suet. Aug. 49.2: <span lang=\"la\">dēfīnītīs … commodīs missiōnum</span>",
+        "Suet. Ner. 32.1: <span lang=\"la\">commoda veterānōrum</span>, the veterans’ benefits"
+      ],
+      "comment": "Augustus fixed them by rank and years of service and set up a fund to pay them (see fund): the nearest classical thing to a pension."
+    },
+    {
+      "latin": "beneficium annuum",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "a pension",
+      "grammar": "noun and adjective",
+      "evidence": [
+        "Levi–Bini p. 47: <span lang=\"la\">beneficium annuum tribuere</span>, to pension someone off"
+      ]
+    },
+    {
+      "latin": "beneficiārius, beneficiāriī m.",
+      "status": "avoid",
+      "period": "modern",
+      "gloss": "a pensioner (Levi–Bini)",
+      "evidence": [
+        "Levi–Bini p. 47"
+      ],
+      "comment": "Classically a soldier excused fatigues by his commander’s favour, often his orderly (Caes. BC 1.75; Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Quidquid autem ubīque mīlitum esset, ad certam stīpendiōrum praemiōrumque fōrmulam adstrīnxit dēfīnītīs prō gradū cujusque et temporibus mīlitiae et commodīs missiōnum, nē aut aetāte aut inopiā post missiōnem sollicitārī ad rēs novās possent.",
+      "english": "All the soldiers everywhere he bound to a fixed scale of pay and rewards, setting for each rank both the years of service and the benefits on discharge, so that neither age nor want should tempt them to revolution once they had left the army.",
+      "source": "Suet. Aug. 49.2"
+    },
+    {
+      "latin": "sed et pecūliō concessō ā patre praebitīsque annuīs fraudāvit",
+      "english": "and he even cheated her of the allowance her father had granted her and of the yearly payments he had provided",
+      "source": "Suet. Tib. 50.1"
+    }
+  ],
+  "related": [
+    "retire",
+    "salary",
+    "fund",
+    "income"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/annuus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: annuus</a> · <a href=\"https://logeion.uchicago.edu/commodum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: commodum</a> · <a href=\"https://logeion.uchicago.edu/beneficium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: beneficium</a> · <a href=\"https://logeion.uchicago.edu/beneficiarius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: beneficiarius</a>",
+    "Enrico Levi and Arturo Bini, <em>Il latino come lingua viva</em> (1937), p. 47 (<em>pensionare</em>, <em>pensionato</em>).",
+    "Suetonius and Pliny checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

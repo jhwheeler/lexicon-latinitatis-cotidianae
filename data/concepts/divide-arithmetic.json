@@ -1,0 +1,64 @@
+{
+  "id": "divide-arithmetic",
+  "english": "divide",
+  "sense": "in arithmetic",
+  "pos": "verb",
+  "also": [
+    "division",
+    "divided by"
+  ],
+  "domain": "schola",
+  "terms": [
+    {
+      "latin": "dīvidō, dīvidere, dīvīsī, dīvīsum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "divide",
+      "evidence": [
+        "Sen. Ep. 88.11: <span lang=\"la\">agellum in partēs dīvidere</span>",
+        "Comen. OP 101: <span lang=\"la\">dīvidendō</span>"
+      ],
+      "comment": "To divide into parts, as the surveyor divides a field (Sen. Ep. 88.11); of a number, say into how many parts: <span lang=\"la\">duodecim in trēs partēs dīvidere</span>. Comenius uses it among the four operations of arithmetic. See also divide, split into parts."
+    },
+    {
+      "latin": "dīdūcō, dīdūcere, dīdūxī, dīductum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "divide, split into parts",
+      "evidence": [
+        "Hor. Ars 326: <span lang=\"la\">assem … in partīs centum dīdūcere</span>"
+      ],
+      "comment": "Horace’s word for the schoolboys’ division of the as into a hundred parts."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Rōmānī puerī longīs ratiōnibus assem discunt in partīs centum dīdūcere",
+      "english": "Roman boys learn by long sums to divide the as into a hundred parts",
+      "source": "Hor. Ars 325–326"
+    },
+    {
+      "latin": "Duodecim in trēs partēs dīvide: quot sunt in singulīs? — Quattuor.",
+      "english": "Divide twelve into three: how many in each? — Four.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "divide-split",
+    "multiply",
+    "subtract",
+    "sum-calculation",
+    "arithmetic"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/divido\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: divido</a> · <a href=\"https://logeion.uchicago.edu/diduco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: diduco</a>",
+    "Horace and Seneca checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Comenius from the Latinitas loci collection (loci-comenius).",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

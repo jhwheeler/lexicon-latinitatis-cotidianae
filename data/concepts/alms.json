@@ -1,0 +1,76 @@
+{
+  "id": "alms",
+  "english": "alms",
+  "pos": "noun",
+  "also": [
+    "almsgiving",
+    "give alms",
+    "handout"
+  ],
+  "domain": "pecunia",
+  "also_under": [
+    "ecclesia"
+  ],
+  "terms": [
+    {
+      "latin": "stips, stipis f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a small coin given; alms",
+      "evidence": [
+        "Sen. Vit. Beat. 25.1: <span lang=\"la\">quī manum ad stipem porrigunt</span>, those who hold out their hand for alms",
+        "Suet. Aug. 91.2: <span lang=\"la\">stipem … ēmendīcābat ā populō</span>",
+        "M-O s.v. charity: contribution or donation, alms"
+      ],
+      "comment": "A small coin given to a beggar, or offered to a god (Lewis &amp; Short); the nominative is not found."
+    },
+    {
+      "latin": "eleēmosyna, eleēmosynae f.",
+      "status": "alternative",
+      "period": "late",
+      "gloss": "alms, almsgiving (Christian Latin)",
+      "evidence": [
+        "Vulg. Mt. 6.3: <span lang=\"la\">Tē autem faciente eleēmosynam</span>",
+        "Tert. Patient. 7 (Lewis &amp; Short)",
+        "M-O s.v. charity: contribution or donation, alms",
+        "Levi–Bini p. 24"
+      ],
+      "comment": "Greek ἐλεημοσύνη, mercy: the word of the Gospels and the Church, also written <span lang=\"la\">elēmosyna</span>. To give alms, <span lang=\"la\">eleēmosynam facere</span> (Vulg. Mt. 6.2)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "In Sublicium pontem mē trānsfer et inter egentēs abjice: nōn ideō tamen mē dēspiciam quod in illōrum numerō cōnsēderō quī manum ad stipem porrigunt.",
+      "english": "Put me on the Sublician bridge and throw me among the needy: I shall not despise myself for sitting among those who hold out their hand for alms.",
+      "source": "Sen. Vit. Beat. 25.1"
+    },
+    {
+      "latin": "Ex nocturnō vīsū etiam stipem quotannīs diē certō ēmendīcābat ā populō cavam manum assēs porrigentibus praebēns.",
+      "english": "Because of a dream he even begged alms from the people every year on a fixed day, holding out his cupped hand to those who offered him coins.",
+      "source": "Suet. Aug. 91.2"
+    },
+    {
+      "latin": "Tē autem faciente eleēmosynam, nesciat sinistra tua quid faciat dextera tua",
+      "english": "But when you give alms, let not your left hand know what your right hand is doing",
+      "source": "Vulg. Mt. 6.3"
+    }
+  ],
+  "related": [
+    "beggar",
+    "donate",
+    "give",
+    "tip",
+    "poor-needy"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/stips\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: stips</a> · <a href=\"https://logeion.uchicago.edu/eleemosyna\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: eleemosyna</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. charity: contribution or donation, alms.",
+    "Enrico Levi and Arturo Bini, <em>Il latino come lingua viva</em> (1937), p. 24 (<em>elemosina</em>).",
+    "Seneca, Suetonius and the Vulgate (Matthew in the Clementine text) checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

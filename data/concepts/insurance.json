@@ -1,0 +1,77 @@
+{
+  "id": "insurance",
+  "english": "insurance",
+  "pos": "noun",
+  "also": [
+    "insure",
+    "insured",
+    "insurance policy",
+    "car insurance",
+    "health insurance",
+    "life insurance",
+    "insurance company"
+  ],
+  "domain": "pecunia",
+  "terms": [
+    {
+      "latin": "cautiō, cautiōnis f.",
+      "status": "recommended",
+      "period": "modern",
+      "gloss": "insurance",
+      "evidence": [
+        "Traupman 333: <span lang=\"la\">prō vītā cautiō</span>, life insurance",
+        "M-O s.v. insurance: life insurance, <span lang=\"la\">vītae cautiō</span> (after Egger)"
+      ],
+      "comment": "Classically a bond or security given against loss (Cic. Fam. 7.18.1; Lewis &amp; Short); Traupman and Egger use it for insurance."
+    },
+    {
+      "latin": "assēcūrātiō, assēcūrātiōnis f.",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "insurance",
+      "evidence": [
+        "Traupman 333: <span lang=\"la\">assēcūrātiō vehiculāria</span>, car insurance; <span lang=\"la\">assēcūrātiō valētūdināria</span>, health insurance"
+      ],
+      "comment": "From <span lang=\"la\">sēcūrus</span>; not in Lewis &amp; Short."
+    },
+    {
+      "latin": "mercēde pactā damnum vītāre",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "be insured: avoid a loss for an agreed fee",
+      "grammar": "verb phrase",
+      "evidence": [
+        "Levi–Bini p. 7"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "quōrum duo postulāta fuēre, ūnum ut mīlitiā vacārent dum in eō pūblicō essent, alterum ut quae in nāvēs imposuissent ab hostium tempestātisque vī pūblicō perīculō essent",
+      "english": "They made two demands: first, that they be free of military service while on this public contract; second, that whatever they put on board should be at the state’s risk against the enemy and storms",
+      "source": "Liv. 23.49.1–2"
+    },
+    {
+      "latin": "Nam et negōtiātōribus certa lucra prōposuit susceptō in sē damnō, sī cui quid per tempestātēs accidisset",
+      "english": "He offered merchants a sure profit, taking the loss upon himself if storms brought anyone to grief",
+      "source": "Suet. Claud. 18.2"
+    }
+  ],
+  "related": [
+    "contract",
+    "bank",
+    "money"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/cautio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cautio</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 333, checked against the searchable text of the book (9 November 2026).",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. insurance: life insurance; insurance company.",
+    "Enrico Levi and Arturo Bini, <em>Il latino come lingua viva</em> (1937), p. 7 (<em>assicurazione</em>).",
+    "Livy and Suetonius checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

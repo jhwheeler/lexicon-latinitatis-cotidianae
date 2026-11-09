@@ -1,0 +1,114 @@
+{
+  "id": "success",
+  "english": "success",
+  "sense": "doing or getting what one aimed at",
+  "pos": "noun",
+  "also": [
+    "succeed",
+    "be a success",
+    "it worked",
+    "it didn’t work",
+    "without success",
+    "come off"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "succēdō, succēdere, successī, successum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "turn out well, succeed, work",
+      "grammar": "verb, third conjugation, intransitive; what is attempted is the subject, the person in the dative",
+      "evidence": [
+        "Ter. And. 670: <span lang=\"la\">hāc nōn successit, aliā aggrediēmur viā</span>",
+        "Caes. BG 7.26.1: <span lang=\"la\">quod rēs nūlla successerat</span>"
+      ],
+      "comment": "<span lang=\"la\">Rēs mihi succēdit</span>, it is going well for me; <span lang=\"la\">sī ex sententiā successerit</span>, if it turns out as we wish (Cic. Q. fr. 2.14.1, Lewis &amp; Short). In Plautus and Terence the compound has only this sense (de Vaan 103, s.v. <span lang=\"la\">cēdō</span>)."
+    },
+    {
+      "latin": "rem bene gerere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "succeed, do well (of a person)",
+      "grammar": "phrase: gerō with rem and an adverb (bene, prosperē, fēlīciter)",
+      "evidence": [
+        "Plaut. Mil. 936: <span lang=\"la\">bene ambulā, bene rem gerās</span>",
+        "Traupman 188, 387: success, <span lang=\"la\">rēs fēlīciter gesta, rēs bene gesta</span>",
+        "M-O s.v. succeed: <span lang=\"la\">rem prosperē (fēlīciter) gessī</span>"
+      ],
+      "comment": "Of someone who brings off what he set about, in business or in war. For how well someone does, see performance."
+    },
+    {
+      "latin": "successus, successūs m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "success, a happy outcome",
+      "evidence": [
+        "Liv. 42.66.3: <span lang=\"la\">ēlātus successū</span>",
+        "Phaedr. 2.3.7: <span lang=\"la\">successus improbōrum plūrēs allicit</span>"
+      ],
+      "comment": "Lewis &amp; Short: “a happy issue, good result, success (the usual signif.; perh. not ante-Aug.)”: Virgil, Livy, Ovid, Phaedrus, Quintilian, Tacitus; not Cicero’s word.",
+      "notes": [
+        "successus"
+      ]
+    },
+    {
+      "latin": "rē īnfectā",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "without success, with nothing achieved",
+      "grammar": "phrase: ablative absolute",
+      "evidence": [
+        "Liv. 42.16.4: <span lang=\"la\">rē īnfectā rediērunt</span>",
+        "Caes. BG 7.17.5 (Lewis &amp; Short)"
+      ],
+      "comment": "Literally “the thing not done”; also <span lang=\"la\">īnfectīs rēbus</span> (Sallust, Nepos)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Dēceptus sum, at nōn dēfatīgātus. … Hāc nōn successit, aliā aggrediēmur viā.",
+      "english": "I’ve been foiled, but I’m not worn out. … That way didn’t work; we’ll go at it another way.",
+      "source": "Ter. And. 669–670"
+    },
+    {
+      "latin": "Bene ambulā, bene rem gerās.",
+      "english": "Safe journey, and success to you.",
+      "source": "Plaut. Mil. 936"
+    },
+    {
+      "latin": "successus improbōrum plūrēs allicit",
+      "english": "the success of the wicked draws more people in",
+      "source": "Phaedr. 2.3.7"
+    }
+  ],
+  "notes": {
+    "successus": {
+      "form": "successus",
+      "claim": "short e",
+      "against": "Traupman 387 <span lang=\"la\">succēssus</span>",
+      "html": "Lewis &amp; Short leaves the vowel unmarked, as in <span lang=\"la\">suc-cēdo, cessi, cessum</span>. After a long vowel ss was reduced to s in Augustan spelling (Quint. 1.7.20 records Cicero’s and Virgil’s <span lang=\"la\">caussae, cassus, divissiones</span>), but <span lang=\"la\">cessī, cessum</span> and <span lang=\"la\">successus</span> kept ss, so the vowel before it is short."
+    }
+  },
+  "related": [
+    "result",
+    "win",
+    "good-luck",
+    "approach-method",
+    "performance",
+    "successful"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/succedo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: succedo</a> · <a href=\"https://logeion.uchicago.edu/gero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gero</a> · <a href=\"https://logeion.uchicago.edu/successus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: successus</a> · <a href=\"https://logeion.uchicago.edu/infectus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: infectus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 188, 387, checked against the searchable text of the book (9 November 2026).",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. succeed.",
+    "Michiel de Vaan, <em>Etymological Dictionary of Latin and the other Italic Languages</em> (2008), p. 103.",
+    "Quotations from the Latinitas loci collections (loci-terentius, loci-plautus, loci-phaedrus), checked against the editions named there.",
+    "Caesar, <em>Bellum Gallicum</em> 7, against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a>; Livy 42 against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

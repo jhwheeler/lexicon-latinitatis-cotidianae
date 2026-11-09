@@ -1,0 +1,69 @@
+{
+  "id": "employer",
+  "english": "employer",
+  "pos": "noun",
+  "also": [
+    "employers",
+    "boss",
+    "the boss"
+  ],
+  "domain": "pecunia",
+  "also_under": [
+    "labor"
+  ],
+  "terms": [
+    {
+      "latin": "conductor, conductōris m.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "the one who hires workers: an employer",
+      "evidence": [
+        "Plaut. Asin. 3: <span lang=\"la\">gregīque huic et dominīs atque conductōribus</span>, the troupe, its owners and those who hire it",
+        "Traupman 309: <span lang=\"la\">(operae) conductor</span>, employer"
+      ],
+      "comment": "The party who <span lang=\"la\">condūcit</span>, hires, labour as well as a house (see tenant); a woman is <span lang=\"la\">conductrīx</span> (Traupman 309). To hire labourers, <span lang=\"la\">operāriōs condūcere</span> (Cato Agr. 4)."
+    },
+    {
+      "latin": "dominus, dominī m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the boss, the owner",
+      "evidence": [
+        "Traupman 282: boss (owner)",
+        "Levi–Bini p. 51: <em>principale</em>, the head of a firm"
+      ],
+      "comment": "Classically the master of a household and its slaves, and the owner of a business (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Ille quī mē condūxit, ubi condūxit, abdūxit domum, quae voluit mihi dīxit, docuit et praemōnstrāvit prius, quō modō quicque agerem",
+      "english": "The man who hired me took me home the moment he had hired me; he told me what he wanted, and taught me and showed me beforehand how to do each thing",
+      "source": "Plaut. Trin. 853–855"
+    },
+    {
+      "latin": "Sī tē libenter vīcīnitās vidēbit, facilius tua vēndēs, opera facilius locābis, operāriōs facilius condūcēs",
+      "english": "If the neighbours like to see you, you will sell your produce more easily, let out your work more easily and hire labourers more easily",
+      "source": "Cato Agr. 4"
+    }
+  ],
+  "related": [
+    "employee",
+    "manager",
+    "director-head",
+    "job",
+    "wage",
+    "salary"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/conductor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: conductor</a> · <a href=\"https://logeion.uchicago.edu/dominus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dominus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 282, 309, checked against the searchable text of the book (9 November 2026).",
+    "Enrico Levi and Arturo Bini, <em>Il latino come lingua viva</em> (1937), p. 51 (<em>principale</em>).",
+    "Plautus and Cato checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

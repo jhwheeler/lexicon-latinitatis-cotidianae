@@ -1,0 +1,81 @@
+{
+  "id": "tenant",
+  "english": "tenant",
+  "pos": "noun",
+  "also": [
+    "tenants",
+    "lodger",
+    "renter"
+  ],
+  "domain": "pecunia",
+  "also_under": [
+    "domus"
+  ],
+  "terms": [
+    {
+      "latin": "inquilīnus, inquilīnī m.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "tenant, lodger",
+      "evidence": [
+        "Cic. Phil. 2.105: <span lang=\"la\">tē inquilīnō (nōn enim dominō)</span>",
+        "Suet. Ner. 44.2: <span lang=\"la\">inquilīnōs prīvātārum aedium atque īnsulārum</span>, tenants of private houses and of blocks of flats"
+      ],
+      "comment": "One who lives in a place not his own (Lewis &amp; Short), set against the owner, <span lang=\"la\">dominus</span>."
+    },
+    {
+      "latin": "conductor, conductōris m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the one who rents; a tenant of a house or farm",
+      "evidence": [
+        "Caes. BC 3.21.1: <span lang=\"la\">mercēdēs habitātiōnum annuās conductōribus dōnāvit</span>",
+        "Cic. Att. 12.32.2: <span lang=\"la\">conductōrēs quī sint et quantī</span>, who the tenants are and what they pay"
+      ],
+      "comment": "The party who <span lang=\"la\">condūcit</span>, rents (see rent, pay to use); also one who hires workers (see employer)."
+    },
+    {
+      "latin": "colōnus, colōnī m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a tenant farmer",
+      "evidence": [
+        "Cic. Caecin. 94: <span lang=\"la\">quī colōnus habuit conductum dē Caesenniā fundum</span>, who as tenant farmer had rented the farm from Caesennia"
+      ],
+      "comment": "Properly a farmer; one who farms land that he rents."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "essedās trānscurrentēs pōnō et fabrum inquilīnum et serrārium vīcīnum",
+      "english": "I count in the carriages rattling past, the carpenter who lodges in the building and the sawyer next door",
+      "source": "Sen. Ep. 56.4"
+    },
+    {
+      "latin": "Partem etiam cēnsūs omnēs ōrdinēs cōnferre jussit et īnsuper inquilīnōs prīvātārum aedium atque īnsulārum pēnsiōnem annuam repraesentāre fiscō",
+      "english": "He also ordered every class to contribute part of its property, and tenants of private houses and of blocks of flats to pay a year’s rent to the treasury at once",
+      "source": "Suet. Ner. 44.2"
+    },
+    {
+      "latin": "At vērō tē inquilīnō (nōn enim dominō) personābant omnia vōcibus ēbriōrum",
+      "english": "But with you as tenant (for you were not the owner) the whole house rang with drunken voices",
+      "source": "Cic. Phil. 2.105"
+    }
+  ],
+  "related": [
+    "landlord",
+    "rent-money",
+    "rent-hire",
+    "house"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/inquilinus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: inquilinus</a> · <a href=\"https://logeion.uchicago.edu/conductor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: conductor</a> · <a href=\"https://logeion.uchicago.edu/colonus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: colonus</a>",
+    "Cicero, Caesar and Suetonius checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-seneca-epistulae), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

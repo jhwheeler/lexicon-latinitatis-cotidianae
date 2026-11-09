@@ -1,0 +1,57 @@
+{
+  "id": "donate",
+  "english": "donate",
+  "pos": "verb",
+  "also": [
+    "donation",
+    "make a donation",
+    "give to charity",
+    "contribute money"
+  ],
+  "domain": "pecunia",
+  "terms": [
+    {
+      "latin": "cōnferō, cōnferre, contulī, collātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "give (money to a cause), contribute",
+      "evidence": [
+        "Suet. Aug. 57.2: <span lang=\"la\">prō facultāte quisque pecūniās contulērunt</span>, each gave money as he could afford",
+        "Liv. 26.36: <span lang=\"la\">in pūblicum cōnferāmus</span>, let us give it to the treasury"
+      ],
+      "comment": "The gift in the accusative, the cause after <span lang=\"la\">in</span> or <span lang=\"la\">ad</span>: <span lang=\"la\">pecūniam in rem cōnferre</span>. A small coin given is a <span lang=\"la\">stips</span> (see alms)."
+    },
+    {
+      "latin": "dōnō, dōnāre, dōnāvī, dōnātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "give as a present",
+      "evidence": [
+        "Hor. S. 1.5.65–66: <span lang=\"la\">dōnāsset jamne catēnam ex vōtō Laribus</span>, whether he had yet given his chain to the household gods, as he had vowed"
+      ],
+      "comment": "To give as a present (see give), to a person or to the gods."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "In restitūtiōnem Palātīnae domūs incendiō absūmptae veterānī, decuriae, tribūs atque etiam singillātim ē cēterō genere hominum libentēs ac prō facultāte quisque pecūniās contulērunt",
+      "english": "For the rebuilding of his house on the Palatine, which had burned down, the veterans, the guilds, the tribes and individuals of every other sort gave money, gladly and each as he could afford",
+      "source": "Suet. Aug. 57.2"
+    }
+  ],
+  "related": [
+    "give",
+    "gift",
+    "alms",
+    "fund"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/confero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: confero</a> · <a href=\"https://logeion.uchicago.edu/dono\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dono</a>",
+    "Suetonius, Livy and Horace checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

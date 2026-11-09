@@ -1,0 +1,111 @@
+{
+  "id": "translate",
+  "english": "translate",
+  "pos": "verb",
+  "also": [
+    "translation",
+    "translate into Latin",
+    "word for word"
+  ],
+  "domain": "schola",
+  "also_under": [
+    "verba"
+  ],
+  "terms": [
+    {
+      "latin": "vertō, vertere, vertī, versum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "translate",
+      "evidence": [
+        "Plaut. Trin. 19: <span lang=\"la\">Plautus vertit barbarē</span>",
+        "Cic. Fin. 1.7: <span lang=\"la\">sī plānē sīc verterem Platōnem</span>",
+        "Traupman 32",
+        "M-O s.v. translate"
+      ],
+      "comment": "From one language into another: <span lang=\"la\">ex Graecō in Latīnum vertere</span> (Liv. 25.39.12, Lewis &amp; Short; Traupman 32). Plautus’s ‘barbarian’ is Latin, as a Greek would call it."
+    },
+    {
+      "latin": "convertō, convertere, convertī, conversum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "translate",
+      "evidence": [
+        "Cic. Opt. Gen. 14: <span lang=\"la\">nec convertī ut interpres, sed ut ōrātor</span> (Lewis &amp; Short)",
+        "Cic. Off. 2.87 (Lewis &amp; Short)",
+        "Traupman 32, 249"
+      ],
+      "comment": "A translation is <span lang=\"la\">conversiō</span> (Traupman 32) or <span lang=\"la\">interpretātiō</span> (Quint. 2.14.2, Lewis &amp; Short; Morgan–Owens)."
+    },
+    {
+      "latin": "trānsferō, trānsferre, trānstulī, trānslātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "translate, carry over",
+      "evidence": [
+        "Cic. Fin. 1.7: <span lang=\"la\">locōs quidem quōsdam, sī vidēbitur, trānsferam</span>",
+        "Traupman 32, 249",
+        "M-O s.v. translate"
+      ]
+    },
+    {
+      "latin": "reddō, reddere, reddidī, redditum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "render (in another language)",
+      "evidence": [
+        "Cic. de Or. 1.155: <span lang=\"la\">Latīnē redderem</span>",
+        "Hor. Ars 133: <span lang=\"la\">verbō verbum … reddere</span>"
+      ],
+      "comment": "Word for word is <span lang=\"la\">verbum prō verbō reddere</span> (Cic. Opt. Gen. 14) or <span lang=\"la\">ad verbum exprimere</span> (Cic. Fin. 1.4, Lewis &amp; Short)."
+    },
+    {
+      "latin": "interpretor, interpretārī, interpretātus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "interpret; translate",
+      "evidence": [
+        "Cic. Fin. 2.20 (Lewis &amp; Short)",
+        "Quint. 8.6.44 (Lewis &amp; Short)",
+        "M-O s.v. translate"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "huic Graecē nōmen est Thēnsaurō fābulae: Philēmō scrīpsit, Plautus vertit barbarē",
+      "english": "In Greek this play is called The Treasure: Philemon wrote it, Plautus translated it into barbarian",
+      "source": "Plaut. Trin. 18–19"
+    },
+    {
+      "latin": "cum ea, quae lēgeram Graecē, Latīnē redderem, nōn sōlum optimīs verbīs ūterer et tamen ūsitātīs",
+      "english": "when I put into Latin what I had read in Greek, I used words that were not only the best but also familiar",
+      "source": "Cic. de Or. 1.155"
+    },
+    {
+      "latin": "nec verbō verbum cūrābis reddere fīdus interpres",
+      "english": "nor will you take care, as a faithful translator, to render word for word",
+      "source": "Hor. Ars 133–134"
+    }
+  ],
+  "related": [
+    "latin-language",
+    "greek-language",
+    "language",
+    "speak-a-language",
+    "in-english",
+    "word",
+    "mean-signify"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/verto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: verto</a> · <a href=\"https://logeion.uchicago.edu/converto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: converto</a> · <a href=\"https://logeion.uchicago.edu/transfero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: transfero</a> · <a href=\"https://logeion.uchicago.edu/reddo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: reddo</a> · <a href=\"https://logeion.uchicago.edu/interpretor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: interpretor</a> · <a href=\"https://logeion.uchicago.edu/interpretatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: interpretatio</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. translate; translation.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 32, 249, checked against the searchable text of the book (9 November 2026).",
+    "Plautus, Horace and Cicero’s <em>De finibus</em> and <em>De oratore</em> checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

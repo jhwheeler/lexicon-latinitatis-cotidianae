@@ -1,0 +1,116 @@
+{
+  "id": "influence",
+  "english": "influence",
+  "sense": "power over what others think and do",
+  "pos": [
+    "noun",
+    "verb"
+  ],
+  "also": [
+    "have influence",
+    "influential",
+    "sway",
+    "carry weight",
+    "be influenced by",
+    "clout"
+  ],
+  "domain": "verba",
+  "also_under": [
+    "res-publica"
+  ],
+  "terms": [
+    {
+      "latin": "auctōritās, auctōritātis f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "influence, weight, prestige: the standing that makes others follow",
+      "evidence": [
+        "Cic. Lael. 13: <span lang=\"la\">plūs apud mē antīquōrum auctōritās valet</span>",
+        "Caes. BG 1.3.1: <span lang=\"la\">auctōritāte … permōtī</span>"
+      ],
+      "comment": "Lewis &amp; Short: “might, power, authority, reputation, dignity, influence, weight (very freq.)”. It counts with someone: <span lang=\"la\">auctōritās valet apud aliquem</span>."
+    },
+    {
+      "latin": "grātia, grātiae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "influence won by favour and connections",
+      "evidence": [
+        "Caes. BG 7.63.1: <span lang=\"la\">quantum grātiā, auctōritāte, pecūniā valent</span>",
+        "Caes. BG 1.9.3: <span lang=\"la\">grātiā et largītiōne … plūrimum poterat</span>"
+      ],
+      "comment": "Lewis &amp; Short: “credit, influence”."
+    },
+    {
+      "latin": "multum posse (valēre) apud",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "have great influence with",
+      "grammar": "phrase: apud with the accusative of those influenced; plūs, plūrimum for more and most",
+      "evidence": [
+        "Caes. BG 1.9.3: <span lang=\"la\">plūrimum poterat</span>",
+        "Cic. Lael. 13: <span lang=\"la\">plūs apud mē … valet</span>"
+      ],
+      "comment": "The usual way to say that someone has influence: how much he can do, or how much he counts, with others."
+    },
+    {
+      "latin": "addūcō, addūcere, addūxī, adductum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "influence, induce (someone to act)",
+      "grammar": "verb, third conjugation; with ut and the subjunctive, or ad",
+      "evidence": [
+        "Caes. BG 1.3.1: <span lang=\"la\">hīs rēbus adductī … cōnstituērunt</span>"
+      ],
+      "comment": "In the passive, of the reasons that move someone: <span lang=\"la\">hīs rēbus adductus</span>, influenced by these considerations."
+    },
+    {
+      "latin": "flectō, flectere, flexī, flexum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "sway, bend (someone’s mind or will)",
+      "evidence": [
+        "Hor. Ars 163: <span lang=\"la\">cēreus in vitium flectī</span>",
+        "Cic. Phil. 1.35: <span lang=\"la\">sed quid tē ōrātiōne flectam?</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Lewis &amp; Short: “to bend (in opinion or in will), to move, persuade, prevail upon”."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "plūs apud mē antīquōrum auctōritās valet",
+      "english": "the authority of the ancients carries more weight with me",
+      "source": "Cic. Lael. 13"
+    },
+    {
+      "latin": "Hīs rēbus adductī et auctōritāte … permōtī cōnstituērunt ea quae ad proficīscendum pertinērent comparāre",
+      "english": "Influenced by these considerations and moved by (Orgetorix’s) authority, they decided to get ready what they needed for the journey",
+      "source": "Caes. BG 1.3.1"
+    },
+    {
+      "latin": "quantum grātiā, auctōritāte, pecūniā valent, ad sollicitandās cīvitātēs nītuntur",
+      "english": "with all the influence, authority and money they have, they set about stirring up the states",
+      "source": "Caes. BG 7.63.1"
+    },
+    {
+      "latin": "inberbus juvenis tandem custōde remōtō gaudet equīs canibusque et aprīcī grāmine Campī, cēreus in vitium flectī, monitōribus asper",
+      "english": "the beardless youth, his tutor gone at last, delights in horses and hounds and the grass of the sunny Campus: soft as wax to be shaped to vice, rough with those who advise him",
+      "source": "Hor. Ars 161–163"
+    }
+  ],
+  "related": [
+    "effect",
+    "important",
+    "factor",
+    "control-govern"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/auctoritas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: auctoritas</a> · <a href=\"https://logeion.uchicago.edu/gratia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gratia</a> · <a href=\"https://logeion.uchicago.edu/possum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: possum</a> · <a href=\"https://logeion.uchicago.edu/adduco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: adduco</a> · <a href=\"https://logeion.uchicago.edu/flecto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: flecto</a>",
+    "Cicero, <em>Laelius</em>, Caesar, <em>Bellum Gallicum</em> 1 and 7, and Horace, <em>Ars poetica</em>, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

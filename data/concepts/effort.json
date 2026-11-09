@@ -1,0 +1,91 @@
+{
+  "id": "effort",
+  "english": "effort",
+  "sense": "energy put into something, hard work",
+  "pos": "noun",
+  "also": [
+    "make an effort",
+    "take pains",
+    "it’s worth the effort",
+    "worth the effort",
+    "a waste of effort",
+    "exertion"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "opera, operae f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "effort, pains, work freely given",
+      "evidence": [
+        "Cic. Fam. 14.18.2: <span lang=\"la\">maximē autem date operam ut valeātis</span>",
+        "Plaut. Poen. 332: <span lang=\"la\">et oleum et operam perdidī</span>",
+        "Traupman 97: make an effort to be on time, <span lang=\"la\">dā operam ut tempestīvē adsīs</span>",
+        "Traupman 308: it’s (not) worth the effort, <span lang=\"la\">pretium operae (nōn) est</span>"
+      ],
+      "comment": "<span lang=\"la\">Operam dare ut</span>, to make an effort to, to see to it that; <span lang=\"la\">operam perdere</span>, to waste one’s effort; <span lang=\"la\">operae pretium est</span>, it is worth the effort. Lewis &amp; Short: <span lang=\"la\">opera</span> “supposes a free will and desire to serve”, where <span lang=\"la\">opus</span> is the work itself."
+    },
+    {
+      "latin": "labor, labōris m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "toil, hard work, exertion",
+      "evidence": [
+        "Liv. 21.4.5: <span lang=\"la\">nūllō labōre aut corpus fatīgārī aut animus vincī poterat</span>",
+        "Cic. de Or. 2.210: <span lang=\"la\">magnō illa labōre … esse parta</span>"
+      ],
+      "comment": "Effort as toil, often tiring: <span lang=\"la\">magnō labōre</span>, with great effort."
+    },
+    {
+      "latin": "ēnītor, ēnītī, ēnīsus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "make every effort, strive (to)",
+      "grammar": "verb, third conjugation, deponent; with ut and the subjunctive",
+      "evidence": [
+        "Cic. Off. 3.42: <span lang=\"la\">ēnītī et contendere dēbet quam maximē possit, ut vincat</span>",
+        "Cic. Fam. 13.29.5; Lael. 59 (Lewis &amp; Short)"
+      ],
+      "comment": "“Make an effort” is often a verb: <span lang=\"la\">ēnītī</span>, <span lang=\"la\">operam dare</span>, or <span lang=\"la\">cōnārī</span> (see try)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "maximē autem date operam ut valeātis, sī nōs vultis valēre",
+      "english": "above all, make every effort to keep well, if you want us to be well",
+      "source": "Cic. Fam. 14.18.2"
+    },
+    {
+      "latin": "sī, quantum operae sūmpsistī ut tuus pistor bonum faceret pānem, ejus duodecimam philosophiae dedissēs, ipse bonus jam prīdem essēs factus",
+      "english": "if you had given philosophy a twelfth of the effort you spent getting your baker to make good bread, you would have become good yourself long ago",
+      "source": "Varro in Gell. 15.19.2"
+    },
+    {
+      "latin": "Tum pol ego et oleum et operam perdidī.",
+      "english": "Then, by heaven, I’ve wasted my lamp oil and my effort.",
+      "source": "Plaut. Poen. 332"
+    },
+    {
+      "latin": "factūrusne operae pretium sim … nec satis sciō",
+      "english": "whether I shall be doing something worth the effort … I am not quite sure",
+      "source": "Liv. praef. 1"
+    }
+  ],
+  "related": [
+    "try",
+    "effort-attempt",
+    "practice"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/opera\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: opera</a> · <a href=\"https://logeion.uchicago.edu/labor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: labor</a> · <a href=\"https://logeion.uchicago.edu/enitor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: enitor</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 97, 308, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-cicero-philosophica, loci-varro, loci-plautus, loci-livius), checked against the editions named there.",
+    "Livy 21 and Cicero, <em>De oratore</em> 2, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> and the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

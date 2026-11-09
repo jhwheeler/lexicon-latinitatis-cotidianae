@@ -1,0 +1,65 @@
+{
+  "id": "maths",
+  "english": "maths",
+  "pos": "noun",
+  "also": [
+    "math",
+    "mathematics",
+    "mathematical",
+    "mathematician"
+  ],
+  "domain": "schola",
+  "terms": [
+    {
+      "latin": "mathēmatica, mathēmaticae f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "mathematics",
+      "evidence": [
+        "Sen. Ep. 88.28: <span lang=\"la\">mathēmaticē</span>, the Greek form",
+        "Traupman 343"
+      ],
+      "comment": "Greek μαθηματική, the learned arts of number and measure. In Suetonius <span lang=\"la\">mathēmatica</span> is astrology (Tib. 69), and a <span lang=\"la\">mathēmaticus</span>, a mathematician in Cicero (de Or. 1.10), is usually an astrologer under the Empire (Tac. H. 1.22, Lewis &amp; Short)."
+    },
+    {
+      "latin": "geōmetria, geōmetriae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "geometry; mathematics as a school subject",
+      "evidence": [
+        "Quint. 1.10.34–35",
+        "Cic. de Or. 1.187 (Lewis &amp; Short)"
+      ],
+      "comment": "The Roman schools’ name for the whole subject, which Quintilian divides into numbers and figures (1.10.35)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nam cum sit geōmetria dīvīsa in numerōs atque fōrmās, numerōrum quidem nōtitia nōn ōrātōrī modo, sed cuicumque saltem prīmīs litterīs ērudītō necessāria est",
+      "english": "for since geometry is divided into numbers and figures, a knowledge of numbers is necessary not only to the orator but to anyone who has had even a primary education",
+      "source": "Quint. 1.10.35"
+    },
+    {
+      "latin": "mathēmaticē, ut ita dīcam, superficiāria est, in aliēnō aedificat",
+      "english": "mathematics is, so to speak, a tenant: it builds on someone else’s ground",
+      "source": "Sen. Ep. 88.28"
+    }
+  ],
+  "related": [
+    "arithmetic",
+    "science",
+    "subject-school",
+    "problem-to-solve",
+    "calculator"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/mathematicus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mathematicus</a> · <a href=\"https://logeion.uchicago.edu/mathematice\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mathematice</a> · <a href=\"https://logeion.uchicago.edu/geometria\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: geometria</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 343, checked against the searchable text of the book (9 November 2026).",
+    "Quintilian and Seneca checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

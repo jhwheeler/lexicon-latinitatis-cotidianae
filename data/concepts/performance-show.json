@@ -1,0 +1,67 @@
+{
+  "id": "performance-show",
+  "english": "performance",
+  "sense": "a show, the performing of a play or music",
+  "pos": "noun",
+  "also": [
+    "show",
+    "stage show",
+    "put on a play",
+    "the play is on",
+    "first night"
+  ],
+  "domain": "ludi",
+  "terms": [
+    {
+      "latin": "spectāculum, spectāculī n.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a show, a public performance",
+      "evidence": [
+        "Cic. Mur. 72: <span lang=\"la\">spectācula sunt tribūtim data</span>",
+        "Liv. 2.36.1: <span lang=\"la\">nōndum commissō spectāculō</span>"
+      ],
+      "comment": "Any show put on for an audience, in the theatre or the circus; <span lang=\"la\">spectāculum committere</span>, to begin the show (Livy). A concert is <span lang=\"la\">concentus</span> (see concert)."
+    },
+    {
+      "latin": "fābulam agere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "put on, perform a play",
+      "grammar": "phrase: agō with fābulam; passive, fābula agitur, the play is on",
+      "evidence": [
+        "Ter. Hec. 33: <span lang=\"la\">cum prīmum eam agere coepī</span>",
+        "Plaut. Men. 72: <span lang=\"la\">dum haec agitur fābula</span> (Lewis &amp; Short)"
+      ],
+      "comment": "A play is <span lang=\"la\">data</span> when it is first put on (Ter. Hec. 1–2) and <span lang=\"la\">agitur</span> while it is being performed."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "haec cum data nova est, novum intervēnit vitium et calamitās, ut neque spectārī neque cognōscī potuerit",
+      "english": "when this play was first put on, a new mishap and disaster intervened, so that it could neither be watched nor followed",
+      "source": "Ter. Hec. 1–3"
+    },
+    {
+      "latin": "ut pompā, lūdīs atque ejus modī spectāculīs teneantur ob eamque rem vel famem et sitim perferant",
+      "english": "(we see children) held by a procession, games and shows of that kind, and putting up even with hunger and thirst for their sake",
+      "source": "Cic. Fin. 5.48"
+    }
+  ],
+  "related": [
+    "play-drama",
+    "concert",
+    "theatre",
+    "actor"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/spectaculum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: spectaculum</a> · <a href=\"https://logeion.uchicago.edu/ago\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ago</a>",
+    "Cicero, <em>De finibus</em>, from the Latinitas loci collection (loci-cicero-philosophica), checked against the editions named there.",
+    "Terence, <em>Hecyra</em>, against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>; Cicero, <em>Pro Murena</em>, and Livy 2, against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> and the Perseus text of Livy (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

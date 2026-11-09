@@ -1,0 +1,85 @@
+{
+  "id": "poverty",
+  "english": "poverty",
+  "pos": "noun",
+  "also": [
+    "being poor",
+    "want",
+    "destitution",
+    "penury"
+  ],
+  "domain": "pecunia",
+  "also_under": [
+    "verba"
+  ],
+  "terms": [
+    {
+      "latin": "paupertās, paupertātis f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "poverty, small means",
+      "evidence": [
+        "Cic. Par. 45: <span lang=\"la\">paupertātem vel potius egestātem ac mendīcitātem</span> (Lewis &amp; Short)",
+        "Ov. Met. 8.633: <span lang=\"la\">paupertātemque fatendō effēcēre levem</span>"
+      ],
+      "comment": "Slender means rather than want, the opposite of riches (Lewis &amp; Short); real need is <span lang=\"la\">egestās</span>."
+    },
+    {
+      "latin": "egestās, egestātis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "want, destitution",
+      "evidence": [
+        "Verg. G. 1.146: <span lang=\"la\">dūrīs urgēns in rēbus egestās</span>, want that presses in hard times"
+      ]
+    },
+    {
+      "latin": "inopia, inopiae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "lack of means, need",
+      "evidence": [
+        "Publ. I 7: <span lang=\"la\">Inopiae dēsunt multa, avāritiae omnia</span>, poverty lacks much, greed everything"
+      ]
+    },
+    {
+      "latin": "pauperiēs, pauperiēī f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "poverty",
+      "register": "vōx plērumque poētica: Hor., Verg.; in prose after Augustus",
+      "evidence": [
+        "Hor. C. 1.1.18: <span lang=\"la\">indocilis pauperiem patī</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "sed pia Baucis anus parilīque aetāte Philēmōn illā sunt annīs jūnctī juvenālibus, illā cōnsenuēre casā paupertātemque fatendō effēcēre levem nec inīquā mente ferendō",
+      "english": "but good old Baucis and Philemon, of the same age, were married in that cottage in their young years and grew old in it; they made their poverty light by owning it and bearing it without complaint",
+      "source": "Ov. Met. 8.631–634"
+    },
+    {
+      "latin": "vetus est prōverbium: paupertātem certissimam esse, cum alicujus indigeat, ūtī eō nōn posse, quia ignōrētur, ubi prōjectum jaceat, quod dēsīderātur",
+      "english": "there is an old proverb that the surest poverty is to need something and be unable to use it, because no one knows where the thing you want has been thrown",
+      "source": "Col. 12.2.3"
+    }
+  ],
+  "related": [
+    "poor-needy",
+    "rich",
+    "beggar",
+    "alms"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/paupertas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: paupertas</a> · <a href=\"https://logeion.uchicago.edu/egestas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: egestas</a> · <a href=\"https://logeion.uchicago.edu/inopia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: inopia</a> · <a href=\"https://logeion.uchicago.edu/pauperies\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pauperies</a>",
+    "Horace checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-ovidius, loci-cato, loci-vergilius, loci-publilius), checked against the editions named there.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

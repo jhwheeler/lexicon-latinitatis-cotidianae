@@ -1,0 +1,70 @@
+{
+  "id": "afford",
+  "english": "afford",
+  "pos": "verb",
+  "also": [
+    "can afford",
+    "can’t afford",
+    "affordable",
+    "I can’t afford it",
+    "be able to pay"
+  ],
+  "domain": "pecunia",
+  "also_under": [
+    "verba"
+  ],
+  "terms": [
+    {
+      "latin": "habēre quod dēs",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "afford, have the money to pay; literally, have something to give",
+      "grammar": "phrase: habēre with a relative clause in the subjunctive",
+      "evidence": [
+        "Plaut. Trin. 564: <span lang=\"la\">vērum quod det nōn habet</span>, but he can’t afford it",
+        "Plaut. Asin. 242: <span lang=\"la\">sī nōn est quod dēs</span>, if you can’t pay"
+      ],
+      "comment": "Latin says what one has to give: <span lang=\"la\">nōn habeō quod dem</span>, I can’t afford it; or with <span lang=\"la\">est</span>, <span lang=\"la\">mihi nōn est quod dem</span> (Plaut. Trin. 761). What one can afford is one’s <span lang=\"la\">facultātēs</span>, one’s means (see resources): each gave <span lang=\"la\">prō facultāte</span>, as he could afford (Suet. Aug. 57.2)."
+    },
+    {
+      "latin": "solvendō esse",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "be able to pay (what is owed)",
+      "grammar": "phrase: gerund in the dative with esse",
+      "evidence": [
+        "Cic. Fam. 3.8.2: <span lang=\"la\">cum solvendō cīvitātēs nōn essent</span>, when the towns could not afford to pay",
+        "Cic. Att. 13.10.3: <span lang=\"la\">solvendō enim nōn erat</span>, for he could not pay his debts"
+      ],
+      "comment": "Of debts and bills; <span lang=\"la\">nōn esse solvendō</span>, to be unable to pay, insolvent."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Quid cēnsēs? homōst: volt fierī līber, vērum quod det nōn habet.",
+      "english": "What do you think? He’s only human: he wants to be freed, but he hasn’t the money to pay for it.",
+      "source": "Plaut. Trin. 563–564"
+    },
+    {
+      "latin": "multārum cīvitātum prīncipēs ad mē dētulērunt sūmptūs dēcernī lēgātīs nimis magnōs, cum solvendō cīvitātēs nōn essent",
+      "english": "the leading men of many towns told me that far too much was being voted for the envoys’ expenses, when the towns could not afford to pay",
+      "source": "Cic. Fam. 3.8.2"
+    }
+  ],
+  "related": [
+    "price",
+    "expensive",
+    "cheap",
+    "resources",
+    "pay"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/habeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: habeo</a> · <a href=\"https://logeion.uchicago.edu/solvo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: solvo</a>",
+    "Plautus, Cicero and Suetonius checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "id": "loan",
+  "english": "loan",
+  "pos": "noun",
+  "also": [
+    "loans",
+    "a loan",
+    "lend money",
+    "on loan",
+    "take out a loan"
+  ],
+  "domain": "pecunia",
+  "terms": [
+    {
+      "latin": "pecūnia mūtua",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "money lent or borrowed: a loan",
+      "grammar": "noun and adjective",
+      "evidence": [
+        "Cic. Att. 11.3.3: <span lang=\"la\">cui magnam dedimus pecūniam mūtuam</span>, to whom I have lent a large sum",
+        "Caes. BC 1.39.3: <span lang=\"la\">mūtuās pecūniās sūmpsit</span>, he borrowed money"
+      ],
+      "comment": "Latin says it with <span lang=\"la\">mūtuus</span>, lent: <span lang=\"la\">pecūniam mūtuam dare</span>, to lend money, <span lang=\"la\">sūmere</span>, to borrow it; comedy says <span lang=\"la\">mūtuom argentum</span> (Plaut. Trin. 758). A thing lent to be used and given back is given <span lang=\"la\">ūtendum</span> (see borrow)."
+    },
+    {
+      "latin": "crēditum, crēditī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a loan, as the lender sees it",
+      "evidence": [
+        "Sall. Cat. 25.4: <span lang=\"la\">crēditum abjūrāverat</span>, she had denied a loan on oath",
+        "Cato Agr. 5.4: <span lang=\"la\">injussū dominī crēdat nēminī</span>, let him lend to no one without the master’s leave"
+      ],
+      "comment": "From <span lang=\"la\">crēdere</span>, to lend, to trust someone with money (Lewis &amp; Short)."
+    },
+    {
+      "latin": "mūtuum, mūtuī n.",
+      "status": "alternative",
+      "period": "post-classical",
+      "gloss": "a loan (the lawyers’ word)",
+      "evidence": [
+        "Gai. Inst. 3.90 (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "sī quoi mūtuom quid dederis, fit prō propriō perditum: quom repetās, inimīcum amīcum beneficiō inveniās tuō.",
+      "english": "Lend anybody anything and it is as good as lost: when you ask for it back, you find that your kindness has made your friend an enemy.",
+      "source": "Plaut. Trin. 1051–1052"
+    },
+    {
+      "latin": "Age, sequere mē, dabō tibi mūtuō jūglandēs. — Amīcē nunc loqueris. Sed quandō reddam? — Ad Kalendās Graecās, sī nōn potes citius.",
+      "english": "Come on, follow me, I’ll lend you some walnuts. — Now you’re talking like a friend. But when do I give them back? — On the Greek Kalends, if you can’t sooner.",
+      "source": "Cord. Coll. 2.31"
+    }
+  ],
+  "related": [
+    "borrow",
+    "lend",
+    "debt",
+    "owe",
+    "interest-money",
+    "bank"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/mutuus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mutuus</a> · <a href=\"https://logeion.uchicago.edu/creditum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: creditum</a> · <a href=\"https://logeion.uchicago.edu/credo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: credo</a>",
+    "Cicero, Caesar, Sallust, Cato and Plautus checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-corderius), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "id": "rich",
+  "english": "rich",
+  "sense": "having much money",
+  "pos": "adjective",
+  "also": [
+    "wealthy",
+    "well off",
+    "well-to-do",
+    "the rich",
+    "rich man"
+  ],
+  "domain": "pecunia",
+  "also_under": [
+    "verba"
+  ],
+  "terms": [
+    {
+      "latin": "dīves, dīvitis",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "rich, wealthy",
+      "grammar": "adjective, third declension, one ending",
+      "evidence": [
+        "Plaut. Aul. 184: <span lang=\"la\">ubi dīves blandē appellat pauperem</span>",
+        "Hor. AP 421: <span lang=\"la\">dīves agrīs, dīves positīs in fēnore nummīs</span>, rich in land, rich in money lent at interest"
+      ],
+      "comment": "Comparative <span lang=\"la\">dītior</span>, superlative <span lang=\"la\">dītissimus</span>. As a noun, a rich man; <span lang=\"la\">dīvitēs</span>, the rich."
+    },
+    {
+      "latin": "locuplēs, locuplētis",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "well-to-do, wealthy; properly, rich in land",
+      "grammar": "adjective, third declension, one ending",
+      "evidence": [
+        "Plaut. Trin. 565: <span lang=\"la\">Et ego esse locuplēs, vērum nēquīquam volō</span>",
+        "Cic. Rep. 2.16 (Lewis &amp; Short)"
+      ],
+      "comment": "Cicero explains it from land, <span lang=\"la\">locus</span>: when wealth lay in cattle and land, men were called <span lang=\"la\">pecūniōsī et locuplētēs</span> (Rep. 2.16, Lewis &amp; Short)."
+    },
+    {
+      "latin": "opulentus, opulenta, opulentum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "wealthy, opulent",
+      "evidence": [
+        "Plaut. Trin. 493: <span lang=\"la\">aequō mendīcus atque ille opulentissimus</span>",
+        "Sall. Jug. 16.5 (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nēmō nāscitur dīves; quisquis exit in lūcem jussus est lacte et pannō esse contentus",
+      "english": "No one is born rich: whoever comes out into the light is told to be content with milk and a rag",
+      "source": "Sen. Ep. 20.13"
+    },
+    {
+      "latin": "Nōn temerārium est, ubi dīves blandē appellat pauperem. jam illic homō aurum scit mē habēre, eō mē salūtat blandius.",
+      "english": "It’s no accident when a rich man speaks sweetly to a poor one: he must know I have gold, that’s why he greets me so sweetly.",
+      "source": "Plaut. Aul. 184–185"
+    }
+  ],
+  "related": [
+    "poor-needy",
+    "poverty",
+    "resources",
+    "property-possessions",
+    "money"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/dives\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dives</a> · <a href=\"https://logeion.uchicago.edu/locuples\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: locuples</a> · <a href=\"https://logeion.uchicago.edu/opulentus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: opulentus</a>",
+    "Plautus and Horace checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-seneca-epistulae), checked against the editions named there.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

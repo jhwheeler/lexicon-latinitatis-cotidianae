@@ -1,0 +1,74 @@
+{
+  "id": "behaviour",
+  "english": "behaviour",
+  "sense": "the way someone acts",
+  "pos": "noun",
+  "also": [
+    "behavior",
+    "conduct",
+    "good behaviour",
+    "bad behaviour",
+    "ways"
+  ],
+  "domain": "verba",
+  "also_under": [
+    "sermo"
+  ],
+  "terms": [
+    {
+      "latin": "sē gerere",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "behave, conduct oneself (well, badly, modestly …)",
+      "grammar": "phrase: gerō with the reflexive, and an adverb or a clause of manner",
+      "evidence": [
+        "Cic. Off. 1.90: <span lang=\"la\">quantō superiōrēs sīmus, tantō nōs gerāmus summissius</span>",
+        "Cic. Fam. 11.27.5: <span lang=\"la\">quōnam modō gererem mē adversus Caesarem</span>"
+      ],
+      "comment": "Latin says how someone behaved with a verb and an adverb where English uses the noun: <span lang=\"la\">optimē sē gessit</span>, his behaviour was excellent. Lewis &amp; Short: “to bear, deport, behave, or conduct one’s self”."
+    },
+    {
+      "latin": "mōrēs, mōrum m. pl.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "behaviour, ways, manners; character",
+      "evidence": [
+        "Plin. Ep. 3.3.7: <span lang=\"la\">ā quō mōrēs prīmum mox ēloquentiam discat</span>",
+        "Hor. Ars 156: <span lang=\"la\">aetātis cujusque notandī sunt tibi mōrēs</span>"
+      ],
+      "comment": "The plural of <span lang=\"la\">mōs</span>, custom (see practice): a person’s habitual behaviour and character, good or bad. Lewis &amp; Short: “conduct, behavior; in plur., manners, morals, character”."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "rēctē praecipere videantur, quī monent, ut, quantō superiōrēs sīmus, tantō nōs gerāmus summissius",
+      "english": "those seem to give good advice who warn us that the higher we stand, the more humbly we should behave",
+      "source": "Cic. Off. 1.90"
+    },
+    {
+      "latin": "ā quō mōrēs prīmum mox ēloquentiam discat, quae male sine mōribus discitur",
+      "english": "from whom he may learn good conduct first, then eloquence, which is badly learned without it",
+      "source": "Plin. Ep. 3.3.7"
+    },
+    {
+      "latin": "in maximīs rēbus quōnam modō gererem mē adversus Caesarem, ūsus tuō cōnsiliō sum",
+      "english": "in matters of the greatest moment I took your advice on how I should behave towards Caesar",
+      "source": "Cic. Fam. 11.27.5"
+    }
+  ],
+  "related": [
+    "behave",
+    "well-behaved",
+    "practice-custom"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/gero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gero</a> · <a href=\"https://logeion.uchicago.edu/mos\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mos</a>",
+    "Pliny from the Latinitas loci collection (loci-plinius), checked against the editions named there.",
+    "Cicero, <em>De officiis</em> 1, and Horace, <em>Ars poetica</em>, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a>; Cicero’s letters <em>Ad familiares</em> against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

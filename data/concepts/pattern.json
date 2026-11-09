@@ -1,0 +1,66 @@
+{
+  "id": "pattern",
+  "english": "pattern",
+  "sense": "a regular way things happen",
+  "pos": "noun",
+  "also": [
+    "a regular pattern",
+    "the same pattern",
+    "follow a pattern",
+    "sequence"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "ōrdō, ōrdinis m.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a regular order, the way things follow one another",
+      "evidence": [
+        "Cic. N. D. 2.97: <span lang=\"la\">tam ratōs astrōrum ōrdinēs</span>",
+        "Cic. Off. 1.17: <span lang=\"la\">modum quendam et ōrdinem adhibentēs</span>"
+      ],
+      "comment": "Lewis &amp; Short: “right order, regular succession”; <span lang=\"la\">eundem ōrdinem tenēre</span>, to keep to the same pattern (Cic. Phil. 5.35, Lewis &amp; Short). For patterns of behaviour see practice (custom) and behaviour; for a pattern to copy, model; for a pattern on cloth, design."
+    },
+    {
+      "latin": "vicissitūdō, vicissitūdinis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a regular alternation; taking turns",
+      "evidence": [
+        "Cic. N. D. 2.125: <span lang=\"la\">eaque vicissitūdō in omnī cursū cōnservātur</span>",
+        "Cic. Leg. 2.16: <span lang=\"la\">vicissitūdinēs diērum noctiumque</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Of things that come round in turn: day and night, the seasons, people or birds taking turns."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Quis enim hunc hominem dīxerit, quī, cum tam certōs caelī mōtūs, tam ratōs astrōrum ōrdinēs … vīderit, neget in hīs ūllam inesse ratiōnem …?",
+      "english": "For who would call him a man who, seeing such regular movements in the sky and such fixed patterns in the stars, denies that there is any reason in them?",
+      "source": "Cic. N. D. 2.97"
+    },
+    {
+      "latin": "in ejus locum succēdit ex hīs, quae adquiērunt, eaque vicissitūdō in omnī cursū cōnservātur",
+      "english": "one of those that have rested takes the leader’s place, and this rotation is kept up the whole way (of cranes flying in a wedge)",
+      "source": "Cic. N. D. 2.125"
+    }
+  ],
+  "related": [
+    "order",
+    "practice-custom",
+    "system",
+    "design-pattern",
+    "model",
+    "take-turns"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/ordo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ordo</a> · <a href=\"https://logeion.uchicago.edu/vicissitudo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vicissitudo</a>",
+    "Cicero, <em>De natura deorum</em> 2 and <em>De officiis</em> 1, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

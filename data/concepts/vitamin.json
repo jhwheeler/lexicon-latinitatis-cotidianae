@@ -12,6 +12,15 @@
       "status": "recommended",
       "period": "modern",
       "comment": "The existing vitamin entry explains the adopted reading convention."
+    },
+    {
+      "latin": "vitamina, vitaminae f.",
+      "status": "alternative",
+      "period": "modern",
+      "evidence": [
+        "M-O"
+      ],
+      "comment": "The feminine variant, also recorded by Morgan–Owens, without documented stem quantities."
     }
   ],
   "phrases": [
@@ -19,19 +28,29 @@
       "latin": "vītamīna D et B12",
       "english": "vitamins D and B12",
       "source": "composed"
+    },
+    {
+      "latin": "Hic cibus multa vītamīna continet.",
+      "english": "This food contains many vitamins.",
+      "source": "composed"
     }
   ],
   "related": [
     "nutrition",
-    "entry-12"
+    "vitaminic",
+    "multivitamin"
   ],
   "sources": [
     "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>",
-    "The example sentence marked “composed” is ours."
+    "The example sentence marked “composed” is ours.",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: Adumbratio</a> · <a href=\"https://latin-dictionary.net/definition/38972/vitaminum-vitamini\" rel=\"noopener noreferrer\" target=\"_blank\">Vitaminum: Calepinus Novus attribution</a>"
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  }
+  },
+  "replaces": [
+    "entry-12"
+  ]
 }

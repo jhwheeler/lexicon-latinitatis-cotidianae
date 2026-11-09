@@ -1,0 +1,58 @@
+{
+  "id": "pea",
+  "english": "pea",
+  "pos": "noun",
+  "also": [
+    "peas",
+    "green peas"
+  ],
+  "domain": "natura",
+  "terms": [
+    {
+      "latin": "pīsum, pīsī n.",
+      "status": "recommended",
+      "period": "classical",
+      "evidence": [
+        "Columella II 10, 4",
+        "Plīn. NH XVIII 123"
+      ],
+      "comment": "Lewis &amp; Short marks the ī long (late collateral <span lang=\"la\">pīsa, pīsae f.</span>), and French <em>pois</em> continues the long vowel."
+    },
+    {
+      "latin": "pīsa viridia",
+      "status": "alternative",
+      "period": "ours",
+      "gloss": "green peas",
+      "comment": "Our phrase for the shelled table vegetable."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Pīsa ē siliquīs exprimāmus.",
+      "english": "Let’s pop the peas out of their pods.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "bean",
+    "broad-bean",
+    "lentil",
+    "chickpea",
+    "pod",
+    "pulses"
+  ],
+  "sources": [
+    "<a href=\"https://alatius.com/ls/index.php?l=pisum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pisum</a>",
+    "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/food-vocabulary-bulgaria-and-fabulae.md\">Food vocabulary: source notes</a>",
+    "The example sentence marked “composed” is ours."
+  ],
+  "replaces": [
+    "entry-190",
+    "food-190"
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,5047 @@
+{
+  "batch": "natura-1",
+  "cards": [
+    "entry-7",
+    "entry-8",
+    "entry-9",
+    "entry-10",
+    "entry-11",
+    "entry-12",
+    "entry-13",
+    "entry-14",
+    "entry-15",
+    "entry-105",
+    "entry-106",
+    "entry-107",
+    "entry-108",
+    "entry-109",
+    "entry-110",
+    "entry-111",
+    "entry-112",
+    "entry-113",
+    "entry-114",
+    "entry-190",
+    "entry-191",
+    "entry-192",
+    "entry-197",
+    "entry-198",
+    "entry-199",
+    "entry-200",
+    "entry-201",
+    "entry-202",
+    "entry-203"
+  ],
+  "records": [
+    {
+      "id": "sprout-noun",
+      "english": "sprout",
+      "sense": "a young shoot",
+      "pos": "noun",
+      "also": [
+        "shoot",
+        "bud"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "germen, germinis n.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "sprout, shoot, bud",
+          "comment": "English <em>germ</em> and <em>germinate</em> derive from this vocabulary. Older dictionaries propose different deeper etymologies; no disputed Indo-European derivation is asserted here."
+        },
+        {
+          "latin": "pullus, pullī m.",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "young animal or young shoot"
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Germen ē terrā oritur.",
+          "english": "A sprout comes out of the earth.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "sprout-verb"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/germen\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: germen</a> · <a href=\"https://logeion.uchicago.edu/pullus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pullus</a>",
+        "The example sentence marked “composed” is ours."
+      ],
+      "replaces": [
+        "entry-7"
+      ]
+    },
+    {
+      "id": "sprout-verb",
+      "english": "sprout",
+      "sense": "put forth shoots",
+      "pos": "verb",
+      "also": [
+        "germinate"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "germinō, germināre, germināvī, germinātum",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "sprout or put forth shoots"
+        },
+        {
+          "latin": "pullulō, pullulāre, pullulāvī, pullulātum",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "sprout or multiply"
+        }
+      ],
+      "related": [
+        "sprout-noun"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/germino\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: germino</a> · <a href=\"https://logeion.uchicago.edu/pullulo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pullulo</a>"
+      ]
+    },
+    {
+      "id": "maize",
+      "english": "maize",
+      "pos": "noun",
+      "also": [
+        "corn"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "maizium, maiziī n.",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "M-O"
+          ],
+          "comment": "Recorded in Morgan–Owens. This is an early modern Latin borrowing, not Classical vocabulary. The borrowing ultimately reflects Taíno through Spanish. Scientific name: <span lang=\"la\">Zea mays</span>. Botanical names are given in their conventional spelling. The source establishes the word, not all its stem vowel lengths. Only the certain Latin inflectional quantity is marked in <strong lang=\"la\">maiziī</strong>."
+        },
+        {
+          "latin": "maiza, maizae f.",
+          "status": "alternative",
+          "period": "modern",
+          "evidence": [
+            "M-O"
+          ],
+          "comment": "Another recorded modern form."
+        },
+        {
+          "latin": "frūmentum Indicum",
+          "status": "alternative",
+          "period": "renaissance",
+          "comment": "An attested descriptive alternative."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Spīcam maiziī tenēs.",
+          "english": "You’re holding an ear of corn.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "ear-of-grain",
+        "grain-kernel",
+        "grain-cereal",
+        "cornmeal",
+        "polenta",
+        "husk"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: Adumbratio</a>",
+        "The example sentence marked “composed” is ours."
+      ],
+      "replaces": [
+        "entry-8"
+      ]
+    },
+    {
+      "id": "ear-of-grain",
+      "english": "ear",
+      "sense": "of grain",
+      "pos": "noun",
+      "also": [
+        "ear of grain",
+        "ear of corn"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "spīca, spīcae f.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "ear of grain",
+          "comment": "Extended to maize."
+        }
+      ],
+      "related": [
+        "maize",
+        "grain-kernel"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: Adumbratio</a>"
+      ]
+    },
+    {
+      "id": "grain-kernel",
+      "english": "grain",
+      "sense": "a single seed",
+      "pos": "noun",
+      "also": [
+        "kernel"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "grānum, grānī n.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "grain or kernel"
+        }
+      ],
+      "related": [
+        "grain-cereal",
+        "seed",
+        "maize"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: Adumbratio</a>"
+      ]
+    },
+    {
+      "id": "grain-cereal",
+      "english": "grain",
+      "sense": "cereal crops collectively",
+      "pos": "noun",
+      "also": [
+        "cereal"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "frūmentum, frūmentī n.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "cereal grain collectively"
+        }
+      ],
+      "related": [
+        "grain-kernel",
+        "maize"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: Adumbratio</a>"
+      ]
+    },
+    {
+      "id": "cornmeal",
+      "english": "cornmeal",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "farīna Indica",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "M-O s.v. corn: cornmeal"
+          ]
+        },
+        {
+          "latin": "farīna ex maiziō",
+          "status": "alternative",
+          "period": "modern",
+          "evidence": [
+            "M-O s.v. corn: cornmeal"
+          ]
+        }
+      ],
+      "related": [
+        "maize",
+        "polenta"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: Adumbratio</a>"
+      ]
+    },
+    {
+      "id": "polenta",
+      "english": "polenta",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "puls Indica",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "M-O s.v. corn: grits, polenta"
+          ],
+          "comment": "Classical <span lang=\"la\">polenta</span> is barley groats (L&amp;S)."
+        },
+        {
+          "latin": "puls ex maiziō",
+          "status": "alternative",
+          "period": "modern",
+          "evidence": [
+            "M-O s.v. corn: grits, polenta"
+          ]
+        }
+      ],
+      "related": [
+        "maize",
+        "cornmeal"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: Adumbratio</a>"
+      ]
+    },
+    {
+      "id": "husk",
+      "english": "husk",
+      "pos": "noun",
+      "also": [
+        "corn husks",
+        "covering",
+        "glume",
+        "chaff"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "involūcrum, involūcrī n.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "wrapper, covering or envelope",
+          "comment": "English <em>involucre</em> derives from <strong lang=\"la\">involūcrum</strong>."
+        },
+        {
+          "latin": "folia maiziī",
+          "status": "alternative",
+          "period": "ours",
+          "gloss": "maize leaves",
+          "comment": "A transparent description of corn husks in this context."
+        },
+        {
+          "latin": "glūma, glūmae f.",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "husk or glume of grain",
+          "comment": "English <em>glume</em> derives from <strong lang=\"la\">glūma</strong>. Neither <strong lang=\"la\">glūma</strong> nor <strong lang=\"la\">palea</strong> necessarily means the leafy outer covering of a maize cob."
+        },
+        {
+          "latin": "palea, paleae f.",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "chaff or husk"
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Folia maiziī dētrahe.",
+          "english": "Pull off the corn husks.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "maize",
+        "leaf",
+        "peel"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/involucrum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: involucrum</a> · <a href=\"https://logeion.uchicago.edu/gluma\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gluma</a> · <a href=\"https://logeion.uchicago.edu/palea\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: palea</a>",
+        "The example sentence marked “composed” is ours."
+      ],
+      "replaces": [
+        "entry-9"
+      ]
+    },
+    {
+      "id": "leaf",
+      "english": "leaf",
+      "pos": "noun",
+      "also": [
+        "leaves"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "folium, foliī n.",
+          "status": "recommended",
+          "period": "classical",
+          "comment": "Plural <strong lang=\"la\">folia, foliōrum n. pl.</strong>, leaves."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Manipulum foliōrum adde.",
+          "english": "Add a handful of leaves.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "husk",
+        "spinach",
+        "baby-spinach"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/folium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: folium</a> · <a href=\"https://alatius.com/ls/index.php?l=folium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: folium</a>",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "peel",
+      "english": "peel",
+      "pos": "verb",
+      "also": [
+        "strip"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "dēglūbō, dēglūbere",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "peel or strip",
+          "comment": "Lewis &amp; Short does not supply a perfect or supine, so the earlier unsourced principal parts have been removed."
+        }
+      ],
+      "related": [
+        "husk"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/deglubo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: deglubo</a>"
+      ]
+    },
+    {
+      "id": "tomato",
+      "english": "tomato",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "lycopersicum, lycopersicī n.",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "M-O"
+          ],
+          "comment": "Recorded in Morgan–Owens with botanical and modern lexical references. <strong lang=\"la\">lycopersicum</strong> is a learned botanical formation. Scientific plant name: <span lang=\"la\">Solanum lycopersicum</span>."
+        },
+        {
+          "latin": "tomāta, tomātae f.",
+          "status": "alternative",
+          "period": "modern",
+          "evidence": [
+            "Helfer, cited in M-O"
+          ],
+          "comment": "An attested competing Neo-Latin form, cited in Morgan–Owens through Helfer. The <strong lang=\"la\">tomāta</strong> family ultimately reflects Nahuatl through Spanish."
+        },
+        {
+          "latin": "tomātum",
+          "status": "alternative",
+          "period": "modern",
+          "comment": "Not preferred here. The earlier assertion that scholarship had specifically discredited it has been removed: a preference is not proof that a competing form is wrong."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Lycopersicum secō.",
+          "english": "I’m cutting the tomato.",
+          "source": "composed"
+        }
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: Adumbratio</a>",
+        "The example sentence marked “composed” is ours."
+      ],
+      "replaces": [
+        "entry-10"
+      ]
+    },
+    {
+      "id": "cucumber",
+      "english": "cucumber",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "cucumis, cucumeris m.",
+          "status": "recommended",
+          "period": "classical",
+          "comment": "Ancient terminology need not map exactly onto a single modern species. The alternate stem <strong lang=\"la\">cucum-</strong> also occurs in ancient inflection; <strong lang=\"la\">cucumer</strong> is a later or variant dictionary form, not required for ordinary use here. English <em>cucumber</em> ultimately comes from Latin through French; the deeper origin of the Latin word is uncertain."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Cucumerem secō.",
+          "english": "I’m cutting the cucumber.",
+          "source": "composed"
+        },
+        {
+          "latin": "Cucumerem edis?",
+          "english": "Are you eating the cucumber?",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "cucumber-bed"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/cucumis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cucumis</a>",
+        "The example sentences marked “composed” are ours."
+      ],
+      "replaces": [
+        "entry-11"
+      ]
+    },
+    {
+      "id": "cucumber-bed",
+      "english": "cucumber bed",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "cucumerārium, cucumerāriī n.",
+          "status": "recommended",
+          "period": "late",
+          "gloss": "a cucumber bed"
+        }
+      ],
+      "related": [
+        "cucumber"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/cucumerarium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cucumerarium</a>"
+      ]
+    },
+    {
+      "id": "vitaminic",
+      "english": "vitaminic",
+      "pos": "adjective",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "vītamīnicus, vītamīnica, vītamīnicum",
+          "status": "recommended",
+          "period": "ours",
+          "gloss": "pertaining to vitamins",
+          "comment": "A transparent derivative, not claimed here to be corpus-verified."
+        }
+      ],
+      "related": [
+        "vitamin"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: Adumbratio</a> · <a href=\"https://latin-dictionary.net/definition/38972/vitaminum-vitamini\" rel=\"noopener noreferrer\" target=\"_blank\">Vitaminum: Calepinus Novus attribution</a>"
+      ]
+    },
+    {
+      "id": "multivitamin",
+      "english": "multivitamin",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "praeparātum plūra vītamīna continēns",
+          "status": "recommended",
+          "period": "ours",
+          "gloss": "a multivitamin preparation",
+          "comment": "An explicit description; the previous unsupported claim for <strong lang=\"la\">multivītamīnum</strong> has been withdrawn."
+        }
+      ],
+      "related": [
+        "vitamin"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: Adumbratio</a> · <a href=\"https://latin-dictionary.net/definition/38972/vitaminum-vitamini\" rel=\"noopener noreferrer\" target=\"_blank\">Vitaminum: Calepinus Novus attribution</a>"
+      ]
+    },
+    {
+      "id": "leaven",
+      "english": "leaven",
+      "pos": "noun",
+      "also": [
+        "ferment"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "fermentum, fermentī n.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "leaven or ferment"
+        }
+      ],
+      "related": [
+        "ferment",
+        "fermentation"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/fermentum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fermentum</a>"
+      ],
+      "replaces": [
+        "entry-13"
+      ]
+    },
+    {
+      "id": "ferment",
+      "english": "ferment",
+      "pos": "verb",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "fermentō, fermentāre, fermentāvī, fermentātum",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "cause to ferment or leaven",
+          "comment": "Intransitive fermentation can be expressed with the passive <strong lang=\"la\">fermentārī</strong>."
+        },
+        {
+          "latin": "fermentēscō, fermentēscere",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "begin to ferment or rise",
+          "evidence": [
+            "Pliny"
+          ],
+          "comment": "Ancient, attested in Pliny, not merely a later invention."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Lac fermentātur.",
+          "english": "The milk is fermenting.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "leaven",
+        "fermentation",
+        "turn-sour",
+        "begin-to-boil"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/fermento\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fermento</a> · <a href=\"https://logeion.uchicago.edu/fermentesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fermentesco</a>",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "fermentation",
+      "english": "fermentation",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "fermentātiō, fermentātiōnis f.",
+          "status": "recommended",
+          "period": "modern",
+          "gloss": "fermentation in scientific Latin",
+          "comment": "The ancient dictionary’s separately attested sense is “uniting”; its presence does not prove the modern biochemical meaning is Classical."
+        }
+      ],
+      "related": [
+        "ferment",
+        "leaven"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/fermentatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fermentatio</a>"
+      ]
+    },
+    {
+      "id": "begin-to-boil",
+      "english": "begin to boil",
+      "pos": "verb",
+      "also": [
+        "grow hot"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "fervēscō, fervēscere",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "begin to boil or grow hot",
+          "comment": "Not a precise synonym for microbial fermentation."
+        }
+      ],
+      "related": [
+        "ferment"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/fervesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fervesco</a>"
+      ]
+    },
+    {
+      "id": "turn-sour",
+      "english": "turn sour",
+      "pos": "verb",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "acēscō, acēscere, acuī",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "related": [
+        "ferment",
+        "yogurt"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/acesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: acesco</a>"
+      ]
+    },
+    {
+      "id": "yogurt",
+      "english": "yogurt",
+      "pos": "noun",
+      "also": [
+        "sour milk"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "jogurtum, jogurtī n.",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "M-O"
+          ],
+          "comment": "The formerly printed initial <strong lang=\"la\">ō</strong> was not supported by the checked source and is no longer asserted. The loanword’s stem quantities remain undetermined here; the genitive ending <strong lang=\"la\">-ī</strong> is certain."
+        },
+        {
+          "latin": "lac acidum",
+          "status": "alternative",
+          "period": "ours",
+          "gloss": "sour milk",
+          "comment": "A broader description."
+        },
+        {
+          "latin": "lac fermentātum",
+          "status": "alternative",
+          "period": "ours",
+          "gloss": "fermented milk",
+          "comment": "A broader description."
+        },
+        {
+          "latin": "lac coāctum",
+          "status": "alternative",
+          "period": "ours",
+          "gloss": "thickened or coagulated milk",
+          "comment": "A description of consistency."
+        },
+        {
+          "latin": "lac concrētum",
+          "status": "alternative",
+          "period": "ours",
+          "gloss": "thickened or coagulated milk",
+          "comment": "A description of consistency."
+        },
+        {
+          "latin": "oxygala, oxygalae f.",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "ancient sour-milk preparation",
+          "comment": "<strong lang=\"la\">oxygala, oxygalactis n.</strong> is also attested. Historical preparations and modern yogurt need not be identical."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Jogurtum edis?",
+          "english": "Are you eating yogurt?",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "rennet",
+        "ferment",
+        "turn-sour"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: Adumbratio</a> · <a href=\"https://logeion.uchicago.edu/oxygala\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: oxygala</a>",
+        "The example sentence marked “composed” is ours."
+      ],
+      "replaces": [
+        "entry-14"
+      ]
+    },
+    {
+      "id": "rennet",
+      "english": "rennet",
+      "pos": "noun",
+      "also": [
+        "coagulant"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "coāgulum, coāgulī n.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "rennet or coagulant",
+          "comment": "Also a curdled mass in some contexts."
+        }
+      ],
+      "related": [
+        "yogurt"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/coagulum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: coagulum</a>"
+      ]
+    },
+    {
+      "id": "reap",
+      "english": "reap",
+      "pos": "verb",
+      "also": [
+        "harvest"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "metō, metere, messuī, messum",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "frūgēs metere",
+          "english": "reap crops",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "harvest",
+        "reaper",
+        "harvest-grapes"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/meto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: meto</a>",
+        "The example sentence marked “composed” is ours."
+      ],
+      "replaces": [
+        "entry-15"
+      ]
+    },
+    {
+      "id": "harvest",
+      "english": "harvest",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "messis, messis f.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "harvest or reaping"
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "tempus messis",
+          "english": "harvest time",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "reap",
+        "grape-harvest"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/messis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: messis</a>",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "reaper",
+      "english": "reaper",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "messor, messōris m.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "related": [
+        "reap"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/messor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: messor</a>"
+      ]
+    },
+    {
+      "id": "grape-harvest",
+      "english": "grape harvest",
+      "pos": "noun",
+      "also": [
+        "vintage"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "vīndēmia, vīndēmiae f.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "grape harvest or vintage"
+        }
+      ],
+      "related": [
+        "harvest-grapes",
+        "harvest"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/vindemia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vindemia</a> · <a href=\"https://atlas.perseus.tufts.edu/dictionaries/entry/urn%3Acite2%3Ascaife-viewer%3Adictionaries.v1%3Aelementary-latin-n17376/\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis: vindemia</a>"
+      ]
+    },
+    {
+      "id": "harvest-grapes",
+      "english": "harvest grapes",
+      "pos": "verb",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "vīndēmiō, vīndēmiāre",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "related": [
+        "grape-harvest",
+        "reap"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/vindemio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vindemio</a>"
+      ]
+    },
+    {
+      "id": "fruit",
+      "english": "fruit",
+      "pos": "noun",
+      "also": [
+        "fruits"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "pōmum, pōmī n.",
+          "status": "recommended",
+          "period": "classical",
+          "comment": "Plural <strong lang=\"la\">pōma, pōmōrum n. pl.</strong>, fruits. This broad kitchen word includes apples and pears without requiring a separate technical botanical classification."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Pōma et holera lavēmus.",
+          "english": "Let’s wash the fruit and vegetables.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "vegetable",
+        "apple",
+        "pear"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=pomum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pomum</a>",
+        "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>",
+        "The example sentence marked “composed” is ours."
+      ],
+      "replaces": [
+        "entry-105",
+        "smoothie-105"
+      ]
+    },
+    {
+      "id": "vegetable",
+      "english": "vegetable",
+      "pos": "noun",
+      "also": [
+        "vegetables",
+        "greens",
+        "leafy greens"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "holus, holeris n.",
+          "status": "recommended",
+          "period": "classical",
+          "comment": "Plural <strong lang=\"la\">holera, holerum n. pl.</strong>, vegetables or greens."
+        }
+      ],
+      "related": [
+        "fruit",
+        "spinach"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=holus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: holus</a>"
+      ]
+    },
+    {
+      "id": "water",
+      "english": "water",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "aqua, aquae f.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=aqua\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aqua</a>"
+      ]
+    },
+    {
+      "id": "food",
+      "english": "food",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "cibus, cibī m.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "sources": [
+        "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>"
+      ]
+    },
+    {
+      "id": "recipe",
+      "english": "recipe",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "ratiō, ratiōnis f. parandī",
+          "status": "recommended",
+          "period": "ours",
+          "gloss": "method of preparation",
+          "comment": "Our contextual way to refer to a recipe."
+        }
+      ],
+      "sources": [
+        "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>"
+      ]
+    },
+    {
+      "id": "spinach",
+      "english": "spinach",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "spinacia, spinaciae f.",
+          "status": "recommended",
+          "period": "medieval",
+          "evidence": [
+            "Traupman 383",
+            "M-O"
+          ],
+          "comment": "The vegetable sense is medieval, despite an earlier similar plant name. Morgan–Owens explicitly questions the stem vowel lengths; unmarked stem vowels here are not a claim that all were demonstrably short. The regular Latin endings remain usable."
+        }
+      ],
+      "related": [
+        "baby-spinach",
+        "leaf",
+        "vegetable"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio: numbered food and kitchen sections</a>",
+        "John C. Traupman, Conversational Latin for Oral Proficiency, supplied PDF: printed pp. 70–73 (food and drink), 124 (refrigerator), 280 (blender), 358 (peanut butter), 383 (spinach). Printed page numbers are one less than PDF page numbers in this copy. The blender entry on printed p. 280 was also checked against its rendered page.",
+        "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>"
+      ],
+      "replaces": [
+        "entry-106",
+        "smoothie-106"
+      ]
+    },
+    {
+      "id": "baby-spinach",
+      "english": "baby spinach",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "folia tenera spinaciae",
+          "status": "recommended",
+          "period": "ours",
+          "gloss": "tender spinach leaves",
+          "comment": "Our descriptive wording for baby spinach."
+        }
+      ],
+      "related": [
+        "spinach",
+        "leaf"
+      ],
+      "sources": [
+        "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>"
+      ]
+    },
+    {
+      "id": "celery",
+      "english": "celery",
+      "pos": "noun",
+      "also": [
+        "celery stalk"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "apium, apiī n.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "M-O"
+          ],
+          "comment": "The ancient term also covered parsley in some contexts. Morgan–Owens uses <span lang=\"la\">apium</span> for celery."
+        },
+        {
+          "latin": "helēoselīnum, helēoselīnī n.",
+          "status": "alternative",
+          "period": "classical",
+          "evidence": [
+            "Traupman"
+          ],
+          "comment": "Traupman records it instead of <span lang=\"la\">apium</span>; it is retained as a documented alternative, not silently substituted for <span lang=\"la\">petroselīnum</span>."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Unum caulem apiī cape.",
+          "english": "Take one celery stalk.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "parsley",
+        "stalk"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio: numbered food and kitchen sections</a> · <a href=\"https://alatius.com/ls/index.php?l=apium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: apium</a>",
+        "John C. Traupman, Conversational Latin for Oral Proficiency, supplied PDF: printed pp. 70–73 (food and drink), 124 (refrigerator), 280 (blender), 358 (peanut butter), 383 (spinach). Printed page numbers are one less than PDF page numbers in this copy. The blender entry on printed p. 280 was also checked against its rendered page.",
+        "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>",
+        "The example sentence marked “composed” is ours."
+      ],
+      "replaces": [
+        "entry-107",
+        "smoothie-107"
+      ]
+    },
+    {
+      "id": "parsley",
+      "english": "parsley",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "petroselīnum, petroselīnī n.",
+          "status": "recommended",
+          "period": "classical",
+          "comment": "Preferred here when distinguishing it from celery."
+        }
+      ],
+      "related": [
+        "celery"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=petroselinum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: petroselinum</a>",
+        "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>"
+      ]
+    },
+    {
+      "id": "banana",
+      "english": "banana",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "banāna, banānae f.",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "Traupman 70",
+            "M-O"
+          ],
+          "comment": "An established modern borrowing recorded by both modern references. The long <strong lang=\"la\">ā</strong> follows Morgan–Owens’s marked forms."
+        },
+        {
+          "latin": "ariēna, ariēnae f.",
+          "status": "alternative",
+          "period": "modern",
+          "evidence": [
+            "Traupman 70",
+            "Pliny, N.H. 12.24: <span lang=\"la\">arborī nōmen palae, pōmō arienae</span>"
+          ],
+          "comment": "Traupman 70, alongside <span lang=\"la\">banāna</span>; from Pliny’s Indian fruit. No modern fruit sense is presented as Classical."
+        },
+        {
+          "latin": "mūsa, mūsae f.",
+          "status": "alternative",
+          "period": "medieval",
+          "evidence": [
+            "M-O s.v. banana"
+          ],
+          "comment": "Medieval, and Linnaeus’s genus name <span lang=\"la\">Musa</span>."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Banānam dēcorticēmus.",
+          "english": "Let’s peel the banana.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "kiwi",
+        "avocado"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio: numbered food and kitchen sections</a>",
+        "John C. Traupman, Conversational Latin for Oral Proficiency, supplied PDF: printed pp. 70–73 (food and drink), 124 (refrigerator), 280 (blender), 358 (peanut butter), 383 (spinach). Printed page numbers are one less than PDF page numbers in this copy. The blender entry on printed p. 280 was also checked against its rendered page.",
+        "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>",
+        "The example sentence marked “composed” is ours."
+      ],
+      "replaces": [
+        "entry-108",
+        "smoothie-108"
+      ]
+    },
+    {
+      "id": "kiwi",
+      "english": "kiwi",
+      "pos": "noun",
+      "also": [
+        "kiwifruit"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "kivium, kiviī n.",
+          "status": "recommended",
+          "period": "modern",
+          "gloss": "kiwifruit",
+          "evidence": [
+            "M-O, citing the Lexicon Recentis Latinitatis"
+          ],
+          "comment": "Recorded by Morgan–Owens with a Lexicon Recentis Latinitatis reference. That source does not establish the stem quantities of <strong lang=\"la\">kivium</strong>; only the certain genitive ending is marked."
+        }
+      ],
+      "related": [
+        "banana",
+        "avocado"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio: numbered food and kitchen sections</a>",
+        "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>"
+      ]
+    },
+    {
+      "id": "avocado",
+      "english": "avocado",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "avacātum, avacātī n.",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "M-O"
+          ],
+          "comment": "This is the <span lang=\"la\">avac-</span> spelling actually given by Morgan–Owens. The long <strong lang=\"la\">ā</strong> follows Morgan–Owens’s marked forms."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Dimidium avacātum adde.",
+          "english": "Add half an avocado.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "banana",
+        "kiwi"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio: numbered food and kitchen sections</a>",
+        "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "strawberry",
+      "english": "strawberry",
+      "pos": "noun",
+      "also": [
+        "strawberries"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "frāgum, frāgī n.",
+          "status": "recommended",
+          "period": "classical",
+          "comment": "Plural <strong lang=\"la\">frāga, frāgōrum n. pl.</strong>, strawberries. Ancient <span lang=\"la\">frāgum</span> referred to strawberries known to the ancients. Applying it to today’s cultivated garden strawberry is ordinary modern usage, not a claim that the modern hybrid existed in antiquity."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Frāga lavā et in catīnum pōne.",
+          "english": "Wash the strawberries and put them in the bowl.",
+          "source": "composed"
+        },
+        {
+          "latin": "Frāga congelāta",
+          "english": "frozen strawberries",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "berry",
+        "entry-25"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=fragum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fragum</a>",
+        "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>",
+        "The example sentences marked “composed” are ours."
+      ],
+      "replaces": [
+        "entry-109",
+        "smoothie-109"
+      ]
+    },
+    {
+      "id": "berry",
+      "english": "berry",
+      "pos": "noun",
+      "also": [
+        "berries"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "bacca, baccae f.",
+          "status": "recommended",
+          "period": "classical",
+          "comment": "A broad everyday word, not a strict modern botanical category."
+        },
+        {
+          "latin": "bāca, bācae f.",
+          "status": "alternative",
+          "period": "classical",
+          "comment": "The spelling is equally ancient (L&amp;S)."
+        }
+      ],
+      "related": [
+        "strawberry",
+        "dog-rose",
+        "entry-25"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=bacca\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: bacca</a>"
+      ]
+    },
+    {
+      "id": "carrot",
+      "english": "carrot",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "carōta, carōtae f.",
+          "status": "recommended",
+          "period": "post-classical",
+          "comment": "A Late Latin name. The carrot name is ancient but not specifically claimed as Ciceronian."
+        },
+        {
+          "latin": "pastināca, pastinācae f.",
+          "status": "alternative",
+          "period": "classical",
+          "comment": "Has a broader, sometimes uncertain plant identification."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Carōtam rāde.",
+          "english": "Grate the carrot.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "beetroot",
+        "pumpkin"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=carota\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: carota</a> · <a href=\"https://alatius.com/ls/index.php?l=pastinaca\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pastinaca</a>",
+        "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>",
+        "The example sentence marked “composed” is ours."
+      ],
+      "replaces": [
+        "entry-110",
+        "smoothie-110"
+      ]
+    },
+    {
+      "id": "beetroot",
+      "english": "beetroot",
+      "pos": "noun",
+      "also": [
+        "beet",
+        "red beet"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "bēta, bētae f.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "beet",
+          "comment": "<span lang=\"la\">Rādīx bētae</span> specifies the root."
+        },
+        {
+          "latin": "bēta rubra",
+          "status": "alternative",
+          "period": "ours",
+          "gloss": "red beet or beetroot"
+        }
+      ],
+      "related": [
+        "carrot"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=beta\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: beta</a> · <a href=\"https://alatius.com/ls/index.php?l=radix\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: radix</a>",
+        "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>"
+      ]
+    },
+    {
+      "id": "pumpkin",
+      "english": "pumpkin",
+      "pos": "noun",
+      "also": [
+        "squash"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "cucurbita, cucurbitae f.",
+          "status": "recommended",
+          "period": "modern",
+          "gloss": "pumpkin or squash",
+          "evidence": [
+            "Traupman 366"
+          ],
+          "comment": "A gourd; extended here to pumpkin or squash. The pumpkin sense of <span lang=\"la\">cucurbita</span> is a modern extension: the American species in these recipes differ from ancient gourds."
+        },
+        {
+          "latin": "pepō, pepōnis m.",
+          "status": "alternative",
+          "period": "modern",
+          "evidence": [
+            "Traupman 366"
+          ],
+          "comment": "Traupman’s alternative for pumpkin. Classically <span lang=\"la\">pepō</span> is a melon or large gourd; <strong lang=\"la\">cucurbita</strong> remains our primary word."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Cucurbitam coctam adde.",
+          "english": "Add the cooked pumpkin.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "melon",
+        "courgette"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=cucurbita\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cucurbita</a>",
+        "<a href=\"https://logeion.uchicago.edu/pepo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pepo</a>. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 366 (<span lang=\"la\">cucurbita, pepō</span>).",
+        "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "bell-pepper",
+      "english": "bell pepper",
+      "pos": "noun",
+      "also": [
+        "sweet pepper",
+        "red pepper"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "capsicum, capsicī n.",
+          "status": "recommended",
+          "period": "modern",
+          "gloss": "pepper of the genus Capsicum",
+          "comment": "A modern botanical/lexical term; the reference does not fix all its stem quantities."
+        },
+        {
+          "latin": "capsicum dulce",
+          "status": "alternative",
+          "period": "modern",
+          "gloss": "sweet or bell pepper",
+          "evidence": [
+            "M-O"
+          ]
+        },
+        {
+          "latin": "capsicum rubrum",
+          "status": "alternative",
+          "period": "ours",
+          "gloss": "red pepper"
+        },
+        {
+          "latin": "piperītis, piperītidis f.",
+          "status": "alternative",
+          "period": "modern",
+          "gloss": "bell pepper; the fresh pepper",
+          "evidence": [
+            "Traupman 71",
+            "Plīn. NH XX 174"
+          ],
+          "comment": "Used in the libellī: Traupman 71 applies it to the fresh Capsicum, and the series follows him (Epp. VI–VII). Ancient <span lang=\"la\">piperītis</span> (Pliny) names a different plant, a peppery cress or pepperwort (Plīn. NH XX 174)."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Capsicum rubrum secā et sēmina exime.",
+          "english": "Cut the red pepper and remove the seeds.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "pepper-spice",
+        "chilli-pepper",
+        "paprika"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio: numbered food and kitchen sections</a>",
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 71 (<span lang=\"la\">piperītis</span>), as cited in the libellī.",
+        "<a href=\"https://alatius.com/ls/index.php?l=piperitis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: piperitis</a>",
+        "John C. Traupman, Conversational Latin for Oral Proficiency, printed pp. 71–72.",
+        "Theodōrus et pater: Epp. VI–VII and Culīna Theodōrī.",
+        "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>",
+        "The example sentence marked “composed” is ours."
+      ],
+      "replaces": [
+        "entry-111",
+        "smoothie-111"
+      ]
+    },
+    {
+      "id": "pepper-spice",
+      "english": "pepper",
+      "sense": "the spice",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "piper, piperis n.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "pepper as the spice",
+          "comment": "Distinguish this from a sweet red pepper in the smoothie."
+        }
+      ],
+      "related": [
+        "bell-pepper"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=piper\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: piper</a>"
+      ]
+    },
+    {
+      "id": "chilli-pepper",
+      "english": "chilli pepper",
+      "pos": "noun",
+      "also": [
+        "chilli"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "capsicum fervidum",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "M-O"
+          ]
+        }
+      ],
+      "related": [
+        "bell-pepper",
+        "paprika"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio: numbered food and kitchen sections</a>"
+      ]
+    },
+    {
+      "id": "paprika",
+      "english": "paprika",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "capsicum Hungaricum contrītum",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "M-O"
+          ]
+        }
+      ],
+      "related": [
+        "bell-pepper",
+        "chilli-pepper"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio: numbered food and kitchen sections</a>"
+      ]
+    },
+    {
+      "id": "walnut",
+      "english": "walnut",
+      "pos": "noun",
+      "also": [
+        "walnut tree"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "jūglāns, jūglandis f.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "walnut; also the walnut tree",
+          "evidence": [
+            "Varro, LL 5.102",
+            "Pliny, NH 15.86, 15.91",
+            "Traupman"
+          ],
+          "comment": "Lewis &amp; Short: “a walnut; a walnut-tree”. The long ā in the nominative follows Traupman; it is not carried into the oblique stem. Varro, LL 5.102 derives the name from Jupiter’s acorn: <span lang=\"la\">ā Jove et glande jūglāns est appellāta</span>. Pliny, NH 15.86 and 15.91: <strong lang=\"la\">nucēs jūglandēs</strong>, with the green husk (<strong lang=\"la\">calyx, calycis m.</strong>) and the woody shell (<strong lang=\"la\">putāmen, putāminis n.</strong>)."
+        }
+      ],
+      "related": [
+        "nut-fruit",
+        "almond",
+        "peanut",
+        "entry-121"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=juglans\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: juglans</a> · <a href=\"https://alatius.com/ls/index.php?l=calyx\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: calyx</a> · <a href=\"https://alatius.com/ls/index.php?l=putamen\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: putamen</a>",
+        "John C. Traupman, Conversational Latin for Oral Proficiency, supplied PDF: printed pp. 70–73 (food and drink), 124 (refrigerator), 280 (blender), 358 (peanut butter), 383 (spinach). Printed page numbers are one less than PDF page numbers in this copy. The blender entry on printed p. 280 was also checked against its rendered page.",
+        "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>"
+      ],
+      "replaces": [
+        "entry-112",
+        "smoothie-112"
+      ]
+    },
+    {
+      "id": "nut-fruit",
+      "english": "nut",
+      "sense": "the fruit",
+      "pos": "noun",
+      "also": [
+        "nuts"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "nux, nucis f.",
+          "status": "recommended",
+          "period": "classical",
+          "comment": "Plural <strong lang=\"la\">nucēs, nucum f. pl.</strong>, nuts."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Nucēs omnīnō conterāmus.",
+          "english": "Let’s grind the nuts completely.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "walnut",
+        "almond",
+        "peanut"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=nux\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nux</a>",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "almond",
+      "english": "almond",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "amygdalum, amygdalī n.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman"
+          ],
+          "comment": "Both noun forms are documented."
+        },
+        {
+          "latin": "amygdala, amygdalae f.",
+          "status": "alternative",
+          "period": "classical",
+          "evidence": [
+            "M-O"
+          ]
+        }
+      ],
+      "related": [
+        "nut-fruit",
+        "walnut"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio: numbered food and kitchen sections</a> · <a href=\"https://alatius.com/ls/index.php?l=amygdalum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: amygdalum</a> · <a href=\"https://alatius.com/ls/index.php?l=amygdala\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: amygdala</a>",
+        "John C. Traupman, Conversational Latin for Oral Proficiency, supplied PDF: printed pp. 70–73 (food and drink), 124 (refrigerator), 280 (blender), 358 (peanut butter), 383 (spinach). Printed page numbers are one less than PDF page numbers in this copy. The blender entry on printed p. 280 was also checked against its rendered page."
+      ]
+    },
+    {
+      "id": "peanut",
+      "english": "peanut",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "arachis, arachidis f.",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "Traupman"
+          ],
+          "comment": "A modern botanical application, not an ancient American food name. The peanut loan’s stem quantities are not established here."
+        }
+      ],
+      "related": [
+        "nut-fruit"
+      ],
+      "sources": [
+        "John C. Traupman, Conversational Latin for Oral Proficiency, supplied PDF: printed pp. 70–73 (food and drink), 124 (refrigerator), 280 (blender), 358 (peanut butter), 383 (spinach). Printed page numbers are one less than PDF page numbers in this copy. The blender entry on printed p. 280 was also checked against its rendered page.",
+        "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>"
+      ]
+    },
+    {
+      "id": "flaxseed",
+      "english": "flaxseed",
+      "pos": "noun",
+      "also": [
+        "linseed"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "sēmen līnī",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "flaxseed or linseed"
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "sēmen līnī trītum",
+          "english": "ground flaxseed",
+          "source": "composed"
+        },
+        {
+          "latin": "Unum cochlear sēminis līnī trītī adde.",
+          "english": "Add one spoonful of ground flaxseed.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "flax",
+        "seed",
+        "sesame"
+      ],
+      "sources": [
+        "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>",
+        "The example sentences marked “composed” are ours."
+      ],
+      "replaces": [
+        "entry-113",
+        "smoothie-113"
+      ]
+    },
+    {
+      "id": "flax",
+      "english": "flax",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "līnum, līnī n.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "related": [
+        "flaxseed"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=linum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: linum</a>"
+      ]
+    },
+    {
+      "id": "sesame",
+      "english": "sesame",
+      "pos": "noun",
+      "also": [
+        "sesame seed"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "sēsamum, sēsamī n.",
+          "status": "recommended",
+          "period": "classical"
+        },
+        {
+          "latin": "sēmen sēsamī",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "sesame seed"
+        }
+      ],
+      "related": [
+        "tahini",
+        "flaxseed"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=sesamum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sesamum</a>"
+      ]
+    },
+    {
+      "id": "tahini",
+      "english": "tahini",
+      "pos": "noun",
+      "also": [
+        "sesame butter"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "būtȳrum sēsamī",
+          "status": "recommended",
+          "period": "modern",
+          "gloss": "tahini or sesame butter",
+          "evidence": [
+            "M-O"
+          ],
+          "comment": "A modern expression recorded in Morgan–Owens; it does not imply dairy butter is an ingredient. <strong lang=\"la\">būtȳrum</strong> is written with long <strong lang=\"la\">ȳ</strong> (βούτῡρον); Lewis &amp; Short also records the short-y form <span lang=\"la\">būtyrum</span>."
+        }
+      ],
+      "related": [
+        "sesame"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio: numbered food and kitchen sections</a> · <a href=\"https://alatius.com/ls/index.php?l=butyrum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: butyrum</a>",
+        "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>"
+      ]
+    },
+    {
+      "id": "lemon",
+      "english": "lemon",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "citreum, citreī n.",
+          "status": "recommended",
+          "period": "modern",
+          "gloss": "lemon in modern use",
+          "evidence": [
+            "Traupman",
+            "M-O"
+          ],
+          "comment": "Ancient uses commonly referred to the citron. Traupman records <span lang=\"la\">citreum</span> for lemon. Morgan–Owens distinguishes its ancient citron reference from the later lemon use."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "sūcus citreī",
+          "english": "lemon juice",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "lemon-tree"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio: numbered food and kitchen sections</a> · <a href=\"https://alatius.com/ls/index.php?l=citreum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: citreum</a>",
+        "John C. Traupman, Conversational Latin for Oral Proficiency, supplied PDF: printed pp. 70–73 (food and drink), 124 (refrigerator), 280 (blender), 358 (peanut butter), 383 (spinach). Printed page numbers are one less than PDF page numbers in this copy. The blender entry on printed p. 280 was also checked against its rendered page.",
+        "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>",
+        "The example sentence marked “composed” is ours."
+      ],
+      "replaces": [
+        "entry-114",
+        "smoothie-114"
+      ]
+    },
+    {
+      "id": "basil",
+      "english": "basil",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "ōcimum, ōcimī n.",
+          "status": "recommended",
+          "period": "classical",
+          "comment": "The herbs and spices have ancient lexical names, without requiring every ancient species identification to equal a modern supermarket label."
+        }
+      ],
+      "related": [
+        "dill"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=ocimum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ocimum</a>"
+      ]
+    },
+    {
+      "id": "dill",
+      "english": "dill",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "anēthum, anēthī n.",
+          "status": "recommended",
+          "period": "classical",
+          "comment": "The herbs and spices have ancient lexical names, without requiring every ancient species identification to equal a modern supermarket label."
+        }
+      ],
+      "related": [
+        "basil"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=anethum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: anethum</a>"
+      ]
+    },
+    {
+      "id": "cinnamon",
+      "english": "cinnamon",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "cinnamōmum, cinnamōmī n.",
+          "status": "recommended",
+          "period": "classical",
+          "comment": "The herbs and spices have ancient lexical names, without requiring every ancient species identification to equal a modern supermarket label."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Paulum cinnamōmī adde.",
+          "english": "Add a little cinnamon.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "ginger"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=cinnamomum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cinnamomum</a>",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "ginger",
+      "english": "ginger",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "zingiber, zingiberis n.",
+          "status": "recommended",
+          "period": "classical",
+          "comment": "Use the full noun form when making case endings. Ancient dictionaries also record other forms. The herbs and spices have ancient lexical names, without requiring every ancient species identification to equal a modern supermarket label."
+        }
+      ],
+      "related": [
+        "cinnamon"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=zingiber\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: zingiber</a>"
+      ]
+    },
+    {
+      "id": "pea",
+      "english": "pea",
+      "pos": "noun",
+      "also": [
+        "peas",
+        "green peas"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "pīsum, pīsī n.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Columella II 10, 4",
+            "Plīn. NH XVIII 123"
+          ],
+          "comment": "Lewis &amp; Short marks the ī long (late collateral <span lang=\"la\">pīsa, pīsae f.</span>), and French <em>pois</em> continues the long vowel."
+        },
+        {
+          "latin": "pīsa viridia",
+          "status": "alternative",
+          "period": "ours",
+          "gloss": "green peas",
+          "comment": "Our phrase for the shelled table vegetable."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Pīsa ē siliquīs exprimāmus.",
+          "english": "Let’s pop the peas out of their pods.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "bean",
+        "broad-bean",
+        "lentil",
+        "chickpea",
+        "pod",
+        "pulses"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=pisum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pisum</a>",
+        "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/food-vocabulary-bulgaria-and-fabulae.md\">Food vocabulary: source notes</a>",
+        "The example sentence marked “composed” is ours."
+      ],
+      "replaces": [
+        "entry-190",
+        "food-190"
+      ]
+    },
+    {
+      "id": "bean",
+      "english": "bean",
+      "pos": "noun",
+      "also": [
+        "beans"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "phasēlus, phasēlī m.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "the pod bean",
+          "evidence": [
+            "Verg. G. I 227: <span lang=\"la\">vīlemque phasēlum</span>",
+            "Columella X 377"
+          ],
+          "comment": "The modern green and kidney beans are an American species that inherited the ancient name (<span lang=\"la\">Phaseolus vulgaris</span>, Linn.); Ep. VII uses <span lang=\"la\">phasēlī</span> of Baba’s garden. The bean words divide cleanly: <span lang=\"la\">faba</span> is the ancient broad bean, <span lang=\"la\">phasēlus</span> the pod bean whose name the American <span lang=\"la\">Phaseolus</span> inherited, <span lang=\"la\">pīsum</span> the pea."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Jūs ē phasēlīs coquitur.",
+          "english": "Bean soup is cooking.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "broad-bean",
+        "pea",
+        "pulses"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=phaselus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: phaselus</a>",
+        "Theodōrus et pater: Ep. III (cicer in the cēna rūstica, with the gloss legūmen rotundum), Ep. IV (lēns, faba, cicer in the cella penāria), Ep. VII (phasēlī in Baba’s garden).",
+        "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/food-vocabulary-bulgaria-and-fabulae.md\">Food vocabulary: source notes</a>",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "broad-bean",
+      "english": "broad bean",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "faba, fabae f.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "the broad bean, the ancient staple bean",
+          "evidence": [
+            "Catō Agr. 35, 1",
+            "Plīn. NH XVIII 117"
+          ],
+          "comment": "In the market stores of Ep. IV."
+        }
+      ],
+      "related": [
+        "bean",
+        "pea"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=faba\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: faba</a>",
+        "Theodōrus et pater: Ep. III (cicer in the cēna rūstica, with the gloss legūmen rotundum), Ep. IV (lēns, faba, cicer in the cella penāria), Ep. VII (phasēlī in Baba’s garden)."
+      ]
+    },
+    {
+      "id": "lentil",
+      "english": "lentil",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "lēns, lentis f.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Plīn. NH XVIII 123"
+          ],
+          "comment": "Catō writes the accusative <span lang=\"la\">lentim</span> (Agr. 35). Also Ep. IV."
+        }
+      ],
+      "related": [
+        "pulses",
+        "pea"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=lens\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lens</a>",
+        "Theodōrus et pater: Ep. III (cicer in the cēna rūstica, with the gloss legūmen rotundum), Ep. IV (lēns, faba, cicer in the cella penāria), Ep. VII (phasēlī in Baba’s garden)."
+      ]
+    },
+    {
+      "id": "chickpea",
+      "english": "chickpea",
+      "pos": "noun",
+      "also": [
+        "chickpeas"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "cicer, ciceris n.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Hor. S. I 6, 115: <span lang=\"la\">ad porrī et ciceris … catīnum</span>"
+          ],
+          "comment": "The <span lang=\"la\">cēna rūstica</span> of Ep. III."
+        }
+      ],
+      "related": [
+        "pulses",
+        "leek"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=cicer\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cicer</a>",
+        "Theodōrus et pater: Ep. III (cicer in the cēna rūstica, with the gloss legūmen rotundum), Ep. IV (lēns, faba, cicer in the cella penāria), Ep. VII (phasēlī in Baba’s garden)."
+      ]
+    },
+    {
+      "id": "pod",
+      "english": "pod",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "siliqua, siliquae f.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Varr. RR I 23, 3",
+            "Verg. G. I 74"
+          ],
+          "comment": "The plural <span lang=\"la\">siliquae</span> is pulse in general (Hor. Ep. II 1, 123)."
+        }
+      ],
+      "related": [
+        "pea",
+        "pulses"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=siliqua\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: siliqua</a>"
+      ]
+    },
+    {
+      "id": "pulses",
+      "english": "pulses",
+      "pos": "noun",
+      "also": [
+        "pulse",
+        "leguminous plant"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "legūmen, legūminis n.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "any pulse or leguminous plant",
+          "evidence": [
+            "Cic. ND II 156"
+          ],
+          "comment": "Already the Ep. III gloss for <span lang=\"la\">cicer</span>."
+        }
+      ],
+      "related": [
+        "pea",
+        "bean",
+        "lentil",
+        "chickpea",
+        "pod"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=legumen\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: legumen</a>",
+        "Theodōrus et pater: Ep. III (cicer in the cēna rūstica, with the gloss legūmen rotundum), Ep. IV (lēns, faba, cicer in the cella penāria), Ep. VII (phasēlī in Baba’s garden)."
+      ]
+    },
+    {
+      "id": "onion",
+      "english": "onion",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "caepa, caepae f.",
+          "status": "recommended",
+          "period": "classical",
+          "comment": "Also spelled <span lang=\"la\">cēpa</span>, with a neuter by-form <span lang=\"la\">caepe</span>; the series’ spelling is <span lang=\"la\">caepa</span> (Ep. VII). cf. Vulg. Num. 11, 5, where Israel remembers the <span lang=\"la\">cucumerēs, pepōnēs, porrī</span> and <span lang=\"la\">cēpae</span> of Egypt (cited at Lewis &amp; Short, pepo)."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Baba in hortō phasēlōs, caepās, cucumerēs colit.",
+          "english": "Baba grows beans, onions and cucumbers in the garden (after Ep. VII).",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "leek",
+        "garlic"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=caepa\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: caepa</a>",
+        "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/food-vocabulary-bulgaria-and-fabulae.md\">Food vocabulary: source notes</a>",
+        "Theodōrus et pater: Epp. VI–VII and Culīna Theodōrī.",
+        "The example sentence marked “composed” is ours."
+      ],
+      "replaces": [
+        "entry-191",
+        "food-191"
+      ]
+    },
+    {
+      "id": "leek",
+      "english": "leek",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "porrum, porrī n.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Plīn. NH XIX 108",
+            "Hor. S. I 6, 115"
+          ],
+          "comment": "Horace’s supper of leeks and chickpeas, S. I 6, 115."
+        }
+      ],
+      "related": [
+        "onion",
+        "chickpea"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=porrum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: porrum</a>"
+      ]
+    },
+    {
+      "id": "cabbage",
+      "english": "cabbage",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "brassica, brassicae f.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Catō Agr. 156, 1: <span lang=\"la\">brassica est quae omnibus holeribus antistat</span> (ūsus: Ep. III, Culīna)"
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "in mēnsīs holitōriīs brassicae, porrī, carōtae, lactūcae, fungī",
+          "english": "on the vegetable stalls, cabbages, leeks, carrots, lettuces, mushrooms",
+          "source": "Libellus IV, <span lang=\"la\">Diēs Grātulātiōnis</span>"
+        },
+        {
+          "latin": "epitonium ipse vertēbat brassicamque lavābat",
+          "english": "he turned the tap on himself and washed the cabbage",
+          "source": "Libellus III, <span lang=\"la\">Apud avum et aviam</span>"
+        }
+      ],
+      "related": [
+        "sauerkraut",
+        "kale"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=brassica\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: brassica</a>",
+        "Catō Agr. 156, 1 and 7, 4, checked against the project’s Catō loci table.",
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+      ]
+    },
+    {
+      "id": "sauerkraut",
+      "english": "sauerkraut",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "brassica muriā condīta",
+          "status": "recommended",
+          "period": "ours",
+          "evidence": [
+            "Catō Agr. 7, 4: <span lang=\"la\">conduntur … viridēs in muriā</span>"
+          ],
+          "comment": "Our phrase after Catō’s brined olives."
+        }
+      ],
+      "related": [
+        "cabbage"
+      ],
+      "sources": [
+        "Catō Agr. 156, 1 and 7, 4, checked against the project’s Catō loci table."
+      ]
+    },
+    {
+      "id": "courgette",
+      "english": "courgette",
+      "pos": "noun",
+      "also": [
+        "zucchini"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "cucurbitula, cucurbitulae f.",
+          "status": "recommended",
+          "period": "ours",
+          "comment": "The <span lang=\"la\">Culīna</span>’s diminutive of <span lang=\"la\">cucurbita</span>. The attested classical senses are a wild gourd and Celsus’s cupping-glass (Cels. II 11), so the vegetable sense is our extension."
+        }
+      ],
+      "related": [
+        "pumpkin"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=cucurbitula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cucurbitula</a>",
+        "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/food-vocabulary-bulgaria-and-fabulae.md\">Food vocabulary: source notes</a>",
+        "Theodōrus et pater: Epp. VI–VII and Culīna Theodōrī."
+      ]
+    },
+    {
+      "id": "eggplant",
+      "english": "eggplant",
+      "pos": "noun",
+      "also": [
+        "aubergine"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "melongēna, melongēnae f.",
+          "status": "recommended",
+          "period": "medieval",
+          "comment": "A medieval word from Arabic, kept in the botanical name <span lang=\"la\">Solanum melongena</span>; Ep. VI (<span lang=\"la\">pitta cum melongēnīs</span>)."
+        }
+      ],
+      "related": [
+        "potato"
+      ],
+      "sources": [
+        "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/food-vocabulary-bulgaria-and-fabulae.md\">Food vocabulary: source notes</a>",
+        "Theodōrus et pater: Epp. VI–VII and Culīna Theodōrī."
+      ]
+    },
+    {
+      "id": "potato",
+      "english": "potato",
+      "pos": "noun",
+      "also": [
+        "potatoes"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "pōmum terrestre",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "Traupman 72"
+          ],
+          "comment": "Plural <strong lang=\"la\">pōma terrestria</strong>, potatoes. Traupman’s <span lang=\"la\">pulticula ex pōmīs terrestribus</span> is mashed potatoes (ūsus: Culīna). The potato, the eggplant and the sweet pepper are modern crops wearing borrowed names."
+        }
+      ],
+      "related": [
+        "eggplant"
+      ],
+      "sources": [
+        "John C. Traupman, Conversational Latin for Oral Proficiency, printed pp. 71–72.",
+        "Theodōrus et pater: Epp. VI–VII and Culīna Theodōrī."
+      ]
+    },
+    {
+      "id": "garlic",
+      "english": "garlic",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "ālium, āliī n.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 71"
+          ],
+          "comment": "ā with Lewis &amp; Short and de Vaan."
+        }
+      ],
+      "related": [
+        "onion"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/alium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: alium</a>",
+        "John C. Traupman, Conversational Latin for Oral Proficiency, printed pp. 71–72."
+      ]
+    },
+    {
+      "id": "lettuce",
+      "english": "lettuce",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "lactūca, lactūcae f.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 71"
+          ]
+        }
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/lactuca\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lactuca</a>",
+        "John C. Traupman, Conversational Latin for Oral Proficiency, printed pp. 71–72."
+      ]
+    },
+    {
+      "id": "radish",
+      "english": "radish",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "rādīcula, rādīculae f.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 72"
+          ]
+        }
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/radicula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: radicula</a>",
+        "John C. Traupman, Conversational Latin for Oral Proficiency, printed pp. 71–72."
+      ]
+    },
+    {
+      "id": "mushroom",
+      "english": "mushroom",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "fungus, fungī m.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 72"
+          ]
+        }
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/fungus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fungus</a>",
+        "John C. Traupman, Conversational Latin for Oral Proficiency, printed pp. 71–72."
+      ]
+    },
+    {
+      "id": "artichoke",
+      "english": "artichoke",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "cinara, cinarae f.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 70"
+          ]
+        }
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/cinara\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cinara</a>"
+      ]
+    },
+    {
+      "id": "kale",
+      "english": "kale",
+      "pos": "noun",
+      "also": [
+        "cabbage stalk"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "caulis, caulis m.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "cabbage stalk, kale"
+        }
+      ],
+      "related": [
+        "cabbage",
+        "stalk"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=caulis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: caulis</a>"
+      ]
+    },
+    {
+      "id": "cherry",
+      "english": "cherry",
+      "pos": "noun",
+      "also": [
+        "cherries"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "cerasum, cerasī n.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Cels. II 24"
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Cerasa Jūniō mātūrēscunt, Persica Augustō.",
+          "english": "Cherries ripen in June, peaches in August.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "cherry-tree",
+        "peach"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=cerasus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cerasus</a>",
+        "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/food-vocabulary-bulgaria-and-fabulae.md\">Food vocabulary: source notes</a>",
+        "The example sentence marked “composed” is ours."
+      ],
+      "replaces": [
+        "entry-192",
+        "food-192"
+      ]
+    },
+    {
+      "id": "cherry-tree",
+      "english": "cherry tree",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "cerasus, cerasī f.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Plīn. NH XV 102",
+            "Varr. RR I 39, 2"
+          ],
+          "comment": "Lucullus brought it to Italy from <span lang=\"la\">Cerasūs</span> in Pontus (Plīn. NH XV 102; Varr. RR I 39, 2) — a name-story that can be told as true."
+        }
+      ],
+      "related": [
+        "cherry",
+        "apple-tree"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/cerasus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cerasus</a>"
+      ]
+    },
+    {
+      "id": "peach",
+      "english": "peach",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "Persicum, Persicī n.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Plīn. NH XV 42",
+            "Mart. XIII 46"
+          ],
+          "comment": "The “Persian apple” (<span lang=\"la\">mālum Persicum</span>). The tree is <span lang=\"la\">Persica, Persicae f.</span>."
+        }
+      ],
+      "related": [
+        "apricot",
+        "cherry"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=Persae\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: Persae (Persicum)</a>"
+      ]
+    },
+    {
+      "id": "apricot",
+      "english": "apricot",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "Armeniacum, Armeniacī n.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Columella V 10, 19"
+          ],
+          "comment": "The “Armenian apple” (<span lang=\"la\">mālum Armeniacum</span>). The tree is <span lang=\"la\">Armeniaca</span> (Plīn. NH XV 41)."
+        }
+      ],
+      "related": [
+        "peach"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=Armenia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: Armenia (Armeniacum)</a>"
+      ]
+    },
+    {
+      "id": "quince",
+      "english": "quince",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "cydōnium, cydōniī n.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Varr. RR I 59",
+            "Plīn. NH XV 37"
+          ],
+          "comment": "Plural <span lang=\"la\">cydōnia</span>. <span lang=\"la\">mālum cydōnium</span>, the apple of <span lang=\"la\">Cydōnia</span> in Crete; the Latinized spelling is <span lang=\"la\">cotōnea</span>."
+        }
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=Cydonia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: Cydonia (cydonia)</a>"
+      ]
+    },
+    {
+      "id": "melon",
+      "english": "melon",
+      "pos": "noun",
+      "also": [
+        "sweet melon"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "pepō, peponis m.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "sweet melon",
+          "evidence": [
+            "Plīn. NH XIX 65",
+            "Vulg. Num. 11, 5"
+          ],
+          "comment": "The Greek oblique stem (πέπων, -ονος) keeps its o short."
+        },
+        {
+          "latin": "mēlopepō, mēlopeponis m.",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "the apple-shaped melon",
+          "evidence": [
+            "Plīn. NH XIX 67"
+          ],
+          "notes": [
+            "melopepo"
+          ]
+        },
+        {
+          "latin": "mēlo, mēlōnis m.",
+          "status": "alternative",
+          "period": "post-classical",
+          "evidence": [
+            "Pallad. IV 9, 6"
+          ],
+          "comment": "The late shortening of <span lang=\"la\">mēlopepō</span>, the ancestor of the modern melon-words."
+        }
+      ],
+      "notes": {
+        "melopepo": {
+          "form": "mēlopepō, mēlopeponis",
+          "claim": "short o in the oblique stem",
+          "against": "Lewis &amp; Short <span lang=\"la\">mēlopepo, -ōnis</span>",
+          "html": "The shared Greek stem πέπων, -ονος; Lewis &amp; Short itself prints <span lang=\"la\">pepo, -ŏnis</span>."
+        }
+      },
+      "related": [
+        "watermelon",
+        "pumpkin"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=pepo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pepo</a> · <a href=\"https://alatius.com/ls/index.php?l=melopepo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: melopepo</a> · <a href=\"https://alatius.com/ls/index.php?l=melo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: melo</a>",
+        "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/food-vocabulary-bulgaria-and-fabulae.md\">Food vocabulary: source notes</a>"
+      ]
+    },
+    {
+      "id": "watermelon",
+      "english": "watermelon",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "citrullus, citrullī m.",
+          "status": "recommended",
+          "period": "medieval",
+          "comment": "Not ancient — a medieval word kept in the botanical name <span lang=\"la\">Citrullus lanatus</span>. Stem quantities are conventional, not attested."
+        }
+      ],
+      "related": [
+        "melon"
+      ],
+      "sources": [
+        "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/food-vocabulary-bulgaria-and-fabulae.md\">Food vocabulary: source notes</a>"
+      ]
+    },
+    {
+      "id": "chestnut",
+      "english": "chestnut",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "castanea, castaneae f.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Verg. Ecl. II 52: <span lang=\"la\">castaneāsque nucēs</span>"
+          ],
+          "comment": "Roasted as <span lang=\"la\">castaneae tostae</span> in the <span lang=\"la\">Culīna</span>, after the Conimbriga market of Ep. IV."
+        }
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=castanea\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: castanea</a>",
+        "Theodōrus et pater: Ep. IV (the Conimbriga market), Culīna Theodōrī (Castaneae tostae)."
+      ]
+    },
+    {
+      "id": "fog",
+      "english": "fog",
+      "pos": "noun",
+      "also": [
+        "mist"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "nebula, nebulae f.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "fog, mist",
+          "evidence": [
+            "Traupman XV"
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "nebulam dissipāre",
+          "english": "disperse the fog",
+          "source": "composed"
+        },
+        {
+          "latin": "«Nōn est nix,» inquit, «sed nebula.»",
+          "english": "“It isn’t snow,” he said, “it’s fog.”",
+          "source": "Libellus II, <span lang=\"la\">Sintra: castellum et puteus</span>"
+        },
+        {
+          "latin": "Mox sōl eam excitābit et abīre jubēbit",
+          "english": "Soon the sun will wake it and send it away",
+          "source": "Libellus II, <span lang=\"la\">Sintra: castellum et puteus</span>"
+        }
+      ],
+      "related": [
+        "snow",
+        "cloud"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/nebula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nebula</a>",
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: pp. 132–137, checked against the searchable text of the book on 29 October 2026.",
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+        "The example sentence marked “composed” is ours."
+      ],
+      "replaces": [
+        "entry-197",
+        "libelli-197"
+      ]
+    },
+    {
+      "id": "snow",
+      "english": "snow",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "nix, nivis f.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Tata, spectā! Nix est! Omnia nive tēcta sunt!",
+          "english": "Dad, look! It’s snow! Everything is covered in snow!",
+          "source": "Libellus II, <span lang=\"la\">Sintra: castellum et puteus</span>"
+        }
+      ],
+      "related": [
+        "snow-verb",
+        "snowy",
+        "fog"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/nix\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nix</a>",
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+      ]
+    },
+    {
+      "id": "snow-verb",
+      "english": "snow",
+      "sense": "it snows",
+      "pos": "verb",
+      "also": [
+        "it is snowing",
+        "snowing"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "ningit",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "it is snowing",
+          "evidence": [
+            "Traupman 132"
+          ]
+        }
+      ],
+      "related": [
+        "snow"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/ningo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ningo</a>",
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: pp. 132–137, checked against the searchable text of the book on 29 October 2026."
+      ]
+    },
+    {
+      "id": "snowy",
+      "english": "snowy",
+      "pos": "adjective",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "nivālis, nivāle",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 136"
+          ]
+        }
+      ],
+      "related": [
+        "snow"
+      ],
+      "sources": [
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: pp. 132–137, checked against the searchable text of the book on 29 October 2026."
+      ]
+    },
+    {
+      "id": "rain",
+      "english": "rain",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "pluvia, pluviae f.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "related": [
+        "rain-verb",
+        "cloud"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/pluo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pluo</a>"
+      ]
+    },
+    {
+      "id": "rain-verb",
+      "english": "rain",
+      "sense": "it rains",
+      "pos": "verb",
+      "also": [
+        "it is raining",
+        "raining"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "pluit",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "it is raining"
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Pluet igitur; ita cornīx dīcit.",
+          "english": "So it will rain; the crow says so.",
+          "source": "Libellus VII, <span lang=\"la\">Diēs ūnus Osoitsae</span>"
+        }
+      ],
+      "related": [
+        "rain"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/pluo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pluo</a>",
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+      ]
+    },
+    {
+      "id": "cloud",
+      "english": "cloud",
+      "pos": "noun",
+      "also": [
+        "clouds"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "nūbēs, nūbis f.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "caelum cānum",
+          "english": "a grey sky",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "rain",
+        "fog"
+      ],
+      "sources": [
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "wind",
+      "english": "wind",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "ventus, ventī m.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "ventus flat",
+          "english": "the wind is blowing",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "west-wind"
+      ],
+      "sources": [
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "west-wind",
+      "english": "west wind",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "Favōnius, Favōniī m.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "L&amp;S"
+          ]
+        }
+      ],
+      "related": [
+        "wind"
+      ],
+      "sources": [
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+      ]
+    },
+    {
+      "id": "frost",
+      "english": "frost",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "gelū, gelūs n.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 135"
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "rigēre gelū",
+          "english": "be stiff with frost",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "ice"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/gelu\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gelu</a>",
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: pp. 132–137, checked against the searchable text of the book on 29 October 2026.",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "ice",
+      "english": "ice",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "glaciēs, glaciēī f.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "related": [
+        "frost"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/glacies\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: glacies</a>"
+      ]
+    },
+    {
+      "id": "parasol",
+      "english": "parasol",
+      "pos": "noun",
+      "also": [
+        "sunshade",
+        "umbrella"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "umbella, umbellae f.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "sunshade, parasol",
+          "evidence": [
+            "L&amp;S"
+          ],
+          "comment": "Libellus V compares the jellyfish to avus’s parachute: <span lang=\"la\">umbellae sunt, ave, sīcut tua in polō erat</span>."
+        }
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/umbella\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: umbella</a>",
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+      ]
+    },
+    {
+      "id": "summer",
+      "english": "summer",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "aestās, aestātis f.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "aestāte",
+          "english": "in summer (ablative of time)",
+          "source": "composed"
+        },
+        {
+          "latin": "aestāte exeunte",
+          "english": "at the end of summer",
+          "source": "composed"
+        },
+        {
+          "latin": "Mōra nunc nōn sunt. — Cūr nōn sunt? Quandō erunt? — Aestāte exeunte, mēnse Augustō. Nunc November est.",
+          "english": "There are no blackberries now. — Why not? When will there be? — At the end of summer, in August. Now it’s November.",
+          "source": "Libellus VII, <span lang=\"la\">Diēs ūnus Osoitsae</span>"
+        }
+      ],
+      "related": [
+        "spring-season",
+        "autumn",
+        "winter",
+        "month"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/aestas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aestas</a>",
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+        "The example sentences marked “composed” are ours."
+      ],
+      "replaces": [
+        "entry-198",
+        "libelli-198"
+      ]
+    },
+    {
+      "id": "spring-season",
+      "english": "spring",
+      "sense": "the season",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "vēr, vēris n.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "vēre",
+          "english": "in spring (ablative of time)",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "summer",
+        "autumn",
+        "winter"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/ver\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ver</a>",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "autumn",
+      "english": "autumn",
+      "pos": "noun",
+      "also": [
+        "fall"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "autumnus, autumnī m.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "autumnō",
+          "english": "in autumn (ablative of time)",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "summer",
+        "winter",
+        "spring-season"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/autumnus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: autumnus</a>",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "winter",
+      "english": "winter",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "hiems, hiemis f.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "hieme",
+          "english": "in winter (ablative of time)",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "autumn",
+        "spring-season",
+        "summer"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/hiems\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: hiems</a>",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "month",
+      "english": "month",
+      "pos": "noun",
+      "also": [
+        "months"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "mēnsis, mēnsis m.",
+          "status": "recommended",
+          "period": "classical",
+          "comment": "The month adjective alone also serves: <strong lang=\"la\">Jūniō</strong>, <strong lang=\"la\">Augustō</strong>, <strong lang=\"la\">Septembrī</strong>, <strong lang=\"la\">Octōbrī</strong>."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "mēnse Novembrī",
+          "english": "in November",
+          "source": "composed"
+        },
+        {
+          "latin": "exeunte Novembrī",
+          "english": "at the end of November",
+          "source": "composed"
+        },
+        {
+          "latin": "Frāga Jūniō, in silvā.",
+          "english": "Strawberries in June, in the woods.",
+          "source": "Libellus VII, <span lang=\"la\">Diēs ūnus Osoitsae</span>"
+        },
+        {
+          "latin": "Nūllum jam in arbore mālum pendēbat; quae Octōbrī lēcta erant, in cellā jacēbant",
+          "english": "There were no apples left on the tree; the ones picked in October lay in the storeroom",
+          "source": "Libellus VII, <span lang=\"la\">Diēs ūnus Osoitsae</span>"
+        }
+      ],
+      "related": [
+        "summer"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/mensis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mensis</a>",
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+        "The example sentences marked “composed” are ours."
+      ]
+    },
+    {
+      "id": "mountain",
+      "english": "mountain",
+      "pos": "noun",
+      "also": [
+        "mountains"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "mōns, montis m.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 204–206"
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Nix in monte est! Vidēsne?",
+          "english": "There’s snow on the mountain! Do you see?",
+          "source": "Libellus VII, <span lang=\"la\">Diēs ūnus Osoitsae</span>"
+        }
+      ],
+      "related": [
+        "hill",
+        "ridge",
+        "summit",
+        "valley"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/mons\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mons</a>",
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: pp. 204–207, checked against the searchable text of the book on 29 October 2026.",
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+      ],
+      "replaces": [
+        "entry-199",
+        "libelli-199"
+      ]
+    },
+    {
+      "id": "hill",
+      "english": "hill",
+      "pos": "noun",
+      "also": [
+        "hills"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "collis, collis m.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 204–206"
+          ]
+        }
+      ],
+      "related": [
+        "mountain",
+        "hilly"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/collis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: collis</a>",
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: pp. 204–207, checked against the searchable text of the book on 29 October 2026."
+      ]
+    },
+    {
+      "id": "ridge",
+      "english": "ridge",
+      "pos": "noun",
+      "also": [
+        "pass"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "jugum, jugī n.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "ridge or pass",
+          "evidence": [
+            "Traupman 204–206"
+          ]
+        }
+      ],
+      "related": [
+        "mountain",
+        "summit"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/jugum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: jugum</a>",
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: pp. 204–207, checked against the searchable text of the book on 29 October 2026."
+      ]
+    },
+    {
+      "id": "summit",
+      "english": "summit",
+      "pos": "noun",
+      "also": [
+        "peak",
+        "top"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "cacūmen, cacūminis n.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 206"
+          ]
+        }
+      ],
+      "related": [
+        "mountain",
+        "ridge"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/cacumen\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cacumen</a>",
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: pp. 204–207, checked against the searchable text of the book on 29 October 2026."
+      ]
+    },
+    {
+      "id": "valley",
+      "english": "valley",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "vallis, vallis f.",
+          "status": "recommended",
+          "period": "classical"
+        },
+        {
+          "latin": "convallis, convallis f.",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "enclosed valley",
+          "evidence": [
+            "L&amp;S"
+          ]
+        }
+      ],
+      "related": [
+        "mountain",
+        "plain-land"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/convallis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: convallis</a>",
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+      ]
+    },
+    {
+      "id": "plain-land",
+      "english": "plain",
+      "sense": "open level ground",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "campus, campī m.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 205"
+          ]
+        }
+      ],
+      "related": [
+        "valley"
+      ],
+      "sources": [
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: pp. 204–207, checked against the searchable text of the book on 29 October 2026.",
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+      ]
+    },
+    {
+      "id": "slope-hill",
+      "english": "slope",
+      "sense": "of a hill",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "clīvus, clīvī m.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "related": [
+        "hilly",
+        "steep",
+        "downhill"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/clivus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: clivus</a>"
+      ]
+    },
+    {
+      "id": "hilly",
+      "english": "hilly",
+      "pos": "adjective",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "clīvōsus, clīvōsa, clīvōsum",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "hilly, steep",
+          "evidence": [
+            "Traupman 204, 206"
+          ]
+        }
+      ],
+      "related": [
+        "hill",
+        "steep",
+        "slope-hill"
+      ],
+      "sources": [
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: pp. 204–207, checked against the searchable text of the book on 29 October 2026."
+      ]
+    },
+    {
+      "id": "steep",
+      "english": "steep",
+      "pos": "adjective",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "arduus, ardua, arduum",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 206"
+          ]
+        }
+      ],
+      "related": [
+        "hilly",
+        "slope-hill",
+        "winding"
+      ],
+      "sources": [
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: pp. 204–207, checked against the searchable text of the book on 29 October 2026."
+      ]
+    },
+    {
+      "id": "downhill",
+      "english": "downhill",
+      "pos": "adjective",
+      "also": [
+        "sloping"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "dēclīvis, dēclīve",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "sloping downhill"
+        }
+      ],
+      "related": [
+        "slope-hill",
+        "steep"
+      ],
+      "sources": [
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+      ]
+    },
+    {
+      "id": "winding",
+      "english": "winding",
+      "pos": "adjective",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "flexuōsus, flexuōsa, flexuōsum",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 207"
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "viā flexuōsā, angustā, arduā",
+          "english": "by a winding, narrow, steep road",
+          "source": "Libellus II, <span lang=\"la\">Sintra: castellum et puteus</span>"
+        }
+      ],
+      "related": [
+        "steep"
+      ],
+      "sources": [
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: pp. 204–207, checked against the searchable text of the book on 29 October 2026.",
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+      ]
+    },
+    {
+      "id": "view",
+      "english": "view",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "prōspectus, prōspectūs m.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "L&amp;S"
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Inde prōspectus patēbat.",
+          "english": "From there a view opened out.",
+          "source": "Libellus II, <span lang=\"la\">Sintra: castellum et puteus</span>"
+        }
+      ],
+      "related": [
+        "mountain"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/prospectus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: prospectus</a>",
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+      ]
+    },
+    {
+      "id": "stream",
+      "english": "stream",
+      "pos": "noun",
+      "also": [
+        "brook",
+        "creek"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "rīvus, rīvī m.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 203"
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Rīvus, quī vēre strepit, siccus erat",
+          "english": "The stream, which babbles in spring, was dry",
+          "source": "Libellus VII, <span lang=\"la\">Diēs ūnus Osoitsae</span>"
+        },
+        {
+          "latin": "«Ubi est aqua, tata?» «Dēfēcit; aestāte enim exeunte parum pluit.»",
+          "english": "“Where’s the water, Dad?” “It has run out; at the end of summer it hardly rained.”",
+          "source": "Libellus VII, <span lang=\"la\">Diēs ūnus Osoitsae</span>"
+        }
+      ],
+      "related": [
+        "river",
+        "dry-up",
+        "water-spring"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/rivus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: rivus</a>",
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: pp. 203–205, checked against the searchable text of the book on 29 October 2026.",
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+      ],
+      "replaces": [
+        "entry-200",
+        "libelli-200"
+      ]
+    },
+    {
+      "id": "ocean",
+      "english": "ocean",
+      "pos": "noun",
+      "also": [
+        "sea"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "ōceanus, ōceanī m.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "related": [
+        "shore",
+        "coast",
+        "entry-95"
+      ],
+      "sources": [
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+      ]
+    },
+    {
+      "id": "shore",
+      "english": "shore",
+      "pos": "noun",
+      "also": [
+        "beach"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "lītus, lītoris n.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "shore, beach"
+        }
+      ],
+      "related": [
+        "coast",
+        "sand",
+        "ocean"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/litus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: litus</a>"
+      ]
+    },
+    {
+      "id": "coast",
+      "english": "coast",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "ōra, ōrae f.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 205"
+          ]
+        }
+      ],
+      "related": [
+        "shore",
+        "cape-headland"
+      ],
+      "sources": [
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: pp. 203–205, checked against the searchable text of the book on 29 October 2026."
+      ]
+    },
+    {
+      "id": "cape-headland",
+      "english": "cape",
+      "sense": "headland",
+      "pos": "noun",
+      "also": [
+        "headland"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "prōmunturium, prōmunturiī n.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "cape, headland",
+          "evidence": [
+            "L&amp;S"
+          ],
+          "comment": "Traupman 203 prints <span lang=\"la\">prōmontōrium</span>."
+        }
+      ],
+      "related": [
+        "coast"
+      ],
+      "sources": [
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: pp. 203–205, checked against the searchable text of the book on 29 October 2026."
+      ]
+    },
+    {
+      "id": "river",
+      "english": "river",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "flūmen, flūminis n.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "«Tagus est,» inquit pater, «quī Lisbōnam praeterfluit et ibi in mare effunditur.»",
+          "english": "“It’s the Tagus,” said Dad, “which flows past Lisbon and there pours into the sea.”",
+          "source": "Libellus V, <span lang=\"la\">Lisbōna: castellum et ōceanārium</span>"
+        }
+      ],
+      "related": [
+        "stream",
+        "bank-river"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/flumen\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: flumen</a>",
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+      ]
+    },
+    {
+      "id": "bank-river",
+      "english": "bank",
+      "sense": "of a river",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "rīpa, rīpae f.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "related": [
+        "river"
+      ],
+      "sources": [
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+      ]
+    },
+    {
+      "id": "dry-up",
+      "english": "dry up",
+      "pos": "verb",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "exārēscō, exārēscere, exāruī",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "related": [
+        "stream"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/exaresco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: exaresco</a>"
+      ]
+    },
+    {
+      "id": "lake",
+      "english": "lake",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "lacus, lacūs m.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 204"
+          ]
+        }
+      ],
+      "related": [
+        "pond"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/lacus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lacus</a>",
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: pp. 203–205, checked against the searchable text of the book on 29 October 2026."
+      ]
+    },
+    {
+      "id": "pond",
+      "english": "pond",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "stāgnum, stāgnī n.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 205"
+          ]
+        }
+      ],
+      "related": [
+        "lake"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/stagnum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: stagnum</a>",
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: pp. 203–205, checked against the searchable text of the book on 29 October 2026."
+      ]
+    },
+    {
+      "id": "water-spring",
+      "english": "spring",
+      "sense": "where water rises",
+      "pos": "noun",
+      "also": [
+        "fountain"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "fōns, fontis m.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "spring, fountain"
+        }
+      ],
+      "related": [
+        "stream",
+        "well-water"
+      ],
+      "sources": [
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+      ]
+    },
+    {
+      "id": "waterfall",
+      "english": "waterfall",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "cataracta, cataractae f.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "L&amp;S",
+            "Pliny"
+          ]
+        }
+      ],
+      "related": [
+        "river"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/cataracta\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cataracta</a>"
+      ]
+    },
+    {
+      "id": "cave",
+      "english": "cave",
+      "pos": "noun",
+      "also": [
+        "grotto"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "spēlunca, spēluncae f.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "cave, grotto",
+          "evidence": [
+            "Traupman 203"
+          ]
+        }
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/spelunca\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: spelunca</a>",
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: pp. 203–205, checked against the searchable text of the book on 29 October 2026."
+      ]
+    },
+    {
+      "id": "well-water",
+      "english": "well",
+      "sense": "for water",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "puteus, puteī m.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "related": [
+        "cistern",
+        "water-spring"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/puteus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: puteus</a>"
+      ]
+    },
+    {
+      "id": "cistern",
+      "english": "cistern",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "cisterna, cisternae f.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "L&amp;S"
+          ]
+        }
+      ],
+      "related": [
+        "well-water"
+      ],
+      "sources": [
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+      ]
+    },
+    {
+      "id": "stepping-stones",
+      "english": "stepping stones",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "lapidēs per quōs trānsītur",
+          "status": "recommended",
+          "period": "ours",
+          "comment": "The description in the Libellus II gloss."
+        }
+      ],
+      "related": [
+        "stream"
+      ],
+      "sources": [
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+      ]
+    },
+    {
+      "id": "oak",
+      "english": "oak",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "quercus, quercūs f.",
+          "status": "recommended",
+          "period": "classical",
+          "comment": "Tree names are mostly feminine, even in the second declension; <strong lang=\"la\">rubus</strong> is masculine."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "quercūs, tiliae, fraxinī, salicēs rīvō imminentēs, jūglandēs, corylī, cornī",
+          "english": "oaks, limes, ashes, willows overhanging the stream, walnuts, hazels, cornelian cherries",
+          "source": "Libellus VII, <span lang=\"la\">Diēs ūnus Osoitsae</span>"
+        },
+        {
+          "latin": "Duae arborēs ibi stant etiam nunc, quercus et tilia, truncīs vīcīnīs, rāmīs jūnctīs.",
+          "english": "Two trees stand there even now, an oak and a lime, their trunks side by side, their branches joined (Baucis and Philemon).",
+          "source": "Libellus IV, <span lang=\"la\">Diēs Grātulātiōnis</span>"
+        }
+      ],
+      "related": [
+        "lime-tree",
+        "beech",
+        "forest"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/quercus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quercus</a>",
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+      ],
+      "replaces": [
+        "entry-201",
+        "libelli-201"
+      ]
+    },
+    {
+      "id": "forest",
+      "english": "forest",
+      "pos": "noun",
+      "also": [
+        "woods"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "silva, silvae f.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "forest, woods",
+          "evidence": [
+            "Traupman 204"
+          ]
+        }
+      ],
+      "related": [
+        "oak",
+        "trunk-tree"
+      ],
+      "sources": [
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: p. 204, checked against the searchable text of the book on 29 October 2026."
+      ]
+    },
+    {
+      "id": "trunk-tree",
+      "english": "trunk",
+      "sense": "of a tree",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "truncus, truncī m.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "related": [
+        "bark-tree",
+        "forest"
+      ],
+      "sources": [
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+      ]
+    },
+    {
+      "id": "bark-tree",
+      "english": "bark",
+      "sense": "of a tree",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "cortex, corticis m.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "related": [
+        "trunk-tree"
+      ],
+      "sources": [
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+      ]
+    },
+    {
+      "id": "beech",
+      "english": "beech",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "fāgus, fāgī f.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "related": [
+        "oak",
+        "hornbeam"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/fagus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fagus</a>"
+      ]
+    },
+    {
+      "id": "hornbeam",
+      "english": "hornbeam",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "carpinus, carpinī f.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "related": [
+        "beech"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/carpinus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: carpinus</a>"
+      ]
+    },
+    {
+      "id": "lime-tree",
+      "english": "lime",
+      "sense": "the tree",
+      "pos": "noun",
+      "also": [
+        "linden"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "tilia, tiliae f.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "lime, linden"
+        }
+      ],
+      "related": [
+        "oak"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/tilia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tilia</a>"
+      ]
+    },
+    {
+      "id": "ash-tree",
+      "english": "ash",
+      "sense": "the tree",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "fraxinus, fraxinī f.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "related": [
+        "elm"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/fraxinus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fraxinus</a>"
+      ]
+    },
+    {
+      "id": "elm",
+      "english": "elm",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "ulmus, ulmī f.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "related": [
+        "ash-tree"
+      ],
+      "sources": [
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+      ]
+    },
+    {
+      "id": "willow",
+      "english": "willow",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "salix, salicis f.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "related": [
+        "poplar"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/salix\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: salix</a>"
+      ]
+    },
+    {
+      "id": "poplar",
+      "english": "poplar",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "pōpulus, pōpulī f.",
+          "status": "recommended",
+          "period": "classical",
+          "comment": "Distinct from <strong lang=\"la\">populus</strong>, people."
+        }
+      ],
+      "related": [
+        "willow"
+      ],
+      "sources": [
+        "Lewis &amp; Short has <span lang=\"la\">pōpulus</span>, poplar, and <span lang=\"la\">populus</span>, people, as separate words."
+      ]
+    },
+    {
+      "id": "pine",
+      "english": "pine",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "pīnus, pīnī f.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "related": [
+        "pine-cone",
+        "pine-adjective"
+      ],
+      "sources": [
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+      ]
+    },
+    {
+      "id": "hazel",
+      "english": "hazel",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "corylus, corylī f.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "related": [
+        "walnut"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/corylus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: corylus</a>"
+      ]
+    },
+    {
+      "id": "cornelian-cherry-tree",
+      "english": "cornelian cherry tree",
+      "pos": "noun",
+      "also": [
+        "cornel",
+        "cornelian cherry"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "cornus, cornī f.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "related": [
+        "blackthorn"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/cornus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cornus</a>"
+      ]
+    },
+    {
+      "id": "blackthorn",
+      "english": "blackthorn",
+      "pos": "noun",
+      "also": [
+        "sloe"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "spīnus, spīnī f.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "blackthorn, sloe"
+        }
+      ],
+      "related": [
+        "cornelian-cherry-tree",
+        "plum-tree"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/spinus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: spinus</a>"
+      ]
+    },
+    {
+      "id": "apple-tree",
+      "english": "apple tree",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "mālus, mālī f.",
+          "status": "recommended",
+          "period": "classical",
+          "comment": "Distinguish <strong lang=\"la\">mālus, mālī m.</strong>, a ship’s mast, and <strong lang=\"la\">malus</strong>, bad."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Est in hortō mālus vetus, rāmīs humilibus et patulīs",
+          "english": "In the garden there is an old apple tree with low, spreading branches",
+          "source": "Libellus VII, <span lang=\"la\">Diēs ūnus Osoitsae</span>"
+        },
+        {
+          "latin": "Spectā mē, Baba! Quam longē saluī!",
+          "english": "Look at me, Baba! How far I jumped!",
+          "source": "Libellus VII, <span lang=\"la\">Diēs ūnus Osoitsae</span>"
+        }
+      ],
+      "related": [
+        "apple",
+        "pear-tree",
+        "cherry-tree"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/malus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: malus</a>",
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+      ],
+      "replaces": [
+        "entry-202",
+        "libelli-202"
+      ]
+    },
+    {
+      "id": "pear-tree",
+      "english": "pear tree",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "pirus, pirī f.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "related": [
+        "pear",
+        "apple-tree"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/pirus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pirus</a>"
+      ]
+    },
+    {
+      "id": "plum-tree",
+      "english": "plum tree",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "prūnus, prūnī f.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "related": [
+        "apple-tree",
+        "blackthorn"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/prunus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: prunus</a>"
+      ]
+    },
+    {
+      "id": "fig-tree",
+      "english": "fig tree",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "fīcus, fīcī f.",
+          "status": "recommended",
+          "period": "classical",
+          "comment": "Fourth-declension <strong lang=\"la\">fīcus, fīcūs f.</strong> also occurs, and both are ancient."
+        }
+      ],
+      "related": [
+        "olive-tree"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/ficus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ficus</a>"
+      ]
+    },
+    {
+      "id": "olive-tree",
+      "english": "olive tree",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "olīva, olīvae f.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "olive tree and olive",
+          "evidence": [
+            "L&amp;S"
+          ]
+        },
+        {
+          "latin": "olea, oleae f.",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "olive tree and olive",
+          "evidence": [
+            "L&amp;S"
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Cui avia: «At hīc olīva est. Ascende, sīmiole.»",
+          "english": "Grandma answered, “But here there’s an olive tree. Climb up, little monkey.”",
+          "source": "Libellus IV, <span lang=\"la\">Diēs Grātulātiōnis</span>"
+        }
+      ],
+      "related": [
+        "fig-tree"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/oliva\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: oliva</a>",
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+      ]
+    },
+    {
+      "id": "lemon-tree",
+      "english": "lemon tree",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "arbor citrea",
+          "status": "recommended",
+          "period": "modern",
+          "gloss": "citron tree",
+          "evidence": [
+            "L&amp;S"
+          ],
+          "comment": "Usable for a lemon tree."
+        }
+      ],
+      "related": [
+        "lemon"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=citreum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: citreum</a>"
+      ]
+    },
+    {
+      "id": "vine",
+      "english": "vine",
+      "pos": "noun",
+      "also": [
+        "grapevine"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "vītis, vītis f.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "related": [
+        "pergola"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/vitis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vitis</a>"
+      ]
+    },
+    {
+      "id": "pergola",
+      "english": "pergola",
+      "pos": "noun",
+      "also": [
+        "vine arbour"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "pergula, pergulae f.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "pergola, vine arbour"
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "ūva in pergulā",
+          "english": "grapes on the pergola",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "vine"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/pergula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pergula</a>",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "moss",
+      "english": "moss",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "muscus, muscī m.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Ubīque muscus est, in saxīs, in truncīs, in mūrīs; ubīque filicēs",
+          "english": "Moss everywhere, on the rocks, on the trunks, on the walls; ferns everywhere",
+          "source": "Libellus II, <span lang=\"la\">Sintra: castellum et puteus</span>"
+        }
+      ],
+      "related": [
+        "fern",
+        "ivy"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/muscus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: muscus</a>",
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+      ],
+      "replaces": [
+        "entry-203",
+        "libelli-203"
+      ]
+    },
+    {
+      "id": "fern",
+      "english": "fern",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "filix, filicis f.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "related": [
+        "moss"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/filix\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: filix</a>"
+      ]
+    },
+    {
+      "id": "ivy",
+      "english": "ivy",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "hedera, hederae f.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "L&amp;S"
+          ]
+        }
+      ],
+      "related": [
+        "moss"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/hedera\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: hedera</a>"
+      ]
+    },
+    {
+      "id": "grass",
+      "english": "grass",
+      "pos": "noun",
+      "also": [
+        "lawn"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "herba, herbae f.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "grass, herb"
+        },
+        {
+          "latin": "grāmen, grāminis n.",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "grass, lawn"
+        }
+      ],
+      "related": [
+        "flower"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/gramen\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gramen</a>"
+      ]
+    },
+    {
+      "id": "flower",
+      "english": "flower",
+      "pos": "noun",
+      "also": [
+        "flowers"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "flōs, flōris m.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "related": [
+        "rose",
+        "grass"
+      ],
+      "sources": [
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+      ]
+    },
+    {
+      "id": "pine-cone",
+      "english": "pine cone",
+      "pos": "noun",
+      "also": [
+        "cone"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "nux pīnea, nucis pīneae f.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Plīn. NH XV 35"
+          ],
+          "comment": "The word of the libellī."
+        },
+        {
+          "latin": "pīnea, pīneae f.",
+          "status": "alternative",
+          "period": "classical",
+          "evidence": [
+            "Col."
+          ]
+        },
+        {
+          "latin": "strobilus, strobilī m.",
+          "status": "alternative",
+          "period": "post-classical",
+          "evidence": [
+            "Digest"
+          ],
+          "comment": "Later, and stays out of the readers."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Ante portam Theodōrus nucem pīneam invēnit, magnam et sēmiapertam",
+          "english": "In front of the gate Theo found a pine cone, big and half open",
+          "source": "Libellus II, <span lang=\"la\">Sintra: castellum et puteus</span>"
+        }
+      ],
+      "related": [
+        "pine",
+        "pine-adjective"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/strobilus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: strobilus (late)</a>",
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+      ]
+    },
+    {
+      "id": "pine-adjective",
+      "english": "pine",
+      "sense": "of pine",
+      "pos": "adjective",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "pīneus, pīnea, pīneum",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "of pine"
+        }
+      ],
+      "related": [
+        "pine",
+        "pine-cone"
+      ],
+      "sources": [
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+      ]
+    },
+    {
+      "id": "rose",
+      "english": "rose",
+      "pos": "noun",
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "rosa, rosae f.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "related": [
+        "dog-rose",
+        "flower"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/rosa\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: rosa</a>"
+      ]
+    },
+    {
+      "id": "dog-rose",
+      "english": "dog rose",
+      "pos": "noun",
+      "also": [
+        "rosehip"
+      ],
+      "domain": "natura",
+      "terms": [
+        {
+          "latin": "rosa canīna",
+          "status": "recommended",
+          "period": "modern",
+          "comment": "With red hips that are not eaten raw."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Nōn sunt corna; rosae canīnae bācae sunt, quae crūdae rārō eduntur.",
+          "english": "They aren’t cornelian cherries; they’re dog-rose hips, which are seldom eaten raw.",
+          "source": "Libellus VII, <span lang=\"la\">Diēs ūnus Osoitsae</span>"
+        }
+      ],
+      "related": [
+        "rose",
+        "berry"
+      ],
+      "sources": [
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+      ]
+    }
+  ],
+  "added": {},
+  "dropped": {
+    "The earlier exact “by 1493” claim is replaced by the broader, supportable early modern description.": "entry-8: a remark about an earlier version of the card; it only made sense on the card.",
+    "See also the existing bread/milk/fruit entry.": "entry-105: turned into related links (entry-82) on apple and pear.",
+    "Their fuller existing entries retain the ancient/Neo-Latin distinction.": "entry-105: a remark that only made sense on the card; the cucumber and tomato records are those entries.",
+    "The yogurt loanword and its uncertain stem quantities are already discussed separately.": "entry-105: a remark that only made sense on the card; the yogurt record carries the discussion.",
+    "The smoothie collection is indexed across these new entries. Search “smoothie” for the complete set; individual English ingredient names and Latin forms also work. Examples are composed for conversation with Theo.": "entry-105 source note: a remark about the card collection; the composed examples are marked “composed”.",
+    "This avoids treating all English “pepper” senses as identical.": "entry-111: a remark on the card’s own arrangement; the records now keep the senses apart.",
+    "Walnut shells and kernels belong to the fruit-parts entry.": "entry-112: turned into a related link (entry-121) on walnut.",
+    "Blueberry and blackberry already have their own entry.": "entry-109: turned into related links (entry-25) on strawberry and berry.",
+    "(see the orchard entry)": "entry-110, on pepō: turned into a related link (melon) on pumpkin.",
+    "See the Red pepper entry for capsicum, and the pepper spice under piper.": "entry-191, on piperītis: the term now sits in bell-pepper, with a related link to pepper-spice.",
+    "For mare see the Sailor and Waves entry.": "entry-200: turned into a related link (entry-95) on ocean; mare itself is carried by the Tagus example in river.",
+    "All quantities follow Lewis & Short.": "entry-190 source note: a card-level remark; each record gives a note wherever it departs from Lewis & Short.",
+    "All the orchard words but citrullus are ancient.": "entry-192 source note: a card-level remark; the terms’ periods say it."
+  },
+  "flags": [
+    "Likely overlaps with cards outside this batch (records created anyway): leaf (sermo entry-26, folium); seed and stalk (culina entry-121, sēmen, caulis); peel, verb (culina entry-122, dēcorticō, cutem resecāre); apple, pear, honey (culina entry-82; honey also corpus entry-300); breakfast (culina entry-34); vitamin (culina entry-129, which calls this card “the existing vitamin entry”); sand (aedificatio entry-151, ludi entry-180); ice (culina entry-293); spring (culina entry-260, fōns); grass/lawn (domus entry-424, which points to “the grass entry” for grāmen); parasol (vestitus entry-316 has umbella for umbrella, Traupman 399).",
+    "Likely overlaps with the other natura batch: berry (entry-204 has bāca / bacca and prefers bāca); kale (entry-418 gives brassica Sabellica, M-O); west wind (entry-502 gives Zephyrus and points to this weather card for Favōnius); stream (my “brook” in also; entry-505 gives rīvulus for brook); plain (entry-505 gives campus as “open, unploughed field”); fig tree and olive tree (entries 210, 211 have fīcus and olīva for the fruit); cornelian cherry tree and blackthorn (entry-204 has cornum and the sloe).",
+    "berry: the card leads with bacca, so it is recommended; but Lewis & Short heads bāca (“less correctly bacca”), the series spelling is bāca (latinitas AGENTS.md §2), the dog-rose quotation from Libellus VII has bācae, and entry-204 prefers bāca. The card’s “equally ancient (L&S)” overstates L&S.",
+    "pepō: entry-192 writes pepō, peponis (L&S pĕpo, -ŏnis; Greek -ονος; the decision in notes/food-vocabulary-bulgaria-and-fabulae.md), but entry-110 prints pepō, pepōnis (now the alternative in pumpkin) and entry-191 pepōnēs (onion comment, Vulg. Num. 11, 5). Copied as printed; probably pepon- both times.",
+    "mēlo, mēlōnis m. (melon): the nominative is printed without the macron that pepō and mēlopepō have on the same card; L&S prints mēlo, -ōnis, never marking the final o. Copied as printed.",
+    "hornbeam: the card writes carpinus, carpinī; Lewis & Short prints carpīnus (long i). No note explains the difference.",
+    "Missing macrons in composed examples, copied as printed: “Unum caulem apiī cape.” (celery) and “Unum cochlear sēminis līnī trītī adde.” (flaxseed) want Ūnum (L&S ūnus); “Dimidium avacātum adde.” (avocado) wants Dīmidium (L&S dīmidium).",
+    "banana: the Pliny quotation on the card reads arienae, without the ē of the headword ariēna, ariēnae.",
+    "peel: the card says Lewis & Short gives no perfect or supine for dēglūbō; L&S has “dē-glūbo, no perf., ptum” (supine dēgluptum). Comment kept as written.",
+    "carrot: the card calls carōta “a Late Latin name”; L&S cites only Apicius (3, 21), which converting.md counts as post-classical, so the period is post-classical.",
+    "maize: frūmentum Indicum is set renaissance from M-O s.v. corn (1571 Mattioli); the card says only “an attested descriptive alternative”.",
+    "celery: helēoselīnum is Traupman’s word on the card; its period is classical because L&S glosses it “smallage, celery” from Pliny.",
+    "Periods where the card is silent, set to the later choice: bēta rubra and capsicum rubrum ours; vītamīnicus ours (“not claimed here to be corpus-verified”); rosa canīna modern (Linnaeus’s species name; L&S has no rosa canina; the Libellus VII gloss marks it as a species with Anglicē); arbor citrea modern in the lemon sense (citron tree in L&S).",
+    "apple tree: “Spectā mē, Baba! Quam longē saluī!” illustrates no word of the fruit-trees card; it is kept on the card’s main record, as part of the Libellus VII apple-tree scene.",
+    "walnut is one record for the nut and the tree (L&S “a walnut; a walnut-tree”; entry-201 lists jūglāns as walnut tree); the other fruit trees, with Latin words of their own (mālus/mālum, pirus/pirum, cerasus/cerasum), are records apart. caulis is in two records: stalk (entry-107, “stalk or stem”) and kale (entry-191, “cabbage stalk, kale”).",
+    "herba (“grass, herb”) is only in grass; no herb record was made, since culinary herbs belong with natura entry-212 and culina entry-408.",
+    "The cards 105–114 were found by searching “smoothie”; the records do not carry that word, which is not a synonym of any of their senses. Add it to also (or a collection) if that search should keep working.",
+    "fog: the evidence “Traupman XV” is Traupman’s chapter XV, The Weather (pp. 132–137), not a page.",
+    "Cards 190–192 cite the readers in the older style (Ep. III, Epp. VI–VII, Culīna); kept as written in comments and source lines.",
+    "Where the card gave no source of its own for a word, the record carries the card’s readers line (the word occurs in the readers): trunk, bark, elm, pine, pine (adjective), flower, ocean, sand, bank, spring, cistern, west wind, cloud, wind, downhill. poplar has a line of mine stating what L&S has; lemon tree carries the L&S citreum link from entry-114.",
+    "Domain: breakfast and recipe are meal and kitchen words (culina); kept in natura, the card’s category.",
+    "Also under natura: vitamin (merged into the culina record)",
+    "Also under natura: apple (merged into the culina record)",
+    "Also under natura: pear (merged into the culina record)",
+    "Also under natura: honey (merged into the culina record)",
+    "Also under natura: breakfast (merged into the culina record)",
+    "Also under natura: stalk (merged into the culina record)",
+    "Also under natura: seed (merged into the culina record)",
+    "Also under natura: sand (merged into the aedificatio record)"
+  ],
+  "extend": [
+    {
+      "id": "vitamin",
+      "terms": [
+        {
+          "latin": "vītamīnum, vītamīnī n.",
+          "status": "recommended",
+          "period": "modern",
+          "comment": "A modern lexical form. Plural <strong lang=\"la\">vītamīna, vītamīnōrum n. pl.</strong>, vitamins, using the neuter form. The international term was coined from “vita” and “amine”; it does not imply that all vitamins are amines. The <strong lang=\"la\">ī</strong> in <strong lang=\"la\">vīta</strong> and the adopted international <strong lang=\"la\">-amīn-</strong> reading give our convention <strong lang=\"la\">vītamīnum</strong>; these are reconstructed Neo-Latin reading quantities, not attested Classical measurements."
+        },
+        {
+          "latin": "vitamina, vitaminae f.",
+          "status": "alternative",
+          "period": "modern",
+          "evidence": [
+            "M-O"
+          ],
+          "comment": "The feminine variant, also recorded by Morgan–Owens, without documented stem quantities."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Hic cibus multa vītamīna continet.",
+          "english": "This food contains many vitamins.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "vitaminic",
+        "multivitamin"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: Adumbratio</a> · <a href=\"https://latin-dictionary.net/definition/38972/vitaminum-vitamini\" rel=\"noopener noreferrer\" target=\"_blank\">Vitaminum: Calepinus Novus attribution</a>",
+        "The example sentence marked “composed” is ours."
+      ],
+      "replaces": [
+        "entry-12"
+      ]
+    },
+    {
+      "id": "apple",
+      "terms": [
+        {
+          "latin": "mālum, mālī n.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 70"
+          ]
+        }
+      ],
+      "related": [
+        "apple-tree",
+        "pear",
+        "fruit",
+        "entry-82"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=malum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: malum</a>",
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: p. 70, checked against the searchable text of the book on 29 October 2026."
+      ]
+    },
+    {
+      "id": "pear",
+      "terms": [
+        {
+          "latin": "pirum, pirī n.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "related": [
+        "pear-tree",
+        "apple",
+        "entry-82"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=pirum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pirum</a>"
+      ]
+    },
+    {
+      "id": "honey",
+      "terms": [
+        {
+          "latin": "mel, mellis n.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "related": [
+        "entry-82"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=mel\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mel</a>"
+      ]
+    },
+    {
+      "id": "breakfast",
+      "terms": [
+        {
+          "latin": "jentāculum, jentāculī n.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "related": [
+        "entry-34"
+      ],
+      "sources": [
+        "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>"
+      ]
+    },
+    {
+      "id": "stalk",
+      "terms": [
+        {
+          "latin": "caulis, caulis m.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "stalk or stem",
+          "comment": "Our practical broad term for a celery stalk, rather than a claim about precise botanical organ terminology."
+        }
+      ],
+      "also": [
+        "stem"
+      ],
+      "related": [
+        "celery",
+        "kale"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=caulis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: caulis</a>"
+      ]
+    },
+    {
+      "id": "seed",
+      "terms": [
+        {
+          "latin": "sēmen, sēminis n.",
+          "status": "recommended",
+          "period": "classical",
+          "comment": "Plural <strong lang=\"la\">sēmina, sēminum n. pl.</strong>, seeds."
+        }
+      ],
+      "related": [
+        "flaxseed",
+        "grain-kernel"
+      ],
+      "sources": [
+        "<a href=\"https://alatius.com/ls/index.php?l=semen\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: semen</a>"
+      ]
+    },
+    {
+      "id": "sand",
+      "terms": [
+        {
+          "latin": "harēna, harēnae f.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "related": [
+        "shore"
+      ],
+      "sources": [
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+      ]
+    }
+  ]
+}

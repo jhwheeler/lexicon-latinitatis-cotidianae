@@ -68,7 +68,8 @@ button { font:inherit; color:inherit; }
 
 /* Header: the index and the other pages ------------------------------------------- */
 .vh { position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap; }
-.hero { display:grid; grid-template-columns:minmax(0,1fr) auto; grid-template-areas:"brand actions" "nav nav"; align-items:center; column-gap:12px; padding:6px 0 0; }
+.hero { display:grid; grid-template-columns:minmax(0,1fr) auto; grid-template-areas:"brand actions" "nav display"; align-items:center; column-gap:12px; padding:6px 0 0; }
+.hero .display-menu { grid-area:display; justify-self:end; }
 .brand { grid-area:brand; min-width:0; }
 .hero h1, .site-name { margin:0; font:400 1.15rem/1.2 var(--serif); font-variant-caps:small-caps; letter-spacing:.03em; }
 .hero h1 a { display:inline-flex; align-items:center; min-height:44px; color:inherit; text-decoration:none; }
@@ -89,8 +90,24 @@ button { font:inherit; color:inherit; }
 :root:not([data-theme="dark"]) .theme-moon { display:block; }
 #theme-label { display:none; }
 @media (min-width:600px) { .brand-note { display:block; } #theme-label { display:inline; } }
+/* Display options: macrons shown or hidden, consonantal i as j or i. */
+.header-actions, .site-tools { column-gap:14px; }
+.display-menu { position:relative; }
+.display-menu > summary { display:inline-flex; align-items:center; justify-content:center; gap:8px; min-width:44px; min-height:44px; padding:0 6px; color:var(--soft); font:400 1rem var(--sans); cursor:pointer; list-style:none; }
+.display-menu > summary::-webkit-details-marker { display:none; }
+.display-menu > summary:hover, .display-menu[open] > summary { color:var(--ink); }
+.display-aa { font:400 1.08rem/1 var(--serif); }
+.display-label { display:none; }
+@media (min-width:600px) { .display-aa { display:none; } .display-label { display:inline; } }
+.display-panel { position:absolute; right:0; top:100%; z-index:40; width:max-content; max-width:calc(100vw - 32px); padding:6px 14px; background:var(--paper); border:1px solid var(--hair); box-shadow:0 8px 24px rgb(0 0 0 / .12); }
+.display-row { display:flex; align-items:center; column-gap:2px; margin:0; font:400 1rem var(--sans); }
+.display-row + .display-row { border-top:1px solid var(--hair); }
+.display-row > span { flex:1; min-width:7.5rem; color:var(--muted); }
+.display-row button { min-height:44px; padding:0 9px; border:0; background:none; color:var(--muted); font:inherit; cursor:pointer; }
+.display-row button:hover { color:var(--ink); }
+.display-row button[aria-pressed="true"] { color:var(--ink); text-decoration:underline; text-decoration-color:var(--accent); text-decoration-thickness:2px; text-underline-offset:.4em; }
 @media (min-width:960px) {
-  .hero { grid-template-columns:minmax(0,1fr) auto auto; grid-template-areas:"brand nav actions"; column-gap:28px; padding:12px 0 6px; }
+  .hero { grid-template-columns:minmax(0,1fr) auto auto auto; grid-template-areas:"brand nav display actions"; column-gap:28px; padding:12px 0 6px; }
   .hero h1 { font-size:1.6rem; white-space:nowrap; }
 }
 
@@ -352,6 +369,7 @@ span.kind, p.kind:not(:has(a)) { display:block; padding:10px 0; }
     <p class="brand-note">Everyday English–Latin</p>
   </div>
   <nav class="site-nav" aria-label="Pages"><a href="how-we-decide.html">How we decide</a><a href="rulings.html">Rulings</a><span class="about-link"><a href="#about">About</a></span></nav>
+  <details class="display-menu"><summary aria-label="Display options"><span class="display-aa" aria-hidden="true">ā/a</span><span class="display-label">Display</span></summary><div class="display-panel"><p class="display-row"><span>Macrons</span><button type="button" data-display="macrons" data-value="on" aria-pressed="true">Shown</button><button type="button" data-display="macrons" data-value="off" aria-pressed="false">Hidden</button></p><p class="display-row"><span>Consonantal i</span><button type="button" data-display="j" data-value="j" aria-pressed="true">jam</button><button type="button" data-display="j" data-value="i" aria-pressed="false">iam</button></p></div></details>
   <div class="header-actions">
     <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to dark mode"><svg class="theme-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg><svg class="theme-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20.9 13A9 9 0 0 1 11 3.1 7 7 0 1 0 20.9 13Z"/></svg><span id="theme-label">Dark mode</span></button>
   </div>
@@ -6342,24 +6360,86 @@ span.kind, p.kind:not(:has(a)) { display:block; padding:10px 0; }
 <p class="source-note"><a href="https://logeion.uchicago.edu/" target="_blank" rel="noopener noreferrer">Logeion dictionaries</a> · <a href="https://github.com/PerseusDL/lexica" target="_blank" rel="noopener noreferrer">Perseus dictionary texts</a> · <a href="https://www.alatius.com/latin/bennetthidden.html" target="_blank" rel="noopener noreferrer">Hidden quantities: evidence and disputes</a> · <a href="https://dcc.dickinson.edu/latin-core-list1" target="_blank" rel="noopener noreferrer">Dickinson core vocabulary</a> · <a href="https://neolatinlexicon.org/" target="_blank" rel="noopener noreferrer">Morgan–Owens Neo-Latin Lexicon</a></p>
 </details>
 <p class="footer-note">396 grouped entries · 41 words with their own page · <a href="how-we-decide.html">How we decide</a> · <a href="rulings.html">Rulings</a> · searchable offline · construction vocabulary reviewed 24 October 2026 · Libellī I–VII vocabulary added 29 October 2026, rechecked 7 November 2026 · everyday vocabulary from Traupman and Morgan–Owens added 7 November 2026</p></div></footer>
-<script>
+<script id="page-script">
 (() => {
+  // Theme toggle (light is the default; the choice is kept where storage allows).
   const root = document.documentElement;
-  const themeToggle = document.getElementById('theme-toggle');
-  // Light is the default; dark is kept where storage allows.
-  function syncTheme() {
+  const toggle = document.getElementById('theme-toggle');
+  const label = document.getElementById('theme-label');
+  const color = document.querySelector('meta[name="theme-color"]');
+  function sync() {
     const dark = root.dataset.theme === 'dark';
-    document.getElementById('theme-label').textContent = dark ? 'Light mode' : 'Dark mode';
-    themeToggle.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
-    document.querySelector('meta[name="theme-color"]').content = dark ? '#1c1b19' : '#ffffff';
+    if (label) label.textContent = dark ? 'Light mode' : 'Dark mode';
+    if (toggle) toggle.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+    if (color) color.content = dark ? '#1c1b19' : '#ffffff';
   }
-  themeToggle.addEventListener('click', () => {
+  if (toggle) toggle.addEventListener('click', () => {
     const theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
     root.dataset.theme = theme;
     try { localStorage.setItem('lexicon-theme', theme); } catch {}
-    syncTheme();
+    sync();
   });
-  syncTheme();
+  sync();
+
+  // Display options: macrons shown or hidden, consonantal i written j or i. They change only what
+  // is shown (search ignores both anyway); each text node under lang="la" keeps its original.
+  const original = new WeakMap();
+  const settings = { macrons: 'on', j: 'j' };
+  try {
+    if (localStorage.getItem('lexicon-macrons') === 'off') settings.macrons = 'off';
+    if (localStorage.getItem('lexicon-j') === 'i') settings.j = 'i';
+  } catch {}
+  function shown(text) {
+    if (settings.macrons === 'off') text = text.normalize('NFD').replace(/\u0304/g, '').normalize('NFC');
+    if (settings.j === 'i') text = text.replace(/j/g, 'i').replace(/J/g, 'I');
+    return text;
+  }
+  function render(scope = document) {
+    const walker = document.createTreeWalker(scope, NodeFilter.SHOW_TEXT, {
+      acceptNode: node => node.parentElement?.closest('[lang="la"]') && !node.parentElement.closest('script, style')
+        ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT });
+    for (let node; (node = walker.nextNode());) {
+      if (!original.has(node)) original.set(node, node.data);
+      const text = shown(original.get(node));
+      if (node.data !== text) node.data = text;
+    }
+  }
+  const options = [...document.querySelectorAll('[data-display]')];
+  function syncDisplay() {
+    options.forEach(button => button.setAttribute('aria-pressed', String(settings[button.dataset.display] === button.dataset.value)));
+    root.dataset.macrons = settings.macrons; root.dataset.consonantalI = settings.j;
+  }
+  options.forEach(button => button.addEventListener('click', () => {
+    settings[button.dataset.display] = button.dataset.value;
+    try {
+      localStorage.setItem(button.dataset.display === 'j' ? 'lexicon-j' : 'lexicon-macrons', button.dataset.value);
+    } catch {}
+    syncDisplay(); render();
+    document.dispatchEvent(new CustomEvent('lexicon-display'));
+  }));
+  syncDisplay();
+  if (settings.macrons === 'off' || settings.j === 'i') render();
+  window.lexiconDisplay = { render };
+
+  // Example filters: all examples show without JavaScript; with it, a reader can keep
+  // only the quotations from authors or only the sentences we composed.
+  document.querySelectorAll('[data-example-filter]').forEach(group => {
+    const list = document.getElementById(group.dataset.exampleFilter);
+    const buttons = [...group.querySelectorAll('button[data-show]')];
+    buttons.forEach(button => button.addEventListener('click', () => {
+      const show = button.dataset.show;
+      buttons.forEach(other => other.setAttribute('aria-pressed', String(other === button)));
+      list.querySelectorAll(':scope > li[data-source]').forEach(item => {
+        item.hidden = show !== 'all' && item.dataset.source !== show;
+      });
+    }));
+    group.hidden = false;
+  });
+})();
+</script>
+<script>
+(() => {
+  const root = document.documentElement;
   const search = document.getElementById('search'), clear = document.getElementById('clear');
   const count = document.getElementById('results'), empty = document.getElementById('empty');
   const emptyMessage = document.getElementById('empty-message'), searchAll = document.getElementById('search-all');
@@ -6551,6 +6631,8 @@ span.kind, p.kind:not(:has(a)) { display:block; padding:10px 0; }
     route('#contents'); search.focus();
   });
   search.addEventListener('keydown', event => { if (event.key === 'Escape') clear.click(); });
+  // A change of display (macrons, j or i) redraws the results from the entries, which show it.
+  document.addEventListener('lexicon-display', () => { renderedQuery = null; apply(); });
   apply();
   route(location.hash);
 })();

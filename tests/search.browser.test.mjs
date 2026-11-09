@@ -153,7 +153,7 @@ test('literal input never becomes HTML and no-match state recovers', async () =>
 });
 
 test('guidance and review notes live in the footer and remain reachable', async () => {
-  assert.equal(await page.locator('.hero details').count(), 0);
+  assert.equal(await page.locator('.hero details:not(.display-menu)').count(), 0);
   assert.equal(await page.locator('footer details').count(), 2);
   await page.locator('.about-link a').click();
   assert.match(page.url(), /#about$/);
@@ -381,7 +381,7 @@ test('every page is usable on a phone: no sideways scrolling, 44px controls, no 
       await page.goto(pageUrl(path));
       assert.equal(await overflows(), false, `${path} overflows at ${width}px`);
       const small = await page.evaluate(() => [...document.querySelectorAll(
-        '.site-nav a, .theme-toggle, .filter button, #category-menu > summary, .clear, .page-contents a, .search-context > summary, .entry-sources > summary, .toc a, .hero h1 a, .record-meta a')]
+        '.site-nav a, .theme-toggle, .filter button, #category-menu > summary, .clear, .page-contents a, .search-context > summary, .entry-sources > summary, .toc a, .hero h1 a, .record-meta a, .display-menu > summary')]
         .filter(el => el.getClientRects().length && getComputedStyle(el).visibility !== 'hidden')
         .map(el => [el.textContent.trim().slice(0, 24), Math.round(el.getBoundingClientRect().height)])
         .filter(([, height]) => height < 44));
@@ -394,6 +394,31 @@ test('every page is usable on a phone: no sideways scrolling, 44px controls, no 
   await page.locator('#category-menu > summary').click();
   const chips = await page.locator('.chip').evaluateAll(nodes => nodes.map(n => n.getBoundingClientRect().height));
   assert.ok(chips.every(height => height >= 44));
+});
+
+test('display options hide macrons or write i for j on every page, and search still finds words', async () => {
+  await page.evaluate(() => { localStorage.removeItem('lexicon-macrons'); localStorage.removeItem('lexicon-j'); });
+  await page.reload();
+  const brand = () => page.locator('.hero h1').textContent();
+  assert.equal(await brand(), 'Lexicon Latīnitātis Cotīdiānae');
+  await page.locator('.display-menu > summary').click();
+  await page.getByRole('button', { name: 'Hidden', exact: true }).click();
+  assert.equal(await brand(), 'Lexicon Latinitatis Cotidianae');
+  await search('synthesis dormitoria');
+  assert.equal(await page.locator('.search-result').first().locator('h3').textContent(), 'synthesis dormitoria');
+  await page.getByRole('button', { name: 'iam', exact: true }).click();
+  await search('jam');
+  assert.equal(await page.locator('.search-result').count() > 0, true);
+  assert.doesNotMatch(await page.locator('#search-result-list strong[lang="la"]').allTextContents().then(t => t.join(' ')), /j/);
+  await page.goto(pageUrl('c/perhaps.html'));
+  assert.match(await page.locator('.ex').textContent(), /Venietne avia\?/);
+  assert.equal(await page.locator('[data-display="macrons"][data-value="off"]').getAttribute('aria-pressed'), 'true');
+  await page.locator('.display-menu > summary').click();
+  await page.getByRole('button', { name: 'Shown', exact: true }).click();
+  await page.getByRole('button', { name: 'jam', exact: true }).click();
+  assert.match(await page.locator('.ex').textContent(), /Veniētne avia\?/);
+  await page.goto(url);
+  assert.equal(await brand(), 'Lexicon Latīnitātis Cotīdiānae');
 });
 
 test('the theme toggle works on every page and the choice carries across pages', async () => {

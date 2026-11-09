@@ -243,6 +243,10 @@ def template(page):
     # The page inlines src/styles.css with its font paths pointed at assets/fonts/.
     styles = styles.replace('url(assets/fonts/', 'url(fonts/')
     shell, search = cut(r'<script>\n(.*?)</script>', '{{search}}', shell)
+    if '<details class="display-menu">' in shell:
+        shell = re.sub(r'<details class="display-menu">.*?</details>', '{{display_menu}}', shell, count=1, flags=re.S)
+    if '<script id="page-script">' in shell:
+        shell = re.sub(r'(<script id="page-script">\n).*?(</script>)', r'\1{{page_script}}\2', shell, count=1, flags=re.S)
     if re.search(r'<button id="theme-toggle"', shell):
         shell = re.sub(r'<button id="theme-toggle".*?</button>', '{{theme_toggle}}', shell, count=1, flags=re.S)
     shell, _ = cut(r'<div class="chips">(.*?)</div>', '{{filters}}', shell)

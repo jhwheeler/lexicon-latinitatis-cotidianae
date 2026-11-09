@@ -27,6 +27,7 @@ document.documentElement.dataset.view = /^#?(contents)?$/.test(location.hash) ? 
     <p class="brand-note">Everyday English–Latin</p>
   </div>
   <nav class="site-nav" aria-label="Pages"><a href="how-we-decide.html">How we decide</a><a href="rulings.html">Rulings</a><span class="about-link"><a href="#about">About</a></span></nav>
+  {{display_menu}}
   <div class="header-actions">
     {{theme_toggle}}
   </div>
@@ -83,6 +84,8 @@ document.documentElement.dataset.view = /^#?(contents)?$/.test(location.hash) ? 
 <p class="source-note"><a href="https://logeion.uchicago.edu/" target="_blank" rel="noopener noreferrer">Logeion dictionaries</a> · <a href="https://github.com/PerseusDL/lexica" target="_blank" rel="noopener noreferrer">Perseus dictionary texts</a> · <a href="https://www.alatius.com/latin/bennetthidden.html" target="_blank" rel="noopener noreferrer">Hidden quantities: evidence and disputes</a> · <a href="https://dcc.dickinson.edu/latin-core-list1" target="_blank" rel="noopener noreferrer">Dickinson core vocabulary</a> · <a href="https://neolatinlexicon.org/" target="_blank" rel="noopener noreferrer">Morgan–Owens Neo-Latin Lexicon</a></p>
 </details>
 <p class="footer-note">{{entry_count}} grouped entries · {{record_count}} words with their own page · <a href="how-we-decide.html">How we decide</a> · <a href="rulings.html">Rulings</a> · searchable offline · construction vocabulary reviewed 24 October 2026 · Libellī I–VII vocabulary added 29 October 2026, rechecked 7 November 2026 · everyday vocabulary from Traupman and Morgan–Owens added 7 November 2026</p></div></footer>
+<script id="page-script">
+{{page_script}}</script>
 <script>
 {{search}}</script>
 </body>

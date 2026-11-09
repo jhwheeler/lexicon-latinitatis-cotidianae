@@ -1,0 +1,97 @@
+{
+  "id": "decide",
+  "english": "decide",
+  "pos": "verb",
+  "also": [
+    "make up one’s mind",
+    "I’ve decided"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "cōnstituō, cōnstituere, cōnstituī, cōnstitūtum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "decide, resolve (to do)",
+      "evidence": [
+        "Caes. BG 4.6 (Lewis &amp; Short)",
+        "Traupman 300"
+      ],
+      "comment": "With an infinitive, or <span lang=\"la\">ut</span> and the subjunctive."
+    },
+    {
+      "latin": "statuō, statuere, statuī, statūtum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "decide, make up one’s mind; settle (a question)",
+      "evidence": [
+        "Plaut. Ps. 549: <span lang=\"la\">rūs ut īrem jam herī mēcum statueram</span>",
+        "Cic. Off. 3.70: <span lang=\"la\">magnī esse jūdicis statuere … quid quemque cuique praestāre oportēret</span>"
+      ],
+      "comment": "Of settling between alternatives, often with an indirect question; with <span lang=\"la\">mēcum</span>, of making up one’s own mind."
+    },
+    {
+      "latin": "dēcernō, dēcernere, dēcrēvī, dēcrētum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "decide formally, resolve; of a body, decree",
+      "evidence": [
+        "Verg. A. 4.475: <span lang=\"la\">dēcrēvitque morī</span>",
+        "Traupman 133, 300"
+      ]
+    },
+    {
+      "latin": "certum est (mihi)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "I have decided, I am resolved (to)",
+      "grammar": "phrase: with an infinitive, or on its own before a future",
+      "register": "locūtiō plērumque cōmica: Plaut., Ter.; also Cic., Liv.",
+      "evidence": [
+        "Plaut. Bacch. 382: <span lang=\"la\">certumst, jam dīcam patrī</span>",
+        "Cic. Rosc. Am. 31 (Lewis &amp; Short)"
+      ],
+      "comment": "Lewis &amp; Short: mostly ante-classical, most frequent in Plautus. In this use it means “I am resolved”, not “it is certain” (for that, see sure)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "certumst, jam dīcam patrī",
+      "english": "I’ve made up my mind: I’ll tell his father this minute",
+      "source": "Plaut. Bacch. 382"
+    },
+    {
+      "latin": "Certumn' est tibi? — Certum.",
+      "english": "Have you made up your mind? — I have.",
+      "source": "Plaut. Poen. 496–497"
+    },
+    {
+      "latin": "Utrumque diplōma pater nōn in pērā Theodōrī, quippe quam puer in silvā relinquere solēret, sed ipse sēcum ferre cōnstituit.",
+      "english": "Dad decided to carry both passports himself, not in Theo’s bag, since the boy was apt to leave it in the woods.",
+      "source": "Libellus I, <span lang=\"la\">Iter in Lūsitāniam</span>"
+    },
+    {
+      "latin": "Hominī cōnsilium tunc deest, cum multa invenit.",
+      "english": "A man is stuck for a decision when he finds too many options.",
+      "source": "Publ. H 27"
+    }
+  ],
+  "related": [
+    "decision",
+    "choose",
+    "consider"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/constituo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: constituo</a> · <a href=\"https://logeion.uchicago.edu/statuo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: statuo</a> · <a href=\"https://logeion.uchicago.edu/decerno\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: decerno</a> · <a href=\"https://logeion.uchicago.edu/certus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: certus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 133, 300, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-publilius), checked against the editions named there.",
+    "Publilius is cited as the loci collection numbers him, by position under each initial letter in the Latin Library text; from N onwards that numbering differs from Meyer’s.",
+    "Quotations of Plautus (Leo, 1896; cited by his lines), Vergil (Greenough, 1881) and <em>De officiis</em> (Miller) that are not in the loci collections were checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 9 November 2026. Examples marked “Libellus” quote those texts word for word."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

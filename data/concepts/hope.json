@@ -1,0 +1,83 @@
+{
+  "id": "hope",
+  "english": "hope",
+  "pos": [
+    "verb",
+    "noun"
+  ],
+  "also": [
+    "I hope",
+    "I hope so",
+    "hopefully"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "spērō, spērāre, spērāvī, spērātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "hope (for); hope that",
+      "evidence": [
+        "Cic. Lael. 15: <span lang=\"la\">memoriam spērō sempiternam fore</span> (Lewis &amp; Short)",
+        "Traupman 154"
+      ],
+      "comment": "What one hopes for in the accusative, or in an accusative and infinitive, usually future (<span lang=\"la\">spērō tē ventūrum esse</span>). <span lang=\"la\">Ut spērō</span>, “I hope”, is said in passing: <span lang=\"la\">sed, ut spērō, valēbis</span> (Cic. Att. 7.2.6)."
+    },
+    {
+      "latin": "spēs, speī f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "hope",
+      "evidence": [
+        "Cic. Att. 9.10.3: <span lang=\"la\">ut aegrōtō, dum anima est, spēs esse dīcitur</span>",
+        "Traupman 154"
+      ],
+      "comment": "<span lang=\"la\">Spem habēre</span>, have hope; losing it is <span lang=\"la\">dēspērāre</span> (Traupman 154).",
+      "notes": [
+        "spei"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "jam tē vidēbō et quidem, ut spērō, dē viā rēctā ad mē",
+      "english": "I’ll see you soon, and straight from the road to my house, I hope",
+      "source": "Cic. Att. 12.2.2"
+    },
+    {
+      "latin": "nātō fīliō pater spem dē illō prīmum quam optimam capiat",
+      "english": "when a son is born, let the father first form the highest hopes of him",
+      "source": "Quint. 1.1.1"
+    },
+    {
+      "latin": "dēsine fāta deum flectī spērāre precandō",
+      "english": "stop hoping to bend the decrees of the gods by praying",
+      "source": "Verg. A. 6.376"
+    }
+  ],
+  "notes": {
+    "spei": {
+      "form": "speī",
+      "claim": "short e in the genitive",
+      "against": "Lewis &amp; Short <span lang=\"la\">spēi</span>",
+      "html": "De Vaan 580 heads the entry <span lang=\"la\">spēs, speī</span>. After a consonant the e of the fifth-declension genitive is short: Lewis &amp; Short itself prints <span lang=\"la\">fidĕi</span>, and gives <span lang=\"la\">rēi</span> only for Lucretius (s.v. <span lang=\"la\">rēs</span>)."
+    }
+  },
+  "related": [
+    "wish",
+    "wait"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/spero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: spero</a> · <a href=\"https://logeion.uchicago.edu/spes\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: spes</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 154, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-quintilianus, loci-vergilius), checked against the editions named there.",
+    "Michiel de Vaan, <em>Etymological Dictionary of Latin and the other Italic Languages</em> (2008), p. 580.",
+    "Quotations of Cicero’s letters (Purser) that are not in the loci collections were checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

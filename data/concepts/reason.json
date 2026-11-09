@@ -1,0 +1,84 @@
+{
+  "id": "reason",
+  "english": "reason",
+  "sense": "a cause",
+  "pos": "noun",
+  "also": [
+    "the reason why",
+    "for this reason",
+    "for no reason"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "causa, causae f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "reason, cause, ground",
+      "evidence": [
+        "Cic. Off. 1.101: <span lang=\"la\">cujus nōn possit causam probābilem reddere</span>",
+        "Traupman 368"
+      ],
+      "comment": "<span lang=\"la\">Hāc dē causā</span>, for this reason; <span lang=\"la\">multīs dē causīs</span>, for many reasons (Traupman 368); <span lang=\"la\">sine causā</span>, for no reason (Cic.). The reason why: <span lang=\"la\">causa cūr</span> or <span lang=\"la\">quamobrem</span> with the subjunctive (Lewis &amp; Short). Often Latin simply gives the reason in a clause with <span lang=\"la\">quod</span> or <span lang=\"la\">quia</span>."
+    },
+    {
+      "latin": "ratiō, ratiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a reason given, grounds",
+      "evidence": [
+        "Cic. de Or. 3.207 (Lewis &amp; Short)"
+      ],
+      "comment": "The reasoning behind a thing, the account one gives of it."
+    },
+    {
+      "latin": "nihil est quod (+ subjunctive)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "there is no reason to …",
+      "grammar": "phrase",
+      "evidence": [
+        "Cic. Fam. 14.4.4: <span lang=\"la\">nihil est quod tē moveat</span>",
+        "Hor. Ep. 2.1.30: <span lang=\"la\">nōn est quod multa loquāmur</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nec vērō agere quicquam, cujus nōn possit causam probābilem reddere",
+      "english": "and to do nothing for which one cannot give a sound reason",
+      "source": "Cic. Off. 1.101"
+    },
+    {
+      "latin": "nōn amō tē, Sabidī, nec possum dīcere quārē",
+      "english": "I don’t like you, Sabidius, and I can’t say why",
+      "source": "Mart. 1.32.1"
+    },
+    {
+      "latin": "is ad mē rescrīpsit petīvitque ut ratiōnem dīcerem cūr tertium ac nōn tertiō scrīpsissem",
+      "english": "he wrote back and asked me to give my reason for writing “tertium” and not “tertiō”",
+      "source": "Gell. 10.1.2–3"
+    },
+    {
+      "latin": "nihil est quod tē moveat",
+      "english": "there is no reason for you to be upset",
+      "source": "Cic. Fam. 14.4.4"
+    }
+  ],
+  "related": [
+    "why",
+    "why-so",
+    "reason-faculty"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/causa\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: causa</a> · <a href=\"https://logeion.uchicago.edu/ratio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ratio</a> · <a href=\"https://logeion.uchicago.edu/quod\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quod</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 368, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-cicero-philosophica, loci-martialis, loci-gellius, loci-cicero-epistulae), checked against the editions named there.",
+    "Quotations of Horace (Fairclough, 1929) that are not in the loci collections were checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "id": "consider-regard",
+  "english": "consider",
+  "sense": "regard as",
+  "pos": "verb",
+  "also": [
+    "regard as",
+    "count as"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "habeō, habēre, habuī, habitum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "consider, regard (someone or something as …)",
+      "grammar": "verb, second conjugation, with prō and the ablative",
+      "evidence": [
+        "Caes. BG 1.44: <span lang=\"la\">sēsē illum nōn prō amīcō, sed prō hoste habitūrum</span>",
+        "Cic. Att. 13.1.2: <span lang=\"la\">istuc jam prō factō habeō</span>",
+        "Traupman 296"
+      ],
+      "comment": "<span lang=\"la\">Prō certō habēre</span>, consider as certain (Cic. Att. 10.6.3, Lewis &amp; Short); <span lang=\"la\">in numerō habēre</span>, count among (Lewis &amp; Short)."
+    },
+    {
+      "latin": "dūcō, dūcere, dūxī, ductum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "reckon, consider (with a genitive of value or a predicate)",
+      "evidence": [
+        "Cic. Fin. 2.24: <span lang=\"la\">parvī id dūcēbat</span> (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "putō, putāre, putāvī, putātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "think, reckon; value (with a genitive of value)",
+      "evidence": [
+        "Cic. Planc. 11: <span lang=\"la\">magnī putāre honōrēs</span> (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "istuc jam prō factō habeō",
+      "english": "I consider that as good as done",
+      "source": "Cic. Att. 13.1.2"
+    },
+    {
+      "latin": "sēsē illum nōn prō amīcō, sed prō hoste habitūrum",
+      "english": "(he said) he would regard him not as a friend but as an enemy",
+      "source": "Caes. BG 1.44"
+    }
+  ],
+  "related": [
+    "consider",
+    "believe"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/habeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: habeo</a> · <a href=\"https://logeion.uchicago.edu/duco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: duco</a> · <a href=\"https://logeion.uchicago.edu/puto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: puto</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 296, checked against the searchable text of the book (9 November 2026).",
+    "Quotations of Caesar (Rice Holmes, 1914) and Cicero’s letters (Purser) that are not in the loci collections were checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

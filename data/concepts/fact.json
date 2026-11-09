@@ -1,0 +1,90 @@
+{
+  "id": "fact",
+  "english": "fact",
+  "pos": "noun",
+  "also": [
+    "the fact that",
+    "the facts"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "rēs, reī f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "the fact, the facts, what really is (as against words or opinion)",
+      "evidence": [
+        "Cic. Tusc. 5.32: <span lang=\"la\">rem enim opīnor spectārī oportēre, nōn verba</span>",
+        "Traupman 97: <span lang=\"la\">rēs ipsa indicat</span>, the facts speak for themselves"
+      ],
+      "comment": "Lewis &amp; Short sets it against <span lang=\"la\">verba</span>, <span lang=\"la\">opīniō</span> and <span lang=\"la\">nōmen</span>."
+    },
+    {
+      "latin": "rē vērā",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "in fact, in reality, really",
+      "grammar": "phrase: ablative of rēs with vērus",
+      "evidence": [
+        "Cic. Fam. 3.5.1: <span lang=\"la\">et rē vērā</span>",
+        "Cic. Div. 2.110 (Lewis &amp; Short, s.v. <span lang=\"la\">rēs</span>)"
+      ],
+      "comment": "Sometimes written as one word, <span lang=\"la\">rēvērā</span> (Lewis &amp; Short)."
+    },
+    {
+      "latin": "quod (+ indicative)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the fact that …",
+      "grammar": "conjunction",
+      "evidence": [
+        "Cic. Att. 2.4.1: <span lang=\"la\">fēcistī mihi pergrātum, quod Serāpiōnis librum ad mē mīsistī</span>",
+        "Traupman 97"
+      ]
+    },
+    {
+      "latin": "factum, factī n.",
+      "status": "avoid",
+      "period": "classical",
+      "gloss": "a deed, an act",
+      "evidence": [
+        "Ter. Eun. 5.4.19: <span lang=\"la\">dicta et facta</span> (Lewis &amp; Short, s.v. <span lang=\"la\">faciō</span>)"
+      ],
+      "comment": "Not a fact in the modern sense: classically a deed or an exploit, and <span lang=\"la\">factum est</span> means “it was done, it happened”."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "rem enim opīnor spectārī oportēre, nōn verba",
+      "english": "for I think it is the facts that should be looked at, not the words",
+      "source": "Cic. Tusc. 5.32"
+    },
+    {
+      "latin": "Piscēs illī, quī annō tōtō in memoriā ejus crēverant, rē vērā nōn minōrēs appāruērunt",
+      "english": "Those fish, which had grown in his memory all year, turned out in fact to be no smaller",
+      "source": "Libellus V, <span lang=\"la\">Lisbōna: castellum et ōceanārium</span>"
+    },
+    {
+      "latin": "fēcistī mihi pergrātum, quod Serāpiōnis librum ad mē mīsistī",
+      "english": "it was very kind of you to send me Serapio’s book",
+      "source": "Cic. Att. 2.4.1"
+    }
+  ],
+  "related": [
+    "real",
+    "true",
+    "actually"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/res\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: res</a> · <a href=\"https://logeion.uchicago.edu/quod\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quod</a> · <a href=\"https://logeion.uchicago.edu/facio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: facio</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 97, checked against the searchable text of the book (9 November 2026).",
+    "Quotations of Cicero’s letters (Purser) and the <em>Tusculans</em> (Pohlenz) that are not in the loci collections were checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition.",
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 9 November 2026. Examples marked “Libellus” quote those texts word for word."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

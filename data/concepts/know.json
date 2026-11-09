@@ -1,0 +1,95 @@
+{
+  "id": "know",
+  "english": "know",
+  "sense": "a fact; how to",
+  "pos": "verb",
+  "also": [
+    "know how to",
+    "I don’t know",
+    "let me know",
+    "as far as I know"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "sciō, scīre, scīvī, scītum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "know (a fact); know how to (with an infinitive)",
+      "evidence": [
+        "Varr. RR 2.1.2: <span lang=\"la\">nēmō enim omnia potest scīre</span>",
+        "Liv. 22.51.4: <span lang=\"la\">vincere scīs, Hannibal</span>",
+        "Traupman 30"
+      ],
+      "comment": "Facts: with an object, an accusative and infinitive, or an indirect question (<span lang=\"la\">scīre quid agās</span>). With an infinitive, know how to (<span lang=\"la\">vincere scīs</span>); of a language, <span lang=\"la\">scīre Latīnē</span> (Cic. Brut. 140, Lewis &amp; Short). <span lang=\"la\">Quod sciam</span>, as far as I know (Cic. Att. 16.2.4). People and places one knows take <span lang=\"la\">nōvī</span> instead."
+    },
+    {
+      "latin": "nesciō, nescīre, nescīvī, nescītum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "not know; Nesciō, I don’t know",
+      "evidence": [
+        "Catull. 85.2: <span lang=\"la\">nesciō, sed fierī sentiō</span>",
+        "Traupman 30"
+      ],
+      "comment": "The ordinary way to say it: <span lang=\"la\">nōn scīre</span> is rare, and Cicero says it already sounds barbarous beside <span lang=\"la\">nescīre</span> (Or. 157, cited by Lewis &amp; Short)."
+    },
+    {
+      "latin": "certiōrem facere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "let someone know, inform",
+      "grammar": "phrase: the person informed in the accusative; dē and the ablative, an accusative and infinitive, or an indirect question",
+      "evidence": [
+        "Cic. Att. 3.11.1: <span lang=\"la\">faciam tē certiōrem quid ēgerim</span>",
+        "Traupman 102"
+      ],
+      "comment": "The prose way to say “inform” (Lewis &amp; Short, s.v. <span lang=\"la\">certus</span>). In a letter, “let me know” is <span lang=\"la\">fac sciam</span> or <span lang=\"la\">fac ut sciam</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nēmō enim omnia potest scīre",
+      "english": "for nobody can know everything",
+      "source": "Varr. RR 2.1.2"
+    },
+    {
+      "latin": "vincere scīs, Hannibal; victōriā ūtī nescīs",
+      "english": "you know how to win, Hannibal; you don’t know how to use a victory",
+      "source": "Liv. 22.51.4"
+    },
+    {
+      "latin": "fac sciam quid agās",
+      "english": "let me know how you are",
+      "source": "Plin. Ep. 1.11.2"
+    },
+    {
+      "latin": "nūllae, quod sciam",
+      "english": "none, as far as I know",
+      "source": "Cic. Off. 3.59"
+    },
+    {
+      "latin": "pater, quī Bulgaricē nōn minus quam Latīnē scit",
+      "english": "Dad, who knows Bulgarian no less than Latin",
+      "source": "Libellus VI, <span lang=\"la\">Reditus: per Alpēs domum</span>"
+    }
+  ],
+  "related": [
+    "know-person",
+    "sure",
+    "ask"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/scio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: scio</a> · <a href=\"https://logeion.uchicago.edu/nescio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nescio</a> · <a href=\"https://logeion.uchicago.edu/certus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: certus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 30, 102, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-varro, loci-livius, loci-plinius, loci-cicero-philosophica, loci-catullus), checked against the editions named there.",
+    "Quotations of Cicero’s letters (Purser) that are not in the loci collections were checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition.",
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 9 November 2026. Examples marked “Libellus” quote those texts word for word."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

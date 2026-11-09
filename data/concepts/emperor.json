@@ -1,0 +1,78 @@
+{
+  "id": "emperor",
+  "english": "emperor",
+  "pos": "noun",
+  "also": [
+    "Roman emperor",
+    "Caesar"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "imperātor, imperātōris m.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "emperor; first a commander",
+      "evidence": [
+        "Tac. Ann. 3.74 (Lewis &amp; Short)",
+        "Suet. Galb. 6 (Lewis &amp; Short)",
+        "Traupman 179",
+        "M-O s.v. emperor"
+      ],
+      "comment": "First a commander, and the title soldiers gave a victorious general; from Augustus on a title of the emperors, and then the plain word for an emperor (Lewis &amp; Short). Traupman and Morgan–Owens use it for any emperor, of China too (Wolff, 1726). An empress is <span lang=\"la\">imperātrix</span> (Levi–Bini p. 33), a rare word in antiquity."
+    },
+    {
+      "latin": "prīnceps, prīncipis m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the emperor, the first citizen",
+      "evidence": [
+        "Tac. Ann. 1.1: <span lang=\"la\">nōmine prīncipis</span>",
+        "Tac. Agr. 42.5",
+        "Traupman 179"
+      ],
+      "comment": "The title Augustus chose: he took the state, worn out by civil war, under his power <span lang=\"la\">nōmine prīncipis</span> (Tac. Ann. 1.1). The usual word for the emperor in Tacitus and Pliny; Lewis &amp; Short call this sense poetic and post-Augustan."
+    },
+    {
+      "latin": "Caesar, Caesaris m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "Caesar, the emperor",
+      "evidence": [
+        "Mart. 14.73.2",
+        "M-O s.v. emperor"
+      ],
+      "comment": "Julius Caesar’s family name, borne by every emperor after him (Lewis &amp; Short); Morgan–Owens gives it for the emperors who claimed the Roman succession."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "posse etiam sub malīs prīncipibus magnōs virōs esse",
+      "english": "that there can be great men even under bad emperors",
+      "source": "Tac. Agr. 42.5"
+    },
+    {
+      "latin": "psittacus ā vōbīs aliōrum nōmina discam: hoc didicī per mē dīcere «Caesar, havē»",
+      "english": "I, the parrot, shall learn other names from you; this I learned to say by myself: “Hail, Caesar!”",
+      "source": "Mart. 14.73"
+    }
+  ],
+  "related": [
+    "empire",
+    "king",
+    "palace"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/imperator\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: imperator</a> · <a href=\"https://logeion.uchicago.edu/princeps\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: princeps</a> · <a href=\"https://logeion.uchicago.edu/Caesar\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: Caesar</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. emperor.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 179, checked against the searchable text of the book (9 November 2026).",
+    "Enrico Levi and Arturo Bini, <em>Il latino come lingua viva</em> (1937), p. 33, s.v. imperatrice.",
+    "Tacitus, <em>Annals</em> 1.1, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-tacitus, loci-martialis), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

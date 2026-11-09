@@ -1,0 +1,83 @@
+{
+  "id": "mayor",
+  "english": "mayor",
+  "pos": "noun",
+  "also": [
+    "lord mayor",
+    "mayoress",
+    "village mayor"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "praefectus urbī",
+      "status": "recommended",
+      "period": "modern",
+      "gloss": "mayor",
+      "grammar": "noun phrase: praefectus, praefectī m., with the dative urbī",
+      "evidence": [
+        "Traupman 22, 179, 344",
+        "M-O s.v. city council: mayor"
+      ],
+      "comment": "Traupman’s word for a modern mayor, and Morgan–Owens’s first (as <span lang=\"la\">urbis praefectus</span>, after Vives). Classically the prefect of the city of Rome: under the Republic the consuls’ deputy while they were away, under the emperors a standing office with its own jurisdiction (Lewis &amp; Short, s.v. <span lang=\"la\">praeficiō</span>). A Roman town had no single mayor, but two magistrates elected for a year, the <span lang=\"la\">duovirī</span>."
+    },
+    {
+      "latin": "duovirī, duovirōrum m. pl.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the two chief magistrates of a Roman town",
+      "evidence": [
+        "Cic. Agr. 2.93 (Lewis &amp; Short)"
+      ],
+      "comment": "The highest magistrates of the <span lang=\"la\">mūnicipia</span> and colonies (Lewis &amp; Short, who head the word <span lang=\"la\">duovir</span> and call <span lang=\"la\">duumvir</span> less correct). The nearest Roman thing to a mayor; at Capua they wanted to be called praetors instead (Cic. Agr. 2.93)."
+    },
+    {
+      "latin": "magister vīcī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the head of a ward or a village",
+      "grammar": "noun phrase: magister, magistrī m., with the genitive vīcī",
+      "evidence": [
+        "Suet. Aug. 30: <span lang=\"la\">hōs magistrī ē plēbe cujusque vīcīniae lēctī</span>",
+        "M-O s.v. city council: mayor"
+      ],
+      "comment": "At Rome the overseers of the city’s wards (<span lang=\"la\">vīcī</span>), chosen from the people of each neighbourhood (Suet. Aug. 30; Lewis &amp; Short, s.v. <span lang=\"la\">magister</span>). A <span lang=\"la\">vīcus</span> is also a village, so the title suits a village mayor; Morgan–Owens lists it among the words for a mayor."
+    },
+    {
+      "latin": "major, majōris m.",
+      "status": "alternative",
+      "period": "medieval",
+      "gloss": "mayor (the medieval title)",
+      "evidence": [
+        "Traupman 179"
+      ],
+      "comment": "The title from which English <em>mayor</em> and French <em>maire</em> come; Traupman lists it. In classical Latin it is only the comparative, greater or elder."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Immō proavus tuus ōlim erat praefectus urbī.",
+      "english": "Well, your great-grandfather was once mayor of the city.",
+      "source": "Traupman 22"
+    }
+  ],
+  "related": [
+    "town-hall",
+    "council",
+    "town",
+    "city",
+    "village",
+    "office-public"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/praefectus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praefectus</a> · <a href=\"https://logeion.uchicago.edu/urbs\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: urbs</a> · <a href=\"https://logeion.uchicago.edu/duovir\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: duovir</a> · <a href=\"https://logeion.uchicago.edu/magister\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: magister</a> · <a href=\"https://logeion.uchicago.edu/vicus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vicus</a> · <a href=\"https://logeion.uchicago.edu/major\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: major</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. city council: mayor.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 22, 179, 344, checked against the searchable text of the book (9 November 2026).",
+    "Suetonius, <em>Augustus</em> 30, and Cicero, <em>De lege agraria</em> 2.93, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

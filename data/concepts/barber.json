@@ -1,0 +1,50 @@
+{
+  "id": "barber",
+  "english": "barber",
+  "pos": "noun",
+  "domain": "urbs",
+  "terms": [
+    {
+      "latin": "tōnsor, tōnsōris m.",
+      "status": "recommended",
+      "period": "classical",
+      "evidence": [
+        "Traupman 164"
+      ],
+      "notes": [
+        "tonsor"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Crās ad tōnsōrem ībimus; capillī tuī nimis longī sunt.",
+      "english": "Tomorrow we’ll go to the barber; your hair is too long.",
+      "source": "composed"
+    }
+  ],
+  "notes": {
+    "tonsor": {
+      "form": "tōnsor",
+      "claim": "long o",
+      "against": "Lewis &amp; Short leaves it unmarked",
+      "html": "Marked long by the hidden-quantity rule before <span lang=\"la\">-ns-</span>.",
+      "ruling": "macrons"
+    }
+  },
+  "related": [
+    "barbers-shop",
+    "hairdresser",
+    "haircut"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.org/tonsor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tonsor</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 164.",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "id": "promise",
+  "english": "promise",
+  "pos": "verb",
+  "also": [
+    "make a promise",
+    "I promise",
+    "promise to come"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "prōmittō, prōmittere, prōmīsī, prōmissum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "promise",
+      "evidence": [
+        "Plin. Ep. 1.15.1: <span lang=\"la\">prōmittis ad cēnam, nec venīs?</span>",
+        "Traupman 365: <span lang=\"la\">prōmittō</span>, promise"
+      ],
+      "comment": "With an accusative, or a future infinitive: <span lang=\"la\">prōmittō mē ventūrum esse</span>, I promise I’ll come. <span lang=\"la\">Prōmittere ad cēnam</span>, to promise to come to dinner (Lewis &amp; Short). The noun, a promise, is <span lang=\"la\">prōmissum</span>; one’s word, <span lang=\"la\">fidēs</span> (see word, promise)."
+    },
+    {
+      "latin": "polliceor, pollicērī, pollicitus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "promise, offer",
+      "grammar": "verb, second conjugation, deponent",
+      "evidence": [
+        "Cic. Fam. 7.5.1: <span lang=\"la\">quam eram solitus dē meā pollicērī</span>",
+        "Traupman 106: <span lang=\"la\">nihil certī polliceor</span>, I’m not making any definite promise"
+      ],
+      "comment": "Lewis &amp; Short: “to hold forth, offer, promise”; often of what one offers to do for someone."
+    },
+    {
+      "latin": "spondeō, spondēre, spopondī, spōnsum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "promise solemnly, pledge; vouch for",
+      "evidence": [
+        "Plaut. Capt. 898c–898d: <span lang=\"la\">Spondēn' tū istud? — Spondeō.</span>",
+        "Cic. Phil. 5.51 (Lewis &amp; Short): <span lang=\"la\">prōmittō, recipiō, spondeō</span>"
+      ],
+      "comment": "The word of the Roman contract made by question and answer, <span lang=\"la\">spondēsne? spondeō</span> (Lewis &amp; Short); also of promising a daughter in marriage."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "heus tū! prōmittis ad cēnam, nec venīs?",
+      "english": "Hey, you! You promise to come to dinner, and then you don’t turn up?",
+      "source": "Plin. Ep. 1.15.1"
+    },
+    {
+      "latin": "plūs ego polliceor: nīl recitābō tibi",
+      "english": "I promise you more: I won’t read you a thing",
+      "source": "Mart. 11.52.16"
+    },
+    {
+      "latin": "Spondēn' tū istud? — Spondeō.",
+      "english": "Do you promise that? — I promise.",
+      "source": "Plaut. Capt. 898c–898d"
+    }
+  ],
+  "related": [
+    "word-promise",
+    "propose-marriage"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/promitto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: promitto</a> · <a href=\"https://logeion.uchicago.edu/polliceor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: polliceor</a> · <a href=\"https://logeion.uchicago.edu/spondeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: spondeo</a>",
+    "Quotations from the Latinitas loci collections (loci-plinius, loci-martialis), as checked there against the editions they name.",
+    "Cic. Fam. 7.5.1, Plaut. Capt. 898c–898d checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 106, 365, checked against the searchable text of the book."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

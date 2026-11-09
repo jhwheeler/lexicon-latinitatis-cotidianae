@@ -1,0 +1,65 @@
+{
+  "id": "comment-note",
+  "english": "comment",
+  "sense": "a written note on a text",
+  "pos": [
+    "noun",
+    "verb"
+  ],
+  "also": [
+    "annotation",
+    "annotate",
+    "comments on a draft",
+    "leave a comment",
+    "code comment",
+    "notes in the margin"
+  ],
+  "domain": "verba",
+  "also_under": [
+    "schola",
+    "computatra"
+  ],
+  "terms": [
+    {
+      "latin": "adnotātiō, adnotātiōnis f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a written comment, a note on a text",
+      "evidence": [
+        "Plin. Ep. 7.20.2: <span lang=\"la\">librum meum cum adnotātiōnibus tuīs exspectō</span>",
+        "Gell. praef. (Lewis &amp; Short)"
+      ],
+      "comment": "Lewis &amp; Short, under <span lang=\"la\">annotātiō</span>, which it would rather spell <span lang=\"la\">adn-</span>: “a noting down in writing, a remark, annotation (post-Aug.)”."
+    },
+    {
+      "latin": "adnotō, adnotāre, adnotāvī, adnotātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "comment on, mark (points in a text)",
+      "evidence": [
+        "Plin. Ep. 7.20.1: <span lang=\"la\">adnotāvī quae commūtanda, quae eximenda arbitrārer</span>"
+      ],
+      "comment": "What Pliny and Tacitus did with each other’s books, and what a reviewer does to a draft or to code. Post-Augustan, like the noun."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Librum tuum lēgī et, quam dīligentissimē potuī, adnotāvī quae commūtanda, quae eximenda arbitrārer. … Nunc ā tē librum meum cum adnotātiōnibus tuīs exspectō.",
+      "english": "I’ve read your book and, as carefully as I could, marked what I thought should be changed and what cut. … Now I’m waiting for my own book back from you, with your comments.",
+      "source": "Plin. Ep. 7.20.1–2"
+    }
+  ],
+  "related": [
+    "comment-remark",
+    "code-review"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/annotatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: annotatio</a> · <a href=\"https://logeion.uchicago.edu/annoto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: annoto</a>",
+    "Plin. Ep. 7.20 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

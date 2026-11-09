@@ -1,0 +1,73 @@
+{
+  "id": "propose-marriage",
+  "english": "propose",
+  "sense": "ask someone to marry",
+  "pos": "verb",
+  "also": [
+    "marriage proposal",
+    "proposal of marriage",
+    "propose to someone",
+    "ask for someone’s hand"
+  ],
+  "domain": "sermo",
+  "terms": [
+    {
+      "latin": "uxōrem poscere",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "ask for (a woman’s) hand",
+      "grammar": "uxor, uxōris f., with poscō, poscere, poposcī; the woman in the accusative, the man in the dative",
+      "evidence": [
+        "Plaut. Aul. 219: <span lang=\"la\">fīliam tuam mī uxōrem poscō</span>",
+        "Plaut. Trin. 499: <span lang=\"la\">sine dōte poscō tuam sorōrem fīliō</span>"
+      ],
+      "comment": "Lewis &amp; Short, s.v. <span lang=\"la\">poscō</span>: “to demand one’s hand, ask in marriage”. The request went to the woman’s father, who promised her (<span lang=\"la\">dēspondēre</span>)."
+    },
+    {
+      "latin": "condiciō, condiciōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a marriage proposal, a match",
+      "evidence": [
+        "Plaut. Aul. 237: <span lang=\"la\">tū condiciōnem hanc accipe</span>",
+        "Plaut. Trin. 501: <span lang=\"la\">condiciōnem quojus modī</span>"
+      ],
+      "comment": "Lewis &amp; Short: “a marriage, match … (freq. and class.)”; in full, <span lang=\"la\">condiciō uxōria</span> (Cic. Lael. 34)."
+    },
+    {
+      "latin": "dēspondeō, dēspondēre, dēspondī, dēspōnsum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "promise in marriage (of the father); accept a proposal",
+      "evidence": [
+        "Plaut. Aul. 238: <span lang=\"la\">atque eam dēspondē mī</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "quae rēs rēctē vortat mihique tibique tuaeque fīliae, fīliam tuam mī uxōrem poscō. prōmitte hoc fore.",
+      "english": "And may it turn out well for me and for you and for your daughter: I am asking for your daughter’s hand. Promise me it will be so.",
+      "source": "Plaut. Aul. 218–219"
+    },
+    {
+      "latin": "tū condiciōnem hanc accipe, auscultā mihi, atque eam dēspondē mī.",
+      "english": "Accept this proposal, listen to me, and promise her to me.",
+      "source": "Plaut. Aul. 237–238"
+    }
+  ],
+  "related": [
+    "marry",
+    "promise",
+    "propose"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/posco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: posco</a> · <a href=\"https://logeion.uchicago.edu/condicio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: condicio</a> · <a href=\"https://logeion.uchicago.edu/despondeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: despondeo</a>",
+    "Plaut. Aul. 218–219 and 237–238, Trin. 499–501 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

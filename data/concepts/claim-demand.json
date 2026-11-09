@@ -1,0 +1,81 @@
+{
+  "id": "claim-demand",
+  "english": "claim",
+  "sense": "demand as one’s own or one’s due",
+  "pos": "verb",
+  "also": [
+    "lay claim to",
+    "claim back",
+    "claim the credit",
+    "claim one’s share"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "vindicō, vindicāre, vindicāvī, vindicātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "claim (as one’s own)",
+      "grammar": "verb, first conjugation; often with sibi",
+      "evidence": [
+        "Cic. Arch. 19: <span lang=\"la\">Chiī suum vindicant</span>",
+        "Plin. Ep. 6.32.2: <span lang=\"la\">partem oneris tuī mihi vindicō</span>",
+        "Traupman 291: <span lang=\"la\">vindicāre</span>, claim as one’s own"
+      ],
+      "comment": "Lewis &amp; Short: “to lay claim to as one’s own”; <span lang=\"la\">sibi vindicāre</span>, to claim for oneself (a share, credit, a right)."
+    },
+    {
+      "latin": "postulō, postulāre, postulāvī, postulātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "claim, demand (what one is owed)",
+      "evidence": [
+        "Ter. Ad. 201: <span lang=\"la\">suum jūs postulat</span>",
+        "Traupman 291: <span lang=\"la\">postulāre</span>, claim (demand)"
+      ]
+    },
+    {
+      "latin": "repetō, repetere, repetīvī, repetītum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "claim back, ask for the return of",
+      "evidence": [
+        "Cic. Arch. 19: <span lang=\"la\">Salamīniī repetunt</span>"
+      ]
+    },
+    {
+      "latin": "arrogō (adrogō), arrogāre, arrogāvī, arrogātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "claim (for oneself) what is not one’s due",
+      "evidence": [
+        "Cic. Brut. 292 (Lewis &amp; Short): <span lang=\"la\">sapientiam sibi adrogāre</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Homērum Colophōniī cīvem esse dīcunt suum, Chiī suum vindicant, Salamīniī repetunt, Smyrnaeī vērō suum esse cōnfirmant",
+      "english": "The people of Colophon say that Homer was their citizen, the Chians claim him as theirs, the Salaminians claim him back, and the people of Smyrna insist that he is theirs",
+      "source": "Cic. Arch. 19"
+    },
+    {
+      "latin": "Vērum enim, quandō bene prōmeruit, fīat: suum jūs postulat.",
+      "english": "Well, since he’s earned it, so be it: he’s claiming what is his by right.",
+      "source": "Ter. Ad. 201"
+    }
+  ],
+  "related": [
+    "claim-assert"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/vindico\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vindico</a> · <a href=\"https://logeion.uchicago.edu/postulo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: postulo</a> · <a href=\"https://logeion.uchicago.edu/repeto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: repeto</a> · <a href=\"https://logeion.uchicago.edu/arrogo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: arrogo</a>",
+    "Cic. Arch. 19, Plin. Ep. 6.32.2, Ter. Ad. 201 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 291, checked against the searchable text of the book."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

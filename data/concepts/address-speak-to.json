@@ -1,0 +1,71 @@
+{
+  "id": "address-speak-to",
+  "english": "address",
+  "sense": "speak to; call by a name or title",
+  "pos": "verb",
+  "also": [
+    "address someone",
+    "speak to someone",
+    "form of address",
+    "address a crowd"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "appellō, appellāre, appellāvī, appellātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "address, speak to; call (someone by a name or title)",
+      "evidence": [
+        "Liv. 22.30.2: <span lang=\"la\">cum patrem Fabium appellāsset</span>",
+        "Cic. Q. fr. 2.8.1: <span lang=\"la\">ut mē et appellēs et interpellēs</span>"
+      ],
+      "comment": "Lewis &amp; Short: “to accost, address, to speak to, call upon (very freq. and class.)”; with two accusatives, to address someone as something. Not <span lang=\"la\">appellō, appellere</span>, drive towards."
+    },
+    {
+      "latin": "alloquor, alloquī, allocūtus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "speak to, address (a person or a crowd)",
+      "grammar": "verb, third conjugation, deponent",
+      "evidence": [
+        "Ter. And. 343b: <span lang=\"la\">Cessās adloquī?</span>",
+        "Traupman 176, 268: <span lang=\"la\">senātum adloquentur</span>, will address the senate"
+      ],
+      "comment": "Also spelled <span lang=\"la\">adloquor</span>. Lewis &amp; Short: rare before Augustus (twice in Cicero), common after; used of a general addressing his troops. A speech to a gathering is <span lang=\"la\">ōrātiō</span> (see speech)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "cum patrem Fabium appellāsset",
+      "english": "when he had addressed Fabius as “father”",
+      "source": "Liv. 22.30.2"
+    },
+    {
+      "latin": "tū vērō ut mē et appellēs et interpellēs et obloquāre et colloquāre velim. quid enim mihi suāvius?",
+      "english": "I do want you to speak to me, interrupt me, contradict me, talk with me. What could be sweeter to me?",
+      "source": "Cic. Q. fr. 2.8.1"
+    },
+    {
+      "latin": "Cessās adloquī?",
+      "english": "What are you waiting for? Speak to him!",
+      "source": "Ter. And. 343b"
+    }
+  ],
+  "related": [
+    "speech",
+    "name",
+    "address-postal"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/appello\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: appello</a> · <a href=\"https://logeion.uchicago.edu/alloquor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: alloquor</a>",
+    "Quotations from the Latinitas loci collections (loci-livius, loci-cicero-epistulae), as checked there against the editions they name.",
+    "Ter. And. 343b checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 176, 268, checked against the searchable text of the book."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

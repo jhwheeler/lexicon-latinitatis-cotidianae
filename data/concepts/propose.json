@@ -1,0 +1,96 @@
+{
+  "id": "propose",
+  "english": "propose",
+  "sense": "put forward terms, a plan or a motion",
+  "pos": "verb",
+  "also": [
+    "proposal",
+    "put forward",
+    "make a proposal",
+    "propose a motion",
+    "propose a law"
+  ],
+  "domain": "verba",
+  "also_under": [
+    "res-publica"
+  ],
+  "terms": [
+    {
+      "latin": "ferō, ferre, tulī, lātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "propose (terms, a law, a bill)",
+      "grammar": "verb, irregular; with condiciōnem, lēgem, rogātiōnem",
+      "evidence": [
+        "Cic. Off. 2.73: <span lang=\"la\">cum lēgem agrāriam ferret</span>",
+        "Traupman 180, 188: <span lang=\"la\">lēgem ferre</span>, propose a law; <span lang=\"la\">pācis condiciōnēs ferre</span>, propose terms of peace"
+      ],
+      "comment": "Lewis &amp; Short: <span lang=\"la\">condiciōnem ferre</span>, to proffer terms; <span lang=\"la\">lēgem ferre</span>, to propose a law. A friendly suggestion is <span lang=\"la\">suādeō</span> or <span lang=\"la\">auctor esse</span> (see suggest)."
+    },
+    {
+      "latin": "condiciō, condiciōnis f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a proposal, the terms offered",
+      "evidence": [
+        "Cic. Att. 7.14.1: <span lang=\"la\">probāta condiciō est</span>"
+      ],
+      "comment": "<span lang=\"la\">Condiciōnem ferre, accipere, repudiāre</span>: to make, accept, reject a proposal. Also a proposal of marriage (see propose, ask someone to marry)."
+    },
+    {
+      "latin": "cēnseō, cēnsēre, cēnsuī, cēnsum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "propose, move (in a meeting)",
+      "evidence": [
+        "Cic. Phil. 1.16: <span lang=\"la\">prīmum igitur ācta Caesaris servanda cēnseō</span>"
+      ],
+      "comment": "A senator’s word when asked his view: “I move that …”, with a gerundive or an accusative and infinitive."
+    },
+    {
+      "latin": "rogātiō, rogātiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a bill, a law proposed to the people",
+      "evidence": [
+        "Cic. Balb. 33 (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "sententia, sententiae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a motion (in a meeting); a view put forward",
+      "evidence": [
+        "Traupman 178: <span lang=\"la\">Quis in Crassī sententiam īvit?</span>, Who supported Crassus’ proposal?"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "probāta condiciō est, sed ita ut ille dē iīs oppidīs quae extrā suam prōvinciam occupāvisset praesidia dēdūceret",
+      "english": "the proposal was accepted, but on condition that he withdrew his garrisons from the towns he had seized outside his province",
+      "source": "Cic. Att. 7.14.1"
+    },
+    {
+      "latin": "prīmum igitur ācta Caesaris servanda cēnseō",
+      "english": "first, then, I move that Caesar’s acts be upheld",
+      "source": "Cic. Phil. 1.16"
+    }
+  ],
+  "related": [
+    "suggest",
+    "propose-marriage",
+    "debate"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/fero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fero</a> · <a href=\"https://logeion.uchicago.edu/condicio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: condicio</a> · <a href=\"https://logeion.uchicago.edu/censeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: censeo</a> · <a href=\"https://logeion.uchicago.edu/rogatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: rogatio</a> · <a href=\"https://logeion.uchicago.edu/sententia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sententia</a>",
+    "Cic. Off. 2.73, Att. 7.14.1, Phil. 1.16 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 178, 180, 188, checked against the searchable text of the book."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

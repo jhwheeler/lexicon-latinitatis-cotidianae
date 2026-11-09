@@ -1,0 +1,87 @@
+{
+  "id": "discuss",
+  "english": "discuss",
+  "pos": "verb",
+  "also": [
+    "discussion",
+    "talk over",
+    "talk it over",
+    "discuss in person"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "agō, agere, ēgī, āctum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "discuss, talk over (with someone)",
+      "grammar": "verb, third conjugation; dē and the ablative for the subject, cum and the ablative for the person",
+      "evidence": [
+        "Cic. Att. 4.4.1: <span lang=\"la\">cētera cōram agēmus</span>",
+        "Cic. Att. 3.9.2: <span lang=\"la\">sed tēcum haec omnia cōram agēmus</span>",
+        "Traupman 97: <span lang=\"la\">cōram id agere possumus</span>, we can discuss that face to face"
+      ],
+      "comment": "Lewis &amp; Short: <span lang=\"la\">agere cum aliquō dē aliquā rē</span>, “to treat, deal, negotiate, confer, talk with one about a person or thing”. Cicero ends letters with <span lang=\"la\">cētera cōram</span>, “the rest when we meet”."
+    },
+    {
+      "latin": "disputō, disputāre, disputāvī, disputātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "discuss, argue out (a question)",
+      "evidence": [
+        "Traupman 26, 29: <span lang=\"la\">Disputābimus dē illā rē crās</span>",
+        "Cic. Rep. 1.10 (Lewis &amp; Short): <span lang=\"la\">dē mōribus, dē virtūtibus, dē rē pūblicā</span>"
+      ],
+      "comment": "With <span lang=\"la\">dē</span> and the ablative; Lewis &amp; Short: to discuss a doubtful subject, “very freq. in Cicero’s philos. and rhet. writings”. Traupman’s word for “discuss”."
+    },
+    {
+      "latin": "disserō, disserere, disseruī, dissertum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "discuss, talk at length about",
+      "evidence": [
+        "Cic. Lael. 33: <span lang=\"la\">quae saepissimē inter mē et Scīpiōnem dē amīcitiā disserēbantur</span>"
+      ],
+      "comment": "Of setting out a subject in a long talk."
+    },
+    {
+      "latin": "disputātiō, disputātiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a discussion",
+      "evidence": [
+        "Traupman 29",
+        "Cic. Off. 1.7: <span lang=\"la\">omnis disputātiō dē officiō futūra est</span>"
+      ],
+      "comment": "For a chat rather than a discussion, <span lang=\"la\">sermō</span> (see talk)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "advolā ad nōs eō animō ut nōs amēs, tē amārī sciās. cētera cōram agēmus.",
+      "english": "Hurry to us, ready to love us and sure that you are loved. We’ll discuss the rest in person.",
+      "source": "Cic. Att. 4.4.1"
+    },
+    {
+      "latin": "sīn es in viā, cum eris mē adsecūtus, cōram agēmus quae erunt agenda.",
+      "english": "But if you’re on the road, we’ll discuss what needs discussing in person, once you’ve caught up with me.",
+      "source": "Cic. Att. 3.5"
+    }
+  ],
+  "related": [
+    "talk",
+    "debate",
+    "consider"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/ago\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ago</a> · <a href=\"https://logeion.uchicago.edu/disputo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: disputo</a> · <a href=\"https://logeion.uchicago.edu/dissero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dissero</a> · <a href=\"https://logeion.uchicago.edu/disputatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: disputatio</a>",
+    "Quotations from the Latinitas loci collections (loci-cicero-epistulae), as checked there against the editions they name.",
+    "Cic. Att. 3.5 and 3.9.2, Lael. 33 and Off. 1.7 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 26, 29, 97, checked against the searchable text of the book."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

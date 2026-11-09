@@ -1,0 +1,75 @@
+{
+  "id": "message",
+  "english": "message",
+  "pos": "noun",
+  "also": [
+    "send a message",
+    "leave a message",
+    "give someone a message",
+    "phone message"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "nūntius, nūntiī m.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a message, news",
+      "evidence": [
+        "Cic. Fam. 4.12.1: <span lang=\"la\">nōn jūcundissimum mē nūntium vōbīs allātūrum</span>",
+        "Traupman 261, 345: <span lang=\"la\">nūntius</span>, message"
+      ],
+      "comment": "Also the messenger who brings it. A phone message is <span lang=\"la\">nūntius tēlephōnicus</span> (M-O s.v. telephone message); Traupman gives the word among his computer terms too."
+    },
+    {
+      "latin": "mandātum, mandātī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a message given to someone to deliver; instructions",
+      "grammar": "noun, second declension; usually plural, mandāta",
+      "evidence": [
+        "Cic. Att. 7.14.1: <span lang=\"la\">L. Caesar mandāta Caesaris dētulit ad Pompejum</span>",
+        "Caes. BG 1.35.1: <span lang=\"la\">lēgātōs cum hīs mandātīs mittit</span>"
+      ],
+      "comment": "Lewis &amp; Short: “a charge, order, commission”; <span lang=\"la\">mandāta dare, dēferre</span>, to give, to deliver a message."
+    },
+    {
+      "latin": "litterae, litterārum f. pl.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a letter, a written message",
+      "evidence": [
+        "Cic. Att. 11.24.4: <span lang=\"la\">nē per litterās quidem aut per nūntium</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "etsī sciō nōn jūcundissimum mē nūntium vōbīs allātūrum, tamen … vīsum est faciendum, quōquō modō rēs sē habēret, vōs certiōrēs facere.",
+      "english": "Although I know that the message I bring you is far from welcome, … I thought I should let you know how things stand, whatever they are.",
+      "source": "Cic. Fam. 4.12.1"
+    },
+    {
+      "latin": "Inest lepōs in nūntiō tuō magnus, mea Ampelisca.",
+      "english": "There’s great charm in your news, my Ampelisca.",
+      "source": "Plaut. Rud. 352"
+    }
+  ],
+  "related": [
+    "information",
+    "forward-send-on",
+    "contact",
+    "communication"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/nuntius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nuntius</a> · <a href=\"https://logeion.uchicago.edu/mandatum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mandatum</a> · <a href=\"https://logeion.uchicago.edu/littera\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: littera</a>",
+    "Cic. Fam. 4.12.1, Att. 7.14.1 and 11.24.4, Caes. BG 1.35.1, Plaut. Rud. 352 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 261, 345, checked against the searchable text of the book.",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. telephone message."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

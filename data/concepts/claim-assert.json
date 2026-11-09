@@ -1,0 +1,80 @@
+{
+  "id": "claim-assert",
+  "english": "claim",
+  "sense": "say that something is so",
+  "pos": "verb",
+  "also": [
+    "assert",
+    "allege",
+    "claim that",
+    "he claims"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "praedicō, praedicāre, praedicāvī, praedicātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "claim, declare (openly)",
+      "grammar": "verb, first conjugation; with an accusative and infinitive",
+      "evidence": [
+        "Caes. BG 1.39.1: <span lang=\"la\">ingentī magnitūdine corporum Germānōs … esse praedicābant</span>",
+        "Traupman 147, 291: <span lang=\"la\">Praedicat sē reī pūblicae prōfutūrum esse</span>"
+      ],
+      "comment": "Of saying out loud, to all and sundry, that something is so; <span lang=\"la\">ut praedicās</span>, “as you claim” (Cic. Cat. 1.23, in Lewis &amp; Short). Not <span lang=\"la\">praedīcō, praedīcere</span>, foretell."
+    },
+    {
+      "latin": "dictitō, dictitāre, dictitāvī, dictitātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "keep saying, claim (often falsely)",
+      "evidence": [
+        "Ter. Ph. 743: <span lang=\"la\">quem semper tē esse dictitāstī</span>",
+        "Caes. BC 3.22.3 (Lewis &amp; Short): <span lang=\"la\">ut dictitābat</span>"
+      ],
+      "comment": "Lewis &amp; Short: “to declare, maintain, assert repeatedly”; Caesar’s <span lang=\"la\">ut dictitābat</span>, “as he claimed”, gives a pretext."
+    },
+    {
+      "latin": "contendō, contendere, contendī, contentum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "maintain, insist (that)",
+      "evidence": [
+        "Cic. Arch. 15: <span lang=\"la\">atque īdem ego hoc contendō</span>"
+      ],
+      "comment": "With an accusative and infinitive: to argue a point hard."
+    },
+    {
+      "latin": "affirmō, affirmāre, affirmāvī, affirmātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "assert, state as certain",
+      "evidence": [
+        "Cic. Div. 2.8: <span lang=\"la\">nihil ut adfirmem, quaeram omnia</span>"
+      ],
+      "comment": "Also spelled <span lang=\"la\">adfirmō</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Quid? nōn, obsecrō, es quem semper tē esse dictitāstī?",
+      "english": "What? Aren’t you, if you please, the man you always claimed to be?",
+      "source": "Ter. Ph. 742b–743"
+    }
+  ],
+  "related": [
+    "claim-demand",
+    "say",
+    "statement"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/praedico\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praedico</a> · <a href=\"https://logeion.uchicago.edu/dictito\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dictito</a> · <a href=\"https://logeion.uchicago.edu/contendo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: contendo</a> · <a href=\"https://logeion.uchicago.edu/affirmo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: affirmo</a>",
+    "Caes. BG 1.39.1, Ter. Ph. 742b–743, Cic. Arch. 15 and Div. 2.8 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 147, 291, checked against the searchable text of the book."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

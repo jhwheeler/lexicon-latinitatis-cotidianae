@@ -1,0 +1,73 @@
+{
+  "id": "indicate",
+  "english": "indicate",
+  "pos": "verb",
+  "also": [
+    "be a sign of",
+    "point to",
+    "make clear"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "significō, significāre, significāvī, significātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "indicate, show, make known",
+      "evidence": [
+        "Cic. Fam. 7.18.1: <span lang=\"la\">significābant enim tē istam mīlitiam jam firmō animō ferre</span>",
+        "Traupman 247, 332: <span lang=\"la\">significāre</span>, indicate"
+      ],
+      "comment": "Lewis &amp; Short: “to show by signs; to show, point out, express, publish, make known, indicate”; with an accusative and infinitive when a letter or a sign shows that something is so. Of a word, “mean” (see mean)."
+    },
+    {
+      "latin": "indicō, indicāre, indicāvī, indicātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "point out, be a sign of; reveal",
+      "evidence": [
+        "Publil. Sent. I 43: <span lang=\"la\">Inertia indicātur, cum fugitur labor.</span>",
+        "Publil. Sent. P 61: <span lang=\"la\">Parātae lacrimae īnsidiās, nōn flētum indicant.</span>"
+      ],
+      "comment": "First conjugation, with a short i; not <span lang=\"la\">indīcō, indīcere</span>, proclaim."
+    },
+    {
+      "latin": "dēmōnstrō, dēmōnstrāre, dēmōnstrāvī, dēmōnstrātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "point out (as with a finger), show",
+      "evidence": [
+        "Catull. 55.1–2: <span lang=\"la\">dēmōnstrēs ubi sint tuae tenebrae</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "significābant enim tē istam mīlitiam jam firmō animō ferre et esse fortem virum et cōnstantem",
+      "english": "for they showed that you are now bearing your military service with a steady mind, and are a brave and steadfast man",
+      "source": "Cic. Fam. 7.18.1"
+    },
+    {
+      "latin": "Parātae lacrimae īnsidiās, nōn flētum indicant.",
+      "english": "Tears at the ready indicate a trick, not grief.",
+      "source": "Publil. Sent. P 61"
+    }
+  ],
+  "related": [
+    "sign",
+    "show",
+    "mean-signify"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/significo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: significo</a> · <a href=\"https://logeion.uchicago.edu/indico\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: indico</a> · <a href=\"https://logeion.uchicago.edu/demonstro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: demonstro</a>",
+    "Quotations from the Latinitas loci collections (loci-publilius, loci-catullus), as checked there against the editions they name.",
+    "Publilius is cited as the loci collection numbers him, by position under each initial letter in the Latin Library text; from N onwards that numbering differs from Meyer’s.",
+    "Cic. Fam. 7.18.1 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 247, 332, checked against the searchable text of the book."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

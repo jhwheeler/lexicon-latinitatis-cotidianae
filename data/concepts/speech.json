@@ -1,0 +1,79 @@
+{
+  "id": "speech",
+  "english": "speech",
+  "sense": "a talk given to an audience",
+  "pos": "noun",
+  "also": [
+    "address",
+    "give a speech",
+    "make a speech",
+    "deliver a speech",
+    "oration"
+  ],
+  "domain": "verba",
+  "also_under": [
+    "res-publica"
+  ],
+  "terms": [
+    {
+      "latin": "ōrātiō, ōrātiōnis f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a speech",
+      "evidence": [
+        "Cic. Brut. 91: <span lang=\"la\">scrībuntur ōrātiōnēs habitae jam</span>",
+        "Traupman 176: <span lang=\"la\">ōrātiōnem habēre</span>, give a speech"
+      ],
+      "comment": "<span lang=\"la\">Ōrātiōnem habēre</span>, to give a speech. Lewis &amp; Short: “a set speech”, as against <span lang=\"la\">sermō</span>, ordinary talk."
+    },
+    {
+      "latin": "contiō, contiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a speech to a public meeting; the meeting itself",
+      "evidence": [
+        "Cic. Fam. 9.14.7: <span lang=\"la\">lēgī enim contiōnem tuam</span>",
+        "Cic. Att. 7.8.5: <span lang=\"la\">Antōnī contiōnem habitam</span>"
+      ],
+      "comment": "An address to the people or to an army, called together by a magistrate or a general."
+    },
+    {
+      "latin": "verba facere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "speak, make a speech (to a gathering)",
+      "grammar": "verbum, verbī n., with faciō, facere, fēcī, factum",
+      "evidence": [
+        "Caes. BG 2.14.1 (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "sed quid agō? paene ōrātiōnem in epistulam inclūsī.",
+      "english": "But what am I doing? I’ve nearly put a whole speech into a letter.",
+      "source": "Cic. Att. 1.16.10"
+    },
+    {
+      "latin": "plēraeque enim scrībuntur ōrātiōnēs habitae jam, nōn ut habeantur",
+      "english": "for most speeches are written down once they have been given, not in order to be given",
+      "source": "Cic. Brut. 91"
+    }
+  ],
+  "related": [
+    "speech-faculty",
+    "address-speak-to",
+    "debate",
+    "talk"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/oratio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: oratio</a> · <a href=\"https://logeion.uchicago.edu/contio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: contio</a> · <a href=\"https://logeion.uchicago.edu/verbum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: verbum</a>",
+    "Cic. Att. 1.16.10 and 7.8.5, Brut. 91, Fam. 9.14.7, Caes. BG 2.14.1 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 176, checked against the searchable text of the book."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

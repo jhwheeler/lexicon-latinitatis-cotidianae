@@ -2,12 +2,22 @@
   "id": "stone",
   "english": "stone",
   "pos": "noun",
+  "also_under": [
+    "sermo"
+  ],
   "domain": "aedificatio",
   "terms": [
     {
       "latin": "lapis, lapidis m.",
       "status": "recommended",
       "period": "classical"
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Lapis in sēmitā est.",
+      "english": "There’s a stone in the path.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -26,12 +36,5 @@
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  },
-  "phrases": [
-    {
-      "latin": "Lapis in sēmitā est.",
-      "english": "There’s a stone in the path.",
-      "source": "composed"
-    }
-  ]
+  }
 }

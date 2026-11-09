@@ -2,6 +2,9 @@
   "id": "breakfast",
   "english": "breakfast",
   "pos": "noun",
+  "also_under": [
+    "natura"
+  ],
   "domain": "culina",
   "terms": [
     {
@@ -25,15 +28,6 @@
       "source": "composed"
     }
   ],
-  "notes": {
-    "short-e": {
-      "form": "jentāculum",
-      "claim": "short e",
-      "against": "Bennett’s hidden long <span lang=\"la\">ē</span>, printed in an earlier version of this entry",
-      "html": "From <span lang=\"la\">jentō</span>; Lewis &amp; Short leaves both unmarked (<em>jentaculum, jento</em>). The reading after Bennett was withdrawn on review (23 October 2026; Jack’s ruling, 29 October 2026).",
-      "ruling": "jentaculum"
-    }
-  },
   "related": [
     "eat-breakfast",
     "lunch",
@@ -45,6 +39,15 @@
     "The example sentences marked “composed” are ours.",
     "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>"
   ],
+  "notes": {
+    "short-e": {
+      "form": "jentāculum",
+      "claim": "short e",
+      "against": "Bennett’s hidden long <span lang=\"la\">ē</span>, printed in an earlier version of this entry",
+      "html": "From <span lang=\"la\">jentō</span>; Lewis &amp; Short leaves both unmarked (<em>jentaculum, jento</em>). The reading after Bennett was withdrawn on review (23 October 2026; Jack’s ruling, 29 October 2026).",
+      "ruling": "jentaculum"
+    }
+  },
   "replaces": [
     "entry-34"
   ],

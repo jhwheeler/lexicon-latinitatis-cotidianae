@@ -12,6 +12,9 @@
     "linden tea",
     "home remedy"
   ],
+  "also_under": [
+    "corpus"
+  ],
   "domain": "culina",
   "terms": [
     {
@@ -54,6 +57,23 @@
       "comment": "Our formation on M-O’s pattern. Pliny knows linden bark for swellings and wounds (NH 24.49), not the blossom tea."
     }
   ],
+  "phrases": [
+    {
+      "latin": "Īnfūsum tibi chamaemēlī parābō.",
+      "english": "I’ll make you some chamomile tea.",
+      "source": "composed"
+    },
+    {
+      "latin": "Exspectā dum refrīgēscat; nimis calidum est.",
+      "english": "Wait for it to cool down; it’s too hot.",
+      "source": "composed"
+    },
+    {
+      "latin": "Hīc mentam et serpyllum legāmus, ut domī īnfūsum faciāmus.",
+      "english": "Let’s pick mint and wild thyme here, to make tea at home.",
+      "source": "composed"
+    }
+  ],
   "related": [
     "tea",
     "sip",
@@ -72,31 +92,6 @@
     "Pliny (NH 24.49) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>.",
     "The example sentences marked “composed” are ours."
   ],
-  "review": {
-    "status": "draft",
-    "date": "2026-11-09",
-    "by": "Claude"
-  },
-  "phrases": [
-    {
-      "latin": "Īnfūsum tibi chamaemēlī parābō.",
-      "english": "I’ll make you some chamomile tea.",
-      "source": "composed"
-    },
-    {
-      "latin": "Exspectā dum refrīgēscat; nimis calidum est.",
-      "english": "Wait for it to cool down; it’s too hot.",
-      "source": "composed"
-    },
-    {
-      "latin": "Hīc mentam et serpyllum legāmus, ut domī īnfūsum faciāmus.",
-      "english": "Let’s pick mint and wild thyme here, to make tea at home.",
-      "source": "composed"
-    }
-  ],
-  "replaces": [
-    "entry-300"
-  ],
   "notes": {
     "infusum": {
       "form": "īnfūsum",
@@ -104,5 +99,13 @@
       "against": "Morgan–Owens <span lang=\"la\">infûsum</span>, a Neo-Latin noun marked *",
       "html": "As in <span lang=\"la\">īnfundō, īnfūsus</span>: <span lang=\"la\">in-</span> is long before f."
     }
+  },
+  "replaces": [
+    "entry-300"
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
   }
 }

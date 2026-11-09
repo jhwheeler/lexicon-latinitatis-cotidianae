@@ -2,6 +2,13 @@
   "id": "swim",
   "english": "swim",
   "pos": "verb",
+  "also": [
+    "swimming",
+    "swim across"
+  ],
+  "also_under": [
+    "corpus"
+  ],
   "domain": "natura",
   "terms": [
     {
@@ -25,6 +32,18 @@
       "gloss": "swim across"
     }
   ],
+  "phrases": [
+    {
+      "latin": "īnfrā etiam natāre concessum",
+      "english": "downstream you may swim too (Pliny’s rule for a river)",
+      "source": "Plin. Ep. 8.8.6"
+    },
+    {
+      "latin": "Vīsne natāre?",
+      "english": "Do you want to swim?",
+      "source": "composed"
+    }
+  ],
   "related": [
     "swimming",
     "backstroke",
@@ -44,21 +63,5 @@
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  },
-  "phrases": [
-    {
-      "latin": "īnfrā etiam natāre concessum",
-      "english": "downstream you may swim too (Pliny’s rule for a river)",
-      "source": "Plin. Ep. 8.8.6"
-    },
-    {
-      "latin": "Vīsne natāre?",
-      "english": "Do you want to swim?",
-      "source": "composed"
-    }
-  ],
-  "also": [
-    "swimming",
-    "swim across"
-  ]
+  }
 }

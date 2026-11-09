@@ -2,6 +2,13 @@
   "id": "dig",
   "english": "dig",
   "pos": "verb",
+  "also": [
+    "dig out"
+  ],
+  "also_under": [
+    "domus",
+    "ludi"
+  ],
   "domain": "aedificatio",
   "terms": [
     {
@@ -16,6 +23,18 @@
       "period": "classical",
       "gloss": "dig out",
       "comment": "An ancient verb."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "fodiēbat ubi nōn erat fodiendum, rigābat quod jam rigātum erat",
+      "english": "He dug where there was no digging to be done and watered what was already watered.",
+      "source": "Libellus VII, <span lang=\"la\">Diēs ūnus Osoitsae</span>"
+    },
+    {
+      "latin": "Foveam fodiāmus.",
+      "english": "Let’s dig a hole.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -33,28 +52,13 @@
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026. Examples marked “Libellus” quote those texts word for word.",
     "The example sentences marked “composed” are ours."
   ],
-  "review": {
-    "status": "draft",
-    "date": "2026-11-09",
-    "by": "Claude"
-  },
-  "phrases": [
-    {
-      "latin": "fodiēbat ubi nōn erat fodiendum, rigābat quod jam rigātum erat",
-      "english": "He dug where there was no digging to be done and watered what was already watered.",
-      "source": "Libellus VII, <span lang=\"la\">Diēs ūnus Osoitsae</span>"
-    },
-    {
-      "latin": "Foveam fodiāmus.",
-      "english": "Let’s dig a hole.",
-      "source": "composed"
-    }
-  ],
   "replaces": [
     "entry-266",
     "libelli-266"
   ],
-  "also": [
-    "dig out"
-  ]
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
 }

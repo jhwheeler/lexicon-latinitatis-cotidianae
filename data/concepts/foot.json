@@ -2,6 +2,12 @@
   "id": "foot",
   "english": "foot",
   "pos": "noun",
+  "also": [
+    "feet"
+  ],
+  "also_under": [
+    "corpus"
+  ],
   "domain": "sermo",
   "terms": [
     {
@@ -9,6 +15,13 @@
       "status": "recommended",
       "period": "classical",
       "comment": "The ablative is <span lang=\"la\">pede</span>, with short e."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Pedēs lavēmus.",
+      "english": "Let’s wash our feet.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -30,15 +43,5 @@
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  },
-  "also": [
-    "feet"
-  ],
-  "phrases": [
-    {
-      "latin": "Pedēs lavēmus.",
-      "english": "Let’s wash our feet.",
-      "source": "composed"
-    }
-  ]
+  }
 }

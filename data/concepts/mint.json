@@ -3,6 +3,13 @@
   "english": "mint",
   "sense": "the herb",
   "pos": "noun",
+  "also": [
+    "peppermint",
+    "mint tea"
+  ],
+  "also_under": [
+    "corpus"
+  ],
   "domain": "natura",
   "terms": [
     {
@@ -25,6 +32,18 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "mentae ipsīus odor animum excitat",
+      "english": "the very smell of mint revives the spirit",
+      "source": "Plin. NH 20.147"
+    }
+  ],
+  "related": [
+    "herbal-tea",
+    "thyme",
+    "sage"
+  ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/menta\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: menta</a>",
     "<a href=\"https://logeion.org/menta\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: menta</a>",
@@ -35,21 +54,5 @@
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  },
-  "phrases": [
-    {
-      "latin": "mentae ipsīus odor animum excitat",
-      "english": "the very smell of mint revives the spirit",
-      "source": "Plin. NH 20.147"
-    }
-  ],
-  "also": [
-    "peppermint",
-    "mint tea"
-  ],
-  "related": [
-    "herbal-tea",
-    "thyme",
-    "sage"
-  ]
+  }
 }

@@ -2,6 +2,12 @@
   "id": "look-for",
   "english": "look for",
   "pos": "verb",
+  "also": [
+    "seek"
+  ],
+  "also_under": [
+    "sermo"
+  ],
   "domain": "ludi",
   "terms": [
     {
@@ -22,6 +28,18 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "Ubi est? Quaerāmus.",
+      "english": "Where is it? Let’s look.",
+      "source": "composed"
+    },
+    {
+      "latin": "Eāmus thēsaurum quaesītum!",
+      "english": "Let’s go look for treasure!",
+      "source": "composed"
+    }
+  ],
   "related": [
     "hide",
     "hide-and-seek",
@@ -36,27 +54,12 @@
     "<a href=\"https://logeion.uchicago.edu/quaero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quaero</a> · <a href=\"https://www.alatius.com/ls/index.php?l=quaero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quaero</a>",
     "The example sentences marked “composed” are ours."
   ],
+  "replaces": [
+    "entry-79"
+  ],
   "review": {
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  },
-  "phrases": [
-    {
-      "latin": "Ubi est? Quaerāmus.",
-      "english": "Where is it? Let’s look.",
-      "source": "composed"
-    },
-    {
-      "latin": "Eāmus thēsaurum quaesītum!",
-      "english": "Let’s go look for treasure!",
-      "source": "composed"
-    }
-  ],
-  "also": [
-    "seek"
-  ],
-  "replaces": [
-    "entry-79"
-  ]
+  }
 }

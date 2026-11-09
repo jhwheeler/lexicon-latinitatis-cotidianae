@@ -2,12 +2,25 @@
   "id": "ice",
   "english": "ice",
   "pos": "noun",
+  "also": [
+    "ice cubes"
+  ],
+  "also_under": [
+    "culina"
+  ],
   "domain": "natura",
   "terms": [
     {
       "latin": "glaciēs, glaciēī f.",
       "status": "recommended",
       "period": "classical"
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Nōn opus est glaciē in aquā.",
+      "english": "You don’t need ice in the water.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -24,15 +37,5 @@
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  },
-  "phrases": [
-    {
-      "latin": "Nōn opus est glaciē in aquā.",
-      "english": "You don’t need ice in the water.",
-      "source": "composed"
-    }
-  ],
-  "also": [
-    "ice cubes"
-  ]
+  }
 }

@@ -2,12 +2,28 @@
   "id": "honey",
   "english": "honey",
   "pos": "noun",
+  "also_under": [
+    "corpus",
+    "natura"
+  ],
   "domain": "culina",
   "terms": [
     {
       "latin": "mel, mellis n.",
       "status": "recommended",
       "period": "classical"
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "mel cum aquā calidā",
+      "english": "honey in hot water",
+      "source": "composed"
+    },
+    {
+      "latin": "Paulum mellis adde; sīc dulcius erit.",
+      "english": "Add a little honey; it’ll be sweeter.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -26,17 +42,5 @@
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  },
-  "phrases": [
-    {
-      "latin": "mel cum aquā calidā",
-      "english": "honey in hot water",
-      "source": "composed"
-    },
-    {
-      "latin": "Paulum mellis adde; sīc dulcius erit.",
-      "english": "Add a little honey; it’ll be sweeter.",
-      "source": "composed"
-    }
-  ]
+  }
 }

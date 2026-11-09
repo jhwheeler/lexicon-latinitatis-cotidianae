@@ -14,7 +14,7 @@ For any request to read, extend, correct, or edit the lexicon, fetch the current
 
 Jack's decision (29 October 2026): the lexicon follows the orthography of the Theodōrus et pater readers and writes consonantal i as j in all Latin: headwords, phrases, examples and quotations (quotations are normalised to it).
 
-- *jam, ejus, cujus, major, Troja, Jēsus, Joannēs* (short, unmarked o).
+- *jam, ejus, cujus, major, Troja, Jēsus, Jōannēs* (with long *ō* since 9 November 2026, after Lewis & Short's *Jōannes*; Jack).
 - No macron on the vowel before intervocalic j (*major, ejus, pejus*: the vowel is short, the syllable heavy). Long prefixes keep theirs (*dējectus, prōjēcit, ējēcī*).
 - Compounds: *abjicit, objice, dējiciō, subjēcit, conjungō, conjūnx, adjuvō*.
 - i stays a vowel in the interjection *iō*, in forms of *eō* (*iērunt, adiērunt*), in *superior, interior, Plēiades*, in *Iūlus* where it scans as three syllables, after *qu/gu* (*quiēs, reliquiae*), and wherever it is a vowel (*diēs, cliēns, audiō, gaudium*).

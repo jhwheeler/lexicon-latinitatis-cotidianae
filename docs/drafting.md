@@ -36,7 +36,7 @@ Give the other forms the sources offer as `alternative` terms, with their period
 
 - Prefer a quotation from the loci collections or from Lewis & Short's citations: quote it exactly, in the house orthography, with the citation as the source (`Cic. Off. 1.129`). Only in the sense it has in its source.
 - A composed example (`"source": "composed"`) must be short and plain, everyday speech (a parent to a child, a host to a guest), and pass latinitas `AGENTS.md` §4: back-translate it word for word, and if the English is already natural English, ask what Cicero or Terence would say instead. No more than two composed examples per record; none is better than a doubtful one.
-- No personal names except in examples.
+- No personal names except in examples. Names of characters and of the family's own places stay out too: Jack dropped the Totoro, Osoitsa and Antanhol records (9 November 2026). A section of whimsical words for children's stories may come later, as may the batches of specialised jargon; until then, leave such words out.
 
 ## The record
 

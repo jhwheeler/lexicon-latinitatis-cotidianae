@@ -21,6 +21,8 @@ Records: `https://jhwheeler.github.io/lexicon-latinitatis-cotidianae/c/<id>.html
   - *acadēmīa* has a long *ī*, after Lewis & Short and Cicero's verse, against Traupman and Morgan–Owens.
   - *Paraclītus* follows the Clementine spelling.
   - (#58, #60, #61)
+- ***citō* or *cito*.** The house texts write *citō* 56 times and *cito* 8; Lewis & Short has *cĭto*. Like *heri*, it is an iambically shortened word, while *modo*, *mihi* and *tibi* are written short. Lc. 15.22 was flagged as a slip and left as *Citō*.
+- ***fūrtum*.** The loci write it long (*fūrta*, *fūrtī*, *fūrtīvī*, *fūrtum*), and so do Bennett and most school texts. De Vaan reports Forssman's view that it originally had a short vowel (from *\*bʰr̥tom*, not a derivative of *fūr*); Lewis & Short leaves it unmarked.
 - **Single words with notes:**
   - *hic* has a short *i* (de Vaan 284; #63).
   - *speī* has a short *e* (#55).
@@ -38,7 +40,6 @@ Records: `https://jhwheeler.github.io/lexicon-latinitatis-cotidianae/c/<id>.html
 ## Recommended words to confirm
 
 - **Leading term:**
-  - `big` now leads with *magnus*, before *grandis* (#57).
   - `wake-someone-up` recommends *expergēfaciō*, but *excitō* is Cicero's and Livy's word (#59).
   - `building-site` recommends our own *locus ubi aedificātur*, with the classical *ārea* only as an alternative (#60).
   - `chapel` marks the medieval *capella* "avoid" and recommends *sacellum* (#60).
@@ -92,25 +93,17 @@ Records: `https://jhwheeler.github.io/lexicon-latinitatis-cotidianae/c/<id>.html
 
 ## Records to keep or drop
 
-- **`totoro`:** a character's name as a headword (#39).
-- **`osoitsa`, `antanhol`:** the family's villages, in a public lexicon (#35).
 - **Animal sounds:** quack, hoot and cackle recommend *clāmat*. Do they need records of their own? (#38)
 
 ## Slips in the loci collections (latinitas)
 
-The drafters found these while checking quotations. Nothing here quotes the faulty rows.
+Fixed on 9 November 2026 in latinitas:
+- *frusta* (Sen. Ep. 72.8), and *crustula*, *crustulum*, *crustulō*, as the series spells *frustum* and *crusta*;
+- the words dropped from Ter. Eun. 190–91;
+- *vēnit* (Hor. S. 1.5.88, where the metre needs it);
+- the whole of Hor. Epist. 1.16.55–56, with a gloss that no longer inverts it, here and in the quantity note;
+- *ēsse* and *hoc noctis* (Plaut. Amph. 310);
+- *succīncta*, *Mediōlānium*, *factūrusne*, *Vēnditor* and *Ēmptor*;
+- *āëra* with the house diaeresis, in the loci and in the Carmina.
 
-- **loci-seneca-epistulae:** Ep. 72.8 prints *frūsta*; the series spelling is *frustum*. (#53)
-- **loci-terentius:** the Eun. 190–91 row drops words without an ellipsis. (#53)
-- **loci-horatius:**
-  - S. 1.5.88 *venit* should be *vēnit* (from *vēneō*), as the metre needs. (#54)
-  - S. 1.1.26 *crūstula*: the house spelling is *crustula*. (#63)
-  - The Epist. 1.16.55–56 row stops before *mihi pacto lenius isto*, so its gloss says the opposite of Horace. (#64)
-- **loci-plautus:** Amph. 310 *esse* should be *ēsse*, "eat". (#54)
-- **loci-schottenius:** *succincta* should be *succīncta*. (#58)
-- **loci-augustinus:** *Mediolānium*; Lewis & Short has *Mediōlānum*. (#60)
-- **loci-vulgata:** Lc. 15.22 *Citō*; Lewis & Short has *citŏ*. (#60)
-- **loci-ovidius:** Met. 6.350 *āera*; the house writes *āëra*. (#57)
-- **loci-livius:** praef. 1 *facturusne* should be *factūrusne*. (#65)
-- **loci-comenius:** OP 126 lacks the macrons on *Vēnditor* and *Ēmptor*. (#65)
-- ***fūrtum*:** the loci write it long, but de Vaan (s.v. *fūr*, after Forssman) gives *furtum* a short vowel. (#64)
+Two flagged items turned out to be questions of quantity, not slips, and are listed under vowel lengths above: *citō* and *fūrtum*.

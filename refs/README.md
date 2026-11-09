@@ -1,0 +1,3 @@
+# Reference data
+
+`lewis-short-headwords.tsv` lists the headwords of Lewis & Short, *A Latin Dictionary* (1879), as the Perseus Digital Library prints them, with the macrons and breves of their orthography: one line per entry, `key<TAB>headword`. It is extracted from `CTS_XML_TEI/perseus/pdllex/lat/ls/lat.ls.perseus-eng1.xml` in [PerseusDL/lexica](https://github.com/PerseusDL/lexica); the dictionary is in the public domain, and the Perseus encoding is licensed CC BY-SA 3.0 US, so this extract is shared under the same licence, with credit to the Perseus Project, Tufts University. `scripts/check_quantities.py` uses it to compare the lexicon's vowel lengths with Lewis & Short wherever Lewis & Short marks them.

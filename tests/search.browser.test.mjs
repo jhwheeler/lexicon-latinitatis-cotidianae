@@ -117,6 +117,31 @@ test('a record is found as a definition by its headword, which its answer line d
   assert.equal(await first.locator('h3').textContent(), 'caccabus (cacabus), caccabī m.');
 });
 
+test('a Latin word is found from any of its forms, with a note naming the form', async () => {
+  await search('piscinam');
+  const first = page.locator('.search-result').first();
+  assert.equal(await first.getAttribute('data-result-for'), 'c-swimming-pool');
+  assert.match(await first.locator('.eyebrow').textContent(), /Definition/);
+  assert.equal(await first.locator('.form-of').textContent(), '“piscinam” is a form of piscīna.');
+  await search('cucurrit');
+  assert.equal(await page.locator('.search-result').first().getAttribute('data-result-for'), 'c-run');
+  // The headword itself needs no note.
+  await search('piscina');
+  assert.equal(await page.locator('[data-result-for="c-swimming-pool"] .form-of').count(), 0);
+});
+
+test('when nothing matches, the entries one letter off are offered', async () => {
+  await page.locator('#search').fill('pyjams');
+  await page.waitForFunction(() => /close spelling/.test(document.getElementById('results').textContent));
+  assert.deepEqual(await resultIds(), ['c-pyjamas']);
+  assert.match(await page.locator('.search-result .eyebrow').first().textContent(), /Close spelling/);
+  assert.equal(await page.locator('#empty').isVisible(), false);
+  await page.locator('#search').fill('piscnia');
+  await page.waitForFunction(() => document.querySelector('.search-result')?.dataset.resultFor === 'c-swimming-pool');
+  await search('qqqqqq');
+  assert.equal(await page.locator('#empty').isVisible(), true);
+});
+
 test('literal input never becomes HTML and no-match state recovers', async () => {
   await search('<img src=x onerror=alert(1)>');
   assert.equal(await page.locator('#empty').isVisible(), true);

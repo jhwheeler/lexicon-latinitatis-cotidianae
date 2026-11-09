@@ -1,0 +1,80 @@
+{
+  "id": "due-owed",
+  "english": "due",
+  "sense": "owed; payable on a set day",
+  "pos": "adjective",
+  "also": [
+    "owed",
+    "owing",
+    "payable",
+    "owe",
+    "due date",
+    "fall due"
+  ],
+  "domain": "pecunia",
+  "also_under": [
+    "verba"
+  ],
+  "terms": [
+    {
+      "latin": "dēbeō, dēbēre, dēbuī, dēbitum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "owe; in the passive, be owed, be due",
+      "grammar": "verb, second conjugation",
+      "evidence": [
+        "Cic. Att. 14.18.1: <span lang=\"la\">Kal. Jān. dēbuit, adhūc nōn solvit</span>",
+        "Cic. Fam. 3.5.4: <span lang=\"la\">pecūnia … quae mihi ex pūblicā permūtātiōne dēbētur</span>"
+      ],
+      "comment": "“It is due” is the passive, <span lang=\"la\">dēbētur</span>; what is due, <span lang=\"la\">dēbitum</span>.",
+      "notes": [
+        "debeo"
+      ]
+    },
+    {
+      "latin": "diēs, diēī f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the due date, the day set",
+      "grammar": "noun, fifth declension; feminine in this sense",
+      "evidence": [
+        "Caes. BG 6.33.4: <span lang=\"la\">quam ad diem eī legiōnī … dēbērī frūmentum sciēbat</span>",
+        "Caes. BG 1.8.3: <span lang=\"la\">ubi ea diēs quam cōnstituerat cum lēgātīs vēnit</span>"
+      ],
+      "comment": "A day fixed in advance, for a payment, a meeting or a hearing, is feminine (Lewis &amp; Short; see day)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Kal. Jān. dēbuit, adhūc nōn solvit",
+      "english": "the money was due on the first of January, and he still hasn’t paid",
+      "source": "Cic. Att. 14.18.1"
+    },
+    {
+      "latin": "quam ad diem eī legiōnī quae in praesidiō relinquēbātur dēbērī frūmentum sciēbat",
+      "english": "the day on which, as he knew, corn was due to the legion left on guard",
+      "source": "Caes. BG 6.33.4"
+    }
+  ],
+  "notes": {
+    "debeo": {
+      "html": "With an infinitive, <span lang=\"la\">dēbeō</span> speaks of a duty, never of what is merely expected to happen: Lewis &amp; Short, in classical prose always of moral necessity.",
+      "ruling": "debeo-duty"
+    }
+  },
+  "related": [
+    "debt",
+    "pay",
+    "bill",
+    "day"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/debeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: debeo</a> · <a href=\"https://logeion.uchicago.edu/dies\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dies</a>",
+    "Cicero’s letters and Caesar checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

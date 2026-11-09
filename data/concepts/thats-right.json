@@ -2,6 +2,11 @@
   "id": "thats-right",
   "english": "that’s right",
   "pos": "phrase",
+  "also": [
+    "exactly!",
+    "quite so",
+    "just so"
+  ],
   "domain": "sermo",
   "terms": [
     {
@@ -19,14 +24,27 @@
       "evidence": [
         "Traupman 107, 109"
       ]
+    },
+    {
+      "latin": "Ita prōrsus.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "exactly, quite so",
+      "evidence": [
+        "Cic. Tusc. 2.67: <span lang=\"la\">Ita prōrsus</span>",
+        "Cic. Tusc. 1.11: <span lang=\"la\">Ita prōrsus exīstimō.</span>"
+      ],
+      "comment": "Cicero names <span lang=\"la\">Admodum</span> and <span lang=\"la\">Prōrsus ita est</span> as the replies said in conversation to let it move on (Leg. 3.26, quoted by Lewis &amp; Short, s.v. <span lang=\"la\">admodum</span>)."
     }
   ],
   "related": [
     "youre-right",
-    "i-think-so"
+    "i-think-so",
+    "yes"
   ],
   "sources": [
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): pp. 107, 109."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): pp. 107, 109.",
+    "<a href=\"https://logeion.uchicago.edu/prorsus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: prorsus</a> · <a href=\"https://logeion.uchicago.edu/ita\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ita</a> · <a href=\"https://logeion.uchicago.edu/admodum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: admodum</a>. Cicero’s <em>Tusculans</em> checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
   ],
   "review": {
     "status": "draft",

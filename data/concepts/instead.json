@@ -1,0 +1,79 @@
+{
+  "id": "instead",
+  "english": "instead",
+  "sense": "in place of",
+  "pos": [
+    "adverb",
+    "preposition"
+  ],
+  "also": [
+    "instead of",
+    "in place of",
+    "in someone’s place",
+    "in someone’s stead"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "prō (+ ablative)",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "instead of, in place of, for",
+      "grammar": "preposition with the ablative",
+      "evidence": [
+        "Plaut. Most. 1131b: <span lang=\"la\">ego ībō prō tē, sī tibi nōn libet</span>",
+        "Ter. And. 200: <span lang=\"la\">ego prō tē molam</span>",
+        "Traupman 333: instead of, <span lang=\"la\">prō</span> (+ abl)"
+      ],
+      "comment": "One person or thing put in the place of another (Lewis &amp; Short: “with the notion of replacement or substitution”)."
+    },
+    {
+      "latin": "nōn … sed",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "not … but (this instead of that)",
+      "grammar": "conjunctions, joining any two parts of a sentence",
+      "evidence": [
+        "Gell. 7.13.2: <span lang=\"la\">nōn cuppēdiās cibōrum, sed argūtiās quaestiōnum</span>",
+        "Hor. S. 2.2.120–121: <span lang=\"la\">nōn piscibus urbe petītīs, sed pullō atque haedō</span>"
+      ],
+      "comment": "Where English says “instead of doing”, Latin sets the two side by side: not this, but that. To prefer one action to another, <span lang=\"la\">potius quam</span> (see rather)."
+    },
+    {
+      "latin": "locō (+ genitive)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "in place of, as",
+      "grammar": "ablative of locus, with a genitive",
+      "evidence": [
+        "Cic. Fam. 7.3.6: <span lang=\"la\">crīminis locō putent esse quod vīvam</span>"
+      ],
+      "comment": "Something counted as, or standing in for, something else."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Quīn venīs? — Prōmitte: ego ībō prō tē, sī tibi nōn libet.",
+      "english": "Why won’t you come? — Say yes: I’ll go instead of you, if you don’t feel like it.",
+      "source": "Plaut. Most. 1131–1131b"
+    },
+    {
+      "latin": "conjectābāmus ad cēnulam nōn cuppēdiās cibōrum, sed argūtiās quaestiōnum",
+      "english": "to our little dinner we each brought, instead of delicacies, clever questions",
+      "source": "Gell. 7.13.2"
+    }
+  ],
+  "related": [
+    "rather"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/pro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pro</a> · <a href=\"https://logeion.uchicago.edu/sed\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sed</a> · <a href=\"https://logeion.uchicago.edu/locus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: locus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 333.",
+    "Quotations from the Latinitas loci collections (loci-gellius, loci-horatius), checked against the editions named there; Plautus, Terence and Cicero’s letters checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

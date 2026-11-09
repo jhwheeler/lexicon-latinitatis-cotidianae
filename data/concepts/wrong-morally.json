@@ -1,0 +1,94 @@
+{
+  "id": "wrong-morally",
+  "english": "wrong",
+  "sense": "morally wrong, not right",
+  "pos": [
+    "adjective",
+    "noun"
+  ],
+  "also": [
+    "it’s wrong to",
+    "do wrong",
+    "right and wrong",
+    "a wrong",
+    "wrong someone"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "nefās",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "wrong, not to be done; a wrong",
+      "grammar": "noun, indeclinable; nefās est with an infinitive, it is wrong to",
+      "evidence": [
+        "Cic. Fam. 15.21.5: <span lang=\"la\">quae cum tibi liceat, mihi nefās sit oblīvīscī</span>",
+        "Cic. Att. 9.2a.1: <span lang=\"la\">quam sit turpe mē adesse … nefās esse approbāre</span>",
+        "Traupman 409: wrong (morally), <span lang=\"la\">nefas</span>"
+      ],
+      "comment": "What the gods and decency forbid; its opposite is <span lang=\"la\">fās</span>, and right and wrong together are <span lang=\"la\">fās atque nefās</span>. A strong word, though Cicero uses it freely in his letters; milder is <span lang=\"la\">turpe est</span>, it is shameful.",
+      "notes": [
+        "nefas"
+      ]
+    },
+    {
+      "latin": "prāvus, prāva, prāvum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "wrong, bad (the opposite of rēctus)",
+      "evidence": [
+        "Cic. Ac. 1.37: <span lang=\"la\">rēctē facta sōla in bonīs āctiōnibus pōnēns, prāvē id est peccāta in malīs</span>"
+      ],
+      "comment": "Literally “crooked”. The adverb <span lang=\"la\">prāvē</span>, wrongly, is the opposite of <span lang=\"la\">rēctē</span> (Lewis &amp; Short)."
+    },
+    {
+      "latin": "injūria, injūriae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a wrong done to someone, an injustice",
+      "evidence": [
+        "Ter. Ad. 189: <span lang=\"la\">tamen tibi ā mē nūlla orta est injūria</span>"
+      ],
+      "comment": "To wrong someone is <span lang=\"la\">injūriam alicui facere</span> (Cic. Fin. 3.71, Lewis &amp; Short); the ablative <span lang=\"la\">injūriā</span> is “wrongly, unjustly”."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "tū velim tua in mē studia et officia multum tēcum recordēre. quae cum tibi liceat, mihi nefās sit oblīvīscī",
+      "english": "I’d like you to think often of your goodness and kindness to me: you may forget them, but for me it would be wrong to",
+      "source": "Cic. Fam. 15.21.5"
+    },
+    {
+      "latin": "quippe ubi fās versum atque nefās",
+      "english": "for here right and wrong are turned upside down",
+      "source": "Verg. G. 1.505"
+    },
+    {
+      "latin": "tamen tibi ā mē nūlla orta est injūria",
+      "english": "and yet you have had no wrong from me",
+      "source": "Ter. Ad. 189"
+    }
+  ],
+  "notes": {
+    "nefas": {
+      "form": "nefās",
+      "claim": "long a",
+      "against": "Lewis &amp; Short leaves it unmarked; Traupman 409 <span lang=\"la\">nefas</span>",
+      "html": "<span lang=\"la\">Fās</span> with the negative <span lang=\"la\">ne-</span>. De Vaan 203, s.v. <span lang=\"la\">fās</span>: from *bʰeh₂-os, “saying”, the root of <span lang=\"la\">fārī</span> and <span lang=\"la\">fāma</span>."
+    }
+  },
+  "related": [
+    "wrong-incorrect",
+    "allow"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/nefas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nefas</a> · <a href=\"https://logeion.uchicago.edu/pravus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pravus</a> · <a href=\"https://logeion.uchicago.edu/injuria\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: injuria</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 409. Michiel de Vaan, <em>Etymological Dictionary of Latin and the other Italic Languages</em> (2008), p. 203.",
+    "Cicero (letters, Academica, De finibus), Terence and Vergil checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

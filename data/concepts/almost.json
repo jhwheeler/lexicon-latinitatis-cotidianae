@@ -2,12 +2,45 @@
   "id": "almost",
   "english": "almost",
   "pos": "adverb",
+  "also": [
+    "nearly"
+  ],
   "domain": "ludi",
+  "also_under": [
+    "verba"
+  ],
   "terms": [
     {
       "latin": "paene",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "gloss": "almost, nearly",
+      "grammar": "adverb",
+      "evidence": [
+        "Plaut. Bacch. 586: <span lang=\"la\">forēs paene exfrēgistī</span>",
+        "Hor. S. 1.5.71–72: <span lang=\"la\">sēdulus hospes paene macrōs ārsit dum turdōs versat in ignī</span>"
+      ]
+    },
+    {
+      "latin": "prope",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "nearly, almost (of degree)",
+      "grammar": "adverb",
+      "evidence": [
+        "Liv. 21.56.6: <span lang=\"la\">elephantōs prope omnēs absūmpsit</span>"
+      ]
+    },
+    {
+      "latin": "propemodum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "nearly, just about; as an answer, “nearly”",
+      "grammar": "adverb",
+      "evidence": [
+        "Ter. Ph. 211c–211d: <span lang=\"la\">Quid sī sīc? — Propemodum.</span>",
+        "Cic. Tusc. 1.94: <span lang=\"la\">in eādem propemodum brevitāte quā illae bēstiolae reperiēmur</span>"
+      ]
     }
   ],
   "phrases": [
@@ -20,6 +53,16 @@
       "latin": "Paene fēcistī!",
       "english": "You almost did it!",
       "source": "composed"
+    },
+    {
+      "latin": "Satin' sīc est? — Nōn. — Quid sī sīc? — Propemodum. — Quid sī sīc? — Sat est.",
+      "english": "Is this all right? — No. — What about this? — Nearly. — And this? — That’ll do.",
+      "source": "Ter. Ph. 211–211f"
+    },
+    {
+      "latin": "forēs paene exfrēgistī. quid nunc vīs tibi?",
+      "english": "you nearly broke the door down. What do you want now?",
+      "source": "Plaut. Bacch. 586"
     }
   ],
   "related": [
@@ -27,7 +70,8 @@
     "miss"
   ],
   "sources": [
-    "<a href=\"https://logeion.org/paene\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: paene</a>",
+    "<a href=\"https://logeion.org/paene\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: paene</a> · <a href=\"https://logeion.uchicago.edu/prope\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: prope</a> · <a href=\"https://logeion.uchicago.edu/propemodum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: propemodum</a>",
+    "Quotations from the Latinitas loci collections (loci-terentius, loci-horatius, loci-livius), checked against the editions named there; Plautus, Terence and Cicero also checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>.",
     "The example sentences marked “composed” are ours."
   ],
   "review": {

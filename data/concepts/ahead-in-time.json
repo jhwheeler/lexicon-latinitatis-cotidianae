@@ -1,0 +1,80 @@
+{
+  "id": "ahead-in-time",
+  "english": "ahead",
+  "sense": "of time: in advance, looking to the future",
+  "pos": "adverb",
+  "also": [
+    "plan ahead",
+    "think ahead",
+    "look ahead",
+    "ahead of time",
+    "for the future"
+  ],
+  "domain": "tempus",
+  "also_under": [
+    "verba"
+  ],
+  "terms": [
+    {
+      "latin": "prōspiciō, prōspicere, prōspexī, prōspectum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "look ahead, plan ahead, provide for what is coming",
+      "grammar": "verb, third conjugation (-iō)",
+      "evidence": [
+        "Cic. Fam. 2.8.1: <span lang=\"la\">ab homine longē in posterum prōspiciente</span>",
+        "Ter. Ph. 781–782: <span lang=\"la\">plāgae crēscunt, nisi prōspicis</span>"
+      ],
+      "comment": "“To think far ahead” is <span lang=\"la\">longē in posterum prōspicere</span>; with <span lang=\"la\">ut</span> or <span lang=\"la\">nē</span>, to see to it beforehand that … (Lewis &amp; Short)."
+    },
+    {
+      "latin": "in posterum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "for the future, from now on",
+      "grammar": "adverbial phrase",
+      "evidence": [
+        "Caes. BC 1.3.1: <span lang=\"la\">laudat prōmptōs atque in posterum cōnfirmat</span>"
+      ],
+      "comment": "Also “till the next day”, short for <span lang=\"la\">in posterum diem</span> (Lewis &amp; Short)."
+    },
+    {
+      "latin": "ante tempus",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "ahead of time, before the time; too soon",
+      "evidence": [
+        "Traupman 270, 394: ahead of time, <span lang=\"la\">ante tempus</span>",
+        "Cic. Tusc. 1.93: <span lang=\"la\">ante tempus morī miserum esse</span>"
+      ],
+      "comment": "Classically “before the proper time, too soon” (Lewis &amp; Short); in good time is <span lang=\"la\">mātūrē</span> (see early)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "praesēns quod fuerat malum in diem abiit: plāgae crēscunt, nisi prōspicis",
+      "english": "the trouble that was here has only been put off: the beatings will pile up unless you think ahead",
+      "source": "Ter. Ph. 781–782"
+    },
+    {
+      "latin": "sed ut ab homine longē in posterum prōspiciente futūra exspectō",
+      "english": "but from a man who looks far ahead I expect news of what is to come",
+      "source": "Cic. Fam. 2.8.1"
+    }
+  ],
+  "related": [
+    "ahead-in-front",
+    "early",
+    "future"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/prospicio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: prospicio</a> · <a href=\"https://logeion.uchicago.edu/posterus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: posterus</a> · <a href=\"https://logeion.uchicago.edu/tempus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tempus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 270, 394.",
+    "Terence, Cicero and Caesar checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

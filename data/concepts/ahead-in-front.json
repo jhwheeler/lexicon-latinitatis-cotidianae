@@ -1,0 +1,85 @@
+{
+  "id": "ahead-in-front",
+  "english": "ahead",
+  "sense": "in front, on before the others",
+  "pos": "adverb",
+  "also": [
+    "go on ahead",
+    "go ahead of",
+    "run ahead",
+    "send ahead",
+    "lead the way"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "praeeō, praeīre, praeīvī (praeiī), praeitum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "go ahead, go in front, lead the way",
+      "grammar": "verb, irregular (a compound of eō), with the dative of the person",
+      "evidence": [
+        "Cic. Rep. 2.55: <span lang=\"la\">ut singulīs cōnsulibus alternīs mēnsibus līctōrēs praeīrent</span>"
+      ],
+      "comment": "Latin puts “ahead” into the verb with <span lang=\"la\">prae-</span>: <span lang=\"la\">praeīre</span>, go ahead; <span lang=\"la\">praecurrere</span>, run ahead; <span lang=\"la\">praemittere</span>, send ahead."
+    },
+    {
+      "latin": "ī prae (abī prae)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "go on ahead (I’ll follow)",
+      "register": "vōx cōmica: Plaut., Ter. (Lewis &amp; Short: the adverb <span lang=\"la\">prae</span> is ante-classical)",
+      "evidence": [
+        "Ter. And. 171b: <span lang=\"la\">Ī prae, sequar.</span>",
+        "Plaut. Amph. 543b–544: <span lang=\"la\">Abī prae, Sōsia, jam ego sequar.</span>"
+      ]
+    },
+    {
+      "latin": "praecurrō, praecurrere, praecucurrī, praecursum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "run ahead",
+      "evidence": [
+        "Ter. Hec. 371: <span lang=\"la\">ūna illārum intereā properē praecucurrit</span>",
+        "Plaut. Merc. 223b: <span lang=\"la\">quīn ea ego hūc praecucurrī grātiā</span>"
+      ]
+    },
+    {
+      "latin": "praemittō, praemittere, praemīsī, praemissum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "send ahead",
+      "evidence": [
+        "Plaut. Amph. 602: <span lang=\"la\">ā portū mē praemīsistī domum</span>",
+        "Caes. BC 1.39.2: <span lang=\"la\">Caesar legiōnēs in Hispāniam praemīserat</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Abī prae, Sōsia, jam ego sequar.",
+      "english": "Go on ahead, Sosia; I’ll follow in a moment.",
+      "source": "Plaut. Amph. 543b–544"
+    },
+    {
+      "latin": "nam ut dūdum ante lūcem ā portū mē praemīsistī domum",
+      "english": "for when you sent me on ahead from the harbour, home, before dawn",
+      "source": "Plaut. Amph. 602"
+    }
+  ],
+  "related": [
+    "in-front-of",
+    "forward",
+    "straight-on",
+    "ahead-in-time"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/praeeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praeeo</a> · <a href=\"https://logeion.uchicago.edu/prae\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: prae</a> · <a href=\"https://logeion.uchicago.edu/praecurro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praecurro</a> · <a href=\"https://logeion.uchicago.edu/praemitto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praemitto</a>",
+    "Plautus, Terence, Cicero and Caesar checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>; the Amphitruo farewell is also in the Latinitas loci collection (loci-plautus)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "id": "mind-object",
+  "english": "mind",
+  "sense": "object, be bothered",
+  "pos": "verb",
+  "also": [
+    "do you mind?",
+    "I don’t mind",
+    "if you don’t mind",
+    "would you mind"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "molestum est",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "it bothers (someone); do you mind?",
+      "evidence": [
+        "Catull. 55.1: <span lang=\"la\">sī forte nōn molestum est</span>",
+        "Cic. Clu. 168: <span lang=\"la\">tū autem, nisi molestum est, paulisper exsurge</span>",
+        "Traupman 103: <span lang=\"la\">sī tibi molestum nōn est</span>"
+      ],
+      "comment": "With a dative of the person. <span lang=\"la\">Nisi molestum est</span> or <span lang=\"la\">sī nōn molestum est</span>: if you don’t mind."
+    },
+    {
+      "latin": "molestē ferre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "mind, take it badly",
+      "evidence": [
+        "Cic. Att. 13.22.4 (Lewis &amp; Short)",
+        "Traupman 103: <span lang=\"la\">istuc quidem nōn molestē ferō</span>"
+      ],
+      "comment": "<span lang=\"la\">Nōn molestē ferō</span>: I don’t mind."
+    },
+    {
+      "latin": "nōn moror",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "I don’t mind, I have no objection",
+      "evidence": [
+        "Ter. Eun. 459: <span lang=\"la\">Ubi vīs, nōn moror.</span>",
+        "Ant. in Cic. Phil. 13.35: <span lang=\"la\">nihil moror eōs salvōs esse</span>"
+      ],
+      "comment": "Lewis &amp; Short: “I have no objection”."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ōrāmus, sī forte nōn molestum est, dēmōnstrēs ubi sint tuae tenebrae",
+      "english": "Please, if you don’t mind, show us where your hiding place is.",
+      "source": "Catull. 55.1–2"
+    },
+    {
+      "latin": "Ubi vīs, nōn moror.",
+      "english": "Whenever you like; I’ve no objection.",
+      "source": "Ter. Eun. 459"
+    }
+  ],
+  "related": [
+    "never-mind",
+    "it-makes-no-difference",
+    "care-about",
+    "mind-your-fingers"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/molestus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: molestus</a> · <a href=\"https://logeion.uchicago.edu/moror\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: moror</a>",
+    "Quotations from the Latinitas loci collections (loci-catullus), as checked there against the editions they name.",
+    "Ter. Eun. 459 and Cic. Clu. 168, Phil. 13.35 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 103, checked against the searchable text of the book."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

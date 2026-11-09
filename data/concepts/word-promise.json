@@ -1,0 +1,75 @@
+{
+  "id": "word-promise",
+  "english": "word",
+  "sense": "promise",
+  "pos": "noun",
+  "also": [
+    "give one’s word",
+    "keep one’s word",
+    "break one’s word",
+    "you have my word"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "fidēs, fideī f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "one’s word, pledge, good faith",
+      "evidence": [
+        "Cic. Off. 1.39: <span lang=\"la\">fidem hostī datam fallere</span>",
+        "Cic. Off. 1.23: <span lang=\"la\">fundāmentum autem est jūstitiae fidēs</span>"
+      ],
+      "comment": "<span lang=\"la\">Fidem dare</span>, to give one’s word (Cic. Rab. Perd. 28); <span lang=\"la\">fidem servāre</span>, to keep it (Caes. BG 6.36); <span lang=\"la\">fidem fallere</span> or <span lang=\"la\">frangere</span>, to break it (Lewis &amp; Short)."
+    },
+    {
+      "latin": "prōmissum, prōmissī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a promise",
+      "evidence": [
+        "Traupman 106: <span lang=\"la\">prōmissa servāre</span>",
+        "M-O s.v. promise, keep a"
+      ],
+      "comment": "<span lang=\"la\">Prōmissa servāre</span>, to keep one’s promises (Cic., in Morgan–Owens)."
+    },
+    {
+      "latin": "verba dare",
+      "status": "avoid",
+      "period": "classical",
+      "gloss": "cheat, deceive",
+      "evidence": [
+        "Ter. And. 211: <span lang=\"la\">Cui verba dare difficile est.</span>",
+        "Cic. Att. 15.16a (Lewis &amp; Short)"
+      ],
+      "comment": "A false friend: <span lang=\"la\">verba dare alicui</span> is to fob someone off with words, to cheat him (Lewis &amp; Short), not to give one’s word."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ad supplicium redīre māluit quam fidem hostī datam fallere",
+      "english": "he chose to go back to be put to death rather than break the word he had given the enemy",
+      "source": "Cic. Off. 1.39"
+    },
+    {
+      "latin": "fundāmentum autem est jūstitiae fidēs, id est dictōrum conventōrumque cōnstantia et vēritās",
+      "english": "and the foundation of justice is good faith: that is, standing by what has been said and agreed, and being true to it",
+      "source": "Cic. Off. 1.23"
+    }
+  ],
+  "related": [
+    "word"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/fides\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fides</a> · <a href=\"https://logeion.uchicago.edu/promissum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: promissum</a> · <a href=\"https://logeion.uchicago.edu/verbum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: verbum</a>",
+    "Quotations from the Latinitas loci collections (loci-cicero-philosophica), as checked there against the editions they name.",
+    "Cic. Off. 1.39 and Ter. And. 211 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 106, checked against the searchable text of the book.",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. promise, keep a."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

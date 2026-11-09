@@ -1,0 +1,69 @@
+{
+  "id": "feel-well-or-ill",
+  "english": "feel",
+  "sense": "well or ill",
+  "pos": "verb",
+  "also": [
+    "how do you feel?",
+    "feel fine"
+  ],
+  "domain": "verba",
+  "also_under": [
+    "corpus"
+  ],
+  "terms": [
+    {
+      "latin": "sē habēre (bene, male, melius)",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "feel (well, ill, better)",
+      "evidence": [
+        "Cic. Att. 12.37.1: <span lang=\"la\">Pīliam et Atticam plānē bellē sē habēre</span>",
+        "Traupman 98: <span lang=\"la\">sē male (bene) habēre</span>"
+      ],
+      "comment": "With an adverb: <span lang=\"la\">bene, male, melius mē habeō</span>. For “feel” with an adjective Latin mostly uses <span lang=\"la\">esse</span>: <span lang=\"la\">fessus sum</span>, I feel tired."
+    },
+    {
+      "latin": "valeō, valēre, valuī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "be well, feel well",
+      "evidence": [
+        "Cic. Fam. 14.8.1: <span lang=\"la\">sī valēs, bene est, ego valeō</span>",
+        "Traupman 98: <span lang=\"la\">minus valeō</span>, <span lang=\"la\">melius valeō</span>"
+      ],
+      "comment": "<span lang=\"la\">Minus valeō</span>, I’m not so well; <span lang=\"la\">melius valeō</span>, I feel better. Cicero’s letters open <span lang=\"la\">Sī valēs, bene est, ego valeō</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ut prīmum gravitātem urbis excessī et illum odōrem culīnārum fūmantium … prōtinus mūtātam valētūdinem sēnsī",
+      "english": "as soon as I had left the heavy air of the city and that smell of smoking kitchens … I felt better at once",
+      "source": "Sen. Ep. 104.6"
+    },
+    {
+      "latin": "sī valēs, bene est, ego valeō. valētūdinem tuam velim cūrēs dīligentissimē.",
+      "english": "If you are well, good; I am well. Please take the greatest care of your health.",
+      "source": "Cic. Fam. 14.8.1"
+    }
+  ],
+  "related": [
+    "i-dont-feel-well",
+    "i-feel-better",
+    "how-are-you",
+    "im-fine",
+    "feel-perceive",
+    "hurt"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/habeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: habeo</a> · <a href=\"https://logeion.uchicago.edu/valeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: valeo</a>",
+    "Quotations from the Latinitas loci collections (loci-seneca-epistulae, loci-cicero-epistulae (Pīlia spelt as there)), as checked there against the editions they name.",
+    "Cic. Att. 12.37.1 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 98, checked against the searchable text of the book."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

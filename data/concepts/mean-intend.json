@@ -1,0 +1,113 @@
+{
+  "id": "mean-intend",
+  "english": "mean",
+  "sense": "intend",
+  "pos": "verb",
+  "also": [
+    "intend",
+    "mean to",
+    "on purpose",
+    "I didn’t mean to",
+    "what do you mean?"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "in animō habēre",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "mean to, intend (with an infinitive)",
+      "evidence": [
+        "Cic. Fam. 14.11: <span lang=\"la\">nōbīs erat in animō Cicerōnem ad Caesarem mittere</span>",
+        "Liv. praef. 6: <span lang=\"la\">ea nec adfirmāre nec refellere in animō est</span>",
+        "Traupman 104: <span lang=\"la\">in animō habēre</span> (+ inf.)"
+      ],
+      "comment": "Also <span lang=\"la\">mihi in animō est</span>, with an infinitive."
+    },
+    {
+      "latin": "volō, velle, voluī",
+      "status": "alternative",
+      "period": "classical",
+      "grammar": "verb, irregular",
+      "gloss": "mean to, intend",
+      "evidence": [
+        "Ter. Ph. 19: <span lang=\"la\">Hic respondēre voluit, nōn lacessere.</span>",
+        "Ter. Eun. 797: <span lang=\"la\">Quid tu tibi vīs?</span>"
+      ],
+      "comment": "Lewis &amp; Short: “to intend, purpose, mean”. “I meant to” is often simply <span lang=\"la\">volēbam</span>; <span lang=\"la\">Quid tibi vīs?</span>, “What do you mean (by this)? What are you after?”."
+    },
+    {
+      "latin": "cōgitō, cōgitāre, cōgitāvī, cōgitātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "intend, plan (with an infinitive)",
+      "evidence": [
+        "Cato, Agr. 1.1: <span lang=\"la\">praedium quom parāre cōgitābis</span>"
+      ],
+      "comment": "Lewis &amp; Short: “to have something in mind, to intend, meditate, design, plan”."
+    },
+    {
+      "latin": "cōnsultō",
+      "status": "alternative",
+      "period": "classical",
+      "grammar": "adverb",
+      "gloss": "on purpose",
+      "evidence": [
+        "Cic. Off. 1.27: <span lang=\"la\">an cōnsultō et cōgitātā fīat injūria</span>"
+      ],
+      "comment": "<span lang=\"la\">Nōn cōnsultō fēcī</span>: I didn’t mean to."
+    },
+    {
+      "latin": "imprūdēns, imprūdentis",
+      "status": "alternative",
+      "period": "classical",
+      "grammar": "adjective, third declension",
+      "gloss": "without meaning to, unawares",
+      "evidence": [
+        "Ter. Hec. 880: <span lang=\"la\">fēcī imprūdēns quam sciēns</span>",
+        "Traupman 104: by mistake, <span lang=\"la\">imprūdēns</span>"
+      ],
+      "comment": "Agrees with the subject: <span lang=\"la\">imprūdēns fēcī</span>, I did it without meaning to."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ea nec adfirmāre nec refellere in animō est",
+      "english": "I don’t mean either to vouch for these stories or to refute them.",
+      "source": "Liv. praef. 6"
+    },
+    {
+      "latin": "Hic respondēre voluit, nōn lacessere.",
+      "english": "He meant to answer, not to provoke.",
+      "source": "Ter. Ph. 19"
+    },
+    {
+      "latin": "Quid tu tibi vīs?",
+      "english": "What do you mean by it?",
+      "source": "Ter. Eun. 797"
+    },
+    {
+      "latin": "Nōn cōnsultō fēcī, tata.",
+      "english": "I didn’t mean to, Daddy.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "mean-signify",
+    "want",
+    "think-ponder",
+    "really"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/animus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: animus</a> · <a href=\"https://logeion.uchicago.edu/volo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: volo</a> · <a href=\"https://logeion.uchicago.edu/cogito\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cogito</a> · <a href=\"https://logeion.uchicago.edu/consulto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: consulto</a> · <a href=\"https://logeion.uchicago.edu/imprudens\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: imprudens</a>",
+    "Quotations from the Latinitas loci collections (loci-livius, loci-cato), as checked there against the editions they name.",
+    "Cic. Fam. 14.11 and Off. 1.27, Ter. Eun. 797, Hec. 880 and Ph. 19 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 104, checked against the searchable text of the book.",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

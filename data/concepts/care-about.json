@@ -1,0 +1,91 @@
+{
+  "id": "care-about",
+  "english": "care",
+  "sense": "about something",
+  "pos": "verb",
+  "also": [
+    "care about",
+    "I don’t care",
+    "what do I care?"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "cūrō, cūrāre, cūrāvī, cūrātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "care about",
+      "evidence": [
+        "Plaut. Most. 627: <span lang=\"la\">nōn ego istuc cūrō quī sit quid sit unde sit</span>",
+        "Cic. N. D. 2.167: <span lang=\"la\">magna dī cūrant, parva neglegunt</span>",
+        "Traupman 94: <span lang=\"la\">Ista nōn cūrō.</span>"
+      ],
+      "comment": "With an accusative or a question; with a negative it is “I don’t care”: <span lang=\"la\">nōn cūrō</span>, <span lang=\"la\">nihil cūrō</span>."
+    },
+    {
+      "latin": "cūrae esse",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "be a concern (to someone), matter",
+      "evidence": [
+        "Cic. Fam. 16.4.4: <span lang=\"la\">multīs est cūrae</span>",
+        "Caes. BG 1.33 (Lewis &amp; Short): <span lang=\"la\">sibi eam rem cūrae futūram</span>"
+      ],
+      "comment": "With a dative of the person: <span lang=\"la\">mihi cūrae est</span>, I care about it, I’ll see to it."
+    },
+    {
+      "latin": "labōrō, labōrāre, labōrāvī, labōrātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "be concerned, be bothered",
+      "evidence": [
+        "Cic. Fam. 16.4.3: <span lang=\"la\">nihil labōrō, nisi ut salvus sīs</span>"
+      ],
+      "comment": "With <span lang=\"la\">dē</span> and the ablative, or <span lang=\"la\">ut</span> and the subjunctive; <span lang=\"la\">nōn labōrō</span>, it doesn’t trouble me (Lewis &amp; Short)."
+    },
+    {
+      "latin": "nīl (nihil) moror",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "I don’t care for, I can do without",
+      "evidence": [
+        "Hor. Ep. 1.15.16 (Lewis &amp; Short)",
+        "Traupman 94: <span lang=\"la\">nīl moror</span> (+ acc.)"
+      ],
+      "comment": "With an accusative; Lewis &amp; Short: “to care nothing about it”. <span lang=\"la\">Nōn moror</span> is also “I don’t mind” (see mind, object)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Nōn ego istuc cūrō quī sit quid sit unde sit",
+      "english": "I don’t care who he is, what he is or where he comes from.",
+      "source": "Plaut. Most. 627"
+    },
+    {
+      "latin": "nūllā in rē jam tē festīnāre volō; nihil labōrō, nisi ut salvus sīs",
+      "english": "I don’t want you to hurry over anything now; all I care about is that you get well.",
+      "source": "Cic. Fam. 16.4.3"
+    },
+    {
+      "latin": "magna dī cūrant, parva neglegunt",
+      "english": "The gods care about great things and neglect the small ones.",
+      "source": "Cic. N. D. 2.167"
+    }
+  ],
+  "related": [
+    "it-makes-no-difference",
+    "never-mind",
+    "care-look-after",
+    "mind-object"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/curo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: curo</a> · <a href=\"https://logeion.uchicago.edu/cura\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cura</a> · <a href=\"https://logeion.uchicago.edu/laboro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: laboro</a> · <a href=\"https://logeion.uchicago.edu/moror\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: moror</a>",
+    "Plaut. Most. 627 and Cic. Fam. 16.4.3–4, N. D. 2.167 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 94, checked against the searchable text of the book."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -89,6 +89,30 @@ button { font:inherit; color:inherit; }
   .hero { grid-template-columns:minmax(0,1fr) auto auto auto; grid-template-areas:"brand nav display actions"; column-gap:28px; padding:12px 0 6px; }
   .hero h1 { font-size:1.6rem; white-space:nowrap; }
 }
+/* The phone menu: below 720px the header's links, the display options and the theme fold into
+   one menu (Jack, 9 November 2026); wider screens keep them in the header. */
+.hero, .site-top { position:relative; }
+.menu { display:none; }
+.menu > summary { display:flex; align-items:center; justify-content:center; width:44px; height:44px; margin-right:-10px; color:var(--soft); cursor:pointer; list-style:none; }
+.menu > summary::-webkit-details-marker { display:none; }
+.menu > summary:hover, .menu[open] > summary { color:var(--ink); }
+.menu svg { width:24px; height:24px; }
+.menu .menu-close, .menu[open] .menu-icon { display:none; }
+.menu[open] .menu-close { display:block; }
+.menu-panel { position:absolute; left:0; right:0; top:100%; z-index:50; padding:0 0 8px; background:var(--paper); border-bottom:1px solid var(--rule); box-shadow:0 14px 18px -12px rgb(0 0 0 / .18); }
+.menu-nav a { display:flex; align-items:center; min-height:48px; border-bottom:1px solid var(--hair); color:var(--ink); text-decoration:none; font:400 1.08rem var(--sans); }
+.menu-nav a[aria-current="page"] { color:var(--rubric); box-shadow:inset 3px 0 0 var(--accent); padding-left:10px; }
+.menu-options { padding-top:4px; }
+.menu-options .display-row > span { min-width:8.5rem; }
+html:not(.js) .menu-options { display:none; }
+@media (max-width:719.98px) {
+  .menu { display:block; }
+  .hero { grid-template-areas:"brand menu"; }
+  .hero .menu { grid-area:menu; justify-self:end; }
+  .hero .site-nav, .hero .display-menu, .hero .header-actions, .site-top .site-tools { display:none; }
+  .site-top { flex-wrap:nowrap; }
+  .site-top .site-name { min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+}
 
 /* Search bar ----------------------------------------------------------------------------
    One rule under the search: it runs under Clear to the edge of the column, and when the bar

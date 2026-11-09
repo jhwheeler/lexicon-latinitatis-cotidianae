@@ -5,9 +5,10 @@
   "domain": "culina",
   "terms": [
     {
-      "latin": "lavō, lavāre",
+      "latin": "lavō, lavāre, lāvī, lavātum",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "comment": "Other ancient forms include the infinitive <strong lang=\"la\">lavere</strong> and participles <strong lang=\"la\">lautus</strong> and <strong lang=\"la\">lōtus</strong>."
     }
   ],
   "phrases": [
@@ -25,24 +26,56 @@
       "latin": "Tū pōma lavā; ego secābō.",
       "english": "You wash the fruit; I’ll do the cutting.",
       "source": "composed"
+    },
+    {
+      "latin": "Lavā tibi manūs.",
+      "english": "Wash your hands.",
+      "source": "composed"
+    },
+    {
+      "latin": "Manūs lavēmus.",
+      "english": "Let’s wash our hands.",
+      "source": "composed"
+    },
+    {
+      "latin": "Faciem lavā.",
+      "english": "Wash your face.",
+      "source": "composed"
+    },
+    {
+      "latin": "Aqua calida est.",
+      "english": "The water is warm.",
+      "source": "composed"
     }
   ],
   "related": [
     "rinse",
-    "dry-verb"
+    "dry-verb",
+    "hand",
+    "face",
+    "soap",
+    "bath"
   ],
   "sources": [
     "<a href=\"https://alatius.com/ls/index.php?l=lavo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lavo</a>",
     "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>",
-    "The example sentences marked “composed” are ours."
+    "The example sentences marked “composed” are ours.",
+    "<a href=\"https://logeion.uchicago.edu/lavo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lavo</a>"
   ],
   "replaces": [
     "entry-122",
-    "smoothie-122"
+    "smoothie-122",
+    "entry-63"
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "wash hands",
+    "wash your hands",
+    "wash the face",
+    "wash your face"
+  ]
 }

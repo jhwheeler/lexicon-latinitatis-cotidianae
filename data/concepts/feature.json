@@ -1,0 +1,71 @@
+{
+  "id": "feature",
+  "english": "feature",
+  "sense": "a typical or important quality",
+  "pos": "noun",
+  "also": [
+    "characteristic",
+    "trait",
+    "a feature of",
+    "typical of",
+    "hallmark",
+    "the mark of"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "proprium, propriī n.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a feature, a characteristic: what belongs to someone or something in particular",
+      "grammar": "noun, second declension (the neuter of proprius); usually proprium est with a genitive",
+      "evidence": [
+        "Cic. Off. 2.17: <span lang=\"la\">proprium hoc statuō esse virtūtis, conciliāre animōs hominum</span>",
+        "Caes. BG 6.23: <span lang=\"la\">hoc proprium virtūtis exīstimant</span>"
+      ],
+      "comment": "Lewis &amp; Short: “a characteristic mark, a sign, characteristic”. The genitive alone can say the same: <span lang=\"la\">cujusvīs hominis est errāre</span>, it is in any man’s nature to err (Cic. Phil. 12.5)."
+    },
+    {
+      "latin": "habet hoc … ut",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "has this feature (or advantage), that …",
+      "grammar": "phrase: habeō with hoc, and an ut-clause saying what the feature is",
+      "evidence": [
+        "Cic. Pis. 81: <span lang=\"la\">habet hoc virtūs … ut virōs fortīs speciēs ejus et pulchritūdō etiam in hoste posita dēlectet</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "proprium hoc statuō esse virtūtis, conciliāre animōs hominum et ad ūsūs suōs adjungere",
+      "english": "I hold this to be the mark of virtue: to win people’s hearts and attach them to one’s own service",
+      "source": "Cic. Off. 2.17"
+    },
+    {
+      "latin": "Habet hoc virtūs, quam tū nē dē faciē quidem nōstī, ut virōs fortīs speciēs ejus et pulchritūdō etiam in hoste posita dēlectet.",
+      "english": "Virtue, which you do not know even by sight, has this about it: brave men are delighted by its look and beauty even in an enemy.",
+      "source": "Cic. Pis. 81"
+    },
+    {
+      "latin": "Cujusvīs hominis est errāre",
+      "english": "Any man may make a mistake",
+      "source": "Cic. Phil. 12.5"
+    }
+  ],
+  "related": [
+    "features",
+    "special",
+    "particular-specific",
+    "advantage"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/proprius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: proprius</a> · <a href=\"https://logeion.uchicago.edu/habeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: habeo</a>",
+    "Cicero, <em>De officiis</em> 2, <em>In Pisonem</em> and <em>Philippics</em> 12, and Caesar, <em>Bellum Gallicum</em> 6, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

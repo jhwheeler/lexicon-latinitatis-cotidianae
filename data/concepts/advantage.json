@@ -1,0 +1,79 @@
+{
+  "id": "advantage",
+  "english": "advantage",
+  "sense": "a good point, a benefit",
+  "pos": "noun",
+  "also": [
+    "advantages",
+    "benefit",
+    "benefits",
+    "upside",
+    "pros and cons",
+    "advantages and disadvantages",
+    "what’s the advantage?"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "commodum, commodī n.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "advantage, a good point; the good one gets from a thing",
+      "evidence": [
+        "Cic. de Or. 2.335: <span lang=\"la\">commoda pācis … itemque incommoda contrāriōrum</span>",
+        "Cic. Tusc. 1.30: <span lang=\"la\">orbātōs vītae commodīs</span>"
+      ],
+      "comment": "Lewis &amp; Short: “advantage, profit (very freq. in all periods)”. A thing’s advantages and drawbacks are its <span lang=\"la\">commoda et incommoda</span>; for a drawback alone see problem (<span lang=\"la\">incommodum</span>). Also convenience: <span lang=\"la\">cum erit tuum commodum</span>, when it suits you (Cic. Att. 12.28.3, Lewis &amp; Short)."
+    },
+    {
+      "latin": "ūtilitās, ūtilitātis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "usefulness, advantage; in the plural, the benefits of a thing",
+      "evidence": [
+        "Cic. Lael. 32: <span lang=\"la\">sīc et ūtilitātēs ex amīcitiā maximae capientur</span>"
+      ],
+      "comment": "What a thing is good for; in Cicero’s ethics the useful, as against the honourable."
+    },
+    {
+      "latin": "prōdest",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "it is an advantage, it does good",
+      "grammar": "verb: third person of prōsum, with the dative of the person; what helps is the subject (a noun or an infinitive)",
+      "evidence": [
+        "Cic. Tusc. 4.64: <span lang=\"la\">multum prōdest ea, quae metuuntur, ipsa contemnere</span>",
+        "Traupman 92: to be of advantage, <span lang=\"la\">prōsum</span>"
+      ],
+      "comment": "“The advantage of X is …” is often turned with the verb: <span lang=\"la\">quid prōdest?</span>, what is the advantage? See benefit."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "quī ūtilitātem dēfendet, ēnumerābit commoda pācis, opum, potentiae, vectīgālium … itemque incommoda contrāriōrum",
+      "english": "whoever argues for advantage will list the advantages of peace, wealth, power and revenue … and likewise the disadvantages of their opposites",
+      "source": "Cic. de Or. 2.335"
+    },
+    {
+      "latin": "multum prōdest ea, quae metuuntur, ipsa contemnere",
+      "english": "there is great advantage in despising the very things that are feared",
+      "source": "Cic. Tusc. 4.64"
+    }
+  ],
+  "related": [
+    "benefit",
+    "advantage-over",
+    "interest-advantage",
+    "problem"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/commodum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: commodum</a> · <a href=\"https://logeion.uchicago.edu/utilitas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: utilitas</a> · <a href=\"https://logeion.uchicago.edu/prosum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: prosum</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 92, checked against the searchable text of the book (9 November 2026).",
+    "Cicero, <em>De oratore</em> 2, <em>Tusculans</em> 1 and 4 and <em>Laelius</em>, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

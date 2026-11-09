@@ -1,0 +1,71 @@
+{
+  "id": "respect-aspect",
+  "english": "respect",
+  "sense": "an aspect, a way",
+  "pos": "noun",
+  "also": [
+    "in this respect",
+    "in every respect",
+    "in some respects",
+    "in many respects",
+    "with respect to",
+    "in that respect"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "pars, partis f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "part; in phrases, a respect: omnī ex parte, in every respect",
+      "evidence": [
+        "Cic. Lael. 79: <span lang=\"la\">quod sit omnī ex parte in suō genere perfectum</span>",
+        "Cic. Att. 7.3.3: <span lang=\"la\">ex parte magnā tibi adsentior</span>"
+      ],
+      "comment": "Lewis &amp; Short: <span lang=\"la\">omnī (ex, ā) parte</span>, “in every respect, entirely”; <span lang=\"la\">ex magnā parte</span>, in great part; <span lang=\"la\">in omnēs partēs</span>, in every respect (Cic. Att. 11.6.2)."
+    },
+    {
+      "latin": "quod ad … attinet",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "with respect to, as regards",
+      "grammar": "phrase: attinet with ad and the accusative",
+      "evidence": [
+        "Cic. Att. 16.14.4: <span lang=\"la\">hominem, quod ad mē attinet, nōn ingrātum</span>",
+        "Plancus in Cic. Fam. 10.9.2: <span lang=\"la\">quod ad mē attinet, mī Cicerō</span>"
+      ],
+      "comment": "See concern (be about)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nec quicquam difficilius quam reperīre quod sit omnī ex parte in suō genere perfectum",
+      "english": "and nothing is harder than to find something perfect of its kind in every respect",
+      "source": "Cic. Lael. 79"
+    },
+    {
+      "latin": "habet enim rēs dēlīberātiōnem; etsī ex parte magnā tibi adsentior",
+      "english": "for the matter needs thinking over, though in many respects I agree with you",
+      "source": "Cic. Att. 7.3.3"
+    },
+    {
+      "latin": "Brundisī jacēre in omnīs partīs est molestum.",
+      "english": "Lying idle at Brundisium is irksome in every respect.",
+      "source": "Cic. Att. 11.6.2"
+    }
+  ],
+  "related": [
+    "concern-matter",
+    "part",
+    "respect"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/pars\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pars</a> · <a href=\"https://logeion.uchicago.edu/attineo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: attineo</a>",
+    "Cicero, <em>Laelius</em>, against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a>; the letters <em>Ad Atticum</em> and <em>Ad familiares</em> against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

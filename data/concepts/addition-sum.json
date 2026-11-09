@@ -1,0 +1,58 @@
+{
+  "id": "addition-sum",
+  "english": "addition",
+  "sense": "in arithmetic",
+  "pos": "noun",
+  "also": [
+    "add up",
+    "adding up",
+    "sums",
+    "do sums",
+    "addition and subtraction"
+  ],
+  "domain": "schola",
+  "terms": [
+    {
+      "latin": "addō, addere, addidī, additum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "add (numbers, amounts)",
+      "evidence": [
+        "Cic. Off. 1.59: <span lang=\"la\">addendō dēdūcendōque vidēre, quae reliquī summa fīat</span>"
+      ],
+      "comment": "Latin names the operation with the verb, often the gerund: <span lang=\"la\">addendō dēdūcendōque</span>, by adding and subtracting (Cic. Off. 1.59). The result is the <span lang=\"la\">summa</span>."
+    },
+    {
+      "latin": "adjiciō, adjicere, adjēcī, adjectum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "add (to)",
+      "grammar": "verb, third conjugation (-iō), with the dative or ad",
+      "evidence": [
+        "Traupman 28, 268: add, <span lang=\"la\">adjiciō</span>"
+      ],
+      "comment": "Traupman’s word in his school vocabulary; subtract is <span lang=\"la\">dētrahō</span> (Traupman 32)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ut bonī ratiōcinātōrēs officiōrum esse possīmus et addendō dēdūcendōque vidēre, quae reliquī summa fīat",
+      "english": "so that we may keep good accounts of our duties and, by adding and subtracting, see what the balance comes to",
+      "source": "Cic. Off. 1.59"
+    }
+  ],
+  "related": [
+    "add",
+    "addition"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/addo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: addo</a> · <a href=\"https://logeion.uchicago.edu/adjicio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: adjicio</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 28, 32, 268, checked against the searchable text of the book (9 November 2026).",
+    "Cicero, <em>De officiis</em> 1, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

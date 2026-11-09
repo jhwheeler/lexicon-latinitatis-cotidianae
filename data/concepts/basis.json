@@ -1,0 +1,83 @@
+{
+  "id": "basis",
+  "english": "basis",
+  "sense": "what something rests on, its grounds",
+  "pos": "noun",
+  "also": [
+    "foundation",
+    "grounds",
+    "on the basis of",
+    "based on",
+    "be based on",
+    "rest on"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "fundāmentum, fundāmentī n.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "the foundation, the basis (of a virtue, an argument, a life)",
+      "evidence": [
+        "Cic. Planc. 29: <span lang=\"la\">pietās fundāmentum est omnium virtūtum</span>",
+        "Cic. Off. 1.23: <span lang=\"la\">fundāmentum autem est jūstitiae fidēs</span>"
+      ],
+      "comment": "Of buildings usually plural (see foundations); of virtues, arguments and plans in either number: <span lang=\"la\">jacere pācis fundāmenta</span>, to lay the basis of peace (Cic. Phil. 1.1, Lewis &amp; Short)."
+    },
+    {
+      "latin": "nītor, nītī, nīsus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "rest on, be based on, rely on",
+      "grammar": "verb, third conjugation, deponent; with in and the ablative, or the ablative alone",
+      "evidence": [
+        "Cic. Div. 2.55: <span lang=\"la\">conjectūra omnis, in quā nītitur dīvīnātiō</span>",
+        "Cic. Off. 1.122: <span lang=\"la\">quōrum cōnsiliō atque auctōritāte nītātur</span>"
+      ],
+      "comment": "“X is based on Y”: <span lang=\"la\">X in Y nītitur</span>. Lewis &amp; Short: “to rest, rely, depend upon a thing”."
+    },
+    {
+      "latin": "ex (+ ablative)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "on the basis of, according to, from",
+      "grammar": "preposition, with the ablative",
+      "evidence": [
+        "Traupman 92: <span lang=\"la\">Ex verbīs tuīs colligō</span>, I infer from what you say"
+      ],
+      "comment": "What a conclusion or a claim rests on: <span lang=\"la\">ex tuīs litterīs</span>, on the strength of your letter."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "mementōte eam mē senectūtem laudāre, quae fundāmentīs adulēscentiae cōnstitūta sit",
+      "english": "remember that the old age I praise is one built on the foundations laid in youth",
+      "source": "Cic. Sen. 62"
+    },
+    {
+      "latin": "pietās fundāmentum est omnium virtūtum",
+      "english": "dutiful love is the basis of all the virtues",
+      "source": "Cic. Planc. 29"
+    },
+    {
+      "latin": "Jam teneō. Ex verbīs tuīs colligō tē pecūniam magis quam cōnsilium ā mē petere.",
+      "english": "Now I get it. I gather from what you say that you are asking me for money rather than advice.",
+      "source": "Traupman 92"
+    }
+  ],
+  "related": [
+    "foundations",
+    "base",
+    "reason"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/fundamentum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fundamentum</a> · <a href=\"https://logeion.uchicago.edu/nitor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nitor</a> · <a href=\"https://logeion.uchicago.edu/ex\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ex</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 92, checked against the searchable text of the book (9 November 2026).",
+    "Cicero, <em>Pro Plancio</em>, <em>De officiis</em> 1, <em>De divinatione</em> 2 and <em>De senectute</em>, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

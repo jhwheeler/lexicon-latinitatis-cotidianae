@@ -1,0 +1,104 @@
+{
+  "id": "benefit",
+  "english": "benefit",
+  "sense": "do good to, be good for",
+  "pos": "verb",
+  "also": [
+    "benefit from",
+    "do good",
+    "it will do you good",
+    "who benefits?",
+    "be of use",
+    "beneficial"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "prōsum, prōdesse, prōfuī",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "do good, benefit, be of use (to)",
+      "grammar": "verb, irregular (prō + sum), with the dative",
+      "evidence": [
+        "Hor. Ars 333: <span lang=\"la\">aut prōdesse volunt aut dēlectāre poētae</span>",
+        "Plin. Ep. 7.21.3: <span lang=\"la\">balineum assūmō quia prōdest</span>",
+        "Traupman 97: <span lang=\"la\">prōderit (multum, nihil) tibi</span>, it will do you (a lot of, no) good"
+      ],
+      "comment": "The person helped goes in the dative: <span lang=\"la\">tibi prōderit</span>, it will do you good. Lewis &amp; Short: of medicines, “to be good, be beneficial”. The opposite is <span lang=\"la\">obesse</span> or <span lang=\"la\">nocēre</span>."
+    },
+    {
+      "latin": "bonō esse",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "be to someone’s advantage; cui bonō? who benefits?",
+      "grammar": "phrase: the dative bonō with the dative of the person",
+      "evidence": [
+        "Cic. Rosc. Am. 84: <span lang=\"la\">quaerere solēbat ‘cui bonō’ fuisset</span>",
+        "Cic. Rosc. Am. 13: <span lang=\"la\">quibus occīdī patrem Sex. Roscī bonō fuit</span>"
+      ],
+      "comment": "Lucius Cassius’s question in court, <span lang=\"la\">cui bonō fuisset?</span>, “who stood to gain?”, which Cicero quotes again at Phil. 2.35, <span lang=\"la\">illud Cassiānum</span>."
+    },
+    {
+      "latin": "ūsuī esse",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "be of use, of service (to)",
+      "grammar": "phrase: the dative ūsuī with the dative of the person",
+      "evidence": [
+        "Cic. Att. 1.1.3: <span lang=\"la\">fuit et mihi et Quīntō frātrī magnō ūsuī</span>",
+        "Caes. BG 1.50: <span lang=\"la\">utrum proelium committī ex ūsū esset necne</span>"
+      ],
+      "comment": "Also <span lang=\"la\">ex ūsū esse</span>, to be of advantage (Caesar)."
+    },
+    {
+      "latin": "frūctum capere (ex)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "benefit from, get the good of",
+      "grammar": "phrase: ex with the ablative of the thing one benefits from",
+      "evidence": [
+        "Cic. Fam. 1.9.20: <span lang=\"la\">cum sē maximum frūctum cēpisse dīcerent ex lībertāte meā</span>",
+        "Traupman 269: derive great advantage from, <span lang=\"la\">multum commodum ex aliquā rē capere</span>"
+      ],
+      "comment": "<span lang=\"la\">Frūctus</span> is the produce of a field, and so the return one has from anything (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "aut prōdesse volunt aut dēlectāre poētae",
+      "english": "poets aim either to do good or to give pleasure",
+      "source": "Hor. Ars 333"
+    },
+    {
+      "latin": "Balineum assūmō quia prōdest, vīnum quia nōn nocet, parcissimē tamen.",
+      "english": "I take a bath because it does me good, and wine because it does no harm, though very sparingly.",
+      "source": "Plin. Ep. 7.21.3"
+    },
+    {
+      "latin": "L. Cassius … identidem in causīs quaerere solēbat ‘cui bonō’ fuisset",
+      "english": "Lucius Cassius used to ask again and again in his cases ‘who benefited?’",
+      "source": "Cic. Rosc. Am. 84"
+    },
+    {
+      "latin": "quī ipse sibi sapiēns prōdesse nōn quit, nēquīquam sapit",
+      "english": "a wise man who cannot do himself any good is wise in vain",
+      "source": "Ennius in Cic. Fam. 7.6.2"
+    }
+  ],
+  "related": [
+    "advantage",
+    "help",
+    "healthy",
+    "interest-advantage"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/prosum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: prosum</a> · <a href=\"https://logeion.uchicago.edu/bonus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: bonus</a> · <a href=\"https://logeion.uchicago.edu/usus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: usus</a> · <a href=\"https://logeion.uchicago.edu/fructus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fructus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 97, 269, checked against the searchable text of the book (9 November 2026).",
+    "Horace, <em>Ars poetica</em>, Pliny, <em>Epistulae</em> 7, Cicero, <em>Pro Roscio Amerino</em>, <em>Philippics</em> 2 and Att. 1, and Caesar, <em>Bellum Gallicum</em> 1, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a>; Cicero’s letters <em>Ad familiares</em> against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

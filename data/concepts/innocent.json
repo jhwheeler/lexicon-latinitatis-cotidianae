@@ -1,0 +1,75 @@
+{
+  "id": "innocent",
+  "english": "innocent",
+  "pos": "adjective",
+  "also": [
+    "not guilty",
+    "acquitted",
+    "blameless"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "innocēns, innocentis",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "innocent, blameless; harmless",
+      "evidence": [
+        "Cic. <em>Tusc.</em> 5.41",
+        "Cic. <em>Rosc. Am.</em> 56",
+        "Traupman 195"
+      ],
+      "comment": "Properly ‘doing no harm’, <span lang=\"la\">in-</span> and <span lang=\"la\">nocēns</span> (Cic. <em>Tusc.</em> 5.41); of the accused, not guilty. Of what, in the genitive (Tac. <em>Ann.</em> 4.34, Lewis &amp; Short)."
+    },
+    {
+      "latin": "īnsōns, īnsontis",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "guiltless, innocent",
+      "evidence": [
+        "Sall. <em>Cat.</em> 16.3 (Lewis &amp; Short)",
+        "Liv. 22.49 (Lewis &amp; Short)",
+        "Hor. <em>S.</em> 1.6.69 (Lewis &amp; Short)"
+      ],
+      "comment": "Not in Cicero or Caesar; Plautus, Sallust, Livy and the poets (Lewis &amp; Short)."
+    },
+    {
+      "latin": "absolvō, absolvere, absolvī, absolūtum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "acquit, find not guilty",
+      "evidence": [
+        "Cic. <em>Rosc. Am.</em> 56: <span lang=\"la\">absolvī potest</span>",
+        "Traupman 191, 193"
+      ],
+      "comment": "Of a charge, with <span lang=\"la\">dē</span> and the ablative, more rarely the genitive (Traupman 193)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "haec propter illōs scrīpta est hominēs fābula quī fictīs causīs innocentēs opprimunt",
+      "english": "this fable was written for those people who crush the innocent with made-up charges",
+      "source": "Phaedr. 1.1.14–15"
+    },
+    {
+      "latin": "innocēns is dīcitur, nōn quī leviter nocet, sed quī nihil nocet",
+      "english": "a man is called innocent not if he does little harm, but if he does none",
+      "source": "Cic. Tusc. 5.41"
+    }
+  ],
+  "related": [
+    "guilty",
+    "trial-law"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/innocens\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: innocens</a> · <a href=\"https://logeion.uchicago.edu/insons\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: insons</a> · <a href=\"https://logeion.uchicago.edu/absolvo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: absolvo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 191, 193, 195, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-phaedrus), checked against the editions named there.",
+    "Cicero checked against the Latin Library text (<a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">CLTK mirror</a>, 9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

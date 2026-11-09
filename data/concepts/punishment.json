@@ -1,0 +1,88 @@
+{
+  "id": "punishment",
+  "english": "punishment",
+  "pos": "noun",
+  "also": [
+    "penalty",
+    "punishments"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "poena, poenae f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "punishment, penalty",
+      "evidence": [
+        "Cic. <em>Off.</em> 1.89",
+        "Cic. <em>Leg.</em> 3.11",
+        "Traupman 196, 258"
+      ],
+      "comment": "To punish, <span lang=\"la\">poenā afficere</span>; to be punished, <span lang=\"la\">poenās dare</span> (see punish)."
+    },
+    {
+      "latin": "supplicium, suppliciī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "punishment, especially a severe one; the death penalty",
+      "evidence": [
+        "Ter. <em>And.</em> 903",
+        "Traupman 194"
+      ],
+      "comment": "Properly a kneeling down; usually of the death penalty (Lewis &amp; Short), though the father in Terence uses it of a small punishment."
+    },
+    {
+      "latin": "animadversiō, animadversiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "punishment, official correction",
+      "evidence": [
+        "Cic. <em>Off.</em> 1.88",
+        "Cic. <em>Phil.</em> 2.18"
+      ]
+    },
+    {
+      "latin": "castīgātiō, castīgātiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "correction, punishment (of a child or a pupil)",
+      "evidence": [
+        "Cic. <em>Off.</em> 1.88",
+        "Quint. 1.3.14"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Prō peccātō magnō paulum supplicī satis est patrī.",
+      "english": "For a great wrong, a little punishment is enough for a father.",
+      "source": "Ter. And. 903"
+    },
+    {
+      "latin": "Cavendum est etiam nē major poena quam culpa sit",
+      "english": "One must also take care that the punishment is not greater than the fault",
+      "source": "Cic. Off. 1.89"
+    },
+    {
+      "latin": "noxiae poena pār estō",
+      "english": "let the punishment fit the offence",
+      "source": "Cic. Leg. 3.11"
+    }
+  ],
+  "related": [
+    "punish",
+    "crime",
+    "prison"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/poena\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: poena</a> · <a href=\"https://logeion.uchicago.edu/supplicium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: supplicium</a> · <a href=\"https://logeion.uchicago.edu/animadversio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: animadversio</a> · <a href=\"https://logeion.uchicago.edu/castigatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: castigatio</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 194, 196, 258, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-terentius, loci-quintilianus), checked against the editions named there.",
+    "Cicero checked against the Latin Library text (<a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">CLTK mirror</a>, 9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

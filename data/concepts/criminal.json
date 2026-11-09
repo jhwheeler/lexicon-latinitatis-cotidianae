@@ -1,0 +1,111 @@
+{
+  "id": "criminal",
+  "english": "criminal",
+  "pos": [
+    "noun",
+    "adjective"
+  ],
+  "also": [
+    "criminals",
+    "offender",
+    "wrongdoer",
+    "villain",
+    "crook",
+    "evildoer"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "maleficus, maleficī m.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "an evildoer, a criminal",
+      "evidence": [
+        "Plaut. <em>Ps.</em> 938",
+        "Plaut. <em>Trin.</em> 551 (Lewis &amp; Short)",
+        "Cic. <em>Verr.</em> 2.5.144: <span lang=\"la\">maleficōrum sceleratōrumque</span>"
+      ],
+      "comment": "From <span lang=\"la\">male</span> and <span lang=\"la\">facere</span>, the one who does wrong. The adjective, criminal, wicked, is <span lang=\"la\">maleficus, malefica, maleficum</span>."
+    },
+    {
+      "latin": "sōns, sontis m./f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the guilty one, an offender",
+      "grammar": "noun, third declension",
+      "evidence": [
+        "Cic. <em>Leg.</em> 3.6",
+        "Cic. <em>Phil.</em> 2.18",
+        "Traupman 299"
+      ],
+      "comment": "Frequent as a noun, chiefly in the plural, <span lang=\"la\">sontēs</span> (Lewis &amp; Short); see guilty."
+    },
+    {
+      "latin": "facinorōsus, facinorōsa, facinorōsum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "criminal, villainous; as a noun, a criminal",
+      "evidence": [
+        "Cic. <em>Sest.</em> 81: <span lang=\"la\">facinorōsissimī sīcāriī</span> (Lewis &amp; Short)",
+        "Traupman 151, 299"
+      ],
+      "comment": "Rare but classical; Cicero uses the plural as a noun (<em>Cat.</em> 2.22, Lewis &amp; Short)."
+    },
+    {
+      "latin": "scelestus, scelesta, scelestum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "wicked; as a noun, a villain, a scoundrel",
+      "register": "vōx cōmica: Plaut., Ter.",
+      "evidence": [
+        "Plaut. <em>Rud.</em> 859",
+        "Hor. <em>Epod.</em> 7.1: <span lang=\"la\">quō, quō scelestī ruitis?</span>"
+      ],
+      "comment": "Common in comedy as a term of abuse, <span lang=\"la\">sceleste!</span>; Cicero does not use it of persons (Lewis &amp; Short)."
+    },
+    {
+      "latin": "crīminōsus, crīminōsa, crīminōsum",
+      "status": "avoid",
+      "period": "modern",
+      "gloss": "criminal",
+      "evidence": [
+        "Traupman 299"
+      ],
+      "comment": "Traupman’s word for criminals, but classically ‘reproachful, slanderous’ (Cic., Liv.); ‘a guilty man’ only in Cassiodorus (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "neque ego hōc homine quemquam vīdī magis malum et maleficum",
+      "english": "and I have never seen anyone more wicked or more of a villain than this man",
+      "source": "Plaut. Ps. 938"
+    },
+    {
+      "latin": "vincula sontium servantō",
+      "english": "they shall keep the prisons for criminals",
+      "source": "Cic. Leg. 3.6"
+    },
+    {
+      "latin": "ego hunc scelestum in jūs rapiam exulem",
+      "english": "I’ll drag this villain into court, the outcast!",
+      "source": "Plaut. Rud. 859"
+    }
+  ],
+  "related": [
+    "crime",
+    "thief",
+    "guilty",
+    "police"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/maleficus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: maleficus</a> · <a href=\"https://logeion.uchicago.edu/sons\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sons</a> · <a href=\"https://logeion.uchicago.edu/facinorosus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: facinorosus</a> · <a href=\"https://logeion.uchicago.edu/scelestus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: scelestus</a> · <a href=\"https://logeion.uchicago.edu/criminosus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: criminosus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 151, 299, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-horatius), checked against the editions named there.",
+    "Plautus and Cicero checked against the Latin Library text (<a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">CLTK mirror</a>, 9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

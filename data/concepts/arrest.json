@@ -1,0 +1,96 @@
+{
+  "id": "arrest",
+  "english": "arrest",
+  "pos": [
+    "verb",
+    "noun"
+  ],
+  "also": [
+    "arrested",
+    "be arrested",
+    "under arrest",
+    "take into custody",
+    "detain"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "comprehendō, comprehendere, comprehendī, comprehēnsum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "arrest, seize",
+      "evidence": [
+        "Caes. <em>BG</em> 4.27",
+        "Cic. <em>Cat.</em> 2.3 (Lewis &amp; Short)"
+      ],
+      "comment": "To lay hold of on all sides: the classical verb for arresting someone (Lewis &amp; Short)."
+    },
+    {
+      "latin": "comprehēnsiō, comprehēnsiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "an arrest",
+      "evidence": [
+        "Cic. <em>Phil.</em> 2.18"
+      ],
+      "comment": "For an arrest Lewis &amp; Short cite only this passage; usually a grasping, or a grasp of the mind."
+    },
+    {
+      "latin": "in custōdiam trādere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "take into custody",
+      "grammar": "phrase: custōdia, custōdiae f. (custody) with in and trādere",
+      "evidence": [
+        "Liv. 22.52: <span lang=\"la\">trāditīque in custōdiam omnēs sunt</span>",
+        "Traupman 194"
+      ],
+      "comment": "To be under arrest, <span lang=\"la\">in custōdiā esse</span> or <span lang=\"la\">habērī</span> (Traupman 194); house arrest, <span lang=\"la\">lībera custōdia</span> (Liv. 24.45.8, Lewis &amp; Short)."
+    },
+    {
+      "latin": "apprehendō, apprehendere, apprehendī, apprehēnsum",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "arrest",
+      "evidence": [
+        "Traupman 191, 193"
+      ],
+      "comment": "Classically only to take hold of, seize (Lewis &amp; Short); Traupman’s verb for an arrest."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Hunc illī ē nāvī ēgressum, cum ad eōs ōrātōris modō Caesaris mandāta dēferret, comprehenderant atque in vincula conjēcerant",
+      "english": "As he stepped off the ship to bring them Caesar’s message as an envoy, they had arrested him and thrown him into chains",
+      "source": "Caes. BG 4.27"
+    },
+    {
+      "latin": "Nam comprehēnsiō sontium mea, animadversiō senātūs fuit",
+      "english": "For the arrest of the guilty was my doing; their punishment was the senate’s",
+      "source": "Cic. Phil. 2.18"
+    },
+    {
+      "latin": "Vigilēs fūrem comprehendērunt.",
+      "english": "The police have arrested the thief.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "police",
+    "police-officer",
+    "prison",
+    "thief",
+    "criminal"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/comprehendo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: comprehendo</a> · <a href=\"https://logeion.uchicago.edu/comprehensio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: comprehensio</a> · <a href=\"https://logeion.uchicago.edu/custodia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: custodia</a> · <a href=\"https://logeion.uchicago.edu/apprehendo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: apprehendo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 191, 193, 194, checked against the searchable text of the book (9 November 2026).",
+    "Caesar, Cicero and Livy checked against the Latin Library text (<a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">CLTK mirror</a>, 9 November 2026).",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

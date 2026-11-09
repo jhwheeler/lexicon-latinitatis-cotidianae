@@ -1,0 +1,78 @@
+{
+  "id": "prison",
+  "english": "prison",
+  "pos": "noun",
+  "also": [
+    "jail",
+    "gaol",
+    "in prison",
+    "go to prison",
+    "put in prison",
+    "lock up"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "carcer, carceris m.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "prison, jail",
+      "evidence": [
+        "Plaut. <em>Amph.</em> 155",
+        "Cic. <em>Cat.</em> 2.27",
+        "Traupman 191, 195, 196"
+      ],
+      "comment": "To throw someone into prison, <span lang=\"la\">in carcerem conjicere</span> (Traupman 196) or <span lang=\"la\">compingere</span> (Plaut. <em>Amph.</em> 155). In the plural, <span lang=\"la\">carcerēs</span> are also the starting gates of a race."
+    },
+    {
+      "latin": "vincula, vinculōrum n. pl.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "chains; hence prison",
+      "evidence": [
+        "Caes. <em>BG</em> 4.27: <span lang=\"la\">in vincula conjēcerant</span>",
+        "Cic. <em>Cat.</em> 4.10 (Lewis &amp; Short)"
+      ],
+      "comment": "<span lang=\"la\">in vincula conjicere</span>, to put in irons, to imprison (Caes.; Liv.)."
+    },
+    {
+      "latin": "custōdia, custōdiae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "custody; a place of confinement",
+      "evidence": [
+        "Caes. <em>BC</em> 3.104: <span lang=\"la\">in custōdiā necātur</span> (Lewis &amp; Short)",
+        "Traupman 194"
+      ],
+      "comment": "To take into custody, <span lang=\"la\">in custōdiam trādere</span> (Liv. 22.52); to be held in custody, <span lang=\"la\">in custōdiā habērī</span> (Traupman 194)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "quid faciam nunc, sī trēs virī mē in carcerem compēgerint?",
+      "english": "what am I to do now, if the night magistrates lock me up in jail?",
+      "source": "Plaut. Amph. 155"
+    },
+    {
+      "latin": "esse carcerem, quem vindicem nefāriōrum ac manifestōrum scelerum majōrēs nostrī esse voluērunt",
+      "english": "that there is a prison, which our ancestors meant to be the avenger of wicked and flagrant crimes",
+      "source": "Cic. Cat. 2.27"
+    }
+  ],
+  "related": [
+    "prisoner-jail",
+    "arrest",
+    "punishment",
+    "police"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/carcer\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: carcer</a> · <a href=\"https://logeion.uchicago.edu/vinculum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vinculum</a> · <a href=\"https://logeion.uchicago.edu/custodia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: custodia</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 191, 194–196, checked against the searchable text of the book (9 November 2026).",
+    "Plautus, Cicero, Caesar and Livy checked against the Latin Library text (<a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">CLTK mirror</a>, 9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

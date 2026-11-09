@@ -1,0 +1,65 @@
+{
+  "id": "army",
+  "english": "army",
+  "pos": "noun",
+  "also": [
+    "armies",
+    "troops",
+    "forces",
+    "join the army"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "exercitus, exercitūs m.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "army",
+      "evidence": [
+        "Phaedr. 4.6.1",
+        "Liv. 21.33.11",
+        "Traupman 185"
+      ],
+      "comment": "From <span lang=\"la\">exercēre</span>: a trained body of men (Lewis &amp; Short). To raise an army, <span lang=\"la\">exercitum comparāre</span> (Traupman 185); to join the army, <span lang=\"la\">in mīlitiam īre</span> (Traupman 183)."
+    },
+    {
+      "latin": "cōpiae, cōpiārum f. pl.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "troops, forces",
+      "evidence": [
+        "Caes. <em>BG</em> 1.48 (Lewis &amp; Short)",
+        "Traupman 186"
+      ],
+      "comment": "The forces, as made up of their units; rarely in the singular (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "cum victī mūrēs mustēlārum exercitū … fugerent",
+      "english": "when the mice, beaten by the weasels’ army, were running away",
+      "source": "Phaedr. 4.6.1–3"
+    },
+    {
+      "latin": "captō cibō ac pecoribus per trīduum exercitum aluit",
+      "english": "with the food and cattle he had captured he fed the army for three days",
+      "source": "Liv. 21.33.11"
+    }
+  ],
+  "related": [
+    "soldier",
+    "war",
+    "battle",
+    "enemy"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/exercitus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: exercitus</a> · <a href=\"https://logeion.uchicago.edu/copia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: copia</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 183, 185, 186, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-phaedrus, loci-livius), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

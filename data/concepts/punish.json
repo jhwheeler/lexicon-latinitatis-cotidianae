@@ -1,0 +1,91 @@
+{
+  "id": "punish",
+  "english": "punish",
+  "pos": "verb",
+  "also": [
+    "punished",
+    "be punished",
+    "get punished"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "pūniō, pūnīre, pūnīvī, pūnītum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "punish",
+      "evidence": [
+        "Aug. <em>Conf.</em> 1.9.15",
+        "Cic. <em>Inv.</em> 2.66: <span lang=\"la\">peccāta pūnīmus</span> (Lewis &amp; Short)",
+        "Traupman 196"
+      ],
+      "comment": "Cicero also uses it as a deponent, <span lang=\"la\">pūnior, pūnīrī</span> (Lewis &amp; Short)."
+    },
+    {
+      "latin": "castīgō, castīgāre, castīgāvī, castīgātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "correct, punish (a child, a pupil); scold",
+      "evidence": [
+        "Quint. 2.2.5",
+        "Cic. <em>Tusc.</em> 3.64: <span lang=\"la\">puerōs nōn verbīs sōlum, sed etiam verberibus</span> (Lewis &amp; Short)"
+      ],
+      "comment": "To set right by word or deed, as a parent or a teacher does (Lewis &amp; Short)."
+    },
+    {
+      "latin": "poenā afficere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "punish, inflict a penalty on",
+      "grammar": "phrase: poena, poenae f. (penalty) with afficere and the accusative of the person",
+      "evidence": [
+        "Cic. <em>Off.</em> 2.18 (Lewis &amp; Short)",
+        "Traupman 196"
+      ]
+    },
+    {
+      "latin": "poenās dare",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "be punished, pay the penalty",
+      "grammar": "phrase: poena, poenae f. (penalty) with dare",
+      "evidence": [
+        "Plin. <em>Ep.</em> 1.15.3",
+        "Traupman 196"
+      ],
+      "comment": "The usual way to say ‘be punished’: one pays the penalty. Also <span lang=\"la\">poenās solvere</span>, <span lang=\"la\">pendere</span> (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "dabis poenās, nōn dīcō quās",
+      "english": "you’ll pay for it, I won’t say how",
+      "source": "Plin. Ep. 1.15.3"
+    },
+    {
+      "latin": "sed majōrum nūgae negōtia vocantur, puerōrum autem tālia cum sint, pūniuntur ā majōribus",
+      "english": "but the games of grown-ups are called business, and children’s, though they are just the same, are punished by grown-ups",
+      "source": "Aug. Conf. 1.9.15"
+    },
+    {
+      "latin": "nam quō saepius monuerit, hōc rārius castīgābit",
+      "english": "for the more often he warns, the less often he will have to punish",
+      "source": "Quint. 2.2.5"
+    }
+  ],
+  "related": [
+    "punishment",
+    "naughty",
+    "forgive"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/punio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: punio</a> · <a href=\"https://logeion.uchicago.edu/castigo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: castigo</a> · <a href=\"https://logeion.uchicago.edu/poena\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: poena</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 196, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-plinius, loci-augustinus, loci-quintilianus), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

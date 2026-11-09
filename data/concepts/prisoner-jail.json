@@ -1,0 +1,64 @@
+{
+  "id": "prisoner-jail",
+  "english": "prisoner",
+  "sense": "held in prison",
+  "pos": "noun",
+  "also": [
+    "prisoners",
+    "inmate",
+    "detainee"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "custōdia, custōdiae f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a prisoner under guard; in the plural, the prisoners",
+      "evidence": [
+        "Sen. <em>Ep.</em> 5.7",
+        "Plin. <em>Ep.</em> 10.19.1",
+        "Suet. <em>Tib.</em> 61 (Lewis &amp; Short)"
+      ],
+      "comment": "The guarding, and so the person guarded: post-Augustan (Lewis &amp; Short). Before then, a man held in prison is <span lang=\"la\">in custōdiā</span> or <span lang=\"la\">in vinculīs</span>."
+    },
+    {
+      "latin": "captīvus, captīvī m.; captīva, captīvae f.",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "a prisoner, detainee",
+      "grammar": "noun, second declension (captīva, first)",
+      "evidence": [
+        "Levi–Bini p. 21, s.v. detenuto"
+      ],
+      "comment": "Classically a prisoner of war (see prisoner, of war); Levi and Bini extend it to anyone held in detention."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Quemadmodum eadem catēna et custōdiam et mīlitem cōpulat",
+      "english": "Just as the same chain links the prisoner and the soldier",
+      "source": "Sen. Ep. 5.7"
+    },
+    {
+      "latin": "utrum per pūblicōs cīvitātium servōs, quod ūsque adhūc factum, an per mīlitēs asservāre custōdiās dēbeam",
+      "english": "whether I ought to guard the prisoners with the cities’ public slaves, as has been done until now, or with soldiers",
+      "source": "Plin. Ep. 10.19.1"
+    }
+  ],
+  "related": [
+    "prison",
+    "prisoner-captive",
+    "arrest"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/custodia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: custodia</a> · <a href=\"https://logeion.uchicago.edu/captivus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: captivus</a>",
+    "Enrico Levi and Arturo Bini, <em>Il latino come lingua viva</em> (1937), p. 21, s.v. detenuto.",
+    "Seneca and Pliny checked against the Latin Library text (<a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">CLTK mirror</a>, 9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

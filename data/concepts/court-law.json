@@ -1,0 +1,102 @@
+{
+  "id": "court-law",
+  "english": "court",
+  "sense": "of law",
+  "pos": "noun",
+  "also": [
+    "court of law",
+    "law court",
+    "courtroom",
+    "courthouse",
+    "go to court",
+    "take to court",
+    "in court"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "jūdicium, jūdiciī n.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a court of justice; the trial held in it",
+      "evidence": [
+        "Nep. <em>Epam.</em> 8.2: <span lang=\"la\">in jūdicium vēnit</span>",
+        "Quint. 4.2.25 (Lewis &amp; Short)",
+        "Traupman 194"
+      ],
+      "comment": "Properly the trial, and by extension the court that holds it (Lewis &amp; Short). To take someone to court, <span lang=\"la\">in jūdicium vocāre</span> (Cic. <em>Balb.</em> 64, Lewis &amp; Short) or <span lang=\"la\">addūcere</span> (Traupman 194)."
+    },
+    {
+      "latin": "in jūs vocāre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "summon to court; with īre or ambulāre, go to court",
+      "grammar": "phrase: jūs, jūris n. (the court) with in and the accusative",
+      "evidence": [
+        "Ter. <em>Ph.</em> 936: <span lang=\"la\">in jūs ambulā</span>",
+        "Hor. <em>S.</em> 1.9.77: <span lang=\"la\">rapit in jūs</span>",
+        "Cic. <em>Verr.</em> 2.2.187 (Lewis &amp; Short)",
+        "Traupman 197: <span lang=\"la\">in jūs īre</span>, to go on trial"
+      ],
+      "comment": "The summons before the praetor that began a lawsuit; <span lang=\"la\">jūs</span> here is the place where justice is given (Lewis &amp; Short)."
+    },
+    {
+      "latin": "tribūnal, tribūnālis n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the judgment seat, the bench",
+      "evidence": [
+        "Cic. <em>Verr.</em> 2.2.94 (Lewis &amp; Short)",
+        "Liv. 26.22.3: <span lang=\"la\">ad tribūnal cōnsulis vēnit</span> (Lewis &amp; Short)",
+        "M-O s.v. court"
+      ],
+      "comment": "The raised platform on which the magistrate sat to give judgment; Morgan–Owens gives it for a court."
+    },
+    {
+      "latin": "basilica, basilicae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "courthouse",
+      "evidence": [
+        "Liv. 39.44.7 (Lewis &amp; Short)",
+        "Traupman 190, 194"
+      ],
+      "comment": "The colonnaded hall in the forum where courts sat and business was done, such as the <span lang=\"la\">basilica Jūlia</span> (Lewis &amp; Short); Traupman’s word for a courthouse."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "In jūs ambulā.",
+      "english": "Come to court!",
+      "source": "Ter. Ph. 936"
+    },
+    {
+      "latin": "At ille in jūdicium vēnit, nihil eōrum negāvit, quae adversāriī crīminī dabant",
+      "english": "But he came into court, and denied none of the things his opponents charged him with",
+      "source": "Nep. Epam. 8.2"
+    },
+    {
+      "latin": "rapit in jūs; clāmor utrimque, undique concursus",
+      "english": "he hauls him off to court; shouting on both sides, people running up from everywhere",
+      "source": "Hor. S. 1.9.77–78"
+    }
+  ],
+  "related": [
+    "trial-law",
+    "lawyer",
+    "witness",
+    "case-law",
+    "law"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/judicium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: judicium</a> · <a href=\"https://logeion.uchicago.edu/jus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: jus</a> · <a href=\"https://logeion.uchicago.edu/tribunal\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tribunal</a> · <a href=\"https://logeion.uchicago.edu/basilica\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: basilica</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 190, 194, 197, checked against the searchable text of the book (9 November 2026).",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. court.",
+    "Terence, Nepos and Horace checked against the Latin Library text (<a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">CLTK mirror</a>, 9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

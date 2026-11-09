@@ -1,0 +1,58 @@
+{
+  "id": "guilty-feeling",
+  "english": "guilty",
+  "sense": "feeling guilty",
+  "pos": "adjective",
+  "also": [
+    "feel guilty",
+    "guilty conscience",
+    "bad conscience"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "cōnscius, cōnscia, cōnscium",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "aware of a wrong one has done; guilty",
+      "grammar": "adjective; with sibi and the genitive of the fault",
+      "evidence": [
+        "Plaut. <em>Most.</em> 544",
+        "Cic. <em>Off.</em> 3.73: <span lang=\"la\">sibi nūllīus culpae</span> (Lewis &amp; Short)"
+      ],
+      "comment": "With <span lang=\"la\">sibi</span>, knowing something in oneself, for good or ill (Lewis &amp; Short); by itself, guilty: <span lang=\"la\">animus cōnscius</span>, a guilty conscience (Plaut. <em>Most.</em> 544)."
+    },
+    {
+      "latin": "cōnscientia, cōnscientiae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "conscience; a guilty conscience",
+      "evidence": [
+        "Cic. <em>Phil.</em> 5.15: <span lang=\"la\">cōnscientia maleficiōrum</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Also a good conscience: the guilt lies in the genitive or the context."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nihil est miserius quam animus hominis cōnscius",
+      "english": "nothing is more wretched than a man’s guilty conscience",
+      "source": "Plaut. Most. 544"
+    }
+  ],
+  "related": [
+    "guilty",
+    "im-ashamed",
+    "im-sorry",
+    "accept-blame"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/conscius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: conscius</a> · <a href=\"https://logeion.uchicago.edu/conscientia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: conscientia</a>",
+    "Plautus checked against the Latin Library text (<a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">CLTK mirror</a>, 9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

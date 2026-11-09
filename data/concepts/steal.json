@@ -1,0 +1,87 @@
+{
+  "id": "steal",
+  "english": "steal",
+  "pos": "verb",
+  "also": [
+    "stealing",
+    "stole",
+    "stolen",
+    "pinch",
+    "pilfer",
+    "snatch"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "surripiō (subripiō), surripere, surripuī, surreptum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "steal, take away unseen",
+      "evidence": [
+        "Phaedr. 1.10.10",
+        "Cic. <em>Inv.</em> 2.55 (Lewis &amp; Short)",
+        "Mart. 12.29.10: <span lang=\"la\">mappam praetōrī surpuit</span> (Lewis &amp; Short)"
+      ],
+      "comment": "From <span lang=\"la\">sub</span> and <span lang=\"la\">rapere</span>, to snatch away from under; frequent in Plautus. The person robbed goes in the dative."
+    },
+    {
+      "latin": "fūror, fūrārī, fūrātus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "steal, thieve",
+      "grammar": "verb, first conjugation, deponent",
+      "evidence": [
+        "Cic. <em>Off.</em> 2.40",
+        "Cic. <em>Verr.</em> 2.1.60 (Lewis &amp; Short)",
+        "Traupman 196"
+      ],
+      "comment": "The verb of <span lang=\"la\">fūr</span>, thief."
+    },
+    {
+      "latin": "clepō, clepere, clepsī, cleptum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "steal",
+      "register": "vōx prīsca: Plaut.; old laws quoted by Cic. and Liv.",
+      "evidence": [
+        "Cic. <em>Leg.</em> 2.22: <span lang=\"la\">sacrum quī clepsit rapsitve</span> (Lewis &amp; Short)",
+        "Traupman 196"
+      ],
+      "comment": "Rare, and mostly before Cicero (Lewis &amp; Short); the same root as Greek κλέπτω."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "tū nōn vidēris perdidisse quod petis; tē crēdō surripuisse quod pulchrē negās",
+      "english": "you don’t seem to have lost what you claim; and I believe you stole what you so prettily deny",
+      "source": "Phaedr. 1.10.9–10"
+    },
+    {
+      "latin": "Nam quī eōrum cuipiam, quī ūnā latrōcinantur, fūrātur aliquid aut ēripit, is sibi nē in latrōciniō quidem relinquit locum",
+      "english": "For whoever steals or snatches something from one of the men he robs with leaves himself no place even in a band of robbers",
+      "source": "Cic. Off. 2.40"
+    },
+    {
+      "latin": "Quis mihi pilam surripuit?",
+      "english": "Who’s stolen my ball?",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "thief",
+    "crime",
+    "charge-accusation"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/surripio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: surripio</a> · <a href=\"https://logeion.uchicago.edu/furor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: furor</a> · <a href=\"https://logeion.uchicago.edu/clepo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: clepo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 196, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-phaedrus), checked against the editions named there.",
+    "Cicero checked against the Latin Library text (<a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">CLTK mirror</a>, 9 November 2026).",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

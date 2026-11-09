@@ -132,17 +132,19 @@ NOT_WORDS = {'child own name', 'pet name', 'babysitter name', 'gonna', 'gotta', 
 def forms_of(item):
     """The names a list item may have in the lexicon: the item with its last word in any inflection
     (a list may give the plural, carrots, where the lexicon has the singular). A sense after a dot
-    (chicken.food) is dropped, and a call said twice (baa baa) is the call once."""
+    (chicken.food) is dropped, and a call said twice (baa baa) may be written once."""
     item = item.split('.')[0].strip()
     item = {'firetruck': 'fire engine', 'teddybear': 'teddy bear'}.get(item, item)
     words = item.split()
-    if len(words) > 1 and len(set(words)) == 1:
-        words = words[:1]
-    last = words[-1]
-    forms = inflections(last)
-    if last.endswith('s') and not last.endswith('ss'):
-        forms |= inflections(last[:-1])
-    return {' '.join(words[:-1] + [form]) for form in forms}
+    variants = [words] + ([words[:1]] if len(words) > 1 and len(set(words)) == 1 else [])
+    names = set()
+    for words in variants:
+        last = words[-1]
+        forms = inflections(last)
+        if last.endswith('s') and not last.endswith('ss'):
+            forms |= inflections(last[:-1])
+        names |= {' '.join(words[:-1] + [form]) for form in forms}
+    return names
 
 
 def covered(item, have):

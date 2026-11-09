@@ -20,10 +20,17 @@ class BuildTests(unittest.TestCase):
         self.root = Path(self.temp.name)
         for path in ('data', 'src'):
             shutil.copytree(ROOT / path, self.root / path)
-        # Grouped cards are being converted to records, so pick a category that still has some.
+        # Grouped cards are being converted to records, so pick a category that still has some;
+        # once none has, the tests of the card format use a card of their own.
         categories = [c['id'] for c in self.read('data/catalog.json')['categories']]
-        self.category = next((c for c in categories if self.read(f'data/entries/{c}.json')), categories[0])
+        self.category = next((c for c in categories if self.read(f'data/entries/{c}.json')), None)
+        if self.category is None:
+            self.category = categories[0]
+            self.write(f'data/entries/{self.category}.json', [{
+                'id': 'entry-90000', 'english': 'Test card', 'latin': 'probātiō, probātiōnis f.', 'tags': [],
+                'blocks': [{'type': 'paragraph', 'html': '<strong lang="la">probātiō</strong>, a test.'}]}])
         self.path = f'data/entries/{self.category}.json'
+        self.card = self.read(self.path)[0]['id']
 
     def read(self, path):
         return json.loads((self.root / path).read_text(encoding='utf-8'))
@@ -70,10 +77,10 @@ class BuildTests(unittest.TestCase):
 
     def test_duplicate_entry_rejected_across_categories(self):
         catalog = self.read('data/catalog.json')
-        other = f'data/entries/{catalog["categories"][1]["id"]}.json'
-        entries = self.read(other)
-        entries[0]['id'] = self.read(self.path)[0]['id']
-        self.write(other, entries)
+        other = f'data/entries/{next(c["id"] for c in catalog["categories"] if c["id"] != self.category)}.json'
+        twin = copy.deepcopy(self.read(self.path)[0])
+        twin.pop('anchor', None)
+        self.write(other, self.read(other) + [twin])
         with self.assertRaisesRegex(ValueError, 'Duplicate entry'):
             builder.build(self.root)
 
@@ -207,7 +214,7 @@ class BuildTests(unittest.TestCase):
             'No recommended term': lambda r: [t.update(status='alternative') for t in r['terms']],
             'Invalid period': lambda r: r['terms'][0].update(period='ancient'),
             'Unknown related': lambda r: r.update(related=['no-such-concept']),
-            'which still exists': lambda r: r.update(replaces=['entry-1']),
+            'which still exists': lambda r: r.update(replaces=[self.card]),
             'Unknown fields': lambda r: r.update(lattin='x'),
             'Invalid review': lambda r: r['review'].update(status='done'),
             'needs both form and claim': lambda r: r['notes']['short-e'].pop('claim'),
@@ -280,15 +287,12 @@ class BuildTests(unittest.TestCase):
 
     def test_broken_link_between_pages_rejected(self):
         record = self.record('perhaps')
-        record['related'] = ['entry-1']
+        record['related'] = [self.card]
         self.save_record(record)
         builder.build_site(self.root)
-        entries = self.read(self.path)
-        entries = [e for e in entries if e['id'] != 'entry-1']
-        if len(entries) != len(self.read(self.path)):
-            self.write(self.path, entries)
-            with self.assertRaisesRegex(ValueError, 'Unknown related'):
-                builder.build_site(self.root)
+        self.write(self.path, [e for e in self.read(self.path) if e['id'] != self.card])
+        with self.assertRaisesRegex(ValueError, 'Unknown related'):
+            builder.build_site(self.root)
 
 
 if __name__ == '__main__':

@@ -217,7 +217,8 @@ def apply(spec, plan, root=ROOT, today=None):
     cards, records = plan['cards'], plan['records']
     today = today or datetime.date.today().isoformat()
     written = {}
-    successor = {}
+    # Cards converted earlier, by this batch or another, are named by the record that replaced them.
+    successor = {old: key for key, r in records.items() for old in r.get('replaces', [])}
     for _, item in new_material(spec):
         for old in item.get('replaces', []):
             successor[old] = item['id']

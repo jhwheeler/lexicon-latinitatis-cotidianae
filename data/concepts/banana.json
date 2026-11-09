@@ -1,0 +1,63 @@
+{
+  "id": "banana",
+  "english": "banana",
+  "pos": "noun",
+  "domain": "natura",
+  "terms": [
+    {
+      "latin": "banāna, banānae f.",
+      "status": "recommended",
+      "period": "modern",
+      "evidence": [
+        "Traupman 70",
+        "M-O"
+      ],
+      "comment": "An established modern borrowing recorded by both modern references. The long <strong lang=\"la\">ā</strong> follows Morgan–Owens’s marked forms."
+    },
+    {
+      "latin": "ariēna, ariēnae f.",
+      "status": "alternative",
+      "period": "modern",
+      "evidence": [
+        "Traupman 70",
+        "Pliny, N.H. 12.24: <span lang=\"la\">arborī nōmen palae, pōmō arienae</span>"
+      ],
+      "comment": "Traupman 70, alongside <span lang=\"la\">banāna</span>; from Pliny’s Indian fruit. No modern fruit sense is presented as Classical."
+    },
+    {
+      "latin": "mūsa, mūsae f.",
+      "status": "alternative",
+      "period": "medieval",
+      "evidence": [
+        "M-O s.v. banana"
+      ],
+      "comment": "Medieval, and Linnaeus’s genus name <span lang=\"la\">Musa</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Banānam dēcorticēmus.",
+      "english": "Let’s peel the banana.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "kiwi",
+    "avocado"
+  ],
+  "sources": [
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio: numbered food and kitchen sections</a>",
+    "John C. Traupman, Conversational Latin for Oral Proficiency, supplied PDF: printed pp. 70–73 (food and drink), 124 (refrigerator), 280 (blender), 358 (peanut butter), 383 (spinach). Printed page numbers are one less than PDF page numbers in this copy. The blender entry on printed p. 280 was also checked against its rendered page.",
+    "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>",
+    "The example sentence marked “composed” is ours."
+  ],
+  "replaces": [
+    "entry-108",
+    "smoothie-108"
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

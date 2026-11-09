@@ -1,0 +1,80 @@
+{
+  "id": "agreement",
+  "english": "agreement",
+  "sense": "an arrangement between people",
+  "pos": "noun",
+  "also": [
+    "deal",
+    "pact",
+    "arrangement",
+    "as agreed",
+    "terms",
+    "keep an agreement"
+  ],
+  "domain": "pecunia",
+  "also_under": [
+    "res-publica"
+  ],
+  "terms": [
+    {
+      "latin": "pactum, pactī n.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "an agreement, a pact",
+      "evidence": [
+        "Cic. Off. 3.92: <span lang=\"la\">pacta et prōmissa semperne servanda sint</span>",
+        "Cic. Att. 6.3.1: <span lang=\"la\">ex pactō et conventō</span> (Lewis &amp; Short)"
+      ],
+      "comment": "As agreed, <span lang=\"la\">ex pactō</span>; to keep to an agreement, <span lang=\"la\">stāre pactō</span> (Liv. 9.11, Lewis &amp; Short)."
+    },
+    {
+      "latin": "pactiō, pactiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "an agreement, a bargain",
+      "evidence": [
+        "Cic. Att. 4.18.2: <span lang=\"la\">pactiōnem cum aliquō facere</span> (Lewis &amp; Short)"
+      ],
+      "comment": "The making of an agreement and the agreement made: <span lang=\"la\">pactiōnem facere</span>, to make a deal."
+    },
+    {
+      "latin": "condiciō, condiciōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a term of an agreement; terms",
+      "evidence": [
+        "Traupman 295",
+        "Phaedr. 3.13.12: <span lang=\"la\">apibus condiciō placet</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Pacta et prōmissa semperne servanda sint, quae nec vī nec dolō malō, ut praetōrēs solent, facta sint.",
+      "english": "Whether agreements and promises made, as the praetors put it, without force or fraud must always be kept.",
+      "source": "Cic. Off. 3.92"
+    },
+    {
+      "latin": "fūcī recūsant: apibus condiciō placet",
+      "english": "the drones refuse; the bees accept the terms",
+      "source": "Phaedr. 3.13.12"
+    }
+  ],
+  "related": [
+    "agree-to",
+    "agree",
+    "contract"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/pactum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pactum</a> · <a href=\"https://logeion.uchicago.edu/pactio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pactio</a> · <a href=\"https://logeion.uchicago.edu/condicio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: condicio</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 295, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-phaedrus), checked against the editions named there.",
+    "Cicero, <em>De officiis</em>, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

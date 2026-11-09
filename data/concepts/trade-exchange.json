@@ -1,0 +1,62 @@
+{
+  "id": "trade-exchange",
+  "english": "trade",
+  "sense": "exchange one thing for another",
+  "pos": "verb",
+  "also": [
+    "swap",
+    "exchange",
+    "barter",
+    "trade places",
+    "swap places"
+  ],
+  "domain": "pecunia",
+  "terms": [
+    {
+      "latin": "permūtō, permūtāre, permūtāvī, permūtātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "exchange, swap (one thing for another)",
+      "evidence": [
+        "Hor. C. 3.1.47–48: <span lang=\"la\">cūr valle permūtem Sabīnā dīvitiās operōsiōrēs?</span>"
+      ],
+      "comment": "One of the two things goes in the ablative; the context shows which is given and which received (Lewis &amp; Short s.v. mūtō)."
+    },
+    {
+      "latin": "mūtō, mūtāre, mūtāvī, mūtātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "exchange, barter",
+      "evidence": [
+        "Sall. J. 18.9: <span lang=\"la\">mūtāre rēs inter sē īnstituerant</span>",
+        "Hor. S. 2.7.109–110"
+      ],
+      "comment": "Its everyday sense is “change”; of goods, to barter (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "cūr valle permūtem Sabīnā dīvitiās operōsiōrēs?",
+      "english": "why should I trade my Sabine valley for riches that are more trouble?",
+      "source": "Hor. C. 3.1.47–48"
+    },
+    {
+      "latin": "sub noctem quī puer ūvam furtīvā mūtat strigilī",
+      "english": "the slave boy who at nightfall swaps a stolen strigil for a bunch of grapes",
+      "source": "Hor. S. 2.7.109–110"
+    }
+  ],
+  "related": [
+    "change-money",
+    "business"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/permuto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: permuto</a> · <a href=\"https://logeion.uchicago.edu/muto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: muto</a>",
+    "Horace and Sallust checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

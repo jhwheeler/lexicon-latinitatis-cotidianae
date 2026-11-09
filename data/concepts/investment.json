@@ -1,0 +1,76 @@
+{
+  "id": "investment",
+  "english": "investment",
+  "pos": "noun",
+  "also": [
+    "invest",
+    "invest money",
+    "investments",
+    "a good investment"
+  ],
+  "domain": "pecunia",
+  "terms": [
+    {
+      "latin": "pecūnia collocāta",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "money invested, an investment",
+      "grammar": "noun and participle",
+      "evidence": [
+        "Cic. Imp. Pomp. 18: <span lang=\"la\">in eā prōvinciā pecūniās magnās conlocātās habent</span>"
+      ],
+      "comment": "Latin says it with the verb: <span lang=\"la\">pecūniam collocāre</span>, to invest money; to invest in a farm, <span lang=\"la\">in fundō collocāre</span> (Cic. Caecin. 11, Lewis &amp; Short)."
+    },
+    {
+      "latin": "collocō, collocāre, collocāvī, collocātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "invest (money)",
+      "evidence": [
+        "Cic. Off. 2.87: <span lang=\"la\">dē quaerendā, dē collocandā pecūniā</span>",
+        "Cic. Caecin. 15: <span lang=\"la\">nusquam posse eam melius conlocārī</span>"
+      ],
+      "comment": "Also spelled <span lang=\"la\">conlocō</span>."
+    },
+    {
+      "latin": "pecūniae collocātiō",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "investment",
+      "grammar": "noun and genitive",
+      "evidence": [
+        "Traupman 334"
+      ],
+      "comment": "Traupman’s noun; classically <span lang=\"la\">collocātiō</span> is a placing or arrangement, or the giving of a daughter in marriage (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "dē quaerendā, dē collocandā pecūniā (vellem etiam dē ūtendā)",
+      "english": "on how to make money and how to invest it (I wish also on how to use it)",
+      "source": "Cic. Off. 2.87"
+    },
+    {
+      "latin": "nusquam posse eam melius conlocārī",
+      "english": "it could not be better invested anywhere",
+      "source": "Cic. Caecin. 15"
+    }
+  ],
+  "related": [
+    "fund",
+    "interest-money",
+    "profit",
+    "bank"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/colloco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: colloco</a> · <a href=\"https://logeion.uchicago.edu/collocatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: collocatio</a> · <a href=\"https://logeion.uchicago.edu/pecunia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pecunia</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 334, checked against the searchable text of the book (9 November 2026).",
+    "Cicero checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

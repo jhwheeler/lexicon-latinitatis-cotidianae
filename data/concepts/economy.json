@@ -1,0 +1,68 @@
+{
+  "id": "economy",
+  "english": "economy",
+  "sense": "of a country: its trade, industry and money",
+  "pos": "noun",
+  "also": [
+    "the economy",
+    "national economy",
+    "recession",
+    "state of the economy"
+  ],
+  "domain": "pecunia",
+  "also_under": [
+    "res-publica"
+  ],
+  "terms": [
+    {
+      "latin": "commercia, commerciōrum n. pl.",
+      "status": "recommended",
+      "period": "modern",
+      "gloss": "the economy",
+      "evidence": [
+        "M-O s.v. economy",
+        "M-O s.v. depression: recession: <span lang=\"la\">jacent commercia</span>, we are in a recession"
+      ],
+      "comment": "Classically trade and dealings (<span lang=\"la\">per commercia et negōtiātōrēs</span>, Tac. Agr. 24); Morgan–Owens extends the plural to a country’s economy. Latin has no classical word for the economy as a whole (see economic)."
+    },
+    {
+      "latin": "fidēs, fideī f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "credit, the trust that lending rests on",
+      "evidence": [
+        "Cic. Imp. Pomp. 19: <span lang=\"la\">fidem concidisse</span>, credit had collapsed",
+        "Caes. BC 3.1.2: <span lang=\"la\">cum fidēs tōtā Ītaliā esset angustior</span>"
+      ],
+      "comment": "The Romans spoke of an economy in trouble through its credit: <span lang=\"la\">fidēs</span> collapsed (<span lang=\"la\">concidit</span>) or tightened (<span lang=\"la\">angustior</span>)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "haec fidēs atque haec ratiō pecūniārum, quae Rōmae, quae in forō versātur, implicāta est cum illīs pecūniīs Asiāticīs et cohaeret",
+      "english": "this credit, this whole system of money that operates at Rome and in the Forum, is bound up with that money in Asia and hangs together with it",
+      "source": "Cic. Imp. Pomp. 19"
+    },
+    {
+      "latin": "cum fidēs tōtā Ītaliā esset angustior neque crēditae pecūniae solverentur",
+      "english": "since credit was tighter all over Italy and loans were not being repaid",
+      "source": "Caes. BC 3.1.2"
+    }
+  ],
+  "related": [
+    "economic",
+    "economy-thrift",
+    "business",
+    "money"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/commercium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: commercium</a> · <a href=\"https://logeion.uchicago.edu/fides\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fides</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. economy; depression: recession.",
+    "Cicero, Caesar and Tacitus checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

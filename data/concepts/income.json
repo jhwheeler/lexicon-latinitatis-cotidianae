@@ -1,0 +1,78 @@
+{
+  "id": "income",
+  "english": "income",
+  "pos": "noun",
+  "also": [
+    "earnings",
+    "revenue",
+    "returns",
+    "rental income"
+  ],
+  "domain": "pecunia",
+  "also_under": [
+    "labor"
+  ],
+  "terms": [
+    {
+      "latin": "reditus, reditūs m.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "income, returns (of money or land)",
+      "evidence": [
+        "Nep. Att. 14.3: <span lang=\"la\">omnisque ejus pecūniae reditus cōnstābat in Ēpīrōticīs et urbānīs possessiōnibus</span>",
+        "Plin. Ep. 2.4.3: <span lang=\"la\">reditus propter condiciōnem agellōrum nesciō minor an incertior</span>"
+      ],
+      "comment": "Literally a coming back: what money or land brings in. In this sense not in Cicero, but in Nepos, Ovid, Livy and Pliny’s letters (Lewis &amp; Short)."
+    },
+    {
+      "latin": "vectīgal, vectīgālis n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "income, rents",
+      "evidence": [
+        "Cic. Par. 49: <span lang=\"la\">ex meō tenuī vectīgālī</span>, from my modest income",
+        "Cic. Off. 2.88: <span lang=\"la\">vectīgālia urbāna rūsticīs</span>"
+      ],
+      "comment": "Properly a tax paid to the state; Cicero uses it of his own rents and income."
+    },
+    {
+      "latin": "frūctus, frūctūs m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the yield of land or capital; income",
+      "evidence": [
+        "Cic. Off. 1.25 (Lewis &amp; Short)",
+        "Cic. Att. 11.2.2: <span lang=\"la\">frūctus praediōrum</span> (Lewis &amp; Short)"
+      ],
+      "comment": "What a property produces, in kind or in money."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "omnisque ejus pecūniae reditus cōnstābat in Ēpīrōticīs et urbānīs possessiōnibus",
+      "english": "and all his income came from his properties in Epirus and in the city",
+      "source": "Nep. Att. 14.3"
+    },
+    {
+      "latin": "Ex meō tenuī vectīgālī dētractīs sūmptibus cupiditātis aliquid etiam redundābit.",
+      "english": "From my modest income, once the costs of greed are taken off, there will even be something left over.",
+      "source": "Cic. Par. 49"
+    }
+  ],
+  "related": [
+    "earn",
+    "profit",
+    "property-real-estate",
+    "economy-thrift"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/reditus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: reditus</a> · <a href=\"https://logeion.uchicago.edu/vectigal\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vectigal</a> · <a href=\"https://logeion.uchicago.edu/fructus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fructus</a>",
+    "Nepos, Cicero and Pliny checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "id": "fund",
+  "english": "fund",
+  "sense": "money set aside for a purpose",
+  "pos": "noun",
+  "also": [
+    "set aside money",
+    "emergency fund",
+    "reserve fund",
+    "pension fund",
+    "common fund",
+    "kitty"
+  ],
+  "domain": "pecunia",
+  "terms": [
+    {
+      "latin": "pecūnia sēposita",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "money set aside (for a purpose)",
+      "grammar": "noun and participle",
+      "evidence": [
+        "Liv. 1.53.3: <span lang=\"la\">captīvam pecūniam in aedificātiōnem ejus templī sēposuit</span>",
+        "Cic. Att. 15.15.3: <span lang=\"la\">id ego ad illud fānum sēpositum putābam</span>",
+        "Levi–Bini p. 28: <span lang=\"la\">pecūnia</span> for <em>fondo</em>, money meant for a purpose"
+      ],
+      "comment": "Latin names the money and what it is put aside for: <span lang=\"la\">pecūniam in rem sēpōnere</span>."
+    },
+    {
+      "latin": "aerārium, aerāriī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a treasury; a fund held in common",
+      "evidence": [
+        "Nep. Arist. 3.1: <span lang=\"la\">id enim commūne aerārium esse voluērunt</span>",
+        "Suet. Aug. 49.2: <span lang=\"la\">aerārium mīlitāre</span>",
+        "Liv. 27.10.11: <span lang=\"la\">in sānctiōre aerāriō</span>, the reserve kept for the worst emergencies"
+      ],
+      "comment": "Classically the state treasury in the temple of Saturn, and so any fund held in common: the Delian League’s, or the fund Augustus set up to pay soldiers on their discharge (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "captīvam pecūniam in aedificātiōnem ejus templī sēposuit",
+      "english": "he set the captured money aside for building the temple",
+      "source": "Liv. 1.53.3"
+    },
+    {
+      "latin": "Id enim commūne aerārium esse voluērunt.",
+      "english": "For they wanted this to be their common fund.",
+      "source": "Nep. Arist. 3.1"
+    },
+    {
+      "latin": "aerārium mīlitāre cum vectīgālibus novīs cōnstituit",
+      "english": "he set up a fund for the soldiers, with new taxes to keep it filled",
+      "source": "Suet. Aug. 49.2"
+    }
+  ],
+  "related": [
+    "money",
+    "resources",
+    "investment",
+    "bank"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/pecunia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pecunia</a> · <a href=\"https://logeion.uchicago.edu/sepono\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sepono</a> · <a href=\"https://logeion.uchicago.edu/aerarium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aerarium</a>",
+    "Enrico Levi and Arturo Bini, <em>Il latino come lingua viva</em> (1937), p. 28 (<em>fondo</em>).",
+    "Livy, Nepos, Cicero and Suetonius checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

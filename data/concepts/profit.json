@@ -1,0 +1,93 @@
+{
+  "id": "profit",
+  "english": "profit",
+  "sense": "financial gain",
+  "pos": "noun",
+  "also": [
+    "make a profit",
+    "profits",
+    "gain",
+    "profitable",
+    "at a profit"
+  ],
+  "domain": "pecunia",
+  "terms": [
+    {
+      "latin": "lucrum, lucrī n.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "profit, gain",
+      "evidence": [
+        "Plaut. Capt. 327: <span lang=\"la\">damnum praestet facere quam lucrum</span>",
+        "Traupman 365: <span lang=\"la\">lucrum facere</span>, make a profit"
+      ],
+      "comment": "To make a profit, <span lang=\"la\">lucrum facere</span> or <span lang=\"la\">lucrī facere</span>; to make a loss, <span lang=\"la\">damnum facere</span>.",
+      "notes": [
+        "lucrum"
+      ]
+    },
+    {
+      "latin": "quaestus, quaestūs m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "gain, earnings",
+      "evidence": [
+        "Publ. N 5: <span lang=\"la\">nūllus est tam tūtus quaestus, quam quod habeās parcere</span>"
+      ],
+      "comment": "Gain made by work or business; also the business itself (see industry)."
+    },
+    {
+      "latin": "compendium, compendiī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a saving; gain",
+      "evidence": [
+        "Cic. Verr. 2.2.6: <span lang=\"la\">cum quaestū compendiōque</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Properly gain made by saving (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "est etiam ubi profectō damnum praestet facere quam lucrum",
+      "english": "there are times when it is really better to make a loss than a profit",
+      "source": "Plaut. Capt. 327"
+    },
+    {
+      "latin": "namque ista subita mē jubet benignitās vigilāre, faciās nē meā culpā lucrum",
+      "english": "this sudden kindness tells me to stay awake, so that you don’t make a profit through my fault",
+      "source": "Phaedr. 1.23.7–8"
+    },
+    {
+      "latin": "Nūllus est tam tūtus quaestus, quam quod habeās parcere.",
+      "english": "No profit is as safe as saving what you have.",
+      "source": "Publ. N 5"
+    }
+  ],
+  "notes": {
+    "lucrum": {
+      "form": "lucrum",
+      "claim": "short u",
+      "against": "Traupman <span lang=\"la\">lūcrum</span>; Lewis &amp; Short marks the u both long and short",
+      "html": "De Vaan 349, s.v. <span lang=\"la\">lucrum</span>: short *lu- is regular from pretonic *lh₂u-. Hor. C. 1.9.14, <span lang=\"la\">quem fors diērum cumque dabit, lucrō</span>, puts <span lang=\"la\">lu-</span> in a short place of the Alcaic line, where a long vowel could not stand."
+    }
+  },
+  "related": [
+    "income",
+    "business",
+    "interest-money"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/lucrum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lucrum</a> · <a href=\"https://logeion.uchicago.edu/quaestus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quaestus</a> · <a href=\"https://logeion.uchicago.edu/compendium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: compendium</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 365, checked against the searchable text of the book (9 November 2026).",
+    "Michiel de Vaan, <em>Etymological Dictionary of Latin and the other Italic Languages</em> (2008), p. 349.",
+    "Quotations from the Latinitas loci collections (loci-phaedrus, loci-publilius), checked against the editions named there.",
+    "Plautus and Horace checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

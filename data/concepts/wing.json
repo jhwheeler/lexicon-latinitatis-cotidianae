@@ -1,0 +1,44 @@
+{
+  "id": "wing",
+  "english": "wing",
+  "sense": "of a building",
+  "pos": "noun",
+  "domain": "domus-structura",
+  "terms": [
+    {
+      "latin": "diaeta, diaetae f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a suite or wing of rooms, a pavilion",
+      "evidence": [
+        "Pliny, Ep. 2.17.20: <span lang=\"la\">diaeta est, amōrēs meī, rē vērā amōrēs: ipse posuī</span>",
+        "Suetonius, Claud. 10.1"
+      ],
+      "comment": "Post-Augustan (Lewis &amp; Short). The same noun also means a medical diet."
+    },
+    {
+      "latin": "āla",
+      "status": "avoid",
+      "period": "classical",
+      "gloss": "side room off the atrium",
+      "grammar": "noun, first declension",
+      "evidence": [
+        "Vitruvius 6.3.4"
+      ],
+      "comment": "In Vitruvius the <span lang=\"la\">ālae</span> are side rooms off the atrium, not wings."
+    }
+  ],
+  "related": [
+    "extension",
+    "apartment",
+    "build-on"
+  ],
+  "sources": [
+    "<a href=\"https://www.alatius.com/ls/index.php?l=diaeta\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: diaeta</a>"
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

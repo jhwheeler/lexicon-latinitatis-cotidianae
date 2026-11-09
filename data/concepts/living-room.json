@@ -1,0 +1,72 @@
+{
+  "id": "living-room",
+  "english": "living room",
+  "pos": "noun",
+  "also": [
+    "sitting room"
+  ],
+  "domain": "domus-structura",
+  "terms": [
+    {
+      "latin": "exedra, exedrae f.",
+      "status": "recommended",
+      "period": "classical",
+      "evidence": [
+        "Vitruvius 5.11.2: <span lang=\"la\">exhedrae spatiōsae, habentēs sēdēs</span> (so spelt in the Latin Library text)",
+        "Cicero, de Or. 3.17; N.D. 1.15 (Lewis &amp; Short)",
+        "Traupman 125"
+      ],
+      "comment": "Classically a room furnished with seats, for conversation; in Cicero the room where the speakers of a dialogue sit and talk. Traupman gives it for “sitting room”. The e is short (Greek ἐξέδρα). Use it for the room’s function; <span lang=\"la\">summum tabulātum</span> describes its position in the house."
+    },
+    {
+      "latin": "sessōrium",
+      "status": "avoid",
+      "period": "modern",
+      "grammar": "noun, second declension",
+      "evidence": [
+        "Traupman 124–125"
+      ],
+      "notes": [
+        "sessorium"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Culīnam habet, cubicula, inter quae hospitium est, balneum, lātrīnam, hortum, trīclīnium, exedram",
+      "english": "It has a kitchen, bedrooms (among them a guest room), a bathroom, a lavatory, a garden, a dining room and a sitting room",
+      "source": "Libellus III, <span lang=\"la\">Apud avum et aviam</span>"
+    },
+    {
+      "latin": "Hīc sedēbimus et colloquēmur.",
+      "english": "We’ll sit and talk here.",
+      "source": "composed"
+    }
+  ],
+  "notes": {
+    "sessorium": {
+      "html": "Traupman (pp. 124–125) gives <span lang=\"la\">sessōrium</span> for “living room”, but its ancient senses are “seat, stool” (Caelius Aurelianus) and, in a single passage, “dwelling” (Petronius 77.4 <span lang=\"la\">vīperae hujus sessōrium</span>) (Lewis &amp; Short).",
+      "ruling": "sitting-room"
+    }
+  },
+  "related": [
+    "top-floor",
+    "furniture",
+    "armchair",
+    "sofa"
+  ],
+  "sources": [
+    "<a href=\"https://www.alatius.com/ls/index.php?l=exedra\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: exedra</a> · <a href=\"https://www.alatius.com/ls/index.php?l=sessorium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sessorium</a>",
+    "<a href=\"https://www.bolchazy.com/product/conversational-latin-for-oral-proficiency-4th-edition-p3388/\" rel=\"noopener noreferrer\" target=\"_blank\">John C. Traupman, <em>Conversational Latin for Oral Proficiency</em></a>, pp. 124–125.",
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+    "The example sentence marked “composed” is ours."
+  ],
+  "replaces": [
+    "entry-158"
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

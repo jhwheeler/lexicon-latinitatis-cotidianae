@@ -1,0 +1,61 @@
+{
+  "id": "guardrail",
+  "english": "guardrail",
+  "pos": "noun",
+  "also": [
+    "guardrails",
+    "rail",
+    "parapet",
+    "breastwork"
+  ],
+  "domain": "aedificatio",
+  "terms": [
+    {
+      "latin": "repāgula, repāgulōrum n. pl.",
+      "status": "recommended",
+      "period": "ours",
+      "gloss": "bars, barriers",
+      "comment": "Ancient especially for door bars; our functional extension to guardrails. Not asserted to be a standardized modern scaffold-component term."
+    },
+    {
+      "latin": "ferrum trānsversum ad marginem tabulātī positum",
+      "status": "alternative",
+      "period": "ours",
+      "gloss": "one metal rail placed at the edge of the deck",
+      "comment": "A description, not asserted to be a standardized modern scaffold-component term."
+    },
+    {
+      "latin": "pluteus, pluteī m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "breastwork, parapet on towers",
+      "grammar": "noun, second declension",
+      "evidence": [
+        "Caesar, BG 7.41 (Lewis &amp; Short)"
+      ],
+      "comment": "A closer ancient word for a parapet."
+    },
+    {
+      "latin": "lōrīca, lōrīcae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "breastwork, parapet",
+      "evidence": [
+        "Caesar (Lewis &amp; Short)"
+      ],
+      "comment": "A closer ancient word for a parapet."
+    }
+  ],
+  "related": [
+    "scaffold-platform",
+    "crossbar"
+  ],
+  "sources": [
+    "<a href=\"https://www.alatius.com/ls/index.php?l=repagula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: repagula</a> · <a href=\"https://www.alatius.com/ls/index.php?l=pluteus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pluteus</a> · <a href=\"https://www.alatius.com/ls/index.php?l=lorica\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lorica</a>"
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "id": "gravel",
+  "english": "gravel",
+  "pos": "noun",
+  "domain": "aedificatio",
+  "terms": [
+    {
+      "latin": "glārea, glāreae f.",
+      "status": "recommended",
+      "period": "classical",
+      "evidence": [
+        "Livy 41.27.5 (Lewis &amp; Short)",
+        "M-O s.v. gravel",
+        "Cato, Agr. 18.7: <span lang=\"la\">dē glāreā et calce harēnātō prīmum corium facitō</span>, the first layer of a floor",
+        "Vitruvius 2.4.2: sand sifted <span lang=\"la\">ē glāreā</span>",
+        "Cicero, Q. fr. 3.1.4: <span lang=\"la\">pulvis, nōn glārea injecta est</span>, of an approach road on a slope"
+      ],
+      "comment": "A collective material noun. Lewis &amp; Short cites road-building use. Morgan–Owens also lists it."
+    },
+    {
+      "latin": "calculus",
+      "status": "avoid",
+      "period": "classical",
+      "gloss": "gravel in the medical sense",
+      "grammar": "noun, second declension",
+      "comment": "The medical “gravel” sense of <strong lang=\"la\">calculus</strong> at the same Morgan–Owens headword is not the building material intended here."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Glāream hūc fer.",
+      "english": "Bring the gravel here.",
+      "source": "composed"
+    },
+    {
+      "latin": "Hīc glāream cumulā.",
+      "english": "Pile the gravel here.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "sand",
+    "stone",
+    "pile-up",
+    "mortar"
+  ],
+  "sources": [
+    "<a href=\"https://www.alatius.com/ls/index.php?l=glarea\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: glarea</a> · <a href=\"https://neolatinlexicon.org/latin/gravel/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: gravel</a>",
+    "The example sentences marked “composed” are ours."
+  ],
+  "replaces": [
+    "entry-162",
+    "daily-162"
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

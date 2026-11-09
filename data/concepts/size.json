@@ -1,0 +1,72 @@
+{
+  "id": "size",
+  "english": "size",
+  "pos": "noun",
+  "also": [
+    "how big",
+    "dimensions",
+    "stature"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "magnitūdō, magnitūdinis f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "size, bigness",
+      "evidence": [
+        "Plin. Ep. 6.16.4: <span lang=\"la\">nūbem inūsitātā et magnitūdine et speciē</span>",
+        "Traupman 206, 380"
+      ],
+      "comment": "Size of any kind, large or small: <span lang=\"la\">minōrēs sunt magnitūdine</span>, they are smaller in size (Varro, Lewis &amp; Short); <span lang=\"la\">ad fabae magnitūdinem</span>, the size of a bean (Celsus, Lewis &amp; Short). How big? <span lang=\"la\">Quantus?</span> — <span lang=\"la\">Tantus!</span> (see so big!)."
+    },
+    {
+      "latin": "amplitūdō, amplitūdinis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "size, breadth, bulk",
+      "evidence": [
+        "Cic. Verr. 2.4.49: <span lang=\"la\">simulācrum modicā amplitūdine</span> (Lewis &amp; Short)",
+        "Traupman 206, 380"
+      ],
+      "comment": "Size as extent and bulk; only in prose (Lewis &amp; Short)."
+    },
+    {
+      "latin": "statūra, statūrae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a person’s height, build",
+      "evidence": [
+        "Caes. BG 2.30.4: <span lang=\"la\">hominēs tantulae statūrae</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "hōrā ferē septimā māter mea indicat eī appārēre nūbem inūsitātā et magnitūdine et speciē.",
+      "english": "at about the seventh hour my mother points out to him a cloud of unusual size and appearance.",
+      "source": "Plin. Ep. 6.16.4"
+    },
+    {
+      "latin": "hominēs tantulae statūrae",
+      "english": "men of such small size",
+      "source": "Caes. BG 2.30.4"
+    }
+  ],
+  "related": [
+    "big",
+    "so-big",
+    "medium",
+    "measure-noun"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/magnitudo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: magnitudo</a> · <a href=\"https://logeion.uchicago.edu/amplitudo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: amplitudo</a> · <a href=\"https://logeion.uchicago.edu/statura\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: statura</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 206, 380, checked against the searchable text of the book (9 November 2026).",
+    "Pliny’s letters and Caesar checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

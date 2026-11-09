@@ -1,0 +1,73 @@
+{
+  "id": "university",
+  "english": "university",
+  "pos": "noun",
+  "also": [
+    "universities",
+    "go to university",
+    "uni",
+    "college"
+  ],
+  "domain": "schola",
+  "terms": [
+    {
+      "latin": "ūniversitās studiōrum, ūniversitātis studiōrum f.",
+      "status": "recommended",
+      "period": "modern",
+      "gloss": "a university",
+      "evidence": [
+        "Traupman 400",
+        "M-O s.v. school types: university, after Egger",
+        "Levi–Bini p. 67"
+      ],
+      "comment": "Classically <span lang=\"la\">ūniversitās</span> is the whole, and in the jurists a corporation (Gai. Inst. 2.11, Lewis &amp; Short); the guilds of masters and students that became the universities took the name in the Middle Ages. <span lang=\"la\">Studiōrum</span> makes the sense plain; Traupman also allows <span lang=\"la\">ūniversitās</span> alone."
+    },
+    {
+      "latin": "acadēmīa, acadēmīae f.",
+      "status": "alternative",
+      "period": "renaissance",
+      "gloss": "a university",
+      "evidence": [
+        "M-O s.v. school types: university, after Vives (1540), Mercator (1595) and Tursellinus (1652)",
+        "Traupman 28, 267 (academy)"
+      ],
+      "comment": "The humanists’ word for a university. Classically the gymnasium outside Athens where Plato taught, and the name Cicero gave to his villa near Puteoli and to a gymnasium at his Tusculan villa (Lewis &amp; Short).",
+      "notes": [
+        "academia"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "in Valentīnā Acadēmīā (ūniversitātem vocant) tōtō orbe celeberrimā",
+      "english": "at the Academy of Valencia (they call it a university), the most famous in the whole world",
+      "source": "Ruiz (1794), p. viii, quoted by Morgan–Owens s.v. school types: university"
+    }
+  ],
+  "notes": {
+    "academia": {
+      "form": "acadēmīa",
+      "claim": "long i",
+      "against": "Traupman 28 and Morgan–Owens <span lang=\"la\">acadēmia</span>",
+      "html": "Cicero’s own verse scans it long: <span lang=\"la\">Inque Acadēmīā umbriferā nitidōque Lycēō</span> (Div. 1.22), where <span lang=\"la\">-dēmī-</span> makes a spondee before the elided final <span lang=\"la\">-ā</span>. Lewis &amp; Short: long in Cicero and in Tullius Laurea (ap. Plin. NH 31.8), short only in Claudian and Sidonius. Greek Ἀκαδήμεια."
+    }
+  },
+  "related": [
+    "college",
+    "student",
+    "education",
+    "school"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/universitas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: universitas</a> · <a href=\"https://logeion.uchicago.edu/academia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: academia</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. school types: university; school types: university: college.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 28, 267, 400, checked against the searchable text of the book (9 November 2026).",
+    "Enrico Levi and Arturo Bini, <em>Il latino come lingua viva</em> (1937), p. 67, s.v. università.",
+    "Cicero, <em>De divinatione</em> 1.22, checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

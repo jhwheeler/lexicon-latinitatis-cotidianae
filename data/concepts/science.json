@@ -1,0 +1,67 @@
+{
+  "id": "science",
+  "english": "science",
+  "pos": "noun",
+  "also": [
+    "sciences",
+    "the sciences",
+    "natural science",
+    "scientific",
+    "scientist"
+  ],
+  "domain": "schola",
+  "terms": [
+    {
+      "latin": "scientia, scientiae f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "science; the systematic knowledge of a field",
+      "evidence": [
+        "Cic. Fin. 1.63: <span lang=\"la\">In physicīs plūrimum posuit. eā scientiā …</span>",
+        "Vitr. 3 praef. 1: <span lang=\"la\">disciplīnārum scientiae</span>",
+        "M-O s.v. science (natural sciences): <span lang=\"la\">scientia nātūrālis</span>, after Pallas (1811)"
+      ],
+      "comment": "Classically the knowing of a thing, usually with the genitive of the field: <span lang=\"la\">scientia jūris</span>, <span lang=\"la\">reī mīlitāris</span> (Cicero, Lewis &amp; Short). The sciences are <span lang=\"la\">scientiae</span>, a plural Lewis &amp; Short finds only in Vitruvius; the natural sciences, <span lang=\"la\">scientia nātūrālis</span> or <span lang=\"la\">disciplīnae nātūrālēs</span> (Morgan–Owens, after Pallas and Egger)."
+    },
+    {
+      "latin": "physica, physicōrum n. pl.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "natural science, the study of nature",
+      "evidence": [
+        "Cic. Fin. 1.17: <span lang=\"la\">in physicīs … tōtus est aliēnus</span>",
+        "Cic. Or. 119: <span lang=\"la\">physicōrum ignārus</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Cicero’s word for the science of nature, from the Greek; also <span lang=\"la\">physica</span> or <span lang=\"la\">physicē</span>, feminine (Fin. 3.72–73). In modern Latin it is physics. A scientist is <span lang=\"la\">physicus</span>: <span lang=\"la\">physicum, id est speculātōrem vēnātōremque nātūrae</span> (Cic. ND 1.83)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "In physicīs plūrimum posuit. … omnium autem rērum nātūrā cognitā levāmur superstitiōne, līberāmur mortis metū",
+      "english": "He set the greatest store by natural science. … Once we know the nature of all things, we are freed from superstition and from the fear of death",
+      "source": "Cic. Fin. 1.63"
+    },
+    {
+      "latin": "physicum, id est speculātōrem vēnātōremque nātūrae",
+      "english": "a scientist, that is, an observer and hunter of nature",
+      "source": "Cic. ND 1.83"
+    }
+  ],
+  "related": [
+    "research",
+    "subject-school",
+    "technology",
+    "education"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/scientia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: scientia</a> · <a href=\"https://logeion.uchicago.edu/physica\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: physica</a> · <a href=\"https://logeion.uchicago.edu/physicus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: physicus</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. science (natural sciences); scientist.",
+    "Cicero’s <em>De finibus</em> and <em>De natura deorum</em>, and Vitruvius, checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Traupman has no word for science."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

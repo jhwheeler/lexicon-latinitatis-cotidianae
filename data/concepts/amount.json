@@ -1,0 +1,78 @@
+{
+  "id": "amount",
+  "english": "amount",
+  "sense": "how much of something there is",
+  "pos": "noun",
+  "also": [
+    "quantity",
+    "a large amount of"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "modus, modī m.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "the amount, the measure of a thing",
+      "evidence": [
+        "Hor. S. 2.6.1: <span lang=\"la\">modus agrī nōn ita magnus</span>",
+        "Cic. Att. 13.33.2: <span lang=\"la\">dē modō agrī</span> (Lewis &amp; Short)"
+      ],
+      "comment": "The measure of a thing: its size or quantity (Lewis &amp; Short). In speech Latin more often asks <span lang=\"la\">quantum</span> with a genitive: <span lang=\"la\">quantum operae</span>, how much effort; <span lang=\"la\">tantum vīnī</span>, so much wine."
+    },
+    {
+      "latin": "vīs, vīs f.",
+      "status": "alternative",
+      "period": "classical",
+      "grammar": "noun, third declension: accusative vim, ablative vī",
+      "gloss": "a large amount, a mass (with a genitive)",
+      "evidence": [
+        "Cic. Tusc. 5.91: <span lang=\"la\">magna vīs aurī argentīque</span>"
+      ]
+    },
+    {
+      "latin": "quantitās, quantitātis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "quantity, amount",
+      "evidence": [
+        "Plin. NH 17.219: <span lang=\"la\">quantitās ūmōris</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Post-Augustan, and mostly technical: Vitruvius, the elder Pliny, Quintilian (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "hoc erat in vōtīs: modus agrī nōn ita magnus",
+      "english": "this is what I prayed for: an amount of land not so very big",
+      "source": "Hor. S. 2.6.1"
+    },
+    {
+      "latin": "Sōcratēs, in pompā cum magna vīs aurī argentīque ferrētur, «Quam multa nōn dēsīderō!» inquit.",
+      "english": "When a great amount of gold and silver was being carried in a procession, Socrates said: “How many things I don’t need!”",
+      "source": "Cic. Tusc. 5.91"
+    },
+    {
+      "latin": "sī, quantum operae sūmpsistī ut tuus pistor bonum faceret pānem, ejus duodecimam philosophiae dedissēs, ipse bonus jam prīdem essēs factus",
+      "english": "if you had given philosophy a twelfth of the amount of trouble you took to get your baker to make good bread, you would long ago have become good yourself",
+      "source": "Gell. 15.19.2, quoting Varro"
+    }
+  ],
+  "related": [
+    "a-lot",
+    "amount-money",
+    "measure-noun",
+    "size"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/modus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: modus</a> · <a href=\"https://logeion.uchicago.edu/vis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vis</a> · <a href=\"https://logeion.uchicago.edu/quantitas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quantitas</a>",
+    "Quotations from the Latinitas loci collections (loci-horatius, loci-gellius), checked against the editions named there.",
+    "Cicero’s <em>Tusculans</em> checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Traupman has no noun for amount."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

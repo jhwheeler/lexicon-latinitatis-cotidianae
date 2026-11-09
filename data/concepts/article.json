@@ -1,0 +1,97 @@
+{
+  "id": "article",
+  "english": "article",
+  "sense": "in a newspaper or magazine",
+  "pos": "noun",
+  "also": [
+    "articles",
+    "newspaper article",
+    "magazine article"
+  ],
+  "also_under": [
+    "schola"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "commentātiō, commentātiōnis f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "an article, a short written study",
+      "evidence": [
+        "Traupman 273, 351",
+        "M-O s.v. genre: article",
+        "Plin. NH 8.44 (Lewis &amp; Short)"
+      ],
+      "comment": "Classically a careful study, and from the elder Pliny on a written treatise (Lewis &amp; Short); Gellius calls the chapters of his <span lang=\"la\">Noctēs Atticae</span> <span lang=\"la\">commentātiōnēs</span> (praef. 4). Traupman gives it for a newspaper article (p. 351)."
+    },
+    {
+      "latin": "commentāriolum, commentāriolī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a short piece of writing, a sketch",
+      "evidence": [
+        "Q. Cic. Pet. 58",
+        "Traupman 273"
+      ],
+      "notes": [
+        "commentariolum"
+      ]
+    },
+    {
+      "latin": "opusculum, opusculī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a little work",
+      "evidence": [
+        "Cic. Parad. prooem. 5 (Lewis &amp; Short)",
+        "M-O s.v. genre: article"
+      ]
+    },
+    {
+      "latin": "articulus, articulī m.",
+      "status": "avoid",
+      "period": "classical",
+      "gloss": "a joint; a member of a sentence; the grammatical article",
+      "evidence": [
+        "Levi–Bini p. 7",
+        "Traupman 273 (the grammatical article)"
+      ],
+      "comment": "A false friend, though Levi–Bini gives it beside <span lang=\"la\">caput</span> for the article of a newspaper: classically a joint or a knuckle, a member of a sentence, and in the jurists a short clause (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "quoniam longinquīs per hiemem noctibus in agrō … terrae Atticae commentātiōnēs hāsce lūdere ac facere exōrsī sumus, idcircō eās īnscrīpsimus Noctium esse Atticārum",
+      "english": "since I began to write these pieces for my own amusement in the long winter nights in the country in Attica, I have called them Attic Nights",
+      "source": "Gell. praef. 4"
+    }
+  ],
+  "notes": {
+    "commentariolum": {
+      "form": "commentāriolum",
+      "claim": "neuter",
+      "against": "Traupman 273 <span lang=\"la\">commentāriolus</span> m., which Lewis &amp; Short finds only in Jerome",
+      "html": "Q. Cic. Pet. 58: <span lang=\"la\">volō enim hoc commentāriolum petītiōnis habērī omnī ratiōne perfectum</span>. Lewis &amp; Short s.v. <span lang=\"la\">commentāriolum</span>: masculine only in Hier. Ep. 149.1."
+    }
+  },
+  "related": [
+    "newspaper",
+    "magazine",
+    "author",
+    "section"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/commentatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: commentatio</a> · <a href=\"https://logeion.uchicago.edu/commentariolum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: commentariolum</a> · <a href=\"https://logeion.uchicago.edu/opusculum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: opusculum</a> · <a href=\"https://logeion.uchicago.edu/articulus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: articulus</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. genre: article.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 273, 351, checked against the searchable text of the book (9 November 2026).",
+    "Enrico Levi and Arturo Bini, <em>Il latino come lingua viva</em> (1937), p. 7, s.v. articolo.",
+    "Quotations from the Latinitas loci collections (loci-gellius), checked against the editions named there.",
+    "Q. Cicero, <em>Commentariolum petitionis</em>, checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

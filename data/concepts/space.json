@@ -1,0 +1,72 @@
+{
+  "id": "space",
+  "english": "space",
+  "sense": "room; an empty area",
+  "pos": "noun",
+  "also": [
+    "room",
+    "make room",
+    "gap",
+    "empty space"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "spatium, spatiī n.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "space, room; the distance between",
+      "evidence": [
+        "Caes. BC 3.92.1: <span lang=\"la\">tantum erat relictum spatiī</span>",
+        "Lucr. 1.426: <span lang=\"la\">locus ac spatium, quod ināne vocāmus</span>"
+      ],
+      "comment": "The room or extent a thing has, or the distance between things; also a space of time (see period)."
+    },
+    {
+      "latin": "locus, locī m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "room, a place for someone or something",
+      "evidence": [
+        "Plaut. Poen. 23: <span lang=\"la\">līberīs ut sit locus</span>"
+      ],
+      "comment": "Room for someone: <span lang=\"la\">est locus</span>, there is room; <span lang=\"la\">locum ad spectandum dare</span>, to give someone a place to watch from (Cic. Mur. 73, Lewis &amp; Short)."
+    },
+    {
+      "latin": "intervallum, intervallī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a gap, the space between two things",
+      "evidence": [
+        "Caes. BG 7.23.1: <span lang=\"la\">paribus intervallīs</span> (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Inter duās aciēs tantum erat relictum spatiī, ut satis esset ad concursum utriusque exercitūs.",
+      "english": "Between the two lines enough space had been left for each army to charge.",
+      "source": "Caes. BC 3.92.1"
+    },
+    {
+      "latin": "servī nē obsideant, līberīs ut sit locus",
+      "english": "slaves must not take up the seats, so that there is room for free men",
+      "source": "Plaut. Poen. 23"
+    }
+  ],
+  "related": [
+    "outer-space",
+    "position",
+    "room",
+    "period-time"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/spatium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: spatium</a> · <a href=\"https://logeion.uchicago.edu/locus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: locus</a> · <a href=\"https://logeion.uchicago.edu/intervallum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: intervallum</a>",
+    "Caesar, Lucretius and Plautus, <em>Poenulus</em>, checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,4828 @@
+{
+  "batch": "building",
+  "cards": [
+    "entry-149",
+    "entry-150",
+    "entry-151",
+    "entry-152",
+    "entry-153",
+    "entry-162",
+    "entry-165",
+    "entry-166",
+    "entry-167",
+    "entry-172",
+    "entry-173",
+    "entry-174",
+    "entry-175",
+    "entry-154",
+    "entry-155",
+    "entry-156",
+    "entry-157",
+    "entry-158",
+    "entry-195",
+    "entry-425",
+    "entry-426",
+    "entry-427",
+    "entry-428"
+  ],
+  "records": [
+    {
+      "id": "builder",
+      "english": "builder",
+      "pos": "noun",
+      "also": [
+        "builders"
+      ],
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "aedificātor, aedificātōris m.",
+          "status": "recommended",
+          "period": "late"
+        }
+      ],
+      "related": [
+        "contractor",
+        "craftsman",
+        "bricklayer",
+        "carpenter",
+        "plasterer",
+        "workman"
+      ],
+      "sources": [
+        "Lewis &amp; Short, s.v. aedificator."
+      ],
+      "replaces": [
+        "entry-149"
+      ]
+    },
+    {
+      "id": "craftsman",
+      "english": "craftsman",
+      "pos": "noun",
+      "also": [
+        "artisan"
+      ],
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "faber, fabrī m.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "craftsman, artisan"
+        }
+      ],
+      "related": [
+        "carpenter",
+        "builder"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=faber\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: faber</a>"
+      ]
+    },
+    {
+      "id": "carpenter",
+      "english": "carpenter",
+      "pos": "noun",
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "faber tignārius",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "related": [
+        "craftsman",
+        "builder"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=faber\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: faber</a>"
+      ]
+    },
+    {
+      "id": "bricklayer",
+      "english": "bricklayer",
+      "pos": "noun",
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "laterum strūctor",
+          "status": "recommended",
+          "period": "modern"
+        },
+        {
+          "latin": "strūctor, strūctōris m.",
+          "status": "alternative",
+          "period": "classical"
+        }
+      ],
+      "related": [
+        "brick",
+        "builder"
+      ],
+      "sources": [
+        "Lewis &amp; Short, s.v. structor."
+      ]
+    },
+    {
+      "id": "plasterer",
+      "english": "plasterer",
+      "pos": "noun",
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "tēctor, tēctōris m.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 165, 168"
+          ],
+          "comment": "Digest 13.6.5.7 discusses a plasterer (<span lang=\"la\">servus tēctor</span>) lent out for work who falls <span lang=\"la\">dē māchinā</span>, from the scaffold."
+        }
+      ],
+      "related": [
+        "plaster-wall",
+        "scaffold",
+        "builder"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=tector\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tector</a>",
+        "<a href=\"https://www.bolchazy.com/product/conversational-latin-for-oral-proficiency-4th-edition-p3388/\" rel=\"noopener noreferrer\" target=\"_blank\">John C. Traupman, <em>Conversational Latin for Oral Proficiency</em></a>, pp. 165, 168."
+      ]
+    },
+    {
+      "id": "architect",
+      "english": "architect",
+      "pos": "noun",
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "architectus, architectī m.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "related": [
+        "contractor",
+        "builder"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=architectus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: architectus</a>"
+      ]
+    },
+    {
+      "id": "contractor",
+      "english": "contractor",
+      "pos": "noun",
+      "also": [
+        "building contractor"
+      ],
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "redēmptor, redēmptōris m.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "building contractor",
+          "evidence": [
+            "Horace, Ep. 2.2.72: <span lang=\"la\">festīnat calidus mūlīs gerulīsque redēmptor</span>, the contractor in a hurry",
+            "Cicero"
+          ]
+        },
+        {
+          "latin": "conductor, conductōris m.",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "the contractor who takes on a job",
+          "evidence": [
+            "Traupman 162",
+            "Cato, Agr. 14: <span lang=\"la\">facietque conductor</span>",
+            "Cicero, Q. fr. 3.1.5: <span lang=\"la\">ejus operis … conductōrem</span>"
+          ],
+          "comment": "Cato and Cicero use it of building works."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Dominus sum. In animō habeō domum novam aedificāre. Tū conductor es. Quid faciēs? Quem architectum commendās?",
+          "english": "I’m the owner. I mean to build a new house. You’re the contractor. What will you do? Which architect do you recommend? (After Traupman’s colloquium on p. 162.)",
+          "source": "Libellus VII, <span lang=\"la\">Diēs ūnus Osoitsae</span>"
+        },
+        {
+          "latin": "Malleum habeō!",
+          "english": "I’ve got a hammer! (Theo, playing the contractor)",
+          "source": "Libellus VII, <span lang=\"la\">Diēs ūnus Osoitsae</span>"
+        }
+      ],
+      "related": [
+        "architect",
+        "builder",
+        "workman",
+        "building-works"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=redemptor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: redemptor</a> · <a href=\"https://www.alatius.com/ls/index.php?l=conductor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: conductor</a> · <a href=\"https://logeion.uchicago.edu/conductor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: conductor</a>",
+        "<a href=\"https://www.bolchazy.com/product/conversational-latin-for-oral-proficiency-4th-edition-p3388/\" rel=\"noopener noreferrer\" target=\"_blank\">John C. Traupman, <em>Conversational Latin for Oral Proficiency</em></a>, p. 162.",
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+      ]
+    },
+    {
+      "id": "scaffold-worker",
+      "english": "scaffold worker",
+      "pos": "noun",
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "māchinārius, māchināriī m.",
+          "status": "recommended",
+          "period": "post-classical",
+          "gloss": "one who works on a scaffold",
+          "evidence": [
+            "Digest 9.2.31, cited by Lewis &amp; Short"
+          ]
+        }
+      ],
+      "related": [
+        "scaffold",
+        "workman"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=machinarius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: machinarius</a>"
+      ]
+    },
+    {
+      "id": "lime-burner",
+      "english": "lime-burner",
+      "pos": "noun",
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "calcārius, calcāriī m.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Cato, Agr. 16"
+          ]
+        }
+      ],
+      "related": [
+        "lime-kiln",
+        "lime-building"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=calcarius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: calcarius</a>"
+      ]
+    },
+    {
+      "id": "workman",
+      "english": "workman",
+      "pos": "noun",
+      "also": [
+        "worker"
+      ],
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "operārius, operāriī m.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 162, 167"
+          ]
+        }
+      ],
+      "related": [
+        "builder",
+        "concrete-worker",
+        "scaffold-worker"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/operarius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: operarius</a>",
+        "<a href=\"https://www.bolchazy.com/product/conversational-latin-for-oral-proficiency-4th-edition-p3388/\" rel=\"noopener noreferrer\" target=\"_blank\">John C. Traupman, <em>Conversational Latin for Oral Proficiency</em></a>, pp. 162, 167."
+      ]
+    },
+    {
+      "id": "concrete-worker",
+      "english": "concrete worker",
+      "pos": "noun",
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "caementārius, caementāriī m.",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "Traupman 162"
+          ]
+        }
+      ],
+      "related": [
+        "concrete",
+        "workman"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/caementarius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: caementarius</a>",
+        "<a href=\"https://www.bolchazy.com/product/conversational-latin-for-oral-proficiency-4th-edition-p3388/\" rel=\"noopener noreferrer\" target=\"_blank\">John C. Traupman, <em>Conversational Latin for Oral Proficiency</em></a>, p. 162."
+      ]
+    },
+    {
+      "id": "iron-tools",
+      "english": "iron tools",
+      "pos": "noun",
+      "also": [
+        "tools"
+      ],
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "ferrāmenta, ferrāmentōrum n. pl.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "related": [
+        "craftsman"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/ferramentum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ferramentum</a>"
+      ]
+    },
+    {
+      "id": "rebuild",
+      "english": "rebuild",
+      "pos": "verb",
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "ā fundāmentīs renovāre",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "rebuild from the foundations"
+        }
+      ],
+      "related": [
+        "repair",
+        "foundations"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/renovo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: renovo</a>"
+      ]
+    },
+    {
+      "id": "plumber",
+      "english": "plumber",
+      "pos": "noun",
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "plumbārius, plumbāriī m.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 168",
+            "Vitruvius: <span lang=\"la\">artificēs plumbāriī</span>"
+          ]
+        }
+      ],
+      "related": [
+        "electrician",
+        "builder"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/plumbarius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: plumbarius</a>",
+        "<a href=\"https://www.bolchazy.com/product/conversational-latin-for-oral-proficiency-4th-edition-p3388/\" rel=\"noopener noreferrer\" target=\"_blank\">John C. Traupman, <em>Conversational Latin for Oral Proficiency</em></a>, p. 168, checked against the searchable text of the book (29 October 2026)."
+      ]
+    },
+    {
+      "id": "electrician",
+      "english": "electrician",
+      "pos": "noun",
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "ēlectridis artifex",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "Traupman 166"
+          ],
+          "comment": "A modern phrase."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Hīs addidit ēlectridis artificēs et plumbāriōs, quī fīla et fistulās per parietēs dūcunt.",
+          "english": "To these he added the electricians and plumbers, who run the wires and pipes through the walls.",
+          "source": "Libellus VII, <span lang=\"la\">Diēs ūnus Osoitsae</span>"
+        }
+      ],
+      "related": [
+        "plumber",
+        "wire"
+      ],
+      "sources": [
+        "<a href=\"https://www.bolchazy.com/product/conversational-latin-for-oral-proficiency-4th-edition-p3388/\" rel=\"noopener noreferrer\" target=\"_blank\">John C. Traupman, <em>Conversational Latin for Oral Proficiency</em></a>, p. 166, checked against the searchable text of the book (29 October 2026).",
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+      ]
+    },
+    {
+      "id": "wire",
+      "english": "wire",
+      "pos": "noun",
+      "also": [
+        "wiring"
+      ],
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "fīlum, fīlī n.",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "Traupman 166"
+          ],
+          "comment": "Classically a thread."
+        }
+      ],
+      "related": [
+        "electrician"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/filum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: filum</a>",
+        "<a href=\"https://www.bolchazy.com/product/conversational-latin-for-oral-proficiency-4th-edition-p3388/\" rel=\"noopener noreferrer\" target=\"_blank\">John C. Traupman, <em>Conversational Latin for Oral Proficiency</em></a>, p. 166, checked against the searchable text of the book (29 October 2026)."
+      ]
+    },
+    {
+      "id": "brick",
+      "english": "brick",
+      "pos": "noun",
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "later, lateris m.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 165"
+          ]
+        },
+        {
+          "latin": "later coctilis",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "fired brick",
+          "evidence": [
+            "Traupman 165"
+          ],
+          "comment": "<span lang=\"la\">coctilis</span> has a short i (Lewis &amp; Short <span lang=\"la\">coctĭlis</span>)."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Laterēs struunt.",
+          "english": "They are laying bricks.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "bricklayer",
+        "stone",
+        "rubble",
+        "roof-tile",
+        "scaffold"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=later\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: later</a> · <a href=\"https://www.alatius.com/ls/index.php?l=coctilis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: coctilis</a>",
+        "<a href=\"https://www.bolchazy.com/product/conversational-latin-for-oral-proficiency-4th-edition-p3388/\" rel=\"noopener noreferrer\" target=\"_blank\">John C. Traupman, <em>Conversational Latin for Oral Proficiency</em></a>, p. 165.",
+        "The example sentence marked “composed” is ours."
+      ],
+      "replaces": [
+        "entry-150"
+      ]
+    },
+    {
+      "id": "stone",
+      "english": "stone",
+      "pos": "noun",
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "lapis, lapidis m.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "related": [
+        "rubble",
+        "gravel",
+        "brick"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=lapis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lapis</a>"
+      ]
+    },
+    {
+      "id": "wood",
+      "english": "wood",
+      "sense": "the material",
+      "pos": "noun",
+      "also": [
+        "timber"
+      ],
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "lignum, lignī n.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "related": [
+        "beam",
+        "board"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=lignum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lignum</a>"
+      ]
+    },
+    {
+      "id": "board",
+      "english": "board",
+      "sense": "a plank",
+      "pos": "noun",
+      "also": [
+        "plank"
+      ],
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "tabula, tabulae f.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "board, plank",
+          "comment": "On a scaffold, an individual wooden plank of the deck."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Tabulam inverte.",
+          "english": "Flip the plank over.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "entry-164",
+        "scaffold-platform",
+        "insulation-board",
+        "wood"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=tabula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tabula</a>",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "beam",
+      "english": "beam",
+      "pos": "noun",
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "trabs, trabis f.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "beam, substantial structural timber",
+          "evidence": [
+            "Traupman 278"
+          ],
+          "comment": "Also ancient architectural usage."
+        },
+        {
+          "latin": "tignum, tignī n.",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "beam, timber",
+          "evidence": [
+            "Traupman 278"
+          ]
+        }
+      ],
+      "related": [
+        "rafter",
+        "wood",
+        "lintel"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=trabs\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: trabs</a> · <a href=\"https://logeion.uchicago.edu/tignum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tignum</a>",
+        "<a href=\"https://www.bolchazy.com/product/conversational-latin-for-oral-proficiency-4th-edition-p3388/\" rel=\"noopener noreferrer\" target=\"_blank\">John C. Traupman, <em>Conversational Latin for Oral Proficiency</em></a>, p. 278."
+      ]
+    },
+    {
+      "id": "rafter",
+      "english": "rafter",
+      "pos": "noun",
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "asser, asseris m.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "rafter, pole",
+          "evidence": [
+            "Cato Agr. 14, 1"
+          ]
+        }
+      ],
+      "related": [
+        "beam",
+        "roof",
+        "lintel"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/asser\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: asser</a>"
+      ]
+    },
+    {
+      "id": "threshold",
+      "english": "threshold",
+      "pos": "noun",
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "līmen, līminis n.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "related": [
+        "doorpost",
+        "lintel",
+        "door"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/limen\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: limen</a>"
+      ]
+    },
+    {
+      "id": "doorpost",
+      "english": "doorpost",
+      "pos": "noun",
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "postis, postis m.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "related": [
+        "threshold",
+        "lintel",
+        "door"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/postis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: postis</a>"
+      ]
+    },
+    {
+      "id": "lintel",
+      "english": "lintel",
+      "pos": "noun",
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "jugūmentum, jugūmentī n.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Cato Agr. 14, 1; L&amp;S jŭgūmentum"
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "parietēs omnēs, utī jussitur, calce et caementīs; pīlās ex lapide angulārī; tigna omnia quae opus sunt; līmina, postēs, jugūmenta, asserēs",
+          "english": "all the walls, as ordered, of lime and rubble; the pillars of squared stone; all the timbers needed; thresholds, doorposts, lintels, rafters (quoted in Libellus VII)",
+          "source": "Cato, Agr. 14, 1"
+        }
+      ],
+      "related": [
+        "threshold",
+        "doorpost",
+        "rafter",
+        "beam",
+        "rubble"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/jugumentum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: jugumentum</a>"
+      ]
+    },
+    {
+      "id": "rubble",
+      "english": "rubble",
+      "pos": "noun",
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "caementum, caementī n.",
+          "status": "recommended",
+          "period": "classical",
+          "comment": "Classically rubble, quarry stone (<span lang=\"la\">calce et caementīs</span>); Traupman 288 uses it for cement."
+        },
+        {
+          "latin": "caementa, caementōrum n. pl.",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "rough quarry stones, rubble laid in mortar"
+        },
+        {
+          "latin": "rūdus, rūderis n.",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "broken stone mixed with lime for floors"
+        }
+      ],
+      "related": [
+        "cement",
+        "concrete",
+        "lime-building",
+        "mortar",
+        "stone",
+        "bedding-layer"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/caementum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: caementum</a> · <a href=\"https://www.alatius.com/ls/index.php?l=caementum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: caementum</a> · <a href=\"https://www.alatius.com/ls/index.php?l=rudus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: rudus</a>"
+      ]
+    },
+    {
+      "id": "plaster-wall",
+      "english": "plaster",
+      "sense": "on walls",
+      "pos": "noun",
+      "also": [
+        "plaster coating"
+      ],
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "tēctōrium, tēctōriī n.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "plaster, plaster coating",
+          "evidence": [
+            "Traupman 168",
+            "Palladius, Opus agriculturae 1.13.2 and 1.15"
+          ],
+          "comment": "Palladius discusses applying and levelling it."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Tēctōrium parietī indūcunt.",
+          "english": "They are applying plaster to the wall.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "plasterer",
+        "lime-building",
+        "mortar"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=tectorium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tectorium</a> · <a href=\"https://la.wikisource.org/wiki/Opus_agriculturae/I\" rel=\"noopener noreferrer\" target=\"_blank\">Palladius, Opus agriculturae 1.13.2 and 1.15</a>",
+        "<a href=\"https://www.bolchazy.com/product/conversational-latin-for-oral-proficiency-4th-edition-p3388/\" rel=\"noopener noreferrer\" target=\"_blank\">John C. Traupman, <em>Conversational Latin for Oral Proficiency</em></a>, p. 168.",
+        "The example sentence marked “composed” is ours."
+      ],
+      "replaces": [
+        "entry-151"
+      ]
+    },
+    {
+      "id": "lime-building",
+      "english": "lime",
+      "sense": "for building",
+      "pos": "noun",
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "calx, calcis f.",
+          "status": "recommended",
+          "period": "classical",
+          "comment": "Do not silently equate lime with modern cement; Traupman’s English cement gloss is too broad for buying modern building materials."
+        }
+      ],
+      "related": [
+        "cement",
+        "mortar",
+        "lime-kiln",
+        "lime-burner",
+        "plaster-wall"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=calx\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: calx</a>"
+      ]
+    },
+    {
+      "id": "sand",
+      "english": "sand",
+      "pos": "noun",
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "harēna, harēnae f.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "related": [
+        "mortar",
+        "sand-pit",
+        "gravel"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=harena\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: harena</a>"
+      ]
+    },
+    {
+      "id": "mortar",
+      "english": "mortar",
+      "pos": "noun",
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "harēnātum, harēnātī n.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "lime-and-sand mortar",
+          "evidence": [
+            "Traupman 168",
+            "Cato, Agr. 18.7: <span lang=\"la\">dē glāreā et calce harēnātō</span>",
+            "Vitruvius 7.3.5",
+            "Pliny, NH 36.176 (Lewis &amp; Short)"
+          ]
+        },
+        {
+          "latin": "māteria, māteriae f.",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "the mixed mortar",
+          "evidence": [
+            "Vitruvius 2.5.1; 2.8.2"
+          ],
+          "comment": "In Vitruvius also the mixed mortar."
+        }
+      ],
+      "related": [
+        "lime-building",
+        "sand",
+        "cement",
+        "rubble"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=harenatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: harenatus</a> · <a href=\"https://www.alatius.com/ls/index.php?l=materia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: materia</a>",
+        "<a href=\"https://www.bolchazy.com/product/conversational-latin-for-oral-proficiency-4th-edition-p3388/\" rel=\"noopener noreferrer\" target=\"_blank\">John C. Traupman, <em>Conversational Latin for Oral Proficiency</em></a>, p. 168."
+      ]
+    },
+    {
+      "id": "cement",
+      "english": "cement",
+      "pos": "noun",
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "lithocolla, lithocollae f.",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "Vatican, Parvum verborum novatorum lexicum, s.v. cemento"
+          ],
+          "comment": "Recorded for modern cemento in the Vatican’s public abridgement. The unmarked modern stem vowels are not claimed to have independently established quantities."
+        },
+        {
+          "latin": "caementum, caementī n.",
+          "status": "alternative",
+          "period": "modern",
+          "evidence": [
+            "Traupman 288"
+          ],
+          "comment": "Classically rubble, quarry stone."
+        }
+      ],
+      "related": [
+        "concrete",
+        "lime-building",
+        "rubble",
+        "mortar"
+      ],
+      "sources": [
+        "<a href=\"https://www.vatican.va/roman_curia/institutions_connected/latinitas/documents/rc_latinitas_20040601_lexicon_it.html\" rel=\"noopener noreferrer\" target=\"_blank\">Vatican: Parvum verborum novatorum lexicum, cemento</a> · <a href=\"https://neolatinlexicon.org/latin/cement/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: cement</a>",
+        "<a href=\"https://www.bolchazy.com/product/conversational-latin-for-oral-proficiency-4th-edition-p3388/\" rel=\"noopener noreferrer\" target=\"_blank\">John C. Traupman, <em>Conversational Latin for Oral Proficiency</em></a>, p. 288."
+      ]
+    },
+    {
+      "id": "concrete",
+      "english": "concrete",
+      "pos": "noun",
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "opus caementīcium, operis caementīciī n.",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "Vitruvius 2.4.1: <span lang=\"la\">in caementīciīs autem strūctūrīs</span>",
+            "Vitruvius 2.8.17: <span lang=\"la\">parietibus caementīciīs</span>"
+          ],
+          "comment": "The modern name for Roman concrete, built on Vitruvius’s <span lang=\"la\">caementīcius</span>, “of rubble stones”; used here for modern concrete too."
+        },
+        {
+          "latin": "concrētum",
+          "status": "avoid",
+          "period": "modern",
+          "grammar": "noun, second declension",
+          "evidence": [
+            "Traupman 168"
+          ],
+          "notes": [
+            "concretum"
+          ]
+        }
+      ],
+      "notes": {
+        "concretum": {
+          "html": "Traupman 168 has <span lang=\"la\">concrētum</span>, which is not used: classical <span lang=\"la\">concrētus</span> means “thickened, congealed”.",
+          "ruling": "concrete"
+        }
+      },
+      "related": [
+        "cement",
+        "concrete-worker",
+        "rubble"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=caementicius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: caementicius</a>",
+        "<a href=\"https://www.bolchazy.com/product/conversational-latin-for-oral-proficiency-4th-edition-p3388/\" rel=\"noopener noreferrer\" target=\"_blank\">John C. Traupman, <em>Conversational Latin for Oral Proficiency</em></a>, p. 168."
+      ]
+    },
+    {
+      "id": "bedding-layer",
+      "english": "bedding layer",
+      "sense": "of a floor",
+      "pos": "noun",
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "statūmen n.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "the bottom bedding layer of a floor",
+          "grammar": "noun, third declension",
+          "evidence": [
+            "Vitruvius 7.1.1"
+          ]
+        }
+      ],
+      "related": [
+        "rubble"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=statumen\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: statumen</a>"
+      ]
+    },
+    {
+      "id": "insulation",
+      "english": "insulation",
+      "pos": "noun",
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "īnsulātiō, īnsulātiōnis f.",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "M-O s.v. insulation, citing Helfer"
+          ],
+          "comment": "Morgan–Owens records insulatio, citing Helfer; the brief entry does not specify a complete thermal-insulation system."
+        },
+        {
+          "latin": "īnsulātiō thermica",
+          "status": "alternative",
+          "period": "ours",
+          "gloss": "thermal insulation",
+          "comment": "Our explicit thermal qualifier, not an independently verified complete entry."
+        },
+        {
+          "latin": "mūnīmentum adversus frīgus",
+          "status": "alternative",
+          "period": "ours",
+          "gloss": "protection against the cold",
+          "comment": "Our functional description, preferable in narration because <span lang=\"la\">īnsulātiō</span> collides with <span lang=\"la\">īnsula</span>. Classical model for the function: Columella 9.7.4 <span lang=\"la\">quod tegumen cum frīgora et pluviās tum et aestūs arcet</span>."
+        }
+      ],
+      "related": [
+        "insulate",
+        "insulation-board"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/latin/insulation/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: insulation</a> · <a href=\"https://www.alatius.com/ls/index.php?l=munimentum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: munimentum</a>"
+      ],
+      "replaces": [
+        "entry-152"
+      ]
+    },
+    {
+      "id": "insulation-board",
+      "english": "insulation board",
+      "pos": "noun",
+      "also": [
+        "panel",
+        "insulation panel",
+        "EPS",
+        "expanded polystyrene"
+      ],
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "tabula ad calōrem retinendum",
+          "status": "recommended",
+          "period": "ours",
+          "gloss": "a board for retaining heat",
+          "comment": "Our functional description. For an individual panel, <strong lang=\"la\">tabula, tabulae f.</strong> is a useful broad noun; the precise material should be specified separately."
+        },
+        {
+          "latin": "tabula spūmea; tabulae spūmeae f.",
+          "status": "alternative",
+          "period": "ours",
+          "gloss": "EPS insulation board (expanded polystyrene)",
+          "comment": "Our working formation, not an attested term, built on classical <strong lang=\"la\">spūmeus, spūmea, spūmeum</strong> “foamy” (Vergil, Ovid, Pliny). Gloss: <span lang=\"la\">tabula levissima ex māteriā artificiōsā spūmeā facta, quae parietibus forīs affīgitur, ut domus hieme calōrem retineat et aestāte frīgus.</span> The common boards on site are black, graphite EPS, not white."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Nōlī hanc tabulam perforāre.",
+          "english": "Don’t make holes in this board.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "insulation",
+        "insulate",
+        "board"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=tabula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tabula</a> · <a href=\"https://www.alatius.com/ls/index.php?l=calor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: calor</a> · <a href=\"https://www.alatius.com/ls/index.php?l=perforo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: perforo</a> · <a href=\"https://www.alatius.com/ls/index.php?l=spumeus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: spumeus</a>",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "insulate",
+      "english": "insulate",
+      "pos": "verb",
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "parietēs adversus frīgus mūnīre",
+          "status": "recommended",
+          "period": "ours",
+          "gloss": "insulate the walls",
+          "comment": "Our functional description, preferable in narration because <span lang=\"la\">īnsulātiō</span> collides with <span lang=\"la\">īnsula</span>."
+        }
+      ],
+      "related": [
+        "insulation",
+        "insulation-board"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=munimentum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: munimentum</a>"
+      ]
+    },
+    {
+      "id": "building-site",
+      "english": "building site",
+      "pos": "noun",
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "locus ubi aedificātur",
+          "status": "recommended",
+          "period": "ours",
+          "gloss": "a place where building is taking place",
+          "comment": "Our ordinary relative-clause description."
+        }
+      ],
+      "related": [
+        "building-works",
+        "foundations",
+        "build",
+        "scaffold"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=aedifico\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aedifico</a>"
+      ],
+      "replaces": [
+        "entry-153"
+      ]
+    },
+    {
+      "id": "building-works",
+      "english": "building works",
+      "pos": "noun",
+      "also": [
+        "the works",
+        "job"
+      ],
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "opus, operis n.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "the works, the job on site",
+          "evidence": [
+            "Cicero, Q. fr. 3.1.2: <span lang=\"la\">opus Diphilī</span>",
+            "Cato, Agr. 14: <span lang=\"la\">ad opus dabit</span>"
+          ],
+          "comment": "Classical for building works."
+        }
+      ],
+      "related": [
+        "building-site",
+        "contractor"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=opus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: opus</a>"
+      ]
+    },
+    {
+      "id": "foundations",
+      "english": "foundations",
+      "pos": "noun",
+      "also": [
+        "foundation"
+      ],
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "fundāmenta, fundāmentōrum n. pl.",
+          "status": "recommended",
+          "period": "classical",
+          "comment": "The plural is the usual architectural form."
+        },
+        {
+          "latin": "fundāmentum, fundāmentī n.",
+          "status": "alternative",
+          "period": "classical",
+          "comment": "The singular is also ancient."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Fundāmenta jaciunt.",
+          "english": "They are laying the foundations.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "rebuild",
+        "building-site",
+        "trench"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=fundamentum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fundamentum</a>",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "build",
+      "english": "build",
+      "pos": "verb",
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "aedificō, aedificāre, aedificāvī, aedificātum",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "related": [
+        "builder",
+        "repair",
+        "demolish",
+        "build-up",
+        "build-on",
+        "assemble"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=aedifico\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aedifico</a>"
+      ]
+    },
+    {
+      "id": "repair",
+      "english": "repair",
+      "pos": "verb",
+      "also": [
+        "rebuild",
+        "restore",
+        "renovate"
+      ],
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "reficiō, reficere, refēcī, refectum",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "repair, rebuild, restore",
+          "evidence": [
+            "Pliny, Ep. 9.39.1: <span lang=\"la\">reficienda est mihi aedēs Cereris … in melius et in majus</span>, rebuilt better and bigger"
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Domum reficimus.",
+          "english": "We’re renovating the house.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "rebuild",
+        "build",
+        "demolish"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=reficio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: reficio</a>",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "demolish",
+      "english": "demolish",
+      "pos": "verb",
+      "also": [
+        "pull down"
+      ],
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "dīruō, dīruere, dīruī, dīrutum",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "related": [
+        "build",
+        "dismantle"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=diruo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: diruo</a>"
+      ]
+    },
+    {
+      "id": "gravel",
+      "english": "gravel",
+      "pos": "noun",
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "glārea, glāreae f.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Livy 41.27.5 (Lewis &amp; Short)",
+            "M-O s.v. gravel",
+            "Cato, Agr. 18.7: <span lang=\"la\">dē glāreā et calce harēnātō prīmum corium facitō</span>, the first layer of a floor",
+            "Vitruvius 2.4.2: sand sifted <span lang=\"la\">ē glāreā</span>",
+            "Cicero, Q. fr. 3.1.4: <span lang=\"la\">pulvis, nōn glārea injecta est</span>, of an approach road on a slope"
+          ],
+          "comment": "A collective material noun. Lewis &amp; Short cites road-building use. Morgan–Owens also lists it."
+        },
+        {
+          "latin": "calculus",
+          "status": "avoid",
+          "period": "classical",
+          "gloss": "gravel in the medical sense",
+          "grammar": "noun, second declension",
+          "comment": "The medical “gravel” sense of <strong lang=\"la\">calculus</strong> at the same Morgan–Owens headword is not the building material intended here."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Glāream hūc fer.",
+          "english": "Bring the gravel here.",
+          "source": "composed"
+        },
+        {
+          "latin": "Hīc glāream cumulā.",
+          "english": "Pile the gravel here.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "sand",
+        "stone",
+        "pile-up",
+        "mortar"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=glarea\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: glarea</a> · <a href=\"https://neolatinlexicon.org/latin/gravel/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: gravel</a>",
+        "The example sentences marked “composed” are ours."
+      ],
+      "replaces": [
+        "entry-162",
+        "daily-162"
+      ]
+    },
+    {
+      "id": "trench",
+      "english": "trench",
+      "pos": "noun",
+      "also": [
+        "ditch"
+      ],
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "fossa, fossae f.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "trench or ditch",
+          "comment": "Suitable for the construction trench around the house."
+        },
+        {
+          "latin": "fossa castrēnsis",
+          "status": "alternative",
+          "period": "modern",
+          "gloss": "military trench",
+          "evidence": [
+            "M-O s.v. military trench"
+          ],
+          "comment": "Morgan–Owens’s <strong lang=\"la\">fossa castrēnsis</strong> specifies a military trench; that qualification is unnecessary for our house drainage trench."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Fossam fodērunt.",
+          "english": "They dug a trench.",
+          "source": "composed"
+        },
+        {
+          "latin": "Fistula in fossā jacet.",
+          "english": "The pipe lies in the trench.",
+          "source": "composed"
+        },
+        {
+          "latin": "terram unde exculpserant, fossam vocābant et intrōrsum jactam mūrum",
+          "english": "the hole they dug was the fossa; the earth thrown inward, the wall",
+          "source": "Varro, LL 5.143"
+        }
+      ],
+      "related": [
+        "dig",
+        "dirt-earth",
+        "foundations"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=fossa\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fossa</a> · <a href=\"https://neolatinlexicon.org/latin/trench_as_those_of_wwi/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: military trench</a>",
+        "The example sentences marked “composed” are ours."
+      ],
+      "replaces": [
+        "entry-165",
+        "daily-165"
+      ]
+    },
+    {
+      "id": "dig",
+      "english": "dig",
+      "pos": "verb",
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "fodiō, fodere, fōdī, fossum",
+          "status": "recommended",
+          "period": "classical",
+          "comment": "<strong lang=\"la\">Fossam fodere</strong>, dig a trench; Lewis &amp; Short cites Livy 3.26.9 for this combination."
+        }
+      ],
+      "related": [
+        "trench",
+        "dirt-earth"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=fodio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fodio</a>"
+      ]
+    },
+    {
+      "id": "dirt-earth",
+      "english": "dirt",
+      "sense": "earth, soil",
+      "pos": "noun",
+      "also": [
+        "soil",
+        "earth"
+      ],
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "terra, terrae f.",
+          "status": "recommended",
+          "period": "classical",
+          "comment": "The ordinary material dug out of a trench. The English noun covers both the building material and unwanted dirt on a surface; Latin makes that distinction without requiring different kinds of soil."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Terram hūc fer.",
+          "english": "Bring the dirt here.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "dirt-grime",
+        "trench",
+        "pile"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=terra\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: terra</a>",
+        "The example sentence marked “composed” is ours."
+      ],
+      "replaces": [
+        "entry-166",
+        "daily-166"
+      ]
+    },
+    {
+      "id": "dirt-grime",
+      "english": "dirt",
+      "sense": "grime",
+      "pos": "noun",
+      "also": [
+        "grime",
+        "filth"
+      ],
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "sordēs, sordium f. pl.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "grime, filth",
+          "comment": "A singular also exists; the plural is the useful everyday form given here."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Sordēs ē manibus terge.",
+          "english": "Wipe the dirt off your hands.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "dirt-earth"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=sordes\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sordes</a> · <a href=\"https://www.alatius.com/ls/index.php?l=tergeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tergeo</a>",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "mound",
+      "english": "mound",
+      "pos": "noun",
+      "also": [
+        "hillock"
+      ],
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "tumulus, tumulī m.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "raised heap of earth, mound or small hill",
+          "evidence": [
+            "Vergil, Ecl. 5.42: <span lang=\"la\">tumulum facite</span>"
+          ],
+          "comment": "The noun also has a burial-mound sense, prominent in poetry, but is not restricted to graves; a hillock is larger than a child’s heap."
+        }
+      ],
+      "related": [
+        "pile",
+        "pile-up"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=tumulus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tumulus</a>"
+      ],
+      "replaces": [
+        "entry-167",
+        "daily-167"
+      ]
+    },
+    {
+      "id": "pile",
+      "english": "pile",
+      "sense": "a heap",
+      "pos": "noun",
+      "also": [
+        "heap"
+      ],
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "cumulus, cumulī m.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "heap",
+          "evidence": [
+            "Vergil, G. 1.105: <span lang=\"la\">cumulōsque … harēnae</span>",
+            "Ovid, Met. 14.137: <span lang=\"la\">pulveris … cumulum</span>"
+          ],
+          "comment": "Our recommendation for a child’s heap of sand, gravel or dirt. This is “pile” meaning a heap, not a foundation pile driven into the ground."
+        },
+        {
+          "latin": "acervus, acervī m.",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "heap, pile"
+        },
+        {
+          "latin": "congestus, congestūs m.",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "a heaping up, a heap",
+          "evidence": [
+            "Seneca, Const. 12.2: children who <span lang=\"la\">in lītoribus harēnae congestū simulācra domuum excitant</span>"
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "acervus terrae",
+          "english": "pile of dirt",
+          "source": "composed"
+        },
+        {
+          "latin": "acervus lapidum",
+          "english": "pile of stones",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "mound",
+        "pile-up"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=cumulus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cumulus</a> · <a href=\"https://www.alatius.com/ls/index.php?l=acervus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: acervus</a> · <a href=\"https://www.alatius.com/ls/index.php?l=congestus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: congestus (noun)</a>",
+        "The example sentences marked “composed” are ours."
+      ]
+    },
+    {
+      "id": "pile-up",
+      "english": "pile up",
+      "pos": "verb",
+      "also": [
+        "heap up",
+        "heap together"
+      ],
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "cumulō, cumulāre, cumulāvī, cumulātum",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "heap, pile up",
+          "grammar": "verb, first conjugation, transitive",
+          "comment": "Lewis &amp; Short gives material objects including sand, snow and logs, and marks the physical sense as mostly post-Augustan."
+        },
+        {
+          "latin": "coacervō, coacervāre, coacervāvī, coacervātum",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "heap together"
+        },
+        {
+          "latin": "congerō, congerere, congessī, congestum",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "bring or heap together"
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Terram hīc cumulā.",
+          "english": "Pile the dirt here.",
+          "source": "composed"
+        },
+        {
+          "latin": "Lapidēs in acervum congere.",
+          "english": "Heap the stones into a pile.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "pile",
+        "mound",
+        "gravel"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=cumulo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cumulo</a> · <a href=\"https://www.alatius.com/ls/index.php?l=coacervo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: coacervo</a> · <a href=\"https://www.alatius.com/ls/index.php?l=congero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: congero</a>",
+        "The example sentences marked “composed” are ours."
+      ]
+    },
+    {
+      "id": "scaffold",
+      "english": "scaffold",
+      "pos": "noun",
+      "also": [
+        "scaffolding"
+      ],
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "māchina, māchinae f.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Digest 13.6.5.7 (Ulpian): a plasterer lent out falls <span lang=\"la\">dē māchinā</span>; the risk differs if he was lent to work <span lang=\"la\">dē plānō</span>, on the ground, or if the scaffold was <span lang=\"la\">minus dīligenter … ligāta</span> or failed through <span lang=\"la\">fūnium perticārumque vetustāte</span>",
+            "Vitruvius 7.2.2: <span lang=\"la\">māchinīs comparātīs</span> (scaffolds set up for vaulting rooms)",
+            "Vitruvius 10.1.1: <span lang=\"la\">scānsōriae māchinae</span>, built <span lang=\"la\">tignīs statūtīs et trānsversāriīs conligātīs</span>",
+            "M-O s.v. scaffolding"
+          ],
+          "comment": "Scaffold or scaffolding for building, the Roman word. Lewis &amp; Short I.B.3 also cites Pliny 19.2.8 §30 (NH 19.30), but there <span lang=\"la\">māchinīs aedificātiōnum</span> means building machinery such as hoists, which is weak evidence for scaffolding. The noun is broader than modern English “machine.”"
+        },
+        {
+          "latin": "māchina ex fistulīs ferreīs",
+          "status": "alternative",
+          "period": "ours",
+          "gloss": "scaffolding made of iron tubes",
+          "comment": "Our descriptive phrase for the modern construction-site object."
+        },
+        {
+          "latin": "compāgēs, compāgis f.",
+          "status": "alternative",
+          "period": "modern",
+          "gloss": "framework",
+          "evidence": [
+            "M-O s.v. scaffolding"
+          ],
+          "comment": "Classically it never names a builder’s scaffold; the scaffolding sense is modern lexicographic (Morgan–Owens). Useful as a gloss word, not as the narrative noun."
+        },
+        {
+          "latin": "pēgma, pēgmatis n.",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "framework, stage machinery",
+          "comment": "Another ancient framework/machinery noun, especially for theatrical stage machinery and board fixtures. Its ancient examples do not by themselves establish the modern tube-and-clamp construction sense; <strong lang=\"la\">māchina</strong> has the clearer explicit builder’s-scaffold entry."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Operārius in māchinā stat.",
+          "english": "The worker is standing on the scaffold.",
+          "source": "composed"
+        },
+        {
+          "latin": "Māchinam juxtā domum cōnstruunt.",
+          "english": "They are assembling the scaffolding beside the house.",
+          "source": "composed"
+        },
+        {
+          "latin": "Dē plānō lūde, nōn in māchinā.",
+          "english": "Play on the ground, not on the scaffold (after the Digest’s dē plānō).",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "upright",
+        "crossbar",
+        "scaffold-pole",
+        "scaffold-platform",
+        "framework",
+        "scaffold-worker",
+        "assemble",
+        "dismantle"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=machina\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: machina</a> · <a href=\"https://www.alatius.com/ls/index.php?l=compages\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: compages</a> · <a href=\"https://www.alatius.com/ls/index.php?l=pegma\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pegma</a> · <a href=\"https://www.alatius.com/ls/index.php?l=planus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: planus</a> · <a href=\"https://neolatinlexicon.org/latin/scaffolding/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: scaffolding</a>",
+        "The example sentences marked “composed” are ours."
+      ],
+      "replaces": [
+        "entry-172",
+        "daily-172"
+      ]
+    },
+    {
+      "id": "framework",
+      "english": "framework",
+      "pos": "noun",
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "compāgēs, compāgis f.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "joining, joint, framework",
+          "evidence": [
+            "Lewis &amp; Short: “a joining together, connection, joint, structure,” used of the body and the state"
+          ]
+        }
+      ],
+      "related": [
+        "scaffold",
+        "joint"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=compages\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: compages</a>"
+      ]
+    },
+    {
+      "id": "upright",
+      "english": "upright",
+      "sense": "a vertical member",
+      "pos": "noun",
+      "also": [
+        "standard",
+        "vertical tube"
+      ],
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "arrēctārium, arrēctāriī n.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "upright, standard",
+          "evidence": [
+            "Vitruvius 2.8.20: <span lang=\"la\">arrēctāriōrum et trānsversāriōrum dispositiōne</span>",
+            "Vitruvius 7.3.11: <span lang=\"la\">in arrēctāriīs et trānsversāriīs</span>",
+            "Vitruvius 10.13.4, of the uprights of siege towers",
+            "Lewis &amp; Short: “the upright posts of a wall”"
+          ],
+          "comment": "Usually plural <strong lang=\"la\">arrēctāria</strong>. In Vitruvius, of the posts of timber-framed walls; applied here to the steel standards of a tube scaffold."
+        },
+        {
+          "latin": "fistula ad perpendiculum posita",
+          "status": "alternative",
+          "period": "ours",
+          "gloss": "upright or vertical tube, literally a tube placed plumb",
+          "comment": "Our description; the classical member name is <strong lang=\"la\">arrēctārium</strong>. Ancient <strong lang=\"la\">ad perpendiculum</strong> means vertically / perpendicularly."
+        }
+      ],
+      "related": [
+        "crossbar",
+        "scaffold-pole",
+        "brace",
+        "scaffold"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=arrectarius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: arrectarius</a> · <a href=\"https://www.alatius.com/ls/index.php?l=perpendiculum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: perpendiculum</a>"
+      ],
+      "replaces": [
+        "entry-173",
+        "daily-173"
+      ]
+    },
+    {
+      "id": "scaffold-pole",
+      "english": "scaffold pole",
+      "pos": "noun",
+      "also": [
+        "pole",
+        "scaffold tube",
+        "tube",
+        "iron tube"
+      ],
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "pertica, perticae f.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "pole",
+          "evidence": [
+            "Digest 13.6.5.7: <span lang=\"la\">fūnium perticārumque vetustāte</span>"
+          ],
+          "comment": "The Digest’s word for the poles of a lashed Roman scaffold."
+        },
+        {
+          "latin": "fistula, fistulae f.",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "tube",
+          "comment": "A material gloss for the hollow steel member, not a member name; classically a <strong lang=\"la\">fistula</strong> is first a (lead) water pipe, and <strong lang=\"la\">tubus</strong> a pipe. For a wooden pole or beam, <strong lang=\"la\">asser, asseris m.</strong> is ancient; the shape and material determine which noun fits."
+        },
+        {
+          "latin": "fistula ferrea",
+          "status": "alternative",
+          "period": "ours",
+          "gloss": "iron tube"
+        },
+        {
+          "latin": "tubus ferreus",
+          "status": "alternative",
+          "period": "ours",
+          "gloss": "iron tube"
+        }
+      ],
+      "related": [
+        "upright",
+        "crossbar",
+        "scaffold",
+        "rafter"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=pertica\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pertica</a> · <a href=\"https://www.alatius.com/ls/index.php?l=fistula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fistula</a> · <a href=\"https://www.alatius.com/ls/index.php?l=tubus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tubus</a> · <a href=\"https://www.alatius.com/ls/index.php?l=asser\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: asser</a>"
+      ]
+    },
+    {
+      "id": "crossbar",
+      "english": "crossbar",
+      "pos": "noun",
+      "also": [
+        "crosspiece",
+        "ledger",
+        "transom",
+        "horizontal bar",
+        "cross-tube"
+      ],
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "trānsversārium, trānsversāriī n.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "crosspiece; ledger, transom",
+          "evidence": [
+            "Vitruvius 10.1.1: <span lang=\"la\">tignīs statūtīs et trānsversāriīs conligātīs</span>",
+            "Vitruvius 2.8.20",
+            "Caesar, BC 2.15: <span lang=\"la\">tigna trānsversāria</span> (Lewis &amp; Short)"
+          ],
+          "comment": "One noun serves both horizontal functions; Latin does not distinguish ledger and transom."
+        },
+        {
+          "latin": "ferrum trānsversum; ferrī trānsversī n.",
+          "status": "alternative",
+          "period": "ours",
+          "gloss": "crossbar, horizontal metal bar",
+          "evidence": [
+            "M-O s.v. horizontal bar",
+            "Traupman 329"
+          ],
+          "comment": "Morgan–Owens and Traupman record it in gymnastics; applying it to this scaffold bar is our contextual extension. The classical member name is <strong lang=\"la\">trānsversārium</strong>."
+        },
+        {
+          "latin": "fistula trānsversa",
+          "status": "alternative",
+          "period": "ours",
+          "gloss": "hollow cross-tube"
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Theodōrus bacillum aduncum ex trānsversāriō māchinae suspendit.",
+          "english": "Theo hung the hooked stick from the scaffold’s crossbar.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "upright",
+        "scaffold-pole",
+        "scaffold"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=transversarius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: transversarius</a> · <a href=\"https://www.alatius.com/ls/index.php?l=transversus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: transversus</a> · <a href=\"https://neolatinlexicon.org/latin/horizontal_bar/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: horizontal bar (gymnastics)</a> · <a href=\"https://www.alatius.com/ls/index.php?l=suspendo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: suspendo</a>",
+        "<a href=\"https://www.bolchazy.com/product/conversational-latin-for-oral-proficiency-4th-edition-p3388/\" rel=\"noopener noreferrer\" target=\"_blank\">John C. Traupman, <em>Conversational Latin for Oral Proficiency</em></a>, p. 329.",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "brace",
+      "english": "brace",
+      "pos": "noun",
+      "also": [
+        "diagonal brace",
+        "prop",
+        "stay",
+        "support"
+      ],
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "fulcīmentum, fulcīmentī n.",
+          "status": "recommended",
+          "period": "post-classical",
+          "gloss": "prop, stay or support",
+          "comment": "An ancient post-classical noun."
+        },
+        {
+          "latin": "fulcīmentum oblīquum",
+          "status": "alternative",
+          "period": "ours",
+          "gloss": "diagonal brace",
+          "comment": "Our functional description. <strong lang=\"la\">oblīquus, oblīqua, oblīquum</strong> means slanting / diagonal."
+        }
+      ],
+      "related": [
+        "prop-up",
+        "secure",
+        "upright",
+        "crossbar"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=fulcimentum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fulcimentum</a> · <a href=\"https://www.alatius.com/ls/index.php?l=obliquus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: obliquus</a>"
+      ]
+    },
+    {
+      "id": "scaffold-platform",
+      "english": "scaffold platform",
+      "pos": "noun",
+      "also": [
+        "platform",
+        "deck",
+        "working deck",
+        "walk-boards"
+      ],
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "tabulātum, tabulātī n.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "planked flooring, floor or platform",
+          "evidence": [
+            "Vitruvius 10.13.4: a siege tower <span lang=\"la\">tabulātōrum decem</span>"
+          ],
+          "comment": "Applied here to the scaffold’s working deck. A metal deck is a modern application of the platform vocabulary, not evidence that ancient platforms used the same fittings. This is vocabulary for describing the scene, not an assembly specification."
+        },
+        {
+          "latin": "pontēs",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "high gangways",
+          "grammar": "noun, third declension, plural",
+          "evidence": [
+            "Vergil, A. 9.530: <span lang=\"la\">turris erat vastō suspectū et pontibus altīs</span>"
+          ],
+          "comment": "A poetic model for walk-boards."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Operārius super tabulātum ambulat.",
+          "english": "The worker is walking on the platform.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "storey",
+        "board",
+        "guardrail",
+        "scaffold",
+        "ladder"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=tabulatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tabulatus</a> · <a href=\"https://www.alatius.com/ls/index.php?l=pons\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pons</a>",
+        "The example sentence marked “composed” is ours."
+      ],
+      "replaces": [
+        "entry-174",
+        "daily-174"
+      ]
+    },
+    {
+      "id": "guardrail",
+      "english": "guardrail",
+      "pos": "noun",
+      "also": [
+        "guardrails",
+        "rail",
+        "parapet",
+        "breastwork"
+      ],
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "repāgula, repāgulōrum n. pl.",
+          "status": "recommended",
+          "period": "ours",
+          "gloss": "bars, barriers",
+          "comment": "Ancient especially for door bars; our functional extension to guardrails. Not asserted to be a standardized modern scaffold-component term."
+        },
+        {
+          "latin": "ferrum trānsversum ad marginem tabulātī positum",
+          "status": "alternative",
+          "period": "ours",
+          "gloss": "one metal rail placed at the edge of the deck",
+          "comment": "A description, not asserted to be a standardized modern scaffold-component term."
+        },
+        {
+          "latin": "pluteus, pluteī m.",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "breastwork, parapet on towers",
+          "grammar": "noun, second declension",
+          "evidence": [
+            "Caesar, BG 7.41 (Lewis &amp; Short)"
+          ],
+          "comment": "A closer ancient word for a parapet."
+        },
+        {
+          "latin": "lōrīca, lōrīcae f.",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "breastwork, parapet",
+          "evidence": [
+            "Caesar (Lewis &amp; Short)"
+          ],
+          "comment": "A closer ancient word for a parapet."
+        }
+      ],
+      "related": [
+        "scaffold-platform",
+        "crossbar"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=repagula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: repagula</a> · <a href=\"https://www.alatius.com/ls/index.php?l=pluteus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pluteus</a> · <a href=\"https://www.alatius.com/ls/index.php?l=lorica\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lorica</a>"
+      ]
+    },
+    {
+      "id": "base-plate",
+      "english": "base plate",
+      "pos": "noun",
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "lāmina sub fistulā posita",
+          "status": "recommended",
+          "period": "ours",
+          "gloss": "base plate under a scaffold tube",
+          "comment": "Our description, not a verified technical compound."
+        },
+        {
+          "latin": "lāmina, lāminae f.",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "plate, sheet"
+        }
+      ],
+      "related": [
+        "scaffold-pole",
+        "scaffold",
+        "coupler"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=lamina\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lamina</a>"
+      ]
+    },
+    {
+      "id": "ladder",
+      "english": "ladder",
+      "pos": "noun",
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "scālae, scālārum f. pl.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "ladder, stairs"
+        }
+      ],
+      "related": [
+        "rung",
+        "entry-88",
+        "scaffold-platform"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=scalas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: scalas</a>"
+      ]
+    },
+    {
+      "id": "rung",
+      "english": "rung",
+      "pos": "noun",
+      "also": [
+        "ladder rung",
+        "step"
+      ],
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "gradus, gradūs m.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "step or ladder rung"
+        }
+      ],
+      "related": [
+        "ladder",
+        "entry-88"
+      ],
+      "sources": [
+        "Lewis &amp; Short, s.v. gradus."
+      ]
+    },
+    {
+      "id": "joint",
+      "english": "joint",
+      "sense": "between parts",
+      "pos": "noun",
+      "also": [
+        "connection",
+        "joining",
+        "scaffold joint"
+      ],
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "jūnctūra, jūnctūrae f.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "joining, joint, connection",
+          "comment": "The ancient general noun, applied here to the joint between scaffold members."
+        }
+      ],
+      "related": [
+        "coupler",
+        "connect",
+        "framework"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=juncturae\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: juncturae</a>"
+      ],
+      "replaces": [
+        "entry-175",
+        "daily-175"
+      ]
+    },
+    {
+      "id": "coupler",
+      "english": "coupler",
+      "pos": "noun",
+      "also": [
+        "clamp",
+        "scaffold coupler"
+      ],
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "vinculum quō duae fistulae conjunguntur",
+          "status": "recommended",
+          "period": "ours",
+          "gloss": "a fastening by which two tubes are joined",
+          "comment": "Our descriptive “coupler / clamp.” It describes the function rather than claiming a specific modern coupler design had an ancient name. The ancient member names (<strong lang=\"la\">arrēctāria</strong>, <strong lang=\"la\">trānsversāria</strong>) are attested; only the steel coupler and adjustable base jack are modern, and no exact Latin names for them have been verified in the named sources."
+        },
+        {
+          "latin": "vinculum, vinculī n.",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "fastening, bond, tie"
+        }
+      ],
+      "related": [
+        "joint",
+        "connect",
+        "base-plate"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=vinculum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vinculum</a>"
+      ]
+    },
+    {
+      "id": "tie",
+      "english": "tie",
+      "sense": "lash",
+      "pos": "verb",
+      "also": [
+        "lash"
+      ],
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "ligō, ligāre, ligāvī, ligātum",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "tie, lash",
+          "evidence": [
+            "Digest 13.6.5.7: <span lang=\"la\">māchinae … nōn ab ipsō ligātae</span>"
+          ],
+          "comment": "The Digest’s verb for a Roman scaffold."
+        }
+      ],
+      "related": [
+        "scaffold-tie",
+        "secure",
+        "scaffold"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=ligo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ligo (verb)</a>"
+      ]
+    },
+    {
+      "id": "scaffold-tie",
+      "english": "scaffold tie",
+      "pos": "noun",
+      "also": [
+        "ties",
+        "stays"
+      ],
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "retinācula, retināculōrum n. pl.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "ropes, stays, ties",
+          "evidence": [
+            "Cato, Vergil, Vitruvius (Lewis &amp; Short)"
+          ],
+          "comment": "Applied here to the ties anchoring the scaffold to the wall."
+        }
+      ],
+      "related": [
+        "tie",
+        "scaffold"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=retinaculum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: retinaculum</a>"
+      ]
+    },
+    {
+      "id": "assemble",
+      "english": "assemble",
+      "pos": "verb",
+      "also": [
+        "construct"
+      ],
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "cōnstruō, cōnstruere, cōnstrūxī, cōnstrūctum",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "construct, build; here assemble",
+          "comment": "The verbs are ancient; the full modern-scaffold applications and sample sentences are ours."
+        }
+      ],
+      "related": [
+        "erect",
+        "connect",
+        "dismantle",
+        "build",
+        "scaffold"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=construo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: construo</a>"
+      ]
+    },
+    {
+      "id": "erect",
+      "english": "erect",
+      "pos": "verb",
+      "also": [
+        "raise"
+      ],
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "ērigō, ērigere",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "raise, erect"
+        }
+      ],
+      "related": [
+        "assemble",
+        "build-up"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=erigo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: erigo</a>"
+      ]
+    },
+    {
+      "id": "connect",
+      "english": "connect",
+      "pos": "verb",
+      "also": [
+        "join together"
+      ],
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "conjungō, conjungere",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "connect, join together"
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Fistulās inter sē conjungunt.",
+          "english": "They are connecting the tubes together.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "joint",
+        "coupler",
+        "assemble"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=conjungo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: conjungo</a>",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "secure",
+      "english": "secure",
+      "sense": "make firm",
+      "pos": "verb",
+      "also": [
+        "make firm"
+      ],
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "firmō, firmāre",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "secure, make firm"
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Māchinam fulcīmentīs firmant.",
+          "english": "They are securing the scaffold with braces.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "brace",
+        "prop-up",
+        "tie"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=firmo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: firmo</a>",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "prop-up",
+      "english": "prop up",
+      "pos": "verb",
+      "also": [
+        "brace",
+        "support"
+      ],
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "fulciō, fulcīre",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "prop up, brace, support"
+        }
+      ],
+      "related": [
+        "brace",
+        "secure"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=fulcio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fulcio</a>"
+      ]
+    },
+    {
+      "id": "dismantle",
+      "english": "dismantle",
+      "pos": "verb",
+      "also": [
+        "take apart"
+      ],
+      "domain": "aedificatio",
+      "terms": [
+        {
+          "latin": "dissolvō, dissolvere, dissolvī, dissolūtum",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "take apart, dismantle",
+          "comment": "The verb has ancient use for taking apart a bridge."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Māchinam dissolvunt.",
+          "english": "They are dismantling the scaffold.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "assemble",
+        "demolish",
+        "scaffold"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=dissolvo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dissolvo</a>",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "roof",
+      "english": "roof",
+      "pos": "noun",
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "tēctum, tēctī n.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 124"
+          ],
+          "comment": "It can also mean a ceiling in other contexts."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Sub tēctō sumus.",
+          "english": "We’re under the roof.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "ceiling",
+        "roof-tile",
+        "gable",
+        "pitched-roof",
+        "attic",
+        "rafter"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=tectum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tectum</a>",
+        "<a href=\"https://www.bolchazy.com/product/conversational-latin-for-oral-proficiency-4th-edition-p3388/\" rel=\"noopener noreferrer\" target=\"_blank\">John C. Traupman, <em>Conversational Latin for Oral Proficiency</em></a>, p. 124.",
+        "The example sentence marked “composed” is ours."
+      ],
+      "replaces": [
+        "entry-154"
+      ]
+    },
+    {
+      "id": "roof-tile",
+      "english": "roof tile",
+      "pos": "noun",
+      "also": [
+        "tile"
+      ],
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "tēgula, tēgulae f.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "related": [
+        "roof"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=tegula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tegula</a>"
+      ]
+    },
+    {
+      "id": "gable",
+      "english": "gable",
+      "pos": "noun",
+      "also": [
+        "pediment",
+        "gable top"
+      ],
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "fastīgium, fastīgiī n.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "gable, gable top, pediment; summit by extension",
+          "comment": "This ancient word has several architectural senses; it is not a uniquely precise modern ridge specification."
+        }
+      ],
+      "related": [
+        "pitched-roof",
+        "roof",
+        "slope"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=fastigium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fastigium</a>"
+      ]
+    },
+    {
+      "id": "slope",
+      "english": "slope",
+      "pos": "noun",
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "clīvus, clīvī m.",
+          "status": "recommended",
+          "period": "classical"
+        },
+        {
+          "latin": "fastīgium, fastīgiī n.",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "slope or gradient of ground",
+          "evidence": [
+            "Caesar, BC 1.45.5: <span lang=\"la\">locus tenuī fastīgiō vergēbat</span>"
+          ]
+        }
+      ],
+      "related": [
+        "sloping-down",
+        "sloping-up",
+        "ground-level",
+        "gable"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=clivus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: clivus</a> · <a href=\"https://www.alatius.com/ls/index.php?l=fastigium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fastigium</a>"
+      ]
+    },
+    {
+      "id": "sloping-down",
+      "english": "sloping down",
+      "pos": "adjective",
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "dēclīvis, dēclīve",
+          "status": "recommended",
+          "period": "classical",
+          "grammar": "adjective, third declension"
+        }
+      ],
+      "related": [
+        "sloping-up",
+        "slope",
+        "pitched-roof"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=declivis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: declivis</a>"
+      ]
+    },
+    {
+      "id": "sloping-up",
+      "english": "sloping up",
+      "pos": "adjective",
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "acclīvis, acclīve",
+          "status": "recommended",
+          "period": "classical",
+          "grammar": "adjective, third declension",
+          "evidence": [
+            "Cicero, Q. fr. 3.1.4: <span lang=\"la\">ea viae pars valdē acclīvis est</span>"
+          ]
+        }
+      ],
+      "related": [
+        "sloping-down",
+        "slope"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=acclivis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: acclivis</a>"
+      ]
+    },
+    {
+      "id": "pitched-roof",
+      "english": "pitched roof",
+      "pos": "noun",
+      "also": [
+        "gable roof"
+      ],
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "tēctum in utramque partem dēclīve",
+          "status": "recommended",
+          "period": "ours",
+          "gloss": "gable roof, a roof sloping in both directions",
+          "comment": "Our explanatory description of the shape, not an attested fixed technical name."
+        }
+      ],
+      "related": [
+        "roof",
+        "gable",
+        "sloping-down"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=tectum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tectum</a> · <a href=\"https://www.alatius.com/ls/index.php?l=declivis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: declivis</a>"
+      ]
+    },
+    {
+      "id": "storey",
+      "english": "storey",
+      "pos": "noun",
+      "also": [
+        "floor"
+      ],
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "tabulātum, tabulātī n.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "storey, floor of a building; also boarded flooring",
+          "evidence": [
+            "Traupman 125",
+            "Lewis &amp; Short (ancient storey sense)"
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Eāmus sūrsum!",
+          "english": "Let’s go upstairs!",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "top-floor",
+        "attic",
+        "ground-floor",
+        "scaffold-platform"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=tabulatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tabulatus</a>",
+        "<a href=\"https://www.bolchazy.com/product/conversational-latin-for-oral-proficiency-4th-edition-p3388/\" rel=\"noopener noreferrer\" target=\"_blank\">John C. Traupman, <em>Conversational Latin for Oral Proficiency</em></a>, p. 125.",
+        "The example sentence marked “composed” is ours."
+      ],
+      "replaces": [
+        "entry-155"
+      ]
+    },
+    {
+      "id": "top-floor",
+      "english": "top floor",
+      "pos": "noun",
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "summum tabulātum",
+          "status": "recommended",
+          "period": "ours",
+          "comment": "A natural compositional expression, suitable for the habitable top floor beneath the roof."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Ascendāmus in summum tabulātum.",
+          "english": "Let’s go up to the top floor.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "storey",
+        "attic",
+        "living-room"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=tabulatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tabulatus</a>",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "attic",
+      "english": "attic",
+      "pos": "noun",
+      "also": [
+        "loft",
+        "loft room",
+        "furnished loft"
+      ],
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "subtēgulāneum, subtēgulāneī n.",
+          "status": "recommended",
+          "period": "modern",
+          "gloss": "attic, loft room",
+          "grammar": "noun, second declension",
+          "evidence": [
+            "Traupman 122",
+            "M-O s.v. furnished attic"
+          ],
+          "comment": "“Attic” is a modern application (Traupman). The ancient adjective’s sense is clear: Pliny, NH 36.185 has <span lang=\"la\">pavīmenta … barbarica atque subtēgulānea</span>, floors under the roof, i.e. indoors (Lewis &amp; Short: “that is under the roof, = in-doors”). An older Morgan draft called Pliny’s sense uncertain; the passage settles it.",
+          "notes": [
+            "subtegulaneum"
+          ]
+        },
+        {
+          "latin": "conclāve sub tēctō",
+          "status": "alternative",
+          "period": "ours",
+          "gloss": "room under the roof, loft room",
+          "comment": "Our transparent alternative. The space need not be used for storage."
+        }
+      ],
+      "notes": {
+        "subtegulaneum": {
+          "form": "subtēgulāneum",
+          "claim": "long e",
+          "against": "Lewis &amp; Short <span lang=\"la\">sub-tĕgŭlānĕus</span>, against its own <span lang=\"la\">tēgula</span>",
+          "html": "The word is built on <span lang=\"la\">tēgula</span>, which Lewis &amp; Short marks long (s.v. <span lang=\"la\">tēgulae</span>); the ē of <span lang=\"la\">tēgula</span> is kept."
+        }
+      },
+      "related": [
+        "roof",
+        "ceiling",
+        "storey",
+        "top-floor",
+        "knee-wall"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=subtegulaneus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: subtegulaneus</a> · <a href=\"https://neolatinlexicon.org/latin/furnished_attic/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: furnished attic</a> · <a href=\"https://neolatinlexicon.org/latin/garret_attic_room/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: garret attic room</a> · <a href=\"https://archive.org/stream/TheLexiconAnglumEtLatinumByDavidMorgan/MorganAndSilvaFurmanUniversityLexicon_djvu.txt\" rel=\"noopener noreferrer\" target=\"_blank\">Older Morgan draft: attic caveat</a>",
+        "<a href=\"https://www.bolchazy.com/product/conversational-latin-for-oral-proficiency-4th-edition-p3388/\" rel=\"noopener noreferrer\" target=\"_blank\">John C. Traupman, <em>Conversational Latin for Oral Proficiency</em></a>, p. 122."
+      ]
+    },
+    {
+      "id": "knee-wall",
+      "english": "knee wall",
+      "pos": "noun",
+      "also": [
+        "low wall",
+        "low side wall"
+      ],
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "pariēs humilis",
+          "status": "recommended",
+          "period": "ours",
+          "gloss": "low wall",
+          "comment": "Descriptive attic knee wall; our contextual description. The noun is <strong lang=\"la\">pariēs, parietis m.</strong>"
+        }
+      ],
+      "related": [
+        "attic",
+        "height",
+        "build-up"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=paries\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: paries</a> · <a href=\"https://www.alatius.com/ls/index.php?l=humilis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: humilis</a>"
+      ],
+      "replaces": [
+        "entry-156"
+      ]
+    },
+    {
+      "id": "height",
+      "english": "height",
+      "pos": "noun",
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "altitūdō, altitūdinis f.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Altitūdinem parietis mētiāmur.",
+          "english": "Let’s measure the wall’s height.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "knee-wall"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=altitudo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: altitudo</a> · <a href=\"https://www.alatius.com/ls/index.php?l=metior\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: metior</a>",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "build-up",
+      "english": "build up",
+      "sense": "a structure",
+      "pos": "verb",
+      "also": [
+        "raise",
+        "raise the roof"
+      ],
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "extollō, extollere",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "raise, build up",
+          "comment": "Ancient verb; Lewis &amp; Short gives it no classical perfect, and <span lang=\"la\">extulī</span> is the perfect of <span lang=\"la\">efferō</span>. This entry does not supply a speculative full set of principal parts."
+        },
+        {
+          "latin": "exstruō, exstruere, exstrūxī, exstrūctum",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "build up, raise (a structure)",
+          "comment": "Use it for a past-tense “we raised the walls.”"
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Parietēs altius exstrūximus et novum tēctum imposuimus.",
+          "english": "We built the walls up higher and put on the new roof.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "build",
+        "erect",
+        "knee-wall",
+        "roof"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=extollo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: extollo</a> · <a href=\"https://www.alatius.com/ls/index.php?l=exstruo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: exstruo</a> · <a href=\"https://www.alatius.com/ls/index.php?l=effero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: effero</a>",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "door",
+      "english": "door",
+      "pos": "noun",
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "jānua, jānuae f.",
+          "status": "recommended",
+          "period": "classical"
+        },
+        {
+          "latin": "ōstium, ōstiī n.",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "door, doorway, opening"
+        }
+      ],
+      "related": [
+        "front-door",
+        "back-door",
+        "door-handle",
+        "bolt-the-door",
+        "threshold",
+        "doorpost",
+        "lintel"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=ianua\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: janua</a> · <a href=\"https://www.alatius.com/ls/index.php?l=ostium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ostium</a>"
+      ],
+      "replaces": [
+        "entry-157"
+      ]
+    },
+    {
+      "id": "window",
+      "english": "window",
+      "pos": "noun",
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "fenestra, fenestrae f.",
+          "status": "recommended",
+          "period": "classical"
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Fenestram aperī.",
+          "english": "Open the window.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "shutter",
+        "roller-shutter",
+        "window-pane",
+        "windowsill",
+        "window-screen"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=fenestra\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fenestra</a>",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "ceiling",
+      "english": "ceiling",
+      "pos": "noun",
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "tēctum, tēctī n.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "ceiling; also roof",
+          "evidence": [
+            "Traupman 122"
+          ],
+          "comment": "A ceiling is the overhead surface; an attic is the room or space above."
+        },
+        {
+          "latin": "lacūnar, lacūnāris n.",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "panelled or coffered ceiling",
+          "evidence": [
+            "Traupman 122"
+          ],
+          "comment": "A narrower architectural sense, not a generic term for every ceiling."
+        }
+      ],
+      "related": [
+        "roof",
+        "attic",
+        "entry-87"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=tectum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tectum</a> · <a href=\"https://www.alatius.com/ls/index.php?l=lacunar\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lacunar</a>",
+        "<a href=\"https://www.bolchazy.com/product/conversational-latin-for-oral-proficiency-4th-edition-p3388/\" rel=\"noopener noreferrer\" target=\"_blank\">John C. Traupman, <em>Conversational Latin for Oral Proficiency</em></a>, p. 122."
+      ]
+    },
+    {
+      "id": "back-door",
+      "english": "back door",
+      "pos": "noun",
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "postīcum, postīcī n.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 122",
+            "Plaut."
+          ],
+          "comment": "In Plautus, where <span lang=\"la\">rēctum ōstium</span> is the front door."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "pater et Theodōrus cum aviā per postīcum in hortum exiērunt",
+          "english": "Dad and Theo went out into the garden by the back door with Grandma",
+          "source": "Libellus IV, <span lang=\"la\">Diēs Grātulātiōnis</span>"
+        }
+      ],
+      "related": [
+        "front-door",
+        "door"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/posticum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: posticum</a>",
+        "<a href=\"https://www.bolchazy.com/product/conversational-latin-for-oral-proficiency-4th-edition-p3388/\" rel=\"noopener noreferrer\" target=\"_blank\">John C. Traupman, <em>Conversational Latin for Oral Proficiency</em></a>, p. 122, checked against the searchable text of the book (29 October 2026).",
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+      ]
+    },
+    {
+      "id": "door-handle",
+      "english": "door handle",
+      "pos": "noun",
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "manūbrium jānuae",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "Traupman 123"
+          ],
+          "comment": "<span lang=\"la\">manūbrium</span>, a handle (Cic.)."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Manūbrium jānuae Theodōrus nōn tetigit",
+          "english": "Theo did not touch the door handle",
+          "source": "Libellus III, <span lang=\"la\">Apud avum et aviam</span>"
+        }
+      ],
+      "related": [
+        "door"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/manubrium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: manubrium</a>",
+        "<a href=\"https://www.bolchazy.com/product/conversational-latin-for-oral-proficiency-4th-edition-p3388/\" rel=\"noopener noreferrer\" target=\"_blank\">John C. Traupman, <em>Conversational Latin for Oral Proficiency</em></a>, p. 123, checked against the searchable text of the book (29 October 2026).",
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+      ]
+    },
+    {
+      "id": "bolt-the-door",
+      "english": "bolt the door",
+      "pos": "verb",
+      "also": [
+        "bolt",
+        "lock",
+        "shoot the bolt"
+      ],
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "obserō, obserāre",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "bolt, lock",
+          "evidence": [
+            "Traupman 122",
+            "Ter.",
+            "Liv."
+          ]
+        },
+        {
+          "latin": "pessulum ōstiō obdere",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "shoot the bolt",
+          "evidence": [
+            "Ter. Eun. 3.5.55, as cited by L&amp;S s.v. <span lang=\"la\">pessulus</span>"
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Pater, jānuā obserātā, antequam lūmen exstingueret, in ephēmeride scrīpsit",
+          "english": "Dad bolted the door and, before turning off the light, wrote in his diary",
+          "source": "Libellus VI, <span lang=\"la\">Reditus: per Alpēs domum</span>"
+        }
+      ],
+      "related": [
+        "bolt",
+        "lock",
+        "unlock",
+        "door"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/obsero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: obsero</a> · <a href=\"https://logeion.org/pessulus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pessulus</a>",
+        "<a href=\"https://www.bolchazy.com/product/conversational-latin-for-oral-proficiency-4th-edition-p3388/\" rel=\"noopener noreferrer\" target=\"_blank\">John C. Traupman, <em>Conversational Latin for Oral Proficiency</em></a>, p. 122, checked against the searchable text of the book (29 October 2026).",
+        "Terence as cited by L&amp;S.",
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+      ]
+    },
+    {
+      "id": "bolt",
+      "english": "bolt",
+      "sense": "on a door",
+      "pos": "noun",
+      "also": [
+        "bar"
+      ],
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "sera, serae f.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "bolt, bar",
+          "evidence": [
+            "Varro, LL 7.108",
+            "Ov."
+          ]
+        }
+      ],
+      "related": [
+        "bolt-the-door",
+        "padlock",
+        "lock"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/sera\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sera</a>"
+      ]
+    },
+    {
+      "id": "shutter",
+      "english": "shutter",
+      "pos": "noun",
+      "also": [
+        "window shutter"
+      ],
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "foricula, foriculae f.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "window shutter",
+          "evidence": [
+            "Traupman 124",
+            "Varro, RR 1.59.1"
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Foriculīs apertīs, ē fenestrā per tenebrās arborēs et suprā eās lūmina illa longō ōrdine dīrēcta cernēbantur",
+          "english": "With the shutters open, the trees could be seen from the window in the dark, and above them those lights in a long straight row",
+          "source": "Libellus I, <span lang=\"la\">Iter in Lūsitāniam</span>"
+        }
+      ],
+      "related": [
+        "roller-shutter",
+        "window"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/foricula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: foricula</a>",
+        "<a href=\"https://www.bolchazy.com/product/conversational-latin-for-oral-proficiency-4th-edition-p3388/\" rel=\"noopener noreferrer\" target=\"_blank\">John C. Traupman, <em>Conversational Latin for Oral Proficiency</em></a>, p. 124, checked against the searchable text of the book (29 October 2026).",
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+      ]
+    },
+    {
+      "id": "roller-shutter",
+      "english": "roller shutter",
+      "pos": "noun",
+      "also": [
+        "blind"
+      ],
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "trānsenna, trānsennae f.",
+          "status": "recommended",
+          "period": "modern",
+          "gloss": "roller shutter, blind",
+          "evidence": [
+            "Traupman 125"
+          ],
+          "comment": "Jack’s ruling. Classically a net or a lattice."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "trānsennam dēmittere / subdūcere",
+          "english": "let down / pull up the shutter",
+          "source": "composed"
+        },
+        {
+          "latin": "cum pater, trānsennā dēmissā lūmineque exstīnctō",
+          "english": "when Dad, after letting down the shutter and turning off the light",
+          "source": "Libellus II, <span lang=\"la\">Sintra: castellum et puteus</span>"
+        },
+        {
+          "latin": "fenestra ampla, trānsennā jam subductā, arborēs prōspiciēbat",
+          "english": "a big window, its shutter already up, looked out on the trees",
+          "source": "Libellus III, <span lang=\"la\">Apud avum et aviam</span>"
+        }
+      ],
+      "related": [
+        "shutter",
+        "window"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.uchicago.edu/transenna\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: transenna</a>",
+        "<a href=\"https://www.bolchazy.com/product/conversational-latin-for-oral-proficiency-4th-edition-p3388/\" rel=\"noopener noreferrer\" target=\"_blank\">John C. Traupman, <em>Conversational Latin for Oral Proficiency</em></a>, p. 125, checked against the searchable text of the book (29 October 2026).",
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "living-room",
+      "english": "living room",
+      "pos": "noun",
+      "also": [
+        "sitting room"
+      ],
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "exedra, exedrae f.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Vitruvius 5.11.2: <span lang=\"la\">exhedrae spatiōsae, habentēs sēdēs</span> (so spelt in the Latin Library text)",
+            "Cicero, de Or. 3.17; N.D. 1.15 (Lewis &amp; Short)",
+            "Traupman 125"
+          ],
+          "comment": "Classically a room furnished with seats, for conversation; in Cicero the room where the speakers of a dialogue sit and talk. Traupman gives it for “sitting room”. The e is short (Greek ἐξέδρα). Use it for the room’s function; <span lang=\"la\">summum tabulātum</span> describes its position in the house."
+        },
+        {
+          "latin": "sessōrium",
+          "status": "avoid",
+          "period": "modern",
+          "grammar": "noun, second declension",
+          "evidence": [
+            "Traupman 124–125"
+          ],
+          "notes": [
+            "sessorium"
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Culīnam habet, cubicula, inter quae hospitium est, balneum, lātrīnam, hortum, trīclīnium, exedram",
+          "english": "It has a kitchen, bedrooms (among them a guest room), a bathroom, a lavatory, a garden, a dining room and a sitting room",
+          "source": "Libellus III, <span lang=\"la\">Apud avum et aviam</span>"
+        },
+        {
+          "latin": "Hīc sedēbimus et colloquēmur.",
+          "english": "We’ll sit and talk here.",
+          "source": "composed"
+        }
+      ],
+      "notes": {
+        "sessorium": {
+          "html": "Traupman (pp. 124–125) gives <span lang=\"la\">sessōrium</span> for “living room”, but its ancient senses are “seat, stool” (Caelius Aurelianus) and, in a single passage, “dwelling” (Petronius 77.4 <span lang=\"la\">vīperae hujus sessōrium</span>) (Lewis &amp; Short).",
+          "ruling": "sitting-room"
+        }
+      },
+      "related": [
+        "top-floor",
+        "furniture",
+        "armchair",
+        "sofa"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=exedra\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: exedra</a> · <a href=\"https://www.alatius.com/ls/index.php?l=sessorium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sessorium</a>",
+        "<a href=\"https://www.bolchazy.com/product/conversational-latin-for-oral-proficiency-4th-edition-p3388/\" rel=\"noopener noreferrer\" target=\"_blank\">John C. Traupman, <em>Conversational Latin for Oral Proficiency</em></a>, pp. 124–125.",
+        "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+        "The example sentence marked “composed” is ours."
+      ],
+      "replaces": [
+        "entry-158"
+      ]
+    },
+    {
+      "id": "artists-studio",
+      "english": "artist’s studio",
+      "pos": "noun",
+      "also": [
+        "studio",
+        "workshop"
+      ],
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "officīna artificis",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "M-O s.v. studio, citing Levine"
+          ],
+          "comment": "Morgan–Owens records the complete studio phrase, citing Levine. The nouns are <strong lang=\"la\">officīna, officīnae f.</strong> and <strong lang=\"la\">artifex, artificis m./f.</strong>"
+        }
+      ],
+      "related": [
+        "living-room"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/latin/studio/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: studio</a>"
+      ]
+    },
+    {
+      "id": "furniture",
+      "english": "furniture",
+      "pos": "noun",
+      "also": [
+        "household furnishings",
+        "furnishings"
+      ],
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "supellex, supellectilis f.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "furniture, household furnishings collectively",
+          "comment": "Ancient collective noun; broader than just tables and chairs."
+        }
+      ],
+      "related": [
+        "furnish",
+        "armchair",
+        "sofa",
+        "living-room"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=supellex\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: supellex</a>"
+      ]
+    },
+    {
+      "id": "armchair",
+      "english": "armchair",
+      "pos": "noun",
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "sella bracchiāta",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "Traupman 122"
+          ],
+          "comment": "The noun is <strong lang=\"la\">sella, sellae f.</strong>"
+        }
+      ],
+      "related": [
+        "easy-chair",
+        "folding-chair",
+        "recliner",
+        "sofa"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=sella\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sella</a>",
+        "<a href=\"https://www.bolchazy.com/product/conversational-latin-for-oral-proficiency-4th-edition-p3388/\" rel=\"noopener noreferrer\" target=\"_blank\">John C. Traupman, <em>Conversational Latin for Oral Proficiency</em></a>, p. 122."
+      ]
+    },
+    {
+      "id": "sofa",
+      "english": "sofa",
+      "pos": "noun",
+      "also": [
+        "couch"
+      ],
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "torus tōmentō fartus",
+          "status": "recommended",
+          "period": "modern",
+          "gloss": "a stuffed couch",
+          "evidence": [
+            "Traupman 125"
+          ],
+          "comment": "A descriptive phrase rather than a unique modern furniture taxonomy. The nouns are <strong lang=\"la\">torus, torī m.</strong> and <strong lang=\"la\">tōmentum, tōmentī n.</strong>"
+        }
+      ],
+      "related": [
+        "armchair",
+        "easy-chair",
+        "living-room"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=torus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: torus</a> · <a href=\"https://www.alatius.com/ls/index.php?l=tomentum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tomentum</a>",
+        "<a href=\"https://www.bolchazy.com/product/conversational-latin-for-oral-proficiency-4th-edition-p3388/\" rel=\"noopener noreferrer\" target=\"_blank\">John C. Traupman, <em>Conversational Latin for Oral Proficiency</em></a>, p. 125."
+      ]
+    },
+    {
+      "id": "ground-level",
+      "english": "ground level",
+      "pos": "phrase",
+      "also": [
+        "at ground level"
+      ],
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "plānō pede",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "at ground level, entered without steps",
+          "evidence": [
+            "Vitruvius 6.8.1: <span lang=\"la\">aedificia quae plānō pede īnstituuntur</span> (Lewis &amp; Short cites the older numbering 6.11)",
+            "Vitruvius 7.4.1: <span lang=\"la\">conclāvibus, quae plānō pede fuerint</span>"
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Hīc plānō pede intrāmus; illīc dēscendimus in hypogēum.",
+          "english": "Here we walk straight in; over there we go down to the basement.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "basement",
+        "ground-floor",
+        "slope",
+        "upright",
+        "crossbar"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=planus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: planus</a>",
+        "The example sentence marked “composed” is ours."
+      ],
+      "replaces": [
+        "entry-195",
+        "site-195"
+      ]
+    },
+    {
+      "id": "basement",
+      "english": "basement",
+      "pos": "noun",
+      "also": [
+        "underground vault"
+      ],
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "hypogēum, hypogēī n.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "basement, underground vault",
+          "grammar": "noun, second declension",
+          "evidence": [
+            "Vitruvius 6.8.1: <span lang=\"la\">sīn autem hypogēa concamarātiōnēsque īnstituentur, fundātiōnēs eōrum fierī dēbent crassiōrēs</span>"
+          ],
+          "comment": "Also <span lang=\"la\">hypogaeum</span>. It can also mean a burial vault (Petronius 111.2); on a building site the Vitruvian sense is clear."
+        },
+        {
+          "latin": "cella subterrānea",
+          "status": "alternative",
+          "period": "ours",
+          "comment": "For Theo."
+        }
+      ],
+      "related": [
+        "ground-level",
+        "foundations"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=hypogeus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: hypogeum</a>"
+      ]
+    },
+    {
+      "id": "terrace",
+      "english": "terrace",
+      "pos": "noun",
+      "also": [
+        "roof terrace",
+        "flat roof"
+      ],
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "sōlārium, sōlāriī n.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "roof terrace, sunny flat roof or balcony",
+          "evidence": [
+            "Lewis &amp; Short: “a part of the house exposed to the sun, a flat house-top, a terrace”",
+            "Plautus, Mil. 340: <span lang=\"la\">neque sōlārium neque hortum</span>",
+            "Suetonius, Claud. 10.1",
+            "M-O"
+          ],
+          "comment": "The same noun also means a sundial."
+        },
+        {
+          "latin": "subdiālia, subdiālium n. pl.",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "open-air terraces",
+          "evidence": [
+            "Pliny, NH 36.186"
+          ]
+        },
+        {
+          "latin": "xystus",
+          "status": "alternative",
+          "period": "modern",
+          "grammar": "noun, second declension",
+          "evidence": [
+            "Traupman 392"
+          ],
+          "comment": "Classically an open colonnade or tree-lined walk."
+        }
+      ],
+      "related": [
+        "balcony",
+        "porch",
+        "roof"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=solarium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: solarium</a> · <a href=\"https://www.alatius.com/ls/index.php?l=subdialis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: subdialis</a> · <a href=\"https://logeion.org/solarium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: solarium</a> · <a href=\"https://logeion.org/xystus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: xystus</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. porch: patio. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 392."
+      ]
+    },
+    {
+      "id": "wing",
+      "english": "wing",
+      "sense": "of a building",
+      "pos": "noun",
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "diaeta, diaetae f.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "a suite or wing of rooms, a pavilion",
+          "evidence": [
+            "Pliny, Ep. 2.17.20: <span lang=\"la\">diaeta est, amōrēs meī, rē vērā amōrēs: ipse posuī</span>",
+            "Suetonius, Claud. 10.1"
+          ],
+          "comment": "Post-Augustan (Lewis &amp; Short). The same noun also means a medical diet."
+        },
+        {
+          "latin": "āla",
+          "status": "avoid",
+          "period": "classical",
+          "gloss": "side room off the atrium",
+          "grammar": "noun, first declension",
+          "evidence": [
+            "Vitruvius 6.3.4"
+          ],
+          "comment": "In Vitruvius the <span lang=\"la\">ālae</span> are side rooms off the atrium, not wings."
+        }
+      ],
+      "related": [
+        "extension",
+        "apartment",
+        "build-on"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=diaeta\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: diaeta</a>"
+      ]
+    },
+    {
+      "id": "extension",
+      "english": "extension",
+      "sense": "of a building",
+      "pos": "noun",
+      "also": [
+        "new wing"
+      ],
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "aedificium adstrūctum",
+          "status": "recommended",
+          "period": "ours"
+        },
+        {
+          "latin": "pars domūs nova, veterī adstrūcta",
+          "status": "alternative",
+          "period": "ours",
+          "gloss": "the new wing, extension"
+        }
+      ],
+      "related": [
+        "build-on",
+        "wing"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=astruo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: astruo</a>"
+      ]
+    },
+    {
+      "id": "build-on",
+      "english": "build on",
+      "pos": "verb",
+      "also": [
+        "add a building to"
+      ],
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "adstruō (astruō), adstruere, adstrūxī, adstrūctum",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "build on, add a building to",
+          "evidence": [
+            "Columella 1.5.10: <span lang=\"la\">cum veterī adstruitur recēns aedificium</span>",
+            "Pliny, Ep. 9.7.4: <span lang=\"la\">astruendī</span>"
+          ]
+        }
+      ],
+      "related": [
+        "extension",
+        "build"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=astruo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: astruo</a>"
+      ]
+    },
+    {
+      "id": "sand-pit",
+      "english": "sand pit",
+      "sense": "where sand is dug",
+      "pos": "noun",
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "harēnārium, harēnāriī n.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Vitruvius 2.4.2: <span lang=\"la\">sīn autem nōn erunt harēnāria, unde fodiātur</span>"
+          ],
+          "comment": "Not the playground sandpit."
+        },
+        {
+          "latin": "harēnāria, harēnāriae f.",
+          "status": "alternative",
+          "period": "classical",
+          "evidence": [
+            "Varro",
+            "Cicero"
+          ]
+        }
+      ],
+      "related": [
+        "sand",
+        "entry-180"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=harenarius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: harenarium</a>"
+      ]
+    },
+    {
+      "id": "lime-kiln",
+      "english": "lime kiln",
+      "pos": "noun",
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "fornāx calcāria; fornācis calcāriae f.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Cato, Agr. 38.1: <span lang=\"la\">fornācem calcāriam pedēs lātam X facitō, altam pedēs XX</span>"
+          ]
+        }
+      ],
+      "related": [
+        "lime-burner",
+        "lime-building"
+      ],
+      "sources": [
+        "<a href=\"https://www.alatius.com/ls/index.php?l=fornax\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fornax</a> · <a href=\"https://www.alatius.com/ls/index.php?l=calcarius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: calcarius</a>"
+      ]
+    },
+    {
+      "id": "front-door",
+      "english": "front door",
+      "pos": "noun",
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "antīcum, antīcī n.",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "Traupman 123"
+          ]
+        },
+        {
+          "latin": "ōstium antīcum",
+          "status": "alternative",
+          "period": "post-classical",
+          "evidence": [
+            "M-O s.v. door: front-door"
+          ]
+        },
+        {
+          "latin": "jānua, jānuae f.",
+          "status": "alternative",
+          "period": "classical",
+          "evidence": [
+            "M-O s.v. door: front-door"
+          ]
+        },
+        {
+          "latin": "rēctum ōstium",
+          "status": "alternative",
+          "period": "classical",
+          "evidence": [
+            "Plaut."
+          ]
+        }
+      ],
+      "related": [
+        "back-door",
+        "door",
+        "doorbell",
+        "knock",
+        "doormat"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/anticus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: anticus</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. door: front-door. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 123."
+      ],
+      "replaces": [
+        "entry-425"
+      ]
+    },
+    {
+      "id": "doorbell",
+      "english": "doorbell",
+      "pos": "noun",
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "tintinnābulum ōstiī",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "Traupman 306",
+            "M-O s.v. doorbell"
+          ],
+          "comment": "Lewis &amp; Short: a bell “on a door to summon the attendant” (Suet.)."
+        }
+      ],
+      "related": [
+        "knock",
+        "front-door"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/tintinnabulum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tintinnabulum</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. doorbell. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 306."
+      ]
+    },
+    {
+      "id": "knock",
+      "english": "knock",
+      "sense": "at the door",
+      "pos": "verb",
+      "also": [
+        "knock at the door",
+        "knock on the door"
+      ],
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "forēs pulsāre",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "M-O s.v. door: knock on the door"
+          ]
+        },
+        {
+          "latin": "ōstium pulsāre",
+          "status": "alternative",
+          "period": "classical",
+          "evidence": [
+            "M-O s.v. door: knock on the door",
+            "Plaut. Bacch. 4.1.7, as cited by L&amp;S"
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Forēs pulsā, aut tintinnābulō sonum facitō.",
+          "english": "Knock at the door, or ring the bell.",
+          "source": "Schottennius, Conf.; one transcription only"
+        },
+        {
+          "latin": "Quis pulsat? Ī, vidē!",
+          "english": "Who’s knocking? Go and see!",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "doorbell",
+        "front-door"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/foris\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: foris</a> · <a href=\"https://logeion.org/pulso\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pulso</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. door: knock on the door.",
+        "Schottennius from the Latinitas loci collections; Plautus as cited by L&amp;S.",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "lock",
+      "english": "lock",
+      "sense": "on a door",
+      "pos": "noun",
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "claustrum, claustrī n.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 306",
+            "M-O s.v. lock"
+          ]
+        }
+      ],
+      "related": [
+        "padlock",
+        "unlock",
+        "bolt",
+        "bolt-the-door"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/claustrum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: claustrum</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. lock. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 306."
+      ]
+    },
+    {
+      "id": "padlock",
+      "english": "padlock",
+      "pos": "noun",
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "sera pēnsilis",
+          "status": "recommended",
+          "period": "renaissance",
+          "evidence": [
+            "M-O s.v. lock: padlock, after Vives"
+          ]
+        }
+      ],
+      "related": [
+        "lock",
+        "bolt"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/sera\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sera</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. lock: padlock."
+      ]
+    },
+    {
+      "id": "unlock",
+      "english": "unlock",
+      "pos": "verb",
+      "also": [
+        "open"
+      ],
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "reserāre",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "unlock, open",
+          "grammar": "verb, first conjugation",
+          "evidence": [
+            "M-O s.v. lock: unlock",
+            "Tib.",
+            "Ov."
+          ]
+        }
+      ],
+      "related": [
+        "lock",
+        "bolt-the-door"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/resero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: resero</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. lock: unlock."
+      ]
+    },
+    {
+      "id": "doormat",
+      "english": "doormat",
+      "pos": "noun",
+      "also": [
+        "mat"
+      ],
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "storea ōstiī",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "M-O s.v. doormat"
+          ]
+        },
+        {
+          "latin": "storea, storeae f.",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "mat",
+          "evidence": [
+            "Caes.",
+            "Liv."
+          ]
+        },
+        {
+          "latin": "teges, tegetis f.",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "mat"
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Pedēs in storeā terge.",
+          "english": "Wipe your feet on the mat.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "front-door"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/storea\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: storea</a> · <a href=\"https://logeion.org/teges\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: teges</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. doormat.",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "window-pane",
+      "english": "window pane",
+      "pos": "noun",
+      "also": [
+        "pane"
+      ],
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "vitrum fenestrae",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "Traupman 407"
+          ]
+        },
+        {
+          "latin": "speculār, speculāris n.",
+          "status": "alternative",
+          "period": "classical",
+          "evidence": [
+            "M-O s.v. window pane",
+            "L&amp;S <span lang=\"la\">speculāria</span>, window panes (Sen. Ep. 90.25)"
+          ]
+        }
+      ],
+      "related": [
+        "window",
+        "windowsill"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/specularis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: specularis</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. window pane. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 407."
+      ]
+    },
+    {
+      "id": "windowsill",
+      "english": "windowsill",
+      "pos": "noun",
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "fenestrae pluteus",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "M-O s.v. windowsill"
+          ]
+        }
+      ],
+      "related": [
+        "window",
+        "window-pane"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. windowsill."
+      ]
+    },
+    {
+      "id": "window-screen",
+      "english": "window screen",
+      "pos": "noun",
+      "also": [
+        "fly screen",
+        "screen"
+      ],
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "fenestra rēticulāta",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "window with a fly screen",
+          "evidence": [
+            "M-O s.v. window: screen",
+            "Varr. R.R. 3.7.3"
+          ]
+        }
+      ],
+      "related": [
+        "window"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/reticulatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: reticulatus</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. window: screen (on window)."
+      ]
+    },
+    {
+      "id": "apartment",
+      "english": "apartment",
+      "pos": "noun",
+      "also": [
+        "flat"
+      ],
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "diaeta, diaetae f.",
+          "status": "recommended",
+          "period": "modern",
+          "gloss": "apartment, flat",
+          "evidence": [
+            "Traupman 122",
+            "M-O s.v. apartment"
+          ],
+          "comment": "Anciently a suite of rooms."
+        },
+        {
+          "latin": "cēnāculum, cēnāculī n.",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "upper flat, garret",
+          "evidence": [
+            "M-O",
+            "Cic.",
+            "Hor."
+          ]
+        }
+      ],
+      "related": [
+        "wing",
+        "balcony",
+        "ground-floor"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/diaeta\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: diaeta</a> · <a href=\"https://logeion.org/cenaculum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cenaculum</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. apartment. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 122."
+      ],
+      "replaces": [
+        "entry-426"
+      ]
+    },
+    {
+      "id": "balcony",
+      "english": "balcony",
+      "pos": "noun",
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "maeniānum, maeniānī n.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 122",
+            "M-O s.v. balcony"
+          ],
+          "comment": "A projecting gallery, named after the censor Maenius (Lewis &amp; Short under <span lang=\"la\">Maenius</span>)."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "In maeniānō stantēs montēs spectābimus.",
+          "english": "We’ll stand on the balcony and look at the mountains.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "terrace",
+        "apartment"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/maenius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: maenius</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. balcony. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 122.",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "ground-floor",
+      "english": "ground floor",
+      "pos": "noun",
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "pedeplāna, pedeplānōrum n.",
+          "status": "recommended",
+          "period": "post-classical",
+          "grammar": "noun, second declension, plural",
+          "evidence": [
+            "Traupman 123",
+            "Cod. Theod."
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Avia in pedeplānīs habitat.",
+          "english": "Grandma lives on the ground floor.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "storey",
+        "ground-level",
+        "apartment"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/pedeplana\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pedeplana</a>",
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 123.",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "corridor",
+      "english": "corridor",
+      "pos": "noun",
+      "also": [
+        "passage",
+        "hallway"
+      ],
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "andrōn, andrōnis m.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "corridor, a passage between two walls",
+          "evidence": [
+            "Traupman 123, 297",
+            "Vitr.",
+            "Plin. Ep. 2.17"
+          ]
+        },
+        {
+          "latin": "iter, itineris n.",
+          "status": "alternative",
+          "period": "classical",
+          "evidence": [
+            "M-O s.v. hallway, corridor",
+            "Vitr."
+          ],
+          "comment": "Morgan–Owens prefers it."
+        }
+      ],
+      "related": [
+        "landing"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/andron\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: andron</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. hallway, corridor. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): pp. 123, 297."
+      ]
+    },
+    {
+      "id": "landing",
+      "english": "landing",
+      "sense": "on a staircase",
+      "pos": "noun",
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "scālārium, scālāriī n.",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "Traupman 124"
+          ],
+          "comment": "Lewis &amp; Short has only <span lang=\"la\">scālāria, scālārium n.</span>, a flight of steps (Vitr.)."
+        }
+      ],
+      "related": [
+        "corridor",
+        "storey"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/scalaris\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: scalaris</a>",
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 124."
+      ]
+    },
+    {
+      "id": "porch",
+      "english": "porch",
+      "pos": "noun",
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "pergula, pergulae f.",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "Traupman 124",
+            "M-O s.v. porch"
+          ],
+          "comment": "Anciently a booth projecting from the front of a house."
+        },
+        {
+          "latin": "porticus, porticūs f.",
+          "status": "alternative",
+          "period": "classical",
+          "gloss": "colonnaded porch",
+          "evidence": [
+            "M-O s.v. porch"
+          ]
+        }
+      ],
+      "related": [
+        "terrace",
+        "front-door"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/pergula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pergula</a> · <a href=\"https://logeion.org/porticus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: porticus</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. porch. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 124."
+      ]
+    },
+    {
+      "id": "eaves",
+      "english": "eaves",
+      "pos": "noun",
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "suggrunda, suggrundae f.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "M-O s.v. eaves",
+            "Vitr.",
+            "Varro"
+          ]
+        }
+      ],
+      "related": [
+        "gutter",
+        "roof"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/suggrunda\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: suggrunda</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. eaves."
+      ]
+    },
+    {
+      "id": "gutter",
+      "english": "gutter",
+      "sense": "on a roof",
+      "pos": "noun",
+      "also": [
+        "rain gutter"
+      ],
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "grunda, grundae f.",
+          "status": "recommended",
+          "period": "medieval",
+          "gloss": "rain gutter",
+          "evidence": [
+            "M-O s.v. eaves: gutter"
+          ]
+        }
+      ],
+      "related": [
+        "eaves",
+        "roof"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/grunda\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: grunda</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. eaves: gutter."
+      ]
+    },
+    {
+      "id": "built-in-wardrobe",
+      "english": "built-in wardrobe",
+      "pos": "noun",
+      "also": [
+        "built-in cupboard"
+      ],
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "armārium parietī īnsertum",
+          "status": "recommended",
+          "period": "modern",
+          "gloss": "built-in cupboard or wardrobe",
+          "evidence": [
+            "Traupman 122"
+          ]
+        }
+      ],
+      "related": [
+        "walk-in-closet",
+        "linen-cupboard",
+        "chest-of-drawers"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/armarium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: armarium</a>",
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 122."
+      ],
+      "replaces": [
+        "entry-427"
+      ]
+    },
+    {
+      "id": "walk-in-closet",
+      "english": "walk-in closet",
+      "pos": "noun",
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "cellula vestiāria",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "M-O s.v. closet"
+          ]
+        }
+      ],
+      "related": [
+        "built-in-wardrobe"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. closet."
+      ]
+    },
+    {
+      "id": "linen-cupboard",
+      "english": "linen cupboard",
+      "pos": "noun",
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "armārium linteārium",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "Traupman 124"
+          ]
+        }
+      ],
+      "related": [
+        "built-in-wardrobe"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/armarium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: armarium</a>",
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 124."
+      ]
+    },
+    {
+      "id": "storeroom",
+      "english": "storeroom",
+      "pos": "noun",
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "cella promptuāria",
+          "status": "recommended",
+          "period": "post-classical",
+          "evidence": [
+            "M-O s.v. storage room",
+            "Apul."
+          ]
+        },
+        {
+          "latin": "promptuārium, promptuāriī n.",
+          "status": "alternative",
+          "period": "post-classical",
+          "evidence": [
+            "Apul.",
+            "Cato’s <span lang=\"la\">armārium promptuārium</span>"
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Ī, scōpās ē cellā promptuāriā affer.",
+          "english": "Go and bring the broom from the storeroom.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "shed",
+        "wine-cellar",
+        "woodshed"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/promptuarius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: promptuarius</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. storage room.",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "wine-cellar",
+      "english": "wine cellar",
+      "pos": "noun",
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "cella vīnāria",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "Traupman 37",
+            "M-O s.v. wine cellar",
+            "Col. 12.18.3",
+            "Plaut."
+          ]
+        },
+        {
+          "latin": "cellārium vīnārium",
+          "status": "alternative",
+          "period": "modern",
+          "evidence": [
+            "Traupman 407"
+          ]
+        }
+      ],
+      "related": [
+        "storeroom"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/vinarius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vinarius</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. wine cellar. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): pp. 37, 407."
+      ]
+    },
+    {
+      "id": "shed",
+      "english": "shed",
+      "pos": "noun",
+      "also": [
+        "storehouse",
+        "storage shed"
+      ],
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "horreum, horreī n.",
+          "status": "recommended",
+          "period": "classical",
+          "gloss": "shed, storehouse",
+          "grammar": "noun, second declension",
+          "evidence": [
+            "M-O s.v. storage shed, storage house"
+          ]
+        }
+      ],
+      "related": [
+        "woodshed",
+        "storeroom"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/horreum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: horreum</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. storage shed, storage house."
+      ]
+    },
+    {
+      "id": "woodshed",
+      "english": "woodshed",
+      "pos": "noun",
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "lignārium, lignāriī n.",
+          "status": "recommended",
+          "period": "post-classical",
+          "evidence": [
+            "M-O s.v. woodshed"
+          ]
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Ligna in lignāriō sicca sunt.",
+          "english": "The wood in the woodshed is dry.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "shed",
+        "wood"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/lignarius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lignarius</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. woodshed.",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "garage",
+      "english": "garage",
+      "sense": "where a car is kept",
+      "pos": "noun",
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "autocinētī receptāculum",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "Traupman 320"
+          ]
+        }
+      ],
+      "related": [
+        "shed"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/receptaculum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: receptaculum</a>",
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 320."
+      ]
+    },
+    {
+      "id": "easy-chair",
+      "english": "easy chair",
+      "pos": "noun",
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "arcisellium tōmentō fartum",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "Traupman 123"
+          ],
+          "comment": "<span lang=\"la\">arcisellium</span> is not in L&amp;S."
+        }
+      ],
+      "related": [
+        "armchair",
+        "sofa",
+        "recliner"
+      ],
+      "sources": [
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 123."
+      ],
+      "replaces": [
+        "entry-428"
+      ]
+    },
+    {
+      "id": "folding-chair",
+      "english": "folding chair",
+      "pos": "noun",
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "sella plicātilis",
+          "status": "recommended",
+          "period": "renaissance",
+          "evidence": [
+            "M-O s.v. chair: folding chair, after Vives"
+          ],
+          "comment": "<span lang=\"la\">plicātilis</span>, Plin."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Sellam plicātilem in hortum ferāmus.",
+          "english": "Let’s take the folding chair into the garden.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "recliner",
+        "armchair"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/plicatilis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: plicatilis</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. chair: folding chair.",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "recliner",
+      "english": "recliner",
+      "pos": "noun",
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "sella reclīnātōria",
+          "status": "recommended",
+          "period": "renaissance",
+          "evidence": [
+            "M-O s.v. chair: recliner, after Vives"
+          ]
+        }
+      ],
+      "related": [
+        "easy-chair",
+        "folding-chair"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/reclino\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: reclino</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. chair: recliner."
+      ]
+    },
+    {
+      "id": "chest-of-drawers",
+      "english": "chest of drawers",
+      "pos": "noun",
+      "also": [
+        "dresser"
+      ],
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "armārium loculātum",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "M-O s.v. dresser, chest of drawers"
+          ],
+          "comment": "<span lang=\"la\">loculātus</span>, Varro."
+        }
+      ],
+      "related": [
+        "clothes-chest",
+        "built-in-wardrobe"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/loculatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: loculatus</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. dresser, chest of drawers."
+      ]
+    },
+    {
+      "id": "clothes-chest",
+      "english": "clothes chest",
+      "pos": "noun",
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "arca vestiāria",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "M-O s.v. dresser, chest of drawers",
+            "Cato, Agr. 11.3"
+          ]
+        }
+      ],
+      "related": [
+        "chest-of-drawers"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/arca\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: arca</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. dresser, chest of drawers."
+      ]
+    },
+    {
+      "id": "sideboard",
+      "english": "sideboard",
+      "pos": "noun",
+      "also": [
+        "buffet"
+      ],
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "abacus, abacī m.",
+          "status": "recommended",
+          "period": "classical",
+          "evidence": [
+            "M-O s.v. sideboard"
+          ],
+          "comment": "Lewis &amp; Short: a sideboard topped with marble or silver."
+        }
+      ],
+      "related": [
+        "dressing-table"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/abacus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: abacus</a>",
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. dining-room buffet, sideboard."
+      ]
+    },
+    {
+      "id": "dressing-table",
+      "english": "dressing table",
+      "pos": "noun",
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "mēnsa comātōria",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "Traupman 307"
+          ],
+          "comment": "<span lang=\"la\">comātōrius</span>, Petr."
+        }
+      ],
+      "related": [
+        "sideboard",
+        "chest-of-drawers"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/comatorius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: comatorius</a>",
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 307."
+      ]
+    },
+    {
+      "id": "coat-hanger",
+      "english": "coat hanger",
+      "pos": "noun",
+      "also": [
+        "hanger",
+        "clothes hanger"
+      ],
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "fulcīmen vestiārium",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "Traupman 292"
+          ],
+          "comment": "<span lang=\"la\">fulcīmen</span> is poetic (Ov.)."
+        }
+      ],
+      "phrases": [
+        {
+          "latin": "Tunicam ex fulcīmine suspende.",
+          "english": "Hang your shirt on the hanger.",
+          "source": "composed"
+        }
+      ],
+      "related": [
+        "coat-rack"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/fulcimen\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fulcimen</a>",
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 292.",
+        "The example sentence marked “composed” is ours."
+      ]
+    },
+    {
+      "id": "coat-rack",
+      "english": "coat rack",
+      "pos": "noun",
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "sustentāculum vestium",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "Traupman 123"
+          ]
+        }
+      ],
+      "related": [
+        "coat-hanger"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/sustentaculum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sustentaculum</a>",
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 123."
+      ]
+    },
+    {
+      "id": "furnish",
+      "english": "furnish",
+      "pos": "verb",
+      "also": [
+        "furnish a house"
+      ],
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "domum supellectile īnstruere",
+          "status": "recommended",
+          "period": "modern",
+          "gloss": "furnish a house",
+          "evidence": [
+            "Traupman 123"
+          ]
+        }
+      ],
+      "related": [
+        "furniture"
+      ],
+      "sources": [
+        "<a href=\"https://logeion.org/supellex\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: supellex</a>",
+        "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 123."
+      ]
+    },
+    {
+      "id": "household-appliance",
+      "english": "household appliance",
+      "pos": "noun",
+      "also": [
+        "appliance",
+        "appliances"
+      ],
+      "domain": "domus-structura",
+      "terms": [
+        {
+          "latin": "īnstrūmentum domesticum ēlectricum",
+          "status": "recommended",
+          "period": "modern",
+          "evidence": [
+            "Traupman 123",
+            "M-O s.v. appliances, household appliances, after Egger"
+          ]
+        }
+      ],
+      "related": [
+        "furniture"
+      ],
+      "sources": [
+        "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. appliances, household appliances. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 123."
+      ]
+    }
+  ],
+  "dropped": {
+    "solum, solī n.": "entry-157 only points to entry-87 (domus, being converted separately), which defines solum; the ceiling record relates to entry-87",
+    "pavīmentum, pavīmentī n.": "entry-157 only points to entry-87 (domus), which defines pavīmentum; the ceiling record relates to entry-87",
+    "coctīlis": "a search keyword of entry-150 for the misspelling of coctilis; search ignores macrons, so coctilis already finds it"
+  },
+  "flags": [
+    "Suspected error, not changed: entry-425 prints the nominative speculār, speculāris n. with a long final a. Morgan–Owens (s.v. window pane) prints specular, âris n.; Lewis & Short marks no long nominative in these neuters (calcar, exemplar, lacūnar, which entry-157 prints short) and has the singular only in Tert. Anim. 53 (the plural speculāria is classical: Sen. Ep. 90.25). Probably specular.",
+    "Suspected citation slip, kept: entry-149 gives Traupman pp. 165 and 168 for tēctor, but p. 165 has laterum strūctor (bricklayer); tēctor is on pp. 162–163 and 168.",
+    "entry-426’s source line lists Traupman p. 286, which has nothing for that card (it has the garage phrase raedam in receptāculō collocāre); its andrōn item cites pp. 123 and 297, both right, and the corridor record cites those.",
+    "entry-426 says Lewis & Short has only scālāria, scālārium n.; it also has a singular SCALARE, is (Inscr. Orell. 4750). Kept as written in landing.",
+    "trānsenna (roller shutter) cites “Jack’s ruling”, but data/rulings.json has no ruling on it.",
+    "Periods where the card is silent, from Lewis & Short: aedificātor late (the literal “builder” only in Vulg. Isa. 58.12; classically figurative, Cic. N.D. 1.9, or “fond of building”, Nep. Att. 13, Juv. 14.86); caementārius modern in Traupman’s sense (in Lewis & Short a mason, Jerome and the Vulgate); antīcum modern (Lewis & Short has only the adjective antīcus); ōstium antīcum post-classical (Morgan–Owens: Smith citing Festus); plumbārius classical (Vitruvius’s artificēs plumbāriī; the noun alone is in the Digest); diaeta as a suite of rooms classical (Lewis & Short’s “post-Augustan” is Pliny and Suetonius); laterum strūctor modern (Traupman pp. 162, 165); summum tabulātum, cella subterrānea, aedificium adstrūctum and pars domūs nova, veterī adstrūcta ours.",
+    "Where entry-149 and entry-174 give no source line for a word, the record cites Lewis & Short without a link: builder (s.v. aedificator), bricklayer (s.v. structor), rung (s.v. gradus). Added Traupman 329 to ferrum trānsversum (the card names Traupman without a page; checked in the text).",
+    "Recommended forms to check: īnsulātiō leads insulation, though the card calls the descriptions preferable in narration (mūnīmentum adversus frīgus is an alternative; parietēs adversus frīgus mūnīre heads insulate); extollō leads build up, with exstruō for the past tense as the card says; cumulus leads pile, as the card recommends, over the heading’s acervus; pertica leads scaffold pole over fistula; the descriptions lead base plate (lāmina sub fistulā posita) and coupler (vinculum quō duae fistulae conjunguntur), with lāmina and vinculum as alternatives.",
+    "Readers: the Libellus VII dialogue is cited formally, with “after Traupman’s colloquium on p. 162” moved into its English; the Cato, Agr. 14, 1 quotation (lintel) is cited to Cato, with “quoted in Libellus VII” in its English, because check_libelli rejects any other source that names a Libellus. Malleum habeō! sits in contractor (Theo playing the contractor) for want of a hammer record.",
+    "Splits to look at: compāgēs in scaffold (modern, Morgan–Owens) and framework (classical); caementum in rubble (classical) and cement (Traupman 288); fastīgium in gable and slope; tabulātum in storey and scaffold platform; diaeta in wing (ancient) and apartment (Traupman); dirt split into earth and grime; tabula from entries 150, 152 and 174 in board and insulation board; sōlārium from entries 195 and 426 in terrace; jānua and rēctum ōstium (entry-157) also as front-door alternatives. Avoid terms: concrētum and sessōrium, each with a note citing its ruling (concrete, sitting-room), and āla and calculus, as their cards say.",
+    "scripts/build.py derives the grammar of -eī genitives (pluteī, horreī, hypogēī, subtēgulāneī) as fifth declension; those terms set grammar explicitly, as do terms without a genitive (statūmen, pontēs, sessōrium, concrētum, calculus, āla, xystus, reserāre) and the plural pedeplāna.",
+    "Likely overlaps with cards converted in parallel (headwords may clash on merge): stone (sermo entry-27), build and dismantle / take apart (sermo entry-32), dig (domus entry-266, ludi entry-181), sand (ludi entry-180), wood (culina entry-128), slope (natura entry-199, entry-278), storeroom (culina entry-248), garage (vectura entry-536), storey (vectura entry-222, floor), furniture (domus entry-265), craftsman (urbs entry-544), ladder and rung (domus entry-88), scaffold pole (officina entry-161, pipe / tube), iron tools (officina entry-97), built-in wardrobe (domus entry-87). lime and plaster carry senses (for building; on walls) because natura (lime tree, lime fruit) and corpus (sticking plaster) use the same headwords."
+  ]
+}

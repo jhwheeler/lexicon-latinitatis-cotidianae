@@ -1,0 +1,50 @@
+{
+  "id": "concrete",
+  "english": "concrete",
+  "pos": "noun",
+  "domain": "aedificatio",
+  "terms": [
+    {
+      "latin": "opus caementīcium, operis caementīciī n.",
+      "status": "recommended",
+      "period": "modern",
+      "evidence": [
+        "Vitruvius 2.4.1: <span lang=\"la\">in caementīciīs autem strūctūrīs</span>",
+        "Vitruvius 2.8.17: <span lang=\"la\">parietibus caementīciīs</span>"
+      ],
+      "comment": "The modern name for Roman concrete, built on Vitruvius’s <span lang=\"la\">caementīcius</span>, “of rubble stones”; used here for modern concrete too."
+    },
+    {
+      "latin": "concrētum",
+      "status": "avoid",
+      "period": "modern",
+      "grammar": "noun, second declension",
+      "evidence": [
+        "Traupman 168"
+      ],
+      "notes": [
+        "concretum"
+      ]
+    }
+  ],
+  "notes": {
+    "concretum": {
+      "html": "Traupman 168 has <span lang=\"la\">concrētum</span>, which is not used: classical <span lang=\"la\">concrētus</span> means “thickened, congealed”.",
+      "ruling": "concrete"
+    }
+  },
+  "related": [
+    "cement",
+    "concrete-worker",
+    "rubble"
+  ],
+  "sources": [
+    "<a href=\"https://www.alatius.com/ls/index.php?l=caementicius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: caementicius</a>",
+    "<a href=\"https://www.bolchazy.com/product/conversational-latin-for-oral-proficiency-4th-edition-p3388/\" rel=\"noopener noreferrer\" target=\"_blank\">John C. Traupman, <em>Conversational Latin for Oral Proficiency</em></a>, p. 168."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

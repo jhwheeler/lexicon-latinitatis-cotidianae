@@ -1,0 +1,59 @@
+{
+  "id": "attic",
+  "english": "attic",
+  "pos": "noun",
+  "also": [
+    "loft",
+    "loft room",
+    "furnished loft"
+  ],
+  "domain": "domus-structura",
+  "terms": [
+    {
+      "latin": "subtēgulāneum, subtēgulāneī n.",
+      "status": "recommended",
+      "period": "modern",
+      "gloss": "attic, loft room",
+      "grammar": "noun, second declension",
+      "evidence": [
+        "Traupman 122",
+        "M-O s.v. furnished attic"
+      ],
+      "comment": "“Attic” is a modern application (Traupman). The ancient adjective’s sense is clear: Pliny, NH 36.185 has <span lang=\"la\">pavīmenta … barbarica atque subtēgulānea</span>, floors under the roof, i.e. indoors (Lewis &amp; Short: “that is under the roof, = in-doors”). An older Morgan draft called Pliny’s sense uncertain; the passage settles it.",
+      "notes": [
+        "subtegulaneum"
+      ]
+    },
+    {
+      "latin": "conclāve sub tēctō",
+      "status": "alternative",
+      "period": "ours",
+      "gloss": "room under the roof, loft room",
+      "comment": "Our transparent alternative. The space need not be used for storage."
+    }
+  ],
+  "notes": {
+    "subtegulaneum": {
+      "form": "subtēgulāneum",
+      "claim": "long e",
+      "against": "Lewis &amp; Short <span lang=\"la\">sub-tĕgŭlānĕus</span>, against its own <span lang=\"la\">tēgula</span>",
+      "html": "The word is built on <span lang=\"la\">tēgula</span>, which Lewis &amp; Short marks long (s.v. <span lang=\"la\">tēgulae</span>); the ē of <span lang=\"la\">tēgula</span> is kept."
+    }
+  },
+  "related": [
+    "roof",
+    "ceiling",
+    "storey",
+    "top-floor",
+    "knee-wall"
+  ],
+  "sources": [
+    "<a href=\"https://www.alatius.com/ls/index.php?l=subtegulaneus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: subtegulaneus</a> · <a href=\"https://neolatinlexicon.org/latin/furnished_attic/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: furnished attic</a> · <a href=\"https://neolatinlexicon.org/latin/garret_attic_room/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: garret attic room</a> · <a href=\"https://archive.org/stream/TheLexiconAnglumEtLatinumByDavidMorgan/MorganAndSilvaFurmanUniversityLexicon_djvu.txt\" rel=\"noopener noreferrer\" target=\"_blank\">Older Morgan draft: attic caveat</a>",
+    "<a href=\"https://www.bolchazy.com/product/conversational-latin-for-oral-proficiency-4th-edition-p3388/\" rel=\"noopener noreferrer\" target=\"_blank\">John C. Traupman, <em>Conversational Latin for Oral Proficiency</em></a>, p. 122."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

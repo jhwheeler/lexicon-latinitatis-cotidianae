@@ -1,39 +1,43 @@
 (() => {
-  const root = document.documentElement;
-  const search = document.getElementById('search'), clear = document.getElementById('clear');
+  // Live search over the lexicon (assets/search-data.js, loaded on first use). It runs on the front
+  // page, over every category or the one named by ?cat=, and on each category's page, over that
+  // category. The address keeps the query (?q=pyjama), so a search can be linked to. Without
+  // scripts the search bar is hidden and the pages' own lists remain.
+  const search = document.getElementById('search');
+  if (!search) return;
+  const form = search.form, clear = document.getElementById('clear');
   const count = document.getElementById('results'), empty = document.getElementById('empty');
   const emptyMessage = document.getElementById('empty-message'), searchAll = document.getElementById('search-all');
-  const home = document.getElementById('contents');
   const results = document.getElementById('search-results'), list = document.getElementById('search-result-list');
-  const entries = [...document.querySelectorAll('[data-entry]')];
-  const sections = [...document.querySelectorAll('[data-category-section]')];
-  const chips = [...document.querySelectorAll('[data-filter]')];
-  const names = Object.fromEntries(chips.map(chip => [chip.dataset.filter, chip.textContent]));
-  const categoryMenu = document.getElementById('category-menu');
-  const categoryLabel = document.getElementById('active-category');
-  const desktop = window.matchMedia('(min-width: 960px)');
-  const adaptCategories = () => { categoryMenu.open = desktop.matches; };
-  desktop.addEventListener('change', adaptCategories);
-  adaptCategories();
-  // 'all' is the front page: the contents, and a search of every category. Any other value is a
-  // category: its entries, and a search within it. The address (#corpus) says which.
-  let active = 'all';
-  let renderedQuery = null, renderedCategory = null;
-  const fold = s => String(s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/æ/g, 'ae').replace(/œ/g, 'oe').replace(/j/g, 'i');
-  const index = entries.map((entry, order) => {
-    const section = entry.closest('[data-category-section]');
-    if (!entry.id) entry.id = entry.dataset.entryId;
-    const lines = [...entry.querySelectorAll('.entry-body > ul > li, .entry-body > p, .entry-body > ol > li, .entry-sources > p')].map(node => {
-      const latin = node.querySelector('strong[lang="la"]')?.textContent.trim();
-      const definition = latin && latin.split(/\s+/).length <= 10
-        && (/^[a-zāēīōūȳæœ]/.test(latin) || /\b[mfn]\.\s*(pl\.)?$/.test(latin));
-      // A record's answer line carries its English headword in data-search.
-      return {node, text: fold(node.textContent + ' ' + (node.dataset.search || '')),
-        kind: node.closest('.entry-sources, .footnotes') ? 'Source note' : definition ? 'Definition' : 'Example or phrase'};
+  const page = document.querySelector('[data-category]');
+  const view = document.getElementById('contents') || document.getElementById('category-view');
+  const up = page ? '../' : '';
+  const params = new URLSearchParams(location.search);
+  let scope = page ? page.dataset.category : (params.get('cat') || '');
+  const resting = count.textContent;
+  let data = null, loading = null, rendered = null;
+  const fold = s => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/æ/g, 'ae').replace(/œ/g, 'oe').replace(/j/g, 'i');
+  const KINDS = { d: 'Definition', e: 'Example or phrase', n: 'Source note' };
+
+  function load() {
+    if (!loading) loading = new Promise((resolve, reject) => {
+      const script = document.createElement('script');
+      script.src = up + 'assets/search-data.js';
+      script.onload = () => {
+        data = window.lexiconData;
+        data.items.forEach((item, order) => {
+          item.order = order;
+          item.heading = fold(item.en);
+          item.lines = item.l.map(line => ({ line, text: fold(line.slice(1).join(' ')) }));
+          item.text = fold([item.en, item.la, item.al].join(' ')) + ' ' + item.lines.map(l => l.text).join(' ');
+        });
+        resolve(data);
+      };
+      script.onerror = reject;
+      document.head.append(script);
     });
-    return {entry, order, lines, category: entry.dataset.category, label: section.querySelector('h2').textContent,
-      heading: fold(entry.querySelector('.entry-head').textContent), text: fold((entry.dataset.search || '') + ' ' + entry.textContent)};
-  });
+    return loading;
+  }
 
   // Map normalized matches back to original Unicode characters across inline markup.
   function highlight(root, query) {
@@ -64,135 +68,135 @@
       if (cursor) { fragment.append(document.createTextNode(n.data.slice(cursor))); n.replaceWith(fragment); }
     });
   }
-  function copy(source, query) {
-    const node = document.createElement('div');
-    source.childNodes.forEach(child => node.append(child.cloneNode(true)));
-    node.querySelectorAll('[id]').forEach(child => child.removeAttribute('id'));
-    highlight(node, query);
-    return node;
+
+  function lineNode(line, query) {
+    const [kind, latin, english, meta] = line;
+    const p = document.createElement('p');
+    p.className = 'search-match' + (kind === 'n' ? ' source-note' : '');
+    if (kind === 'n') {
+      p.textContent = latin;
+    } else {
+      if (latin) {
+        const strong = document.createElement('strong');
+        strong.lang = 'la'; strong.textContent = latin;
+        if (kind === 'e') strong.className = 'ex-la';
+        p.append(strong);
+      }
+      if (english) p.append((latin ? ' — ' : '') + english);
+      if (meta) {
+        const span = document.createElement('span');
+        span.className = kind === 'e' ? 'src' : 'rec-meta'; span.textContent = meta;
+        p.append(' ', span);
+      }
+    }
+    highlight(p, query);
+    return p;
   }
+
   function result(item, query) {
-    const card = document.createElement('article'); card.className = 'entry search-result';
-    card.dataset.resultFor = item.entry.dataset.entryId;
-    const best = item.matches[0], lemma = best?.node.querySelector('strong[lang="la"]');
-    if (best?.kind === 'Example or phrase') card.classList.add('search-example');
+    const card = document.createElement('article');
+    card.className = 'search-result'; card.dataset.resultFor = item.id;
+    const best = item.matches[0];
     const label = document.createElement('p'); label.className = 'eyebrow';
-    label.textContent = item.label + ' · ' + (best?.kind || 'Related entry');
-    const title = document.createElement('h3'); title.lang = 'la';
-    title.textContent = lemma?.textContent || item.entry.querySelector('h3').textContent;
-    highlight(title, query); card.append(label, title);
+    label.textContent = data.categories[item.k] + ' · ' + (best ? KINDS[best.line[0]] : 'Related entry');
+    const lead = best && best.line[0] !== 'n' ? best.line[1]
+      : item.la || (item.l.find(line => line[0] === 'd') || [])[1] || item.en;
+    if (best && best.line[0] === 'e') card.classList.add('search-example');
+    const title = document.createElement('h3'), link = document.createElement('a');
+    link.href = up + item.u; link.lang = 'la'; link.textContent = lead;
+    title.append(link); highlight(title, query);
+    const english = document.createElement('p'); english.className = 'r-en'; english.textContent = item.en;
+    if (item.pos) {
+      const pos = document.createElement('span'); pos.className = 'pos'; pos.textContent = item.pos;
+      english.append(' ', pos);
+    }
+    highlight(english, query);
     const snippets = document.createElement('div'); snippets.className = 'search-snippets';
     item.matches.slice(0, 3).forEach((match, i) => {
-      const line = copy(match.node, query); line.className = 'search-match';
-      if (i === 0 && lemma) {
-        line.querySelector('strong[lang="la"]')?.remove();
-        if (line.firstChild?.nodeType === Node.TEXT_NODE) line.firstChild.data = line.firstChild.data.replace(/^\s*[—–-]\s*/, '');
-      }
-      snippets.append(line);
+      const line = match.line.slice();
+      if (i === 0 && line[0] !== 'n' && line[1] === lead) line[1] = '';
+      if (line.slice(1).some(Boolean)) snippets.append(lineNode(line, query));
     });
     if (!best) {
       const note = document.createElement('p'); note.className = 'source-note';
-      note.textContent = 'Matches ' + (item.heading.includes(query) ? 'this entry’s heading' : 'an alternative search term') + '. Open the full entry for its terms and examples.';
+      note.textContent = 'Matches ' + (item.heading.includes(query) ? 'this entry’s heading' : 'an alternative search term') + '.';
       snippets.append(note);
     }
-    card.append(snippets);
-    const context = document.createElement('details'); context.className = 'search-context';
-    const summary = document.createElement('summary');
-    summary.textContent = 'Full entry' + (item.matches.length > 3 ? ' · ' + item.matches.length + ' matching passages' : '');
-    context.append(summary);
-    context.addEventListener('toggle', () => {
-      if (!context.open || context.childElementCount > 1) return;
-      const heading = document.createElement('p'); heading.className = 'eyebrow';
-      heading.textContent = item.entry.querySelector('.entry-head .eyebrow, .entry-head h3').textContent;
-      const body = copy(item.entry.querySelector('.entry-body'), query); body.className = 'entry-body';
-      body.querySelectorAll('.entry-sources').forEach(source => { if (source.querySelector('mark')) source.open = true; });
-      context.append(heading, body);
-    });
-    card.append(context);
+    card.append(label, title, english, snippets);
     return card;
   }
+
+  function show(searching) {
+    results.hidden = !searching;
+    if (view) view.hidden = searching;
+  }
+
   function apply() {
-    const query = fold(search.value.trim());
-    const browsing = active !== 'all';
-    root.dataset.view = browsing ? 'browse' : 'home';
-    categoryLabel.textContent = names[active]; categoryLabel.lang = browsing ? 'la' : 'en';
-    chips.forEach(chip => chip.dataset.filter === active ? chip.setAttribute('aria-current', 'true') : chip.removeAttribute('aria-current'));
-    // Blurring the search field fires change even when the query is unchanged.
-    // Keep result nodes stable so that click still reaches a disclosure/link.
-    if (query === renderedQuery && active === renderedCategory) return;
-    renderedQuery = query; renderedCategory = active;
-    const matching = index.filter(item => (!browsing || item.category === active) && (!query || item.text.includes(query)));
-    home.hidden = browsing || !!query;
-    results.hidden = !query; list.replaceChildren();
-    entries.forEach(entry => { entry.hidden = !!query || entry.dataset.category !== active; });
-    sections.forEach(section => { section.hidden = !!query || section.dataset.categorySection !== active; });
-    if (query) {
-      const rank = line => line.kind === 'Definition' ? 0 : line.kind === 'Source note' ? 2 : 1;
-      matching.forEach(item => {
-        item.matches = item.lines.filter(line => line.text.includes(query)).sort((a, b) => rank(a) - rank(b));
-        // A definition under a matching headword first, then other definitions, then the rest.
-        const definition = item.matches[0]?.kind === 'Definition', heading = item.heading.includes(query);
-        item.rank = definition && heading ? 0 : definition ? 1 : heading ? 2 : item.matches.length ? 3 : 4;
-      });
-      matching.sort((a, b) => a.rank - b.rank || a.order - b.order);
-      const fragment = document.createDocumentFragment();
-      matching.forEach(item => fragment.append(result(item, query))); list.append(fragment);
+    const typed = search.value.trim(), query = fold(typed);
+    remember(typed);
+    if (!query) {
+      rendered = null; show(false); list.replaceChildren();
+      count.textContent = resting; empty.style.display = 'none';
+      return;
     }
-    const plural = matching.length === 1 ? 'entry' : 'entries';
-    count.textContent = query ? `${matching.length} matching ${plural}${browsing ? ' in ' + names[active] : ''} · definitions first`
-      : `${matching.length} ${plural}`;
-    // An empty search inside a category says so and offers the whole lexicon, keeping the query.
-    emptyMessage.textContent = browsing ? 'No matches in ' + names[active] + '.' : 'No entries match that search.';
-    searchAll.hidden = !browsing || matching.length > 0;
-    empty.style.display = query && !matching.length ? 'block' : 'none';
+    if (!data) {
+      count.textContent = 'Searching…';
+      load().then(apply, () => { count.textContent = 'The search could not load.'; });
+      return;
+    }
+    if (query + '|' + scope === rendered) return;
+    rendered = query + '|' + scope;
+    const rank = line => ({ d: 0, e: 1, n: 2 })[line.line[0]];
+    const matching = data.items.filter(item => (!scope || item.k === scope || (item.x || []).includes(scope)) && item.text.includes(query));
+    matching.forEach(item => {
+      item.matches = item.lines.filter(line => line.text.includes(query)).sort((a, b) => rank(a) - rank(b));
+      const heading = item.heading.includes(query);
+      // A record's answer doesn't repeat its headword; a match on the headword finds the answer.
+      if (heading && item.id.startsWith('c-') && item.matches[0]?.line[0] !== 'd') {
+        const answer = item.lines.find(line => line.line[0] === 'd');
+        if (answer) item.matches = [answer, ...item.matches.filter(line => line !== answer)];
+      }
+      const definition = item.matches[0]?.line[0] === 'd';
+      // The headword itself (soap, or soap with a sense) before longer ones that contain it (soap bubble).
+      const exact = item.heading === query || item.heading.startsWith(query + ' (');
+      item.rank = definition && heading ? (exact ? 0 : 1) : definition ? 2 : heading ? 3 : item.matches.length ? 4 : 5;
+    });
+    matching.sort((a, b) => a.rank - b.rank || a.order - b.order);
+    const fragment = document.createDocumentFragment();
+    matching.forEach(item => fragment.append(result(item, query)));
+    list.replaceChildren(fragment);
+    show(true);
+    const where = scope ? ' in ' + data.categories[scope] : '';
+    count.textContent = `${matching.length} matching ${matching.length === 1 ? 'entry' : 'entries'}${where} · definitions first`;
+    emptyMessage.textContent = scope ? 'No matches' + where + '.' : 'No entries match that search.';
+    searchAll.hidden = !scope || matching.length > 0;
+    empty.style.display = matching.length ? 'none' : 'block';
+    window.lexiconDisplay?.render(list);
   }
-  // A view starts at the top of the page. Loading an address with a category in it, the browser
-  // scrolls to that category's heading once more after the load event, so wait a frame past it.
-  function top() {
-    window.scrollTo(0, 0);
-    if (document.readyState !== 'complete') window.addEventListener('load', () => requestAnimationFrame(() =>
-      requestAnimationFrame(() => { if (scrollY < 200) window.scrollTo(0, 0); })), { once: true });
+
+  // The address follows the query, so that a search can be bookmarked or sent.
+  let timer;
+  function remember(typed) {
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      const next = new URLSearchParams();
+      if (typed) next.set('q', typed);
+      if (typed && scope && !page) next.set('cat', scope);
+      const url = location.pathname + (next.toString() ? '?' + next : '');
+      if (url !== location.pathname + location.search) history.replaceState(null, '', url);
+    }, 250);
   }
-  // The address decides the view: nothing or #contents is the front page, a category's ID its
-  // entries, and the ID of an entry, an old anchor or a note opens its category at that point.
-  function destination(hash) {
-    let key;
-    try { key = decodeURIComponent(hash.replace(/^#/, '')); } catch { return null; }
-    if (!key || key === 'contents') return { home: true };
-    const target = document.getElementById(key), section = target?.closest('[data-category-section]');
-    return section ? { target, section } : null;
-  }
-  function route(hash) {
-    const to = destination(hash);
-    if (!to) return false;
-    if (to.home) { active = 'all'; apply(); top(); return true; }
-    if (to.target === to.section) { active = to.section.dataset.categorySection; apply(); top(); return true; }
-    search.value = ''; active = to.section.dataset.categorySection; apply();
-    to.target.scrollIntoView();
-    return true;
-  }
-  // Links within the page change the view at once, and the address with it, so that the back
-  // button returns to the view before. Other links (#about) are left to the browser.
-  document.addEventListener('click', event => {
-    const link = event.target.closest('a[href^="#"]');
-    if (!link || event.button || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey || !destination(link.hash)) return;
-    event.preventDefault();
-    if (link.hash !== location.hash) history.pushState(null, '', link.hash);
-    route(link.hash);
-  });
-  ['popstate', 'hashchange'].forEach(event => window.addEventListener(event, () => route(location.hash)));
-  ['input', 'change', 'search'].forEach(event => search.addEventListener(event, apply));
-  chips.forEach(chip => chip.addEventListener('click', () => {
-    if (!desktop.matches) { categoryMenu.open = false; categoryMenu.querySelector('summary').focus(); }
-  }));
+
+  form.addEventListener('submit', event => { event.preventDefault(); apply(); });
+  ['input', 'search'].forEach(event => search.addEventListener(event, apply));
+  search.addEventListener('focus', () => { load().catch(() => {}); }, { once: true });
+  search.addEventListener('keydown', event => { if (event.key === 'Escape') clear.click(); });
   clear.addEventListener('click', () => { search.value = ''; apply(); search.focus(); });
   searchAll.addEventListener('click', () => {
-    if (location.hash !== '#contents') history.pushState(null, '', '#contents');
-    route('#contents'); search.focus();
+    if (page) { location.href = up + 'index.html?q=' + encodeURIComponent(search.value.trim()); return; }
+    scope = ''; rendered = null; apply(); search.focus();
   });
-  search.addEventListener('keydown', event => { if (event.key === 'Escape') clear.click(); });
-  // A change of display (macrons, j or i) redraws the results from the entries, which show it.
-  document.addEventListener('lexicon-display', () => { renderedQuery = null; apply(); });
-  apply();
-  route(location.hash);
+  // A change of display (macrons, j or i) redraws the results.
+  document.addEventListener('lexicon-display', () => { rendered = null; apply(); });
+  if (params.get('q')) { search.value = params.get('q'); apply(); }
 })();

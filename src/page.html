@@ -10,20 +10,16 @@
 <meta name="theme-color" content="#ffffff">
 <meta name="apple-mobile-web-app-title" content="Lexicon Latīnum">
 <link rel="canonical" href="https://jhwheeler.github.io/lexicon-latinitatis-cotidianae/">
-<script id="theme-init">
-try {
-  document.documentElement.dataset.theme = localStorage.getItem('lexicon-theme') === 'dark' ? 'dark' : 'light';
-} catch {}
-// Open on the front page unless the address names a category or an entry.
-document.documentElement.dataset.view = /^#?(contents)?$/.test(location.hash) ? 'home' : 'browse';
-</script>
-<style>
-{{styles}}</style>
+{{theme}}
+{{legacy}}
+<link rel="stylesheet" href="assets/lexicon.css">
+<script src="assets/lexicon.js" defer></script>
+<script src="assets/search.js" defer></script>
 </head>
-<body>
+<body class="front">
 <header class="hero wrap">
   <div class="brand">
-    <h1 lang="la"><a href="#contents">Lexicon Latīnitātis Cotīdiānae</a></h1>
+    <h1 lang="la"><a href="index.html">Lexicon Latīnitātis Cotīdiānae</a></h1>
     <p class="brand-note">Everyday English–Latin</p>
   </div>
   <nav class="site-nav" aria-label="Pages"><a href="how-we-decide.html">How we decide</a><a href="rulings.html">Rulings</a><span class="about-link"><a href="#about">About</a></span></nav>
@@ -32,29 +28,16 @@ document.documentElement.dataset.view = /^#?(contents)?$/.test(location.hash) ? 
     {{theme_toggle}}
   </div>
 </header>
-<div class="workspace wrap">
-<div class="toolbar" role="search">
-  <input id="search" class="search" type="search" autocomplete="off" placeholder="Search English or Latin…" aria-label="Search the lexicon">
-  <button id="clear" class="clear" type="button">Clear</button>
-</div>
-<nav class="categories" aria-label="Categories">
-  <details id="category-menu">
-    <summary><span>Categories</span><span id="active-category" lang="la"></span></summary>
-    <div class="chips">{{filters}}</div>
-  </details>
-</nav>
-<main>
-<div class="meta"><span id="results" role="status" aria-live="polite">Search is starting… If this stays visible, reopen the file in a browser that allows JavaScript.</span><span class="search-hint">Macrons optional</span></div>
+<main class="wrap front-main">
+{{search}}
 <section id="contents" class="home" aria-labelledby="contents-title">
 <p class="home-lead">Words and phrases for everyday life at home, at play and at work: every long vowel marked, with sources and examples.</p>
+<p class="noscript-note">Search needs JavaScript; without it, browse the contents below, or every word from A to Z.</p>
 <h2 id="contents-title">Contents</h2>
 <ol class="toc">{{contents}}</ol>
+<p class="az">All {{total}} entries from A to Z: <a href="words.html">the English words</a> · <a href="latin.html">the Latin words</a></p>
 </section>
-<section id="search-results" aria-label="Search results" hidden><div id="search-result-list" class="entries"></div></section>
-<p id="empty" class="empty"><span id="empty-message">No entries match that search.</span><button id="search-all" class="search-all" type="button" hidden>Search all categories</button></p>
-{{entries}}
 </main>
-</div>
 <footer id="about"><div class="wrap"><h2>About this lexicon</h2>
   <details class="principles"><summary>Macrons, usage and evidence</summary>
 <p>Macrons mark long vowels; short vowels are left plain. A heavy syllable is not automatically a long vowel. Consonantal i is written j (<span lang="la">jam, ejus, conjungō</span>), and the vowel before intervocalic j is left unmarked (<span lang="la">major</span>); search treats i and j alike. Inflected examples, genitives, principal parts and Latin headings are included in the review.</p>
@@ -63,7 +46,7 @@ document.documentElement.dataset.view = /^#?(contents)?$/.test(location.hash) ? 
 <p>For modern words, the classical lengths of inherited roots and regular Latin endings are retained where justified. Loanword stem quantities that the checked sources do not establish are explicitly labelled. “Reading convention” marks an adopted reconstruction, rather than an attested ancient pronunciation.</p>
 <p><strong>Ancient Latin</strong> means the word and its relevant basic sense are ancient. <strong>Lexicographic evidence</strong> means a modern dictionary records the expression; it does not imply universal acceptance. <strong>Modern extension</strong> applies an older word to a modern object. <strong>Working formation</strong> identifies our own phrase or name adaptation.</p>
 <p>Example sentences are composed for everyday conversation, many of them with a small child. They are not quotations unless an author and passage are identified. Noun genitives and genders, important sense distinctions, and known alternative forms are supplied where useful.</p>
-<p>Words in the new record format have a page of their own. Each Latin form is labelled with its period, and numbered notes give the reason wherever we depart from Lewis &amp; Short or a source. Each Latin word that heads a term has a page too, which lists every entry that uses it. Our rulings on disputed words are kept, with their evidence and history, on the <a href="rulings.html">rulings page</a>; the rules behind them are on <a href="how-we-decide.html">How we decide</a>.</p>
+<p>Every entry has a page of its own. Each Latin form is labelled with its period, and numbered notes give the reason wherever we depart from Lewis &amp; Short or a source. Each Latin word that heads a term has a page too, which lists every entry that uses it. Our rulings on disputed words are kept, with their evidence and history, on the <a href="rulings.html">rulings page</a>; the rules behind them are on <a href="how-we-decide.html">How we decide</a>.</p>
 </details>
 <details class="sources"><summary>Review notes · 8 November 2026</summary>
 <p class="source-note">All 53 original grouped entries were reviewed; 39 household and family entries were added. Quantities, examples, definitions and attestation labels were checked separately. The review also removes unsupported precise dates, unsourced principal parts and blanket “attested” tags.</p>
@@ -83,10 +66,6 @@ document.documentElement.dataset.view = /^#?(contents)?$/.test(location.hash) ? 
 <p class="source-note">8 November 2026: the first 23 words move to the new record format, one record per concept with its own page: hiccups, burping and tickling; “perhaps”; twelve swimming words; seven pots and kitchen utensils. Their notes give the evidence for <span lang="la">lutra</span>, <span lang="la">caccabus</span> and <span lang="la">fortasse</span> against Lewis &amp; Short, and the rulings behind them are collected on the <a href="rulings.html">rulings page</a>. The conversation category is now <span lang="la">Sermō cotīdiānus</span>: personal names belong in example sentences, not in categories or tags. <span lang="la">pōculum ānsātum</span> now has its long a, like <span lang="la">olla ānsāta</span>.</p><div class="sources-grid"><div class="source-card"><strong>Selected quantity corrections</strong><ul><li>ramus / ramulus / ramos → <span lang="la">rāmus / rāmulus / rāmōs</span></li><li>gravedō / gravedinis → <span lang="la">gravēdō / gravēdinis</span></li><li>involucrum / manubrium → <span lang="la">involūcrum / manūbrium</span></li><li>scabī / vesīca / semita → <span lang="la">scābī / vēsīca / sēmita</span></li><li>vaccinium / morum → <span lang="la">vaccīnium / mōrum</span></li><li>frīgeō / algēō / fervēō / languēō → <span lang="la">frīgeō / algeō / ferveō / langueō</span></li><li>elaborātiō / recognitiō → <span lang="la">ēlabōrātiō / recōgnitiō</span></li><li>program(m)ātum as a noun genitive plural → <span lang="la">programmatum; verbal programmātum is a different form</span></li></ul></div><div class="source-card"><strong>Usage corrections</strong><p>Ancient <span lang="la">fermentō, fermentēscō</span> and <span lang="la">vapōrō</span> are no longer called exclusively later inventions. Berry names distinguish modern botanical use from uncertain ancient identification. Totoro, the magnetic-toy phrase and specific Git phrases are labelled as our own adaptations.</p><p>The kettle expression and unsupported yogurt or coffee stem quantities are described with their actual level of evidence. Source links appear inside each entry.</p></div></div>
 <p class="source-note"><a href="https://logeion.uchicago.edu/" target="_blank" rel="noopener noreferrer">Logeion dictionaries</a> · <a href="https://github.com/PerseusDL/lexica" target="_blank" rel="noopener noreferrer">Perseus dictionary texts</a> · <a href="https://www.alatius.com/latin/bennetthidden.html" target="_blank" rel="noopener noreferrer">Hidden quantities: evidence and disputes</a> · <a href="https://dcc.dickinson.edu/latin-core-list1" target="_blank" rel="noopener noreferrer">Dickinson core vocabulary</a> · <a href="https://neolatinlexicon.org/" target="_blank" rel="noopener noreferrer">Morgan–Owens Neo-Latin Lexicon</a></p>
 </details>
-<p class="footer-note">{{entry_count}} grouped entries · {{record_count}} words with their own page · <a href="how-we-decide.html">How we decide</a> · <a href="rulings.html">Rulings</a> · searchable offline · construction vocabulary reviewed 24 October 2026 · Libellī I–VII vocabulary added 29 October 2026, rechecked 7 November 2026 · everyday vocabulary from Traupman and Morgan–Owens added 7 November 2026</p></div></footer>
-<script id="page-script">
-{{page_script}}</script>
-<script>
-{{search}}</script>
+<p class="footer-note">{{record_count}} entries, each with a page of its own · <a href="how-we-decide.html">How we decide</a> · <a href="rulings.html">Rulings</a> · Libellī I–VII vocabulary added 29 October 2026, rechecked 7 November 2026 · every entry in the record format since 9 November 2026; entries marked draft await review</p></div></footer>
 </body>
 </html>

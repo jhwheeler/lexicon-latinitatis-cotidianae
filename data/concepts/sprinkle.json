@@ -2,6 +2,12 @@
   "id": "sprinkle",
   "english": "sprinkle",
   "pos": "verb",
+  "also": [
+    "spatter"
+  ],
+  "also_under": [
+    "sermo"
+  ],
   "domain": "natura",
   "terms": [
     {
@@ -10,6 +16,13 @@
       "period": "classical",
       "gloss": "sprinkle, spatter",
       "comment": "Frequent in ritual, but everyday too."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "adspersistī aquam",
+      "english": "you’ve splashed water on me",
+      "source": "Plaut. Truc., quoted by L&amp;S"
     }
   ],
   "related": [
@@ -25,15 +38,5 @@
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  },
-  "phrases": [
-    {
-      "latin": "adspersistī aquam",
-      "english": "you’ve splashed water on me",
-      "source": "Plaut. Truc., quoted by L&amp;S"
-    }
-  ],
-  "also": [
-    "spatter"
-  ]
+  }
 }

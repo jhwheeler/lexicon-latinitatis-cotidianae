@@ -2,12 +2,27 @@
   "id": "build",
   "english": "build",
   "pos": "verb",
+  "also_under": [
+    "sermo"
+  ],
   "domain": "aedificatio",
   "terms": [
     {
       "latin": "aedificō, aedificāre, aedificāvī, aedificātum",
       "status": "recommended",
       "period": "classical"
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Aedificēmus turrim.",
+      "english": "Let’s build a tower.",
+      "source": "composed"
+    },
+    {
+      "latin": "Theodōre, quid aedificās?",
+      "english": "Theo, what are you building?",
+      "source": "composed"
     }
   ],
   "related": [
@@ -29,24 +44,12 @@
     "<a href=\"https://logeion.uchicago.edu/aedifico\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aedifico</a> · <a href=\"https://dcc.dickinson.edu/latin-core-list1\" rel=\"noopener noreferrer\" target=\"_blank\">Dickinson: Latin Core Vocabulary</a>",
     "The example sentences marked “composed” are ours."
   ],
+  "replaces": [
+    "entry-32"
+  ],
   "review": {
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  },
-  "phrases": [
-    {
-      "latin": "Aedificēmus turrim.",
-      "english": "Let’s build a tower.",
-      "source": "composed"
-    },
-    {
-      "latin": "Theodōre, quid aedificās?",
-      "english": "Theo, what are you building?",
-      "source": "composed"
-    }
-  ],
-  "replaces": [
-    "entry-32"
-  ]
+  }
 }

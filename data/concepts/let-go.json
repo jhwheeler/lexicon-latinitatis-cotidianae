@@ -2,6 +2,13 @@
   "id": "let-go",
   "english": "let go",
   "pos": "verb",
+  "also": [
+    "release",
+    "let go of"
+  ],
+  "also_under": [
+    "sermo"
+  ],
   "domain": "ludi",
   "terms": [
     {
@@ -16,6 +23,13 @@
       "status": "recommended",
       "period": "classical",
       "gloss": "let go of, release"
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Hanc ansam dīmitte.",
+      "english": "Let go of this hold: use only when releasing that particular hold is intended.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -33,16 +47,5 @@
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  },
-  "phrases": [
-    {
-      "latin": "Hanc ansam dīmitte.",
-      "english": "Let go of this hold: use only when releasing that particular hold is intended.",
-      "source": "composed"
-    }
-  ],
-  "also": [
-    "release",
-    "let go of"
-  ]
+  }
 }

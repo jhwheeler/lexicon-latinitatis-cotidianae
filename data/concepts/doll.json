@@ -2,6 +2,9 @@
   "id": "doll",
   "english": "doll",
   "pos": "noun",
+  "also_under": [
+    "sermo"
+  ],
   "domain": "ludi",
   "terms": [
     {
@@ -9,6 +12,13 @@
       "status": "recommended",
       "period": "classical",
       "comment": "Doll is ancient."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Ubi pūpa est?",
+      "english": "Where is the doll?",
+      "source": "composed"
     }
   ],
   "related": [
@@ -31,12 +41,5 @@
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  },
-  "phrases": [
-    {
-      "latin": "Ubi pūpa est?",
-      "english": "Where is the doll?",
-      "source": "composed"
-    }
-  ]
+  }
 }

@@ -2,6 +2,12 @@
   "id": "sieve",
   "english": "sieve",
   "pos": "noun",
+  "also": [
+    "sift"
+  ],
+  "also_under": [
+    "culina"
+  ],
   "domain": "ludi",
   "terms": [
     {
@@ -22,6 +28,13 @@
       "gloss": "to sieve, sift"
     }
   ],
+  "phrases": [
+    {
+      "latin": "Farīnam, pulverem fermentārium, nitrum, salem per crībrum in catīnum trānsmittitō",
+      "english": "Sieve the flour, baking powder, soda and salt into a bowl",
+      "source": "<span lang=\"la\">Culīna Theodōrī</span>"
+    }
+  ],
   "related": [
     "sandpit",
     "colander"
@@ -31,23 +44,13 @@
     "<a href=\"https://logeion.uchicago.edu/cribrum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cribrum</a>",
     "<span lang=\"la\">Theodōrus et pater: Culīna Theodōrī</span>, the recipe book that goes with the libellī (<span lang=\"la\">Ad Libellōs I–VII</span>); examples marked “Culīna Theodōrī” quote it word for word."
   ],
+  "replaces": [
+    "entry-284",
+    "vocab-284"
+  ],
   "review": {
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  },
-  "phrases": [
-    {
-      "latin": "Farīnam, pulverem fermentārium, nitrum, salem per crībrum in catīnum trānsmittitō",
-      "english": "Sieve the flour, baking powder, soda and salt into a bowl",
-      "source": "<span lang=\"la\">Culīna Theodōrī</span>"
-    }
-  ],
-  "also": [
-    "sift"
-  ],
-  "replaces": [
-    "entry-284",
-    "vocab-284"
-  ]
+  }
 }

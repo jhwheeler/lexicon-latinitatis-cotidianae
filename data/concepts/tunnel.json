@@ -2,6 +2,12 @@
   "id": "tunnel",
   "english": "tunnel",
   "pos": "noun",
+  "also": [
+    "underground passage"
+  ],
+  "also_under": [
+    "vectura"
+  ],
   "domain": "ludi",
   "terms": [
     {
@@ -22,6 +28,13 @@
       "comment": "Traupman prints only <span lang=\"la\">specus</span>."
     }
   ],
+  "phrases": [
+    {
+      "latin": "ventus ē specū ērūpit, lūmina appāruērunt",
+      "english": "a wind burst out of the tunnel, lights appeared",
+      "source": "Libellus I, <span lang=\"la\">Iter in Lūsitāniam</span>"
+    }
+  ],
   "related": [
     "hole",
     "sandcastle",
@@ -38,15 +51,5 @@
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  },
-  "phrases": [
-    {
-      "latin": "ventus ē specū ērūpit, lūmina appāruērunt",
-      "english": "a wind burst out of the tunnel, lights appeared",
-      "source": "Libellus I, <span lang=\"la\">Iter in Lūsitāniam</span>"
-    }
-  ],
-  "also": [
-    "underground passage"
-  ]
+  }
 }

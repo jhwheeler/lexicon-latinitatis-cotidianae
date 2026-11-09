@@ -2,12 +2,22 @@
   "id": "soap",
   "english": "soap",
   "pos": "noun",
+  "also_under": [
+    "domus"
+  ],
   "domain": "culina",
   "terms": [
     {
       "latin": "sāpō, sāpōnis m.",
       "status": "recommended",
       "period": "classical"
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Sāpōnem cape.",
+      "english": "Take the soap.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -23,19 +33,12 @@
     "<a href=\"https://logeion.uchicago.edu/sapo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sapo</a>",
     "The example sentence marked “composed” is ours."
   ],
+  "replaces": [
+    "entry-64"
+  ],
   "review": {
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  },
-  "phrases": [
-    {
-      "latin": "Sāpōnem cape.",
-      "english": "Take the soap.",
-      "source": "composed"
-    }
-  ],
-  "replaces": [
-    "entry-64"
-  ]
+  }
 }

@@ -2,6 +2,14 @@
   "id": "rub-with-oil",
   "english": "rub with oil",
   "pos": "verb",
+  "also": [
+    "oil",
+    "anoint",
+    "oiling"
+  ],
+  "also_under": [
+    "corpus"
+  ],
   "domain": "culina",
   "terms": [
     {
@@ -27,6 +35,13 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "Pedēs tibi oleō ungam.",
+      "english": "I’ll rub your feet with oil.",
+      "source": "composed"
+    }
+  ],
   "related": [
     "baste",
     "truss",
@@ -40,23 +55,6 @@
     "<a href=\"https://logeion.org/ungo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ungo</a> · <a href=\"https://logeion.org/unctio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: unctio</a>",
     "The example sentence marked “composed” is ours."
   ],
-  "review": {
-    "status": "draft",
-    "date": "2026-11-09",
-    "by": "Claude"
-  },
-  "phrases": [
-    {
-      "latin": "Pedēs tibi oleō ungam.",
-      "english": "I’ll rub your feet with oil.",
-      "source": "composed"
-    }
-  ],
-  "also": [
-    "oil",
-    "anoint",
-    "oiling"
-  ],
   "notes": {
     "unct": {
       "form": "ūnxī, ūnctum, ūnctiō",
@@ -65,5 +63,10 @@
       "html": "A hidden quantity: the vowel before -nct- and -nx- is long.",
       "ruling": "macrons"
     }
+  },
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
   }
 }

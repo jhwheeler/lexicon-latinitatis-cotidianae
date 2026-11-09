@@ -2,6 +2,9 @@
   "id": "mud",
   "english": "mud",
   "pos": "noun",
+  "also_under": [
+    "sermo"
+  ],
   "domain": "ludi",
   "terms": [
     {
@@ -9,6 +12,13 @@
       "status": "recommended",
       "period": "classical",
       "comment": "Ordinary physical sense."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Cavē lutum.",
+      "english": "Mind the mud.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -20,19 +30,12 @@
     "<a href=\"https://logeion.uchicago.edu/lutum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lutum</a>",
     "The example sentence marked “composed” is ours."
   ],
+  "replaces": [
+    "entry-28"
+  ],
   "review": {
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  },
-  "phrases": [
-    {
-      "latin": "Cavē lutum.",
-      "english": "Mind the mud.",
-      "source": "composed"
-    }
-  ],
-  "replaces": [
-    "entry-28"
-  ]
+  }
 }

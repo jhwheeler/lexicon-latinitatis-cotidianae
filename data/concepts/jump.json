@@ -2,6 +2,18 @@
   "id": "jump",
   "english": "jump",
   "pos": "verb",
+  "also": [
+    "leap",
+    "jumping",
+    "jump down",
+    "jump out",
+    "jump across",
+    "spring up"
+  ],
+  "also_under": [
+    "corpus",
+    "sermo"
+  ],
   "domain": "ludi",
   "terms": [
     {
@@ -35,29 +47,6 @@
       "gloss": "jump across"
     }
   ],
-  "related": [
-    "hop",
-    "skip",
-    "trampoline",
-    "monkey-tree-game",
-    "sailor-and-waves",
-    "hop-on-one-foot",
-    "jump-down",
-    "foot",
-    "dive-headfirst",
-    "somersault"
-  ],
-  "sources": [
-    "Descriptions and prompts labelled as ours are composed for family conversation. Recorded vocabulary does not imply universal technical standardization.",
-    "<a href=\"https://logeion.uchicago.edu/salio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: salio</a> · <a href=\"https://logeion.uchicago.edu/ambo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ambo</a>",
-    "The example sentences marked “composed” are ours.",
-    "<a href=\"https://logeion.uchicago.edu/salio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: salio</a> · <a href=\"https://logeion.uchicago.edu/saltus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: saltus</a> · <a href=\"https://logeion.uchicago.edu/exsilio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: exsilio</a> · <a href=\"https://logeion.uchicago.edu/desilio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: desilio</a> · <a href=\"https://logeion.uchicago.edu/transilio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: transilio</a>"
-  ],
-  "review": {
-    "status": "draft",
-    "date": "2026-11-09",
-    "by": "Claude"
-  },
   "phrases": [
     {
       "latin": "Altius salī.",
@@ -85,15 +74,30 @@
       "source": "composed"
     }
   ],
-  "also": [
-    "leap",
-    "jumping",
-    "jump down",
-    "jump out",
-    "jump across",
-    "spring up"
+  "related": [
+    "hop",
+    "skip",
+    "trampoline",
+    "monkey-tree-game",
+    "sailor-and-waves",
+    "hop-on-one-foot",
+    "jump-down",
+    "foot",
+    "dive-headfirst",
+    "somersault"
+  ],
+  "sources": [
+    "Descriptions and prompts labelled as ours are composed for family conversation. Recorded vocabulary does not imply universal technical standardization.",
+    "<a href=\"https://logeion.uchicago.edu/salio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: salio</a> · <a href=\"https://logeion.uchicago.edu/ambo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ambo</a>",
+    "The example sentences marked “composed” are ours.",
+    "<a href=\"https://logeion.uchicago.edu/salio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: salio</a> · <a href=\"https://logeion.uchicago.edu/saltus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: saltus</a> · <a href=\"https://logeion.uchicago.edu/exsilio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: exsilio</a> · <a href=\"https://logeion.uchicago.edu/desilio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: desilio</a> · <a href=\"https://logeion.uchicago.edu/transilio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: transilio</a>"
   ],
   "replaces": [
     "entry-6"
-  ]
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
 }

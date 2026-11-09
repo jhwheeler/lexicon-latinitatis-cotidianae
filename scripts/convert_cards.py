@@ -24,12 +24,22 @@ Checks, before anything is written:
   "dropped" with a reason. A changed macron shows up twice, as an added word and a dropped one;
 - record IDs are new slugs (an existing concept is extended, not duplicated).
 
+An extension's term whose Latin is already in the record merges into that term: its evidence and
+notes are added, and its other fields fill only what the record leaves empty (a differing status,
+period or comment is reported, and the record's stands). An example already in the record is not
+added again.
+
+Batches converted in parallel often make the same record twice. --extend-existing rewrites a spec
+so that each of its records that now exists (by ID, or by English headword and sense) becomes an
+extension of it; a record from another category is flagged "Also under <category>".
+
 With --write it then adds the records, removes the cards, points any "related" link that named
 a removed card at the record that replaces it, and builds the site to validate the result; if
 the build fails, every file is put back as it was.
 
     python3 scripts/convert_cards.py notes/conversions/culina-1.json           # check only
     python3 scripts/convert_cards.py notes/conversions/culina-1.json --write   # apply
+    python3 scripts/convert_cards.py notes/conversions/culina-2.json --extend-existing
 """
 import argparse
 import copy
@@ -138,6 +148,22 @@ def check(spec, root=ROOT):
         unknown = set(extension) - {'id', *EXTEND_FIELDS}
         if unknown:
             problems.add(f'Unknown fields in the extension of {extension.get("id")}: {sorted(unknown)}')
+    notices = []
+    for extension in spec.get('extend', []):
+        record = records.get(extension.get('id'))
+        for term in extension.get('terms', []) if record else []:
+            same = next((t for t in record['terms'] if t['latin'] == term.get('latin')), None)
+            if same:
+                for field in ('status', 'period', 'gloss', 'grammar', 'register', 'comment'):
+                    if field in term and field in same and term[field] != same[field]:
+                        notices.append(f'{record["id"]}: {term["latin"]} keeps the record’s {field} '
+                                       f'({plain(same[field])[:80]!r}, not {plain(term[field])[:80]!r})')
+                continue
+            head = words(term.get('latin', ''))[:1]
+            like = [t['latin'] for t in record['terms'] if words(t['latin'])[:1] == head]
+            if like:
+                notices.append(f'{record["id"]}: {term.get("latin")} is added beside {like}; '
+                               'write them alike to merge them')
     replaced = [old for _, item in new_material(spec) for old in item.get('replaces', [])]
     for card in batch:
         anchor = cards[card][1].get('anchor')
@@ -183,7 +209,7 @@ def check(spec, root=ROOT):
                     problems.add(f'{card}: the link {href} is in no record; carry it into the sources, or list it in "dropped"')
     # Every problem once.
     unique = Problems(dict.fromkeys(problems))
-    return unique, {'cards': cards, 'records': records, 'catalog': catalog}
+    return unique, {'cards': cards, 'records': records, 'catalog': catalog, 'notices': notices}
 
 
 def apply(spec, plan, root=ROOT, today=None):
@@ -201,10 +227,23 @@ def apply(spec, plan, root=ROOT, today=None):
         written[record['id']] = record
     for extension in spec.get('extend', []):
         record = copy.deepcopy(written.get(extension['id']) or records[extension['id']])
-        for field in ('terms', 'phrases', 'sources'):
-            for value in extension.get(field, []):
-                if value not in record.setdefault(field, []):
-                    record[field].append(value)
+        for value in extension.get('terms', []):
+            same = next((t for t in record['terms'] if t['latin'] == value['latin']), None)
+            if same is None:
+                record['terms'].append(copy.deepcopy(value))
+                continue
+            for field in ('evidence', 'notes'):
+                for item in value.get(field, []):
+                    if item not in same.get(field, []):
+                        same.setdefault(field, []).append(item)
+            for field, item in value.items():
+                same.setdefault(field, copy.deepcopy(item))
+        for value in extension.get('phrases', []):
+            if all(plain(p['latin']) != plain(value['latin']) for p in record.get('phrases', [])):
+                record.setdefault('phrases', []).append(value)
+        for value in extension.get('sources', []):
+            if value not in record.setdefault('sources', []):
+                record['sources'].append(value)
         for field in ('also', 'related', 'replaces'):
             for value in extension.get(field, []):
                 if value not in record.setdefault(field, []):
@@ -246,6 +285,61 @@ def apply(spec, plan, root=ROOT, today=None):
     return files
 
 
+def extend_existing(spec, root=ROOT):
+    """Turn the spec's records that exist already into extensions of them. Returns what changed."""
+    records = load_records(root)
+    by_english = {(r['english'], r.get('sense')): key for key, r in records.items()}
+    keep, moved, renamed, report = [], [], {}, []
+    for record in spec.get('records', []):
+        key = record['id'] if record['id'] in records else by_english.get((record['english'], record.get('sense')))
+        if key is None:
+            keep.append(record)
+            continue
+        base = records[key]
+        if record['id'] == key and (record['english'], record.get('sense')) != (base['english'], base.get('sense')):
+            report.append(f'{key}: the IDs match but the senses differ ({record["english"]!r} {record.get("sense")!r}, '
+                          f'not {base["english"]!r} {base.get("sense")!r}); give the new record its own ID')
+            keep.append(record)
+            continue
+        if record['id'] != key:
+            renamed[record['id']] = key
+        extension = {'id': key}
+        notes = dict(record.get('notes', {}))
+        rename = {}
+        for name, note in list(notes.items()):
+            if name in base.get('notes', {}) and base['notes'][name] != note:
+                n = 2
+                while f'{name}-{n}' in base['notes'] or f'{name}-{n}' in notes:
+                    n += 1
+                rename[name] = f'{name}-{n}'
+                notes[f'{name}-{n}'] = notes.pop(name)
+        for field in ('terms', 'phrases'):
+            if record.get(field):
+                extension[field] = copy.deepcopy(record[field])
+                for item in extension[field]:
+                    if item.get('notes'):
+                        item['notes'] = [rename.get(n, n) for n in item['notes']]
+        also = [a for a in record.get('also', []) if a != base['english'] and a not in base.get('also', [])]
+        if record['english'] != base['english'] and record['english'] not in base.get('also', []):
+            also.insert(0, record['english'])
+        for field, value in (('also', also), ('related', record.get('related', [])),
+                             ('sources', record.get('sources', [])), ('notes', notes),
+                             ('replaces', record.get('replaces', []))):
+            if value:
+                extension[field] = value
+        moved.append(extension)
+        if record['domain'] != base['domain']:
+            spec.setdefault('flags', []).append(f'Also under {record["domain"]}: {key} (merged into the {base["domain"]} record)')
+        report.append(f'{record["id"]} → extension of {key}')
+    for item in keep + moved:
+        if item.get('related'):
+            item['related'] = list(dict.fromkeys(renamed.get(r, r) for r in item['related'] if renamed.get(r, r) != item['id']))
+    spec['records'] = keep
+    if moved:
+        spec['extend'] = spec.get('extend', []) + moved
+    return report
+
+
 def rewire(root=ROOT):
     """Point every "related" link that names a card no longer in data/entries at the record that
     replaces it (after merging batches converted in parallel). Returns the records changed."""
@@ -283,6 +377,8 @@ def main():
     parser.add_argument('--write', action='store_true', help='apply the batch if it passes the checks')
     parser.add_argument('--rewire', action='store_true',
                         help='only point related links at removed cards to the records that replace them')
+    parser.add_argument('--extend-existing', action='store_true',
+                        help='rewrite the spec so that records that exist already become extensions of them')
     args = parser.parse_args()
     if args.rewire:
         changed = rewire()
@@ -291,6 +387,11 @@ def main():
     if not args.spec:
         parser.error('a spec file is required')
     spec = json.loads(args.spec.read_text(encoding='utf-8'))
+    if args.extend_existing:
+        report = extend_existing(spec)
+        args.spec.write_text(dump(spec), encoding='utf-8')
+        print('\n'.join(report) if report else 'No record of the spec exists already.')
+        return 0
     problems, plan = check(spec)
     for flag in spec.get('flags', []):
         print(f'flag: {flag}')
@@ -299,6 +400,8 @@ def main():
         for problem in problems:
             print(f'  {problem}', file=sys.stderr)
         return 1
+    for notice in plan['notices']:
+        print(f'merge: {notice}')
     n_records, n_ext = len(spec.get('records', [])), len(spec.get('extend', []))
     print(f'Checks pass: {len(spec["cards"])} cards → {n_records} new records, {n_ext} extended.')
     if not args.write:

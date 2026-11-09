@@ -1,0 +1,59 @@
+{
+  "id": "piece",
+  "english": "piece",
+  "pos": "noun",
+  "also": [
+    "chunk"
+  ],
+  "domain": "culina",
+  "terms": [
+    {
+      "latin": "frustum, frustī n.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "piece or chunk",
+      "notes": [
+        "frustum"
+      ]
+    },
+    {
+      "latin": "frustulum, frustulī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "little piece"
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Parvum frustum cape.",
+      "english": "Take a small piece.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "crumb",
+    "slice-noun",
+    "chop",
+    "cut"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/frustum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: frustum</a> · <a href=\"https://atlas.perseus.tufts.edu/dictionaries/entry/urn%3Acite2%3Ascaife-viewer%3Adictionaries.v1%3Aelementary-latin-n6508/\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis: frustum</a> · <a href=\"https://www.alatius.com/latin/bennetthidden.html\" rel=\"noopener noreferrer\" target=\"_blank\">Bennett: hidden quantities, with later corrections</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio: numbered food and kitchen sections</a>",
+    "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  },
+  "notes": {
+    "frustum": {
+      "form": "frustum",
+      "claim": "short u",
+      "against": "Traupman <span lang=\"la\">frūstum</span>, pp. 72, 360",
+      "html": "A different word from <span lang=\"la\">frūstrā</span>, “in vain”, whose u is long; Traupman himself prints <span lang=\"la\">frustum</span> on pp. 282 and 336.",
+      "ruling": "frustra"
+    }
+  }
+}

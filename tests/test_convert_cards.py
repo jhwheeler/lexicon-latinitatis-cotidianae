@@ -101,6 +101,43 @@ class ConvertTests(unittest.TestCase):
         self.assertEqual(trousers['terms'][-1]['latin'], 'ōtium, ōtiī n.')
         self.assertEqual(trousers['review']['status'], 'draft')
 
+    def test_a_term_already_in_the_record_merges_into_it(self):
+        trousers = json.loads((self.root / 'data/concepts/trousers.json').read_text(encoding='utf-8'))
+        first = trousers['terms'][0]
+        spec = {'batch': 'test', 'cards': ['entry-90002'], 'extend': [{
+            'id': 'trousers',
+            'terms': [dict(first, evidence=['Test 1'], comment='Another comment.'),
+                      {'latin': 'ōtium, ōtiī n.', 'status': 'alternative', 'period': 'classical'}],
+            'phrases': [dict(trousers['phrases'][0], english='Again.')] if trousers.get('phrases') else [],
+            'sources': [LS.format('otium')], 'replaces': ['entry-90002']}]}
+        spec['added'] = {item['latin']: 'from another card' for item in [first] + spec['extend'][0]['phrases']}
+        problems, plan = self.cc.check(spec, self.root)
+        self.assertEqual(problems, [])
+        if 'comment' in first:
+            self.assertTrue(any('keeps the record’s comment' in n for n in plan['notices']))
+        merged = json.loads(self.cc.apply(spec, plan, self.root)[self.root / 'data/concepts/trousers.json'])
+        self.assertEqual([t['latin'] for t in merged['terms']].count(first['latin']), 1)
+        self.assertIn('Test 1', merged['terms'][0]['evidence'])
+        self.assertEqual(merged['terms'][0].get('comment'), first.get('comment', 'Another comment.'))
+        self.assertEqual(len(merged.get('phrases', [])), len(trousers.get('phrases', [])))
+
+    def test_records_that_exist_already_become_extensions(self):
+        trousers = json.loads((self.root / 'data/concepts/trousers.json').read_text(encoding='utf-8'))
+        spec = {'batch': 'test', 'cards': ['entry-90001', 'entry-90002'], 'records': [
+            dict(self.spec['records'][0], related=['leisure']),
+            {'id': 'leisure', 'english': trousers['english'], 'pos': 'noun', 'domain': 'labor',
+             'terms': [{'latin': 'ōtium, ōtiī n.', 'status': 'recommended', 'period': 'classical'}],
+             'sources': [LS.format('otium')], 'replaces': ['entry-90002']}]}
+        if trousers.get('sense'):
+            spec['records'][1]['sense'] = trousers['sense']
+        report = self.cc.extend_existing(spec, self.root)
+        self.assertEqual(report, ['leisure → extension of trousers'])
+        self.assertEqual([r['id'] for r in spec['records']], ['be-idle'])
+        self.assertEqual(spec['records'][0]['related'], ['trousers'])
+        self.assertEqual(spec['extend'][0]['id'], 'trousers')
+        self.assertIn(f'Also under labor: trousers (merged into the {trousers["domain"]} record)', spec['flags'])
+        self.assertEqual(self.problems(spec), [])
+
     def test_rewire_follows_replaced_cards(self):
         record = json.loads((self.root / 'data/concepts/socks.json').read_text(encoding='utf-8'))
         record['related'] = ['entry-58']   # converted in batch 1 to records; get-dressed replaces it

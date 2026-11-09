@@ -1,0 +1,92 @@
+{
+  "id": "ice-cream",
+  "english": "ice cream",
+  "pos": "noun",
+  "domain": "culina",
+  "terms": [
+    {
+      "latin": "gelātum, gelātī n.",
+      "status": "recommended",
+      "period": "modern",
+      "evidence": [
+        "Helfer, Lexicon auxiliare",
+        "Vox Latina (via Morgan–Owens)"
+      ],
+      "comment": "The nearest Roman thing: Pliny’s dessert of <span lang=\"la\">halica cum mulsō et nive</span> (Ep. 1.15.2).",
+      "notes": [
+        "gelatum"
+      ]
+    },
+    {
+      "latin": "congelidum cremum",
+      "status": "alternative",
+      "period": "modern",
+      "evidence": [
+        "Traupman 71"
+      ],
+      "comment": "Also <span lang=\"la\">gelidum cremum</span>, in his glossary (p. 331).",
+      "notes": [
+        "cremum"
+      ]
+    },
+    {
+      "latin": "glaciēs dulcis / edūlis",
+      "status": "alternative",
+      "period": "modern",
+      "evidence": [
+        "M-O s.v. ice cream"
+      ]
+    },
+    {
+      "latin": "nix dulcis",
+      "status": "alternative",
+      "period": "modern",
+      "evidence": [
+        "M-O s.v. ice cream"
+      ]
+    },
+    {
+      "latin": "sorbillum glaciātum",
+      "status": "alternative",
+      "period": "modern",
+      "evidence": [
+        "Lexicon Recentis Latinitatis, via Morgan–Owens"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Vīs gelātum?",
+      "english": "Do you want ice cream?",
+      "source": "composed"
+    }
+  ],
+  "notes": {
+    "gelatum": {
+      "html": "A modern word, a back-formation from Italian <em>gelato</em>; classically <span lang=\"la\">gelātus</span> is only the participle “frozen, set”. Recorded by Helfer’s Lexicon auxiliare and Vox Latina (via Morgan–Owens’s online index).",
+      "ruling": "gelatum"
+    },
+    "cremum": {
+      "form": "cremum",
+      "claim": "short e",
+      "against": "Traupman <span lang=\"la\">crēmum</span>, pp. 298, 331, 406",
+      "html": "Lewis &amp; Short <span lang=\"la\">crĕmum</span>, from its one ancient instance (Ven. Fort. 11.14.1); Traupman himself prints <span lang=\"la\">cremum</span> on pp. 67 and 71."
+    }
+  },
+  "related": [
+    "flavour",
+    "kind",
+    "dessert"
+  ],
+  "sources": [
+    "<a href=\"https://www.textkit.com/t/quomodo-dicere-they-left-to-eat-ice-cream/9632\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan lexicon quotation: gelatum [Vox Lat.]</a>",
+    "<a href=\"https://neolatinlexicon.org/latin/ice_cream/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Latin index: ice cream</a>",
+    "29 October 2026 additions: John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 73, checked against the searchable text of the book.",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

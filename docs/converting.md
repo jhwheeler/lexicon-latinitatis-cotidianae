@@ -59,6 +59,10 @@ Read first: `AGENTS.md`, `records.md` (the record format and the note shape), an
 - Use other languages: the lexicon is English–Latin. Personal names belong only in example sentences, never in headwords, categories or `also`.
 - Touch anything outside `data/` and your spec.
 
+## Merging batches converted in parallel
+
+Agents working at the same time make some records twice (*storeroom* in the building cards and in the kitchen ones). Whoever merges the batches re-applies each spec on the current main; before that, `python3 scripts/convert_cards.py <spec> --extend-existing` turns the spec's records that now exist (same ID, or same English headword and sense) into extensions of them. A term already in the record merges into it (its evidence and notes are added; the record's own status, period and comment stand, and the converter reports where they differed), and an example already there is not added twice. A record that came from another category is flagged “Also under …”, so it can be listed there too.
+
 ## Your report
 
 Under 250 words: the batch; cards → new records and extended records; the new record IDs, comma-separated; your flags; anything you could not settle.

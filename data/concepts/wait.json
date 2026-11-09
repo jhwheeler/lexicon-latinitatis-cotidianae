@@ -5,9 +5,10 @@
   "domain": "ludi",
   "terms": [
     {
-      "latin": "exspectō, exspectāre",
+      "latin": "exspectō, exspectāre, exspectāvī, exspectātum",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "gloss": "wait for or expect"
     }
   ],
   "phrases": [
@@ -15,18 +16,33 @@
       "latin": "Paulisper exspectā.",
       "english": "Wait a little.",
       "source": "composed"
+    },
+    {
+      "latin": "Exspectā paulisper.",
+      "english": "Wait a little while.",
+      "source": "composed"
     }
   ],
   "related": [
-    "take-turns"
+    "take-turns",
+    "in-turn"
   ],
   "sources": [
     "<a href=\"https://www.alatius.com/ls/index.php?l=exspecto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: exspecto</a>",
-    "The example sentences marked “composed” are ours."
+    "The example sentences marked “composed” are ours.",
+    "<a href=\"https://logeion.uchicago.edu/exspecto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: exspecto</a>",
+    "The example sentence marked “composed” is ours."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "wait for",
+    "expect"
+  ],
+  "replaces": [
+    "entry-78"
+  ]
 }

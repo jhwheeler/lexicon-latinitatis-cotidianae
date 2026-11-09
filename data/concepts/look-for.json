@@ -5,9 +5,11 @@
   "domain": "ludi",
   "terms": [
     {
-      "latin": "quaerō, quaerere",
+      "latin": "quaerō, quaerere, quaesīvī, quaesītum",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "gloss": "seek or ask",
+      "comment": "<strong lang=\"la\">Eāmus thēsaurum quaesītum!</strong> uses the supine of purpose after a verb of motion."
     },
     {
       "latin": "quaeritāre",
@@ -22,15 +24,39 @@
   ],
   "related": [
     "hide",
-    "hide-and-seek"
+    "hide-and-seek",
+    "find",
+    "ask",
+    "search",
+    "quest"
   ],
   "sources": [
     "<a href=\"https://www.alatius.com/ls/index.php?l=quaero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quaero</a>",
-    "<a href=\"https://logeion.uchicago.edu/quaerito\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quaerito</a>"
+    "<a href=\"https://logeion.uchicago.edu/quaerito\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quaerito</a>",
+    "<a href=\"https://logeion.uchicago.edu/quaero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quaero</a> · <a href=\"https://www.alatius.com/ls/index.php?l=quaero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quaero</a>",
+    "The example sentences marked “composed” are ours."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "Ubi est? Quaerāmus.",
+      "english": "Where is it? Let’s look.",
+      "source": "composed"
+    },
+    {
+      "latin": "Eāmus thēsaurum quaesītum!",
+      "english": "Let’s go look for treasure!",
+      "source": "composed"
+    }
+  ],
+  "also": [
+    "seek"
+  ],
+  "replaces": [
+    "entry-79"
+  ]
 }

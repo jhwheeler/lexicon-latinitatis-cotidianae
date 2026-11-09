@@ -1,0 +1,55 @@
+{
+  "id": "cowboy",
+  "english": "cowboy",
+  "pos": "noun",
+  "also": [
+    "cowboys",
+    "cowhand"
+  ],
+  "domain": "urbs",
+  "terms": [
+    {
+      "latin": "armentārius, armentāriī m.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "herdsman of cattle",
+      "evidence": [
+        "Verg. G. 3.344",
+        "Varr. RR 2.5.18 (Lewis &amp; Short)",
+        "Lucr. 6.1252 (Lewis &amp; Short)"
+      ],
+      "comment": "The man who drives the herds (<span lang=\"la\">armenta</span>) of cattle and horses; Lewis &amp; Short sets him apart from the <span lang=\"la\">bubulcus</span>, who ploughs with oxen."
+    },
+    {
+      "latin": "bubulcus Americānus",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "cowboy",
+      "evidence": [
+        "Traupman 298"
+      ],
+      "comment": "Classically a <span lang=\"la\">bubulcus</span> is a ploughman with his oxen; Lewis &amp; Short finds the sense “herdsman” only after Augustus, in the Digest."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "omnia sēcum armentārius Āfer agit",
+      "english": "the African herdsman takes everything with him (as he roams the desert with his herd)",
+      "source": "Verg. G. 3.343–344"
+    }
+  ],
+  "related": [
+    "shepherd",
+    "farmer"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/armentarius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: armentarius</a> · <a href=\"https://logeion.uchicago.edu/bubulcus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: bubulcus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 298, checked against the searchable text of the book (9 November 2026).",
+    "Vergil checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

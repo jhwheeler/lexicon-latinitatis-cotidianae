@@ -4,15 +4,27 @@
   "pos": "noun",
   "also": [
     "delivery person",
-    "letter-carrier"
+    "letter-carrier",
+    "postman",
+    "mailman",
+    "mail carrier",
+    "postwoman"
   ],
   "domain": "vectura",
+  "also_under": [
+    "urbs"
+  ],
   "terms": [
     {
       "latin": "tabellārius, tabellāriī m.",
       "status": "recommended",
       "period": "classical",
       "gloss": "letter-carrier or courier",
+      "evidence": [
+        "Cic. Att. 12.1.2",
+        "Traupman 167, 363",
+        "M-O s.v. mailman"
+      ],
       "comment": "Using it for a parcel delivery person is a modern application. <strong lang=\"la\">tabellārius</strong> is derived from <strong lang=\"la\">tabella</strong>."
     },
     {
@@ -28,15 +40,25 @@
       "latin": "Tabellārius adest.",
       "english": "The delivery person is here.",
       "source": "composed"
+    },
+    {
+      "latin": "tabellārius litterās herī reddidit",
+      "english": "the postman delivered the letter yesterday",
+      "source": "Traupman 96, 302"
     }
   ],
   "related": [
     "messenger",
-    "writing-tablet"
+    "writing-tablet",
+    "post-office",
+    "postbox"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/tabellarius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tabellarius</a> · <a href=\"https://logeion.uchicago.edu/cursor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cursor</a>",
-    "The example sentences marked “composed” are ours."
+    "The example sentences marked “composed” are ours.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 96, 167, 302, 363, checked against the searchable text of the book (9 November 2026).",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. mailman.",
+    "Quotations from the Latinitas loci collections (loci-cicero-epistulae), checked against the editions named there."
   ],
   "replaces": [
     "entry-16"

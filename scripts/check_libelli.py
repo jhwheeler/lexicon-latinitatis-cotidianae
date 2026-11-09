@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Check examples quoted from the Theodōrus et pater readers against their texts.
 
-Every example cited as "(Libellus N, Title)" must still occur in that libellus,
+Every example cited as "(Libellus N, Title)", in a grouped entry or as the source of a concept
+record's example, must still occur in that libellus,
 whose @title must be Title, and every example cited as "(Culīna Theodōrī)" must
 occur in the cookbook. The readers live
 in the private latinitas repository, so this check is not part of the test suite;
@@ -122,6 +123,32 @@ def main():
                             missing.append(f'NOT FOUND in {label}: {entry["id"]}: {quote[:100]}')
                         else:
                             loose.append((entry['id'], label, quote))
+    # Concept records: an example's source is "Libellus N, <span lang="la">Title</span>" or the cookbook.
+    for path in sorted(glob.glob(str(ROOT / 'data' / 'concepts' / '*.json'))):
+        record = json.load(open(path, encoding='utf8'))
+        for phrase in record.get('phrases', []):
+            source, quote = phrase['source'], norm(phrase['latin'])
+            m = re.match(r'Libellus ([IVX]+), <span lang="la">([^<]*)</span>$', source)
+            if 'Culīna Theodōrī' in source:
+                total += 1
+                if not found(quote, cookbook):
+                    missing.append(f'NOT FOUND in Culīna Theodōrī: c/{record["id"]}: {quote[:100]}')
+                continue
+            if not m:
+                if re.search(r'Libell|Fābul', source):
+                    missing.append(f'UNREADABLE citation: c/{record["id"]}: {source}')
+                continue
+            total += 1
+            body, gloss, back, title = readers[ROMAN[m.group(1)]]
+            label = f'Libellus {m.group(1)}'
+            if m.group(2) != title:
+                missing.append(f'WRONG TITLE for {label}: c/{record["id"]}: “{m.group(2)}” should be “{title}”')
+            if not found(quote, body):
+                where = 'gloss' if found(quote, gloss) else 'back matter' if found(quote, back) else None
+                if where:
+                    elsewhere.append((f'c/{record["id"]}', f'{label} ({where})', quote))
+                else:
+                    missing.append(f'NOT FOUND in {label}: c/{record["id"]}: {quote[:100]}')
     print(f'{total} quotations checked')
     for eid, where, quote in elsewhere:
         print(f'  in {where}: {eid}: {quote[:100]}')

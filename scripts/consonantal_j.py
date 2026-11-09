@@ -11,7 +11,7 @@ wherever it is a vowel (diēs, cliēns, quiēs, audiō, gaudium).
 
 Only Latin is changed: entry headings, text inside lang="la", and Latin words
 in unmarked prose (a narrower rule set, since that prose is mostly English).
-English headings, tags, Bulgarian text and link targets are never touched.
+English headings, tags, text in other languages and link targets are never touched.
 Search keywords get the same word changes as the visible text, except that
 compounds given an extra j (abice → abjice) keep the classical spelling
 there, so a search for either spelling finds them (search also folds j to i).
@@ -49,11 +49,17 @@ KEEP = {
     'interior': 'comparative (also English), vocalic i', 'interius': 'comparative, vocalic i',
     'plēiades': 'Greek Πλειάδες', 'gāius': 'trisyllabic Gāĭus', 'cāius': 'trisyllabic Cāĭus',
     'iambus': 'Greek ἴαμβος', 'iōnia': 'Greek Ἰωνία', 'iōnēs': 'Greek Ἴωνες', 'iōta': 'Greek ἰῶτα',
+    'iātralīptēs': 'Greek ἰᾱτραλείπτης, vocalic i', 'iātralīptae': 'Greek ἰᾱτραλείπτης, vocalic i',
+    'iātralīptēn': 'Greek ἰᾱτραλείπτης, vocalic i',
+    'iatraliptice': 'Lewis & Short headword in a citation label (Greek ἰατραλειπτική)',
     'iūlus': 'decide per passage: three syllables in Vergil keeps i',
+    'oiei': 'interjection (Terence), written oiei in the editions and Lewis & Short',
+    'subium': 'noun in -ium, vocalic i (Egger, from a word-list in Charisius; M-O s.v. moustache)',
     # not Latin: English prose and names
     'apuleius': 'English form of the author’s name in English prose',
     'logeion': 'name of the dictionary site',
     'yields': 'English verb in unmarked prose (y counts as a vowel)',
+    'pharmacopoeia': 'English noun in unmarked prose',
     # citation labels keep the dictionary's own headword (L&S prints janua, jus, but deicio)
     'deicio': 'Lewis & Short headword in a citation label (L&S: dē-ĭcĭo, also dejicio)',
     'aio': 'Lewis & Short headword in a citation label (L&S: aio)',
@@ -209,6 +215,41 @@ def process(root=ROOT):
                     block['html'] = respell_html(block['html'], changes, where)
                 if 'paragraphs' in block:
                     block['paragraphs'] = [respell_html(p, changes, where) for p in block['paragraphs']]
+    # Concept records: Latin terms and phrases, and every rich-text field.
+    folder = root / 'data/concepts'
+    for path in sorted(folder.glob('*.json')) if folder.exists() else []:
+        record = json.loads(path.read_text(encoding='utf-8'))
+        where = 'c/' + record['id']
+        for text in [record['english'], record.get('sense', '')] + record.get('also', []):
+            changes.skipped(text, 'English heading', where)
+        for term in record['terms']:
+            term['latin'] = respell_text(term['latin'], True, changes, where)
+            for key in ('register', 'comment'):
+                if key in term:
+                    term[key] = respell_html(term[key], changes, where)
+            if 'evidence' in term:
+                term['evidence'] = [respell_html(e, changes, where) for e in term['evidence']]
+        for phrase in record.get('phrases', []):
+            phrase['latin'] = respell_text(phrase['latin'], True, changes, where)
+            phrase['source'] = respell_html(phrase['source'], changes, where)
+        for note in record.get('notes', {}).values():
+            note['html'] = respell_html(note['html'], changes, where)
+        record['sources'] = [respell_html(s, changes, where) for s in record['sources']]
+        results[path] = record
+    # Rulings: titles are unmarked prose; decisions, reasons and history are rich text.
+    rulings_path = root / 'data/rulings.json'
+    if rulings_path.exists():
+        rulings = json.loads(rulings_path.read_text(encoding='utf-8'))
+        for ruling in rulings:
+            where = 'ruling ' + ruling['id']
+            ruling['title'] = respell_text(ruling['title'], False, changes, where)
+            ruling['decision'] = respell_html(ruling['decision'], changes, where)
+            ruling['html'] = respell_html(ruling['html'], changes, where)
+            if 'forms' in ruling:
+                ruling['forms'] = [respell_text(f, True, changes, where) for f in ruling['forms']]
+            for change in ruling.get('history', []):
+                change['html'] = respell_html(change['html'], changes, where)
+        results[rulings_path] = rulings
     # Search keywords repeat the visible text: give them the same word changes.
     for path, entries in loaded.items():
         for entry in entries:

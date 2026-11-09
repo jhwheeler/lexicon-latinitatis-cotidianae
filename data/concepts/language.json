@@ -1,0 +1,88 @@
+{
+  "id": "language",
+  "english": "language",
+  "pos": "noun",
+  "also": [
+    "tongue",
+    "mother tongue",
+    "foreign language"
+  ],
+  "domain": "verba",
+  "also_under": [
+    "schola"
+  ],
+  "terms": [
+    {
+      "latin": "lingua, linguae f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "language, tongue",
+      "evidence": [
+        "Caes. BG 1.1: <span lang=\"la\">quī ipsōrum linguā Celtae, nostrā Gallī appellantur</span>",
+        "Cic. Fin. 1.10: <span lang=\"la\">Latīnam linguam nōn modo nōn inopem … sed locuplētiōrem etiam esse quam Graecam</span>",
+        "Traupman 337"
+      ],
+      "comment": "<span lang=\"la\">Utraque lingua</span>, both languages: for a Roman, Greek and Latin (Hor. S. 1.10.23; Quint. 1.1.14)."
+    },
+    {
+      "latin": "sermō, sermōnis m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "language, the speech of a people",
+      "evidence": [
+        "Quint. 1.1.12: <span lang=\"la\">ā sermōne Graecō puerum incipere mālō</span>",
+        "Cic. de Or. 3.42 (Lewis &amp; Short): <span lang=\"la\">in Latīnō sermōne</span>",
+        "Traupman 337"
+      ],
+      "comment": "<span lang=\"la\">Sermō Latīnus</span>, the Latin language; also talk, conversation (see talk)."
+    },
+    {
+      "latin": "idiōma, idiōmatis n.",
+      "status": "alternative",
+      "period": "medieval",
+      "gloss": "a language",
+      "evidence": [
+        "M-O s.v. language",
+        "Charis. (Lewis &amp; Short): an idiom"
+      ],
+      "comment": "In late antiquity a turn of phrase peculiar to a language (Charisius); a language only in medieval and later Latin (Dante, Marco Polo, in Morgan–Owens). Classical prose says <span lang=\"la\">lingua</span> or <span lang=\"la\">sermō</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "tertiam quī ipsōrum linguā Celtae, nostrā Gallī appellantur",
+      "english": "the third by those who are called Celts in their own language, Gauls in ours",
+      "source": "Caes. BG 1.1"
+    },
+    {
+      "latin": "ita fīet, ut, cum aequālī cūrā linguam utramque tuērī coeperīmus, neutra alterī officiat",
+      "english": "So it will come about that, once we begin to look after both languages with equal care, neither will get in the other’s way.",
+      "source": "Quint. 1.1.14"
+    },
+    {
+      "latin": "vel Mithridātēs, cui duās et vīgintī linguās, quot nātiōnibus imperābat, trāditur nōtās fuisse",
+      "english": "or Mithridates, who is said to have known twenty-two languages, one for each nation he ruled",
+      "source": "Quint. 11.2.50"
+    }
+  ],
+  "related": [
+    "speak-a-language",
+    "word",
+    "in-english",
+    "in-bulgarian",
+    "in-portuguese",
+    "programming-language"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/lingua\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lingua</a> · <a href=\"https://logeion.uchicago.edu/sermo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sermo</a> · <a href=\"https://logeion.uchicago.edu/idioma\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: idioma</a>",
+    "Quotations from the Latinitas loci collections (loci-quintilianus), as checked there against the editions they name.",
+    "Caes. BG 1.1 and Cic. Fin. 1.10 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 337, checked against the searchable text of the book.",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. language."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

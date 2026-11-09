@@ -1,0 +1,93 @@
+{
+  "id": "think-believe",
+  "english": "think",
+  "sense": "believe that, hold an opinion",
+  "pos": "verb",
+  "also": [
+    "I think",
+    "suppose",
+    "in my opinion",
+    "what do you think?"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "putō, putāre, putāvī, putātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "think, suppose",
+      "evidence": [
+        "Catull. 12.4: <span lang=\"la\">hoc salsum esse putās?</span>",
+        "Cic. Fam. 9.3.1: <span lang=\"la\">quod velle tē putō</span>"
+      ],
+      "comment": "With an accusative and infinitive. In Cicero’s letters <span lang=\"la\">putō</span> also stands alone as an aside, “I think”; <span lang=\"la\">Nōn putāram</span> is “I never thought of that” (Cic. Off. 1.81)."
+    },
+    {
+      "latin": "opīnor, opīnārī, opīnātus sum",
+      "status": "alternative",
+      "period": "classical",
+      "grammar": "verb, first conjugation, deponent",
+      "gloss": "think, suppose",
+      "evidence": [
+        "Cic. Tusc. 1.92: <span lang=\"la\">nōndum, opīnor, est experrēctus</span>"
+      ],
+      "comment": "Most often as an aside, <span lang=\"la\">opīnor</span> or <span lang=\"la\">ut opīnor</span>, “I think”, “I suppose”. For <span lang=\"la\">Sīc opīnor</span> see I think so."
+    },
+    {
+      "latin": "arbitror, arbitrārī, arbitrātus sum",
+      "status": "alternative",
+      "period": "classical",
+      "grammar": "verb, first conjugation, deponent",
+      "gloss": "think, judge",
+      "evidence": [
+        "Cic. Att. 13.49.1: <span lang=\"la\">quam equidem rūrī esse arbitror</span>"
+      ],
+      "comment": "A considered judgement; also as an aside, <span lang=\"la\">ut arbitror</span>."
+    },
+    {
+      "latin": "cēnseō, cēnsēre, cēnsuī, cēnsum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "think, be of the opinion; think it best",
+      "evidence": [
+        "Plaut. Ps. 664–665: <span lang=\"la\">Sānē cēnseō.</span>",
+        "Cic. de Or. 2.367: <span lang=\"la\">surgendum cēnseō et requiēscendum</span>"
+      ],
+      "comment": "<span lang=\"la\">Quid cēnsēs?</span> asks “What do you think?”; with a gerundive it gives advice: <span lang=\"la\">surgendum cēnseō</span>, I think we should get up."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "hoc salsum esse putās? fugit tē, inepte",
+      "english": "You think that’s funny? You’ve got it wrong, silly.",
+      "source": "Catull. 12.4"
+    },
+    {
+      "latin": "quid ergō potissimum scrībam? quod velle tē putō, citō mē ad tē esse ventūrum",
+      "english": "So what shall I write above all? What I think you want: that I’ll be with you soon.",
+      "source": "Cic. Fam. 9.3.1"
+    },
+    {
+      "latin": "nec committere, ut aliquandō dīcendum sit: Nōn putāram.",
+      "english": "and not to let it come to having to say, “I never thought of that.”",
+      "source": "Cic. Off. 1.81"
+    }
+  ],
+  "related": [
+    "i-think-so",
+    "i-dont-think-so",
+    "think-ponder",
+    "mind-the-mind",
+    "believe"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/puto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: puto</a> · <a href=\"https://logeion.uchicago.edu/opinor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: opinor</a> · <a href=\"https://logeion.uchicago.edu/arbitror\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: arbitror</a> · <a href=\"https://logeion.uchicago.edu/censeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: censeo</a>",
+    "Quotations from the Latinitas loci collections (loci-catullus, loci-cicero-epistulae, loci-cicero-philosophica, loci-plautus), as checked there against the editions they name.",
+    "Cic. Off. 1.81 and de Or. 2.367 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

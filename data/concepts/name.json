@@ -1,0 +1,124 @@
+{
+  "id": "name",
+  "english": "name",
+  "pos": [
+    "noun",
+    "verb"
+  ],
+  "also": [
+    "what’s your name?",
+    "my name is",
+    "be called",
+    "call"
+  ],
+  "domain": "verba",
+  "also_under": [
+    "sermo"
+  ],
+  "terms": [
+    {
+      "latin": "nōmen, nōminis n.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "name",
+      "evidence": [
+        "Plaut. Amph. 364: <span lang=\"la\">quid nōmen tibi est?</span>",
+        "Gell. 2.29.3: <span lang=\"la\">nōmen est cassīta</span>",
+        "Traupman 15, 17: <span lang=\"la\">Quid est nōmen tibi?</span>"
+      ],
+      "comment": "“My name is Mark” is <span lang=\"la\">mihi nōmen est Mārcus</span>, or <span lang=\"la\">Mārcō</span>, the name in the dative beside <span lang=\"la\">mihi</span>: <span lang=\"la\">cui Serviō Tulliō fuit nōmen</span> (Liv. 1.39.1)."
+    },
+    {
+      "latin": "vocō, vocāre, vocāvī, vocātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "call (by a name), name",
+      "evidence": [
+        "Plaut. Amph. 365: <span lang=\"la\">Sōsiam vocant Thēbānī</span>",
+        "M-O s.v. name: <span lang=\"la\">quī vocāris?</span>"
+      ],
+      "comment": "<span lang=\"la\">Quī vocāris?</span>, what are you called?; <span lang=\"la\">vocor</span>, my name is."
+    },
+    {
+      "latin": "appellō, appellāre, appellāvī, appellātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "call, name; address by name",
+      "evidence": [
+        "Liv. 22.30.2: <span lang=\"la\">cum patrem Fabium appellāsset</span>",
+        "Caes. BG 1.1: <span lang=\"la\">quī ipsōrum linguā Celtae, nostrā Gallī appellantur</span>"
+      ],
+      "comment": "With two accusatives, as in Livy."
+    },
+    {
+      "latin": "nōminō, nōmināre, nōmināvī, nōminātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "name; mention by name",
+      "evidence": [
+        "Cic. Amic. 26: <span lang=\"la\">amor enim, ex quō amīcitia nōmināta est</span>",
+        "Traupman 103: <span lang=\"la\">eum nōlō nōmināre</span>"
+      ]
+    },
+    {
+      "latin": "nōmen indere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "give a name (to)",
+      "evidence": [
+        "Plaut. Men. 263: <span lang=\"la\">huic urbī nōmen Epidamnō inditumst</span>",
+        "Liv. 1.34 (Lewis &amp; Short)"
+      ],
+      "comment": "With a dative of the one named; not <span lang=\"la\">nōmen dare</span> (below)."
+    },
+    {
+      "latin": "nōmen dare",
+      "status": "avoid",
+      "period": "classical",
+      "gloss": "enlist, give in one’s name",
+      "evidence": [
+        "Liv. 2.24.2: <span lang=\"la\">nē nōmina darent</span>"
+      ],
+      "comment": "A false friend: classically to enrol, above all for military service (Lewis &amp; Short), not to name a child or a pet."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Quid ais? quid nōmen tibi est? — Sōsiam vocant Thēbānī, Dāvō prōgnātum patre.",
+      "english": "What’s that? What’s your name? — The Thebans call me Sosia, son of Davus.",
+      "source": "Plaut. Amph. 364–365"
+    },
+    {
+      "latin": "avicula … est parva, nōmen est cassīta",
+      "english": "There is a little bird; its name is cassita, the crested lark.",
+      "source": "Gell. 2.29.3"
+    },
+    {
+      "latin": "Periī hercle: nōmen perdidī.",
+      "english": "Oh no, I’ve forgotten the name.",
+      "source": "Ter. Ph. 386"
+    },
+    {
+      "latin": "lūdat lascīva … et nōmen blaesō garriat ōre meum",
+      "english": "let her play, full of fun, … and prattle my name with her lisping mouth",
+      "source": "Mart. 5.34.7–8"
+    }
+  ],
+  "related": [
+    "name-day",
+    "word",
+    "language"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/nomen\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nomen</a> · <a href=\"https://logeion.uchicago.edu/voco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: voco</a> · <a href=\"https://logeion.uchicago.edu/appello\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: appello</a> · <a href=\"https://logeion.uchicago.edu/nomino\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nomino</a> · <a href=\"https://logeion.uchicago.edu/indo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: indo</a>",
+    "Quotations from the Latinitas loci collections (loci-plautus, loci-gellius, loci-terentius, loci-martialis, loci-livius, loci-cicero-philosophica), as checked there against the editions they name.",
+    "Plaut. Amph. 365 and Men. 263, Caes. BG 1.1, Liv. 2.24.2 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 15, 17, 103, checked against the searchable text of the book.",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. name: what is your name."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

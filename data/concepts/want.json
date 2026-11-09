@@ -1,0 +1,100 @@
+{
+  "id": "want",
+  "english": "want",
+  "pos": "verb",
+  "also": [
+    "would like",
+    "don’t want",
+    "feel like"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "volō, velle, voluī",
+      "status": "recommended",
+      "period": "classical",
+      "grammar": "verb, irregular",
+      "gloss": "want, wish, be willing",
+      "evidence": [
+        "Ter. Ph. 950: <span lang=\"la\">Nōlō, volō; volō, nōlō rūrsum</span>",
+        "Cic. Att. 12.41.1: <span lang=\"la\">scīre tamen volēbam ubi essēs</span>"
+      ],
+      "comment": "With an infinitive (<span lang=\"la\">scīre volēbam</span>), an accusative and infinitive (<span lang=\"la\">tē venīre volō</span>) or a bare subjunctive (<span lang=\"la\">quid faciam vīs?</span>, Hor. Ep. 2.2.57). <span lang=\"la\">Vīn'</span>, for <span lang=\"la\">vīsne</span>, offers something; the polite <span lang=\"la\">velim</span> is “I’d like”."
+    },
+    {
+      "latin": "nōlō, nōlle, nōluī",
+      "status": "alternative",
+      "period": "classical",
+      "grammar": "verb, irregular",
+      "gloss": "not want, refuse",
+      "evidence": [
+        "Cic. Fam. 16.11.1: <span lang=\"la\">festīnāre tē nōlō</span>",
+        "Plaut. Cas. 233: <span lang=\"la\">Nōlō amēs.</span>"
+      ],
+      "comment": "“I don’t want” is normally <span lang=\"la\">nōlō</span>; <span lang=\"la\">nōlī</span> with an infinitive is “don’t!”."
+    },
+    {
+      "latin": "cupiō, cupere, cupīvī, cupītum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "want eagerly, long for",
+      "evidence": [
+        "Cic. Att. 3.7.3: <span lang=\"la\">vidēre tē cupiō</span>",
+        "Cic. Fam. 14.4.1: <span lang=\"la\">ego vērō tē quam prīmum, mea vīta, cupiō vidēre</span>"
+      ],
+      "comment": "Stronger than <span lang=\"la\">volō</span>: the word of Cicero’s letters for longing to see someone."
+    },
+    {
+      "latin": "libet, libuit (libitum est)",
+      "status": "alternative",
+      "period": "classical",
+      "grammar": "verb, impersonal",
+      "gloss": "it pleases; I feel like (doing)",
+      "evidence": [
+        "Ter. And. 862: <span lang=\"la\">Quamobrem? — Quia libet.</span>",
+        "Plaut. Most. 1131: <span lang=\"la\">ego ībō prō tē, sī tibi nōn libet</span>",
+        "Traupman 98: <span lang=\"la\">quia mihi libitum est</span>"
+      ],
+      "comment": "With a dative of the person: <span lang=\"la\">nōn libet</span>, “I don’t feel like it”; <span lang=\"la\">ut libet</span>, “as you like”. Comedy often spells it <span lang=\"la\">lubet</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Nōlō, volō; volō, nōlō rūrsum; cedo, cape.",
+      "english": "I don’t want it, I want it; I want it, then I don’t; give it here, take it.",
+      "source": "Ter. Ph. 950"
+    },
+    {
+      "latin": "Vīn' aquam?",
+      "english": "Would you like some water?",
+      "source": "Plaut. Curc. 313"
+    },
+    {
+      "latin": "quid faciam vīs?",
+      "english": "What do you want me to do?",
+      "source": "Hor. Ep. 2.2.57"
+    },
+    {
+      "latin": "festīnāre tē nōlō",
+      "english": "I don’t want you to hurry.",
+      "source": "Cic. Fam. 16.11.1"
+    }
+  ],
+  "related": [
+    "what-do-you-want",
+    "wish",
+    "i-want-a-word-with-you",
+    "help"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/volo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: volo</a> · <a href=\"https://logeion.uchicago.edu/nolo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nolo</a> · <a href=\"https://logeion.uchicago.edu/cupio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cupio</a> · <a href=\"https://logeion.uchicago.edu/libet\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: libet</a>",
+    "Quotations from the Latinitas loci collections (loci-terentius, loci-plautus, loci-horatius, loci-cicero-epistulae), as checked there against the editions they name.",
+    "Plaut. Most. 1131 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 98, checked against the searchable text of the book."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

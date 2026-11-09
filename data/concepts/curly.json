@@ -1,0 +1,56 @@
+{
+  "id": "curly",
+  "english": "curly",
+  "pos": "adjective",
+  "also": [
+    "curly hair",
+    "curls"
+  ],
+  "domain": "corpus",
+  "terms": [
+    {
+      "latin": "crispus, crispa, crispum",
+      "status": "recommended",
+      "period": "classical",
+      "evidence": [
+        "Traupman 58",
+        "M-O"
+      ],
+      "notes": [
+        "crispus"
+      ]
+    },
+    {
+      "latin": "cirrātus, cirrāta, cirrātum",
+      "status": "alternative",
+      "period": "classical",
+      "evidence": [
+        "Traupman 58",
+        "M-O"
+      ]
+    }
+  ],
+  "notes": {
+    "crispus": {
+      "form": "crispus",
+      "claim": "short i",
+      "against": "Traupman <span lang=\"la\">crīspāre</span>, with a long ī",
+      "html": "Lewis &amp; Short leaves <span lang=\"la\">crispus</span> and <span lang=\"la\">crispō</span> unmarked, and no other evidence for a long vowel was found.",
+      "ruling": "quantity-authorities"
+    }
+  },
+  "related": [
+    "curl-hair",
+    "grey-haired",
+    "blond"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.org/crispus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: crispus</a> · <a href=\"https://logeion.org/cirratus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cirratus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 58."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

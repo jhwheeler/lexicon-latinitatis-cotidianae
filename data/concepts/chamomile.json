@@ -1,0 +1,57 @@
+{
+  "id": "chamomile",
+  "english": "chamomile",
+  "pos": "noun",
+  "also": [
+    "camomile",
+    "chamomile tea"
+  ],
+  "domain": "corpus",
+  "terms": [
+    {
+      "latin": "chamaemēlon, chamaemēlī n.",
+      "status": "recommended",
+      "period": "classical",
+      "evidence": [
+        "Plin. NH 22.53",
+        "M-O s.v. chamomile"
+      ],
+      "comment": "Quantities follow Lewis &amp; Short (Greek χαμαίμηλον)."
+    },
+    {
+      "latin": "anthemis, anthemidis f.",
+      "status": "alternative",
+      "period": "classical",
+      "comment": "Pliny’s main headword."
+    },
+    {
+      "latin": "chamomilla",
+      "status": "alternative",
+      "period": "late",
+      "evidence": [
+        "Plin. Val."
+      ],
+      "comment": "The later word."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "chamaemēlon, quoniam odōrem mālī habeat",
+      "english": "chamomile, “because it smells of apples”: Pliny explains the name",
+      "source": "Plin. NH 22.53"
+    }
+  ],
+  "related": [
+    "herbal-tea"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.org/chamaemelon\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: chamaemelon</a> · <a href=\"https://logeion.org/anthemis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: anthemis</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. chamomile.",
+    "Pliny (NH 22.53) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

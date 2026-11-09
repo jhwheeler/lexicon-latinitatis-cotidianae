@@ -1,0 +1,98 @@
+{
+  "id": "fever",
+  "english": "fever",
+  "pos": "noun",
+  "also": [
+    "temperature",
+    "have a temperature",
+    "run a fever",
+    "hot forehead"
+  ],
+  "domain": "corpus",
+  "terms": [
+    {
+      "latin": "febris, febris f.",
+      "status": "recommended",
+      "period": "classical",
+      "evidence": [
+        "Traupman 64",
+        "M-O s.v. fever",
+        "Traupman 55: <span lang=\"la\">frōns et genae sunt calidae</span>"
+      ],
+      "comment": "Accusative <span lang=\"la\">febrim</span> or <span lang=\"la\">febrem</span>.",
+      "notes": [
+        "febris"
+      ]
+    },
+    {
+      "latin": "febrīcula, febrīculae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a slight temperature",
+      "evidence": [
+        "Cic. Att. 12.1.2, of his little daughter Attica: <span lang=\"la\">dē Atticae febrīculā … valdē doluī</span>"
+      ],
+      "comment": "Long ī (L&amp;S)."
+    },
+    {
+      "latin": "febrīcitāre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "run a fever",
+      "evidence": [
+        "Traupman 64",
+        "Cels., post-Augustan"
+      ],
+      "comment": "Long ī (L&amp;S)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "febrim habēre",
+      "english": "have a fever",
+      "source": "Cic. Fam. 7.26.1"
+    },
+    {
+      "latin": "in febrim incidere",
+      "english": "get a fever",
+      "source": "Cic. Fam. 14.8.1"
+    },
+    {
+      "latin": "Frōns calida est.",
+      "english": "Your forehead is hot.",
+      "source": "composed"
+    },
+    {
+      "latin": "Febrim habēs; hodiē domī manēbimus.",
+      "english": "You’ve got a temperature; we’ll stay home today.",
+      "source": "composed"
+    }
+  ],
+  "notes": {
+    "febris": {
+      "form": "febris",
+      "claim": "e left unmarked",
+      "against": "Lewis &amp; Short <span lang=\"la\">fē^bris</span>, marking the e as common, “the ē predominating in poets”",
+      "html": "The poets’ long scansion may only reflect the heavy syllable before <span lang=\"la\">-br-</span>, and de Vaan (s.v. <span lang=\"la\">febris</span>) does not discuss the quantity."
+    }
+  },
+  "related": [
+    "ill",
+    "shiver",
+    "forehead"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.org/febris\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: febris</a> · <a href=\"https://logeion.org/febricula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: febricula</a> · <a href=\"https://logeion.org/febricito\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: febricito</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. fever. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): pp. 55, 64.",
+    "Cicero’s letters checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>.",
+    "The example sentences marked “composed” are ours."
+  ],
+  "replaces": [
+    "entry-302"
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

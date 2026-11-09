@@ -1,0 +1,55 @@
+{
+  "id": "pill",
+  "english": "pill",
+  "pos": "noun",
+  "also": [
+    "tablet",
+    "capsule",
+    "lozenge"
+  ],
+  "domain": "corpus",
+  "terms": [
+    {
+      "latin": "pilula, pilulae f.",
+      "status": "recommended",
+      "period": "classical",
+      "evidence": [
+        "Traupman 59, 65",
+        "Plin."
+      ],
+      "comment": "Traupman and M-O disagree on which of the three to use for a pill; all three are ancient."
+    },
+    {
+      "latin": "pastillus, pastillī m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "tablet, lozenge",
+      "evidence": [
+        "Traupman 66",
+        "M-O s.v. pill, tablet, lozenge",
+        "Cels."
+      ]
+    },
+    {
+      "latin": "catapotium, catapotiī n.",
+      "status": "alternative",
+      "period": "classical",
+      "comment": "A Greek medical word in Celsus and Pliny."
+    }
+  ],
+  "related": [
+    "cough-drop",
+    "medicine-drug",
+    "take-medicine"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.org/pilula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pilula</a> · <a href=\"https://logeion.org/pastillus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pastillus</a> · <a href=\"https://logeion.org/catapotium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: catapotium</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. pill, tablet. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): pp. 59, 65–66.",
+    "<a href=\"https://neolatinlexicon.org/\" rel=\"noopener noreferrer\" target=\"_blank\">Neo-Latin Lexicon</a> s.v. pill, tablet (catapotium, pilula, pastillus, with later forms)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

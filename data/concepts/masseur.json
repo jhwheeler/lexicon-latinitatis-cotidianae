@@ -1,0 +1,119 @@
+{
+  "id": "masseur",
+  "english": "masseur",
+  "pos": "noun",
+  "also": [
+    "masseuse",
+    "massage therapist"
+  ],
+  "domain": "corpus",
+  "terms": [
+    {
+      "latin": "iātralīptēs, iātralīptae m.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "massage therapist, a doctor who treats with oil and rubbing",
+      "evidence": [
+        "Plin. Ep. 10.5.1"
+      ],
+      "comment": "Pliny asked Trajan for citizenship for his own.",
+      "notes": [
+        "iatraliptes"
+      ]
+    },
+    {
+      "latin": "tractātor, tractātōris m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "masseur",
+      "evidence": [
+        "Sen. Ep. 66.53"
+      ],
+      "comment": "Both passages cited for this and <strong lang=\"la\">tractātrīx</strong> are scornful; M-O s.v. masseur gives <span lang=\"la\">fricātor</span> and, with a query, <span lang=\"la\">tractātor</span>."
+    },
+    {
+      "latin": "tractātrīx, tractātrīcis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "masseuse",
+      "evidence": [
+        "Mart. 3.82.13"
+      ]
+    },
+    {
+      "latin": "fricātor",
+      "status": "alternative",
+      "period": "post-classical",
+      "evidence": [
+        "M-O s.v. masseur"
+      ]
+    },
+    {
+      "latin": "alīptēs, alīptae m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the trainer who oiled and rubbed down athletes",
+      "evidence": [
+        "Cic. Fam. 1.9.15"
+      ],
+      "notes": [
+        "aliptes"
+      ]
+    },
+    {
+      "latin": "ūnctor, ūnctōris m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "anointer",
+      "evidence": [
+        "Cic.",
+        "Mart."
+      ],
+      "notes": [
+        "unctor"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "gravissimā valētūdine ūsque ad perīculum vītae vexātus iātralīptēn assūmpsī",
+      "english": "when a very serious illness put my life in danger, I took on a massage therapist",
+      "source": "Plin. Ep. 10.5.1"
+    }
+  ],
+  "notes": {
+    "iatraliptes": {
+      "form": "iātralīptēs",
+      "claim": "long ī in -līpt- and a long final e",
+      "against": "Lewis &amp; Short leaves both unmarked",
+      "html": "Greek ἰᾱτραλείπτης."
+    },
+    "aliptes": {
+      "form": "alīptēs",
+      "claim": "long ī",
+      "against": "Lewis &amp; Short <span lang=\"la\">ăliptēs</span>, leaving the i unmarked",
+      "html": "Greek ἀλείπτης."
+    },
+    "unctor": {
+      "form": "ūnctor",
+      "claim": "long u before -nct-",
+      "against": "Lewis &amp; Short leaves it unmarked",
+      "html": "A hidden quantity: the vowel before -nct- is long.",
+      "ruling": "macrons"
+    }
+  },
+  "related": [
+    "massage",
+    "rub-with-oil"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.org/iatraliptice\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: iatraliptice</a> · <a href=\"https://logeion.org/tractator\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tractator</a> · <a href=\"https://logeion.org/tractatrix\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tractatrix</a> · <a href=\"https://logeion.org/aliptes\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aliptes</a> · <a href=\"https://logeion.org/unctor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: unctor</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. masseur.",
+    "Pliny and Seneca passages checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

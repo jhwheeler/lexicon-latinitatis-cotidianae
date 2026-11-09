@@ -1,0 +1,39 @@
+{
+  "id": "chemist",
+  "english": "chemist",
+  "pos": "noun",
+  "also": [
+    "druggist",
+    "pharmacist"
+  ],
+  "domain": "corpus",
+  "terms": [
+    {
+      "latin": "medicāmentārius, medicāmentāriī m.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "chemist, druggist",
+      "evidence": [
+        "Plin. NH 19.110"
+      ]
+    },
+    {
+      "latin": "pharmacopōla",
+      "status": "avoid",
+      "period": "classical",
+      "gloss": "a quack",
+      "comment": "In Cicero and Horace a <span lang=\"la\">pharmacopōla</span> is a quack, so we don’t use it for the chemist."
+    }
+  ],
+  "related": [
+    "pharmacy"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.org/medicamentarius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: medicamentarius</a> · <a href=\"https://logeion.org/pharmacopola\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pharmacopola</a>"
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

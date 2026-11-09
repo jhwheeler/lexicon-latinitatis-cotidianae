@@ -1,0 +1,53 @@
+{
+  "id": "burn-injury",
+  "english": "burn",
+  "sense": "an injury",
+  "pos": "noun",
+  "domain": "corpus",
+  "terms": [
+    {
+      "latin": "ambūstiō, ambūstiōnis f.",
+      "status": "recommended",
+      "period": "classical",
+      "evidence": [
+        "M-O s.v. burn",
+        "Pliny"
+      ],
+      "notes": [
+        "ustio"
+      ]
+    },
+    {
+      "latin": "adūstiō, adūstiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "evidence": [
+        "M-O s.v. burn",
+        "Pliny"
+      ],
+      "notes": [
+        "ustio"
+      ]
+    }
+  ],
+  "notes": {
+    "ustio": {
+      "form": "ambūstiō, adūstiō",
+      "claim": "long u",
+      "against": "Lewis &amp; Short leaves the u unmarked",
+      "html": "The long ū is assumed from <span lang=\"la\">ūstus</span> by Lachmann’s rule and should be checked."
+    }
+  },
+  "related": [
+    "wound"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.org/ambustio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ambustio</a> · <a href=\"https://logeion.org/adustio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: adustio</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. burn."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

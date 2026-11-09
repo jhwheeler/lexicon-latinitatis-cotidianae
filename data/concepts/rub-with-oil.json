@@ -8,19 +8,62 @@
       "latin": "perungō, perungere",
       "status": "recommended",
       "period": "classical"
+    },
+    {
+      "latin": "ungō (unguō), ungere, ūnxī, ūnctum",
+      "status": "recommended",
+      "period": "classical",
+      "notes": [
+        "unct"
+      ]
+    },
+    {
+      "latin": "ūnctiō, ūnctiōnis f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "oiling",
+      "notes": [
+        "unct"
+      ]
     }
   ],
   "related": [
     "baste",
-    "truss"
+    "truss",
+    "oil",
+    "massage",
+    "ointment"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/perungo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: perungo</a>",
-    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+    "<a href=\"https://logeion.org/ungo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ungo</a> · <a href=\"https://logeion.org/unctio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: unctio</a>",
+    "The example sentence marked “composed” is ours."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
+  },
+  "phrases": [
+    {
+      "latin": "Pedēs tibi oleō ungam.",
+      "english": "I’ll rub your feet with oil.",
+      "source": "composed"
+    }
+  ],
+  "also": [
+    "oil",
+    "anoint",
+    "oiling"
+  ],
+  "notes": {
+    "unct": {
+      "form": "ūnxī, ūnctum, ūnctiō",
+      "claim": "long u before -nx-, -nct-",
+      "against": "Lewis &amp; Short leaves it unmarked",
+      "html": "A hidden quantity: the vowel before -nct- and -nx- is long.",
+      "ruling": "macrons"
+    }
   }
 }

@@ -5,7 +5,12 @@
   "also": [
     "infusion",
     "mint tea",
-    "herb tea"
+    "herb tea",
+    "tisane",
+    "decoction",
+    "chamomile tea",
+    "linden tea",
+    "home remedy"
   ],
   "domain": "culina",
   "terms": [
@@ -17,7 +22,10 @@
       "evidence": [
         "M-O s.v. tea: herb tea"
       ],
-      "comment": "With a genitive; also <span lang=\"la\">dēcoctum</span>."
+      "comment": "With a genitive; also <span lang=\"la\">dēcoctum</span>.",
+      "notes": [
+        "infusum"
+      ]
     },
     {
       "latin": "mentae īnfūsum",
@@ -27,18 +35,74 @@
       "evidence": [
         "M-O s.v. tea: herb tea"
       ]
+    },
+    {
+      "latin": "dēcoctum, dēcoctī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "decoction, the liquid so made",
+      "evidence": [
+        "Pliny",
+        "M-O s.v. tea: herb tea, decoctum with the genitive"
+      ]
+    },
+    {
+      "latin": "īnfūsum flōrum tiliae",
+      "status": "alternative",
+      "period": "ours",
+      "gloss": "linden-blossom tea",
+      "comment": "Our formation on M-O’s pattern. Pliny knows linden bark for swellings and wounds (NH 24.49), not the blossom tea."
     }
   ],
   "related": [
     "tea",
-    "sip"
+    "sip",
+    "boil-down",
+    "chamomile",
+    "mint",
+    "linden",
+    "honey",
+    "remedy",
+    "cold-illness"
   ],
   "sources": [
-    "<a href=\"https://neolatinlexicon.org/silva-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: Silva</a>"
+    "<a href=\"https://neolatinlexicon.org/silva-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: Silva</a>",
+    "<a href=\"https://logeion.org/infundo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: infundo</a> · <a href=\"https://logeion.org/refrigesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: refrigesco</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. tea: herb tea. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> has no entry for herb tea.",
+    "Pliny (NH 24.49) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>.",
+    "The example sentences marked “composed” are ours."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
+  },
+  "phrases": [
+    {
+      "latin": "Īnfūsum tibi chamaemēlī parābō.",
+      "english": "I’ll make you some chamomile tea.",
+      "source": "composed"
+    },
+    {
+      "latin": "Exspectā dum refrīgēscat; nimis calidum est.",
+      "english": "Wait for it to cool down; it’s too hot.",
+      "source": "composed"
+    },
+    {
+      "latin": "Hīc mentam et serpyllum legāmus, ut domī īnfūsum faciāmus.",
+      "english": "Let’s pick mint and wild thyme here, to make tea at home.",
+      "source": "composed"
+    }
+  ],
+  "replaces": [
+    "entry-300"
+  ],
+  "notes": {
+    "infusum": {
+      "form": "īnfūsum",
+      "claim": "long i",
+      "against": "Morgan–Owens <span lang=\"la\">infûsum</span>, a Neo-Latin noun marked *",
+      "html": "As in <span lang=\"la\">īnfundō, īnfūsus</span>: <span lang=\"la\">in-</span> is long before f."
+    }
   }
 }

@@ -6,17 +6,50 @@
   "domain": "natura",
   "terms": [
     {
-      "latin": "menta, mentae f.",
+      "latin": "menta (mentha), mentae f.",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "evidence": [
+        "Ov.",
+        "Plin."
+      ],
+      "comment": "M-O’s own example is <span lang=\"la\">mentae īnfūsum</span>, mint tea."
+    },
+    {
+      "latin": "menta piperāta",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "peppermint",
+      "evidence": [
+        "M-O, pharmacy Latin"
+      ]
     }
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/menta\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: menta</a>"
+    "<a href=\"https://logeion.uchicago.edu/menta\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: menta</a>",
+    "<a href=\"https://logeion.org/menta\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: menta</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. mint.",
+    "Pliny (NH 20.147) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "mentae ipsīus odor animum excitat",
+      "english": "the very smell of mint revives the spirit",
+      "source": "Plin. NH 20.147"
+    }
+  ],
+  "also": [
+    "peppermint",
+    "mint tea"
+  ],
+  "related": [
+    "herbal-tea",
+    "thyme",
+    "sage"
+  ]
 }

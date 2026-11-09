@@ -7,26 +7,58 @@
     {
       "latin": "natō, natāre, natāvī, natātum",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "evidence": [
+        "Plin. Ep. 8.8.6"
+      ]
     },
     {
       "latin": "in dorsō natāre",
       "status": "alternative",
       "period": "classical",
       "gloss": "swim on one’s back"
+    },
+    {
+      "latin": "trānatō, trānatāre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "swim across"
     }
   ],
   "related": [
     "swimming",
     "backstroke",
-    "penguin"
+    "penguin",
+    "swimming-pool",
+    "float-on-water",
+    "dive-underwater",
+    "dolphin"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/nato\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nato</a>"
+    "<a href=\"https://logeion.uchicago.edu/nato\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nato</a>",
+    "<a href=\"https://logeion.org/nato\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nato</a> · <a href=\"https://logeion.uchicago.edu/trano\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: trano</a>",
+    "Pliny checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> and the Latinitas loci collections.",
+    "The example sentence marked “composed” is ours."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "īnfrā etiam natāre concessum",
+      "english": "downstream you may swim too (Pliny’s rule for a river)",
+      "source": "Plin. Ep. 8.8.6"
+    },
+    {
+      "latin": "Vīsne natāre?",
+      "english": "Do you want to swim?",
+      "source": "composed"
+    }
+  ],
+  "also": [
+    "swimming",
+    "swim across"
+  ]
 }

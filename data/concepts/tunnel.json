@@ -8,19 +8,45 @@
       "latin": "cunīculus, cunīculī m.",
       "status": "recommended",
       "period": "classical",
-      "comment": "An ancient noun applied to sand play."
+      "comment": "An ancient noun applied to sand play.",
+      "gloss": "tunnel, underground passage"
+    },
+    {
+      "latin": "specus, specūs m.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "tunnel; cave",
+      "evidence": [
+        "Traupman 219, 203"
+      ],
+      "comment": "Traupman prints only <span lang=\"la\">specus</span>."
     }
   ],
   "related": [
     "hole",
-    "sandcastle"
+    "sandcastle",
+    "metro",
+    "entry-206"
   ],
   "sources": [
-    "<a href=\"https://www.alatius.com/ls/index.php?l=cuniculus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cuniculus</a>"
+    "<a href=\"https://www.alatius.com/ls/index.php?l=cuniculus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cuniculus</a>",
+    "<a href=\"https://logeion.uchicago.edu/specus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: specus</a> · <a href=\"https://logeion.uchicago.edu/cuniculus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cuniculus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: pp. 203, 219, checked against the searchable text of the book on 29 October 2026.",
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "ventus ē specū ērūpit, lūmina appāruērunt",
+      "english": "a wind burst out of the tunnel, lights appeared",
+      "source": "Libellus I, <span lang=\"la\">Iter in Lūsitāniam</span>"
+    }
+  ],
+  "also": [
+    "underground passage"
+  ]
 }

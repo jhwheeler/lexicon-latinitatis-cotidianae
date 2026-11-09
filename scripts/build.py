@@ -23,6 +23,7 @@ from pathlib import Path, PurePosixPath
 import posixpath
 import re
 import sys
+from urllib.parse import quote
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE_URL = 'https://jhwheeler.github.io/lexicon-latinitatis-cotidianae/'
@@ -465,6 +466,17 @@ class Links:
         return linked, rest
 
 
+def suggest_link(page, what):
+    """A link that opens a report on the repository, filled in with the page it comes from. Until
+    the form without an account is chosen (see the plan), it needs a GitHub account."""
+    title = f'Correction: {what}'
+    body = (f'Page: {SITE_URL}{page}\n\nWhat should change, and why (a dictionary entry, a passage, '
+            'a page of Traupman or Morgan–Owens):\n\n')
+    url = f'{REPO}/issues/new?title={quote(title)}&body={quote(body)}'
+    return (f'<p class="suggest"><a href="{escape(url, quote=True)}" rel="noopener noreferrer" target="_blank">'
+            'Suggest a correction or a better word</a></p>')
+
+
 def review_state(review):
     return (f'Reviewed by {escape(review["by"])}, {human_date(review["date"])}.' if review['status'] == 'reviewed'
             else f'Draft of {human_date(review["date"])}, not yet reviewed.')
@@ -611,7 +623,9 @@ def render_concept(record, site):
             f'<a href="{links.related(r)}">{links.label(r)}</a>' for r in record['related']) + '.</p>')
     sources = record['sources']
     parts.append('<footer class="c-sources"><p><span class="sc">Sources</span>' + sources[0] + '</p>'
-                 + ''.join(f'<p>{s}</p>' for s in sources[1:]) + f'<p>{review_state(record["review"])}</p></footer>')
+                 + ''.join(f'<p>{s}</p>' for s in sources[1:]) + f'<p>{review_state(record["review"])}</p>'
+                 + suggest_link(f'c/{record["id"]}.html', record['english'] + (f' ({record["sense"]})' if 'sense' in record else ''))
+                 + '</footer>')
     return '<article class="concept" data-record>\n' + '\n'.join(parts) + '\n</article>'
 
 
@@ -689,7 +703,7 @@ def render_word_page(head, info, site):
     lookup = re.sub(r'[^a-z]', '', fold(head))
     parts.append(f'<footer class="c-sources"><p><span class="sc">Dictionaries</span>'
                  f'<a href="https://logeion.uchicago.edu/{lookup}" rel="noopener noreferrer" target="_blank">Logeion: {escape(head)}</a>'
-                 ' (Lewis &amp; Short and others)</p></footer>')
+                 ' (Lewis &amp; Short and others)</p>' + suggest_link(f'l/{info["slug"]}.html', head) + '</footer>')
     return page_shell(f'{head}: a Latin word · {SITE_NAME}',
                       f'The Latin word {head} ({"; ".join(meanings)}): where the lexicon uses it, with its notes and examples.',
                       f'l/{info["slug"]}.html', '../', resolve_anchors('<article class="word">\n' + '\n'.join(parts) + '\n</article>', site, '../', f'l/{info["slug"]}.html'))

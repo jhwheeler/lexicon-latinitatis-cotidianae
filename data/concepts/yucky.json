@@ -1,0 +1,111 @@
+{
+  "id": "yucky",
+  "english": "yucky",
+  "pos": [
+    "adjective",
+    "interjection"
+  ],
+  "also": [
+    "yuck",
+    "icky",
+    "gross",
+    "eww"
+  ],
+  "also_under": [
+    "culina",
+    "verba"
+  ],
+  "domain": "sermo",
+  "terms": [
+    {
+      "latin": "taeter, taetra, taetrum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "nasty, foul (to taste, smell or sight)",
+      "grammar": "adjective",
+      "evidence": [
+        "Lucr. 1.936: <span lang=\"la\">absinthia taetra</span>",
+        "Caes. BC 3.49 (Lewis &amp; Short)"
+      ],
+      "comment": "Lucretius’s word for the bitter wormwood that doctors give children."
+    },
+    {
+      "latin": "foedus, foeda, foedum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "foul, disgusting, ugly",
+      "grammar": "adjective",
+      "evidence": [
+        "Plin. NH 29.61: <span lang=\"la\">cīmicēs foedissimum animal</span> (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "pūtidus, pūtida, pūtidum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "rotten, stinking",
+      "grammar": "adjective",
+      "evidence": [
+        "Cic. Pis. 19: <span lang=\"la\">carō</span> (Lewis &amp; Short)",
+        "Plaut. Bacch. 4.7.23: <span lang=\"la\">fungus</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Of food gone off."
+    },
+    {
+      "latin": "Fu! (Fue!)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "ugh! (disgust)",
+      "grammar": "interjection",
+      "register": "vōx cōmica: Plaut.",
+      "evidence": [
+        "Plaut. Most. 1.1.37 (Lewis &amp; Short)",
+        "Plaut. Ps. 5.2.5 (Lewis &amp; Short)"
+      ],
+      "comment": "Lewis &amp; Short: “denoting aversion, foh! fie!”. In the Mostellaria, at a slave who reeks of garlic.",
+      "notes": [
+        "fu"
+      ]
+    },
+    {
+      "latin": "Apage!",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "take it away! (refusing something)",
+      "grammar": "interjection",
+      "register": "vōx cōmica: Plaut., Ter.; apud Cicerōnem numquam",
+      "evidence": [
+        "Plaut. Am. 2.1.32: <span lang=\"la\">apage tē ā mē</span> (Lewis &amp; Short)",
+        "Ter. Eun. 4.6.18: <span lang=\"la\">apage sīs</span> (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "sed vel utī puerīs absinthia taetra medentēs cum dare cōnantur, prius ōrās pōcula circum contingunt mellis dulcī flāvōque liquōre",
+      "english": "but as doctors, when they try to give children nasty wormwood, first coat the rims of the cups with the sweet golden liquid of honey",
+      "source": "Lucr. 1.936–938"
+    }
+  ],
+  "related": [
+    "bitter",
+    "taste",
+    "hate"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/taeter\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: taeter</a> · <a href=\"https://logeion.uchicago.edu/foedus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: foedus</a> · <a href=\"https://logeion.uchicago.edu/putidus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: putidus</a> · <a href=\"https://logeion.uchicago.edu/fue\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fue</a> · <a href=\"https://logeion.uchicago.edu/apage\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: apage</a>",
+    "Lucretius checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "notes": {
+    "fu": {
+      "form": "fu",
+      "claim": "vowel length unsettled, left unmarked",
+      "html": "Lewis &amp; Short marks neither <span lang=\"la\">fu</span> nor <span lang=\"la\">fue</span>, only the variant <span lang=\"la\">fūfae</span> that it cites from Charisius; the two places in Plautus were not scanned for this entry."
+    }
+  },
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

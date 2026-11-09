@@ -1,0 +1,77 @@
+{
+  "id": "stuck",
+  "english": "stuck",
+  "sense": "caught fast",
+  "pos": "adjective",
+  "also": [
+    "get stuck",
+    "be stuck",
+    "jammed"
+  ],
+  "also_under": [
+    "verba"
+  ],
+  "domain": "sermo",
+  "terms": [
+    {
+      "latin": "haereō, haerēre, haesī, haesum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "be stuck, stick fast; be stuck for what to do",
+      "evidence": [
+        "Phaedr. 4.9.12: <span lang=\"la\">haerentem vadō</span>",
+        "Plaut. Capt. 3.3.17: <span lang=\"la\">quid māchiner? quid comminīscar? haereō</span> (Lewis &amp; Short)",
+        "Traupman 108, 386"
+      ],
+      "comment": "Latin says it with the verb: <span lang=\"la\">haereō</span>, I’m stuck. Also of a small child stuck on the shapes of the letters (<span lang=\"la\">haesit circā fōrmās litterārum</span>, Quint. 1.1.21)."
+    },
+    {
+      "latin": "haesitō, haesitāre, haesitāvī, haesitātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "stick fast (in mud, in shallows)",
+      "evidence": [
+        "Caes. BG 7.19.2 (Lewis &amp; Short)",
+        "Ter. Phorm. 780: <span lang=\"la\">in eōdem lutō haesitās</span>"
+      ],
+      "comment": "Rare in this literal sense, and not in Cicero, who uses it for “hesitate”."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "tum vulpēcula ēvāsit puteō nīxa celsīs cornibus hircumque clausō līquit haerentem vadō",
+      "english": "then the little fox climbed out of the well on his tall horns and left the goat stuck in the water",
+      "source": "Phaedr. 4.9.10–12"
+    },
+    {
+      "latin": "ego stirpem ingentem, vestīgiō pedis ejus haerentem, revellī",
+      "english": "I pulled out a huge thorn stuck in the sole of his foot",
+      "source": "Gell. 5.14.22"
+    },
+    {
+      "latin": "obstipuī, steteruntque comae et vōx faucibus haesit",
+      "english": "I froze, my hair stood on end, and my voice stuck in my throat",
+      "source": "Verg. A. 2.774"
+    },
+    {
+      "latin": "Pila in arbore haeret.",
+      "english": "The ball’s stuck in the tree.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "adhere"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/haereo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: haereo</a> · <a href=\"https://logeion.uchicago.edu/haesito\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: haesito</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 108, 386, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-phaedrus, loci-gellius, loci-vergilius, loci-quintilianus), checked against the editions named there.",
+    "Terence (Phorm. 780) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>.",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

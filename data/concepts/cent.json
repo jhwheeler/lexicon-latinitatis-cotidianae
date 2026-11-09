@@ -3,7 +3,9 @@
   "english": "cent",
   "pos": "noun",
   "also": [
-    "cents"
+    "cents",
+    "penny",
+    "pennies"
   ],
   "also_under": [
     "pecunia"
@@ -25,6 +27,25 @@
       "evidence": [
         "M-O"
       ]
+    },
+    {
+      "latin": "as, assis m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the Roman copper coin; a penny, in sayings",
+      "evidence": [
+        "Catull. 5.3: <span lang=\"la\">ūnius aestimēmus assis</span>",
+        "Hor. Ep. 2.2.27: <span lang=\"la\">ad assem</span>, to the last penny",
+        "Traupman 106"
+      ],
+      "comment": "The smallest everyday coin, and so the penny of proverbs: not worth a penny, <span lang=\"la\">ūnius assis</span>; to the last penny, <span lang=\"la\">ad assem</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nōlī, inquit, tamquam assem elephantō dēs",
+      "english": "“Don’t hold it out,” he said, “as if you were giving a penny to an elephant” (Augustus, to a man nervously handing him a petition)",
+      "source": "Quint. 6.3.59"
     }
   ],
   "related": [
@@ -33,8 +54,10 @@
     "percent"
   ],
   "sources": [
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 130.",
-    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. euro (currency of European Union)."
+    "<a href=\"https://logeion.uchicago.edu/as\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: as</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): pp. 106, 130.",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. euro (currency of European Union); s.v. penny, cent (U.S., European), also <span lang=\"la\">dēnārius</span>.",
+    "Catullus and Quintilian from the Latinitas loci collections; Horace as Lewis &amp; Short quotes him (s.v. <span lang=\"la\">as</span>)."
   ],
   "review": {
     "status": "draft",

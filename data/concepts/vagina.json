@@ -1,0 +1,101 @@
+{
+  "id": "vagina",
+  "english": "vagina",
+  "pos": "noun",
+  "also": [
+    "vulva",
+    "genitals",
+    "private parts"
+  ],
+  "domain": "corpus",
+  "terms": [
+    {
+      "latin": "nātūra, nātūrae f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "the private parts (here a girl’s or woman’s)",
+      "evidence": [
+        "Varr. RR 2.4.10: <span lang=\"la\">nātūram quā fēminae sunt</span>",
+        "Cic. Div. 2.145: <span lang=\"la\">obsignātam habēre nātūram</span>",
+        "M-O s.v. genitals"
+      ],
+      "comment": "The decent word of Cicero and Varro, for either sex. It names the whole, which is what a parent usually means by “vagina”."
+    },
+    {
+      "latin": "muliebria, muliebrium n. pl.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a woman’s or girl’s private parts",
+      "evidence": [
+        "Tac. Ann. 14.60",
+        "Traupman 58"
+      ],
+      "comment": "Tacitus’s word; the counterpart of <span lang=\"la\">virīlia</span>."
+    },
+    {
+      "latin": "porcus, porcī m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a little girl’s private parts, in nurses’ talk",
+      "register": "vōx nūtrīcum: Varr. RR 2.4.10",
+      "evidence": [
+        "Varr. RR 2.4.10"
+      ],
+      "comment": "Varro reports that women, nurses above all, call a little girl’s parts “piglet”, as Greek women say <span lang=\"la\">choeros</span>. Otherwise <span lang=\"la\">porcus</span> is simply a pig."
+    },
+    {
+      "latin": "vāgīna, vāgīnae f.",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "vagina (the anatomical term)",
+      "evidence": [
+        "Traupman 59",
+        "Plaut. Ps. 4.7.85 (Lewis &amp; Short)"
+      ],
+      "comment": "Classically a scabbard, and so the anatomists’ word; its one bodily use in Plautus is an obscene joke."
+    },
+    {
+      "latin": "cunnus, cunnī m.",
+      "status": "avoid",
+      "period": "classical",
+      "gloss": "the obscene word",
+      "register": "vōx obscēna: Hor., Mart.",
+      "evidence": [
+        "Cic. Or. 154",
+        "Cic. Fam. 9.22.2"
+      ],
+      "comment": "Lewis &amp; Short: “as an obscene word, avoided acc. to Cic.”. Latin says <span lang=\"la\">nōbīscum</span>, not <span lang=\"la\">cum nōbīs</span>, Cicero explains, because the sounds would run together <span lang=\"la\">obscaenius</span> (Or. 154)."
+    },
+    {
+      "latin": "volva (vulva), volvae f.",
+      "status": "avoid",
+      "period": "classical",
+      "gloss": "the womb",
+      "evidence": [
+        "Cels. 4.1 (Lewis &amp; Short)"
+      ],
+      "comment": "Not the English vulva: in Latin the womb, and a sow’s womb as a delicacy (Hor. Ep. 1.15.41, Mart. 13.56.2)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nostrae mulierēs, maximē nūtrīcēs, nātūram quā fēminae sunt in virginibus appellant porcum",
+      "english": "our women, and nurses above all, call the part that makes little girls female porcus",
+      "source": "Varr. RR 2.4.10"
+    }
+  ],
+  "related": [
+    "penis"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/natura\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: natura</a> · <a href=\"https://logeion.uchicago.edu/muliebris\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: muliebris</a> · <a href=\"https://logeion.uchicago.edu/porcus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: porcus</a> · <a href=\"https://logeion.uchicago.edu/vagina\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vagina</a> · <a href=\"https://logeion.uchicago.edu/cunnus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cunnus</a> · <a href=\"https://logeion.uchicago.edu/volva\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: volva</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 58, 59, checked against the searchable text of the book (9 November 2026).",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. genitals.",
+    "Varro checked against the Loeb text of Hooper and Ash (1934) as transcribed by Bill Thayer, in the <a href=\"https://github.com/lascivaroma/latin-lemmatized-texts\" rel=\"noopener noreferrer\" target=\"_blank\">LASCIVA Roma corpus</a>; Cicero and Tacitus checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

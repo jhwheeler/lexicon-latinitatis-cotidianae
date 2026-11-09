@@ -1,0 +1,97 @@
+{
+  "id": "then-next",
+  "english": "then",
+  "sense": "next, after that",
+  "pos": "adverb",
+  "also": [
+    "next",
+    "after that",
+    "and then",
+    "afterwards"
+  ],
+  "also_under": [
+    "verba"
+  ],
+  "domain": "sermo",
+  "terms": [
+    {
+      "latin": "deinde (dein)",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "then, next, after that",
+      "grammar": "adverb",
+      "evidence": [
+        "Hor. S. 1.6.119: <span lang=\"la\">deinde eō dormītum</span>",
+        "Catull. 5.7–9",
+        "Cic. Or. 154: <span lang=\"la\">dein … prō deinde … dīcimus</span>",
+        "Traupman 37, 351"
+      ],
+      "comment": "The next step in a series: <span lang=\"la\">prīmum … deinde … tum</span>. <span lang=\"la\">Dein</span> is the short form, which Cicero notes is often said; in classical verse the ei of both makes one syllable (Lewis &amp; Short)."
+    },
+    {
+      "latin": "tum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "then, next; at that time",
+      "grammar": "adverb",
+      "evidence": [
+        "Verg. G. 4.187: <span lang=\"la\">tum tēcta petunt, tum corpora cūrant</span>"
+      ],
+      "comment": "Both “at that time” and “next”; in a series it often follows <span lang=\"la\">prīmum</span> or <span lang=\"la\">deinde</span>."
+    },
+    {
+      "latin": "posteā",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "afterwards, later",
+      "grammar": "adverb",
+      "evidence": [
+        "Caes. BG 1.21 (Lewis &amp; Short)"
+      ],
+      "comment": "Of a later time rather than the next step."
+    },
+    {
+      "latin": "inde",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "after that, thereupon; from then on",
+      "grammar": "adverb",
+      "evidence": [
+        "Liv. 1.2.3 (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "quid fit deinde?",
+      "english": "and then what happens?",
+      "source": "Plaut. Amph. 1098"
+    },
+    {
+      "latin": "dā mī bāsia mīlle, deinde centum, dein mīlle altera, dein secunda centum",
+      "english": "give me a thousand kisses, then a hundred, then another thousand, then a second hundred",
+      "source": "Catull. 5.7–9"
+    },
+    {
+      "latin": "Homō est prīmum īnfāns, deinde puer, tum adulēscēns, inde juvenis, posteā vir, dehinc senex, tandem silicernium.",
+      "english": "A person is first a baby, then a boy, then a youth, then a young man, then a man, then an old man, and at last a doddering ancient.",
+      "source": "Comen. OP 36"
+    }
+  ],
+  "related": [
+    "later",
+    "some-time-later",
+    "a-little-later"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/deinde\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: deinde</a> · <a href=\"https://logeion.uchicago.edu/tum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tum</a> · <a href=\"https://logeion.uchicago.edu/postea\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: postea</a> · <a href=\"https://logeion.uchicago.edu/inde\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: inde</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 37, 351, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-plautus, loci-catullus, loci-horatius, loci-vergilius, loci-comenius), checked against the editions named there.",
+    "Cicero (Or. 154) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

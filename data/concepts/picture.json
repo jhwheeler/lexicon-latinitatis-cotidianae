@@ -1,0 +1,96 @@
+{
+  "id": "picture",
+  "english": "picture",
+  "pos": "noun",
+  "also": [
+    "pictures",
+    "painting",
+    "illustration"
+  ],
+  "also_under": [
+    "domus-structura"
+  ],
+  "domain": "sermo",
+  "terms": [
+    {
+      "latin": "pictūra, pictūrae f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "picture, painting",
+      "evidence": [
+        "Cic. Verr. 2.4.1",
+        "Sen. Ep. 16.8",
+        "Traupman 360"
+      ],
+      "comment": "The household word: in the libellī the boy ‘reads’ a book by looking at its pictures, <span lang=\"la\">pictūrās spectāvit</span>.",
+      "notes": [
+        "pictura"
+      ]
+    },
+    {
+      "latin": "imāgō, imāginis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "image, likeness",
+      "evidence": [
+        "Verg. A. 8.730",
+        "Traupman 360"
+      ],
+      "comment": "A likeness of someone or something; the lexicon’s photo is <span lang=\"la\">imāgō phōtographica</span>."
+    },
+    {
+      "latin": "tabula picta",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a painting on a panel",
+      "evidence": [
+        "Cic. Brut. 261 (Lewis &amp; Short, s.v. <span lang=\"la\">tabula</span>)",
+        "M-O s.v. painting",
+        "Traupman 168"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Theodōrus librum ā patre accēpit, et ōre clausō, oculīs apertīs, pictūrās spectāvit.",
+      "english": "Theo took the book from Dad and, with his mouth shut and his eyes open, looked at the pictures.",
+      "source": "Libellus VI, <span lang=\"la\">Reditus: per Alpēs domum</span>"
+    },
+    {
+      "latin": "animum pictūrā pāscit inānī",
+      "english": "he feeds his heart on the empty picture",
+      "source": "Verg. A. 1.464"
+    },
+    {
+      "latin": "rērumque ignārus imāgine gaudet",
+      "english": "and, knowing nothing of what it shows, he delights in the picture",
+      "source": "Verg. A. 8.730"
+    }
+  ],
+  "notes": {
+    "pictura": {
+      "form": "pictūra",
+      "claim": "short i",
+      "against": "Traupman 360 <span lang=\"la\">pīctūra</span>",
+      "html": "Lewis &amp; Short leaves the vowel unmarked, as in <span lang=\"la\">pictus</span> and <span lang=\"la\">pictor</span>; de Vaan 465 sets Proto-Italic <em>*pikto-</em>, painted. The libellī write <span lang=\"la\">pictūrās</span>."
+    }
+  },
+  "related": [
+    "draw-picture",
+    "photo",
+    "book",
+    "paint"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/pictura\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pictura</a> · <a href=\"https://logeion.uchicago.edu/imago\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: imago</a> · <a href=\"https://logeion.uchicago.edu/tabula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tabula</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 168, 360. <a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. painting.",
+    "Michiel de Vaan, <em>Etymological Dictionary of Latin and the other Italic Languages</em> (2008), p. 465, s.v. pingō.",
+    "Vergil, A. 8.730, from the Latinitas loci collection (loci-vergilius); A. 1.464 as Lewis &amp; Short quotes it (s.v. <span lang=\"la\">pāscō</span>).",
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 9 November 2026. Examples marked “Libellus” quote those texts word for word."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

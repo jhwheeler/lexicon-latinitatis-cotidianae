@@ -1,0 +1,68 @@
+{
+  "id": "chapel",
+  "english": "chapel",
+  "pos": "noun",
+  "also": [
+    "oratory"
+  ],
+  "domain": "ecclesia",
+  "terms": [
+    {
+      "latin": "sacellum, sacellī n.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a small shrine; a chapel",
+      "evidence": [
+        "Ter. Ad. 576",
+        "Cic. Div. 1.104 (Lewis &amp; Short)",
+        "M-O s.v. chapel",
+        "Levi–Bini p. 13"
+      ],
+      "comment": "Classically a small place sacred to a god; Morgan–Owens finds it for a chapel in Dante and Egger."
+    },
+    {
+      "latin": "ōrātōrium, ōrātōriī n.",
+      "status": "alternative",
+      "period": "late",
+      "gloss": "a place of prayer, an oratory",
+      "evidence": [
+        "Vulg. Jdt. 9.1: <span lang=\"la\">Judith ingressa est ōrātōrium suum</span>",
+        "Aug. Ep. 109 (Lewis &amp; Short)"
+      ],
+      "comment": "Any place set aside for prayer, such as a room in a house or a monastery (M-O)."
+    },
+    {
+      "latin": "capella, capellae f.",
+      "status": "avoid",
+      "period": "medieval",
+      "gloss": "chapel",
+      "evidence": [
+        "M-O s.v. chapel, after Latham and Niermeyer"
+      ],
+      "comment": "Classically a little she-goat (<span lang=\"la\">īte domum saturae, venit Hesperus, īte capellae</span>, Verg. Ecl. 10.77). The medieval word for a chapel comes from <span lang=\"la\">cappa</span>, the cape of St Martin kept in such a shrine, and only looks the same; <span lang=\"la\">sacellum</span> says it in classical Latin."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "est ad hanc manum sacellum: ibi angiportum propter est",
+      "english": "on this side there’s a little shrine; right by it there’s an alley",
+      "source": "Ter. Ad. 576"
+    }
+  ],
+  "related": [
+    "church",
+    "monastery"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/sacellum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sacellum</a> · <a href=\"https://logeion.uchicago.edu/oratorius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: oratorius</a> · <a href=\"https://logeion.uchicago.edu/capella\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: capella</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. chapel. Enrico Levi and Arturo Bini, <em>Il latino come lingua viva</em> (1937), p. 13, s.v. cappella.",
+    "Terence checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (Kauer–Lindsay) and Parry’s text in the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-ranieri-eclogae), checked against the editions named there.",
+    "Vulgate quotations checked against the Clementine text (the <em>VulgClementine</em> file of the <a href=\"https://github.com/scrollmapper/bible_databases\" rel=\"noopener noreferrer\" target=\"_blank\">scrollmapper Bible databases</a>, the text the loci collection uses) (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

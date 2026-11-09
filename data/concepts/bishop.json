@@ -1,0 +1,77 @@
+{
+  "id": "bishop",
+  "english": "bishop",
+  "pos": "noun",
+  "domain": "ecclesia",
+  "terms": [
+    {
+      "latin": "episcopus, episcopī m.",
+      "status": "recommended",
+      "period": "late",
+      "evidence": [
+        "Vulg. Phil. 1.1",
+        "Amm. 15.7.7 (Lewis &amp; Short)",
+        "Traupman 280",
+        "M-O s.v. bishop",
+        "Levi–Bini p. 67"
+      ],
+      "comment": "Greek ἐπίσκοπος, an overseer; Cicero once calls himself one, in Greek (Att. 7.11, Lewis &amp; Short). The same word in East and West.",
+      "notes": [
+        "episcopus"
+      ]
+    },
+    {
+      "latin": "antistes, antistitis m.",
+      "status": "alternative",
+      "period": "late",
+      "gloss": "a bishop; classically a high priest",
+      "evidence": [
+        "Cod. Just. 1.3 (Lewis &amp; Short)",
+        "M-O s.v. bishop"
+      ],
+      "comment": "Classically the overseer of a temple, a high priest (Cic., Liv.); the Christian writers use it of a bishop."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "et vēnī Mediōlānium ad Ambrosium episcopum",
+      "english": "and I came to Milan, to Ambrose the bishop",
+      "source": "Aug. Conf. 5.13.23",
+      "notes": [
+        "mediolanium"
+      ]
+    }
+  ],
+  "notes": {
+    "episcopus": {
+      "form": "episcopus",
+      "claim": "short i",
+      "against": "Lewis &amp; Short <span lang=\"la\">ĕpīscŏpus</span>, taking the heavy syllable for a long vowel",
+      "html": "Greek ἐπίσκοπος, from ἐπί, with short ι, and σκοπός. Lewis &amp; Short leave the i unmarked in their own compounds <span lang=\"la\">chōrĕpiscŏpus</span>, <span lang=\"la\">cŏĕpiscŏpus</span> and <span lang=\"la\">pseudŏĕpiscŏpus</span>."
+    },
+    "mediolanium": {
+      "form": "Mediōlānium",
+      "claim": "long o",
+      "against": "the loci collection’s <span lang=\"la\">Mediolānium</span>",
+      "html": "Lewis &amp; Short <span lang=\"la\">Mĕdĭōlānum</span>."
+    }
+  },
+  "related": [
+    "priest",
+    "deacon",
+    "cathedral",
+    "church"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/episcopus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: episcopus</a> · <a href=\"https://logeion.uchicago.edu/antistes\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: antistes</a> · <a href=\"https://logeion.uchicago.edu/Mediolanum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: Mediolanum</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 280, checked against the searchable text of the book (9 November 2026).",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. bishop. Enrico Levi and Arturo Bini, <em>Il latino come lingua viva</em> (1937), p. 67, s.v. vescovo.",
+    "Quotations from the Latinitas loci collections (loci-augustinus), checked against the editions named there.",
+    "Vulgate quotations checked against the Clementine text (the <em>VulgClementine</em> file of the <a href=\"https://github.com/scrollmapper/bible_databases\" rel=\"noopener noreferrer\" target=\"_blank\">scrollmapper Bible databases</a>, the text the loci collection uses) (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

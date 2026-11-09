@@ -1,0 +1,107 @@
+{
+  "id": "health",
+  "english": "health",
+  "pos": "noun",
+  "also": [
+    "good health",
+    "bad health",
+    "be healthy",
+    "be well",
+    "look after your health"
+  ],
+  "domain": "corpus",
+  "terms": [
+    {
+      "latin": "valētūdō, valētūdinis f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "health, good or bad",
+      "evidence": [
+        "Cic. Fam. 14.8.1: <span lang=\"la\">valētūdinem tuam velim cūrēs dīligentissimē</span>",
+        "Traupman 64"
+      ],
+      "comment": "On its own it can mean either; <span lang=\"la\">bona valētūdō</span> is good health, <span lang=\"la\">adversa, mala, īnfirma valētūdō</span> ill health (Traupman 64). How someone is goes with the verb: <span lang=\"la\">valeō</span>, I’m well; <span lang=\"la\">valētūdinem cūrāre</span>, to look after one’s health."
+    },
+    {
+      "latin": "valeō, valēre, valuī, valitum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "be well, be in good health",
+      "evidence": [
+        "Cic. Fam. 14.8.1: <span lang=\"la\">sī valēs, bene est, ego valeō</span>"
+      ],
+      "comment": "The verb Latin prefers: <span lang=\"la\">ut valēs?</span>, how are you?; <span lang=\"la\">cūrā ut valeās</span>, look after yourself."
+    },
+    {
+      "latin": "sānitās, sānitātis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "health, soundness",
+      "evidence": [
+        "Plaut. Merc. 678–679: <span lang=\"la\">salūtem et sānitātem nostrae familiae</span>",
+        "Cic. Tusc. 4.30 (Lewis &amp; Short)"
+      ],
+      "comment": "Soundness of body; in Cicero also soundness of mind."
+    },
+    {
+      "latin": "sānus, sāna, sānum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "healthy, sound, well (of a person)",
+      "evidence": [
+        "Hor. Ep. 1.1.108: <span lang=\"la\">praecipuē sānus, nisi cum pītuīta molesta est</span>"
+      ],
+      "comment": "Food that is good for you is <span lang=\"la\">salūbris</span> (see healthy)."
+    },
+    {
+      "latin": "salūs, salūtis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "health, welfare, safety",
+      "evidence": [
+        "Cato Agr. 141.3: <span lang=\"la\">bonam salūtem valētūdinemque</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Wider than <span lang=\"la\">valētūdō</span>: wellbeing and safety; also the greeting of a letter (<span lang=\"la\">salūtem dīcere</span>)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "sī valēs, bene est, ego valeō. valētūdinem tuam velim cūrēs dīligentissimē",
+      "english": "if you are well, good; I am well. Please look after your health with the greatest care",
+      "source": "Cic. Fam. 14.8.1"
+    },
+    {
+      "latin": "valētūdō sustentātur nōtitiā suī corporis et observātiōne, quae rēs aut prōdesse soleant aut obesse",
+      "english": "health is kept up by knowing one’s own body and noticing what usually does it good or harm",
+      "source": "Cic. Off. 2.86"
+    },
+    {
+      "latin": "ipse melior fīō, prīmum valētūdine, quam intermissīs exercitātiōnibus āmīseram",
+      "english": "I am getting better myself: first in health, which I had lost by giving up my exercise",
+      "source": "Cic. Fam. 9.18.3"
+    },
+    {
+      "latin": "nōn est vīvere, sed valēre vīta est",
+      "english": "life is not just being alive, but being well",
+      "source": "Mart. 6.70.15"
+    }
+  ],
+  "related": [
+    "healthy",
+    "ill",
+    "i-dont-feel-well",
+    "body",
+    "life"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/valetudo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: valetudo</a> · <a href=\"https://logeion.uchicago.edu/valeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: valeo</a> · <a href=\"https://logeion.uchicago.edu/sanitas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sanitas</a> · <a href=\"https://logeion.uchicago.edu/sanus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sanus</a> · <a href=\"https://logeion.uchicago.edu/salus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: salus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 64, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-horatius, loci-martialis), checked against the editions named there.",
+    "Cicero, Fam. 9.18 and 14.8 and <em>De officiis</em> 2, and Plautus’ <em>Mercator</em>, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

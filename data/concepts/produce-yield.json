@@ -1,0 +1,93 @@
+{
+  "id": "produce-yield",
+  "english": "produce",
+  "sense": "of land and plants: yield",
+  "pos": "verb",
+  "also": [
+    "yield",
+    "bear fruit",
+    "bring forth"
+  ],
+  "domain": "verba",
+  "also_under": [
+    "natura"
+  ],
+  "terms": [
+    {
+      "latin": "ferō, ferre, tulī, lātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "bear, yield (of land, trees, a country)",
+      "grammar": "verb, irregular",
+      "evidence": [
+        "Cic. Leg. 2.67: <span lang=\"la\">quae autem terra frūgēs ferre … possit</span>",
+        "Ov. Met. 1.109: <span lang=\"la\">frūgēs tellūs inarāta ferēbat</span>"
+      ],
+      "comment": "The land or the tree is the subject: <span lang=\"la\">ager frūmentum fert</span>; a fertile field is <span lang=\"la\">ferāx</span>. Of people making goods, Latin says <span lang=\"la\">facere</span> (see make)."
+    },
+    {
+      "latin": "efferō, efferre, extulī, ēlātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "bring forth, yield (of land)",
+      "grammar": "verb, irregular",
+      "evidence": [
+        "Cic. Off. 1.48: <span lang=\"la\">agrōs fertilēs, quī multō plūs efferunt quam accēpērunt</span>"
+      ]
+    },
+    {
+      "latin": "gignō, gignere, genuī, genitum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "produce (of a land, the sea, nature)",
+      "evidence": [
+        "Tac. Agr. 12.6: <span lang=\"la\">gignit et Ōceanus margarīta</span>",
+        "Sen. Ep. 18.14: <span lang=\"la\">immodica īra gignit īnsāniam</span>"
+      ]
+    },
+    {
+      "latin": "pariō, parere, peperī, partum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "bring forth, produce",
+      "evidence": [
+        "Cic. N. D. 1.4: <span lang=\"la\">frūgēs et reliqua, quae terra pariat</span>",
+        "Ov. Ars 1.757: <span lang=\"la\">nec tellūs eadem parit omnia</span>"
+      ],
+      "comment": "Properly of giving birth; also of the earth bringing forth crops."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "mox etiam frūgēs tellūs inarāta ferēbat",
+      "english": "soon the earth, unploughed, produced crops as well",
+      "source": "Ov. Met. 1.109"
+    },
+    {
+      "latin": "an imitārī agrōs fertilēs, quī multō plūs efferunt quam accēpērunt?",
+      "english": "or should we copy fertile fields, which produce far more than they received?",
+      "source": "Cic. Off. 1.48"
+    },
+    {
+      "latin": "nec tellūs eadem parit omnia; vītibus illa convenit, haec oleīs; hāc bene farra virent",
+      "english": "nor does the same soil produce everything: one suits vines, another olives; in this one the wheat grows green",
+      "source": "Ov. Ars 1.757–758"
+    }
+  ],
+  "related": [
+    "produce-food",
+    "produce-bring-out",
+    "make",
+    "harvest"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/fero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fero</a> · <a href=\"https://logeion.uchicago.edu/effero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: effero</a> · <a href=\"https://logeion.uchicago.edu/gigno\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gigno</a> · <a href=\"https://logeion.uchicago.edu/pario\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pario</a>",
+    "Quotations from the Latinitas loci collections (loci-ovidius, loci-cicero-philosophica, loci-tacitus, loci-seneca-epistulae), checked against the editions named there.",
+    "Cicero, <em>De legibus</em> 2 and <em>De natura deorum</em> 1, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "id": "live-dwell",
+  "english": "live",
+  "sense": "have one’s home",
+  "pos": "verb",
+  "also": [
+    "dwell",
+    "reside",
+    "inhabit",
+    "where do you live?",
+    "live together"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "habitō, habitāre, habitāvī, habitātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "live, dwell",
+      "evidence": [
+        "Ter. Eun. 107: <span lang=\"la\">ea habitābat Rhodī</span>",
+        "Cic. Cael. 17: <span lang=\"la\">in aediculīs habitat</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Where one lives goes in the locative (<span lang=\"la\">Rhodī, Rōmae, rūrī</span>) or with <span lang=\"la\">in</span> and the ablative; with whom, <span lang=\"la\">cum</span> or <span lang=\"la\">apud</span> (Lewis &amp; Short)."
+    },
+    {
+      "latin": "vīvō, vīvere, vīxī, vīctum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "live (somewhere, in some way)",
+      "evidence": [
+        "Cic. Att. 14.20.4: <span lang=\"la\">vīvit habitatque cum Balbō</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Of the life one leads in a place: <span lang=\"la\">Rhodī vīvere</span> (Cic. Fam. 4.7.4, Lewis &amp; Short)."
+    },
+    {
+      "latin": "incolō, incolere, incoluī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "inhabit (a land, a region)",
+      "evidence": [
+        "Caes. BG 1.1.1: <span lang=\"la\">quārum ūnam incolunt Belgae</span>"
+      ],
+      "comment": "Of a people and its country; in Cicero always with an accusative (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Samia mihi māter fuit: ea habitābat Rhodī.",
+      "english": "My mother came from Samos; she lived on Rhodes.",
+      "source": "Ter. Eun. 107"
+    },
+    {
+      "latin": "Ubi habitat? — Nē id quidem. — Ubi vīdistī? — In viā.",
+      "english": "Where does she live? — I don’t even know that. — Where did you see her? — In the street.",
+      "source": "Ter. Eun. 322"
+    },
+    {
+      "latin": "nōs enim ita philologī sumus ut vel cum fabrīs habitāre possīmus",
+      "english": "for we are such scholars that we could even live with the builders in the house",
+      "source": "Cic. Q. fr. 2.8.3"
+    }
+  ],
+  "related": [
+    "live-be-alive",
+    "house",
+    "neighbour",
+    "village"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/habito\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: habito</a> · <a href=\"https://logeion.uchicago.edu/vivo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vivo</a> · <a href=\"https://logeion.uchicago.edu/incolo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: incolo</a>",
+    "Quotations from the Latinitas loci collections (loci-cicero-epistulae), checked against the editions named there.",
+    "Terence’s <em>Eunuchus</em> and Caesar, <em>Gallic War</em> 1, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> and the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

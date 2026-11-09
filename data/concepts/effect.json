@@ -1,0 +1,88 @@
+{
+  "id": "effect",
+  "english": "effect",
+  "sense": "what one thing does to another",
+  "pos": "noun",
+  "also": [
+    "have an effect on",
+    "have no effect",
+    "impact"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "vīs, vīs f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "power, force; the effect of a thing",
+      "grammar": "noun, third declension, irregular: accusative vim, ablative vī; plural vīrēs, strength",
+      "evidence": [
+        "Cic. Div. 1.73: <span lang=\"la\">quod ostentum habuit hanc vim, ut</span> (Lewis &amp; Short)",
+        "Cic. Div. 2.47: <span lang=\"la\">vim et effectum</span>"
+      ],
+      "comment": "Latin speaks of the power a thing has: <span lang=\"la\">vim habēre</span>, to have an effect; the effect of a medicine or a herb is its <span lang=\"la\">vīs</span>. What a thing does to someone is often a verb: <span lang=\"la\">afficere, movēre</span>."
+    },
+    {
+      "latin": "effectus, effectūs m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "effect, working",
+      "evidence": [
+        "Cic. Tusc. 2.3: <span lang=\"la\">effectus ēloquentiae est audientium approbātiō</span> (Lewis &amp; Short)",
+        "Cic. Div. 2.47: <span lang=\"la\">vim et effectum</span>"
+      ],
+      "comment": "In Cicero mostly the carrying out of something; of the effect it has, beside <span lang=\"la\">vīs</span>."
+    },
+    {
+      "latin": "afficiō, afficere, affēcī, affectum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "affect, have an effect on (someone)",
+      "evidence": [
+        "Cic. Att. 5.20.6: <span lang=\"la\">nūllā umquam voluptāte tantā sum adfectus</span>"
+      ],
+      "comment": "With the ablative of what one is made to feel: <span lang=\"la\">aliquem laetitiā, dolōre afficere</span>."
+    },
+    {
+      "latin": "moveō, movēre, mōvī, mōtum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "move, make an impression on",
+      "evidence": [
+        "Phaedr. 3.6.4: <span lang=\"la\">verbīs nōn moveor tuīs</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "genera herbārum … quārum causam ignōrārēs, vim et effectum vidērēs",
+      "english": "kinds of herbs … whose cause you did not know, but whose power and effect you could see",
+      "source": "Cic. Div. 2.47"
+    },
+    {
+      "latin": "cōnsuētūdō enim labōrum perpessiōnem dolōrum efficit faciliōrem",
+      "english": "for being used to hard work makes pain easier to bear",
+      "source": "Cic. Tusc. 2.35"
+    },
+    {
+      "latin": "respondit illa: verbīs nōn moveor tuīs",
+      "english": "she answered: your words have no effect on me",
+      "source": "Phaedr. 3.6.4"
+    }
+  ],
+  "related": [
+    "result",
+    "cause",
+    "strength"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/vis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vis</a> · <a href=\"https://logeion.uchicago.edu/effectus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: effectus</a> · <a href=\"https://logeion.uchicago.edu/afficio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: afficio</a> · <a href=\"https://logeion.uchicago.edu/moveo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: moveo</a>",
+    "Quotations from the Latinitas loci collections (loci-cicero-philosophica, loci-phaedrus), checked against the editions named there.",
+    "Cicero, <em>De divinatione</em> 1–2 (whose text misprints <span lang=\"la\">vini</span> for <span lang=\"la\">vim</span> at 2.47), <em>Tusculans</em> 2 and Att. 5.20, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

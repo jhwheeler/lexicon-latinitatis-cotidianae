@@ -1,0 +1,80 @@
+{
+  "id": "quality-trait",
+  "english": "quality",
+  "sense": "a characteristic, a trait",
+  "pos": "noun",
+  "also": [
+    "characteristic",
+    "trait",
+    "attribute",
+    "good qualities"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "proprietās, proprietātis f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a property, a quality peculiar to a thing",
+      "evidence": [
+        "Cic. Ac. 2.56: <span lang=\"la\">singulārum rērum singulās proprietātēs esse</span>"
+      ]
+    },
+    {
+      "latin": "virtūs, virtūtis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a good quality, an excellence; in the plural, someone’s good qualities",
+      "evidence": [
+        "Cic. Mur. 23: <span lang=\"la\">virtūtēs continentiae, gravitātis, jūstitiae, fideī</span> (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "proprium, propriī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "what is characteristic of someone or something",
+      "evidence": [
+        "Tac. Agr. 42.4: <span lang=\"la\">proprium hūmānī ingeniī est ōdisse quem laeserīs</span>"
+      ],
+      "comment": "<span lang=\"la\">proprium est</span> + genitive, it is characteristic of."
+    },
+    {
+      "latin": "quālitās, quālitātis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a quality, a property (in philosophy)",
+      "evidence": [
+        "Cic. Ac. 1.25"
+      ],
+      "comment": "Cicero coined it for Greek ποιότης, a philosophers’ word even in Greek, as he says; frequent only in later prose (Lewis &amp; Short). It does not by itself mean good quality."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "singulārum rērum singulās proprietātēs esse",
+      "english": "that each single thing has its own particular qualities",
+      "source": "Cic. Ac. 2.56"
+    },
+    {
+      "latin": "quālitātēs igitur appellāvī quās ποιότητας Graecī vocant, quod ipsum apud Graecōs nōn est vulgī verbum sed philosophōrum",
+      "english": "so I have called “qualities” what the Greeks call <em>poiotētes</em>; and even among the Greeks that is not a word of ordinary people but of philosophers",
+      "source": "Cic. Ac. 1.25"
+    }
+  ],
+  "related": [
+    "quality-grade",
+    "nature-character",
+    "kind"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/proprietas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: proprietas</a> · <a href=\"https://logeion.uchicago.edu/virtus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: virtus</a> · <a href=\"https://logeion.uchicago.edu/proprius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: proprius</a> · <a href=\"https://logeion.uchicago.edu/qualitas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: qualitas</a>",
+    "Cicero, <em>Academica</em> 1 and 2 (Lucullus), checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Citations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them and have not been checked against an edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

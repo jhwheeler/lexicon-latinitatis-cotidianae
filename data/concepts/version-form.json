@@ -1,0 +1,60 @@
+{
+  "id": "version-form",
+  "english": "version",
+  "sense": "a form or edition of something",
+  "pos": "noun",
+  "also": [
+    "edition",
+    "new version",
+    "latest version",
+    "software version"
+  ],
+  "also_under": [
+    "computatra"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "ēditiō, ēditiōnis f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "an edition; a version (of a book or text; by extension of a program)",
+      "evidence": [
+        "Quint. 5.11.40: <span lang=\"la\">nōn in omnī ēditiōne reperītur</span>",
+        "M-O s.v. edition"
+      ],
+      "comment": "Classically the publishing of a book, and an edition of it (Quint., Plin. Ep.); its use for a version of a program is modern."
+    },
+    {
+      "latin": "fōrma, fōrmae f.",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "a form; a version (of a text, a draft)",
+      "evidence": [
+        "M-O s.v. draft: version (Hofmann, 1698)"
+      ],
+      "comment": "Classically shape, form."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Megariōs ab Athēniēnsibus, cum dē Salamīne contenderent, victōs Homērī versū, quī tamen ipse nōn in omnī ēditiōne reperītur",
+      "english": "that the Megarians, in their dispute with the Athenians over Salamis, were beaten by a line of Homer, a line not found, however, in every edition",
+      "source": "Quint. 5.11.40"
+    }
+  ],
+  "related": [
+    "version-account",
+    "toy-version"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/editio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: editio</a> · <a href=\"https://logeion.uchicago.edu/forma\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: forma</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. edition; draft: version.",
+    "Quintilian 5, checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "security-pledge",
+  "english": "security",
+  "sense": "something pledged for a loan or a debt",
+  "pos": "noun",
+  "also": [
+    "collateral",
+    "pledge",
+    "security for a loan",
+    "pawn"
+  ],
+  "domain": "pecunia",
+  "terms": [
+    {
+      "latin": "pignus, pignoris n.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a pledge, security, a pawn",
+      "evidence": [
+        "Ter. Ph. 661: <span lang=\"la\">ager oppositust pignorī</span>",
+        "Tac. H. 3.65: <span lang=\"la\">rem alicujus pignorī accipere</span> (Lewis &amp; Short)"
+      ],
+      "comment": "To pledge something is <span lang=\"la\">pignorī dare</span> or <span lang=\"la\">oppōnere</span>; to take it as security, <span lang=\"la\">pignorī accipere</span>."
+    },
+    {
+      "latin": "cautiō, cautiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a bond, a written guarantee (in law)",
+      "evidence": [
+        "Cic. Fam. 7.18.1: <span lang=\"la\">Graeculam tibi mīsī cautiōnem chīrographī meī</span> (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ager oppositust pignorī ob decem minās",
+      "english": "the farm is pledged as security for ten minae",
+      "source": "Ter. Ph. 661–662"
+    }
+  ],
+  "related": [
+    "deposit",
+    "security",
+    "buy-on-credit"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/pignus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pignus</a> · <a href=\"https://logeion.uchicago.edu/cautio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cautio</a>",
+    "Terence checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a>, which follow the Oxford text.",
+    "Citations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them and have not been checked against an edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

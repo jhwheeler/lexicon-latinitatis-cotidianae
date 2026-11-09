@@ -1,0 +1,64 @@
+{
+  "id": "mineral-water",
+  "english": "mineral water",
+  "pos": "noun",
+  "domain": "culina",
+  "terms": [
+    {
+      "latin": "aqua medicāta",
+      "status": "recommended",
+      "period": "classical",
+      "evidence": [
+        "Sen. <em>N.Q.</em> 3.25.9",
+        "Plin. <em>N.H.</em> 2.222 (<span lang=\"la\">medicātās aquās</span>)",
+        "M-O s.v. mineral water"
+      ]
+    },
+    {
+      "latin": "aqua minerālis",
+      "status": "alternative",
+      "period": "modern",
+      "evidence": [
+        "Traupman 72"
+      ],
+      "comment": "The modern term."
+    },
+    {
+      "latin": "aqua acidula",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "acidulous mineral water",
+      "evidence": [
+        "Plin. <em>N.H.</em> 2.230; cf. 31.9"
+      ],
+      "comment": "Lewis &amp; Short: “mineral water”. Pliny names such springs; he does not describe it as fizzy."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Lyncēstis aqua quae vocātur acidula vīnī modō temulentōs facit",
+      "english": "the Lyncestian water called acidula makes people drunk like wine",
+      "source": "Plin. <em>N.H.</em> 2.230; cf. 31.9"
+    }
+  ],
+  "related": [
+    "sparkling-water",
+    "still-water",
+    "spring-water",
+    "tap-water"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.org/medico\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: medico</a> · <a href=\"https://logeion.org/acidulus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: acidulus</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. mineral water.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 72.",
+    "Pliny passages checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "replaces": [
+    "entry-293"
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

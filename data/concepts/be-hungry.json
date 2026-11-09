@@ -3,14 +3,17 @@
   "english": "be hungry",
   "pos": "verb",
   "also": [
-    "hungry"
+    "hungry",
+    "I’m hungry",
+    "starving"
   ],
   "domain": "culina",
   "terms": [
     {
       "latin": "ēsuriō, ēsurīre",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "grammar": "verb, fourth conjugation"
     }
   ],
   "phrases": [
@@ -18,19 +21,41 @@
       "latin": "Ēsurīs?",
       "english": "Are you hungry?",
       "source": "composed"
+    },
+    {
+      "latin": "Ēsuriō hercle.",
+      "english": "I’m starving, really! (Said before breakfast.)",
+      "source": "Plaut. <em>Cas.</em> 801"
+    },
+    {
+      "latin": "Jamdūdum ēsuriō, tata!",
+      "english": "I’ve been hungry for ages, Dad!",
+      "source": "Libellus I, <span lang=\"la\">Iter in Lūsitāniam</span>"
+    },
+    {
+      "latin": "Jam dūdum animus est in patinīs.",
+      "english": "My mind has been on the dishes for ages (said while waiting at the oven)",
+      "source": "Ter. <em>Eun.</em> 816"
     }
   ],
   "related": [
     "hunger",
     "be-thirsty",
-    "more"
+    "more",
+    "no-thank-you",
+    "may-it-turn-out-well",
+    "appetite"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/esurio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: esurio</a>",
-    "The example sentence marked “composed” is ours."
+    "The example sentence marked “composed” is ours.",
+    "These are quotations, and their sources are given. Libellī II and IV and the back-matter lists of “<span lang=\"la\">locī memoriā tenendī</span>” suggest when to use them with Theo.",
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
   ],
   "replaces": [
-    "entry-80"
+    "entry-80",
+    "entry-261",
+    "libelli-261"
   ],
   "review": {
     "status": "draft",

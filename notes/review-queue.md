@@ -6,12 +6,12 @@ Records: `https://jhwheeler.github.io/lexicon-latinitatis-cotidianae/c/<id>.html
 
 ## Vowel lengths that want a house ruling
 
-- ***heri* or *herī*.** `yesterday` writes *heri*: de Vaan 283 explains it as shortened from *herī*, which Terence has once. `yesterday-morning`, `yesterday-evening` and an example in `courier` write *herī*, as Traupman 89 and the readers do. (#54)
-- ***re-* before *s* and a consonant.** `answer` (*respondeō, respōnsum*) and `remain-stay` (*restō*) write a short *re-*, after de Vaan 516. Lewis & Short's *rē-* marks the heavy syllable, not a long vowel. (#56, #60)
-- ***sēsquihōra* or *sesquihōra*.** De Vaan derives *sēsque-* from *\*sēmis-que*, and Traupman 87 prints *sēsqui-*. The readers and Lewis & Short leave the vowel unmarked. (#40)
+- ***heri* or *herī*.** `yesterday` writes *heri*: de Vaan 283 explains it as iambic shortening of an older *herī*, and takes the one long *herī* in Terence for an analogy with *domī* and *rūrī*. `yesterday-morning`, `yesterday-evening` and an example in `courier` write *herī*, as Traupman 89 and the readers do. (#54)
+- ***re-* before *s* and a consonant.** The lexicon writes a short *re-* in all of these (*respondeō, respōnsum* in `answer`, *restō* in `remain-be-left`). Lewis & Short writes *rē-* in every one of them (64 headwords), but leaves *ob-sto, per-sto, sub-sto* and *di-spicio* unmarked, so its macron seems meant as a long vowel, not as the mark of a heavy syllable that #56 and #60 took it for. For the short vowel: de Vaan 516 derives the prefix from *\*wre*, and Traupman writes *respondēre*. But de Vaan does not discuss this position, and verse cannot decide it. (#56, #60)
+- ***sēsquihōra* or *sesquihōra*.** De Vaan (s.v. *sēmi-*) derives *sēsque-* from *\*sēmis-que*, beside *sēstertius* and *sēlībra*, and Traupman 87 prints *sēsqui-*. Lewis & Short gives the same derivation but leaves the vowel unmarked, as the readers do. (#40)
 - **Lachmann's law.**
   - *frāctus* and *frāctūra* are written long (`broken`, `fracture`; #57, #60), and so are *dēlēctus* and *ēlēctiō* (#65).
-  - *contractus* and *pactum* are written short (`contract`, `agreement`; #61). The short *pactum* fits de Vaan's root *\*pak-*, but *trahō* has a voiced root, so *trāctus* may be due.
+  - *contractus* and *pactum* are written short (`contract`, `agreement`; #61). Both fit the law as it is usually stated: *pactum* belongs to *pacīscor*, whose root *\*pak-* ends in a voiceless stop, and de Vaan 627 gives *trahō* a root ending in an aspirate (*\*trHgʰ-*), which the law does not lengthen (*vehō, vectus*).
 - **Final *o*.** *aliquandō*, *immō*, *porrō* and *quandō* are written long, after de Vaan; *aliquandō* may want a ruling of its own. (#53)
 - ***coërceō*** is written with a diaeresis, like the house's *āër* (`control-restrain`). (#60)
 - **Greek words.**

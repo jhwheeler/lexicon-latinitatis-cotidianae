@@ -3,12 +3,50 @@
   "english": "bark",
   "sense": "of a dog",
   "pos": "verb",
+  "also": [
+    "woof",
+    "woof woof",
+    "woof-woof",
+    "bow-wow",
+    "bow wow"
+  ],
   "domain": "natura",
   "terms": [
     {
       "latin": "lātrō, lātrāre",
       "status": "recommended",
       "period": "classical"
+    },
+    {
+      "latin": "bau bau",
+      "status": "alternative",
+      "period": "ours",
+      "grammar": "interjection",
+      "gloss": "woof woof",
+      "comment": "No ancient interjection for a bark is known; <span lang=\"la\">bau</span> is the sound in Lucretius’s <span lang=\"la\">baubārī</span> (below)."
+    },
+    {
+      "latin": "baubor, baubārī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "bark softly, bay",
+      "register": "vōx rāra: Lucr.",
+      "evidence": [
+        "Lucr. 5.1071 (Lewis &amp; Short)"
+      ],
+      "comment": "Of dogs left alone in an empty house; Lewis &amp; Short sets it against <span lang=\"la\">lātrāre</span>, to bark angrily."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "heus, inquit, linguam vīs meam praeclūdere, nē lātrem prō rē dominī?",
+      "english": "“Hey,” he said, “do you want to stop my mouth, so that I won’t bark to guard my master’s goods?”",
+      "source": "Phaedr. 1.23.5–6"
+    },
+    {
+      "latin": "Canis lātrat: bau bau!",
+      "english": "The dog’s barking: woof woof!",
+      "source": "composed"
     }
   ],
   "related": [
@@ -17,7 +55,9 @@
     "howl"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/latro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: latro</a>"
+    "<a href=\"https://logeion.uchicago.edu/latro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: latro</a> · <a href=\"https://logeion.uchicago.edu/baubor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: baubor</a>",
+    "Phaedrus from the Latinitas loci collection (loci-phaedrus).",
+    "The example sentence marked “composed” is ours."
   ],
   "review": {
     "status": "draft",

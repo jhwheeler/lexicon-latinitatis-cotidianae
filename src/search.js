@@ -144,7 +144,9 @@
       const rank = line => line.kind === 'Definition' ? 0 : line.kind === 'Source note' ? 2 : 1;
       matching.forEach(item => {
         item.matches = item.lines.filter(line => line.text.includes(query)).sort((a, b) => rank(a) - rank(b));
-        item.rank = item.matches[0]?.kind === 'Definition' ? 0 : item.heading.includes(query) ? 1 : item.matches.length ? 2 : 3;
+        // A definition under a matching headword first, then other definitions, then the rest.
+        const definition = item.matches[0]?.kind === 'Definition', heading = item.heading.includes(query);
+        item.rank = definition && heading ? 0 : definition ? 1 : heading ? 2 : item.matches.length ? 3 : 4;
       });
       matching.sort((a, b) => a.rank - b.rank || a.order - b.order);
       const fragment = document.createDocumentFragment();

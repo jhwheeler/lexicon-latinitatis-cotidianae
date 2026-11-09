@@ -26,7 +26,7 @@ after(async () => { await browser?.close(); });
 test('pyjama shows the matching lemma first, with focused text and expandable context', async () => {
   await search('pyjama');
   const first = page.locator('.search-result').first();
-  assert.equal(await first.locator('h3').textContent(), 'synthesis dormītōria');
+  assert.equal(await first.locator('h3').textContent(), 'vestis nocturna');
   assert.equal(await first.getAttribute('data-result-for'), 'c-pyjamas');
   assert.equal(await page.locator('.search-result').count(), 6);
   assert.match(await first.locator('.search-snippets').textContent(), /pyjamas/);
@@ -139,7 +139,7 @@ test('phone and dark layouts keep matching text usable without horizontal overfl
   await page.setViewportSize({ width: 390, height: 844 });
   await page.emulateMedia({ colorScheme: 'dark' });
   await search('pyjama');
-  assert.equal(await page.locator('.search-result').first().locator('h3').textContent(), 'synthesis dormītōria');
+  assert.equal(await page.locator('.search-result').first().locator('h3').textContent(), 'vestis nocturna');
   await page.locator('.search-result').first().locator('.search-context > summary').click();
   await page.locator('.search-result').first().locator('.search-context .entry-body').waitFor();
   assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);

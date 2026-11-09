@@ -1,0 +1,70 @@
+{
+  "id": "repent",
+  "english": "repent",
+  "pos": "verb",
+  "also": [
+    "repentance",
+    "be sorry for one’s sins"
+  ],
+  "domain": "ecclesia",
+  "terms": [
+    {
+      "latin": "paenitentiam agere",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "repent",
+      "evidence": [
+        "Curt. 8.6.23 (Lewis &amp; Short)",
+        "Plin. Ep. 7.10.3 (Lewis &amp; Short)",
+        "Quint. 9.3.12 (Lewis &amp; Short)",
+        "Vulg. Mt. 3.2"
+      ],
+      "comment": "Post-Augustan prose (Curtius, Pliny), and the Vulgate’s <span lang=\"la\">Poenitentiam agite</span>, in the Clementine’s spelling. Repentance is <span lang=\"la\">paenitentia</span> (Liv., Tac.)."
+    },
+    {
+      "latin": "paenitet, paenitēre, paenituit",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "repent of (impersonal)",
+      "evidence": [
+        "Publil. I 42",
+        "Vulg. Lc. 17.4"
+      ],
+      "comment": "Impersonal: <span lang=\"la\">mē peccātī paenitet</span>, I repent of my sin, with the accusative of the person and the genitive of the thing (see I’m sorry)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Poenitentiam agite: appropinquāvit enim rēgnum caelōrum.",
+      "english": "Repent, for the kingdom of heaven is at hand.",
+      "source": "Vulg. Mt. 4.17"
+    },
+    {
+      "latin": "Imprūdēns peccat, quem post factī paenitet.",
+      "english": "He who is sorry afterwards did wrong without thinking.",
+      "source": "Publil. I 42"
+    },
+    {
+      "latin": "piget, pudēscit, paenitet",
+      "english": "we are vexed, ashamed and sorry (the morning’s regret)",
+      "source": "Prud. Cath. 2.26"
+    }
+  ],
+  "related": [
+    "sin",
+    "forgive",
+    "forgiveness",
+    "confession",
+    "im-sorry"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/paenitentia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: paenitentia</a> · <a href=\"https://logeion.uchicago.edu/paeniteo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: paeniteo</a>",
+    "Quotations from the Latinitas loci collections (loci-publilius, loci-prudentius), checked against the editions named there.",
+    "Vulgate verses checked against the Clementine Vulgate (CrossWire <em>VulgClementine</em>, via the <a href=\"https://github.com/scrollmapper/bible_databases\" rel=\"noopener noreferrer\" target=\"_blank\">scrollmapper <em>bible_databases</em></a> repository) and Hetzenauer’s edition, in Clementine spelling."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "id": "baptism",
+  "english": "baptism",
+  "pos": "noun",
+  "also": [
+    "christening",
+    "baptisms"
+  ],
+  "domain": "ecclesia",
+  "terms": [
+    {
+      "latin": "baptisma, baptismatis n.",
+      "status": "recommended",
+      "period": "late",
+      "gloss": "baptism",
+      "evidence": [
+        "Vulg. Eph. 4.5",
+        "Prud. Psych. 103 (Lewis &amp; Short)",
+        "M-O s.v. baptism"
+      ],
+      "comment": "Greek βάπτισμα, a dipping; the Church’s word from the Vulgate and the Fathers on (Lewis &amp; Short)."
+    },
+    {
+      "latin": "baptismus, baptismī m.",
+      "status": "alternative",
+      "period": "late",
+      "gloss": "baptism",
+      "evidence": [
+        "Vulg. Mc. 11.30 (Lewis &amp; Short)",
+        "Cod. Th. 16.6.1 (Lewis &amp; Short)"
+      ],
+      "comment": "A parallel form; Tertullian and the Vulgate also have the neuter <span lang=\"la\">baptismum</span> (Lewis &amp; Short)."
+    },
+    {
+      "latin": "lavācrum, lavācrī n.",
+      "status": "alternative",
+      "period": "late",
+      "gloss": "the washing of baptism, the font",
+      "evidence": [
+        "Vulg. Tit. 3.5",
+        "M-O s.v. baptism"
+      ],
+      "comment": "Classically a bath; Paul’s <span lang=\"la\">lavācrum regenerātiōnis</span>, the washing of new birth; <span lang=\"la\">sacrum lavācrum</span> in Morgan–Owens."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Ūnus Dominus, ūna fidēs, ūnum baptisma.",
+      "english": "One Lord, one faith, one baptism.",
+      "source": "Vulg. Eph. 4.5"
+    },
+    {
+      "latin": "per lavācrum regenerātiōnis et renovātiōnis Spīritūs Sānctī",
+      "english": "through the washing of new birth and renewal by the Holy Spirit",
+      "source": "Vulg. Tit. 3.5"
+    }
+  ],
+  "related": [
+    "baptize",
+    "godfather",
+    "godmother",
+    "godchild",
+    "epiphany"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/baptisma\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: baptisma</a> · <a href=\"https://logeion.uchicago.edu/baptismus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: baptismus</a> · <a href=\"https://logeion.uchicago.edu/lavacrum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lavacrum</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. baptism.",
+    "Vulgate verses checked against the Clementine Vulgate (CrossWire <em>VulgClementine</em>, via the <a href=\"https://github.com/scrollmapper/bible_databases\" rel=\"noopener noreferrer\" target=\"_blank\">scrollmapper <em>bible_databases</em></a> repository) and Hetzenauer’s edition, in Clementine spelling."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

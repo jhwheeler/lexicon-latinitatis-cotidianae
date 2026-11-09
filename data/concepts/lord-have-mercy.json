@@ -1,0 +1,67 @@
+{
+  "id": "lord-have-mercy",
+  "english": "Lord, have mercy",
+  "pos": "phrase",
+  "also": [
+    "Lord have mercy",
+    "Kyrie eleison",
+    "Kyrie"
+  ],
+  "domain": "ecclesia",
+  "terms": [
+    {
+      "latin": "Miserēre nostrī, Domine",
+      "status": "recommended",
+      "period": "late",
+      "gloss": "Have mercy on us, Lord",
+      "evidence": [
+        "Vulg. Ps. 122 (123), 3",
+        "Brev. Rōm., Tē Deum 27 (Latinitas <span lang=\"la\">Precēs</span>)"
+      ],
+      "comment": "<span lang=\"la\">misereor</span> takes the genitive: <span lang=\"la\">miserēre meī</span>, have mercy on me; <span lang=\"la\">miserēre nōbīs</span> in the Glōria. The response of the litanies in both churches."
+    },
+    {
+      "latin": "Kyrie, eleison",
+      "status": "alternative",
+      "period": "late",
+      "gloss": "Lord, have mercy (in Greek)",
+      "evidence": [
+        "Miss. Rōm., <span lang=\"la\">Ōrdō Missae</span>"
+      ],
+      "comment": "Greek Κύριε, ἐλέησον, in Latin letters: so it is sung in the Roman Mass, and so, in Greek or Slavonic, in the litanies of the Byzantine services. Greek in Latin letters is left without macrons, as the Missal prints it."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Miserēre nostrī, Domine, miserēre nostrī",
+      "english": "Have mercy on us, Lord, have mercy on us",
+      "source": "Vulg. Ps. 122 (123), 3"
+    },
+    {
+      "latin": "Jēsū praeceptor, miserēre nostrī.",
+      "english": "Jesus, master, have mercy on us (the ten lepers).",
+      "source": "Vulg. Lc. 17.13"
+    },
+    {
+      "latin": "Quī tollis peccāta mundī, miserēre nōbīs.",
+      "english": "You who take away the sins of the world, have mercy on us.",
+      "source": "Miss. Rōm., <span lang=\"la\">Glōria</span>"
+    }
+  ],
+  "related": [
+    "lord",
+    "prayer",
+    "amen"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/misereor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: misereor</a> · <a href=\"https://logeion.uchicago.edu/dominus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dominus</a>",
+    "Quotations from the Latinitas loci collections (loci-vulgata), checked against the editions named there.",
+    "Prayers from the Latinitas <em>Precēs</em> collection (preces.md), checked against the sources named there.",
+    "Vulgate verses checked against the Clementine Vulgate (CrossWire <em>VulgClementine</em>, via the <a href=\"https://github.com/scrollmapper/bible_databases\" rel=\"noopener noreferrer\" target=\"_blank\">scrollmapper <em>bible_databases</em></a> repository) and Hetzenauer’s edition, in Clementine spelling."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

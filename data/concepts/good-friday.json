@@ -1,0 +1,59 @@
+{
+  "id": "good-friday",
+  "english": "Good Friday",
+  "pos": "noun",
+  "also": [
+    "Great Friday",
+    "Holy Friday"
+  ],
+  "domain": "ecclesia",
+  "also_under": [
+    "tempus"
+  ],
+  "terms": [
+    {
+      "latin": "Parascēvē, Parascēvēs f.",
+      "status": "recommended",
+      "period": "late",
+      "gloss": "Good Friday, the day of Preparation",
+      "evidence": [
+        "Vulg. Jo. 19.31",
+        "Vulg. Mc. 15.42",
+        "Tert. Adv. Marc. 4.12 (Lewis &amp; Short)"
+      ],
+      "comment": "Greek παρασκευή, the day of preparation before the Sabbath, the Friday of the Passion (Lewis &amp; Short). In Greek every Friday is still παρασκευή, and this one is Great Friday (Μεγάλη Παρασκευή)."
+    },
+    {
+      "latin": "Fēria Sexta in Parascēvē",
+      "status": "alternative",
+      "period": "medieval",
+      "gloss": "Good Friday",
+      "evidence": [
+        "Miss. Rōm., <span lang=\"la\">Fer. VI in Parascēvē</span> (Latinitas <span lang=\"la\">Precēs</span>)"
+      ],
+      "comment": "The Roman Missal’s name for the day."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "quia erat parascēvē, quod est ante sabbatum",
+      "english": "because it was the day of Preparation, the day before the Sabbath",
+      "source": "Vulg. Mc. 15.42"
+    }
+  ],
+  "related": [
+    "holy-week",
+    "easter",
+    "palm-sunday"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/parasceve\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: parasceve</a> · <a href=\"https://logeion.uchicago.edu/feriae\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: feriae</a>",
+    "Prayers from the Latinitas <em>Precēs</em> collection (preces.md), checked against the sources named there.",
+    "Vulgate verses checked against the Clementine Vulgate (CrossWire <em>VulgClementine</em>, via the <a href=\"https://github.com/scrollmapper/bible_databases\" rel=\"noopener noreferrer\" target=\"_blank\">scrollmapper <em>bible_databases</em></a> repository) and Hetzenauer’s edition, in Clementine spelling."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

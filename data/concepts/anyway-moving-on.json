@@ -1,0 +1,82 @@
+{
+  "id": "anyway-moving-on",
+  "english": "anyway",
+  "sense": "to move on, or to come back to the point",
+  "pos": "adverb",
+  "also": [
+    "but enough of that",
+    "so much for that",
+    "to get back to the point",
+    "but I digress"
+  ],
+  "domain": "verba",
+  "also_under": [
+    "sermo"
+  ],
+  "terms": [
+    {
+      "latin": "sed haec hāctenus",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "but enough of that; anyway",
+      "grammar": "phrase: hāctenus, so far and no further",
+      "evidence": [
+        "Cic. Fam. 9.24.1–2: <span lang=\"la\">sed haec hāctenus. tē ad cēnās itāre dēsīsse molestē ferō</span>",
+        "Cic. Att. 16.7.6: <span lang=\"la\">sed haec hāctenus; reliqua cōram</span>"
+      ],
+      "comment": "Cicero’s way of closing one subject and turning to the next, very frequent in his letters (Lewis &amp; Short: “so much for this”).",
+      "notes": [
+        "hactenus"
+      ]
+    },
+    {
+      "latin": "sed ut ad rem redeam",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "but to get back to the point",
+      "evidence": [
+        "Cic. Fam. 7.13.2: <span lang=\"la\">sed ut ad rem redeam, tē istīc invītum nōn esse vehementer gaudeō</span>",
+        "Cic. Fam. 3.7.6"
+      ],
+      "comment": "After a digression. Shorter, <span lang=\"la\">sed ad rem redeō</span> (Cic. Att. 5.21.13) or <span lang=\"la\">redeāmus ad nostrum</span> (Cic. Att. 7.11.3)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "sed haec hāctenus. tē ad cēnās itāre dēsīsse molestē ferō",
+      "english": "but enough of that. I’m sorry you’ve stopped going out to dinner",
+      "source": "Cic. Fam. 9.24.1–2"
+    },
+    {
+      "latin": "sed haec hāctenus; reliqua cōram.",
+      "english": "but enough of that; the rest when we meet.",
+      "source": "Cic. Att. 16.7.6"
+    },
+    {
+      "latin": "sed ut ad rem redeam, tē istīc invītum nōn esse vehementer gaudeō",
+      "english": "but to get back to the point, I’m very glad you don’t mind being out there",
+      "source": "Cic. Fam. 7.13.2"
+    }
+  ],
+  "notes": {
+    "hactenus": {
+      "form": "hāctenus",
+      "claim": "long a",
+      "against": "Lewis &amp; Short leaves it unmarked",
+      "html": "The ablative <span lang=\"la\">hāc</span> with <span lang=\"la\">tenus</span>, which Vergil still writes apart (<span lang=\"la\">hāc Trōjāna tenus</span>, Verg. A. 6.62); Lewis &amp; Short marks the same long vowel in <span lang=\"la\">quātenus</span> and <span lang=\"la\">eātenus</span>."
+    }
+  },
+  "related": [
+    "anyway-in-any-case",
+    "however"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/hactenus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: hactenus</a> · <a href=\"https://logeion.uchicago.edu/redeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: redeo</a> · <a href=\"https://logeion.uchicago.edu/quatenus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quatenus</a>",
+    "Cicero’s letters and Vergil checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "usually",
+  "english": "usually",
+  "pos": "adverb",
+  "also": [
+    "generally",
+    "normally",
+    "as a rule",
+    "for the most part",
+    "be in the habit of"
+  ],
+  "domain": "tempus",
+  "also_under": [
+    "verba"
+  ],
+  "terms": [
+    {
+      "latin": "plērumque",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "usually, as a rule, for the most part",
+      "grammar": "adverb",
+      "evidence": [
+        "Plin. Ep. 9.36.1: <span lang=\"la\">ēvigilō cum libuit, plērumque circā hōram prīmam</span>",
+        "Cic. Off. 1.135: <span lang=\"la\">habentur autem plērumque sermōnēs aut dē domesticīs negōtiīs aut dē rē pūblicā</span>",
+        "Traupman 401: usually, <span lang=\"la\">plērumque</span>"
+      ],
+      "comment": "In Cicero “as a rule, mostly”; in Tacitus and later often no more than “often” (Lewis &amp; Short)."
+    },
+    {
+      "latin": "soleō, solēre, solitus sum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "usually do, be in the habit of",
+      "grammar": "verb, second conjugation, semi-deponent, with an infinitive",
+      "evidence": [
+        "Cic. Off. 3.59: <span lang=\"la\">sed hīc piscārī nūllī solent</span>",
+        "Ov. Fast. 4.170: <span lang=\"la\">quae septem dīcī, sex tamen esse solent</span>"
+      ],
+      "comment": "Latin says “usually” as often with this verb as with an adverb; <span lang=\"la\">ut solet</span>, as usual (see as usual)."
+    },
+    {
+      "latin": "ferē",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "as a rule, usually; with numbers, about",
+      "grammar": "adverb",
+      "evidence": [
+        "Ter. Ph. 363–364: <span lang=\"la\">rūrī ferē sē continēbat</span>",
+        "Sen. Ep. 53.1: <span lang=\"la\">quae ferē aut in aquam aut in ventum resolvuntur</span>"
+      ],
+      "comment": "Lewis &amp; Short: “in the usual course of things”, as against <span lang=\"la\">interdum</span> or <span lang=\"la\">rārō</span>; <span lang=\"la\">ut ferē fit</span>, as usually happens (Cic. Inv. 2.14)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ēvigilō cum libuit, plērumque circā hōram prīmam, saepe ante, tardius rārō",
+      "english": "I wake when I like: usually about the first hour, often before, rarely later",
+      "source": "Plin. Ep. 9.36.1"
+    },
+    {
+      "latin": "sed hīc piscārī nūllī solent",
+      "english": "but nobody usually fishes here",
+      "source": "Cic. Off. 3.59"
+    },
+    {
+      "latin": "pauper, cui opera vīta erat, rūrī ferē sē continēbat",
+      "english": "being poor, with only his work to live on, he usually kept to the country",
+      "source": "Ter. Ph. 363–364"
+    }
+  ],
+  "related": [
+    "as-usual",
+    "always",
+    "sometimes",
+    "never",
+    "practice-custom"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/plerumque\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: plerusque (plērumque)</a> · <a href=\"https://logeion.uchicago.edu/soleo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: soleo</a> · <a href=\"https://logeion.uchicago.edu/fere\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fere</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 401.",
+    "Quotations from the Latinitas loci collections (loci-plinius, loci-cicero-philosophica, loci-ovidius, loci-seneca-epistulae), checked against the editions named there; Terence and Cicero (Off. 1.135, Inv. 2.14) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

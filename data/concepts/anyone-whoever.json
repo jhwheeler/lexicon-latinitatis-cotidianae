@@ -1,0 +1,65 @@
+{
+  "id": "anyone-whoever",
+  "english": "anyone",
+  "sense": "no matter who",
+  "pos": "pronoun",
+  "also": [
+    "anybody at all",
+    "anyone at all",
+    "anyone you like",
+    "whoever you like"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "quīvīs, quaevīs, quodvīs",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "anyone you like, anyone at all",
+      "grammar": "pronoun",
+      "evidence": [
+        "Cic. Phil. 12.5: <span lang=\"la\">cujusvīs hominis est errāre</span>",
+        "Plaut. Amph. prol. 27: <span lang=\"la\">nōn minus quam vostrum quīvīs formīdat malum</span>"
+      ],
+      "comment": "Anyone you care to name. After a negative or in a doubting question, “anyone” is <span lang=\"la\">quisquam</span> instead (see someone)."
+    },
+    {
+      "latin": "quīlibet, quaelibet, quodlibet",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "anyone at all, the first who comes",
+      "grammar": "pronoun",
+      "evidence": [
+        "Ov. Met. 2.388: <span lang=\"la\">quīlibet alter agat portantēs lūmina currūs!</span>",
+        "Cic. Fin. 3.24: <span lang=\"la\">sīc vīta agenda est certō genere quōdam, nōn quōlibet</span>"
+      ],
+      "comment": "Often a little slighting: anyone, it does not matter who (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "cujusvīs hominis est errāre; nūllīus nisi īnsipientis persevērāre in errōre",
+      "english": "anyone can make a mistake; only a fool persists in one",
+      "source": "Cic. Phil. 12.5"
+    },
+    {
+      "latin": "etenim ille, cujus hūc jussū veniō, Juppiter nōn minus quam vostrum quīvīs formīdat malum",
+      "english": "for the one who sent me here, Jupiter, dreads a beating as much as any of you",
+      "source": "Plaut. Amph. prol. 26–27"
+    }
+  ],
+  "related": [
+    "someone",
+    "anything-whatever",
+    "everyone"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/quivis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quivis</a> · <a href=\"https://logeion.uchicago.edu/quilibet\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quilibet</a>",
+    "Cicero, Plautus and Ovid checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

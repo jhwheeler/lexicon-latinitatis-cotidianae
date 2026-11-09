@@ -1,0 +1,75 @@
+{
+  "id": "anyway-in-any-case",
+  "english": "anyway",
+  "sense": "in any case, whatever happens",
+  "pos": "adverb",
+  "also": [
+    "anyhow",
+    "in any case",
+    "be that as it may",
+    "however that may be",
+    "whatever happens"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "utcumque",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "however it is, whatever happens",
+      "grammar": "adverb; utcumque est (erit), however that is (will be)",
+      "evidence": [
+        "Liv. praef. 3: <span lang=\"la\">utcumque erit, juvābit tamen</span>"
+      ],
+      "comment": "The main clause usually carries <span lang=\"la\">tamen</span>, “all the same” (see however)."
+    },
+    {
+      "latin": "utut est (utut haec sunt)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "however that may be",
+      "register": "vōx cōmica: Plaut., Ter. (Lewis &amp; Short: mostly ante-classical)",
+      "evidence": [
+        "Ter. Ph. 531: <span lang=\"la\">sed utut haec sunt, tamen hoc faciam</span>",
+        "Plaut. Merc. 558: <span lang=\"la\">vērum hercle postrēmō, utut est, nōn ībō tamen</span>"
+      ]
+    },
+    {
+      "latin": "utique",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "in any case, by all means",
+      "grammar": "adverb",
+      "evidence": [
+        "Cic. Att. 4.4.1: <span lang=\"la\">quō diē veniēs, utique cum tuīs apud mē sīs</span>"
+      ],
+      "comment": "In Cicero mostly in the letters (Lewis &amp; Short; see also at least)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Sed utut haec sunt, tamen hoc faciam.",
+      "english": "But however that may be, this is what I’ll do anyway.",
+      "source": "Ter. Ph. 531"
+    },
+    {
+      "latin": "quō diē veniēs, utique cum tuīs apud mē sīs",
+      "english": "whichever day you come, stay with me in any case, with your family",
+      "source": "Cic. Att. 4.4.1"
+    }
+  ],
+  "related": [
+    "anyway-moving-on",
+    "however",
+    "at-least"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/utcumque\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: utcumque</a> · <a href=\"https://logeion.uchicago.edu/ut\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ut (ut ut, utut)</a> · <a href=\"https://logeion.uchicago.edu/utique\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: utique</a>",
+    "Livy, Terence, Plautus and Cicero’s letters checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

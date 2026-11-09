@@ -1,0 +1,79 @@
+{
+  "id": "due-to",
+  "english": "due to",
+  "pos": "preposition",
+  "also": [
+    "because of",
+    "owing to",
+    "on account of",
+    "thanks to"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "propter (+ accusative)",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "because of, due to, on account of",
+      "grammar": "preposition with the accusative",
+      "evidence": [
+        "Caes. BG 1.16.2: <span lang=\"la\">nam propter frīgora … nōn modo frūmenta in agrīs mātūra nōn erant</span>",
+        "Cic. Att. 7.5.2: <span lang=\"la\">propter hūmānitātem et modestiam mālō salvum quam propter ūsum meum</span>"
+      ],
+      "comment": "The plain word for a cause, and the chief sense of <span lang=\"la\">propter</span> (Lewis &amp; Short). With persons, “because of me, thanks to you”: <span lang=\"la\">propter mē, propter tē</span>."
+    },
+    {
+      "latin": "ob (+ accusative)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "because of, for (a reason, a deed)",
+      "grammar": "preposition with the accusative",
+      "evidence": [
+        "Ter. Ad. 978–978b: <span lang=\"la\">Ob eam rem? — Ob eam.</span>",
+        "Cic. Rep. 1.12: <span lang=\"la\">ob eam causam</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Mostly in set phrases: <span lang=\"la\">ob eam rem</span>, for that reason; <span lang=\"la\">quam ob rem</span>, which is why."
+    },
+    {
+      "latin": "prae (+ ablative)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "for, because of (something that prevents)",
+      "grammar": "preposition with the ablative, with a negative",
+      "evidence": [
+        "Cic. Att. 9.12.1: <span lang=\"la\">prae lacrimīs possum reliqua nec cōgitāre nec scrībere</span>"
+      ],
+      "comment": "Classically only of a hindrance, with a negative or <span lang=\"la\">vix</span> (Lewis &amp; Short): one cannot speak for tears, see for the crowd."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nam propter frīgora … nōn modo frūmenta in agrīs mātūra nōn erant",
+      "english": "for due to the cold … the corn in the fields was not even ripe",
+      "source": "Caes. BG 1.16.2"
+    },
+    {
+      "latin": "Ut propter mē tibi sit melius mihique propter tē et tuōs.",
+      "english": "So that you may be better off thanks to me, and I thanks to you and yours.",
+      "source": "Plaut. Aul. 225"
+    },
+    {
+      "latin": "prae lacrimīs possum reliqua nec cōgitāre nec scrībere",
+      "english": "for tears I can neither think nor write the rest",
+      "source": "Cic. Att. 9.12.1"
+    }
+  ],
+  "related": [
+    "why",
+    "therefore"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/propter\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: propter</a> · <a href=\"https://logeion.uchicago.edu/ob\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ob</a> · <a href=\"https://logeion.uchicago.edu/prae\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: prae</a>",
+    "Caesar, Cicero’s letters, Plautus and Terence checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

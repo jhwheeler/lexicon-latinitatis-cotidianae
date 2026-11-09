@@ -1,0 +1,76 @@
+{
+  "id": "contact",
+  "english": "contact",
+  "sense": "get in touch with",
+  "pos": "verb",
+  "also": [
+    "get in touch",
+    "get in touch with",
+    "be in touch",
+    "keep in touch"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "conveniō, convenīre, convēnī, conventum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "go and see, meet (to speak with)",
+      "grammar": "verb, fourth conjugation; transitive, convenīre aliquem",
+      "evidence": [
+        "Cic. Sen. 32: <span lang=\"la\">nēmō adhūc convenīre mē voluit, cui fuerim occupātus</span>",
+        "Cic. Fam. 9.14.1: <span lang=\"la\">conveniō autem cotīdiē plūrimōs</span>"
+      ],
+      "comment": "Lewis &amp; Short: “to go to one to speak to him, make a request of him, etc., to address, accost, meet, visit”. Latin names the way one gets in touch: in person <span lang=\"la\">convenīre</span>, by letter or email <span lang=\"la\">scrībere ad aliquem</span>, by messenger <span lang=\"la\">nūntium mittere</span>, by phone <span lang=\"la\">tēlephōnicē colloquī</span> (see talk on the phone)."
+    },
+    {
+      "latin": "scrībere ad aliquem",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "write to someone (a letter, an email)",
+      "grammar": "scrībō, scrībere, scrīpsī, scrīptum, with ad and the accusative",
+      "evidence": [
+        "Cic. Att. 6.1.26: <span lang=\"la\">ergō id ipsum scrībēs ad mē</span>"
+      ]
+    },
+    {
+      "latin": "per litterās aut per nūntium certiōrem facere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "let someone know by letter or by message",
+      "grammar": "certiōrem (certus), with faciō, facere, fēcī, factum; the person in the accusative",
+      "evidence": [
+        "Cic. Att. 11.24.4: <span lang=\"la\">nē per litterās quidem aut per nūntium certiōrem facit mē</span>"
+      ],
+      "comment": "See information."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Philotīmus nōn modo nūllus vēnit sed nē per litterās quidem aut per nūntium certiōrem facit mē quid ēgerit",
+      "english": "Philotimus hasn’t come at all, and hasn’t even been in touch by letter or by messenger to tell me what he has done",
+      "source": "Cic. Att. 11.24.4"
+    },
+    {
+      "latin": "itaque nēmō adhūc convenīre mē voluit, cui fuerim occupātus",
+      "english": "so far nobody who wanted to see me has found me busy",
+      "source": "Cic. Sen. 32"
+    }
+  ],
+  "related": [
+    "message",
+    "information",
+    "talk-on-the-phone",
+    "approach"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/convenio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: convenio</a> · <a href=\"https://logeion.uchicago.edu/scribo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: scribo</a> · <a href=\"https://logeion.uchicago.edu/certus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: certus</a>",
+    "Quotations from the Latinitas loci collections (loci-cicero-philosophica), as checked there against the editions they name.",
+    "Cic. Fam. 9.14.1, Att. 6.1.26 and 11.24.4 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

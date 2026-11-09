@@ -1,0 +1,70 @@
+{
+  "id": "statement",
+  "english": "statement",
+  "sense": "something stated",
+  "pos": "noun",
+  "also": [
+    "make a statement",
+    "a true statement",
+    "a false statement"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "dictum, dictī n.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "what someone has said, a statement",
+      "evidence": [
+        "Cic. Off. 1.23: <span lang=\"la\">dictōrum conventōrumque cōnstantia et vēritās</span>"
+      ],
+      "comment": "Latin often names a statement by what was said: <span lang=\"la\">quod dīcis</span>, “what you say”."
+    },
+    {
+      "latin": "affirmātiō, affirmātiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "an assertion, a solemn statement",
+      "evidence": [
+        "Cic. Off. 3.104: <span lang=\"la\">est enim jūs jūrandum affirmātiō religiōsa</span>"
+      ],
+      "comment": "Also spelled <span lang=\"la\">adfirmātiō</span>."
+    },
+    {
+      "latin": "prōnūntiātum, prōnūntiātī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a statement in logic, a proposition",
+      "evidence": [
+        "Cic. Tusc. 1.14: <span lang=\"la\">id ergō est prōnūntiātum, quod est vērum aut falsum</span>"
+      ],
+      "comment": "Cicero’s rendering of Greek ἀξίωμα, made up on the spot (“so it occurs to me to call it for now”); a term of philosophy."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "id ergō est prōnūntiātum, quod est vērum aut falsum",
+      "english": "a statement, then, is whatever is either true or false",
+      "source": "Cic. Tusc. 1.14"
+    },
+    {
+      "latin": "est enim jūs jūrandum affirmātiō religiōsa",
+      "english": "for an oath is a statement made under religious sanction",
+      "source": "Cic. Off. 3.104"
+    }
+  ],
+  "related": [
+    "say",
+    "comment-remark",
+    "claim-assert"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/dictum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dictum</a> · <a href=\"https://logeion.uchicago.edu/affirmatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: affirmatio</a> · <a href=\"https://logeion.uchicago.edu/pronuntiatum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pronuntiatum</a>",
+    "Cic. Off. 1.23 and 3.104, Tusc. 1.14 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

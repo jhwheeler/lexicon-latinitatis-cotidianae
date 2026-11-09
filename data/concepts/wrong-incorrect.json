@@ -1,0 +1,91 @@
+{
+  "id": "wrong-incorrect",
+  "english": "wrong",
+  "sense": "incorrect, mistaken",
+  "pos": [
+    "adjective",
+    "adverb"
+  ],
+  "also": [
+    "be wrong",
+    "wrongly",
+    "by mistake",
+    "you’re wrong",
+    "get it wrong",
+    "mistaken",
+    "incorrect"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "errō, errāre, errāvī, errātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "be wrong, be mistaken",
+      "grammar": "verb, first conjugation, intransitive",
+      "evidence": [
+        "Ter. Heaut. 105: <span lang=\"la\">Errās, sī id crēdis</span>",
+        "Cic. Tusc. 1.39: <span lang=\"la\">errāre mehercule mālō cum Platōne</span>",
+        "Traupman 409: be wrong, <span lang=\"la\">errāre</span>"
+      ],
+      "comment": "“You’re wrong” is <span lang=\"la\">errās</span>; badly wrong, <span lang=\"la\">longē errāre</span> (Ter. Ad. 65) or <span lang=\"la\">tōtā errāre viā</span> (Ter. Eun. 245)."
+    },
+    {
+      "latin": "perperam",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "wrongly, wrong; by mistake",
+      "grammar": "adverb",
+      "evidence": [
+        "Plaut. Most. 968: <span lang=\"la\">nē ad aliās aedīs perperam dēvēnerīs</span>",
+        "Cic. Quinct. 31: <span lang=\"la\">seu rēctē seu perperam facere coepērunt</span>",
+        "Traupman 409: if I have done anything wrong, I’m sorry, <span lang=\"la\">sī quid perperam fēcī, mē paenitet</span>"
+      ],
+      "comment": "The opposite of <span lang=\"la\">rēctē</span>. Where English says “the wrong house”, Latin puts the mistake in the verb, as Plautus does."
+    },
+    {
+      "latin": "falsus, falsa, falsum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "wrong, untrue (of what is said or believed)",
+      "evidence": [
+        "Cic. Rep. 2.28: <span lang=\"la\">falsum est enim … id tōtum</span>",
+        "Traupman 409: wrong (incorrect, mistaken), <span lang=\"la\">falsus</span>"
+      ],
+      "comment": "Of a statement or a belief: <span lang=\"la\">falsum est</span>, that isn’t true. Of a person, “mistaken” (Sall. J. 85.20, Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Ita dīcō, nē ad aliās aedīs perperam dēvēnerīs.",
+      "english": "I’m telling you so that you don’t go to the wrong house by mistake.",
+      "source": "Plaut. Most. 968"
+    },
+    {
+      "latin": "Errās, sī id crēdis, et mē ignōrās, Clīnia.",
+      "english": "You’re wrong if you believe that, and you don’t know me, Clinia.",
+      "source": "Ter. Heaut. 105"
+    },
+    {
+      "latin": "errāre mehercule mālō cum Platōne … quam cum istīs vēra sentīre",
+      "english": "I’d rather be wrong with Plato, by Hercules, … than be right with that crowd",
+      "source": "Cic. Tusc. 1.39"
+    }
+  ],
+  "related": [
+    "wrong-morally",
+    "true",
+    "thats-right",
+    "whats-the-matter"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/erro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: erro</a> · <a href=\"https://logeion.uchicago.edu/perperam\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: perperus (perperam)</a> · <a href=\"https://logeion.uchicago.edu/falsus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fallo (falsus)</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 409; also pp. 112, 249.",
+    "Plautus, Terence and Cicero checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

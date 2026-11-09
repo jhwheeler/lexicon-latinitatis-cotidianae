@@ -2,6 +2,10 @@
   "id": "whats-the-matter",
   "english": "what’s the matter?",
   "pos": "phrase",
+  "also": [
+    "what’s wrong?",
+    "what’s wrong with you?"
+  ],
   "domain": "sermo",
   "terms": [
     {
@@ -9,7 +13,9 @@
       "status": "recommended",
       "period": "classical",
       "evidence": [
-        "Traupman 92"
+        "Traupman 92",
+        "Traupman 409: what’s wrong with you?, <span lang=\"la\">quid est tibi?</span> or <span lang=\"la\">quid est tēcum?</span>",
+        "Plaut. Curc. 236: <span lang=\"la\">sed quid tibi est?</span>"
       ]
     }
   ],
@@ -18,6 +24,11 @@
       "latin": "«Quid tibi est? Aurēs dolent?»",
       "english": "“What’s the matter? Do your ears hurt?”",
       "source": "Libellus I, <span lang=\"la\">Iter in Lūsitāniam</span>"
+    },
+    {
+      "latin": "quid agis? — Vīvō. — Nempe ut dignus es. sed quid tibi est?",
+      "english": "How are you? — Alive. — As you deserve, no doubt. But what’s wrong with you?",
+      "source": "Plaut. Curc. 235–236"
     }
   ],
   "related": [
@@ -25,8 +36,9 @@
     "what-happened"
   ],
   "sources": [
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: p. 92, checked against the searchable text of the book on 29 October 2026.",
-    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: pp. 92, 409, checked against the searchable text of the book on 29 October 2026 and 9 November 2026.",
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+    "Plautus from the Latinitas loci collection (loci-plautus), checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
   ],
   "review": {
     "status": "draft",

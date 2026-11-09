@@ -1,0 +1,88 @@
+{
+  "id": "reference-recommendation",
+  "english": "reference",
+  "sense": "a recommendation for a job",
+  "pos": "noun",
+  "also": [
+    "letter of recommendation",
+    "give someone a reference",
+    "recommend someone",
+    "testimonial"
+  ],
+  "domain": "pecunia",
+  "also_under": [
+    "labor"
+  ],
+  "terms": [
+    {
+      "latin": "commendātiō, commendātiōnis f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a recommendation, a reference",
+      "evidence": [
+        "Cic. Fam. 13.20.1: <span lang=\"la\">meamque commendātiōnem ūsuī magnō sibi fuisse</span>",
+        "Cic. Fam. 7.18.1: <span lang=\"la\">ego enim renovābō commendātiōnem</span>"
+      ],
+      "comment": "The thirteenth book of Cicero’s letters to his friends is almost all references of this kind."
+    },
+    {
+      "latin": "commendō, commendāre, commendāvī, commendātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "recommend (someone to someone)",
+      "evidence": [
+        "Cic. Fam. 13.20.1: <span lang=\"la\">hunc igitur tibi commendō</span>"
+      ]
+    },
+    {
+      "latin": "litterae commendātīciae",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a letter of recommendation",
+      "grammar": "litterae, litterārum f. pl., with the adjective commendātīcius, -a, -um",
+      "evidence": [
+        "Cic. Fam. 5.5.1: <span lang=\"la\">nūllās ad tē litterās mittere nisi commendātīciās</span>"
+      ],
+      "notes": [
+        "commendaticius"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "hunc igitur tibi commendō et ā tē petō ut dēs operam ut intellegat dīligenter mē scrīpsisse dē sēsē meamque commendātiōnem ūsuī magnō sibi fuisse",
+      "english": "So I recommend him to you, and ask you to see to it that he understands I wrote about him with care and that my reference did him a great deal of good",
+      "source": "Cic. Fam. 13.20.1"
+    },
+    {
+      "latin": "etsī statueram nūllās ad tē litterās mittere nisi commendātīciās",
+      "english": "although I had decided to send you no letters but letters of recommendation",
+      "source": "Cic. Fam. 5.5.1",
+      "notes": [
+        "commendaticius"
+      ]
+    }
+  ],
+  "notes": {
+    "commendaticius": {
+      "form": "<span lang=\"la\">commendātīcius</span>",
+      "claim": "long i in -īcius",
+      "against": "Lewis &amp; Short <span lang=\"la\">commendātĭcĭus</span>",
+      "html": "Adjectives in -īcius made from perfect participles have a long ī, and Lewis &amp; Short marks it so in <span lang=\"la\">ēmptīcius, conductīcius, missīcius, trālātīcius, adventīcius</span>; only its <span lang=\"la\">commendātĭcĭus</span> and <span lang=\"la\">collātĭcĭus</span> stand apart."
+    }
+  },
+  "related": [
+    "interview",
+    "position-post",
+    "job"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/commendatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: commendatio</a> · <a href=\"https://logeion.uchicago.edu/commendo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: commendo</a> · <a href=\"https://logeion.uchicago.edu/commendaticius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: commendaticius</a>",
+    "Cic. Fam. 5.5.1, 7.18.1 and 13.20.1 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

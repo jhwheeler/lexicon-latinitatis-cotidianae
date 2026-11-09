@@ -1,0 +1,80 @@
+{
+  "id": "everyone",
+  "english": "everyone",
+  "pos": "pronoun",
+  "also": [
+    "everybody",
+    "all of us",
+    "each one",
+    "everyone knows"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "omnēs, omnium",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "everyone, all",
+      "grammar": "plural of omnis, used as a pronoun",
+      "evidence": [
+        "Ter. And. 309: <span lang=\"la\">facile omnēs, cum valēmus, rēcta cōnsilia aegrōtīs damus</span>",
+        "Plin. Ep. 9.33.5: <span lang=\"la\">serpit per colōniam fāma; concurrere omnēs</span>"
+      ],
+      "comment": "Latin says “all”, in the plural, as with <span lang=\"la\">omnia</span>, everything. All together, as one body, is <span lang=\"la\">ūniversī</span> or <span lang=\"la\">cūnctī</span>; everyone else, <span lang=\"la\">cēterī</span>."
+    },
+    {
+      "latin": "quisque, quaeque, quidque",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "each one, everyone (taken one by one)",
+      "grammar": "pronoun, usually after a reflexive, a relative or a superlative",
+      "evidence": [
+        "Ter. Ph. 454: <span lang=\"la\">suus cuique mōs</span>",
+        "Cic. Amic. 62: <span lang=\"la\">caprās et ovēs quot quisque habēret, dīcere posse</span>"
+      ],
+      "comment": "“Each his own”: <span lang=\"la\">suus cuique</span>; <span lang=\"la\">optimus quisque</span>, all the best people (Lewis &amp; Short)."
+    },
+    {
+      "latin": "nēmō nōn",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "everyone without exception (“no one … not”)",
+      "evidence": [
+        "Cic. Amic. 99: <span lang=\"la\">apertē enim adūlantem nēmō nōn videt</span>",
+        "Sen. Ep. 86.14: <span lang=\"la\">quōrum nēmō nōn olīvētum alterī pōnit</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "statim urceātim plovēbat … et omnēs rīdēbant ūdī tanquam mūrēs",
+      "english": "at once it was raining buckets … and everyone laughed, wet as drowned rats",
+      "source": "Petr. 44.18"
+    },
+    {
+      "latin": "Quot hominēs, tot sententiae; suus cuique mōs.",
+      "english": "So many people, so many opinions; everyone has their own way.",
+      "source": "Ter. Ph. 454"
+    },
+    {
+      "latin": "facile omnēs, cum valēmus, rēcta cōnsilia aegrōtīs damus",
+      "english": "when we’re well, we all find it easy to give good advice to the sick",
+      "source": "Ter. And. 309"
+    }
+  ],
+  "related": [
+    "everything",
+    "someone",
+    "anyone-whoever",
+    "else"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/omnis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: omnis</a> · <a href=\"https://logeion.uchicago.edu/quisque\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quisque</a> · <a href=\"https://logeion.uchicago.edu/nemo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nemo</a>",
+    "Quotations from the Latinitas loci collections (loci-terentius, loci-plinius, loci-cicero-philosophica, loci-seneca-epistulae, loci-petronius), checked against the editions named there; Terence and Cicero (Amic. 99) also checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

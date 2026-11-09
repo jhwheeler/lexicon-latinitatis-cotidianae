@@ -1,0 +1,82 @@
+{
+  "id": "address-postal",
+  "english": "address",
+  "sense": "where someone lives or gets post",
+  "pos": "noun",
+  "also": [
+    "postal address",
+    "home address",
+    "email address",
+    "e-mail address",
+    "address a letter",
+    "addressed to"
+  ],
+  "domain": "urbs",
+  "also_under": [
+    "computatra"
+  ],
+  "terms": [
+    {
+      "latin": "īnscrīptiō, īnscrīptiōnis f.",
+      "status": "recommended",
+      "period": "modern",
+      "gloss": "an address (on a letter, for email)",
+      "evidence": [
+        "Traupman 268: <span lang=\"la\">īnscrīptiō cursuālis</span>",
+        "Traupman 261, 309: <span lang=\"la\">īnscrīptiō ēlectronica</span>, e-mail address",
+        "M-O s.v. address: inscriptio cursualis"
+      ],
+      "comment": "Classically an inscription or the title of a book (Cic. Att. 16.11.4). The address is what is written on a letter, and the verb is classical: <span lang=\"la\">epistulam īnscrīptam patrī suō</span>, a letter addressed to his father (Cic. Att. 6.3.8)."
+    },
+    {
+      "latin": "Ubi habitās?",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "Where do you live? (What is your address?)",
+      "evidence": [
+        "Ter. Eun. 320e: <span lang=\"la\">Ubi habitat?</span>"
+      ]
+    },
+    {
+      "latin": "īnscrībō, īnscrībere, īnscrīpsī, īnscrīptum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "address (a letter, a parcel)",
+      "evidence": [
+        "Cic. Att. 8.5.2: <span lang=\"la\">fasciculum, quī est M’. Curiō īnscrīptus</span>",
+        "Cic. Att. 6.3.8: <span lang=\"la\">epistulam īnscrīptam patrī suō</span>",
+        "Traupman 268"
+      ],
+      "comment": "The person written to in the dative."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Unde est? — Tantundem. — Ubi habitat? — Nē id quidem.",
+      "english": "Where’s she from? — No idea either. — Where does she live? — I don’t even know that.",
+      "source": "Ter. Eun. 320c–321"
+    },
+    {
+      "latin": "tū fasciculum, quī est M’. Curiō īnscrīptus, velim cūrēs ad eum perferendum",
+      "english": "please see that the packet addressed to Manius Curius gets to him",
+      "source": "Cic. Att. 8.5.2"
+    }
+  ],
+  "related": [
+    "post-a-letter",
+    "envelope",
+    "postcard",
+    "address-speak-to"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/inscriptio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: inscriptio</a> · <a href=\"https://logeion.uchicago.edu/inscribo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: inscribo</a> · <a href=\"https://logeion.uchicago.edu/habito\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: habito</a>",
+    "Ter. Eun. 320c–321, Cic. Att. 6.3.8, 8.5.2 and 16.11.4 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 261, 268, 309, checked against the searchable text of the book.",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. address."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -17,6 +17,8 @@ jobs:
         run: python3 scripts/build.py --check
       - name: Test the builder
         run: python3 -m unittest discover -s tests -v
+      - name: Compare vowel lengths with Lewis & Short
+        run: python3 scripts/check_quantities.py
       - uses: actions/setup-node@v4
         with:
           node-version: '22'

@@ -1,0 +1,93 @@
+{
+  "id": "information",
+  "english": "information",
+  "pos": "noun",
+  "also": [
+    "inform",
+    "let me know",
+    "be informed",
+    "info"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "certiōrem facere",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "to inform someone, give him information; certior fierī, to be informed",
+      "grammar": "phrase: certus in the comparative with faciō",
+      "evidence": [
+        "Cic. Fam. 2.4.1",
+        "Cael. in Cic. Fam. 8.1.1: <span lang=\"la\">fac mē certiōrem</span>"
+      ],
+      "comment": "Latin gives information with a verb: <span lang=\"la\">fac mē certiōrem</span>, let me know; <span lang=\"la\">certior factus sum</span>, I have been told. The thing goes with <span lang=\"la\">dē</span>."
+    },
+    {
+      "latin": "indicium, indiciī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "information given, a disclosure, a tip-off",
+      "evidence": [
+        "Plaut. Cist. 4.2.9: <span lang=\"la\">facite indicium, sī quis vīdit</span> (Lewis &amp; Short)",
+        "Ter. Ad. 4.4.7: <span lang=\"la\">id anus mihi indicium fēcit</span> (Lewis &amp; Short)",
+        "Traupman 217, 333"
+      ],
+      "comment": "Often of information laid against someone (Caes. BG 1.4)."
+    },
+    {
+      "latin": "nūntius, nūntiī m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "news, a message; a messenger",
+      "evidence": [
+        "Catull. 9.5: <span lang=\"la\">ō mihi nūntiī beātī!</span>"
+      ]
+    },
+    {
+      "latin": "cognitiō, cognitiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "knowledge, finding out about a thing",
+      "evidence": [
+        "M-O s.v. information: <span lang=\"la\">ūnicum fontem cognitiōnis nostrae</span>, our only source of information (Sillig)"
+      ]
+    },
+    {
+      "latin": "īnfōrmātiō, īnfōrmātiōnis f.",
+      "status": "avoid",
+      "period": "classical",
+      "gloss": "an outline; an idea, a notion",
+      "evidence": [
+        "Cic. ND 1.43: <span lang=\"la\">anteceptam animō reī quandam īnfōrmātiōnem</span>"
+      ],
+      "comment": "A false friend: classically a sketch (Vitruvius) or an idea formed in the mind. Morgan–Owens allows it for the act of informing (Thunberg 1784), not for information as facts."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ut certiōrēs facerēmus absentīs, sī quid esset quod eōs scīre aut nostrā aut ipsōrum interesset",
+      "english": "to tell those far away anything that it mattered to us, or to them, that they should know",
+      "source": "Cic. Fam. 2.4.1"
+    },
+    {
+      "latin": "fac mē certiōrem",
+      "english": "let me know",
+      "source": "Cael. in Cic. Fam. 8.1.1"
+    }
+  ],
+  "related": [
+    "interest-advantage"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/certus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: certus</a> · <a href=\"https://logeion.uchicago.edu/indicium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: indicium</a> · <a href=\"https://logeion.uchicago.edu/nuntius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nuntius</a> · <a href=\"https://logeion.uchicago.edu/cognitio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cognitio</a> · <a href=\"https://logeion.uchicago.edu/informatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: informatio</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. information.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 217, 333, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-catullus), checked against the editions named there.",
+    "Cicero, ND 1.43 checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

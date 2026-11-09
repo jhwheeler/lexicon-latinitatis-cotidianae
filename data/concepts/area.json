@@ -1,0 +1,91 @@
+{
+  "id": "area",
+  "english": "area",
+  "sense": "a part of a place: a region, a neighbourhood",
+  "pos": "noun",
+  "also": [
+    "region",
+    "district",
+    "parts",
+    "around here",
+    "in this area"
+  ],
+  "also_under": [
+    "verba"
+  ],
+  "domain": "urbs",
+  "terms": [
+    {
+      "latin": "loca, locōrum n. pl.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "parts, a region, an area",
+      "evidence": [
+        "Liv. 1.4.6: <span lang=\"la\">in hīs locīs</span>",
+        "Cic. Att. 15.16a: <span lang=\"la\">haec loca venusta sunt</span>"
+      ],
+      "comment": "The plural of <span lang=\"la\">locus</span> for a stretch of country: <span lang=\"la\">in hīs locīs</span>, in these parts, in this area."
+    },
+    {
+      "latin": "regiō, regiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a region, a district",
+      "evidence": [
+        "Liv. 22.46.9: <span lang=\"la\">regiōnis incolae</span>, the people of the area"
+      ]
+    },
+    {
+      "latin": "vīcīnia, vīcīniae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the neighbourhood: round here",
+      "evidence": [
+        "Ter. Ph. 95: <span lang=\"la\">hīc vīcīniae</span>",
+        "Ter. And. 70: <span lang=\"la\">hūc vīcīniae</span>"
+      ],
+      "comment": "Terence’s genitive of place: <span lang=\"la\">hīc vīcīniae</span>, here in the neighbourhood."
+    },
+    {
+      "latin": "ārea, āreae f.",
+      "status": "avoid",
+      "period": "classical",
+      "gloss": "an open space: a yard, a building plot, a threshing floor",
+      "evidence": [
+        "Dig. 50.16.211: <span lang=\"la\">locus sine aedificiō in urbe ārea</span> (Lewis &amp; Short)",
+        "M-O s.v. square, piazza; s.v. yard"
+      ],
+      "comment": "A false friend: never a region. Traupman’s <span lang=\"la\">ārea portāria</span> and <span lang=\"la\">ārea poenālis</span>, the goal and penalty areas (Traupman 50), keep the classical sense of a marked-out open space."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "vāstae tum in hīs locīs sōlitūdinēs erant",
+      "english": "in those days this whole area was wilderness",
+      "source": "Liv. 1.4.6"
+    },
+    {
+      "latin": "modo quandam vīdī virginem hīc vīcīniae",
+      "english": "just now I saw a girl here in the neighbourhood",
+      "source": "Ter. Ph. 95"
+    }
+  ],
+  "related": [
+    "community",
+    "neighbour",
+    "village",
+    "town"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/locus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: locus</a> · <a href=\"https://logeion.uchicago.edu/regio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: regio</a> · <a href=\"https://logeion.uchicago.edu/vicinia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vicinia</a> · <a href=\"https://logeion.uchicago.edu/area\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: area</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. square, piazza; s.v. yard.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 50, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-livius, loci-cicero-epistulae), checked against the editions named there.",
+    "Terence checked against Parry’s edition in the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>, the text the loci collection uses (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

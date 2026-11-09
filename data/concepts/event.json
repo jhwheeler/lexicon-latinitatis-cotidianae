@@ -1,0 +1,73 @@
+{
+  "id": "event",
+  "english": "event",
+  "sense": "something that happens",
+  "pos": "noun",
+  "also": [
+    "happening",
+    "occurrence",
+    "events"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "rēs, reī f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a thing that happens, an event, an affair",
+      "evidence": [
+        "Cic. Att. 1.13.2: <span lang=\"la\">rēs dignae litterīs nostrīs</span>"
+      ],
+      "comment": "Lewis &amp; Short: a matter, affair, event, fact, occurrence. What happened is also said with a clause, <span lang=\"la\">quod accidit</span>, <span lang=\"la\">quid reliquīs acciderit</span> (Caes. BC 1.21). For an organised event Latin names the occasion: <span lang=\"la\">convīvium</span>, <span lang=\"la\">spectāculum</span>, <span lang=\"la\">lūdī</span>."
+    },
+    {
+      "latin": "rēs gestae, rērum gestārum f. pl.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "events, what was done; deeds",
+      "grammar": "noun, fifth declension, plural, with a participle",
+      "evidence": [
+        "Lewis &amp; Short s.v. <span lang=\"la\">gerō</span>"
+      ]
+    },
+    {
+      "latin": "cāsus, cāsūs m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a chance event, an accident, a misfortune",
+      "evidence": [
+        "Cic. Div. 2.15: <span lang=\"la\">quid cāsus, quid ēventus</span> (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "ēventus, ēventūs m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "an occurrence; far more often, the outcome",
+      "evidence": [
+        "Cic. de Or. 2.63: <span lang=\"la\">cōnsilia prīmum, deinde ācta, posteā ēventūs exspectantur</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Rare in the sense of an event; usually the result of an action (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "sunt autem post discessum ā mē tuum rēs dignae litterīs nostrīs",
+      "english": "since you left me there have been events worth a letter",
+      "source": "Cic. Att. 1.13.2"
+    }
+  ],
+  "related": [
+    "what-happened",
+    "history"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/res\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: res</a> · <a href=\"https://logeion.uchicago.edu/gero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gero</a> · <a href=\"https://logeion.uchicago.edu/casus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: casus</a> · <a href=\"https://logeion.uchicago.edu/eventus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: eventus</a>",
+    "Cicero, Att. 1.13 checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

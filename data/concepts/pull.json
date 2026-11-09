@@ -9,6 +9,12 @@
       "status": "recommended",
       "period": "classical",
       "comment": "An ancient verb used for toy vehicles."
+    },
+    {
+      "latin": "trahō, trahere, trāxī, tractum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "pull, draw"
     }
   ],
   "phrases": [
@@ -16,20 +22,32 @@
       "latin": "Tractrum trahis.",
       "english": "You’re pulling the tractor.",
       "source": "composed"
+    },
+    {
+      "latin": "Tē sūrsum trahe.",
+      "english": "Pull yourself upward.",
+      "source": "composed"
     }
   ],
   "related": [
     "push",
     "tractor",
-    "trailer"
+    "trailer",
+    "lift",
+    "upward"
   ],
   "sources": [
     "<a href=\"https://www.alatius.com/ls/index.php?l=traho\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: traho</a>",
-    "The example sentences marked “composed” are ours."
+    "The example sentences marked “composed” are ours.",
+    "<a href=\"https://logeion.org/traho\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: traho</a>",
+    "The reflexive and limb-based prompts are composed. In particular, <span lang=\"la\">nītere</span> is the singular imperative of deponent <span lang=\"la\">nītor</span>. Examples are composed for conversation with Theo; dictionary links document the component words, not these exact sentences or standardized modern climbing terminology."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "pull yourself up"
+  ]
 }

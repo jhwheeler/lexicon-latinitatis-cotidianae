@@ -2,18 +2,55 @@
   "id": "wake-up",
   "english": "wake up",
   "pos": "verb",
+  "also": [
+    "wake",
+    "awaken",
+    "waken"
+  ],
   "domain": "sermo",
   "terms": [
     {
       "latin": "ēvigilō, ēvigilāre, ēvigilāvī, ēvigilātum",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "evidence": [
+        "Plin. Ep. 9.36.1: <span lang=\"la\">ēvigilō cum libuit</span>"
+      ],
+      "comment": "Pliny’s and Quintilian’s verb in this sense (Lewis &amp; Short)."
     },
     {
       "latin": "expergīscor, expergīscī, experrēctus sum",
       "status": "alternative",
       "period": "classical",
-      "grammar": "verb, third conjugation, deponent"
+      "grammar": "verb, third conjugation, deponent",
+      "evidence": [
+        "Cic. Att. 2.23.3: <span lang=\"la\">sī dormīs expergīscere</span>",
+        "Liv. 1.39.2: <span lang=\"la\">dōnec suā sponte experrēctus esset</span>",
+        "Traupman 39, 403: wake up, intr."
+      ],
+      "comment": "Cicero’s and Livy’s verb."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ēvigilō cum libuit, plērumque circā hōram prīmam, saepe ante, tardius rārō",
+      "english": "I wake up when I like, usually about the first hour, often before, seldom later",
+      "source": "Plin. Ep. 9.36.1"
+    },
+    {
+      "latin": "sī dormīs expergīscere, sī stās ingredere, sī ingrederis curre, sī curris advolā",
+      "english": "if you’re asleep, wake up; if you’re standing, walk; if you’re walking, run; if you’re running, fly",
+      "source": "Cic. Att. 2.23.3"
+    },
+    {
+      "latin": "cum somnō repetītō simul cum sōle experrēctus essem",
+      "english": "when I had gone back to sleep and woken with the sun",
+      "source": "Cic. Att. 13.38.1"
+    },
+    {
+      "latin": "movērī vetuisse puerum dōnec suā sponte experrēctus esset",
+      "english": "she forbade anyone to move the boy until he woke up of his own accord",
+      "source": "Liv. 1.39.2"
     }
   ],
   "related": [
@@ -21,7 +58,9 @@
     "get-up"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/evigilo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: evigilo</a> · <a href=\"https://logeion.uchicago.edu/expergiscor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: expergiscor</a>"
+    "<a href=\"https://logeion.uchicago.edu/evigilo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: evigilo</a> · <a href=\"https://logeion.uchicago.edu/expergiscor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: expergiscor</a>",
+    "Quotations from the Latinitas loci collections (loci-plinius, loci-cicero-epistulae, loci-livius), checked against the editions named there.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: pp. 39, 403, checked against the searchable text of the book (9 November 2026)."
   ],
   "review": {
     "status": "draft",

@@ -1,0 +1,70 @@
+{
+  "id": "send",
+  "english": "send",
+  "pos": "verb",
+  "also": [
+    "send off",
+    "send for"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "mittō, mittere, mīsī, missum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "send",
+      "evidence": [
+        "Cic. Fam. 16.18.3: <span lang=\"la\">hōrologium mittam et librōs</span>",
+        "Plin. Ep. 1.11.1: <span lang=\"la\">ōlim mihi nūllās epistulās mittis</span>",
+        "Traupman 262"
+      ],
+      "comment": "The person in the dative or with <span lang=\"la\">ad</span>: <span lang=\"la\">tibi mittimus</span>, <span lang=\"la\">ad tē mīsī</span>. Also “let go”: <span lang=\"la\">Mitte mē!</span>, let me go."
+    },
+    {
+      "latin": "arcessō (accersō), arcessere, arcessīvī, arcessītum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "send for, summon (a person)",
+      "evidence": [
+        "Plaut. Men. 875: <span lang=\"la\">accersam medicum</span>"
+      ],
+      "comment": "To make someone come: <span lang=\"la\">medicum arcessere</span>, to send for the doctor."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "hōrologium mittam et librōs, sī erit sūdum",
+      "english": "I’ll send the clock and the books, if the weather is dry",
+      "source": "Cic. Fam. 16.18.3"
+    },
+    {
+      "latin": "dē nostrō, fācunde, tibi, Juvenālis, agellō Sāturnāliciās mittimus, ecce, nucēs",
+      "english": "from my own little farm, eloquent Juvenal, look, I send you nuts for the Saturnalia",
+      "source": "Mart. 7.91.1–2"
+    },
+    {
+      "latin": "ōlim mihi nūllās epistulās mittis",
+      "english": "you haven’t sent me a single letter for ages",
+      "source": "Plin. Ep. 1.11.1"
+    }
+  ],
+  "related": [
+    "post-a-letter",
+    "forward-send-on",
+    "doctor",
+    "bring",
+    "get-fetch",
+    "let-me-go"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/mitto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mitto</a> · <a href=\"https://logeion.uchicago.edu/arcesso\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: arcesso</a>",
+    "Plautus checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-martialis, loci-plinius), checked against the editions named there.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: p. 262, checked against the searchable text of the book (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

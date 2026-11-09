@@ -1,0 +1,75 @@
+{
+  "id": "sit",
+  "english": "sit",
+  "pos": "verb",
+  "also": [
+    "be sitting",
+    "sit down",
+    "take a seat",
+    "be seated"
+  ],
+  "also_under": [
+    "corpus"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "sedeō, sedēre, sēdī, sessum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "sit, be sitting",
+      "evidence": [
+        "Gell. 2.21.2: <span lang=\"la\">sedēbāmus ergō in puppī</span>",
+        "Cic. Amic. 2: <span lang=\"la\">domī in hēmicycliō sedentem</span>"
+      ],
+      "comment": "The state of sitting. Sitting down is <span lang=\"la\">cōnsīdō</span>, though the imperative <span lang=\"la\">sedē</span> also serves for “sit down” (Mart. 8.67.6)."
+    },
+    {
+      "latin": "cōnsīdō, cōnsīdere, cōnsēdī, cōnsessum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "sit down, take a seat; settle",
+      "evidence": [
+        "Ov. Met. 13.930–931: <span lang=\"la\">in illō caespite cōnsēdī</span>",
+        "Liv. 7.26.3: <span lang=\"la\">corvus repente in galeā cōnsēdit</span>",
+        "Traupman 34: <span lang=\"la\">cōnsīde (cōnsīdite)</span>"
+      ],
+      "comment": "The act of sitting down, also of a bird landing. “Sit down!” is <span lang=\"la\">Cōnsīde!</span>"
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "sedēbāmus ergō in puppī simul ūniversī et lūcentia sīdera cōnsīderābāmus",
+      "english": "so we were all sitting together on the stern, gazing at the shining stars",
+      "source": "Gell. 2.21.2"
+    },
+    {
+      "latin": "curre, age, et inlōtōs revocā, Calliste, ministrōs; sternantur lectī: Caeciliāne, sedē",
+      "english": "Quick, Callistus, run and call the waiters back, unwashed as they are; have the couches spread: Caecilianus, do sit down",
+      "source": "Mart. 8.67.5–6"
+    },
+    {
+      "latin": "ego prīmus in illō caespite cōnsēdī, dum līna madentia siccō",
+      "english": "I was the first to sit down on that turf, while I dried my wet lines",
+      "source": "Ov. Met. 13.930–931"
+    }
+  ],
+  "related": [
+    "sit-down",
+    "sit-up-straight",
+    "sit-cross-legged",
+    "seat",
+    "chair",
+    "stand"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/sedeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sedeo</a> · <a href=\"https://logeion.uchicago.edu/consido\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: consido</a>",
+    "Quotations from the Latinitas loci collections (loci-gellius, loci-cicero-philosophica, loci-martialis, loci-ovidius, loci-livius), checked against the editions named there.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: p. 34, checked against the searchable text of the book (9 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "id": "begin",
+  "english": "begin",
+  "pos": "verb",
+  "also": [
+    "start",
+    "begin to",
+    "start to",
+    "commence",
+    "make a start"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "incipiō, incipere, incēpī, inceptum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "begin, start",
+      "evidence": [
+        "Hor. Ep. 1.2.41: <span lang=\"la\">sapere audē, incipe</span>",
+        "Ov. F. 1.149: <span lang=\"la\">quārē novus incipit annus</span>"
+      ],
+      "comment": "With an infinitive, with an object, or alone, and things begin too (<span lang=\"la\">incipit annus</span>). In the perfect <span lang=\"la\">coepī</span> is the commoner form."
+    },
+    {
+      "latin": "coepī, coepisse, coeptum",
+      "status": "recommended",
+      "period": "classical",
+      "grammar": "verb, defective (perfect forms only)",
+      "gloss": "began, have begun",
+      "evidence": [
+        "Hor. Ep. 1.2.40: <span lang=\"la\">dīmidium factī, quī coepit, habet</span>",
+        "Phaedr. 1.13.5: <span lang=\"la\">deinde sīc coepit loquī</span>"
+      ],
+      "comment": "The past of “begin”; with a passive infinitive it is passive too: <span lang=\"la\">ars habērī coepta</span> (Liv. 39.6.9)."
+    },
+    {
+      "latin": "incohō (inchoō), incohāre, incohāvī, incohātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "begin, start (a piece of work)",
+      "evidence": [
+        "Mart. 13.36.2: <span lang=\"la\">inchoat atque eadem fīnit olīva dapēs</span>"
+      ],
+      "comment": "Of starting something that is to be finished: a building, a book, a meal."
+    },
+    {
+      "latin": "initium facere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "make a start",
+      "evidence": [
+        "Cic. Phil. 14.36: <span lang=\"la\">facere initium cōnflīgendī</span> (Lewis &amp; Short)",
+        "Caes. BG 1.1.5: <span lang=\"la\">initium capit ā flūmine Rhodanō</span>, of a region that begins at a river"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "dīmidium factī, quī coepit, habet; sapere audē, incipe",
+      "english": "well begun is half done: dare to be wise, and begin",
+      "source": "Hor. Ep. 1.2.40–41"
+    },
+    {
+      "latin": "dīc, age, frīgoribus quārē novus incipit annus, quī melius per vēr incipiendus erat?",
+      "english": "Come, tell me: why does the new year begin in the cold, when it would better have been begun in spring?",
+      "source": "Ov. F. 1.149–150"
+    },
+    {
+      "latin": "animadvertuntque ea, quae domī fīunt, cūriōsius incipiuntque commentārī aliquid et discere",
+      "english": "and they watch what goes on at home more keenly, and begin to make things up and to learn",
+      "source": "Cic. Fin. 5.42"
+    }
+  ],
+  "related": [
+    "end-bring-to-an-end",
+    "end-come-to-an-end",
+    "begin-to-boil",
+    "continue",
+    "stop-cease"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/incipio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: incipio</a> · <a href=\"https://logeion.uchicago.edu/coepio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: coepio</a> · <a href=\"https://logeion.uchicago.edu/incoho\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: incoho</a> · <a href=\"https://logeion.uchicago.edu/initium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: initium</a>",
+    "Caesar and Phaedrus checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-horatius, loci-ovidius, loci-cicero-philosophica, loci-martialis, loci-livius), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

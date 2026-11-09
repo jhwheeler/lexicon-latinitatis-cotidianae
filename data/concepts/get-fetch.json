@@ -1,0 +1,67 @@
+{
+  "id": "get-fetch",
+  "english": "get",
+  "sense": "fetch, go and get",
+  "pos": "verb",
+  "also": [
+    "fetch",
+    "go and get",
+    "go for"
+  ],
+  "also_under": [
+    "sermo"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "petō, petere, petīvī, petītum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "go for, fetch (a thing)",
+      "evidence": [
+        "Gell. 17.8.8: <span lang=\"la\">nōnne īs curriculō atque oleum petis?</span>",
+        "Plin. NH 9.169: <span lang=\"la\">petere Brundisium ostreās</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Of going somewhere for something (Lewis &amp; Short). “Bring it here” is <span lang=\"la\">affer</span> (bring)."
+    },
+    {
+      "latin": "arcessō (accersō), arcessere, arcessīvī, arcessītum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "fetch, call (a person)",
+      "evidence": [
+        "Plaut. Men. 875: <span lang=\"la\">accersam medicum</span>"
+      ],
+      "comment": "Of making someone come (Lewis &amp; Short): <span lang=\"la\">medicum arcessere</span>, to fetch the doctor."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "verberō … nōnne īs curriculō atque oleum petis?",
+      "english": "You rascal … won’t you run and get some oil?",
+      "source": "Gell. 17.8.8"
+    },
+    {
+      "latin": "ībō atque accersam medicum jam quantum potest.",
+      "english": "I’ll go and fetch the doctor, as fast as I can.",
+      "source": "Plaut. Men. 875"
+    }
+  ],
+  "related": [
+    "get-obtain",
+    "bring",
+    "fetch-water",
+    "send",
+    "doctor"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/peto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: peto</a> · <a href=\"https://logeion.uchicago.edu/arcesso\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: arcesso</a>",
+    "Plautus checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-gellius), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

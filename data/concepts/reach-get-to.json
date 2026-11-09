@@ -6,7 +6,11 @@
   "also": [
     "arrive at",
     "reach the top",
-    "summit"
+    "summit",
+    "get",
+    "get there",
+    "get to",
+    "get home"
   ],
   "domain": "sermo",
   "terms": [
@@ -14,7 +18,12 @@
       "latin": "perveniō, pervenīre, pervēnī, perventum",
       "status": "recommended",
       "period": "classical",
-      "gloss": "reach, arrive at"
+      "gloss": "reach, arrive at",
+      "evidence": [
+        "Cic. Fam. 16.9.2: <span lang=\"la\">in Ītaliam ad Hydrūntem lūdibundī pervēnimus</span>",
+        "Sen. Ep. 123.1: <span lang=\"la\">in Albānum meum multā nocte pervēnī</span>"
+      ],
+      "comment": "With <span lang=\"la\">ad</span> or <span lang=\"la\">in</span> and the accusative; towns and <span lang=\"la\">domum</span> take the accusative alone, as after every verb of motion."
     }
   ],
   "phrases": [
@@ -22,16 +31,28 @@
       "latin": "Ad summum pervēnistī.",
       "english": "You’ve reached the top.",
       "source": "composed"
+    },
+    {
+      "latin": "itinere cōnfectus incommodō magis quam longō in Albānum meum multā nocte pervēnī: nihil habeō parātī nisi mē",
+      "english": "worn out by a journey more awkward than long, I got to my place at Alba late at night: nothing is ready but me",
+      "source": "Sen. Ep. 123.1"
+    },
+    {
+      "latin": "inde austrō lēnissimō caelō serēnō nocte illā et diē posterō in Ītaliam ad Hydrūntem lūdibundī pervēnimus",
+      "english": "from there, with the gentlest of south winds and a clear sky, that night and the next day we got to Italy at Hydruntum, enjoying ourselves all the way",
+      "source": "Cic. Fam. 16.9.2"
     }
   ],
   "related": [
     "climb-up",
-    "touch"
+    "touch",
+    "arrive"
   ],
   "sources": [
     "<a href=\"https://logeion.org/pervenio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pervenio</a>",
-    "Examples are composed for conversation with Theo; dictionary links document the component words, not these exact sentences or standardized modern climbing terminology.",
-    "The example sentences marked “composed” are ours."
+    "The composed examples are for conversation with Theo; dictionary links document the component words, not these exact sentences or standardized modern climbing terminology.",
+    "The example sentences marked “composed” are ours.",
+    "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-seneca-epistulae), checked against the editions named there."
   ],
   "review": {
     "status": "draft",

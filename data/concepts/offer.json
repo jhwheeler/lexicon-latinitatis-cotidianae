@@ -1,0 +1,84 @@
+{
+  "id": "offer",
+  "english": "offer",
+  "sense": "hold out, present",
+  "pos": [
+    "verb",
+    "noun"
+  ],
+  "also": [
+    "hold out",
+    "proffer",
+    "an offer"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "offerō, offerre, obtulī, oblātum",
+      "status": "recommended",
+      "period": "classical",
+      "grammar": "verb, irregular (ob + ferō)",
+      "gloss": "offer, hold out, present",
+      "evidence": [
+        "Publil. Sent. B 1: <span lang=\"la\">ultrō sī offerās</span>",
+        "Vulg. Lc. 24.42: <span lang=\"la\">obtulērunt eī partem piscis assī</span>"
+      ],
+      "comment": "<span lang=\"la\">ultrō offerre</span>, to offer unasked; <span lang=\"la\">sē offerre</span>, to present oneself or put oneself forward."
+    },
+    {
+      "latin": "dēferō, dēferre, dētulī, dēlātum",
+      "status": "alternative",
+      "period": "classical",
+      "grammar": "verb, irregular (dē + ferō)",
+      "gloss": "offer (a post, an honour, a task) to someone",
+      "evidence": [
+        "Caes. BG 2.4.7: <span lang=\"la\">ad hunc … summam tōtīus bellī omnium voluntāte dēferrī</span>"
+      ]
+    },
+    {
+      "latin": "condiciō, condiciōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "an offer, terms proposed",
+      "evidence": [
+        "Caes. BG 1.42.2: <span lang=\"la\">nōn respuit condiciōnem Caesar</span>",
+        "M-O s.v. deal, terms (of agreement), settlement offer"
+      ],
+      "comment": "<span lang=\"la\">alicui condiciōnem ferre</span>, to make someone an offer (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Bis est grātum quod opus est, ultrō sī offerās.",
+      "english": "What is needed is twice as welcome if you offer it unasked.",
+      "source": "Publil. Sent. B 1"
+    },
+    {
+      "latin": "Habētis hīc aliquid quod mandūcētur? At illī obtulērunt eī partem piscis assī et favum mellis.",
+      "english": "Have you anything here to eat? And they offered him a piece of grilled fish and a honeycomb.",
+      "source": "Vulg. Lc. 24.41–42"
+    },
+    {
+      "latin": "Nōn respuit condiciōnem Caesar jamque eum ad sānitātem revertī arbitrābātur, cum id quod anteā petentī dēnegāsset ultrō pollicērētur.",
+      "english": "Caesar did not reject the offer, and thought the man was coming to his senses, since he was now offering of his own accord what he had refused when asked.",
+      "source": "Caes. BG 1.42.2"
+    }
+  ],
+  "related": [
+    "offer-to-do",
+    "give",
+    "gift",
+    "bargain"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/offero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: offero</a> · <a href=\"https://logeion.uchicago.edu/defero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: defero</a> · <a href=\"https://logeion.uchicago.edu/condicio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: condicio</a>",
+    "Caesar checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-publilius, loci-vulgata), checked against the editions named there.",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. deal, terms (of agreement), settlement offer."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

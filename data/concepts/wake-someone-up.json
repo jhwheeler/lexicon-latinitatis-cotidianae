@@ -2,19 +2,72 @@
   "id": "wake-someone-up",
   "english": "wake someone up",
   "pos": "verb",
+  "also": [
+    "wake",
+    "waken",
+    "awaken",
+    "rouse"
+  ],
   "domain": "sermo",
   "terms": [
     {
       "latin": "expergēfaciō, expergēfacere, expergēfēcī, expergēfactum",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "evidence": [
+        "Suet. Calig. 6 (Lewis &amp; Short)"
+      ],
+      "comment": "Lewis &amp; Short cite it of waking from sleep only from Suetonius and the Vulgate; Cicero and Livy say <span lang=\"la\">excitō</span>."
+    },
+    {
+      "latin": "excitō, excitāre, excitāvī, excitātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "wake, rouse (from sleep)",
+      "evidence": [
+        "Liv. 5.47.3: <span lang=\"la\">nē canēs quidem … excitārent</span>",
+        "Cic. Rep. 6.12: <span lang=\"la\">nē mē ē somnō excitētis</span> (Lewis &amp; Short)",
+        "Traupman 39, 403: wake up, tr., <span lang=\"la\">(ē somnō) excitāre</span>"
+      ],
+      "comment": "The usual verb of classical prose, often with <span lang=\"la\">ē somnō</span>."
+    },
+    {
+      "latin": "suscitō, suscitāre, suscitāvī, suscitātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "wake, rouse",
+      "evidence": [
+        "Plaut. Most. 372c: <span lang=\"la\">Suscitā istum, Delphium.</span>",
+        "Cic. Tusc. 4.44: <span lang=\"la\">aliquem ē somnō</span> (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Suscitā istum, Delphium. — Callidamatēs, Callidamatēs, vigilā.",
+      "english": "Wake him up, Delphium. — Callidamates, Callidamates, wake up!",
+      "source": "Plaut. Most. 372c–373"
+    },
+    {
+      "latin": "tantō silentiō in summum ēvāsēre ut nōn custōdēs sōlum fallerent, sed nē canēs quidem, sollicitum animal ad nocturnōs strepitūs, excitārent",
+      "english": "they reached the top so quietly that they slipped past the guards and did not even wake the dogs, creatures that fret at every noise in the night",
+      "source": "Liv. 5.47.3"
+    },
+    {
+      "latin": "hī nostrī vigilēs nocturnī, quōs excitandīs in opera mortālibus rumpendōque somnō nātūra genuit",
+      "english": "these night watchmen of ours, whom nature made to wake us mortals for our work and break our sleep",
+      "source": "Plin. NH 10.46"
     }
   ],
   "related": [
     "wake-up"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/expergefacio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: expergefacio</a>"
+    "<a href=\"https://logeion.uchicago.edu/expergefacio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: expergefacio</a>",
+    "<a href=\"https://logeion.uchicago.edu/excito\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: excito</a> · <a href=\"https://logeion.uchicago.edu/suscito\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: suscito</a>",
+    "Plautus checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-livius, loci-plinius), checked against the editions named there.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: pp. 39, 403, checked against the searchable text of the book (9 November 2026)."
   ],
   "review": {
     "status": "draft",

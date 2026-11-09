@@ -2,15 +2,39 @@
   "id": "big",
   "english": "big",
   "pos": "adjective",
+  "also": [
+    "large",
+    "great",
+    "bigger"
+  ],
   "also_under": [
     "verba"
   ],
   "domain": "natura",
   "terms": [
     {
+      "latin": "magnus, magna, magnum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "big, large, great",
+      "grammar": "adjective; comparative major, superlative maximus",
+      "evidence": [
+        "Cic. N.D. 2.17: <span lang=\"la\">magna et pulchra domus</span> (Lewis &amp; Short)",
+        "Cato Agr. 5.8: <span lang=\"la\">stercilīnum magnum</span>"
+      ],
+      "comment": "The general word for size, amount and degree: big, large and great alike. <span lang=\"la\">Major</span> is “bigger” and also “older”; <span lang=\"la\">majōrēs</span> are ancestors (see major)."
+    },
+    {
       "latin": "grandis, grande",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "gloss": "big, full-grown, large",
+      "grammar": "adjective, third declension",
+      "evidence": [
+        "Cic. de Or. 2.131: <span lang=\"la\">meliōrēs fētūs … et grandiōrēs</span> (Lewis &amp; Short)",
+        "Cic. Sen. 63: <span lang=\"la\">grandis nātū</span>"
+      ],
+      "comment": "Big as things grow big: vegetables, logs, children; <span lang=\"la\">grandis nātū</span> is “old” (Cic. Sen. 63). Lewis &amp; Short: “most frequent of things”."
     }
   ],
   "phrases": [
@@ -18,10 +42,30 @@
       "latin": "Māla ad crustum, nōn mollia sed dūra, nōn parva sed grandia, emenda erant",
       "english": "Apples had to be bought for the pie, not soft but firm, not small but big",
       "source": "Libellus IV, <span lang=\"la\">Diēs Grātulātiōnis</span>"
+    },
+    {
+      "latin": "stercilīnum magnum studē ut habeās.",
+      "english": "make sure you have a big manure heap.",
+      "source": "Cato Agr. 5.8"
+    },
+    {
+      "latin": "aspice quam tumeat magnō jecur ānsere majus!",
+      "english": "look how it swells, a liver bigger than a big goose!",
+      "source": "Mart. 13.58.1"
     }
   ],
+  "related": [
+    "small",
+    "tiny",
+    "major",
+    "too-big",
+    "so-big",
+    "when-youre-big"
+  ],
   "sources": [
-    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+    "<a href=\"https://logeion.uchicago.edu/magnus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: magnus</a> · <a href=\"https://logeion.uchicago.edu/grandis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: grandis</a>",
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+    "Quotations from the Latinitas loci collections (loci-cato, loci-martialis, loci-cicero-philosophica), checked against the editions named there."
   ],
   "review": {
     "status": "draft",

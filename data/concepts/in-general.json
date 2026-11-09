@@ -1,0 +1,99 @@
+{
+  "id": "in-general",
+  "english": "in general",
+  "pos": "adverb",
+  "also": [
+    "generally",
+    "as a rule",
+    "on the whole",
+    "in general terms"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "plērumque",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "generally, as a rule, mostly",
+      "grammar": "adverb",
+      "evidence": [
+        "Cic. Off. 1.118: <span lang=\"la\">plērumque autem parentium praeceptīs imbūtī</span>",
+        "Plin. Ep. 9.36.1: <span lang=\"la\">plērumque circā hōram prīmam</span>"
+      ],
+      "comment": "What happens as a rule, though not always: <span lang=\"la\">plērumque enim nōn semper ēveniunt</span> (Cic. Div. 2.14, Lewis &amp; Short)."
+    },
+    {
+      "latin": "in ūniversum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "in general, on the whole",
+      "grammar": "adverbial phrase",
+      "evidence": [
+        "Tac. Germ. 5.1: <span lang=\"la\">in ūniversum tamen</span>",
+        "Liv. 9.26.8: <span lang=\"la\">nōn nōminātim, sed in ūniversum</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Taken as a whole, as against one by one; Livy and Tacitus, not Cicero or Caesar (Lewis &amp; Short)."
+    },
+    {
+      "latin": "omnīnō",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "in general, speaking generally",
+      "grammar": "adverb",
+      "evidence": [
+        "Cic. Off. 1.66: <span lang=\"la\">omnīnō fortis animus et magnus duābus rēbus maximē cernitur</span>"
+      ],
+      "comment": "At the head of a general statement (Lewis &amp; Short); its usual sense is “altogether, at all”."
+    },
+    {
+      "latin": "ferē",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "generally, usually",
+      "grammar": "adverb",
+      "evidence": [
+        "Cic. Rep. 6.10: <span lang=\"la\">fit ferē ut</span> (Lewis &amp; Short)",
+        "Traupman 98"
+      ],
+      "comment": "More often “almost, about”."
+    },
+    {
+      "latin": "ūniversē",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "in general terms",
+      "grammar": "adverb",
+      "evidence": [
+        "Cic. Verr. 2.5.143: <span lang=\"la\">generātim atque ūniversē loquī</span> (Lewis &amp; Short)",
+        "Cic. Att. 5.2.1 (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ēvigilō cum libuit, plērumque circā hōram prīmam, saepe ante, tardius rārō",
+      "english": "I wake when I like, generally about the first hour, often before, rarely later",
+      "source": "Plin. Ep. 9.36.1"
+    },
+    {
+      "latin": "terra etsī aliquantō speciē differt, in ūniversum tamen aut silvīs horrida aut palūdibus foeda",
+      "english": "the land, though it varies somewhat in appearance, is in general either bristling with forests or foul with marshes",
+      "source": "Tac. Germ. 5.1"
+    }
+  ],
+  "related": [
+    "general",
+    "practice-custom",
+    "as-usual"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/plerumque\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: plerumque</a> · <a href=\"https://logeion.uchicago.edu/universus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: universus</a> · <a href=\"https://logeion.uchicago.edu/omnino\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: omnino</a> · <a href=\"https://logeion.uchicago.edu/fere\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fere</a> · <a href=\"https://logeion.uchicago.edu/universe\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: universe</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 98.",
+    "Quotations from the Latinitas loci collections (loci-cicero-philosophica, loci-plinius, loci-tacitus), checked against the editions named there. Cicero (Off. 1.66) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

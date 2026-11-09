@@ -1,0 +1,82 @@
+{
+  "id": "broken",
+  "english": "broken",
+  "pos": "adjective",
+  "also": [
+    "it’s broken",
+    "cracked",
+    "smashed",
+    "broken down"
+  ],
+  "domain": "verba",
+  "also_under": [
+    "officina"
+  ],
+  "terms": [
+    {
+      "latin": "frāctus, frācta, frāctum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "broken",
+      "grammar": "adjective (participle of frangō, frangere, frēgī, frāctum)",
+      "evidence": [
+        "Cato Agr. 144: <span lang=\"la\">nisi quae vetustāte frāctae erunt</span>",
+        "Caes. BG 4.29.3: <span lang=\"la\">complūribus nāvibus frāctīs</span> (Lewis &amp; Short)"
+      ],
+      "comment": "“It’s broken” is <span lang=\"la\">frāctum est</span>; “who broke it?”, <span lang=\"la\">quis frēgit?</span> Broken into little pieces is <span lang=\"la\">comminūtus</span> (see break into pieces); a string or a balloon that has burst is <span lang=\"la\">ruptus</span> (see burst); a broken bone, see fracture.",
+      "notes": [
+        "fractus"
+      ]
+    },
+    {
+      "latin": "vitium facere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "develop a fault, be damaged",
+      "grammar": "phrase; in the perfect, vitium fēcit",
+      "evidence": [
+        "Cic. Top. 15: <span lang=\"la\">sī aedēs corruērunt vitiumve fēcērunt</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Cicero’s phrase for a house that has been damaged. For a machine that has stopped working it is our suggestion."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "scālae ita utī datae erunt, ita redditō, nisi quae vetustāte frāctae erunt",
+      "english": "return the ladders as they were given, except any that have broken with age",
+      "source": "Cato Agr. 144"
+    },
+    {
+      "latin": "frangere dum metuis, frangēs crystallina: peccant sēcūrae nimium sollicitaeque manūs",
+      "english": "while you are afraid of breaking the glass, you will break it: hands that are too careless slip, and so do hands that are too careful",
+      "source": "Mart. 14.111.1–2"
+    }
+  ],
+  "notes": {
+    "fractus": {
+      "form": "frāctus",
+      "claim": "long a",
+      "against": "Lewis &amp; Short leaves it unmarked",
+      "html": "De Vaan 239, s.v. <span lang=\"la\">frangō</span>: “The long vowel of fractus is due to Lachmann’s Law.” Traupman 106 marks it too."
+    }
+  },
+  "related": [
+    "break-into-pieces",
+    "burst",
+    "fracture",
+    "repair",
+    "mend",
+    "whole-in-one-piece"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/frango\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: frango</a> · <a href=\"https://logeion.uchicago.edu/vitium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vitium</a>",
+    "Michiel de Vaan, <em>Etymological Dictionary of Latin and the other Italic Languages</em> (2008), p. 239.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 106.",
+    "Quotations from the Latinitas loci collections (loci-cato, loci-martialis), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

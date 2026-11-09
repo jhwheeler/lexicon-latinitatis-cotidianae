@@ -1,0 +1,107 @@
+{
+  "id": "special",
+  "english": "special",
+  "pos": "adjective",
+  "also": [
+    "especial",
+    "extraordinary",
+    "unique"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "praecipuus, praecipua, praecipuum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "special, particular, beyond the ordinary",
+      "grammar": "adjective",
+      "evidence": [
+        "Cic. Off. 1.12: <span lang=\"la\">praecipuum quendam amōrem</span>",
+        "Caes. BG 5.54.4: <span lang=\"la\">praecipuō semper honōre</span>"
+      ],
+      "comment": "Lewis &amp; Short: “particular, peculiar, especial (opp. communis)”: more than others get, or more than usual. The adverb <span lang=\"la\">praecipuē</span> is “especially” (see particular)."
+    },
+    {
+      "latin": "singulāris, singulāre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "unique, one of a kind",
+      "grammar": "adjective, third declension",
+      "evidence": [
+        "Cic. Imp. Pomp. 3: <span lang=\"la\">singulāris eximiaque virtūs</span> (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "eximius, eximia, eximium",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "exceptional, out of the ordinary",
+      "grammar": "adjective",
+      "evidence": [
+        "Cic. Off. 1.67: <span lang=\"la\">ea quae eximia plērīsque et praeclāra videntur</span> (Lewis &amp; Short)"
+      ],
+      "comment": "“Taken out” of the mass (<span lang=\"la\">eximō</span>, Lewis &amp; Short)."
+    },
+    {
+      "latin": "proprius, propria, proprium",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "special to, peculiar to, one’s own",
+      "grammar": "adjective",
+      "evidence": [
+        "Ov. Met. 6.350: <span lang=\"la\">nec sōlem proprium nātūra … fēcit</span>",
+        "Traupman 162: <span lang=\"la\">proprium ingenium</span>, a special talent"
+      ],
+      "comment": "What belongs to one person or thing and not to others."
+    },
+    {
+      "latin": "speciālis, speciāle",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "particular (as against general)",
+      "grammar": "adjective, third declension",
+      "evidence": [
+        "Sen. Ep. 58.9: <span lang=\"la\">genera speciālia</span> (Lewis &amp; Short)",
+        "Quint. 5.10.43 (Lewis &amp; Short)",
+        "Traupman 130: <span lang=\"la\">pretium speciāle</span>, a special offer"
+      ],
+      "comment": "A term of logic and rhetoric, opposed to <span lang=\"la\">generālis</span>, and post-Augustan (Lewis &amp; Short); it does not mean “out of the ordinary”. Traupman’s <span lang=\"la\">pretium speciāle</span> (see bargain) is a modern use."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ingeneratque in prīmīs praecipuum quendam amōrem in eōs quī prōcreātī sunt",
+      "english": "and above all nature implants a special love for those one has brought into the world",
+      "source": "Cic. Off. 1.12"
+    },
+    {
+      "latin": "praeter Aeduōs et Rēmōs, quōs praecipuō semper honōre Caesar habuit",
+      "english": "except the Aedui and the Remi, whom Caesar always held in special honour",
+      "source": "Caes. BG 5.54.4",
+      "notes": [
+        "caesar"
+      ]
+    }
+  ],
+  "related": [
+    "particular-specific",
+    "general",
+    "main",
+    "bargain"
+  ],
+  "notes": {
+    "caesar": {
+      "html": "Lewis &amp; Short cites the passage as Caes. BG 5.52; the Perseus text has it at 5.54.4."
+    }
+  },
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/praecipuus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praecipuus</a> · <a href=\"https://logeion.uchicago.edu/singularis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: singularis</a> · <a href=\"https://logeion.uchicago.edu/eximius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: eximius</a> · <a href=\"https://logeion.uchicago.edu/proprius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: proprius</a> · <a href=\"https://logeion.uchicago.edu/specialis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: specialis</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 130, 162.",
+    "Quotations from the Latinitas loci collections (loci-cicero-philosophica, loci-ovidius), checked against the editions named there. Caesar (BG 5.54.4) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "id": "current-water",
+  "english": "current",
+  "sense": "of a river or the sea",
+  "pos": "noun",
+  "also": [
+    "current of a river",
+    "against the current",
+    "with the current",
+    "upstream",
+    "downstream",
+    "strong current"
+  ],
+  "domain": "natura",
+  "terms": [
+    {
+      "latin": "flūmen, flūminis n.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "the stream, the current (flowing water)",
+      "grammar": "noun, third declension; in this sense in set phrases",
+      "evidence": [
+        "Caes. BG 7.58: <span lang=\"la\">secundō flūmine</span>, with the current",
+        "Caes. BG 7.60: <span lang=\"la\">adversō flūmine</span>, against the current",
+        "Traupman 203: current (in the sense of “the flow”), flūmen"
+      ],
+      "comment": "Properly “a flowing” (Lewis &amp; Short), and so the current itself: <span lang=\"la\">secundō flūmine</span>, with the current, downstream; <span lang=\"la\">adversō flūmine</span>, against it, upstream. The force of the current is <span lang=\"la\">vīs flūminis</span> (Caes. BG 4.15; Traupman 203)."
+    },
+    {
+      "latin": "aestus, aestūs m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a current at sea; the tide",
+      "evidence": [
+        "Caes. BG 4.23: <span lang=\"la\">et ventum et aestum ūnō tempore</span> … <span lang=\"la\">secundum</span>"
+      ],
+      "comment": "See tide."
+    },
+    {
+      "latin": "rapiditās, rapiditātis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the speed of a current",
+      "evidence": [
+        "Caes. BG 4.17: <span lang=\"la\">propter lātitūdinem, rapiditātem altitūdinemque flūminis</span>"
+      ],
+      "comment": "Rare: Caesar’s word for the rush of the Rhine (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nōn aliter quam quī adversō vix flūmine lembum rēmigiīs subigit, sī bracchia forte remīsit, atque illum in praeceps prōnō rapit alveus amnī",
+      "english": "just like a man who can barely row his boat against the current: if he happens to slacken his arms, the channel sweeps it headlong downstream",
+      "source": "Verg. G. 1.201–203"
+    }
+  ],
+  "related": [
+    "river",
+    "stream",
+    "tide",
+    "sea"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/flumen\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: flumen</a> · <a href=\"https://logeion.uchicago.edu/secundus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: secundus</a> · <a href=\"https://logeion.uchicago.edu/adversus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: adversus</a> · <a href=\"https://logeion.uchicago.edu/aestus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aestus</a> · <a href=\"https://logeion.uchicago.edu/rapiditas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: rapiditas</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 203, checked against the searchable text of the book (9 November 2026).",
+    "Caesar (BG 4.15, 4.17, 4.23, 7.58, 7.60) and Vergil (G. 1.201–203) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

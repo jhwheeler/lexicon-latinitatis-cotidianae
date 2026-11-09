@@ -1,0 +1,91 @@
+{
+  "id": "significant",
+  "english": "significant",
+  "sense": "considerable, notable",
+  "pos": "adjective",
+  "also": [
+    "significantly",
+    "considerable",
+    "substantial",
+    "notable",
+    "remarkable",
+    "a significant amount"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "nōn mediōcris, nōn mediōcre",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "significant, considerable, no small",
+      "grammar": "phrase: litotes with mediōcris (also haud mediōcris)",
+      "evidence": [
+        "Caes. BG 3.20: <span lang=\"la\">nōn mediōcrem sibi dīligentiam adhibendam intellegēbat</span>",
+        "Cic. Rep. 2.55: <span lang=\"la\">haud mediōcris hic … vir fuit</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Latin praises by denying the opposite: “not middling” is “considerable, remarkable” (Lewis &amp; Short, s.v. <span lang=\"la\">mediōcris</span>). Significantly, considerably: <span lang=\"la\">nōn mediōcriter</span> (Caes. BG 1.39, Lewis &amp; Short)."
+    },
+    {
+      "latin": "īnsignis, īnsigne",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "notable, remarkable, striking",
+      "grammar": "adjective, third declension",
+      "evidence": [
+        "Cic. Lael. 102: <span lang=\"la\">virtūs</span> (Lewis &amp; Short)",
+        "Phaedr. 1.11.14: <span lang=\"la\">īnsignis</span>"
+      ],
+      "comment": "What stands out, as if marked."
+    },
+    {
+      "latin": "aliquantus, aliquanta, aliquantum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "considerable, a fair amount of",
+      "grammar": "adjective; mostly the neuter with a genitive",
+      "evidence": [
+        "Cic. Off. 1.33: <span lang=\"la\">aliquantum agrī</span> (Lewis &amp; Short)",
+        "Sall. Jug. 105.4: <span lang=\"la\">timor aliquantus</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Between much and little (Lewis &amp; Short): <span lang=\"la\">aliquantum agrī</span>, a fair piece of land."
+    },
+    {
+      "latin": "significāns, significantis",
+      "status": "avoid",
+      "period": "classical",
+      "gloss": "expressive, clear (of words)",
+      "grammar": "adjective (participle of significō)",
+      "evidence": [
+        "Quint. 9.2.44: <span lang=\"la\">dīlūcida et significāns dēscrīptiō</span> (Lewis &amp; Short)"
+      ],
+      "comment": "A term of rhetoric for a word or a description that conveys its meaning well (Quintilian); it does not mean “considerable”."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nōn mediōcrem sibi dīligentiam adhibendam intellegēbat",
+      "english": "he understood that he would have to take no small care",
+      "source": "Caes. BG 3.20"
+    },
+    {
+      "latin": "quālis vidētur opera tibi vōcis meae? — īnsignis, inquit, sīc ut, nisi nōssem tuum animum genusque, similī fūgissem metū",
+      "english": "‘How do you like what my voice did?’ ‘Remarkable,’ he said, ‘so much so that, had I not known your nature and your breed, I would have run away in fear like the rest.’",
+      "source": "Phaedr. 1.11.13–15"
+    }
+  ],
+  "related": [
+    "important",
+    "major",
+    "average"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/mediocris\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mediocris</a> · <a href=\"https://logeion.uchicago.edu/insignis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: insignis</a> · <a href=\"https://logeion.uchicago.edu/aliquantus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aliquantus</a> · <a href=\"https://logeion.uchicago.edu/significo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: significo</a>",
+    "Quotations from the Latinitas loci collections (loci-phaedrus), checked against the editions named there.",
+    "Caesar (BG 3.20) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

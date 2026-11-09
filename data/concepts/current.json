@@ -1,0 +1,104 @@
+{
+  "id": "current",
+  "english": "current",
+  "sense": "present, of now",
+  "pos": "adjective",
+  "also": [
+    "currently",
+    "the current situation",
+    "contemporary",
+    "present-day",
+    "in current use"
+  ],
+  "domain": "tempus",
+  "terms": [
+    {
+      "latin": "praesēns, praesentis",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "present, current (as against past or future)",
+      "grammar": "adjective, third declension, one ending",
+      "evidence": [
+        "Gell. 1.10.4: <span lang=\"la\">loquere verbīs praesentibus</span>, words now in use (Lewis &amp; Short)",
+        "Caes. BC 1.52: <span lang=\"la\">inopiā praesentis, sed etiam futūrī temporis</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Of the speaker’s own time Latin rarely uses <span lang=\"la\">praesēns</span> alone, and says <span lang=\"la\">hic</span> instead (Lewis &amp; Short): <span lang=\"la\">hōc tempore</span>, at the current time."
+    },
+    {
+      "latin": "hic, haec, hoc",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "this, the present (of time)",
+      "grammar": "pronoun",
+      "evidence": [
+        "Cic. Rosc. Am. 154: <span lang=\"la\">quondam … hōc tempore</span>"
+      ],
+      "comment": "The current year is <span lang=\"la\">hic annus</span>; currently, <span lang=\"la\">hōc tempore</span> or <span lang=\"la\">nunc</span> (see now).",
+      "notes": [
+        "hic"
+      ]
+    },
+    {
+      "latin": "ūsitātus, ūsitāta, ūsitātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "current, in general use (of words and customs)",
+      "grammar": "adjective",
+      "evidence": [
+        "Traupman 299: current (in general use), ūsitātus",
+        "Cic. Fin. 3.4: <span lang=\"la\">vocābula</span> (Lewis &amp; Short)"
+      ],
+      "comment": "See normal."
+    },
+    {
+      "latin": "hodiernus, hodierna, hodiernum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "of today, present-day",
+      "grammar": "adjective",
+      "evidence": [
+        "Cic. Phil. 4.7: <span lang=\"la\">ex hodiernō ejus ēdictō</span> (Lewis &amp; Short)",
+        "M-O s.v. modern, contemporary, current"
+      ],
+      "comment": "Of this very day; the wider sense “present-day” is rare and post-Augustan (Lewis &amp; Short), and Morgan–Owens’s examples are Tertullian’s."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "vīve ergō mōribus praeteritīs, loquere verbīs praesentibus",
+      "english": "live, then, by the ways of the past, but speak the words of the present",
+      "source": "Gell. 1.10.4"
+    },
+    {
+      "latin": "adnotābant seniōrēs, quibus ōtiōsum est vetera et praesentia contendere",
+      "english": "the older men, who have time to compare past and present, remarked",
+      "source": "Tac. Ann. 13.3"
+    }
+  ],
+  "notes": {
+    "hic": {
+      "form": "hic",
+      "claim": "short i",
+      "against": "Lewis &amp; Short <span lang=\"la\">hīc, haec, hōc</span>, marking the heavy syllable as a long vowel",
+      "html": "De Vaan 284, s.v. <span lang=\"la\">hic</span>: the nominative is <span lang=\"la\">*hi-ke</span>, so the vowel is short and the syllable heavy (<span lang=\"la\">hicc</span>, p. 102, s.v. <span lang=\"la\">-ce</span>); the adverb <span lang=\"la\">hīc</span>, here, is the old locative <span lang=\"la\">*hoi-ke</span>."
+    }
+  },
+  "related": [
+    "now",
+    "today-nowadays",
+    "normal"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/praesens\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praesens</a> · <a href=\"https://logeion.uchicago.edu/praesum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praesum</a> · <a href=\"https://logeion.uchicago.edu/hic\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: hic</a> · <a href=\"https://logeion.uchicago.edu/usitatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: usitatus</a> · <a href=\"https://logeion.uchicago.edu/hodiernus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: hodiernus</a>",
+    "Michiel de Vaan, <em>Etymological Dictionary of Latin and the other Italic Languages</em> (2008), pp. 102, 284.",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. modern, contemporary, of this age, current.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 299, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-gellius, loci-tacitus), checked against the editions named there.",
+    "Cicero (Rosc. Am. 154) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "id": "recent",
+  "english": "recent",
+  "pos": "adjective",
+  "also": [
+    "latest",
+    "the latest",
+    "most recent",
+    "in recent years",
+    "in recent days"
+  ],
+  "domain": "tempus",
+  "terms": [
+    {
+      "latin": "recēns, recentis",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "recent, not long past; fresh",
+      "grammar": "adjective, third declension, one ending",
+      "evidence": [
+        "Caes. BG 1.14: <span lang=\"la\">recentium injūriārum memoriam</span> (Lewis &amp; Short)",
+        "Cic. Att. 8.15.2: <span lang=\"la\">recentissima tua est epistula Kal. data</span>",
+        "Traupman 369"
+      ],
+      "comment": "“That has not long existed”, as against <span lang=\"la\">novus</span>, “not there before” (Lewis &amp; Short). Within more recent memory: <span lang=\"la\">recentiōre memoriā</span> (Cic. N.D. 2.6, Lewis &amp; Short)."
+    },
+    {
+      "latin": "proximus, proxima, proximum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "most recent, last",
+      "grammar": "adjective",
+      "evidence": [
+        "Cic. Cat. 1.1: <span lang=\"la\">proximā nocte</span>"
+      ],
+      "comment": "The nearest in time, before or after (see last: the one before this)."
+    },
+    {
+      "latin": "nūper",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "recently, lately",
+      "grammar": "adverb",
+      "evidence": [
+        "Plin. NH 15.82: <span lang=\"la\">nūper excōgitātum est</span>"
+      ],
+      "comment": "A recent invention is something <span lang=\"la\">nūper excōgitātum</span> (see lately)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "recentissima tua est epistula Kal. data, in quā optās congressum pācemque nōn dēspērās",
+      "english": "your most recent letter is dated the Kalends; in it you hope for a meeting and do not despair of peace",
+      "source": "Cic. Att. 8.15.2"
+    },
+    {
+      "latin": "nātūrā locus jam ante praeceps recentī lāpsū terrae in pedum mīlle admodum altitūdinem abruptus erat",
+      "english": "the place, steep by nature already, had been broken away by a recent landslide to a depth of nearly a thousand feet",
+      "source": "Liv. 21.36.2"
+    }
+  ],
+  "related": [
+    "lately",
+    "new",
+    "last-previous"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/recens\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: recens</a> · <a href=\"https://logeion.uchicago.edu/proximus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: proximus</a> · <a href=\"https://logeion.uchicago.edu/nuper\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nuper</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 369, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-livius, loci-plinius), checked against the editions named there.",
+    "Cicero (Att. 8.15.2) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

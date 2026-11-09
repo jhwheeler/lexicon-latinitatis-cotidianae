@@ -1,0 +1,78 @@
+{
+  "id": "various",
+  "english": "various",
+  "pos": "adjective",
+  "also": [
+    "varied",
+    "all sorts of",
+    "all kinds of",
+    "diverse",
+    "for various reasons"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "varius, varia, varium",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "various, of different kinds; varied",
+      "grammar": "adjective",
+      "evidence": [
+        "Cic. Sen. 46: <span lang=\"la\">variō sermōne</span>",
+        "Plin. Ep. 9.36.4: <span lang=\"la\">variīs sermōnibus</span>",
+        "Traupman 401"
+      ],
+      "comment": "Talk of all sorts is <span lang=\"la\">varius sermō</span>. For various reasons is <span lang=\"la\">multīs dē causīs</span> (Caes. BG 4.16; Traupman 106, 369)."
+    },
+    {
+      "latin": "dīversus, dīversa, dīversum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "different, of different kinds; going different ways",
+      "evidence": [
+        "Catull. 46.10–11: <span lang=\"la\">dīversae variē viae</span>",
+        "Col. 12.47.6: <span lang=\"la\">dīversa genera</span>"
+      ],
+      "comment": "Stronger than <span lang=\"la\">varius</span>: things set apart from one another (see different)."
+    },
+    {
+      "latin": "complūrēs, complūra",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "several, a number of",
+      "grammar": "adjective, third declension, plural only; neuter also complūria (mostly early Latin)",
+      "evidence": [
+        "Ter. Ad. 2.2.22: <span lang=\"la\">mulierēs complūrēs</span> (Lewis &amp; Short)",
+        "Cic. Fam. 10.6.3: <span lang=\"la\">complūrēs cōnsulēs</span> (Lewis &amp; Short)"
+      ],
+      "comment": "For “various” meaning “several”, with no stress on their being different."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "convīviumque vīcīnōrum cotīdiē compleō, quod ad multam noctem quam maximē possumus variō sermōne prōdūcimus",
+      "english": "every day I fill my table with neighbours, and we draw the evening out as far into the night as we can with talk of every kind",
+      "source": "Cic. Sen. 46"
+    },
+    {
+      "latin": "ita variīs sermōnibus vespera extenditur, et quamquam longissimus diēs bene conditur",
+      "english": "so the evening is drawn out with talk of various kinds, and even the longest day is well laid to rest",
+      "source": "Plin. Ep. 9.36.4"
+    }
+  ],
+  "related": [
+    "different",
+    "kind"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/varius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: varius</a> · <a href=\"https://logeion.uchicago.edu/diversus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: diversus</a> · <a href=\"https://logeion.uchicago.edu/complures\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: complures</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 106, 369, 401, checked against the searchable text of the book (9 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-cicero-philosophica, loci-plinius, loci-catullus, loci-cato), checked against the editions named there.",
+    "Caesar (BG 4.16.1) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -13,8 +13,12 @@
       "status": "recommended",
       "period": "classical",
       "evidence": [
-        "Catull. 44.15"
-      ]
+        "Catull. 44.15",
+        "Catull.",
+        "Hor.",
+        "Plin."
+      ],
+      "comment": "Quantities follow Lewis &amp; Short. For Catullus’s cold cured <span lang=\"la\">ōtiōque et urtīcā</span>, see the cold."
     }
   ],
   "phrases": [
@@ -22,16 +26,24 @@
       "latin": "Cavē urtīcās: urunt!",
       "english": "Mind the nettles: they sting!",
       "source": "composed"
+    },
+    {
+      "latin": "Urtīcā quid esse invīsius potest? at illa … vel plūrimīs scatet remediīs",
+      "english": "what could be more hateful than the nettle? yet it teems with remedies (the opening of Pliny’s chapter)",
+      "source": "Plin. NH 22.31"
     }
   ],
   "related": [
     "sea-anemone",
-    "sting"
+    "sting",
+    "cold-illness",
+    "herbal-tea"
   ],
   "sources": [
     "<a href=\"https://logeion.org/urtica\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: urtica</a>",
     "A classical word from Lewis &amp; Short; neither Traupman nor Morgan–Owens has it in the sections swept.",
-    "The example sentence marked “composed” is ours."
+    "The example sentence marked “composed” is ours.",
+    "Pliny (NH 22.31) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
   ],
   "review": {
     "status": "draft",

@@ -1,0 +1,70 @@
+{
+  "id": "be-awake",
+  "english": "be awake",
+  "pos": "verb",
+  "also": [
+    "awake",
+    "are you awake?",
+    "wide awake",
+    "stay up all night",
+    "time to get up"
+  ],
+  "domain": "corpus",
+  "terms": [
+    {
+      "latin": "vigilō, vigilāre",
+      "status": "recommended",
+      "period": "classical",
+      "evidence": [
+        "Traupman 35, 38"
+      ]
+    },
+    {
+      "latin": "pervigilāre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "stay awake all night",
+      "evidence": [
+        "Traupman 56: <span lang=\"la\">noctem pervigilābam</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Etiam vigilās? — Vigilō.",
+      "english": "Are you awake yet? — I am",
+      "source": "Plaut. <em>Most.</em> 383, 373b"
+    },
+    {
+      "latin": "Tempus est surgere.",
+      "english": "Time to get up",
+      "source": "Traupman 35"
+    },
+    {
+      "latin": "Somnium malum erat; nunc vigilās, et ego hīc sum.",
+      "english": "It was a bad dream; now you’re awake, and I’m here.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "sleepy",
+    "dream",
+    "very-early",
+    "stretch-oneself",
+    "drag-out-of-bed"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.org/vigilo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vigilo</a> · <a href=\"https://logeion.org/pervigilo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pervigilo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): pp. 35, 38, 56.",
+    "Plautus from the Latinitas loci collections.",
+    "The example sentence marked “composed” is ours."
+  ],
+  "replaces": [
+    "entry-307"
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

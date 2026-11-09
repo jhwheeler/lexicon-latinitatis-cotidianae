@@ -3,7 +3,8 @@
   "english": "louse",
   "pos": "noun",
   "also": [
-    "lice"
+    "lice",
+    "nits"
   ],
   "domain": "natura",
   "terms": [
@@ -12,10 +13,13 @@
       "status": "recommended",
       "period": "classical",
       "evidence": [
-        "Traupman 143"
+        "Traupman 143",
+        "Traupman 342",
+        "Cels."
       ],
       "notes": [
-        "pediculus"
+        "pediculus",
+        "pediculus-2"
       ]
     }
   ],
@@ -25,14 +29,23 @@
       "claim": "short e, long i",
       "against": "Traupman 143, printed with a long e",
       "html": "Lewis &amp; Short <span lang=\"la\">pĕdīcŭlus</span>, whose quantities are followed here."
+    },
+    "pediculus-2": {
+      "form": "pedīculus",
+      "claim": "short e, long ī",
+      "against": "Traupman 342, printing <span lang=\"la\">pēdicul·us</span>",
+      "html": "Lewis &amp; Short <span lang=\"la\">pĕdīculus</span>, for both the louse and the little foot.",
+      "ruling": "quantity-authorities"
     }
   },
   "related": [
-    "flea"
+    "flea",
+    "sting-insect"
   ],
   "sources": [
     "<a href=\"https://logeion.org/pediculus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pediculus</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 143."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 143.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 342."
   ],
   "review": {
     "status": "draft",

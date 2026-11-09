@@ -1,0 +1,65 @@
+{
+  "id": "curl-hair",
+  "english": "curl",
+  "sense": "of hair",
+  "pos": [
+    "noun",
+    "verb"
+  ],
+  "also": [
+    "ringlet",
+    "curls",
+    "curl one’s hair"
+  ],
+  "domain": "corpus",
+  "terms": [
+    {
+      "latin": "cirrus, cirrī m.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "curl, ringlet"
+    },
+    {
+      "latin": "crispāre",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "curl the hair",
+      "evidence": [
+        "Traupman 36, 38",
+        "M-O s.v. curl one’s hair: <span lang=\"la\">capillum crispāre</span>",
+        "Plin."
+      ],
+      "notes": [
+        "crispare"
+      ]
+    },
+    {
+      "latin": "cincinnus, cincinnī m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "curl, ringlet"
+    }
+  ],
+  "notes": {
+    "crispare": {
+      "form": "crispāre",
+      "claim": "short i",
+      "against": "Traupman <span lang=\"la\">crīspāre</span>, with a long ī",
+      "html": "Lewis &amp; Short leaves <span lang=\"la\">crispus</span> and <span lang=\"la\">crispō</span> unmarked, and no other evidence for a long vowel was found.",
+      "ruling": "quantity-authorities"
+    }
+  },
+  "related": [
+    "curly",
+    "curling-iron"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.org/cirrus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cirrus</a> · <a href=\"https://logeion.org/cincinnus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cincinnus</a> · <a href=\"https://logeion.org/crispo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: crispo</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. curl one’s hair. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): pp. 36, 38."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

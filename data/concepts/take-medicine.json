@@ -1,0 +1,59 @@
+{
+  "id": "take-medicine",
+  "english": "take",
+  "sense": "medicine",
+  "pos": "verb",
+  "also": [
+    "take medicine",
+    "take a pill"
+  ],
+  "domain": "corpus",
+  "terms": [
+    {
+      "latin": "sūmere",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "take (medicine)",
+      "evidence": [
+        "Sen. Ep. 83.27"
+      ],
+      "comment": "The plain classical verb."
+    },
+    {
+      "latin": "ingerere",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "take (medicine)",
+      "evidence": [
+        "M-O s.v. take (drug)"
+      ],
+      "comment": "From 19th-century medical Latin."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "sopōre sūmptō",
+      "english": "having taken a sleeping draught",
+      "source": "Sen. Ep. 83.27"
+    },
+    {
+      "latin": "Hanc pilulam cum aquā sūme.",
+      "english": "Take this pill with water.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "medicine-drug",
+    "pill"
+  ],
+  "sources": [
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. take (drug).",
+    "Seneca (Ep. 83.27) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>.",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

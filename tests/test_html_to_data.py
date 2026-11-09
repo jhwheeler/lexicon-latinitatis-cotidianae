@@ -2,6 +2,8 @@
 import importlib.util
 import json
 from pathlib import Path
+import shutil
+import tempfile
 import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -16,23 +18,34 @@ def load(name):
 
 builder = load('build')
 converter = load('html_to_data')
+# Every grouped card is a concept record now, so the page these tests convert gets a card of its own.
+CARD = {'id': 'entry-99998', 'anchor': 'test-0', 'english': 'Test card', 'latin': 'probātiō, probātiōnis f.',
+        'tags': [], 'blocks': [{'type': 'list', 'items': [{'html': '<strong lang="la">probō</strong> — test'}]}]}
 
 
 class ConverterTests(unittest.TestCase):
     def setUp(self):
-        self.page = builder.build()
+        self.root = ROOT
+        if not any(json.loads(p.read_text(encoding='utf-8')) for p in (ROOT / 'data/entries').glob('*.json')):
+            temp = tempfile.TemporaryDirectory()
+            self.addCleanup(temp.cleanup)
+            self.root = Path(temp.name)
+            for path in ('data', 'src'):
+                shutil.copytree(ROOT / path, self.root / path)
+            (self.root / 'data/entries/labor.json').write_text(converter.dump([CARD]), encoding='utf-8')
+        self.page = builder.build(self.root)
 
     def test_round_trip_reproduces_data(self):
         catalog, entries = converter.convert(self.page)
-        self.assertEqual(catalog, json.loads((ROOT / 'data/catalog.json').read_text(encoding='utf-8')))
+        self.assertEqual(catalog, json.loads((self.root / 'data/catalog.json').read_text(encoding='utf-8')))
         for key, items in entries.items():
-            path = ROOT / f'data/entries/{key}.json'
+            path = self.root / f'data/entries/{key}.json'
             self.assertEqual(converter.dump(items), path.read_text(encoding='utf-8'), key)
 
     def test_round_trip_reproduces_template(self):
         shell = converter.template(self.page)
         for name, text in zip(('page.html', 'styles.css', 'search.js'), shell):
-            self.assertEqual(text, (ROOT / f'src/{name}').read_text(encoding='utf-8'), name)
+            self.assertEqual(text, (self.root / f'src/{name}').read_text(encoding='utf-8'), name)
 
     def test_hand_added_entry_is_extracted(self):
         card = ('<article class="entry" id="test-1" data-entry data-entry-id="entry-99999" '

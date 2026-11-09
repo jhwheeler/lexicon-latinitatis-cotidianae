@@ -1,0 +1,68 @@
+{
+  "id": "run",
+  "english": "run",
+  "pos": "verb",
+  "also": [
+    "running",
+    "trot",
+    "jog",
+    "at a trot"
+  ],
+  "domain": "corpus",
+  "terms": [
+    {
+      "latin": "currō, currere, cucurrī, cursum",
+      "status": "recommended",
+      "period": "classical"
+    },
+    {
+      "latin": "tolūtim currere / cursitāre",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "trot, jog"
+    },
+    {
+      "latin": "tolūtim",
+      "status": "alternative",
+      "period": "classical",
+      "grammar": "adverb",
+      "gloss": "at a trot",
+      "evidence": [
+        "Traupman 60",
+        "Varro",
+        "Pliny"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Theodōrus autem nōn ībat sed currēbat",
+      "english": "Theo, though, wasn’t walking but running",
+      "source": "Libellus I, <span lang=\"la\">Iter in Lūsitāniam</span>"
+    },
+    {
+      "latin": "ad olīvam tolūtim cucurrit truncumque manū tangēns «Valē, olīva!» inquit",
+      "english": "he trotted over to the olive tree and, touching the trunk, said, “Goodbye, olive tree!”",
+      "source": "Libellus V, <span lang=\"la\">Lisbōna: castellum et ōceanārium</span>"
+    }
+  ],
+  "related": [
+    "hurry",
+    "pant",
+    "tired"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/curro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: curro</a> · <a href=\"https://logeion.uchicago.edu/tolutim\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tolutim</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 60, checked against the searchable text of the book (29 October 2026).",
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+  ],
+  "replaces": [
+    "entry-196",
+    "libelli-196"
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

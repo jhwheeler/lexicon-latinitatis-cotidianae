@@ -1,0 +1,57 @@
+{
+  "id": "cough",
+  "english": "cough",
+  "pos": [
+    "noun",
+    "verb"
+  ],
+  "also": [
+    "coughing"
+  ],
+  "domain": "corpus",
+  "terms": [
+    {
+      "latin": "tussis, tussis f.",
+      "status": "recommended",
+      "period": "classical",
+      "evidence": [
+        "Traupman 63"
+      ],
+      "comment": "Accusative <span lang=\"la\">tussim</span>."
+    },
+    {
+      "latin": "tussiō, tussīre",
+      "status": "recommended",
+      "period": "classical",
+      "evidence": [
+        "Traupman 63"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Ecce, nunc tussīs!",
+      "english": "See, you’re coughing now!",
+      "source": "composed"
+    },
+    {
+      "latin": "Paucōs diēs tussiēbās.",
+      "english": "You were coughing for a few days.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "cold-illness",
+    "cough-drop",
+    "cough-syrup"
+  ],
+  "sources": [
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 63.",
+    "The example sentences marked “composed” are ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -5,7 +5,7 @@
   "domain": "ludi",
   "terms": [
     {
-      "latin": "saliō, salīre",
+      "latin": "saliō, salīre, saluī, saltum",
       "status": "recommended",
       "period": "classical",
       "gloss": "jump or leap"
@@ -15,6 +15,24 @@
       "status": "recommended",
       "period": "classical",
       "gloss": "a jump or leap"
+    },
+    {
+      "latin": "exsiliō, exsilīre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "jump out or spring up"
+    },
+    {
+      "latin": "dēsiliō, dēsilīre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "jump down"
+    },
+    {
+      "latin": "trānsiliō, trānsilīre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "jump across"
     }
   ],
   "related": [
@@ -25,12 +43,15 @@
     "sailor-and-waves",
     "hop-on-one-foot",
     "jump-down",
-    "foot"
+    "foot",
+    "dive-headfirst",
+    "somersault"
   ],
   "sources": [
     "Descriptions and prompts labelled as ours are composed for family conversation. Recorded vocabulary does not imply universal technical standardization.",
     "<a href=\"https://logeion.uchicago.edu/salio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: salio</a> · <a href=\"https://logeion.uchicago.edu/ambo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ambo</a>",
-    "The example sentences marked “composed” are ours."
+    "The example sentences marked “composed” are ours.",
+    "<a href=\"https://logeion.uchicago.edu/salio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: salio</a> · <a href=\"https://logeion.uchicago.edu/saltus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: saltus</a> · <a href=\"https://logeion.uchicago.edu/exsilio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: exsilio</a> · <a href=\"https://logeion.uchicago.edu/desilio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: desilio</a> · <a href=\"https://logeion.uchicago.edu/transilio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: transilio</a>"
   ],
   "review": {
     "status": "draft",
@@ -52,9 +73,27 @@
       "latin": "Iterum salī.",
       "english": "Jump again.",
       "source": "composed"
+    },
+    {
+      "latin": "Salī.",
+      "english": "Jump.",
+      "source": "composed"
+    },
+    {
+      "latin": "Theodōrus salit.",
+      "english": "Theo is jumping.",
+      "source": "composed"
     }
   ],
   "also": [
-    "leap"
+    "leap",
+    "jumping",
+    "jump down",
+    "jump out",
+    "jump across",
+    "spring up"
+  ],
+  "replaces": [
+    "entry-6"
   ]
 }

@@ -1,0 +1,59 @@
+{
+  "id": "compress",
+  "english": "compress",
+  "pos": "noun",
+  "also": [
+    "hot compress",
+    "cold compress",
+    "warm compress",
+    "fomentation"
+  ],
+  "domain": "corpus",
+  "terms": [
+    {
+      "latin": "fōmentum, fōmentī n.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "compress, warm application, fomentation",
+      "evidence": [
+        "Hor. Serm. 1.1.82: <span lang=\"la\">assideat, fōmenta paret, medicum roget</span>, of Horace’s friend at the bedside"
+      ],
+      "comment": "From <span lang=\"la\">foveō</span>."
+    },
+    {
+      "latin": "fōmenta calida / frīgida",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "warm / cold compresses"
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "fōmenta quoque calida sunt milium, sāl, harēna, quidlibet eōrum calfactum et in linteum conjectum",
+      "english": "warm compresses are millet, salt, sand, any of them heated and put in a cloth",
+      "source": "Cels. 2.17"
+    },
+    {
+      "latin": "Fōmentum calidum tibi in pectus impōnam.",
+      "english": "I’ll put a warm compress on your chest.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "bathe-sore-limb",
+    "poultice",
+    "bruise",
+    "cold-illness"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.org/fomentum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fomentum</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> has no entry for a compress.",
+    "Celsus (2.17) and Horace checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>.",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

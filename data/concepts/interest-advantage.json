@@ -7,7 +7,11 @@
     "in your interest",
     "it matters",
     "it makes no difference",
-    "interests"
+    "interests",
+    "it matters a lot",
+    "it matters little",
+    "it makes all the difference",
+    "it doesn’t matter"
   ],
   "domain": "verba",
   "terms": [
@@ -47,22 +51,40 @@
       "latin": "ergō quid rēfert meā cui serviam, clītellās cum portem meās?",
       "english": "then what difference does it make to me whom I serve, so long as I carry my own packs?",
       "source": "Phaedr. 1.15.9–10"
+    },
+    {
+      "latin": "in gubernandō nihil, in officiō plūrimum interest, quō in genere peccētur",
+      "english": "in steering it makes no difference which way you go wrong; in duty it makes all the difference",
+      "source": "Cic. Fin. 4.76"
+    },
+    {
+      "latin": "quā rē parvī rēfert mē probāre cōgitātiōnem tuam",
+      "english": "so it matters little that I approve your plan",
+      "source": "Cic. Att. 10.10.2"
+    },
+    {
+      "latin": "quōmodo fābula, sīc vīta: nōn quam diū, sed quam bene ācta sit, rēfert",
+      "english": "as with a play, so with life: what matters is not how long but how well it is acted",
+      "source": "Sen. Ep. 77.20"
     }
   ],
   "related": [
     "interest-curiosity",
     "issue",
-    "business-concern"
+    "business-concern",
+    "concern-matter",
+    "value"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/intersum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: intersum</a> · <a href=\"https://logeion.uchicago.edu/refert\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: refert</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 96, 101, checked against the searchable text of the book (9 November 2026).",
     "Quotations from the Latinitas loci collections (loci-phaedrus, loci-seneca-epistulae), checked against the editions named there.",
-    "Cicero, Fam. 16.4 checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+    "Cicero, Fam. 16.4 checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026).",
+    "Quotations from the Latinitas loci collections and the note on quantity words, checked against the editions named there."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-11",
     "by": "Claude"
   }
 }

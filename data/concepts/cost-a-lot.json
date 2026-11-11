@@ -3,7 +3,12 @@
   "english": "cost a lot",
   "pos": "verb",
   "also": [
-    "cost little"
+    "cost little",
+    "cost more",
+    "cost less",
+    "it costs a lot",
+    "be dear",
+    "at that price"
   ],
   "also_under": [
     "pecunia"
@@ -11,47 +16,80 @@
   "domain": "urbs",
   "terms": [
     {
-      "latin": "magnī (parvī) cōnstāre",
+      "latin": "magnō (parvō) cōnstāre",
       "status": "recommended",
       "period": "classical",
       "gloss": "cost a lot (little)",
+      "grammar": "phrase: cōnstō with the ablative of price",
       "evidence": [
-        "Traupman 130"
+        "Sen. Ep. 17.4: <span lang=\"la\">parvō famēs cōnstat, magnō fastīdium</span>",
+        "Plin. Ep. 2.6.4: <span lang=\"la\">magnō tibi</span> (Lewis &amp; Short)",
+        "M-O s.v. expensive: <span lang=\"la\">magnō cōnstat</span>"
       ],
-      "comment": "Genitive of price."
+      "comment": "With verbs of buying, selling and costing, the price is in the ablative: <span lang=\"la\">magnō, parvō, plūrimō, minimō, vīlī</span>. Only <span lang=\"la\">tantī, quantī, plūris, minōris</span> are genitive (see below and how much is it?)."
     },
     {
-      "latin": "magnō cōnstat",
+      "latin": "plūris (minōris) cōnstāre",
       "status": "alternative",
       "period": "classical",
+      "gloss": "cost more (less)",
+      "grammar": "phrase: cōnstō with the genitive of price; so also tantī, quantī",
       "evidence": [
-        "M-O"
+        "Cic. Att. 13.29.2: <span lang=\"la\">prope dīmidiō minōris cōnstābit</span> (Lewis &amp; Short)"
       ],
-      "comment": "Ablative. Both constructions are classical."
+      "comment": "<span lang=\"la\">Quantī cōnstat?</span>, how much does it cost?; <span lang=\"la\">tantī</span>, at that price."
+    },
+    {
+      "latin": "magnī (parvī) cōnstāre",
+      "status": "avoid",
+      "period": "modern",
+      "gloss": "cost a lot (little)",
+      "evidence": [
+        "Traupman 130 (to cost a lot, little …: the genitive)"
+      ],
+      "comment": "The genitives <span lang=\"la\">magnī, parvī</span> are for valuing (<span lang=\"la\">magnī aestimāre</span>, see value); for costing, Lewis &amp; Short gives the ablative, and the genitive only for <span lang=\"la\">tantī, quantī, plūris, minōris</span>."
     }
   ],
   "phrases": [
     {
-      "latin": "Haec māla parvī cōnstant.",
+      "latin": "Haec māla parvō cōnstant.",
       "english": "These apples are cheap.",
       "source": "composed"
+    },
+    {
+      "latin": "parvō famēs cōnstat, magnō fastīdium",
+      "english": "hunger costs little, fussiness a lot",
+      "source": "Sen. Ep. 17.4"
+    },
+    {
+      "latin": "ego … paenitēre tantī nōn emō",
+      "english": "I don’t buy regret at that price",
+      "source": "Gell. 1.8.6"
+    },
+    {
+      "latin": "vīvitur parvō bene",
+      "english": "one lives well on little",
+      "source": "Hor. C. 2.16.13"
     }
   ],
   "related": [
     "expensive",
     "cheap",
     "how-much-is-it",
-    "price"
+    "price",
+    "value"
   ],
   "sources": [
     "<a href=\"https://logeion.org/consto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: consto</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 130.",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. expensive.",
-    "The example sentence marked “composed” is ours."
+    "The example sentences marked “composed” are ours.",
+    "Quotations from the Latinitas loci collections and the note on quantity words, checked against the editions named there.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-11",
     "by": "Claude"
   }
 }

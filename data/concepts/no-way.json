@@ -5,7 +5,9 @@
   "also": [
     "absolutely not",
     "not on your life",
-    "certainly not"
+    "certainly not",
+    "not at all",
+    "no (refusing)"
   ],
   "domain": "sermo",
   "terms": [
@@ -15,7 +17,9 @@
       "period": "classical",
       "evidence": [
         "Traupman 104"
-      ]
+      ],
+      "gloss": "no, not at all (refusing or denying)",
+      "comment": "The plain no of comedy to a question or a request; its pair is <span lang=\"la\">Maximē!</span>, yes, certainly (see yes)."
     },
     {
       "latin": "Nūllō modō!",
@@ -47,6 +51,16 @@
       "latin": "Āh, minimē gentium: nōn faciam.",
       "english": "Ah, absolutely not; I won’t do it.",
       "source": "Ter. Ad. 342"
+    },
+    {
+      "latin": "Cōgēs mē? — Minimē.",
+      "english": "“Will you force me?” “Not at all.”",
+      "source": "Ter. Ad. 193"
+    },
+    {
+      "latin": "At istōs rāstrōs intereā tamen appōne: nē labōrā. — Minimē.",
+      "english": "“But put those hoes down for now; don’t work.” “No.”",
+      "source": "Ter. Heaut. 88–89"
     }
   ],
   "related": [
@@ -58,11 +72,12 @@
     "<a href=\"https://logeion.org/minime\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: minime</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 104.",
     "Plautus, Terence and Cicero’s letters checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (Plautus ed. Leo, with its line numbers; Terence ed. Parry, whose line numbers can run one off the OCT’s; lines taken from the loci collections are cited by the OCT’s; Cicero’s letters ed. Purser).",
-    "Lines marked as in the Latinitas loci collections (loci-plautus, loci-terentius, loci-cicero-epistulae and others) are quoted from them."
+    "Lines marked as in the Latinitas loci collections (loci-plautus, loci-terentius, loci-cicero-epistulae and others) are quoted from them.",
+    "Quotations from the Latinitas loci collections and the note on quantity words, checked against the editions named there."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-11",
     "by": "Claude"
   }
 }

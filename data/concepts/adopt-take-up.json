@@ -1,0 +1,78 @@
+{
+  "id": "adopt-take-up",
+  "english": "adopt",
+  "sense": "take up a custom, a word, a way of doing things",
+  "pos": "verb",
+  "also": [
+    "take up",
+    "take over (a custom)",
+    "borrow (a word, a custom)",
+    "adopt a custom",
+    "adopt a plan",
+    "embrace (an idea)"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "ascīscō (adscīscō), ascīscere, ascīvī, ascītum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "adopt, take up (rites, laws, customs, words); take in (a person as ally or citizen)",
+      "grammar": "verb, third conjugation, transitive",
+      "evidence": [
+        "Liv. 1.20.6: <span lang=\"la\">patriōs rītūs peregrīnōsque adscīscendō</span>",
+        "Cic. Verr. 2.5.187: <span lang=\"la\">ā Graecīs adscīta et accepta</span>",
+        "Hor. Ep. 2.2.119, of new words (Lewis &amp; Short)"
+      ],
+      "comment": "To take something over from others and make it one’s own, with thought or effort behind it (Lewis &amp; Short): foreign rites, a law passed elsewhere, new words. Of persons, to receive someone as citizen, ally or son. The editions spell it both <span lang=\"la\">asc-</span> and <span lang=\"la\">adsc-</span>; quotations keep their edition’s spelling."
+    },
+    {
+      "latin": "cōnsilium capere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "adopt a plan, decide on a course",
+      "grammar": "phrase: cōnsilium capere + gen. of the gerund(ive), or ut + subjunctive",
+      "evidence": [
+        "Caes. BG 3.2: <span lang=\"la\">legiōnis opprimendae cōnsilium capere</span> (Lewis &amp; Short)",
+        "Cic. Att. 7.10: <span lang=\"la\">subitō cōnsilium cēpī, ut exīrem</span> (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "adoptō, adoptāre, adoptāvī, adoptātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "choose, take for oneself (a patron, a helper)",
+      "evidence": [
+        "Cic. Div. Caec. 54: <span lang=\"la\">quem sibi illa dēfēnsōrem suī jūris adoptāvit</span> (Lewis &amp; Short, as Div. in Caecin. 16)"
+      ],
+      "comment": "Its first sense, “take to oneself by choice”, used of persons; for an idea or a custom, <span lang=\"la\">ascīscere</span> is the classical word. The common sense is to adopt a child (see adopt, a child)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nē quid dīvīnī jūris neglegendō patriōs rītūs peregrīnōsque adscīscendō turbārētur",
+      "english": "so that no part of divine law should be thrown into confusion by neglecting the native rites and adopting foreign ones",
+      "source": "Liv. 1.20.6"
+    },
+    {
+      "latin": "quārum sacra populus Rōmānus ā Graecīs adscīta et accepta tantā religiōne et pūblicē et prīvātim tuētur",
+      "english": "whose rites the Roman people took over from the Greeks and keep with such devotion, in public and in private",
+      "source": "Cic. Verr. 2.5.187"
+    }
+  ],
+  "related": [
+    "adopt-child",
+    "practice-custom",
+    "introduce-new",
+    "foreign"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/ascisco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ascisco</a> · <a href=\"https://logeion.uchicago.edu/capio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: capio</a> · <a href=\"https://logeion.uchicago.edu/adopto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: adopto</a>",
+    "Livy and Cicero checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "id": "childhood",
+  "english": "childhood",
+  "pos": "noun",
+  "also": [
+    "boyhood",
+    "girlhood",
+    "in my childhood",
+    "from childhood",
+    "since childhood",
+    "early childhood",
+    "infancy"
+  ],
+  "domain": "tempus",
+  "also_under": [
+    "sermo"
+  ],
+  "terms": [
+    {
+      "latin": "pueritia, pueritiae f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "childhood, boyhood",
+      "evidence": [
+        "Cic. Sen. 76: <span lang=\"la\">sunt pueritiae studia certa</span>",
+        "Ter. Heaut. 183: <span lang=\"la\">jam inde ūsque ā pueritiā</span>"
+      ],
+      "comment": "Childhood up to about the seventeenth year, though often used more loosely (Lewis &amp; Short); after it comes <span lang=\"la\">adulēscentia</span> (see youth). “From childhood” is <span lang=\"la\">ā pueritiā</span>, or <span lang=\"la\">ā puerō</span>, <span lang=\"la\">ā puerīs</span>, “from a boy, from boys”. Horace scans it <span lang=\"la\">puertia</span> (C. 1.36.8)."
+    },
+    {
+      "latin": "īnfantia, īnfantiae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "infancy, early childhood",
+      "evidence": [
+        "Sen. Ep. 9.7: <span lang=\"la\">īnfantia dulcior</span>",
+        "Quint. 1.1.19: <span lang=\"la\">quantum in īnfantiā praesūmptum est temporis</span>"
+      ],
+      "comment": "First “inability to speak” (Lucr. 5.1031), and so infancy, early childhood (Lewis &amp; Short)."
+    },
+    {
+      "latin": "ā parvulō",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "from early childhood, from a little boy",
+      "grammar": "phrase",
+      "evidence": [
+        "Ter. Ad. 48: <span lang=\"la\">ēdūxī ā parvulō</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "sunt pueritiae studia certa; num igitur ea dēsīderant adulēscentēs?",
+      "english": "childhood has its own pursuits; do young men miss them, then?",
+      "source": "Cic. Sen. 76"
+    },
+    {
+      "latin": "nam mihi magna cum eō jam inde ūsque ā pueritiā fuit semper familiāritās",
+      "english": "for he and I have always been close friends, right from childhood",
+      "source": "Ter. Heaut. 183–184"
+    },
+    {
+      "latin": "inde ego hunc majōrem adoptāvī mihi; ēdūxī ā parvulō",
+      "english": "so I adopted the elder one as my own; I brought him up from a little boy",
+      "source": "Ter. Ad. 47–48"
+    }
+  ],
+  "related": [
+    "child",
+    "youth-time-of-life",
+    "since-a-time",
+    "early-beginning",
+    "life",
+    "little-boy"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/pueritia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pueritia</a> · <a href=\"https://logeion.uchicago.edu/infantia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: infantia</a> · <a href=\"https://logeion.uchicago.edu/parvulus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: parvulus</a>",
+    "Terence checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026). Quotations from the Latinitas loci collections (loci-cicero-philosophica, loci-seneca-epistulae, loci-quintilianus), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

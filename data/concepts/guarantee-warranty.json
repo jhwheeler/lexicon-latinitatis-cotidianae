@@ -1,0 +1,71 @@
+{
+  "id": "guarantee-warranty",
+  "english": "guarantee",
+  "sense": "a written promise to repair or replace goods",
+  "pos": "noun",
+  "also": [
+    "warranty",
+    "under guarantee",
+    "still under guarantee",
+    "money-back guarantee",
+    "guaranteed"
+  ],
+  "domain": "pecunia",
+  "also_under": [
+    "urbs"
+  ],
+  "terms": [
+    {
+      "latin": "cautiō, cautiōnis f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a written guarantee, a bond",
+      "evidence": [
+        "Cic. Fam. 7.18.1: <span lang=\"la\">Graeculam tibi mīsī cautiōnem chīrographī meī</span>"
+      ],
+      "comment": "In law a security or bond, written or spoken, by which one secures another against loss (Lewis &amp; Short). Its everyday sense is care, caution: <span lang=\"la\">cautiō est</span>, one must be careful (Plaut., Ter.).",
+      "notes": [
+        "warranty"
+      ]
+    },
+    {
+      "latin": "praestātiō, praestātiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a warranty, a guaranty",
+      "evidence": [
+        "Sen. Brev. Vit. 13.9: <span lang=\"la\">ut ad praestātiōnem scrībant</span> (Lewis &amp; Short)",
+        "Dig. 45.1.2 (Lewis &amp; Short)"
+      ],
+      "comment": "Post-Augustan, and a jurists’ word (Lewis &amp; Short): the being answerable for something (see guarantee, <span lang=\"la\">praestāre</span>)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "quoniam vestrae cautiōnēs īnfirmae sunt, Graeculam tibi mīsī cautiōnem chīrographī meī",
+      "english": "since you lawyers’ guarantees are worth so little, I have sent you a little Greek guarantee in my own hand",
+      "source": "Cic. Fam. 7.18.1"
+    }
+  ],
+  "notes": {
+    "warranty": {
+      "html": "Lewis &amp; Short gives <span lang=\"la\">cautiō</span> as “an obligation, security, bond, warranty, bail”; its use for a maker’s or seller’s guarantee on goods is ours."
+    }
+  },
+  "related": [
+    "guarantee",
+    "contract",
+    "receipt",
+    "refund"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/cautio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cautio</a> · <a href=\"https://logeion.uchicago.edu/praestatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praestatio</a>",
+    "Cicero checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (11 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

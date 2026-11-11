@@ -1,0 +1,67 @@
+{
+  "id": "launch-boat",
+  "english": "launch",
+  "sense": "a boat or a ship; a rocket",
+  "pos": "verb",
+  "also": [
+    "launch a boat",
+    "launch a ship",
+    "put out to sea",
+    "launch a rocket",
+    "launched"
+  ],
+  "domain": "vectura",
+  "terms": [
+    {
+      "latin": "dēdūcō, dēdūcere, dēdūxī, dēductum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "launch (a ship), draw down into the water",
+      "grammar": "verb, third conjugation: nāvem dēdūcere",
+      "evidence": [
+        "Caes. BG 5.2.2: <span lang=\"la\">quīn paucīs diēbus dēdūcī possint</span>",
+        "Verg. A. 4.398: <span lang=\"la\">nāvēs lītore dēdūcunt</span> (Lewis &amp; Short)"
+      ],
+      "comment": "The seaman’s word: to draw a ship down from the stocks or the beach into the sea (Lewis &amp; Short); the opposite is <span lang=\"la\">subdūcere</span>, to haul it up. Its other common senses are to lead away, to escort (a bride to her husband’s house), to found a colony, and to deduct a sum."
+    },
+    {
+      "latin": "in sublīme ēmittere",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "launch (a rocket or spacecraft)",
+      "grammar": "verb phrase: ēmittō, ēmittere, ēmīsī, ēmissum",
+      "evidence": [
+        "M-O s.v. launch (a spacecraft), after Egger"
+      ],
+      "comment": "Egger’s phrase, “to send up on high”; he also has <span lang=\"la\">in aethera ēmittere</span> and <span lang=\"la\">in ināne īnfīnītum ēmittere</span> (M-O). <span lang=\"la\">Ēmittere</span> is classically to send out, let go, and of weapons to shoot (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "trahuntque siccās māchinae carīnās",
+      "english": "and the winches drag the dry hulls down to the sea",
+      "source": "Hor. C. 1.4.2"
+    },
+    {
+      "latin": "nāvēs … invēnit īnstrūctās neque multum abesse ab eō quīn paucīs diēbus dēdūcī possint",
+      "english": "he found the ships fitted out and nearly ready to be launched in a few days",
+      "source": "Caes. BG 5.2.2"
+    }
+  ],
+  "related": [
+    "ship",
+    "sailing-boat",
+    "rowing-boat"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/deduco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: deduco</a> · <a href=\"https://logeion.uchicago.edu/emitto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: emitto</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. launch (a spacecraft).",
+    "Horace and Caesar checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (11 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

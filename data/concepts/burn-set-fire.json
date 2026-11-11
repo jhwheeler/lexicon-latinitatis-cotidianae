@@ -1,0 +1,79 @@
+{
+  "id": "burn-set-fire",
+  "english": "burn",
+  "sense": "set fire to; hurt with heat",
+  "pos": "verb",
+  "also": [
+    "burn up",
+    "burn down",
+    "set fire to",
+    "set on fire",
+    "burn yourself",
+    "burnt"
+  ],
+  "also_under": [
+    "domus"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "ūrō, ūrere, ussī, ustum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "burn",
+      "evidence": [
+        "Plaut. Most. 609a: <span lang=\"la\">ūrit male</span>",
+        "Verg. A. 7.13: <span lang=\"la\">ūrit odōrātam nocturna in lūmina cedrum</span> (Lewis &amp; Short)"
+      ],
+      "comment": "The general verb: to burn something, and of fire, heat or the sun, to burn or scorch someone. Short <span lang=\"la\">u</span> in <span lang=\"la\">ustum</span>, as the lexicon writes <span lang=\"la\">adustus</span> for now."
+    },
+    {
+      "latin": "incendō, incendere, incendī, incēnsum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "set fire to, set alight",
+      "evidence": [
+        "Caes. B.G. 1.5.2: <span lang=\"la\">oppida sua omnia … incendunt</span> (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "cremō, cremāre, cremāvī, cremātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "burn up, burn to ashes",
+      "evidence": [
+        "Cic. Sen. 84: <span lang=\"la\">cujus ā mē corpus est cremātum</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Of things burnt to nothing, books, rubbish, a city; above all of burning the dead."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "calidum hoc est: etsī procul abest, ūrit male.",
+      "english": "this is hot: even from a distance it burns badly.",
+      "source": "Plaut. Most. 609a"
+    },
+    {
+      "latin": "Cavē nē digitōs ūrās.",
+      "english": "Mind you don’t burn your fingers.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "fire",
+    "burn-be-on-fire",
+    "burn-injury",
+    "kindle-a-fire",
+    "hot"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/uro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: uro</a> · <a href=\"https://logeion.uchicago.edu/incendo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: incendo</a> · <a href=\"https://logeion.uchicago.edu/cremo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cremo</a>",
+    "Checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (11 November 2026): Plautus.",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

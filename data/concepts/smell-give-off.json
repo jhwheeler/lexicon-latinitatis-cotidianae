@@ -1,0 +1,73 @@
+{
+  "id": "smell-give-off",
+  "english": "smell",
+  "sense": "give off a smell",
+  "pos": "verb",
+  "also": [
+    "smell of",
+    "smell good",
+    "smell nice",
+    "smell bad",
+    "it smells"
+  ],
+  "also_under": [
+    "corpus"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "oleō, olēre, oluī",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "smell, smell of",
+      "evidence": [
+        "Cic. Att. 2.1.1: <span lang=\"la\">bene olēre</span>",
+        "Ter. Ad. 1.2.37: <span lang=\"la\">olet unguenta</span> (Lewis &amp; Short)"
+      ],
+      "comment": "What something smells of is in the accusative: <span lang=\"la\">olet unguenta</span>, “he smells of scent” (Ter.), <span lang=\"la\">crocum olēre</span> (Cic. de Or. 3.99). <span lang=\"la\">Bene olēre, male olēre</span>: to smell good, to smell bad."
+    },
+    {
+      "latin": "redoleō, redolēre, redoluī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "give off a scent, smell strongly of",
+      "evidence": [
+        "Verg. G. 4.169: <span lang=\"la\">redolentque thymō frāgrantia mella</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "et, ut mulierēs, ideō bene olēre quia nihil olēbant vidēbantur.",
+      "english": "and, like women, they seemed to smell good precisely because they smelled of nothing.",
+      "source": "Cic. Att. 2.1.1"
+    },
+    {
+      "latin": "Postume, nōn bene olet quī bene semper olet.",
+      "english": "Postumus, a man who always smells good doesn’t smell good.",
+      "source": "Mart. 2.12.4"
+    },
+    {
+      "latin": "fīla Tarentīnī graviter redolentia porrī ēdistī quotiēns, ōscula clūsa datō.",
+      "english": "whenever you’ve eaten threads of strong-smelling Tarentine leek, kiss with your mouth shut.",
+      "source": "Mart. 13.18.1–2"
+    }
+  ],
+  "related": [
+    "smell",
+    "smell-notice",
+    "sense-the-senses",
+    "nose",
+    "yucky"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/oleo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: oleo</a> · <a href=\"https://logeion.uchicago.edu/redoleo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: redoleo</a>",
+    "Checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (11 November 2026): Cicero, Martial.",
+    "Quotations from the Latinitas loci collections (loci-martialis, loci-vergilius), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

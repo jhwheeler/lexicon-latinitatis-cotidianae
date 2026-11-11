@@ -1,0 +1,87 @@
+{
+  "id": "mount",
+  "english": "mount",
+  "sense": "a horse",
+  "pos": "verb",
+  "also": [
+    "get on a horse",
+    "climb into the saddle",
+    "dismount",
+    "get off a horse"
+  ],
+  "also_under": [
+    "vectura"
+  ],
+  "domain": "ludi",
+  "terms": [
+    {
+      "latin": "in equum ascendere",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "mount a horse",
+      "grammar": "ascendō, ascendere, ascendī, ascēnsum, with in + accusative",
+      "evidence": [
+        "Cic. Sen. 34: <span lang=\"la\">in equum omnīnō nōn ascendere</span>"
+      ],
+      "comment": "Cicero’s phrase; Livy has <span lang=\"la\">equum ascendere</span> with the plain accusative (Liv. 23.14, Lewis &amp; Short). To get off is <span lang=\"la\">ex equō dēscendere</span> (Cicero, below)."
+    },
+    {
+      "latin": "equum cōnscendere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "mount a horse",
+      "grammar": "cōnscendō, cōnscendere, cōnscendī, cōnscēnsum, with accusative",
+      "evidence": [
+        "Liv. 29.2.16; Ov. M. 14.820: <span lang=\"la\">equōs</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Livy and the poets; <span lang=\"la\">cōnscendere</span> is chiefly to go on board a ship (see get on, of a bicycle)."
+    },
+    {
+      "latin": "in equum īnsilīre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "jump onto a horse",
+      "grammar": "īnsiliō, īnsilīre, īnsiluī, with in + accusative",
+      "comment": "Comenius’s rider (below) jumps on."
+    },
+    {
+      "latin": "ex equō dēsilīre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "dismount, jump down from a horse",
+      "grammar": "dēsiliō, dēsilīre, dēsiluī, dēsultum",
+      "evidence": [
+        "Caes. BG 4.2.3: <span lang=\"la\">ex equīs</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Caesar’s Germans leap down to fight on foot."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "cum ingressus iter pedibus sit, in equum omnīnō nōn ascendere; cum autem equō, ex equō nōn dēscendere",
+      "english": "once he has set out on foot, he never gets on a horse at all; once on horseback, he never gets off",
+      "source": "Cic. Sen. 34"
+    },
+    {
+      "latin": "Deinde īnsilit in equum, indit pedēs stapedibus, sinistrā capessit lōrum (habēnam) frēnī",
+      "english": "Then he jumps onto the horse, puts his feet in the stirrups and takes the rein of the bridle in his left hand",
+      "source": "Comen. OP 83"
+    }
+  ],
+  "related": [
+    "horse-riding",
+    "ride",
+    "get-on",
+    "climb-up"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/ascendo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ascendo</a> · <a href=\"https://logeion.uchicago.edu/conscendo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: conscendo</a> · <a href=\"https://logeion.uchicago.edu/insilio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: insilio</a> · <a href=\"https://logeion.uchicago.edu/desilio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: desilio</a> · <a href=\"https://logeion.uchicago.edu/descendo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: descendo</a>",
+    "Quotations from the Latinitas loci collections (loci-cicero-philosophica, loci-comenius), checked against the editions named there.",
+    "Livy, Ovid and Caesar as Lewis &amp; Short quotes them. Comenius is post-classical (<span lang=\"la\">stapēs</span>, stirrup, is a modern word)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

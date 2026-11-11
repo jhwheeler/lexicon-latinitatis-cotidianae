@@ -1,0 +1,86 @@
+{
+  "id": "ethnic",
+  "english": "ethnic",
+  "pos": "adjective",
+  "also": [
+    "ethnically",
+    "ethnic group",
+    "ethnic origin",
+    "ethnicity",
+    "by descent"
+  ],
+  "also_under": [
+    "verba"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "gentis",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "of a people: ethnic",
+      "grammar": "the genitive of gēns, beside the noun it describes; gentium of several peoples",
+      "evidence": [
+        "Gell. 17.8.4: <span lang=\"la\">aetātis et gentis argūtiīs</span>"
+      ],
+      "comment": "Latin has no adjective for “ethnic”: it uses the people itself, <span lang=\"la\">gēns</span> (see international), in the genitive, or the people’s own name (<span lang=\"la\">Graecus, Thrāx</span>). An ethnic group is simply a <span lang=\"la\">gēns</span> or a <span lang=\"la\">nātiō</span>."
+    },
+    {
+      "latin": "genere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "by descent, ethnically",
+      "grammar": "the ablative of genus, with an adjective of nationality",
+      "evidence": [
+        "Gell. 17.8.4: <span lang=\"la\">puer genere Atticus</span>",
+        "Caes. BG 4.12.4: <span lang=\"la\">amplissimō genere nātus</span> (Lewis &amp; Short, s.v. <span lang=\"la\">genus</span>)"
+      ],
+      "comment": "Birth, descent: <span lang=\"la\">genere Atticus</span>, Athenian by birth; also of family rank (<span lang=\"la\">nōbilī genere nātus</span>)."
+    },
+    {
+      "latin": "stirps, stirpis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "stock, lineage, descent",
+      "evidence": [
+        "Cic. Lael. 70: <span lang=\"la\">ignōrātiō stirpis et generis</span> (Lewis &amp; Short)",
+        "M-O s.v. minority (ethnic, religious, etc.): <span lang=\"la\">minor dīversae stirpis plēbs</span> (Egger)"
+      ],
+      "comment": "Literally the stock of a plant; of people, a family line. Egger’s ethnic minority is “people of a different stock”."
+    },
+    {
+      "latin": "ethnicus, ethnica, ethnicum",
+      "status": "avoid",
+      "period": "late",
+      "gloss": "heathen, pagan",
+      "evidence": [
+        "Tert. Pud. 9; Vulg. Mt. 5.47 (Lewis &amp; Short)"
+      ],
+      "comment": "A false friend: in Latin, from Greek ἐθνικός, it means a heathen, a gentile (Tertullian, the Vulgate), not “ethnic”."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "erat is puer genere Atticus, ad annōs maximē nātus octō, fēstīvissimīs aetātis et gentis argūtiīs scatēns",
+      "english": "the boy was an Athenian by birth, eight years old at most, bubbling over with all the wit of his age and of his people",
+      "source": "Gell. 17.8.4"
+    }
+  ],
+  "related": [
+    "minority",
+    "international",
+    "national",
+    "foreign"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/gens\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gens</a> · <a href=\"https://logeion.uchicago.edu/genus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: genus</a> · <a href=\"https://logeion.uchicago.edu/stirps\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: stirps</a> · <a href=\"https://logeion.uchicago.edu/ethnicus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ethnicus</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. minority (ethnic, religious, etc.).",
+    "Quotations from the Latinitas loci collections (loci-gellius), checked against the editions named there.",
+    "Caesar and Cicero as Lewis &amp; Short quotes them."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

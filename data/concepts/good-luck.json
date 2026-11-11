@@ -2,6 +2,10 @@
   "id": "good-luck",
   "english": "good luck!",
   "pos": "phrase",
+  "also": [
+    "all the best",
+    "break a leg"
+  ],
   "domain": "sermo",
   "terms": [
     {
@@ -11,11 +15,57 @@
       "evidence": [
         "Traupman 103"
       ]
+    },
+    {
+      "latin": "Dī bene vortant!",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "may the gods prosper it!",
+      "grammar": "subjunctive of wish; <span lang=\"la\">vortant</span> is the old spelling of <span lang=\"la\">vertant</span>; often with <span lang=\"la\">quod agās</span>",
+      "register": "vōx cōmica: Plaut., Ter.",
+      "evidence": [
+        "Ter. Ph. 552",
+        "Ter. Hec. 196"
+      ]
+    },
+    {
+      "latin": "Bene rem gerās!",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "good luck with it!",
+      "register": "vōx cōmica: Plaut.",
+      "evidence": [
+        "Plaut. Mil. 936"
+      ]
     }
+  ],
+  "phrases": [
+    {
+      "latin": "Dī bene vortant quod agās; pedetemptim tamen.",
+      "english": "Good luck with what you’re doing; but step by step.",
+      "source": "Ter. Ph. 552"
+    },
+    {
+      "latin": "Bene ambulā, bene rem gerās.",
+      "english": "Safe journey, and good luck with it.",
+      "source": "Plaut. Mil. 936"
+    },
+    {
+      "latin": "Dī vortant bene quod agās. — Valē. — Et tū bene valē.",
+      "english": "Good luck with what you’re doing. — Goodbye. — Goodbye to you too.",
+      "source": "Ter. Hec. 196–197"
+    }
+  ],
+  "related": [
+    "congratulations",
+    "safe-journey"
   ],
   "sources": [
     "<a href=\"https://logeion.org/felix\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: felix</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 103."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 103.",
+    "<a href=\"https://logeion.uchicago.edu/verto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: verto</a> · <a href=\"https://logeion.uchicago.edu/gero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gero</a>",
+    "Plautus, Terence and Cicero’s letters checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (Plautus ed. Leo, with its line numbers; Terence ed. Parry, whose line numbers can run one off the OCT’s; lines taken from the loci collections are cited by the OCT’s; Cicero’s letters ed. Purser).",
+    "Lines marked as in the Latinitas loci collections (loci-plautus, loci-terentius, loci-cicero-epistulae and others) are quoted from them."
   ],
   "review": {
     "status": "draft",

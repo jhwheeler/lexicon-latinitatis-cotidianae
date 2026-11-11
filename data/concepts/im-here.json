@@ -2,20 +2,63 @@
   "id": "im-here",
   "english": "I’m here",
   "pos": "phrase",
+  "also": [
+    "here I am",
+    "present"
+  ],
   "domain": "sermo",
   "terms": [
     {
       "latin": "Hīc sum.",
       "status": "recommended",
       "period": "classical"
+    },
+    {
+      "latin": "Ecce mē!",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "here I am!",
+      "register": "vōx cōmica: Plaut., Ter.",
+      "evidence": [
+        "Plaut. Rud. 241b",
+        "Plaut. Epid. 5.2.15 (Lewis &amp; Short)"
+      ],
+      "comment": "Lewis &amp; Short (s.v. <span lang=\"la\">ecce</span>): “here I am”; the answer in hide-and-seek."
+    },
+    {
+      "latin": "Adsum.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "I’m here, present; at your service",
+      "grammar": "first person of <span lang=\"la\">adsum</span>",
+      "evidence": [
+        "Plaut. Mil. 1031: <span lang=\"la\">Adsum, imperā, sī quid vīs.</span>"
+      ],
+      "comment": "The answer to one’s name, and to a call for help."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Dīc ubi es? … ubi es? — Ecce mē. accēde ad mē atque adī contrā.",
+      "english": "Say where you are? … where are you? — Here I am; come to me, come this way.",
+      "source": "Plaut. Rud. 238–242"
+    },
+    {
+      "latin": "Adsum, imperā, sī quid vīs.",
+      "english": "Here I am; give your orders, if you want anything.",
+      "source": "Plaut. Mil. 1031"
     }
   ],
   "related": [
     "im-with-you",
-    "comfort"
+    "comfort",
+    "look"
   ],
   "sources": [
-    "The phrase is composed; the grouped card gave no source."
+    "The phrase is composed; the grouped card gave no source.",
+    "<a href=\"https://logeion.uchicago.edu/ecce\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ecce</a> · <a href=\"https://logeion.uchicago.edu/adsum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: adsum</a>",
+    "Plautus, Terence and Cicero’s letters checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (Plautus ed. Leo, with its line numbers; Terence ed. Parry, whose line numbers can run one off the OCT’s; lines taken from the loci collections are cited by the OCT’s; Cicero’s letters ed. Purser).",
+    "Lines marked as in the Latinitas loci collections (loci-plautus, loci-terentius, loci-cicero-epistulae and others) are quoted from them."
   ],
   "review": {
     "status": "draft",

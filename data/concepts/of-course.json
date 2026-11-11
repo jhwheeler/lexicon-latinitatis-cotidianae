@@ -2,6 +2,11 @@
   "id": "of-course",
   "english": "of course",
   "pos": "adverb",
+  "also": [
+    "naturally",
+    "sure",
+    "certainly"
+  ],
   "domain": "sermo",
   "terms": [
     {
@@ -19,15 +24,37 @@
       "evidence": [
         "Traupman 105"
       ]
+    },
+    {
+      "latin": "Quidnī?",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "of course! why not?",
+      "grammar": "an answer: “why not?”",
+      "register": "vōx sermōnis cotīdiānī: Plaut., Ter.; Cic.",
+      "evidence": [
+        "Ter. Ph. 64"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Nōstīne? — Quidnī? … — Tamquam tē.",
+      "english": "Do you know him? — Of course. — Like I know you.",
+      "source": "Ter. Ph. 64–65"
     }
   ],
   "related": [
     "why-not",
-    "thats-right"
+    "thats-right",
+    "yes"
   ],
   "sources": [
     "<a href=\"https://logeion.org/scilicet\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: scilicet</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 105."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 105.",
+    "<a href=\"https://logeion.uchicago.edu/quisnam\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quisnam</a> · <a href=\"https://logeion.uchicago.edu/quis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quis</a>",
+    "Plautus, Terence and Cicero’s letters checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (Plautus ed. Leo, with its line numbers; Terence ed. Parry, whose line numbers can run one off the OCT’s; lines taken from the loci collections are cited by the OCT’s; Cicero’s letters ed. Purser).",
+    "Lines marked as in the Latinitas loci collections (loci-plautus, loci-terentius, loci-cicero-epistulae and others) are quoted from them."
   ],
   "review": {
     "status": "draft",

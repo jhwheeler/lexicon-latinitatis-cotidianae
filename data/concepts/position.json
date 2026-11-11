@@ -8,7 +8,13 @@
     "location",
     "site",
     "spot",
-    "in its place"
+    "in its place",
+    "scene (where something happens)",
+    "the scene of the crime",
+    "the scene of the accident",
+    "on the scene",
+    "at the scene",
+    "on the spot"
   ],
   "domain": "verba",
   "terms": [
@@ -33,6 +39,17 @@
         "Caes. BG 7.36 (Lewis &amp; Short)"
       ],
       "comment": "How a place lies; mostly of towns and land."
+    },
+    {
+      "latin": "in rē praesentī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "on the spot, at the scene itself",
+      "evidence": [
+        "Plaut. Cas. 2.8.65 (Lewis &amp; Short, s.v. <span lang=\"la\">praesum</span>)",
+        "Cic. de Or. 1.250: <span lang=\"la\">in rem praesentem venīre</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Of being at the place itself; to go to the place to see for oneself is <span lang=\"la\">in rem praesentem venīre</span> (Lewis &amp; Short, s.v. <span lang=\"la\">praesum</span>)."
     }
   ],
   "phrases": [
@@ -40,20 +57,28 @@
       "latin": "omnia quīs ūsus erit, in suō quidque locō repōnitō",
       "english": "put everything you will need back, each thing in its own place",
       "source": "Cato Agr. 68"
+    },
+    {
+      "latin": "et castra eō ipsō locō ubi pugnātum erat, imperātor Rōmānus posuit.",
+      "english": "and the Roman commander pitched camp on the very spot where the battle had been fought.",
+      "source": "Liv. 34.26.3"
     }
   ],
   "related": [
     "position-posture",
     "put",
-    "here-location"
+    "here-location",
+    "scene-play",
+    "scene-sight"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/locus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: locus</a> · <a href=\"https://logeion.uchicago.edu/situs\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: situs</a>",
-    "Quotations from the Latinitas loci collections (loci-cato), checked against the editions named there."
+    "<a href=\"https://logeion.uchicago.edu/locus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: locus</a> · <a href=\"https://logeion.uchicago.edu/situs\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: situs</a> · <a href=\"https://logeion.uchicago.edu/praesum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praesum</a>",
+    "Quotations from the Latinitas loci collections (loci-cato), checked against the editions named there.",
+    "Livy checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-11",
     "by": "Claude"
   }
 }

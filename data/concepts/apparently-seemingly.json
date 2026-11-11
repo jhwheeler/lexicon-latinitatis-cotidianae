@@ -1,0 +1,62 @@
+{
+  "id": "apparently-seemingly",
+  "english": "apparently",
+  "sense": "as it seems",
+  "pos": "adverb",
+  "also": [
+    "seemingly",
+    "it seems",
+    "it would seem",
+    "by the look of it"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "ut vidētur",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "apparently, as it seems",
+      "grammar": "parenthesis: ut with the third person of videor",
+      "evidence": [
+        "Plaut. Am. 333: <span lang=\"la\">Hinc enim mihi dextra vōx aurīs, ut vidētur, verberat.</span>",
+        "Ter. Hec. 272b: <span lang=\"la\">Nunc quidem ut vidētur</span>"
+      ],
+      "comment": "Set into the sentence like English “apparently”, without changing its construction; <span lang=\"la\">ut mihi vidētur</span> is “as I see it”. For one’s own guess, <span lang=\"la\">ut opīnor</span> (see think)."
+    },
+    {
+      "latin": "videor, vidērī, vīsus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "seem, appear (to be or to do)",
+      "grammar": "verb, second conjugation, passive, with a nominative and infinitive",
+      "comment": "Latin turns the adverb into the verb: “apparently he is ill” is <span lang=\"la\">aeger esse vidētur</span>, “he seems to be ill” (see seem)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Certumne est istuc? — Nunc quidem ut vidētur.",
+      "english": "Is that settled, then? — For now, apparently.",
+      "source": "Ter. Hec. 272–272b"
+    },
+    {
+      "latin": "Hinc enim mihi dextra vōx aurīs, ut vidētur, verberat.",
+      "english": "Yes, a voice is beating on my ears from the right, apparently.",
+      "source": "Plaut. Am. 333"
+    }
+  ],
+  "related": [
+    "seem",
+    "apparently-reportedly",
+    "obviously",
+    "think-believe"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/video\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: video</a>",
+    "Plaut. Am. 333 and Ter. Hec. 272–272b checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

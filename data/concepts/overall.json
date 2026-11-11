@@ -7,7 +7,10 @@
     "all in all",
     "on the whole",
     "in short",
-    "in all"
+    "in all",
+    "basically",
+    "in a word",
+    "to cut a long story short"
   ],
   "domain": "verba",
   "terms": [
@@ -44,6 +47,18 @@
         "Lewis &amp; Short s.v. <span lang=\"la\">omnīnō</span>"
       ],
       "comment": "“Altogether, at all”; with numbers “in all, only”. For the adjective (“the overall picture”) use <span lang=\"la\">tōtus</span> or <span lang=\"la\">ūniversus</span> (see whole)."
+    },
+    {
+      "latin": "quid multa?",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "in short, basically (what more need I say?)",
+      "grammar": "phrase",
+      "evidence": [
+        "Cic. Q. Fr. 2.7.3: <span lang=\"la\">quid multa? tenent omnia</span>",
+        "Cic. Att. 7.4.3: <span lang=\"la\">quid multa? nihil mē aliud cōnsōlātur nisi quod …</span>"
+      ],
+      "comment": "The speaker’s “basically”: it cuts a story short and goes to the point. So too <span lang=\"la\">quid plūra?</span> and <span lang=\"la\">nē multa</span> (Lewis &amp; Short, s.v. <span lang=\"la\">multus</span>)."
     }
   ],
   "phrases": [
@@ -51,6 +66,11 @@
       "latin": "ad summam, quotīdiē mē solēbam ad illum mētīrī",
       "english": "in short, I used to measure myself against it every day",
       "source": "Petr. 75.2"
+    },
+    {
+      "latin": "quid multa? tenent omnia",
+      "english": "basically, they control everything",
+      "source": "Cic. Q. Fr. 2.7.3"
     },
     {
       "latin": "Ad summam, bene nōbīs fuit.",
@@ -64,14 +84,15 @@
     "in-general"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/summa\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: summa</a> · <a href=\"https://logeion.uchicago.edu/omnino\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: omnino</a>",
+    "<a href=\"https://logeion.uchicago.edu/summa\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: summa</a> · <a href=\"https://logeion.uchicago.edu/omnino\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: omnino</a> · <a href=\"https://logeion.uchicago.edu/multus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: multus</a>",
     "Quotations from the Latinitas loci collections (loci-petronius), checked against the editions named there.",
+    "Cic. Q. Fr. 2.7.3 and Att. 7.4.3 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026).",
     "Citations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them and have not been checked against an edition.",
     "The example sentence marked “composed” is ours."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-11",
     "by": "Claude"
   }
 }

@@ -1,0 +1,79 @@
+{
+  "id": "and-so-forth",
+  "english": "and so forth",
+  "pos": "phrase",
+  "also": [
+    "and so on",
+    "etc.",
+    "et cetera",
+    "and the rest",
+    "you know the rest",
+    "and all that"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "et cētera",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "and so forth, and the rest",
+      "grammar": "phrase: the neuter plural of cēterus; also cēteraque, or cētera alone",
+      "evidence": [
+        "Cic. Att. 10.15.4: <span lang=\"la\">dum pānis et cētera in nāvem parantur</span>",
+        "Cic. de Or. 2.141 (Lewis &amp; Short)"
+      ],
+      "comment": "Lewis &amp; Short: used when one refers to something well known in a few words, or names only a few of many things; Cicero also ends a quotation with it. A list may end with <span lang=\"la\">cētera</span> and no “and” (<span lang=\"la\">fundum, aedēs, parietem, supellectilem, penus, cētera</span>, Cic. Top. 27). <span lang=\"la\">Cēterī</span> are the others (see the others)."
+    },
+    {
+      "latin": "nōstī cētera",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "you know the rest",
+      "grammar": "phrase",
+      "evidence": [
+        "Cic. Fam. 2.10.2: <span lang=\"la\">hīcine est ille, quī urbem? quem senātus? nōstī cētera.</span>",
+        "Cic. Fam. 7.28.2: <span lang=\"la\">(nōstī cētera)</span>"
+      ],
+      "comment": "Breaks off a well-known story or quotation, leaving the hearer to finish it."
+    },
+    {
+      "latin": "deinceps",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "and so on (in order), one after another",
+      "grammar": "adverb",
+      "evidence": [
+        "Cic. Off. 1.160 (Lewis &amp; Short): <span lang=\"la\">prīma diīs immortālibus, secunda patriae, tertia parentibus, deinceps gradātim reliqua reliquīs</span>"
+      ],
+      "comment": "After a series counted out, “and so on down the line”; its plain sense is “one after another, next in order” (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ego, dum pānis et cētera in nāvem parantur, excurrō in Pompejānum.",
+      "english": "While the bread and so on are being got on board, I’m running over to my house at Pompeii.",
+      "source": "Cic. Att. 10.15.4"
+    },
+    {
+      "latin": "hīcine est ille, quī urbem? quem senātus? nōstī cētera.",
+      "english": "Is this the man who (saved) the city? Whom the senate (honoured)? You know the rest.",
+      "source": "Cic. Fam. 2.10.2"
+    }
+  ],
+  "related": [
+    "the-rest",
+    "the-others",
+    "else",
+    "forward",
+    "secondly"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/ceterus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ceterus</a> · <a href=\"https://logeion.uchicago.edu/deinceps\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: deinceps</a>",
+    "Cic. Att. 10.15.4, Fam. 2.10.2 and 7.28.2 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

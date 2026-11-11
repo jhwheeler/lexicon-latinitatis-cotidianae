@@ -1,0 +1,82 @@
+{
+  "id": "independent",
+  "english": "independent",
+  "sense": "not under another’s rule or control",
+  "pos": "adjective",
+  "also": [
+    "independence",
+    "self-governing",
+    "sovereign",
+    "one’s own master",
+    "become independent",
+    "gain independence"
+  ],
+  "also_under": [
+    "verba"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "suī jūris",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "independent, one’s own master",
+      "grammar": "phrase: the genitive of jūs, “of one’s own right”, usually with esse",
+      "evidence": [
+        "Cic. Verr. 2.1.18 (Lewis &amp; Short, s.v. <span lang=\"la\">jūs</span>)",
+        "M-O s.v. independent"
+      ],
+      "comment": "In law, a person in no one else’s power, neither a father’s nor a master’s; Cicero uses it of jurors too independent to be managed. Morgan–Owens gives it for an independent state, and <span lang=\"la\">suī jūris fierī</span> for gaining independence (after Egger)."
+    },
+    {
+      "latin": "līber, lībera, līberum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "free: of a state, independent",
+      "evidence": [
+        "Caes. BG 1.45.3: <span lang=\"la\">līberam dēbēre esse Galliam</span>",
+        "M-O s.v. independent"
+      ],
+      "comment": "The plain word for a free people (see free). Independence itself is <span lang=\"la\">lībertās</span> (M-O s.v. independence)."
+    },
+    {
+      "latin": "suīs lēgibus ūtī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "be self-governing: live under one’s own laws",
+      "grammar": "phrase: ūtor with the ablative",
+      "evidence": [
+        "Caes. BG 1.45.3",
+        "M-O s.v. independence: <span lang=\"la\">facultās suīs lēgibus ūtendī</span> (Egger)"
+      ],
+      "comment": "What Rome left to a free city or people it did not rule directly."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "līberam dēbēre esse Galliam, quam bellō victam suīs lēgibus ūtī voluisset",
+      "english": "Gaul ought to be free, since the senate, though it had beaten her in war, had chosen to let her live under her own laws",
+      "source": "Caes. BG 1.45.3"
+    },
+    {
+      "latin": "quod eōs in jūdicandō nimium suī jūris sententiaeque cognōsset",
+      "english": "because he knew them to be too independent, too much of their own mind, when they sat in judgment",
+      "source": "Cic. Verr. 2.1.18"
+    }
+  ],
+  "related": [
+    "freedom",
+    "free-liberty",
+    "state-country"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/jus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: jus</a> · <a href=\"https://logeion.uchicago.edu/liber\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: liber</a> · <a href=\"https://logeion.uchicago.edu/utor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: utor</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. independent; independence.",
+    "Caesar, <em>Gallic War</em> 1.45, and Cicero, <em>Verrines</em> 2.1.18, checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

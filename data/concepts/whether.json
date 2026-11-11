@@ -1,0 +1,95 @@
+{
+  "id": "whether",
+  "english": "whether",
+  "sense": "in an indirect question",
+  "pos": "conjunction",
+  "also": [
+    "if (= whether)",
+    "to see if",
+    "to see whether"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "-ne (+ subjunctive)",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "whether",
+      "grammar": "enclitic, on the first word of the question, with the subjunctive",
+      "evidence": [
+        "Cato Agr. 2.1: <span lang=\"la\">satisne temperī opera sient cōnfecta, possitne quae reliqua sient cōnficere</span>"
+      ],
+      "comment": "An indirect question is a direct one put under a verb of asking, knowing or telling: the <span lang=\"la\">-ne</span> stays and the verb goes into the subjunctive."
+    },
+    {
+      "latin": "num (+ subjunctive)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "whether",
+      "grammar": "conjunction, with the subjunctive",
+      "evidence": [
+        "Cic. Off. 3.59: <span lang=\"la\">quaerit ex proximō vīcīnō, num fēriae quaedam piscātōrum essent</span>"
+      ],
+      "comment": "In an indirect question the same as <span lang=\"la\">-ne</span>, without the “surely not” of a direct <span lang=\"la\">num</span>."
+    },
+    {
+      "latin": "sī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "whether, to see if",
+      "grammar": "conjunction, after verbs of trying, waiting and looking",
+      "evidence": [
+        "Petr. 33.2: <span lang=\"la\">temptēmus tamen, sī adhūc sorbilia sunt</span>",
+        "Phaedr. 4.8.3–4: <span lang=\"la\">haec cum temptāret sī qua rēs esset cibī</span>"
+      ],
+      "comment": "“To see whether”, after <span lang=\"la\">temptāre, experīrī, exspectāre, vidēre</span> (Lewis &amp; Short s.v. si)."
+    },
+    {
+      "latin": "an",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "whether (… not)",
+      "grammar": "conjunction, after verbs of doubting and not knowing",
+      "evidence": [
+        "Plin. Ep. 2.2.1: <span lang=\"la\">nec liquet mihi an dēbeam</span>"
+      ],
+      "comment": "After <span lang=\"la\">dubitō, nesciō, haud sciō</span> it leans towards yes: <span lang=\"la\">haud sciō an</span>, I rather think."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "vīlicum vocet, roget quid operis siet factum, quid restet, satisne temperī opera sient cōnfecta, possitne quae reliqua sient cōnficere",
+      "english": "let him call the overseer and ask what work has been done, what is left, whether the jobs were finished in time, whether he can finish what remains",
+      "source": "Cato Agr. 2.1"
+    },
+    {
+      "latin": "quaerit ex proximō vīcīnō, num fēriae quaedam piscātōrum essent, quod eōs nūllōs vidēret",
+      "english": "he asks the nearest neighbour whether it was some fishermen’s holiday, since he saw none of them",
+      "source": "Cic. Off. 3.59"
+    },
+    {
+      "latin": "timeō nē jam conceptī sint. temptēmus tamen, sī adhūc sorbilia sunt",
+      "english": "I’m afraid they have chicks in them already. Let’s try, though, whether they can still be sucked",
+      "source": "Petr. 33.2"
+    },
+    {
+      "latin": "īrāscor, nec liquet mihi an dēbeam, sed īrāscor",
+      "english": "I am angry, and I am not sure whether I ought to be, but I am angry",
+      "source": "Plin. Ep. 2.2.1"
+    }
+  ],
+  "related": [
+    "whether-or",
+    "if",
+    "ask"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/ne\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ne</a> · <a href=\"https://logeion.uchicago.edu/num\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: num</a> · <a href=\"https://logeion.uchicago.edu/si\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: si</a> · <a href=\"https://logeion.uchicago.edu/an\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: an</a>",
+    "Quotations from the Latinitas loci collections (loci-cato, loci-cicero-philosophica, loci-petronius, loci-phaedrus, loci-plinius), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

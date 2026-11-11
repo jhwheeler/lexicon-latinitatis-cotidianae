@@ -1,0 +1,91 @@
+{
+  "id": "as-as",
+  "english": "as … as",
+  "pos": "conjunction",
+  "also": [
+    "as much as",
+    "as many as",
+    "as … as possible",
+    "so … as",
+    "as big as"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "tam … quam",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "as … as",
+      "grammar": "adverb and conjunction, with adjectives and adverbs",
+      "evidence": [
+        "Catull. 3.6–7: <span lang=\"la\">suamque nōrat ipsam tam bene quam puella mātrem</span>"
+      ],
+      "comment": "<span lang=\"la\">Tam</span> goes with the adjective or adverb, <span lang=\"la\">quam</span> introduces the other term, in the same case: <span lang=\"la\">tam bene quam puella</span>."
+    },
+    {
+      "latin": "tantus … quantus (tantum … quantum, tot … quot)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "as big as, as much as, as many as",
+      "grammar": "correlative pronouns and adverbs: size, amount and number",
+      "evidence": [
+        "Cic. Fam. 16.2.1: <span lang=\"la\">quantum mē dīligis, tantum fac ut valeās</span>"
+      ],
+      "comment": "For size <span lang=\"la\">tantus … quantus</span>, for amount <span lang=\"la\">tantum … quantum</span>, for number <span lang=\"la\">tot … quot</span>; the <span lang=\"la\">quantus</span>-clause may come first."
+    },
+    {
+      "latin": "quam (+ superlative)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "as … as possible",
+      "grammar": "quam with a superlative adjective or adverb",
+      "evidence": [
+        "Plin. Ep. 6.7.3: <span lang=\"la\">tū tamen quam frequentissimē scrībe</span>",
+        "Cato Agr. 66: <span lang=\"la\">quam mundissimē pūrissimēque fīat</span>"
+      ],
+      "comment": "<span lang=\"la\">Quam prīmum</span>, as soon as possible; <span lang=\"la\">quam plūrimī</span>, as many as possible."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nam mellītus erat suamque nōrat ipsam tam bene quam puella mātrem",
+      "english": "for he was sweet as honey, and knew his mistress as well as a little girl knows her mother",
+      "source": "Catull. 3.6–7"
+    },
+    {
+      "latin": "quantum mē dīligis, tantum fac ut valeās",
+      "english": "as much as you love me, so much see that you get well",
+      "source": "Cic. Fam. 16.2.1"
+    },
+    {
+      "latin": "tū tamen quam frequentissimē scrībe",
+      "english": "all the same, do write as often as you can",
+      "source": "Plin. Ep. 6.7.3"
+    },
+    {
+      "latin": "quam mundissimē pūrissimēque fīat",
+      "english": "let it be done as cleanly and purely as possible",
+      "source": "Cato Agr. 66"
+    },
+    {
+      "latin": "aut quam sīdera multa, cum tacet nox",
+      "english": "or as many as the stars, when the night is silent",
+      "source": "Catull. 7.7"
+    }
+  ],
+  "related": [
+    "than",
+    "as-in-the-way-that",
+    "same",
+    "so-big"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/tam\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tam</a> · <a href=\"https://logeion.uchicago.edu/tantus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tantus</a> · <a href=\"https://logeion.uchicago.edu/quantus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quantus</a> · <a href=\"https://logeion.uchicago.edu/tot\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tot</a> · <a href=\"https://logeion.uchicago.edu/quam\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quam</a>",
+    "Quotations from the Latinitas loci collections (loci-catullus, loci-cicero-epistulae, loci-plinius, loci-cato), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

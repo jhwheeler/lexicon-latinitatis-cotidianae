@@ -1,0 +1,68 @@
+{
+  "id": "whereas",
+  "english": "whereas",
+  "sense": "contrasting two facts",
+  "pos": "conjunction",
+  "also": [
+    "while (contrasting)",
+    "whilst (contrasting)",
+    "on the other hand"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "cum (+ subjunctive)",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "whereas, while",
+      "grammar": "conjunction, with the subjunctive; the main clause often has autem or tamen",
+      "evidence": [
+        "Cic. Sen. 17: <span lang=\"la\">cum aliī mālōs scandant, … ille autem clāvum tenēns quiētus sedeat in puppī</span>"
+      ],
+      "comment": "Adversative <span lang=\"la\">cum</span>: the clause states the fact the main clause is set against. Often Latin needs no conjunction at all: it puts the two clauses side by side and sets their first words against each other (<span lang=\"la\">illī … hī</span>), with <span lang=\"la\">at</span> or <span lang=\"la\">autem</span> in the second."
+    },
+    {
+      "latin": "at, autem (in the second clause)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "whereas, but on the other hand",
+      "grammar": "conjunctions; autem after the first word",
+      "evidence": [
+        "Liv. 1.7.1: <span lang=\"la\">tempore illī praeceptō, at hī numerō avium rēgnum trahēbant</span>",
+        "Gell. 13.24.2: <span lang=\"la\">vitiō vertunt, quia multa egeō; at ego illīs, quia nequeunt egēre</span>"
+      ],
+      "comment": "The English “whereas” clause becomes a main clause with the contrasting word first."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "cum aliī mālōs scandant, aliī per forōs cursent, aliī sentīnam exhauriant, ille autem clāvum tenēns quiētus sedeat in puppī",
+      "english": "while some climb the masts, others run along the gangways and others bail out the bilge, he sits quietly in the stern holding the tiller",
+      "source": "Cic. Sen. 17"
+    },
+    {
+      "latin": "tempore illī praeceptō, at hī numerō avium rēgnum trahēbant",
+      "english": "the one side claimed the kingdom by being first, whereas the other claimed it by the number of birds",
+      "source": "Liv. 1.7.1"
+    },
+    {
+      "latin": "vitiō vertunt, quia multa egeō; at ego illīs, quia nequeunt egēre",
+      "english": "they find fault with me because I go without many things, whereas I find fault with them because they cannot go without",
+      "source": "Gell. 13.24.2"
+    }
+  ],
+  "related": [
+    "but",
+    "while",
+    "however"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/cum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cum</a> · <a href=\"https://logeion.uchicago.edu/at\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: at</a> · <a href=\"https://logeion.uchicago.edu/autem\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: autem</a>",
+    "Quotations from the Latinitas loci collections (loci-cicero-philosophica, loci-livius, loci-gellius), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

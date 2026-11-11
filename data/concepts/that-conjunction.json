@@ -1,0 +1,103 @@
+{
+  "id": "that-conjunction",
+  "english": "that",
+  "sense": "after verbs of saying, thinking and knowing",
+  "pos": "conjunction",
+  "also": [
+    "say that",
+    "think that",
+    "know that",
+    "the fact that",
+    "it happens that"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "accūsātīvus cum īnfīnītīvō",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "that (he says that …)",
+      "grammar": "no conjunction: the subject in the accusative, the verb in the infinitive",
+      "evidence": [
+        "Plin. Ep. 7.9.15: <span lang=\"la\">ajunt enim multum legendum esse, nōn multa</span>",
+        "Sen. Ep. 83.4: <span lang=\"la\">hic quidem ait nōs eandem crisin habēre</span>"
+      ],
+      "comment": "After verbs of saying, thinking, knowing and perceiving, Latin has no word for “that”: “they say that one should read much” is <span lang=\"la\">ajunt multum legendum esse</span>. The tense of the infinitive is relative to the main verb: present for the same time, perfect for before, future for after (<span lang=\"la\">cōgitā et illum puerum esse et tē fuisse</span>). Lewis &amp; Short has <span lang=\"la\">accūsātīvus</span> and <span lang=\"la\">īnfīnītīvus</span> as the grammarians’ words; the name of the construction is modern."
+    },
+    {
+      "latin": "quod (+ indicative)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "that, the fact that",
+      "grammar": "conjunction, with the indicative",
+      "evidence": [
+        "Plin. Ep. 4.1.1: <span lang=\"la\">grātum est utrīque nostrum quod cupis</span>"
+      ],
+      "comment": "“The fact that”: after expressions of feeling and thanks (<span lang=\"la\">gaudeō quod, grātum est quod</span>), and to explain a word just used."
+    },
+    {
+      "latin": "ut (+ subjunctive)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "that (it happens that; I ask that)",
+      "grammar": "conjunction, with the subjunctive; negative ut nōn after fit, nē after verbs of asking",
+      "evidence": [
+        "Cic. Off. 1.101: <span lang=\"la\">ita fit, ut ratiō praesit, appetītus obtemperet</span>"
+      ],
+      "comment": "After <span lang=\"la\">fit, accidit, ēvenit</span>, “it happens that”; after verbs of asking, urging and taking care, “that … should” (<span lang=\"la\">cūrā ut valeās</span>)."
+    },
+    {
+      "latin": "dīcō quod (quia) …",
+      "status": "avoid",
+      "period": "late",
+      "gloss": "I say that …",
+      "grammar": "quod or quia with a finite verb after a verb of saying",
+      "evidence": [
+        "Vulg. 1 Cor. 6.9: <span lang=\"la\">nescītis quia inīquī nōn possidēbunt?</span> (Lewis &amp; Short s.v. quia, “postclass.”)"
+      ],
+      "comment": "Late and Christian Latin, as in the Vulgate; classical Latin uses the accusative and infinitive."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ajunt enim multum legendum esse, nōn multa",
+      "english": "for they say that one should read much, not many things",
+      "source": "Plin. Ep. 7.9.15"
+    },
+    {
+      "latin": "hic quidem ait nōs eandem crisin habēre, quia utrīque dentēs cadunt",
+      "english": "he says that we are at the same stage of life, since both of us are losing our teeth",
+      "source": "Sen. Ep. 83.4"
+    },
+    {
+      "latin": "cōgitā et illum puerum esse et tē fuisse",
+      "english": "remember that he is a boy and that you were one",
+      "source": "Plin. Ep. 9.12.2"
+    },
+    {
+      "latin": "cupis post longum tempus neptem tuam mēque ūnā vidēre. grātum est utrīque nostrum quod cupis",
+      "english": "you want to see your granddaughter and me together after a long time; we are both glad that you want to",
+      "source": "Plin. Ep. 4.1.1"
+    },
+    {
+      "latin": "ita fit, ut ratiō praesit, appetītus obtemperet",
+      "english": "so it comes about that reason leads and appetite obeys",
+      "source": "Cic. Off. 1.101"
+    }
+  ],
+  "related": [
+    "say",
+    "believe",
+    "so-that-purpose"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/accusativus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: accusativus</a> · <a href=\"https://logeion.uchicago.edu/infinitivus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: infinitivus</a> · <a href=\"https://logeion.uchicago.edu/quod\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quod</a> · <a href=\"https://logeion.uchicago.edu/ut\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ut</a> · <a href=\"https://logeion.uchicago.edu/quia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quia</a>",
+    "Quotations from the Latinitas loci collections (loci-plinius, loci-seneca-epistulae, loci-cicero-philosophica), checked against the editions named there.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

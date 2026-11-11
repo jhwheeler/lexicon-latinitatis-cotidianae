@@ -3,7 +3,11 @@
   "english": "more",
   "pos": "adverb",
   "also": [
-    "would you like more"
+    "would you like more",
+    "more of",
+    "more than",
+    "some more",
+    "nothing more"
   ],
   "also_under": [
     "verba"
@@ -14,7 +18,34 @@
       "latin": "amplius",
       "status": "recommended",
       "period": "classical",
-      "grammar": "adverb"
+      "grammar": "adverb",
+      "gloss": "more, any more (of something offered again)",
+      "evidence": [
+        "Hor. S. 2.6.4: <span lang=\"la\">nīl amplius ōrō</span>"
+      ]
+    },
+    {
+      "latin": "plūs, plūris n. + gen.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "more (of): more food, more time",
+      "grammar": "noun in the singular, with a partitive genitive",
+      "evidence": [
+        "Cic. Sen. 66: <span lang=\"la\">eō plūs viāticī quaerere</span>",
+        "Publil. Sent. C 22: <span lang=\"la\">plūs vult quam licet</span>"
+      ],
+      "comment": "“More of” a thing is <span lang=\"la\">plūs</span> with a genitive: <span lang=\"la\">plūs viāticī</span>, more provisions; “more than”, <span lang=\"la\">plūs quam</span>. With verbs and adjectives, see more (to a greater degree)."
+    },
+    {
+      "latin": "plūrēs, plūra",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "more (in number): more people, more things",
+      "grammar": "adjective, plural; gen. plūrium",
+      "evidence": [
+        "Cic. Fam. 7.6.2: <span lang=\"la\">sed plūra scrībēmus aliās</span>",
+        "Phaedr. 2.3.7: <span lang=\"la\">successus improbōrum plūrēs allicit</span>"
+      ]
     }
   ],
   "phrases": [
@@ -27,13 +58,38 @@
       "latin": "Jam satis est.",
       "english": "That’s enough now.",
       "source": "composed"
+    },
+    {
+      "latin": "bene est. nīl amplius ōrō",
+      "english": "it is good. I ask for nothing more",
+      "source": "Hor. S. 2.6.4"
+    },
+    {
+      "latin": "sed plūra scrībēmus aliās",
+      "english": "but I’ll write more another time",
+      "source": "Cic. Fam. 7.6.2"
+    },
+    {
+      "latin": "successus improbōrum plūrēs allicit",
+      "english": "the success of the wicked lures more people on",
+      "source": "Phaedr. 2.3.7"
+    },
+    {
+      "latin": "Cui plūs licet quam pār est, plūs vult quam licet.",
+      "english": "Allow someone more than is fair, and he wants more than is allowed.",
+      "source": "Publil. Sent. C 22"
     }
   ],
   "related": [
-    "be-hungry"
+    "be-hungry",
+    "more-degree",
+    "further-additional",
+    "less"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/amplus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: amplus</a>",
+    "<a href=\"https://logeion.uchicago.edu/amplus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: amplus</a> · <a href=\"https://logeion.uchicago.edu/plus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: plus</a>",
+    "Quotations from the Latinitas loci collections (loci-horatius, loci-cicero-epistulae, loci-phaedrus, loci-publilius, loci-cicero-philosophica), checked against the editions named there.",
+    "Publilius is cited as the loci collection numbers him, by position under each initial letter in the Latin Library text; from N onwards that numbering differs from Meyer’s.",
     "The example sentences marked “composed” are ours."
   ],
   "review": {

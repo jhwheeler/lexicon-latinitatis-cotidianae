@@ -1,0 +1,89 @@
+{
+  "id": "while",
+  "english": "while",
+  "sense": "during the time that",
+  "pos": "conjunction",
+  "also": [
+    "whilst",
+    "as (while)",
+    "during the time that"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "dum (+ present indicative)",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "while",
+      "grammar": "conjunction, with the present indicative, even of past time",
+      "evidence": [
+        "Sen. Ep. 7.8: <span lang=\"la\">hominēs, dum docent, discunt</span>",
+        "Hor. S. 1.5.71–72: <span lang=\"la\">paene … ārsit dum turdōs versat in ignī</span>"
+      ],
+      "comment": "The longer action during which something else happens. Latin keeps the present after <span lang=\"la\">dum</span> even when the main verb is past: <span lang=\"la\">ārsit dum … versat</span>, he caught fire while he was turning. Where the two last equally long, “as long as”, see that record."
+    },
+    {
+      "latin": "cum (+ imperfect subjunctive)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "while, as (in past narrative)",
+      "grammar": "conjunction, with the imperfect subjunctive",
+      "evidence": [
+        "Cic. Tusc. 5.97: <span lang=\"la\">Sōcratēn ferunt, cum ūsque ad vesperum contentius ambulāret …</span>"
+      ],
+      "comment": "The background against which a past event happens."
+    },
+    {
+      "latin": "participium praesentis",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "while (doing)",
+      "grammar": "the present participle, agreeing with its noun",
+      "evidence": [
+        "Cic. Sen. 17: <span lang=\"la\">ille autem clāvum tenēns quiētus sedeat in puppī</span>"
+      ],
+      "comment": "“While holding”, “while walking”: the commonest Latin for an English “while …ing”. Lewis &amp; Short has <span lang=\"la\">participium</span> as the grammarians’ word (Varro, Quintilian)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "mūtuō ista fīunt, et hominēs, dum docent, discunt",
+      "english": "it works both ways: people learn while they teach",
+      "source": "Sen. Ep. 7.8"
+    },
+    {
+      "latin": "diēs nihil est. dum versās tē, nox fit",
+      "english": "a day is nothing. While you turn round, night falls",
+      "source": "Petr. 41.4"
+    },
+    {
+      "latin": "sēdulus hospes paene macrōs ārsit dum turdōs versat in ignī",
+      "english": "our busy host nearly caught fire while he was turning the lean thrushes on the fire",
+      "source": "Hor. S. 1.5.71–72"
+    },
+    {
+      "latin": "dum differtur vīta trānscurrit",
+      "english": "while it is put off, life runs past",
+      "source": "Sen. Ep. 1.2"
+    },
+    {
+      "latin": "Sōcratēn ferunt, cum ūsque ad vesperum contentius ambulāret quaesītumque esset ex eō quārē id faceret, respondisse sē, quō melius cēnāret, obsōnāre ambulandō famem",
+      "english": "they say that Socrates, when he was walking hard till evening and was asked why, answered that he was buying in hunger by walking, so as to dine better",
+      "source": "Cic. Tusc. 5.97"
+    }
+  ],
+  "related": [
+    "as-long-as",
+    "whereas",
+    "when-conjunction"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/dum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dum</a> · <a href=\"https://logeion.uchicago.edu/cum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cum</a> · <a href=\"https://logeion.uchicago.edu/participium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: participium</a>",
+    "Quotations from the Latinitas loci collections (loci-seneca-epistulae, loci-petronius, loci-horatius, loci-cicero-philosophica), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "id": "if-not",
+  "english": "if not",
+  "pos": "conjunction",
+  "also": [
+    "but if not",
+    "if … not",
+    "and if not",
+    "failing that"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "sī nōn",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "if not",
+      "grammar": "sī with nōn before the word negated; alone after a first condition",
+      "evidence": [
+        "Phaedr. 4 epil. 7: <span lang=\"la\">sī nōn ingenium, certē brevitātem approbā</span>",
+        "Varr. RR 1.11.2: <span lang=\"la\">sī nōn, quam proximē</span>"
+      ],
+      "comment": "Negates one word, not the whole condition (for that, <span lang=\"la\">nisi</span>: see unless); also “if not”, “failing that”, after a first condition."
+    },
+    {
+      "latin": "sīn (sīn minus, sīn aliter)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "but if (not)",
+      "grammar": "conjunction: the second of two conditions, the other way",
+      "evidence": [
+        "Cic. Fam. 14.4.3: <span lang=\"la\">sī est spēs nostrī reditūs … sīn, ut ego metuō, trānsāctum est</span>",
+        "Cic. Att. 1.2.1: <span lang=\"la\">sīn aliter acciderit, hūmāniter ferēmus</span>"
+      ],
+      "comment": "After <span lang=\"la\">sī</span>: “but if”. With the verb left out, <span lang=\"la\">sīn minus</span> or <span lang=\"la\">sīn aliter</span>, “but if not”."
+    },
+    {
+      "latin": "sī minus",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "if not (then at least)",
+      "grammar": "sī with minus, the verb understood",
+      "evidence": [
+        "Cic. Rep. 3.7: <span lang=\"la\">sī minus sapientēs, at certē summā laude dignōs</span> (Lewis &amp; Short)"
+      ],
+      "comment": "“If not this, at least that”: Lewis &amp; Short gives it as the same as <span lang=\"la\">sīn minus</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "sī nōn ingenium, certē brevitātem approbā",
+      "english": "if not my talent, at least approve my brevity",
+      "source": "Phaedr. 4 epil. 7"
+    },
+    {
+      "latin": "vīlla aedificanda potissimum ut intrā saepta vīllae habeat aquam, sī nōn, quam proximē",
+      "english": "the farmhouse should above all be built with water inside its walls, or if not, as near as possible",
+      "source": "Varr. RR 1.11.2"
+    },
+    {
+      "latin": "quem sī legēs, laetābor; sīn autem minus, habēbunt certē quō sē oblectent posterī",
+      "english": "if you read it, I shall be glad; but if not, those who come after will at least have something to enjoy",
+      "source": "Phaedr. 3 prol. 31–32"
+    },
+    {
+      "latin": "sī est spēs nostrī reditūs, eam cōnfīrmēs et rem adjuvēs; sīn, ut ego metuō, trānsāctum est, quōquō modō potes ad mē fac veniās.",
+      "english": "if there is hope of my return, strengthen it and help the cause; but if, as I fear, it is all over, come to me any way you can.",
+      "source": "Cic. Fam. 14.4.3"
+    }
+  ],
+  "related": [
+    "unless",
+    "if",
+    "otherwise",
+    "else"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/si\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: si</a> · <a href=\"https://logeion.uchicago.edu/sin\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sin</a> · <a href=\"https://logeion.uchicago.edu/minus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: minus</a>",
+    "Quotations from the Latinitas loci collections (loci-phaedrus, loci-varro, loci-cicero-epistulae), checked against the editions named there.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

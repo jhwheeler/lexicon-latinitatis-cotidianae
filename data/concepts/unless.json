@@ -1,0 +1,77 @@
+{
+  "id": "unless",
+  "english": "unless",
+  "pos": "conjunction",
+  "also": [
+    "except if",
+    "if … not (the whole condition)",
+    "except that",
+    "nothing but"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "nisi",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "unless, if not",
+      "grammar": "conjunction, with the moods of sī",
+      "evidence": [
+        "Cic. Sen. 21: <span lang=\"la\">crēdō, nisi eam exerceās</span>",
+        "Cic. Tusc. 4.78: <span lang=\"la\">quō tē modō, inquit, accēpissem, nisi īrātus essem!</span>"
+      ],
+      "comment": "Negates the whole condition: “unless”. Where one word is negated, Latin says <span lang=\"la\">sī nōn</span> (see if not). After a negative, <span lang=\"la\">nisi</span> is “except, but”: <span lang=\"la\">nihil nisi</span>, nothing but; <span lang=\"la\">nisi quod</span>, except that."
+    },
+    {
+      "latin": "nī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "unless, if not",
+      "grammar": "conjunction, with the moods of sī",
+      "evidence": [
+        "Catull. 14.1: <span lang=\"la\">nī tē plūs oculīs meīs amārem</span>"
+      ],
+      "comment": "The older form, frequent in comedy and poetry (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "at memoria minuitur. crēdō, nisi eam exerceās",
+      "english": "but memory fades. — I dare say, unless you exercise it",
+      "source": "Cic. Sen. 21"
+    },
+    {
+      "latin": "quō tē modō, inquit, accēpissem, nisi īrātus essem!",
+      "english": "“how I would have dealt with you,” he said, “if I were not angry!”",
+      "source": "Cic. Tusc. 4.78"
+    },
+    {
+      "latin": "nī tē plūs oculīs meīs amārem",
+      "english": "if I didn’t love you more than my own eyes",
+      "source": "Catull. 14.1"
+    },
+    {
+      "latin": "nihil, nisi quod merīdiānus somnus eximitur",
+      "english": "nothing (is different), except that the midday nap is dropped",
+      "source": "Plin. Ep. 9.40.2"
+    },
+    {
+      "latin": "nūlla jam ultrā gēns, nihil nisi flūctūs et saxa",
+      "english": "no people any more beyond us, nothing but waves and rocks",
+      "source": "Tac. Agr. 30.5"
+    }
+  ],
+  "related": [
+    "if",
+    "if-not"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/nisi\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nisi</a> · <a href=\"https://logeion.uchicago.edu/ni\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ni</a>",
+    "Quotations from the Latinitas loci collections (loci-cicero-philosophica, loci-catullus, loci-plinius, loci-tacitus), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -6,7 +6,11 @@
     "lots",
     "a lot of",
     "lots of",
-    "very much"
+    "very much",
+    "much",
+    "not much",
+    "much more",
+    "much better"
   ],
   "also_under": [
     "verba"
@@ -58,6 +62,18 @@
       "evidence": [
         "Cic. Fam. 1.7.1: <span lang=\"la\">ut tē plūrimum dīligam</span> (Lewis &amp; Short)"
       ]
+    },
+    {
+      "latin": "multō (+ comparative)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "much (with comparatives): much more, much better",
+      "grammar": "adverb (the ablative of the measure of difference)",
+      "evidence": [
+        "Cic. Off. 1.48: <span lang=\"la\">quī multō plūs efferunt quam accēpērunt</span>",
+        "Cic. Fam. 4.1.1: <span lang=\"la\">multō ante</span> (Lewis &amp; Short)"
+      ],
+      "comment": "With comparatives and with <span lang=\"la\">ante, post</span>: <span lang=\"la\">multō plūs</span>, much more; <span lang=\"la\">nōn multō post</span>, not long after (Lewis &amp; Short)."
     }
   ],
   "phrases": [
@@ -75,18 +91,26 @@
       "latin": "Multa. Pilā lūdō.",
       "english": "Lots of things. I play ball.",
       "source": "Traupman 41"
+    },
+    {
+      "latin": "an imitārī agrōs fertilēs, quī multō plūs efferunt quam accēpērunt?",
+      "english": "or to imitate fertile fields, which give back much more than they received?",
+      "source": "Cic. Off. 1.48"
     }
   ],
   "related": [
     "a-little",
     "cost-a-lot",
     "thats-enough",
-    "many"
+    "many",
+    "more-degree",
+    "most-majority"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/multus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: multus</a> · <a href=\"https://logeion.uchicago.edu/valde\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: valde</a> · <a href=\"https://logeion.uchicago.edu/plurimus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: plurimus</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 40, 41, 85, checked against the searchable text of the book (9 November 2026).",
-    "Quotations from the Latinitas loci collections (loci-catullus, loci-cicero-epistulae), checked against the editions named there."
+    "Quotations from the Latinitas loci collections (loci-catullus, loci-cicero-epistulae, loci-cicero-philosophica), checked against the editions named there.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",

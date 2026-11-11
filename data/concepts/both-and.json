@@ -1,0 +1,77 @@
+{
+  "id": "both-and",
+  "english": "both … and",
+  "pos": "conjunction",
+  "also": [
+    "as well as",
+    "and also"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "et … et",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "both … and",
+      "grammar": "conjunctions, before each member",
+      "evidence": [
+        "Liv. 2.12.9: <span lang=\"la\">et facere et patī fortia Rōmānum est</span>",
+        "Plin. Ep. 9.12.2: <span lang=\"la\">cōgitā et illum puerum esse et tē fuisse</span>"
+      ],
+      "comment": "Each member equal. With a negative, “neither … nor” is <span lang=\"la\">nec … nec</span>."
+    },
+    {
+      "latin": "cum … tum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "both … and (above all)",
+      "grammar": "conjunction and adverb: the second member weighs more",
+      "evidence": [
+        "Liv. 26.50.13: <span lang=\"la\">vincentem omnia cum armīs, tum benignitāte ac beneficiīs</span>"
+      ],
+      "comment": "“Not only … but especially”; often strengthened, <span lang=\"la\">cum … tum vērō</span> (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "et facere et patī fortia Rōmānum est",
+      "english": "both to do and to bear brave things is the Roman way",
+      "source": "Liv. 2.12.9"
+    },
+    {
+      "latin": "cōgitā et illum puerum esse et tē fuisse",
+      "english": "remember both that he is a boy and that you were one",
+      "source": "Plin. Ep. 9.12.2"
+    },
+    {
+      "latin": "utrumque enim vitium est, et omnibus crēdere et nūllī",
+      "english": "for both are faults, trusting everyone and trusting no one",
+      "source": "Sen. Ep. 3.4"
+    },
+    {
+      "latin": "Tum pol ego et oleum et operam perdidī.",
+      "english": "Then, by Pollux, I’ve wasted both my oil and my effort.",
+      "source": "Plaut. Poen. 332b"
+    },
+    {
+      "latin": "vēnisse dīs simillimum juvenem, vincentem omnia cum armīs, tum benignitāte ac beneficiīs",
+      "english": "that a young man most like the gods had come, conquering everything by arms and, above all, by kindness and good deeds",
+      "source": "Liv. 26.50.13"
+    }
+  ],
+  "related": [
+    "and",
+    "not-only-but-also",
+    "either-or",
+    "neither-nor"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/et\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: et</a> · <a href=\"https://logeion.uchicago.edu/cum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cum</a> · <a href=\"https://logeion.uchicago.edu/tum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tum</a>",
+    "Quotations from the Latinitas loci collections (loci-livius, loci-plinius, loci-seneca-epistulae, loci-plautus), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

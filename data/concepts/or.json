@@ -1,0 +1,115 @@
+{
+  "id": "or",
+  "english": "or",
+  "pos": "conjunction",
+  "also": [
+    "or else (between two things)",
+    "or rather"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "aut",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "or (one or the other)",
+      "grammar": "conjunction",
+      "evidence": [
+        "Cic. Tusc. 2.40: <span lang=\"la\">aniculae saepe inediam bīduum aut trīduum ferunt</span>"
+      ],
+      "comment": "The alternatives exclude each other, or the second replaces the first: “this or that, not both” (Lewis &amp; Short). Repeated, <span lang=\"la\">aut … aut</span>, either … or. After a negative Latin keeps <span lang=\"la\">aut</span> or turns it into <span lang=\"la\">nec … nec</span>: “I don’t drink wine or milk” is <span lang=\"la\">nec vīnum nec lac bibō</span>."
+    },
+    {
+      "latin": "vel",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "or (whichever you like)",
+      "grammar": "conjunction",
+      "evidence": [
+        "Cato Agr. 88: <span lang=\"la\">maenam āridam vel ōvum dēmittitō</span>"
+      ],
+      "comment": "The choice is free, and either will do: “or, if you like”. <span lang=\"la\">Vel potius</span>, or rather."
+    },
+    {
+      "latin": "-ve",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "or (lightly)",
+      "grammar": "enclitic conjunction, added to the second word",
+      "evidence": [
+        "Cic. Phil. 14.16: <span lang=\"la\">duābus tribusve hōrīs</span> (Lewis &amp; Short)",
+        "Ter. Ph. 3.3.21: <span lang=\"la\">nē quid plūs minusve faxit</span> (Lewis &amp; Short)"
+      ],
+      "comment": "A light <span lang=\"la\">vel</span>, mostly between numbers and small words: <span lang=\"la\">plūs minusve</span>, more or less."
+    },
+    {
+      "latin": "sīve (seu)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "or, or if",
+      "grammar": "conjunction",
+      "evidence": [
+        "Hor. S. 2.8.16–17: <span lang=\"la\">Albānum … sīve Falernum tē magis adpositīs dēlectat, habēmus utrumque</span>"
+      ],
+      "comment": "“Or if”: in a condition, a second possibility; also a second name for the same thing, “or rather”. For “whether … or” see that record."
+    },
+    {
+      "latin": "an",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "or (in a question)",
+      "grammar": "conjunction, in direct and indirect questions",
+      "evidence": [
+        "Plin. Ep. 2.8.1: <span lang=\"la\">studēs an piscāris an vēnāris an simul omnia?</span>"
+      ],
+      "comment": "The “or” of a question that offers a choice: <span lang=\"la\">Vīnum an aquam?</span>, wine or water?"
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "aniculae saepe inediam bīduum aut trīduum ferunt",
+      "english": "little old women often go without food for two or three days",
+      "source": "Cic. Tusc. 2.40"
+    },
+    {
+      "latin": "cavētō, quom ventus siet aut imber, effodiās aut ferās",
+      "english": "take care not to dig up or carry a tree when there is wind or rain",
+      "source": "Cato Agr. 28.1"
+    },
+    {
+      "latin": "maenam āridam vel ōvum dēmittitō; sī natābit, ea muriēs erit",
+      "english": "drop in a dried sprat or an egg; if it floats, that will be brine",
+      "source": "Cato Agr. 88"
+    },
+    {
+      "latin": "duābus tribusve hōrīs",
+      "english": "in two or three hours",
+      "source": "Cic. Phil. 14.16 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "Albānum … sīve Falernum tē magis adpositīs dēlectat, habēmus utrumque",
+      "english": "if Alban or Falernian pleases you more than what is served, we have both",
+      "source": "Hor. S. 2.8.16–17"
+    },
+    {
+      "latin": "studēs an piscāris an vēnāris an simul omnia?",
+      "english": "are you studying, or fishing, or hunting, or all at once?",
+      "source": "Plin. Ep. 2.8.1"
+    }
+  ],
+  "related": [
+    "either-or",
+    "whether-or",
+    "otherwise"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/aut\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aut</a> · <a href=\"https://logeion.uchicago.edu/vel\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vel</a> · <a href=\"https://logeion.uchicago.edu/ve\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ve</a> · <a href=\"https://logeion.uchicago.edu/sive\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sive</a> · <a href=\"https://logeion.uchicago.edu/an\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: an</a>",
+    "Quotations from the Latinitas loci collections (loci-cicero-philosophica, loci-cato, loci-horatius, loci-plinius), checked against the editions named there.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

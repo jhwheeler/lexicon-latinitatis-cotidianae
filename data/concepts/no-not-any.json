@@ -1,0 +1,80 @@
+{
+  "id": "no-not-any",
+  "english": "no",
+  "sense": "not any",
+  "pos": "adjective",
+  "also": [
+    "no one (thing)",
+    "not a single",
+    "no news"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "nūllus, nūlla, nūllum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "no, not any",
+      "grammar": "adjective; gen. nūllīus, dat. nūllī",
+      "evidence": [
+        "Gell. 17.8.5: <span lang=\"la\">nūllum inde ībat oleum</span>",
+        "Plin. NH 9.42: <span lang=\"la\">nūllum animal graviōre somnō premitur</span>"
+      ],
+      "comment": "“No” before a noun. “And no” is <span lang=\"la\">nec ūllus</span> (see any); with persons, “no one” is <span lang=\"la\">nēmō</span>; “no …” of a quantity is often <span lang=\"la\">nihil</span> with a genitive (below)."
+    },
+    {
+      "latin": "nihil + gen.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "no (amount of): no news, no warmth",
+      "grammar": "indeclinable pronoun with a partitive genitive",
+      "evidence": [
+        "Cic. Att. 12.1.2: <span lang=\"la\">novī nihil</span>",
+        "Liv. 21.54.8: <span lang=\"la\">nihil calōris inerat</span>"
+      ],
+      "comment": "For “no” before a mass or abstract noun: <span lang=\"la\">nihil novī</span>, no news; <span lang=\"la\">nihil calōris</span>, no warmth (see nothing)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nūllum inde ībat oleum",
+      "english": "no oil came out of it",
+      "source": "Gell. 17.8.5"
+    },
+    {
+      "latin": "sī rem nūllam habēbis, quod in buccam vēnerit scrībitō",
+      "english": "if you have no news, write whatever comes into your mouth",
+      "source": "Cic. Att. 1.12.4"
+    },
+    {
+      "latin": "nūllum animal graviōre somnō premitur",
+      "english": "no animal sleeps more heavily",
+      "source": "Plin. NH 9.42"
+    },
+    {
+      "latin": "sōl fervit, et fit nihil; it diēs, et amīcī nūllī eunt",
+      "english": "the sun blazes and nothing happens; the day goes by, and no friends come",
+      "source": "Gell. 2.29.10"
+    },
+    {
+      "latin": "nōn captō ante cibō, nōn ope ūllā ad arcendum frīgus adhibitā, nihil calōris inerat",
+      "english": "they had eaten nothing beforehand and had nothing to keep out the cold, so there was no warmth in them",
+      "source": "Liv. 21.54.8"
+    }
+  ],
+  "related": [
+    "any",
+    "none",
+    "nothing",
+    "zero"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/nullus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nullus</a> · <a href=\"https://logeion.uchicago.edu/nihil\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nihil</a>",
+    "Quotations from the Latinitas loci collections (loci-gellius, loci-cicero-epistulae, loci-plinius, loci-livius), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

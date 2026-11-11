@@ -1,0 +1,96 @@
+{
+  "id": "so-that-purpose",
+  "english": "so that",
+  "sense": "in order that: purpose",
+  "pos": "conjunction",
+  "also": [
+    "in order to",
+    "so as to",
+    "in order that",
+    "lest",
+    "so that … not",
+    "to (in order to)"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "ut, nē (+ subjunctive)",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "so that, in order to; so that … not",
+      "grammar": "conjunctions, with the present subjunctive after a present or future main verb, the imperfect after a past one",
+      "evidence": [
+        "Ov. Ars 2.107: <span lang=\"la\">ut amēris, amābilis estō</span>",
+        "Quint. 6.1.46: <span lang=\"la\">date puerō pānem, nē plōret</span>"
+      ],
+      "comment": "English “to …” of purpose is a clause in Latin, never a bare infinitive: <span lang=\"la\">vēnī ut tē vidērem</span>. A purpose to be avoided takes <span lang=\"la\">nē</span>, not <span lang=\"la\">ut nōn</span>; “and so that … not” is <span lang=\"la\">nēve</span>."
+    },
+    {
+      "latin": "quō (+ comparative and subjunctive)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "so that (the more …)",
+      "grammar": "conjunction, where the clause has a comparative",
+      "evidence": [
+        "Cic. Tusc. 5.97: <span lang=\"la\">respondisse sē, quō melius cēnāret, obsōnāre ambulandō famem</span>"
+      ]
+    },
+    {
+      "latin": "supīnum (dormītum īre)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "to (after verbs of going)",
+      "grammar": "the supine in -um after a verb of motion",
+      "evidence": [
+        "Hor. S. 1.5.48: <span lang=\"la\">lūsum it Maecēnās, dormītum ego Vergiliusque</span>"
+      ],
+      "comment": "“Go and sleep”, “come to eat”: <span lang=\"la\">dormītum īre</span>, <span lang=\"la\">cēnātum venīre</span>. The gerund with <span lang=\"la\">ad</span> or <span lang=\"la\">causā</span> does the same work: see purpose."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ut amēris, amābilis estō",
+      "english": "to be loved, be lovable",
+      "source": "Ov. Ars 2.107"
+    },
+    {
+      "latin": "Eāmus intrō, ut prandeāmus.",
+      "english": "Let’s go in and have lunch.",
+      "source": "Plaut. Men. 387"
+    },
+    {
+      "latin": "date puerō pānem, nē plōret",
+      "english": "give the boy some bread, so that he doesn’t cry",
+      "source": "Quint. 6.1.46"
+    },
+    {
+      "latin": "Nē cadam, amābō, tenē mē.",
+      "english": "Hold me, please, so I don’t fall.",
+      "source": "Plaut. Cas. 634c"
+    },
+    {
+      "latin": "Sōcratēn ferunt … respondisse sē, quō melius cēnāret, obsōnāre ambulandō famem",
+      "english": "they say Socrates answered that he was buying in hunger by walking, so as to dine better",
+      "source": "Cic. Tusc. 5.97"
+    },
+    {
+      "latin": "lūsum it Maecēnās, dormītum ego Vergiliusque",
+      "english": "Maecenas goes off to play, Virgil and I to sleep",
+      "source": "Hor. S. 1.5.48"
+    }
+  ],
+  "related": [
+    "purpose",
+    "so-that-result",
+    "and-not"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/ut\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ut</a> · <a href=\"https://logeion.uchicago.edu/ne\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ne</a> · <a href=\"https://logeion.uchicago.edu/quo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quo</a> · <a href=\"https://logeion.uchicago.edu/supinus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: supinus</a>",
+    "Quotations from the Latinitas loci collections (loci-ovidius, loci-plautus, loci-quintilianus, loci-cicero-philosophica, loci-horatius), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

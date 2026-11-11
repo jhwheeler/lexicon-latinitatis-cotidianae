@@ -1,0 +1,80 @@
+{
+  "id": "otherwise",
+  "english": "otherwise",
+  "sense": "or else, if not",
+  "pos": "adverb",
+  "also": [
+    "or else",
+    "else (if not)",
+    "if not"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "aliter",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "otherwise, else",
+      "grammar": "adverb; the verb in the mood of the condition it stands for",
+      "evidence": [
+        "Cic. Off. 2.42: <span lang=\"la\">neque enim aliter esset jūs</span> (Lewis &amp; Short)",
+        "Nep. Them. 7 fin. (Lewis &amp; Short)"
+      ],
+      "comment": "“If not, …”: <span lang=\"la\">aliter</span> stands for a condition, so after an unreal one the verb is subjunctive (<span lang=\"la\">aliter esset</span>, otherwise it would be). Its first sense is “in another way” (<span lang=\"la\">aliter atque</span>, otherwise than)."
+    },
+    {
+      "latin": "sīn aliter (sīn minus)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "but if not, otherwise",
+      "grammar": "conjunction and adverb, opening a clause",
+      "evidence": [
+        "Cic. Att. 1.2.1: <span lang=\"la\">sīn aliter acciderit, hūmāniter ferēmus</span>"
+      ],
+      "comment": "Where the “otherwise” is a whole condition: see if not."
+    },
+    {
+      "latin": "aliōquī (aliōquīn)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "otherwise, else; in other respects",
+      "grammar": "adverb, first in its clause",
+      "evidence": [
+        "Plin. Ep. 8.8.1: <span lang=\"la\">sī nōndum (et putō nōndum: aliōquī narrāssēs mihi)</span> (Lewis &amp; Short)"
+      ],
+      "comment": "From Livy on, and frequent in Pliny’s letters and Quintilian; not in Cicero (Lewis &amp; Short). Lewis &amp; Short notes that the form <span lang=\"la\">aliōquīn</span> is doubted in the manuscripts."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "jūs enim semper est quaesītum aequābile; neque enim aliter esset jūs",
+      "english": "for what was always sought was fair and equal law; otherwise it would not be law",
+      "source": "Cic. Off. 2.42 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "sīn aliter acciderit, hūmāniter ferēmus",
+      "english": "but if it turns out otherwise, we shall bear it like reasonable people",
+      "source": "Cic. Att. 1.2.1"
+    },
+    {
+      "latin": "sī nōndum (et putō nōndum: aliōquī narrāssēs mihi)",
+      "english": "if you haven’t yet (and I think you haven’t, otherwise you would have told me)",
+      "source": "Plin. Ep. 8.8.1 (Lewis &amp; Short)"
+    }
+  ],
+  "related": [
+    "if-not",
+    "else",
+    "or"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/aliter\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aliter</a> · <a href=\"https://logeion.uchicago.edu/sin\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sin</a> · <a href=\"https://logeion.uchicago.edu/alioqui\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: alioqui</a>",
+    "Cicero, <em>Ad Atticum</em> 1.2.1, checked for the lexicon’s record <em>else</em> against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "id": "abandon",
+  "english": "abandon",
+  "sense": "a person or a place",
+  "pos": "verb",
+  "also": [
+    "desert",
+    "forsake",
+    "leave behind",
+    "leave in the lurch",
+    "let down",
+    "abandoned"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "dēserō, dēserere, dēseruī, dēsertum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "abandon, desert, forsake",
+      "grammar": "verb, third conjugation, with the accusative",
+      "evidence": [
+        "Cic. Q. Fr. 1.3.5: <span lang=\"la\">cum amīcī partim dēseruerint mē, partim etiam prōdiderint</span> (Lewis &amp; Short)",
+        "Verg. A. 10.600: <span lang=\"la\">frātrem nē dēsere frāter</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Leave someone or something one should stand by: friends, an army, a post, a cause. Narrower than <span lang=\"la\">relinquere</span> and, from its military use, often implying cowardice (Lewis &amp; Short). Of things, “fail, give out”."
+    },
+    {
+      "latin": "relinquō, relinquere, relīquī, relictum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "leave behind, leave",
+      "grammar": "verb, third conjugation, with the accusative",
+      "evidence": [
+        "Ter. Phorm. 1.2.22: <span lang=\"la\">mē fīliīs relinquont quasi magistrum</span> (Lewis &amp; Short)"
+      ],
+      "comment": "The general word for leaving a person or a place behind, which need not blame (Lewis &amp; Short); also “leave over, bequeath”."
+    },
+    {
+      "latin": "dēstituō, dēstituere, dēstituī, dēstitūtum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "leave in the lurch, let down",
+      "grammar": "verb, third conjugation, with the accusative",
+      "evidence": [
+        "Cic. Rosc. Am. 117: <span lang=\"la\">indūxit, dēcēpit, dēstituit, adversāriīs trādidit</span> (Lewis &amp; Short)",
+        "Phaedr. 5.10: <span lang=\"la\">nōn tē dēstituit animus, sed vīrēs meae</span>"
+      ],
+      "comment": "Leave someone alone when he relies on you. Its first sense is “set down, place” (Livy, Plautus) (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "cum amīcī partim dēseruerint mē, partim etiam prōdiderint",
+      "english": "since some of my friends have abandoned me and some have even betrayed me",
+      "source": "Cic. Q. Fr. 1.3.5 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "nōtāsque palūdēs dēserit atque altam suprā volat ardea nūbem",
+      "english": "and the heron leaves its familiar marshes and flies above the high clouds",
+      "source": "Verg. G. 1.363–364"
+    },
+    {
+      "latin": "nōn tē dēstituit animus, sed vīrēs meae",
+      "english": "it was not my courage that let you down, but my strength",
+      "source": "Phaedr. 5.10"
+    }
+  ],
+  "related": [
+    "abandon-plan",
+    "go-away",
+    "leave-me-alone"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/desero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: desero</a> · <a href=\"https://logeion.uchicago.edu/relinquo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: relinquo</a> · <a href=\"https://logeion.uchicago.edu/destituo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: destituo</a>",
+    "Quotations from the Latinitas loci collections (loci-vergilius, loci-phaedrus), checked against the editions named there; quotations marked “Lewis &amp; Short” are copied from its citations."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

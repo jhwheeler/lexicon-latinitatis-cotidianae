@@ -1,0 +1,73 @@
+{
+  "id": "after-conjunction",
+  "english": "after",
+  "sense": "after he came: the conjunction",
+  "pos": "conjunction",
+  "also": [
+    "after (doing)",
+    "once",
+    "when (after)"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "postquam",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "after, when",
+      "grammar": "conjunction, with the perfect indicative where English has the pluperfect",
+      "evidence": [
+        "Hor. S. 2.8.57–58: <span lang=\"la\">postquam nihil esse perīclī sēnsimus, ērigimur</span>",
+        "Verg. A. 1.216: <span lang=\"la\">postquam exēmpta famēs epulīs mēnsaeque remōtae</span>"
+      ],
+      "comment": "“After he had come” is <span lang=\"la\">postquam vēnit</span>: Latin uses the perfect, as with <span lang=\"la\">ubi</span> and <span lang=\"la\">ut</span>. Written apart with a measure of time: <span lang=\"la\">post … quam</span>, so many days after."
+    },
+    {
+      "latin": "ablātīvus absolūtus",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "after (doing), when … had been done",
+      "grammar": "a noun and a participle in the ablative",
+      "evidence": [
+        "Varr. RR 3.16.35: <span lang=\"la\">quō factō nōn modo dēsistunt pugnā</span>"
+      ],
+      "comment": "The usual Latin for “after doing X” or “when X was done”, with no conjunction: <span lang=\"la\">quō factō</span>, after which; <span lang=\"la\">cēnā factā</span>, after dinner. Lewis &amp; Short has the grammarians’ <span lang=\"la\">ablātīvus</span>; the name of the construction is modern."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "postquam nihil esse perīclī sēnsimus, ērigimur",
+      "english": "once we see there is no danger, we sit up again",
+      "source": "Hor. S. 2.8.57–58"
+    },
+    {
+      "latin": "postquam exēmpta famēs epulīs mēnsaeque remōtae",
+      "english": "after hunger was taken away by the feast and the tables removed",
+      "source": "Verg. A. 1.216"
+    },
+    {
+      "latin": "haec postquam omnia sēcrēvimus, tum suō quaeque locō disposuimus",
+      "english": "after we had sorted all these things, we put each in its place",
+      "source": "Col. 12.3.3"
+    },
+    {
+      "latin": "quae crēbrius inter sē pugnābunt, aspargī eās oportet aquā mulsā. quō factō nōn modo dēsistunt pugnā, sed etiam conferciunt sē lingentēs",
+      "english": "the bees that keep fighting should be sprinkled with honey-water; after that they not only stop fighting but crowd together licking one another",
+      "source": "Varr. RR 3.16.35"
+    }
+  ],
+  "related": [
+    "when-conjunction",
+    "then-next"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/postquam\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: postquam</a> · <a href=\"https://logeion.uchicago.edu/ablativus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ablativus</a>",
+    "Quotations from the Latinitas loci collections (loci-horatius, loci-vergilius, loci-cato, loci-varro), checked against the editions named there.",
+    "The quotation of Columella, <em>Dē rē rūsticā</em> 12.3.3, is from the appendix of the Latinitas loci collection on Cato (loci-cato)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

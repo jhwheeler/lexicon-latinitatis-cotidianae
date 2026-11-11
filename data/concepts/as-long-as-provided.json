@@ -1,0 +1,66 @@
+{
+  "id": "as-long-as-provided",
+  "english": "as long as",
+  "sense": "provided that, on condition that",
+  "pos": "conjunction",
+  "also": [
+    "provided that",
+    "providing",
+    "so long as",
+    "on condition that",
+    "if only (on condition)"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "dum, dummodo (+ subjunctive)",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "provided that, as long as",
+      "grammar": "conjunction, with the subjunctive; negative dum nē, dummodo nē",
+      "evidence": [
+        "Cic. Off. 1.97: <span lang=\"la\">ōderint, dum metuant</span> (Accius, quoted by Cicero; Lewis &amp; Short)",
+        "Cato Agr. 5.4: <span lang=\"la\">id faciat saepe, dum nē lassus fīat</span>"
+      ],
+      "comment": "The condition on which the main clause holds. The negative is <span lang=\"la\">nē</span>, not <span lang=\"la\">nōn</span>."
+    },
+    {
+      "latin": "modo (+ subjunctive)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "if only, provided",
+      "grammar": "adverb, with the subjunctive; modo nē, modo ut",
+      "evidence": [
+        "Lewis &amp; Short s.v. modo"
+      ],
+      "comment": "“Only let …”: the lighter form; see only."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ōderint, dum metuant",
+      "english": "let them hate, as long as they fear",
+      "source": "Cic. Off. 1.97 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "opus rūsticum omne cūret utī sciat facere, et id faciat saepe, dum nē lassus fīat",
+      "english": "let him make sure he knows how to do every job on the farm, and do it often, as long as he doesn’t tire himself",
+      "source": "Cato Agr. 5.4"
+    }
+  ],
+  "related": [
+    "as-long-as",
+    "if",
+    "only-merely"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/dum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dum</a> · <a href=\"https://logeion.uchicago.edu/dummodo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dummodo</a> · <a href=\"https://logeion.uchicago.edu/modo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: modo</a>",
+    "Quotations from the Latinitas loci collections (loci-cato), checked against the editions named there.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

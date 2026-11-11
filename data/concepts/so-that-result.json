@@ -1,0 +1,80 @@
+{
+  "id": "so-that-result",
+  "english": "so … that",
+  "sense": "result",
+  "pos": "conjunction",
+  "also": [
+    "so that (result)",
+    "such … that",
+    "so much … that",
+    "so … as to",
+    "with the result that"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "ut (+ subjunctive), after ita, sīc, tam, adeō, tantus, tālis",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "so … that",
+      "grammar": "conjunction, with the subjunctive; negative ut nōn",
+      "evidence": [
+        "Sen. Ep. 57.1: <span lang=\"la\">tantum lutī tōtā viā fuit ut possim vidērī nihilōminus nāvigāsse</span>",
+        "Liv. 21.56.7: <span lang=\"la\">ita torpentēs gelū in castra rediēre ut vix laetitiam victōriae sentīrent</span>"
+      ],
+      "comment": "The main clause usually has the pointer word (<span lang=\"la\">ita, sīc, tam, adeō, tantus, tālis</span>). Unlike purpose, the negative is <span lang=\"la\">ut nōn</span>, and the tense may break the sequence to state a plain past fact (<span lang=\"la\">ut … prōdiderit</span>)."
+    },
+    {
+      "latin": "quīn (+ subjunctive)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "that … not (after a negative)",
+      "grammar": "conjunction, with the subjunctive, after a negative main clause",
+      "evidence": [
+        "Ter. Haut. 675: <span lang=\"la\">Nihil tam difficile est quīn quaerendō investīgārī possiet.</span>"
+      ],
+      "comment": "“Nothing is so hard that it cannot …”: <span lang=\"la\">quīn</span> = <span lang=\"la\">ut nōn</span> after a negative."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "tantum lutī tōtā viā fuit ut possim vidērī nihilōminus nāvigāsse",
+      "english": "there was so much mud the whole way that I might as well have gone by sea",
+      "source": "Sen. Ep. 57.1"
+    },
+    {
+      "latin": "nōs enim ita philologī sumus ut vel cum fabrīs habitāre possīmus",
+      "english": "for we are such bookworms that we could even live with the builders in",
+      "source": "Cic. Q. fr. 2.8.3"
+    },
+    {
+      "latin": "ita torpentēs gelū in castra rediēre ut vix laetitiam victōriae sentīrent",
+      "english": "they came back to camp so numb with cold that they could hardly feel the joy of victory",
+      "source": "Liv. 21.56.7"
+    },
+    {
+      "latin": "nōn tamen adeō virtūtum sterile saeculum ut nōn et bona exempla prōdiderit",
+      "english": "yet the age was not so barren of virtue that it produced no good examples",
+      "source": "Tac. Hist. 1.3"
+    },
+    {
+      "latin": "Nihil tam difficile est quīn quaerendō investīgārī possiet.",
+      "english": "Nothing is so hard that it can’t be found out by searching.",
+      "source": "Ter. Haut. 675"
+    }
+  ],
+  "related": [
+    "so-that-purpose",
+    "so-big",
+    "therefore"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/ut\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ut</a> · <a href=\"https://logeion.uchicago.edu/quin\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quin</a> · <a href=\"https://logeion.uchicago.edu/ita\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ita</a> · <a href=\"https://logeion.uchicago.edu/tam\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tam</a> · <a href=\"https://logeion.uchicago.edu/adeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: adeo</a> · <a href=\"https://logeion.uchicago.edu/tantus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tantus</a>",
+    "Quotations from the Latinitas loci collections (loci-seneca-epistulae, loci-cicero-epistulae, loci-livius, loci-tacitus, loci-terentius), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

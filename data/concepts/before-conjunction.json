@@ -1,0 +1,67 @@
+{
+  "id": "before-conjunction",
+  "english": "before",
+  "sense": "before he came: the conjunction",
+  "pos": "conjunction",
+  "also": [
+    "before (doing)",
+    "sooner than"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "antequam",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "before",
+      "grammar": "conjunction: the indicative for a plain fact, the subjunctive for what is expected, intended or prevented",
+      "evidence": [
+        "Sen. Ep. 87.1: <span lang=\"la\">naufragium antequam nāvem ascenderem fēcī</span>",
+        "Varr. RR 1.1.1: <span lang=\"la\">ut sarcinās conligam, antequam proficīscar ē vītā</span>"
+      ],
+      "comment": "Often split, <span lang=\"la\">ante … quam</span>."
+    },
+    {
+      "latin": "priusquam",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "before",
+      "grammar": "conjunction, with the indicative or subjunctive like antequam",
+      "evidence": [
+        "Quint. 1.12.9: <span lang=\"la\">nam et dociliōra sunt ingenia, priusquam obdūruērunt</span>"
+      ],
+      "comment": "Often split, <span lang=\"la\">prius … quam</span>; also “sooner than, rather than” (Lewis &amp; Short s.v. prius)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "naufragium antequam nāvem ascenderem fēcī",
+      "english": "I was shipwrecked before I had even got on board",
+      "source": "Sen. Ep. 87.1"
+    },
+    {
+      "latin": "annus enim octōgēsimus admonet mē ut sarcinās conligam, antequam proficīscar ē vītā",
+      "english": "for my eightieth year warns me to pack my bags before I set out from life",
+      "source": "Varr. RR 1.1.1"
+    },
+    {
+      "latin": "nam et dociliōra sunt ingenia, priusquam obdūruērunt",
+      "english": "for minds are more teachable before they have hardened",
+      "source": "Quint. 1.12.9"
+    }
+  ],
+  "related": [
+    "after-conjunction",
+    "until-conjunction"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/antequam\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: antequam</a> · <a href=\"https://logeion.uchicago.edu/prius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: prius</a>",
+    "Quotations from the Latinitas loci collections (loci-seneca-epistulae, loci-cato, loci-quintilianus), checked against the editions named there.",
+    "The quotation of Varro, <em>Rērum rūsticārum</em> 1.1.1, is from the appendix of the Latinitas loci collection on Cato (loci-cato)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

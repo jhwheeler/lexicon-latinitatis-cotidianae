@@ -7,7 +7,11 @@
     "nothing new",
     "nothing but",
     "nothing else",
-    "have nothing to do"
+    "have nothing to do",
+    "nothing good",
+    "nothing bad",
+    "nothing useful",
+    "nothing ready"
   ],
   "domain": "verba",
   "terms": [
@@ -21,7 +25,7 @@
         "Cic. Fam. 7.9.1: <span lang=\"la\">nihil enim scrībis</span>",
         "Cic. Fam. 14.4.4: <span lang=\"la\">nihil est quod tē moveat</span>"
       ],
-      "comment": "With a genitive, “nothing (of)”: <span lang=\"la\">nihil novī</span>, nothing new. “Nothing but” is <span lang=\"la\">nihil nisi</span> or <span lang=\"la\">nihil aliud nisi</span> (Cic. Amic. 20). “And nothing” is <span lang=\"la\">nec quicquam</span> (see anything). <span lang=\"la\">Nihil nōn</span>, “nothing not”, is everything (Lewis &amp; Short)."
+      "comment": "With a genitive, “nothing (of)”: <span lang=\"la\">nihil novī</span>, nothing new. A second-declension adjective goes into the genitive (<span lang=\"la\">nihil malī</span>, nothing bad); a third-declension one agrees (<span lang=\"la\">nihil ūtile</span>, nothing useful). “Nothing but” is <span lang=\"la\">nihil nisi</span> or <span lang=\"la\">nihil aliud nisi</span> (Cic. Amic. 20). “And nothing” is <span lang=\"la\">nec quicquam</span> (see anything). <span lang=\"la\">Nihil nōn</span>, “nothing not”, is everything (Lewis &amp; Short)."
     },
     {
       "latin": "nīl",
@@ -66,6 +70,21 @@
       "latin": "est enim amīcitia nihil aliud nisi omnium dīvīnārum hūmānārumque rērum cum benevolentiā et cāritāte cōnsēnsiō",
       "english": "for friendship is nothing but agreement in all things divine and human, with goodwill and affection",
       "source": "Cic. Amic. 20"
+    },
+    {
+      "latin": "Nihil vērō ūtile, quod nōn idem honestum",
+      "english": "nothing is useful that is not also honourable",
+      "source": "Cic. Off. 3.34"
+    },
+    {
+      "latin": "nihil umquam malī huic agrō fēcī",
+      "english": "I never did this field any harm",
+      "source": "Phaedr. App. 28.1–6"
+    },
+    {
+      "latin": "nihil habeō parātī nisi mē",
+      "english": "I have nothing ready but myself",
+      "source": "Sen. Ep. 123.1"
     }
   ],
   "related": [
@@ -79,11 +98,12 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/nihil\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nihil</a> · <a href=\"https://logeion.uchicago.edu/nil\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nil</a>",
     "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-horatius, loci-augustinus, loci-cicero-philosophica), checked against the editions named there.",
-    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition.",
+    "Quotations from the Latinitas loci collections and the note on quantity words, checked against the editions named there."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-11",
     "by": "Claude"
   }
 }

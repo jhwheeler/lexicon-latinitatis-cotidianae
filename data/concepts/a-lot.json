@@ -11,7 +11,11 @@
     "not much",
     "much more",
     "much better",
-    "greatly"
+    "greatly",
+    "a lot of money",
+    "plenty of",
+    "a great deal of",
+    "a large amount of"
   ],
   "also_under": [
     "verba"
@@ -58,6 +62,18 @@
       ]
     },
     {
+      "latin": "magnus, magna, magnum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a lot of (an amount): a lot of money, great force",
+      "grammar": "adjective, agreeing with its noun",
+      "evidence": [
+        "Cic. Tusc. 2.40: <span lang=\"la\">cōnsuētūdinis magna vīs est</span>",
+        "Gell. 9.8.1: <span lang=\"la\">ex magnā cōpiā</span>"
+      ],
+      "comment": "For “a lot of” a thing you measure, prose says <span lang=\"la\">magnus</span> more often than <span lang=\"la\">multus</span>: <span lang=\"la\">magna pecūnia</span>, a lot of money; <span lang=\"la\">magna cōpia</span>, plenty; <span lang=\"la\">magnus numerus</span>, a large number."
+    },
+    {
       "latin": "multus, multa, multum",
       "status": "alternative",
       "period": "classical",
@@ -67,7 +83,7 @@
         "Traupman 40: <span lang=\"la\">multum … tempus līberum habeō</span>",
         "Traupman 41: <span lang=\"la\">Multa.</span>"
       ],
-      "comment": "<span lang=\"la\">Multa</span> on its own is “lots of things”."
+      "comment": "<span lang=\"la\">Multa</span> on its own is “lots of things”, as <span lang=\"la\">multum</span> is “a lot”: <span lang=\"la\">multum legendum esse, nōn multa</span> (Plin. Ep. 7.9.15). In the singular it is at home in phrases of time: <span lang=\"la\">multā nocte</span>, late at night (see late at night)."
     },
     {
       "latin": "plūrimum",
@@ -112,6 +128,16 @@
       "latin": "an imitārī agrōs fertilēs, quī multō plūs efferunt quam accēpērunt?",
       "english": "or to imitate fertile fields, which give back much more than they received?",
       "source": "Cic. Off. 1.48"
+    },
+    {
+      "latin": "ajunt enim multum legendum esse, nōn multa",
+      "english": "for they say one should read much, not many things",
+      "source": "Plin. Ep. 7.9.15"
+    },
+    {
+      "latin": "multīs egēre quī multa habeat, magnamque indigentiam nāscī nōn ex inopiā magnā, sed ex magnā cōpiā",
+      "english": "that he who has many things needs many things, and that great want comes not from great poverty but from great plenty",
+      "source": "Gell. 9.8.1"
     }
   ],
   "related": [
@@ -121,18 +147,21 @@
     "many",
     "more-degree",
     "most-majority",
-    "more"
+    "more",
+    "late-at-night"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/multus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: multus</a> · <a href=\"https://logeion.uchicago.edu/valde\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: valde</a> · <a href=\"https://logeion.uchicago.edu/plurimus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: plurimus</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 40, 41, 85, checked against the searchable text of the book (9 November 2026).",
     "Quotations from the Latinitas loci collections (loci-catullus, loci-cicero-epistulae, loci-cicero-philosophica), checked against the editions named there.",
     "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition.",
-    "<a href=\"https://logeion.uchicago.edu/magnopere\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: magnopere</a>"
+    "<a href=\"https://logeion.uchicago.edu/magnopere\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: magnopere</a>",
+    "<a href=\"https://logeion.uchicago.edu/magnus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: magnus</a>",
+    "Quotations from the Latinitas loci collections and the note on quantity words, checked against the editions named there."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-11",
     "by": "Claude"
   },
   "notes": {

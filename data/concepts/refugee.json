@@ -1,0 +1,62 @@
+{
+  "id": "refugee",
+  "english": "refugee",
+  "pos": "noun",
+  "also": [
+    "refugees",
+    "fugitive",
+    "displaced person",
+    "asylum seeker"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "profugus, profugī m.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "one who has fled home or country, a refugee",
+      "grammar": "the adjective profugus, profuga, profugum, used as a noun",
+      "evidence": [
+        "Sall. C. 6.1: <span lang=\"la\">Trojānī, quī Aenēā duce profugī sēdibus incertīs vagābantur</span>",
+        "Liv. 34.60: <span lang=\"la\">patriā profugus</span> (Lewis &amp; Short)",
+        "M-O s.v. refugee"
+      ],
+      "comment": "In prose an adjective, “fled”, with the place in the ablative (<span lang=\"la\">profugus domō</span>, Liv. 1.1); as a noun chiefly in verse and comedy (Plaut. Trin. 3.2.75, Ov.). Not in Cicero or Caesar (Lewis &amp; Short). Morgan–Owens and Egger give it for the modern refugee."
+    },
+    {
+      "latin": "exsul, exsulis m. and f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "an exile, a banished person",
+      "evidence": [
+        "Cic. de Or. 2.75: <span lang=\"la\">Ephesum ad Antiochum vēnisset exsul</span> (Lewis &amp; Short)",
+        "Cic. Clu. 175: <span lang=\"la\">vagus et exsul</span>"
+      ],
+      "comment": "One sent away from home by law or by force; a refugee who chose to flee is rather profugus."
+    },
+    {
+      "latin": "perfuga, perfugae m.",
+      "status": "avoid",
+      "period": "classical",
+      "gloss": "a deserter to the enemy",
+      "comment": "Not a refugee: one who goes over to the other side (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Trojānī, quī Aenēā duce profugī sēdibus incertīs vagābantur",
+      "english": "the Trojans, who under Aeneas’ leadership were wandering as refugees, with no settled home",
+      "source": "Sall. C. 6.1"
+    }
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/profugus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: profugus</a> · <a href=\"https://logeion.uchicago.edu/exsul\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: exsul</a> · <a href=\"https://logeion.uchicago.edu/perfuga\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: perfuga</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. refugee.",
+    "Sallust, <em>Catilina</em> 6.1, checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

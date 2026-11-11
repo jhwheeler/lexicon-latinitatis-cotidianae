@@ -1,0 +1,73 @@
+{
+  "id": "survive",
+  "english": "survive",
+  "pos": "verb",
+  "also": [
+    "survival",
+    "survivor",
+    "outlive",
+    "live on",
+    "come through alive"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "superstes, superstitis",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "surviving, outliving",
+      "grammar": "adjective, one ending, with esse; the person or thing outlived in the dative (less often the genitive)",
+      "evidence": [
+        "Cic. N.D. 2.72: <span lang=\"la\">ut suī sibi līberī superstitēs essent</span> (Lewis &amp; Short)",
+        "Tac. Agr. 46.4"
+      ],
+      "comment": "The usual way to say survive: <span lang=\"la\">superstes esse alicui</span>, to outlive someone; <span lang=\"la\">superstes</span> alone, a survivor. Of things too: a name or a book that lives on (Tacitus, below)."
+    },
+    {
+      "latin": "supersum, superesse, superfuī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "be left; survive, outlive",
+      "grammar": "irregular verb (sum), with dative",
+      "evidence": [
+        "Liv. 1.34: <span lang=\"la\">Lucumō superfuit patrī</span> (Lewis &amp; Short)",
+        "Caes. BG 1.26: <span lang=\"la\">circiter mīlia hominum CXXX superfuērunt</span>"
+      ],
+      "comment": "Chiefly to be left over (see remain); of people, to be still alive after others are dead, as Caesar counts the survivors of a battle. Lewis &amp; Short calls the sense rare."
+    },
+    {
+      "latin": "salūs, salūtis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "survival, safety, being saved",
+      "comment": "For “survival” as an abstract noun: <span lang=\"la\">dē salūte agitur</span>, survival is at stake. Of a person who comes through unharmed, <span lang=\"la\">incolumis</span> (Cic. Cat. 3.10 fin., <span lang=\"la\">integrōs incolumēsque</span>, Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Agricola posteritātī narrātus et trāditus superstes erit",
+      "english": "Agricola, told and handed down to those who come after, will survive",
+      "source": "Tac. Agr. 46.4"
+    },
+    {
+      "latin": "ut suī sibi līberī superstitēs essent",
+      "english": "that their children should outlive them",
+      "source": "Cic. N.D. 2.72 (Lewis &amp; Short)"
+    }
+  ],
+  "related": [
+    "remain-be-left",
+    "escape",
+    "exist"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/superstes\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: superstes</a> · <a href=\"https://logeion.uchicago.edu/supersum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: supersum</a> · <a href=\"https://logeion.uchicago.edu/salus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: salus</a> · <a href=\"https://logeion.uchicago.edu/incolumis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: incolumis</a>",
+    "Quotations from the Latinitas loci collections (loci-tacitus), checked against the editions named there.",
+    "Cicero, Livy and Caesar as Lewis &amp; Short quotes them."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

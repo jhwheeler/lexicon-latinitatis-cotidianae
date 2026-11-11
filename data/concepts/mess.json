@@ -1,0 +1,99 @@
+{
+  "id": "mess",
+  "english": "mess",
+  "sense": "untidiness, disorder",
+  "pos": "noun",
+  "also": [
+    "messy",
+    "what a mess!",
+    "make a mess",
+    "mess up",
+    "in a mess",
+    "untidy",
+    "chaos (untidiness)"
+  ],
+  "domain": "domus",
+  "terms": [
+    {
+      "latin": "turba, turbae f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "disorder, confusion, commotion",
+      "evidence": [
+        "Cic. Fam. 6.6.13: <span lang=\"la\">turba et cōnfūsiō rērum</span> (Lewis &amp; Short)",
+        "Traupman 345"
+      ],
+      "comment": "First the noise and jostle of a crowd, and so any disorder: <span lang=\"la\">turbās concīre</span>, to make a mess of it (Traupman 345). Its everyday sense is a crowd, so make the context plain."
+    },
+    {
+      "latin": "rēs turbulentae",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a mess, a muddle",
+      "grammar": "noun phrase; in the exclamatory accusative, rēs turbulentās!",
+      "register": "vōx cōmica: Plaut.",
+      "evidence": [
+        "Plaut. Ep. 1.1.68 (Lewis &amp; Short)",
+        "Traupman 103, 345"
+      ],
+      "comment": "Plautus’s cry, which Traupman gives for “what a mess!”."
+    },
+    {
+      "latin": "turbō, turbāre, turbāvī, turbātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "mess up, throw into disorder",
+      "grammar": "verb, first conjugation, transitive",
+      "evidence": [
+        "Quint. 11.3.148: <span lang=\"la\">nē comae turbārentur</span>",
+        "M-O s.v. mess up"
+      ],
+      "comment": "Of hair, a table, plans: <span lang=\"la\">turbātus</span>, messy, in disorder (Morgan–Owens, with <span lang=\"la\">incompositus</span>)."
+    },
+    {
+      "latin": "squālor, squālōris m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "filth, dirt (a dirty mess)",
+      "evidence": [
+        "Traupman 345",
+        "Plaut. Cist. 1.1.115 (Lewis &amp; Short)"
+      ],
+      "comment": "For a mess that is dirt rather than disorder; also <span lang=\"la\">sordēs</span> (see dirt, grime)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "heu edepol rēs turbulentās!",
+      "english": "oh lord, what a mess!",
+      "source": "Plaut. Ep. 1.1.68 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "nē comae turbārentur, quās compōnī vetuit",
+      "english": "so that his hair, which he had forbidden to be arranged, should not get messed up",
+      "source": "Quint. 11.3.148 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "Nihil hīc suō locō est!",
+      "english": "Nothing here is where it should be!",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "tidy-up",
+    "dirty",
+    "dirt-grime"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/turba\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: turba</a> · <a href=\"https://logeion.uchicago.edu/turbulentus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: turbulentus</a> · <a href=\"https://logeion.uchicago.edu/turbo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: turbo</a> · <a href=\"https://logeion.uchicago.edu/squalor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: squalor</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 103, 345, checked against the searchable text of the book (11 November 2026).",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. mess up, messy.",
+    "Plautus, Cicero and Quintilian as Lewis &amp; Short quotes them.",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

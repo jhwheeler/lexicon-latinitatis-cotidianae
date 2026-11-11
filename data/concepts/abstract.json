@@ -1,0 +1,59 @@
+{
+  "id": "abstract",
+  "english": "abstract",
+  "sense": "existing as an idea, not as a thing",
+  "pos": "adjective",
+  "also": [
+    "abstraction",
+    "in the abstract",
+    "abstract idea",
+    "not concrete",
+    "intangible"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "quod intellegitur",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "what is grasped by the mind (as against what can be seen and touched)",
+      "grammar": "phrase: a relative clause, in the number and gender of the thing meant (quae intelleguntur)",
+      "evidence": [
+        "Cic. Top. 26–27: <span lang=\"la\">earum rērum quae sunt … earum quae intelleguntur</span>"
+      ],
+      "comment": "Classical Latin has no adjective for “abstract”. Cicero sets things that can be seen and touched (<span lang=\"la\">quae cernī tangīque possunt</span>: a farm, a house, a wall) against things that cannot be touched or pointed to but are seen by the mind and understood (<span lang=\"la\">quae … cernī tamen animō atque intellegī possunt</span>: guardianship, kinship), “under which there lies no body” (<span lang=\"la\">quārum rērum nūllum subest quasi corpus</span>, Top. 27). Say so with a relative clause."
+    },
+    {
+      "latin": "abstractus, abstracta, abstractum",
+      "status": "alternative",
+      "period": "late",
+      "gloss": "abstract (as against concrete)",
+      "evidence": [
+        "Isid. Orig. 2.24.14: <span lang=\"la\">quantitās abstracta</span> (Lewis &amp; Short, s.v. <span lang=\"la\">abstrahō</span>)",
+        "M-O s.v. abstract"
+      ],
+      "comment": "The word of the later philosophers and grammarians, and of the modern languages; classically only the participle of <span lang=\"la\">abstrahō</span>, “dragged away”."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Nōn esse rūrsus ea dīcō quae tangī dēmōnstrārīve nōn possunt, cernī tamen animō atque intellegī possunt",
+      "english": "Those things, on the other hand, I call non-existent which cannot be touched or pointed out, but can still be seen by the mind and understood",
+      "source": "Cic. Top. 27"
+    }
+  ],
+  "related": [
+    "theory",
+    "idea-notion"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/abstraho\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: abstraho</a> · <a href=\"https://logeion.uchicago.edu/intellego\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: intellego</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. abstract.",
+    "Cicero, <em>Topica</em> 26–27 (ed. Wilkins, 1902), checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

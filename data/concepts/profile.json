@@ -1,0 +1,72 @@
+{
+  "id": "profile",
+  "english": "profile",
+  "sense": "a side view of a face",
+  "pos": "noun",
+  "also": [
+    "in profile",
+    "side view",
+    "silhouette",
+    "profile picture",
+    "a profile (of someone’s life)"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "imāgō oblīqua",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a profile, a side view (of a portrait)",
+      "grammar": "noun phrase: imāgō, imāginis f.",
+      "evidence": [
+        "Plin. NH 35.90: <span lang=\"la\">oblīquam namque fēcit</span>",
+        "Plin. NH 35.56: <span lang=\"la\">catagrapha … hoc est oblīquās imāginēs</span>",
+        "M-O s.v. silhouette: profile"
+      ],
+      "comment": "Pliny’s phrase for the portrait seen from the side, which Lewis &amp; Short renders “a side-likeness, profile” (s.v. <span lang=\"la\">oblīquus</span>). <span lang=\"la\">Oblīquus</span> is slanting, sidelong: <span lang=\"la\">oblīquō capite</span>, with the head turned (Plin. NH 8.88)."
+    },
+    {
+      "latin": "catagrapha, catagraphōrum n. pl.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "profile drawings, side views",
+      "evidence": [
+        "Plin. NH 35.56 (Lewis &amp; Short, s.v. <span lang=\"la\">catagraphus</span>)"
+      ],
+      "comment": "The Greek painters’ term, which Pliny explains with <span lang=\"la\">oblīquae imāginēs</span>; a word for art history, not for everyday use."
+    },
+    {
+      "latin": "adumbrātiō, adumbrātiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a sketch, an outline; a short profile of a person",
+      "evidence": [
+        "Cic. Or. 103 (Lewis &amp; Short): a sketch, outline",
+        "M-O s.v. silhouette: <span lang=\"la\">adumbrātiō vītae</span>, a biographical sketch"
+      ],
+      "comment": "For a written profile of someone, Morgan–Owens gives <span lang=\"la\">adumbrātiō (alicujus) vītae</span>. Classically a sketch, and also a mere show or pretence (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "pīnxit et Antigonī rēgis imāginem alterō lūmine orbātī prīmus excōgitātā ratiōne vitia condendī; oblīquam namque fēcit, ut, quod deerat corporī, pictūrae deesse potius vidērētur",
+      "english": "he also painted King Antigonus, who had lost an eye, and was the first to think of a way of hiding defects: he painted him in profile, so that what the body lacked might seem rather to be lacking in the picture",
+      "source": "Plin. NH 35.90"
+    }
+  ],
+  "related": [
+    "picture",
+    "face"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/obliquus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: obliquus</a> · <a href=\"https://logeion.uchicago.edu/catagraphus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: catagraphus</a> · <a href=\"https://logeion.uchicago.edu/adumbratio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: adumbratio</a> · <a href=\"https://logeion.uchicago.edu/imago\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: imago</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. forms: silhouette: profile.",
+    "Pliny checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

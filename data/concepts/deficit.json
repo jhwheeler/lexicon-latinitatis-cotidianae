@@ -1,0 +1,66 @@
+{
+  "id": "deficit",
+  "english": "deficit",
+  "pos": "noun",
+  "also": [
+    "shortfall",
+    "be short (of money)",
+    "budget deficit",
+    "in the red"
+  ],
+  "domain": "pecunia",
+  "terms": [
+    {
+      "latin": "dēsum, deesse, dēfuī",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "be lacking, be short",
+      "grammar": "verb, irregular: what is short is the subject; the person who lacks it, in the dative",
+      "evidence": [
+        "Ter. Ph. 2.1.69 (Lewis &amp; Short)",
+        "Caes. BG 4.29: <span lang=\"la\">omnia deerant</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Latin says what is lacking: <span lang=\"la\">pecūnia deest</span>, there is a shortfall; <span lang=\"la\">quod deest</span>, the deficit. A deficit in a budget is spending beyond income: <span lang=\"la\">sūmptūs reditūs superant</span> (our phrase).",
+      "notes": [
+        "deesse"
+      ]
+    },
+    {
+      "latin": "reliqua, reliquōrum n. pl.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the balance still owed, arrears",
+      "evidence": [
+        "Cic. Att. 6.1.19; 16.3.5: <span lang=\"la\">ratiō reliquōrum meōrum</span> (Lewis &amp; Short)"
+      ],
+      "comment": "What remains unpaid of a sum owed: a shortfall in the accounts. Also <span lang=\"la\">reliquum</span> (Plaut., Ter.)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nōn ratiō, vērum argentum deerat",
+      "english": "it wasn’t the plan that was lacking, but the money",
+      "source": "Ter. Ph. 2.1.69 (Lewis &amp; Short)"
+    }
+  ],
+  "notes": {
+    "deesse": {
+      "form": "deesse",
+      "claim": "short e before the vowel",
+      "html": "<span lang=\"la\">dē-</span> shortens before a vowel: <span lang=\"la\">deest, deerat, deesse</span> (Lewis &amp; Short)."
+    }
+  },
+  "related": [
+    "budget",
+    "debt",
+    "spend-money"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/desum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: desum</a> · <a href=\"https://logeion.uchicago.edu/reliquus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: reliquus</a>"
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "id": "symptom",
+  "english": "symptom",
+  "pos": "noun",
+  "also": [
+    "symptoms",
+    "a sign of illness",
+    "have symptoms",
+    "what are the symptoms?"
+  ],
+  "domain": "corpus",
+  "terms": [
+    {
+      "latin": "nota, notae f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a sign, a mark; of an illness, a symptom",
+      "evidence": [
+        "Cels. 3.2: <span lang=\"la\">dēcēdentis ejus notae sunt</span>, they are signs that it is abating",
+        "Traupman 66, 388: symptom"
+      ],
+      "comment": "A mark or sign of any kind, which Celsus uses of the signs by which a doctor sees how an illness is going; Traupman gives it first for symptom. The illness goes in the genitive: <span lang=\"la\">notae morbī</span>."
+    },
+    {
+      "latin": "signum, signī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a sign, an indication",
+      "evidence": [
+        "Cels. 3.2: <span lang=\"la\">acceduntque ea signa, quae priōre volūmine exposita sunt</span>"
+      ],
+      "comment": "Celsus uses <span lang=\"la\">signa</span> and <span lang=\"la\">notae</span> side by side; see sign."
+    },
+    {
+      "latin": "indicium, indiciī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "an indication, evidence (of something)",
+      "evidence": [
+        "Traupman 388: symptom"
+      ]
+    },
+    {
+      "latin": "symptōma, symptōmatis n.",
+      "status": "alternative",
+      "period": "late",
+      "gloss": "symptom (in medical Latin)",
+      "evidence": [
+        "M-O s.v. symptom: Caelius Aurelianus, Cassius Felix; in medical Latin since"
+      ],
+      "comment": "Greek σύμπτωμα. Late Latin medical writers and modern medical Latin use it; Lewis &amp; Short does not have it."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ea vērō, quae contrāria hīs sunt, dēcēdentis ejus notae sunt",
+      "english": "the opposite of these are signs that the illness is abating",
+      "source": "Cels. 3.2"
+    }
+  ],
+  "related": [
+    "sign",
+    "disease",
+    "fever",
+    "ill",
+    "pain"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/nota\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nota</a> · <a href=\"https://logeion.uchicago.edu/signum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: signum</a> · <a href=\"https://logeion.uchicago.edu/indicium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: indicium</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 66, 388, checked against the searchable text of the book (11 November 2026).",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. symptom.",
+    "Celsus checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

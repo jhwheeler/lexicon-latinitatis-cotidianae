@@ -1,0 +1,79 @@
+{
+  "id": "isolate",
+  "english": "isolate",
+  "pos": "verb",
+  "also": [
+    "isolated",
+    "isolation",
+    "keep apart",
+    "set apart",
+    "cut off",
+    "quarantine"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "sēgregō, sēgregāre, sēgregāvī, sēgregātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "set apart, separate, isolate",
+      "grammar": "verb, first conjugation, transitive; ab + abl.",
+      "evidence": [
+        "Phaedr. 3.15.3: <span lang=\"la\">ovēsque sēgregātās</span>",
+        "Cic. Arch. 4: <span lang=\"la\">nōn modo nōn sēgregandum ā numerō cīvium</span> (Lewis &amp; Short)"
+      ],
+      "comment": "From <span lang=\"la\">grex</span>: to take out of the flock, and so to set anyone or anything apart from the rest (Lewis &amp; Short)."
+    },
+    {
+      "latin": "sēcernō, sēcernere, sēcrēvī, sēcrētum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "separate, sort out, set apart",
+      "grammar": "verb, third conjugation, transitive; ab + abl.",
+      "evidence": [
+        "Cic. Cat. 1.32: <span lang=\"la\">mūrō dēnique sēcernantur ā nōbīs</span> (Lewis &amp; Short)",
+        "Col. 12.50.1"
+      ],
+      "comment": "To part one thing from another, as bad olives from good (Columella) or the conspirators from the city."
+    },
+    {
+      "latin": "sēclūdō, sēclūdere, sēclūsī, sēclūsum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "shut away, confine apart",
+      "grammar": "verb, third conjugation, transitive",
+      "evidence": [
+        "Varr. RR 2.2.8: <span lang=\"la\">incientēs (ovēs) sēclūdere</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Rare but classical (Lewis &amp; Short): to shut up in a place of its own, as Varro the ewes about to lamb. An isolated place is <span lang=\"la\">sōlitārius</span> or <span lang=\"la\">dēvius</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "inter capellās agnō bālantī canis: stulte, inquit, errās; nōn est hīc māter tua; ovēsque sēgregātās ostendit procul",
+      "english": "to a lamb bleating among the she-goats a dog said: “Silly, you’re wrong; your mother isn’t here,” and pointed to the sheep, kept apart some way off",
+      "source": "Phaedr. 3.15.1–3"
+    },
+    {
+      "latin": "Ovem aegram ā cēterīs sēgregā, nē morbus serpat.",
+      "english": "Keep the sick sheep away from the others, so the illness doesn’t spread.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "separate",
+    "alone",
+    "exclude"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/segrego\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: segrego</a> · <a href=\"https://logeion.uchicago.edu/secerno\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: secerno</a> · <a href=\"https://logeion.uchicago.edu/secludo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: secludo</a>",
+    "Quotations from the Latinitas loci collections (loci-phaedrus, loci-cato), checked against the editions named there.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition.",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

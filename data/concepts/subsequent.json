@@ -1,0 +1,69 @@
+{
+  "id": "subsequent",
+  "english": "subsequent",
+  "pos": "adjective",
+  "also": [
+    "following",
+    "the following day",
+    "the next day",
+    "ensuing",
+    "later (following)"
+  ],
+  "domain": "tempus",
+  "terms": [
+    {
+      "latin": "īnsequēns, īnsequentis",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "following, next (in time)",
+      "grammar": "adjective, third declension (present participle of <span lang=\"la\">īnsequor</span>)",
+      "evidence": [
+        "Liv. 2.18.1: <span lang=\"la\">īnsequēns annus</span> (Lewis &amp; Short)",
+        "Liv. 26.14.5: <span lang=\"la\">diēī īnsequentis pars</span>"
+      ],
+      "comment": "Of the day, year or time that comes next; <span lang=\"la\">īnsequentī annō</span>, in the following year."
+    },
+    {
+      "latin": "posterus, postera, posterum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "next, following",
+      "evidence": [
+        "Cic. Verr. 2.2.41: <span lang=\"la\">posterō diē māne</span> (Lewis &amp; Short)",
+        "Hor. C. 1.11.8: <span lang=\"la\">quam minimum crēdula posterō</span>"
+      ],
+      "comment": "<span lang=\"la\">Posterō diē</span> is “the next day”; <span lang=\"la\">in posterum</span>, for the future; <span lang=\"la\">posterī</span>, posterity."
+    },
+    {
+      "latin": "posterior, posterius",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "later, latter (of two)",
+      "evidence": [
+        "Cic. Or. 21: <span lang=\"la\">nec acūmine posteriōrum, nec fulmine ūtēns superiōrum</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Strictly where two are set side by side, the earlier (<span lang=\"la\">prior, superior</span>) and the later."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "multōs vērō in terrā Umbriā ūnum et eundem diem esse dīcere ā merīdiē ad īnsequentem merīdiem",
+      "english": "and that many in Umbria say one and the same day runs from noon to the following noon",
+      "source": "Gell. 3.2.6"
+    }
+  ],
+  "related": [
+    "later",
+    "some-time-later",
+    "after-a-time"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/insequor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: insequor</a> · <a href=\"https://logeion.uchicago.edu/posterus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: posterus</a>",
+    "Quotations from the Latinitas loci collections (loci-gellius), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

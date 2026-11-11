@@ -1,0 +1,82 @@
+{
+  "id": "greet",
+  "english": "greet",
+  "pos": "verb",
+  "also": [
+    "greeting",
+    "say hello to",
+    "greet someone",
+    "return a greeting",
+    "hail"
+  ],
+  "domain": "sermo",
+  "terms": [
+    {
+      "latin": "salūtō, salūtāre, salūtāvī, salūtātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "greet, say hello to",
+      "grammar": "verb, first conjugation, transitive",
+      "evidence": [
+        "Cic. Planc. 33: <span lang=\"la\">cum ille eum salūtāsset, ut fit</span> (Lewis &amp; Short)",
+        "Cato Agr. 2.1"
+      ],
+      "comment": "The everyday word, of saying <span lang=\"la\">salvē</span> or <span lang=\"la\">avē</span> to someone, in every period. With a second accusative, to hail someone as something: <span lang=\"la\">Caesarem salūtāre</span>. The noun <span lang=\"la\">salūtātiō</span> is a greeting, and also the morning call on a patron (Cic. Fam. 9.20.3)."
+    },
+    {
+      "latin": "cōnsalūtō, cōnsalūtāre, cōnsalūtāvī, cōnsalūtātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "greet warmly; greet one another",
+      "grammar": "verb, first conjugation, transitive",
+      "evidence": [
+        "Cic. de Or. 2.13: <span lang=\"la\">cum inter sē … amīcissimē cōnsalūtāssent</span> (Lewis &amp; Short)",
+        "Liv. 1.7.1 (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "resalūtō, resalūtāre, resalūtāvī, resalūtātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "return a greeting",
+      "grammar": "verb, first conjugation, transitive",
+      "evidence": [
+        "Cic. Phil. 2.106 (Lewis &amp; Short)",
+        "Mart. 5.21.3 (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "pater familiās, ubi ad vīllam vēnit, ubi larem familiārem salūtāvit, fundum eōdem diē, sī potest, circumeat",
+      "english": "the master, when he comes to the farm and has greeted the god of the house, should walk round the estate the same day, if he can",
+      "source": "Cato Agr. 2.1"
+    },
+    {
+      "latin": "salūtārī, adpetī, dēcēdī, adsurgī, dēdūcī, redūcī, cōnsulī",
+      "english": "to be greeted, sought out, made way for, stood up for, escorted there and back, consulted",
+      "source": "Cic. Sen. 63"
+    },
+    {
+      "latin": "Avum salūtā.",
+      "english": "Say hello to Grandpa.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "hello",
+    "say-hello",
+    "receive-guest",
+    "goodbye"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/saluto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: saluto</a> · <a href=\"https://logeion.uchicago.edu/consaluto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: consaluto</a> · <a href=\"https://logeion.uchicago.edu/resaluto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: resaluto</a>",
+    "Cato and Cicero (<em>Sen.</em> 63) from the Latinitas loci collections (loci-cato, loci-cicero-philosophica); the other passages as Lewis &amp; Short quotes them.",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

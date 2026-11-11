@@ -1,0 +1,57 @@
+{
+  "id": "species",
+  "english": "species",
+  "pos": "noun",
+  "also": [
+    "a species",
+    "species of animal",
+    "species of plant",
+    "kind of animal",
+    "endangered species"
+  ],
+  "domain": "natura",
+  "terms": [
+    {
+      "latin": "genus, generis n.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "kind, species (of animals, plants)",
+      "evidence": [
+        "Cic. N.D. 2.99: <span lang=\"la\">quam varia genera bēstiārum vel cicurum vel ferārum</span> (Lewis &amp; Short)",
+        "Quint. 5.10.21: <span lang=\"la\">piscium genera</span> (Lewis &amp; Short)"
+      ],
+      "comment": "The classical word for a kind of animal or plant: <span lang=\"la\">avium genera</span>, <span lang=\"la\">omne genus ferārum</span>. In modern taxonomy <span lang=\"la\">genus</span> is the rank above the species (M-O s.v. species: genus), so in a scientific context use <span lang=\"la\">speciēs</span>."
+    },
+    {
+      "latin": "speciēs, speciēī f.",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "species (in taxonomy)",
+      "evidence": [
+        "M-O s.v. species (plant or animal taxonomy), after Pallas (1811)",
+        "Varr. RR 3.3.3: <span lang=\"la\">in bīnās speciēs dīvidī</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Classically a look, an appearance, and in logic a subdivision of a <span lang=\"la\">genus</span> (Cic. de Or. 1.189, Sen. Ep. 58.7); the biological rank is modern. In Cicero’s day its genitive and dative plural were not used (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "quae vērō et quam varia genera bēstiārum vel cicurum vel ferārum!",
+      "english": "and what kinds of beasts, tame and wild, and how varied!",
+      "source": "Cic. N.D. 2.99"
+    }
+  ],
+  "related": [
+    "animal",
+    "kind"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/genus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: genus</a> · <a href=\"https://logeion.uchicago.edu/species\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: species</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.vv. species (plant or animal taxonomy), species: genus."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "shareholder",
+  "english": "shareholder",
+  "pos": "noun",
+  "also": [
+    "stockholder",
+    "shareholders",
+    "shares (in a company)",
+    "hold shares",
+    "have a stake in"
+  ],
+  "domain": "pecunia",
+  "terms": [
+    {
+      "latin": "socius, sociī m.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a partner in a company: a shareholder",
+      "evidence": [
+        "Cic. Fam. 13.9.3 (Lewis &amp; Short)",
+        "Cic. Verr. 2.3.50: <span lang=\"la\">sociī putandī sunt, quōs inter rēs commūnicāta est</span>"
+      ],
+      "comment": "In business Latin a partner; the <span lang=\"la\">sociī</span> of the companies that farmed the public revenues (the <span lang=\"la\">pūblicānī</span>) held shares (<span lang=\"la\">partēs</span>) in them, the nearest Roman thing to a joint-stock company. See member."
+    },
+    {
+      "latin": "partēs habēre (+ gen.)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "hold shares (in)",
+      "evidence": [
+        "Cic. Rab. Post. 4: <span lang=\"la\">magnās partēs habuit pūblicōrum</span> (Lewis &amp; Short, s.v. <span lang=\"la\">pars</span>)"
+      ],
+      "comment": "<span lang=\"la\">Pars</span> is a share; Cicero says of Rabirius’ father that he held large shares in the public contracts. A modern share is <span lang=\"la\">āctia, āctiae f.</span> (Traupman 377)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Huic sociētātī multī sunt sociī; frāter meus parvam partem habet.",
+      "english": "This company has many shareholders; my brother holds a small share.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "member",
+    "company-firm",
+    "profit"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/socius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: socius</a> · <a href=\"https://logeion.uchicago.edu/pars\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pars</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 377, checked against the searchable text of the book.",
+    "The example sentences marked “composed” are ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

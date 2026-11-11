@@ -1,0 +1,80 @@
+{
+  "id": "wander",
+  "english": "wander",
+  "pos": "verb",
+  "also": [
+    "wander about",
+    "wander around",
+    "roam",
+    "rove",
+    "ramble",
+    "stray",
+    "wandering"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "errō, errāre, errāvī, errātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "wander, stray, roam about",
+      "evidence": [
+        "Cic. Att. 8.9.3: <span lang=\"la\">circum vīllulās nostrās</span> (Lewis &amp; Short)",
+        "Ov. M. 13.821: <span lang=\"la\">multae quoque vallibus errant</span>"
+      ],
+      "comment": "Going about with no fixed way or goal. It also, and very often, means to be wrong (see wrong); <span lang=\"la\">errāns</span> is someone who has lost his way (<span lang=\"la\">quī errantī cōmiter mōnstrat viam</span>, Enn. ap. Cic. Off. 1.51)."
+    },
+    {
+      "latin": "vagor, vagārī, vagātus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "roam, range, stroll about",
+      "evidence": [
+        "Cic. Div. 2.80: <span lang=\"la\">volucrēs hūc illūc passim vagantēs</span> (Lewis &amp; Short)",
+        "Mart. 3.58.12"
+      ],
+      "comment": "Moving freely here and there, of people, flocks, birds, bees; the word for roaming at will rather than being lost."
+    },
+    {
+      "latin": "pālor, pālārī, pālātus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "straggle, wander about scattered",
+      "evidence": [
+        "Liv. 5.44: <span lang=\"la\">vagī per agrōs pālantur</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Of a crowd or a herd that has scattered; mostly in the participle, pālantēs. Not in Cicero or Caesar (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "vagātur omnis turba sordidae chortis, argūtus ānser gemmeīque pāvōnēs",
+      "english": "the whole grubby farmyard crowd wanders about, the honking goose and the jewelled peacocks",
+      "source": "Mart. 3.58.12–13"
+    },
+    {
+      "latin": "hoc pecus omne meum est, multae quoque vallibus errant",
+      "english": "all this flock is mine, and many more are wandering in the valleys",
+      "source": "Ov. M. 13.821"
+    },
+    {
+      "latin": "apēs, ut ajunt, dēbēmus imitārī, quae vagantur et flōrēs ad mel faciendum idōneōs carpunt",
+      "english": "we should copy the bees, as they say, which wander about and pick the flowers fit for making honey",
+      "source": "Sen. Ep. 84.3"
+    }
+  ],
+  "related": [
+    "get-lost",
+    "walk-verb",
+    "wrong-incorrect"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/erro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: erro</a> · <a href=\"https://logeion.uchicago.edu/vagor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vagor</a> · <a href=\"https://logeion.uchicago.edu/palor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: palor</a>",
+    "Quotations from the Latinitas loci collections (loci-martialis, loci-ovidius, loci-seneca-epistulae, loci-cicero-philosophica), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

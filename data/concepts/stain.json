@@ -1,0 +1,88 @@
+{
+  "id": "stain",
+  "english": "stain",
+  "pos": [
+    "noun",
+    "verb"
+  ],
+  "also": [
+    "stains",
+    "stained",
+    "a dirty mark",
+    "spot (a stain)",
+    "get dirty",
+    "soil"
+  ],
+  "domain": "domus",
+  "terms": [
+    {
+      "latin": "macula, maculae f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a stain, a spot, a mark",
+      "evidence": [
+        "Paul. ex Fest. p. 121 Müll.: <span lang=\"la\">lābēs macula in vestīmentō dīcitur</span> (Lewis &amp; Short, s.v. <span lang=\"la\">lābēs</span>)"
+      ],
+      "comment": "The plain word for a spot or stain; also the spots of an animal’s coat, the mesh of a net and, by a figure, a disgrace (Lewis &amp; Short)."
+    },
+    {
+      "latin": "inquinō, inquināre, inquināvī, inquinātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "stain, soil, get dirty",
+      "evidence": [
+        "Plaut. Capt. 2.2.17: <span lang=\"la\">vestem</span> (Lewis &amp; Short)",
+        "Cato Agr. 65.1"
+      ],
+      "comment": "The everyday verb for dirtying clothes, hands, food; also, by a figure, to corrupt."
+    },
+    {
+      "latin": "lābēs, lābis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a stain, a blot",
+      "register": "vōx plērumque poētica: Hor., Ov.; also post-Augustan prose",
+      "evidence": [
+        "Ov. Ars 1.514: <span lang=\"la\">sine lābe toga</span> (Lewis &amp; Short)",
+        "Hor. Ep. 2.1.235 (Lewis &amp; Short)"
+      ],
+      "comment": "In Cicero only by a figure: a stain on one’s name (Lewis &amp; Short). A different word from lābēs, a fall."
+    },
+    {
+      "latin": "maculō, maculāre, maculāvī, maculātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "stain, spot",
+      "evidence": [
+        "Catull. 63.7: <span lang=\"la\">solum sanguine</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Chiefly of blood and, by a figure, of guilt (<span lang=\"la\">caede maculātus</span>, Cic. Rep. 2.46); for everyday dirt, <span lang=\"la\">inquināre</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "sī inquināta erit, lavātō ā foliīs et stercore pūrgātō",
+      "english": "if it is dirty, wash it and clean off the leaves and muck",
+      "source": "Cato Agr. 65.1"
+    },
+    {
+      "latin": "Cavē nē vestem inquinēs.",
+      "english": "Mind you don’t stain your clothes.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "dirty",
+    "laundry"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/macula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: macula</a> · <a href=\"https://logeion.uchicago.edu/inquino\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: inquino</a> · <a href=\"https://logeion.uchicago.edu/labes\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: labes</a> · <a href=\"https://logeion.uchicago.edu/maculo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: maculo</a>",
+    "Quotations from the Latinitas loci collections (loci-cato), checked against the editions named there.",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

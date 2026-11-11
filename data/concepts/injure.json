@@ -1,0 +1,75 @@
+{
+  "id": "injure",
+  "english": "injure",
+  "sense": "hurt a person or an animal",
+  "pos": "verb",
+  "also": [
+    "injured",
+    "be injured",
+    "get hurt",
+    "injury",
+    "wounded"
+  ],
+  "domain": "corpus",
+  "terms": [
+    {
+      "latin": "vulnerō, vulnerāre, vulnerāvī, vulnerātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "wound, injure",
+      "evidence": [
+        "Caes. BG 5.35 (Lewis &amp; Short)",
+        "Cic. Sest. 24 (Lewis &amp; Short)"
+      ],
+      "comment": "To wound, by a blow, a weapon or a fall; the wound is <span lang=\"la\">vulnus</span> (see wound). With the part hurt in the accusative: <span lang=\"la\">volnerātus umerum</span> (Plin. NH 7.103, Lewis &amp; Short)."
+    },
+    {
+      "latin": "laedō, laedere, laesī, laesum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "hurt, injure, damage",
+      "evidence": [
+        "Lewis &amp; Short: “to hurt by striking, wound, injure, damage”"
+      ],
+      "comment": "The general word for harm done to a body or a thing (see damage), and to feelings. For hurting oneself, <span lang=\"la\">mihi nocuī</span> (see hurt yourself)."
+    },
+    {
+      "latin": "sauciō, sauciāre, sauciāvī, sauciātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "wound, hurt",
+      "evidence": [
+        "Cic. Verr. 2.1.67: <span lang=\"la\">Rubrius in turbā sauciātur</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Class. but rare, not in Caesar (Lewis &amp; Short); the adjective <span lang=\"la\">saucius</span>, wounded, is common."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "L. Cotta lēgātus in adversum ōs fundā vulnerātur",
+      "english": "the legate Lucius Cotta is struck full in the face by a sling-stone",
+      "source": "Caes. BG 5.35 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "Nēmō vulnerātus est.",
+      "english": "No one was hurt.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "wound",
+    "hurt-yourself",
+    "hurt",
+    "damage",
+    "bruise"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/vulnero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vulnero</a> · <a href=\"https://logeion.uchicago.edu/laedo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: laedo</a> · <a href=\"https://logeion.uchicago.edu/saucio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: saucio</a>",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

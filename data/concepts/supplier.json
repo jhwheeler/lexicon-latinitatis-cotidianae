@@ -1,0 +1,64 @@
+{
+  "id": "supplier",
+  "english": "supplier",
+  "pos": "noun",
+  "also": [
+    "suppliers",
+    "contractor",
+    "purveyor",
+    "provider (of goods)",
+    "vendor (to a business)"
+  ],
+  "domain": "pecunia",
+  "terms": [
+    {
+      "latin": "redemptor, redemptōris m.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a contractor, a purveyor: one who undertakes by contract to build, supply or carry out something",
+      "evidence": [
+        "Cic. Q. Fr. 2.4.2: <span lang=\"la\">redemptōrī tuō dīmidium pecūniae cūrāvī</span>",
+        "Cic. Div. 2.47 (Lewis &amp; Short)"
+      ],
+      "comment": "The man who has taken a contract (<span lang=\"la\">redimere</span>), for a building, for supplies or for collecting a tax; the closest classical word for a firm’s supplier. Christian Latin uses the same word for the Redeemer (Lewis &amp; Short), a sense the context keeps apart. For a single delivery a relative clause is plainer: <span lang=\"la\">is quī nōbīs lateres praebet</span>."
+    },
+    {
+      "latin": "praebitor, praebitōris m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a furnisher, supplier",
+      "evidence": [
+        "Cic. Off. 2.53 (Lewis &amp; Short)"
+      ],
+      "comment": "Rare: Lewis &amp; Short has it once in Cicero, of those who furnished what visiting officials needed, and once in Ambrose."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "redemptōrī tuō dīmidium pecūniae cūrāvī",
+      "english": "I have seen to it that your contractor got half the money",
+      "source": "Cic. Q. Fr. 2.4.2"
+    },
+    {
+      "latin": "Redemptor lateres nōndum attulit.",
+      "english": "The supplier hasn’t brought the bricks yet.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "supply",
+    "seller",
+    "company-firm"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/redemptor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: redemptor</a> · <a href=\"https://logeion.uchicago.edu/praebitor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praebitor</a> · <a href=\"https://logeion.uchicago.edu/redimo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: redimo</a>",
+    "Cicero’s letters to Quintus checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition.",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

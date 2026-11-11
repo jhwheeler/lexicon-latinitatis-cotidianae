@@ -1,0 +1,88 @@
+{
+  "id": "exhaust-tire",
+  "english": "exhaust",
+  "sense": "tire out",
+  "pos": "verb",
+  "also": [
+    "exhausted",
+    "exhausting",
+    "exhaustion",
+    "tire out",
+    "wear out (a person)",
+    "worn out",
+    "tired out",
+    "be exhausted"
+  ],
+  "domain": "corpus",
+  "terms": [
+    {
+      "latin": "dēfatīgō, dēfatīgāre, dēfatīgāvī, dēfatīgātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "tire out, exhaust; passive, be worn out",
+      "grammar": "verb, first conjugation, transitive",
+      "evidence": [
+        "Caes. B.G. 7.41.2: <span lang=\"la\">nostrōsque assiduō labōre dēfatīgārent</span> (Lewis &amp; Short)",
+        "Ter. And. 669"
+      ],
+      "comment": "Lewis &amp; Short: frequent and classical, where the simple <span lang=\"la\">fatīgāre</span> is rare before Augustus. The participle <span lang=\"la\">dēfatīgātus</span> is “exhausted” (see tired for the everyday <span lang=\"la\">fessus</span>); <span lang=\"la\">dēfatīgārī</span> with a negative is “never to tire of” (Cic. de Or. 3.145)."
+    },
+    {
+      "latin": "cōnficiō, cōnficere, cōnfēcī, cōnfectum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "wear out, exhaust (in the participle)",
+      "grammar": "verb, third conjugation, transitive",
+      "evidence": [
+        "Liv. 1.23.9: <span lang=\"la\">ut fessōs cōnfectōsque aggrediantur</span> (Lewis &amp; Short)",
+        "Cic. Rab. Perd. 21: <span lang=\"la\">cōnfectus senectūte</span> (Lewis &amp; Short)",
+        "M-O s.v. exhausted"
+      ],
+      "comment": "Its first sense is “finish, make, complete”; in the participle <span lang=\"la\">cōnfectus</span>, with or without an ablative of the cause (age, illness, wounds, worry), it is “worn out, exhausted”."
+    },
+    {
+      "latin": "fatīgō, fatīgāre, fatīgāvī, fatīgātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "tire, weary",
+      "grammar": "verb, first conjugation, transitive",
+      "evidence": [
+        "Sall. Cat. 27.2: <span lang=\"la\">neque īnsomniīs neque labōre fatīgārī</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Not frequent before Augustus (Lewis &amp; Short); in prose <span lang=\"la\">dēfatīgāre</span> is commoner."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Dēceptus sum, at nōn dēfatīgātus.",
+      "english": "I’ve been foiled, but I’m not worn out.",
+      "source": "Ter. And. 669"
+    },
+    {
+      "latin": "opus faciam, ut dēfatīger ūsque, ingrātiīs ut dormiam",
+      "english": "I’ll work till I’m quite worn out, so that I sleep whether I like it or not",
+      "source": "Ter. Eun. 2.1.14 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "Labōre cōnfectus sum.",
+      "english": "I’m exhausted from work.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "tired",
+    "exhaust-use-up",
+    "sleepy"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/defatigo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: defatigo</a> · <a href=\"https://logeion.uchicago.edu/conficio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: conficio</a> · <a href=\"https://logeion.uchicago.edu/fatigo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fatigo</a>",
+    "Terence (<em>And.</em> 669) from the Latinitas loci collection (loci-terentius); the other passages as Lewis &amp; Short quotes them.",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. exhausted.",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "id": "abortion",
+  "english": "abortion",
+  "pos": "noun",
+  "also": [
+    "have an abortion",
+    "induce an abortion",
+    "abortive"
+  ],
+  "domain": "corpus",
+  "audience": "adult",
+  "terms": [
+    {
+      "latin": "abortus, abortūs m.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "abortion; miscarriage",
+      "evidence": [
+        "Ter. Hec. 3.3.38 (Lewis &amp; Short)",
+        "Cic. Att. 14.20.2 (Lewis &amp; Short)",
+        "Plin. NH 14.118: <span lang=\"la\">abortum facere</span>, to cause an abortion (Lewis &amp; Short)"
+      ],
+      "comment": "Covers both: a miscarriage (<span lang=\"la\">abortum facere</span>, to miscarry, Plin. Ep. 8.10.1) and an abortion caused by drugs or force (<span lang=\"la\">abortum facere</span> with a drug as subject, Pliny). Which is meant comes from the context."
+    },
+    {
+      "latin": "abortiō, abortiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "abortion, premature delivery",
+      "evidence": [
+        "Cic. Clu. 12 (Lewis &amp; Short’s chapter)",
+        "Plaut. Truc. 1.2.98 (Lewis &amp; Short)",
+        "M-O s.v. abortion"
+      ],
+      "comment": "In Cicero of an abortion paid for; in the Digest the drug that causes one is <span lang=\"la\">abortiōnis pōculum</span> (M-O)."
+    },
+    {
+      "latin": "partum abigere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "to procure an abortion",
+      "evidence": [
+        "Cic. Clu. 31: <span lang=\"la\">partum sibi ipsa medicāmentīs abēgisset</span> (M-O)",
+        "Tac. Ann. 14.63 (M-O)"
+      ],
+      "comment": "The phrase for the act: to drive out the unborn child. An abortifacient drug is <span lang=\"la\">abortīvum, abortīvī n.</span> (Juv. 2.32, M-O)."
+    }
+  ],
+  "related": [
+    "pregnant",
+    "baby"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/abortus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: abortus</a> · <a href=\"https://logeion.uchicago.edu/abortio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: abortio</a> · <a href=\"https://logeion.uchicago.edu/abigo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: abigo</a> · <a href=\"https://logeion.uchicago.edu/abortivus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: abortivus</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.vv. abortion, abortion drug, abortion: induce abortion."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

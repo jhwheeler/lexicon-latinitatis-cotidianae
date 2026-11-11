@@ -1,0 +1,104 @@
+{
+  "id": "cigarette",
+  "english": "cigarette",
+  "pos": "noun",
+  "also": [
+    "cigarettes",
+    "cigar",
+    "smoke a cigarette",
+    "smoking",
+    "no smoking",
+    "tobacco"
+  ],
+  "also_under": [
+    "urbs"
+  ],
+  "domain": "domus",
+  "terms": [
+    {
+      "latin": "sigarellum, sigarellī n.",
+      "status": "recommended",
+      "period": "modern",
+      "gloss": "a cigarette",
+      "evidence": [
+        "Traupman 291",
+        "M-O s.v. cigarette"
+      ],
+      "comment": "The modern word, a diminutive of <span lang=\"la\">sigārum</span>, cigar. A packet of cigarettes is <span lang=\"la\">capsella sigarellōrum</span> (Traupman 291)."
+    },
+    {
+      "latin": "bacillum tabācī",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "a cigarette (a little stick of tobacco)",
+      "evidence": [
+        "M-O s.v. cigarette"
+      ],
+      "comment": "A description on classical <span lang=\"la\">bacillum</span>, a little stick; tobacco is <span lang=\"la\">tabācum</span> (Morgan–Owens, after Linnaeus)."
+    },
+    {
+      "latin": "sigārum, sigārī n.",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "a cigar",
+      "evidence": [
+        "Traupman 291",
+        "M-O s.v. cigar"
+      ],
+      "notes": [
+        "sigarum"
+      ]
+    },
+    {
+      "latin": "fūmum sigarellī sūgere",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "to smoke a cigarette",
+      "evidence": [
+        "Traupman 291, 381",
+        "M-O s.v. smoke vb. (cigarettes, etc.): <span lang=\"la\">fūmum (alicujus reī) haurīre</span>"
+      ],
+      "comment": "Traupman’s phrase; Morgan–Owens gives <span lang=\"la\">fūmum haurīre</span> from eighteenth- and nineteenth-century writers, and Egger’s no-smoking sign, <span lang=\"la\">ubi fūmus haurīrī vetātur</span>."
+    },
+    {
+      "latin": "fistula nicotiāna",
+      "status": "avoid",
+      "period": "modern",
+      "gloss": "a cigarette (as some modern Latinists use it)",
+      "evidence": [
+        "M-O s.v. cigarette"
+      ],
+      "comment": "Morgan–Owens warns that <span lang=\"la\">fistula</span>, a tube, fits a pipe, not a cigarette, and was so used of pipes in earlier centuries."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Hīc fūmum haurīre nōn licet.",
+      "english": "No smoking here.",
+      "source": "composed"
+    }
+  ],
+  "notes": {
+    "sigarum": {
+      "form": "sigārum",
+      "claim": "long a",
+      "against": "Traupman <span lang=\"la\">sigarum</span>, unmarked",
+      "html": "Morgan–Owens s.v. cigar writes <span lang=\"la\">sigârum</span>. With the long vowel the Latin stress falls where Spanish <em>cigarro</em>, the source of the word, has it, as the house does for modern names with no Latin quantity (<span lang=\"la\">Lisbōna</span>)."
+    }
+  },
+  "related": [
+    "smoke",
+    "smoke-alarm"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/bacillum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: bacillum</a> · <a href=\"https://logeion.uchicago.edu/fistula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fistula</a> · <a href=\"https://logeion.uchicago.edu/haurio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: haurio</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 291, 381, checked against the searchable text of the book (11 November 2026).",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. cigarette, cigar, smoke vb. (cigarettes, etc.), non-smoking, tobacco.",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

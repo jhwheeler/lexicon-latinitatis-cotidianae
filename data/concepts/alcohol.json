@@ -1,0 +1,83 @@
+{
+  "id": "alcohol",
+  "english": "alcohol",
+  "pos": "noun",
+  "also": [
+    "alcoholic drink",
+    "alcoholic drinks",
+    "strong drink",
+    "booze",
+    "teetotal",
+    "I don’t drink alcohol"
+  ],
+  "domain": "culina",
+  "terms": [
+    {
+      "latin": "tēmētum, tēmētī n.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "alcoholic drink, strong drink",
+      "register": "vōx prīsca et poētica: Plaut., Cato; Hor., Juv.",
+      "evidence": [
+        "Plaut. Aul. 2.6.6: <span lang=\"la\">tēmētī nihil allātum intellegō</span> (Lewis &amp; Short)",
+        "Hor. Ep. 2.2.163"
+      ],
+      "comment": "Any intoxicating drink, wine or mead (Lewis &amp; Short). The everyday classical way to speak of drinking is simply <span lang=\"la\">vīnum</span> (see wine); one who drinks none is <span lang=\"la\">abstēmius</span>."
+    },
+    {
+      "latin": "alcohol, alcoholis n.",
+      "status": "recommended",
+      "period": "modern",
+      "gloss": "alcohol, the substance (in drinks, for cleaning wounds)",
+      "evidence": [
+        "Traupman 70, 270",
+        "M-O s.v. alcohol: <span lang=\"la\">alcohol</span>, masculine, from 1846"
+      ],
+      "comment": "For the substance itself, as in a disinfectant or on a label. Traupman makes it neuter, Morgan–Owens masculine (<span lang=\"la\">alcohol absolūtus</span>); we follow Traupman. Neither marks the vowels, and we leave them unmarked."
+    },
+    {
+      "latin": "abstēmius, abstēmia, abstēmium",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "teetotal, abstaining from strong drink",
+      "evidence": [
+        "Ov. Met. 15.323: <span lang=\"la\">vīna fugit gaudetque merīs abstēmius undīs</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Formed like <span lang=\"la\">tēmētum</span> and <span lang=\"la\">tēmulentus</span> (drunk); in Horace more generally sober, frugal (Ep. 1.12.7)."
+    },
+    {
+      "latin": "spīritus vīnī",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "spirit of wine: distilled alcohol, ethanol",
+      "evidence": [
+        "M-O s.v. alcohol"
+      ],
+      "comment": "The older chemists’ name, from 1826 in Morgan–Owens."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Vīnum nōn bibō: abstēmius sum.",
+      "english": "I don’t drink alcohol: I’m teetotal.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "wine",
+    "drunk",
+    "hangover",
+    "beer"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/temetum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: temetum</a> · <a href=\"https://logeion.uchicago.edu/abstemius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: abstemius</a> · <a href=\"https://logeion.uchicago.edu/spiritus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: spiritus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 70 and 270, checked against the searchable text of the book.",
+    "Morgan–Owens, <em>Adumbratio</em>, s.v. alcohol.",
+    "The example sentences marked “composed” are ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

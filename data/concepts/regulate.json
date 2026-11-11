@@ -1,0 +1,65 @@
+{
+  "id": "regulate",
+  "english": "regulate",
+  "pos": "verb",
+  "also": [
+    "regulation (control)",
+    "regulated",
+    "keep in check",
+    "adjust (heat, flow)",
+    "regulate prices"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "temperō, temperāre, temperāvī, temperātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "regulate, govern; temper, mix in due measure",
+      "evidence": [
+        "Cic. Tusc. 1.2: <span lang=\"la\">rem pūblicam īnstitūtīs et lēgibus temperāre</span> (Lewis &amp; Short)",
+        "Hor. C. 3.19.6: <span lang=\"la\">quis aquam temperet ignibus</span> (Lewis &amp; Short)"
+      ],
+      "comment": "To keep things in due proportion: a state by laws, a bath by heating it, the year by its seasons. Intransitive <span lang=\"la\">temperāre (+ dat.)</span> is to restrain oneself or spare."
+    },
+    {
+      "latin": "moderor, moderārī, moderātus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "control, keep within measure",
+      "evidence": [
+        "Suet. Dom. 7: <span lang=\"la\">pretia</span> (Lewis &amp; Short)",
+        "Cic. Rep. 6.26: <span lang=\"la\">deus, quī regit et moderātur et movet id corpus</span> (Lewis &amp; Short)"
+      ],
+      "comment": "To keep within a measure (<span lang=\"la\">modus</span>) and so to guide or govern; with the dative, to restrain (<span lang=\"la\">linguae moderārī</span>). See control."
+    },
+    {
+      "latin": "lēge cavēre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "to provide by law, make a rule that",
+      "comment": "Regulation by statute: <span lang=\"la\">lēge cautum est nē …</span>, the law lays down that … not (see rule-regulation)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Tempera aquam, nē nimis calida sit.",
+      "english": "Adjust the water so it isn’t too hot.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "control-govern",
+    "rule-regulation",
+    "limit"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/tempero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tempero</a> · <a href=\"https://logeion.uchicago.edu/moderor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: moderor</a> · <a href=\"https://logeion.uchicago.edu/caveo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: caveo</a>",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

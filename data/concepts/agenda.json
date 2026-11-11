@@ -1,0 +1,78 @@
+{
+  "id": "agenda",
+  "english": "agenda",
+  "pos": "noun",
+  "also": [
+    "the agenda",
+    "on the agenda",
+    "what’s on the agenda",
+    "to-do list",
+    "order of business",
+    "item on the agenda"
+  ],
+  "domain": "labor",
+  "terms": [
+    {
+      "latin": "quae agenda sunt",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "what is to be done: the business in hand",
+      "grammar": "relative clause with the gerundive of <span lang=\"la\">agō</span>; the tense of <span lang=\"la\">esse</span> and the mood follow the sentence",
+      "evidence": [
+        "Vives, <em>Exercitātiō</em> 20: <span lang=\"la\">is praescrībit aliīs quae sint agenda</span>"
+      ],
+      "comment": "Latin says what has to be done rather than naming a list: <span lang=\"la\">Quae hodiē agenda sunt?</span>, what’s on today? The neuter plural <span lang=\"la\">agenda</span> is the gerundive, the source of the English word, and is used as a noun only in later Latin."
+    },
+    {
+      "latin": "rērum agendārum index",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "a written agenda, a list of business",
+      "grammar": "noun phrase: index, indicis m.",
+      "evidence": [
+        "Levi–Bini p. 44, s.v. ordine del giorno"
+      ],
+      "comment": "For the paper itself. Classically <span lang=\"la\">index</span> is a list or table of contents (Quint. 10.1.57; Lewis &amp; Short)."
+    },
+    {
+      "latin": "relātiō, relātiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a motion or item laid before a meeting",
+      "evidence": [
+        "Cic. Pis. 29: <span lang=\"la\">nōn modo āctiōnem aliquam aut relātiōnem</span> (Lewis &amp; Short)",
+        "Levi–Bini p. 44, s.v. ordine del giorno"
+      ],
+      "comment": "The matter a presiding magistrate put to the senate (<span lang=\"la\">referre ad senātum</span>): an item on a formal agenda, not a list of chores."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Quae hodiē agenda sunt?",
+      "english": "What’s on the agenda today?",
+      "source": "composed"
+    },
+    {
+      "latin": "lūdēmus lūdum, in quō ūnus ēligitur rēx; is praescrībit aliīs quae sint agenda",
+      "english": "we’ll play the game where one of us is chosen king; he tells the others what is to be done",
+      "source": "Vives, <em>Exercitātiō</em> 20"
+    }
+  ],
+  "related": [
+    "plan",
+    "meeting",
+    "list"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/ago\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ago</a> · <a href=\"https://logeion.uchicago.edu/index\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: index</a> · <a href=\"https://logeion.uchicago.edu/relatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: relatio</a>",
+    "Vives from the Latinitas loci collection (loci-vives), checked against a single transcription.",
+    "Carlo Levi and Antonio Bini, <em>Il latino come lingua viva</em> (1937), p. 44.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition.",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

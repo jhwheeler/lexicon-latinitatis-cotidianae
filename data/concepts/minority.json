@@ -1,0 +1,78 @@
+{
+  "id": "minority",
+  "english": "minority",
+  "sense": "the smaller number or part",
+  "pos": "noun",
+  "also": [
+    "a minority",
+    "in the minority",
+    "minorities",
+    "minority group",
+    "ethnic minority",
+    "religious minority"
+  ],
+  "also_under": [
+    "verba"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "minor pars",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "the smaller part, a minority",
+      "grammar": "noun phrase, with a genitive: minor pars populī",
+      "evidence": [
+        "Cic. Agr. 2.18: <span lang=\"la\">ut minor pars populī vocārētur</span> (Lewis &amp; Short, s.v. <span lang=\"la\">pars</span>)"
+      ],
+      "comment": "The opposite of <span lang=\"la\">major pars</span>, the majority (see most). In Cicero’s example, a law had priests chosen by seventeen of the thirty-five tribes, a minority of the people."
+    },
+    {
+      "latin": "paucī, paucae, pauca",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a few, the few",
+      "evidence": [
+        "Cic. Leg. 3.32: <span lang=\"la\">paucī enim atque admodum paucī</span>"
+      ],
+      "comment": "A small number against the many; in politics often the ruling few."
+    },
+    {
+      "latin": "minor cīvium pars",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "a minority of the citizens: an ethnic or religious minority",
+      "evidence": [
+        "M-O s.v. minority (ethnic, religious, etc.), after Perugini"
+      ],
+      "comment": "For an ethnic minority Morgan–Owens also gives Egger’s <span lang=\"la\">minor dīversae stirpis plēbs</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "quod populus per religiōnem sacerdōtia mandāre nōn poterat, ut minor pars populī vocārētur",
+      "english": "since religion forbade the people to give priesthoods, (he proposed) that a minority of the people be called to vote",
+      "source": "Cic. Agr. 2.18"
+    },
+    {
+      "latin": "paucī enim atque admodum paucī honōre et glōriā amplificātī vel corrumpere mōrēs cīvitātis vel corrigere possunt",
+      "english": "for a few, a very few, raised high by office and fame, can either corrupt a people’s ways or reform them",
+      "source": "Cic. Leg. 3.32"
+    }
+  ],
+  "related": [
+    "most-majority",
+    "few",
+    "group"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/pars\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pars</a> · <a href=\"https://logeion.uchicago.edu/minor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: minor</a> · <a href=\"https://logeion.uchicago.edu/paucus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: paucus</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. minority (ethnic, religious, etc.).",
+    "Cicero, <em>De lege agraria</em> 2.18 and <em>De legibus</em> 3.32, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (11 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

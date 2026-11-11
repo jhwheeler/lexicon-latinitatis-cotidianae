@@ -1,0 +1,93 @@
+{
+  "id": "reform",
+  "english": "reform",
+  "pos": [
+    "verb",
+    "noun"
+  ],
+  "also": [
+    "reforms",
+    "reformer",
+    "reformed",
+    "political reform",
+    "amend",
+    "amendment"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "ēmendō, ēmendāre, ēmendāvī, ēmendātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "reform, amend, correct",
+      "evidence": [
+        "Cic. Leg. 3.30: <span lang=\"la\">sīc ēmendārī et corrigī continentiā</span>",
+        "Hor. Ep. 2.1.3: <span lang=\"la\">lēgibus ēmendēs</span>",
+        "Traupman 157, 370"
+      ],
+      "comment": "To free from faults (<span lang=\"la\">mendum</span>, a fault): a state, laws, habits; its commonest use is correcting a text or a speech, and in Pliny the Elder curing a complaint (Lewis &amp; Short)."
+    },
+    {
+      "latin": "corrigō, corrigere, corrēxī, corrēctum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "set right, improve, reform",
+      "evidence": [
+        "Cic. Leg. 3.32: <span lang=\"la\">vel corrumpere mōrēs cīvitātis vel corrigere</span>",
+        "Plaut. Trin. 1.2.81: <span lang=\"la\">ad frūgem corrigere</span> (Lewis &amp; Short)"
+      ],
+      "comment": "To make straight, and far more often to set right: a person, morals, a mistake; Cicero pairs it with <span lang=\"la\">ēmendāre</span> (Lewis &amp; Short)."
+    },
+    {
+      "latin": "ēmendātiō, ēmendātiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a reform, an amendment, a correction",
+      "evidence": [
+        "Cic. Fin. 4.21: <span lang=\"la\">corrēctiō et ēmendātiō philosophiae veteris</span> (Lewis &amp; Short)"
+      ],
+      "comment": "The noun for a reform; <span lang=\"la\">corrēctiō</span> is used beside it (Lewis &amp; Short)."
+    },
+    {
+      "latin": "reformō, reformāre, reformāvī, reformātum",
+      "status": "alternative",
+      "period": "post-classical",
+      "gloss": "reshape; reform (a person, morals)",
+      "evidence": [
+        "Sen. Ep. 25.1 (Lewis &amp; Short)",
+        "Plin. Pan. 53.1: <span lang=\"la\">mōrēs dēprāvātōs</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Not before Augustus: first to reshape, transform (Ovid), then to reform a person or morals (Seneca, Pliny). Morgan–Owens records <span lang=\"la\">reformātiō agrāria</span> for land reform, from a modern concordat."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "cum tot sustineās et tanta negōtia sōlus, rēs Ītalās armīs tūtēris, mōribus ōrnēs, lēgibus ēmendēs",
+      "english": "since you alone carry so many and such great burdens, guarding Italy with arms, gracing her with morals, reforming her with laws",
+      "source": "Hor. Ep. 2.1.1–3"
+    },
+    {
+      "latin": "ut enim cupiditātibus prīncipum et vitiīs īnficī solet tōta cīvitās, sīc ēmendārī et corrigī continentiā",
+      "english": "for as a whole state is usually infected by the greed and vices of its leading men, so it is reformed and set right by their self-restraint",
+      "source": "Cic. Leg. 3.30"
+    }
+  ],
+  "related": [
+    "legislation",
+    "correct-put-right",
+    "change",
+    "improve"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/emendo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: emendo</a> · <a href=\"https://logeion.uchicago.edu/corrigo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: corrigo</a> · <a href=\"https://logeion.uchicago.edu/emendatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: emendatio</a> · <a href=\"https://logeion.uchicago.edu/correctio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: correctio</a> · <a href=\"https://logeion.uchicago.edu/reformo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: reformo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 157, 370, checked against the searchable text of the book (11 November 2026).",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. land reform.",
+    "Horace, <em>Epistles</em> 2.1, checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026).",
+    "Cicero, <em>De legibus</em> 3.30–32, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (11 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

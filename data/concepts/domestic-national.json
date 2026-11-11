@@ -1,0 +1,65 @@
+{
+  "id": "domestic-national",
+  "english": "domestic",
+  "sense": "of one’s own country, not foreign",
+  "pos": "adjective",
+  "also": [
+    "home (as against foreign)",
+    "internal",
+    "home-grown",
+    "domestic politics",
+    "civil war",
+    "at home and abroad"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "domesticus, domestica, domesticum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "of one’s own country, native, internal (opposed to foreign)",
+      "evidence": [
+        "Cic. Off. 2.26: <span lang=\"la\">externa libentius in tālī rē quam domestica recordor</span>",
+        "Caes. BG 2.10.4: <span lang=\"la\">domesticae cōpiae reī frūmentāriae</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Against <span lang=\"la\">externus</span> or <span lang=\"la\">peregrīnus</span> (see foreign): one’s own people’s customs, examples, resources, enemies; <span lang=\"la\">bellum domesticum</span>, civil war (Lewis &amp; Short). Its first sense is “of the household” (see domestic, of the home and family)."
+    },
+    {
+      "latin": "intestīnus, intestīna, intestīnum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "internal, within the state (of war, strife, evils)",
+      "evidence": [
+        "Cic. Cat. 2.28: <span lang=\"la\">bellum intestīnum ac domesticum</span>"
+      ],
+      "comment": "“Inward, internal”, of trouble inside the state: <span lang=\"la\">bellum intestīnum</span>, <span lang=\"la\">discordia intestīna</span> (Lewis &amp; Short). As a noun, <span lang=\"la\">intestīna</span> are the guts."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Externa libentius in tālī rē quam domestica recordor.",
+      "english": "In a matter like this I prefer to recall foreign examples rather than our own.",
+      "source": "Cic. Off. 2.26"
+    },
+    {
+      "latin": "bellum intestīnum ac domesticum post hominum memoriam crūdēlissimum et maximum",
+      "english": "the cruellest and greatest civil war within the memory of man",
+      "source": "Cic. Cat. 2.28"
+    }
+  ],
+  "related": [
+    "domestic-household",
+    "foreign",
+    "national",
+    "international"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/domesticus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: domesticus</a> · <a href=\"https://logeion.uchicago.edu/intestinus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: intestinus</a>",
+    "Cicero checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

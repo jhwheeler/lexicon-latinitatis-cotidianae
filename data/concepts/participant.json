@@ -1,0 +1,67 @@
+{
+  "id": "participant",
+  "english": "participant",
+  "pos": "noun",
+  "also": [
+    "participants",
+    "partaker",
+    "those taking part",
+    "have a share in",
+    "be party to"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "particeps, participis",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "sharing in, taking part in; as a noun, a sharer, a participant",
+      "grammar": "adjective and noun, third declension, one ending; + genitive",
+      "evidence": [
+        "Cic. Att. 2.25.2: <span lang=\"la\">aut expediēs nōs omnī molestiā aut eris particeps</span>",
+        "Ter. Heaut. 428: <span lang=\"la\">cujus maximē tē fierī participem cupis</span>"
+      ],
+      "comment": "The one who shares or takes part in something, with the genitive of what is shared: <span lang=\"la\">particeps cōnsiliōrum, sollicitūdinis, nūntiī</span>. Near it stand <span lang=\"la\">socius</span>, a partner or ally, and <span lang=\"la\">cōnsors</span>, one who shares a lot or an inheritance (Lewis &amp; Short)."
+    },
+    {
+      "latin": "is quī interest",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "one who is present at or takes part in (+ dat.)",
+      "grammar": "phrase: intersum + dative (see be involved)",
+      "comment": "For the people present at an event, a meeting or a game: <span lang=\"la\">quī convīviō, lūdīs, cōnsiliō intersunt</span>, those taking part in the dinner, the games, the meeting."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "quā rē advolā; aut expediēs nōs omnī molestiā aut eris particeps",
+      "english": "so fly here: either you will get me out of all this trouble or you will share it",
+      "source": "Cic. Att. 2.25.2"
+    },
+    {
+      "latin": "Menedēme, salvē: nūntium apportō tibi cujus maximē tē fierī participem cupis.",
+      "english": "Good day, Menedemus: I bring you news you will be very glad to share in.",
+      "source": "Ter. Heaut. 427–428"
+    },
+    {
+      "latin": "cūr ego absum vel spectātor laudum tuārum vel particeps vel socius vel minister cōnsiliōrum?",
+      "english": "why am I away, unable to watch your successes, or to share in your plans, as partner or as helper?",
+      "source": "Cic. Fam. 2.7.2"
+    }
+  ],
+  "related": [
+    "be-involved",
+    "member",
+    "associate-partner",
+    "share"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/particeps\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: particeps</a> · <a href=\"https://logeion.uchicago.edu/intersum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: intersum</a>",
+    "Cicero’s letters and Terence checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

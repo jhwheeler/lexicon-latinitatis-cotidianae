@@ -1,0 +1,67 @@
+{
+  "id": "volume-book",
+  "english": "volume",
+  "sense": "one book of a set or a long work",
+  "pos": "noun",
+  "also": [
+    "volumes",
+    "tome",
+    "vol."
+  ],
+  "domain": "schola",
+  "terms": [
+    {
+      "latin": "volūmen, volūminis n.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a volume; properly a roll",
+      "evidence": [
+        "Cic. Tusc. 3.6: <span lang=\"la\">hoc tertium volūmen</span>",
+        "Nep. Att. 16.3: <span lang=\"la\">sēdecim volūmina epistulārum</span> (Lewis &amp; Short)",
+        "M-O s.v. volume (book)"
+      ],
+      "comment": "From <span lang=\"la\">volvō</span>: a roll of writing, and so one book of a longer work. In poetry and post-Augustan prose also a coil or fold (of a snake, Verg. A. 2.208) or a wreath of smoke. Not the volume of sound (see volume, loudness)."
+    },
+    {
+      "latin": "liber, librī m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a book; one book of a work",
+      "comment": "The plain word for a book, and the usual way to number the parts of a work: <span lang=\"la\">liber tertius</span>."
+    },
+    {
+      "latin": "tomus, tomī m.",
+      "status": "alternative",
+      "period": "post-classical",
+      "gloss": "a volume, a tome",
+      "evidence": [
+        "M. Aurel. ap. Fronto: <span lang=\"la\">in quīnque tomīs</span> (Lewis &amp; Short)",
+        "M-O s.v. volume (book)"
+      ],
+      "comment": "Greek τόμος, a piece cut off; in Martial (1.67.3, Lewis &amp; Short) a cheap roll of paper, in Marcus Aurelius one part of a longer work."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "sed quoniam duōbus superiōribus dē morte et dē dolōre dictum est, tertius diēs disputātiōnis hoc tertium volūmen efficiet.",
+      "english": "but since death and pain were dealt with in the two earlier ones, the third day of the discussion will make this third volume.",
+      "source": "Cic. Tusc. 3.6"
+    }
+  ],
+  "related": [
+    "book",
+    "volume-sound",
+    "library"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/volumen\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: volumen</a> · <a href=\"https://logeion.uchicago.edu/liber\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: liber</a> · <a href=\"https://logeion.uchicago.edu/tomus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tomus</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. volume (book).",
+    "Quotations of classical authors checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026) and given in the house spelling (macrons, consonantal j).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

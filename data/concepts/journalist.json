@@ -5,7 +5,10 @@
   "also": [
     "journalists",
     "newspaperman",
-    "newspaper reporter"
+    "newspaper reporter",
+    "reporter",
+    "reporters",
+    "news reporter"
   ],
   "domain": "res-publica",
   "terms": [
@@ -15,20 +18,31 @@
       "period": "modern",
       "gloss": "a journalist",
       "evidence": [
-        "Traupman 167, 335",
+        "Traupman 167, 335, 370",
         "M-O s.v. journalist (Egger)"
       ],
       "comment": "From <span lang=\"la\">diurna</span>, the daily record (<span lang=\"la\">ācta diurna</span>). Lewis &amp; Short has the word once, late, for a keeper of a day-book (Cod. Theod. 8.4.8). A woman is <span lang=\"la\">diurnāria</span> (Traupman). Traupman gives the same word for a reporter."
+    },
+    {
+      "latin": "relātor, relātōris m.",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "a reporter",
+      "evidence": [
+        "M-O s.v. reporter (Egger)"
+      ],
+      "comment": "Classically the mover of a motion in the senate (Balbus in Cic. Att. 8.15a.2), late a narrator; an inscription names a recorder of auctions (Lewis &amp; Short)."
     }
   ],
   "related": [
     "media",
-    "interview"
+    "interview",
+    "editor"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/diurnarius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: diurnarius</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 167, 335, checked against the searchable text of the book.",
-    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. journalist."
+    "<a href=\"https://logeion.uchicago.edu/diurnarius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: diurnarius</a> · <a href=\"https://logeion.uchicago.edu/relator\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: relator</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 167, 335, 370, checked against the searchable text of the book.",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. journalist; reporter."
   ],
   "review": {
     "status": "draft",

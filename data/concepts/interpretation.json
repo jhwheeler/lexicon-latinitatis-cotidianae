@@ -1,0 +1,83 @@
+{
+  "id": "interpretation",
+  "english": "interpretation",
+  "sense": "an explanation of what something means",
+  "pos": "noun",
+  "also": [
+    "interpret",
+    "misinterpret",
+    "take it the wrong way",
+    "take it as"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "interpretātiō, interpretātiōnis f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "explanation, interpretation",
+      "evidence": [
+        "Cic. Off. 1.10 (by chapter): <span lang=\"la\">jūris</span> (Lewis &amp; Short)",
+        "Plin. NH 7.203: <span lang=\"la\">ostentōrum et somniōrum</span> (Lewis &amp; Short)"
+      ],
+      "comment": "The explaining of laws, dreams, signs and words; also a translation (see translate)."
+    },
+    {
+      "latin": "interpretor, interpretārī, interpretātus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "interpret, explain; understand (a thing in a certain way)",
+      "grammar": "verb, first conjugation, deponent",
+      "evidence": [
+        "Cic. Off. 2.5: <span lang=\"la\">sī interpretārī velīs</span> (Lewis &amp; Short)"
+      ],
+      "comment": "From <span lang=\"la\">interpres</span>, a go-between or interpreter: to explain, and also to take a thing in a certain sense (Lewis &amp; Short)."
+    },
+    {
+      "latin": "accipiō, accipere, accēpī, acceptum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "take (a remark) in a certain way",
+      "grammar": "verb, third conjugation, with in or ad + accusative",
+      "evidence": [
+        "Ter. Ad. 606: <span lang=\"la\">ad contumēliam omnia accipiunt magis</span>",
+        "Ter. Eun. 875: <span lang=\"la\">in eam partem accipiōque</span>"
+      ],
+      "comment": "The everyday way of saying how something is understood: to take it as an insult, <span lang=\"la\">ad contumēliam accipere</span>; in that sense, <span lang=\"la\">in eam partem</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Maledictum interpretandō faciās ācrius.",
+      "english": "Explain an insult and you make it sharper.",
+      "source": "Publil. Sent. M 23"
+    },
+    {
+      "latin": "nec quicquam aliud est philosophia, sī interpretārī velīs, quam studium sapientiae",
+      "english": "and philosophy, if you want to put it in other words, is nothing but the pursuit of wisdom",
+      "source": "Cic. Off. 2.5 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "omnēs, quibus rēs sunt minus secundae, magis sunt nesciō quōmodo suspīciōsī; ad contumēliam omnia accipiunt magis",
+      "english": "all those whose affairs are going badly are somehow more suspicious; they take everything more as an insult",
+      "source": "Ter. Ad. 605–606"
+    }
+  ],
+  "related": [
+    "explain",
+    "translate",
+    "mean-signify",
+    "understand"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/interpretatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: interpretatio</a> · <a href=\"https://logeion.uchicago.edu/interpretor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: interpretor</a> · <a href=\"https://logeion.uchicago.edu/accipio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: accipio</a>",
+    "Quotations from the Latinitas loci collections (loci-publilius), checked against the editions named there.",
+    "Terence checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

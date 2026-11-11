@@ -1,0 +1,88 @@
+{
+  "id": "expense",
+  "english": "expense",
+  "pos": "noun",
+  "also": [
+    "expenses",
+    "expenditure",
+    "outlay",
+    "costs",
+    "at my expense",
+    "at someone’s expense",
+    "go to expense",
+    "spare no expense"
+  ],
+  "domain": "pecunia",
+  "terms": [
+    {
+      "latin": "sūmptus, sūmptūs m.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "expense, cost, outlay",
+      "evidence": [
+        "Cic. Att. 5.14.2: <span lang=\"la\">adventus noster nēminī nē minimō quidem fuit sūmptuī</span>",
+        "Caes. BG 1.18.5: <span lang=\"la\">suō sūmptū</span>, at his own expense",
+        "Traupman 311: <span lang=\"la\">meō sūmptū</span>, at my expense"
+      ],
+      "comment": "The everyday word, in the singular or the plural (Lewis &amp; Short). At my expense, <span lang=\"la\">meō sūmptū</span>; to go to expense, <span lang=\"la\">sūmptum facere</span>; to spare no expense, <span lang=\"la\">sūmptū nōn parcere</span> (Cic. Fam. 16.4.2, see spend). To be a cost to someone is <span lang=\"la\">sūmptuī esse alicui</span>."
+    },
+    {
+      "latin": "impēnsa, impēnsae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "outlay, cost (money laid out on something)",
+      "evidence": [
+        "Cic. Att. 13.25.3: <span lang=\"la\">quoniam impēnsam fēcimus in macrocola</span> (Lewis &amp; Short)",
+        "Sen. Ep. 12.1: <span lang=\"la\">dē impēnsīs aedificiī</span>",
+        "Traupman 311"
+      ],
+      "comment": "Properly money laid out (<span lang=\"la\">pecūnia</span> understood, from <span lang=\"la\">impendere</span>, to spend): <span lang=\"la\">impēnsam facere in rem</span>, to spend money on a thing."
+    },
+    {
+      "latin": "impendium, impendiī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "outlay, cost",
+      "evidence": [
+        "Cic. Quinct. 12: <span lang=\"la\">sine impendiō</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Mostly in the plural (Lewis &amp; Short). In Cicero’s letters it is also the interest paid on a loan (<span lang=\"la\">faenus et impendium</span>, Att. 6.1.4), so say <span lang=\"la\">sūmptus</span> where that could mislead."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nūllus sūmptus est, et sī sūmptus esset, tamen valētūdinis causā experīrēs",
+      "english": "it costs nothing, and even if there were an expense, you would still try it for your health",
+      "source": "Cato Agr. 157"
+    },
+    {
+      "latin": "adventus noster nēminī nē minimō quidem fuit sūmptuī",
+      "english": "my arrival did not cost anyone a penny",
+      "source": "Cic. Att. 5.14.2"
+    },
+    {
+      "latin": "vēneram in suburbānum meum et querēbar dē impēnsīs aedificiī dīlābentis",
+      "english": "I had come out to my place outside town and was complaining about the cost of the crumbling building",
+      "source": "Sen. Ep. 12.1"
+    }
+  ],
+  "related": [
+    "spend-money",
+    "budget",
+    "cost-a-lot",
+    "price",
+    "income",
+    "finance"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/sumptus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sumptus</a> · <a href=\"https://logeion.uchicago.edu/impendo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: impendo</a> · <a href=\"https://logeion.uchicago.edu/impendium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: impendium</a> (<span lang=\"la\">impēnsa</span> is given under <span lang=\"la\">impendō</span>)",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 311 (expense; at my expense).",
+    "Quotations from the Latinitas loci collections (loci-cato, loci-seneca-epistulae), checked against the editions named there. Cicero’s letter to Atticus and Caesar checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (11 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

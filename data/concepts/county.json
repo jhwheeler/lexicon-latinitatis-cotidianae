@@ -1,0 +1,56 @@
+{
+  "id": "county",
+  "english": "county",
+  "pos": "noun",
+  "also": [
+    "counties",
+    "shire",
+    "county town"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "comitātus, comitātūs m.",
+      "status": "recommended",
+      "period": "medieval",
+      "gloss": "a county",
+      "evidence": [
+        "M-O s.v. political division: county; county (domain of count)"
+      ],
+      "comment": "From <span lang=\"la\">comes</span>, a count: the land a count governed, and so an English shire (Lüders 1826, of Dorset and Gloucestershire) and a subdivision of a US state (M-O). Classically <span lang=\"la\">comitātus</span> is an escort, a retinue (Lewis &amp; Short), so make the sense clear the first time."
+    },
+    {
+      "latin": "pāgus, pāgī m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a country district, a canton",
+      "evidence": [
+        "Caes. BG 1.12.4: <span lang=\"la\">in quattuor pāgōs dīvīsa est</span>"
+      ],
+      "comment": "Caesar’s word for the districts into which a Gallic people was divided, the nearest classical thing to a county; also the country as against the town, and the villagers themselves (Lewis &amp; Short). A county council: see council."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nam omnis cīvitās Helvētia in quattuor pāgōs dīvīsa est",
+      "english": "for the whole Helvetian state is divided into four districts",
+      "source": "Caes. BG 1.12.4"
+    }
+  ],
+  "related": [
+    "area",
+    "province",
+    "council",
+    "state-country"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/comitatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: comitatus</a> · <a href=\"https://logeion.uchicago.edu/pagus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pagus</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. political division: county; county (domain of count).",
+    "Caesar, <em>Gallic War</em> 1.12, checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

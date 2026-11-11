@@ -1,0 +1,72 @@
+{
+  "id": "sample",
+  "english": "sample",
+  "sense": "a small part that shows what the whole is like",
+  "pos": "noun",
+  "also": [
+    "samples",
+    "free sample",
+    "a taste",
+    "try a sample",
+    "specimen",
+    "foretaste"
+  ],
+  "domain": "pecunia",
+  "also_under": [
+    "urbs"
+  ],
+  "terms": [
+    {
+      "latin": "exemplum, exemplī n.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a sample (of goods)",
+      "evidence": [
+        "Auct. Her. 4.6.9: <span lang=\"la\">purpurae, trīticī</span> (Lewis &amp; Short)",
+        "M-O s.v. sample (of product), after Vives"
+      ],
+      "comment": "Its first sense, from <span lang=\"la\">eximere</span>, to take out: what is taken out to show the rest (Lewis &amp; Short). Its common senses are a copy, a pattern, a model to follow, an instance, and a warning to others (<span lang=\"la\">exemplum statuere in aliquem</span>)."
+    },
+    {
+      "latin": "gustus, gustūs m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a taste, a sample (of food, or of a writer’s work)",
+      "evidence": [
+        "Plin. Ep. 4.27.5: <span lang=\"la\">Ad hunc gustum tōtum librum repromittō</span>",
+        "Sen. Ep. 114.18: <span lang=\"la\">Gustum tibi dare voluī</span>",
+        "Traupman 390: (foretaste, sample)"
+      ],
+      "comment": "A tasting, a taste; post-Augustan, not in Cicero (Lewis &amp; Short). It is also the light first course of a Roman dinner, and taste as a sense (see taste)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Vidēs quam ācūta omnia quam apta quam expressa. Ad hunc gustum tōtum librum repromittō",
+      "english": "You see how sharp it all is, how neat, how vivid. On the strength of this sample I promise you the whole book is the same",
+      "source": "Plin. Ep. 4.27.5"
+    },
+    {
+      "latin": "Gustum tibi dare voluī: tōtus hīs contexitur liber.",
+      "english": "I wanted to give you a sample: the whole book is woven out of things like these.",
+      "source": "Sen. Ep. 114.18"
+    }
+  ],
+  "related": [
+    "taste",
+    "blood-test",
+    "goods",
+    "shop"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/exemplum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: exemplum</a> · <a href=\"https://logeion.uchicago.edu/gustus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gustus</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. sample (of product). John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 390.",
+    "Pliny and Seneca checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (11 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

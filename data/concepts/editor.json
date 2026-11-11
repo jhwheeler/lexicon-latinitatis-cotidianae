@@ -1,0 +1,84 @@
+{
+  "id": "editor",
+  "english": "editor",
+  "sense": "of a newspaper, magazine or book",
+  "pos": "noun",
+  "also": [
+    "editors",
+    "editor in chief",
+    "chief editor",
+    "newspaper editor"
+  ],
+  "also_under": [
+    "schola"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "redāctor, redāctōris m.",
+      "status": "recommended",
+      "period": "modern",
+      "gloss": "editor (of a newspaper, magazine, book); a woman is <span lang=\"la\">redāctrīx</span>",
+      "evidence": [
+        "Traupman 308: <span lang=\"la\">redāctor prīnceps</span>, editor in chief"
+      ],
+      "comment": "A modern coinage from <span lang=\"la\">redigō</span>, to bring into order. The long <span lang=\"la\">ā</span> by Lachmann’s law, as in <span lang=\"la\">āctus</span>.",
+      "notes": [
+        "redactor"
+      ]
+    },
+    {
+      "latin": "ēmendātor, ēmendātōris m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a corrector; one who edits a text",
+      "evidence": [
+        "Cic. Balb. 20: <span lang=\"la\">corrector atque ēmendātor nostrae cīvitātis</span> (Lewis &amp; Short)",
+        "M-O s.v. edit (<span lang=\"la\">ēmendāre</span>)"
+      ],
+      "comment": "Classically anyone who corrects or improves something, a state as much as a text; fits the editor who prepares or corrects a text (<span lang=\"la\">ēmendāre</span>, Morgan–Owens), not the editor who runs a paper."
+    },
+    {
+      "latin": "ēditor, ēditōris m.",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "editor (of a newspaper or magazine)",
+      "evidence": [
+        "Traupman 308 (printed <span lang=\"la\">editor</span>, without the macron)"
+      ],
+      "comment": "Modern, after <span lang=\"la\">ēdere</span>, to publish (<span lang=\"la\">librum ēdere</span>, Cic.). Classically the word means only “that which brings forth” (Lucan 2.423) and, late, a giver of games (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Hanc commentātiōnem redāctōrī mitte.",
+      "english": "Send this article to the editor.",
+      "source": "composed"
+    }
+  ],
+  "notes": {
+    "redactor": {
+      "form": "redāctor",
+      "claim": "long a",
+      "html": "From <span lang=\"la\">redāctus</span>, <span lang=\"la\">redigō</span> (<span lang=\"la\">agō, āctus</span>): Lachmann’s law. Traupman 308 prints <span lang=\"la\">redāctor</span>.",
+      "ruling": "lachmann"
+    }
+  },
+  "related": [
+    "newspaper",
+    "journalist",
+    "article",
+    "magazine"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/emendator\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: emendator</a> · <a href=\"https://logeion.uchicago.edu/editor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: editor</a> · <a href=\"https://logeion.uchicago.edu/redigo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: redigo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 308, checked against the searchable text of the book (11 November 2026). <a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. edit (prepare a text for publication).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition.",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

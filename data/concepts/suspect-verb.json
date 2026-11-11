@@ -1,0 +1,79 @@
+{
+  "id": "suspect-verb",
+  "english": "suspect",
+  "sense": "think likely; mistrust",
+  "pos": "verb",
+  "also": [
+    "suspicion",
+    "suspicious",
+    "have a suspicion",
+    "I suspect that",
+    "suspect someone",
+    "arouse suspicion"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "suspicor, suspicārī, suspicātus sum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "suspect",
+      "grammar": "verb, first conjugation, deponent: most often with accusative and infinitive",
+      "evidence": [
+        "Plaut. Men. 5.2.24: <span lang=\"la\">id est, quod suspicābar</span> (Lewis &amp; Short)",
+        "Cic. Clu. 27: <span lang=\"la\">nihil malī suspicāns</span>"
+      ],
+      "comment": "Usually with accusative and infinitive, of guessing that something is so (<span lang=\"la\">suspicor eum domī esse</span>). With a person as object it is rare: of suspecting someone Latin says <span lang=\"la\">suspectum habēre</span> (see the suspect)."
+    },
+    {
+      "latin": "suspīciō, suspīciōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "suspicion",
+      "evidence": [
+        "Cic. Att. 13.10.3: <span lang=\"la\">in quem … ulla caderet suspīciō</span> (Lewis &amp; Short)",
+        "Cic. Verr. 2.5.15: <span lang=\"la\">in suspīciōnem venīre</span>"
+      ],
+      "comment": "With long <span lang=\"la\">ī</span>, unlike the verb <span lang=\"la\">suspiciō</span>, to look up. <span lang=\"la\">Suspīciō cadit in aliquem</span>, suspicion falls on someone; <span lang=\"la\">in suspīciōnem venīre</span>, to come under suspicion."
+    },
+    {
+      "latin": "suspīciōsus, suspīciōsa, suspīciōsum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "suspicious, mistrustful",
+      "evidence": [
+        "Ter. Ad. 4.3.15 (Lewis &amp; Short)",
+        "Cic. Verr. 2.5.74",
+        "Traupman 316"
+      ],
+      "comment": "Ready to suspect, mistrustful, of a person (Ter. Ad. 4.3.15; Cic. Verr. 2.5.74); of a thing that arouses suspicion, <span lang=\"la\">suspectus</span> (see the suspect)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "aliquandō dormīsse mē sciō, aliquandō suspicor",
+      "english": "sometimes I know I’ve slept, sometimes I suspect it",
+      "source": "Sen. Ep. 83.6"
+    },
+    {
+      "latin": "id est, quod suspicābar",
+      "english": "that’s what I suspected",
+      "source": "Plaut. Men. 5.2.24 (Lewis &amp; Short)"
+    }
+  ],
+  "related": [
+    "suspect-noun",
+    "guess",
+    "doubt"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/suspicor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: suspicor</a> · <a href=\"https://logeion.uchicago.edu/suspicio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: suspicio</a> · <a href=\"https://logeion.uchicago.edu/suspiciosus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: suspiciosus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 316, checked against the searchable text of the book (11 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-seneca-epistulae), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

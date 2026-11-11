@@ -1,0 +1,51 @@
+{
+  "id": "politician",
+  "english": "politician",
+  "pos": "noun",
+  "also": [
+    "politicians",
+    "statesman",
+    "stateswoman",
+    "public figure"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "vir cīvīlis",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a statesman, a man in public life",
+      "grammar": "noun phrase; for a woman, fēmina cīvīlis (Traupman 180)",
+      "evidence": [
+        "Quint. 11.1.35: <span lang=\"la\">at vir cīvīlis vērēque sapiēns</span>",
+        "Traupman 180"
+      ],
+      "comment": "Quintilian’s phrase for the statesman, the Greek πολιτικός (Lewis &amp; Short, s.v. <span lang=\"la\">cīvīlis</span>); Traupman gives it for both politician and statesman. It is a word of praise: for the trade of seeking office see <span lang=\"la\">ambitiō</span> (politics) and <span lang=\"la\">candidātus</span> (apply for). Morgan–Owens calls an elected politician <span lang=\"la\">magistrātus</span> (see official)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "at vir cīvīlis vērēque sapiēns, quī sē nōn ōtiōsīs disputātiōnibus, sed administrātiōnī reī pūblicae dēdiderit",
+      "english": "but the statesman, the man who is wise in fact, who has given himself not to idle debate but to the running of the state",
+      "source": "Quint. 11.1.35"
+    }
+  ],
+  "related": [
+    "politics",
+    "political",
+    "official",
+    "apply-for",
+    "leader"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/civilis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: civilis</a> · <a href=\"https://logeion.uchicago.edu/vir\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vir</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 180, checked against the searchable text of the book (11 November 2026).",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. politician.",
+    "Quintilian 11.1.35, checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

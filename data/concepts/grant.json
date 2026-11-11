@@ -1,0 +1,69 @@
+{
+  "id": "grant",
+  "english": "grant",
+  "sense": "give what is asked",
+  "pos": "verb",
+  "also": [
+    "grant a request",
+    "grant a wish",
+    "grant a favour",
+    "grant permission",
+    "I grant you"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "concēdō, concēdere, concessī, concessum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "grant, allow, yield (what is asked)",
+      "grammar": "verb, third conjugation: aliquid alicui concēdere",
+      "evidence": [
+        "Cic. Q. fr. 3.1.7: <span lang=\"la\">nōn enim concēdō tibi plūs ut illum amēs quam ipse amō</span>",
+        "Plaut. Cas. 2.3.47 (old numbering): <span lang=\"la\">illum mihi aequius est quam mē illī quae volō concēdere</span> (Lewis &amp; Short)"
+      ],
+      "comment": "To grant something to someone, as a favour or from regard for them; in argument, to grant a point (<span lang=\"la\">concēdō</span>, I grant that, with an accusative and infinitive). Its first sense is to go away, make way: <span lang=\"la\">Concēde hūc</span>, move over here (Lewis &amp; Short)."
+    },
+    {
+      "latin": "veniam dare",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "grant a favour; give leave",
+      "grammar": "verb phrase: dō, dare, dedī, datum, with the dative of the person",
+      "evidence": [
+        "Verg. A. 4.435–436: <span lang=\"la\">extrēmam hanc ōrō veniam … quam mihi cum dederit</span>",
+        "Lewis &amp; Short s.v. venia: “most usual in the phrase veniam dare, to grant a favor”"
+      ],
+      "comment": "<span lang=\"la\">Venia</span> is indulgence, a favour; to ask one, <span lang=\"la\">veniam ōrāre, petere</span>. It is also pardon: <span lang=\"la\">veniam dare</span> can mean to forgive (see allow, give)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nōn enim concēdō tibi plūs ut illum amēs quam ipse amō",
+      "english": "for I don’t grant that you love him more than I do",
+      "source": "Cic. Q. fr. 3.1.7"
+    },
+    {
+      "latin": "extrēmam hanc ōrō veniam (miserēre sorōris), quam mihi cum dederit cumulātam morte remittam",
+      "english": "this last favour I beg (pity your sister): when he has granted it, I shall repay it in full with my death",
+      "source": "Verg. A. 4.435–436"
+    }
+  ],
+  "related": [
+    "allow",
+    "give",
+    "assume",
+    "even-if",
+    "grant-money"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/concedo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: concedo</a> · <a href=\"https://logeion.uchicago.edu/venia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: venia</a>",
+    "Quotation from the Latinitas loci collection (loci-cicero-epistulae), checked against the editions named there. Vergil checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (11 November 2026); that edition reads <span lang=\"la\">dederit</span> in 436, where others read <span lang=\"la\">dederis</span>.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "id": "breath",
+  "english": "breath",
+  "pos": "noun",
+  "also": [
+    "breaths",
+    "breathing",
+    "take a breath",
+    "a deep breath",
+    "last breath",
+    "bad breath"
+  ],
+  "domain": "corpus",
+  "terms": [
+    {
+      "latin": "spīritus, spīritūs m.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "breath, breathing; a breath",
+      "evidence": [
+        "Cic. N.D. 2.136",
+        "Hor. Epod. 11.10: <span lang=\"la\">petītus īmō spīritus</span>, a sigh (Lewis &amp; Short)"
+      ],
+      "comment": "Breathing and the breath drawn: to breathe is <span lang=\"la\">spīritum dūcere</span> (also “to be alive”, Cic. Fam. 10.1.1), the last breath <span lang=\"la\">spīritus extrēmus</span>. Its other senses are a breeze, pride or spirit, and in Christian Latin the Holy Spirit."
+    },
+    {
+      "latin": "anima, animae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the breath, the air breathed in and out",
+      "evidence": [
+        "Ter. Ad. 324",
+        "Ter. Ph. 868: <span lang=\"la\">animam compressī</span>, I held my breath (Lewis &amp; Short)"
+      ],
+      "comment": "Lewis &amp; Short: <span lang=\"la\">anima</span> is the air breathed, <span lang=\"la\">spīritus</span> the breathing. So <span lang=\"la\">animam recipere</span>, to get one’s breath back, <span lang=\"la\">animam continēre</span>, to hold it (see hold one’s breath). Its other sense is the life or soul."
+    },
+    {
+      "latin": "hālitus, hālitūs m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "breath breathed out, its smell; steam",
+      "register": "in poetry and post-Augustan prose",
+      "evidence": [
+        "Plin. NH 21.142: <span lang=\"la\">ōris hālitus</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Bad breath is, in Pliny, <span lang=\"la\">animae gravitās</span> or <span lang=\"la\">ōris graveolentia</span> (M-O s.v. bad breath)."
+    },
+    {
+      "latin": "anhēlitus, anhēlitūs m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "panting, shortness of breath",
+      "evidence": [
+        "Plaut. As. 326–327: <span lang=\"la\">nōn vidēs mē ex cursūrā anhēlitum etiam dūcere?</span>",
+        "Cic. Off. 1.131 (Lewis &amp; Short)"
+      ],
+      "comment": "Out of breath (see pant)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Quid festīnās, mī Geta? Animam recipe.",
+      "english": "What’s the hurry, Geta? Catch your breath.",
+      "source": "Ter. Ad. 323–324"
+    },
+    {
+      "latin": "in pulmōnibus autem inest rāritās quaedam et adsimilis spongiīs mollitūdō ad hauriendum spīritum aptissima",
+      "english": "the lungs have a certain looseness, a softness like a sponge’s, made for drawing in breath",
+      "source": "Cic. N.D. 2.136"
+    },
+    {
+      "latin": "leō cum jacēret spīritum extrēmum trahēns",
+      "english": "when the lion lay drawing his last breath",
+      "source": "Phaedr. 1.21.3–4"
+    }
+  ],
+  "related": [
+    "breathe",
+    "air",
+    "pant",
+    "hold-ones-breath",
+    "let-me-catch-my-breath",
+    "lungs",
+    "phew"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/spiritus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: spiritus</a> · <a href=\"https://logeion.uchicago.edu/anima\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: anima</a> · <a href=\"https://logeion.uchicago.edu/halitus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: halitus</a> · <a href=\"https://logeion.uchicago.edu/anhelitus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: anhelitus</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. bad breath.",
+    "Quotations from the Latinitas loci collections (loci-terentius, loci-phaedrus), checked against the editions named there. Classical quotations checked against the Perseus and Latin Library texts."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

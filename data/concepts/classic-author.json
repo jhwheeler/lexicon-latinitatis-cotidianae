@@ -1,0 +1,64 @@
+{
+  "id": "classic-author",
+  "english": "classic",
+  "sense": "a model author of the first rank",
+  "pos": [
+    "noun",
+    "adjective"
+  ],
+  "also": [
+    "classics",
+    "a classic author",
+    "classical author",
+    "classical writer",
+    "the classics"
+  ],
+  "domain": "schola",
+  "terms": [
+    {
+      "latin": "scrīptor classicus",
+      "status": "recommended",
+      "period": "post-classical",
+      "gloss": "a classic author",
+      "evidence": [
+        "Gell. 19.8.15",
+        "Traupman 275",
+        "M-O s.v. classic, classical"
+      ],
+      "comment": "Gellius’s figure from the census: the <span lang=\"la\">classicī</span> were citizens of the first class, so a <span lang=\"la\">classicus scrīptor</span> is a first-class writer, set against a <span lang=\"la\">prōlētārius</span>, one of the lowest. Elsewhere <span lang=\"la\">classicus</span> means “of the fleet”, as <span lang=\"la\">classicī mīlitēs</span>, marines (Liv. 21.61.2). In modern Latin it is also “classical”, of Greek and Roman antiquity (Vives; M-O)."
+    },
+    {
+      "latin": "auctor, auctōris m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "an author, a writer whose word carries weight",
+      "evidence": [
+        "Cic. Att. 12.18: <span lang=\"la\">iī quōs nunc lēctitō auctōrēs</span> (Lewis &amp; Short)"
+      ],
+      "comment": "The writer of a work, and the authority one follows; the word for the authors one reads as models. First of all the originator or founder of anything (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "id est classicus adsiduusque aliquis scrīptor, nōn prōlētārius",
+      "english": "that is, some classic writer of standing, not one of the rabble",
+      "source": "Gell. 19.8.15"
+    }
+  ],
+  "related": [
+    "classic-lasting",
+    "book",
+    "latin-language"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/classicus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: classicus</a> · <a href=\"https://logeion.uchicago.edu/proletarius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: proletarius</a> · <a href=\"https://logeion.uchicago.edu/auctor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: auctor</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 275.",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. classic, classical.",
+    "Gellius checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

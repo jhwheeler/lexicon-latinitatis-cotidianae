@@ -1,0 +1,85 @@
+{
+  "id": "negotiate",
+  "english": "negotiate",
+  "pos": "verb",
+  "also": [
+    "negotiate terms",
+    "negotiate a deal",
+    "negotiate peace",
+    "negotiating",
+    "hold talks",
+    "strike a deal",
+    "bargain"
+  ],
+  "domain": "pecunia",
+  "also_under": [
+    "labor",
+    "res-publica"
+  ],
+  "terms": [
+    {
+      "latin": "agō cum aliquō dē aliquā rē",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "treat with someone about something, negotiate",
+      "grammar": "verb phrase: agō, agere, ēgī, āctum",
+      "evidence": [
+        "Caes. BG 1.13.3: <span lang=\"la\">Is ita cum Caesare ēgit</span>",
+        "Traupman 187: <span lang=\"la\">agere cum aliquō dē pāce</span>, to have peace negotiations with someone"
+      ],
+      "comment": "The plain classical way to say it (Lewis &amp; Short s.v. <span lang=\"la\">agō</span>): to negotiate peace, <span lang=\"la\">dē pāce agere</span>; to put forward terms, <span lang=\"la\">condiciōnēs ferre</span> (see propose). The talks themselves are <span lang=\"la\">colloquium</span> (see negotiation)."
+    },
+    {
+      "latin": "pacīscor, pacīscī, pactus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "bargain, settle terms, make a deal",
+      "evidence": [
+        "Plin. Ep. 3.12.1: <span lang=\"la\">sed jam nunc pacīscor</span>"
+      ],
+      "comment": "To bargain and come to terms (with long ī, de Vaan 452; see haggle, agreement); the deal made is <span lang=\"la\">pactum</span>."
+    },
+    {
+      "latin": "trānsigō, trānsigere, trānsēgī, trānsāctum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "settle, conclude (a deal)",
+      "evidence": [
+        "Cic. Fam. 13.14.2: <span lang=\"la\">negōtium</span> (Lewis &amp; Short)",
+        "M-O s.v. negotiate, after Milton (1674)"
+      ],
+      "comment": "Classically to carry business through to the end, to settle it: what one does once the negotiating is over; <span lang=\"la\">cum aliquō trānsigere</span>, to come to a settlement with someone (Lewis &amp; Short). M-O gives it for negotiating itself. Its other sense is to run through with a weapon (poetry and later prose)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Is ita cum Caesare ēgit: sī pācem populus Rōmānus cum Helvētiīs faceret, in eam partem itūrōs atque ibi futūrōs Helvētiōs ubi eōs Caesar cōnstituisset atque esse voluisset",
+      "english": "He negotiated with Caesar as follows: if the Roman people made peace with the Helvetii, they would go and stay wherever Caesar settled them and wished them to be",
+      "source": "Caes. BG 1.13.3"
+    },
+    {
+      "latin": "veniam ad cēnam, sed jam nunc pacīscor, sit expedīta sit parca",
+      "english": "I’ll come to dinner, but I’m setting my terms now: let it be quick, let it be frugal",
+      "source": "Plin. Ep. 3.12.1"
+    }
+  ],
+  "related": [
+    "negotiation",
+    "haggle",
+    "agreement",
+    "propose",
+    "contract"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/ago\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ago</a> · <a href=\"https://logeion.uchicago.edu/paciscor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: paciscor</a> · <a href=\"https://logeion.uchicago.edu/transigo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: transigo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 187, 358 (have peace negotiations with someone).",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. negotiate. Michiel de Vaan, <em>Etymological Dictionary of Latin and the other Italic Languages</em> (2008), p. 452.",
+    "Quotation from the Latinitas loci collection (loci-plinius), checked against the editions named there. Caesar checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (11 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

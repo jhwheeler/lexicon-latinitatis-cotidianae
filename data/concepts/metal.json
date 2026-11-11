@@ -1,0 +1,68 @@
+{
+  "id": "metal",
+  "english": "metal",
+  "pos": "noun",
+  "also": [
+    "metals",
+    "made of metal",
+    "metallic"
+  ],
+  "domain": "officina",
+  "also_under": [
+    "aedificatio"
+  ],
+  "terms": [
+    {
+      "latin": "metallum, metallī n.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a metal; a mine",
+      "evidence": [
+        "Verg. A. 8.445: <span lang=\"la\">aurī</span> (Lewis &amp; Short)",
+        "Plin. NH 33.96 (Lewis &amp; Short)",
+        "Traupman 345",
+        "M-O s.v. metal (Egger)"
+      ],
+      "comment": "Its first sense is a mine or quarry, and the convict’s work in one (<span lang=\"la\">damnātus in metallum</span>, Plin. Ep. 2.11.8); the metal dug from it is a sense of Vergil and Pliny (Lewis &amp; Short). Latin often names the metal instead: <span lang=\"la\">aes</span> for copper and bronze, <span lang=\"la\">ferrum</span> for iron and steel (see steel)."
+    },
+    {
+      "latin": "metallicus, metallica, metallicum",
+      "status": "alternative",
+      "period": "post-classical",
+      "gloss": "of metal, metallic",
+      "evidence": [
+        "Plin. NH 34.173 (Lewis &amp; Short)"
+      ],
+      "comment": "Pliny’s adjective; as a noun, a miner. Something made of metal is usually named by the metal: <span lang=\"la\">ferreus, aēneus, aureus</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "fērācem frūgum, oleī, vīnī, equōrum metallōrumque omnium generum",
+      "english": "rich in grain, oil, wine, horses and metals of every kind (of Spain)",
+      "source": "Plin. NH 37.203"
+    },
+    {
+      "latin": "Illud aēneum cum pistillō ejusdem metallī.",
+      "english": "That bronze one, with the pestle of the same metal.",
+      "source": "Vīv. Exerc. 15 (not classical)"
+    }
+  ],
+  "related": [
+    "steel",
+    "gold",
+    "sheet-metal",
+    "iron-rod"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/metallum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: metallum</a> · <a href=\"https://logeion.uchicago.edu/metallicus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: metallicus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 345, checked against the searchable text of the book.",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. metal.",
+    "Quotations from the Latinitas loci collections (loci-plinius, loci-vives), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

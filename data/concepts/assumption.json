@@ -1,0 +1,73 @@
+{
+  "id": "assumption",
+  "english": "assumption",
+  "sense": "something taken for granted",
+  "pos": "noun",
+  "also": [
+    "on the assumption that",
+    "make an assumption",
+    "a false assumption"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "hōc positō",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "on this assumption, this being taken as given",
+      "grammar": "ablative absolute of pōnō",
+      "evidence": [
+        "Cic. Div. 1.118: <span lang=\"la\">hōc autem positō atque concessō</span>"
+      ],
+      "comment": "Latin usually makes an assumption a verb: what one lays down (<span lang=\"la\">pōnere</span>) or takes (<span lang=\"la\">sūmere</span>) as given, with an accusative and infinitive (see assume). <span lang=\"la\">Positum sit</span>, let it be taken as given (Cic. Or. 14, Lewis &amp; Short)."
+    },
+    {
+      "latin": "sūmptiō, sūmptiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "an assumption, a premise (in an argument)",
+      "evidence": [
+        "Cic. Div. 2.108 (Lewis &amp; Short)"
+      ],
+      "comment": "Cicero’s Latin for the logicians’ λήμματα; a word of argument, not of conversation (see premise)."
+    },
+    {
+      "latin": "opīniō, opīniōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a belief held without proof, a supposition",
+      "evidence": [
+        "Cic. Fragm. Scaur. 7: <span lang=\"la\">apud hominēs barbarōs opīniō plūs valet saepe quam rēs ipsa</span> (Lewis &amp; Short)"
+      ],
+      "comment": "An assumption in the sense of a belief that may be wrong (see opinion)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "dēmus tibi istās duās sūmptiōnēs, ea quae λήμματα appellant dialecticī; sed nōs Latīnē loquī mālumus",
+      "english": "let us grant you those two assumptions, which the logicians call lemmata; but we prefer to speak Latin",
+      "source": "Cic. Div. 2.108 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "hōc autem positō atque concessō",
+      "english": "but once this is assumed and granted",
+      "source": "Cic. Div. 1.118"
+    }
+  ],
+  "related": [
+    "assume",
+    "premise",
+    "suppose",
+    "opinion"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/pono\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pono</a> · <a href=\"https://logeion.uchicago.edu/sumptio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sumptio</a> · <a href=\"https://logeion.uchicago.edu/opinio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: opinio</a>",
+    "Cicero (Div. 1.118) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> for the record assume (9 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

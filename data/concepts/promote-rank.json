@@ -1,0 +1,89 @@
+{
+  "id": "promote-rank",
+  "english": "promote",
+  "sense": "raise to a higher rank or post",
+  "pos": "verb",
+  "also": [
+    "promotion",
+    "get a promotion",
+    "be promoted",
+    "promoted",
+    "move up"
+  ],
+  "domain": "labor",
+  "terms": [
+    {
+      "latin": "prōvehō, prōvehere, prōvexī, prōvectum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "advance, promote",
+      "evidence": [
+        "Liv. 39.40.5: <span lang=\"la\">ad summōs honōrēs aliōs scientia jūris … prōvexit</span>",
+        "Cic. Phil. 13.24: <span lang=\"la\">ecquō tē tua virtūs prōvexisset?</span>"
+      ],
+      "comment": "To carry forward, and so to raise someone to a higher post (Lewis &amp; Short). In the passive it is also to sail out, and to be carried away (<span lang=\"la\">longius prōvehī</span>, to go too far)."
+    },
+    {
+      "latin": "prōmoveō, prōmovēre, prōmōvī, prōmōtum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "promote (to a post)",
+      "evidence": [
+        "Plin. Ep. 7.31.3: <span lang=\"la\">prōmōtus ad amplissimās prōcūrātiōnēs</span> (Lewis &amp; Short)",
+        "Traupman 187: <span lang=\"la\">ad (in) ampliōrem gradum prōmovēre</span>, promote to a higher rank"
+      ],
+      "comment": "In this sense post-Augustan (Curtius, Pliny, Suetonius); classically to move forward, push on (Caes. BC 2.11, Lewis &amp; Short).",
+      "notes": [
+        "short-o"
+      ]
+    },
+    {
+      "latin": "prōmōtiō, prōmōtiōnis f.",
+      "status": "alternative",
+      "period": "late",
+      "gloss": "promotion (the noun)",
+      "evidence": [
+        "Traupman 187",
+        "Lampr. Diadum. 2 (Lewis &amp; Short)"
+      ],
+      "comment": "Late Latin (Lewis &amp; Short); classical Latin uses the verb: <span lang=\"la\">prōvectus est</span>, he was promoted."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ad summōs honōrēs aliōs scientia jūris, aliōs ēloquentia, aliōs glōria mīlitāris prōvexit",
+      "english": "some men were raised to the highest offices by their knowledge of law, some by their eloquence, some by their fame as soldiers",
+      "source": "Liv. 39.40.5"
+    },
+    {
+      "latin": "ecquō tē tua virtūs prōvexisset, ecquō genus vītae?",
+      "english": "how far would your own merit have got you, or your way of life?",
+      "source": "Cic. Phil. 13.24"
+    }
+  ],
+  "related": [
+    "job",
+    "manager",
+    "employer",
+    "promote-foster"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/proveho\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: proveho</a> · <a href=\"https://logeion.uchicago.edu/promoveo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: promoveo</a> · <a href=\"https://logeion.uchicago.edu/promotio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: promotio</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 187, 365 (promote; promotion).",
+    "Livy and Cicero checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (11 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  },
+  "notes": {
+    "short-o": {
+      "form": "prōmoveō",
+      "claim": "short o in the present stem",
+      "against": "Lewis &amp; Short <span lang=\"la\">prōmōveō</span>",
+      "html": "The simple verb is <span lang=\"la\">mŏveō</span> in Lewis &amp; Short; the long <span lang=\"la\">ō</span> belongs to the perfect <span lang=\"la\">mōvī</span> and the participle <span lang=\"la\">mōtus</span>, and the compound keeps the short vowel of the present."
+    }
+  }
+}

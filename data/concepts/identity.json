@@ -1,0 +1,67 @@
+{
+  "id": "identity",
+  "english": "identity",
+  "sense": "who someone is",
+  "pos": "noun",
+  "also": [
+    "true identity",
+    "mistaken identity",
+    "hide one’s identity",
+    "false identity"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "quis sit",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "who someone is",
+      "grammar": "indirect question, with the subjunctive",
+      "comment": "Latin asks the question instead of naming the thing: <span lang=\"la\">nēmō scit quis sit</span>, no one knows his identity. For what someone is called, see name."
+    },
+    {
+      "latin": "persōna, persōnae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the character one presents; a person",
+      "evidence": [
+        "Cic. Clu. 125: <span lang=\"la\">quī suppositā persōnā falsum testāmentum obsignandum cūrāverit</span> (M-O s.v. identity)"
+      ],
+      "comment": "Literally an actor’s mask, then a role or character, and so a person (Lewis &amp; Short). <span lang=\"la\">Suppositā persōnā</span>, under a false identity."
+    },
+    {
+      "latin": "identitās, identitātis f.",
+      "status": "alternative",
+      "period": "medieval",
+      "gloss": "sameness; identity",
+      "evidence": [
+        "Traupman 331",
+        "M-O s.v. identity"
+      ],
+      "comment": "Not in Lewis &amp; Short. Morgan–Owens marks it medieval and notes that it means being the same, as in Dante’s <span lang=\"la\">inalterābilis locūtiōnis identitās</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "et dīxī mihi, ‘tū quis es?’ et respondī, ‘homō’",
+      "english": "and I said to myself, “Who are you?” and answered, “A man.”",
+      "source": "Aug. Conf. 10.6.9"
+    }
+  ],
+  "related": [
+    "identity-card",
+    "name",
+    "who"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/persona\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: persona</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 331, checked against the searchable text of the book.",
+    "Morgan–Owens, <em>Adumbratio</em>, s.v. identity.",
+    "Quotations from the Latinitas loci collections (loci-augustinus), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

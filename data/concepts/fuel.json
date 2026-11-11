@@ -1,0 +1,89 @@
+{
+  "id": "fuel",
+  "english": "fuel",
+  "pos": "noun",
+  "also": [
+    "fuels",
+    "firewood",
+    "fuel for the fire",
+    "fuel tank"
+  ],
+  "domain": "vectura",
+  "also_under": [
+    "domus"
+  ],
+  "terms": [
+    {
+      "latin": "alimentum, alimentī n.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "fuel (of a fire); food",
+      "evidence": [
+        "Ov. Met. 14.532: <span lang=\"la\">alimentaque cētera flammae</span> (Lewis &amp; Short)",
+        "Sen. Ep. 14.5: <span lang=\"la\">alimentīs ignium</span> (Lewis &amp; Short, s.v. molestus)"
+      ],
+      "comment": "Its first sense is food, nourishment; for fuel it takes a genitive, <span lang=\"la\">ignis</span> or <span lang=\"la\">flammae</span>, and in the poets is always plural (Lewis &amp; Short). Morgan–Owens (s.v. fuel) has the plural for the fuel of machines too (Egger)."
+    },
+    {
+      "latin": "lignum, lignī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "firewood (in the plural)",
+      "evidence": [
+        "Plin. Ep. 2.17.26: <span lang=\"la\">suggerunt affatim ligna proximae silvae</span>",
+        "Varro LL 6.66"
+      ],
+      "comment": "The household fuel: <span lang=\"la\">ligna</span> are logs for the fire, as against <span lang=\"la\">māteria</span>, timber for building (Lewis &amp; Short, s.v. <span lang=\"la\">māteria</span>). See wood."
+    },
+    {
+      "latin": "māteria prōpulsōria, māteriae prōpulsōriae f.",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "fuel (for engines)",
+      "evidence": [
+        "Traupman 216, 319"
+      ],
+      "comment": "Traupman’s phrase; Egger has <span lang=\"la\">liquor prōpulsōrius</span> (M-O s.v. fuel). For a car, petrol is <span lang=\"la\">benzīnum</span> (see petrol)."
+    },
+    {
+      "latin": "fōmes, fōmitis m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "kindling, tinder",
+      "evidence": [
+        "Verg. A. 1.176 (Lewis &amp; Short)"
+      ],
+      "comment": "Dry stuff to catch a spark; in Christian Latin, figuratively, the tinder of sin."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "picem et cērās, alimentaque cētera flammae",
+      "english": "pitch and wax and everything else that feeds a flame",
+      "source": "Ov. Met. 14.532 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "suggerunt affatim ligna proximae silvae",
+      "english": "the nearby woods supply plenty of firewood",
+      "source": "Plin. Ep. 2.17.26"
+    }
+  ],
+  "related": [
+    "petrol",
+    "wood",
+    "fire",
+    "engine",
+    "kindle-a-fire"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/alimentum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: alimentum</a> · <a href=\"https://logeion.uchicago.edu/lignum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lignum</a> · <a href=\"https://logeion.uchicago.edu/materia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: materia</a> · <a href=\"https://logeion.uchicago.edu/fomes\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fomes</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 216, 319, checked against the searchable text of the book.",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. fuel.",
+    "Quotations from the Latinitas loci collections (loci-plinius), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

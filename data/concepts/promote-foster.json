@@ -1,0 +1,66 @@
+{
+  "id": "promote-foster",
+  "english": "promote",
+  "sense": "support and further (the arts, health, a cause)",
+  "pos": "verb",
+  "also": [
+    "foster",
+    "further",
+    "support",
+    "encourage the growth of",
+    "promote health",
+    "promote the arts"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "foveō, fovēre, fōvī, fōtum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "support, favour, foster",
+      "evidence": [
+        "Plin. Ep. 8.12.1: <span lang=\"la\">studiōsōs amat fovet prōvehit</span>",
+        "Traupman 365: promote (the arts, etc.)"
+      ],
+      "comment": "Literally to keep warm, as a bird its eggs or a mother her child, and so to cherish and support (Lewis &amp; Short): <span lang=\"la\">studia fovēre</span>, to promote learning."
+    },
+    {
+      "latin": "alō, alere, aluī, altum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "nourish, foster",
+      "evidence": [
+        "Cic. Tusc. 1.4: <span lang=\"la\">honōs alit artēs</span>"
+      ],
+      "comment": "To feed, rear, and so to make something grow (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Colit studia, studiōsōs amat fovet prōvehit",
+      "english": "He cultivates learning, and loves, supports and promotes those who pursue it",
+      "source": "Plin. Ep. 8.12.1"
+    },
+    {
+      "latin": "honōs alit artēs, omnēsque incenduntur ad studia glōriā",
+      "english": "honour feeds the arts, and everyone is fired to study by the hope of glory",
+      "source": "Cic. Tusc. 1.4"
+    }
+  ],
+  "related": [
+    "encourage",
+    "help",
+    "promote-rank",
+    "support"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/foveo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: foveo</a> · <a href=\"https://logeion.uchicago.edu/alo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: alo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 365 (promote: the arts).",
+    "Pliny and Cicero checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (11 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

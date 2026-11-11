@@ -1,0 +1,71 @@
+{
+  "id": "finance",
+  "english": "finance",
+  "sense": "pay for, provide the money for",
+  "pos": "verb",
+  "also": [
+    "pay for",
+    "bankroll",
+    "financed",
+    "financing",
+    "self-financed",
+    "at one’s own expense"
+  ],
+  "domain": "pecunia",
+  "terms": [
+    {
+      "latin": "sūmptum suppeditāre",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "supply the money (for), finance",
+      "grammar": "verb phrase: suppeditō, suppeditāre, first conjugation, with the dative of the person or thing paid for",
+      "evidence": [
+        "Cic. Off. 2.42: <span lang=\"la\">quae perpetuōs sūmptūs suppeditet</span>",
+        "Plaut. As. 4.2.10 (old numbering): <span lang=\"la\">luxuriae sūmptūs suppeditāre</span> (Lewis &amp; Short)"
+      ],
+      "comment": "<span lang=\"la\">Suppeditāre</span> is to supply in plenty, frequent in Cicero (Lewis &amp; Short); with <span lang=\"la\">sūmptum</span> or <span lang=\"la\">sūmptūs</span>, to meet the costs."
+    },
+    {
+      "latin": "suō sūmptū",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "at one’s own expense, self-financed",
+      "grammar": "ablative phrase",
+      "evidence": [
+        "Caes. BG 1.18.5",
+        "Traupman 311: <span lang=\"la\">prīvātō sūmptū</span>, at one’s own expense"
+      ],
+      "comment": "Paid for by the state, <span lang=\"la\">pūblicō sūmptū</span> (Liv. 40.38.6, Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "pecūniae nōn quaerendae sōlum ratiō est, vērum etiam collocandae, quae perpetuōs sūmptūs suppeditet, nec sōlum necessāriōs, sed etiam līberālēs",
+      "english": "there is a method not only of making money but of investing it, so that it pays for one’s expenses year after year, the generous ones as well as the necessary",
+      "source": "Cic. Off. 2.42"
+    },
+    {
+      "latin": "magnum numerum equitātūs suō sūmptū semper alere et circum sē habēre",
+      "english": "that he always kept a large body of cavalry about him at his own expense",
+      "source": "Caes. BG 1.18.5"
+    }
+  ],
+  "related": [
+    "expense",
+    "finances",
+    "pay",
+    "investment",
+    "grant-money"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/suppedito\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: suppedito</a> · <a href=\"https://logeion.uchicago.edu/sumptus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sumptus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 311 (at one’s own expense).",
+    "Cicero and Caesar checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (11 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

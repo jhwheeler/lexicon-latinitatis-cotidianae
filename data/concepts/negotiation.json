@@ -1,0 +1,67 @@
+{
+  "id": "negotiation",
+  "english": "negotiation",
+  "pos": "noun",
+  "also": [
+    "negotiations",
+    "talks",
+    "peace talks",
+    "under negotiation",
+    "parley"
+  ],
+  "domain": "pecunia",
+  "also_under": [
+    "labor",
+    "res-publica"
+  ],
+  "terms": [
+    {
+      "latin": "colloquium, colloquiī n.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "talks, a meeting to negotiate",
+      "evidence": [
+        "Caes. BG 1.34.1: <span lang=\"la\">aliquem locum medium utrīsque conloquiō</span>",
+        "Cic. Phil. 12.26: <span lang=\"la\">in Antōniī congressum colloquiumque veniendum est</span> (Lewis &amp; Short)"
+      ],
+      "comment": "A conversation, and in Caesar the meeting of two leaders to treat with each other (Lewis &amp; Short). To go into talks, <span lang=\"la\">in colloquium venīre</span>; to ask for them, <span lang=\"la\">colloquium petere</span>; to negotiate is <span lang=\"la\">agere cum aliquō</span> (see negotiate)."
+    },
+    {
+      "latin": "pactiō, pactiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "bargaining; the deal made",
+      "evidence": [
+        "Cic. Rosc. Com. 34: <span lang=\"la\">pactiōnem facere dē aliquā rē</span> (Lewis &amp; Short)"
+      ],
+      "comment": "The making of an agreement and the agreement made (see agreement); also, in a bad sense, an underhand bargain (Cic. Verr. 2.1.17)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "quī ab eō postulārent utī aliquem locum medium utrīsque conloquiō dēligeret: velle sēsē dē rē pūblicā et summīs utrīusque rēbus cum eō agere",
+      "english": "to ask him to choose some place halfway between them for talks: he wanted to negotiate with him about public affairs and matters of the highest importance to them both",
+      "source": "Caes. BG 1.34.1"
+    },
+    {
+      "latin": "Diēs conloquiō dictus est ex eō diē quīntus.",
+      "english": "The talks were fixed for the fifth day from then.",
+      "source": "Caes. BG 1.42"
+    }
+  ],
+  "related": [
+    "negotiate",
+    "agreement",
+    "haggle"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/colloquium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: colloquium</a> · <a href=\"https://logeion.uchicago.edu/pactio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pactio</a>",
+    "Caesar checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (11 November 2026); the quotations keep that edition’s spelling <span lang=\"la\">conloquium</span>.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "id": "illustrate-pictures",
+  "english": "illustrate",
+  "sense": "put pictures in a book",
+  "pos": "verb",
+  "also": [
+    "illustrated",
+    "illustrated book",
+    "illustrator",
+    "illustrations (in a book)"
+  ],
+  "domain": "schola",
+  "terms": [
+    {
+      "latin": "imāginibus ōrnāre",
+      "status": "recommended",
+      "period": "modern",
+      "gloss": "to illustrate (with pictures)",
+      "grammar": "phrase: ōrnō, ōrnāre, ōrnāvī, ōrnātum with the ablative",
+      "evidence": [
+        "M-O s.v. magazine, citing Egger: <span lang=\"la\">ephemeris … imāginibus ōrnāta</span>"
+      ],
+      "comment": "A plain description in classical words: to furnish with pictures. The illustrator is a <span lang=\"la\">pictor</span>."
+    },
+    {
+      "latin": "effigiēs pingere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "to paint pictures (of what a book describes)",
+      "grammar": "phrase",
+      "evidence": [
+        "Plin. NH 25.8"
+      ],
+      "comment": "Pliny’s words for the Greek herbalists who painted the plants in their books."
+    },
+    {
+      "latin": "illūstrō, illūstrāre, illūstrāvī, illūstrātum",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "to illustrate (a book)",
+      "evidence": [
+        "M-O s.v. illustration, citing Desfontaines (1798): <span lang=\"la\">quī iconibus aut dēscrīptiōnibus rem herbāriam illūstrārunt</span>"
+      ],
+      "comment": "Classically to make clear or famous (see illustrate, make clear); in the botanists the pictures “shed light” on the plants. The sense “put pictures in” follows the modern languages.",
+      "notes": [
+        "illustro"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "pinxēre namque effigiēs herbārum atque ita subscrīpsēre effectūs.",
+      "english": "for they painted pictures of the plants and wrote their properties underneath.",
+      "source": "Plin. NH 25.8"
+    }
+  ],
+  "notes": {
+    "illustro": {
+      "form": "illūstrō",
+      "claim": "long u",
+      "against": "Lewis &amp; Short leaves it unmarked",
+      "html": "From <span lang=\"la\">illūstris</span>, of the family of <span lang=\"la\">lūx</span>: de Vaan 355, s.v. <span lang=\"la\">lūx</span>, <span lang=\"la\">illūstris</span> “bright, famous”."
+    }
+  },
+  "related": [
+    "picture",
+    "illustrate-explain",
+    "book",
+    "draw-picture"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/orno\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: orno</a> · <a href=\"https://logeion.uchicago.edu/effigies\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: effigies</a> · <a href=\"https://logeion.uchicago.edu/illustro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: illustro</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. illustration; magazine, periodical, journal.",
+    "Michiel de Vaan, <em>Etymological Dictionary of Latin and the other Italic Languages</em> (2008), p. 355.",
+    "Quotations of classical authors checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026) and given in the house spelling (macrons, consonantal j)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

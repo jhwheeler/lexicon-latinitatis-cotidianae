@@ -1,0 +1,81 @@
+{
+  "id": "finances",
+  "english": "finances",
+  "sense": "one’s money matters",
+  "pos": "noun",
+  "also": [
+    "finance",
+    "personal finances",
+    "my finances",
+    "money matters",
+    "public finances",
+    "household finances"
+  ],
+  "domain": "pecunia",
+  "terms": [
+    {
+      "latin": "rēs familiāris, reī familiāris f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "one’s private means, personal finances",
+      "evidence": [
+        "Caes. BG 1.18.4: <span lang=\"la\">suam rem familiārem auxisse</span>",
+        "Traupman 359: personal finances"
+      ],
+      "comment": "The household’s property and means (Lewis &amp; Short, s.v. <span lang=\"la\">familiāris</span>); Traupman gives it for personal finances. To put one’s finances in order, <span lang=\"la\">rem familiārem cōnstituere</span>."
+    },
+    {
+      "latin": "rēs pecūniāria, reī pecūniāriae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "money matters",
+      "evidence": [
+        "Cic. Rosc. Am. 117: <span lang=\"la\">reī pecūniāriae socius</span> (Lewis &amp; Short)",
+        "Traupman 91: <span lang=\"la\">sollicitor dē rē pecūniāriā</span>"
+      ],
+      "comment": "Money as a matter of business, as against property in general; the adjective is <span lang=\"la\">pecūniārius</span>, financial (see economic)."
+    },
+    {
+      "latin": "aerārium, aerāriī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the public finances, the treasury",
+      "evidence": [
+        "M-O s.v. finances: public finances (Cic., Tac.)"
+      ],
+      "comment": "Properly the state treasury in the temple of Saturn (see fund)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "His rēbus et suam rem familiārem auxisse et facultātēs ad largiendum magnās comparāsse",
+      "english": "By these means he had both enlarged his own fortune and got together great resources for bribery",
+      "source": "Caes. BG 1.18.4"
+    },
+    {
+      "latin": "Ūnō verbō, sollicitor dē rē pecūniāriā.",
+      "english": "In a word, I’m worried about my finances.",
+      "source": "Traupman 91"
+    }
+  ],
+  "related": [
+    "money",
+    "budget",
+    "economic",
+    "resources",
+    "finance",
+    "fund"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/familiaris\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: familiaris</a> · <a href=\"https://logeion.uchicago.edu/pecuniarius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pecuniarius</a> · <a href=\"https://logeion.uchicago.edu/aerarium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aerarium</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 91 (dialogue), 359 (personal finances).",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. finances.",
+    "Caesar checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (11 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

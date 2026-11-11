@@ -1,0 +1,76 @@
+{
+  "id": "protest-object",
+  "english": "protest",
+  "sense": "object loudly",
+  "pos": [
+    "verb",
+    "noun"
+  ],
+  "also": [
+    "protests",
+    "in protest",
+    "outcry",
+    "cry out against"
+  ],
+  "also_under": [
+    "verba"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "reclāmō, reclāmāre, reclāmāvī, reclāmātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "protest, cry out against",
+      "grammar": "intransitive; with the dative of what is protested (ōrātiōnī), often impersonal passive (reclāmātum est) or ablative absolute (reclāmantibus omnibus)",
+      "evidence": [
+        "Liv. 3.21.3: <span lang=\"la\">reclāmantibus cōnsulibus</span>",
+        "Cic. Dom. 10: <span lang=\"la\">ab ūniversō senātū reclāmātum est</span> (Lewis &amp; Short)"
+      ],
+      "comment": "To shout against, contradict loudly: of a theatre, a senate, a whole province (Lewis &amp; Short). The noun <span lang=\"la\">reclāmātiō</span> is rare (Cic. Phil. 4.5)."
+    },
+    {
+      "latin": "intercessiō, intercessiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a formal protest: a tribune’s veto",
+      "evidence": [
+        "Caes. BC 1.7 (Lewis &amp; Short)",
+        "Traupman 181: veto"
+      ],
+      "comment": "The tribune’s stepping in to block a decree or a law; to make it is <span lang=\"la\">intercēdere</span> with the dative (Traupman 181). It also means going surety for someone (Lewis &amp; Short)."
+    },
+    {
+      "latin": "prōtestor, prōtestārī, prōtestātus sum",
+      "status": "avoid",
+      "period": "post-classical",
+      "gloss": "declare publicly, bear witness",
+      "evidence": [
+        "Quint. Decl. 4.21 (Lewis &amp; Short)"
+      ],
+      "comment": "A false friend: post-Augustan, “declare, testify” (Lewis &amp; Short), the older sense of English protest, not “object”."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "tribūnī reclāmantibus cōnsulibus refectī",
+      "english": "the tribunes were re-elected over the consuls’ protests",
+      "source": "Liv. 3.21.3"
+    }
+  ],
+  "related": [
+    "protest-demonstration",
+    "mind-object",
+    "attack-criticize"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/reclamo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: reclamo</a> · <a href=\"https://logeion.uchicago.edu/reclamatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: reclamatio</a> · <a href=\"https://logeion.uchicago.edu/intercessio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: intercessio</a> · <a href=\"https://logeion.uchicago.edu/protestor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: protestor</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 181, checked against the searchable text of the book (11 November 2026).",
+    "Livy 3.21, checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

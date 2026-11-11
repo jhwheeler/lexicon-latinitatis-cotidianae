@@ -1,0 +1,69 @@
+{
+  "id": "context",
+  "english": "context",
+  "sense": "the words around a passage",
+  "pos": "noun",
+  "also": [
+    "contexts",
+    "in context",
+    "out of context",
+    "from the context"
+  ],
+  "also_under": [
+    "schola"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "contextus, contextūs m.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "the connection, the run of a text; context",
+      "evidence": [
+        "Cic. Part. 82: <span lang=\"la\">in tōtō quasi contextū ōrātiōnis</span>",
+        "Quint. 11.2.28: <span lang=\"la\">verbōrum</span> (Lewis &amp; Short)",
+        "M-O s.v. circumstance: context (<span lang=\"la\">verbōrum contextus</span>)"
+      ],
+      "comment": "A joining together: the coherence of a speech or a system (Cic. Fin. 5.83), the run of the words (very frequent in Quintilian). Cicero softens it with <span lang=\"la\">quasi</span>. It is not the circumstances of an event, which Latin calls <span lang=\"la\">rēs</span> or <span lang=\"la\">tempora</span>."
+    },
+    {
+      "latin": "superior et īnferior scrīptūra",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "what is written before and after (a passage)",
+      "grammar": "phrase",
+      "evidence": [
+        "Cic. Inv. 2.117"
+      ],
+      "comment": "Cicero’s way of saying that the context settles an ambiguous word."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "deinde ex superiōre et ex īnferiōre scrīptūrā docendum id, quod quaerātur, fierī perspicuum.",
+      "english": "next, one must show from what is written before and after that the point in question becomes clear.",
+      "source": "Cic. Inv. 2.117"
+    },
+    {
+      "latin": "sed in tōtō quasi contextū ōrātiōnis haec erunt inlūstranda maximē",
+      "english": "but in the whole fabric, so to speak, of the speech these points will have to be brought out most of all",
+      "source": "Cic. Part. 82"
+    }
+  ],
+  "related": [
+    "text-written",
+    "phrase",
+    "word"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/contextus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: contextus</a> · <a href=\"https://logeion.uchicago.edu/scriptura\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: scriptura</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. circumstance: context.",
+    "Quotations of classical authors checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026) and given in the house spelling (macrons, consonantal j).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

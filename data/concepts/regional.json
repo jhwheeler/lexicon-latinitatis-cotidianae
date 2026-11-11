@@ -1,0 +1,63 @@
+{
+  "id": "regional",
+  "english": "regional",
+  "pos": "adjective",
+  "also": [
+    "regionally",
+    "local (of a region)"
+  ],
+  "also_under": [
+    "verba"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "regiōnis",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "of the region",
+      "grammar": "genitive of regiō, regiōnis f., with a demonstrative: ējus regiōnis, eārum regiōnum",
+      "evidence": [
+        "Caes. BG 5.20.1: <span lang=\"la\">firmissima eārum regiōnum cīvitās</span>"
+      ],
+      "comment": "Latin uses the genitive of the noun where English has an adjective: the strongest people of that region. For the region itself, see area."
+    },
+    {
+      "latin": "vernāculus, vernācula, vernāculum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "native, of the place",
+      "evidence": [
+        "Varr. LL 5.77: <span lang=\"la\">aquātilium vocābula partim sunt vernācula partim peregrīna</span> (Lewis &amp; Short)",
+        "M-O s.v. local"
+      ],
+      "comment": "Home-grown, native, as against foreign (Lewis &amp; Short); Morgan–Owens gives <span lang=\"la\">ferculum vernāculum</span> for a regional dish. Its first sense is of a slave born in the house, <span lang=\"la\">verna</span>."
+    },
+    {
+      "latin": "regiōnālis, regiōnāle",
+      "status": "alternative",
+      "period": "late",
+      "gloss": "regional, provincial",
+      "evidence": [
+        "Aug. Bapt. 7.53: <span lang=\"la\">concilium regiōnāle</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Augustine’s word for a provincial council of the Church, as against a plenary one (Lewis &amp; Short)."
+    }
+  ],
+  "related": [
+    "area",
+    "province",
+    "county",
+    "national"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/regio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: regio</a> · <a href=\"https://logeion.uchicago.edu/vernaculus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vernaculus</a> · <a href=\"https://logeion.uchicago.edu/regionalis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: regionalis</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. local.",
+    "Caesar, <em>Gallic War</em> 5.20, checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

@@ -11,23 +11,52 @@
   "domain": "urbs",
   "terms": [
     {
-      "latin": "chartula crēditōria",
+      "latin": "tabella tribūtāria",
       "status": "recommended",
+      "period": "modern",
+      "evidence": [
+        "Traupman 213, 298",
+        "Cic. Verr. 2.4.148: <span lang=\"la\">tabellae tribūtāriae</span>, letters of credit (Lewis &amp; Short)"
+      ],
+      "comment": "Traupman’s word, and a well-founded one: Cicero’s <span lang=\"la\">tabellae tribūtāriae</span> are letters of credit. Traupman prints the adjective with a long first i; Lewis &amp; Short has <span lang=\"la\">tribūtārius</span>, from <span lang=\"la\">tribūtum</span>."
+    },
+    {
+      "latin": "lāmella crēditōria",
+      "status": "alternative",
+      "period": "modern",
+      "evidence": [
+        "M-O s.v. credit card"
+      ]
+    },
+    {
+      "latin": "chartula crēditōria",
+      "status": "alternative",
       "period": "ours",
-      "comment": "Our description."
+      "comment": "Our earlier description, before Traupman’s word was noticed (Jack, 11 November 2026)."
     }
   ],
   "related": [
-    "pay",
+    "cash",
+    "debit-card",
     "money",
-    "cash"
+    "pay",
+    "pay-by-card"
   ],
   "sources": [
-    "Our description."
+    "<a href=\"https://logeion.uchicago.edu/tabella\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tabella</a> · <a href=\"https://logeion.uchicago.edu/tributarius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tributarius</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 213, 298.",
+    "David Morgan and Patrick Owens, <em>Adumbratio Lexici Anglico-Latini</em>, s.v. credit card."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-11",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "Praesentāriam pecūniam nōn habeō. Ecce autem meam tabellam tribūtāriam.",
+      "english": "I don’t have the cash. But here’s my credit card.",
+      "source": "Traupman 213"
+    }
+  ]
 }

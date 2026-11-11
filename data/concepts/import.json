@@ -1,0 +1,91 @@
+{
+  "id": "import",
+  "english": "import",
+  "pos": [
+    "verb",
+    "noun"
+  ],
+  "also": [
+    "imports",
+    "importing",
+    "importation",
+    "imported",
+    "importer",
+    "imported goods"
+  ],
+  "domain": "pecunia",
+  "terms": [
+    {
+      "latin": "importō, importāre, importāvī, importātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "bring in from abroad, import",
+      "evidence": [
+        "Caes. BG 4.2.6: <span lang=\"la\">vīnum omnīnō ad sē importārī nōn patiuntur</span>",
+        "Caes. BG 5.12.5: <span lang=\"la\">aere ūtuntur importātō</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Also, figuratively, to bring on something unwelcome: <span lang=\"la\">calamitātem alicui importāre</span> (Cic. Sest. 146, Lewis &amp; Short). It never means “matter” or “be important”: that is <span lang=\"la\">rēfert</span> or <span lang=\"la\">interest</span> (see important)."
+    },
+    {
+      "latin": "invehō, invehere, invexī, invectum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "carry in, bring in (goods)",
+      "evidence": [
+        "Plin. NH 29.24: <span lang=\"la\">peregrīnās mercēs</span> (Lewis &amp; Short)",
+        "M-O s.v. import (foreign goods)"
+      ],
+      "comment": "To carry in by cart or ship. In the passive it is also to ride or sail in, and <span lang=\"la\">invehī in aliquem</span> is to attack someone in words (Lewis &amp; Short)."
+    },
+    {
+      "latin": "invectiō, invectiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "import, importing (the noun)",
+      "evidence": [
+        "Cic. Off. 2.13"
+      ],
+      "comment": "Cicero’s noun, beside <span lang=\"la\">exportātiō</span> (see export). Later Latin also used it for an invective (Lewis &amp; Short)."
+    },
+    {
+      "latin": "adventīcius, adventīcia, adventīcium",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "foreign, brought in from outside",
+      "evidence": [
+        "Cic. Rep. 2.7: <span lang=\"la\">mercēs … adventīciae</span>"
+      ],
+      "comment": "Coming from outside, foreign; very frequent in Cicero, rare elsewhere (Lewis &amp; Short): imported goods are <span lang=\"la\">mercēs adventīciae</span>. Its other senses are “out of the ordinary” and, of money, “come by without one’s own labour”, by inheritance or gift (<span lang=\"la\">pecūnia adventīcia</span>, Cic. Rab. Post. 17)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Vīnum omnīnō ad sē importārī nōn patiuntur, quod eā rē ad labōrem ferendum remollēscere hominēs atque effēminārī arbitrantur.",
+      "english": "They do not allow wine to be imported at all, because they think it makes men soft and unmanly in bearing hardship.",
+      "source": "Caes. BG 4.2.6"
+    },
+    {
+      "latin": "inportantur nōn mercēs sōlum adventīciae sed etiam mōrēs",
+      "english": "it is not only foreign goods that are imported, but foreign ways as well",
+      "source": "Cic. Rep. 2.7"
+    }
+  ],
+  "related": [
+    "export",
+    "merchant",
+    "business",
+    "goods",
+    "important"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/importo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: importo</a> · <a href=\"https://logeion.uchicago.edu/inveho\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: inveho</a> · <a href=\"https://logeion.uchicago.edu/invectio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: invectio</a> · <a href=\"https://logeion.uchicago.edu/adventicius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: adventicius</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. import (foreign goods).",
+    "Caesar and Cicero checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (11 November 2026); the quotation from the <em>Republic</em> keeps that edition’s spelling <span lang=\"la\">inportantur</span>.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

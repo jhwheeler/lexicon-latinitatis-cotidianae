@@ -1,0 +1,112 @@
+{
+  "id": "yes-no-question",
+  "english": "is it …?",
+  "sense": "yes-or-no questions",
+  "pos": "phrase",
+  "also": [
+    "isn’t it?",
+    "are you …?",
+    "do you …?",
+    "did you …?",
+    "have you …?",
+    "surely not?",
+    "yes-or-no question"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "-ne",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "(asks a question) is it …? do you …?",
+      "grammar": "enclitic particle, joined to the first word of the question",
+      "evidence": [
+        "Plaut. Trin. 50: <span lang=\"la\">Valēn'? valuistīn'?</span>",
+        "Catull. 9.3: <span lang=\"la\">vēnistīne domum ad tuōs penātēs?</span>"
+      ],
+      "comment": "The open question, expecting neither yes nor no; it goes on the word asked about, most often the verb (Lewis &amp; Short). In speech it is worn down to <span lang=\"la\">-n'</span>. The answer repeats the verb, <span lang=\"la\">Valeō</span> (see “yes”); in speech the particle may be left off and the voice alone ask (<span lang=\"la\">tū hīc erās?</span>, Ter. Ad. 901)."
+    },
+    {
+      "latin": "nōnne",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "isn’t it? don’t you? (expecting yes)",
+      "grammar": "adverb, at the head of the question",
+      "evidence": [
+        "Plaut. Amph. 406: <span lang=\"la\">nōnne ego nunc stō ante aedēs nostrās?</span>",
+        "Cic. N. D. 3.89: <span lang=\"la\">nōnne animadvertis?</span> (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "num",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "surely not? (expecting no); whether",
+      "grammar": "adverb, at the head of the question",
+      "evidence": [
+        "Ter. Ph. 846: <span lang=\"la\">Num tū intellegis hīc quid narret?</span>",
+        "Hor. S. 1.9.6: <span lang=\"la\">numquid vīs?</span>"
+      ],
+      "comment": "<span lang=\"la\">Numquid vīs?</span>, “anything else?”, is the everyday way of taking leave (Lewis &amp; Short). In an indirect question <span lang=\"la\">num</span> is “whether”."
+    },
+    {
+      "latin": "an",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "or …?; (opening a question) so …? can it be that …?",
+      "grammar": "conjunction",
+      "evidence": [
+        "Ter. Hec. 346: <span lang=\"la\">Quid ais? an vēnit Pamphilus?</span>"
+      ],
+      "comment": "Introduces the second half of a double question: <span lang=\"la\">utrum … an, -ne … an</span>, “is it this or that?” (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Valēn'? valuistīn'? — Valeō, et valuī rēctius.",
+      "english": "Are you well? Have you been well? — I’m well, and I’ve been better.",
+      "source": "Plaut. Trin. 50–50b"
+    },
+    {
+      "latin": "vēnistīne domum ad tuōs penātēs frātrēsque ūnanimōs anumque mātrem?",
+      "english": "have you come home to your own hearth, your loving brothers and your old mother?",
+      "source": "Catull. 9.3–4"
+    },
+    {
+      "latin": "Dīc mihi, aufūgistīne? — Era, factum.",
+      "english": "Tell me, did you run away? — Yes, mistress, I did.",
+      "source": "Ter. Eun. 850"
+    },
+    {
+      "latin": "Num tū intellegis hīc quid narret? — Num tū? — Nihil. — Tantundem ego.",
+      "english": "You don’t understand what he’s saying, do you? — Do you? — Not a word. — Nor I.",
+      "source": "Ter. Ph. 846"
+    },
+    {
+      "latin": "nōnne ego nunc stō ante aedēs nostrās? nōn mī est lanterna in manū?",
+      "english": "Am I not standing in front of our house? Haven’t I a lantern in my hand?",
+      "source": "Plaut. Amph. 406"
+    },
+    {
+      "latin": "Quid agitur, Aeschine? — Ehem, pater mī, tū hīc erās?",
+      "english": "How are things, Aeschinus? — Oh, father, you were here?",
+      "source": "Ter. Ad. 901"
+    }
+  ],
+  "related": [
+    "yes",
+    "there-is",
+    "which-question"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/ne\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ne</a> · <a href=\"https://logeion.uchicago.edu/nonne\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nonne</a> · <a href=\"https://logeion.uchicago.edu/num\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: num</a> · <a href=\"https://logeion.uchicago.edu/an\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: an</a>",
+    "Quotations from the Latinitas loci collections (loci-plautus, loci-catullus, loci-terentius, loci-horatius), checked against the editions named there.",
+    "Plautus and Terence checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026).",
+    "Citations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling, and have not been checked against an edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

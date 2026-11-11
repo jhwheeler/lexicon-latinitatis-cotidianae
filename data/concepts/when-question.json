@@ -1,0 +1,85 @@
+{
+  "id": "when-question",
+  "english": "when",
+  "sense": "when? (a question)",
+  "pos": "adverb",
+  "also": [
+    "when?",
+    "at what time"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "quandō",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "when?",
+      "grammar": "interrogative adverb, in direct and indirect questions",
+      "evidence": [
+        "Ter. Eun. 697: <span lang=\"la\">Quandō? — Hodiē.</span>",
+        "Cic. Fam. 16.18.3: <span lang=\"la\">tē quandō exspectēmus fac ut sciam</span>"
+      ],
+      "comment": "Asks for the time of a thing. The conjunction “when” (“when he came, …”) is a different record.",
+      "notes": [
+        "quando"
+      ]
+    },
+    {
+      "latin": "quam dūdum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "how long ago?",
+      "grammar": "phrase",
+      "evidence": [
+        "Ter. Eun. 697: <span lang=\"la\">Quam dūdum? — Modo.</span>"
+      ],
+      "comment": "See “how long ago?”; for the hour, “at what time?”."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Quandō? — Hodiē. — Quam dūdum? — Modo.",
+      "english": "When? — Today. — How long ago? — Just now.",
+      "source": "Ter. Eun. 697"
+    },
+    {
+      "latin": "crās tē vīctūrum, crās dīcis, Postume, semper: dīc mihi, crās istud, Postume, quandō venit?",
+      "english": "Tomorrow you will live, you always say, Postumus, tomorrow: tell me, Postumus, when does that tomorrow come?",
+      "source": "Mart. 5.58.1–2"
+    },
+    {
+      "latin": "tē quandō exspectēmus fac ut sciam. cūrā tē dīligenter. valē.",
+      "english": "Let me know when we should expect you. Look after yourself. Goodbye.",
+      "source": "Cic. Fam. 16.18.3"
+    },
+    {
+      "latin": "Quandō vīs venī, parāta rēs erit. — Properā modo.",
+      "english": "Come when you like, it will be ready. — Just hurry.",
+      "source": "Plaut. Men. 215–215b"
+    }
+  ],
+  "notes": {
+    "quando": {
+      "form": "quandō",
+      "claim": "long final o",
+      "against": "Lewis &amp; Short leaves it unmarked",
+      "html": "De Vaan 507, s.v. <span lang=\"la\">quī</span>, gives the final vowel long; Festus records an older <span lang=\"la\">quandōd</span> (Lewis &amp; Short s.v. <span lang=\"la\">quando</span>). Shortened to <span lang=\"la\">quando</span> in later verse. As in <span lang=\"la\">aliquandō</span> (see “ever”); the libellī write <span lang=\"la\">quandō</span>."
+    }
+  },
+  "related": [
+    "at-what-time",
+    "what-time-is-it",
+    "how-long-ago",
+    "ever"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/quando\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quando</a> · <a href=\"https://logeion.uchicago.edu/dudum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dudum (quam dudum)</a>",
+    "Michiel de Vaan, <em>Etymological Dictionary of Latin and the other Italic Languages</em> (2008), p. 507.",
+    "Quotations from the Latinitas loci collections (loci-terentius, loci-martialis, loci-cicero-epistulae, loci-plautus), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

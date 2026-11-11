@@ -1,0 +1,97 @@
+{
+  "id": "there-is",
+  "english": "there is",
+  "pos": "phrase",
+  "also": [
+    "there are",
+    "there was",
+    "there were",
+    "is there",
+    "are there"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "est, sunt (first in the clause)",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "there is, there are",
+      "grammar": "esse put first, the thing after it",
+      "evidence": [
+        "Hor. S. 1.1.106: <span lang=\"la\">est modus in rēbus, sunt certī dēnique fīnēs</span>",
+        "Vulg. Jo. 6.9: <span lang=\"la\">Est puer ūnus hīc</span>"
+      ],
+      "comment": "Brings something new into view, as at the start of a story (<span lang=\"la\">est in Carpathiō Neptūnī gurgite vātēs</span>, Verg. G. 4.387). Elsewhere Latin seldom frames a sentence this way: it prefers a verb that says what the thing does or where it is (<span lang=\"la\">jacet, stat, situs est</span>) to an English “there was”."
+    },
+    {
+      "latin": "nōn est quod (+ subjunctive)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "there is no reason to",
+      "grammar": "phrase: est with quod and the subjunctive",
+      "evidence": [
+        "Phaedr. 2.1.7: <span lang=\"la\">nōn est quod timeās</span>"
+      ],
+      "comment": "Also <span lang=\"la\">nihil est quod</span> (see “reason”), and <span lang=\"la\">sunt quī</span>, there are those who (see “certain”)."
+    },
+    {
+      "latin": "ecquid (+ genitive)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "is there any …?",
+      "grammar": "neuter of ecquis, with a partitive genitive",
+      "evidence": [
+        "Cic. Att. 2.8.1: <span lang=\"la\">quaerō ecquid litterārum</span>"
+      ],
+      "comment": "See “someone” for ecquis."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Est puer ūnus hīc quī habet quīnque pānēs hordeāceōs et duōs piscēs: sed haec quid sunt inter tantōs?",
+      "english": "There is a boy here who has five barley loaves and two fish: but what are they among so many?",
+      "source": "Vulg. Jo. 6.9"
+    },
+    {
+      "latin": "est modus in rēbus, sunt certī dēnique fīnēs",
+      "english": "there is a measure in things; there are, in short, fixed bounds",
+      "source": "Hor. S. 1.1.106"
+    },
+    {
+      "latin": "sunt bona, sunt quaedam mediōcria, sunt mala plūra quae legis hīc: aliter nōn fit, Avīte, liber",
+      "english": "there are good things, there are some middling ones, and there are more bad ones that you read here: no other way is a book made, Avitus",
+      "source": "Mart. 1.16.1–2"
+    },
+    {
+      "latin": "est in Carpathiō Neptūnī gurgite vātēs caeruleus Prōteus",
+      "english": "in Neptune’s Carpathian sea there is a seer, sea-blue Proteus",
+      "source": "Verg. G. 4.387–388"
+    },
+    {
+      "latin": "cui placidus ille: nōn est quod timeās, ait",
+      "english": "and to him the lion said calmly: “There’s nothing for you to fear”",
+      "source": "Phaedr. 2.1.7"
+    },
+    {
+      "latin": "vocō, quaerō ecquid litterārum. negant.",
+      "english": "I call them and ask whether there are any letters. They say no.",
+      "source": "Cic. Att. 2.8.1"
+    }
+  ],
+  "related": [
+    "reason",
+    "certain",
+    "someone",
+    "yes-no-question"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/sum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sum</a> · <a href=\"https://logeion.uchicago.edu/ecquis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ecquis</a>",
+    "Quotations from the Latinitas loci collections (loci-vulgata, loci-horatius, loci-martialis, loci-vergilius, loci-phaedrus, loci-cicero-epistulae), checked against the editions named there.",
+    "Phaedrus checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

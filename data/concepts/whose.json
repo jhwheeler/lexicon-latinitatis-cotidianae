@@ -1,0 +1,78 @@
+{
+  "id": "whose",
+  "english": "whose",
+  "sense": "whose? (a question)",
+  "pos": [
+    "pronoun",
+    "adjective"
+  ],
+  "also": [
+    "whose is this?",
+    "whose is it?",
+    "at whose house"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "cujus",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "whose? of whom?",
+      "grammar": "genitive of quis; plural quōrum, quārum",
+      "evidence": [
+        "Plaut. Truc. 604–605: <span lang=\"la\">unde es? cujus es?</span>"
+      ],
+      "comment": "The plain form. “Whose” in a statement (“the man whose house …”) is the relative: see “which” (relative)."
+    },
+    {
+      "latin": "cujus, cuja, cujum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "whose? (agreeing with the thing owned)",
+      "grammar": "interrogative adjective, first and second declension",
+      "register": "vōx plērumque cōmica: Plaut., Ter.; Verg. E.",
+      "evidence": [
+        "Verg. E. 3.1: <span lang=\"la\">cujum pecus?</span>",
+        "Ter. And. 932: <span lang=\"la\">Cujam igitur?</span>"
+      ],
+      "comment": "Most frequent in Plautus and Terence (Lewis &amp; Short); Vergil gives it to his herdsmen."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "dīc mihi, Dāmoetā, cujum pecus?",
+      "english": "tell me, Damoetas, whose flock is this?",
+      "source": "Verg. E. 3.1"
+    },
+    {
+      "latin": "loquere: unde es? cujus es?",
+      "english": "speak up: where are you from? whose are you?",
+      "source": "Plaut. Truc. 604–605"
+    },
+    {
+      "latin": "vōs nescītis hodiē apud quem fīat?",
+      "english": "don’t you know at whose house it is today?",
+      "source": "Petr. 26.4"
+    },
+    {
+      "latin": "Cujus est haec pila? — Mea est.",
+      "english": "Whose ball is this? — Mine.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "who",
+    "which-relative"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/quis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quis</a> · <a href=\"https://logeion.uchicago.edu/cujus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cujus</a>",
+    "Quotations from the Latinitas loci collections (loci-ranieri-eclogae, loci-petronius), checked against the editions named there.",
+    "Plautus and Terence checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026).",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

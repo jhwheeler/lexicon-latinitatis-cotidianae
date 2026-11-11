@@ -1,0 +1,72 @@
+{
+  "id": "whoever",
+  "english": "whoever",
+  "pos": "pronoun",
+  "also": [
+    "whoever you are",
+    "anyone who",
+    "whosoever"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "quisquis",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "whoever",
+      "grammar": "relative pronoun, with a verb of its own; neuter quicquid",
+      "evidence": [
+        "Plaut. Amph. 309b: <span lang=\"la\">Quisquis homō hūc profectō vēnerit, pugnōs edet.</span>",
+        "Sen. Ep. 20.13: <span lang=\"la\">quisquis exit in lūcem</span>"
+      ],
+      "comment": "<span lang=\"la\">Quisquis es</span>, whoever you are, is the polite way to address a stranger (Plaut. Men. 278b). “Anyone who” in a condition is often <span lang=\"la\">sī quis</span> (see “someone”)."
+    },
+    {
+      "latin": "quīcumque, quaecumque, quodcumque",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "whoever, whatever person",
+      "grammar": "relative pronoun",
+      "evidence": [
+        "Cic. Fam. 10.31.3: <span lang=\"la\">quīcumque is est, eī mē profiteor inimīcum</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Quisquis homō hūc profectō vēnerit, pugnōs edet.",
+      "english": "Whoever comes this way, believe me, will get a taste of my fists.",
+      "source": "Plaut. Amph. 309b"
+    },
+    {
+      "latin": "Dī tē amābunt quisquis es.",
+      "english": "Heaven bless you, whoever you are.",
+      "source": "Plaut. Men. 278b"
+    },
+    {
+      "latin": "Quisquis es, quidquid tibi nōmen est, senex",
+      "english": "Whoever you are, whatever your name is, old man",
+      "source": "Plaut. Men. 811"
+    },
+    {
+      "latin": "nēmō nāscitur dīves; quisquis exit in lūcem jussus est lacte et pannō esse contentus",
+      "english": "no one is born rich; whoever comes into the light is told to be content with milk and a rag",
+      "source": "Sen. Ep. 20.13"
+    }
+  ],
+  "related": [
+    "whatever",
+    "who",
+    "someone"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/quisquis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quisquis</a> · <a href=\"https://logeion.uchicago.edu/quicumque\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quicumque</a>",
+    "Quotations from the Latinitas loci collections (loci-seneca-epistulae), checked against the editions named there.",
+    "Plautus and Cicero’s letters checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

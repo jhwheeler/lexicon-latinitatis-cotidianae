@@ -1,0 +1,84 @@
+{
+  "id": "where-to",
+  "english": "where to",
+  "sense": "to what place?",
+  "pos": "adverb",
+  "also": [
+    "whither",
+    "where are you going?",
+    "where?"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "quō",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "where (to)? whither?",
+      "grammar": "adverb, interrogative and relative, of motion towards",
+      "evidence": [
+        "Plaut. Amph. 341: <span lang=\"la\">Quō ambulās tū?</span>",
+        "Hor. S. 1.9.62–63: <span lang=\"la\">unde venīs et quō tendis?</span>"
+      ],
+      "comment": "English “where are you going?” asks <span lang=\"la\">quō</span>, never <span lang=\"la\">ubi</span>. As a relative it answers <span lang=\"la\">eō</span>, (to) there."
+    },
+    {
+      "latin": "quōrsum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "in what direction? (and) to what end?",
+      "grammar": "adverb",
+      "evidence": [
+        "Ter. Eun. 304: <span lang=\"la\">neque unde eam neque quōrsum eam</span>",
+        "Hor. S. 2.7.21: <span lang=\"la\">quōrsum haec tam pūtida tendant</span> (Lewis &amp; Short)"
+      ],
+      "comment": "From <span lang=\"la\">quō vorsum</span>; also “what is it leading to?”: <span lang=\"la\">quōrsum haec?</span>"
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Quō ambulās tū?",
+      "english": "Where are you off to?",
+      "source": "Plaut. Amph. 341"
+    },
+    {
+      "latin": "unde venīs et quō tendis?",
+      "english": "where have you come from, and where are you heading?",
+      "source": "Hor. S. 1.9.62–63"
+    },
+    {
+      "latin": "Quō abīs? manē; manē, inquam: quō abīs?",
+      "english": "Where are you going? Wait; wait, I tell you: where are you going?",
+      "source": "Ter. Hec. 495–496"
+    },
+    {
+      "latin": "Abī deambulātum. — Deambulātum quō? — Vah! quasi dēsit locus.",
+      "english": "Go for a walk. — A walk where? — Pah! As if there were nowhere to go.",
+      "source": "Ter. Haut. 587"
+    },
+    {
+      "latin": "nesciō hercle, neque unde eam, neque quōrsum eam",
+      "english": "I really don’t know where I’m coming from or where I’m going",
+      "source": "Ter. Eun. 304"
+    }
+  ],
+  "related": [
+    "where",
+    "where-from",
+    "where-are-we-going",
+    "where-are-you-off-to",
+    "there-direction",
+    "here-direction"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/quo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quo</a> · <a href=\"https://logeion.uchicago.edu/quorsum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quorsum</a>",
+    "Quotations from the Latinitas loci collections (loci-plautus, loci-horatius, loci-terentius), checked against the editions named there.",
+    "Plautus and Terence checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026).",
+    "Citations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling, and have not been checked against an edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

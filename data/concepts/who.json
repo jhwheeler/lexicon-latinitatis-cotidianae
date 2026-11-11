@@ -1,0 +1,82 @@
+{
+  "id": "who",
+  "english": "who",
+  "sense": "who? (a question)",
+  "pos": "pronoun",
+  "also": [
+    "whom",
+    "to whom",
+    "with whom",
+    "who’s there?"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "quis, quid",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "who?",
+      "grammar": "interrogative pronoun: accusative quem, genitive cujus, dative cui, ablative quō; plural quī, quōs, quibus",
+      "evidence": [
+        "Plaut. Men. 137: <span lang=\"la\">Quis homō est?</span>",
+        "Catull. 1.1: <span lang=\"la\">cui dōnō lepidum novum libellum?</span>"
+      ],
+      "comment": "English “whom” is only the case: <span lang=\"la\">quem vīdistī?</span>, whom did you see?; <span lang=\"la\">cui?</span>, to whom?; <span lang=\"la\">quōcum?</span> (or <span lang=\"la\">quīcum?</span>), with whom? <span lang=\"la\">Quis homō est?</span> is the stage’s “who’s there?”. Lewis &amp; Short gives <span lang=\"la\">quis</span> for the feminine too."
+    },
+    {
+      "latin": "quisnam, quaenam, quidnam",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "who ever? who, then?",
+      "grammar": "interrogative pronoun, with nam for emphasis",
+      "evidence": [
+        "Hor. S. 2.7.83: <span lang=\"la\">quisnam igitur līber?</span> (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Quis homō est? — Ego sum.",
+      "english": "Who’s there? — It’s me.",
+      "source": "Plaut. Men. 137–137b"
+    },
+    {
+      "latin": "Manē, manē. quis illīc est?",
+      "english": "Wait, wait. Who’s that over there?",
+      "source": "Plaut. Aul. 655"
+    },
+    {
+      "latin": "cui dōnō lepidum novum libellum āridā modo pūmice expolītum?",
+      "english": "to whom shall I give my charming new little book, just polished with dry pumice?",
+      "source": "Catull. 1.1–2"
+    },
+    {
+      "latin": "quem fugis, āh dēmēns?",
+      "english": "whom are you running from, you madman?",
+      "source": "Verg. E. 2.60"
+    },
+    {
+      "latin": "‘ante’ inquit ‘circumspiciendum est cum quibus edās et bibās quam quid edās et bibās’",
+      "english": "“look first,” he says, “at whom you eat and drink with, then at what you eat and drink”",
+      "source": "Sen. Ep. 19.10"
+    }
+  ],
+  "related": [
+    "who-is-it",
+    "whose",
+    "which-relative",
+    "someone",
+    "whoever"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/quis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quis</a> · <a href=\"https://logeion.uchicago.edu/quisnam\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quisnam</a>",
+    "Quotations from the Latinitas loci collections (loci-plautus, loci-catullus, loci-ranieri-eclogae, loci-seneca-epistulae), checked against the editions named there.",
+    "Plautus checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026).",
+    "Citations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling, and have not been checked against an edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

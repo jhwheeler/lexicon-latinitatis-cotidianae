@@ -1,0 +1,80 @@
+{
+  "id": "whichever",
+  "english": "whichever",
+  "pos": [
+    "pronoun",
+    "adjective"
+  ],
+  "also": [
+    "whichever of the two",
+    "whichever you like",
+    "either one"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "utercumque, utracumque, utrumcumque",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "whichever (of two)",
+      "grammar": "relative pronoun and adjective",
+      "evidence": [
+        "Cic. Fam. 6.4.1: <span lang=\"la\">utercumque vīcerit</span>"
+      ],
+      "comment": "Rare, but classical (Lewis &amp; Short)."
+    },
+    {
+      "latin": "utervīs, utravīs, utrumvīs",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "whichever (of two) you like, either",
+      "grammar": "indefinite pronoun and adjective",
+      "evidence": [
+        "Cic. Sen. 33: <span lang=\"la\">at minus habeō vīrium quam vestrum utervīs</span>",
+        "Ter. Haut. 342: <span lang=\"la\">in aurem utramvīs ōtiōsē ut dormiās</span>"
+      ],
+      "comment": "Either one, it does not matter which."
+    },
+    {
+      "latin": "quīcumque, quaecumque, quodcumque",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "whichever (of several)",
+      "grammar": "relative pronoun and adjective",
+      "evidence": [
+        "Caes. BG 1.31: <span lang=\"la\">fortūnam, quaecumque accidat</span>"
+      ],
+      "comment": "See “whatever”."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ita magnae utrimque cōpiae, ita parātae ad dēpugnandum esse dīcuntur, ut, utercumque vīcerit, nōn sit mīrum futūrum",
+      "english": "the forces on both sides are said to be so large and so ready to fight it out that, whichever of them wins, it will be no surprise",
+      "source": "Cic. Fam. 6.4.1"
+    },
+    {
+      "latin": "At minus habeō vīrium quam vestrum utervīs.",
+      "english": "But I have less strength than either of you.",
+      "source": "Cic. Sen. 33"
+    },
+    {
+      "latin": "in aurem utramvīs ōtiōsē ut dormiās",
+      "english": "so that you can sleep soundly on whichever ear you like",
+      "source": "Ter. Haut. 342"
+    }
+  ],
+  "related": [
+    "whatever",
+    "which-question"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/utercumque\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: utercumque</a> · <a href=\"https://logeion.uchicago.edu/utervis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: utervis</a> · <a href=\"https://logeion.uchicago.edu/quicumque\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quicumque</a>",
+    "Cicero (<em>Letters to Friends</em>, <em>De senectute</em>), Terence and Caesar checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

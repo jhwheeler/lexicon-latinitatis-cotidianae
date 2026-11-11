@@ -1,0 +1,78 @@
+{
+  "id": "a",
+  "english": "a",
+  "sense": "the indefinite article",
+  "pos": "adjective",
+  "also": [
+    "an",
+    "a certain"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "nōmen sine articulō",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "no word: the noun alone",
+      "grammar": "Latin has no article",
+      "evidence": [
+        "Quint. 1.4.19: <span lang=\"la\">noster sermō articulōs nōn dēsīderat</span>"
+      ],
+      "comment": "English “a” is not translated: “a dog was carrying a piece of meat across a river” is <span lang=\"la\">canis per flūmen carnem cum ferret</span> (Phaedr. 1.4.2)."
+    },
+    {
+      "latin": "quīdam, quaedam, quoddam",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a, a certain (known to the speaker, not named)",
+      "grammar": "indefinite adjective; as a pronoun quīdam, quaedam, quiddam",
+      "evidence": [
+        "Phaedr. 2.5.1: <span lang=\"la\">est ardaliōnum quaedam Rōmae nātiō</span>"
+      ],
+      "comment": "The “a” of a story, or of someone one has in mind: “a man I know”. See “someone”."
+    },
+    {
+      "latin": "ūnus, ūna, ūnum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a, one (a single one)",
+      "grammar": "numeral adjective; genitive ūnīus, dative ūnī",
+      "evidence": [
+        "Vulg. Jo. 6.9: <span lang=\"la\">Est puer ūnus hīc</span>"
+      ],
+      "comment": "Where English “a” means “one”."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "canis per flūmen carnem cum ferret natāns",
+      "english": "a dog was swimming across a river with a piece of meat",
+      "source": "Phaedr. 1.4.2"
+    },
+    {
+      "latin": "est ardaliōnum quaedam Rōmae nātiō",
+      "english": "there is at Rome a tribe of busybodies",
+      "source": "Phaedr. 2.5.1"
+    },
+    {
+      "latin": "Est puer ūnus hīc quī habet quīnque pānēs hordeāceōs et duōs piscēs",
+      "english": "There is a boy here who has five barley loaves and two fish",
+      "source": "Vulg. Jo. 6.9"
+    }
+  ],
+  "related": [
+    "the",
+    "someone",
+    "certain"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/articulus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: articulus</a> · <a href=\"https://logeion.uchicago.edu/quidam\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quidam</a> · <a href=\"https://logeion.uchicago.edu/unus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: unus</a>",
+    "Quotations from the Latinitas loci collections (loci-phaedrus, loci-vulgata), checked against the editions named there.",
+    "Quintilian and Phaedrus checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

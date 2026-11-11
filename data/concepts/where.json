@@ -1,0 +1,80 @@
+{
+  "id": "where",
+  "english": "where",
+  "sense": "in what place?",
+  "pos": "adverb",
+  "also": [
+    "where?",
+    "where are you?",
+    "in which place"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "ubi",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "where? where",
+      "grammar": "adverb, interrogative and relative, of rest in a place",
+      "evidence": [
+        "Plaut. Rud. 238: <span lang=\"la\">Dīc ubi es?</span>",
+        "Ter. Hec. 84: <span lang=\"la\">ubi tē oblectāstī tam diū?</span>"
+      ],
+      "comment": "Only of being somewhere: “where to?” is <span lang=\"la\">quō</span>, “where from?” <span lang=\"la\">unde</span>. As a relative it answers <span lang=\"la\">ibi</span>, there. <span lang=\"la\">Ubi</span> is also the conjunction “when”, a different record."
+    },
+    {
+      "latin": "ubi gentium (ubi terrārum)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "where on earth?",
+      "grammar": "ubi with a partitive genitive",
+      "evidence": [
+        "Plaut. Rud. 469: <span lang=\"la\">ubi tū es gentium?</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Dīc ubi es? … ubi es? — Ecce mē. accēde ad mē atque adī contrā.",
+      "english": "Tell me where you are? … Where are you? — Here I am. Come to me, come this way.",
+      "source": "Plaut. Rud. 238–242"
+    },
+    {
+      "latin": "Dīc mihi, Philōtis, ubi tē oblectāstī tam diū?",
+      "english": "Tell me, Philotis, where have you been enjoying yourself all this time?",
+      "source": "Ter. Hec. 84"
+    },
+    {
+      "latin": "dīc nōbīs ubi sīs futūrus, ēde audācter, committe, crēde lūcī",
+      "english": "tell us where you will be; out with it boldly, trust it to the daylight",
+      "source": "Catull. 55.15–16"
+    },
+    {
+      "latin": "mīrātus dīcēs: “hoc, rogō, crēvit ubi?”",
+      "english": "you will say in wonder: “Where, I ask you, did this grow?”",
+      "source": "Mart. 13.58.2"
+    },
+    {
+      "latin": "hoc erat in vōtīs: modus agrī nōn ita magnus, hortus ubi et tēctō vīcīnus jūgis aquae fōns et paulum silvae super hīs foret",
+      "english": "this was what I prayed for: a piece of land not so very big, where there would be a garden, and near the house a spring of ever-flowing water, and a bit of woodland besides",
+      "source": "Hor. S. 2.6.1–3"
+    }
+  ],
+  "related": [
+    "where-to",
+    "where-from",
+    "where-is",
+    "there-location",
+    "here-location"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/ubi\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ubi</a> · <a href=\"https://logeion.uchicago.edu/gens\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gens</a>",
+    "Quotations from the Latinitas loci collections (loci-plautus, loci-terentius, loci-catullus, loci-martialis, loci-horatius), checked against the editions named there.",
+    "Plautus checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

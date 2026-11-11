@@ -1,0 +1,79 @@
+{
+  "id": "how-many",
+  "english": "how many",
+  "sense": "what number?",
+  "pos": "adjective",
+  "also": [
+    "as many as",
+    "how many?",
+    "how many of you"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "quot",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "how many? as many as",
+      "grammar": "indeclinable adjective",
+      "evidence": [
+        "Petr. 92.1: <span lang=\"la\">quot estis?</span>",
+        "Ter. Ph. 454: <span lang=\"la\">Quot hominēs, tot sententiae</span>"
+      ],
+      "comment": "Answered by <span lang=\"la\">tot</span>: <span lang=\"la\">quot … tot</span>, as many … so many."
+    },
+    {
+      "latin": "quotus, quota, quotum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "which in number? (what hour, how many in a party)",
+      "grammar": "adjective",
+      "evidence": [
+        "Hor. S. 2.6.44: <span lang=\"la\">hōra quota est?</span>",
+        "Mart. 14.218.1: <span lang=\"la\">dīc quotus … cupiās cēnāre</span>"
+      ],
+      "comment": "“What time is it?” is <span lang=\"la\">hōra quota est?</span>, which hour in the count (see “what time is it?”)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "quot estis?",
+      "english": "how many of you are there?",
+      "source": "Petr. 92.1"
+    },
+    {
+      "latin": "quaeris, quot mihi bāsiātiōnēs tuae, Lesbia, sint satis superque",
+      "english": "you ask, Lesbia, how many of your kisses would be enough for me and more than enough",
+      "source": "Catull. 7.1–2"
+    },
+    {
+      "latin": "Quot hominēs, tot sententiae; suus cuique mōs.",
+      "english": "So many men, so many opinions; each has his own way.",
+      "source": "Ter. Ph. 454"
+    },
+    {
+      "latin": "hōra quota est?",
+      "english": "what time is it?",
+      "source": "Hor. S. 2.6.44"
+    },
+    {
+      "latin": "dīc quotus et quantī cupiās cēnāre, nec ūnum addiderīs verbum: cēna parāta tibi est",
+      "english": "say how many you will be at dinner and what you want to spend, and don’t add a word: your dinner is ready",
+      "source": "Mart. 14.218.1–2"
+    }
+  ],
+  "related": [
+    "how-much",
+    "what-time-is-it"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/quot\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quot</a> · <a href=\"https://logeion.uchicago.edu/quotus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quotus</a>",
+    "Quotations from the Latinitas loci collections (loci-petronius, loci-catullus, loci-terentius, loci-horatius, loci-martialis), checked against the editions named there.",
+    "Terence checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

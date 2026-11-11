@@ -1,0 +1,79 @@
+{
+  "id": "which-question",
+  "english": "which",
+  "sense": "which one? (a question)",
+  "pos": [
+    "pronoun",
+    "adjective"
+  ],
+  "also": [
+    "which one",
+    "which of them",
+    "which of you",
+    "which of the two"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "quī, quae, quod",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "which? what? (with a noun)",
+      "grammar": "interrogative adjective",
+      "evidence": [
+        "Phaedr. 3.7.5: <span lang=\"la\">aut quō cibō fēcistī tantum corporis?</span>"
+      ],
+      "comment": "With a noun: <span lang=\"la\">quod pōculum?</span>, which cup? Without a noun the pronoun is <span lang=\"la\">quis, quid</span>, and “which of them?” is <span lang=\"la\">quis eōrum?</span> or <span lang=\"la\">quis ex eīs?</span>."
+    },
+    {
+      "latin": "uter, utra, utrum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "which (of two)?",
+      "grammar": "interrogative pronoun and adjective; genitive utrīus, dative utrī",
+      "evidence": [
+        "Plaut. Men. 1119: <span lang=\"la\">Uter erātis, tūn' an ille, major?</span>",
+        "Plaut. Aul. 321: <span lang=\"la\">sed uter vestrōrum est celerior?</span>"
+      ],
+      "comment": "Latin has a word for the choice between two; <span lang=\"la\">quis</span> is for more than two (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "unde sīc, quaesō, nitēs? aut quō cibō fēcistī tantum corporis?",
+      "english": "where do you get that shine, tell me? What food has made you so big?",
+      "source": "Phaedr. 3.7.4–5"
+    },
+    {
+      "latin": "quem ex eīs vultis in cēnam statim fierī?",
+      "english": "which of them do you want made into dinner straight away?",
+      "source": "Petr. 47.2"
+    },
+    {
+      "latin": "Uter erātis, tūn' an ille, major?",
+      "english": "Which of you was the elder, you or he?",
+      "source": "Plaut. Men. 1119"
+    },
+    {
+      "latin": "sed uter vestrōrum est celerior? memorā mihi.",
+      "english": "but which of you two is quicker? Tell me.",
+      "source": "Plaut. Aul. 321"
+    }
+  ],
+  "related": [
+    "which-relative",
+    "what",
+    "this-one-or-that-one",
+    "whichever"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/qui\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: qui</a> · <a href=\"https://logeion.uchicago.edu/uter\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: uter</a>",
+    "Quotations from the Latinitas loci collections (loci-phaedrus, loci-petronius), checked against the editions named there.",
+    "Plautus and Phaedrus checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

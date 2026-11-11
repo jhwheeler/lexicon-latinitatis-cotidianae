@@ -1,0 +1,79 @@
+{
+  "id": "whatever",
+  "english": "whatever",
+  "pos": "pronoun",
+  "also": [
+    "anything that",
+    "no matter what",
+    "whatsoever"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "quisquis, quicquid (quidquid)",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "whatever, whoever",
+      "grammar": "relative pronoun, with a verb of its own",
+      "evidence": [
+        "Hor. Ep. 1.2.14: <span lang=\"la\">quidquid dēlīrant rēgēs, plectuntur Achīvī</span>",
+        "Cic. Att. 12.1.2: <span lang=\"la\">garrīmus quicquid in buccam</span>"
+      ],
+      "comment": "Both spellings of the neuter are ancient (Quint. 1.7.6). In its own Latin the house writes the assimilated <span lang=\"la\">quicquid</span>, as the libellī do; quotations keep their edition’s spelling."
+    },
+    {
+      "latin": "quīcumque, quaecumque, quodcumque",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "whatever, whichever (with a noun or alone)",
+      "grammar": "relative pronoun and adjective",
+      "evidence": [
+        "Catull. 39.6–7: <span lang=\"la\">quodcumque agit</span>",
+        "Caes. BG 1.31: <span lang=\"la\">fortūnam, quaecumque accidat, experiantur</span>"
+      ],
+      "comment": "Cicero, Caesar and Sallust give it a verb of its own; “any … whatever” without one is Livy’s and later (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "quārē habē tibi quidquid hoc libellī quālecumque",
+      "english": "so take this little book for your own, whatever it is, such as it is",
+      "source": "Catull. 1.8–9"
+    },
+    {
+      "latin": "quidquid dēlīrant rēgēs, plectuntur Achīvī",
+      "english": "whatever madness the kings commit, the Greeks pay for it",
+      "source": "Hor. Ep. 1.2.14"
+    },
+    {
+      "latin": "quidquid est, ubicumque est, quodcumque agit, renīdet",
+      "english": "whatever it is, wherever he is, whatever he is doing, he grins",
+      "source": "Catull. 39.6–7"
+    },
+    {
+      "latin": "quidquid praecipiēs, estō brevis, ut citō dicta percipiant animī docilēs teneantque fidēlēs",
+      "english": "whatever you teach, be brief, so that minds may grasp what is said quickly, learn it and keep it faithfully",
+      "source": "Hor. AP 335–336"
+    },
+    {
+      "latin": "quid, cum cōram sumus et garrīmus quicquid in buccam?",
+      "english": "and what about when we are together and chatter whatever comes into our heads?",
+      "source": "Cic. Att. 12.1.2"
+    }
+  ],
+  "related": [
+    "whoever",
+    "whichever",
+    "what"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/quisquis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quisquis</a> · <a href=\"https://logeion.uchicago.edu/quicumque\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quicumque</a>",
+    "Quotations from the Latinitas loci collections (loci-horatius, loci-cicero-epistulae, loci-catullus), checked against the editions named there.",
+    "Caesar checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "id": "himself",
+  "english": "himself",
+  "pos": "pronoun",
+  "also": [
+    "by himself",
+    "to himself",
+    "he himself"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "suī, sibi, sē (sēsē)",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "himself (as object), referring to the subject",
+      "grammar": "pronoun, reflexive: genitive suī, dative sibi, accusative and ablative sē; the same for every gender and number",
+      "evidence": [
+        "Publ. B 21: <span lang=\"la\">Bis vincit quī sē vincit in victōriā.</span>",
+        "Publ. I 44: <span lang=\"la\">sibi tum īrāscitur</span>"
+      ],
+      "comment": "The reflexive refers to the subject of its clause: <span lang=\"la\">quī sē vincit</span>, who masters himself. It has no nominative. “With himself” is <span lang=\"la\">sēcum</span>. In reported speech it stands for the speaker: <span lang=\"la\">cujātem sē esse dīceret</span>, where he would say he (himself) was from."
+    },
+    {
+      "latin": "ipse",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "himself (for emphasis: he himself, in person, of his own accord)",
+      "grammar": "pronoun, intensive: genitive ipsīus, dative ipsī",
+      "evidence": [
+        "Publ. Q 69: <span lang=\"la\">Quī sē ipse laudat, citō dērīsōrem invenit.</span>",
+        "Liv. 22.2.10: <span lang=\"la\">ipse Hannibal</span>"
+      ],
+      "comment": "Stresses the person: <span lang=\"la\">ipse Hannibal</span>, Hannibal himself. With the reflexive it agrees with the subject when it stresses the doer, <span lang=\"la\">quī sē ipse laudat</span>, who praises himself (no one else praises him); with the object when it stresses the object, <span lang=\"la\">sē ipsum fēlīcem facit</span> (Lewis &amp; Short, s.v. <span lang=\"la\">ipse</span>)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Bis vincit quī sē vincit in victōriā.",
+      "english": "He wins twice who masters himself in victory.",
+      "source": "Publ. B 21"
+    },
+    {
+      "latin": "Īrātus, cum ad sē rediit, sibi tum īrāscitur.",
+      "english": "The angry man, when he comes back to himself, is then angry with himself.",
+      "source": "Publ. I 44"
+    },
+    {
+      "latin": "Quī sē ipse laudat, citō dērīsōrem invenit.",
+      "english": "Whoever praises himself soon finds someone to laugh at him.",
+      "source": "Publ. Q 69"
+    },
+    {
+      "latin": "Patiēns et fortis sē ipsum fēlīcem facit.",
+      "english": "The patient and brave man makes himself happy.",
+      "source": "Publ. P 37"
+    },
+    {
+      "latin": "locō herbidō ut quiēte et pābulō laetō reficeret bovēs et ipsum fessum viā prōcubuisse",
+      "english": "in a grassy spot, to rest his cattle with quiet and rich pasture, and that he himself, tired from the road, lay down",
+      "source": "Liv. 1.7.4"
+    },
+    {
+      "latin": "sēcum esse sēcumque, ut dīcitur, vīvere",
+      "english": "to be with oneself and, as they say, to live with oneself",
+      "source": "Cic. Sen. 49"
+    }
+  ],
+  "related": [
+    "he",
+    "herself",
+    "itself",
+    "themselves",
+    "oneself",
+    "myself"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/sui\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sui</a> · <a href=\"https://logeion.uchicago.edu/ipse\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ipse</a>",
+    "Quotations from the Latinitas loci collections (loci-cicero-philosophica, loci-livius, loci-publilius), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

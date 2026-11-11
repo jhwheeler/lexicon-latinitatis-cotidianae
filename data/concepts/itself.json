@@ -1,0 +1,85 @@
+{
+  "id": "itself",
+  "english": "itself",
+  "pos": "pronoun",
+  "also": [
+    "by itself",
+    "of itself",
+    "the thing itself"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "suī, sibi, sē (sēsē)",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "itself (as object), referring to the subject",
+      "grammar": "pronoun, reflexive: genitive suī, dative sibi, accusative and ablative sē; the same for every gender and number",
+      "evidence": [
+        "Cato Agr. 20.1: <span lang=\"la\">nē sē moveat</span>",
+        "Cic. Sen. 52: <span lang=\"la\">ut sē ērigat</span>"
+      ],
+      "comment": "For a thing as for a person: <span lang=\"la\">nē sē moveat</span>, so that it doesn’t move (itself); <span lang=\"la\">ut sē ērigat</span>, to raise itself. Many English “itself” verbs are plain verbs or passives in Latin (<span lang=\"la\">mōrēs sē dētegunt</span> or <span lang=\"la\">mōrēs dēteguntur</span>)."
+    },
+    {
+      "latin": "ipse, ipsa, ipsum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "itself (for emphasis: the thing itself, of its own accord)",
+      "grammar": "pronoun, intensive",
+      "evidence": [
+        "Col. 12.2.6: <span lang=\"la\">ipse vacuus locus admonet</span>",
+        "Plin. NH 18.104: <span lang=\"la\">ex ipsā farīnā</span>"
+      ],
+      "comment": "Agrees in gender with the noun: <span lang=\"la\">ipse vacuus locus</span>, the empty place itself; <span lang=\"la\">ex ipsā farīnā</span>, from the flour itself; <span lang=\"la\">rēs ipsa</span>, the thing itself. “By itself, of its own accord” is <span lang=\"la\">ipse</span> or <span lang=\"la\">suā sponte</span> (see own)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "sī movēbitur, eximitō; dēnuō eōdem modō facitō, nē sē moveat",
+      "english": "If it moves, take it out; do it again the same way, so that it doesn’t move.",
+      "source": "Cato Agr. 20.1"
+    },
+    {
+      "latin": "vītis quidem, quae nātūrā cadūca est et, nisi fulta est, fertur ad terram, eadem, ut sē ērigat, claviculīs suīs quasi manibus quicquid est nacta complectitur",
+      "english": "The vine, which by nature droops and falls to the ground unless it is propped, raises itself by clasping with its tendrils, as with hands, whatever it finds.",
+      "source": "Cic. Sen. 52"
+    },
+    {
+      "latin": "omne animal sē ipsum dīligit",
+      "english": "every animal loves itself",
+      "source": "Cic. Fin. 5.9.24 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "sī quid forte abest, ipse vacuus locus admonet, ut, quod deest, requīrātur",
+      "english": "If anything happens to be missing, the empty place itself reminds you to look for what is lacking.",
+      "source": "Col. 12.2.6"
+    },
+    {
+      "latin": "nunc fermentum fit ex ipsā farīnā, quae subigitur priusquam addātur sāl, ad pultis modum dēcocta et relicta, dōnec acēscat",
+      "english": "Now leaven is made from the flour itself, which is kneaded before salt is added, boiled to a porridge and left until it turns sour.",
+      "source": "Plin. NH 18.104"
+    },
+    {
+      "latin": "dōnec quiētem ipse timor circumspectantibus aquam fēcisset",
+      "english": "until fear itself had made them keep still, as they looked round at the water",
+      "source": "Liv. 21.28.11"
+    }
+  ],
+  "related": [
+    "it",
+    "its",
+    "himself",
+    "themselves"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/sui\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sui</a> · <a href=\"https://logeion.uchicago.edu/ipse\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ipse</a>",
+    "Quotations from the Latinitas loci collections (loci-cato, loci-cicero-philosophica, loci-livius, loci-plinius), checked against the editions named there.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

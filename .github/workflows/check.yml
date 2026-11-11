@@ -24,6 +24,8 @@ jobs:
           node-version: '22'
           cache: npm
       - run: npm ci
-      - run: npx playwright install --with-deps chromium
+      # The system packages are a convenience (extra fonts); when the runner cannot reach the Ubuntu mirrors,
+      # the browser alone is enough for the tests.
+      - run: npx playwright install --with-deps chromium || npx playwright install chromium
       - name: Test search in Chromium
         run: npm test

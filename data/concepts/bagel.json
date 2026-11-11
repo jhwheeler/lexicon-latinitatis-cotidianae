@@ -1,0 +1,63 @@
+{
+  "id": "bagel",
+  "english": "bagel",
+  "pos": "noun",
+  "domain": "culina",
+  "terms": [
+    {
+      "latin": "circellus pānis",
+      "status": "recommended",
+      "period": "modern",
+      "gloss": "a ring of bread",
+      "evidence": [
+        "M-O s.v. bread type: bagel"
+      ],
+      "comment": "Apicius’s <span lang=\"la\">circellus</span>, a small ring (2.5, Lewis &amp; Short), of bread. Morgan–Owens allows <span lang=\"la\">triticeus</span> or <span lang=\"la\">pistōrius</span> for <span lang=\"la\">pānis</span>."
+    },
+    {
+      "latin": "ānulus pānis",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "a ring of bread",
+      "evidence": [
+        "M-O s.v. bread type: bagel"
+      ]
+    },
+    {
+      "latin": "pānis Hebraicus",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "bagel",
+      "evidence": [
+        "Andresian p. 9"
+      ],
+      "comment": "“Jewish bread”, after the bagel’s origin.",
+      "notes": [
+        "hebraicus"
+      ]
+    }
+  ],
+  "notes": {
+    "hebraicus": {
+      "form": "Hebraicus",
+      "claim": "short e and a",
+      "against": "Andresian <span lang=\"la\">Hēbrāicus</span>",
+      "html": "Greek Ἑβραϊκός, with short ε and α; Lewis &amp; Short <span lang=\"la\">Hĕbraei</span>."
+    }
+  },
+  "related": [
+    "bread",
+    "bread-roll",
+    "pretzel"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/circellus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: circellus</a> · <a href=\"https://logeion.uchicago.edu/anulus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: anulus</a> · <a href=\"https://logeion.uchicago.edu/Hebraei\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: Hebraei</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. bread type: bagel.",
+    "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 9."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

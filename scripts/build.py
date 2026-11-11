@@ -978,7 +978,7 @@ def render_rulings(site):
                 f'<a href="c/{c}.html">{escape(site["records"][c]["english"])}</a>' for c in cited[key]) + '</p>') if key in cited else ''
             cards.append(f'<article class="ruling" id="r-{key}"><header><h3>{escape(ruling["title"])}</h3>'
                          f'<p class="ruling-meta"><span class="pill status-{ruling["status"]}">{ruling["status"]}</span> '
-                         f'{human_date(ruling["date"])} · {escape(ruling["by"])}</p></header>'
+                         f'{human_date(ruling["date"])}</p></header>'
                          f'<p class="ruling-decision">{ruling["decision"]}</p><p>{ruling["html"]}</p>{forms}{history}{used}</article>')
         sections.append(f'<section class="ruling-group" id="rulings-{kind}"><h2>{label}</h2>' + '\n'.join(cards) + '</section>')
     return '\n'.join(sections)

@@ -1,0 +1,108 @@
+{
+  "id": "request",
+  "english": "request",
+  "pos": [
+    "verb",
+    "noun"
+  ],
+  "also": [
+    "ask for",
+    "make a request",
+    "at someone’s request",
+    "I would ask you to",
+    "beg"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "petō, petere, petīvī, petītum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "ask for, request",
+      "grammar": "verb, third conjugation; aliquid ab aliquō, or ab aliquō ut + subjunctive",
+      "evidence": [
+        "Cic. Att. 1.9.2: <span lang=\"la\">petō abs tē ut haec dīligenter cūrēs</span>",
+        "Cic. Fam. 9.13.3: <span lang=\"la\">petō igitur ā tē vel, sī pateris, ōrō ut …</span>"
+      ],
+      "comment": "The usual word for asking someone for something: <span lang=\"la\">petere aliquid ab aliquō</span>, or <span lang=\"la\">petere ab aliquō ut …</span>. Its first senses are to make for a place and to aim at, attack (<span lang=\"la\">Rōmam petere</span>, <span lang=\"la\">caput petere</span>); it is also to stand for office (Lewis &amp; Short)."
+    },
+    {
+      "latin": "rogō, rogāre, rogāvī, rogātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "ask (someone to do something)",
+      "grammar": "verb, first conjugation; the person in the accusative, with ut or nē + subjunctive",
+      "evidence": [
+        "Cic. Fam. 13.44.1: <span lang=\"la\">idque ut faciās vehementer tē rogō</span>"
+      ],
+      "comment": "<span lang=\"la\">Rogō tē ut …</span> is the commonest way of putting a request in Cicero’s letters. The same verb asks a question (<span lang=\"la\">rogāre aliquem aliquid</span>; see question)."
+    },
+    {
+      "latin": "ōrō, ōrāre, ōrāvī, ōrātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "beg, entreat",
+      "grammar": "verb, first conjugation; aliquem ut + subjunctive",
+      "evidence": [
+        "Cic. Fam. 13.66.2: <span lang=\"la\">etiam atque etiam tē rogō atque ōrō ut …</span>"
+      ],
+      "comment": "Warmer than <span lang=\"la\">rogō</span>, and often paired with it. Its older senses are to speak, to plead a case, and, in Christian Latin, to pray (Lewis &amp; Short)."
+    },
+    {
+      "latin": "rogātū (alicujus)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "at someone’s request",
+      "grammar": "noun, fourth declension, found only in the ablative singular",
+      "evidence": [
+        "Cic. Att. 1.9.2: <span lang=\"la\">Thyillus tē rogat et ego ejus rogātū</span>"
+      ],
+      "comment": "<span lang=\"la\">Rogātū meō</span>, at my request; Lewis &amp; Short calls it Ciceronian. Seneca says it with a participle: <span lang=\"la\">patre meō rogante</span>."
+    },
+    {
+      "latin": "postulō, postulāre, postulāvī, postulātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "demand, claim; ask as one’s due",
+      "grammar": "verb, first conjugation; aliquid ab aliquō, or ut + subjunctive",
+      "evidence": [
+        "Ter. Phorm. 411: <span lang=\"la\">Quid est? num inīquum postulō?</span>"
+      ],
+      "comment": "A request made as of right, so firmer than <span lang=\"la\">petō</span>: Cicero sets <span lang=\"la\">postulat</span> beside <span lang=\"la\">poscere</span> and <span lang=\"la\">flāgitāre</span> (Lewis &amp; Short). The thing demanded is <span lang=\"la\">postulātum</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "petō abs tē ut haec dīligenter cūrēs.",
+      "english": "I ask you to see to these things carefully.",
+      "source": "Cic. Att. 1.9.2"
+    },
+    {
+      "latin": "hoc mihi grātius facere nihil potes, idque ut faciās vehementer tē rogō.",
+      "english": "You can do nothing that would please me more, and I earnestly ask you to do it.",
+      "source": "Cic. Fam. 13.44.1"
+    },
+    {
+      "latin": "patre itaque meō rogante … ad prīstinam cōnsuētūdinem rediī",
+      "english": "so, at my father’s request, … I went back to my old habit",
+      "source": "Sen. Ep. 108.22"
+    }
+  ],
+  "related": [
+    "ask",
+    "question",
+    "please",
+    "get-obtain",
+    "pull-request"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/peto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: peto</a> · <a href=\"https://logeion.uchicago.edu/rogo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: rogo</a> · <a href=\"https://logeion.uchicago.edu/oro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: oro</a> · <a href=\"https://logeion.uchicago.edu/rogatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: rogatus</a> · <a href=\"https://logeion.uchicago.edu/postulo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: postulo</a>",
+    "Cic. Att. 1.9.2, Fam. 9.13.3, 13.44.1, 13.66.2 and Ter. Phorm. 411 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (Purser’s sections; 11 November 2026).",
+    "Seneca from the Latinitas loci collection (loci-seneca-epistulae)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "id": "repeat",
+  "english": "repeat",
+  "sense": "say or do again",
+  "pos": "verb",
+  "also": [
+    "say again",
+    "say that again",
+    "repeat after me",
+    "do again",
+    "repetition"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "iterō, iterāre, iterāvī, iterātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "say or do a second time, repeat",
+      "grammar": "verb, first conjugation, transitive",
+      "evidence": [
+        "Cic. Att. 14.14.1: <span lang=\"la\">Iterādum eadem ista mihi.</span>",
+        "Liv. 1.45.2 (Lewis &amp; Short): <span lang=\"la\">saepe iterandō eadem</span>"
+      ],
+      "comment": "From <span lang=\"la\">iterum</span>, “a second time”: to say the same words again, or do a thing again (<span lang=\"la\">pugnam iterāre</span>, Liv. 6.32). In farming it is to plough a second time (Lewis &amp; Short)."
+    },
+    {
+      "latin": "repetō, repetere, repetīvī, repetītum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "go over again, repeat; resume",
+      "grammar": "verb, third conjugation, transitive",
+      "evidence": [
+        "Traupman 34: <span lang=\"la\">repete quid modo dīxerīs</span>, repeat what you just said",
+        "Cic. Fin. 5.51 (Lewis &amp; Short): <span lang=\"la\">praetermissa repetimus</span>"
+      ],
+      "comment": "To go back over what was said or begun, so also to resume; Traupman’s classroom word. Its first senses are to attack again and to go back for, fetch, or claim back (<span lang=\"la\">rēs repetere</span>); Lewis &amp; Short."
+    },
+    {
+      "latin": "dīcō iterum (rūrsus)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "say again",
+      "grammar": "phrase",
+      "comment": "The plain way: <span lang=\"la\">Dīc iterum</span>, say it again. Traupman 34 has <span lang=\"la\">eīsdem verbīs mihi redde</span> for “repeat after me”."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Iterādum eadem ista mihi.",
+      "english": "Say that to me again!",
+      "source": "Cic. Att. 14.14.1"
+    },
+    {
+      "latin": "repete quid modo dīxerīs",
+      "english": "repeat what you just said",
+      "source": "Traupman 34"
+    }
+  ],
+  "related": [
+    "again",
+    "chant-repeated",
+    "every-so-often",
+    "say"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/itero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: itero</a> · <a href=\"https://logeion.uchicago.edu/repeto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: repeto</a>",
+    "Cic. Att. 14.14.1 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (Purser, who prints <span lang=\"la\">Iteradum</span> as one word; 11 November 2026).",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 34, checked against the searchable text of the book."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

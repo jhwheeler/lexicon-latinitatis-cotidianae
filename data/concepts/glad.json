@@ -1,0 +1,105 @@
+{
+  "id": "glad",
+  "english": "glad",
+  "pos": "adjective",
+  "also": [
+    "be glad",
+    "I’m glad",
+    "I’m glad that",
+    "pleased"
+  ],
+  "domain": "verba",
+  "also_under": [
+    "sermo"
+  ],
+  "terms": [
+    {
+      "latin": "gaudeō, gaudēre, gāvīsus sum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "be glad, be pleased",
+      "grammar": "verb, second conjugation, semi-deponent: with an accusative and infinitive, with quod, or with the ablative of the thing",
+      "evidence": [
+        "Cic. Fam. 6.19.1: <span lang=\"la\">Maculam officiō fūnctum esse gaudeō.</span>",
+        "Traupman 152, 155"
+      ],
+      "comment": "“I’m glad” is a verb in Latin, not an adjective: <span lang=\"la\">gaudeō tē vēnisse</span>, I’m glad you came. It is the everyday word of Terence and of Cicero’s letters, often with <span lang=\"la\">vehementer</span>, “very”."
+    },
+    {
+      "latin": "laetor, laetārī, laetātus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "be glad, rejoice",
+      "grammar": "verb, first conjugation, deponent: with quod, an accusative and infinitive, or the ablative",
+      "evidence": [
+        "Cic. Fam. 2.1.2: <span lang=\"la\">et laetor, quod absēns omnia cum maximā dignitāte es cōnsecūtus</span>",
+        "Traupman 153"
+      ],
+      "comment": "Beside <span lang=\"la\">gaudeō</span> in Cicero’s letters, of a joy that shows; it can also mean “rejoice” in a solemn sense (Lewis &amp; Short)."
+    },
+    {
+      "latin": "laetus, laeta, laetum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "glad, happy, cheerful",
+      "grammar": "adjective",
+      "evidence": [
+        "Traupman 153: <span lang=\"la\">laetus</span>, glad"
+      ],
+      "comment": "The adjective, mostly of how someone looks or is (see happy); for “I’m glad that …” Latin uses the verb. Of crops and fields it means rich, flourishing (Lewis &amp; Short)."
+    },
+    {
+      "latin": "volup est (mihi)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "I’m glad, it pleases me",
+      "grammar": "phrase: the adverb volup with est, the person in the dative",
+      "register": "vōx cōmica: Plaut., Ter.",
+      "evidence": [
+        "Plaut. Amph. 958; Ter. Hec. 857 (Lewis &amp; Short)"
+      ],
+      "comment": "Old and comic, the opposite of <span lang=\"la\">aegrē est</span>, “I’m sorry, it upsets me”."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Haud mūtō factum. — Gaudeō.",
+      "english": "I don’t regret it. — I’m glad.",
+      "source": "Ter. And. 40"
+    },
+    {
+      "latin": "Maculam officiō fūnctum esse gaudeō.",
+      "english": "I’m glad Macula has done his duty.",
+      "source": "Cic. Fam. 6.19.1"
+    },
+    {
+      "latin": "tē istīc invītum nōn esse vehementer gaudeō",
+      "english": "I’m very glad you don’t mind being there",
+      "source": "Cic. Fam. 7.13.2"
+    },
+    {
+      "latin": "nam quia vōs tranquillōs videō, gaudeō et volup est mihi.",
+      "english": "for since I see you calm, I’m glad and pleased.",
+      "source": "Plaut. Amph. 958"
+    }
+  ],
+  "related": [
+    "happy",
+    "im-glad-to-hear-it",
+    "im-glad-for-you",
+    "im-glad-youre-back",
+    "with-pleasure",
+    "joy",
+    "pleasure"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/gaudeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gaudeo</a> · <a href=\"https://logeion.uchicago.edu/laetor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: laetor</a> · <a href=\"https://logeion.uchicago.edu/laetus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: laetus</a> · <a href=\"https://logeion.uchicago.edu/volup\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: volup</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 152, 153, 155, checked against the searchable text of the book (11 November 2026).",
+    "Cicero, Terence and Plautus checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026); Terence is cited by the lines of the Oxford text."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

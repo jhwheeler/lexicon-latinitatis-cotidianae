@@ -1,0 +1,74 @@
+{
+  "id": "engage-battle",
+  "english": "engage",
+  "sense": "join battle",
+  "pos": "verb",
+  "also": [
+    "join battle",
+    "engage the enemy",
+    "come to blows",
+    "start a fight"
+  ],
+  "domain": "res-publica",
+  "also_under": [
+    "verba"
+  ],
+  "terms": [
+    {
+      "latin": "proelium committere",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "join battle, begin a fight",
+      "grammar": "phrase: <span lang=\"la\">committō, committere, commīsī, commissum</span> with <span lang=\"la\">proelium</span> (or <span lang=\"la\">pugnam, certāmen</span>)",
+      "evidence": [
+        "Caes. BG 2.21: <span lang=\"la\">proeliī committendī signum dare</span> (Lewis &amp; Short)",
+        "Nep. Eum. 3: <span lang=\"la\">in aciem exercitum ēdūxit proeliumque commīsit</span> (Lewis &amp; Short)"
+      ],
+      "comment": "<span lang=\"la\">Committere</span> on its own is “bring together, join”, and also “entrust” and “commit (a crime)” (Lewis &amp; Short)."
+    },
+    {
+      "latin": "manum (manūs) cōnserere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "come to close quarters, come to blows",
+      "grammar": "phrase: <span lang=\"la\">cōnserō, cōnserere, cōnseruī, cōnsertum</span> with <span lang=\"la\">manum</span>, <span lang=\"la\">cum</span> and the ablative or <span lang=\"la\">inter sē</span>",
+      "evidence": [
+        "Cic. Mur. 20: <span lang=\"la\">signa contulit, manum cōnseruit, magnās cōpiās hostium fūdit</span> (Lewis &amp; Short)",
+        "Liv. 7.40.14: <span lang=\"la\">manūs inter sē</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Hand-to-hand fighting; <span lang=\"la\">cōnserere</span> alone is “join, fasten together”, and with <span lang=\"la\">proelium</span> or <span lang=\"la\">pugnam</span> it is the same as <span lang=\"la\">committere</span> (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "signa contulit, manum cōnseruit, magnās cōpiās hostium fūdit",
+      "english": "he joined battle, came to close quarters and routed great forces of the enemy",
+      "source": "Cic. Mur. 20 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "in aciem exercitum ēdūxit proeliumque commīsit",
+      "english": "he led his army out into line and engaged",
+      "source": "Nep. Eum. 3 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "Puerī inter sē manūs cōnseruērunt.",
+      "english": "The boys came to blows.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "battle",
+    "attack",
+    "be-involved"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/committo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: committo</a> · <a href=\"https://logeion.uchicago.edu/consero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: consero</a> · <a href=\"https://logeion.uchicago.edu/proelium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: proelium</a>",
+    "Quotations marked “Lewis &amp; Short” are copied from its citations.",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

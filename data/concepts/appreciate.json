@@ -1,0 +1,74 @@
+{
+  "id": "appreciate",
+  "english": "appreciate",
+  "sense": "be grateful for",
+  "pos": "verb",
+  "also": [
+    "I appreciate it",
+    "I’d appreciate it if",
+    "much appreciated",
+    "I really appreciate that"
+  ],
+  "domain": "verba",
+  "also_under": [
+    "sermo"
+  ],
+  "terms": [
+    {
+      "latin": "grātum (mihi) est",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "I appreciate it, it is welcome to me",
+      "grammar": "phrase: the thing appreciated is the subject, or follows in a quod-clause; the person in the dative",
+      "evidence": [
+        "Plin. Ep. 4.1.1: <span lang=\"la\">grātum est utrīque nostrum quod cupis</span>",
+        "Cic. Fam. 2.18.1: <span lang=\"la\">tibi … grāta esse vehementer gaudeō</span>"
+      ],
+      "comment": "Latin turns the sentence round: what I appreciate is <span lang=\"la\">grātum</span>, welcome, to me. Stronger: <span lang=\"la\">pergrātum, grātissimum</span>."
+    },
+    {
+      "latin": "grātum facere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "do something one appreciates; I’d appreciate it if you …",
+      "grammar": "phrase: the person in the dative; the polite request in the future perfect with sī",
+      "evidence": [
+        "Cic. Fam. 2.19.2: <span lang=\"la\">grātissimum mihi fēceris, sī ad mē in Ciliciam quam prīmum vēneris</span>",
+        "Cic. Att. 9.7.2: <span lang=\"la\">pergrātumque mihi tū fēcistī</span>"
+      ],
+      "comment": "The courteous formula of Cicero’s letters: <span lang=\"la\">grātum mihi fēceris, sī …</span>, “I’d appreciate it if …”; after the event, <span lang=\"la\">grātum mihi fēcistī</span>, “I appreciate what you did”."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "quās sī satis opportūnō tempore accēpistī, grātissimum mihi fēceris, sī ad mē in Ciliciam quam prīmum vēneris.",
+      "english": "if you have received it in good time, I’d very much appreciate it if you came to me in Cilicia as soon as possible.",
+      "source": "Cic. Fam. 2.19.2"
+    },
+    {
+      "latin": "cupis post longum tempus neptem tuam mēque ūnā vidēre. grātum est utrīque nostrum quod cupis, mūtuō mehercule",
+      "english": "you want to see your granddaughter, and me with her, after so long. We both appreciate that you want it, and, I promise, we feel the same",
+      "source": "Plin. Ep. 4.1.1"
+    },
+    {
+      "latin": "Amō tē, et nōn neglēxisse habeō grātiam.",
+      "english": "Thank you, and I appreciate your not forgetting.",
+      "source": "Ter. Ph. 54"
+    }
+  ],
+  "related": [
+    "grateful",
+    "appreciate-value",
+    "thank-you",
+    "please"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/gratus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gratus</a>",
+    "Cicero’s letters and Terence checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026). Pliny from the Latinitas loci collection loci-plinius, checked against the edition named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

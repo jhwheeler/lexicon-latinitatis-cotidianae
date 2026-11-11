@@ -1,0 +1,71 @@
+{
+  "id": "domestic-household",
+  "english": "domestic",
+  "sense": "of the home and family",
+  "pos": "adjective",
+  "also": [
+    "household",
+    "family (as adjective)",
+    "home life",
+    "domestic affairs",
+    "household chores",
+    "domestic animals"
+  ],
+  "domain": "domus",
+  "also_under": [
+    "verba"
+  ],
+  "terms": [
+    {
+      "latin": "domesticus, domestica, domesticum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "of the house and household; family, private",
+      "evidence": [
+        "Cic. Fin. 2.77: <span lang=\"la\">aliam domesticam, aliam forēnsem</span>",
+        "Tac. Dial. 34.1: <span lang=\"la\">domesticā disciplīnā</span>"
+      ],
+      "comment": "Of the house itself (<span lang=\"la\">vestis domestica</span>, clothes for wearing at home), but far more often of the family and its affairs: <span lang=\"la\">rēs domesticae ac familiārēs</span> against public business, a family grief, home training; as a noun, <span lang=\"la\">domesticī</span>, the members of a household (Lewis &amp; Short). Household animals are <span lang=\"la\">avēs domesticae</span>, poultry (Col.; M-O s.v. types: chicken: fowl); for the other sense, “not foreign”, see domestic (of one’s own country)."
+    },
+    {
+      "latin": "familiāris, familiāre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "of the household or family; intimate, familiar",
+      "grammar": "adjective, third declension",
+      "evidence": [
+        "Cic. Tusc. 1.2: <span lang=\"la\">rēs domesticās ac familiārēs</span> (Lewis &amp; Short, s.v. <span lang=\"la\">domesticus</span>)"
+      ],
+      "comment": "Of the <span lang=\"la\">familia</span>, the household with its slaves and property: <span lang=\"la\">rēs familiāris</span> is one’s estate. More often of persons, “intimate, familiar”, and as a noun a close friend (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "cum extrā rem pūblicam in domesticā rē atque vītā sedeātur, ambulētur, in convīviō quoque familiārī discumbātur",
+      "english": "when, away from public affairs, in home life and domestic matters, people sit, walk about, and recline at a family dinner",
+      "source": "Gell. 2.2.9"
+    },
+    {
+      "latin": "imbūtus jam domesticā disciplīnā, refertus honestīs studiīs dēdūcēbātur ā patre vel ā propinquīs ad eum ōrātōrem, quī prīncipem in cīvitāte locum obtinēbat",
+      "english": "already schooled at home and full of honourable studies, he was taken by his father or his relatives to the orator who held the first place in the city",
+      "source": "Tac. Dial. 34.1"
+    }
+  ],
+  "related": [
+    "domestic-national",
+    "formal-not-casual",
+    "private",
+    "house",
+    "pet"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/domesticus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: domesticus</a> · <a href=\"https://logeion.uchicago.edu/familiaris\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: familiaris</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. types: chicken: fowl.",
+    "Cicero checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026). Quotations from the Latinitas loci collections (loci-gellius, loci-tacitus), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

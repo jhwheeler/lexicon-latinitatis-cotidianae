@@ -1,0 +1,94 @@
+{
+  "id": "joke",
+  "english": "joke",
+  "pos": [
+    "noun",
+    "verb"
+  ],
+  "also": [
+    "jest",
+    "joking",
+    "tell a joke",
+    "make a joke",
+    "I was only joking",
+    "just kidding",
+    "kid",
+    "as a joke",
+    "joking apart"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "jocus, jocī m. (pl. joca)",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a joke, jest",
+      "grammar": "noun, second declension; the plural joca is Cicero’s",
+      "evidence": [
+        "Cic. Fam. 7.11.3: <span lang=\"la\">remōtō jocō tibi hoc amīcissimō animō praecipiō</span>",
+        "Plaut. Poen. 541: <span lang=\"la\">equidem haec vōbīs dīxī per jocum</span>"
+      ],
+      "comment": "<span lang=\"la\">Per jocum</span> or <span lang=\"la\">jocō</span>, as a joke, in jest; the opposite is <span lang=\"la\">sēriō</span> (see serious). <span lang=\"la\">Remōtō jocō</span> and <span lang=\"la\">extrā jocum</span> are “joking apart” (Lewis &amp; Short). It also covers play and pastime generally (see fun)."
+    },
+    {
+      "latin": "jocor, jocārī, jocātus sum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "joke, jest; say as a joke",
+      "grammar": "verb, first conjugation, deponent",
+      "evidence": [
+        "Cic. Fam. 9.14.4: <span lang=\"la\">haec enim jocātus sum</span>",
+        "Ter. Heaut. 729b: <span lang=\"la\">Atquī tū hanc jocārī crēdis?</span>"
+      ],
+      "comment": "Intransitive, or with what is said in jest: <span lang=\"la\">haec jocātus sum</span>, I said this as a joke."
+    },
+    {
+      "latin": "rīdiculum, rīdiculī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "something laughable, a jest",
+      "evidence": [
+        "Quint. 6.3.22 (Lewis &amp; Short)",
+        "Cic. de Or. 2.235 (Lewis &amp; Short)"
+      ],
+      "comment": "The laughable as a subject, as in Cicero’s and Quintilian’s chapters on wit; <span lang=\"la\">rīdiculī causā</span>, for a laugh (Plaut. Am. 917). The adjective <span lang=\"la\">rīdiculus</span> is funny, and also absurd (see funny)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Nimis īrācundī estis: equidem haec vōbīs dīxī per jocum.",
+      "english": "You’re far too touchy: I only said it as a joke.",
+      "source": "Plaut. Poen. 541"
+    },
+    {
+      "latin": "Heus tū, sī quid per jocum dīxī, nōlītō in sērium convertere.",
+      "english": "Hey, if I said something as a joke, don’t turn it into something serious.",
+      "source": "Plaut. Poen. 1320b–1321"
+    },
+    {
+      "latin": "extrā jocum homō bellus est",
+      "english": "joking apart, he’s a nice man",
+      "source": "Cic. Fam. 7.16.2"
+    },
+    {
+      "latin": "Atquī tū hanc jocārī crēdis? Faciet, nisi caveō.",
+      "english": "And you think she’s joking? She’ll do it, unless I watch out.",
+      "source": "Ter. Heaut. 729b–730"
+    }
+  ],
+  "related": [
+    "fun",
+    "funny",
+    "serious-earnest",
+    "laugh"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/jocus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: jocus</a> · <a href=\"https://logeion.uchicago.edu/jocor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: jocor</a> · <a href=\"https://logeion.uchicago.edu/ridiculus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ridiculus</a>",
+    "Cic. Fam. 7.11.3, 7.16.2, 9.14.4, Plaut. Am. 917, Poen. 541, 1320b–1321 and Ter. Heaut. 729b–730 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

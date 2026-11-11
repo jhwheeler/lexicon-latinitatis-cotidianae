@@ -1,0 +1,74 @@
+{
+  "id": "apparently-reportedly",
+  "english": "apparently",
+  "sense": "so I hear, so people say",
+  "pos": "adverb",
+  "also": [
+    "reportedly",
+    "I hear (that)",
+    "I’m told",
+    "allegedly",
+    "supposedly",
+    "they say"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "ut audiō",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "apparently, so I hear",
+      "grammar": "parenthesis",
+      "evidence": [
+        "Cic. Att. 9.6.2: <span lang=\"la\">Domitius, ut audiō, in Cosānō est</span>",
+        "Cic. Att. 14.9.2: <span lang=\"la\">hīc turba magna est eritque, ut audiō, major</span>"
+      ],
+      "comment": "Cicero’s word for news at second hand, set into the sentence; <span lang=\"la\">audiō</span> with an accusative and infinitive is “I hear that”."
+    },
+    {
+      "latin": "ut ajunt",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "as people say, reportedly",
+      "grammar": "parenthesis",
+      "evidence": [
+        "Cic. Att. 9.6.2: <span lang=\"la\">et quidem, ut ajunt, parātus ad nāvigandum</span>"
+      ],
+      "comment": "Of what is going round; it also brings in a proverb, “as the saying goes” (see according to)."
+    },
+    {
+      "latin": "dīcitur, dīcuntur",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "he is said, they are said (to …)",
+      "grammar": "passive of dīcō, with a nominative and infinitive, or impersonal with an accusative and infinitive",
+      "comment": "“Apparently he’s left” can be <span lang=\"la\">profectus esse dīcitur</span>, “he is said to have left” (Lewis &amp; Short, s.v. <span lang=\"la\">dīcō</span>)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Domitius, ut audiō, in Cosānō est et quidem, ut ajunt, parātus ad nāvigandum",
+      "english": "Domitius, apparently, is at his place near Cosa, and ready to sail, they say",
+      "source": "Cic. Att. 9.6.2"
+    },
+    {
+      "latin": "hīc turba magna est eritque, ut audiō, major.",
+      "english": "There’s a big crowd here, and apparently it’s going to get bigger.",
+      "source": "Cic. Att. 14.9.2"
+    }
+  ],
+  "related": [
+    "according-to-source",
+    "apparently-seemingly",
+    "say"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/audio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: audio</a> · <a href=\"https://logeion.uchicago.edu/aio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aio</a> · <a href=\"https://logeion.uchicago.edu/dico\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dico</a>",
+    "Cic. Att. 9.6.2 and 14.9.2 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

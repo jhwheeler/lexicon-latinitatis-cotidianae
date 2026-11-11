@@ -1,0 +1,85 @@
+{
+  "id": "accompany",
+  "english": "accompany",
+  "pos": "verb",
+  "also": [
+    "go with",
+    "come with",
+    "escort",
+    "see someone home",
+    "see someone off",
+    "walk someone home",
+    "accompanied by"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "comitor, comitārī, comitātus sum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "accompany, go with, attend",
+      "grammar": "verb, first conjugation, deponent, transitive",
+      "evidence": [
+        "Suet. Gram. 23: <span lang=\"la\">erīlem fīlium in scholās</span> (Lewis &amp; Short)",
+        "Plin. NH 9.21: <span lang=\"la\">adultōs diū comitantur</span>"
+      ],
+      "comment": "With the accusative; classical, but most frequent after the Augustan period (Lewis &amp; Short). “Accompanied by” is the ablative absolute: <span lang=\"la\">magnā comitante catervā</span> (Verg. A. 2.40), or with the noun <span lang=\"la\">comes</span>, <span lang=\"la\">asellō comite</span> (Phaedr. 1.11.3). “Go with someone” is also simply <span lang=\"la\">cum aliquō īre</span> (see with)."
+    },
+    {
+      "latin": "prōsequor, prōsequī, prōsecūtus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "go along with, see off, escort",
+      "grammar": "verb, third conjugation, deponent, transitive",
+      "evidence": [
+        "Plaut. Cas. 4.2.3: <span lang=\"la\">novum marītum volō rūs prōsequī</span> (Lewis &amp; Short)",
+        "Ov. Tr. 1.8.14: <span lang=\"la\">exsequiās</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Following someone out as an escort or in his honour: seeing him off, attending a funeral (<span lang=\"la\">exsequiās prōsequī</span>). It also means to pursue an enemy, and to honour someone with words or gifts (Lewis &amp; Short)."
+    },
+    {
+      "latin": "dēdūcō, dēdūcere, dēdūxī, dēductum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "escort (someone from his house)",
+      "grammar": "verb, third conjugation, transitive",
+      "evidence": [
+        "Cic. Sen. 63: <span lang=\"la\">dēdūcī, redūcī</span>",
+        "Cic. Fam. 10.12.2 (Lewis &amp; Short)"
+      ],
+      "comment": "“A term of common life” (Lewis &amp; Short): to escort a person out of his house as a mark of respect or for protection; <span lang=\"la\">redūcere</span> is to see him home again. Its general sense is “lead away, bring down”; of a bride, to bring her to her husband’s house."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "vēnārī asellō comite cum vellet leō",
+      "english": "when the lion wanted to go hunting with the donkey for company",
+      "source": "Phaedr. 1.11.3"
+    },
+    {
+      "latin": "quīn et adultōs diū comitantur magnā ergā partum cāritāte",
+      "english": "indeed they stay with their young long after they are grown, so great is their love for their offspring",
+      "source": "Plin. NH 9.21"
+    },
+    {
+      "latin": "haec enim ipsa sunt honōrābilia quae videntur levia atque commūnia, salūtārī, adpetī, dēcēdī, adsurgī, dēdūcī, redūcī, cōnsulī",
+      "english": "for these very things that seem slight and ordinary are marks of honour: to be greeted, sought out, made way for, stood up for, escorted from home and back, consulted",
+      "source": "Cic. Sen. 63"
+    }
+  ],
+  "related": [
+    "with-company",
+    "company-companionship",
+    "together",
+    "meet-by-chance"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/comitor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: comitor</a> · <a href=\"https://logeion.uchicago.edu/prosequor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: prosequor</a> · <a href=\"https://logeion.uchicago.edu/deduco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: deduco</a>",
+    "Quotations from the Latinitas loci collections (loci-phaedrus, loci-plinius, loci-cicero-philosophica), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

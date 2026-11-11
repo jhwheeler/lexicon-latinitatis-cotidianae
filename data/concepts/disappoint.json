@@ -1,0 +1,101 @@
+{
+  "id": "disappoint",
+  "english": "disappoint",
+  "pos": "verb",
+  "also": [
+    "disappointed",
+    "be disappointed",
+    "disappointing",
+    "disappointment",
+    "let down",
+    "I won’t let you down"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "spem fallere",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "disappoint someone’s hopes",
+      "grammar": "phrase: fallō, fallere, fefellī, falsum, with spem (or opīniōnem, expectation) and the genitive or possessive of the person",
+      "evidence": [
+        "Cic. Fam. 1.6.2: <span lang=\"la\">nōn fallam opīniōnem tuam</span>",
+        "Cic. Fam. 1.9.16: <span lang=\"la\">in quō ego spem fefellī … invidōrum</span>"
+      ],
+      "comment": "Latin says what is disappointed: the hope (<span lang=\"la\">spem</span>) or the expectation (<span lang=\"la\">opīniōnem, exspectātiōnem</span>). The hope can be the subject too: <span lang=\"la\">nē spēs eum fallat</span>, so that he is not disappointed (Cic. Fam. 1.3, Lewis &amp; Short). Alone, <span lang=\"la\">fallere</span> is to deceive."
+    },
+    {
+      "latin": "frūstror, frūstrārī, frūstrātus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "disappoint, let down; deceive",
+      "grammar": "verb, first conjugation, deponent, transitive",
+      "evidence": [
+        "Ter. And. 374: <span lang=\"la\">saepe jam mē spēs haec frūstrāta est</span>",
+        "Traupman 151: <span lang=\"la\">frūstror</span>, disappoint"
+      ],
+      "comment": "From <span lang=\"la\">frūstrā</span>, in vain: to make someone’s hope or effort come to nothing; also to deceive, to trick (Lewis &amp; Short). In a passive sense, <span lang=\"la\">frūstrātus spē</span>, disappointed in a hope (Vell. 2.21.2, Lewis &amp; Short).",
+      "notes": [
+        "long-u"
+      ]
+    },
+    {
+      "latin": "spē dējicī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "be disappointed, lose one’s hope",
+      "grammar": "phrase: the passive of dējiciō with the ablative spē",
+      "evidence": [
+        "Caes. BG 1.8.4 (Lewis &amp; Short): <span lang=\"la\">eā spē dējectī</span>"
+      ],
+      "comment": "Literally “thrown down from a hope”: the historians’ way of saying that a hope came to nothing."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Ā mē omnia summa in tē studia officiaque exspectā; nōn fallam opīniōnem tuam.",
+      "english": "Expect every devotion and service from me; I won’t disappoint you.",
+      "source": "Cic. Fam. 1.6.2"
+    },
+    {
+      "latin": "Ībō: etsī hercle saepe jam mē spēs haec frūstrāta est.",
+      "english": "I’ll go, though heaven knows this hope has often let me down before.",
+      "source": "Ter. And. 374"
+    },
+    {
+      "latin": "Vah, frūstrā sum igitur gāvīsus miser.",
+      "english": "Oh, so I was glad for nothing, poor me.",
+      "source": "Ter. Haut. 857"
+    },
+    {
+      "latin": "nōlī affectāre quod tibi nōn est datum, dēlūsa nē spēs ad querēlam reccidat",
+      "english": "don’t reach for what wasn’t given you, or your disappointed hope will fall back into complaint",
+      "source": "Phaedr. 3.18.14–15"
+    }
+  ],
+  "notes": {
+    "long-u": {
+      "form": "frūstror",
+      "claim": "long u",
+      "against": "Lewis &amp; Short leaves it unmarked",
+      "html": "Made from <span lang=\"la\">frūstrā</span> (Lewis &amp; Short), whose u is long: de Vaan s.v. <span lang=\"la\">fraus</span> derives it from *fraud-tro-, and Bennett cites an apex.",
+      "ruling": "frustra"
+    }
+  },
+  "related": [
+    "hope",
+    "fail",
+    "look-forward-to"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/fallo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fallo</a> · <a href=\"https://logeion.uchicago.edu/frustror\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: frustror</a> · <a href=\"https://logeion.uchicago.edu/deicio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: deicio</a> · <a href=\"https://logeion.uchicago.edu/spes\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: spes</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 151, checked against the searchable text of the book (11 November 2026). Michiel de Vaan, <em>Etymological Dictionary of Latin and the other Italic Languages</em> (2008), s.v. <span lang=\"la\">fraus</span>.",
+    "Terence and Cicero’s letters checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026). Phaedrus from the Latinitas loci collection loci-phaedrus, checked against the edition named there.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling; they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

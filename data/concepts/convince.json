@@ -1,0 +1,88 @@
+{
+  "id": "convince",
+  "english": "convince",
+  "pos": "verb",
+  "also": [
+    "persuade",
+    "be convinced",
+    "I’m convinced",
+    "be sure (of)",
+    "talk someone into"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "persuādeō, persuādēre, persuāsī, persuāsum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "convince (that); persuade (to)",
+      "grammar": "verb, second conjugation, with a dative of the person; accusative and infinitive for “convince that”, ut or nē + subjunctive for “persuade to”",
+      "evidence": [
+        "Cic. Att. 1.5.8: <span lang=\"la\">tibi persuādeās tē ā mē frāternē amārī</span>",
+        "Sen. Ep. 108.22: <span lang=\"la\">nec difficulter mihi ut inciperem melius cēnāre persuāsit</span>"
+      ],
+      "comment": "The person convinced is in the dative, so the passive is impersonal: <span lang=\"la\">mihi persuāsum est</span>, I am convinced; <span lang=\"la\">mihi persuādērī numquam potuit</span>, I could never be convinced (Cic. Sen. 80). <span lang=\"la\">Tibi persuādeās</span>, “be sure”, closes Cicero’s letters to his family."
+    },
+    {
+      "latin": "persuāsum habeō",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "I am convinced, I hold it as settled",
+      "grammar": "phrase; with an accusative and infinitive, often with sibi",
+      "evidence": [
+        "Caes. B.G. 3.2: <span lang=\"la\">sibi persuāsum habēbant</span> (Lewis &amp; Short)"
+      ],
+      "comment": "A settled conviction, as in Caesar; for the moment of being won over, <span lang=\"la\">mihi persuāsum est</span>."
+    },
+    {
+      "latin": "fidem faciō (alicui)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "make (someone) believe, win belief",
+      "grammar": "phrase; often with an accusative and infinitive",
+      "evidence": [
+        "Cic. Brut. 187: <span lang=\"la\">fidem facit ōrātiō</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Of what wins belief, a speech or an argument; the person is in the dative."
+    },
+    {
+      "latin": "convincō, convincere, convīcī, convictum",
+      "status": "avoid",
+      "period": "classical",
+      "gloss": "prove (someone) wrong or guilty; refute",
+      "comment": "Not “convince”: classically to convict of a crime or an error, or to prove a thing beyond doubt (Lewis &amp; Short; see prove)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "cūrā ut valeās et nōs amēs et tibi persuādeās tē ā mē frāternē amārī",
+      "english": "look after yourself, love us, and be sure that I love you as a brother",
+      "source": "Cic. Att. 1.5.8"
+    },
+    {
+      "latin": "cūrā ut valeās et ita tibi persuādeās, mihi tē cārius nihil esse nec umquam fuisse",
+      "english": "take care of yourself, and be sure that nothing is dearer to me than you, or ever was",
+      "source": "Cic. Fam. 14.3.5"
+    },
+    {
+      "latin": "patre itaque meō rogante … ad prīstinam cōnsuētūdinem rediī; nec difficulter mihi ut inciperem melius cēnāre persuāsit",
+      "english": "so at my father’s request … I went back to my old habit; he had no trouble persuading me to start dining better",
+      "source": "Sen. Ep. 108.22"
+    }
+  ],
+  "related": [
+    "confirm",
+    "prove",
+    "believe",
+    "argument-reasoning"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/persuadeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: persuadeo</a> · <a href=\"https://logeion.uchicago.edu/fides\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fides</a> · <a href=\"https://logeion.uchicago.edu/convinco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: convinco</a>",
+    "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-seneca-epistulae), as checked there against the editions they name."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

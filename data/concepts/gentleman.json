@@ -1,0 +1,83 @@
+{
+  "id": "gentleman",
+  "english": "gentleman",
+  "pos": "noun",
+  "also": [
+    "gentlemen",
+    "a real gentleman",
+    "gentlemanly",
+    "like a gentleman",
+    "a man of good family"
+  ],
+  "domain": "sermo",
+  "terms": [
+    {
+      "latin": "vir līberālis",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a gentleman: a man of a free man’s bearing, courteous and generous",
+      "grammar": "phrase: līberālis, līberāle (adjective, third declension) with vir or homō",
+      "evidence": [
+        "Ter. Ad. 464: <span lang=\"la\">neque bonī neque līberālis fūnctus officium est virī</span>",
+        "Cic. Off. 2.64: <span lang=\"la\">līberāle</span>"
+      ],
+      "comment": "<span lang=\"la\">Līberālis</span> is “befitting a free man”: of conduct, noble, courteous, kind; of studies, the liberal arts; and very often “generous, open-handed” (Cic. Off. 2.56). In Plautus it can mean “handsome” (Lewis &amp; Short). <span lang=\"la\">Līberāliter</span>, like a gentleman (<span lang=\"la\">līberāliter ēducātus</span>, Cic. Fin. 3.57)."
+    },
+    {
+      "latin": "ingenuus, ingenua, ingenuum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "freeborn, of good birth; frank, worthy of a free man",
+      "evidence": [
+        "Cic. Lael. 65: <span lang=\"la\">apertē ōdisse magis ingenuī est</span> (Lewis &amp; Short)"
+      ],
+      "comment": "First “native”, then “freeborn” (as a noun, a freeborn man, against a freedman, <span lang=\"la\">lībertīnus</span>), and so of character, noble, upright, candid (Lewis &amp; Short)."
+    },
+    {
+      "latin": "vir honestus",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a respectable man, a man of standing",
+      "evidence": [
+        "Cic. Brut. 281 (Lewis &amp; Short, s.v. <span lang=\"la\">honestus</span>)"
+      ],
+      "comment": "<span lang=\"la\">Honestus</span> is “honoured, respectable”, and of conduct “honourable, decent” (Lewis &amp; Short): a gentleman by standing rather than by manners."
+    },
+    {
+      "latin": "vir bonus",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a good and honest man",
+      "evidence": [
+        "Cic. Off. 3.64 (Lewis &amp; Short, s.v. <span lang=\"la\">bonus</span>)"
+      ],
+      "comment": "A man of upright character, the Greek καλὸς κἀγαθός (Lewis &amp; Short); in Cicero’s politics <span lang=\"la\">bonī</span> are also the conservatives."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Quem frātrī adoptandum dedistī, neque bonī neque līberālis fūnctus officium est virī.",
+      "english": "The son you gave your brother to adopt has behaved neither as a good man nor as a gentleman should.",
+      "source": "Ter. Ad. 463–464"
+    },
+    {
+      "latin": "est enim nōn modo līberāle paulum nōn numquam dē suō jūre dēcēdere, sed interdum etiam frūctuōsum",
+      "english": "for to give up a little of one’s rights now and then is not only gentlemanly but sometimes even profitable",
+      "source": "Cic. Off. 2.64"
+    }
+  ],
+  "related": [
+    "polite",
+    "man",
+    "kind-kindly"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/liberalis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: liberalis</a> · <a href=\"https://logeion.uchicago.edu/ingenuus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ingenuus</a> · <a href=\"https://logeion.uchicago.edu/honestus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: honestus</a> · <a href=\"https://logeion.uchicago.edu/bonus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: bonus</a>",
+    "Terence checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026). Quotations from the Latinitas loci collections (loci-cicero-philosophica), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

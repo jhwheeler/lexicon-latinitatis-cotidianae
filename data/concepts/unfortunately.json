@@ -1,0 +1,83 @@
+{
+  "id": "unfortunately",
+  "english": "unfortunately",
+  "pos": "adverb",
+  "also": [
+    "sadly",
+    "unluckily",
+    "regrettably",
+    "I’m afraid (that)",
+    "as bad luck would have it"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "accidit incommodē (quod …)",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "unfortunately (it so happened that)",
+      "grammar": "phrase: accidit with the adverb, and a quod-clause for what happened",
+      "evidence": [
+        "Cic. Att. 1.17.2: <span lang=\"la\">sed accidit perincommodē quod eum nusquam vīdistī</span>",
+        "Caes. B.G. 5.33.4: <span lang=\"la\">tamen incommodē accidit</span>"
+      ],
+      "comment": "Latin says that a thing turned out badly where English comments on it with an adverb. <span lang=\"la\">Perincommodē</span> is “very unfortunately”. <span lang=\"la\">Incommodē</span> alone is “inconveniently, at a bad moment” (Lewis &amp; Short), and <span lang=\"la\">nōn incommodē</span> is “quite conveniently”."
+    },
+    {
+      "latin": "īnfēlīciter",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "unluckily, disastrously",
+      "grammar": "adverb",
+      "evidence": [
+        "Ter. Eun. 328b: <span lang=\"la\">Immō enimvērō īnfēlīciter</span>",
+        "Liv. 1.45.3 (Lewis &amp; Short)"
+      ],
+      "comment": "Stronger than <span lang=\"la\">incommodē</span>: of what ends in misfortune, a plan tried and failed."
+    },
+    {
+      "latin": "nōllem",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "I wish it weren’t so; I’m sorry (that)",
+      "grammar": "imperfect subjunctive of nōlō, with an accusative or a perfect participle",
+      "evidence": [
+        "Ter. Ad. 165: <span lang=\"la\">Nōllem factum</span>",
+        "Cic. Off. 1.35 (Lewis &amp; Short): <span lang=\"la\">Carthāginem et Numantiam funditus sustulērunt; nōllem Corinthum</span>"
+      ],
+      "comment": "The speaker’s regret as a wish: <span lang=\"la\">nōllem factum</span>, “I wish it hadn’t happened”, Terence’s stock apology. For a sigh of grief, <span lang=\"la\">heu</span> (see alas)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "sed accidit perincommodē quod eum nusquam vīdistī.",
+      "english": "But unfortunately you never saw him anywhere.",
+      "source": "Cic. Att. 1.17.2"
+    },
+    {
+      "latin": "Incommodē hercle. — Immō enimvērō īnfēlīciter.",
+      "english": "That’s bad luck. — No, it’s a disaster.",
+      "source": "Ter. Eun. 328–328b"
+    },
+    {
+      "latin": "Nōvī ego vestra haec: «Nōllem factum»; jūsjūrandum dabitur tē esse indignum injūriā hāc",
+      "english": "I know your sort: “I’m sorry it happened”; you’ll swear you never deserved such treatment",
+      "source": "Ter. Ad. 165–166"
+    }
+  ],
+  "related": [
+    "alas",
+    "chance-luck",
+    "im-sorry",
+    "good-luck"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/incommodus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: incommodus</a> · <a href=\"https://logeion.uchicago.edu/perincommodus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: perincommodus</a> · <a href=\"https://logeion.uchicago.edu/infelix\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: infelix</a> · <a href=\"https://logeion.uchicago.edu/nolo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nolo</a>",
+    "Cic. Att. 1.17.2, Caes. B.G. 5.33.4, Ter. Eun. 328–328b and Ad. 165–166 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

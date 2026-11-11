@@ -1,0 +1,86 @@
+{
+  "id": "aside",
+  "english": "aside",
+  "sense": "to one side, apart",
+  "pos": "adverb",
+  "also": [
+    "take someone aside",
+    "draw aside",
+    "step aside",
+    "call aside",
+    "a word in private"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "sēdūcō, sēdūcere, sēdūxī, sēductum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "take (someone) aside",
+      "grammar": "verb, third conjugation, transitive",
+      "evidence": [
+        "Plaut. Aul. 133: <span lang=\"la\">eō nunc ego sēcrētō tēd hūc forās sēdūxī</span>",
+        "Cic. Att. 5.21.12 (Lewis &amp; Short): <span lang=\"la\">mē rūrsus sēdūcit</span>"
+      ],
+      "comment": "Latin puts “aside” in the prefix <span lang=\"la\">sē-</span>, “apart”: <span lang=\"la\">sēdūcere</span>, to lead aside; <span lang=\"la\">sēvocāre</span>, to call aside; <span lang=\"la\">sēcēdere</span>, to step aside. Classically it never means “seduce”: that sense, to lead astray, is Christian Latin (Lewis &amp; Short)."
+    },
+    {
+      "latin": "sēvocō, sēvocāre, sēvocāvī, sēvocātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "call aside",
+      "grammar": "verb, first conjugation, transitive",
+      "evidence": [
+        "Plaut. Men. 1084: <span lang=\"la\">sēvocābō erum</span>",
+        "Caes. B.G. 5.6 (Lewis &amp; Short): <span lang=\"la\">sēvocāre singulōs hortārīque coepit</span>"
+      ],
+      "comment": "A favourite word of Cicero’s (Lewis &amp; Short)."
+    },
+    {
+      "latin": "sēcēdō, sēcēdere, sēcessī, sēcessum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "step aside, withdraw",
+      "grammar": "verb, third conjugation, intransitive",
+      "evidence": [
+        "Plaut. Capt. 263: <span lang=\"la\">Sēcēde hūc.</span>",
+        "Plaut. Curc. 2.3.2 (Lewis &amp; Short): <span lang=\"la\">abīte et dē viā sēcēdite</span>"
+      ],
+      "comment": "<span lang=\"la\">Sēcēde hūc</span>, step over here (for a private word), is the comic formula; so <span lang=\"la\">concēde hūc</span> (Plaut. Men. 158)."
+    },
+    {
+      "latin": "seorsum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "apart, separately, aside",
+      "grammar": "adverb",
+      "comment": "Apart from the others: Plautus has <span lang=\"la\">sēdūxit sōlum sorsum ab aedibus</span> (As. 362), with the old short form. For a word in private, <span lang=\"la\">sēcrētō</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Sēcēde hūc. nam sunt quae ex tē sōlō scītārī volō.",
+      "english": "Step aside over here: there are things I want to ask you alone.",
+      "source": "Plaut. Capt. 263"
+    },
+    {
+      "latin": "eō nunc ego sēcrētō tēd hūc forās sēdūxī, ut tuam rem ego tēcum hīc loquerer familiārem.",
+      "english": "That’s why I’ve taken you aside out here privately, to talk with you about your family affairs.",
+      "source": "Plaut. Aul. 133–134"
+    }
+  ],
+  "related": [
+    "save-for-later",
+    "serious-earnest",
+    "joke"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/seduco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: seduco</a> · <a href=\"https://logeion.uchicago.edu/sevoco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sevoco</a> · <a href=\"https://logeion.uchicago.edu/secedo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: secedo</a> · <a href=\"https://logeion.uchicago.edu/seorsus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: seorsus</a>",
+    "Plaut. As. 362, Aul. 133–134, Capt. 263, Men. 158 and 1084 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

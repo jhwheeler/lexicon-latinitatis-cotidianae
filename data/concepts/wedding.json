@@ -1,0 +1,70 @@
+{
+  "id": "wedding",
+  "english": "wedding",
+  "pos": "noun",
+  "also": [
+    "weddings",
+    "marriage (the ceremony)",
+    "wedding day",
+    "wedding feast",
+    "nuptials",
+    "get ready for the wedding"
+  ],
+  "domain": "sermo",
+  "terms": [
+    {
+      "latin": "nūptiae, nūptiārum f. pl.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a wedding, the marriage ceremony and feast",
+      "grammar": "noun, first declension, plural only",
+      "evidence": [
+        "Ter. And. 47: <span lang=\"la\">nōn sunt vērae nūptiae</span>",
+        "Ter. Ph. 701: <span lang=\"la\">apparandīs nūptiīs</span>",
+        "Traupman 405"
+      ],
+      "comment": "Always plural. <span lang=\"la\">nūptiās facere</span>, hold a wedding (Plaut. Aul. 2.4.9, Lewis &amp; Short); <span lang=\"la\">nūptiās apparāre</span>, get it ready (Ter. Ph. 701). The wedding day is <span lang=\"la\">diēs nūptiārum</span> and anything belonging to it <span lang=\"la\">nūptiālis</span>, as <span lang=\"la\">nūptiāle dōnum</span>, a wedding present (Traupman 405).",
+      "notes": [
+        "nuptiae"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Quās crēdis esse hās nōn sunt vērae nūptiae.",
+      "english": "This wedding you think is going on is not a real one.",
+      "source": "Ter. And. 47"
+    },
+    {
+      "latin": "Spatium quidem tandem apparandīs nūptiīs, vocandī, sacrificandī dabitur paululum.",
+      "english": "Surely a little time will be given for getting the wedding ready, sending the invitations and offering the sacrifice.",
+      "source": "Ter. Ph. 701–702"
+    }
+  ],
+  "notes": {
+    "nuptiae": {
+      "form": "nūptiae",
+      "claim": "long u",
+      "against": "Lewis &amp; Short leaves it unmarked",
+      "html": "From <span lang=\"la\">nūbō, nūpsī, nūptum</span>, which Lewis &amp; Short marks long; the participle and its derivatives keep the vowel of the verb (<span lang=\"la\">nūpta</span>)."
+    }
+  },
+  "related": [
+    "marriage",
+    "marry",
+    "propose-marriage",
+    "party-celebration",
+    "celebrate",
+    "invite"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/nuptiae\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nuptiae</a> · <a href=\"https://logeion.uchicago.edu/nuptialis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nuptialis</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 405.",
+    "Terence checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

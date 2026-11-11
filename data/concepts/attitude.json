@@ -1,0 +1,85 @@
+{
+  "id": "attitude",
+  "english": "attitude",
+  "sense": "way of thinking and feeling about someone or something",
+  "pos": "noun",
+  "also": [
+    "attitude towards",
+    "outlook",
+    "frame of mind",
+    "mentality",
+    "a good attitude",
+    "a bad attitude"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "animus, animī m.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "attitude, disposition, feeling (towards someone)",
+      "grammar": "noun, second declension: with in or ergā and the accusative of the person",
+      "evidence": [
+        "Cic. Fam. 13.77.1: <span lang=\"la\">hōc mē animō ergā tē esse</span>",
+        "Cic. Fam. 3.9.1: <span lang=\"la\">quō animō inter nōs sumus</span>",
+        "Traupman 153: <span lang=\"la\">bonō animō esse</span>, to be in a good frame of mind"
+      ],
+      "comment": "Latin asks “in what spirit” someone is: <span lang=\"la\">quō animō est in nōs?</span>, what is his attitude to us? <span lang=\"la\">Bonō animō esse</span> is to be in good heart (see positive). <span lang=\"la\">Animus</span> is also the mind, courage, and intention, so the phrase around it decides (Lewis &amp; Short)."
+    },
+    {
+      "latin": "voluntās, voluntātis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "disposition, goodwill (towards someone)",
+      "grammar": "noun, third declension: with in or ergā and the accusative",
+      "comment": "Will, wish; of feeling towards a person, goodwill or ill will, often with <span lang=\"la\">bona</span> or <span lang=\"la\">mala</span> (Lewis &amp; Short)."
+    },
+    {
+      "latin": "mēns, mentis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "mind, way of thinking, mentality",
+      "evidence": [
+        "M-O s.v. attitude, mentality"
+      ],
+      "comment": "The mind as thinking; for a fixed way of thinking, Morgan–Owens gives it for “attitude, mentality”. The usual Latin for feeling towards someone is <span lang=\"la\">animus</span>."
+    },
+    {
+      "latin": "gestus, gestūs m.",
+      "status": "avoid",
+      "period": "classical",
+      "gloss": "posture, gesture",
+      "evidence": [
+        "Traupman 149, 274: <span lang=\"la\">gestus tuus mihi displicet</span>, I don’t like your attitude"
+      ],
+      "comment": "Traupman’s “attitude” takes the English word in its old sense, the attitude of the body: classically <span lang=\"la\">gestus</span> is a bearing, posture or gesture, as of an actor or an orator (Lewis &amp; Short), not a way of thinking."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "atque hoc ut tuī necessāriī sciant, hōc mē animō ergā tē esse, velim faciās eōs per litterās certiōrēs",
+      "english": "and so that your friends may know that this is my attitude towards you, please let them know by letter",
+      "source": "Cic. Fam. 13.77.1"
+    },
+    {
+      "latin": "Bonō animō es: dūcēs uxōrem hanc. — Hem. — Bonō animō es, inquam.",
+      "english": "Cheer up: you’ll marry her. — What? — Cheer up, I said.",
+      "source": "Ter. Ad. 696"
+    }
+  ],
+  "related": [
+    "positive-optimistic",
+    "be-in-a-good-mood",
+    "opinion"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/animus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: animus</a> · <a href=\"https://logeion.uchicago.edu/voluntas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: voluntas</a> · <a href=\"https://logeion.uchicago.edu/mens\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mens</a> · <a href=\"https://logeion.uchicago.edu/gestus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gestus</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. attitude, mentality. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 149, 153, 274, checked against the searchable text of the book (11 November 2026).",
+    "Cicero’s letters checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026). Terence as quoted in the record positive (Ter. Ad. 696)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

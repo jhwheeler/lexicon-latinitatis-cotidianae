@@ -1,0 +1,83 @@
+{
+  "id": "oppose",
+  "english": "oppose",
+  "pos": "verb",
+  "also": [
+    "be opposed to",
+    "be against",
+    "go against",
+    "resist",
+    "object to",
+    "stand in the way"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "adversor, adversārī, adversātus sum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "oppose, be against, go against (someone’s wishes)",
+      "grammar": "verb, first conjugation, deponent, with the dative",
+      "evidence": [
+        "Ter. Hec. 654: <span lang=\"la\">nōlī adversārī mihi</span>",
+        "Cic. Verr. 2.5.81 (Lewis &amp; Short): <span lang=\"la\">hujus libīdinī adversārī</span>"
+      ],
+      "comment": "Opposition in opinion or will, which is what English usually means; Lewis &amp; Short notes that <span lang=\"la\">resistere</span> and <span lang=\"la\">obsistere</span> are rather resistance by action. Frequent in Cicero."
+    },
+    {
+      "latin": "repugnō, repugnāre, repugnāvī, repugnātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "fight against, resist, oppose",
+      "grammar": "verb, first conjugation, intransitive; with the dative or absolutely",
+      "evidence": [
+        "Cic. Fam. 1.2.2: <span lang=\"la\">cōnsulēs neque concēdēbant neque valdē repugnābant</span>",
+        "Caes. B.C. 1.32 (Lewis &amp; Short): <span lang=\"la\">Catōne ācerrimē repugnante</span>"
+      ],
+      "comment": "Literally to fight back, of soldiers defending themselves; so to put up resistance to a proposal. Of things compared, to be inconsistent with each other, mostly in Cicero (Lewis &amp; Short)."
+    },
+    {
+      "latin": "obsistō, obsistere, obstitī, obstitum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "stand in the way of, withstand",
+      "grammar": "verb, third conjugation, with the dative",
+      "evidence": [
+        "Cic. Cat. 3.17 (Lewis &amp; Short): <span lang=\"la\">omnibus ejus cōnsiliīs obsistere</span>"
+      ],
+      "comment": "Literally to plant oneself in someone’s way (Plautus); so to block a plan."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Redūc uxōrem, ac nōlī adversārī mihi.",
+      "english": "Take your wife back, and don’t go against me.",
+      "source": "Ter. Hec. 654"
+    },
+    {
+      "latin": "ego sum animō lēnī nātus: nōn possum adversārī meīs.",
+      "english": "I was born soft-hearted: I can’t stand up against my own family.",
+      "source": "Ter. Hec. 270–271"
+    },
+    {
+      "latin": "cōnsulēs neque concēdēbant neque valdē repugnābant",
+      "english": "the consuls neither gave way nor put up much opposition",
+      "source": "Cic. Fam. 1.2.2"
+    }
+  ],
+  "related": [
+    "against",
+    "reject",
+    "argument-quarrel",
+    "mind-object"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/adversor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: adversor</a> · <a href=\"https://logeion.uchicago.edu/repugno\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: repugno</a> · <a href=\"https://logeion.uchicago.edu/obsisto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: obsisto</a>",
+    "Ter. Hec. 270–271, 654 and Cic. Fam. 1.2.2 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

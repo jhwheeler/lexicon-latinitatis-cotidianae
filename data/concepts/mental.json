@@ -1,0 +1,72 @@
+{
+  "id": "mental",
+  "english": "mental",
+  "sense": "of the mind",
+  "pos": "adjective",
+  "also": [
+    "mentally",
+    "mental health",
+    "mental illness",
+    "physically and mentally",
+    "psychological"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "animī",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "of the mind, mental",
+      "grammar": "the genitive of animus, beside the noun it describes, often set against corporis",
+      "evidence": [
+        "Cic. Fam. 7.1.1: <span lang=\"la\">et sine dolōre corporis tē fuisse et animō valuisse</span>",
+        "Cic. Fin. 1.59 (Lewis &amp; Short): <span lang=\"la\">animī morbī sunt cupiditātēs immēnsae et inānēs</span>"
+      ],
+      "comment": "Classical Latin has no adjective for “mental”: it says “of the mind”, <span lang=\"la\">animī</span> (<span lang=\"la\">animī dolor</span>, mental pain; <span lang=\"la\">animī morbus</span>, mental illness, in Cicero a vice or passion), or uses the ablative <span lang=\"la\">animō</span> for “mentally” (<span lang=\"la\">animō valēre</span>), against <span lang=\"la\">corpore</span>, physically."
+    },
+    {
+      "latin": "mentis",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "of the mind (as thinking, reason)",
+      "grammar": "the genitive of mēns",
+      "comment": "Where the reason is meant rather than feeling: <span lang=\"la\">mentis compos</span>, in one’s right mind (Traupman 155, <span lang=\"la\">compos mentis</span>)."
+    },
+    {
+      "latin": "mentālis, mentāle",
+      "status": "avoid",
+      "period": "late",
+      "gloss": "mental",
+      "comment": "Found only once, in a late sermon falsely ascribed to Augustine (Lewis &amp; Short); the classical way is the genitive <span lang=\"la\">animī</span> or <span lang=\"la\">mentis</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "utrumque laetor, et sine dolōre corporis tē fuisse et animō valuisse",
+      "english": "I’m glad of both: that you were free of bodily pain, and that you were mentally sound",
+      "source": "Cic. Fam. 7.1.1"
+    },
+    {
+      "latin": "animī valentēs morbō tentārī nōn possunt, corpora possunt",
+      "english": "healthy minds cannot be attacked by disease; bodies can",
+      "source": "Cic. Tusc. 4.31 (Lewis &amp; Short)"
+    }
+  ],
+  "related": [
+    "arithmetic",
+    "emotion",
+    "attitude",
+    "health"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/animus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: animus</a> · <a href=\"https://logeion.uchicago.edu/mens\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mens</a> · <a href=\"https://logeion.uchicago.edu/mentalis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mentalis</a> · <a href=\"https://logeion.uchicago.edu/morbus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: morbus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 155, checked against the searchable text of the book (11 November 2026).",
+    "Cicero’s letters checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling; they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "id": "speaker",
+  "english": "speaker",
+  "sense": "a person who speaks",
+  "pos": "noun",
+  "also": [
+    "public speaker",
+    "the person speaking",
+    "who’s speaking?",
+    "orator",
+    "spokesman"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "ōrātor, ōrātōris m.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a (public) speaker, orator; spokesman",
+      "evidence": [
+        "Cic. de Or. 1.213 (Lewis &amp; Short): <span lang=\"la\">hunc ego appellō ōrātōrem</span>",
+        "Liv. 1.15 (Lewis &amp; Short): envoys sent to sue for peace"
+      ],
+      "comment": "One who speaks in public, in court or before an assembly, and so the trained orator; in early Latin and Livy also an envoy who carries a spoken message (Lewis &amp; Short). Not the person who happens to be talking."
+    },
+    {
+      "latin": "is quī loquitur (dīcit)",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "the speaker, the person speaking",
+      "grammar": "phrase: a relative clause",
+      "evidence": [
+        "Plaut. Curc. 229: <span lang=\"la\">Quis hic est quī loquitur?</span>"
+      ],
+      "comment": "Latin names the person by what they are doing: <span lang=\"la\">quī loquitur</span>, the one talking; <span lang=\"la\">quī dīcit</span>, the one making a speech. A speaker of Latin is <span lang=\"la\">quī Latīnē loquitur</span> (see speak a language)."
+    },
+    {
+      "latin": "locūtor, locūtōris m.",
+      "status": "avoid",
+      "period": "post-classical",
+      "gloss": "a speaker; a chatterer",
+      "evidence": [
+        "Apul. M. 1 (Lewis &amp; Short): <span lang=\"la\">rudis locūtor exōticī sermōnis</span>",
+        "Gell. 1.15.1 (Lewis &amp; Short)"
+      ],
+      "comment": "Post-classical and rare: in Apuleius a speaker of a language, in Gellius a babbler (Lewis &amp; Short). Use <span lang=\"la\">quī loquitur</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Quis hic loquitur? Mysis? salvē.",
+      "english": "Who’s that speaking? Mysis? Hello.",
+      "source": "Ter. And. 267"
+    },
+    {
+      "latin": "Quis hic est quī loquitur?",
+      "english": "Who is that speaking?",
+      "source": "Plaut. Curc. 229"
+    }
+  ],
+  "related": [
+    "talk",
+    "say",
+    "speak-a-language",
+    "loudspeaker",
+    "address-speak-to"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/orator\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: orator</a> · <a href=\"https://logeion.uchicago.edu/locutor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: locutor</a>",
+    "Ter. And. 267 and Plaut. Curc. 229 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

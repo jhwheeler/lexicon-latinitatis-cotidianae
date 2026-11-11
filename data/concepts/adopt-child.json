@@ -1,0 +1,79 @@
+{
+  "id": "adopt-child",
+  "english": "adopt",
+  "sense": "a child",
+  "pos": "verb",
+  "also": [
+    "adoption",
+    "adopted",
+    "adopted son",
+    "adopted daughter",
+    "adoptive",
+    "adoptive parents",
+    "give up for adoption"
+  ],
+  "domain": "sermo",
+  "terms": [
+    {
+      "latin": "adoptō, adoptāre, adoptāvī, adoptātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "adopt (a child)",
+      "grammar": "verb, first conjugation, transitive: aliquem (sibi fīlium) adoptāre",
+      "evidence": [
+        "Ter. Ad. 47: <span lang=\"la\">hunc majōrem adoptāvī mihi</span>",
+        "Cic. Brut. 77: <span lang=\"la\">quī hunc minōrem Scīpiōnem ā Paulō adoptāvit</span> (Lewis &amp; Short)"
+      ],
+      "comment": "To take someone in the place of a son or grandson, with <span lang=\"la\">ab</span> for the natural father (Lewis &amp; Short). The parent gives a child <span lang=\"la\">adoptandum</span> (Ter. Ad. 114); the adopted son is <span lang=\"la\">fīlius adoptīvus</span>, and the adoption <span lang=\"la\">adoptiō</span>. Its first sense is “choose” (see adopt, take up)."
+    },
+    {
+      "latin": "adoptiō, adoptiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "adoption",
+      "evidence": [
+        "Cic. Fin. 1.24: <span lang=\"la\">ēmancipāre fīlium alicui in adoptiōnem</span> (Lewis &amp; Short, as Fin. 1.7)",
+        "Vell. 2.8.2: <span lang=\"la\">dare sē alicui in adoptiōnem</span> (Lewis &amp; Short)"
+      ],
+      "comment": "In Roman law the adoption of a child still in his father’s power; taking in a man already independent was <span lang=\"la\">arrogātiō</span> (Lewis &amp; Short). <span lang=\"la\">in adoptiōnem dare</span>, give for adoption."
+    },
+    {
+      "latin": "adoptīvus, adoptīva, adoptīvum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "adopted, adoptive",
+      "comment": "Of the adopted child (<span lang=\"la\">fīlius adoptīvus</span>, against <span lang=\"la\">nātūrālis</span>) and of the adoptive parent (<span lang=\"la\">pater adoptīvus</span>, Dig.); Ovid uses it of a graft on a tree (Ars 2.652).",
+      "evidence": [
+        "Suet. Tib. 52 (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "uxōrem dūxit; nātī fīliī duo: inde ego hunc majōrem adoptāvī mihi; ēdūxī ā parvulō; habuī, amāvī prō meō",
+      "english": "he married; two sons were born; then I adopted the elder one as my own; I brought him up from a little boy; I kept him and loved him as mine",
+      "source": "Ter. Ad. 46–48"
+    },
+    {
+      "latin": "Tuum fīlium dedistī adoptandum mihi: is meus est factus.",
+      "english": "You gave me your son to adopt: he has become mine.",
+      "source": "Ter. Ad. 114–115"
+    }
+  ],
+  "related": [
+    "adopt-take-up",
+    "children-offspring",
+    "son",
+    "parents",
+    "childhood"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/adopto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: adopto</a> · <a href=\"https://logeion.uchicago.edu/adoptio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: adoptio</a> · <a href=\"https://logeion.uchicago.edu/adoptivus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: adoptivus</a>",
+    "Terence checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

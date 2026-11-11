@@ -1,0 +1,55 @@
+{
+  "id": "mystery",
+  "english": "mystery",
+  "pos": "noun",
+  "also": [
+    "mysterious",
+    "mysteries",
+    "it’s a mystery",
+    "secret",
+    "puzzle (a mystery)"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "rēs occulta",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a hidden thing, something unknown",
+      "comment": "Plain prose says what is hidden or unknown: <span lang=\"la\">rēs occulta, rēs obscūra</span>; “it’s a mystery to me” is <span lang=\"la\">nesciō quō pactō factum sit</span> or <span lang=\"la\">mīrum est</span>."
+    },
+    {
+      "latin": "arcānum, arcānī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a secret, a mystery",
+      "evidence": [
+        "Cic. Fin. 2.85: <span lang=\"la\">quīcum arcāna, quīcum occulta omnia</span> (Lewis &amp; Short, s.v. <span lang=\"la\">arcānus</span>)"
+      ],
+      "comment": "The neuter of <span lang=\"la\">arcānus</span>, “kept close”: a secret, especially one kept or sacred; rare in Cicero."
+    },
+    {
+      "latin": "mystērium, mystēriī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a secret rite; a secret; (Church) a mystery",
+      "evidence": [
+        "Cic. Att. 4.18.1: <span lang=\"la\">epistulae nostrae tantum habent mystēriōrum</span> (Lewis &amp; Short)",
+        "Cic. Tusc. 4.55: <span lang=\"la\">rhētorum mystēria</span> (Lewis &amp; Short)"
+      ],
+      "comment": "The secret rites of Eleusis; in Cicero’s letters, jokingly, a secret; in Church Latin a truth beyond human understanding and a sacrament."
+    }
+  ],
+  "related": [
+    "riddle",
+    "unclear-uncertain"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/occultus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: occultus</a> · <a href=\"https://logeion.uchicago.edu/arcanus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: arcanus</a> · <a href=\"https://logeion.uchicago.edu/mysterium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mysterium</a>"
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

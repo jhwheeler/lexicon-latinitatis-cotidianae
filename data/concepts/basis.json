@@ -9,7 +9,10 @@
     "on the basis of",
     "based on",
     "be based on",
-    "rest on"
+    "rest on",
+    "underlie",
+    "underlying",
+    "underlying cause"
   ],
   "domain": "verba",
   "terms": [
@@ -46,6 +49,18 @@
         "Traupman 92: <span lang=\"la\">Ex verbīs tuīs colligō</span>, I infer from what you say"
       ],
       "comment": "What a conclusion or a claim rests on: <span lang=\"la\">ex tuīs litterīs</span>, on the strength of your letter."
+    },
+    {
+      "latin": "subsum, subesse",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "be underneath; underlie, lie behind",
+      "grammar": "verb, irregular, no perfect",
+      "evidence": [
+        "Cic. Off. 1.38: <span lang=\"la\">eadem causa subest</span> (Lewis &amp; Short)",
+        "Cic. Fin. 5.29: <span lang=\"la\">causa aliqua</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Of a cause, a reason or a suspicion that lies behind something: <span lang=\"la\">causa subest</span> (Lewis &amp; Short)."
     }
   ],
   "phrases": [
@@ -71,13 +86,13 @@
     "reason"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/fundamentum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fundamentum</a> · <a href=\"https://logeion.uchicago.edu/nitor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nitor</a> · <a href=\"https://logeion.uchicago.edu/ex\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ex</a>",
+    "<a href=\"https://logeion.uchicago.edu/fundamentum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fundamentum</a> · <a href=\"https://logeion.uchicago.edu/nitor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nitor</a> · <a href=\"https://logeion.uchicago.edu/ex\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ex</a> · <a href=\"https://logeion.uchicago.edu/subsum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: subsum</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 92, checked against the searchable text of the book (9 November 2026).",
     "Cicero, <em>Pro Plancio</em>, <em>De officiis</em> 1, <em>De divinatione</em> 2 and <em>De senectute</em>, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-11",
     "by": "Claude"
   }
 }

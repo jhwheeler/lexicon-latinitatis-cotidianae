@@ -2,6 +2,11 @@
   "id": "little-by-little",
   "english": "little by little",
   "pos": "adverb",
+  "also": [
+    "gradually",
+    "by degrees",
+    "bit by bit"
+  ],
   "domain": "culina",
   "terms": [
     {
@@ -9,14 +14,53 @@
       "status": "recommended",
       "period": "classical",
       "grammar": "adverb"
+    },
+    {
+      "latin": "sēnsim",
+      "status": "alternative",
+      "period": "classical",
+      "grammar": "adverb",
+      "gloss": "gradually, imperceptibly, gently",
+      "evidence": [
+        "Cic. Sen. 38: <span lang=\"la\">ita sēnsim sine sēnsū aetās senēscit</span>"
+      ],
+      "comment": "From <span lang=\"la\">sentiō</span>: so slowly that one hardly notices; the opposite of <span lang=\"la\">repente</span> (Lewis &amp; Short)."
+    },
+    {
+      "latin": "gradātim",
+      "status": "alternative",
+      "period": "classical",
+      "grammar": "adverb",
+      "gloss": "step by step, by degrees",
+      "evidence": [
+        "Cic. Fam. 9.14.7: <span lang=\"la\">pedetentim et gradātim</span> (Lewis &amp; Short)"
+      ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "ita sēnsim sine sēnsū aetās senēscit nec subitō frangitur, sed diūturnitāte exstinguitur",
+      "english": "so life grows old little by little, without our noticing, and does not snap suddenly but goes out with long time",
+      "source": "Cic. Sen. 38"
+    },
+    {
+      "latin": "farīnam in mortārium inditō, aquae paulātim additō subigitōque pulchrē",
+      "english": "put the flour in the bowl, add water little by little, and knead it well",
+      "source": "Cato Agr. 74"
+    }
+  ],
+  "related": [
+    "step-by-step",
+    "slowly"
+  ],
   "sources": [
-    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+    "<a href=\"https://logeion.uchicago.edu/paulatim\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: paulatim</a> · <a href=\"https://logeion.uchicago.edu/sensim\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sensim</a> · <a href=\"https://logeion.uchicago.edu/gradatim\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gradatim</a>",
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+    "Quotations from the Latinitas loci collections (loci-cicero-philosophica, loci-cato), checked against the editions named there."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-11",
     "by": "Claude"
   }
 }

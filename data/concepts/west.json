@@ -2,6 +2,11 @@
   "id": "west",
   "english": "west",
   "pos": "noun",
+  "also": [
+    "western",
+    "westerly",
+    "in the west"
+  ],
   "domain": "vectura",
   "terms": [
     {
@@ -9,6 +14,18 @@
       "status": "recommended",
       "period": "classical",
       "gloss": "the west"
+    },
+    {
+      "latin": "occidentālis, occidentāle",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "western, westerly",
+      "grammar": "adjective, third declension",
+      "evidence": [
+        "Plin. NH 18.338: <span lang=\"la\">ab occidentālī latere septentriōnis</span> (Lewis &amp; Short)",
+        "Gell. 2.22.22: <span lang=\"la\">ventus</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Post-Augustan: Pliny, Gellius, the Vulgate (Lewis &amp; Short)."
     }
   ],
   "related": [
@@ -17,11 +34,11 @@
     "east"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/occidens\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: occidens</a>"
+    "<a href=\"https://logeion.uchicago.edu/occidens\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: occidens</a> · <a href=\"https://logeion.uchicago.edu/occidentalis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: occidentalis</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-11",
     "by": "Claude"
   }
 }

@@ -1,0 +1,63 @@
+{
+  "id": "resign",
+  "english": "resign",
+  "pos": "verb",
+  "also": [
+    "resignation",
+    "step down",
+    "quit (a job, a post)",
+    "hand in one’s notice",
+    "stand down"
+  ],
+  "domain": "labor",
+  "terms": [
+    {
+      "latin": "sē abdicāre (+ abl.)",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "resign (an office)",
+      "evidence": [
+        "Cic. Div. 2.74: <span lang=\"la\">cōnsulēs magistrātū sē abdicāvērunt</span> (Lewis &amp; Short)",
+        "Cic. Cat. 3.15: <span lang=\"la\">sē praetūrā</span> (Lewis &amp; Short)"
+      ],
+      "comment": "The formal word for giving up an office before its term: <span lang=\"la\">magistrātū, cōnsulātū, dictātūrā sē abdicāre</span>; also <span lang=\"la\">tūtēlā sē abdicāre</span> (Cic. Att. 6.1.4). Without <span lang=\"la\">sē</span>, <span lang=\"la\">abdicāre</span> is to disown or reject."
+    },
+    {
+      "latin": "dēpōnō, dēpōnere, dēposuī, dēpositum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "lay down, give up (a post, a command)",
+      "evidence": [
+        "Caes. BG 7.33: <span lang=\"la\">imperium</span> (Lewis &amp; Short)",
+        "Cic. Pis. 5: <span lang=\"la\">prōvinciam</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Lewis &amp; Short gives <span lang=\"la\">dēpōnere magistrātum</span> as the synonym of <span lang=\"la\">sē abdicāre</span>. With <span lang=\"la\">mūnus</span> or <span lang=\"la\">officium</span> it serves for leaving a job today."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "cōnsulēs magistrātū sē abdicāvērunt",
+      "english": "the consuls resigned their office",
+      "source": "Cic. Div. 2.74"
+    },
+    {
+      "latin": "Mūnus suum dēposuit et nunc rūrī vīvit.",
+      "english": "He resigned his post and now lives in the country.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "retire",
+    "fire-dismiss",
+    "employee"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/abdico\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: abdico</a> · <a href=\"https://logeion.uchicago.edu/depono\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: depono</a>",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

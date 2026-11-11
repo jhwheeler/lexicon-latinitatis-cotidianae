@@ -1,0 +1,82 @@
+{
+  "id": "poetry",
+  "english": "poetry",
+  "pos": "noun",
+  "also": [
+    "verse",
+    "poems",
+    "poetic",
+    "write poetry"
+  ],
+  "domain": "schola",
+  "terms": [
+    {
+      "latin": "poēmata, poēmatum n. pl.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "poems, poetry (as opposed to prose)",
+      "evidence": [
+        "Cic. Or. 70: <span lang=\"la\">poēmata</span> opposed to <span lang=\"la\">ōrātiō</span> (Lewis &amp; Short)",
+        "Cic. Off. 3.15 (Lewis &amp; Short)"
+      ],
+      "comment": "Poetry as a body of poems; the singular <span lang=\"la\">poēma, poēmatis n.</span> is one poem."
+    },
+    {
+      "latin": "poētica, poēticae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the art of poetry",
+      "evidence": [
+        "Cic. Tusc. 4.69: <span lang=\"la\">ō praeclāram ēmendātrīcem vītae poēticam!</span> (Lewis &amp; Short)",
+        "Nep. Att. 18.5: <span lang=\"la\">attigit quoque poēticēn</span>"
+      ],
+      "comment": "Poetry as an art or pursuit; Nepos and Pliny use the Greek form <span lang=\"la\">poēticē, poēticēs f.</span>."
+    },
+    {
+      "latin": "poēsis, poēsis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "poetry; a poet’s work",
+      "evidence": [
+        "Cic. Tusc. 4.71: <span lang=\"la\">Anacreontis tōta poēsis est amātōria</span> (Lewis &amp; Short)",
+        "Hor. AP 361",
+        "Traupman 168"
+      ]
+    },
+    {
+      "latin": "carmina, carminum n. pl.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "poems, verses, songs",
+      "comment": "Poems, especially as songs; the word for one’s own verses (see song). <span lang=\"la\">versūs facere</span> is “write poetry” (Cic. Q. fr. 3.5, Lewis &amp; Short s.v. <span lang=\"la\">faciō</span>)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "sponte suā carmen numerōs veniēbat ad aptōs, et quod temptābam scrībere versus erat",
+      "english": "of its own accord my song fell into the right rhythm, and whatever I tried to write came out as verse",
+      "source": "Ov. Tr. 4.10.25–26"
+    },
+    {
+      "latin": "foliīs tantum nē carmina mandā, nē turbāta volent rapidīs lūdibria ventīs",
+      "english": "only don’t write your verses on leaves, in case they are scattered and fly off as playthings of the rushing winds",
+      "source": "Verg. A. 6.74–75"
+    }
+  ],
+  "related": [
+    "poet",
+    "song",
+    "recite",
+    "compose"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/poema\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: poema</a> · <a href=\"https://logeion.uchicago.edu/poeticus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: poeticus</a> · <a href=\"https://logeion.uchicago.edu/poesis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: poesis</a> · <a href=\"https://logeion.uchicago.edu/carmen\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: carmen</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 168, checked against the searchable text of the book.",
+    "Quotations from the Latinitas loci collections (loci-ovidius, loci-vergilius), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

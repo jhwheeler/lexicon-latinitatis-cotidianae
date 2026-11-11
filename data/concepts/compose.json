@@ -1,0 +1,71 @@
+{
+  "id": "compose",
+  "english": "compose",
+  "pos": "verb",
+  "also": [
+    "write (a poem, a letter, a piece)",
+    "compose music",
+    "composition",
+    "put together"
+  ],
+  "domain": "schola",
+  "terms": [
+    {
+      "latin": "compōnō, compōnere, composuī, compositum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "compose, write (a book, a poem, a letter)",
+      "evidence": [
+        "Cic. Q. fr. 3.1.4: <span lang=\"la\">poēma</span> (Lewis &amp; Short)",
+        "Hor. S. 1.4.8: <span lang=\"la\">versūs</span> (Lewis &amp; Short)",
+        "Tib. 1.2.53: <span lang=\"la\">cantūs</span> (Lewis &amp; Short)"
+      ],
+      "comment": "To put a written work together: books, speeches, letters, edicts, verses. Its first sense is “put together, arrange”, and it also means settle a quarrel and lay out the dead."
+    },
+    {
+      "latin": "faciō, facere, fēcī, factum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "make (verses, a poem)",
+      "evidence": [
+        "Cic. Pis. 70: <span lang=\"la\">poēma</span> (Lewis &amp; Short)",
+        "Cic. Q. fr. 3.5: <span lang=\"la\">versūs</span> (Lewis &amp; Short)"
+      ],
+      "comment": "The plain everyday way to say it: <span lang=\"la\">versūs facere</span>, <span lang=\"la\">poēma facere</span> (Catull. 50.16, <span lang=\"la\">hoc, jūcunde, tibi poēma fēcī</span>). For music, <span lang=\"la\">modōs facere</span> (M-O s.v. compose (music), after Terence)."
+    },
+    {
+      "latin": "scrībō, scrībere, scrīpsī, scrīptum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "write",
+      "comment": "“Write” in general (see write); with <span lang=\"la\">carmen</span> or <span lang=\"la\">versūs</span> it is “write a poem”."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "hoc, jūcunde, tibi poēma fēcī",
+      "english": "I made this poem for you, my dear friend",
+      "source": "Catull. 50.16"
+    },
+    {
+      "latin": "sponte suā carmen numerōs veniēbat ad aptōs, et quod temptābam scrībere versus erat",
+      "english": "of its own accord my song fell into the right rhythm, and whatever I tried to write came out as verse",
+      "source": "Ov. Tr. 4.10.25–26"
+    }
+  ],
+  "related": [
+    "poetry",
+    "poet",
+    "write"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/compono\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: compono</a> · <a href=\"https://logeion.uchicago.edu/facio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: facio</a> · <a href=\"https://logeion.uchicago.edu/scribo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: scribo</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. compose (music).",
+    "Quotations from the Latinitas loci collections (loci-catullus, loci-ovidius), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

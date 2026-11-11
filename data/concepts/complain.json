@@ -1,0 +1,102 @@
+{
+  "id": "complain",
+  "english": "complain",
+  "pos": [
+    "verb",
+    "noun"
+  ],
+  "also": [
+    "complaint",
+    "make a complaint",
+    "grumble",
+    "moan",
+    "complain to someone",
+    "complain about"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "queror, querī, questus sum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "complain (of), lament",
+      "grammar": "verb, third conjugation, deponent; with an accusative, dē + ablative, an accusative and infinitive, or quod; to someone, cum aliquō or apud aliquem",
+      "evidence": [
+        "Cic. Fam. 3.10.7: <span lang=\"la\">quererer tēcum atque expostulārem</span>",
+        "Sen. Ep. 56.7: <span lang=\"la\">quae nōn audit audīsse sē queritur</span>"
+      ],
+      "comment": "What one complains of in the accusative (<span lang=\"la\">injūriam querī</span>) or with <span lang=\"la\">dē</span>; the person complained to with <span lang=\"la\">cum</span> or <span lang=\"la\">apud</span>. It is also to lament one’s lot, and in poetry of birds’ song (Lewis &amp; Short)."
+    },
+    {
+      "latin": "conqueror, conquerī, conquestus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "complain at length, pour out one’s complaints",
+      "grammar": "verb, third conjugation, deponent",
+      "evidence": [
+        "Plaut. Mil. 125: <span lang=\"la\">conqueritur mēcum mulier fortūnās suās</span>"
+      ],
+      "comment": "A fuller, louder complaining than <span lang=\"la\">queror</span>."
+    },
+    {
+      "latin": "querēla (querella), querēlae f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a complaint",
+      "evidence": [
+        "Cic. Q. Fr. 3.8.1 (Lewis &amp; Short): <span lang=\"la\">epistula plēna querēlārum</span>"
+      ],
+      "comment": "The usual noun; with a genitive of what it is about, <span lang=\"la\">querēla temporum</span>, a complaint against the times (Cic. Fam. 2.16.1). After Augustus also a formal accusation (Petronius, the Digest)."
+    },
+    {
+      "latin": "querimōnia, querimōniae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a complaint, grievance",
+      "evidence": [
+        "Plaut. Men. 785: <span lang=\"la\">neuter ad mē īrētis cum querimōniā</span>"
+      ]
+    },
+    {
+      "latin": "expostulō, expostulāre, expostulāvī, expostulātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "complain to someone’s face, remonstrate",
+      "grammar": "verb, first conjugation; cum aliquō (dē aliquā rē)",
+      "comment": "Classically to have it out with someone, <span lang=\"la\">cum aliquō expostulāre</span>; later chiefly to demand urgently (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "quotiēns tandem ēdīxī tibi, ut cavērēs, neuter ad mē īrētis cum querimōniā?",
+      "english": "How many times have I told you to make sure that neither of you came to me with a complaint?",
+      "source": "Plaut. Men. 784–785"
+    },
+    {
+      "latin": "quererer tēcum atque expostulārem",
+      "english": "I would complain to you and have it out with you",
+      "source": "Cic. Fam. 3.10.7"
+    },
+    {
+      "latin": "hūc nempe versātur atque illūc, somnum inter aegritūdinēs levem captāns; quae nōn audit audīsse sē queritur",
+      "english": "he tosses this way and that, trying to catch a light sleep between his worries, and complains that he has heard what he doesn’t hear",
+      "source": "Sen. Ep. 56.7"
+    }
+  ],
+  "related": [
+    "alas",
+    "wail",
+    "mind-object",
+    "against"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/queror\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: queror</a> · <a href=\"https://logeion.uchicago.edu/conqueror\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: conqueror</a> · <a href=\"https://logeion.uchicago.edu/querela\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: querela</a> · <a href=\"https://logeion.uchicago.edu/querimonia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: querimonia</a> · <a href=\"https://logeion.uchicago.edu/expostulo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: expostulo</a>",
+    "Cic. Fam. 3.10.7, Plaut. Mil. 125 and Men. 784–785 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026).",
+    "Seneca from the Latinitas loci collection (loci-seneca-epistulae)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

@@ -51,7 +51,7 @@ KEEP = {
     'deiot': 'abbreviation of Cicero’s Pro rege Deiotaro in citations: the i is a vowel (Dēiŏtarus, Greek Δηιόταρος)',
     'dēiotarus': 'Greek Δηιόταρος, vocalic i', 'dēiotarō': 'Greek Δηιόταρος, vocalic i', 'dēiotarum': 'Greek Δηιόταρος, vocalic i',
     'gāium': 'trisyllabic Gāĭus', 'gāiō': 'trisyllabic Gāĭus', 'gāiī': 'trisyllabic Gāĭus', 'gāī': 'trisyllabic Gāĭus',
-    'iambus': 'Greek ἴαμβος', 'iōnia': 'Greek Ἰωνία', 'iōnēs': 'Greek Ἴωνες', 'iōta': 'Greek ἰῶτα',
+    'iambus': 'Greek ἴαμβος', 'iambīs': 'Greek ἴαμβος (Lewis & Short ĭambus)', 'iōnia': 'Greek Ἰωνία', 'iōnēs': 'Greek Ἴωνες', 'iōta': 'Greek ἰῶτα',
     'iātralīptēs': 'Greek ἰᾱτραλείπτης, vocalic i', 'iātralīptae': 'Greek ἰᾱτραλείπτης, vocalic i',
     'iātralīptēn': 'Greek ἰᾱτραλείπτης, vocalic i',
     'iatraliptice': 'Lewis & Short headword in a citation label (Greek ἰατραλειπτική)',

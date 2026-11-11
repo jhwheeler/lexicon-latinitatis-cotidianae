@@ -1,0 +1,102 @@
+{
+  "id": "slightly",
+  "english": "slightly",
+  "pos": "adverb",
+  "also": [
+    "a little (in degree)",
+    "somewhat",
+    "a bit (more, less)",
+    "slightly more",
+    "slightly less"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "paulum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "slightly, a little (with verbs and prepositions)",
+      "grammar": "adverb: the accusative of paulus",
+      "evidence": [
+        "Caes. BG 6.9: <span lang=\"la\">paulum suprā eum locum</span> (Lewis &amp; Short)",
+        "Cic. Agr. 2.85: <span lang=\"la\">paulum differre</span> (Lewis &amp; Short)"
+      ],
+      "comment": "With verbs and prepositions: <span lang=\"la\">paulum differre</span>, to differ slightly; <span lang=\"la\">paulum suprā</span>, slightly above. With a comparative Latin uses the ablative <span lang=\"la\">paulō</span> instead (next). The same word is the noun “a little” of an amount (see a little)."
+    },
+    {
+      "latin": "paulō (+ comparative)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "slightly (more, less, earlier)",
+      "grammar": "ablative of the degree of difference, with a comparative or with ante, post",
+      "evidence": [
+        "Cic. Quinct. 11: <span lang=\"la\">paulō minus cōnsīderātus</span> (Lewis &amp; Short)",
+        "Cic. Or. 82: <span lang=\"la\">līberius paulō</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Latin measures the difference by the ablative: <span lang=\"la\">paulō major</span>, slightly bigger; <span lang=\"la\">paulō ante</span>, a little earlier (Lewis &amp; Short)."
+    },
+    {
+      "latin": "leviter",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "slightly (ill, hurt, bent)",
+      "grammar": "adverb",
+      "evidence": [
+        "Cic. Off. 1.83: <span lang=\"la\">quī leviter aegrōtantēs lēniter cūrant</span> (Lewis &amp; Short)",
+        "Cic. Inv. 2.154: <span lang=\"la\">leviter saucius</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Of a condition that is slight, not grave: <span lang=\"la\">leviter aegrōtāre</span>, to be slightly ill; <span lang=\"la\">leviter saucius</span>, slightly wounded. This is its usual sense in Cicero; the literal “lightly, not heavily” is rare (Lewis &amp; Short)."
+    },
+    {
+      "latin": "subtristis, subtriste",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "slightly sad",
+      "grammar": "adjective, third declension",
+      "register": "vōx cōmica: Ter.; in ōrātiōne solūtā rāra",
+      "evidence": [
+        "Ter. And. 447: <span lang=\"la\">Subtristis vīsus est esse aliquantulum mihi.</span>"
+      ],
+      "comment": "Latin can say “slightly” with the prefix <span lang=\"la\">sub-</span>: <span lang=\"la\">subtristis</span>, a little sad, is Terence’s (Lewis &amp; Short: ante- and post-classical). Use the compounds the dictionary gives rather than coining new ones."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "quī leviter aegrōtantēs lēniter cūrant",
+      "english": "(doctors) who treat the slightly ill gently",
+      "source": "Cic. Off. 1.83 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "Subtristis vīsus est esse aliquantulum mihi.",
+      "english": "He seemed to me a little on the sad side.",
+      "source": "Ter. And. 447"
+    },
+    {
+      "latin": "paulō minus cōnsīderātus",
+      "english": "slightly less careful",
+      "source": "Cic. Quinct. 11 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "Paulō major est quam tū.",
+      "english": "He’s slightly bigger than you.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "a-little",
+    "quite-fairly",
+    "very",
+    "almost"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/paulus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: paulus</a> · <a href=\"https://logeion.uchicago.edu/paulum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: paulum</a> · <a href=\"https://logeion.uchicago.edu/levis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: levis</a> · <a href=\"https://logeion.uchicago.edu/subtristis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: subtristis</a>",
+    "Quotations from the Latinitas loci collections (loci-terentius), checked against the editions named there.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition.",
+    "The example sentences marked “composed” are ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

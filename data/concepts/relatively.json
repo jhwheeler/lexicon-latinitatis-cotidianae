@@ -1,0 +1,81 @@
+{
+  "id": "relatively",
+  "english": "relatively",
+  "pos": "adverb",
+  "also": [
+    "comparatively",
+    "fairly (for what it is)",
+    "for (for those times, for a child)",
+    "considering"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "loquācior, longior (comparative alone)",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "rather, relatively (talkative, long)",
+      "grammar": "the comparative of an adjective or adverb without a second term",
+      "evidence": [
+        "Cic. Sen. 55: <span lang=\"la\">senectūs est nātūrā loquācior</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Latin says “relatively long” with the comparative alone, which then means “rather, fairly, more than usual”: <span lang=\"la\">loquācior</span>, rather talkative."
+    },
+    {
+      "latin": "ut (+ in, or a clause)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "for, considering, relative to (the times, the person)",
+      "grammar": "conjunction: ut with in + ablative, or with a clause, restricting what is said",
+      "evidence": [
+        "Cic. Brut. 102: <span lang=\"la\">scrīptor, ut temporibus illīs, lūculentus</span> (Lewis &amp; Short)",
+        "Cic. Sen. 12: <span lang=\"la\">multae, ut in homine Rōmānō, litterae</span> (Lewis &amp; Short)",
+        "Cic. Fam. 12.2.2: <span lang=\"la\">nōnnihil, ut in tantīs malīs, est prōfectum</span> (Lewis &amp; Short)"
+      ],
+      "comment": "The Latin for “good for those times”, “learned, for a Roman”: <span lang=\"la\">ut</span> limits the praise to the circumstances (Lewis &amp; Short, s.v. <span lang=\"la\">ut</span>: “for, as, considering”)."
+    },
+    {
+      "latin": "prō (+ ablative)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "in proportion to, relative to",
+      "grammar": "preposition with the ablative",
+      "evidence": [
+        "Liv. 21.29: <span lang=\"la\">atrōcius quam prō numerō pugnantium</span> (Lewis &amp; Short)",
+        "Cic. Sen. 27: <span lang=\"la\">agere prō vīribus</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Measures a thing against a standard: <span lang=\"la\">prō vīribus</span>, as far as one’s strength allows; <span lang=\"la\">atrōcius quam prō numerō</span>, fiercer than the numbers would suggest (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "senectūs est nātūrā loquācior",
+      "english": "old age is by nature rather talkative",
+      "source": "Cic. Sen. 55 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "Caelius Antipater, scrīptor, ut temporibus illīs, lūculentus",
+      "english": "Caelius Antipater, a fine writer for those times",
+      "source": "Cic. Brut. 102 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "multae, ut in homine Rōmānō, litterae",
+      "english": "much learning, for a Roman",
+      "source": "Cic. Sen. 12 (Lewis &amp; Short)"
+    }
+  ],
+  "related": [
+    "quite-fairly",
+    "slightly",
+    "more-degree"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/loquax\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: loquax</a> · <a href=\"https://logeion.uchicago.edu/ut\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ut</a> · <a href=\"https://logeion.uchicago.edu/pro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pro</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

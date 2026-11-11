@@ -1,0 +1,82 @@
+{
+  "id": "enable",
+  "english": "enable",
+  "sense": "make it possible for someone",
+  "pos": "verb",
+  "also": [
+    "make possible",
+    "make it possible",
+    "give the chance",
+    "thanks to"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "facultātem dare",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "give the means or the chance",
+      "grammar": "phrase: the person in the dative, what he can do in the genitive (a noun or a gerund) or with ad and the gerund",
+      "evidence": [
+        "Caes. BG 1.32: <span lang=\"la\">quod reliquīs fugae facultās darētur</span> (Lewis &amp; Short)",
+        "Cic. Font. 22: <span lang=\"la\">nē īrātō facultās ad dīcendum data esse videātur</span> (Lewis &amp; Short)"
+      ],
+      "comment": "<span lang=\"la\">Facultās</span> is the possibility or the means of doing something; it also means ability, skill (<span lang=\"la\">dīcendī facultās</span>, eloquence) and, in the plural, means, wealth (Lewis &amp; Short)."
+    },
+    {
+      "latin": "operā meā, tuā",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "thanks to me, to you; through my, your doing",
+      "grammar": "phrase: ablative of <span lang=\"la\">opera</span> with a possessive or a genitive",
+      "evidence": [
+        "Cic. Sen. 11: <span lang=\"la\">meā operā, Q. Fabī, Tarentum recēpistī</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Says whose help made a thing possible, and also whose fault it was: <span lang=\"la\">nōn meā operā … ēvēnit</span>, “it was not my doing” (Ter. Hec. 2.1.31, Lewis &amp; Short)."
+    },
+    {
+      "latin": "efficiō, efficere, effēcī, effectum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "bring it about (that someone can)",
+      "grammar": "verb, third conjugation (-iō): ut and the subjunctive, here of <span lang=\"la\">possum</span>",
+      "evidence": [
+        "Cic. Lael. 59 (Lewis &amp; Short)"
+      ],
+      "comment": "<span lang=\"la\">efficere ut possit</span> spells out “enable”; see cause and ensure. For permission, “let”, see allow."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "quod reliquīs fugae facultās darētur",
+      "english": "because the rest were given the chance to escape",
+      "source": "Caes. BG 1.32 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "meā operā, Q. Fabī, Tarentum recēpistī",
+      "english": "it was thanks to me, Quintus Fabius, that you got Tarentum back",
+      "source": "Cic. Sen. 11 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "Tuā operā hoc perficere potuī.",
+      "english": "Thanks to you I was able to finish this.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "allow",
+    "cause",
+    "ensure",
+    "help"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/facultas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: facultas</a> · <a href=\"https://logeion.uchicago.edu/opera\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: opera</a> · <a href=\"https://logeion.uchicago.edu/efficio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: efficio</a>",
+    "Quotations marked “Lewis &amp; Short” are copied from its citations.",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

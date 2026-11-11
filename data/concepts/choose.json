@@ -2,15 +2,31 @@
   "id": "choose",
   "english": "choose",
   "pos": "verb",
+  "also": [
+    "select",
+    "pick out"
+  ],
+  "domain": "sermo",
   "also_under": [
     "verba"
   ],
-  "domain": "sermo",
   "terms": [
     {
       "latin": "ēligō, ēligere, ēlēgī, ēlēctum",
       "status": "recommended",
       "period": "classical"
+    },
+    {
+      "latin": "dēligō, dēligere, dēlēgī, dēlēctum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "choose out, select",
+      "grammar": "verb, third conjugation: with an accusative, often with ex",
+      "evidence": [
+        "Plaut. Am. 1.1.49: <span lang=\"la\">dēlēgit virōs prīmōrēs prīncipēs</span> (Lewis &amp; Short)",
+        "Cic. Rosc. Am. 3 fin.: <span lang=\"la\">quī ex senātū in hoc cōnsilium dēlēctī estis</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Pick the best or the fittest out of a number: men for a task, a leader, a place for a camp (Lewis &amp; Short). Not to be confused with <span lang=\"la\">dēligāre</span>, “tie fast”."
     }
   ],
   "phrases": [
@@ -26,7 +42,7 @@
     "this-one-or-that-one"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/eligo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: eligo</a>",
+    "<a href=\"https://logeion.uchicago.edu/eligo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: eligo</a> · <a href=\"https://logeion.uchicago.edu/deligo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: deligo</a>",
     "The example sentence marked “composed” is ours."
   ],
   "review": {

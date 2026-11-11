@@ -1,0 +1,75 @@
+{
+  "id": "teach",
+  "english": "teach",
+  "pos": "verb",
+  "also": [
+    "taught",
+    "teach someone something",
+    "teaching"
+  ],
+  "domain": "schola",
+  "terms": [
+    {
+      "latin": "doceō, docēre, docuī, doctum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "teach",
+      "grammar": "verb, second conjugation, with two accusatives (whom and what)",
+      "evidence": [
+        "Cic. Pis. 30: <span lang=\"la\">aliquem litterās</span> (Lewis &amp; Short)",
+        "Traupman 32"
+      ],
+      "comment": "The person taught and the thing taught are both accusative: <span lang=\"la\">puerōs elementa docet</span>. It is also “show, inform” (see explain)."
+    },
+    {
+      "latin": "ērudiō, ērudīre, ērudīvī, ērudītum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "educate, instruct",
+      "evidence": [
+        "Cic. Off. 1.156 (Lewis &amp; Short)"
+      ],
+      "comment": "Literally “take the roughness out”: to educate, more formal than <span lang=\"la\">docēre</span>."
+    },
+    {
+      "latin": "īnstituō, īnstituere, īnstituī, īnstitūtum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "train, bring up",
+      "evidence": [
+        "Lewis &amp; Short s.v. <span lang=\"la\">ērudiō</span>: with <span lang=\"la\">īnstituere</span>"
+      ],
+      "comment": "To ground someone in something, to train; its everyday senses are “set up, begin, decide”."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "fās est et ab hoste docērī",
+      "english": "it is right to be taught even by an enemy",
+      "source": "Ov. Met. 4.428"
+    },
+    {
+      "latin": "Praeceptor sedet in cathedrā; discipulī in subselliīs; ille docet, hī discunt.",
+      "english": "The teacher sits in his chair, the pupils on the benches; he teaches, they learn.",
+      "source": "Comen. OP 97"
+    }
+  ],
+  "related": [
+    "learn",
+    "teacher",
+    "lesson",
+    "pupil",
+    "explain"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/doceo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: doceo</a> · <a href=\"https://logeion.uchicago.edu/erudio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: erudio</a> · <a href=\"https://logeion.uchicago.edu/instituo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: instituo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 32, checked against the searchable text of the book.",
+    "Quotations from the Latinitas loci collections (loci-ovidius, loci-comenius), checked against the editions named there.",
+    "Citations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them and have not been checked against an edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

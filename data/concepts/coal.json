@@ -1,0 +1,75 @@
+{
+  "id": "coal",
+  "english": "coal",
+  "pos": "noun",
+  "also": [
+    "charcoal",
+    "coals",
+    "embers (glowing coals)",
+    "coal mine"
+  ],
+  "domain": "natura",
+  "also_under": [
+    "domus"
+  ],
+  "terms": [
+    {
+      "latin": "carbō, carbōnis m.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "charcoal; coal",
+      "evidence": [
+        "Cato Agr. 38; 155",
+        "Cic. Off. 2.25 (Lewis &amp; Short)"
+      ],
+      "comment": "Classically charcoal, dead or glowing: the Romans heated and cooked with wood and charcoal. Modern Latin uses the word for coal too; where it matters, add <span lang=\"la\">fossilis</span>."
+    },
+    {
+      "latin": "carbō fossilis",
+      "status": "alternative",
+      "period": "ours",
+      "gloss": "coal (mined, not made from wood)",
+      "comment": "Our phrase, after Varro’s <span lang=\"la\">sāl fossilis</span>, rock salt, and Pliny’s <span lang=\"la\">ebur fossile</span> (Lewis &amp; Short, s.v. <span lang=\"la\">fossilis</span>, “dug up”). None of the reference works has a word for mineral coal."
+    },
+    {
+      "latin": "fodīna carbōnāria",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "a coal mine",
+      "evidence": [
+        "Traupman 168"
+      ]
+    },
+    {
+      "latin": "lapis gagātēs",
+      "status": "avoid",
+      "period": "modern",
+      "gloss": "coal (Traupman)",
+      "evidence": [
+        "Traupman 293"
+      ],
+      "comment": "Traupman’s word for coal; but <span lang=\"la\">gagātēs</span> is jet, a hard black stone (Plin. NH 36.141, Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "in vīllā, cum pluet, circumīre oportet, sīcubi perpluat, et signāre carbōne, cum dēsierit pluere, utī tēgula mūtētur",
+      "english": "when it rains, you should go round the house to see where the rain comes through, and mark the place with charcoal, so that the tile can be changed when the rain stops",
+      "source": "Cato Agr. 155"
+    }
+  ],
+  "related": [
+    "fire",
+    "hearth"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/carbo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: carbo</a> · <a href=\"https://logeion.uchicago.edu/fossilis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fossilis</a> · <a href=\"https://logeion.uchicago.edu/gagates\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gagates</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 168, 293, checked against the searchable text of the book.",
+    "Quotations from the Latinitas loci collections (loci-cato), checked there against the editions they name."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

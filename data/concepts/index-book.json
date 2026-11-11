@@ -1,0 +1,65 @@
+{
+  "id": "index-book",
+  "english": "index",
+  "sense": "a list at the back of a book",
+  "pos": "noun",
+  "also": [
+    "indexes",
+    "indices",
+    "table of contents",
+    "contents"
+  ],
+  "domain": "schola",
+  "terms": [
+    {
+      "latin": "index, indicis m.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a list, catalogue, table of contents",
+      "evidence": [
+        "Quint. 10.1.57: <span lang=\"la\">indicem certē ex bibliothēcā sūmptum</span> (Lewis &amp; Short)",
+        "Plin. Ep. 3.5.2: <span lang=\"la\">fungar indicis partibus</span>",
+        "M-O s.v. parts: index"
+      ],
+      "comment": "A list of contents is classical (Quintilian, Seneca, Pliny); the alphabetical index at the back of a book is modern, and Morgan–Owens gives <span lang=\"la\">index rērum</span> for it. The word’s other senses: a pointer, the forefinger (<span lang=\"la\">digitus index</span>), an informer, a book’s title (see title, of a book)."
+    },
+    {
+      "latin": "index rērum (et verbōrum)",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "an index of subjects (and words)",
+      "evidence": [
+        "M-O s.v. parts: index (Rabikauskas; Hase)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Fungar indicis partibus, atque etiam quō sint ōrdine scrīptī nōtum tibi faciam.",
+      "english": "I’ll play the part of an index, and tell you too in what order they were written.",
+      "source": "Plin. Ep. 3.5.2"
+    },
+    {
+      "latin": "Quaere in indice.",
+      "english": "Look in the index.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "book",
+    "title-book",
+    "page"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/index\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: index</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. parts: index.",
+    "Quotations of classical authors checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026) and given in the house spelling (macrons, consonantal j).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition.",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

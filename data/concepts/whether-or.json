@@ -1,0 +1,103 @@
+{
+  "id": "whether-or",
+  "english": "whether … or",
+  "pos": "conjunction",
+  "also": [
+    "whether or not",
+    "… or not",
+    "either way"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "utrum … an",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "whether … or",
+      "grammar": "conjunctions: an alternative question, direct, or indirect with the subjunctive; utrum may be left out",
+      "evidence": [
+        "Varr. RR 3.2.11: <span lang=\"la\">quid enim rēfert, utrum propter ovēs, an propter avēs frūctūs capiās?</span>",
+        "Plaut. Pers. 3.1.13: <span lang=\"la\">utrum prō ancillā mē habēs, an prō fīliā?</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Also <span lang=\"la\">-ne … an</span> and plain <span lang=\"la\">… an</span>. “Or not” is <span lang=\"la\">necne</span> in an indirect question, <span lang=\"la\">annōn</span> in a direct one."
+    },
+    {
+      "latin": "-ne … an",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "whether … or",
+      "grammar": "enclitic on the first word, an before the second",
+      "evidence": [
+        "Tac. Germ. 5.3: <span lang=\"la\">argentum et aurum propitiīne an īrātī diī negāverint dubitō</span>"
+      ]
+    },
+    {
+      "latin": "necne",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "or not",
+      "grammar": "conjunction, at the end of an indirect question",
+      "evidence": [
+        "Ter. Heaut. 1.1.43: <span lang=\"la\">nunc habeam necne, incertum est</span> (Lewis &amp; Short)"
+      ],
+      "comment": "In a direct question, <span lang=\"la\">annōn</span>: <span lang=\"la\">Tibi ego dīcō, annōn?</span> (Ter. And. 762)."
+    },
+    {
+      "latin": "sīve … sīve (seu … seu)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "whether … or (either way)",
+      "grammar": "conjunctions, with the moods of sī",
+      "evidence": [
+        "Phaedr. 4.22.7–8: <span lang=\"la\">sīve hoc ineptum sīve laudandum est opus</span>"
+      ],
+      "comment": "Not a question but a double condition: “whether it is this or that, the main clause holds”."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "quid enim rēfert, utrum propter ovēs, an propter avēs frūctūs capiās?",
+      "english": "for what does it matter whether you make your profit from sheep or from birds?",
+      "source": "Varr. RR 3.2.11"
+    },
+    {
+      "latin": "utrum prō ancillā mē habēs, an prō fīliā?",
+      "english": "do you take me for a servant girl, or for your daughter?",
+      "source": "Plaut. Pers. 3.1.13 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "argentum et aurum propitiīne an īrātī diī negāverint dubitō",
+      "english": "whether the gods denied them silver and gold in kindness or in anger, I cannot tell",
+      "source": "Tac. Germ. 5.3"
+    },
+    {
+      "latin": "Amīcum an nōmen habeās, aperit calamitās.",
+      "english": "Misfortune shows whether you have a friend or only the name of one.",
+      "source": "Publ. A 42"
+    },
+    {
+      "latin": "Tibi ego dīcō, annōn?",
+      "english": "Am I talking to you or not?",
+      "source": "Ter. And. 762"
+    },
+    {
+      "latin": "sīve Aquilō rādit terrās seu brūma nivālem interiōre diem gȳrō trahit, īre necesse est",
+      "english": "whether the north wind scours the land or midwinter drags the snowy day round its shorter circle, I have to go",
+      "source": "Hor. S. 2.6.25–26"
+    }
+  ],
+  "related": [
+    "whether",
+    "or"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/utrum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: utrum</a> · <a href=\"https://logeion.uchicago.edu/an\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: an</a> · <a href=\"https://logeion.uchicago.edu/necne\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: necne</a> · <a href=\"https://logeion.uchicago.edu/sive\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sive</a>",
+    "Quotations from the Latinitas loci collections (loci-varro, loci-tacitus, loci-publilius, loci-terentius, loci-phaedrus, loci-horatius), checked against the editions named there.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

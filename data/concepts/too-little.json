@@ -1,0 +1,89 @@
+{
+  "id": "too-little",
+  "english": "too little",
+  "pos": [
+    "adverb",
+    "noun"
+  ],
+  "also": [
+    "not enough",
+    "too few",
+    "not … enough",
+    "insufficiently"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "parum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "too little, not enough",
+      "grammar": "indeclinable noun and adverb; as a noun with a genitive",
+      "evidence": [
+        "Aug. Conf. 10.31.44: <span lang=\"la\">dēlectātiōnī parum est</span>",
+        "Cic. Brut. 240: <span lang=\"la\">leporis parum</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Lewis &amp; Short: the opposite of <span lang=\"la\">satis</span> and <span lang=\"la\">nimium</span>; it has no comparative of its own (<span lang=\"la\">minus, minimē</span>). With a genitive, too little of: <span lang=\"la\">frondis parum</span>; with an adjective or a verb, “not … enough”: <span lang=\"la\">parum cautī</span>, not careful enough."
+    },
+    {
+      "latin": "nōn satis",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "not enough",
+      "grammar": "adverb with its negative",
+      "evidence": [
+        "Mart. 14.220.1: <span lang=\"la\">nōn satis est ars sōla cocō</span>",
+        "Liv. praef. 1: <span lang=\"la\">nec satis sciō</span>"
+      ],
+      "comment": "Plainly “not enough”, without the reproach of <span lang=\"la\">parum</span> (see enough)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nam quod salūtī satis est, dēlectātiōnī parum est",
+      "english": "for what is enough for health is too little for pleasure",
+      "source": "Aug. Conf. 10.31.44"
+    },
+    {
+      "latin": "hoc lautum est parum; illud rēctē: iterum sīc mementō",
+      "english": "this one hasn’t been rinsed enough; that one’s right: remember to do it that way again",
+      "source": "Ter. Ad. 425–426"
+    },
+    {
+      "latin": "cūr frondis parum est, strāmenta dēsunt?",
+      "english": "why is there too little fodder, and no straw?",
+      "source": "Phaedr. 2.8.22"
+    },
+    {
+      "latin": "nōn quī parum habet, sed quī plūs cupit, pauper est",
+      "english": "the poor man is not the one who has too little, but the one who wants more",
+      "source": "Sen. Ep. 2.6"
+    },
+    {
+      "latin": "mātūtīna parum cautōs jam frīgora mordent",
+      "english": "the morning cold is already biting those who are not careful enough",
+      "source": "Hor. S. 2.6.45"
+    },
+    {
+      "latin": "nōn satis est ars sōla cocō",
+      "english": "skill alone is not enough for a cook",
+      "source": "Mart. 14.220.1"
+    }
+  ],
+  "related": [
+    "enough",
+    "too-excessively",
+    "less",
+    "a-little"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/parum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: parum</a> · <a href=\"https://logeion.uchicago.edu/satis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: satis</a>",
+    "Quotations from the Latinitas loci collections (loci-augustinus, loci-terentius, loci-phaedrus, loci-seneca-epistulae, loci-horatius, loci-martialis, loci-livius), checked against the editions named there.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "id": "charge-battery",
+  "english": "charge",
+  "sense": "a battery, a phone",
+  "pos": "verb",
+  "also": [
+    "recharge",
+    "charge up",
+    "fully charged",
+    "flat",
+    "dead battery",
+    "run out of battery"
+  ],
+  "domain": "domus",
+  "also_under": [
+    "computatra"
+  ],
+  "terms": [
+    {
+      "latin": "repleō, replēre, replēvī, replētum",
+      "status": "recommended",
+      "period": "ours",
+      "gloss": "fill up again: charge, recharge",
+      "grammar": "verb, second conjugation; the full phrase is vī ēlectricā replēre",
+      "evidence": [
+        "Cic. Prov. Cons. 2.4: <span lang=\"la\">exhaustās domōs</span> (sc. <span lang=\"la\">replēre</span>; Lewis &amp; Short)"
+      ],
+      "comment": "Our choice (Jack, 11 November 2026): no reference work gives a Latin verb for charging a battery. Classically <span lang=\"la\">replēre</span> is to fill again what has been emptied, and Cicero pairs it with <span lang=\"la\">exhaustus</span>, which gives the rest of the vocabulary: <span lang=\"la\">exhaustus</span>, flat or dead; <span lang=\"la\">plēnus</span>, fully charged. The meaning is plain at first hearing."
+    },
+    {
+      "latin": "compleō, complēre, complēvī, complētum",
+      "status": "alternative",
+      "period": "ours",
+      "gloss": "fill up: charge fully",
+      "evidence": [
+        "Lewis &amp; Short s.v. compleo: “to fill up, fill full” (class.)"
+      ]
+    },
+    {
+      "latin": "onerō, onerāre, onerāvī, onerātum",
+      "status": "alternative",
+      "period": "ours",
+      "gloss": "load",
+      "comment": "The figure the modern languages use (French <em>charger</em>, Italian <em>caricare</em>, German <em>laden</em>), so it will be understood; but in Latin it suggests a burden laid on something, not a store filled up."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Accumulātrum paene exhaustum est; telephōnum replē.",
+      "english": "The battery’s nearly flat; charge your phone.",
+      "source": "composed"
+    },
+    {
+      "latin": "Jam plēnum est.",
+      "english": "It’s fully charged now.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "battery",
+    "charger",
+    "plug-in",
+    "socket"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/repleo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: repleo</a> · <a href=\"https://logeion.uchicago.edu/compleo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: compleo</a> · <a href=\"https://logeion.uchicago.edu/onero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: onero</a> · <a href=\"https://logeion.uchicago.edu/exhaurio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: exhaurio</a>",
+    "David Morgan and Patrick Owens, <em>Adumbratio Lexici Anglico-Latini</em>, s.v. battery; its heading “charge, recharge (battery, cell phone, etc.)” gives no Latin.",
+    "The example sentences marked “composed” are ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

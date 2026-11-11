@@ -1,0 +1,75 @@
+{
+  "id": "flow",
+  "english": "flow",
+  "pos": "verb",
+  "also": [
+    "flowing",
+    "run (of water)",
+    "flow away"
+  ],
+  "domain": "natura",
+  "terms": [
+    {
+      "latin": "fluō, fluere, flūxī, flūxum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "flow",
+      "grammar": "verb, third conjugation, intransitive",
+      "evidence": [
+        "Varr. LL 5.27",
+        "Cic. Div. 1.78: <span lang=\"la\">ut flūmina in contrāriās partēs flūxerint</span> (Lewis &amp; Short)"
+      ],
+      "comment": "The general word for water, rivers and anything that flows; <span lang=\"la\">flūmen</span>, “river”, is made from it.",
+      "notes": [
+        "fluxi"
+      ]
+    },
+    {
+      "latin": "mānō, mānāre, mānāvī, mānātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "flow, trickle, ooze",
+      "evidence": [
+        "Verg. A. 3.175: <span lang=\"la\">gelidus tōtō mānābat corpore sūdor</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Of liquid that seeps or trickles: sweat, tears, blood from the nose."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "stillicidium eō quod stillātim cadit; flūmen quod fluit continuē",
+      "english": "the drip from the eaves (stillicidium) because it falls drop by drop (stillātim); a river (flūmen) because it flows on and on",
+      "source": "Varr. LL 5.27"
+    },
+    {
+      "latin": "īnfīrmō capitī fluit ūtilis, ūtilis alvō",
+      "english": "it flows, good for a weak head, good for the stomach",
+      "source": "Hor. Ep. 1.16.14"
+    }
+  ],
+  "notes": {
+    "fluxi": {
+      "form": "flūxī",
+      "claim": "long u in the perfect and supine",
+      "against": "Lewis &amp; Short leaves it unmarked",
+      "html": "De Vaan s.v. <span lang=\"la\">fluō</span>, after Weiss (1994), explains <span lang=\"la\">flūxī</span> as made by analogy on <span lang=\"la\">struō : strūxī</span>, which has a long vowel. The house spelling of the readers (latinitas AGENTS.md §2), with the compounds <span lang=\"la\">dēflūxit, efflūxit</span>."
+    }
+  },
+  "related": [
+    "river",
+    "stream",
+    "pour",
+    "water"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/fluo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fluo</a> · <a href=\"https://logeion.uchicago.edu/mano\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mano</a>",
+    "Michiel de Vaan, <em>Etymological Dictionary of Latin and the other Italic Languages</em> (2008), s.v. <span lang=\"la\">fluō</span>.",
+    "Quotations from the Latinitas loci collections (loci-varro, loci-horatius), checked against the editions named there.",
+    "Citations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them and have not been checked against an edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

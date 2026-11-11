@@ -1,0 +1,77 @@
+{
+  "id": "ban",
+  "english": "ban",
+  "pos": [
+    "verb",
+    "noun"
+  ],
+  "also": [
+    "forbid",
+    "prohibit",
+    "forbidden",
+    "banned",
+    "a ban"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "vetō, vetāre, vetuī, vetitum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "forbid, ban",
+      "grammar": "verb, first conjugation, transitive; with accusative and infinitive",
+      "evidence": [
+        "Liv. 22.3.13",
+        "Cic. Amic. 85"
+      ],
+      "comment": "The everyday “forbid”: <span lang=\"la\">vetō tē abīre</span>. <span lang=\"la\">Vetitum</span> is “forbidden”."
+    },
+    {
+      "latin": "interdīcō, interdīcere, interdīxī, interdictum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "forbid formally, ban",
+      "grammar": "verb, third conjugation; with dative of the person, ablative of the thing, or <span lang=\"la\">nē</span>",
+      "evidence": [
+        "Caes. B.G. 5.22: <span lang=\"la\">interdīcit atque imperat Cassivellaunō nē</span> (Lewis &amp; Short)"
+      ],
+      "comment": "An official prohibition: a magistrate’s or a parent’s order."
+    },
+    {
+      "latin": "interdictum, interdictī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a ban, a prohibition",
+      "evidence": [
+        "Plaut. As. 3.1.1; Cic. Pis. 48 (Lewis &amp; Short)"
+      ],
+      "comment": "The noun “a ban”; in law, a praetor’s interdict."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "num litterās quoque … ab senātū adfers quae mē rem gerere vetant?",
+      "english": "are you bringing a letter from the senate too, forbidding me to act?",
+      "source": "Liv. 22.3.13"
+    },
+    {
+      "latin": "et ācta agimus, quod vetāmur vetere prōverbiō",
+      "english": "and we are doing what is done already, which an old proverb forbids",
+      "source": "Cic. Amic. 85"
+    }
+  ],
+  "related": [
+    "allow",
+    "dont-touch"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/veto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: veto</a> · <a href=\"https://logeion.uchicago.edu/interdico\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: interdico</a> · <a href=\"https://logeion.uchicago.edu/interdictum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: interdictum</a>",
+    "Quotations from the Latinitas loci collections (loci-livius, loci-cicero-philosophica), checked against the editions named there.",
+    "Citations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them and have not been checked against an edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

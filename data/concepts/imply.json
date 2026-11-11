@@ -1,0 +1,64 @@
+{
+  "id": "imply",
+  "english": "imply",
+  "sense": "suggest without saying",
+  "pos": "verb",
+  "also": [
+    "hint",
+    "insinuate",
+    "what are you implying?",
+    "it follows that"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "significō, significāre, significāvī, significātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "give to understand, intimate, hint",
+      "grammar": "verb, first conjugation, transitive",
+      "evidence": [
+        "Cic. Verr. 2.3.213: <span lang=\"la\">hoc mihi significāsse et annuisse vīsus est</span> (Lewis &amp; Short)"
+      ],
+      "comment": "To show by a sign rather than say outright (Lewis &amp; Short: “to intimate, notify”); of a word, to mean (see mean). The noun is <span lang=\"la\">significātiō</span> (see implication)."
+    },
+    {
+      "latin": "sequitur ut",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "it follows that (logically)",
+      "grammar": "sequor, sequī, impersonal, with ut + subjunctive or an accusative and infinitive",
+      "evidence": [
+        "Cic. Fat. 28 (Lewis &amp; Short)"
+      ],
+      "comment": "For “this implies that” in an argument: the conclusion follows (see involve for “entail”)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "hoc mihi significāsse et annuisse vīsus est",
+      "english": "he seemed to hint this to me and nod",
+      "source": "Cic. Verr. 2.3.213 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "sī haec ēnūntiātiō vēra nōn est, sequitur, ut falsa sit",
+      "english": "if this statement is not true, it follows that it is false",
+      "source": "Cic. Fat. 28 (Lewis &amp; Short)"
+    }
+  ],
+  "related": [
+    "mean-signify",
+    "implication",
+    "suggest",
+    "involve"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/significo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: significo</a> · <a href=\"https://logeion.uchicago.edu/sequor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sequor</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

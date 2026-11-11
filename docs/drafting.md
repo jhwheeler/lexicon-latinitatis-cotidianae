@@ -44,6 +44,8 @@ The lexicon has them too (Jack, 9 November 2026): pronouns, pointing and questio
 
 ## The record
 
+No names or dates in an entry's text (Jack, 11 November 2026): a comment or note says what the word is and why, not who decided it or when. "Our formation", "a house ruling" and the like are enough; the history is in the repository and in `data/rulings.json`, whose page shows each ruling's date but not its author.
+
 As in `records.md`, written directly as `data/concepts/<id>.json`, with `"review": {"status": "draft", "date": "<today>", "by": "Claude"}`. One record per English sense; look for an existing record first (`grep -l '"english": "towel"' data/concepts/*.json`), and add to it rather than duplicating. `sources`: a Lewis & Short link for every Latin word you recommend or list (`<a href="https://logeion.uchicago.edu/subligaculum" rel="noopener noreferrer" target="_blank">Lewis &amp; Short: subligaculum</a>`), and a line for each other work you used, with pages. Add “The example sentences marked “composed” are ours.” when there are composed examples.
 
 ## Checks

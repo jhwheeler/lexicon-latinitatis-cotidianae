@@ -1,0 +1,64 @@
+{
+  "id": "infection",
+  "english": "infection",
+  "pos": "noun",
+  "also": [
+    "infectious",
+    "contagious",
+    "contagion",
+    "infected (wound)",
+    "get infected"
+  ],
+  "domain": "corpus",
+  "terms": [
+    {
+      "latin": "contāgiō, contāgiōnis f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "contagion, infection: the passing of a disease by contact",
+      "evidence": [
+        "Col. 7.5.6: <span lang=\"la\">tum praecipuē ovēs contāgiōne vexentur</span> (Lewis &amp; Short)",
+        "Liv. 28.34.4"
+      ],
+      "comment": "Contact, and so the spreading of a disease from one to another; also of a bad example. <span lang=\"la\">Contāgium, contāgiī n.</span> is the same word in verse (<span lang=\"la\">contāgia</span>, Verg., Ov.)."
+    },
+    {
+      "latin": "suppūrātiō, suppūrātiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "festering, a gathering of pus: an infected wound",
+      "evidence": [
+        "Cels. 2.8 (Lewis &amp; Short)",
+        "Plin. NH 20.16"
+      ],
+      "comment": "The medical writers’ word; the verb is <span lang=\"la\">suppūrō, suppūrāre</span>, to fester (Cato Agr. 157.3)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "velut contāgiōne quādam pestiferā īnsānīre",
+      "english": "to rave as if from some pestilent contagion",
+      "source": "Liv. 28.34.4"
+    },
+    {
+      "latin": "Vulnus aquā lavā, nē suppūret.",
+      "english": "Wash the cut with water, so that it doesn’t get infected.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "disease",
+    "ill",
+    "cold-illness",
+    "wound"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/contagio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: contagio</a> · <a href=\"https://logeion.uchicago.edu/suppuratio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: suppuratio</a> · <a href=\"https://logeion.uchicago.edu/suppuro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: suppuro</a>",
+    "The example sentences marked “composed” are ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

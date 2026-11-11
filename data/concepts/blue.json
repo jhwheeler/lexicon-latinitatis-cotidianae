@@ -2,23 +2,39 @@
   "id": "blue",
   "english": "blue",
   "pos": "adjective",
+  "also": [
+    "dark blue"
+  ],
   "domain": "sermo",
   "terms": [
     {
       "latin": "caeruleus, caerulea, caeruleum",
       "status": "recommended",
       "period": "classical"
+    },
+    {
+      "latin": "cȳaneus, cȳanea, cȳaneum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "dark blue",
+      "evidence": [
+        "Plin. NH 10.89; Prud. Psych. 858 (Lewis &amp; Short)",
+        "Andresian p. 50"
+      ],
+      "comment": "Greek κυάνεος, dark blue, sea-blue; rare in Latin (Lewis &amp; Short)."
     }
   ],
   "related": [
     "colour"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/caeruleus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: caeruleus</a>"
+    "<a href=\"https://logeion.uchicago.edu/caeruleus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: caeruleus</a>",
+    "<a href=\"https://logeion.uchicago.edu/cyaneus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cyaneus</a>",
+    "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 50."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-11",
     "by": "Claude"
   }
 }

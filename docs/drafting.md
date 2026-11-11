@@ -20,7 +20,7 @@ The order is the site's own (How we decide):
 
 1. **Classical first.** A classical word in its classical sense is recommended wherever one exists. Find it through the English–Latin works, then confirm it in Lewis & Short: the sense, the authors who use it, the quantities. Give one or two classical citations as `evidence` (`Cic. Off. 1.129`, `Plin. NH 19.32`), taken from Lewis & Short.
 2. **Post-classical** only where it fills a real gap, and well attested; Christian Latin for church life.
-3. **Modern** words for modern things: Traupman first, then Morgan–Owens, then Levi & Bini (check every Levi & Bini word in Lewis & Short: it gives no sources and marks quantities only in part), then the Vatican lexicon and the rest. A plain classical description beats a coinage where one will do.
+3. **Modern** words for modern things: Traupman first, then Morgan–Owens, then Levi & Bini (check every Levi & Bini word in Lewis & Short: it gives no sources and marks quantities only in part), then the Vatican lexicon and the rest. Andresian's *Vocabula Picta* (2014; in the latinitas repository's `refs/`, cite `Andresian p. 24` by the printed page) is a checklist and a second opinion: it names no source for a word, so check each in Lewis & Short, and it is in copyright, so cite single words and never copy its lists. A plain classical description beats a coinage where one will do.
 4. **Ours** last, labelled as our formation, and only when nothing above serves.
 
 Give the other forms the sources offer as `alternative` terms, with their period and evidence. Mark as `avoid` a modern form that means something else classically (a false friend), with the reason. Register labels follow latinitas `AGENTS.md` §6 (`vōx cōmica: Plaut., Ter.`).
@@ -31,6 +31,10 @@ Give the other forms the sources offer as `alternative` terms, with their period
 - **Consonantal i is j** (*jam, ejus, major*), with no macron on the vowel before intervocalic j.
 - Nouns with genitive and gender (`subligāculum, subligāculī n.`), verbs with principal parts as Lewis & Short gives them (`cessō, cessāre, cessāvī, cessātum`).
 - `python3 scripts/check_quantities.py` must pass: where you depart from Lewis & Short, write a note in the fixed shape (`form`, `claim`, `against`, `html`), or don't depart.
+
+## Function words and interjections
+
+The lexicon has them too (Jack, 9 November 2026): pronouns, pointing and question words, quantifiers, conjunctions, prepositions, auxiliaries, interjections. An English function word rarely answers to one Latin word: *of* is a case, *would* a mood, *the* nothing at all. So the terms of such a record are the Latin means of saying it, each with its condition of use in the grammar line and the comment (the case, the mood, its place in the clause); where the means is a construction, the term names it or gives the pattern (`secundum + acc.`), as `seem.json`, `however.json` and `due-to.json` do. The examples carry the weight: four to eight short ones, most of them real, one for each use the record names. Keep the comments short: this is a lexicon, not a grammar. An interjection record is headed by what a person would say in English (*phew!*), with who says the Latin word and in what feeling, from Lewis & Short, and a register label.
 
 ## Examples
 

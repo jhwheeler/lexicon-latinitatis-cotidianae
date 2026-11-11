@@ -1,0 +1,87 @@
+{
+  "id": "meanwhile",
+  "english": "meanwhile",
+  "pos": "adverb",
+  "also": [
+    "in the meantime",
+    "meantime",
+    "in the meanwhile",
+    "while this was going on"
+  ],
+  "domain": "tempus",
+  "terms": [
+    {
+      "latin": "intereā",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "meanwhile, in the meantime",
+      "grammar": "adverb",
+      "evidence": [
+        "Verg. G. 3.284: <span lang=\"la\">sed fugit intereā</span>",
+        "Caes. BG 7.66.1: <span lang=\"la\">Intereā, dum haec geruntur</span>"
+      ],
+      "comment": "The everyday word, in narrative and in talk alike; often with a <span lang=\"la\">dum</span>-clause naming the other action (<span lang=\"la\">dum haec geruntur</span>, while this was going on). In classical prose it always keeps its reference to time; the sense “nevertheless” grows out of it later (Lewis &amp; Short)."
+    },
+    {
+      "latin": "interim",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "meanwhile; for the moment",
+      "grammar": "adverb",
+      "evidence": [
+        "Liv. 1.8.4: <span lang=\"la\">crēscēbat interim urbs</span>",
+        "Traupman 87: meanwhile, <span lang=\"la\">interim</span>"
+      ],
+      "comment": "The same as <span lang=\"la\">intereā</span> (Lewis &amp; Short), and Traupman’s word for meanwhile. After Augustus it also means “for the moment, for now” and “sometimes” (Quintilian); Cicero once has it for “nevertheless” (Att. 7.12.3, Lewis &amp; Short)."
+    },
+    {
+      "latin": "intereā locī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "meanwhile",
+      "grammar": "phrase",
+      "register": "vōx cōmica: Plaut., Ter.",
+      "evidence": [
+        "Plaut. Men.; Ter. Eun.; Ter. Heaut. (Lewis &amp; Short, s.v. <span lang=\"la\">intereā</span>)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "sed fugit intereā, fugit irreparābile tempus",
+      "english": "but meanwhile time is flying, flying beyond recall",
+      "source": "Verg. G. 3.284"
+    },
+    {
+      "latin": "dum haec Taurus, intereā puer vēnerat et aula dēferbuerat tempusque esse coeperat edendī et tacendī",
+      "english": "while Taurus was saying this, the boy had come back, the pot had cooled, and it was time to eat and be quiet",
+      "source": "Gell. 17.8.17"
+    },
+    {
+      "latin": "crēscēbat interim urbs mūnītiōnibus alia atque alia appetendō loca",
+      "english": "meanwhile the city kept growing, taking in one place after another with its walls",
+      "source": "Liv. 1.8.4"
+    },
+    {
+      "latin": "Intereā, dum haec geruntur, hostium cōpiae ex Arvernīs equitēsque quī tōtī Galliae erant imperātī conveniunt.",
+      "english": "Meanwhile, while this was going on, the enemy’s forces from the Arverni and the cavalry levied on the whole of Gaul gathered.",
+      "source": "Caes. BG 7.66.1"
+    }
+  ],
+  "related": [
+    "while",
+    "then-next",
+    "at-once"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/interea\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: interea</a> · <a href=\"https://logeion.uchicago.edu/interim\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: interim</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 87, checked against the searchable text of the book (11 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-vergilius, loci-gellius, loci-livius), checked against the editions named there.",
+    "Caesar, BG 7.66.1, checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

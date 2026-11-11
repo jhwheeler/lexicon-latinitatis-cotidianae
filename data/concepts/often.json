@@ -1,0 +1,101 @@
+{
+  "id": "often",
+  "english": "often",
+  "pos": "adverb",
+  "also": [
+    "frequently",
+    "oftentimes",
+    "many a time",
+    "more often",
+    "very often",
+    "how often?"
+  ],
+  "domain": "tempus",
+  "terms": [
+    {
+      "latin": "saepe",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "often",
+      "grammar": "adverb; comparative saepius, superlative saepissimē",
+      "evidence": [
+        "Cic. Cael. 59: <span lang=\"la\">saepe mē, saepissimē rem pūblicam</span>"
+      ],
+      "comment": "The everyday word, of things that happen again and again at intervals; Lewis &amp; Short contrasts <span lang=\"la\">crēbrō</span>, of things that come close one after another. How often? is <span lang=\"la\">quotiēns?</span> (Traupman 87; see whenever)."
+    },
+    {
+      "latin": "crēbrō",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "often, repeatedly, again and again",
+      "grammar": "adverb",
+      "evidence": [
+        "Cic. Att. 7.10.1: <span lang=\"la\">crēbrō ad mē scrībe</span>",
+        "Cato Agr. 48.2: <span lang=\"la\">crēbrō runcātō</span>"
+      ],
+      "comment": "Of things that come thick and fast (Lewis &amp; Short): letters, coughing, hoeing. The adjective <span lang=\"la\">crēber</span> is first thick, close-set (trees, buildings), then frequent."
+    },
+    {
+      "latin": "frequenter",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "frequently, often",
+      "grammar": "adverb",
+      "evidence": [
+        "Quint. 1.8.11 (Lewis &amp; Short)",
+        "Petr. 66.1"
+      ],
+      "comment": "Not common until after Augustus (Lewis &amp; Short): Quintilian uses it often, and so do Petronius’s freedmen. It also means in great numbers (Liv. 1.11.4). The adjective <span lang=\"la\">frequēns</span> is first of people often in a place or often doing a thing (<span lang=\"la\">frequēns audītor</span>, a regular hearer), then of things that happen often."
+    },
+    {
+      "latin": "saepenumerō",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "very often, many a time",
+      "grammar": "adverb",
+      "evidence": [
+        "Lewis &amp; Short, s.v. <span lang=\"la\">saepe</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "crēbrō Catulum, saepe mē, saepissimē rem pūblicam nōminābat",
+      "english": "he kept naming Catulus, often me, and most often of all the Republic",
+      "source": "Cic. Cael. 59"
+    },
+    {
+      "latin": "tū, quaesō, crēbrō ad mē scrībe vel quod in buccam vēnerit",
+      "english": "please write to me often, even just whatever comes into your head",
+      "source": "Cic. Att. 7.10.1"
+    },
+    {
+      "latin": "crēbrō runcātō. simul herbae incēperint nāscī, eximitō",
+      "english": "weed often; as soon as the weeds start coming up, pull them out",
+      "source": "Cato Agr. 48.2"
+    },
+    {
+      "latin": "nam tam bonae memoriae sum, ut frequenter nōmen meum oblīvīscar",
+      "english": "for my memory is so good that I often forget my own name",
+      "source": "Petr. 66.1"
+    }
+  ],
+  "related": [
+    "sometimes",
+    "always",
+    "every-so-often",
+    "whenever",
+    "never"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/saepe\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: saepe</a> · <a href=\"https://logeion.uchicago.edu/creber\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: creber (crēbrō)</a> · <a href=\"https://logeion.uchicago.edu/frequens\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: frequens (frequenter)</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 87, checked against the searchable text of the book (11 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-cato, loci-petronius), checked against the editions named there.",
+    "Cicero, Cael. 59, checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

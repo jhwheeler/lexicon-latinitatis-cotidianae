@@ -1,0 +1,96 @@
+{
+  "id": "somehow",
+  "english": "somehow",
+  "pos": "adverb",
+  "also": [
+    "somehow or other",
+    "in some way",
+    "one way or another",
+    "by any means"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "aliquō modō",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "somehow, in some way",
+      "grammar": "phrase: ablative of manner",
+      "evidence": [
+        "Cic. de Or. 2.232: <span lang=\"la\">quis haec nōn vel facile vel certē aliquō modō posset ēdiscere?</span> (Lewis &amp; Short)",
+        "Plaut. Stich. 4.2.41: <span lang=\"la\">exōrābō aliquō modō</span> (Lewis &amp; Short)"
+      ],
+      "comment": "The plain phrase: by some means, not said which."
+    },
+    {
+      "latin": "nesciō quō modō (nesciō quōmodo)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "somehow, I don’t know how",
+      "grammar": "phrase used as a parenthesis, without changing the mood of the verb",
+      "evidence": [
+        "Cic. Off. 1.146: <span lang=\"la\">fit enim, nesciō quōmodo, ut</span> (Lewis &amp; Short)",
+        "Cic. Sest. 100: <span lang=\"la\">bonī nesciō quōmodo tardiōrēs sunt</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Said in passing, as English says “somehow”, of what happens one cannot tell how (Lewis &amp; Short, s.v. <span lang=\"la\">nesciō</span>)."
+    },
+    {
+      "latin": "quōquō modō",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "somehow or other, by any means, however you can",
+      "grammar": "phrase",
+      "evidence": [
+        "Cic. Fam. 14.4.3: <span lang=\"la\">quōquō modō potes ad mē fac veniās</span>",
+        "Cic. Q. fr. 1.2.4: <span lang=\"la\">tū quōquō modō hominem investīgēs velim</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Of getting something done whatever it takes."
+    },
+    {
+      "latin": "aliquā",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "somehow, one way or another",
+      "grammar": "adverb",
+      "register": "vōx cōmica: Plaut., Ter.",
+      "evidence": [
+        "Ter. Ph. 5.1.19 (Lewis &amp; Short)",
+        "Plaut. Merc. 2.2.62 (Lewis &amp; Short)"
+      ],
+      "comment": "Its first sense is “somewhere, by some way”; in comedy, “in some way or other” (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "tū mihi aliquid aliquō modō alicunde ab aliquibus blatīs",
+      "english": "you babble something to me, somehow, from somewhere, from someone",
+      "source": "Plaut. Epid. 3.1.13 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "bonī nesciō quōmodo tardiōrēs sunt",
+      "english": "good men are somehow slower",
+      "source": "Cic. Sest. 100 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "sī est spēs nostrī reditūs, eam cōnfīrmēs et rem adjuvēs; sīn, ut ego metuō, trānsāctum est, quōquō modō potes ad mē fac veniās.",
+      "english": "if there is hope of my return, strengthen it and help the cause; but if, as I fear, it is all over, come to me somehow, however you can.",
+      "source": "Cic. Fam. 14.4.3"
+    }
+  ],
+  "related": [
+    "how",
+    "manner",
+    "somewhere",
+    "someone"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/aliquis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aliquis</a> · <a href=\"https://logeion.uchicago.edu/nescio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nescio</a> · <a href=\"https://logeion.uchicago.edu/quoquomodo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quoquomodo</a> · <a href=\"https://logeion.uchicago.edu/alicunde\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: alicunde</a>",
+    "Quotations from the Latinitas loci collections (loci-cicero-epistulae), checked against the editions named there.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

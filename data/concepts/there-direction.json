@@ -4,7 +4,9 @@
   "sense": "to that place",
   "pos": "adverb",
   "also": [
-    "to there"
+    "to there",
+    "thither",
+    "over there"
   ],
   "domain": "sermo",
   "terms": [
@@ -12,15 +14,74 @@
       "latin": "illūc",
       "status": "recommended",
       "period": "classical",
-      "gloss": "to there"
+      "gloss": "to there",
+      "grammar": "adverb",
+      "evidence": [
+        "Catull. 3.9: <span lang=\"la\">modo hūc modo illūc</span>",
+        "Hor. C. 4.11.9–10: <span lang=\"la\">hūc et illūc cursitant</span>"
+      ],
+      "comment": "To a place away from both of us; <span lang=\"la\">hūc et illūc</span>, this way and that."
+    },
+    {
+      "latin": "eō",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "there, thither (to the place named)",
+      "grammar": "adverb",
+      "evidence": [
+        "Cato Agr. 1.2: <span lang=\"la\">utī eō introeās et circumspiciās</span>",
+        "Caes. BG 1.25.5: <span lang=\"la\">eō sē recipere coepērunt</span>"
+      ],
+      "comment": "The unemphatic “(to) there”; it answers <span lang=\"la\">quō</span>. Not the verb <span lang=\"la\">eō</span>, I go."
+    },
+    {
+      "latin": "istūc",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "there (to where you are)",
+      "grammar": "adverb",
+      "evidence": [
+        "Ter. Eun. 706: <span lang=\"la\">Concēde istūc paululum</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "utī eō introeās et circumspiciās, utī inde exīre possīs",
+      "english": "go in there and look round, so that you can get out of there again",
+      "source": "Cato Agr. 1.2"
+    },
+    {
+      "latin": "circumsiliēns modo hūc modo illūc ad sōlam dominam ūsque pīpiābat",
+      "english": "hopping about, now this way, now that, it kept cheeping to its mistress alone",
+      "source": "Catull. 3.9–10"
+    },
+    {
+      "latin": "Concēde istūc paululum: audīn'? etiam nunc paululum: sat est.",
+      "english": "Move over there a little — do you hear? — a little more — that’s enough.",
+      "source": "Ter. Eun. 706"
+    },
+    {
+      "latin": "Quō tē agis? — Egone? in aedem Veneris. — Quid eō?",
+      "english": "Where are you off to? — Me? To the temple of Venus. — What are you going there for?",
+      "source": "Plaut. Poen. 333–333c"
+    },
+    {
+      "latin": "cūncta festīnat manus, hūc et illūc cursitant mixtae puerīs puellae",
+      "english": "the whole household bustles; girls and boys together run this way and that",
+      "source": "Hor. C. 4.11.9–10"
     }
   ],
   "related": [
     "there-location",
-    "here-direction"
+    "here-direction",
+    "where-to",
+    "that-way"
   ],
   "sources": [
-    "<a href=\"https://logeion.org/illuc\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: illuc</a>"
+    "<a href=\"https://logeion.uchicago.edu/illuc\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: illuc</a> · <a href=\"https://logeion.uchicago.edu/eo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: eo</a> · <a href=\"https://logeion.uchicago.edu/istuc\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: istuc</a>",
+    "Quotations from the Latinitas loci collections (loci-cato, loci-catullus, loci-terentius, loci-plautus, loci-horatius), checked against the editions named there.",
+    "Caesar checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026)."
   ],
   "review": {
     "status": "draft",

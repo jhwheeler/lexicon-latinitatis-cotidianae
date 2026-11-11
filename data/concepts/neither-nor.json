@@ -1,0 +1,71 @@
+{
+  "id": "neither-nor",
+  "english": "neither … nor",
+  "pos": "conjunction",
+  "also": [
+    "not … or",
+    "nor … nor"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "neque … neque (nec … nec)",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "neither … nor",
+      "grammar": "conjunctions, before each member",
+      "evidence": [
+        "Sen. Ep. 27.8: <span lang=\"la\">bona mēns nec commodātur nec emitur</span>",
+        "Liv. praef. 6: <span lang=\"la\">ea nec adfirmāre nec refellere in animō est</span>"
+      ],
+      "comment": "In commands and purpose clauses, <span lang=\"la\">nēve … nēve (neu … neu)</span>."
+    },
+    {
+      "latin": "nēve … nēve (neu … neu)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "neither … nor (in commands and purpose)",
+      "grammar": "conjunctions, with the subjunctive or imperative",
+      "evidence": [
+        "Cato Agr. 37: <span lang=\"la\">neu caedās, neu tangās</span> (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "bona mēns nec commodātur nec emitur",
+      "english": "good sense can be neither borrowed nor bought",
+      "source": "Sen. Ep. 27.8"
+    },
+    {
+      "latin": "ea nec adfirmāre nec refellere in animō est",
+      "english": "I mean neither to vouch for these things nor to refute them",
+      "source": "Liv. praef. 6"
+    },
+    {
+      "latin": "nam nec ipse meōrum lūsibus nec illī studiīs meīs obstrepunt",
+      "english": "for neither do I disturb my household’s games, nor they my work",
+      "source": "Plin. Ep. 2.17.24"
+    },
+    {
+      "latin": "quae nec pernumerāre cūriōsī possint",
+      "english": "which the curious could not count",
+      "source": "Catull. 7.11–12"
+    }
+  ],
+  "related": [
+    "and-not",
+    "either-or",
+    "not"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/neque\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: neque</a> · <a href=\"https://logeion.uchicago.edu/neve\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: neve</a>",
+    "Quotations from the Latinitas loci collections (loci-seneca-epistulae, loci-livius, loci-plinius, loci-catullus), checked against the editions named there.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

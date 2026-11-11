@@ -3,7 +3,10 @@
   "english": "game board",
   "pos": "noun",
   "also": [
-    "board"
+    "board",
+    "chessboard",
+    "draughtboard",
+    "checkerboard"
   ],
   "domain": "ludi",
   "terms": [
@@ -13,8 +16,31 @@
       "period": "classical",
       "evidence": [
         "M-O s.v. playing board",
-        "Mart. 14.17"
+        "Mart. 14.17",
+        "Andresian p. 17"
       ]
+    },
+    {
+      "latin": "tabula latrunculāria",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a board for latrunculī; a chessboard",
+      "evidence": [
+        "Sen. Ep. 117.30 (Lewis &amp; Short s.v. <span lang=\"la\">latrunculārius</span>)",
+        "M-O s.v. chessboard (Egger)"
+      ],
+      "comment": "The board of the Roman game of <span lang=\"la\">latrunculī</span>, which the lexicon uses for draughts (see draughts)."
+    },
+    {
+      "latin": "scaccārium, scaccāriī n.",
+      "status": "alternative",
+      "period": "medieval",
+      "gloss": "chessboard",
+      "evidence": [
+        "M-O s.v. chessboard (Du Cange)",
+        "Traupman 52 (<span lang=\"la\">scācārium</span>)"
+      ],
+      "comment": "The medieval word, from <span lang=\"la\">scaccī</span>, chess; Traupman spells it <span lang=\"la\">scācārium</span>, as he spells <span lang=\"la\">scācī</span>."
     }
   ],
   "related": [
@@ -24,12 +50,14 @@
     "draughts"
   ],
   "sources": [
-    "<a href=\"https://logeion.org/lusorius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lusorius</a>",
-    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. playing board."
+    "<a href=\"https://logeion.uchicago.edu/lusorius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lusorius</a> · <a href=\"https://logeion.uchicago.edu/latruncularius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: latruncularius</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. playing board.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: p. 52, checked against the searchable text of the book on 11 November 2026.",
+    "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 17."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-11",
     "by": "Claude"
   }
 }

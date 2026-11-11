@@ -1,0 +1,93 @@
+{
+  "id": "i",
+  "english": "I",
+  "pos": "pronoun",
+  "also": [
+    "me",
+    "it’s me",
+    "with me"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "ego, meī",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "I, me",
+      "grammar": "pronoun, first person: dative mihi, accusative and ablative mē; plural nōs",
+      "evidence": [
+        "Ter. And. 348: <span lang=\"la\">Obtundis, tametsī intellegō.</span>",
+        "Cic. Att. 5.1.3: <span lang=\"la\">tū invītā mulierēs, ego virōs accīverō</span>"
+      ],
+      "comment": "Latin leaves the subject out: the ending of the verb already says “I” (<span lang=\"la\">intellegō</span>). <span lang=\"la\">Ego</span> is said only for stress or contrast, as in “you invite the women, I’ll fetch the men”; a needless <span lang=\"la\">ego</span> at every turn is English underneath. “It’s me” is <span lang=\"la\">Ego sum</span>. “With me” is <span lang=\"la\">mēcum</span>, the preposition put after the pronoun."
+    },
+    {
+      "latin": "egomet",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "I myself, I for my part",
+      "grammar": "pronoun: ego with the suffix -met",
+      "evidence": [
+        "Plaut. Am. 2.1.60: <span lang=\"la\">Quis tē verberāvit? — Egomet mēmet.</span> (Lewis &amp; Short, s.v. <span lang=\"la\">ego</span>)"
+      ],
+      "comment": "A stronger <span lang=\"la\">ego</span>; the suffix <span lang=\"la\">-met</span> also strengthens the other cases (<span lang=\"la\">mēmet, mihimet, nōsmet</span>)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Obtundis, tametsī intellegō.",
+      "english": "You keep on at me, though I understand.",
+      "source": "Ter. And. 348"
+    },
+    {
+      "latin": "Pompōnia, inquit, tū invītā mulierēs, ego virōs accīverō",
+      "english": "“Pomponia,” he said, “you invite the women, and I’ll have fetched the men.”",
+      "source": "Cic. Att. 5.1.3"
+    },
+    {
+      "latin": "sī valēs, bene est; ego valeō",
+      "english": "If you are well, good; I am well.",
+      "source": "Plin. Ep. 1.11.1"
+    },
+    {
+      "latin": "Num tū intellegis hīc quid narret? — Num tū? — Nihil. — Tantundem ego.",
+      "english": "Do you understand what he’s saying? — Do you? — Not a thing. — No more do I.",
+      "source": "Ter. Ph. 846"
+    },
+    {
+      "latin": "heus, ecquis hīc est? ecquis hoc aperit ōstium? — Quis ad forēs est? — Ego sum.",
+      "english": "Hey, is anyone there? Will anyone open this door? — Who’s at the door? — It’s me.",
+      "source": "Plaut. Amph. 1020–1021b"
+    },
+    {
+      "latin": "salvē, inquit illa; cūr mē fūgistī, obsecrō?",
+      "english": "“Hello,” she said; “why did you run away from me, please?”",
+      "source": "Phaedr. App. 32.5"
+    },
+    {
+      "latin": "ōlim mihi nūllās epistulās mittis",
+      "english": "For a long time now you’ve sent me no letters.",
+      "source": "Plin. Ep. 1.11.1"
+    },
+    {
+      "latin": "venī ergō mēcum",
+      "english": "Come with me, then.",
+      "source": "Phaedr. 3.7.15"
+    }
+  ],
+  "related": [
+    "my",
+    "myself",
+    "we",
+    "you-singular"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/ego\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ego</a> · <a href=\"https://logeion.uchicago.edu/egomet\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: egomet</a>",
+    "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-phaedrus, loci-plautus, loci-plinius, loci-terentius), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

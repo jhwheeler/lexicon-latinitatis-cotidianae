@@ -1,34 +1,41 @@
 (() => {
-  // Theme toggle (light is the default; the choice is kept where storage allows).
+  // Theme (light is the default; the choice is kept where storage allows), chosen in the settings.
   const root = document.documentElement;
-  const toggle = document.getElementById('theme-toggle');
-  const label = document.getElementById('theme-label');
   const color = document.querySelector('meta[name="theme-color"]');
   const choices = [...document.querySelectorAll('[data-theme-choice]')];
   function sync() {
-    const dark = root.dataset.theme === 'dark';
-    if (label) label.textContent = dark ? 'Light mode' : 'Dark mode';
-    if (toggle) toggle.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
     choices.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.themeChoice === root.dataset.theme)));
-    if (color) color.content = dark ? '#1c1b19' : '#ffffff';
+    if (color) color.content = root.dataset.theme === 'dark' ? '#1c1b19' : '#ffffff';
   }
   function choose(theme) {
     root.dataset.theme = theme;
     try { localStorage.setItem('lexicon-theme', theme); } catch {}
     sync();
   }
-  if (toggle) toggle.addEventListener('click', () => choose(root.dataset.theme === 'dark' ? 'light' : 'dark'));
   choices.forEach(button => button.addEventListener('click', () => choose(button.dataset.themeChoice)));
   sync();
 
-  // The phone menu closes with Escape, or with a tap outside it.
-  const menu = document.querySelector('details.menu');
-  if (menu) {
+  // The settings close with Escape, or with a tap outside them.
+  const settingsMenu = document.querySelector('details.settings');
+  if (settingsMenu) {
     document.addEventListener('keydown', event => {
-      if (event.key === 'Escape' && menu.open) { menu.open = false; menu.querySelector('summary').focus(); }
+      if (event.key === 'Escape' && settingsMenu.open) { settingsMenu.open = false; settingsMenu.querySelector('summary').focus(); }
     });
-    document.addEventListener('click', event => { if (menu.open && !menu.contains(event.target)) menu.open = false; });
+    document.addEventListener('click', event => { if (settingsMenu.open && !settingsMenu.contains(event.target)) settingsMenu.open = false; });
   }
+
+  // "/" goes to the search: the page's own where it searches in place, else the header's.
+  document.addEventListener('keydown', event => {
+    if (event.key !== '/' || event.ctrlKey || event.metaKey || event.altKey || event.defaultPrevented) return;
+    const target = event.target;
+    if (target.closest && target.closest('input, textarea, select, [contenteditable=""], [contenteditable="true"]')) return;
+    const field = [document.getElementById('search'), document.getElementById('site-search')]
+      .find(el => el && el.getClientRects().length && getComputedStyle(el).visibility !== 'hidden');
+    if (!field) return;
+    event.preventDefault();
+    field.focus();
+    field.select();
+  });
 
   // Display options: macrons shown or hidden, consonantal i written j or i. They change only what
   // is shown (search ignores both anyway); each text node under lang="la" keeps its original.

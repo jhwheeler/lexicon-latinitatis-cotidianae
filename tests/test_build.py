@@ -208,11 +208,26 @@ class BuildTests(unittest.TestCase):
         self.assertIn('data-theme="light"', index)
         self.assertIn("=== 'dark' ? 'dark' : 'light'", index)
         self.assertIn('<form class="toolbar" role="search" action="index.html" method="get">', index)
-        self.assertIn('<details class="menu"><summary aria-label="Menu">', index)
-        self.assertIn('<nav class="menu-nav" aria-label="Pages"><a href="how-we-decide.html">How we decide</a>'
-                      '<a href="rulings.html">Rulings</a><a href="#about">About</a></nav>', index)
+        # The header: the name, the search (except where the page searches in place), the settings.
+        header = lambda html: html[html.index('<header class="site-top'):html.index('</header>')]
+        self.assertIn('<details class="settings"><summary aria-label="Display and theme"', index)
+        self.assertNotIn('head-search', index)
+        self.assertNotIn('<nav', header(index))
+        self.assertIn('<p class="foot-links"><a href="how-we-decide.html">How we decide</a> · <a href="rulings.html">Rulings</a> · '
+                      '<a href="#about">About</a> · ', index)
+        record = outputs['c/kind.html']
+        self.assertIn('<form class="head-search" role="search" action="../index.html" method="get">', header(record))
+        self.assertIn('name="q"', header(record))
+        self.assertIn('data-theme-choice="dark"', header(record))
+        self.assertNotIn('<nav', header(record))
+        self.assertIn('<a href="../how-we-decide.html">How we decide</a> · <a href="../rulings.html">Rulings</a> · '
+                      '<a href="../index.html#about">About</a>', record)
+        for path in ('words.html', 'latin.html', 'rulings.html', 'how-we-decide.html', 'l/caccabus.html'):
+            up = '../' if '/' in path else ''
+            self.assertIn(f'<form class="head-search" role="search" action="{up}index.html" method="get">', outputs[path], path)
+            self.assertIn(f'<a href="{up}index.html#about">About</a>', outputs[path], path)
         page = outputs['k/culina.html']
-        self.assertIn('<nav class="menu-nav" aria-label="Pages"><a href="../index.html">Search</a>', page)
+        self.assertNotIn('head-search', page)
         self.assertIn('data-theme-choice="dark"', page)
         self.assertIn('<div class="catpage" data-category="culina"', page)
         self.assertIn('<a href="../k/culina.html" lang="la" aria-current="page">Culīna et potūs</a>', page)

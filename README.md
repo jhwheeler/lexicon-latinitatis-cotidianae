@@ -44,7 +44,7 @@ The search runs on the front page, over every category, and on each category's p
 
 Links to the old single page still work: `index.html#culina` leads to `k/culina.html`, `#entry-528` to the record that replaced that card, `#c-socks` to `c/socks.html`. The table is `assets/legacy.js`, which the front page loads only when an address carries such a fragment.
 
-On a phone the header's links, the display options and the theme are in one menu. Light mode is the default; the header toggle switches to dark mode and saves the choice locally. A Display menu beside it hides the macrons or writes consonantal i as i, for readers of other traditions; it changes only what is shown, on every page, and the choice is kept the same way. Saved preferences are applied before the page is drawn, and the toggle still works when browser storage is unavailable. The design ("Minium") and its phone requirements are in AGENTS.md; the fonts and their licences are in `src/fonts/`.
+Every page's header has the name, a search field and one settings control ("Aa"). The field opens the front page with the query (`index.html?q=…`), as a plain form; the front page and the category pages show only their own search, which runs in place. On a phone the field has its own line under the name. `/` focuses the search. How we decide, Rulings and About are linked from every page's footer. The settings hold the theme and the display options: light mode is the default, dark mode can be chosen and is saved locally; the display options hide the macrons or write consonantal i as i, for readers of other traditions; it changes only what is shown, on every page, and the choice is kept the same way. Saved preferences are applied before the page is drawn, and the toggle still works when browser storage is unavailable. The design ("Minium") and its phone requirements are in AGENTS.md; the fonts and their licences are in `src/fonts/`.
 
 Browser regression checks use Node.js and Playwright (development only; the published page has no runtime dependencies):
 
@@ -54,7 +54,7 @@ npx playwright install chromium
 npm test
 ```
 
-The checks cover the front page and its contents, the category pages and the A–Z pages, the pyjama lookup, highlighting and Unicode normalization, inflected forms and close spellings, the search within a category and linkable searches, alias and source matches, literal input, the old single page's links, every page without scripts, the theme and display options, and the phone layout of every kind of page. They serve the pages over HTTP with Python's `http.server`, as the published site is served. CI also runs them in Chromium. For an existing browser installation, set `LEXICON_CHROMIUM_EXECUTABLE`; `LEXICON_CHROMIUM_ARGS` optionally supplies a JSON array of launch arguments.
+The checks cover the front page and its contents, the category pages and the A–Z pages, the pyjama lookup, highlighting and Unicode normalization, inflected forms and close spellings, the search within a category and linkable searches, alias and source matches, literal input, the old single page's links, every page without scripts, the header's search and the `/` key, the footer's links, the theme and display options, and the phone layout of every kind of page. They serve the pages over HTTP with Python's `http.server`, as the published site is served. CI also runs them in Chromium. For an existing browser installation, set `LEXICON_CHROMIUM_EXECUTABLE`; `LEXICON_CHROMIUM_ARGS` optionally supplies a JSON array of launch arguments.
 
 ## Publishing and exports
 

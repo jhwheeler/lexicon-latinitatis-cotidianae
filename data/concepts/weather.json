@@ -1,0 +1,72 @@
+{
+  "id": "weather",
+  "english": "weather",
+  "pos": "noun",
+  "also": [
+    "the weather",
+    "good weather",
+    "bad weather",
+    "what’s the weather like"
+  ],
+  "domain": "natura",
+  "terms": [
+    {
+      "latin": "tempestās, tempestātis f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "weather, good or bad",
+      "evidence": [
+        "Caes. B.G. 4.23: <span lang=\"la\">nactus idōneam ad nāvigandum tempestātem</span> (Lewis &amp; Short)",
+        "Cato Agr. 2.2: <span lang=\"la\">tempestātēs malās fuisse</span>",
+        "M-O s.v. weather"
+      ],
+      "comment": "Weather is its chief classical sense (Lewis &amp; Short), fair or foul: <span lang=\"la\">tempestās serēna</span>, <span lang=\"la\">idōnea</span>, <span lang=\"la\">turbida</span>. Alone it very often means a storm (see storm), and in early Latin and the historians also a time (<span lang=\"la\">eā tempestāte</span>, “at that time”), so give it an adjective when you mean fine weather."
+    },
+    {
+      "latin": "caelum, caelī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the weather; the state of the sky",
+      "evidence": [
+        "Plin. Ep. 8.17.1: <span lang=\"la\">immīte et turbidum caelum</span>",
+        "Col. 12.47.2: <span lang=\"la\">serēnō caelō</span>"
+      ],
+      "comment": "The sky, and so the weather it brings, especially weather that lasts (see climate). <span lang=\"la\">serēnō caelō</span>, “in fine weather”."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "num istīc quoque immīte et turbidum caelum? hīc assiduae tempestātēs et crēbra dīluvia",
+      "english": "is the weather wild and stormy there too? here it is one storm after another, and floods",
+      "source": "Plin. Ep. 8.17.1"
+    },
+    {
+      "latin": "intemperiēs caelī valētūdinem temptat: aegrōtandum est",
+      "english": "bad weather tries our health: we must be ill",
+      "source": "Sen. Ep. 107.7"
+    },
+    {
+      "latin": "nactus idōneam ad nāvigandum tempestātem",
+      "english": "having found weather fit for sailing",
+      "source": "Caes. B.G. 4.23 (Lewis &amp; Short)"
+    }
+  ],
+  "related": [
+    "climate",
+    "storm",
+    "clear-sky",
+    "heat-weather",
+    "weather-forecast",
+    "sky"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/tempestas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tempestas</a> · <a href=\"https://logeion.uchicago.edu/caelum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: caelum</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. weather.",
+    "Quotations from the Latinitas loci collections (loci-plinius, loci-seneca-epistulae, loci-cato), checked against the editions named there. Caesar as Lewis &amp; Short quotes him."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "id": "emphasize",
+  "english": "emphasize",
+  "pos": "verb",
+  "also": [
+    "emphasise",
+    "stress",
+    "highlight",
+    "underline",
+    "drive home",
+    "insist (that)",
+    "emphasis"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "inculcō, inculcāre, inculcāvī, inculcātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "drive home, impress (a point) on someone",
+      "grammar": "verb, first conjugation; aliquid alicui (or memoriae alicujus)",
+      "evidence": [
+        "Quint. 6.4.5 (Lewis &amp; Short): <span lang=\"la\">firmissima quaeque memoriae jūdicis inculcāre</span>",
+        "Cic. de Or. 1.127 (Lewis &amp; Short): <span lang=\"la\">id quod trādātur vel etiam inculcētur</span>"
+      ],
+      "comment": "To hammer a point in by saying it again and again; Lewis &amp; Short glosses Cic. Att. 16.3.1 “emphasized by additions”. Literally to tread or ram in, and so also to cram in where it doesn’t belong (<span lang=\"la\">Graeca verba inculcāre</span>, Cic. Off. 1.111)."
+    },
+    {
+      "latin": "īnstō, īnstāre, īnstitī, īnstātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "insist, press (a point)",
+      "grammar": "verb, first conjugation; with an accusative and infinitive, or the dative of the person pressed",
+      "evidence": [
+        "Ter. And. 147: <span lang=\"la\">ille īnstat factum</span>",
+        "Cic. Att. 13.32.1 (Lewis &amp; Short): <span lang=\"la\">urgē, īnstā, perfice</span>"
+      ],
+      "comment": "To keep on at a claim or a task; literally to stand on, then to press hard on an enemy, and of time, to be at hand (Lewis &amp; Short)."
+    },
+    {
+      "latin": "etiam atque etiam",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "again and again, urgently",
+      "grammar": "adverbial phrase, with a verb of asking, saying or thinking",
+      "evidence": [
+        "Cic. Fam. 13.66.2: <span lang=\"la\">etiam atque etiam tē rogō atque ōrō ut …</span>"
+      ],
+      "comment": "How a Latin speaker underlines a request: said once, it means “I ask you most earnestly”. Latin also stresses a word by putting it first or last, or with <span lang=\"la\">ipse</span> and <span lang=\"la\">quidem</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Ego illud sēdulō negāre factum; ille īnstat factum.",
+      "english": "I kept denying that it had happened; he insisted it had.",
+      "source": "Ter. And. 146–147"
+    },
+    {
+      "latin": "etiam atque etiam tē rogō atque ōrō ut eum … juvēs",
+      "english": "I ask and beg you again and again to help him",
+      "source": "Cic. Fam. 13.66.2"
+    }
+  ],
+  "related": [
+    "important",
+    "repeat",
+    "request"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/inculco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: inculco</a> · <a href=\"https://logeion.uchicago.edu/insto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: insto</a> · <a href=\"https://logeion.uchicago.edu/etiam\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: etiam</a>",
+    "Ter. And. 146–147 and Cic. Fam. 13.66.2 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026). Neither Morgan–Owens nor Traupman gives a word for “emphasize”."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

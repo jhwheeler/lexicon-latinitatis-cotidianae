@@ -1,0 +1,89 @@
+{
+  "id": "equally",
+  "english": "equally",
+  "pos": "adverb",
+  "also": [
+    "just as",
+    "alike",
+    "in equal shares",
+    "evenly",
+    "on equal terms"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "aequē",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "equally; aequē ac (atque), just as … as",
+      "grammar": "adverb",
+      "evidence": [
+        "Cic. Fin. 1.65: <span lang=\"la\">laetāmur amīcōrum laetitiā aequē atque nostrā</span> (Lewis &amp; Short)",
+        "Sen. Ep. 91.17: <span lang=\"la\">omnibus eadem sunt, aequē difficilia</span>"
+      ],
+      "comment": "“Just as much as” is <span lang=\"la\">aequē ac, aequē atque</span>; in comedy <span lang=\"la\">aequē</span> also takes <span lang=\"la\">cum</span> or the ablative (Lewis &amp; Short)."
+    },
+    {
+      "latin": "pariter",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "equally, alike; together, at the same time",
+      "grammar": "adverb",
+      "evidence": [
+        "Cic. Fin. 1.65: <span lang=\"la\">pariter dolēmus angōribus</span> (Lewis &amp; Short)",
+        "Cic. Off. 2.30: <span lang=\"la\">cāritāte nōn pariter omnēs egēmus</span> (Lewis &amp; Short)"
+      ],
+      "comment": "“In the same way, alike”; it very often means “together, at the same time” (<span lang=\"la\">pariter cum</span>, together with), as in the loci from Pliny and Quintilian (<span lang=\"la\">audīvī pariter et vīdī</span>, Plin. Ep. 8.20.3)."
+    },
+    {
+      "latin": "ex aequō",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "equally, in equal shares, on equal terms",
+      "grammar": "phrase: ex with the ablative of aequum",
+      "evidence": [
+        "Sen. Ep. 66.26: <span lang=\"la\">avēs ex aequō partiuntur cibōs</span>",
+        "Liv. 36.37 (Lewis &amp; Short)"
+      ],
+      "comment": "Of sharing and of standing: “in equal measure, on an equal footing” (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "laetāmur amīcōrum laetitiā aequē atque nostrā, et pariter dolēmus angōribus",
+      "english": "we are glad at our friends’ joy just as at our own, and grieve equally at their troubles",
+      "source": "Cic. Fin. 1.65 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "‘facilia’ inquit ‘mē docē’. cui praeceptor ‘ista’ inquit ‘omnibus eadem sunt, aequē difficilia’",
+      "english": "“Teach me the easy things,” he said. His teacher answered, “These are the same for everyone, equally hard.”",
+      "source": "Sen. Ep. 91.17"
+    },
+    {
+      "latin": "fētūs suōs nōn distinguunt ferae et sē in alimentum pariter omnium sternunt; avēs ex aequō partiuntur cibōs",
+      "english": "wild animals make no difference between their young and lie down to feed them all alike; birds share the food out equally",
+      "source": "Sen. Ep. 66.26"
+    },
+    {
+      "latin": "Prōdesse quī vult nec potest, aequē est miser.",
+      "english": "He who wants to help and cannot is just as unhappy.",
+      "source": "Publil. Sent. P 24"
+    }
+  ],
+  "related": [
+    "same",
+    "together",
+    "similar"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/aeque\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aeque</a> · <a href=\"https://logeion.uchicago.edu/aequus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aequus</a> · <a href=\"https://logeion.uchicago.edu/pariter\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pariter</a> · <a href=\"https://logeion.uchicago.edu/par\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: par</a>",
+    "Quotations from the Latinitas loci collections (loci-seneca-epistulae, loci-publilius, loci-plinius), checked against the editions named there.",
+    "Publilius is cited as the loci collection numbers him, by position under each initial letter in the Latin Library text.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

@@ -5,7 +5,9 @@
   "also": [
     "frightened",
     "afraid",
-    "fear"
+    "fear",
+    "scared",
+    "terrified"
   ],
   "domain": "sermo",
   "terms": [
@@ -14,6 +16,18 @@
       "status": "recommended",
       "period": "classical",
       "gloss": "be afraid, fear"
+    },
+    {
+      "latin": "territus, territa, territum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "frightened, scared",
+      "grammar": "adjective (participle of <span lang=\"la\">terreō</span>)",
+      "evidence": [
+        "Lewis &amp; Short, s.v. <span lang=\"la\">terreō</span>",
+        "Andresian p. 36"
+      ],
+      "comment": "Made afraid by something: <span lang=\"la\">perterritus</span>, terrified."
     }
   ],
   "phrases": [
@@ -36,9 +50,11 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/timeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: timeo</a>",
-    "The example sentence marked “composed” is ours.",
     "<a href=\"https://logeion.org/timeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: timeo</a>",
     "Examples are composed for conversation with Theo; dictionary links document the component words, not these exact sentences or standardized modern climbing terminology.",
+    "<a href=\"https://logeion.uchicago.edu/terreo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: terreo</a>",
+    "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 36.",
+    "The example sentence marked “composed” is ours.",
     "The example sentences marked “composed” are ours."
   ],
   "review": {

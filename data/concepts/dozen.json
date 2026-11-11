@@ -1,0 +1,80 @@
+{
+  "id": "dozen",
+  "english": "dozen",
+  "pos": [
+    "numeral",
+    "noun"
+  ],
+  "also": [
+    "a dozen",
+    "dozens",
+    "dozens of",
+    "twelve",
+    "twelve each"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "duodecim",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "twelve",
+      "grammar": "numeral, indeclinable",
+      "evidence": [
+        "Cic. Rep. 2.17 (Lewis &amp; Short)",
+        "Caes. B.G. 1.5.2 (Lewis &amp; Short)"
+      ],
+      "comment": "Latin has no word for a dozen and does not count in dozens: a dozen eggs are <span lang=\"la\">duodecim ōva</span>."
+    },
+    {
+      "latin": "duodēnī, duodēnae, duodēna",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "twelve each, twelve at a time",
+      "grammar": "distributive numeral, plural",
+      "evidence": [
+        "Cic. Agr. 2.85: <span lang=\"la\">duodēna dēscrībit in singulōs hominēs jūgera</span> (Lewis &amp; Short)",
+        "Caes. B.G. 7.36.7: <span lang=\"la\">fossa duplex duodēnum pedum</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Twelve to each person or thing; also twelve with nouns used only in the plural (see pair, on <span lang=\"la\">bīnī</span>)."
+    },
+    {
+      "latin": "sescentī, sescentae, sescenta",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "dozens, hundreds: a great many",
+      "grammar": "numeral, plural adjective",
+      "evidence": [
+        "Cic. Att. 7.2.3: <span lang=\"la\">quās ego sescentās ūnō tempore accēpī</span>",
+        "Ter. Ph. 668: <span lang=\"la\">sexcentās proinde scrībitō jam mihi dicās</span>"
+      ],
+      "comment": "Properly six hundred; where English says “dozens” or “hundreds”, Latin says six hundred, very often in prose and verse (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "veniō ad epistulās tuās; quās ego sescentās ūnō tempore accēpī, aliam aliā jūcundiōrem",
+      "english": "I come to your letters: I got dozens of them at once, each more delightful than the last",
+      "source": "Cic. Att. 7.2.3"
+    },
+    {
+      "latin": "Duodecim ōva emē, sīs.",
+      "english": "Buy a dozen eggs, will you?",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "number"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/duodecim\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: duodecim</a> · <a href=\"https://logeion.uchicago.edu/duodeni\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: duodeni</a> · <a href=\"https://logeion.uchicago.edu/sescenti\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sescenti</a>",
+    "Cicero (Att. 7.2.3) and Terence (Ph. 668, in the edition’s spelling <span lang=\"la\">sexcentās</span>) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026).",
+    "Citations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j).",
+    "The example sentences marked “composed” are ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

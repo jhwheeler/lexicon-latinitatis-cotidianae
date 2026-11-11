@@ -1,0 +1,91 @@
+{
+  "id": "presence",
+  "english": "presence",
+  "pos": "noun",
+  "also": [
+    "in the presence of",
+    "in my presence",
+    "in front of (someone)",
+    "presence of mind",
+    "be present"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "cōram",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "in the presence of, before; in person, face to face",
+      "grammar": "adverb; and preposition with the ablative",
+      "evidence": [
+        "Cic. Att. 4.4.1: <span lang=\"la\">cētera cōram agēmus</span>",
+        "Ov. F. 5.69–70: <span lang=\"la\">cōram sene</span>",
+        "Traupman 236, 319"
+      ],
+      "comment": "As a preposition, before a person’s eyes (<span lang=\"la\">cōram patre</span>); as an adverb, in person, face to face, as against by letter: Cicero ends letters with it."
+    },
+    {
+      "latin": "praesēns, praesentis",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "present, in person; mē praesente, in my presence",
+      "grammar": "participle of praesum, as an adjective; often in the ablative absolute",
+      "evidence": [
+        "Cic. Att. 2.12.2: <span lang=\"la\">praesentem audīre mālō</span>"
+      ],
+      "comment": "Latin puts the person in the ablative absolute where English uses the abstract noun: <span lang=\"la\">mē praesente</span>, in my presence; the opposite is <span lang=\"la\">mē absente</span> (see absence)."
+    },
+    {
+      "latin": "praesentia, praesentiae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "presence, being there",
+      "grammar": "noun, first declension",
+      "evidence": [
+        "Cic. Fam. 5.8.5: <span lang=\"la\">dēsīderium praesentiae tuae</span> (Lewis &amp; Short)",
+        "Caes. B.G. 5.43.4: <span lang=\"la\">praesentia animī</span>, presence of mind (Lewis &amp; Short)"
+      ],
+      "comment": "The noun is classical but less used than the two above. <span lang=\"la\">In praesentiā</span> means “for the present, now” (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "cētera cōram agēmus",
+      "english": "we’ll deal with the rest face to face",
+      "source": "Cic. Att. 4.4.1"
+    },
+    {
+      "latin": "quid, cum cōram sumus et garrīmus quicquid in buccam?",
+      "english": "and what about when we are together and chatter whatever comes into our heads?",
+      "source": "Cic. Att. 12.1.2"
+    },
+    {
+      "latin": "verba quis audēret cōram sene digna rubōre dīcere?",
+      "english": "who would have dared to say words to make one blush in front of an old man?",
+      "source": "Ov. F. 5.69–70"
+    },
+    {
+      "latin": "praesentem audīre mālō",
+      "english": "I’d rather hear it from you in person",
+      "source": "Cic. Att. 2.12.2"
+    }
+  ],
+  "related": [
+    "absence",
+    "personal",
+    "attend",
+    "im-here",
+    "in-front-of"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/coram\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: coram</a> · <a href=\"https://logeion.uchicago.edu/praesum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praesum</a> · <a href=\"https://logeion.uchicago.edu/praesentia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praesentia</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 236, 319, checked against the searchable text of the book (11 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-ovidius), checked against the editions named there.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

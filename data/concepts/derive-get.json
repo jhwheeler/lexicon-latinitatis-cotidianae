@@ -1,0 +1,93 @@
+{
+  "id": "derive-get",
+  "english": "derive",
+  "sense": "get (pleasure, profit, comfort) from something",
+  "pos": "verb",
+  "also": [
+    "derive pleasure from",
+    "derive benefit from",
+    "get out of",
+    "draw from"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "capiō, capere, cēpī, captum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "get, take (pleasure, profit, grief) from",
+      "grammar": "verb, third conjugation (-iō), with ex and the ablative",
+      "evidence": [
+        "Plaut. Am. 2.2.9: <span lang=\"la\">plūs aegrī ex abitū virī quam ex adventū voluptātis cēpī</span> (Lewis &amp; Short)",
+        "Traupman 361: <span lang=\"la\">magnam voluptātem capere ex</span>"
+      ],
+      "comment": "With nouns of feeling and gain: <span lang=\"la\">voluptātem, dolōrem, frūctum capere ex</span>. The verb’s first sense is “take, seize” (Lewis &amp; Short)."
+    },
+    {
+      "latin": "percipiō, percipere, percēpī, perceptum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "receive, gather; feel (pleasure, grief)",
+      "grammar": "verb, third conjugation (-iō), with ex and the ablative",
+      "evidence": [
+        "Cic. Fin. 1.63: <span lang=\"la\">voluptātem … percipī</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Literally to gather in (a harvest: <span lang=\"la\">percipere frūctūs</span>, Cic. Sen. 24); also to perceive, learn. Somewhat weightier than <span lang=\"la\">capere</span>."
+    },
+    {
+      "latin": "trahō, trahere, trāxī, tractum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "draw, get (something, often unwelcome) from",
+      "grammar": "verb, third conjugation, with ex and the ablative",
+      "evidence": [
+        "Cic. Fam. 4.3.1: <span lang=\"la\">molestiam trāxerit</span> (Lewis &amp; Short: “has derived, i.e. has received, suffered”)"
+      ],
+      "comment": "First “drag, pull”.",
+      "notes": [
+        "tractum"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "plūs aegrī ex abitū virī quam ex adventū voluptātis cēpī",
+      "english": "I got more grief from my husband’s going than pleasure from his coming",
+      "source": "Plaut. Am. 2.2.9 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "neque majōrem voluptātem ex īnfīnītō tempore aetātis percipī posse, quam ex hōc percipiātur",
+      "english": "that no greater pleasure can be had from an endless lifetime than is had from this (finite) one",
+      "source": "Cic. Fin. 1.63 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "Magnam ex hortō voluptātem capimus.",
+      "english": "We get a lot of pleasure out of the garden.",
+      "source": "composed"
+    }
+  ],
+  "notes": {
+    "tractum": {
+      "form": "tractum",
+      "claim": "short a",
+      "html": "Lachmann’s law does not lengthen before an old aspirate or a voiceless stop: the house ruling of 9 November 2026 (with Allen’s <span lang=\"la\">trăctus</span>, against Bennett’s <span lang=\"la\">trāctus</span>).",
+      "ruling": "lachmann"
+    }
+  },
+  "related": [
+    "benefit",
+    "enjoy",
+    "derive-origin"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/capio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: capio</a> · <a href=\"https://logeion.uchicago.edu/percipio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: percipio</a> · <a href=\"https://logeion.uchicago.edu/traho\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: traho</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 361, checked against the searchable text of the book (11 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition.",
+    "The example sentences marked “composed” are ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

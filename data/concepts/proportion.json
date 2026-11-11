@@ -1,0 +1,80 @@
+{
+  "id": "proportion",
+  "english": "proportion",
+  "sense": "relation in size or amount",
+  "pos": "noun",
+  "also": [
+    "in proportion",
+    "in proportion to",
+    "proportional",
+    "proportionally",
+    "proportionately",
+    "ratio",
+    "pro rata"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "prō portiōne",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "in proportion, proportionally; with a genitive, in proportion to",
+      "grammar": "phrase: prō with the ablative of portiō",
+      "evidence": [
+        "Cic. de Or. 2.320: <span lang=\"la\">prō portiōne rērum</span>",
+        "Cato Agr. 106: <span lang=\"la\">prō portiōne ea omnia facitō</span> (Lewis &amp; Short)"
+      ],
+      "comment": "The classical phrase; <span lang=\"la\">portiō</span> alone, “a share”, is post-Augustan (Lewis &amp; Short). For “a large proportion of” Latin says <span lang=\"la\">magna pars</span> (see most, the greater part)."
+    },
+    {
+      "latin": "prō ratā parte",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "proportionately, each by its due share",
+      "grammar": "phrase: prō with the ablative of rata pars, a fixed share",
+      "evidence": [
+        "Cic. Tusc. 1.94: <span lang=\"la\">perinde ut cuique data sunt prō ratā parte</span>",
+        "Cic. Rep. 2.67: <span lang=\"la\">utinam ex omnī senātū prō ratā parte esset!</span>"
+      ],
+      "comment": "<span lang=\"la\">Rata pars</span> is a fixed, reckoned share (<span lang=\"la\">ratus</span>, from <span lang=\"la\">reor</span>); the phrase is the source of English “pro rata”."
+    },
+    {
+      "latin": "prōportiō, prōportiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "proportion, analogy",
+      "evidence": [
+        "Varr. L.L. 10.2: <span lang=\"la\">prōportiō, quod dīcunt ἀνάλογον</span> (Lewis &amp; Short)",
+        "Cic. Tim. 4 (Lewis &amp; Short: Univ. 4)"
+      ],
+      "comment": "A learned word of grammar and mathematics, which Cicero offers as a new coinage for Greek <span lang=\"la\">analogia</span> (Lewis &amp; Short); in talk the phrase <span lang=\"la\">prō portiōne</span> is more natural."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "oportet, ut aedibus ac templīs vestibula et aditūs, sīc causīs prīncipia prō portiōne rērum praepōnere",
+      "english": "as houses and temples have forecourts and entrances, so cases should be given openings in proportion to their matter",
+      "source": "Cic. de Or. 2.320"
+    },
+    {
+      "latin": "Omnia ista, perinde ut cuique data sunt prō ratā parte, ita aut longa aut brevia dīcuntur.",
+      "english": "All those things are called long or short according to the share each has been given.",
+      "source": "Cic. Tusc. 1.94"
+    }
+  ],
+  "related": [
+    "part",
+    "most-majority",
+    "measure"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/portio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: portio</a> · <a href=\"https://logeion.uchicago.edu/ratus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ratus</a> · <a href=\"https://logeion.uchicago.edu/proportio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: proportio</a>",
+    "Cicero (de Or. 2.320, Tusc. 1.94, Rep. 2.67) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026).",
+    "Citations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

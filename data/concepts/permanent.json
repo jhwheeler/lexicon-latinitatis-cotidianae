@@ -1,0 +1,89 @@
+{
+  "id": "permanent",
+  "english": "permanent",
+  "pos": "adjective",
+  "also": [
+    "permanently",
+    "for good",
+    "lasting",
+    "long-lasting"
+  ],
+  "domain": "tempus",
+  "terms": [
+    {
+      "latin": "perpetuus, perpetua, perpetuum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "permanent, lasting, unbroken",
+      "grammar": "adjective",
+      "evidence": [
+        "Cic. Brut. 105: <span lang=\"la\">quaestiōnēs perpetuae</span>, standing courts (Lewis &amp; Short: “a permanent tribunal”)",
+        "Ov. Tr. 3.10.14: <span lang=\"la\">perpetuamque facit</span>"
+      ],
+      "comment": "Lasting without a break, and so permanent: snow that never melts, a standing court. It also means continuous, whole: <span lang=\"la\">diem perpetuum</span>, the whole day long (Ter. Ad.); <span lang=\"la\">ōrātiō perpetua</span>, a continuous speech (Lewis &amp; Short). Permanently, for good: <span lang=\"la\">in perpetuum</span> (Cic. Cat. 1.30, Lewis &amp; Short) or <span lang=\"la\">perpetuō</span>."
+    },
+    {
+      "latin": "perennis, perenne",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "lasting, never failing",
+      "grammar": "adjective, third declension",
+      "evidence": [
+        "Cic. Verr. 2.4.107, of water that never fails (Lewis &amp; Short)",
+        "M-O s.v. temporary: permanent"
+      ],
+      "comment": "From <span lang=\"la\">per annum</span>: lasting the year round, and so of springs that never run dry, a hearth always alight, a work that endures (<span lang=\"la\">exēgī monumentum aere perennius</span>, Hor. C. 3.30.1). Morgan–Owens gives it for permanent."
+    },
+    {
+      "latin": "mānsūrus, mānsūra, mānsūrum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "lasting, built to last",
+      "grammar": "adjective (future participle of <span lang=\"la\">maneō</span>)",
+      "evidence": [
+        "Verg. A. 3.86 (Lewis &amp; Short, s.v. <span lang=\"la\">maneō</span>: “lasting, permanent”)",
+        "Tac. Ann. 14.20: <span lang=\"la\">mānsūram theātrī sēdem</span>"
+      ],
+      "comment": "What is going to stay. Tacitus sets Pompey’s theatre, a seat built to last, against the stands put up for the occasion before it (see temporary)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nix jacet, et jactam nē sōl pluviaeque resolvant, indūrat Boreās perpetuamque facit",
+      "english": "snow lies, and once it has fallen, so that neither sun nor rain may melt it, the north wind hardens it and makes it permanent",
+      "source": "Ov. Tr. 3.10.13–14"
+    },
+    {
+      "latin": "effinge aliquid et excūde, quod sit perpetuō tuum",
+      "english": "shape and hammer out something that will be yours for good",
+      "source": "Plin. Ep. 1.3.4"
+    },
+    {
+      "latin": "rēs nōn parta labōre, sed relicta; nōn ingrātus ager, focus perennis",
+      "english": "means not won by toil but inherited; land that repays you; a hearth always alight",
+      "source": "Mart. 10.47.3–4"
+    },
+    {
+      "latin": "Perenne conjugium animus, nōn corpus facit.",
+      "english": "A lasting marriage is made by the mind, not the body.",
+      "source": "Publil. Sent. P 54"
+    }
+  ],
+  "related": [
+    "always",
+    "long-time",
+    "temporary",
+    "constant-continual"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/perpetuus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: perpetuus</a> · <a href=\"https://logeion.uchicago.edu/perennis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: perennis</a> · <a href=\"https://logeion.uchicago.edu/maneo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: maneo</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. temporary: permanent.",
+    "Quotations from the Latinitas loci collections (loci-ovidius, loci-plinius, loci-martialis, loci-publilius), checked against the editions named there.",
+    "Tacitus, Ann. 14.20, checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "id": "impossible",
+  "english": "impossible",
+  "pos": "adjective",
+  "also": [
+    "it’s impossible",
+    "it can’t be done",
+    "it can’t be helped",
+    "impossibility"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "fierī nōn potest (ut)",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "it is impossible (that)",
+      "grammar": "phrase: with ut + subjunctive, or absolute",
+      "evidence": [
+        "Cato Agr. 14.5",
+        "Aug. Conf. 3.12.21"
+      ],
+      "comment": "The usual classical way, the negative of <span lang=\"la\">fierī potest</span> (see possible)."
+    },
+    {
+      "latin": "impossibilis, impossibile",
+      "status": "alternative",
+      "period": "post-classical",
+      "gloss": "impossible",
+      "grammar": "adjective, third declension",
+      "evidence": [
+        "Quint. 5.10.18: <span lang=\"la\">impossibile aut potius īnfīnītum est</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Post-Augustan (Quintilian, Apuleius, the lawyers): correct, but a learned word."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "locō pestilentī, ubi aestāte fierī nōn potest, bonō dominō pars quārta pretī accēdat",
+      "english": "in an unhealthy place, where it cannot be done in summer, let a quarter of the price be added for a good master",
+      "source": "Cato Agr. 14.5"
+    },
+    {
+      "latin": "Permitte ut dormiam. Quōmodo nunc est, aliter fierī nōn potest.",
+      "english": "Let me sleep. The way things are now, it can’t be otherwise.",
+      "source": "Pont. Progymn. I 50"
+    },
+    {
+      "latin": "Fierī nōn potest ut omnia hodiē cōnficiāmus.",
+      "english": "We can’t possibly finish everything today.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "possible",
+    "able"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/impossibilis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: impossibilis</a> · <a href=\"https://logeion.uchicago.edu/fio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fio</a>",
+    "Quotations from the Latinitas loci collections (loci-cato, loci-pontanus; the Pontanus line is from a single transcription), checked against the editions named there.",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

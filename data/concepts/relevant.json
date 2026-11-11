@@ -1,0 +1,79 @@
+{
+  "id": "relevant",
+  "english": "relevant",
+  "pos": "adjective",
+  "also": [
+    "be relevant",
+    "pertinent",
+    "to the point",
+    "irrelevant",
+    "that’s beside the point",
+    "have nothing to do with"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "ad rem pertinēre",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "to be relevant, bear on the matter",
+      "grammar": "phrase: pertineō, pertinēre, with ad rem",
+      "evidence": [
+        "Cic. Div. 2.98: <span lang=\"la\">sī ad rem pertinet</span> (Lewis &amp; Short, s.v. <span lang=\"la\">pertineō</span>)",
+        "Cic. Fam. 13.13: <span lang=\"la\">sī quid hoc ad rem pertinet</span>",
+        "M-O s.v. relevant"
+      ],
+      "comment": "The usual way; with another noun, <span lang=\"la\">ad hanc quaestiōnem pertinet</span>, “it’s relevant to this question”."
+    },
+    {
+      "latin": "nihil ad rem",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "irrelevant, beside the point",
+      "grammar": "phrase, with or without pertinet",
+      "evidence": [
+        "Cic. Caecin. 58: <span lang=\"la\">nihil ad rem pertinet</span> (Lewis &amp; Short, s.v. <span lang=\"la\">pertineō</span>)",
+        "Cic. Fin. 1.5: <span lang=\"la\">nihil ad Epicūrum</span>"
+      ],
+      "comment": "Often without the verb: <span lang=\"la\">Nihil ad rem!</span>, “That’s beside the point!”"
+    },
+    {
+      "latin": "aliēnus (ab)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "foreign to, out of place in, irrelevant to",
+      "grammar": "adjective, with ab + ablative or the dative",
+      "evidence": [
+        "M-O s.v. relevant"
+      ],
+      "comment": "Literally “belonging to another”: what does not belong to the matter in hand."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "cum virtūtibus tum etiam fortūnā, sī quid hoc ad rem pertinet",
+      "english": "in his virtues and also in his fortune, if this is relevant at all",
+      "source": "Cic. Fam. 13.13 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "Nihil ad rem! Respondē ad id quod rogāvī.",
+      "english": "That’s beside the point! Answer what I asked.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "issue",
+    "important"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/pertineo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pertineo</a> · <a href=\"https://logeion.uchicago.edu/alienus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: alienus</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. relevant.",
+    "Cicero quoted as Lewis &amp; Short quotes him.",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

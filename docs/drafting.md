@@ -27,7 +27,7 @@ Give the other forms the sources offer as `alternative` terms, with their period
 
 ## Spelling the Latin
 
-- **Macrons are spelling.** Copy Lewis & Short's marks. Where it leaves a vowel unmarked that is hidden-long, follow Bennett; where de Vaan discusses the vowel, he decides. Vowels before *ns* and *nf* are long; before *gn* short unless the stem is long; before *nct* and *nx* long. If you cannot establish a vowel, leave it unmarked and flag it.
+- **Macrons are spelling.** Copy Lewis & Short's marks. Where it leaves a vowel unmarked that is hidden-long, follow Bennett; where de Vaan discusses the vowel, he decides. Vowels before *ns* and *nf* are long; before *gn* short unless the stem is long; before *nct* and *nx* long. If you cannot establish a vowel, leave it unmarked and flag it. Where Lewis & Short and de Vaan agree on a vowel, write what they write: depart from the two together only for a really good reason, such as newer scholarship or the metre of a quoted line, and say what it is in a note (Jack, 11 November 2026).
 - **Consonantal i is j** (*jam, ejus, major*), with no macron on the vowel before intervocalic j.
 - Nouns with genitive and gender (`subligāculum, subligāculī n.`), verbs with principal parts as Lewis & Short gives them (`cessō, cessāre, cessāvī, cessātum`).
 - `python3 scripts/check_quantities.py` must pass: where you depart from Lewis & Short, write a note in the fixed shape (`form`, `claim`, `against`, `html`), or don't depart.

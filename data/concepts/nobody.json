@@ -1,0 +1,88 @@
+{
+  "id": "nobody",
+  "english": "nobody",
+  "pos": "pronoun",
+  "also": [
+    "no one",
+    "no-one",
+    "not anybody",
+    "not anyone"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "nēmō, nēminis m. and f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "nobody, no one",
+      "grammar": "pronoun; in classical Latin gen. nūllīus, abl. nūllō",
+      "evidence": [
+        "Varr. RR 2.1.2: <span lang=\"la\">nēmō enim omnia potest scīre</span>",
+        "Cic. Fam. 7.30.1: <span lang=\"la\">scītō nēminem prandisse</span>"
+      ],
+      "comment": "Of persons only; for things, <span lang=\"la\">nihil</span> (see nothing). <span lang=\"la\">Nēmō nostrum</span>, none of us (see none); <span lang=\"la\">nēmō nōn</span>, everybody (see everyone). Lewis &amp; Short: classical Latin takes the genitive and ablative from <span lang=\"la\">nūllus</span>."
+    },
+    {
+      "latin": "nūllus, nūlla, nūllum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "no (person); nobody, in the cases nēmō lacks",
+      "grammar": "adjective; gen. nūllīus, dat. nūllī",
+      "evidence": [
+        "Sen. Ep. 3.4: <span lang=\"la\">et omnibus crēdere et nūllī</span>"
+      ],
+      "comment": "Supplies the missing cases of <span lang=\"la\">nēmō</span> (<span lang=\"la\">nūllīus, nūllō</span>), and as an adjective agrees with its noun: <span lang=\"la\">nūllus amīcus</span>, no friend (see no)."
+    },
+    {
+      "latin": "nec quisquam",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "and nobody, nor anybody",
+      "grammar": "nec with the pronoun quisquam",
+      "evidence": [
+        "Cic. Sen. 21: <span lang=\"la\">nec vērō quemquam senem audīvī oblītum quō locō thēsaurum obruisset</span>"
+      ],
+      "comment": "Where a sentence goes on with “and nobody”, Latin joins with <span lang=\"la\">nec</span> and uses <span lang=\"la\">quisquam</span> (see and not, someone)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nēmō enim omnia potest scīre",
+      "english": "for nobody can know everything",
+      "source": "Varr. RR 2.1.2"
+    },
+    {
+      "latin": "ita Canīniō cōnsule scītō nēminem prandisse",
+      "english": "so, in Caninius’s consulship, let me tell you, nobody had lunch",
+      "source": "Cic. Fam. 7.30.1"
+    },
+    {
+      "latin": "itaque nēmō adhūc convenīre mē voluit, cui fuerim occupātus",
+      "english": "and so far nobody who wanted to see me has found me busy",
+      "source": "Cic. Sen. 32"
+    },
+    {
+      "latin": "Nēmō timendō ad summum pervenit locum.",
+      "english": "Nobody ever reached the top by being afraid.",
+      "source": "Publil. Sent. N 68"
+    }
+  ],
+  "related": [
+    "none",
+    "and-not",
+    "everyone",
+    "someone",
+    "nothing",
+    "no-not-any"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/nemo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nemo</a> · <a href=\"https://logeion.uchicago.edu/nullus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nullus</a> · <a href=\"https://logeion.uchicago.edu/quisquam\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quisquam</a>",
+    "Quotations from the Latinitas loci collections (loci-varro, loci-cicero-epistulae, loci-cicero-philosophica, loci-seneca-epistulae, loci-publilius), checked against the editions named there.",
+    "Publilius is cited as the loci collection numbers him, by position under each initial letter in the Latin Library text; from N onwards that numbering differs from Meyer’s."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

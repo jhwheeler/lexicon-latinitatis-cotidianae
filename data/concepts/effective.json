@@ -1,0 +1,80 @@
+{
+  "id": "effective",
+  "english": "effective",
+  "pos": "adjective",
+  "also": [
+    "effectual",
+    "ineffective",
+    "have an effect",
+    "have no effect"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "efficāx, efficācis",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "effective, effectual",
+      "grammar": "adjective, third declension; with ad, adversus or the dative",
+      "evidence": [
+        "Sen. Ep. 6.5: <span lang=\"la\">breve et efficāx per exempla</span>",
+        "Liv. 1.9 (Lewis &amp; Short)"
+      ],
+      "comment": "Mostly post-Augustan; not in Cicero or Caesar, though Caelius uses it in a letter to Cicero (Fam. 8.10.3) (Lewis &amp; Short)."
+    },
+    {
+      "latin": "valeō, valēre, valuī, valitum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "to have force, to work, to be effective",
+      "grammar": "verb, second conjugation, intransitive",
+      "evidence": [
+        "Cic. Fam. 9.17.1: <span lang=\"la\">valēbunt autem semper arma</span> (Lewis &amp; Short)"
+      ],
+      "comment": "First “be strong, be well”; transferred, “have power, prevail, avail”."
+    },
+    {
+      "latin": "prōficiō, prōficere, prōfēcī, prōfectum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "to achieve something; nihil prōficere, to have no effect",
+      "grammar": "verb, third conjugation (-iō)",
+      "evidence": [
+        "Caes. B.G. 7.20: <span lang=\"la\">sī nihil in oppugnātiōne oppidī prōfēcisset</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Also “make progress”, and of things “be of use”."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "longum iter est per praecepta, breve et efficāx per exempla",
+      "english": "the road through rules is long; through examples it is short and effective",
+      "source": "Sen. Ep. 6.5"
+    },
+    {
+      "latin": "amāra cūrārum ēluere efficāx",
+      "english": "good at washing away the bitterness of cares",
+      "source": "Hor. C. 4.12.20 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "Hoc medicāmentum adversus tussim efficāx est.",
+      "english": "This medicine is effective against a cough.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "efficient",
+    "useful",
+    "powerful"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/efficax\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: efficax</a> · <a href=\"https://logeion.uchicago.edu/valeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: valeo</a> · <a href=\"https://logeion.uchicago.edu/proficio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: proficio</a>",
+    "Quotations from the Latinitas loci collections (loci-seneca-epistulae), checked against the editions named there.",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

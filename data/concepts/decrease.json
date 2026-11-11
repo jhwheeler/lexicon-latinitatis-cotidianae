@@ -1,0 +1,101 @@
+{
+  "id": "decrease",
+  "english": "decrease",
+  "pos": [
+    "verb",
+    "noun"
+  ],
+  "also": [
+    "go down",
+    "get smaller",
+    "become less",
+    "lessen",
+    "diminish",
+    "wane",
+    "reduction",
+    "fall (in number or amount)"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "minuō, minuere, minuī, minūtum",
+      "status": "recommended",
+      "period": "classical",
+      "grammar": "verb, third conjugation, transitive; in the passive, to grow less",
+      "gloss": "make less, lessen; in the passive, decrease",
+      "evidence": [
+        "Cic. Sen. 21: <span lang=\"la\">at memoria minuitur</span>",
+        "Cic. Off. 1.123: <span lang=\"la\">senibus autem labōrēs corporis minuendī</span>"
+      ],
+      "comment": "Transitive: to make less (see make smaller); the passive is the everyday “to go down, grow less”."
+    },
+    {
+      "latin": "dēcrēscō, dēcrēscere, dēcrēvī, dēcrētum",
+      "status": "recommended",
+      "period": "classical",
+      "grammar": "verb, third conjugation, intransitive",
+      "gloss": "decrease, grow less, wane",
+      "evidence": [
+        "Hor. C. 4.7.3: <span lang=\"la\">dēcrēscentia rīpās flūmina praetereunt</span>",
+        "Cic. Div. 2.33: <span lang=\"la\">ostreae cum lūnā pariter crēscunt pariterque dēcrēscunt</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Of what grows less of itself: rivers going down, the waning moon (<span lang=\"la\">dēcrēscente lūnā</span>, Col. 12.47.2), a fever; the opposite of <span lang=\"la\">crēscō</span>."
+    },
+    {
+      "latin": "dēminuō, dēminuere, dēminuī, dēminūtum",
+      "status": "alternative",
+      "period": "classical",
+      "grammar": "verb, third conjugation, transitive",
+      "gloss": "lessen by taking away, reduce",
+      "evidence": [
+        "Caes. B.G. 1.53.6: <span lang=\"la\">neque dē tantā voluptāte et grātulātiōne quicquam fortūna dēminuerat</span> (Lewis &amp; Short)",
+        "Tac. Agr. 9.4: <span lang=\"la\">aut sevēritās amōrem dēminuit</span>"
+      ],
+      "comment": "To make less by taking something away (<span lang=\"la\">dē</span>): with <span lang=\"la\">dē</span> or <span lang=\"la\">ex</span> and the ablative, to take away from."
+    },
+    {
+      "latin": "dēminūtiō, dēminūtiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a decrease, a reduction",
+      "evidence": [
+        "Cic. Tusc. 1, 28: <span lang=\"la\">accrētiō et dēminūtiō lūminis</span> (Lewis &amp; Short)",
+        "Cic. Agr. 1.21: <span lang=\"la\">vectīgālium</span> (Lewis &amp; Short)"
+      ],
+      "comment": "The noun, in good prose (Lewis &amp; Short); a decrease in revenue, in numbers, in rank."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "at memoria minuitur. crēdō, nisi eam exerceās",
+      "english": "“But memory fades.” — I suppose so, unless you exercise it",
+      "source": "Cic. Sen. 21"
+    },
+    {
+      "latin": "mūtat terra vicēs et dēcrēscentia rīpās flūmina praetereunt",
+      "english": "the earth goes through its changes, and the rivers, going down, flow past within their banks",
+      "source": "Hor. C. 4.7.3–4"
+    },
+    {
+      "latin": "nec illī, quod est rārissimum, aut facilitās auctōritātem aut sevēritās amōrem dēminuit",
+      "english": "in him, the rarest thing, neither his easiness lessened his authority nor his strictness affection",
+      "source": "Tac. Agr. 9.4"
+    }
+  ],
+  "related": [
+    "increase",
+    "make-smaller",
+    "less"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/minuo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: minuo</a> · <a href=\"https://logeion.uchicago.edu/decresco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: decresco</a> · <a href=\"https://logeion.uchicago.edu/deminuo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: deminuo</a> · <a href=\"https://logeion.uchicago.edu/deminutio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: deminutio</a>",
+    "Quotations from the Latinitas loci collections (loci-cicero-philosophica, loci-cato, loci-tacitus), checked against the editions named there.",
+    "Horace (C. 4.7.3–4) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026).",
+    "Citations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

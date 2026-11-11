@@ -1,0 +1,57 @@
+{
+  "id": "schedule-verb",
+  "english": "schedule",
+  "sense": "fix a day or time for something",
+  "pos": "verb",
+  "also": [
+    "scheduled",
+    "schedule a meeting",
+    "fix a date",
+    "set a date",
+    "as scheduled",
+    "on the scheduled day",
+    "appointed day"
+  ],
+  "domain": "tempus",
+  "terms": [
+    {
+      "latin": "cōnstituō, cōnstituere, cōnstituī, cōnstitūtum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "fix, appoint (a day for something)",
+      "grammar": "verb, third conjugation: <span lang=\"la\">diem</span> + dative of the event",
+      "evidence": [
+        "Caes. BG 1.47.1: <span lang=\"la\">conloquiō diem cōnstitueret</span>",
+        "Caes. BG 1.30: <span lang=\"la\">diem conciliō</span> (Lewis &amp; Short)"
+      ],
+      "comment": "The day goes in the accusative and the event in the dative: <span lang=\"la\">diem conloquiō cōnstituere</span>, to schedule a meeting. Agreed with someone: <span lang=\"la\">cum aliquō cōnstituere</span> (Cic. Verr. 2.2.65, Lewis &amp; Short). As scheduled: <span lang=\"la\">ut erat cōnstitūtum</span> (Cic. Clu. 37, Lewis &amp; Short); on the scheduled day, <span lang=\"la\">diē cōnstitūtā</span> (Caes. BG 1.4.2). The noun schedule, a timetable, is <span lang=\"la\">hōrārium</span> (see schedule)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "utī aut iterum conloquiō diem cōnstitueret aut, sī id minus vellet, ex suīs lēgātīs aliquem ad sē mitteret",
+      "english": "(he asked) that Caesar should either fix a day for another meeting or, if he did not want that, send him one of his officers",
+      "source": "Caes. BG 1.47.1"
+    },
+    {
+      "latin": "Diē cōnstitūtā causae dictiōnis Orgetorīx ad jūdicium omnem suam familiam, ad hominum mīlia decem, undique coēgit",
+      "english": "On the day fixed for his trial Orgetorix gathered his whole household at the court, some ten thousand men, from all sides",
+      "source": "Caes. BG 1.4.2"
+    }
+  ],
+  "related": [
+    "schedule",
+    "deadline",
+    "organise-arrange",
+    "agree-to"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/constituo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: constituo</a>",
+    "Caesar, BG 1.4.2 and 1.47.1, checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

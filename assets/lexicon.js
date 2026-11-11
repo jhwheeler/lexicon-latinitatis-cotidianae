@@ -1,46 +1,58 @@
 (() => {
-  // Theme toggle (light is the default; the choice is kept where storage allows).
+  // Theme (light is the default; the choice is kept where storage allows), chosen in the settings.
   const root = document.documentElement;
-  const toggle = document.getElementById('theme-toggle');
-  const label = document.getElementById('theme-label');
   const color = document.querySelector('meta[name="theme-color"]');
   const choices = [...document.querySelectorAll('[data-theme-choice]')];
   function sync() {
-    const dark = root.dataset.theme === 'dark';
-    if (label) label.textContent = dark ? 'Light mode' : 'Dark mode';
-    if (toggle) toggle.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
     choices.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.themeChoice === root.dataset.theme)));
-    if (color) color.content = dark ? '#1c1b19' : '#ffffff';
+    if (color) color.content = root.dataset.theme === 'dark' ? '#1c1b19' : '#ffffff';
   }
   function choose(theme) {
     root.dataset.theme = theme;
     try { localStorage.setItem('lexicon-theme', theme); } catch {}
     sync();
   }
-  if (toggle) toggle.addEventListener('click', () => choose(root.dataset.theme === 'dark' ? 'light' : 'dark'));
   choices.forEach(button => button.addEventListener('click', () => choose(button.dataset.themeChoice)));
   sync();
 
-  // The phone menu closes with Escape, or with a tap outside it.
-  const menu = document.querySelector('details.menu');
-  if (menu) {
+  // The settings close with Escape, or with a tap outside them.
+  const settingsMenu = document.querySelector('details.settings');
+  if (settingsMenu) {
     document.addEventListener('keydown', event => {
-      if (event.key === 'Escape' && menu.open) { menu.open = false; menu.querySelector('summary').focus(); }
+      if (event.key === 'Escape' && settingsMenu.open) { settingsMenu.open = false; settingsMenu.querySelector('summary').focus(); }
     });
-    document.addEventListener('click', event => { if (menu.open && !menu.contains(event.target)) menu.open = false; });
+    document.addEventListener('click', event => { if (settingsMenu.open && !settingsMenu.contains(event.target)) settingsMenu.open = false; });
   }
 
-  // Display options: macrons shown or hidden, consonantal i written j or i. They change only what
-  // is shown (search ignores both anyway); each text node under lang="la" keeps its original.
+  // "/" goes to the search: the page's own where it searches in place, else the header's.
+  document.addEventListener('keydown', event => {
+    if (event.key !== '/' || event.ctrlKey || event.metaKey || event.altKey || event.defaultPrevented) return;
+    const target = event.target;
+    if (target.closest && target.closest('input, textarea, select, [contenteditable=""], [contenteditable="true"]')) return;
+    const field = [document.getElementById('search'), document.getElementById('site-search')]
+      .find(el => el && el.getClientRects().length && getComputedStyle(el).visibility !== 'hidden');
+    if (!field) return;
+    event.preventDefault();
+    field.focus();
+    field.select();
+  });
+
+  // Display options: macrons shown or hidden, consonantal i written j or i, consonantal u written
+  // v or u (Jack, 11 November 2026: lower case only, so Venus and Vt keep their capital V). They
+  // change only what is shown (search ignores all three anyway); each text node under lang="la"
+  // keeps its original, so switching back restores it exactly.
   const original = new WeakMap();
-  const settings = { macrons: 'on', j: 'j' };
+  const settings = { macrons: 'on', j: 'j', v: 'v' };
+  const keys = { macrons: 'lexicon-macrons', j: 'lexicon-j', v: 'lexicon-v' };
   try {
     if (localStorage.getItem('lexicon-macrons') === 'off') settings.macrons = 'off';
     if (localStorage.getItem('lexicon-j') === 'i') settings.j = 'i';
+    if (localStorage.getItem('lexicon-v') === 'u') settings.v = 'u';
   } catch {}
   function shown(text) {
     if (settings.macrons === 'off') text = text.normalize('NFD').replace(/\u0304/g, '').normalize('NFC');
     if (settings.j === 'i') text = text.replace(/j/g, 'i').replace(/J/g, 'I');
+    if (settings.v === 'u') text = text.replace(/v/g, 'u');
     return text;
   }
   function render(scope = document) {
@@ -56,18 +68,18 @@
   const options = [...document.querySelectorAll('[data-display]')];
   function syncDisplay() {
     options.forEach(button => button.setAttribute('aria-pressed', String(settings[button.dataset.display] === button.dataset.value)));
-    root.dataset.macrons = settings.macrons; root.dataset.consonantalI = settings.j;
+    root.dataset.macrons = settings.macrons; root.dataset.consonantalI = settings.j; root.dataset.consonantalU = settings.v;
   }
   options.forEach(button => button.addEventListener('click', () => {
     settings[button.dataset.display] = button.dataset.value;
     try {
-      localStorage.setItem(button.dataset.display === 'j' ? 'lexicon-j' : 'lexicon-macrons', button.dataset.value);
+      localStorage.setItem(keys[button.dataset.display], button.dataset.value);
     } catch {}
     syncDisplay(); render();
     document.dispatchEvent(new CustomEvent('lexicon-display'));
   }));
   syncDisplay();
-  if (settings.macrons === 'off' || settings.j === 'i') render();
+  if (settings.macrons === 'off' || settings.j === 'i' || settings.v === 'u') render();
   window.lexiconDisplay = { render };
 
   // Example filters: all examples show without JavaScript; with it, a reader can keep

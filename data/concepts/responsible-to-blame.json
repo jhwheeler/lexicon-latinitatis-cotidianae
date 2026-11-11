@@ -1,0 +1,100 @@
+{
+  "id": "responsible-to-blame",
+  "english": "responsible",
+  "sense": "to blame, at fault",
+  "pos": "adjective",
+  "also": [
+    "to blame",
+    "be to blame",
+    "at fault",
+    "it’s my fault",
+    "whose fault is it?",
+    "be responsible for (something bad)"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "in culpā esse",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "to be to blame, be at fault",
+      "grammar": "phrase: in + ablative of culpa, with esse",
+      "evidence": [
+        "Ter. Hec. 4.4.78: <span lang=\"la\">is quidem in culpā nōn est</span> (Lewis &amp; Short)",
+        "Cic. Att. 8.6.3 (Lewis &amp; Short)"
+      ],
+      "comment": "The plain way to say who is to blame. Turned round, <span lang=\"la\">mea culpa est</span> is “it’s my fault” (Cic. Brut. 133)."
+    },
+    {
+      "latin": "culpa est penes (aliquem)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the blame lies with someone",
+      "grammar": "phrase: penes + accusative",
+      "evidence": [
+        "Liv. 35.33.3: <span lang=\"la\">penes Aetōlōs culpam bellī esse</span> (Lewis &amp; Short, s.v. <span lang=\"la\">culpa</span>)",
+        "Ter. Hec. 4.1.20: <span lang=\"la\">culpa, quae tē est penes</span>"
+      ]
+    },
+    {
+      "latin": "per aliquem stat (quōminus …)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "it is someone’s doing (that something did not happen)",
+      "grammar": "phrase: per + accusative, mostly with quōminus or nē",
+      "evidence": [
+        "Quint. 3.6.78: <span lang=\"la\">nōn per mē stetit, sed per illud</span> (Lewis &amp; Short, s.v. <span lang=\"la\">stō</span>)",
+        "Liv. 8.2.2 (Lewis &amp; Short)"
+      ],
+      "comment": "Used of a hindrance: <span lang=\"la\">per eum stetit quōminus …</span>, “it was his fault that … did not happen”. Rarely without a negative."
+    },
+    {
+      "latin": "auctor, auctōris m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the person who caused something, the one behind it",
+      "evidence": [
+        "Sall. J. 1.4: <span lang=\"la\">suam quisque culpam auctōrēs ad negōtia trānsferunt</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Not only an author: whoever brings a thing about, for good or ill, so the doer or instigator of an act; also of a woman (Lewis &amp; Short, “comm.”). It names the person, not the fault."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Stultum est querī dē adversīs, ubi culpa est tua.",
+      "english": "It’s foolish to complain of bad luck when the fault is your own.",
+      "source": "Publ. S 45"
+    },
+    {
+      "latin": "mālō Tīrōnis verēcundiam in culpā esse quam inlīberālitātem Curiī",
+      "english": "I would rather Tiro’s shyness were to blame than Curius’s meanness",
+      "source": "Cic. Att. 8.6.3"
+    },
+    {
+      "latin": "sed haec mea culpa est",
+      "english": "but this is my fault",
+      "source": "Cic. Brut. 133"
+    },
+    {
+      "latin": "Nōn est in culpā canis; ego jānuam apertam relīquī.",
+      "english": "The dog isn’t to blame; I left the door open.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "accept-blame",
+    "in-charge",
+    "responsible-dutiful"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/culpa\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: culpa</a> · <a href=\"https://logeion.uchicago.edu/penes\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: penes</a> · <a href=\"https://logeion.uchicago.edu/sto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sto</a> · <a href=\"https://logeion.uchicago.edu/auctor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: auctor</a>",
+    "Quotations from the Latinitas loci collections (loci-publilius; the Latin Library numbering, S 45), checked against the editions named there.",
+    "Cicero, Terence, Livy, Quintilian and Sallust quoted as Lewis &amp; Short quotes them.",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

@@ -48,37 +48,34 @@ RULING_STATUSES = ('current', 'provisional', 'withdrawn')
 THEME_INIT = ("<script>\ndocument.documentElement.classList.add('js');\ntry {\n  document.documentElement.dataset.theme = "
               "localStorage.getItem('lexicon-theme') === 'dark' ? 'dark' : 'light';\n} catch {}\n</script>")
 DARK_PAPER = '#1c1b19'
-THEME_TOGGLE = ('<button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to dark mode">'
-                '<svg class="theme-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">'
-                '<circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg>'
-                '<svg class="theme-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">'
-                '<path d="M20.9 13A9 9 0 0 1 11 3.1 7 7 0 1 0 20.9 13Z"/></svg><span id="theme-label">Dark mode</span></button>')
-DISPLAY_MENU = ('<details class="display-menu"><summary aria-label="Display options"><span class="display-aa" aria-hidden="true">'
-                'ā/a</span><span class="display-label">Display</span></summary><div class="display-panel">'
-                '<p class="display-row"><span>Macrons</span><button type="button" data-display="macrons" data-value="on" '
-                'aria-pressed="true">Shown</button><button type="button" data-display="macrons" data-value="off" '
-                'aria-pressed="false">Hidden</button></p><p class="display-row"><span>Consonantal i</span><button type="button" '
-                'data-display="j" data-value="j" aria-pressed="true">jam</button><button type="button" data-display="j" '
-                'data-value="i" aria-pressed="false">iam</button></p></div></details>')
-NAV = (('index.html', 'Search'), ('how-we-decide.html', 'How we decide'), ('rulings.html', 'Rulings'))
+# The header's one settings control (Jack, 11 November 2026): the display options and the theme,
+# behind an "Aa" button at the right of every page's header. They need scripts, so without them it
+# is hidden.
+OPTION_ROWS = ('<p class="display-row"><span>Macrons</span><button type="button" data-display="macrons" data-value="on" '
+               'aria-pressed="true">Shown</button><button type="button" data-display="macrons" data-value="off" '
+               'aria-pressed="false">Hidden</button></p><p class="display-row"><span>Consonantal i</span><button type="button" '
+               'data-display="j" data-value="j" aria-pressed="true">jam</button><button type="button" data-display="j" '
+               'data-value="i" aria-pressed="false">iam</button></p><p class="display-row"><span>Consonantal u</span><button type="button" '
+               'data-display="v" data-value="v" aria-pressed="true">video</button><button type="button" data-display="v" '
+               'data-value="u" aria-pressed="false">uideo</button></p><p class="display-row"><span>Theme</span><button type="button" '
+               'data-theme-choice="light" aria-pressed="true">Light</button><button type="button" data-theme-choice="dark" '
+               'aria-pressed="false">Dark</button></p>')
+SETTINGS = ('<details class="settings"><summary aria-label="Display and theme" title="Display and theme">'
+            '<span class="settings-aa" aria-hidden="true">Aa</span></summary>'
+            f'<div class="settings-panel">{OPTION_ROWS}</div></details>')
+# The search in the header of every page but the front page and the category pages, which search
+# in place: a plain form that opens the front page with ?q=, so it needs no scripts to send.
+MAGNIFIER = ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">'
+             '<circle cx="10.5" cy="10.5" r="6"/><path d="M15 15l5 5"/></svg>')
 
 
-def phone_menu(links):
-    """On a phone the header's links, the display options and the theme fold into one menu
-    (Jack, 9 November 2026). The links work without scripts; the options need them."""
-    return ('<details class="menu"><summary aria-label="Menu">'
-            '<svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">'
-            '<path d="M4 7h16M4 12h16M4 17h16"/></svg>'
-            '<svg class="menu-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">'
-            '<path d="M6 6l12 12M18 6L6 18"/></svg></summary>'
-            f'<div class="menu-panel"><nav class="menu-nav" aria-label="Pages">{links}</nav><div class="menu-options">'
-            '<p class="display-row"><span>Macrons</span><button type="button" data-display="macrons" data-value="on" '
-            'aria-pressed="true">Shown</button><button type="button" data-display="macrons" data-value="off" '
-            'aria-pressed="false">Hidden</button></p><p class="display-row"><span>Consonantal i</span><button type="button" '
-            'data-display="j" data-value="j" aria-pressed="true">jam</button><button type="button" data-display="j" data-value="i" '
-            'aria-pressed="false">iam</button></p><p class="display-row"><span>Theme</span><button type="button" '
-            'data-theme-choice="light" aria-pressed="true">Light</button><button type="button" data-theme-choice="dark" '
-            'aria-pressed="false">Dark</button></p></div></div></details>')
+def header_search(up):
+    return (f'<form class="head-search" role="search" action="{up}index.html" method="get">'
+            f'<label class="head-search-icon" for="site-search">{MAGNIFIER}</label>'
+            '<input id="site-search" class="head-search-field" type="search" name="q" autocomplete="off" '
+            'enterkeyhint="search" placeholder="Search English or Latin" aria-label="Search the lexicon"></form>')
+
+
 REPO = 'https://github.com/jhwheeler/lexicon-latinitatis-cotidianae'
 POS = ('noun', 'verb', 'adjective', 'adverb', 'pronoun', 'preposition', 'conjunction', 'interjection', 'numeral', 'phrase')
 # Grammar derived from a term's dictionary form: "caccabus, caccabī m." is a noun of the second
@@ -502,6 +499,12 @@ _IRREGULAR = {
 }
 
 
+def uv_fold(text):
+    """The search reads u and v alike (uideō finds videō), as it reads i and j alike; the stems and
+    endings are worked out with v and folded only when they are written into the search data."""
+    return text.replace('v', 'u')
+
+
 def search_fold(text):
     """Folded as the search folds what is typed: also j as i."""
     return fold(text).replace('j', 'i')
@@ -720,22 +723,25 @@ def plain(text):
     return re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', '', text)).strip()
 
 
-def site_header(up, current=None):
-    """The header of every page but the index: the lexicon's name, the menu and the theme toggle."""
-    links = ''.join(f'<a href="{up}{href}"' + (' aria-current="page"' if href == current else '') + f'>{label}</a>'
-                    for href, label in NAV)
+def site_header(up, search=True):
+    """The header of every page but the front page: the lexicon's name, the search (except where
+    the page searches in place) and the settings (Jack, 11 November 2026)."""
     return (f'<header class="site-top wrap"><a class="site-name" href="{up}index.html" lang="la">{SITE_NAME}</a>'
-            f'<div class="site-tools"><nav class="site-nav" aria-label="Pages">{links}</nav>{DISPLAY_MENU}{THEME_TOGGLE}</div>'
-            f'{phone_menu(links)}</header>')
+            + (header_search(up) if search else '') + f'{SETTINGS}</header>')
+
+
+def footer_links(up, about, search=True):
+    """The pages that left the header (Jack, 11 November 2026) stand at the foot of every page."""
+    return (f'<a href="{up}how-we-decide.html">How we decide</a> · <a href="{up}rulings.html">Rulings</a> · '
+            f'<a href="{about}">About</a> · ' + (f'<a href="{up}index.html">Search the lexicon</a> · ' if search else '')
+            + f'<a href="{REPO}">Source and history</a> · <a href="{REPO}/issues">Report a problem</a>')
 
 
 def site_footer(up):
-    return (f'<footer class="site-foot"><div class="wrap"><p><a href="{up}how-we-decide.html">How we decide</a> · '
-            f'<a href="{up}rulings.html">Rulings</a> · <a href="{up}index.html">Search the lexicon</a> · '
-            f'<a href="{REPO}">Source and history</a> · <a href="{REPO}/issues">Report a problem</a></p></div></footer>')
+    return f'<footer class="site-foot"><div class="wrap"><p>{footer_links(up, up + "index.html#about")}</p></div></footer>'
 
 
-def page_shell(title, description, canonical, up, body, current=None, scripts=()):
+def page_shell(title, description, canonical, up, body, scripts=(), search=True):
     return (GENERATED + '<!doctype html>\n<html lang="en" data-theme="light">\n<head>\n<meta charset="utf-8">\n'
             '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
             '<meta name="color-scheme" content="light dark">\n<meta name="theme-color" content="#ffffff">\n'
@@ -744,7 +750,7 @@ def page_shell(title, description, canonical, up, body, current=None, scripts=()
             f'<link rel="stylesheet" href="{up}assets/lexicon.css">\n<script src="{up}assets/lexicon.js" defer></script>\n'
             + ''.join(f'<script src="{up}assets/{name}.js" defer></script>\n' for name in scripts)
             + '</head>\n<body class="subpage">\n'
-            f'{site_header(up, current)}\n<main class="wrap page-main">\n{body}\n</main>\n{site_footer(up)}\n'
+            f'{site_header(up, search)}\n<main class="wrap page-main">\n{body}\n</main>\n{site_footer(up)}\n'
             '</body>\n</html>\n')
 
 
@@ -1145,7 +1151,7 @@ def render_category_page(key, site):
     body = resolve_anchors(body, site, up, f'k/{key}.html')
     return page_shell(f'{category["latin"]}: {category["english"]} · {SITE_NAME}',
                       f'Everyday Latin for {category["english"].lower()}: {len(rows)} entries, each with its sources.',
-                      f'k/{key}.html', up, body, scripts=('search',))
+                      f'k/{key}.html', up, body, scripts=('search',), search=False)
 
 
 def render_az_pages(site):
@@ -1220,7 +1226,8 @@ def search_data(site):
                 lines += [['e', p['latin'], p['english'], plain(p['source'])] for p in record.get('phrases', [])]
                 lines += [['n', plain(note_html(record['notes'][n]))] for n in note_numbers(record)]
                 # Each term's head and the stems its forms are built on: [head, class, stem, class, stem…]
-                forms = [[term_head(t['latin'])] + [part for pair in stems for part in pair]
+                # The search folds v as u, as it folds j as i (videō, uideō), so the stems are sent folded.
+                forms = [[term_head(t['latin'])] + [part for cls, stem in stems for part in (cls, uv_fold(stem))]
                          for t in ordered_terms(record) if (stems := search_stems(t))]
                 items.append({'id': f'c-{record["id"]}', 'u': path, 'k': key, 'en': english, 'pos': pos,
                               'al': '; '.join(record.get('also', [])), 'l': lines,
@@ -1237,7 +1244,7 @@ def search_data(site):
                         lines.append(['n', plain(paragraph)])
                 items.append({'id': entry['id'], 'u': path, 'k': key, 'en': english, 'la': latin,
                               'al': entry.get('keywords', ''), 'l': lines})
-    data = {'categories': {key: c['latin'] for key, c in site['categories'].items()}, 'endings': ENDINGS, 'items': items}
+    data = {'categories': {key: c['latin'] for key, c in site['categories'].items()}, 'endings': {cls: [uv_fold(e) for e in endings] for cls, endings in ENDINGS.items()}, 'items': items}
     return 'window.lexiconData = ' + json.dumps(data, ensure_ascii=False, separators=(',', ':')) + ';\n'
 
 
@@ -1255,8 +1262,7 @@ def render_index(root, site):
                 "if (id && !document.getElementById(id)) { var s = document.createElement('script'); "
                 "s.src = 'assets/legacy.js'; document.head.appendChild(s); } } go(); addEventListener('hashchange', go); })();</script>")
     total = len(site['records']) + len(site['legacy'])
-    menu = phone_menu('<a href="how-we-decide.html">How we decide</a><a href="rulings.html">Rulings</a><a href="#about">About</a>')
-    replacements = {'theme': THEME_INIT, 'legacy': redirect, 'theme_toggle': THEME_TOGGLE, 'display_menu': DISPLAY_MENU, 'menu': menu,
+    replacements = {'theme': THEME_INIT, 'legacy': redirect, 'settings': SETTINGS, 'footer_links': footer_links('', '#about', False),
                     'search': search_block('', None, total), 'contents': contents, 'total': f'{total:,}',
                     'record_count': f'{len(site["records"]):,}'}
     return resolve_anchors(fill(root / 'src/page.html', replacements), site, '', 'index.html')
@@ -1309,10 +1315,10 @@ def build_site(root=ROOT):
     outputs['assets/search.js'] = (root / 'src/search.js').read_text(encoding='utf-8')
     outputs['how-we-decide.html'] = fill(root / 'src/how-we-decide.html', {
         'ruling_count': str(len(site['rulings'])), 'theme': THEME_INIT,
-        'header': site_header('', 'how-we-decide.html'), 'footer': site_footer('')})
+        'header': site_header(''), 'footer': site_footer('')})
     outputs['rulings.html'] = fill(root / 'src/rulings.html', {
         'rulings': render_rulings(site), 'ruling_count': str(len(site['rulings'])), 'theme': THEME_INIT,
-        'header': site_header('', 'rulings.html'), 'footer': site_footer('')})
+        'header': site_header(''), 'footer': site_footer('')})
     for key, record in sorted(site['records'].items()):
         outputs[f'c/{key}.html'] = render_concept_page(record, site, site['categories'])
     for head, info in sorted(site['words'].items(), key=lambda item: item[1]['slug']):

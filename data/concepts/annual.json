@@ -1,0 +1,65 @@
+{
+  "id": "annual",
+  "english": "annual",
+  "pos": "adjective",
+  "also": [
+    "yearly",
+    "once a year",
+    "an annual festival",
+    "lasting a year"
+  ],
+  "domain": "tempus",
+  "terms": [
+    {
+      "latin": "annuus, annua, annuum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "yearly; lasting a year",
+      "grammar": "adjective",
+      "evidence": [
+        "Verg. G. 1.338: <span lang=\"la\">annua magnae sacra refer Cererī</span> (Lewis &amp; Short)",
+        "Caes. BG 1.16.5: <span lang=\"la\">quī creātur annuus</span>"
+      ],
+      "comment": "Both senses of English annual: what comes round every year (<span lang=\"la\">annua sacra</span>, the yearly rites) and what lasts a year (an office held for a year, Caes. BG 1.16.5). As a noun, <span lang=\"la\">annua</span> (n. pl.) is a yearly allowance, a pension (see pension). Every year, as an adverb, is <span lang=\"la\">quotannīs</span> (see every year)."
+    },
+    {
+      "latin": "anniversārius, anniversāria, anniversārium",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "coming round every year",
+      "grammar": "adjective",
+      "evidence": [
+        "Cic. Verr. 2.4, of rites and of feast days (Lewis &amp; Short)"
+      ],
+      "comment": "Of what recurs at the same time each year: rites, feast days, the turn of the seasons. English anniversary comes from it; a birthday is <span lang=\"la\">diēs nātālis</span> (see birthday)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "tū cursū, dea, mēnstruō mētiēns iter annuum",
+      "english": "you, goddess, measuring out the year’s journey by your monthly course",
+      "source": "Catull. 34.17–18"
+    },
+    {
+      "latin": "quī summō magistrātuī praeerat, quem vergobretum appellant Haeduī, quī creātur annuus et vītae necisque in suōs habet potestātem",
+      "english": "who held the highest office, which the Haedui call the vergobret: he is elected for a year and has the power of life and death over his people",
+      "source": "Caes. BG 1.16.5"
+    }
+  ],
+  "related": [
+    "every-year",
+    "year",
+    "pension",
+    "birthday"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/annuus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: annuus</a> · <a href=\"https://logeion.uchicago.edu/anniversarius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: anniversarius</a>",
+    "Quotations from the Latinitas loci collections (loci-catullus), checked against the editions named there.",
+    "Caesar, BG 1.16.5, checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

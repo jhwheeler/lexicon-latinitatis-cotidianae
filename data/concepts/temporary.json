@@ -1,0 +1,93 @@
+{
+  "id": "temporary",
+  "english": "temporary",
+  "pos": "adjective",
+  "also": [
+    "temporarily",
+    "provisional",
+    "short-term",
+    "makeshift"
+  ],
+  "domain": "tempus",
+  "terms": [
+    {
+      "latin": "ad tempus",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "for a time, temporary",
+      "grammar": "phrase",
+      "evidence": [
+        "Cic. Off. 1.27: <span lang=\"la\">brevis est et ad tempus</span>",
+        "Liv. 28.42.5: <span lang=\"la\">dux ad tempus lēctus</span> (Lewis &amp; Short)"
+      ],
+      "comment": "The classical way to say it: what is <span lang=\"la\">ad tempus</span> lasts for a time, for the moment. The same words also mean “at the right time, on time” (<span lang=\"la\">ad tempus redīre</span>, Cic. Att. 13.45.2, Lewis &amp; Short; see on time); the context tells which."
+    },
+    {
+      "latin": "in tempus",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "for the time being, for the occasion",
+      "grammar": "phrase",
+      "evidence": [
+        "Tac. Ann. 14.20: <span lang=\"la\">scaenā in tempus strūctā</span>",
+        "Traupman 88–89: for the occasion, for the time being, <span lang=\"la\">in tempus</span>"
+      ]
+    },
+    {
+      "latin": "temporārius, temporāria, temporārium",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "lasting only for a time",
+      "grammar": "adjective",
+      "evidence": [
+        "Sen. Ep. 9.9: <span lang=\"la\">amīcitiae, quās temporāriās populus appellat</span>"
+      ],
+      "comment": "Rare before Augustus (Nepos once); Seneca, the elder Pliny, Quintilian (Lewis &amp; Short). It also means suited to the times, and so changeable: <span lang=\"la\">temporāria līberālitās</span> (Nep. Att. 11), <span lang=\"la\">ingenia temporāria</span> (Curt. 4.5.11)."
+    },
+    {
+      "latin": "subitārius, subitāria, subitārium",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "makeshift, put together in a hurry",
+      "grammar": "adjective",
+      "evidence": [
+        "Tac. Ann. 14.20: <span lang=\"la\">subitāriīs gradibus</span>",
+        "Tac. Ann. 15.39: <span lang=\"la\">subitāria aedificia</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Of what is got up in haste for an emergency: temporary shelters, stands, troops raised at short notice (<span lang=\"la\">subitāriī mīlitēs</span>, Livy). Lewis &amp; Short."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "perturbātiōne aliquā animī, quae plērumque brevis est et ad tempus",
+      "english": "in some upset of the mind, which is mostly brief and temporary",
+      "source": "Cic. Off. 1.27"
+    },
+    {
+      "latin": "nam anteā subitāriīs gradibus et scaenā in tempus strūctā lūdōs ēdī solitōs",
+      "english": "for (they said) games used to be given before on makeshift tiers, with a stage put up for the occasion",
+      "source": "Tac. Ann. 14.20"
+    },
+    {
+      "latin": "Hae sunt amīcitiae, quās temporāriās populus appellat",
+      "english": "These are the friendships that people call temporary",
+      "source": "Sen. Ep. 9.9"
+    }
+  ],
+  "related": [
+    "permanent",
+    "short-in-time",
+    "now",
+    "moment-time"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/tempus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tempus</a> · <a href=\"https://logeion.uchicago.edu/temporarius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: temporarius</a> · <a href=\"https://logeion.uchicago.edu/subitarius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: subitarius</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 88–89, checked against the searchable text of the book (11 November 2026).",
+    "Cicero, Off. 1.27; Seneca, Ep. 9.9; Tacitus, Ann. 14.20, checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

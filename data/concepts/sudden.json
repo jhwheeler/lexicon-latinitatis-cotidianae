@@ -1,0 +1,85 @@
+{
+  "id": "sudden",
+  "english": "sudden",
+  "pos": "adjective",
+  "also": [
+    "unexpected",
+    "abrupt",
+    "a sudden storm",
+    "sudden death"
+  ],
+  "domain": "tempus",
+  "terms": [
+    {
+      "latin": "subitus, subita, subitum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "sudden, unexpected",
+      "grammar": "adjective",
+      "evidence": [
+        "Cic. Tusc. 3.52: <span lang=\"la\">maris subita tempestās</span> (Lewis &amp; Short)",
+        "Phaedr. 1.23.7: <span lang=\"la\">ista subita … benignitās</span>"
+      ],
+      "comment": "The everyday word: what comes on all at once, a storm, a death, a fright. Lewis &amp; Short also gives it for soldiers raised in haste (Tac. H. 4.76) and, of a slope, steep (Stat.); as a noun, <span lang=\"la\">subitum</span> is something that has suddenly come up, an urgent matter (<span lang=\"la\">subitum est ei remigrāre</span>, Cic. Fam. 13.2). The adverb is <span lang=\"la\">subitō</span> (see suddenly)."
+    },
+    {
+      "latin": "repentīnus, repentīna, repentīnum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "sudden, unlooked for",
+      "grammar": "adjective",
+      "evidence": [
+        "Liv. 1.13.4: <span lang=\"la\">repentīna fit quiēs</span>",
+        "Cic. Off. 1.27: <span lang=\"la\">repentīnō aliquō mōtū</span>"
+      ],
+      "comment": "Sudden as against expected or prepared: Cicero sets it against <span lang=\"la\">exspectātus</span> and against <span lang=\"la\">meditātus et praeparātus</span> (Lewis &amp; Short). Of people it means upstart (<span lang=\"la\">ignōtī hominēs et repentīnī</span>, Cic. Brut. 242, Lewis &amp; Short)."
+    },
+    {
+      "latin": "imprōvīsus, imprōvīsa, imprōvīsum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "unforeseen, unexpected",
+      "grammar": "adjective",
+      "evidence": [
+        "Cic. Agr. 2.60: <span lang=\"la\">amor tam imprōvīsus ac tam repentīnus</span>"
+      ],
+      "comment": "Not foreseen, the point being that no one saw it coming. Its ablative makes an adverb: <span lang=\"la\">dē imprōvīsō</span>, suddenly, without warning."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "silentium et repentīna fit quiēs",
+      "english": "silence falls, and a sudden calm",
+      "source": "Liv. 1.13.4"
+    },
+    {
+      "latin": "namque ista subita mē jubet benignitās vigilāre, faciās nē meā culpā lucrum",
+      "english": "for this sudden kindness of yours tells me to stay awake, so that you make no profit through my fault",
+      "source": "Phaedr. 1.23.7–8"
+    },
+    {
+      "latin": "Unde iste amor tam imprōvīsus ac tam repentīnus?",
+      "english": "Where does this love of his come from, so unforeseen and so sudden?",
+      "source": "Cic. Agr. 2.60"
+    },
+    {
+      "latin": "Leviōra enim sunt ea, quae repentīnō aliquō mōtū accidunt, quam ea, quae meditāta et praeparāta īnferuntur.",
+      "english": "For wrongs done on some sudden impulse are lighter than those that are thought out and prepared.",
+      "source": "Cic. Off. 1.27"
+    }
+  ],
+  "related": [
+    "suddenly",
+    "surprise"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/subitus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: subeo (subitus)</a> · <a href=\"https://logeion.uchicago.edu/repentinus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: repentinus</a> · <a href=\"https://logeion.uchicago.edu/improvisus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: improvisus</a>",
+    "Quotations from the Latinitas loci collections (loci-livius, loci-phaedrus), checked against the editions named there.",
+    "Cicero, Off. 1.27 and Agr. 2.60, checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

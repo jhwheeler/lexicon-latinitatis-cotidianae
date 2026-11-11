@@ -260,9 +260,9 @@ test('the A–Z pages list every entry and every Latin word, by letter', async (
 });
 
 test('guidance and review notes live in the footer and remain reachable', async () => {
-  assert.equal(await page.locator('.hero details:not(.display-menu):not(.menu)').count(), 0);
+  assert.equal(await page.locator('.hero details:not(.settings)').count(), 0);
   assert.equal(await page.locator('footer details').count(), 2);
-  await page.locator('.about-link a').click();
+  await page.locator('.foot-links a[href="#about"]').click();
   assert.match(page.url(), /#about$/);
   await page.locator('footer details.principles > summary').click();
   assert.equal(await page.locator('footer details.principles').getAttribute('open') !== null, true);
@@ -275,7 +275,7 @@ test('without scripts every page still works: the contents and the lists stand i
   const plain = await context.newPage();
   await plain.goto(url);
   assert.equal(await plain.locator('.toolbar').isVisible(), false);
-  assert.equal(await plain.locator('.theme-toggle').isVisible(), false);
+  assert.equal(await plain.locator('.settings').isVisible(), false, 'the settings need scripts');
   assert.equal(await plain.locator('.noscript-note').isVisible(), true);
   await plain.locator('.toc a[href="k/culina.html"]').click();
   await plain.waitForURL(/k\/culina\.html$/);
@@ -290,14 +290,17 @@ test('without scripts every page still works: the contents and the lists stand i
   assert.equal(await plain.locator('.wlist a[href="c/pyjamas.html"]').isVisible(), true);
   await plain.setViewportSize({ width: 390, height: 844 });
   await plain.goto(pageUrl('k/culina.html'));
-  await plain.locator('.menu > summary').click();
-  assert.equal(await plain.locator('.menu-nav a').first().isVisible(), true, 'the menu opens without scripts');
-  assert.equal(await plain.locator('.menu-options').isVisible(), false, 'its options need scripts');
-  await plain.locator('.menu > summary').click();
+  assert.equal(await plain.locator('.settings').isVisible(), false);
   await plain.locator('.cat-menu > summary').click();
   await plain.locator('.cat-menu a[href="../k/vestitus.html"]').click();
   await plain.waitForURL(/k\/vestitus\.html$/);
   assert.equal(await plain.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
+  // The header's search is a plain form: it opens the front page with the query.
+  await plain.goto(pageUrl('c/kind.html'));
+  await plain.locator('#site-search').fill('pyjama');
+  await plain.locator('#site-search').press('Enter');
+  await plain.waitForURL(/index\.html\?q=pyjama$/);
+  assert.equal(await plain.locator('#contents').isVisible(), true);
   await context.close();
 });
 
@@ -382,59 +385,120 @@ test('every page is usable on a phone: no sideways scrolling, 44px controls, no 
       await page.goto(pageUrl(path));
       assert.equal(await overflows(), false, `${path} overflows at ${width}px`);
       const small = await page.evaluate(() => [...document.querySelectorAll(
-        '.site-nav a, .theme-toggle, .filter button, .cat-menu > summary, .cat-home, .clear, .page-contents a, .toc a, .hero h1 a, .display-menu > summary, .wlist a, .az-nav a, .az a, .suggest a, .menu > summary')]
+        '.settings > summary, .head-search-field, .filter button, .cat-menu > summary, .cat-home, .clear, .page-contents a, .toc a, .hero h1 a, .site-name, .wlist a, .az-nav a, .az a, .suggest a')]
         .filter(el => el.getClientRects().length && getComputedStyle(el).visibility !== 'hidden')
         .map(el => [el.textContent.trim().slice(0, 24), Math.round(el.getBoundingClientRect().height)])
         .filter(([, height]) => height < 44));
       assert.deepEqual(small, [], `${path} at ${width}px has controls under 44px`);
     }
   }
-  for (const path of ['index.html', 'k/culina.html']) {
+  for (const [path, field] of [['index.html', '#search'], ['k/culina.html', '#search'], ['c/kind.html', '#site-search'], ['words.html', '#site-search']]) {
     await page.goto(pageUrl(path));
-    assert.ok(parseFloat(await page.locator('#search').evaluate(el => getComputedStyle(el).fontSize)) >= 16);
+    assert.ok(parseFloat(await page.locator(field).evaluate(el => getComputedStyle(el).fontSize)) >= 16, path);
   }
 });
 
 // Theme and display ----------------------------------------------------------------------------
 
-test('on a phone the header folds into one menu: the links, the display options and the theme', async () => {
-  for (const path of ['index.html', 'k/culina.html', 'c/perhaps.html']) {
-    await page.setViewportSize({ width: 390, height: 844 });
+test('the header: the name, one search field, and the settings; the pages are in the footer', async () => {
+  for (const [path, inPlace] of [['index.html', true], ['k/culina.html', true], ['c/kind.html', false], ['l/caccabus.html', false],
+                                 ['words.html', false], ['latin.html', false], ['rulings.html', false], ['how-we-decide.html', false]]) {
+    for (const width of [1280, 390]) {
+      await page.setViewportSize({ width, height: 844 });
+      await page.goto(pageUrl(path));
+      assert.equal(await page.locator('header.site-top nav, header.site-top .site-nav').count(), 0, `${path}: no links in the header`);
+      assert.equal(await page.locator('.settings > summary').isVisible(), true, `${path} at ${width}px`);
+      // Never two fields: where the page searches in place, the header has none.
+      const fields = await page.locator('input[type="search"]').evaluateAll(nodes => nodes.filter(n => n.getClientRects().length).length);
+      assert.equal(fields, 1, `${path} at ${width}px has one search field`);
+      assert.equal(await page.locator('#site-search').count(), inPlace ? 0 : 1, path);
+      assert.equal(await overflows(), false, `${path} at ${width}px`);
+    }
+  }
+});
+
+test('the header search on a record page opens the front page with its results', async () => {
+  await page.goto(pageUrl('c/kind.html'));
+  await page.locator('#site-search').fill('pyjama');
+  await page.locator('#site-search').press('Enter');
+  await page.waitForURL(/index\.html\?q=pyjama$/);
+  await page.waitForFunction(() => /matching/.test(document.getElementById('results').textContent));
+  assert.equal(await page.locator('#search').inputValue(), 'pyjama');
+  assert.equal(await page.locator('.search-result').first().locator('h3').textContent(), 'vestis nocturna');
+});
+
+test('the slash key goes to the search, but not while typing', async () => {
+  for (const [path, field] of [['c/kind.html', '#site-search'], ['index.html', '#search'], ['k/culina.html', '#search']]) {
     await page.goto(pageUrl(path));
-    assert.equal(await page.locator('.menu > summary').isVisible(), true, path);
-    assert.equal(await page.locator('.site-nav').first().isVisible(), false, path);
-    assert.equal(await page.locator('.theme-toggle').isVisible(), false, path);
-    await page.locator('.menu > summary').click();
-    const links = page.locator('.menu-nav a');
-    assert.equal(await links.count(), 3);
-    assert.ok((await links.evaluateAll(nodes => nodes.map(n => n.getBoundingClientRect().height))).every(h => h >= 44));
-    assert.ok((await page.locator('.menu-options button').evaluateAll(nodes => nodes.map(n => n.getBoundingClientRect().height))).every(h => h >= 44));
-    await page.keyboard.press('Escape');
-    assert.equal(await page.locator('.menu').getAttribute('open'), null);
-    assert.equal(await overflows(), false);
-    await page.setViewportSize({ width: 1280, height: 900 });
-    assert.equal(await page.locator('.menu').isVisible(), false, `${path}: no menu on a wide screen`);
+    await page.locator('body').click({ position: { x: 4, y: 400 } });
+    await page.keyboard.press('/');
+    assert.equal(await page.evaluate(() => document.activeElement.id), field.slice(1), path);
+    assert.equal(await page.locator(field).inputValue(), '', `${path}: the slash is not typed`);
+    await page.keyboard.type('a/b');
+    assert.equal(await page.locator(field).inputValue(), 'a/b', `${path}: a slash can be typed in the field`);
+  }
+});
+
+test('on a phone the search is in view at once, under the name, full width', async () => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  for (const path of ['c/kind.html', 'l/caccabus.html', 'rulings.html']) {
+    await page.goto(pageUrl(path));
+    const box = await page.locator('.head-search').boundingBox(), name = await page.locator('.site-name').boundingBox();
+    const column = await page.locator('header.site-top').boundingBox();
+    assert.ok(box.y >= name.y + name.height - 1, `${path}: under the name`);
+    assert.ok(Math.abs(box.x - column.x) < 1 && Math.abs(box.width - column.width) < 1, `${path}: the column's full width`);
+    assert.ok(box.y + box.height < 160, path);
+    assert.ok((await page.locator('#site-search').boundingBox()).height >= 44);
+    assert.ok((await page.locator('.settings > summary').boundingBox()).height >= 44);
+  }
+});
+
+test('the footer of every page links to How we decide, Rulings and About', async () => {
+  for (const [path, about] of [['index.html', '#about'], ['c/kind.html', '../index.html#about'], ['k/culina.html', '../index.html#about'],
+                               ['words.html', 'index.html#about'], ['rulings.html', 'index.html#about']]) {
+    await page.goto(pageUrl(path));
+    const foot = page.locator('footer');
+    for (const label of ['How we decide', 'Rulings']) assert.equal(await foot.getByRole('link', { name: label, exact: true }).count(), 1, `${path}: ${label}`);
+    assert.equal(await foot.getByRole('link', { name: 'About', exact: true }).getAttribute('href'), about, path);
+  }
+  await page.goto(pageUrl('c/kind.html'));
+  await page.locator('footer').getByRole('link', { name: 'About', exact: true }).click();
+  await page.waitForURL(/index\.html#about$/);
+  assert.equal(await page.locator('#about').isVisible(), true);
+});
+
+test('the settings hold the display options and the theme, on a phone as on a wide screen', async () => {
+  for (const path of ['index.html', 'k/culina.html', 'c/perhaps.html']) {
+    for (const width of [390, 1280]) {
+      await page.setViewportSize({ width, height: 844 });
+      await page.goto(pageUrl(path));
+      await page.locator('.settings > summary').click();
+      const buttons = page.locator('.settings-panel button');
+      assert.equal(await buttons.count(), 8);
+      assert.ok((await buttons.evaluateAll(nodes => nodes.map(n => n.getBoundingClientRect().height))).every(h => h >= 44));
+      assert.equal(await overflows(), false, `${path} at ${width}px with the settings open`);
+      await page.keyboard.press('Escape');
+      assert.equal(await page.locator('.settings').getAttribute('open'), null);
+    }
   }
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto(url);
   await page.evaluate(() => { localStorage.removeItem('lexicon-macrons'); localStorage.removeItem('lexicon-theme'); });
   await settle();
   await page.reload();
-  await page.locator('.menu > summary').click();
-  await page.locator('.menu-options').getByRole('button', { name: 'Hidden', exact: true }).click();
+  await page.locator('.settings > summary').click();
+  await page.locator('.settings-panel').getByRole('button', { name: 'Hidden', exact: true }).click();
   assert.equal(await page.locator('.hero h1').textContent(), 'Lexicon Latinitatis Cotidianae');
-  await page.locator('.menu-options').getByRole('button', { name: 'Dark', exact: true }).click();
+  await page.locator('.settings-panel').getByRole('button', { name: 'Dark', exact: true }).click();
   assert.equal(await page.locator('html').getAttribute('data-theme'), 'dark');
-  assert.equal(await page.locator('.menu-options [data-theme-choice="dark"]').getAttribute('aria-pressed'), 'true');
+  assert.equal(await page.locator('.settings-panel [data-theme-choice="dark"]').getAttribute('aria-pressed'), 'true');
   await settle();
-  await page.locator('.menu-nav a', { hasText: 'Rulings' }).click();
-  await page.waitForURL(/rulings\.html$/);
-  await page.waitForLoadState('load');
+  await page.goto(pageUrl('rulings.html'));
   assert.equal(await page.locator('html').getAttribute('data-theme'), 'dark');
-  await page.locator('.menu > summary').click();
-  assert.equal(await page.locator('.menu-options [data-display="macrons"][data-value="off"]').getAttribute('aria-pressed'), 'true');
-  await page.locator('.menu-options').getByRole('button', { name: 'Shown', exact: true }).click();
-  await page.locator('.menu-options').getByRole('button', { name: 'Light', exact: true }).click();
+  await page.locator('.settings > summary').click();
+  assert.equal(await page.locator('.settings-panel [data-display="macrons"][data-value="off"]').getAttribute('aria-pressed'), 'true');
+  await page.locator('.settings-panel').getByRole('button', { name: 'Shown', exact: true }).click();
+  await page.locator('.settings-panel').getByRole('button', { name: 'Light', exact: true }).click();
   await settle();
 });
 
@@ -445,8 +509,10 @@ test('light is the default even on a dark system; the keyboard toggle persists i
   assert.equal(await page.locator('html').getAttribute('data-theme'), 'light');
   assert.equal(await page.evaluate(() => getComputedStyle(document.documentElement).colorScheme), 'light');
   await search('pyjama');
-  const toggle = page.getByRole('button', { name: 'Switch to dark mode' });
-  await toggle.focus(); await toggle.press('Space');
+  const summary = page.locator('.settings > summary');
+  await summary.focus(); await summary.press('Enter');
+  const dark = page.getByRole('button', { name: 'Dark', exact: true });
+  await dark.focus(); await dark.press('Space');
   assert.equal(await page.locator('html').getAttribute('data-theme'), 'dark');
   assert.equal(await page.locator('#search').inputValue(), 'pyjama');
   assert.equal(await page.locator('.search-result').count(), 6);
@@ -454,7 +520,8 @@ test('light is the default even on a dark system; the keyboard toggle persists i
   await page.reload();
   assert.equal(await page.locator('html').getAttribute('data-theme'), 'dark');
   assert.equal(await page.evaluate(() => getComputedStyle(document.documentElement).colorScheme), 'dark');
-  await page.getByRole('button', { name: 'Switch to light mode' }).click();
+  await page.locator('.settings > summary').click();
+  await page.getByRole('button', { name: 'Light', exact: true }).click();
   await settle();
   await page.reload();
   assert.equal(await page.locator('html').getAttribute('data-theme'), 'light');
@@ -477,13 +544,13 @@ test('in dark mode, headings and labels are not red', async () => {
 test('the theme can be chosen when saving preferences is blocked', async () => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.evaluate(() => Object.defineProperty(window, 'localStorage', { get() { throw new Error('Storage blocked'); } }));
-  await page.locator('.menu > summary').click();
+  await page.locator('.settings > summary').click();
   await page.getByRole('button', { name: 'Dark', exact: true }).click();
   assert.equal(await page.locator('html').getAttribute('data-theme'), 'dark');
   await page.getByRole('button', { name: 'Light', exact: true }).click();
   assert.equal(await page.locator('html').getAttribute('data-theme'), 'light');
   await page.mouse.click(4, 820);   // in the margin, away from any link
-  assert.equal(await page.locator('.menu').getAttribute('open'), null, 'a tap outside closes the menu');
+  assert.equal(await page.locator('.settings').getAttribute('open'), null, 'a tap outside closes the settings');
   await search('pyjama');
   assert.equal(await page.locator('.search-result').count(), 6);
   assert.equal(await overflows(), false);
@@ -494,14 +561,16 @@ test('the theme toggle works on every page and the choice carries across pages',
   await page.evaluate(() => localStorage.removeItem('lexicon-theme'));
   await page.reload();
   assert.equal(await page.locator('html').getAttribute('data-theme'), 'light');
-  await page.getByRole('button', { name: 'Switch to dark mode' }).click();
+  await page.locator('.settings > summary').click();
+  await page.getByRole('button', { name: 'Dark', exact: true }).click();
   assert.equal(await page.locator('html').getAttribute('data-theme'), 'dark');
   await settle();
   for (const path of ['rulings.html', 'k/culina.html', 'words.html']) {
     await page.goto(pageUrl(path));
     assert.equal(await page.locator('html').getAttribute('data-theme'), 'dark', path);
   }
-  await page.getByRole('button', { name: 'Switch to light mode' }).click();
+  await page.locator('.settings > summary').click();
+  await page.getByRole('button', { name: 'Light', exact: true }).click();
   await settle();
   await page.goto(url);
   assert.equal(await page.locator('html').getAttribute('data-theme'), 'light');
@@ -513,7 +582,7 @@ test('display options hide macrons or write i for j on every page, and search st
   await page.reload();
   const brand = () => page.locator('.hero h1').textContent();
   assert.equal(await brand(), 'Lexicon Latīnitātis Cotīdiānae');
-  await page.locator('.display-menu > summary').click();
+  await page.locator('.settings > summary').click();
   await page.getByRole('button', { name: 'Hidden', exact: true }).click();
   assert.equal(await brand(), 'Lexicon Latinitatis Cotidianae');
   await search('synthesis dormitoria');
@@ -527,14 +596,72 @@ test('display options hide macrons or write i for j on every page, and search st
   assert.doesNotMatch(await page.locator('.wlist').textContent(), /[āēīōūȳ]/);
   await page.goto(pageUrl('c/perhaps.html'));
   assert.match(await page.locator('.ex').textContent(), /Venietne avia\?/);
-  assert.equal(await page.locator('.display-menu [data-display="macrons"][data-value="off"]').getAttribute('aria-pressed'), 'true');
-  await page.locator('.display-menu > summary').click();
+  assert.equal(await page.locator('.settings [data-display="macrons"][data-value="off"]').getAttribute('aria-pressed'), 'true');
+  await page.locator('.settings > summary').click();
   await page.getByRole('button', { name: 'Shown', exact: true }).click();
   await page.getByRole('button', { name: 'jam', exact: true }).click();
   assert.match(await page.locator('.ex').textContent(), /Veniētne avia\?/);
   await settle();
   await page.goto(url);
   assert.equal(await brand(), 'Lexicon Latīnitātis Cotīdiānae');
+});
+
+test('consonantal u can be written u: lower case only, combined with the other options, and restored exactly', async () => {
+  await page.evaluate(() => { ['lexicon-macrons', 'lexicon-j', 'lexicon-v'].forEach(key => localStorage.removeItem(key)); });
+  await settle();
+  await page.goto(pageUrl('c/see.html'));
+  const lemma = () => page.locator('.lemma').first().textContent();
+  const original = await lemma();
+  assert.equal(original, 'videō, vidēre, vīdī, vīsum');
+  await page.locator('.settings > summary').click();
+  assert.equal(await page.locator('.settings-panel [data-display="v"][data-value="v"]').getAttribute('aria-pressed'), 'true');
+  await page.locator('.settings-panel').getByRole('button', { name: 'uideo', exact: true }).click();
+  assert.equal(await lemma(), 'uideō, uidēre, uīdī, uīsum', 'macrons are untouched');
+  assert.equal(await page.locator('.settings-panel [data-display="v"][data-value="u"]').getAttribute('aria-pressed'), 'true');
+  await settle();
+  // Capital V stays: Vae victīs → Vae uictīs.
+  await page.goto(pageUrl('c/alas.html'));
+  assert.match(await page.locator('.ex').textContent(), /Vae uictīs\./);
+  // It combines with iam, in either order, and with hidden macrons.
+  await page.goto(pageUrl('c/young.html'));
+  await page.locator('.settings > summary').click();
+  await page.locator('.settings-panel').getByRole('button', { name: 'iam', exact: true }).click();
+  assert.equal(await page.locator('.lemma').first().textContent(), 'iuuenis, iuuenis');
+  await page.locator('.settings-panel').getByRole('button', { name: 'Hidden', exact: true }).click();
+  await page.locator('.settings-panel').getByRole('button', { name: 'video', exact: true }).click();
+  assert.equal(await page.locator('.lemma').first().textContent(), 'iuvenis, iuvenis');
+  await page.locator('.settings-panel').getByRole('button', { name: 'uideo', exact: true }).click();
+  await page.locator('.settings-panel').getByRole('button', { name: 'jam', exact: true }).click();
+  assert.equal(await page.locator('.lemma').first().textContent(), 'juuenis, juuenis');
+  await page.locator('.settings-panel').getByRole('button', { name: 'Shown', exact: true }).click();
+  await settle();
+  // Search results are written the same way, and switching back restores the text exactly.
+  await page.goto(url);
+  await search('uideo');
+  const see = page.locator('.search-result[data-result-for="c-see"]');
+  assert.match(await see.locator('h3').textContent(), /^uideō, uidēre/);
+  await page.locator('.settings > summary').click();
+  await page.locator('.settings-panel').getByRole('button', { name: 'video', exact: true }).click();
+  assert.match(await see.locator('h3').textContent(), /^videō, vidēre/);
+  await settle();
+  await page.goto(pageUrl('c/see.html'));
+  assert.equal(await lemma(), original);
+});
+
+test('the search reads u and v alike in Latin, as it reads i and j', async () => {
+  await search('uideo');
+  assert.ok((await resultIds()).includes('c-see'));
+  await search('uinum');
+  const vinum = await resultIds();
+  await search('vinum');
+  assert.deepEqual(await resultIds(), vinum);
+  assert.ok(vinum.length > 0);
+  // A form found from its stem: uidemus is a form of videō.
+  await search('uidemus');
+  assert.ok((await resultIds()).includes('c-see'));
+  await search('love');
+  const love = await resultIds();
+  assert.ok(love.length > 0);
 });
 
 // Concept and word pages -------------------------------------------------------------------------

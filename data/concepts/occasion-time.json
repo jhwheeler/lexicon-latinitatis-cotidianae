@@ -1,0 +1,91 @@
+{
+  "id": "occasion-time",
+  "english": "occasion",
+  "sense": "a particular time when something happens",
+  "pos": "noun",
+  "also": [
+    "on this occasion",
+    "on that occasion",
+    "on one occasion",
+    "on another occasion",
+    "on the same occasion",
+    "for the occasion"
+  ],
+  "domain": "tempus",
+  "terms": [
+    {
+      "latin": "tempus, temporis n.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "the time, the occasion",
+      "evidence": [
+        "Cic. Att. 2.12.1: <span lang=\"la\">ūnō tempore</span>",
+        "Traupman 88: for the occasion, <span lang=\"la\">in tempus</span>"
+      ],
+      "comment": "On this or that occasion is <span lang=\"la\">hōc tempore, eō tempore</span>; on the same occasion, at once, <span lang=\"la\">ūnō tempore</span>; for the occasion, <span lang=\"la\">in tempus</span> (see temporary, moment)."
+    },
+    {
+      "latin": "aliās",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "on another occasion, another time",
+      "grammar": "adverb",
+      "evidence": [
+        "Cic. Fam. 7.6.2: <span lang=\"la\">plūra scrībēmus aliās</span>",
+        "Traupman 88: at another time, <span lang=\"la\">aliās</span>"
+      ],
+      "comment": "Doubled, it is “on one occasion … on another” (<span lang=\"la\">aliās … aliās</span>, Traupman 88)."
+    },
+    {
+      "latin": "quōdam diē",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "on one occasion, one day",
+      "grammar": "phrase",
+      "evidence": [
+        "Plin. NH 15.74: <span lang=\"la\">adtulit quōdam diē</span>",
+        "Traupman 88: once (on a certain occasion), <span lang=\"la\">quōdam diē</span>"
+      ]
+    },
+    {
+      "latin": "occāsiō, occāsiōnis f.",
+      "status": "avoid",
+      "period": "classical",
+      "gloss": "an opportunity, the right moment",
+      "comment": "Not this sense: <span lang=\"la\">occāsiō</span> is the chance or the right moment to do something, not simply a time when something happens (see opportunity)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "sed plūra scrībēmus aliās",
+      "english": "but I’ll write more on another occasion",
+      "source": "Cic. Fam. 7.6.2"
+    },
+    {
+      "latin": "adtulit quōdam diē in cūriam praecocem ex eā prōvinciā fīcum",
+      "english": "on one occasion he brought into the senate house an early fig from that province",
+      "source": "Plin. NH 15.74"
+    },
+    {
+      "latin": "ō suāvīs epistulās tuās ūnō tempore mihi datās duās!",
+      "english": "what lovely letters of yours, two of them handed to me on the same occasion!",
+      "source": "Cic. Att. 2.12.1"
+    }
+  ],
+  "related": [
+    "moment-time",
+    "opportunity",
+    "reason",
+    "temporary"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/tempus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tempus</a> · <a href=\"https://logeion.uchicago.edu/alias\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: alias</a> · <a href=\"https://logeion.uchicago.edu/quidam\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quidam</a> · <a href=\"https://logeion.uchicago.edu/occasio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: occasio</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 88, checked against the searchable text of the book (11 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-plinius), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

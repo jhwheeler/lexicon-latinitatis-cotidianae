@@ -1,0 +1,93 @@
+{
+  "id": "extent",
+  "english": "extent",
+  "sense": "how far something goes; the degree",
+  "pos": "noun",
+  "also": [
+    "to what extent",
+    "to some extent",
+    "to a certain extent",
+    "to such an extent that",
+    "to the extent that",
+    "so far as",
+    "in so far as"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "quātenus",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "how far, to what extent",
+      "grammar": "adverb, in indirect questions; answered by eātenus, “so far”",
+      "evidence": [
+        "Cic. Lael. 61: <span lang=\"la\">est enim quātenus amīcitiae darī venia possit</span>",
+        "Cic. de Or. 2.237: <span lang=\"la\">quātenus sint rīdicula tractanda ōrātōrī</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Properly “up to where”. The answer is <span lang=\"la\">eātenus</span>, “so far, to that extent”, with <span lang=\"la\">quoad</span> or <span lang=\"la\">ut</span> (Cic. Leg. 1.14, Lewis &amp; Short). In Horace and later, <span lang=\"la\">quātenus</span> also means “since, seeing that” (Lewis &amp; Short)."
+    },
+    {
+      "latin": "adeō … ut",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "to such an extent that, so … that",
+      "grammar": "adverb with a consecutive ut-clause (subjunctive)",
+      "evidence": [
+        "Hor. Ep. 1.1.39: <span lang=\"la\">nēmō adeō ferus est, ut nōn mītēscere possit</span>",
+        "Cic. Fl. 47: <span lang=\"la\">nēminem quidem adeō īnfatuāre potuit, ut eī nummum ūllum crēderet</span> (Lewis &amp; Short)"
+      ],
+      "comment": "With verbs, adjectives and nouns, in every period (Lewis &amp; Short); <span lang=\"la\">ūsque adeō</span> is stronger, “so very much”."
+    },
+    {
+      "latin": "aliquātenus",
+      "status": "alternative",
+      "period": "post-classical",
+      "gloss": "to some extent, in some measure",
+      "grammar": "adverb",
+      "evidence": [
+        "Sen. Ep. 116.3: <span lang=\"la\">aliquātenus, inquis, dolēre, aliquātenus timēre permitte</span>",
+        "Quint. 11.1.28 (Lewis &amp; Short)"
+      ],
+      "comment": "Post-Augustan (Seneca, Quintilian, Pliny), as Lewis &amp; Short marks it.",
+      "notes": [
+        "seneca-section"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "est enim quātenus amīcitiae darī venia possit",
+      "english": "for there is a point up to which friendship may be indulged",
+      "source": "Cic. Lael. 61"
+    },
+    {
+      "latin": "nēmō adeō ferus est, ut nōn mītēscere possit, sī modo cultūrae patientem commodet aurem",
+      "english": "no one is so wild that he cannot be tamed, if only he lends a patient ear to training",
+      "source": "Hor. Ep. 1.1.39–40"
+    },
+    {
+      "latin": "Aliquātenus, inquis, dolēre, aliquātenus timēre permitte",
+      "english": "“Allow me to grieve to some extent,” you say, “and to fear to some extent”",
+      "source": "Sen. Ep. 116.3"
+    }
+  ],
+  "notes": {
+    "seneca-section": {
+      "html": "Lewis &amp; Short cites the passage as Sen. Ep. 116, 4; in the Perseus text it stands in section 3, which we follow."
+    }
+  },
+  "related": [
+    "how-far",
+    "far-much"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/quatenus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quatenus</a> · <a href=\"https://logeion.uchicago.edu/eatenus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: eatenus</a> · <a href=\"https://logeion.uchicago.edu/adeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: adeo</a> · <a href=\"https://logeion.uchicago.edu/aliquatenus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aliquatenus</a>",
+    "Cicero (Lael. 61), Horace (Ep. 1.1.39–40) and Seneca (Ep. 116.3) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026).",
+    "Citations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

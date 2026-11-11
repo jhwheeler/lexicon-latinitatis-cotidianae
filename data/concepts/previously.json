@@ -1,0 +1,97 @@
+{
+  "id": "previously",
+  "english": "previously",
+  "pos": "adverb",
+  "also": [
+    "before (at an earlier time)",
+    "beforehand",
+    "before now",
+    "in the past",
+    "earlier on",
+    "until now"
+  ],
+  "domain": "tempus",
+  "terms": [
+    {
+      "latin": "anteā",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "before, previously, earlier",
+      "grammar": "adverb",
+      "evidence": [
+        "Gell. 1.23.4: <span lang=\"la\">mōs anteā senātōribus Rōmae fuit</span>",
+        "Traupman 364: previously, <span lang=\"la\">anteā, antehāc, prius</span>"
+      ],
+      "comment": "Before some time in the past, often answered by <span lang=\"la\">posteā</span> or <span lang=\"la\">nunc</span>: <span lang=\"la\">hunc audiēbant anteā, nunc praesentem vident</span> (Cic. Imp. Pomp., Lewis &amp; Short). Atticus objected to <span lang=\"la\">anteā</span> where <span lang=\"la\">prius</span> was meant (Cic. Att. 15.13, Lewis &amp; Short)."
+    },
+    {
+      "latin": "antehāc",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "before now, until now",
+      "grammar": "adverb",
+      "evidence": [
+        "Gell. 16.3.2: <span lang=\"la\">cum antehāc semper edundī fuerit adpetēns, nunc …</span>",
+        "Traupman 88: previously, <span lang=\"la\">antehāc, prius</span>"
+      ],
+      "comment": "Before the present moment, usually set against <span lang=\"la\">nunc</span>. Lewis &amp; Short calls <span lang=\"la\">anteā</span> relative (before any time spoken of) and <span lang=\"la\">antehāc</span> demonstrative (before now), though Plautus and Sallust also use <span lang=\"la\">antehāc</span> of an earlier time in the past."
+    },
+    {
+      "latin": "prius",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "before, earlier, first",
+      "grammar": "adverb",
+      "evidence": [
+        "Traupman 88"
+      ],
+      "comment": "Earlier than something else that is named or meant; with <span lang=\"la\">quam</span>, before (see before, the conjunction)."
+    },
+    {
+      "latin": "ante",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "before, earlier",
+      "grammar": "adverb",
+      "evidence": [
+        "Cic. Sen. 19: <span lang=\"la\">annō ante mē cēnsōrem</span>"
+      ],
+      "comment": "As an adverb mostly with a measure of time: <span lang=\"la\">paulō ante</span>, a little earlier; <span lang=\"la\">multīs ante annīs</span>, many years before (see before, of a time)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "mōs anteā senātōribus Rōmae fuit in cūriam cum praetextātīs fīliīs introīre",
+      "english": "it used to be the custom at Rome for senators to go into the senate house with their young sons",
+      "source": "Gell. 1.23.4"
+    },
+    {
+      "latin": "cum antehāc semper edundī fuerit adpetēns, nunc post imperātam inediam triduī omnis ejus adpetītiō prīstina ēlanguerit",
+      "english": "though he had always been fond of his food before, now, after the three days’ fast he was ordered, all his old appetite has died away",
+      "source": "Gell. 16.3.2"
+    },
+    {
+      "latin": "ō suāvis anima! quāle tē dīcam bonum antehāc fuisse, tālēs cum sint reliquiae?",
+      "english": "O sweet soul! How good must I say you were before, when your leavings are like this?",
+      "source": "Phaedr. 3.1.5–6"
+    }
+  ],
+  "related": [
+    "last-previous",
+    "before-a-time",
+    "a-little-while-ago",
+    "former",
+    "already",
+    "ago"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/antea\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: antea</a> · <a href=\"https://logeion.uchicago.edu/antehac\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: antehac</a> · <a href=\"https://logeion.uchicago.edu/prius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: prius</a> · <a href=\"https://logeion.uchicago.edu/ante\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ante</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 88, 364, checked against the searchable text of the book (11 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-gellius, loci-phaedrus), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

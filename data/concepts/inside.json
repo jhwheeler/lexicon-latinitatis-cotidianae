@@ -5,6 +5,10 @@
     "preposition",
     "adverb"
   ],
+  "also": [
+    "within (a place)",
+    "indoors"
+  ],
   "also_under": [
     "verba"
   ],
@@ -14,15 +18,64 @@
       "latin": "intrā",
       "status": "recommended",
       "period": "classical",
-      "comment": "One of the card’s useful spatial words for building."
+      "gloss": "inside, within",
+      "grammar": "preposition with the accusative",
+      "evidence": [
+        "Cic. Att. 3.10.2: <span lang=\"la\">intrā parietēs meōs</span>",
+        "Plaut. Mil. 596: <span lang=\"la\">Cohibēte intrā līmen etiam vōs parumper</span>"
+      ],
+      "comment": "Within a boundary, at rest or going in: <span lang=\"la\">intrā parietēs</span>, within one’s walls; <span lang=\"la\">intrā portam penetrāre pedem</span>, to set foot inside the gate. Classically only a preposition (Lewis &amp; Short); the adverb is <span lang=\"la\">intus</span>. For “within” a time, see <em>within (a time)</em>."
+    },
+    {
+      "latin": "intus",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "inside, indoors",
+      "grammar": "adverb",
+      "evidence": [
+        "Ter. Ad. 569: <span lang=\"la\">estne frāter intus?</span>",
+        "Cic. Cat. 2.11: <span lang=\"la\">intus est hostis</span>"
+      ],
+      "comment": "Where a thing is: inside, at home. For going in, <span lang=\"la\">intrō</span> (see <em>into</em>)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Cohibēte intrā līmen etiam vōs parumper, Pleusiclēs",
+      "english": "You stay inside the door a little longer too, Pleusicles",
+      "source": "Plaut. Mil. 596"
+    },
+    {
+      "latin": "neque hūc umquam, postquam nātus sum, intrā portam penetrāvī pedem",
+      "english": "and never since I was born have I set foot inside the gate here",
+      "source": "Plaut. Men. 399–400"
+    },
+    {
+      "latin": "quod facile fuisset nisi intrā parietēs meōs dē meā perniciē cōnsilia inīrentur",
+      "english": "which would have been easy, had plots for my ruin not been laid within my own walls",
+      "source": "Cic. Att. 3.10.2"
+    },
+    {
+      "latin": "sed estne frāter intus? — Nōn est.",
+      "english": "But is my brother indoors? — He isn’t.",
+      "source": "Ter. Ad. 569"
+    },
+    {
+      "latin": "fīcī enim sēmen nātūrāle intus in eā fīcō, quam edimus, quae sunt minūta grāna",
+      "english": "for the fig’s natural seed is inside the fig we eat: those are the tiny grains",
+      "source": "Varr. RR 1.41.4"
     }
   ],
   "related": [
     "outside",
+    "into",
+    "within-a-time",
     "build"
   ],
   "sources": [
-    "<a href=\"https://dcc.dickinson.edu/latin-core-list1\" rel=\"noopener noreferrer\" target=\"_blank\">Dickinson: Latin Core Vocabulary</a>"
+    "<a href=\"https://logeion.uchicago.edu/intra\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: intra</a> · <a href=\"https://logeion.uchicago.edu/intus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: intus</a>",
+    "<a href=\"https://dcc.dickinson.edu/latin-core-list1\" rel=\"noopener noreferrer\" target=\"_blank\">Dickinson: Latin Core Vocabulary</a>",
+    "Plautus, Terence and Cicero (<em>Letters to Atticus</em> 3, <em>In Catilinam</em> 2) checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (11 November 2026). Varro quoted from the Latinitas loci collection (loci-varro), checked against the edition named there."
   ],
   "review": {
     "status": "draft",

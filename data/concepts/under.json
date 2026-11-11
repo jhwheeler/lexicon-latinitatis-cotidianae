@@ -2,6 +2,9 @@
   "id": "under",
   "english": "under",
   "pos": "preposition",
+  "also": [
+    "beneath"
+  ],
   "also_under": [
     "verba"
   ],
@@ -11,15 +14,47 @@
       "latin": "sub",
       "status": "recommended",
       "period": "classical",
-      "comment": "One of the card’s useful spatial words for building."
+      "gloss": "under, beneath",
+      "grammar": "preposition: with the ablative for where a thing is, with the accusative for where it goes",
+      "evidence": [
+        "Cic. ND 2.95: <span lang=\"la\">quī sub terrā semper habitāvissent</span>",
+        "Cic. Rep. 1.25: <span lang=\"la\">cum tōta sē lūna sub orbem sōlis subjēcisset</span>"
+      ],
+      "comment": "The ablative for rest, <span lang=\"la\">sub tēctō</span>, under a roof; the accusative for motion, <span lang=\"la\">sub orbem sōlis</span>, passing beneath the sun’s disc. Of a hill or a wall, at its foot: <span lang=\"la\">sub monte cōnsēdit</span> (Caes. BG 1.48, Lewis &amp; Short). For “below”, lower than, see <em>below</em> (<span lang=\"la\">īnfrā, subter</span>)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "quantō est facilius mihi sub tēctō vīvere",
+      "english": "how much easier it is for me to live under a roof",
+      "source": "Phaedr. 3.7.17"
+    },
+    {
+      "latin": "saepe exiguus mūs sub terrīs posuitque domōs atque horrea fēcit",
+      "english": "often the tiny mouse has made his home and built his barns beneath the ground",
+      "source": "Verg. G. 1.181–182"
+    },
+    {
+      "latin": "manet sub Jove frīgidō vēnātor",
+      "english": "the hunter stays out under the cold sky",
+      "source": "Hor. C. 1.1.25–26"
+    },
+    {
+      "latin": "certō illud tempore fierī et necessāriō, cum tōta sē lūna sub orbem sōlis subjēcisset",
+      "english": "that this happens at a fixed time and of necessity, when the whole moon has passed beneath the sun’s disc",
+      "source": "Cic. Rep. 1.25"
     }
   ],
   "related": [
     "above",
+    "below",
     "build"
   ],
   "sources": [
-    "<a href=\"https://dcc.dickinson.edu/latin-core-list1\" rel=\"noopener noreferrer\" target=\"_blank\">Dickinson: Latin Core Vocabulary</a>"
+    "<a href=\"https://logeion.uchicago.edu/sub\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sub</a>",
+    "<a href=\"https://dcc.dickinson.edu/latin-core-list1\" rel=\"noopener noreferrer\" target=\"_blank\">Dickinson: Latin Core Vocabulary</a>",
+    "Cicero (<em>De natura deorum</em> 2, <em>De re publica</em> 1), Phaedrus 3, Virgil, <em>Georgics</em> 1 and Horace, <em>Odes</em> 1 checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (11 November 2026); the Phaedrus and Georgics lines are also in the Latinitas loci collections (loci-phaedrus, loci-vergilius-georgica).",
+    "Citations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them and have not been checked against an edition."
   ],
   "review": {
     "status": "draft",

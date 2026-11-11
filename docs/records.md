@@ -56,6 +56,7 @@ Rich text follows the rules of `data-format.md`: `<strong lang="la">`, `<span la
 
 ### How a page shows a record
 
+- A term whose period is `ours` is printed with an asterisk before it, on the record's page and in the word lists (Jack, 11 November 2026): the linguist's sign for an unattested form, chosen because it needs no colour and no icon to learn.
 - The headword line is the English word in bold with its part of speech (`perhaps` *adverb*), then `sense` and `also`.
 - The first recommended term is the answer: its headword is bold and links to the word's page, and its grammar line follows. The builder reads the grammar from the dictionary form: `caccabī m.` gives "noun, second declension" and `tītillāre` gives "verb, first conjugation". A term's own `grammar` overrides it, as in "verb, first conjugation, transitive". The term's `gloss` is shown only when it differs from the headword.
 - The period and the evidence of the answer stand in the margin. So do the notes, each beside the line that cites it. On a phone they fold under that line.

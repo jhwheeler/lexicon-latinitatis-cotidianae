@@ -1,0 +1,82 @@
+{
+  "id": "until-conjunction",
+  "english": "until",
+  "sense": "the conjunction: till something happens",
+  "pos": "conjunction",
+  "also": [
+    "till",
+    "up to the time when"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "dum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "until",
+      "grammar": "conjunction: the indicative for a fact, the subjunctive for what is waited for or intended",
+      "evidence": [
+        "Cic. Tusc. 4.78: <span lang=\"la\">dum dēfervēscat īra</span>",
+        "Lewis &amp; Short s.v. dum"
+      ],
+      "comment": "After verbs of waiting: <span lang=\"la\">exspectā dum …</span>, wait until; the subjunctive, because the end is looked for."
+    },
+    {
+      "latin": "dōnec",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "until",
+      "grammar": "conjunction: the indicative (future or future perfect for the future), or the subjunctive of what is aimed at",
+      "evidence": [
+        "Ov. Met. 11.139: <span lang=\"la\">carpe viam, dōnec veniās ad flūminis ortūs</span>",
+        "Liv. 1.39.2: <span lang=\"la\">movērī vetuisse puerum dōnec suā sponte experrēctus esset</span>"
+      ],
+      "comment": "Cato’s word in recipes: <span lang=\"la\">ūsque adeō, dōnec …</span>, keep on until."
+    },
+    {
+      "latin": "quoad",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "until; as long as",
+      "grammar": "conjunction, with the indicative or subjunctive like dum",
+      "evidence": [
+        "Cic. Fam. 4.3.3: <span lang=\"la\">quoad certior fierēs</span> (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "dum dēfervēscat īra",
+      "english": "until the anger cools down",
+      "source": "Cic. Tusc. 4.78"
+    },
+    {
+      "latin": "carpe viam, dōnec veniās ad flūminis ortūs",
+      "english": "take the road until you reach the river’s source",
+      "source": "Ov. Met. 11.139"
+    },
+    {
+      "latin": "movērī vetuisse puerum dōnec suā sponte experrēctus esset",
+      "english": "she forbade anyone to move the boy until he woke up by himself",
+      "source": "Liv. 1.39.2"
+    },
+    {
+      "latin": "ūsque adeō, dōnec cremor crassus erit factus",
+      "english": "(stir) until the gruel has become thick",
+      "source": "Cato Agr. 86"
+    }
+  ],
+  "related": [
+    "not-yet"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/dum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dum</a> · <a href=\"https://logeion.uchicago.edu/donec\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: donec</a> · <a href=\"https://logeion.uchicago.edu/quoad\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quoad</a>",
+    "Quotations from the Latinitas loci collections (loci-cicero-philosophica, loci-ovidius, loci-livius, loci-cato), checked against the editions named there.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

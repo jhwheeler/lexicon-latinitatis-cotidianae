@@ -1,0 +1,81 @@
+{
+  "id": "than",
+  "english": "than",
+  "pos": "conjunction",
+  "also": [
+    "rather than",
+    "more than",
+    "less than"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "quam",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "than",
+      "grammar": "conjunction, after a comparative: what is compared stands in the same case on both sides",
+      "evidence": [
+        "Sen. Ep. 47.2: <span lang=\"la\">ēst ille plūs quam capit</span>",
+        "Publ. R 24: <span lang=\"la\">Rogantī melius quam imperantī pāreās.</span>"
+      ],
+      "comment": "With <span lang=\"la\">magis … quam</span> and <span lang=\"la\">potius … quam</span>, “rather than”. With numbers, <span lang=\"la\">plūs, amplius, minus</span> often stand without <span lang=\"la\">quam</span> (Lewis &amp; Short s.v. plus)."
+    },
+    {
+      "latin": "cāsus ablātīvus",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "than (the ablative of comparison)",
+      "grammar": "the second term in the ablative, without quam",
+      "evidence": [
+        "Varr. RR 3.7.4: <span lang=\"la\">nihil enim timidius columbā</span>",
+        "Mart. 13.81.1–2: <span lang=\"la\">rhombus lātior est tamen patellā</span>"
+      ],
+      "comment": "Where the first term is in the nominative or accusative, the second may go into the ablative instead: <span lang=\"la\">lātior patellā</span>, wider than the dish. Commonest in short, fixed comparisons and after a negative (<span lang=\"la\">nihil … columbā</span>)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ēst ille plūs quam capit",
+      "english": "he eats more than he can hold",
+      "source": "Sen. Ep. 47.2"
+    },
+    {
+      "latin": "Rogantī melius quam imperantī pāreās.",
+      "english": "One obeys a person who asks better than one who orders.",
+      "source": "Publ. R 24"
+    },
+    {
+      "latin": "nē plūs cēnseat sapere sē quam dominum",
+      "english": "let him not think he knows more than his master",
+      "source": "Cato Agr. 5.2"
+    },
+    {
+      "latin": "īnsomnēs magis quam pervigilēs",
+      "english": "sleepless rather than watchful",
+      "source": "Tac. Ann. 1.65"
+    },
+    {
+      "latin": "nihil enim timidius columbā",
+      "english": "for nothing is more timid than a dove",
+      "source": "Varr. RR 3.7.4"
+    },
+    {
+      "latin": "quamvīs lāta gerat patella rhombum, rhombus lātior est tamen patellā",
+      "english": "however wide the dish that holds the turbot, the turbot is wider than the dish",
+      "source": "Mart. 13.81.1–2"
+    }
+  ],
+  "related": [
+    "compare"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/quam\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quam</a> · <a href=\"https://logeion.uchicago.edu/casus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: casus</a> · <a href=\"https://logeion.uchicago.edu/ablativus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ablativus</a>",
+    "Quotations from the Latinitas loci collections (loci-seneca-epistulae, loci-publilius, loci-cato, loci-tacitus, loci-varro, loci-martialis), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

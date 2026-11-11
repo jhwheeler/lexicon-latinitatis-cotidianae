@@ -1,0 +1,79 @@
+{
+  "id": "correspond",
+  "english": "correspond",
+  "sense": "write to each other",
+  "pos": "verb",
+  "also": [
+    "correspondence",
+    "write to each other",
+    "exchange letters",
+    "keep up a correspondence",
+    "pen friend",
+    "pen pal"
+  ],
+  "also_under": [
+    "verba"
+  ],
+  "domain": "sermo",
+  "terms": [
+    {
+      "latin": "epistulārum commercium habēre cum (+ abl.)",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "correspond with, exchange letters with",
+      "evidence": [
+        "Traupman 297",
+        "Sen. Ep. 38.1: <span lang=\"la\">hoc inter nōs epistulārum commercium frequentāre</span> (Lewis &amp; Short)",
+        "Vell. 2.65.1: <span lang=\"la\">commercia epistulārum</span>"
+      ],
+      "comment": "<span lang=\"la\">Commercium</span> is trade, and so any give and take: of letters, the correspondence itself (Traupman 297, <span lang=\"la\">epistulārum commercium</span>, correspondence)."
+    },
+    {
+      "latin": "per litterās colloquī (cum aliquō)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "talk with someone by letter",
+      "grammar": "colloquor, colloquī, collocūtus sum, deponent",
+      "evidence": [
+        "Cic. Fam. 1.7.1; Att. 6.1.24 (Lewis &amp; Short, s.v. <span lang=\"la\">colloquor</span>)"
+      ],
+      "comment": "Cicero’s way of putting it: a letter is a conversation with an absent friend."
+    },
+    {
+      "latin": "scrībere ad aliquem",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "write to someone",
+      "comment": "For the single letter, and with <span lang=\"la\">crēbrō</span> or <span lang=\"la\">saepe</span> for a correspondence kept up (see contact)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "tū, quaesō, crēbrō ad mē scrībe vel quod in buccam vēnerit",
+      "english": "please write to me often, even whatever comes into your head",
+      "source": "Cic. Att. 7.10.1"
+    },
+    {
+      "latin": "hoc inter nōs epistulārum commercium frequentāre",
+      "english": "to keep up this exchange of letters between us",
+      "source": "Sen. Ep. 38.1 (Lewis &amp; Short)"
+    }
+  ],
+  "related": [
+    "contact",
+    "epistle",
+    "post-a-letter",
+    "write"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/commercium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: commercium</a> · <a href=\"https://logeion.uchicago.edu/colloquor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: colloquor</a> · <a href=\"https://logeion.uchicago.edu/scribo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: scribo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 297, checked against the searchable text of the book (11 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-cicero-epistulae), checked against the editions named there.",
+    "Seneca and the other passages as Lewis &amp; Short quotes them."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

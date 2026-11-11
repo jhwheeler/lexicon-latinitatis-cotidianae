@@ -6,7 +6,6 @@ Records: `https://jhwheeler.github.io/lexicon-latinitatis-cotidianae/c/<id>.html
 
 ## Vowel lengths that want a house ruling
 
-- ***re-* before *s* and a consonant.** The lexicon writes a short *re-* in all of these (*respondeō, respōnsum* in `answer`, *restō* in `remain-be-left`); Lewis & Short writes *rē-* in every one (64 headwords), and only with this prefix and *dis-* (*dī-scindō, dī-scrībō*). The reason seems to be compensatory lengthening for the lost *d* of *red-*: Lewis & Short's article on the prefix gives *rĕ, rĕd-* and explains the poets' *rēdūcō, rēlātum* by "the suppression of the d". Marx (1883) extended the idea to *āscendō, dīstinguō, sūspiciō*; Bennett §48 rejects it as "an untenable theory of compensatory lengthening"; Lewis's *Elementary Latin Dictionary* (1890) prints *re-spondeō*; de Vaan 516 derives the prefix from *\*wre*; Traupman writes *respondēre*. The short vowel stands unless Jack rules otherwise. (#56, #60)
 - **Final *o*.** *aliquandō*, *immō*, *porrō* and *quandō* are written long, after de Vaan; *aliquandō* may want a ruling of its own. (#53)
 - ***coërceō*** is written with a diaeresis, like the house's *āër* (`control-restrain`). (#60)
 - **Greek words.**
@@ -17,7 +16,6 @@ Records: `https://jhwheeler.github.io/lexicon-latinitatis-cotidianae/c/<id>.html
   - *Paraclītus* follows the Clementine spelling.
   - (#58, #60, #61)
 - ***citō* or *cito*.** The house texts write *citō* 56 times and *cito* 8; Lewis & Short has *cĭto*. It is an iambically shortened word like *heri*, which is now written short (ruling of 9 November), as *modo*, *mihi* and *tibi* are. Lc. 15.22 was flagged as a slip and left as *Citō*.
-- ***ustus*.** The readers write *adustus, perustus, praeustus* short, and the lexicon now does too (*ambustiō, adustiō, adustus color*; it had them long). Bennett §52 gives *ūstus*, "acc. to the Romance"; Michelson's review allows a short *u* for Classical Latin, and the zero grade of the root would be short. By the house order Bennett should decide, so this wants a ruling.
 - ***fūrtum*.** The loci write it long (*fūrta*, *fūrtī*, *fūrtīvī*, *fūrtum*), and so do Bennett and most school texts. De Vaan reports Forssman's view that it originally had a short vowel (from *\*bʰr̥tom*, not a derivative of *fūr*); Lewis & Short leaves it unmarked.
 - **Single words with notes:**
   - *hic* has a short *i* (de Vaan 284; #63).

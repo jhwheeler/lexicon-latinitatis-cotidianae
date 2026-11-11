@@ -1,0 +1,98 @@
+{
+  "id": "should",
+  "english": "should",
+  "sense": "ought to: what is right or expected",
+  "pos": "verb",
+  "also": [
+    "ought",
+    "ought to",
+    "shouldn’t",
+    "should have",
+    "oughtn’t"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "oportet, oportēre, oportuit",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "it is right, one should",
+      "grammar": "verb, impersonal, with an infinitive, an accusative and infinitive, or a bare subjunctive",
+      "evidence": [
+        "Cato Agr. 3.1: <span lang=\"la\">aedificāre diū cōgitāre oportet</span>",
+        "Phaedr. 4.18.9: <span lang=\"la\">parce gaudēre oportet</span>"
+      ],
+      "comment": "What is fitting or to be expected. “Should have” is <span lang=\"la\">oportuit</span> with the infinitive: <span lang=\"la\">cēnam jam esse coctam oportuit</span>, dinner should have been cooked by now; <span lang=\"la\">mōrem gestum oportuit</span>, you should have humoured him."
+    },
+    {
+      "latin": "dēbeō, dēbēre, dēbuī, dēbitum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "ought, be bound to (a duty)",
+      "grammar": "verb, second conjugation, with an infinitive",
+      "evidence": [
+        "Sen. Ep. 28.1: <span lang=\"la\">animum dēbēs mūtāre, nōn caelum</span>",
+        "Cic. Sen. 69: <span lang=\"la\">eō dēbet esse contentus</span>"
+      ],
+      "comment": "A duty owed: “you ought to”. Not for what is merely likely, nor for what has to be (see must).",
+      "notes": [
+        "debeo"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "aedificāre diū cōgitāre oportet, cōnserere cōgitāre nōn oportet, sed facere oportet",
+      "english": "you should think long about building; about planting you shouldn’t think, you should just do it",
+      "source": "Cato Agr. 3.1"
+    },
+    {
+      "latin": "properāte, cēnam jam esse coctam oportuit.",
+      "english": "Hurry up: dinner should have been cooked by now.",
+      "source": "Plaut. Cas. 765–766"
+    },
+    {
+      "latin": "Tua culpa. — Quid agerem? — Adulēscentī mōrem gestum oportuit.",
+      "english": "Your fault. — What was I to do? — You should have humoured the young man.",
+      "source": "Ter. Ad. 214–214c"
+    },
+    {
+      "latin": "parce gaudēre oportet et sēnsim querī",
+      "english": "one should rejoice sparingly and complain slowly",
+      "source": "Phaedr. 4.18.9"
+    },
+    {
+      "latin": "animum dēbēs mūtāre, nōn caelum",
+      "english": "you ought to change your mind, not your sky",
+      "source": "Sen. Ep. 28.1"
+    },
+    {
+      "latin": "apēs, ut ajunt, dēbēmus imitārī",
+      "english": "we ought, as they say, to copy the bees",
+      "source": "Sen. Ep. 84.3"
+    }
+  ],
+  "notes": {
+    "debeo": {
+      "html": "With an infinitive <span lang=\"la\">dēbeō</span> speaks of a duty; for what simply has to be, Latin says <span lang=\"la\">necesse est</span>. Lewis &amp; Short: in classical prose always of moral necessity.",
+      "ruling": "debeo-duty"
+    }
+  },
+  "related": [
+    "must",
+    "be-supposed-to",
+    "shall",
+    "necessary",
+    "owe"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/oportet\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: oportet</a> · <a href=\"https://logeion.uchicago.edu/debeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: debeo</a>",
+    "Quotations from the Latinitas loci collections (loci-cato, loci-plautus, loci-phaedrus, loci-seneca-epistulae, loci-cicero-philosophica), checked against the editions named there.",
+    "Terence and Plautus lines that are not in the loci collections were checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026); Terence is spelled as in the loci collections. (<span lang=\"la\">adulēscentī</span> for Parry’s <span lang=\"la\">adolescenti</span>)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

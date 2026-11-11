@@ -1,0 +1,116 @@
+{
+  "id": "do-emphatic",
+  "english": "do",
+  "sense": "for emphasis: I do like it; do come in",
+  "pos": "verb",
+  "also": [
+    "does (for emphasis)",
+    "did (for emphasis)",
+    "I do!",
+    "do come in",
+    "so did I",
+    "so do I"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "vērō",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "indeed, truly (stressing the statement)",
+      "grammar": "adverb, usually after the first word",
+      "evidence": [
+        "Ter. Ph. 1053–1054: <span lang=\"la\">Mē ad cēnam vocā. — Pol vērō vocō.</span>",
+        "Cic. Fam. 14.4.1: <span lang=\"la\">ego vērō tē quam prīmum, mea vīta, cupiō vidēre</span>"
+      ],
+      "comment": "English stresses the auxiliary; Latin stresses the statement, with <span lang=\"la\">vērō</span> or by repeating the verb (<span lang=\"la\">Dormiō</span>, “I am asleep”). <span lang=\"la\">Facere</span> can stand for a verb just used, as “do” does (Lewis &amp; Short; <span lang=\"la\">et ego fēcī</span>, “so did I”); but a short answer repeats the verb itself (see yes)."
+    },
+    {
+      "latin": "equidem",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "I for my part, I really",
+      "grammar": "adverb, mostly with the first person",
+      "evidence": [
+        "Ter. Eun. 378: <span lang=\"la\">Tibi equidem dīcō, manē.</span>",
+        "Plaut. Most. 332–333c: <span lang=\"la\">nōlō equidem tē adflīgī</span>"
+      ]
+    },
+    {
+      "latin": "quīn (+ indicative)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "do …! why don’t you …? (urging)",
+      "grammar": "interrogative adverb with the present indicative",
+      "evidence": [
+        "Plaut. Mil. 1387: <span lang=\"la\">quid stās? quīn intrō īs?</span>",
+        "Plaut. Asin. 597: <span lang=\"la\">quīn tū hīc manēs?</span>"
+      ],
+      "comment": "The urging “do”: “do go in”, “do stay”. Lewis &amp; Short: only in exhortation or remonstrance, never asking for a fact."
+    },
+    {
+      "latin": "sānē (with an imperative)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "do, by all means (granting)",
+      "grammar": "adverb",
+      "register": "in this sense, vōx sermōnis cotīdiānī: Plaut., Ter.",
+      "evidence": [
+        "Plaut. Amph. 971: <span lang=\"la\">Ī sānē</span>"
+      ],
+      "comment": "Granting what was asked: “do go, then” (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Mē ad cēnam vocā. — Pol vērō vocō. — Eāmus intrō hinc. — Fīat.",
+      "english": "Invite me to dinner. — I do invite you! — Let’s go in. — Very well.",
+      "source": "Ter. Ph. 1053–1054"
+    },
+    {
+      "latin": "ego vērō tē quam prīmum, mea vīta, cupiō vidēre",
+      "english": "I do want to see you as soon as I can, my darling",
+      "source": "Cic. Fam. 14.4.1"
+    },
+    {
+      "latin": "Quid, taceam? quīn tū īs dormītum? — Dormiō, nē occlāmitēs.",
+      "english": "What, me be quiet? Why don’t you go to bed? — I am asleep: stop shouting.",
+      "source": "Plaut. Curc. 183–183b"
+    },
+    {
+      "latin": "Tibi equidem dīcō, manē.",
+      "english": "I am telling you: wait.",
+      "source": "Ter. Eun. 378"
+    },
+    {
+      "latin": "quid stās? quīn intrō īs?",
+      "english": "Why are you standing there? Do go in.",
+      "source": "Plaut. Mil. 1387"
+    },
+    {
+      "latin": "Ī sānē, et quantum potest parāta fac sint omnia.",
+      "english": "Do go, and get everything ready as fast as you can.",
+      "source": "Plaut. Amph. 971"
+    },
+    {
+      "latin": "et ego fēcī quī litterās Graecās senex didicī",
+      "english": "and so did I, who learnt Greek as an old man",
+      "source": "Cic. Sen. 26"
+    }
+  ],
+  "related": [
+    "yes",
+    "yes-no-question",
+    "not"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/vero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vero</a> · <a href=\"https://logeion.uchicago.edu/equidem\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: equidem</a> · <a href=\"https://logeion.uchicago.edu/quin\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quin</a> · <a href=\"https://logeion.uchicago.edu/sanus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sanus</a> · <a href=\"https://logeion.uchicago.edu/facio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: facio</a>",
+    "Quotations from the Latinitas loci collections (loci-terentius, loci-cicero-epistulae, loci-plautus, loci-cicero-philosophica), checked against the editions named there.",
+    "Plaut. Amph. 971 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

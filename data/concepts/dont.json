@@ -1,0 +1,124 @@
+{
+  "id": "dont",
+  "english": "don’t!",
+  "sense": "telling someone not to",
+  "pos": "phrase",
+  "also": [
+    "do not!",
+    "don’t …!",
+    "mind you don’t",
+    "never …!"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "nōlī, nōlīte (+ infinitive)",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "don’t …!",
+      "grammar": "imperative of nōlō with an infinitive",
+      "evidence": [
+        "Jo. 6, 20: <span lang=\"la\">Ego sum, nōlīte timēre.</span>",
+        "Quint. 6.3.59: <span lang=\"la\">nōlī, inquit, tamquam assem elephantō dēs</span>"
+      ],
+      "comment": "The everyday prohibition of prose, gentle in tone: “don’t be afraid”, “please don’t shout”."
+    },
+    {
+      "latin": "nē (+ perfect subjunctive)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "don’t (ever) …! (nē dīxerīs)",
+      "grammar": "nē with the perfect subjunctive, second person",
+      "evidence": [
+        "Publil. Sent. (prōsa) T 8: <span lang=\"la\">Turpia nē dīxerīs</span>",
+        "Quint. 1.5.50: <span lang=\"la\">alterum negandī est alterum vetandī</span>"
+      ],
+      "comment": "Firmer: the prohibition of rules and advice. Quintilian counts <span lang=\"la\">nōn fēcerīs</span> for <span lang=\"la\">nē fēcerīs</span> a fault, “since one denies and the other forbids”.",
+      "notes": [
+        "eris"
+      ]
+    },
+    {
+      "latin": "cavē (+ subjunctive)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "mind you don’t …, be careful not to …",
+      "grammar": "imperative of caveō with a bare subjunctive, or with nē",
+      "register": "with the bare subjunctive, vōx sermōnis cotīdiānī: Plaut., Ter.; Cic. in epistulīs",
+      "evidence": [
+        "Catull. 50.18: <span lang=\"la\">nunc audāx cavē sīs</span>"
+      ],
+      "comment": "A warning more than an order; see careful, don’t fall (<span lang=\"la\">cavē nē cadās</span>)."
+    },
+    {
+      "latin": "nē (+ imperative)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "don’t …! (nē timē)",
+      "grammar": "nē with the present imperative",
+      "register": "vōx cōmica et poētica: Plaut., Ter., Verg.; not in classical prose",
+      "evidence": [
+        "Plaut. Mil. 1345: <span lang=\"la\">Nē timē, voluptās mea.</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Ego sum, nōlīte timēre.",
+      "english": "It is I; don’t be afraid.",
+      "source": "Jo. 6, 20"
+    },
+    {
+      "latin": "rogō, nōlī clāmāre",
+      "english": "please don’t shout",
+      "source": "Petr. 137.1"
+    },
+    {
+      "latin": "nōlī, inquit, tamquam assem elephantō dēs",
+      "english": "“Don’t,” he said, “do it as if you were giving a penny to an elephant.”",
+      "source": "Quint. 6.3.59"
+    },
+    {
+      "latin": "Turpia nē dīxerīs: paulātim enim pudor rērum per verba discutitur",
+      "english": "Never say ugly things: little by little words knock the shame out of things.",
+      "source": "Publil. Sent. (prōsa) T 8"
+    },
+    {
+      "latin": "vīcīnīs bonus estō; familiam nē sīverīs peccāre",
+      "english": "be good to your neighbours; don’t let your household do wrong",
+      "source": "Cato Agr. 4"
+    },
+    {
+      "latin": "nunc audāx cavē sīs",
+      "english": "now mind you aren’t reckless",
+      "source": "Catull. 50.18"
+    },
+    {
+      "latin": "Nē timē, voluptās mea.",
+      "english": "Don’t be afraid, my darling.",
+      "source": "Plaut. Mil. 1345"
+    }
+  ],
+  "notes": {
+    "eris": {
+      "html": "The perfect subjunctive has a long ī (<span lang=\"la\">dīxerīs, sīverīs</span>), the future perfect a short i: Bennett; Allen and Greenough §169.d.",
+      "ruling": "perfect-subjunctive"
+    }
+  },
+  "related": [
+    "not",
+    "dont-touch",
+    "careful-dont-fall",
+    "ban",
+    "want"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/nolo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nolo</a> · <a href=\"https://logeion.uchicago.edu/ne\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ne</a> · <a href=\"https://logeion.uchicago.edu/caveo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: caveo</a>",
+    "Quotations from the Latinitas loci collections (loci-vulgata, loci-petronius, loci-quintilianus, loci-publilius, loci-cato, loci-catullus, loci-plautus), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

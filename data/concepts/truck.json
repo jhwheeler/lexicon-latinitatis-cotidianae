@@ -4,7 +4,9 @@
   "pos": "noun",
   "also": [
     "toy truck",
-    "lorry"
+    "lorry",
+    "pickup truck",
+    "pickup"
   ],
   "also_under": [
     "vectura"
@@ -25,6 +27,17 @@
       "status": "recommended",
       "period": "ours",
       "comment": "A descriptive phrase (<span lang=\"la\">onerārius</span>, L&amp;S)."
+    },
+    {
+      "latin": "plaustrum, plaustrī n.",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "pickup truck",
+      "evidence": [
+        "Andresian p. 40",
+        "Traupman 403: (for farm purposes) wagon"
+      ],
+      "comment": "Classically the heavy farm wagon or cart (Cato, Agr. 2.7; Cic. Div. 1.57, from Lewis &amp; Short), and Traupman’s farm wagon. Andresian puts it under a picture of a pickup truck, the farmer’s vehicle of today."
     }
   ],
   "related": [
@@ -36,11 +49,14 @@
   "sources": [
     "<a href=\"https://neolatinlexicon.org/latin/truck/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: truck</a>",
     "Descriptions and prompts labelled as ours are composed for family conversation. Recorded vocabulary does not imply universal technical standardization.",
-    "<a href=\"https://logeion.uchicago.edu/onerarius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: onerarius</a>"
+    "<a href=\"https://logeion.uchicago.edu/onerarius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: onerarius</a>",
+    "<a href=\"https://logeion.uchicago.edu/plaustrum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: plaustrum</a>",
+    "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 40.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 403, checked against the searchable text of the book (11 November 2026)."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-11",
     "by": "Claude"
   }
 }

@@ -2,12 +2,27 @@
   "id": "lion",
   "english": "lion",
   "pos": "noun",
+  "also": [
+    "lioness"
+  ],
   "domain": "natura",
   "terms": [
     {
       "latin": "leō, leōnis m.",
       "status": "recommended",
       "period": "classical"
+    },
+    {
+      "latin": "leaena, leaenae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "lioness",
+      "evidence": [
+        "Verg. G. 4.408",
+        "Plin. NH 8.45 (Lewis &amp; Short)",
+        "Andresian p. 24"
+      ],
+      "comment": "The word in prose and verse alike; <span lang=\"la\">lea</span> is poetic (Lucretius, Ovid)."
     }
   ],
   "related": [
@@ -15,11 +30,13 @@
     "mane"
   ],
   "sources": [
-    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+    "<a href=\"https://logeion.uchicago.edu/leaena\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: leaena</a> · <a href=\"https://logeion.uchicago.edu/lea\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lea</a>",
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+    "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 24."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-11",
     "by": "Claude"
   }
 }

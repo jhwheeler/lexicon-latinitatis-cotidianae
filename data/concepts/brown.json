@@ -2,6 +2,10 @@
   "id": "brown",
   "english": "brown",
   "pos": "adjective",
+  "also": [
+    "light brown",
+    "brownish"
+  ],
   "domain": "sermo",
   "terms": [
     {
@@ -53,6 +57,17 @@
       "evidence": [
         "M-O s.v. brown"
       ]
+    },
+    {
+      "latin": "suffuscus, suffusca, suffuscum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "brownish, light brown",
+      "evidence": [
+        "Tac. Agr. 12 (Lewis &amp; Short)",
+        "Andresian p. 50"
+      ],
+      "comment": "Tacitus uses it of British pearls (Lewis &amp; Short); <span lang=\"la\">sub-</span> softens <span lang=\"la\">fuscus</span>. Andresian gives it for a pale brown or beige; Traupman 251 has <span lang=\"la\">flāvidus</span> for beige."
     }
   ],
   "related": [
@@ -60,11 +75,13 @@
   ],
   "sources": [
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 251.",
-    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. brown."
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. brown.",
+    "<a href=\"https://logeion.uchicago.edu/suffuscus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: suffuscus</a>",
+    "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 50."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-11",
     "by": "Claude"
   }
 }

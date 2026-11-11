@@ -12,17 +12,45 @@
       "latin": "fēlēs, fēlis f.",
       "status": "recommended",
       "period": "classical"
+    },
+    {
+      "latin": "cattus, cattī m.",
+      "status": "alternative",
+      "period": "late",
+      "evidence": [
+        "Pallad. 4.9.4 (Morgan–Owens)",
+        "Comen. OP 25: <span lang=\"la\">Fēlis (cattus) domum pūrgat ā mūribus</span>",
+        "M-O s.v. cat",
+        "Andresian p. 25"
+      ],
+      "comment": "The late word behind the Romance and Germanic names; not in Lewis &amp; Short. <span lang=\"la\">fēlēs</span> is the classical word."
+    },
+    {
+      "latin": "catta, cattae f.",
+      "status": "alternative",
+      "period": "medieval",
+      "gloss": "cat, she-cat",
+      "evidence": [
+        "Joannes Diaconus, <em>Vita Gregorii</em> 2.60, ninth century (Morgan–Owens)",
+        "M-O s.v. cat",
+        "Andresian p. 25"
+      ],
+      "comment": "In Martial (13.69) an unknown animal (Lewis &amp; Short; Morgan–Owens prints 13.29); a cat from the ninth century."
     }
   ],
   "related": [
     "meow"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/feles\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: feles</a>"
+    "<a href=\"https://logeion.uchicago.edu/feles\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: feles</a>",
+    "<a href=\"https://logeion.uchicago.edu/catta\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: catta</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. cat.",
+    "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 25.",
+    "Quotations from the Latinitas loci collections (loci-comenius), checked against the editions named there."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-11",
     "by": "Claude"
   }
 }

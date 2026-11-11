@@ -2,23 +2,49 @@
   "id": "crawl",
   "english": "crawl",
   "pos": "verb",
+  "also": [
+    "slither",
+    "creep"
+  ],
   "domain": "ludi",
   "terms": [
     {
       "latin": "rēpō, rēpere",
       "status": "recommended",
       "period": "classical"
+    },
+    {
+      "latin": "serpō, serpere, serpsī, serptum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "crawl, creep, slither, of animals",
+      "evidence": [
+        "Cic. Fin. 5.42",
+        "Traupman 144",
+        "Andresian p. 28"
+      ],
+      "comment": "Only of animals, snakes and worms and the like; <span lang=\"la\">rēpō</span> is said of people too, as of a crawling baby (Lewis &amp; Short)."
     }
   ],
   "related": [
     "climb"
   ],
   "sources": [
-    "<a href=\"https://www.alatius.com/ls/index.php?l=repo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: repo</a>"
+    "<a href=\"https://www.alatius.com/ls/index.php?l=repo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: repo</a> · <a href=\"https://logeion.uchicago.edu/serpo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: serpo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 144, checked against the searchable text of the book (11 November 2026).",
+    "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 28.",
+    "Quotations from the Latinitas loci collections (loci-cicero-philosophica), checked against the editions named there."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-11",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "serpere anguiculōs, nāre anaticulās, ēvolāre merulās",
+      "english": "little snakes crawl, ducklings swim, blackbirds fly off",
+      "source": "Cic. Fin. 5.42"
+    }
+  ]
 }

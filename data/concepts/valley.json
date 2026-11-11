@@ -10,6 +10,17 @@
       "period": "classical"
     },
     {
+      "latin": "vallēs, vallis f.",
+      "status": "alternative",
+      "period": "classical",
+      "evidence": [
+        "Caes. BG 7.47; Verg. A. 11.522 (Lewis &amp; Short)",
+        "Traupman 206, 401",
+        "Andresian p. 22"
+      ],
+      "comment": "The same word with a nominative in <span lang=\"la\">-ēs</span>, Caesar’s form; Lewis &amp; Short and Traupman give it first."
+    },
+    {
       "latin": "convallis, convallis f.",
       "status": "alternative",
       "period": "classical",
@@ -24,12 +35,23 @@
     "plain-land"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/valles\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: valles</a>",
     "<a href=\"https://logeion.uchicago.edu/convallis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: convallis</a>",
-    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 206 and p. 401, checked against the searchable text of the book (11 November 2026).",
+    "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 22.",
+    "Quotations from the Latinitas loci collections (loci-ovidius), checked against the editions named there."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-11",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "hoc pecus omne meum est, multae quoque vallibus errant, multās silva tegit, multae stabulantur in antrīs",
+      "english": "this whole flock is mine; many more wander in the valleys, many are hidden in the woods, many are penned in caves",
+      "source": "Ov. Met. 13.821–822"
+    }
+  ]
 }

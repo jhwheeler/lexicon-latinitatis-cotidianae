@@ -4,7 +4,13 @@
   "sense": "an instrument",
   "pos": "verb",
   "also": [
-    "play an instrument"
+    "play an instrument",
+    "play the piano",
+    "play the guitar",
+    "play the violin",
+    "play the drums",
+    "play the flute",
+    "play the trumpet"
   ],
   "domain": "ludi",
   "terms": [
@@ -26,6 +32,17 @@
       "evidence": [
         "Traupman 53, 168"
       ]
+    },
+    {
+      "latin": "pulsō, pulsāre, pulsāvī, pulsātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "play (a drum; a stringed or keyboard instrument)",
+      "evidence": [
+        "Traupman 41, 53: <span lang=\"la\">tympanum pulsāre</span>",
+        "M-O s.v. play (a musical instrument)"
+      ],
+      "comment": "Strike, beat: for instruments that are struck, with the instrument as object (<span lang=\"la\">tympanum pulsāre</span>), where <span lang=\"la\">canere</span> takes the ablative (<span lang=\"la\">tubā canere</span>)."
     },
     {
       "latin": "(īnstrūmentō) sonāre",
@@ -59,6 +76,11 @@
       "latin": "Tympanum pulsā; ego tībiā canam.",
       "english": "You bang the drum; I’ll play the pipe.",
       "source": "composed"
+    },
+    {
+      "latin": "Possum pulsāre tympanum atque canere tubā.",
+      "english": "I can play the drum and the trumpet too.",
+      "source": "Traupman 41"
     }
   ],
   "related": [
@@ -69,14 +91,15 @@
     "trumpet"
   ],
   "sources": [
-    "<a href=\"https://logeion.org/cano\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cano</a> · <a href=\"https://logeion.org/canto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: canto</a>",
+    "<a href=\"https://logeion.org/cano\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cano</a> · <a href=\"https://logeion.org/canto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: canto</a> · <a href=\"https://logeion.uchicago.edu/pulso\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pulso</a>",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. play (a musical instrument).",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): pp. 53, 168, 326.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: p. 41, checked against the searchable text of the book on 11 November 2026.",
     "The example sentences marked “composed” are ours."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-11",
     "by": "Claude"
   }
 }

@@ -12,6 +12,20 @@
         "Traupman 122"
       ],
       "comment": "The noun is <strong lang=\"la\">sella, sellae f.</strong>"
+    },
+    {
+      "latin": "cathedra, cathedrae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a cushioned chair with arms, easy chair",
+      "evidence": [
+        "Hor. S. 1.10.91; Phaedr. 3.8.4; Juv. 6.91 (Lewis &amp; Short)",
+        "Andresian p. 2"
+      ],
+      "comment": "Classical, where <span lang=\"la\">sella bracchiāta</span> is Traupman’s description: Lewis &amp; Short’s chair “furnished with cushions and supports for women, an arm-chair”. Also a sedan chair and the teacher’s chair (Juv. 7.203).",
+      "notes": [
+        "cathedra"
+      ]
     }
   ],
   "related": [
@@ -22,11 +36,21 @@
   ],
   "sources": [
     "<a href=\"https://www.alatius.com/ls/index.php?l=sella\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sella</a>",
-    "<a href=\"https://www.bolchazy.com/product/conversational-latin-for-oral-proficiency-4th-edition-p3388/\" rel=\"noopener noreferrer\" target=\"_blank\">John C. Traupman, <em>Conversational Latin for Oral Proficiency</em></a>, p. 122."
+    "<a href=\"https://www.bolchazy.com/product/conversational-latin-for-oral-proficiency-4th-edition-p3388/\" rel=\"noopener noreferrer\" target=\"_blank\">John C. Traupman, <em>Conversational Latin for Oral Proficiency</em></a>, p. 122.",
+    "<a href=\"https://logeion.uchicago.edu/cathedra\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cathedra</a>",
+    "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 2."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-11",
     "by": "Claude"
+  },
+  "notes": {
+    "cathedra": {
+      "form": "cathedra",
+      "claim": "short e",
+      "against": "Lewis &amp; Short <span lang=\"la\">căthē^dra</span>, a common vowel; Andresian <span lang=\"la\">cathēdra</span>",
+      "html": "Greek καθέδρα, with short ε; the syllable is heavy only by position before <span lang=\"la\">dr</span>, as Hor. S. 1.10.91 <span lang=\"la\">plōrāre cathedrās</span> allows. A vowel Lewis &amp; Short marks common is not a long mark."
+    }
   }
 }

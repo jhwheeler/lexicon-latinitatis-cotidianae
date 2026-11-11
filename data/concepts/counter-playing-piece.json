@@ -4,7 +4,11 @@
   "sense": "playing piece",
   "pos": "noun",
   "also": [
-    "playing piece"
+    "playing piece",
+    "piece",
+    "chess piece",
+    "draughtsman",
+    "checker"
   ],
   "domain": "ludi",
   "terms": [
@@ -13,9 +17,19 @@
       "status": "recommended",
       "period": "classical",
       "evidence": [
-        "M-O s.v. playing piece"
+        "M-O s.v. playing piece",
+        "Andresian p. 17"
       ],
       "comment": "The classical word for a gaming stone."
+    },
+    {
+      "latin": "scācus, scācī m.",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "a chess piece",
+      "evidence": [
+        "Traupman 52"
+      ]
     }
   ],
   "related": [
@@ -23,11 +37,13 @@
   ],
   "sources": [
     "<a href=\"https://logeion.org/calculus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: calculus</a>",
-    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. playing piece."
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. playing piece.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: p. 52, checked against the searchable text of the book on 11 November 2026.",
+    "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 17."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-11",
     "by": "Claude"
   }
 }

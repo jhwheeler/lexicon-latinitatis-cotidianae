@@ -1,0 +1,115 @@
+{
+  "id": "must",
+  "english": "must",
+  "sense": "have to: it has to be done",
+  "pos": "verb",
+  "also": [
+    "have to",
+    "has to",
+    "had to",
+    "have got to",
+    "mustn’t",
+    "must not"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "faciendum est",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "it must be done; I must do it",
+      "grammar": "the gerundive with sum; the person who must, in the dative",
+      "evidence": [
+        "Sen. Ep. 119.3: <span lang=\"la\">ēsuriō: edendum est.</span>",
+        "Ter. Ph. 318: <span lang=\"la\">tibi omne est exedendum</span>"
+      ],
+      "comment": "The commonest way to say “must” and “have to”. Without an object it stands in the neuter (<span lang=\"la\">edendum est</span>, I have to eat); with one, it agrees with it (<span lang=\"la\">tantum nivis fodiendum fuit</span>, so much snow had to be dug)."
+    },
+    {
+      "latin": "necesse est",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "it is necessary, it has to be",
+      "grammar": "phrase, with an infinitive, an accusative and infinitive, or a bare subjunctive",
+      "evidence": [
+        "Hor. S. 2.6.26: <span lang=\"la\">īre necesse est</span>",
+        "Publil. Sent. N 32: <span lang=\"la\">Necesse est maximōrum minima esse initia.</span>"
+      ],
+      "comment": "What cannot be otherwise: necessity, not duty (see necessary)."
+    },
+    {
+      "latin": "oportet, oportēre, oportuit",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "one must, it is right",
+      "grammar": "verb, impersonal",
+      "evidence": [
+        "Sen. Ep. 94.47: <span lang=\"la\">et discās oportet</span>"
+      ],
+      "comment": "Of what is required or fitting (see should); with a bare subjunctive, <span lang=\"la\">discās oportet</span>, you must learn."
+    },
+    {
+      "latin": "nōn licet",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "you mustn’t (it is not allowed)",
+      "grammar": "phrase, with a dative of the person and an infinitive",
+      "evidence": [
+        "Gell. 1.23.6: <span lang=\"la\">neque id dīcī licēre</span>"
+      ],
+      "comment": "“Mustn’t” of a rule (see allow); said to someone as an order, <span lang=\"la\">nōlī</span> with the infinitive (see don’t!). <span lang=\"la\">Nōn necesse est</span> is “needn’t”."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ēsuriō: edendum est.",
+      "english": "I’m hungry: I must eat.",
+      "source": "Sen. Ep. 119.3"
+    },
+    {
+      "latin": "Tūte hoc intrīstī: tibi omne est exedendum.",
+      "english": "You cooked this up yourself: you have to eat it all.",
+      "source": "Ter. Ph. 318"
+    },
+    {
+      "latin": "nunc est bibendum, nunc pede līberō pulsanda tellūs",
+      "english": "now we must drink, now beat the ground with free feet",
+      "source": "Hor. C. 1.37.1–2"
+    },
+    {
+      "latin": "tantum nivis fodiendum atque ēgerendum fuit",
+      "english": "so much snow had to be dug and carried away",
+      "source": "Liv. 21.37.1"
+    },
+    {
+      "latin": "Necesse est maximōrum minima esse initia.",
+      "english": "The greatest things must have the smallest beginnings.",
+      "source": "Publil. Sent. N 32"
+    },
+    {
+      "latin": "et discās oportet et quod didicistī agendō cōnfirmēs",
+      "english": "you must both learn and make sure of what you have learnt by doing it",
+      "source": "Sen. Ep. 94.47"
+    },
+    {
+      "latin": "puer respondit tacendum esse neque id dīcī licēre",
+      "english": "the boy answered that it had to be kept quiet and he was not allowed to tell",
+      "source": "Gell. 1.23.6"
+    }
+  ],
+  "related": [
+    "should",
+    "necessary",
+    "allow",
+    "dont"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/necesse\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: necesse</a> · <a href=\"https://logeion.uchicago.edu/oportet\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: oportet</a> · <a href=\"https://logeion.uchicago.edu/licet\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: licet</a>",
+    "Quotations from the Latinitas loci collections (loci-seneca-epistulae, loci-terentius, loci-horatius, loci-livius, loci-publilius, loci-gellius), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

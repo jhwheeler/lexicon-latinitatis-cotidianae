@@ -1,0 +1,90 @@
+{
+  "id": "within-a-time",
+  "english": "within",
+  "sense": "a time: before it is out",
+  "pos": "preposition",
+  "also": [
+    "within a week",
+    "within two days",
+    "in less than",
+    "in the next few days",
+    "in a few days"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "intrā + acc.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "within, in less than (a time)",
+      "grammar": "preposition with the accusative",
+      "evidence": [
+        "Plaut. Curc. 448: <span lang=\"la\">subēgit sōlus intrā vīgintī diēs</span>",
+        "Liv. 36.10.1: <span lang=\"la\">intrā decimum diem quam Pherās vēnerat</span>"
+      ],
+      "comment": "Sets the limit: before the time is out. With <span lang=\"la\">quam</span>, within so many days of an event (Liv. 36.10.1, Lewis &amp; Short)."
+    },
+    {
+      "latin": "cāsus ablātīvus",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "in, within (the time something takes)",
+      "grammar": "construction: the length of time in the ablative, with no preposition",
+      "evidence": [
+        "Cic. Att. 9.14.2: <span lang=\"la\">quicquid est bīduō sciēmus</span>",
+        "Cic. Fam. 7.4: <span lang=\"la\">mē hōc bīduō aut trīduō exspectā</span>"
+      ],
+      "comment": "The everyday way in Cicero’s letters: <span lang=\"la\">paucīs diēbus</span>, in a few days; <span lang=\"la\">hōc bīduō</span>, in the next two days. It answers “how soon?”; <span lang=\"la\">intrā</span> stresses that the time will not be overrun.",
+      "notes": [
+        "biduum"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "dīmidiam partem nātiōnum ūsque omnium subēgit sōlus intrā vīgintī diēs",
+      "english": "single-handed, within twenty days, he conquered half of all the nations there are",
+      "source": "Plaut. Curc. 447–448"
+    },
+    {
+      "latin": "Cūrā igitur ut valeās, et mē hōc bīduō aut trīduō exspectā.",
+      "english": "So take care of your health, and expect me within the next two or three days.",
+      "source": "Cic. Fam. 7.4"
+    },
+    {
+      "latin": "quicquid est bīduō sciēmus",
+      "english": "whatever it is, we shall know within two days",
+      "source": "Cic. Att. 9.14.2"
+    },
+    {
+      "latin": "sed nunc properō. perscrībam ad tē paucīs diēbus omnia.",
+      "english": "But I am in a hurry now; I’ll write you the whole story in a few days.",
+      "source": "Cic. Att. 5.17.2"
+    }
+  ],
+  "notes": {
+    "biduum": {
+      "form": "bīduum",
+      "claim": "long i",
+      "against": "Lewis &amp; Short leaves it unmarked (s.v. <span lang=\"la\">biduus</span>)",
+      "html": "As in <span lang=\"la\">trīduum</span>, which Lewis &amp; Short marks long. De Vaan 173, s.v. <span lang=\"la\">diū</span>: the long ī of <span lang=\"la\">bīduum, trīduum</span>, which Walde–Hofmann explain from <span lang=\"la\">postrīdiē</span> and de Vaan perhaps from <span lang=\"la\">bīmus</span>."
+    }
+  },
+  "related": [
+    "inside",
+    "for-a-time",
+    "during",
+    "in-days-time",
+    "few"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/intra\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: intra</a> · <a href=\"https://logeion.uchicago.edu/biduus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: biduus</a> · <a href=\"https://logeion.uchicago.edu/triduum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: triduum</a>",
+    "Michiel de Vaan, <em>Etymological Dictionary of Latin and the other Italic Languages</em> (2008), p. 173.",
+    "Plautus, Livy 36 and Cicero’s letters checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (11 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "id": "god-forbid",
+  "english": "God forbid!",
+  "pos": "interjection",
+  "also": [
+    "heaven forbid",
+    "perish the thought",
+    "don’t say that!",
+    "touch wood",
+    "heaven help us"
+  ],
+  "domain": "sermo",
+  "terms": [
+    {
+      "latin": "Dī meliōra!",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "heaven forbid! (lit. the gods [grant] better things)",
+      "evidence": [
+        "Cic. Sen. 47: <span lang=\"la\">‘dī meliōra!’ inquit</span>",
+        "Plaut. Poen. 1400: <span lang=\"la\">Dī meliōra faxint.</span>"
+      ],
+      "comment": "The verb (<span lang=\"la\">dent, faciant</span>) is left out."
+    },
+    {
+      "latin": "Dī melius faciant!",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "heaven forbid!",
+      "grammar": "subjunctive of wish; also <span lang=\"la\">faxint</span>, <span lang=\"la\">duint</span>",
+      "register": "vōx cōmica: Plaut., Ter.",
+      "evidence": [
+        "Plaut. Ps. 315",
+        "Plaut. Merc. 285: <span lang=\"la\">Dī melius faxint.</span>",
+        "Ter. Ph. 1005: <span lang=\"la\">dī melius duint</span>",
+        "Traupman 327"
+      ]
+    },
+    {
+      "latin": "Bona verba (quaesō)!",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "don’t say that! hush, words of good omen!",
+      "register": "vōx cōmica: Ter.",
+      "evidence": [
+        "Ter. And. 204: <span lang=\"la\">Bona verba, quaesō.</span>",
+        "M-O s.v. hush, don’t say such a thing"
+      ],
+      "comment": "Said to stop an ill-omened remark."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "‘dī meliōra!’ inquit",
+      "english": "“God forbid!” he said",
+      "source": "Cic. Sen. 47"
+    },
+    {
+      "latin": "Dī meliōra faxint.",
+      "english": "Heaven forbid.",
+      "source": "Plaut. Poen. 1400"
+    },
+    {
+      "latin": "Mī homō, dī melius duint.",
+      "english": "My dear man, heaven forbid.",
+      "source": "Ter. Ph. 1005"
+    },
+    {
+      "latin": "Bona verba, quaesō.",
+      "english": "Don’t say that, please.",
+      "source": "Ter. And. 204"
+    }
+  ],
+  "related": [
+    "thank-god",
+    "good-luck",
+    "no-way"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/melior\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: melior</a> · <a href=\"https://logeion.uchicago.edu/bonus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: bonus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 327.",
+    "Thomas Morgan–Owens, <em>Adumbratio</em>, s.v. God forbid; hush.",
+    "Plautus, Terence and Cicero’s letters checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (Plautus ed. Leo, with its line numbers; Terence ed. Parry, whose line numbers can run one off the OCT’s; lines taken from the loci collections are cited by the OCT’s; Cicero’s letters ed. Purser). Cicero’s <span lang=\"la\">Catō major</span> as in the Latinitas loci collection (loci-cicero-philosophica).",
+    "Lines marked as in the Latinitas loci collections (loci-plautus, loci-terentius, loci-cicero-epistulae and others) are quoted from them."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

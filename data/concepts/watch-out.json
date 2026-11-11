@@ -1,0 +1,87 @@
+{
+  "id": "watch-out",
+  "english": "watch out!",
+  "pos": "interjection",
+  "also": [
+    "look out",
+    "careful!",
+    "mind!",
+    "beware",
+    "beware of the dog"
+  ],
+  "domain": "sermo",
+  "terms": [
+    {
+      "latin": "Cavē!",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "watch out! mind!",
+      "grammar": "imperative of <span lang=\"la\">caveō</span>: alone; with an accusative (<span lang=\"la\">cavē canem</span>); with <span lang=\"la\">nē</span> and the subjunctive, or the bare subjunctive (<span lang=\"la\">cavē cadās</span>); plural <span lang=\"la\">cavēte</span>",
+      "evidence": [
+        "Petr. 29.1: <span lang=\"la\">CAVĒ CANEM</span>",
+        "Plaut. Most. 324b: <span lang=\"la\">Cavē nē cadās, astā.</span>"
+      ],
+      "comment": "In comedy often with <span lang=\"la\">sīs</span> (“mind, will you”). In Plautus’ verse the final vowel is often shortened in speech (<span lang=\"la\">cave</span>); the word is <span lang=\"la\">cavē</span>."
+    },
+    {
+      "latin": "Cavē tibi!",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "look out for yourself! mind out!",
+      "register": "vōx cōmica: Plaut.",
+      "evidence": [
+        "Plaut. Aul. 584: <span lang=\"la\">cavē sīs tibi</span>",
+        "Plaut. Bacch. 1033"
+      ]
+    },
+    {
+      "latin": "Cavētō!",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "beware! (a warning that stands)",
+      "grammar": "future imperative of <span lang=\"la\">caveō</span>",
+      "evidence": [
+        "Hor. S. 1.4.85: <span lang=\"la\">hic niger est, hunc tū, Rōmāne, cavētō</span>"
+      ],
+      "comment": "The future imperative of rules and warnings that hold from now on."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "canis ingēns, catēnā vīnctus, in pariete erat pictus superque quadrātā litterā scrīptum CAVĒ CANEM",
+      "english": "a huge dog on a chain was painted on the wall, and above it in capitals BEWARE OF THE DOG",
+      "source": "Petr. 29.1"
+    },
+    {
+      "latin": "Cavē nē cadās, astā.",
+      "english": "Careful you don’t fall; stand still.",
+      "source": "Plaut. Most. 324b"
+    },
+    {
+      "latin": "Cavē sīs malam rem.",
+      "english": "Mind you don’t get into trouble.",
+      "source": "Plaut. Asin. 43"
+    },
+    {
+      "latin": "hic niger est, hunc tū, Rōmāne, cavētō",
+      "english": "he is a black heart: Roman, beware of him",
+      "source": "Hor. S. 1.4.85"
+    }
+  ],
+  "related": [
+    "careful-dont-fall",
+    "mind-your-fingers",
+    "take-care",
+    "stop-right-there"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/caveo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: caveo</a>",
+    "Plautus, Terence and Cicero’s letters checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (Plautus ed. Leo, with its line numbers; Terence ed. Parry, whose line numbers can run one off the OCT’s; lines taken from the loci collections are cited by the OCT’s; Cicero’s letters ed. Purser). Petronius as in the Latinitas loci collection (loci-petronius); Horace checked against the Perseus text.",
+    "Lines marked as in the Latinitas loci collections (loci-plautus, loci-terentius, loci-cicero-epistulae and others) are quoted from them."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

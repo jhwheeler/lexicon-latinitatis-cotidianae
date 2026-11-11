@@ -3,7 +3,10 @@
   "english": "wait a moment!",
   "pos": "phrase",
   "also": [
-    "wait a minute"
+    "wait a minute",
+    "wait!",
+    "hold on",
+    "hang on"
   ],
   "domain": "sermo",
   "terms": [
@@ -14,6 +17,18 @@
       "evidence": [
         "Traupman 90, 110"
       ]
+    },
+    {
+      "latin": "Manē! Manēte!",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "wait!",
+      "grammar": "imperative of <span lang=\"la\">maneō</span>; often doubled",
+      "register": "vōx sermōnis cotīdiānī: Plaut., Ter.",
+      "evidence": [
+        "Ter. Ad. 264",
+        "Ter. Hec. 495–496"
+      ]
     }
   ],
   "phrases": [
@@ -21,6 +36,16 @@
       "latin": "Pater «Manē dum!» clāmābat",
       "english": "Dad kept calling, “Wait a moment!”",
       "source": "Libellus I, <span lang=\"la\">Iter in Lūsitāniam</span>"
+    },
+    {
+      "latin": "Manē, manē: ipse exit forās.",
+      "english": "Hold on, hold on: here he comes out.",
+      "source": "Ter. Ad. 264"
+    },
+    {
+      "latin": "Quō abīs? manē; manē, inquam: quō abīs?",
+      "english": "Where are you off to? Wait; wait, I said: where are you off to?",
+      "source": "Ter. Hec. 495–496"
     }
   ],
   "related": [
@@ -30,7 +55,9 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/maneo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: maneo</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: pp. 90, 110, checked against the searchable text of the book on 29 October 2026.",
-    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+    "Plautus, Terence and Cicero’s letters checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (Plautus ed. Leo, with its line numbers; Terence ed. Parry, whose line numbers can run one off the OCT’s; lines taken from the loci collections are cited by the OCT’s; Cicero’s letters ed. Purser).",
+    "Lines marked as in the Latinitas loci collections (loci-plautus, loci-terentius, loci-cicero-epistulae and others) are quoted from them."
   ],
   "review": {
     "status": "draft",

@@ -7,7 +7,11 @@
     "agreed!",
     "come to an agreement",
     "okay",
-    "OK"
+    "OK",
+    "all right",
+    "fine",
+    "OK then",
+    "okay then"
   ],
   "domain": "verba",
   "terms": [
@@ -47,6 +51,32 @@
         "Ter. Ad. 911: <span lang=\"la\">Placet, pater lepidissime.</span>",
         "Cic. de Or. 1.155: <span lang=\"la\">posteā mihi placuit, … ut summōrum ōrātōrum Graecās ōrātiōnēs explicārem</span>"
       ]
+    },
+    {
+      "latin": "Licet.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "all right, OK (granting a request)",
+      "grammar": "impersonal: “it is allowed”",
+      "register": "vōx sermōnis cotīdiānī: Plaut., Ter.",
+      "evidence": [
+        "Plaut. Rud. 1215–1216b",
+        "Plaut. Curc. 95b",
+        "Traupman 104, 353"
+      ],
+      "comment": "The yes of someone who agrees to do what is asked: <span lang=\"la\">Sed properā. — Licet.</span>"
+    },
+    {
+      "latin": "Estō.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "so be it, all right (conceding)",
+      "grammar": "future imperative of <span lang=\"la\">sum</span>",
+      "evidence": [
+        "Plaut. Ps. 935",
+        "Cic. Fam. 7.18.4: <span lang=\"la\">vērum illud estō</span>"
+      ],
+      "comment": "Grants a point, often before a “but”."
     }
   ],
   "phrases": [
@@ -64,6 +94,11 @@
       "latin": "Placet, pater lepidissime.",
       "english": "Agreed, Dad, you’re the best.",
       "source": "Ter. Ad. 911"
+    },
+    {
+      "latin": "Sed properā. — Licet. — Jam hīc fac sit, cēna ut cūrētur. — Licet. — Omnian’ licet? — Licet.",
+      "english": "But hurry. — OK. — See it’s here, so that dinner gets cooked. — OK. — Everything OK? — OK.",
+      "source": "Plaut. Rud. 1215–1216b"
     }
   ],
   "related": [
@@ -75,7 +110,9 @@
     "<a href=\"https://logeion.uchicago.edu/convenio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: convenio</a> · <a href=\"https://logeion.uchicago.edu/fio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fio</a> · <a href=\"https://logeion.uchicago.edu/placeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: placeo</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 104, 110, 353, checked against the searchable text of the book (9 November 2026).",
     "Quotations from the Latinitas loci collections (loci-terentius, loci-plautus), checked against the editions named there.",
-    "Quotations of Plautus (Leo, 1896; cited by his lines) and Cicero’s <em>De oratore</em> (Wilkins) that are not in the loci collections were checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+    "Quotations of Plautus (Leo, 1896; cited by his lines) and Cicero’s <em>De oratore</em> (Wilkins) that are not in the loci collections were checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "<a href=\"https://logeion.uchicago.edu/licet\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: licet</a> · <a href=\"https://logeion.uchicago.edu/sum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sum</a>",
+    "Plautus, Terence and Cicero’s letters checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (Plautus ed. Leo, with its line numbers; Terence ed. Parry, whose line numbers can run one off the OCT’s; lines taken from the loci collections are cited by the OCT’s; Cicero’s letters ed. Purser)."
   ],
   "review": {
     "status": "draft",

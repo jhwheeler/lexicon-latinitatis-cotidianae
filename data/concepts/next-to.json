@@ -5,24 +5,92 @@
     "preposition",
     "adverb"
   ],
+  "also": [
+    "beside",
+    "by (close to)",
+    "close beside",
+    "at someone’s side"
+  ],
   "also_under": [
     "verba"
   ],
   "domain": "sermo",
   "terms": [
     {
-      "latin": "jūxtā",
+      "latin": "juxtā",
       "status": "recommended",
       "period": "classical",
-      "comment": "One of the card’s useful spatial words for building."
+      "gloss": "next to, beside, close by",
+      "grammar": "adverb, and preposition with the accusative",
+      "evidence": [
+        "Caes. BC 1.16.4: <span lang=\"la\">juxtā mūrum castra posuit</span> (Lewis &amp; Short)",
+        "Sall. Jug. 65.2: <span lang=\"la\">ut sellam juxtā pōneret</span>"
+      ],
+      "comment": "As an adverb, close by, at someone’s side: <span lang=\"la\">sellam juxtā pōnere</span>. As a preposition it is not found before Caesar (Lewis &amp; Short): <span lang=\"la\">juxtā focum</span>, by the fire. Its other sense, “equally, just as” (<span lang=\"la\">juxtā ac sī</span>), is not this one.",
+      "notes": [
+        "juxta-u"
+      ]
+    },
+    {
+      "latin": "propter + acc.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "beside, close to",
+      "grammar": "preposition with the accusative; also an adverb, close by",
+      "evidence": [
+        "Cic. Brut. 24: <span lang=\"la\">in prātulō propter Platōnis statuam cōnsēdimus</span>",
+        "Ter. Ad. 170: <span lang=\"la\">hīc propter hunc adsiste</span>"
+      ],
+      "comment": "Rare but classical in this sense (Lewis &amp; Short). Its everyday sense is “because of” (see <em>due to</em>), so keep it for a place plainly meant. For “by” a door or a gate, <span lang=\"la\">ad</span> (see <em>at</em>); for “near”, <span lang=\"la\">prope</span>."
     }
   ],
+  "phrases": [
+    {
+      "latin": "hīc propter hunc adsiste: em, sīc volō.",
+      "english": "Stand here, next to him. There, that’s how I want it.",
+      "source": "Ter. Ad. 170"
+    },
+    {
+      "latin": "tum in prātulō propter Platōnis statuam cōnsēdimus",
+      "english": "then we sat down on a little lawn beside the statue of Plato",
+      "source": "Cic. Brut. 24"
+    },
+    {
+      "latin": "ībat rēx obsitus aevō et comitem Aenēān juxtā nātumque tenēbat ingrediēns variōque viam sermōne levābat",
+      "english": "the king, weighed down with years, walked on, keeping Aeneas and his son beside him, and lightened the way with talk",
+      "source": "Verg. A. 8.307–309"
+    },
+    {
+      "latin": "mōre rēgum ut sellam juxtā pōneret",
+      "english": "(he asked) to set his chair beside him, as kings do",
+      "source": "Sall. Jug. 65.2"
+    },
+    {
+      "latin": "cētera intēctī tōtōs diēs juxtā focum atque ignem agunt",
+      "english": "otherwise unclothed, they spend whole days by the hearth and the fire",
+      "source": "Tac. Germ. 17.1"
+    }
+  ],
+  "notes": {
+    "juxta-u": {
+      "form": "juxtā",
+      "claim": "u left unmarked",
+      "against": "the earlier draft of this record, <span lang=\"la\">jūxtā</span>",
+      "html": "Lewis &amp; Short marks only the final ā, and the lexicon’s other records and the Latinitas loci write <span lang=\"la\">juxtā</span>. De Vaan 318, s.v. <span lang=\"la\">juxta</span>, derives it from Proto-Italic *<span lang=\"la\">jougVsto-</span>, which would give a long u, but does not discuss the vowel. Left unmarked until it is settled."
+    }
+  },
   "related": [
+    "near",
+    "at-place",
     "between",
     "build"
   ],
   "sources": [
-    "<a href=\"https://dcc.dickinson.edu/latin-core-list1\" rel=\"noopener noreferrer\" target=\"_blank\">Dickinson: Latin Core Vocabulary</a>"
+    "<a href=\"https://logeion.uchicago.edu/juxta\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: juxta</a> · <a href=\"https://logeion.uchicago.edu/propter\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: propter</a>",
+    "<a href=\"https://dcc.dickinson.edu/latin-core-list1\" rel=\"noopener noreferrer\" target=\"_blank\">Dickinson: Latin Core Vocabulary</a>",
+    "Michiel de Vaan, <em>Etymological Dictionary of Latin and the other Italic Languages</em> (2008), p. 318.",
+    "Terence, Cicero (<em>Brutus</em>), Sallust, Virgil and Tacitus (<em>Germania</em>) checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (11 November 2026); the Virgil lines are also in the Latinitas loci collection (loci-vergilius-aeneis).",
+    "Citations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them and have not been checked against an edition."
   ],
   "review": {
     "status": "draft",

@@ -1,0 +1,104 @@
+{
+  "id": "phew",
+  "english": "phew!",
+  "sense": "relief",
+  "pos": "interjection",
+  "also": [
+    "what a relief",
+    "thank goodness that’s over",
+    "I can breathe again"
+  ],
+  "domain": "sermo",
+  "terms": [
+    {
+      "latin": "Hahae!",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "phew! (joy and relief)",
+      "register": "vōx cōmica: Plaut.",
+      "evidence": [
+        "Plaut. Ps. 1052: <span lang=\"la\">Hahae, nunc dēmum mī animus in tūtō est locō</span>",
+        "Plaut. Truc. 209: <span lang=\"la\">Hahahae, requiēvī</span>"
+      ],
+      "comment": "Lewis &amp; Short (s.v. <span lang=\"la\">ha</span>): “an exclamation of joy, thank heavens!”. Traupman gives <span lang=\"la\">ehem!</span> for a phew of glad surprise or relief (p. 359)."
+    },
+    {
+      "latin": "Respīrāvī.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "I can breathe again",
+      "grammar": "perfect of respīrō; the present <span lang=\"la\">respīrō</span> too",
+      "evidence": [
+        "Cic. Att. 10.1.1: <span lang=\"la\">paulum respīrāvī</span>",
+        "Cic. Att. 7.13.3: <span lang=\"la\">paulum respīrō</span>"
+      ],
+      "comment": "Cicero’s word in the letters for relief after worry.",
+      "notes": [
+        "re-short"
+      ]
+    },
+    {
+      "latin": "Salva rēs est.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "all’s well, we’re safe",
+      "evidence": [
+        "Plaut. Aul. 207",
+        "Ter. Ad. 643"
+      ],
+      "comment": "The words of relief after a fright."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Hahae, nunc dēmum mī animus in tūtō est locō",
+      "english": "Phew, now at last my mind is in a safe place",
+      "source": "Plaut. Ps. 1052"
+    },
+    {
+      "latin": "Hahahae, requiēvī, quia intrō abiit odium meum.",
+      "english": "Phew, I can rest, now that my pest has gone in.",
+      "source": "Plaut. Truc. 209–210"
+    },
+    {
+      "latin": "accēpī litterās tuās et paulum respīrāvī",
+      "english": "I got your letter and breathed a little more freely",
+      "source": "Cic. Att. 10.1.1"
+    },
+    {
+      "latin": "Dī mē servant, salva rēs est.",
+      "english": "The gods are keeping me; all’s well.",
+      "source": "Plaut. Aul. 207"
+    },
+    {
+      "latin": "Ērubuit: salva rēs est.",
+      "english": "He blushed: all’s well.",
+      "source": "Ter. Ad. 643"
+    }
+  ],
+  "notes": {
+    "re-short": {
+      "form": "<span lang=\"la\">respīrāvī</span>",
+      "claim": "short e in re-",
+      "against": "Lewis &amp; Short <span lang=\"la\">rē-spīro</span>",
+      "html": "The lexicon’s ruling on <span lang=\"la\">re-</span> before <span lang=\"la\">sc, sp, st</span> (Bennett §48 rejects the lengthening for the lost <span lang=\"la\">d</span> of <span lang=\"la\">red-</span>). Still under Jack’s review.",
+      "ruling": "re-s"
+    }
+  },
+  "related": [
+    "let-me-catch-my-breath",
+    "thank-god",
+    "ha-ha"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/ha\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ha (hahae)</a> · <a href=\"https://logeion.uchicago.edu/respiro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: respiro</a> · <a href=\"https://logeion.uchicago.edu/salvus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: salvus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 359.",
+    "Plautus, Terence and Cicero’s letters checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (Plautus ed. Leo, with its line numbers; Terence ed. Parry, whose line numbers can run one off the OCT’s; lines taken from the loci collections are cited by the OCT’s; Cicero’s letters ed. Purser).",
+    "Lines marked as in the Latinitas loci collections (loci-plautus, loci-terentius, loci-cicero-epistulae and others) are quoted from them."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

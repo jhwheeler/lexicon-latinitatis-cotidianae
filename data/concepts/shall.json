@@ -1,0 +1,89 @@
+{
+  "id": "shall",
+  "english": "shall",
+  "sense": "shall I …? asking what to do",
+  "pos": "verb",
+  "also": [
+    "shall we …?",
+    "should I …?",
+    "what shall I do?",
+    "am I to …?",
+    "do you want me to …?"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "quid faciam?",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "what shall I do? what am I to do?",
+      "grammar": "the present subjunctive in a question, negative nōn; of the past, the imperfect subjunctive",
+      "evidence": [
+        "Ter. Eun. 46: <span lang=\"la\">Quid igitur faciam? nōn eam?</span>",
+        "Ter. Eun. 49: <span lang=\"la\">Redeam? nōn, sī mē obsecret.</span>"
+      ],
+      "comment": "Asking oneself or another what to do puts the verb in the subjunctive. Of the past: <span lang=\"la\">Quid facerem?</span>, what was I to do? (Ter. Eun. 831)."
+    },
+    {
+      "latin": "vīn' (+ subjunctive)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "shall I …? do you want me to …? (offering)",
+      "grammar": "vīn' (vīsne) with a bare subjunctive",
+      "register": "vōx sermōnis cotīdiānī: Plaut., Ter.",
+      "evidence": [
+        "Plaut. Pers. 575b: <span lang=\"la\">Vīn' hūc vocem?</span>",
+        "Plaut. Stich. 486: <span lang=\"la\">vīn' ad tē ad cēnam veniam?</span>"
+      ],
+      "comment": "The offer of comedy; see want for <span lang=\"la\">volō</span> with the subjunctive."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Quid igitur faciam? nōn eam?",
+      "english": "So what shall I do? Not go?",
+      "source": "Ter. Eun. 46"
+    },
+    {
+      "latin": "Exclūsit: revocat. Redeam? nōn, sī mē obsecret.",
+      "english": "She shut me out; now she calls me back. Shall I go back? No, not if she begs me.",
+      "source": "Ter. Eun. 49"
+    },
+    {
+      "latin": "Vīn' hūc vocem?",
+      "english": "Shall I call him over?",
+      "source": "Plaut. Pers. 575b"
+    },
+    {
+      "latin": "vīn' ad tē ad cēnam veniam? — Sī possim, velim.",
+      "english": "Shall I come to dinner at your house? — I’d like that, if I could manage it.",
+      "source": "Plaut. Stich. 486–486b"
+    },
+    {
+      "latin": "‘quantum’ inquis ‘prōficiam?’ quantum temptāveris",
+      "english": "“How far shall I get?” you ask. As far as you try.",
+      "source": "Sen. Ep. 76.5"
+    },
+    {
+      "latin": "Tua culpa. — Quid agerem? — Adulēscentī mōrem gestum oportuit.",
+      "english": "Your fault. — What was I to do? — You should have humoured the young man.",
+      "source": "Ter. Ad. 214–214c"
+    }
+  ],
+  "related": [
+    "lets",
+    "should",
+    "want",
+    "will"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/facio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: facio</a> · <a href=\"https://logeion.uchicago.edu/volo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: volo</a>",
+    "Quotations from the Latinitas loci collections (loci-seneca-epistulae), checked against the editions named there.",
+    "Terence and Plautus checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026): the Eunuchus in the Oxford numbering, which runs one line ahead of Parry’s in that play from about line 390 (so Parry’s 830 is line 831); Terence is spelled as in the loci collections (<span lang=\"la\">adulēscentī</span> for Parry’s <span lang=\"la\">adolescenti</span>)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

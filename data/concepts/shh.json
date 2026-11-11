@@ -1,0 +1,76 @@
+{
+  "id": "shh",
+  "english": "shh!",
+  "pos": "interjection",
+  "also": [
+    "sh",
+    "shush",
+    "hush",
+    "psst",
+    "hist"
+  ],
+  "domain": "sermo",
+  "terms": [
+    {
+      "latin": "St!",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "shh! hush!",
+      "register": "vōx cōmica: Plaut., Ter.",
+      "evidence": [
+        "Plaut. Cas. 148: <span lang=\"la\">St! tacē atque abī.</span>",
+        "Plaut. Ps. 952b: <span lang=\"la\">St, tacē, aedēs hīscunt.</span>"
+      ],
+      "comment": "Lewis &amp; Short: “hist! whist! hush!”. Mostly followed by <span lang=\"la\">tacē</span> or <span lang=\"la\">tacēte</span>; it also serves as the whispered “psst!” before a secret: <span lang=\"la\">Dīcis? st! invēnī nūper quandam.</span> (Ter. Haut. 597)."
+    },
+    {
+      "latin": "Tacē! Tacēte!",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "be quiet!",
+      "grammar": "imperative of <span lang=\"la\">taceō</span>, singular and plural",
+      "evidence": [
+        "Plaut. Curc. 156: <span lang=\"la\">st tacē, tacē.</span>"
+      ],
+      "comment": "See <span lang=\"la\">be quiet</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "St! tacē atque abī.",
+      "english": "Shh! Quiet, and off you go.",
+      "source": "Plaut. Cas. 148"
+    },
+    {
+      "latin": "St, tacē, aedēs hīscunt.",
+      "english": "Shh, quiet, the door’s opening.",
+      "source": "Plaut. Ps. 952b"
+    },
+    {
+      "latin": "St, tacē, auscultā modo.",
+      "english": "Shh, quiet, just listen.",
+      "source": "Plaut. Most. 489b"
+    },
+    {
+      "latin": "St, tacēte, habēte animum bonum.",
+      "english": "Shh, quiet, cheer up, both of you.",
+      "source": "Plaut. Epid. 181"
+    }
+  ],
+  "related": [
+    "be-quiet",
+    "put-a-finger-to-ones-lips",
+    "stop-talking",
+    "lower-your-voice"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/st\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: st</a> · <a href=\"https://logeion.uchicago.edu/taceo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: taceo</a>",
+    "Plautus, Terence and Cicero’s letters checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (Plautus ed. Leo, with its line numbers; Terence ed. Parry, whose line numbers can run one off the OCT’s; lines taken from the loci collections are cited by the OCT’s; Cicero’s letters ed. Purser).",
+    "Lines marked as in the Latinitas loci collections (loci-plautus, loci-terentius, loci-cicero-epistulae and others) are quoted from them."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

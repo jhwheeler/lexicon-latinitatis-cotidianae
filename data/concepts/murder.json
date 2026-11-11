@@ -1,0 +1,91 @@
+{
+  "id": "murder",
+  "english": "murder",
+  "pos": "noun",
+  "also": [
+    "murderer",
+    "killing",
+    "homicide",
+    "commit murder",
+    "a murder mystery"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "caedēs, caedis f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "murder, killing; slaughter",
+      "evidence": [
+        "Cic. Mil. 12 (Lewis &amp; Short)",
+        "Sall. Jug. 31.13: <span lang=\"la\">caedem in aliquem facere</span>"
+      ],
+      "comment": "The usual classical word for a killing, of one person or many: murder, massacre, slaughter in battle. To commit murder is <span lang=\"la\">caedem facere</span> (Sall. Jug. 31.13) or <span lang=\"la\">committere</span> (Quint.); to murder someone, <span lang=\"la\">occīdere</span> or <span lang=\"la\">interficere</span> (see kill)."
+    },
+    {
+      "latin": "nex, necis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a violent death, murder",
+      "evidence": [
+        "Cic. Mil. 10 (Lewis &amp; Short)",
+        "Traupman 349"
+      ],
+      "comment": "Death by violence, seen from the victim’s side; outside fixed phrases (<span lang=\"la\">vītae necisque potestās</span>, power of life and death, Caesar) mostly in poetry. Traupman gives it for murder."
+    },
+    {
+      "latin": "homicīdium, homicīdiī n.",
+      "status": "alternative",
+      "period": "post-classical",
+      "gloss": "homicide, murder (as a charge)",
+      "evidence": [
+        "Quint. 3.10.1: <span lang=\"la\">sī quis homicīdiī accūsētur</span> (Lewis &amp; Short)",
+        "Tac. G. 21"
+      ],
+      "comment": "The term of the courts from Quintilian on; Cicero says <span lang=\"la\">caedēs</span> and, of the charge, <span lang=\"la\">inter sīcāriōs</span>."
+    },
+    {
+      "latin": "homicīda, homicīdae m./f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a murderer, a murderess",
+      "evidence": [
+        "Cic. Phil. 2.30 (Lewis &amp; Short)"
+      ],
+      "comment": "Cicero sets it beside <span lang=\"la\">sīcārius</span>, an assassin who uses a dagger, and <span lang=\"la\">parricīda</span>, the murderer of a parent or kinsman (Phil. 2.30–31)."
+    },
+    {
+      "latin": "sīcārius, sīcāriī m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "an assassin, a murderer",
+      "evidence": [
+        "Cic. Rosc. Am. 8 (Lewis &amp; Short)",
+        "Quint. 10.1.12"
+      ],
+      "comment": "From <span lang=\"la\">sīca</span>, a dagger, but used of any murderer (Quint. 10.1.12). <span lang=\"la\">Inter sīcāriōs accūsāre, dēfendere</span>: on a charge of murder (Cic. Rosc. Am. 90)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "In hōc librō dē caede quaeritur.",
+      "english": "This book is a murder mystery.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "kill",
+    "crime",
+    "criminal"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/caedes\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: caedes</a> · <a href=\"https://logeion.uchicago.edu/nex\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nex</a> · <a href=\"https://logeion.uchicago.edu/homicidium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: homicidium</a> · <a href=\"https://logeion.uchicago.edu/homicida\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: homicida</a> · <a href=\"https://logeion.uchicago.edu/sicarius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sicarius</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 349, checked against the searchable text of the book (11 November 2026).",
+    "The example sentences marked “composed” are ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

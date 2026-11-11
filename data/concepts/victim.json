@@ -1,0 +1,59 @@
+{
+  "id": "victim",
+  "english": "victim",
+  "sense": "of a crime, a wrong, an accident",
+  "pos": "noun",
+  "also": [
+    "victims",
+    "the injured party",
+    "fall victim to",
+    "be a victim of"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "is quī injūriam accēpit",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "the one who has been wronged",
+      "grammar": "phrase: a relative clause with injūria, injūriae f. and accipiō",
+      "evidence": [
+        "Cic. Div. Caec. 60: <span lang=\"la\">injūriam accipere ab aliquō</span> (Lewis &amp; Short, s.v. injūria)"
+      ],
+      "comment": "Classical Latin has no single word for the victim of a crime: it names the person by what was done, in a relative clause or a participle: <span lang=\"la\">is cui injūria facta est</span>, <span lang=\"la\">quī spoliātus est</span> (robbed), <span lang=\"la\">quī circumventus est</span> (cheated), <span lang=\"la\">quī in eō cāsū periērunt</span> (the victims of an accident)."
+    },
+    {
+      "latin": "victima, victimae f.",
+      "status": "avoid",
+      "period": "classical",
+      "gloss": "a beast for sacrifice",
+      "evidence": [
+        "Caes. B.G. 6.16 (Lewis &amp; Short)",
+        "Cic. Fin. 2.61: <span lang=\"la\">sē victimam reī pūblicae praebēre</span>"
+      ],
+      "comment": "Classically an animal offered in sacrifice, and figuratively someone who gives himself up as an offering (Cic. Fin. 2.61). Using it for the victim of a crime or an accident follows the modern languages."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Quid tibi injūriae factum est?",
+      "english": "What have they done to you?",
+      "source": "Fōrm. XVI 49 (Franmōrārius, 2013)"
+    }
+  ],
+  "related": [
+    "crime",
+    "criminal",
+    "hurt",
+    "murder"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/injuria\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: injuria</a> · <a href=\"https://logeion.uchicago.edu/victima\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: victima</a>",
+    "Quotations from the Latinitas loci collections (loci-franmorarius), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

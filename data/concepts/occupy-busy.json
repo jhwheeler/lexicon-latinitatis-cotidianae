@@ -1,0 +1,88 @@
+{
+  "id": "occupy-busy",
+  "english": "occupy",
+  "sense": "keep busy; take up time",
+  "pos": "verb",
+  "also": [
+    "busy",
+    "be busy",
+    "keep busy",
+    "occupied",
+    "be occupied with",
+    "keep someone occupied",
+    "take up (time)"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "occupātus, occupāta, occupātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "busy, occupied, engaged",
+      "grammar": "adjective (participle of occupō); with in + ablative",
+      "evidence": [
+        "Cic. Sen. 32: <span lang=\"la\">nēmō … cui fuerim occupātus</span>",
+        "Cic. Off. 1.57: <span lang=\"la\">in patriā dēlendā occupātī</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Busy with something is <span lang=\"la\">in aliquā rē occupātus</span>. The opposite is <span lang=\"la\">ōtiōsus</span>, at leisure (Cic. Tusc. 1.5); for “free, not busy” see available."
+    },
+    {
+      "latin": "occupō, occupāre, occupāvī, occupātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "take up, occupy (time, a person)",
+      "evidence": [
+        "Cael. ap. Cic. Fam. 8.10.3: <span lang=\"la\">haec causa prīmōs mēnsēs occupābit</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Of a task that takes up time or attention; its first sense is to seize (see occupy-seize)."
+    },
+    {
+      "latin": "dētineō, dētinēre, dētinuī, dētentum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "keep busy, engage; detain",
+      "evidence": [
+        "Cic. Inv. 2.132: <span lang=\"la\">in aliēnīs negōtiīs dētinērī</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Properly to hold back or detain; then to keep someone occupied."
+    },
+    {
+      "latin": "negōtiōsus, negōtiōsa, negōtiōsum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "busy, full of business",
+      "evidence": [
+        "Sall. Cat. 8.5 (Lewis &amp; Short)",
+        "Plaut. Merc. 1.2.79",
+        "Traupman 285"
+      ],
+      "comment": "Busy with affairs and work; also of a thing that gives much work (<span lang=\"la\">prōvincia negōtiōsa</span>, Cic. Mur. 18)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "itaque nēmō adhūc convenīre mē voluit, cui fuerim occupātus",
+      "english": "and so far no one has wanted to see me and found me busy",
+      "source": "Cic. Sen. 32"
+    },
+    {
+      "latin": "Nihil mē interpellāstī, nōn enim occupātus eram.",
+      "english": "You didn’t interrupt me at all: I wasn’t busy.",
+      "source": "Cord. Coll. 3.31"
+    }
+  ],
+  "related": [
+    "occupy-seize",
+    "available-free"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/occupo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: occupo</a> · <a href=\"https://logeion.uchicago.edu/detineo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: detineo</a> · <a href=\"https://logeion.uchicago.edu/negotiosus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: negotiosus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 285, checked against the searchable text of the book (11 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-cicero-philosophica, loci-corderius), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

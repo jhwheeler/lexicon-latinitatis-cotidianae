@@ -1,0 +1,71 @@
+{
+  "id": "capture-city",
+  "english": "capture",
+  "sense": "a town, a place",
+  "pos": "verb",
+  "also": [
+    "take (a town)",
+    "storm",
+    "seize",
+    "conquer (a city)",
+    "capture of a city"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "capiō, capere, cēpī, captum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "take, capture",
+      "evidence": [
+        "Sall. Jug. 92.3: <span lang=\"la\">pauca repugnantibus Numidīs capit</span> (Lewis &amp; Short)",
+        "Liv. 1.1.1: <span lang=\"la\">Trojā captā</span>"
+      ],
+      "comment": "The general word: a town, a camp, a ship is <span lang=\"la\">capta</span> however it fell."
+    },
+    {
+      "latin": "expugnō, expugnāre, expugnāvī, expugnātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "take by storm",
+      "evidence": [
+        "Caes. B.G. 2.12.2 (Lewis &amp; Short)"
+      ],
+      "comment": "To take by assault, as opposed to <span lang=\"la\">oppugnāre</span>, to attack (see attack): Caesar attacked Noviodunum on the march <span lang=\"la\">expugnāre nōn potuit</span>, but could not take it."
+    },
+    {
+      "latin": "potior, potīrī, potītus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "gain possession of, become master of",
+      "grammar": "verb, fourth conjugation, deponent, with the ablative",
+      "evidence": [
+        "Caes. B.G. 2.7 (Lewis &amp; Short)"
+      ],
+      "comment": "With the ablative (<span lang=\"la\">oppidō potīrī</span>); of anything one gets hold of, not only places."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "id ex itinere oppugnāre cōnātus, expugnāre nōn potuit",
+      "english": "he tried to attack it on the march, but could not take it",
+      "source": "Caes. B.G. 2.12.2"
+    }
+  ],
+  "related": [
+    "capture-catch",
+    "occupy-seize",
+    "attack",
+    "defeat",
+    "war",
+    "prisoner-captive"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/capio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: capio</a> · <a href=\"https://logeion.uchicago.edu/expugno\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: expugno</a> · <a href=\"https://logeion.uchicago.edu/potior\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: potior</a>"
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

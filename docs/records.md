@@ -59,8 +59,8 @@ Rich text follows the rules of `data-format.md`: `<strong lang="la">`, `<span la
 - The headword line is the English word in bold with its part of speech (`perhaps` *adverb*), then `sense` and `also`.
 - The first recommended term is the answer: its headword is bold and links to the word's page, and its grammar line follows. The builder reads the grammar from the dictionary form: `caccabī m.` gives "noun, second declension" and `tītillāre` gives "verb, first conjugation". A term's own `grammar` overrides it, as in "verb, first conjugation, transitive". The term's `gloss` is shown only when it differs from the headword.
 - The period and the evidence of the answer stand in the margin. So do the notes, each beside the line that cites it. On a phone they fold under that line.
-- Examples follow, each with its source. When a record has both quotations and composed sentences, a filter offers All, From authors and Composed.
-- The other terms come under "Other words", each with its gloss, grammar, status, period and evidence.
+- The other terms come next, under "Other words", each with its gloss, grammar, status, period and evidence. They stand before the examples because the examples illustrate every term of the record, not only the first (Jack, 11 November 2026).
+- Examples come last, each with its source. When a record has both quotations and composed sentences, a filter offers All, From authors and Composed.
 
 ## Latin word pages: `l/<word>.html`
 

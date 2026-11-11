@@ -238,7 +238,11 @@
       // A Latin form (piscinam) comes after the English headwords and before matches inside entries.
       if (item.form && item.rank > 1) item.rank = 1.5;
     });
-    matching.sort((a, b) => a.rank - b.rank || a.order - b.order);
+    // The word itself (ship) before the entries that only have it inside a longer word (relationship, worship).
+    const whole = new RegExp('(^|[^a-z0-9])' + query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '($|[^a-z0-9])');
+    matching.forEach(item => { item.whole = Boolean(item.form) || whole.test(item.text); });
+    matching.sort((a, b) => b.whole - a.whole || a.rank - b.rank || a.order - b.order);
+    const inside = matching.some(item => item.whole) ? matching.filter(item => !item.whole).length : 0;
     // Nothing matches: offer the entries one letter off (piscnia, pyjams).
     const close = !matching.length;
     if (close) {
@@ -250,13 +254,21 @@
       });
     }
     const fragment = document.createDocumentFragment();
-    matching.forEach(item => fragment.append(result(item, query, typed)));
+    matching.forEach((item, index) => {
+      if (inside && !close && index === matching.length - inside) {
+        const divide = document.createElement('h2'); divide.className = 'results-divide';
+        divide.textContent = `Inside longer words: ${inside}`;
+        fragment.append(divide);
+      }
+      fragment.append(result(item, query, typed));
+    });
     list.replaceChildren(fragment);
     show(true);
     const where = scope ? ' in ' + data.categories[scope] : '';
     count.textContent = close && matching.length
       ? `No exact matches${where} · ${matching.length} with a close spelling`
-      : `${matching.length} matching ${matching.length === 1 ? 'entry' : 'entries'}${where} · definitions first`;
+      : `${matching.length - inside} matching ${matching.length - inside === 1 ? 'entry' : 'entries'}${where}`
+        + (inside ? ` · ${inside} more inside longer words` : '') + ' · definitions first';
     emptyMessage.textContent = scope ? 'No matches' + where + '.' : 'No entries match that search.';
     searchAll.hidden = !scope || matching.length > 0;
     empty.style.display = matching.length ? 'none' : 'block';

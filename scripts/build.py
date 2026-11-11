@@ -37,7 +37,7 @@ MONTHS = ('January', 'February', 'March', 'April', 'May', 'June', 'July', 'Augus
 STATUS_ORDER = {'recommended': 0, 'alternative': 1, 'avoid': 2}
 STATUS_LABELS = {'alternative': 'also used', 'avoid': 'avoid'}
 PERIODS = {'classical': 'classical', 'post-classical': 'post-classical', 'late': 'late Latin',
-           'medieval': 'medieval', 'renaissance': 'Renaissance', 'modern': 'modern', 'ours': 'our formation'}
+           'medieval': 'medieval', 'renaissance': 'Renaissance', 'modern': 'modern', 'ours': '* our formation'}
 PERIOD_TAGS = {'classical': 'Ancient Latin', 'post-classical': 'Ancient Latin', 'late': 'Late Latin',
                'medieval': 'Medieval & Renaissance', 'renaissance': 'Medieval & Renaissance',
                'modern': 'Neo-Latin', 'ours': 'Working formation'}
@@ -711,6 +711,16 @@ def review_state(review):
             else f'Draft of {human_date(review["date"])}, not yet reviewed.')
 
 
+OURS_MARK = ('<span class="ours" title="Our own formation: no source has this word or phrase">*</span>'
+             '<span class="vh"> (our own formation) </span>')
+
+
+def ours_mark(term):
+    """The linguist's asterisk before a form no source attests: a word or phrase of our own making
+    (Jack, 11 November 2026: such words should be seen at a glance, without colour or an icon to learn)."""
+    return OURS_MARK if term.get('period') == 'ours' else ''
+
+
 def term_meta(term):
     """The line under a term: its grammar, its status unless recommended, its period and evidence."""
     status = (f'<span class="lab status-{term["status"]}">{STATUS_LABELS[term["status"]]}</span>'
@@ -802,7 +812,7 @@ def render_concept(record, site):
     evidence = ('<p>' + '<br>'.join(main['evidence']) + '</p>') if main.get('evidence') else ''
     gloss = main.get('gloss', '')
     block = [f'<aside class="side"><p>{labels(main)}</p>{evidence}</aside>', notes(main),
-             f'<p class="lemma" lang="la"><b>{head}</b>{refs(main)}{escape(rest)}</p>']
+             f'<p class="lemma" lang="la">{ours_mark(main)}<b>{head}</b>{refs(main)}{escape(rest)}</p>']
     if grammar(main):
         block.append(f'<p class="gram">{escape(grammar(main))}</p>')
     if gloss and gloss.strip().lower() != record['english'].strip().lower():
@@ -822,7 +832,7 @@ def render_concept(record, site):
             side = notes(term)
             meta = term_meta(term)
             gloss = f'<span class="gloss" lang="en"> — {escape(term["gloss"])}</span>' if term.get('gloss') else ''
-            item = [side, f'<p class="lemma" lang="la"><b>{head}</b>{refs(term)}{escape(rest)}{gloss}</p>',
+            item = [side, f'<p class="lemma" lang="la">{ours_mark(term)}<b>{head}</b>{refs(term)}{escape(rest)}{gloss}</p>',
                     f'<p class="meta-line">{meta}</p>']
             if 'register' in term:
                 item.append(f'<p class="meta-line register">({term["register"]})</p>')
@@ -1114,11 +1124,12 @@ def category_entries(key, site):
 
 def word_list(rows, up, show_category=None):
     items = []
-    for _, english, pos, latin, path, _ in rows:
+    for _, english, pos, latin, path, source in rows:
+        mark = ours_mark(ordered_terms(source)[0]) if 'terms' in source else ''
         extra = (f'<span class="w-cat" lang="la">{escape(show_category(path))}</span>' if show_category else '')
         items.append(f'<li><a href="{up}{path}"><span class="w-en">{escape(english)}'
                      + (f' <span class="w-pos">{escape(pos)}</span>' if pos else '')
-                     + f'</span><span class="w-la" lang="la">{escape(latin)}</span>{extra}</a></li>')
+                     + f'</span><span class="w-la" lang="la">{mark}{escape(latin)}</span>{extra}</a></li>')
     return '<ul class="wlist">' + ''.join(items) + '</ul>'
 
 

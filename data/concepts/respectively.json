@@ -1,0 +1,74 @@
+{
+  "id": "respectively",
+  "english": "respectively",
+  "pos": "adverb",
+  "also": [
+    "in that order",
+    "each in turn",
+    "the former … the latter"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "hic … ille",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "the latter … the former",
+      "grammar": "construction: the two demonstratives, each picking up one of two things just named",
+      "evidence": [
+        "Lewis &amp; Short s.v. hic: opposed to ille, “the latter … the former”"
+      ],
+      "comment": "Latin has no word for “respectively”. English lists two sets and adds the word to pair them off (“Marcus and Julia are five and seven respectively”); Latin pairs them in the sentence itself. With two things, <span lang=\"la\">hic</span> points to the nearer, the one named last, and <span lang=\"la\">ille</span> to the farther, the one named first.",
+      "notes": [
+        "no-word"
+      ]
+    },
+    {
+      "latin": "alter … alter",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the one … the other",
+      "comment": "When the order does not matter, or each half gets its own clause: <span lang=\"la\">alter quīnque annōs nātus est, altera septem</span>."
+    },
+    {
+      "latin": "suus quisque",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "each … his own",
+      "comment": "For “each to his own respective place, share or task”: <span lang=\"la\">suum cuique</span>; <span lang=\"la\">in suam quisque domum</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Mārcus quīnque annōs nātus est, Jūlia septem.",
+      "english": "Marcus and Julia are five and seven respectively.",
+      "source": "composed"
+    },
+    {
+      "latin": "In suam quisque domum rediērunt.",
+      "english": "They went back to their respective homes.",
+      "source": "composed"
+    }
+  ],
+  "notes": {
+    "no-word": {
+      "html": "An entry of a kind this lexicon keeps on purpose: where Latin has no equivalent, it says so and shows what Latin does instead (Jack, 11 November 2026)."
+    }
+  },
+  "related": [
+    "this",
+    "that",
+    "each",
+    "the-other-of-two",
+    "own"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/hic\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: hic</a> · <a href=\"https://logeion.uchicago.edu/alter\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: alter</a> · <a href=\"https://logeion.uchicago.edu/quisque\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quisque</a>",
+    "The example sentences marked “composed” are ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

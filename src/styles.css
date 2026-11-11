@@ -353,3 +353,6 @@ span.kind, p.kind:not(:has(a)) { display:block; padding:10px 0; }
   .catpage { display:block; }
   .wlist { columns:2; }
 }
+
+/* A form of our own making carries the asterisk of an unattested form. */
+.ours { color:var(--accent); font-weight:700; margin-right:.12em; cursor:help; }

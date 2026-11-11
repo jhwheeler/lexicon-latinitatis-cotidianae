@@ -1,0 +1,78 @@
+{
+  "id": "per",
+  "english": "per",
+  "sense": "for each: a head, a day",
+  "pos": "preposition",
+  "also": [
+    "a head",
+    "apiece",
+    "each",
+    "a day",
+    "a year",
+    "twice a day",
+    "per head"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "in + acc.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "per, for each (person or thing)",
+      "grammar": "preposition with the accusative, often with singulī",
+      "evidence": [
+        "Liv. 2.33.11: <span lang=\"la\">sextantibus conlātīs in capita</span>",
+        "Cic. Font. 9: <span lang=\"la\">quaternōs dēnāriōs in singulās vīnī amphorās</span> (Lewis &amp; Short)"
+      ],
+      "comment": "“So much a head” is <span lang=\"la\">in capita</span> or <span lang=\"la\">in singulōs</span>. The amount is often a distributive numeral (<span lang=\"la\">singulī, bīnī, ternī, quaternī</span>): <span lang=\"la\">trecēnōs … in capita</span>, three hundred a head."
+    },
+    {
+      "latin": "in + abl.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a, per (twice a day, three times a year)",
+      "grammar": "preposition with the ablative, after a numeral adverb",
+      "evidence": [
+        "Cic. Tusc. 5.100: <span lang=\"la\">bis in diē saturum fierī</span>",
+        "Cic. Rosc. Am. 132: <span lang=\"la\">vix ter in annō</span>"
+      ],
+      "comment": "<span lang=\"la\">semel, bis, ter in diē</span>. “Every day” is <span lang=\"la\">cotīdiē</span>, “every year” <span lang=\"la\">quotannīs</span> (see every year); for “per cent”, see percent."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "extulit eum plēbs sextantibus conlātīs in capita",
+      "english": "the people gave him his funeral, putting in a sixth of an as a head",
+      "source": "Liv. 2.33.11"
+    },
+    {
+      "latin": "pretium fore in capita equitī quīngēnōs quadrīgātōs nummōs, trecēnōs peditī, servō centēnōs",
+      "english": "the price would be, per head, five hundred silver pieces for a horseman, three hundred for a foot soldier, a hundred for a slave",
+      "source": "Liv. 22.58.4"
+    },
+    {
+      "latin": "vīta illa beāta, quae ferēbātur, plēna Ītalicārum Syrācūsiārumque mēnsārum, nūllō modō mihi placuit, bis in diē saturum fierī",
+      "english": "that “happy life”, as they called it, full of Italian and Syracusan feasting, did not please me at all: to be stuffed full twice a day",
+      "source": "Cic. Tusc. 5.100"
+    },
+    {
+      "latin": "quī in Sallentīnīs aut in Bruttiīs habent unde vix ter in annō audīre nūntium possunt",
+      "english": "who have estates among the Sallentini or in Bruttium, from where they can hear news barely three times a year",
+      "source": "Cic. Rosc. Am. 132"
+    }
+  ],
+  "related": [
+    "percent",
+    "every-year"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/in\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: in</a> · <a href=\"https://logeion.uchicago.edu/singuli\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: singuli</a>",
+    "Livy and Cicero (<em>Tusculans</em>, <em>Pro Roscio Amerino</em>) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026).",
+    "Citations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them and have not been checked against an edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

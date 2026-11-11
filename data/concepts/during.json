@@ -1,0 +1,109 @@
+{
+  "id": "during",
+  "english": "during",
+  "pos": "preposition",
+  "also": [
+    "in the course of",
+    "at dinner",
+    "in the night",
+    "in summer",
+    "throughout"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "per + acc.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "during, throughout",
+      "grammar": "preposition with the accusative",
+      "evidence": [
+        "Cato Agr. 37: <span lang=\"la\">per hiemem lūcubrātiōne haec facitō</span>",
+        "Sen. Ep. 104.24: <span lang=\"la\">multa per noctem habita terrōrī</span>"
+      ],
+      "comment": "For what goes on through the time."
+    },
+    {
+      "latin": "cāsus ablātīvus",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "in, during (the time when)",
+      "grammar": "construction: the time in the ablative, with no preposition",
+      "evidence": [
+        "Mart. 10.62.12: <span lang=\"la\">aestāte puerī sī valent, satis discunt</span>",
+        "Cic. Q. fr. 3.1.3: <span lang=\"la\">locum aestāte umbrōsiōrem</span>"
+      ],
+      "comment": "The plain answer to “when?”: <span lang=\"la\">hieme, aestāte, nocte, eō diē</span>; “by night” is <span lang=\"la\">noctū</span>."
+    },
+    {
+      "latin": "inter + acc.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "during (a meal, a game, an activity)",
+      "grammar": "preposition with the accusative, often of a gerund",
+      "evidence": [
+        "Cic. Q. fr. 3.1.19: <span lang=\"la\">haec inter cēnam Tīrōnī dictāvī</span>",
+        "Quint. 1.3.12: <span lang=\"la\">inter lūdendum</span>"
+      ],
+      "comment": "<span lang=\"la\">inter cēnandum</span>, during dinner."
+    },
+    {
+      "latin": "in + abl.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "during, on (a journey, a party)",
+      "grammar": "preposition with the ablative",
+      "evidence": [
+        "Cato Agr. 156.1: <span lang=\"la\">in convīviō</span>",
+        "Deut. 6.7: <span lang=\"la\">ambulāns in itinere</span>"
+      ],
+      "comment": "<span lang=\"la\">in itinere</span>, on the way; <span lang=\"la\">in convīviō</span>, at a party."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "per hiemem lūcubrātiōne haec facitō",
+      "english": "do these jobs by lamplight during the winter",
+      "source": "Cato Agr. 37"
+    },
+    {
+      "latin": "multa per noctem habita terrōrī diēs vertit ad rīsum",
+      "english": "much that frightened us during the night, the day turns into a laugh",
+      "source": "Sen. Ep. 104.24"
+    },
+    {
+      "latin": "aestāte puerī sī valent, satis discunt",
+      "english": "in summer, if children are well, they learn enough",
+      "source": "Mart. 10.62.12"
+    },
+    {
+      "latin": "haec inter cēnam Tīrōnī dictāvī, nē mīrēre aliā manū esse",
+      "english": "I dictated this to Tiro during dinner, so don’t be surprised that it is in another hand",
+      "source": "Cic. Q. fr. 3.1.19"
+    },
+    {
+      "latin": "mōrēs quoque sē inter lūdendum simplicius dētegunt",
+      "english": "character, too, shows itself more openly during play",
+      "source": "Quint. 1.3.12"
+    },
+    {
+      "latin": "et narrābis ea fīliīs tuīs, et meditāberis in eīs sedēns in domō tuā, et ambulāns in itinere, dormiēns atque cōnsurgēns",
+      "english": "and you shall tell them to your children, and think on them as you sit in your house and as you walk on the way, as you lie down and as you rise",
+      "source": "Deut. 6.7"
+    }
+  ],
+  "related": [
+    "for-a-time",
+    "until-a-time"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/per\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: per</a> · <a href=\"https://logeion.uchicago.edu/ablativus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ablativus</a> · <a href=\"https://logeion.uchicago.edu/inter\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: inter</a> · <a href=\"https://logeion.uchicago.edu/in\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: in</a>",
+    "Quotations from the Latinitas loci collections (loci-cato, loci-seneca-epistulae, loci-martialis, loci-cicero-epistulae, loci-quintilianus, loci-vulgata), checked against the editions named there.",
+    "Cicero’s letter to Quintus (3.1.19) is quoted as the loci collection gives it; the Perseus text reads <span lang=\"la\">hoc</span> for <span lang=\"la\">haec</span>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

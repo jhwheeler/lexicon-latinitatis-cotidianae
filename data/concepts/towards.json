@@ -1,0 +1,89 @@
+{
+  "id": "towards",
+  "english": "towards",
+  "sense": "in the direction of",
+  "pos": "preposition",
+  "also": [
+    "toward"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "ad (+ accusative)",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "towards, to",
+      "grammar": "preposition with the accusative",
+      "evidence": [
+        "Mart. 14.172.1: <span lang=\"la\">ad tē reptantī … lacertae</span>",
+        "Liv. 1.4.6: <span lang=\"la\">ad puerīlem vāgītum cursum flexisse</span>"
+      ],
+      "comment": "In the direction of a thing, whether one gets there or not (see to)."
+    },
+    {
+      "latin": "versus (after its noun)",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "towards (a place)",
+      "grammar": "adverb placed after its noun: after ad or in + accusative, or after the accusative alone of a town’s name",
+      "evidence": [
+        "Sulp. in Cic. Fam. 4.5.4: <span lang=\"la\">ab Aegīnā Megaram versus nāvigārem</span>",
+        "Cic. Lael. 96: <span lang=\"la\">in forum versus agere cum populō</span>"
+      ],
+      "comment": "It marks the direction only: <span lang=\"la\">Megaram versus</span>, towards Megara; <span lang=\"la\">in forum versus</span>, facing the forum; <span lang=\"la\">ad Ōceanum versus</span>, towards the Ocean (Caes.)."
+    },
+    {
+      "latin": "obviam",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "towards (someone coming), to meet",
+      "grammar": "adverb, with a dative and a verb of motion",
+      "evidence": [
+        "Cic. Fam. 14.5.1: <span lang=\"la\">quam longissimē poteris obviam nōbīs prōdeās</span>"
+      ],
+      "comment": "Going towards someone who is coming: <span lang=\"la\">obviam īre, prōdīre, venīre</span>, go out to meet."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ad tē reptantī, puer īnsidiōse, lacertae parce",
+      "english": "spare the lizard creeping towards you, sly boy",
+      "source": "Mart. 14.172.1–2"
+    },
+    {
+      "latin": "lupam sitientem ex montibus quī circā sunt ad puerīlem vāgītum cursum flexisse",
+      "english": "that a thirsty she-wolf from the hills round about turned her steps towards the children’s crying",
+      "source": "Liv. 1.4.6"
+    },
+    {
+      "latin": "ex Asiā rediēns cum ab Aegīnā Megaram versus nāvigārem",
+      "english": "on my way back from Asia, as I was sailing from Aegina towards Megara",
+      "source": "Sulp. in Cic. Fam. 4.5.4"
+    },
+    {
+      "latin": "quam longissimē poteris obviam nōbīs prōdeās",
+      "english": "come out to meet us as far along the road as you can",
+      "source": "Cic. Fam. 14.5.1"
+    },
+    {
+      "latin": "Currēns itaque Esau obviam frātrī suō, amplexātus est eum",
+      "english": "so Esau ran to meet his brother and embraced him",
+      "source": "Vulg. Gen. 33.4"
+    }
+  ],
+  "related": [
+    "to-place",
+    "behind",
+    "opposite"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/ad\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ad</a> · <a href=\"https://logeion.uchicago.edu/versus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: versus</a> · <a href=\"https://logeion.uchicago.edu/obviam\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: obviam</a>",
+    "Quotations from the Latinitas loci collections (loci-martialis, loci-livius, loci-cicero-epistulae, loci-vulgata), checked against the editions named there.",
+    "Plautus, Terence, Caesar, Cicero, Livy and Tacitus checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

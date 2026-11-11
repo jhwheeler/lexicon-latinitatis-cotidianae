@@ -1,0 +1,83 @@
+{
+  "id": "since-a-time",
+  "english": "since",
+  "sense": "from a time until now",
+  "pos": "preposition",
+  "also": [
+    "ever since",
+    "since childhood",
+    "since morning",
+    "since then",
+    "from (a time)"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "ā, ab + abl.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "since, from (a time, an age)",
+      "grammar": "preposition with the ablative",
+      "evidence": [
+        "Ter. Ad. 48: <span lang=\"la\">ēdūxī ā parvulō</span>",
+        "Cic. Sen. 19: <span lang=\"la\">cujus ā morte tertius hic et trīcēsimus annus est</span>"
+      ],
+      "comment": "Of a time or a time of life: <span lang=\"la\">ā puerō, ā parvulō</span>, since childhood; stronger, <span lang=\"la\">jam inde ā</span>. What has lasted until now takes the present tense with <span lang=\"la\">jam</span>: <span lang=\"la\">jam dūdum animus est in patinīs</span>, my mind has been on the dishes for ages."
+    },
+    {
+      "latin": "ex + abl.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "since, from (a point in time)",
+      "grammar": "preposition with the ablative",
+      "evidence": [
+        "Liv. 26.19.5: <span lang=\"la\">ex quō togam virīlem sūmpsit</span>"
+      ],
+      "comment": "<span lang=\"la\">ex eō tempore</span>, since then; <span lang=\"la\">ex quō</span>, since the time when."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Ēdūxī ā parvulō; habuī, amāvī prō meō",
+      "english": "I brought him up from when he was tiny; I kept him and loved him as my own",
+      "source": "Ter. Ad. 48"
+    },
+    {
+      "latin": "nam mihi magna cum eō jam inde ūsque ā pueritiā fuit semper familiāritās",
+      "english": "for he and I have always been close friends, ever since we were boys",
+      "source": "Ter. Heaut. 183–184"
+    },
+    {
+      "latin": "cujus ā morte tertius hic et trīcēsimus annus est",
+      "english": "this is the thirty-third year since his death",
+      "source": "Cic. Sen. 19"
+    },
+    {
+      "latin": "ex quō togam virīlem sūmpsit nūllō diē prius ūllam pūblicam prīvātamque rem ēgit quam in Capitōlium īret",
+      "english": "from the day he came of age, he never did any business, public or private, without first going up to the Capitol",
+      "source": "Liv. 26.19.5"
+    },
+    {
+      "latin": "Jam dūdum animus est in patinīs.",
+      "english": "My mind has been on the dishes for ages.",
+      "source": "Ter. Eun. 816"
+    }
+  ],
+  "related": [
+    "for-a-time",
+    "until-a-time",
+    "after-a-time",
+    "long-time"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/ab\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ab</a> · <a href=\"https://logeion.uchicago.edu/ex\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ex</a> · <a href=\"https://logeion.uchicago.edu/iam\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: jam</a>",
+    "Quotations from the Latinitas loci collections (loci-livius, loci-terentius), checked against the editions named there.",
+    "Terence (Parry’s text) and Cicero, <em>De senectute</em> checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026).",
+    "In Cic. Sen. 19 Lewis &amp; Short prints <span lang=\"la\">quintus</span>; the Perseus text, followed here, has <span lang=\"la\">tertius</span>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

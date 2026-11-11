@@ -1,0 +1,97 @@
+{
+  "id": "in-exchange-for",
+  "english": "in exchange for",
+  "pos": "preposition",
+  "also": [
+    "in return for",
+    "for (in return)",
+    "for (a price)",
+    "swap for",
+    "trade for"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "prō + abl.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "in exchange for, in return for",
+      "grammar": "preposition with the ablative",
+      "evidence": [
+        "Ter. Ph. 336: <span lang=\"la\">prō maleficiō … beneficium … reddere</span>",
+        "Tac. Ann. 4.18: <span lang=\"la\">prō grātiā odium redditur</span>"
+      ],
+      "comment": "What is given or paid back for something: <span lang=\"la\">prō meritō</span>, as one deserves."
+    },
+    {
+      "latin": "cāsus ablātīvus",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "for (a price)",
+      "grammar": "construction: the price in the ablative, with verbs of buying, selling and costing",
+      "evidence": [
+        "Ter. Ad. 191: <span lang=\"la\">minīs vīgintī tū illam ēmistī</span>",
+        "Mt. 10.29: <span lang=\"la\">duo passerēs asse vēneunt</span>"
+      ],
+      "comment": "“For how much?” is the genitive of value, <span lang=\"la\">quantī?</span>. With <span lang=\"la\">mūtāre</span> the thing exchanged stands in the ablative (see trade)."
+    },
+    {
+      "latin": "contrā",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "in return",
+      "grammar": "adverb",
+      "evidence": [
+        "Catull. 13.9: <span lang=\"la\">sed contrā accipiēs merōs amōrēs</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Alere nōlunt hominem edācem; et sapiunt, meā quidem sententiā, prō maleficiō sī beneficium summum nōlunt reddere.",
+      "english": "They don’t want to feed a greedy man; and they are wise, in my opinion, if they don’t want to return the greatest kindness for a wrong.",
+      "source": "Ter. Ph. 335–336"
+    },
+    {
+      "latin": "Nōn potest satis prō meritō ab illō tibi referrī grātia.",
+      "english": "He can never thank you enough for what you have done.",
+      "source": "Ter. Ph. 337"
+    },
+    {
+      "latin": "Minīs vīgintī tū illam ēmistī; quae rēs tibi vertat male. Argentī tantum dabitur.",
+      "english": "You bought her for twenty minae (and may it bring you bad luck): that much money will be paid.",
+      "source": "Ter. Ad. 191–192"
+    },
+    {
+      "latin": "Nōnne duo passerēs asse vēneunt?",
+      "english": "Are not two sparrows sold for a penny?",
+      "source": "Mt. 10.29"
+    },
+    {
+      "latin": "nam beneficia eō ūsque laeta sunt dum videntur exolvī posse: ubi multum antevēnēre prō grātiā odium redditur",
+      "english": "favours are welcome only as long as it seems they can be repaid; once they far outrun that, hatred is returned for gratitude",
+      "source": "Tac. Ann. 4.18"
+    },
+    {
+      "latin": "sed contrā accipiēs merōs amōrēs",
+      "english": "but in return you will get pure love",
+      "source": "Catull. 13.9"
+    }
+  ],
+  "related": [
+    "trade-exchange",
+    "price",
+    "buy",
+    "for-on-behalf-of"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/pro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pro</a> · <a href=\"https://logeion.uchicago.edu/contra\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: contra</a>",
+    "Quotations from the Latinitas loci collections (loci-vulgata, loci-tacitus, loci-catullus), checked against the editions named there.",
+    "Terence (Parry’s text, which prints <span lang=\"la\">vertat</span> where the Oxford text has <span lang=\"la\">vortat</span>) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

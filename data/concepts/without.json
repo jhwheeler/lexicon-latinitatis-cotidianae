@@ -1,0 +1,99 @@
+{
+  "id": "without",
+  "english": "without",
+  "pos": "preposition",
+  "also": [
+    "with no",
+    "without you",
+    "without doing",
+    "without any"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "sine + abl.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "without",
+      "grammar": "preposition with the ablative",
+      "evidence": [
+        "Cic. Fam. 16.10.2: <span lang=\"la\">sine tē omnia mea mūta esse</span>",
+        "Sen. Ep. 6.4: <span lang=\"la\">nūllīus bonī sine sociō jūcunda possessiō est</span>"
+      ],
+      "comment": "“Without any” is <span lang=\"la\">sine ūllō</span>, never <span lang=\"la\">sine nūllō</span>. <span lang=\"la\">Nōn sine</span> is a favourite understatement: <span lang=\"la\">nōn sine pugillāribus</span>, not without my notebooks."
+    },
+    {
+      "latin": "quīn + subj.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "without (doing), after a negative: never … without …",
+      "grammar": "conjunction with the subjunctive, after a negative clause",
+      "evidence": [
+        "Cic. Verr. 2.4.95: <span lang=\"la\">numquam tam male est Siculīs quīn aliquid facētē et commodē dīcant</span>"
+      ],
+      "comment": "“Without doing” has no single Latin form: after a negative, <span lang=\"la\">quīn</span>; elsewhere a participle with <span lang=\"la\">nōn</span>, or a second clause with <span lang=\"la\">nec</span>."
+    },
+    {
+      "latin": "absque + abl.",
+      "status": "avoid",
+      "period": "post-classical",
+      "gloss": "without (as a plain preposition, post-classical)",
+      "grammar": "preposition with the ablative",
+      "evidence": [
+        "Plaut. Men. 1022: <span lang=\"la\">nam absque tē esset, hodiē numquam ad sōlem occāsum vīverem</span>"
+      ],
+      "comment": "In Plautus and Terence only in the condition <span lang=\"la\">absque tē esset</span>, had it not been for you (Lewis &amp; Short). As a plain “without” it belongs to later Latin; use <span lang=\"la\">sine</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "eī cupientī audīre nostra dīxī sine tē omnia mea mūta esse",
+      "english": "when he wanted to hear my work, I told him that without you all my writing was dumb",
+      "source": "Cic. Fam. 16.10.2"
+    },
+    {
+      "latin": "difficilis facilis, jūcundus acerbus es īdem: nec tēcum possum vīvere, nec sine tē",
+      "english": "difficult and easy, sweet and sour, you are all at once: I can’t live with you, or without you",
+      "source": "Mart. 12.46.1–2"
+    },
+    {
+      "latin": "sit nox cum somnō, sit sine līte diēs",
+      "english": "may the night come with sleep, and the day without quarrels",
+      "source": "Mart. 2.90.10"
+    },
+    {
+      "latin": "nūllīus bonī sine sociō jūcunda possessiō est",
+      "english": "no good thing is a pleasure to have without someone to share it",
+      "source": "Sen. Ep. 6.4"
+    },
+    {
+      "latin": "Hispānī sine ūllā mōle in utrēs vestīmentīs conjectīs ipsī caetrīs superpositīs incubantēs flūmen trānāvēre",
+      "english": "the Spaniards, without any fuss, stuffed their clothes into leather bags, lay on their shields on top of them and swam the river",
+      "source": "Liv. 21.27.5"
+    },
+    {
+      "latin": "numquam tam male est Siculīs quīn aliquid facētē et commodē dīcant",
+      "english": "things are never so bad for the Sicilians that they don’t say something witty and apt",
+      "source": "Cic. Verr. 2.4.95"
+    },
+    {
+      "latin": "vēnor aliquandō, sed nōn sine pugillāribus, ut quamvīs nihil cēperim nōn nihil referam",
+      "english": "I hunt now and then, but not without my notebooks, so that even if I catch nothing I bring something home",
+      "source": "Plin. Ep. 9.36.6"
+    }
+  ],
+  "related": [
+    "with-company"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/sine\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sine</a> · <a href=\"https://logeion.uchicago.edu/quin\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quin</a> · <a href=\"https://logeion.uchicago.edu/absque\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: absque</a>",
+    "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-martialis, loci-seneca-epistulae, loci-livius, loci-plinius), checked against the editions named there.",
+    "Cicero (Fam. 16.10.2, Verr. 2.4.95) and Plautus checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026).",
+    "Citations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them and have not been checked against an edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

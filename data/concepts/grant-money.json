@@ -1,0 +1,66 @@
+{
+  "id": "grant-money",
+  "english": "grant",
+  "sense": "money given for a purpose",
+  "pos": "noun",
+  "also": [
+    "grants",
+    "research grant",
+    "subsidy",
+    "government grant",
+    "student grant",
+    "funding"
+  ],
+  "domain": "pecunia",
+  "also_under": [
+    "schola"
+  ],
+  "terms": [
+    {
+      "latin": "pecūnia attribūta",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "money assigned (to a person or a purpose), a grant",
+      "grammar": "noun phrase: pecūnia, first declension, with the participle of attribuō",
+      "evidence": [
+        "Liv. 40.51: <span lang=\"la\">ex pecūniā attribūtā</span>",
+        "Cic. Phil. 14.38: <span lang=\"la\">ad eam rem pecūniam dare, attribuere, solvere</span>"
+      ],
+      "comment": "Latin says it with the verb: <span lang=\"la\">pecūniam alicui attribuere</span>, to assign money to someone, of public money paid out for a purpose (Lewis &amp; Short s.v. <span lang=\"la\">attribuō</span>). A grant for one’s studies, <span lang=\"la\">pecūnia ad studia attribūta</span>."
+    },
+    {
+      "latin": "stīpendium, stīpendiī n.",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "a grant (paid in instalments), a stipend",
+      "evidence": [
+        "M-O s.v. grant (of money, as from foundation sponsoring research), after Desfontaines (1798)"
+      ],
+      "comment": "Classically a soldier’s pay, and a tribute paid in money by a subject people (Lewis &amp; Short); so it suits a grant paid out regularly, like a salary, rather than a single sum."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "opera ex pecūniā attribūtā dīvīsāque inter sē haec fēcērunt",
+      "english": "out of the money granted them and divided between them they built the following works",
+      "source": "Liv. 40.51"
+    }
+  ],
+  "related": [
+    "fund",
+    "finance",
+    "donate",
+    "wage",
+    "grant"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/attribuo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: attribuo</a> · <a href=\"https://logeion.uchicago.edu/stipendium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: stipendium</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. grant (of money).",
+    "Livy and Cicero checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (11 November 2026); in Livy that edition prints <span lang=\"la\">[con]fēcērunt</span>, deleting the prefix."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

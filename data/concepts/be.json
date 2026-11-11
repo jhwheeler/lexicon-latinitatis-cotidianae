@@ -1,0 +1,107 @@
+{
+  "id": "be",
+  "english": "be",
+  "pos": "verb",
+  "also": [
+    "am",
+    "is",
+    "are",
+    "was",
+    "were",
+    "been",
+    "being",
+    "I am …ing (the continuous tenses)",
+    "be + past participle (the passive)"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "sum, esse, fuī, futūrus",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "be",
+      "grammar": "verb, irregular",
+      "evidence": [
+        "Ter. And. 194: <span lang=\"la\">Dāvus sum, nōn Oedipūs.</span>",
+        "Aug. Conf. 9.11.27: <span lang=\"la\">ubi eram?</span>"
+      ],
+      "comment": "Its forms: <span lang=\"la\">sum, es, est, sumus, estis, sunt</span> (am, is, are); <span lang=\"la\">eram</span> (was, used to be); <span lang=\"la\">fuī</span> (was, have been); <span lang=\"la\">erō</span> (will be); infinitives <span lang=\"la\">esse, fuisse</span> and <span lang=\"la\">fore</span> (= <span lang=\"la\">futūrum esse</span>). Short sayings often leave <span lang=\"la\">est</span> out: <span lang=\"la\">omnia praeclāra, rāra</span> (Cic. Amic. 79). “There is” has its own record (there is)."
+    },
+    {
+      "latin": "legō, legēbam",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "I am reading, I was reading",
+      "grammar": "the present and imperfect tenses: no auxiliary",
+      "evidence": [
+        "Plaut. Cas. 577–578: <span lang=\"la\">Tē ēcastor praestōlābar.</span>"
+      ],
+      "comment": "Latin has no continuous tenses: “I am reading” is <span lang=\"la\">legō</span>, “I was reading” <span lang=\"la\">legēbam</span>. <span lang=\"la\">Quid agis?</span> is both “what are you doing?” and “how are you?”."
+    },
+    {
+      "latin": "vincor, victus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "I am beaten, I have been (was) beaten",
+      "grammar": "the passive: one word in the present system; the perfect participle with sum in the perfect system",
+      "evidence": [
+        "Liv. 22.7.8: <span lang=\"la\">pugnā … magnā victī sumus</span>"
+      ],
+      "comment": "English “be” with a past participle is the Latin passive. In the present, imperfect and future it needs no auxiliary (<span lang=\"la\">vincimur</span>, we are being beaten); in the perfect, pluperfect and future perfect it takes <span lang=\"la\">sum</span> (<span lang=\"la\">victī sumus</span>, <span lang=\"la\">victī erāmus</span>)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ubi eram?",
+      "english": "Where was I?",
+      "source": "Aug. Conf. 9.11.27"
+    },
+    {
+      "latin": "quot estis?",
+      "english": "How many of you are there?",
+      "source": "Petr. 92.1"
+    },
+    {
+      "latin": "quī fuit rāna, nunc est rēx",
+      "english": "the one who was a frog is now a king",
+      "source": "Petr. 77.1"
+    },
+    {
+      "latin": "nēmō nostrum est īdem māne quī fuit prīdiē",
+      "english": "none of us is the same in the morning as he was the day before",
+      "source": "Sen. Ep. 58.22"
+    },
+    {
+      "latin": "rārum genus! et quidem omnia praeclāra, rāra",
+      "english": "a rare kind! and indeed all fine things are rare",
+      "source": "Cic. Amic. 79"
+    },
+    {
+      "latin": "quid agis, mea fēstīvitās? — Tē ēcastor praestōlābar.",
+      "english": "How are you, my darling? — I was waiting for you, I swear.",
+      "source": "Plaut. Cas. 577–578"
+    },
+    {
+      "latin": "pugnā … magnā victī sumus",
+      "english": "we have been beaten in a great battle",
+      "source": "Liv. 22.7.8"
+    }
+  ],
+  "related": [
+    "there-is",
+    "have-auxiliary",
+    "used-to",
+    "will",
+    "yes-no-question"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/sum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sum</a> · <a href=\"https://logeion.uchicago.edu/lego\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lego</a> · <a href=\"https://logeion.uchicago.edu/vinco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vinco</a>",
+    "Quotations from the Latinitas loci collections (loci-augustinus, loci-petronius, loci-seneca-epistulae, loci-plautus, loci-livius, loci-terentius), checked against the editions named there.",
+    "Cic. Amic. 79 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

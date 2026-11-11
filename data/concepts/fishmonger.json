@@ -9,11 +9,28 @@
   "domain": "urbs",
   "terms": [
     {
-      "latin": "piscātrīx, piscātrīcis f.",
+      "latin": "cētārius, cētāriī m.",
       "status": "recommended",
-      "period": "ours",
-      "gloss": "fishwife, fish seller",
-      "comment": "In Lewis &amp; Short only a woman who fishes, and a fish (Plin. 9.143); the seller is our extension."
+      "period": "classical",
+      "evidence": [
+        "Ter. Eun. 257 (2.2.26 in Lewis &amp; Short)",
+        "Cic. Off. 1.150 (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "piscārius, piscāriī m.",
+      "status": "alternative",
+      "period": "classical",
+      "evidence": [
+        "Varr. ap. Non. (Lewis &amp; Short)"
+      ],
+      "comment": "The adjective of <span lang=\"la\">forum piscārium</span>, the fish market (Plaut. Curc. 474), used as a noun."
+    },
+    {
+      "latin": "piscātrīx, piscātrīcis f.",
+      "status": "avoid",
+      "period": "classical",
+      "comment": "A woman who fishes, not one who sells fish (Lewis &amp; Short); the record recommended it until 11 November 2026."
     }
   ],
   "related": [
@@ -22,11 +39,12 @@
     "fish-market"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/piscatrix\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: piscatrix</a>"
+    "<a href=\"https://logeion.uchicago.edu/cetarius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cetarius</a> · <a href=\"https://logeion.uchicago.edu/piscarius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: piscarius</a> · <a href=\"https://logeion.uchicago.edu/piscatrix\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: piscatrix</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them and have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-11",
     "by": "Claude"
   }
 }

@@ -6,10 +6,18 @@
   "domain": "ludi",
   "terms": [
     {
-      "latin": "pars summa",
+      "latin": "summus, summa, summum",
       "status": "recommended",
+      "period": "classical",
+      "gloss": "the top of",
+      "grammar": "adjective, agreeing with the noun for the whole",
+      "comment": "Latin says the part with an adjective agreeing with the whole: <span lang=\"la\">in summā arbore</span>, at the top of the tree (see the top of)."
+    },
+    {
+      "latin": "pars summa",
+      "status": "alternative",
       "period": "ours",
-      "comment": "Our contextual description of the top of the slide."
+      "comment": "Our description, for when the part is spoken of by itself; Latin more often makes the part an adjective."
     }
   ],
   "related": [
@@ -22,7 +30,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-11",
     "by": "Claude"
   },
   "also": [

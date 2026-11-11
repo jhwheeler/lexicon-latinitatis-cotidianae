@@ -4,7 +4,7 @@
   // category. The address keeps the query (?q=pyjama), so a search can be linked to. Without
   // scripts the search bar is hidden and the pages' own lists remain. A Latin word is found from
   // any of its forms (piscinam finds piscīna), and when nothing matches, the entries one letter
-  // off are offered (pyjams finds pyjamas).
+  // off are offered (pyjams finds pyjamas). i and j are read alike, and u and v (uideo finds videō).
   const search = document.getElementById('search');
   if (!search) return;
   const form = search.form, clear = document.getElementById('clear');
@@ -18,7 +18,7 @@
   let scope = page ? page.dataset.category : (params.get('cat') || '');
   const resting = count.textContent;
   let data = null, loading = null, rendered = null;
-  const fold = s => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/æ/g, 'ae').replace(/œ/g, 'oe').replace(/j/g, 'i');
+  const fold = s => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/æ/g, 'ae').replace(/œ/g, 'oe').replace(/j/g, 'i').replace(/v/g, 'u');
   const KINDS = { d: 'Definition', e: 'Example or phrase', n: 'Source note' };
   const stems = new Map();
 

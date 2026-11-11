@@ -45,74 +45,59 @@ button { font:inherit; color:inherit; }
 /* Latin quoted inside English prose is italic, as a foreign word is in print. */
 :is(.side, .notes-list, .comment, .ruling, .rules, .lead, .meta-line, .older-note, footer details) span[lang="la"] { font-style:italic; }
 
-/* Header: the index and the other pages ------------------------------------------- */
+/* Header: the name, the search, the settings ----------------------------------------------
+   One line on a wide screen: the name on the left, the search in the middle, the settings ("Aa":
+   the display options and the theme) on the right. On a phone the search takes its own line under
+   the name, always in view (Jack, 11 November 2026). The pages that used to stand in the header are
+   in the footer. The front page and the category pages search in place, so their header has no
+   field of its own. The search's rule is the header's rule: it runs under the field to the edges. */
 .vh { position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap; }
-.hero { display:grid; grid-template-columns:minmax(0,1fr) auto; grid-template-areas:"brand actions" "nav display"; align-items:center; column-gap:12px; padding:6px 0 0; }
-.hero .display-menu { grid-area:display; justify-self:end; }
-.brand { grid-area:brand; min-width:0; }
+.site-top { position:relative; display:grid; grid-template-columns:minmax(0,1fr) auto; grid-template-areas:"brand settings" "search search"; align-items:center; column-gap:24px; padding:4px 0 0; border-bottom:1px solid var(--rule); }
+.site-top > .site-name, .site-top > .brand { grid-area:brand; min-width:0; }
+.site-top .site-name { display:block; min-height:44px; padding:10px 0 0; overflow:hidden; color:var(--ink); text-decoration:none; text-overflow:ellipsis; white-space:nowrap; line-height:24px; }
+.site-top .site-name:hover { text-decoration:underline; text-decoration-color:var(--accent); }
 .hero h1, .site-name { margin:0; font:400 1.15rem/1.2 var(--serif); font-variant-caps:small-caps; letter-spacing:.03em; }
 .hero h1 a { display:inline-flex; align-items:center; min-height:44px; color:inherit; text-decoration:none; }
 .hero h1 a:hover { text-decoration:underline; text-decoration-color:var(--accent); text-decoration-thickness:1px; }
 @media (min-width:600px) { .hero h1, .site-name { font-size:1.25rem; letter-spacing:.045em; } }
 .brand-note { display:none; margin:0; color:var(--muted); font:400 .95rem var(--sans); }
-.header-actions { grid-area:actions; display:flex; align-items:center; }
-.hero .site-nav { grid-area:nav; }
-.site-nav { display:flex; flex-wrap:wrap; align-items:center; column-gap:20px; font:400 1rem var(--sans); }
-.site-nav a { display:inline-flex; align-items:center; min-height:44px; color:var(--soft); text-decoration:none; }
-.site-nav a:hover { color:var(--ink); text-decoration:underline; text-decoration-color:var(--accent); }
-.site-nav a[aria-current="page"] { color:var(--ink); text-decoration:underline; text-decoration-color:var(--accent); text-decoration-thickness:2px; text-underline-offset:.35em; }
-.theme-toggle { display:inline-flex; align-items:center; justify-content:center; gap:8px; min-width:44px; min-height:44px; padding:0 6px; margin-right:-6px; border:0; background:none; color:var(--soft); font:400 1rem var(--sans); cursor:pointer; }
-.theme-toggle:hover { color:var(--ink); }
-.theme-toggle svg { width:20px; height:20px; flex-shrink:0; }
-.theme-toggle .theme-moon { display:none; }
-:root:not([data-theme="dark"]) .theme-sun { display:none; }
-:root:not([data-theme="dark"]) .theme-moon { display:block; }
-#theme-label { display:none; }
-@media (min-width:600px) { .brand-note { display:block; } #theme-label { display:inline; } }
-/* Display options: macrons shown or hidden, consonantal i as j or i. */
-.header-actions, .site-tools { column-gap:14px; }
-.display-menu { position:relative; }
-.display-menu > summary { display:inline-flex; align-items:center; justify-content:center; gap:8px; min-width:44px; min-height:44px; padding:0 6px; color:var(--soft); font:400 1rem var(--sans); cursor:pointer; list-style:none; }
-.display-menu > summary::-webkit-details-marker { display:none; }
-.display-menu > summary:hover, .display-menu[open] > summary { color:var(--ink); }
-.display-aa { font:400 1.08rem/1 var(--serif); }
-.display-label { display:none; }
-@media (min-width:600px) { .display-aa { display:none; } .display-label { display:inline; } }
-.display-panel { position:absolute; right:0; top:100%; z-index:40; width:max-content; max-width:calc(100vw - 32px); padding:6px 14px; background:var(--paper); border:1px solid var(--hair); box-shadow:0 8px 24px rgb(0 0 0 / .12); }
+@media (min-width:600px) { .brand-note { display:block; } }
+/* The front page's header has no rule: the search's rule follows it at once. */
+.hero { grid-template-areas:"brand settings"; padding:6px 0 0; border-bottom:0; }
+.hero .settings { align-self:start; }
+@media (min-width:960px) { .hero { padding:12px 0 6px; } .hero h1 { font-size:1.6rem; white-space:nowrap; } }
+
+/* The header's search: the field stands on the header's rule, which turns red under it. */
+.head-search { grid-area:search; position:relative; display:flex; align-items:center; gap:8px; min-width:0; margin:0 0 -1px; border-bottom:1.5px solid var(--accent); }
+.head-search:focus-within { box-shadow:0 1px 0 var(--accent); }
+.head-search-icon { display:flex; align-items:center; flex:none; color:var(--muted); cursor:text; }
+.head-search-icon svg { width:19px; height:19px; }
+.head-search-field { flex:1; min-width:0; min-height:44px; margin:0; padding:4px 2px 3px; border:0; border-radius:0; background:transparent; color:var(--ink); font:italic 400 1.0625rem/1.3 var(--serif); -webkit-appearance:none; appearance:none; }
+.head-search-field::placeholder { color:var(--muted); opacity:1; }
+.head-search-field::-webkit-search-cancel-button, .head-search-field::-webkit-search-decoration { -webkit-appearance:none; display:none; }
+.head-search-field:focus { outline:none; }
+@media (min-width:720px) {
+  .site-top { grid-template-columns:auto minmax(0,1fr) auto; grid-template-areas:"brand search settings"; align-items:end; column-gap:32px; padding-top:8px; }
+  .site-top > .site-name, .site-top > .settings { margin-bottom:2px; }
+  .head-search { justify-self:center; width:100%; max-width:26rem; }
+  .hero { grid-template-columns:minmax(0,1fr) auto; grid-template-areas:"brand settings"; align-items:center; }
+}
+
+/* The settings: an "Aa" that opens the display options (macrons shown or hidden, consonantal i as j
+   or i) and the theme. They need scripts; without them the control is hidden. */
+.settings { grid-area:settings; position:relative; justify-self:end; }
+.settings > summary { display:flex; align-items:center; justify-content:center; min-width:44px; min-height:44px; margin-right:-8px; color:var(--soft); cursor:pointer; list-style:none; }
+.settings > summary::-webkit-details-marker { display:none; }
+.settings > summary:hover, .settings[open] > summary { color:var(--ink); }
+.settings[open] > summary .settings-aa { text-decoration:underline; text-decoration-color:var(--accent); text-decoration-thickness:2px; text-underline-offset:.3em; }
+.settings-aa { font:400 1.2rem/1 var(--serif); letter-spacing:.02em; }
+.settings-panel { position:absolute; right:0; top:calc(100% + 4px); z-index:40; width:max-content; max-width:calc(100vw - 32px); padding:4px 14px; background:var(--paper); border:1px solid var(--hair); box-shadow:0 8px 24px rgb(0 0 0 / .12); }
 .display-row { display:flex; align-items:center; column-gap:2px; margin:0; font:400 1rem var(--sans); }
 .display-row + .display-row { border-top:1px solid var(--hair); }
-.display-row > span { flex:1; min-width:7.5rem; color:var(--muted); }
+.display-row > span { flex:1; min-width:8rem; color:var(--muted); }
 .display-row button { min-height:44px; padding:0 9px; border:0; background:none; color:var(--muted); font:inherit; cursor:pointer; }
 .display-row button:hover { color:var(--ink); }
 .display-row button[aria-pressed="true"] { color:var(--ink); text-decoration:underline; text-decoration-color:var(--accent); text-decoration-thickness:2px; text-underline-offset:.4em; }
-@media (min-width:960px) {
-  .hero { grid-template-columns:minmax(0,1fr) auto auto auto; grid-template-areas:"brand nav display actions"; column-gap:28px; padding:12px 0 6px; }
-  .hero h1 { font-size:1.6rem; white-space:nowrap; }
-}
-/* The phone menu: below 720px the header's links, the display options and the theme fold into
-   one menu (Jack, 9 November 2026); wider screens keep them in the header. */
-.hero, .site-top { position:relative; }
-.menu { display:none; }
-.menu > summary { display:flex; align-items:center; justify-content:center; width:44px; height:44px; margin-right:-10px; color:var(--soft); cursor:pointer; list-style:none; }
-.menu > summary::-webkit-details-marker { display:none; }
-.menu > summary:hover, .menu[open] > summary { color:var(--ink); }
-.menu svg { width:24px; height:24px; }
-.menu .menu-close, .menu[open] .menu-icon { display:none; }
-.menu[open] .menu-close { display:block; }
-.menu-panel { position:absolute; left:0; right:0; top:100%; z-index:50; padding:0 0 8px; background:var(--paper); border-bottom:1px solid var(--rule); box-shadow:0 14px 18px -12px rgb(0 0 0 / .18); }
-.menu-nav a { display:flex; align-items:center; min-height:48px; border-bottom:1px solid var(--hair); color:var(--ink); text-decoration:none; font:400 1.08rem var(--sans); }
-.menu-nav a[aria-current="page"] { color:var(--rubric); box-shadow:inset 3px 0 0 var(--accent); padding-left:10px; }
-.menu-options { padding-top:4px; }
-.menu-options .display-row > span { min-width:8.5rem; }
-html:not(.js) .menu-options { display:none; }
-@media (max-width:719.98px) {
-  .menu { display:block; }
-  .hero { grid-template-areas:"brand menu"; }
-  .hero .menu { grid-area:menu; justify-self:end; }
-  .hero .site-nav, .hero .display-menu, .hero .header-actions, .site-top .site-tools { display:none; }
-  .site-top { flex-wrap:nowrap; }
-  .site-top .site-name { min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
-}
 
 /* Search bar ----------------------------------------------------------------------------
    One rule under the search: it runs under Clear to the edge of the column, and when the bar
@@ -129,8 +114,9 @@ html:not(.js) .menu-options { display:none; }
 .search-hint { display:none; white-space:nowrap; }
 @media (min-width:960px) { .wrap { width:min(calc(100% - 64px), 1240px); } .search-hint { display:inline; } .toolbar { padding-top:10px; } }
 /* Without scripts there is no search: the bar, its count and the results are hidden, and the
-   pages' own lists remain; so do the theme and display controls, which need scripts too. */
-html:not(.js) :is(.toolbar, .meta, #search-results, .empty, .theme-toggle, .display-menu) { display:none !important; }
+   pages' own lists remain; so does the settings control, which needs scripts too. The header's
+   search stays: it is a plain form, and opens the front page with the query. */
+html:not(.js) :is(.toolbar, .meta, #search-results, .empty, .settings) { display:none !important; }
 .noscript-note { margin:0 0 22px; max-width:40rem; color:var(--muted); font:400 1rem/1.45 var(--sans); }
 .js .noscript-note { display:none; }
 
@@ -273,14 +259,12 @@ footer details p { margin:.6em 0; max-width:46rem; }
 .source-card li::marker { color:var(--accent); }
 .source-card p { margin:.3em 0; color:var(--muted); }
 .footer-note { margin-top:18px; color:var(--muted); font:400 .95rem/1.55 var(--sans); }
-.site-foot p { margin:0; font:400 1rem/1.6 var(--sans); }
-.site-foot a { display:inline-block; padding:8px 0; color:var(--soft); }
+.site-foot p, .foot-links { margin:0; font:400 1rem/1.6 var(--sans); }
+.foot-links { margin-top:14px; padding-top:6px; border-top:1px solid var(--hair); }
+:is(.site-foot, .foot-links) a { display:inline-block; padding:8px 0; color:var(--soft); }
 
-/* The other pages: header, How we decide, Rulings ------------------------------------------ */
+/* The other pages: How we decide, Rulings ------------------------------------------ */
 .subpage .wrap { width:min(calc(100% - 32px), 1040px); }
-.site-top { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; column-gap:24px; padding:4px 0 0; border-bottom:1px solid var(--rule); }
-.site-top .site-name { display:inline-flex; align-items:center; min-height:44px; color:var(--ink); text-decoration:none; }
-.site-tools { display:flex; flex-wrap:wrap; align-items:center; column-gap:20px; }
 .page-main { padding:4px 0 56px; }
 .page-title { margin:24px 0 10px; font:700 clamp(2rem,7vw,2.6rem)/1.1 var(--serif); }
 .lead { max-width:40rem; font-size:1.1em; }
@@ -365,7 +349,7 @@ span.kind, p.kind:not(:has(a)) { display:block; padding:10px 0; }
 
 @media print {
   :root, :root[data-theme] { color-scheme:light; --paper:#fff; --ink:#000; --soft:#222; --muted:#444; --hair:#bbb; --rule:#000; --rubric:#a0121a; --accent:#a0121a; }
-  .toolbar, .meta, .cat-side, .cat-menu, .az-nav, .header-actions, .site-tools, .display-menu, .theme-toggle, .filter { display:none !important; }
+  .toolbar, .meta, .cat-side, .cat-menu, .az-nav, .head-search, .settings, .filter { display:none !important; }
   .catpage { display:block; }
   .wlist { columns:2; }
 }

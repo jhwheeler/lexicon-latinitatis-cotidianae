@@ -17,7 +17,9 @@
     "no more",
     "nothing more",
     "some more",
-    "would you like more"
+    "would you like more",
+    "again (do it again)",
+    "more! (again)"
   ],
   "also_under": [
     "verba"
@@ -56,6 +58,18 @@
         "Hor. S. 2.6.4: <span lang=\"la\">nīl amplius ōrō</span>"
       ],
       "comment": "“More” in the sense of “further, in addition”: <span lang=\"la\">Vīs amplius?</span>, would you like some more?; <span lang=\"la\">nihil amplius</span>, nothing more. With a number, <span lang=\"la\">amplius</span> and <span lang=\"la\">plūs</span> mean “more than” and may drop <span lang=\"la\">quam</span> without changing the case: <span lang=\"la\">amplius ducentōs</span>, more than two hundred."
+    },
+    {
+      "latin": "etiam",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "again, once more: more of doing something",
+      "grammar": "adverb, with an imperative",
+      "register": "vōx sermōnis cotīdiānī: Plaut., Ter.",
+      "evidence": [
+        "Plaut. Most. 2.2.43: <span lang=\"la\">Circumspice etiam</span> (Lewis &amp; Short)"
+      ],
+      "comment": "“More!” when what is wanted is the action again, not a larger amount: <span lang=\"la\">Lege etiam!</span>, read some more; <span lang=\"la\">etiam atque etiam</span>, again and again. With a plain statement <span lang=\"la\">etiam</span> is “also, even”, so <span lang=\"la\">volō etiam</span> is “I want it too”; “I want more” is <span lang=\"la\">plūs volō</span>, and “even more”, <span lang=\"la\">etiam plūs</span>."
     }
   ],
   "phrases": [
@@ -133,14 +147,16 @@
     "more-degree",
     "most-degree",
     "most-majority",
-    "too-excessively"
+    "too-excessively",
+    "again"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/amplus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: amplus</a> · <a href=\"https://logeion.uchicago.edu/plus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: plus</a>",
+    "<a href=\"https://logeion.uchicago.edu/amplus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: amplus</a> · <a href=\"https://logeion.uchicago.edu/plus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: plus</a> · <a href=\"https://logeion.uchicago.edu/etiam\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: etiam</a>",
     "Quotations from the Latinitas loci collections (loci-horatius, loci-cicero-epistulae, loci-phaedrus, loci-publilius, loci-cicero-philosophica), checked against the editions named there.",
     "Publilius is cited as the loci collection numbers him, by position under each initial letter in the Latin Library text; from N onwards that numbering differs from Meyer’s.",
     "The example sentences marked “composed” are ours.",
-    "Quotations from the Latinitas loci collections and the note on quantity words, checked against the editions named there."
+    "Quotations from the Latinitas loci collections and the note on quantity words, checked against the editions named there.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",

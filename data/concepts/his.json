@@ -1,0 +1,83 @@
+{
+  "id": "his",
+  "english": "his",
+  "pos": "pronoun",
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "ejus",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "his (someone else’s)",
+      "grammar": "pronoun: genitive of is; it does not change with the thing owned",
+      "evidence": [
+        "Quint. 1.9.5: <span lang=\"la\">paedagōgum ejus percussit</span>",
+        "Cic. Sen. 31: <span lang=\"la\">ex ejus linguā melle dulcior fluēbat ōrātiō</span>"
+      ],
+      "comment": "Use <span lang=\"la\">ejus</span> when “his” is not the subject of the clause: Crates struck <span lang=\"la\">paedagōgum ejus</span>, the boy’s tutor. When “his” is the subject’s own, Latin uses <span lang=\"la\">suus</span>: “Esau ran to meet <span lang=\"la\">frātrī suō</span> (his own brother) … and clasped <span lang=\"la\">collum ejus</span> (his, the brother’s, neck)”."
+    },
+    {
+      "latin": "suus, sua, suum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "his (own), referring to the subject",
+      "grammar": "pronoun (possessive, reflexive), first and second declension",
+      "evidence": [
+        "Liv. 2.10.11: <span lang=\"la\">incolumis ad suōs trānāvit</span>",
+        "Cic. Off. 3.59: <span lang=\"la\">invītat Canius postrīdiē familiārēs suōs</span>"
+      ],
+      "comment": "Refers back to the subject of its clause, or in reported speech and purpose clauses to the subject of the main verb. It agrees with the thing owned: <span lang=\"la\">ad suōs</span>, to his own men."
+    },
+    {
+      "latin": "illīus",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "his (that man’s)",
+      "grammar": "pronoun: genitive of ille",
+      "comment": "For a stronger or contrasting “his”."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Currēns itaque Esau obviam frātrī suō, amplexātus est eum: stringēnsque collum ejus, et ōsculāns flēvit.",
+      "english": "So Esau ran to meet his brother and embraced him, and clasping his neck and kissing him, he wept.",
+      "source": "Vulg. Gen. 33.4"
+    },
+    {
+      "latin": "ut Cratēs, cum indoctum puerum vīdisset, paedagōgum ejus percussit",
+      "english": "as Crates, when he saw an ignorant boy, struck the boy’s tutor",
+      "source": "Quint. 1.9.5"
+    },
+    {
+      "latin": "ex ejus linguā melle dulcior fluēbat ōrātiō",
+      "english": "from his tongue flowed speech sweeter than honey",
+      "source": "Cic. Sen. 31"
+    },
+    {
+      "latin": "ita sīc armātus in Tiberim dēsiluit multīsque superincidentibus tēlīs incolumis ad suōs trānāvit",
+      "english": "So, armed as he was, he leapt into the Tiber, and under a hail of missiles swam across unhurt to his own men.",
+      "source": "Liv. 2.10.11"
+    },
+    {
+      "latin": "invītat Canius postrīdiē familiārēs suōs, venit ipse mātūrē, scalmum nūllum videt.",
+      "english": "The next day Canius invites his friends; he comes early himself and sees not a single boat.",
+      "source": "Cic. Off. 3.59"
+    }
+  ],
+  "related": [
+    "he",
+    "her-possessive",
+    "its",
+    "their",
+    "own"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/is\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: is</a> · <a href=\"https://logeion.uchicago.edu/suus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: suus</a> · <a href=\"https://logeion.uchicago.edu/ille\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ille</a>",
+    "Quotations from the Latinitas loci collections (loci-cicero-philosophica, loci-livius, loci-quintilianus, loci-vulgata), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

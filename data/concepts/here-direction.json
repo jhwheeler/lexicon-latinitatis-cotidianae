@@ -12,23 +12,55 @@
       "latin": "hūc",
       "status": "recommended",
       "period": "classical",
-      "gloss": "to here"
+      "gloss": "to here",
+      "grammar": "adverb",
+      "evidence": [
+        "Plaut. Men. 432: <span lang=\"la\">eho Messēniō, accēde hūc.</span>",
+        "Ter. Ad. 970: <span lang=\"la\">ehō, accēde hūc ad mē</span>"
+      ],
+      "comment": "With verbs of motion: “come here” is <span lang=\"la\">accēde hūc</span>, <span lang=\"la\">venī hūc</span>, not <span lang=\"la\">hīc</span>."
+    },
+    {
+      "latin": "hōrsum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "this way, hither",
+      "grammar": "adverb",
+      "register": "vōx cōmica: Plaut., Ter.",
+      "evidence": [
+        "Ter. Hec. 450: <span lang=\"la\">hōrsum pergunt</span>"
+      ],
+      "comment": "From <span lang=\"la\">hōc vorsum</span> (Lewis &amp; Short)."
     }
   ],
   "phrases": [
     {
+      "latin": "eho Messēniō, accēde hūc. — Quid negōtī est?",
+      "english": "Hey, Messenio, come here. — What’s the matter?",
+      "source": "Plaut. Men. 432–432b"
+    },
+    {
+      "latin": "Ostende hūc manūs. — Em tibi, ostendī, eccās.",
+      "english": "Show me your hands. — There you are, I’ve shown them: here they are.",
+      "source": "Plaut. Aul. 640b–641"
+    },
+    {
       "latin": "Manum sinistram hūc pōne.",
-      "english": "Put your left hand here, indicating movement toward this spot.",
+      "english": "Put your left hand here.",
       "source": "composed"
     }
   ],
   "related": [
     "here-location",
-    "there-direction"
+    "there-direction",
+    "where-to",
+    "this-way"
   ],
   "sources": [
-    "Examples are composed for conversation with Theo; dictionary links document the component words, not these exact sentences or standardized modern climbing terminology.",
-    "The example sentences marked “composed” are ours."
+    "<a href=\"https://logeion.uchicago.edu/huc\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: huc</a> · <a href=\"https://logeion.uchicago.edu/horsum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: horsum</a>",
+    "Quotations from the Latinitas loci collections (loci-plautus, loci-terentius), checked against the editions named there.",
+    "Plautus and Terence checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026).",
+    "The example sentence marked “composed” is ours."
   ],
   "review": {
     "status": "draft",

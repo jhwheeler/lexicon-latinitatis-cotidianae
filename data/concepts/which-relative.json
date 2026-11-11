@@ -1,0 +1,71 @@
+{
+  "id": "which-relative",
+  "english": "which",
+  "sense": "the one that (relative)",
+  "pos": "pronoun",
+  "also": [
+    "that (relative)",
+    "who (relative)",
+    "whom (relative)",
+    "whose (relative)",
+    "the one which"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "quī, quae, quod",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "who, which, that",
+      "grammar": "relative pronoun: gender and number from the word it refers to, case from its own clause",
+      "evidence": [
+        "Catull. 3.5: <span lang=\"la\">quem plūs illa oculīs suīs amābat</span>",
+        "Phaedr. 1 prol. 1: <span lang=\"la\">Aesōpus auctor quam māteriam repperit</span>"
+      ],
+      "comment": "English may leave the relative out (“the boat you see”); Latin never does. Its genitive <span lang=\"la\">cujus, quōrum, quārum</span> is “whose”, its dative <span lang=\"la\">cui, quibus</span> “to whom”. At the head of a sentence it links back where English says “and he”, “and this”: <span lang=\"la\">quā lēctā</span>, and when I had read it (Cic. Att. 12.1.2)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "passer mortuus est meae puellae, passer, dēliciae meae puellae, quem plūs illa oculīs suīs amābat",
+      "english": "my girl’s sparrow is dead, the sparrow, my girl’s delight, whom she loved more than her own eyes",
+      "source": "Catull. 3.3–5"
+    },
+    {
+      "latin": "Aesōpus auctor quam māteriam repperit, hanc ego polīvī versibus sēnāriīs",
+      "english": "the material that Aesop the author found, I have polished in iambic verse",
+      "source": "Phaedr. 1 prol. 1–2"
+    },
+    {
+      "latin": "cum complicārem hanc epistulam, noctuābundus ad mē vēnit cum epistulā tuā tabellārius; quā lēctā dē Atticae febriculā scīlicet valdē doluī.",
+      "english": "As I was folding this letter, the courier came to me by night with yours; when I had read it, I was of course very sorry about Attica’s touch of fever.",
+      "source": "Cic. Att. 12.1.2"
+    },
+    {
+      "latin": "vīvitur parvō bene, cui paternum splendet in mēnsā tenuī salīnum",
+      "english": "he lives well on little whose father’s salt-cellar shines on his plain table",
+      "source": "Hor. C. 2.16.13–14"
+    },
+    {
+      "latin": "aper … pilleātus, ē cujus dentibus sportellae dēpendēbant duae palmulīs textae",
+      "english": "a boar wearing a freedman’s cap, from whose tusks hung two little baskets woven of palm",
+      "source": "Petr. 40.1"
+    }
+  ],
+  "related": [
+    "which-question",
+    "who",
+    "whose",
+    "that"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/qui\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: qui</a>",
+    "Quotations from the Latinitas loci collections (loci-catullus, loci-phaedrus, loci-cicero-epistulae, loci-horatius, loci-petronius), checked against the editions named there.",
+    "Phaedrus checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

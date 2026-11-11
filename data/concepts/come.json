@@ -1,0 +1,66 @@
+{
+  "id": "come",
+  "english": "come",
+  "sense": "move towards here",
+  "pos": "verb",
+  "also": [
+    "coming",
+    "come to",
+    "come over",
+    "come and see",
+    "come to dinner"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "veniō, venīre, vēnī, ventum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "come",
+      "evidence": [
+        "Cic. Fam. 16.10.1: <span lang=\"la\">cupiō tē ad mē venīre</span>",
+        "Suet. Jul. 37: <span lang=\"la\">vēnī, vīdī, vīcī</span> (Lewis &amp; Short)",
+        "Traupman 294"
+      ],
+      "comment": "The everyday verb for coming. Where to is expressed as with <span lang=\"la\">īre</span> (see go): <span lang=\"la\">Rōmam, domum, ad nōs, ad cēnam venīre</span>. “Come here!” is <span lang=\"la\">Venī hūc!</span> (Traupman 33) or <span lang=\"la\">Ades!</span> (see come here)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "vēnit ad nōs Cicerō tuus ad cēnam, cum Pompōnia forīs cēnāret.",
+      "english": "your Cicero came to us for dinner, as Pomponia was dining out.",
+      "source": "Cic. Q. fr. 3.1.19"
+    },
+    {
+      "latin": "Ego vērō cupiō tē ad mē venīre, sed viam timeō.",
+      "english": "I do want you to come to me, but I’m afraid of the journey.",
+      "source": "Cic. Fam. 16.10.1"
+    },
+    {
+      "latin": "vīn’ ad tē ad cēnam veniam?",
+      "english": "shall I come to yours for dinner?",
+      "source": "Plaut. Stich. 486"
+    }
+  ],
+  "related": [
+    "go",
+    "arrive",
+    "approach",
+    "come-here",
+    "where-have-you-come-from",
+    "come-back-soon",
+    "enter",
+    "reach-get-to"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/venio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: venio</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 33, 294, checked against the searchable text of the book.",
+    "Checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (11 November 2026): Cicero’s letters, Plautus.",
+    "Quotations from the Latinitas loci collections (loci-cicero-epistulae), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

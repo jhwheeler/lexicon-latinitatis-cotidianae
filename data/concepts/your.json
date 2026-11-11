@@ -1,0 +1,88 @@
+{
+  "id": "your",
+  "english": "your",
+  "pos": "pronoun",
+  "also": [
+    "yours",
+    "it’s yours"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "tuus, tua, tuum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "your, yours (of one person)",
+      "grammar": "pronoun (possessive), first and second declension",
+      "evidence": [
+        "Mart. 10.51.16: <span lang=\"la\">quae tua sunt, tibi habē</span>",
+        "Varro in Gell. 15.19.2: <span lang=\"la\">ut tuus pistor bonum faceret pānem</span>"
+      ],
+      "comment": "Agrees with the thing owned. “Yours” is the same word as a predicate: <span lang=\"la\">quae tua sunt</span>, what is yours. Where the owner is plain, Latin leaves the possessive out: <span lang=\"la\">Ostende hūc manūs</span>, show me your hands."
+    },
+    {
+      "latin": "vester, vestra, vestrum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "your, yours (of more than one)",
+      "grammar": "pronoun (possessive), first and second declension",
+      "evidence": [
+        "Verg. A. 1.573: <span lang=\"la\">urbem quam statuō, vestra est</span>"
+      ],
+      "comment": "For more than one owner: <span lang=\"la\">vestra est</span>, it is yours."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "quae tua sunt, tibi habē: quae mea, redde mihi",
+      "english": "What is yours, keep for yourself; what is mine, give back to me.",
+      "source": "Mart. 10.51.16"
+    },
+    {
+      "latin": "sī, quantum operae sūmpsistī ut tuus pistor bonum faceret pānem, ejus duodecimam philosophiae dedissēs, ipse bonus jam prīdem essēs factus",
+      "english": "If you had given philosophy a twelfth of the trouble you took to make your baker bake good bread, you would long ago have become a good man yourself.",
+      "source": "Varro in Gell. 15.19.2"
+    },
+    {
+      "latin": "Stultum est querī dē adversīs, ubi culpa est tua.",
+      "english": "It is foolish to complain of bad luck when the fault is your own.",
+      "source": "Publ. S 45"
+    },
+    {
+      "latin": "vēnit ad nōs Cicerō tuus ad cēnam, cum Pompōnia forīs cēnāret",
+      "english": "Your boy Cicero came to us for dinner, as Pomponia was dining out.",
+      "source": "Cic. Q. fr. 3.1.19"
+    },
+    {
+      "latin": "Ostende hūc manūs. — Em tibi, ostendī, eccās.",
+      "english": "Show me your hands. — There you are, I’ve shown them: here they are.",
+      "source": "Plaut. Aul. 640b–641"
+    },
+    {
+      "latin": "urbem quam statuō, vestra est",
+      "english": "The city I am founding is yours.",
+      "source": "Verg. A. 1.573"
+    },
+    {
+      "latin": "Bene ambulētis, et sit Deus in itinere vestrō, et angelus ejus comitētur vōbīscum.",
+      "english": "Have a good journey; God be on your way, and his angel go with you.",
+      "source": "Vulg. Tob. 5.21"
+    }
+  ],
+  "related": [
+    "my",
+    "our",
+    "you-singular",
+    "you-plural",
+    "own"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/tuus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tuus</a> · <a href=\"https://logeion.uchicago.edu/vester\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vester</a>",
+    "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-martialis, loci-plautus, loci-publilius, loci-varro, loci-vergilius, loci-vulgata), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

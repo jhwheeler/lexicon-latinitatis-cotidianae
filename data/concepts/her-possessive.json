@@ -1,0 +1,81 @@
+{
+  "id": "her-possessive",
+  "english": "her",
+  "sense": "belonging to her",
+  "pos": "pronoun",
+  "also": [
+    "hers"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "ejus",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "her (someone else’s)",
+      "grammar": "pronoun: genitive of is (feminine as masculine)",
+      "evidence": [
+        "Gell. 1.23.7: <span lang=\"la\">animum ejus ad inquīrendum everberat</span>"
+      ],
+      "comment": "When “her” is not the subject of the clause: the secret <span lang=\"la\">animum ejus … everberat</span>, goads her mind. When it is the subject’s own, use <span lang=\"la\">suus</span> (below). <span lang=\"la\">ejus</span> does not show the owner’s sex: it is “his”, “her” or “its” alike."
+    },
+    {
+      "latin": "suus, sua, suum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "her (own), referring to the subject",
+      "grammar": "pronoun (possessive, reflexive)",
+      "evidence": [
+        "Cic. Att. 4.1.4: <span lang=\"la\">nātālī suō ipsō diē</span>",
+        "Catull. 3.5: <span lang=\"la\">oculīs suīs</span>"
+      ],
+      "comment": "As with “his”: it refers to the subject and agrees with the thing owned, <span lang=\"la\">nātālī suō</span>, on her birthday."
+    },
+    {
+      "latin": "illīus",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "her (that woman’s)",
+      "grammar": "pronoun: genitive of illa",
+      "comment": "For a stronger or contrasting “her”."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "mulier fit audiendī cupidior; sēcrētum reī et silentium puerī animum ejus ad inquīrendum everberat",
+      "english": "The woman grows more eager to hear; the secret and the boy’s silence goad her mind to find out.",
+      "source": "Gell. 1.23.7"
+    },
+    {
+      "latin": "ibi mihi Tulliola mea fuit praestō nātālī suō ipsō diē",
+      "english": "There my little Tullia was waiting for me, on her very birthday.",
+      "source": "Cic. Att. 4.1.4"
+    },
+    {
+      "latin": "passer mortuus est meae puellae, passer, dēliciae meae puellae, quem plūs illa oculīs suīs amābat",
+      "english": "My girl’s sparrow is dead, the sparrow, my girl’s darling, which she loved more than her own eyes.",
+      "source": "Catull. 3.3–5"
+    },
+    {
+      "latin": "ōrō tē … mulier, sine eam tōtam integram mātrem esse fīliī suī",
+      "english": "I beg you, madam, let her be wholly and entirely the mother of her own son.",
+      "source": "Gell. 12.1.5"
+    }
+  ],
+  "related": [
+    "she",
+    "his",
+    "its",
+    "their",
+    "own"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/is\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: is</a> · <a href=\"https://logeion.uchicago.edu/suus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: suus</a> · <a href=\"https://logeion.uchicago.edu/ille\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ille</a>",
+    "Quotations from the Latinitas loci collections (loci-catullus, loci-cicero-epistulae, loci-gellius), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

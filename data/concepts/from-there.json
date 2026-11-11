@@ -1,0 +1,86 @@
+{
+  "id": "from-there",
+  "english": "from there",
+  "pos": "adverb",
+  "also": [
+    "thence",
+    "from over there",
+    "from where you are"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "inde",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "from there (the place named); then",
+      "grammar": "adverb",
+      "evidence": [
+        "Cato Agr. 1.2: <span lang=\"la\">utī inde exīre possīs</span>",
+        "Cic. Att. 12.15.1: <span lang=\"la\">nōn exeō inde ante vesperum</span>"
+      ],
+      "comment": "The unemphatic “from there”; it answers <span lang=\"la\">unde</span>. Also of time, “then, next” (Cic. Fam. 16.9.2)."
+    },
+    {
+      "latin": "illinc",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "from over there",
+      "grammar": "adverb",
+      "evidence": [
+        "Ter. Ad. 4.7.13: <span lang=\"la\">illinc hūc trānsferētur virgō</span> (Lewis &amp; Short)",
+        "Cic. Att. 9.11.3: <span lang=\"la\">quī … illinc profectī erant</span>"
+      ]
+    },
+    {
+      "latin": "istinc",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "from there (where you are)",
+      "grammar": "adverb",
+      "evidence": [
+        "Cic. Fam. 1.10.1: <span lang=\"la\">quī istinc veniunt</span>",
+        "Plaut. Capt. 603b: <span lang=\"la\">Istinc loquere, sī quid vīs</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "cumque māne mē in silvam abstrūsī dēnsam et asperam, nōn exeō inde ante vesperum",
+      "english": "and once I have hidden myself in the morning in the thick, wild wood, I don’t come out of it before evening",
+      "source": "Cic. Att. 12.15.1"
+    },
+    {
+      "latin": "nōs eō diē cēnātī solvimus; inde austrō lēnissimō caelō serēnō nocte illā et diē posterō in Ītaliam ad Hydrūntem lūdibundī pervēnimus",
+      "english": "we set sail that day after dinner; from there, with a very gentle south wind and a clear sky, we reached Italy at Hydrus that night and the next day, as easily as if at play",
+      "source": "Cic. Fam. 16.9.2"
+    },
+    {
+      "latin": "inde domum mē ad porrī et ciceris referō laganīque catīnum",
+      "english": "from there I take myself home to a dish of leeks and chickpeas and pancakes",
+      "source": "Hor. S. 1.6.114–115"
+    },
+    {
+      "latin": "Istinc loquere, sī quid vīs, procul. tamen audiam.",
+      "english": "Speak from there, if you want something; I’ll hear you even at a distance.",
+      "source": "Plaut. Capt. 603b"
+    }
+  ],
+  "related": [
+    "from-here",
+    "there-location",
+    "there-direction",
+    "where-from"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/inde\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: inde</a> · <a href=\"https://logeion.uchicago.edu/illinc\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: illinc</a> · <a href=\"https://logeion.uchicago.edu/istinc\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: istinc</a>",
+    "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-horatius, loci-cato), checked against the editions named there.",
+    "Plautus and Cicero’s letters checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026).",
+    "Citations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling, and have not been checked against an edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

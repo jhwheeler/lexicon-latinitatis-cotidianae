@@ -1,0 +1,97 @@
+{
+  "id": "what",
+  "english": "what",
+  "sense": "what? (a question)",
+  "pos": [
+    "pronoun",
+    "adjective"
+  ],
+  "also": [
+    "what is it?",
+    "what’s that?",
+    "what is this?",
+    "what (that which)"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "quid",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "what?",
+      "grammar": "neuter of the interrogative pronoun quis",
+      "evidence": [
+        "Ter. And. 139: <span lang=\"la\">Quid fēcī?</span>",
+        "Cic. Att. 7.11.1: <span lang=\"la\">quaesō, quid est hoc?</span>"
+      ],
+      "comment": "With a genitive it asks how much of a thing: <span lang=\"la\">quid novī?</span>, what news?; <span lang=\"la\">quid cēnae?</span>, what is there for dinner? (Ter. Haut. 211). <span lang=\"la\">Quid?</span> alone also asks why: see “why”."
+    },
+    {
+      "latin": "quī, quae, quod",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "what … ? (with a noun)",
+      "grammar": "interrogative adjective",
+      "evidence": [
+        "Phaedr. 3.7.5: <span lang=\"la\">quō cibō</span>"
+      ],
+      "comment": "See “which” (question)."
+    },
+    {
+      "latin": "id quod (quod)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "what (that which)",
+      "grammar": "relative",
+      "evidence": [
+        "Publ. Q 80: <span lang=\"la\">Quod quisque amat, laudandō commendat sibi.</span>"
+      ],
+      "comment": "The “what” of a statement, “I like what you made”: <span lang=\"la\">id quod</span>, or <span lang=\"la\">quod</span> alone when its clause comes first."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Quid fēcī? quid commeruī aut peccāvī, pater?",
+      "english": "What have I done? What have I deserved, Father, or what wrong have I done?",
+      "source": "Ter. And. 139"
+    },
+    {
+      "latin": "Quid ais? quid nōmen tibi est?",
+      "english": "What’s that? What’s your name?",
+      "source": "Plaut. Amph. 364b"
+    },
+    {
+      "latin": "quaesō, quid est hoc? aut quid agitur? mihi enim tenebrae sunt",
+      "english": "tell me, what is this? What is going on? I am in the dark",
+      "source": "Cic. Att. 7.11.1"
+    },
+    {
+      "latin": "tamen quid habuistis in cēnā?",
+      "english": "so what did you have at dinner?",
+      "source": "Petr. 66.1"
+    },
+    {
+      "latin": "Quod quisque amat, laudandō commendat sibi.",
+      "english": "What each of us loves, we make dearer to ourselves by praising it.",
+      "source": "Publ. Q 80"
+    }
+  ],
+  "related": [
+    "which-question",
+    "what-kind-of",
+    "whatever",
+    "why",
+    "what-happened",
+    "what-do-you-want"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/quis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quis</a> · <a href=\"https://logeion.uchicago.edu/qui\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: qui</a>",
+    "Quotations from the Latinitas loci collections (loci-terentius, loci-plautus, loci-cicero-epistulae, loci-petronius, loci-publilius, loci-phaedrus), checked against the editions named there.",
+    "Plautus and Terence checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

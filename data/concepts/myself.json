@@ -1,0 +1,99 @@
+{
+  "id": "myself",
+  "english": "myself",
+  "pos": "pronoun",
+  "also": [
+    "by myself",
+    "to myself",
+    "I myself"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "mē, mihi (reflexive)",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "myself (as object)",
+      "grammar": "pronoun: the ordinary forms of ego, used reflexively",
+      "evidence": [
+        "Cic. Att. 8.14.2: <span lang=\"la\">ego tēcum tamquam mēcum loquor</span>"
+      ],
+      "comment": "Latin has no separate reflexive for the first person: “I wash myself” is <span lang=\"la\">mē lavō</span>, “with myself” <span lang=\"la\">mēcum</span>. Many English reflexives are a plain verb in Latin: “I enjoy myself”, <span lang=\"la\">mē oblectō</span> or simply <span lang=\"la\">gaudeō</span>."
+    },
+    {
+      "latin": "ipse, ipsa, ipsum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "myself (for emphasis: I myself, in person)",
+      "grammar": "pronoun, intensive: genitive ipsīus, dative ipsī",
+      "evidence": [
+        "Plin. NH 8.6: <span lang=\"la\">ipse ego haec scrīpsī</span>",
+        "Cic. Amic. 10: <span lang=\"la\">mē ipse cōnsōlor</span> (Lewis &amp; Short, s.v. <span lang=\"la\">ipse</span>, Lael. 3.10)"
+      ],
+      "comment": "The “myself” of “I did it myself”: it agrees with <span lang=\"la\">ego</span>, said or understood (<span lang=\"la\">ipse</span> for a man, <span lang=\"la\">ipsa</span> for a woman). With a reflexive, <span lang=\"la\">ipse</span> in the nominative stresses the doer: <span lang=\"la\">mē ipse cōnsōlor</span>, I console myself (no one else does)."
+    },
+    {
+      "latin": "per mē",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "by myself, unaided",
+      "grammar": "phrase: per with the accusative",
+      "evidence": [
+        "Mart. 14.73.2: <span lang=\"la\">hoc didicī per mē dīcere</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ego tēcum tamquam mēcum loquor",
+      "english": "I talk to you as if I were talking to myself.",
+      "source": "Cic. Att. 8.14.2"
+    },
+    {
+      "latin": "sed nōn egeō medicīnā: mē ipse cōnsōlor",
+      "english": "But I need no medicine: I console myself.",
+      "source": "Cic. Amic. 10 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "vix mī ipse crēdēns Thȳniam atque Bīthȳnōs līquisse campōs et vidēre tē in tūtō",
+      "english": "hardly believing myself that I have left Thynia and the plains of Bithynia, and that I see you in safety",
+      "source": "Catull. 31.5–6"
+    },
+    {
+      "latin": "ego ipsa sum, inquit, hīc hospita",
+      "english": "“I’m only a guest here myself,” she said.",
+      "source": "Cic. Att. 5.1.3"
+    },
+    {
+      "latin": "nōn enim concēdō tibi plūs ut illum amēs quam ipse amō",
+      "english": "For I won’t grant that you love him more than I do myself.",
+      "source": "Cic. Q. fr. 3.1.7"
+    },
+    {
+      "latin": "ipse ego haec scrīpsī et spolia Celtica dicāvī",
+      "english": "I wrote this myself and dedicated the Celtic spoils.",
+      "source": "Plin. NH 8.6"
+    },
+    {
+      "latin": "psittacus ā vōbīs aliōrum nōmina discam: hoc didicī per mē dīcere \"Caesar, havē\"",
+      "english": "The parrot: I shall learn other names from you; this I learned to say by myself: “Hail, Caesar!”",
+      "source": "Mart. 14.73.1–2"
+    }
+  ],
+  "related": [
+    "i",
+    "yourself",
+    "himself",
+    "oneself"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/ego\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ego</a> · <a href=\"https://logeion.uchicago.edu/ipse\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ipse</a>",
+    "Quotations from the Latinitas loci collections (loci-catullus, loci-cicero-epistulae, loci-martialis, loci-plinius), checked against the editions named there.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "id": "frighten",
+  "english": "frighten",
+  "pos": "verb",
+  "also": [
+    "scare",
+    "give a fright",
+    "terrify",
+    "scare off",
+    "scare away",
+    "frighten away"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "terreō, terrēre, terruī, territum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "frighten, scare",
+      "evidence": [
+        "Cic. Fam. 2.16.4: <span lang=\"la\">nec mē ista terrent</span>",
+        "Traupman 319, 374"
+      ],
+      "comment": "“Scared” is <span lang=\"la\">territus</span>; being afraid is <span lang=\"la\">timēre</span> (see be afraid)."
+    },
+    {
+      "latin": "perterreō, perterrēre, perterruī, perterritum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "terrify, frighten badly",
+      "evidence": [
+        "Ter. Eun. 5.3.13; Caes. B.G. 7.4 (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "absterreō, absterrēre, absterruī, absterritum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "frighten away, scare off",
+      "evidence": [
+        "Plaut. Most. 2.1.74; Cic. Verr. 2.2.58 (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Nec mē ista terrent quae mihi ā tē ad timōrem fīdissimē atque amantissimē prōpōnuntur.",
+      "english": "Nor am I frightened by the things you so faithfully and lovingly set before me to make me afraid.",
+      "source": "Cic. Fam. 2.16.4"
+    },
+    {
+      "latin": "pater deōrum rīsit atque illīs dedit parvum tigillum, missum quod subitō vadī mōtū sonōque terruit pavidum genus",
+      "english": "the father of the gods laughed and gave them a little log, which, thrown in, frightened the timid race with the sudden stir and splash of the water",
+      "source": "Phaedr. 1.2.13–15"
+    }
+  ],
+  "related": [
+    "be-afraid",
+    "scared-to-death"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/terreo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: terreo</a> · <a href=\"https://logeion.uchicago.edu/perterreo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: perterreo</a> · <a href=\"https://logeion.uchicago.edu/absterreo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: absterreo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 319, 374, checked against the searchable text of the book.",
+    "Checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (11 November 2026): Cicero’s letters.",
+    "Quotations from the Latinitas loci collections (loci-phaedrus), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

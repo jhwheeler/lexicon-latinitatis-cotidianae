@@ -1,0 +1,85 @@
+{
+  "id": "trick-deceive",
+  "english": "trick",
+  "sense": "deceive",
+  "pos": "verb",
+  "also": [
+    "deceive",
+    "fool",
+    "take in",
+    "play a trick on",
+    "be tricked",
+    "fall for"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "dēcipiō, dēcipere, dēcēpī, dēceptum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "trick, deceive, catch out",
+      "evidence": [
+        "Plaut. Rud. 4.7.9: <span lang=\"la\">ubi dēcipiuntur dolīs</span> (Lewis &amp; Short)",
+        "Phaedr. 1.13.12: <span lang=\"la\">corvī dēceptus stupor</span>"
+      ],
+      "comment": "Literally to catch, as in a snare (<span lang=\"la\">dēcipula</span>, a trap)."
+    },
+    {
+      "latin": "fallō, fallere, fefellī, falsum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "deceive, trick",
+      "evidence": [
+        "Ter. Eun. 385",
+        "Traupman 312: fall for a trick, <span lang=\"la\">fallī</span>"
+      ],
+      "comment": "The wider word: besides deceiving it means to escape someone’s notice and to let them down (<span lang=\"la\">nisi mē fallit animus</span>, Cic.; <span lang=\"la\">spēs fefellit</span>)."
+    },
+    {
+      "latin": "verba dare",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "fool, hoodwink (with the dative)",
+      "grammar": "phrase",
+      "register": "vōx sermōnis cotīdiānī: Ter.; Cic. in epistulīs",
+      "evidence": [
+        "Ter. And. 211",
+        "Cic. Att. 15.16a (Lewis &amp; Short)"
+      ],
+      "comment": "“Give someone (mere) words”: to fool them, never to give one’s word (see word)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "tunc dēmum ingemuit corvī dēceptus stupor",
+      "english": "only then did the foolish crow, tricked, groan",
+      "source": "Phaedr. 1.13.12"
+    },
+    {
+      "latin": "nunc referam grātiam atque eās itidem fallam, ut ab īs fallimur?",
+      "english": "shall I now pay them back and trick them just as we’re tricked by them?",
+      "source": "Ter. Eun. 385"
+    },
+    {
+      "latin": "quoi verba dare difficilest",
+      "english": "a man who is hard to fool",
+      "source": "Ter. And. 211"
+    }
+  ],
+  "related": [
+    "trick-deception",
+    "lie-tell",
+    "word-promise"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/decipio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: decipio</a> · <a href=\"https://logeion.uchicago.edu/fallo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fallo</a> · <a href=\"https://logeion.uchicago.edu/verbum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: verbum</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 312, checked against the searchable text of the book.",
+    "Checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (11 November 2026): Terence.",
+    "Quotations from the Latinitas loci collections (loci-phaedrus), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

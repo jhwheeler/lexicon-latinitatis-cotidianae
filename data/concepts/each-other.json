@@ -1,0 +1,111 @@
+{
+  "id": "each-other",
+  "english": "each other",
+  "pos": "pronoun",
+  "also": [
+    "one another",
+    "mutually",
+    "together (with each other)"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "inter sē (inter nōs, inter vōs)",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "each other, one another",
+      "grammar": "phrase: inter with the reflexive, or with nōs, vōs",
+      "evidence": [
+        "Cic. Att. 6.1.12: <span lang=\"la\">Cicerōnēs puerī amant inter sē</span>",
+        "Cic. Att. 14.13B.5: <span lang=\"la\">ut nōsmet ipsī inter nōs conjūnctiōrēs sīmus</span> (Lewis &amp; Short, s.v. <span lang=\"la\">conjungō</span>)"
+      ],
+      "comment": "The classical way, with any verb: <span lang=\"la\">amant inter sē</span>, they love each other; <span lang=\"la\">inter nōs</span> for us, <span lang=\"la\">inter vōs</span> for you."
+    },
+    {
+      "latin": "alter alterum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "each other (of two)",
+      "grammar": "phrase: alter twice, the second in the case the verb needs",
+      "evidence": [
+        "Sen. Ep. 7.11: <span lang=\"la\">alter alterī theātrum sumus</span>",
+        "Liv. 30.30.2: <span lang=\"la\">alter alterīus cōnspectū</span>"
+      ],
+      "comment": "<span lang=\"la\">alter alterī theātrum sumus</span>, we are an audience for each other. Of more than two, <span lang=\"la\">alius alium</span>."
+    },
+    {
+      "latin": "alius alium",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "one another (of more than two)",
+      "grammar": "phrase: alius twice",
+      "evidence": [
+        "Liv. 2.10.9: <span lang=\"la\">dum alius alium … circumspectant</span>"
+      ]
+    },
+    {
+      "latin": "invicem",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "each other, mutually",
+      "grammar": "adverb",
+      "evidence": [
+        "Quint. 1.3.11: <span lang=\"la\">positīs invicem … quaestiunculīs</span>",
+        "Plin. Ep. 4.1.2: <span lang=\"la\">invicem amāre</span> (Lewis &amp; Short)"
+      ],
+      "comment": "In this sense from Livy on, mostly post-Augustan (Pliny, Tacitus, Quintilian), not in Cicero; classically it means “in turn” (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Cicerōnēs puerī amant inter sē, exercentur, sed discunt, alter … frēnīs eget, alter calcāribus",
+      "english": "The boys Cicero love each other, they play together, but they learn too; one … needs the reins, the other the spurs.",
+      "source": "Cic. Att. 6.1.12"
+    },
+    {
+      "latin": "vetus verbum hoc quidem est: commūnia esse amīcōrum inter sē omnia",
+      "english": "It’s an old saying, at any rate, that friends have everything in common with each other.",
+      "source": "Ter. Ad. 803–804"
+    },
+    {
+      "latin": "satis enim magnum alter alterī theātrum sumus",
+      "english": "For we are a big enough audience for each other.",
+      "source": "Sen. Ep. 7.11"
+    },
+    {
+      "latin": "paulisper alter alterīus cōnspectū, admīrātiōne mūtuā prope attonitī, conticuēre",
+      "english": "For a little while, each at the sight of the other, almost stunned with mutual admiration, they fell silent.",
+      "source": "Liv. 30.30.2"
+    },
+    {
+      "latin": "cūnctātī aliquamdiū sunt, dum alius alium, ut proelium incipiant, circumspectant",
+      "english": "They hung back for some time, while each looked round at the others to start the fight.",
+      "source": "Liv. 2.10.9"
+    },
+    {
+      "latin": "sunt etiam nōnnūllī acuendīs puerōrum ingeniīs nōn inūtilēs lūsūs, cum positīs invicem cujusque generis quaestiunculīs aemulantur",
+      "english": "There are also some games, not useless for sharpening children’s wits, when they compete by setting each other little questions of every kind.",
+      "source": "Quint. 1.3.11"
+    },
+    {
+      "latin": "frīgoribus partō agricolae plērumque fruuntur mūtuaque inter sē laetī convīvia cūrant. invītat geniālis hiems cūrāsque resolvit",
+      "english": "In the cold the farmers mostly enjoy what they have earned, and, happy, give dinners for each other in turn; festive winter invites them and loosens their cares.",
+      "source": "Verg. G. 1.300–302"
+    }
+  ],
+  "related": [
+    "themselves",
+    "ourselves",
+    "they"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/inter\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: inter</a> · <a href=\"https://logeion.uchicago.edu/alter\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: alter</a> · <a href=\"https://logeion.uchicago.edu/alius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: alius</a> · <a href=\"https://logeion.uchicago.edu/invicem\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: invicem</a>",
+    "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-livius, loci-quintilianus, loci-seneca-epistulae, loci-terentius, loci-vergilius), checked against the editions named there.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

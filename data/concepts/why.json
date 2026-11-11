@@ -2,23 +2,96 @@
   "id": "why",
   "english": "why",
   "pos": "adverb",
+  "domain": "sermo",
   "also_under": [
     "verba"
   ],
-  "domain": "sermo",
   "terms": [
     {
       "latin": "cūr",
       "status": "recommended",
       "period": "classical",
-      "comment": "<strong lang=\"la\">Quō īmus? — Cūr?</strong>: the boy’s own travel questions in the libellī."
+      "comment": "<strong lang=\"la\">Quō īmus? — Cūr?</strong>: the boy’s own travel questions in the libellī.",
+      "gloss": "why?",
+      "grammar": "interrogative adverb",
+      "evidence": [
+        "Cic. Att. 16.6.2: <span lang=\"la\">cūr ego tēcum nōn sum?</span>",
+        "Mart. 13.14.2: <span lang=\"la\">dīc mihi, cūr nostrās inchoat illa dapēs?</span>"
+      ]
+    },
+    {
+      "latin": "quārē",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "why? for what reason?",
+      "grammar": "adverb (quā rē)",
+      "evidence": [
+        "Catull. 85.1: <span lang=\"la\">quārē id faciam, fortasse requīris</span>",
+        "Mart. 1.32.1: <span lang=\"la\">nec possum dīcere quārē</span>"
+      ],
+      "comment": "Also “and so, therefore” (Catull. 1.8)."
+    },
+    {
+      "latin": "quam ob rem (quamobrem)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "why? for what reason?",
+      "grammar": "phrase: ob with the accusative of the relative",
+      "evidence": [
+        "Ter. And. 862: <span lang=\"la\">Quamobrem? — Quia libet.</span>"
+      ],
+      "comment": "Also relative, “which is why” (see “due to”)."
+    },
+    {
+      "latin": "quid",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "why? what … for?",
+      "grammar": "accusative of the interrogative pronoun",
+      "evidence": [
+        "Hor. S. 1.1.69: <span lang=\"la\">quid rīdēs?</span>",
+        "Ter. And. 979: <span lang=\"la\">Quid stās? quid cessās?</span>"
+      ],
+      "comment": "The impatient “why”: “what are you standing there for?”. <span lang=\"la\">Quid ita?</span>, why so?"
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Quamobrem? — Quia libet.",
+      "english": "Why? — Because I want to.",
+      "source": "Ter. And. 862"
+    },
+    {
+      "latin": "cūr ego tēcum nōn sum? cūr ocellōs Ītaliae, vīllulās meās, nōn videō?",
+      "english": "Why am I not with you? Why can’t I see the jewels of Italy, my little country houses?",
+      "source": "Cic. Att. 16.6.2"
+    },
+    {
+      "latin": "quid rīdēs? mūtātō nōmine dē tē fābula narrātur",
+      "english": "why are you laughing? Change the name, and the story is about you",
+      "source": "Hor. S. 1.1.69–70"
+    },
+    {
+      "latin": "clūdere quae cēnās lactūca solēbat avōrum, dīc mihi, cūr nostrās inchoat illa dapēs?",
+      "english": "lettuce used to end our grandfathers’ dinners: tell me, why does it begin ours?",
+      "source": "Mart. 13.14.1–2"
+    },
+    {
+      "latin": "ōdī et amō. quārē id faciam, fortasse requīris. nesciō, sed fierī sentiō et excrucior",
+      "english": "I hate and I love. Why do I do it, perhaps you ask. I don’t know, but I feel it happening, and I am in torment",
+      "source": "Catull. 85.1–2"
     }
   ],
   "related": [
-    "where-are-we-going"
+    "where-are-we-going",
+    "due-to",
+    "therefore",
+    "what"
   ],
   "sources": [
-    "The grouped card gave no source for this word."
+    "<a href=\"https://logeion.uchicago.edu/cur\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cur</a> · <a href=\"https://logeion.uchicago.edu/quare\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quare</a> · <a href=\"https://logeion.uchicago.edu/ob\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ob (quam ob rem)</a> · <a href=\"https://logeion.uchicago.edu/quis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quis</a>",
+    "Quotations from the Latinitas loci collections (loci-terentius, loci-cicero-epistulae, loci-horatius, loci-martialis, loci-catullus), checked against the editions named there.",
+    "The comment on <span lang=\"la\">cūr</span> comes from the grouped card."
   ],
   "review": {
     "status": "draft",

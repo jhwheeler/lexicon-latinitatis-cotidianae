@@ -1,0 +1,95 @@
+{
+  "id": "walk-verb",
+  "english": "walk",
+  "sense": "go on foot",
+  "pos": "verb",
+  "also": [
+    "walking",
+    "go for a walk",
+    "take a walk",
+    "on foot",
+    "go on foot",
+    "stroll"
+  ],
+  "domain": "corpus",
+  "terms": [
+    {
+      "latin": "ambulō, ambulāre, ambulāvī, ambulātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "walk",
+      "evidence": [
+        "Cic. Fin. 5.47: <span lang=\"la\">quem ad modum quis ambulet, sedeat</span> (Lewis &amp; Short)",
+        "Traupman 403"
+      ],
+      "comment": "The everyday verb for walking, as against sitting, standing or running, and for walking about for exercise. “Go for a walk” is the supine with <span lang=\"la\">īre</span>: <span lang=\"la\">ambulātum īre</span> (Cic. Leg. 1.14, as Lewis &amp; Short reads it), <span lang=\"la\">deambulātum īre</span> (Cato in Cic. de Or. 2.256)."
+    },
+    {
+      "latin": "pedibus īre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "go on foot, walk (not ride or drive)",
+      "grammar": "phrase",
+      "evidence": [
+        "Cic. Sen. 34: <span lang=\"la\">cum ingressus iter pedibus sit</span> (Lewis &amp; Short)",
+        "Liv. 26.19 (Lewis &amp; Short)"
+      ],
+      "comment": "Also <span lang=\"la\">pedibus venīre, proficīscī</span>: on foot, as against on horseback or by carriage."
+    },
+    {
+      "latin": "inambulō, inambulāre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "walk up and down, pace about",
+      "evidence": [
+        "Cic. Att. 6.2.5; Liv. 23.43.8 (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "deambulō, deambulāre, deambulāvī, deambulātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "take a stroll, walk about",
+      "evidence": [
+        "Cato Agr. 127 (Lewis &amp; Short)",
+        "Traupman 403"
+      ],
+      "comment": "Rare (Lewis &amp; Short). Short <span lang=\"la\">de-</span> before a vowel, as Lewis &amp; Short marks it (<span lang=\"la\">dĕambulo</span>), against Traupman’s <span lang=\"la\">dēambulāre</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nam ut tibi ambulandum, ungendum, sīc mihi dormiendum.",
+      "english": "for as you must walk and oil yourself, so I must sleep.",
+      "source": "Cic. Att. 9.7.7"
+    },
+    {
+      "latin": "Sōcratēn ferunt, cum ūsque ad vesperum contentius ambulāret quaesītumque esset ex eō quārē id faceret, respondisse sē, quō melius cēnāret, obsōnāre ambulandō famem.",
+      "english": "They say that when Socrates was walking hard until evening and was asked why he did it, he answered that he was buying in hunger by walking, so as to dine better.",
+      "source": "Cic. Tusc. 5.97"
+    },
+    {
+      "latin": "Parā tē, ut eāmus ambulātum.",
+      "english": "Get ready, so that we can go for a walk.",
+      "source": "Cord. Coll. 1.24 (one transcription only)"
+    }
+  ],
+  "related": [
+    "walk",
+    "run",
+    "walk-the-dog",
+    "go",
+    "path",
+    "stick"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/ambulo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ambulo</a> · <a href=\"https://logeion.uchicago.edu/pes\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pes</a> · <a href=\"https://logeion.uchicago.edu/inambulo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: inambulo</a> · <a href=\"https://logeion.uchicago.edu/deambulo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: deambulo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 403, checked against the searchable text of the book.",
+    "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-cicero-philosophica, loci-corderius), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

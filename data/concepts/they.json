@@ -1,0 +1,98 @@
+{
+  "id": "they",
+  "english": "they",
+  "pos": "pronoun",
+  "also": [
+    "them",
+    "those people"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "eī (iī), eae, ea",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "they, them",
+      "grammar": "pronoun: plural of is; genitive eōrum, eārum, dative and ablative eīs (iīs)",
+      "evidence": [
+        "Liv. 5.41.9: <span lang=\"la\">ad eōs velut simulācra versī</span>",
+        "Cic. Att. 6.1.12: <span lang=\"la\">Cicerōnēs puerī amant inter sē, exercentur</span>"
+      ],
+      "comment": "Mostly left out as subject: <span lang=\"la\">amant inter sē, exercentur</span>, they love each other, they play. For “them” as object, <span lang=\"la\">eōs, eās, ea</span> (<span lang=\"la\">ad eōs … versī</span>). In reported speech, “they” meaning the speakers is <span lang=\"la\">sē</span>."
+    },
+    {
+      "latin": "illī, illae, illa",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "they, those people",
+      "grammar": "pronoun: plural of ille",
+      "evidence": [
+        "Plin. Ep. 2.17.24",
+        "Cic. Fin. 5.61: <span lang=\"la\">ut illī efferuntur laetitiā, cum vīcērunt!</span>"
+      ],
+      "comment": "For a group set against another, or a new subject: <span lang=\"la\">nec ipse meōrum lūsibus nec illī studiīs meīs obstrepunt</span>."
+    },
+    {
+      "latin": "hī, hae, haec",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "they, these people (here)",
+      "grammar": "pronoun: plural of hic",
+      "comment": "The people present or just named."
+    },
+    {
+      "latin": "eccōs, eccās",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "there they are!",
+      "grammar": "interjection with the accusative: ecce with eōs, eās",
+      "evidence": [
+        "Plaut. Aul. 641: <span lang=\"la\">eccās</span>"
+      ],
+      "comment": "Pointing them out; <span lang=\"la\">eccum</span>, <span lang=\"la\">eccam</span> for one.",
+      "register": "vōx cōmica: Plaut., Ter."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Cicerōnēs puerī amant inter sē, exercentur, sed discunt, alter … frēnīs eget, alter calcāribus",
+      "english": "The boys Cicero love each other, they play together, but they learn too; one … needs the reins, the other the spurs.",
+      "source": "Cic. Att. 6.1.12"
+    },
+    {
+      "latin": "ad eōs velut simulācra versī cum stārent",
+      "english": "as they stood turned towards them as if towards statues",
+      "source": "Liv. 5.41.9"
+    },
+    {
+      "latin": "nam nec ipse meōrum lūsibus nec illī studiīs meīs obstrepunt",
+      "english": "for I don’t disturb my household’s games, nor they my work",
+      "source": "Plin. Ep. 2.17.24"
+    },
+    {
+      "latin": "quanta studia dēcertantium sunt! quanta ipsa certāmina! ut illī efferuntur laetitiā, cum vīcērunt! ut pudet victōs! ut sē accūsārī nōlunt! quam cupiunt laudārī!",
+      "english": "How keen the competitors are! How fierce the contests themselves! How carried away with joy they are when they have won! How ashamed the losers! How they hate to be blamed! How they long to be praised!",
+      "source": "Cic. Fin. 5.61"
+    },
+    {
+      "latin": "Ostende hūc manūs. — Em tibi, ostendī, eccās.",
+      "english": "Show me your hands. — There you are, I’ve shown them: here they are.",
+      "source": "Plaut. Aul. 640b–641"
+    }
+  ],
+  "related": [
+    "he",
+    "their",
+    "themselves",
+    "each-other"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/is\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: is</a> · <a href=\"https://logeion.uchicago.edu/ille\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ille</a> · <a href=\"https://logeion.uchicago.edu/hic\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: hic</a> · <a href=\"https://logeion.uchicago.edu/ecce\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ecce (eccum, eccōs)</a>",
+    "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-cicero-philosophica, loci-livius, loci-plautus, loci-plinius), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

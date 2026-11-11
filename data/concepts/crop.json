@@ -1,0 +1,65 @@
+{
+  "id": "crop",
+  "english": "crop",
+  "sense": "grain growing in the field",
+  "pos": "noun",
+  "also": [
+    "standing crop",
+    "growing crop",
+    "cornfield"
+  ],
+  "domain": "natura",
+  "terms": [
+    {
+      "latin": "seges, segetis f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "the crop standing in the field; a cornfield",
+      "evidence": [
+        "Varr. RR 1.30",
+        "Cic. Or. 81: <span lang=\"la\">laetās esse segetēs</span> (Lewis &amp; Short)",
+        "Traupman 166"
+      ],
+      "comment": "First a cornfield (Cato, Varro), then the crop growing in it; in that sense not frequent until after Augustus (Lewis &amp; Short)."
+    },
+    {
+      "latin": "frūmentum, frūmentī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "grain; in the plural, the grain crops in the fields",
+      "evidence": [
+        "Caes. B.G. 1.16.2: <span lang=\"la\">frūmenta in agrīs mātūra nōn erant</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "segetēs runcārī, id est herbam ē segetibus expūrgārī",
+      "english": "the crops are weeded, that is, the weeds are cleaned out of the crops",
+      "source": "Varr. RR 1.30"
+    },
+    {
+      "latin": "sī bene flōruerint segetēs, erit ārea dīves; sī bene flōruerit vīnea, Bacchus erit",
+      "english": "if the crops flower well, the threshing-floor will be rich; if the vineyard flowers well, there will be wine",
+      "source": "Ov. F. 5.263–264"
+    }
+  ],
+  "related": [
+    "produce-food",
+    "harvest",
+    "reap",
+    "produce-yield",
+    "field"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/seges\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: seges</a> · <a href=\"https://logeion.uchicago.edu/frumentum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: frumentum</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 166, checked against the searchable text of the book.",
+    "Checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (11 November 2026): Caesar.",
+    "Quotations from the Latinitas loci collections (loci-varro, loci-ovidius), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

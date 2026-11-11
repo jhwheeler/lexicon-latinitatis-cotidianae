@@ -5,7 +5,12 @@
   "also": [
     "power cable",
     "electric cord",
-    "electrical cable"
+    "electrical cable",
+    "charging cable",
+    "phone cable",
+    "charger cable",
+    "cable",
+    "lead"
   ],
   "domain": "officina",
   "terms": [
@@ -25,16 +30,22 @@
       "latin": "Fūniculum ēlectricum affer.",
       "english": "Bring the electrical cable.",
       "source": "composed"
+    },
+    {
+      "latin": "Ubi est fūniculus replētrī?",
+      "english": "Where’s the charger cable?",
+      "source": "composed"
     }
   ],
   "related": [
     "extension-cord",
     "cord",
-    "cable-reel"
+    "cable-reel",
+    "charger"
   ],
   "sources": [
     "<a href=\"https://www.bolchazy.com/product/conversational-latin-for-oral-proficiency-4th-edition-p3388/\" rel=\"noopener noreferrer\" target=\"_blank\">Traupman: Conversational Latin (printed page references in entry)</a> · <a href=\"https://neolatinlexicon.org/latin/cable/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: cable</a>",
-    "The example sentence marked “composed” is ours."
+    "The example sentences marked “composed” are ours."
   ],
   "replaces": [
     "entry-145"
@@ -43,5 +54,9 @@
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  }
+  },
+  "also_under": [
+    "computatra",
+    "domus"
+  ]
 }

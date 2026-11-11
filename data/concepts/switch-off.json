@@ -4,7 +4,10 @@
   "pos": "verb",
   "also": [
     "turn off",
-    "turn the light off"
+    "turn the light off",
+    "turn off the phone",
+    "turn off the computer",
+    "shut down"
   ],
   "domain": "domus",
   "terms": [
@@ -13,7 +16,11 @@
       "status": "recommended",
       "period": "modern",
       "gloss": "extinguish",
-      "comment": "Using it for electrical lights is a modern application."
+      "comment": "Using it for electrical lights is a modern application. Traupman and Andresian use it for switching off a computer or a phone too.",
+      "evidence": [
+        "Traupman 262, s.v. turn off",
+        "Andresian pp. 14–15"
+      ]
     }
   ],
   "phrases": [
@@ -25,15 +32,21 @@
   ],
   "related": [
     "switch-on",
-    "light-lamp"
+    "light-lamp",
+    "restart"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/exstinguo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: exstinguo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 262.",
+    "Anna Andresian, <em>Vocabula Picta</em> (2014), pp. 14–15.",
     "The example sentence marked “composed” is ours."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  }
+  },
+  "also_under": [
+    "computatra"
+  ]
 }

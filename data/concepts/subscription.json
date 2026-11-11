@@ -1,0 +1,56 @@
+{
+  "id": "subscription",
+  "english": "subscription",
+  "pos": "noun",
+  "also": [
+    "subscribe",
+    "monthly subscription",
+    "subscription fee"
+  ],
+  "domain": "pecunia",
+  "terms": [
+    {
+      "latin": "pēnsiō, pēnsiōnis f.",
+      "status": "recommended",
+      "period": "ours",
+      "gloss": "a regular payment: a subscription",
+      "evidence": [
+        "Cic. Att. 16.2.1: <span lang=\"la\">ex tertiā pēnsiōne</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Our use: no reference work has a word for a subscription. Classically <span lang=\"la\">pēnsiō</span> is a payment due at a set term, and the lexicon already pays by <span lang=\"la\">pēnsiōnēs</span> (pay in instalments). A subscription is a <span lang=\"la\">pēnsiō mēnstrua</span> or <span lang=\"la\">annua</span>, paid for as long as one wants the thing."
+    },
+    {
+      "latin": "subscrīptiō, subscrīptiōnis f.",
+      "status": "avoid",
+      "period": "modern",
+      "gloss": "a signature",
+      "evidence": [
+        "M-O s.v. subscribe (to a periodical)",
+        "Traupman 262: <span lang=\"la\">subscrībō</span>"
+      ],
+      "comment": "Classically a signature or a line written underneath (Lewis &amp; Short). Morgan–Owens warns that such words mean writing at the end of something, not subscribing; Traupman gives <span lang=\"la\">subscrībō</span> among his computer terms."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Pēnsiōnem mēnstruam solvimus.",
+      "english": "We pay a monthly subscription.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "pay-in-instalments",
+    "pay"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/pensio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pensio</a> · <a href=\"https://logeion.uchicago.edu/subscriptio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: subscriptio</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. subscribe (to a periodical).",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 262, checked against the searchable text of the book (11 November 2026).",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

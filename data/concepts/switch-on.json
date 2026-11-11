@@ -4,7 +4,10 @@
   "pos": "verb",
   "also": [
     "turn on",
-    "turn the light on"
+    "turn the light on",
+    "turn on the phone",
+    "turn on the computer",
+    "switch on (a device)"
   ],
   "domain": "domus",
   "terms": [
@@ -14,6 +17,17 @@
       "period": "modern",
       "gloss": "light or kindle",
       "comment": "Using it for electrical lights is a modern application."
+    },
+    {
+      "latin": "excitō, excitāre, excitāvī, excitātum",
+      "status": "recommended",
+      "period": "modern",
+      "gloss": "wake up: switch on (a phone, a computer)",
+      "evidence": [
+        "Traupman 262, s.v. turn on",
+        "Andresian pp. 14–15"
+      ],
+      "comment": "For a phone, a computer or a television: classically to wake someone up (<span lang=\"la\">ē somnō excitāre</span>, Cic. Rep. 6.12). A light is lit, <span lang=\"la\">accenditur</span>; a device is woken."
     }
   ],
   "phrases": [
@@ -26,15 +40,21 @@
   "related": [
     "switch-off",
     "light-lamp",
-    "light-switch"
+    "light-switch",
+    "restart"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/accendo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: accendo</a>",
+    "<a href=\"https://logeion.uchicago.edu/accendo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: accendo</a> · <a href=\"https://logeion.uchicago.edu/excito\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: excito</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 262.",
+    "Anna Andresian, <em>Vocabula Picta</em> (2014), pp. 14–15.",
     "The example sentence marked “composed” is ours."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  }
+  },
+  "also_under": [
+    "computatra"
+  ]
 }

@@ -3,7 +3,11 @@
   "english": "bag",
   "pos": "noun",
   "also": [
-    "sack"
+    "sack",
+    "shopping bag",
+    "carrier bag",
+    "plastic bag",
+    "bag for life"
   ],
   "domain": "culina",
   "terms": [
@@ -11,19 +15,47 @@
       "latin": "saccus, saccī m.",
       "status": "recommended",
       "period": "classical",
-      "gloss": "bag, sack"
+      "gloss": "bag, sack",
+      "evidence": [
+        "Cic. Verr. 2.1.95 (Lewis &amp; Short)",
+        "Phaedr. 2.7.3"
+      ],
+      "comment": "The plain word for any bag, a shopping bag too."
+    },
+    {
+      "latin": "sporta, sportae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a plaited basket for carrying",
+      "evidence": [
+        "Cato Agr. 11.4 (Lewis &amp; Short)"
+      ],
+      "comment": "For a woven shopping basket."
     }
   ],
   "related": [
     "flour",
-    "pantry"
+    "pantry",
+    "go-shopping",
+    "shopping-trolley"
   ],
   "sources": [
-    "A plain classical word; the grouped card cited no source for it."
+    "<a href=\"https://logeion.uchicago.edu/saccus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: saccus</a> · <a href=\"https://logeion.uchicago.edu/sporta\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sporta</a>",
+    "The example sentence marked “composed” is ours."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-11",
     "by": "Claude"
-  }
+  },
+  "also_under": [
+    "urbs"
+  ],
+  "phrases": [
+    {
+      "latin": "Saccum cape; ēmptum īmus.",
+      "english": "Grab a bag; we’re going shopping.",
+      "source": "composed"
+    }
+  ]
 }

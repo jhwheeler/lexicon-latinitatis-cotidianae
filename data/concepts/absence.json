@@ -1,0 +1,76 @@
+{
+  "id": "absence",
+  "english": "absence",
+  "pos": "noun",
+  "also": [
+    "in my absence",
+    "in your absence",
+    "while I was away",
+    "while you were away"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "mē absente",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "in my absence, while I am (was) away",
+      "grammar": "ablative absolute of absēns, absentis, participle of absum",
+      "evidence": [
+        "Traupman 92, 267: <span lang=\"la\">mē absente</span>",
+        "Cic. Fam. 3.11.2: <span lang=\"la\">tē absentem</span>"
+      ],
+      "comment": "Latin speaks of the absent person, not of an abstract absence: <span lang=\"la\">tē absente</span>, in your absence; <span lang=\"la\">absentī mihi</span>, to me while I was away."
+    },
+    {
+      "latin": "absentia, absentiae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "absence, being away",
+      "grammar": "noun, first declension",
+      "evidence": [
+        "Cic. Pis. 37: <span lang=\"la\">cōnfer absentiam tuam cum meā</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Classical but much rarer than the participle. Quintilian also uses it for the lack of something (<span lang=\"la\">absentia testimōniōrum</span>, Quint. 5.7.1); for that sense see lack."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "complexus igitur sum cōgitātiōne tē absentem, epistulam vērō ōsculātus",
+      "english": "so I embraced you in my thoughts in your absence, and kissed the letter",
+      "source": "Cic. Fam. 3.11.2"
+    },
+    {
+      "latin": "ut certiōrēs facerēmus absentīs, sī quid esset quod eōs scīre aut nostrā aut ipsōrum interesset",
+      "english": "to let those who are away know of anything that it matters to us or to them that they should know",
+      "source": "Cic. Fam. 2.4.1"
+    },
+    {
+      "latin": "cōnfer absentiam tuam cum meā",
+      "english": "compare your absence with mine",
+      "source": "Cic. Pis. 37 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "Quid mē absente factum est?",
+      "english": "What happened while I was away?",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "away-absent",
+    "presence",
+    "lack"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/absum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: absum</a> · <a href=\"https://logeion.uchicago.edu/absentia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: absentia</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 92, 267, checked against the searchable text of the book (11 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-cicero-epistulae), checked against the editions named there.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition.",
+    "The example sentences marked “composed” are ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

@@ -2,6 +2,12 @@
   "id": "colour",
   "english": "colour",
   "pos": "noun",
+  "also": [
+    "color",
+    "hue",
+    "shade (of a colour)",
+    "tone (of a colour)"
+  ],
   "domain": "sermo",
   "terms": [
     {
@@ -9,6 +15,16 @@
       "status": "recommended",
       "period": "classical",
       "comment": "Plural <strong lang=\"la\">colōrēs</strong>, colours."
+    },
+    {
+      "latin": "tonus, tonī m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "in painting, the tone of a colour",
+      "evidence": [
+        "Plin. NH 35.29 (Lewis &amp; Short)"
+      ],
+      "comment": "A Greek term of the painters: Lewis &amp; Short, “like our tone, in painting, of the natural color of an object”. Otherwise a tone of the voice or a musical note (Vitruvius). In everyday speech <span lang=\"la\">color</span> serves for a shade or tone."
     }
   ],
   "phrases": [
@@ -39,15 +55,15 @@
     "paint"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/color\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: color</a>",
+    "<a href=\"https://logeion.uchicago.edu/color\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: color</a> · <a href=\"https://logeion.uchicago.edu/tonus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tonus</a>",
     "The example sentence marked “composed” is ours."
-  ],
-  "replaces": [
-    "entry-77"
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  }
+  },
+  "replaces": [
+    "entry-77"
+  ]
 }

@@ -10,7 +10,13 @@
     {
       "latin": "multā nocte",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "gloss": "late at night, when the night was far gone",
+      "grammar": "ablative of time, with multus",
+      "evidence": [
+        "Sen. Ep. 123.1: <span lang=\"la\">multā nocte pervēnī</span>"
+      ],
+      "comment": "<span lang=\"la\">multus</span> is at home in phrases of time; “till late at night” is <span lang=\"la\">ad multam noctem</span> (see till late at night)."
     }
   ],
   "related": [
@@ -19,11 +25,23 @@
     "a-lot"
   ],
   "sources": [
-    "<a href=\"https://logeion.org/nox\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nox</a>"
+    "<a href=\"https://logeion.org/nox\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nox</a>",
+    "Quotations from the Latinitas loci collections and the note on quantity words, checked against the editions named there."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-11",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "in Albānum meum multā nocte pervēnī",
+      "english": "I reached my Alban house late at night",
+      "source": "Sen. Ep. 123.1"
+    }
+  ],
+  "also": [
+    "late in the night",
+    "in the small hours"
+  ]
 }

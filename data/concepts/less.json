@@ -8,7 +8,10 @@
   "also": [
     "fewer",
     "less than",
-    "more or less"
+    "more or less",
+    "less than (a number)",
+    "a little under",
+    "fewer than"
   ],
   "domain": "verba",
   "terms": [
@@ -23,7 +26,7 @@
         "Liv. praef. 12: <span lang=\"la\">quantō rērum minus, tantō minus cupiditātis erat</span>",
         "Cic. Div. 1.68: <span lang=\"la\">minus XXX diēbus</span> (Lewis &amp; Short)"
       ],
-      "comment": "Before a number it often stands without <span lang=\"la\">quam</span>: <span lang=\"la\">minus XXX diēbus</span>, in less than thirty days. “The less …, the less …” is <span lang=\"la\">quantō minus …, tantō minus …</span>."
+      "comment": "Before a number it often stands without <span lang=\"la\">quam</span>, and the number keeps the case the sentence needs: <span lang=\"la\">minus XXX diēbus</span>, in less than thirty days; <span lang=\"la\">paulō minus septingentī</span>, a little under seven hundred, as subject. “The less …, the less …” is <span lang=\"la\">quantō minus …, tantō minus …</span>."
     },
     {
       "latin": "minor, minus",
@@ -71,21 +74,28 @@
       "latin": "Terentia minus bellē habuit, sed certum sciō jam convaluisse eam",
       "english": "Terentia has been less well, but I know for certain that she is better now",
       "source": "Dolabella in Cic. Fam. 9.9.1"
+    },
+    {
+      "latin": "Eō diē mīlitēs sunt paulō minus septingentī dēsīderātī.",
+      "english": "That day a little under seven hundred soldiers were lost.",
+      "source": "Caes. BG 7.51.4"
     }
   ],
   "related": [
     "more",
     "least",
-    "a-little"
+    "a-little",
+    "the-more-the-more"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/parvus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: parvus (minor, minus)</a> · <a href=\"https://logeion.uchicago.edu/paucus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: paucus</a> · <a href=\"https://logeion.uchicago.edu/multus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: multus (plus)</a>",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. back and forth: more or less.",
-    "Quotations from the Latinitas loci collections (loci-ovidius, loci-livius, loci-horatius, loci-cicero-epistulae), checked against the editions named there."
+    "Quotations from the Latinitas loci collections (loci-ovidius, loci-livius, loci-horatius, loci-cicero-epistulae), checked against the editions named there.",
+    "Quotations from the Latinitas loci collections and the note on quantity words, checked against the editions named there."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-11",
     "by": "Claude"
   }
 }

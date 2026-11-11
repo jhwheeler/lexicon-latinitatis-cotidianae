@@ -7,7 +7,10 @@
     "more … than",
     "-er (bigger, faster)",
     "rather than",
-    "love more"
+    "love more",
+    "more suitable",
+    "more necessary",
+    "know better"
   ],
   "domain": "verba",
   "terms": [
@@ -33,7 +36,7 @@
         "Sen. Ep. 78.22: <span lang=\"la\">magis juvat bibere sitientem</span>",
         "Publil. Sent. N 35: <span lang=\"la\">Nīl magis amat cupiditās, quam quod nōn licet.</span>"
       ],
-      "comment": "With verbs, and with adjectives that make no comparative; <span lang=\"la\">magis … quam</span>, more than, rather than (Vulg. Act. 20.35)."
+      "comment": "With verbs, and with adjectives that make no comparative, most of them with a vowel before the ending (<span lang=\"la\">idōneus, necessārius</span>): <span lang=\"la\">magis idōneus</span>, better suited; <span lang=\"la\">magis … quam</span>, more than, rather than (Vulg. Act. 20.35)."
     },
     {
       "latin": "plūs",
@@ -45,7 +48,7 @@
         "Catull. 14.1: <span lang=\"la\">nī tē plūs oculīs meīs amārem</span>",
         "Cic. Q. fr. 3.1.7: <span lang=\"la\">plūs ut illum amēs quam ipse amō</span>"
       ],
-      "comment": "“Love more” is <span lang=\"la\">plūs amāre</span>. For “more” of a thing, see more."
+      "comment": "“Love more” is <span lang=\"la\">plūs amāre</span>. For “more” of a thing, see more. Classical prose does not put <span lang=\"la\">plūs</span> with an adjective: “more suitable” is <span lang=\"la\">magis idōneus</span>."
     }
   ],
   "phrases": [
@@ -78,23 +81,41 @@
       "latin": "Beātius est magis dare, quam accipere.",
       "english": "It is more blessed to give than to receive.",
       "source": "Vulg. Act. 20.35"
+    },
+    {
+      "latin": "tempus hoc magis idōneum quam umquam anteā",
+      "english": "this time, better suited than ever before",
+      "source": "Cic. Fam. 1.2.3"
+    },
+    {
+      "latin": "nūllum enim officium referendā grātiā magis necessārium est",
+      "english": "for no duty is more necessary than returning a kindness",
+      "source": "Cic. Off. 1.47"
+    },
+    {
+      "latin": "Tibi, pater, permittimus: plūs scīs quid factō opus est.",
+      "english": "We leave it to you, father: you know better what needs doing.",
+      "source": "Ter. Ad. 995–996"
     }
   ],
   "related": [
     "more",
     "most-degree",
     "less",
-    "a-lot"
+    "a-lot",
+    "the-more-the-more",
+    "rather"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/comparativus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: comparativus</a> · <a href=\"https://logeion.uchicago.edu/magnus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: magnus (magis)</a> · <a href=\"https://logeion.uchicago.edu/plus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: plus</a>",
     "Quotations from the Latinitas loci collections (loci-catullus, loci-cicero-epistulae, loci-seneca-epistulae, loci-publilius, loci-vulgata), checked against the editions named there.",
     "Publilius is cited as the loci collection numbers him, by position under each initial letter in the Latin Library text; from N onwards that numbering differs from Meyer’s.",
-    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition.",
+    "Quotations from the Latinitas loci collections and the note on quantity words, checked against the editions named there."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-11",
     "by": "Claude"
   }
 }

@@ -1,0 +1,86 @@
+{
+  "id": "extreme",
+  "english": "extreme",
+  "sense": "the greatest or the farthest: utmost, outermost",
+  "pos": "adjective",
+  "also": [
+    "utmost",
+    "outermost",
+    "extremes",
+    "in the extreme",
+    "a last resort",
+    "farthest"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "summus, summa, summum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "utmost, greatest (in degree)",
+      "grammar": "adjective, superlative of superus",
+      "evidence": [
+        "Cic. Off. 1.33: <span lang=\"la\">summum jūs summa injūria</span>",
+        "Cic. Rep. 1.1: <span lang=\"la\">ad summam senectūtem</span>, to extreme old age (Lewis &amp; Short)"
+      ],
+      "comment": "The utmost degree of a thing: the greatest danger, extreme old age, <span lang=\"la\">summā vōce</span>, at the top of one’s voice. Its first sense is the top of a thing (<span lang=\"la\">summus mōns</span>, the mountain top)."
+    },
+    {
+      "latin": "extrēmus, extrēma, extrēmum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "outermost, farthest, last; extreme",
+      "grammar": "adjective, superlative of exter",
+      "evidence": [
+        "Caes. B.G. 3.3.4: <span lang=\"la\">ad extrēmum cāsum</span>",
+        "Catull. 11.2: <span lang=\"la\">in extrēmōs … Indōs</span>"
+      ],
+      "comment": "At the far edge or the end: the farthest borders, the last day (Lewis &amp; Short: “the outermost, utmost, extreme, so most freq.”); and so the last resort, the extreme case. Lewis &amp; Short notes that <span lang=\"la\">extrēmus</span> is not compared in classical Latin."
+    },
+    {
+      "latin": "ultimus, ultima, ultimum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "farthest, last",
+      "grammar": "adjective, superlative of ulterior",
+      "evidence": [
+        "Caes. B.G. 6.29.3: <span lang=\"la\">partem ultimam pontis</span>"
+      ],
+      "comment": "The farthest away, or the last in a series; less often of degree than <span lang=\"la\">summus</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "summum jūs summa injūria",
+      "english": "extreme justice is extreme injustice",
+      "source": "Cic. Off. 1.33"
+    },
+    {
+      "latin": "Majōrī tamen partī placuit, hōc reservātō ad extrēmum cāsum cōnsiliō interim reī ēventum experīrī et castra dēfendere.",
+      "english": "But most of them decided to keep this plan as a last resort, and meanwhile to wait and see how things turned out and defend the camp.",
+      "source": "Caes. B.G. 3.3.4"
+    },
+    {
+      "latin": "sīve in extrēmōs penetrābit Indōs … sīve trāns altās gradiētur Alpēs",
+      "english": "whether he will make his way to the farthest Indians … or march across the high Alps",
+      "source": "Catull. 11.2, 9"
+    }
+  ],
+  "related": [
+    "maximum",
+    "most-degree",
+    "limit",
+    "far"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/superus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: superus</a> · <a href=\"https://logeion.uchicago.edu/exter\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: exter</a> · <a href=\"https://logeion.uchicago.edu/ulter\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ulter</a>",
+    "Quotations from the Latinitas loci collections (loci-cicero-philosophica, loci-catullus), checked against the editions named there.",
+    "Caesar (B.G. 3.3.4, 6.29.3) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026).",
+    "Citations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

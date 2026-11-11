@@ -1,0 +1,77 @@
+{
+  "id": "disturb",
+  "english": "disturb",
+  "pos": "verb",
+  "also": [
+    "bother",
+    "interrupt",
+    "do not disturb",
+    "disturbance",
+    "undisturbed"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "interpellō, interpellāre, interpellāvī, interpellātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "disturb, interrupt (someone speaking or busy)",
+      "evidence": [
+        "Cic. Tusc. 1.16: <span lang=\"la\">nihil tē interpellābō, continentem ōrātiōnem audīre mālō</span> (Lewis &amp; Short)",
+        "Plaut. Amph. 803"
+      ],
+      "comment": "To break in on someone who is talking or at work. Canius wanted a little garden where he could enjoy himself <span lang=\"la\">sine interpellātōribus</span>, with no one to disturb him (Cic. Off. 3.58). See also don’t interrupt me!"
+    },
+    {
+      "latin": "perturbō, perturbāre, perturbāvī, perturbātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "upset, throw into confusion",
+      "evidence": [
+        "Cic. Mur. 35: <span lang=\"la\">diēs intermissus aut nox interposita saepe perturbat omnia</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Of plans, order or a mind thrown into disorder (see confuse, shock), rather than of a person interrupted."
+    },
+    {
+      "latin": "molestus esse (+ dat.)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "be a nuisance, bother",
+      "evidence": [
+        "Cic. de Or. 2.3 (Lewis &amp; Short, s.v. <span lang=\"la\">interveniō</span>): <span lang=\"la\">verēns nē molestī vōbīs intervenīrēmus</span>"
+      ],
+      "comment": "The polite way to ask whether one is disturbing: <span lang=\"la\">Num molestus sum?</span>"
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Nē interpellā. perge porrō dīcere.",
+      "english": "Don’t interrupt. Go on with what you were saying.",
+      "source": "Plaut. Amph. 803"
+    },
+    {
+      "latin": "tū vērō ut mē et appellēs et interpellēs et obloquāre et colloquāre velim. quid enim mihi suāvius?",
+      "english": "I want you to call me, interrupt me, talk over me and talk with me. What could be sweeter?",
+      "source": "Cic. Q. fr. 2.8.1"
+    },
+    {
+      "latin": "dictitābat sē hortulōs aliquōs emere velle, quō invītāre amīcōs et ubi sē oblectāre sine interpellātōribus posset",
+      "english": "he kept saying he wanted to buy some little garden to invite his friends to, where he could enjoy himself undisturbed",
+      "source": "Cic. Off. 3.58"
+    }
+  ],
+  "related": [
+    "dont-interrupt-me",
+    "confuse",
+    "shock"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/interpello\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: interpello</a> · <a href=\"https://logeion.uchicago.edu/perturbo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: perturbo</a> · <a href=\"https://logeion.uchicago.edu/molestus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: molestus</a>",
+    "Quotations from the Latinitas loci collections (loci-plautus, loci-cicero-epistulae, loci-cicero-philosophica), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

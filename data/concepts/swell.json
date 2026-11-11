@@ -1,0 +1,71 @@
+{
+  "id": "swell",
+  "english": "swell",
+  "pos": "verb",
+  "also": [
+    "swell up",
+    "puff up",
+    "swelling up"
+  ],
+  "domain": "corpus",
+  "terms": [
+    {
+      "latin": "tumeō, tumēre",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "swell, be swollen",
+      "register": "vōx plērumque poētica et post Augustum in ōrātiōne solūtā (Lewis &amp; Short); apud Plautum dē corpore",
+      "evidence": [
+        "Plaut. Pers. 2.5.11: <span lang=\"la\">quid hoc hīc in collō tibi tumet?</span>",
+        "Verg. A. 2.273: <span lang=\"la\">pedēs</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Of a part of the body, a sponge, a bud, the sea. The perfect <span lang=\"la\">tumuī</span> is that of <span lang=\"la\">tumēscō</span>."
+    },
+    {
+      "latin": "tumēscō, tumēscere, tumuī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "begin to swell, swell up",
+      "register": "vōx plērumque poētica et post Augustum in ōrātiōne solūtā (Lewis &amp; Short)",
+      "evidence": [
+        "Verg. G. 2.479; Tac. H. 2.77: <span lang=\"la\">vulnera</span> (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "intumēscō, intumēscere, intumuī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "swell up",
+      "register": "vōx plērumque poētica et post Augustum in ōrātiōne solūtā (Lewis &amp; Short)",
+      "evidence": [
+        "Ov. F. 1.215: <span lang=\"la\">venter</span>; Plin. NH 20.51 (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Quid hoc hīc in collō tibi tumet?",
+      "english": "What’s this swelling here on your neck?",
+      "source": "Plaut. Pers. 2.5.11"
+    },
+    {
+      "latin": "haec tibi sorte datur tergendīs spongia mēnsīs ūtilis, expressō cum levis imbre tumet",
+      "english": "this sponge falls to your lot, useful for wiping tables when, squeezed of its water, it swells up light",
+      "source": "Mart. 14.144.1–2"
+    }
+  ],
+  "related": [
+    "swollen",
+    "bump-lump"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/tumeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tumeo</a> · <a href=\"https://logeion.uchicago.edu/tumesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tumesco</a> · <a href=\"https://logeion.uchicago.edu/intumesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: intumesco</a>",
+    "Checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (11 November 2026): Plautus.",
+    "Quotations from the Latinitas loci collections (loci-martialis), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

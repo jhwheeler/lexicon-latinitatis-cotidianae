@@ -1,0 +1,54 @@
+{
+  "id": "swipe",
+  "english": "swipe",
+  "sense": "on a touchscreen",
+  "pos": "verb",
+  "also": [
+    "swipe left",
+    "swipe right",
+    "swipe up"
+  ],
+  "domain": "computatra",
+  "terms": [
+    {
+      "latin": "verrō, verrere, verrī, versum",
+      "status": "recommended",
+      "period": "ours",
+      "gloss": "sweep (with the finger)",
+      "grammar": "verb, third conjugation; with <span lang=\"la\">digitō</span>",
+      "comment": "Our choice: no reference work has a word for a swipe. A swipe is a sweep of the finger across the glass, and <span lang=\"la\">verrere</span>, to sweep, says so at once: <span lang=\"la\">digitō verre</span>. Lewis &amp; Short gives the perfect <span lang=\"la\">verrī</span> from the grammarians and notes that neither perfect was in use; the present system is all one needs. Left and right: <span lang=\"la\">ad laevam, ad dextram</span>."
+    },
+    {
+      "latin": "trahō, trahere, trāxī, tractum",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "drag",
+      "evidence": [
+        "Traupman 260, s.v. drag"
+      ],
+      "comment": "Traupman’s verb for dragging with the mouse; it suits a slow drag better than a quick swipe."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Digitō verre, et aliam imāginem vidēbis.",
+      "english": "Swipe and you’ll see another picture.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "touchscreen",
+    "tap-screen"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/verro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: verro</a> · <a href=\"https://logeion.uchicago.edu/traho\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: traho</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 260.",
+    "No source has a word for a swipe.",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

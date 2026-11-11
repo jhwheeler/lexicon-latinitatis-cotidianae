@@ -16,7 +16,7 @@ and the fonts. See docs/data-format.md and docs/records.md.
 """
 import unicodedata
 import argparse
-from html import escape
+from html import escape, unescape
 from html.parser import HTMLParser
 import json
 from pathlib import Path, PurePosixPath
@@ -730,7 +730,9 @@ def term_meta(term):
 
 
 def plain(text):
-    return re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', '', text)).strip()
+    # Entities too: this text goes into the search data, which the page inserts as text, so that
+    # “Lewis &amp; Short” must not reach it as written.
+    return unescape(re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', '', text))).strip()
 
 
 def site_header(up, search=True):

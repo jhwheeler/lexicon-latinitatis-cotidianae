@@ -725,3 +725,13 @@ test('on a wide screen the reasons stand in the margin; on a phone they follow t
   assert.ok(Math.abs(note.x - lemma.x) < 24);
   assert.equal(await overflows(), false);
 });
+
+test('a tap anywhere on a search result opens its entry', async () => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto(pageUrl('index.html?q=soap'));
+  await page.waitForSelector('.search-result');
+  // The English line, not the Latin heading.
+  await page.locator('.search-result .r-en').first().click();
+  await page.waitForURL(/\/c\/[a-z0-9-]+\.html$/);
+  await page.setViewportSize({ width: 1280, height: 900 });
+});

@@ -128,7 +128,7 @@
     });
   }
 
-  function lineNode(line, query) {
+  function lineNode(line, query, href) {
     const [kind, latin, english, meta] = line;
     const p = document.createElement('p');
     p.className = 'search-match' + (kind === 'n' ? ' source-note' : '');
@@ -139,7 +139,11 @@
         const strong = document.createElement('strong');
         strong.lang = 'la'; strong.textContent = latin;
         if (kind === 'e') strong.className = 'ex-la';
-        p.append(strong);
+        // Another word of the same entry (magis under “more”) leads to that entry too.
+        if (kind === 'd' && href) {
+          const a = document.createElement('a'); a.href = href; a.className = 'match-link'; a.append(strong);
+          p.append(a);
+        } else p.append(strong);
       }
       if (english) p.append((latin ? ' — ' : '') + english);
       if (meta) {
@@ -164,6 +168,12 @@
     const title = document.createElement('h3'), link = document.createElement('a');
     link.href = up + item.u; link.lang = 'la'; link.textContent = lead;
     title.append(link); highlight(title, query);
+    // The whole card opens the entry, not only its Latin heading: on a phone a tap anywhere on it
+    // must work. Selecting text, or a link inside the card, is left alone.
+    card.addEventListener('click', event => {
+      if (event.target.closest('a') || String(getSelection()) ) return;
+      location.href = link.href;
+    });
     const english = document.createElement('p'); english.className = 'r-en'; english.textContent = item.en;
     if (item.pos) {
       const pos = document.createElement('span'); pos.className = 'pos'; pos.textContent = item.pos;
@@ -181,7 +191,7 @@
     item.matches.slice(0, 3).forEach((match, i) => {
       const line = match.line.slice();
       if (i === 0 && line[0] !== 'n' && line[1] === lead) line[1] = '';
-      if (line.slice(1).some(Boolean)) snippets.append(lineNode(line, query));
+      if (line.slice(1).some(Boolean)) snippets.append(lineNode(line, query, link.href));
     });
     if (!best && !item.close) {
       const note = document.createElement('p'); note.className = 'source-note';

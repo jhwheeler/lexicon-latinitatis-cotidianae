@@ -1,0 +1,58 @@
+{
+  "id": "guts-intestines",
+  "english": "guts",
+  "sense": "intestines",
+  "pos": "noun",
+  "also": [
+    "intestines",
+    "innards",
+    "entrails",
+    "gut",
+    "insides"
+  ],
+  "domain": "corpus",
+  "terms": [
+    {
+      "latin": "intestīna, intestīnōrum n. pl.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "the guts, intestines",
+      "evidence": [
+        "Cic. Fam. 7.26.1: <span lang=\"la\">ex intestīnīs labōrārem</span>",
+        "Plaut. Cas. 4.3.6 (Lewis &amp; Short)"
+      ],
+      "comment": "Also singular, <span lang=\"la\">intestīnum</span>, a gut. <span lang=\"la\">Ex intestīnīs labōrāre</span> is to have trouble with one’s bowels (see bowels)."
+    },
+    {
+      "latin": "viscera, viscerum n. pl.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the inner organs, innards",
+      "evidence": [
+        "Cels. 4.11; Lucr. 3.249 (Lewis &amp; Short)"
+      ],
+      "comment": "All the inner organs, heart, lungs and liver as well as the guts; in classical prose only plural (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Cum decimum jam diem graviter ex intestīnīs labōrārem…",
+      "english": "When I had already been suffering badly with my guts for ten days…",
+      "source": "Cic. Fam. 7.26.1"
+    }
+  ],
+  "related": [
+    "bowels",
+    "belly",
+    "guts-courage"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/intestinus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: intestinus</a> · <a href=\"https://logeion.uchicago.edu/viscus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: viscus</a>",
+    "Checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (11 November 2026): Cicero’s letters."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

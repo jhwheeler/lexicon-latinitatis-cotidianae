@@ -1,0 +1,68 @@
+{
+  "id": "undertake",
+  "english": "undertake",
+  "sense": "take on a task",
+  "pos": "verb",
+  "also": [
+    "take on",
+    "take upon oneself",
+    "undertake to do"
+  ],
+  "also_under": [
+    "labor"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "suscipiō, suscipere, suscēpī, susceptum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "undertake, take on",
+      "evidence": [
+        "Cic. Off. 1.28: <span lang=\"la\">aut labōrem aut sūmptūs suscipere nōlunt</span>"
+      ],
+      "comment": "Of a task, a burden, an expense, a war, taken on of one’s own accord; <span lang=\"la\">recipere</span> is used of a task one is given or has promised (Lewis &amp; Short)."
+    },
+    {
+      "latin": "recipiō, recipere, recēpī, receptum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "undertake, take on (a duty, a promise); guarantee",
+      "evidence": [
+        "Cic. Div. Caec. 26: <span lang=\"la\">mihi Siculōrum causam receptam, populī Rōmānī susceptam esse videor</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Its first sense is to take back; <span lang=\"la\">in sē recipere</span>, to take upon oneself (see undertake responsibility)."
+    },
+    {
+      "latin": "aggredior, aggredī, aggressus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "set about, attempt",
+      "evidence": [
+        "Cic. Off. 2.1 (Lewis &amp; Short)"
+      ],
+      "comment": "Also to approach someone, and to attack."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Nam aut inimīcitiās aut labōrem aut sūmptūs suscipere nōlunt",
+      "english": "for they are unwilling to take on enmities, or work, or expense",
+      "source": "Cic. Off. 1.28"
+    }
+  ],
+  "related": [
+    "undertake-responsibility",
+    "begin",
+    "try"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/suscipio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: suscipio</a> · <a href=\"https://logeion.uchicago.edu/recipio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: recipio</a> · <a href=\"https://logeion.uchicago.edu/aggredior\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aggredior</a>",
+    "Checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (11 November 2026): Cicero."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

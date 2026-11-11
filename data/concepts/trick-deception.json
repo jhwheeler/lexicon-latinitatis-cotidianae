@@ -1,0 +1,94 @@
+{
+  "id": "trick-deception",
+  "english": "trick",
+  "sense": "something done to deceive",
+  "pos": "noun",
+  "also": [
+    "a trick",
+    "tricks",
+    "dirty trick",
+    "ruse",
+    "deception",
+    "is this a trick?"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "dolus, dolī m.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a trick, guile",
+      "evidence": [
+        "Caes. B.G. 1.13.6: <span lang=\"la\">magis virtūte … quam dolō</span>",
+        "Traupman 398"
+      ],
+      "comment": "Any trick or ruse; the plural <span lang=\"la\">dolī</span> are the schemes of comedy’s slaves. In law, <span lang=\"la\">dolus malus</span> is fraud. “Play fair” is “without tricks”: <span lang=\"la\">sine dolō</span>."
+    },
+    {
+      "latin": "fallācia, fallāciae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a trick, a deception, an intrigue",
+      "evidence": [
+        "Ter. And. 212: <span lang=\"la\">faciam in nūptiīs fallāciam</span>",
+        "Cic. Att. 1.1.1: <span lang=\"la\">sine fūcō ac fallāciīs</span> (Lewis &amp; Short)"
+      ],
+      "comment": "In Cicero only plural (Lewis &amp; Short)."
+    },
+    {
+      "latin": "techna, technae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a trick, a dodge",
+      "register": "vōx cōmica: Plaut., Ter.",
+      "evidence": [
+        "Plaut. Capt. 3.4.109; Ter. Eun. 4.4.51 (Lewis &amp; Short)"
+      ],
+      "comment": "From Greek τέχνη; “ante-classical” in Lewis &amp; Short, that is, the comedians’ word."
+    },
+    {
+      "latin": "captiō, captiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a catch, a trick (in words or in a deal)",
+      "evidence": [
+        "Traupman 110: <span lang=\"la\">num hoc est captiō?</span>",
+        "Cic. Quint. 53 (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "dolus an virtūs, quis in hoste requīrat?",
+      "english": "trickery or courage: who would ask which, against an enemy?",
+      "source": "Verg. A. 2.390"
+    },
+    {
+      "latin": "nam dolī nōn dolī sunt, nisi astū colās",
+      "english": "for tricks aren’t tricks unless you work them cleverly",
+      "source": "Plaut. Capt. 2.1.30"
+    },
+    {
+      "latin": "Lūditō lēgitimē, absque technīs ac dolō malō.",
+      "english": "Play fair, without tricks or cheating.",
+      "source": "Erasm. Coll., <span lang=\"la\">Lūsus puerīlēs</span>"
+    }
+  ],
+  "related": [
+    "trick-deceive",
+    "magic-trick",
+    "lie-tell",
+    "playful"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/dolus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dolus</a> · <a href=\"https://logeion.uchicago.edu/fallacia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fallacia</a> · <a href=\"https://logeion.uchicago.edu/techna\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: techna</a> · <a href=\"https://logeion.uchicago.edu/captio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: captio</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 110, 398, checked against the searchable text of the book.",
+    "Checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (11 November 2026): Caesar, Terence, Vergil, Plautus.",
+    "Quotations from the Latinitas loci collections (loci-erasmus), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -807,6 +807,25 @@ def render_concept(record, site):
         block.append(f'<p class="comment">{main["comment"]}</p>')
     parts.append('<section class="term has-side" aria-label="The Latin">' + ''.join(block) + '</section>')
 
+    # The other words come before the examples: the examples illustrate every term of the record,
+    # not only the first, so all the terms must be on the page before them (Jack, 11 November 2026).
+    if others:
+        items = []
+        for term in others:
+            head, rest = links.latin(term['latin'])
+            side = notes(term)
+            meta = term_meta(term)
+            gloss = f'<span class="gloss" lang="en"> — {escape(term["gloss"])}</span>' if term.get('gloss') else ''
+            item = [side, f'<p class="lemma" lang="la"><b>{head}</b>{refs(term)}{escape(rest)}{gloss}</p>',
+                    f'<p class="meta-line">{meta}</p>']
+            if 'register' in term:
+                item.append(f'<p class="meta-line register">({term["register"]})</p>')
+            if 'comment' in term:
+                item.append(f'<p class="comment">{term["comment"]}</p>')
+            items.append('<li' + (' class="has-side"' if side else '') + '>' + ''.join(item) + '</li>')
+        parts.append(f'<section class="sec" aria-labelledby="ow-{key}-h"><div class="sec-head"><h2 id="ow-{key}-h">Other words</h2></div>'
+                     '<ul class="words">' + ''.join(items) + '</ul></section>')
+
     phrases = record.get('phrases', [])
     if phrases:
         kinds = {'composed' if p['source'] == 'composed' else 'author' for p in phrases}
@@ -827,23 +846,6 @@ def render_concept(record, site):
                          f'<p class="en">{escape(phrase["english"])}{source}</p></li>')
         parts.append(f'<section class="sec" aria-labelledby="ex-{key}-h"><div class="sec-head"><h2 id="ex-{key}-h">Examples</h2>'
                      f'{control}</div><ul class="ex" id="ex-{key}">' + ''.join(items) + '</ul></section>')
-
-    if others:
-        items = []
-        for term in others:
-            head, rest = links.latin(term['latin'])
-            side = notes(term)
-            meta = term_meta(term)
-            gloss = f'<span class="gloss" lang="en"> — {escape(term["gloss"])}</span>' if term.get('gloss') else ''
-            item = [side, f'<p class="lemma" lang="la"><b>{head}</b>{refs(term)}{escape(rest)}{gloss}</p>',
-                    f'<p class="meta-line">{meta}</p>']
-            if 'register' in term:
-                item.append(f'<p class="meta-line register">({term["register"]})</p>')
-            if 'comment' in term:
-                item.append(f'<p class="comment">{term["comment"]}</p>')
-            items.append('<li' + (' class="has-side"' if side else '') + '>' + ''.join(item) + '</li>')
-        parts.append(f'<section class="sec" aria-labelledby="ow-{key}-h"><div class="sec-head"><h2 id="ow-{key}-h">Other words</h2></div>'
-                     '<ul class="words">' + ''.join(items) + '</ul></section>')
 
     if record.get('related'):
         parts.append('<p class="see">See also ' + ', '.join(

@@ -1,0 +1,68 @@
+{
+  "id": "specify",
+  "english": "specify",
+  "sense": "state exactly",
+  "pos": "verb",
+  "also": [
+    "be specific",
+    "state expressly",
+    "specified"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "nōminātim dīcere",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "specify, state expressly",
+      "grammar": "phrase",
+      "evidence": [
+        "Cic. Off. 3.65: <span lang=\"la\">nisi nōminātim dictum esset</span>"
+      ],
+      "comment": "<span lang=\"la\">Nōminātim</span> is “by name, one by one, expressly”, and goes with any verb of saying or naming: <span lang=\"la\">nōminātim excipere</span>, to except by name (Cic. Att. 11.7.2)."
+    },
+    {
+      "latin": "dēfīniō, dēfīnīre, dēfīnīvī, dēfīnītum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "fix, set exactly (a time, a term, a limit)",
+      "evidence": [
+        "Caes. B.C. 3.82.4; Quint. 12.6.1 (Lewis &amp; Short)"
+      ],
+      "comment": "To set bounds to, and so to fix; for its sense “define”, see define."
+    },
+    {
+      "latin": "praescrībō, praescrībere, praescrīpsī, praescrīptum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "lay down, prescribe (what is to be done)",
+      "evidence": [
+        "Cic. Fam. 13.26.2: <span lang=\"la\">sīc enim praescrīpsimus</span> (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "id statuērunt, sī venditor scīret, nisi nōminātim dictum esset, praestārī oportēre.",
+      "english": "they ruled that, if the seller knew of the defect, he must make it good, unless it had been expressly stated.",
+      "source": "Cic. Off. 3.65"
+    },
+    {
+      "latin": "ibi ego dīcam quidquid inerit nōminātim",
+      "english": "I’ll tell you everything that’s in it, item by item",
+      "source": "Plaut. Rud. 1134"
+    }
+  ],
+  "related": [
+    "define"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/nominatim\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nominatim</a> · <a href=\"https://logeion.uchicago.edu/definio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: definio</a> · <a href=\"https://logeion.uchicago.edu/praescribo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praescribo</a>",
+    "Checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (11 November 2026): Cicero, Plautus."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

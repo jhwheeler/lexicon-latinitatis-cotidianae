@@ -1,0 +1,82 @@
+{
+  "id": "before-a-time",
+  "english": "before",
+  "sense": "a time or an event",
+  "pos": "preposition",
+  "also": [
+    "before dinner",
+    "before dawn",
+    "before noon",
+    "the year before"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "ante + acc.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "before",
+      "grammar": "preposition with the accusative",
+      "evidence": [
+        "Cic. Att. 12.1.1: <span lang=\"la\">ēgrediēns ē vīllā ante lūcem</span>",
+        "Sen. Ep. 13.4: <span lang=\"la\">nē sīs miser ante tempus</span>"
+      ],
+      "comment": "Like <span lang=\"la\">post</span>, with a time or an event: <span lang=\"la\">ante cēnam, ante lūcem, ante merīdiem</span>. For a thing, a clause with <span lang=\"la\">antequam</span>. For “ago”, see ago."
+    },
+    {
+      "latin": "annō ante",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a year before, the year before",
+      "grammar": "phrase: ante as an adverb, with the measure of time in the ablative",
+      "evidence": [
+        "Cic. Sen. 19: <span lang=\"la\">annō ante mē cēnsōrem mortuus est</span>"
+      ],
+      "comment": "So <span lang=\"la\">paucīs ante diēbus</span>, a few days before; <span lang=\"la\">paulō ante</span>, a little earlier."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "hoc litterulārum exarāvī ēgrediēns ē vīllā ante lūcem",
+      "english": "I scribbled this little note as I left the house before dawn",
+      "source": "Cic. Att. 12.1.1"
+    },
+    {
+      "latin": "sī volēs in convīviō multum bibere cēnāreque libenter, ante cēnam ēstō crūdam quantum volēs ex acētō",
+      "english": "if you want to drink a lot at a party and enjoy your dinner, eat as much raw cabbage as you like with vinegar before dinner",
+      "source": "Cato Agr. 156.1"
+    },
+    {
+      "latin": "nē sīs miser ante tempus",
+      "english": "don’t be unhappy before it is time",
+      "source": "Sen. Ep. 13.4"
+    },
+    {
+      "latin": "annō ante mē cēnsōrem mortuus est, novem annīs post meum cōnsulātum",
+      "english": "he died the year before I was censor, nine years after my consulship",
+      "source": "Cic. Sen. 19"
+    },
+    {
+      "latin": "atquī tertium, inquit, ante diem scītōte dēcerptam Carthāgine. tam prope ā moerīs habēmus hostem!",
+      "english": "“And yet,” he said, “know that this was picked at Carthage the day before yesterday. So close to our walls is the enemy!”",
+      "source": "Plin. NH 15.75"
+    }
+  ],
+  "related": [
+    "after-a-time",
+    "ago",
+    "before-noon",
+    "until-a-time"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/ante\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ante</a>",
+    "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-cato, loci-seneca-epistulae, loci-plinius), checked against the editions named there.",
+    "Cicero, <em>De senectute</em> checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026).",
+    "Pliny’s <span lang=\"la\">tertium ante diem</span> counts both ends, as Romans did: the day before yesterday."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

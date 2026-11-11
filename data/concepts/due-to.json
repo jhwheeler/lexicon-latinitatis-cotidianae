@@ -44,6 +44,18 @@
         "Cic. Att. 9.12.1: <span lang=\"la\">prae lacrimīs possum reliqua nec cōgitāre nec scrībere</span>"
       ],
       "comment": "Classically only of a hindrance, with a negative or <span lang=\"la\">vix</span> (Lewis &amp; Short): one cannot speak for tears, see for the crowd."
+    },
+    {
+      "latin": "operā + gen.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "thanks to, through (someone’s doing)",
+      "grammar": "the ablative of opera, with a genitive or a possessive (meā, tuā operā)",
+      "evidence": [
+        "Cic. Sen. 11: <span lang=\"la\">meā operā, Q. Fabī, Tarentum recēpistī</span>",
+        "Ter. Hec. 228: <span lang=\"la\">nōn meā operā neque pol culpā ēvēnit</span>"
+      ],
+      "comment": "“Thanks to me”, “through my doing”, for good or ill (Lewis &amp; Short)."
     }
   ],
   "phrases": [
@@ -61,15 +73,23 @@
       "latin": "prae lacrimīs possum reliqua nec cōgitāre nec scrībere",
       "english": "for tears I can neither think nor write the rest",
       "source": "Cic. Att. 9.12.1"
+    },
+    {
+      "latin": "glōriantī atque ita dīcentī, ‘meā operā, Q. Fabī, Tarentum recēpistī,’ ‘certē,’ inquit rīdēns, ‘nam nisi tū āmīsissēs, numquam recēpissem.’",
+      "english": "when the man boasted, “Thanks to me, Quintus Fabius, you recovered Tarentum,” Fabius laughed and said, “Certainly: if you hadn’t lost it, I should never have recovered it.”",
+      "source": "Cic. Sen. 11"
     }
   ],
   "related": [
     "why",
-    "therefore"
+    "therefore",
+    "by-the-means",
+    "for-the-sake-of"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/propter\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: propter</a> · <a href=\"https://logeion.uchicago.edu/ob\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ob</a> · <a href=\"https://logeion.uchicago.edu/prae\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: prae</a>",
-    "Caesar, Cicero’s letters, Plautus and Terence checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+    "<a href=\"https://logeion.uchicago.edu/propter\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: propter</a> · <a href=\"https://logeion.uchicago.edu/ob\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ob</a> · <a href=\"https://logeion.uchicago.edu/prae\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: prae</a> · <a href=\"https://logeion.uchicago.edu/opera\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: opera</a>",
+    "Caesar, Cicero’s letters, Plautus and Terence checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>.",
+    "Cicero, <em>De senectute</em> 11, and Terence, <em>Hecyra</em> 228 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026)."
   ],
   "review": {
     "status": "draft",

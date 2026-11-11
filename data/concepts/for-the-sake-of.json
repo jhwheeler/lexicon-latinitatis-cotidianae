@@ -1,0 +1,110 @@
+{
+  "id": "for-the-sake-of",
+  "english": "for",
+  "sense": "for the sake of, for a purpose",
+  "pos": "preposition",
+  "also": [
+    "for the sake of",
+    "for the good of",
+    "for fun",
+    "for doing",
+    "what for"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "causā + gen.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "for the sake of; for (a purpose)",
+      "grammar": "the ablative of causa, placed after its genitive",
+      "evidence": [
+        "Cato Agr. 157: <span lang=\"la\">valētūdinis causā experīrēs</span>",
+        "Cic. Amic. 44: <span lang=\"la\">amīcōrum causā honesta faciāmus</span>"
+      ],
+      "comment": "With a person’s pronoun, the possessive: <span lang=\"la\">meā causā, tuā causā</span>, for my sake, for yours. With a gerund it gives the purpose: <span lang=\"la\">lūdendī causā</span>, for play. See purpose."
+    },
+    {
+      "latin": "grātiā + gen.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "for the sake of, for",
+      "grammar": "the ablative of grātia, placed after its genitive",
+      "evidence": [
+        "Gell. 5.14.21: <span lang=\"la\">quasi opis petendae grātiā</span>",
+        "Quint. 1.1.26: <span lang=\"la\">irrītandae ad discendum īnfantiae grātiā</span>"
+      ],
+      "comment": "Less common than <span lang=\"la\">causā</span> in Cicero; at home in set phrases such as <span lang=\"la\">exemplī grātiā</span>, for example."
+    },
+    {
+      "latin": "ad + acc.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "for (doing), for (an end)",
+      "grammar": "preposition with the accusative, often of a gerund or gerundive",
+      "evidence": [
+        "Varr. RR 1.54.2: <span lang=\"la\">legitur ad bibendum, ēligitur ad edendum</span>",
+        "Liv. 21.54.8: <span lang=\"la\">ope ūllā ad arcendum frīgus adhibitā</span>"
+      ],
+      "comment": "What a thing is meant for: <span lang=\"la\">ad bibendum</span>, for drinking."
+    },
+    {
+      "latin": "cāsus datīvus",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "for (what a thing serves)",
+      "grammar": "construction: the dative, often of a gerundive",
+      "evidence": [
+        "Mart. 14.144.1: <span lang=\"la\">tergendīs spongia mēnsīs ūtilis</span>"
+      ],
+      "comment": "After <span lang=\"la\">ūtilis, aptus</span> and in set phrases."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nūllus sūmptus est, et sī sūmptus esset, tamen valētūdinis causā experīrēs",
+      "english": "it costs nothing; and even if it did, you would still try it for your health",
+      "source": "Cato Agr. 157"
+    },
+    {
+      "latin": "haec igitur prīma lēx amīcitiae sanciātur, ut ab amīcīs honesta petāmus, amīcōrum causā honesta faciāmus",
+      "english": "let this be the first law of friendship: ask friends only for what is right, and do only what is right for friends’ sake",
+      "source": "Cic. Amic. 44"
+    },
+    {
+      "latin": "Salūtis causā bene fit hominī injūria.",
+      "english": "To hurt someone for the sake of his health is to do right.",
+      "source": "Publil. Sent. S 59"
+    },
+    {
+      "latin": "sublātum pedem ostendere mihi et porgere quasi opis petendae grātiā vīsus est",
+      "english": "he seemed to lift his paw, show it to me and hold it out, as if to ask for help",
+      "source": "Gell. 5.14.21"
+    },
+    {
+      "latin": "in vindēmiā dīligentis ūva nōn sōlum legitur sed etiam ēligitur; legitur ad bibendum, ēligitur ad edendum",
+      "english": "at a careful man’s vintage the grapes are not only picked but picked over: picked for drinking, picked over for eating",
+      "source": "Varr. RR 1.54.2"
+    },
+    {
+      "latin": "haec tibi sorte datur tergendīs spongia mēnsīs ūtilis, expressō cum levis imbre tumet",
+      "english": "this sponge is your prize in the draw, useful for wiping tables when, squeezed dry, it swells up light",
+      "source": "Mart. 14.144.1–2"
+    }
+  ],
+  "related": [
+    "purpose",
+    "for-on-behalf-of",
+    "due-to"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/causa\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: causa</a> · <a href=\"https://logeion.uchicago.edu/gratia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gratia</a> · <a href=\"https://logeion.uchicago.edu/ad\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ad</a> · <a href=\"https://logeion.uchicago.edu/dativus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dativus</a>",
+    "Quotations from the Latinitas loci collections (loci-cato, loci-cicero-philosophica, loci-publilius, loci-gellius, loci-varro, loci-martialis, loci-quintilianus, loci-livius), checked against the editions named there.",
+    "Publilius is cited as the loci collection numbers him, by position under each initial letter in the Latin Library text."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

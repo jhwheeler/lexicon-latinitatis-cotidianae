@@ -1,0 +1,99 @@
+{
+  "id": "for-a-time",
+  "english": "for",
+  "sense": "a length of time",
+  "pos": "preposition",
+  "also": [
+    "for two days",
+    "for an hour",
+    "for a week",
+    "all night",
+    "all day",
+    "for the next two days"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "cāsus accūsātīvus",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "for (how long)",
+      "grammar": "construction: the length of time in the accusative, with no preposition",
+      "evidence": [
+        "Cic. Fam. 14.2.3: <span lang=\"la\">diēs noctēsque versāris</span>",
+        "Cic. Tusc. 2.40: <span lang=\"la\">inediam bīduum aut trīduum ferunt</span>"
+      ],
+      "comment": "Only with words of time (<span lang=\"la\">hōram, diem, bīduum, annum</span>). A distance or a thing is not a length of time: “he slept the whole journey” is <span lang=\"la\">per tōtum iter dormīvit</span>, not <span lang=\"la\">tōtum iter</span>. Age is said the same way: <span lang=\"la\">decem annōs nātus</span>."
+    },
+    {
+      "latin": "per + acc.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "for, all through (a time)",
+      "grammar": "preposition with the accusative",
+      "evidence": [
+        "Liv. 21.33.11: <span lang=\"la\">per trīduum exercitum aluit</span>",
+        "Liv. 22.2.7: <span lang=\"la\">per quadrīduum jam et trēs noctēs</span>"
+      ],
+      "comment": "Stresses that it lasted the whole time; see also during."
+    },
+    {
+      "latin": "in + acc.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "for (a time ahead: what is meant to last)",
+      "grammar": "preposition with the accusative",
+      "evidence": [
+        "Ter. Eun. 191: <span lang=\"la\">in hoc bīduum, Thāis, valē</span>"
+      ],
+      "comment": "“For tomorrow”, <span lang=\"la\">in crāstinum</span>; “for ever”, <span lang=\"la\">in perpetuum</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nam mihi ante oculōs diēs noctēsque versāris",
+      "english": "for you are before my eyes day and night",
+      "source": "Cic. Fam. 14.2.3"
+    },
+    {
+      "latin": "aniculae saepe inediam bīduum aut trīduum ferunt",
+      "english": "little old women often go without food for two or three days",
+      "source": "Cic. Tusc. 2.40"
+    },
+    {
+      "latin": "mustum sī volēs tōtum annum habēre, in amphoram mustum inditō et corticem oppicātō, dēmittitō in piscīnam. post diēs XXX eximitō. tōtum annum mustum erit",
+      "english": "if you want grape juice all year, put the juice in a jar, pitch the cork and sink it in the pond; take it out after thirty days; there will be grape juice all year",
+      "source": "Cato Agr. 120"
+    },
+    {
+      "latin": "captō cibō ac pecoribus per trīduum exercitum aluit",
+      "english": "with the food and the flocks he had captured he fed the army for three days",
+      "source": "Liv. 21.33.11"
+    },
+    {
+      "latin": "In hoc bīduum, Thāis, valē. — Mī Phaedria, et tū; numquid vīs aliud?",
+      "english": "Goodbye for these two days, Thais. — And you, my Phaedria; is there anything else?",
+      "source": "Ter. Eun. 190–191"
+    },
+    {
+      "latin": "cētera intēctī tōtōs diēs jūxtā focum atque ignem agunt",
+      "english": "otherwise unclothed, they spend whole days by the hearth and the fire",
+      "source": "Tac. Germ. 17.1"
+    }
+  ],
+  "related": [
+    "long-time",
+    "during",
+    "since-a-time",
+    "until-a-time"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/accusativus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: accusativus</a> · <a href=\"https://logeion.uchicago.edu/per\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: per</a> · <a href=\"https://logeion.uchicago.edu/in\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: in</a>",
+    "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-cicero-philosophica, loci-cato, loci-livius, loci-terentius, loci-tacitus), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

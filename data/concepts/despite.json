@@ -1,0 +1,95 @@
+{
+  "id": "despite",
+  "english": "despite",
+  "pos": "preposition",
+  "also": [
+    "in spite of",
+    "notwithstanding",
+    "even though",
+    "against someone’s will",
+    "all the same"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "quamvīs",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "despite (being), however (much)",
+      "grammar": "conjunction with the subjunctive; also with an adjective or participle alone",
+      "evidence": [
+        "Mart. 13.81.1: <span lang=\"la\">quamvīs lāta gerat patella rhombum</span>",
+        "Plin. NH 9.25: <span lang=\"la\">quamvīs occultus atque abditus</span>"
+      ],
+      "comment": "Latin has no preposition for “despite”: “despite the cold” becomes a clause, “though it is cold”, with <span lang=\"la\">quamvīs, quamquam</span> or <span lang=\"la\">etsī</span>, and <span lang=\"la\">tamen</span> often marks the main clause. With an adjective alone, “however …”: <span lang=\"la\">quamvīs fertilis</span>."
+    },
+    {
+      "latin": "etsī … tamen",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "even though … still",
+      "grammar": "conjunction with the indicative; tamen in the main clause",
+      "evidence": [
+        "Cic. Att. 12.53.1: <span lang=\"la\">etsī nihil habeō quod ad tē scrībam, scrībō tamen</span>"
+      ]
+    },
+    {
+      "latin": "invītus, invīta, invītum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "despite someone, against someone’s will",
+      "grammar": "adjective, first and second declension; with a noun or pronoun in the ablative absolute: mē invītō, despite me",
+      "evidence": [
+        "Cic. Att. 14.13.6: <span lang=\"la\">fēcisset nihilō minus mē invītō</span>",
+        "Publil. Sent. R 26: <span lang=\"la\">quidquid invītō auferās</span>"
+      ],
+      "comment": "“Despite my wishes”: <span lang=\"la\">mē invītō</span>, or <span lang=\"la\">contrā meam voluntātem</span>. “Despite that”, “all the same”: <span lang=\"la\">nihilōminus</span> (see however)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ego etsī nihil habeō quod ad tē scrībam, scrībō tamen quia tēcum loquī videor",
+      "english": "even though I have nothing to write to you, I write all the same, because I feel I am talking with you",
+      "source": "Cic. Att. 12.53.1"
+    },
+    {
+      "latin": "quamvīs lāta gerat patella rhombum, rhombus lātior est tamen patellā",
+      "english": "however wide the dish that holds the turbot, the turbot is wider than the dish",
+      "source": "Mart. 13.81.1–2"
+    },
+    {
+      "latin": "quamvīs sint sub aquā, sub aquā maledīcere temptant",
+      "english": "though they are under water, under water they still try to curse",
+      "source": "Ov. Met. 6.376"
+    },
+    {
+      "latin": "ut ager quamvīs fertilis sine cultūrā frūctuōsus esse nōn potest, sīc sine doctrīnā animus",
+      "english": "as a field, however fertile, cannot bear fruit without tilling, so neither can a mind without teaching",
+      "source": "Cic. Tusc. 2.13"
+    },
+    {
+      "latin": "etenim ille, quoniam semel indūxit animum sibi licēre quod vellet, fēcisset nihilō minus mē invītō",
+      "english": "for once he had made up his mind that he could do as he liked, he would have done it all the same, despite me",
+      "source": "Cic. Att. 14.13.6"
+    },
+    {
+      "latin": "Rapere est, nōn petere, quidquid invītō auferās.",
+      "english": "Whatever you take from someone against his will is grabbing, not asking.",
+      "source": "Publil. Sent. R 26"
+    }
+  ],
+  "related": [
+    "however"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/quamvis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quamvis</a> · <a href=\"https://logeion.uchicago.edu/etsi\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: etsi</a> · <a href=\"https://logeion.uchicago.edu/invitus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: invitus</a>",
+    "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-martialis, loci-ovidius, loci-cicero-philosophica, loci-publilius, loci-plinius), checked against the editions named there.",
+    "Cicero’s letters to Atticus (14.13.6) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026).",
+    "Publilius is cited as the loci collection numbers him, by position under each initial letter in the Latin Library text."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

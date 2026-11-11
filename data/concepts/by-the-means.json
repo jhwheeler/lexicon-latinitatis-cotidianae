@@ -1,0 +1,83 @@
+{
+  "id": "by-the-means",
+  "english": "by",
+  "sense": "the means: how something is done",
+  "pos": "preposition",
+  "also": [
+    "by means of",
+    "through",
+    "by doing",
+    "on foot",
+    "by hand",
+    "by letter"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "cāsus ablātīvus",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "by, through (the means)",
+      "grammar": "construction: the means in the ablative, with no preposition",
+      "evidence": [
+        "Cic. Att. 5.9.1: <span lang=\"la\">iter facere pedibus</span>",
+        "Cic. Off. 1.105: <span lang=\"la\">mēns discendō alitur et cōgitandō</span>"
+      ],
+      "comment": "The ordinary way: <span lang=\"la\">pedibus</span>, on foot; <span lang=\"la\">manū</span>, by hand; <span lang=\"la\">litterīs</span>, by letter. “By doing” is the ablative of the gerund: <span lang=\"la\">ambulandō</span>, by walking. A person who does it takes <span lang=\"la\">ā</span> (see “by”, the doer); a person through whom it is done takes <span lang=\"la\">per</span>. For “thanks to”, see due to."
+    },
+    {
+      "latin": "per + acc.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "through, by means of (a go-between, a channel)",
+      "grammar": "preposition with the accusative",
+      "evidence": [
+        "Caes. BG 1.12.2: <span lang=\"la\">per explōrātōrēs Caesar certior factus est</span>",
+        "Cic. Att. 4.14.1: <span lang=\"la\">mē per litterās fēcit certiōrem</span>"
+      ],
+      "comment": "Chiefly of the person who carries a thing out or brings word, and of channels such as <span lang=\"la\">per litterās</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Actiō māluimus iter facere pedibus quī incommodissimē nāvigāssēmus",
+      "english": "from Actium we preferred to travel on foot, after a most uncomfortable voyage",
+      "source": "Cic. Att. 5.9.1"
+    },
+    {
+      "latin": "multae etiam istārum arborum meā manū sunt satae",
+      "english": "many of these trees were even planted by my own hand",
+      "source": "Cic. Sen. 59"
+    },
+    {
+      "latin": "hominis autem mēns discendō alitur et cōgitandō",
+      "english": "the human mind is fed by learning and thinking",
+      "source": "Cic. Off. 1.105"
+    },
+    {
+      "latin": "Sōcratēn ferunt, cum ūsque ad vesperum contentius ambulāret quaesītumque esset ex eō quārē id faceret, respondisse sē, quō melius cēnāret, obsōnāre ambulandō famem",
+      "english": "they say that Socrates, walking hard until evening and asked why he did it, answered that by walking he was buying in hunger, to enjoy his dinner more",
+      "source": "Cic. Tusc. 5.97"
+    },
+    {
+      "latin": "Ubi per explōrātōrēs Caesar certior factus est trēs jam partēs cōpiārum Helvētiōs id flūmen trādūxisse",
+      "english": "when Caesar learned through his scouts that the Helvetii had already taken three quarters of their forces across that river",
+      "source": "Caes. BG 1.12.2"
+    }
+  ],
+  "related": [
+    "by-the-doer",
+    "with-tool",
+    "due-to"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/ablativus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ablativus</a> · <a href=\"https://logeion.uchicago.edu/per\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: per</a>",
+    "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-cicero-philosophica), checked against the editions named there.",
+    "Caesar and Cicero’s letters to Atticus (4.14.1) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

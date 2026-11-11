@@ -1,0 +1,78 @@
+{
+  "id": "by-the-doer",
+  "english": "by",
+  "sense": "the doer, with a passive verb",
+  "pos": "preposition",
+  "also": [
+    "done by",
+    "made by",
+    "written by",
+    "loved by"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "ā, ab + abl.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "by (a person or an animal)",
+      "grammar": "preposition with the ablative, after a passive verb; ā before consonants, ab before vowels and h",
+      "evidence": [
+        "Cic. Att. 1.5.8: <span lang=\"la\">tē ā mē frāternē amārī</span>",
+        "Mart. 5.84.2: <span lang=\"la\">clāmōsō revocātur ā magistrō</span>"
+      ],
+      "comment": "Only for a person, or a creature thought of as acting: <span lang=\"la\">ā cane … tenētur aper</span>. A thing or a force that does it stands in the plain ablative, without <span lang=\"la\">ā</span> (see “by”, the means): <span lang=\"la\">vīpera necat morsū</span>."
+    },
+    {
+      "latin": "cāsus datīvus",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "by (the person who has to do something)",
+      "grammar": "construction: the person in the dative, with the gerundive",
+      "evidence": [
+        "Caes. BG 2.20.1: <span lang=\"la\">Caesarī omnia ūnō tempore erant agenda</span>"
+      ],
+      "comment": "With the gerundive Latin names the doer in the dative, not with <span lang=\"la\">ā</span>: <span lang=\"la\">mihi eundum est</span>, I have to go."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "cūrā ut valeās et nōs amēs et tibi persuādeās tē ā mē frāternē amārī",
+      "english": "take care of yourself, love us, and be sure that you are loved by me like a brother",
+      "source": "Cic. Att. 1.5.8"
+    },
+    {
+      "latin": "jam trīstis nucibus puer relictīs clāmōsō revocātur ā magistrō",
+      "english": "now the boy sadly leaves his nuts and is called back by the shouting schoolmaster",
+      "source": "Mart. 5.84.1–2"
+    },
+    {
+      "latin": "parva necat morsū spatiōsum vīpera taurum: ā cane nōn magnō saepe tenētur aper",
+      "english": "a small viper kills a huge bull with its bite; a boar is often held by a dog of no great size",
+      "source": "Ov. Rem. 421–422"
+    },
+    {
+      "latin": "quōcumque diēī tempore inclāmātus ā puerō, quamvīs occultus atque abditus, ex īmō advolābat",
+      "english": "at whatever time of day he was called by the boy, however hidden and out of sight, he came flying up from the depths",
+      "source": "Plin. NH 9.25"
+    },
+    {
+      "latin": "Caesarī omnia ūnō tempore erant agenda",
+      "english": "Caesar had everything to do at once",
+      "source": "Caes. BG 2.20.1"
+    }
+  ],
+  "related": [
+    "by-the-means"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/ab\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ab</a> · <a href=\"https://logeion.uchicago.edu/dativus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dativus</a>",
+    "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-martialis, loci-ovidius, loci-plinius), checked against the editions named there.",
+    "Caesar checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

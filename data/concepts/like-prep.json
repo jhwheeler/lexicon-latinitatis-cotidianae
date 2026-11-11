@@ -1,0 +1,114 @@
+{
+  "id": "like-prep",
+  "english": "like",
+  "sense": "similar to, in the manner of",
+  "pos": "preposition",
+  "also": [
+    "just like",
+    "as (like)",
+    "as if",
+    "the size of",
+    "look like"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "ut, sīcut",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "like, as",
+      "grammar": "adverbs of comparison; the noun after them takes the case of the word it is compared with",
+      "evidence": [
+        "Cic. Sen. 44: <span lang=\"la\">hominēs capiantur ut piscēs</span>"
+      ],
+      "comment": "The plain “like” of a comparison: <span lang=\"la\">ut piscēs</span>, like fish."
+    },
+    {
+      "latin": "tamquam, velut",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "like, just as; as if",
+      "grammar": "adverbs of comparison; before a clause, with the subjunctive (“as if”)",
+      "evidence": [
+        "Cic. Att. 8.14.2: <span lang=\"la\">ego tēcum tamquam mēcum loquor</span>",
+        "Quint. 6.3.59: <span lang=\"la\">tamquam assem elephantō dēs</span>"
+      ]
+    },
+    {
+      "latin": "īnstar + gen.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "like, as big as, the size of",
+      "grammar": "indeclinable noun, with the genitive",
+      "evidence": [
+        "Catull. 17.12: <span lang=\"la\">puerī īnstar bimulī</span>",
+        "Verg. A. 2.15: <span lang=\"la\">īnstar montis equum</span>"
+      ],
+      "comment": "Properly “the likeness, the size”: <span lang=\"la\">īnstar montis</span>, as big as a mountain."
+    },
+    {
+      "latin": "similis, simile",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "like, similar to",
+      "grammar": "adjective, third declension, with the genitive or the dative",
+      "evidence": [
+        "Liv. 26.50.13: <span lang=\"la\">dīs simillimum juvenem</span>",
+        "Mt. 7.26: <span lang=\"la\">similis erit virō stultō</span>"
+      ],
+      "comment": "When “like” follows be or look; see similar. Unlike: <span lang=\"la\">dissimilis</span> (see different)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "dīvīnē enim Platō ‘ēscam malōrum’ appellat voluptātem, quod eā vidēlicet hominēs capiantur ut piscēs",
+      "english": "for Plato, inspired, calls pleasure “the bait of evils”, because men are caught by it like fish",
+      "source": "Cic. Sen. 44"
+    },
+    {
+      "latin": "ego tēcum tamquam mēcum loquor",
+      "english": "I talk to you as I talk to myself",
+      "source": "Cic. Att. 8.14.2"
+    },
+    {
+      "latin": "puerī īnstar bimulī tremulā patris dormientis in ulnā",
+      "english": "like a little boy of two asleep in his father’s rocking arm",
+      "source": "Catull. 17.12–13"
+    },
+    {
+      "latin": "tum sēmen seritō crēbrum tamquam līnum, eō terram crībrō incernitō altam digitum trānsversum",
+      "english": "then sow the seed thick, like flax, and sift earth over it a finger’s breadth deep",
+      "source": "Cato Agr. 48.1"
+    },
+    {
+      "latin": "mūtāta omnia altōque cinere tamquam nive obducta",
+      "english": "everything was changed, and covered in deep ash, as if with snow",
+      "source": "Plin. Ep. 6.20.18"
+    },
+    {
+      "latin": "nōlī, inquit, tamquam assem elephantō dēs",
+      "english": "“Don’t hold it out,” he said, “as if you were giving a penny to an elephant”",
+      "source": "Quint. 6.3.59"
+    },
+    {
+      "latin": "similis erit virō stultō, quī aedificāvit domum suam super arēnam",
+      "english": "he will be like a foolish man who built his house upon the sand",
+      "source": "Mt. 7.26"
+    }
+  ],
+  "related": [
+    "similar",
+    "different",
+    "same"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/ut\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ut</a> · <a href=\"https://logeion.uchicago.edu/sicut\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sicut</a> · <a href=\"https://logeion.uchicago.edu/tamquam\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tamquam</a> · <a href=\"https://logeion.uchicago.edu/velut\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: velut</a> · <a href=\"https://logeion.uchicago.edu/instar\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: instar</a> · <a href=\"https://logeion.uchicago.edu/similis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: similis</a>",
+    "Quotations from the Latinitas loci collections (loci-cicero-philosophica, loci-cicero-epistulae, loci-catullus, loci-cato, loci-plinius, loci-quintilianus, loci-vulgata, loci-livius), checked against the editions named there.",
+    "Vergil and Cicero, <em>De senectute</em> 44 (which the loci collection quotes in part) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

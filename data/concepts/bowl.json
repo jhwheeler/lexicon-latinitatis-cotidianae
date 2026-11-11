@@ -12,6 +12,27 @@
       "status": "recommended",
       "period": "classical",
       "gloss": "bowl or dish"
+    },
+    {
+      "latin": "catillus cavus",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "bowl",
+      "evidence": [
+        "Andresian p. 5"
+      ],
+      "comment": "“A hollow dish”, on <span lang=\"la\">catillus</span>, the small dish or plate."
+    },
+    {
+      "latin": "crātēra, crātērae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "large bowl",
+      "evidence": [
+        "Cic. Verr. 2.4.131; Liv. 5.25.10 (Lewis &amp; Short)",
+        "Andresian p. 5"
+      ],
+      "comment": "Classically the bowl in which wine was mixed with water; Andresian’s large bowl. The form <span lang=\"la\">crātēr</span> is mostly poetic."
     }
   ],
   "related": [
@@ -23,7 +44,10 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/catinus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: catinus</a>",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio: numbered food and kitchen sections</a>",
-    "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>"
+    "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>",
+    "<a href=\"https://logeion.uchicago.edu/catillus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: catillus</a>",
+    "<a href=\"https://logeion.uchicago.edu/cratera\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cratera</a>",
+    "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 5."
   ],
   "replaces": [
     "entry-119",
@@ -31,7 +55,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-11",
     "by": "Claude"
   }
 }

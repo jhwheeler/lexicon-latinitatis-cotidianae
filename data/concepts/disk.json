@@ -1,0 +1,85 @@
+{
+  "id": "disk",
+  "english": "disk",
+  "sense": "for storing data, or a CD",
+  "pos": "noun",
+  "also": [
+    "disc",
+    "hard disk",
+    "hard drive",
+    "floppy disk",
+    "CD",
+    "compact disc",
+    "DVD",
+    "disk drive"
+  ],
+  "domain": "computatra",
+  "terms": [
+    {
+      "latin": "discus, discī m.",
+      "status": "recommended",
+      "period": "modern",
+      "gloss": "a disk (of a computer); a disc",
+      "evidence": [
+        "Traupman 260, 305",
+        "M-O s.v. CD"
+      ],
+      "comment": "Traupman’s word for a computer disk; Morgan–Owens gives <span lang=\"la\">discus mūsicus</span> for a music CD. Classically <span lang=\"la\">discus</span> is a quoit, thrown in the games (Hor. C. 1.8.11), then a dish shaped like one (Apul.) and the disc of a sundial (Vitr. 9.9.1); its modern sense keeps the shape."
+    },
+    {
+      "latin": "dūra statiō",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "a hard drive",
+      "evidence": [
+        "Traupman 261, 326"
+      ],
+      "comment": "Traupman’s phrase, a calque of the English. Where a disk is meant, <span lang=\"la\">discus</span> serves as well."
+    },
+    {
+      "latin": "compāctus discus",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "a CD, compact disc",
+      "evidence": [
+        "Traupman 260, 294"
+      ],
+      "notes": [
+        "compactus"
+      ]
+    },
+    {
+      "latin": "disculus, disculī m.",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "a diskette, a floppy disk",
+      "evidence": [
+        "Traupman 260, 305, 316"
+      ],
+      "comment": "A diminutive of <span lang=\"la\">discus</span>; Lewis &amp; Short has no such word."
+    }
+  ],
+  "notes": {
+    "compactus": {
+      "form": "compāctus",
+      "claim": "long a",
+      "against": "Traupman 260 leaves it unmarked",
+      "html": "From <span lang=\"la\">compingō</span> (from <span lang=\"la\">com-</span> and <span lang=\"la\">pangō</span>), which has its participle from the root of <span lang=\"la\">pangō</span>: Lachmann’s law, as <span lang=\"la\">pāctus</span>.",
+      "ruling": "lachmann"
+    }
+  },
+  "related": [
+    "computer",
+    "hardware",
+    "save-for-later"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/discus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: discus</a> · <a href=\"https://logeion.uchicago.edu/compingo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: compingo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 260 (<span lang=\"la\">discus, disculus, compactus discus</span>), 261 (<span lang=\"la\">dūra statiō</span>), 294, 305, 316, 326. <a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. CD."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

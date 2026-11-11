@@ -1,0 +1,77 @@
+{
+  "id": "physical",
+  "english": "physical",
+  "sense": "of the body",
+  "pos": "adjective",
+  "also": [
+    "physically",
+    "bodily",
+    "physical exercise",
+    "physical pain",
+    "physical strength",
+    "physical health"
+  ],
+  "domain": "corpus",
+  "terms": [
+    {
+      "latin": "corporis",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "of the body",
+      "grammar": "genitive of corpus, after its noun",
+      "evidence": [
+        "Cic. Cael. 39: <span lang=\"la\">in labōre corporis atque in animī contentiōne</span>",
+        "Cic. Sen. 36"
+      ],
+      "comment": "Latin says “of the body”: physical strength is <span lang=\"la\">vīrēs corporis</span>, physical pain <span lang=\"la\">dolor corporis</span>, physical exercise <span lang=\"la\">exercitātiō corporis</span> or simply <span lang=\"la\">exercitātiō</span> (see exercise). Against the mind it is <span lang=\"la\">corpus</span> and <span lang=\"la\">animus</span>: <span lang=\"la\">corpore senex</span>, old in body (Cic. Sen. 38)."
+    },
+    {
+      "latin": "corporeus, corporea, corporeum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "of the body; made of flesh",
+      "evidence": [
+        "Cic. N.D. 2.41: <span lang=\"la\">ignis corporeus</span>, the body’s heat (Lewis &amp; Short)"
+      ],
+      "comment": "Rare in prose (Lewis &amp; Short: chiefly Lucretius); its usual sense is material, having a body (see physical, material)."
+    },
+    {
+      "latin": "corporālis, corporāle",
+      "status": "alternative",
+      "period": "post-classical",
+      "gloss": "bodily, of the body",
+      "evidence": [
+        "Sen. Ep. 78.22: <span lang=\"la\">voluptātēs corporālēs</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Post-Augustan, most often in the jurists (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nec vērō corporī sōlum subveniendum est, sed mentī atque animō multō magis",
+      "english": "and it is not only the body that needs help, but the mind and spirit much more",
+      "source": "Cic. Sen. 36"
+    },
+    {
+      "latin": "omnemque vītae suae cursum in labōre corporis atque in animī contentiōne cōnficeret",
+      "english": "and spent his whole life in physical toil and mental effort",
+      "source": "Cic. Cael. 39"
+    }
+  ],
+  "related": [
+    "physical-material",
+    "body",
+    "exercise",
+    "health",
+    "mind-the-mind"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/corpus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: corpus</a> · <a href=\"https://logeion.uchicago.edu/corporeus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: corporeus</a> · <a href=\"https://logeion.uchicago.edu/corporalis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: corporalis</a>",
+    "Classical quotations checked against the Perseus and Latin Library texts."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

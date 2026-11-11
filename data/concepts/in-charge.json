@@ -9,7 +9,8 @@
     "head",
     "put in charge",
     "who’s in charge?",
-    "the management"
+    "the management",
+    "responsible (in charge)"
   ],
   "also_under": [
     "verba"
@@ -39,6 +40,18 @@
         "Caes. BG 5.24: <span lang=\"la\">lēgātōs legiōnibus</span> (Lewis &amp; Short)"
       ],
       "comment": "<span lang=\"la\">aliquem reī praeficere</span>: to put someone in charge of something."
+    },
+    {
+      "latin": "cūrae esse (alicui)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "to be someone’s responsibility, to be in someone’s care",
+      "grammar": "phrase: predicative dative cūrae with the dative of the person",
+      "evidence": [
+        "Caes. B.G. 1.33: <span lang=\"la\">sibi eam rem cūrae futūram</span> (Lewis &amp; Short, s.v. <span lang=\"la\">cūra</span>)",
+        "Caes. B.G. 1.40"
+      ],
+      "comment": "“I’ll see to it, it’s my responsibility”: <span lang=\"la\">mihi cūrae erit</span>."
     }
   ],
   "phrases": [
@@ -46,16 +59,25 @@
       "latin": "quae gerantur, accipiēs ex Polliōne, quī omnibus negōtiīs nōn interfuit sōlum, sed praefuit",
       "english": "what is going on you will hear from Pollio, who was not only involved in all the business but in charge of it",
       "source": "Cic. Fam. 1.6.1"
+    },
+    {
+      "latin": "Hoc mihi cūrae erit.",
+      "english": "I’ll be responsible for this.",
+      "source": "composed"
     }
   ],
   "related": [
     "undertake-responsibility",
     "be-involved",
-    "position-post"
+    "position-post",
+    "responsible-to-blame",
+    "responsible-dutiful"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/praesum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praesum</a> · <a href=\"https://logeion.uchicago.edu/praeficio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praeficio</a>",
-    "Cicero’s letters checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+    "Cicero’s letters checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "<a href=\"https://logeion.uchicago.edu/cura\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cura</a>",
+    "The example sentence marked “composed” is ours."
   ],
   "review": {
     "status": "draft",

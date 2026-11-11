@@ -1,0 +1,100 @@
+{
+  "id": "quote",
+  "english": "quote",
+  "sense": "repeat someone’s words; cite",
+  "pos": [
+    "verb",
+    "noun"
+  ],
+  "also": [
+    "quotation",
+    "quotations",
+    "quotes",
+    "cite",
+    "citation",
+    "as he says",
+    "as the saying goes",
+    "passage"
+  ],
+  "also_under": [
+    "verba"
+  ],
+  "domain": "schola",
+  "terms": [
+    {
+      "latin": "prōferō, prōferre, prōtulī, prōlātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "to bring forward, quote, cite",
+      "evidence": [
+        "Cic. N.D. 1.113: <span lang=\"la\">librōs</span> (Lewis &amp; Short)",
+        "Cic. de Orat. 2.290: <span lang=\"la\">auctōrēs</span> (Lewis &amp; Short)"
+      ],
+      "comment": "To bring something out before people: books, witnesses, authorities, a person’s words. Its other common senses are to carry out, to stretch out, to put off (<span lang=\"la\">diem prōferre</span>) and to make known (Lewis &amp; Short)."
+    },
+    {
+      "latin": "ut ait (ut dīcit)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "as he says (bringing in a quotation)",
+      "grammar": "phrase: put inside or after the quoted words",
+      "evidence": [
+        "Cic. Tusc. 3.5: <span lang=\"la\">animusque aeger, ut ait Ennius, semper errat</span>",
+        "Hor. Ep. 2.1.51: <span lang=\"la\">ut criticī dīcunt</span>"
+      ],
+      "comment": "The usual way to quote in Cicero: the words run on in his sentence and <span lang=\"la\">ut ait</span> names their author."
+    },
+    {
+      "latin": "laudō, laudāre, laudāvī, laudātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "to cite (an author or witness as authority)",
+      "evidence": [
+        "Cic. Brut. 44: <span lang=\"la\">auctōrem laudāre</span>",
+        "M-O s.v. cite (a source)"
+      ],
+      "comment": "The old sense “to name” (Gell. 2.6.16); used of the person cited, not of the words. Its everyday sense is to praise (see praise)."
+    },
+    {
+      "latin": "locus, locī m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a passage (of a book), a quotation",
+      "grammar": "noun, second declension; plural <span lang=\"la\">locī</span> in this sense",
+      "evidence": [
+        "Cic. Fin. 1.7: <span lang=\"la\">locōs quōsdam trānsferam</span> (Lewis &amp; Short)",
+        "Traupman 30"
+      ],
+      "comment": "A passage of an author has the plural <span lang=\"la\">locī</span>, places <span lang=\"la\">loca</span> (Lewis &amp; Short); hence the house’s collections of <span lang=\"la\">locī classicī</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "animusque aeger, ut ait Ennius, semper errat neque patī neque perpetī potest, cupere numquam dēsinit.",
+      "english": "and a sick mind, as Ennius says, always wanders, can neither suffer nor endure, never stops wanting.",
+      "source": "Cic. Tusc. 3.5"
+    },
+    {
+      "latin": "et ego cautius posthāc historiam attingam tē audiente, quem rērum Rōmānārum auctōrem laudāre possum religiōsissimum.",
+      "english": "and from now on I shall touch on history more carefully when you are listening, whom I can cite as the most scrupulous authority on Roman history.",
+      "source": "Cic. Brut. 44"
+    }
+  ],
+  "related": [
+    "phrase",
+    "author",
+    "source-information",
+    "praise"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/profero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: profero</a> · <a href=\"https://logeion.uchicago.edu/laudo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: laudo</a> · <a href=\"https://logeion.uchicago.edu/locus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: locus</a> · <a href=\"https://logeion.uchicago.edu/aio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aio</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. cite (a source). John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 30, checked against the searchable text of the book (11 November 2026).",
+    "Quotations of classical authors checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026) and given in the house spelling (macrons, consonantal j).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

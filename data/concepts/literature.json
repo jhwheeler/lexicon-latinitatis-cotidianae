@@ -1,0 +1,73 @@
+{
+  "id": "literature",
+  "english": "literature",
+  "sense": "written works, especially as an art",
+  "pos": "noun",
+  "also": [
+    "letters",
+    "Latin literature",
+    "Greek literature",
+    "literary"
+  ],
+  "domain": "schola",
+  "terms": [
+    {
+      "latin": "litterae, litterārum f. pl.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "literature, letters",
+      "evidence": [
+        "Cic. Tusc. 1.3: <span lang=\"la\">omnī litterārum genere</span>",
+        "Cic. Leg. 1.5: <span lang=\"la\">abest historia litterīs nostrīs</span> (Lewis &amp; Short)"
+      ],
+      "comment": "The plural of <span lang=\"la\">littera</span>, a letter of the alphabet, and so also a letter (epistle), a document, an account book, and learning (<span lang=\"la\">litterīs studēre</span>). An adjective or the context makes it literature: <span lang=\"la\">Graecae, Latīnae litterae</span>; <span lang=\"la\">Graecae dē philosophiā litterae</span>, Greek philosophical literature (Cic. Div. 2.5)."
+    },
+    {
+      "latin": "scrīpta, scrīptōrum n. pl.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "writings, works",
+      "evidence": [
+        "Cic. de Orat. 2.194: <span lang=\"la\">in scrīptīs relictum</span> (Lewis &amp; Short)"
+      ],
+      "comment": "What someone has written: a writer’s works rather than literature at large."
+    },
+    {
+      "latin": "litterātūra, litterātūrae f.",
+      "status": "avoid",
+      "period": "modern",
+      "gloss": "literature (modern use)",
+      "evidence": [
+        "Quint. 2.1.4: <span lang=\"la\">grammaticē, quam in Latīnum trānsferentēs litterātūram vocāvērunt</span>"
+      ],
+      "comment": "Common in modern Latin for literature, but classically it is writing in letters (Cic. Part. 26), the alphabet (Tac. A. 11.13), grammar and philology (Quint. 2.1.4) and, late, learning (Tert.): Lewis &amp; Short."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Doctrīnā Graecia nōs et omnī litterārum genere superābat",
+      "english": "In learning and in every kind of literature Greece surpassed us",
+      "source": "Cic. Tusc. 1.3"
+    },
+    {
+      "latin": "abest historia litterīs nostrīs",
+      "english": "history is missing from our literature",
+      "source": "Cic. Leg. 1.5 (Lewis &amp; Short)"
+    }
+  ],
+  "related": [
+    "book",
+    "author",
+    "history"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/littera\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: littera</a> · <a href=\"https://logeion.uchicago.edu/scribo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: scribo</a> · <a href=\"https://logeion.uchicago.edu/litteratura\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: litteratura</a>",
+    "Quotations of classical authors checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026) and given in the house spelling (macrons, consonantal j).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

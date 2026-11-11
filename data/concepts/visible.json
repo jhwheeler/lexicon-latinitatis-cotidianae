@@ -1,0 +1,89 @@
+{
+  "id": "visible",
+  "english": "visible",
+  "pos": "adjective",
+  "also": [
+    "in sight",
+    "in view",
+    "can be seen",
+    "out of sight"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "in cōnspectū esse",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "be in sight, be visible",
+      "grammar": "phrase: in + the ablative of cōnspectus; whose sight, in the genitive or a possessive",
+      "evidence": [
+        "Caes. BG 1.11: <span lang=\"la\">paene in cōnspectū exercitūs nostrī</span> (Lewis &amp; Short)",
+        "Liv. 1.39.1: <span lang=\"la\">multōrum in cōnspectū</span>"
+      ],
+      "comment": "Latin says where a thing can be seen rather than calling it visible: <span lang=\"la\">in cōnspectū est</span>, it is in sight; out of sight is <span lang=\"la\">ē cōnspectū</span> (Ter. Eun. 2.3.2, <span lang=\"la\">illam ē cōnspectū āmīsī meō</span>, Lewis &amp; Short). For “it can be seen” the verb does the work: <span lang=\"la\">cernitur, appāret</span> (see appear)."
+    },
+    {
+      "latin": "cōnspicuus, cōnspicua, cōnspicuum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "visible, in view; that catches the eye",
+      "register": "vōx poētica et aetātis post-Augustēae: Ov., Hor., Tac.",
+      "evidence": [
+        "Ov. Tr. 4.10.108: <span lang=\"la\">occultum stēllae cōnspicuumque polum</span> (Lewis &amp; Short)",
+        "Tac. Germ. 7.1"
+      ],
+      "comment": "First “in view”, opposed to <span lang=\"la\">occultus</span>; more often “striking, conspicuous”, standing out from the rest (Liv. 1.34.11). Lewis &amp; Short: poetic, or post-Augustan prose, especially Tacitus; not in Quintilian."
+    },
+    {
+      "latin": "aspectābilis, aspectābile",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "visible",
+      "evidence": [
+        "Cic. Tim. 4 (Lewis &amp; Short)"
+      ],
+      "comment": "Cicero’s word in his version of Plato’s <em>Timaeus</em>, for the visible world; Lewis &amp; Short knows it perhaps only there. A philosopher’s word."
+    },
+    {
+      "latin": "vīsibilis, vīsibile",
+      "status": "alternative",
+      "period": "late",
+      "gloss": "visible",
+      "evidence": [
+        "Apul. Mund.; Prud. Apoth. 146 (Lewis &amp; Short)"
+      ],
+      "comment": "Late Latin for Cicero’s <span lang=\"la\">aspectābilis</span> (Lewis &amp; Short); in the one classical passage, Plin. NH 11.146, it means “able to see”."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "puerō dormientī, cui Serviō Tulliō fuit nōmen, caput ārsisse ferunt multōrum in cōnspectū",
+      "english": "they say that as a boy called Servius Tullius lay asleep, his head blazed with fire in full view of many people",
+      "source": "Liv. 1.39.1"
+    },
+    {
+      "latin": "ducēs exemplō potius quam imperiō, sī prōmptī, sī cōnspicuī, sī ante aciem agant, admīrātiōne praesunt",
+      "english": "the chiefs lead by example rather than by command: if they are ready, if they are in plain view, if they fight in front of the line, they lead by being admired",
+      "source": "Tac. Germ. 7.1"
+    },
+    {
+      "latin": "Ecce, jam lūna in cōnspectū est!",
+      "english": "Look, you can see the moon now!",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "appear",
+    "see"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/conspectus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: conspectus</a> · <a href=\"https://logeion.uchicago.edu/conspicuus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: conspicuus</a> · <a href=\"https://logeion.uchicago.edu/aspectabilis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aspectabilis</a> · <a href=\"https://logeion.uchicago.edu/visibilis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: visibilis</a>",
+    "Quotations from the Latinitas loci collections (loci-livius, loci-tacitus), checked there against the editions they name.",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

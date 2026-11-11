@@ -1,0 +1,65 @@
+{
+  "id": "slave",
+  "english": "slave",
+  "pos": "noun",
+  "also": [
+    "slaves",
+    "slavery",
+    "enslaved"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "servus, servī m.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a slave",
+      "evidence": [
+        "Cic. Off. 1.113",
+        "Sen. Ep. 47.1"
+      ],
+      "comment": "The ordinary word; a female slave is <span lang=\"la\">ancilla</span> (<span lang=\"la\">serva</span> is rare). Slavery is <span lang=\"la\">servitūs, servitūtis f.</span>; to be a slave, <span lang=\"la\">servīre</span>."
+    },
+    {
+      "latin": "ancilla, ancillae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a female slave, a maid",
+      "evidence": [
+        "Plaut., Ter.; Cic. Mil. 55 (Lewis &amp; Short)"
+      ],
+      "comment": "The usual feminine of <span lang=\"la\">servus</span> (Lewis &amp; Short); in later and modern Latin a maidservant."
+    },
+    {
+      "latin": "mancipium, mancipiī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a slave, as property",
+      "comment": "A legal word: first the formal purchase by taking in hand, then the slave so bought; it treats the person as a thing owned."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "‘servī sunt.’ immō hominēs. ‘servī sunt.’ immō contubernālēs. ‘servī sunt.’ immō humilēs amīcī",
+      "english": "‘They are slaves.’ No, they are people. ‘They are slaves.’ No, they share our roof. ‘They are slaves.’ No, they are humble friends.",
+      "source": "Sen. Ep. 47.1"
+    },
+    {
+      "latin": "Ulixēs domī etiam contumēliās servōrum ancillārumque pertulit",
+      "english": "at home Ulysses even put up with the insults of the slaves and the maids",
+      "source": "Cic. Off. 1.113 (Lewis &amp; Short)"
+    }
+  ],
+  "related": [
+    "master-owner"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/servus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: servus</a> · <a href=\"https://logeion.uchicago.edu/ancilla\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ancilla</a> · <a href=\"https://logeion.uchicago.edu/mancipium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mancipium</a> · <a href=\"https://logeion.uchicago.edu/servitus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: servitus</a>",
+    "Quotations from the Latinitas loci collections (loci-seneca-epistulae), checked there against the editions they name."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

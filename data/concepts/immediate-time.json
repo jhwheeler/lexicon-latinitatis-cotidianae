@@ -1,0 +1,77 @@
+{
+  "id": "immediate-time",
+  "english": "immediate",
+  "sense": "happening at once, without delay",
+  "pos": "adjective",
+  "also": [
+    "an immediate answer",
+    "immediate effect",
+    "prompt",
+    "without delay"
+  ],
+  "domain": "tempus",
+  "terms": [
+    {
+      "latin": "statim",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "at once, immediately",
+      "grammar": "adverb, with the verb",
+      "evidence": [
+        "Liv. 3.1.7: <span lang=\"la\">fēcit statim … fastīdium cōpia</span>",
+        "Traupman 87: immediately, <span lang=\"la\">statim, continuō</span>"
+      ],
+      "comment": "Latin usually turns an English “immediate” into an adverb with the verb: an immediate answer is an answer given at once (<span lang=\"la\">statim respondēre</span>), and Livy’s plenty “at once bred boredom”. See at once."
+    },
+    {
+      "latin": "praesēns, praesentis",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "immediate, instant",
+      "grammar": "adjective, third declension",
+      "evidence": [
+        "Cic. Div. 2.122: <span lang=\"la\">praesēns poena</span>, instant punishment (Lewis &amp; Short)",
+        "Cic. Clu. 34: <span lang=\"la\">praesentī pecūniā</span>, with ready money (Lewis &amp; Short)"
+      ],
+      "comment": "Of what is done or paid on the spot. Its first sense is present, in person, at hand (<span lang=\"la\">praesēns tēcum ēgī</span>, Cic. Fam. 2.7.4), and of time, the present (see current)."
+    },
+    {
+      "latin": "sine morā",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "without delay",
+      "grammar": "phrase",
+      "evidence": [
+        "Cic. Fam. 10.18.4 (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "fēcit statim, ut fit, fastīdium cōpia",
+      "english": "plenty, as usually happens, bred immediate boredom",
+      "source": "Liv. 3.1.7"
+    },
+    {
+      "latin": "nīl spernat auris, nec tamen crēdat statim",
+      "english": "let the ear scorn nothing, and yet believe nothing at once",
+      "source": "Phaedr. 3.10.51"
+    }
+  ],
+  "related": [
+    "at-once",
+    "now",
+    "current",
+    "immediate-nearest"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/statim\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: statim</a> · <a href=\"https://logeion.uchicago.edu/praesum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praesum (praesens)</a> · <a href=\"https://logeion.uchicago.edu/mora\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mora</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 87, checked against the searchable text of the book (11 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-livius, loci-phaedrus), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

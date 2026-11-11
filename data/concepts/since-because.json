@@ -1,0 +1,82 @@
+{
+  "id": "since-because",
+  "english": "since",
+  "sense": "because, seeing that",
+  "pos": "conjunction",
+  "also": [
+    "as (because)",
+    "seeing that",
+    "now that",
+    "given that",
+    "inasmuch as"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "cum (+ subjunctive)",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "since, as",
+      "grammar": "conjunction, with the subjunctive",
+      "evidence": [
+        "Cic. Clu. 123: <span lang=\"la\">quae cum ita sint</span> (Lewis &amp; Short)",
+        "Cic. Off. 1.54: <span lang=\"la\">quī cum ūnā domō jam capī nōn possint, in aliās domōs … exeunt</span>"
+      ],
+      "comment": "The reason given as the circumstance: “since, as”. <span lang=\"la\">Praesertim cum</span>, all the more since. <span lang=\"la\">Quae cum ita sint</span>, since this is so."
+    },
+    {
+      "latin": "quoniam",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "since, now that",
+      "grammar": "conjunction, with the indicative",
+      "evidence": [
+        "Varr. RR 2.3.1: <span lang=\"la\">quoniam satis bālāstī</span>"
+      ],
+      "comment": "A reason both speakers know or can see."
+    },
+    {
+      "latin": "quandōquidem",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "since indeed, seeing that",
+      "grammar": "conjunction, with the indicative",
+      "evidence": [
+        "Ter. And. 3.5.2: <span lang=\"la\">quandōquidem tam iners, tam nūllī cōnsilī sum</span> (Lewis &amp; Short)",
+        "Cic. Brut. 163 (Lewis &amp; Short)"
+      ],
+      "comment": "A stronger “since”, with a shade of “if that is how it is”."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "quī cum ūnā domō jam capī nōn possint, in aliās domōs tamquam in colōniās exeunt",
+      "english": "since they can no longer fit in one house, they go out to other houses, as if to colonies",
+      "source": "Cic. Off. 1.54"
+    },
+    {
+      "latin": "cui Cossinius: quoniam satis bālāstī, inquit, ō Faustule noster",
+      "english": "to whom Cossinius said: “since you have bleated enough, our dear Faustulus”",
+      "source": "Varr. RR 2.3.1"
+    },
+    {
+      "latin": "dē pāvōnibus, inquit, līberē licet dīcās, quoniam discessit Fircellius",
+      "english": "“you may speak freely about peacocks,” he said, “now that Fircellius has gone”",
+      "source": "Varr. RR 3.6.1"
+    }
+  ],
+  "related": [
+    "because",
+    "for-because"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/cum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cum</a> · <a href=\"https://logeion.uchicago.edu/quoniam\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quoniam</a> · <a href=\"https://logeion.uchicago.edu/quandoquidem\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quandoquidem</a>",
+    "Quotations from the Latinitas loci collections (loci-cicero-philosophica, loci-varro), checked against the editions named there.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

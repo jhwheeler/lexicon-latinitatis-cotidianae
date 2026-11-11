@@ -1,0 +1,82 @@
+{
+  "id": "but",
+  "english": "but",
+  "pos": "conjunction",
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "sed",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "but",
+      "grammar": "conjunction, first in its clause",
+      "evidence": [
+        "Catull. 61.90: <span lang=\"la\">sed morāris, abit diēs</span>",
+        "Sen. Ep. 106.12: <span lang=\"la\">nōn vītae sed scholae discimus</span>"
+      ],
+      "comment": "The plain “but”, which sets the second thing against the first; after a negative, “not … but” is <span lang=\"la\">nōn … sed</span>. Many English “buts” need no word in Latin, where two clauses side by side make the contrast; and a light “but” that only moves on is <span lang=\"la\">autem</span> (see however). Don’t open sentence after sentence with <span lang=\"la\">sed</span>."
+    },
+    {
+      "latin": "at",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "but (sharply); but, you say",
+      "grammar": "conjunction, first in its clause",
+      "evidence": [
+        "Cic. Sen. 21: <span lang=\"la\">at memoria minuitur</span>",
+        "Verg. G. 4.6: <span lang=\"la\">in tenuī labor; at tenuis nōn glōria</span>"
+      ],
+      "comment": "A sharper “but”: an objection in speech (“but, you’ll say …”), a protest (<span lang=\"la\">At!</span>), or a sudden turn to another person or scene."
+    },
+    {
+      "latin": "vērum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "but (rather)",
+      "grammar": "conjunction, first in its clause",
+      "evidence": [
+        "Phaedr. 3 prol. 49–50: <span lang=\"la\">neque enim notāre singulōs mēns est mihi, vērum ipsam vītam et mōrēs hominum ostendere</span>"
+      ],
+      "comment": "After a negative, the same as <span lang=\"la\">sed</span>; in <span lang=\"la\">nōn modo … vērum etiam</span>, not only … but also."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "sed morāris, abit diēs",
+      "english": "but you are dawdling, and the day is going",
+      "source": "Catull. 61.90"
+    },
+    {
+      "latin": "curre, sed īnstrūctus",
+      "english": "run, but go equipped",
+      "source": "Mart. 4.10.5"
+    },
+    {
+      "latin": "nōn est mī male, sed bene ac beātē",
+      "english": "I’m not badly off, but well and happy",
+      "source": "Catull. 14.10"
+    },
+    {
+      "latin": "at memoria minuitur. crēdō, nisi eam exerceās",
+      "english": "but memory fades. — I dare say, if you don’t exercise it",
+      "source": "Cic. Sen. 21"
+    },
+    {
+      "latin": "in tenuī labor; at tenuis nōn glōria",
+      "english": "the work is on a small thing, but the glory is not small",
+      "source": "Verg. G. 4.6"
+    }
+  ],
+  "related": [
+    "however"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/sed\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sed</a> · <a href=\"https://logeion.uchicago.edu/at\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: at</a> · <a href=\"https://logeion.uchicago.edu/verum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: verum</a>",
+    "Quotations from the Latinitas loci collections (loci-catullus, loci-martialis, loci-seneca-epistulae, loci-cicero-philosophica, loci-vergilius, loci-phaedrus), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

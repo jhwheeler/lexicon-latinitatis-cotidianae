@@ -1,0 +1,104 @@
+{
+  "id": "although",
+  "english": "although",
+  "pos": "conjunction",
+  "also": [
+    "though",
+    "even though",
+    "albeit",
+    "while (conceding)"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "quamquam",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "although",
+      "grammar": "conjunction, with the indicative",
+      "evidence": [
+        "Cic. Sen. 44: <span lang=\"la\">quamquam immoderātīs epulīs caret senectūs, modicīs tamen convīviīs dēlectārī potest</span>"
+      ],
+      "comment": "Grants a fact; the main clause often has <span lang=\"la\">tamen</span>. At the head of a sentence it also corrects what was just said: “and yet”."
+    },
+    {
+      "latin": "quamvīs",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "although, however much",
+      "grammar": "conjunction, with the subjunctive in classical prose; with an adjective or adverb, “however”",
+      "evidence": [
+        "Ov. Met. 6.376: <span lang=\"la\">quamvīs sint sub aquā, sub aquā maledīcere temptant</span>",
+        "Cic. Tusc. 2.13: <span lang=\"la\">ager quamvīs fertilis</span>"
+      ],
+      "comment": "“As much as you like”: grants a supposition, or a fact put as one. With an adjective it needs no verb: <span lang=\"la\">quamvīs fertilis</span>, however fertile."
+    },
+    {
+      "latin": "etsī (tametsī)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "although, even though",
+      "grammar": "conjunction, with the indicative for a fact",
+      "evidence": [
+        "Cic. Att. 12.53.1: <span lang=\"la\">ego etsī nihil habeō quod ad tē scrībam, scrībō tamen</span>",
+        "Ter. And. 348: <span lang=\"la\">Obtundis, tametsī intellegō.</span>"
+      ],
+      "comment": "Built on <span lang=\"la\">sī</span>: “even if”, used of a fact. Often answered by <span lang=\"la\">tamen</span>."
+    },
+    {
+      "latin": "cum (+ subjunctive)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "although, while",
+      "grammar": "conjunction, with the subjunctive",
+      "evidence": [
+        "Ov. Pont. 1.3.39–40: <span lang=\"la\">cum bene sit clausae caveā Pandīone nātae, nītitur in silvās illa redīre suās</span>"
+      ],
+      "comment": "Concessive <span lang=\"la\">cum</span>: the fact that might have stopped the main clause; often with <span lang=\"la\">tamen</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "quamquam immoderātīs epulīs caret senectūs, modicīs tamen convīviīs dēlectārī potest",
+      "english": "although old age goes without lavish feasts, it can still enjoy modest dinners",
+      "source": "Cic. Sen. 44"
+    },
+    {
+      "latin": "quamquam suus cuique dignus est",
+      "english": "though every parent’s own child is worthy of it",
+      "source": "Quint. 1.1.24"
+    },
+    {
+      "latin": "quamvīs sint sub aquā, sub aquā maledīcere temptant",
+      "english": "though they are under water, under water they try to curse",
+      "source": "Ov. Met. 6.376"
+    },
+    {
+      "latin": "ego etsī nihil habeō quod ad tē scrībam, scrībō tamen quia tēcum loquī videor",
+      "english": "though I have nothing to write to you, I write all the same, because I seem to be talking with you",
+      "source": "Cic. Att. 12.53.1"
+    },
+    {
+      "latin": "Obtundis, tametsī intellegō.",
+      "english": "You keep going on, though I understand.",
+      "source": "Ter. And. 348"
+    },
+    {
+      "latin": "cum bene sit clausae caveā Pandīone nātae, nītitur in silvās illa redīre suās",
+      "english": "though Pandion’s daughter is well off shut in her cage, she strains to go back to her woods",
+      "source": "Ov. Pont. 1.3.39–40"
+    }
+  ],
+  "related": [
+    "however"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/quamquam\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quamquam</a> · <a href=\"https://logeion.uchicago.edu/quamvis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quamvis</a> · <a href=\"https://logeion.uchicago.edu/etsi\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: etsi</a> · <a href=\"https://logeion.uchicago.edu/tametsi\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tametsi</a> · <a href=\"https://logeion.uchicago.edu/cum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cum</a>",
+    "Quotations from the Latinitas loci collections (loci-cicero-philosophica, loci-quintilianus, loci-ovidius, loci-cicero-epistulae, loci-terentius), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "id": "and",
+  "english": "and",
+  "pos": "conjunction",
+  "also": [
+    "and also",
+    "plus"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "et",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "and",
+      "grammar": "conjunction: joins words or clauses of equal weight",
+      "evidence": [
+        "Cic. Att. 12.9.1: <span lang=\"la\">nec erat quod scrīberem, et somnus urgēbat</span>"
+      ],
+      "comment": "The plain “and”. Repeated, <span lang=\"la\">et … et</span> is “both … and”. In narration it should not be the only joint between clauses: Latin ties actions together with a participle, an ablative absolute, a <span lang=\"la\">cum</span>-clause or a relative, or sets them side by side with no word at all, as Caesar does (<span lang=\"la\">Hostēs terga vertunt; fugientibus equitēs occurrunt</span>, B.G. 7.88). A single <span lang=\"la\">et</span> between clauses with different subjects is classical (Cic. Att. 4.2.4); what sounds translated is <span lang=\"la\">et</span> as the joint of every sentence. For “and not” Latin says <span lang=\"la\">nec</span>."
+    },
+    {
+      "latin": "-que",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "and (closely joined)",
+      "grammar": "enclitic conjunction, added to the first word of the second member",
+      "evidence": [
+        "Cato Agr. praef. 2: <span lang=\"la\">bonum agricolam bonumque colōnum</span>"
+      ],
+      "comment": "Joins two things that belong together, or adds the last member of a pair: <span lang=\"la\">diēs noctēsque</span>, day and night; <span lang=\"la\">terrā marīque</span>, by land and sea (Lewis &amp; Short)."
+    },
+    {
+      "latin": "atque (ac)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "and also, and indeed",
+      "grammar": "conjunction: atque before vowels and consonants, ac only before consonants",
+      "evidence": [
+        "Catull. 101.10: <span lang=\"la\">frāter, avē atque valē</span>",
+        "Cic. Att. 16.6.4: <span lang=\"la\">dēliciīs atque amōribus meīs</span>"
+      ],
+      "comment": "Joins closely, with weight on what is added; often two near-synonyms (Lewis &amp; Short: “a close internal connection”, where <span lang=\"la\">et</span> joins different things). <span lang=\"la\">Etiam atque etiam</span>, again and again."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nec erat quod scrīberem, et somnus urgēbat",
+      "english": "there was nothing to write, and sleep was pressing",
+      "source": "Cic. Att. 12.9.1"
+    },
+    {
+      "latin": "virum bonum quom laudābant, ita laudābant: bonum agricolam bonumque colōnum",
+      "english": "when they praised a good man, they praised him like this: a good farmer and a good husbandman",
+      "source": "Cato Agr. praef. 2"
+    },
+    {
+      "latin": "nam mihi ante oculōs diēs noctēsque versāris",
+      "english": "for you are before my eyes day and night",
+      "source": "Cic. Fam. 14.2.3"
+    },
+    {
+      "latin": "Cicerō bellissimus tibi salūtem plūrimam dīcit. etiam atque etiam valē.",
+      "english": "our lovely Cicero sends you his warmest love. Goodbye, again and again.",
+      "source": "Cic. Fam. 14.7.3"
+    },
+    {
+      "latin": "frāter, avē atque valē",
+      "english": "brother, hail and farewell",
+      "source": "Catull. 101.10"
+    },
+    {
+      "latin": "Hostēs terga vertunt; fugientibus equitēs occurrunt.",
+      "english": "The enemy turn and run; the cavalry meet them as they flee. (Two clauses with no “and”.)",
+      "source": "Caes. B.G. 7.88"
+    }
+  ],
+  "related": [
+    "and-not",
+    "also",
+    "therefore"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/et\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: et</a> · <a href=\"https://logeion.uchicago.edu/que\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: que</a> · <a href=\"https://logeion.uchicago.edu/atque\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: atque</a>",
+    "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-cato, loci-catullus), checked against the editions named there.",
+    "Caesar and Cicero (Att. 4.2.4) as quoted in the Latinitas house standards (AGENTS.md §4.1)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

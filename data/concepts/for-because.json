@@ -1,0 +1,87 @@
+{
+  "id": "for-because",
+  "english": "for",
+  "sense": "because (giving the reason)",
+  "pos": "conjunction",
+  "also": [
+    "you see",
+    "for (explaining)"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "nam",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "for",
+      "grammar": "conjunction, first in its clause, with the indicative",
+      "evidence": [
+        "Quint. 1.11.3: <span lang=\"la\">nam frequēns imitātiō trānsit in mōrēs</span>"
+      ],
+      "comment": "Gives the reason or the explanation of what has just been said, as a new sentence. Only where the clause really explains: not as glue, and not after a colon."
+    },
+    {
+      "latin": "enim",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "for, you see",
+      "grammar": "conjunction, second in its clause",
+      "evidence": [
+        "Cic. Fam. 7.9.1: <span lang=\"la\">jam diū ignōrō quid agās; nihil enim scrībis</span>",
+        "Varr. RR 2.1.2: <span lang=\"la\">nēmō enim omnia potest scīre</span>"
+      ],
+      "comment": "The same, lighter, and the commoner in talk; it stands after the first word. <span lang=\"la\">Neque enim</span>, for … not."
+    },
+    {
+      "latin": "etenim (namque)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "for indeed",
+      "grammar": "conjunction, first in its clause",
+      "evidence": [
+        "Verg. A. 1.327–328: <span lang=\"la\">namque haud tibi vultus mortālis</span>"
+      ],
+      "comment": "A stronger “for”, mostly in formal prose and poetry."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nam frequēns imitātiō trānsit in mōrēs",
+      "english": "for frequent imitation turns into character",
+      "source": "Quint. 1.11.3"
+    },
+    {
+      "latin": "nam mihi ante oculōs diēs noctēsque versāris",
+      "english": "for you are before my eyes day and night",
+      "source": "Cic. Fam. 14.2.3"
+    },
+    {
+      "latin": "jam diū ignōrō quid agās; nihil enim scrībis",
+      "english": "I haven’t known for a long time how you are, for you never write",
+      "source": "Cic. Fam. 7.9.1"
+    },
+    {
+      "latin": "nēmō enim omnia potest scīre",
+      "english": "for nobody can know everything",
+      "source": "Varr. RR 2.1.2"
+    },
+    {
+      "latin": "quis enim scrūtātus est?",
+      "english": "for who has looked?",
+      "source": "Tac. Germ. 5.3"
+    }
+  ],
+  "related": [
+    "because",
+    "since-because"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/nam\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nam</a> · <a href=\"https://logeion.uchicago.edu/enim\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: enim</a> · <a href=\"https://logeion.uchicago.edu/etenim\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: etenim</a> · <a href=\"https://logeion.uchicago.edu/namque\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: namque</a>",
+    "Quotations from the Latinitas loci collections (loci-quintilianus, loci-cicero-epistulae, loci-varro, loci-tacitus, loci-vergilius), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

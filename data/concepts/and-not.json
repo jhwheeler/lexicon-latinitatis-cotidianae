@@ -1,0 +1,78 @@
+{
+  "id": "and-not",
+  "english": "and not",
+  "pos": "conjunction",
+  "also": [
+    "nor",
+    "and no",
+    "and nobody",
+    "and nothing",
+    "and never"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "neque (nec)",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "and not, nor",
+      "grammar": "conjunction, first in its clause; nec mostly before consonants",
+      "evidence": [
+        "Plin. Ep. 1.15.1: <span lang=\"la\">prōmittis ad cēnam, nec venīs?</span>",
+        "Cic. Fam. 14.3.5: <span lang=\"la\">mihi tē cārius nihil esse nec umquam fuisse</span>"
+      ],
+      "comment": "Latin joins the negative to the “and”: not <span lang=\"la\">et nōn</span> but <span lang=\"la\">nec</span>. So “and nobody” is <span lang=\"la\">nec quisquam</span>, “and nothing” <span lang=\"la\">nec quicquam</span>, “and never” <span lang=\"la\">nec umquam</span>, “and yet not” <span lang=\"la\">nec tamen</span>. <span lang=\"la\">Et nōn</span> stays where one word is negated against another, as in a contrast."
+    },
+    {
+      "latin": "nēve (neu)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "and not (in commands, wishes and purpose clauses)",
+      "grammar": "conjunction, with the subjunctive or imperative",
+      "evidence": [
+        "Cato Agr. 37: <span lang=\"la\">cavētō nē quam māteriam dolēs, neu caedās, neu tangās, nisi siccam</span> (Lewis &amp; Short)"
+      ],
+      "comment": "The “and not” that continues <span lang=\"la\">nē</span>, <span lang=\"la\">ut</span> or a command: “and don’t …”, “and so that … not”."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "heus tū! prōmittis ad cēnam, nec venīs?",
+      "english": "hey, you! you promise to come to dinner and don’t come?",
+      "source": "Plin. Ep. 1.15.1"
+    },
+    {
+      "latin": "nesciō quid nunc tacēs nec muttīs",
+      "english": "I don’t know why you are quiet now and don’t say a word",
+      "source": "Petr. 61.1"
+    },
+    {
+      "latin": "nīl spernat auris, nec tamen crēdat statim",
+      "english": "let the ear scorn nothing, and yet not believe at once",
+      "source": "Phaedr. 3.10.51"
+    },
+    {
+      "latin": "cūrā ut valeās et ita tibi persuādeās, mihi tē cārius nihil esse nec umquam fuisse",
+      "english": "take care of yourself, and be sure that nothing is dearer to me than you, and never has been",
+      "source": "Cic. Fam. 14.3.5"
+    },
+    {
+      "latin": "cavētō nē quam māteriam dolēs, neu caedās, neu tangās, nisi siccam",
+      "english": "take care not to hew any timber, or cut it, or touch it, unless it is dry",
+      "source": "Cato Agr. 37 (Lewis &amp; Short)"
+    }
+  ],
+  "related": [
+    "and"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/neque\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: neque</a> · <a href=\"https://logeion.uchicago.edu/neve\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: neve</a>",
+    "Quotations from the Latinitas loci collections (loci-plinius, loci-petronius, loci-phaedrus, loci-cicero-epistulae), checked against the editions named there.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

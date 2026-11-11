@@ -1,0 +1,57 @@
+{
+  "id": "paragraph",
+  "english": "paragraph",
+  "pos": "noun",
+  "also": [
+    "paragraphs",
+    "new paragraph",
+    "section (of a text)",
+    "clause (of a law)"
+  ],
+  "domain": "schola",
+  "terms": [
+    {
+      "latin": "caput, capitis n.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "section, paragraph, chapter (of a writing)",
+      "evidence": [
+        "Cic. Agr. 2.15: <span lang=\"la\">ā prīmō capite lēgis ūsque ad extrēmum</span> (Lewis &amp; Short)",
+        "Gell. 2.15.4 (Lewis &amp; Short)",
+        "Traupman 30, 356"
+      ],
+      "comment": "Its first sense is “head”; in writings, a division of any size: a clause of a law, a section, a chapter. <span lang=\"la\">id quod caput est</span> is “the main point” (Cic. Att. 1.17.4)."
+    },
+    {
+      "latin": "paragraphus, paragraphī f.",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "paragraph",
+      "evidence": [
+        "Traupman 30 (f.), 356 (m.)"
+      ],
+      "comment": "From Greek ἡ παράγραφος, the stroke that marked a new section; not in Lewis &amp; Short. Traupman gives it once as feminine, once as masculine; we follow the Greek."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Hoc caput iterum lege.",
+      "english": "Read this paragraph again.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "text-written",
+    "page"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/caput\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: caput</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 30, 356.",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

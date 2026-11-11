@@ -1,0 +1,55 @@
+{
+  "id": "pay-by-card",
+  "english": "pay by card",
+  "pos": "phrase",
+  "also": [
+    "contactless",
+    "pay contactless",
+    "tap your card",
+    "card payment"
+  ],
+  "domain": "pecunia",
+  "also_under": [
+    "urbs"
+  ],
+  "terms": [
+    {
+      "latin": "chartulā solvere",
+      "status": "recommended",
+      "period": "ours",
+      "gloss": "pay with a card",
+      "grammar": "phrase: the ablative of chartula with solvere",
+      "comment": "Our description, with the lexicon’s <span lang=\"la\">solvere</span> (pay) and <span lang=\"la\">chartula</span> (credit card, debit card). No reference work has a term for card or contactless payment."
+    },
+    {
+      "latin": "chartulam māchinae appōnere",
+      "status": "alternative",
+      "period": "ours",
+      "gloss": "tap the card: pay contactless",
+      "comment": "The card is only held to the reader, as a ticket is (tap the ticket: <span lang=\"la\">tesseram māchinae appōnere</span>)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Nummōs nōn habeō; chartulā solvam.",
+      "english": "I’ve no cash on me; I’ll pay by card.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "pay",
+    "credit-card",
+    "debit-card",
+    "tap-the-ticket",
+    "cash"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/chartula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: chartula</a> · <a href=\"https://logeion.uchicago.edu/solvo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: solvo</a> · <a href=\"https://logeion.uchicago.edu/appono\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: appono</a>",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "id": "deliver",
+  "english": "deliver",
+  "sense": "bring goods to the door",
+  "pos": "verb",
+  "also": [
+    "delivery",
+    "home delivery",
+    "be delivered",
+    "delivered"
+  ],
+  "domain": "urbs",
+  "terms": [
+    {
+      "latin": "afferō, afferre, attulī, allātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "bring",
+      "comment": "Lewis &amp; Short: to bring, carry or convey a thing to a place. What the courier does: <span lang=\"la\">fasciculus allātus est</span>, the parcel has been delivered."
+    },
+    {
+      "latin": "perferō, perferre, pertulī, perlātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "carry to its destination",
+      "evidence": [
+        "Cic. Att. 8.5.2: <span lang=\"la\">fasciculum … velim cūrēs ad eum perferendum</span>",
+        "M-O s.v. deliver (a letter), after Egger"
+      ],
+      "comment": "Of a letter or a packet carried all the way to the one it is for."
+    },
+    {
+      "latin": "perlātiō, perlātiōnis f.",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "delivery (the noun)",
+      "evidence": [
+        "Traupman 363: <span lang=\"la\">perlātiō cursuālis</span>, postal delivery"
+      ],
+      "comment": "In Lewis &amp; Short only a late legal word, a carrying (Ulp.)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Fasciculus allātus est!",
+      "english": "The parcel’s been delivered!",
+      "source": "composed"
+    },
+    {
+      "latin": "tū fasciculum, quī est M’. Curiō īnscrīptus, velim cūrēs ad eum perferendum",
+      "english": "please see that the packet addressed to Manius Curius gets to him",
+      "source": "Cic. Att. 8.5.2"
+    }
+  ],
+  "related": [
+    "parcel",
+    "courier",
+    "online-shopping"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/affero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: affero</a> · <a href=\"https://logeion.uchicago.edu/perfero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: perfero</a> · <a href=\"https://logeion.uchicago.edu/perlatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: perlatio</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 363, checked against the searchable text of the book (11 November 2026).",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. deliver (a letter).",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "id": "satisfy",
+  "english": "satisfy",
+  "sense": "content someone, meet their wishes",
+  "pos": "verb",
+  "also": [
+    "satisfied",
+    "be satisfied with",
+    "content with",
+    "satisfy someone"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "satisfaciō, satisfacere, satisfēcī, satisfactum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "satisfy, content (a person)",
+      "grammar": "verb, third conjugation (-iō), with the dative; also written as two words, satis faciō",
+      "evidence": [
+        "Cic. Att. 2.4.3: <span lang=\"la\">dē geōgraphiā dabō operam ut tibi satis faciam</span>"
+      ],
+      "comment": "To do enough for someone, to meet what he wants or expects (Lewis &amp; Short). It also means to make amends, to apologise (<span lang=\"la\">alicui satisfacere</span> after an offence), and to pay a creditor in full; the context tells which."
+    },
+    {
+      "latin": "contentus, contenta, contentum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "satisfied, content (with)",
+      "grammar": "adjective: with the ablative of the thing",
+      "evidence": [
+        "Phaedr. 3.18.10–14: <span lang=\"la\">omnēsque propriīs sunt contentae dōtibus</span>",
+        "Traupman 150"
+      ],
+      "comment": "“Satisfied with”: <span lang=\"la\">contentus suīs rēbus</span>, content with what one has (Cic. Parad. 51, Lewis &amp; Short). A different word from <span lang=\"la\">contentus</span>, “strained”, the participle of <span lang=\"la\">contendō</span>."
+    },
+    {
+      "latin": "placeō, placēre, placuī, placitum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "please, be approved",
+      "grammar": "verb, second conjugation, with the dative",
+      "comment": "Latin often turns “I’m satisfied with it” round: <span lang=\"la\">mihi placet</span>, it pleases me."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "dē geōgraphiā dabō operam ut tibi satis faciam; sed nihil certī polliceor.",
+      "english": "About the geography, I’ll do my best to satisfy you; but I promise nothing definite.",
+      "source": "Cic. Att. 2.4.3"
+    },
+    {
+      "latin": "tibi forma, vīrēs aquilae, lusciniō melos, augurium corvō, laeva cornīcī ōmina, omnēsque propriīs sunt contentae dōtibus.",
+      "english": "to you beauty, to the eagle strength, to the nightingale song, to the raven augury, to the crow omens on the left, and all are content with their own gifts.",
+      "source": "Phaedr. 3.18.10–14"
+    }
+  ],
+  "related": [
+    "satisfy-need",
+    "enjoy",
+    "enough"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/satis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: satis (satisfacio)</a> · <a href=\"https://logeion.uchicago.edu/contentus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: contentus</a> · <a href=\"https://logeion.uchicago.edu/placeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: placeo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 150, checked against the searchable text of the book (11 November 2026).",
+    "Phaedrus from the Latinitas loci collection loci-phaedrus, checked against the edition named there. Cicero’s letters checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

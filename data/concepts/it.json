@@ -1,0 +1,107 @@
+{
+  "id": "it",
+  "english": "it",
+  "pos": "pronoun",
+  "also": [
+    "it’s raining",
+    "that"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "id (is, ea, id)",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "it (of a thing; of a fact or an idea)",
+      "grammar": "pronoun: neuter of is; genitive ejus, dative eī",
+      "evidence": [
+        "Cic. Fam. 9.24.3: <span lang=\"la\">cūrā ut valeās; id forīs cēnitandō facillimē cōnsequēre</span>",
+        "Cic. Sen. 21: <span lang=\"la\">crēdō, nisi eam exerceās</span>"
+      ],
+      "comment": "The neuter is for what has no gender in Latin: a fact, a clause, a deed (<span lang=\"la\">id forīs cēnitandō facillimē cōnsequēre</span>). A noun keeps its own gender, so “it” is <span lang=\"la\">eam</span> for <span lang=\"la\">memoria</span> and <span lang=\"la\">eum</span> for <span lang=\"la\">hortus</span>. Very often Latin says nothing for “it”: as subject the verb carries it, and an object that is plain from the context is left out (Plaut. Aul. 641, <span lang=\"la\">ostendī</span>, I’ve shown them)."
+    },
+    {
+      "latin": "verbum impersōnāle",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "it (in “it is raining”, “it is getting dark”)",
+      "grammar": "construction: the verb alone in the third person singular",
+      "evidence": [
+        "Ter. And. 581: <span lang=\"la\">jam advesperāscit</span>",
+        "Quint. 6.3.66: <span lang=\"la\">nōn pluit, nōn opus est tibi</span>"
+      ],
+      "comment": "Weather, time and feeling verbs have no subject at all: <span lang=\"la\">pluit</span>, it is raining; <span lang=\"la\">advesperāscit</span>, it is getting dark; <span lang=\"la\">mē paenitet</span>, I am sorry. Never <span lang=\"la\">id pluit</span>."
+    },
+    {
+      "latin": "hoc",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "it, this (here, just said)",
+      "grammar": "pronoun: neuter of hic",
+      "evidence": [
+        "Plin. Ep. 1.11.1: <span lang=\"la\">at hoc ipsum scrībe</span>"
+      ],
+      "comment": "Pointing at the thing present or the point just made: <span lang=\"la\">Quid est hoc?</span> What is it?",
+      "notes": [
+        "hic"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nōn pluit, nōn opus est tibi; sī pluit, ipse ūtar",
+      "english": "If it isn’t raining, you don’t need it; if it is raining, I’ll wear it myself.",
+      "source": "Quint. 6.3.66"
+    },
+    {
+      "latin": "jam advesperāscit",
+      "english": "It’s getting dark already.",
+      "source": "Ter. And. 581"
+    },
+    {
+      "latin": "Dīc mihi, aufūgistīne? — Era, factum. — Satin' id tibi placet? — Nōn. … Ūnam hanc noxiam mitte: sī aliam admīserō umquam, occīditō.",
+      "english": "Tell me, did you run away? — Yes, madam. — Are you pleased with it? — No. … Let me off this one fault: if I ever do another, kill me.",
+      "source": "Ter. Eun. 850–853"
+    },
+    {
+      "latin": "at memoria minuitur. crēdō, nisi eam exerceās",
+      "english": "But memory fades. — I suppose it does, if you don’t exercise it.",
+      "source": "Cic. Sen. 21"
+    },
+    {
+      "latin": "corium dēpressum in fluviō vīdērunt canēs. id ut comēsse extractum possent facilius, aquam coepēre ēbibere: sed ruptī prius periēre quam quod petierant contingerent",
+      "english": "Some dogs saw a hide sunk in a river. To get it out and eat it more easily, they began to drink up the water; but they burst and died before they reached what they were after.",
+      "source": "Phaedr. 1.20.3–6"
+    },
+    {
+      "latin": "cūrā ut valeās; id forīs cēnitandō facillimē cōnsequēre",
+      "english": "Look after your health; you’ll manage it most easily by dining out a lot.",
+      "source": "Cic. Fam. 9.24.3"
+    }
+  ],
+  "notes": {
+    "hic": {
+      "form": "hic",
+      "claim": "short i",
+      "against": "Lewis &amp; Short <span lang=\"la\">hīc, haec, hōc</span>, marking the heavy syllable as a long vowel",
+      "html": "De Vaan 284, s.v. <span lang=\"la\">hic</span>: the nominative is <span lang=\"la\">*hi-ke</span>, so the vowel is short and the syllable heavy (<span lang=\"la\">hicc</span>, p. 102, s.v. <span lang=\"la\">-ce</span>); the adverb <span lang=\"la\">hīc</span>, here, is the old locative <span lang=\"la\">*hoi-ke</span>. Likewise the neuter <span lang=\"la\">hoc</span> (<span lang=\"la\">hocc</span>), against the ablative <span lang=\"la\">hōc</span>."
+    }
+  },
+  "related": [
+    "he",
+    "she",
+    "its",
+    "its-getting-dark",
+    "it-looks-like-rain"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/is\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: is</a> · <a href=\"https://logeion.uchicago.edu/hic\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: hic</a>",
+    "Michiel de Vaan, <em>Etymological Dictionary of Latin and the other Italic Languages</em> (2008), pp. 102, 284.",
+    "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-cicero-philosophica, loci-phaedrus, loci-quintilianus, loci-terentius), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

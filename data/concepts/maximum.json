@@ -1,0 +1,90 @@
+{
+  "id": "maximum",
+  "english": "maximum",
+  "sense": "the most possible; at most",
+  "pos": [
+    "noun",
+    "adjective",
+    "adverb"
+  ],
+  "also": [
+    "at most",
+    "at the most",
+    "at the very most",
+    "at the latest",
+    "the maximum",
+    "as much as possible",
+    "top (speed, volume)"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "summum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "at most, at the utmost; at the latest",
+      "grammar": "adverb (neuter of summus), after the number or time it limits",
+      "evidence": [
+        "Cic. Fam. 2.1.1: <span lang=\"la\">bis terve summum</span>",
+        "Cic. Att. 13.21.2: <span lang=\"la\">hodiē aut summum crās</span>"
+      ],
+      "comment": "The everyday way to cap a number: “two or three times at most”; with a time, “at the latest”. Lewis &amp; Short gives it under <span lang=\"la\">superus</span> (<span lang=\"la\">summus</span>)."
+    },
+    {
+      "latin": "quam plūrimum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "as much as possible, the most one can",
+      "grammar": "phrase: quam with the superlative plūrimum, as noun or adverb",
+      "evidence": [
+        "Cic. de Or. 1.150: <span lang=\"la\">caput autem est … quam plūrimum scrībere</span>",
+        "Cic. Rab. Post. 39: <span lang=\"la\">ut habēret quam plūrimum</span> (Lewis &amp; Short)"
+      ],
+      "comment": "<span lang=\"la\">Quam</span> with any superlative gives “as … as possible”: <span lang=\"la\">quam celerrimē</span>, <span lang=\"la\">quam maximus</span> (see most)."
+    },
+    {
+      "latin": "summus, summa, summum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "highest, utmost: the maximum (of speed, effort, volume)",
+      "grammar": "adjective, superlative of superus",
+      "evidence": [
+        "Hor. S. 1.3.7: <span lang=\"la\">summā vōce</span>, at the top of his voice (Lewis &amp; Short)"
+      ],
+      "comment": "The adjective for a maximum reached: <span lang=\"la\">summā vōce</span>, at full volume. See extreme."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ā tē vērō bis terve summum et eās perbrevīs accēpī",
+      "english": "but from you I have had two or three letters at most, and very short ones",
+      "source": "Cic. Fam. 2.1.1"
+    },
+    {
+      "latin": "exspectābam hodiē aut summum crās ab eō tabellāriōs",
+      "english": "I was expecting couriers from him today, or tomorrow at the latest",
+      "source": "Cic. Att. 13.21.2"
+    },
+    {
+      "latin": "Caput autem est, quod, ut vērē dīcam, minimē facimus (est enim magnī labōris, quem plērīque fugimus), quam plūrimum scrībere.",
+      "english": "But the main thing, which, to tell the truth, we do least (for it is hard work, which most of us avoid), is to write as much as possible.",
+      "source": "Cic. de Or. 1.150"
+    }
+  ],
+  "related": [
+    "most-degree",
+    "least",
+    "at-least",
+    "limit"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/superus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: superus</a> · <a href=\"https://logeion.uchicago.edu/multus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: multus</a>",
+    "Cicero (Fam. 2.1.1, Att. 13.21.2, de Or. 1.150) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026).",
+    "Citations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

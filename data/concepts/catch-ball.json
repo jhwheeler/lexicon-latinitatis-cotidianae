@@ -9,6 +9,17 @@
       "latin": "excipiō, excipere",
       "status": "recommended",
       "period": "classical"
+    },
+    {
+      "latin": "accipiō, accipere, accēpī, acceptum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "take, catch (a ball thrown to one)",
+      "evidence": [
+        "Andresian p. 20",
+        "Erasm. Coll., Lūsus puerīlēs (Pila)"
+      ],
+      "comment": "The general word for receiving; <span lang=\"la\">excipere</span> is the word for catching something on the way."
     }
   ],
   "phrases": [
@@ -16,6 +27,11 @@
       "latin": "Pilam excipe.",
       "english": "Catch the ball.",
       "source": "composed"
+    },
+    {
+      "latin": "Rūrsus accipe pilam. — Mitte.",
+      "english": "Catch the ball again! — Throw it!",
+      "source": "Erasm. Coll., Lūsus puerīlēs (Pila), I 39"
     }
   ],
   "related": [
@@ -24,11 +40,14 @@
   ],
   "sources": [
     "<a href=\"https://www.alatius.com/ls/index.php?l=excipio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: excipio</a>",
-    "The example sentences marked “composed” are ours."
+    "<a href=\"https://logeion.uchicago.edu/accipio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: accipio</a>",
+    "The example sentences marked “composed” are ours.",
+    "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 20.",
+    "Erasmus from the Latinitas loci collection (loci-erasmus)."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-11",
     "by": "Claude"
   }
 }

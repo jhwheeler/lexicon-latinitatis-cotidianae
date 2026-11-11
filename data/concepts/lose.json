@@ -25,6 +25,29 @@
       "evidence": [
         "Traupman 44"
       ]
+    },
+    {
+      "latin": "vincor, vincī, victus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "be beaten, lose",
+      "evidence": [
+        "Traupman 44 (<span lang=\"la\">vincor</span>, intransitive “lose”)",
+        "Andresian p. 20",
+        "Vīv. Exerc. 6, 22"
+      ],
+      "comment": "The passive of <span lang=\"la\">vincere</span>, the plain classical way to say it: <span lang=\"la\">victus es</span>, you’ve lost."
+    },
+    {
+      "latin": "cadō, cadere, cecidī, cāsum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "fail, lose (a case, a contest)",
+      "evidence": [
+        "Cic. Inv. 2.57: <span lang=\"la\">causā cadere</span>",
+        "Andresian p. 20"
+      ],
+      "comment": "Classically “fall” and so “fail”; of losing it is chiefly the lawyers’ <span lang=\"la\">causā cadere</span>, lose one’s case."
     }
   ],
   "related": [
@@ -32,11 +55,26 @@
     "draw-tie"
   ],
   "sources": [
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 44."
+    "<a href=\"https://logeion.uchicago.edu/vinco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vinco</a> · <a href=\"https://logeion.uchicago.edu/cado\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cado</a> · <a href=\"https://logeion.uchicago.edu/perdo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: perdo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 44.",
+    "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 20.",
+    "Vives from the Latinitas loci collection (loci-vives)."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-11",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "Victus es. — Aufertō.",
+      "english": "You’ve lost. — Take it, then.",
+      "source": "Vīv. Exerc. 6"
+    },
+    {
+      "latin": "sī perdās, ut id ferās aequō animō",
+      "english": "if you lose, take it calmly",
+      "source": "Vīv. Exerc. 22"
+    }
+  ]
 }

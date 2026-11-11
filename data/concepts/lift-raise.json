@@ -9,9 +9,11 @@
   "domain": "sermo",
   "terms": [
     {
-      "latin": "tollō, tollere",
+      "latin": "tollō, tollere, sustulī, sublātum",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "gloss": "lift, raise; pick up",
+      "comment": "The perfect and the participle come from another stem: <span lang=\"la\">sustulī, sublātum</span>, which are also the perfect and participle of <span lang=\"la\">sufferō</span>. “He picked it up” is <span lang=\"la\">sustulit</span>."
     }
   ],
   "phrases": [
@@ -19,19 +21,37 @@
       "latin": "Strāgulum tollō et dēmittō.",
       "english": "I lift and lower the duvet.",
       "source": "composed"
+    },
+    {
+      "latin": "pellem anguīnam ubi vīderis, tollitō et conditō, nē quaerās cum opus siet",
+      "english": "when you see a snakeskin, pick it up and put it away, so that you needn’t look for it when it’s needed",
+      "source": "Cato Agr. 73"
+    },
+    {
+      "latin": "ego tamen duo sustulī et ecce in mappā alligāta habeō",
+      "english": "still, I took two, and here they are, tied up in my napkin",
+      "source": "Petr. 66.1"
     }
   ],
   "related": [
     "lower",
-    "duvet"
+    "duvet",
+    "lift",
+    "get-rid-of"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/tollo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tollo</a>",
-    "The example sentence marked “composed” is ours."
+    "The example sentences marked “composed” are ours.",
+    "Quotations from the Latinitas loci collections and the note on suppletive verbs, checked against the editions named there."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-11",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "pick up",
+    "lifted",
+    "picked up"
+  ]
 }

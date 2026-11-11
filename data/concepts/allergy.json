@@ -1,0 +1,48 @@
+{
+  "id": "allergy",
+  "english": "allergy",
+  "pos": "noun",
+  "also": [
+    "allergic",
+    "be allergic to",
+    "allergies"
+  ],
+  "domain": "corpus",
+  "terms": [
+    {
+      "latin": "allergia, allergiae f.",
+      "status": "recommended",
+      "period": "ours",
+      "gloss": "an allergy",
+      "comment": "No reference work has a Latin word. <span lang=\"la\">Allergia</span> is the international medical name, coined in 1906 from Greek ἄλλος, other, and ἔργον, work, and used in every European language; Latin speakers use it as it is."
+    },
+    {
+      "latin": "noceō, nocēre, nocuī, nocitum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "be bad for: be allergic to",
+      "grammar": "verb, second conjugation, with the dative",
+      "comment": "The everyday way to say it, with the thing as subject: <span lang=\"la\">nucēs eī nocent</span>, nuts are bad for him."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Nucēs eī nocent; nē dederīs.",
+      "english": "He’s allergic to nuts; don’t give him any.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "doctor",
+    "medicine-drug"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/noceo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: noceo</a>",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

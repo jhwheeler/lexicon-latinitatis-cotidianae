@@ -1,0 +1,94 @@
+{
+  "id": "look",
+  "english": "look!",
+  "sense": "pointing something out",
+  "pos": "interjection",
+  "also": [
+    "behold",
+    "lo",
+    "lo and behold",
+    "see!",
+    "look, here he comes"
+  ],
+  "domain": "sermo",
+  "terms": [
+    {
+      "latin": "Ecce!",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "look! see! behold!",
+      "grammar": "with the nominative or a clause (in comedy also the accusative)",
+      "evidence": [
+        "Plaut. Most. 382: <span lang=\"la\">Ecce autem iterum hīc dēposīvit caput et dormit.</span>",
+        "Cic. Att. 2.8.1: <span lang=\"la\">ecce tibi nūntius puerōs vēnisse Rōmā!</span>"
+      ],
+      "comment": "The everyday word. <span lang=\"la\">Ecce autem</span>, “but look!”, brings in a surprise in a story; <span lang=\"la\">ecce tibi</span> with a clause is the letters’ “and what do you know”; <span lang=\"la\">ecce mē</span>, “here I am” (Lewis &amp; Short)."
+    },
+    {
+      "latin": "Ēn!",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "lo! see there!",
+      "grammar": "with the nominative or the accusative",
+      "register": "mostly in Vergil (Lewis &amp; Short); in Plaut. and Ter. usually written <span lang=\"la\">em</span>",
+      "evidence": [
+        "Verg. A. 1.461: <span lang=\"la\">Ēn Priamus!</span>"
+      ],
+      "comment": "Livelier than <span lang=\"la\">ecce</span>, often indignant: <span lang=\"la\">ēn habet vim indignātiōnis</span> (Donatus, quoted by Lewis &amp; Short)."
+    },
+    {
+      "latin": "Eccum! Eccam!",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "look, here he is! here she is!",
+      "grammar": "from <span lang=\"la\">ecce eum, ecce eam</span>; also <span lang=\"la\">eccōs, eccās</span>",
+      "register": "vōx cōmica: Plaut., Ter.",
+      "evidence": [
+        "Plaut. Aul. 712: <span lang=\"la\">attat, eccum ipsum.</span>",
+        "Plaut. Stich. 577: <span lang=\"la\">atque eccum tibi lupum in sermōne</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Ecce autem iterum hīc dēposīvit caput et dormit. suscitā.",
+      "english": "Look, he’s put his head down again and is asleep. Wake him.",
+      "source": "Plaut. Most. 382"
+    },
+    {
+      "latin": "ecce autem geminī ā Tenedō tranquilla per alta (horrēscō referēns) immēnsīs orbibus anguēs incumbunt pelagō",
+      "english": "but look! two serpents from Tenedos, over the calm deep (I shudder to tell it), lean on the sea in huge coils",
+      "source": "Verg. A. 2.203–205"
+    },
+    {
+      "latin": "ecce tibi nūntius puerōs vēnisse Rōmā!",
+      "english": "and what do you know, word that the boys have come from Rome!",
+      "source": "Cic. Att. 2.8.1"
+    },
+    {
+      "latin": "Ēn Priamus!",
+      "english": "See, there is Priam!",
+      "source": "Verg. A. 1.461"
+    },
+    {
+      "latin": "attat, eccum ipsum.",
+      "english": "Oh! look, there he is himself.",
+      "source": "Plaut. Aul. 712"
+    }
+  ],
+  "related": [
+    "there-you-see",
+    "here-you-are",
+    "im-here"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/ecce\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ecce</a> · <a href=\"https://logeion.uchicago.edu/en\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: en</a> · <a href=\"https://logeion.uchicago.edu/eccum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: eccum</a>",
+    "Plautus, Terence and Cicero’s letters checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (Plautus ed. Leo, with its line numbers; Terence ed. Parry, whose line numbers can run one off the OCT’s; lines taken from the loci collections are cited by the OCT’s; Cicero’s letters ed. Purser). Vergil checked against the Perseus text (ed. Greenough).",
+    "Lines marked as in the Latinitas loci collections (loci-plautus, loci-terentius, loci-cicero-epistulae and others) are quoted from them."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

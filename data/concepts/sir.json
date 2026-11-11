@@ -1,0 +1,78 @@
+{
+  "id": "sir",
+  "english": "sir",
+  "sense": "in polite address",
+  "pos": "noun",
+  "also": [
+    "madam",
+    "ma’am",
+    "yes, sir",
+    "excuse me, sir"
+  ],
+  "domain": "sermo",
+  "terms": [
+    {
+      "latin": "domine",
+      "status": "recommended",
+      "period": "classical",
+      "grammar": "vocative of dominus, used in address",
+      "gloss": "sir",
+      "evidence": [
+        "Sen. Ep. 3.1 (Lewis &amp; Short: “in respectful greeting, like our Sir”)",
+        "Mart. 6.88 (Lewis &amp; Short)",
+        "Traupman 379: to a superior"
+      ],
+      "comment": "By Seneca’s day one greeted a man whose name escaped one as <span lang=\"la\">dominus</span> (Sen. Ep. 3.1, cited by Morgan–Owens s.v. Mr.); earlier it is what a slave called his master. To a woman, <span lang=\"la\">domina</span>."
+    },
+    {
+      "latin": "domina",
+      "status": "alternative",
+      "period": "classical",
+      "grammar": "vocative of domina, used in address",
+      "gloss": "madam",
+      "evidence": [
+        "M-O s.v. Mrs.: ma’am"
+      ]
+    },
+    {
+      "latin": "bone vir",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "sir, my good man",
+      "register": "vōx cōmica: Plaut., Ter.",
+      "evidence": [
+        "Plaut. Capt. 5.2.1 (Lewis &amp; Short)",
+        "Traupman 379"
+      ],
+      "comment": "Friendly or ironic, mostly in comedy (Lewis &amp; Short s.v. <span lang=\"la\">bonus</span>); Traupman gives it for “sir!” to an equal."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Cupiō, domine, sī id pāce liceat tuā.",
+      "english": "I should like to, sir, if you will allow it.",
+      "source": "Erasm. Coll., Monitōria paedagōgica, I 36"
+    },
+    {
+      "latin": "age tū, illūc prōcēde, bone vir!",
+      "english": "come on, you, step forward, my good man!",
+      "source": "Plaut. Capt. 5.2.1 (Lewis &amp; Short)"
+    }
+  ],
+  "related": [
+    "master-owner",
+    "gentleman",
+    "lady"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/dominus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dominus</a> · <a href=\"https://logeion.uchicago.edu/domina\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: domina</a> · <a href=\"https://logeion.uchicago.edu/bonus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: bonus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 379, checked against the searchable text of the book (11 November 2026).",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. Mr.; Mrs..",
+    "Quotations from the Latinitas loci collections (loci-erasmus), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

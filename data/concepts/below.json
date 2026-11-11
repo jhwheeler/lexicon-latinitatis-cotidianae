@@ -1,0 +1,71 @@
+{
+  "id": "below",
+  "english": "below",
+  "pos": [
+    "preposition",
+    "adverb"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "īnfrā (+ accusative)",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "below (lower than)",
+      "grammar": "preposition with the accusative; also an adverb",
+      "evidence": [
+        "Cic. Verr. 2.4.51: <span lang=\"la\">ad mare īnfrā oppidum exspectābat</span>",
+        "Cic. Fam. 9.26.1: <span lang=\"la\">suprā mē Atticus, īnfrā Verrius</span>"
+      ],
+      "comment": "Lower than a thing, not under it: <span lang=\"la\">īnfrā oppidum</span>, below the town. As an adverb, below, or later in a text."
+    },
+    {
+      "latin": "subter (+ accusative)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "below, beneath",
+      "grammar": "preposition with the accusative (with the ablative in verse); also an adverb",
+      "evidence": [
+        "Cic. de Or. 3.20: <span lang=\"la\">quae suprā et subter</span>"
+      ],
+      "comment": "Rare but classical (Lewis &amp; Short). For “under”, see under."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "in lectīcā cubāns ad mare īnfrā oppidum exspectābat",
+      "english": "he was waiting, lying in a litter, by the sea below the town",
+      "source": "Cic. Verr. 2.4.51"
+    },
+    {
+      "latin": "in superiōre parte nāvigāre tantum, īnfrā etiam natāre concessum",
+      "english": "in the upper part one may only go by boat; below, swimming is allowed too",
+      "source": "Plin. Ep. 8.8.6"
+    },
+    {
+      "latin": "per nūdam īnfrā glaciem fluentemque tābem liquēscentis nivis ingrediēbantur",
+      "english": "they were walking over the bare ice below and the running slush of melting snow",
+      "source": "Liv. 21.36.6"
+    },
+    {
+      "latin": "omnia haec, quae suprā et subter, ūnum esse",
+      "english": "that all these things, above and below, are one",
+      "source": "Cic. de Or. 3.20"
+    }
+  ],
+  "related": [
+    "under",
+    "above",
+    "down"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/infra\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: infra</a> · <a href=\"https://logeion.uchicago.edu/subter\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: subter</a>",
+    "Quotations from the Latinitas loci collections (loci-plinius, loci-livius), checked against the editions named there.",
+    "Plautus, Terence, Caesar, Cicero and Tacitus checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

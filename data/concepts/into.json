@@ -1,0 +1,87 @@
+{
+  "id": "into",
+  "english": "into",
+  "sense": "going into a place",
+  "pos": "preposition",
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "in (+ accusative)",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "into, in (where to)",
+      "grammar": "preposition with the accusative",
+      "evidence": [
+        "Vulg. Lc. 10.5: <span lang=\"la\">In quamcumque domum intrāveritis</span>",
+        "Plin. NH 9.86: <span lang=\"la\">omnia in domum conportat</span>"
+      ],
+      "comment": "The accusative answers “where to?” (<span lang=\"la\">quō?</span>). With <span lang=\"la\">pōnere</span>, put, Latin usually names where the thing ends up, in the ablative: <span lang=\"la\">in mēnsā pōnere</span>, put on the table; its compounds (<span lang=\"la\">impōnere, īnferre</span>) take <span lang=\"la\">in</span> with the accusative."
+    },
+    {
+      "latin": "domum, rūs; Rōmam (accusative alone)",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "home, to the country; to Rome",
+      "grammar": "accusative without a preposition",
+      "evidence": [
+        "Plaut. Men. 850b: <span lang=\"la\">Fuge domum, quantum potest.</span>",
+        "Cic. Off. 3.112: <span lang=\"la\">accurrisse Rōmam</span>"
+      ],
+      "comment": "Names of towns and small islands, <span lang=\"la\">domus</span> and <span lang=\"la\">rūs</span> take no preposition: <span lang=\"la\">domum īre</span>, go home; <span lang=\"la\">rūs īre</span>, go to the country. <span lang=\"la\">In domum</span> is into a house, the building."
+    },
+    {
+      "latin": "intrō, intrāre, intrāvī, intrātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "go into, enter",
+      "grammar": "verb, first conjugation, with the accusative or in + accusative",
+      "evidence": [
+        "Vulg. Lc. 10.5: <span lang=\"la\">In quamcumque domum intrāveritis</span>"
+      ],
+      "comment": "Latin often says “go into” with one verb: <span lang=\"la\">intrāre</span>, <span lang=\"la\">introīre</span>, <span lang=\"la\">ingredī</span> (see enter); and “in” with a verb of motion is the adverb <span lang=\"la\">intrō</span> (see inside)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "In quamcumque domum intrāveritis, prīmum dīcite: Pāx huic domuī.",
+      "english": "Whatever house you go into, first say: Peace to this house.",
+      "source": "Vulg. Lc. 10.5"
+    },
+    {
+      "latin": "omnia in domum conportat, dein putāmina ērōsā carne ēgerit",
+      "english": "it carries everything into its home, then eats the flesh and throws out the shells",
+      "source": "Plin. NH 9.86"
+    },
+    {
+      "latin": "Fuge domum, quantum potest.",
+      "english": "Run home as fast as you can.",
+      "source": "Plaut. Men. 850b"
+    },
+    {
+      "latin": "accurrisse Rōmam et cum prīmō lūcī Pompōniī domum vēnisse dīcitur",
+      "english": "he is said to have hurried to Rome and come to Pomponius’ house at first light",
+      "source": "Cic. Off. 3.112"
+    },
+    {
+      "latin": "Eāmus intrō, ut prandeāmus.",
+      "english": "Let’s go in and have lunch.",
+      "source": "Plaut. Men. 387"
+    }
+  ],
+  "related": [
+    "in-place",
+    "to-place",
+    "enter",
+    "inside",
+    "house"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/in\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: in</a> · <a href=\"https://logeion.uchicago.edu/domus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: domus</a> · <a href=\"https://logeion.uchicago.edu/intro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: intro</a>",
+    "Quotations from the Latinitas loci collections (loci-vulgata, loci-plinius, loci-plautus, loci-cicero-philosophica), checked against the editions named there."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

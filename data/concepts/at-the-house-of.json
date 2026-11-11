@@ -1,0 +1,91 @@
+{
+  "id": "at-the-house-of",
+  "english": "at the house of",
+  "pos": "preposition",
+  "also": [
+    "at someone’s house",
+    "at my place",
+    "at someone’s place"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "apud (+ accusative)",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "at the house of, with (a person)",
+      "grammar": "preposition with the accusative",
+      "evidence": [
+        "Catull. 13.1: <span lang=\"la\">cēnābis bene, mī Fabulle, apud mē</span>",
+        "Plaut. Aul. 243: <span lang=\"la\">hīc apud mē hortum cōnfodere jussī</span>"
+      ],
+      "comment": "With a person, at their home: <span lang=\"la\">apud mē</span>, at my house; <span lang=\"la\">apud avum</span>, at Grandpa’s. Also in someone’s presence (<span lang=\"la\">apud jūdicem</span>), and among a people (see among)."
+    },
+    {
+      "latin": "ad (+ accusative)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "to the house of (going there)",
+      "grammar": "preposition with the accusative",
+      "evidence": [
+        "Cic. Att. 4.4a.1: <span lang=\"la\">perbellē fēceris sī ad nōs vēneris</span>"
+      ],
+      "comment": "With verbs of motion: <span lang=\"la\">ad mē venī</span>, come to my house; <span lang=\"la\">ad avum īmus</span>, we are going to Grandpa’s."
+    },
+    {
+      "latin": "domī (+ genitive or a possessive)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "at the house of",
+      "grammar": "locative of domus",
+      "evidence": [
+        "Cic. Att. 1.12.3: <span lang=\"la\">dēprehēnsum domī C. Caesaris</span>"
+      ],
+      "comment": "<span lang=\"la\">Domī meae</span>, at my house; <span lang=\"la\">domī Caesaris</span>, at Caesar’s house. Going there, <span lang=\"la\">domum meam</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "cēnābis bene, mī Fabulle, apud mē paucīs, sī tibi dī favent, diēbus",
+      "english": "you will dine well at my house, my Fabullus, in a few days, if the gods are kind to you",
+      "source": "Catull. 13.1–2"
+    },
+    {
+      "latin": "Hīc apud mē hortum cōnfodere jussī.",
+      "english": "I’ve had the garden dug over here at my place.",
+      "source": "Plaut. Aul. 243"
+    },
+    {
+      "latin": "perbellē fēceris sī ad nōs vēneris",
+      "english": "it would be lovely of you to come to us",
+      "source": "Cic. Att. 4.4a.1"
+    },
+    {
+      "latin": "P. Clōdium Appī f., crēdō tē audīsse cum veste muliebrī dēprehēnsum domī C. Caesaris",
+      "english": "I expect you have heard that Publius Clodius, son of Appius, was caught in women’s clothes at Gaius Caesar’s house",
+      "source": "Cic. Att. 1.12.3"
+    },
+    {
+      "latin": "Hodiē apud avum cēnābimus.",
+      "english": "Today we’re having dinner at Grandpa’s.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "at-place",
+    "to-place",
+    "house",
+    "among"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/apud\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: apud</a> · <a href=\"https://logeion.uchicago.edu/ad\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ad</a> · <a href=\"https://logeion.uchicago.edu/domus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: domus</a>",
+    "Quotations from the Latinitas loci collections (loci-catullus, loci-cicero-epistulae), checked against the editions named there.",
+    "Plautus, Terence, Caesar, Cicero, Livy and Tacitus checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026).",
+    "The example sentences marked “composed” are ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

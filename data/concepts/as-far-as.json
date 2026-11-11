@@ -1,0 +1,77 @@
+{
+  "id": "as-far-as",
+  "english": "as far as",
+  "sense": "all the way to a point",
+  "pos": "preposition",
+  "also": [
+    "up to",
+    "all the way to",
+    "down to"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "ūsque ad (+ accusative)",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "as far as, all the way to; until",
+      "grammar": "ad with the accusative, strengthened by the adverb ūsque",
+      "evidence": [
+        "Cic. Rosc. Com. 20: <span lang=\"la\">ab īmīs unguibus ūsque ad verticem summum</span>",
+        "Varr. LL 6.34: <span lang=\"la\">ūsque ad Decembrem</span>"
+      ],
+      "comment": "All the way to a point in space or time: <span lang=\"la\">ūsque ad mare</span>, as far as the sea; <span lang=\"la\">ā … ūsque ad</span>, from … to. With names of towns, <span lang=\"la\">ūsque</span> with the accusative alone is classical (<span lang=\"la\">ūsque Rōmam</span>; Lewis &amp; Short)."
+    },
+    {
+      "latin": "tenus (+ ablative)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "as far as, up to",
+      "grammar": "preposition placed after its noun, with the ablative (in verse and Livy also a genitive plural)",
+      "register": "vōx plērumque poētica: Verg., Ov.; also Liv. and post-Augustan prose",
+      "evidence": [
+        "Liv. 21.54.9: <span lang=\"la\">erat pectoribus tenus aucta</span>",
+        "Verg. A. 2.553: <span lang=\"la\">capulō tenus</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Mostly in verse and post-Augustan prose, not in Caesar (Lewis &amp; Short): <span lang=\"la\">pectoribus tenus</span>, up to the chest. <span lang=\"la\">Verbīs tenus</span>, as far as words go."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nōn ab īmīs unguibus ūsque ad verticem summum … ex fraude, fallāciīs, mendāciīs cōnstāre tōtus vidētur?",
+      "english": "does he not seem, from the tips of his toes to the top of his head, to be made entirely of fraud, tricks and lies?",
+      "source": "Cic. Rosc. Com. 20"
+    },
+    {
+      "latin": "dehinc quīntus Quīntīlis et sīc deinceps ūsque ad Decembrem ā numerō",
+      "english": "then the fifth, Quintilis, and so on in order as far as December, named from their numbers",
+      "source": "Varr. LL 6.34"
+    },
+    {
+      "latin": "et erat pectoribus tenus aucta nocturnō imbrī",
+      "english": "and it had risen with the night’s rain as far as their chests",
+      "source": "Liv. 21.54.9"
+    },
+    {
+      "latin": "factīs procul, verbīs tenus",
+      "english": "far from it in deeds, as far as words go",
+      "source": "Gell. 17.19.1"
+    }
+  ],
+  "related": [
+    "to-place",
+    "from-place",
+    "throughout"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/usque\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: usque</a> · <a href=\"https://logeion.uchicago.edu/tenus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tenus</a>",
+    "Quotations from the Latinitas loci collections (loci-varro, loci-gellius), checked against the editions named there.",
+    "Plautus, Terence, Caesar, Cicero, Livy and Tacitus checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026).",
+    "Citations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling (macrons, consonantal j), and have not been checked against an edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-09",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "id": "suspect-noun",
+  "english": "suspect",
+  "sense": "a person suspected",
+  "pos": [
+    "noun",
+    "adjective"
+  ],
+  "also": [
+    "the suspect",
+    "suspects",
+    "suspected",
+    "under suspicion",
+    "prime suspect"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "suspectus, suspecta, suspectum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "suspected; as a noun, a suspect",
+      "evidence": [
+        "Ter. Hec. 4.2.1: <span lang=\"la\">tibi mē esse suspectam</span> (Lewis &amp; Short)",
+        "Cic. Cat. 1.17: <span lang=\"la\">meīs cīvibus suspectus</span>",
+        "Traupman 197, 388"
+      ],
+      "comment": "The person who suspects is in the dative (<span lang=\"la\">suspectus rēgī</span>, Sall. Jug. 70.1); the crime in the genitive (<span lang=\"la\">suspectus sceleris</span>, Curt.) or with <span lang=\"la\">in</span> (<span lang=\"la\">in morte mātris</span>, Suet. Vit. 14). <span lang=\"la\">Suspectum habēre aliquem</span>, to suspect someone (Plaut. Bacch.). Traupman uses <span lang=\"la\">suspectus, suspectī m.</span> as a noun, “a suspect”."
+    },
+    {
+      "latin": "is in quem suspīciō cadit",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the person suspicion falls on",
+      "grammar": "phrase: a relative clause with suspīciō, suspīciōnis f.",
+      "evidence": [
+        "Cic. Att. 13.10.3 (Lewis &amp; Short, s.v. suspīciō)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nōn clam mē est, tibi mē esse suspectam",
+      "english": "I am well aware that you suspect me",
+      "source": "Ter. Hec. 4.2.1 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "Bomilcar suspectus rēgī et ipse eum suspiciēns",
+      "english": "Bomilcar, suspected by the king and suspecting him in turn",
+      "source": "Sall. Jug. 70.1 (Lewis &amp; Short)"
+    }
+  ],
+  "related": [
+    "suspect-verb",
+    "criminal",
+    "crime",
+    "arrest",
+    "investigate"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/suspicio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: suspicio</a> · <a href=\"https://logeion.uchicago.edu/suspectus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: suspectus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 197, 388, checked against the searchable text of the book (11 November 2026)."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-11",
+    "by": "Claude"
+  }
+}

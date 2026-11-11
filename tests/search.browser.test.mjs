@@ -474,7 +474,7 @@ test('the settings hold the display options and the theme, on a phone as on a wi
       await page.goto(pageUrl(path));
       await page.locator('.settings > summary').click();
       const buttons = page.locator('.settings-panel button');
-      assert.equal(await buttons.count(), 6);
+      assert.equal(await buttons.count(), 8);
       assert.ok((await buttons.evaluateAll(nodes => nodes.map(n => n.getBoundingClientRect().height))).every(h => h >= 44));
       assert.equal(await overflows(), false, `${path} at ${width}px with the settings open`);
       await page.keyboard.press('Escape');
@@ -604,6 +604,64 @@ test('display options hide macrons or write i for j on every page, and search st
   await settle();
   await page.goto(url);
   assert.equal(await brand(), 'Lexicon Latīnitātis Cotīdiānae');
+});
+
+test('consonantal u can be written u: lower case only, combined with the other options, and restored exactly', async () => {
+  await page.evaluate(() => { ['lexicon-macrons', 'lexicon-j', 'lexicon-v'].forEach(key => localStorage.removeItem(key)); });
+  await settle();
+  await page.goto(pageUrl('c/see.html'));
+  const lemma = () => page.locator('.lemma').first().textContent();
+  const original = await lemma();
+  assert.equal(original, 'videō, vidēre, vīdī, vīsum');
+  await page.locator('.settings > summary').click();
+  assert.equal(await page.locator('.settings-panel [data-display="v"][data-value="v"]').getAttribute('aria-pressed'), 'true');
+  await page.locator('.settings-panel').getByRole('button', { name: 'uideo', exact: true }).click();
+  assert.equal(await lemma(), 'uideō, uidēre, uīdī, uīsum', 'macrons are untouched');
+  assert.equal(await page.locator('.settings-panel [data-display="v"][data-value="u"]').getAttribute('aria-pressed'), 'true');
+  await settle();
+  // Capital V stays: Vae victīs → Vae uictīs.
+  await page.goto(pageUrl('c/alas.html'));
+  assert.match(await page.locator('.ex').textContent(), /Vae uictīs\./);
+  // It combines with iam, in either order, and with hidden macrons.
+  await page.goto(pageUrl('c/young.html'));
+  await page.locator('.settings > summary').click();
+  await page.locator('.settings-panel').getByRole('button', { name: 'iam', exact: true }).click();
+  assert.equal(await page.locator('.lemma').first().textContent(), 'iuuenis, iuuenis');
+  await page.locator('.settings-panel').getByRole('button', { name: 'Hidden', exact: true }).click();
+  await page.locator('.settings-panel').getByRole('button', { name: 'video', exact: true }).click();
+  assert.equal(await page.locator('.lemma').first().textContent(), 'iuvenis, iuvenis');
+  await page.locator('.settings-panel').getByRole('button', { name: 'uideo', exact: true }).click();
+  await page.locator('.settings-panel').getByRole('button', { name: 'jam', exact: true }).click();
+  assert.equal(await page.locator('.lemma').first().textContent(), 'juuenis, juuenis');
+  await page.locator('.settings-panel').getByRole('button', { name: 'Shown', exact: true }).click();
+  await settle();
+  // Search results are written the same way, and switching back restores the text exactly.
+  await page.goto(url);
+  await search('uideo');
+  const see = page.locator('.search-result[data-result-for="c-see"]');
+  assert.match(await see.locator('h3').textContent(), /^uideō, uidēre/);
+  await page.locator('.settings > summary').click();
+  await page.locator('.settings-panel').getByRole('button', { name: 'video', exact: true }).click();
+  assert.match(await see.locator('h3').textContent(), /^videō, vidēre/);
+  await settle();
+  await page.goto(pageUrl('c/see.html'));
+  assert.equal(await lemma(), original);
+});
+
+test('the search reads u and v alike in Latin, as it reads i and j', async () => {
+  await search('uideo');
+  assert.ok((await resultIds()).includes('c-see'));
+  await search('uinum');
+  const vinum = await resultIds();
+  await search('vinum');
+  assert.deepEqual(await resultIds(), vinum);
+  assert.ok(vinum.length > 0);
+  // A form found from its stem: uidemus is a form of videō.
+  await search('uidemus');
+  assert.ok((await resultIds()).includes('c-see'));
+  await search('love');
+  const love = await resultIds();
+  assert.ok(love.length > 0);
 });
 
 // Concept and word pages -------------------------------------------------------------------------

@@ -37,17 +37,22 @@
     field.select();
   });
 
-  // Display options: macrons shown or hidden, consonantal i written j or i. They change only what
-  // is shown (search ignores both anyway); each text node under lang="la" keeps its original.
+  // Display options: macrons shown or hidden, consonantal i written j or i, consonantal u written
+  // v or u (Jack, 11 November 2026: lower case only, so Venus and Vt keep their capital V). They
+  // change only what is shown (search ignores all three anyway); each text node under lang="la"
+  // keeps its original, so switching back restores it exactly.
   const original = new WeakMap();
-  const settings = { macrons: 'on', j: 'j' };
+  const settings = { macrons: 'on', j: 'j', v: 'v' };
+  const keys = { macrons: 'lexicon-macrons', j: 'lexicon-j', v: 'lexicon-v' };
   try {
     if (localStorage.getItem('lexicon-macrons') === 'off') settings.macrons = 'off';
     if (localStorage.getItem('lexicon-j') === 'i') settings.j = 'i';
+    if (localStorage.getItem('lexicon-v') === 'u') settings.v = 'u';
   } catch {}
   function shown(text) {
     if (settings.macrons === 'off') text = text.normalize('NFD').replace(/\u0304/g, '').normalize('NFC');
     if (settings.j === 'i') text = text.replace(/j/g, 'i').replace(/J/g, 'I');
+    if (settings.v === 'u') text = text.replace(/v/g, 'u');
     return text;
   }
   function render(scope = document) {
@@ -63,18 +68,18 @@
   const options = [...document.querySelectorAll('[data-display]')];
   function syncDisplay() {
     options.forEach(button => button.setAttribute('aria-pressed', String(settings[button.dataset.display] === button.dataset.value)));
-    root.dataset.macrons = settings.macrons; root.dataset.consonantalI = settings.j;
+    root.dataset.macrons = settings.macrons; root.dataset.consonantalI = settings.j; root.dataset.consonantalU = settings.v;
   }
   options.forEach(button => button.addEventListener('click', () => {
     settings[button.dataset.display] = button.dataset.value;
     try {
-      localStorage.setItem(button.dataset.display === 'j' ? 'lexicon-j' : 'lexicon-macrons', button.dataset.value);
+      localStorage.setItem(keys[button.dataset.display], button.dataset.value);
     } catch {}
     syncDisplay(); render();
     document.dispatchEvent(new CustomEvent('lexicon-display'));
   }));
   syncDisplay();
-  if (settings.macrons === 'off' || settings.j === 'i') render();
+  if (settings.macrons === 'off' || settings.j === 'i' || settings.v === 'u') render();
   window.lexiconDisplay = { render };
 
   // Example filters: all examples show without JavaScript; with it, a reader can keep

@@ -55,7 +55,9 @@ OPTION_ROWS = ('<p class="display-row"><span>Macrons</span><button type="button"
                'aria-pressed="true">Shown</button><button type="button" data-display="macrons" data-value="off" '
                'aria-pressed="false">Hidden</button></p><p class="display-row"><span>Consonantal i</span><button type="button" '
                'data-display="j" data-value="j" aria-pressed="true">jam</button><button type="button" data-display="j" '
-               'data-value="i" aria-pressed="false">iam</button></p><p class="display-row"><span>Theme</span><button type="button" '
+               'data-value="i" aria-pressed="false">iam</button></p><p class="display-row"><span>Consonantal u</span><button type="button" '
+               'data-display="v" data-value="v" aria-pressed="true">video</button><button type="button" data-display="v" '
+               'data-value="u" aria-pressed="false">uideo</button></p><p class="display-row"><span>Theme</span><button type="button" '
                'data-theme-choice="light" aria-pressed="true">Light</button><button type="button" data-theme-choice="dark" '
                'aria-pressed="false">Dark</button></p>')
 SETTINGS = ('<details class="settings"><summary aria-label="Display and theme" title="Display and theme">'
@@ -495,6 +497,12 @@ _IRREGULAR = {
     'fio': (['fio', 'fis', 'fit', 'fimus', 'fitis', 'fiunt', 'fieri', 'fi', 'fite', 'fies', 'fiet', 'fiemus', 'fietis', 'fient']
             + _persons('fieba') + _persons('fia') + _persons('fiere'), None),
 }
+
+
+def uv_fold(text):
+    """The search reads u and v alike (uideō finds videō), as it reads i and j alike; the stems and
+    endings are worked out with v and folded only when they are written into the search data."""
+    return text.replace('v', 'u')
 
 
 def search_fold(text):
@@ -1218,7 +1226,8 @@ def search_data(site):
                 lines += [['e', p['latin'], p['english'], plain(p['source'])] for p in record.get('phrases', [])]
                 lines += [['n', plain(note_html(record['notes'][n]))] for n in note_numbers(record)]
                 # Each term's head and the stems its forms are built on: [head, class, stem, class, stem…]
-                forms = [[term_head(t['latin'])] + [part for pair in stems for part in pair]
+                # The search folds v as u, as it folds j as i (videō, uideō), so the stems are sent folded.
+                forms = [[term_head(t['latin'])] + [part for cls, stem in stems for part in (cls, uv_fold(stem))]
                          for t in ordered_terms(record) if (stems := search_stems(t))]
                 items.append({'id': f'c-{record["id"]}', 'u': path, 'k': key, 'en': english, 'pos': pos,
                               'al': '; '.join(record.get('also', [])), 'l': lines,
@@ -1235,7 +1244,7 @@ def search_data(site):
                         lines.append(['n', plain(paragraph)])
                 items.append({'id': entry['id'], 'u': path, 'k': key, 'en': english, 'la': latin,
                               'al': entry.get('keywords', ''), 'l': lines})
-    data = {'categories': {key: c['latin'] for key, c in site['categories'].items()}, 'endings': ENDINGS, 'items': items}
+    data = {'categories': {key: c['latin'] for key, c in site['categories'].items()}, 'endings': {cls: [uv_fold(e) for e in endings] for cls, endings in ENDINGS.items()}, 'items': items}
     return 'window.lexiconData = ' + json.dumps(data, ensure_ascii=False, separators=(',', ':')) + ';\n'
 
 

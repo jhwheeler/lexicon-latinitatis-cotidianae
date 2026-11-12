@@ -3,7 +3,6 @@
   "english": "how old are you?",
   "pos": "phrase",
   "also": [
-    "age",
     "how old"
   ],
   "domain": "sermo",
@@ -11,7 +10,16 @@
     {
       "latin": "Quot annōrum es?",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "gloss": "how old are you?",
+      "grammar": "question: the genitive of quality, “of how many years are you?”"
+    },
+    {
+      "latin": "Quot annōs nātus (nāta) es?",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "how old are you?",
+      "comment": "Answered in the same form: <span lang=\"la\">Trēs annōs nātus sum</span>, I’m three."
     }
   ],
   "phrases": [
@@ -19,11 +27,18 @@
       "latin": "Baba ferē nōnāgintā annōs nāta est, lenta quidem, sed suīs pedibus ambulat.",
       "english": "Baba is nearly ninety, slow indeed, but she walks on her own feet.",
       "source": "Libellus VII, <span lang=\"la\">Diēs ūnus Osoitsae</span>"
+    },
+    {
+      "latin": "quattuor et vīgintī fermē annōs nātus",
+      "english": "about twenty-four years old",
+      "source": "Liv. 26.18.7"
     }
   ],
   "related": [
     "two-years-old",
-    "three-years-old"
+    "three-years-old",
+    "age",
+    "a-man-of"
   ],
   "sources": [
     "The phrase is composed; the grouped card gave no source.",
@@ -31,7 +46,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

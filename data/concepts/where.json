@@ -6,7 +6,9 @@
   "also": [
     "where?",
     "where are you?",
-    "in which place"
+    "in which place",
+    "where in the world",
+    "where on earth"
   ],
   "domain": "verba",
   "terms": [
@@ -23,13 +25,14 @@
       "comment": "Only of being somewhere: “where to?” is <span lang=\"la\">quō</span>, “where from?” <span lang=\"la\">unde</span>. As a relative it answers <span lang=\"la\">ibi</span>, there. <span lang=\"la\">Ubi</span> is also the conjunction “when”, a different record."
     },
     {
-      "latin": "ubi gentium (ubi terrārum)",
+      "latin": "ubinam gentium (ubi terrārum)",
       "status": "alternative",
       "period": "classical",
-      "gloss": "where on earth?",
-      "grammar": "ubi with a partitive genitive",
+      "gloss": "where in the world? where on earth?",
+      "grammar": "ubi or ubinam with a partitive genitive",
       "evidence": [
-        "Plaut. Rud. 469: <span lang=\"la\">ubi tū es gentium?</span>"
+        "Plaut. Rud. 469: <span lang=\"la\">ubi tū es gentium?</span>",
+        "Cic. Cat. 1.9: <span lang=\"la\">ubinam gentium sumus?</span>"
       ]
     }
   ],
@@ -58,6 +61,11 @@
       "latin": "hoc erat in vōtīs: modus agrī nōn ita magnus, hortus ubi et tēctō vīcīnus jūgis aquae fōns et paulum silvae super hīs foret",
       "english": "this was what I prayed for: a piece of land not so very big, where there would be a garden, and near the house a spring of ever-flowing water, and a bit of woodland besides",
       "source": "Hor. S. 2.6.1–3"
+    },
+    {
+      "latin": "Ō dī immortālēs! ubinam gentium sumus?",
+      "english": "Immortal gods! Where in the world are we?",
+      "source": "Cic. Cat. 1.9"
     }
   ],
   "related": [
@@ -74,7 +82,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

@@ -31,9 +31,13 @@ A phrase book's Latin is checked in Lewis & Short like any other, and what the c
 
 - the English expression gets the Latin that is right as its recommended term, with a classical citation, and the book's phrase beside it marked `avoid` with the reason in a sentence ("commit to memory": *memoriae mandāre*, Cicero's phrase, with Traupman's *memoriae committere* marked `avoid`);
 - the book's Latin is entered under what it really means, in the record for that sense (*grātiam facere* under forgive, not under "do a favour");
-- a usage that is unattested in classical authors but current in modern Latin stays, with a plain sentence saying so (bare *Grātiās!* is not found classically without *agere*, but is used so in modern Latin).
+- a usage for which we have found no classical instance but which is current in modern Latin stays, with a plain sentence saying so (we have found no classical instance of bare *Grātiās!* without *agere*, but it is used so in modern Latin).
 
 Traupman is cited as `Traupman 103` (the printed page).
+
+### Saying that something is not attested
+
+Say what the search found, not what the language lacks: "we have found no classical instance", "not found in Lewis & Short or the loci collections". Write "unattested", "does not occur" or "is not classical" only when a reliable authority says so in terms (Lewis & Short, de Vaan, Allen & Greenough), and name it: "the nominative does not occur (Lewis & Short)". Our not finding a phrase is a fact about our search.
 
 ## Spelling the Latin
 

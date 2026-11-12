@@ -3,7 +3,8 @@
   "english": "sandal",
   "pos": "noun",
   "also": [
-    "sandals"
+    "sandals",
+    "clogs"
   ],
   "domain": "vestitus",
   "terms": [
@@ -11,7 +12,10 @@
       "latin": "solea, soleae f.",
       "status": "recommended",
       "period": "classical",
-      "gloss": "sandal"
+      "gloss": "sandal",
+      "evidence": [
+        "Traupman 117"
+      ]
     },
     {
       "latin": "sandalium, sandaliī n.",
@@ -21,9 +25,31 @@
       "evidence": [
         "Ter. Eun. 5.7.4; Vulg. Judith 10.3 (Lewis &amp; Short)",
         "Traupman 373: sandal with covered toes",
-        "Andresian p. 39"
+        "Andresian p. 39",
+        "Traupman 117"
       ],
       "comment": "A Greek word for a woman’s slipper in Terence; Traupman keeps it for a sandal that covers the toes."
+    },
+    {
+      "latin": "soleae ligneae",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "clogs",
+      "evidence": [
+        "Traupman 116"
+      ],
+      "comment": "“Wooden sandals”. Cicero mentions <span lang=\"la\">soleae ligneae</span> (Inv. 2.149) as worn by a condemned parricide."
+    },
+    {
+      "latin": "crepida, crepidae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a Greek sandal with a thick sole",
+      "evidence": [
+        "Cic. Rab. Post. 27; Liv. 29.19.12 (Lewis &amp; Short)",
+        "Traupman 117"
+      ],
+      "comment": "Lewis &amp; Short calls <span lang=\"la\">solea</span> the pure Latin word for it."
     }
   ],
   "related": [
@@ -33,7 +59,8 @@
     "<a href=\"https://logeion.uchicago.edu/solea\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: solea</a>",
     "<a href=\"https://logeion.uchicago.edu/sandalium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sandalium</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 373, checked against the searchable text of the book (11 November 2026).",
-    "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 39."
+    "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 39.",
+    "<a href=\"https://logeion.uchicago.edu/crepida\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: crepida</a>"
   ],
   "review": {
     "status": "draft",

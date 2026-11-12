@@ -3,7 +3,10 @@
   "english": "ignorant",
   "pos": "adjective",
   "also": [
-    "ignorance"
+    "ignorance",
+    "ignoramus",
+    "uneducated",
+    "unlearned"
   ],
   "domain": "verba",
   "terms": [
@@ -14,9 +17,12 @@
       "gloss": "ignorant, unskilful, silly",
       "evidence": [
         "Plaut. Rud. 3.1.5 (Lewis &amp; Short)",
-        "Traupman 154"
+        "Traupman 154",
+        "Plaut. Most. 1.3.51 (Lewis &amp; Short)",
+        "Traupman 331"
       ],
-      "comment": "Lewis &amp; Short: rare in Cicero."
+      "comment": "Lewis &amp; Short: rare in Cicero.",
+      "register": "vōx plērumque cōmica: Plaut.; rāra apud Cic."
     },
     {
       "latin": "īnscientia, īnscientiae f.",
@@ -25,19 +31,49 @@
       "gloss": "ignorance, inexperience",
       "evidence": [
         "Cic. Sull. 40 (Lewis &amp; Short)",
-        "Traupman 154"
+        "Traupman 154",
+        "Cic. Sull. 40: <span lang=\"la\">in tantīs tenebrīs errōris et īnscientiae</span> (Lewis &amp; Short)",
+        "Traupman 331"
       ]
+    },
+    {
+      "latin": "indoctus, indocta, indoctum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "uneducated, ignorant, untaught",
+      "evidence": [
+        "Cic. Brut. 178 (Lewis &amp; Short)",
+        "Traupman 331"
+      ]
+    },
+    {
+      "latin": "nesapius, nesapia, nesapium",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "ignoramus, fool",
+      "evidence": [
+        "Petr. 50.5 (Lewis &amp; Short)",
+        "Traupman 331"
+      ],
+      "comment": "An adjective, “unwise”, in Petronius’ freedman’s talk; Traupman uses it as a noun."
     }
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/inscitus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: inscitus</a>",
     "<a href=\"https://logeion.uchicago.edu/inscientia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: inscientia</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, each phrase checked against the searchable text of the book.",
-    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "<a href=\"https://logeion.uchicago.edu/indoctus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: indoctus</a>",
+    "<a href=\"https://logeion.uchicago.edu/nesapius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nesapius</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 331."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "related": [
+    "stupid",
+    "education"
+  ]
 }

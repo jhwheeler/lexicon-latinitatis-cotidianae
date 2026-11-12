@@ -7,7 +7,8 @@
     "sociable",
     "social life",
     "social animal",
-    "social class"
+    "social class",
+    "gregarious"
   ],
   "domain": "verba",
   "also_under": [
@@ -32,7 +33,8 @@
       "period": "classical",
       "gloss": "sociable, made for company",
       "evidence": [
-        "Sen. Ep. 95.52: <span lang=\"la\">amōrem indidit mūtuum et sociābilēs fēcit</span>"
+        "Sen. Ep. 95.52: <span lang=\"la\">amōrem indidit mūtuum et sociābilēs fēcit</span>",
+        "Traupman 158"
       ],
       "comment": "Rare, and not before Augustus (Lewis &amp; Short)."
     },
@@ -66,6 +68,17 @@
         "Cic. Dom. 74: <span lang=\"la\">equester ōrdō</span> (Lewis &amp; Short)",
         "M-O s.v. class: social class"
       ]
+    },
+    {
+      "latin": "congregābilis, congregābile",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "gregarious, keeping together",
+      "evidence": [
+        "Cic. Off. 1.157 (Lewis &amp; Short)",
+        "Traupman 153"
+      ],
+      "comment": "Cicero says it of a swarm of bees; of people it is a stretch."
     }
   ],
   "phrases": [
@@ -91,13 +104,15 @@
     "human"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/congregabilis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: congregabilis</a>",
     "<a href=\"https://logeion.uchicago.edu/socialis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: socialis</a> · <a href=\"https://logeion.uchicago.edu/sociabilis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sociabilis</a> · <a href=\"https://logeion.uchicago.edu/convictus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: convictus</a> · <a href=\"https://logeion.uchicago.edu/societas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: societas</a> · <a href=\"https://logeion.uchicago.edu/ordo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ordo</a>",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. class: social class.",
-    "Quotations from the Latinitas loci collections (loci-martialis, loci-cicero-philosophica), checked against the editions named there; Seneca (Clem. 1.3.2, Ben. 5.11.5, 7.1.7, Ep. 95.52) and Cicero (Off. 3.21) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+    "Quotations from the Latinitas loci collections (loci-martialis, loci-cicero-philosophica), checked against the editions named there; Seneca (Clem. 1.3.2, Ben. 5.11.5, 7.1.7, Ep. 95.52) and Cicero (Off. 3.21) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, each phrase checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

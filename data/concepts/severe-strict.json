@@ -11,7 +11,16 @@
     "strictness",
     "a strict father",
     "hard on (someone)",
-    "he was hard on me"
+    "he was hard on me",
+    "austere",
+    "callous",
+    "insensitive",
+    "tough",
+    "callousness",
+    "harshness",
+    "insensitivity",
+    "rude (of character)",
+    "rough"
   ],
   "domain": "verba",
   "terms": [
@@ -23,7 +32,8 @@
       "grammar": "adjective",
       "evidence": [
         "Ter. Heaut. 1023: <span lang=\"la\">quam sevērus!</span>",
-        "Cic. Lael. 95: <span lang=\"la\">cīvis sevērus et gravis</span> (Lewis &amp; Short)"
+        "Cic. Lael. 95: <span lang=\"la\">cīvis sevērus et gravis</span> (Lewis &amp; Short)",
+        "Traupman 158, 146"
       ],
       "comment": "Grave and strict in look and conduct; of judges, stern; of people who live soberly, austere (Catull. 27.6). Severity is <span lang=\"la\">sevēritās</span> (Tac. Agr. 9.4). Only rarely in a bad sense, harsh (Lewis &amp; Short). It also means serious, not joking (see serious)."
     },
@@ -35,7 +45,8 @@
       "grammar": "adjective",
       "evidence": [
         "Ter. Heaut. 439: <span lang=\"la\">satis jam satis pater dūrus fuī</span>",
-        "Ter. Ph. 497: <span lang=\"la\">adeōne ingeniō esse dūrō tē atque inexōrābilī …?</span>"
+        "Ter. Ph. 497: <span lang=\"la\">adeōne ingeniō esse dūrō tē atque inexōrābilī …?</span>",
+        "Traupman 150, 153, 154, 158"
       ],
       "comment": "Its first sense is hard to the touch (see hard). Of a person, hard and unbending, where <span lang=\"la\">sevērus</span> is strict but just; a father is <span lang=\"la\">dūrus</span> in Terence when he has been too harsh."
     },
@@ -47,9 +58,37 @@
       "grammar": "adjective",
       "evidence": [
         "Cic. Cael. 33: <span lang=\"la\">illō austērō mōre ac modō</span> (Lewis &amp; Short)",
-        "Quint. 2.2.5: <span lang=\"la\">nōn austēritās ejus trīstis</span>"
+        "Quint. 2.2.5: <span lang=\"la\">nōn austēritās ejus trīstis</span>",
+        "Traupman 149"
       ],
       "comment": "From Greek αὐστηρός: of wine and fruit, harsh and dry to the taste (Cato, Celsus); of a person or a style, stern and unsmiling. Not before Cicero in this sense (Lewis &amp; Short)."
+    },
+    {
+      "latin": "dūritia, dūritiae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "hardness: harshness, callousness",
+      "evidence": [
+        "Traupman 150, 153, 154"
+      ]
+    },
+    {
+      "latin": "asper, aspera, asperum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "rough, harsh, stern",
+      "evidence": [
+        "Traupman 149, 157, 158"
+      ]
+    },
+    {
+      "latin": "acerbus, acerba, acerbum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "harsh, bitter; strict (of someone in authority)",
+      "evidence": [
+        "Traupman 158"
+      ]
     }
   ],
   "phrases": [
@@ -85,6 +124,9 @@
     "hard"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/acerbus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: acerbus</a>",
+    "<a href=\"https://logeion.uchicago.edu/asper\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: asper</a>",
+    "<a href=\"https://logeion.uchicago.edu/duritia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: duritia</a>",
     "<a href=\"https://logeion.uchicago.edu/severus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: severus</a> · <a href=\"https://logeion.uchicago.edu/durus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: durus</a> · <a href=\"https://logeion.uchicago.edu/austerus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: austerus</a>",
     "Quotations from the Latinitas loci collections (loci-catullus, loci-quintilianus), checked against the editions named there.",
     "Terence (Heaut. 439, 1023; Ph. 497) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026).",
@@ -93,7 +135,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

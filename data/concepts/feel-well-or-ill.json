@@ -8,7 +8,8 @@
     "feel fine",
     "feel bad",
     "feel good",
-    "I wasn’t feeling well"
+    "I wasn’t feeling well",
+    "I don't feel well"
   ],
   "domain": "verba",
   "also_under": [
@@ -23,7 +24,8 @@
       "evidence": [
         "Cic. Att. 12.37.1: <span lang=\"la\">Pīliam et Atticam plānē bellē sē habēre</span>",
         "Traupman 98: <span lang=\"la\">sē male (bene) habēre</span>",
-        "Traupman 98: <span lang=\"la\">sē male (bene) habēre</span>"
+        "Traupman 98: <span lang=\"la\">sē male (bene) habēre</span>",
+        "Traupman 152"
       ],
       "comment": "With an adverb: <span lang=\"la\">bene, male, melius mē habeō</span>. For “feel” with an adjective Latin mostly uses <span lang=\"la\">esse</span>: <span lang=\"la\">fessus sum</span>, I feel tired."
     },
@@ -54,6 +56,11 @@
       "latin": "Ego mē nōn bellē habēbam.",
       "english": "I wasn’t feeling well.",
       "source": "Traupman 98"
+    },
+    {
+      "latin": "Mē nōn bene habeō.",
+      "english": "I don’t feel well.",
+      "source": "Traupman 152"
     }
   ],
   "related": [
@@ -73,7 +80,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

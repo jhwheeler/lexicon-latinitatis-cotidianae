@@ -8,7 +8,8 @@
     "by nature",
     "temperament",
     "disposition",
-    "personality"
+    "personality",
+    "character"
   ],
   "domain": "verba",
   "terms": [
@@ -41,9 +42,20 @@
       "period": "classical",
       "gloss": "natural disposition, especially of the young",
       "evidence": [
-        "Cic. Sen. 26: <span lang=\"la\">adulēscentibus bonā indole praeditīs</span>"
+        "Cic. Sen. 26: <span lang=\"la\">adulēscentibus bonā indole praeditīs</span>",
+        "Traupman 156, 150"
       ],
       "comment": "Lewis &amp; Short: an inborn or native quality; natural abilities, disposition."
+    },
+    {
+      "latin": "mōrēs, mōrum m. pl.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "character, ways",
+      "evidence": [
+        "Traupman 150"
+      ],
+      "comment": "One’s character as shown in conduct; <span lang=\"la\">indolēs</span> is the inborn disposition."
     }
   ],
   "phrases": [
@@ -70,6 +82,7 @@
     "kind"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/mos\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mos</a>",
     "<a href=\"https://logeion.uchicago.edu/natura\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: natura</a> · <a href=\"https://logeion.uchicago.edu/ingenium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ingenium</a> · <a href=\"https://logeion.uchicago.edu/indoles\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: indoles</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 349, checked against the searchable text of the book (9 November 2026).",
     "Quotations from the Latinitas loci collections (loci-horatius, loci-tacitus, loci-cicero-epistulae, loci-cicero-philosophica), checked against the editions named there.",
@@ -77,7 +90,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

@@ -5,7 +5,9 @@
   "also": [
     "worry",
     "worries",
-    "nervousness"
+    "nervousness",
+    "worry (someone)",
+    "worry (be anxious)"
   ],
   "domain": "sermo",
   "terms": [
@@ -17,7 +19,8 @@
       "evidence": [
         "Cic. Tusc. 4.18: <span lang=\"la\">sollicitūdō aegritūdō cum cōgitātiōne</span> (Lewis &amp; Short)",
         "Ter. Phorm. 4.1.22",
-        "Traupman 409 (worry)"
+        "Traupman 409 (worry)",
+        "Traupman 159"
       ],
       "comment": "The common word for worry and care, in Terence and Cicero alike, singular or plural."
     },
@@ -39,8 +42,28 @@
       "period": "classical",
       "gloss": "care, worry (about something)",
       "evidence": [
-        "Traupman 149: <span lang=\"la\">cūra</span> + gen."
+        "Traupman 149: <span lang=\"la\">cūra</span> + gen.",
+        "Traupman 159"
       ]
+    },
+    {
+      "latin": "sollicitō, sollicitāre, sollicitāvī, sollicitātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "to worry, trouble (someone)",
+      "evidence": [
+        "Traupman 159"
+      ]
+    },
+    {
+      "latin": "sollicitor, sollicitārī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "to worry, be anxious",
+      "evidence": [
+        "Traupman 159"
+      ],
+      "comment": "The passive of <span lang=\"la\">sollicitāre</span>, “be troubled”."
     }
   ],
   "related": [
@@ -48,13 +71,14 @@
     "concern"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/sollicito\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sollicito</a>",
     "<a href=\"https://logeion.uchicago.edu/sollicitudo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sollicitudo</a> · <a href=\"https://logeion.uchicago.edu/anxietas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: anxietas</a> · <a href=\"https://logeion.uchicago.edu/cura\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cura</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 149, 272, 409, checked against the searchable text of the book (11 November 2026).",
     "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 36."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

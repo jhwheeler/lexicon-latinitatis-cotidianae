@@ -5,7 +5,10 @@
   "also": [
     "mad",
     "mad at",
-    "I’m mad at you"
+    "I’m mad at you",
+    "get angry",
+    "fly into a rage",
+    "indignant"
   ],
   "also_under": [
     "verba"
@@ -15,7 +18,31 @@
     {
       "latin": "īrātus, īrāta, īrātum",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "evidence": [
+        "Traupman 149"
+      ]
+    },
+    {
+      "latin": "īrāscor, īrāscī, īrātus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "to get angry (with someone)",
+      "grammar": "verb, third conjugation, deponent, with the dative of the person",
+      "evidence": [
+        "Traupman 149, 156"
+      ]
+    },
+    {
+      "latin": "indignābundus, indignābunda, indignābundum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "indignant, full of indignation",
+      "evidence": [
+        "Liv. 38.57.7 (Lewis &amp; Short)",
+        "Traupman 148, 154"
+      ],
+      "comment": "Lewis &amp; Short: not before Augustan prose."
     }
   ],
   "phrases": [
@@ -35,8 +62,11 @@
     "sad"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/indignabundus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: indignabundus</a>",
+    "<a href=\"https://logeion.uchicago.edu/irascor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: irascor</a>",
     "<a href=\"https://logeion.uchicago.edu/iratus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: iratus</a>",
-    "Quotations from the Latinitas loci collections (loci-cicero-philosophica), checked against the editions named there."
+    "Quotations from the Latinitas loci collections (loci-cicero-philosophica), checked against the editions named there.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, each phrase checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",

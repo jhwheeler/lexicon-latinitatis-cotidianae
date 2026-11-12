@@ -7,7 +7,11 @@
     "arrogant",
     "haughty",
     "stuck-up",
-    "pride (arrogance)"
+    "pride (arrogance)",
+    "smart (impertinent)",
+    "arrogance",
+    "pompous",
+    "boastful"
   ],
   "domain": "verba",
   "terms": [
@@ -41,9 +45,38 @@
       "gloss": "arrogant, insolent; also unusual, unaccustomed",
       "grammar": "adjective, third declension, one ending",
       "evidence": [
-        "Liv. 5.48.9: <span lang=\"la\">additus ab īnsolente Gallō ponderī gladius</span>"
+        "Liv. 5.48.9: <span lang=\"la\">additus ab īnsolente Gallō ponderī gladius</span>",
+        "Traupman 158"
       ],
       "comment": "Its first sense is “unaccustomed, unusual” (<span lang=\"la\">verbum īnsolēns</span>, an unusual word, Gell. 1.10.4); from there, behaving beyond what is customary: arrogant, overbearing, especially in success (Lewis &amp; Short)."
+    },
+    {
+      "latin": "arrogantia, arrogantiae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "arrogance",
+      "evidence": [
+        "Traupman 149"
+      ]
+    },
+    {
+      "latin": "ēlātus, ēlāta, ēlātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "haughty, elated",
+      "evidence": [
+        "Traupman 153"
+      ]
+    },
+    {
+      "latin": "glōriōsus, glōriōsa, glōriōsum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "boastful, vainglorious",
+      "evidence": [
+        "Traupman 156"
+      ],
+      "comment": "Also “glorious”; in the sense of boasting as in the title of Plautus’s <span lang=\"la\">Mīles glōriōsus</span>."
     }
   ],
   "phrases": [
@@ -67,13 +100,16 @@
     "proud-of"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/gloriosus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gloriosus</a>",
+    "<a href=\"https://logeion.uchicago.edu/effero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: effero</a>",
+    "<a href=\"https://logeion.uchicago.edu/arrogantia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: arrogantia</a>",
     "<a href=\"https://logeion.uchicago.edu/superbus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: superbus</a> · <a href=\"https://logeion.uchicago.edu/arrogans\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: arrogans</a> · <a href=\"https://logeion.uchicago.edu/insolens\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: insolens</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 149, checked against the searchable text of the book (11 November 2026).",
     "Plautus and Cicero’s letters checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026). Livy, Phaedrus and the Vulgate from the Latinitas loci collections (loci-livius, loci-phaedrus, loci-vulgata), checked against the editions named there."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

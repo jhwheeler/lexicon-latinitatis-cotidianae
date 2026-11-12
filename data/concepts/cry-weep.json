@@ -8,7 +8,19 @@
     {
       "latin": "plōrō, plōrāre, plōrāvī, plōrātum",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "evidence": [
+        "Traupman 151"
+      ]
+    },
+    {
+      "latin": "fleō, flēre, flēvī, flētum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "to weep; with an accusative, to weep for",
+      "evidence": [
+        "Traupman 151"
+      ]
     }
   ],
   "related": [
@@ -18,14 +30,20 @@
     "comfort"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/ploro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ploro</a>"
+    "<a href=\"https://logeion.uchicago.edu/fleo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fleo</a>",
+    "<a href=\"https://logeion.uchicago.edu/ploro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ploro</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, each phrase checked against the searchable text of the book."
   ],
   "replaces": [
     "entry-71"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "cry over",
+    "weep for"
+  ]
 }

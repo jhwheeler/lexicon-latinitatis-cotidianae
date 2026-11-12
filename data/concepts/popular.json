@@ -8,7 +8,8 @@
     "well liked",
     "popular with",
     "in favour",
-    "a popular place"
+    "a popular place",
+    "enjoy popularity among"
   ],
   "domain": "verba",
   "terms": [
@@ -79,6 +80,16 @@
         "Gell. 16.5.1: <span lang=\"la\">vocābula quibus vulgō ūtimur</span>"
       ],
       "comment": "For “popular” in the sense “of people in general”: a popular belief is one held by most people, vulgō."
+    },
+    {
+      "latin": "grātiam habēre apud",
+      "status": "avoid",
+      "period": "modern",
+      "gloss": "to enjoy popularity among",
+      "evidence": [
+        "Traupman 156"
+      ],
+      "comment": "<span lang=\"la\">Grātiam habēre</span> classically means “to be grateful, to thank” (Ter. Eun. 5.8.61, Lewis &amp; Short s.v. <span lang=\"la\">grātia</span>). For “be popular with someone” say <span lang=\"la\">grātiōsus esse apud aliquem</span>, which Traupman also gives."
     }
   ],
   "phrases": [
@@ -91,6 +102,11 @@
       "latin": "quantō plūs propinquōrum, quantō major adfīnium numerus, tantō grātiōsior senectūs",
       "english": "the more kinsfolk and the greater the number of in-laws, the more cherished is old age",
       "source": "Tac. Germ. 20.5"
+    },
+    {
+      "latin": "grātiōsus est apud omnēs",
+      "english": "he is popular with everyone",
+      "source": "Traupman 156"
     }
   ],
   "related": [
@@ -98,6 +114,7 @@
     "people"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/gratia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gratia</a>",
     "<a href=\"https://logeion.uchicago.edu/gratiosus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gratiosus</a> · <a href=\"https://logeion.uchicago.edu/popularis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: popularis</a> · <a href=\"https://logeion.uchicago.edu/accipio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: accipio</a> · <a href=\"https://logeion.uchicago.edu/favorabilis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: favorabilis</a> · <a href=\"https://logeion.uchicago.edu/celeber\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: celeber</a> · <a href=\"https://logeion.uchicago.edu/vulgo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vulgo</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 156, 363, checked against the searchable text of the book (9 November 2026).",
     "Quotations from the Latinitas loci collections (loci-tacitus, loci-gellius), checked against the editions named there.",
@@ -105,7 +122,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

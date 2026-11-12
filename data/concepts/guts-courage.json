@@ -8,7 +8,8 @@
     "nerve",
     "bravery",
     "have the guts",
-    "pluck"
+    "pluck",
+    "boldness"
   ],
   "domain": "verba",
   "terms": [
@@ -29,9 +30,20 @@
       "period": "classical",
       "gloss": "boldness, daring; also recklessness",
       "evidence": [
-        "Plin. Ep. 9.33.6: <span lang=\"la\">crēscit audācia experīmentō</span>"
+        "Plin. Ep. 9.33.6: <span lang=\"la\">crēscit audācia experīmentō</span>",
+        "Traupman 149"
       ],
       "comment": "Daring, good or bad: as often recklessness as courage."
+    },
+    {
+      "latin": "fortitūdō, fortitūdinis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "courage, fortitude",
+      "evidence": [
+        "Traupman 151"
+      ],
+      "comment": "The virtue of courage; <span lang=\"la\">animus</span> is the everyday word."
     }
   ],
   "phrases": [
@@ -58,13 +70,15 @@
     "guts-intestines"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/fortitudo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fortitudo</a>",
     "<a href=\"https://logeion.uchicago.edu/animus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: animus</a> · <a href=\"https://logeion.uchicago.edu/audacia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: audacia</a>",
     "Checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (11 November 2026): Vergil, Plautus.",
-    "Quotations from the Latinitas loci collections (loci-livius, loci-plinius), checked against the editions named there."
+    "Quotations from the Latinitas loci collections (loci-livius, loci-plinius), checked against the editions named there.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, each phrase checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

@@ -19,7 +19,10 @@
     "he’s nuts",
     "out of one’s mind",
     "I was out of my mind when",
-    "you’re nuts"
+    "you’re nuts",
+    "demented",
+    "deranged",
+    "insanity"
   ],
   "domain": "sermo",
   "terms": [
@@ -30,7 +33,8 @@
       "gloss": "mad, crazy",
       "evidence": [
         "Cic. Ac. 2.52 (Lewis &amp; Short)",
-        "Hor. S. 2.6.29: <span lang=\"la\">quid tibi vīs, īnsāne?</span>"
+        "Hor. S. 2.6.29: <span lang=\"la\">quid tibi vīs, īnsāne?</span>",
+        "Traupman 154"
       ],
       "comment": "Unsound in mind, and in talk of anyone behaving wildly: “you madman!”. The verb <span lang=\"la\">īnsāniō, īnsānīre</span> is to be mad, to act crazily; <span lang=\"la\">īnsānia</span> is madness."
     },
@@ -40,7 +44,8 @@
       "period": "classical",
       "gloss": "out of one’s mind; senseless",
       "evidence": [
-        "Cic. N.D. 1.94: <span lang=\"la\">dēsipere, dēlīrāre, dēmentēs esse</span> (Lewis &amp; Short)"
+        "Cic. N.D. 1.94: <span lang=\"la\">dēsipere, dēlīrāre, dēmentēs esse</span> (Lewis &amp; Short)",
+        "Traupman 151"
       ],
       "comment": "Very common in Cicero, of a mind gone or a senseless act."
     },
@@ -51,7 +56,7 @@
       "gloss": "silly, doting, crazy",
       "evidence": [
         "Cic. de Or. 2.75: <span lang=\"la\">senex</span> (Lewis &amp; Short)",
-        "Traupman 150, 298"
+        "Traupman 150, 298, 151"
       ],
       "comment": "From <span lang=\"la\">dē līrā</span>, out of the furrow; of an old man in his dotage, or anyone talking nonsense. The verb is <span lang=\"la\">dēlīrō</span>."
     },
@@ -122,6 +127,27 @@
         "Traupman 104: you’re nuts, <span lang=\"la\">dēlīrās</span>"
       ],
       "comment": "Literally “to go out of the furrow” (<span lang=\"la\">līra</span>). To someone talking nonsense: <span lang=\"la\">Dēlīrās!</span>."
+    },
+    {
+      "latin": "commōtus, commōta, commōtum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "disturbed, deranged",
+      "evidence": [
+        "Traupman 151"
+      ],
+      "comment": "The participle of <span lang=\"la\">commovēre</span>, “stirred up”, said of a disturbed mind."
+    },
+    {
+      "latin": "īnsānitās, īnsānitātis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "unsoundness of mind",
+      "evidence": [
+        "Cic. Tusc. 3.8 (Lewis &amp; Short)",
+        "Traupman 154"
+      ],
+      "comment": "Cicero uses it to explain the ordinary word for madness, <span lang=\"la\">īnsānia</span>."
     }
   ],
   "phrases": [
@@ -156,6 +182,8 @@
     "mental"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/insanitas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: insanitas</a>",
+    "<a href=\"https://logeion.uchicago.edu/commoveo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: commoveo</a>",
     "<a href=\"https://logeion.uchicago.edu/insanus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: insanus</a> · <a href=\"https://logeion.uchicago.edu/demens\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: demens</a> · <a href=\"https://logeion.uchicago.edu/delirus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: delirus</a> · <a href=\"https://logeion.uchicago.edu/cerritus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cerritus</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 96, 150 and 298, checked against the searchable text of the book.",
     "Quotations from the Latinitas loci collections (loci-horatius, loci-ranieri-eclogae), checked against the editions named there.",

@@ -5,7 +5,9 @@
   "also": [
     "chills",
     "shivers",
-    "shivering"
+    "shivering",
+    "tremble",
+    "tremble all over"
   ],
   "domain": "corpus",
   "terms": [
@@ -14,7 +16,7 @@
       "status": "recommended",
       "period": "classical",
       "evidence": [
-        "Traupman 65"
+        "Traupman 65, 158"
       ]
     },
     {
@@ -25,19 +27,30 @@
       "evidence": [
         "Neo-Latin Lexicon, after Kirsch"
       ]
+    },
+    {
+      "latin": "contremō, contremere, contremuī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "to tremble all over",
+      "evidence": [
+        "Traupman 158"
+      ],
+      "comment": "Lewis &amp; Short: rare."
     }
   ],
   "related": [
     "fever"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/contremo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: contremo</a>",
     "<a href=\"https://logeion.org/tremo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tremo</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 65.",
     "<a href=\"https://neolatinlexicon.org/\" rel=\"noopener noreferrer\" target=\"_blank\">Neo-Latin Lexicon</a> s.v. shivers, chill."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

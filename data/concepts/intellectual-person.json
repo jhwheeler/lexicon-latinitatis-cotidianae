@@ -7,7 +7,8 @@
     "intellectuals",
     "learned person",
     "man of letters",
-    "highbrow"
+    "highbrow",
+    "learned"
   ],
   "domain": "verba",
   "terms": [
@@ -28,7 +29,8 @@
       "period": "classical",
       "gloss": "learned, well educated",
       "evidence": [
-        "Cic. Brut. 114 (Lewis &amp; Short)"
+        "Cic. Brut. 114 (Lewis &amp; Short)",
+        "Traupman 149, 157"
       ],
       "comment": "Literally “brought out of roughness”, from <span lang=\"la\">ērudiō</span>: trained, accomplished."
     },
@@ -41,6 +43,15 @@
         "Cic. Off. 3.58: <span lang=\"la\">satis litterātus</span> (Lewis &amp; Short)"
       ],
       "comment": "Learned in books and literature; literally marked with letters, and so in Plautus a branded slave (Lewis &amp; Short)."
+    },
+    {
+      "latin": "doctus, docta, doctum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "learned",
+      "evidence": [
+        "Traupman 155"
+      ]
     }
   ],
   "phrases": [
@@ -61,11 +72,12 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/doceo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: doceo</a> · <a href=\"https://logeion.uchicago.edu/eruditus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: eruditus</a> · <a href=\"https://logeion.uchicago.edu/litteratus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: litteratus</a>",
-    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, each phrase checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

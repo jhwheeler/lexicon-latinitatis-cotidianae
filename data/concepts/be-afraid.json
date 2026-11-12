@@ -8,7 +8,9 @@
     "fear",
     "scared",
     "terrified",
-    "what are you afraid of?"
+    "what are you afraid of?",
+    "afraid that",
+    "dread"
   ],
   "domain": "sermo",
   "terms": [
@@ -29,6 +31,45 @@
         "Andresian p. 36"
       ],
       "comment": "Made afraid by something: <span lang=\"la\">perterritus</span>, terrified."
+    },
+    {
+      "latin": "metuō, metuere, metuī, metūtum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "to fear, be afraid",
+      "evidence": [
+        "Traupman 149, 152"
+      ],
+      "comment": "Lewis &amp; Short: a fear that something will happen; often with <span lang=\"la\">nē</span> and the subjunctive."
+    },
+    {
+      "latin": "vereor nē (+ subjunctive)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "I am afraid that",
+      "evidence": [
+        "Traupman 149"
+      ],
+      "comment": "After verbs of fearing <span lang=\"la\">nē</span> means “that” and <span lang=\"la\">ut</span> (or <span lang=\"la\">nē nōn</span>) “that not”: <span lang=\"la\">vereor nē pluat</span>, I’m afraid it will rain."
+    },
+    {
+      "latin": "formīdō, formīdāre, formīdāvī, formīdātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "to dread",
+      "evidence": [
+        "Traupman 151"
+      ]
+    },
+    {
+      "latin": "formīdulōsus, formīdulōsa, formīdulōsum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "fearful; frightening",
+      "evidence": [
+        "Traupman 149"
+      ],
+      "comment": "Lewis &amp; Short: “full of fear”, both active (causing fear) and passive (afraid)."
     }
   ],
   "phrases": [
@@ -55,6 +96,10 @@
     "frighten"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/formidulosus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: formidulosus</a>",
+    "<a href=\"https://logeion.uchicago.edu/formido\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: formido</a>",
+    "<a href=\"https://logeion.uchicago.edu/vereor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vereor</a>",
+    "<a href=\"https://logeion.uchicago.edu/metuo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: metuo</a>",
     "<a href=\"https://logeion.uchicago.edu/timeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: timeo</a>",
     "<a href=\"https://logeion.org/timeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: timeo</a>",
     "Examples are composed for conversation with Theo; dictionary links document the component words, not these exact sentences or standardized modern climbing terminology.",

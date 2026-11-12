@@ -8,7 +8,8 @@
     "by himself",
     "all by yourself",
     "alone together",
-    "lonely"
+    "lonely",
+    "loneliness"
   ],
   "domain": "verba",
   "terms": [
@@ -20,7 +21,8 @@
       "grammar": "adjective; gen. sōlīus, dat. sōlī",
       "evidence": [
         "Mart. 11.35.4: <span lang=\"la\">sōlus cēnō</span>",
-        "Cic. Off. 3.1: <span lang=\"la\">nec minus sōlum quam cum sōlus esset</span>"
+        "Cic. Off. 3.1: <span lang=\"la\">nec minus sōlum quam cum sōlus esset</span>",
+        "Traupman 149"
       ],
       "comment": "It agrees with the person: <span lang=\"la\">sōlus cēnō</span>, I dine alone. Two together with no one else are <span lang=\"la\">sōlī</span> (Aug. Conf. 9.10.23). For “the only one”, see only (the only one)."
     },
@@ -31,9 +33,20 @@
       "gloss": "solitary, alone by nature or habit",
       "grammar": "adjective",
       "evidence": [
-        "Cic. Amic. 88: <span lang=\"la\">sīc nātūra sōlitārium nihil amat</span>"
+        "Cic. Amic. 88: <span lang=\"la\">sīc nātūra sōlitārium nihil amat</span>",
+        "Traupman 155"
       ],
       "comment": "Lewis &amp; Short: alone, by itself, lonely."
+    },
+    {
+      "latin": "sōlitūdō, sōlitūdinis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "loneliness, solitude",
+      "evidence": [
+        "Cic. Off. 1.139 (Lewis &amp; Short)",
+        "Traupman 155"
+      ]
     }
   ],
   "phrases": [
@@ -73,12 +86,14 @@
     "only-merely"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/solitudo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: solitudo</a>",
     "<a href=\"https://logeion.uchicago.edu/solus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: solus</a> · <a href=\"https://logeion.uchicago.edu/solitarius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: solitarius</a>",
-    "Quotations from the Latinitas loci collections (loci-martialis, loci-augustinus, loci-cicero-philosophica, loci-ovidius), checked against the editions named there."
+    "Quotations from the Latinitas loci collections (loci-martialis, loci-augustinus, loci-cicero-philosophica, loci-ovidius), checked against the editions named there.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, each phrase checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

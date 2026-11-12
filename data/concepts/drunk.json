@@ -3,7 +3,9 @@
   "english": "drunk",
   "pos": "adjective",
   "also": [
-    "tipsy"
+    "tipsy",
+    "drunkenness",
+    "habitual drunkenness"
   ],
   "domain": "culina",
   "audience": "adult",
@@ -14,7 +16,28 @@
       "period": "classical",
       "grammar": "adjective",
       "evidence": [
-        "M-O"
+        "M-O",
+        "Traupman 151"
+      ]
+    },
+    {
+      "latin": "ēbrietās, ēbrietātis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "drunkenness",
+      "evidence": [
+        "Cic. Tusc. 4.12 (Lewis &amp; Short)",
+        "Traupman 151"
+      ]
+    },
+    {
+      "latin": "ēbriōsitās, ēbriōsitātis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "habitual drunkenness",
+      "evidence": [
+        "Cic. Tusc. 4.27 (Lewis &amp; Short)",
+        "Traupman 151"
       ]
     }
   ],
@@ -23,15 +46,18 @@
     "sleep-it-off"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/ebriositas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ebriositas</a>",
+    "<a href=\"https://logeion.uchicago.edu/ebrietas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ebrietas</a>",
     "<a href=\"https://logeion.org/ebrius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ebrius</a>",
-    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. drunk."
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. drunk.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, each phrase checked against the searchable text of the book."
   ],
   "replaces": [
     "entry-410"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

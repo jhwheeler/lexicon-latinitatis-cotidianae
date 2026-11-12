@@ -4,14 +4,30 @@
   "pos": "verb",
   "also": [
     "counting",
-    "numbers"
+    "numbers",
+    "count up",
+    "count out",
+    "you don’t count"
   ],
   "domain": "sermo",
   "terms": [
     {
       "latin": "numerō, numerāre, numerāvī, numerātum",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "evidence": [
+        "Traupman 297"
+      ]
+    },
+    {
+      "latin": "ēnumerō, ēnumerāre, ēnumerāvī, ēnumerātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "count up, count out",
+      "evidence": [
+        "Ter. Ad. 2.2.28: <span lang=\"la\">jamne ēnumerāstī id, quod ad tē reditūrum putēs?</span> (Lewis &amp; Short)",
+        "Traupman 297"
+      ]
     }
   ],
   "phrases": [
@@ -19,6 +35,11 @@
       "latin": "Jussus numerāre, sex numerāvit.",
       "english": "Told to count, he counted six.",
       "source": "Libellus IV, <span lang=\"la\">Diēs Grātulātiōnis</span>"
+    },
+    {
+      "latin": "Extrā numerum es mihi.",
+      "english": "You don’t count (with me).",
+      "source": "Traupman 297"
     }
   ],
   "related": [
@@ -27,8 +48,10 @@
     "countless"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/enumero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: enumero</a>",
     "<a href=\"https://logeion.uchicago.edu/numero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: numero</a>",
-    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 297."
   ],
   "replaces": [
     "entry-244",

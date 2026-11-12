@@ -9,6 +9,17 @@
       "status": "recommended",
       "period": "classical",
       "grammar": "verb, fourth conjugation, deponent"
+    },
+    {
+      "latin": "pateō, patēre, patuī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "measure, extend (so far), of a length or circuit",
+      "grammar": "verb, second conjugation, intransitive, with the accusative of extent",
+      "evidence": [
+        "Caes. B.G. 1.2: <span lang=\"la\">in longitūdinem mīlia passuum CCXL patēbant</span> (Lewis &amp; Short)",
+        "Traupman 344"
+      ]
     }
   ],
   "related": [
@@ -16,11 +27,24 @@
     "tape-measure"
   ],
   "sources": [
-    "<a href=\"https://www.alatius.com/ls/index.php?l=metior\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: metior</a>"
+    "<a href=\"https://logeion.uchicago.edu/pateo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pateo</a>",
+    "<a href=\"https://www.alatius.com/ls/index.php?l=metior\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: metior</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 344."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "patēns decem mīlia passuum circuitū",
+      "english": "measuring ten miles in circumference",
+      "source": "Traupman 344"
+    }
+  ],
+  "also": [
+    "measure (be so long)",
+    "measuring ten miles around"
+  ]
 }

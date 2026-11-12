@@ -3,7 +3,9 @@
   "english": "heat",
   "pos": "verb",
   "also": [
-    "warm"
+    "warm",
+    "warm (verb)",
+    "warm up (food)"
   ],
   "domain": "culina",
   "terms": [
@@ -11,12 +13,25 @@
       "latin": "calefaciō, calefacere",
       "status": "recommended",
       "period": "classical",
-      "gloss": "heat or make warm"
+      "gloss": "heat or make warm",
+      "evidence": [
+        "Traupman 404"
+      ]
     },
     {
       "latin": "calor, calōris m.",
       "status": "recommended",
       "period": "classical"
+    },
+    {
+      "latin": "tepefaciō, tepefacere, tepefēcī, tepefactum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "warm slightly, make lukewarm",
+      "evidence": [
+        "Cic. N.D. 2.26: <span lang=\"la\">mollītur tepefactus</span> (Lewis &amp; Short s.v. <span lang=\"la\">tābēscō</span>)",
+        "Traupman 404"
+      ]
     }
   ],
   "related": [

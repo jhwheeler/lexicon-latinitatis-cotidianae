@@ -14,7 +14,9 @@
     "charge (in battle)",
     "be attacked",
     "invade",
-    "invasion"
+    "invasion",
+    "commit assault",
+    "assault (legal)"
   ],
   "domain": "verba",
   "terms": [
@@ -79,6 +81,16 @@
         "Caes. BG 4.16: quī sibi Galliaeque bellum intulissent (Lewis &amp; Short s.v. <span lang=\"la\">bellum</span>)",
         "Traupman 187"
       ]
+    },
+    {
+      "latin": "vim facere (+ dat. or in + acc.)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "use force on, assault",
+      "evidence": [
+        "Cic. Caecin. 63: <span lang=\"la\">inermibus vim facere</span> (Lewis &amp; Short s.v. <span lang=\"la\">inermis</span>)",
+        "Traupman 274"
+      ]
     }
   ],
   "phrases": [
@@ -101,6 +113,11 @@
       "latin": "cum exercitū ingredī",
       "english": "to invade (literally “to go in with an army”)",
       "source": "Traupman 187"
+    },
+    {
+      "latin": "aliquem dē vī accūsāre",
+      "english": "to accuse someone of assault (of violence)",
+      "source": "Traupman 274"
     }
   ],
   "related": [

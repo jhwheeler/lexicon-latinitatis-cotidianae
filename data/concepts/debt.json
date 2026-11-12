@@ -5,7 +5,10 @@
   "also": [
     "in debt",
     "liabilities",
-    "debts"
+    "debts",
+    "be in debt",
+    "get into debt",
+    "pay off a debt"
   ],
   "also_under": [
     "pecunia"
@@ -18,7 +21,19 @@
       "period": "classical",
       "evidence": [
         "Traupman 130",
-        "Cic."
+        "Cic.",
+        "Cic. Cat. 2.9: in aes aliēnum incidere, to fall into debt (Lewis &amp; Short s.v. aes)",
+        "Cic. Verr. 2.2.6: in aere aliēnō esse, to be in debt (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "dēbitum, dēbitī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a sum owed",
+      "evidence": [
+        "Lewis &amp; Short s.v. dēbeō",
+        "Traupman 131: to pay off a debt, dēbitum persolvere"
       ]
     }
   ],
@@ -28,11 +43,24 @@
   ],
   "sources": [
     "<a href=\"https://logeion.org/aes\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aes</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 130."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 130.",
+    "<a href=\"https://logeion.uchicago.edu/debeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: debeo</a>"
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "Hoc mihi aes aliēnum attulit.",
+      "english": "This has put me in debt.",
+      "source": "Traupman 130"
+    },
+    {
+      "latin": "dēbitum persolvere",
+      "english": "to pay off a debt",
+      "source": "Traupman 131"
+    }
+  ]
 }

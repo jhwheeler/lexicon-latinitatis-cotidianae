@@ -3,7 +3,9 @@
   "english": "buy on credit",
   "pos": "verb",
   "also": [
-    "credit"
+    "credit",
+    "have good credit",
+    "your credit is good"
   ],
   "also_under": [
     "pecunia"
@@ -17,6 +19,26 @@
       "evidence": [
         "Traupman 130"
       ]
+    },
+    {
+      "latin": "bonā fidē esse",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "have good credit",
+      "evidence": [
+        "Traupman 129, 130: to have good credit"
+      ],
+      "comment": "Classically <span lang=\"la\">bonā fidē</span> is “in good faith, honestly”; the sense “creditworthy” is Traupman’s. Credit as such is <span lang=\"la\">fidēs</span> (below)."
+    },
+    {
+      "latin": "fidēs, fideī f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "credit (in business)",
+      "evidence": [
+        "Cic. Imp. Pomp. 19: fidēs concidit, credit collapsed (Lewis &amp; Short s.v. fidēs)",
+        "Traupman 130"
+      ]
     }
   ],
   "related": [
@@ -25,7 +47,8 @@
     "deposit"
   ],
   "sources": [
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 130."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 130.",
+    "<a href=\"https://logeion.uchicago.edu/fides\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fides</a>"
   ],
   "review": {
     "status": "draft",

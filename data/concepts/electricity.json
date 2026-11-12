@@ -7,7 +7,10 @@
     "the electricity",
     "power cut",
     "the power’s gone off",
-    "electrical power"
+    "electrical power",
+    "electric current",
+    "current (electrical)",
+    "current (electric)"
   ],
   "domain": "domus",
   "also_under": [
@@ -21,7 +24,8 @@
       "gloss": "electricity",
       "evidence": [
         "Traupman 166",
-        "M-O s.v. electricity (after Egger)"
+        "M-O s.v. electricity (after Egger)",
+        "Traupman 309"
       ],
       "comment": "Egger’s coinage, made on <span lang=\"la\">ēlectrum</span>, amber (Greek ἤλεκτρον), whose rubbing gave electricity its name. The lexicon’s electrical words build on it or on the adjective <span lang=\"la\">ēlectricus</span>: <span lang=\"la\">ēlectridis artifex</span>, an electrician; <span lang=\"la\">lūmen ēlectricum</span>, electric light."
     },
@@ -42,6 +46,15 @@
       "evidence": [
         "M-O s.v. electricity: Trappen (1843)"
       ]
+    },
+    {
+      "latin": "fluentum ēlectricum",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "electric current",
+      "evidence": [
+        "Traupman 309"
+      ]
     }
   ],
   "phrases": [
@@ -49,6 +62,11 @@
       "latin": "Ēlectris dēfēcit; lucernam accende.",
       "english": "The power’s gone off; light the lamp.",
       "source": "composed"
+    },
+    {
+      "latin": "ēlectricum fluentum",
+      "english": "an electric current",
+      "source": "Traupman 299"
     }
   ],
   "related": [
@@ -60,9 +78,10 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/electrum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: electrum</a> · <a href=\"https://logeion.uchicago.edu/lucerna\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lucerna</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 166, checked against the searchable text of the book (11 November 2026).",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 166, checked against the searchable text of the book (11 November 2026).: p. 299.",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. electricity.",
-    "The example sentence marked “composed” is ours."
+    "The example sentence marked “composed” is ours.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 166, checked against the searchable text of the book (11 November 2026).: p. 309."
   ],
   "review": {
     "status": "draft",

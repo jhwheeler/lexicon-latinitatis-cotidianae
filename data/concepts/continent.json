@@ -19,9 +19,20 @@
       "period": "modern",
       "gloss": "continent",
       "evidence": [
-        "Traupman 205: mainland"
+        "Traupman 205: mainland",
+        "Traupman 296: “not continēns, which means mainland”"
       ],
       "comment": "Classically the mainland, as against islands (see mainland); its use for one of the continents is modern."
+    },
+    {
+      "latin": "pars mundī",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a continent, a part of the world",
+      "evidence": [
+        "Traupman 296"
+      ],
+      "comment": "Traupman warns against <span lang=\"la\">continēns</span>, which classically means the mainland as against islands."
     }
   ],
   "related": [
@@ -29,17 +40,24 @@
     "europe",
     "asia",
     "africa",
-    "america"
+    "america",
+    "world"
   ],
   "sources": [
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, cited by printed page; each phrase checked against the searchable text of the book.",
     "<a href=\"https://logeion.uchicago.edu/pars\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pars</a>",
     "<a href=\"https://logeion.uchicago.edu/orbis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: orbis</a>",
-    "<a href=\"https://logeion.uchicago.edu/contineo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: contineo</a>"
+    "<a href=\"https://logeion.uchicago.edu/contineo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: contineo</a>",
+    "<a href=\"https://logeion.uchicago.edu/continens\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: continens</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 296."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "continents",
+    "mainland"
+  ]
 }

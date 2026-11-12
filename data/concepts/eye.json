@@ -4,7 +4,9 @@
   "pos": "noun",
   "also": [
     "eyes",
-    "eyeball"
+    "eyeball",
+    "expressive eyes",
+    "with eyes wide open"
   ],
   "domain": "corpus",
   "terms": [
@@ -13,7 +15,8 @@
       "status": "recommended",
       "period": "classical",
       "evidence": [
-        "Traupman 58"
+        "Traupman 58",
+        "Traupman 312"
       ]
     },
     {
@@ -23,7 +26,8 @@
       "gloss": "the eyeball, the orb of the eye",
       "evidence": [
         "Verg. A. 12.670: <span lang=\"la\">ārdentēs oculōrum orbēs</span> (Lewis &amp; Short)",
-        "Traupman 58"
+        "Traupman 58",
+        "Traupman 312"
       ]
     }
   ],
@@ -36,11 +40,28 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/oculus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: oculus</a>",
     "<a href=\"https://logeion.uchicago.edu/orbis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: orbis</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 58, checked against the searchable text of the book."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 58, checked against the searchable text of the book.: p. 312."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "oculī argūtī",
+      "english": "expressive eyes",
+      "source": "Traupman 312"
+    },
+    {
+      "latin": "et oculī nimis argūtī, quem ad modum animō affectī sīmus, loquuntur",
+      "english": "and the eyes, all too expressive, say how we feel",
+      "source": "Cic. Leg. 1.27 (Lewis &amp; Short s.v. <span lang=\"la\">arguō</span>)"
+    },
+    {
+      "latin": "hiantibus oculīs",
+      "english": "with eyes wide open",
+      "source": "Traupman 312"
+    }
+  ]
 }

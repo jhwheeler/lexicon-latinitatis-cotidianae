@@ -10,7 +10,9 @@
     "be arrested",
     "under arrest",
     "take into custody",
-    "detain"
+    "detain",
+    "custody",
+    "be held in custody"
   ],
   "domain": "res-publica",
   "terms": [
@@ -43,7 +45,8 @@
       "grammar": "phrase: custōdia, custōdiae f. (custody) with in and trādere",
       "evidence": [
         "Liv. 22.52: <span lang=\"la\">trāditīque in custōdiam omnēs sunt</span>",
-        "Traupman 194"
+        "Traupman 194",
+        "Traupman 300"
       ],
       "comment": "To be under arrest, <span lang=\"la\">in custōdiā esse</span> or <span lang=\"la\">habērī</span> (Traupman 194); house arrest, <span lang=\"la\">lībera custōdia</span> (Liv. 24.45.8, Lewis &amp; Short)."
     },
@@ -56,6 +59,36 @@
         "Traupman 191, 193"
       ],
       "comment": "Classically only to take hold of, seize (Lewis &amp; Short); Traupman’s verb for an arrest."
+    },
+    {
+      "latin": "prehendō (prendō), prehendere, prehendī, prehēnsum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "seize, lay hold of, arrest",
+      "evidence": [
+        "Lewis &amp; Short",
+        "Traupman 273"
+      ]
+    },
+    {
+      "latin": "prehēnsiō (prēnsiō), prehēnsiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "arrest, the right to arrest",
+      "evidence": [
+        "Varr. ap. Gell. 13.12.6: <span lang=\"la\">in magistrātū habent aliī vocātiōnem, aliī prēnsiōnem</span> (Lewis &amp; Short)",
+        "Traupman 273"
+      ],
+      "comment": "Lewis &amp; Short marks it ante-classical."
+    },
+    {
+      "latin": "custōdia, custōdiae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "custody",
+      "evidence": [
+        "Traupman 300"
+      ]
     }
   ],
   "phrases": [
@@ -73,6 +106,11 @@
       "latin": "Vigilēs fūrem comprehendērunt.",
       "english": "The police have arrested the thief.",
       "source": "composed"
+    },
+    {
+      "latin": "in custōdiā habērī",
+      "english": "to be held in custody",
+      "source": "Traupman 300"
     }
   ],
   "related": [
@@ -84,9 +122,13 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/comprehendo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: comprehendo</a> · <a href=\"https://logeion.uchicago.edu/comprehensio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: comprehensio</a> · <a href=\"https://logeion.uchicago.edu/custodia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: custodia</a> · <a href=\"https://logeion.uchicago.edu/apprehendo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: apprehendo</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 191, 193, 194, checked against the searchable text of the book (9 November 2026).",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 191, 193, 194, checked against the searchable text of the book (9 November 2026).: p. 300.",
     "Caesar, Cicero and Livy checked against the Latin Library text (<a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">CLTK mirror</a>, 9 November 2026).",
-    "The example sentence marked “composed” is ours."
+    "The example sentence marked “composed” is ours.",
+    "<a href=\"https://logeion.uchicago.edu/prehendo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: prehendo</a>",
+    "<a href=\"https://logeion.uchicago.edu/prehensio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: prehensio</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "The example sentences marked “composed” are ours."
   ],
   "review": {
     "status": "draft",

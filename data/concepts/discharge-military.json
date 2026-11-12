@@ -7,7 +7,9 @@
     "honourable discharge",
     "dishonourable discharge",
     "be discharged",
-    "get a discharge"
+    "get a discharge",
+    "honorable discharge",
+    "dishonorable discharge"
   ],
   "domain": "res-publica",
   "audience": "adult",
@@ -19,8 +21,11 @@
       "gloss": "discharge from military service",
       "evidence": [
         "Lewis &amp; Short s.v. <span lang=\"la\">missiō</span>: <span lang=\"la\">missiōnum generālēs causae sunt trēs: honesta, causāria, ignōminiōsa</span> (Dig. 49.16.13)",
-        "Traupman 186"
-      ]
+        "Traupman 186",
+        "Caes. BC 1.86: <span lang=\"la\">praemium missiōnis</span> (Lewis &amp; Short)",
+        "Traupman 304"
+      ],
+      "comment": "The Digest names three kinds: <span lang=\"la\">honesta</span> at the end of service, <span lang=\"la\">causāria</span> for ill health, <span lang=\"la\">ignōminiōsa</span> for an offence."
     }
   ],
   "phrases": [
@@ -33,6 +38,11 @@
       "latin": "missiōnem ignōminiōsam accipere",
       "english": "to get a dishonourable discharge",
       "source": "Traupman 186"
+    },
+    {
+      "latin": "honestam missiōnem impetrāre",
+      "english": "to get an honourable discharge",
+      "source": "Traupman 304"
     }
   ],
   "related": [
@@ -41,7 +51,10 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/missio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: missio</a> · <a href=\"https://logeion.uchicago.edu/ignominiosus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ignominiosus</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 186, each phrase checked against the searchable text of the book."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 186, each phrase checked against the searchable text of the book.",
+    "<a href=\"https://logeion.uchicago.edu/missio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: missio</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 304."
   ],
   "review": {
     "status": "draft",

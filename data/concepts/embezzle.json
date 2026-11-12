@@ -1,0 +1,63 @@
+{
+  "id": "embezzle",
+  "english": "embezzle",
+  "pos": "verb",
+  "also": [
+    "embezzlement",
+    "misappropriate",
+    "steal public money"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "pecūlātum facere",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "embezzle public money",
+      "evidence": [
+        "Cic. Rab. Perd. 8: <span lang=\"la\">pecūlātum facere</span> (Lewis &amp; Short s.v. <span lang=\"la\">pecūlātus</span>)"
+      ]
+    },
+    {
+      "latin": "pecūlātus, pecūlātūs m.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "embezzlement (of public money)",
+      "evidence": [
+        "Plaut. Pers. 4.4.7 (Lewis &amp; Short)",
+        "Traupman 309"
+      ]
+    },
+    {
+      "latin": "pecūlor, pecūlārī",
+      "status": "alternative",
+      "period": "post-classical",
+      "gloss": "embezzle",
+      "evidence": [
+        "Flor. 3.17.3 (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "ēvertō, ēvertere, ēvertī, ēversum",
+      "status": "avoid",
+      "period": "classical",
+      "gloss": "Traupman’s word for “embezzle”",
+      "evidence": [
+        "Traupman 309"
+      ],
+      "comment": "Classically <span lang=\"la\">ēvertere aliquem bonīs</span> is to turn someone out of his property, to ruin him (Plautus, Cicero), not to embezzle."
+    }
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/peculatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: peculatus</a>",
+    "<a href=\"https://logeion.uchicago.edu/peculor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: peculor</a>",
+    "<a href=\"https://logeion.uchicago.edu/everto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: everto</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 309."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-12",
+    "by": "Claude"
+  }
+}

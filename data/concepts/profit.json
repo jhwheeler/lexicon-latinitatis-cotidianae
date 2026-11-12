@@ -8,7 +8,9 @@
     "profits",
     "gain",
     "profitable",
-    "at a profit"
+    "at a profit",
+    "clear (a profit)",
+    "net (a profit)"
   ],
   "domain": "pecunia",
   "terms": [
@@ -45,6 +47,16 @@
         "Cic. Verr. 2.2.6: <span lang=\"la\">cum quaestū compendiōque</span> (Lewis &amp; Short)"
       ],
       "comment": "Properly gain made by saving (Lewis &amp; Short)."
+    },
+    {
+      "latin": "dētergeō, dētergēre, dētersī, dētersum",
+      "status": "avoid",
+      "period": "classical",
+      "gloss": "wipe off, clear (a table); not “clear a profit”",
+      "evidence": [
+        "Traupman 292"
+      ],
+      "comment": "Traupman: <span lang=\"la\">prīmō annō mīlle dollarōs dētergēre</span>, to clear $1000 in the first year. Lewis &amp; Short gives “to wipe off, clean”, and in comedy <span lang=\"la\">mēnsam dētergēre</span>, to clear a table (Plaut. Men. 1.1.2), but not the sense of a net gain; we have found no classical instance of it. Making a profit is <span lang=\"la\">lucrum facere</span>, or <span lang=\"la\">lucrī facere</span> (Cic. Flac. 91)."
     }
   ],
   "phrases": [
@@ -78,8 +90,9 @@
     "interest-money"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/detergeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: detergeo</a>",
     "<a href=\"https://logeion.uchicago.edu/lucrum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lucrum</a> · <a href=\"https://logeion.uchicago.edu/quaestus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quaestus</a> · <a href=\"https://logeion.uchicago.edu/compendium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: compendium</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 365, checked against the searchable text of the book (9 November 2026).",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 365, checked against the searchable text of the book (9 November 2026).: p. 292.",
     "Michiel de Vaan, <em>Etymological Dictionary of Latin and the other Italic Languages</em> (2008), p. 349.",
     "Quotations from the Latinitas loci collections (loci-phaedrus, loci-publilius), checked against the editions named there.",
     "Plautus and Horace checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026).",

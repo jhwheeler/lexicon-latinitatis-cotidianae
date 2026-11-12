@@ -3,7 +3,9 @@
   "english": "face",
   "pos": "noun",
   "also": [
-    "expression"
+    "expression",
+    "change one’s expression",
+    "expression (of the face)"
   ],
   "also_under": [
     "corpus"
@@ -15,14 +17,18 @@
       "status": "recommended",
       "period": "classical",
       "evidence": [
-        "Traupman 58"
+        "Traupman 58",
+        "Traupman 312"
       ]
     },
     {
       "latin": "vultus, vultūs m.",
       "status": "recommended",
       "period": "classical",
-      "gloss": "face, expression"
+      "gloss": "face, expression",
+      "evidence": [
+        "Traupman 312"
+      ]
     }
   ],
   "related": [
@@ -36,11 +42,18 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/facies\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: facies</a>",
     "<a href=\"https://logeion.uchicago.edu/vultus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vultus</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 58, checked against the searchable text of the book."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 58, checked against the searchable text of the book.: p. 312."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "vultum flectere",
+      "english": "to change one’s expression",
+      "source": "Traupman 312"
+    }
+  ]
 }

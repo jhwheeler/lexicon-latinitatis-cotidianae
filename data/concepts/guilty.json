@@ -13,7 +13,8 @@
     "convicted of",
     "punish the guilty",
     "convict on many counts of fraud",
-    "condemn"
+    "condemn",
+    "conviction (for a crime)"
   ],
   "domain": "res-publica",
   "terms": [
@@ -48,7 +49,8 @@
       "evidence": [
         "Cic. <em>Rosc. Am.</em> 56: <span lang=\"la\">condemnārī nōn potest</span>",
         "Traupman 191, 194",
-        "Traupman 194: condemn"
+        "Traupman 194: condemn",
+        "Traupman 295"
       ],
       "comment": "To be found guilty, <span lang=\"la\">condemnārī</span> or <span lang=\"la\">damnārī</span>."
     },
@@ -64,15 +66,16 @@
       ]
     },
     {
-      "latin": "manifestus, manifesta, manifestum",
+      "latin": "manifestus, manifesta, manifestum (+ gen.)",
       "status": "alternative",
       "period": "classical",
-      "gloss": "caught in, plainly guilty of",
-      "grammar": "adjective, with the genitive of the charge",
+      "gloss": "convicted of, caught in",
       "evidence": [
+        "Traupman 296",
         "Sall. J. 35: <span lang=\"la\">sceleris manifestus</span> (Lewis &amp; Short)",
         "Traupman 194: convicted of"
-      ]
+      ],
+      "grammar": "adjective, with the genitive of the charge"
     },
     {
       "latin": "condemnātiō, condemnātiōnis f.",
@@ -81,7 +84,18 @@
       "gloss": "a conviction, a condemnation",
       "evidence": [
         "Dig. 42.1.59 (Lewis &amp; Short: post-Augustan)",
-        "Traupman 194"
+        "Traupman 194",
+        "Traupman 296"
+      ]
+    },
+    {
+      "latin": "convincō, convincere, convīcī, convictum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "convict, prove guilty",
+      "grammar": "verb with the accusative of the person and the genitive of the charge",
+      "evidence": [
+        "Traupman 296"
       ]
     }
   ],
@@ -126,11 +140,14 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/noceo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: noceo</a> · <a href=\"https://logeion.uchicago.edu/sons\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sons</a> · <a href=\"https://logeion.uchicago.edu/condemno\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: condemno</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 191, 194, 195, checked against the searchable text of the book (9 November 2026).",
     "Cicero checked against the Latin Library text (<a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">CLTK mirror</a>, 9 November 2026).",
     "<a href=\"https://logeion.uchicago.edu/noxius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: noxius</a> · <a href=\"https://logeion.uchicago.edu/manifestus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: manifestus</a> · <a href=\"https://logeion.uchicago.edu/condemnatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: condemnatio</a>",
     "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 191–195, each phrase checked against the searchable text of the book."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 191–195, each phrase checked against the searchable text of the book.",
+    "<a href=\"https://logeion.uchicago.edu/condemnatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: condemnatio</a>",
+    "<a href=\"https://logeion.uchicago.edu/manifestus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: manifestus</a>",
+    "<a href=\"https://logeion.uchicago.edu/convinco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: convinco</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 191, 194, 195, checked against the searchable text of the book (9 November 2026).: p. 295; p. 296."
   ],
   "review": {
     "status": "draft",

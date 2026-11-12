@@ -5,7 +5,10 @@
   "also": [
     "fright",
     "terror",
-    "dread"
+    "dread",
+    "dread (verb)",
+    "put the fear of God into",
+    "out of fear"
   ],
   "domain": "sermo",
   "terms": [
@@ -16,7 +19,8 @@
       "gloss": "fear, dread",
       "evidence": [
         "Cic. Tusc. 4.64 (Lewis &amp; Short)",
-        "Traupman 152"
+        "Traupman 152",
+        "Traupman 314"
       ],
       "comment": "The general word, fear of what is coming. For being afraid see <span lang=\"la\">timēre</span>."
     },
@@ -50,6 +54,16 @@
       "evidence": [
         "Lewis &amp; Short, s.v. <span lang=\"la\">pavor</span>"
       ]
+    },
+    {
+      "latin": "formīdō, formīdāre, formīdāvī, formīdātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "dread, be terrified of",
+      "evidence": [
+        "Plaut. Capt. 4.4.5: <span lang=\"la\">illum</span> (Lewis &amp; Short s.v. <span lang=\"la\">formīdō</span>)",
+        "Traupman 306"
+      ]
     }
   ],
   "related": [
@@ -61,11 +75,25 @@
     "<a href=\"https://logeion.uchicago.edu/metus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: metus</a> · <a href=\"https://logeion.uchicago.edu/timor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: timor</a> · <a href=\"https://logeion.uchicago.edu/terror\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: terror</a> · <a href=\"https://logeion.uchicago.edu/pavor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pavor</a>",
     "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 36.",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, each phrase checked against the searchable text of the book.",
-    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "<a href=\"https://logeion.uchicago.edu/formido\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: formido</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 314; p. 306."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "Cūrāvit ut illīs Juppiter īrātus esset.",
+      "english": "He put the fear of God into them.",
+      "source": "Traupman 314"
+    },
+    {
+      "latin": "prae metū",
+      "english": "out of fear",
+      "source": "Traupman 314"
+    }
+  ]
 }

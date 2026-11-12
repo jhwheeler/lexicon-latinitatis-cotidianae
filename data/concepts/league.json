@@ -13,7 +13,9 @@
     "conclude an alliance",
     "make an alliance",
     "defensive alliance",
-    "offensive alliance"
+    "offensive alliance",
+    "according to the agreement",
+    "terms of the agreement"
   ],
   "also_under": [
     "ludi"
@@ -28,7 +30,8 @@
       "evidence": [
         "Caes. BG 6.2: <span lang=\"la\">Ambiorīgem sibi societāte et foedere adjungunt</span> (Lewis &amp; Short)",
         "Sall. J. 77.2: <span lang=\"la\">amīcitiam societātemque</span>",
-        "Traupman 185"
+        "Traupman 185",
+        "Traupman 270"
       ],
       "comment": "The alliance itself, between states, kings or people; also any partnership or association (see organization). Allies are <span lang=\"la\">sociī</span>."
     },
@@ -39,7 +42,8 @@
       "gloss": "a treaty, a league",
       "evidence": [
         "Cic. Leg. 2.21 (Lewis &amp; Short)",
-        "Traupman 185"
+        "Traupman 185",
+        "Traupman 270"
       ],
       "comment": "The treaty that makes the alliance; <span lang=\"la\">foedus facere (icere)</span>, to make a treaty."
     },
@@ -49,6 +53,24 @@
       "period": "ours",
       "gloss": "a sports league",
       "comment": "Our formation, for a modern thing the reference works do not name: an association of teams (<span lang=\"la\">turma</span>, the house word for a team; see team). The contest itself is a <span lang=\"la\">certāmen</span> (see competition)."
+    },
+    {
+      "latin": "foedus ferīre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "to make a treaty, conclude an alliance",
+      "evidence": [
+        "Cic. Rab. Post. 6: <span lang=\"la\">foedus ferīrī in Capitōliō vīderat</span> (Lewis &amp; Short s.v. <span lang=\"la\">feriō</span>)"
+      ]
+    },
+    {
+      "latin": "foedus īcere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "to make a treaty",
+      "evidence": [
+        "Traupman 270"
+      ]
     }
   ],
   "phrases": [
@@ -71,6 +93,11 @@
       "latin": "societās ad bellum dēfendendum atque īnferendum facta",
       "english": "a defensive and offensive alliance",
       "source": "Traupman 186"
+    },
+    {
+      "latin": "ex foedere",
+      "english": "according to the treaty, as agreed",
+      "source": "Liv. 1.23.7 (Lewis &amp; Short s.v. <span lang=\"la\">foedus</span>)"
     }
   ],
   "related": [
@@ -82,7 +109,12 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/societas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: societas</a> · <a href=\"https://logeion.uchicago.edu/foedus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: foedus</a> · <a href=\"https://logeion.uchicago.edu/turma\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: turma</a>",
     "Caesar, Sallust and Cicero as Lewis &amp; Short quotes them.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 185–188, each phrase checked against the searchable text of the book."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 185–188, each phrase checked against the searchable text of the book.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 270.",
+    "<a href=\"https://logeion.uchicago.edu/ferio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ferio</a>",
+    "<a href=\"https://logeion.uchicago.edu/ico\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ico</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 302."
   ],
   "review": {
     "status": "draft",

@@ -12,7 +12,9 @@
     "see a movie",
     "watch a film",
     "show a film",
-    "movies"
+    "movies",
+    "photographic film",
+    "camera film"
   ],
   "domain": "ludi",
   "terms": [
@@ -22,7 +24,9 @@
       "period": "modern",
       "evidence": [
         "Traupman 52",
-        "M-O s.v. movie, film"
+        "M-O s.v. movie, film",
+        "Traupman 315",
+        "Traupman 305"
       ]
     },
     {
@@ -31,6 +35,15 @@
       "period": "modern",
       "evidence": [
         "Traupman 163"
+      ]
+    },
+    {
+      "latin": "documentārium, documentāriī n.",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "documentary",
+      "evidence": [
+        "Traupman 305"
       ]
     }
   ],
@@ -41,8 +54,8 @@
   "sources": [
     "<a href=\"https://logeion.org/pellicula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pellicula</a>",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. movie, film.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 52.",
-    "<a href=\"https://logeion.uchicago.edu/fabula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fabula</a>"
+    "<a href=\"https://logeion.uchicago.edu/fabula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fabula</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 52; p. 315; p. 305."
   ],
   "review": {
     "status": "draft",
@@ -79,6 +92,26 @@
       "latin": "pelliculam cinēmatographicam exhibēre",
       "english": "show a movie",
       "source": "Traupman 52"
+    },
+    {
+      "latin": "taeniola documentāria",
+      "english": "a documentary film",
+      "source": "Traupman 315"
+    },
+    {
+      "latin": "taeniola cīnēmatographica",
+      "english": "movie film",
+      "source": "Traupman 315"
+    },
+    {
+      "latin": "pellicula phōtographica",
+      "english": "photographic film",
+      "source": "Traupman 315"
+    },
+    {
+      "latin": "taeniolam (cīnēmatographicam) exhibēre",
+      "english": "to show a film",
+      "source": "Traupman 315"
     }
   ]
 }

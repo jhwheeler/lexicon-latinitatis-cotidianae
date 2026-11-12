@@ -7,7 +7,9 @@
     "obtain",
     "acquire",
     "get hold of",
-    "come by"
+    "come by",
+    "get back",
+    "now get this"
   ],
   "domain": "verba",
   "terms": [
@@ -18,19 +20,21 @@
       "gloss": "get, acquire (often by buying)",
       "evidence": [
         "Cic. Amic. 55: <span lang=\"la\">amīcōs nōn parāre</span>",
-        "Cic. Att. 12.19.1: <span lang=\"la\">trāns Tiberim hortōs</span> (Lewis &amp; Short)"
+        "Cic. Att. 12.19.1: <span lang=\"la\">trāns Tiberim hortōs</span> (Lewis &amp; Short)",
+        "Traupman 320"
       ],
       "comment": "Of getting what one sets out to have: friends, a garden, provisions; with money, “buy” (Lewis &amp; Short). Its first sense is “prepare”."
     },
     {
-      "latin": "nancīscor, nancīscī, nactus sum",
+      "latin": "nancīscor, nancīscī, nactus (nānctus) sum",
       "status": "alternative",
       "period": "classical",
-      "grammar": "verb, third conjugation, deponent",
-      "gloss": "get, come by (by luck or opportunity)",
+      "gloss": "get, come upon, obtain",
       "evidence": [
+        "Traupman 320",
         "Cic. Fam. 3.7.1: <span lang=\"la\">cum plūs ōtī nactus erō</span>"
       ],
+      "grammar": "verb, third conjugation, deponent",
       "comment": "Of what comes one’s way rather than what one works for (Lewis &amp; Short): time, a chance, someone to carry a letter."
     },
     {
@@ -54,6 +58,15 @@
         "Cic. Fam. 13.36.1 (Lewis &amp; Short)"
       ],
       "comment": "What one gets by asking: <span lang=\"la\">impetrāvī</span>, “I got what I asked for”."
+    },
+    {
+      "latin": "accipiō, accipere, accēpī, acceptum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "get, receive",
+      "evidence": [
+        "Traupman 320"
+      ]
     }
   ],
   "phrases": [
@@ -71,6 +84,26 @@
       "latin": "amīcōs nōn parāre, optimam et pulcherrimam vītae, ut ita dīcam, supellectilem",
       "english": "… and not to get friends, the best and finest furniture of life, so to speak",
       "source": "Cic. Amic. 55"
+    },
+    {
+      "latin": "repetere, recipere",
+      "english": "to get back",
+      "source": "Traupman 320"
+    },
+    {
+      "latin": "prōmere",
+      "english": "to get out, bring out",
+      "source": "Traupman 320"
+    },
+    {
+      "latin": "Nōn queō ōrāre ut loquātur.",
+      "english": "I can’t get him to talk.",
+      "source": "Traupman 320"
+    },
+    {
+      "latin": "Nunc cognōsce rem.",
+      "english": "Now get this.",
+      "source": "Traupman 320"
     }
   ],
   "related": [
@@ -83,7 +116,8 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/paro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: paro</a> · <a href=\"https://logeion.uchicago.edu/nanciscor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nanciscor</a> · <a href=\"https://logeion.uchicago.edu/adipiscor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: adipiscor</a> · <a href=\"https://logeion.uchicago.edu/impetro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: impetro</a>",
     "Cicero’s letters checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
-    "Quotations from the Latinitas loci collections (loci-cicero-philosophica, loci-phaedrus), checked against the editions named there."
+    "Quotations from the Latinitas loci collections (loci-cicero-philosophica, loci-phaedrus), checked against the editions named there.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 320."
   ],
   "review": {
     "status": "draft",

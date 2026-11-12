@@ -8,6 +8,27 @@
       "latin": "garriō, garrīre",
       "status": "recommended",
       "period": "classical"
+    },
+    {
+      "latin": "balbūtiō, balbūtīre",
+      "status": "avoid",
+      "period": "classical",
+      "gloss": "stammer, stutter (not chatter)",
+      "evidence": [
+        "Traupman 289"
+      ],
+      "comment": "Traupman gives it for “chatter”; Lewis &amp; Short: “to stammer, stutter”. For chattering teeth Latin says <span lang=\"la\">dentibus crepitāre</span>."
+    },
+    {
+      "latin": "dentibus crepitāre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "(of teeth) chatter",
+      "evidence": [
+        "Plaut. Rud. 2.6.52; Lucr. 5.746 (Lewis &amp; Short s.v. <span lang=\"la\">crepitō</span>)",
+        "Traupman 289"
+      ],
+      "comment": "Literally “to rattle with the teeth”: <span lang=\"la\">dentibus crepitō</span>, my teeth are chattering."
     }
   ],
   "phrases": [
@@ -18,11 +39,18 @@
     }
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/garrio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: garrio</a> · <a href=\"https://logeion.uchicago.edu/bucca\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: bucca</a>"
+    "<a href=\"https://logeion.uchicago.edu/crepito\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: crepito</a>",
+    "<a href=\"https://logeion.uchicago.edu/balbutio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: balbutio</a>",
+    "<a href=\"https://logeion.uchicago.edu/garrio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: garrio</a> · <a href=\"https://logeion.uchicago.edu/bucca\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: bucca</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 289."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "my teeth are chattering",
+    "teeth chattering"
+  ]
 }

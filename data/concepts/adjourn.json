@@ -5,7 +5,8 @@
   "also": [
     "adjournment",
     "postpone (a hearing)",
-    "defer (a case)"
+    "defer (a case)",
+    "postpone a hearing"
   ],
   "domain": "res-publica",
   "audience": "adult",
@@ -17,9 +18,29 @@
       "gloss": "adjourn (a case) for further hearing",
       "evidence": [
         "Cic. Verr. 2.1.26: <span lang=\"la\">lēx ampliandī facit potestātem</span> (Lewis &amp; Short)",
-        "Traupman 193"
+        "Traupman 193",
+        "Cic. Caecin. 29: <span lang=\"la\">potestās ampliandī</span> (Lewis &amp; Short)",
+        "Traupman 269"
       ],
       "comment": "A Roman court adjourned by pronouncing <span lang=\"la\">amplius</span>, “more (hearing needed)”."
+    },
+    {
+      "latin": "differō, differre, distulī, dīlātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "put off, postpone",
+      "evidence": [
+        "Lewis &amp; Short s.v. <span lang=\"la\">differō</span>"
+      ]
+    },
+    {
+      "latin": "prōferō, prōferre, prōtulī, prōlātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "defer, adjourn",
+      "evidence": [
+        "Cic. Att. 13.13 (Lewis &amp; Short s.v. <span lang=\"la\">prōscrībō</span>)"
+      ]
     }
   ],
   "related": [
@@ -29,7 +50,9 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/amplio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: amplio</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 193, each phrase checked against the searchable text of the book.",
-    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "<a href=\"https://logeion.uchicago.edu/differo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: differo</a> · <a href=\"https://logeion.uchicago.edu/amplio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: amplio</a> · <a href=\"https://logeion.uchicago.edu/profero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: profero</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 269."
   ],
   "review": {
     "status": "draft",

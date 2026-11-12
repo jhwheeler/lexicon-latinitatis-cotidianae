@@ -9,7 +9,8 @@
       "status": "recommended",
       "period": "classical",
       "evidence": [
-        "Traupman 142"
+        "Traupman 142",
+        "Traupman 316"
       ]
     },
     {
@@ -19,9 +20,20 @@
       "gloss": "fish as food, a catch of fish",
       "evidence": [
         "Plaut. Most. 1.1.63: <span lang=\"la\">parāre piscātum</span> (Lewis &amp; Short)",
-        "Traupman 71"
+        "Traupman 71",
+        "Traupman 316"
       ],
       "comment": "Properly “a fishing”; in comedy also the fish themselves, as food (Lewis &amp; Short)."
+    },
+    {
+      "latin": "piscōsus, piscōsa, piscōsum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "teeming with fish",
+      "register": "vōx plērumque poētica: Verg., Ov.",
+      "evidence": [
+        "Traupman 316"
+      ]
     }
   ],
   "phrases": [
@@ -41,10 +53,11 @@
     "scale-fish"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/piscosus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: piscosus</a>",
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 71.",
     "<a href=\"https://logeion.uchicago.edu/piscatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: piscatus</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, each phrase checked against the searchable text of the book."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, each phrase checked against the searchable text of the book.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 71; p. 316."
   ],
   "replaces": [
     "entry-207",
@@ -56,6 +69,8 @@
     "by": "Claude"
   },
   "also": [
-    "fish (as food)"
+    "fish (as food)",
+    "teeming with fish",
+    "full of fish"
   ]
 }

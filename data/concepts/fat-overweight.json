@@ -6,7 +6,10 @@
   "also": [
     "overweight",
     "obese",
-    "obesity"
+    "obesity",
+    "chubby",
+    "plump",
+    "corpulent"
   ],
   "domain": "culina",
   "terms": [
@@ -18,7 +21,8 @@
       "grammar": "adjective",
       "evidence": [
         "Traupman 64",
-        "Traupman 65"
+        "Traupman 65",
+        "Traupman 313"
       ]
     },
     {
@@ -30,15 +34,28 @@
         "Suet. Dom. 18: <span lang=\"la\">obēsitās ventris</span> (Lewis &amp; Short)",
         "Traupman 65"
       ]
+    },
+    {
+      "latin": "corpulentus, corpulenta, corpulentum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "chubby, plump, fleshy",
+      "register": "Plaut.; Quint.: “rare, and only anteclass. and post-Aug.” (Lewis &amp; Short)",
+      "evidence": [
+        "Plaut. Ep. 1.1.8: <span lang=\"la\">corpulentior atque habitior</span> (Lewis &amp; Short)",
+        "Traupman 291"
+      ]
     }
   ],
   "related": [
     "put-on-weight"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/corpulentus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: corpulentus</a>",
     "<a href=\"https://logeion.org/obesus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: obesus</a>",
     "<a href=\"https://logeion.uchicago.edu/obesitas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: obesitas</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 64, 65, checked against the searchable text of the book."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 64, 65, checked against the searchable text of the book.: p. 291.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 64, 65, checked against the searchable text of the book.: p. 313."
   ],
   "review": {
     "status": "draft",

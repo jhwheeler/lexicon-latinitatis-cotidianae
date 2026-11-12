@@ -9,7 +9,13 @@
     "be depressed",
     "lose heart",
     "dishearten",
-    "discourage"
+    "discourage",
+    "downhearted",
+    "be downhearted",
+    "downcast",
+    "be downcast",
+    "with downcast eyes",
+    "feel down and out"
   ],
   "domain": "verba",
   "terms": [
@@ -33,6 +39,47 @@
         "Cic. Tusc. 4.14 (Lewis &amp; Short)"
       ],
       "comment": "To let one’s spirits sink: what a person does who is depressed. Its opposite is <span lang=\"la\">animōs tollere</span> (Lucilius, in Lewis &amp; Short)."
+    },
+    {
+      "latin": "abjectus, abjecta, abjectum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "depressed, downcast",
+      "evidence": [
+        "Cic. Att. 3.2: <span lang=\"la\">ita sum animō perculsō et abjectō</span> (Lewis &amp; Short s.v. abicio)",
+        "Traupman 303"
+      ],
+      "comment": "Literally “thrown down”: <span lang=\"la\">abjectō animō esse</span>, to be depressed."
+    },
+    {
+      "latin": "dēmissus, dēmissa, dēmissum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "downcast, downhearted",
+      "evidence": [
+        "Traupman 306"
+      ],
+      "comment": "The participle of <span lang=\"la\">dēmittō</span>, “let down”: <span lang=\"la\">animum dēmittere</span>, to lose heart."
+    },
+    {
+      "latin": "dējectus, dējecta, dējectum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "downcast; with oculōs, with eyes cast down",
+      "evidence": [
+        "Traupman 306"
+      ]
+    },
+    {
+      "latin": "jaceō, jacēre, jacuī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "be downcast, be dejected",
+      "evidence": [
+        "Cic. Att. 7.21.1: <span lang=\"la\">Gnaeus noster ut tōtus jacet</span> (Lewis &amp; Short s.v. <span lang=\"la\">jaceō</span>)",
+        "Traupman 306"
+      ],
+      "comment": "Literally “lie low”: of a person crushed by misfortune."
     }
   ],
   "phrases": [
@@ -40,6 +87,26 @@
       "latin": "sī vīcerint, efferunt sē laetitiā; victī dēbilitantur animōsque dēmittunt",
       "english": "if they win, they are carried away with joy; beaten, they lose their strength and their spirits sink (of children at play)",
       "source": "Cic. Fin. 5.42 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "abjectō animō esse",
+      "english": "to be depressed",
+      "source": "Traupman 303"
+    },
+    {
+      "latin": "animō perculsō et abjectō esse",
+      "english": "to be downhearted",
+      "source": "Traupman 306"
+    },
+    {
+      "latin": "dējectus oculōs",
+      "english": "with downcast eyes",
+      "source": "Traupman 306"
+    },
+    {
+      "latin": "īnfrāctum animum gerere",
+      "english": "to feel down and out",
+      "source": "Traupman 314"
     }
   ],
   "related": [
@@ -49,7 +116,8 @@
     "encourage-hearten"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/affligo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: affligo</a> · <a href=\"https://logeion.uchicago.edu/demitto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: demitto</a>"
+    "<a href=\"https://logeion.uchicago.edu/affligo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: affligo</a> · <a href=\"https://logeion.uchicago.edu/demitto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: demitto</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 303; p. 306; p. 314."
   ],
   "review": {
     "status": "draft",

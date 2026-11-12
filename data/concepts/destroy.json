@@ -8,7 +8,11 @@
     "ruin",
     "wreck",
     "overthrow",
-    "be destroyed"
+    "be destroyed",
+    "do someone in",
+    "do in",
+    "he has done me in",
+    "finish off"
   ],
   "domain": "verba",
   "terms": [
@@ -40,9 +44,21 @@
       "period": "classical",
       "gloss": "ruin, destroy; lose, waste",
       "evidence": [
-        "Cic. Rosc. Am. 131 (Lewis &amp; Short)"
+        "Cic. Rosc. Am. 131 (Lewis &amp; Short)",
+        "Traupman 315"
       ],
       "comment": "To make away with: ruin a person, destroy crops. Its everyday sense is to lose or waste something (<span lang=\"la\">operam perdere</span>, to waste one’s effort). Its passive is <span lang=\"la\">pereō</span>."
+    },
+    {
+      "latin": "pessum dare",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "ruin, do someone in",
+      "register": "vōx sermōnis cotīdiānī: Plaut.; Cic. in fragmentīs",
+      "evidence": [
+        "Plaut. Rud. 2.6.23: <span lang=\"la\">pessum dedistī mē blandimentīs tuīs</span> (Lewis &amp; Short)",
+        "Traupman 305"
+      ]
     }
   ],
   "phrases": [
@@ -50,6 +66,11 @@
       "latin": "quae enim domus tam stabilis, quae tam firma cīvitās est, quae nōn odiīs et discidiīs funditus possit ēvertī?",
       "english": "for what house is so stable, what state so firm, that hatred and quarrels could not overturn it from the ground up?",
       "source": "Cic. Amic. 23"
+    },
+    {
+      "latin": "Perdidit mē.",
+      "english": "He has done me in.",
+      "source": "Traupman 305"
     }
   ],
   "related": [
@@ -61,7 +82,8 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/deleo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: deleo</a> · <a href=\"https://logeion.uchicago.edu/everto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: everto</a> · <a href=\"https://logeion.uchicago.edu/perdo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: perdo</a>",
-    "Quotations from the Latinitas loci collections (loci-cicero-philosophica), checked against the editions named there."
+    "Quotations from the Latinitas loci collections (loci-cicero-philosophica), checked against the editions named there.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 305; p. 315."
   ],
   "review": {
     "status": "draft",

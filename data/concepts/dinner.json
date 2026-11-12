@@ -6,7 +6,10 @@
     "supper",
     "eat dinner",
     "have dinner",
-    "have a roast for dinner"
+    "have a roast for dinner",
+    "over dinner",
+    "what are you having for dinner?",
+    "dinnertime"
   ],
   "domain": "culina",
   "terms": [
@@ -15,7 +18,8 @@
       "status": "recommended",
       "period": "classical",
       "evidence": [
-        "Traupman 71"
+        "Traupman 71",
+        "Traupman 304"
       ]
     }
   ],
@@ -26,7 +30,7 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/cena\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cena</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: p. 71, checked against the searchable text of the book on 29 October 2026; p. 68."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: p. 71, checked against the searchable text of the book on 29 October 2026; p. 68; p. 304."
   ],
   "review": {
     "status": "draft",
@@ -48,6 +52,26 @@
       "latin": "Quid in cēnā sūmēs?",
       "english": "What will you have for supper?",
       "source": "Traupman 68"
+    },
+    {
+      "latin": "Cēnam sūmere.",
+      "english": "To eat dinner.",
+      "source": "Traupman 304"
+    },
+    {
+      "latin": "Assum in cēnā habēre.",
+      "english": "To have a roast for dinner.",
+      "source": "Traupman 304"
+    },
+    {
+      "latin": "Quid in cēnā habēbis?",
+      "english": "What are you having for dinner?",
+      "source": "Traupman 304"
+    },
+    {
+      "latin": "hōra cēnandī",
+      "english": "dinnertime",
+      "source": "Traupman 304"
     }
   ]
 }

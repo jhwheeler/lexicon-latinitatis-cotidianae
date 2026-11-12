@@ -7,7 +7,10 @@
     "endings",
     "termination",
     "case ending",
-    "how many endings?"
+    "how many endings?",
+    "ends in",
+    "ending in",
+    "word ending"
   ],
   "domain": "schola",
   "terms": [
@@ -28,9 +31,20 @@
       "period": "modern",
       "gloss": "an ending",
       "evidence": [
-        "Traupman 232, 246"
+        "Traupman 232, 246",
+        "Traupman 309"
       ],
       "comment": "Traupman’s word: <span lang=\"la\">Quot terminātiōnēs sunt adjectīvīs?</span>, how many endings do adjectives have? (232). In Cicero it is a closing or fixing of limits, as of the cadence of a sentence (Or. 200, Lewis &amp; Short); we have found no classical instance of it for the ending of a word."
+    },
+    {
+      "latin": "terminor, terminārī, terminātus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "end (in) (of a word)",
+      "grammar": "deponent use of terminō, with in + accusative or ablative",
+      "evidence": [
+        "Traupman 309, 310"
+      ]
     }
   ],
   "phrases": [
@@ -54,7 +68,10 @@
     "<a href=\"https://logeion.uchicago.edu/positio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: positio</a> · <a href=\"https://logeion.uchicago.edu/terminatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: terminatio</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 232, p. 246.",
     "Quintilian checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>, and cited by its numbering.",
-    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "<a href=\"https://logeion.uchicago.edu/terminatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: terminatio</a>",
+    "<a href=\"https://logeion.uchicago.edu/termino\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: termino</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 309; p. 310."
   ],
   "review": {
     "status": "draft",

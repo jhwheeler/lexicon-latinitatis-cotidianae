@@ -8,7 +8,10 @@
     "shameful",
     "dishonourable",
     "scandalous",
-    "be a disgrace to"
+    "be a disgrace to",
+    "dishonour",
+    "dishonor",
+    "that’s a disgrace"
   ],
   "domain": "verba",
   "terms": [
@@ -18,7 +21,8 @@
       "period": "classical",
       "gloss": "disgrace, dishonour, shame",
       "evidence": [
-        "Traupman 151"
+        "Traupman 151",
+        "Traupman 304"
       ]
     },
     {
@@ -27,7 +31,8 @@
       "period": "classical",
       "gloss": "disgrace, public dishonour",
       "evidence": [
-        "Traupman 151, 157"
+        "Traupman 151, 157",
+        "Traupman 304"
       ],
       "comment": "Properly the loss of one’s good name (<span lang=\"la\">nōmen</span>), a mark of public disgrace."
     },
@@ -38,8 +43,12 @@
       "gloss": "to be a disgrace to",
       "evidence": [
         "Cic. Off. 1.139: <span lang=\"la\">ampla domus dēdecorī saepe dominō fit</span> (Lewis &amp; Short s.v. sōlitūdō)",
-        "Traupman 151"
-      ]
+        "Traupman 151",
+        "Cic. Off. 1.139: <span lang=\"la\">ampla domus dēdecorī dominō fit</span> (Lewis &amp; Short s.v. <span lang=\"la\">dēdecus</span>)",
+        "Ter. Haut. 2.3.93 (Lewis &amp; Short)",
+        "Traupman 304"
+      ],
+      "grammar": "predicative dative with esse and the dative of the person"
     },
     {
       "latin": "ignōminiōsus, ignōminiōsa, ignōminiōsum",
@@ -79,11 +88,22 @@
     "<a href=\"https://logeion.uchicago.edu/dedecorus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dedecorus</a>",
     "<a href=\"https://logeion.uchicago.edu/flagitiosus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: flagitiosus</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, each phrase checked against the searchable text of the book.",
-    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 304."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "Edepol facinus improbum est!",
+      "english": "That’s a darn disgrace!",
+      "source": "Traupman 305"
+    }
+  ],
+  "related": [
+    "what-a-shame"
+  ]
 }

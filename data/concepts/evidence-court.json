@@ -11,7 +11,8 @@
     "witness statement",
     "admissible",
     "not admissible",
-    "turn state’s evidence"
+    "turn state’s evidence",
+    "give evidence against"
   ],
   "domain": "res-publica",
   "terms": [
@@ -37,6 +38,16 @@
         "Traupman 195"
       ],
       "comment": "<span lang=\"la\">Indicium profitērī</span>, to turn informer (Traupman 195; M-O)."
+    },
+    {
+      "latin": "indicium profitērī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "turn state’s evidence, give evidence against one’s accomplices",
+      "evidence": [
+        "Sall. J. 35.6: <span lang=\"la\">multīs hortantibus indicium profitētur</span> (Lewis &amp; Short s.v. <span lang=\"la\">indicium</span>)",
+        "Traupman 311"
+      ]
     }
   ],
   "phrases": [
@@ -54,6 +65,16 @@
       "latin": "Hoc testimōnium nōn sūmendum est.",
       "english": "This evidence is not admissible.",
       "source": "Traupman 195"
+    },
+    {
+      "latin": "testimōnium dīcere in aliquem",
+      "english": "to give evidence against someone",
+      "source": "Traupman 311"
+    },
+    {
+      "latin": "Quō mē teste convincēs?",
+      "english": "On what evidence will you convict me?",
+      "source": "Cic. Phil. 2.8 (Lewis &amp; Short s.v. <span lang=\"la\">convincō</span>)"
     }
   ],
   "related": [
@@ -63,10 +84,10 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/testimonium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: testimonium</a> · <a href=\"https://logeion.uchicago.edu/testis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: testis</a> · <a href=\"https://logeion.uchicago.edu/testificor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: testificor</a> · <a href=\"https://logeion.uchicago.edu/indicium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: indicium</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 195, 311, checked against the searchable text of the book (9 November 2026).",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. turn state’s evidence.",
     "Cicero (Brut. 293, Ac. 2.146) and Terence (Ph. 293) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 195, each phrase checked against the searchable text of the book."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 195, each phrase checked against the searchable text of the book.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 195, 311, checked against the searchable text of the book (9 November 2026).: p. 311."
   ],
   "review": {
     "status": "draft",

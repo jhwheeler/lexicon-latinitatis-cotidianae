@@ -18,7 +18,9 @@
     "I don’t care to say more",
     "I don’t really care as long as",
     "I don’t mind that",
-    "I don’t mind"
+    "I don’t mind",
+    "I don’t care for her",
+    "I like (it is dear to me)"
   ],
   "domain": "verba",
   "terms": [
@@ -31,7 +33,8 @@
         "Plaut. Most. 627: <span lang=\"la\">nōn ego istuc cūrō quī sit quid sit unde sit</span>",
         "Cic. N. D. 2.167: <span lang=\"la\">magna dī cūrant, parva neglegunt</span>",
         "Traupman 94: <span lang=\"la\">Ista nōn cūrō.</span>",
-        "Traupman 103: I don’t mind that …, <span lang=\"la\">nōn cūrō quod (+ indic.)</span>"
+        "Traupman 103: I don’t mind that …, <span lang=\"la\">nōn cūrō quod (+ indic.)</span>",
+        "Traupman 287"
       ],
       "comment": "With an accusative or a question; with a negative it is “I don’t care”: <span lang=\"la\">nōn cūrō</span>, <span lang=\"la\">nihil cūrō</span>."
     },
@@ -82,7 +85,8 @@
       "evidence": [
         "Plaut. Rud. 3.5.3: <span lang=\"la\">ego, quae tū loquere, floccī nōn faciō</span> (Lewis &amp; Short), s.v. <span lang=\"la\">floccus</span>",
         "Cic. Att. 13.50.3: <span lang=\"la\">nec tamen floccī faciō</span> (Lewis &amp; Short)",
-        "Traupman 100: <span lang=\"la\">eum floccī nōn faciō</span>"
+        "Traupman 100: <span lang=\"la\">eum floccī nōn faciō</span>",
+        "Traupman 300"
       ]
     },
     {
@@ -104,9 +108,23 @@
       "gloss": "what’s it to me?",
       "evidence": [
         "Ter. Heaut. 4.5.45 (Lewis &amp; Short s.v. <span lang=\"la\">cōnfugiō</span>)",
-        "Traupman 94"
+        "Traupman 94",
+        "Traupman 287"
       ],
       "comment": "<span lang=\"la\">Meā</span> is the form used with <span lang=\"la\">rēfert</span> and <span lang=\"la\">interest</span>: “what (does it matter) to me?”"
+    },
+    {
+      "latin": "mihi cordī est",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "I care for, I like, it is dear to me",
+      "grammar": "cordī, dative of cor, with esse and a dative of the person",
+      "evidence": [
+        "Plaut. Cist. 1.1.110: <span lang=\"la\">utut ergā mē est meritus, mihi cordī est tamen</span> (Lewis &amp; Short s.v. <span lang=\"la\">cor</span>)",
+        "Cic. Lael. 15: <span lang=\"la\">idque eō mihi magis est cordī</span> (Lewis &amp; Short)",
+        "Traupman 287"
+      ],
+      "comment": "“I don’t care for her” is <span lang=\"la\">nōn est mihi cordī</span>. Traupman’s <span lang=\"la\">ea meō cordī nōn cāra est</span> mixes this idiom with <span lang=\"la\">cārus</span> and the possessive <span lang=\"la\">meus</span>; we have found no classical instance of that shape."
     }
   ],
   "phrases": [
@@ -144,6 +162,16 @@
       "latin": "Nōn libet plūra dīcere.",
       "english": "I don’t care to say more.",
       "source": "Traupman 94"
+    },
+    {
+      "latin": "Meā nīl rēfert, dum …",
+      "english": "I don’t really care, as long as …",
+      "source": "Traupman 287"
+    },
+    {
+      "latin": "meā quidem istuc nihil rēfert",
+      "english": "that makes no difference to me, at any rate",
+      "source": "Plaut. Pers. 4.3.68 (Lewis &amp; Short s.v. <span lang=\"la\">rēfert</span>)"
     }
   ],
   "related": [
@@ -154,9 +182,10 @@
     "concern"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/cor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cor</a>",
     "<a href=\"https://logeion.uchicago.edu/curo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: curo</a> · <a href=\"https://logeion.uchicago.edu/cura\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cura</a> · <a href=\"https://logeion.uchicago.edu/laboro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: laboro</a> · <a href=\"https://logeion.uchicago.edu/moror\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: moror</a>",
     "Plaut. Most. 627 and Cic. Fam. 16.4.3–4, N. D. 2.167 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 94, checked against the searchable text of the book.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 94, checked against the searchable text of the book.: p. 287; p. 300.",
     "<a href=\"https://logeion.uchicago.edu/floccus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: floccus</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 99, checked against the searchable text and the page image (12 November 2026).",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 100, checked against the searchable text and the page image (12 November 2026).",

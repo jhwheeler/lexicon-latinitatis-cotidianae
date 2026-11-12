@@ -4,7 +4,12 @@
   "pos": "verb",
   "also": [
     "I don't blame you",
-    "reproach"
+    "reproach",
+    "to blame",
+    "I am to blame",
+    "I don’t blame you",
+    "put the blame on",
+    "push the blame on"
   ],
   "domain": "verba",
   "terms": [
@@ -14,9 +19,40 @@
       "period": "classical",
       "gloss": "to blame, reproach, find fault with",
       "evidence": [
-        "Traupman 148"
+        "Traupman 148",
+        "Lewis &amp; Short: rare, mostly post-Augustan, never in Cicero’s time",
+        "Traupman 280"
       ],
       "comment": "Lewis &amp; Short: classical, though <span lang=\"la\">reprehendere</span> and <span lang=\"la\">accūsāre</span> are commoner in Cicero."
+    },
+    {
+      "latin": "reprehendō, reprehendere, reprehendī, reprehēnsum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "blame, find fault with",
+      "evidence": [
+        "Lewis &amp; Short"
+      ]
+    },
+    {
+      "latin": "culpa, culpae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "blame, fault",
+      "evidence": [
+        "Traupman 280"
+      ],
+      "comment": "“I am to blame” is <span lang=\"la\">in culpā sum</span>; “put the blame on someone”, <span lang=\"la\">culpam in aliquem cōnferre</span> (Traupman) or <span lang=\"la\">trānsferre</span>."
+    },
+    {
+      "latin": "incūsō, incūsāre, incūsāvī, incūsātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "accuse, find fault with, blame",
+      "evidence": [
+        "Lewis &amp; Short: classical, but not in Cicero",
+        "Traupman 280"
+      ]
     }
   ],
   "phrases": [
@@ -24,14 +60,29 @@
       "latin": "Tē nōn culpō.",
       "english": "I don’t blame you.",
       "source": "Traupman 148"
+    },
+    {
+      "latin": "In culpā sum.",
+      "english": "I am to blame.",
+      "source": "Traupman 280"
+    },
+    {
+      "latin": "culpam in aliquem cōnferre",
+      "english": "to push the blame on someone",
+      "source": "Traupman 280"
     }
   ],
   "related": [
-    "attack-criticize"
+    "attack-criticize",
+    "responsible-to-blame",
+    "accept-blame",
+    "criticism"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/culpo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: culpo</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, each phrase checked against the searchable text of the book."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, each phrase checked against the searchable text of the book.",
+    "<a href=\"https://logeion.uchicago.edu/reprehendo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: reprehendo</a> · <a href=\"https://logeion.uchicago.edu/culpa\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: culpa</a> · <a href=\"https://logeion.uchicago.edu/culpo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: culpo</a> · <a href=\"https://logeion.uchicago.edu/incuso\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: incuso</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 280."
   ],
   "review": {
     "status": "draft",

@@ -9,7 +9,10 @@
     "for a week",
     "all night",
     "all day",
-    "for the next two days"
+    "for the next two days",
+    "for ten days",
+    "for the last three months",
+    "for the following day"
   ],
   "domain": "verba",
   "terms": [
@@ -21,7 +24,8 @@
       "grammar": "construction: the length of time in the accusative, with no preposition",
       "evidence": [
         "Cic. Fam. 14.2.3: <span lang=\"la\">diēs noctēsque versāris</span>",
-        "Cic. Tusc. 2.40: <span lang=\"la\">inediam bīduum aut trīduum ferunt</span>"
+        "Cic. Tusc. 2.40: <span lang=\"la\">inediam bīduum aut trīduum ferunt</span>",
+        "Traupman 317"
       ],
       "comment": "Only with words of time (<span lang=\"la\">hōram, diem, bīduum, annum</span>). A distance or a thing is not a length of time: “he slept the whole journey” is <span lang=\"la\">per tōtum iter dormīvit</span>, not <span lang=\"la\">tōtum iter</span>. Age is said the same way: <span lang=\"la\">decem annōs nātus</span>."
     },
@@ -44,7 +48,8 @@
       "gloss": "for (a time ahead: what is meant to last)",
       "grammar": "preposition with the accusative",
       "evidence": [
-        "Ter. Eun. 191: <span lang=\"la\">in hoc bīduum, Thāis, valē</span>"
+        "Ter. Eun. 191: <span lang=\"la\">in hoc bīduum, Thāis, valē</span>",
+        "Traupman 317"
       ],
       "comment": "“For tomorrow”, <span lang=\"la\">in crāstinum</span>; “for ever”, <span lang=\"la\">in perpetuum</span>."
     }
@@ -79,6 +84,21 @@
       "latin": "cētera intēctī tōtōs diēs jūxtā focum atque ignem agunt",
       "english": "otherwise unclothed, they spend whole days by the hearth and the fire",
       "source": "Tac. Germ. 17.1"
+    },
+    {
+      "latin": "decem diēs",
+      "english": "for ten days",
+      "source": "Traupman 317"
+    },
+    {
+      "latin": "Eam ad cēnam vocāvit in posterum diem.",
+      "english": "He invited her to dinner for the following day.",
+      "source": "Traupman 317"
+    },
+    {
+      "latin": "in ternōs novissimōs mēnsēs",
+      "english": "for the last three months",
+      "source": "Traupman 317"
     }
   ],
   "related": [
@@ -89,7 +109,8 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/accusativus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: accusativus</a> · <a href=\"https://logeion.uchicago.edu/per\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: per</a> · <a href=\"https://logeion.uchicago.edu/in\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: in</a>",
-    "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-cicero-philosophica, loci-cato, loci-livius, loci-terentius, loci-tacitus), checked against the editions named there."
+    "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-cicero-philosophica, loci-cato, loci-livius, loci-terentius, loci-tacitus), checked against the editions named there.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 317."
   ],
   "review": {
     "status": "draft",

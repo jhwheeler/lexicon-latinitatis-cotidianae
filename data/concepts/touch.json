@@ -3,7 +3,9 @@
   "english": "touch",
   "pos": "verb",
   "also": [
-    "reach"
+    "reach",
+    "lay a finger on",
+    "lay a finger on someone"
   ],
   "domain": "sermo",
   "terms": [
@@ -12,6 +14,17 @@
       "status": "recommended",
       "period": "classical",
       "comment": "Useful for reaching far enough to touch a hold."
+    },
+    {
+      "latin": "digitō attingere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "lay a finger on",
+      "grammar": "attingō with digitō, ablative of means",
+      "evidence": [
+        "Ter. Eun. 4.6.1: <span lang=\"la\">atquī sī illam digitō attigerit, oculī illī īlicō ecfodientur</span> (Lewis &amp; Short), s.v. <span lang=\"la\">atquī</span>",
+        "Traupman p. 102: <span lang=\"la\">aliquem ūnō digitō attingere</span>"
+      ]
     }
   ],
   "phrases": [
@@ -29,7 +42,10 @@
   "sources": [
     "<a href=\"https://logeion.org/tango\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tango</a>",
     "Examples are composed for conversation with Theo; dictionary links document the component words, not these exact sentences or standardized modern climbing terminology.",
-    "The example sentences marked “composed” are ours."
+    "The example sentences marked “composed” are ours.",
+    "<a href=\"https://logeion.uchicago.edu/attingo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: attingo</a> · <a href=\"https://logeion.uchicago.edu/digitus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: digitus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 102, checked against the searchable text and the page image (12 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",

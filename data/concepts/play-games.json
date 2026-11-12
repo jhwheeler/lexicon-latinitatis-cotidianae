@@ -9,7 +9,10 @@
       "latin": "lūdō, lūdere, lūsī, lūsum",
       "status": "recommended",
       "period": "classical",
-      "comment": "An ancient word."
+      "comment": "An ancient word.",
+      "evidence": [
+        "Traupman 44"
+      ]
     }
   ],
   "phrases": [
@@ -17,6 +20,11 @@
       "latin": "Lūdāmus!",
       "english": "Let’s play!",
       "source": "composed"
+    },
+    {
+      "latin": "lūdum lūdere",
+      "english": "play a game",
+      "source": "Traupman 44"
     }
   ],
   "related": [
@@ -26,11 +34,15 @@
   ],
   "sources": [
     "<a href=\"https://www.alatius.com/ls/index.php?l=ludus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ludus</a>",
-    "The example sentences marked “composed” are ours."
+    "The example sentences marked “composed” are ours.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 44."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "play a game"
+  ]
 }

@@ -7,7 +7,11 @@
     {
       "latin": "pede pulsāre",
       "status": "recommended",
-      "period": "ours"
+      "period": "ours",
+      "evidence": [
+        "Traupman 47",
+        "Traupman 50"
+      ]
     },
     {
       "latin": "pilam pede īcere",
@@ -24,6 +28,21 @@
       "latin": "Baba, in sellā sedēns, pilam puerō pede impellit; puer eam pede pulsat, ut potest",
       "english": "Baba, sitting on a chair, pushes the ball to the boy with her foot; the boy kicks it as best he can",
       "source": "Libellus VII, <span lang=\"la\">Diēs ūnus Osoitsae</span>"
+    },
+    {
+      "latin": "follem pede pulsāre (īcere)",
+      "english": "kick the ball",
+      "source": "Traupman 44"
+    },
+    {
+      "latin": "pede pulsus initiālis",
+      "english": "kickoff",
+      "source": "Traupman 47"
+    },
+    {
+      "latin": "calce pulsus",
+      "english": "heel kick",
+      "source": "Traupman 50"
     }
   ],
   "related": [
@@ -33,12 +52,18 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/ico\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ico</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 44, checked against the searchable text of the book (29 October 2026).",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 44, checked against the searchable text of the book (29 October 2026); p. 47; p. 50.",
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "kick the ball",
+    "kickoff",
+    "kick-off",
+    "heel kick"
+  ]
 }

@@ -2,12 +2,38 @@
   "id": "river",
   "english": "river",
   "pos": "noun",
+  "also": [
+    "tributary"
+  ],
   "domain": "natura",
   "terms": [
     {
       "latin": "flūmen, flūminis n.",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "evidence": [
+        "Traupman 206"
+      ]
+    },
+    {
+      "latin": "amnis, amnis m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "river, stream",
+      "evidence": [
+        "Traupman 206: <span lang=\"la\">flūmen, amnis</span> (with no distinction as to size)"
+      ],
+      "comment": "Lewis &amp; Short: first a broad, swift-flowing water, so often a large river or a torrent in the poets."
+    },
+    {
+      "latin": "fluvius, fluviī m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "river",
+      "evidence": [
+        "Traupman 206: tributary, <span lang=\"la\">fluvius</span>"
+      ],
+      "comment": "A river in general; Traupman gives it for “tributary”, which it does not specially mean (<span lang=\"la\">fluviī in eum īnfluunt</span>, rivers flow into it)."
     }
   ],
   "phrases": [
@@ -23,11 +49,14 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/flumen\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: flumen</a>",
-    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, cited by printed page; each phrase checked against the searchable text of the book.",
+    "<a href=\"https://logeion.uchicago.edu/amnis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: amnis</a>",
+    "<a href=\"https://logeion.uchicago.edu/fluvius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fluvius</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

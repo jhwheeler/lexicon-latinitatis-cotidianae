@@ -2,6 +2,10 @@
   "id": "island",
   "english": "island",
   "pos": "noun",
+  "also": [
+    "off the coast",
+    "islands off the coast"
+  ],
   "domain": "natura",
   "terms": [
     {
@@ -9,8 +13,21 @@
       "status": "recommended",
       "period": "classical",
       "evidence": [
-        "Traupman 204"
+        "Traupman 204",
+        "Traupman 205"
       ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "īnsulae ante Graeciam",
+      "english": "islands off the coast of Greece",
+      "source": "Traupman 204"
+    },
+    {
+      "latin": "ante Ītaliam",
+      "english": "off (the coast of) Italy",
+      "source": "Traupman 205"
     }
   ],
   "related": [
@@ -26,7 +43,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

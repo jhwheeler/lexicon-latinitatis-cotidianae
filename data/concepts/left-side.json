@@ -3,12 +3,40 @@
   "english": "left",
   "sense": "side",
   "pos": "adjective",
+  "also": [
+    "on the left",
+    "to the left"
+  ],
   "domain": "sermo",
   "terms": [
     {
       "latin": "sinister, sinistra, sinistrum",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "evidence": [
+        "Traupman 204"
+      ]
+    },
+    {
+      "latin": "laevus, laeva, laevum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "left",
+      "evidence": [
+        "Traupman 204"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "laevā (ā laevā)",
+      "english": "on the left",
+      "source": "Traupman 204"
+    },
+    {
+      "latin": "sinistrōrsum (laevōrsum)",
+      "english": "to the left",
+      "source": "Traupman 204"
     }
   ],
   "related": [
@@ -16,11 +44,13 @@
     "to-the-left"
   ],
   "sources": [
-    "<a href=\"https://logeion.org/sinister\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sinister</a>"
+    "<a href=\"https://logeion.org/sinister\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sinister</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, cited by printed page; each phrase checked against the searchable text of the book.",
+    "<a href=\"https://logeion.uchicago.edu/laevus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: laevus</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

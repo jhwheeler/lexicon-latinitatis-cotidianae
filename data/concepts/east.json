@@ -2,13 +2,34 @@
   "id": "east",
   "english": "east",
   "pos": "noun",
+  "also": [
+    "the east",
+    "on the east",
+    "to the east",
+    "eastward"
+  ],
   "domain": "vectura",
   "terms": [
     {
       "latin": "oriēns, orientis m.",
       "status": "recommended",
       "period": "classical",
-      "gloss": "the east"
+      "gloss": "the east",
+      "evidence": [
+        "Traupman 203"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ab oriente",
+      "english": "on the east (side)",
+      "source": "Traupman 203"
+    },
+    {
+      "latin": "in orientem",
+      "english": "to the east",
+      "source": "Traupman 203"
     }
   ],
   "related": [
@@ -17,11 +38,12 @@
     "west"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/oriens\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: oriens</a>"
+    "<a href=\"https://logeion.uchicago.edu/oriens\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: oriens</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, cited by printed page; each phrase checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

@@ -8,7 +8,9 @@
     "number of inhabitants",
     "census",
     "population count",
-    "head count"
+    "head count",
+    "densely populated",
+    "densely populated region"
   ],
   "domain": "res-publica",
   "terms": [
@@ -19,7 +21,8 @@
       "gloss": "the population: the number of people",
       "evidence": [
         "Liv. 1.44.3: <span lang=\"la\">ad eam multitūdinem urbs quoque amplificanda vīsa est</span>",
-        "Traupman 205, 363: population; <span lang=\"la\">numerus omnis multitūdinis</span>, the total population"
+        "Traupman 205, 363: population; <span lang=\"la\">numerus omnis multitūdinis</span>, the total population",
+        "Traupman 203"
       ],
       "comment": "Livy’s word for the people a city holds, or hopes to hold; with numerus for the figure."
     },
@@ -80,6 +83,11 @@
       "latin": "cum in spem magis futūrae multitūdinis quam ad id quod tum hominum erat mūnīrent",
       "english": "for they built their walls for the population they hoped for rather than for the people they had then",
       "source": "Liv. 1.8.4"
+    },
+    {
+      "latin": "regiō überrimae multitūdinis",
+      "english": "a densely populated region",
+      "source": "Traupman 203"
     }
   ],
   "notes": {
@@ -107,7 +115,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

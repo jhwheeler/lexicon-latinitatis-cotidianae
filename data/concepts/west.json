@@ -5,7 +5,8 @@
   "also": [
     "western",
     "westerly",
-    "in the west"
+    "in the west",
+    "to the west"
   ],
   "domain": "vectura",
   "terms": [
@@ -13,7 +14,10 @@
       "latin": "occidēns, occidentis m.",
       "status": "recommended",
       "period": "classical",
-      "gloss": "the west"
+      "gloss": "the west",
+      "evidence": [
+        "Traupman 207"
+      ]
     },
     {
       "latin": "occidentālis, occidentāle",
@@ -23,9 +27,17 @@
       "grammar": "adjective, third declension",
       "evidence": [
         "Plin. NH 18.338: <span lang=\"la\">ab occidentālī latere septentriōnis</span> (Lewis &amp; Short)",
-        "Gell. 2.22.22: <span lang=\"la\">ventus</span> (Lewis &amp; Short)"
+        "Gell. 2.22.22: <span lang=\"la\">ventus</span> (Lewis &amp; Short)",
+        "Traupman 207"
       ],
       "comment": "Post-Augustan: Pliny, Gellius, the Vulgate (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ab occidente",
+      "english": "in the west",
+      "source": "Traupman 207"
     }
   ],
   "related": [
@@ -34,11 +46,12 @@
     "east"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/occidens\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: occidens</a> · <a href=\"https://logeion.uchicago.edu/occidentalis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: occidentalis</a>"
+    "<a href=\"https://logeion.uchicago.edu/occidens\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: occidens</a> · <a href=\"https://logeion.uchicago.edu/occidentalis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: occidentalis</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, cited by printed page; each phrase checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

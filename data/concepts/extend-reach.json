@@ -6,7 +6,9 @@
   "also": [
     "reach as far as",
     "stretch as far as",
-    "run as far as"
+    "run as far as",
+    "stretch",
+    "extend over"
   ],
   "domain": "verba",
   "terms": [
@@ -26,7 +28,8 @@
       "period": "classical",
       "gloss": "extend, stretch out (over an area)",
       "evidence": [
-        "Caes. BG 1.2.5: <span lang=\"la\">in lātitūdinem CLXXX patēbant</span>"
+        "Caes. BG 1.2.5: <span lang=\"la\">in lātitūdinem CLXXX patēbant</span>",
+        "Traupman 204"
       ]
     },
     {
@@ -35,7 +38,8 @@
       "period": "classical",
       "gloss": "stretch, extend (towards)",
       "evidence": [
-        "Traupman 201: <span lang=\"la\">Tenditne mōns Apennīnus ad merīdiānās regiōnēs Ītaliae?</span>"
+        "Traupman 201: <span lang=\"la\">Tenditne mōns Apennīnus ad merīdiānās regiōnēs Ītaliae?</span>",
+        "Traupman 204"
       ]
     }
   ],
@@ -54,6 +58,11 @@
       "latin": "Tenditne mōns Apennīnus ad merīdiānās regiōnēs Ītaliae?",
       "english": "Does the Apennine range extend to the southern regions of Italy?",
       "source": "Traupman 201"
+    },
+    {
+      "latin": "regiō tendit ab … ad …",
+      "english": "the region extends from … to …",
+      "source": "Traupman 204"
     }
   ],
   "related": [
@@ -69,7 +78,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

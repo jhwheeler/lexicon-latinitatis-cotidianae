@@ -1,0 +1,77 @@
+{
+  "id": "any-news",
+  "english": "any news?",
+  "pos": "phrase",
+  "also": [
+    "news",
+    "what’s new?",
+    "is there any news?",
+    "no other news",
+    "I’ll tell you when I have any news",
+    "if you have any news",
+    "nothing new"
+  ],
+  "domain": "sermo",
+  "terms": [
+    {
+      "latin": "Quid novī?",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "what’s new? any news?",
+      "grammar": "quid with the partitive genitive novī, “what of new?”",
+      "evidence": [
+        "Plin. Ep. 3.14.6: <span lang=\"la\">quid praetereā novī? Nihil</span> (Lewis &amp; Short s.v. <span lang=\"la\">subjungō</span>)",
+        "Traupman p. 104: is there any news?, <span lang=\"la\">num quid novī?</span>"
+      ],
+      "comment": "News in Latin is “something new”: <span lang=\"la\">aliquid novī</span>, <span lang=\"la\">nihil novī</span>, with the neuter genitive. The noun “news”, a report of events, is <span lang=\"la\">nūntius</span>."
+    },
+    {
+      "latin": "Numquid novī?",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "is there any news?",
+      "evidence": [
+        "Franmorarius, <span lang=\"la\">Dē variīs fōrmulīs</span> XXV.2 (loci collection; not classical)",
+        "Erasmus, <span lang=\"la\">Colloquia</span>, <span lang=\"la\">Nova rogandī</span> (loci collection)",
+        "Traupman p. 104: is there any news?, <span lang=\"la\">num quid novī?</span>"
+      ],
+      "comment": "<span lang=\"la\">Numquid</span> expects the answer no or leaves it open: “there isn’t any news, is there?”"
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nihil novī ad nōs adferēbātur",
+      "english": "no news was reaching us",
+      "source": "Cic. Fam. 2.14 (Lewis &amp; Short s.v. <span lang=\"la\">afferō</span>)"
+    },
+    {
+      "latin": "Sī quid forte novī habēs dē eā rē …",
+      "english": "If you happen to have any news about it …",
+      "source": "Traupman p. 104"
+    },
+    {
+      "latin": "Narrābō, cum aliquid habēbō novī.",
+      "english": "I’ll tell you when I have any news.",
+      "source": "Traupman p. 104"
+    },
+    {
+      "latin": "Nihil praetereā novī.",
+      "english": "No other news.",
+      "source": "Traupman p. 104"
+    }
+  ],
+  "related": [
+    "newspaper"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/novus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: novus</a> · <a href=\"https://logeion.uchicago.edu/nuntius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nuntius</a>",
+    "Loci collections (loci-franmorarius, loci-erasmus), checked against the transcriptions named there; these authors are not classical.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 104, each phrase checked against the searchable text of the book.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-12",
+    "by": "Claude"
+  }
+}

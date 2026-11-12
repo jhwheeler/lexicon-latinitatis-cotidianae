@@ -9,7 +9,11 @@
     "rubbish!",
     "trash (nonsense)",
     "baloney!",
-    "stuff and nonsense"
+    "stuff and nonsense",
+    "cut out the nonsense",
+    "that’s a lot of nonsense",
+    "you are talking nonsense",
+    "stop talking nonsense"
   ],
   "domain": "sermo",
   "terms": [
@@ -51,6 +55,26 @@
         "Traupman 93"
       ],
       "comment": "Literally “stories!”"
+    },
+    {
+      "latin": "nūgās garrīre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "talk nonsense",
+      "evidence": [
+        "Plaut. Curc. 5.2.6: <span lang=\"la\">Nūgās garrīs. — Soleō.</span> (Lewis &amp; Short s.v. <span lang=\"la\">soleō</span>)",
+        "Traupman p. 104: you are talking nonsense, <span lang=\"la\">nūgās garrīs</span>"
+      ]
+    },
+    {
+      "latin": "Omitte nūgās!",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "cut out the nonsense!",
+      "evidence": [
+        "Traupman p. 104: cut out the nonsense, <span lang=\"la\">omitte nūgās</span>"
+      ],
+      "comment": "Traupman’s phrase, built like Plautus’ <span lang=\"la\">aufer nūgās</span> (above), which says the same thing in attested words."
     }
   ],
   "related": [
@@ -63,12 +87,25 @@
     "<a href=\"https://logeion.uchicago.edu/quisquiliae\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quisquiliae</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 100, checked against the searchable text and the page image (12 November 2026).",
     "<a href=\"https://logeion.uchicago.edu/fabula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fabula</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 93, checked against the searchable text and the page images of the book."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 93, checked against the searchable text and the page images of the book.",
+    "<a href=\"https://logeion.uchicago.edu/nugae\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nugae</a> · <a href=\"https://logeion.uchicago.edu/garrio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: garrio</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-12",
     "by": "Claude"
   },
-  "phrases": []
+  "phrases": [
+    {
+      "latin": "Nūgās garrīs. — Soleō.",
+      "english": "You’re talking nonsense. — I usually do.",
+      "source": "Plaut. Curc. 5.2.6 (Lewis &amp; Short s.v. <span lang=\"la\">soleō</span>)"
+    },
+    {
+      "latin": "Nūgae sunt istae magnae.",
+      "english": "That’s a lot of nonsense.",
+      "source": "Traupman p. 104"
+    }
+  ]
 }

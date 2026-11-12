@@ -4,7 +4,11 @@
   "pos": "phrase",
   "also": [
     "have some more",
-    "enough"
+    "enough",
+    "no, thanks",
+    "thanks, but no",
+    "it was nice of you to invite me, but no thank you",
+    "thanks for the invitation"
   ],
   "domain": "culina",
   "terms": [
@@ -13,7 +17,24 @@
       "status": "recommended",
       "period": "classical",
       "grammar": "adverb",
-      "comment": "Here <strong lang=\"la\">benignē</strong> is a polite refusal."
+      "comment": "Here <strong lang=\"la\">benignē</strong> is a polite refusal.",
+      "evidence": [
+        "Traupman p. 104: no, thanks, <span lang=\"la\">benignē</span>"
+      ]
+    },
+    {
+      "latin": "Bene vocās, tam grātia est.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "kind of you to invite me, but no thank you",
+      "grammar": "bene vocās, “you invite kindly”; tam grātia est, “I am just as grateful (as if I accepted)”",
+      "register": "vōx sermōnis cotīdiānī: Plaut., Ter.",
+      "evidence": [
+        "Plaut. Men. 2.3.36: <span lang=\"la\">bene vocās: tam grātia est</span> (Lewis &amp; Short s.v. <span lang=\"la\">tam</span>)",
+        "Traupman p. 104: it was nice of you to invite me, but no, thank you, <span lang=\"la\">bene vocās, sed tam grātia est</span>",
+        "Traupman p. 104: no, thanks, <span lang=\"la\">tam grātia est; benignē</span>"
+      ],
+      "comment": "Lewis &amp; Short explains <span lang=\"la\">tam grātia est</span> as “I do not accept, but I thank you as much as if I did”. On its own, <span lang=\"la\">benignē</span> declines in the same way."
     }
   ],
   "phrases": [
@@ -33,11 +54,13 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/benigne\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: benigne</a> · <a href=\"https://logeion.uchicago.edu/vescor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vescor</a>",
-    "These are quotations, and their sources are given. Libellī II and IV and the back-matter lists of “<span lang=\"la\">locī memoriā tenendī</span>” suggest when to use them with Theo."
+    "These are quotations, and their sources are given. Libellī II and IV and the back-matter lists of “<span lang=\"la\">locī memoriā tenendī</span>” suggest when to use them with Theo.",
+    "<a href=\"https://logeion.uchicago.edu/tam\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tam</a> · <a href=\"https://logeion.uchicago.edu/benigne\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: benigne</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

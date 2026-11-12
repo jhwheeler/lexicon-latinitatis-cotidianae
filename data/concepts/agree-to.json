@@ -13,7 +13,10 @@
     "OK then",
     "okay then",
     "alright",
-    "alright then"
+    "alright then",
+    "I have no objection",
+    "no objection",
+    "fine by me"
   ],
   "domain": "verba",
   "terms": [
@@ -79,6 +82,19 @@
         "Cic. Fam. 7.18.4: <span lang=\"la\">vērum illud estō</span>"
       ],
       "comment": "Grants a point, often before a “but”."
+    },
+    {
+      "latin": "per mē licet",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "I have no objection, as far as I’m concerned it’s allowed",
+      "grammar": "per with the person who allows it, and licet",
+      "evidence": [
+        "Cic. Tusc. 4.21: <span lang=\"la\">digladientur illī, per mē licet</span> (Lewis &amp; Short s.v. <span lang=\"la\">digladior</span>)",
+        "Caecil. in Cic. Cael. 37: <span lang=\"la\">dīde, dīsice, per mē licet</span> (Lewis &amp; Short s.v. disicio)",
+        "Traupman p. 105: I have no objection, <span lang=\"la\">per mē licet</span>"
+      ],
+      "comment": "“It is allowed as far as I am concerned”: often with a shrug, “let them, for all I care”."
     }
   ],
   "phrases": [
@@ -114,11 +130,13 @@
     "Quotations from the Latinitas loci collections (loci-terentius, loci-plautus), checked against the editions named there.",
     "Quotations of Plautus (Leo, 1896; cited by his lines) and Cicero’s <em>De oratore</em> (Wilkins) that are not in the loci collections were checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
     "<a href=\"https://logeion.uchicago.edu/licet\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: licet</a> · <a href=\"https://logeion.uchicago.edu/sum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sum</a>",
-    "Plautus, Terence and Cicero’s letters checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (Plautus ed. Leo, with its line numbers; Terence ed. Parry, whose line numbers can run one off the OCT’s; lines taken from the loci collections are cited by the OCT’s; Cicero’s letters ed. Purser)."
+    "Plautus, Terence and Cicero’s letters checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (Plautus ed. Leo, with its line numbers; Terence ed. Parry, whose line numbers can run one off the OCT’s; lines taken from the loci collections are cited by the OCT’s; Cicero’s letters ed. Purser).",
+    "<a href=\"https://logeion.uchicago.edu/licet\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: licet</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

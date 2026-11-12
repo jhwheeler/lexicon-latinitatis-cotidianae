@@ -21,6 +21,16 @@
         "Traupman 165"
       ],
       "comment": "<span lang=\"la\">coctilis</span> has a short i (Lewis &amp; Short <span lang=\"la\">coctĭlis</span>)."
+    },
+    {
+      "latin": "laterīcius, laterīcia, laterīcium",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "made of brick",
+      "evidence": [
+        "Caes. BC 2.10: <span lang=\"la\">turris latericia</span> (Lewis &amp; Short)",
+        "Traupman 165"
+      ]
     }
   ],
   "phrases": [
@@ -28,6 +38,11 @@
       "latin": "Laterēs struunt.",
       "english": "They are laying bricks.",
       "source": "composed"
+    },
+    {
+      "latin": "laterēs struere",
+      "english": "to lay bricks",
+      "source": "Traupman 165"
     }
   ],
   "related": [
@@ -40,14 +55,22 @@
   "sources": [
     "<a href=\"https://www.alatius.com/ls/index.php?l=later\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: later</a> · <a href=\"https://www.alatius.com/ls/index.php?l=coctilis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: coctilis</a>",
     "<a href=\"https://www.bolchazy.com/product/conversational-latin-for-oral-proficiency-4th-edition-p3388/\" rel=\"noopener noreferrer\" target=\"_blank\">John C. Traupman, <em>Conversational Latin for Oral Proficiency</em></a>, p. 165.",
-    "The example sentence marked “composed” is ours."
+    "The example sentence marked “composed” is ours.",
+    "<a href=\"https://logeion.uchicago.edu/latericius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: latericius</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "replaces": [
     "entry-150"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "bricks",
+    "baked brick",
+    "lay bricks",
+    "made of brick"
+  ]
 }

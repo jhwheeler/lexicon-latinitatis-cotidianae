@@ -8,7 +8,15 @@
     "put forward",
     "make a proposal",
     "propose a motion",
-    "propose a law"
+    "propose a law",
+    "motion",
+    "make a motion",
+    "approve a motion",
+    "oppose a motion",
+    "on my motion",
+    "bill (a law)",
+    "decide (of the senate)",
+    "vote (of a senator)"
   ],
   "domain": "verba",
   "also_under": [
@@ -43,7 +51,8 @@
       "period": "classical",
       "gloss": "propose, move (in a meeting)",
       "evidence": [
-        "Cic. Phil. 1.16: <span lang=\"la\">prīmum igitur ācta Caesaris servanda cēnseō</span>"
+        "Cic. Phil. 1.16: <span lang=\"la\">prīmum igitur ācta Caesaris servanda cēnseō</span>",
+        "Traupman 179, 181"
       ],
       "comment": "A senator’s word when asked his view: “I move that …”, with a gerundive or an accusative and infinitive."
     },
@@ -53,7 +62,8 @@
       "period": "classical",
       "gloss": "a bill, a law proposed to the people",
       "evidence": [
-        "Cic. Balb. 33 (Lewis &amp; Short)"
+        "Cic. Balb. 33 (Lewis &amp; Short)",
+        "Traupman 178"
       ]
     },
     {
@@ -62,7 +72,8 @@
       "period": "classical",
       "gloss": "a motion (in a meeting); a view put forward",
       "evidence": [
-        "Traupman 178: <span lang=\"la\">Quis in Crassī sententiam īvit?</span>, Who supported Crassus’ proposal?"
+        "Traupman 178: <span lang=\"la\">Quis in Crassī sententiam īvit?</span>, Who supported Crassus’ proposal?",
+        "Traupman 179"
       ]
     }
   ],
@@ -76,6 +87,26 @@
       "latin": "prīmum igitur ācta Caesaris servanda cēnseō",
       "english": "first, then, I move that Caesar’s acts be upheld",
       "source": "Cic. Phil. 1.16"
+    },
+    {
+      "latin": "mē referente",
+      "english": "on my motion",
+      "source": "Traupman 179"
+    },
+    {
+      "latin": "sententiam comprobāre",
+      "english": "to approve a motion",
+      "source": "Traupman 179"
+    },
+    {
+      "latin": "sententiae obsistere",
+      "english": "to oppose a motion",
+      "source": "Traupman 179"
+    },
+    {
+      "latin": "referre dē aliquā rē",
+      "english": "to make a motion about something (to put it before the senate)",
+      "source": "Traupman 179"
     }
   ],
   "related": [
@@ -90,7 +121,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

@@ -7,7 +7,11 @@
     "public office",
     "hold office",
     "run for office",
-    "magistracy"
+    "magistracy",
+    "gain an office",
+    "leave office",
+    "term of office",
+    "hold an office"
   ],
   "domain": "res-publica",
   "terms": [
@@ -31,7 +35,7 @@
       "evidence": [
         "Cic. Verr. 2.5.35: <span lang=\"la\">ut mihi illum honōrem tum nōn sōlum datum, sed etiam crēditum et commissum putārem</span>",
         "Hor. S. 1.6.15–16",
-        "Traupman 175, 353"
+        "Traupman 175, 179, 353"
       ],
       "comment": "The office as an honour the people confers; in the plural the offices of a public career. Cicero writes <span lang=\"la\">honōs</span>, later authors <span lang=\"la\">honor</span> (Lewis &amp; Short)."
     }
@@ -51,6 +55,21 @@
       "latin": "Quōs honōrēs gessistī?",
       "english": "What offices have you held?",
       "source": "Traupman 175"
+    },
+    {
+      "latin": "magistrātum adsequī",
+      "english": "to gain an office",
+      "source": "Traupman 179"
+    },
+    {
+      "latin": "magistrātū abīre",
+      "english": "to leave office",
+      "source": "Traupman 179"
+    },
+    {
+      "latin": "spatium temporis potestātis",
+      "english": "term of office",
+      "source": "Traupman 180"
     }
   ],
   "related": [
@@ -66,7 +85,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

@@ -10,7 +10,8 @@
     "go to meet",
     "meet someone off the train",
     "encounter",
-    "come upon"
+    "come upon",
+    "run into someone on the street"
   ],
   "domain": "verba",
   "terms": [
@@ -47,6 +48,18 @@
         "Cic. Fam. 14.5.1: <span lang=\"la\">obviam nōbīs prōdeās</span>",
         "M-O s.v. meet, pick up: <span lang=\"la\">obviam īre</span>"
       ]
+    },
+    {
+      "latin": "offendō, offendere, offendī, offēnsum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "come upon, run into, find (someone)",
+      "grammar": "verb, third conjugation, transitive",
+      "evidence": [
+        "Ter. Eun. 5.8.34: <span lang=\"la\">sī tē in plateā offenderō hāc post umquam, periistī</span> (Lewis &amp; Short s.v. <span lang=\"la\">offendō</span>)",
+        "Traupman p. 107: run into s.o. on the street, <span lang=\"la\">aliquem offendō in plateā</span>"
+      ],
+      "comment": "To hit upon someone, often unexpectedly: <span lang=\"la\">domī nōn offendissem</span>, I wouldn’t have found him at home (Ter. Eun. 4.4.5, Lewis &amp; Short)."
     }
   ],
   "phrases": [
@@ -77,11 +90,13 @@
     "Cicero’s letters checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
     "Quotations from the Latinitas loci collections (loci-phaedrus, loci-cicero-epistulae), checked against the editions named there.",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: pp. 94, 284, checked against the searchable text of the book (9 November 2026).",
-    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. meet, pick up."
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. meet, pick up.",
+    "<a href=\"https://logeion.uchicago.edu/offendo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: offendo</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

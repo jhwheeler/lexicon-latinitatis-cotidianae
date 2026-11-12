@@ -6,7 +6,8 @@
     "good",
     "good boy",
     "badly behaved",
-    "manners"
+    "manners",
+    "that’s the right spirit"
   ],
   "domain": "sermo",
   "terms": [
@@ -29,6 +30,20 @@
       "evidence": [
         "Traupman 154, 159"
       ]
+    },
+    {
+      "latin": "frūgī bonae",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "good, decent, worth something",
+      "grammar": "indeclinable: frūgī, the dative of frux, with bonae",
+      "register": "vōx cōmica: Plaut.",
+      "evidence": [
+        "Plaut. Trin. 2.2.40: <span lang=\"la\">nec probus est nec frūgī bonae</span> (Lewis &amp; Short)",
+        "Plaut. Ps. 1.5.51: <span lang=\"la\">tamen erō frūgī bonae</span> (Lewis &amp; Short)",
+        "Traupman p. 108"
+      ],
+      "comment": "The full old phrase behind <span lang=\"la\">frūgī</span>: literally “of good use”."
     }
   ],
   "phrases": [
@@ -41,6 +56,11 @@
       "latin": "Frūgī es: omnia tua reposuistī.",
       "english": "Good boy: you’ve put all your things away.",
       "source": "composed"
+    },
+    {
+      "latin": "Nunc tū frūgī bonae es.",
+      "english": "That’s the right spirit now.",
+      "source": "Traupman p. 108"
     }
   ],
   "related": [
@@ -53,11 +73,14 @@
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): pp. 99, 154, 159.",
     "Terence and Horace from the Latinitas loci collections.",
     "The example sentences marked “composed” are ours.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 99, checked against the searchable text and the page image (12 November 2026)."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 99, checked against the searchable text and the page image (12 November 2026).",
+    "<a href=\"https://logeion.uchicago.edu/frux\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: frux</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 108."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

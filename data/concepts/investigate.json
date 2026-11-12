@@ -8,7 +8,8 @@
     "inquire into",
     "look into",
     "hold an inquiry",
-    "investigator"
+    "investigator",
+    "track down"
   ],
   "domain": "res-publica",
   "also_under": [
@@ -44,6 +45,17 @@
       "period": "classical",
       "gloss": "search into, look into",
       "comment": "To search into a matter; in the courts, of a prosecutor gathering evidence against someone (<span lang=\"la\">in aliquem</span>)."
+    },
+    {
+      "latin": "indāgō, indāgāre, indāgāvī, indāgātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "track down, trace (as a hound tracks)",
+      "evidence": [
+        "Cic. Fin. 2.40: <span lang=\"la\">ad indāgandum canem</span> (Lewis &amp; Short s.v. <span lang=\"la\">ad</span>)",
+        "Cic. Tusc. 5.64: <span lang=\"la\">indāgāvī sepulcrum</span>",
+        "Traupman p. 110"
+      ]
     }
   ],
   "phrases": [
@@ -64,11 +76,15 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/quaero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quaero</a> · <a href=\"https://logeion.uchicago.edu/investigo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: investigo</a> · <a href=\"https://logeion.uchicago.edu/inquiro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: inquiro</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 195, 334, checked against the searchable text of the book (11 November 2026).",
-    "The example sentences marked “composed” are ours."
+    "The example sentences marked “composed” are ours.",
+    "<a href=\"https://logeion.uchicago.edu/indago\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: indago</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "Quotations from the Latinitas loci collections, checked against the editions named there.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 110."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

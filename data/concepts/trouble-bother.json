@@ -14,7 +14,8 @@
     "nuisance",
     "be a nuisance",
     "stop bothering me!",
-    "inconvenience"
+    "inconvenience",
+    "if it is no trouble"
   ],
   "also_under": [
     "sermo"
@@ -54,6 +55,17 @@
         "Cic. Acad. 1.14: <span lang=\"la\">renovārī ā tē, nisi molestum est, velim</span>"
       ],
       "comment": "Also <span lang=\"la\">ubi molestum nōn erit</span>, when it’s no trouble (Ter. Eun. 483); Traupman (p. 110) gives <span lang=\"la\">sī grave nōn erit</span>. Without any trouble: <span lang=\"la\">nūllō negōtiō</span> (see problem)."
+    },
+    {
+      "latin": "sī (tibi) grave nōn erit",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "if it is no trouble (to you)",
+      "evidence": [
+        "Cic. Fam. 13.73.2: <span lang=\"la\">velim, sī tibi grave nōn erit, mē certiōrem faciās</span> (Lewis &amp; Short s.v. <span lang=\"la\">gravis</span>)",
+        "Traupman p. 110"
+      ],
+      "comment": "Literally “if it will not be heavy for you”: Cicero’s way of putting a request in a letter."
     }
   ],
   "phrases": [
@@ -81,11 +93,14 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/molestia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: molestia</a> · <a href=\"https://logeion.uchicago.edu/molestus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: molestus</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 110, 398, checked against the searchable text of the book (9 November 2026).",
-    "Cicero, <em>De re publica</em> 1, <em>Academica</em> 1 and the letters (Purser); Plautus, <em>Menaechmi</em> and <em>Mostellaria</em> (Leo, cited by his lines); Terence, <em>Eunuchus</em>, checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> and the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+    "Cicero, <em>De re publica</em> 1, <em>Academica</em> 1 and the letters (Purser); Plautus, <em>Menaechmi</em> and <em>Mostellaria</em> (Leo, cited by his lines); Terence, <em>Eunuchus</em>, checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> and the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026).",
+    "<a href=\"https://logeion.uchicago.edu/gravis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gravis</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 110."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

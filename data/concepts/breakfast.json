@@ -13,6 +13,10 @@
       "period": "classical",
       "notes": [
         "short-e"
+      ],
+      "evidence": [
+        "Suet. Vit. 13 (Lewis &amp; Short)",
+        "Traupman 36, 38"
       ]
     }
   ],
@@ -26,6 +30,11 @@
       "latin": "Jentāculum parō.",
       "english": "I’m making breakfast.",
       "source": "composed"
+    },
+    {
+      "latin": "Jentāculum est parātum.",
+      "english": "Breakfast is ready.",
+      "source": "Traupman 36"
     }
   ],
   "related": [
@@ -37,7 +46,10 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/jentaculum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: jentaculum</a> · <a href=\"https://www.alatius.com/latin/bennetthidden.html\" rel=\"noopener noreferrer\" target=\"_blank\">Bennett: hidden quantities, with later corrections</a>",
     "The example sentences marked “composed” are ours.",
-    "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>"
+    "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>",
+    "<a href=\"https://logeion.uchicago.edu/jentaculum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: jentaculum</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 36, 38, each phrase checked against the searchable text of the book.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "notes": {
     "short-e": {
@@ -53,7 +65,10 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "breakfast is ready"
+  ]
 }

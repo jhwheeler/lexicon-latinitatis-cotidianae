@@ -10,8 +10,20 @@
       "status": "recommended",
       "period": "classical",
       "evidence": [
-        "Traupman 38"
+        "Traupman 38",
+        "Traupman 36"
       ]
+    },
+    {
+      "latin": "mundāre",
+      "status": "alternative",
+      "period": "post-classical",
+      "gloss": "clean",
+      "evidence": [
+        "Plin. NH 33.103; Col. 12.3: <span lang=\"la\">praesēpia mundanda cūrāre</span> (Lewis &amp; Short)",
+        "Traupman 38: clean, <span lang=\"la\">mundāre</span>"
+      ],
+      "comment": "Lewis &amp; Short: post-Augustan, and later the word of Church Latin for cleansing; <span lang=\"la\">pūrgāre</span> is the classical word."
     }
   ],
   "related": [
@@ -21,11 +33,24 @@
   ],
   "sources": [
     "<a href=\"https://logeion.org/purgo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: purgo</a>",
-    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. clean house, clean up, tidy up, broom: dustpan, garbage, trash, garbage can, waste basket. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): pp. 38, 39, 290, 292, 307, 320, 401, 404."
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. clean house, clean up, tidy up, broom: dustpan, garbage, trash, garbage can, waste basket. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): pp. 38, 39, 290, 292, 307, 320, 401, 404.",
+    "<a href=\"https://logeion.uchicago.edu/mundo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mundo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 36, 38, each phrase checked against the searchable text of the book.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "clean the kitchen"
+  ],
+  "phrases": [
+    {
+      "latin": "culīnam mundandam cūrāre",
+      "english": "to have the kitchen cleaned out",
+      "source": "Traupman 38"
+    }
+  ]
 }

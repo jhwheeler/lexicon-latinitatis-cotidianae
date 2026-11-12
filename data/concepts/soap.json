@@ -10,7 +10,21 @@
     {
       "latin": "sāpō, sāpōnis m.",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "evidence": [
+        "Plin. NH 28.191 (Lewis &amp; Short)",
+        "Traupman 38"
+      ]
+    },
+    {
+      "latin": "sāpōnis quadrula",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "a bar of soap",
+      "evidence": [
+        "Traupman 38: bar of soap, <span lang=\"la\">sāpōnis quadrula</span>"
+      ],
+      "comment": "“A little square of soap”; <span lang=\"la\">quadrula</span> is post-classical (Solinus)."
     }
   ],
   "phrases": [
@@ -31,14 +45,21 @@
     "<a href=\"https://alatius.com/ls/index.php?l=sapo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sapo</a>",
     "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>",
     "<a href=\"https://logeion.uchicago.edu/sapo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sapo</a>",
-    "The example sentence marked “composed” is ours."
+    "The example sentence marked “composed” is ours.",
+    "<a href=\"https://logeion.uchicago.edu/sapo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sapo</a> · <a href=\"https://logeion.uchicago.edu/quadrula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quadrula</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 38, each phrase checked against the searchable text of the book.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "replaces": [
     "entry-64"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "bar of soap",
+    "a bar of soap"
+  ]
 }

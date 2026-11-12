@@ -1,0 +1,68 @@
+{
+  "id": "witch",
+  "english": "witch",
+  "pos": "noun",
+  "also": [
+    "witches",
+    "sorceress",
+    "hag"
+  ],
+  "domain": "sermo",
+  "terms": [
+    {
+      "latin": "sāga, sāgae f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a witch, a wise woman, fortune-teller",
+      "evidence": [
+        "Hor. C. 1.27.21 (Lewis &amp; Short s.v. <span lang=\"la\">sāgus</span>)",
+        "Cic. Div. 2.129: <span lang=\"la\">sāgārum superstitiōne</span>",
+        "Traupman 408"
+      ]
+    },
+    {
+      "latin": "strīga, strīgae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a hag, a witch who harms children",
+      "register": "vōx sermōnis cotīdiānī: Petr.",
+      "evidence": [
+        "Petr. 63 (Lewis &amp; Short)",
+        "Traupman 408"
+      ],
+      "comment": "From <span lang=\"la\">strix</span>, the screech-owl believed to suck children’s blood. Traupman writes <span lang=\"la\">striga</span>; Lewis &amp; Short has a long ī in this word, <span lang=\"la\">strīga</span>."
+    },
+    {
+      "latin": "sagana, saganae f.",
+      "status": "avoid",
+      "period": "classical",
+      "gloss": "a witch",
+      "evidence": [
+        "Traupman 408"
+      ],
+      "comment": "In Horace (Epod. 5.25, S. 1.8.25) Sagana is the name of one witch; Lewis &amp; Short says it occurs only as a proper name, so use <span lang=\"la\">sāga</span> for the common noun."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Strīgae strīdent.",
+      "english": "The witches are howling.",
+      "source": "Traupman 408"
+    }
+  ],
+  "related": [
+    "magic",
+    "vampire"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/sagus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sagus</a>",
+    "<a href=\"https://logeion.uchicago.edu/striga\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: striga</a>",
+    "<a href=\"https://logeion.uchicago.edu/sagana\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sagana</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 408."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-12",
+    "by": "Claude"
+  }
+}

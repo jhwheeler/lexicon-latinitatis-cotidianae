@@ -8,7 +8,11 @@
     "school test",
     "quiz",
     "take an exam",
-    "pass an exam"
+    "pass an exam",
+    "examine",
+    "flunk a test",
+    "fail a test",
+    "pass a test"
   ],
   "domain": "schola",
   "terms": [
@@ -20,7 +24,9 @@
       "evidence": [
         "Cic. Off. 1.144: <span lang=\"la\">in athlētārum probātiōne</span>",
         "Traupman 26, 27, 32",
-        "M-O s.v. test, quiz"
+        "M-O s.v. test, quiz",
+        "Traupman 29: <span lang=\"la\">cadere in probātiōne</span>, to flunk a test",
+        "Traupman 30: <span lang=\"la\">probātiōnem sustinēre</span>, to pass a test"
       ],
       "comment": "Classically a trial or inspection, of athletes or recruits; Traupman’s word for a test. To pass a test is <span lang=\"la\">probātiōnem sustinēre</span>, to fail it <span lang=\"la\">in probātiōne cadere</span> (Traupman 29, 30; see fail); to study for one, <span lang=\"la\">ad probātiōnem sē parāre</span> (Morgan–Owens)."
     },
@@ -55,6 +61,26 @@
         "M-O s.v. test, quiz"
       ],
       "comment": "A proof or trial, mostly after Augustus (Quint. 2.5.15, Lewis &amp; Short); Levi and Bini’s word for a school exam."
+    },
+    {
+      "latin": "exāminō, exāmināre, exāmināvī, exāminātum",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "examine, test",
+      "evidence": [
+        "Traupman 29"
+      ],
+      "comment": "Classically “to weigh”, of scales and of thought (Cic. Tusc. 1.43, Lewis &amp; Short); of testing pupils it is modern."
+    },
+    {
+      "latin": "quaestiuncula, quaestiunculae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a little question; a quiz",
+      "evidence": [
+        "Cic. de Or. 1.102: <span lang=\"la\">quaestiunculam alicui pōnere</span> (Lewis &amp; Short)",
+        "Traupman 31, for “quiz”"
+      ]
     }
   ],
   "phrases": [
@@ -78,15 +104,17 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/probatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: probatio</a> · <a href=\"https://logeion.uchicago.edu/examen\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: examen</a> · <a href=\"https://logeion.uchicago.edu/periculum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: periculum</a> · <a href=\"https://logeion.uchicago.edu/experimentum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: experimentum</a>",
+    "<a href=\"https://logeion.uchicago.edu/quaestiuncula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quaestiuncula</a>",
+    "<a href=\"https://logeion.uchicago.edu/examino\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: examino</a>",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. test, quiz; test: exam, examination; fail; pass.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 26, 27, 29, 30, 32, checked against the searchable text of the book (9 November 2026).",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 26, 27, 29, 30, 32, 31, checked against the searchable text of the book (9 November 2026).",
     "Enrico Levi and Arturo Bini, <em>Il latino come lingua viva</em> (1937), p. 271.",
     "Terence (Parry’s numbering corrected to the OCT, as in loci-terentius) and Cicero’s <em>De officiis</em> checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
     "The example sentence marked “composed” is ours."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

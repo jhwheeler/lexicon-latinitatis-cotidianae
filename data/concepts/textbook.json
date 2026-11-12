@@ -1,0 +1,46 @@
+{
+  "id": "textbook",
+  "english": "textbook",
+  "pos": "noun",
+  "also": [
+    "school book",
+    "coursebook",
+    "handbook"
+  ],
+  "domain": "schola",
+  "terms": [
+    {
+      "latin": "liber scholāris",
+      "status": "recommended",
+      "period": "modern",
+      "evidence": [
+        "Traupman 32"
+      ],
+      "comment": "A plain description: a book for school."
+    },
+    {
+      "latin": "ars, artis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a handbook of an art; a treatise",
+      "evidence": [
+        "Cic. Fin. 4.5: <span lang=\"la\">nōn sōlum praecepta in artibus</span> (Lewis &amp; Short)",
+        "Traupman 32"
+      ],
+      "comment": "A book that sets out the rules of an art, rhetoric and later grammar (Lewis &amp; Short)."
+    }
+  ],
+  "related": [
+    "book",
+    "exercise-book"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/ars\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ars</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 32, checked against the searchable text of the book."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-12",
+    "by": "Claude"
+  }
+}

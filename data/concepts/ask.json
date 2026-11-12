@@ -11,7 +11,10 @@
       "latin": "quaerō, quaerere, quaesīvī, quaesītum",
       "status": "recommended",
       "period": "classical",
-      "gloss": "seek or ask"
+      "gloss": "seek or ask",
+      "evidence": [
+        "Traupman 28: <span lang=\"la\">pauca quaerere</span>, to ask a few questions"
+      ]
     },
     {
       "latin": "rogō, rogāre, rogāvī, rogātum",
@@ -21,9 +24,21 @@
       "grammar": "verb, first conjugation; aliquem aliquid rogāre, the person and the thing both in the accusative",
       "evidence": [
         "Plaut. Most. 5.1.70: <span lang=\"la\">aliud tē rogō</span> (Lewis &amp; Short)",
-        "Traupman 93"
+        "Traupman 93",
+        "Traupman 28: <span lang=\"la\">aliquem aliquid rogāre</span>, to ask someone something; <span lang=\"la\">ab aliquō aliquid rogāre</span>, to ask someone for something; <span lang=\"la\">dē aliquō rogāre</span>, to ask about"
       ],
       "comment": "Classically the thing asked stands in the accusative beside the person only when it is a neuter pronoun or adjective (<span lang=\"la\">hoc tē rogō</span>); otherwise <span lang=\"la\">rogāre aliquem dē aliquā rē</span> (Lewis &amp; Short). <span lang=\"la\">Quaerere ā (ex, dē) aliquō</span> is to ask someone, enquire of him."
+    },
+    {
+      "latin": "interrogō, interrogāre, interrogāvī, interrogātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "ask (a person) a question, question",
+      "grammar": "verb, first conjugation, with the person in the accusative",
+      "evidence": [
+        "Plaut. (Lewis &amp; Short): <span lang=\"la\">hoc quod tē interrogō, respondē</span>",
+        "Traupman 28: <span lang=\"la\">docentem (discentem) interrogāre</span>, to ask the teacher (student) a question"
+      ]
     }
   ],
   "related": [
@@ -32,8 +47,9 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/quaero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quaero</a>",
+    "<a href=\"https://logeion.uchicago.edu/interrogo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: interrogo</a>",
     "<a href=\"https://logeion.uchicago.edu/rogo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: rogo</a> · <a href=\"https://logeion.uchicago.edu/quaero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quaero</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 93, checked against the searchable text and the page images of the book.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 93, 28, checked against the searchable text and the page images of the book.",
     "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
@@ -48,7 +64,10 @@
     "I want to ask you this",
     "ask someone for something",
     "why do you ask me that?",
-    "that’s not what I’m asking"
+    "that’s not what I’m asking",
+    "ask someone something",
+    "ask for something",
+    "ask about"
   ],
   "phrases": [
     {

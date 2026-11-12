@@ -8,6 +8,18 @@
       "latin": "addō, addere",
       "status": "recommended",
       "period": "classical"
+    },
+    {
+      "latin": "adjiciō, adjicere, adjēcī, adjectum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "add to, put in besides",
+      "grammar": "verb, third conjugation (-iō): aliquid alicui reī or ad aliquid",
+      "evidence": [
+        "Hor. Ep. 2.2.43: <span lang=\"la\">adjēcēre bonae paulō plūs artis Athēnae</span> (Lewis &amp; Short s.v. <span lang=\"la\">adjiciō</span>)",
+        "Traupman 28"
+      ],
+      "comment": "“Throw to”: something added on top of what is there; <span lang=\"la\">addō</span> is the plain word."
     }
   ],
   "phrases": [
@@ -24,12 +36,14 @@
   ],
   "sources": [
     "<a href=\"https://alatius.com/ls/index.php?l=addo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: addo</a>",
+    "<a href=\"https://logeion.uchicago.edu/adicio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: adicio</a>",
     "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>",
-    "The example sentence marked “composed” is ours."
+    "The example sentence marked “composed” is ours.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 28, checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

@@ -4,7 +4,9 @@
   "pos": "noun",
   "also": [
     "schoolteacher",
-    "schoolmaster"
+    "schoolmaster",
+    "Latin teacher",
+    "instructor"
   ],
   "also_under": [
     "schola"
@@ -28,6 +30,28 @@
         "M-O s.v. teacher",
         "Cic."
       ]
+    },
+    {
+      "latin": "praeceptor, praeceptōris m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "instructor, teacher",
+      "evidence": [
+        "Plaut. Ps. 4.7.96: <span lang=\"la\">praeceptor tuus, quī tē hanc fallāciam docuit</span> (Lewis &amp; Short)",
+        "Traupman 30"
+      ],
+      "comment": "The one who gives rules (<span lang=\"la\">praecepta</span>): a teacher of an art or of conduct."
+    },
+    {
+      "latin": "docēns, docentis m./f.",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "a teacher (the one teaching)",
+      "grammar": "present participle of doceō used as a noun",
+      "evidence": [
+        "Traupman 28, 30"
+      ],
+      "comment": "Traupman’s word; Lewis &amp; Short do not list the participle as a noun, so <span lang=\"la\">magister</span> is the plain word."
     }
   ],
   "phrases": [
@@ -43,13 +67,15 @@
   ],
   "sources": [
     "<a href=\"https://logeion.org/magister\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: magister</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): pp. 32, 391.",
+    "<a href=\"https://logeion.uchicago.edu/doceo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: doceo</a>",
+    "<a href=\"https://logeion.uchicago.edu/praeceptor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praeceptor</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): pp. 32, 391, 30.",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. teacher.",
     "The example sentences marked “composed” are ours."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

@@ -5,7 +5,9 @@
   "also": [
     "erase",
     "remove (a file)",
-    "rub out"
+    "rub out",
+    "erasure",
+    "crossing-out"
   ],
   "domain": "computatra",
   "terms": [
@@ -29,6 +31,28 @@
         "M-O s.v. delete"
       ],
       "comment": "Classically to strike a name off a list by pricking dots against it (Lewis &amp; Short); Morgan–Owens cites a scholar of 1698 who struck out false entries from a dictionary."
+    },
+    {
+      "latin": "ērādō, ērādere, ērāsī, ērāsum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "scratch out, erase",
+      "evidence": [
+        "Tac. A. 4.42 (Lewis &amp; Short): <span lang=\"la\">aliquem albō ērādere</span>",
+        "Traupman 29"
+      ],
+      "comment": "Scraping writing off a tablet or a list; Lewis &amp; Short: ante-classical and from Augustus on."
+    },
+    {
+      "latin": "litūra, litūrae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "an erasure, a crossing-out",
+      "evidence": [
+        "Cic. Arch. 9: <span lang=\"la\">ūnīus nōminis litūra</span> (Lewis &amp; Short)",
+        "Traupman 29"
+      ],
+      "comment": "The smoothed wax where something written has been rubbed out."
     }
   ],
   "phrases": [
@@ -44,12 +68,14 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/deleo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: deleo</a> · <a href=\"https://logeion.uchicago.edu/expungo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: expungo</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 260, 302.",
+    "<a href=\"https://logeion.uchicago.edu/litura\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: litura</a>",
+    "<a href=\"https://logeion.uchicago.edu/erado\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: erado</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 260, 302, 29.",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. delete."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

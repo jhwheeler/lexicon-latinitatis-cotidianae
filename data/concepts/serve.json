@@ -10,6 +10,27 @@
       "status": "recommended",
       "period": "classical",
       "gloss": "serve at table"
+    },
+    {
+      "latin": "appōnō, appōnere, apposuī, appositum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "serve up, set food before someone",
+      "evidence": [
+        "Plaut. Trin. 2.4.69: <span lang=\"la\">adposita sit cēna</span> (Lewis &amp; Short)",
+        "Traupman 68, 73"
+      ],
+      "comment": "Lewis &amp; Short: “freq. as t. t. of food, dishes, to serve up, set before one”. <span lang=\"la\">Ministrāre</span> is to wait on the person; <span lang=\"la\">appōnere</span> is to put the dish on the table."
+    },
+    {
+      "latin": "serviō, servīre, servīvī, servītum",
+      "status": "avoid",
+      "period": "classical",
+      "gloss": "be a slave to (not “serve at table”)",
+      "evidence": [
+        "Traupman 68, 73"
+      ],
+      "comment": "Traupman gives <span lang=\"la\">servīre</span> for serving a person at table (<span lang=\"la\">Possumne tibi nunc servīre?</span>); classically it means to be a slave or to be devoted to someone (Lewis &amp; Short). A waiter <span lang=\"la\">ministrat</span>."
     }
   ],
   "related": [
@@ -17,11 +38,32 @@
     "restaurant"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/ministro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ministro</a>"
+    "<a href=\"https://logeion.uchicago.edu/ministro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ministro</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 67; pp. 68, 73.",
+    "<a href=\"https://logeion.uchicago.edu/appono\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: appono</a>",
+    "<a href=\"https://logeion.uchicago.edu/servio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: servio</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "Possumne tibi ministrāre?",
+      "english": "Can I help you?",
+      "source": "Traupman 67"
+    },
+    {
+      "latin": "Appōnam cibum quam prīmum.",
+      "english": "I’ll serve your meal as soon as I can.",
+      "source": "Traupman 68"
+    }
+  ],
+  "also": [
+    "can I help you?",
+    "wait on",
+    "serve (food)",
+    "serve up"
+  ]
 }

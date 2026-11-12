@@ -6,7 +6,12 @@
     "degrees of comparison",
     "positive degree",
     "positive (grammar)",
-    "comparison of adjectives"
+    "comparison of adjectives",
+    "comparative degree",
+    "superlative degree",
+    "comparative",
+    "superlative",
+    "in the comparative"
   ],
   "domain": "schola",
   "terms": [
@@ -19,6 +24,16 @@
         "Traupman 232, 246"
       ],
       "comment": "The positive is <span lang=\"la\">gradus positīvus</span>, the comparative <span lang=\"la\">comparātīvus</span>, the superlative <span lang=\"la\">superlātīvus</span> (Traupman 232, 246); the question is <span lang=\"la\">Cujus gradūs comparātiōnis est?</span> (244). <span lang=\"la\">gradus</span> and <span lang=\"la\">comparātiō</span> are classical, but we have not found the phrase in Lewis &amp; Short, nor <span lang=\"la\">positīvus</span> in this sense (Gellius uses it of words fixed by convention). Quintilian speaks of comparatives and superlatives as <span lang=\"la\">comparātiōnēs et superlātiōnēs</span> (1.5.45)."
+    },
+    {
+      "latin": "gradus, gradūs m.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a degree (of comparison)",
+      "evidence": [
+        "Traupman 294, 302"
+      ],
+      "comment": "<span lang=\"la\">gradus positīvus, comparātīvus, superlātīvus</span>, the positive, comparative and superlative degrees; “in the comparative” is <span lang=\"la\">in comparātiōne</span> or <span lang=\"la\">comparātīvē</span> (Traupman)."
     }
   ],
   "phrases": [
@@ -31,6 +46,26 @@
       "latin": "Cujus gradūs comparātiōnis est? — Positīvī.",
       "english": "What degree of comparison is it? — The positive.",
       "source": "Traupman 244"
+    },
+    {
+      "latin": "gradus positīvus",
+      "english": "the positive degree",
+      "source": "Traupman 302"
+    },
+    {
+      "latin": "gradus comparātīvus",
+      "english": "the comparative degree",
+      "source": "Traupman 294, 302"
+    },
+    {
+      "latin": "gradus superlātīvus",
+      "english": "the superlative degree",
+      "source": "Traupman 302"
+    },
+    {
+      "latin": "in comparātiōne",
+      "english": "in the comparative",
+      "source": "Traupman 294"
     }
   ],
   "related": [
@@ -42,11 +77,14 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/gradus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gradus</a> · <a href=\"https://logeion.uchicago.edu/comparatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: comparatio</a> · <a href=\"https://logeion.uchicago.edu/positivus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: positivus</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 232, p. 244, p. 246, p. 248."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 232, p. 244, p. 246, p. 248.",
+    "<a href=\"https://logeion.uchicago.edu/gradus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gradus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 294; p. 302."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "sense": "in grammar"
 }

@@ -18,7 +18,9 @@
     "take a vote",
     "the right to vote",
     "call for a vote",
-    "a vote was taken"
+    "a vote was taken",
+    "vote of confidence",
+    "vote for someone’s motion"
   ],
   "domain": "res-publica",
   "terms": [
@@ -43,7 +45,8 @@
       "grammar": "verb, first conjugation, deponent, with the dative",
       "evidence": [
         "Cic. Mur. 71 (Lewis &amp; Short)",
-        "Traupman 181: vote for"
+        "Traupman 181: vote for",
+        "Traupman 402"
       ],
       "comment": "Of voters and, by extension, of anyone who backs a person or a cause (Lewis &amp; Short)."
     },
@@ -89,6 +92,17 @@
       "evidence": [
         "Traupman 178"
       ]
+    },
+    {
+      "latin": "suffrāgātor, suffrāgātōris m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a voter, a supporter at an election",
+      "evidence": [
+        "Cic. Mur. 44: <span lang=\"la\">suffrāgātōrum comparātiō</span> (Lewis &amp; Short)",
+        "Traupman 403"
+      ],
+      "comment": "Classically one who votes for a candidate, a supporter; Traupman adds a feminine <span lang=\"la\">suffrāgātrīx</span>."
     }
   ],
   "phrases": [
@@ -116,6 +130,21 @@
       "latin": "discessiō facta est in ejus sententiam",
       "english": "a vote was taken on his motion",
       "source": "Traupman 181"
+    },
+    {
+      "latin": "suffrāgium ferre",
+      "english": "to vote, cast a vote",
+      "source": "Traupman 402"
+    },
+    {
+      "latin": "in alicūjus sententiam īre",
+      "english": "to vote for someone’s motion (of a senator)",
+      "source": "Liv. 23.10.4: <span lang=\"la\">omnēs in eam sententiam iērunt</span> (Lewis &amp; Short s.v. <span lang=\"la\">sententia</span>); Traupman 402"
+    },
+    {
+      "latin": "alicui calculum album ferre",
+      "english": "to give someone a vote of confidence",
+      "source": "Traupman 402"
     }
   ],
   "related": [
@@ -129,7 +158,8 @@
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: vote vb.; vote: ballot; vote: ballot-box.",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 178, 181, checked against the searchable text of the book (9 November 2026).",
     "Cicero (Fam. 11.27.7, Leg. 3.35 and 3.39, Sest. 74) and Pliny (Ep. 3.20.2) checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a>, with section numbers from the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
-    "<a href=\"https://logeion.uchicago.edu/cista\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cista</a>"
+    "<a href=\"https://logeion.uchicago.edu/cista\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cista</a>",
+    "<a href=\"https://logeion.uchicago.edu/suffragator\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: suffragator</a>"
   ],
   "review": {
     "status": "draft",

@@ -6,7 +6,14 @@
     "not guilty",
     "acquitted",
     "blameless",
-    "innocence"
+    "innocence",
+    "acquit",
+    "acquittal",
+    "acquit of a capital crime",
+    "be acquitted",
+    "hung jury",
+    "acquitted by a hung jury",
+    "not at fault"
   ],
   "domain": "res-publica",
   "terms": [
@@ -41,7 +48,8 @@
       "gloss": "acquit, find not guilty",
       "evidence": [
         "Cic. <em>Rosc. Am.</em> 56: <span lang=\"la\">absolvī potest</span>",
-        "Traupman 191, 193"
+        "Traupman 191, 193",
+        "Traupman 193: acquit"
       ],
       "comment": "Of a charge, with <span lang=\"la\">dē</span> and the ablative, more rarely the genitive (Traupman 193)."
     },
@@ -52,6 +60,16 @@
       "gloss": "innocence, integrity",
       "evidence": [
         "Traupman 154"
+      ]
+    },
+    {
+      "latin": "absolūtiō, absolūtiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "an acquittal",
+      "evidence": [
+        "Cic. Clu. 27: <span lang=\"la\">sententiīs decem et sex absolūtiō cōnficī poterat</span> (Lewis &amp; Short)",
+        "Traupman 193"
       ]
     }
   ],
@@ -65,6 +83,26 @@
       "latin": "innocēns is dīcitur, nōn quī leviter nocet, sed quī nihil nocet",
       "english": "a man is called innocent not if he does little harm, but if he does none",
       "source": "Cic. Tusc. 5.41"
+    },
+    {
+      "latin": "aliquem capitis absolvere",
+      "english": "to acquit someone of a capital crime",
+      "source": "Traupman 193"
+    },
+    {
+      "latin": "sententiīs paribus absolvī",
+      "english": "to be acquitted by a hung jury (by an equal vote)",
+      "source": "Traupman 195"
+    },
+    {
+      "latin": "Absolūtus est omnibus sententiīs.",
+      "english": "He was acquitted unanimously.",
+      "source": "Traupman 191"
+    },
+    {
+      "latin": "extrā culpam esse",
+      "english": "not to be at fault",
+      "source": "Traupman 195"
     }
   ],
   "related": [
@@ -77,7 +115,9 @@
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 191, 193, 195, checked against the searchable text of the book (9 November 2026).",
     "Quotations from the Latinitas loci collections (loci-phaedrus), checked against the editions named there.",
     "Cicero checked against the Latin Library text (<a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">CLTK mirror</a>, 9 November 2026).",
-    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "<a href=\"https://logeion.uchicago.edu/absolutio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: absolutio</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 191–195, each phrase checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",

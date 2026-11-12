@@ -3,7 +3,10 @@
   "english": "cheeky",
   "pos": "adjective",
   "also": [
-    "saucy"
+    "saucy",
+    "wise guy!",
+    "don’t be a wise guy",
+    "shameless"
   ],
   "domain": "sermo",
   "terms": [
@@ -14,6 +17,16 @@
       "evidence": [
         "Traupman 350"
       ]
+    },
+    {
+      "latin": "impudēns, impudentis",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "shameless, impudent",
+      "evidence": [
+        "Cic. Rosc. Com. 21: <span lang=\"la\">pudēns impudentem</span> (Lewis &amp; Short)",
+        "Traupman p. 111: <span lang=\"la\">impudēns!</span>; <span lang=\"la\">nē sīs impudēns</span>"
+      ]
     }
   ],
   "related": [
@@ -22,11 +35,21 @@
   ],
   "sources": [
     "<a href=\"https://logeion.org/petulans\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: petulans</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 350."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 350.",
+    "<a href=\"https://logeion.uchicago.edu/impudens\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: impudens</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 111."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "Nē sīs impudēns.",
+      "english": "Don’t be a wise guy.",
+      "source": "Traupman p. 111"
+    }
+  ]
 }

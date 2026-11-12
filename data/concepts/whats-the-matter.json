@@ -4,7 +4,8 @@
   "pos": "phrase",
   "also": [
     "what’s wrong?",
-    "what’s wrong with you?"
+    "what’s wrong with you?",
+    "what’s up?"
   ],
   "domain": "sermo",
   "terms": [
@@ -17,6 +18,16 @@
         "Traupman 409: what’s wrong with you?, <span lang=\"la\">quid est tibi?</span> or <span lang=\"la\">quid est tēcum?</span>",
         "Plaut. Curc. 236: <span lang=\"la\">sed quid tibi est?</span>"
       ]
+    },
+    {
+      "latin": "Quid reī est?",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "what’s up? what’s going on?",
+      "evidence": [
+        "Traupman p. 111"
+      ],
+      "comment": "Literally “what of a matter is it?”. Not found in Lewis &amp; Short or the loci collections in this form; Traupman is the only evidence."
     }
   ],
   "phrases": [
@@ -38,11 +49,12 @@
   "sources": [
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: pp. 92, 409, checked against the searchable text of the book on 29 October 2026 and 9 November 2026.",
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
-    "Plautus from the Latinitas loci collection (loci-plautus), checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+    "Plautus from the Latinitas loci collection (loci-plautus), checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 111."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

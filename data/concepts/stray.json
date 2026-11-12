@@ -1,0 +1,45 @@
+{
+  "id": "stray",
+  "english": "stray",
+  "pos": "adjective",
+  "also": [
+    "stray dog",
+    "stray cat",
+    "stray animal"
+  ],
+  "domain": "natura",
+  "terms": [
+    {
+      "latin": "errāns, errantis",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "stray, wandering (of an animal)",
+      "grammar": "present participle of errō",
+      "comment": "A plain description: <span lang=\"la\">canis errāns</span>, a stray dog; <span lang=\"la\">fēlēs errāns</span>, a stray cat."
+    },
+    {
+      "latin": "extrārius, extrāria, extrārium",
+      "status": "avoid",
+      "period": "classical",
+      "gloss": "outside, external; a stranger",
+      "evidence": [
+        "Cic. Inv. 2.168: <span lang=\"la\">in extrāriīs rēbus</span> (Lewis &amp; Short)",
+        "Traupman 386: stray (dog, cat, etc.)"
+      ],
+      "comment": "Lewis &amp; Short: outward, external, extrinsic; of persons, strange, not of the family. We have found no instance meaning a stray animal, as Traupman gives it."
+    }
+  ],
+  "related": [
+    "wander"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/erro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: erro</a>",
+    "<a href=\"https://logeion.uchicago.edu/extrarius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: extrarius</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 386."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-12",
+    "by": "Claude"
+  }
+}

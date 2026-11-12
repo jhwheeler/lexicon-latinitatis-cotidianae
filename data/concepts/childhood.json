@@ -9,7 +9,10 @@
     "from childhood",
     "since childhood",
     "early childhood",
-    "infancy"
+    "infancy",
+    "from boyhood on",
+    "since I was a boy",
+    "from a boy"
   ],
   "domain": "tempus",
   "also_under": [
@@ -47,6 +50,18 @@
       "evidence": [
         "Ter. Ad. 48: <span lang=\"la\">ēdūxī ā parvulō</span>"
       ]
+    },
+    {
+      "latin": "ā puerō",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "from boyhood, since one was a boy",
+      "evidence": [
+        "Cic. Ac. 2.115 (Lewis &amp; Short s.v. <span lang=\"la\">puer</span>)",
+        "Ter. Ad. 3.3.86: <span lang=\"la\">homō amīcus nōbīs jam inde ā puerō</span> (Lewis &amp; Short)",
+        "Traupman 77"
+      ],
+      "comment": "Like <span lang=\"la\">ā parvulō</span>; of several people, <span lang=\"la\">ā puerīs</span>."
     }
   ],
   "phrases": [
@@ -76,11 +91,14 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/pueritia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pueritia</a> · <a href=\"https://logeion.uchicago.edu/infantia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: infantia</a> · <a href=\"https://logeion.uchicago.edu/parvulus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: parvulus</a>",
-    "Terence checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026). Quotations from the Latinitas loci collections (loci-cicero-philosophica, loci-seneca-epistulae, loci-quintilianus), checked against the editions named there."
+    "Terence checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026). Quotations from the Latinitas loci collections (loci-cicero-philosophica, loci-seneca-epistulae, loci-quintilianus), checked against the editions named there.",
+    "<a href=\"https://logeion.uchicago.edu/puer\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: puer</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 77, each phrase checked against the searchable text of the book.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

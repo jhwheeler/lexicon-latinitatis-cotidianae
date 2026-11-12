@@ -7,18 +7,50 @@
     {
       "latin": "anus, anūs f.",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "evidence": [
+        "Traupman 77"
+      ]
+    },
+    {
+      "latin": "anicula, aniculae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "little old woman",
+      "grammar": "noun, first declension; diminutive of anus",
+      "evidence": [
+        "Ter. Ph. 1.2.48: <span lang=\"la\">extrā ūnam aniculam</span> (Lewis &amp; Short)",
+        "Cic. Div. 2.15: <span lang=\"la\">haec nē aniculae quidem exīstimant</span> (Lewis &amp; Short)",
+        "Traupman 77"
+      ],
+      "comment": "Fond or slighting by turns, as diminutives are."
     }
   ],
   "related": [
     "old-man"
   ],
   "sources": [
-    "The grouped card gave no source for this word."
+    "The grouped card gave no source for this word.",
+    "<a href=\"https://logeion.uchicago.edu/anus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: anus</a> · <a href=\"https://logeion.uchicago.edu/anicula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: anicula</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 77, each phrase checked against the searchable text of the book.",
+    "Quotations from the Latīnitās loci collections, checked against the editions named there.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "old lady",
+    "little old lady",
+    "old women"
+  ],
+  "phrases": [
+    {
+      "latin": "aniculae saepe inediam bīduum aut trīduum ferunt",
+      "english": "little old women often go without food for two or three days",
+      "source": "Cic. Tusc. 2.40"
+    }
+  ]
 }

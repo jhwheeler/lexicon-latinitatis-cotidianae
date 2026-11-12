@@ -5,17 +5,27 @@
   "domain": "sermo",
   "terms": [
     {
-      "latin": "Conversātiō parit contemptum.",
+      "latin": "Familiāritās parit contemptum.",
       "status": "recommended",
+      "period": "medieval",
+      "evidence": [
+        "Lothar of Segni (Innocent III), <em>De miseria condicionis humane</em>: <span lang=\"la\">nam crūdēlitās parit odium, et familiāritās parit contemptum</span>"
+      ],
+      "comment": "A medieval proverb, in medieval moralists; the letter on study ascribed to Thomas Aquinas has <span lang=\"la\">nimia familiāritās parit contemptum</span>. We have found no ancient source."
+    },
+    {
+      "latin": "Conversātiō parit contemptum.",
+      "status": "alternative",
       "period": "modern",
       "evidence": [
         "Traupman 255"
       ],
-      "comment": "Literally “close company produces contempt”. We have found no ancient source for it in Lewis &amp; Short or the loci collections."
+      "comment": "Literally “close company produces contempt”: Traupman’s form, with <span lang=\"la\">conversātiō</span> for <span lang=\"la\">familiāritās</span>."
     }
   ],
   "sources": [
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, cited by printed page; each phrase checked against the searchable text of the book."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, cited by printed page; each phrase checked against the searchable text of the book.",
+    "Lothar of Segni, <em>De miseria condicionis humane</em>, and the <em>Epistola de modo studendi</em>, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (12 November 2026)."
   ],
   "review": {
     "status": "draft",

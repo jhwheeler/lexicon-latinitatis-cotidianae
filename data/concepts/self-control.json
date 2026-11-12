@@ -5,24 +5,38 @@
   "domain": "verba",
   "terms": [
     {
-      "latin": "abstinentia, abstinentiae f.",
+      "latin": "continentia, continentiae f.",
       "status": "recommended",
       "period": "classical",
-      "gloss": "self-restraint, integrity",
+      "gloss": "self-control, restraint of one’s desires",
       "evidence": [
+        "Cic. Inv. 2.54.164: <span lang=\"la\">continentia est, per quam cupiditās cōnsiliī gubernātiōne regitur</span> (Lewis &amp; Short)",
+        "Caes. BG 7.52 (Lewis &amp; Short)"
+      ],
+      "comment": "Self-control within: Lewis &amp; Short calls it “the common signification”, most frequent in Cicero, and sets it against <span lang=\"la\">abstinentia</span>, which looks to the outward thing one keeps one’s hands off. <span lang=\"la\">Temperantia</span> is the same virtue named as moderation."
+    },
+    {
+      "latin": "abstinentia, abstinentiae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "self-restraint toward what is not one’s own; integrity",
+      "evidence": [
+        "Cic. Off. 2.22: <span lang=\"la\">conciliāre benevolentiam multitūdinis abstinentiā et continentiā</span> (Lewis &amp; Short)",
         "Traupman 157"
-      ]
+      ],
+      "comment": "Lewis &amp; Short: it “always has reference to the outward object from which one restrains himself”, above all other people’s property, so it is the honest official’s virtue (<span lang=\"la\">abstinentiā et continentiā</span>, Cic. Off. 2.22); later it is also fasting."
     },
     {
       "latin": "compos suī",
       "status": "alternative",
       "period": "classical",
-      "gloss": "self-controlled, master of oneself",
+      "gloss": "in possession of oneself, in one’s right mind",
       "grammar": "adjective compos, compotis, with the genitive",
       "evidence": [
         "Liv. 8.18.12 (Lewis &amp; Short)",
         "Traupman 376"
-      ]
+      ],
+      "comment": "In Livy minds estranged by discord are made <span lang=\"la\">compotēs suī</span> again, brought back to their senses: it is being master of oneself, not the virtue of restraint (see sane)."
     }
   ],
   "related": [
@@ -30,9 +44,11 @@
     "sane"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/continentia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: continentia</a>",
     "<a href=\"https://logeion.uchicago.edu/abstinentia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: abstinentia</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, each phrase checked against the searchable text of the book.",
-    "<a href=\"https://logeion.uchicago.edu/compos\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: compos</a>"
+    "<a href=\"https://logeion.uchicago.edu/compos\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: compos</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
@@ -40,6 +56,8 @@
     "by": "Claude"
   },
   "also": [
-    "self-controlled"
+    "self-controlled",
+    "self-restraint",
+    "restraint"
   ]
 }

@@ -3,7 +3,6 @@
   "english": "slow",
   "pos": "adjective",
   "also": [
-    "backward (mentally)",
     "sluggish",
     "slow-witted"
   ],
@@ -13,19 +12,34 @@
       "latin": "lentus, lenta, lentum",
       "status": "recommended",
       "period": "classical",
-      "gloss": "slow, sluggish; pliant",
+      "gloss": "slow, sluggish, lingering",
       "evidence": [
+        "Cic. Brut. 48: <span lang=\"la\">lentus in dīcendō</span>, drawling (Lewis &amp; Short)",
+        "Phaedr. 1.15.7: <span lang=\"la\">asinus</span> (Lewis &amp; Short)",
         "Traupman 149, 158"
       ],
-      "comment": "Properly “pliant, tough”; then slow and sluggish, of bodies and of minds. Traupman gives it for “slow” and “backward (mentally)”."
+      "comment": "Properly “pliant, tough”; then slow and sluggish, lingering, unhurried (adverb <span lang=\"la\">lentē</span>). Traupman also gives it for “backward (mentally)”, a sense we have not found in Lewis &amp; Short; for slow of mind, <span lang=\"la\">tardus</span> (see slow to learn)."
+    },
+    {
+      "latin": "tardus, tarda, tardum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "slow, not swift",
+      "evidence": [
+        "Cic. Inv. 1.24.35: <span lang=\"la\">vēlōx an tardus sit</span> (Lewis &amp; Short)"
+      ],
+      "comment": "The plain opposite of <span lang=\"la\">vēlōx</span>, of motion and action, and also of minds (see slow to learn)."
     }
   ],
   "related": [
-    "slowly"
+    "slowly",
+    "slow-to-learn",
+    "slower"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/lentus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lentus</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, each phrase checked against the searchable text of the book."
+    "<a href=\"https://logeion.uchicago.edu/lentus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lentus</a> · <a href=\"https://logeion.uchicago.edu/tardus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tardus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, each phrase checked against the searchable text of the book.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",

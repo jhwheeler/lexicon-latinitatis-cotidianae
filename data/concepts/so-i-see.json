@@ -7,21 +7,30 @@
     {
       "latin": "Ita videō.",
       "status": "recommended",
-      "period": "modern",
+      "period": "classical",
       "gloss": "so I see",
       "evidence": [
+        "Cic. Att. 2.15.1: <span lang=\"la\">ut scrībis, ita videō nōn minus incerta in rē pūblicā quam in epistulā tuā</span>",
         "Traupman 139"
       ],
-      "comment": "Plain Latin, given here from Traupman alone; Lewis &amp; Short quotes no instance."
+      "comment": "Cicero answers Atticus so: “as you write, so I see it”. On its own, as a reply, it is Traupman’s."
     }
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/video\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: video</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, each phrase checked against the searchable text of the book."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, each phrase checked against the searchable text of the book.",
+    "Cicero’s letter checked against the Perseus Latin text."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "ut scrībis, ita videō nōn minus incerta in rē pūblicā quam in epistulā tuā",
+      "english": "as you say, I see that things are no less uncertain in politics than in your letter",
+      "source": "Cic. Att. 2.15.1"
+    }
+  ]
 }

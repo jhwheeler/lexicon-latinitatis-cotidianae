@@ -10,7 +10,9 @@
     "magic spell",
     "by magic",
     "magician",
-    "wizard"
+    "wizard",
+    "practise magic",
+    "practice magic"
   ],
   "domain": "sermo",
   "terms": [
@@ -56,6 +58,17 @@
         "Cato Agr. 160: <span lang=\"la\">hāc cantiōne sānum fīet</span>"
       ],
       "comment": "A song, and so a sung charm; also <span lang=\"la\">carmen</span> (<span lang=\"la\">carmina magica</span>)."
+    },
+    {
+      "latin": "magicus, magica, magicum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "magic, magical (adjective)",
+      "register": "vōx poētica et post-Augustēa (Lewis &amp; Short: poet. and post-Aug. prose)",
+      "evidence": [
+        "Verg. A. 4.493: <span lang=\"la\">magicās … artēs</span> (Lewis &amp; Short)",
+        "Traupman 343"
+      ]
     }
   ],
   "phrases": [
@@ -68,6 +81,11 @@
       "latin": "luxum sīquod est, hāc cantiōne sānum fīet",
       "english": "if anything is out of joint, it will be healed with this spell",
       "source": "Cato Agr. 160"
+    },
+    {
+      "latin": "magicās artēs exercēre",
+      "english": "to practise magic",
+      "source": "Traupman 343"
     }
   ],
   "related": [
@@ -81,7 +99,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

@@ -9,22 +9,38 @@
   "domain": "urbs",
   "terms": [
     {
-      "latin": "viaeductus, viaeductūs m.",
+      "latin": "crypta, cryptae f.",
       "status": "recommended",
-      "period": "modern",
-      "gloss": "an underpass",
+      "period": "classical",
+      "gloss": "an underground passage, a tunnel under a road or hill",
       "evidence": [
-        "Traupman 400"
+        "Sen. Ep. 57.1: the <span lang=\"la\">crypta Neāpolītāna</span>, the road tunnel from Naples to Puteoli (Lewis &amp; Short s.v. <span lang=\"la\">crypta</span>)"
       ],
-      "comment": "Traupman’s word; built like English “viaduct”, it reads more naturally as a road carried over something than under it. Not in Lewis &amp; Short."
+      "comment": "A covered or underground passage (Lewis &amp; Short: “a concealed, subterranean passage”); Seneca’s is a road through a hill."
+    },
+    {
+      "latin": "viaeductus, viaeductūs m.",
+      "status": "avoid",
+      "period": "modern",
+      "gloss": "a viaduct (Traupman: an underpass)",
+      "evidence": [
+        "Traupman 400",
+        "M-O s.v. viaduct: <span lang=\"la\">viae ductus</span>, after Egger"
+      ],
+      "comment": "Traupman gives it for “underpass”, but the word is the modern Latin for a viaduct, a road carried over something (Morgan–Owens), not under it. Not in Lewis &amp; Short."
     }
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/crypta\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: crypta</a>",
+    "<a href=\"https://neolatinlexicon.org/latin/viaduct/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: viaduct</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 400."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "related": [
+    "tunnel"
+  ]
 }

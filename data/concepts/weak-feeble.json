@@ -7,7 +7,8 @@
     "feeble",
     "frail",
     "infirm",
-    "weakness"
+    "weakness",
+    "weak constitution"
   ],
   "domain": "corpus",
   "terms": [
@@ -18,9 +19,9 @@
       "gloss": "weak, feeble (in body)",
       "evidence": [
         "Lewis &amp; Short s.v. <span lang=\"la\">imbēcillus</span>: “of the body” (class.)",
-        "Traupman 66",
         "Traupman 152",
-        "Traupman 314"
+        "Traupman 314",
+        "Traupman 66, 405"
       ],
       "comment": "The opposite of <span lang=\"la\">validus</span>, strong."
     },
@@ -30,7 +31,8 @@
       "period": "classical",
       "gloss": "weak, infirm, unwell",
       "evidence": [
-        "Lewis &amp; Short s.v. <span lang=\"la\">īnfirmus</span>"
+        "Lewis &amp; Short s.v. <span lang=\"la\">īnfirmus</span>",
+        "Traupman 405"
       ]
     },
     {
@@ -39,7 +41,7 @@
       "period": "classical",
       "gloss": "weak, infirm",
       "evidence": [
-        "Traupman 159"
+        "Traupman 159, 405"
       ],
       "comment": "Lewis &amp; Short: not in Cicero or Caesar."
     }
@@ -61,5 +63,12 @@
     "status": "draft",
     "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "tenuis valētūdō",
+      "english": "a weak constitution",
+      "source": "Traupman 405"
+    }
+  ]
 }

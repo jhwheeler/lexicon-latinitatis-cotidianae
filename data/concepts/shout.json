@@ -14,7 +14,8 @@
     "a shout",
     "shouting",
     "don’t shout",
-    "cry out to"
+    "cry out to",
+    "yell (in pain)"
   ],
   "domain": "verba",
   "terms": [
@@ -62,6 +63,25 @@
         "Cic. Verr. 2.4.39 (Lewis &amp; Short): <span lang=\"la\">vōciferārī palam</span>"
       ],
       "comment": "Loud, often angry shouting, as of a man raising an outcry."
+    },
+    {
+      "latin": "ululō, ululāre, ululāvī, ululātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "yell, howl, wail",
+      "evidence": [
+        "Traupman 410"
+      ]
+    },
+    {
+      "latin": "ējulō, ējulāre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "wail, yell (in pain or grief)",
+      "evidence": [
+        "Cic. Tusc. 2.19 (Lewis &amp; Short)",
+        "Traupman 410"
+      ]
     }
   ],
   "phrases": [
@@ -79,6 +99,16 @@
       "latin": "Nē clāmā: petītō hāsce ā mē decem.",
       "english": "Don’t shout: ask me for these ten.",
       "source": "Ter. Phorm. 664b"
+    },
+    {
+      "latin": "ululātus, ululātūs m.",
+      "english": "a yell, a howl",
+      "source": "Traupman 410"
+    },
+    {
+      "latin": "ējulātiō, ējulātiōnis f.",
+      "english": "a yell of pain, wailing",
+      "source": "Cic. Leg. 2.59 (Lewis &amp; Short s.v. <span lang=\"la\">ējulātiō</span>); Traupman 410"
     }
   ],
   "related": [
@@ -91,7 +121,8 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/clamo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: clamo</a> · <a href=\"https://logeion.uchicago.edu/clamor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: clamor</a> · <a href=\"https://logeion.uchicago.edu/exclamo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: exclamo</a> · <a href=\"https://logeion.uchicago.edu/vociferor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vociferor</a>",
     "Plaut. Men. 1114b, Most. 576, Bacch. 874, Ter. Ad. 728 and Phorm. 664b checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026).",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 299."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 299.",
+    "<a href=\"https://logeion.uchicago.edu/ejulo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ejulo</a>"
   ],
   "review": {
     "status": "draft",

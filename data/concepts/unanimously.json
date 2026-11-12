@@ -15,8 +15,29 @@
       "gloss": "with one voice",
       "evidence": [
         "Cic. Att. 2.18.1: <span lang=\"la\">ūnā vōce omnium</span> (Lewis &amp; Short)",
-        "Traupman 180"
+        "Traupman 180, 400, 399"
       ]
+    },
+    {
+      "latin": "ūnanimus, ūnanima, ūnanimum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "of one mind, unanimous",
+      "register": "vōx plērumque poētica: Plaut., Catull., Verg.",
+      "evidence": [
+        "Plaut. Stich. 5.4.49: <span lang=\"la\">ūnanimī sumus</span> (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "ūnanimis, ūnanime",
+      "status": "alternative",
+      "period": "post-classical",
+      "gloss": "unanimous",
+      "evidence": [
+        "Claud. Cons. Prob. et Olybr. 231 (Lewis &amp; Short)",
+        "Traupman 399"
+      ],
+      "comment": "Lewis &amp; Short calls this form post-classical; the classical adjective is <span lang=\"la\">ūnanimus</span>."
     }
   ],
   "related": [
@@ -25,11 +46,20 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/vox\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vox</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 180, each phrase checked against the searchable text of the book.",
-    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "<a href=\"https://logeion.uchicago.edu/unanimus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: unanimus</a>",
+    "<a href=\"https://logeion.uchicago.edu/unanimis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: unanimis</a>"
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "omnibus sententiīs",
+      "english": "unanimously (by all the votes)",
+      "source": "Traupman 400"
+    }
+  ]
 }

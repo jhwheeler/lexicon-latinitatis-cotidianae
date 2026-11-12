@@ -1,0 +1,90 @@
+{
+  "id": "well-interjection",
+  "english": "well …",
+  "pos": "interjection",
+  "also": [
+    "well then",
+    "well, all right",
+    "well, well",
+    "oh well",
+    "why, …"
+  ],
+  "domain": "sermo",
+  "terms": [
+    {
+      "latin": "Estō.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "well, all right; granted, be it so",
+      "grammar": "future imperative of sum, used alone",
+      "evidence": [
+        "Cic. Div. Caec. 47: <span lang=\"la\">estō: ipse nihil est, nihil potest</span> (Lewis &amp; Short s.v. <span lang=\"la\">sum</span>)",
+        "Verg. A. 7.313 (Lewis &amp; Short)",
+        "Traupman 405"
+      ],
+      "comment": "Granting a point before going on: “well, so be it; but …”."
+    },
+    {
+      "latin": "immō",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "well, rather; no indeed (correcting what was just said)",
+      "evidence": [
+        "Plaut. Most. 3.1.19: <span lang=\"la\">Etiam fatētur dē hospite? — Immō pernegat.</span> (Lewis &amp; Short)",
+        "Traupman 405"
+      ],
+      "comment": "Lewis &amp; Short: it corrects or sharpens what precedes and is always followed by the corrected statement; it is never a bare “no”."
+    },
+    {
+      "latin": "quīn",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "why, indeed; nay even (adding something stronger: quīn etiam)",
+      "evidence": [
+        "Cic. Att. 13.26.3: <span lang=\"la\">quīn etiam noctibus</span> (Lewis &amp; Short)",
+        "Traupman 405"
+      ]
+    },
+    {
+      "latin": "Em!",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "there! look! (pointing something out)",
+      "register": "vōx cōmica: Plaut., Ter.",
+      "evidence": [
+        "Ter. Eun. 3.2.6 (Lewis &amp; Short)",
+        "Traupman 405"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Enimvērō!",
+      "english": "Well, well!",
+      "source": "Traupman 405"
+    },
+    {
+      "latin": "Quīn hodiē!",
+      "english": "Why, this very day!",
+      "source": "Traupman 407"
+    }
+  ],
+  "related": [
+    "agree-to",
+    "actually",
+    "well-well",
+    "here-you-are"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/sum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sum</a>",
+    "<a href=\"https://logeion.uchicago.edu/immo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: immo</a>",
+    "<a href=\"https://logeion.uchicago.edu/quin\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quin</a>",
+    "<a href=\"https://logeion.uchicago.edu/em\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: em</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 405."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-12",
+    "by": "Claude"
+  }
+}

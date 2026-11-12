@@ -6,12 +6,27 @@
   "domain": "vestitus",
   "terms": [
     {
-      "latin": "strīctus",
+      "latin": "strictus, stricta, strictum",
       "status": "recommended",
       "period": "classical",
       "evidence": [
         "Traupman 394 (strīct·us)",
         "Traupman 342, 360, 394: <span lang=\"la\">sī calceus ūrit</span>"
+      ],
+      "comment": "Traupman marks the vowel long (<span lang=\"la\">strīctus</span>); it is short: Lachmann’s law does not reach it (see the rulings)."
+    },
+    {
+      "latin": "restrictus, restricta, restrictum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "drawn tight; (of a shoe) tight",
+      "evidence": [
+        "Lewis &amp; Short s.v. <span lang=\"la\">restringō</span>",
+        "Traupman 394"
+      ],
+      "comment": "The house writes the prefix short before st.",
+      "notes": [
+        "re-short"
       ]
     }
   ],
@@ -22,11 +37,21 @@
   ],
   "sources": [
     "<a href=\"https://logeion.org/strictus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: strictus</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), pp. 342, 360, 394."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), pp. 342, 360, 394.",
+    "<a href=\"https://logeion.uchicago.edu/restringo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: restringo</a>"
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
+  },
+  "notes": {
+    "re-short": {
+      "form": "<span lang=\"la\">restrictus</span>",
+      "claim": "short e in re-",
+      "against": "Lewis &amp; Short <span lang=\"la\">rēstringo</span>",
+      "html": "The prefix is <span lang=\"la\">re-</span> (de Vaan 516, s.v. <span lang=\"la\">re-, red-</span>); Bennett (<em>The Latin Language</em> §48) rejects the lengthening before s and a consonant, and Lewis’s <em>Elementary Latin Dictionary</em> prints <span lang=\"la\">re-spondeō</span>.",
+      "ruling": "re-s"
+    }
   }
 }

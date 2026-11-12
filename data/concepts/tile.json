@@ -1,0 +1,48 @@
+{
+  "id": "tile",
+  "english": "tile",
+  "pos": "noun",
+  "also": [
+    "floor tile",
+    "wall tile",
+    "ceramic tile",
+    "tiles"
+  ],
+  "domain": "domus-structura",
+  "terms": [
+    {
+      "latin": "tessella, tessellae f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a small square tile or cube (of a floor or mosaic)",
+      "evidence": [
+        "Juv. 11.132 (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "lāmina fīctilis",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "a flat clay tile (for a floor or wall)",
+      "evidence": [
+        "Traupman 394"
+      ],
+      "comment": "Traupman’s phrase, “an earthenware plate”: both words are classical (<span lang=\"la\">fīctilis</span>, made of clay, Cic. N.D. 1.71), the phrase we have not found in a classical author."
+    }
+  ],
+  "related": [
+    "roof-tile",
+    "magnetic-tile"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/tessella\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tessella</a>",
+    "<a href=\"https://logeion.uchicago.edu/lamina\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lamina</a>",
+    "<a href=\"https://logeion.uchicago.edu/fictilis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fictilis</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 394."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-12",
+    "by": "Claude"
+  }
+}

@@ -5,17 +5,27 @@
   "domain": "sermo",
   "terms": [
     {
-      "latin": "Diēs vēritātem aperit.",
+      "latin": "Vēritātem diēs aperit.",
       "status": "recommended",
+      "period": "classical",
+      "evidence": [
+        "Sen. Ira 2.22.2: <span lang=\"la\">Dandum semper est tempus: vēritātem diēs aperit.</span>"
+      ],
+      "comment": "Literally “time uncovers the truth”: Seneca’s advice not to believe a charge at once."
+    },
+    {
+      "latin": "Diēs vēritātem aperit.",
+      "status": "alternative",
       "period": "modern",
       "evidence": [
         "Traupman 259"
       ],
-      "comment": "Literally “time uncovers the truth”. We have found no ancient source for it in Lewis &amp; Short or the loci collections."
+      "comment": "Seneca’s words in Traupman’s order."
     }
   ],
   "sources": [
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, cited by printed page; each phrase checked against the searchable text of the book."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, cited by printed page; each phrase checked against the searchable text of the book.",
+    "Seneca, <em>De ira</em> 2.22.2, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (12 November 2026)."
   ],
   "review": {
     "status": "draft",

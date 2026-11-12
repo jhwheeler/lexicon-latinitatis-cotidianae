@@ -11,18 +11,29 @@
     {
       "latin": "Deō volente.",
       "status": "recommended",
-      "period": "modern",
+      "period": "medieval",
       "evidence": [
         "Traupman 256"
       ],
-      "comment": "We have found no ancient source for it in Lewis &amp; Short or the loci collections."
+      "comment": "Medieval Latin: Adomnán’s Life of Columba has <span lang=\"la\">Mox, Deō volente, ad Scōtiam profectus</span> (book 1). We have found no ancient instance. The Vulgate says <span lang=\"la\">sī Dominus voluerit</span> (below)."
+    },
+    {
+      "latin": "sī Dominus voluerit",
+      "status": "alternative",
+      "period": "late",
+      "evidence": [
+        "Vulg. Jac. 4.15: <span lang=\"la\">prō eō ut dīcātis: sī Dominus voluerit, et vīxerimus, faciēmus hoc aut illud</span>",
+        "Vulg. 1 Cor. 4.19: <span lang=\"la\">veniam autem cito ad vōs, sī Dominus voluerit</span>"
+      ],
+      "comment": "Literally “if the Lord wills”: the biblical way of saying it."
     }
   ],
   "related": [
     "god"
   ],
   "sources": [
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, cited by printed page; each phrase checked against the searchable text of the book."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, cited by printed page; each phrase checked against the searchable text of the book.",
+    "Adomnán, <em>Vita Columbae</em> 1, and the Vulgate (James 4.15, 1 Corinthians 4.19), checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (12 November 2026)."
   ],
   "review": {
     "status": "draft",

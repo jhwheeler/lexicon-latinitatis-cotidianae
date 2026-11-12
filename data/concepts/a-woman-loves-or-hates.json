@@ -5,17 +5,28 @@
   "domain": "sermo",
   "terms": [
     {
-      "latin": "Aut amat aut ōdit mulier; nihil est tertium.",
+      "latin": "Aut amat aut ōdit mulier, nīl est tertium.",
       "status": "recommended",
+      "period": "classical",
+      "evidence": [
+        "Publil. Sent. A 6"
+      ],
+      "comment": "A line of Publilius Syrus."
+    },
+    {
+      "latin": "Aut amat aut ōdit mulier; nihil est tertium.",
+      "status": "alternative",
       "period": "modern",
       "evidence": [
         "Traupman 257"
       ],
-      "comment": "We have found no ancient source for it in Lewis &amp; Short or the loci collections."
+      "comment": "Traupman’s form of Publilius’s line, with <span lang=\"la\">nihil</span> for <span lang=\"la\">nīl</span>."
     }
   ],
   "sources": [
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, cited by printed page; each phrase checked against the searchable text of the book."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, cited by printed page; each phrase checked against the searchable text of the book.",
+    "Publilius Syrus, <em>Sententiae</em> A 6, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (12 November 2026).",
+    "Publilius is cited as the loci collection numbers him, by position under each initial letter in the Latin Library text."
   ],
   "review": {
     "status": "draft",

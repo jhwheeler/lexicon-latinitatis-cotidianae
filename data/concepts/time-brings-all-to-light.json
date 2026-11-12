@@ -8,17 +8,27 @@
   "domain": "sermo",
   "terms": [
     {
-      "latin": "Tempus omnia revēlat.",
+      "latin": "Omnia tempus revēlat.",
       "status": "recommended",
+      "period": "late",
+      "evidence": [
+        "Tert. Apol. 7.13: <span lang=\"la\">Bene autem quod omnia tempus revēlat</span>"
+      ],
+      "comment": "Tertullian, of the rumours spread about the Christians, adding that the pagans’ own proverbs say so."
+    },
+    {
+      "latin": "Tempus omnia revēlat.",
+      "status": "alternative",
       "period": "modern",
       "evidence": [
         "Traupman 259"
       ],
-      "comment": "We have found no ancient source for it in Lewis &amp; Short or the loci collections."
+      "comment": "Tertullian’s words in Traupman’s order."
     }
   ],
   "sources": [
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, cited by printed page; each phrase checked against the searchable text of the book."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, cited by printed page; each phrase checked against the searchable text of the book.",
+    "Tertullian, <em>Apologeticum</em> 7.13, checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (12 November 2026)."
   ],
   "review": {
     "status": "draft",

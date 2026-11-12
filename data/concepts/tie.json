@@ -5,7 +5,10 @@
   "also": [
     "lash",
     "bind",
-    "tie up"
+    "tie up",
+    "tie back",
+    "tie in a knot",
+    "knot"
   ],
   "domain": "aedificatio",
   "terms": [
@@ -15,9 +18,41 @@
       "period": "classical",
       "gloss": "tie, lash",
       "evidence": [
-        "Digest 13.6.5.7: <span lang=\"la\">māchinae … nōn ab ipsō ligātae</span>"
+        "Digest 13.6.5.7: <span lang=\"la\">māchinae … nōn ab ipsō ligātae</span>",
+        "Traupman 394"
       ],
       "comment": "The Digest’s verb for a Roman scaffold."
+    },
+    {
+      "latin": "nōdō, nōdāre, nōdāvī, nōdātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "tie in a knot, knot",
+      "evidence": [
+        "Verg. A. 4.138: <span lang=\"la\">crīnēs nōdantur in aurum</span> (Lewis &amp; Short)",
+        "Traupman 394"
+      ]
+    },
+    {
+      "latin": "alligō, alligāre, alligāvī, alligātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "tie (to something), bind fast",
+      "evidence": [
+        "Cic. Verr. 2.5.71: <span lang=\"la\">ad pālum</span> (Lewis &amp; Short)",
+        "Traupman 394"
+      ]
+    },
+    {
+      "latin": "revinciō, revincīre, revīnxī, revīnctum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "tie back, bind behind; bind fast",
+      "evidence": [
+        "Caes. BG 3.13: <span lang=\"la\">ancorae prō fūnibus ferreīs catēnīs revīnctae</span> (Lewis &amp; Short)",
+        "Traupman 394"
+      ],
+      "comment": "Lewis &amp; Short: classical, but not in Cicero."
     }
   ],
   "phrases": [
@@ -37,7 +72,10 @@
   ],
   "sources": [
     "<a href=\"https://www.alatius.com/ls/index.php?l=ligo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ligo (verb)</a>",
-    "The example sentence marked “composed” is ours."
+    "The example sentence marked “composed” is ours.",
+    "<a href=\"https://logeion.uchicago.edu/nodo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nodo</a>",
+    "<a href=\"https://logeion.uchicago.edu/alligo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: alligo</a>",
+    "<a href=\"https://logeion.uchicago.edu/revincio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: revincio</a>"
   ],
   "review": {
     "status": "draft",

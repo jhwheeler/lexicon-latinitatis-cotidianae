@@ -6,7 +6,8 @@
     "exactly!",
     "quite so",
     "just so",
-    "that is exactly what I think"
+    "that is exactly what I think",
+    "that’s so"
   ],
   "domain": "sermo",
   "terms": [
@@ -15,7 +16,7 @@
       "status": "recommended",
       "period": "classical",
       "evidence": [
-        "Traupman 107, 109"
+        "Traupman 107, 109, 393"
       ]
     },
     {
@@ -23,7 +24,7 @@
       "status": "alternative",
       "period": "classical",
       "evidence": [
-        "Traupman 107, 109"
+        "Traupman 107, 109, 393"
       ]
     },
     {
@@ -33,7 +34,8 @@
       "gloss": "exactly, quite so",
       "evidence": [
         "Cic. Tusc. 2.67: <span lang=\"la\">Ita prōrsus</span>",
-        "Cic. Tusc. 1.11: <span lang=\"la\">Ita prōrsus exīstimō.</span>"
+        "Cic. Tusc. 1.11: <span lang=\"la\">Ita prōrsus exīstimō.</span>",
+        "Traupman 393"
       ],
       "comment": "Cicero names <span lang=\"la\">Admodum</span> and <span lang=\"la\">Prōrsus ita est</span> as the replies said in conversation to let it move on (Leg. 3.26, quoted by Lewis &amp; Short, s.v. <span lang=\"la\">admodum</span>)."
     },
@@ -65,5 +67,12 @@
     "status": "draft",
     "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "Ita prōrsus existimō.",
+      "english": "That is exactly what I think.",
+      "source": "Traupman 393"
+    }
+  ]
 }

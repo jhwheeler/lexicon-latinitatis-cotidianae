@@ -6,7 +6,9 @@
     "change your mind",
     "I’ve changed my mind",
     "have second thoughts",
-    "change of heart"
+    "change of heart",
+    "on second thought",
+    "on second thoughts"
   ],
   "domain": "verba",
   "terms": [
@@ -41,6 +43,18 @@
         "Traupman 104: to change one’s mind, <span lang=\"la\">mentem mūtāre</span>"
       ],
       "comment": "Traupman’s phrase. Cicero uses it of changing people’s disposition and feelings; for a change of opinion or of plan, <span lang=\"la\">sententiam</span> or <span lang=\"la\">cōnsilium mūtāre</span> is the usual phrase."
+    },
+    {
+      "latin": "recōgitō, recōgitāre, recōgitāvī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "think it over again",
+      "register": "vōx cōmica: Plaut.; in ōrātiōne solūtā rāra",
+      "evidence": [
+        "Plaut. Capt. prol. 51: <span lang=\"la\">homunculī quantī sunt, quom recōgitō!</span> (Lewis &amp; Short)",
+        "Traupman 393"
+      ],
+      "comment": "Traupman gives <span lang=\"la\">cum ego recōgitō</span> for “on second thought”, literally “when I think it over”. Lewis &amp; Short calls the verb rare: Plautus several times, Cicero once (Q. Fr. 2.2.1)."
     }
   ],
   "related": [
@@ -51,7 +65,8 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/muto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: muto</a> · <a href=\"https://logeion.uchicago.edu/sententia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sententia</a> · <a href=\"https://logeion.uchicago.edu/consilium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: consilium</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 104, each phrase checked against the searchable text of the book.: p. 289.",
-    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "<a href=\"https://logeion.uchicago.edu/recogito\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: recogito</a>"
   ],
   "review": {
     "status": "draft",
@@ -63,6 +78,11 @@
       "latin": "animī mūtātiō",
       "english": "a change of heart",
       "source": "Traupman 289"
+    },
+    {
+      "latin": "cum ego recōgitō",
+      "english": "on second thought",
+      "source": "Traupman 393"
     }
   ]
 }

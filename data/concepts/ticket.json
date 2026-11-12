@@ -7,7 +7,10 @@
     "railway ticket",
     "admission ticket",
     "entrance ticket",
-    "punch the ticket"
+    "punch the ticket",
+    "first-class ticket",
+    "second-class ticket",
+    "train ticket"
   ],
   "domain": "vectura",
   "terms": [
@@ -16,7 +19,7 @@
       "status": "recommended",
       "period": "modern",
       "evidence": [
-        "Traupman 218–219"
+        "Traupman 218–219, 394"
       ],
       "comment": "Ancient <strong lang=\"la\">tessera</strong> is a token or tally."
     },
@@ -35,7 +38,8 @@
       "period": "modern",
       "gloss": "railway ticket",
       "evidence": [
-        "Traupman 218–219"
+        "Traupman 218–219",
+        "Traupman 397"
       ]
     }
   ],
@@ -76,6 +80,11 @@
       "latin": "Quantī cōnstat tessera itinerāria?",
       "english": "How much is the ticket?",
       "source": "Traupman 212"
+    },
+    {
+      "latin": "tessera prīmae (secundae) classis",
+      "english": "a first-class (second-class) ticket",
+      "source": "Traupman 394"
     }
   ]
 }

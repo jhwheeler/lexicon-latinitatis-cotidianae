@@ -8,7 +8,10 @@
     "if that’s the case",
     "in that case",
     "in such a case",
-    "in the same case"
+    "in the same case",
+    "that’s the case",
+    "that’s not the case",
+    "since that’s the case"
   ],
   "domain": "verba",
   "terms": [
@@ -45,6 +48,16 @@
         "Caes. BG 5.33.4: <span lang=\"la\">in ejusmodī cāsū</span>"
       ],
       "comment": "What happens unexpectedly: in such a case, of a crisis (Lewis &amp; Short: “such an emergency”). In grammar, the case of a noun (Varro, Cicero)."
+    },
+    {
+      "latin": "Sunt ista.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "that is so, granted",
+      "evidence": [
+        "Cic. Lael. 6: <span lang=\"la\">sunt ista, Laelī</span> (Lewis &amp; Short s.v. <span lang=\"la\">sum</span>)",
+        "Traupman 95"
+      ]
     }
   ],
   "phrases": [
@@ -57,6 +70,11 @@
       "latin": "id sī ita est, omnia faciliōra; sīn aliter, magnum negōtium",
       "english": "if that is the case, everything is easier; if not, it’s a big job",
       "source": "Cic. Fam. 11.14.3"
+    },
+    {
+      "latin": "Nōn ita rēs est.",
+      "english": "That’s not the case.",
+      "source": "Traupman p. 95"
     }
   ],
   "related": [
@@ -68,11 +86,13 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/si\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: si</a> · <a href=\"https://logeion.uchicago.edu/ita\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ita</a> · <a href=\"https://logeion.uchicago.edu/causa\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: causa</a> · <a href=\"https://logeion.uchicago.edu/casus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: casus</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 95, checked against the searchable text of the book (9 November 2026).",
-    "Cicero’s letters and <em>De officiis</em> and Caesar’s <em>Gallic War</em> checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+    "Cicero’s letters and <em>De officiis</em> and Caesar’s <em>Gallic War</em> checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "<a href=\"https://logeion.uchicago.edu/sum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sum</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

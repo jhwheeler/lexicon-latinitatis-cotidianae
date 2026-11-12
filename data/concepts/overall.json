@@ -10,7 +10,11 @@
     "in all",
     "basically",
     "in a word",
-    "to cut a long story short"
+    "to cut a long story short",
+    "briefly",
+    "to put it briefly",
+    "make it brief!",
+    "to be brief"
   ],
   "domain": "verba",
   "terms": [
@@ -59,6 +63,27 @@
         "Cic. Att. 7.4.3: <span lang=\"la\">quid multa? nihil mē aliud cōnsōlātur nisi quod …</span>"
       ],
       "comment": "The speaker’s “basically”: it cuts a story short and goes to the point. So too <span lang=\"la\">quid plūra?</span> and <span lang=\"la\">nē multa</span> (Lewis &amp; Short, s.v. <span lang=\"la\">multus</span>)."
+    },
+    {
+      "latin": "ut in pauca cōnferam",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "to put it briefly",
+      "evidence": [
+        "Cic. Caecin. 17 (Lewis &amp; Short s.v. <span lang=\"la\">ut</span>)",
+        "Traupman 94"
+      ],
+      "comment": "“To gather it into a few (words)”; to someone else, <span lang=\"la\">in pauca cōnfer!</span>, make it brief! (Plaut. Poen. 5.4.54, Lewis &amp; Short s.v. <span lang=\"la\">paucus</span>)."
+    },
+    {
+      "latin": "ut breviter dīcam",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "to put it briefly",
+      "evidence": [
+        "Traupman 94"
+      ],
+      "comment": "Traupman’s phrase, of classical words; not found as a phrase in Lewis &amp; Short or the loci."
     }
   ],
   "phrases": [
@@ -76,6 +101,16 @@
       "latin": "Ad summam, bene nōbīs fuit.",
       "english": "All in all, we had a good time.",
       "source": "composed"
+    },
+    {
+      "latin": "ut in pauca cōnferam, testāmentō factō mulier moritur",
+      "english": "to put it briefly, the woman makes her will and dies",
+      "source": "Cic. Caecin. 17 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "In pauca cōnfer!",
+      "english": "Make it brief!",
+      "source": "Plaut. Poen. 5.4.54 (Lewis &amp; Short)"
     }
   ],
   "related": [
@@ -88,11 +123,14 @@
     "Quotations from the Latinitas loci collections (loci-petronius), checked against the editions named there.",
     "Cic. Q. Fr. 2.7.3 and Att. 7.4.3 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026).",
     "Citations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them and have not been checked against an edition.",
-    "The example sentence marked “composed” is ours."
+    "The example sentence marked “composed” is ours.",
+    "<a href=\"https://logeion.uchicago.edu/confero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: confero</a> · <a href=\"https://logeion.uchicago.edu/paucus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: paucus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 94, checked against the searchable text and the page images of the book.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

@@ -10,7 +10,9 @@
     "chat",
     "converse",
     "have a talk",
-    "conversation"
+    "conversation",
+    "have a chat with",
+    "engage in conversation"
   ],
   "domain": "verba",
   "also_under": [
@@ -77,6 +79,28 @@
         "Suet. Aug. 94.7: <span lang=\"la\">cum prīmum fārī coepisset</span>"
       ],
       "comment": "Hence <span lang=\"la\">īnfāns</span>, “not (yet) speaking”."
+    },
+    {
+      "latin": "cōnfābulor, cōnfābulārī, cōnfābulātus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "have a chat, talk together",
+      "register": "vōx sermōnis cotīdiānī: Plaut., Ter.",
+      "evidence": [
+        "Plaut. Merc. 1.2.76; Ter. Hec. 1.2.107 (Lewis &amp; Short)",
+        "Traupman 95"
+      ],
+      "comment": "Lewis &amp; Short: early and colloquial for <span lang=\"la\">colloquor</span>; with <span lang=\"la\">cum aliquō</span>."
+    },
+    {
+      "latin": "sermōnēs cōnferre (cum aliquō)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "engage in conversation",
+      "evidence": [
+        "Plaut. Poen. prol. 34: <span lang=\"la\">dum sermōnēs fābulandī cōnferant</span> (Lewis &amp; Short s.v. <span lang=\"la\">sermō</span>)",
+        "Traupman 96"
+      ]
     }
   ],
   "phrases": [
@@ -113,11 +137,14 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/loquor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: loquor</a> · <a href=\"https://logeion.uchicago.edu/sermo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sermo</a> · <a href=\"https://logeion.uchicago.edu/colloquor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: colloquor</a> · <a href=\"https://logeion.uchicago.edu/fabulor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fabulor</a> · <a href=\"https://logeion.uchicago.edu/for\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: for</a>",
     "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-terentius, loci-vergilius, loci-varro, loci-gellius), as checked there against the editions they name.",
-    "Cic. de Or. 1.32 and Off. 1.136, Plaut. Epid. 237, Suet. Aug. 94.7, Ter. Ph. 654 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+    "Cic. de Or. 1.32 and Off. 1.136, Plaut. Epid. 237, Suet. Aug. 94.7, Ter. Ph. 654 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "<a href=\"https://logeion.uchicago.edu/confabulor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: confabulor</a> · <a href=\"https://logeion.uchicago.edu/sermo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sermo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 95, 96, checked against the searchable text and the page images of the book.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

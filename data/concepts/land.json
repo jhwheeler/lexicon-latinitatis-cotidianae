@@ -18,7 +18,37 @@
       "status": "alternative",
       "period": "modern",
       "evidence": [
-        "Traupman 217"
+        "Traupman 217",
+        "Traupman 337"
+      ]
+    },
+    {
+      "latin": "appellō, appellere, appulī, appulsum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "land, put in (of a ship): ad terram appellere",
+      "evidence": [
+        "Traupman 337"
+      ]
+    },
+    {
+      "latin": "īnsīdō, īnsīdere, īnsēdī, īnsessum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "alight, settle (of a bird), with the dative",
+      "register": "vōx plērumque poētica; in prose after Augustus",
+      "evidence": [
+        "Verg. A. 6.708: <span lang=\"la\">apēs flōribus īnsīdunt</span> (Lewis &amp; Short)",
+        "Traupman 337"
+      ]
+    },
+    {
+      "latin": "appulsus, appulsūs m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a landing",
+      "evidence": [
+        "Traupman 337"
       ]
     }
   ],
@@ -34,12 +64,20 @@
     "runway"
   ],
   "sources": [
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: p. 217, checked against the searchable text of the book on 29 October 2026.",
+    "<a href=\"https://logeion.uchicago.edu/appulsus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: appulsus</a>",
+    "<a href=\"https://logeion.uchicago.edu/insido\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: insido</a>",
+    "<a href=\"https://logeion.uchicago.edu/appello\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: appello</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: p. 217, checked against the searchable text of the book on 29 October 2026; p. 337.",
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "land (of a ship)",
+    "alight (of a bird)",
+    "landing (of a plane)"
+  ]
 }

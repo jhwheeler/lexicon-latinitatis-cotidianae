@@ -7,7 +7,10 @@
     "obey",
     "comply with",
     "go by",
-    "take advice"
+    "take advice",
+    "go by (the rules)",
+    "keep the rules",
+    "observe (a rule)"
   ],
   "domain": "verba",
   "terms": [
@@ -45,6 +48,15 @@
         "Cic. Fam. 2.7.2: <span lang=\"la\">tē audī, tibi obtemperā</span>"
       ],
       "comment": "Of doing what someone advises or asks."
+    },
+    {
+      "latin": "servō, servāre, servāvī, servātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "keep, observe (rules, laws)",
+      "evidence": [
+        "Traupman 322"
+      ]
     }
   ],
   "phrases": [
@@ -69,9 +81,11 @@
     "obedient"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/servo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: servo</a>",
     "<a href=\"https://logeion.uchicago.edu/sequor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sequor</a> · <a href=\"https://logeion.uchicago.edu/pareo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pareo</a> · <a href=\"https://logeion.uchicago.edu/obtempero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: obtempero</a>",
     "Cicero’s letters and <em>De senectute</em> checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
-    "Quotations from the Latinitas loci collections (loci-ovidius), checked against the editions named there."
+    "Quotations from the Latinitas loci collections (loci-ovidius), checked against the editions named there.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 322."
   ],
   "review": {
     "status": "draft",

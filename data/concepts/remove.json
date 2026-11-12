@@ -3,7 +3,8 @@
   "english": "remove",
   "pos": "verb",
   "also": [
-    "take away"
+    "take away",
+    "take down (unfasten)"
   ],
   "domain": "culina",
   "terms": [
@@ -13,6 +14,25 @@
       "period": "classical",
       "grammar": "verb, irregular",
       "gloss": "take away or remove"
+    },
+    {
+      "latin": "adimō, adimere, adēmī, adēmptum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "take away (hope, freedom, sleep, life)",
+      "grammar": "verb, third conjugation; aliquid alicui",
+      "evidence": [
+        "Traupman 389"
+      ]
+    },
+    {
+      "latin": "refīgō, refīgere, refīxī, refīxum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "take down, unfasten (something fixed)",
+      "evidence": [
+        "Traupman 389"
+      ]
     }
   ],
   "phrases": [
@@ -29,7 +49,9 @@
   "sources": [
     "<a href=\"https://alatius.com/ls/index.php?l=aufero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aufero</a>",
     "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>",
-    "The example sentence marked “composed” is ours."
+    "The example sentence marked “composed” is ours.",
+    "<a href=\"https://logeion.uchicago.edu/adimo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: adimo</a>",
+    "<a href=\"https://logeion.uchicago.edu/refigo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: refigo</a>"
   ],
   "review": {
     "status": "draft",

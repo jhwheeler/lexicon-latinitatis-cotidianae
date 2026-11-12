@@ -6,7 +6,9 @@
     "running",
     "trot",
     "jog",
-    "at a trot"
+    "at a trot",
+    "run around",
+    "run up and down"
   ],
   "domain": "corpus",
   "terms": [
@@ -47,6 +49,15 @@
         "Plaut. Merc. 1.2.10 (Lewis &amp; Short)",
         "Traupman 65"
       ]
+    },
+    {
+      "latin": "cursō, cursāre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "run about, run to and fro",
+      "evidence": [
+        "Traupman 373"
+      ]
     }
   ],
   "phrases": [
@@ -59,6 +70,11 @@
       "latin": "ad olīvam tolūtim cucurrit truncumque manū tangēns «Valē, olīva!» inquit",
       "english": "he trotted over to the olive tree and, touching the trunk, said, “Goodbye, olive tree!”",
       "source": "Libellus V, <span lang=\"la\">Lisbōna: castellum et ōceanārium</span>"
+    },
+    {
+      "latin": "modo hūc modo illūc cursāre",
+      "english": "to run up and down",
+      "source": "Traupman 373"
     }
   ],
   "related": [
@@ -67,7 +83,7 @@
     "tired"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/curro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: curro</a> · <a href=\"https://logeion.uchicago.edu/tolutim\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tolutim</a>",
+    "<a href=\"https://logeion.uchicago.edu/curro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: curro</a> · <a href=\"https://logeion.uchicago.edu/tolutim\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tolutim</a> · <a href=\"https://logeion.uchicago.edu/curso\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: curso</a>",
     "<a href=\"https://logeion.uchicago.edu/cursura\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cursura</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 60, 65, checked against the searchable text of the book (29 October 2026).",
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."

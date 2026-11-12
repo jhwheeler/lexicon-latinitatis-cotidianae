@@ -10,7 +10,10 @@
     "hand me that food",
     "hand over",
     "hold out",
-    "hand me the book"
+    "hand me the book",
+    "pass around",
+    "pass round",
+    "pass the bread"
   ],
   "domain": "sermo",
   "terms": [
@@ -26,6 +29,16 @@
         "Traupman 99: <span lang=\"la\">porrige mihi illum cibum</span>"
       ],
       "comment": "Lewis &amp; Short: “to hold forth, reach out, to offer, present”. At table the short way is <span lang=\"la\">cedo</span> (give it here)."
+    },
+    {
+      "latin": "circumferō, circumferre, circumtulī, circumlātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "pass round (a dish, a cup)",
+      "evidence": [
+        "Plaut. Pers. 5.2.45: <span lang=\"la\">age circumfer mulsum</span>, pass around the mead (Lewis &amp; Short)",
+        "Traupman 357"
+      ]
     }
   ],
   "phrases": [
@@ -38,15 +51,25 @@
       "latin": "Librum cedo (cette).",
       "english": "Hand me the book.",
       "source": "Traupman 33"
+    },
+    {
+      "latin": "Porrige pānem, quaesō.",
+      "english": "Pass the bread, please.",
+      "source": "Traupman 357"
+    },
+    {
+      "latin": "manum porrigere",
+      "english": "to reach out the hand",
+      "source": "Traupman 369"
     }
   ],
   "related": [
     "give-it-here"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/porrigo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: porrigo</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 99, checked against the searchable text and the page image (12 November 2026).",
-    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "<a href=\"https://logeion.uchicago.edu/porrigo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: porrigo</a> · <a href=\"https://logeion.uchicago.edu/circumfero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: circumfero</a>"
   ],
   "review": {
     "status": "draft",

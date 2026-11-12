@@ -9,7 +9,11 @@
     "what’s your opinion?",
     "difference of opinion",
     "give an opinion",
-    "form an opinion"
+    "form an opinion",
+    "express an opinion",
+    "what is your opinion about",
+    "in my judgement",
+    "judgement"
   ],
   "domain": "verba",
   "terms": [
@@ -43,7 +47,8 @@
       "gloss": "judgement, a considered opinion",
       "evidence": [
         "Cic. Att. 5.1.4: <span lang=\"la\">meō jūdiciō</span>",
-        "Traupman 354"
+        "Traupman 354",
+        "Traupman 335"
       ]
     }
   ],
@@ -67,6 +72,21 @@
       "latin": "jūdicium facere",
       "english": "to form an opinion",
       "source": "Traupman 318"
+    },
+    {
+      "latin": "sententiam dīcere",
+      "english": "to express an opinion",
+      "source": "Traupman 354"
+    },
+    {
+      "latin": "meō jūdiciō",
+      "english": "in my opinion",
+      "source": "Traupman 354"
+    },
+    {
+      "latin": "Quid opīnāris dē (+ abl.)?",
+      "english": "What is your opinion about …?",
+      "source": "Traupman 354"
     }
   ],
   "related": [
@@ -79,11 +99,12 @@
     "<a href=\"https://logeion.uchicago.edu/sententia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sententia</a> · <a href=\"https://logeion.uchicago.edu/opinio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: opinio</a> · <a href=\"https://logeion.uchicago.edu/judicium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: judicium</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 21, 177, 354, checked against the searchable text of the book (9 November 2026).: p. 318.",
     "Quotations from the Latinitas loci collections (loci-terentius, loci-seneca-epistulae), checked against the editions named there.",
-    "Cicero (Att. 5.1.4, 7.13a.3; Fam. 1.9.22, 14.23.1; de Or. 1.20) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+    "Cicero (Att. 5.1.4, 7.13a.3; Fam. 1.9.22, 14.23.1; de Or. 1.20) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 21, 177, 354, checked against the searchable text of the book (9 November 2026).: p. 335."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

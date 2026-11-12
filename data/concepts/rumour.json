@@ -1,0 +1,85 @@
+{
+  "id": "rumour",
+  "english": "rumour",
+  "pos": "noun",
+  "also": [
+    "gossip (talk)",
+    "gossip (person)",
+    "hearsay",
+    "go around (of a rumour)",
+    "word is going around",
+    "rumor",
+    "there’s a rumour going around",
+    "gossip (report)"
+  ],
+  "domain": "sermo",
+  "terms": [
+    {
+      "latin": "rūmor, rūmōris m.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "rumour, hearsay, talk",
+      "evidence": [
+        "Traupman 323",
+        "Traupman 373"
+      ],
+      "comment": "Often plural, <span lang=\"la\">rūmōrēs</span>, the talk of the town."
+    },
+    {
+      "latin": "fāma, fāmae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "report, what people say",
+      "evidence": []
+    },
+    {
+      "latin": "pervagor, pervagārī, pervagātus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "go around, spread (of a report)",
+      "evidence": [
+        "Cic. Verr. 2.4.64: <span lang=\"la\">quod in exterīs nātiōnibus ūsque ad ultimās terrās pervagātum est</span> (Lewis &amp; Short)",
+        "Traupman 322"
+      ],
+      "comment": "To spread far and wide; the perfect participle <span lang=\"la\">pervagātus</span> is “widely known”."
+    },
+    {
+      "latin": "fāmigerātor, fāmigerātōris m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "gossip, talebearer (the person)",
+      "register": "vōx cōmica: Plaut.",
+      "evidence": [
+        "Plaut. Trin. 1.2.178 (Lewis &amp; Short)",
+        "Traupman 323"
+      ],
+      "comment": "Traupman also gives a feminine, <span lang=\"la\">fāmigerātrīx</span>, for which we have found no classical instance."
+    }
+  ],
+  "related": [
+    "chatter",
+    "reputation"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/rumor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: rumor</a>",
+    "<a href=\"https://logeion.uchicago.edu/fama\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fama</a>",
+    "<a href=\"https://logeion.uchicago.edu/pervagor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pervagor</a>",
+    "<a href=\"https://logeion.uchicago.edu/famigerator\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: famigerator</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 322; p. 323.",
+    "<a href=\"https://logeion.uchicago.edu/rumor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: rumor</a> · <a href=\"https://logeion.uchicago.edu/fama\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fama</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 373."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-12",
+    "by": "Claude"
+  },
+  "phrases": [
+    {
+      "latin": "Rūmor pervagātur.",
+      "english": "There’s a rumour going around.",
+      "source": "Traupman 373"
+    }
+  ]
+}

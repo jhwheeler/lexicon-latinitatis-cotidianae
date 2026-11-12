@@ -8,19 +8,48 @@
   "also": [
     "asleep",
     "be asleep",
-    "sleeping"
+    "sleeping",
+    "go to sleep",
+    "fall asleep",
+    "doze off",
+    "deep sleep",
+    "put to sleep"
   ],
   "domain": "sermo",
   "terms": [
     {
       "latin": "dormiō, dormīre, dormīvī, dormītum",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "evidence": [
+        "Traupman 380"
+      ]
     },
     {
       "latin": "somnus, somnī m.",
       "status": "recommended",
       "period": "classical"
+    },
+    {
+      "latin": "obdormīscō, obdormīscere, obdormīvī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "fall asleep, doze off",
+      "evidence": [
+        "Plaut. Rud. 2.7.33: <span lang=\"la\">ibidem obdormīscēmus</span> (Lewis &amp; Short)",
+        "Traupman 380"
+      ]
+    },
+    {
+      "latin": "sopor, sopōris m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "deep sleep",
+      "register": "vōx plērumque poētica: Verg., Ov.; nōn apud Cic.",
+      "evidence": [
+        "Traupman 380"
+      ],
+      "comment": "Lewis &amp; Short: mostly poetic and post-Augustan prose; not in Cicero."
     }
   ],
   "phrases": [
@@ -38,6 +67,16 @@
       "latin": "Satisne dormīvistī?",
       "english": "Did you sleep enough?",
       "source": "composed"
+    },
+    {
+      "latin": "dormītum īre",
+      "english": "to go to sleep",
+      "source": "Traupman 380"
+    },
+    {
+      "latin": "in somnum collocāre",
+      "english": "to put to sleep",
+      "source": "Traupman 380"
     }
   ],
   "related": [
@@ -54,7 +93,9 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/dormio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dormio</a> · <a href=\"https://logeion.uchicago.edu/somnus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: somnus</a>",
     "Quotations from the Latinitas loci collections (loci-plautus), checked against the editions named there.",
-    "The example sentences marked “composed” are ours."
+    "The example sentences marked “composed” are ours.",
+    "<a href=\"https://logeion.uchicago.edu/obdormisco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: obdormisco</a>",
+    "<a href=\"https://logeion.uchicago.edu/sopor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sopor</a>"
   ],
   "replaces": [
     "entry-56"

@@ -5,7 +5,9 @@
   "also": [
     "prepositions",
     "prefix",
-    "what case does this preposition take?"
+    "what case does this preposition take?",
+    "preposition with the accusative",
+    "preposition with the ablative"
   ],
   "domain": "schola",
   "terms": [
@@ -17,7 +19,9 @@
       "evidence": [
         "Quint. 1.7.5: <span lang=\"la\">ut ad, cum esset praepositiō, d litteram … acciperet</span>",
         "Cic. Or. 158; Varr. LL 6.76 (Lewis &amp; Short)",
-        "Traupman 220, 236, 248"
+        "Traupman 220, 236, 248",
+        "Cic. Or. 158 (Lewis &amp; Short)",
+        "Traupman 364"
       ],
       "comment": "The word “put before” its noun, and also the prefix put before a verb: Quintilian’s compound words <span lang=\"la\">aut praepositiōnibus subjunguntur ut innocēns</span> (1.5.65); Traupman’s <span lang=\"la\">praepositiō per compositiōnem</span> for a prefix (248). Latin prepositions take the accusative or the ablative; Traupman’s formula is <span lang=\"la\">praepositiōnēs aut accūsātīvō aut ablātīvō cāsuī serviunt</span>, literally “serve the case” (248), a use of <span lang=\"la\">servīre</span> that is not found in Lewis &amp; Short; say rather that a preposition is joined with a case, <span lang=\"la\">cum accūsātīvō jungitur</span>."
     }
@@ -37,6 +41,21 @@
       "latin": "Quibus cāsibus praepositiōnēs serviunt?",
       "english": "What cases do prepositions take?",
       "source": "Traupman 236"
+    },
+    {
+      "latin": "“Ad” praepositiō cāsuī accūsātīvō servit.",
+      "english": "The preposition “ad” takes the accusative case.",
+      "source": "Traupman 389"
+    },
+    {
+      "latin": "praepositiō per compositiōnem",
+      "english": "a prefix",
+      "source": "Traupman 364"
+    },
+    {
+      "latin": "Praepositiōnēs aut accūsātīvō aut ablātīvō cāsuī serviunt.",
+      "english": "Prepositions take either the accusative or the ablative case.",
+      "source": "Traupman 364"
     }
   ],
   "related": [
@@ -44,17 +63,22 @@
     "case-grammar",
     "accusative",
     "ablative",
-    "compound"
+    "compound",
+    "grammar",
+    "noun",
+    "verb"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/praepositio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praepositio</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 220, p. 236, p. 248.",
     "Quintilian checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>, and cited by its numbering.",
-    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 364."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "sense": "in grammar"
 }

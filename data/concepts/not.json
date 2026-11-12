@@ -10,7 +10,9 @@
     "doesn’t",
     "do not",
     "does not",
-    "did not"
+    "did not",
+    "not at all",
+    "not that"
   ],
   "domain": "verba",
   "terms": [
@@ -22,7 +24,8 @@
       "grammar": "adverb, before the word it negates; with the verb, usually just before it",
       "evidence": [
         "Ter. And. 194: <span lang=\"la\">Dāvus sum, nōn Oedipūs.</span>",
-        "Hor. Ep. 1.14.36: <span lang=\"la\">nec lūsisse pudet, sed nōn incīdere lūdum</span>"
+        "Hor. Ep. 1.14.36: <span lang=\"la\">nec lūsisse pudet, sed nōn incīdere lūdum</span>",
+        "Traupman 352"
       ],
       "comment": "The negative of statements and questions. “And not” is <span lang=\"la\">nec</span>; “not even”, <span lang=\"la\">nē … quidem</span>; “not yet”, <span lang=\"la\">nōndum</span>. A double negative makes a positive: <span lang=\"la\">nōn nēmō</span>, somebody; <span lang=\"la\">nōn nihil</span>, something."
     },
@@ -49,6 +52,36 @@
         "Plaut. Mil. 1345: <span lang=\"la\">Nē timē, voluptās mea.</span>"
       ],
       "comment": "The negative of the will: “don’t …!”, “may it not …”, “so that … not”. Prose forbids with <span lang=\"la\">nōlī</span> + infinitive or <span lang=\"la\">nē</span> + perfect subjunctive (<span lang=\"la\">nē admīserīs</span>)."
+    },
+    {
+      "latin": "omnīnō nōn",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "not at all",
+      "evidence": [
+        "Cic. Att. 3.23.2: <span lang=\"la\">ut vix aut omnīnō nōn posset … īnfirmārī sua lēx</span>, not at all (Lewis &amp; Short s.v. <span lang=\"la\">omnīnō</span>)"
+      ],
+      "comment": "With <span lang=\"la\">omnīnō</span> before the negative the sense is “not at all”; after it, <span lang=\"la\">nōn omnīnō</span> is “not entirely”: <span lang=\"la\">nōn omnīnō quidem, sed magnam partem</span> (Cic. Fam. 9.15.3, Lewis &amp; Short)."
+    },
+    {
+      "latin": "nōn omnīnō",
+      "status": "avoid",
+      "period": "classical",
+      "gloss": "Traupman’s “not at all”; classically “not entirely”",
+      "evidence": [
+        "Traupman 352"
+      ],
+      "comment": "Cicero’s <span lang=\"la\">nōn omnīnō quidem, sed magnam partem</span> (Fam. 9.15.3) means “not entirely, but for the most part”; for “not at all” put <span lang=\"la\">omnīnō</span> first, or say <span lang=\"la\">nihil omnīnō</span>, <span lang=\"la\">minimē</span>."
+    },
+    {
+      "latin": "nōn quod (+ subj.)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "not that …",
+      "grammar": "conjunction phrase with the subjunctive: a reason rejected",
+      "evidence": [
+        "Traupman 352"
+      ]
     }
   ],
   "phrases": [
@@ -91,12 +124,13 @@
     "dont"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/non\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: non</a> · <a href=\"https://logeion.uchicago.edu/haud\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: haud</a> · <a href=\"https://logeion.uchicago.edu/ne\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ne</a>",
-    "Quotations from the Latinitas loci collections (loci-terentius, loci-horatius, loci-tacitus, loci-plautus, loci-seneca-epistulae), checked against the editions named there."
+    "<a href=\"https://logeion.uchicago.edu/non\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: non</a> · <a href=\"https://logeion.uchicago.edu/haud\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: haud</a> · <a href=\"https://logeion.uchicago.edu/ne\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ne</a> · <a href=\"https://logeion.uchicago.edu/omnino\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: omnino</a>",
+    "Quotations from the Latinitas loci collections (loci-terentius, loci-horatius, loci-tacitus, loci-plautus, loci-seneca-epistulae), checked against the editions named there.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 352."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

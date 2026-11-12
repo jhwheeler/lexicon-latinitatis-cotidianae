@@ -23,7 +23,10 @@
       "status": "recommended",
       "period": "classical",
       "comment": "<span lang=\"la\">paulum cinnamōmī</span> is our easy way to say “a pinch of cinnamon,” without implying an exact measure. With a verb it is an adverb: <span lang=\"la\">paulum redormiō</span>, I sleep a little more.",
-      "grammar": "noun, second declension, with a genitive (paulum silvae); with verbs, an adverb"
+      "grammar": "noun, second declension, with a genitive (paulum silvae); with verbs, an adverb",
+      "evidence": [
+        "Traupman 340"
+      ]
     },
     {
       "latin": "paululum, paululī n.",
@@ -32,7 +35,8 @@
       "gloss": "a tiny bit, a very little",
       "grammar": "noun, second declension (diminutive of paulum); also an adverb",
       "evidence": [
-        "Plaut. Curc. 1.2.31: <span lang=\"la\">dē paulō paululum hoc tibi dabō</span> (Lewis &amp; Short)"
+        "Plaut. Curc. 1.2.31: <span lang=\"la\">dē paulō paululum hoc tibi dabō</span> (Lewis &amp; Short)",
+        "Traupman 340"
       ]
     },
     {
@@ -78,6 +82,11 @@
       "latin": "cum autem paulum firmitātis accessit",
       "english": "but once they have gained a little strength",
       "source": "Cic. Fin. 5.42"
+    },
+    {
+      "latin": "paulō amplior",
+      "english": "a little bigger",
+      "source": "Traupman 340"
     }
   ],
   "related": [
@@ -94,11 +103,12 @@
     "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>",
     "The example sentences marked “composed” are ours.",
     "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition.",
-    "Quotations from the Latinitas loci collections and the note on quantity words, checked against the editions named there."
+    "Quotations from the Latinitas loci collections and the note on quantity words, checked against the editions named there.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 340."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

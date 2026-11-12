@@ -10,7 +10,8 @@
     "get over (an illness)",
     "convalesce",
     "convalescence",
-    "be on the mend"
+    "be on the mend",
+    "get over (grief, anger)"
   ],
   "domain": "corpus",
   "terms": [
@@ -50,6 +51,26 @@
         "Traupman 65, 369: <span lang=\"la\">valētūdinem bonam (suam) recipere</span>"
       ],
       "comment": "Traupman’s phrase, made of classical words: to get one’s health back."
+    },
+    {
+      "latin": "superō, superāre, superāvī, superātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "get over (grief, anger, a difficulty)",
+      "evidence": [
+        "Traupman 321"
+      ],
+      "comment": "Traupman’s word for getting over grief or anger, not an illness: to overcome it."
+    },
+    {
+      "latin": "revalēscō, revalēscere, revaluī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "get well again",
+      "evidence": [
+        "Traupman 369"
+      ],
+      "comment": "Poetic and post-Augustan (Lewis &amp; Short)."
     }
   ],
   "phrases": [
@@ -67,6 +88,11 @@
       "latin": "An convaluit? — Paulātim convalēscit, grātia Deō.",
       "english": "Has she recovered? — She’s slowly getting better, thank God.",
       "source": "Cord. Coll. II 67"
+    },
+    {
+      "latin": "ē gravī morbō recreārī",
+      "english": "to recover from a serious illness",
+      "source": "Traupman 369"
     }
   ],
   "related": [
@@ -76,11 +102,13 @@
     "disease"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/convalesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: convalesco</a> · <a href=\"https://logeion.uchicago.edu/recreo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: recreo</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 65, 369, 63, checked against the searchable text of the book (11 November 2026).: p. 296.",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. recover, get better, get well.",
     "Quotations from the Latinitas loci collections (loci-seneca-epistulae, loci-corderius), checked against the editions named there.",
-    "Cicero as Lewis &amp; Short quotes him. Corderius’s colloquies are post-classical school Latin; the line is checked against one transcription only."
+    "Cicero as Lewis &amp; Short quotes him. Corderius’s colloquies are post-classical school Latin; the line is checked against one transcription only.",
+    "<a href=\"https://logeion.uchicago.edu/supero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: supero</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 65, 369, 63, checked against the searchable text of the book (11 November 2026).: p. 321.",
+    "<a href=\"https://logeion.uchicago.edu/convalesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: convalesco</a> · <a href=\"https://logeion.uchicago.edu/recreo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: recreo</a> · <a href=\"https://logeion.uchicago.edu/revalesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: revalesco</a>"
   ],
   "review": {
     "status": "draft",

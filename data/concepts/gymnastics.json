@@ -7,7 +7,9 @@
     "do gymnastics",
     "vaulting horse",
     "pommel horse",
-    "horse (gymnastics)"
+    "horse (gymnastics)",
+    "parallel bars",
+    "gymnastic"
   ],
   "domain": "ludi",
   "terms": [
@@ -37,6 +39,17 @@
         "Quint. 2.15.25 (Lewis &amp; Short)"
       ],
       "comment": "Quintilian’s Latin for Plato’s γυμναστική, bodily training in general rather than the modern sport."
+    },
+    {
+      "latin": "gymnasticus, gymnastica, gymnasticum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "gymnastic",
+      "evidence": [
+        "Plaut. Rud. 2.1.7: <span lang=\"la\">prō exercitū gymnasticō et palaestricō</span> (Lewis &amp; Short)",
+        "Traupman 324"
+      ],
+      "comment": "Plautine; Cicero uses <span lang=\"la\">gymnicus</span> (Lewis &amp; Short)."
     }
   ],
   "related": [
@@ -48,7 +61,7 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/gymnasticus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gymnasticus</a> · <a href=\"https://logeion.uchicago.edu/exercitatrix\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: exercitatrix</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: p. 48, 64, checked against the searchable text of the book on 11 November 2026."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: p. 48, 64, checked against the searchable text of the book on 11 November 2026; p. 324."
   ],
   "review": {
     "status": "draft",
@@ -60,6 +73,11 @@
       "latin": "equuleus",
       "english": "the vaulting horse",
       "source": "Traupman 48"
+    },
+    {
+      "latin": "hastae parallēlae",
+      "english": "the parallel bars",
+      "source": "Traupman 356"
     }
   ]
 }

@@ -11,7 +11,10 @@
     "smart (impertinent)",
     "arrogance",
     "pompous",
-    "boastful"
+    "boastful",
+    "don’t talk smart to me",
+    "be stuck-up",
+    "talk back"
   ],
   "domain": "verba",
   "terms": [
@@ -23,7 +26,8 @@
       "grammar": "adjective",
       "evidence": [
         "Plaut. Asin. 470: <span lang=\"la\">nōn decet superbum esse hominem servom</span>",
-        "Cic. Att. 8.4.1: <span lang=\"la\">superbum sē praebuit</span>"
+        "Cic. Att. 8.4.1: <span lang=\"la\">superbum sē praebuit</span>",
+        "Traupman 326"
       ],
       "comment": "The usual word, always in a bad sense in classical prose: one who thinks himself above others, and so rude and overbearing (Lewis &amp; Short). The noun is <span lang=\"la\">superbia</span>, pride. In poetry it can also be “proud of, splendid” (see proud, pleased)."
     },
@@ -74,9 +78,29 @@
       "period": "classical",
       "gloss": "boastful, vainglorious",
       "evidence": [
-        "Traupman 156"
+        "Traupman 156",
+        "Traupman 366"
       ],
       "comment": "Also “glorious”; in the sense of boasting as in the title of Plautus’s <span lang=\"la\">Mīles glōriōsus</span>."
+    },
+    {
+      "latin": "fastīdiōsus, fastīdiōsa, fastīdiōsum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "disdainful, stuck-up",
+      "evidence": [
+        "Traupman 386"
+      ]
+    },
+    {
+      "latin": "vultuōsus, vultuōsa, vultuōsum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "full of airs, affected",
+      "evidence": [
+        "Cic. Or. 60: <span lang=\"la\">nē quid ineptum aut vultuōsum sit</span> (Lewis &amp; Short)",
+        "Traupman 386"
+      ]
     }
   ],
   "phrases": [
@@ -94,6 +118,21 @@
       "latin": "Contrītiōnem praecēdit superbia, et ante ruīnam exaltātur spīritus.",
       "english": "Pride goes before destruction, and a haughty spirit before a fall.",
       "source": "Vulg. Prov. 16.18"
+    },
+    {
+      "latin": "Nōlī male mihi dīcere.",
+      "english": "Don’t talk smart to me.",
+      "source": "Traupman 381"
+    },
+    {
+      "latin": "fastīdīre",
+      "english": "to be stuck-up",
+      "source": "Traupman 386"
+    },
+    {
+      "latin": "īnsolenter respondēre (+ dat.)",
+      "english": "to talk back (to)",
+      "source": "Traupman 390"
     }
   ],
   "related": [
@@ -104,9 +143,10 @@
     "<a href=\"https://logeion.uchicago.edu/effero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: effero</a>",
     "<a href=\"https://logeion.uchicago.edu/arrogantia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: arrogantia</a>",
     "<a href=\"https://logeion.uchicago.edu/superbus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: superbus</a> · <a href=\"https://logeion.uchicago.edu/arrogans\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: arrogans</a> · <a href=\"https://logeion.uchicago.edu/insolens\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: insolens</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 149, checked against the searchable text of the book (11 November 2026).",
     "Plautus and Cicero’s letters checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026). Livy, Phaedrus and the Vulgate from the Latinitas loci collections (loci-livius, loci-phaedrus, loci-vulgata), checked against the editions named there.",
-    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "<a href=\"https://logeion.uchicago.edu/vultuosus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vultuosus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 149, checked against the searchable text of the book (11 November 2026).: p. 326."
   ],
   "review": {
     "status": "draft",

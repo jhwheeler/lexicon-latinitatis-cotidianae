@@ -13,7 +13,9 @@
     "skilfulness",
     "bright (of a person)",
     "expressive (of the eyes)",
-    "shrewdness"
+    "shrewdness",
+    "gifted",
+    "ingenious"
   ],
   "domain": "sermo",
   "terms": [
@@ -32,7 +34,8 @@
       "period": "classical",
       "evidence": [
         "Traupman 158",
-        "Traupman 108: <span lang=\"la\">ingeniōsa est</span>"
+        "Traupman 108: <span lang=\"la\">ingeniōsa est</span>",
+        "Traupman 321"
       ]
     },
     {
@@ -64,6 +67,17 @@
       "evidence": [
         "Traupman 150, 152"
       ]
+    },
+    {
+      "latin": "artificiōsus, artificiōsa, artificiōsum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "ingenious, skilful, artful",
+      "evidence": [
+        "Cic. Inv. 1.35 (Lewis &amp; Short)",
+        "Traupman 333"
+      ],
+      "comment": "Perhaps only in Cicero and the Rhetorica ad Herennium (Lewis &amp; Short)."
     }
   ],
   "sources": [
@@ -73,11 +87,20 @@
     "<a href=\"https://logeion.uchicago.edu/arguo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: arguo</a>",
     "<a href=\"https://logeion.uchicago.edu/calliditas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: calliditas</a>",
     "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): pp. 158, 28; p. 292."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): pp. 158, 28; p. 292.",
+    "<a href=\"https://logeion.uchicago.edu/artificiosus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: artificiosus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): pp. 158, 28; p. 321; p. 333."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "Ingeniōsa est.",
+      "english": "She is smart.",
+      "source": "Traupman 381"
+    }
+  ]
 }

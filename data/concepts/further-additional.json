@@ -13,7 +13,9 @@
     "any further",
     "nothing further",
     "in addition",
-    "in addition to"
+    "in addition to",
+    "for that matter",
+    "what’s more"
   ],
   "domain": "verba",
   "terms": [
@@ -38,7 +40,8 @@
       "evidence": [
         "Liv. praef. 4: <span lang=\"la\">rēs est praetereā et immēnsī operis</span>",
         "Cic. de Or. 1.60 (Lewis &amp; Short)",
-        "Traupman 279"
+        "Traupman 279",
+        "Traupman 347"
       ]
     },
     {
@@ -76,6 +79,18 @@
         "Caes. BC 3.57: <span lang=\"la\">ut praeter auctōritātem vīrēs quoque ad coercendum habēret</span>"
       ],
       "comment": "Lewis &amp; Short: “of that besides which there is something else in addition, besides, together with, in addition to”. It also means “except”: <span lang=\"la\">hoc nēminī praeter mē vidētur</span> (Cic. Att. 1.1.2, Lewis &amp; Short)."
+    },
+    {
+      "latin": "adeō",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "moreover, besides, too; for that matter",
+      "register": "vōx cōmica in hōc sēnsū (Lewis &amp; Short: “only in the comic poets”)",
+      "evidence": [
+        "Plaut. (Lewis &amp; Short s.v. <span lang=\"la\">adeō</span>: <span lang=\"la\">ibi tibi adeō lectus dabitur</span>, a bed, too, shall be given you there)",
+        "Traupman 344: for that matter, <span lang=\"la\">adeō</span>"
+      ],
+      "comment": "In this sense <span lang=\"la\">adeō</span> adds one more point (“and what’s more”); in prose it usually means “so far, to such a degree” or, placed after a word, “just, precisely”."
     }
   ],
   "phrases": [
@@ -102,15 +117,16 @@
     "extra"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/amplus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: amplus (amplius)</a> · <a href=\"https://logeion.uchicago.edu/praeterea\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praeterea</a> · <a href=\"https://logeion.uchicago.edu/porro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: porro</a> · <a href=\"https://logeion.uchicago.edu/accedo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: accedo</a> · <a href=\"https://logeion.uchicago.edu/praeter\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praeter</a>",
     "Michiel de Vaan, <em>Etymological Dictionary of Latin and the other Italic Languages</em> (2008), p. 481.",
     "Quotations from the Latinitas loci collections (loci-horatius, loci-livius, loci-tacitus, loci-quintilianus), checked against the editions named there.",
     "Caesar, <em>Bellum civile</em> 3, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026).",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 268, p. 279."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 268, p. 279.",
+    "<a href=\"https://logeion.uchicago.edu/amplus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: amplus (amplius)</a> · <a href=\"https://logeion.uchicago.edu/praeterea\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praeterea</a> · <a href=\"https://logeion.uchicago.edu/porro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: porro</a> · <a href=\"https://logeion.uchicago.edu/accedo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: accedo</a> · <a href=\"https://logeion.uchicago.edu/praeter\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praeter</a> · <a href=\"https://logeion.uchicago.edu/adeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: adeo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 344; p. 347."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

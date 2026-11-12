@@ -12,7 +12,10 @@
     "troop",
     "a troop of",
     "bunch (of people)",
-    "cluster (of people)"
+    "cluster (of people)",
+    "throng",
+    "pack (a theatre)",
+    "packed"
   ],
   "also_under": [
     "sermo"
@@ -64,7 +67,18 @@
       "period": "classical",
       "gloss": "a crowd, throng",
       "evidence": [
-        "Traupman 299"
+        "Traupman 299",
+        "Traupman 355"
+      ]
+    },
+    {
+      "latin": "stīpō, stīpāre, stīpāvī, stīpātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "pack, crowd, throng (a place)",
+      "evidence": [
+        "Hor. Ep. 2.1.60: <span lang=\"la\">artō stīpāta theātrō</span>, packed into the crowded theatre (Lewis &amp; Short)",
+        "Traupman 355"
       ]
     }
   ],
@@ -89,14 +103,15 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/turba\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: turba</a>",
-    "<a href=\"https://logeion.uchicago.edu/grex\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: grex</a> · <a href=\"https://logeion.uchicago.edu/caterva\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: caterva</a> · <a href=\"https://logeion.uchicago.edu/circulus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: circulus</a> · <a href=\"https://logeion.uchicago.edu/globus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: globus</a> · <a href=\"https://logeion.uchicago.edu/gregatim\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gregatim</a>",
     "Quotations from the Latinitas loci collections (loci-plinius), checked against the editions named there.",
     "Horace, Ep. 1.9 checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026).",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 299."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 299.",
+    "<a href=\"https://logeion.uchicago.edu/grex\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: grex</a> · <a href=\"https://logeion.uchicago.edu/caterva\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: caterva</a> · <a href=\"https://logeion.uchicago.edu/circulus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: circulus</a> · <a href=\"https://logeion.uchicago.edu/globus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: globus</a> · <a href=\"https://logeion.uchicago.edu/gregatim\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gregatim</a> · <a href=\"https://logeion.uchicago.edu/stipo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: stipo</a> · <a href=\"https://logeion.uchicago.edu/turba\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: turba</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 355."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

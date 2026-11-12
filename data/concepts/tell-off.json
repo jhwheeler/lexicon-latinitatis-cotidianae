@@ -8,7 +8,14 @@
     "chew out",
     "give someone a telling-off",
     "reprimand",
-    "why did he chew you out?"
+    "why did he chew you out?",
+    "nag",
+    "keep scolding",
+    "scolding",
+    "get a scolding",
+    "give someone heck",
+    "catch hell",
+    "I’m going to catch it"
   ],
   "domain": "sermo",
   "terms": [
@@ -18,7 +25,9 @@
       "period": "classical",
       "gloss": "scold, tell off, reprove",
       "evidence": [
-        "Cic. Cael. 25: <span lang=\"la\">objurgāvit M. Caelium, sīcut nēminem umquam parēns</span> (Lewis &amp; Short)"
+        "Cic. Cael. 25: <span lang=\"la\">objurgāvit M. Caelium, sīcut nēminem umquam parēns</span> (Lewis &amp; Short)",
+        "Traupman 375",
+        "Traupman 327"
       ],
       "comment": "Lewis &amp; Short: to chide, scold, rebuke (frequent and classical)."
     },
@@ -44,6 +53,27 @@
         "Traupman 290"
       ],
       "comment": "Traupman gives it for “why did the instructor chew you out?”. Lewis &amp; Short knows pilāre only as to strip of hair and, rarely and late, to plunder; it is not a word for scolding."
+    },
+    {
+      "latin": "objurgitō, objurgitāre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "keep scolding, nag",
+      "register": "vōx cōmica: Plaut.",
+      "evidence": [
+        "Plaut. Trin. 1.2.30 (Lewis &amp; Short)",
+        "Traupman 349"
+      ]
+    },
+    {
+      "latin": "objurgātiō, objurgātiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a scolding, a telling-off",
+      "evidence": [
+        "Cic. Lael. 89: <span lang=\"la\">ut objurgātiō contumēliā careat</span> (Lewis &amp; Short)",
+        "Traupman 375"
+      ]
     }
   ],
   "phrases": [
@@ -51,13 +81,29 @@
       "latin": "monendī amīcī saepe sunt et objurgandī",
       "english": "friends must often be advised, and told off",
       "source": "Cic. Lael. 88 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "objurgārī",
+      "english": "to get a scolding",
+      "source": "Traupman 375"
+    },
+    {
+      "latin": "aliquem verbīs malīs objūrgāre",
+      "english": "to give someone heck",
+      "source": "Traupman 327"
+    },
+    {
+      "latin": "Habēbō convīcium.",
+      "english": "I’m going to catch hell.",
+      "source": "Traupman 327"
     }
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/objurgo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: objurgo</a> · <a href=\"https://logeion.uchicago.edu/pilo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pilo</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 95, checked against the searchable text and the page images of the book.: p. 290.",
     "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
-    "<a href=\"https://logeion.uchicago.edu/increpo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: increpo</a>"
+    "<a href=\"https://logeion.uchicago.edu/increpo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: increpo</a>",
+    "<a href=\"https://logeion.uchicago.edu/objurgo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: objurgo</a> · <a href=\"https://logeion.uchicago.edu/pilo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pilo</a> · <a href=\"https://logeion.uchicago.edu/objurgito\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: objurgito</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 95, checked against the searchable text and the page images of the book.: p. 327."
   ],
   "review": {
     "status": "draft",

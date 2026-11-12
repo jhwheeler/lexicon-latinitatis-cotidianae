@@ -4,7 +4,9 @@
   "pos": "adjective",
   "also": [
     "industrious",
-    "painstaking"
+    "painstaking",
+    "diligent",
+    "hardworking"
   ],
   "domain": "verba",
   "terms": [
@@ -14,8 +16,10 @@
       "period": "classical",
       "gloss": "laborious; hard-working",
       "evidence": [
-        "Traupman 153"
-      ]
+        "Traupman 153",
+        "Traupman 326"
+      ],
+      "comment": "Most often of things, “laborious, toilsome” (<span lang=\"la\">nihil labōriōsius</span>, Cic. Leg. 3.19); of a person it means one who toils and suffers. For a diligent person, <span lang=\"la\">industrius</span>."
     },
     {
       "latin": "operōsus, operōsa, operōsum",
@@ -26,17 +30,33 @@
         "Cic. Sen. 26 (Lewis &amp; Short)",
         "Traupman 156"
       ]
+    },
+    {
+      "latin": "industrius, industria, industrium",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "hard-working, diligent",
+      "evidence": [
+        "Cic. Verr. 2.3.53: <span lang=\"la\">homō gnāvus et industrius</span> (Lewis &amp; Short)",
+        "Cic. Cael. 31 (Lewis &amp; Short)"
+      ]
     }
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/laboriosus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: laboriosus</a>",
     "<a href=\"https://logeion.uchicago.edu/operosus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: operosus</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, each phrase checked against the searchable text of the book.",
-    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "<a href=\"https://logeion.uchicago.edu/industrius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: industrius</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 326."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "related": [
+    "efficient",
+    "labour"
+  ]
 }

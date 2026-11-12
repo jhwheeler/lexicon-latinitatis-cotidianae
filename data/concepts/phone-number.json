@@ -5,7 +5,9 @@
   "also": [
     "telephone number",
     "number (phone)",
-    "mobile number"
+    "mobile number",
+    "local number",
+    "long-distance number"
   ],
   "domain": "computatra",
   "also_under": [
@@ -28,6 +30,16 @@
       "latin": "Dā mihi, sīs, numerum tuum tēlephōnicum.",
       "english": "Give me your phone number, please.",
       "source": "composed"
+    },
+    {
+      "latin": "numerus locālis",
+      "english": "a local number",
+      "source": "Traupman 341"
+    },
+    {
+      "latin": "numerus longinquus",
+      "english": "a long-distance number",
+      "source": "Traupman 341"
     }
   ],
   "related": [
@@ -41,7 +53,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

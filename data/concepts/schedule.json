@@ -6,7 +6,10 @@
     "timetable",
     "bus timetable",
     "train timetable",
-    "time table"
+    "time table",
+    "bus schedule",
+    "flight schedule",
+    "train schedule"
   ],
   "domain": "labor",
   "also_under": [
@@ -38,6 +41,21 @@
       "latin": "Hōrārium īnspice: quotā hōrā venit autoraeda longa?",
       "english": "Look at the timetable: what time does the bus come?",
       "source": "composed"
+    },
+    {
+      "latin": "hōrārium autoraedārum longārum",
+      "english": "a bus schedule",
+      "source": "Traupman 374"
+    },
+    {
+      "latin": "hōrārium āëroplanōrum",
+      "english": "a flight schedule",
+      "source": "Traupman 374"
+    },
+    {
+      "latin": "hōrārium trāminum",
+      "english": "a train schedule",
+      "source": "Traupman 374"
     }
   ],
   "related": [
@@ -55,7 +73,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

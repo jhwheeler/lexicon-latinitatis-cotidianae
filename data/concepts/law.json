@@ -28,7 +28,8 @@
       "evidence": [
         "Tac. Germ. 19.5: <span lang=\"la\">bonae lēgēs</span>",
         "Traupman 178, 179, 180, 195",
-        "Traupman 195: against the law, <span lang=\"la\">contrā lēgem</span>; by law, <span lang=\"la\">lēge</span>"
+        "Traupman 195: against the law, <span lang=\"la\">contrā lēgem</span>; by law, <span lang=\"la\">lēge</span>",
+        "Traupman 338"
       ],
       "comment": "A particular law, passed by the people: <span lang=\"la\">lēgem ferre</span>, to propose a law (Traupman 180); <span lang=\"la\">contrā lēgem</span>, against a law; <span lang=\"la\">lēge</span>, by law (Traupman 195)."
     },
@@ -40,9 +41,20 @@
       "evidence": [
         "Cic. Verr. 2.1.109: <span lang=\"la\">jūs cīvīle</span> (Lewis &amp; Short)",
         "Cic. Off. 1.33: <span lang=\"la\">summum jūs summa injūria</span>",
-        "Traupman 195"
+        "Traupman 195",
+        "Traupman 338"
       ],
       "comment": "The law as a body, and what is right by it: <span lang=\"la\">contrā jūs</span>, against the law (Traupman 195); <span lang=\"la\">jūs cīvīle</span>, the civil law, as a subject of study."
+    },
+    {
+      "latin": "fās (indecl.)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "divine law, what is right in the eyes of the gods",
+      "evidence": [
+        "Traupman 338"
+      ],
+      "comment": "Opposed to <span lang=\"la\">jūs</span>, human law (Lewis &amp; Short); <span lang=\"la\">fās est</span>, it is lawful, it is right."
     }
   ],
   "phrases": [
@@ -115,6 +127,21 @@
       "latin": "Spērō jūdicem summō jūre cum istīs āctūrum esse.",
       "english": "I hope the judge throws the book at them.",
       "source": "Traupman 192"
+    },
+    {
+      "latin": "lēgem pertulit",
+      "english": "he got the law passed",
+      "source": "Liv. 33.46 (Lewis &amp; Short s.v. <span lang=\"la\">perferō</span>)"
+    },
+    {
+      "latin": "rogātiōnem (lēgem) perferre",
+      "english": "to pass a bill (a law)",
+      "source": "Traupman 357"
+    },
+    {
+      "latin": "lēgem (rogātiōnem) antīquāre",
+      "english": "to reject a bill",
+      "source": "Traupman 370"
     }
   ],
   "related": [
@@ -124,12 +151,13 @@
     "state-country"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/lex\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lex</a> · <a href=\"https://logeion.uchicago.edu/jus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: jus</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 179–180, 195, checked against the searchable text of the book (9 November 2026).",
     "Tacitus from the Latinitas loci collection (loci-tacitus); Cicero’s <em>De officiis</em> checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> and <em>De legibus</em> against the Latin Library text (9 November 2026).",
     "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 195, each phrase checked against the searchable text of the book.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 192–197, each phrase checked against the searchable text of the book."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 192–197, each phrase checked against the searchable text of the book.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 179–180, 195, checked against the searchable text of the book (9 November 2026).: p. 338.",
+    "<a href=\"https://logeion.uchicago.edu/fas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fas</a>",
+    "<a href=\"https://logeion.uchicago.edu/lex\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lex</a> · <a href=\"https://logeion.uchicago.edu/jus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: jus</a> · <a href=\"https://logeion.uchicago.edu/perfero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: perfero</a>"
   ],
   "review": {
     "status": "draft",

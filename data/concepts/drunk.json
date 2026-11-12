@@ -5,7 +5,12 @@
   "also": [
     "tipsy",
     "drunkenness",
-    "habitual drunkenness"
+    "habitual drunkenness",
+    "loaded (drunk)",
+    "plastered",
+    "sloshed",
+    "stewed (drunk)",
+    "stoned (drunk)"
   ],
   "domain": "culina",
   "audience": "adult",
@@ -44,6 +49,27 @@
         "Traupman 307"
       ],
       "comment": "Cicero distinguishes the habit, <span lang=\"la\">ēbriōsitās</span>, from the state, <span lang=\"la\">ēbrietās</span>."
+    },
+    {
+      "latin": "madidus, madida, madidum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "drunk, sodden (literally “soaked”)",
+      "register": "vōx cōmica: Plaut.; Mart.",
+      "evidence": [
+        "Plaut. Aul. 3.6.36: <span lang=\"la\">madidus vīnō</span> (Lewis &amp; Short)",
+        "Traupman 341: loaded (drunk), <span lang=\"la\">madidus</span>"
+      ]
+    },
+    {
+      "latin": "ēlixus, ēlixa, ēlixum",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "stewed, stoned (slang for drunk)",
+      "evidence": [
+        "Traupman 385"
+      ],
+      "comment": "Classically “boiled”, and so “soaked, sodden” (Varro, Martial, Lewis &amp; Short); we have found no classical instance meaning drunk. Traupman’s joke on English “stewed”."
     }
   ],
   "related": [
@@ -51,13 +77,14 @@
     "sleep-it-off"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/ebriositas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ebriositas</a>",
     "<a href=\"https://logeion.uchicago.edu/ebrietas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ebrietas</a>",
     "<a href=\"https://logeion.org/ebrius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ebrius</a>",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. drunk.",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, each phrase checked against the searchable text of the book.",
     "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 307."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 307.",
+    "<a href=\"https://logeion.uchicago.edu/ebriositas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ebriositas</a> · <a href=\"https://logeion.uchicago.edu/madidus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: madidus</a>",
+    "<a href=\"https://logeion.uchicago.edu/elixus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: elixus</a>"
   ],
   "replaces": [
     "entry-410"

@@ -6,7 +6,8 @@
   "also": [
     "learn to",
     "learn how to",
-    "be taught"
+    "be taught",
+    "pick up a language"
   ],
   "domain": "schola",
   "also_under": [
@@ -21,7 +22,8 @@
       "evidence": [
         "Cic. Sen. 26: <span lang=\"la\">litterās Graecās senex didicī</span>",
         "Plaut. Aul. 595: <span lang=\"la\">puerī quī nāre discunt</span>",
-        "Traupman 30"
+        "Traupman 30",
+        "Traupman 338"
       ],
       "comment": "With an accusative (<span lang=\"la\">litterās discere</span>), an infinitive for a skill (<span lang=\"la\">nāre discere</span>, learn to swim), and <span lang=\"la\">ab</span> or <span lang=\"la\">ex aliquō</span> for the teacher. No supine in classical Latin. To learn by heart is <span lang=\"la\">ēdiscere</span> (see learn by heart)."
     },
@@ -34,6 +36,18 @@
         "Cic. de Or. 1.69: <span lang=\"la\">hic locus dē vītā et mōribus tōtus est ōrātōrī perdiscendus</span>"
       ],
       "comment": "Lewis &amp; Short: “rare but class.”."
+    },
+    {
+      "latin": "perbibō, perbibere, perbibī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "imbibe, pick up (a language, studies)",
+      "evidence": [
+        "Quint. 1.1.12: <span lang=\"la\">Latīnum sermōnem</span> (Lewis &amp; Short)",
+        "Sen. Ep. 36.4: <span lang=\"la\">līberālia studia</span> (Lewis &amp; Short)",
+        "Traupman 359"
+      ],
+      "comment": "“Drink in”: what a child takes in by hearing, without lessons."
     }
   ],
   "phrases": [
@@ -56,6 +70,11 @@
       "latin": "hoc ante omnia fac, mī Lūcīlī: disce gaudēre",
       "english": "Above all, my Lucilius, do this: learn to be glad.",
       "source": "Sen. Ep. 23.3"
+    },
+    {
+      "latin": "linguam perbibere",
+      "english": "to pick up a language",
+      "source": "Traupman 359"
     }
   ],
   "related": [
@@ -68,14 +87,14 @@
     "learn-find-out"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/disco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: disco</a> · <a href=\"https://logeion.uchicago.edu/perdisco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: perdisco</a>",
+    "<a href=\"https://logeion.uchicago.edu/disco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: disco</a> · <a href=\"https://logeion.uchicago.edu/perdisco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: perdisco</a> · <a href=\"https://logeion.uchicago.edu/perbibo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: perbibo</a>",
     "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-cicero-philosophica, loci-martialis, loci-gellius, loci-seneca-epistulae), as checked there against the editions they name.",
     "Plaut. Aul. 595 and Cic. de Or. 1.69 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 30, checked against the searchable text of the book."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 30, checked against the searchable text of the book.: p. 338."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

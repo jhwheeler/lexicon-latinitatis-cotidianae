@@ -4,7 +4,10 @@
   "pos": "noun",
   "also": [
     "home",
-    "at home"
+    "at home",
+    "go home",
+    "home (direction)",
+    "from home"
   ],
   "also_under": [
     "sermo"
@@ -18,7 +21,9 @@
       "comment": "<strong lang=\"la\">domī</strong>, at home; <strong lang=\"la\">domum</strong>, homeward; <strong lang=\"la\">domō</strong>, from home.",
       "evidence": [
         "Traupman 123",
-        "Traupman 125"
+        "Traupman 125",
+        "Traupman 328",
+        "Traupman 330"
       ]
     },
     {
@@ -30,9 +35,31 @@
         "Plaut. Most. 1.2.18; Ter. Heaut. 5.1.29; Cic. Verr. 2.1.50: <span lang=\"la\">in mediīs aedibus</span> (Lewis &amp; Short)",
         "Andresian p. 1",
         "Traupman 124",
-        "Traupman 125"
+        "Traupman 125",
+        "Traupman 330"
       ],
       "comment": "In the singular a temple; in the plural a dwelling house, thought of as its rooms. Commoner than <span lang=\"la\">domus</span> in comedy, but not the word for “home”."
+    },
+    {
+      "latin": "domum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "home (to one’s home)",
+      "grammar": "accusative of motion, without a preposition",
+      "evidence": [
+        "Traupman 328"
+      ],
+      "comment": "<span lang=\"la\">Domum īre</span>, to go home; <span lang=\"la\">domī</span>, at home (locative); <span lang=\"la\">domō</span>, from home. No preposition is used with any of them."
+    },
+    {
+      "latin": "domō",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "from home",
+      "grammar": "ablative of separation, without a preposition",
+      "evidence": [
+        "Traupman 328"
+      ]
     }
   ],
   "phrases": [
@@ -45,6 +72,11 @@
       "latin": "Culīnam habet, cubicula, inter quae hospitium est, balneum, lātrīnam, hortum, trīclīnium, exedram; vestibulum parvum, ubi calceī exuuntur, soccī induuntur, paenulae ex uncīs pendent",
       "english": "It has a kitchen, bedrooms (one of them a guest room), a bathroom, a toilet, a garden, a dining room, a sitting room; a small front hall where shoes come off, slippers go on and coats hang from hooks (of Grandpa’s house)",
       "source": "Libellus III, <span lang=\"la\">Apud avum et aviam</span>"
+    },
+    {
+      "latin": "ūnae aedēs",
+      "english": "one house",
+      "source": "Traupman 354"
     }
   ],
   "related": [
@@ -61,14 +93,16 @@
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026. Examples marked “Libellus” quote those texts word for word.",
     "<a href=\"https://logeion.uchicago.edu/aedes\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aedes</a>",
     "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 1.",
-    "The example sentence marked “composed” is ours."
+    "The example sentence marked “composed” is ours.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 354.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 328; p. 330."
   ],
   "replaces": [
     "entry-86"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

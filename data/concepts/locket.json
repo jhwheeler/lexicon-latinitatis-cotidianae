@@ -3,7 +3,10 @@
   "english": "locket",
   "pos": "noun",
   "also": [
-    "amulet case"
+    "amulet case",
+    "wear a locket",
+    "amulet",
+    "bulla"
   ],
   "domain": "vestitus",
   "terms": [
@@ -27,6 +30,16 @@
         "Lewis &amp; Short",
         "Traupman 117"
       ]
+    },
+    {
+      "latin": "capsella, capsellae f.",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "a locket (literally “a little box”)",
+      "evidence": [
+        "Traupman 341"
+      ],
+      "comment": "Classically <span lang=\"la\">capsella</span> is a small box (Petronius, Lewis &amp; Short); the locket sense is modern. The Roman boy’s amulet is the <span lang=\"la\">bulla</span>."
     }
   ],
   "related": [
@@ -34,12 +47,20 @@
     "necklace"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/bulla\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: bulla</a>",
-    "<a href=\"https://logeion.uchicago.edu/bullatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: bullatus</a>"
+    "<a href=\"https://logeion.uchicago.edu/bulla\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: bulla</a> · <a href=\"https://logeion.uchicago.edu/capsella\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: capsella</a>",
+    "<a href=\"https://logeion.uchicago.edu/bullatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: bullatus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 341."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "capsellam dē cervīce gerere",
+      "english": "to wear a locket around the neck",
+      "source": "Traupman 341"
+    }
+  ]
 }

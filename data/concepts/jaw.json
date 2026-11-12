@@ -9,20 +9,48 @@
       "status": "recommended",
       "period": "classical",
       "evidence": [
-        "Traupman 58"
+        "Traupman 58",
+        "Traupman 335"
       ]
+    },
+    {
+      "latin": "mandibula, mandibulae f.",
+      "status": "alternative",
+      "period": "post-classical",
+      "gloss": "the jaw; Traupman’s word for the lower jaw",
+      "evidence": [
+        "Macr. Somn. 1.6.69 (Lewis &amp; Short)",
+        "Traupman 342"
+      ],
+      "comment": "Lewis &amp; Short marks it post-classical (Macrobius, Isidore); the classical word is <span lang=\"la\">maxilla</span>."
+    },
+    {
+      "latin": "malae, malārum f. pl.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the jaws; cheekbones",
+      "evidence": [
+        "Traupman 335"
+      ],
+      "comment": "Strictly the upper jaw and cheekbones, in which the teeth are set (Lewis &amp; Short); <span lang=\"la\">maxilla</span> is the jawbone."
     }
   ],
   "related": [
     "chin"
   ],
   "sources": [
-    "<a href=\"https://logeion.org/maxilla\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: maxilla</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 58."
+    "<a href=\"https://logeion.org/maxilla\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: maxilla</a> · <a href=\"https://logeion.uchicago.edu/mandibula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mandibula</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 58; p. 342.",
+    "<a href=\"https://logeion.uchicago.edu/mala\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mala</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 58; p. 335."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "lower jaw",
+    "jawbone"
+  ]
 }

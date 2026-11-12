@@ -7,7 +7,12 @@
     "charge",
     "fee",
     "what do you charge?",
-    "charge a price for"
+    "charge a price for",
+    "set a price",
+    "fix a price",
+    "at a high price",
+    "at a low price",
+    "higher price"
   ],
   "also_under": [
     "pecunia"
@@ -17,7 +22,10 @@
     {
       "latin": "pretium, pretiī n.",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "evidence": [
+        "Traupman 364"
+      ]
     },
     {
       "latin": "mercēs, mercēdis f.",
@@ -40,6 +48,26 @@
         "M-O s.v. sale: ask (a certain price) for something, charge"
       ],
       "comment": "With the genitive of price: <span lang=\"la\">quantī indicās?</span>, how much are you asking? (Vives, cited by Morgan–Owens). Not to be confused with <span lang=\"la\">indīcō, indīcere</span>, to proclaim."
+    },
+    {
+      "latin": "pretium facere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "set a price (of a seller or a buyer)",
+      "evidence": [
+        "Plaut. Pers. 4.4.37: <span lang=\"la\">indicā, fac pretium</span> (Lewis &amp; Short)",
+        "Traupman 376"
+      ]
+    },
+    {
+      "latin": "pretium statuere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "set, fix a price",
+      "evidence": [
+        "Plaut. Mil. 3.1.133: <span lang=\"la\">pretium statuere mercī</span> (Lewis &amp; Short)",
+        "Traupman 376"
+      ]
     }
   ],
   "phrases": [
@@ -57,6 +85,26 @@
       "latin": "pretium cōnstituere (+ dat.)",
       "english": "to charge a price for, set a price on",
       "source": "Traupman 289"
+    },
+    {
+      "latin": "magnō (parvō, minimō, nimiō)",
+      "english": "at a high (low, very low, exorbitant) price",
+      "source": "Traupman 364"
+    },
+    {
+      "latin": "pretium amplius",
+      "english": "a higher price",
+      "source": "Traupman 364"
+    },
+    {
+      "latin": "pretium facere",
+      "english": "to set a price",
+      "source": "Traupman 364"
+    },
+    {
+      "latin": "Pretium eī in lībrās est decem dēnāriīs.",
+      "english": "The price for it is ten denarii a pound.",
+      "source": "Traupman 364"
     }
   ],
   "related": [
@@ -75,7 +123,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

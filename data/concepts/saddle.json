@@ -5,7 +5,8 @@
   "pos": "noun",
   "also": [
     "bicycle saddle",
-    "seat"
+    "seat",
+    "horse saddle"
   ],
   "domain": "vectura",
   "terms": [
@@ -23,17 +24,31 @@
       "status": "alternative",
       "period": "classical",
       "gloss": "seat"
+    },
+    {
+      "latin": "ephippium, ephippiī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "horse saddle, saddle cloth",
+      "evidence": [
+        "Caes. BG 4.2.4 (Lewis &amp; Short)",
+        "Hor. Ep. 1.14.43: <span lang=\"la\">optat ephippia bōs piger</span> (Lewis &amp; Short)",
+        "Traupman 373"
+      ],
+      "comment": "The padded cloth on which a rider sat; the Romans had no saddle with a tree and stirrups."
     }
   ],
   "related": [
     "bicycle"
   ],
   "sources": [
-    "<a href=\"https://www.lateinlexikon.com/lexicon_latinum_hodiernum_03_fgh.pdf\" rel=\"noopener noreferrer\" target=\"_blank\">Lexicon Latinum Hodiernum: bicycle parts</a> · <a href=\"https://neolatinlexicon.org/silva-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: Silva</a>"
+    "<a href=\"https://logeion.uchicago.edu/ephippium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ephippium</a>",
+    "<a href=\"https://www.lateinlexikon.com/lexicon_latinum_hodiernum_03_fgh.pdf\" rel=\"noopener noreferrer\" target=\"_blank\">Lexicon Latinum Hodiernum: bicycle parts</a> · <a href=\"https://neolatinlexicon.org/silva-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: Silva</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 373."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

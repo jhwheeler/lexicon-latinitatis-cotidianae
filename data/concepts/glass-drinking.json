@@ -9,7 +9,20 @@
       "latin": "pōculum, pōculī n.",
       "status": "recommended",
       "period": "classical",
-      "gloss": "drinking cup or glass"
+      "gloss": "drinking cup or glass",
+      "evidence": [
+        "Traupman 321: <span lang=\"la\">pōculum vitreum</span>"
+      ]
+    },
+    {
+      "latin": "hyalus, hyalī m.",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "glass (Traupman’s word for a drinking glass)",
+      "evidence": [
+        "Traupman 321"
+      ],
+      "comment": "Classically <span lang=\"la\">hyalus</span> is glass as a material, and only in Vergil, of a glass-green colour (G. 4.335, Lewis &amp; Short); we have found no classical instance of it for a drinking glass."
     }
   ],
   "phrases": [
@@ -29,9 +42,11 @@
     "glass-material"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/hyalus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: hyalus</a>",
     "<a href=\"https://alatius.com/ls/index.php?l=poculum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: poculum</a>",
     "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>",
-    "The example sentences marked “composed” are ours."
+    "The example sentences marked “composed” are ours.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 321."
   ],
   "review": {
     "status": "draft",

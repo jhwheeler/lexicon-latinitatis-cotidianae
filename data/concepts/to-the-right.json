@@ -9,6 +9,16 @@
       "status": "recommended",
       "period": "classical",
       "comment": "With <span lang=\"la\">partem</span> understood."
+    },
+    {
+      "latin": "dextrōrsum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "to the right",
+      "evidence": [
+        "Hor. S. 2.3.50: <span lang=\"la\">ille sinistrōrsum, hic dextrōrsum abit</span> (Lewis &amp; Short)",
+        "Traupman 371"
+      ]
     }
   ],
   "related": [
@@ -17,11 +27,22 @@
     "turn-right"
   ],
   "sources": [
-    "<a href=\"https://logeion.org/dexter\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dexter</a>"
+    "<a href=\"https://logeion.org/dexter\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dexter</a> · <a href=\"https://logeion.uchicago.edu/dextrorsum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dextrorsum</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 371."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "dextrōrsum sē vertere",
+      "english": "to turn right",
+      "source": "Traupman 371"
+    }
+  ],
+  "also": [
+    "turn right"
+  ]
 }

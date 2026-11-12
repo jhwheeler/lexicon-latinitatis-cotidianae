@@ -8,7 +8,9 @@
     "marks",
     "grades",
     "school grade",
-    "full marks"
+    "full marks",
+    "grade (papers)",
+    "mark (papers)"
   ],
   "domain": "schola",
   "terms": [
@@ -19,7 +21,8 @@
       "gloss": "a grade, a mark for schoolwork",
       "evidence": [
         "Traupman 29",
-        "M-O s.v. grade: <span lang=\"la\">nota (scholastica)</span>"
+        "M-O s.v. grade: <span lang=\"la\">nota (scholastica)</span>",
+        "Traupman 323"
       ],
       "comment": "Classically any mark or sign, among them the critic’s mark set against a bad line (<span lang=\"la\">notam appōnere ad malum versum</span>, Cic. Pis. 73) and the brand on a wine jar, whence a grade of quality: <span lang=\"la\">secundae notae mel</span>, second-grade honey (Col. 9.15.3, Lewis &amp; Short). To grade papers is <span lang=\"la\">notāre</span> (Traupman 29)."
     },
@@ -32,6 +35,16 @@
         "M-O s.v. grade: <span lang=\"la\">quot pūncta tulistī?</span>, what grade did you get?"
       ],
       "comment": "Classically the dot that tallied a vote on a wax tablet, and so a vote (Lewis &amp; Short); hence Horace’s <span lang=\"la\">omne tulit pūnctum</span>, ‘he has carried every vote’, which Morgan–Owens turns into full marks: <span lang=\"la\">omne pūnctum ferre</span>."
+    },
+    {
+      "latin": "notō, notāre, notāvī, notātum",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "grade, mark (papers)",
+      "evidence": [
+        "Traupman 323"
+      ],
+      "comment": "Classically to mark or note; Traupman also gives <span lang=\"la\">aestimāre</span>, to assess."
     }
   ],
   "phrases": [
@@ -50,7 +63,7 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/nota\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nota</a> · <a href=\"https://logeion.uchicago.edu/noto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: noto</a> · <a href=\"https://logeion.uchicago.edu/punctum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: punctum</a>",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. grade.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 29, checked against the searchable text of the book (9 November 2026).",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 29, checked against the searchable text of the book (9 November 2026).: p. 323.",
     "Horace checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
   ],
   "review": {

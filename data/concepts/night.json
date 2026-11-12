@@ -9,7 +9,9 @@
     "at this time of night",
     "at this hour of the night",
     "during the night",
-    "while it is still night"
+    "while it is still night",
+    "one night",
+    "the following night"
   ],
   "domain": "tempus",
   "terms": [
@@ -33,7 +35,8 @@
       "grammar": "adverb",
       "evidence": [
         "Gell. 17.10.11: <span lang=\"la\">interdius fūmāre Aetnam, noctū flammigāre</span>",
-        "Cic. Fam. 9.2.1: <span lang=\"la\">cōnscrīpsī epistulam noctū</span>"
+        "Cic. Fam. 9.2.1: <span lang=\"la\">cōnscrīpsī epistulam noctū</span>",
+        "Traupman 351"
       ],
       "comment": "The opposite of <span lang=\"la\">interdiū</span>, by day."
     },
@@ -65,6 +68,16 @@
       "latin": "quis hic est homō, quem ante aedīs videō hōc noctis?",
       "english": "who is this man I see in front of the house at this time of night?",
       "source": "Plaut. Amph. 1.1.136 (Lewis &amp; Short s.v. <span lang=\"la\">hic</span>)"
+    },
+    {
+      "latin": "quādam nocte",
+      "english": "one night",
+      "source": "Traupman 351 (printed <span lang=\"la\">quādem</span>)"
+    },
+    {
+      "latin": "proximā (īnsequente) nocte",
+      "english": "on the following night",
+      "source": "Traupman 351"
     }
   ],
   "related": [

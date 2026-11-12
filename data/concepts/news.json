@@ -1,0 +1,64 @@
+{
+  "id": "news",
+  "english": "news",
+  "sense": "information about recent events",
+  "pos": "noun",
+  "also": [
+    "tidings",
+    "I just got news that",
+    "no news",
+    "the news",
+    "good news",
+    "bad news"
+  ],
+  "domain": "sermo",
+  "terms": [
+    {
+      "latin": "nūntius, nūntiī m.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "news, a message, tidings (especially news brought by someone)",
+      "evidence": [
+        "Plaut. Stich. 2.2.67: <span lang=\"la\">nūntium exoptābilem nūntiāre</span> (Lewis &amp; Short)",
+        "Traupman 350"
+      ]
+    },
+    {
+      "latin": "novī (quid novī, nihil novī)",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "news: “something new”, the genitive with a neuter pronoun",
+      "grammar": "genitive of novum after quid, aliquid, nihil",
+      "evidence": [
+        "Traupman 350, 104"
+      ],
+      "comment": "Latin asks for “anything of new”: <span lang=\"la\">quid novī?</span>, any news?; <span lang=\"la\">nihil novī</span>, no news (see any news?)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Modo mihi nūntiātum est (+ acc. and inf.)",
+      "english": "I just got news that …",
+      "source": "Traupman 350"
+    },
+    {
+      "latin": "Sī nihil novī habēs dē (+ abl.) …",
+      "english": "If you have no news about …",
+      "source": "Traupman 350"
+    }
+  ],
+  "related": [
+    "any-news",
+    "message",
+    "newspaper"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/nuntius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nuntius</a> · <a href=\"https://logeion.uchicago.edu/novus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: novus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 350."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-12",
+    "by": "Claude"
+  }
+}

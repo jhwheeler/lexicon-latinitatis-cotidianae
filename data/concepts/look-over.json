@@ -3,7 +3,9 @@
   "english": "look over",
   "pos": "verb",
   "also": [
-    "go round"
+    "go round",
+    "look over a book",
+    "read through"
   ],
   "domain": "domus",
   "terms": [
@@ -12,14 +14,35 @@
       "status": "recommended",
       "period": "classical",
       "gloss": "go round and look things over"
+    },
+    {
+      "latin": "contemplor, contemplārī, contemplātus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "look over attentively, survey (a person, a thing)",
+      "evidence": [
+        "Lewis &amp; Short",
+        "Traupman 341: <span lang=\"la\">contemplāre</span>"
+      ],
+      "comment": "Classical prose has the deponent <span lang=\"la\">contemplor</span>; the active <span lang=\"la\">contemplō</span> that Traupman prints is ante- and post-classical (Lewis &amp; Short)."
+    },
+    {
+      "latin": "perlegō, perlegere, perlēgī, perlēctum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "read through, look over (a book, an essay)",
+      "evidence": [
+        "Traupman 341"
+      ]
     }
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/lustro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lustro</a>"
+    "<a href=\"https://logeion.uchicago.edu/lustro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lustro</a> · <a href=\"https://logeion.uchicago.edu/contemplor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: contemplor</a> · <a href=\"https://logeion.uchicago.edu/perlego\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: perlego</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 341."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

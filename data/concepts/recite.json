@@ -6,7 +6,9 @@
     "recitation",
     "say by heart",
     "recite a poem",
-    "say your lesson"
+    "say your lesson",
+    "rattle off",
+    "reel off"
   ],
   "domain": "schola",
   "terms": [
@@ -33,6 +35,15 @@
         "Traupman 31"
       ],
       "comment": "Classically to read out a text, a law, or one’s own poems to listeners (see read aloud); from memory in Celsus, of patients made to say what they remember (Lewis &amp; Short). Traupman’s word for recite; a recitation is <span lang=\"la\">recitātiō</span> (Traupman 31)."
+    },
+    {
+      "latin": "recitātiō, recitātiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "recitation, public reading",
+      "evidence": [
+        "Traupman 369"
+      ]
     }
   ],
   "phrases": [
@@ -45,6 +56,11 @@
       "latin": "Reddenda est memoriter hesterna lēctiō, satis prōlixa. Vereor ut possim.",
       "english": "We have to recite yesterday’s lesson by heart, and it’s a long one. I’m afraid I can’t.",
       "source": "Erasm. Coll., <span lang=\"la\">Euntēs in lūdum litterārium</span>"
+    },
+    {
+      "latin": "cito volvere",
+      "english": "to rattle off",
+      "source": "Traupman 368"
     }
   ],
   "related": [
@@ -61,7 +77,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

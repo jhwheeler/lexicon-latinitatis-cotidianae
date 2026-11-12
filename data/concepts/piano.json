@@ -3,7 +3,9 @@
   "english": "piano",
   "pos": "noun",
   "also": [
-    "pianoforte"
+    "pianoforte",
+    "grand piano",
+    "pianist"
   ],
   "domain": "ludi",
   "terms": [
@@ -34,6 +36,16 @@
         "Vatican lexicon",
         "M-O s.v. keyboard"
       ]
+    },
+    {
+      "latin": "clāvicen, clāvicinis m./f.",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "pianist",
+      "evidence": [
+        "Traupman 359"
+      ],
+      "comment": "Formed like <span lang=\"la\">tībīcen, fidicen</span>, “one who plays the keys”."
     }
   ],
   "related": [
@@ -41,12 +53,20 @@
   ],
   "sources": [
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. keyboard.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): pp. 53, 168.",
-    "<a href=\"https://www.vatican.va/roman_curia/institutions_connected/latinitas/documents/rc_latinitas_20040601_lexicon_it.html\" rel=\"noopener noreferrer\" target=\"_blank\">Vatican public lexicon</a> (selection from the Lexicon Recentis Latinitatis), as cited."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): pp. 53, 168; p. 323.",
+    "<a href=\"https://www.vatican.va/roman_curia/institutions_connected/latinitas/documents/rc_latinitas_20040601_lexicon_it.html\" rel=\"noopener noreferrer\" target=\"_blank\">Vatican public lexicon</a> (selection from the Lexicon Recentis Latinitatis), as cited.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 53; p. 168; p. 359."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "clāvicordium ālifōrme",
+      "english": "a grand piano",
+      "source": "Traupman 323"
+    }
+  ]
 }

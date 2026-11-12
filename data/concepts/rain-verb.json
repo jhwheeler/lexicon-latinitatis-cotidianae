@@ -8,7 +8,10 @@
     "raining",
     "rain hard",
     "the rain is letting up",
-    "it looks like rain"
+    "it looks like rain",
+    "rain buckets",
+    "rain cats and dogs",
+    "pour (rain)"
   ],
   "domain": "natura",
   "terms": [
@@ -20,6 +23,27 @@
       "evidence": [
         "Traupman 136"
       ]
+    },
+    {
+      "latin": "urceātim pluere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "rain buckets, pour",
+      "register": "vōx sermōnis cotīdiānī: Petr.",
+      "evidence": [
+        "Petr. 44: <span lang=\"la\">itaque statim urceātim pluēbat</span>, “it rained in pailfuls” (Lewis &amp; Short)",
+        "Traupman 368"
+      ]
+    },
+    {
+      "latin": "cattīs canibusque pluere",
+      "status": "avoid",
+      "period": "modern",
+      "gloss": "rain cats and dogs",
+      "evidence": [
+        "Traupman 368"
+      ],
+      "comment": "A word-for-word rendering of the English idiom, which means nothing in Latin; Petronius’s <span lang=\"la\">urceātim pluere</span> says the same thing in Latin."
     }
   ],
   "phrases": [
@@ -48,12 +72,13 @@
     "rain"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/pluo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pluo</a>",
-    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+    "<a href=\"https://logeion.uchicago.edu/pluo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pluo</a> · <a href=\"https://logeion.uchicago.edu/urceatim\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: urceatim</a>",
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 368."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

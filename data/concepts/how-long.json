@@ -9,7 +9,22 @@
       "status": "recommended",
       "period": "classical",
       "evidence": [
-        "Traupman 87"
+        "Traupman 87",
+        "Traupman 330"
+      ]
+    },
+    {
+      "latin": "Quoūsque?",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "how long? till when?",
+      "evidence": [
+        "Cic. Rep. 6.17: <span lang=\"la\">quoūsque humī dēfīxa tua mēns erit?</span> (Lewis &amp; Short)",
+        "Plaut. As. 1.1.28 (Lewis &amp; Short)",
+        "Traupman 330"
+      ],
+      "notes": [
+        "quousque-e"
       ]
     }
   ],
@@ -18,7 +33,8 @@
     "how-soon"
   ],
   "sources": [
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 87.",
+    "<a href=\"https://logeion.uchicago.edu/quousque\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quousque</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 87; p. 330; p. 322.",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 87, each phrase checked against the searchable text of the book."
   ],
   "review": {
@@ -27,13 +43,29 @@
     "by": "Claude"
   },
   "also": [
-    "how much longer?"
+    "how much longer?",
+    "how long (as far as when)",
+    "how long is that good for?",
+    "how long is it valid?"
   ],
   "phrases": [
     {
       "latin": "Quamdiū etiam?",
       "english": "How much longer?",
       "source": "Traupman 87"
+    },
+    {
+      "latin": "Quam diū valēbit?",
+      "english": "How long is that good for (valid)?",
+      "source": "Traupman 322"
     }
-  ]
+  ],
+  "notes": {
+    "quousque-e": {
+      "form": "<span lang=\"la\">Quoūsque</span>",
+      "claim": "short final e",
+      "against": "Lewis &amp; Short <span lang=\"la\">quŏ-usquē</span>",
+      "html": "A compound of <span lang=\"la\">quō</span> and <span lang=\"la\">usque</span>, whose final vowel Lewis &amp; Short itself marks short (<span lang=\"la\">usquĕ</span>); the long mark under the compound stands alone. Traupman 330 prints <span lang=\"la\">quoūsque</span>."
+    }
+  }
 }

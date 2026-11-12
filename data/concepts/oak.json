@@ -8,7 +8,30 @@
       "latin": "quercus, quercūs f.",
       "status": "recommended",
       "period": "classical",
-      "comment": "Tree names are mostly feminine, even in the second declension; <strong lang=\"la\">rubus</strong> is masculine."
+      "comment": "Tree names are mostly feminine, even in the second declension; <strong lang=\"la\">rubus</strong> is masculine.",
+      "evidence": [
+        "Traupman 352"
+      ]
+    },
+    {
+      "latin": "rōbur, rōboris n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "hard oak, oak-wood; an oak tree",
+      "evidence": [
+        "Caes. B.G. 3.13: <span lang=\"la\">nāvēs tōtae factae ex rōbore</span> (Lewis &amp; Short)",
+        "Traupman 352"
+      ]
+    },
+    {
+      "latin": "rōboreus, rōborea, rōboreum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "oaken, made of oak",
+      "evidence": [
+        "Ov. F. 5.622: <span lang=\"la\">pōns</span> (Lewis &amp; Short)",
+        "Traupman 352"
+      ]
     }
   ],
   "phrases": [
@@ -29,8 +52,9 @@
     "forest"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/quercus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quercus</a>",
-    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+    "<a href=\"https://logeion.uchicago.edu/quercus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quercus</a> · <a href=\"https://logeion.uchicago.edu/robur\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: robur</a> · <a href=\"https://logeion.uchicago.edu/roboreus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: roboreus</a>",
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 352."
   ],
   "replaces": [
     "entry-201",
@@ -38,7 +62,12 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "oaken",
+    "oak (adjective)",
+    "oak wood"
+  ]
 }

@@ -12,7 +12,9 @@
     "make the sign of the cross",
     "sign of the cross",
     "cross oneself",
-    "symbol"
+    "symbol",
+    "mark (put a mark on)",
+    "seal (on a letter)"
   ],
   "domain": "verba",
   "also_under": [
@@ -50,6 +52,16 @@
         "Phaedr. App. 28.7–10: <span lang=\"la\">dexteram dēmōnstrat nūtū partem</span>"
       ],
       "comment": "Of signing with the head instead of speaking."
+    },
+    {
+      "latin": "notō, notāre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "mark, put a mark on",
+      "evidence": [
+        "Cic. Verr. 2.2.79: <span lang=\"la\">tabellam cērā</span> (Lewis &amp; Short)",
+        "Traupman 343"
+      ]
     }
   ],
   "phrases": [
@@ -72,6 +84,11 @@
       "latin": "pollice signum crucis pingō in fronte",
       "english": "I make the sign of the cross on my forehead with my thumb (a boy describing his morning)",
       "source": "Erasm. Coll., <span lang=\"la\">Pietās puerīlis</span>"
+    },
+    {
+      "latin": "signum",
+      "english": "a seal (on a letter or document)",
+      "source": "Traupman 375"
     }
   ],
   "related": [
@@ -80,13 +97,14 @@
     "bow-in-worship"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/signum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: signum</a> · <a href=\"https://logeion.uchicago.edu/indicium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: indicium</a> · <a href=\"https://logeion.uchicago.edu/nutus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nutus</a>",
+    "<a href=\"https://logeion.uchicago.edu/signum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: signum</a> · <a href=\"https://logeion.uchicago.edu/indicium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: indicium</a> · <a href=\"https://logeion.uchicago.edu/nutus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nutus</a> · <a href=\"https://logeion.uchicago.edu/noto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: noto</a>",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. cross oneself.",
-    "Quotations from the Latinitas loci collections (loci-livius, loci-quintilianus, loci-phaedrus, loci-prudentius, loci-erasmus), checked against the editions named there."
+    "Quotations from the Latinitas loci collections (loci-livius, loci-quintilianus, loci-phaedrus, loci-prudentius, loci-erasmus), checked against the editions named there.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 343."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

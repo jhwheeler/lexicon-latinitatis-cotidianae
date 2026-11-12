@@ -11,7 +11,9 @@
     "release",
     "launch a campaign",
     "publication",
-    "publish"
+    "publish",
+    "come out (of a book)",
+    "the book is not yet out"
   ],
   "domain": "pecunia",
   "also_under": [
@@ -25,7 +27,8 @@
       "gloss": "bring out, publish; put on (a show)",
       "evidence": [
         "Cic. Brut. 19: <span lang=\"la\">dē rē pūblicā librōs ēdidistī</span>",
-        "Lewis &amp; Short: <span lang=\"la\">lūdōs ēdere</span>, to put on games"
+        "Lewis &amp; Short: <span lang=\"la\">lūdōs ēdere</span>, to put on games",
+        "Traupman 366"
       ],
       "comment": "To give out, put forth (Lewis &amp; Short): of a book, to publish it; of games or a show, to put it on. Not <span lang=\"la\">edō, edere</span>, to eat, with a short e. To launch a campaign or a big undertaking is to begin it, <span lang=\"la\">incohāre</span> (see begin)."
     },
@@ -58,6 +61,11 @@
       "latin": "nam ut illōs dē rē pūblicā librōs ēdidistī, nihil ā tē sānē posteā accēpimus",
       "english": "for since you brought out those books on the State, we have had nothing at all from you",
       "source": "Cic. Brut. 19"
+    },
+    {
+      "latin": "Liber ē prēlō nōndum exiit.",
+      "english": "The book is not yet out.",
+      "source": "Traupman 355"
     }
   ],
   "related": [
@@ -72,11 +80,13 @@
     "Cicero checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (11 November 2026).",
     "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition.",
     "<a href=\"https://logeion.uchicago.edu/editio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: editio</a>",
-    "Pliny’s letters checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026)."
+    "Pliny’s letters checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026).",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 355.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 366."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

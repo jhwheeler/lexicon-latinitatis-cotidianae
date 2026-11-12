@@ -13,7 +13,9 @@
     "sore",
     "aching",
     "does it hurt?",
-    "I ache all over"
+    "I ache all over",
+    "harm",
+    "hurt a lot"
   ],
   "domain": "sermo",
   "terms": [
@@ -25,7 +27,18 @@
       "evidence": [
         "Traupman 62: <span lang=\"la\">mūsculus mihi dolet</span>, my muscle aches",
         "Traupman 65: <span lang=\"la\">tergum mihi dolet</span>, my back is sore; <span lang=\"la\">dolēns</span>, sore, aching",
-        "Traupman 55: <span lang=\"la\">Stomachus meus dolet. Caput meum dolet. Quid dolet?</span>"
+        "Traupman 55: <span lang=\"la\">Stomachus meus dolet. Caput meum dolet. Quid dolet?</span>",
+        "Traupman 330"
+      ]
+    },
+    {
+      "latin": "noceō, nocēre, nocuī, nocitum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "hurt, harm (someone)",
+      "grammar": "verb, second conjugation, with the dative",
+      "evidence": [
+        "Traupman 330"
       ]
     }
   ],
@@ -59,6 +72,11 @@
       "latin": "dolōre afficī",
       "english": "to feel pain",
       "source": "Traupman 314"
+    },
+    {
+      "latin": "vehementer dolēre",
+      "english": "to hurt a lot",
+      "source": "Traupman 330"
     }
   ],
   "related": [
@@ -69,7 +87,9 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/doleo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: doleo</a>",
     "The example sentences marked “composed” are ours.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 62, 65, 55, checked against the searchable text of the book.: p. 314."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 62, 65, 55, checked against the searchable text of the book.: p. 314.",
+    "<a href=\"https://logeion.uchicago.edu/noceo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: noceo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 62, 65, 55, checked against the searchable text of the book.: p. 330."
   ],
   "review": {
     "status": "draft",

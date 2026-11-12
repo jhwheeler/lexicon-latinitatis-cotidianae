@@ -9,7 +9,9 @@
     "it is hot",
     "it’s hot",
     "scorching",
-    "blazing hot"
+    "blazing hot",
+    "boiling hot",
+    "it is hot today"
   ],
   "also_under": [
     "verba"
@@ -23,7 +25,8 @@
       "gloss": "warm, hot",
       "grammar": "adjective",
       "evidence": [
-        "Traupman 136"
+        "Traupman 136",
+        "Traupman 329"
       ]
     },
     {
@@ -42,6 +45,15 @@
         "Lewis &amp; Short s.v. flagrō",
         "Traupman 136: scorching, flagrantissimus (sōl, aestus)"
       ]
+    },
+    {
+      "latin": "fervidus, fervida, fervidum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "boiling hot",
+      "evidence": [
+        "Traupman 329"
+      ]
     }
   ],
   "related": [
@@ -52,7 +64,9 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/calidus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: calidus</a>",
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
-    "<a href=\"https://logeion.uchicago.edu/flagro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: flagro</a>"
+    "<a href=\"https://logeion.uchicago.edu/flagro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: flagro</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 329.",
+    "<a href=\"https://logeion.uchicago.edu/fervidus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fervidus</a>"
   ],
   "review": {
     "status": "draft",
@@ -64,6 +78,16 @@
       "latin": "Calidum est.",
       "english": "It is hot.",
       "source": "Traupman 135"
+    },
+    {
+      "latin": "flagrantissimus sōl",
+      "english": "a scorching sun",
+      "source": "Traupman 375"
+    },
+    {
+      "latin": "Hodiē calētur.",
+      "english": "It is hot today.",
+      "source": "Traupman 329"
     }
   ]
 }

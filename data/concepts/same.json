@@ -5,7 +5,9 @@
   "also": [
     "the same",
     "the same as",
-    "at the same time"
+    "at the same time",
+    "one and the same",
+    "identical"
   ],
   "domain": "verba",
   "terms": [
@@ -17,7 +19,8 @@
       "grammar": "pronoun",
       "evidence": [
         "Cic. Off. 1.90: <span lang=\"la\">īdem semper vultus eademque frōns</span>",
-        "Cic. Amic. 103: <span lang=\"la\">īdem vīctus</span>"
+        "Cic. Amic. 103: <span lang=\"la\">īdem vīctus</span>",
+        "Traupman 373"
       ],
       "comment": "“The same as” is <span lang=\"la\">īdem quī …</span> or <span lang=\"la\">īdem atque (ac) …</span>: <span lang=\"la\">idem velle atque idem nōlle</span>, wanting and not wanting the same things (Sall. C. 20, Lewis &amp; Short). Masculine <span lang=\"la\">īdem</span> with a long i, neuter <span lang=\"la\">idem</span> with a short one."
     },
@@ -32,6 +35,25 @@
         "Cic. Att. 2.12.1: <span lang=\"la\">ūnō tempore mihi datās duās</span>"
       ],
       "comment": "Also <span lang=\"la\">ūnō tempore</span>, at one and the same time."
+    },
+    {
+      "latin": "īdem et pār",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "identical, the same and equal",
+      "evidence": [
+        "Traupman 331"
+      ]
+    },
+    {
+      "latin": "identicus, identica, identicum",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "identical",
+      "evidence": [
+        "Traupman 331"
+      ],
+      "comment": "Not in Lewis &amp; Short; a medieval and modern formation from <span lang=\"la\">idem</span>."
     }
   ],
   "phrases": [
@@ -54,6 +76,11 @@
       "latin": "haec quae Pīcēnīs venit subducta trapētīs inchoat atque eadem fīnit olīva dapēs",
       "english": "the olive that comes fresh from the presses of Picenum begins the meal, and the same olive ends it",
       "source": "Mart. 13.36.1–2"
+    },
+    {
+      "latin": "ūnus et īdem",
+      "english": "one and the same",
+      "source": "Traupman 354"
     }
   ],
   "related": [
@@ -63,11 +90,14 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/idem\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: idem</a> · <a href=\"https://logeion.uchicago.edu/simul\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: simul</a>",
-    "Quotations from the Latinitas loci collections (loci-cicero-philosophica, loci-cicero-epistulae, loci-seneca-epistulae, loci-martialis), checked against the editions named there."
+    "Quotations from the Latinitas loci collections (loci-cicero-philosophica, loci-cicero-epistulae, loci-seneca-epistulae, loci-martialis), checked against the editions named there.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 354.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 331.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 373."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

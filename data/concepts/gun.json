@@ -15,7 +15,10 @@
     "hunting gun",
     "shoot (a person)",
     "artillery",
-    "guns (artillery)"
+    "guns (artillery)",
+    "automatic rifle",
+    "rifleman",
+    "fire a rifle"
   ],
   "domain": "res-publica",
   "terms": [
@@ -42,6 +45,15 @@
         "M-O s.v. cannon"
       ],
       "comment": "Classically an engine that hurls missiles, a catapult or ballista (Caes. B.G. 2.8), and the missile it throws; the Renaissance writers used it for artillery (M-O), and so does Traupman. Not for a handgun. Its other common sense is torture, or the rack."
+    },
+    {
+      "latin": "sclopētō, sclopētāre",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "fire a gun, shoot",
+      "evidence": [
+        "Traupman 324"
+      ]
     }
   ],
   "related": [
@@ -52,9 +64,9 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/tormentum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tormentum</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 52, 187, 324, checked against the searchable text of the book (11 November 2026); p. 48.",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: Adumbratio</a>, s.v. gun, cannon, shoot.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 187–188, each phrase checked against the searchable text of the book."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 187–188, each phrase checked against the searchable text of the book.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 52, 187, 324, checked against the searchable text of the book (11 November 2026); p. 48.: p. 324."
   ],
   "review": {
     "status": "draft",
@@ -81,6 +93,26 @@
       "latin": "tormenta, tormentōrum n. pl.",
       "english": "artillery",
       "source": "Traupman 185"
+    },
+    {
+      "latin": "sclopētō trānsfīgere",
+      "english": "to shoot (a person)",
+      "source": "Traupman 378"
+    },
+    {
+      "latin": "sclopētum automatum",
+      "english": "an automatic rifle",
+      "source": "Traupman 371"
+    },
+    {
+      "latin": "sclopētāre",
+      "english": "to fire a rifle",
+      "source": "Traupman 371"
+    },
+    {
+      "latin": "sclopētātor",
+      "english": "a rifleman",
+      "source": "Traupman 371"
     }
   ]
 }

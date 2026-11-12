@@ -17,7 +17,8 @@
     "passage",
     "extract (from a book)",
     "excerpt",
-    "excerpts"
+    "excerpts",
+    "misquote"
   ],
   "also_under": [
     "verba"
@@ -80,6 +81,16 @@
         "Sen. Ep. 33.3 (Lewis &amp; Short)"
       ],
       "comment": "A passage picked out of a book; to make extracts is <span lang=\"la\">excerpere</span> (Cic. Inv. 2.4; Plin. Ep. 3.5.10, <span lang=\"la\">nihil umquam lēgit quod nōn excerperet</span>)."
+    },
+    {
+      "latin": "afferō, afferre, attulī, allātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "bring forward, adduce (a reason, an example)",
+      "evidence": [
+        "Ter. Heaut. 4.3.23: <span lang=\"la\">quam causam afferam?</span> (Lewis &amp; Short)",
+        "Traupman 367"
+      ]
     }
   ],
   "phrases": [
@@ -92,6 +103,11 @@
       "latin": "et ego cautius posthāc historiam attingam tē audiente, quem rērum Rōmānārum auctōrem laudāre possum religiōsissimum.",
       "english": "and from now on I shall touch on history more carefully when you are listening, whom I can cite as the most scrupulous authority on Roman history.",
       "source": "Cic. Brut. 44"
+    },
+    {
+      "latin": "aliīs verbīs pōnere",
+      "english": "to misquote",
+      "source": "Traupman 346"
     }
   ],
   "related": [
@@ -102,7 +118,7 @@
     "context"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/profero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: profero</a> · <a href=\"https://logeion.uchicago.edu/laudo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: laudo</a> · <a href=\"https://logeion.uchicago.edu/locus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: locus</a> · <a href=\"https://logeion.uchicago.edu/aio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aio</a>",
+    "<a href=\"https://logeion.uchicago.edu/profero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: profero</a> · <a href=\"https://logeion.uchicago.edu/laudo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: laudo</a> · <a href=\"https://logeion.uchicago.edu/locus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: locus</a> · <a href=\"https://logeion.uchicago.edu/aio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aio</a> · <a href=\"https://logeion.uchicago.edu/affero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: affero</a>",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. cite (a source). John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 30, checked against the searchable text of the book (11 November 2026).",
     "Quotations of classical authors checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026) and given in the house spelling (macrons, consonantal j).",
     "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition.",
@@ -110,7 +126,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

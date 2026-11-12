@@ -19,7 +19,8 @@
     "false",
     "falsely",
     "incorrectly",
-    "faulty (grammar)"
+    "faulty (grammar)",
+    "faulty"
   ],
   "domain": "verba",
   "terms": [
@@ -72,9 +73,20 @@
       "gloss": "faulty, incorrect (of language)",
       "evidence": [
         "Quint. 1.5.16: <span lang=\"la\">nōn aliō vitiōsa sunt, quam quod plūrālia singulāriter … efferuntur</span>",
-        "Traupman 247, 249"
+        "Traupman 247, 249",
+        "Traupman 332"
       ],
       "comment": "The grammarians’ word for a form that breaks the rules, from <span lang=\"la\">vitium</span>, a fault; incorrectly is <span lang=\"la\">vitiōsē</span>: <span lang=\"la\">dēprehendātur vitiōsē loquī</span>, he would be caught speaking incorrectly (Quint. 1.6.7). Its opposite is <span lang=\"la\">ēmendātus</span> (Traupman 246)."
+    },
+    {
+      "latin": "vitiōsē",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "incorrectly, faultily",
+      "grammar": "adverb",
+      "evidence": [
+        "Traupman 332"
+      ]
     }
   ],
   "phrases": [
@@ -97,6 +109,11 @@
       "latin": "Errābās, Verrēs, et vehementer errābās.",
       "english": "You were wrong, Verres, very wrong.",
       "source": "Cic. Verr. 2.5.121 (Lewis &amp; Short s.v. <span lang=\"la\">et</span>)"
+    },
+    {
+      "latin": "Errās perversē. — Vehementer errās.",
+      "english": "You’re making a big mistake.",
+      "source": "Traupman 346"
     }
   ],
   "related": [
@@ -107,13 +124,13 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/erro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: erro</a> · <a href=\"https://logeion.uchicago.edu/perperam\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: perperus (perperam)</a> · <a href=\"https://logeion.uchicago.edu/falsus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fallo (falsus)</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 409; also pp. 112, 249.",
     "Plautus, Terence and Cicero checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>.",
     "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 195, each phrase checked against the searchable text of the book.",
     "<a href=\"https://logeion.uchicago.edu/vitiosus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vitiosus</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 246, p. 247, p. 249.",
-    "Quintilian checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>, and cited by its numbering."
+    "Quintilian checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>, and cited by its numbering.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 409; also pp. 112, 249.: p. 332."
   ],
   "review": {
     "status": "draft",

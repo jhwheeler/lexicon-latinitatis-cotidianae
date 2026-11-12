@@ -6,7 +6,9 @@
     "can’t wait to",
     "itching",
     "excited to",
-    "so excited to"
+    "so excited to",
+    "be dying to",
+    "I’m dying to know"
   ],
   "domain": "sermo",
   "terms": [
@@ -17,9 +19,21 @@
       "evidence": [
         "Traupman 101, 155",
         "Cic.",
-        "Traupman 101: <span lang=\"la\">gestiō quidem</span> (+ inf.)"
+        "Traupman 101: <span lang=\"la\">gestiō quidem</span> (+ inf.)",
+        "Traupman 335"
       ],
       "comment": "+ infinitive."
+    },
+    {
+      "latin": "aveō, avēre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "long, be eager (to)",
+      "grammar": "verb, second conjugation, with an infinitive",
+      "evidence": [
+        "Cic. Att. 1.15: <span lang=\"la\">valdē aveō scīre quid agās</span> (Lewis &amp; Short)",
+        "Traupman 337"
+      ]
     }
   ],
   "phrases": [
@@ -27,14 +41,20 @@
       "latin": "«Gestiō gustāre!» «Post cēnam gustābimus.»",
       "english": "“I’m itching to taste it!” “We’ll taste it after dinner.”",
       "source": "Libellus IV, <span lang=\"la\">Diēs Grātulātiōnis</span>"
+    },
+    {
+      "latin": "Quid agās, valdē aveō scīre.",
+      "english": "I’m dying to know how you are doing.",
+      "source": "Cic. Att. 1.15 (Lewis &amp; Short s.v. <span lang=\"la\">aveō</span>: <span lang=\"la\">valdē aveō scīre quid agās</span>); Traupman 337"
     }
   ],
   "related": [
     "be-in-suspense"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/aveo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aveo</a>",
     "<a href=\"https://logeion.uchicago.edu/gestio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gestio</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: p. 101, checked against the searchable text of the book on 29 October 2026.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: p. 101, checked against the searchable text of the book on 29 October 2026; p. 335; p. 337.",
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 101, checked against the searchable text and the page image (12 November 2026)."
   ],

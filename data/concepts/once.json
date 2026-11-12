@@ -6,14 +6,18 @@
     "just once",
     "once or twice",
     "more than once",
-    "once and again"
+    "once and again",
+    "once and for all"
   ],
   "domain": "sermo",
   "terms": [
     {
       "latin": "semel",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "evidence": [
+        "Traupman 354"
+      ]
     },
     {
       "latin": "semel atque iterum",
@@ -49,5 +53,12 @@
     "status": "draft",
     "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "semel in perpetuum",
+      "english": "once and for all",
+      "source": "Traupman 354; Flor. 2.12.2 (Lewis &amp; Short s.v. <span lang=\"la\">semel</span>)"
+    }
+  ]
 }

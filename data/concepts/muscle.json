@@ -5,7 +5,8 @@
   "also": [
     "muscles",
     "pull a muscle",
-    "muscular"
+    "muscular",
+    "muscle-bound"
   ],
   "domain": "corpus",
   "terms": [
@@ -17,15 +18,32 @@
         "Traupman 58",
         "Traupman 65: <span lang=\"la\">mūsculum distorquēre</span>, to pull a muscle"
       ]
+    },
+    {
+      "latin": "mūsculōsus, mūsculōsa, mūsculōsum",
+      "status": "alternative",
+      "period": "post-classical",
+      "gloss": "muscular, brawny",
+      "evidence": [
+        "Cels. 4.1: <span lang=\"la\">cor nātūrā mūsculōsum</span> (Lewis &amp; Short)",
+        "Traupman 349"
+      ]
     }
   ],
   "sources": [
-    "<a href=\"https://logeion.org/musculus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: musculus</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): pp. 58, 65."
+    "<a href=\"https://logeion.org/musculus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: musculus</a> · <a href=\"https://logeion.uchicago.edu/musculosus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: musculosus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 58; p. 65; p. 349."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "mūsculīs cōnstrictus",
+      "english": "muscle-bound",
+      "source": "Traupman 349"
+    }
+  ]
 }

@@ -6,7 +6,10 @@
     "schoolteacher",
     "schoolmaster",
     "Latin teacher",
-    "instructor"
+    "instructor",
+    "teachers’ room",
+    "staff room",
+    "teaching assistant"
   ],
   "also_under": [
     "schola"
@@ -18,7 +21,8 @@
       "status": "recommended",
       "period": "classical",
       "evidence": [
-        "Traupman 32, 169, 391"
+        "Traupman 32, 169, 391",
+        "Traupman 338"
       ]
     },
     {
@@ -38,7 +42,8 @@
       "gloss": "instructor, teacher",
       "evidence": [
         "Plaut. Ps. 4.7.96: <span lang=\"la\">praeceptor tuus, quī tē hanc fallāciam docuit</span> (Lewis &amp; Short)",
-        "Traupman 30"
+        "Traupman 30",
+        "Traupman 333"
       ],
       "comment": "The one who gives rules (<span lang=\"la\">praecepta</span>): a teacher of an art or of conduct."
     },
@@ -59,6 +64,16 @@
       "latin": "Quid hodiē magistra vōs docuit?",
       "english": "What did the teacher teach you today?",
       "source": "composed"
+    },
+    {
+      "latin": "oecus magistrōrum (magistrārum)",
+      "english": "the teachers’ room, the staff room",
+      "source": "Traupman 391"
+    },
+    {
+      "latin": "magistrae (magistrī) adjūtor (adjūtrīx)",
+      "english": "a teaching assistant",
+      "source": "Traupman 391"
     }
   ],
   "related": [
@@ -69,9 +84,9 @@
     "<a href=\"https://logeion.org/magister\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: magister</a>",
     "<a href=\"https://logeion.uchicago.edu/doceo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: doceo</a>",
     "<a href=\"https://logeion.uchicago.edu/praeceptor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praeceptor</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): pp. 32, 391, 30.",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. teacher.",
-    "The example sentences marked “composed” are ours."
+    "The example sentences marked “composed” are ours.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): pp. 32, 391, 30; p. 333; p. 338."
   ],
   "review": {
     "status": "draft",

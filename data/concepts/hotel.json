@@ -4,7 +4,11 @@
   "pos": "noun",
   "also": [
     "inn",
-    "double room"
+    "double room",
+    "single room",
+    "hole in the wall",
+    "cheap lodgings",
+    "stay at a hotel"
   ],
   "domain": "vectura",
   "terms": [
@@ -14,7 +18,8 @@
       "period": "classical",
       "evidence": [
         "Traupman 174",
-        "the Libellus I gloss, after Traupman 174: <span lang=\"la\">dēversōrium -ī n: domus in quā viātōrēs mercēde pernoctant</span>, “a house where travellers stay the night for payment”"
+        "the Libellus I gloss, after Traupman 174: <span lang=\"la\">dēversōrium -ī n: domus in quā viātōrēs mercēde pernoctant</span>, “a house where travellers stay the night for payment”",
+        "Traupman 329"
       ],
       "comment": "<strong lang=\"la\">mercēde</strong> — for payment."
     },
@@ -25,6 +30,16 @@
       "evidence": [
         "Traupman 174"
       ]
+    },
+    {
+      "latin": "stabulum, stabulī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "cheap lodging, tavern, a hole in the wall",
+      "evidence": [
+        "Traupman 328"
+      ],
+      "comment": "A humble dwelling, and a low inn or tavern (Petronius, the Digest; Lewis &amp; Short); also a stable."
     }
   ],
   "related": [
@@ -36,7 +51,9 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/deversorium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: deversorium</a> · <a href=\"https://logeion.uchicago.edu/hospitium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: hospitium</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: p. 174, checked against the searchable text of the book on 29 October 2026; p. 306.",
-    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+    "<a href=\"https://logeion.uchicago.edu/stabulum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: stabulum</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: p. 174, checked against the searchable text of the book on 29 October 2026; p. 329; p. 328."
   ],
   "replaces": [
     "entry-222",
@@ -52,6 +69,16 @@
       "latin": "conclāve duōrum lectōrum",
       "english": "a double room",
       "source": "Traupman 306"
+    },
+    {
+      "latin": "cubiculum ūnīus lectī",
+      "english": "a single room",
+      "source": "Traupman 379"
+    },
+    {
+      "latin": "in dēversōriō morārī",
+      "english": "to stay at a hotel",
+      "source": "Traupman 329"
     }
   ]
 }

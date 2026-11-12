@@ -13,7 +13,8 @@
     "hale and hearty",
     "in sound health",
     "healthy (well)",
-    "enjoy good health"
+    "enjoy good health",
+    "healthy (in good health)"
   ],
   "domain": "corpus",
   "terms": [
@@ -25,7 +26,8 @@
       "evidence": [
         "Cic. Fam. 14.8.1: <span lang=\"la\">valētūdinem tuam velim cūrēs dīligentissimē</span>",
         "Traupman 64",
-        "Traupman 63: <span lang=\"la\">Cūrā dīligenter valētūdinem tuam!</span>, take good care of your health!"
+        "Traupman 63: <span lang=\"la\">Cūrā dīligenter valētūdinem tuam!</span>, take good care of your health!",
+        "Traupman 327"
       ],
       "comment": "On its own it can mean either; <span lang=\"la\">bona valētūdō</span> is good health, <span lang=\"la\">adversa, mala, īnfirma valētūdō</span> ill health (Traupman 64). How someone is goes with the verb: <span lang=\"la\">valeō</span>, I’m well; <span lang=\"la\">valētūdinem cūrāre</span>, to look after one’s health."
     },
@@ -57,7 +59,8 @@
       "gloss": "healthy, sound, well (of a person)",
       "evidence": [
         "Hor. Ep. 1.1.108: <span lang=\"la\">praecipuē sānus, nisi cum pītuīta molesta est</span>",
-        "Traupman 64"
+        "Traupman 64",
+        "Traupman 327"
       ],
       "comment": "Food that is good for you is <span lang=\"la\">salūbris</span> (see healthy)."
     },
@@ -77,7 +80,9 @@
       "period": "classical",
       "gloss": "strong, in sound health",
       "evidence": [
-        "Traupman 64: <span lang=\"la\">salvus et validus</span>, hale and hearty"
+        "Traupman 64: <span lang=\"la\">salvus et validus</span>, hale and hearty",
+        "Traupman 327",
+        "Traupman 325"
       ],
       "comment": "Strong and well: the opposite is <span lang=\"la\">imbēcillus</span> or <span lang=\"la\">īnfirmus</span>."
     }
@@ -102,6 +107,21 @@
       "latin": "nōn est vīvere, sed valēre vīta est",
       "english": "life is not just being alive, but being well",
       "source": "Mart. 6.70.15"
+    },
+    {
+      "latin": "adversa (mala, gravis, īnfirma) valētūdō",
+      "english": "bad health",
+      "source": "Traupman 327"
+    },
+    {
+      "latin": "Mala valētūdō mē repentē invāsit.",
+      "english": "Bad health suddenly hit me.",
+      "source": "Traupman 327"
+    },
+    {
+      "latin": "bona (firma, commoda, prospera) valētūdō",
+      "english": "good health",
+      "source": "Traupman 327"
     }
   ],
   "related": [
@@ -114,7 +134,7 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/valetudo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: valetudo</a> · <a href=\"https://logeion.uchicago.edu/valeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: valeo</a> · <a href=\"https://logeion.uchicago.edu/sanitas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sanitas</a> · <a href=\"https://logeion.uchicago.edu/sanus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sanus</a> · <a href=\"https://logeion.uchicago.edu/salus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: salus</a>",
     "<a href=\"https://logeion.uchicago.edu/validus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: validus</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 64, 63, checked against the searchable text of the book (9 November 2026).",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 64, 63, checked against the searchable text of the book (9 November 2026).: p. 327; p. 325.",
     "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-horatius, loci-martialis), checked against the editions named there.",
     "Cicero, Fam. 9.18 and 14.8 and <em>De officiis</em> 2, and Plautus’ <em>Mercator</em>, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
   ],

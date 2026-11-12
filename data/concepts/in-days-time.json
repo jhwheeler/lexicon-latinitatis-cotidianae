@@ -4,7 +4,10 @@
   "pos": "phrase",
   "also": [
     "in five days’ time",
-    "in five days"
+    "in five days",
+    "ten years from now",
+    "in ten years’ time",
+    "a hundred years from now"
   ],
   "also_under": [
     "tempus"
@@ -22,11 +25,24 @@
     "ago"
   ],
   "sources": [
-    "<a href=\"https://logeion.org/post\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: post</a>"
+    "<a href=\"https://logeion.org/post\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: post</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 88–89, each phrase checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "ad decem annōs",
+      "english": "ten years from now",
+      "source": "Traupman 88"
+    },
+    {
+      "latin": "ad centum annōs",
+      "english": "a hundred years from now",
+      "source": "Traupman 89"
+    }
+  ]
 }

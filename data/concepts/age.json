@@ -11,7 +11,16 @@
     "at his age",
     "the same age",
     "time of life",
-    "years old"
+    "years old",
+    "at the age of fifteen",
+    "at age fifteen",
+    "in my twenty-first year",
+    "in his tenth year",
+    "over sixty",
+    "over sixty years old",
+    "more than … years old",
+    "less than … years old",
+    "period of life"
   ],
   "domain": "verba",
   "terms": [
@@ -48,6 +57,31 @@
         "Cic. de Or. 3.74: <span lang=\"la\">annōs nātus ūnum et vīgintī</span> (Lewis &amp; Short s.v. <span lang=\"la\">nāscor</span>)"
       ],
       "comment": "The ordinary way to state an age. With a noun the genitive also serves: <span lang=\"la\">puer trium annōrum</span>, a boy of three (see how old are you?, a man of)."
+    },
+    {
+      "latin": "… annum agēns",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "in one’s …th year",
+      "grammar": "present participle of agō with an ordinal in the accusative",
+      "evidence": [
+        "Liv. 40.6.4: <span lang=\"la\">trīcēsimum annum agēns</span> (Lewis &amp; Short s.v. <span lang=\"la\">trīcēsimus</span>)",
+        "Cic. Sen. 32: <span lang=\"la\">quārtum agō annum et octōgēsimum</span>",
+        "Traupman 76, 77"
+      ],
+      "comment": "“Spending the …th year”: the ordinal counts the year one is in, so <span lang=\"la\">decimum quīntum annum agēns</span> is strictly one who is fourteen, in his fifteenth year, though Traupman renders it “at age fifteen”."
+    },
+    {
+      "latin": "mājor (minor) quam … annōs nātus",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "over (under) … years old",
+      "grammar": "comparative agreeing with the person; quam may be left out without changing the case",
+      "evidence": [
+        "Cic. Rosc. Am. 39: <span lang=\"la\">annōs nātus mājor quadrāgintā</span>, over forty years old (Lewis &amp; Short s.v. <span lang=\"la\">magnus</span>)",
+        "Nep. Reg. 2.3: <span lang=\"la\">mājor annōs sexāgintā nātus dēcessit</span> (Lewis &amp; Short)",
+        "Traupman 77"
+      ]
     }
   ],
   "phrases": [
@@ -60,6 +94,16 @@
       "latin": "quattuor et vīgintī fermē annōs nātus",
       "english": "about twenty-four years old",
       "source": "Liv. 26.18.7"
+    },
+    {
+      "latin": "quārtum agō annum et octōgēsimum",
+      "english": "I am in my eighty-fourth year",
+      "source": "Cic. Sen. 32"
+    },
+    {
+      "latin": "Erat decem annōs nātus.",
+      "english": "He was ten years old.",
+      "source": "Traupman 77"
     }
   ],
   "related": [
@@ -72,7 +116,10 @@
     "a-man-of"
   ],
   "sources": [
-    "The examples are from the Latīnitās loci collections and the note on quantity words, checked there against the texts; Lewis &amp; Short’s citations are marked."
+    "The examples are from the Latīnitās loci collections and the note on quantity words, checked there against the texts; Lewis &amp; Short’s citations are marked.",
+    "<a href=\"https://logeion.uchicago.edu/ago\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ago</a> · <a href=\"https://logeion.uchicago.edu/magnus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: magnus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 76–77, each phrase checked against the searchable text of the book.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",

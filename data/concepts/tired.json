@@ -3,7 +3,8 @@
   "english": "tired",
   "pos": "adjective",
   "also": [
-    "tiredness"
+    "tiredness",
+    "I’m so tired"
   ],
   "also_under": [
     "corpus"
@@ -13,7 +14,10 @@
     {
       "latin": "fessus, fessa, fessum",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "evidence": [
+        "Traupman 35, 39"
+      ]
     },
     {
       "latin": "fatīgātus, fatīgāta, fatīgātum",
@@ -38,6 +42,11 @@
       "latin": "Fessa es?",
       "english": "Are you tired? Said to a girl.",
       "source": "composed"
+    },
+    {
+      "latin": "Tam fessa sum.",
+      "english": "I’m so tired.",
+      "source": "Traupman 35"
     }
   ],
   "related": [
@@ -52,11 +61,12 @@
     "<a href=\"https://logeion.uchicago.edu/fessus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fessus</a>",
     "<a href=\"https://logeion.uchicago.edu/fatigo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fatigo</a>",
     "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 36.",
-    "The example sentences marked “composed” are ours."
+    "The example sentences marked “composed” are ours.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 35, 39, each phrase checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

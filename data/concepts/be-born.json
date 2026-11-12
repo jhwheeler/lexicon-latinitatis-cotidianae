@@ -16,6 +16,28 @@
       "evidence": [
         "Traupman 282"
       ]
+    },
+    {
+      "latin": "ortus, ortūs m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "birth, origin",
+      "evidence": [
+        "Cic. Leg. 2.5: <span lang=\"la\">Catō ortū Tusculānus</span>, by birth (Lewis &amp; Short)",
+        "Cic. Div. 2.91: <span lang=\"la\">ortus nāscentium</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Classical Latin mostly says “birth” with the verb: <span lang=\"la\">ante quam nātus est</span>, before his birth."
+    },
+    {
+      "latin": "nātīvitās, nātīvitātis f.",
+      "status": "alternative",
+      "period": "late",
+      "gloss": "birth, nativity",
+      "evidence": [
+        "Dig. 50.1.1 (Lewis &amp; Short)",
+        "Traupman 77"
+      ],
+      "comment": "Lewis &amp; Short: post-classical. It is the word of Christian Latin for the Nativity; for an ordinary birth <span lang=\"la\">ortus</span> or the verb is classical."
     }
   ],
   "related": [
@@ -26,11 +48,14 @@
   ],
   "sources": [
     "<a href=\"https://logeion.org/nascor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nascor</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 282."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 282.",
+    "<a href=\"https://logeion.uchicago.edu/ortus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ortus</a> · <a href=\"https://logeion.uchicago.edu/nativitas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nativitas</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 77, each phrase checked against the searchable text of the book.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

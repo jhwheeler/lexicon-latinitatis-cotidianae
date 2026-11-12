@@ -10,7 +10,9 @@
     "youths",
     "youngsters",
     "teenager",
-    "teenagers"
+    "teenagers",
+    "young lady",
+    "youngster"
   ],
   "domain": "sermo",
   "terms": [
@@ -31,7 +33,8 @@
       "gloss": "a youth, a young man or woman",
       "grammar": "noun, third declension",
       "evidence": [
-        "Cic. Sen. 38: <span lang=\"la\">adulēscentem in quō est senīle aliquid</span>"
+        "Cic. Sen. 38: <span lang=\"la\">adulēscentem in quō est senīle aliquid</span>",
+        "Traupman 78: young lady, <span lang=\"la\">adulēscēns f.</span>"
       ],
       "comment": "One young person, of the age of <span lang=\"la\">adulēscentia</span>, about fifteen to thirty (Lewis &amp; Short); see young. In the plural, young people."
     },
@@ -40,7 +43,21 @@
       "status": "alternative",
       "period": "classical",
       "gloss": "a very young man, a lad",
-      "comment": "The diminutive: in Terence and Cicero; Cicero calls himself <span lang=\"la\">adulēscentulus</span> at twenty-seven (Or. 30). It can sound slighting, “a mere lad” (Lewis &amp; Short)."
+      "comment": "The diminutive: in Terence and Cicero; Cicero calls himself <span lang=\"la\">adulēscentulus</span> at twenty-seven (Or. 30). It can sound slighting, “a mere lad” (Lewis &amp; Short).",
+      "evidence": [
+        "Traupman 78"
+      ]
+    },
+    {
+      "latin": "muliercula, mulierculae f.",
+      "status": "avoid",
+      "period": "classical",
+      "gloss": "a little woman, a mere woman",
+      "evidence": [
+        "Lucr. 4.1279 (Lewis &amp; Short)",
+        "Traupman 78: young lady, <span lang=\"la\">muliercula</span>"
+      ],
+      "comment": "Traupman gives it for “young lady”, but the diminutive of <span lang=\"la\">mulier</span> belittles (Lewis &amp; Short: “a little woman, mere woman”). Say <span lang=\"la\">adulēscēns</span> or <span lang=\"la\">puella</span>."
     }
   ],
   "phrases": [
@@ -64,11 +81,13 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/juventus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: juventus</a> · <a href=\"https://logeion.uchicago.edu/adulescens\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: adulescens</a> · <a href=\"https://logeion.uchicago.edu/adulescentulus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: adulescentulus</a>",
-    "Quotations from the Latinitas loci collections (loci-cicero-philosophica), checked against the editions named there."
+    "Quotations from the Latinitas loci collections (loci-cicero-philosophica), checked against the editions named there.",
+    "<a href=\"https://logeion.uchicago.edu/muliercula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: muliercula</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 78, each phrase checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

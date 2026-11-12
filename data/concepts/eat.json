@@ -10,7 +10,21 @@
     {
       "latin": "edō, edere, ēdī, ēsum",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "evidence": [
+        "Traupman 38"
+      ]
+    },
+    {
+      "latin": "sūmō, sūmere, sūmpsī, sūmptum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "take, have (a meal)",
+      "evidence": [
+        "Nep. Att. 21: <span lang=\"la\">cibum sūmere</span> (Lewis &amp; Short)",
+        "Traupman 38: eat (breakfast, lunch, dinner), <span lang=\"la\">sūmere</span>"
+      ],
+      "comment": "With the meal as object: <span lang=\"la\">jentāculum, prandium, cēnam sūmere</span>."
     }
   ],
   "phrases": [
@@ -28,14 +42,17 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/edo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: edo</a>",
-    "The example sentence marked “composed” is ours."
+    "The example sentence marked “composed” is ours.",
+    "<a href=\"https://logeion.uchicago.edu/sumo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sumo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 38, each phrase checked against the searchable text of the book.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "replaces": [
     "entry-84"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

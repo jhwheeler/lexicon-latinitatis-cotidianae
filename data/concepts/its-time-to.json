@@ -1,0 +1,74 @@
+{
+  "id": "its-time-to",
+  "english": "it’s time to …",
+  "pos": "phrase",
+  "also": [
+    "it’s time",
+    "time to",
+    "time to get up",
+    "it’s time to get up",
+    "time for bed",
+    "it’s time for"
+  ],
+  "domain": "sermo",
+  "terms": [
+    {
+      "latin": "tempus est (+ infinitive)",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "it’s time to …",
+      "grammar": "tempus est with an infinitive; the person, if named, as subject accusative or dative",
+      "evidence": [
+        "Liv. 21.54.2: <span lang=\"la\">nunc corpora cūrāre tempus est</span>",
+        "Cic. Top. 1.5: <span lang=\"la\">sed jam tempus est ad id quod īnstituimus accēdere</span> (Lewis &amp; Short s.v. <span lang=\"la\">tempus</span>)",
+        "Traupman 35: <span lang=\"la\">tempus est surgere</span>"
+      ],
+      "comment": "English “it’s time to” goes word for word: <span lang=\"la\">tempus est surgere</span>, it’s time to get up. With a person: <span lang=\"la\">tempus est mē abīre</span> (Cic. Tusc. 1.99) or <span lang=\"la\">tibi abīre</span> (Hor. Epist. 2.2.215)."
+    },
+    {
+      "latin": "tempus est (+ genitive)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "it’s time for …",
+      "grammar": "tempus est with the genitive of a noun or gerund",
+      "evidence": [
+        "Sen. Ep. 122.9: <span lang=\"la\">lūcet: somnī tempus est</span>"
+      ],
+      "comment": "“Time for sleep”, “time for supper”: the thing in the genitive."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Tempus est surgere.",
+      "english": "It’s time to get up.",
+      "source": "Traupman 35"
+    },
+    {
+      "latin": "nunc corpora cūrāre tempus est",
+      "english": "now it is time to look after ourselves (food, a bath, rest)",
+      "source": "Liv. 21.54.2"
+    },
+    {
+      "latin": "lūcet: somnī tempus est.",
+      "english": "it’s getting light: time for bed!",
+      "source": "Sen. Ep. 122.9"
+    }
+  ],
+  "related": [
+    "its-time-to-sleep",
+    "be-awake",
+    "get-up",
+    "i-must-go"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/tempus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tempus</a>",
+    "Quotations from the Latinitas loci collections (loci-livius, loci-seneca-epistulae), checked against the editions named there.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 35, each phrase checked against the searchable text of the book.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-12",
+    "by": "Claude"
+  }
+}

@@ -5,7 +5,10 @@
   "also": [
     "phone call",
     "call",
-    "telephone"
+    "telephone",
+    "local call",
+    "long-distance call",
+    "telephone call"
   ],
   "domain": "sermo",
   "terms": [
@@ -17,17 +20,29 @@
       "evidence": [
         "Traupman 38"
       ]
+    },
+    {
+      "latin": "colloquium tēlephōnicum",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "a phone call",
+      "evidence": [
+        "Traupman 38: telephone call (local, long-distance), <span lang=\"la\">colloquium tēlephōnicum (locāle, longinquum)</span>"
+      ],
+      "comment": "<span lang=\"la\">Longinquum</span>, long-distance, is classical; <span lang=\"la\">locālis</span> is late Latin (Lewis &amp; Short)."
     }
   ],
   "related": [
     "the-phone-is-ringing"
   ],
   "sources": [
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: p. 38, checked against the searchable text of the book on 29 October 2026."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: p. 38, checked against the searchable text of the book on 29 October 2026.",
+    "<a href=\"https://logeion.uchicago.edu/colloquium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: colloquium</a> · <a href=\"https://logeion.uchicago.edu/localis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: localis</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 38, each phrase checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

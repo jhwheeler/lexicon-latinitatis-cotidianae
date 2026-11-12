@@ -10,8 +10,21 @@
       "period": "classical",
       "evidence": [
         "Traupman 122",
-        "Cic."
+        "Cic.",
+        "Traupman 38"
       ]
+    },
+    {
+      "latin": "dormītum īre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "go to bed, go off to sleep",
+      "grammar": "supine of dormiō with a verb of going",
+      "evidence": [
+        "Plaut. Curc. 1.3.27: <span lang=\"la\">quīn tū īs dormītum?</span> (Lewis &amp; Short s.v. <span lang=\"la\">dormiō</span>)",
+        "Traupman 38"
+      ],
+      "comment": "Like <span lang=\"la\">cubitum īre</span>, the supine in -um tells where one is going: “to sleep”."
     }
   ],
   "phrases": [
@@ -29,11 +42,17 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/cubitus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cubitus</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 122, checked against the searchable text of the book (29 October 2026).",
-    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+    "<a href=\"https://logeion.uchicago.edu/dormio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dormio</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 38, each phrase checked against the searchable text of the book.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "go to sleep (go to bed)"
+  ]
 }

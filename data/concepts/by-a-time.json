@@ -1,0 +1,87 @@
+{
+  "id": "by-a-time",
+  "english": "by",
+  "sense": "a time: not later than",
+  "pos": "preposition",
+  "also": [
+    "by January",
+    "by tomorrow",
+    "by then",
+    "by now",
+    "by what date?",
+    "by nightfall",
+    "around the time of",
+    "at about the same time"
+  ],
+  "domain": "tempus",
+  "terms": [
+    {
+      "latin": "ad + acc.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "by, on (a set time)",
+      "evidence": [
+        "Cic. Fam. 16.10.4: <span lang=\"la\">nostra ad diem dictam fient</span> (Lewis &amp; Short s.v. <span lang=\"la\">ad</span>)",
+        "Caes. BG 2.5: <span lang=\"la\">omnia ad diem facta sunt</span> (Lewis &amp; Short)",
+        "Traupman 86: by January, <span lang=\"la\">ad mēnsem Jānuārium</span>; by the sixth hour, <span lang=\"la\">ad sextam hōram</span>"
+      ],
+      "comment": "What is due or done by a set day: <span lang=\"la\">ad diem</span>, on the day, punctually. “By now” is <span lang=\"la\">jam</span> (see already)."
+    },
+    {
+      "latin": "sub + acc.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "towards, around (a time), just before",
+      "evidence": [
+        "Liv. 42.45.1: <span lang=\"la\">lēgātiō sub idem tempus in Asiam et circum īnsulās missa</span> (Lewis &amp; Short s.v. <span lang=\"la\">sub</span>)",
+        "Traupman 88: around the time of, <span lang=\"la\">sub tempus (+ gen.)</span>; at about the same time, <span lang=\"la\">sub idem tempus</span>"
+      ],
+      "comment": "Close to a time, on either side of it: <span lang=\"la\">sub noctem</span>, towards nightfall (see just before nightfall)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "quam ad diem eī legiōnī quae in praesidiō relinquēbātur dēbērī frūmentum sciēbat",
+      "english": "the day on which, as he knew, corn was due to the legion left on guard",
+      "source": "Caes. BG 6.33.4"
+    },
+    {
+      "latin": "ad mēnsem Jānuārium",
+      "english": "by January",
+      "source": "Traupman 86"
+    },
+    {
+      "latin": "Quam ad diem?",
+      "english": "By what date?",
+      "source": "Traupman 86"
+    },
+    {
+      "latin": "ad proximam noctem",
+      "english": "by the following night",
+      "source": "Traupman 85"
+    },
+    {
+      "latin": "sub idem tempus",
+      "english": "at about the same time",
+      "source": "Traupman 88"
+    }
+  ],
+  "related": [
+    "until-a-time",
+    "before-a-time",
+    "just-before-nightfall",
+    "already",
+    "due-owed"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/ad\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ad</a> · <a href=\"https://logeion.uchicago.edu/sub\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sub</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 85–86, 88, each phrase checked against the searchable text of the book.",
+    "Quotations from the Latīnitās loci collections, checked against the editions named there.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-12",
+    "by": "Claude"
+  }
+}

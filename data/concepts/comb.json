@@ -10,12 +10,40 @@
     {
       "latin": "pecten, pectinis m.",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "evidence": [
+        "Traupman 36, 38"
+      ]
     },
     {
       "latin": "pectō, pectere",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "evidence": [
+        "Ov. H. 13.39: <span lang=\"la\">comam pectere</span> (Lewis &amp; Short s.v. <span lang=\"la\">coma</span>)",
+        "Traupman 36, 38"
+      ]
+    },
+    {
+      "latin": "repectō, repectere, —, repexum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "comb back, comb again",
+      "register": "vōx poētica: Ov., Stat.",
+      "evidence": [
+        "Ov. AA 3.154: <span lang=\"la\">coma repexa</span> (Lewis &amp; Short)",
+        "Traupman 38: to comb back, <span lang=\"la\">repectere</span>"
+      ]
+    },
+    {
+      "latin": "expectere",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "comb out",
+      "evidence": [
+        "Traupman 38: to comb out, <span lang=\"la\">expectere</span>"
+      ],
+      "comment": "Traupman’s compound; not in Lewis &amp; Short."
     }
   ],
   "phrases": [
@@ -28,6 +56,11 @@
       "latin": "Capillōs pecte.",
       "english": "Comb your hair.",
       "source": "composed"
+    },
+    {
+      "latin": "capillōs (crīnēs, comam) pectere",
+      "english": "to comb one’s hair",
+      "source": "Traupman 38"
     }
   ],
   "related": [
@@ -35,14 +68,22 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/pecten\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pecten</a> · <a href=\"https://logeion.uchicago.edu/pecto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pecto</a>",
-    "The example sentences marked “composed” are ours."
+    "The example sentences marked “composed” are ours.",
+    "<a href=\"https://logeion.uchicago.edu/pecto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pecto</a> · <a href=\"https://logeion.uchicago.edu/repecto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: repecto</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 36, 38, each phrase checked against the searchable text of the book.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "replaces": [
     "entry-66"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "comb your hair",
+    "comb out",
+    "comb back"
+  ]
 }

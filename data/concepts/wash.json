@@ -6,7 +6,11 @@
     "wash hands",
     "wash your hands",
     "wash the face",
-    "wash your face"
+    "wash your face",
+    "wash yourself",
+    "have a wash",
+    "get washed",
+    "wash (oneself)"
   ],
   "also_under": [
     "domus"
@@ -18,6 +22,19 @@
       "status": "recommended",
       "period": "classical",
       "comment": "Other ancient forms include the infinitive <strong lang=\"la\">lavere</strong> and participles <strong lang=\"la\">lautus</strong> and <strong lang=\"la\">lōtus</strong>."
+    },
+    {
+      "latin": "lavārī (sē lavāre)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "wash (oneself), bathe",
+      "grammar": "the passive of lavō used as a middle, or the reflexive",
+      "evidence": [
+        "Cic. Off. 1.129: <span lang=\"la\">cum socerīs generī nōn lavantur</span> (Lewis &amp; Short s.v. <span lang=\"la\">lavō</span>)",
+        "Caes. BG 4.1: <span lang=\"la\">lavantur in flūminibus</span> (Lewis &amp; Short)",
+        "Traupman 39: wash, intr., <span lang=\"la\">lavārī, sē lavāre</span>"
+      ],
+      "comment": "English “wash” without an object is the passive in Latin: <span lang=\"la\">lavor</span>, I wash (myself), I have a bath; the imperative to a child is <span lang=\"la\">Tē lavā</span> (Traupman 36)."
     }
   ],
   "phrases": [
@@ -55,6 +72,11 @@
       "latin": "Aqua calida est.",
       "english": "The water is warm.",
       "source": "composed"
+    },
+    {
+      "latin": "Agedum, tē lavā et dentēs pūrgā.",
+      "english": "Come on, wash and brush your teeth.",
+      "source": "Traupman 36"
     }
   ],
   "related": [
@@ -69,7 +91,9 @@
     "<a href=\"https://alatius.com/ls/index.php?l=lavo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lavo</a>",
     "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>",
     "The example sentences marked “composed” are ours.",
-    "<a href=\"https://logeion.uchicago.edu/lavo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lavo</a>"
+    "<a href=\"https://logeion.uchicago.edu/lavo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lavo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 36, 39, each phrase checked against the searchable text of the book.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "replaces": [
     "entry-122",
@@ -78,7 +102,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

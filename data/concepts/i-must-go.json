@@ -1,0 +1,81 @@
+{
+  "id": "i-must-go",
+  "english": "I must go",
+  "pos": "phrase",
+  "also": [
+    "I have to go",
+    "I’ve got to go",
+    "we have to go now",
+    "I must be going",
+    "I must be off",
+    "I’m off"
+  ],
+  "domain": "sermo",
+  "terms": [
+    {
+      "latin": "Abeundum mihi est.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "I must go, I must be off",
+      "grammar": "gerundive of necessity, impersonal, with the person in the dative; so nōbīs eundum est, we must go",
+      "evidence": [
+        "Plaut. Am. 1.3.29: <span lang=\"la\">clam illūc redeundum est mihi</span> (Lewis &amp; Short s.v. <span lang=\"la\">illic</span>)",
+        "Traupman 16: <span lang=\"la\">quīn nunc abeundum mihi est</span>",
+        "Traupman 17: <span lang=\"la\">nōbīs nunc eundum est</span>"
+      ],
+      "comment": "Literally “there must be going away by me”: the verb is impersonal and the person goes into the dative."
+    },
+    {
+      "latin": "Tempus est mē abīre.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "it’s time for me to go",
+      "evidence": [
+        "Cic. Tusc. 1.99: <span lang=\"la\">tempus est jam hinc abīre mē</span> (Lewis &amp; Short s.v. <span lang=\"la\">tempus</span>)"
+      ]
+    },
+    {
+      "latin": "Abeō.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "I’m off",
+      "evidence": [
+        "Plaut. Capt. prol. 67: <span lang=\"la\">abeō: valēte</span> (Lewis &amp; Short s.v. <span lang=\"la\">valeō</span>)"
+      ],
+      "comment": "The plain present announces the leaving, often with <span lang=\"la\">valē</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Quīn nunc abeundum mihi est. Valē.",
+      "english": "Well, I must go now. Goodbye.",
+      "source": "Traupman 16"
+    },
+    {
+      "latin": "Nōbīs nunc eundum est.",
+      "english": "We have to go now.",
+      "source": "Traupman 17"
+    },
+    {
+      "latin": "tempus est jam hinc abīre mē",
+      "english": "it is time now for me to go hence",
+      "source": "Cic. Tusc. 1.99 (Lewis &amp; Short s.v. <span lang=\"la\">tempus</span>)"
+    }
+  ],
+  "related": [
+    "must",
+    "goodbye",
+    "its-time-to",
+    "where-are-you-off-to"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/abeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: abeo</a> · <a href=\"https://logeion.uchicago.edu/tempus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tempus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 16–17, each phrase checked against the searchable text of the book.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-12",
+    "by": "Claude"
+  }
+}

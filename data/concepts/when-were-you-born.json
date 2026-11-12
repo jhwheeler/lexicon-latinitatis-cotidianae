@@ -1,0 +1,61 @@
+{
+  "id": "when-were-you-born",
+  "english": "when were you born?",
+  "pos": "phrase",
+  "also": [
+    "when is your birthday?",
+    "what day were you born?",
+    "what month were you born in?",
+    "date of birth",
+    "birth date"
+  ],
+  "domain": "sermo",
+  "terms": [
+    {
+      "latin": "Quandō nātus (nāta) es?",
+      "status": "recommended",
+      "period": "modern",
+      "evidence": [
+        "Traupman 76"
+      ],
+      "comment": "The words and the construction are classical (the ablative of time with <span lang=\"la\">nātus</span>, as in <span lang=\"la\">sī hic prīdiē nātus foret</span>, Plaut. Mil. 4.2.91, Lewis &amp; Short s.v. <span lang=\"la\">prīdiē</span>), but we have found the question itself only in Traupman. The answer gives the day as an ordinal in the ablative: <span lang=\"la\">tertiō diē mēnsis Jānuāriī</span>, on the third of January."
+    },
+    {
+      "latin": "Quō diē (Quō mēnse) nātus es?",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "what day (what month) were you born?",
+      "evidence": [
+        "Traupman 74"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Quō diē nāta es? — Quīntō diē mēnsis Majī.",
+      "english": "What day were you born? — On the fifth of May.",
+      "source": "Traupman 74"
+    },
+    {
+      "latin": "Tertiō diē mēnsis Jānuāriī.",
+      "english": "On the third of January.",
+      "source": "Traupman 76"
+    }
+  ],
+  "related": [
+    "birthday",
+    "be-born",
+    "how-old-are-you",
+    "whats-the-date"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/nascor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nascor</a> · <a href=\"https://logeion.uchicago.edu/quando\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quando</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 74, 76, each phrase checked against the searchable text of the book.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-12",
+    "by": "Claude"
+  }
+}

@@ -3,7 +3,10 @@
   "english": "in the evening",
   "pos": "adverb",
   "also": [
-    "evening"
+    "evening",
+    "in the early evening",
+    "late in the evening",
+    "very late in the evening"
   ],
   "also_under": [
     "tempus"
@@ -14,6 +17,28 @@
       "latin": "vesperī",
       "status": "recommended",
       "period": "classical"
+    },
+    {
+      "latin": "prīmā vesperā",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "in the early evening",
+      "grammar": "ablative of time",
+      "evidence": [
+        "Liv. 34.61.14: <span lang=\"la\">prīmā vesperā suspendit</span> (Lewis &amp; Short s.v. <span lang=\"la\">vespera</span>)",
+        "Traupman 86"
+      ]
+    },
+    {
+      "latin": "pervesperī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "very late in the evening",
+      "grammar": "adverb",
+      "evidence": [
+        "Cic. Fam. 9.2.1: <span lang=\"la\">cum ad mē pervesperī vēnisset</span> (Lewis &amp; Short)",
+        "Traupman 86"
+      ]
     }
   ],
   "related": [
@@ -21,11 +46,14 @@
     "yesterday-evening"
   ],
   "sources": [
-    "<a href=\"https://logeion.org/vesper\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vesper</a>"
+    "<a href=\"https://logeion.org/vesper\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vesper</a>",
+    "<a href=\"https://logeion.uchicago.edu/vespera\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vespera</a> · <a href=\"https://logeion.uchicago.edu/pervesperi\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pervesperi</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 86, each phrase checked against the searchable text of the book.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

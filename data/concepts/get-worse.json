@@ -1,0 +1,62 @@
+{
+  "id": "get-worse",
+  "english": "get worse",
+  "pos": "verb",
+  "also": [
+    "worsen",
+    "turn out for the worse",
+    "go downhill",
+    "become worse"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "ingravēscō, ingravēscere",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "get worse, grow more serious (of an illness, a trouble)",
+      "grammar": "verb, third conjugation, inchoative, intransitive",
+      "evidence": [
+        "Cic. Div. 2.16: <span lang=\"la\">ingravēscēns morbus</span> (Lewis &amp; Short)",
+        "Cic. Att. 10.4.2: <span lang=\"la\">alter in diēs ingravēscit</span> (Lewis &amp; Short)",
+        "Traupman p. 112"
+      ],
+      "comment": "Literally “to grow heavy”: an illness or a trouble becomes heavier. “Day by day” is <span lang=\"la\">in diēs</span>."
+    },
+    {
+      "latin": "in pējōrem partem vertī",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "turn out for the worse",
+      "grammar": "vertor, vertī, versus sum, passive of vertō",
+      "evidence": [
+        "Traupman p. 112"
+      ],
+      "comment": "Not found in Lewis &amp; Short or the loci collections in this form; Traupman is the only evidence. Lewis &amp; Short has <span lang=\"la\">in dēterius</span>, for the worse (Tac. A. 14.43; Cels. 2.2)."
+    },
+    {
+      "latin": "in dēterius",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "for the worse",
+      "evidence": [
+        "Tac. A. 14.43 (Lewis &amp; Short s.v. <span lang=\"la\">in</span>)",
+        "Tac. A. 2.82: <span lang=\"la\">cūncta aucta in dēterius</span> (Lewis &amp; Short s.v. <span lang=\"la\">dēterior</span>)"
+      ]
+    }
+  ],
+  "related": [
+    "bad"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/ingravesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ingravesco</a>",
+    "<a href=\"https://logeion.uchicago.edu/deterior\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: deterior</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 112."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-12",
+    "by": "Claude"
+  }
+}

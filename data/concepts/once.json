@@ -3,7 +3,10 @@
   "english": "once",
   "pos": "adverb",
   "also": [
-    "just once"
+    "just once",
+    "once or twice",
+    "more than once",
+    "once and again"
   ],
   "domain": "sermo",
   "terms": [
@@ -11,17 +14,31 @@
       "latin": "semel",
       "status": "recommended",
       "period": "classical"
+    },
+    {
+      "latin": "semel atque iterum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "once and again, more than once",
+      "evidence": [
+        "Caes. BG 1.31: <span lang=\"la\">semel atque iterum armīs contendisse</span> (Lewis &amp; Short s.v. <span lang=\"la\">iterum</span>)",
+        "Traupman 88: once or twice, <span lang=\"la\">semel atque iterum</span>"
+      ],
+      "comment": "Not a vague “once or twice” but “twice over, repeatedly”."
     }
   ],
   "related": [
     "twice"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/semel\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: semel</a>"
+    "<a href=\"https://logeion.uchicago.edu/semel\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: semel</a>",
+    "<a href=\"https://logeion.uchicago.edu/iterum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: iterum</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 88, each phrase checked against the searchable text of the book.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

@@ -8,7 +8,9 @@
     "what’s up?",
     "what ails you?",
     "what on earth’s the matter?",
-    "what is it?"
+    "what is it?",
+    "what’s the trouble now?",
+    "what’s it all about?"
   ],
   "domain": "sermo",
   "terms": [
@@ -57,12 +59,23 @@
     {
       "latin": "Quid istuc est reī?",
       "status": "alternative",
-      "period": "modern",
+      "period": "classical",
       "gloss": "what’s the matter (with that)?",
       "evidence": [
-        "Traupman 103: <span lang=\"la\">quid istuc est reī?</span>"
+        "Traupman 103: <span lang=\"la\">quid istuc est reī?</span>",
+        "Liv. 3.48.4: <span lang=\"la\">quid hoc reī sit</span> (Lewis &amp; Short s.v. <span lang=\"la\">percontor</span>)"
       ],
-      "comment": "Traupman’s phrase; neither Lewis &amp; Short nor the loci collections quote it in this form, though <span lang=\"la\">quid istuc est verbī?</span> (Plaut. Curc. 1.1.32) is built the same way."
+      "comment": "The partitive genitive <span lang=\"la\">reī</span> with a neuter pronoun, as Livy asks <span lang=\"la\">quid hoc reī sit</span>, “what this is all about”; Plautus builds <span lang=\"la\">quid istuc est verbī?</span> the same way (Plaut. Curc. 1.1.32). The exact words are Traupman’s."
+    },
+    {
+      "latin": "Quid jam?",
+      "status": "avoid",
+      "period": "classical",
+      "gloss": "given for “what (is the trouble) now?”",
+      "evidence": [
+        "Traupman 111"
+      ],
+      "comment": "In Plautus <span lang=\"la\">quid jam?</span> is “why so? how so?” and is answered with <span lang=\"la\">quia</span> (Plaut. Mil. 2.3.51, Lewis &amp; Short s.v. <span lang=\"la\">luscitiōsus</span>; see why so?). For what is wrong, <span lang=\"la\">Quid tibi est?</span> (above) or <span lang=\"la\">Quid istuc malī est?</span> (see trouble)."
     }
   ],
   "phrases": [
@@ -89,7 +102,9 @@
   ],
   "related": [
     "why-so-sad",
-    "what-happened"
+    "what-happened",
+    "why-so",
+    "trouble-misfortune"
   ],
   "sources": [
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: pp. 92, 409, checked against the searchable text of the book on 29 October 2026 and 9 November 2026.",
@@ -98,7 +113,8 @@
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 111.",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 92, checked against the searchable text and the page images of the book.",
     "Quotations from the Latinitas loci collections (loci-terentius), checked against the editions named there.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 103, each phrase checked against the searchable text of the book."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 103, each phrase checked against the searchable text of the book.",
+    "<a href=\"https://logeion.uchicago.edu/percontor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: percontor</a>"
   ],
   "review": {
     "status": "draft",

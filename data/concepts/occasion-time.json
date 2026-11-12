@@ -9,7 +9,10 @@
     "on one occasion",
     "on another occasion",
     "on the same occasion",
-    "for the occasion"
+    "for the occasion",
+    "as the occasion allows",
+    "to suit the occasion",
+    "as time allows"
   ],
   "domain": "tempus",
   "terms": [
@@ -53,6 +56,17 @@
       "period": "classical",
       "gloss": "an opportunity, the right moment",
       "comment": "Not this sense: <span lang=\"la\">occāsiō</span> is the chance or the right moment to do something, not simply a time when something happens (see opportunity)."
+    },
+    {
+      "latin": "prō tempore",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "as the occasion allows, to suit the occasion",
+      "evidence": [
+        "Sall. Jug. 49.6: <span lang=\"la\">pauca prō tempore mīlitēs hortātus</span> (Lewis &amp; Short s.v. <span lang=\"la\">hortor</span>)",
+        "Traupman 109 (for “for the time being”)"
+      ],
+      "comment": "Sallust’s general says a few words, as much as time allowed. Not “for the time being” (see temporary)."
     }
   ],
   "phrases": [
@@ -81,11 +95,13 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/tempus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tempus</a> · <a href=\"https://logeion.uchicago.edu/alias\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: alias</a> · <a href=\"https://logeion.uchicago.edu/quidam\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quidam</a> · <a href=\"https://logeion.uchicago.edu/occasio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: occasio</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 88, checked against the searchable text of the book (11 November 2026).",
-    "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-plinius), checked against the editions named there."
+    "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-plinius), checked against the editions named there.",
+    "<a href=\"https://logeion.uchicago.edu/hortor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: hortor</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

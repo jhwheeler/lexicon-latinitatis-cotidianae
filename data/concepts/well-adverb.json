@@ -1,0 +1,66 @@
+{
+  "id": "well-adverb",
+  "english": "well",
+  "pos": "adverb",
+  "also": [
+    "I am doing well",
+    "well done!",
+    "well said!",
+    "very well (adverb)"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "bene",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "well, rightly; very (with adjectives)",
+      "grammar": "adverb; comparative melius, superlative optimē",
+      "evidence": [
+        "Cato Agr. 3: <span lang=\"la\">vīllam rūsticam bene aedificātam habēre expedit</span> (Lewis &amp; Short)",
+        "Traupman 405"
+      ]
+    },
+    {
+      "latin": "rēctē",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "rightly, correctly, properly; all right",
+      "evidence": [
+        "Traupman 405"
+      ],
+      "comment": "In answers <span lang=\"la\">rēctē</span> is also “fine, all right” (see no, thank you; how are you?)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Mihi bene est.",
+      "english": "I am doing well.",
+      "source": "Traupman 405"
+    },
+    {
+      "latin": "Factum optimē!",
+      "english": "Well done!",
+      "source": "Traupman 405"
+    },
+    {
+      "latin": "Facētē dictum!",
+      "english": "Well said!",
+      "source": "Traupman 405"
+    }
+  ],
+  "related": [
+    "well-done-praise",
+    "bravo"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/bene\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: bene</a>",
+    "<a href=\"https://logeion.uchicago.edu/recte\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: recte</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 405."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-12",
+    "by": "Claude"
+  }
+}

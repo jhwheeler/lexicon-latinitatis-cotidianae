@@ -4,7 +4,10 @@
   "pos": "noun",
   "also": [
     "household furnishings",
-    "furnishings"
+    "furnishings",
+    "furnish a home",
+    "furnished apartment",
+    "furnish an apartment"
   ],
   "domain": "domus-structura",
   "terms": [
@@ -13,7 +16,10 @@
       "status": "recommended",
       "period": "classical",
       "gloss": "furniture, household furnishings collectively",
-      "comment": "Ancient collective noun; broader than just tables and chairs."
+      "comment": "Ancient collective noun; broader than just tables and chairs.",
+      "evidence": [
+        "Traupman 123"
+      ]
     }
   ],
   "related": [
@@ -29,5 +35,17 @@
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "domum supellectile īnstruere",
+      "english": "to furnish a home",
+      "source": "Traupman 123"
+    },
+    {
+      "latin": "diaeta omnī supellectile īnstrūcta",
+      "english": "a furnished apartment",
+      "source": "Traupman 122"
+    }
+  ]
 }

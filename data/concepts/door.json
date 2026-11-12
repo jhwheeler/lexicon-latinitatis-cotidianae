@@ -10,13 +10,29 @@
     {
       "latin": "jānua, jānuae f.",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "evidence": [
+        "Traupman 123"
+      ]
     },
     {
       "latin": "ōstium, ōstiī n.",
       "status": "alternative",
       "period": "classical",
-      "gloss": "door, doorway, opening"
+      "gloss": "door, doorway, opening",
+      "evidence": [
+        "Traupman 123"
+      ]
+    },
+    {
+      "latin": "valvae, valvārum f. pl.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "folding doors, the two leaves of a door",
+      "evidence": [
+        "Cic. Div. 1.74; Verr. 2.4.94 (Lewis &amp; Short s.v. valva)",
+        "Traupman 123, 125"
+      ]
     }
   ],
   "related": [
@@ -33,7 +49,8 @@
   ],
   "sources": [
     "<a href=\"https://www.alatius.com/ls/index.php?l=ianua\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: janua</a> · <a href=\"https://www.alatius.com/ls/index.php?l=ostium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ostium</a>",
-    "<a href=\"https://logeion.uchicago.edu/janua\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: janua</a>"
+    "<a href=\"https://logeion.uchicago.edu/janua\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: janua</a>",
+    "<a href=\"https://logeion.uchicago.edu/valva\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: valva</a>"
   ],
   "replaces": [
     "entry-157"
@@ -42,5 +59,9 @@
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "doorway",
+    "folding doors"
+  ]
 }

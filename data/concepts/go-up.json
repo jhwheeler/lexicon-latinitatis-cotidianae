@@ -3,7 +3,10 @@
   "english": "go up",
   "pos": "verb",
   "also": [
-    "go upstairs"
+    "go upstairs",
+    "upstairs",
+    "the upstairs",
+    "upstairs bedroom"
   ],
   "domain": "domus",
   "terms": [
@@ -11,6 +14,15 @@
       "latin": "ascendō, ascendere, ascendī, ascēnsum",
       "status": "recommended",
       "period": "classical"
+    },
+    {
+      "latin": "scālās ascendere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "go upstairs",
+      "evidence": [
+        "Traupman 125"
+      ]
     }
   ],
   "phrases": [
@@ -18,6 +30,16 @@
       "latin": "Per scālās ascendāmus.",
       "english": "Let’s go upstairs.",
       "source": "composed"
+    },
+    {
+      "latin": "domus superior",
+      "english": "the upstairs",
+      "source": "Traupman 125"
+    },
+    {
+      "latin": "cubiculum superius",
+      "english": "an upstairs bedroom",
+      "source": "Traupman 125"
     }
   ],
   "related": [

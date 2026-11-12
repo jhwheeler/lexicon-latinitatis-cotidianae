@@ -9,7 +9,10 @@
   "also": [
     "as much as",
     "how much?",
-    "how great"
+    "how great",
+    "how much of",
+    "so much",
+    "so much of"
   ],
   "domain": "verba",
   "terms": [
@@ -23,7 +26,7 @@
         "Sen. Ep. 76.5: <span lang=\"la\">‘quantum’ inquis ‘prōficiam?’ quantum temptāveris</span>",
         "Hor. Ep. 1.7.16: <span lang=\"la\">at tū, quantum vīs, tolle</span>"
       ],
-      "comment": "Answered by <span lang=\"la\">tantum</span>: <span lang=\"la\">quantum … tantum</span>, as much … so much (Cic. Fam. 16.2.1)."
+      "comment": "With a genitive, how much of: <span lang=\"la\">quantum morae</span>, how much delay. Answered by <span lang=\"la\">tantum</span>, which takes the genitive the same way (<span lang=\"la\">tantum cibī</span>, so much food): <span lang=\"la\">quantum … tantum</span>, as much … so much (Cic. Fam. 16.2.1)."
     },
     {
       "latin": "quantus, quanta, quantum",
@@ -73,6 +76,21 @@
       "latin": "ō quī complexūs et gaudia quanta fuērunt",
       "english": "oh, what embraces there were, and how much joy!",
       "source": "Hor. S. 1.5.43"
+    },
+    {
+      "latin": "incrēdibile est, quantum morae lēctiōnī festīnātiōne adjiciātur",
+      "english": "it is unbelievable how much delay hurrying adds to reading",
+      "source": "Quint. 1.1.32"
+    },
+    {
+      "latin": "tantum cibī et pōtiōnis adhibendum ut reficiantur vīrēs, nōn opprimantur",
+      "english": "only so much food and drink should be taken as restores one’s strength without crushing it",
+      "source": "Cic. Sen. 36"
+    },
+    {
+      "latin": "tantum nivis fodiendum atque ēgerendum fuit",
+      "english": "so much snow had to be dug out and carried away",
+      "source": "Liv. 21.37.1"
     }
   ],
   "related": [
@@ -83,11 +101,12 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/quantus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quantus</a>",
-    "Quotations from the Latinitas loci collections (loci-horatius, loci-seneca-epistulae, loci-cicero-epistulae, loci-martialis), checked against the editions named there."
+    "Quotations from the Latinitas loci collections (loci-horatius, loci-seneca-epistulae, loci-cicero-epistulae, loci-martialis), checked against the editions named there.",
+    "Quotations from the Latinitas loci collections and the note on quantity words, checked against the editions named there."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-11",
     "by": "Claude"
   }
 }

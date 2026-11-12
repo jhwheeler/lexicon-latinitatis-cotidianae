@@ -52,7 +52,7 @@ The builder renders each record as a page of its own at `c/<id>.html`; lists it,
 
 A **term** has `latin` (lemma with genitive and gender, or principal parts), `status` (`recommended`, `alternative`, `avoid`), `period` (`classical`, `post-classical`, `late`, `medieval`, `renaissance`, `modern`, `ours`), and optionally `gloss` (English, if narrower than the headword), `grammar` (see below), `register` (rich text, in the house’s Latin labels), `evidence` (a list of citations in rich text: “Traupman 50”, “M-O s.v. swimming”, “Plin. NH 7.78”, with a quotation where it helps), `comment` (rich text) and `notes` (footnote keys).
 
-Rich text follows the rules of `data-format.md`: `<strong lang="la">`, `<span lang="la">`, `<em>`, external `<a>` links; macrons and j as everywhere else.
+`gloss`, `grammar` and an example's `latin` and `english` are plain text: no tags and no entities (the builder refuses them, since they would be printed as written). Rich text follows the rules of `data-format.md`: `<strong lang="la">`, `<span lang="la">`, `<em>`, external `<a>` links; macrons and j as everywhere else.
 
 ### How a page shows a record
 

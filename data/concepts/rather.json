@@ -11,7 +11,9 @@
     "instead",
     "or rather",
     "prefer … to",
-    "preference"
+    "preference",
+    "would you rather",
+    "rather than (more truly)"
   ],
   "domain": "verba",
   "terms": [
@@ -26,6 +28,18 @@
         "Ter. Ad. 74–75",
         "Cic. Tusc. 2.52: <span lang=\"la\">perpessus est omnia potius quam cōnsciōs indicāret</span> (Lewis &amp; Short)"
       ]
+    },
+    {
+      "latin": "magis … quam",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "rather (than), more truly: which word fits better",
+      "grammar": "adverb, with quam for the other term",
+      "evidence": [
+        "Liv. 21.58.8: <span lang=\"la\">magis obrutī quam tēctī</span>",
+        "Verg. Ecl. 1.11: <span lang=\"la\">mīror magis</span>"
+      ],
+      "comment": "<span lang=\"la\">Potius</span> is rather by preference, what one would sooner do; <span lang=\"la\">magis</span> is rather by degree, what is more true: <span lang=\"la\">magis obrutī quam tēctī</span>, buried rather than sheltered."
     },
     {
       "latin": "mālō, mālle, māluī",
@@ -93,22 +107,46 @@
       "latin": "ego vōs hortārī tantum possum, ut amīcitiam omnibus rēbus hūmānīs antepōnātis",
       "english": "all I can do is urge you to put friendship before everything else in human life",
       "source": "Cic. Amic. 17"
+    },
+    {
+      "latin": "legere oportet potius quam quatere",
+      "english": "they should be picked rather than shaken down",
+      "source": "Varr. RR 1.55.1"
+    },
+    {
+      "latin": "nōn equidem invideō; mīror magis",
+      "english": "I don’t envy you; rather, I wonder",
+      "source": "Verg. Ecl. 1.11"
+    },
+    {
+      "latin": "prōcumberent hominēs tegminibus suīs magis obrutī quam tēctī",
+      "english": "men fell, buried rather than sheltered by their shields",
+      "source": "Liv. 21.58.8"
+    },
+    {
+      "latin": "nōnne māvīs sine perīculō tuae domī esse quam cum perīculō aliēnae?",
+      "english": "wouldn’t you rather be safe in your own house than in danger in someone else’s?",
+      "source": "Cic. Fam. 4.7.4"
     }
   ],
   "related": [
     "actually",
-    "quite-fairly"
+    "quite-fairly",
+    "more-degree"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/potis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: potis (potius)</a> · <a href=\"https://logeion.uchicago.edu/malo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: malo</a>",
     "Quotations from the Latinitas loci collections (loci-martialis, loci-terentius, loci-cicero-epistulae, loci-quintilianus), checked against the editions named there.",
     "<a href=\"https://logeion.uchicago.edu/praefero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praefero</a> · <a href=\"https://logeion.uchicago.edu/antepono\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: antepono</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 364, checked against the searchable text of the book (9 November 2026).",
-    "Cic. Amic. 17, 63 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+    "Cic. Amic. 17, 63 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "<a href=\"https://logeion.uchicago.edu/magis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: magis</a>",
+    "Quotations from the Latinitas loci collections and the note on quantity words, checked against the editions named there.",
+    "Quotations from the Latinitas loci collections and the note on suppletive verbs, checked against the editions named there."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-11",
     "by": "Claude"
   }
 }

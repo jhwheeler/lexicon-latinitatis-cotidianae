@@ -16,7 +16,7 @@ and the fonts. See docs/data-format.md and docs/records.md.
 """
 import unicodedata
 import argparse
-from html import escape
+from html import escape, unescape
 from html.parser import HTMLParser
 import json
 from pathlib import Path, PurePosixPath
@@ -292,6 +292,8 @@ def load_records(root, categories, legacy, rulings):
             for name in ('gloss', 'grammar'):
                 if name in term:
                     string(term[name])
+                    # Plain text: markup here is printed as written (it showed on the site, 11 Nov 2026).
+                    require(not re.search(r'<|&(amp|quot|lt|gt);', term[name]), f'Markup in the {name} of {where}: plain text only')
             for name in ('register', 'comment'):
                 if name in term:
                     rich(term[name])
@@ -302,6 +304,7 @@ def load_records(root, categories, legacy, rulings):
         for phrase in record.get('phrases', []):
             fields(phrase, ('latin', 'english', 'source'), ('notes',))
             string(phrase['latin']), string(phrase['english']), rich(phrase['source'])
+            require(not re.search(r'<|&(amp|quot|lt|gt);', phrase['latin'] + phrase['english']), f'Markup in an example of {where}: plain text only')
             used += check_notes(phrase, notes, where)
         require(set(notes) <= set(used), f'Unused notes in {where}: {set(notes) - set(used)}')
         strings(record.get('related', []), f'Related in {where}')
@@ -730,7 +733,9 @@ def term_meta(term):
 
 
 def plain(text):
-    return re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', '', text)).strip()
+    # Entities too: this text goes into the search data, which the page inserts as text, so that
+    # “Lewis &amp; Short” must not reach it as written.
+    return unescape(re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', '', text))).strip()
 
 
 def site_header(up, search=True):

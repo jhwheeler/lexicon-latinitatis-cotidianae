@@ -9,7 +9,9 @@
     "a tiny bit",
     "a little more",
     "a little bigger",
-    "a little of"
+    "a little of",
+    "a little longer",
+    "a little strength"
   ],
   "also_under": [
     "verba"
@@ -20,7 +22,8 @@
       "latin": "paulum, paulī n.",
       "status": "recommended",
       "period": "classical",
-      "comment": "<span lang=\"la\">paulum cinnamōmī</span> is our easy way to say “a pinch of cinnamon,” without implying an exact measure."
+      "comment": "<span lang=\"la\">paulum cinnamōmī</span> is our easy way to say “a pinch of cinnamon,” without implying an exact measure. With a verb it is an adverb: <span lang=\"la\">paulum redormiō</span>, I sleep a little more.",
+      "grammar": "noun, second declension, with a genitive (paulum silvae); with verbs, an adverb"
     },
     {
       "latin": "paululum, paululī n.",
@@ -65,6 +68,16 @@
       "latin": "hoc erat in vōtīs: modus agrī nōn ita magnus, hortus ubi et tēctō vīcīnus jūgis aquae fōns et paulum silvae super hīs foret",
       "english": "this is what I prayed for: a piece of land not so very big, with a garden, a spring of running water near the house, and a bit of woodland above them",
       "source": "Hor. S. 2.6.1–3"
+    },
+    {
+      "latin": "paulum redormiō, dein ambulō",
+      "english": "I sleep a little more, then go for a walk",
+      "source": "Plin. Ep. 9.36.3"
+    },
+    {
+      "latin": "cum autem paulum firmitātis accessit",
+      "english": "but once they have gained a little strength",
+      "source": "Cic. Fin. 5.42"
     }
   ],
   "related": [
@@ -72,18 +85,20 @@
     "add",
     "a-lot",
     "too-little",
-    "some"
+    "some",
+    "the-more-the-more"
   ],
   "sources": [
     "<a href=\"https://alatius.com/ls/index.php?l=paulum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: paulum</a> · <a href=\"https://logeion.uchicago.edu/paululus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: paululus (paululum)</a> · <a href=\"https://logeion.uchicago.edu/paulus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: paulus (paulō)</a>",
     "Horace and Terence from the Latinitas loci collections (loci-horatius, loci-terentius).",
     "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>",
     "The example sentences marked “composed” are ours.",
-    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition.",
+    "Quotations from the Latinitas loci collections and the note on quantity words, checked against the editions named there."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-11",
     "by": "Claude"
   }
 }

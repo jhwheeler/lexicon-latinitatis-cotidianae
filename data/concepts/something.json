@@ -4,7 +4,9 @@
   "pos": "pronoun",
   "also": [
     "something or other",
-    "something new"
+    "something new",
+    "something good",
+    "something useful"
   ],
   "domain": "verba",
   "terms": [
@@ -18,7 +20,7 @@
         "Cic. Fam. 9.26.3: <span lang=\"la\">cotīdiē aliquid legitur aut scrībitur</span>",
         "Cic. Sen. 38: <span lang=\"la\">senīle aliquid … aliquid adulēscentis</span>"
       ],
-      "comment": "“Something old, something new” takes an agreeing adjective or a genitive: <span lang=\"la\">senīle aliquid</span>, <span lang=\"la\">aliquid adulēscentis</span> (Cic. Sen. 38). Lewis &amp; Short (s.v. <span lang=\"la\">aliquis</span>): <span lang=\"la\">aliquid</span> says that the thing exists, though not which; <span lang=\"la\">quid</span> leaves even that open."
+      "comment": "“Something old, something new” takes an agreeing adjective or a genitive: <span lang=\"la\">senīle aliquid</span>, <span lang=\"la\">aliquid adulēscentis</span> (Cic. Sen. 38). A second-declension adjective is usually in the genitive (<span lang=\"la\">aliquid bonī</span>, something good), a third-declension one agrees (<span lang=\"la\">aliquid ūtile</span>). Lewis &amp; Short (s.v. <span lang=\"la\">aliquis</span>): <span lang=\"la\">aliquid</span> says that the thing exists, though not which; <span lang=\"la\">quid</span> leaves even that open."
     },
     {
       "latin": "quid",
@@ -69,6 +71,11 @@
       "latin": "sī quid forte abest, ipse vacuus locus admonet, ut, quod deest, requīrātur",
       "english": "if anything happens to be missing, the empty place itself reminds you to look for what is gone",
       "source": "Col. 12.2.6"
+    },
+    {
+      "latin": "hīc nesciō quid bonī dēbet esse",
+      "english": "there must be something good in here",
+      "source": "Petr. 33.2"
     }
   ],
   "related": [
@@ -79,11 +86,12 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/aliquis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aliquis</a> · <a href=\"https://logeion.uchicago.edu/quis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quis</a> · <a href=\"https://logeion.uchicago.edu/nescio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nescio</a> · <a href=\"https://logeion.uchicago.edu/quidam\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quidam</a>",
-    "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-cicero-philosophica, loci-cato), checked against the editions named there."
+    "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-cicero-philosophica, loci-cato), checked against the editions named there.",
+    "Quotations from the Latinitas loci collections and the note on quantity words, checked against the editions named there."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-11",
     "by": "Claude"
   }
 }

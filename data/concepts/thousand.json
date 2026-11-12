@@ -4,7 +4,11 @@
   "pos": "numeral",
   "also": [
     "a thousand",
-    "two thousand"
+    "two thousand",
+    "thousands",
+    "three thousand",
+    "a thousand people",
+    "a mile (a thousand paces)"
   ],
   "domain": "sermo",
   "terms": [
@@ -14,7 +18,21 @@
       "period": "classical",
       "evidence": [
         "Traupman 253"
-      ]
+      ],
+      "gloss": "a thousand",
+      "grammar": "adjective, indeclinable",
+      "comment": "A thousand agrees like any number: <span lang=\"la\">mīlle hominēs</span>, a thousand people. From two thousand on, the plural <span lang=\"la\">mīlia</span> is a noun and takes the genitive (see below). <span lang=\"la\">mīlle</span> with a genitive is the rarer use."
+    },
+    {
+      "latin": "mīlia, mīlium n. pl. + gen.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "thousands: two thousand, three thousand",
+      "grammar": "noun, third declension, plural (dat. and abl. mīlibus), with the genitive",
+      "evidence": [
+        "Plin. Ep. 3.1.4: <span lang=\"la\">mīlia passuum tria</span>"
+      ],
+      "comment": "<span lang=\"la\">duo mīlia hominum</span>, two thousand people; <span lang=\"la\">tria mīlia passuum</span>, three miles (three thousand paces)."
     }
   ],
   "phrases": [
@@ -27,19 +45,37 @@
       "latin": "Mīlle annōs, tata? Quam multōs! — Multōs vērō, immō plūrimōs.",
       "english": "A thousand years, Dad? So many! — Many indeed; very many.",
       "source": "Libellus II, <span lang=\"la\">Sintra: castellum et puteus</span>"
+    },
+    {
+      "latin": "ambulat mīlia passuum tria",
+      "english": "he walks three miles",
+      "source": "Plin. Ep. 3.1.4"
+    },
+    {
+      "latin": "nam dē mīlle fabae modiīs cum surripis ūnum, damnum est, nōn facinus, mihi pactō lēnius istō",
+      "english": "for when you steal one peck from a thousand pecks of beans, it is a loss, not a crime, to me, by that milder reckoning",
+      "source": "Hor. Ep. 1.16.55–56"
+    },
+    {
+      "latin": "ac prīmō placidum aequor mīlle nāvium rēmīs strepere",
+      "english": "and at first the calm sea roared with the oars of a thousand ships",
+      "source": "Tac. Ann. 2.23"
     }
   ],
   "related": [
     "million",
-    "six-hundred"
+    "six-hundred",
+    "one-of"
   ],
   "sources": [
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: p. 253.",
-    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+    "<a href=\"https://logeion.uchicago.edu/mille\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mille</a>",
+    "Quotations from the Latinitas loci collections and the note on quantity words, checked against the editions named there."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-11",
     "by": "Claude"
   }
 }

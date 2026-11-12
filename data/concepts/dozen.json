@@ -10,7 +10,9 @@
     "dozens",
     "dozens of",
     "twelve",
-    "twelve each"
+    "twelve each",
+    "12",
+    "XII"
   ],
   "domain": "verba",
   "terms": [
@@ -22,7 +24,8 @@
       "grammar": "numeral, indeclinable",
       "evidence": [
         "Cic. Rep. 2.17 (Lewis &amp; Short)",
-        "Caes. B.G. 1.5.2 (Lewis &amp; Short)"
+        "Caes. B.G. 1.5.2 (Lewis &amp; Short)",
+        "Traupman 253"
       ],
       "comment": "Latin has no word for a dozen and does not count in dozens: a dozen eggs are <span lang=\"la\">duodecim ōva</span>."
     },
@@ -64,17 +67,19 @@
     }
   ],
   "related": [
-    "number"
+    "number",
+    "twelfth-ordinal"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/duodecim\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: duodecim</a> · <a href=\"https://logeion.uchicago.edu/duodeni\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: duodeni</a> · <a href=\"https://logeion.uchicago.edu/sescenti\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sescenti</a>",
     "Cicero (Att. 7.2.3) and Terence (Ph. 668, in the edition’s spelling <span lang=\"la\">sexcentās</span>) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026).",
     "Citations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j).",
-    "The example sentences marked “composed” are ours."
+    "The example sentences marked “composed” are ours.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, cited by printed page; each phrase checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

@@ -4,7 +4,11 @@
   "pos": "noun",
   "also": [
     "scorn",
-    "contemptuous"
+    "contemptuous",
+    "despise",
+    "feel contempt for",
+    "hold in contempt",
+    "look down on"
   ],
   "domain": "verba",
   "terms": [
@@ -24,7 +28,9 @@
       "period": "classical",
       "gloss": "contempt",
       "evidence": [
-        "Traupman 150"
+        "Traupman 150",
+        "Lewis &amp; Short: “first freq. since the Aug. per. … perh. never in Cic.”",
+        "Traupman 296"
       ],
       "comment": "Lewis &amp; Short: frequent from the Augustan age."
     },
@@ -34,7 +40,9 @@
       "period": "classical",
       "gloss": "contempt",
       "evidence": [
-        "Traupman 150"
+        "Traupman 150",
+        "Cic. Fin. 1.67: <span lang=\"la\">dēspicātiōnēs adversantur voluptātibus</span> (Lewis &amp; Short)",
+        "Traupman 296"
       ]
     },
     {
@@ -44,6 +52,24 @@
       "gloss": "contemptuous of",
       "evidence": [
         "Traupman 150"
+      ]
+    },
+    {
+      "latin": "contemnō, contemnere, contempsī, contemptum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "despise, feel contempt for",
+      "evidence": [
+        "Traupman 296"
+      ]
+    },
+    {
+      "latin": "dēspiciēns, dēspicientis (+ gen.)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "contemptuous (of)",
+      "evidence": [
+        "Traupman 296"
       ]
     }
   ],
@@ -56,11 +82,20 @@
     "<a href=\"https://logeion.uchicago.edu/despicatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: despicatio</a>",
     "<a href=\"https://logeion.uchicago.edu/despicio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: despicio</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, each phrase checked against the searchable text of the book.",
-    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "<a href=\"https://logeion.uchicago.edu/contemno\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: contemno</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 296."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "aliquem dēspicātum habēre",
+      "english": "to hold someone in contempt",
+      "source": "Traupman 296"
+    }
+  ]
 }

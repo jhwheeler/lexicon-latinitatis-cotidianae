@@ -10,7 +10,9 @@
     "get cold",
     "catch cold",
     "liable to get cold",
-    "sensitive to the cold"
+    "sensitive to the cold",
+    "my hands are cold",
+    "my feet are cold"
   ],
   "domain": "corpus",
   "terms": [
@@ -22,14 +24,18 @@
         "Traupman 132",
         "Traupman 135",
         "Traupman 61",
-        "Traupman 63"
+        "Traupman 63",
+        "Traupman 293"
       ]
     },
     {
       "latin": "frīgeō, frīgēre",
       "status": "alternative",
       "period": "classical",
-      "gloss": "be cold"
+      "gloss": "be cold",
+      "evidence": [
+        "Traupman 293"
+      ]
     },
     {
       "latin": "frīgus, frīgoris n.",
@@ -38,7 +44,8 @@
       "gloss": "coldness",
       "comment": "Not normally the illness.",
       "evidence": [
-        "Traupman 135"
+        "Traupman 135",
+        "Traupman 293"
       ]
     },
     {
@@ -59,7 +66,8 @@
       "gloss": "sensitive to cold, easily chilled",
       "evidence": [
         "Varr. RR 2.3.6; Plin. NH 21.60 (Lewis &amp; Short)",
-        "Traupman 135"
+        "Traupman 135",
+        "Traupman 293"
       ]
     }
   ],
@@ -68,6 +76,11 @@
       "latin": "Nihil jam frīgidī.",
       "english": "Nothing cold now.",
       "source": "composed"
+    },
+    {
+      "latin": "Manūs pedēsque frīgent.",
+      "english": "My hands and feet are cold.",
+      "source": "Traupman 293"
     }
   ],
   "related": [

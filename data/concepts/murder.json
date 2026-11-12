@@ -7,7 +7,10 @@
     "killing",
     "homicide",
     "commit murder",
-    "a murder mystery"
+    "a murder mystery",
+    "murderess",
+    "parricide",
+    "murder (verb)"
   ],
   "domain": "res-publica",
   "terms": [
@@ -18,7 +21,8 @@
       "gloss": "murder, killing; slaughter",
       "evidence": [
         "Cic. Mil. 12 (Lewis &amp; Short)",
-        "Sall. Jug. 31.13: <span lang=\"la\">caedem in aliquem facere</span>"
+        "Sall. Jug. 31.13: <span lang=\"la\">caedem in aliquem facere</span>",
+        "Traupman 196: murder by striking"
       ],
       "comment": "The usual classical word for a killing, of one person or many: murder, massacre, slaughter in battle. To commit murder is <span lang=\"la\">caedem facere</span> (Sall. Jug. 31.13) or <span lang=\"la\">committere</span> (Quint.); to murder someone, <span lang=\"la\">occīdere</span> or <span lang=\"la\">interficere</span> (see kill)."
     },
@@ -29,7 +33,8 @@
       "gloss": "a violent death, murder",
       "evidence": [
         "Cic. Mil. 10 (Lewis &amp; Short)",
-        "Traupman 349"
+        "Traupman 349",
+        "Traupman 196"
       ],
       "comment": "Death by violence, seen from the victim’s side; outside fixed phrases (<span lang=\"la\">vītae necisque potestās</span>, power of life and death, Caesar) mostly in poetry. Traupman gives it for murder."
     },
@@ -40,7 +45,8 @@
       "gloss": "homicide, murder (as a charge)",
       "evidence": [
         "Quint. 3.10.1: <span lang=\"la\">sī quis homicīdiī accūsētur</span> (Lewis &amp; Short)",
-        "Tac. G. 21"
+        "Tac. G. 21",
+        "Traupman 195"
       ],
       "comment": "The term of the courts from Quintilian on; Cicero says <span lang=\"la\">caedēs</span> and, of the charge, <span lang=\"la\">inter sīcāriōs</span>."
     },
@@ -50,7 +56,8 @@
       "period": "classical",
       "gloss": "a murderer, a murderess",
       "evidence": [
-        "Cic. Phil. 2.30 (Lewis &amp; Short)"
+        "Cic. Phil. 2.30 (Lewis &amp; Short)",
+        "Traupman 196"
       ],
       "comment": "Cicero sets it beside <span lang=\"la\">sīcārius</span>, an assassin who uses a dagger, and <span lang=\"la\">parricīda</span>, the murderer of a parent or kinsman (Phil. 2.30–31)."
     },
@@ -64,6 +71,47 @@
         "Quint. 10.1.12"
       ],
       "comment": "From <span lang=\"la\">sīca</span>, a dagger, but used of any murderer (Quint. 10.1.12). <span lang=\"la\">Inter sīcāriōs accūsāre, dēfendere</span>: on a charge of murder (Cic. Rosc. Am. 90)."
+    },
+    {
+      "latin": "occīsiō, occīsiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a killing, a murder",
+      "evidence": [
+        "Cic. Caecin. 41: <span lang=\"la\">sī caedēs et occīsiō facta nōn erit</span> (Lewis &amp; Short: “class. but rare”)",
+        "Traupman 196"
+      ]
+    },
+    {
+      "latin": "parricīda, parricīdae m./f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the murderer of a parent or near relative",
+      "evidence": [
+        "Lewis &amp; Short s.v. <span lang=\"la\">parricīda</span>",
+        "Traupman 196"
+      ]
+    },
+    {
+      "latin": "necātor, necātōris m.",
+      "status": "alternative",
+      "period": "post-classical",
+      "gloss": "a murderer",
+      "evidence": [
+        "Macr. S. 1.12.9 (Lewis &amp; Short: post-classical)",
+        "Traupman 196"
+      ]
+    },
+    {
+      "latin": "necātrīx, necātrīcis f.",
+      "status": "alternative",
+      "period": "late",
+      "gloss": "a murderess",
+      "evidence": [
+        "Aug. Cons. Evang. (Lewis &amp; Short: late Latin)",
+        "Traupman 196"
+      ],
+      "comment": "Late; a murderess is classically <span lang=\"la\">homicīda</span>, which is of either gender."
     }
   ],
   "phrases": [
@@ -71,6 +119,21 @@
       "latin": "In hōc librō dē caede quaeritur.",
       "english": "This book is a murder mystery.",
       "source": "composed"
+    },
+    {
+      "latin": "necāre",
+      "english": "to murder (by cruel means)",
+      "source": "Traupman 196"
+    },
+    {
+      "latin": "trucīdāre",
+      "english": "to murder (violently, ruthlessly)",
+      "source": "Traupman 196"
+    },
+    {
+      "latin": "caedere",
+      "english": "to murder (by striking)",
+      "source": "Traupman 196"
     }
   ],
   "related": [
@@ -83,11 +146,13 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/caedes\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: caedes</a> · <a href=\"https://logeion.uchicago.edu/nex\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nex</a> · <a href=\"https://logeion.uchicago.edu/homicidium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: homicidium</a> · <a href=\"https://logeion.uchicago.edu/homicida\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: homicida</a> · <a href=\"https://logeion.uchicago.edu/sicarius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sicarius</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 349, checked against the searchable text of the book (11 November 2026).",
-    "The example sentences marked “composed” are ours."
+    "The example sentences marked “composed” are ours.",
+    "<a href=\"https://logeion.uchicago.edu/occisio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: occisio</a> · <a href=\"https://logeion.uchicago.edu/parricida\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: parricida</a> · <a href=\"https://logeion.uchicago.edu/necator\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: necator</a> · <a href=\"https://logeion.uchicago.edu/necatrix\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: necatrix</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 195–196, each phrase checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

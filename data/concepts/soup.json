@@ -6,7 +6,9 @@
     "broth",
     "stock",
     "chicken stock",
-    "vegetable soup"
+    "vegetable soup",
+    "noodle soup",
+    "hot soup"
   ],
   "domain": "culina",
   "terms": [
@@ -16,7 +18,9 @@
       "period": "classical",
       "gloss": "soup, broth",
       "evidence": [
-        "Traupman 73"
+        "Traupman 73",
+        "Traupman 68",
+        "Traupman 70"
       ],
       "comment": "A homonym of <strong lang=\"la\">jūs</strong>, “right, law”."
     },
@@ -46,7 +50,9 @@
       "gloss": "a little broth",
       "evidence": [
         "Cato, Agr. 156.7: <span lang=\"la\">jūsculum frīgidum</span> (Lewis &amp; Short)",
-        "Andresian p. 9"
+        "Andresian p. 9",
+        "Traupman 70",
+        "Traupman 73"
       ],
       "comment": "The diminutive of <span lang=\"la\">jūs</span>; the lexicon gives it, after Traupman, for a sauce."
     }
@@ -61,6 +67,21 @@
       "latin": "In culīnā jūs ex holeribus in ōllā foculō impositā calēbat, quod in crāstinum servātum est.",
       "english": "In the kitchen a vegetable soup was keeping warm in a pot on the stove; it was kept for the next day.",
       "source": "Libellus VI, <span lang=\"la\">Reditus: per Alpēs domum</span>"
+    },
+    {
+      "latin": "jūs collȳricum",
+      "english": "noodle soup",
+      "source": "Traupman 72"
+    },
+    {
+      "latin": "jūs fervēns",
+      "english": "hot soup",
+      "source": "Traupman 73"
+    },
+    {
+      "latin": "Quod jūs habēs hodiē?",
+      "english": "What kind of soup do you have today?",
+      "source": "Traupman 68"
     }
   ],
   "related": [
@@ -72,7 +93,7 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/jus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: jus</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: p. 73, checked against the searchable text of the book on 29 October 2026.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: p. 73, checked against the searchable text of the book on 29 October 2026; p. 68; p. 70; p. 72.",
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
     "<a href=\"https://logeion.uchicago.edu/jusculum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: jusculum</a>",
     "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 9."
@@ -83,7 +104,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

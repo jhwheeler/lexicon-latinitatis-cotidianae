@@ -8,6 +8,18 @@
       "latin": "gustō, gustāre, gustāvī, gustātum",
       "status": "recommended",
       "period": "classical"
+    },
+    {
+      "latin": "sapiō, sapere, sapīvī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "taste of, have a flavour",
+      "grammar": "verb, third conjugation, intransitive; with an accusative, taste of something",
+      "evidence": [
+        "Plaut. Mil. 2.6.104: <span lang=\"la\">occīsam saepe sapere plūs multō suem</span> (Lewis &amp; Short)",
+        "Traupman 73"
+      ],
+      "comment": "Said of the food, not of the person tasting, with an accusative of what it tastes of. To taste something oneself is <span lang=\"la\">gustāre</span>."
     }
   ],
   "phrases": [
@@ -20,6 +32,11 @@
       "latin": "Gustā. Placetne tibi?",
       "english": "Taste it. Do you like it?",
       "source": "composed"
+    },
+    {
+      "latin": "sapere (+ acc.)",
+      "english": "taste like",
+      "source": "Traupman 73"
     }
   ],
   "related": [
@@ -29,11 +46,18 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/gusto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gusto</a> · <a href=\"https://alatius.com/ls/index.php?l=placeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: placeo</a>",
     "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>",
-    "The example sentences marked “composed” are ours."
+    "The example sentences marked “composed” are ours.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 73.",
+    "<a href=\"https://logeion.uchicago.edu/sapio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sapio</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "taste like",
+    "taste of",
+    "it tastes of"
+  ]
 }

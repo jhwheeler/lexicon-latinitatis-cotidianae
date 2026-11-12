@@ -3,7 +3,9 @@
   "english": "goose",
   "pos": "noun",
   "also": [
-    "geese"
+    "geese",
+    "geese cackle",
+    "cackle"
   ],
   "domain": "natura",
   "terms": [
@@ -15,6 +17,17 @@
         "Traupman 143",
         "Traupman 323"
       ]
+    },
+    {
+      "latin": "gingriō, gingrīre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "cackle (of geese)",
+      "evidence": [
+        "Paul. ex Fest. p. 95: <span lang=\"la\">gingrīre ānserum vōcis proprium est</span> (Lewis &amp; Short)",
+        "Traupman 323"
+      ],
+      "comment": "Known from the grammarians as the goose’s own cry."
     }
   ],
   "related": [
@@ -22,6 +35,7 @@
     "cackle"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/gingrire\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gingrire</a>",
     "<a href=\"https://logeion.uchicago.edu/anser\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: anser</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, each phrase checked against the searchable text of the book.",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 323."
@@ -30,5 +44,12 @@
     "status": "draft",
     "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "Ānserēs gingriunt.",
+      "english": "Geese cackle.",
+      "source": "Traupman 323"
+    }
+  ]
 }

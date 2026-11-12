@@ -3,7 +3,12 @@
   "english": "good",
   "pos": "adjective",
   "also": [
-    "goodness"
+    "goodness",
+    "good (of a person)",
+    "good (morally)",
+    "good (weather)",
+    "good advice",
+    "be good to"
   ],
   "domain": "verba",
   "terms": [
@@ -13,8 +18,12 @@
       "period": "classical",
       "gloss": "good (also morally)",
       "evidence": [
-        "Traupman 153"
-      ]
+        "Traupman 153",
+        "Cato Agr. praef. 2: <span lang=\"la\">bonum agricolam bonumque colōnum</span>",
+        "Traupman 322"
+      ],
+      "grammar": "adjective, first and second declension; comparative melior, superlative optimus",
+      "comment": "The general word, of things, people and conduct. “Be good to” is <span lang=\"la\">bonus esse</span> + dat. (<span lang=\"la\">vīcīnīs bonus estō</span>, Cato Agr. 4)."
     },
     {
       "latin": "bonitās, bonitātis f.",
@@ -24,21 +33,70 @@
       "evidence": [
         "Traupman 153"
       ]
+    },
+    {
+      "latin": "probus, proba, probum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "good, upright (morally)",
+      "evidence": [
+        "Traupman 322"
+      ],
+      "comment": "Good in character, honest (see moral)."
+    },
+    {
+      "latin": "rēctus, rēcta, rēctum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "right, sound (of advice, a judgement)",
+      "evidence": [
+        "Traupman 322"
+      ]
+    },
+    {
+      "latin": "serēnus, serēna, serēnum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "fine, clear (of weather)",
+      "evidence": [
+        "Cic. Fam. 16.9.2: <span lang=\"la\">caelō serēnō</span>",
+        "Traupman 322"
+      ],
+      "comment": "Of the sky and weather: <span lang=\"la\">caelō serēnō</span>, in fine weather (see clear sky)."
     }
   ],
   "related": [
     "well-behaved",
     "moral-good",
-    "bad"
+    "bad",
+    "clear-sky",
+    "great-excellent"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/bonus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: bonus</a>",
     "<a href=\"https://logeion.uchicago.edu/bonitas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: bonitas</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, each phrase checked against the searchable text of the book."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, each phrase checked against the searchable text of the book.",
+    "<a href=\"https://logeion.uchicago.edu/probus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: probus</a>",
+    "<a href=\"https://logeion.uchicago.edu/rectus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: rectus</a>",
+    "<a href=\"https://logeion.uchicago.edu/serenus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: serenus</a>",
+    "Quotations from the Latinitas loci collections (loci-cato, loci-cicero-epistulae, loci-corderius), checked against the editions named there; Corderius is a modern schoolbook.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 322."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "vīcīnīs bonus estō; familiam nē sīverīs peccāre",
+      "english": "be good to the neighbours; don’t let your household misbehave",
+      "source": "Cato Agr. 4"
+    },
+    {
+      "latin": "Bonum signum nūntiās, jam sentiēbam ēsuriem.",
+      "english": "That’s good news: I was beginning to feel hungry.",
+      "source": "Cord. Coll. IV 33"
+    }
+  ]
 }

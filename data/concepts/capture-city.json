@@ -8,7 +8,10 @@
     "storm",
     "seize",
     "conquer (a city)",
-    "capture of a city"
+    "capture of a city",
+    "retake a town",
+    "conquer a country",
+    "raze a town to the ground"
   ],
   "domain": "res-publica",
   "terms": [
@@ -50,6 +53,21 @@
       "latin": "id ex itinere oppugnāre cōnātus, expugnāre nōn potuit",
       "english": "he tried to attack it on the march, but could not take it",
       "source": "Caes. B.G. 2.12.2"
+    },
+    {
+      "latin": "oppidum recipere",
+      "english": "to retake a town",
+      "source": "Traupman 187; cf. Cic. de Or. 2.273 (Lewis &amp; Short s.v. <span lang=\"la\">recipiō</span>)"
+    },
+    {
+      "latin": "terrā potīrī",
+      "english": "to conquer a country",
+      "source": "Traupman 186"
+    },
+    {
+      "latin": "oppidum solō aequāre",
+      "english": "to raze a town to the ground",
+      "source": "Traupman 187; cf. Vell. 2.4.2 (Lewis &amp; Short s.v. <span lang=\"la\">solum</span>)"
     }
   ],
   "related": [
@@ -61,11 +79,13 @@
     "prisoner-captive"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/capio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: capio</a> · <a href=\"https://logeion.uchicago.edu/expugno\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: expugno</a> · <a href=\"https://logeion.uchicago.edu/potior\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: potior</a>"
+    "<a href=\"https://logeion.uchicago.edu/capio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: capio</a> · <a href=\"https://logeion.uchicago.edu/expugno\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: expugno</a> · <a href=\"https://logeion.uchicago.edu/potior\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: potior</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 186–187, each phrase checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

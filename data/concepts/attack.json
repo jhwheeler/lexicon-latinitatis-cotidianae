@@ -12,7 +12,9 @@
     "set upon",
     "go for",
     "charge (in battle)",
-    "be attacked"
+    "be attacked",
+    "invade",
+    "invasion"
   ],
   "domain": "verba",
   "terms": [
@@ -67,6 +69,16 @@
         "Traupman 274"
       ],
       "comment": "To make an attack on: <span lang=\"la\">impetum facere in</span> with the accusative. An attack of illness is also <span lang=\"la\">impetus</span> (Traupman 62, 274)."
+    },
+    {
+      "latin": "bellum īnferre (+ dat.)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "invade, make war on",
+      "evidence": [
+        "Caes. BG 4.16: quī sibi Galliaeque bellum intulissent (Lewis &amp; Short s.v. <span lang=\"la\">bellum</span>)",
+        "Traupman 187"
+      ]
     }
   ],
   "phrases": [
@@ -84,6 +96,11 @@
       "latin": "sē impetum hostium, quantum corpore ūnō posset obsistī, exceptūrum",
       "english": "he would take the enemy’s attack himself, as far as one body could hold it back",
       "source": "Liv. 2.10.4"
+    },
+    {
+      "latin": "cum exercitū ingredī",
+      "english": "to invade (literally “to go in with an army”)",
+      "source": "Traupman 187"
     }
   ],
   "related": [
@@ -96,11 +113,13 @@
     "<a href=\"https://logeion.uchicago.edu/adorior\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: adorior</a> · <a href=\"https://logeion.uchicago.edu/aggredior\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aggredior</a> · <a href=\"https://logeion.uchicago.edu/invado\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: invado</a> · <a href=\"https://logeion.uchicago.edu/oppugno\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: oppugno</a> · <a href=\"https://logeion.uchicago.edu/impetus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: impetus</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 62, 188, 274, checked against the searchable text of the book (9 November 2026).",
     "Quotations from the Latinitas loci collections (loci-livius, loci-seneca-epistulae), checked against the editions named there.",
-    "Caesar, <em>Gallic War</em> 1, checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> and the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+    "Caesar, <em>Gallic War</em> 1, checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> and the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026).",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 187, each phrase checked against the searchable text of the book.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

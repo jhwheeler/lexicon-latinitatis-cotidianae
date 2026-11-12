@@ -1,0 +1,64 @@
+{
+  "id": "high-drugs",
+  "english": "high",
+  "sense": "on drugs",
+  "pos": "adjective",
+  "also": [
+    "get high",
+    "be high",
+    "stoned (on drugs)",
+    "high on drugs",
+    "trip (drug-induced)"
+  ],
+  "domain": "corpus",
+  "audience": "adult",
+  "terms": [
+    {
+      "latin": "ēbrius, ēbria, ēbrium",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "drunk; high (on drugs)",
+      "evidence": [
+        "Traupman 328: on alcohol or drugs",
+        "M-O s.v. intoxicated, high"
+      ],
+      "comment": "The classical word for drunk, stretched to drugs, as Traupman and Morgan–Owens do; English “intoxicated” covers both in the same way."
+    },
+    {
+      "latin": "medicāmentīs psychotropicīs inēbriārī",
+      "status": "recommended",
+      "period": "modern",
+      "gloss": "get high on drugs",
+      "evidence": [
+        "Plin. NH 12.103: <span lang=\"la\">palma vescentēs inēbriat</span> (Lewis &amp; Short)",
+        "M-O s.v. intoxicate: <span lang=\"la\">inēbriārī</span>, get high"
+      ],
+      "comment": "<span lang=\"la\">inēbriō</span> is to make drunk (Pliny, Seneca), so getting high is the passive, with the drug in the ablative of means."
+    },
+    {
+      "latin": "ā medicāmentīs psychotropicīs inēbriāre",
+      "status": "avoid",
+      "period": "modern",
+      "gloss": "Traupman: be high on drugs",
+      "evidence": [
+        "Traupman 328"
+      ],
+      "comment": "The active <span lang=\"la\">inēbriāre</span> means to make someone drunk, not to be drunk, and <span lang=\"la\">ā</span> marks a person as agent, not a thing; say <span lang=\"la\">medicāmentīs psychotropicīs inēbriārī</span>."
+    }
+  ],
+  "related": [
+    "drunk",
+    "drug-narcotic",
+    "drug-addict"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/ebrius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ebrius</a> · <a href=\"https://logeion.uchicago.edu/inebrio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: inebrio</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 328.",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. intoxicate; intoxicated, high."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-12",
+    "by": "Claude"
+  }
+}

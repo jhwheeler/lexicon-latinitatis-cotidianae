@@ -3,24 +3,71 @@
   "english": "France",
   "pos": "noun",
   "also": [
-    "Gaul"
+    "Gaul",
+    "French",
+    "Frenchman"
   ],
   "domain": "urbs",
   "terms": [
     {
       "latin": "Gallia, Galliae f.",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "evidence": [
+        "Caes. BG 1.1 (Lewis &amp; Short s.v. Galli)",
+        "M-O s.v. France",
+        "Graesse, <em>Orbis Latinus</em> (1861), index s.v. Frankreich: <span lang=\"la\">Francia, Gallia</span>"
+      ],
+      "comment": "The ancient name, Gaul, which later Latin keeps for France. A country takes a preposition: <strong lang=\"la\">in Galliam</strong> (to), <strong lang=\"la\">in Galliā</strong> (in), <strong lang=\"la\">ē Galliā</strong> (from)."
+    },
+    {
+      "latin": "Francia, Franciae f.",
+      "status": "recommended",
+      "period": "renaissance",
+      "gloss": "the later name",
+      "evidence": [
+        "M-O s.v. France (Vives 1540; Tursellinus 1652)",
+        "Graesse, <em>Orbis Latinus</em> (1861), index s.v. Frankreich: <span lang=\"la\">Francia, Gallia</span>"
+      ],
+      "comment": "The name from the Franks, used of medieval and modern France (M-O)."
+    },
+    {
+      "latin": "Gallus, Gallī m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a Gaul; a Frenchman",
+      "evidence": [
+        "Caes. BG 3.18.1 (Lewis &amp; Short s.v. Galli)"
+      ]
+    },
+    {
+      "latin": "Gallicus, Gallica, Gallicum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "Gallic; French",
+      "evidence": [
+        "Caes. BG 1.31.11 (Lewis &amp; Short s.v. Galli)"
+      ]
     }
   ],
   "related": [
     "pyrenees",
     "alps",
     "spain",
-    "europe"
+    "europe",
+    "paris",
+    "lyon",
+    "marseille",
+    "bordeaux",
+    "seine",
+    "loire",
+    "rhone"
   ],
   "sources": [
-    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+    "<a href=\"https://logeion.uchicago.edu/Galli\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: Galli</a>",
+    "Morgan–Owens, <em>Adumbratio</em>, geographical section, with the authorities it cites (cited as M-O s.v.).",
+    "J. G. Th. Graesse, <em>Orbis Latinus</em> (Dresden, 1861), German–Latin index, read in the scan at archive.org (the 1909 edition at columbia.edu could not be reached page by page); its forms are post-classical unless Lewis &amp; Short has them."
   ],
   "review": {
     "status": "draft",

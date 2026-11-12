@@ -26,13 +26,15 @@
     {
       "latin": "Male mī sit, sī …",
       "status": "alternative",
-      "period": "modern",
+      "period": "classical",
       "gloss": "I’ll be darned if …",
       "evidence": [
+        "Cic. Att. 13.25.3: <span lang=\"la\">male mī sit, sī umquam quicquam tam ēnītar</span>",
         "Traupman 96",
         "Traupman 300"
       ],
-      "comment": "Traupman’s phrase, “may it go badly with me if …”, with the future indicative after <span lang=\"la\">sī</span>; not found as a phrase in Lewis &amp; Short or the Latinitas loci collections, so Traupman is the only evidence."
+      "comment": "“May it go badly with me if …”, with the future after <span lang=\"la\">sī</span>: Cicero swears to Atticus that he will never again take such pains over a piece of writing.",
+      "register": "vōx sermōnis cotīdiānī: Cic. in epistulīs"
     }
   ],
   "phrases": [
@@ -50,12 +52,18 @@
       "latin": "Male mī sit, sī umquam …",
       "english": "I’ll be darned if I ever …",
       "source": "Traupman 300"
+    },
+    {
+      "latin": "Male mī sit, sī umquam quicquam tam ēnītar.",
+      "english": "I’ll be damned if I ever take such pains over anything again.",
+      "source": "Cic. Att. 13.25.3"
     }
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/perdo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: perdo</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 96, checked against the searchable text and the page images of the book.: p. 300.",
-    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "Quotations not in Lewis &amp; Short or the loci collections were checked against the Perseus Digital Library’s Latin texts (canonical-latinLit)."
   ],
   "review": {
     "status": "draft",

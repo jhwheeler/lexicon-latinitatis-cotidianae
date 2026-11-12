@@ -6,7 +6,12 @@
   "also": [
     "tenses",
     "what tense is it?",
-    "verb tense"
+    "verb tense",
+    "past tense",
+    "perfect tense",
+    "present tense",
+    "pluperfect",
+    "pluperfect tense"
   ],
   "domain": "schola",
   "terms": [
@@ -18,9 +23,9 @@
       "evidence": [
         "Quint. 1.5.47: <span lang=\"la\">per tempora, ut in verbō … peccātur</span>",
         "Varr. LL 9.32 (Lewis &amp; Short)",
-        "Traupman 226, 249"
+        "Traupman 226, 249, 357"
       ],
-      "comment": "The word for time is the word for tense. The question is <span lang=\"la\">Cujus temporis est?</span>, what tense is it? (Traupman 241); in the present tense, <span lang=\"la\">tempore praesentī</span> (227)."
+      "comment": "The word for time is the word for tense, and the tenses are named with an adjective: <span lang=\"la\">tempus praesēns</span>, <span lang=\"la\">praeteritum</span>, <span lang=\"la\">futūrum</span>. The question is <span lang=\"la\">Cujus temporis est?</span>, what tense is it? (Traupman 241); in the present tense, <span lang=\"la\">tempore praesentī</span> (227)."
     }
   ],
   "phrases": [
@@ -33,6 +38,31 @@
       "latin": "Cujus temporis est? — Praesentis.",
       "english": "What tense is it? — The present.",
       "source": "Traupman 241"
+    },
+    {
+      "latin": "quaedam verba etiam mūtantur, ut ferō in praeteritō",
+      "english": "some verbs even change, as ferō does in the past tense",
+      "source": "Quint. 1.4.29 (Lewis &amp; Short s.v. <span lang=\"la\">praetereō</span>)"
+    },
+    {
+      "latin": "tempus praeteritum",
+      "english": "the past tense",
+      "source": "Traupman 357"
+    },
+    {
+      "latin": "tempus praeteritum perfectum",
+      "english": "the perfect tense",
+      "source": "Traupman 358"
+    },
+    {
+      "latin": "tempus plūsquamperfectum",
+      "english": "the pluperfect tense",
+      "source": "Traupman 361"
+    },
+    {
+      "latin": "praesēns tempus",
+      "english": "the present tense",
+      "source": "Traupman 364"
     }
   ],
   "related": [
@@ -43,13 +73,15 @@
     "future-perfect-tense",
     "past-tense",
     "mood-grammar",
-    "verb"
+    "verb",
+    "grammar",
+    "had-auxiliary"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/tempus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tempus</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 226, p. 227, p. 241, p. 249.",
     "Quintilian checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>, and cited by its numbering.",
-    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): pp. 226, 227, 241, 249, 357, 358, 361, 364."
   ],
   "review": {
     "status": "draft",

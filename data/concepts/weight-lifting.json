@@ -1,10 +1,15 @@
 {
   "id": "weight-lifting",
   "english": "weight-lifting",
-  "pos": "noun",
+  "pos": [
+    "noun",
+    "verb"
+  ],
   "also": [
     "weightlifting",
-    "lift weights"
+    "lift weights",
+    "weights",
+    "do weights"
   ],
   "domain": "ludi",
   "terms": [
@@ -15,15 +20,39 @@
       "evidence": [
         "Traupman 51, 405"
       ],
-      "comment": "Both words are classical: <span lang=\"la\">sublātiō</span>, a lifting (Quint.), and <span lang=\"la\">lībrāmentum</span>, a weight (<span lang=\"la\">lībrāmentum plumbī</span>, Liv. 42.63.4)."
+      "comment": "Traupman’s phrase. Both words are classical: <span lang=\"la\">sublātiō</span>, a lifting (Quint.), and <span lang=\"la\">lībrāmentum</span>, a weight (<span lang=\"la\">lībrāmentum plumbī</span>, Liv. 42.63.4). Every word is classical; we have found no classical instance of the phrase."
+    },
+    {
+      "latin": "lībrāmenta tollere",
+      "status": "alternative",
+      "period": "modern",
+      "evidence": [
+        "Traupman 60, 64"
+      ],
+      "comment": "<span lang=\"la\">lībrāmentum</span> is classically a weight that presses down (<span lang=\"la\">plumbī</span>, Liv. 42.63.4, Lewis &amp; Short). Every word is classical; we have found no classical instance of the phrase."
+    },
+    {
+      "latin": "halterēs, halterum m. pl.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "hand weights, dumb-bells",
+      "evidence": [
+        "Mart. 14.49.1 (Lewis &amp; Short s.v. <span lang=\"la\">halter</span>)",
+        "Mart. 7.67.6 (Lewis &amp; Short)"
+      ],
+      "comment": "The Greek athlete’s lead weights, held in the hands (Lewis &amp; Short: “the dumb-bells of modern gymnastics”); the word for the weights themselves."
     }
   ],
   "related": [
-    "gym"
+    "gym",
+    "exercise"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/sublatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sublatio</a> · <a href=\"https://logeion.uchicago.edu/libramentum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: libramentum</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 51."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 51.",
+    "<a href=\"https://logeion.uchicago.edu/libramentum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: libramentum</a> · <a href=\"https://logeion.uchicago.edu/tollo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tollo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 60, 64, checked against the searchable text of the book.",
+    "<a href=\"https://logeion.uchicago.edu/halter\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: halter</a>"
   ],
   "review": {
     "status": "draft",

@@ -27,31 +27,33 @@
       "gloss": "great-uncle on the mother’s side: a grandmother’s brother",
       "grammar": "noun with adjective, second declension",
       "evidence": [
-        "Cic. Brut. 222 (Lewis &amp; Short)",
+        "Cic. Brut. 62.222; Dig. 38.10.10 (Lewis &amp; Short: “a grandmother’s brother, great-uncle”)",
         "Traupman 24"
       ],
-      "comment": "As with uncles, Latin keeps the two sides apart: the grandfather’s brother is <span lang=\"la\">patruus magnus</span>, the grandmother’s brother <span lang=\"la\">avunculus magnus</span>. One generation further up is <span lang=\"la\">mājor</span> (great-great-uncle)."
+      "comment": "As with uncles, Latin keeps the two sides apart: the grandfather’s brother is <span lang=\"la\">patruus magnus</span>, the grandmother’s brother <span lang=\"la\">avunculus magnus</span>. In the jurists <span lang=\"la\">major</span> is one generation further up (great-great-uncle)."
     },
     {
-      "latin": "avunculus mājor",
-      "status": "avoid",
+      "latin": "avunculus major",
+      "status": "alternative",
       "period": "classical",
-      "gloss": "great-great-uncle, not great-uncle",
+      "gloss": "great-uncle in the historians; in the jurists, a great-great-uncle",
       "evidence": [
+        "Vell. 2.59; Suet. Aug. 7; Suet. Claud. 3 (Lewis &amp; Short: “in the histt. sometimes avunculus major = avunculus magnus”)",
         "Dig. 38.10.10 (Lewis &amp; Short)",
         "Traupman 323"
       ],
-      "comment": "Traupman gives <span lang=\"la\">avunculus mājor</span> and <span lang=\"la\">patruus mājor</span> for great-uncle; in the jurists the <span lang=\"la\">avunculus mājor</span> is the great-grandmother’s brother, a great-great-uncle, and the great-uncle is <span lang=\"la\">avunculus magnus</span> (Cic. Brut. 222; Lewis &amp; Short)."
+      "comment": "Traupman’s word for great-uncle. The jurists use it of the great-grandmother’s brother, a great-great-uncle, but the historians use it of the grandmother’s brother (Lewis &amp; Short), so it has ancient warrant; <span lang=\"la\">avunculus magnus</span> is the unambiguous term."
     },
     {
-      "latin": "patruus mājor",
+      "latin": "patruus major",
       "status": "avoid",
       "period": "classical",
       "gloss": "great-great-uncle (father’s side), not great-uncle",
       "evidence": [
+        "Tac. A. 12.22; Dig. 38.10.10: <span lang=\"la\">patruus major = frāter proavī</span> (Lewis &amp; Short)",
         "Traupman 323"
       ],
-      "comment": "As with <span lang=\"la\">avunculus</span>: the great-uncle on the father’s side is <span lang=\"la\">patruus magnus</span>."
+      "comment": "Lewis &amp; Short gives it only as the great-grandfather’s brother, a great-great-uncle, in Tacitus and the jurists; the great-uncle on the father’s side is <span lang=\"la\">patruus magnus</span>."
     }
   ],
   "related": [

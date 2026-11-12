@@ -12,28 +12,34 @@
   "domain": "corpus",
   "terms": [
     {
-      "latin": "quadrupedō, quadrupedāre",
+      "latin": "citātō equō",
       "status": "recommended",
-      "period": "late",
-      "gloss": "gallop",
+      "period": "classical",
+      "gloss": "at a gallop",
+      "evidence": [
+        "Caes. BC 3.96; Liv. 1.27.7: <span lang=\"la\">citātō equō</span>, at full gallop (Lewis &amp; Short s.v. <span lang=\"la\">citō</span>)"
+      ],
+      "comment": "The classical way to say a rider gallops, beside a verb of motion."
+    },
+    {
+      "latin": "quadrupedō, quadrupedāre",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "gallop (Traupman’s verb)",
       "evidence": [
         "Traupman 320"
-      ]
+      ],
+      "comment": "Lewis &amp; Short calls the verb obsolete: only its participle <span lang=\"la\">quadrupedāns</span>, galloping, is found (Plaut. Capt. 4.2.34; Verg. A. 8.596; Plin. NH 8.70.182, Lewis &amp; Short), poetic and post-Augustan."
     },
     {
       "latin": "cursus citātus",
       "status": "alternative",
-      "period": "classical",
+      "period": "modern",
       "gloss": "a gallop",
       "evidence": [
         "Traupman 320"
-      ]
-    },
-    {
-      "latin": "citātō equō",
-      "status": "alternative",
-      "period": "classical",
-      "gloss": "at a gallop"
+      ],
+      "comment": "<span lang=\"la\">citātus</span>, quick, is classical (Lewis &amp; Short). Every word is classical; we have found no classical instance of the phrase."
     }
   ],
   "related": [
@@ -42,7 +48,8 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/quadrupedo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quadrupedo</a>",
     "<a href=\"https://logeion.uchicago.edu/cito\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cito</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 320."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 320.",
+    "<a href=\"https://logeion.uchicago.edu/quadrupedans\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quadrupedans</a> · <a href=\"https://logeion.uchicago.edu/cito\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cito</a>"
   ],
   "review": {
     "status": "draft",

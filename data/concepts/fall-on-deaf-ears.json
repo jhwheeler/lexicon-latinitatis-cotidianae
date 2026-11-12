@@ -5,7 +5,8 @@
   "also": [
     "preach to deaf ears",
     "you’re preaching to deaf ears",
-    "talk to a brick wall"
+    "talk to a brick wall",
+    "to preach to deaf ears"
   ],
   "domain": "sermo",
   "terms": [
@@ -16,20 +17,30 @@
       "gloss": "sing to deaf ears: talk in vain",
       "evidence": [
         "Liv. 40.8.10 (Lewis &amp; Short s.v. <span lang=\"la\">surdus</span>)",
-        "Verg. Ecl. 10.8: <span lang=\"la\">nōn canimus surdīs</span> (Lewis &amp; Short)"
+        "Verg. Ecl. 10.8: <span lang=\"la\">nōn canimus surdīs</span> (Lewis &amp; Short)",
+        "Liv. 40.8.10: <span lang=\"la\">quae vereor nē vāna surdīs auribus cecinerim</span> (Lewis &amp; Short s.v. <span lang=\"la\">canō</span>)"
       ],
       "comment": "The deaf ears stand in the dative, with no preposition."
     },
     {
       "latin": "ad surdās aurēs cantāre",
       "status": "alternative",
-      "period": "modern",
+      "period": "classical",
       "gloss": "preach to deaf ears",
       "evidence": [
-        "Traupman 96",
-        "Traupman 301"
+        "Ov. Am. 3.7.61 (Lewis &amp; Short s.v. <span lang=\"la\">cantō</span>: “to preach to deaf ears”)",
+        "Traupman 96, 255, 301"
       ],
-      "comment": "Traupman’s form, with <span lang=\"la\">ad</span>; not found as a phrase in Lewis &amp; Short or the Latinitas loci collections, so Traupman is the only evidence."
+      "comment": "Traupman’s form, with <span lang=\"la\">ad</span>. Every word is classical; we have found no classical instance of the phrase."
+    },
+    {
+      "latin": "Nōn canimus surdīs.",
+      "status": "alternative",
+      "period": "classical",
+      "evidence": [
+        "Verg. Ecl. 10.8 (Lewis &amp; Short s.v. <span lang=\"la\">canō</span>)"
+      ],
+      "gloss": "we are not singing to the deaf"
     }
   ],
   "phrases": [
@@ -40,13 +51,14 @@
     }
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/surdus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: surdus</a> · <a href=\"https://logeion.uchicago.edu/cano\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cano</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 96, checked against the searchable text and the page images of the book.: p. 301.",
-    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "<a href=\"https://logeion.uchicago.edu/surdus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: surdus</a> · <a href=\"https://logeion.uchicago.edu/cano\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cano</a> · <a href=\"https://logeion.uchicago.edu/canto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: canto</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 96, 255, 301, checked against the searchable text and the page images of the book."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "related": []
 }

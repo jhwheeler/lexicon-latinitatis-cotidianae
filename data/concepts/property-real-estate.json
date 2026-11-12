@@ -9,7 +9,10 @@
     "estate",
     "land",
     "property prices",
-    "buy a property"
+    "buy a property",
+    "real estate broker",
+    "estate agent",
+    "realtor"
   ],
   "domain": "pecunia",
   "terms": [
@@ -20,7 +23,8 @@
       "gloss": "a property, an estate, in town or country",
       "evidence": [
         "Cato Agr. 1.1: <span lang=\"la\">praedium quom parāre cōgitābis</span>",
-        "Cic. Rosc. Com. 33: <span lang=\"la\">cum jacērent pretia praediōrum</span>, when property prices were low"
+        "Cic. Rosc. Com. 33: <span lang=\"la\">cum jacērent pretia praediōrum</span>, when property prices were low",
+        "Traupman 369"
       ],
       "comment": "Land or buildings owned: <span lang=\"la\">praedium urbānum</span>, a building in town (Cic. Verr. 2.3.199, Lewis &amp; Short); <span lang=\"la\">praedium rūsticum</span>, land in the country (Nep. Att. 14.3)."
     },
@@ -43,6 +47,17 @@
         "Cato Agr. 2.1",
         "Traupman 166"
       ]
+    },
+    {
+      "latin": "praediātor, praediātōris m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "dealer in landed property; Traupman: real-estate broker",
+      "evidence": [
+        "Cic. Att. 12.14 (Lewis &amp; Short)",
+        "Traupman 369"
+      ],
+      "comment": "Classically one who bought estates sold at auction for debt (Lewis &amp; Short)."
     }
   ],
   "phrases": [
@@ -55,6 +70,11 @@
       "latin": "Accēpit enim agrum temporibus eīs cum jacērent pretia praediōrum",
       "english": "for he took over the land at a time when property prices were low",
       "source": "Cic. Rosc. Com. 33"
+    },
+    {
+      "latin": "rēs solī",
+      "english": "real estate",
+      "source": "Traupman 369"
     }
   ],
   "related": [
@@ -64,7 +84,7 @@
     "buy"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/praedium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praedium</a> · <a href=\"https://logeion.uchicago.edu/possessio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: possessio</a> · <a href=\"https://logeion.uchicago.edu/fundus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fundus</a>",
+    "<a href=\"https://logeion.uchicago.edu/praedium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praedium</a> · <a href=\"https://logeion.uchicago.edu/possessio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: possessio</a> · <a href=\"https://logeion.uchicago.edu/fundus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fundus</a> · <a href=\"https://logeion.uchicago.edu/praediator\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praediator</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 166, checked against the searchable text of the book (9 November 2026).",
     "Quotations from the Latinitas loci collections (loci-cato), checked against the editions named there.",
     "Cicero and Nepos checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026).",
@@ -72,7 +92,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

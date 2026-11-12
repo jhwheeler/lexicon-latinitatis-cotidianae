@@ -5,7 +5,11 @@
   "pos": "adjective",
   "also": [
     "warm",
-    "very hot"
+    "very hot",
+    "it is hot",
+    "it’s hot",
+    "scorching",
+    "blazing hot"
   ],
   "also_under": [
     "verba"
@@ -17,7 +21,10 @@
       "status": "recommended",
       "period": "classical",
       "gloss": "warm, hot",
-      "grammar": "adjective"
+      "grammar": "adjective",
+      "evidence": [
+        "Traupman 136"
+      ]
     },
     {
       "latin": "calidissimus",
@@ -25,6 +32,16 @@
       "period": "classical",
       "gloss": "very hot",
       "grammar": "adjective, superlative"
+    },
+    {
+      "latin": "flagrāns, flagrantis",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "blazing, scorching",
+      "evidence": [
+        "Lewis &amp; Short s.v. flagrō",
+        "Traupman 136: scorching, flagrantissimus (sōl, aestus)"
+      ]
     }
   ],
   "related": [
@@ -34,11 +51,19 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/calidus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: calidus</a>",
-    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+    "<a href=\"https://logeion.uchicago.edu/flagro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: flagro</a>"
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "Calidum est.",
+      "english": "It is hot.",
+      "source": "Traupman 135"
+    }
+  ]
 }

@@ -6,14 +6,22 @@
     "feeling cold",
     "be cold",
     "coldness",
-    "the cold"
+    "the cold",
+    "get cold",
+    "catch cold",
+    "liable to get cold",
+    "sensitive to the cold"
   ],
   "domain": "corpus",
   "terms": [
     {
       "latin": "algeō, algēre, alsī",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "evidence": [
+        "Traupman 132",
+        "Traupman 135"
+      ]
     },
     {
       "latin": "frīgeō, frīgēre",
@@ -26,7 +34,30 @@
       "status": "alternative",
       "period": "classical",
       "gloss": "coldness",
-      "comment": "Not normally the illness."
+      "comment": "Not normally the illness.",
+      "evidence": [
+        "Traupman 135"
+      ]
+    },
+    {
+      "latin": "algēscō, algēscere, alsī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "catch cold, get cold",
+      "evidence": [
+        "Ter. Ad. 1.1.11: nē ille alserit (Lewis &amp; Short)",
+        "Traupman 135"
+      ]
+    },
+    {
+      "latin": "alsiōsus, alsiōsa, alsiōsum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "sensitive to cold, easily chilled",
+      "evidence": [
+        "Varr. RR 2.3.6; Plin. NH 21.60 (Lewis &amp; Short)",
+        "Traupman 135"
+      ]
     }
   ],
   "phrases": [
@@ -41,7 +72,9 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/frigus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: frigus</a> · <a href=\"https://logeion.uchicago.edu/algeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: algeo</a>",
-    "The example sentence marked “composed” is ours."
+    "The example sentence marked “composed” is ours.",
+    "<a href=\"https://logeion.uchicago.edu/algesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: algesco</a>",
+    "<a href=\"https://logeion.uchicago.edu/alsiosus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: alsiosus</a>"
   ],
   "review": {
     "status": "draft",

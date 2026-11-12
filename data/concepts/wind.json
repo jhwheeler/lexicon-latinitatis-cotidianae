@@ -7,7 +7,21 @@
     {
       "latin": "ventus, ventī m.",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "evidence": [
+        "Traupman 137"
+      ]
+    },
+    {
+      "latin": "flātus, flātūs m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a blast, a gust",
+      "register": "mostly poetic (Lewis &amp; Short)",
+      "evidence": [
+        "Hor. AP 205; Ov. M. 13.418 (Lewis &amp; Short)",
+        "Traupman 135"
+      ]
     }
   ],
   "phrases": [
@@ -15,6 +29,16 @@
       "latin": "ventus flat",
       "english": "the wind is blowing",
       "source": "composed"
+    },
+    {
+      "latin": "Ventus increbrēscit.",
+      "english": "The wind is picking up.",
+      "source": "Traupman 137; cf. Cic. Fam. 7.20.3: ventus (Lewis &amp; Short s.v. increbrēscō)"
+    },
+    {
+      "latin": "Ventus dētumēscit.",
+      "english": "The wind is dying down.",
+      "source": "Traupman 137"
     }
   ],
   "related": [
@@ -22,11 +46,18 @@
   ],
   "sources": [
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
-    "The example sentence marked “composed” is ours."
+    "The example sentence marked “composed” is ours.",
+    "<a href=\"https://logeion.uchicago.edu/flatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: flatus</a>"
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "blast",
+    "gust",
+    "the wind is picking up",
+    "the wind is dying down"
+  ]
 }

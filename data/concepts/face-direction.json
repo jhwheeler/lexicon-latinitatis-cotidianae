@@ -12,7 +12,10 @@
     "facing",
     "face up to",
     "confront",
-    "face danger"
+    "face danger",
+    "lie in the direction of",
+    "slope towards",
+    "facing south"
   ],
   "domain": "natura",
   "terms": [
@@ -30,11 +33,25 @@
       ]
     },
     {
+      "latin": "vergō, vergere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "of a place: lie towards, face, slope towards",
+      "grammar": "verb, third conjugation, with ad or in + acc.",
+      "evidence": [
+        "Caes. BG 1.1: <span lang=\"la\">Galliae pars ad septentriōnēs</span> (Lewis &amp; Short)",
+        "Liv. 37.31.10: <span lang=\"la\">portus in merīdiem</span> (Lewis &amp; Short)",
+        "Traupman 339"
+      ],
+      "comment": "Lewis &amp; Short calls this the classical sense of the word: a place, a building or a slope “inclines” towards a quarter. Lewis &amp; Short, after Neue, gives no perfect or supine."
+    },
+    {
       "latin": "obviam īre (+ dative)",
       "status": "alternative",
       "period": "classical",
-      "gloss": "face up to, confront (a danger)",
+      "gloss": "face up to, confront (a danger); a different sense from facing a direction",
       "evidence": [
+        "Sall. J. 7.4: <span lang=\"la\">obviam īre perīculīs</span>, to meet dangers courageously (Lewis &amp; Short s.v. <span lang=\"la\">obviam</span>)",
         "Traupman 312"
       ]
     }
@@ -50,7 +67,9 @@
     "<a href=\"https://logeion.uchicago.edu/specto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: specto</a>",
     "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
     "<a href=\"https://logeion.uchicago.edu/obviam\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: obviam</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 312."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 312.",
+    "<a href=\"https://logeion.uchicago.edu/vergo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vergo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 339."
   ],
   "review": {
     "status": "draft",

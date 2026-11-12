@@ -3,28 +3,42 @@
   "english": "figure of speech",
   "pos": "noun",
   "also": [
-    "figurative",
-    "figuratively",
     "metaphor",
     "trope",
-    "metaphorically"
+    "figure"
   ],
   "domain": "schola",
   "terms": [
     {
-      "latin": "trānslātiō, trānslātiōnis f.",
+      "latin": "figūra, figūrae f.",
       "status": "recommended",
       "period": "classical",
-      "gloss": "metaphor, figurative use of a word"
+      "gloss": "a figure of speech",
+      "evidence": [
+        "Cic. de Or. 3.53; Cic. Or. 39; Quint. 9.1 (Lewis &amp; Short: “rhet. t. t., a figure of speech”, Greek σχῆμα)"
+      ],
+      "comment": "The rhetoricians’ term for any figure of speech, rendering Greek σχῆμα; a metaphor is <span lang=\"la\">trānslātiō</span>, and a trope <span lang=\"la\">tropus</span>."
+    },
+    {
+      "latin": "trānslātiō, trānslātiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "metaphor, a word used in a transferred sense",
+      "evidence": [
+        "Cic. de Or. 3.38.156: <span lang=\"la\">trānslātiōnēs audāciōrēs</span> (Lewis &amp; Short: “a trope, metaphor”)",
+        "Traupman 314"
+      ],
+      "comment": "Narrower than “figure of speech”: the metaphor only."
     },
     {
       "latin": "figūra ōrātiōnis",
       "status": "alternative",
-      "period": "classical",
+      "period": "modern",
       "gloss": "figure of speech",
       "evidence": [
         "Traupman 314"
-      ]
+      ],
+      "comment": "Cicero has <span lang=\"la\">figūra ōrātiōnis</span> of a style of speaking, full or plain (de Or. 3.55.212, Lewis &amp; Short), not of a single figure. We have found no classical instance of the phrase in Traupman’s sense."
     },
     {
       "latin": "tropus, tropī m.",
@@ -34,24 +48,6 @@
       "evidence": [
         "Quint. 9.1.4 (Lewis &amp; Short: post-Augustan for trānslātiō)",
         "Traupman 314"
-      ]
-    },
-    {
-      "latin": "trānslātus, trānslāta, trānslātum",
-      "status": "alternative",
-      "period": "classical",
-      "gloss": "figurative",
-      "evidence": [
-        "Traupman 314"
-      ]
-    },
-    {
-      "latin": "per trānslātiōnem, trānslātīs verbīs",
-      "status": "alternative",
-      "period": "classical",
-      "gloss": "figuratively",
-      "evidence": [
-        "Traupman 315"
       ]
     }
   ],
@@ -65,5 +61,8 @@
     "status": "draft",
     "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "related": [
+    "figurative"
+  ]
 }

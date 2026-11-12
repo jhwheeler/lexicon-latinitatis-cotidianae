@@ -7,7 +7,8 @@
   ],
   "also": [
     "broken bone",
-    "break a bone"
+    "break a bone",
+    "break one’s leg"
   ],
   "domain": "corpus",
   "terms": [
@@ -24,7 +25,10 @@
       "latin": "os frangere",
       "status": "recommended",
       "period": "classical",
-      "gloss": "break a bone"
+      "gloss": "break a bone",
+      "evidence": [
+        "Traupman 57: <span lang=\"la\">ossa frangere</span>, to break bones"
+      ]
     }
   ],
   "related": [
@@ -34,11 +38,18 @@
   ],
   "sources": [
     "<a href=\"https://logeion.org/fractura\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fractura</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 64."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): pp. 64, 57."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "Fortasse crūs frēgistī.",
+      "english": "Maybe you broke your leg.",
+      "source": "Traupman 57"
+    }
+  ]
 }

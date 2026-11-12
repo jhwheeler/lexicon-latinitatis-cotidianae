@@ -1,0 +1,52 @@
+{
+  "id": "heart-attack",
+  "english": "heart attack",
+  "pos": "noun",
+  "also": [
+    "heart failure",
+    "cardiac arrest"
+  ],
+  "domain": "corpus",
+  "terms": [
+    {
+      "latin": "impetus cardiacus",
+      "status": "recommended",
+      "period": "modern",
+      "evidence": [
+        "Traupman 64"
+      ],
+      "comment": "<span lang=\"la\">Impetus</span> is the classical word for an attack of illness (Cels. 2.15, <span lang=\"la\">febris impetus</span>; Lewis &amp; Short)."
+    },
+    {
+      "latin": "dēfectiō cardiaca",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "heart failure",
+      "evidence": [
+        "Traupman 64"
+      ]
+    },
+    {
+      "latin": "stasis cardiaca",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "cardiac arrest",
+      "evidence": [
+        "Traupman 63"
+      ]
+    }
+  ],
+  "related": [
+    "heart",
+    "attack"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/impetus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: impetus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 63, 64, checked against the searchable text of the book."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-12",
+    "by": "Claude"
+  }
+}

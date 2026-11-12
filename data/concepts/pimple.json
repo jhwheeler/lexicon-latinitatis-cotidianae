@@ -1,0 +1,47 @@
+{
+  "id": "pimple",
+  "english": "pimple",
+  "pos": "noun",
+  "also": [
+    "spot",
+    "zit",
+    "acne",
+    "blister"
+  ],
+  "domain": "corpus",
+  "terms": [
+    {
+      "latin": "pustula, pustulae f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a pimple, blister",
+      "evidence": [
+        "Sen. Ep. 72.6: <span lang=\"la\">ēruptiōnēs quaedam pustulārum</span> (Lewis &amp; Short)",
+        "Traupman 65"
+      ]
+    },
+    {
+      "latin": "acnē, acnēs f.",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "acne",
+      "evidence": [
+        "Traupman 62"
+      ],
+      "comment": "The Greek medical word, declined like a Greek noun; not in Lewis &amp; Short."
+    }
+  ],
+  "related": [
+    "boil-skin",
+    "skin-body"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/pustula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pustula</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 62, 65, checked against the searchable text of the book."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-12",
+    "by": "Claude"
+  }
+}

@@ -12,6 +12,26 @@
       "status": "recommended",
       "period": "classical",
       "comment": "Describes consistency."
+    },
+    {
+      "latin": "macilentus, macilenta, macilentum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "skinny, lean",
+      "register": "vōx cōmica: Plaut.; ante- and post-classical",
+      "evidence": [
+        "Plaut. Capt. 3.4.114: <span lang=\"la\">macilentō ōre</span> (Lewis &amp; Short)",
+        "Traupman 65"
+      ]
+    },
+    {
+      "latin": "gracilis, gracile",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "slim, slender",
+      "evidence": [
+        "Traupman 65: <span lang=\"la\">gracilis</span>, opposite <span lang=\"la\">obēsus</span>"
+      ]
     }
   ],
   "phrases": [
@@ -27,12 +47,20 @@
   ],
   "sources": [
     "<a href=\"https://alatius.com/ls/index.php?l=tenuis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tenuis</a>",
+    "<a href=\"https://logeion.uchicago.edu/gracilis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gracilis</a>",
+    "<a href=\"https://logeion.uchicago.edu/macilentus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: macilentus</a>",
     "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>",
-    "The example sentence marked “composed” is ours."
+    "The example sentence marked “composed” is ours.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 65, checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "skinny",
+    "slim",
+    "slender"
+  ]
 }

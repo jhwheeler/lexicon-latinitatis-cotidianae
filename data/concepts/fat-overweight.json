@@ -5,7 +5,8 @@
   "pos": "adjective",
   "also": [
     "overweight",
-    "obese"
+    "obese",
+    "obesity"
   ],
   "domain": "culina",
   "terms": [
@@ -14,18 +15,34 @@
       "status": "recommended",
       "period": "classical",
       "gloss": "fat, overweight",
-      "grammar": "adjective"
+      "grammar": "adjective",
+      "evidence": [
+        "Traupman 64",
+        "Traupman 65"
+      ]
+    },
+    {
+      "latin": "obēsitās, obēsitātis f.",
+      "status": "alternative",
+      "period": "post-classical",
+      "gloss": "fatness, obesity",
+      "evidence": [
+        "Suet. Dom. 18: <span lang=\"la\">obēsitās ventris</span> (Lewis &amp; Short)",
+        "Traupman 65"
+      ]
     }
   ],
   "related": [
     "put-on-weight"
   ],
   "sources": [
-    "<a href=\"https://logeion.org/obesus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: obesus</a>"
+    "<a href=\"https://logeion.org/obesus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: obesus</a>",
+    "<a href=\"https://logeion.uchicago.edu/obesitas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: obesitas</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 64, 65, checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

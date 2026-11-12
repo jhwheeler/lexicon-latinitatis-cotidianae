@@ -4,7 +4,9 @@
   "pos": "verb",
   "also": [
     "breathe in",
-    "breathe out"
+    "breathe out",
+    "exhale",
+    "inhale"
   ],
   "domain": "corpus",
   "terms": [
@@ -33,6 +35,15 @@
       "evidence": [
         "Traupman 63"
       ]
+    },
+    {
+      "latin": "spīritum ēmittere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "breathe out",
+      "evidence": [
+        "Traupman 63"
+      ]
     }
   ],
   "related": [
@@ -42,11 +53,12 @@
   ],
   "sources": [
     "<a href=\"https://logeion.org/spiro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: spiro</a>",
+    "<a href=\"https://logeion.uchicago.edu/emitto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: emitto</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 63."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

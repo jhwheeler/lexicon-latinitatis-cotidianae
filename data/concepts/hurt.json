@@ -3,7 +3,16 @@
   "english": "hurt",
   "pos": "verb",
   "also": [
-    "feel pain"
+    "feel pain",
+    "ache",
+    "it hurts",
+    "my head hurts",
+    "my stomach hurts",
+    "what hurts?",
+    "my back is sore",
+    "sore",
+    "aching",
+    "does it hurt?"
   ],
   "domain": "sermo",
   "terms": [
@@ -11,7 +20,12 @@
       "latin": "doleō, dolēre, doluī, dolitum",
       "status": "recommended",
       "period": "classical",
-      "gloss": "hurt, feel pain or grieve"
+      "gloss": "hurt, feel pain or grieve",
+      "evidence": [
+        "Traupman 62: <span lang=\"la\">mūsculus mihi dolet</span>, my muscle aches",
+        "Traupman 65: <span lang=\"la\">tergum mihi dolet</span>, my back is sore; <span lang=\"la\">dolēns</span>, sore, aching",
+        "Traupman 55: <span lang=\"la\">Stomachus meus dolet. Caput meum dolet. Quid dolet?</span>"
+      ]
     }
   ],
   "phrases": [
@@ -24,6 +38,16 @@
       "latin": "Bracchium mihi dolet.",
       "english": "My arm hurts.",
       "source": "composed"
+    },
+    {
+      "latin": "Quid dolet?",
+      "english": "What hurts?",
+      "source": "Traupman 55"
+    },
+    {
+      "latin": "Caput dolet; stomachus dolet; faucēs dolent.",
+      "english": "My head hurts; my stomach hurts; my throat hurts.",
+      "source": "Traupman 56"
     }
   ],
   "related": [
@@ -33,11 +57,12 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/doleo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: doleo</a>",
-    "The example sentences marked “composed” are ours."
+    "The example sentences marked “composed” are ours.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 62, 65, 55, checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

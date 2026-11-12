@@ -5,7 +5,8 @@
   "also": [
     "swell up",
     "puff up",
-    "swelling up"
+    "swelling up",
+    "swelling goes down"
   ],
   "domain": "corpus",
   "terms": [
@@ -28,7 +29,8 @@
       "gloss": "begin to swell, swell up",
       "register": "vōx plērumque poētica et post Augustum in ōrātiōne solūtā (Lewis &amp; Short)",
       "evidence": [
-        "Verg. G. 2.479; Tac. H. 2.77: <span lang=\"la\">vulnera</span> (Lewis &amp; Short)"
+        "Verg. G. 2.479; Tac. H. 2.77: <span lang=\"la\">vulnera</span> (Lewis &amp; Short)",
+        "Traupman 61: <span lang=\"la\">genū tumēscit</span>, my knee is swelling up"
       ]
     },
     {
@@ -40,6 +42,27 @@
       "evidence": [
         "Ov. F. 1.215: <span lang=\"la\">venter</span>; Plin. NH 20.51 (Lewis &amp; Short)"
       ]
+    },
+    {
+      "latin": "turgeō, turgēre, tursī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "be swollen, swell up",
+      "register": "vōx plērumque poētica; not in Cicero",
+      "evidence": [
+        "Cato (Lewis &amp; Short): <span lang=\"la\">sī liēnēs turgent</span>",
+        "Traupman 66"
+      ]
+    },
+    {
+      "latin": "sē attollere",
+      "status": "avoid",
+      "period": "modern",
+      "gloss": "swell (opposite: sē summittere, go down)",
+      "evidence": [
+        "Traupman 64, 66"
+      ],
+      "comment": "Lewis &amp; Short give <span lang=\"la\">sē attollere</span> as “to raise oneself, rise”, not of swelling; say <span lang=\"la\">tumēscere</span>, and of swelling that goes down, <span lang=\"la\">dētumēscere</span>."
     }
   ],
   "phrases": [
@@ -60,12 +83,15 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/tumeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tumeo</a> · <a href=\"https://logeion.uchicago.edu/tumesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tumesco</a> · <a href=\"https://logeion.uchicago.edu/intumesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: intumesco</a>",
+    "<a href=\"https://logeion.uchicago.edu/attollo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: attollo</a>",
+    "<a href=\"https://logeion.uchicago.edu/turgeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: turgeo</a>",
     "Checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (11 November 2026): Plautus.",
-    "Quotations from the Latinitas loci collections (loci-martialis), checked against the editions named there."
+    "Quotations from the Latinitas loci collections (loci-martialis), checked against the editions named there.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 61, 66, checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

@@ -14,7 +14,9 @@
       "gloss": "bed or couch",
       "evidence": [
         "Traupman 122",
-        "Traupman 123: dining couch, lectus"
+        "Traupman 123: dining couch, lectus",
+        "Traupman 62: <span lang=\"la\">lectō tenērī</span>, to be confined to bed",
+        "Traupman 63"
       ]
     }
   ],
@@ -31,17 +33,29 @@
     "duvet"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/lectus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lectus</a>"
+    "<a href=\"https://logeion.uchicago.edu/lectus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lectus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 56, 62, 63, checked against the searchable text of the book."
   ],
   "replaces": [
     "entry-57"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   },
   "also": [
-    "dining couch"
+    "dining couch",
+    "stay in bed",
+    "confined to bed",
+    "be confined to bed",
+    "bedridden"
+  ],
+  "phrases": [
+    {
+      "latin": "Necesse est tibi manēre in lectō duōs trēsve diēs.",
+      "english": "You must stay in bed for two or three days.",
+      "source": "Traupman 56"
+    }
   ]
 }

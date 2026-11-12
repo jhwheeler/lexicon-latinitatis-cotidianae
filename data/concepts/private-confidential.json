@@ -11,7 +11,9 @@
     "privately",
     "confidential",
     "secretly",
-    "between ourselves"
+    "between ourselves",
+    "I want to speak with you privately",
+    "in secret"
   ],
   "domain": "verba",
   "terms": [
@@ -48,9 +50,20 @@
       "grammar": "phrase: in with the ablative",
       "evidence": [
         "Liv. 39.18 (Lewis &amp; Short)",
-        "Traupman 91, 365"
+        "Traupman 91, 365",
+        "Traupman p. 106: I want to speak with you privately, <span lang=\"la\">velim tēcum loquī in prīvātō</span>"
       ],
       "comment": "Against <span lang=\"la\">in pūblicō</span>, in public (Lewis &amp; Short)."
+    },
+    {
+      "latin": "in sēcrētō",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "in private, secretly",
+      "evidence": [
+        "Liv. 26.19.5: <span lang=\"la\">tempus in sēcrētō ibi tereret</span> (Lewis &amp; Short s.v. <span lang=\"la\">sēcernō</span>)",
+        "Traupman p. 106: privately, <span lang=\"la\">in sēcrētō</span>"
+      ]
     }
   ],
   "phrases": [
@@ -63,6 +76,11 @@
       "latin": "Mālim tēcum dē eā in prīvātō loquī.",
       "english": "I’d rather talk to you about that in private.",
       "source": "Traupman 91"
+    },
+    {
+      "latin": "Velim tēcum loquī in prīvātō.",
+      "english": "I’d like to speak with you privately.",
+      "source": "Traupman p. 106"
     }
   ],
   "related": [
@@ -73,11 +91,12 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/secretus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: secretus</a> · <a href=\"https://logeion.uchicago.edu/secreto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: secreto</a> · <a href=\"https://logeion.uchicago.edu/privatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: privatus</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 91, 365, checked against the searchable text of the book (9 November 2026).",
-    "Cicero, <em>Ad familiares</em> 7.25.2, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+    "Cicero, <em>Ad familiares</em> 7.25.2, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

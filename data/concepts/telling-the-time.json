@@ -1,0 +1,124 @@
+{
+  "id": "telling-the-time",
+  "english": "telling the time",
+  "pos": "phrase",
+  "also": [
+    "o’clock",
+    "time on the clock",
+    "five past",
+    "ten past",
+    "quarter past",
+    "twenty past",
+    "twenty-five past",
+    "half past",
+    "twenty-five to",
+    "twenty to",
+    "quarter to",
+    "ten to",
+    "five to",
+    "twelfths of the hour",
+    "a twelfth of an hour",
+    "five-minute steps"
+  ],
+  "domain": "tempus",
+  "also_under": [
+    "sermo"
+  ],
+  "terms": [
+    {
+      "latin": "hōra prīma cum ūnciā",
+      "status": "recommended",
+      "period": "modern",
+      "gloss": "five past one, and so on: the hour, then cum and the twelfths of the hour",
+      "evidence": [
+        "Andresian p. 49: <span lang=\"la\">hōra nōna cum quadrante</span>",
+        "M-O s.v. o’clock, after Egger: <span lang=\"la\">est hōra septima cum quadrante</span>",
+        "Plin. NH 2.58: <span lang=\"la\">dōdrantēs sēmunciās hōrārum</span>"
+      ],
+      "comment": "Each twelfth of the hour (<span lang=\"la\">ūncia hōrae</span>) is five minutes, and the hour takes them with <span lang=\"la\">cum</span> and the ablative: :05 <span lang=\"la\">cum ūnciā</span> · :10 <span lang=\"la\">cum sextante</span> · :15 <span lang=\"la\">cum quadrante</span> · :20 <span lang=\"la\">cum triente</span> · :25 <span lang=\"la\">cum quīncūnce</span> · :30 <span lang=\"la\">cum sēmisse</span> · :35 <span lang=\"la\">cum septūnce</span> · :40 <span lang=\"la\">cum besse</span> · :45 <span lang=\"la\">cum dōdrante</span> · :50 <span lang=\"la\">cum dēxtante</span> · :55 <span lang=\"la\">cum deūnce</span>. The hour is the ordinal (<span lang=\"la\">prīma … duodecima</span>); “at” a time puts the hour in the ablative: <span lang=\"la\">hōrā octāvā cum sextante</span>, at ten past eight.",
+      "notes": [
+        "history"
+      ]
+    },
+    {
+      "latin": "hōra prīma et quadrāns",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "a quarter past one, with et",
+      "evidence": [
+        "Traupman 81"
+      ],
+      "comment": "Traupman gives the quarter-hours this way: <span lang=\"la\">prīma hōra et quadrāns</span>, <span lang=\"la\">et sēmihōra</span>, <span lang=\"la\">et dōdrāns</span>; “at” <span lang=\"la\">hōrā septimā et quadrante</span>."
+    },
+    {
+      "latin": "hōra prīma minūta quīnta decima",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "1:15, counted by the minute",
+      "evidence": [
+        "Traupman 81"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Est hōra septima cum quadrante.",
+      "english": "It’s a quarter past seven.",
+      "source": "M-O s.v. o’clock, after Egger"
+    },
+    {
+      "latin": "Est prīma hōra et quadrāns.",
+      "english": "It’s a quarter past one.",
+      "source": "Traupman 81"
+    },
+    {
+      "latin": "Hōrā septimā et dōdrante.",
+      "english": "At a quarter to eight.",
+      "source": "Traupman 81"
+    },
+    {
+      "latin": "longissimus diēs est aequinoctiālium hōrārum XIIII atque dīmidiae cum trīcēsimā ūnius hōrae",
+      "english": "the longest day is fourteen and a half equinoctial hours, with a thirtieth of an hour",
+      "source": "Plin. NH 6.214"
+    },
+    {
+      "latin": "Hōrā sextā cum besse cēnābimus.",
+      "english": "We’ll have dinner at twenty to seven.",
+      "source": "composed"
+    }
+  ],
+  "notes": {
+    "history": {
+      "html": "The twelfths are used of the hour in Pliny, as lengths of time rather than readings of a clock: the moon shines longer each day by <span lang=\"la\">dōdrantēs sēmunciās hōrārum</span> (NH 2.58); the stars are not seen until a <span lang=\"la\">dōdrāns hōrae</span> before sunrise (18.219); the moon gains a <span lang=\"la\">dēxtāns hōrae</span> and a <span lang=\"la\">sīcīlicus</span> a night (18.324). Elsewhere he gives fractions of the hour in the Greek way (<span lang=\"la\">bis quīnta pars</span>, <span lang=\"la\">tertiae duae</span>, 6.213–218), and once joins one to the hours with <span lang=\"la\">cum</span> (6.214). Telling the clock time by the quarter-hour is modern Latin: Traupman 81 with <span lang=\"la\">et</span>; Egger (quoted in M-O s.v. o’clock) and Andresian p. 49 with <span lang=\"la\">cum</span>. Every twelfth, in steps of five minutes, is current spoken Latin: Justin Mansfield’s, made widely known by Luke Ranieri."
+    }
+  },
+  "related": [
+    "twelfth",
+    "hour",
+    "what-time-is-it",
+    "at-what-time",
+    "quarter-of-an-hour",
+    "half-an-hour",
+    "three-quarters-of-an-hour",
+    "five-minutes",
+    "ten-minutes",
+    "twenty-minutes",
+    "forty-minutes",
+    "minute",
+    "clock"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/hora\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: hora</a>",
+    "Pliny, <em>Natural History</em> 2.58, 6.213–218, 18.219, 18.324: 6.214 checked against <a href=\"https://penelope.uchicago.edu/Thayer/L/Roman/Texts/Pliny_the_Elder/6*.html\" rel=\"noopener noreferrer\" target=\"_blank\">LacusCurtius</a>; the others as Lewis &amp; Short cites them (s.vv. <span lang=\"la\">dōdrāns</span>, <span lang=\"la\">dēxtāns</span>).",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 81, checked against the searchable text of the book.",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. o’clock (Egger).",
+    "Andresian, <em>Vocabula Picta</em> (2014), p. 49.",
+    "Luke Ranieri (ScorpioMartianus), <em>Quota hōra est?</em>, a video on the twelfths of the hour, with thanks to Justin Mansfield (<a href=\"https://www.arretetonchar.fr/__trashed-3/\" rel=\"noopener noreferrer\" target=\"_blank\">described at Arrête ton char</a>).",
+    "The example sentence marked “composed” is ours."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-12",
+    "by": "Claude"
+  }
+}

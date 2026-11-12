@@ -11,13 +11,14 @@
   "audience": "adult",
   "terms": [
     {
-      "latin": "jūra cīvīlia",
+      "latin": "jūs cīvitātis",
       "status": "recommended",
       "period": "classical",
-      "gloss": "civil rights",
+      "gloss": "the rights of a citizen, citizenship",
       "evidence": [
-        "Traupman 194"
-      ]
+        "Cic. Arch. 5.11; Cic. Caecin. 34.98 (Lewis &amp; Short s.v. <span lang=\"la\">jūs</span>: “the right to obtain the privileges of citizenship”)"
+      ],
+      "comment": "The rights that go with citizenship, as a whole; Cicero uses it of the status a man could hold or lose. Rights in the modern political sense have no single ancient name."
     },
     {
       "latin": "caput, capitis n.",
@@ -27,6 +28,17 @@
       "evidence": [
         "Cic. Top. 18: <span lang=\"la\">sē capite dēminuere</span> (Lewis &amp; Short s.v. <span lang=\"la\">dēminuō</span>)"
       ]
+    },
+    {
+      "latin": "jūra cīvīlia",
+      "status": "avoid",
+      "period": "modern",
+      "gloss": "civil rights (Traupman); classically the civil law",
+      "evidence": [
+        "Traupman 194",
+        "Hor. S. 1.9.39: <span lang=\"la\">novī cīvīlia jūra</span> (Lewis &amp; Short s.v. <span lang=\"la\">cīvīlis</span>, under <span lang=\"la\">jūs cīvīle</span>)"
+      ],
+      "comment": "Classically <span lang=\"la\">jūs cīvīle</span> and its plural <span lang=\"la\">cīvīlia jūra</span> are the civil law, the private law of the state (see civil), so a reader would take the phrase in that sense."
     }
   ],
   "phrases": [
@@ -42,7 +54,9 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/jus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: jus</a> · <a href=\"https://logeion.uchicago.edu/caput\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: caput</a> · <a href=\"https://logeion.uchicago.edu/deminuo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: deminuo</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 194, each phrase checked against the searchable text of the book."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 194, each phrase checked against the searchable text of the book.",
+    "<a href=\"https://logeion.uchicago.edu/civitas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: civitas</a> · <a href=\"https://logeion.uchicago.edu/civilis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: civilis</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",

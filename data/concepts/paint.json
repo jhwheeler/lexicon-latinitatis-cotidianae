@@ -3,7 +3,8 @@
   "english": "paint",
   "pos": "verb",
   "also": [
-    "depict"
+    "depict",
+    "paint (noun)"
   ],
   "domain": "sermo",
   "terms": [
@@ -11,7 +12,10 @@
       "latin": "pingō, pingere",
       "status": "recommended",
       "period": "classical",
-      "gloss": "paint or depict"
+      "gloss": "paint or depict",
+      "evidence": [
+        "Traupman 52"
+      ]
     }
   ],
   "phrases": [
@@ -19,6 +23,11 @@
       "latin": "Quid pingis?",
       "english": "What are you painting?",
       "source": "composed"
+    },
+    {
+      "latin": "pigmentum",
+      "english": "paint (the substance)",
+      "source": "Traupman 52"
     }
   ],
   "related": [
@@ -29,14 +38,15 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/pingo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pingo</a>",
-    "The example sentence marked “composed” is ours."
+    "The example sentence marked “composed” is ours.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 52."
   ],
   "replaces": [
     "entry-76"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

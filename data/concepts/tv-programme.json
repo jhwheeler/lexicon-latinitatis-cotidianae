@@ -8,7 +8,10 @@
     "TV show",
     "television programme",
     "TV programme",
-    "show"
+    "show",
+    "game show",
+    "quiz show",
+    "talk show"
   ],
   "domain": "ludi",
   "terms": [
@@ -18,7 +21,8 @@
       "period": "modern",
       "gloss": "a television programme",
       "evidence": [
-        "Traupman 391; plain <span lang=\"la\">programma</span>, p. 54"
+        "Traupman 391; plain <span lang=\"la\">programma</span>, p. 54",
+        "Traupman 54"
       ],
       "comment": "<span lang=\"la\">Programma</span> is post-classical for a public notice or edict (Lewis &amp; Short); the lexicon also uses it for a computer program."
     },
@@ -28,7 +32,8 @@
       "period": "modern",
       "gloss": "a television show",
       "evidence": [
-        "Andresian p. 15"
+        "Andresian p. 15",
+        "Traupman 54"
       ],
       "comment": "<span lang=\"la\">Spectāculum</span> is the classical word for any show (Lewis &amp; Short); Traupman uses it for a cartoon and a game show (pp. 51–52)."
     }
@@ -42,12 +47,24 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/programma\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: programma</a> · <a href=\"https://logeion.uchicago.edu/spectaculum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: spectaculum</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 51, 52, 54, 391, checked against the searchable text of the book (11 November 2026).",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 51, 52, 54, 391, checked against the searchable text of the book (11 November 2026); p. 53.",
     "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 15."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "spectāculum lūsōrium",
+      "english": "a game show",
+      "source": "Traupman 52"
+    },
+    {
+      "latin": "spectāculum disputātīvum",
+      "english": "a talk show",
+      "source": "Traupman 53"
+    }
+  ]
 }

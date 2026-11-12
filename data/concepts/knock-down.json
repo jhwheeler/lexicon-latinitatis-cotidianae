@@ -3,7 +3,8 @@
   "english": "knock down",
   "pos": "verb",
   "also": [
-    "throw down"
+    "throw down",
+    "tackle (a player)"
   ],
   "domain": "sermo",
   "terms": [
@@ -12,17 +13,30 @@
       "status": "recommended",
       "period": "classical",
       "gloss": "knock or throw down"
+    },
+    {
+      "latin": "sternō, sternere, strāvī, strātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "throw to the ground, knock down; tackle",
+      "evidence": [
+        "Verg. A. 9.666 (Lewis &amp; Short)",
+        "Traupman 46, 47"
+      ],
+      "comment": "Lewis &amp; Short: “to throw to the ground, overthrow, prostrate (mostly poet.)”. Traupman also uses it for a tackle in American football."
     }
   ],
   "related": [
     "collapse"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/deicio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: deicio</a>"
+    "<a href=\"https://logeion.uchicago.edu/deicio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: deicio</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): pp. 46, 47.",
+    "<a href=\"https://logeion.uchicago.edu/sterno\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sterno</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

@@ -4,7 +4,10 @@
   "pos": "noun",
   "also": [
     "VCR",
-    "video player"
+    "video player",
+    "video cassette",
+    "videotape",
+    "video"
   ],
   "domain": "ludi",
   "terms": [
@@ -15,18 +18,40 @@
       "evidence": [
         "Traupman 125"
       ]
+    },
+    {
+      "latin": "magnētoscopium, magnētoscopiī n.",
+      "status": "recommended",
+      "period": "modern",
+      "evidence": [
+        "Traupman 54"
+      ]
     }
   ],
   "related": [
     "cassette",
-    "television-set"
+    "television-set",
+    "tape-recorder"
   ],
   "sources": [
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 125."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 125.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 54."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "casēta magnētoscopia",
+      "english": "a video cassette",
+      "source": "Traupman 54"
+    },
+    {
+      "latin": "casētam magnētoscopiam audīre (ēvolvere)",
+      "english": "play a video cassette",
+      "source": "Traupman 54"
+    }
+  ]
 }

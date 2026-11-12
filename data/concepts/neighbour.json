@@ -3,20 +3,44 @@
   "english": "neighbour",
   "pos": "noun",
   "also": [
-    "neighbor"
+    "neighbor",
+    "next-door neighbour",
+    "neighbours"
   ],
   "domain": "urbs",
   "terms": [
     {
       "latin": "vīcīnus, vīcīnī m.",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "evidence": [
+        "Traupman 350"
+      ]
     },
     {
       "latin": "vīcīna, vīcīnae f.",
       "status": "recommended",
       "period": "classical",
       "gloss": "neighbour (woman)"
+    },
+    {
+      "latin": "fīnitimus, fīnitimī m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a neighbour across a border; a neighbouring people",
+      "evidence": [
+        "Cic. Planc. 22: <span lang=\"la\">sumus enim fīnitimī Atīnātibus</span> (Lewis &amp; Short)",
+        "Traupman 350"
+      ]
+    },
+    {
+      "latin": "proximus, proximī m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the person next door; one’s neighbour",
+      "evidence": [
+        "Traupman 350"
+      ]
     }
   ],
   "phrases": [
@@ -30,12 +54,13 @@
     "village"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/vicinus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vicinus</a>",
-    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+    "<a href=\"https://logeion.uchicago.edu/vicinus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vicinus</a> · <a href=\"https://logeion.uchicago.edu/finitimus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: finitimus</a>",
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 350."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

@@ -8,7 +8,11 @@
     "face south",
     "face east",
     "face west",
-    "look out on"
+    "look out on",
+    "facing",
+    "face up to",
+    "confront",
+    "face danger"
   ],
   "domain": "natura",
   "terms": [
@@ -20,7 +24,18 @@
       "grammar": "with in or ad + accusative",
       "evidence": [
         "Caes. BG 1.1.6: <span lang=\"la\">Belgae spectant in septentriōnēs et orientem sōlem</span> (Lewis &amp; Short s.v. <span lang=\"la\">spectō</span>)",
-        "Traupman 204"
+        "Traupman 204",
+        "Caes. BG 5.13: <span lang=\"la\">alter angulus ad orientem sōlem … spectat</span> (Lewis &amp; Short s.v. <span lang=\"la\">alter</span>)",
+        "Traupman 312"
+      ]
+    },
+    {
+      "latin": "obviam īre (+ dative)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "face up to, confront (a danger)",
+      "evidence": [
+        "Traupman 312"
       ]
     }
   ],
@@ -33,11 +48,20 @@
   "sources": [
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, cited by printed page; each phrase checked against the searchable text of the book.",
     "<a href=\"https://logeion.uchicago.edu/specto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: specto</a>",
-    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "<a href=\"https://logeion.uchicago.edu/obviam\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: obviam</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 312."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "spectāre in (ad) septentriōnēs (merīdiem, orientem, occidentem)",
+      "english": "to face north (south, east, west)",
+      "source": "Traupman 312"
+    }
+  ]
 }

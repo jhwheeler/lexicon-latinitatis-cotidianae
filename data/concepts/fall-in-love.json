@@ -1,0 +1,69 @@
+{
+  "id": "fall-in-love",
+  "english": "fall in love",
+  "pos": "verb",
+  "also": [
+    "fall in love with",
+    "fall desperately in love",
+    "love at first sight",
+    "fall in love at first sight"
+  ],
+  "domain": "sermo",
+  "terms": [
+    {
+      "latin": "amāre coepisse",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "fall in love with (literally “have begun to love”)",
+      "evidence": [
+        "Traupman 313"
+      ],
+      "comment": "Latin has no single verb: <span lang=\"la\">amāre coepī</span>, I fell in love; <span lang=\"la\">perditē amāre</span>, to be desperately in love.",
+      "notes": [
+        "amare-infinitive"
+      ]
+    },
+    {
+      "latin": "in amōrem incidere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "fall in love",
+      "evidence": [
+        "Traupman 313"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ūnō aspectū in amōrem incidere",
+      "english": "to fall in love at first sight",
+      "source": "Traupman 313"
+    },
+    {
+      "latin": "perditē amāre coepī",
+      "english": "I fell desperately in love",
+      "source": "Traupman 313"
+    }
+  ],
+  "related": [
+    "love"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/coepi\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: coepi</a>",
+    "<a href=\"https://logeion.uchicago.edu/incido\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: incido</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 313."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-12",
+    "by": "Claude"
+  },
+  "notes": {
+    "amare-infinitive": {
+      "form": "amāre",
+      "claim": "short final e",
+      "against": "Lewis &amp; Short <span lang=\"la\">amārē</span>, which is the adverb of <span lang=\"la\">amārus</span>, bitter",
+      "html": "Here the present infinitive of <span lang=\"la\">amō</span>, with the short <span lang=\"la\">-e</span> of every infinitive in <span lang=\"la\">-re</span>."
+    }
+  }
+}

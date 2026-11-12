@@ -10,7 +10,9 @@
     "do you have a fever?",
     "high fever",
     "run a high fever",
-    "the fever goes down"
+    "the fever goes down",
+    "constant fever",
+    "slight fever"
   ],
   "domain": "corpus",
   "terms": [
@@ -36,7 +38,8 @@
       "period": "classical",
       "gloss": "a slight temperature",
       "evidence": [
-        "Cic. Att. 12.1.2, of his little daughter Attica: <span lang=\"la\">dē Atticae febrīculā … valdē doluī</span>"
+        "Cic. Att. 12.1.2, of his little daughter Attica: <span lang=\"la\">dē Atticae febrīculā … valdē doluī</span>",
+        "Traupman 314"
       ],
       "comment": "Long ī (L&amp;S)."
     },
@@ -73,6 +76,16 @@
       "latin": "Febrim habēs; hodiē domī manēbimus.",
       "english": "You’ve got a temperature; we’ll stay home today.",
       "source": "composed"
+    },
+    {
+      "latin": "continua febris",
+      "english": "a constant fever",
+      "source": "Traupman 314"
+    },
+    {
+      "latin": "magna (ārdēns) febris",
+      "english": "a high fever",
+      "source": "Traupman 314"
     }
   ],
   "notes": {

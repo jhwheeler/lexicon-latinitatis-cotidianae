@@ -5,7 +5,9 @@
   "also": [
     "writer",
     "writers",
-    "authors"
+    "authors",
+    "playwright",
+    "dramatist"
   ],
   "domain": "schola",
   "terms": [
@@ -33,6 +35,15 @@
         "Traupman 275"
       ],
       "comment": "The one a work comes from, and so one whose word counts; also the author of a plan or a deed. Lewis &amp; Short makes it common gender; Traupman’s <span lang=\"la\">auctrīx</span> (p. 275) is rare and post-classical (Lewis &amp; Short s.v. <span lang=\"la\">auctrīx</span>)."
+    },
+    {
+      "latin": "fābulārum scrīptor",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "playwright",
+      "evidence": [
+        "Traupman 168"
+      ]
     }
   ],
   "phrases": [
@@ -56,11 +67,12 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/scriptor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: scriptor</a> · <a href=\"https://logeion.uchicago.edu/auctor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: auctor</a> · <a href=\"https://logeion.uchicago.edu/auctrix\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: auctrix</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 170, 275, 409, checked against the searchable text of the book (9 November 2026).",
-    "Livy, Sallust and Cicero’s letters to Atticus checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+    "Livy, Sallust and Cicero’s letters to Atticus checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "<a href=\"https://logeion.uchicago.edu/fabula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fabula</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

@@ -6,7 +6,9 @@
     "tavern",
     "bar (for drinks)",
     "inn (for drinking)",
-    "go to the pub"
+    "go to the pub",
+    "inn",
+    "saloon"
   ],
   "domain": "urbs",
   "terms": [
@@ -17,7 +19,8 @@
       "gloss": "inn, tavern",
       "evidence": [
         "Cic. Pis. 53 (Lewis &amp; Short)",
-        "Hor. S. 1.5.51 (Lewis &amp; Short)"
+        "Hor. S. 1.5.51 (Lewis &amp; Short)",
+        "Traupman 167"
       ],
       "comment": "An inn or tavern (Lewis &amp; Short); the landlord is <span lang=\"la\">caupō</span>. The libellī use it for a restaurant too (see restaurant)."
     },
@@ -41,6 +44,16 @@
         "Cic. Inv. 2.14: <span lang=\"la\">cum in eandem tabernam dēvertissent</span> (Lewis &amp; Short)"
       ],
       "comment": "Any shop or stall; a tavern where the context or an adjective says so, as <span lang=\"la\">taberna dēversōria</span> (Plaut. Men. 2.3.81) (Lewis &amp; Short)."
+    },
+    {
+      "latin": "taberna pōtōria",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "saloon, bar",
+      "evidence": [
+        "Traupman 174"
+      ],
+      "comment": "<span lang=\"la\">pōtōrius</span> is post-Augustan, of drinking vessels (Lewis &amp; Short)."
     }
   ],
   "phrases": [
@@ -64,11 +77,14 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/caupona\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: caupona</a> · <a href=\"https://logeion.uchicago.edu/popina\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: popina</a> · <a href=\"https://logeion.uchicago.edu/taberna\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: taberna</a>",
-    "Quotations from the Latinitas loci collections (loci-erasmus), checked against the editions named there."
+    "Quotations from the Latinitas loci collections (loci-erasmus), checked against the editions named there.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 167, each phrase checked against the searchable text of the book.",
+    "<a href=\"https://logeion.uchicago.edu/potorius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: potorius</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

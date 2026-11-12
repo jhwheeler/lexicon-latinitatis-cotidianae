@@ -10,7 +10,20 @@
     {
       "latin": "aedificō, aedificāre, aedificāvī, aedificātum",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "evidence": [
+        "Traupman 165"
+      ]
+    },
+    {
+      "latin": "exstruō, exstruere, exstrūxī, exstrūctum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "build, put up (a building)",
+      "evidence": [
+        "Lewis &amp; Short s.v. <span lang=\"la\">exstruō</span>: to pile up, build",
+        "Traupman 165"
+      ]
     }
   ],
   "phrases": [
@@ -42,14 +55,20 @@
   "sources": [
     "<a href=\"https://www.alatius.com/ls/index.php?l=aedifico\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aedifico</a>",
     "<a href=\"https://logeion.uchicago.edu/aedifico\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aedifico</a> · <a href=\"https://dcc.dickinson.edu/latin-core-list1\" rel=\"noopener noreferrer\" target=\"_blank\">Dickinson: Latin Core Vocabulary</a>",
-    "The example sentences marked “composed” are ours."
+    "The example sentences marked “composed” are ours.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 165, each phrase checked against the searchable text of the book.",
+    "<a href=\"https://logeion.uchicago.edu/exstruo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: exstruo</a>"
   ],
   "replaces": [
     "entry-32"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "erect",
+    "put up"
+  ]
 }

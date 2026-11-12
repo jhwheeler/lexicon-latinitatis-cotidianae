@@ -8,7 +8,10 @@
     "give evidence",
     "testify",
     "bear witness",
-    "witness statement"
+    "witness statement",
+    "admissible",
+    "not admissible",
+    "turn state’s evidence"
   ],
   "domain": "res-publica",
   "terms": [
@@ -46,6 +49,11 @@
       "latin": "tum quī testimōnium dīceret ut arbitrārī sē dīceret etiam quod ipse vīdisset",
       "english": "and that a witness should say “I think” even of what he had seen himself",
       "source": "Cic. Ac. 2.146"
+    },
+    {
+      "latin": "Hoc testimōnium nōn sūmendum est.",
+      "english": "This evidence is not admissible.",
+      "source": "Traupman 195"
     }
   ],
   "related": [
@@ -57,11 +65,12 @@
     "<a href=\"https://logeion.uchicago.edu/testimonium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: testimonium</a> · <a href=\"https://logeion.uchicago.edu/testis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: testis</a> · <a href=\"https://logeion.uchicago.edu/testificor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: testificor</a> · <a href=\"https://logeion.uchicago.edu/indicium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: indicium</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 195, 311, checked against the searchable text of the book (9 November 2026).",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. turn state’s evidence.",
-    "Cicero (Brut. 293, Ac. 2.146) and Terence (Ph. 293) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+    "Cicero (Brut. 293, Ac. 2.146) and Terence (Ph. 293) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 195, each phrase checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

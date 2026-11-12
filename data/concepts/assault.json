@@ -1,0 +1,59 @@
+{
+  "id": "assault",
+  "english": "assault",
+  "pos": "noun",
+  "also": [
+    "assault and battery",
+    "battery",
+    "attack (on a person)",
+    "commit assault",
+    "accuse of assault",
+    "violence"
+  ],
+  "domain": "res-publica",
+  "audience": "adult",
+  "terms": [
+    {
+      "latin": "vīs, vim, vī f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "violence, assault",
+      "evidence": [
+        "Cic. Phil. 2.4: <span lang=\"la\">dē vī condemnātī sunt</span> (Lewis &amp; Short s.v. <span lang=\"la\">vīs</span>)",
+        "Traupman 193"
+      ],
+      "comment": "Only the accusative <span lang=\"la\">vim</span> and the ablative <span lang=\"la\">vī</span> are common in the singular; the charge of assault is <span lang=\"la\">dē vī</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "vim facere in aliquem",
+      "english": "to commit assault against someone",
+      "source": "Traupman 193; cf. Cic. Caecin. 63: inermibus vim facere (Lewis &amp; Short s.v. <span lang=\"la\">inermis</span>)"
+    },
+    {
+      "latin": "alicui vim afferre",
+      "english": "to assault someone",
+      "source": "Traupman 191"
+    },
+    {
+      "latin": "aliquem dē vī (et manū) accūsāre",
+      "english": "to accuse someone of assault (and battery)",
+      "source": "Traupman 193; cf. Cic. Sest. 75: dē vī reus (Lewis &amp; Short s.v. <span lang=\"la\">reus</span>)"
+    }
+  ],
+  "related": [
+    "attack",
+    "beat-up",
+    "charge-accusation"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/vis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vis</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 191, 193, each phrase checked against the searchable text of the book."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-12",
+    "by": "Claude"
+  }
+}

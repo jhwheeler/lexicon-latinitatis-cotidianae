@@ -4,7 +4,10 @@
   "pos": "noun",
   "also": [
     "coach",
-    "school bus"
+    "school bus",
+    "tour bus",
+    "bus timetable",
+    "does the bus stop in …?"
   ],
   "domain": "vectura",
   "terms": [
@@ -14,7 +17,8 @@
       "period": "modern",
       "gloss": "bus or coach",
       "evidence": [
-        "M-O s.v. bus, citing Albert, Helfer and Bacci"
+        "M-O s.v. bus, citing Albert, Helfer and Bacci",
+        "Traupman 215"
       ],
       "comment": "The noun is <strong lang=\"la\">autoraeda, autoraedae f.</strong>."
     },
@@ -45,6 +49,15 @@
         "Andresian p. 40"
       ],
       "comment": "The same phrase as <span lang=\"la\">autoraeda longa</span>, without <span lang=\"la\">auto-</span>."
+    },
+    {
+      "latin": "coenautocīnētum, coenautocīnētī n.",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "a bus (literally “a shared motor vehicle”)",
+      "evidence": [
+        "Traupman 215, 218"
+      ]
     }
   ],
   "phrases": [
@@ -52,6 +65,21 @@
       "latin": "Autoraedā longā īmus.",
       "english": "We’re going by bus.",
       "source": "composed"
+    },
+    {
+      "latin": "coenautocīnētum periēgēticum",
+      "english": "a tour bus",
+      "source": "Traupman 218"
+    },
+    {
+      "latin": "hōrārium autoraedārum longārum",
+      "english": "a bus timetable",
+      "source": "Traupman 218"
+    },
+    {
+      "latin": "Subsistitne autoraeda longa in …?",
+      "english": "Does the bus stop in …?",
+      "source": "Traupman 218"
     }
   ],
   "related": [
@@ -62,14 +90,15 @@
     "<a href=\"https://logeion.uchicago.edu/raeda\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: raeda</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 284, checked against the searchable text of the book (11 November 2026).",
     "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 40.",
-    "The example sentences marked “composed” are ours."
+    "The example sentences marked “composed” are ours.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 215, 218, each phrase checked against the searchable text of the book."
   ],
   "replaces": [
     "entry-17"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

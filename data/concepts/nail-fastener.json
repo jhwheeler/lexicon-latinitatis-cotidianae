@@ -8,7 +8,10 @@
     {
       "latin": "clāvus, clāvī m.",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "evidence": [
+        "Traupman 165"
+      ]
     }
   ],
   "phrases": [
@@ -16,6 +19,16 @@
       "latin": "Clāvum malleō fīge.",
       "english": "Drive the nail with the hammer.",
       "source": "composed"
+    },
+    {
+      "latin": "tabulās inter sē clāvīs cōnfīgere",
+      "english": "to nail boards together",
+      "source": "Traupman 165"
+    },
+    {
+      "latin": "trānstra … cōnfīxa clāvīs ferreīs",
+      "english": "cross-beams fastened with iron nails",
+      "source": "Caes. BG 3.13 (Lewis &amp; Short s.v. <span lang=\"la\">cōnfīgō</span>)"
     }
   ],
   "related": [
@@ -24,11 +37,18 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/clavus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: clavus</a>",
-    "The example sentence marked “composed” is ours."
+    "The example sentence marked “composed” is ours.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 165, each phrase checked against the searchable text of the book.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "nail (verb)",
+    "nail together",
+    "nail boards together"
+  ]
 }

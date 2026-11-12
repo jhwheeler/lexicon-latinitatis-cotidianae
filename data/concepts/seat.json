@@ -7,7 +7,10 @@
     {
       "latin": "sēdēs, sēdis f.",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "evidence": [
+        "Traupman 212, 218"
+      ]
     }
   ],
   "related": [
@@ -20,7 +23,8 @@
     "child-seat"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/sedes\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sedes</a>"
+    "<a href=\"https://logeion.uchicago.edu/sedes\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sedes</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 212, 218, each phrase checked against the searchable text of the book."
   ],
   "replaces": [
     "entry-218",
@@ -28,7 +32,24 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "aisle seat",
+    "seat near the exit",
+    "first-class seat"
+  ],
+  "phrases": [
+    {
+      "latin": "sēdēs andrōnālis",
+      "english": "an aisle seat",
+      "source": "Traupman 218"
+    },
+    {
+      "latin": "In quā parte āëroplanī vīs sedēre?",
+      "english": "In what part of the plane do you want to sit?",
+      "source": "Traupman 212"
+    }
+  ]
 }

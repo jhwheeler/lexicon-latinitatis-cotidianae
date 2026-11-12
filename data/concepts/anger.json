@@ -5,7 +5,8 @@
   "also": [
     "rage",
     "temper",
-    "wrath"
+    "wrath",
+    "resentment"
   ],
   "domain": "sermo",
   "terms": [
@@ -26,9 +27,19 @@
       "period": "classical",
       "gloss": "quick temper; a fit of rage",
       "evidence": [
-        "Cic. Tusc. 4.27; Ter. Heaut. 5.1.47 (Lewis &amp; Short)"
+        "Cic. Tusc. 4.27; Ter. Heaut. 5.1.47 (Lewis &amp; Short)",
+        "Traupman 157"
       ],
       "comment": "Proneness to anger, a hot temper, and also the rage itself: <span lang=\"la\">aliud īrācundum esse, aliud īrātum</span> (Cic. Tusc. 4.27)."
+    },
+    {
+      "latin": "furor, furōris m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "rage, fury, madness",
+      "evidence": [
+        "Traupman 156"
+      ]
     }
   ],
   "phrases": [
@@ -43,13 +54,15 @@
     "be-cross"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/furor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: furor</a>",
     "<a href=\"https://logeion.uchicago.edu/ira\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ira</a> · <a href=\"https://logeion.uchicago.edu/iracundia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: iracundia</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 149, 271, checked against the searchable text of the book (11 November 2026).",
-    "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 36."
+    "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 36.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

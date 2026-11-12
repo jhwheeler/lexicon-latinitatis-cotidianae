@@ -8,7 +8,20 @@
       "latin": "messis, messis f.",
       "status": "recommended",
       "period": "classical",
-      "gloss": "harvest or reaping"
+      "gloss": "harvest or reaping",
+      "evidence": [
+        "Traupman 166"
+      ]
+    },
+    {
+      "latin": "dēmetō, dēmetere, dēmessuī, dēmessum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "harvest, reap",
+      "evidence": [
+        "Cic. Sen. 70: <span lang=\"la\">tempora dēmetendīs frūctibus … accommodāta</span> (Lewis &amp; Short)",
+        "Traupman 166"
+      ]
     }
   ],
   "phrases": [
@@ -25,11 +38,17 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/messis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: messis</a>",
-    "The example sentence marked “composed” is ours."
+    "The example sentence marked “composed” is ours.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 166, each phrase checked against the searchable text of the book.",
+    "<a href=\"https://logeion.uchicago.edu/demeto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: demeto</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "harvest (verb)"
+  ]
 }

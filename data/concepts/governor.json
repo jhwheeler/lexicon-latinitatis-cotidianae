@@ -8,7 +8,8 @@
     "provincial governor",
     "state governor",
     "governor of a province",
-    "governorship"
+    "governorship",
+    "govern (a province)"
   ],
   "domain": "res-publica",
   "terms": [
@@ -53,6 +54,16 @@
         "Traupman 179"
       ],
       "comment": "Classically a helmsman, and so figuratively a guide of the state: <span lang=\"la\">custōdēs gubernātōrēsque reī pūblicae</span> (Cic. Rab. Perd. 26; Lewis &amp; Short). Later Latin made it the title of royal and colonial governors (Morgan–Owens)."
+    },
+    {
+      "latin": "prōcūrātor, prōcūrātōris m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "governor of a minor province",
+      "evidence": [
+        "Lewis &amp; Short s.v. <span lang=\"la\">prōcūrātor</span>: of the governors of small provinces under the emperors",
+        "Traupman 179"
+      ]
     }
   ],
   "phrases": [
@@ -60,6 +71,11 @@
       "latin": "Praeses prōvinciae crās in oppidum veniet.",
       "english": "The governor of the province is coming to the town tomorrow.",
       "source": "composed"
+    },
+    {
+      "latin": "prōvinciae praesidēre",
+      "english": "to govern a province",
+      "source": "Traupman 179"
     }
   ],
   "related": [
@@ -72,11 +88,12 @@
     "<a href=\"https://logeion.uchicago.edu/praeses\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praeses</a> · <a href=\"https://logeion.uchicago.edu/rector\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: rector</a> · <a href=\"https://logeion.uchicago.edu/proconsul\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: proconsul</a> · <a href=\"https://logeion.uchicago.edu/gubernator\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gubernator</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 176, 179, checked against the searchable text of the book (11 November 2026).",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. governor.",
-    "The example sentence marked “composed” is ours."
+    "The example sentence marked “composed” is ours.",
+    "<a href=\"https://logeion.uchicago.edu/procurator\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: procurator</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

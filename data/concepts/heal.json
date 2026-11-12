@@ -6,7 +6,10 @@
     "cure",
     "curable",
     "heal up",
-    "get better (of a wound)"
+    "get better (of a wound)",
+    "treat (a patient)",
+    "make better",
+    "heal a wound"
   ],
   "domain": "corpus",
   "terms": [
@@ -17,7 +20,9 @@
       "gloss": "heal, cure",
       "evidence": [
         "Cic. ND 3.70: <span lang=\"la\">quam (vomicam) sānāre medicī nōn potuerant</span> (Lewis &amp; Short)",
-        "Traupman 61, 63, 64"
+        "Traupman 61, 63, 64",
+        "Cic. N.D. 3.70: <span lang=\"la\">quam sānāre medicī nōn potuerant</span> (Lewis &amp; Short)",
+        "Traupman 166"
       ],
       "comment": "Transitive: the doctor heals the patient or the wound."
     },
@@ -42,16 +47,42 @@
         "Ov. Pont. 2.2.59: <span lang=\"la\">vulnus</span> (Lewis &amp; Short)",
         "Traupman 63"
       ]
+    },
+    {
+      "latin": "medeor, medērī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "heal, be a remedy for",
+      "grammar": "verb, second conjugation, deponent, with the dative",
+      "evidence": [
+        "Lewis &amp; Short s.v. <span lang=\"la\">medeor</span>"
+      ]
+    },
+    {
+      "latin": "cūrō, cūrāre, cūrāvī, cūrātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "treat (a patient)",
+      "evidence": [
+        "Traupman 166"
+      ]
     }
   ],
   "related": [
     "recover",
     "treatment",
-    "medicine-art"
+    "medicine-art",
+    "remedy",
+    "doctor"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/sano\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sano</a> · <a href=\"https://logeion.uchicago.edu/sanesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sanesco</a> · <a href=\"https://logeion.uchicago.edu/sanabilis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sanabilis</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 63, 64, checked against the searchable text of the book."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 63, 64, checked against the searchable text of the book.",
+    "<a href=\"https://logeion.uchicago.edu/sano\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sano</a>",
+    "<a href=\"https://logeion.uchicago.edu/medeor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: medeor</a>",
+    "<a href=\"https://logeion.uchicago.edu/curo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: curo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 166, each phrase checked against the searchable text of the book.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",

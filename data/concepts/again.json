@@ -12,6 +12,16 @@
       "latin": "iterum",
       "status": "recommended",
       "period": "classical"
+    },
+    {
+      "latin": "rūrsus",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "again, once more; back",
+      "evidence": [
+        "Lewis &amp; Short s.v. <span lang=\"la\">rūrsus</span>",
+        "Traupman 214"
+      ]
     }
   ],
   "phrases": [
@@ -24,6 +34,11 @@
       "latin": "Iterum.",
       "english": "Again.",
       "source": "composed"
+    },
+    {
+      "latin": "Rūrsus? — Rūrsus quidem!",
+      "english": "Again? — Yes, again!",
+      "source": "Traupman 214"
     }
   ],
   "related": [
@@ -33,11 +48,13 @@
   "sources": [
     "The example sentences marked “composed” are ours.",
     "The grouped card gave no source for this word.",
-    "The example sentence marked “composed” is ours."
+    "The example sentence marked “composed” is ours.",
+    "<a href=\"https://logeion.uchicago.edu/rursus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: rursus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 214, each phrase checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

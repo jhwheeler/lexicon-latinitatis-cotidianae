@@ -1,0 +1,80 @@
+{
+  "id": "burglar",
+  "english": "burglar",
+  "pos": "noun",
+  "also": [
+    "burglars",
+    "housebreaker",
+    "burglary",
+    "break-in",
+    "breaking and entering",
+    "break into a house",
+    "commit a burglary"
+  ],
+  "domain": "res-publica",
+  "audience": "adult",
+  "terms": [
+    {
+      "latin": "perfossor parietum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a housebreaker (literally “one who digs through walls”)",
+      "evidence": [
+        "Plaut. Ps. 4.2.23 (Lewis &amp; Short s.v. <span lang=\"la\">perfossor</span>)",
+        "Traupman 194, 196"
+      ],
+      "comment": "Roman houses were broken into through the wall: <span lang=\"la\">parietem perfodere</span>, to dig through the wall, is to burgle (Lewis &amp; Short s.v. <span lang=\"la\">perfodiō</span>)."
+    },
+    {
+      "latin": "effrāctor, effrāctōris m.",
+      "status": "alternative",
+      "period": "post-classical",
+      "gloss": "a housebreaker",
+      "evidence": [
+        "Dig. 1.15.3 (Lewis &amp; Short: juridical Latin)",
+        "Traupman 194"
+      ]
+    },
+    {
+      "latin": "effrāctūra, effrāctūrae f.",
+      "status": "alternative",
+      "period": "post-classical",
+      "gloss": "a break-in, a burglary",
+      "evidence": [
+        "Dig. 1.15.3.2 (Lewis &amp; Short: juridical Latin)",
+        "Traupman 193"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "domūs parietēs perfodere",
+      "english": "to break into a house",
+      "source": "Traupman 193, 194; cf. Plaut. As. 3.2.17: parietēs (Lewis &amp; Short s.v. <span lang=\"la\">perfodiō</span>)"
+    },
+    {
+      "latin": "Aliquis parietem domūs meae perfōdit.",
+      "english": "Someone broke into my home.",
+      "source": "Traupman 192"
+    },
+    {
+      "latin": "domūs latrōcinium",
+      "english": "a burglary",
+      "source": "Traupman 194"
+    }
+  ],
+  "related": [
+    "thief",
+    "robbery",
+    "rob"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/perfossor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: perfossor</a> · <a href=\"https://logeion.uchicago.edu/perfodio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: perfodio</a> · <a href=\"https://logeion.uchicago.edu/effractor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: effractor</a> · <a href=\"https://logeion.uchicago.edu/effractura\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: effractura</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 192–196, each phrase checked against the searchable text of the book."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-12",
+    "by": "Claude"
+  }
+}

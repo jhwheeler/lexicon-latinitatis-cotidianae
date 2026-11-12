@@ -3,7 +3,10 @@
   "english": "petrol station",
   "pos": "noun",
   "also": [
-    "gas station"
+    "gas station",
+    "service station",
+    "petrol pump",
+    "gas pump"
   ],
   "domain": "vectura",
   "terms": [
@@ -12,7 +15,8 @@
       "status": "recommended",
       "period": "modern",
       "evidence": [
-        "Traupman 216, 320"
+        "Traupman 174, 216, 320",
+        "Traupman 214, 218: service station"
       ]
     },
     {
@@ -30,11 +34,24 @@
   ],
   "sources": [
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. gas station.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): pp. 216, 320."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): pp. 216, 320.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 214–218, each phrase checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "antlia benzīnāria",
+      "english": "a petrol pump",
+      "source": "Traupman 216"
+    },
+    {
+      "latin": "Cōnsistere in statiōne benzīnāriā ad benzīnum comparandum",
+      "english": "to stop at the petrol station to get petrol",
+      "source": "Traupman 214"
+    }
+  ]
 }

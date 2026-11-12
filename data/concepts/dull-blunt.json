@@ -5,7 +5,10 @@
   "pos": "adjective",
   "also": [
     "blunt",
-    "not sharp"
+    "not sharp",
+    "dull (of a person)",
+    "sluggish",
+    "be sluggish"
   ],
   "also_under": [
     "officina"
@@ -21,7 +24,7 @@
       "evidence": [
         "Ov. A.A. 3.589",
         "Cic. Har. Resp. 2: <span lang=\"la\">tēla … hebetiōra</span> (Lewis &amp; Short)",
-        "Traupman 307"
+        "Traupman 307, 151, 158"
       ],
       "comment": "Blunt, as against <span lang=\"la\">acūtus</span>; also, of the mind or senses, dull, slow (Gell. 4.19.1)."
     },
@@ -34,6 +37,16 @@
         "Plin. Ep. 7.3.5: <span lang=\"la\">obtūsus … stomachus</span>"
       ],
       "comment": "The participle of <span lang=\"la\">obtundere</span>, “beat blunt”."
+    },
+    {
+      "latin": "hebeō, hebēre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "to be blunt; to be dull, sluggish",
+      "evidence": [
+        "Verg. A. 5.396 (Lewis &amp; Short)",
+        "Traupman 158"
+      ]
     }
   ],
   "phrases": [
@@ -53,14 +66,16 @@
     "be-bored"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/hebeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: hebeo</a>",
     "<a href=\"https://logeion.uchicago.edu/hebes\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: hebes</a> · <a href=\"https://logeion.uchicago.edu/obtusus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: obtusus</a> · <a href=\"https://logeion.uchicago.edu/obtundo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: obtundo</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 307, checked against the searchable text of the book.",
     "Checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (11 November 2026): Ovid.",
-    "Quotations from the Latinitas loci collections (loci-plinius, loci-gellius, loci-erasmus), checked against the editions named there."
+    "Quotations from the Latinitas loci collections (loci-plinius, loci-gellius, loci-erasmus), checked against the editions named there.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

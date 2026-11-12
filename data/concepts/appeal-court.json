@@ -10,7 +10,9 @@
     "lodge an appeal",
     "court of appeal",
     "appeal against a verdict",
-    "right of appeal"
+    "right of appeal",
+    "allow an appeal",
+    "disallow an appeal"
   ],
   "domain": "res-publica",
   "terms": [
@@ -44,9 +46,20 @@
       "grammar": "verb, first conjugation; the magistrate appealed to in the accusative",
       "evidence": [
         "Liv. 2.55 (Lewis &amp; Short): <span lang=\"la\">Volerō appellat tribūnōs</span>",
-        "Cic. Quinct. 64 (Lewis &amp; Short): <span lang=\"la\">ā praetōre tribūnōs appellāre</span>"
+        "Cic. Quinct. 64 (Lewis &amp; Short): <span lang=\"la\">ā praetōre tribūnōs appellāre</span>",
+        "Traupman 193: appeal (to), <span lang=\"la\">appellāre ad</span>"
       ],
       "comment": "To call on a magistrate, classically the tribunes, for help against another; the noun is <span lang=\"la\">appellātiō</span> (<span lang=\"la\">appellātiō prōvocātiōque</span>, Liv. 3.56). Its everyday senses are to address and to name (see address)."
+    },
+    {
+      "latin": "appellātiō, appellātiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "an appeal (to a magistrate)",
+      "evidence": [
+        "Lewis &amp; Short s.v. <span lang=\"la\">appellātiō</span> II: an appeal",
+        "Traupman 193"
+      ]
     }
   ],
   "related": [
@@ -56,11 +69,30 @@
     "appeal-plea"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/provoco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: provoco</a> · <a href=\"https://logeion.uchicago.edu/provocatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: provocatio</a> · <a href=\"https://logeion.uchicago.edu/appello\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: appello</a> · <a href=\"https://logeion.uchicago.edu/appellatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: appellatio</a>"
+    "<a href=\"https://logeion.uchicago.edu/provoco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: provoco</a> · <a href=\"https://logeion.uchicago.edu/provocatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: provocatio</a> · <a href=\"https://logeion.uchicago.edu/appello\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: appello</a> · <a href=\"https://logeion.uchicago.edu/appellatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: appellatio</a>",
+    "<a href=\"https://logeion.uchicago.edu/appellatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: appellatio</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 193–194, each phrase checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "appellātiōnem admittere",
+      "english": "to allow an appeal",
+      "source": "Traupman 193"
+    },
+    {
+      "latin": "appellātiōnem improbāre",
+      "english": "to disallow an appeal",
+      "source": "Traupman 193"
+    },
+    {
+      "latin": "jūdicium appellātōrium",
+      "english": "a court of appeal",
+      "source": "Traupman 194"
+    }
+  ]
 }

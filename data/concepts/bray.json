@@ -3,7 +3,9 @@
   "english": "bray",
   "pos": "verb",
   "also": [
-    "hee-haw"
+    "hee-haw",
+    "heehaw",
+    "braying"
   ],
   "domain": "natura",
   "terms": [
@@ -12,8 +14,18 @@
       "status": "recommended",
       "period": "classical",
       "evidence": [
-        "Traupman 142",
+        "Traupman 142, 144",
         "Ov."
+      ]
+    },
+    {
+      "latin": "rudītus, rudītūs m.",
+      "status": "alternative",
+      "period": "late",
+      "gloss": "braying, a heehaw",
+      "evidence": [
+        "App. M. 8 (Lewis &amp; Short)",
+        "Traupman 142"
       ]
     }
   ],
@@ -28,13 +40,15 @@
     "donkey"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/ruditus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ruditus</a>",
     "<a href=\"https://logeion.org/rudo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: rudo</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 142.",
-    "The example sentence marked “composed” is ours."
+    "The example sentence marked “composed” is ours.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

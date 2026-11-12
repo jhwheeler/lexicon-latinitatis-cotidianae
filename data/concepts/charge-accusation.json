@@ -11,7 +11,19 @@
     "accuse",
     "charge with",
     "be charged with",
-    "bring charges"
+    "bring charges",
+    "indict",
+    "indictment",
+    "allege",
+    "allegation",
+    "false allegation",
+    "false charge",
+    "capital charge",
+    "accuse of a capital offence",
+    "bring charges against",
+    "file charges",
+    "count (of an indictment)",
+    "charge with a crime"
   ],
   "domain": "res-publica",
   "terms": [
@@ -22,7 +34,8 @@
       "gloss": "charge, accusation",
       "evidence": [
         "Phaedr. 1.10.4: <span lang=\"la\">lupus arguēbat vulpem fūrtī crīmine</span>",
-        "Traupman 194"
+        "Traupman 194",
+        "Traupman 194: count"
       ],
       "comment": "To bring charges against someone: <span lang=\"la\">crīmina alicuī īnferre</span> (Traupman 194)."
     },
@@ -34,7 +47,8 @@
       "gloss": "charge (someone with), accuse",
       "evidence": [
         "Phaedr. 1.10.4: <span lang=\"la\">fūrtī crīmine</span>",
-        "Traupman 194"
+        "Traupman 194",
+        "Traupman 193: allege"
       ],
       "comment": "<span lang=\"la\">aliquem crīmine</span> (or <span lang=\"la\">dē crīmine</span>, <span lang=\"la\">crīminis</span>) <span lang=\"la\">arguere</span> (Traupman 194)."
     },
@@ -57,7 +71,28 @@
       "grammar": "phrase: reus, reī m. (the accused) with facere and the accusative of the person",
       "gloss": "bring a charge against, prosecute",
       "evidence": [
-        "Nep. Alc. 4.3 (Lewis &amp; Short)"
+        "Nep. Alc. 4.3 (Lewis &amp; Short)",
+        "Traupman 193, 195: indict"
+      ]
+    },
+    {
+      "latin": "accūsātiō, accūsātiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "an accusation, an indictment",
+      "evidence": [
+        "Cic. Off. 2.14: <span lang=\"la\">ratiō jūdiciōrum ex accūsātiōne et dēfēnsiōne cōnstat</span> (Lewis &amp; Short)",
+        "Traupman 193"
+      ]
+    },
+    {
+      "latin": "calumnia, calumniae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a false charge; chicanery",
+      "evidence": [
+        "Lewis &amp; Short s.v. <span lang=\"la\">calumnia</span>: trickery, chicanery; in law, false accusation",
+        "Traupman 194"
       ]
     }
   ],
@@ -71,6 +106,36 @@
       "latin": "Difficilem habēre oportet aurem ad crīmina.",
       "english": "one should have an ear that is slow to listen to accusations",
       "source": "Publil. Sent. D 11"
+    },
+    {
+      "latin": "aliquem reī capitālis reum facere",
+      "english": "to accuse someone of a capital offence",
+      "source": "Traupman 193"
+    },
+    {
+      "latin": "crīmina alicui īnferre",
+      "english": "to bring charges against someone",
+      "source": "Traupman 190, 194"
+    },
+    {
+      "latin": "aliquem crīmine (dē crīmine) arguere",
+      "english": "to charge someone with a crime",
+      "source": "Traupman 194"
+    },
+    {
+      "latin": "capitāle crīmen",
+      "english": "a capital charge",
+      "source": "Traupman 194"
+    },
+    {
+      "latin": "falsa īnsimulātiō",
+      "english": "a false allegation",
+      "source": "Traupman 193; cf. Cic. Font. 29: in falsam atque inīquam probrōrum īnsimulātiōnem (Lewis &amp; Short s.v. <span lang=\"la\">īnsimulātiō</span>)"
+    },
+    {
+      "latin": "Hortēnsius eum pecūlātūs accūsāvit.",
+      "english": "Hortensius accused him of embezzlement.",
+      "source": "Traupman 190"
     }
   ],
   "related": [
@@ -80,11 +145,14 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/crimen\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: crimen</a> · <a href=\"https://logeion.uchicago.edu/arguo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: arguo</a> · <a href=\"https://logeion.uchicago.edu/accuso\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: accuso</a> · <a href=\"https://logeion.uchicago.edu/reus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: reus</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 193–194, checked against the searchable text of the book (9 November 2026).",
-    "Quotations from the Latinitas loci collections (loci-phaedrus, loci-publilius), checked against the editions named there."
+    "Quotations from the Latinitas loci collections (loci-phaedrus, loci-publilius), checked against the editions named there.",
+    "<a href=\"https://logeion.uchicago.edu/accusatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: accusatio</a> · <a href=\"https://logeion.uchicago.edu/calumnia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: calumnia</a> · <a href=\"https://logeion.uchicago.edu/insimulatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: insimulatio</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 190–195, each phrase checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

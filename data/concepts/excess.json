@@ -9,7 +9,8 @@
     "nothing in excess",
     "excessive",
     "overindulgence",
-    "immoderation"
+    "immoderation",
+    "immoderate"
   ],
   "domain": "verba",
   "terms": [
@@ -41,9 +42,21 @@
       "period": "classical",
       "gloss": "want of moderation, excess",
       "evidence": [
-        "Cic. Sull. 30: <span lang=\"la\">efferrī immoderātiōne verbōrum</span> (Lewis &amp; Short)"
+        "Cic. Sull. 30: <span lang=\"la\">efferrī immoderātiōne verbōrum</span> (Lewis &amp; Short)",
+        "Traupman 154"
       ],
       "comment": "Rare (Lewis &amp; Short); the adjective <span lang=\"la\">immoderātus</span> and Traupman’s <span lang=\"la\">immodicus</span> (excessive, Traupman 152) are commoner."
+    },
+    {
+      "latin": "immodicus, immodica, immodicum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "immoderate, excessive",
+      "grammar": "adjective; in what: genitive or ablative",
+      "evidence": [
+        "Ov. M. 6.673 (Lewis &amp; Short)",
+        "Traupman 152, 154"
+      ]
     }
   ],
   "phrases": [
@@ -67,11 +80,12 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/nimius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nimius</a> · <a href=\"https://logeion.uchicago.edu/intemperantia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: intemperantia</a> · <a href=\"https://logeion.uchicago.edu/immoderatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: immoderatio</a> · <a href=\"https://logeion.uchicago.edu/immodicus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: immodicus</a>",
     "Terence from the Latinitas loci collection (loci-terentius); the other passages as Lewis &amp; Short quotes them.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 152."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 152.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

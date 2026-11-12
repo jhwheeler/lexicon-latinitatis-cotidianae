@@ -4,7 +4,8 @@
   "pos": "noun",
   "also": [
     "citizens",
-    "fellow citizen"
+    "fellow citizen",
+    "citizenship"
   ],
   "domain": "res-publica",
   "terms": [
@@ -17,9 +18,19 @@
       "evidence": [
         "Liv. 2.12.9",
         "Cic. Off. 1.124",
-        "Traupman 178, 291"
+        "Traupman 178, 179, 291"
       ],
       "comment": "A member of a state with its rights, against a foreigner (<span lang=\"la\">peregrīnus</span>) or an enemy (<span lang=\"la\">hostis</span>), of either sex (Lewis &amp; Short). Citizenship is <span lang=\"la\">cīvitās</span> (Traupman 178); my fellow citizens, <span lang=\"la\">cīvēs meī</span> (Traupman 291); a citizen who holds no office, <span lang=\"la\">prīvātus</span> (see individual)."
+    },
+    {
+      "latin": "cīvitās, cīvitātis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "citizenship",
+      "evidence": [
+        "Lewis &amp; Short s.v. <span lang=\"la\">cīvitās</span>: citizenship, the rights of a citizen",
+        "Traupman 178"
+      ]
     }
   ],
   "phrases": [
@@ -43,7 +54,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

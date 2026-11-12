@@ -7,22 +7,32 @@
     {
       "latin": "mūs, mūris m.",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "evidence": [
+        "Traupman 143"
+      ]
     },
     {
       "latin": "mintriō",
       "status": "avoid",
       "period": "late",
       "gloss": "squeak",
-      "comment": "Traupman’s <span lang=\"la\">mintriō</span> (squeak) is attested only in the late <span lang=\"la\">Carmen dē Philomēlā</span>; not recommended."
+      "comment": "Traupman’s <span lang=\"la\">mintriō</span> (squeak) is attested only in the late <span lang=\"la\">Carmen dē Philomēlā</span>; not recommended.",
+      "evidence": [
+        "Traupman 143, 144"
+      ]
     }
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/mus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mus</a>"
+    "<a href=\"https://logeion.uchicago.edu/mus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, each phrase checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "squeak (of a mouse)"
+  ]
 }

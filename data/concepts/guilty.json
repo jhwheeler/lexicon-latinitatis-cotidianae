@@ -6,7 +6,14 @@
   "also": [
     "found guilty",
     "guilty of",
-    "convicted"
+    "convicted",
+    "convict",
+    "conviction",
+    "be found guilty",
+    "convicted of",
+    "punish the guilty",
+    "convict on many counts of fraud",
+    "condemn"
   ],
   "domain": "res-publica",
   "terms": [
@@ -28,7 +35,8 @@
       "gloss": "guilty; as a noun, the guilty, offenders",
       "evidence": [
         "Cic. <em>Phil.</em> 2.18: <span lang=\"la\">comprehēnsiō sontium</span>",
-        "Traupman 195"
+        "Traupman 195",
+        "Traupman 195: the guilty one"
       ],
       "comment": "As an adjective mostly in the poets; in prose chiefly the noun (Lewis &amp; Short)."
     },
@@ -39,9 +47,42 @@
       "gloss": "find guilty, convict",
       "evidence": [
         "Cic. <em>Rosc. Am.</em> 56: <span lang=\"la\">condemnārī nōn potest</span>",
-        "Traupman 191, 194"
+        "Traupman 191, 194",
+        "Traupman 194: condemn"
       ],
       "comment": "To be found guilty, <span lang=\"la\">condemnārī</span> or <span lang=\"la\">damnārī</span>."
+    },
+    {
+      "latin": "noxius, noxia, noxium",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "guilty (of), culpable",
+      "grammar": "adjective, with the ablative or genitive of the charge",
+      "evidence": [
+        "Liv. 39.41: <span lang=\"la\">quī citātī nōn affuerant, noxiōs jūdicāvit</span> (Lewis &amp; Short)",
+        "Traupman 195"
+      ]
+    },
+    {
+      "latin": "manifestus, manifesta, manifestum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "caught in, plainly guilty of",
+      "grammar": "adjective, with the genitive of the charge",
+      "evidence": [
+        "Sall. J. 35: <span lang=\"la\">sceleris manifestus</span> (Lewis &amp; Short)",
+        "Traupman 194: convicted of"
+      ]
+    },
+    {
+      "latin": "condemnātiō, condemnātiōnis f.",
+      "status": "alternative",
+      "period": "post-classical",
+      "gloss": "a conviction, a condemnation",
+      "evidence": [
+        "Dig. 42.1.59 (Lewis &amp; Short: post-Augustan)",
+        "Traupman 194"
+      ]
     }
   ],
   "phrases": [
@@ -54,6 +95,26 @@
       "latin": "Estne absolūtus an condemnātus?",
       "english": "Was he acquitted or found guilty?",
       "source": "Traupman 191"
+    },
+    {
+      "latin": "noxius jūdicārī",
+      "english": "to be found guilty",
+      "source": "Traupman 195; cf. Liv. 39.41 (Lewis &amp; Short s.v. <span lang=\"la\">noxius</span>)"
+    },
+    {
+      "latin": "poenam dē sontibus exigere",
+      "english": "to punish the guilty",
+      "source": "Traupman 195"
+    },
+    {
+      "latin": "aliquem multīs crīminibus fraudis convincere",
+      "english": "to convict someone on many counts of fraud",
+      "source": "Traupman 194"
+    },
+    {
+      "latin": "in culpā esse",
+      "english": "to be guilty, be at fault",
+      "source": "Traupman 195"
     }
   ],
   "related": [
@@ -66,11 +127,14 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/noceo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: noceo</a> · <a href=\"https://logeion.uchicago.edu/sons\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sons</a> · <a href=\"https://logeion.uchicago.edu/condemno\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: condemno</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 191, 194, 195, checked against the searchable text of the book (9 November 2026).",
-    "Cicero checked against the Latin Library text (<a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">CLTK mirror</a>, 9 November 2026)."
+    "Cicero checked against the Latin Library text (<a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">CLTK mirror</a>, 9 November 2026).",
+    "<a href=\"https://logeion.uchicago.edu/noxius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: noxius</a> · <a href=\"https://logeion.uchicago.edu/manifestus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: manifestus</a> · <a href=\"https://logeion.uchicago.edu/condemnatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: condemnatio</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 191–195, each phrase checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

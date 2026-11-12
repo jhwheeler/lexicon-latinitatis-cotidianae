@@ -10,7 +10,10 @@
     "run for office",
     "application",
     "applicant",
-    "candidate"
+    "candidate",
+    "defeat at the polls",
+    "lose an election",
+    "run for (an office)"
   ],
   "domain": "labor",
   "also_under": [
@@ -25,7 +28,8 @@
       "grammar": "verb, third conjugation, with an accusative",
       "evidence": [
         "Cic. Att. 1.1.2: <span lang=\"la\">nēmō est enim ex iīs quī nunc petunt</span>",
-        "Liv. 26.18.7: <span lang=\"la\">professus sē petere</span>"
+        "Liv. 26.18.7: <span lang=\"la\">professus sē petere</span>",
+        "Traupman 180"
       ],
       "comment": "Lewis &amp; Short: “to apply or solicit for an office, to be a candidate for office”: <span lang=\"la\">cōnsulātum petere</span> (Cic. Phil. 2.76). The same verb serves for any post or place one asks to be given."
     },
@@ -55,7 +59,8 @@
       "period": "classical",
       "gloss": "candidate, applicant",
       "evidence": [
-        "Cic. Att. 1.1.2: <span lang=\"la\">firmior candidātus</span>"
+        "Cic. Att. 1.1.2: <span lang=\"la\">firmior candidātus</span>",
+        "Traupman 178"
       ],
       "comment": "From the whitened toga (<span lang=\"la\">toga candida</span>) of those standing for office."
     },
@@ -65,7 +70,8 @@
       "period": "classical",
       "gloss": "rejection, being turned down",
       "evidence": [
-        "Cic. de Or. 2.280 (Lewis &amp; Short): <span lang=\"la\">repulsam ferre</span>"
+        "Cic. de Or. 2.280 (Lewis &amp; Short): <span lang=\"la\">repulsam ferre</span>",
+        "Traupman 179"
       ],
       "comment": "Lewis &amp; Short: “the class. technical phrase” for losing an election; see fail."
     }
@@ -85,6 +91,11 @@
       "latin": "Petīsne illud mūnus?",
       "english": "Are you applying for that job?",
       "source": "composed"
+    },
+    {
+      "latin": "repulsam ferre",
+      "english": "to be defeated, to lose an election",
+      "source": "Cic. de Or. 2.280 (Lewis &amp; Short s.v. <span lang=\"la\">repulsa</span>)"
     }
   ],
   "related": [
@@ -97,11 +108,12 @@
     "Quotations from the Latinitas loci collections (loci-livius), checked against the editions named there.",
     "Cicero’s letters to Atticus checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
     "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition.",
-    "The example sentence marked “composed” is ours."
+    "The example sentence marked “composed” is ours.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 179, each phrase checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

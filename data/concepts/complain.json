@@ -11,7 +11,8 @@
     "grumble",
     "moan",
     "complain to someone",
-    "complain about"
+    "complain about",
+    "complain bitterly"
   ],
   "domain": "verba",
   "terms": [
@@ -64,6 +65,16 @@
       "gloss": "complain to someone’s face, remonstrate",
       "grammar": "verb, first conjugation; cum aliquō (dē aliquā rē)",
       "comment": "Classically to have it out with someone, <span lang=\"la\">cum aliquō expostulāre</span>; later chiefly to demand urgently (Lewis &amp; Short)."
+    },
+    {
+      "latin": "graviter querī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "to complain bitterly",
+      "evidence": [
+        "Traupman 149"
+      ],
+      "comment": "<span lang=\"la\">Graviter</span>, “heavily”, with verbs of feeling: <span lang=\"la\">graviter ferre</span>, take hard."
     }
   ],
   "phrases": [
@@ -90,13 +101,16 @@
     "against"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/graviter\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: graviter</a>",
     "<a href=\"https://logeion.uchicago.edu/queror\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: queror</a> · <a href=\"https://logeion.uchicago.edu/conqueror\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: conqueror</a> · <a href=\"https://logeion.uchicago.edu/querela\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: querela</a> · <a href=\"https://logeion.uchicago.edu/querimonia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: querimonia</a> · <a href=\"https://logeion.uchicago.edu/expostulo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: expostulo</a>",
     "Cic. Fam. 3.10.7, Plaut. Mil. 125 and Men. 784–785 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026).",
-    "Seneca from the Latinitas loci collection (loci-seneca-epistulae)."
+    "Seneca from the Latinitas loci collection (loci-seneca-epistulae).",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, each phrase checked against the searchable text of the book.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

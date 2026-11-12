@@ -9,7 +9,9 @@
     "throw out",
     "dispose of",
     "do away with",
-    "eliminate"
+    "eliminate",
+    "get rid of worries",
+    "banish worries"
   ],
   "domain": "verba",
   "terms": [
@@ -35,7 +37,7 @@
       "evidence": [
         "Traupman 99, 321, 377: <span lang=\"la\">istum molestum āmōlīrī volō</span>, I want to get rid of that pest",
         "Plaut. Ps. 3.2.67: <span lang=\"la\">āmōlīrī omnia</span> (Lewis &amp; Short)",
-        "Traupman 99"
+        "Traupman 99, 157"
       ],
       "comment": "To shift something heavy, and so to get a nuisance off one’s hands; <span lang=\"la\">hinc vōs āmōlīminī</span>, clear off! (Ter. And. 4.2.24)."
     },
@@ -56,6 +58,25 @@
         "Cic. Att. 6.1.10: <span lang=\"la\">aliquem magnā sollicitūdine līberāre</span> (Lewis &amp; Short)"
       ],
       "comment": "For “be rid of” a worry, a debt, a duty: <span lang=\"la\">eā cūrā līberātus sum</span>."
+    },
+    {
+      "latin": "dīluō, dīluere, dīluī, dīlūtum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "to wash away, dispel (worries)",
+      "evidence": [
+        "Traupman 157"
+      ],
+      "comment": "Literally “wash away”: so of cares washed away with wine."
+    },
+    {
+      "latin": "eximō, eximere, exēmī, exēmptum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "to take away, banish (worries)",
+      "evidence": [
+        "Traupman 149"
+      ]
     }
   ],
   "phrases": [
@@ -82,6 +103,8 @@
     "lift-raise"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/eximo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: eximo</a>",
+    "<a href=\"https://logeion.uchicago.edu/diluo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: diluo</a>",
     "<a href=\"https://logeion.uchicago.edu/amoveo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: amoveo</a> · <a href=\"https://logeion.uchicago.edu/amolior\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: amolior</a> · <a href=\"https://logeion.uchicago.edu/tollo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tollo</a> · <a href=\"https://logeion.uchicago.edu/libero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: libero</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 99, 321, 377, checked against the searchable text of the book (11 November 2026).",
     "Terence, Plautus and Cicero as Lewis &amp; Short quotes them.",
@@ -90,7 +113,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

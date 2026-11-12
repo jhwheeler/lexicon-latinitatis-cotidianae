@@ -45,6 +45,16 @@
       "evidence": [
         "Cic. Par. 18: <span lang=\"la\">quī tē beātum, quī flōrentem putās</span>"
       ]
+    },
+    {
+      "latin": "bene aerātus",
+      "status": "avoid",
+      "period": "modern",
+      "gloss": "well-off",
+      "evidence": [
+        "Traupman 159"
+      ],
+      "comment": "We have found no instance of the phrase: Lewis &amp; Short has <span lang=\"la\">aerātus</span>, “furnished with money”, only in Cicero’s pun <span lang=\"la\">tribūnī nōn tam aerātī quam aerāriī</span> (Att. 1.16.3). Say <span lang=\"la\">beātus</span> or <span lang=\"la\">locuplēs</span>."
     }
   ],
   "phrases": [
@@ -59,12 +69,15 @@
     "poor-needy"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/aeratus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aeratus</a>",
     "<a href=\"https://logeion.uchicago.edu/floreo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: floreo</a> · <a href=\"https://logeion.uchicago.edu/felix\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: felix</a> · <a href=\"https://logeion.uchicago.edu/beatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: beatus</a>",
-    "Caesar (BG 7.32) and Cicero (Par. 18) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+    "Caesar (BG 7.32) and Cicero (Par. 18) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, each phrase checked against the searchable text of the book.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

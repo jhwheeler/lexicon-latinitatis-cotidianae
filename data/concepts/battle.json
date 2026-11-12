@@ -6,7 +6,12 @@
     "battles",
     "combat",
     "battlefield",
-    "fight a battle"
+    "fight a battle",
+    "naval battle",
+    "successful battle",
+    "in battle",
+    "hand-to-hand combat",
+    "combatant"
   ],
   "domain": "res-publica",
   "terms": [
@@ -43,6 +48,16 @@
         "Traupman 185"
       ],
       "comment": "The front of an army drawn up for battle, its ‘edge’ (Lewis &amp; Short); Traupman’s battlefield."
+    },
+    {
+      "latin": "proeliātor, proeliātōris m.",
+      "status": "alternative",
+      "period": "post-classical",
+      "gloss": "a fighter, a combatant",
+      "evidence": [
+        "Tac. Ann. 2.73 (Lewis &amp; Short: “post-Aug.”)",
+        "Traupman 186"
+      ]
     }
   ],
   "phrases": [
@@ -55,6 +70,21 @@
       "latin": "pugnā … magnā victī sumus",
       "english": "we have been beaten in a great battle",
       "source": "Liv. 22.7.8"
+    },
+    {
+      "latin": "proelium secundum",
+      "english": "a successful battle",
+      "source": "Traupman 185"
+    },
+    {
+      "latin": "proelium facere",
+      "english": "to fight a battle",
+      "source": "Traupman 185"
+    },
+    {
+      "latin": "comminus pugnāre",
+      "english": "to fight hand to hand",
+      "source": "Traupman 186 (<span lang=\"la\">comminus</span>)"
     }
   ],
   "related": [
@@ -68,11 +98,13 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/proelium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: proelium</a> · <a href=\"https://logeion.uchicago.edu/pugna\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pugna</a> · <a href=\"https://logeion.uchicago.edu/acies\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: acies</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 185, checked against the searchable text of the book (9 November 2026).",
-    "Quotations from the Latinitas loci collections (loci-livius), checked against the editions named there."
+    "Quotations from the Latinitas loci collections (loci-livius), checked against the editions named there.",
+    "<a href=\"https://logeion.uchicago.edu/proeliator\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: proeliator</a> · <a href=\"https://logeion.uchicago.edu/comminus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: comminus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 185–186, each phrase checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

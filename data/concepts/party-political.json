@@ -6,7 +6,8 @@
   "also": [
     "political party",
     "faction",
-    "side"
+    "side",
+    "join a party"
   ],
   "domain": "res-publica",
   "terms": [
@@ -29,7 +30,7 @@
       "gloss": "a faction, a clique",
       "evidence": [
         "Sall. Jug. 31.15: <span lang=\"la\">inter malōs factiō est</span>",
-        "Traupman 356"
+        "Traupman 179, 356"
       ],
       "comment": "Classically mostly a word of reproach: the few and their partisans (Lewis &amp; Short)."
     },
@@ -40,6 +41,15 @@
       "gloss": "a political party",
       "evidence": [
         "M-O s.v. political party, citing Egger and earlier writers"
+      ]
+    },
+    {
+      "latin": "partī sē adjungere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "join a party",
+      "evidence": [
+        "Traupman 179"
       ]
     }
   ],
@@ -64,11 +74,12 @@
     "<a href=\"https://logeion.uchicago.edu/pars\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pars</a> · <a href=\"https://logeion.uchicago.edu/factio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: factio</a> · <a href=\"https://logeion.uchicago.edu/politicus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: politicus</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 179, 356, checked against the searchable text of the book (9 November 2026).",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. political party.",
-    "Cicero’s letters and Sallust’s <em>Jugurtha</em> checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+    "Cicero’s letters and Sallust’s <em>Jugurtha</em> checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "<a href=\"https://logeion.uchicago.edu/adjungo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: adjungo</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

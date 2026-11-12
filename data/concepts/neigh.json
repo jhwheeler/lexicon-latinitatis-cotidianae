@@ -3,7 +3,9 @@
   "english": "neigh",
   "pos": "verb",
   "also": [
-    "whinny"
+    "whinny",
+    "neigh at",
+    "neighing"
   ],
   "domain": "natura",
   "terms": [
@@ -15,18 +17,42 @@
         "Traupman 143",
         "Quint. 7.3.3"
       ]
+    },
+    {
+      "latin": "adhinniō, adhinnīre, adhinnīvī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "to neigh at, neigh after",
+      "grammar": "verb, fourth conjugation, with the dative or ad + accusative",
+      "evidence": [
+        "Ov. Rem. Am. 634: <span lang=\"la\">fortis equus vīsae semper adhinnit equae</span> (Lewis &amp; Short)",
+        "Traupman 143"
+      ]
+    },
+    {
+      "latin": "hinnītus, hinnītūs m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a neigh, neighing",
+      "evidence": [
+        "Cic. Div. 1.73: <span lang=\"la\">subitō exaudīvit hinnītum</span> (Lewis &amp; Short)",
+        "Traupman 143"
+      ]
     }
   ],
   "related": [
     "horse"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/hinnitus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: hinnitus</a>",
+    "<a href=\"https://logeion.uchicago.edu/adhinnio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: adhinnio</a>",
     "<a href=\"https://logeion.org/hinnio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: hinnio</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 143."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 143.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

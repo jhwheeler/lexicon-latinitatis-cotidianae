@@ -15,7 +15,10 @@
     {
       "latin": "autocīnētum",
       "status": "alternative",
-      "period": "modern"
+      "period": "modern",
+      "evidence": [
+        "Traupman 213, 215: used interchangeably with autoraeda"
+      ]
     },
     {
       "latin": "raeda, raedae f.",
@@ -27,6 +30,16 @@
         "Andresian p. 40"
       ],
       "comment": "Classically a four-wheeled travelling carriage, a Gaulish word (Quint. 1.5.57; Caes. BG 1.51.2; Cic. Mil. 28, all from Lewis &amp; Short). Traupman and Andresian use it for the car itself; <span lang=\"la\">autoraeda</span> says which kind of carriage."
+    },
+    {
+      "latin": "currus, currūs m.",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "car (Traupman’s general word)",
+      "evidence": [
+        "Traupman 215"
+      ],
+      "comment": "Classically a chariot or a light carriage (Lewis &amp; Short); Traupman uses it for a car, and the lexicon for a railway carriage (see carriage)."
     }
   ],
   "phrases": [
@@ -34,6 +47,61 @@
       "latin": "Nec autoraedā, nam nimis longum est iter",
       "english": "Nor by car, for the journey is too long",
       "source": "Libellus I, <span lang=\"la\">Iter in Lūsitāniam</span>"
+    },
+    {
+      "latin": "autoraedam (currum) gubernāre (agere)",
+      "english": "to drive a car",
+      "source": "Traupman 215"
+    },
+    {
+      "latin": "autoraedam comparāre",
+      "english": "to get (buy) a car",
+      "source": "Traupman 215"
+    },
+    {
+      "latin": "autoraedam intrōgredī",
+      "english": "to get into a car",
+      "source": "Traupman 215"
+    },
+    {
+      "latin": "autoraedā (currū) īre",
+      "english": "to go by car",
+      "source": "Traupman 215"
+    },
+    {
+      "latin": "autoraedā in urbem sē cōnferre",
+      "english": "to go to town by car",
+      "source": "Traupman 215"
+    },
+    {
+      "latin": "autoraedā aliquem locum petere",
+      "english": "to head somewhere in a car",
+      "source": "Traupman 215"
+    },
+    {
+      "latin": "autoraedam sistere",
+      "english": "to stop the car",
+      "source": "Traupman 215"
+    },
+    {
+      "latin": "aliquem autoraedā dūcere",
+      "english": "to take someone by car",
+      "source": "Traupman 215"
+    },
+    {
+      "latin": "aliquem domum autoraedā addūcere",
+      "english": "to drive someone home",
+      "source": "Traupman 215, 216"
+    },
+    {
+      "latin": "Estne autocīnētum nostrum adhūc in officīnā reparātōriā?",
+      "english": "Is our car still at the repair shop?",
+      "source": "Traupman 213"
+    },
+    {
+      "latin": "Istuc autocīnētum est ingēns molestia!",
+      "english": "That car is a big pain in the neck!",
+      "source": "Traupman 214"
     }
   ],
   "related": [
@@ -50,7 +118,9 @@
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: p. 215, checked against the searchable text of the book on 29 October 2026.",
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 286, checked against the searchable text of the book (11 November 2026).",
-    "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 40."
+    "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 40.",
+    "<a href=\"https://logeion.uchicago.edu/currus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: currus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 213–216, each phrase checked against the searchable text of the book."
   ],
   "replaces": [
     "entry-219",
@@ -58,7 +128,21 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "automobile",
+    "drive a car",
+    "buy a car",
+    "get a car",
+    "go by car",
+    "go to town by car",
+    "drive somewhere",
+    "stop the car",
+    "take someone by car",
+    "give someone a lift",
+    "drive someone home",
+    "take someone home in a car"
+  ]
 }

@@ -7,7 +7,16 @@
     "keen",
     "keen to",
     "keenly",
-    "keenness"
+    "keenness",
+    "vigorous",
+    "cheerful",
+    "active",
+    "alert",
+    "liveliness",
+    "cheerfulness",
+    "eager for",
+    "fond of",
+    "eagerly"
   ],
   "domain": "sermo",
   "terms": [
@@ -17,8 +26,37 @@
       "period": "classical",
       "gloss": "eager, lively",
       "evidence": [
-        "Traupman 149"
+        "Traupman 149, 155, 159, 150"
       ]
+    },
+    {
+      "latin": "alacritās, alacritātis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "liveliness, eagerness, cheerfulness",
+      "evidence": [
+        "Traupman 150, 155"
+      ]
+    },
+    {
+      "latin": "cupidus, cupida, cupidum (+ genitive)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "eager for, fond of",
+      "grammar": "adjective, with the genitive of what is wanted",
+      "evidence": [
+        "Traupman 152, 153"
+      ]
+    },
+    {
+      "latin": "cupienter",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "eagerly",
+      "evidence": [
+        "Traupman 152"
+      ],
+      "comment": "Lewis &amp; Short: early Latin (Plautus) and late."
     }
   ],
   "phrases": [
@@ -33,13 +71,16 @@
     "interest-curiosity"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/cupio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cupio</a>",
+    "<a href=\"https://logeion.uchicago.edu/cupidus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cupidus</a>",
+    "<a href=\"https://logeion.uchicago.edu/alacritas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: alacritas</a>",
     "<a href=\"https://logeion.uchicago.edu/alacer\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: alacer</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 149, checked against the searchable text of the book (29 October 2026).",
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

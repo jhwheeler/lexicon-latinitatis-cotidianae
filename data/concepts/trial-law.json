@@ -8,7 +8,9 @@
     "stand trial",
     "put on trial",
     "bring to trial",
-    "go on trial"
+    "go on trial",
+    "be on trial for one’s life",
+    "conduct a trial"
   ],
   "domain": "res-publica",
   "terms": [
@@ -45,6 +47,21 @@
       "latin": "Jūdicium nōtum fīēbat.",
       "english": "A famous trial was being held.",
       "source": "Traupman 190"
+    },
+    {
+      "latin": "quaestiōnem exercēre",
+      "english": "to conduct a trial",
+      "source": "Traupman 197; cf. Cic. Fin. 2.54: quaestiōnem inter sīcāriōs (Lewis &amp; Short s.v. <span lang=\"la\">exerceō</span>)"
+    },
+    {
+      "latin": "jūdicium dē capite subīre",
+      "english": "to be on trial for one’s life",
+      "source": "Traupman 197"
+    },
+    {
+      "latin": "in jūs īre",
+      "english": "to go to court, go on trial",
+      "source": "Traupman 197; cf. Nep. Att. 6.4 (Lewis &amp; Short s.v. <span lang=\"la\">jūs</span>)"
     }
   ],
   "related": [
@@ -59,11 +76,13 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/judicium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: judicium</a> · <a href=\"https://logeion.uchicago.edu/quaestio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quaestio</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 190, 197, checked against the searchable text of the book (9 November 2026).",
-    "Cicero checked against the Latin Library text (<a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">CLTK mirror</a>, 9 November 2026)."
+    "Cicero checked against the Latin Library text (<a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">CLTK mirror</a>, 9 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 190–197, each phrase checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

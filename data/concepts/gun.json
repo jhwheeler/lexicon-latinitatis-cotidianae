@@ -12,7 +12,10 @@
     "fire a gun",
     "toy gun",
     "shotgun",
-    "hunting gun"
+    "hunting gun",
+    "shoot (a person)",
+    "artillery",
+    "guns (artillery)"
   ],
   "domain": "res-publica",
   "terms": [
@@ -23,7 +26,8 @@
       "gloss": "a gun, a rifle",
       "evidence": [
         "Traupman 52, 324",
-        "M-O s.v. gun, rifle, musket (Ducrue 1784)"
+        "M-O s.v. gun, rifle, musket (Ducrue 1784)",
+        "Traupman 187: rifle"
       ],
       "comment": "From Italian <em>schioppetto</em>, in Latin since the Renaissance (M-O). A hunting rifle is <span lang=\"la\">sclopētum vēnātōrium</span> (M-O, Egger); a pistol <span lang=\"la\">sclopētum minus</span> (M-O, Busbecq). To fire a gun is <span lang=\"la\">sclopētāre</span> (Traupman 324) or <span lang=\"la\">sclopētum displōdere</span> (M-O s.v. shoot)."
     },
@@ -49,7 +53,8 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/tormentum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tormentum</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 52, 187, 324, checked against the searchable text of the book (11 November 2026); p. 48.",
-    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: Adumbratio</a>, s.v. gun, cannon, shoot."
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: Adumbratio</a>, s.v. gun, cannon, shoot.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 187–188, each phrase checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
@@ -66,6 +71,16 @@
       "latin": "focīle bifistulātum",
       "english": "a shotgun",
       "source": "Traupman 48"
+    },
+    {
+      "latin": "aliquem sclopētō trānsfīgere",
+      "english": "to shoot someone",
+      "source": "Traupman 188"
+    },
+    {
+      "latin": "tormenta, tormentōrum n. pl.",
+      "english": "artillery",
+      "source": "Traupman 185"
     }
   ]
 }

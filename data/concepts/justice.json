@@ -7,7 +7,8 @@
     "fairness",
     "equity",
     "righteousness",
-    "just"
+    "just",
+    "injustice"
   ],
   "also_under": [
     "res-publica"
@@ -21,7 +22,8 @@
       "gloss": "justice",
       "evidence": [
         "Cic. Off. 1.20: <span lang=\"la\">jūstitiae prīmum mūnus est ut nē cui quis noceat nisi lacessītus injūriā</span>",
-        "Traupman 155, 195"
+        "Traupman 155, 195",
+        "Traupman 195"
       ],
       "comment": "Justice as a virtue: <span lang=\"la\">cōnstāns et perpetua voluntās jūs suum cuique tribuendī</span> (Just. Inst. 1.1.1, Lewis &amp; Short). In the Vulgate also righteousness. Injustice is <span lang=\"la\">injūstitia</span> (Traupman 154). The courts and the law are <span lang=\"la\">jūdicia</span> and <span lang=\"la\">jūs</span> (see court, law)."
     },
@@ -31,9 +33,20 @@
       "period": "classical",
       "gloss": "fairness, equity",
       "evidence": [
-        "Cic. de Or. 1.240: <span lang=\"la\">prō aequitāte contrā jūs dīcere</span> (Lewis &amp; Short)"
+        "Cic. de Or. 1.240: <span lang=\"la\">prō aequitāte contrā jūs dīcere</span> (Lewis &amp; Short)",
+        "Traupman 152"
       ],
       "comment": "Fair dealing, which looks to goodwill where <span lang=\"la\">jūstitia</span> gives only what is strictly due, so that one can plead it against the letter of the law; sometimes simply justice. Its first sense is evenness, and <span lang=\"la\">aequitās animī</span> is calm of mind (Lewis &amp; Short)."
+    },
+    {
+      "latin": "injūstitia, injūstitiae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "injustice",
+      "evidence": [
+        "Cic. Off. 1.23 (Lewis &amp; Short)",
+        "Traupman 154"
+      ]
     }
   ],
   "phrases": [
@@ -63,13 +76,15 @@
     "court-law"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/injustitia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: injustitia</a>",
     "<a href=\"https://logeion.uchicago.edu/justitia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: justitia</a> · <a href=\"https://logeion.uchicago.edu/aequitas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aequitas</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 154, 155, 195, checked against the searchable text of the book (11 November 2026).",
-    "Quotations from the Latinitas loci collections (loci-cicero-philosophica, loci-plinius, loci-augustinus), checked against the editions named there."
+    "Quotations from the Latinitas loci collections (loci-cicero-philosophica, loci-plinius, loci-augustinus), checked against the editions named there.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

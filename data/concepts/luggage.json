@@ -5,7 +5,13 @@
   "also": [
     "baggage",
     "pack",
-    "bundle"
+    "bundle",
+    "piece of luggage",
+    "check luggage",
+    "check in luggage",
+    "baggage check",
+    "left luggage",
+    "what luggage do you have?"
   ],
   "domain": "vectura",
   "terms": [
@@ -14,14 +20,18 @@
       "status": "recommended",
       "period": "classical",
       "evidence": [
-        "Traupman 217"
+        "Traupman 217",
+        "Traupman 211, 215, 217"
       ]
     },
     {
       "latin": "sarcina, sarcinae f.",
       "status": "alternative",
       "period": "classical",
-      "gloss": "pack, bundle"
+      "gloss": "pack, bundle",
+      "evidence": [
+        "Traupman 217: piece of luggage"
+      ]
     }
   ],
   "related": [
@@ -33,7 +43,8 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/sarcina\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sarcina</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: p. 217, checked against the searchable text of the book on 29 October 2026."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: p. 217, checked against the searchable text of the book on 29 October 2026.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 211–217, each phrase checked against the searchable text of the book."
   ],
   "replaces": [
     "entry-216",
@@ -41,7 +52,24 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "sarcinās mandāre",
+      "english": "to check one’s luggage",
+      "source": "Traupman 215"
+    },
+    {
+      "latin": "cūrātiō sarcinārum",
+      "english": "the baggage check",
+      "source": "Traupman 211, 215"
+    },
+    {
+      "latin": "Quās sarcinās tēcum habēs?",
+      "english": "What luggage do you have with you?",
+      "source": "Traupman 211"
+    }
+  ]
 }

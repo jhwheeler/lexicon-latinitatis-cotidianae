@@ -9,7 +9,30 @@
       "status": "recommended",
       "period": "classical",
       "gloss": "ride (in or on a vehicle)",
-      "comment": "An ancient verb used for toy vehicles."
+      "comment": "An ancient verb used for toy vehicles.",
+      "evidence": [
+        "Traupman 218: ride (a car, plane, train), with the ablative"
+      ]
+    },
+    {
+      "latin": "vectiō, vectiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a ride, a being carried",
+      "evidence": [
+        "Cic. N.D. 2.151: <span lang=\"la\">quadrupedum vectiōnēs</span> (Lewis &amp; Short)",
+        "Traupman 218"
+      ]
+    },
+    {
+      "latin": "gestātiō, gestātiōnis f.",
+      "status": "alternative",
+      "period": "post-classical",
+      "gloss": "a ride or drive for pleasure",
+      "evidence": [
+        "Lewis &amp; Short s.v. <span lang=\"la\">gestātiō</span>: a riding, driving or sailing for pleasure (not ante-Augustan)",
+        "Traupman 215, 218"
+      ]
     }
   ],
   "related": [
@@ -18,11 +41,27 @@
     "pull"
   ],
   "sources": [
-    "<a href=\"https://www.alatius.com/ls/index.php?l=vehor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vehor</a>"
+    "<a href=\"https://www.alatius.com/ls/index.php?l=vehor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vehor</a>",
+    "<a href=\"https://logeion.uchicago.edu/vectio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vectio</a> · <a href=\"https://logeion.uchicago.edu/gestatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gestatio</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 215, 218, each phrase checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "go for a ride",
+    "take a ride",
+    "go for a drive",
+    "a ride"
+  ],
+  "phrases": [
+    {
+      "latin": "gestātiōnem autocīnētō facere",
+      "english": "to go for a ride in a car",
+      "source": "Traupman 215, 218"
+    }
+  ]
 }

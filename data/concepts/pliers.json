@@ -14,7 +14,10 @@
       "period": "classical",
       "gloss": "tongs or pincers",
       "grammar": "noun, third declension",
-      "comment": "The strongest ancient basis for ordinary modern pliers."
+      "comment": "Tongs, pincers, forceps: the smith’s tongs (Verg. G. 4.175) and the surgeon’s (Lewis &amp; Short). The clearest ancient word for a tool that grips.",
+      "evidence": [
+        "Traupman 165"
+      ]
     },
     {
       "latin": "flexibulum, -ī n.",
@@ -35,10 +38,13 @@
     },
     {
       "latin": "forfex, forficis f.",
-      "status": "avoid",
+      "status": "alternative",
       "period": "classical",
-      "gloss": "shears, scissors",
-      "comment": "Primarily denotes shears or scissors in ancient usage. It does occur as one later proposal for a wrench, but we do not use it as our generic word for pliers."
+      "gloss": "shears, scissors; in Celsus, a gripping forceps",
+      "comment": "Usually shears or scissors (Lewis &amp; Short), and Servius draws the line: <span lang=\"la\">forficēs sunt quibus incīdimus, forcipēs quibus aliquid firmum tenēmus</span> (on Verg. A. 8.453, quoted by Lewis &amp; Short). But Celsus, as Marx prints him, pulls teeth with a <span lang=\"la\">forfex</span>, and has a special one for roots, which he says has a Greek name (7.12.1). Lewis &amp; Short cites the same chapter under <span lang=\"la\">forceps</span>, after editions that read <span lang=\"la\">forcipe</span>: the two words were confused by copyists, and Vitruvius 10.2 has both readings. So <span lang=\"la\">forfex</span> for a gripping tool has ancient warrant, but <span lang=\"la\">forceps</span> is the unambiguous word.",
+      "evidence": [
+        "Cels. 7.12.1: <span lang=\"la\">tum, sī fierī potest, manū; sī minus, forfice, dēns excipiendus est</span>"
+      ]
     }
   ],
   "phrases": [
@@ -59,14 +65,15 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/forceps\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: forceps</a> · <a href=\"https://logeion.uchicago.edu/forfex\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: forfex</a> · <a href=\"https://neolatinlexicon.org/latin/pliers_pincers/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: pliers / pincers</a> · <a href=\"https://neolatinlexicon.org/latin/wrench/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: wrench</a>",
-    "The example sentences marked “composed” are ours."
+    "The example sentences marked “composed” are ours.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 165, each phrase checked against the searchable text of the book."
   ],
   "replaces": [
     "entry-101"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

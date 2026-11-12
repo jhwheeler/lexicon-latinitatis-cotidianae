@@ -8,14 +8,19 @@
     "woof woof",
     "woof-woof",
     "bow-wow",
-    "bow wow"
+    "bow wow",
+    "bark at",
+    "barking"
   ],
   "domain": "natura",
   "terms": [
     {
       "latin": "lātrō, lātrāre",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "evidence": [
+        "Traupman 142"
+      ]
     },
     {
       "latin": "bau bau",
@@ -35,6 +40,26 @@
         "Lucr. 5.1071 (Lewis &amp; Short)"
       ],
       "comment": "Of dogs left alone in an empty house; Lewis &amp; Short sets it against <span lang=\"la\">lātrāre</span>, to bark angrily."
+    },
+    {
+      "latin": "allātrō, allātrāre, allātrāvī, allātrātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "to bark at",
+      "evidence": [
+        "Traupman 142"
+      ],
+      "comment": "Lewis &amp; Short: not before the Augustan period, and then mostly of people, “to assail with harsh words”."
+    },
+    {
+      "latin": "lātrātus, lātrātūs m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a bark, barking",
+      "evidence": [
+        "Verg. G. 3.411: <span lang=\"la\">latrātū turbābis agēns</span> (Lewis &amp; Short)",
+        "Traupman 142"
+      ]
     }
   ],
   "phrases": [
@@ -55,13 +80,17 @@
     "howl"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/latratus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: latratus</a>",
+    "<a href=\"https://logeion.uchicago.edu/allatro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: allatro</a>",
     "<a href=\"https://logeion.uchicago.edu/latro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: latro</a> · <a href=\"https://logeion.uchicago.edu/baubor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: baubor</a>",
     "Phaedrus from the Latinitas loci collection (loci-phaedrus).",
-    "The example sentence marked “composed” is ours."
+    "The example sentence marked “composed” is ours.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, each phrase checked against the searchable text of the book.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

@@ -6,7 +6,20 @@
   "also": [
     "lawsuit",
     "legal case",
-    "court case"
+    "court case",
+    "lose a case",
+    "win a case",
+    "plead a case",
+    "settle out of court",
+    "try a case",
+    "civil case",
+    "criminal case",
+    "sue",
+    "bring a lawsuit against",
+    "file a lawsuit",
+    "suit",
+    "bring a suit against",
+    "plead a case before the court"
   ],
   "domain": "res-publica",
   "terms": [
@@ -33,6 +46,16 @@
         "Traupman 194–195"
       ],
       "comment": "Properly a quarrel, then a quarrel taken to court: <span lang=\"la\">lītem alicui intendere</span>, to bring a lawsuit against someone (Cic. de Or. 1.42, Lewis &amp; Short; Traupman 195)."
+    },
+    {
+      "latin": "āctiō, āctiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a suit, an action at law",
+      "evidence": [
+        "Cic. Mil. 36: <span lang=\"la\">āctiōnem alicui intendere</span> (Lewis &amp; Short s.v. <span lang=\"la\">āctiō</span>)",
+        "Traupman 197"
+      ]
     }
   ],
   "phrases": [
@@ -50,6 +73,51 @@
       "latin": "Estne causa prīvāta an causa pūblica?",
       "english": "Is it a civil case or a criminal case?",
       "source": "Traupman 192"
+    },
+    {
+      "latin": "causam agere",
+      "english": "to plead a case",
+      "source": "Traupman 194"
+    },
+    {
+      "latin": "causam prō tribūnālī agere",
+      "english": "to plead a case before the court",
+      "source": "Traupman 196"
+    },
+    {
+      "latin": "causam perdere",
+      "english": "to lose a case",
+      "source": "Traupman 194"
+    },
+    {
+      "latin": "causā (jūdiciō) vincere",
+      "english": "to win a case",
+      "source": "Traupman 194; cf. Cic. Rosc. Com. 53: vincere jūdiciō (Lewis &amp; Short s.v. <span lang=\"la\">vincō</span>)"
+    },
+    {
+      "latin": "lītem compōnere",
+      "english": "to settle a case (out of court)",
+      "source": "Traupman 194"
+    },
+    {
+      "latin": "causam cognōscere (dē + abl.)",
+      "english": "to try a case (of the judge)",
+      "source": "Traupman 197; cf. Quint. 4.1.3 (Lewis &amp; Short s.v. <span lang=\"la\">cognōscō</span>)"
+    },
+    {
+      "latin": "lītem alicui intendere",
+      "english": "to bring a lawsuit against someone",
+      "source": "Traupman 195; Lewis &amp; Short s.v. <span lang=\"la\">intendō</span>"
+    },
+    {
+      "latin": "lītem alicui īnferre",
+      "english": "to sue someone",
+      "source": "Traupman 196"
+    },
+    {
+      "latin": "āctiōnem alicui intendere",
+      "english": "to bring a suit against someone",
+      "source": "Traupman 197; cf. Cic. Mil. 36 (Lewis &amp; Short s.v. <span lang=\"la\">āctiō</span>)"
     }
   ],
   "related": [
@@ -59,11 +127,14 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/causa\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: causa</a> · <a href=\"https://logeion.uchicago.edu/lis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lis</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 192, 194–195, checked against the searchable text of the book (9 November 2026).",
-    "Phaedrus and Horace’s <em>Ars poetica</em> checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+    "Phaedrus and Horace’s <em>Ars poetica</em> checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "<a href=\"https://logeion.uchicago.edu/actio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: actio</a> · <a href=\"https://logeion.uchicago.edu/intendo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: intendo</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 194–197, each phrase checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

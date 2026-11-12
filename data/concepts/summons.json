@@ -1,0 +1,55 @@
+{
+  "id": "summons",
+  "english": "summons",
+  "pos": "noun",
+  "also": [
+    "serve a summons on",
+    "summon to court",
+    "impeach"
+  ],
+  "domain": "res-publica",
+  "audience": "adult",
+  "terms": [
+    {
+      "latin": "diem dīcere (alicui)",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "to name a day for someone’s trial, to summon or impeach him",
+      "evidence": [
+        "Cic. Mil. 36: <span lang=\"la\">diem mihi, crēdō, dīxerat</span> (Lewis &amp; Short s.v. <span lang=\"la\">diēs</span>)"
+      ]
+    },
+    {
+      "latin": "diem dare (alicui)",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "to serve a summons on someone",
+      "evidence": [
+        "Traupman 196"
+      ],
+      "comment": "Traupman’s phrase. We have found no classical instance of <span lang=\"la\">diem dare</span> in this sense; the classical phrase is <span lang=\"la\">diem dīcere</span>."
+    },
+    {
+      "latin": "in jūs vocāre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "to summon (a defendant) to court",
+      "evidence": [
+        "Ter. Ph. 936: <span lang=\"la\">in jūs ambulā</span> (see court)"
+      ]
+    }
+  ],
+  "related": [
+    "court-law",
+    "charge-accusation"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/dies\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dies</a> · <a href=\"https://logeion.uchicago.edu/voco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: voco</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 196, each phrase checked against the searchable text of the book."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-12",
+    "by": "Claude"
+  }
+}

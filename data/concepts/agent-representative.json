@@ -7,7 +7,10 @@
     "agents",
     "representative",
     "sales agent",
-    "act through an agent"
+    "act through an agent",
+    "travelling salesman",
+    "traveling salesman",
+    "pedlar"
   ],
   "also_under": [
     "labor"
@@ -32,8 +35,19 @@
       "gloss": "one who sells goods for another; a hawker",
       "evidence": [
         "Liv. 22.25.19: <span lang=\"la\">ipsum īnstitōrem mercis</span>",
-        "Hor. Epod. 17.20 (Lewis &amp; Short)"
+        "Hor. Epod. 17.20 (Lewis &amp; Short)",
+        "Traupman 169"
       ]
+    },
+    {
+      "latin": "vicārius, vicāriī m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a substitute, deputy; in Traupman, an elected representative",
+      "evidence": [
+        "Traupman 180"
+      ],
+      "comment": "Classically one who takes another’s place (Lewis &amp; Short)."
     }
   ],
   "phrases": [
@@ -54,11 +68,13 @@
     "<a href=\"https://logeion.uchicago.edu/procurator\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: procurator</a> · <a href=\"https://logeion.uchicago.edu/institor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: institor</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 169, 219, checked against the searchable text of the book (9 November 2026).",
     "Cicero, <em>Pro Caecina</em>, and Livy 22 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
-    "Citations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them and have not been checked against an edition."
+    "Citations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them and have not been checked against an edition.",
+    "<a href=\"https://logeion.uchicago.edu/vicarius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vicarius</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

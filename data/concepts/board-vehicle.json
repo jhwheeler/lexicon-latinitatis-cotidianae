@@ -3,14 +3,20 @@
   "english": "board",
   "pos": "verb",
   "also": [
-    "board the train"
+    "board the train",
+    "get on",
+    "get on the bus",
+    "get on the plane"
   ],
   "domain": "vectura",
   "terms": [
     {
       "latin": "īnscendō, īnscendere, īnscendī, īnscēnsum",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "evidence": [
+        "Traupman 212, 215, 216: get on (a bus, plane, ship, train), <span lang=\"la\">īnscendere in</span> + acc."
+      ]
     },
     {
       "latin": "in trāmen īnscendere",
@@ -29,11 +35,19 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/inscendo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: inscendo</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: p. 215, checked against the searchable text of the book on 29 October 2026."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: p. 215, checked against the searchable text of the book on 29 October 2026.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 212–216, each phrase checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "Quam mox mihi licet trāmen ferriviārium īnscendere?",
+      "english": "How soon may I board the train?",
+      "source": "Traupman 212"
+    }
+  ]
 }

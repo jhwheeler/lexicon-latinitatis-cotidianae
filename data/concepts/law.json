@@ -6,7 +6,17 @@
     "laws",
     "the law",
     "against the law",
-    "by law"
+    "by law",
+    "statute",
+    "in accordance with the law",
+    "according to the law",
+    "pass a law",
+    "ratify a bill",
+    "reject a bill",
+    "spirit of the law",
+    "break the law",
+    "enforce the law",
+    "throw the book at someone"
   ],
   "domain": "res-publica",
   "terms": [
@@ -17,7 +27,8 @@
       "gloss": "a law; in the plural, the laws",
       "evidence": [
         "Tac. Germ. 19.5: <span lang=\"la\">bonae lēgēs</span>",
-        "Traupman 179–180, 195"
+        "Traupman 178, 179, 180, 195",
+        "Traupman 195: against the law, <span lang=\"la\">contrā lēgem</span>; by law, <span lang=\"la\">lēge</span>"
       ],
       "comment": "A particular law, passed by the people: <span lang=\"la\">lēgem ferre</span>, to propose a law (Traupman 180); <span lang=\"la\">contrā lēgem</span>, against a law; <span lang=\"la\">lēge</span>, by law (Traupman 195)."
     },
@@ -49,6 +60,61 @@
       "latin": "ex quō illud ‘summum jūs summa injūria’ factum est jam trītum sermōne prōverbium",
       "english": "hence “the strictest law is the greatest injustice” has become a common proverb",
       "source": "Cic. Off. 1.33"
+    },
+    {
+      "latin": "lēge",
+      "english": "in accordance with the law",
+      "source": "Traupman 179"
+    },
+    {
+      "latin": "secundum lēgem",
+      "english": "according to the law",
+      "source": "Traupman 178"
+    },
+    {
+      "latin": "lēgem perferre",
+      "english": "to pass a law",
+      "source": "Traupman 179"
+    },
+    {
+      "latin": "lēgem jubēre",
+      "english": "to ratify a bill (of the people voting it into law)",
+      "source": "Traupman 180"
+    },
+    {
+      "latin": "lēgem antīquāre",
+      "english": "to reject a bill",
+      "source": "Traupman 180"
+    },
+    {
+      "latin": "voluntās lēgis",
+      "english": "the spirit of the law",
+      "source": "Traupman 180"
+    },
+    {
+      "latin": "contrā jūs (contrā lēgem)",
+      "english": "against the law (against a particular law)",
+      "source": "Traupman 195"
+    },
+    {
+      "latin": "lēgem violāre",
+      "english": "to break the law",
+      "source": "Traupman 195"
+    },
+    {
+      "latin": "lēgem exercēre",
+      "english": "to enforce the law",
+      "source": "Traupman 195; cf. Suet. Caes. 43: lēgem sūmptuāriam (Lewis &amp; Short s.v. <span lang=\"la\">exerceō</span>)"
+    },
+    {
+      "latin": "summō jūre cum aliquō agere",
+      "english": "to throw the book at someone (literally “to deal with him by the full rigour of the law”)",
+      "source": "Traupman 197; cf. Cic. Off. 1.33: summō jūre agere (Lewis &amp; Short s.v. <span lang=\"la\">agō</span>)"
+    },
+    {
+      "latin": "Spērō jūdicem summō jūre cum istīs āctūrum esse.",
+      "english": "I hope the judge throws the book at them.",
+      "source": "Traupman 192"
     }
   ],
   "related": [
@@ -60,11 +126,14 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/lex\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lex</a> · <a href=\"https://logeion.uchicago.edu/jus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: jus</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 179–180, 195, checked against the searchable text of the book (9 November 2026).",
-    "Tacitus from the Latinitas loci collection (loci-tacitus); Cicero’s <em>De officiis</em> checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> and <em>De legibus</em> against the Latin Library text (9 November 2026)."
+    "Tacitus from the Latinitas loci collection (loci-tacitus); Cicero’s <em>De officiis</em> checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> and <em>De legibus</em> against the Latin Library text (9 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 195, each phrase checked against the searchable text of the book.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 192–197, each phrase checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

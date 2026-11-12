@@ -9,7 +9,13 @@
     "advocate",
     "counsel",
     "defence lawyer",
-    "defense lawyer"
+    "defense lawyer",
+    "counsellor",
+    "counselor",
+    "trial lawyer",
+    "appoint an attorney",
+    "serve at the bar",
+    "practise law"
   ],
   "domain": "res-publica",
   "terms": [
@@ -34,7 +40,7 @@
       "evidence": [
         "Quint. 12.1.13 (Lewis &amp; Short)",
         "Plin. <em>Ep.</em> 7.22 (Lewis &amp; Short)",
-        "Traupman 196"
+        "Traupman 167, 196"
       ],
       "comment": "In Cicero’s day a friend called in to stand by a party with advice; from Quintilian on, the pleader himself (Lewis &amp; Short). Traupman’s lawyer for the defence."
     },
@@ -57,9 +63,49 @@
       "evidence": [
         "Cic. <em>de Or.</em> 1.202 (Lewis &amp; Short)",
         "Quint. 12.1.25 (Lewis &amp; Short)",
-        "Traupman 196"
+        "Traupman 167, 196"
       ],
       "comment": "Often contemptuous: the mere pleader, as against the true orator (Lewis &amp; Short). Traupman’s trial lawyer."
+    },
+    {
+      "latin": "cognitor, cognitōris m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "an attorney acting for a party",
+      "evidence": [
+        "Lewis &amp; Short s.v. <span lang=\"la\">cognitor</span>: “an advocate, attorney (acting in the name of the parties)”",
+        "Traupman 193"
+      ]
+    },
+    {
+      "latin": "jūrisperītus, jūrisperītī m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a legal expert, a counsellor",
+      "grammar": "often written as two words, jūris perītus",
+      "evidence": [
+        "Cic. Brut. 81: <span lang=\"la\">et jūris et litterārum … bene perītus</span> (Lewis &amp; Short)",
+        "Traupman 194"
+      ]
+    },
+    {
+      "latin": "dēfēnsor, dēfēnsōris m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the counsel for the defence",
+      "evidence": [
+        "Lewis &amp; Short s.v. <span lang=\"la\">dēfēnsor</span> II",
+        "Traupman 190, 194"
+      ]
+    },
+    {
+      "latin": "āctor causārum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a trial lawyer, a pleader",
+      "evidence": [
+        "Traupman 197"
+      ]
     }
   ],
   "phrases": [
@@ -72,6 +118,26 @@
       "latin": "Jūdicis est semper in causīs vērum sequī, patrōnī nōn numquam vērī simile, etiam sī minus sit vērum, dēfendere",
       "english": "It is always the judge’s part in a trial to follow the truth; the advocate’s, sometimes, to defend what looks like the truth, even if it is less true",
       "source": "Cic. Off. 2.51"
+    },
+    {
+      "latin": "cognitōrem alicui adscrībere",
+      "english": "to appoint an attorney for someone",
+      "source": "Traupman 193"
+    },
+    {
+      "latin": "in jūdiciīs versārī",
+      "english": "to practise at the bar",
+      "source": "Traupman 193"
+    },
+    {
+      "latin": "in forō agere",
+      "english": "to practise at the bar",
+      "source": "Traupman 193"
+    },
+    {
+      "latin": "Dēsīderō jūriscōnsultum. Potesne mihi succurrere?",
+      "english": "I need a lawyer. Can you help me?",
+      "source": "Traupman 192"
     }
   ],
   "related": [
@@ -84,11 +150,14 @@
     "<a href=\"https://logeion.uchicago.edu/jurisconsultus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: jurisconsultus</a> · <a href=\"https://logeion.uchicago.edu/advocatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: advocatus</a> · <a href=\"https://logeion.uchicago.edu/patronus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: patronus</a> · <a href=\"https://logeion.uchicago.edu/causidicus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: causidicus</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 192, 196, checked against the searchable text of the book (9 November 2026).",
     "Enrico Levi and Arturo Bini, <em>Il latino come lingua viva</em> (1937), p. 37, s.v. legale (avvocato).",
-    "Cicero checked against the Latin Library text (<a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">CLTK mirror</a>, 9 November 2026)."
+    "Cicero checked against the Latin Library text (<a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">CLTK mirror</a>, 9 November 2026).",
+    "<a href=\"https://logeion.uchicago.edu/cognitor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cognitor</a> · <a href=\"https://logeion.uchicago.edu/jurisperitus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: jurisperitus</a> · <a href=\"https://logeion.uchicago.edu/defensor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: defensor</a> · <a href=\"https://logeion.uchicago.edu/actor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: actor</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 190–197, each phrase checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

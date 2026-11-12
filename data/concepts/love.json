@@ -11,7 +11,14 @@
     "loving",
     "be mad about",
     "be madly in love with",
-    "be crazy about"
+    "be crazy about",
+    "affection",
+    "affectionate",
+    "be infatuated with",
+    "passionately",
+    "madly in love",
+    "fall in love",
+    "esteem"
   ],
   "domain": "verba",
   "terms": [
@@ -22,7 +29,8 @@
       "gloss": "love",
       "evidence": [
         "Cic. Q. fr. 3.1.7: <span lang=\"la\">nōn enim concēdō tibi plūs ut illum amēs quam ipse amō</span>",
-        "Ter. Ph. 478: <span lang=\"la\">omnēs vōs amō</span>"
+        "Ter. Ph. 478: <span lang=\"la\">omnēs vōs amō</span>",
+        "Traupman 153"
       ],
       "comment": "Of people and of things (<span lang=\"la\">rūs amat</span>, Ov. Met. 14.627). In comedy and Cicero’s letters <span lang=\"la\">amō tē</span> also thanks (<span lang=\"la\">Meritō tē amō</span>, Ter. Ad. 945–946), and <span lang=\"la\">amābō</span> is “please” (see please)."
     },
@@ -32,7 +40,8 @@
       "period": "classical",
       "gloss": "love",
       "evidence": [
-        "Cic. Off. 1.12: <span lang=\"la\">praecipuum quendam amōrem in eōs quī prōcreātī sunt</span>"
+        "Cic. Off. 1.12: <span lang=\"la\">praecipuum quendam amōrem in eōs quī prōcreātī sunt</span>",
+        "Traupman 153, 149"
       ],
       "comment": "Also of the one loved: <span lang=\"la\">dēliciīs atque amōribus meīs</span> (Cic. Att. 16.6.4)."
     },
@@ -45,7 +54,8 @@
         "Catull. 72.4: <span lang=\"la\">sed pater ut gnātōs dīligit et generōs</span>",
         "Cic. Fam. 16.2.1: <span lang=\"la\">quantum mē dīligis</span>",
         "Traupman 98: to be fond of, <span lang=\"la\">dīligō</span>",
-        "Traupman 98: <span lang=\"la\">dīligere</span>, be fond of"
+        "Traupman 98: <span lang=\"la\">dīligere</span>, be fond of",
+        "Traupman 152"
       ],
       "comment": "Lewis &amp; Short: “to value or esteem highly, to love”: the love of regard and choice, as of a father for his children in Catullus."
     },
@@ -57,7 +67,7 @@
       "grammar": "adjective (participle of amō)",
       "evidence": [
         "Lewis &amp; Short, s.v. <span lang=\"la\">amō</span>",
-        "Traupman 155, 342",
+        "Traupman 155, 342, 149",
         "Andresian p. 36"
       ],
       "comment": "Loving and affectionate, often with the genitive and in the superlative: <span lang=\"la\">amantissimus tuī</span>, most devoted to you."
@@ -75,6 +85,18 @@
         "Traupman 103: to be mad about, <span lang=\"la\">dēpereō (+ acc.)</span>"
       ],
       "comment": "Literally “to perish (for someone)”. The person is in the accusative, as the object of the passion: <span lang=\"la\">illam dēperit</span>, he is crazy about her. Lewis &amp; Short: frequent in Plautus, not in Cicero, Virgil, Horace or Ovid."
+    },
+    {
+      "latin": "efflictim amāre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "to love desperately, be infatuated with",
+      "register": "vōx cōmica: Plaut.",
+      "evidence": [
+        "Plaut. Am. 1.3.19: <span lang=\"la\">ut hic tē efflictim dēperit</span> (Lewis &amp; Short)",
+        "Traupman 154, 156"
+      ],
+      "comment": "<span lang=\"la\">Efflictim</span>, “to death, desperately”, goes with <span lang=\"la\">amāre</span> and <span lang=\"la\">dēperīre</span>."
     }
   ],
   "phrases": [
@@ -97,6 +119,11 @@
       "latin": "nōn amō tē, Sabidī, nec possum dīcere quārē: hoc tantum possum dīcere, nōn amō tē",
       "english": "I don’t love you, Sabidius, and I can’t say why; all I can say is this: I don’t love you.",
       "source": "Mart. 1.32.1–2"
+    },
+    {
+      "latin": "Perditē amāre coepit.",
+      "english": "He fell desperately in love.",
+      "source": "Traupman 152"
     }
   ],
   "related": [
@@ -108,6 +135,7 @@
     "please"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/efflictim\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: efflictim</a>",
     "<a href=\"https://logeion.uchicago.edu/amo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: amo</a> · <a href=\"https://logeion.uchicago.edu/amor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: amor</a> · <a href=\"https://logeion.uchicago.edu/diligo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: diligo</a>",
     "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-cicero-philosophica, loci-terentius, loci-catullus, loci-martialis, loci-ovidius), as checked there against the editions they name.",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 98, checked against the searchable text of the book.",

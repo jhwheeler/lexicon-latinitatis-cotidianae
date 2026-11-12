@@ -5,7 +5,9 @@
   "also": [
     "worried",
     "uneasy",
-    "nervous"
+    "nervous",
+    "nervousness",
+    "tense"
   ],
   "domain": "sermo",
   "terms": [
@@ -29,18 +31,51 @@
         "Cic. Fin. 2.55 (Lewis &amp; Short, s.v. <span lang=\"la\">ānxius</span>)"
       ],
       "comment": "The everyday word for being worried about something: <span lang=\"la\">sollicitus sum dē tē</span>."
+    },
+    {
+      "latin": "trepidus, trepida, trepidum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "alarmed, nervous",
+      "evidence": [
+        "Traupman 156"
+      ]
+    },
+    {
+      "latin": "trepidātiō, trepidātiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "alarm, agitation, nervousness",
+      "evidence": [
+        "Traupman 156"
+      ]
+    },
+    {
+      "latin": "intentus, intenta, intentum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "strained, tense",
+      "evidence": [
+        "Traupman 156, 158"
+      ],
+      "comment": "Properly “stretched, intent”; Traupman’s word for nervous and tense."
     }
   ],
   "related": [
     "concern"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/intendo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: intendo</a>",
+    "<a href=\"https://logeion.uchicago.edu/trepidatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: trepidatio</a>",
+    "<a href=\"https://logeion.uchicago.edu/trepidus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: trepidus</a>",
     "<a href=\"https://logeion.uchicago.edu/anxius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: anxius</a> · <a href=\"https://logeion.uchicago.edu/sollicitus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sollicitus</a>",
-    "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 36."
+    "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 36.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, each phrase checked against the searchable text of the book.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

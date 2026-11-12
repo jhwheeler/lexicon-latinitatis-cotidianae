@@ -1,0 +1,62 @@
+{
+  "id": "adverb",
+  "english": "adverb",
+  "pos": "noun",
+  "also": [
+    "adverbs",
+    "adverb of place",
+    "adverb of time",
+    "adverbs of place",
+    "adverbs of time",
+    "interrogative adverb"
+  ],
+  "domain": "schola",
+  "terms": [
+    {
+      "latin": "adverbium, adverbiī n.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "an adverb",
+      "evidence": [
+        "Quint. 1.5.50: <span lang=\"la\">intrō et intus locī adverbia</span>",
+        "Prisc. p. 1003 P.: <span lang=\"la\">pars ōrātiōnis indēclīnābilis, cujus significātiō verbīs adjicitur</span> (Lewis &amp; Short)",
+        "Traupman 220, 231, 245"
+      ],
+      "comment": "The word “added to the verb”, <span lang=\"la\">ad verbum</span>. Its kinds go in the genitive: <span lang=\"la\">adverbium locī</span>, of place (Quintilian’s phrase), <span lang=\"la\">temporis</span>, of time, <span lang=\"la\">numerī</span>, of number (Traupman 231). Adverbs do not decline: <span lang=\"la\">sunt indēclīnābilia</span> (Traupman 232)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "hoc amplius intrō et intus locī adverbia, eō tamen intus et intrō sum soloecismī sunt",
+      "english": "moreover intrō and intus are adverbs of place, yet eō intus and intrō sum are mistakes",
+      "source": "Quint. 1.5.50"
+    },
+    {
+      "latin": "Dā adverbia locī.",
+      "english": "Give some adverbs of place.",
+      "source": "Traupman 231"
+    },
+    {
+      "latin": "Adverbium quid est?",
+      "english": "What is an adverb?",
+      "source": "Traupman 231"
+    }
+  ],
+  "related": [
+    "part-of-speech",
+    "verb",
+    "modify-grammar",
+    "indeclinable"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/adverbium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: adverbium</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 220, p. 231, p. 232, p. 245.",
+    "Quintilian checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>, and cited by its numbering.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-12",
+    "by": "Claude"
+  }
+}

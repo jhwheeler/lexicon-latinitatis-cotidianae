@@ -8,7 +8,9 @@
     "take down",
     "notes",
     "note",
-    "write down"
+    "write down",
+    "make notes",
+    "classroom commands"
   ],
   "domain": "schola",
   "terms": [
@@ -53,19 +55,59 @@
       "evidence": [
         "Traupman 30"
       ]
+    },
+    {
+      "latin": "ēnotō, ēnotāre, ēnotāvī, ēnotātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "note down",
+      "evidence": [
+        "Plin. Ep. 1.6.1: <span lang=\"la\">meditābar aliquid ēnotābamque</span> (Lewis &amp; Short)",
+        "Quint. 1.7.27 (Lewis &amp; Short)",
+        "Traupman 34: take notes, <span lang=\"la\">ēnotā (ēnotāte)</span>"
+      ],
+      "comment": "Post-Augustan and rare, says Lewis &amp; Short: Pliny uses it of jotting down what he thought of while out hunting."
+    },
+    {
+      "latin": "adnotō, adnotāre, adnotāvī, adnotātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "make a note of, write down",
+      "evidence": [
+        "Plin. Ep. 3.5.10: <span lang=\"la\">liber legēbātur, adnotābātur</span> (Lewis &amp; Short s.v. <span lang=\"la\">annotō</span>)"
+      ],
+      "comment": "Lewis &amp; Short prefers the spelling <span lang=\"la\">adn-</span>; only in post-Augustan prose."
     }
   ],
   "related": [
     "notepad",
-    "write"
+    "write",
+    "record-write-down",
+    "comment-note"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/excipio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: excipio</a> · <a href=\"https://logeion.uchicago.edu/commentarius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: commentarius</a> · <a href=\"https://logeion.uchicago.edu/annoto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: annoto</a> · <a href=\"https://logeion.uchicago.edu/nota\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nota</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 30, 32, checked against the searchable text of the book."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 30, 32, checked against the searchable text of the book.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, cited by printed page; each phrase checked against the searchable text of the book.",
+    "<a href=\"https://logeion.uchicago.edu/enoto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: enoto</a>",
+    "<a href=\"https://logeion.uchicago.edu/annoto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: annoto</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "meditābar aliquid ēnotābamque",
+      "english": "I was thinking something over and noting it down",
+      "source": "Plin. Ep. 1.6.1 (Lewis &amp; Short s.v. <span lang=\"la\">ēnotō</span>)"
+    },
+    {
+      "latin": "Ēnotā (ēnotāte).",
+      "english": "Take notes.",
+      "source": "Traupman 34"
+    }
+  ]
 }

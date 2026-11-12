@@ -2,6 +2,11 @@
   "id": "winding",
   "english": "winding",
   "pos": "adjective",
+  "also": [
+    "winding route",
+    "meander",
+    "meandering"
+  ],
   "domain": "natura",
   "terms": [
     {
@@ -11,6 +16,16 @@
       "evidence": [
         "Traupman 207"
       ]
+    },
+    {
+      "latin": "ambitus, ambitūs m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a winding course, circuit",
+      "evidence": [
+        "Hor. AP 17: <span lang=\"la\">aquae per amoenōs ambitus agrōs</span> (Lewis &amp; Short)",
+        "Traupman 207: winding route"
+      ]
     }
   ],
   "phrases": [
@@ -18,6 +33,11 @@
       "latin": "viā flexuōsā, angustā, arduā",
       "english": "by a winding, narrow, steep road",
       "source": "Libellus II, <span lang=\"la\">Sintra: castellum et puteus</span>"
+    },
+    {
+      "latin": "meante cursū",
+      "english": "along a winding course",
+      "source": "Traupman 203, 199"
     }
   ],
   "related": [
@@ -25,11 +45,14 @@
   ],
   "sources": [
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: pp. 204–207, checked against the searchable text of the book on 29 October 2026.",
-    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+    "<a href=\"https://logeion.uchicago.edu/meo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: meo</a>",
+    "<a href=\"https://logeion.uchicago.edu/ambitus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ambitus</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

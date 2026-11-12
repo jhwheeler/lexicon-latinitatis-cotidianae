@@ -37,7 +37,8 @@
         "Liv. 22.46.9: <span lang=\"la\">regiōnis incolae</span>, the people of the area",
         "Plin. NH 3.46: <span lang=\"la\">discrīptiōnemque ab eō factam Ītaliae tōtīus in regiōnēs XI</span>",
         "Traupman 206: region",
-        "Traupman 124"
+        "Traupman 124",
+        "Traupman 206"
       ],
       "comment": "The word for a larger region, and for an administrative one: Augustus divided Italy into eleven <span lang=\"la\">regiōnēs</span> (Plin. NH 3.46) and Rome into fourteen (Plin. NH 3.66)."
     },
@@ -73,6 +74,25 @@
         "M-O s.v. time zone: <span lang=\"la\">zōna temporālis</span> (after Egger)"
       ],
       "comment": "Greek ζώνη, a girdle; classically one of the five belts into which the earth was divided, from torrid to frozen (Lewis &amp; Short). For a zone in a town or on a map (a pedestrian zone, a danger zone) <span lang=\"la\">regiō</span> or <span lang=\"la\">loca</span> says it in classical Latin."
+    },
+    {
+      "latin": "tractus, tractūs m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "tract of land, district, region",
+      "evidence": [
+        "Caes. BC 3.112: <span lang=\"la\">oppidī</span> (Lewis &amp; Short)",
+        "Traupman 202, 203"
+      ]
+    },
+    {
+      "latin": "ager, agrī m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "territory, district (of a town)",
+      "evidence": [
+        "Traupman 203: district"
+      ]
     }
   ],
   "phrases": [
@@ -106,11 +126,14 @@
     "Terence checked against Parry’s edition in the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>, the text the loci collection uses (9 November 2026).",
     "Pliny (NH 3.46, 3.66) checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026).",
     "<a href=\"https://logeion.uchicago.edu/zona\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: zona</a>",
-    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. time zone."
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. time zone.",
+    "<a href=\"https://logeion.uchicago.edu/tractus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tractus</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "<a href=\"https://logeion.uchicago.edu/ager\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ager</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

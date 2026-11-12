@@ -5,7 +5,10 @@
   "also": [
     "translation",
     "translate into Latin",
-    "word for word"
+    "word for word",
+    "translate this sentence",
+    "translate from Latin to English",
+    "translate from English to Latin"
   ],
   "domain": "schola",
   "also_under": [
@@ -33,7 +36,8 @@
       "evidence": [
         "Cic. Opt. Gen. 14: <span lang=\"la\">nec convertī ut interpres, sed ut ōrātor</span> (Lewis &amp; Short)",
         "Cic. Off. 2.87 (Lewis &amp; Short)",
-        "Traupman 32, 249"
+        "Traupman 32, 249",
+        "Traupman 34"
       ],
       "comment": "A translation is <span lang=\"la\">conversiō</span> (Traupman 32) or <span lang=\"la\">interpretātiō</span> (Quint. 2.14.2, Lewis &amp; Short; Morgan–Owens)."
     },
@@ -69,6 +73,17 @@
         "Quint. 8.6.44 (Lewis &amp; Short)",
         "M-O s.v. translate"
       ]
+    },
+    {
+      "latin": "trānslātiō, trānslātiōnis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a translation",
+      "evidence": [
+        "Quint. 1.4.18: <span lang=\"la\">sed haec vidētur ex συνδέσμῳ magis propria trānslātiō</span> (of a term)",
+        "Traupman 249"
+      ],
+      "comment": "The rendering of a word or a text from another language (Quintilian; later Jerome, Augustine). In rhetoric it is also a metaphor (see figurative)."
     }
   ],
   "phrases": [
@@ -86,6 +101,16 @@
       "latin": "nec verbō verbum cūrābis reddere fīdus interpres",
       "english": "nor will you take care, as a faithful translator, to render word for word",
       "source": "Hor. Ars 133–134"
+    },
+    {
+      "latin": "ex Latīnō in Anglicum convertere",
+      "english": "to translate from Latin into English",
+      "source": "Traupman 249"
+    },
+    {
+      "latin": "Converte (convertite) hanc sententiam ex Latīnō in Anglicum.",
+      "english": "Translate this sentence from Latin to English.",
+      "source": "Traupman 34"
     }
   ],
   "related": [
@@ -101,7 +126,10 @@
     "<a href=\"https://logeion.uchicago.edu/verto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: verto</a> · <a href=\"https://logeion.uchicago.edu/converto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: converto</a> · <a href=\"https://logeion.uchicago.edu/transfero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: transfero</a> · <a href=\"https://logeion.uchicago.edu/reddo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: reddo</a> · <a href=\"https://logeion.uchicago.edu/interpretor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: interpretor</a> · <a href=\"https://logeion.uchicago.edu/interpretatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: interpretatio</a>",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. translate; translation.",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 32, 249, checked against the searchable text of the book (9 November 2026).",
-    "Plautus, Horace and Cicero’s <em>De finibus</em> and <em>De oratore</em> checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+    "Plautus, Horace and Cicero’s <em>De finibus</em> and <em>De oratore</em> checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "<a href=\"https://logeion.uchicago.edu/translatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: translatio</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 249.",
+    "Quintilian checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>, and cited by its numbering."
   ],
   "review": {
     "status": "draft",

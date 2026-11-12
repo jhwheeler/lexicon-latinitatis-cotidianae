@@ -1,0 +1,62 @@
+{
+  "id": "parse",
+  "english": "parse",
+  "pos": "verb",
+  "also": [
+    "parsing",
+    "parse a word",
+    "parse a sentence",
+    "analyse a sentence"
+  ],
+  "domain": "schola",
+  "terms": [
+    {
+      "latin": "partēs ōrātiōnis reddere",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "to parse, to say what part of speech each word is",
+      "evidence": [
+        "Quint. 1.8.13: <span lang=\"la\">ut partēs ōrātiōnis reddī sibi solūtō versū dēsīderet</span>"
+      ],
+      "comment": "Quintilian’s grammarian, reading a poem with his pupils, has them break up the verse and give back the parts of speech. Literally “to render the parts of speech”."
+    },
+    {
+      "latin": "proprietātēs dēscrībere",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "to parse, to describe the properties of a word",
+      "grammar": "with the genitive of the word: proprietātēs nōminis, verbī",
+      "evidence": [
+        "Traupman 223, 238, 248"
+      ],
+      "comment": "Traupman’s phrase: <span lang=\"la\">Dēscrībe proprietātēs «magister» nōminis</span>, parse the noun “magister” (223). Classically <span lang=\"la\">proprietās verbōrum</span> is the proper sense of words (Quintilian, Lewis &amp; Short); we have not found the phrase for parsing."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "in praelegendō grammaticus et illa quidem minōra praestāre dēbēbit, ut partēs ōrātiōnis reddī sibi solūtō versū dēsīderet et pedum proprietātēs",
+      "english": "in reading aloud first, the grammarian must also see to smaller things: when the verse has been broken up, he should require the parts of speech to be given back to him, and the qualities of the feet",
+      "source": "Quint. 1.8.13"
+    },
+    {
+      "latin": "Dēscrībāmus nunc proprietātēs dictiōnum in hāc sententiā.",
+      "english": "Let us now parse the words of this sentence.",
+      "source": "Traupman 238"
+    }
+  ],
+  "related": [
+    "part-of-speech",
+    "grammar",
+    "sentence-grammar"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/pars\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pars</a> · <a href=\"https://logeion.uchicago.edu/oratio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: oratio</a> · <a href=\"https://logeion.uchicago.edu/reddo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: reddo</a> · <a href=\"https://logeion.uchicago.edu/proprietas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: proprietas</a> · <a href=\"https://logeion.uchicago.edu/describo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: describo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 223, p. 238, p. 248.",
+    "Quintilian checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>, and cited by its numbering."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-12",
+    "by": "Claude"
+  }
+}

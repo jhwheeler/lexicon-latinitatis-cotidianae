@@ -4,7 +4,11 @@
   "sense": "shut",
   "pos": "verb",
   "also": [
-    "shut"
+    "shut",
+    "close the door",
+    "shut the door",
+    "close a file",
+    "close a window"
   ],
   "also_under": [
     "verba"
@@ -15,6 +19,16 @@
       "latin": "claudō, claudere, clausī, clausum",
       "status": "recommended",
       "period": "classical"
+    },
+    {
+      "latin": "conclūdō, conclūdere, conclūsī, conclūsum",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "close (a file, a program)",
+      "evidence": [
+        "Traupman 260"
+      ],
+      "comment": "Classically “shut up, enclose”; Traupman’s word for closing a file."
     }
   ],
   "phrases": [
@@ -27,6 +41,11 @@
       "latin": "Cum autem redieritis, jānua mea clausa erit; nōlī intrāre, nisi avia tēcum veniet.",
       "english": "But when you come back, my door will be shut; don’t come in unless Grandma comes with you.",
       "source": "Libellus III, <span lang=\"la\">Apud avum et aviam</span>"
+    },
+    {
+      "latin": "Claude (claudite) jānuam.",
+      "english": "Close the door.",
+      "source": "Traupman 33"
     }
   ],
   "related": [
@@ -36,11 +55,14 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/claudo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: claudo</a>",
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026. Examples marked “Libellus” quote those texts word for word.",
-    "The example sentence marked “composed” is ours."
+    "The example sentence marked “composed” is ours.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, cited by printed page; each phrase checked against the searchable text of the book.",
+    "<a href=\"https://logeion.uchicago.edu/janua\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: janua</a>",
+    "<a href=\"https://logeion.uchicago.edu/concludo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: concludo</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

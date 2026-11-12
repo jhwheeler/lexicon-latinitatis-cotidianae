@@ -9,7 +9,10 @@
     "stand in line",
     "wait in line",
     "form a long line",
-    "queue up"
+    "queue up",
+    "form a single line",
+    "form a double line",
+    "line up"
   ],
   "domain": "sermo",
   "terms": [
@@ -20,9 +23,17 @@
       "gloss": "a line, a file of people",
       "grammar": "noun, third declension",
       "evidence": [
-        "Traupman 102: <span lang=\"la\">longum agmen facere</span>, to form a long line"
+        "Traupman 102: <span lang=\"la\">longum agmen facere</span>, to form a long line",
+        "Traupman 33"
       ],
       "comment": "Classically <span lang=\"la\">agmen</span> is “a collected multitude in motion” (Lewis &amp; Short), a column on the march; Traupman uses it for a line of people. Its use for a queue standing still is his, and the phrase is not in Lewis &amp; Short or the loci collections."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Fac (facite) agmen ūnicum (duplex).",
+      "english": "Form a single (double) line.",
+      "source": "Traupman 33"
     }
   ],
   "sources": [

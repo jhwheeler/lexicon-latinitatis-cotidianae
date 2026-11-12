@@ -9,7 +9,8 @@
     "photocopier",
     "copier",
     "make a copy",
-    "photocopying"
+    "photocopying",
+    "copy (of a file)"
   ],
   "domain": "labor",
   "terms": [
@@ -20,7 +21,8 @@
       "gloss": "a copy",
       "evidence": [
         "Asin. Poll. ap. Cic. Fam. 10.31.6: <span lang=\"la\">tibi eārum exemplar mīsī</span> (Lewis &amp; Short)",
-        "Traupman 359: <span lang=\"la\">exemplar phōtotypicum</span>"
+        "Traupman 359: <span lang=\"la\">exemplar phōtotypicum</span>",
+        "Traupman 260"
       ],
       "comment": "A copy of a document, as in Cicero’s letters. Where it matters that a machine made it, Traupman adds <span lang=\"la\">phōtotypicum</span>."
     },
@@ -60,6 +62,11 @@
       "latin": "Duo exemplāria hujus chartae dēscrībe, sīs.",
       "english": "Make two copies of this page, please.",
       "source": "composed"
+    },
+    {
+      "latin": "exemplar facere",
+      "english": "to make a copy",
+      "source": "Traupman 260"
     }
   ],
   "related": [
@@ -74,7 +81,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

@@ -3,14 +3,22 @@
   "english": "blue",
   "pos": "adjective",
   "also": [
-    "dark blue"
+    "dark blue",
+    "sky-blue",
+    "azure",
+    "leaden blue",
+    "sea-blue",
+    "bluish grey"
   ],
   "domain": "sermo",
   "terms": [
     {
       "latin": "caeruleus, caerulea, caeruleum",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "evidence": [
+        "Traupman 251: sky-blue"
+      ]
     },
     {
       "latin": "cȳaneus, cȳanea, cȳaneum",
@@ -19,9 +27,42 @@
       "gloss": "dark blue",
       "evidence": [
         "Plin. NH 10.89; Prud. Psych. 858 (Lewis &amp; Short)",
-        "Andresian p. 50"
+        "Andresian p. 50",
+        "Traupman 251"
       ],
       "comment": "Greek κυάνεος, dark blue, sea-blue; rare in Latin (Lewis &amp; Short)."
+    },
+    {
+      "latin": "līvidus, līvida, līvidum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "leaden blue, bluish",
+      "evidence": [
+        "Verg. A. 6.320: <span lang=\"la\">vada</span> (Lewis &amp; Short)",
+        "Traupman 251"
+      ],
+      "comment": "Also of bruises: black and blue."
+    },
+    {
+      "latin": "venetus, veneta, venetum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "sea-blue, the colour of the Blues in the circus",
+      "evidence": [
+        "Lewis &amp; Short s.v. <span lang=\"la\">Venetī</span>: the Blue faction (Suet. Vit. 14)",
+        "Traupman 251: azure blue; (deep) sea green"
+      ]
+    },
+    {
+      "latin": "caesius, caesia, caesium",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "bluish grey (of eyes)",
+      "evidence": [
+        "Ter. Heaut. 5.5.18: <span lang=\"la\">virgō caesia</span> (Lewis &amp; Short)",
+        "Traupman 251"
+      ],
+      "comment": "Very rare, says Lewis &amp; Short, and only of the eyes."
     }
   ],
   "related": [
@@ -30,11 +71,16 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/caeruleus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: caeruleus</a>",
     "<a href=\"https://logeion.uchicago.edu/cyaneus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cyaneus</a>",
-    "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 50."
+    "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 50.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, cited by printed page; each phrase checked against the searchable text of the book.",
+    "<a href=\"https://logeion.uchicago.edu/lividus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lividus</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "<a href=\"https://logeion.uchicago.edu/Veneti\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: Veneti</a>",
+    "<a href=\"https://logeion.uchicago.edu/caesius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: caesius</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

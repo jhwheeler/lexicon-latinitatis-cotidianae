@@ -7,7 +7,10 @@
     "good memory",
     "bad memory",
     "have a good memory",
-    "from memory"
+    "from memory",
+    "RAM",
+    "ROM",
+    "computer memory"
   ],
   "domain": "verba",
   "terms": [
@@ -19,9 +22,28 @@
       "evidence": [
         "Cic. Brut. 301: <span lang=\"la\">memoria tanta quantam in nūllō cognōvisse mē arbitror</span>",
         "Quint. 1.3.1",
-        "Traupman 344"
+        "Traupman 344",
+        "Traupman 261: memory (of a computer)"
       ],
       "comment": "A good memory: <span lang=\"la\">memoria bona</span> (Cic. Att. 8.4.2); of the person, <span lang=\"la\">bonae memoriae esse</span> (Petr. 66.1), <span lang=\"la\">bonā memoriā esse</span> (Traupman 344) or <span lang=\"la\">memoriā vigēre</span> (Aug. Conf. 1.20.31). From memory: <span lang=\"la\">ex memoriā</span> (Cic. Cat. 3.13, Lewis &amp; Short); to commit to memory, <span lang=\"la\">memoriae mandāre</span> (Traupman 344; see learn by heart)."
+    },
+    {
+      "latin": "memoria volātilis",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "RAM",
+      "evidence": [
+        "Traupman 261"
+      ]
+    },
+    {
+      "latin": "memoria fixa",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "ROM",
+      "evidence": [
+        "Traupman 262"
+      ]
     }
   ],
   "phrases": [
@@ -57,7 +79,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

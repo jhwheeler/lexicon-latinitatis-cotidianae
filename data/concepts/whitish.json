@@ -5,26 +5,54 @@
   "domain": "sermo",
   "terms": [
     {
-      "latin": "subalbus",
+      "latin": "subalbus, subalba, subalbum",
       "status": "recommended",
       "period": "classical",
       "evidence": [
-        "Varr."
+        "Varr. RR 1.9.5: <span lang=\"la\">sabulō</span> (Lewis &amp; Short)",
+        "Traupman 252"
       ],
       "comment": "The prefix <strong lang=\"la\">sub-</strong> makes “-ish”."
+    },
+    {
+      "latin": "albulus, albula, albulum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "whitish",
+      "evidence": [
+        "Catull. 29.8: <span lang=\"la\">columbus</span> (Lewis &amp; Short)",
+        "Traupman 252"
+      ]
+    },
+    {
+      "latin": "subalbidus, subalbida, subalbidum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "rather whitish",
+      "evidence": [
+        "Cels. 5.28.8 (Lewis &amp; Short)",
+        "Traupman 252"
+      ]
     }
   ],
   "related": [
     "white",
     "reddish",
-    "yellowish"
+    "yellowish",
+    "bluish",
+    "greenish",
+    "pinkish"
   ],
   "sources": [
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 252."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 252.",
+    "<a href=\"https://logeion.uchicago.edu/subalbus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: subalbus</a>",
+    "<a href=\"https://logeion.uchicago.edu/albulus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: albulus</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "<a href=\"https://logeion.uchicago.edu/subalbidus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: subalbidus</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

@@ -6,7 +6,9 @@
     "spell",
     "spell a word",
     "orthography",
-    "how do you spell it?"
+    "how do you spell it?",
+    "spell with",
+    "is it spelt with"
   ],
   "domain": "schola",
   "terms": [
@@ -21,7 +23,7 @@
         "Traupman 31, 248",
         "M-O s.v. spelling"
       ],
-      "comment": "The grammarians’ Greek word, ‘the rule and method of writing’ (Suet. Aug. 88.1), which Quintilian renders <span lang=\"la\">rēctē scrībendī scientia</span> (1.7.1); Lewis &amp; Short: post-Augustan. To spell is simply <span lang=\"la\">scrībere</span>: <span lang=\"la\">rēctē scrībere</span>, to spell correctly (Traupman 29, 248). Morgan–Owens: I’m terrible at spelling, <span lang=\"la\">orthographiam haudquāquam calleō</span>."
+      "comment": "The grammarians’ Greek word, ‘the rule and method of writing’ (Suet. Aug. 88.1), which Quintilian renders <span lang=\"la\">rēctē scrībendī scientia</span> (1.7.1); Lewis &amp; Short: post-Augustan. To spell is simply <span lang=\"la\">scrībere</span>: <span lang=\"la\">rēctē scrībere</span>, to spell correctly (Traupman 29, 248). Morgan–Owens: I’m terrible at spelling, <span lang=\"la\">orthographiam haudquāquam calleō</span>. To spell a word with a letter is <span lang=\"la\">scrībere per</span> with the accusative (Quint. 1.7.5; Traupman 248)."
     },
     {
       "latin": "scrīptūra, scrīptūrae f.",
@@ -50,6 +52,16 @@
       "latin": "Quōmodo scrībitur hoc verbum?",
       "english": "How do you spell this word?",
       "source": "composed"
+    },
+    {
+      "latin": "itemque cum, sī tempus significāret, per qu, sī comitem, per c ac duās sequentēs scrīberētur",
+      "english": "and that cum should be spelt with qu if it meant time, with c and the two following letters if it meant company",
+      "source": "Quint. 1.7.5"
+    },
+    {
+      "latin": "Quīdam scrībunt «cum» per «q» litteram, sī tempus significat.",
+      "english": "Some spell “cum” with a “q” if it means time.",
+      "source": "Traupman 248"
     }
   ],
   "related": [
@@ -66,11 +78,13 @@
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 29, 31, 248, checked against the searchable text of the book (9 November 2026).",
     "Suetonius checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
     "Quotations from the Latinitas loci collections (loci-quintilianus), checked against the editions named there.",
-    "The example sentence marked “composed” is ours."
+    "The example sentence marked “composed” is ours.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 248.",
+    "Quintilian checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>, and cited by its numbering."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

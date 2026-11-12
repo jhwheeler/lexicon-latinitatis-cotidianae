@@ -7,7 +7,11 @@
     "accent",
     "word stress",
     "stressed syllable",
-    "where the stress falls"
+    "where the stress falls",
+    "put the stress on",
+    "place the accent",
+    "on which syllable is the stress?",
+    "stress the penult"
   ],
   "domain": "schola",
   "terms": [
@@ -18,9 +22,10 @@
       "gloss": "the accent of a word",
       "evidence": [
         "Quint. 1.5.22; 12.10.33 (Lewis &amp; Short)",
-        "M-O s.v. accent"
+        "M-O s.v. accent",
+        "Traupman 237, 245"
       ],
-      "comment": "Quintilian’s word, made as a translation of Greek προσῳδία (<span lang=\"la\">ad</span> + <span lang=\"la\">cantus</span>): the accent that falls on one syllable of a word. In late Latin it is also a blast of trumpets (Amm.). The beat of a verse is <span lang=\"la\">ictus</span>, which is not the same thing as the word’s accent."
+      "comment": "Quintilian’s word, made as a translation of Greek προσῳδία (<span lang=\"la\">ad</span> + <span lang=\"la\">cantus</span>): the accent that falls on one syllable of a word. In late Latin it is also a blast of trumpets (Amm.). The beat of a verse is <span lang=\"la\">ictus</span>, which is not the same thing as the word’s accent. To put the stress on a syllable is <span lang=\"la\">accentum in syllabā pōnere</span> (Traupman 245)."
     }
   ],
   "related": [
@@ -28,11 +33,25 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/accentus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: accentus</a> · <a href=\"https://logeion.uchicago.edu/ictus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ictus</a>",
-    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. accent."
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. accent.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 237, p. 245.",
+    "Quintilian checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>, and cited by its numbering."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "ēvenit, ut metrī quoque condiciō mūtet accentum",
+      "english": "it happens that the needs of the metre also change the accent",
+      "source": "Quint. 1.5.28"
+    },
+    {
+      "latin": "In quā syllabā accentum pōnimus? — Aut in antepaenultimā aut in paenultimā.",
+      "english": "On which syllable do we place the stress? — On the antepenult or the penult.",
+      "source": "Traupman 237"
+    }
+  ]
 }

@@ -5,7 +5,9 @@
   "also": [
     "e-mail",
     "emails",
-    "email message"
+    "email message",
+    "mail",
+    "e-mail system"
   ],
   "domain": "computatra",
   "terms": [
@@ -15,7 +17,8 @@
       "period": "modern",
       "gloss": "an email; emails",
       "evidence": [
-        "Traupman 259, 309"
+        "Traupman 259, 309",
+        "Traupman 260, 261"
       ],
       "comment": "Like classical <span lang=\"la\">litterae</span>, a letter, plural in form for a single message. To email someone: <span lang=\"la\">litterās ēlectronicās ad aliquem mittere</span> (Traupman 309)."
     },
@@ -28,6 +31,24 @@
         "Andresian p. 14"
       ],
       "comment": "<span lang=\"la\">Epistula</span> is the classical letter sent to someone (Lewis &amp; Short); it allows a plural for several emails."
+    },
+    {
+      "latin": "litterās ēlectronicās mittere (ad aliquem)",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "to e-mail (someone)",
+      "evidence": [
+        "Traupman 260"
+      ]
+    },
+    {
+      "latin": "cursus ēlectrōnicus",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "the e-mail system",
+      "evidence": [
+        "Traupman 260"
+      ]
     }
   ],
   "phrases": [
@@ -50,7 +71,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

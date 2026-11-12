@@ -7,7 +7,8 @@
     "located",
     "situated",
     "lie (of a place)",
-    "situate"
+    "situate",
+    "situated on"
   ],
   "domain": "verba",
   "terms": [
@@ -20,9 +21,29 @@
       "evidence": [
         "Liv. 30.24.9: <span lang=\"la\">in quō (sinū) sita Carthāgō est</span> (Lewis &amp; Short)",
         "Cic. Verr. 2.4.106: <span lang=\"la\">locus in mediā īnsulā situs</span> (Lewis &amp; Short)",
-        "Traupman 120, 341"
+        "Traupman 120, 341",
+        "Traupman 206"
       ],
       "comment": "Of towns, buildings, rooms and things set somewhere. Of a person it means “laid to rest, buried” (<span lang=\"la\">hīc situs est</span>, Cic. Leg. 2.57), and with <span lang=\"la\">in</span> and the ablative “resting with, depending on” (<span lang=\"la\">in vōbīs sita est</span>, Cic. Mur. 83) (Lewis &amp; Short)."
+    },
+    {
+      "latin": "appositus, apposita, appositum + dat.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "situated by or near",
+      "evidence": [
+        "Lewis &amp; Short s.v. <span lang=\"la\">appōnō</span>: “placed or situated near”",
+        "Traupman 206"
+      ]
+    },
+    {
+      "latin": "jaceō, jacēre, jacuī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "lie (of a place)",
+      "evidence": [
+        "Traupman 204"
+      ]
     }
   ],
   "phrases": [
@@ -35,6 +56,11 @@
       "latin": "Trīclīnium situm est inter culīnam et balneum.",
       "english": "The dining room is between the kitchen and the bathroom.",
       "source": "Traupman 120"
+    },
+    {
+      "latin": "Urbs apposita est flexuī flūminis.",
+      "english": "The city lies at the bend of the river.",
+      "source": "Traupman 200"
     }
   ],
   "related": [
@@ -44,11 +70,13 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/situs\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: situs</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 120, 341. Quotations marked “Lewis &amp; Short” are copied from its citations (s.v. <span lang=\"la\">sinō</span>)."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 120, 341. Quotations marked “Lewis &amp; Short” are copied from its citations (s.v. <span lang=\"la\">sinō</span>).",
+    "<a href=\"https://logeion.uchicago.edu/appono\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: appono</a>",
+    "<a href=\"https://logeion.uchicago.edu/jaceo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: jaceo</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

@@ -2,6 +2,10 @@
   "id": "coast",
   "english": "coast",
   "pos": "noun",
+  "also": [
+    "seacoast",
+    "on the coast"
+  ],
   "domain": "natura",
   "terms": [
     {
@@ -9,8 +13,17 @@
       "status": "recommended",
       "period": "classical",
       "evidence": [
-        "Traupman 205"
+        "Traupman 205",
+        "Traupman 203",
+        "Traupman 206"
       ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "in ōrā maritimā",
+      "english": "on the coast",
+      "source": "Traupman 203"
     }
   ],
   "related": [
@@ -22,7 +35,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

@@ -2,12 +2,36 @@
   "id": "alps",
   "english": "Alps",
   "pos": "noun",
+  "also": [
+    "Alpine",
+    "Alpine chain"
+  ],
   "domain": "urbs",
   "terms": [
     {
       "latin": "Alpēs, Alpium f. pl.",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "evidence": [
+        "Traupman 202"
+      ]
+    },
+    {
+      "latin": "Alpīnus, Alpīna, Alpīnum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "Alpine",
+      "evidence": [
+        "Ov. Met. 14.794: <span lang=\"la\">rigor</span> (Lewis &amp; Short)",
+        "Traupman 202"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Alpium juga",
+      "english": "the Alpine chain",
+      "source": "Traupman 202"
     }
   ],
   "related": [
@@ -16,11 +40,14 @@
     "pyrenees"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/Alpes\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: Alpes</a>"
+    "<a href=\"https://logeion.uchicago.edu/Alpes\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: Alpes</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, cited by printed page; each phrase checked against the searchable text of the book.",
+    "<a href=\"https://logeion.uchicago.edu/Alpinus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: Alpinus</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

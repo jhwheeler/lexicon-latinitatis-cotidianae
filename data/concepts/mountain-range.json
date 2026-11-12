@@ -2,6 +2,10 @@
   "id": "mountain-range",
   "english": "mountain range",
   "pos": "noun",
+  "also": [
+    "mountain chain",
+    "unbroken chain"
+  ],
   "domain": "natura",
   "terms": [
     {
@@ -10,7 +14,8 @@
       "period": "classical",
       "gloss": "stretch in an unbroken range",
       "evidence": [
-        "Traupman 201, 203"
+        "Traupman 201, 203",
+        "Traupman 203"
       ],
       "comment": "<span lang=\"la\">jugum</span> is in the mountain entry."
     }
@@ -20,6 +25,16 @@
       "latin": "nam Osoitsa ad rādīcēs Haemī jacet, quī perpetuīs jugīs per tōtam Bulgariam ad Pontum ūsque tendit",
       "english": "for Osoitsa lies at the foot of the Haemus, which stretches in an unbroken range across all Bulgaria to the Black Sea",
       "source": "Libellus VII, <span lang=\"la\">Diēs ūnus Osoitsae</span>"
+    },
+    {
+      "latin": "Appennīnus mōns perpetuīs jugīs ab Alpibus tendēns ad …",
+      "english": "the Apennines extending in an unbroken chain from the Alps to …",
+      "source": "Traupman 203"
+    },
+    {
+      "latin": "montēs perpetuī",
+      "english": "a mountain chain",
+      "source": "Traupman 205"
     }
   ],
   "related": [
@@ -32,7 +47,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

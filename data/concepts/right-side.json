@@ -3,12 +3,37 @@
   "english": "right",
   "sense": "side",
   "pos": "adjective",
+  "also": [
+    "on the right",
+    "to the right",
+    "turn right"
+  ],
   "domain": "sermo",
   "terms": [
     {
       "latin": "dexter, dextra, dextrum",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "evidence": [
+        "Traupman 206"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "dextrā (ā dextrā)",
+      "english": "on the right",
+      "source": "Traupman 206"
+    },
+    {
+      "latin": "dextrōrsum sē vertere",
+      "english": "to turn right",
+      "source": "Traupman 206"
+    },
+    {
+      "latin": "ille sinistrōrsum, hic dextrōrsum abit",
+      "english": "one goes off to the left, the other to the right",
+      "source": "Hor. S. 2.3.50 (Lewis &amp; Short s.v. <span lang=\"la\">dextrōrsum</span>)"
     }
   ],
   "related": [
@@ -16,11 +41,14 @@
     "to-the-right"
   ],
   "sources": [
-    "<a href=\"https://logeion.org/dexter\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dexter</a>"
+    "<a href=\"https://logeion.org/dexter\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dexter</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, cited by printed page; each phrase checked against the searchable text of the book.",
+    "<a href=\"https://logeion.uchicago.edu/dextrorsum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dextrorsum</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

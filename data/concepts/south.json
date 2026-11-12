@@ -2,13 +2,40 @@
   "id": "south",
   "english": "south",
   "pos": "noun",
+  "also": [
+    "the south",
+    "in the south",
+    "to the south",
+    "south of",
+    "southward"
+  ],
   "domain": "vectura",
   "terms": [
     {
       "latin": "merīdiēs, merīdiēī m.",
       "status": "recommended",
       "period": "classical",
-      "gloss": "the south, also midday"
+      "gloss": "the south, also midday",
+      "evidence": [
+        "Traupman 206"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ā merīdiē",
+      "english": "in the south",
+      "source": "Traupman 206"
+    },
+    {
+      "latin": "ad merīdiem",
+      "english": "to the south",
+      "source": "Traupman 206"
+    },
+    {
+      "latin": "īnfrā Rōmam",
+      "english": "south of Rome",
+      "source": "Traupman 206"
     }
   ],
   "related": [
@@ -18,11 +45,12 @@
     "southern"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/meridies\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: meridies</a>"
+    "<a href=\"https://logeion.uchicago.edu/meridies\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: meridies</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, cited by printed page; each phrase checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

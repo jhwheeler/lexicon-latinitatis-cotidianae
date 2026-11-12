@@ -3,7 +3,10 @@
   "english": "border",
   "pos": "noun",
   "also": [
-    "frontier"
+    "frontier",
+    "boundary",
+    "border on",
+    "borders"
   ],
   "domain": "natura",
   "terms": [
@@ -16,6 +19,45 @@
         "Caes.",
         "Varro"
       ]
+    },
+    {
+      "latin": "fīnis, fīnis m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "boundary, frontier; in the plural, territory",
+      "evidence": [
+        "Traupman 202, 204"
+      ]
+    },
+    {
+      "latin": "terminus, terminī m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "boundary line",
+      "evidence": [
+        "Cic. Ac. 2.132: <span lang=\"la\">contentiō dē terminīs</span> (Lewis &amp; Short)",
+        "Traupman 204: frontier"
+      ]
+    },
+    {
+      "latin": "attingō, attingere, attigī, attāctum + acc.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "border on, adjoin",
+      "evidence": [
+        "Lewis &amp; Short s.v. <span lang=\"la\">attingō</span>: “to lie near, border upon, be contiguous to”",
+        "Traupman 202: border on, <span lang=\"la\">attingere</span>"
+      ]
+    },
+    {
+      "latin": "discrīmen, discrīminis n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "dividing line",
+      "evidence": [
+        "Traupman 202: at the boundary between Italy and Switzerland, <span lang=\"la\">ad discrīmen Ītaliae et Helvētiae</span>"
+      ],
+      "comment": "The classical sense is “that which divides”, hence a distinction or a crisis; Traupman uses it of a boundary line."
     }
   ],
   "phrases": [
@@ -28,11 +70,16 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/confinium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: confinium</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 202, checked against the searchable text of the book on 29 October 2026.",
-    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+    "<a href=\"https://logeion.uchicago.edu/finis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: finis</a>",
+    "<a href=\"https://logeion.uchicago.edu/terminus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: terminus</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "<a href=\"https://logeion.uchicago.edu/attingo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: attingo</a>",
+    "<a href=\"https://logeion.uchicago.edu/discrimen\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: discrimen</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

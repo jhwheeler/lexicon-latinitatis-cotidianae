@@ -6,7 +6,8 @@
     "how big",
     "dimensions",
     "stature",
-    "dimension"
+    "dimension",
+    "measurements"
   ],
   "domain": "verba",
   "terms": [
@@ -17,7 +18,8 @@
       "gloss": "size, bigness",
       "evidence": [
         "Plin. Ep. 6.16.4: <span lang=\"la\">nūbem inūsitātā et magnitūdine et speciē</span>",
-        "Traupman 206, 380"
+        "Traupman 206, 380",
+        "Traupman 206"
       ],
       "comment": "Size of any kind, large or small: <span lang=\"la\">minōrēs sunt magnitūdine</span>, they are smaller in size (Varro, Lewis &amp; Short); <span lang=\"la\">ad fabae magnitūdinem</span>, the size of a bean (Celsus, Lewis &amp; Short). How big? <span lang=\"la\">Quantus?</span> — <span lang=\"la\">Tantus!</span> (see so big!)."
     },
@@ -39,6 +41,15 @@
       "gloss": "a person’s height, build",
       "evidence": [
         "Caes. BG 2.30.4: <span lang=\"la\">hominēs tantulae statūrae</span>"
+      ]
+    },
+    {
+      "latin": "mēnsūra, mēnsūrae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "measure; in the plural, dimensions",
+      "evidence": [
+        "Traupman 203: dimensions, <span lang=\"la\">mēnsūra, mēnsūrae</span>"
       ]
     }
   ],
@@ -63,11 +74,12 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/magnitudo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: magnitudo</a> · <a href=\"https://logeion.uchicago.edu/amplitudo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: amplitudo</a> · <a href=\"https://logeion.uchicago.edu/statura\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: statura</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 206, 380, checked against the searchable text of the book (9 November 2026).",
-    "Pliny’s letters and Caesar checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+    "Pliny’s letters and Caesar checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "<a href=\"https://logeion.uchicago.edu/mensura\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mensura</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

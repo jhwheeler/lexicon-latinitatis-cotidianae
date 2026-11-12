@@ -13,7 +13,8 @@
       "grammar": "preposition with the ablative",
       "evidence": [
         "Hor. C. 2.16.13–14: <span lang=\"la\">splendet in mēnsā tenuī salīnum</span>",
-        "Vulg. Jo. 14.2: <span lang=\"la\">In domō Patris meī mānsiōnēs multae sunt</span>"
+        "Vulg. Jo. 14.2: <span lang=\"la\">In domō Patris meī mānsiōnēs multae sunt</span>",
+        "Traupman 332"
       ],
       "comment": "The ablative answers “where?” (<span lang=\"la\">ubi?</span>); with the accusative <span lang=\"la\">in</span> answers “where to?” and means into or onto (see into). English “in” and “on” are both <span lang=\"la\">in</span> with the ablative: <span lang=\"la\">in urbe</span>, in town; <span lang=\"la\">in mēnsā</span>, on the table."
     },
@@ -39,6 +40,16 @@
         "Ov. Met. 11.608–609: <span lang=\"la\">jānua … nūlla domō tōtā est</span>"
       ],
       "comment": "With <span lang=\"la\">locus</span> (<span lang=\"la\">hōc locō, eōdem locō</span>), and often with a noun that has <span lang=\"la\">tōtus</span> (<span lang=\"la\">tōtā urbe</span>), the preposition is left out."
+    },
+    {
+      "latin": "apud (+ acc.)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "in (the writings of an author)",
+      "evidence": [
+        "Traupman 332"
+      ],
+      "comment": "<span lang=\"la\">Apud Platōnem</span>, in Plato."
     }
   ],
   "phrases": [
@@ -81,12 +92,17 @@
     "house"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/apud\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: apud</a>",
     "<a href=\"https://logeion.uchicago.edu/in\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: in</a> · <a href=\"https://logeion.uchicago.edu/domus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: domus</a> · <a href=\"https://logeion.uchicago.edu/rus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: rus</a> · <a href=\"https://logeion.uchicago.edu/locus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: locus</a>",
-    "Quotations from the Latinitas loci collections (loci-horatius, loci-vulgata, loci-livius, loci-martialis, loci-plinius, loci-cicero-epistulae, loci-ovidius), checked against the editions named there."
+    "Quotations from the Latinitas loci collections (loci-horatius, loci-vulgata, loci-livius, loci-martialis, loci-plinius, loci-cicero-epistulae, loci-ovidius), checked against the editions named there.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 332."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "in (the writings of)"
+  ]
 }

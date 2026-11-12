@@ -5,7 +5,11 @@
   "pos": "noun",
   "also": [
     "newsreader",
-    "presenter"
+    "presenter",
+    "anchor (news)",
+    "anchorman",
+    "anchorwoman",
+    "presenter (news)"
   ],
   "domain": "res-publica",
   "terms": [
@@ -15,9 +19,11 @@
       "period": "late",
       "evidence": [
         "Vulg. Act. 17.18 (Lewis &amp; Short): one who proclaims",
-        "Traupman 163"
+        "Traupman 163",
+        "Traupman 271"
       ],
-      "comment": "Church Latin uses it of one who proclaims; the broadcasting sense is modern."
+      "comment": "Church Latin uses it of one who proclaims; the broadcasting sense is modern.",
+      "gloss": "an announcer"
     },
     {
       "latin": "annūntiātrīx, annūntiātrīcis f.",
@@ -26,16 +32,31 @@
       "evidence": [
         "Traupman 163"
       ]
+    },
+    {
+      "latin": "nūntiātor, nūntiātōris m.",
+      "status": "recommended",
+      "period": "modern",
+      "gloss": "an announcer, a newsreader, an anchor",
+      "evidence": [
+        "Traupman 271"
+      ],
+      "comment": "Lewis &amp; Short has <span lang=\"la\">nūntiātor</span> only in Christian writers (Arnobius, Tertullian), “a reporter, an announcer”; the radio and television sense is modern."
     }
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/annuntiator\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: annuntiator</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 163, each phrase checked against the searchable text of the book.",
-    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "<a href=\"https://logeion.uchicago.edu/nuntiator\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nuntiator</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 271."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "related": [
+    "broadcast"
+  ]
 }

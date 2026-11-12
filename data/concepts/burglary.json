@@ -1,0 +1,69 @@
+{
+  "id": "burglary",
+  "english": "burglary",
+  "pos": "noun",
+  "also": [
+    "burglar",
+    "break-in",
+    "break into a house",
+    "breaking and entering",
+    "housebreaking",
+    "commit a burglary"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "parietēs perfodere",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "break into a house (by digging through the walls)",
+      "evidence": [
+        "Traupman 283, 284"
+      ],
+      "comment": "Roman burglars dug through the house wall; so a burglar is a <span lang=\"la\">perfossor parietum</span> (Plaut. Ps. 980, Lewis &amp; Short)."
+    },
+    {
+      "latin": "perfossor parietum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a housebreaker",
+      "evidence": [
+        "Plaut. Ps. 980 (Lewis &amp; Short s.v. <span lang=\"la\">perfossor</span>)",
+        "Traupman 284"
+      ]
+    },
+    {
+      "latin": "effrāctor, effrāctōris m.",
+      "status": "alternative",
+      "period": "post-classical",
+      "gloss": "a burglar",
+      "evidence": [
+        "Dig. 1.15.3 (Lewis &amp; Short)",
+        "Traupman 284"
+      ]
+    },
+    {
+      "latin": "effrāctūra, effrāctūrae f.",
+      "status": "alternative",
+      "period": "post-classical",
+      "gloss": "a break-in, breaking and entering",
+      "evidence": [
+        "Lewis &amp; Short",
+        "Traupman 283"
+      ]
+    }
+  ],
+  "related": [
+    "thief"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/perfossor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: perfossor</a> · <a href=\"https://logeion.uchicago.edu/effractor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: effractor</a> · <a href=\"https://logeion.uchicago.edu/effractura\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: effractura</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 283, p. 284.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-12",
+    "by": "Claude"
+  }
+}

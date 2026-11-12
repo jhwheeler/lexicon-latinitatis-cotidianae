@@ -4,7 +4,8 @@
   "pos": "noun",
   "also": [
     "dark",
-    "the dark"
+    "the dark",
+    "in the dark"
   ],
   "domain": "sermo",
   "terms": [
@@ -12,17 +13,31 @@
       "latin": "tenebrae, tenebrārum f. pl.",
       "status": "recommended",
       "period": "classical"
+    },
+    {
+      "latin": "tenebrīs",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "in the dark, by night",
+      "grammar": "ablative of tenebrae",
+      "evidence": [
+        "Cic. Phil. 2.76: <span lang=\"la\">redīre lūce, nōn tenebrīs</span> (Lewis &amp; Short s.v. <span lang=\"la\">tenebrae</span>)"
+      ],
+      "comment": "The ablative alone: in the dark, under cover of night. Traupman 86 gives <span lang=\"la\">dē nocte</span> for “in the dark”; that is “in the course of the night” (see night)."
     }
   ],
   "related": [
-    "dragon"
+    "dragon",
+    "after-dark",
+    "night"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/tenebrae\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tenebrae</a>"
+    "<a href=\"https://logeion.uchicago.edu/tenebrae\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tenebrae</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

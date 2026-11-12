@@ -7,7 +7,9 @@
     "desperate",
     "hopeless",
     "lose hope",
-    "give up hope"
+    "give up hope",
+    "despair of",
+    "in despair"
   ],
   "domain": "verba",
   "terms": [
@@ -18,7 +20,9 @@
       "gloss": "hopelessness, despair",
       "evidence": [
         "Cic. Tusc. 4.18 (Lewis &amp; Short)",
-        "Traupman 151"
+        "Traupman 151",
+        "Cic. Tusc. 4.18: <span lang=\"la\">dēspērātiō est aegritūdō sine ūllā rērum exspectātiōne meliōrum</span> (Lewis &amp; Short)",
+        "Traupman 303"
       ]
     },
     {
@@ -29,7 +33,9 @@
       "grammar": "verb, first conjugation; despair of: dē + ablative, or the accusative",
       "evidence": [
         "Caes. BG 1.40.4 (Lewis &amp; Short)",
-        "Traupman 151, 154"
+        "Traupman 151, 154",
+        "Caes. BG 1.40.8: <span lang=\"la\">dē pugnā</span> (Lewis &amp; Short)",
+        "Traupman 303"
       ]
     },
     {
@@ -38,8 +44,10 @@
       "period": "classical",
       "gloss": "desperate, hopeless",
       "evidence": [
-        "Traupman 151, 154"
-      ]
+        "Traupman 151, 154",
+        "Traupman 303"
+      ],
+      "comment": "The participle of <span lang=\"la\">dēspērō</span>: given up as hopeless, past hope."
     }
   ],
   "sources": [
@@ -47,11 +55,15 @@
     "<a href=\"https://logeion.uchicago.edu/despero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: despero</a>",
     "<a href=\"https://logeion.uchicago.edu/desperatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: desperatus</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, each phrase checked against the searchable text of the book.",
-    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 303."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "related": [
+    "hope"
+  ]
 }

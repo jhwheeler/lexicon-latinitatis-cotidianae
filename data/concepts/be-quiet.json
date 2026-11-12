@@ -5,7 +5,13 @@
   "also": [
     "hush",
     "keep quiet",
-    "aw, keep quiet!"
+    "aw, keep quiet!",
+    "shut up",
+    "shut your mouth",
+    "keep your mouth shut",
+    "I’d better keep my mouth shut",
+    "why don’t you keep quiet?",
+    "why don’t you just shut up?"
   ],
   "domain": "sermo",
   "terms": [
@@ -13,6 +19,28 @@
       "latin": "Tacē.",
       "status": "recommended",
       "period": "classical"
+    },
+    {
+      "latin": "Quīn tacēs?",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "why don’t you keep quiet? (be quiet!)",
+      "grammar": "quīn with the indicative: an impatient “why not …?”, really a command",
+      "evidence": [
+        "Plaut. Merc. 2.4.26: <span lang=\"la\">Quīn tacēs? — Mūtō imperās.</span> (Lewis &amp; Short s.v. <span lang=\"la\">mūtus</span>)",
+        "Traupman p. 106: why don’t you keep quiet?, <span lang=\"la\">quīn tū tacēs?</span>"
+      ]
+    },
+    {
+      "latin": "Obserā ōs tuum!",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "shut your mouth!",
+      "evidence": [
+        "Traupman p. 104: shut your mouth, <span lang=\"la\">obserā ōs tuum!</span>",
+        "Traupman p. 107: shut up!, <span lang=\"la\">obserā ōs tuum!</span>"
+      ],
+      "comment": "Traupman’s phrase, “bolt your mouth”. Lewis &amp; Short has the figure with <span lang=\"la\">palātum</span>, “to be silent” (Catull. 55.21), not with <span lang=\"la\">ōs</span>; the everyday command is <span lang=\"la\">Tacē!</span>."
     }
   ],
   "phrases": [
@@ -25,6 +53,11 @@
       "latin": "Au, tacē!",
       "english": "Aw, keep quiet!",
       "source": "Traupman p. 93"
+    },
+    {
+      "latin": "Taceam optimum est.",
+      "english": "I’d better keep my mouth shut.",
+      "source": "Traupman p. 104"
     }
   ],
   "related": [
@@ -33,7 +66,10 @@
   ],
   "sources": [
     "Passages as cited on the grouped card.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 93, checked against the searchable text and the page images of the book."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 93, checked against the searchable text and the page images of the book.",
+    "<a href=\"https://logeion.uchicago.edu/taceo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: taceo</a> · <a href=\"https://logeion.uchicago.edu/quin\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quin</a> · <a href=\"https://logeion.uchicago.edu/obsero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: obsero</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 104, 106, 107, each phrase checked against the searchable text of the book.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",

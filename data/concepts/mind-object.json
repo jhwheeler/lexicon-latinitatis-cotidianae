@@ -7,7 +7,11 @@
     "do you mind?",
     "I don’t mind",
     "if you don’t mind",
-    "would you mind"
+    "would you mind",
+    "I don’t mind if you stay",
+    "if it’s OK with you",
+    "if it’s all right with you",
+    "I really don’t mind"
   ],
   "domain": "verba",
   "terms": [
@@ -44,6 +48,18 @@
         "Ant. in Cic. Phil. 13.35: <span lang=\"la\">nihil moror eōs salvōs esse</span>"
       ],
       "comment": "Lewis &amp; Short: “I have no objection”."
+    },
+    {
+      "latin": "sī tibi vidētur",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "if you don’t mind, if it’s all right with you",
+      "evidence": [
+        "Cic. Q. fr. 3.1.7: <span lang=\"la\">sī tibi vidētur</span>",
+        "Traupman p. 103: if you don’t mind, <span lang=\"la\">sī tibi vidētur</span>",
+        "Traupman p. 105: if it’s O.K. with you, <span lang=\"la\">sī tibi vidētur</span>"
+      ],
+      "comment": "Literally “if it seems good to you”: the polite way to ask leave or to propose something (see suggest)."
     }
   ],
   "phrases": [
@@ -56,6 +72,11 @@
       "latin": "Ubi vīs, nōn moror.",
       "english": "Whenever you like; I’ve no objection.",
       "source": "Ter. Eun. 459"
+    },
+    {
+      "latin": "Nōn labōrō sī manēs, modo taceās.",
+      "english": "I don’t mind if you stay, as long as you’re quiet.",
+      "source": "Traupman p. 103"
     }
   ],
   "related": [
@@ -72,7 +93,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

@@ -4,7 +4,10 @@
   "pos": "phrase",
   "also": [
     "control yourself",
-    "keep your cool"
+    "keep your cool",
+    "set your mind at ease",
+    "don’t worry",
+    "cheer up"
   ],
   "domain": "sermo",
   "terms": [
@@ -26,6 +29,26 @@
         "Traupman 101",
         "Traupman p. 101"
       ]
+    },
+    {
+      "latin": "Bonum animum habē!",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "take heart, don’t worry",
+      "evidence": [
+        "Plaut. Amph. 545: <span lang=\"la\">bonum animum habē</span>",
+        "Plaut. Rud. 687–688: <span lang=\"la\">Bonum animum habēte. … Nē, inquam, timēte.</span>"
+      ]
+    },
+    {
+      "latin": "Habē animum lēnem et tranquillum.",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "set your mind at ease",
+      "evidence": [
+        "Traupman p. 104: set your mind at ease, <span lang=\"la\">habē animum lēnem et tranquillum</span>"
+      ],
+      "comment": "Traupman’s phrase; not quoted in Lewis &amp; Short or the loci collections."
     }
   ],
   "related": [
@@ -37,11 +60,20 @@
   "sources": [
     "<a href=\"https://logeion.org/compesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: compesco</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): pp. 96, 101.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 101, checked against the searchable text and the page image (12 November 2026)."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 101, checked against the searchable text and the page image (12 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-plautus), checked against the editions named there.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 104, each phrase checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "Bonum animum habēte. … Nē, inquam, timēte.",
+      "english": "Cheer up. … Don’t be afraid, I tell you.",
+      "source": "Plaut. Rud. 687–688"
+    }
+  ]
 }

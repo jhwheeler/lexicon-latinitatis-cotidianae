@@ -13,7 +13,9 @@
     "you’re wrong",
     "get it wrong",
     "mistaken",
-    "incorrect"
+    "incorrect",
+    "you’re making a big mistake",
+    "you’re very wrong"
   ],
   "domain": "verba",
   "terms": [
@@ -26,7 +28,9 @@
       "evidence": [
         "Ter. Heaut. 105: <span lang=\"la\">Errās, sī id crēdis</span>",
         "Cic. Tusc. 1.39: <span lang=\"la\">errāre mehercule mālō cum Platōne</span>",
-        "Traupman 409: be wrong, <span lang=\"la\">errāre</span>"
+        "Traupman 409: be wrong, <span lang=\"la\">errāre</span>",
+        "Cic. Arch. 22: <span lang=\"la\">vehementer errat</span> (Lewis &amp; Short s.v. <span lang=\"la\">nam</span>)",
+        "Traupman p. 104: you’re making a big mistake, <span lang=\"la\">errās pervērsē; vehementer errās</span>"
       ],
       "comment": "“You’re wrong” is <span lang=\"la\">errās</span>; badly wrong, <span lang=\"la\">longē errāre</span> (Ter. Ad. 65) or <span lang=\"la\">tōtā errāre viā</span> (Ter. Eun. 245)."
     },
@@ -39,7 +43,8 @@
       "evidence": [
         "Plaut. Most. 968: <span lang=\"la\">nē ad aliās aedīs perperam dēvēnerīs</span>",
         "Cic. Quinct. 31: <span lang=\"la\">seu rēctē seu perperam facere coepērunt</span>",
-        "Traupman 409: if I have done anything wrong, I’m sorry, <span lang=\"la\">sī quid perperam fēcī, mē paenitet</span>"
+        "Traupman 409: if I have done anything wrong, I’m sorry, <span lang=\"la\">sī quid perperam fēcī, mē paenitet</span>",
+        "Traupman p. 104: by mistake, <span lang=\"la\">imprūdēns, perperam</span>"
       ],
       "comment": "The opposite of <span lang=\"la\">rēctē</span>. Where English says “the wrong house”, Latin puts the mistake in the verb, as Plautus does."
     },
@@ -70,6 +75,11 @@
       "latin": "errāre mehercule mālō cum Platōne … quam cum istīs vēra sentīre",
       "english": "I’d rather be wrong with Plato, by Hercules, … than be right with that crowd",
       "source": "Cic. Tusc. 1.39"
+    },
+    {
+      "latin": "Errābās, Verrēs, et vehementer errābās.",
+      "english": "You were wrong, Verres, very wrong.",
+      "source": "Cic. Verr. 2.5.121 (Lewis &amp; Short s.v. <span lang=\"la\">et</span>)"
     }
   ],
   "related": [
@@ -81,11 +91,12 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/erro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: erro</a> · <a href=\"https://logeion.uchicago.edu/perperam\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: perperus (perperam)</a> · <a href=\"https://logeion.uchicago.edu/falsus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fallo (falsus)</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 409; also pp. 112, 249.",
-    "Plautus, Terence and Cicero checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+    "Plautus, Terence and Cicero checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

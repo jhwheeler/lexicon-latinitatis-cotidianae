@@ -3,7 +3,10 @@
   "english": "post a letter",
   "pos": "verb",
   "also": [
-    "send a letter"
+    "send a letter",
+    "mail a letter",
+    "I mailed the letter",
+    "send off a letter"
   ],
   "domain": "urbs",
   "terms": [
@@ -22,6 +25,18 @@
       "evidence": [
         "M-O s.v. mail"
       ]
+    },
+    {
+      "latin": "litterās dare (ad aliquem)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "send a letter (to someone); literally, give a letter to the bearer",
+      "grammar": "phrase: ad with the person written to; the dative is the carrier",
+      "evidence": [
+        "Cic. Att. 7.21: <span lang=\"la\">inde hās litterās dedī</span> (Lewis &amp; Short s.v. <span lang=\"la\">inde</span>)",
+        "Traupman p. 103: I mailed the letter yesterday, <span lang=\"la\">litterās heri dedī</span>"
+      ],
+      "comment": "Letters went by hand, so “to post a letter” was to give it to someone travelling: <span lang=\"la\">litterās dare ad aliquem</span>, to send someone a letter; <span lang=\"la\">litterās dare alicui</span>, to hand a letter to someone to carry (Lewis &amp; Short s.v. <span lang=\"la\">ad</span>). Hence the letter-writer’s <span lang=\"la\">dedī</span>, I sent."
     }
   ],
   "related": [
@@ -31,11 +46,20 @@
     "postcard"
   ],
   "sources": [
-    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. mail."
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. mail.",
+    "<a href=\"https://logeion.uchicago.edu/do\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: do</a> · <a href=\"https://logeion.uchicago.edu/ad\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ad</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "Litterās heri dedī.",
+      "english": "I posted the letter yesterday.",
+      "source": "Traupman p. 103"
+    }
+  ]
 }

@@ -15,7 +15,10 @@
     "be missing",
     "be short of",
     "absence (lack)",
-    "in the absence of"
+    "in the absence of",
+    "be low on",
+    "I’m low on",
+    "run low on"
   ],
   "domain": "verba",
   "terms": [
@@ -50,7 +53,8 @@
       "grammar": "verb, irregular: what is lacking is the subject, the person who lacks it in the dative",
       "evidence": [
         "Publil. Sent. S 31: <span lang=\"la\">semper cōnsilium tunc deest, cum opus est maximē</span>",
-        "Traupman 162: <span lang=\"la\">quod tibi plānē deest</span>"
+        "Traupman 162: <span lang=\"la\">quod tibi plānē deest</span>",
+        "Traupman p. 103: I am low on (paper), <span lang=\"la\">(charta) mihi deest</span>"
       ]
     },
     {
@@ -95,6 +99,11 @@
       "latin": "Quod tibi plānē deest, mī fīlī, nōn est ingenium sed ambitiō!",
       "english": "What you plainly lack, my son, is not talent but ambition!",
       "source": "Traupman 162"
+    },
+    {
+      "latin": "Charta mihi deest.",
+      "english": "I’m low on paper.",
+      "source": "Traupman p. 103"
     }
   ],
   "related": [
@@ -110,7 +119,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

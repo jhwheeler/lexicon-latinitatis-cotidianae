@@ -7,7 +7,11 @@
     "punishments",
     "pay the penalty",
     "suffer punishment",
-    "punishment for crimes"
+    "punishment for crimes",
+    "capital punishment",
+    "death penalty",
+    "suffer capital punishment",
+    "death sentence"
   ],
   "domain": "res-publica",
   "terms": [
@@ -53,6 +57,16 @@
         "Cic. <em>Off.</em> 1.88",
         "Quint. 1.3.14"
       ]
+    },
+    {
+      "latin": "supplicium capitis",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "capital punishment, the death penalty",
+      "evidence": [
+        "Traupman 286"
+      ],
+      "comment": "<span lang=\"la\">Supplicium</span> alone is often the death penalty; Traupman’s full phrase is <span lang=\"la\">supplicium capitis</span>; “to suffer capital punishment”, <span lang=\"la\">suppliciō capitis afficī</span>."
     }
   ],
   "phrases": [
@@ -85,6 +99,11 @@
       "latin": "poena facinorum",
       "english": "punishment for crimes",
       "source": "Traupman 196"
+    },
+    {
+      "latin": "suppliciō capitis afficī",
+      "english": "to suffer capital punishment",
+      "source": "Traupman 286"
     }
   ],
   "related": [
@@ -94,11 +113,11 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/poena\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: poena</a> · <a href=\"https://logeion.uchicago.edu/supplicium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: supplicium</a> · <a href=\"https://logeion.uchicago.edu/animadversio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: animadversio</a> · <a href=\"https://logeion.uchicago.edu/castigatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: castigatio</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 194, 196, 258, checked against the searchable text of the book (9 November 2026).",
     "Quotations from the Latinitas loci collections (loci-terentius, loci-quintilianus), checked against the editions named there.",
     "Cicero checked against the Latin Library text (<a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">CLTK mirror</a>, 9 November 2026).",
     "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 196–197, each phrase checked against the searchable text of the book."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 196–197, each phrase checked against the searchable text of the book.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 194, 196, 258, checked against the searchable text of the book (9 November 2026).: p. 286."
   ],
   "review": {
     "status": "draft",

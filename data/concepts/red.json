@@ -7,7 +7,10 @@
     {
       "latin": "ruber, rubra, rubrum",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "evidence": [
+        "Traupman 252"
+      ]
     },
     {
       "latin": "coccineus, coccinea, coccineum",
@@ -16,8 +19,83 @@
       "gloss": "scarlet, deep red",
       "evidence": [
         "Petr. 32.2; Mart. 14.131 (Lewis &amp; Short)",
-        "Traupman 116"
+        "Traupman 116",
+        "Petr. 32.2: <span lang=\"la\">pallium</span> (Lewis &amp; Short)",
+        "Traupman 251, 252"
       ]
+    },
+    {
+      "latin": "rūfus, rūfa, rūfum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "red of every shade, red-haired",
+      "evidence": [
+        "Plaut. Ps. 4.7.119: <span lang=\"la\">rūfus quīdam</span>, a red-haired fellow (Lewis &amp; Short)",
+        "Gell. 2.26.5 (Lewis &amp; Short)",
+        "Traupman 252"
+      ],
+      "comment": "Gellius calls it red of all shades; above all of hair."
+    },
+    {
+      "latin": "sanguineus, sanguinea, sanguineum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "blood-red",
+      "evidence": [
+        "Lewis &amp; Short: a favourite word of the Augustan poets",
+        "Traupman 252"
+      ]
+    },
+    {
+      "latin": "rutilus, rutila, rutilum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "bright red, red inclining to gold",
+      "evidence": [
+        "Lewis &amp; Short s.v. <span lang=\"la\">rutilus</span>",
+        "Traupman 252"
+      ]
+    },
+    {
+      "latin": "rubidus, rubida, rubidum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "dark red",
+      "register": "vōx cōmica: Plaut.",
+      "evidence": [
+        "Plaut. Stich. 1.3.77: <span lang=\"la\">ampulla</span> (Lewis &amp; Short)",
+        "Traupman 252"
+      ]
+    },
+    {
+      "latin": "cerasinus, cerasina, cerasinum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "cherry-red",
+      "evidence": [
+        "Petr. 28.8: <span lang=\"la\">cingulum</span> (Lewis &amp; Short)",
+        "Traupman 252"
+      ]
+    },
+    {
+      "latin": "miniātus, miniāta, miniātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "vermilion, painted with red lead",
+      "evidence": [
+        "Cic. Att. 15.14.4: <span lang=\"la\">miniāta cērula</span> (Lewis &amp; Short s.v. <span lang=\"la\">miniō</span>)",
+        "Traupman 252: scarlet; vermilion"
+      ]
+    },
+    {
+      "latin": "cardinālis, cardināle",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "cardinal red",
+      "evidence": [
+        "Traupman 252"
+      ],
+      "comment": "Classically “of a hinge”, hence “principal” (Lewis &amp; Short); the colour is that of a cardinal’s robes, a modern sense."
     }
   ],
   "phrases": [
@@ -35,15 +113,32 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/ruber\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ruber</a>",
     "The example sentence marked “composed” is ours.",
-    "<a href=\"https://logeion.uchicago.edu/coccineus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: coccineus</a>"
+    "<a href=\"https://logeion.uchicago.edu/coccineus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: coccineus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, cited by printed page; each phrase checked against the searchable text of the book.",
+    "<a href=\"https://logeion.uchicago.edu/rufus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: rufus</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "<a href=\"https://logeion.uchicago.edu/sanguineus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sanguineus</a>",
+    "<a href=\"https://logeion.uchicago.edu/rutilus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: rutilus</a>",
+    "<a href=\"https://logeion.uchicago.edu/rubidus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: rubidus</a>",
+    "<a href=\"https://logeion.uchicago.edu/cerasinus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cerasinus</a>",
+    "<a href=\"https://logeion.uchicago.edu/minio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: minio</a>",
+    "<a href=\"https://logeion.uchicago.edu/cardinalis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cardinalis</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   },
   "also": [
     "scarlet",
-    "deep red"
+    "deep red",
+    "blood red",
+    "bright red",
+    "dark red",
+    "cherry red",
+    "cardinal red",
+    "crimson",
+    "vermilion",
+    "red-haired"
   ]
 }

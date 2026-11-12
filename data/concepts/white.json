@@ -2,12 +2,21 @@
   "id": "white",
   "english": "white",
   "pos": "adjective",
+  "also": [
+    "snow-white",
+    "dull white",
+    "shiny white",
+    "dead white"
+  ],
   "domain": "sermo",
   "terms": [
     {
       "latin": "albus, alba, album",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "evidence": [
+        "Traupman 252: dead white"
+      ]
     },
     {
       "latin": "candidus",
@@ -15,9 +24,31 @@
       "period": "classical",
       "gloss": "shining white",
       "evidence": [
-        "Traupman 251–252"
+        "Traupman 251–252",
+        "Traupman 252: shiny white"
       ],
       "comment": "Traupman pairs <strong lang=\"la\">albus / candidus</strong>: dull white / shining white."
+    },
+    {
+      "latin": "niveus, nivea, niveum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "snow-white",
+      "register": "vōx plērumque poētica: Verg., Ov.",
+      "evidence": [
+        "Verg. G. 3.354 (Lewis &amp; Short)",
+        "Traupman 252"
+      ]
+    },
+    {
+      "latin": "crētāceus, crētācea, crētāceum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "chalky, dull white",
+      "evidence": [
+        "Plin. NH 18.86 (Lewis &amp; Short)",
+        "Traupman 252"
+      ]
     }
   ],
   "related": [
@@ -27,11 +58,14 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/albus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: albus</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 251–252."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 251–252.",
+    "<a href=\"https://logeion.uchicago.edu/niveus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: niveus</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "<a href=\"https://logeion.uchicago.edu/cretaceus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cretaceus</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

@@ -2,13 +2,63 @@
   "id": "yellow",
   "english": "yellow",
   "pos": "adjective",
+  "also": [
+    "deep yellow",
+    "lemon yellow",
+    "golden yellow",
+    "pale yellow",
+    "egg-yolk yellow"
+  ],
   "domain": "sermo",
   "terms": [
     {
       "latin": "flāvus, flāva, flāvum",
       "status": "recommended",
       "period": "classical",
-      "gloss": "yellow or golden"
+      "gloss": "yellow or golden",
+      "evidence": [
+        "Traupman 252"
+      ]
+    },
+    {
+      "latin": "lūteus, lūtea, lūteum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "deep yellow, saffron-yellow",
+      "evidence": [
+        "Lewis &amp; Short s.v. <span lang=\"la\">lūteus</span> (1)",
+        "Traupman 251, 252"
+      ]
+    },
+    {
+      "latin": "lūteolus, lūteola, lūteolum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "yellowish, pale yellow",
+      "evidence": [
+        "Verg. Ecl. 2.50: <span lang=\"la\">lūteolā … calthā</span> (Lewis &amp; Short)",
+        "Traupman 252"
+      ]
+    },
+    {
+      "latin": "citreus, citrea, citreum",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "lemon yellow",
+      "evidence": [
+        "Traupman 252"
+      ],
+      "comment": "Classically “of the citrus tree” (Lewis &amp; Short); its use as a colour is modern."
+    },
+    {
+      "latin": "vitellīnus, vitellīna, vitellīnum",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "egg-yolk yellow",
+      "evidence": [
+        "Traupman 252"
+      ],
+      "comment": "Not in Lewis &amp; Short; from <span lang=\"la\">vitellus</span>, yolk."
     }
   ],
   "related": [
@@ -17,11 +67,16 @@
     "yellowish"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/flavus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: flavus</a>"
+    "<a href=\"https://logeion.uchicago.edu/flavus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: flavus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, cited by printed page; each phrase checked against the searchable text of the book.",
+    "<a href=\"https://logeion.uchicago.edu/luteus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: luteus</a>",
+    "<a href=\"https://logeion.uchicago.edu/luteolus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: luteolus</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "<a href=\"https://logeion.uchicago.edu/citreus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: citreus</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

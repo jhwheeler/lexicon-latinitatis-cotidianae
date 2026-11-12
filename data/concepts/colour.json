@@ -6,7 +6,10 @@
     "color",
     "hue",
     "shade (of a colour)",
-    "tone (of a colour)"
+    "tone (of a colour)",
+    "to colour",
+    "what colour is it?",
+    "what color is the house?"
   ],
   "domain": "sermo",
   "terms": [
@@ -14,7 +17,10 @@
       "latin": "color, colōris m.",
       "status": "recommended",
       "period": "classical",
-      "comment": "Plural <strong lang=\"la\">colōrēs</strong>, colours."
+      "comment": "Plural <strong lang=\"la\">colōrēs</strong>, colours.",
+      "evidence": [
+        "Traupman 251"
+      ]
     },
     {
       "latin": "tonus, tonī m.",
@@ -25,6 +31,15 @@
         "Plin. NH 35.29 (Lewis &amp; Short)"
       ],
       "comment": "A Greek term of the painters: Lewis &amp; Short, “like our tone, in painting, of the natural color of an object”. Otherwise a tone of the voice or a musical note (Vitruvius). In everyday speech <span lang=\"la\">color</span> serves for a shade or tone."
+    },
+    {
+      "latin": "colōrō, colōrāre, colōrāvī, colōrātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "to colour",
+      "evidence": [
+        "Traupman 251"
+      ]
     }
   ],
   "phrases": [
@@ -32,6 +47,16 @@
       "latin": "Quō colōre est?",
       "english": "What colour is it?",
       "source": "composed"
+    },
+    {
+      "latin": "Quō colōre est domus tua?",
+      "english": "What colour is your house?",
+      "source": "Traupman 252"
+    },
+    {
+      "latin": "Cujus colōris est domus tua?",
+      "english": "What colour is your house?",
+      "source": "Traupman 252"
     }
   ],
   "related": [
@@ -56,11 +81,13 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/color\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: color</a> · <a href=\"https://logeion.uchicago.edu/tonus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tonus</a>",
-    "The example sentence marked “composed” is ours."
+    "The example sentence marked “composed” is ours.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, cited by printed page; each phrase checked against the searchable text of the book.",
+    "<a href=\"https://logeion.uchicago.edu/coloro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: coloro</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   },
   "replaces": [

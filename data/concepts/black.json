@@ -2,12 +2,21 @@
   "id": "black",
   "english": "black",
   "pos": "adjective",
+  "also": [
+    "pitch-black",
+    "jet black",
+    "dull black",
+    "glossy black"
+  ],
   "domain": "sermo",
   "terms": [
     {
       "latin": "niger, nigra, nigrum",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "evidence": [
+        "Traupman 251: glossy black"
+      ]
     },
     {
       "latin": "āter",
@@ -15,9 +24,20 @@
       "period": "classical",
       "gloss": "dull black",
       "evidence": [
-        "Traupman 251–252"
+        "Traupman 251–252",
+        "Traupman 251: dull black"
       ],
       "comment": "Traupman pairs <strong lang=\"la\">āter / niger</strong>: dull black / shiny black."
+    },
+    {
+      "latin": "piceus, picea, piceum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "pitch-black",
+      "evidence": [
+        "Verg. G. 2.308: <span lang=\"la\">piceā crassus cālīgine</span> (Lewis &amp; Short)",
+        "Traupman 251"
+      ]
     }
   ],
   "related": [
@@ -28,11 +48,13 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/niger\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: niger</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 251–252."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 251–252.",
+    "<a href=\"https://logeion.uchicago.edu/piceus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: piceus</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

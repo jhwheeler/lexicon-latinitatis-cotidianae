@@ -2,6 +2,9 @@
   "id": "golden",
   "english": "golden",
   "pos": "adjective",
+  "also": [
+    "golden yellow"
+  ],
   "domain": "sermo",
   "terms": [
     {
@@ -9,7 +12,18 @@
       "status": "recommended",
       "period": "classical",
       "evidence": [
-        "Traupman 251–252"
+        "Traupman 251–252",
+        "Traupman 251, 252: golden yellow"
+      ]
+    },
+    {
+      "latin": "aureolus, aureola, aureolum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "golden (diminutive)",
+      "evidence": [
+        "Plaut. Ep. 5.1.34: <span lang=\"la\">ānellus</span> (Lewis &amp; Short)",
+        "Traupman 251"
       ]
     }
   ],
@@ -19,11 +33,13 @@
     "orange-colour"
   ],
   "sources": [
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 251–252."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 251–252.",
+    "<a href=\"https://logeion.uchicago.edu/aureolus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aureolus</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

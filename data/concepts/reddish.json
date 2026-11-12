@@ -2,6 +2,11 @@
   "id": "reddish",
   "english": "reddish",
   "pos": "adjective",
+  "also": [
+    "ruddy",
+    "flushed",
+    "rosy-cheeked"
+  ],
   "domain": "sermo",
   "terms": [
     {
@@ -12,6 +17,46 @@
         "Traupman 252"
       ],
       "comment": "The prefix <strong lang=\"la\">sub-</strong> makes “-ish”."
+    },
+    {
+      "latin": "rubellus, rubella, rubellum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "reddish",
+      "evidence": [
+        "Mart. 1.104.9 (Lewis &amp; Short)",
+        "Traupman 252"
+      ]
+    },
+    {
+      "latin": "rūfulus, rūfula, rūfulum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "reddish (of hair)",
+      "evidence": [
+        "Plaut. As. 2.3.20 (Lewis &amp; Short)",
+        "Traupman 252"
+      ]
+    },
+    {
+      "latin": "rubicundus, rubicunda, rubicundum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "ruddy, flushed (of the skin)",
+      "evidence": [
+        "Plaut. Ps. 4.7.121: <span lang=\"la\">rūfus quīdam, ōre rubicundō</span> (Lewis &amp; Short)",
+        "Traupman 252"
+      ]
+    },
+    {
+      "latin": "subrūfus, subrūfa, subrūfum",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "reddish (of hair)",
+      "evidence": [
+        "Traupman 252"
+      ],
+      "comment": "Not in Lewis &amp; Short."
     }
   ],
   "related": [
@@ -21,11 +66,15 @@
     "yellowish"
   ],
   "sources": [
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 252."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 252.",
+    "<a href=\"https://logeion.uchicago.edu/rubellus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: rubellus</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "<a href=\"https://logeion.uchicago.edu/rufulus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: rufulus</a>",
+    "<a href=\"https://logeion.uchicago.edu/rubicundus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: rubicundus</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

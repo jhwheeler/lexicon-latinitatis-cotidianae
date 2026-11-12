@@ -5,7 +5,10 @@
   "also": [
     "grey hair",
     "white hair",
-    "gray-haired"
+    "gray-haired",
+    "go grey",
+    "turn grey",
+    "be grey"
   ],
   "domain": "corpus",
   "terms": [
@@ -16,8 +19,36 @@
       "evidence": [
         "M-O s.v. color: gray-haired",
         "Plaut.",
-        "Hor."
+        "Hor.",
+        "Traupman 251"
       ]
+    },
+    {
+      "latin": "cāneō, cānēre, cānuī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "be grey (white), be hoary",
+      "evidence": [
+        "Lewis &amp; Short: poetic and post-Augustan prose",
+        "Traupman 251"
+      ]
+    },
+    {
+      "latin": "cānēscō, cānēscere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "grow grey",
+      "evidence": [
+        "Ov. Met. 2.212 (Lewis &amp; Short)",
+        "Traupman 251"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "cānō capite esse",
+      "english": "to be grey-haired",
+      "source": "Traupman 251"
     }
   ],
   "related": [
@@ -25,11 +56,15 @@
   ],
   "sources": [
     "<a href=\"https://logeion.org/canus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: canus</a>",
-    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. color: gray-haired."
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. color: gray-haired.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, cited by printed page; each phrase checked against the searchable text of the book.",
+    "<a href=\"https://logeion.uchicago.edu/caneo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: caneo</a>",
+    "<a href=\"https://logeion.uchicago.edu/canesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: canesco</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

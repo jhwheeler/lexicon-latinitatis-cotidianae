@@ -6,7 +6,9 @@
     "mourning",
     "mourn",
     "feel grief",
-    "get over (grief)"
+    "get over (grief)",
+    "sorrow",
+    "grieve"
   ],
   "domain": "verba",
   "terms": [
@@ -17,8 +19,11 @@
       "gloss": "grief, mourning, sorrow",
       "evidence": [
         "Cic. Tusc. 4.18 (Lewis &amp; Short)",
-        "Traupman 153, 156"
-      ]
+        "Traupman 153, 156",
+        "Cic. Tusc. 4.18: <span lang=\"la\">maeror est aegritūdō flēbilis</span> (Lewis &amp; Short)",
+        "Traupman 324"
+      ],
+      "comment": "Grief that weeps and shows itself: Cicero defines it as a tearful sorrow."
     },
     {
       "latin": "lūgeō, lūgēre, lūxī, lūctum",
@@ -35,8 +40,11 @@
       "period": "classical",
       "gloss": "to feel pain, grieve",
       "evidence": [
-        "Traupman 153"
-      ]
+        "Traupman 153",
+        "Plaut. Truc. 2.8.2: <span lang=\"la\">mihi … condoluit caput</span> (Lewis &amp; Short)",
+        "Traupman 324"
+      ],
+      "comment": "Lewis &amp; Short gives it of physical pain above all (<span lang=\"la\">dēns, pēs condoluit</span>); of grief it is less common."
     },
     {
       "latin": "superō, superāre, superāvī, superātum",
@@ -46,17 +54,35 @@
       "evidence": [
         "Traupman 153"
       ]
+    },
+    {
+      "latin": "dolor, dolōris m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "pain, grief",
+      "comment": "Pain of body or mind; Cicero sets the two side by side: <span lang=\"la\">maerōrem minuī; dolōrem nec potuī</span> (Att. 12.28.2, Lewis &amp; Short s.v. <span lang=\"la\">maeror</span>)."
+    },
+    {
+      "latin": "luctus, luctūs m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "mourning (for the dead)"
     }
   ],
   "related": [
-    "sadness"
+    "sadness",
+    "sad",
+    "recover"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/maeror\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: maeror</a>",
     "<a href=\"https://logeion.uchicago.edu/lugeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lugeo</a>",
     "<a href=\"https://logeion.uchicago.edu/condolesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: condolesco</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, each phrase checked against the searchable text of the book.",
-    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "<a href=\"https://logeion.uchicago.edu/dolor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dolor</a>",
+    "<a href=\"https://logeion.uchicago.edu/luctus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: luctus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 324."
   ],
   "review": {
     "status": "draft",

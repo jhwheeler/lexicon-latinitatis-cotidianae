@@ -7,7 +7,11 @@
     "as far as I’m concerned",
     "it’s no concern of yours",
     "apply to",
-    "relate to"
+    "relate to",
+    "as far as I am concerned",
+    "for all I care",
+    "it doesn’t matter to me",
+    "it has nothing to do with me"
   ],
   "domain": "verba",
   "terms": [
@@ -30,7 +34,8 @@
       "gloss": "it concerns, it relates to",
       "grammar": "verb: third person of pertineō, with ad and the accusative",
       "evidence": [
-        "Cic. Rosc. Am. 36: <span lang=\"la\">illa rēs ad meum officium pertinet</span> (Lewis &amp; Short)"
+        "Cic. Rosc. Am. 36: <span lang=\"la\">illa rēs ad meum officium pertinet</span> (Lewis &amp; Short)",
+        "Traupman 103: it doesn’t matter to me, <span lang=\"la\">nihil ad mē pertinet</span>"
       ]
     },
     {
@@ -44,6 +49,18 @@
         "Traupman 294, 302"
       ],
       "comment": "<span lang=\"la\">Interest</span> is used the same way: <span lang=\"la\">meā interest</span>, it matters to me (Traupman 302)."
+    },
+    {
+      "latin": "per mē (licet)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "as far as I’m concerned, for all I care",
+      "grammar": "per with the accusative of the person: “as far as it depends on me”; usually with licet",
+      "evidence": [
+        "Cic. Ac. 2.29.93: <span lang=\"la\">per mē vel stertās licet</span> (Lewis &amp; Short), s.v. <span lang=\"la\">per</span>",
+        "Traupman 98"
+      ],
+      "comment": "Lewis &amp; Short s.v. <span lang=\"la\">per</span>: “as far as concerns me, you”. With <span lang=\"la\">licet</span> it gives leave: <span lang=\"la\">per mē licet</span>, I have no objection."
     }
   ],
   "phrases": [
@@ -78,11 +95,13 @@
     "<a href=\"https://logeion.uchicago.edu/attineo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: attineo</a> · <a href=\"https://logeion.uchicago.edu/pertineo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pertineo</a> · <a href=\"https://logeion.uchicago.edu/refert\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: refert</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 294, 302, checked against the searchable text of the book (9 November 2026).",
     "Quotations of Plautus (Leo, 1896; cited by his lines), Terence (Parry, 1857; cited by the lines of the Oxford text) and Horace (Fairclough, 1929) that are not in the loci collections were checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
-    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition.",
+    "<a href=\"https://logeion.uchicago.edu/per\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: per</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 98, checked against the searchable text and the page image (12 November 2026)."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

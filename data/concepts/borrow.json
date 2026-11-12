@@ -6,7 +6,10 @@
     "borrowing",
     "borrow money",
     "can I borrow",
-    "may I borrow"
+    "may I borrow",
+    "hit someone for a loan",
+    "may I hit you for a loan?",
+    "touch someone for money"
   ],
   "domain": "pecunia",
   "also_under": [
@@ -46,6 +49,19 @@
         "Caes. BC 1.39.3: <span lang=\"la\">ā tribūnīs mīlitum centuriōnibusque mūtuās pecūniās sūmpsit</span>",
         "Cic. Phil. 10.26: <span lang=\"la\">pecūniāsque … mūtuās sūmat</span>"
       ]
+    },
+    {
+      "latin": "ferīre (aliquem)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "hit (someone) for money, touch for a loan",
+      "grammar": "feriō, fourth conjugation, with the person as object; Traupman adds mūtuō (argentō)",
+      "register": "vōx cōmica: Plaut., Ter.",
+      "evidence": [
+        "Ter. Ph. 1.1.13 (Lewis &amp; Short), s.v. <span lang=\"la\">feriō</span>: “to cozen, cheat, gull, trick (mostly in vulg. lang.; not in Cic.)”",
+        "Traupman 100, 102: <span lang=\"la\">ferīre aliquem mūtuō argentō</span>; <span lang=\"la\">licet tē mūtuō ferīre?</span>"
+      ],
+      "comment": "Comic slang, “to strike” someone for money; it leans to fleecing rather than honest borrowing. The plain way is <span lang=\"la\">mūtuārī</span>."
     }
   ],
   "phrases": [
@@ -75,7 +91,10 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/mutuor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mutuor</a> · <a href=\"https://logeion.uchicago.edu/mutuus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mutuus</a> · <a href=\"https://logeion.uchicago.edu/utor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: utor</a>",
     "Cicero, Plautus, Cato and Caesar checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026).",
-    "Quotations from the Latinitas loci collections (loci-quintilianus), checked against the editions named there."
+    "Quotations from the Latinitas loci collections (loci-quintilianus), checked against the editions named there.",
+    "<a href=\"https://logeion.uchicago.edu/ferio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ferio</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 100, checked against the searchable text and the page image (12 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",

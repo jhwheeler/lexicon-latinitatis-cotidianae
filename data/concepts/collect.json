@@ -3,7 +3,10 @@
   "english": "collect",
   "pos": "verb",
   "also": [
-    "gather"
+    "gather",
+    "round up",
+    "gather together",
+    "drive together"
   ],
   "domain": "domus",
   "terms": [
@@ -12,6 +15,19 @@
       "status": "recommended",
       "period": "classical",
       "gloss": "gather"
+    },
+    {
+      "latin": "cōgō, cōgere, coēgī, coāctum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "round up, drive together, collect",
+      "grammar": "verb, third conjugation, transitive; of animals, people, fruit",
+      "evidence": [
+        "Plaut. Bacch. 5.2.15: <span lang=\"la\">cōgantur (ovēs) intrō</span> (Lewis &amp; Short)",
+        "Cato Agr. 64.1: <span lang=\"la\">oleam</span> (cōgere), to gather (Lewis &amp; Short)",
+        "Traupman 107: round up, <span lang=\"la\">cōgō, cōgere, coēgī, coāctum</span>"
+      ],
+      "comment": "From <span lang=\"la\">co-agō</span>, “drive together”: the shepherd’s verb for bringing in the flock."
     }
   ],
   "phrases": [
@@ -27,11 +43,13 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/colligo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: colligo</a>",
-    "The example sentence marked “composed” is ours."
+    "The example sentence marked “composed” is ours.",
+    "<a href=\"https://logeion.uchicago.edu/cogo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cogo</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

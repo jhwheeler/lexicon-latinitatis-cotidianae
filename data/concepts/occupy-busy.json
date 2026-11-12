@@ -10,7 +10,9 @@
     "occupied",
     "be occupied with",
     "keep someone occupied",
-    "take up (time)"
+    "take up (time)",
+    "be tied up (with business)",
+    "tie up"
   ],
   "domain": "verba",
   "terms": [
@@ -57,6 +59,18 @@
         "Traupman 285"
       ],
       "comment": "Busy with affairs and work; also of a thing that gives much work (<span lang=\"la\">prōvincia negōtiōsa</span>, Cic. Mur. 18)."
+    },
+    {
+      "latin": "impedior, impedīrī, impedītus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "be tied up, held up (by business)",
+      "grammar": "passive of impediō, impedīre, impedīvī, impedītum, to shackle",
+      "evidence": [
+        "Auct. Her. 1.1: <span lang=\"la\">negōtiīs familiāribus impedītī</span> (Lewis &amp; Short s.v. <span lang=\"la\">familiāris</span>)",
+        "Traupman 109"
+      ],
+      "comment": "Literally “to have one’s feet caught”: <span lang=\"la\">in-</span> and <span lang=\"la\">pēs</span>."
     }
   ],
   "phrases": [
@@ -78,11 +92,14 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/occupo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: occupo</a> · <a href=\"https://logeion.uchicago.edu/detineo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: detineo</a> · <a href=\"https://logeion.uchicago.edu/negotiosus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: negotiosus</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 285, checked against the searchable text of the book (11 November 2026).",
-    "Quotations from the Latinitas loci collections (loci-cicero-philosophica, loci-corderius), checked against the editions named there."
+    "Quotations from the Latinitas loci collections (loci-cicero-philosophica, loci-corderius), checked against the editions named there.",
+    "<a href=\"https://logeion.uchicago.edu/impedio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: impedio</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 109."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

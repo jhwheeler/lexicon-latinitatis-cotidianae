@@ -9,7 +9,10 @@
     "though",
     "yet",
     "but yet",
-    "still"
+    "still",
+    "for all that",
+    "just the same",
+    "anyhow"
   ],
   "domain": "verba",
   "terms": [
@@ -22,7 +25,8 @@
       "evidence": [
         "Cic. Att. 12.41.1: <span lang=\"la\">scīre tamen volēbam ubi essēs</span>",
         "Cic. Fam. 9.20.2: <span lang=\"la\">sine pāvōne tamen</span>",
-        "Hor. Ep. 1.10.24"
+        "Hor. Ep. 1.10.24",
+        "Traupman 101: just the same"
       ],
       "comment": "The “however” that answers a concession, said or understood (<span lang=\"la\">etsī, quamquam, quamvīs, cum</span>): “even so”. With <span lang=\"la\">sed</span> or <span lang=\"la\">at</span>, “but yet”: <span lang=\"la\">sed tamen</span>."
     },
@@ -57,6 +61,21 @@
         "Cic. Off. 1.51: <span lang=\"la\">nihilō minus ipsī lūcet</span>",
         "Cato Agr. 39.2: <span lang=\"la\">nihilō minus sūmptum futūrum</span>"
       ]
+    },
+    {
+      "latin": "nihilō sētius",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "nonetheless, just the same, for all that",
+      "grammar": "adverb phrase: nihilō, ablative of measure, with the comparative sētius “less”",
+      "evidence": [
+        "Ter. And. 3.2.27; Caes. BG 1.49; 4.17 (Lewis &amp; Short), s.v. <span lang=\"la\">secus</span>",
+        "Traupman 98, 101"
+      ],
+      "comment": "“By nothing the less”; so <span lang=\"la\">nec eō sētius</span> (Suet., Nep., Lewis &amp; Short). The same as <span lang=\"la\">nihilō minus</span>.",
+      "notes": [
+        "setius"
+      ]
     }
   ],
   "phrases": [
@@ -87,11 +106,24 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/tamen\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tamen</a> · <a href=\"https://logeion.uchicago.edu/autem\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: autem</a> · <a href=\"https://logeion.uchicago.edu/verumtamen\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: verumtamen</a> · <a href=\"https://logeion.uchicago.edu/nihil\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nihil (nihilominus)</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 330.",
-    "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-cicero-philosophica, loci-cato, loci-horatius, loci-ovidius), checked against the editions named there."
+    "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-cicero-philosophica, loci-cato, loci-horatius, loci-ovidius), checked against the editions named there.",
+    "<a href=\"https://logeion.uchicago.edu/secus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: secus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 98, checked against the searchable text and the page image (12 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "Michiel de Vaan, <em>Etymological Dictionary of Latin and the other Italic Languages</em> (2008), p. 559.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 101, checked against the searchable text and the page image (12 November 2026)."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
+  },
+  "notes": {
+    "setius": {
+      "form": "nihilō sētius",
+      "claim": "long e, short i",
+      "against": "Lewis &amp; Short <span lang=\"la\">setīus</span>, which marks the i of the comparative ending",
+      "html": "De Vaan 559 places <span lang=\"la\">sētius</span> beside <span lang=\"la\">sērus</span> “late” (PIE *seh₁-), whose e is long; the ending is the short comparative ending of <span lang=\"la\">citius</span>, with which de Vaan pairs it s.v. <span lang=\"la\">diūtinus</span>. Traupman prints <span lang=\"la\">sētius</span>."
+    }
   }
 }

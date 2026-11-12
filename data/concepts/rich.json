@@ -8,7 +8,11 @@
     "well off",
     "well-to-do",
     "the rich",
-    "rich man"
+    "rich man",
+    "loaded with money",
+    "loaded",
+    "well supplied",
+    "he’s worth a lot of money"
   ],
   "domain": "pecunia",
   "also_under": [
@@ -48,6 +52,17 @@
         "Plaut. Trin. 493: <span lang=\"la\">aequō mendīcus atque ille opulentissimus</span>",
         "Sall. Jug. 16.5 (Lewis &amp; Short)"
       ]
+    },
+    {
+      "latin": "cōpiōsus, cōpiōsa, cōpiōsum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "well supplied, wealthy",
+      "grammar": "adjective, first and second declension; with the ablative of what one has",
+      "evidence": [
+        "Cic. Cat. 2.18: <span lang=\"la\">tū agrīs, tū aedificiīs, tū argentō, tū familiā, tū rēbus omnibus ōrnātus et cōpiōsus sīs</span> (Lewis &amp; Short)",
+        "Traupman 102: loaded with money"
+      ]
     }
   ],
   "phrases": [
@@ -60,6 +75,11 @@
       "latin": "Nōn temerārium est, ubi dīves blandē appellat pauperem. jam illic homō aurum scit mē habēre, eō mē salūtat blandius.",
       "english": "It’s no accident when a rich man speaks sweetly to a poor one: he must know I have gold, that’s why he greets me so sweetly.",
       "source": "Plaut. Aul. 184–185"
+    },
+    {
+      "latin": "Dīvitiās maximās habet.",
+      "english": "He’s worth a lot of money.",
+      "source": "Traupman 112"
     }
   ],
   "related": [
@@ -73,11 +93,14 @@
     "<a href=\"https://logeion.uchicago.edu/dives\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dives</a> · <a href=\"https://logeion.uchicago.edu/locuples\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: locuples</a> · <a href=\"https://logeion.uchicago.edu/opulentus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: opulentus</a>",
     "Plautus and Horace checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026).",
     "Quotations from the Latinitas loci collections (loci-seneca-epistulae), checked against the editions named there.",
-    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition."
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition.",
+    "<a href=\"https://logeion.uchicago.edu/copiosus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: copiosus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 102, checked against the searchable text and the page image (12 November 2026).",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 112."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

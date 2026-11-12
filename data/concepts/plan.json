@@ -4,7 +4,10 @@
   "sense": "of action",
   "pos": "noun",
   "also": [
-    "strategy"
+    "strategy",
+    "make plans",
+    "make plans for the trip",
+    "plan a trip"
   ],
   "domain": "computatra",
   "terms": [
@@ -13,6 +16,17 @@
       "status": "recommended",
       "period": "classical",
       "gloss": "plan, intention or design"
+    },
+    {
+      "latin": "cōnsilium capere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "make a plan, form a plan, decide",
+      "grammar": "phrase: dē with the ablative of what is planned, or ut with the subjunctive",
+      "evidence": [
+        "Caes. BG 3.2: <span lang=\"la\">id acciderat, ut Gallī cōnsilium caperent</span> (Lewis &amp; Short s.v. <span lang=\"la\">accidō</span>)",
+        "Traupman 105: to make plans for the trip, <span lang=\"la\">cōnsilium capere dē itinere</span>"
+      ]
     }
   ],
   "phrases": [
@@ -25,6 +39,11 @@
       "latin": "Cōnsilium investīgātiōnis",
       "english": "a research plan (a descriptive phrase)",
       "source": "composed"
+    },
+    {
+      "latin": "Cōnsilium capiāmus dē itinere.",
+      "english": "Let’s make plans for the trip.",
+      "source": "Traupman 105"
     }
   ],
   "related": [
@@ -32,11 +51,13 @@
   ],
   "sources": [
     "<a href=\"https://alatius.com/ls/index.php?l=consilium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: consilium</a>. Dictionary links support the component words; the modern technical expressions are labelled separately.",
-    "The example sentences marked “composed” are ours."
+    "The example sentences marked “composed” are ours.",
+    "<a href=\"https://logeion.uchicago.edu/consilium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: consilium</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

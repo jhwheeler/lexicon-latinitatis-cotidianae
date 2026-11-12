@@ -11,7 +11,8 @@
     "need to",
     "needn’t",
     "don’t need to",
-    "don’t have to"
+    "don’t have to",
+    "if it’s necessary for your health"
   ],
   "domain": "verba",
   "terms": [
@@ -50,7 +51,8 @@
       "grammar": "phrase: what is needed in the ablative or as the subject",
       "evidence": [
         "Quint. 6.3.66: <span lang=\"la\">nōn pluit, nōn opus est tibi</span>",
-        "Sen. Ep. 80.4: <span lang=\"la\">quid tibi opus est ut sīs bonus?</span>"
+        "Sen. Ep. 80.4: <span lang=\"la\">quid tibi opus est ut sīs bonus?</span>",
+        "Cic. Fam. 16.4.2: <span lang=\"la\">quod ad valētūdinem opus sit</span> (Lewis &amp; Short s.v. <span lang=\"la\">opus</span>)"
       ],
       "comment": "Not necessary: <span lang=\"la\">nihil opus est</span> (see require)."
     }
@@ -75,6 +77,11 @@
       "latin": "nec ultrā voluī legere nec opus erat",
       "english": "I didn’t want to read any further, and there was no need",
       "source": "Aug. Conf. 8.12.29"
+    },
+    {
+      "latin": "Sī opus est ad valētūdinem …",
+      "english": "If it is necessary for your health …",
+      "source": "Traupman 104"
     }
   ],
   "notes": {
@@ -91,11 +98,12 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/necessarius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: necessarius</a> · <a href=\"https://logeion.uchicago.edu/necesse\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: necesse</a> · <a href=\"https://logeion.uchicago.edu/opus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: opus</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 56, 350, checked against the searchable text of the book (9 November 2026).",
-    "Quotations from the Latinitas loci collections (loci-augustinus, loci-cicero-epistulae, loci-horatius, loci-publilius, loci-quintilianus, loci-seneca-epistulae), checked against the editions named there."
+    "Quotations from the Latinitas loci collections (loci-augustinus, loci-cicero-epistulae, loci-horatius, loci-publilius, loci-quintilianus, loci-seneca-epistulae), checked against the editions named there.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

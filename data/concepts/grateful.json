@@ -6,7 +6,9 @@
     "thankful",
     "be grateful",
     "gratitude",
-    "ungrateful"
+    "ungrateful",
+    "I am thankful to you",
+    "you ought to be thankful to me"
   ],
   "domain": "verba",
   "terms": [
@@ -29,7 +31,8 @@
       "gloss": "be grateful, feel thankful",
       "grammar": "phrase: grātiam (singular) habēre, with the dative of the person and quod or an infinitive for the reason",
       "evidence": [
-        "Ter. Ph. 54: <span lang=\"la\">Amō tē, et nōn neglēxisse habeō grātiam.</span>"
+        "Ter. Ph. 54: <span lang=\"la\">Amō tē, et nōn neglēxisse habeō grātiam.</span>",
+        "Traupman 109: <span lang=\"la\">grātiam tibi habeō</span>"
       ],
       "comment": "Latin keeps three things apart: <span lang=\"la\">grātiam habēre</span>, to feel grateful; <span lang=\"la\">grātiās agere</span>, to say thank you (see give thanks); <span lang=\"la\">grātiam referre</span>, to repay a kindness (Lewis &amp; Short, s.v. <span lang=\"la\">grātia</span>)."
     }
@@ -49,6 +52,11 @@
       "latin": "Dīxeris maledicta cūncta, cum ingrātum hominem dīxeris.",
       "english": "Call a man ungrateful and you have called him every bad name there is.",
       "source": "Publ. D 4"
+    },
+    {
+      "latin": "Grātiam habeās mihi.",
+      "english": "You ought to be thankful to me.",
+      "source": "Traupman 109"
     }
   ],
   "related": [
@@ -58,11 +66,12 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/gratus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gratus</a> · <a href=\"https://logeion.uchicago.edu/gratia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gratia</a>",
-    "Cicero’s letters and Terence checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026). Publilius Syrus from the Latinitas loci collection loci-publilius, checked against the edition named there."
+    "Cicero’s letters and Terence checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026). Publilius Syrus from the Latinitas loci collection loci-publilius, checked against the edition named there.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 109."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

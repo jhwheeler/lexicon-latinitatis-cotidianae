@@ -7,7 +7,9 @@
     "I think",
     "suppose",
     "in my opinion",
-    "what do you think?"
+    "what do you think?",
+    "I suppose (parenthetical)",
+    "I take it"
   ],
   "domain": "verba",
   "terms": [
@@ -51,9 +53,21 @@
       "gloss": "think, be of the opinion; think it best",
       "evidence": [
         "Plaut. Ps. 664–665: <span lang=\"la\">Sānē cēnseō.</span>",
-        "Cic. de Or. 2.367: <span lang=\"la\">surgendum cēnseō et requiēscendum</span>"
+        "Cic. de Or. 2.367: <span lang=\"la\">surgendum cēnseō et requiēscendum</span>",
+        "Traupman 109: <span lang=\"la\">quid cēnsēs?</span>, what do you think?"
       ],
       "comment": "<span lang=\"la\">Quid cēnsēs?</span> asks “What do you think?”; with a gerundive it gives advice: <span lang=\"la\">surgendum cēnseō</span>, I think we should get up."
+    },
+    {
+      "latin": "ut opīnor",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "I suppose, I take it (parenthetical)",
+      "grammar": "parenthetical clause",
+      "evidence": [
+        "Cic. Fl. 27: <span lang=\"la\">namque, ut opīnor, Asia vestra cōnstat ex Phrygiā …</span> (Lewis &amp; Short)",
+        "Traupman 108, 109"
+      ]
     }
   ],
   "phrases": [
@@ -83,11 +97,14 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/puto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: puto</a> · <a href=\"https://logeion.uchicago.edu/opinor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: opinor</a> · <a href=\"https://logeion.uchicago.edu/arbitror\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: arbitror</a> · <a href=\"https://logeion.uchicago.edu/censeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: censeo</a>",
     "Quotations from the Latinitas loci collections (loci-catullus, loci-cicero-epistulae, loci-cicero-philosophica, loci-plautus), as checked there against the editions they name.",
-    "Cic. Off. 1.81 and de Or. 2.367 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+    "Cic. Off. 1.81 and de Or. 2.367 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 108.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 109."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

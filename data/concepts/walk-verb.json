@@ -9,7 +9,8 @@
     "take a walk",
     "on foot",
     "go on foot",
-    "stroll"
+    "stroll",
+    "would you like to take a stroll?"
   ],
   "domain": "corpus",
   "terms": [
@@ -55,6 +56,16 @@
         "Traupman 403"
       ],
       "comment": "Rare (Lewis &amp; Short). Short <span lang=\"la\">de-</span> before a vowel, as Lewis &amp; Short marks it (<span lang=\"la\">dĕambulo</span>), against Traupman’s <span lang=\"la\">dēambulāre</span>."
+    },
+    {
+      "latin": "spatior, spatiārī, spatiātus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "take a walk, stroll about",
+      "evidence": [
+        "Cic. Rosc. Am. 59: <span lang=\"la\">cum resideret, deinde spatiārētur</span> (Lewis &amp; Short)",
+        "Traupman 108"
+      ]
     }
   ],
   "phrases": [
@@ -72,6 +83,11 @@
       "latin": "Parā tē, ut eāmus ambulātum.",
       "english": "Get ready, so that we can go for a walk.",
       "source": "Cord. Coll. 1.24 (one transcription only)"
+    },
+    {
+      "latin": "Velīsne spatiārī?",
+      "english": "Would you like to take a stroll?",
+      "source": "Traupman 108"
     }
   ],
   "related": [
@@ -85,11 +101,14 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/ambulo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ambulo</a> · <a href=\"https://logeion.uchicago.edu/pes\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pes</a> · <a href=\"https://logeion.uchicago.edu/inambulo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: inambulo</a> · <a href=\"https://logeion.uchicago.edu/deambulo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: deambulo</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 403, checked against the searchable text of the book.",
-    "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-cicero-philosophica, loci-corderius), checked against the editions named there."
+    "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-cicero-philosophica, loci-corderius), checked against the editions named there.",
+    "<a href=\"https://logeion.uchicago.edu/spatior\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: spatior</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 108."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

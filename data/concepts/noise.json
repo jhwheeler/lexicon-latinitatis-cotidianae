@@ -8,7 +8,12 @@
     "din",
     "racket",
     "clatter",
-    "make a noise"
+    "make a noise",
+    "raise a racket",
+    "make a racket",
+    "raise a rumpus",
+    "ruckus",
+    "why are you raising such a ruckus?"
   ],
   "domain": "verba",
   "terms": [
@@ -54,6 +59,28 @@
         "Liv. 5.47.4: <span lang=\"la\">ālārumque crepitū</span>"
       ],
       "comment": "A sharp, short noise: the flapping of wings, the creak of a door, the crackle of fire."
+    },
+    {
+      "latin": "clāmōrem tollere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "raise a shout, make a racket",
+      "grammar": "phrase: tollō, tollere, sustulī, sublātum",
+      "evidence": [
+        "Cic. Div. 1.79: <span lang=\"la\">quō aspectū exterrita clāmōrem sustulit</span> (Lewis &amp; Short s.v. <span lang=\"la\">exterreō</span>)",
+        "Traupman 106: to raise a racket, <span lang=\"la\">clāmōrem tollere</span>",
+        "Traupman 107: why are you raising such a ruckus?, <span lang=\"la\">quid istum clāmōrem tollis (pl. tollitis)?</span>"
+      ]
+    },
+    {
+      "latin": "turbās dare",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "raise a rumpus, make trouble",
+      "evidence": [
+        "Traupman 106: raise a rumpus, <span lang=\"la\">turbās dare</span>"
+      ],
+      "comment": "Traupman’s phrase; neither Lewis &amp; Short nor the loci collections quote it. <span lang=\"la\">Turba</span> in comedy is an uproar or a fuss."
     }
   ],
   "phrases": [
@@ -66,6 +93,11 @@
       "latin": "ecce undique mē varius clāmor circumsonat: suprā ipsum balneum habitō",
       "english": "listen: noise of every kind surrounds me; I live right above a bath-house",
       "source": "Sen. Ep. 56.1"
+    },
+    {
+      "latin": "Quid istum clāmōrem tollis?",
+      "english": "Why are you raising such a ruckus?",
+      "source": "Traupman 107"
     }
   ],
   "related": [
@@ -78,11 +110,14 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/strepitus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: strepitus</a> · <a href=\"https://logeion.uchicago.edu/sonitus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sonitus</a> · <a href=\"https://logeion.uchicago.edu/clamor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: clamor</a> · <a href=\"https://logeion.uchicago.edu/crepitus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: crepitus</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 276, 368.",
-    "Quotations from the Latinitas loci collections (loci-livius, loci-seneca-epistulae, loci-vergilius), checked against the editions named there. Caesar as Lewis &amp; Short quotes him."
+    "Quotations from the Latinitas loci collections (loci-livius, loci-seneca-epistulae, loci-vergilius), checked against the editions named there. Caesar as Lewis &amp; Short quotes him.",
+    "<a href=\"https://logeion.uchicago.edu/clamor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: clamor</a> · <a href=\"https://logeion.uchicago.edu/tollo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tollo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 106–107, each phrase checked against the searchable text of the book.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

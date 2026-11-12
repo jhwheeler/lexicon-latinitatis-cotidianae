@@ -6,7 +6,12 @@
   "also": [
     "good job",
     "you carried that well",
-    "encouragement"
+    "encouragement",
+    "you did fine",
+    "good for you",
+    "oh boy!",
+    "good!",
+    "bravo!"
   ],
   "domain": "sermo",
   "terms": [
@@ -18,7 +23,8 @@
         "Traupman 322",
         "Liv. II 12, 14",
         "Cic. <em>Att.</em> XII 6, 3",
-        "Verg. <em>Aen.</em> IX 641: <span lang=\"la\">macte novā virtūte, puer</span>"
+        "Verg. <em>Aen.</em> IX 641: <span lang=\"la\">macte novā virtūte, puer</span>",
+        "Traupman 99: <span lang=\"la\">macte virtūte estō!</span>"
       ],
       "comment": "The final e of <strong lang=\"la\">macte</strong> is short."
     },
@@ -27,6 +33,7 @@
       "status": "alternative",
       "period": "classical",
       "evidence": [
+        "Traupman 99",
         "Traupman 99"
       ],
       "comment": "Said by Dad in Libellus V."
@@ -36,6 +43,7 @@
       "status": "alternative",
       "period": "modern",
       "evidence": [
+        "Traupman 101",
         "Traupman 101"
       ]
     },
@@ -64,6 +72,19 @@
       "status": "recommended",
       "period": "classical",
       "comment": "An interjection of approval."
+    },
+    {
+      "latin": "Eu!",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "good! well done! (also ironic)",
+      "grammar": "interjection",
+      "register": "vōx sermōnis cotīdiānī: Plaut., Ter.; Hor.",
+      "evidence": [
+        "Hor. Ars 327–330: <span lang=\"la\">eu! rem poteris servāre tuam</span>",
+        "Traupman 105: oh boy!, <span lang=\"la\">eu!</span>"
+      ],
+      "comment": "Greek εὖ, “well!”: praise for a right answer, or, in comedy, mock praise. Stronger is <span lang=\"la\">euge!</span>."
     }
   ],
   "phrases": [
@@ -96,6 +117,16 @@
       "latin": "Euge, Theodōre.",
       "english": "Well done, Theo.",
       "source": "composed"
+    },
+    {
+      "latin": "Fēcistī probē.",
+      "english": "You did fine.",
+      "source": "Traupman 98"
+    },
+    {
+      "latin": "sī dē quīncūnce remōta est ūncia, quid superat? … — triēns. — eu! rem poteris servāre tuam.",
+      "english": "If a twelfth is taken from five twelfths, what is left? — A third. — Good! You’ll be able to look after your money.",
+      "source": "Hor. Ars 327–330"
     }
   ],
   "related": [
@@ -109,7 +140,11 @@
     "The example sentence marked “composed” is ours.",
     "<a href=\"https://logeion.org/euge\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: euge</a>",
     "Examples are composed for conversation with Theo; dictionary links document the component words, not these exact sentences or standardized modern climbing terminology.",
-    "The example sentences marked “composed” are ours."
+    "The example sentences marked “composed” are ours.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 98, checked against the searchable text and the page image (12 November 2026).",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 99, checked against the searchable text and the page image (12 November 2026).",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 101, checked against the searchable text and the page image (12 November 2026).",
+    "Quotations from the Latinitas loci collections (loci-horatius), checked against the editions named there."
   ],
   "replaces": [
     "entry-235",
@@ -119,7 +154,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

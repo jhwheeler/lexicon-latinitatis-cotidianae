@@ -4,19 +4,32 @@
   "pos": "verb",
   "also": [
     "rush",
-    "hurry up"
+    "hurry up",
+    "be in a hurry",
+    "I’m in a hurry",
+    "but I’m in a hurry",
+    "what’s your hurry?",
+    "what’s the rush?"
   ],
   "domain": "corpus",
   "terms": [
     {
       "latin": "festīnō, festīnāre, festīnāvī, festīnātum",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "evidence": [
+        "Ter. Eun. 4.3.8: <span lang=\"la\">quid festīnās?</span> (Lewis &amp; Short)",
+        "Traupman 101: <span lang=\"la\">quid festīnās?</span>"
+      ]
     },
     {
       "latin": "properō, properāre",
       "status": "alternative",
-      "period": "classical"
+      "period": "classical",
+      "evidence": [
+        "Cic. Att. 10.8.5: <span lang=\"la\">assequor omnia sī properō</span> (Lewis &amp; Short), s.v. <span lang=\"la\">cunctor</span>",
+        "Traupman 101: <span lang=\"la\">at properō</span>"
+      ]
     }
   ],
   "phrases": [
@@ -24,6 +37,16 @@
       "latin": "Festīnā lentē.",
       "english": "Hurry slowly: for when the child dawdles and you are in a rush.",
       "source": "Augustus’s maxim, which Suetonius gives in Greek, σπεῦδε βραδέως (Suet. <em>Aug.</em> 25, 4)"
+    },
+    {
+      "latin": "Quid festīnās?",
+      "english": "What’s your hurry?",
+      "source": "Ter. Eun. 4.3.8 (Lewis &amp; Short, s.v. <span lang=\"la\">festīnō</span>)"
+    },
+    {
+      "latin": "At properō.",
+      "english": "But I’m in a hurry.",
+      "source": "Traupman 101"
     }
   ],
   "related": [
@@ -32,7 +55,9 @@
     "run"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/festino\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: festino</a> · <a href=\"https://logeion.uchicago.edu/propero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: propero</a>"
+    "<a href=\"https://logeion.uchicago.edu/festino\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: festino</a> · <a href=\"https://logeion.uchicago.edu/propero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: propero</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 101, checked against the searchable text and the page image (12 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",

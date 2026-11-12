@@ -6,7 +6,10 @@
     "in fact",
     "in reality",
     "really",
-    "as a matter of fact"
+    "as a matter of fact",
+    "well … (correcting oneself or another)",
+    "what I mean is",
+    "I mean (correcting myself)"
   ],
   "domain": "verba",
   "terms": [
@@ -32,7 +35,8 @@
       "evidence": [
         "Sen. Ep. 47.1: <span lang=\"la\">‘servī sunt.’ immō hominēs.</span>",
         "Cic. Off. 3.90: <span lang=\"la\">Immō vērō obsecrābit patrem</span>",
-        "de Vaan 300, s.v. <span lang=\"la\">immō</span>"
+        "de Vaan 300, s.v. <span lang=\"la\">immō</span>",
+        "Traupman 111: <span lang=\"la\">immō</span>, well"
       ],
       "comment": "The “actually” of a correction. Never an answer on its own, unlike <span lang=\"la\">minimē</span>: it always brings the corrected statement (Lewis &amp; Short)."
     },
@@ -67,6 +71,17 @@
         "Myth. Vat. 3 (Lewis &amp; Short, s.v. <span lang=\"la\">actualis</span>)"
       ],
       "comment": "Late Latin for “actively”, from <span lang=\"la\">āctuālis</span>, “active, practical” (Macr.). It never means “in fact”."
+    },
+    {
+      "latin": "at enim",
+      "status": "avoid",
+      "period": "classical",
+      "gloss": "but surely (raising an objection), not “what I mean is”",
+      "evidence": [
+        "Traupman 103: what I mean is (in correcting a misunderstanding), <span lang=\"la\">at enim</span>",
+        "Plaut. Trin. 3.3.78: <span lang=\"la\">at enim nimis hīc longō sermōne ūtimur</span> (Lewis &amp; Short s.v. <span lang=\"la\">at</span>)"
+      ],
+      "comment": "Lewis &amp; Short: <span lang=\"la\">at enim</span> introduces an objection, “but certainly, but surely”, usually one the speaker expects from someone else. To correct what was said or understood, Latin uses <span lang=\"la\">immō</span> (above)."
     }
   ],
   "phrases": [
@@ -93,11 +108,14 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/res\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: res (rē vērā, rē ipsā)</a> · <a href=\"https://logeion.uchicago.edu/immo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: immo</a> · <a href=\"https://logeion.uchicago.edu/reapse\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: reapse</a> · <a href=\"https://logeion.uchicago.edu/actualis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: actualis</a>",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. really. Michiel de Vaan, <em>Etymological Dictionary of Latin and the other Italic Languages</em> (2008), p. 300.",
-    "Quotation from the Latinitas loci collection (loci-seneca-epistulae), checked against the editions named there; Cicero (Off. 3.75, 3.90; Fam. 12.14.3) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+    "Quotation from the Latinitas loci collection (loci-seneca-epistulae), checked against the editions named there; Cicero (Off. 3.75, 3.90; Fam. 12.14.3) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 111.",
+    "<a href=\"https://logeion.uchicago.edu/at\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: at</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

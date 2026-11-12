@@ -5,7 +5,8 @@
   "also": [
     "that’s true",
     "it’s true that",
-    "to tell the truth"
+    "to tell the truth",
+    "to tell you the truth"
   ],
   "domain": "verba",
   "terms": [
@@ -19,6 +20,17 @@
         "Cic. Lael. 24: <span lang=\"la\">rēs vēra</span>, opposed to <span lang=\"la\">ficta</span> (Lewis &amp; Short)"
       ],
       "comment": "“That’s true” is <span lang=\"la\">vērum est</span> or <span lang=\"la\">ita est</span> (Traupman 110: <span lang=\"la\">rēs ita est</span>); “to tell the truth”, <span lang=\"la\">ut vērum dīcam</span> (Traupman 42, 110). With an infinitive, <span lang=\"la\">vērum est</span> usually means “it is right, fair” (Caes. BG 4.8, Lewis &amp; Short)."
+    },
+    {
+      "latin": "ut vērum loquar (nē quid mentiar)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "to tell you the truth",
+      "grammar": "parenthetical purpose clauses: “to speak the truth”, “not to tell a lie”",
+      "evidence": [
+        "Traupman 110",
+        "Plaut. Cas. 38: <span lang=\"la\">nē quid mentiar</span> (cited in the loci collection loci-franmorarius)"
+      ]
     }
   ],
   "phrases": [
@@ -50,11 +62,12 @@
     "Quotations from the Latinitas loci collections (loci-gellius, loci-augustinus), checked against the editions named there.",
     "Quotations of Terence (Parry, 1857; cited by the lines of the Oxford text) that are not in the loci collections were checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
     "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition.",
-    "The example sentence marked “composed” is ours."
+    "The example sentence marked “composed” is ours.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 110."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

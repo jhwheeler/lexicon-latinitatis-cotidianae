@@ -5,7 +5,14 @@
   "also": [
     "realise",
     "realize",
-    "grasp"
+    "grasp",
+    "do you understand now?",
+    "got it?",
+    "do you follow?",
+    "now I see",
+    "I see",
+    "I get it",
+    "get the point?"
   ],
   "domain": "verba",
   "terms": [
@@ -19,6 +26,31 @@
         "Traupman 32"
       ],
       "comment": "With an accusative, an accusative and infinitive (realise that), or a question: <span lang=\"la\">Num tū intellegis hīc quid narret?</span> (Ter. Ph. 846). <span lang=\"la\">Nōn satis intellegō</span>: I don’t quite understand (Traupman 110). Lewis &amp; Short calls <span lang=\"la\">intelligō</span> “less correct”."
+    },
+    {
+      "latin": "teneō, tenēre, tenuī, tentum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "grasp, follow (what is said)",
+      "evidence": [
+        "Ter. Heaut. 4.3.22: <span lang=\"la\">tenēs, quid dīcam?</span> (Lewis &amp; Short s.v. <span lang=\"la\">teneō</span>)",
+        "Plaut. Capt. 3.5.39: <span lang=\"la\">nunc ego teneō, nunc sciō</span> (Lewis &amp; Short)",
+        "Traupman 110: <span lang=\"la\">jam tenēs?</span>"
+      ],
+      "comment": "“To hold” what is said, as English “grasp”: <span lang=\"la\">Tenēs?</span>, do you follow?"
+    },
+    {
+      "latin": "teneō, tenēre, tenuī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "I see, I get it, I follow",
+      "grammar": "verb, second conjugation: teneō, I’ve got it; tenēsne?, do you follow?",
+      "evidence": [
+        "Plaut. Poen. 3.5.23: <span lang=\"la\">hahahae, jam teneō, quid sit</span> (Lewis &amp; Short s.v. <span lang=\"la\">ha</span>)",
+        "Traupman 107: now I see (I understand), <span lang=\"la\">jam teneō</span>",
+        "Traupman 105: get the point?, <span lang=\"la\">tenēsne (pl. tenētisne) rem?</span>"
+      ],
+      "comment": "“To hold” the point, as English “grasp”: <span lang=\"la\">jam teneō</span>, now I’ve got it."
     }
   ],
   "phrases": [
@@ -41,6 +73,11 @@
       "latin": "ō mē īnfēlīcem! quī nunc dēmum intellegō ūtilia mihi quam fuerint quae dēspexeram",
       "english": "poor me! only now do I realise how useful to me were the things I had despised",
       "source": "Phaedr. 1.12.13–14"
+    },
+    {
+      "latin": "Jam tenēs?",
+      "english": "Do you understand now?",
+      "source": "Traupman 110"
     }
   ],
   "related": [
@@ -55,11 +92,14 @@
     "Quotations from the Latinitas loci collections (loci-terentius, loci-quintilianus), as checked there against the editions they name.",
     "Cic. Sen. 65 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 32, 110, checked against the searchable text of the book.",
-    "Phaedr. 1.12.13–14 from the Latinitas loci collection (loci-phaedrus), checked against the edition named there."
+    "Phaedr. 1.12.13–14 from the Latinitas loci collection (loci-phaedrus), checked against the edition named there.",
+    "<a href=\"https://logeion.uchicago.edu/teneo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: teneo</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 110."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

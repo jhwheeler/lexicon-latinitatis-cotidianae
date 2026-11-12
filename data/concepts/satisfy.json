@@ -8,7 +8,10 @@
     "be satisfied with",
     "content with",
     "satisfy someone",
-    "satisfaction"
+    "satisfaction",
+    "to your satisfaction",
+    "you can’t satisfy everyone",
+    "as one wished"
   ],
   "domain": "verba",
   "terms": [
@@ -53,6 +56,17 @@
         "Cic. Fam. 7.13.1 (Lewis &amp; Short)"
       ],
       "comment": "A false friend: classically an apology or explanation offered to someone, and after Augustus amends for an injury (Tac. Germ. 21), not the feeling of being satisfied (Lewis &amp; Short)."
+    },
+    {
+      "latin": "ex sententiā",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "to one’s satisfaction, as one wished",
+      "grammar": "ex with the ablative; with a possessive: ex tuā sententiā, to your satisfaction",
+      "evidence": [
+        "Plaut. Ps. 2.4.72: <span lang=\"la\">auspiciō liquidō atque ex sententiā</span> (Lewis &amp; Short s.v. <span lang=\"la\">avis</span>)",
+        "Traupman 107: to your satisfaction, <span lang=\"la\">ex tuā sententiā</span>"
+      ]
     }
   ],
   "phrases": [
@@ -65,6 +79,11 @@
       "latin": "tibi fōrma, vīrēs aquilae, lusciniō melos, augurium corvō, laeva cornīcī ōmina, omnēsque propriīs sunt contentae dōtibus.",
       "english": "to you beauty, to the eagle strength, to the nightingale song, to the raven augury, to the crow omens on the left, and all are content with their own gifts.",
       "source": "Phaedr. 3.18.10–14"
+    },
+    {
+      "latin": "Nōn potes omnibus satis facere.",
+      "english": "You can’t satisfy everyone.",
+      "source": "Traupman 107"
     }
   ],
   "related": [
@@ -75,11 +94,12 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/satis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: satis (satisfacio)</a> · <a href=\"https://logeion.uchicago.edu/contentus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: contentus</a> · <a href=\"https://logeion.uchicago.edu/placeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: placeo</a> · <a href=\"https://logeion.uchicago.edu/satisfactio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: satisfactio</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 150, checked against the searchable text of the book (11 November 2026).",
-    "Phaedrus from the Latinitas loci collection loci-phaedrus, checked against the edition named there. Cicero’s letters checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026)."
+    "Phaedrus from the Latinitas loci collection loci-phaedrus, checked against the edition named there. Cicero’s letters checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

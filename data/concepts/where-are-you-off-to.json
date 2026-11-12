@@ -3,7 +3,9 @@
   "english": "where are you off to?",
   "pos": "phrase",
   "also": [
-    "where are you going?"
+    "where are you going?",
+    "I’m off to",
+    "I’m going to"
   ],
   "domain": "sermo",
   "terms": [
@@ -12,7 +14,9 @@
       "status": "recommended",
       "period": "classical",
       "evidence": [
-        "Traupman 16"
+        "Traupman 16",
+        "Plaut. Poen. 333: <span lang=\"la\">Quō tē agis? — Egone? in aedem Veneris.</span>",
+        "Traupman 105: where are you off to?, <span lang=\"la\">quō tē agis?</span>"
       ]
     }
   ],
@@ -21,11 +25,25 @@
     "where-are-we-going"
   ],
   "sources": [
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 16."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 16.",
+    "Quotations from the Latinitas loci collections (loci-plautus), checked against the editions named there.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 105, each phrase checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "Quō tē agis? — Egone? in aedem Veneris. — Quid eō?",
+      "english": "Where are you off to? — Me? To the temple of Venus. — What for?",
+      "source": "Plaut. Poen. 333"
+    },
+    {
+      "latin": "Ego hinc mē ad forum agō.",
+      "english": "I’m off to the forum.",
+      "source": "Traupman 105"
+    }
+  ]
 }

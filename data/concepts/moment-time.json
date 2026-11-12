@@ -7,7 +7,10 @@
     "at that moment",
     "at the right moment",
     "the moment (that)",
-    "just in time"
+    "just in time",
+    "in the nick of time",
+    "you’ve come in the nick of time",
+    "at the critical moment"
   ],
   "domain": "tempus",
   "terms": [
@@ -44,6 +47,17 @@
         "Liv. 21.1.4: <span lang=\"la\">cum prīmum posset</span>",
         "Traupman 88: as soon as, cum prīmum"
       ]
+    },
+    {
+      "latin": "in ipsō articulō temporis",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "at the critical moment, in the nick of time",
+      "evidence": [
+        "Cic. Quinct. 19: <span lang=\"la\">in ipsō articulō temporis</span>, “at the most critical moment” (Lewis &amp; Short s.v. <span lang=\"la\">articulus</span>)",
+        "Traupman 104: you’ve come in the nick of time, <span lang=\"la\">in ipsō articulō temporis advenīs</span>"
+      ],
+      "comment": "<span lang=\"la\">Articulus</span> is a joint, so a turning point in time. For arriving just when wanted, the comic poets say <span lang=\"la\">opportūnē advenīs</span>."
     }
   ],
   "phrases": [
@@ -56,6 +70,11 @@
       "latin": "quīn simul ac prōmīseris minerval, incipiam",
       "english": "why, I’ll begin the moment you’ve promised my fee",
       "source": "Varr. RR 3.2.18"
+    },
+    {
+      "latin": "In ipsō articulō temporis advenīs.",
+      "english": "You’ve come in the nick of time.",
+      "source": "Traupman 104"
     }
   ],
   "related": [
@@ -67,11 +86,13 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/tempus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tempus</a> · <a href=\"https://logeion.uchicago.edu/opportune\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: opportune</a> · <a href=\"https://logeion.uchicago.edu/primus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: primus</a> · <a href=\"https://logeion.uchicago.edu/simul\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: simul</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 88, checked against the searchable text of the book (9 November 2026).",
-    "Quotations from the Latinitas loci collections (loci-terentius, loci-varro, loci-seneca-epistulae, loci-livius), checked against the editions named there."
+    "Quotations from the Latinitas loci collections (loci-terentius, loci-varro, loci-seneca-epistulae, loci-livius), checked against the editions named there.",
+    "<a href=\"https://logeion.uchicago.edu/articulus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: articulus</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

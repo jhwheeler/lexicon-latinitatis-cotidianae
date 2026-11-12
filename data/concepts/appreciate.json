@@ -7,7 +7,8 @@
     "I appreciate it",
     "I’d appreciate it if",
     "much appreciated",
-    "I really appreciate that"
+    "I really appreciate that",
+    "I appreciate your kindness"
   ],
   "domain": "verba",
   "also_under": [
@@ -37,6 +38,16 @@
         "Cic. Att. 9.7.2: <span lang=\"la\">pergrātumque mihi tū fēcistī</span>"
       ],
       "comment": "The courteous formula of Cicero’s letters: <span lang=\"la\">grātum mihi fēceris, sī …</span>, “I’d appreciate it if …”; after the event, <span lang=\"la\">grātum mihi fēcistī</span>, “I appreciate what you did”."
+    },
+    {
+      "latin": "beneficium tuum tueor",
+      "status": "avoid",
+      "period": "modern",
+      "gloss": "said for “I appreciate your kindness”",
+      "evidence": [
+        "Traupman 93"
+      ],
+      "comment": "<span lang=\"la\">Tuērī</span> is to look after, protect, keep up (Lewis &amp; Short), so the phrase says “I am looking after your kindness”. Say <span lang=\"la\">grātum mihi est</span>, or <span lang=\"la\">beneficium tuum grātum habeō</span>."
     }
   ],
   "phrases": [
@@ -64,11 +75,13 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/gratus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gratus</a>",
-    "Cicero’s letters and Terence checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026). Pliny from the Latinitas loci collection loci-plinius, checked against the edition named there."
+    "Cicero’s letters and Terence checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026). Pliny from the Latinitas loci collection loci-plinius, checked against the edition named there.",
+    "<a href=\"https://logeion.uchicago.edu/tueor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tueor</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 93, checked against the searchable text and the page images of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

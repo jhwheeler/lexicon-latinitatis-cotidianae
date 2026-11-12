@@ -4,7 +4,15 @@
   "pos": "phrase",
   "also": [
     "say hello",
-    "give my regards"
+    "give my regards",
+    "says hello to you",
+    "sends greetings",
+    "sends her regards",
+    "give my love to",
+    "give him my best regards",
+    "give her my best regards",
+    "best regards",
+    "send my regards"
   ],
   "domain": "sermo",
   "terms": [
@@ -17,6 +25,31 @@
         "Traupman 17",
         "Cic. Att. 4.14.2, cited by L&amp;S: <span lang=\"la\">Dionysium jubē salvēre</span>"
       ]
+    },
+    {
+      "latin": "salūtem dīcere (alicui)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "send greetings, say hello (from someone)",
+      "grammar": "salūtem, accusative of salūs, with dīcere and the dative of the person greeted",
+      "evidence": [
+        "Cic. Att. 14.19.6: <span lang=\"la\">tū Atticae salūtem dīcēs</span> (Lewis &amp; Short), s.v. <span lang=\"la\">salūs</span>",
+        "Cic. Fam. 14.7.3: <span lang=\"la\">salūtem plūrimam dīcit</span> (Lewis &amp; Short)",
+        "Traupman 100"
+      ],
+      "comment": "The opening of a Roman letter, <span lang=\"la\">S. D.</span> (<span lang=\"la\">salūtem dīcit</span>), and the way to pass on someone’s greetings: <span lang=\"la\">Terentia tibi salūtem dīcit</span>."
+    },
+    {
+      "latin": "multam salūtem dīcere (alicui)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "send someone one’s warmest greetings",
+      "evidence": [
+        "Plaut. Poen. 1.2.194: <span lang=\"la\">multam salūtem dīcere alicui</span>, to greet heartily (Lewis &amp; Short s.v. <span lang=\"la\">multus</span>)",
+        "Cic. Att. 2.12.4: <span lang=\"la\">Terentia impertit tibi multam salūtem</span> (Lewis &amp; Short s.v. <span lang=\"la\">impertiō</span>)",
+        "Traupman 106: give him (her) my best regards, <span lang=\"la\">dīcitō eī multam meīs verbīs salūtem</span>"
+      ],
+      "comment": "<span lang=\"la\">Meīs verbīs</span>, “in my words”, is “from me”: <span lang=\"la\">Piliam meīs verbīs cōnsōlēre</span> (Cic. Att. 5.11.7, Lewis &amp; Short s.v. <span lang=\"la\">cōnsōlor</span>)."
     }
   ],
   "phrases": [
@@ -24,6 +57,21 @@
       "latin": "Jubē aviam salvēre!",
       "english": "Say hello to Grandma for me!",
       "source": "composed"
+    },
+    {
+      "latin": "Terentia tibi salūtem dīcit.",
+      "english": "Terentia says hello to you.",
+      "source": "Traupman 100"
+    },
+    {
+      "latin": "Atticae, quoniam, quod optimum in puerīs est, hilarula est, meīs verbīs suāvium dēs volō.",
+      "english": "Give Attica a kiss from me, since she is cheerful, the best thing in children.",
+      "source": "Cic. Att. 16.11.8"
+    },
+    {
+      "latin": "Dīcitō eī multam meīs verbīs salūtem.",
+      "english": "Give him my best regards.",
+      "source": "Traupman 106"
     }
   ],
   "related": [
@@ -33,11 +81,17 @@
   "sources": [
     "<a href=\"https://logeion.org/salveo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: salveo</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 17.",
-    "The example sentences marked “composed” are ours."
+    "The example sentences marked “composed” are ours.",
+    "<a href=\"https://logeion.uchicago.edu/salus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: salus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 100, checked against the searchable text and the page image (12 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "<a href=\"https://logeion.uchicago.edu/salus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: salus</a> · <a href=\"https://logeion.uchicago.edu/multus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: multus</a>",
+    "Quotations from the Latinitas loci collections (loci-cicero-epistulae), checked against the editions named there.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 106, each phrase checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

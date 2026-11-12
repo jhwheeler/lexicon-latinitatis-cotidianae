@@ -8,7 +8,10 @@
     "demonstrate",
     "prove that",
     "prove someone wrong",
-    "that proves it"
+    "that proves it",
+    "this proves that",
+    "this shows that",
+    "be proof that"
   ],
   "domain": "verba",
   "terms": [
@@ -45,6 +48,30 @@
         "Traupman 195, 311"
       ],
       "comment": "Of persons, to convict of a fault or an error, the charge in the genitive; of things, to show a thing false or wrong beyond doubt (Lewis &amp; Short)."
+    },
+    {
+      "latin": "documentō esse",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "be proof (of), show (that)",
+      "grammar": "predicative dative, often with a second dative of the person: documentō esse alicui",
+      "evidence": [
+        "Quint. 7.1.2: <span lang=\"la\">alicujus reī esse documentō</span> (Lewis &amp; Short s.v. <span lang=\"la\">documentum</span>)",
+        "Quint. 12.11.23",
+        "Traupman 106: this proves that …, <span lang=\"la\">documentō est (+ acc. & inf.)</span>"
+      ],
+      "comment": "<span lang=\"la\">Documentum</span> is a lesson or proof, never a paper (see document): “it is for a proof”."
+    },
+    {
+      "latin": "indiciō esse",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "serve as proof, show",
+      "grammar": "predicative dative",
+      "evidence": [
+        "Ter. Ad. prol. 4: <span lang=\"la\">indiciō dē sē ipse erit</span> (Lewis &amp; Short s.v. <span lang=\"la\">indicium</span>)",
+        "Traupman 107: this shows that …, <span lang=\"la\">indiciō est (+ acc. & inf.)</span>"
+      ]
     }
   ],
   "phrases": [
@@ -62,6 +89,11 @@
       "latin": "sed quid oppōnās tandem, sī negem mē umquam ad tē istās litterās mīsisse? quō mē teste convincās?",
       "english": "But what will you set against it, if I deny ever having sent you that letter? With what witness will you prove me wrong?",
       "source": "Cic. Phil. 2.8"
+    },
+    {
+      "latin": "litterās Graecās aetāte jam dēclīnātā didicit, ut esset hominibus documentō ea quoque percipī posse quae senēs concupīssent",
+      "english": "he learned Greek when he was already old, to show people that even what old men set their hearts on can be learned",
+      "source": "Quint. 12.11.23"
     }
   ],
   "related": [
@@ -74,11 +106,15 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/probo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: probo</a> · <a href=\"https://logeion.uchicago.edu/demonstro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: demonstro</a> · <a href=\"https://logeion.uchicago.edu/convinco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: convinco</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 195, 311, 366, checked against the searchable text of the book (9 November 2026).",
-    "Caesar (BG 1.3.5) and Cicero (Tusc. 5.1, Phil. 2.8, Fam. 3.4.1) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+    "Caesar (BG 1.3.5) and Cicero (Tusc. 5.1, Phil. 2.8, Fam. 3.4.1) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "<a href=\"https://logeion.uchicago.edu/documentum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: documentum</a> · <a href=\"https://logeion.uchicago.edu/indicium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: indicium</a>",
+    "Quotations from the Latinitas loci collections (loci-quintilianus), checked against the editions named there.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 106–107, each phrase checked against the searchable text of the book.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

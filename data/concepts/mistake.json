@@ -7,7 +7,9 @@
     "make a mistake",
     "slip",
     "spelling mistake",
-    "by mistake"
+    "by mistake",
+    "by mistake (wrongly)",
+    "slip of the tongue"
   ],
   "domain": "verba",
   "also_under": [
@@ -20,7 +22,8 @@
       "period": "classical",
       "gloss": "a mistake, an error",
       "evidence": [
-        "Cic. Att. 6.1.18: <span lang=\"la\">sī secus est, commūne errātum est</span>"
+        "Cic. Att. 6.1.18: <span lang=\"la\">sī secus est, commūne errātum est</span>",
+        "Traupman 104: by mistake, <span lang=\"la\">perperam</span>"
       ],
       "comment": "A mistake one has made, in a fact or in conduct. To make a mistake is <span lang=\"la\">errāre</span> or <span lang=\"la\">peccāre</span> (Traupman 155); by mistake, <span lang=\"la\">imprūdēns</span> or <span lang=\"la\">perperam</span> (Traupman 104)."
     },
@@ -67,6 +70,16 @@
         "Publ. P 62: <span lang=\"la\">Peccātum extenuat, quī celeriter corrigit.</span>"
       ],
       "comment": "A fault of any kind; in church Latin a sin (see sin)."
+    },
+    {
+      "latin": "lapsus linguae",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "a slip of the tongue",
+      "evidence": [
+        "Traupman 107: a slip of the tongue, <span lang=\"la\">lapsus linguae</span>"
+      ],
+      "comment": "Lewis &amp; Short has <span lang=\"la\">lapsus</span> in the figurative sense “a failing, error” as rare but classical (Cic. Ac. 1.45), but not the phrase with <span lang=\"la\">linguae</span>."
     }
   ],
   "phrases": [
@@ -98,11 +111,12 @@
     "<a href=\"https://logeion.uchicago.edu/erro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: erro</a> · <a href=\"https://logeion.uchicago.edu/mendum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mendum</a> · <a href=\"https://logeion.uchicago.edu/menda\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: menda</a> · <a href=\"https://logeion.uchicago.edu/error\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: error</a> · <a href=\"https://logeion.uchicago.edu/vitium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vitium</a> · <a href=\"https://logeion.uchicago.edu/peccatum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: peccatum</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 27, 29, 30, 104, 155, 247, checked against the searchable text of the book (9 November 2026).",
     "Cicero’s letters, Suetonius and Quintilian checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
-    "Quotations from the Latinitas loci collections (loci-martialis, loci-petronius, loci-publilius), checked against the editions named there."
+    "Quotations from the Latinitas loci collections (loci-martialis, loci-petronius, loci-publilius), checked against the editions named there.",
+    "<a href=\"https://logeion.uchicago.edu/lapsus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lapsus</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

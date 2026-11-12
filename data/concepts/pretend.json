@@ -3,7 +3,11 @@
   "english": "pretend",
   "pos": "verb",
   "also": [
-    "pretend play"
+    "pretend play",
+    "pretend not to know",
+    "pretend to be leaving",
+    "pretend that",
+    "feign"
   ],
   "domain": "ludi",
   "terms": [
@@ -11,6 +15,30 @@
       "latin": "fingō, fingere",
       "status": "recommended",
       "period": "classical"
+    },
+    {
+      "latin": "dissimulō, dissimulāre, dissimulāvī, dissimulātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "pretend not to (know, see); hide that one knows",
+      "grammar": "verb, first conjugation; with quasi and the subjunctive, or the accusative and infinitive",
+      "evidence": [
+        "Plaut. Mil. 4.2.2: <span lang=\"la\">dissimulābō, hōs quasi nōn videam</span> (Lewis &amp; Short s.v. <span lang=\"la\">dissimulō</span>)",
+        "Traupman 106: I’ll pretend I don’t know him, <span lang=\"la\">dissimulābō mē eum nōvisse</span>"
+      ],
+      "comment": "To hide what is so: <span lang=\"la\">dissimulābō mē eum nōvisse</span> is “I’ll hide that I know him”, so “I’ll pretend not to know him”. Its opposite is <span lang=\"la\">simulāre</span>, to pretend what is not so."
+    },
+    {
+      "latin": "assimulō (adsimulō), assimulāre, assimulāvī, assimulātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "pretend, make as if",
+      "grammar": "verb, first conjugation; with quasi and the subjunctive",
+      "register": "vōx cōmica: Plaut., Ter.",
+      "evidence": [
+        "Ter. Eun. 3.2.8: <span lang=\"la\">assimulābō quasi nunc exeam</span>, “will pretend to be just going out” (Lewis &amp; Short s.v. <span lang=\"la\">quasi</span>)",
+        "Traupman 106: I’ll pretend I’m leaving, <span lang=\"la\">assimulābō quasi abeam</span>"
+      ]
     }
   ],
   "phrases": [
@@ -18,6 +46,11 @@
       "latin": "Fingāmus tē esse coquum.",
       "english": "Let’s pretend you’re the cook.",
       "source": "composed"
+    },
+    {
+      "latin": "Assimulābō quasi nunc exeam.",
+      "english": "I’ll pretend I’m just going out.",
+      "source": "Ter. Eun. 3.2.8 (Lewis &amp; Short s.v. <span lang=\"la\">quasi</span>)"
     }
   ],
   "related": [
@@ -26,11 +59,14 @@
   ],
   "sources": [
     "<a href=\"https://www.alatius.com/ls/index.php?l=fingo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fingo</a>",
-    "The example sentences marked “composed” are ours."
+    "The example sentences marked “composed” are ours.",
+    "<a href=\"https://logeion.uchicago.edu/dissimulo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dissimulo</a> · <a href=\"https://logeion.uchicago.edu/assimulo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: assimulo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 106, each phrase checked against the searchable text of the book.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

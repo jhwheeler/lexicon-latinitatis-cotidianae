@@ -11,6 +11,26 @@
       "evidence": [
         "Traupman 89"
       ]
+    },
+    {
+      "latin": "tempus conterere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "waste time, wear away the time",
+      "evidence": [
+        "Cic. Rosc. Com. 41: <span lang=\"la\">frūstrā tempus conterō</span> (Lewis &amp; Short s.v. <span lang=\"la\">frūstrā</span>)",
+        "Traupman 110"
+      ]
+    },
+    {
+      "latin": "operam perdere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "waste one’s effort, waste one’s breath",
+      "evidence": [
+        "Plaut. Poen. 332: <span lang=\"la\">et oleum et operam perdidī</span>",
+        "Traupman 110"
+      ]
     }
   ],
   "phrases": [
@@ -18,6 +38,11 @@
       "latin": "Nōlī tempus perdere: calceōs indue.",
       "english": "Don’t waste time: put your shoes on.",
       "source": "composed"
+    },
+    {
+      "latin": "frūstrā tempus conterō",
+      "english": "I am wasting my time",
+      "source": "Cic. Rosc. Com. 41 (Lewis &amp; Short)"
     }
   ],
   "related": [
@@ -26,11 +51,21 @@
   ],
   "sources": [
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 89.",
-    "The example sentences marked “composed” are ours."
+    "The example sentences marked “composed” are ours.",
+    "<a href=\"https://logeion.uchicago.edu/contero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: contero</a>",
+    "<a href=\"https://logeion.uchicago.edu/opera\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: opera</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "Quotations from the Latinitas loci collections, checked against the editions named there.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 110."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "I’m wasting my time",
+    "waste one’s breath",
+    "waste one’s effort"
+  ]
 }

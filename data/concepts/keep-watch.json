@@ -3,7 +3,9 @@
   "english": "keep watch",
   "pos": "verb",
   "also": [
-    "watch"
+    "watch",
+    "keep an eye on",
+    "keep an eye on that guy"
   ],
   "domain": "sermo",
   "terms": [
@@ -11,6 +13,16 @@
       "latin": "vigilō, vigilāre",
       "status": "recommended",
       "period": "classical"
+    },
+    {
+      "latin": "adservō (asservō), adservāre, adservāvī, adservātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "keep an eye on, watch, guard",
+      "evidence": [
+        "Plaut. Men. 2.2.75: <span lang=\"la\">adservātōte haec</span>; Cic. Arch. 5 (Lewis &amp; Short s.v. <span lang=\"la\">asservō</span>)",
+        "Traupman 97"
+      ]
     }
   ],
   "phrases": [
@@ -18,6 +30,11 @@
       "latin": "Quis venit? Vidēsne aliquem, tata? — Nēminem videō.",
       "english": "Who’s coming? Can you see anyone, Dad? — I can’t see anyone.",
       "source": "Libellus II, <span lang=\"la\">Sintra: castellum et puteus</span>"
+    },
+    {
+      "latin": "Adservā istum!",
+      "english": "Keep an eye on that guy!",
+      "source": "Traupman 97"
     }
   ],
   "related": [
@@ -25,11 +42,14 @@
     "enemy"
   ],
   "sources": [
-    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+    "<a href=\"https://logeion.uchicago.edu/asservo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: asservo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 97, checked against the searchable text and the page images of the book.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

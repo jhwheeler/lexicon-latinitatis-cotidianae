@@ -9,7 +9,13 @@
     "it’s worth the effort",
     "worth the effort",
     "a waste of effort",
-    "exertion"
+    "exertion",
+    "try one’s best to",
+    "I’ll certainly attend to it",
+    "I’ll see to it",
+    "do one’s best",
+    "waste one’s effort",
+    "you’ve wasted all your effort"
   ],
   "domain": "verba",
   "terms": [
@@ -22,7 +28,8 @@
         "Cic. Fam. 14.18.2: <span lang=\"la\">maximē autem date operam ut valeātis</span>",
         "Plaut. Poen. 332: <span lang=\"la\">et oleum et operam perdidī</span>",
         "Traupman 97: make an effort to be on time, <span lang=\"la\">dā operam ut tempestīvē adsīs</span>",
-        "Traupman 308: it’s (not) worth the effort, <span lang=\"la\">pretium operae (nōn) est</span>"
+        "Traupman 308: it’s (not) worth the effort, <span lang=\"la\">pretium operae (nōn) est</span>",
+        "Traupman 110: <span lang=\"la\">operam dō ut (nē)</span> (+ subjunctive)"
       ],
       "comment": "<span lang=\"la\">Operam dare ut</span>, to make an effort to, to see to it that; <span lang=\"la\">operam perdere</span>, to waste one’s effort; <span lang=\"la\">operae pretium est</span>, it is worth the effort. Lewis &amp; Short: <span lang=\"la\">opera</span> “supposes a free will and desire to serve”, where <span lang=\"la\">opus</span> is the work itself."
     },
@@ -48,6 +55,17 @@
         "Cic. Fam. 13.29.5; Lael. 59 (Lewis &amp; Short)"
       ],
       "comment": "“Make an effort” is often a verb: <span lang=\"la\">ēnītī</span>, <span lang=\"la\">operam dare</span>, or <span lang=\"la\">cōnārī</span> (see try)."
+    },
+    {
+      "latin": "in magnō negōtiō habēre (+ infinitive)",
+      "status": "avoid",
+      "period": "post-classical",
+      "gloss": "Traupman’s “take pains to”",
+      "evidence": [
+        "Traupman 109",
+        "Suet. Caes. 23 (Lewis &amp; Short s.v. <span lang=\"la\">negōtium</span>)"
+      ],
+      "comment": "In Suetonius the phrase means to regard a thing as important, not to take pains over it; for “take pains to” classical Latin says <span lang=\"la\">operam dare ut</span> (above)."
     }
   ],
   "phrases": [
@@ -70,6 +88,21 @@
       "latin": "factūrusne operae pretium sim … nec satis sciō",
       "english": "whether I shall be doing something worth the effort … I am not quite sure",
       "source": "Liv. praef. 1"
+    },
+    {
+      "latin": "dē geōgraphiā dabō operam ut tibi satisfaciam",
+      "english": "as for the geography, I’ll do my best to satisfy you",
+      "source": "Cic. Att. 2.4.3 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "Dabō equidem operam.",
+      "english": "I’ll certainly attend to it.",
+      "source": "Traupman 93"
+    },
+    {
+      "latin": "Omnem operam perdidistī.",
+      "english": "You’ve wasted all your effort.",
+      "source": "Traupman 97"
     }
   ],
   "related": [
@@ -81,11 +114,16 @@
     "<a href=\"https://logeion.uchicago.edu/opera\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: opera</a> · <a href=\"https://logeion.uchicago.edu/labor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: labor</a> · <a href=\"https://logeion.uchicago.edu/enitor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: enitor</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 97, 308, checked against the searchable text of the book (9 November 2026).",
     "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-cicero-philosophica, loci-varro, loci-plautus, loci-livius), checked against the editions named there.",
-    "Livy 21 and Cicero, <em>De oratore</em> 2, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> and the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+    "Livy 21 and Cicero, <em>De oratore</em> 2, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> and the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 109.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 110.",
+    "<a href=\"https://logeion.uchicago.edu/opera\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: opera</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 93, 97, checked against the searchable text and the page images of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

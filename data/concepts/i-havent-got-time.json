@@ -3,7 +3,8 @@
   "english": "I haven’t got time",
   "pos": "phrase",
   "also": [
-    "no time"
+    "no time",
+    "I haven’t the time"
   ],
   "domain": "sermo",
   "terms": [
@@ -14,6 +15,16 @@
       "evidence": [
         "Traupman 89"
       ]
+    },
+    {
+      "latin": "Haud mihi ōtium est.",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "I haven’t the time",
+      "evidence": [
+        "Traupman 109"
+      ],
+      "comment": "Literally “I have no leisure”. Not found in Lewis &amp; Short or the loci collections in this form; Traupman is the only evidence."
     }
   ],
   "related": [
@@ -21,11 +32,12 @@
     "waste-time"
   ],
   "sources": [
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 89."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 89.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 109."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

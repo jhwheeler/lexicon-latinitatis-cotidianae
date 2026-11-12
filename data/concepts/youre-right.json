@@ -3,7 +3,10 @@
   "english": "you’re right",
   "pos": "phrase",
   "also": [
-    "well said"
+    "well said",
+    "good thinking!",
+    "good idea!",
+    "you’re quite right"
   ],
   "domain": "sermo",
   "terms": [
@@ -13,8 +16,40 @@
       "period": "classical",
       "gloss": "you’re right, well said",
       "evidence": [
-        "Traupman 107"
+        "Traupman 107",
+        "Ter. Eun. 3.1.61: <span lang=\"la\">Bene dīxtī</span>, “you are right” (Lewis &amp; Short s.v. <span lang=\"la\">bene</span>: “a formula of approbation”)"
       ]
+    },
+    {
+      "latin": "Rēctē putās.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "you’re right, good thinking",
+      "evidence": [
+        "Ter. And. 1.1.114 (Lewis &amp; Short), s.v. <span lang=\"la\">putō</span>"
+      ]
+    },
+    {
+      "latin": "Bene putās.",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "good thinking!",
+      "evidence": [
+        "Traupman 99"
+      ],
+      "comment": "Traupman’s phrase; Terence’s <span lang=\"la\">rēctē putās</span> is the attested one."
+    },
+    {
+      "latin": "Facētē dictum!",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "well said! good one!",
+      "register": "vōx cōmica: Plaut., Ter.",
+      "evidence": [
+        "Plaut. Capt. 1.2.73; Ter. Eun. 2.2.57, 3.1.37 (Lewis &amp; Short s.v. <span lang=\"la\">facētus</span>)",
+        "Traupman 111"
+      ],
+      "comment": "Praise for a witty remark rather than a true one: <span lang=\"la\">facētē</span>, wittily."
     }
   ],
   "phrases": [
@@ -22,6 +57,11 @@
       "latin": "«Nōn attulit! Mīnōtaurus Conimbrigae manet!» «Bene dīxistī.»",
       "english": "“He didn’t bring it! The Minotaur stays at Conimbriga!” “You’re right.”",
       "source": "Libellus III, <span lang=\"la\">Apud avum et aviam</span>"
+    },
+    {
+      "latin": "Vēra dīcis.",
+      "english": "You’re right (what you say is true).",
+      "source": "Traupman 107"
     }
   ],
   "related": [
@@ -29,11 +69,17 @@
   ],
   "sources": [
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: p. 107, checked against the searchable text of the book on 29 October 2026.",
-    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+    "<a href=\"https://logeion.uchicago.edu/puto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: puto</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 99, checked against the searchable text and the page image (12 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "<a href=\"https://logeion.uchicago.edu/facetus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: facetus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 111.",
+    "<a href=\"https://logeion.uchicago.edu/bene\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: bene</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

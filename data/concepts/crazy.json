@@ -10,7 +10,16 @@
     "go crazy",
     "you’re crazy",
     "nuts",
-    "be crazy about"
+    "be crazy about",
+    "are you quite all there?",
+    "are you out of your mind?",
+    "drive someone mad",
+    "go mad",
+    "he’s out of his mind",
+    "he’s nuts",
+    "out of one’s mind",
+    "I was out of my mind when",
+    "you’re nuts"
   ],
   "domain": "sermo",
   "terms": [
@@ -57,6 +66,62 @@
         "Traupman 298"
       ],
       "comment": "Of a crazed brain. To be crazy about someone is <span lang=\"la\">dēperīre</span> (Traupman 96: <span lang=\"la\">eam dēperit</span>)."
+    },
+    {
+      "latin": "Satin' sānus es?",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "are you quite all there? are you mad?",
+      "evidence": [
+        "Ter. Ad. 937",
+        "Traupman 92"
+      ],
+      "comment": "<span lang=\"la\">Satin'</span> is <span lang=\"la\">satisne</span> clipped: “are you sane enough?”"
+    },
+    {
+      "latin": "dēmentem facere (aliquem)",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "drive someone mad",
+      "evidence": [
+        "Traupman 97"
+      ],
+      "comment": "Traupman’s phrase, of classical words; not found as a phrase in Lewis &amp; Short or the loci."
+    },
+    {
+      "latin": "mente aliēnārī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "go mad, be out of one’s mind",
+      "grammar": "passive of aliēnāre, with the ablative mente",
+      "evidence": [
+        "Plin. NH 28.93: <span lang=\"la\">aliēnārī mente</span>, to be insane (Lewis &amp; Short s.v. <span lang=\"la\">aliēnō</span>)",
+        "Traupman 103: to go mad, <span lang=\"la\">mente aliēnārī</span>"
+      ],
+      "comment": "Literally “to be estranged from one’s mind”. Lewis &amp; Short: the sense “drive mad” is not found before the Augustan age; the participle is the usual form, <span lang=\"la\">mente aliēnātus</span>, out of his mind."
+    },
+    {
+      "latin": "aliēnātus ā sē",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "out of his mind",
+      "evidence": [
+        "Traupman 103: he’s out of his mind, <span lang=\"la\">aliēnātus est ā sē</span>",
+        "Traupman 104: he’s nuts, <span lang=\"la\">aliēnātus est ā sē</span>"
+      ],
+      "comment": "Traupman’s phrase. Lewis &amp; Short has <span lang=\"la\">aliēnātus mente</span> and <span lang=\"la\">aliēnātus sēnsibus</span> (Liv. 25.39) for madness, but not <span lang=\"la\">ā sē</span>, which classically would mean “estranged from himself”; <span lang=\"la\">mente aliēnātus est</span> says the same thing in attested words."
+    },
+    {
+      "latin": "dēlīrō, dēlīrāre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "be crazy, talk nonsense; you’re nuts!",
+      "grammar": "verb, first conjugation, intransitive",
+      "evidence": [
+        "Cic. N. D. 1.94: <span lang=\"la\">dēsipere, dēlīrāre, dēmentēs esse</span> (Lewis &amp; Short)",
+        "Traupman 104: you’re nuts, <span lang=\"la\">dēlīrās</span>"
+      ],
+      "comment": "Literally “to go out of the furrow” (<span lang=\"la\">līra</span>). To someone talking nonsense: <span lang=\"la\">Dēlīrās!</span>."
     }
   ],
   "phrases": [
@@ -74,6 +139,16 @@
       "latin": "quidquid dēlīrant rēgēs, plectuntur Achīvī",
       "english": "whatever madness the kings commit, it is the Greeks who pay",
       "source": "Hor. Ep. 1.2.14"
+    },
+    {
+      "latin": "Age, dā veniam fīliō. — Satin' sānus es?",
+      "english": "Come on, forgive the boy. — Are you quite all there?",
+      "source": "Ter. Ad. 937"
+    },
+    {
+      "latin": "Dēsipiēbam mentis cum illa scrīpta mittēbam tibi.",
+      "english": "I was out of my mind when I sent you that letter.",
+      "source": "Plaut. Epid. 1.2.35 (Lewis &amp; Short s.v. <span lang=\"la\">dēsipiō</span>)"
     }
   ],
   "related": [
@@ -83,11 +158,16 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/insanus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: insanus</a> · <a href=\"https://logeion.uchicago.edu/demens\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: demens</a> · <a href=\"https://logeion.uchicago.edu/delirus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: delirus</a> · <a href=\"https://logeion.uchicago.edu/cerritus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cerritus</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 96, 150 and 298, checked against the searchable text of the book.",
-    "Quotations from the Latinitas loci collections (loci-horatius, loci-ranieri-eclogae), checked against the editions named there."
+    "Quotations from the Latinitas loci collections (loci-horatius, loci-ranieri-eclogae), checked against the editions named there.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 92, 97, checked against the searchable text and the page images of the book.",
+    "Quotations from the Latinitas loci collections (loci-terentius), checked against the editions named there.",
+    "<a href=\"https://logeion.uchicago.edu/alieno\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: alieno</a> · <a href=\"https://logeion.uchicago.edu/deliro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: deliro</a> · <a href=\"https://logeion.uchicago.edu/desipio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: desipio</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 103–104, each phrase checked against the searchable text of the book.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

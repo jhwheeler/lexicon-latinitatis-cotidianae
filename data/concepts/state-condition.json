@@ -7,7 +7,10 @@
     "condition",
     "state of things",
     "status (of a thing)",
-    "current status"
+    "current status",
+    "in good condition",
+    "in bad condition",
+    "in excellent condition"
   ],
   "domain": "verba",
   "terms": [
@@ -32,6 +35,17 @@
         "Hor. Ep. 1.12.25: <span lang=\"la\">quō sit Rōmāna locō rēs</span> (Lewis &amp; Short)"
       ],
       "comment": "<span lang=\"la\">In aliquō locō esse</span>, to be in a certain position or state (Lewis &amp; Short s.v. <span lang=\"la\">locus</span>); Cicero has the genitive, <span lang=\"la\">eōdem locī</span>."
+    },
+    {
+      "latin": "bene (male) habitus",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "in good (bad) condition, well (badly) nourished",
+      "evidence": [
+        "Masurius Sabinus in Gell. 4.20.11: <span lang=\"la\">male habitum … habitissimum</span> (Lewis &amp; Short s.v. <span lang=\"la\">habeō</span>)",
+        "Traupman 95"
+      ],
+      "comment": "Of the body, a man’s or an animal’s; the superlative <span lang=\"la\">habitissimus</span>, in excellent condition."
     }
   ],
   "phrases": [
@@ -53,11 +67,14 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/status\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: status</a> · <a href=\"https://logeion.uchicago.edu/locus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: locus</a>",
-    "Cicero, Att. 1.13 checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+    "Cicero, Att. 1.13 checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026).",
+    "<a href=\"https://logeion.uchicago.edu/habeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: habeo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 95, checked against the searchable text and the page images of the book.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

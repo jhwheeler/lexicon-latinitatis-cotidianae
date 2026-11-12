@@ -8,7 +8,8 @@
     "they say",
     "say no",
     "give a negative answer",
-    "answer no"
+    "answer no",
+    "so they say"
   ],
   "domain": "verba",
   "terms": [
@@ -43,7 +44,9 @@
       "gloss": "say, say yes; ajunt, they say",
       "evidence": [
         "Ter. Eun. 252: <span lang=\"la\">Negat quis? negō: ait? ajō.</span>",
-        "Ter. Ph. 419: <span lang=\"la\">Āctum, ajunt, nē agās.</span>"
+        "Ter. Ph. 419: <span lang=\"la\">Āctum, ajunt, nē agās.</span>",
+        "Ter. And. 1.2.21: <span lang=\"la\">ita ajunt</span>, so they say (Lewis &amp; Short s.v. <span lang=\"la\">ita</span>)",
+        "Traupman 107: so they say, <span lang=\"la\">ita ajunt</span>"
       ],
       "comment": "The opposite of <span lang=\"la\">negō</span>. <span lang=\"la\">Ajunt</span>, “they say”, brings in a saying; <span lang=\"la\">Quid ais?</span> is “What do you say?” or “What’s that?”. For <span lang=\"la\">Ain' vērō?</span> see really."
     },
@@ -73,6 +76,11 @@
       "latin": "Tibi ego dīcō, annōn? … Mitte id quod sciō: dīc quod rogō.",
       "english": "I’m talking to you, aren’t I? … Never mind what I know: tell me what I’m asking.",
       "source": "Ter. And. 762–764"
+    },
+    {
+      "latin": "Ita ajunt.",
+      "english": "So they say.",
+      "source": "Ter. And. 1.2.21 (Lewis &amp; Short s.v. <span lang=\"la\">ita</span>)"
     }
   ],
   "related": [
@@ -87,11 +95,12 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/dico\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dico</a> · <a href=\"https://logeion.uchicago.edu/inquam\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: inquam</a> · <a href=\"https://logeion.uchicago.edu/aio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aio</a> · <a href=\"https://logeion.uchicago.edu/nego\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nego</a>",
     "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-plinius, loci-plautus, loci-terentius), as checked there against the editions they name.",
-    "Ter. Eun. 252 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+    "Ter. Eun. 252 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

@@ -7,7 +7,13 @@
     "what’s on your mind?",
     "in my mind",
     "come to mind",
-    "out of one’s mind"
+    "out of one’s mind",
+    "it had not entered my mind",
+    "it never occurred to me",
+    "that had never occurred to me",
+    "occur to",
+    "cross one’s mind",
+    "enter one’s mind"
   ],
   "domain": "verba",
   "terms": [
@@ -33,6 +39,20 @@
         "Plaut. Amph. 293: <span lang=\"la\">Mī in mentem vēnit</span>"
       ],
       "comment": "The thinking mind: <span lang=\"la\">in mentem venīre</span>, to come into one’s head; <span lang=\"la\">mente captus</span>, out of one’s mind (Cic. Ac. 2.53, Lewis &amp; Short)."
+    },
+    {
+      "latin": "in mentem venīre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "come to mind, occur to (someone)",
+      "grammar": "phrase: what occurs is the subject, the person in the dative",
+      "evidence": [
+        "Plaut. Am. 2.2.34: <span lang=\"la\">quid tibi istuc in mentem venit?</span> (Lewis &amp; Short s.v. <span lang=\"la\">mēns</span>)",
+        "Plaut. Aul. 2.2.49: <span lang=\"la\">venit hoc mihi in mentem</span> (Lewis &amp; Short)",
+        "Traupman 104: it had not entered my mind, <span lang=\"la\">mihi in mentem nōn vēnerat</span>",
+        "Traupman 105: that had never occurred to me, <span lang=\"la\">mihi istuc numquam in mentem vēnerat</span>"
+      ],
+      "comment": "English says “I thought of it”; Latin says “it came into my mind”: <span lang=\"la\">mihi in mentem vēnit</span>. With a genitive it means “to remember”: <span lang=\"la\">venit mihi Platōnis in mentem</span> is Cicero’s idiom (see remember)."
     }
   ],
   "phrases": [
@@ -50,6 +70,11 @@
       "latin": "quod quī sequitur, corpore senex esse poterit, animō numquam erit",
       "english": "whoever follows this may be old in body, but will never be old in mind",
       "source": "Cic. Sen. 38"
+    },
+    {
+      "latin": "Mihi istuc numquam in mentem vēnerat.",
+      "english": "That had never occurred to me.",
+      "source": "Traupman 105"
     }
   ],
   "related": [
@@ -62,11 +87,13 @@
     "<a href=\"https://logeion.uchicago.edu/animus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: animus</a> · <a href=\"https://logeion.uchicago.edu/mens\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mens</a>",
     "Quotations from the Latinitas loci collections (loci-terentius, loci-cicero-philosophica), as checked there against the editions they name.",
     "Plaut. Amph. 293 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 104, checked against the searchable text of the book."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 104, checked against the searchable text of the book.",
+    "<a href=\"https://logeion.uchicago.edu/mens\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mens</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

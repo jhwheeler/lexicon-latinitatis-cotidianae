@@ -11,7 +11,8 @@
     "adjoining",
     "next to (of places)",
     "bordering on",
-    "neighbouring"
+    "neighbouring",
+    "next door to"
   ],
   "domain": "natura",
   "terms": [
@@ -35,7 +36,9 @@
       "evidence": [
         "Ov. Met. 4.90: <span lang=\"la\">mōrus fontī</span> (Lewis &amp; Short)",
         "Plin. NH 13.90: <span lang=\"la\">Aethiopia Aegyptō</span> (Lewis &amp; Short)",
-        "Traupman 202: adjacent to"
+        "Traupman 202: adjacent to",
+        "Lewis &amp; Short: not before the Augustan age",
+        "Traupman 268"
       ],
       "comment": "Not before Augustus, says Lewis &amp; Short."
     },
@@ -45,7 +48,8 @@
       "period": "classical",
       "gloss": "joined, adjoining",
       "evidence": [
-        "Traupman 202: adjoining nations, <span lang=\"la\">jūnctae nātiōnēs</span>"
+        "Traupman 202: adjoining nations, <span lang=\"la\">jūnctae nātiōnēs</span>",
+        "Traupman 269"
       ]
     },
     {
@@ -54,15 +58,26 @@
       "period": "modern",
       "gloss": "adjoin",
       "evidence": [
-        "Traupman 202"
+        "Traupman 202",
+        "Traupman 268"
       ],
       "comment": "We have found no classical instance of the passive of <span lang=\"la\">adjungō</span> for a place adjoining another; <span lang=\"la\">adjacēre</span> is the classical word."
+    },
+    {
+      "latin": "fīnitimus, fīnitima, fīnitimum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "neighbouring, bordering",
+      "evidence": [
+        "Lewis &amp; Short s.v. <span lang=\"la\">fīnitimus</span>"
+      ]
     }
   ],
   "related": [
     "border",
     "near",
-    "next-to"
+    "next-to",
+    "neighbour"
   ],
   "sources": [
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, cited by printed page; each phrase checked against the searchable text of the book.",
@@ -70,11 +85,20 @@
     "<a href=\"https://logeion.uchicago.edu/conterminus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: conterminus</a>",
     "<a href=\"https://logeion.uchicago.edu/jungo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: jungo</a>",
     "<a href=\"https://logeion.uchicago.edu/adjungo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: adjungo</a>",
-    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "<a href=\"https://logeion.uchicago.edu/finitimus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: finitimus</a> · <a href=\"https://logeion.uchicago.edu/conterminus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: conterminus</a> · <a href=\"https://logeion.uchicago.edu/jungo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: jungo</a> · <a href=\"https://logeion.uchicago.edu/adjungo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: adjungo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 268, p. 269."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "jūncta cubicula",
+      "english": "adjoining rooms",
+      "source": "Traupman 269"
+    }
+  ]
 }

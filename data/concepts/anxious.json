@@ -7,7 +7,9 @@
     "uneasy",
     "nervous",
     "nervousness",
-    "tense"
+    "tense",
+    "be in a stew",
+    "stew over"
   ],
   "domain": "sermo",
   "terms": [
@@ -60,6 +62,16 @@
         "Traupman 156, 158"
       ],
       "comment": "Properly “stretched, intent”; Traupman’s word for nervous and tense."
+    },
+    {
+      "latin": "aestuō, aestuāre, aestuāvī, aestuātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "be in a stew, be agitated, fret",
+      "evidence": [
+        "Cic. Verr. 2.2.23: <span lang=\"la\">aestuāre illī quī dederant pecūniam</span> (Lewis &amp; Short)",
+        "Traupman 385"
+      ]
     }
   ],
   "related": [
@@ -73,11 +85,19 @@
     "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 36.",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, each phrase checked against the searchable text of the book.",
     "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 272."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 272.",
+    "<a href=\"https://logeion.uchicago.edu/aestuo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aestuo</a>"
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "In eō aestuāvī diū.",
+      "english": "I stewed over it for a long time.",
+      "source": "Traupman 385"
+    }
+  ]
 }

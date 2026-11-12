@@ -6,7 +6,10 @@
     "say grace",
     "saying grace",
     "giving thanks",
-    "thank"
+    "thank",
+    "thank you for (doing something)",
+    "thank you for helping me",
+    "thanks for your gifts"
   ],
   "domain": "sermo",
   "terms": [
@@ -16,7 +19,9 @@
       "period": "classical",
       "gloss": "give thanks, say grace",
       "evidence": [
-        "Traupman 393"
+        "Traupman 393",
+        "Caes. BG 1.41: <span lang=\"la\">decima legiō … grātiās ēgit, quod dē sē optimum jūdicium fēcisset</span> (Lewis &amp; Short)",
+        "Traupman p. 109: <span lang=\"la\">grātiās agō quod</span> (+ indicative)"
       ],
       "comment": "+ dative of the person; <strong lang=\"la\">prō</strong> + ablative of the thing. <strong lang=\"la\">grātiās agere</strong> is thanking in words; <strong lang=\"la\">grātiam referre</strong> is repaying in deed (Cic. <em>Off.</em> I 47)."
     }
@@ -36,6 +41,16 @@
       "latin": "Cōnfitēminī Dominō, quoniam bonus: quoniam in aeternum misericordia ejus.",
       "english": "Give thanks to the Lord, for he is good: for his mercy endures for ever (said responsively, Dad the first half-verse and Theo the second).",
       "source": "Ps. 135 [136], 1"
+    },
+    {
+      "latin": "Grātiās tibi agō quod mē jūvistī.",
+      "english": "Thank you for helping me.",
+      "source": "Traupman p. 109"
+    },
+    {
+      "latin": "grātiās tibi dē dōnīs tuīs: sed tū mihi ea servā",
+      "english": "thanks to you for your gifts: but keep them safe for me",
+      "source": "Aug. Conf. 1.20.31"
     }
   ],
   "related": [
@@ -47,7 +62,10 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/gratia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gratia</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: p. 393, checked against the searchable text of the book on 29 October 2026.",
-    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "Quotations from the Latinitas loci collections, checked against the editions named there.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 109."
   ],
   "replaces": [
     "entry-247",
@@ -55,7 +73,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

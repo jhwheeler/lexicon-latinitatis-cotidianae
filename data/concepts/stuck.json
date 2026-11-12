@@ -7,7 +7,8 @@
     "get stuck",
     "be stuck",
     "jammed",
-    "at a loss"
+    "at a loss",
+    "can’t tear myself away from (my books)"
   ],
   "also_under": [
     "verba"
@@ -22,7 +23,8 @@
       "evidence": [
         "Phaedr. 4.9.12: <span lang=\"la\">haerentem vadō</span>",
         "Plaut. Capt. 3.3.17: <span lang=\"la\">quid māchiner? quid comminīscar? haereō</span> (Lewis &amp; Short)",
-        "Traupman 108, 386"
+        "Traupman 108, 386",
+        "Traupman p. 109: <span lang=\"la\">in scrībendō (in librīs) haereō</span>"
       ],
       "comment": "Latin says it with the verb: <span lang=\"la\">haereō</span>, I’m stuck. Also of a small child stuck on the shapes of the letters (<span lang=\"la\">haesit circā fōrmās litterārum</span>, Quint. 1.1.21)."
     },
@@ -58,6 +60,16 @@
       "latin": "Pila in arbore haeret.",
       "english": "The ball’s stuck in the tree.",
       "source": "composed"
+    },
+    {
+      "latin": "equidem in librīs haereō",
+      "english": "I can’t tear myself away from my books",
+      "source": "Cic. Att. 13.40.2 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "valdē in scrībendō haereō",
+      "english": "I am quite stuck in my writing",
+      "source": "Cic. Att. 13.39.2 (Lewis &amp; Short)"
     }
   ],
   "related": [
@@ -68,11 +80,13 @@
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 108, 386, checked against the searchable text of the book (9 November 2026).",
     "Quotations from the Latinitas loci collections (loci-phaedrus, loci-gellius, loci-vergilius, loci-quintilianus), checked against the editions named there.",
     "Terence (Phorm. 780) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>.",
-    "The example sentence marked “composed” is ours."
+    "The example sentence marked “composed” is ours.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 109."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

@@ -6,7 +6,9 @@
     "I’m having fun",
     "having fun",
     "I’m enjoying myself",
-    "enjoying myself"
+    "enjoying myself",
+    "he’s having a good time",
+    "I’m having a lousy time"
   ],
   "domain": "sermo",
   "terms": [
@@ -17,6 +19,18 @@
       "evidence": [
         "Traupman 109"
       ]
+    },
+    {
+      "latin": "Mihi male est.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "I’m having a bad time; I’m in a bad way",
+      "evidence": [
+        "Cic. Verr. 2.4.95: <span lang=\"la\">numquam tam male est Siculīs, quīn aliquid facētē et commodē dīcant</span> (Lewis &amp; Short s.v. <span lang=\"la\">facētus</span>)",
+        "Catull. 38.1",
+        "Traupman p. 109, 111"
+      ],
+      "comment": "The opposite of <span lang=\"la\">mihi bene est</span>: the dative of the person with the adverb, “it is badly with me”."
     }
   ],
   "phrases": [
@@ -24,6 +38,16 @@
       "latin": "«Mihi bene est, tata!»",
       "english": "“I’m having a lovely time, Dad!”",
       "source": "Libellus V, <span lang=\"la\">Lisbōna: castellum et ōceanārium</span>"
+    },
+    {
+      "latin": "Eī bene est sōlī.",
+      "english": "He’s having a good time by himself.",
+      "source": "Traupman p. 109"
+    },
+    {
+      "latin": "malest, Cornificī, tuō Catullō, malest, mē hercule, et labōriōsē",
+      "english": "your Catullus is not well, Cornificius, not well, by Hercules, and it’s hard going",
+      "source": "Catull. 38.1–2"
     }
   ],
   "related": [
@@ -32,11 +56,15 @@
   ],
   "sources": [
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: p. 109, checked against the searchable text of the book on 29 October 2026.",
-    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 109.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 111.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "Quotations from the Latinitas loci collections, checked against the editions named there."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

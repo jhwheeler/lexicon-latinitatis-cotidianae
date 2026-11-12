@@ -31,6 +31,36 @@
         "Liv. 45.10: <span lang=\"la\">portus ex adversō urbī positus</span> (Lewis &amp; Short s.v. <span lang=\"la\">adversus</span>)",
         "Traupman 268"
       ]
+    },
+    {
+      "latin": "contrā (+ acc.)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "opposite, over against (especially across water)",
+      "evidence": [
+        "Caes. B.G. 5.13: <span lang=\"la\">cujus ūnum latus est contrā Galliam</span> (Lewis &amp; Short s.v. <span lang=\"la\">contrā</span>)",
+        "Traupman 354"
+      ],
+      "comment": "Lewis &amp; Short: <span lang=\"la\">contrā</span> mostly of places across water from each other; <span lang=\"la\">adversus</span> and <span lang=\"la\">ē regiōne</span> of places opposite by land."
+    },
+    {
+      "latin": "adversum (adversus) + acc.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "opposite, facing",
+      "evidence": [
+        "Traupman 354"
+      ]
+    },
+    {
+      "latin": "versus (+ acc.)",
+      "status": "avoid",
+      "period": "classical",
+      "gloss": "Traupman’s “opposite”; classically “towards”",
+      "evidence": [
+        "Traupman 354"
+      ],
+      "comment": "Placed after its noun, <span lang=\"la\">versus</span> means towards, in the direction of: <span lang=\"la\">Rōmam versus</span> (Lewis &amp; Short); it does not mean opposite."
     }
   ],
   "related": [
@@ -38,13 +68,20 @@
     "on-the-left"
   ],
   "sources": [
-    "<a href=\"https://logeion.org/exadversum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: exadversum</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 174.",
-    "<a href=\"https://logeion.uchicago.edu/adversus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: adversus</a>"
+    "<a href=\"https://logeion.uchicago.edu/adversus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: adversus</a>",
+    "<a href=\"https://logeion.org/exadversum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: exadversum</a> · <a href=\"https://logeion.uchicago.edu/contra\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: contra</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 174; p. 354."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "ex adversō (+ gen.)",
+      "english": "opposite (of)",
+      "source": "Traupman 354"
+    }
+  ]
 }

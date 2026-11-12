@@ -9,7 +9,10 @@
     "find employment",
     "a living",
     "livelihood",
-    "occupation"
+    "occupation",
+    "what is your occupation?",
+    "make a living",
+    "what do you do for a living?"
   ],
   "domain": "labor",
   "also_under": [
@@ -37,6 +40,16 @@
         "Traupman 335: job (piece of work), <span lang=\"la\">opus</span>"
       ],
       "comment": "Work as a task, not as a livelihood: <span lang=\"la\">opus nōn habet</span>, he has nothing to do. See job."
+    },
+    {
+      "latin": "quaestum facere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "to earn a living",
+      "evidence": [
+        "Traupman 341, 353: <span lang=\"la\">quaestum facere</span>; <span lang=\"la\">quem quaestum facis?</span>, what is your occupation?"
+      ],
+      "comment": "Take care: in Plautus and Terence <span lang=\"la\">quaestum facere</span> on its own is said of a prostitute (Lewis &amp; Short s.v. <span lang=\"la\">quaestus</span>); <span lang=\"la\">vīctum quaeritāre</span>, which Traupman also gives, is safer."
     }
   ],
   "phrases": [
@@ -49,6 +62,11 @@
       "latin": "Quaestum nōndum invēnit.",
       "english": "He hasn’t found work yet.",
       "source": "composed"
+    },
+    {
+      "latin": "Quem quaestum facis?",
+      "english": "What is your occupation?",
+      "source": "Traupman 353"
     }
   ],
   "related": [
@@ -66,7 +84,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

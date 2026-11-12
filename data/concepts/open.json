@@ -2,6 +2,10 @@
   "id": "open",
   "english": "open",
   "pos": "verb",
+  "also": [
+    "open your book",
+    "open your books to page"
+  ],
   "also_under": [
     "verba"
   ],
@@ -18,6 +22,11 @@
       "latin": "Jānuam aperī.",
       "english": "Open the door.",
       "source": "composed"
+    },
+    {
+      "latin": "Aperī librum (aperīte librōs) ad pāginam …",
+      "english": "Open your book (your books) to page …",
+      "source": "Traupman 33"
     }
   ],
   "related": [
@@ -26,14 +35,15 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/aperio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aperio</a>",
-    "The example sentence marked “composed” is ours."
+    "The example sentence marked “composed” is ours.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, cited by printed page; each phrase checked against the searchable text of the book."
   ],
   "replaces": [
     "entry-89"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

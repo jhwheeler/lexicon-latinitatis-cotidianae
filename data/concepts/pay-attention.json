@@ -2,6 +2,10 @@
   "id": "pay-attention",
   "english": "pay attention!",
   "pos": "phrase",
+  "also": [
+    "pay attention to what I am saying",
+    "classroom commands"
+  ],
   "domain": "sermo",
   "terms": [
     {
@@ -9,8 +13,16 @@
       "status": "recommended",
       "period": "classical",
       "evidence": [
-        "Traupman 33–34"
+        "Traupman 33–34",
+        "Traupman 34: pay attention to what I am saying, <span lang=\"la\">attende (attendite) dicta mea</span>"
       ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Attende (attendite) dicta mea.",
+      "english": "Pay attention to what I am saying.",
+      "source": "Traupman 34"
     }
   ],
   "related": [
@@ -23,7 +35,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

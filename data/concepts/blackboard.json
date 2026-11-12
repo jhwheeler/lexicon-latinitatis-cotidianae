@@ -2,6 +2,11 @@
   "id": "blackboard",
   "english": "blackboard",
   "pos": "noun",
+  "also": [
+    "go to the blackboard",
+    "go to the board",
+    "write that on the board"
+  ],
   "domain": "sermo",
   "terms": [
     {
@@ -9,7 +14,8 @@
       "status": "recommended",
       "period": "modern",
       "evidence": [
-        "Traupman 28, 32"
+        "Traupman 28, 32",
+        "Traupman 33, 34"
       ]
     },
     {
@@ -19,6 +25,18 @@
       "evidence": [
         "Vatican lexicon"
       ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Accēde (accēdite) ad tabulam ātram.",
+      "english": "Go to the blackboard.",
+      "source": "Traupman 33"
+    },
+    {
+      "latin": "Scrībe (scrībite) id in tabulā ātrā.",
+      "english": "Write that on the board.",
+      "source": "Traupman 34"
     }
   ],
   "related": [
@@ -31,7 +49,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

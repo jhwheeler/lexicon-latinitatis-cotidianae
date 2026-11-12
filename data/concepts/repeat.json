@@ -8,7 +8,9 @@
     "say that again",
     "repeat after me",
     "do again",
-    "repetition"
+    "repetition",
+    "repeat the passage",
+    "repeat what you just said"
   ],
   "domain": "verba",
   "terms": [
@@ -33,7 +35,8 @@
       "evidence": [
         "Traupman 34: <span lang=\"la\">repete quid modo dīxerīs</span>, repeat what you just said",
         "Cic. Fin. 5.51 (Lewis &amp; Short): <span lang=\"la\">praetermissa repetimus</span>",
-        "Traupman 31"
+        "Traupman 31",
+        "Traupman 34: repeat the passage, <span lang=\"la\">repete (repetite) locum</span>"
       ],
       "comment": "To go back over what was said or begun, so also to resume; Traupman’s classroom word. Its first senses are to attack again and to go back for, fetch, or claim back (<span lang=\"la\">rēs repetere</span>); Lewis &amp; Short."
     },
@@ -54,6 +57,18 @@
         "Quint. 9.1.24 (Lewis &amp; Short)",
         "Traupman 31"
       ]
+    },
+    {
+      "latin": "eīsdem verbīs reddere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "repeat word for word",
+      "grammar": "reddō with the ablative eīsdem verbīs",
+      "evidence": [
+        "Cic. Brut. 301: <span lang=\"la\">ut quae sēcum commentātus esset, ea sine scrīptō verbīs eīsdem redderet</span> (Lewis &amp; Short s.v. <span lang=\"la\">reddō</span>)",
+        "Traupman 34: repeat after me, <span lang=\"la\">eīsdem verbīs mihi redde (reddite)</span>"
+      ],
+      "comment": "<span lang=\"la\">Reddere</span> is to give back what one has heard or learned, so “repeat after me” is <span lang=\"la\">eīsdem verbīs mihi redde</span>, “give it back to me in the same words”."
     }
   ],
   "phrases": [
@@ -65,6 +80,16 @@
     {
       "latin": "repete quid modo dīxerīs",
       "english": "repeat what you just said",
+      "source": "Traupman 34"
+    },
+    {
+      "latin": "Eīsdem verbīs mihi redde (reddite).",
+      "english": "Repeat after me.",
+      "source": "Traupman 34"
+    },
+    {
+      "latin": "Repete (repetite) locum.",
+      "english": "Repeat the passage.",
       "source": "Traupman 34"
     }
   ],
@@ -78,7 +103,9 @@
     "<a href=\"https://logeion.uchicago.edu/itero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: itero</a> · <a href=\"https://logeion.uchicago.edu/repeto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: repeto</a>",
     "<a href=\"https://logeion.uchicago.edu/repetitio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: repetitio</a>",
     "Cic. Att. 14.14.1 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (Purser, who prints <span lang=\"la\">Iteradum</span> as one word; 11 November 2026).",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 34, 31, checked against the searchable text of the book."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 34, 31, checked against the searchable text of the book.",
+    "<a href=\"https://logeion.uchicago.edu/reddo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: reddo</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",

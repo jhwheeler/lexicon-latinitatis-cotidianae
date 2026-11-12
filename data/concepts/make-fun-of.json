@@ -9,7 +9,10 @@
     "laugh at",
     "ridicule",
     "he always makes fun of me",
-    "jeer"
+    "jeer",
+    "don’t laugh at him",
+    "don’t tease him",
+    "don’t laugh"
   ],
   "domain": "sermo",
   "terms": [
@@ -34,6 +37,29 @@
         "Cic. Ac. 2.39.123: <span lang=\"la\">et vōs ab illō irrīdēminī et ipsī illum vicissim ēlūditis</span> (Lewis &amp; Short)",
         "Traupman 98: <span lang=\"la\">iste mē semper ēlūdit</span>"
       ]
+    },
+    {
+      "latin": "rīdeō, rīdēre, rīsī, rīsum + acc.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "laugh at",
+      "evidence": [
+        "Ter. Ad. 4.2.9: <span lang=\"la\">rīdeō hunc</span> (Lewis &amp; Short)",
+        "Cic. Quinct. 55: <span lang=\"la\">rīdet nostram āmentiam</span> (Lewis &amp; Short)",
+        "Traupman 33"
+      ],
+      "comment": "Milder than <span lang=\"la\">dērīdeō</span>, says Lewis &amp; Short: laughing at someone rather than jeering."
+    },
+    {
+      "latin": "taxō, taxāre, taxāvī, taxātum",
+      "status": "avoid",
+      "period": "classical",
+      "gloss": "censure, reproach (not “tease”)",
+      "evidence": [
+        "Suet. Aug. 4: <span lang=\"la\">sīc taxat Augustum</span> (Lewis &amp; Short)",
+        "Traupman 33: don’t tease him, <span lang=\"la\">nōlī eum taxāre</span>"
+      ],
+      "comment": "Traupman gives it for “tease”, but in Lewis &amp; Short it is to reproach someone with a fault, a post-Augustan word (Suetonius, Pliny). For teasing use <span lang=\"la\">rīdēre</span> or <span lang=\"la\">irrīdēre</span>; <span lang=\"la\">taxāre</span> is entered under criticism."
     }
   ],
   "phrases": [
@@ -41,6 +67,11 @@
       "latin": "Iste mē semper ēlūdit.",
       "english": "He always makes fun of me.",
       "source": "Traupman 98"
+    },
+    {
+      "latin": "Nōlī (nōlīte) rīdēre eum (eam).",
+      "english": "Don’t laugh at him (her).",
+      "source": "Traupman 33"
     }
   ],
   "related": [
@@ -50,7 +81,9 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/irrideo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: irrideo</a> · <a href=\"https://logeion.uchicago.edu/eludo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: eludo</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 98, checked against the searchable text and the page image (12 November 2026).",
-    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "<a href=\"https://logeion.uchicago.edu/rideo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: rideo</a>",
+    "<a href=\"https://logeion.uchicago.edu/taxo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: taxo</a>"
   ],
   "review": {
     "status": "draft",

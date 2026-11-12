@@ -6,7 +6,14 @@
   "also": [
     "ask a question",
     "answer my question",
-    "what a question!"
+    "what a question!",
+    "loaded question",
+    "that’s a loaded question",
+    "ask a loaded question",
+    "answer the question",
+    "why do you ask such questions?",
+    "many questions are raised",
+    "no question (no doubt)"
   ],
   "also_under": [
     "schola"
@@ -46,6 +53,28 @@
         "Traupman 89"
       ],
       "comment": "Also <span lang=\"la\">Mēn' rogās?</span> (Lewis &amp; Short)."
+    },
+    {
+      "latin": "captiōsa interrogātiō",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a loaded question, a trick question",
+      "evidence": [
+        "Cic. Ac. 2.46: <span lang=\"la\">fallācibus et captiōsīs interrogātiōnibus</span> (Lewis &amp; Short s.v. <span lang=\"la\">captiōsus</span>)",
+        "Traupman p. 106: that’s a loaded question, <span lang=\"la\">captiōsum interrogātum est</span>",
+        "Traupman p. 106: to ask a loaded question, <span lang=\"la\">captiōsē interrogāre</span>"
+      ],
+      "comment": "Cicero’s term from logic: questions framed to catch the one who answers. Traupman’s <span lang=\"la\">captiōsum interrogātum</span> uses the participle as a noun."
+    },
+    {
+      "latin": "ad rogātum respondēre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "answer the question (put)",
+      "evidence": [
+        "Cic. Fl. 10: <span lang=\"la\">numquam nōbīs ad rogātum respondent</span> (Lewis &amp; Short s.v. <span lang=\"la\">rogō</span>)",
+        "Traupman p. 106: to answer the question, <span lang=\"la\">ad rogātum (or interrogātum) respondēre</span>"
+      ]
     }
   ],
   "phrases": [
@@ -63,6 +92,21 @@
       "latin": "Quae interrogātiō, vesperī facta, Pȳthagorēōrum est",
       "english": "That question, asked in the evening, is the Pythagoreans’",
       "source": "Libellus I, <span lang=\"la\">Iter in Lūsitāniam</span>"
+    },
+    {
+      "latin": "quōrsum tandem, aut cūr ista quaeris?",
+      "english": "what are you getting at, or why do you ask such questions?",
+      "source": "Cic. Leg. 1.4 (Lewis &amp; Short s.v. <span lang=\"la\">cūr</span>)"
+    },
+    {
+      "latin": "Multa quaeruntur.",
+      "english": "Many questions are raised.",
+      "source": "Traupman p. 106"
+    },
+    {
+      "latin": "Nempe in culpā est.",
+      "english": "No question, he’s at fault.",
+      "source": "Traupman p. 106"
     }
   ],
   "related": [
@@ -76,11 +120,14 @@
     "Quotations from the Latinitas loci collections (loci-terentius), checked against the editions named there.",
     "Quotations of Plautus (Leo, 1896; cited by his lines), Terence (Parry, 1857; cited by the lines of the Oxford text) and Cicero’s letters (Purser) that are not in the loci collections were checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
     "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition.",
-    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 9 November 2026. Examples marked “Libellus” quote those texts word for word."
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 9 November 2026. Examples marked “Libellus” quote those texts word for word.",
+    "<a href=\"https://logeion.uchicago.edu/captiosus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: captiosus</a> · <a href=\"https://logeion.uchicago.edu/rogo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: rogo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 106, each phrase checked against the searchable text of the book.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

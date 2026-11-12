@@ -9,7 +9,9 @@
     "go through",
     "suffer a wrong",
     "suffer a defeat",
-    "suffering"
+    "suffering",
+    "put up with someone",
+    "bear with"
   ],
   "domain": "verba",
   "terms": [
@@ -55,6 +57,17 @@
         "Ter. Ph. 138: <span lang=\"la\">quod fors feret, ferēmus aequō animō</span>",
         "Traupman 387"
       ]
+    },
+    {
+      "latin": "perpetior, perpetī, perpessus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "put up with, bear patiently, endure to the end",
+      "grammar": "verb, third conjugation (-iō), deponent, transitive",
+      "evidence": [
+        "Cic. de Or. 2.77: <span lang=\"la\">facile omnēs perpetior ac perferō</span> (Lewis &amp; Short)",
+        "Traupman p. 106: put up with s.o., <span lang=\"la\">aliquem perpetior</span>"
+      ]
     }
   ],
   "phrases": [
@@ -89,11 +102,13 @@
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 186, 387, checked against the searchable text of the book (9 November 2026).",
     "Quotations from the Latinitas loci collections (loci-livius, loci-phaedrus, loci-catullus, loci-terentius), checked against the editions named there.",
     "Cicero, <em>Tusculans</em> 5, checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> and the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026).",
-    "Quotations from the Latinitas loci collections and the note on suppletive verbs, checked against the editions named there."
+    "Quotations from the Latinitas loci collections and the note on suppletive verbs, checked against the editions named there.",
+    "<a href=\"https://logeion.uchicago.edu/perpetior\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: perpetior</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

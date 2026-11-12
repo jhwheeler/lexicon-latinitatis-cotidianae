@@ -10,15 +10,26 @@
   "domain": "sermo",
   "terms": [
     {
-      "latin": "Quōmodo sciam?",
+      "latin": "Quī sciam?",
       "status": "recommended",
+      "period": "classical",
+      "gloss": "how should I know?",
+      "grammar": "quī, the old ablative “how”, with the deliberative subjunctive",
+      "evidence": [
+        "Ter. And. 791: <span lang=\"la\">Eho inepta, nescīs quid sit āctum? — Quī sciam?</span>"
+      ],
+      "comment": "The comic retort: a slave-girl, asked whether she doesn’t know what has happened. <span lang=\"la\">Quī</span> here is the adverb “how”, not the relative."
+    },
+    {
+      "latin": "Quōmodo sciam?",
+      "status": "alternative",
       "period": "modern",
       "gloss": "how should I know?",
       "grammar": "deliberative subjunctive: “how am I to know?”",
       "evidence": [
         "Traupman 35: how should I know?, <span lang=\"la\">quōmodo sciam?</span>"
       ],
-      "comment": "The subjunctive makes the question a protest, as in <span lang=\"la\">Quid faciam?</span>, what am I to do?. Lewis &amp; Short does not quote this question; it has <span lang=\"la\">Quī scīs?</span>, how do you know? (Plaut. Ep. 2.2.65)."
+      "comment": "Traupman’s question. The subjunctive makes it a protest, as in <span lang=\"la\">Quid faciam?</span>, what am I to do? Every word is classical; we have found no classical instance of the phrase."
     }
   ],
   "phrases": [
@@ -26,6 +37,11 @@
       "latin": "Ubi sunt calceī meī? — Quōmodo sciam?",
       "english": "Where are my shoes? — How should I know?",
       "source": "Traupman 35"
+    },
+    {
+      "latin": "Eho inepta, nescīs quid sit āctum? — Quī sciam?",
+      "english": "Hey, silly, don’t you know what’s happened? — How should I know?",
+      "source": "Ter. And. 791"
     }
   ],
   "related": [
@@ -34,7 +50,8 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/scio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: scio</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 35, each phrase checked against the searchable text of the book."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 35, each phrase checked against the searchable text of the book.",
+    "Quotations not in Lewis &amp; Short or the loci collections were checked against the Perseus Digital Library’s Latin texts (canonical-latinLit)."
   ],
   "review": {
     "status": "draft",

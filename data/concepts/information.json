@@ -9,7 +9,10 @@
     "info",
     "update (someone)",
     "keep someone updated",
-    "keep someone posted"
+    "keep someone posted",
+    "inform someone about",
+    "let me know what you are doing",
+    "let me know where you are"
   ],
   "domain": "verba",
   "terms": [
@@ -21,7 +24,8 @@
       "grammar": "phrase: certus in the comparative with faciō",
       "evidence": [
         "Cic. Fam. 2.4.1",
-        "Cael. in Cic. Fam. 8.1.1: <span lang=\"la\">fac mē certiōrem</span>"
+        "Cael. in Cic. Fam. 8.1.1: <span lang=\"la\">fac mē certiōrem</span>",
+        "Traupman p. 101, 102"
       ],
       "comment": "Latin gives information with a verb: <span lang=\"la\">fac mē certiōrem</span>, let me know; <span lang=\"la\">certior factus sum</span>, I have been told. The thing goes with <span lang=\"la\">dē</span>."
     },
@@ -64,6 +68,17 @@
         "Cic. ND 1.43: <span lang=\"la\">anteceptam animō reī quandam īnfōrmātiōnem</span>"
       ],
       "comment": "A false friend: classically a sketch (Vitruvius) or an idea formed in the mind. Morgan–Owens allows it for the act of informing (Thunberg 1784), not for information as facts."
+    },
+    {
+      "latin": "facere ut sciam",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "let me know",
+      "grammar": "faciō with an ut-clause: “see to it that I know”; often the future faciēs or the imperative facitō",
+      "evidence": [
+        "Cic. Fam. 14.8.1: <span lang=\"la\">sī quid acciderit novī, faciēs ut sciam</span>",
+        "Traupman p. 102: <span lang=\"la\">facitō ut sciam</span>; <span lang=\"la\">facitō ut sciam ubi sīs</span>"
+      ]
     }
   ],
   "phrases": [
@@ -76,6 +91,16 @@
       "latin": "fac mē certiōrem",
       "english": "let me know",
       "source": "Cael. in Cic. Fam. 8.1.1"
+    },
+    {
+      "latin": "Item posthāc, sī quid opus erit, sī quid acciderit novī, faciēs ut sciam.",
+      "english": "Likewise from now on, if anything is needed, if anything new happens, let me know.",
+      "source": "Cic. Fam. 14.8.1"
+    },
+    {
+      "latin": "Tū mē velim certiōrem faciās, quid agās.",
+      "english": "Please let me know what you are doing.",
+      "source": "Traupman p. 102"
     }
   ],
   "related": [
@@ -87,7 +112,11 @@
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. information.",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 217, 333, checked against the searchable text of the book (9 November 2026).",
     "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-catullus), checked against the editions named there.",
-    "Cicero, ND 1.43 checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+    "Cicero, ND 1.43 checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026).",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 101, checked against the searchable text and the page image (12 November 2026).",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 102, checked against the searchable text and the page image (12 November 2026).",
+    "Cic. Fam. 14.8.1 from the Latinitas loci collection (loci-cicero-epistulae), checked against the edition named there.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",

@@ -4,7 +4,11 @@
   "pos": "phrase",
   "also": [
     "say hello",
-    "give my regards"
+    "give my regards",
+    "says hello to you",
+    "sends greetings",
+    "sends her regards",
+    "give my love to"
   ],
   "domain": "sermo",
   "terms": [
@@ -17,6 +21,19 @@
         "Traupman 17",
         "Cic. Att. 4.14.2, cited by L&amp;S: <span lang=\"la\">Dionysium jubē salvēre</span>"
       ]
+    },
+    {
+      "latin": "salūtem dīcere (alicui)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "send greetings, say hello (from someone)",
+      "grammar": "salūtem, accusative of salūs, with dīcere and the dative of the person greeted",
+      "evidence": [
+        "Cic. Att. 14.19.6: <span lang=\"la\">tū Atticae salūtem dīcēs</span> (Lewis &amp; Short), s.v. <span lang=\"la\">salūs</span>",
+        "Cic. Fam. 14.7.3: <span lang=\"la\">salūtem plūrimam dīcit</span> (Lewis &amp; Short)",
+        "Traupman p. 100"
+      ],
+      "comment": "The opening of a Roman letter, <span lang=\"la\">S. D.</span> (<span lang=\"la\">salūtem dīcit</span>), and the way to pass on someone’s greetings: <span lang=\"la\">Terentia tibi salūtem dīcit</span>."
     }
   ],
   "phrases": [
@@ -24,6 +41,11 @@
       "latin": "Jubē aviam salvēre!",
       "english": "Say hello to Grandma for me!",
       "source": "composed"
+    },
+    {
+      "latin": "Terentia tibi salūtem dīcit.",
+      "english": "Terentia says hello to you.",
+      "source": "Traupman p. 100"
     }
   ],
   "related": [
@@ -33,7 +55,10 @@
   "sources": [
     "<a href=\"https://logeion.org/salveo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: salveo</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 17.",
-    "The example sentences marked “composed” are ours."
+    "The example sentences marked “composed” are ours.",
+    "<a href=\"https://logeion.uchicago.edu/salus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: salus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 100, checked against the searchable text and the page image (12 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",

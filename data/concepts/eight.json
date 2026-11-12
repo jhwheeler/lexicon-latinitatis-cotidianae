@@ -9,14 +9,17 @@
   "domain": "sermo",
   "terms": [
     {
-      "latin": "octo",
+      "latin": "octō",
       "status": "recommended",
       "period": "classical",
       "grammar": "numeral, indeclinable",
       "evidence": [
         "Traupman 253"
       ],
-      "comment": "Lewis &amp; Short prints <span lang=\"la\">octŏ</span> with a short final vowel; Traupman writes <span lang=\"la\">octō</span>."
+      "comment": "Traupman writes <span lang=\"la\">octō</span>, the regular form. Lewis &amp; Short prints <span lang=\"la\">octŏ</span> with a short final vowel, a shortened form.",
+      "notes": [
+        "octo-long"
+      ]
     }
   ],
   "related": [
@@ -31,5 +34,13 @@
     "status": "draft",
     "date": "2026-11-12",
     "by": "Claude"
+  },
+  "notes": {
+    "octo-long": {
+      "form": "octō",
+      "claim": "long final o",
+      "against": "Lewis &amp; Short prints octŏ",
+      "html": "The inherited form, with the long vowel of Greek ὀκτώ; Allen &amp; Greenough’s table of numerals (§133) and Traupman (253) print <span lang=\"la\">octō</span>. Lewis &amp; Short’s <span lang=\"la\">octŏ</span> is a shortened form."
+    }
   }
 }

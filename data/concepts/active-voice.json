@@ -13,28 +13,28 @@
   "domain": "schola",
   "terms": [
     {
-      "latin": "faciendī modus",
-      "status": "recommended",
-      "period": "classical",
-      "gloss": "the active voice, “the mode of doing”",
-      "evidence": [
-        "Quint. 9.3.7: <span lang=\"la\">et contrā faciendī quae patimur, ut vāpulō</span> (Lewis &amp; Short s.v. <span lang=\"la\">modus</span>)"
-      ],
-      "comment": "Quintilian’s name, set against <span lang=\"la\">patiendī modus</span>, the passive."
-    },
-    {
       "latin": "āctīvus, āctīva, āctīvum",
-      "status": "alternative",
+      "status": "recommended",
       "period": "late",
       "gloss": "active",
       "evidence": [
         "Charis. p. 138; Diom. p. 326 P. (Lewis &amp; Short)",
         "Traupman 227, 245"
       ],
-      "comment": "The later grammarians’ term: <span lang=\"la\">verbum āctīvum</span>, an active verb; <span lang=\"la\">genus āctīvum</span>, the active voice (Traupman 245). For the grammarians an <span lang=\"la\">āctīvum</span> verb was transitive, against <span lang=\"la\">neutra</span>.",
+      "comment": "The later grammarians’ term: <span lang=\"la\">verbum āctīvum</span>, an active verb; <span lang=\"la\">genus āctīvum</span>, the active voice (Traupman 245). For the grammarians an <span lang=\"la\">āctīvum</span> verb was transitive, against <span lang=\"la\">neutra</span>. Quintilian calls it <span lang=\"la\">faciendī modus</span>, “the mode of doing” (see below).",
       "notes": [
         "activus"
       ]
+    },
+    {
+      "latin": "faciendī modus",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the active voice, “the mode of doing”",
+      "evidence": [
+        "Quint. 9.3.7: <span lang=\"la\">et contrā faciendī quae patimur, ut vāpulō</span> (Lewis &amp; Short s.v. <span lang=\"la\">modus</span>)"
+      ],
+      "comment": "Quintilian’s name, set against <span lang=\"la\">patiendī modus</span>, the passive. The older name; the grammars and the classroom use the later one."
     }
   ],
   "phrases": [

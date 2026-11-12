@@ -9,7 +9,14 @@
     "we’re okay",
     "I’m alright",
     "alright",
-    "we’re O.K."
+    "we’re O.K.",
+    "very well",
+    "I’m very well",
+    "fine, thanks",
+    "in great shape",
+    "as well as ever",
+    "all’s well at home",
+    "everyone’s well"
   ],
   "domain": "sermo",
   "terms": [
@@ -45,6 +52,51 @@
       "evidence": [
         "Traupman 105"
       ]
+    },
+    {
+      "latin": "Rēctē.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "fine, all right (as an answer)",
+      "register": "vōx sermōnis cotīdiānī: Plaut., Ter.",
+      "evidence": [
+        "Ter. Ad. 5.5.3: <span lang=\"la\">Quid fit? quid agitur? — Rēctē.</span> (Lewis &amp; Short s.v. <span lang=\"la\">regō</span>)",
+        "Traupman 17: fine, <span lang=\"la\">rēctē</span>"
+      ],
+      "comment": "Lewis &amp; Short: “esp. in answers, in colloquial lang., well, quite well, right”; also a politely evasive “it’s all right, nothing’s the matter” (Plaut. Merc. 2.3.33: <span lang=\"la\">Rēctē, pater</span>)."
+    },
+    {
+      "latin": "Rēctē valeō.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "I’m very well",
+      "evidence": [
+        "Plaut. Bacch. 2.2.11: <span lang=\"la\">Rēctē valet? — Vīvit rēctē et valet.</span> (Lewis &amp; Short s.v. <span lang=\"la\">regō</span>)",
+        "Plaut. Am. 2.1.36: <span lang=\"la\">equidem valeō rēctē et salvus sum</span> (Lewis &amp; Short s.v. <span lang=\"la\">valeō</span>)",
+        "Traupman 17: to be very well, <span lang=\"la\">rēctē valēre</span>"
+      ]
+    },
+    {
+      "latin": "Bellē.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "fine, very well",
+      "evidence": [
+        "Cic. Att. 12.37: <span lang=\"la\">bellē sē habēre</span> (Lewis &amp; Short s.v. <span lang=\"la\">bellus</span>)",
+        "Cic. Fam. 9.9.1: <span lang=\"la\">bellē habēre</span>, to be in good health (Lewis &amp; Short)",
+        "Traupman 17: fine, <span lang=\"la\">bellē</span>"
+      ],
+      "comment": "The word of Cicero’s letters for being well; the superlative too: <span lang=\"la\">bellissimē esse</span> (Cic. Att. 14.14.1, Lewis &amp; Short). Traupman 17 adds <span lang=\"la\">Bellissimē</span> and <span lang=\"la\">Perbellē</span>, very well; Lewis &amp; Short has <span lang=\"la\">perbellē</span> “very finely” (Cic. Fam. 16.18.1) but not of health."
+    },
+    {
+      "latin": "Pulchrē est mihi.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "I’m well, things are going well for me",
+      "evidence": [
+        "Cic. N. D. 1.114; Hor. S. 2.8.19; Catull. 23.5 (Lewis &amp; Short s.v. <span lang=\"la\">pulcher</span>)"
+      ],
+      "comment": "Impersonal, with the person in the dative: “it is fine for me”."
     }
   ],
   "phrases": [
@@ -52,6 +104,26 @@
       "latin": "«Rēctēne advēnistis?» inquit avia. «Bene habēmus,» inquit pater.",
       "english": "“Did you have a good journey?” said Grandma. “We’re fine,” said Dad.",
       "source": "Libellus I, <span lang=\"la\">Iter in Lūsitāniam</span>"
+    },
+    {
+      "latin": "Sīc valet ut numquam melius.",
+      "english": "He’s as well as ever.",
+      "source": "Traupman 15"
+    },
+    {
+      "latin": "Omnēs domī bene sē habent.",
+      "english": "Everyone at home is well.",
+      "source": "Traupman 15"
+    },
+    {
+      "latin": "In optimō statū.",
+      "english": "In great shape.",
+      "source": "Traupman 18"
+    },
+    {
+      "latin": "Em, vīvō.",
+      "english": "Well, I’m still alive.",
+      "source": "Traupman 18"
     }
   ],
   "related": [
@@ -63,7 +135,10 @@
     "<a href=\"https://logeion.uchicago.edu/habeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: habeo</a> · <a href=\"https://logeion.org/habeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: habeo</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): pp. 15, 17–18.",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: p. 105, checked against the searchable text of the book on 29 October 2026.",
-    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+    "<a href=\"https://logeion.uchicago.edu/rectus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: rēctē (s.v. regō)</a> · <a href=\"https://logeion.uchicago.edu/bellus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: bellus</a> · <a href=\"https://logeion.uchicago.edu/pulcher\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pulcher</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 15, 17–18, each phrase checked against the searchable text of the book.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "replaces": [
     "entry-282",

@@ -3,7 +3,11 @@
   "english": "I’m glad to hear it",
   "pos": "phrase",
   "also": [
-    "glad to hear it"
+    "glad to hear it",
+    "I’m delighted to hear that",
+    "glad to hear that",
+    "I’m sincerely glad to hear that",
+    "pleased to hear it"
   ],
   "domain": "sermo",
   "terms": [
@@ -20,11 +24,29 @@
     "im-glad-for-you"
   ],
   "sources": [
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 18."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 18.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 18, each phrase checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "Haud invītus audiō.",
+      "english": "Glad to hear that.",
+      "source": "Traupman 18"
+    },
+    {
+      "latin": "Est mihi istud audītū perquam jūcundum.",
+      "english": "I’m delighted to hear that.",
+      "source": "Traupman 18"
+    },
+    {
+      "latin": "Audīre istud ex animō gaudeō.",
+      "english": "I’m sincerely glad to hear that.",
+      "source": "Traupman 18"
+    }
+  ]
 }

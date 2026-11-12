@@ -5,7 +5,10 @@
   "also": [
     "bye",
     "bye-bye",
-    "bye bye"
+    "bye bye",
+    "goodbye for now",
+    "bye for now",
+    "goodbye and good luck"
   ],
   "domain": "sermo",
   "terms": [
@@ -13,7 +16,10 @@
       "latin": "Valē! Valēte!",
       "status": "recommended",
       "period": "classical",
-      "gloss": "goodbye (to one person; to several)"
+      "gloss": "goodbye (to one person; to several)",
+      "evidence": [
+        "Traupman 15, 17"
+      ]
     },
     {
       "latin": "Bene valē! Bene valēte!",
@@ -23,6 +29,17 @@
       "evidence": [
         "Traupman 17, 285",
         "Plaut. <em>Curc.</em> 203"
+      ]
+    },
+    {
+      "latin": "Valeās!",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "goodbye, farewell",
+      "grammar": "present subjunctive of valeō, a wish",
+      "evidence": [
+        "Plaut. Truc. 2.4.79: <span lang=\"la\">Valeās. — Valē.</span> (Lewis &amp; Short s.v. <span lang=\"la\">valeō</span>)",
+        "Traupman 19"
       ]
     }
   ],
@@ -36,6 +53,21 @@
       "latin": "Bene valē, ocule mī.",
       "english": "Bye-bye, apple of my eye.",
       "source": "Plaut. <em>Curc.</em> 203"
+    },
+    {
+      "latin": "Nunc valē.",
+      "english": "Goodbye for now.",
+      "source": "Traupman 19"
+    },
+    {
+      "latin": "Valeās beneque tibi sit.",
+      "english": "Goodbye and good luck.",
+      "source": "Traupman 19"
+    },
+    {
+      "latin": "Ad portum properō. — Bene ambulātō. — Bene valētō. — Bene sit tibi.",
+      "english": "I’m hurrying to the harbour. — Have a good walk. — Goodbye. — All the best.",
+      "source": "Plaut. Merc. 2.2.55 (Lewis &amp; Short s.v. <span lang=\"la\">valeō</span>)"
     }
   ],
   "related": [
@@ -49,7 +81,9 @@
     "<a href=\"https://logeion.uchicago.edu/valeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: valeo</a>",
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): pp. 17, 285.",
-    "Plautus from the Latinitas loci collection (loci-plautus)."
+    "Plautus from the Latinitas loci collection (loci-plautus).",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 15, 17, 19, each phrase checked against the searchable text of the book.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "replaces": [
     "entry-237",
@@ -57,7 +91,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

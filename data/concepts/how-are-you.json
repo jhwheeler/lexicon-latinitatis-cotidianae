@@ -4,7 +4,10 @@
   "pos": "phrase",
   "also": [
     "how are you doing?",
-    "greetings"
+    "greetings",
+    "how are things?",
+    "how are things with you?",
+    "how’s it going?"
   ],
   "domain": "sermo",
   "terms": [
@@ -14,7 +17,8 @@
       "period": "classical",
       "evidence": [
         "Traupman 15, 17–18"
-      ]
+      ],
+      "comment": "To two or more people: <span lang=\"la\">Quid agitis?</span>, <span lang=\"la\">Ut valētis?</span> (Traupman 17)."
     },
     {
       "latin": "Ut valēs?",
@@ -31,6 +35,28 @@
       "evidence": [
         "Traupman 15, 17–18"
       ]
+    },
+    {
+      "latin": "Quī valēs?",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "how are you?",
+      "grammar": "question: quī, the old ablative “how?”, with valēre, be well",
+      "evidence": [
+        "Traupman 17: how are you?, <span lang=\"la\">quī valēs?</span>"
+      ],
+      "comment": "Lewis &amp; Short has <span lang=\"la\">quī</span> “how?” in questions as classical; this question with <span lang=\"la\">valēs</span> is Traupman’s."
+    },
+    {
+      "latin": "Quō pactō rēs sē tibi habent?",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "how are things with you?",
+      "grammar": "question: “in what way do things hold themselves for you?”",
+      "evidence": [
+        "Traupman 18: how are things with you?, <span lang=\"la\">quō pactō rēs sē tibi habent?</span>"
+      ],
+      "comment": "Traupman’s phrase, made of classical parts (<span lang=\"la\">quō pactō</span>, how; <span lang=\"la\">rēs sē habent</span>, things stand); Lewis &amp; Short does not quote it whole. Comedy asks <span lang=\"la\">Quid agitur?</span> (Ter. Ad. 883)."
     }
   ],
   "phrases": [
@@ -49,14 +75,15 @@
   "sources": [
     "<a href=\"https://logeion.org/valeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: valeo</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): pp. 15, 17–18.",
-    "The example sentences marked “composed” are ours."
+    "The example sentences marked “composed” are ours.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 17–18, each phrase checked against the searchable text of the book."
   ],
   "replaces": [
     "entry-521"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

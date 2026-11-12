@@ -3,7 +3,8 @@
   "english": "mailing list",
   "pos": "noun",
   "also": [
-    "recipient list"
+    "recipient list",
+    "list owner"
   ],
   "domain": "computatra",
   "terms": [
@@ -22,6 +23,15 @@
         "Vocabula computatralia s.v. list"
       ],
       "comment": "The computing glossary instead proposes <strong lang=\"la\">grex Internetī</strong> for a mailing list. That emphasizes a group; an email-marketing platform’s stored list of recipients can be described more directly with <strong lang=\"la\">catalogus</strong>. These alternatives need not name exactly the same kind of resource."
+    },
+    {
+      "latin": "grex, gregis m.",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "mailing list",
+      "evidence": [
+        "Traupman 261"
+      ]
     }
   ],
   "phrases": [
@@ -34,18 +44,24 @@
       "latin": "Hunc dēstinātārium catalogō adde.",
       "english": "Add this recipient to the list.",
       "source": "composed"
+    },
+    {
+      "latin": "gregis moderātor (moderātrīx)",
+      "english": "list owner",
+      "source": "Traupman 261"
     }
   ],
   "sources": [
     "<a href=\"https://alatius.com/ls/index.php?l=catalogus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: catalogus</a> · <a href=\"https://www.culturaclasica.com/lingualatina/vocabula_computatralia.pdf\" rel=\"noopener noreferrer\" target=\"_blank\">Vocabula computatralia: list</a>. Dictionary links support the component words; the modern technical expressions are labelled separately.",
-    "The example sentences marked “composed” are ours."
+    "The example sentences marked “composed” are ours.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, cited by printed page; each phrase checked against the searchable text of the book."
   ],
   "replaces": [
     "entry-140"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

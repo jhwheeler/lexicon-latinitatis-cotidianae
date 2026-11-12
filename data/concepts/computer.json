@@ -2,6 +2,10 @@
   "id": "computer",
   "english": "computer",
   "pos": "noun",
+  "also": [
+    "personal computer",
+    "PC"
+  ],
   "domain": "computatra",
   "terms": [
     {
@@ -20,6 +24,15 @@
         "Andresian pp. 11, 14"
       ],
       "comment": "A formation on <span lang=\"la\">computāre</span>, to reckon, like Traupman’s <span lang=\"la\">computātrum</span>."
+    },
+    {
+      "latin": "computātrum domesticum",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "personal computer",
+      "evidence": [
+        "Traupman 261"
+      ]
     }
   ],
   "related": [
@@ -42,7 +55,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

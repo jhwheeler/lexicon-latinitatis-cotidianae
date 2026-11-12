@@ -3,7 +3,10 @@
   "english": "knife",
   "pos": "noun",
   "also": [
-    "small knife"
+    "small knife",
+    "pocketknife",
+    "penknife",
+    "folding knife"
   ],
   "domain": "culina",
   "terms": [
@@ -23,6 +26,15 @@
       "comment": "Useful when distinguishing it from a larger kitchen knife.",
       "evidence": [
         "Traupman 336"
+      ]
+    },
+    {
+      "latin": "cultellus plicābilis",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "pocketknife",
+      "evidence": [
+        "Traupman 362"
       ]
     }
   ],
@@ -44,11 +56,12 @@
     "<a href=\"https://alatius.com/ls/index.php?l=caveo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: caveo</a> · <a href=\"https://alatius.com/ls/index.php?l=acutus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: acutus</a>",
     "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>",
     "The example sentence marked “composed” is ours.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 336."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 336.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 362."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

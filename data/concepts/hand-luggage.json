@@ -9,6 +9,15 @@
       "status": "recommended",
       "period": "ours",
       "comment": "Traupman 216 prints <strong lang=\"la\">sarcinulae manuālēs</strong>."
+    },
+    {
+      "latin": "sarcinulae manuālēs",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "hand luggage",
+      "evidence": [
+        "Traupman 213, 216"
+      ]
     }
   ],
   "related": [
@@ -16,11 +25,24 @@
     "e-ticket"
   ],
   "sources": [
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: p. 216, checked against the searchable text of the book on 29 October 2026."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: p. 216, checked against the searchable text of the book on 29 October 2026.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 213–217, each phrase checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "sarcinula, sarcinulae f.",
+      "english": "a small piece of luggage",
+      "source": "Traupman 217"
+    },
+    {
+      "latin": "Licetne hanc sarcinulam manuālem mēcum in āëroplanum portāre?",
+      "english": "May I take this hand luggage with me on the plane?",
+      "source": "Traupman 213"
+    }
+  ]
 }

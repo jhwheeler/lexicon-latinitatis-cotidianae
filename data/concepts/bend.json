@@ -5,7 +5,10 @@
   "pos": "noun",
   "also": [
     "curve",
-    "bend in the road"
+    "bend in the road",
+    "turn in the road",
+    "take a wrong turn",
+    "detour"
   ],
   "domain": "natura",
   "terms": [
@@ -18,6 +21,16 @@
         "Traupman 203",
         "Cic. <em>N.D.</em> 2.47, of curves"
       ]
+    },
+    {
+      "latin": "flexus, flexūs m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a bend, a turn",
+      "evidence": [
+        "Lewis &amp; Short s.v. <span lang=\"la\">flexus</span>: a bending, turning, winding",
+        "Traupman 216, 219"
+      ]
     }
   ],
   "phrases": [
@@ -25,16 +38,28 @@
       "latin": "quā vehiculum per ānfrāctūs lentē serpēbat",
       "english": "where the bus wound slowly round the bends",
       "source": "Libellus II, <span lang=\"la\">Sintra: castellum et puteus</span>"
+    },
+    {
+      "latin": "flexus viae",
+      "english": "a turn in the road",
+      "source": "Traupman 219"
+    },
+    {
+      "latin": "perperam vertī",
+      "english": "to take a wrong turn",
+      "source": "Traupman 219"
     }
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/anfractus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: anfractus</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 203, checked against the searchable text of the book on 29 October 2026.",
-    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+    "<a href=\"https://logeion.uchicago.edu/flexus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: flexus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 216, 219, each phrase checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

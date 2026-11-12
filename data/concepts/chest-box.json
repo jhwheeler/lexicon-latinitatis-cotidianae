@@ -8,7 +8,20 @@
     {
       "latin": "arca, arcae f.",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "evidence": [
+        "Traupman 219: trunk (for clothes), <span lang=\"la\">cista</span>"
+      ]
+    },
+    {
+      "latin": "cista, cistae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a box, a chest (for clothes, books, money)",
+      "evidence": [
+        "Lewis &amp; Short s.v. <span lang=\"la\">cista</span>",
+        "Traupman 219"
+      ]
     }
   ],
   "related": [
@@ -17,11 +30,16 @@
   ],
   "sources": [
     "<a href=\"https://alatius.com/ls/index.php?l=arca\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: arca</a>",
-    "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>"
+    "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>",
+    "<a href=\"https://logeion.uchicago.edu/cista\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cista</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 219, each phrase checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "trunk (for clothes)"
+  ]
 }

@@ -6,7 +6,8 @@
     "movie projector",
     "film projector",
     "overhead projector",
-    "beamer"
+    "beamer",
+    "slide projector"
   ],
   "domain": "ludi",
   "terms": [
@@ -27,18 +28,35 @@
       "evidence": [
         "Traupman 355"
       ]
+    },
+    {
+      "latin": "prōjectōrium, prōjectōriī n.",
+      "status": "recommended",
+      "period": "modern",
+      "evidence": [
+        "Traupman 365"
+      ]
     }
   ],
   "related": [
     "film",
-    "cinema"
+    "cinema",
+    "screen"
   ],
   "sources": [
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 348."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 348.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 365."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "prōjectōrium suprācapitāle",
+      "english": "an overhead projector",
+      "source": "Traupman 365"
+    }
+  ]
 }

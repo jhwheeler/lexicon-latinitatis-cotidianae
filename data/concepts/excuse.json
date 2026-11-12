@@ -57,8 +57,11 @@
       "period": "classical",
       "gloss": "pretext",
       "evidence": [
-        "Traupman 311"
-      ]
+        "Traupman 311",
+        "Suet. Caes. 30: <span lang=\"la\">et praetextum quidem illī cīvīlium armōrum hoc fuit</span> (Lewis &amp; Short)",
+        "Traupman 364"
+      ],
+      "comment": "Post-Augustan in this sense (Lewis &amp; Short); Cicero says <span lang=\"la\">speciēs</span> or <span lang=\"la\">simulātiō</span>."
     }
   ],
   "phrases": [
@@ -76,6 +79,16 @@
       "latin": "sed in hōc homine nūllam accipiō excūsātiōnem.",
       "english": "But in this man’s case I accept no excuse.",
       "source": "Cic. Fam. 2.14.1"
+    },
+    {
+      "latin": "praetextum bellī",
+      "english": "a pretext for war",
+      "source": "Traupman 364"
+    },
+    {
+      "latin": "Hinc abiit quasi…",
+      "english": "He left under the pretext that…",
+      "source": "Traupman 364"
     }
   ],
   "related": [
@@ -87,13 +100,14 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/praetexo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praetexo</a>",
-    "<a href=\"https://logeion.uchicago.edu/excusatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: excusatio</a> · <a href=\"https://logeion.uchicago.edu/excuso\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: excuso</a> · <a href=\"https://logeion.uchicago.edu/causa\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: causa</a>",
     "Cic. Fam. 2.14.1, 4.4.1, Att. 12.29.1, 15.28 and Ter. Eun. 137–138 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (11 November 2026).",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 311."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 311.",
+    "<a href=\"https://logeion.uchicago.edu/excusatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: excusatio</a> · <a href=\"https://logeion.uchicago.edu/excuso\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: excuso</a> · <a href=\"https://logeion.uchicago.edu/causa\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: causa</a> · <a href=\"https://logeion.uchicago.edu/praetextum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praetextum</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 364."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

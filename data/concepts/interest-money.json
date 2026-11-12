@@ -12,7 +12,9 @@
     "simple interest",
     "compound interest",
     "rate of interest",
-    "pay interest"
+    "pay interest",
+    "principal",
+    "capital (money)"
   ],
   "domain": "pecunia",
   "terms": [
@@ -43,6 +45,27 @@
         "Traupman 333"
       ],
       "comment": "Reckoned by the month: <span lang=\"la\">centēsimae</span>, one per cent a month (see rate)."
+    },
+    {
+      "latin": "caput, capitis n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "principal, capital (as against the interest)",
+      "evidence": [
+        "Cic. Verr. 2.1.11 (Lewis &amp; Short)",
+        "Hor. S. 1.2.14 (Lewis &amp; Short)",
+        "Traupman 365"
+      ]
+    },
+    {
+      "latin": "sors, sortis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "principal, capital bearing interest",
+      "evidence": [
+        "Plaut. Most. 3.1.122: <span lang=\"la\">et sors et faenus</span> (Lewis &amp; Short)",
+        "Traupman 365"
+      ]
     }
   ],
   "phrases": [
@@ -90,6 +113,11 @@
       "latin": "perpetuum faenus",
       "english": "simple interest",
       "source": "Traupman 333"
+    },
+    {
+      "latin": "dē capite ūsūrās dēdūcere",
+      "english": "to deduct the interest from the principal",
+      "source": "Traupman 365"
     }
   ],
   "related": [
@@ -99,11 +127,11 @@
     "percent"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/faenus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: faenus</a> · <a href=\"https://logeion.uchicago.edu/usura\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: usura</a>",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. interest.",
     "Quotations from the Latinitas loci collections (loci-cicero-philosophica), checked against the editions named there.",
     "Cicero, Att. 4.15 checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026).",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 164, 333, checked against the searchable text of the book (9 November 2026).: p. 333."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 164, 333, checked against the searchable text of the book (9 November 2026).: p. 333.",
+    "<a href=\"https://logeion.uchicago.edu/faenus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: faenus</a> · <a href=\"https://logeion.uchicago.edu/usura\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: usura</a> · <a href=\"https://logeion.uchicago.edu/caput\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: caput</a> · <a href=\"https://logeion.uchicago.edu/sors\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sors</a>"
   ],
   "review": {
     "status": "draft",

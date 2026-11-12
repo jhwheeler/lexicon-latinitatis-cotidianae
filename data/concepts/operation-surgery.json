@@ -6,7 +6,8 @@
   "also": [
     "surgery",
     "surgical operation",
-    "have an operation"
+    "have an operation",
+    "operate on"
   ],
   "domain": "corpus",
   "terms": [
@@ -43,6 +44,15 @@
         "Traupman 354: <span lang=\"la\">operātiō medica</span>"
       ],
       "comment": "Classically <span lang=\"la\">operātiō</span> is a working, labour or a religious service (Lewis &amp; Short)."
+    },
+    {
+      "latin": "secō, secāre, secuī, sectum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "operate on, cut",
+      "evidence": [
+        "Traupman 169"
+      ]
     }
   ],
   "phrases": [
@@ -63,11 +73,12 @@
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. surgical operation; operation (surgical).",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 169, 354, 388, checked against the searchable text of the book (9 November 2026).",
     "Pliny, <em>Natural History</em> 25, checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
-    "Citations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them and have not been checked against an edition."
+    "Citations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them and have not been checked against an edition.",
+    "<a href=\"https://logeion.uchicago.edu/seco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: seco</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

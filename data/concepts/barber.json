@@ -3,7 +3,9 @@
   "english": "barber",
   "pos": "noun",
   "also": [
-    "hairdresser"
+    "hairdresser",
+    "barber chair",
+    "barber’s chair"
   ],
   "also_under": [
     "corpus"
@@ -31,6 +33,16 @@
         "Traupman 276, 325",
         "M-O s.v. barber"
       ]
+    },
+    {
+      "latin": "sella tōnsōria",
+      "status": "alternative",
+      "period": "late",
+      "gloss": "barber’s chair",
+      "evidence": [
+        "Cael. Aur. Tard. 2.1 (Lewis &amp; Short s.v. <span lang=\"la\">tōnsōrius</span>)",
+        "Traupman 164"
+      ]
     }
   ],
   "phrases": [
@@ -52,7 +64,8 @@
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 164.",
     "The example sentence marked “composed” is ours.",
     "<a href=\"https://logeion.org/tonsor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tonsor</a> · <a href=\"https://logeion.org/tonstrix\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tonstrix</a>",
-    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. barber. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): pp. 276, 325."
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. barber. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): pp. 276, 325.",
+    "<a href=\"https://logeion.uchicago.edu/tonsorius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tonsorius</a>"
   ],
   "notes": {
     "tonsor": {
@@ -65,7 +78,7 @@
   },
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

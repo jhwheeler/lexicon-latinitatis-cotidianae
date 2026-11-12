@@ -1,0 +1,107 @@
+{
+  "id": "accounts",
+  "english": "accounts",
+  "sense": "a record of money received and paid",
+  "pos": "noun",
+  "also": [
+    "account",
+    "account books",
+    "keep accounts",
+    "keep books",
+    "bookkeeping",
+    "accounting",
+    "audit accounts",
+    "balance the accounts",
+    "the account balances",
+    "the books"
+  ],
+  "domain": "pecunia",
+  "terms": [
+    {
+      "latin": "ratiōnēs, ratiōnum f. pl.",
+      "status": "recommended",
+      "period": "classical",
+      "grammar": "plural of ratiō, ratiōnis f.",
+      "evidence": [
+        "Cic. Att. 5.21.12: <span lang=\"la\">ratiōnēs cōnferātis</span> (Lewis &amp; Short s.v. <span lang=\"la\">conveniō</span>)",
+        "Traupman 163"
+      ],
+      "comment": "A single account is <span lang=\"la\">ratiō</span>; <span lang=\"la\">ratiō cōnstat</span>, “the account agrees”, is the merchants’ phrase for books that balance."
+    },
+    {
+      "latin": "tabulae, tabulārum f. pl.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "account books, the books",
+      "evidence": [
+        "Cic. de Or. 2.97: <span lang=\"la\">tabulās cōnficere</span>, to keep books (Lewis &amp; Short s.v. <span lang=\"la\">tabula</span>)",
+        "Traupman 163"
+      ],
+      "comment": "In full <span lang=\"la\">tabulae acceptī et expēnsī</span>, the books of receipts and payments."
+    },
+    {
+      "latin": "dispungō, dispungere, dispūnxī, dispūnctum",
+      "status": "alternative",
+      "period": "post-classical",
+      "gloss": "audit, check off (an account)",
+      "evidence": [
+        "Dig. 50.16.56 (Lewis &amp; Short)",
+        "Traupman 163"
+      ],
+      "comment": "A term of post-Augustan business Latin (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "auri ratiō cōnstat: aurum in aerāriō est",
+      "english": "the account of the gold is correct: the gold is in the treasury",
+      "source": "Cic. Fl. 69 (Lewis &amp; Short s.v. <span lang=\"la\">ratiō</span>)"
+    },
+    {
+      "latin": "ratiō cōnstat",
+      "english": "the account balances",
+      "source": "Traupman 163"
+    },
+    {
+      "latin": "tabulās cōnficere",
+      "english": "to keep books",
+      "source": "Traupman 163"
+    },
+    {
+      "latin": "ratiōnēs cōnferre",
+      "english": "to balance accounts",
+      "source": "Traupman 163"
+    },
+    {
+      "latin": "ratiōnēs dispungere",
+      "english": "to audit accounts",
+      "source": "Traupman 163"
+    },
+    {
+      "latin": "cōnfectiō tabulārum",
+      "english": "accounting, bookkeeping",
+      "source": "Traupman 163"
+    },
+    {
+      "latin": "tabulae acceptī et expēnsī",
+      "english": "account books",
+      "source": "Traupman 163"
+    }
+  ],
+  "related": [
+    "accountant",
+    "bank-account"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/ratio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ratio</a>",
+    "<a href=\"https://logeion.uchicago.edu/tabula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tabula</a>",
+    "<a href=\"https://logeion.uchicago.edu/dispungo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dispungo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 163, each phrase checked against the searchable text of the book.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-12",
+    "by": "Claude"
+  }
+}

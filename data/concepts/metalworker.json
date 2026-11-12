@@ -1,0 +1,46 @@
+{
+  "id": "metalworker",
+  "english": "metalworker",
+  "pos": "noun",
+  "also": [
+    "metal worker",
+    "smith",
+    "blacksmith",
+    "ironworker"
+  ],
+  "domain": "aedificatio",
+  "terms": [
+    {
+      "latin": "faber ferrārius",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "blacksmith, ironworker",
+      "evidence": [
+        "Plaut. Rud. 2.6.47: <span lang=\"la\">ut fortūnātī sunt fabrī ferrāriī</span> (Lewis &amp; Short s.v. <span lang=\"la\">faber</span>)"
+      ]
+    },
+    {
+      "latin": "metallōrum faber",
+      "status": "alternative",
+      "period": "modern",
+      "evidence": [
+        "Traupman 168"
+      ],
+      "comment": "A smith in classical Latin is <span lang=\"la\">faber</span> with the metal: <span lang=\"la\">faber ferrārius</span>, <span lang=\"la\">faber aerārius</span>."
+    }
+  ],
+  "related": [
+    "craftsman"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/faber\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: faber</a>",
+    "<a href=\"https://logeion.uchicago.edu/ferrarius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ferrarius</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 168, each phrase checked against the searchable text of the book.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-12",
+    "by": "Claude"
+  }
+}

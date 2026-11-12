@@ -5,7 +5,9 @@
   "also": [
     "make for",
     "set out for",
-    "head towards"
+    "head towards",
+    "head east",
+    "head toward"
   ],
   "domain": "vectura",
   "terms": [
@@ -17,7 +19,19 @@
       "grammar": "with the accusative of the place",
       "evidence": [
         "Cic. N.D. 2.125: <span lang=\"la\">gruēs loca calidiōra petentēs</span> (Lewis &amp; Short)",
-        "Traupman 204"
+        "Traupman 204",
+        "Traupman 326"
+      ],
+      "comment": "To make for a place: <span lang=\"la\">Ītaliam petere</span>."
+    },
+    {
+      "latin": "tendō, tendere, tetendī, tentum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "head, make one’s way (toward)",
+      "grammar": "verb, third conjugation, intransitive, with ad + acc.",
+      "evidence": [
+        "Traupman 326"
       ]
     }
   ],
@@ -26,6 +40,11 @@
       "latin": "Viātōrēs deinde terrēnō itinere Athēnās petēbant?",
       "english": "Did the travellers then head overland for Athens?",
       "source": "Traupman 202"
+    },
+    {
+      "latin": "ad orientem tendere",
+      "english": "to head east",
+      "source": "Traupman 326"
     }
   ],
   "related": [
@@ -35,7 +54,9 @@
   "sources": [
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, cited by printed page; each phrase checked against the searchable text of the book.",
     "<a href=\"https://logeion.uchicago.edu/peto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: peto</a>",
-    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "<a href=\"https://logeion.uchicago.edu/tendo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tendo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 326."
   ],
   "review": {
     "status": "draft",

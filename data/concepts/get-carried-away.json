@@ -6,7 +6,9 @@
     "be carried away",
     "get carried away by",
     "be swept away (by a feeling)",
-    "be transported"
+    "be transported",
+    "don’t get carried away",
+    "carried away with enthusiasm"
   ],
   "domain": "sermo",
   "terms": [
@@ -21,6 +23,17 @@
         "Traupman p. 99: <span lang=\"la\">efferor</span> (+ abl.)"
       ],
       "comment": "Lewis &amp; Short s.v. <span lang=\"la\">efferō</span>: “to be carried away, transported, hurried away” by passions and feelings. The feeling goes into the ablative: <span lang=\"la\">studiō, īrā, laetitiā efferrī</span>."
+    },
+    {
+      "latin": "efferrī (studiō)",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "get carried away (by eagerness)",
+      "evidence": [
+        "Cic. Sen. 83 (Lewis &amp; Short s.v. <span lang=\"la\">studium</span>)",
+        "Traupman p. 95"
+      ],
+      "comment": "The passive of efferre, “to be carried out (of oneself)”, with the feeling in the ablative."
     }
   ],
   "related": [
@@ -29,11 +42,25 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/effero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: effero</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 99, checked against the searchable text and the page image (12 November 2026).",
-    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "<a href=\"https://logeion.uchicago.edu/effero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: effero</a> · <a href=\"https://logeion.uchicago.edu/studium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: studium</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 95, checked against the searchable text and the page images of the book."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "efferor studiō patrēs vestrōs videndī",
+      "english": "I am carried away with eagerness to see your fathers",
+      "source": "Cic. Sen. 83 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "Nōlī studiō efferrī.",
+      "english": "Don’t get carried away with enthusiasm.",
+      "source": "Traupman p. 95"
+    }
+  ]
 }

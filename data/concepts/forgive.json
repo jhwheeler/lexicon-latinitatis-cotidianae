@@ -4,7 +4,9 @@
   "pos": "verb",
   "also": [
     "pardon",
-    "forgive me"
+    "forgive me",
+    "let off",
+    "let someone off"
   ],
   "domain": "verba",
   "also_under": [
@@ -21,6 +23,19 @@
         "Cic. Att. 7.12.1: <span lang=\"la\">velim mihi ignōscās</span> (Lewis &amp; Short)"
       ],
       "comment": "With the dative of the person and the accusative of the thing: <span lang=\"la\">ignōsce mihi</span>, forgive me (see excuse me)."
+    },
+    {
+      "latin": "grātiam facere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "let (someone) off, pardon (a fault); release from",
+      "grammar": "phrase: dative of the person, genitive of the fault or obligation",
+      "evidence": [
+        "Sall. Jug. 104: <span lang=\"la\">dēlictī grātiam facere</span>, to grant pardon, forgive (Lewis &amp; Short s.v. <span lang=\"la\">grātia</span>)",
+        "Sall. Cat. 52.8: <span lang=\"la\">quī mihi atque animō meō nūllīus umquam dēlictī grātiam fēcissem</span> (Lewis &amp; Short)",
+        "Plaut. Rud. 5.3.59: <span lang=\"la\">jūris jūrandī volō grātiam faciās</span>, release me from the oath (Lewis &amp; Short)"
+      ],
+      "comment": "Literally “to make a favour of” a fault: to let it go. Traupman 98 gives <span lang=\"la\">fac hanc grātiam mihi</span> for “please do me this favour”, which this phrase does not mean (see favour, a kindness)."
     },
     {
       "latin": "dīmittō, dīmittere, dīmīsī, dīmissum",
@@ -65,6 +80,11 @@
       "latin": "Sī peccāverit in tē frāter tuus, increpā illum: et sī poenitentiam ēgerit, dīmitte illī.",
       "english": "If your brother sins against you, rebuke him; and if he repents, forgive him.",
       "source": "Vulg. Lc. 17.3"
+    },
+    {
+      "latin": "Sī rem ipsam ingenuē cōnfiteāre, forsitan dēlictī grātiam faciet.",
+      "english": "If you just own up frankly, perhaps he’ll let you off.",
+      "source": "Pont. Progymn. 1.4"
     }
   ],
   "related": [
@@ -72,17 +92,21 @@
     "excuse-me",
     "im-sorry",
     "sin",
-    "repent"
+    "repent",
+    "favour-kindness"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/ignosco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ignosco</a> · <a href=\"https://logeion.uchicago.edu/dimitto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dimitto</a> · <a href=\"https://logeion.uchicago.edu/remitto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: remitto</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 255, 311, 356, checked against the searchable text of the book (9 November 2026).",
     "Quotations from the Latinitas loci collections (loci-horatius, loci-vulgata), checked against the editions named there.",
-    "Vulgate verses checked against the Clementine Vulgate (CrossWire <em>VulgClementine</em>, via the <a href=\"https://github.com/scrollmapper/bible_databases\" rel=\"noopener noreferrer\" target=\"_blank\">scrollmapper <em>bible_databases</em></a> repository) and Hetzenauer’s edition, in Clementine spelling."
+    "Vulgate verses checked against the Clementine Vulgate (CrossWire <em>VulgClementine</em>, via the <a href=\"https://github.com/scrollmapper/bible_databases\" rel=\"noopener noreferrer\" target=\"_blank\">scrollmapper <em>bible_databases</em></a> repository) and Hetzenauer’s edition, in Clementine spelling.",
+    "<a href=\"https://logeion.uchicago.edu/gratia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gratia</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "The Pontanus example is from the Latīnitās loci collection, which flags that book as post-classical."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

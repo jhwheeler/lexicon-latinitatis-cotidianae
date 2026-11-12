@@ -12,7 +12,8 @@
     "it is likely that",
     "unlikely",
     "I guess",
-    "I imagine"
+    "I imagine",
+    "most likely she will come"
   ],
   "domain": "verba",
   "terms": [
@@ -56,6 +57,17 @@
       "comment": "Cicero writes it as two words; later it is often one, <span lang=\"la\">vērīsimile</span> (Lewis &amp; Short). As an adjective, of a story or an explanation: <span lang=\"la\">vērī similis</span>, likely (M-O s.v. probable, likely; Traupman 340, <span lang=\"la\">vērīsimilis</span>)."
     },
     {
+      "latin": "vērī simillimum est",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "it is most likely, very probably",
+      "grammar": "superlative of vērī simile est, with an accusative and infinitive",
+      "evidence": [
+        "Cic. Inv. 1.4: <span lang=\"la\">vērī simillimum mihi vidētur</span> (Lewis &amp; Short s.v. <span lang=\"la\">vērus</span>)",
+        "Traupman 340: <span lang=\"la\">vērī simillimum est eam ventūram esse</span>"
+      ]
+    },
+    {
       "latin": "nisi fallor",
       "status": "alternative",
       "period": "classical",
@@ -75,6 +87,16 @@
         "Liv. 33.28 (Lewis &amp; Short)"
       ],
       "comment": "Lewis &amp; Short’s “probably” is the old English sense “credibly”: every classical example is of telling or arguing a thing convincingly, never “in all likelihood”."
+    },
+    {
+      "latin": "proximum est ut (+ subjunctive)",
+      "status": "avoid",
+      "period": "classical",
+      "gloss": "given for “most likely”",
+      "evidence": [
+        "Traupman 102, 340: most likely she will come, <span lang=\"la\">proximum est ut veniat</span>"
+      ],
+      "comment": "Lewis &amp; Short: <span lang=\"la\">proximum est, ut</span>, “it follows that, remains that, the next point is” (<span lang=\"la\">proximum est, ut doceam …</span>, Cic. N.D. 2.73): a step in an argument, not a likelihood (see then, next). For “most likely” say <span lang=\"la\">vērī simillimum est</span> (Cic. Inv. 1.4, Lewis &amp; Short s.v. <span lang=\"la\">vērus</span>), which is Traupman’s own second version."
     }
   ],
   "phrases": [
@@ -108,11 +130,14 @@
     "Quotations from the Latinitas loci collections (loci-cicero-philosophica, loci-gellius), checked against the editions named there; Cicero (Att. 4.19.1, 9.6.2), Plautus (Bacch. 106) and Caesar (BG 3.13.6) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>.",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. probable, likely.",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 340, checked against the searchable text of the book (9 November 2026).",
-    "Cic. Att. 9.11.1 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026)."
+    "Cic. Att. 9.11.1 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
+    "<a href=\"https://logeion.uchicago.edu/verus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: verus</a>",
+    "<a href=\"https://logeion.uchicago.edu/proximus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: proximus</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

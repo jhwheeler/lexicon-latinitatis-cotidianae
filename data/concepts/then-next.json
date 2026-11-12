@@ -8,7 +8,9 @@
     "after that",
     "and then",
     "afterwards",
-    "subsequently"
+    "subsequently",
+    "the next point is",
+    "the next thing is"
   ],
   "also_under": [
     "verba"
@@ -60,6 +62,17 @@
       "evidence": [
         "Liv. 1.2.3 (Lewis &amp; Short)"
       ]
+    },
+    {
+      "latin": "proximum est ut (+ subjunctive)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the next thing is to …, the next point is",
+      "evidence": [
+        "Cic. N.D. 2.73: <span lang=\"la\">proximum est, ut doceam deōrum prōvidentiā mundum administrārī</span> (Lewis &amp; Short s.v. <span lang=\"la\">propior</span>)",
+        "Cic. Fl. 27: <span lang=\"la\">proximum est ergō, ut, opus fuerit classe necne, quaerāmus</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Moving to the next step of an argument or a task. Traupman 102 gives it for “most likely”, which it does not mean (see probably)."
     }
   ],
   "phrases": [
@@ -82,17 +95,20 @@
   "related": [
     "later",
     "some-time-later",
-    "a-little-later"
+    "a-little-later",
+    "probably"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/deinde\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: deinde</a> · <a href=\"https://logeion.uchicago.edu/tum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tum</a> · <a href=\"https://logeion.uchicago.edu/postea\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: postea</a> · <a href=\"https://logeion.uchicago.edu/inde\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: inde</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 37, 351, checked against the searchable text of the book (9 November 2026).",
     "Quotations from the Latinitas loci collections (loci-plautus, loci-catullus, loci-horatius, loci-vergilius, loci-comenius), checked against the editions named there.",
-    "Cicero (Or. 154) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+    "Cicero (Or. 154) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>.",
+    "<a href=\"https://logeion.uchicago.edu/proximus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: proximus</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

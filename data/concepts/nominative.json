@@ -1,0 +1,62 @@
+{
+  "id": "nominative",
+  "english": "nominative",
+  "pos": "noun",
+  "also": [
+    "nominative case",
+    "in the nominative",
+    "give the nominative"
+  ],
+  "domain": "schola",
+  "terms": [
+    {
+      "latin": "nōminātīvus, nōminātīvī m.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "the nominative case",
+      "evidence": [
+        "Quint. 1.7.3: <span lang=\"la\">eadem littera nōminātīvō cāsū brevis, ablātīvō longa est</span>",
+        "Varr. LL 10.23 (Lewis &amp; Short)",
+        "Traupman 221, 247"
+      ],
+      "comment": "Short for <span lang=\"la\">cāsus nōminātīvus</span>, the naming case; the adjective may stand alone. Quintilian also calls it the upright case, <span lang=\"la\">rēctus cāsus</span> (1.5.61)."
+    },
+    {
+      "latin": "rēctus cāsus",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the nominative, the “upright” case",
+      "evidence": [
+        "Quint. 1.5.61: <span lang=\"la\">masculīna Graeca nōmina rēctō cāsū</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "cum eadem littera nōminātīvō cāsū brevis, ablātīvō longa est",
+      "english": "when the same letter is short in the nominative and long in the ablative",
+      "source": "Quint. 1.7.3"
+    },
+    {
+      "latin": "Dīc cāsum nōminātīvum.",
+      "english": "Give the nominative case.",
+      "source": "Traupman 240"
+    }
+  ],
+  "related": [
+    "case-grammar",
+    "genitive",
+    "subject-grammar"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/nominativus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nominativus</a> · <a href=\"https://logeion.uchicago.edu/rectus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: rectus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 221, p. 240, p. 247.",
+    "Quintilian checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>, and cited by its numbering.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-12",
+    "by": "Claude"
+  }
+}

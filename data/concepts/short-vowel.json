@@ -1,0 +1,61 @@
+{
+  "id": "short-vowel",
+  "english": "short",
+  "sense": "of a vowel or syllable",
+  "pos": "adjective",
+  "also": [
+    "short vowel",
+    "short syllable",
+    "shorten a vowel",
+    "short mark",
+    "breve"
+  ],
+  "domain": "schola",
+  "terms": [
+    {
+      "latin": "brevis, breve",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "short (of a vowel or syllable)",
+      "evidence": [
+        "Quint. 1.7.3: <span lang=\"la\">eadem littera nōminātīvō cāsū brevis, ablātīvō longa est</span>",
+        "Quint. 9.4.47",
+        "Traupman 248"
+      ],
+      "comment": "To shorten a vowel or syllable is <span lang=\"la\">corripere</span> (Quint. 1.5.18), and a shortened syllable <span lang=\"la\">correpta</span>; to pronounce a vowel short, <span lang=\"la\">correptē prōnūntiāre</span> (Traupman 248; <span lang=\"la\">correptē dīcere</span>, Gell. 2.17.5). A short mark is <span lang=\"la\">nota brevis</span> (Traupman 247)."
+    },
+    {
+      "latin": "correptus, correpta, correptum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "shortened, short",
+      "evidence": [
+        "Quint. 1.5.18: <span lang=\"la\">sīve cum syllaba correpta prōdūcitur</span>",
+        "Traupman 248"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "palus aliud priōre syllabā longā aliud sequentī significat",
+      "english": "palus means one thing with the first syllable long, another with the second",
+      "source": "Quint. 1.7.3"
+    }
+  ],
+  "related": [
+    "long-vowel",
+    "vowel",
+    "syllable",
+    "short-in-length"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/brevis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: brevis</a> · <a href=\"https://logeion.uchicago.edu/corripio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: corripio</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 247, p. 248.",
+    "Quintilian checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>, and cited by its numbering."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-12",
+    "by": "Claude"
+  }
+}

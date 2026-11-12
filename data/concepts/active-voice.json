@@ -1,0 +1,76 @@
+{
+  "id": "active-voice",
+  "english": "active",
+  "sense": "the voice of a verb",
+  "pos": [
+    "noun",
+    "adjective"
+  ],
+  "also": [
+    "active voice",
+    "active verb"
+  ],
+  "domain": "schola",
+  "terms": [
+    {
+      "latin": "faciendī modus",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "the active voice, “the mode of doing”",
+      "evidence": [
+        "Quint. 9.3.7: <span lang=\"la\">et contrā faciendī quae patimur, ut vāpulō</span> (Lewis &amp; Short s.v. <span lang=\"la\">modus</span>)"
+      ],
+      "comment": "Quintilian’s name, set against <span lang=\"la\">patiendī modus</span>, the passive."
+    },
+    {
+      "latin": "āctīvus, āctīva, āctīvum",
+      "status": "alternative",
+      "period": "late",
+      "gloss": "active",
+      "evidence": [
+        "Charis. p. 138; Diom. p. 326 P. (Lewis &amp; Short)",
+        "Traupman 227, 245"
+      ],
+      "comment": "The later grammarians’ term: <span lang=\"la\">verbum āctīvum</span>, an active verb; <span lang=\"la\">genus āctīvum</span>, the active voice (Traupman 245). For the grammarians an <span lang=\"la\">āctīvum</span> verb was transitive, against <span lang=\"la\">neutra</span>.",
+      "notes": [
+        "activus"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "in nātūrā verbōrum est et quae facimus patiendī modō saepe dīcere, ut arbitror, suspicor, et contrā faciendī quae patimur, ut vāpulō",
+      "english": "it is in the nature of verbs often to say what we do in the passive, as arbitror, suspicor, and on the other hand in the active what we suffer, as vāpulō",
+      "source": "Quint. 9.3.7"
+    },
+    {
+      "latin": "Cujus generis est? Āctīvī an passīvī? — Āctīvī.",
+      "english": "What voice is it? Active or passive? — Active.",
+      "source": "Traupman 241"
+    }
+  ],
+  "notes": {
+    "activus": {
+      "form": "<span lang=\"la\">āctīvus</span>",
+      "claim": "long a",
+      "against": "Lewis &amp; Short leaves it unmarked",
+      "html": "From <span lang=\"la\">āctus</span>, long by Lachmann’s law (Gell. 9.6.3), as <span lang=\"la\">āctiō</span>."
+    }
+  },
+  "related": [
+    "voice-grammar",
+    "passive-voice",
+    "transitive"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/modus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: modus</a> · <a href=\"https://logeion.uchicago.edu/activus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: activus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 227, p. 241, p. 245.",
+    "Quintilian checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>, and cited by its numbering.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-12",
+    "by": "Claude"
+  }
+}

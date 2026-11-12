@@ -1,0 +1,79 @@
+{
+  "id": "literal",
+  "english": "literal",
+  "pos": [
+    "adjective",
+    "adverb"
+  ],
+  "also": [
+    "literally",
+    "in the literal sense",
+    "word for word",
+    "literal translation"
+  ],
+  "domain": "schola",
+  "terms": [
+    {
+      "latin": "proprius, propria, proprium",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "literal, used in its own sense (of a word)",
+      "evidence": [
+        "Quint. 8.3.24: <span lang=\"la\">cum sint autem verba propria, ficta, trānslāta</span>",
+        "Traupman 247"
+      ],
+      "comment": "A word used in its proper sense is <span lang=\"la\">verbum proprium</span>, against <span lang=\"la\">trānslātum</span>, figurative. Literally is <span lang=\"la\">propriē</span>: <span lang=\"la\">magis propriē nihil possum dīcere</span> (Cic. Phil. 2.77, Lewis &amp; Short); <span lang=\"la\">Pōniturne «arma» propriē an figūrātē?</span>, is “arma” used literally or figuratively? (Traupman 239)."
+    },
+    {
+      "latin": "propriē",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "literally, in the proper sense",
+      "grammar": "adverb",
+      "evidence": [
+        "Cic. Phil. 2.77; Gell. 9.1.8 (Lewis &amp; Short)",
+        "Traupman 239, 247"
+      ]
+    },
+    {
+      "latin": "ad verbum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "word for word, literally",
+      "evidence": [
+        "Cic. Fin. 1.4: <span lang=\"la\">fābellae Latīnae ad verbum dē Graecīs expressae</span> (Lewis &amp; Short)",
+        "Traupman 247"
+      ],
+      "comment": "Of a translation or a quotation that follows the words exactly; Cicero also says <span lang=\"la\">verbum prō verbō reddere</span> (Opt. Gen. 14) and <span lang=\"la\">verbum ē verbō</span> for a single word rendered exactly (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "cum sint autem verba propria, ficta, trānslāta, propriīs dignitātem dat antīquitās",
+      "english": "and since words are literal, coined or figurative, age gives dignity to the literal ones",
+      "source": "Quint. 8.3.24"
+    },
+    {
+      "latin": "Pōniturne «arma» propriē an figūrātē? — Figūrātē.",
+      "english": "Is “arma” used literally or figuratively? — Figuratively.",
+      "source": "Traupman 239"
+    }
+  ],
+  "related": [
+    "figurative",
+    "translate",
+    "word",
+    "mean-signify"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/proprius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: proprius</a> · <a href=\"https://logeion.uchicago.edu/verbum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: verbum</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 239, p. 247.",
+    "Quintilian checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>, and cited by its numbering.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-12",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "id": "gender-grammar",
+  "english": "gender",
+  "sense": "in grammar",
+  "pos": "noun",
+  "also": [
+    "genders",
+    "grammatical gender",
+    "what gender is it?"
+  ],
+  "domain": "schola",
+  "terms": [
+    {
+      "latin": "genus, generis n.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "grammatical gender; in verbs, voice",
+      "evidence": [
+        "Quint. 1.4.23: <span lang=\"la\">trādere in nōminibus tria genera</span>",
+        "Varr. LL 10.22 (Lewis &amp; Short)",
+        "Traupman 221, 246"
+      ],
+      "comment": "Nouns have three genders, <span lang=\"la\">genus masculīnum, fēminīnum, neutrum</span> (Traupman 221). The question goes in the genitive of description: <span lang=\"la\">Cujus generis est?</span>, what gender is it?, answered <span lang=\"la\">Fēminīnī</span> (Traupman 238). With verbs the same word means voice (see voice)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nōn erit contentus trādere in nōminibus tria genera et quae sunt duōbus omnibusve commūnia",
+      "english": "he will not be content to teach the three genders of nouns and those common to two or to all",
+      "source": "Quint. 1.4.23"
+    },
+    {
+      "latin": "Cujus est generis?",
+      "english": "What gender is it?",
+      "source": "Traupman 239"
+    },
+    {
+      "latin": "Genera nōminum quot sunt?",
+      "english": "How many genders do nouns have?",
+      "source": "Traupman 221"
+    }
+  ],
+  "related": [
+    "masculine-grammar",
+    "feminine-grammar",
+    "neuter-grammar",
+    "noun",
+    "voice-grammar",
+    "sex"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/genus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: genus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 221, p. 238, p. 246.",
+    "Quintilian checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>, and cited by its numbering.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-12",
+    "by": "Claude"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "id": "mood-grammar",
+  "english": "mood",
+  "sense": "in grammar",
+  "pos": "noun",
+  "also": [
+    "moods",
+    "grammatical mood",
+    "what mood is it?"
+  ],
+  "domain": "schola",
+  "terms": [
+    {
+      "latin": "modus, modī m.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a mood of the verb; in Quintilian also a voice",
+      "evidence": [
+        "Quint. 1.5.41: <span lang=\"la\">fīunt soloecismī per genera, tempora, persōnās, modōs</span>",
+        "Traupman 225, 247"
+      ],
+      "comment": "The question is <span lang=\"la\">Cujus modī est?</span>, in what mood is it? (Traupman 240). Quintilian also calls the passive <span lang=\"la\">patiendī modus</span> (9.3.7). The Roman grammarians counted five moods (indicative, subjunctive, imperative, infinitive, impersonal); modern grammars count three (Traupman 225)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ideōque in eō fīunt soloecismī per genera, tempora, persōnās, modōs",
+      "english": "and so in the verb mistakes happen in voice, tense, person and mood",
+      "source": "Quint. 1.5.41"
+    },
+    {
+      "latin": "Cujus modī est? — Indicātīvī.",
+      "english": "In what mood is it? — The indicative.",
+      "source": "Traupman 240"
+    },
+    {
+      "latin": "Modī quot sunt?",
+      "english": "How many moods are there?",
+      "source": "Traupman 225"
+    }
+  ],
+  "related": [
+    "indicative",
+    "subjunctive",
+    "imperative-mood",
+    "infinitive",
+    "verb",
+    "tense"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/modus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: modus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 225, p. 240, p. 247.",
+    "Quintilian checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>, and cited by its numbering."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-12",
+    "by": "Claude"
+  }
+}

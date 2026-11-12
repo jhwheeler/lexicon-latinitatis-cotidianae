@@ -9,7 +9,8 @@
     "out",
     "not at home",
     "be absent",
-    "absentee"
+    "absentee",
+    "in my absence"
   ],
   "domain": "verba",
   "terms": [
@@ -37,6 +38,18 @@
         "Cic. Fam. 9.24.3: <span lang=\"la\">forīs cēnitandō</span>"
       ],
       "comment": "The opposite of <span lang=\"la\">domī</span> and <span lang=\"la\">intus</span>; going out is <span lang=\"la\">forās</span>. Away abroad is <span lang=\"la\">peregrē</span> (see abroad)."
+    },
+    {
+      "latin": "absēns, absentis",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "absent, not present",
+      "grammar": "participle of absum, used as an adjective and a noun",
+      "evidence": [
+        "Cic. Att. 1.17.6 (Lewis &amp; Short s.v. <span lang=\"la\">absum</span>)",
+        "Traupman 267"
+      ],
+      "comment": "“In my absence” is the ablative absolute <span lang=\"la\">mē absente</span>."
     }
   ],
   "phrases": [
@@ -44,6 +57,11 @@
       "latin": "avē, mī Gāī, meus asellus jūcundissimus, quem semper medius fidius dēsīderō, cum ā mē abes",
       "english": "hello, my Gaius, my dearest little donkey, whom I always miss, I swear, when you’re away from me",
       "source": "Gell. 15.7.3"
+    },
+    {
+      "latin": "mē absente",
+      "english": "in my absence",
+      "source": "Traupman 267"
     }
   ],
   "related": [
@@ -56,7 +74,8 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/absum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: absum</a> · <a href=\"https://logeion.uchicago.edu/foris\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: foris</a>",
     "Quotations from the Latinitas loci collections (loci-gellius, loci-cicero-epistulae), checked against the editions named there.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 28, checked against the searchable text of the book."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 28, checked against the searchable text of the book.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",

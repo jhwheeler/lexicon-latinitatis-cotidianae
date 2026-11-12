@@ -10,7 +10,9 @@
     "terrified",
     "what are you afraid of?",
     "afraid that",
-    "dread"
+    "dread",
+    "I am afraid that",
+    "I’m afraid that"
   ],
   "domain": "sermo",
   "terms": [
@@ -70,9 +72,23 @@
       "period": "classical",
       "gloss": "fearful; frightening",
       "evidence": [
-        "Traupman 149"
+        "Traupman 149",
+        "Ter. Eun. 757 (Lewis &amp; Short)",
+        "Traupman 269"
       ],
       "comment": "Lewis &amp; Short: “full of fear”, both active (causing fear) and passive (afraid)."
+    },
+    {
+      "latin": "vereor, verērī, veritus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "fear, be afraid; “I am afraid that” is vereor nē + subjunctive",
+      "grammar": "verb, second conjugation, deponent",
+      "evidence": [
+        "Cic. Att. 7.12.3: <span lang=\"la\">vereor nē</span> (Lewis &amp; Short)",
+        "Traupman 269"
+      ],
+      "comment": "After words of fearing <span lang=\"la\">nē</span> means “that”, and <span lang=\"la\">ut</span> or <span lang=\"la\">nē nōn</span> “that not”: <span lang=\"la\">vereor nē veniat</span>, I’m afraid he’ll come; <span lang=\"la\">vereor ut veniat</span>, I’m afraid he won’t."
     }
   ],
   "phrases": [
@@ -110,7 +126,8 @@
     "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 36.",
     "The example sentence marked “composed” is ours.",
     "The example sentences marked “composed” are ours.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 92, checked against the searchable text and the page images of the book."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 92, checked against the searchable text and the page images of the book.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",

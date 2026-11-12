@@ -18,7 +18,10 @@
     "answer in complete sentences",
     "answer me",
     "answer my question",
-    "classroom commands"
+    "classroom commands",
+    "answer a letter",
+    "write back",
+    "give someone an answer"
   ],
   "domain": "verba",
   "terms": [
@@ -49,6 +52,19 @@
       "comment": "<span lang=\"la\">Respōnsum reddere</span> or <span lang=\"la\">dare</span>, to give an answer.",
       "notes": [
         "re-short"
+      ]
+    },
+    {
+      "latin": "rescrībō, rescrībere, rescrīpsī, rescrīptum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "write back, answer a letter",
+      "evidence": [
+        "Cic. (Lewis &amp; Short)",
+        "Traupman 271"
+      ],
+      "notes": [
+        "re-short-scribo"
       ]
     }
   ],
@@ -92,6 +108,16 @@
       "latin": "ad haec, quae interrogātus es, respondē",
       "english": "answer these things you have been asked",
       "source": "Liv. 8.32 (Lewis &amp; Short s.v. <span lang=\"la\">interrogō</span>)"
+    },
+    {
+      "latin": "ad litterās rescrībere",
+      "english": "to answer a letter",
+      "source": "Traupman 271"
+    },
+    {
+      "latin": "alicui respōnsum reddere",
+      "english": "to give someone an answer",
+      "source": "Traupman 271"
     }
   ],
   "notes": {
@@ -100,6 +126,13 @@
       "claim": "short e in re-",
       "against": "Lewis &amp; Short <span lang=\"la\">rē-spondeo, rēsponsum</span>",
       "html": "The prefix is <span lang=\"la\">re-</span>, from Proto-Italic *wre, “back” (de Vaan 516, s.v. <span lang=\"la\">re-, red-</span>). Lewis &amp; Short writes <span lang=\"la\">rē-</span> before sc, sp and st, and only there. Its article on the prefix gives <span lang=\"la\">rĕ</span>, with a by-form <span lang=\"la\">rĕd-</span>, and puts the poets’ <span lang=\"la\">rēdūcō, rēlātum</span> down to “the suppression of the d”; the long mark before s and a consonant seems to rest on the same idea, as its <span lang=\"la\">dī-scindō</span> from <span lang=\"la\">dis-</span> does. Bennett (<em>The Latin Language</em> §48) rejects that lengthening for <span lang=\"la\">ascendō, distinguō, suspiciō</span> as “an untenable theory of compensatory lengthening”, and Lewis’s own <em>Elementary Latin Dictionary</em> (1890) prints <span lang=\"la\">re-spondeō</span>. Traupman writes <span lang=\"la\">respondēre</span> too.",
+      "ruling": "re-s"
+    },
+    "re-short-scribo": {
+      "form": "<span lang=\"la\">rescrībō</span>",
+      "claim": "short e in re-",
+      "against": "Lewis &amp; Short <span lang=\"la\">rē-scrībo</span>",
+      "html": "The prefix is <span lang=\"la\">re-</span> (de Vaan 516, s.v. <span lang=\"la\">re-, red-</span>); Bennett (<em>The Latin Language</em> §48) rejects the lengthening before s and a consonant, and Lewis’s <em>Elementary Latin Dictionary</em> prints <span lang=\"la\">re-spondeō</span>.",
       "ruling": "re-s"
     }
   },
@@ -115,7 +148,8 @@
     "Michiel de Vaan, <em>Etymological Dictionary of Latin and the other Italic Languages</em> (2008), p. 516.",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 28, 33, checked against the searchable text of the book.",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 93, checked against the searchable text and the page images of the book.",
-    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "<a href=\"https://logeion.uchicago.edu/rescribo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: rescribo</a>"
   ],
   "review": {
     "status": "draft",

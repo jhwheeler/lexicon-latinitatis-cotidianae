@@ -7,7 +7,31 @@
     {
       "latin": "Bulgaria, Bulgariae f.",
       "status": "recommended",
-      "period": "medieval"
+      "period": "medieval",
+      "evidence": [
+        "M-O s.v. Bulgaria (Mercator 1595)",
+        "Graesse, <em>Orbis Latinus</em> (1861), index s.v. Bulgarei: <span lang=\"la\">Bulgaria, Vulgaria</span>"
+      ],
+      "comment": "A country takes a preposition: <strong lang=\"la\">in Bulgariam</strong> (to), <strong lang=\"la\">in Bulgariā</strong> (in), <strong lang=\"la\">ē Bulgariā</strong> (from)."
+    },
+    {
+      "latin": "Bulgarus, Bulgarī m.",
+      "status": "alternative",
+      "period": "renaissance",
+      "gloss": "a Bulgarian",
+      "evidence": [
+        "M-O s.v. Bulgaria (Tursellinus 1652)"
+      ]
+    },
+    {
+      "latin": "Moesia, Moesiae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the Roman province",
+      "evidence": [
+        "Tac. A. 1.80 (Lewis &amp; Short s.v. Moesi)"
+      ],
+      "comment": "The land of the <span lang=\"la\">Moesī</span>, which Lewis &amp; Short places in modern Bulgaria and Serbia."
     }
   ],
   "phrases": [
@@ -22,10 +46,20 @@
     "in-bulgarian",
     "balkan-mountains",
     "rila",
-    "vitosha"
+    "vitosha",
+    "plovdiv",
+    "varna",
+    "burgas",
+    "veliko-tarnovo",
+    "thrace",
+    "maritsa",
+    "iskar"
   ],
   "sources": [
-    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+    "<a href=\"https://logeion.uchicago.edu/Moesi\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: Moesi</a>",
+    "Morgan–Owens, <em>Adumbratio</em>, geographical section, with the authorities it cites (cited as M-O s.v.).",
+    "J. G. Th. Graesse, <em>Orbis Latinus</em> (Dresden, 1861), German–Latin index, read in the scan at archive.org (the 1909 edition at columbia.edu could not be reached page by page); its forms are post-classical unless Lewis &amp; Short has them."
   ],
   "replaces": [
     "entry-232",
@@ -35,5 +69,8 @@
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "Bulgarian"
+  ]
 }

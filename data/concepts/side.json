@@ -11,7 +11,23 @@
       "latin": "latus, lateris n.",
       "status": "recommended",
       "period": "classical",
-      "comment": "With short a; distinguish <strong lang=\"la\">lātus</strong>, “wide” or “broad.”"
+      "comment": "With short a; distinguish <strong lang=\"la\">lātus</strong>, “wide” or “broad.”",
+      "evidence": [
+        "Traupman 59"
+      ]
+    },
+    {
+      "latin": "īlia, īlium n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the flanks, the groin: the soft part between ribs and hips",
+      "evidence": [
+        "Ov. M. 3.216 (Lewis &amp; Short s.v. <span lang=\"la\">īle</span>)",
+        "Traupman 59"
+      ],
+      "notes": [
+        "ilia-long"
+      ]
     }
   ],
   "phrases": [
@@ -27,11 +43,21 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/latus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: latus</a>",
-    "The example sentence marked “composed” is ours."
+    "<a href=\"https://logeion.uchicago.edu/ile\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ile</a>",
+    "The example sentence marked “composed” is ours.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 59, checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
+  },
+  "notes": {
+    "ilia-long": {
+      "form": "<span lang=\"la\">īlia</span>",
+      "claim": "long i",
+      "against": "Lewis &amp; Short’s cross-reference <span lang=\"la\">ĭlĭa</span>, v. <span lang=\"la\">īle</span>",
+      "html": "Lewis &amp; Short s.v. <span lang=\"la\">īle</span>, the main entry: <span lang=\"la\">īle, is … usually plur. īlĭa</span>."
+    }
   }
 }

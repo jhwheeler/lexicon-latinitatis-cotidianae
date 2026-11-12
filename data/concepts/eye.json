@@ -3,14 +3,28 @@
   "english": "eye",
   "pos": "noun",
   "also": [
-    "eyes"
+    "eyes",
+    "eyeball"
   ],
   "domain": "corpus",
   "terms": [
     {
       "latin": "oculus, oculī m.",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "evidence": [
+        "Traupman 58"
+      ]
+    },
+    {
+      "latin": "orbis (oculī)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the eyeball, the orb of the eye",
+      "evidence": [
+        "Verg. A. 12.670: <span lang=\"la\">ārdentēs oculōrum orbēs</span> (Lewis &amp; Short)",
+        "Traupman 58"
+      ]
     }
   ],
   "related": [
@@ -20,11 +34,13 @@
     "pupil-eye"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/oculus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: oculus</a>"
+    "<a href=\"https://logeion.uchicago.edu/oculus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: oculus</a>",
+    "<a href=\"https://logeion.uchicago.edu/orbis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: orbis</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 58, checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

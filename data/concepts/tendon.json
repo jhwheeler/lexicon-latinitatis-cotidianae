@@ -1,0 +1,43 @@
+{
+  "id": "tendon",
+  "english": "tendon",
+  "pos": "noun",
+  "also": [
+    "sinew"
+  ],
+  "domain": "corpus",
+  "terms": [
+    {
+      "latin": "nervus, nervī m.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a sinew, tendon",
+      "evidence": [
+        "Lewis &amp; Short s.v. <span lang=\"la\">nervus</span>"
+      ],
+      "comment": "Classical Latin does not separate sinew, tendon and nerve: all are <span lang=\"la\">nervī</span>."
+    },
+    {
+      "latin": "tendō, tendinis m.",
+      "status": "alternative",
+      "period": "modern",
+      "evidence": [
+        "Traupman 59"
+      ],
+      "comment": "Medieval and modern anatomy, from <span lang=\"la\">tendere</span>; not in Lewis &amp; Short."
+    }
+  ],
+  "related": [
+    "ligament",
+    "muscle"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/nervus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nervus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 59, checked against the searchable text of the book."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-12",
+    "by": "Claude"
+  }
+}

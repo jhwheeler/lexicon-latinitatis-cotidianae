@@ -3,7 +3,11 @@
   "english": "tooth",
   "pos": "noun",
   "also": [
-    "teeth"
+    "teeth",
+    "incisors",
+    "front teeth",
+    "molars",
+    "back teeth"
   ],
   "domain": "domus",
   "terms": [
@@ -11,7 +15,30 @@
       "latin": "dēns, dentis m.",
       "status": "recommended",
       "period": "classical",
-      "comment": "Plural <strong lang=\"la\">dentēs</strong>."
+      "comment": "Plural <strong lang=\"la\">dentēs</strong>.",
+      "evidence": [
+        "Traupman 59"
+      ]
+    },
+    {
+      "latin": "dentēs prīmōrēs",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the front teeth, incisors",
+      "evidence": [
+        "Plin. 7.70 (Lewis &amp; Short s.v. <span lang=\"la\">prīmōris</span>)",
+        "Traupman 59"
+      ]
+    },
+    {
+      "latin": "dentēs māxillārēs",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the back teeth, molars",
+      "evidence": [
+        "Traupman 59"
+      ],
+      "comment": "<span lang=\"la\">Māxillāris</span>, of the jaw, is in Lewis &amp; Short."
     }
   ],
   "related": [
@@ -20,11 +47,14 @@
     "loose-tooth"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/dens\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dens</a>"
+    "<a href=\"https://logeion.uchicago.edu/dens\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dens</a>",
+    "<a href=\"https://logeion.uchicago.edu/maxillaris\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: maxillaris</a>",
+    "<a href=\"https://logeion.uchicago.edu/primoris\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: primoris</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 59, checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

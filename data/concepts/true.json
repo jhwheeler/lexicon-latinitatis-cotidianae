@@ -6,7 +6,9 @@
     "that’s true",
     "it’s true that",
     "to tell the truth",
-    "to tell you the truth"
+    "to tell you the truth",
+    "that’s not quite true",
+    "not quite true"
   ],
   "domain": "verba",
   "terms": [
@@ -31,6 +33,17 @@
         "Traupman 110",
         "Plaut. Cas. 38: <span lang=\"la\">nē quid mentiar</span> (cited in the loci collection loci-franmorarius)"
       ]
+    },
+    {
+      "latin": "Ita rēs est.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "that’s true, that’s how it is",
+      "evidence": [
+        "Plaut. Am. 2.1.19: ut loquor, ita rēs est (Lewis &amp; Short s.v. rēs)",
+        "Plaut. As. 2.4.83: Scīlicet ita rēs est (Lewis &amp; Short s.v. rēs)",
+        "Traupman 114"
+      ]
     }
   ],
   "phrases": [
@@ -48,6 +61,11 @@
       "latin": "Vērum est quod dīcis.",
       "english": "What you say is true.",
       "source": "composed"
+    },
+    {
+      "latin": "Parum vērum est.",
+      "english": "That’s not quite true.",
+      "source": "Traupman 132"
     }
   ],
   "related": [
@@ -63,7 +81,8 @@
     "Quotations of Terence (Parry, 1857; cited by the lines of the Oxford text) that are not in the loci collections were checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
     "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition.",
     "The example sentence marked “composed” is ours.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 110."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 110.",
+    "<a href=\"https://logeion.uchicago.edu/res\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: res</a>"
   ],
   "review": {
     "status": "draft",

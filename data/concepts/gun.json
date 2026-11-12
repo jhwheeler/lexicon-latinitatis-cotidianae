@@ -10,7 +10,9 @@
     "handgun",
     "hunting rifle",
     "fire a gun",
-    "toy gun"
+    "toy gun",
+    "shotgun",
+    "hunting gun"
   ],
   "domain": "res-publica",
   "terms": [
@@ -46,12 +48,24 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/tormentum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tormentum</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 52, 187, 324, checked against the searchable text of the book (11 November 2026).",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 52, 187, 324, checked against the searchable text of the book (11 November 2026); p. 48.",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: Adumbratio</a>, s.v. gun, cannon, shoot."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "sclopētum vēnātōrium",
+      "english": "a hunting gun",
+      "source": "Traupman 48"
+    },
+    {
+      "latin": "focīle bifistulātum",
+      "english": "a shotgun",
+      "source": "Traupman 48"
+    }
+  ]
 }

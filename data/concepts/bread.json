@@ -7,7 +7,12 @@
     {
       "latin": "pānis, pānis m.",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "evidence": [
+        "Traupman 69",
+        "Traupman 70",
+        "Traupman 71"
+      ]
     }
   ],
   "phrases": [
@@ -15,6 +20,11 @@
       "latin": "Vīs frustum pānis?",
       "english": "Would you like a piece of bread?",
       "source": "composed"
+    },
+    {
+      "latin": "trēs pānēs",
+      "english": "three loaves of bread",
+      "source": "Traupman 69"
     }
   ],
   "related": [
@@ -24,14 +34,20 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/panis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: panis</a>",
-    "The example sentence marked “composed” is ours."
+    "The example sentence marked “composed” is ours.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 69; p. 70; p. 71."
   ],
   "replaces": [
     "entry-82"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "loaf of bread",
+    "loaf",
+    "loaves"
+  ]
 }

@@ -9,7 +9,8 @@
     "rewrite",
     "go over again",
     "rework",
-    "revised edition"
+    "revised edition",
+    "review"
   ],
   "domain": "schola",
   "terms": [
@@ -22,7 +23,8 @@
       "evidence": [
         "Suet. Aug. 34: <span lang=\"la\">lēgēs retractāvit</span> (Lewis &amp; Short)",
         "Plin. Ep. 8.21.6 (Lewis &amp; Short)",
-        "M-O s.v. revise, rewrite"
+        "M-O s.v. revise, rewrite",
+        "Traupman 31"
       ],
       "comment": "Literally “take in hand again”; of mental work, to reconsider, go back over, revise a text or a law. It also means to withdraw, to refuse (Lewis &amp; Short)."
     },
@@ -61,6 +63,16 @@
         "Hor. A.P. 441: <span lang=\"la\">male tornātōs incūdī reddere versūs</span> (M-O s.v. revise)"
       ],
       "comment": "Horace’s image for reworking badly turned lines; <span lang=\"la\">incūs</span> is an anvil."
+    },
+    {
+      "latin": "retractātiō, retractātiōnis f.",
+      "status": "alternative",
+      "period": "post-classical",
+      "gloss": "a going over again, revision; review",
+      "evidence": [
+        "Lewis &amp; Short: “a retouching, revision”, chiefly in Augustine’s title <span lang=\"la\">Retractātiōnēs</span>",
+        "Traupman 31"
+      ]
     }
   ],
   "phrases": [
@@ -82,13 +94,15 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/retracto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: retracto</a> · <a href=\"https://logeion.uchicago.edu/recognosco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: recognosco</a> · <a href=\"https://logeion.uchicago.edu/emendo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: emendo</a> · <a href=\"https://logeion.uchicago.edu/incus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: incus</a>",
+    "<a href=\"https://logeion.uchicago.edu/retractatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: retractatio</a>",
     "Seneca from the Latinitas loci collection (loci-seneca-epistulae); the other passages as Lewis &amp; Short or Morgan–Owens quotes them.",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. revise, rewrite.",
-    "The example sentence marked “composed” is ours."
+    "The example sentence marked “composed” is ours.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 31, checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

@@ -3,7 +3,9 @@
   "english": "maize",
   "pos": "noun",
   "also": [
-    "corn"
+    "corn",
+    "corn on the cob",
+    "sweetcorn"
   ],
   "domain": "natura",
   "terms": [
@@ -12,7 +14,8 @@
       "status": "recommended",
       "period": "modern",
       "evidence": [
-        "M-O"
+        "M-O",
+        "Traupman 71"
       ],
       "comment": "Recorded in Morgan–Owens. This is an early modern Latin borrowing, not Classical vocabulary. The borrowing ultimately reflects Taíno through Spanish. Scientific name: <span lang=\"la\">Zea mays</span>. Botanical names are given in their conventional spelling. The source establishes the word, not all its stem vowel lengths. Only the certain Latin inflectional quantity is marked in <strong lang=\"la\">maiziī</strong>."
     },
@@ -37,6 +40,11 @@
       "latin": "Spīcam maiziī tenēs.",
       "english": "You’re holding an ear of corn.",
       "source": "composed"
+    },
+    {
+      "latin": "maizium in spīcā",
+      "english": "corn on the cob",
+      "source": "Traupman 71"
     }
   ],
   "related": [
@@ -49,14 +57,15 @@
   ],
   "sources": [
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: Adumbratio</a>",
-    "The example sentence marked “composed” is ours."
+    "The example sentence marked “composed” is ours.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 71."
   ],
   "replaces": [
     "entry-8"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

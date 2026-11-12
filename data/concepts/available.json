@@ -7,7 +7,10 @@
     "at hand",
     "to hand",
     "obtainable",
-    "make available"
+    "make available",
+    "if it’s available",
+    "in stock",
+    "is it available?"
   ],
   "domain": "verba",
   "terms": [
@@ -30,7 +33,8 @@
       "gloss": "be ready to hand; be obvious",
       "evidence": [
         "Gell. 2.29.20: <span lang=\"la\">hoc erit tibi argūmentum semper in prōmptū situm</span>",
-        "Quint. 11.2.43: <span lang=\"la\">nec in prōmptū ratiō</span>"
+        "Quint. 11.2.43: <span lang=\"la\">nec in prōmptū ratiō</span>",
+        "Traupman 68"
       ]
     },
     {
@@ -53,6 +57,16 @@
         "Ter. Ph. 113: <span lang=\"la\">sibi ut ejus faciat cōpiam</span>",
         "M-O s.v. available: make available"
       ]
+    },
+    {
+      "latin": "praestō esse",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "be at hand, be available (of things as well as people)",
+      "evidence": [
+        "Cic. Pis. 55: togulae līctōribus ad portam praestō fuērunt (Lewis &amp; Short s.v. praestō)",
+        "Traupman 114: sī praestō est, if it’s available"
+      ]
     }
   ],
   "phrases": [
@@ -65,6 +79,11 @@
       "latin": "ut tibi ad mē ōrnandum semper dētur facultās, mihi ad remūnerandum nihil suppetat praeter voluntātem",
       "english": "that you always have the means to do me honour, and I have nothing available to repay you with but goodwill",
       "source": "Cic. Fam. 15.13.2"
+    },
+    {
+      "latin": "Estne in prōmptū placenta ex socolātā?",
+      "english": "Is chocolate cake available?",
+      "source": "Traupman 68"
     }
   ],
   "related": [
@@ -73,11 +92,13 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/suppeto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: suppeto</a> · <a href=\"https://logeion.uchicago.edu/promptus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: promptus (in prōmptū)</a> · <a href=\"https://logeion.uchicago.edu/parabilis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: parabilis</a> · <a href=\"https://logeion.uchicago.edu/copia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: copia</a>",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. available: easily available; available: make available.",
-    "Quotations from the Latinitas loci collections (loci-gellius, loci-quintilianus), checked against the editions named there; Terence (Ph. 113), Cicero (Fam. 15.13.2) and Caesar (BG 1.16.2) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+    "Quotations from the Latinitas loci collections (loci-gellius, loci-quintilianus), checked against the editions named there; Terence (Ph. 113), Cicero (Fam. 15.13.2) and Caesar (BG 1.16.2) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>.",
+    "<a href=\"https://logeion.uchicago.edu/praesto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praesto</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 68."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

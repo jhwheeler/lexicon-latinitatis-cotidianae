@@ -3,22 +3,38 @@
   "english": "sweat",
   "pos": "verb",
   "also": [
-    "sweating"
+    "sweating",
+    "break a sweat"
   ],
   "domain": "corpus",
   "terms": [
     {
       "latin": "sūdō, sūdāre, sūdāvī, sūdātum",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "evidence": [
+        "Traupman 66"
+      ]
+    },
+    {
+      "latin": "sūdor, sūdōris m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "sweat (the noun)",
+      "evidence": [
+        "Traupman 59, 66"
+      ],
+      "comment": "The noun; to break a sweat is <span lang=\"la\">īnsūdāre</span> (Traupman 66)."
     }
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/sudo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sudo</a>"
+    "<a href=\"https://logeion.uchicago.edu/sudo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sudo</a>",
+    "<a href=\"https://logeion.uchicago.edu/sudor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sudor</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 59, 66, checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

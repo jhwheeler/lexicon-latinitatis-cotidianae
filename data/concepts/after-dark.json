@@ -1,0 +1,51 @@
+{
+  "id": "after-dark",
+  "english": "after dark",
+  "pos": "phrase",
+  "also": [
+    "at nightfall",
+    "as soon as it was dark",
+    "once it was dark",
+    "when it got dark"
+  ],
+  "domain": "tempus",
+  "terms": [
+    {
+      "latin": "prīmīs tenebrīs",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "at nightfall, as soon as it was dark",
+      "grammar": "ablative of time: “at the first darkness”",
+      "evidence": [
+        "Liv. 31.23.4: <span lang=\"la\">classem in statiōne ūsque ad noctem tenuit: prīmīs tenebrīs mōvit</span> (Lewis &amp; Short s.v. <span lang=\"la\">tenebrae</span>)",
+        "Liv. 45.6: <span lang=\"la\">prīmīs tenebrīs solvit nāvem</span> (Lewis &amp; Short s.v. <span lang=\"la\">solvō</span>)"
+      ]
+    },
+    {
+      "latin": "dē nocte",
+      "status": "avoid",
+      "period": "classical",
+      "gloss": "given for “after dark”",
+      "evidence": [
+        "Traupman 86: after dark, <span lang=\"la\">dē nocte</span>"
+      ],
+      "comment": "<span lang=\"la\">Dē nocte</span> is “during the night, while it is still night” (Lewis &amp; Short s.v. <span lang=\"la\">dē</span>), above all of getting up or setting out before dawn (see night)."
+    }
+  ],
+  "related": [
+    "night",
+    "darkness",
+    "its-getting-dark",
+    "just-before-nightfall"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/tenebrae\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tenebrae</a> · <a href=\"https://logeion.uchicago.edu/de\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: de</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 86, each phrase checked against the searchable text of the book."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-12",
+    "by": "Claude"
+  }
+}

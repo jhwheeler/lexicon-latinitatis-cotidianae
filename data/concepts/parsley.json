@@ -8,7 +8,20 @@
       "latin": "petroselīnum, petroselīnī n.",
       "status": "recommended",
       "period": "classical",
-      "comment": "Preferred here when distinguishing it from celery."
+      "comment": "Preferred here when distinguishing it from celery.",
+      "evidence": [
+        "Traupman 71"
+      ]
+    },
+    {
+      "latin": "apium, apiī n.",
+      "status": "alternative",
+      "period": "classical",
+      "evidence": [
+        "Verg. Ecl. 6.68 (Lewis &amp; Short)",
+        "Traupman 71"
+      ],
+      "comment": "Lewis &amp; Short: parsley, but the word covered several umbellifers, celery among them; <span lang=\"la\">petroselīnum</span> is the garden parsley."
     }
   ],
   "related": [
@@ -16,11 +29,13 @@
   ],
   "sources": [
     "<a href=\"https://alatius.com/ls/index.php?l=petroselinum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: petroselinum</a>",
-    "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>"
+    "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 71.",
+    "<a href=\"https://logeion.uchicago.edu/apium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: apium</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

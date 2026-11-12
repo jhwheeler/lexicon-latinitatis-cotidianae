@@ -8,7 +8,9 @@
     "take a breath",
     "a deep breath",
     "last breath",
-    "bad breath"
+    "bad breath",
+    "shortness of breath",
+    "out of breath"
   ],
   "domain": "corpus",
   "terms": [
@@ -55,6 +57,28 @@
         "Cic. Off. 1.131 (Lewis &amp; Short)"
       ],
       "comment": "Out of breath (see pant)."
+    },
+    {
+      "latin": "fētor ōris",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "bad breath",
+      "evidence": [
+        "Plin. 28.100: <span lang=\"la\">fētōrēs ōris ēmendāre</span> (Lewis &amp; Short s.v. <span lang=\"la\">fētor</span>)",
+        "Traupman 62"
+      ],
+      "comment": "“A stink of the mouth”; Traupman spells it <span lang=\"la\">foetor</span>, which Lewis &amp; Short list under <span lang=\"la\">fētor</span>."
+    },
+    {
+      "latin": "anhēlātiō, anhēlātiōnis f.",
+      "status": "alternative",
+      "period": "post-classical",
+      "gloss": "shortness of breath, panting",
+      "evidence": [
+        "Plin. 9.18 (Lewis &amp; Short)",
+        "Traupman 65"
+      ],
+      "comment": "Lewis &amp; Short: post-Augustan for the earlier <span lang=\"la\">anhēlitus</span>."
     }
   ],
   "phrases": [
@@ -85,12 +109,15 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/spiritus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: spiritus</a> · <a href=\"https://logeion.uchicago.edu/anima\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: anima</a> · <a href=\"https://logeion.uchicago.edu/halitus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: halitus</a> · <a href=\"https://logeion.uchicago.edu/anhelitus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: anhelitus</a>",
+    "<a href=\"https://logeion.uchicago.edu/anhelatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: anhelatio</a>",
+    "<a href=\"https://logeion.uchicago.edu/fetor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fetor</a>",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. bad breath.",
-    "Quotations from the Latinitas loci collections (loci-terentius, loci-phaedrus), checked against the editions named there. Classical quotations checked against the Perseus and Latin Library texts."
+    "Quotations from the Latinitas loci collections (loci-terentius, loci-phaedrus), checked against the editions named there. Classical quotations checked against the Perseus and Latin Library texts.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 62, 65, checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

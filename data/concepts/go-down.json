@@ -5,7 +5,9 @@
   "also": [
     "go downstairs",
     "come downstairs",
-    "come down"
+    "come down",
+    "downstairs",
+    "he is downstairs"
   ],
   "also_under": [
     "ludi"
@@ -21,6 +23,15 @@
       "latin": "in īmum tabulātum dēscendere",
       "status": "alternative",
       "period": "modern",
+      "gloss": "go downstairs",
+      "evidence": [
+        "Traupman 123"
+      ]
+    },
+    {
+      "latin": "scālās dēscendere",
+      "status": "alternative",
+      "period": "classical",
       "gloss": "go downstairs",
       "evidence": [
         "Traupman 123"
@@ -49,6 +60,11 @@
       "latin": "Venīte deorsum.",
       "english": "Come downstairs.",
       "source": "Traupman 36"
+    },
+    {
+      "latin": "In īmō tabulātō est.",
+      "english": "He is downstairs.",
+      "source": "Traupman 123"
     }
   ]
 }

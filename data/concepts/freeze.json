@@ -7,7 +7,20 @@
     {
       "latin": "congelō, congelāre",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "evidence": [
+        "Traupman 71"
+      ]
+    },
+    {
+      "latin": "gelō, gelāre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "freeze (something)",
+      "evidence": [
+        "Lewis &amp; Short s.v. gelō",
+        "Traupman 135"
+      ]
     }
   ],
   "phrases": [
@@ -15,6 +28,16 @@
       "latin": "Frāga congelāta",
       "english": "frozen strawberries",
       "source": "composed"
+    },
+    {
+      "latin": "cibī congelātī",
+      "english": "frozen food",
+      "source": "Traupman 71"
+    },
+    {
+      "latin": "cēna congelāta",
+      "english": "a frozen dinner",
+      "source": "Traupman 71"
     }
   ],
   "related": [
@@ -25,11 +48,18 @@
   "sources": [
     "<a href=\"https://alatius.com/ls/index.php?l=congelo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: congelo</a>",
     "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>",
-    "The example sentence marked “composed” is ours."
+    "The example sentence marked “composed” is ours.",
+    "<a href=\"https://logeion.uchicago.edu/gelo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gelo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 71."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "frozen",
+    "frozen food",
+    "frozen dinner"
+  ]
 }

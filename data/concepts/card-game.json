@@ -8,7 +8,11 @@
   "also": [
     "play cards",
     "cards (the game)",
-    "game of cards"
+    "game of cards",
+    "shuffle",
+    "cut the cards",
+    "deal the cards",
+    "trick (cards)"
   ],
   "domain": "ludi",
   "terms": [
@@ -61,6 +65,31 @@
       "latin": "Vīn’ chartulīs lūdāmus?",
       "english": "Shall we play cards?",
       "source": "composed"
+    },
+    {
+      "latin": "cēterīs cēdere",
+      "english": "pass",
+      "source": "Traupman 51"
+    },
+    {
+      "latin": "chartulās miscēre",
+      "english": "shuffle the cards",
+      "source": "Traupman 51"
+    },
+    {
+      "latin": "chartulās sēpōnere",
+      "english": "cut the cards",
+      "source": "Traupman 51"
+    },
+    {
+      "latin": "chartulās distribuere",
+      "english": "deal the cards",
+      "source": "Traupman 51"
+    },
+    {
+      "latin": "vicēs (singulae, bīnae)",
+      "english": "a trick (one, two tricks)",
+      "source": "Traupman 51"
     }
   ],
   "related": [
@@ -81,7 +110,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

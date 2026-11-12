@@ -8,6 +8,17 @@
       "latin": "piscis, piscis m.",
       "status": "recommended",
       "period": "classical"
+    },
+    {
+      "latin": "piscātus, piscātūs m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "fish as food, a catch of fish",
+      "evidence": [
+        "Plaut. Most. 1.1.63: <span lang=\"la\">parāre piscātum</span> (Lewis &amp; Short)",
+        "Traupman 71"
+      ],
+      "comment": "Properly “a fishing”; in comedy also the fish themselves, as food (Lewis &amp; Short)."
     }
   ],
   "phrases": [
@@ -27,7 +38,9 @@
     "scale-fish"
   ],
   "sources": [
-    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 71.",
+    "<a href=\"https://logeion.uchicago.edu/piscatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: piscatus</a>"
   ],
   "replaces": [
     "entry-207",
@@ -35,7 +48,10 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "fish (as food)"
+  ]
 }

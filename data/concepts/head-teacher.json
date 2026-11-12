@@ -7,7 +7,11 @@
     "headmaster",
     "headmistress",
     "principal",
-    "head of school"
+    "head of school",
+    "assistant principal",
+    "vice principal",
+    "deputy head",
+    "principal’s office"
   ],
   "domain": "schola",
   "terms": [
@@ -42,6 +46,26 @@
         "M-O s.v. principal, headmaster"
       ],
       "comment": "Cicero’s word for the head of a Greek gymnasium; Morgan–Owens takes it for a headmaster. It suits a grammar school better than a primary school."
+    },
+    {
+      "latin": "rēctor (rēctrīx) vicārius (vicāria)",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "assistant or deputy head",
+      "evidence": [
+        "Traupman 28, 31"
+      ],
+      "comment": "<span lang=\"la\">Vicārius</span> is classically a substitute or deputy."
+    },
+    {
+      "latin": "rēctōris (rēctrīcis) officīna",
+      "status": "avoid",
+      "period": "modern",
+      "gloss": "the head’s office",
+      "evidence": [
+        "Traupman 31"
+      ],
+      "comment": "<span lang=\"la\">Officīna</span> is classically a workshop or factory (Lewis &amp; Short), not an office; say <span lang=\"la\">conclāve rēctōris</span>."
     }
   ],
   "related": [
@@ -51,13 +75,15 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/rector\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: rector</a> · <a href=\"https://logeion.uchicago.edu/gymnasiarchus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gymnasiarchus</a>",
+    "<a href=\"https://logeion.uchicago.edu/officina\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: officina</a>",
+    "<a href=\"https://logeion.uchicago.edu/vicarius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vicarius</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 31, 326, checked against the searchable text of the book (11 November 2026).",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. principal, headmaster.",
     "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 13."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

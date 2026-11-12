@@ -8,7 +8,11 @@
     "catch a disease",
     "infectious disease",
     "epidemic",
-    "attack (of illness)"
+    "attack (of illness)",
+    "ailment",
+    "ills",
+    "contract an illness",
+    "serious illness"
   ],
   "domain": "corpus",
   "terms": [
@@ -52,6 +56,16 @@
       "evidence": [
         "M-O s.v. contagious disease (Plin. NH 23.157)"
       ]
+    },
+    {
+      "latin": "malum, malī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "an ill, an ailment",
+      "evidence": [
+        "Traupman 62, 64"
+      ],
+      "comment": "Any evil or misfortune, and so a complaint of the body; plural <span lang=\"la\">mala</span>, ills."
     }
   ],
   "phrases": [
@@ -81,6 +95,7 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/morbus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: morbus</a> · <a href=\"https://logeion.uchicago.edu/aegrotatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aegrotatio</a> · <a href=\"https://logeion.uchicago.edu/valetudo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: valetudo</a> · <a href=\"https://logeion.uchicago.edu/pestilentia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pestilentia</a>",
+    "<a href=\"https://logeion.uchicago.edu/malus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: malus</a>",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. catch (a disease); contagious disease.",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 62, 63, 64, checked against the searchable text of the book (9 November 2026).",
     "Quotations from the Latinitas loci collections (loci-terentius, loci-ovidius), checked against the editions named there.",
@@ -89,7 +104,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

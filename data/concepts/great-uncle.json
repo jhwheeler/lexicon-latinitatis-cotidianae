@@ -1,0 +1,49 @@
+{
+  "id": "great-uncle",
+  "english": "great-uncle",
+  "pos": "noun",
+  "also": [
+    "great uncle",
+    "grand-uncle",
+    "granduncle"
+  ],
+  "domain": "sermo",
+  "terms": [
+    {
+      "latin": "patruus magnus",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "great-uncle on the father’s side: a grandfather’s brother",
+      "grammar": "noun with adjective, second declension",
+      "evidence": [
+        "Dig. 38.10.10: <span lang=\"la\">patruus magnus = frāter avī</span> (Lewis &amp; Short)",
+        "Traupman 24"
+      ]
+    },
+    {
+      "latin": "avunculus magnus",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "great-uncle on the mother’s side: a grandmother’s brother",
+      "grammar": "noun with adjective, second declension",
+      "evidence": [
+        "Cic. Brut. 222 (Lewis &amp; Short)",
+        "Traupman 24"
+      ],
+      "comment": "As with uncles, Latin keeps the two sides apart: the grandfather’s brother is <span lang=\"la\">patruus magnus</span>, the grandmother’s brother <span lang=\"la\">avunculus magnus</span>. One generation further up is <span lang=\"la\">mājor</span> (great-great-uncle)."
+    }
+  ],
+  "related": [
+    "uncle",
+    "grandfather"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/patruus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: patruus</a> · <a href=\"https://logeion.uchicago.edu/avunculus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: avunculus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 24, checked against the searchable text of the book."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-12",
+    "by": "Claude"
+  }
+}

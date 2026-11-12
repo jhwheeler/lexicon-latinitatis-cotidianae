@@ -15,8 +15,19 @@
       "period": "classical",
       "gloss": "excuse me, sorry",
       "evidence": [
-        "Traupman 97"
+        "Traupman 97",
+        "Traupman 27"
       ]
+    },
+    {
+      "latin": "Ignōsce mihi, quod dīxerō.",
+      "status": "avoid",
+      "period": "modern",
+      "gloss": "given for “pardon me for what I said”",
+      "evidence": [
+        "Traupman 105"
+      ],
+      "comment": "The future perfect <span lang=\"la\">dīxerō</span> looks forward, but what is pardoned is already said. <span lang=\"la\">Ignōscere</span> takes <span lang=\"la\">quod</span> with the indicative of what was done (<span lang=\"la\">velim mihi ignōscās, quod ad tē scrībō tam multa totiēs</span>, Cic. Att. 7.12.3, Lewis &amp; Short), so <span lang=\"la\">Ignōsce mihi, quod ita dīxī</span>."
     }
   ],
   "related": [
@@ -25,7 +36,9 @@
   ],
   "sources": [
     "<a href=\"https://logeion.org/ignosco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ignosco</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 97."
+    "<a href=\"https://logeion.uchicago.edu/ignosco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ignosco</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): pp. 97, 27."
   ],
   "review": {
     "status": "draft",
@@ -34,9 +47,9 @@
   },
   "phrases": [
     {
-      "latin": "Ignōsce mihi, quod dīxerō.",
-      "english": "Pardon me for what I said.",
-      "source": "Traupman 105"
+      "latin": "velim mihi ignōscās, quod ad tē scrībō tam multa totiēs",
+      "english": "please forgive me for writing to you so much and so often",
+      "source": "Cic. Att. 7.12.3 (Lewis &amp; Short s.v. <span lang=\"la\">ignōscō</span>)"
     }
   ]
 }

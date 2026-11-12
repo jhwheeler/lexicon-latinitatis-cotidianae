@@ -12,7 +12,34 @@
       "latin": "frīgidus, frīgida, frīgidum",
       "status": "recommended",
       "period": "classical",
-      "grammar": "adjective"
+      "grammar": "adjective",
+      "evidence": [
+        "Traupman 132",
+        "Traupman 135"
+      ]
+    },
+    {
+      "latin": "gelidus, gelida, gelidum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "icy cold, freezing",
+      "evidence": [
+        "Lewis &amp; Short s.v. gelidus",
+        "Traupman 135"
+      ]
+    },
+    {
+      "latin": "frīgēscō, frīgēscere, frīxī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "turn cold, grow cold",
+      "evidence": [
+        "Cato Agr. (Lewis &amp; Short)",
+        "Traupman 135",
+        "Tac. A. 15.70: <span lang=\"la\">ubi frīgēscere pedēs manūsque intelligit</span> (Lewis &amp; Short)",
+        "Traupman 43"
+      ],
+      "comment": "Lewis &amp; Short: “mostly ante-class. and post-Aug.; perh. not used by Cic.”"
     }
   ],
   "phrases": [
@@ -20,6 +47,16 @@
       "latin": "Frīgida est! Manūs meae frīgent!",
       "english": "It’s cold! My hands are cold!",
       "source": "composed"
+    },
+    {
+      "latin": "Est frīgidum hodiē.",
+      "english": "It’s cold today.",
+      "source": "Traupman 132"
+    },
+    {
+      "latin": "cum forīs frīgēscit",
+      "english": "when it gets cold outside",
+      "source": "Traupman 43"
     }
   ],
   "related": [
@@ -29,11 +66,23 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/frigidus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: frigidus</a>",
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
-    "The example sentences marked “composed” are ours."
+    "The example sentences marked “composed” are ours.",
+    "<a href=\"https://logeion.uchicago.edu/gelidus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gelidus</a>",
+    "<a href=\"https://logeion.uchicago.edu/frigesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: frigesco</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 43."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "it’s cold",
+    "it’s cold today",
+    "freezing (cold)",
+    "turn cold",
+    "get cold",
+    "grow cold",
+    "it’s getting cold"
+  ]
 }

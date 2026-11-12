@@ -5,7 +5,11 @@
   "pos": "noun",
   "also": [
     "swim",
-    "swimming lessons"
+    "swimming lessons",
+    "freestyle",
+    "free-style",
+    "crawl",
+    "swimming meet"
   ],
   "domain": "ludi",
   "terms": [
@@ -31,14 +35,31 @@
   ],
   "sources": [
     "<a href=\"https://logeion.org/natatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: natatio</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): pp. 50, 389."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): pp. 50, 389; p. 42."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-08",
+    "date": "2026-11-12",
     "by": "Claude"
   },
   "replaces": [
     "entry-528"
+  ],
+  "phrases": [
+    {
+      "latin": "natātiō lībera",
+      "english": "free-style",
+      "source": "Traupman 50"
+    },
+    {
+      "latin": "certāmen natātōrium",
+      "english": "a swimming meet",
+      "source": "Traupman 50"
+    },
+    {
+      "latin": "Postillāc in nostrā piscīnā novā aliquamdiū natō.",
+      "english": "After that I swim in our new pool for a while.",
+      "source": "Traupman 42"
+    }
   ]
 }

@@ -7,7 +7,20 @@
     {
       "latin": "sella, sellae f.",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "evidence": [
+        "Traupman 122"
+      ]
+    },
+    {
+      "latin": "arcisellium, arcisellii n.",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "a chair with a rounded back",
+      "evidence": [
+        "Traupman 122"
+      ],
+      "comment": "Not in Lewis &amp; Short (see easy chair)."
     }
   ],
   "phrases": [
@@ -15,6 +28,11 @@
       "latin": "In sellā sedē.",
       "english": "Sit on the chair.",
       "source": "composed"
+    },
+    {
+      "latin": "arcus sellae",
+      "english": "the back of the chair",
+      "source": "Traupman 122"
     }
   ],
   "related": [
@@ -28,5 +46,8 @@
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "back of the chair"
+  ]
 }

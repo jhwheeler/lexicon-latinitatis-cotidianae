@@ -11,7 +11,11 @@
     "sporting",
     "sportswear",
     "athletics",
-    "track and field"
+    "track and field",
+    "go in for sports",
+    "be involved in sports",
+    "what sports do you play?",
+    "sport shirt"
   ],
   "domain": "ludi",
   "terms": [
@@ -46,7 +50,9 @@
       "evidence": [
         "Plin. NH 7.205 (Lewis &amp; Short)",
         "Traupman 45: sport",
-        "M-O s.v. athletics, sports"
+        "M-O s.v. athletics, sports",
+        "Traupman 44",
+        "Traupman 62"
       ],
       "comment": "Pliny’s word for the art of the professional athlete; Traupman and Morgan–Owens use it for sport in general."
     },
@@ -76,6 +82,31 @@
       "latin": "lūdere quī nescit, campestribus abstinet armīs, indoctusque pilae discīve trochīve quiēscit, nē spissae rīsum tollant impūne corōnae",
       "english": "a man who can’t play keeps away from the Campus: if he has no skill at ball or discus or hoop, he stays still, so that the crowded rings of onlookers can’t laugh at him with impunity",
       "source": "Hor. Ars 379–381"
+    },
+    {
+      "latin": "dīsportibus (āthlēticae) studēre",
+      "english": "go in for sports",
+      "source": "Traupman 45"
+    },
+    {
+      "latin": "in dīsportibus (āthlēticā) versārī",
+      "english": "play sports, be involved in sports",
+      "source": "Traupman 45"
+    },
+    {
+      "latin": "Diēbus prōfēstīs plērumque in āthlēticā versor.",
+      "english": "On weekdays I am generally involved in sports.",
+      "source": "Traupman 41"
+    },
+    {
+      "latin": "Quibus āthlēticīs lūdis?",
+      "english": "What sports do you play?",
+      "source": "Traupman 42"
+    },
+    {
+      "latin": "camisia campestris",
+      "english": "sport shirt",
+      "source": "Traupman 45"
     }
   ],
   "related": [
@@ -89,13 +120,14 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/campester\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: campester</a> · <a href=\"https://logeion.uchicago.edu/ludus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ludus</a> · <a href=\"https://logeion.uchicago.edu/athleticus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: athleticus</a>",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: athletic, sports (adj.); athletics, sports.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 45, checked against the searchable text of the book (9 November 2026).",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 45, checked against the searchable text of the book (9 November 2026); p. 44; p. 41; p. 42.",
     "Quotations from the Latinitas loci collections (loci-cicero-philosophica), checked against the editions named there.",
-    "Cicero (Cael. 11), Suetonius (Aug. 83) and Horace (Ars 379–381) checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026)."
+    "Cicero (Cael. 11), Suetonius (Aug. 83) and Horace (Ars 379–381) checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026).",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 45, 62, checked against the searchable text of the book (9 November 2026)."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

@@ -7,7 +7,20 @@
     {
       "latin": "hortus, hortī m.",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "evidence": [
+        "Traupman 123"
+      ]
+    },
+    {
+      "latin": "hortus holitōrius",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "vegetable garden",
+      "evidence": [
+        "Traupman 123, 125"
+      ],
+      "comment": "<span lang=\"la\">Holitōrius</span>, “of vegetables”, is classical (<span lang=\"la\">forum holitōrium</span>, the vegetable market, Liv., Lewis &amp; Short s.v. <span lang=\"la\">olitōrius</span>)."
     }
   ],
   "related": [
@@ -16,11 +29,16 @@
     "flower-bed"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/hortus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: hortus</a>"
+    "<a href=\"https://logeion.uchicago.edu/hortus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: hortus</a>",
+    "<a href=\"https://logeion.uchicago.edu/olitorius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: olitorius</a>"
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "vegetable garden",
+    "kitchen garden"
+  ]
 }

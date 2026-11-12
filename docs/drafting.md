@@ -25,6 +25,20 @@ The order is the site's own (How we decide):
 
 Give the other forms the sources offer as `alternative` terms, with their period and evidence. Mark as `avoid` a modern form that means something else classically (a false friend), with the reason. Register labels follow latinitas `AGENTS.md` §6 (`vōx cōmica: Plaut., Ter.`).
 
+### When a source's Latin is wrong for its English
+
+A phrase book's Latin is checked in Lewis & Short like any other, and what the check finds is used, not thrown away. Where the Latin does not mean what the book says:
+
+- the English expression gets the Latin that is right as its recommended term, with a classical citation, and the book's phrase beside it marked `avoid` with the reason in a sentence ("commit to memory": *memoriae mandāre*, Cicero's phrase, with Traupman's *memoriae committere* marked `avoid`);
+- the book's Latin is entered under what it really means, in the record for that sense (*grātiam facere* under forgive, not under "do a favour");
+- a usage for which we have found no classical instance but which is current in modern Latin stays, with a plain sentence saying so (we have found no classical instance of bare *Grātiās!* without *agere*, but it is used so in modern Latin).
+
+Traupman is cited as `Traupman 103` (the printed page).
+
+### Saying that something is not attested
+
+Say what the search found, not what the language lacks: "we have found no classical instance", "not found in Lewis & Short or the loci collections". Write "unattested", "does not occur" or "is not classical" only when a reliable authority says so in terms (Lewis & Short, de Vaan, Allen & Greenough), and name it: "the nominative does not occur (Lewis & Short)". Our not finding a phrase is a fact about our search.
+
 ## Spelling the Latin
 
 - **Macrons are spelling.** Copy Lewis & Short's marks. Where it leaves a vowel unmarked that is hidden-long, follow Bennett; where de Vaan discusses the vowel, he decides. Vowels before *ns* and *nf* are long; before *gn* short unless the stem is long; before *nct* and *nx* long. If you cannot establish a vowel, leave it unmarked and flag it. Where Lewis & Short and de Vaan agree on a vowel, write what they write: depart from the two together only for a really good reason, such as newer scholarship or the metre of a quoted line, and say what it is in a note (Jack, 11 November 2026).

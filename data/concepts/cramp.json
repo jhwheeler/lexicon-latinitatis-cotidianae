@@ -1,0 +1,48 @@
+{
+  "id": "cramp",
+  "english": "cramp",
+  "pos": "noun",
+  "also": [
+    "muscle cramp",
+    "spasm",
+    "muscle spasm",
+    "convulsion"
+  ],
+  "domain": "corpus",
+  "terms": [
+    {
+      "latin": "convulsiō, convulsiōnis f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a cramp, convulsion",
+      "evidence": [
+        "Plin. 20.168 (Lewis &amp; Short)",
+        "Traupman 63, 65: <span lang=\"la\">mūsculī convulsiō</span>, muscle cramp"
+      ]
+    },
+    {
+      "latin": "spasmus, spasmī m.",
+      "status": "alternative",
+      "period": "post-classical",
+      "gloss": "a spasm",
+      "evidence": [
+        "Plin. 22.21 (Lewis &amp; Short)",
+        "Traupman 65: <span lang=\"la\">mūsculī spasmus</span>, muscle spasm"
+      ],
+      "comment": "Greek; Lewis &amp; Short: post-Augustan for <span lang=\"la\">convulsiō</span>."
+    }
+  ],
+  "related": [
+    "muscle",
+    "pain"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/convulsio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: convulsio</a> · <a href=\"https://logeion.uchicago.edu/spasmus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: spasmus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 63, 65, checked against the searchable text of the book."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-12",
+    "by": "Claude"
+  }
+}

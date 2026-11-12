@@ -8,21 +8,47 @@
       "latin": "cōnsōbrīnus, cōnsōbrīnī m.",
       "status": "recommended",
       "period": "classical",
-      "gloss": "cousin (male)"
+      "gloss": "cousin (male)",
+      "evidence": [
+        "Traupman 24"
+      ]
     },
     {
       "latin": "cōnsōbrīna, cōnsōbrīnae f.",
       "status": "recommended",
       "period": "classical",
-      "gloss": "cousin (female)"
+      "gloss": "cousin (female)",
+      "evidence": [
+        "Traupman 24"
+      ]
+    },
+    {
+      "latin": "patruēlis, patruēlis m./f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a cousin on the father’s side: a father’s brother’s child",
+      "grammar": "noun, third declension; also an adjective, frāter patruēlis",
+      "evidence": [
+        "Cic. Fin. 5.1: <span lang=\"la\">L. Cicerō frāter noster cognātiōne patruēlis, amōre germānus</span> (Lewis &amp; Short)",
+        "Suet. Dom. 15 (Lewis &amp; Short)",
+        "Traupman 24"
+      ],
+      "comment": "Latin names a cousin by the parents: <span lang=\"la\">patruēlis</span> is the child of two brothers, <span lang=\"la\">cōnsōbrīnus, cōnsōbrīna</span> strictly the child of two sisters (Lewis &amp; Short, after the Digest), though it is also used loosely of any first cousin. Traupman glosses <span lang=\"la\">cōnsōbrīnus</span> “sister’s son” and <span lang=\"la\">patruēlis</span> “brother’s child”, meaning the parent’s sister and brother."
     }
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/consobrinus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: consobrinus</a>"
+    "<a href=\"https://logeion.uchicago.edu/consobrinus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: consobrinus</a>",
+    "<a href=\"https://logeion.uchicago.edu/patruelis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: patruelis</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 24, checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "first cousin",
+    "cousin on the father’s side",
+    "cousin on the mother’s side"
+  ]
 }

@@ -15,6 +15,27 @@
       "evidence": [
         "Traupman 28"
       ]
+    },
+    {
+      "latin": "prīmās tenēre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "be first, hold the first place",
+      "grammar": "verb phrase: prīmās (partēs), the first part, with tenēre, agere or ferre",
+      "evidence": [
+        "Cic. Brut. 308: <span lang=\"la\">prīmās in causīs agēbat Hortēnsius</span> (Lewis &amp; Short s.v. <span lang=\"la\">prīmus</span>)"
+      ],
+      "comment": "For “be at the head of the class”, where Traupman has <span lang=\"la\">classem dūcere</span>, which is classically “to command a fleet”."
+    },
+    {
+      "latin": "classem dūcere",
+      "status": "avoid",
+      "period": "modern",
+      "gloss": "be at the head of the class",
+      "evidence": [
+        "Traupman 28"
+      ],
+      "comment": "In classical Latin <span lang=\"la\">classis</span> with <span lang=\"la\">dūcere</span> is a fleet led to sea; say <span lang=\"la\">prīmās tenēre</span>."
     }
   ],
   "related": [
@@ -23,11 +44,16 @@
   ],
   "sources": [
     "<a href=\"https://logeion.org/classis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: classis</a>",
+    "<a href=\"https://logeion.uchicago.edu/primus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: primus</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 28."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "be at the head of the class",
+    "top of the class"
+  ]
 }

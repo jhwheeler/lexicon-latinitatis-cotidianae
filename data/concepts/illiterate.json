@@ -1,0 +1,48 @@
+{
+  "id": "illiterate",
+  "english": "illiterate",
+  "pos": "adjective",
+  "also": [
+    "unable to read",
+    "can’t read",
+    "unlettered"
+  ],
+  "domain": "schola",
+  "terms": [
+    {
+      "latin": "illitterātus, illitterāta, illitterātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "unlettered, uneducated; unable to read",
+      "evidence": [
+        "Cic. de Or. 2.25: <span lang=\"la\">virum bonum et nōn illitterātum</span> (Lewis &amp; Short)",
+        "Quint. 2.21.16: <span lang=\"la\">rūsticus illitterātusque</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Seneca (Ben. 5.13.4) notes that it is used of one not wholly ignorant but not brought to higher letters; “unable to read” is <span lang=\"la\">litterārum nescius</span>."
+    },
+    {
+      "latin": "analphabētus, analphabēta, analphabētum",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "unable to read and write",
+      "evidence": [
+        "Traupman 30"
+      ],
+      "comment": "From Greek <span lang=\"la\">analphabētos</span>, not knowing the alphabet; not in Lewis &amp; Short."
+    }
+  ],
+  "related": [
+    "read",
+    "alphabet",
+    "ability"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/illitteratus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: illitteratus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 30, checked against the searchable text of the book."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-12",
+    "by": "Claude"
+  }
+}

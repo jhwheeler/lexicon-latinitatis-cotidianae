@@ -4,7 +4,9 @@
   "pos": "noun",
   "also": [
     "inflatable ball",
-    "play ball"
+    "play ball",
+    "fly ball",
+    "ball game"
   ],
   "also_under": [
     "sermo"
@@ -15,14 +17,20 @@
       "latin": "pila, pilae f.",
       "status": "recommended",
       "period": "classical",
-      "comment": "An ancient ball noun; modern sports need context."
+      "comment": "An ancient ball noun; modern sports need context.",
+      "evidence": [
+        "Traupman 44"
+      ]
     },
     {
       "latin": "follis, follis m.",
       "status": "alternative",
       "period": "classical",
       "gloss": "inflatable ball",
-      "comment": "An ancient ball noun."
+      "comment": "An ancient ball noun.",
+      "evidence": [
+        "Traupman 44"
+      ]
     }
   ],
   "phrases": [
@@ -35,6 +43,21 @@
       "latin": "Pilam ad mē mitte.",
       "english": "Throw the ball to me.",
       "source": "composed"
+    },
+    {
+      "latin": "Pilā lūdō.",
+      "english": "I play ball.",
+      "source": "Traupman 41"
+    },
+    {
+      "latin": "pila volāns",
+      "english": "a fly ball (in baseball)",
+      "source": "Traupman 45"
+    },
+    {
+      "latin": "lūsus pilae (follis)",
+      "english": "a ball game",
+      "source": "Traupman 44"
     }
   ],
   "related": [
@@ -52,7 +75,8 @@
     "<a href=\"https://www.alatius.com/ls/index.php?l=pila\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pila</a> · <a href=\"https://www.alatius.com/ls/index.php?l=follis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: follis</a>",
     "The example sentences marked “composed” are ours.",
     "<a href=\"https://logeion.uchicago.edu/pila\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pila</a>",
-    "The example sentence marked “composed” is ours."
+    "The example sentence marked “composed” is ours.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 44; p. 41; p. 45."
   ],
   "replaces": [
     "entry-184",
@@ -60,7 +84,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

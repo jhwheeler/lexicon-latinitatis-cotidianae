@@ -18,7 +18,8 @@
       "period": "classical",
       "evidence": [
         "Traupman 130",
-        "M-O"
+        "M-O",
+        "Traupman 129"
       ]
     },
     {
@@ -27,14 +28,19 @@
       "period": "classical",
       "gloss": "very expensive",
       "evidence": [
-        "Ter. Phorm. 3.3.25, as cited by L&amp;S"
+        "Ter. Phorm. 3.3.25, as cited by L&amp;S",
+        "Traupman 127",
+        "Traupman 130"
       ]
     },
     {
       "latin": "pretiōsus",
       "status": "alternative",
       "period": "classical",
-      "gloss": "costly, valuable"
+      "gloss": "costly, valuable",
+      "evidence": [
+        "Traupman 69"
+      ]
     }
   ],
   "phrases": [
@@ -42,6 +48,11 @@
       "latin": "Hoc nimis cārum est.",
       "english": "This is too expensive.",
       "source": "composed"
+    },
+    {
+      "latin": "Carō hodiē tam pretiōsa est!",
+      "english": "Meat is so expensive nowadays!",
+      "source": "Traupman 69"
     }
   ],
   "related": [
@@ -52,12 +63,12 @@
   "sources": [
     "<a href=\"https://logeion.org/carus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: carus</a> · <a href=\"https://logeion.org/percarus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: percarus</a> · <a href=\"https://logeion.org/pretiosus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pretiosus</a>",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. expensive.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 130.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 130; p. 69.",
     "The example sentence marked “composed” is ours."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

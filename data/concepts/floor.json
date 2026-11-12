@@ -8,13 +8,19 @@
       "latin": "solum, solī n.",
       "status": "recommended",
       "period": "classical",
-      "gloss": "ground or floor"
+      "gloss": "ground or floor",
+      "evidence": [
+        "Traupman 123"
+      ]
     },
     {
       "latin": "pavīmentum, pavīmentī n.",
       "status": "alternative",
       "period": "classical",
-      "gloss": "paved floor or flooring"
+      "gloss": "paved floor or flooring",
+      "evidence": [
+        "Traupman 123"
+      ]
     }
   ],
   "phrases": [
@@ -22,6 +28,16 @@
       "latin": "In solō jacet.",
       "english": "It’s lying on the floor.",
       "source": "composed"
+    },
+    {
+      "latin": "pavīmentum marmoreum",
+      "english": "a marble floor",
+      "source": "Traupman 123"
+    },
+    {
+      "latin": "pavīmentum tessellātum",
+      "english": "a mosaic floor",
+      "source": "Traupman 123 (tesselātum); Suet. Caes. 46: pavīmenta tessellāta (Lewis &amp; Short)"
     }
   ],
   "related": [
@@ -36,5 +52,10 @@
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "marble floor",
+    "mosaic floor",
+    "wooden floor"
+  ]
 }

@@ -3,7 +3,10 @@
   "english": "dinner",
   "pos": "noun",
   "also": [
-    "supper"
+    "supper",
+    "eat dinner",
+    "have dinner",
+    "have a roast for dinner"
   ],
   "domain": "culina",
   "terms": [
@@ -23,11 +26,28 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/cena\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cena</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: p. 71, checked against the searchable text of the book on 29 October 2026."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: p. 71, checked against the searchable text of the book on 29 October 2026; p. 68."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "cēnam sūmere",
+      "english": "eat dinner",
+      "source": "Traupman 71"
+    },
+    {
+      "latin": "assum in cēnā habēre",
+      "english": "have a roast for dinner",
+      "source": "Traupman 71"
+    },
+    {
+      "latin": "Quid in cēnā sūmēs?",
+      "english": "What will you have for supper?",
+      "source": "Traupman 68"
+    }
+  ]
 }

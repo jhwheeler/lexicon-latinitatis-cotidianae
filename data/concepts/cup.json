@@ -3,7 +3,10 @@
   "english": "cup",
   "pos": "noun",
   "also": [
-    "small cup"
+    "small cup",
+    "coffee cup",
+    "cup of coffee",
+    "cup of tea"
   ],
   "domain": "culina",
   "terms": [
@@ -11,7 +14,10 @@
       "latin": "pōculum, pōculī n.",
       "status": "recommended",
       "period": "classical",
-      "gloss": "cup or drinking vessel"
+      "gloss": "cup or drinking vessel",
+      "evidence": [
+        "Traupman 123"
+      ]
     },
     {
       "latin": "pōculum ānsātum",
@@ -27,7 +33,8 @@
       "evidence": [
         "Traupman 71",
         "Cato, Agr. 156",
-        "Liv. 10.42"
+        "Liv. 10.42",
+        "Traupman 123"
       ]
     }
   ],
@@ -39,11 +46,28 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/poculum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: poculum</a> · <a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: Adumbratio</a>",
     "<a href=\"https://logeion.uchicago.edu/pocillum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pocillum</a>",
-    "29 October 2026 additions: John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 71, checked against the searchable text of the book."
+    "29 October 2026 additions: John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 71, checked against the searchable text of the book; p. 70; p. 67."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "pōcillum caffeārium",
+      "english": "a coffee cup",
+      "source": "Traupman 70"
+    },
+    {
+      "latin": "pōcillum caffeae (theae)",
+      "english": "a cup of coffee (tea)",
+      "source": "Traupman 71"
+    },
+    {
+      "latin": "Ita, pōcillum caffeae cum cremō.",
+      "english": "Yes, a cup of coffee with cream.",
+      "source": "Traupman 67"
+    }
+  ]
 }

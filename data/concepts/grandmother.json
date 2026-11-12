@@ -13,7 +13,21 @@
     {
       "latin": "avia, aviae f.",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "evidence": [
+        "Traupman 24"
+      ]
+    },
+    {
+      "latin": "mamma, mammae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "grandma, in a child’s mouth",
+      "evidence": [
+        "Inscr. Mur. 1134.3 (Lewis &amp; Short): <span lang=\"la\">mamma</span> for a grandmother",
+        "Traupman 24"
+      ],
+      "comment": "The nursery word for mother; Lewis &amp; Short cite one inscription where it names a grandmother. Fine for a child to say, but <span lang=\"la\">avia</span> is the word."
     }
   ],
   "phrases": [
@@ -29,12 +43,14 @@
   ],
   "sources": [
     "The grouped card gave no source for this word.",
+    "<a href=\"https://logeion.uchicago.edu/mamma\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mamma</a>",
     "<a href=\"https://logeion.uchicago.edu/avia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: avia</a>",
-    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 9 November 2026. Examples marked “Libellus” quote those texts word for word."
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 9 November 2026. Examples marked “Libellus” quote those texts word for word.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 24, checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

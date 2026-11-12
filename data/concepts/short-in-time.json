@@ -10,7 +10,9 @@
     "shortly",
     "be brief",
     "briefly",
-    "in brief"
+    "in brief",
+    "for a short time",
+    "for a little while"
   ],
   "domain": "tempus",
   "terms": [
@@ -36,6 +38,27 @@
         "Phaedr. 3.7.1: <span lang=\"la\">quam dulcis sit lībertās, breviter prōloquar</span>"
       ],
       "comment": "The adverb of <span lang=\"la\">brevis</span>: of speaking, in few words; of time, for a short while."
+    },
+    {
+      "latin": "paulisper",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "for a short while, for a little while",
+      "evidence": [
+        "Plaut. As. 5.2.30: <span lang=\"la\">paulisper manē</span> (Lewis &amp; Short s.v. <span lang=\"la\">paulisper</span>)",
+        "Cic. Verr. 2.4.39: <span lang=\"la\">abesse ā domō paulisper māluit</span> (Lewis &amp; Short s.v. <span lang=\"la\">ab</span>)"
+      ],
+      "comment": "How long something lasts: a little while (see moment)."
+    },
+    {
+      "latin": "brevī tempore",
+      "status": "avoid",
+      "period": "classical",
+      "gloss": "given for “for a short time”",
+      "evidence": [
+        "Traupman 88: for a short time, <span lang=\"la\">brevī tempore</span>"
+      ],
+      "comment": "“In a short time, shortly” (see soon): it says how soon, not how long. For “for a short time”, <span lang=\"la\">paulisper</span> (above)."
     }
   ],
   "phrases": [
@@ -63,16 +86,19 @@
   "related": [
     "short-in-length",
     "long-time",
-    "a-little-later"
+    "a-little-later",
+    "soon"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/brevis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: brevis</a> · <a href=\"https://logeion.uchicago.edu/breviter\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: breviter</a>",
     "Quotations from the Latinitas loci collections (loci-cicero-philosophica, loci-horatius, loci-phaedrus, loci-publilius), checked against the editions named there.",
-    "The example sentence marked “composed” is ours."
+    "The example sentence marked “composed” is ours.",
+    "<a href=\"https://logeion.uchicago.edu/paulisper\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: paulisper</a>",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

@@ -59,6 +59,28 @@
         "Ter. Eun. 5.2.50: <span lang=\"la\">volet, certō sciō</span> (Lewis &amp; Short), s.v. <span lang=\"la\">ah</span>",
         "Traupman 102: <span lang=\"la\">certum (certō) sciō</span>"
       ]
+    },
+    {
+      "latin": "quod sciam",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "as far as I know",
+      "grammar": "relative clause of restriction, with the subjunctive",
+      "evidence": [
+        "Cic. Fin. 2.7: (Epicūrus) sē ūnus, quod sciam, sapientem profitērī est ausus (Lewis &amp; Short s.v. quī)",
+        "Plaut. Capt. 1.2.70 (Lewis &amp; Short s.v. sciō)"
+      ],
+      "comment": "Traupman 115 has <span lang=\"la\">quoad ego sciō</span>; the classical idiom is <span lang=\"la\">quod sciam</span>, with the subjunctive. <span lang=\"la\">Quoad</span> is “as long as, until”, and “as far as” only in phrases like <span lang=\"la\">quoad ejus fierī poterit</span>."
+    },
+    {
+      "latin": "quoad ego sciō",
+      "status": "avoid",
+      "period": "modern",
+      "gloss": "as far as I know",
+      "evidence": [
+        "Traupman 115"
+      ],
+      "comment": "Not found in the classical authors, who say <span lang=\"la\">quod sciam</span> (above)."
     }
   ],
   "phrases": [
@@ -86,6 +108,11 @@
       "latin": "pater, quī Bulgaricē nōn minus quam Latīnē scit",
       "english": "Dad, who knows Bulgarian no less than Latin",
       "source": "Libellus VI, <span lang=\"la\">Reditus: per Alpēs domum</span>"
+    },
+    {
+      "latin": "Scīsne piscārī?",
+      "english": "Do you know how to fish?",
+      "source": "Traupman 42"
     }
   ],
   "related": [
@@ -96,7 +123,7 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/scio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: scio</a> · <a href=\"https://logeion.uchicago.edu/nescio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nescio</a> · <a href=\"https://logeion.uchicago.edu/certus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: certus</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 30, 102, checked against the searchable text of the book (9 November 2026).",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 30, 102, checked against the searchable text of the book (9 November 2026); p. 42.",
     "Quotations from the Latinitas loci collections (loci-varro, loci-livius, loci-plinius, loci-cicero-philosophica, loci-catullus), checked against the editions named there.",
     "Quotations of Cicero’s letters (Purser) that are not in the loci collections were checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
     "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition.",
@@ -106,7 +133,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

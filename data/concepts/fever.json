@@ -6,7 +6,11 @@
     "temperature",
     "have a temperature",
     "run a fever",
-    "hot forehead"
+    "hot forehead",
+    "do you have a fever?",
+    "high fever",
+    "run a high fever",
+    "the fever goes down"
   ],
   "domain": "corpus",
   "terms": [
@@ -17,7 +21,8 @@
       "evidence": [
         "Traupman 64",
         "M-O s.v. fever",
-        "Traupman 55: <span lang=\"la\">frōns et genae sunt calidae</span>"
+        "Traupman 55: <span lang=\"la\">frōns et genae sunt calidae</span>",
+        "Traupman 56: <span lang=\"la\">febrem magnam habēre</span>, to run a high fever"
       ],
       "comment": "Accusative <span lang=\"la\">febrim</span> or <span lang=\"la\">febrem</span>.",
       "notes": [
@@ -83,7 +88,7 @@
   ],
   "sources": [
     "<a href=\"https://logeion.org/febris\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: febris</a> · <a href=\"https://logeion.org/febricula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: febricula</a> · <a href=\"https://logeion.org/febricito\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: febricito</a>",
-    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. fever. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): pp. 55, 64.",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. fever. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): pp. 55, 64, 56.",
     "Cicero’s letters checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>.",
     "The example sentences marked “composed” are ours."
   ],
@@ -92,7 +97,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

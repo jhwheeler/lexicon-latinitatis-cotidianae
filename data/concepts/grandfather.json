@@ -12,7 +12,21 @@
     {
       "latin": "avus, avī m.",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "evidence": [
+        "Traupman 24"
+      ]
+    },
+    {
+      "latin": "tata, tatae m.",
+      "status": "avoid",
+      "period": "classical",
+      "gloss": "daddy; in Martial a foster-father",
+      "evidence": [
+        "Varr. ap. Non. 81.5; Mart. 1.101.1 (Lewis &amp; Short)",
+        "Traupman 24, for “granddad”"
+      ],
+      "comment": "Traupman gives <span lang=\"la\">tata</span> for “granddad” as well as “dad”, but Lewis &amp; Short know it only as a child’s word for father and, in Martial, for the man who brought one up. Say <span lang=\"la\">avus</span>."
     }
   ],
   "phrases": [
@@ -27,12 +41,14 @@
   ],
   "sources": [
     "The grouped card gave no source for this word.",
+    "<a href=\"https://logeion.uchicago.edu/tata\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tata</a>",
     "<a href=\"https://logeion.uchicago.edu/avus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: avus</a>",
-    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 9 November 2026. Examples marked “Libellus” quote those texts word for word."
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 9 November 2026. Examples marked “Libellus” quote those texts word for word.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 24, checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

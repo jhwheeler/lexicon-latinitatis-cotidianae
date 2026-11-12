@@ -6,7 +6,8 @@
     "now and then",
     "at times",
     "occasionally",
-    "sometimes … sometimes"
+    "sometimes … sometimes",
+    "from time to time"
   ],
   "domain": "tempus",
   "also_under": [
@@ -22,7 +23,8 @@
       "evidence": [
         "Cic. Off. 2.64: <span lang=\"la\">sed interdum etiam frūctuōsum</span>",
         "Mor. 28: <span lang=\"la\">interdum fessae succēdit laeva sorōrī</span>",
-        "Traupman 382"
+        "Traupman 382",
+        "Traupman 40"
       ]
     },
     {
@@ -60,6 +62,17 @@
         "Ter. Eun. 713: <span lang=\"la\">modo ait, modo negat</span>",
         "Traupman 382"
       ]
+    },
+    {
+      "latin": "per occāsiōnem",
+      "status": "avoid",
+      "period": "classical",
+      "gloss": "when the chance offers (not “occasionally”)",
+      "evidence": [
+        "Liv. 1.5.5: <span lang=\"la\">rem inmātūram nisi per occāsiōnem aperīre nōluerat</span> (Lewis &amp; Short)",
+        "Traupman 41"
+      ],
+      "comment": "Traupman gives <span lang=\"la\">per occāsiōnem</span> for “occasionally”; classically it means “on a favourable opportunity” (Lewis &amp; Short). For “occasionally” use <span lang=\"la\">interdum</span> or <span lang=\"la\">nōnnumquam</span>."
     }
   ],
   "phrases": [
@@ -93,12 +106,13 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/interdum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: interdum</a> · <a href=\"https://logeion.uchicago.edu/nonnumquam\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nonnumquam</a> · <a href=\"https://logeion.uchicago.edu/aliquando\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aliquando</a> · <a href=\"https://logeion.uchicago.edu/modo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: modo</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 382. Michiel de Vaan, <em>Etymological Dictionary of Latin and the other Italic Languages</em> (2008), p. 507.",
-    "Quotations from the Latinitas loci collections (loci-cicero-philosophica, loci-vergilius, loci-quintilianus, loci-seneca-epistulae, loci-plinius), checked against the editions named there; Terence (Eun. 713) and Caesar (BG 1.8.4) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 382. Michiel de Vaan, <em>Etymological Dictionary of Latin and the other Italic Languages</em> (2008), p. 507; p. 40; p. 41.",
+    "Quotations from the Latinitas loci collections (loci-cicero-philosophica, loci-vergilius, loci-quintilianus, loci-seneca-epistulae, loci-plinius), checked against the editions named there; Terence (Eun. 713) and Caesar (BG 1.8.4) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>.",
+    "<a href=\"https://logeion.uchicago.edu/occasio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: occasio</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

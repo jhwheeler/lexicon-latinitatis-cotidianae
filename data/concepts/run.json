@@ -13,7 +13,11 @@
     {
       "latin": "currō, currere, cucurrī, cursum",
       "status": "recommended",
-      "period": "classical"
+      "period": "classical",
+      "evidence": [
+        "Traupman 60",
+        "Traupman 65"
+      ]
     },
     {
       "latin": "tolūtim currere / cursitāre",
@@ -31,6 +35,17 @@
         "Traupman 60",
         "Varro",
         "Pliny"
+      ]
+    },
+    {
+      "latin": "cursūra, cursūrae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "running",
+      "register": "vōx cōmica: Plaut.; Varr.",
+      "evidence": [
+        "Plaut. Merc. 1.2.10 (Lewis &amp; Short)",
+        "Traupman 65"
       ]
     }
   ],
@@ -53,7 +68,8 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/curro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: curro</a> · <a href=\"https://logeion.uchicago.edu/tolutim\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tolutim</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 60, checked against the searchable text of the book (29 October 2026).",
+    "<a href=\"https://logeion.uchicago.edu/cursura\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cursura</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 60, 65, checked against the searchable text of the book (29 October 2026).",
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
   ],
   "replaces": [
@@ -62,7 +78,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

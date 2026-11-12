@@ -3,7 +3,9 @@
   "english": "buy",
   "pos": "verb",
   "also": [
-    "purchase"
+    "purchase",
+    "buy at a bargain",
+    "bargain"
   ],
   "also_under": [
     "pecunia"
@@ -17,6 +19,26 @@
       "evidence": [
         "Traupman 130"
       ]
+    },
+    {
+      "latin": "parō, parāre, parāvī, parātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "get, procure, buy",
+      "evidence": [
+        "Cic. Att. 12.19.1: trāns Tiberim hortōs (Lewis &amp; Short s.v. parō)",
+        "Traupman 130"
+      ]
+    },
+    {
+      "latin": "mercor, mercārī, mercātus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "buy, purchase; trade",
+      "evidence": [
+        "Lewis &amp; Short s.v. mercor",
+        "Traupman 131"
+      ]
     }
   ],
   "related": [
@@ -29,7 +51,9 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/emo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: emo</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: p. 130, checked against the searchable text of the book on 29 October 2026."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>: p. 130, checked against the searchable text of the book on 29 October 2026.",
+    "<a href=\"https://logeion.uchicago.edu/paro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: paro</a>",
+    "<a href=\"https://logeion.uchicago.edu/mercor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mercor</a>"
   ],
   "replaces": [
     "entry-227",
@@ -39,5 +63,12 @@
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "bene emere",
+      "english": "to buy at a bargain",
+      "source": "Traupman 130"
+    }
+  ]
 }

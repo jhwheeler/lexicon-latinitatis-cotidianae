@@ -1,0 +1,61 @@
+{
+  "id": "heal",
+  "english": "heal",
+  "pos": "verb",
+  "also": [
+    "cure",
+    "curable",
+    "heal up",
+    "get better (of a wound)"
+  ],
+  "domain": "corpus",
+  "terms": [
+    {
+      "latin": "sānō, sānāre, sānāvī, sānātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "heal, cure",
+      "evidence": [
+        "Cic. ND 3.70: <span lang=\"la\">quam (vomicam) sānāre medicī nōn potuerant</span> (Lewis &amp; Short)",
+        "Traupman 61, 63, 64"
+      ],
+      "comment": "Transitive: the doctor heals the patient or the wound."
+    },
+    {
+      "latin": "sānēscō, sānēscere",
+      "status": "alternative",
+      "period": "post-classical",
+      "gloss": "get well, heal up",
+      "grammar": "verb, third conjugation, intransitive",
+      "evidence": [
+        "Cels. 3.18 (Lewis &amp; Short)",
+        "Traupman 64"
+      ],
+      "comment": "Of the wound or the body healing by itself."
+    },
+    {
+      "latin": "sānābilis, sānābile",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "curable",
+      "evidence": [
+        "Ov. Pont. 2.2.59: <span lang=\"la\">vulnus</span> (Lewis &amp; Short)",
+        "Traupman 63"
+      ]
+    }
+  ],
+  "related": [
+    "recover",
+    "treatment",
+    "medicine-art"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/sano\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sano</a> · <a href=\"https://logeion.uchicago.edu/sanesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sanesco</a> · <a href=\"https://logeion.uchicago.edu/sanabilis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sanabilis</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 63, 64, checked against the searchable text of the book."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-12",
+    "by": "Claude"
+  }
+}

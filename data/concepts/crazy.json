@@ -10,7 +10,10 @@
     "go crazy",
     "you’re crazy",
     "nuts",
-    "be crazy about"
+    "be crazy about",
+    "are you quite all there?",
+    "are you out of your mind?",
+    "drive someone mad"
   ],
   "domain": "sermo",
   "terms": [
@@ -57,6 +60,27 @@
         "Traupman 298"
       ],
       "comment": "Of a crazed brain. To be crazy about someone is <span lang=\"la\">dēperīre</span> (Traupman 96: <span lang=\"la\">eam dēperit</span>)."
+    },
+    {
+      "latin": "Satin' sānus es?",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "are you quite all there? are you mad?",
+      "evidence": [
+        "Ter. Ad. 937",
+        "Traupman 92"
+      ],
+      "comment": "<span lang=\"la\">Satin'</span> is <span lang=\"la\">satisne</span> clipped: “are you sane enough?”"
+    },
+    {
+      "latin": "dēmentem facere (aliquem)",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "drive someone mad",
+      "evidence": [
+        "Traupman 97"
+      ],
+      "comment": "Traupman’s phrase, of classical words; not found as a phrase in Lewis &amp; Short or the loci."
     }
   ],
   "phrases": [
@@ -74,6 +98,11 @@
       "latin": "quidquid dēlīrant rēgēs, plectuntur Achīvī",
       "english": "whatever madness the kings commit, it is the Greeks who pay",
       "source": "Hor. Ep. 1.2.14"
+    },
+    {
+      "latin": "Age, dā veniam fīliō. — Satin' sānus es?",
+      "english": "Come on, forgive the boy. — Are you quite all there?",
+      "source": "Ter. Ad. 937"
     }
   ],
   "related": [
@@ -83,11 +112,13 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/insanus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: insanus</a> · <a href=\"https://logeion.uchicago.edu/demens\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: demens</a> · <a href=\"https://logeion.uchicago.edu/delirus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: delirus</a> · <a href=\"https://logeion.uchicago.edu/cerritus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cerritus</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 96, 150 and 298, checked against the searchable text of the book.",
-    "Quotations from the Latinitas loci collections (loci-horatius, loci-ranieri-eclogae), checked against the editions named there."
+    "Quotations from the Latinitas loci collections (loci-horatius, loci-ranieri-eclogae), checked against the editions named there.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 92, 97, checked against the searchable text and the page images of the book.",
+    "Quotations from the Latinitas loci collections (loci-terentius), checked against the editions named there."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

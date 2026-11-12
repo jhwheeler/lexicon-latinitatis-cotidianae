@@ -12,6 +12,18 @@
       "status": "recommended",
       "period": "classical",
       "gloss": "seek or ask"
+    },
+    {
+      "latin": "rogō, rogāre, rogāvī, rogātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "ask (a question, or for something)",
+      "grammar": "verb, first conjugation; aliquem aliquid rogāre, the person and the thing both in the accusative",
+      "evidence": [
+        "Plaut. Most. 5.1.70: <span lang=\"la\">aliud tē rogō</span> (Lewis &amp; Short)",
+        "Traupman 93"
+      ],
+      "comment": "Classically the thing asked stands in the accusative beside the person only when it is a neuter pronoun or adjective (<span lang=\"la\">hoc tē rogō</span>); otherwise <span lang=\"la\">rogāre aliquem dē aliquā rē</span> (Lewis &amp; Short). <span lang=\"la\">Quaerere ā (ex, dē) aliquō</span> is to ask someone, enquire of him."
     }
   ],
   "related": [
@@ -19,11 +31,50 @@
     "what-do-you-want"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/quaero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quaero</a>"
+    "<a href=\"https://logeion.uchicago.edu/quaero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quaero</a>",
+    "<a href=\"https://logeion.uchicago.edu/rogo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: rogo</a> · <a href=\"https://logeion.uchicago.edu/quaero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quaero</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 93, checked against the searchable text and the page images of the book.",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "ask a question",
+    "ask further questions",
+    "he asked me whether",
+    "I want to ask you this",
+    "ask someone for something",
+    "why do you ask me that?",
+    "that’s not what I’m asking"
+  ],
+  "phrases": [
+    {
+      "latin": "aliud tē rogō",
+      "english": "that’s not what I’m asking you",
+      "source": "Plaut. Most. 5.1.70 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "quaesīvit ā medicīs quemadmodum sē habēret",
+      "english": "he asked the doctors how he was",
+      "source": "Nep. Dion 2.4 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "dēsinant quīdam quaerere ultrā aut opīnārī",
+      "english": "let certain people stop asking further questions or guessing",
+      "source": "Suet. Caes. 66 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "Hoc tē rogāre volō.",
+      "english": "I want to ask you this.",
+      "source": "Traupman p. 93"
+    },
+    {
+      "latin": "Quid mē istud rogās?",
+      "english": "Why do you ask me that?",
+      "source": "Traupman p. 93"
+    }
+  ]
 }

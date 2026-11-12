@@ -9,19 +9,43 @@
       "status": "recommended",
       "period": "classical",
       "evidence": [
-        "Traupman 72"
+        "Traupman 72, 143"
       ]
+    },
+    {
+      "latin": "ostreārum vīvārium",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "an oyster bed",
+      "evidence": [
+        "Plin. NH 9.168: <span lang=\"la\">ostreārum vīvāria</span> (Lewis &amp; Short)"
+      ],
+      "comment": "An enclosure where oysters are kept: <span lang=\"la\">vīvārium</span> is any preserve for live creatures."
+    },
+    {
+      "latin": "ostreārium, ostreāriī n.",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "an oyster bed",
+      "evidence": [
+        "Traupman 143"
+      ],
+      "comment": "Not in Lewis &amp; Short."
     }
   ],
   "related": [
     "clam"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/vivarium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vivarium</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 72, checked against the searchable text of the book on 29 October 2026."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "oyster bed"
+  ]
 }

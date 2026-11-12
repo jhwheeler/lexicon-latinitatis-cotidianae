@@ -4,7 +4,11 @@
   "pos": "noun",
   "also": [
     "dove",
-    "pigeons"
+    "pigeons",
+    "pigeon coop",
+    "dovecote",
+    "wood pigeon",
+    "coo"
   ],
   "domain": "natura",
   "terms": [
@@ -17,6 +21,38 @@
         "Traupman 144",
         "Cic."
       ]
+    },
+    {
+      "latin": "columbārium, columbāriī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a dovecote, pigeon house",
+      "evidence": [
+        "Varr. RR 3.7.4 (Lewis &amp; Short)",
+        "Col. 8.8.3",
+        "Traupman 144"
+      ]
+    },
+    {
+      "latin": "palumbēs, palumbis m./f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "wood pigeon, ring-dove",
+      "evidence": [
+        "Traupman 142"
+      ],
+      "comment": "Lewis &amp; Short: also <span lang=\"la\">palumbis, palumbus, palumba</span>."
+    },
+    {
+      "latin": "gemō, gemere, gemuī, gemitum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "to coo (of doves)",
+      "evidence": [
+        "Verg. E. 1.58: <span lang=\"la\">turtur ab ulmō</span> (Lewis &amp; Short)",
+        "Traupman 142, 144"
+      ],
+      "comment": "Properly “sigh, groan”, said of the mournful cry of animals; of the turtle-dove in Vergil."
     }
   ],
   "phrases": [
@@ -27,13 +63,16 @@
     }
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/gemo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gemo</a>",
+    "<a href=\"https://logeion.uchicago.edu/palumbes\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: palumbes</a>",
+    "<a href=\"https://logeion.uchicago.edu/columbarius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: columbarius</a>",
     "<a href=\"https://logeion.uchicago.edu/columba\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: columba</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 144, checked against the searchable text of the book on 29 October 2026.",
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

@@ -20,25 +20,42 @@
       "latin": "bombilāre",
       "status": "avoid",
       "period": "modern",
-      "comment": "Traupman’s; not a Lewis &amp; Short headword."
+      "comment": "Traupman’s; not a Lewis &amp; Short headword.",
+      "evidence": [
+        "Traupman 141, 142, 143"
+      ]
     },
     {
       "latin": "bombītāre",
       "status": "avoid",
       "period": "late",
       "comment": "Lewis &amp; Short’s form, from the late <span lang=\"la\">Carmen dē Philomēlā</span>."
+    },
+    {
+      "latin": "murmurō, murmurāre, murmurāvī, murmurātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "to hum, murmur",
+      "evidence": [
+        "Traupman 141"
+      ],
+      "comment": "Of bees Traupman gives <span lang=\"la\">murmurāre</span>, hum, beside <span lang=\"la\">bombilāre</span>, buzz; Lewis &amp; Short: “to murmur, mutter; to rustle, rumble, roar”."
     }
   ],
   "related": [
     "bee"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/murmuro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: murmuro</a>",
     "<a href=\"https://logeion.org/bombus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: bombus</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): pp. 141–145."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "hum"
+  ]
 }

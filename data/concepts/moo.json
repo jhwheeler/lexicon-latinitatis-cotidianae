@@ -3,7 +3,10 @@
   "english": "moo",
   "pos": "verb",
   "also": [
-    "low"
+    "low",
+    "bellow",
+    "low (of cattle)",
+    "bellow (of an ox)"
   ],
   "domain": "natura",
   "terms": [
@@ -12,9 +15,19 @@
       "status": "recommended",
       "period": "classical",
       "evidence": [
-        "Traupman 142, 298",
+        "Traupman 142, 298, 141",
         "Liv. 1.7: <span lang=\"la\">cum āctae bovēs mūgīssent</span> (as cited by L&amp;S)"
       ]
+    },
+    {
+      "latin": "boō, boāre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "to bellow, roar (of an ox)",
+      "evidence": [
+        "Traupman 143"
+      ],
+      "comment": "Lewis &amp; Short: early and rare (Plautus, Varro on Ennius), from the root of Greek <span lang=\"la\">boāō</span>, cry aloud."
     }
   ],
   "phrases": [
@@ -28,6 +41,7 @@
     "cow"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/boo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: boo</a>",
     "<a href=\"https://logeion.org/mugio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mugio</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): pp. 142, 298.",
     "The example sentence marked “composed” is ours."
@@ -37,7 +51,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

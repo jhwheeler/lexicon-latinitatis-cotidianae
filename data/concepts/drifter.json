@@ -5,7 +5,9 @@
   "also": [
     "vagabond",
     "tramp",
-    "wanderer"
+    "wanderer",
+    "vagrant",
+    "hobo"
   ],
   "domain": "verba",
   "terms": [
@@ -21,25 +23,40 @@
     {
       "latin": "larifuga, larifugae m.",
       "status": "alternative",
-      "period": "post-classical",
+      "period": "classical",
       "gloss": "vagabond, drifter",
       "register": "vōx sermōnis cotīdiānī: Petr.",
       "evidence": [
         "Petr. 57.3: <span lang=\"la\">larifuga nesciō quis</span> (Lewis &amp; Short)",
-        "Traupman 307"
+        "Traupman 307",
+        "Traupman 397"
       ],
-      "comment": "One who has fled his home (<span lang=\"la\">lār</span>); Lewis &amp; Short cites it only from Petronius."
+      "comment": "One who has fled his home (lār); a word of Petronius’s freedmen, and Lewis &amp; Short cites it only from him."
+    },
+    {
+      "latin": "errō, errōnis m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a wanderer, vagrant",
+      "evidence": [
+        "Tib. 2.6.6 (Lewis &amp; Short)",
+        "Ov. H. 15.53 (Lewis &amp; Short)"
+      ],
+      "comment": "Used especially of runaway or roaming slaves (Plin. Ep. 2.10.5)."
     }
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/vagus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vagus</a>",
     "<a href=\"https://logeion.uchicago.edu/larifuga\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: larifuga</a>",
     "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 307."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 307.",
+    "<a href=\"https://logeion.uchicago.edu/erro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: erro</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 397."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "related": []
 }

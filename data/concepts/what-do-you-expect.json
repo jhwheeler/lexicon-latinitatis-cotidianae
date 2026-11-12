@@ -10,22 +10,33 @@
     {
       "latin": "Quid vīs fierī?",
       "status": "recommended",
-      "period": "modern",
+      "period": "classical",
       "gloss": "what do you expect?",
       "evidence": [
+        "Plaut. Most. 41: <span lang=\"la\">quid vīs fierī? nōn omnēs possunt olēre unguenta exōtica</span>",
+        "Plaut. Aul. 741",
+        "Plaut. Amph. 702",
         "Traupman 97",
         "Traupman 311"
       ],
-      "comment": "Traupman’s phrase, “what do you want to happen?”; not found as a phrase in Lewis &amp; Short or the Latinitas loci collections, so Traupman is the only evidence."
+      "comment": "Literally “what do you want to happen?”: comedy’s shrug at what cannot be helped."
     }
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/fio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fio</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 97, checked against the searchable text and the page images of the book.: p. 311."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 97, 311, checked against the searchable text of the book.",
+    "Plautus, <em>Mostellaria</em> 41, <em>Aulularia</em> 741 and <em>Amphitruo</em> 702, checked against the Perseus Latin texts."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "Quid vīs fierī? factum est illud: fierī īnfectum nōn potest.",
+      "english": "What do you expect? It’s done: it can’t be undone.",
+      "source": "Plaut. Aul. 741"
+    }
+  ]
 }

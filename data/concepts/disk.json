@@ -13,7 +13,8 @@
     "DVD",
     "disk drive",
     "CD-ROM",
-    "diskette"
+    "diskette",
+    "CD-ROM drive"
   ],
   "domain": "computatra",
   "terms": [
@@ -46,7 +47,8 @@
       "evidence": [
         "Traupman 260, 294",
         "Traupman 52",
-        "Traupman 260"
+        "Traupman 260",
+        "Traupman 288"
       ],
       "notes": [
         "compactus"
@@ -71,6 +73,15 @@
         "Andresian p. 15",
         "Traupman 308: <span lang=\"la\">digitālis disculus</span>"
       ]
+    },
+    {
+      "latin": "orbiculus opticus",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "CD-ROM",
+      "evidence": [
+        "Traupman 288"
+      ]
     }
   ],
   "notes": {
@@ -89,9 +100,9 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/discus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: discus</a> · <a href=\"https://logeion.uchicago.edu/compingo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: compingo</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 260 (<span lang=\"la\">discus, disculus, compactus discus</span>), 261 (<span lang=\"la\">dūra statiō</span>), 294, 305, 316, 326. <a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. CD; p. 52.",
     "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 15.",
-    "<a href=\"https://logeion.uchicago.edu/receptaculum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: receptaculum</a>"
+    "<a href=\"https://logeion.uchicago.edu/receptaculum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: receptaculum</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 260 (<span lang=\"la\">discus, disculus, compactus discus</span>), 261 (<span lang=\"la\">dūra statiō</span>), 294, 305, 316, 326. <a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. CD; p. 52; p. 288."
   ],
   "review": {
     "status": "draft",
@@ -113,6 +124,11 @@
       "latin": "discōrum receptāculum (īnstrūmentum discīs legendīs)",
       "english": "disk drive",
       "source": "Traupman 260"
+    },
+    {
+      "latin": "īnstrūmentum orbiculīs legendīs",
+      "english": "a CD-ROM drive",
+      "source": "Traupman 288"
     }
   ]
 }

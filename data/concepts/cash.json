@@ -4,7 +4,8 @@
   "pos": "noun",
   "also": [
     "ready money",
-    "I don’t have the cash"
+    "I don’t have the cash",
+    "pay in cash"
   ],
   "also_under": [
     "pecunia"
@@ -19,7 +20,8 @@
       "evidence": [
         "Traupman 130",
         "Plaut. Most. 2.1.14, as cited by L&amp;S",
-        "Traupman 213: <span lang=\"la\">Praesentāriam pecūniam nōn habeō</span>, I don’t have the cash"
+        "Traupman 213: <span lang=\"la\">Praesentāriam pecūniam nōn habeō</span>, I don’t have the cash",
+        "Traupman 287"
       ]
     },
     {
@@ -29,6 +31,17 @@
       "evidence": [
         "Cic."
       ]
+    },
+    {
+      "latin": "numerātum, numerātī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "ready money, cash",
+      "evidence": [
+        "Cic. Fam. 5.20.9: <span lang=\"la\">nam numerātum, sī cuperem, nōn habērem</span> (Lewis &amp; Short s.v. <span lang=\"la\">numerō</span>)",
+        "Traupman 287"
+      ],
+      "comment": "<span lang=\"la\">In numerātō</span>, in ready money."
     }
   ],
   "related": [
@@ -40,7 +53,8 @@
   ],
   "sources": [
     "<a href=\"https://logeion.org/praesentarius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praesentarius</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 130."
+    "<a href=\"https://logeion.uchicago.edu/numero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: numero</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers): p. 130; p. 287."
   ],
   "replaces": [
     "entry-430"
@@ -49,5 +63,12 @@
     "status": "draft",
     "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "decem dollarōs praesentāriōs dēnumerāre prō (+ abl.)",
+      "english": "to pay ten dollars in cash for",
+      "source": "Traupman 287"
+    }
+  ]
 }

@@ -6,7 +6,10 @@
     "how I envy you",
     "I envy you",
     "be envious of",
-    "begrudge"
+    "begrudge",
+    "jealous",
+    "jealousy",
+    "envious"
   ],
   "domain": "sermo",
   "terms": [
@@ -18,9 +21,22 @@
       "grammar": "verb, second conjugation, with the dative of the person",
       "evidence": [
         "Cic. Flacc. 70: tibi invideō, quod ūnīs vestīmentīs tam diū lautus es (Lewis &amp; Short)",
-        "Traupman 134"
+        "Traupman 134",
+        "Cic. Fl. 70: <span lang=\"la\">in quā tibi invideō</span> (Lewis &amp; Short)",
+        "Verg. Ecl. 1.11: <span lang=\"la\">nōn equidem invideō; mīror magis</span>",
+        "Traupman 22: <span lang=\"la\">Tibi quidem invideō.</span>"
       ],
       "comment": "Latin envies to someone: <span lang=\"la\">tibi invideō</span>, I envy you; what one envies goes in a <span lang=\"la\">quod</span>-clause, or in the ablative with <span lang=\"la\">in</span>."
+    },
+    {
+      "latin": "invidia, invidiae f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "envy, jealousy (the feeling)",
+      "evidence": [
+        "Caes. BG 1.7: <span lang=\"la\">invidia atque obtrectātiō laudis suae</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Both the envy one feels and the ill will one suffers (Cic. Tusc. 4.16, Lewis &amp; Short)."
     }
   ],
   "phrases": [
@@ -28,11 +44,21 @@
       "latin": "Quam tibi invideō!",
       "english": "How I envy you!",
       "source": "Traupman 134"
+    },
+    {
+      "latin": "nōn equidem invideō; mīror magis",
+      "english": "I don’t envy you; rather, I wonder",
+      "source": "Verg. Ecl. 1.11"
     }
   ],
-  "related": [],
+  "related": [
+    "rather"
+  ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/invideo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: invideo</a>"
+    "<a href=\"https://logeion.uchicago.edu/invideo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: invideo</a>",
+    "<a href=\"https://logeion.uchicago.edu/invideo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: invideo</a> · <a href=\"https://logeion.uchicago.edu/invidia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: invidia</a>",
+    "Quotation from the Latinitas loci collection (loci-vergilius-eclogae), checked against the edition named there.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 22, checked against the searchable text of the book."
   ],
   "review": {
     "status": "draft",

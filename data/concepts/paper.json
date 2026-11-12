@@ -3,7 +3,9 @@
   "english": "paper",
   "pos": "noun",
   "also": [
-    "sheet of paper"
+    "sheet of paper",
+    "paper (adjective)",
+    "made of paper"
   ],
   "domain": "sermo",
   "terms": [
@@ -23,6 +25,16 @@
       "evidence": [
         "Cic. Att. 1.20.7"
       ]
+    },
+    {
+      "latin": "chartāceus, chartācea, chartāceum",
+      "status": "alternative",
+      "period": "post-classical",
+      "gloss": "made of paper, paper (adjective)",
+      "evidence": [
+        "Dig. 32.50: <span lang=\"la\">cōdicēs</span> (Lewis &amp; Short)",
+        "Traupman 356"
+      ]
     }
   ],
   "phrases": [
@@ -37,13 +49,13 @@
     "paint"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/charta\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: charta</a> · <a href=\"https://logeion.uchicago.edu/scida\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: scida</a>",
+    "<a href=\"https://logeion.uchicago.edu/charta\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: charta</a> · <a href=\"https://logeion.uchicago.edu/scida\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: scida</a> · <a href=\"https://logeion.uchicago.edu/chartaceus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: chartaceus</a>",
     "The example sentence marked “composed” is ours.",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 356."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

@@ -6,7 +6,9 @@
     "what sort of",
     "what type of",
     "what … like",
-    "what was it like"
+    "what was it like",
+    "what sort of man",
+    "what sort of person"
   ],
   "domain": "verba",
   "terms": [
@@ -31,6 +33,17 @@
       "evidence": [
         "Cic. Fam. 15.20.3: <span lang=\"la\">cupiō cognōscere iter tuum cujus modī sit</span> (Lewis &amp; Short)"
       ]
+    },
+    {
+      "latin": "Quid hominis est?",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "what sort of man is he?",
+      "grammar": "quid with a partitive genitive",
+      "evidence": [
+        "Cic. Verr. 2.2.134: <span lang=\"la\">quid hominis sit</span>, what sort of a man he is (Lewis &amp; Short s.v. <span lang=\"la\">quis</span>)"
+      ],
+      "comment": "Literally “what of a man”: said of a person’s character, often in surprise. So <span lang=\"la\">Quid negōtī est?</span>, what’s the matter?"
     }
   ],
   "phrases": [
@@ -58,7 +71,8 @@
   "related": [
     "kind",
     "such",
-    "what"
+    "what",
+    "a-man-of"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/qualis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: qualis</a> · <a href=\"https://logeion.uchicago.edu/cujusmodi\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cujusmodi</a>",
@@ -68,7 +82,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   }
 }

@@ -8,17 +8,27 @@
   "domain": "sermo",
   "terms": [
     {
-      "latin": "Em, ultimus Rōmānōrum!",
+      "latin": "Rōmānōrum ultimus",
       "status": "recommended",
+      "period": "classical",
+      "evidence": [
+        "Tac. Ann. 4.34: <span lang=\"la\">C. Cassium Rōmānōrum ultimum dīxisset</span>"
+      ],
+      "comment": "The historian Cremutius Cordus was put on trial for having praised Brutus and called Cassius “the last of the Romans”."
+    },
+    {
+      "latin": "Em, ultimus Rōmānōrum!",
+      "status": "alternative",
       "period": "modern",
       "evidence": [
         "Traupman 259"
       ],
-      "comment": "We have found no ancient source for it in Lewis &amp; Short or the loci collections."
+      "comment": "Traupman’s exclamation, with <span lang=\"la\">em</span>, “there!”, and the words in the other order."
     }
   ],
   "sources": [
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, cited by printed page; each phrase checked against the searchable text of the book."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, cited by printed page; each phrase checked against the searchable text of the book.",
+    "Tacitus, <em>Annals</em> 4.34, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (12 November 2026)."
   ],
   "review": {
     "status": "draft",

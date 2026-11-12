@@ -8,17 +8,27 @@
   "domain": "sermo",
   "terms": [
     {
-      "latin": "Est quaedam voluptās flēre.",
+      "latin": "Est quaedam flēre voluptās.",
       "status": "recommended",
+      "period": "classical",
+      "evidence": [
+        "Ov. Tr. 4.3.37: <span lang=\"la\">aequē meōs cāsūs: est quaedam flēre voluptās</span>"
+      ],
+      "comment": "Literally “there is a certain pleasure in weeping”: Ovid from exile, to his wife."
+    },
+    {
+      "latin": "Est quaedam voluptās flēre.",
+      "status": "alternative",
       "period": "modern",
       "evidence": [
         "Traupman 254"
       ],
-      "comment": "We have found no ancient source for it in Lewis &amp; Short or the loci collections."
+      "comment": "Traupman’s prose order of Ovid’s half-line."
     }
   ],
   "sources": [
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, cited by printed page; each phrase checked against the searchable text of the book."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, cited by printed page; each phrase checked against the searchable text of the book.",
+    "Ovid, <em>Tristia</em> 4.3.37, checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (12 November 2026)."
   ],
   "review": {
     "status": "draft",

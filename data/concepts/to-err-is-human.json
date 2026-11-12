@@ -8,20 +8,30 @@
   "domain": "sermo",
   "terms": [
     {
-      "latin": "Errāre hūmānum est, ignōscere dīvīnum.",
+      "latin": "Cujusvīs hominis est errāre.",
       "status": "recommended",
+      "period": "classical",
+      "evidence": [
+        "Cic. Phil. 12.5: <span lang=\"la\">cujusvīs hominis est errāre; nūllīus nisi īnsipientis in errōre persevērāre</span>"
+      ],
+      "comment": "Literally “it is any man’s part to err”; Cicero goes on, “but no one’s but a fool’s to persist in error”."
+    },
+    {
+      "latin": "Errāre hūmānum est, ignōscere dīvīnum.",
+      "status": "alternative",
       "period": "modern",
       "evidence": [
         "Traupman 255"
       ],
-      "comment": "We have found no ancient source for it in Lewis &amp; Short or the loci collections."
+      "comment": "The modern form of the saying. We have found no ancient source for it; its second half, <span lang=\"la\">ignōscere dīvīnum</span>, answers the English."
     }
   ],
   "related": [
     "forgive"
   ],
   "sources": [
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, cited by printed page; each phrase checked against the searchable text of the book."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, cited by printed page; each phrase checked against the searchable text of the book.",
+    "Cicero, <em>Philippics</em> 12.5, checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (12 November 2026)."
   ],
   "review": {
     "status": "draft",

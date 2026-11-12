@@ -5,17 +5,27 @@
   "domain": "sermo",
   "terms": [
     {
-      "latin": "Ubi est thēsaurus tuus, ibi est et cor tuum.",
+      "latin": "Ubi enim est thēsaurus tuus, ibi est et cor tuum.",
       "status": "recommended",
-      "period": "modern",
+      "period": "late",
+      "evidence": [
+        "Vulg. Mt. 6.21"
+      ],
+      "comment": "Christ’s words in the Clementine Vulgate; some editions read <span lang=\"la\">ibi erit et cor tuum</span>."
+    },
+    {
+      "latin": "Ubi est thēsaurus tuus, ibi est et cor tuum.",
+      "status": "alternative",
+      "period": "late",
       "evidence": [
         "Traupman 259"
       ],
-      "comment": "We have found no ancient source for it in Lewis &amp; Short or the loci collections."
+      "comment": "The verse without <span lang=\"la\">enim</span>, as it is quoted on its own."
     }
   ],
   "sources": [
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, cited by printed page; each phrase checked against the searchable text of the book."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, cited by printed page; each phrase checked against the searchable text of the book.",
+    "Vulgate verses checked against the Clementine text at Bible Study Tools and the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (12 November 2026)."
   ],
   "review": {
     "status": "draft",

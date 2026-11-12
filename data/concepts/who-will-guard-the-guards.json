@@ -9,17 +9,27 @@
   "domain": "sermo",
   "terms": [
     {
-      "latin": "Quis custōdēs custōdiet?",
+      "latin": "Quis custōdiet ipsōs custōdēs?",
       "status": "recommended",
+      "period": "classical",
+      "evidence": [
+        "Juv. 6.347–348: <span lang=\"la\">pōne seram, cohibē. sed quis custōdiet ipsōs custōdēs?</span>"
+      ],
+      "comment": "Juvenal, of a husband who sets guards on his wife: who will guard the guards themselves? Some editors reject the lines there; they come again in a passage found in one manuscript, with <span lang=\"la\">custōdiat</span>."
+    },
+    {
+      "latin": "Quis custōdēs custōdiet?",
+      "status": "alternative",
       "period": "modern",
       "evidence": [
         "Traupman 256"
       ],
-      "comment": "We have found no ancient source for it in Lewis &amp; Short or the loci collections."
+      "comment": "Traupman’s shortening of Juvenal’s question, without <span lang=\"la\">ipsōs</span>."
     }
   ],
   "sources": [
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, cited by printed page; each phrase checked against the searchable text of the book."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, cited by printed page; each phrase checked against the searchable text of the book.",
+    "Juvenal 6.347–348, checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (12 November 2026)."
   ],
   "review": {
     "status": "draft",

@@ -8,17 +8,37 @@
   "domain": "sermo",
   "terms": [
     {
-      "latin": "Equō currentī nōn opus calcāribus.",
+      "latin": "currentem incitāre",
       "status": "recommended",
+      "period": "classical",
+      "evidence": [
+        "Cic. Phil. 3.19: <span lang=\"la\">sed tamen currentem, ut dīcitur, incitāvī</span> (Lewis &amp; Short s.v. <span lang=\"la\">incitō</span>)"
+      ],
+      "comment": "Literally “to urge on one who is already running”, of a person who needs no urging. Cicero marks it as a saying with <span lang=\"la\">ut dīcitur</span>; so too <span lang=\"la\">currentem hortārī</span> (Cic. Att. 5.9.1, Lewis &amp; Short s.v. <span lang=\"la\">currō</span>)."
+    },
+    {
+      "latin": "currentī calcāria addere",
+      "status": "alternative",
+      "period": "classical",
+      "evidence": [
+        "Plin. Ep. 1.8.1: <span lang=\"la\">Addidistī ergō calcāria sponte currentī</span>"
+      ],
+      "comment": "Literally “to put spurs to one who is running”."
+    },
+    {
+      "latin": "Equō currentī nōn opus calcāribus.",
+      "status": "alternative",
       "period": "modern",
       "evidence": [
         "Traupman 256"
       ],
-      "comment": "We have found no ancient source for it in Lewis &amp; Short or the loci collections."
+      "comment": "Literally “a running horse needs no spurs”. We have found no ancient source for this sentence; it is made from the classical saying."
     }
   ],
   "sources": [
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, cited by printed page; each phrase checked against the searchable text of the book."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, cited by printed page; each phrase checked against the searchable text of the book.",
+    "Cicero, <em>Philippics</em> 3.19, and Pliny, <em>Epistulae</em> 1.8.1, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (12 November 2026).",
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {
     "status": "draft",

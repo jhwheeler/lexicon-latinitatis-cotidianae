@@ -8,17 +8,29 @@
   "domain": "sermo",
   "terms": [
     {
-      "latin": "Cāsus excelsī multō facilius nocet.",
+      "latin": "Excelsīs multō facilius cāsus nocet.",
       "status": "recommended",
+      "period": "classical",
+      "evidence": [
+        "Publil. Sent. E 15",
+        "Lewis &amp; Short s.v. <span lang=\"la\">excelsus</span>"
+      ],
+      "comment": "Literally “a fall hurts those on high far more easily”: a line of Publilius Syrus."
+    },
+    {
+      "latin": "Cāsus excelsī multō facilius nocet.",
+      "status": "alternative",
       "period": "modern",
       "evidence": [
         "Traupman 254"
       ],
-      "comment": "Literally “a fall from on high does harm far more easily”. We have found no ancient source for it in Lewis &amp; Short or the loci collections."
+      "comment": "Traupman’s rewording of Publilius’s line, with the singular <span lang=\"la\">excelsī</span>, “a fall from on high”."
     }
   ],
   "sources": [
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, cited by printed page; each phrase checked against the searchable text of the book."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, cited by printed page; each phrase checked against the searchable text of the book.",
+    "Publilius Syrus, <em>Sententiae</em> E 15, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (12 November 2026).",
+    "Publilius is cited as the loci collection numbers him, by position under each initial letter in the Latin Library text."
   ],
   "review": {
     "status": "draft",

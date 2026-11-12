@@ -4,7 +4,9 @@
   "pos": "verb",
   "also": [
     "gambling",
-    "play dice"
+    "play dice",
+    "gamble away",
+    "gambler"
   ],
   "domain": "ludi",
   "terms": [
@@ -15,22 +17,41 @@
       "gloss": "play at dice, gamble",
       "evidence": [
         "Cic. Phil. 2.56: <span lang=\"la\">in forō āleā lūdere</span> (Lewis &amp; Short)",
-        "Traupman 52"
+        "Traupman 52",
+        "Traupman 320"
       ],
       "comment": "<span lang=\"la\">ālea</span> is the game of dice; Lewis &amp; Short has <span lang=\"la\">lūdere āleā</span> or <span lang=\"la\">āleam</span>."
+    },
+    {
+      "latin": "āleātor, āleātōris m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "gambler (feminine āleātrīx, Traupman)",
+      "evidence": [
+        "Cic. Cat. 2.23 (Lewis &amp; Short)",
+        "Traupman 320"
+      ]
     }
   ],
   "related": [
     "risk"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/aleator\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aleator</a>",
     "<a href=\"https://logeion.uchicago.edu/alea\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: alea</a>",
     "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 52."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 52; p. 320."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "in āleā perdere",
+      "english": "to gamble away",
+      "source": "Traupman 320"
+    }
+  ]
 }

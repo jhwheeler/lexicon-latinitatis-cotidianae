@@ -5,7 +5,11 @@
   "pos": "verb",
   "also": [
     "rip",
-    "torn"
+    "torn",
+    "tear down",
+    "tear to pieces",
+    "tear up",
+    "tear along"
   ],
   "domain": "vestitus",
   "terms": [
@@ -25,6 +29,43 @@
       "evidence": [
         "Traupman 391"
       ]
+    },
+    {
+      "latin": "laniō, laniāre, laniāvī, laniātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "tear to pieces, mangle",
+      "evidence": [
+        "Traupman 391"
+      ]
+    },
+    {
+      "latin": "dīlacerō, dīlacerāre, dīlacerāvī, dīlacerātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "tear apart, tear to bits",
+      "register": "vōx plērumque poētica et post-Augustea: Catull., Ov.",
+      "evidence": [
+        "Traupman 391"
+      ]
+    },
+    {
+      "latin": "dīscindō, dīscindere, dīscidī, dīscissum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "tear up, tear apart (paper, clothes)",
+      "evidence": [
+        "Traupman 391"
+      ]
+    },
+    {
+      "latin": "dīruō, dīruere, dīruī, dīrutum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "tear down, demolish (a building)",
+      "evidence": [
+        "Traupman 391"
+      ]
     }
   ],
   "related": [
@@ -32,11 +73,23 @@
   ],
   "sources": [
     "<a href=\"https://logeion.org/scindo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: scindo</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), p. 391."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, supplied PDF (printed page numbers), p. 391.",
+    "<a href=\"https://logeion.uchicago.edu/lanio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lanio</a>",
+    "<a href=\"https://logeion.uchicago.edu/dilacero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dilacero</a>",
+    "<a href=\"https://logeion.uchicago.edu/discindo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: discindo</a>",
+    "<a href=\"https://logeion.uchicago.edu/diruo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: diruo</a>",
+    "<a href=\"https://logeion.uchicago.edu/voro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: voro</a>"
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "viam vorāre",
+      "english": "to tear along the road",
+      "source": "Traupman 391"
+    }
+  ]
 }

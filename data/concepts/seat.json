@@ -11,6 +11,18 @@
       "evidence": [
         "Traupman 212, 218"
       ]
+    },
+    {
+      "latin": "sedīle, sedīlis n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a seat on a bench or a chair",
+      "register": "vōx plērumque poētica et post-Augustea: Verg., Ov., Sen.",
+      "evidence": [
+        "Verg. A. 8.176 (Lewis &amp; Short)",
+        "Traupman 375"
+      ],
+      "comment": "Lewis &amp; Short: mostly poetic and post-Augustan prose; not in Cicero."
     }
   ],
   "related": [
@@ -25,7 +37,8 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/sedes\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sedes</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 212, 218, each phrase checked against the searchable text of the book.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 291."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 291.",
+    "<a href=\"https://logeion.uchicago.edu/sedile\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sedile</a>"
   ],
   "replaces": [
     "entry-218",
@@ -41,7 +54,10 @@
     "seat near the exit",
     "first-class seat",
     "second-class seat",
-    "tourist-class seat"
+    "tourist-class seat",
+    "back seat",
+    "front seat",
+    "reserved seat"
   ],
   "phrases": [
     {
@@ -68,6 +84,21 @@
       "latin": "sēdēs turistica",
       "english": "a tourist-class seat",
       "source": "Traupman 291"
+    },
+    {
+      "latin": "sēdēs posterior",
+      "english": "the back seat",
+      "source": "Traupman 375"
+    },
+    {
+      "latin": "sēdēs anterior",
+      "english": "the front seat",
+      "source": "Traupman 375"
+    },
+    {
+      "latin": "sēdēs reservāta",
+      "english": "a reserved seat",
+      "source": "Traupman 375"
     }
   ]
 }

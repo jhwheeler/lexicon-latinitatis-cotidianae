@@ -21,6 +21,15 @@
         "Traupman 124, 125"
       ],
       "comment": "The commonest word for a room (Traupman 125); where “bedroom” must be clear, <span lang=\"la\">cubiculum dormītōrium</span> (see bedroom)."
+    },
+    {
+      "latin": "cella, cellae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a small room",
+      "evidence": [
+        "Traupman 372"
+      ]
     }
   ],
   "related": [
@@ -28,15 +37,25 @@
     "bedroom"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/conclave\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: conclave</a>",
-    "<a href=\"https://logeion.uchicago.edu/cubiculum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cubiculum</a>"
+    "<a href=\"https://logeion.uchicago.edu/conclave\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: conclave</a> · <a href=\"https://logeion.uchicago.edu/cella\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cella</a>",
+    "<a href=\"https://logeion.uchicago.edu/cubiculum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cubiculum</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 372."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-12",
     "by": "Claude"
   },
   "also": [
-    "chamber"
+    "chamber",
+    "roommate",
+    "small room"
+  ],
+  "phrases": [
+    {
+      "latin": "socius (socia) cubiculāris",
+      "english": "a roommate",
+      "source": "Traupman 372"
+    }
   ]
 }

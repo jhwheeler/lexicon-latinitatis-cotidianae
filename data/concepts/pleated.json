@@ -5,23 +5,41 @@
   "domain": "vestitus",
   "terms": [
     {
-      "latin": "undulātus, undulāta, undulātum",
+      "latin": "rūgātus, rūgāta, rūgātum",
       "status": "recommended",
-      "period": "classical",
+      "period": "renaissance",
+      "gloss": "pleated, ruffled (of a garment)",
+      "evidence": [
+        "M-O s.v. pleated, ruffled: Vives, <span lang=\"la\">collāre rūgātum</span>, a pleated collar",
+        "Plin. NH 9.102: <span lang=\"la\">testae rūgātae</span>, ridged shells (Lewis &amp; Short s.v. <span lang=\"la\">rūgō</span>)"
+      ],
+      "comment": "The participle of <span lang=\"la\">rūgō</span>, crease: Plautus says of a cloak <span lang=\"la\">vidē palliolum ut rūgat</span>, see how it creases (Cas. 2.3.30, Lewis &amp; Short), and the folds of a garment are <span lang=\"la\">rūgae</span> (Plin. NH 35.56, Lewis &amp; Short s.v. <span lang=\"la\">rūga</span>). We have found no classical instance of <span lang=\"la\">rūgātus</span> of a garment; Vives uses it so."
+    },
+    {
+      "latin": "undulātus, undulāta, undulātum",
+      "status": "avoid",
+      "period": "modern",
       "gloss": "wavy, with a wave-like pattern",
       "evidence": [
         "Varr. ap. Non. 189.26: togae undulātae (Lewis &amp; Short)",
         "Traupman 117"
       ],
-      "comment": "Lewis &amp; Short has “diversified as with waves, like watered stuffs”: a pattern rather than folds. Traupman uses it for pleated."
+      "comment": "Traupman’s word for pleated, but Lewis &amp; Short has only “diversified as with waves, like watered stuffs”: Varro’s <span lang=\"la\">togae undulātae</span> had a wavy pattern, not folds."
     }
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/undulatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: undulatus</a>"
+    "<a href=\"https://logeion.uchicago.edu/rugo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: rugo</a> · <a href=\"https://logeion.uchicago.edu/ruga\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ruga</a>",
+    "<a href=\"https://logeion.uchicago.edu/undulatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: undulatus</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.vv. pleated, ruffled; pleat, ruffle.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em> (printed page numbers): p. 117."
   ],
   "review": {
     "status": "draft",
     "date": "2026-11-12",
     "by": "Claude"
-  }
+  },
+  "also": [
+    "pleat",
+    "pleats"
+  ]
 }

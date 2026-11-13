@@ -5,14 +5,8 @@
   "domain": "vectura",
   "terms": [
     {
-      "latin": "sarcina manuālis",
-      "status": "recommended",
-      "period": "ours",
-      "comment": "Traupman 216 prints <strong lang=\"la\">sarcinulae manuālēs</strong>."
-    },
-    {
       "latin": "sarcinulae manuālēs",
-      "status": "alternative",
+      "status": "recommended",
       "period": "modern",
       "gloss": "hand luggage",
       "evidence": [
@@ -27,7 +21,8 @@
   ],
   "sources": [
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 213–217, 325.",
-    "<a href=\"https://logeion.uchicago.edu/sarcinula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sarcinula</a>"
+    "<a href=\"https://logeion.uchicago.edu/sarcinula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sarcinula</a>",
+    "The example sentence marked “composed” is ours."
   ],
   "review": {
     "status": "draft",
@@ -44,6 +39,11 @@
       "latin": "Licetne hanc sarcinulam manuālem mēcum in āëroplanum portāre?",
       "english": "May I take this hand luggage with me on the plane?",
       "source": "Traupman 213"
+    },
+    {
+      "latin": "sarcina manuālis",
+      "english": "a piece of hand luggage",
+      "source": "composed"
     }
   ]
 }

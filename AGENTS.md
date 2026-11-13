@@ -57,6 +57,18 @@ Jack's requirements (13 November 2026): the search must feel instant, with no ba
 
 Jack's request (13 November 2026): the category lists and both A–Z indexes have a filter, All / Words / Phrases, so the sayings can be browsed by themselves and the words are not buried under them. A record is a phrase when its `pos` is `phrase` (or includes it); give every saying or sentence that part of speech. The choice is kept on the device and carries from one list to the next. The Latin index lists the Latin of every phrase record beside the words, so phrases can be found from their Latin. The front page links to the A–Z indexes above the categories.
 
+## Coinages only where needed
+
+Jack's principle (13 November 2026): a word or phrase we came up with (a term whose `period` is `ours`) belongs in the lexicon only when it is needed: when no author of any period has a word for the concept, or a circumlocution has a really good reason. Otherwise take the word from earlier authors; they need not be classical, though the closer to Cicero the more weight. The modern reference works count as sources (Traupman's *Conversational Latin*, Morgan–Owens, Levi–Bini, Andresian).
+
+- Before marking anything `ours`, search the reference works and Lewis & Short (`scripts/lookup.py`). A coinage that says what an attested word says is not entered.
+- An ordinary combination of attested words (*crēta colōrāta*, *pīsa viridia*, *grūs lūsōria*) is not a coinage and not a term: put it among the record's `phrases` as a composed example.
+- A coinage that is needed says why in its `comment`: what was searched and found wanting.
+- Household words Jack has ruled on stay (pyjamas are *vestis nocturna*; the playground is *lūsōrium*). Never delete or replace a word a comment calls the household word or our family's own word; ask.
+- The builder refuses a record with a `recommended` term of period `ours` beside a `recommended` term of another period. It does not yet require a reason on every `ours` term: the pass of 13 November 2026 covered the coinages standing beside an attested term (`notes/coinages-2026-11-13.md`), and those in records with no attested term are still to do.
+
+See "Coinages only where needed" in `docs/records.md`.
+
 ## Sources are citations
 
 Jack's decision (13 November 2026): a line under Sources is a citation as a book prints one, not an account of how we read the book, and a work is cited once per record with all its pages. See "Sources are citations" in `docs/records.md`; the builder enforces it.

@@ -448,6 +448,30 @@ class BuildTests(unittest.TestCase):
         self.assertIn('<em>Conversational Latin for Oral Proficiency</em>, pp. 211, 219, 294.</p>',
                       builder.build_site(self.root)['c/perhaps.html'])
 
+    def test_a_coinage_is_not_recommended_beside_an_attested_word(self):
+        # Coinages only where needed (Jack, 13 November 2026).
+        original = self.record('perhaps')
+        self.assertEqual([(t['status'], t['period']) for t in original['terms'][:2]],
+                         [('recommended', 'classical'), ('alternative', 'classical')])
+        record = copy.deepcopy(original)
+        record['terms'][1].update(status='recommended', period='ours')
+        self.save_record(record)
+        with self.assertRaisesRegex(ValueError, 'concept perhaps recommends our own “forsitan” beside the attested “fortasse”'):
+            builder.build_site(self.root)
+        # Our own word as an alternative, or as the one answer where no attested word is recommended, is allowed.
+        record['terms'][1].update(status='alternative')
+        self.save_record(record)
+        builder.build_site(self.root)
+        record = copy.deepcopy(original)
+        record['terms'][0].update(period='ours')
+        self.save_record(record)
+        self.assertIn('<span class="ours"', builder.build_site(self.root)['c/perhaps.html'])
+        # No record of the lexicon breaks the rule.
+        for path in sorted((ROOT / 'data/concepts').glob('*.json')):
+            terms = json.loads(path.read_text(encoding='utf-8'))['terms']
+            periods = {t['period'] == 'ours' for t in terms if t['status'] == 'recommended'}
+            self.assertNotEqual(periods, {True, False}, path.name)
+
     def test_the_site_installs_as_an_app_and_is_kept_on_the_device(self):
         outputs = builder.build_site(self.root)
         manifest = json.loads(outputs['manifest.webmanifest'])

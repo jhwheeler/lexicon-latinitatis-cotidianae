@@ -17,35 +17,13 @@
       "status": "recommended",
       "period": "ours",
       "gloss": "correct or amend",
-      "comment": "Applied to fixing code. This covers correction generally; “debugging” can also include investigation before a fix exists."
-    },
-    {
-      "latin": "mendum ēmendāre",
-      "status": "alternative",
-      "period": "ours",
-      "gloss": "fix an error, fix a bug"
-    },
-    {
-      "latin": "vitium corrigere",
-      "status": "alternative",
-      "period": "ours",
-      "gloss": "fix a bug",
-      "comment": "An earlier alternative."
+      "comment": "Classically to free from faults, to correct, and especially to correct a text (Cic., Quint.; Lewis &amp; Short); applied here to fixing code. No reference work has a word for debugging. This covers correction generally; “debugging” can also include investigation before a fix exists."
     },
     {
       "latin": "ēmendātiō, ēmendātiōnis f.",
-      "status": "recommended",
+      "status": "alternative",
       "period": "classical",
       "gloss": "correction",
-      "evidence": [
-        "Traupman 297"
-      ]
-    },
-    {
-      "latin": "ēmendātiō mendī",
-      "status": "alternative",
-      "period": "ours",
-      "gloss": "correction of a bug",
       "evidence": [
         "Traupman 297"
       ]
@@ -60,6 +38,18 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "mendum ēmendāre",
+      "english": "fix an error, fix a bug",
+      "source": "composed"
+    },
+    {
+      "latin": "ēmendātiō mendī",
+      "english": "the correction of a bug",
+      "source": "composed"
+    }
+  ],
   "related": [
     "bug",
     "bug-report"
@@ -67,7 +57,8 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/emendo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: emendo</a> · <a href=\"https://logeion.uchicago.edu/emendatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: emendatio</a>",
     "<a href=\"https://alatius.com/ls/index.php?l=corrigo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: corrigo</a>. Dictionary links support the component words; the modern technical expressions are labelled separately.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 297."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 297.",
+    "The example sentences marked “composed” are ours."
   ],
   "replaces": [
     "entry-51"

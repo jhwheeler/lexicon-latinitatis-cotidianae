@@ -376,6 +376,40 @@ class BuildTests(unittest.TestCase):
         self.assertIn('<b><a href="../l/caccabus.html">caccabus</a> fictīcius</b>', concept)
         self.assertIn('<b lang="la">caccabus fictīcius</b>', outputs['l/caccabus.html'])
 
+    def test_the_readers_are_not_cited_as_an_author_would_be(self):
+        record = self.record('perhaps')
+        record['phrases'] = [
+            {'latin': 'Fortasse pluet.', 'english': 'Perhaps it will rain.', 'source': 'Libellus IV, <span lang="la">Diēs fēstus</span>'},
+            {'latin': 'Fortasse veniet.', 'english': 'Perhaps he will come.', 'source': '<span lang="la">Culīna Theodōrī</span>'}]
+        record['sources'] = ['<span lang="la">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026.']
+        self.save_record(record)
+        outputs = builder.build_site(self.root)
+        page = outputs['c/perhaps.html']
+        # The example's place in the readers stays in the data; the page calls it composed.
+        self.assertEqual(page.count('<span class="src composed">composed</span>'), 2)
+        self.assertIn('<li data-source="composed">', page)
+        for hidden in ('Libellus', 'Theodōrus et pater', 'Culīna Theodōrī', '<span class="sc">Sources</span>'):
+            self.assertNotIn(hidden, page)
+        self.assertNotIn('Libellus', outputs['assets/search-data.js'].split('"id":"c-perhaps"')[1].split('"id":')[0])
+        # With another source beside the readers, only that one is shown.
+        record['sources'].append('Anna Andresian, <em>Vocabula Picta</em> (2014), p. 43.')
+        self.save_record(record)
+        page = builder.build_site(self.root)['c/perhaps.html']
+        self.assertIn('<span class="sc">Sources</span>Anna Andresian', page)
+        self.assertNotIn('Theodōrus et pater', page)
+
+    def test_lists_mark_words_and_phrases(self):
+        record = self.record('perhaps')
+        record['pos'] = 'phrase'
+        self.save_record(record)
+        outputs = builder.build_site(self.root)
+        for path, link in (('k/sermo.html', '../c/perhaps.html'), ('words.html', 'c/perhaps.html')):
+            with self.subTest(path=path):
+                self.assertIn(f'<li data-kind="phrase"><a href="{link}">', outputs[path])
+                self.assertIn('<li data-kind="word">', outputs[path])
+                self.assertIn('data-kind-filter hidden>', outputs[path])
+        self.assertNotIn('data-kind-filter', outputs['latin.html'])
+
     def test_sources_are_citations_and_each_work_is_cited_once(self):
         traupman = 'John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>'
         for sources, message in (

@@ -304,6 +304,47 @@ class BuildTests(unittest.TestCase):
                 self.assertEqual(builder.grammar({'latin': latin}), expected)
         self.assertEqual(builder.grammar({'latin': 'tītillō, tītillāre', 'grammar': 'verb, transitive'}), 'verb, transitive')
 
+    def test_a_comparative_is_not_read_as_a_verb(self):
+        for latin in ('major, majus', 'jūnior, jūniōris', 'interior, interius'):
+            with self.subTest(latin=latin):
+                self.assertEqual(builder.grammar({'latin': latin}), '')
+        self.assertEqual(builder.grammar({'latin': 'cōnfiteor, cōnfitērī, cōnfessus sum'}), 'verb, second conjugation, deponent')
+        self.assertEqual(builder.grammar({'latin': 'ferō, ferre, tulī, lātum'}), 'verb')
+
+    def test_wiktionary_links_for_words_that_inflect(self):
+        titles = {'caccabus': 'caccabus', 'jam': 'iam', 'Jēsūs': 'Iesus', 'conjūnx': 'coniunx', 'āēr': 'aer',
+                  'videō': 'video', 'Rōma': 'Roma', 'Ecce!': 'ecce'}
+        for head, title in titles.items():
+            with self.subTest(head=head):
+                self.assertEqual(builder.wiktionary_title(head), title)
+        kinds = {'caccabus (cacabus), caccabī m.': 'Declension', 'auctor, auctōris m./f.': 'Declension',
+                 'bonus, bona, bonum': 'Declension', 'fidēlis, fidēle': 'Declension', 'major, majus': 'Declension',
+                 'hic, haec, hoc': 'Declension', 'pār, paris': 'Declension', 'manifestus, manifesta, manifestum (+ gen.)': 'Declension',
+                 'tītillō, tītillāre': 'Conjugation', 'cōnfiteor, cōnfitērī, cōnfessus sum': 'Conjugation',
+                 'nōlō, nōlle, nōluī': 'Conjugation', 'fortasse': '', 'ā, ab + abl.': '', 'Licet.': '', 'edepol, pol': ''}
+        for latin, kind in kinds.items():
+            with self.subTest(latin=latin):
+                self.assertEqual(builder.inflection({'latin': latin}), kind)
+        self.assertEqual(builder.inflection({'latin': 'colluō', 'grammar': 'verb, third conjugation'}), 'Conjugation')
+        self.assertEqual(builder.inflection({'latin': 'animī', 'grammar': 'noun, genitive of animus'}), '')
+        self.assertEqual(builder.inflection({'latin': 'frūstrā', 'grammar': 'adverb'}), '')
+        link = builder.wiktionary_link({'latin': 'jūs, jūris n.'})
+        self.assertIn('href="https://en.wiktionary.org/wiki/ius#Latin"', link)
+        self.assertIn('Declension on Wiktionary', link)
+        self.assertEqual(builder.wiktionary_link({'latin': 'ōlla ānsāta'}), '')
+        plain = builder.wiktionary_link({'latin': 'jam'})
+        self.assertIn('href="https://en.wiktionary.org/wiki/iam#Latin"', plain)
+        self.assertIn('>Wiktionary</a>', plain)
+
+    def test_latinitium_links_by_lewis_and_short_entry_number(self):
+        table = builder.load_latinitium(builder.ROOT)
+        base = 'https://latinitium.com/latin-dictionaries/?t='
+        self.assertEqual(builder.latinitium_url('soror', table), base + 'lsn44798')
+        self.assertEqual(builder.latinitium_url('videō', table), base + 'lsn50883')
+        self.assertEqual(builder.latinitium_url('Rōma', table), base + 'lsn41840')
+        self.assertEqual(builder.latinitium_url('jūs', table), base + 'lsn25394,lsn25395')
+        self.assertEqual(builder.latinitium_url('pedūlia', table), '')
+
     def test_part_of_speech_validated(self):
         record = self.record('perhaps')
         for pos in ('adverbial', ['adverb', 'adverb'], []):

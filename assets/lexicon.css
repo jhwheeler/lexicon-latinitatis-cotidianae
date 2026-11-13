@@ -303,6 +303,7 @@ span.kind, p.kind:not(:has(a)) { display:block; padding:10px 0; }
 .term > .lemma b { font-size:1.6em; }
 .forms { margin:6px 0 0; font-size:1.2rem; }
 .gram { margin:2px 0 0; color:var(--muted); font-style:italic; }
+.wikt { font-style:normal; white-space:nowrap; }
 .def { margin:6px 0 0; font-size:1.25rem; }
 .comment { margin:8px 0 0; }
 .meta-line { margin:2px 0 0; color:var(--muted); font-size:.98rem; }

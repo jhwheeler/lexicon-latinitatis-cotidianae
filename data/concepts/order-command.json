@@ -1,0 +1,70 @@
+{
+  "id": "order-command",
+  "english": "order",
+  "sense": "tell someone to do something",
+  "pos": "verb",
+  "also": [
+    "command",
+    "bid",
+    "tell someone to",
+    "give an order",
+    "give orders"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "jubeō, jubēre, jussī, jussum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "order, tell (someone to do something)",
+      "grammar": "verb, second conjugation; with the accusative and infinitive",
+      "evidence": [
+        "Caes. BG 1.27: <span lang=\"la\">eōs suum adventum exspectāre jussit</span> (Lewis &amp; Short)",
+        "Cic. Att. 9.13.2: <span lang=\"la\">hae mē litterae Dolābellae jubent ad prīstinās cōgitātiōnēs revertī</span> (Lewis &amp; Short)"
+      ],
+      "comment": "The ordinary verb: the person told stands in the accusative, what is to be done in the infinitive. Also of what the people enact: <span lang=\"la\">senātus dēcrēvit populusque jussit</span> (Cic. Verr. 2.2.161, Lewis &amp; Short)."
+    },
+    {
+      "latin": "imperō, imperāre, imperāvī, imperātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "command, give an order",
+      "grammar": "verb, first conjugation; with the dative of the person and ut or nē with the subjunctive",
+      "evidence": [
+        "Caes. BG 1.28.1: <span lang=\"la\">hīs, utī conquīrerent et redūcerent, imperāvit</span> (Lewis &amp; Short)",
+        "Caes. BG 2.32.3: <span lang=\"la\">quae imperārentur, facere dīxērunt</span> (Lewis &amp; Short)"
+      ],
+      "comment": "The command of someone in authority: a general, a master, a parent."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "eōs suum adventum exspectāre jussit",
+      "english": "he ordered them to wait for his arrival",
+      "source": "Caes. BG 1.27 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "hīs, utī conquīrerent et redūcerent, imperāvit",
+      "english": "he ordered them to hunt the men out and bring them back",
+      "source": "Caes. BG 1.28.1 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "quae imperārentur, facere dīxērunt",
+      "english": "they said they would do what was ordered",
+      "source": "Caes. BG 2.32.3 (Lewis &amp; Short)"
+    }
+  ],
+  "related": [
+    "command-army",
+    "rule-govern",
+    "command-military"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/jubeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: jubeo</a> · <a href=\"https://logeion.uchicago.edu/impero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: impero</a>"
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-13",
+    "by": "Claude"
+  }
+}

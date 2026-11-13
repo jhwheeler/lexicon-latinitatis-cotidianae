@@ -1,0 +1,52 @@
+{
+  "id": "fight",
+  "english": "fight",
+  "pos": "verb",
+  "also": [
+    "fight with",
+    "fight against",
+    "fight for",
+    "do battle",
+    "combat"
+  ],
+  "domain": "res-publica",
+  "terms": [
+    {
+      "latin": "pugnō, pugnāre, pugnāvī, pugnātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "fight, give battle",
+      "evidence": [
+        "Caes. BG 1.25: <span lang=\"la\">scūtum manū ēmittere et nūdō corpore pugnāre</span> (Lewis &amp; Short)",
+        "Liv. 10.36.8: <span lang=\"la\">ēlige, cum cīve an hoste pugnāre mālīs</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Of single fighters and of armies. The opponent with <span lang=\"la\">cum</span> and the ablative, or with <span lang=\"la\">in</span> or <span lang=\"la\">adversum</span> and the accusative; what one fights for with <span lang=\"la\">prō</span>: <span lang=\"la\">prō commodīs patriae</span> (Cic. Inv. 1.1, Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "scūtum manū ēmittere et nūdō corpore pugnāre",
+      "english": "to let the shield drop from the hand and fight with the body unprotected",
+      "source": "Caes. BG 1.25 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "ēlige, cum cīve an hoste pugnāre mālīs",
+      "english": "choose whether you would rather fight a fellow citizen or an enemy",
+      "source": "Liv. 10.36.8 (Lewis &amp; Short)"
+    }
+  ],
+  "related": [
+    "battle",
+    "war",
+    "attack",
+    "engage-battle"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/pugno\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pugno</a>"
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-13",
+    "by": "Claude"
+  }
+}

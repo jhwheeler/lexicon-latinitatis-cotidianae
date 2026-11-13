@@ -14,6 +14,18 @@ Read first: `AGENTS.md`, `records.md`, `how-we-decide.html` (the editorial rules
 
 Morgan–Owens marks long vowels with a circumflex (*camîsia* = *camīsia*). Traupman's text is decoded by the lookup tool; cite Traupman by the printed page (`Traupman 117`; the page headers are in the text), Morgan–Owens by headword (`M-O s.v. undershorts`), Levi & Bini by printed page (`Levi–Bini p. 23`).
 
+## Starting from a Latin word
+
+The sweep of the authors (README, "To do") starts from Latin: `notes/coverage/latin-frequency.md` lists, in rank order, the frequent classical lemmas no term is headed by. The lexicon is still English → Latin, so a missing Latin word goes in under its English meaning:
+
+- Look the word up in Lewis & Short first and settle its main sense; then look for the record of that sense (`grep` the English headwords and their `also` words).
+- If the record exists and the word belongs there, add it as a term: `recommended` only if it is the plain classical word for the sense, otherwise `alternative` with a gloss that tells it apart from the terms already there (*aspiciō* beside *spectō*, a single look; *tellūs* beside *terra*, with its register).
+- If no record has the sense, write one, headed by the English word a person would look up (*casa* → hut, with *tugurium*). Where the lexicon has the word only inside a longer term (*necesse est*, *tribūnus plēbis*, *utrum … an*), add the bare word as a term of the same record, so that it gets a page.
+- A word with several unrelated senses (*committō*: entrust, join battle, commit a wrong) gets the record of its commonest sense and a comment naming the others; the others can have records later.
+- After a batch, make the report again (`python3 scripts/latin_coverage.py --out notes/coverage/latin-frequency.md`).
+
+Lewis & Short's citations of Plautus and Terence count by act, scene and line (`Ter. Heaut. 4.3.41`); the records otherwise cite them by the line of the play. Where only Lewis & Short's number is to hand, give it with the mark "(Lewis & Short)" and prefer a citation from prose.
+
 ## Choosing the Latin
 
 The order is the site's own (How we decide):

@@ -1,0 +1,64 @@
+{
+  "id": "be-silent",
+  "english": "be silent",
+  "pos": "verb",
+  "also": [
+    "keep quiet",
+    "say nothing",
+    "hold one’s tongue",
+    "keep silent",
+    "fall silent",
+    "shut up"
+  ],
+  "domain": "verba",
+  "terms": [
+    {
+      "latin": "taceō, tacēre, tacuī, tacitum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "be silent, say nothing; keep quiet about",
+      "evidence": [
+        "Cic. Sest. 40: <span lang=\"la\">tacendō loquī vidēbantur</span> (Lewis &amp; Short)",
+        "Cic. Verr. 1.27: <span lang=\"la\">an mē tacitūrum tantīs dē rēbus exīstimāvistis?</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Not to speak; a narrower word than <span lang=\"la\">silēre</span>, to be still, to make no noise (Lewis &amp; Short)."
+    },
+    {
+      "latin": "sileō, silēre, siluī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "be still, make no sound; say nothing of",
+      "evidence": [
+        "Liv. 39.27: <span lang=\"la\">optimum quemque silēre</span> (Lewis &amp; Short)",
+        "Cic. Sull. 80: <span lang=\"la\">cum cēterī dē nōbīs silent</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Stronger than <span lang=\"la\">tacēre</span> (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "tacendō loquī vidēbantur",
+      "english": "by their silence they seemed to speak",
+      "source": "Cic. Sest. 40 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "cum cēterī dē nōbīs silent",
+      "english": "when the others say nothing about us",
+      "source": "Cic. Sull. 80 (Lewis &amp; Short)"
+    }
+  ],
+  "related": [
+    "be-quiet",
+    "silent",
+    "silence",
+    "quiet"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/taceo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: taceo</a> · <a href=\"https://logeion.uchicago.edu/sileo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sileo</a>"
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-13",
+    "by": "Claude"
+  }
+}

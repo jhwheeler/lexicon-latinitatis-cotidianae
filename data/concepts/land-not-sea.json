@@ -8,7 +8,8 @@
     "by land",
     "on land",
     "by land and sea",
-    "a piece of land"
+    "a piece of land",
+    "the earth"
   ],
   "domain": "natura",
   "terms": [
@@ -44,6 +45,18 @@
       "evidence": [
         "Traupman 337"
       ]
+    },
+    {
+      "latin": "tellūs, tellūris f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the earth; land, ground",
+      "register": "vōx plērumque poētica: Lucr., Verg., Ov.",
+      "evidence": [
+        "Cic. Rep. 6.17 (Lewis &amp; Short)",
+        "Ov. Met. 1.291: <span lang=\"la\">jamque mare et tellūs nūllum discrīmen habēbant</span> (Lewis &amp; Short)"
+      ],
+      "comment": "A word that belongs almost wholly to poetry; prose says <span lang=\"la\">terra</span> (Lewis &amp; Short)."
     }
   ],
   "phrases": [
@@ -56,23 +69,35 @@
       "latin": "vēnerat ad mē māter pietāte fortis, terrā marīque mē sequēns",
       "english": "my mother had come to me, strong in her devotion, following me by land and sea",
       "source": "Aug. Conf. 6.1.1"
+    },
+    {
+      "latin": "jamque mare et tellūs nūllum discrīmen habēbant",
+      "english": "and now sea and land were not to be told apart",
+      "source": "Ov. Met. 1.291 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "fundit humō facilem vīctum jūstissima tellūs",
+      "english": "the earth, most just, pours an easy living from the ground",
+      "source": "Verg. G. 2.460 (Lewis &amp; Short)"
     }
   ],
   "related": [
     "dirt-earth",
     "sea",
-    "shore"
+    "shore",
+    "world"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/ager\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ager</a>",
     "<a href=\"https://logeion.uchicago.edu/terra\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: terra</a>",
+    "<a href=\"https://logeion.uchicago.edu/tellus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tellus</a>",
     "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 22.",
     "Quotations from the Latinitas loci collections (loci-augustinus), checked against the editions named there.",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 337."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-13",
     "by": "Claude"
   }
 }

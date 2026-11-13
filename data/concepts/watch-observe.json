@@ -9,7 +9,10 @@
     "watch over",
     "keep an eye on",
     "watch television",
-    "watch a game"
+    "watch a game",
+    "behold",
+    "look upon",
+    "glance at"
   ],
   "domain": "verba",
   "terms": [
@@ -40,6 +43,29 @@
       "evidence": [
         "Traupman 404"
       ]
+    },
+    {
+      "latin": "aspiciō, aspicere, aspexī, aspectum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "look at, turn one’s eyes to; catch sight of",
+      "evidence": [
+        "Cic. Cat. 3.13: <span lang=\"la\">fūrtim nōn numquam inter sē aspiciēbant</span> (Lewis &amp; Short)",
+        "Liv. 9.7.11: <span lang=\"la\">ut nēmō eōrum forum aut pūblicum aspicere vellet</span> (Lewis &amp; Short)"
+      ],
+      "comment": "A single look, where <span lang=\"la\">spectō</span> is to keep looking. Also written <span lang=\"la\">adspiciō</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "fūrtim nōn numquam inter sē aspiciēbant",
+      "english": "now and then they stole a look at one another",
+      "source": "Cic. Cat. 3.13 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "ut nēmō eōrum forum aut pūblicum aspicere vellet",
+      "english": "so that not one of them was willing to look on the forum or the street",
+      "source": "Liv. 9.7.11 (Lewis &amp; Short)"
     }
   ],
   "related": [
@@ -52,11 +78,12 @@
     "<a href=\"https://logeion.uchicago.edu/specto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: specto</a>",
     "<a href=\"https://logeion.uchicago.edu/observo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: observo</a>",
     "<a href=\"https://logeion.uchicago.edu/custodio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: custodio</a>",
+    "<a href=\"https://logeion.uchicago.edu/aspicio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aspicio</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 404."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-13",
     "by": "Claude"
   }
 }

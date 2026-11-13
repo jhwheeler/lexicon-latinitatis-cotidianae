@@ -5,7 +5,10 @@
   "also": [
     "cruelty",
     "cruelly",
-    "heartless"
+    "heartless",
+    "savage",
+    "fierce",
+    "ferocious"
   ],
   "domain": "verba",
   "terms": [
@@ -31,19 +34,33 @@
         "Traupman 299"
       ],
       "comment": "Lewis &amp; Short: very frequent in good prose."
+    },
+    {
+      "latin": "saevus, saeva, saevum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "fierce, savage, raging; harsh, cruel",
+      "register": "vōx plērumque poētica: Lucr., Verg., Hor.",
+      "evidence": [
+        "Verg. G. 3.246: <span lang=\"la\">saevior leaena</span> (Lewis &amp; Short)",
+        "Hor. Ep. 1.18.13 (Lewis &amp; Short)",
+        "Verg. G. 2.128 (Lewis &amp; Short)"
+      ],
+      "comment": "Roused to fierceness, where <span lang=\"la\">ferus</span> is fierce by nature (Lewis &amp; Short): of lions, boars and wolves, then of people, a harsh master or a stepmother."
     }
+  ],
+  "related": [
+    "callous"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/crudelis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: crudelis</a>",
     "<a href=\"https://logeion.uchicago.edu/crudelitas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: crudelitas</a>",
+    "<a href=\"https://logeion.uchicago.edu/saevus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: saevus</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 299."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-13",
     "by": "Claude"
-  },
-  "related": [
-    "callous"
-  ]
+  }
 }

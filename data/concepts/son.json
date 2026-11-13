@@ -25,6 +25,16 @@
         "Traupman 24, 410",
         "Cic. Att. 1.2.1"
       ]
+    },
+    {
+      "latin": "nātus, nātī m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "son; in the plural, children",
+      "evidence": [
+        "Cic. Lael. 27: <span lang=\"la\">cāritās, quae est inter nātōs et parentēs</span> (Lewis &amp; Short)"
+      ],
+      "comment": "The participle of <span lang=\"la\">nāscor</span> as a noun, also written <span lang=\"la\">gnātus</span>; the feminine is <span lang=\"la\">nāta</span>, a daughter (Lewis &amp; Short s.v. <span lang=\"la\">nāscor</span>)."
     }
   ],
   "phrases": [
@@ -32,22 +42,30 @@
       "latin": "Dormī, fīliole.",
       "english": "Sleep, my little son.",
       "source": "Libellus III, <span lang=\"la\">Apud avum et aviam</span>"
+    },
+    {
+      "latin": "cāritās, quae est inter nātōs et parentēs",
+      "english": "the love there is between children and parents",
+      "source": "Cic. Lael. 27 (Lewis &amp; Short)"
     }
   ],
   "related": [
     "daughter",
     "father",
     "mother",
-    "little-boy"
+    "little-boy",
+    "be-born",
+    "children-offspring"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/filius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: filius</a> · <a href=\"https://logeion.uchicago.edu/filiolus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: filiolus</a>",
+    "<a href=\"https://logeion.uchicago.edu/nascor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nascor</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 24.",
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-13",
     "by": "Claude"
   }
 }

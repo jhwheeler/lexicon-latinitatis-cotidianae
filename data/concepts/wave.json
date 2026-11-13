@@ -2,12 +2,28 @@
   "id": "wave",
   "english": "wave",
   "pos": "noun",
+  "also": [
+    "billow",
+    "surge",
+    "breaker"
+  ],
   "domain": "sermo",
   "terms": [
     {
       "latin": "unda, undae f.",
       "status": "recommended",
       "period": "classical"
+    },
+    {
+      "latin": "flūctus, flūctūs m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a wave, a billow, above all of the sea",
+      "evidence": [
+        "Cic. Fam. 9.16.6: <span lang=\"la\">flūctum ā saxō frangī</span> (Lewis &amp; Short)",
+        "Cic. Fin. 5.5: <span lang=\"la\">ad flūctum ajunt dēclāmāre solitum Dēmosthenem</span> (Lewis &amp; Short)"
+      ],
+      "comment": "From <span lang=\"la\">fluō</span>; most often in the plural."
     }
   ],
   "phrases": [
@@ -25,20 +41,27 @@
       "latin": "Undās fac.",
       "english": "Make waves.",
       "source": "composed"
+    },
+    {
+      "latin": "ad flūctum ajunt dēclāmāre solitum Dēmosthenem, ut fremitum assuēsceret vōce vincere",
+      "english": "they say Demosthenes used to declaim to the waves, to accustom himself to mastering a roar with his voice",
+      "source": "Cic. Fin. 5.5 (Lewis &amp; Short)"
     }
   ],
   "related": [
     "sea",
     "billow",
-    "sailor-and-waves"
+    "sailor-and-waves",
+    "storm-in-a-teacup"
   ],
   "sources": [
     "<a href=\"https://alatius.com/ls/index.php?l=unda\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: unda</a>",
+    "<a href=\"https://logeion.uchicago.edu/fluctus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fluctus</a>",
     "The example sentences marked “composed” are ours."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-13",
     "by": "Claude"
   }
 }

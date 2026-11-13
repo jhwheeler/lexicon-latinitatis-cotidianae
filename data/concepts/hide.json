@@ -2,6 +2,12 @@
   "id": "hide",
   "english": "hide",
   "pos": "verb",
+  "also": [
+    "lie hidden",
+    "lurk",
+    "be hidden",
+    "skulk"
+  ],
   "domain": "ludi",
   "terms": [
     {
@@ -19,6 +25,17 @@
         "Plaut.",
         "Cic."
       ]
+    },
+    {
+      "latin": "lateō, latēre, latuī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "lie hidden, lurk; be unknown",
+      "evidence": [
+        "Verg. E. 3.93: <span lang=\"la\">latet anguis in herbā</span> (Lewis &amp; Short)",
+        "Cic. Phil. 12.17: <span lang=\"la\">sub nōmine pācis bellum latet</span> (Lewis &amp; Short)"
+      ],
+      "comment": "To be hidden, where <span lang=\"la\">mē abdō</span> is to hide oneself."
     }
   ],
   "phrases": [
@@ -26,6 +43,16 @@
       "latin": "Tē abde; tē quaeram.",
       "english": "Hide; I’ll look for you.",
       "source": "composed"
+    },
+    {
+      "latin": "latet anguis in herbā",
+      "english": "a snake lurks in the grass",
+      "source": "Verg. E. 3.93 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "sub nōmine pācis bellum latet",
+      "english": "under the name of peace war lies hidden",
+      "source": "Cic. Phil. 12.17 (Lewis &amp; Short)"
     }
   ],
   "related": [
@@ -36,11 +63,12 @@
   "sources": [
     "<a href=\"https://www.alatius.com/ls/index.php?l=abdo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: abdo</a>",
     "<a href=\"https://logeion.uchicago.edu/latito\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: latito</a>",
+    "<a href=\"https://logeion.uchicago.edu/lateo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lateo</a>",
     "The example sentences marked “composed” are ours."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-13",
     "by": "Claude"
   }
 }

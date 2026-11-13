@@ -5,6 +5,11 @@
     "verb",
     "noun"
   ],
+  "also": [
+    "turn back",
+    "come back",
+    "go back"
+  ],
   "domain": "vectura",
   "terms": [
     {
@@ -22,6 +27,25 @@
       "evidence": [
         "Traupman 218"
       ]
+    },
+    {
+      "latin": "revertor, revertī, revertī (reversus sum)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "turn back, come back, return",
+      "grammar": "verb, third conjugation: deponent in the present, active in the perfect",
+      "evidence": [
+        "Cic. Tusc. 3.31: <span lang=\"la\">exeuntem illum domō et revertentem</span> (Lewis &amp; Short)",
+        "Caes. BG 6.42 (Lewis &amp; Short)"
+      ],
+      "comment": "The writers before Augustus say <span lang=\"la\">revertor</span> in the present and <span lang=\"la\">revertī</span>, active, in the perfect, with the participle <span lang=\"la\">reversus</span>; <span lang=\"la\">reversus sum</span> comes later (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ita maestus rediit, ut retractus, nōn reversus vidērētur",
+      "english": "he came back so downcast that he seemed dragged back, not returned",
+      "source": "Cic. Phil. 6.10 (Lewis &amp; Short)"
     }
   ],
   "related": [
@@ -30,11 +54,12 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/reditus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: reditus</a>",
+    "<a href=\"https://logeion.uchicago.edu/reverto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: reverto</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 218."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-13",
     "by": "Claude"
   }
 }

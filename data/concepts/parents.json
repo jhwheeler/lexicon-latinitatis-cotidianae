@@ -2,6 +2,12 @@
   "id": "parents",
   "english": "parents",
   "pos": "noun",
+  "also": [
+    "parent",
+    "a parent",
+    "folks (one’s parents)",
+    "my folks"
+  ],
   "domain": "sermo",
   "terms": [
     {
@@ -12,6 +18,24 @@
         "Traupman 24: parent <span lang=\"la\">parēns, parentis</span> m./f."
       ],
       "comment": "Most often plural; the singular <span lang=\"la\">parēns</span> is a father or a mother (Lewis &amp; Short)."
+    },
+    {
+      "latin": "parēns, parentis m./f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a parent: a father or a mother",
+      "evidence": [
+        "Cic. Sull. 81: <span lang=\"la\">parēns tuus</span> (Lewis &amp; Short)",
+        "Hor. AP 313 (Lewis &amp; Short)"
+      ],
+      "comment": "Of either parent; the old writers called even a mother <span lang=\"la\">parēns</span> in the masculine (Festus, in Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "facit parentēs bonitās, nōn necessitās",
+      "english": "it is kindness that makes parents, not necessity",
+      "source": "Phaedr. 3.15.18"
     }
   ],
   "related": [
@@ -26,20 +50,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-13",
     "by": "Claude"
-  },
-  "also": [
-    "parent",
-    "a parent",
-    "folks (one’s parents)",
-    "my folks"
-  ],
-  "phrases": [
-    {
-      "latin": "facit parentēs bonitās, nōn necessitās",
-      "english": "it is kindness that makes parents, not necessity",
-      "source": "Phaedr. 3.15.18"
-    }
-  ]
+  }
 }

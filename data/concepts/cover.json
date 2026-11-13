@@ -32,6 +32,17 @@
       "evidence": [
         "Traupman 298"
       ]
+    },
+    {
+      "latin": "tegō, tegere, tēxī, tēctum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "cover; roof over; hide",
+      "evidence": [
+        "Cic. Div. 2.143: <span lang=\"la\">amīca corpus ejus tēxit suō palliō</span> (Lewis &amp; Short)",
+        "Caes. BG 6.30: <span lang=\"la\">fugientem silvae tēxērunt</span> (Lewis &amp; Short)"
+      ],
+      "comment": "The verb of <span lang=\"la\">tēctum</span>, a roof, and <span lang=\"la\">tegumentum</span>, a covering."
     }
   ],
   "phrases": [
@@ -44,22 +55,34 @@
       "latin": "nocte adjuvante",
       "english": "under cover of darkness",
       "source": "Traupman 298"
+    },
+    {
+      "latin": "amīca corpus ejus tēxit suō palliō",
+      "english": "his mistress covered his body with her own cloak",
+      "source": "Cic. Div. 2.143 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "fugientem silvae tēxērunt",
+      "english": "the woods hid him as he fled",
+      "source": "Caes. BG 6.30 (Lewis &amp; Short)"
     }
   ],
   "related": [
     "lid",
     "shelter",
-    "blanket"
+    "blanket",
+    "hide"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/tegumentum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tegumentum</a>",
     "<a href=\"https://logeion.uchicago.edu/operio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: operio</a>",
+    "<a href=\"https://logeion.uchicago.edu/tego\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tego</a>",
     "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 298."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-13",
     "by": "Claude"
   }
 }

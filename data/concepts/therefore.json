@@ -10,7 +10,10 @@
     "hence",
     "accordingly",
     "then (drawing a conclusion)",
-    "then (in that case)"
+    "then (in that case)",
+    "for that reason",
+    "on that account",
+    "that is why"
   ],
   "domain": "verba",
   "terms": [
@@ -65,6 +68,41 @@
         "Quint. 1.4.12: <span lang=\"la\">quārē discat puer, quid in litterīs proprium, quid commūne</span>"
       ],
       "comment": "“For which reason”: in Cicero’s letters it leads into the request, <span lang=\"la\">quā rē velim …</span>; the Perseus text of the letters prints it as two words."
+    },
+    {
+      "latin": "ideō",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "for that reason, on that account",
+      "grammar": "adverb: often answered by quod, quia or ut",
+      "evidence": [
+        "Liv. 45.22.5: <span lang=\"la\">quī ideō fēlīcia bella vestra esse, quia jūsta sint, prae vōbīs fertis</span> (Lewis &amp; Short)",
+        "Cic. Off. 1.110 (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "idcircō",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "on that account, for that reason",
+      "grammar": "adverb",
+      "evidence": [
+        "Cic. Inv. 1.11 (Lewis &amp; Short)",
+        "Caes. BC 1.42.3 (Lewis &amp; Short)",
+        "Hor. AP 265: <span lang=\"la\">idcircōne vager scrībamque licenter?</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Also written <span lang=\"la\">iccircō</span>."
+    },
+    {
+      "latin": "proptereā",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "for that cause, on that account",
+      "grammar": "adverb: proptereā quod, because",
+      "evidence": [
+        "Cic. Lig. 8: <span lang=\"la\">haec proptereā dē mē dīxī, ut …</span> (Lewis &amp; Short)",
+        "Cic. Rep. 1.11 (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -82,6 +120,11 @@
       "latin": "Sequere mē hāc ergō. — Sequor.",
       "english": "Follow me this way, then. — I’m coming.",
       "source": "Plaut. Rud. 184b–184c"
+    },
+    {
+      "latin": "quī ideō fēlīcia bella vestra esse, quia jūsta sint, prae vōbīs fertis",
+      "english": "you who make it your boast that your wars prosper because they are just",
+      "source": "Liv. 45.22.5 (Lewis &amp; Short)"
     }
   ],
   "related": [
@@ -93,12 +136,13 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/itaque\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: itaque</a> · <a href=\"https://logeion.uchicago.edu/igitur\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: igitur</a> · <a href=\"https://logeion.uchicago.edu/ergo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ergo</a> · <a href=\"https://logeion.uchicago.edu/quare\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quare</a>",
+    "<a href=\"https://logeion.uchicago.edu/ideo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ideo</a> · <a href=\"https://logeion.uchicago.edu/idcirco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: idcirco</a> · <a href=\"https://logeion.uchicago.edu/propterea\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: propterea</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 287, 393.",
     "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-seneca-epistulae, loci-plautus, loci-quintilianus, loci-phaedrus), checked against the editions named there; Cicero’s letters and Plautus also checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-13",
     "by": "Claude"
   }
 }

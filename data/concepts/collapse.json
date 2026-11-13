@@ -8,12 +8,14 @@
     "come down in a heap",
     "computer crash",
     "the app crashed",
-    "crash (of a computer or app)"
+    "crash (of a computer or app)",
+    "come crashing down",
+    "rush headlong"
   ],
+  "domain": "sermo",
   "also_under": [
     "corpus"
   ],
-  "domain": "sermo",
   "terms": [
     {
       "latin": "corruō, corruere, corruī",
@@ -25,6 +27,17 @@
         "Traupman 260, s.v. crash (intr.)",
         "Traupman 298"
       ]
+    },
+    {
+      "latin": "ruō, ruere, ruī, rutum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "fall with a crash, tumble down, go to ruin; also rush headlong",
+      "evidence": [
+        "Liv. 21.11 (Lewis &amp; Short)",
+        "Verg. A. 6.305: <span lang=\"la\">hūc omnis turba ruēbat</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Of walls, towers and houses that come down; then of hasty movement, to rush (Lewis &amp; Short)."
     }
   ],
   "phrases": [
@@ -37,6 +50,16 @@
       "latin": "Programma corruit.",
       "english": "The app has crashed.",
       "source": "composed"
+    },
+    {
+      "latin": "Quid sī nunc caelum ruat?",
+      "english": "What if the sky were to fall now?",
+      "source": "Ter. Heaut. 4.3.41 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "hūc omnis turba ruēbat",
+      "english": "the whole crowd was rushing this way",
+      "source": "Verg. A. 6.305 (Lewis &amp; Short)"
     }
   ],
   "related": [
@@ -44,17 +67,19 @@
     "tower",
     "fall",
     "crash-collision",
-    "app"
+    "app",
+    "hurry"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/corruo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: corruo</a>",
     "<a href=\"https://www.alatius.com/ls/index.php?l=corruo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: corruo</a> · <a href=\"https://paulatinygriego.wordpress.com/wp-content/uploads/2019/02/conversational-latin-for-oral-proficiency-traupman.pdf\" rel=\"noopener noreferrer\" target=\"_blank\">Traupman: Conversational Latin, fourth edition</a>",
+    "<a href=\"https://logeion.uchicago.edu/ruo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ruo</a>",
     "The example sentences marked “composed” are ours.",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 298."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-13",
     "by": "Claude"
   }
 }

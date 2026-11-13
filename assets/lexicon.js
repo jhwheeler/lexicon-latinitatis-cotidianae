@@ -6,6 +6,22 @@
     addEventListener('load', () => { navigator.serviceWorker.register(new URL("../sw.js", script.src)).catch(() => {}); });
   }
 
+  // Words looked up (Jack, 13 November 2026): opening an entry's page records it on the device, with
+  // the time, so that the practice page can offer "Words I looked up". Only the 500 most recent are
+  // kept. The record's id is the last part of the page's address (c/<id>.html).
+  if (document.querySelector('article.concept[data-record]')) {
+    const entry = /\/c\/([a-z0-9-]+?)(?:\.html)?$/.exec(location.pathname);
+    if (entry) {
+      try {
+        const kept = JSON.parse(localStorage.getItem('lexicon-seen') || '{}');
+        const seen = kept && typeof kept === 'object' && !Array.isArray(kept) ? kept : {};
+        seen[entry[1]] = Date.now();
+        const recent = Object.entries(seen).filter(([, when]) => Number.isFinite(when)).sort((a, b) => b[1] - a[1]).slice(0, 500);
+        localStorage.setItem('lexicon-seen', JSON.stringify(Object.fromEntries(recent)));
+      } catch {}
+    }
+  }
+
   // Theme (light is the default; the choice is kept where storage allows), chosen in the settings.
   const root = document.documentElement;
   const color = document.querySelector('meta[name="theme-color"]');

@@ -18,15 +18,13 @@
     {
       "latin": "minūtātim concīdere",
       "status": "alternative",
-      "period": "ours",
+      "period": "late",
       "gloss": "chop finely",
-      "comment": "The verbs are ancient. Exact dice size, kitchen technique and modern cube-shaped-piece phrasing are our descriptions."
-    },
-    {
-      "latin": "in frustula secāre",
-      "status": "alternative",
-      "period": "ours",
-      "gloss": "cut into small pieces"
+      "evidence": [
+        "Apic. 4.3.1: <span lang=\"la\">coriandrum minūtātim concīdēs</span> (M-O s.v. chop: chop finely)",
+        "Varr. RR 3.10.6: <span lang=\"la\">nasturtium cōnsectum minūtātim</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Apicius’s phrase; <span lang=\"la\">minūtātim</span>, in little bits, is classical (Lewis &amp; Short). See also chop finely."
     }
   ],
   "phrases": [
@@ -44,7 +42,8 @@
   "sources": [
     "<a href=\"https://alatius.com/ls/index.php?l=concido\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: concido</a> · <a href=\"https://alatius.com/ls/index.php?l=minutatim\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: minutatim</a> · <a href=\"https://dizionari.corriere.it/dizionario_latino/Latino/C/concido_2.shtml\" rel=\"noopener noreferrer\" target=\"_blank\">Latin dictionary: concīdo, distinguished from concĭdo</a>",
     "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>",
-    "The example sentence marked “composed” is ours."
+    "The example sentence marked “composed” is ours.",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. chop: chop finely, mince."
   ],
   "review": {
     "status": "draft",

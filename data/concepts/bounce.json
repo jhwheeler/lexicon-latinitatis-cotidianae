@@ -6,17 +6,21 @@
   "domain": "ludi",
   "terms": [
     {
-      "latin": "pilam ad terram jacere ut resiliat",
-      "status": "recommended",
-      "period": "ours",
-      "gloss": "bounce the ball",
-      "comment": "Our description distinguishes throwing so that it rebounds from rolling."
-    },
-    {
       "latin": "resiliō, resilīre",
-      "status": "alternative",
+      "status": "recommended",
       "period": "classical",
-      "gloss": "spring back, bounce back"
+      "gloss": "spring back, bounce back",
+      "evidence": [
+        "Ov. M. 12.480, of hail rebounding from a roof (Lewis &amp; Short)"
+      ],
+      "comment": "What the ball does: to spring back, to rebound (Lewis &amp; Short). To bounce a ball is to throw it so that it springs back, as in the example. Morgan–Owens has the noun <span lang=\"la\">resultus</span>, a bounce, from Vives."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "pilam ad terram jacere ut resiliat",
+      "english": "to bounce the ball (to throw it at the ground so that it springs back)",
+      "source": "composed"
     }
   ],
   "related": [
@@ -25,7 +29,9 @@
   ],
   "sources": [
     "<a href=\"https://www.alatius.com/ls/index.php?l=resilio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: resilio</a>",
-    "Descriptions and prompts labelled as ours are composed for family conversation. Recorded vocabulary does not imply universal technical standardization."
+    "Descriptions and prompts labelled as ours are composed for family conversation. Recorded vocabulary does not imply universal technical standardization.",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. actions: bounce.",
+    "The example sentence marked “composed” is ours."
   ],
   "review": {
     "status": "draft",

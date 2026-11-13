@@ -9,17 +9,11 @@
   "domain": "aedificatio",
   "terms": [
     {
-      "latin": "vinculum quō duae fistulae conjunguntur",
-      "status": "recommended",
-      "period": "ours",
-      "gloss": "a fastening by which two tubes are joined",
-      "comment": "Our descriptive “coupler / clamp.” It describes the function rather than claiming a specific modern coupler design had an ancient name. The ancient member names (<strong lang=\"la\">arrēctāria</strong>, <strong lang=\"la\">trānsversāria</strong>) are attested; only the steel coupler and adjustable base jack are modern, and no exact Latin names for them have been verified in the named sources."
-    },
-    {
       "latin": "vinculum, vinculī n.",
-      "status": "alternative",
+      "status": "recommended",
       "period": "classical",
-      "gloss": "fastening, bond, tie"
+      "gloss": "fastening, bond, tie",
+      "comment": "The general word for a fastening. We have found no Latin name for the steel coupler of a scaffold in the reference works; it is described by what it does, as in the example."
     },
     {
       "latin": "cōnfībula, cōnfībulae f.",
@@ -32,6 +26,13 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "vinculum quō duae fistulae conjunguntur",
+      "english": "a fastening by which two tubes are joined: a scaffold coupler",
+      "source": "composed"
+    }
+  ],
   "related": [
     "joint",
     "connect",
@@ -40,7 +41,8 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/confibula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: confibula</a>",
     "<a href=\"https://www.alatius.com/ls/index.php?l=vinculum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vinculum</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 291."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 291.",
+    "The example sentence marked “composed” is ours."
   ],
   "review": {
     "status": "draft",

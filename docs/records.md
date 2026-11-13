@@ -54,6 +54,18 @@ A **term** has `latin` (lemma with genitive and gender, or principal parts), `st
 
 `gloss`, `grammar` and an example's `latin` and `english` are plain text: no tags and no entities (the builder refuses them, since they would be printed as written). Rich text follows the rules of `data-format.md`: `<strong lang="la">`, `<span lang="la">`, `<em>`, external `<a>` links; macrons and j as everywhere else.
 
+### Coinages only where needed
+
+A word or phrase we made ourselves (a term whose `period` is `ours`) belongs in the lexicon only when it is needed: when no author of any period has a word for the concept, or when a circumlocution has a really good reason (Jack, 13 November 2026). Otherwise the word is taken from earlier authors. They need not be classical, though the closer to Cicero the more weight, and the modern reference works count as sources (Traupman's *Conversational Latin*, Morgan–Owens, Levi–Bini, Andresian). In practice:
+
+- **Look before marking a term `ours`.** Search the English in the reference works and the Latin in Lewis & Short (`scripts/lookup.py`). Several terms once marked ours had a source after all: *bēta rubra* is Mattioli's (in Morgan–Owens), *minūtātim concīdere* Apicius's, *lac acidum* Pliny's.
+- **A coinage that says what an attested word says is not entered.** Under *shoelace*, our *vincula calceōrum* stood as the recommended term beside Cicero's *corrigia*; it was deleted and *corrigia* recommended.
+- **An ordinary combination of attested words is not a coinage, and not a term.** *Crēta colōrāta* (coloured chalk), *pīsa viridia* (green peas), *grūs lūsōria* (a toy crane) go among the record's `phrases`, as examples with the source `composed`.
+- **A coinage that is needed says why**, in its `comment`: what was searched and what was found wanting ("No reference work has a word for a phone's notification", "Traupman has only the adjective"). Follow "Saying that something is not attested" in [drafting.md](drafting.md).
+- **Household words the editor has ruled on stay** (*vestis nocturna*, *lūsōrium*), marked as what they are.
+
+The builder enforces one part of this: a record may not have a `recommended` term of period `ours` when it also has a `recommended` term of another period. It does not yet require a stated reason on every `ours` term. The pass of 13 November 2026 went through the 153 coinages that stood beside an attested term (`notes/coinages-2026-11-13.md` lists each, with what was done and why); the 263 in records with no attested term are still to be gone through.
+
 ### Sources are citations
 
 A line of `sources` is a citation as a book would print it: the author, the work, the place (Jack, 13 November 2026). It does not say how the book was read or checked ("checked against the searchable text", "supplied PDF", "printed page numbers"): that belongs in the commit or the session notes, and the builder rejects it. A work is cited once in a record, with all its pages together and in order: `John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 211, 219, 294.` When a later pass adds a page, add it to that line; never add a second line for the same work. The builder rejects a repeated line and a second citation of Traupman.
@@ -99,7 +111,7 @@ Change a ruling by editing it and adding a `history` line; withdraw it rather th
 
 ## Checks
 
-`python3 scripts/build.py` validates records and rulings (fields, slugs, statuses, periods, notes cited and defined, rulings and related targets that exist, replaced entries that are really gone) and checks every link between the generated pages. A renamed category keeps its old ID in `aliases` in `data/catalog.json`, so old links still land on it. `--check` also fails on a stale or leftover page in `c/` or `l/`, or a leftover font in `assets/fonts/`. `scripts/consonantal_j.py` covers records and rulings. The tests include records, notes, pages and the rulings page.
+`python3 scripts/build.py` validates records and rulings (fields, slugs, statuses, periods, no coinage of ours recommended beside an attested recommended term, notes cited and defined, rulings and related targets that exist, replaced entries that are really gone) and checks every link between the generated pages. A renamed category keeps its old ID in `aliases` in `data/catalog.json`, so old links still land on it. `--check` also fails on a stale or leftover page in `c/` or `l/`, or a leftover font in `assets/fonts/`. `scripts/consonantal_j.py` covers records and rulings. The tests include records, notes, pages and the rulings page.
 
 ## Converting a grouped entry
 

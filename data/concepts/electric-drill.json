@@ -8,15 +8,8 @@
   "domain": "officina",
   "terms": [
     {
-      "latin": "terebra ēlectrica",
-      "status": "recommended",
-      "period": "ours",
-      "gloss": "electric drill",
-      "comment": "Our transparent modern extension of the ancient tool-name."
-    },
-    {
       "latin": "terebra māchinālis",
-      "status": "alternative",
+      "status": "recommended",
       "period": "modern",
       "gloss": "power drill",
       "evidence": [
@@ -26,6 +19,13 @@
       "comment": "The inherited noun retains its variable vowel quantity."
     }
   ],
+  "phrases": [
+    {
+      "latin": "terebra ēlectrica",
+      "english": "an electric drill",
+      "source": "composed"
+    }
+  ],
   "related": [
     "drill",
     "powered-screwdriver",
@@ -33,7 +33,8 @@
   ],
   "sources": [
     "<a href=\"https://neolatinlexicon.org/latin/power_drill/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: power drill</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 364."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 364.",
+    "The example sentence marked “composed” is ours."
   ],
   "review": {
     "status": "draft",

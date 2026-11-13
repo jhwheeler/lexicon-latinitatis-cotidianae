@@ -5,20 +5,8 @@
   "domain": "vectura",
   "terms": [
     {
-      "latin": "ē trāmine dēscendere",
-      "status": "recommended",
-      "period": "ours",
-      "gloss": "get off the train"
-    },
-    {
-      "latin": "ē birotā dēscendere",
-      "status": "recommended",
-      "period": "modern",
-      "gloss": "get off a bicycle"
-    },
-    {
       "latin": "ēgredior, ēgredī, ēgressus sum",
-      "status": "alternative",
+      "status": "recommended",
       "period": "classical",
       "gloss": "get off, get out (with dē or ex + abl.)",
       "evidence": [
@@ -28,7 +16,20 @@
         "Traupman 321",
         "Traupman 337"
       ],
-      "comment": "The classical verb for leaving a ship (to disembark, to land), and so for any vehicle one steps out of."
+      "comment": "The classical verb for leaving a ship (to disembark, to land), and so for any vehicle one steps out of. To get down from a horse or a carriage is also <span lang=\"la\">dēscendere</span> (<span lang=\"la\">ex equō</span>, Cic. Sen. 34; <span lang=\"la\">ē currū</span>, Suet. Tib. 20: Lewis &amp; Short)."
+    },
+    {
+      "latin": "ē birotā dēscendere",
+      "status": "recommended",
+      "period": "modern",
+      "gloss": "get off a bicycle"
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ē trāmine dēscendere",
+      "english": "get off the train",
+      "source": "composed"
     }
   ],
   "related": [
@@ -38,8 +39,9 @@
   ],
   "sources": [
     "<a href=\"https://www.lateinlexikon.com/lexicon_latinum_hodiernum_03_fgh.pdf\" rel=\"noopener noreferrer\" target=\"_blank\">Lexicon Latinum Hodiernum: bicycle parts</a> · <a href=\"https://neolatinlexicon.org/silva-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: Silva</a>",
-    "<a href=\"https://logeion.uchicago.edu/egredior\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: egredior</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 215–216, 321, 337."
+    "<a href=\"https://logeion.uchicago.edu/egredior\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: egredior</a> · <a href=\"https://logeion.uchicago.edu/descendo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: descendo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 215–216, 321, 337.",
+    "The example sentence marked “composed” is ours."
   ],
   "review": {
     "status": "draft",

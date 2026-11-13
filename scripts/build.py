@@ -10,9 +10,11 @@ search and contents), k/<category>.html (a category's entries), words.html and
 latin.html (the English and Latin headwords from A to Z), c/<concept>.html (one
 page per concept record), l/<word>.html (one page per Latin word that heads a
 term), how-we-decide.html (editorial policy), rulings.html (the rulings
-register), sitemap.xml, and in assets/ the stylesheet, the page and search
-scripts, the search data, the redirects from the old single page (legacy.js)
-and the fonts. See docs/data-format.md and docs/records.md.
+register), practice.html (vocabulary practice) and hora.html (the clock game),
+sitemap.xml, and in assets/ the stylesheet, the page, search and practice
+scripts, the search data, the practice cards (practice-data.js), the redirects
+from the old single page (legacy.js) and the fonts. See docs/data-format.md and
+docs/records.md.
 """
 import unicodedata
 import argparse
@@ -92,11 +94,11 @@ def manifest():
 
 def service_worker(root, outputs):
     """sw.js, with the files it saves when it installs: the front page, the category pages, the
-    guidance pages, and the stylesheet, scripts, search data, fonts and icons. Its version is a hash
-    of them, so a change to any of them makes the browser fetch them all afresh. The entry and word
-    pages are saved as they are read."""
+    guidance pages, the practice pages, and the stylesheet, scripts, search data, practice cards,
+    fonts and icons. Its version is a hash of them, so a change to any of them makes the browser
+    fetch them all afresh. The entry and word pages are saved as they are read."""
     files = sorted(path for path in outputs
-                   if path in ('index.html', 'how-we-decide.html', 'rulings.html', 'manifest.webmanifest')
+                   if path in ('index.html', 'how-we-decide.html', 'rulings.html', 'practice.html', 'hora.html', 'manifest.webmanifest')
                    or path.startswith('k/') or (path.startswith('assets/') and not path.endswith(('.txt', 'legacy.js'))))
     digest = hashlib.sha256()
     for path in files:
@@ -894,9 +896,11 @@ def site_header(up, search=True):
 
 
 def footer_links(up, about, search=True):
-    """The pages that left the header (Jack, 11 November 2026) stand at the foot of every page."""
+    """The pages that left the header (Jack, 11 November 2026) stand at the foot of every page, and
+    Practice with them (Jack, 13 November 2026): the header is fixed and gains no link."""
     return (f'<a href="{up}how-we-decide.html">How we decide</a> · <a href="{up}rulings.html">Rulings</a> · '
-            f'<a href="{about}">About</a> · ' + (f'<a href="{up}index.html">Search the lexicon</a> · ' if search else '')
+            f'<a href="{about}">About</a> · <a href="{up}practice.html">Practice</a> · '
+            + (f'<a href="{up}index.html">Search the lexicon</a> · ' if search else '')
             + f'<a href="{REPO}">Source and history</a> · <a href="{REPO}/issues">Report a problem</a>')
 
 
@@ -1438,6 +1442,239 @@ def search_data(site):
     return 'window.lexiconData = ' + json.dumps(data, ensure_ascii=False, separators=(',', ':')) + ';\n'
 
 
+# Practice (Jack, 13 November 2026) ---------------------------------------------------------------
+# practice.html drills the lexicon's own records: an English cue, the Latin to say aloud, and
+# spaced repetition whose progress stays on the reader's device. Its cards are a script of their
+# own (assets/practice-data.js), one card per record, so that the page also works from disk.
+# Vocabulary is the primary thing and phrases are secondary, so every card has a kind, and the
+# phrases are split in two: the everyday phrases of conversation (how are you, thank you, in
+# short) and the sayings and quotations (proverbs, maxims, lines of the authors).
+#
+# A phrase is a saying when its main term (1) stands in Traupman's list of proverbs and sayings
+# (his Appendix IV, pp. 254–259), or (2) is a line of Publilius Syrus, or (3) is cited only from
+# authors, with no page of Traupman or another handbook, and is a whole statement, not a turn of
+# conversation: the Latin is a sentence of three words or more that ends in a full stop or a
+# question mark, and the English headword has three words or more and no "I", "me" or "you", no
+# contraction and no exclamation mark (so "it's too early" and "see you soon", both quoted from
+# comedy and from letters, stay everyday phrases). Every other phrase is an everyday phrase.
+PROVERB_PAGES = range(254, 260)
+HANDBOOK = re.compile(r'Traupman|M-O|Morgan–Owens|Lewis (?:&|and) Short|L&S|Andresian|Levi–Bini|Graesse|Vatican|LRL|cf\.')
+
+
+def practice_kind(record):
+    """'w' a word, 'p' an everyday phrase, 's' a saying or quotation."""
+    if not is_phrase(record):
+        return 'w'
+    main = ordered_terms(record)[0]
+    cited = [plain(evidence) for evidence in main.get('evidence', [])]
+    pages = [int(n) for text in cited if text.startswith('Traupman') for n in re.findall(r'\d+', text.split(':')[0])]
+    if any(page in PROVERB_PAGES for page in pages) or any(re.match(r'(?:Ps\.-)?Publ(?:il)?\.', text) for text in cited):
+        return 's'
+    latin, english = main['latin'], record['english']
+    if cited and not any(HANDBOOK.match(text) for text in cited):
+        statement = (re.match(r'[A-ZĀĒĪŌŪ]', latin) and latin[-1] in '.?' and '—' not in latin and len(latin.split()) >= 3)
+        spoken = len(english.split()) < 3 or re.search(r"[’'!]|\b(?:I|me|you)\b", english)
+        if statement and not spoken:
+            return 's'
+    return 'p'
+
+
+# Where a card comes from: the author or handbook each citation opens with ("Cic. Att. 5.2.1",
+# "Traupman 73"), read from the main term's evidence and the examples' sources. "(Lewis & Short)"
+# at the end of a citation says where it was taken from, not who wrote it, so only the opening
+# counts. Each entry: id, name as shown, the abbreviations the data uses, and the works that can be
+# told apart reliably (id, name, abbreviations; a name in Latin is marked so). Authors stand in
+# rough order of time, the modern handbooks last. Only the sources with PRACTICE_SOURCE_MIN cards
+# or more are offered as choices.
+PRACTICE_SOURCE_MIN = 15
+PRACTICE_HANDBOOKS = ('traupman', 'morgan-owens', 'levi-bini', 'andresian', 'graesse', 'lewis-short')
+LA = True
+PRACTICE_SOURCES = (
+    ('plautus', 'Plautus', r'Plaut\.|Plautus', (
+        ('amphitruo', 'Amphitruō', r'Amph?\.', LA), ('asinaria', 'Asināria', r'Asin\.|As\.', LA),
+        ('aulularia', 'Aululāria', r'Aul\.', LA), ('bacchides', 'Bacchidēs', r'Bacch?\.', LA),
+        ('captivi', 'Captīvī', r'Capt\.', LA), ('casina', 'Casina', r'Cas\.', LA), ('cistellaria', 'Cistellāria', r'Cist\.', LA),
+        ('curculio', 'Curculiō', r'Curc\.', LA), ('epidicus', 'Epidicus', r'Epid\.|Ep\.', LA),
+        ('menaechmi', 'Menaechmī', r'Men\.', LA), ('mercator', 'Mercātor', r'Merc\.', LA),
+        ('miles', 'Mīles glōriōsus', r'Mil\.', LA), ('mostellaria', 'Mostellāria', r'Most\.', LA),
+        ('persa', 'Persa', r'Pers\.|Persa', LA), ('poenulus', 'Poenulus', r'Poen\.', LA), ('pseudolus', 'Pseudolus', r'Pseud\.|Ps\.', LA),
+        ('rudens', 'Rudēns', r'Rud\.', LA), ('stichus', 'Stichus', r'Stich\.|St\.', LA), ('trinummus', 'Trinummus', r'Trin\.', LA),
+        ('truculentus', 'Truculentus', r'Truc\.', LA))),
+    ('terence', 'Terence', r'Ter\.', (
+        ('adelphoe', 'Adelphoe', r'Ad\.', LA), ('andria', 'Andria', r'Andr?\.|An\.', LA), ('eunuchus', 'Eunūchus', r'Eun\.', LA),
+        ('heautontimorumenos', 'Heautontīmōrūmenos', r'Heaut?\.|Haut\.', LA), ('hecyra', 'Hecyra', r'Hec\.', LA),
+        ('phormio', 'Phormiō', r'Phorm\.|Ph\.', LA))),
+    ('cato', 'Cato', r'Cat[oō](?!\w)', ()),
+    ('varro', 'Varro', r'Varr\.|Varro', (
+        ('agriculture', 'On Agriculture', r'R\. ?R\.|RR'), ('latin-language', 'On the Latin Language', r'L\. ?L\.|LL'))),
+    ('cicero', 'Cicero', r'Cic\.|Cicero', (
+        ('atticus', 'Letters to Atticus', r'(?:ad )?Att\.'), ('friends', 'Letters to Friends', r'(?:ad )?Fam\.'),
+        ('quintus', 'Letters to Quintus', r'(?:ad )?Q\. ?[Ff]r\.'),
+        ('duties', 'On Duties', r'(?:de )?Off\.'), ('old-age', 'On Old Age', r'(?:de )?Sen\.'),
+        ('friendship', 'On Friendship', r'(?:de )?Amic\.|Lael\.'), ('tusculans', 'Tusculan Disputations', r'Tusc\.'),
+        ('ends', 'On Ends', r'(?:de )?Fin\.'), ('nature-of-the-gods', 'On the Nature of the Gods', r'N\. ?D\.|ND'),
+        ('divination', 'On Divination', r'Div\.(?! (?:in )?Caec)'), ('republic', 'On the Republic', r'Rep\.'),
+        ('laws', 'On the Laws', r'Leg\.(?! [Aa]gr)'), ('academica', 'Academica', r'Ac\.'), ('brutus', 'Brutus', r'Brut\.'),
+        ('orator', 'Orator', r'Or\.'), ('on-the-orator', 'On the Orator', r'de Orat?\.'), ('invention', 'On Invention', r'Inv\.'),
+        ('verres', 'Against Verres', r'Verr\.'), ('philippics', 'Philippics', r'Phil\.'), ('catiline', 'Against Catiline', r'Cat\.'),
+        ('roscius-of-ameria', 'For Roscius of Ameria', r'Rosc\. Am\.'), ('roscius-the-actor', 'For Roscius the Actor', r'Rosc\. Com\.'),
+        ('archias', 'For Archias', r'Arch\.'), ('caelius', 'For Caelius', r'Cael\.'), ('cluentius', 'For Cluentius', r'Clu\.'),
+        ('murena', 'For Murena', r'Mur\.'), ('sestius', 'For Sestius', r'Sest\.'), ('plancius', 'For Plancius', r'Planc\.'),
+        ('milo', 'For Milo', r'Mil\.'))),
+    ('caesar', 'Caesar', r'Caes\.|Caesar', (('gallic-war', 'Gallic War', r'B\. ?G\.|BG'), ('civil-war', 'Civil War', r'B\. ?C\.|BC'))),
+    ('lucretius', 'Lucretius', r'Lucr\.', ()),
+    ('catullus', 'Catullus', r'Catull\.', ()),
+    ('sallust', 'Sallust', r'Sall\.', ()),
+    ('nepos', 'Nepos', r'Nep\.', ()),
+    ('publilius', 'Publilius Syrus', r'Publil\.|Publ\.', ()),
+    ('vergil', 'Vergil', r'Verg\.|Vergil', (
+        ('eclogues', 'Eclogues', r'Ecl\.|E\.'), ('georgics', 'Georgics', r'Georg\.|G\.'), ('aeneid', 'Aeneid', r'Aen\.|A\.'))),
+    ('horace', 'Horace', r'Hor\.|Horace', (
+        ('satires', 'Satires', r'Serm\.|Sat\.|S\.'), ('epistles', 'Epistles', r'Epist\.|Ep\.'), ('odes', 'Odes', r'Carm\.|C\.'),
+        ('ars-poetica', 'Ars Poetica', r'Ars|A\. ?P\.|AP'), ('epodes', 'Epodes', r'Epod\.'))),
+    ('livy', 'Livy', r'Liv\.|Livy', ()),
+    ('ovid', 'Ovid', r'Ov\.|Ovid', (
+        ('metamorphoses', 'Metamorphoses', r'Met\.|M\.'), ('ars-amatoria', 'Ars Amatoria', r'Ars|A\. ?A\.|AA'),
+        ('tristia', 'Tristia', r'Tr\.'), ('fasti', 'Fasti', r'Fast\.|F\.'), ('remedia', 'Remedia Amoris', r'Rem\.'),
+        ('ex-ponto', 'Ex Ponto', r'Pont\.|P\.'))),
+    ('phaedrus', 'Phaedrus', r'Phaedr\.', ()),
+    ('seneca', 'Seneca', r'Sen\.|Seneca', (('letters', 'Letters', r'Ep\.'),)),
+    ('petronius', 'Petronius', r'Petr\.|Petron\.', ()),
+    ('columella', 'Columella', r'Col\.|Columella', ()),
+    ('celsus', 'Celsus', r'Cels\.|Celsus', ()),
+    # Bare "Plin." is the Elder, as in Lewis & Short; the Younger is "Plin. Ep." (or "Pan.").
+    ('pliny-younger', 'Pliny the Younger', r'Pl[iī]n\.(?= (?:Ep|Pan)\.)|Pliny(?=,? Ep\.)', ()),
+    ('pliny-elder', 'Pliny the Elder', r'Pl[iī]n\.|Pliny', ()),
+    ('quintilian', 'Quintilian', r'Qu[iī]nt\.', ()),
+    ('martial', 'Martial', r'Mart\.(?! Cap)', ()),
+    ('juvenal', 'Juvenal', r'Juv\.', ()),
+    ('tacitus', 'Tacitus', r'Tac\.', (
+        ('germania', 'Germania', r'Germ\.|G\.'), ('annals', 'Annals', r'Ann\.|A\.'), ('agricola', 'Agricola', r'Agr\.'),
+        ('dialogue', 'Dialogue on Orators', r'Dial\.'), ('histories', 'Histories', r'Hist\.|H\.'))),
+    ('suetonius', 'Suetonius', r'Suet\.|Suetonius', ()),
+    ('gellius', 'Gellius', r'Gell\.', ()),
+    ('vitruvius', 'Vitruvius', r'Vitr\.|Vitruvius', ()),
+    # The Vulgate, also where a book of the Bible is cited by itself ("Jo. 6, 20").
+    ('vulgate', 'The Vulgate', r'Vulg\.|Vulgate|(?=(?:Gen|Deut|Ps|Is|Dan|Mt|Mc|Lc|Jo)\. \d)', (
+        ('genesis', 'Genesis', r'Gen\.'), ('psalms', 'Psalms', r'Ps\.'), ('matthew', 'Matthew', r'Mt\.|Matth?\.'),
+        ('mark', 'Mark', r'Mc\.|Marc\.'), ('luke', 'Luke', r'Lc\.|Luc\.'), ('john', 'John', r'Joh?\.'))),
+    ('tertullian', 'Tertullian', r'Tert\.', ()),
+    ('augustine', 'Augustine', r'Aug\.', (('confessions', 'Confessions', r'Conf\.'),)),
+    ('prudentius', 'Prudentius', r'Prud\.', ()),
+    ('erasmus', 'Erasmus', r'Erasm\.|Erasmus', ()),
+    ('vives', 'Vives', r'Vīv\.|Vives', ()),
+    ('corderius', 'Corderius', r'Cord\.|Cordier|Corderius', ()),
+    ('comenius', 'Comenius', r'Comen\.|Comenius', ()),
+    ('traupman', 'Traupman', r'Traupman', ()),
+    ('morgan-owens', 'Morgan–Owens', r'M-O|Morgan–Owens|neolatinlexicon\.org', ()),
+    ('levi-bini', 'Levi and Bini', r'Levi–Bini', ()),
+    ('andresian', 'Andresian', r'Andresian', ()),
+    ('graesse', 'Graesse (place names)', r'Graesse', ()),
+    ('lewis-short', 'Lewis & Short', r'Lewis (?:&|and) Short|L&S', ()),
+)
+_SOURCE_PATTERNS = tuple(
+    (key, re.compile(rf'(?:{pattern})'),
+     tuple((f'{key}-{work[0]}', re.compile(rf',?\s*(?:{work[2]})(?![\w.])')) for work in works))
+    for key, _, pattern, works in PRACTICE_SOURCES)
+
+
+def source_tags(citation):
+    """The sources a citation names, as tag ids: the author, and the work where it is told apart
+    ("Verg. G. 3.284" → vergil, vergil-georgics). A string may hold several citations ("Cels. 2.30;
+    Plin. NH 26.58"); the Latin it quotes and its parentheses are set aside first."""
+    text = plain(re.sub(r'\([^()]*\)', '', re.sub(r'<span lang="la">.*?</span>', '', citation)))
+    tags = []
+    for part in text.split('; '):
+        for key, author, works in _SOURCE_PATTERNS:
+            match = author.match(part)
+            if match:
+                tags.append(key)
+                tags += [work for work, pattern in works if pattern.match(part, match.end())][:1]
+                break
+    return tags
+
+
+def citation_label(citation):
+    """A citation without what it quotes: "Sen. Ep. 66.3" from "Sen. Ep. 66.3: Potest ex casā …
+    (Lewis & Short)"."""
+    return re.sub(r'\s*\([^()]*\)', '', plain(citation)).split(': ')[0].rstrip(' :;,')
+
+
+def practice_cards(site):
+    """The source tags offered as choices, and one card per record: (tags, cards)."""
+    records = sorted(site['records'].values(), key=lambda r: (fold(record_english(r)), r['id']))
+    found = {}
+    for record in records:
+        main = ordered_terms(record)[0]
+        found[record['id']] = (
+            list(dict.fromkeys(tag for evidence in main.get('evidence', []) for tag in source_tags(evidence))),
+            [[] if composed(phrase) else source_tags(phrase['source']) for phrase in record.get('phrases', [])])
+    count = {}
+    for own, examples in found.values():
+        for tag in set(own).union(*examples):
+            count[tag] = count.get(tag, 0) + 1
+    # An author is offered with enough cards, and a work with enough cards under an author who is offered.
+    tags = []
+    for key, name, _, works in PRACTICE_SOURCES:
+        if count.get(key, 0) >= PRACTICE_SOURCE_MIN:
+            parent = len(tags)
+            tags.append({'id': key, 'name': name, 'n': count[key]})
+            tags += [{'id': f'{key}-{work[0]}', 'name': work[1], 'of': parent, 'n': count[f'{key}-{work[0]}'],
+                      **({'la': 1} if len(work) > 3 else {})}
+                     for work in works if count.get(f'{key}-{work[0]}', 0) >= PRACTICE_SOURCE_MIN]
+    index = {tag['id']: n for n, tag in enumerate(tags)}
+    offered = lambda names: sorted({index[name] for name in names if name in index})
+    cards = []
+    for record in records:
+        main, (own, examples) = ordered_terms(record)[0], found[record['id']]
+        english = record['english'] + (f' ({record["sense"]})' if 'sense' in record else '')
+        card = {'i': record['id'], 'e': english, 'l': main['latin'], 'k': record['domain']}
+        if pos_label(record):
+            card['p'] = pos_label(record)
+        gloss = main.get('gloss', '')
+        if gloss and gloss.strip().lower() != record['english'].strip().lower():
+            card['g'] = gloss
+        if record.get('also_under'):
+            card['x'] = record['also_under']
+        if practice_kind(record) != 'w':
+            card['t'] = practice_kind(record)
+        if main['period'] == 'ours':
+            card['o'] = 1
+        if offered(set(own).union(*examples)):
+            card['s'] = offered(set(own).union(*examples))
+        # A saying is somebody's: the back of its card says whose ("Sen. Ep. 66.3").
+        if card.get('t') == 's' and main.get('evidence'):
+            card['c'] = citation_label(main['evidence'][0])
+        # Up to two examples: the first, and with it one from an author the first does not have (or,
+        # failing that, from any other source), so that a reader who chose a source is more often
+        # shown its sentence. An example of ours has no label; the readers are never named (see
+        # composed()).
+        rows = [[phrase['latin'], phrase['english'], '' if composed(phrase) else plain(phrase['source'])] + ([offered(names)] if offered(names) else [])
+                for phrase, names in zip(record.get('phrases', []), examples)]
+        if rows:
+            authors = [{name for name in names if name not in PRACTICE_HANDBOOKS and name in index} for names in examples]
+            second = (next((row for row, names in zip(rows[1:], authors[1:]) if names - authors[0]), None)
+                      or next((row for row in rows[1:] if row[3:] and row[3:] != rows[0][3:]), None) or next(iter(rows[1:]), None))
+            card['q'] = [rows[0]] + ([second] if second else [])
+        cards.append(card)
+    return tags, cards
+
+
+def practice_data(site):
+    """The practice cards, as a script (so that practice.html also works from disk). Keys are short:
+    a card has i (record id), e (English, with its sense in brackets), p (part of speech), l (the
+    recommended Latin, in its dictionary form), g (its gloss, where it differs from the headword),
+    k (category), x (the other categories it is listed under), t (kind: none for a word, p for an
+    everyday phrase, s for a saying), o (1 for a form of our own), s (its sources, as numbers into
+    "sources"), c (for a saying, where it is cited from) and q (up to two examples: Latin, English,
+    source label or none for a sentence of ours, and that example's sources)."""
+    tags, cards = practice_cards(site)
+    categories = [[key, site['categories'][key]['latin'], site['categories'][key]['english']]
+                  for key in site['catalog']['filters'] if key != 'all']
+    data = {'categories': categories, 'sources': tags, 'cards': cards}
+    return 'window.lexiconPractice = ' + json.dumps(data, ensure_ascii=False, separators=(',', ':')) + ';\n'
+
+
 def render_index(root, site):
     filters = site['catalog']['filters']
     require(isinstance(filters, list) and all(isinstance(f, str) for f in filters), 'Invalid filters')
@@ -1486,7 +1723,7 @@ def fill(path, replacements):
 
 
 def render_sitemap(site):
-    pages = (['', 'how-we-decide.html', 'rulings.html', 'words.html', 'latin.html']
+    pages = (['', 'how-we-decide.html', 'rulings.html', 'words.html', 'latin.html', 'practice.html', 'hora.html']
              + [f'k/{key}.html' for key in site['categories']] + [f'c/{key}.html' for key in sorted(site['records'])]
              + [f'l/{slug}.html' for slug in sorted(w['slug'] for w in site['words'].values())])
     return ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
@@ -1513,6 +1750,11 @@ def build_site(root=ROOT):
         outputs[f'c/{key}.html'] = render_concept_page(record, site, site['categories'])
     for head, info in sorted(site['words'].items(), key=lambda item: item[1]['slug']):
         outputs[f'l/{info["slug"]}.html'] = render_word_page(head, info, site)
+    outputs['practice.html'] = fill(root / 'src/practice.html', {
+        'theme': THEME_INIT, 'app': app_head(''), 'header': site_header(''), 'footer': site_footer('')})
+    outputs['hora.html'] = fill(root / 'src/hora.html', {'app': app_head('')})
+    outputs['assets/practice.js'] = (root / 'src/practice.js').read_text(encoding='utf-8')
+    outputs['assets/practice-data.js'] = practice_data(site)
     outputs['sitemap.xml'] = render_sitemap(site)
     outputs['assets/lexicon.css'] = (root / 'src/styles.css').read_text(encoding='utf-8')
     outputs['assets/lexicon.js'] = (root / 'src/page.js').read_text(encoding='utf-8')

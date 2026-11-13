@@ -153,6 +153,12 @@ test('the lexicon is kept on the device: it opens and searches offline, as an ap
   assert.ok(await app.locator('#category-view a').count() > 0);
   await app.goto(pageUrl('c/pyjamas.html'));
   assert.equal(await app.locator('h1.hw').count(), 1);
+  // The practice pages too: the cards and the clock.
+  await app.goto(pageUrl('practice.html'));
+  assert.equal(await app.locator('#p-show').isVisible(), true);
+  await app.goto(pageUrl('hora.html'));
+  assert.equal(await app.locator('#go').isVisible(), true);
+  assert.equal(await app.evaluate(() => document.fonts.check('18px "Lexicon Serif"')), true);
   // A page never opened here says so, and leads back to the search.
   await app.goto(pageUrl('c/soap.html'));
   assert.match(await app.locator('h1').textContent(), /not saved on this device/);
@@ -467,21 +473,23 @@ test('on a phone the categories fold into a menu above the search', async () => 
 
 test('every page is usable on a phone: no sideways scrolling, 44px controls, no zoom on search', async () => {
   const pages = ['index.html', 'k/culina.html', 'words.html', 'latin.html', 'c/cooking-pot.html', 'c/tickle.html',
-                 'c/perhaps.html', 'l/fortasse.html', 'rulings.html', 'how-we-decide.html'];
+                 'c/perhaps.html', 'l/fortasse.html', 'rulings.html', 'how-we-decide.html', 'practice.html', 'hora.html'];
   for (const width of [320, 375, 390]) {
     await page.setViewportSize({ width, height: 800 });
     for (const path of pages) {
       await page.goto(pageUrl(path));
       assert.equal(await overflows(), false, `${path} overflows at ${width}px`);
       const small = await page.evaluate(() => [...document.querySelectorAll(
-        '.settings > summary, .head-search-field, .filter button, .cat-menu > summary, .cat-home, .clear, .page-contents a, .toc a, .hero h1 a, .site-name, .wlist a, .az-nav a, .az a, .suggest a')]
+        '.settings > summary, .head-search-field, .filter button, .cat-menu > summary, .cat-home, .clear, .page-contents a, .toc a, .hero h1 a, .site-name, .wlist a, .az-nav a, .az a, .suggest a, '
+        + '.plist a, #practice summary, #practice button, #practice a, .icon-btn, .mode-chip, .go, #answer, .keys button, .ref summary, .links a')]
         .filter(el => el.getClientRects().length && getComputedStyle(el).visibility !== 'hidden')
         .map(el => [el.textContent.trim().slice(0, 24), Math.round(el.getBoundingClientRect().height)])
         .filter(([, height]) => height < 44));
       assert.deepEqual(small, [], `${path} at ${width}px has controls under 44px`);
     }
   }
-  for (const [path, field] of [['index.html', '#search'], ['k/culina.html', '#search'], ['c/kind.html', '#site-search'], ['words.html', '#site-search']]) {
+  for (const [path, field] of [['index.html', '#search'], ['k/culina.html', '#search'], ['c/kind.html', '#site-search'], ['words.html', '#site-search'],
+                               ['practice.html', '#site-search'], ['hora.html', '#answer']]) {
     await page.goto(pageUrl(path));
     assert.ok(parseFloat(await page.locator(field).evaluate(el => getComputedStyle(el).fontSize)) >= 16, path);
   }
@@ -823,4 +831,455 @@ test('a tap anywhere on a search result opens its entry', async () => {
   await page.locator('.search-result .r-en').first().click();
   await page.waitForURL(/\/c\/[a-z0-9-]+\.html$/);
   await page.setViewportSize({ width: 1280, height: 900 });
+});
+
+// Practice --------------------------------------------------------------------------------------
+
+// What practice keeps on the device; each test starts without it.
+const PRACTICE_KEYS = ['lexicon-practice', 'lexicon-practice-deck', 'lexicon-seen', 'lexicon-lists'];
+const openPractice = async (fresh = true) => {
+  if (fresh) {
+    await page.goto(pageUrl('practice.html'));
+    await page.evaluate(keys => keys.forEach(key => localStorage.removeItem(key)), PRACTICE_KEYS);
+    await settle();
+  }
+  await page.goto(pageUrl('practice.html'));
+  await page.locator('#practice:not([hidden])').waitFor();
+};
+// The deck's line: [cards, due now, new].
+const deckCount = async () => {
+  const text = await page.locator('#p-count').textContent();
+  const found = /^([\d,]+) cards? · ([\d,]+) due now · ([\d,]+) new$/.exec(text);
+  assert.ok(found, text);
+  return found.slice(1).map(n => Number(n.replace(/,/g, '')));
+};
+const kept = key => page.evaluate(k => JSON.parse(localStorage.getItem(k)), key);
+const shownCard = async () => (await page.locator('#p-entry').getAttribute('href')).slice(2, -5);
+// Show each card of the round and mark it; the ids, in order.
+const playRound = async (mark = '#p-got') => {
+  const ids = [];
+  while (await page.locator('#p-show').isVisible()) {
+    await page.locator('#p-show').click();
+    ids.push(await shownCard());
+    await page.locator(mark).click();
+  }
+  return ids;
+};
+const openGroup = id => page.locator(`.pgroup:has(#${id}) > summary`).click();
+
+test('a practice round: the Latin on request, a mark that is saved, and a card that is not due again', async () => {
+  await openPractice();
+  const [total, due, fresh] = await deckCount();
+  assert.ok(total > 5000 && due === 0 && fresh === total, 'the deck starts as every word, all new');
+  assert.equal(await page.locator('#p-now').textContent(), 'Words');
+  assert.equal(await page.locator('#p-pos').textContent(), 'new · 1 of 12');
+  assert.equal(await page.locator('#p-back').isVisible(), false);
+  assert.ok((await page.locator('#p-cue').textContent()).length > 0);
+  await page.locator('#p-show').click();
+  assert.ok((await page.locator('#p-la').textContent()).length > 0);
+  assert.equal(await page.locator('#p-la').getAttribute('lang'), 'la');
+  const first = await shownCard();
+  assert.match(first, /^[a-z0-9-]+$/);
+  // Got it: a new card that is right first time comes back in a day.
+  const before = Date.now();
+  await page.locator('#p-got').click();
+  let saved = (await kept('lexicon-practice')).cards;
+  assert.equal(saved[first].b, 2);
+  assert.ok(saved[first].due >= before + 23 * 3600e3 && saved[first].t >= before);
+  assert.equal(await page.locator('#p-pos').textContent(), 'new · 2 of 12');
+  // The keyboard: Space shows, 1 is Again (back in ten minutes), 2 is Got it.
+  await page.locator('#p-cue').click();
+  await page.keyboard.press('Space');
+  assert.equal(await page.locator('#p-back').isVisible(), true);
+  const second = await shownCard();
+  await page.keyboard.press('1');
+  saved = (await kept('lexicon-practice')).cards;
+  assert.equal(saved[second].b, 0);
+  assert.ok(saved[second].due <= Date.now() + 11 * 60e3);
+  await page.keyboard.press('Enter');
+  const third = await shownCard();
+  await page.keyboard.press('2');
+  assert.equal((await kept('lexicon-practice')).cards[third].b, 2);
+  // The rest of the round, then its summary.
+  const rest = await playRound();
+  assert.equal(rest.length, 9);
+  assert.equal(new Set([first, second, third, ...rest]).size, 12);
+  assert.match(await page.locator('#p-cue').textContent(), /^Round done: Got it 11, Again 1\. [\d,]+ new\.$/);
+  assert.equal(await page.locator('#p-next').isVisible(), true);
+  assert.equal(await page.locator('#p-early').isVisible(), false);
+  assert.match(await page.locator('#p-meter-text').textContent(), /^In this deck: 0 known · 12 learning · [\d,]+ new$/);
+  // Opened again, nothing marked is due, so none of it comes back.
+  await openPractice(false);
+  assert.deepEqual(await deckCount(), [total, 0, total - 12]);
+  const next = await playRound();
+  assert.equal(next.length, 12);
+  assert.equal(next.some(id => [first, second, third, ...rest].includes(id)), false);
+  // Once its time has come, a card is due, and due cards come first.
+  await page.evaluate(id => {
+    const progress = JSON.parse(localStorage.getItem('lexicon-practice'));
+    progress.cards[id].due = Date.now() - 1000;
+    localStorage.setItem('lexicon-practice', JSON.stringify(progress));
+  }, first);
+  await settle();
+  await openPractice(false);
+  assert.equal((await deckCount())[1], 1);
+  assert.match(await page.locator('#p-pos').textContent(), /^review · 1 of 12$/);
+  await page.locator('#p-show').click();
+  assert.equal(await shownCard(), first);
+  await page.locator('#p-got').click();
+  assert.equal((await kept('lexicon-practice')).cards[first].b, 3);
+  await page.evaluate(keys => keys.forEach(key => localStorage.removeItem(key)), PRACTICE_KEYS);
+});
+
+test('the deck: a category and a source narrow it, choices in a group add up, and the choice is kept', async () => {
+  await openPractice();
+  const [words] = await deckCount();
+  await page.locator('#p-deck > summary').click();
+  const pick = (group, id) => page.locator(`#p-deck button[data-group="${group}"][data-id="${id}"]`).click();
+  const pressed = (group, id) => page.locator(`#p-deck button[data-group="${group}"][data-id="${id}"]`).getAttribute('aria-pressed');
+  // A category narrows; a second category adds to the first.
+  await openGroup('p-cat');
+  assert.equal(await page.locator('#p-cat button').count(), 20);
+  assert.match(await page.locator('#p-cat button[data-id="culina"]').textContent(), /^Culīna et potūsKitchen, meals & drinks[\d,]+$/);
+  await pick('cat', 'culina');
+  const [kitchen] = await deckCount();
+  assert.ok(kitchen > 100 && kitchen < words);
+  await pick('cat', 'vestitus');
+  const [both] = await deckCount();
+  assert.ok(both > kitchen && both < words);
+  await pick('cat', 'vestitus');
+  assert.deepEqual((await deckCount())[0], kitchen);
+  // A source narrows the category; a second source adds to the first; a work is part of its author.
+  await openGroup('p-src');
+  await pick('src', 'cicero');
+  const [cicero] = await deckCount();
+  assert.ok(cicero > 0 && cicero < kitchen);
+  assert.equal(await page.locator('#p-src button[data-id="cicero"] .pt-n').textContent(), String(cicero));
+  await pick('src', 'vergil');
+  const [mixed] = await deckCount();
+  assert.ok(mixed > cicero && mixed < kitchen, 'Cicero or Vergil, within the kitchen');
+  assert.equal(await page.locator('#p-now').textContent(), 'Words · Culīna et potūs · Cicero, Vergil');
+  assert.equal(await page.locator('#p-src-now').textContent(), 'Cicero, Vergil');
+  // Every card of the round is in the kitchen and from one of the two.
+  const round = await page.evaluate(() => {
+    const data = window.lexiconPractice, wanted = ['cicero', 'vergil'].map(id => data.sources.findIndex(source => source.id === id));
+    return { wanted, cards: Object.fromEntries(data.cards.map(card => [card.i, card])) };
+  });
+  await page.locator('#p-show').click();
+  const card = round.cards[await shownCard()];
+  assert.ok([card.k, ...(card.x || [])].includes('culina') && card.s.some(n => round.wanted.includes(n)) && !card.t);
+  // The choices are kept on the device.
+  await settle();
+  await openPractice(false);
+  assert.deepEqual((await deckCount())[0], mixed);
+  await page.locator('#p-deck > summary').click();
+  assert.deepEqual([await pressed('cat', 'culina'), await pressed('src', 'cicero'), await pressed('src', 'vergil'), await pressed('cat', 'vestitus')],
+                   ['true', 'true', 'true', 'false']);
+  await openGroup('p-cat'); await openGroup('p-src');
+  await pick('src', 'cicero'); await pick('src', 'vergil');
+  await page.locator('.pworks > summary').click();
+  await pick('src', 'vergil');
+  const [vergil] = await deckCount();
+  await pick('src', 'vergil'); await pick('src', 'vergil-georgics');
+  const [georgics] = await deckCount();
+  assert.ok(georgics > 0 && georgics <= vergil);
+  assert.equal(await page.locator('#p-src-now').textContent(), 'Vergil, Georgics');
+  await pick('src', 'vergil-georgics');
+  // Part of speech: a choice among the words, which adds up like the others.
+  await pick('part', 'n');
+  const [nouns] = await deckCount();
+  await pick('part', 'v');
+  const [nounsAndVerbs] = await deckCount();
+  assert.ok(nouns > 0 && nouns < nounsAndVerbs && nounsAndVerbs < kitchen);
+  await pick('part', 'n'); await pick('part', 'v'); await pick('part', 'o');
+  const [other] = await deckCount();
+  await pick('part', 'o'); await pick('part', 'a'); await pick('part', 'd');
+  assert.equal(nounsAndVerbs + other + (await deckCount())[0] >= kitchen, true, 'every word is a noun, a verb, an adjective, an adverb or something else');
+  await pick('part', 'a'); await pick('part', 'd');
+  // Kinds: the phrases are added to the words, and one kind is always chosen.
+  await pick('kind', 'p');
+  const [withPhrases] = await deckCount();
+  assert.ok(withPhrases > kitchen);
+  await pick('kind', 'w');
+  assert.equal(await page.locator('#p-now').textContent(), 'Everyday phrases · Culīna et potūs');
+  assert.equal(await page.locator('#p-part-line').isVisible(), false, 'parts of speech are a choice among the words');
+  assert.equal((await deckCount())[0], withPhrases - kitchen);
+  await pick('kind', 'p');
+  assert.equal(await pressed('kind', 'p'), 'true', 'the last kind cannot be taken away');
+  // The sayings by themselves, from every category.
+  await pick('cat', 'culina'); await pick('kind', 's'); await pick('kind', 'p');
+  assert.equal(await page.locator('#p-now').textContent(), 'Sayings and quotations');
+  await page.locator('#p-show').click();
+  assert.equal(round.cards[await shownCard()].t, 's');
+  await pick('kind', 'w'); await pick('kind', 's'); await pick('cat', 'culina'); await pick('part', 'n');
+  // Clearing the choices gives every word again.
+  await page.locator('#p-clear').click();
+  assert.deepEqual((await deckCount())[0], words);
+  assert.equal(await page.locator('#p-clear').isVisible(), false);
+  await page.evaluate(keys => keys.forEach(key => localStorage.removeItem(key)), PRACTICE_KEYS);
+});
+
+test('words looked up are remembered on the device and can be practised', async () => {
+  await openPractice();
+  for (const id of ['cooking-pot', 'soap', 'how-are-you']) await page.goto(pageUrl(`c/${id}.html`));
+  const seen = await kept('lexicon-seen');
+  assert.deepEqual(Object.keys(seen).sort(), ['cooking-pot', 'how-are-you', 'soap']);
+  assert.ok(Object.values(seen).every(when => Math.abs(when - Date.now()) < 60e3));
+  // A word's page is not an entry, and is not recorded.
+  await page.goto(pageUrl('l/caccabus.html'));
+  assert.equal(Object.keys(await kept('lexicon-seen')).length, 3);
+  await settle();
+  await openPractice(false);
+  await page.locator('#p-deck > summary').click();
+  await page.locator('#p-mine-group > summary').click();
+  const looked = page.locator('#p-mine button[data-id="seen"]');
+  assert.match(await looked.textContent(), /^Words I looked up2$/);
+  await looked.click();
+  assert.deepEqual(await deckCount(), [2, 0, 2]);
+  assert.equal(await page.locator('#p-now').textContent(), 'Words · Words I looked up');
+  // The phrase looked up is there once the phrases are chosen.
+  await page.locator('#p-kind button[data-id="p"]').click();
+  assert.deepEqual(await deckCount(), [3, 0, 3]);
+  const ids = await playRound();
+  assert.deepEqual([...ids].sort(), ['cooking-pot', 'how-are-you', 'soap']);
+  // Nothing due and nothing new: when the next card comes back, and practising early.
+  assert.equal(await page.locator('#p-cue').textContent(), 'Round done: Got it 3, Again 0. Nothing is due. The next card comes back in a day.');
+  assert.equal(await page.locator('#p-next').isVisible(), false);
+  await page.locator('#p-early').click();
+  assert.equal(await page.locator('#p-pos').textContent(), 'review · 1 of 3');
+  // Only the 500 most recent are kept.
+  await page.evaluate(() => {
+    const many = Object.fromEntries(Array.from({ length: 505 }, (_, n) => [`old-${n}`, 1000 + n]));
+    localStorage.setItem('lexicon-seen', JSON.stringify(many));
+  });
+  await settle();
+  await page.goto(pageUrl('c/tickle.html'));
+  const trimmed = await kept('lexicon-seen');
+  assert.equal(Object.keys(trimmed).length, 500);
+  assert.ok('tickle' in trimmed && 'old-504' in trimmed && !('old-0' in trimmed));
+  await page.evaluate(keys => keys.forEach(key => localStorage.removeItem(key)), PRACTICE_KEYS);
+});
+
+test('a list of one’s own: pasted, matched by id, English or Latin, chosen, kept and deleted', async () => {
+  await openPractice();
+  await page.locator('#p-deck > summary').click();
+  await page.locator('#p-kind button[data-id="s"]').click();   // a choice left over from before
+  await page.locator('#p-mine-group > summary').click();
+  await page.locator('#p-list-name').fill('Morning');
+  await page.locator('#p-list-text').fill('brush-teeth\nCooking Pot, SAPO\nsheet (of paper)\nhow are you?\nnonsenseword\n\nbrush-teeth');
+  // What the items should find: an id, an English headword without regard to case, a Latin head
+  // without its macrons, a headword with its sense, a phrase; and one item that is nowhere.
+  const expected = await page.evaluate(() => {
+    const fold = s => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/j/g, 'i').replace(/v/g, 'u');
+    const cards = window.lexiconPractice.cards;
+    return cards.filter(card => ['brush-teeth', 'cooking-pot', 'sheet-of-paper', 'how-are-you'].includes(card.i)
+      || fold(card.l.split(/[,(]/)[0].trim()) === 'sapo').map(card => card.i).sort();
+  });
+  assert.ok(expected.includes('soap') && expected.length >= 5);
+  await page.locator('#p-list-form button[type="submit"]').click();
+  assert.equal(await page.locator('#p-list-status').textContent(), 'Matched 5 of 6 items. Not found: nonsenseword. The deck is now “Morning”.');
+  // The new list is the deck, whole: its phrase with its words, and nothing left over to narrow it.
+  assert.equal(await page.locator('#p-now').textContent(), 'Words, Everyday phrases · Morning');
+  assert.deepEqual(await deckCount(), [expected.length, 0, expected.length]);
+  assert.match(await page.locator('#p-mine').textContent(), /Not found in the lexicon: nonsenseword/);
+  const lists = await kept('lexicon-lists');
+  assert.equal(lists.length, 1);
+  assert.deepEqual([lists[0].name, lists[0].items], ['Morning', ['brush-teeth', 'Cooking Pot', 'SAPO', 'sheet (of paper)', 'how are you?', 'nonsenseword']]);
+  assert.deepEqual((await playRound()).sort(), expected);
+  for (const field of ['#p-list-name', '#p-list-text']) {
+    assert.ok(parseFloat(await page.locator(field).evaluate(el => getComputedStyle(el).fontSize)) >= 16, field);
+  }
+  // Nothing is made of a list that finds nothing.
+  await page.locator('#p-list-name').fill('Nothing');
+  await page.locator('#p-list-text').fill('qqqq, zzzz');
+  await page.locator('#p-list-form button[type="submit"]').click();
+  assert.match(await page.locator('#p-list-status').textContent(), /^None of these items was found/);
+  assert.equal((await kept('lexicon-lists')).length, 1);
+  // Kept on the device, and chosen like any other choice; deleted with two taps.
+  await settle();
+  await openPractice(false);
+  await page.locator('#p-deck > summary').click();
+  await page.locator('#p-mine-group > summary').click();
+  const mine = page.locator('#p-mine button[data-group="mine"]:not([data-id="seen"])');
+  assert.equal(await mine.getAttribute('aria-pressed'), 'true');
+  assert.match(await mine.textContent(), /^Morning\d+$/);
+  await mine.click();
+  assert.equal(await page.locator('#p-mine-now').textContent(), 'not chosen');
+  await mine.click();
+  const remove = page.locator('#p-mine .p-delete');
+  await remove.click();
+  assert.equal(await remove.textContent(), 'Tap again to delete');
+  assert.equal((await kept('lexicon-lists')).length, 1);
+  await remove.click();
+  assert.equal(await page.locator('#p-mine .p-delete').count(), 0);
+  assert.deepEqual(await kept('lexicon-lists'), []);
+  assert.deepEqual((await kept('lexicon-practice-deck')).mine, []);
+  assert.equal(await page.locator('#p-mine-now').textContent(), 'not chosen');
+  await page.evaluate(keys => keys.forEach(key => localStorage.removeItem(key)), PRACTICE_KEYS);
+});
+
+test('progress is exported as text and imported, also from the hub drill; the later answer wins', async () => {
+  await openPractice();
+  await page.locator('#p-backup > summary').click();
+  const give = async record => {
+    await page.locator('#p-import-text').fill(JSON.stringify(record));
+    await page.locator('#p-import').click();
+    return page.locator('#p-import-status').textContent();
+  };
+  const day = 24 * 3600e3, now = Date.now();
+  // The hub's record: word cards are "v:<record id>"; its sentence cards and unknown words are left out.
+  assert.equal(await give({ cards: { 'v:cooking-pot': { b: 3, due: now + 3 * day, t: 1000 }, 'v:soap': { b: 0, due: now - 1000, t: 1000 },
+                                     'v:no-such-record': { b: 2, due: now + day, t: 1000 }, 'quantitas-12': { b: 4, due: now + day, t: 1000 },
+                                     'v:perhaps': { b: 'three', due: now } }, at: 5 }),
+               'Imported 2 cards; 3 not in the lexicon.');
+  let cards = (await kept('lexicon-practice')).cards;
+  assert.deepEqual(Object.keys(cards).sort(), ['cooking-pot', 'soap']);
+  assert.deepEqual(cards['cooking-pot'], { b: 3, due: now + 3 * day, t: 1000 });
+  assert.deepEqual((await deckCount()).slice(1, 2), [1], 'soap is due');
+  assert.match(await page.locator('#p-meter-text').textContent(), /^In this deck: 1 known · 1 learning · /);
+  // An older answer does not replace a later one; a later one does.
+  assert.equal(await give({ cards: { 'v:cooking-pot': { b: 0, due: 0, t: 500 } } }), 'Imported 0 cards; 1 left as they were, marked here more recently.');
+  assert.equal((await kept('lexicon-practice')).cards['cooking-pot'].b, 3);
+  assert.equal(await give({ cards: { 'cooking-pot': { b: 5, due: now + 16 * day, t: 2000 } } }), 'Imported 1 card.');
+  assert.equal((await kept('lexicon-practice')).cards['cooking-pot'].b, 5);
+  assert.match(await give('not progress'), /^That is not an export of progress/);
+  // Export gives it back, with the reader's lists.
+  await page.evaluate(() => localStorage.setItem('lexicon-lists', JSON.stringify([{ id: 'l1', name: 'Kitchen', items: ['soap'] }])));
+  await settle();
+  await openPractice(false);
+  await page.locator('#p-backup > summary').click();
+  assert.equal(await page.locator('#p-export-box').isVisible(), false);
+  await page.locator('#p-export').click();
+  const exported = JSON.parse(await page.locator('#p-export-text').inputValue());
+  assert.equal(exported.cards['cooking-pot'].b, 5);
+  assert.deepEqual(exported.lists, [{ name: 'Kitchen', items: ['soap'] }]);
+  assert.equal(await page.locator('#p-copy').isVisible(), true);
+  // On another device (nothing kept), the export brings both back.
+  await page.evaluate(keys => keys.forEach(key => localStorage.removeItem(key)), PRACTICE_KEYS);
+  await settle();
+  await openPractice(false);
+  await page.locator('#p-backup > summary').click();
+  assert.equal(await give(exported), 'Imported 2 cards; 1 list added.');
+  assert.equal((await kept('lexicon-lists'))[0].name, 'Kitchen');
+  assert.equal((await kept('lexicon-practice')).cards.soap.b, 0);
+  await page.evaluate(keys => keys.forEach(key => localStorage.removeItem(key)), PRACTICE_KEYS);
+});
+
+test('practice on a phone: every choice open, nothing scrolls sideways, 44px controls, 16px fields', async () => {
+  for (const width of [320, 390]) {
+    await page.setViewportSize({ width, height: 760 });
+    await openPractice();
+    await page.evaluate(() => localStorage.setItem('lexicon-lists', JSON.stringify([{ id: 'l1', name: 'A list with a rather long name to wrap', items: ['soap', 'nowhere-to-be-found'] }])));
+    await settle();
+    await openPractice(false);
+    await page.locator('#p-show').click();
+    for (const summary of await page.locator('#practice summary').all()) await summary.click();
+    await page.locator('#p-export').click();
+    assert.equal(await overflows(), false, `practice.html overflows at ${width}px`);
+    const small = await page.evaluate(() => [...document.querySelectorAll('#practice button, #practice summary, #practice a, #practice input, #practice textarea')]
+      .filter(el => el.getClientRects().length)
+      .map(el => [el.textContent.trim().slice(0, 24) || el.id, Math.round(el.getBoundingClientRect().height)])
+      .filter(([, height]) => height < 44));
+    assert.deepEqual(small, [], `practice.html at ${width}px has controls under 44px`);
+    const fields = await page.locator('#practice input, #practice textarea').evaluateAll(nodes => nodes.map(n => parseFloat(getComputedStyle(n).fontSize)));
+    assert.ok(fields.length >= 4 && fields.every(size => size >= 16));
+    // The marks stay within reach: at the foot of the screen when the card runs long.
+    const marks = await page.locator('#p-marks').boundingBox();
+    assert.ok(marks.y + marks.height <= 760 + 1);
+  }
+  await page.evaluate(keys => keys.forEach(key => localStorage.removeItem(key)), PRACTICE_KEYS);
+});
+
+test('practice works when nothing can be saved, and says so', async () => {
+  const context = await browser.newContext({ viewport: { width: 390, height: 760 }, serviceWorkers: 'block' });
+  const blocked = await context.newPage();
+  await blocked.addInitScript(() => Object.defineProperty(window, 'localStorage', { get() { throw new Error('Storage blocked'); } }));
+  await blocked.goto(pageUrl('practice.html'));
+  await blocked.locator('#p-show').click();
+  assert.equal(await blocked.locator('#p-saved').isVisible(), false);
+  await blocked.locator('#p-got').click();
+  assert.equal(await blocked.locator('#p-saved').isVisible(), true);
+  assert.equal(await blocked.locator('#p-pos').textContent(), 'new · 2 of 12');
+  await blocked.goto(pageUrl('c/soap.html'));
+  assert.match(await blocked.locator('h1').textContent(), /^soap/);
+  await context.close();
+});
+
+test('practice is reached from the front page and from every footer, never from the header', async () => {
+  const links = page.locator('.plist a');
+  assert.deepEqual(await links.evaluateAll(nodes => nodes.map(n => n.getAttribute('href'))), ['practice.html', 'hora.html']);
+  const practice = await page.locator('#practice-title').boundingBox(), contents = await page.locator('#contents-title').boundingBox();
+  assert.ok(practice.y < contents.y, 'above the list of categories');
+  await links.first().click();
+  await page.waitForURL(/practice\.html$/);
+  assert.equal(await page.locator('h1').textContent(), 'Practice');
+  await page.locator('.p-more a').click();
+  await page.waitForURL(/hora\.html$/);
+  for (const [path, href] of [['index.html', 'practice.html'], ['c/kind.html', '../practice.html'], ['k/culina.html', '../practice.html'], ['practice.html', 'practice.html']]) {
+    await page.goto(pageUrl(path));
+    assert.equal(await page.locator('footer').getByRole('link', { name: 'Practice', exact: true }).getAttribute('href'), href, path);
+    assert.equal(await page.locator('header.site-top a[href*="practice"]').count(), 0, path);
+  }
+  // Without scripts the page says what it needs and leads elsewhere.
+  const context = await browser.newContext({ javaScriptEnabled: false });
+  const plain = await context.newPage();
+  await plain.goto(pageUrl('practice.html'));
+  assert.equal(await plain.locator('.noscript-note').isVisible(), true);
+  assert.equal(await plain.locator('#practice').isVisible(), false);
+  await context.close();
+});
+
+// The clock ---------------------------------------------------------------------------------------
+
+test('the clock game asks nothing of other sites, keeps its score, and leads back to the lexicon', async () => {
+  const context = await browser.newContext({ viewport: { width: 390, height: 760 }, serviceWorkers: 'block' });
+  const clock = await context.newPage();
+  const requested = [];
+  clock.on('request', request => requested.push(request.url()));
+  await clock.goto(pageUrl('index.html'));
+  await clock.evaluate(() => { localStorage.setItem('hcu-mode', '"w2n"'); localStorage.setItem('hcu-lang', '"en"'); });
+  await clock.goto(pageUrl('hora.html'));
+  await clock.locator('#go').waitFor();
+  await clock.waitForLoadState('networkidle');
+  assert.ok(requested.some(address => address.endsWith('assets/fonts/lexicon-serif-400.woff2')), 'the lexicon’s own serif');
+  assert.deepEqual(requested.filter(address => !address.startsWith(base)), []);
+  assert.equal(await clock.title(), 'Hōra cum ūnciā · Lexicon Latīnitātis Cotīdiānae');
+  assert.equal(await clock.locator('link[rel="manifest"]').getAttribute('href'), 'manifest.webmanifest');
+  // Name to number, in English: a deūnx is eleven twelfths.
+  const twelfths = { 'ūncia': 1, 'sextāns': 2, 'quadrāns': 3, 'triēns': 4, 'quīncūnx': 5, 'sēmis': 6, 'septūnx': 7, 'bēs': 8, 'dōdrāns': 9, 'dēxtāns': 10, 'deūnx': 11 };
+  assert.equal(await clock.locator('#cueLabel').textContent(), 'How many twelfths?');
+  assert.equal(await clock.locator('#keys').isVisible(), false);
+  await clock.locator('#answer').fill(String(twelfths[await clock.locator('#cue').textContent()]));
+  await clock.locator('#go').click();
+  assert.match(await clock.locator('#fb').textContent(), /^Correct!/);
+  assert.equal(await clock.locator('#tOk').textContent(), '1');
+  assert.equal((await clock.evaluate(() => JSON.parse(localStorage.getItem('hcu-score')))).ok, 1);
+  await clock.locator('#go').click();
+  await clock.locator('#answer').fill('99');
+  await clock.locator('#go').click();
+  assert.match(await clock.locator('#fb').textContent(), /^Not quite\./);
+  // The menu: the drill, the options, the language; every control big enough for a thumb.
+  await clock.locator('#openMenu').click();
+  await clock.waitForTimeout(300);
+  const small = await clock.evaluate(() => [...document.querySelectorAll('.icon-btn, .opt, .seg button, .reset, .go, #answer, .mode-chip, .ref summary, .links a')]
+    .filter(el => el.getClientRects().length)
+    .map(el => [el.textContent.trim().slice(0, 24) || el.id, Math.round(el.getBoundingClientRect().height)])
+    .filter(([, height]) => height < 44));
+  assert.deepEqual(small, []);
+  await clock.locator('.seg button[data-lang="la"]').click();
+  assert.equal(await clock.locator('html').getAttribute('lang'), 'la');
+  await clock.locator('#closeMenu').click();
+  assert.equal(await clock.locator('#cueLabel').textContent(), 'Quot ūnciae?');
+  assert.equal(await clock.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
+  // A theme chosen in the lexicon holds here; without one the game follows the system.
+  assert.equal(await clock.locator('html').getAttribute('data-theme'), null);
+  await clock.evaluate(() => localStorage.setItem('lexicon-theme', 'dark'));
+  await clock.reload();
+  assert.equal(await clock.locator('html').getAttribute('data-theme'), 'dark');
+  // Back to the lexicon, and on to the vocabulary.
+  assert.equal(await clock.locator('.links a[href="index.html"]').isVisible(), true);
+  await clock.locator('.links a[href="practice.html"]').click();
+  await clock.waitForURL(/practice\.html$/);
+  assert.equal(await clock.locator('#p-show').isVisible(), true);
+  await context.close();
 });

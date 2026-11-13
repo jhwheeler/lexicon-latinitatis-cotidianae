@@ -45,6 +45,12 @@ class BuildTests(unittest.TestCase):
     def write(self, path, data):
         (self.root / path).write_text(json.dumps(data, ensure_ascii=False), encoding='utf-8')
 
+    def practice(self, outputs):
+        """The practice cards, read back from their script."""
+        script = outputs['assets/practice-data.js']
+        self.assertTrue(script.startswith('window.lexiconPractice = ') and script.endswith(';\n'))
+        return json.loads(script[len('window.lexiconPractice = '):-2])
+
     def test_committed_output_matches_sources(self):
         self.assertEqual(builder.build(), (ROOT / 'index.html').read_text(encoding='utf-8'))
         for path, text in builder.build_site().items():
@@ -391,6 +397,10 @@ class BuildTests(unittest.TestCase):
         for hidden in ('Libellus', 'Theodōrus et pater', 'Culīna Theodōrī', '<span class="sc">Sources</span>'):
             self.assertNotIn(hidden, page)
         self.assertNotIn('Libellus', outputs['assets/search-data.js'].split('"id":"c-perhaps"')[1].split('"id":')[0])
+        # Nor do the practice cards: its two examples are sentences of ours, with no label.
+        card = next(card for card in self.practice(outputs)['cards'] if card['i'] == 'perhaps')
+        self.assertEqual([example[2] for example in card['q']], ['', ''])
+        self.assertNotRegex(outputs['assets/practice-data.js'], r'Libellus [IVX]|Theodōrus et pater|Culīna Theodōrī')
         # With another source beside the readers, only that one is shown.
         record['sources'].append('Anna Andresian, <em>Vocabula Picta</em> (2014), p. 43.')
         self.save_record(record)
@@ -444,7 +454,8 @@ class BuildTests(unittest.TestCase):
         self.assertNotIn('{{', worker)
         files = json.loads(re.search(r'const FILES = (\[.*?\]);', worker)[1])
         for path in ('index.html', 'k/sermo.html', 'assets/search-data.js', 'assets/search.js', 'assets/lexicon.css',
-                     'assets/fonts/lexicon-serif-400.woff2', 'manifest.webmanifest'):
+                     'assets/fonts/lexicon-serif-400.woff2', 'manifest.webmanifest',
+                     'practice.html', 'hora.html', 'assets/practice.js', 'assets/practice-data.js'):
             self.assertIn(path, files)
         self.assertTrue(all(path in outputs for path in files))
         self.assertFalse(any(path.startswith(('c/', 'l/')) for path in files))   # saved as they are read
@@ -454,6 +465,106 @@ class BuildTests(unittest.TestCase):
         self.save_record(record)
         version = lambda text: re.search(r"const VERSION = '(\w+)'", text)[1]
         self.assertNotEqual(version(worker), version(builder.build_site(self.root)['sw.js']))
+
+    # Practice ----------------------------------------------------------------------------
+
+    def test_practice_cards_are_one_per_record_with_kind_and_sources(self):
+        sense = self.record('sheet-of-paper')
+        outputs = builder.build_site(self.root)
+        data = self.practice(outputs)
+        cards = {card['i']: card for card in data['cards']}
+        self.assertEqual(len(cards), len(list((self.root / 'data/concepts').glob('*.json'))))
+        # A card: the English cue, the part of speech, the recommended Latin in its dictionary form, the category.
+        pot = cards['cooking-pot']
+        self.assertEqual((pot['e'], pot['p'], pot['l'], pot['k']), ('cooking pot', 'noun', 'caccabus (cacabus), caccabī m.', 'culina'))
+        self.assertNotIn('t', pot)                         # a word
+        self.assertNotIn('g', pot)                         # no gloss beyond the headword
+        self.assertLessEqual(len(pot['q']), 2)
+        self.assertEqual(cards['perhaps']['g'], 'maybe, perhaps')
+        self.assertEqual(cards['sheet-of-paper']['e'], f'{sense["english"]} ({sense["sense"]})')
+        self.assertEqual(cards['soap']['x'], self.record('soap')['also_under'])
+        # Kinds: a phrase is an everyday phrase unless it is a saying.
+        for key, kind in (('how-are-you', 'p'), ('see-you-tomorrow', 'p'), ('its-too-early', 'p'), ('go-to-the-devil', 'p'),
+                          ('practice-makes-perfect', 's'), ('the-bigger-they-come', 's'), ('a-great-man-can-come-from-a-hovel', 's'),
+                          ('who-will-guard-the-guards', 's')):
+            with self.subTest(key=key):
+                self.assertEqual(cards[key].get('t'), kind)
+        self.assertEqual(cards['a-great-man-can-come-from-a-hovel']['c'], 'Sen. Ep. 66.3')
+        # Sources: the author, and the work under the author; only those with enough cards are offered.
+        names = [source['id'] for source in data['sources']]
+        for key in ('cicero', 'vergil', 'vergil-aeneid', 'plautus', 'traupman', 'pliny-elder', 'pliny-younger'):
+            self.assertIn(key, names)
+        aeneid = data['sources'][names.index('vergil-aeneid')]
+        self.assertEqual((aeneid['name'], aeneid['of']), ('Aeneid', names.index('vergil')))
+        self.assertTrue(all(source['n'] >= builder.PRACTICE_SOURCE_MIN for source in data['sources']))
+        counted = sum(1 for card in data['cards'] if names.index('vergil') in card.get('s', []))
+        self.assertEqual(counted, data['sources'][names.index('vergil')]['n'])
+        tags = {names[n] for n in cards['perhaps']['s']}
+        self.assertLessEqual({'vergil', 'vergil-aeneid', 'cicero', 'traupman'}, tags)
+        quoted = next(example for example in cards['perhaps']['q'] if example[2].startswith('Verg. A.'))
+        self.assertEqual({names[n] for n in quoted[3]}, {'vergil', 'vergil-aeneid'})
+        self.assertEqual([category[0] for category in data['categories']], [key for key in self.read('data/catalog.json')['filters'] if key != 'all'])
+        # The pages: reached from the footer of every page and from the front page, never from the header.
+        self.assertIn('<a href="practice.html"><span class="toc-la">Vocabulary</span>', outputs['index.html'])
+        self.assertIn('<a href="hora.html"><span class="toc-la" lang="la">Hōra cum ūnciā</span>', outputs['index.html'])
+        for path, up in (('index.html', ''), ('c/perhaps.html', '../'), ('k/sermo.html', '../'), ('practice.html', '')):
+            with self.subTest(path=path):
+                page = outputs[path]
+                self.assertIn(f'<a href="{up}practice.html">Practice</a>', page[page.rindex('<footer'):])
+                self.assertNotIn('practice.html', page[page.index('<header class="site-top'):page.index('</header>')])
+        for path in ('practice.html', 'hora.html'):
+            self.assertIn(f'cotidianae/{path}</loc>', outputs['sitemap.xml'])
+            self.assertIn('<link rel="manifest" href="manifest.webmanifest">', outputs[path])
+        # The clock asks nothing of other sites: its only address is its own.
+        hora = outputs['hora.html']
+        self.assertEqual(re.findall(r'https?://[^"\s)]+', hora), [builder.SITE_URL + 'hora.html'])
+        self.assertIn('url(assets/fonts/lexicon-serif-400.woff2)', hora)
+        self.assertNotIn('claude:', hora)
+        self.assertIn("navigator.serviceWorker.register('sw.js')", hora)
+
+    def test_sources_are_read_from_the_opening_of_a_citation(self):
+        cases = {
+            'Verg. G. 3.284: <span lang="la">sed fugit intereā; fugit irreparābile tempus</span> (Lewis &amp; Short)': ['vergil', 'vergil-georgics'],
+            'Cels. 2.30; Plin. NH 26.58 (Lewis &amp; Short, s.v. <span lang="la">pulticula</span>)': ['celsus', 'pliny-elder'],
+            'Plin. Ep. 1.11.1: <span lang="la">ōlim mihi nūllās epistulās mittis</span>': ['pliny-younger'],
+            'Cic. de Or. 2.141 (Lewis &amp; Short)': ['cicero'],          # too few cards for a tag of its own, but not the Orator
+            'Cic. Q. fr. 1.1.4': ['cicero', 'cicero-quintus'],
+            'Hor. S. 1.3.137': ['horace', 'horace-satires'],
+            'Ter. Ph. 950': ['terence', 'terence-phormio'],
+            'Traupman 73': ['traupman'],
+            'Lewis &amp; Short s.v. <span lang="la">susque dēque</span>, from Gellius': ['lewis-short'],
+            'M-O s.v. soap bubble': ['morgan-owens'],
+            'Catull. 85.1': ['catullus'],
+            'Mart. Cap. 3.277': [],
+            'Jo. 6, 20: <span lang="la">Ego sum, nōlīte timēre.</span>': ['vulgate', 'vulgate-john'],
+            'Vulg. Ps. 122 (123), 3': ['vulgate', 'vulgate-psalms'],
+            'composed': [],
+        }
+        for citation, tags in cases.items():
+            with self.subTest(citation=citation):
+                self.assertEqual(builder.source_tags(citation), tags)
+        self.assertEqual(builder.citation_label('Suet. Vesp. 16 (Lewis &amp; Short s.v. <span lang="la">vulpēs</span>): <span lang="la">vulpem pilum mūtāre</span>'),
+                         'Suet. Vesp. 16')
+
+    def test_a_phrase_is_a_saying_or_an_everyday_phrase(self):
+        def kind(english, latin, evidence, pos='phrase'):
+            return builder.practice_kind({'english': english, 'pos': pos,
+                                          'terms': [{'latin': latin, 'status': 'recommended', 'period': 'classical', 'evidence': evidence}]})
+        self.assertEqual(kind('soap', 'sāpō, sāpōnis m.', ['Plin. NH 28.191'], pos='noun'), 'w')
+        # Traupman's list of proverbs and sayings (pp. 254–259), and the lines of Publilius Syrus.
+        self.assertEqual(kind('practice makes perfect', 'Exercitātiō optima magistra est.', ['Traupman 258']), 's')
+        self.assertEqual(kind('a woman loves or hates', 'Aut amat aut ōdit mulier, nīl est tertium.', ['Publil. Sent. A 6']), 's')
+        self.assertEqual(kind('how are you?', 'Quid agis?', ['Traupman 15, 17–18', 'Traupman 330']), 'p')
+        self.assertEqual(kind('no, thank you', 'benignē', ['Traupman 250, 393']), 'p')
+        # Cited from authors alone: a statement is a saying, a turn of conversation is not.
+        self.assertEqual(kind('time will tell', 'Vēritātem diēs aperit.', ['Sen. Ira 2.22.2']), 's')
+        self.assertEqual(kind('who will guard the guards?', 'Quis custōdiet ipsōs custōdēs?', ['Juv. 6.347–348']), 's')
+        self.assertEqual(kind('it’s too early', 'Nimis paene māne est.', ['Plaut. Persa 114']), 'p')
+        self.assertEqual(kind('see you soon', 'Jam tē vidēbō.', ['Cic. Att. 12.2.2']), 'p')
+        self.assertEqual(kind('all gone', 'Nihil superest.', ['Nep. Alc. 8.1']), 'p')
+        self.assertEqual(kind('in short', 'ad summam', ['Cic. Att. 14.1.1', 'Traupman 108, 408']), 'p')
+        self.assertEqual(kind('tell me a story!', 'Narrā mihi fābulam!', []), 'p')
+        self.assertEqual(kind('to make a long story short', 'nē longum faciam', ['Hor. S. 1.3.137'], pos=['adverb', 'phrase']), 'p')
 
     def test_record_file_name_must_match_id(self):
         record = self.record('perhaps')

@@ -408,7 +408,26 @@ class BuildTests(unittest.TestCase):
                 self.assertIn(f'<li data-kind="phrase"><a href="{link}">', outputs[path])
                 self.assertIn('<li data-kind="word">', outputs[path])
                 self.assertIn('data-kind-filter hidden>', outputs[path])
-        self.assertNotIn('data-kind-filter', outputs['latin.html'])
+        # The Latin index has the phrase too, whole, leading to its entry, beside the words.
+        latin = outputs['latin.html']
+        self.assertIn('data-kind-filter hidden>', latin)
+        self.assertIn('<li data-kind="word"><a href="l/', latin)
+        record['terms'][0]['latin'] = 'Fortasse ita est.'
+        self.save_record(record)
+        latin = builder.build_site(self.root)['latin.html']
+        self.assertIn('<li data-kind="phrase"><a href="c/perhaps.html"><span class="w-la" lang="la">Fortasse ita est.</span>', latin)
+
+    def test_the_indexes_run_from_a_to_z(self):
+        outputs = builder.build_site(self.root)
+        for path in ('latin.html', 'words.html'):
+            with self.subTest(path=path):
+                letters = re.findall(r'<section class="az-letter" id="letter-(.)">', outputs[path])
+                self.assertEqual(letters, sorted(letters))
+                self.assertEqual(len(letters), len(set(letters)))
+        # An enclitic stands among the words of its letter, not ahead of the alphabet.
+        latin = outputs['latin.html']
+        self.assertLess(latin.index('id="letter-a"'), latin.index('lang="la">-ne<'))
+        self.assertLess(latin.index('id="letter-n"'), latin.index('lang="la">-ne<'))
 
     def test_sources_are_citations_and_each_work_is_cited_once(self):
         traupman = 'John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>'

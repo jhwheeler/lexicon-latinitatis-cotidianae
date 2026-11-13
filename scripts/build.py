@@ -1364,20 +1364,40 @@ def render_az_pages(site):
         return (f'<nav class="az-nav" aria-label="Letters">{nav}</nav>'
                 + ''.join(f'<section class="az-letter" id="letter-{c}"><h2>{c.upper()}</h2>{render(group)}</section>'
                           for c, group in groups.items()))
-    first = lambda text: (re.sub(r'[^a-z]', '', text) or '#')[0]
+    # The order is by letters alone: -ne, -que and -ve stand among the words in n, q and v, where a
+    # reader looks for them, not ahead of a (they used to put N, Q and V first; Jack, 13 November 2026).
+    letters_of = lambda text: re.sub(r'[^a-z]', '', text) or '#'
+    first = lambda text: letters_of(text)[0]
+    rows = sorted(rows, key=lambda row: (letters_of(row[0]), row[0], row[4]))
     english = letters(rows, lambda row: first(row[0]), lambda group: word_list(group, '', category_of).replace('class="wlist"', 'class="wlist az-list"', 1))
-    words = sorted(site['words'].items(), key=lambda item: (fold(item[0]), item[1]['slug']))
+    words = sorted(site['words'].items(), key=lambda item: (letters_of(fold(item[0])), fold(item[0]), item[1]['slug']))
+
+    # The Latin index lists the words, each with its page, and the phrases too (Jack, 13 November
+    # 2026): the Latin of every record that is a phrase, whole, leading to its entry, so that the
+    # sayings can be found from their Latin and browsed with the same filter as the English index.
+    latin_rows = []
+    for head, info in words:
+        # Each meaning once, though several records gloss the word alike.
+        meanings = ', '.join(dict.fromkeys(part.strip() for r, t in info['uses']
+                                           for part in re.split(r'[,;] ', t.get('gloss', r['english'])) if part.strip()))
+        latin_rows.append((letters_of(fold(head)), fold(head), head, meanings, f'l/{info["slug"]}.html', 'word'))
+    phrases = 0
+    for record in site['records'].values():
+        if not is_phrase(record):
+            continue
+        for term in ordered_terms(record):
+            if term['status'] == 'avoid' or ' ' not in term['latin']:
+                continue   # a phrase of one word (Salvē!) is in the list already, as a word
+            phrases += 1
+            latin_rows.append((letters_of(fold(term['latin'])), fold(term['latin']), term['latin'],
+                               term.get('gloss', record['english']), f'c/{record["id"]}.html', 'phrase'))
+    latin_rows.sort()
 
     def latin_list(group):
-        items = []
-        for head, info in group:
-            # Each meaning once, though several records gloss the word alike.
-            meanings = ', '.join(dict.fromkeys(part.strip() for r, t in info['uses']
-                                               for part in re.split(r'[,;] ', t.get('gloss', r['english'])) if part.strip()))
-            items.append(f'<li><a href="l/{info["slug"]}.html"><span class="w-la" lang="la">{escape(head)}</span>'
-                         f'<span class="w-en">{escape(meanings)}</span></a></li>')
-        return '<ul class="wlist az-list latin">' + ''.join(items) + '</ul>'
-    latin = letters(words, lambda item: first(fold(item[0])), latin_list)
+        return '<ul class="wlist az-list latin">' + ''.join(
+            f'<li data-kind="{kind}"><a href="{href}"><span class="w-la" lang="la">{escape(text)}</span>'
+            f'<span class="w-en">{escape(english)}</span></a></li>' for _, _, text, english, href, kind in group) + '</ul>'
+    latin = letters(latin_rows, lambda row: row[0][0], latin_list)
     pages = {}
     pages['words.html'] = page_shell(f'English words A–Z · {SITE_NAME}',
                                      'Every English headword of the lexicon, from A to Z, with its Latin.', 'words.html', '',
@@ -1385,8 +1405,9 @@ def render_az_pages(site):
                                      'For the Latin words, see <a href="latin.html">the Latin index</a>.</p>' + KIND_FILTER + english)
     pages['latin.html'] = page_shell(f'Latin words A–Z · {SITE_NAME}',
                                      'Every Latin word that heads an entry of the lexicon, from A to Z, with its meanings.', 'latin.html', '',
-                                     f'<h1 class="page-title">Latin words, A–Z</h1><p class="lead">{len(words)} words, each with a page '
-                                     'that gathers its entries. For the English words, see <a href="words.html">the English index</a>.</p>' + latin)
+                                     f'<h1 class="page-title">Latin words, A–Z</h1><p class="lead">{len(words):,} words, each with a page '
+                                     f'that gathers its entries, and {phrases:,} phrases. For the English words, see '
+                                     '<a href="words.html">the English index</a>.</p>' + KIND_FILTER + latin)
     return pages
 
 

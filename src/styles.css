@@ -133,7 +133,8 @@ html:not(.js) :is(.toolbar, .meta, #search-results, .empty, .settings) { display
 .toc-n { color:var(--muted); font:400 1rem var(--sans); font-variant-numeric:tabular-nums; }
 .toc-en { grid-column:1 / -1; margin-top:1px; color:var(--muted); font:400 1rem/1.35 var(--sans); }
 .toc a:hover .toc-la { text-decoration:underline; text-decoration-color:var(--accent); text-decoration-thickness:1px; text-underline-offset:.2em; }
-.az { margin:22px 0 0; color:var(--soft); font:400 1.05rem/1.5 var(--sans); }
+/* The A–Z lists stand above the categories, where they are found at once (Jack, 13 November 2026). */
+.az { margin:-14px 0 22px; color:var(--soft); font:400 1.05rem/1.5 var(--sans); }
 .az a { display:inline-flex; align-items:center; min-height:44px; }
 
 /* A category's page: the categories beside its list (on a phone, in a menu above it) ------- */

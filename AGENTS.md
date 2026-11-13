@@ -55,7 +55,7 @@ Jack's requirements (13 November 2026): the search must feel instant, with no ba
 
 ## Words or phrases
 
-Jack's request (13 November 2026): the category lists and the English A–Z have a filter, All / Words / Phrases, so the sayings can be browsed by themselves and the words are not buried under them. A record is a phrase when its `pos` is `phrase` (or includes it); give every saying or sentence that part of speech. The choice is kept on the device and carries from one list to the next.
+Jack's request (13 November 2026): the category lists and both A–Z indexes have a filter, All / Words / Phrases, so the sayings can be browsed by themselves and the words are not buried under them. A record is a phrase when its `pos` is `phrase` (or includes it); give every saying or sentence that part of speech. The choice is kept on the device and carries from one list to the next. The Latin index lists the Latin of every phrase record beside the words, so phrases can be found from their Latin. The front page links to the A–Z indexes above the categories.
 
 ## Sources are citations
 

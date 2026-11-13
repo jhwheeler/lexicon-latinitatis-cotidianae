@@ -15,10 +15,10 @@
       "status": "recommended",
       "period": "ours",
       "gloss": "fault or error",
-      "comment": "Applied to a software bug.",
       "evidence": [
         "Traupman 310"
-      ]
+      ],
+      "comment": "Classically a fault or slip in writing (Cic. Verr. 2.2.104, Lewis &amp; Short); applied here to a fault in a program. Traupman and Morgan–Owens have no word for a software bug: Traupman’s bug is the insect, <span lang=\"la\">cīmex</span> (p. 284), and his <span lang=\"la\">mendum</span> an error in writing (p. 310)."
     },
     {
       "latin": "menda, mendae f.",
@@ -26,16 +26,6 @@
       "period": "classical",
       "gloss": "a fault or blemish",
       "comment": "A related form.",
-      "evidence": [
-        "Traupman 310"
-      ]
-    },
-    {
-      "latin": "vitium, vitiī n.",
-      "status": "alternative",
-      "period": "ours",
-      "gloss": "defect or fault",
-      "comment": "Applied here to software; plural <strong lang=\"la\">vitia</strong>. Our existing preferred everyday “bug” is <strong lang=\"la\">mendum, mendī n.</strong>; keeping that choice makes related phrases consistent.",
       "evidence": [
         "Traupman 310"
       ]
@@ -56,11 +46,6 @@
       "latin": "mendum invenīre / reperīre",
       "english": "find a bug",
       "source": "composed"
-    },
-    {
-      "latin": "vitium invenīre",
-      "english": "find a bug (an earlier alternative)",
-      "source": "composed"
     }
   ],
   "related": [
@@ -71,10 +56,9 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/mendum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mendum</a> · <a href=\"https://logeion.uchicago.edu/menda\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: menda</a>",
-    "<a href=\"https://alatius.com/ls/index.php?l=vitium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vitium</a>. Dictionary links support the component words; the modern technical expressions are labelled separately.",
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026. Examples marked “Libellus” quote those texts word for word.",
     "The example sentences marked “composed” are ours.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 310."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 284, 310."
   ],
   "replaces": [
     "entry-50"

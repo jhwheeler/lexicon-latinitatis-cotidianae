@@ -5,17 +5,18 @@
   "domain": "aedificatio",
   "terms": [
     {
-      "latin": "lāmina sub fistulā posita",
-      "status": "recommended",
-      "period": "ours",
-      "gloss": "base plate under a scaffold tube",
-      "comment": "Our description, not a verified technical compound."
-    },
-    {
       "latin": "lāmina, lāminae f.",
-      "status": "alternative",
+      "status": "recommended",
       "period": "classical",
-      "gloss": "plate, sheet"
+      "gloss": "plate, sheet",
+      "comment": "A plate or sheet of metal (Lewis &amp; Short). We have found no Latin name for the scaffolder’s base plate in the reference works; it is described, as in the example."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "lāmina sub fistulā posita",
+      "english": "a base plate under a scaffold tube",
+      "source": "composed"
     }
   ],
   "related": [
@@ -24,7 +25,8 @@
     "coupler"
   ],
   "sources": [
-    "<a href=\"https://www.alatius.com/ls/index.php?l=lamina\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lamina</a>"
+    "<a href=\"https://www.alatius.com/ls/index.php?l=lamina\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lamina</a>",
+    "The example sentence marked “composed” is ours."
   ],
   "review": {
     "status": "draft",

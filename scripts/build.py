@@ -358,6 +358,15 @@ def load_records(root, categories, legacy, rulings):
             for evidence in strings(term.get('evidence', []), f'Evidence in {where}'):
                 rich(evidence)
             used += check_notes(term, notes, where)
+        # Coinages only where needed (Jack, 13 November 2026): a word or phrase of our own is in the
+        # lexicon only when no author of any period has one for the concept, so it is never the
+        # answer beside an attested word that is.
+        ours = [t['latin'] for t in record['terms'] if t['status'] == 'recommended' and t['period'] == 'ours']
+        attested = [t['latin'] for t in record['terms'] if t['status'] == 'recommended' and t['period'] != 'ours']
+        require(not (ours and attested),
+                f'{where} recommends our own “{ours[0] if ours else ""}” beside the attested “{attested[0] if attested else ""}”: '
+                'a coinage is recommended only where no attested word is. Delete it, move it to the examples, '
+                'or make one of the two an alternative')
         require(isinstance(record.get('phrases', []), list), f'Phrases in {where} must be a list')
         for phrase in record.get('phrases', []):
             fields(phrase, ('latin', 'english', 'source'), ('notes',))

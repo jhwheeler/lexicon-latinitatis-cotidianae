@@ -336,6 +336,15 @@ class BuildTests(unittest.TestCase):
         self.assertIn('href="https://en.wiktionary.org/wiki/iam#Latin"', plain)
         self.assertIn('>Wiktionary</a>', plain)
 
+    def test_latinitium_links_by_lewis_and_short_entry_number(self):
+        table = builder.load_latinitium(builder.ROOT)
+        base = 'https://latinitium.com/latin-dictionaries/?t='
+        self.assertEqual(builder.latinitium_url('soror', table), base + 'lsn44798')
+        self.assertEqual(builder.latinitium_url('videō', table), base + 'lsn50883')
+        self.assertEqual(builder.latinitium_url('Rōma', table), base + 'lsn41840')
+        self.assertEqual(builder.latinitium_url('jūs', table), base + 'lsn25394,lsn25395')
+        self.assertEqual(builder.latinitium_url('pedūlia', table), '')
+
     def test_part_of_speech_validated(self):
         record = self.record('perhaps')
         for pos in ('adverbial', ['adverb', 'adverb'], []):

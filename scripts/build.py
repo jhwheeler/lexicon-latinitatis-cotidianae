@@ -460,6 +460,27 @@ def wiktionary_link(term):
             + (f'{label} on Wiktionary' if label else 'Wiktionary') + '</a>')
 
 
+def load_latinitium(root):
+    """Lewis & Short's entry numbers, by headword as Wiktionary would spell it (no macrons, i for
+    j). Latinitium's dictionaries address an article by number alone, and its Lewis & Short keeps
+    the numbers of the Perseus edition (Jack tried soror, videō and trulla, 13 November 2026):
+    ?t=lsn44798 is soror. Several numbers, for homographs, are joined with commas."""
+    path, table = root / 'refs/lewis-short-ids.tsv', {}
+    if path.exists():
+        for line in path.read_text(encoding='utf-8').splitlines():
+            if line and not line.startswith('#'):
+                key, ids = line.split('\t')
+                table.setdefault(key.replace('j', 'i').replace('J', 'I'), []).extend(ids.split())
+    return table
+
+
+def latinitium_url(head, table):
+    """The word's article in Lewis & Short on Latinitium, or nothing if Lewis & Short lacks it."""
+    title = wiktionary_title(head)
+    ids = table.get(title) or table.get(title.lower()) or table.get(title.capitalize())
+    return 'https://latinitium.com/latin-dictionaries/?t=' + ','.join(f'lsn{n}' for n in ids) if ids else ''
+
+
 def fold(text):
     """Lower case without macrons or other marks, as search compares words."""
     text = unicodedata.normalize('NFD', text.lower()).replace('æ', 'ae').replace('œ', 'oe')
@@ -1008,9 +1029,12 @@ def render_word_page(head, info, site):
         parts.append('<section class="sec" aria-labelledby="ex-h"><div class="sec-head"><h2 id="ex-h">Examples</h2></div>'
                      '<ul class="ex">' + ''.join(examples) + '</ul></section>')
     lookup = re.sub(r'[^a-z]', '', fold(head))
+    latinitium = latinitium_url(head, site.get('latinitium', {}))
     parts.append(f'<footer class="c-sources"><p><span class="sc">Dictionaries</span>'
                  f'<a href="https://logeion.uchicago.edu/{lookup}" rel="noopener noreferrer" target="_blank">Logeion: {escape(head)}</a>'
                  ' (Lewis &amp; Short and others)'
+                 + (f' · <a href="{latinitium}" rel="noopener noreferrer" target="_blank">Latinitium: {escape(head)}</a>'
+                    ' (Lewis &amp; Short)' if latinitium else '')
                  + ('' if '’' in head else
                     f' · <a href="{wiktionary_url(head)}" rel="noopener noreferrer" target="_blank">Wiktionary: {escape(head)}</a>')
                  + '</p>' + suggest_link(f'l/{info["slug"]}.html', head) + '</footer>')
@@ -1114,6 +1138,7 @@ def load_site(root):
     site = {'catalog': catalog, 'categories': categories, 'entries': entries, 'legacy': legacy, 'rulings': rulings}
     site['records'] = load_records(root, categories, legacy, rulings)
     site['words'] = word_index(site['records'])
+    site['latinitium'] = load_latinitium(root)
     site['anchors'] = anchor_map(site)
     for key in categories:
         require(entries[key] or any(key in [r['domain']] + r.get('also_under', []) for r in site['records'].values()),

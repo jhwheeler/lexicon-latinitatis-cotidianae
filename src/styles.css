@@ -244,6 +244,12 @@ html:not(.js) :is(.toolbar, .meta, #search-results, .empty, .settings) { display
 mark { background:var(--mark); color:var(--ink); padding:0 .06em; border-radius:2px; -webkit-box-decoration-break:clone; box-decoration-break:clone; }
 .empty { display:none; margin:48px 0; text-align:center; color:var(--muted); font:400 1.05rem var(--sans); }
 .empty > span { display:block; margin-bottom:8px; }
+.more-results { display:block; width:100%; min-height:48px; margin:18px 0 0; padding:0 4px; border:0; border-bottom:1px solid var(--rule); background:none; color:var(--ink); font:400 1rem var(--sans); cursor:pointer; text-align:left; text-decoration:underline; text-decoration-color:var(--accent); text-underline-offset:.25em; }
+.more-results[hidden] { display:none; }
+/* While the search data loads, a stretch of the rule under the field travels along it. */
+.toolbar.loading { border-bottom-color:transparent; background-image:linear-gradient(var(--accent), var(--accent)), linear-gradient(var(--hair), var(--hair)); background-origin:border-box; background-repeat:no-repeat; background-size:30% 1.5px, 100% 1.5px; background-position:-45% 100%, 0 100%; animation:rule-travel 1.1s linear infinite; }
+@keyframes rule-travel { to { background-position:145% 100%, 0 100%; } }
+@media (prefers-reduced-motion:reduce) { .toolbar.loading { animation:none; border-bottom-color:var(--accent); background-image:none; } }
 .search-all { min-height:44px; padding:0 4px; border:0; background:none; color:var(--ink); font:400 1rem var(--sans); cursor:pointer; text-decoration:underline; text-decoration-color:var(--accent); text-underline-offset:.25em; }
 
 /* Footers -------------------------------------------------------------------------------- */
@@ -303,7 +309,7 @@ span.kind, p.kind:not(:has(a)) { display:block; padding:10px 0; }
 .term > .lemma b { font-size:1.6em; }
 .forms { margin:6px 0 0; font-size:1.2rem; }
 .gram { margin:2px 0 0; color:var(--muted); font-style:italic; }
-.wikt { font-style:normal; white-space:nowrap; }
+.wikt { white-space:nowrap; }
 .def { margin:6px 0 0; font-size:1.25rem; }
 .comment { margin:8px 0 0; }
 .meta-line { margin:2px 0 0; color:var(--muted); font-size:.98rem; }

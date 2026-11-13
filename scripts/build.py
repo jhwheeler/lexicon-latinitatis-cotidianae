@@ -16,6 +16,7 @@ and the fonts. See docs/data-format.md and docs/records.md.
 """
 import unicodedata
 import argparse
+import hashlib
 from html import escape, unescape
 from html.parser import HTMLParser
 import json
@@ -48,6 +49,47 @@ RULING_STATUSES = ('current', 'provisional', 'withdrawn')
 THEME_INIT = ("<script>\ndocument.documentElement.classList.add('js');\ntry {\n  document.documentElement.dataset.theme = "
               "localStorage.getItem('lexicon-theme') === 'dark' ? 'dark' : 'light';\n} catch {}\n</script>")
 DARK_PAPER = '#1c1b19'
+TRAUPMAN = 'Conversational Latin for Oral Proficiency'
+SOURCE_METHOD = re.compile(r'searchable text|supplied PDF|printed page|page images?\b|rendered page')
+# The lexicon as an app on a phone's home screen (Jack, 13 November 2026): with the manifest and the
+# icons, "Add to Home Screen" opens it in a window of its own, not in a browser tab; the service
+# worker (src/sw.js) keeps it on the device, so it opens at once and works offline.
+APP_NAME = 'Lexicon Latīnitātis Cotīdiānae'
+APP_SHORT_NAME = 'Lexicon'
+
+
+def app_head(up):
+    return (f'<link rel="manifest" href="{up}manifest.webmanifest">\n'
+            f'<link rel="apple-touch-icon" href="{up}assets/icons/icon-180.png">\n'
+            '<meta name="mobile-web-app-capable" content="yes">\n<meta name="apple-mobile-web-app-capable" content="yes">\n'
+            f'<meta name="apple-mobile-web-app-title" content="{APP_SHORT_NAME}">')
+
+
+def manifest():
+    icons = [{'src': f'assets/icons/icon-{size}.png', 'sizes': f'{size}x{size}', 'type': 'image/png', 'purpose': purpose}
+             for size in (192, 512) for purpose in ('any', 'maskable')]
+    return json.dumps({'name': APP_NAME, 'short_name': APP_SHORT_NAME, 'id': 'index.html', 'start_url': 'index.html', 'scope': './',
+                       'display': 'standalone', 'background_color': '#ffffff', 'theme_color': '#ffffff', 'lang': 'en',
+                       'description': 'Everyday English–Latin vocabulary, with macrons, examples and sources.',
+                       'icons': icons}, ensure_ascii=False, indent=2) + '\n'
+
+
+def service_worker(root, outputs):
+    """sw.js, with the files it saves when it installs: the front page, the category pages, the
+    guidance pages, and the stylesheet, scripts, search data, fonts and icons. Its version is a hash
+    of them, so a change to any of them makes the browser fetch them all afresh. The entry and word
+    pages are saved as they are read."""
+    files = sorted(path for path in outputs
+                   if path in ('index.html', 'how-we-decide.html', 'rulings.html', 'manifest.webmanifest')
+                   or path.startswith('k/') or (path.startswith('assets/') and not path.endswith(('.txt', 'legacy.js'))))
+    digest = hashlib.sha256()
+    for path in files:
+        content = outputs[path]
+        digest.update(path.encode() + b'\0' + (content if isinstance(content, bytes) else content.encode('utf-8')) + b'\0')
+    source = (root / 'src/sw.js').read_text(encoding='utf-8')
+    digest.update(source.encode('utf-8'))
+    require('{{version}}' in source and '{{files}}' in source, 'src/sw.js needs {{version}} and {{files}}')
+    return source.replace('{{version}}', digest.hexdigest()[:12]).replace('{{files}}', json.dumps(files, separators=(',', ':')))
 # The header's one settings control (Jack, 11 November 2026): the display options and the theme,
 # behind an "Aa" button at the right of every page's header. They need scripts, so without them it
 # is hidden.
@@ -310,6 +352,12 @@ def load_records(root, categories, legacy, rulings):
         strings(record.get('related', []), f'Related in {where}')
         for source in strings(record['sources'], f'Sources in {where}'):
             rich(source)
+            # A source line is a citation, as a book would print it: the author, the work, the place
+            # (Jack, 13 November 2026). How the book was read or checked is not part of it.
+            require(not SOURCE_METHOD.search(source), f'A source in {where} describes how it was read; give only the citation: {source}')
+        require(len(record['sources']) == len(set(record['sources'])), f'The same source twice in {where}')
+        require(sum(TRAUPMAN in source for source in record['sources']) <= 1,
+                f'Traupman is cited more than once in {where}; give one citation with all its pages')
         require(record['sources'], f'No sources in {where}')
         fields(record['review'], ('status', 'date', 'by'))
         require(record['review']['status'] in ('draft', 'reviewed'), f'Invalid review status in {where}')
@@ -448,16 +496,23 @@ def inflection(term):
     return ''
 
 
-def wiktionary_link(term):
-    """A link to the word on Wiktionary, for any term of one word (Jack, 13 November 2026). The
-    lexicon prints no declensions or conjugations, so for a word that inflects the link says
-    which it leads to; for an adverb or a particle it is a plain reference."""
-    head = term_head(term['latin'])
-    if ' ' in head or '’' in head:
-        return ''
-    label = inflection(term)
-    return (f'<a class="wikt" href="{wiktionary_url(head)}" rel="noopener noreferrer" target="_blank">'
-            + (f'{label} on Wiktionary' if label else 'Wiktionary') + '</a>')
+def grammar_html(term):
+    """The term's grammar, with the words that name its declension or conjugation linked to the word
+    on Wiktionary (Jack, 13 November 2026): the lexicon prints no paradigms, and the link belongs on
+    the word it explains, not in a label of its own. Where the grammar does not name the declension
+    or conjugation ("verb", or none given), the bare word is added and linked. A term of several
+    words, an adverb, a particle or a form of another word has no such link; its word page lists
+    Wiktionary among the dictionaries."""
+    text, label, head = escape(grammar(term)), inflection(term).lower(), term_head(term['latin'])
+    if not label or ' ' in head or '’' in head:
+        return text
+    ordinal = '(?:first|second|third|fourth|fifth|mixed)'
+    match = re.search(rf'(?:{ordinal}(?: and {ordinal})? )?{label}', text)
+    link = (f'<a class="wikt" href="{wiktionary_url(head)}" title="{label.capitalize()} of {escape(head, quote=True)} on Wiktionary" '
+            'rel="noopener noreferrer" target="_blank">')
+    if match:
+        return text[:match.start()] + link + match[0] + '</a>' + text[match.end():]
+    return text + (', ' if text else '') + link + label + '</a>'
 
 
 def load_latinitium(root):
@@ -800,11 +855,12 @@ def ours_mark(term):
     return OURS_MARK if term.get('period') == 'ours' else ''
 
 
-def term_meta(term):
-    """The line under a term: its grammar, its status unless recommended, its period and evidence."""
+def term_meta(term, linked=False):
+    """The line under a term: its grammar (on a page, with its link to Wiktionary), its status unless
+    recommended, its period and evidence."""
     status = (f'<span class="lab status-{term["status"]}">{STATUS_LABELS[term["status"]]}</span>'
               if term['status'] != 'recommended' else '')
-    return ' · '.join(x for x in (escape(grammar(term)), status, f'<span class="lab">{PERIODS[term["period"]]}</span>',
+    return ' · '.join(x for x in (grammar_html(term) if linked else escape(grammar(term)), status, f'<span class="lab">{PERIODS[term["period"]]}</span>',
                                   '; '.join(term.get('evidence', []))) if x)
 
 
@@ -837,7 +893,7 @@ def page_shell(title, description, canonical, up, body, scripts=(), search=True)
             '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
             '<meta name="color-scheme" content="light dark">\n<meta name="theme-color" content="#ffffff">\n'
             f'<title>{escape(title)}</title>\n<meta name="description" content="{escape(description, quote=True)}">\n'
-            f'<link rel="canonical" href="{SITE_URL}{canonical}">\n{THEME_INIT}\n'
+            f'<link rel="canonical" href="{SITE_URL}{canonical}">\n{THEME_INIT}\n{app_head(up)}\n'
             f'<link rel="stylesheet" href="{up}assets/lexicon.css">\n<script src="{up}assets/lexicon.js" defer></script>\n'
             + ''.join(f'<script src="{up}assets/{name}.js" defer></script>\n' for name in scripts)
             + '</head>\n<body class="subpage">\n'
@@ -894,9 +950,8 @@ def render_concept(record, site):
     gloss = main.get('gloss', '')
     block = [f'<aside class="side"><p>{labels(main)}</p>{evidence}</aside>', notes(main),
              f'<p class="lemma" lang="la">{ours_mark(main)}<b>{head}</b>{refs(main)}{escape(rest)}</p>']
-    forms = wiktionary_link(main)
-    if grammar(main) or forms:
-        block.append('<p class="gram">' + ' · '.join(x for x in (escape(grammar(main)), forms) if x) + '</p>')
+    if grammar_html(main):
+        block.append(f'<p class="gram">{grammar_html(main)}</p>')
     if gloss and gloss.strip().lower() != record['english'].strip().lower():
         block.append(f'<p class="def">{escape(gloss)}</p>')
     if 'register' in main:
@@ -912,7 +967,7 @@ def render_concept(record, site):
         for term in others:
             head, rest = links.latin(term['latin'])
             side = notes(term)
-            meta = ' · '.join(x for x in (term_meta(term), wiktionary_link(term)) if x)
+            meta = term_meta(term, linked=True)
             gloss = f'<span class="gloss" lang="en"> — {escape(term["gloss"])}</span>' if term.get('gloss') else ''
             item = [side, f'<p class="lemma" lang="la">{ours_mark(term)}<b>{head}</b>{refs(term)}{escape(rest)}{gloss}</p>',
                     f'<p class="meta-line">{meta}</p>']
@@ -973,10 +1028,9 @@ def render_word_page(head, info, site):
     parts = ['<p class="kind">Latin word</p>', f'<h1 class="hw" lang="la">{escape(head)}</h1>']
     if first['latin'] != head:
         parts.append(f'<p class="forms" lang="la">{escape(first["latin"])}</p>')
-    gram = next((grammar(t) for _, t in uses if grammar(t)), '')
-    forms = next((wiktionary_link(t) for _, t in uses if wiktionary_link(t)), '')
-    if gram or forms:
-        parts.append('<p class="gram">' + ' · '.join(x for x in (escape(gram), forms) if x) + '</p>')
+    gram = next((grammar_html(t) for _, t in uses if grammar_html(t)), '')
+    if gram:
+        parts.append(f'<p class="gram">{gram}</p>')
     meanings = list(dict.fromkeys(t.get('gloss', r['english']) for r, t in uses))
     parts.append(f'<p class="def">{escape("; ".join(meanings))}</p>')
 
@@ -1363,7 +1417,7 @@ def render_index(root, site):
                 "if (id && !document.getElementById(id)) { var s = document.createElement('script'); "
                 "s.src = 'assets/legacy.js'; document.head.appendChild(s); } } go(); addEventListener('hashchange', go); })();</script>")
     total = len(site['records']) + len(site['legacy'])
-    replacements = {'theme': THEME_INIT, 'legacy': redirect, 'settings': SETTINGS, 'footer_links': footer_links('', '#about', False),
+    replacements = {'theme': THEME_INIT, 'app': app_head(''), 'legacy': redirect, 'settings': SETTINGS, 'footer_links': footer_links('', '#about', False),
                     'search': search_block('', None, total), 'contents': contents, 'total': f'{total:,}',
                     'record_count': f'{len(site["records"]):,}'}
     return resolve_anchors(fill(root / 'src/page.html', replacements), site, '', 'index.html')
@@ -1415,10 +1469,10 @@ def build_site(root=ROOT):
     outputs['assets/legacy.js'] = legacy_script(site)
     outputs['assets/search.js'] = (root / 'src/search.js').read_text(encoding='utf-8')
     outputs['how-we-decide.html'] = fill(root / 'src/how-we-decide.html', {
-        'ruling_count': str(len(site['rulings'])), 'theme': THEME_INIT,
+        'ruling_count': str(len(site['rulings'])), 'theme': THEME_INIT, 'app': app_head(''),
         'header': site_header(''), 'footer': site_footer('')})
     outputs['rulings.html'] = fill(root / 'src/rulings.html', {
-        'rulings': render_rulings(site), 'ruling_count': str(len(site['rulings'])), 'theme': THEME_INIT,
+        'rulings': render_rulings(site), 'ruling_count': str(len(site['rulings'])), 'theme': THEME_INIT, 'app': app_head(''),
         'header': site_header(''), 'footer': site_footer('')})
     for key, record in sorted(site['records'].items()):
         outputs[f'c/{key}.html'] = render_concept_page(record, site, site['categories'])
@@ -1430,6 +1484,10 @@ def build_site(root=ROOT):
     for font in sorted((root / 'src/fonts').iterdir()) if (root / 'src/fonts').exists() else []:
         if font.suffix in ('.woff2', '.txt'):
             outputs[f'assets/fonts/{font.name}'] = font.read_bytes()
+    for icon in sorted((root / 'src/icons').glob('*.png')) if (root / 'src/icons').exists() else []:
+        outputs[f'assets/icons/{icon.name}'] = icon.read_bytes()
+    outputs['manifest.webmanifest'] = manifest()
+    outputs['sw.js'] = service_worker(root, outputs)
     check_links(outputs)
     return outputs
 
@@ -1441,7 +1499,7 @@ def build(root=ROOT):
 
 def stale(root, outputs):
     """Generated pages and fonts that no longer have a source."""
-    found = [p for folder, pattern in (('c', '*.html'), ('l', '*.html'), ('k', '*.html'), ('assets/fonts', '*'))
+    found = [p for folder, pattern in (('c', '*.html'), ('l', '*.html'), ('k', '*.html'), ('assets/fonts', '*'), ('assets/icons', '*'))
              if (root / folder).exists() for p in (root / folder).glob(pattern)]
     return sorted(str(PurePosixPath(p.relative_to(root))) for p in found
                   if str(PurePosixPath(p.relative_to(root))) not in outputs)

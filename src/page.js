@@ -1,4 +1,11 @@
 (() => {
+  // The service worker (sw.js, at the root of the site) keeps the lexicon on the device: it opens
+  // at once, searches without the network and works offline. Pages opened from disk go without it.
+  const script = document.currentScript;
+  if ('serviceWorker' in navigator && /^https?:$/.test(location.protocol) && script) {
+    addEventListener('load', () => { navigator.serviceWorker.register(new URL("../sw.js", script.src)).catch(() => {}); });
+  }
+
   // Theme (light is the default; the choice is kept where storage allows), chosen in the settings.
   const root = document.documentElement;
   const color = document.querySelector('meta[name="theme-color"]');

@@ -85,18 +85,76 @@ test('a search can be linked to: the address keeps the query, and the category i
   assert.equal(await page.locator('.search-result').count(), 3);
 });
 
-test('the search data loads only when it is needed', async () => {
+test('the search data never holds the page up: it is fetched once the page has loaded, before the first search', async () => {
+  // Leave the page every test starts on, so that its own fetch of the data is not counted here.
+  await page.goto('about:blank');
   const requested = [];
   page.on('request', request => requested.push(new URL(request.url()).pathname.split('/').pop()));
-  await page.goto(url);
-  await page.waitForLoadState('load');
+  await page.goto(url, { waitUntil: 'domcontentloaded' });
   assert.equal(requested.includes('search-data.js'), false);
   assert.equal(requested.includes('legacy.js'), false);
   assert.ok((await page.evaluate(() => document.documentElement.outerHTML.length)) < 60000);
-  await page.locator('#search').focus();
+  // Nothing typed, nothing focused: the data comes by itself when the page is idle.
   await page.waitForFunction(() => window.lexiconData);
   assert.equal(requested.includes('search-data.js'), true);
   page.removeAllListeners('request');
+});
+
+test('a search with thousands of matches draws only the first, and more on request', async () => {
+  await search('a');
+  const total = Number(/^([\d,]+) matching/.exec(await page.locator('#results').textContent())[1].replace(/,/g, ''));
+  assert.ok(total > 1000);
+  assert.equal(await page.locator('.search-result').count(), 30);
+  const more = page.locator('#more-results');
+  assert.match(await more.textContent(), /^Show 30 more · [\d,]+ not shown$/);
+  assert.ok((await more.boundingBox()).height >= 44);
+  await more.click();
+  assert.equal(await page.locator('.search-result').count(), 60);
+  // A narrower search has no more to show; an empty one clears the button with the results.
+  await search('pyjama');
+  assert.equal(await more.isHidden(), true);
+  await page.locator('#clear').click();
+  assert.equal(await more.isHidden(), true);
+});
+
+test('while the data is on its way the search says so, and then answers', async () => {
+  let release;
+  const held = new Promise(resolve => { release = resolve; });
+  await page.route('**/assets/search-data.js', async route => { await held; await route.continue(); });
+  await page.goto(url);
+  await page.locator('#search').fill('pyjama');
+  await page.waitForFunction(() => document.getElementById('results').textContent === 'Loading the lexicon…');
+  assert.equal(await page.locator('form.toolbar.loading').count(), 1);
+  release();
+  await page.waitForFunction(() => /matching/.test(document.getElementById('results').textContent));
+  assert.equal(await page.locator('form.toolbar.loading').count(), 0);
+  await page.unroute('**/assets/search-data.js');
+});
+
+test('the lexicon is kept on the device: it opens and searches offline, as an app of its own', async () => {
+  const context = await browser.newContext({ viewport: { width: 390, height: 800 } });
+  const app = await context.newPage();
+  await app.goto(url);
+  assert.equal(await app.locator('link[rel="manifest"]').getAttribute('href'), 'manifest.webmanifest');
+  const manifest = await (await app.request.get(pageUrl('manifest.webmanifest'))).json();
+  assert.equal(manifest.display, 'standalone');
+  await app.evaluate(() => navigator.serviceWorker.ready);
+  await app.waitForFunction(() => navigator.serviceWorker.controller);
+  // An entry read while online is there offline; so are the front page, a category and the search.
+  await app.goto(pageUrl('c/pyjamas.html'));
+  await app.waitForLoadState('networkidle');
+  await context.setOffline(true);
+  await app.goto(pageUrl('index.html?q=pyjama'));
+  await app.waitForFunction(() => /matching/.test(document.getElementById('results').textContent));
+  assert.ok(await app.locator('.search-result').count() > 0);
+  await app.goto(pageUrl('k/vestitus.html'));
+  assert.ok(await app.locator('#category-view a').count() > 0);
+  await app.goto(pageUrl('c/pyjamas.html'));
+  assert.equal(await app.locator('h1.hw').count(), 1);
+  // A page never opened here says so, and leads back to the search.
+  await app.goto(pageUrl('c/soap.html'));
+  assert.match(await app.locator('h1').textContent(), /not saved on this device/);
+  await context.close();
 });
 
 test('source notes and alternative search terms are explained', async () => {

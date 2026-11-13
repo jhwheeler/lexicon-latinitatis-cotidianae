@@ -8,7 +8,6 @@
 <title>Lexicon Latīnitātis Cotīdiānae</title>
 <meta name="description" content="An English–Latin lexicon for everyday conversation, family life and play, with macrons, examples and sources.">
 <meta name="theme-color" content="#ffffff">
-<meta name="apple-mobile-web-app-title" content="Lexicon Latīnum">
 <link rel="canonical" href="https://jhwheeler.github.io/lexicon-latinitatis-cotidianae/">
 <script>
 document.documentElement.classList.add('js');
@@ -16,6 +15,11 @@ try {
   document.documentElement.dataset.theme = localStorage.getItem('lexicon-theme') === 'dark' ? 'dark' : 'light';
 } catch {}
 </script>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="assets/icons/icon-180.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Lexicon">
 <script>(function () { function go() { var id = location.hash.slice(1); if (id && !document.getElementById(id)) { var s = document.createElement('script'); s.src = 'assets/legacy.js'; document.head.appendChild(s); } } go(); addEventListener('hashchange', go); })();</script>
 <link rel="stylesheet" href="assets/lexicon.css">
 <script src="assets/lexicon.js" defer></script>

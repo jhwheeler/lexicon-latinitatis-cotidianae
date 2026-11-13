@@ -2,6 +2,7 @@
 import copy
 import importlib.util
 import json
+import re
 from pathlib import Path
 import shutil
 import tempfile
@@ -328,13 +329,19 @@ class BuildTests(unittest.TestCase):
         self.assertEqual(builder.inflection({'latin': 'colluō', 'grammar': 'verb, third conjugation'}), 'Conjugation')
         self.assertEqual(builder.inflection({'latin': 'animī', 'grammar': 'noun, genitive of animus'}), '')
         self.assertEqual(builder.inflection({'latin': 'frūstrā', 'grammar': 'adverb'}), '')
-        link = builder.wiktionary_link({'latin': 'jūs, jūris n.'})
+        # The words that name the declension or conjugation carry the link; there is no separate label.
+        link = builder.grammar_html({'latin': 'jūs, jūris n.'})
         self.assertIn('href="https://en.wiktionary.org/wiki/ius#Latin"', link)
-        self.assertIn('Declension on Wiktionary', link)
-        self.assertEqual(builder.wiktionary_link({'latin': 'ōlla ānsāta'}), '')
-        plain = builder.wiktionary_link({'latin': 'jam'})
-        self.assertIn('href="https://en.wiktionary.org/wiki/iam#Latin"', plain)
-        self.assertIn('>Wiktionary</a>', plain)
+        self.assertTrue(link.startswith('noun, <a class="wikt"'))
+        self.assertTrue(link.endswith('>third declension</a>'))
+        self.assertNotIn('on Wiktionary</a>', link)
+        both = builder.grammar_html({'latin': 'bonus', 'grammar': 'adjective, first and second declension; comparative melior'})
+        self.assertIn('>first and second declension</a>; comparative melior', both)
+        # A verb whose grammar names no conjugation gets the bare word, linked.
+        self.assertTrue(builder.grammar_html({'latin': 'ferō, ferre, tulī, lātum'}).endswith('>conjugation</a>'))
+        # Several words, or a word that does not inflect: no link here (the word's page lists Wiktionary).
+        self.assertEqual(builder.grammar_html({'latin': 'ōlla ānsāta'}), '')
+        self.assertEqual(builder.grammar_html({'latin': 'jam', 'grammar': 'adverb'}), 'adverb')
 
     def test_latinitium_links_by_lewis_and_short_entry_number(self):
         table = builder.load_latinitium(builder.ROOT)
@@ -368,6 +375,51 @@ class BuildTests(unittest.TestCase):
         concept = outputs['c/cooking-pot.html']
         self.assertIn('<b><a href="../l/caccabus.html">caccabus</a> fictīcius</b>', concept)
         self.assertIn('<b lang="la">caccabus fictīcius</b>', outputs['l/caccabus.html'])
+
+    def test_sources_are_citations_and_each_work_is_cited_once(self):
+        traupman = 'John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>'
+        for sources, message in (
+                ([traupman + ', p. 211, each phrase checked against the searchable text of the book.'], 'describes how it was read'),
+                ([traupman + ' (printed page numbers): p. 294.'], 'describes how it was read'),
+                ([traupman + ', pp. 211, 219.', traupman + ', p. 294.'], 'Traupman is cited more than once'),
+                (['Anna Andresian, <em>Vocabula Picta</em> (2014), p. 43.'] * 2, 'same source twice')):
+            with self.subTest(message=message):
+                record = self.record('perhaps')
+                record['sources'] = sources
+                self.save_record(record)
+                with self.assertRaisesRegex(ValueError, message):
+                    builder.build_site(self.root)
+        record = self.record('perhaps')
+        record['sources'] = [traupman + ', pp. 211, 219, 294.']
+        self.save_record(record)
+        self.assertIn('<em>Conversational Latin for Oral Proficiency</em>, pp. 211, 219, 294.</p>',
+                      builder.build_site(self.root)['c/perhaps.html'])
+
+    def test_the_site_installs_as_an_app_and_is_kept_on_the_device(self):
+        outputs = builder.build_site(self.root)
+        manifest = json.loads(outputs['manifest.webmanifest'])
+        self.assertEqual((manifest['display'], manifest['start_url'], manifest['scope']), ('standalone', 'index.html', './'))
+        for icon in manifest['icons']:
+            self.assertIsInstance(outputs[icon['src']], bytes)
+        for path, up in (('index.html', ''), ('k/sermo.html', '../'), ('c/perhaps.html', '../'), ('rulings.html', '')):
+            with self.subTest(path=path):
+                self.assertIn(f'<link rel="manifest" href="{up}manifest.webmanifest">', outputs[path])
+                self.assertIn(f'<link rel="apple-touch-icon" href="{up}assets/icons/icon-180.png">', outputs[path])
+                self.assertIn('<meta name="apple-mobile-web-app-capable" content="yes">', outputs[path])
+        worker = outputs['sw.js']
+        self.assertNotIn('{{', worker)
+        files = json.loads(re.search(r'const FILES = (\[.*?\]);', worker)[1])
+        for path in ('index.html', 'k/sermo.html', 'assets/search-data.js', 'assets/search.js', 'assets/lexicon.css',
+                     'assets/fonts/lexicon-serif-400.woff2', 'manifest.webmanifest'):
+            self.assertIn(path, files)
+        self.assertTrue(all(path in outputs for path in files))
+        self.assertFalse(any(path.startswith(('c/', 'l/')) for path in files))   # saved as they are read
+        # Any change to a saved file changes the version, so the browser fetches the files afresh.
+        record = self.record('perhaps')
+        record['also'] = record.get('also', []) + ['perchance']
+        self.save_record(record)
+        version = lambda text: re.search(r"const VERSION = '(\w+)'", text)[1]
+        self.assertNotEqual(version(worker), version(builder.build_site(self.root)['sw.js']))
 
     def test_record_file_name_must_match_id(self):
         record = self.record('perhaps')

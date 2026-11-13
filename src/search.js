@@ -1,5 +1,8 @@
 (() => {
-  // Live search over the lexicon (assets/search-data.js, loaded on first use). It runs on the front
+  // Live search over the lexicon (assets/search-data.js). The data is fetched once the page has
+  // loaded and is idle, so that it is ready before the first letter is typed; the service worker
+  // (sw.js) keeps it on the device. Only the first results are drawn, and more on request: drawing
+  // thousands of cards for a single letter is what used to make typing slow. It runs on the front
   // page, over every category or the one named by ?cat=, and on each category's page, over that
   // category. The address keeps the query (?q=pyjama), so a search can be linked to. Without
   // scripts the search bar is hidden and the pages' own lists remain. A Latin word is found from
@@ -18,6 +21,12 @@
   let scope = page ? page.dataset.category : (params.get('cat') || '');
   const resting = count.textContent;
   let data = null, loading = null, rendered = null;
+  // How many results are drawn at a time; the count line always gives the full number.
+  const PAGE = 30;
+  let current = null, drawn = 0;
+  const more = document.createElement('button');
+  more.type = 'button'; more.id = 'more-results'; more.className = 'more-results'; more.hidden = true;
+  results.append(more);
   const fold = s => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/æ/g, 'ae').replace(/œ/g, 'oe').replace(/j/g, 'i').replace(/v/g, 'u');
   const KINDS = { d: 'Definition', e: 'Example or phrase', n: 'Source note' };
   const stems = new Map();
@@ -207,19 +216,44 @@
     if (view) view.hidden = searching;
   }
 
+  // While the data is on its way, the rule under the field moves and the status line says so.
+  function busy(on) { form.classList.toggle('loading', on); }
+
+  // Draw the next results of the current search.
+  function draw() {
+    const { matching, inside, close, query, typed } = current;
+    const fragment = document.createDocumentFragment();
+    const end = Math.min(matching.length, drawn + PAGE);
+    for (let index = drawn; index < end; index++) {
+      if (inside && !close && index === matching.length - inside) {
+        const divide = document.createElement('h2'); divide.className = 'results-divide';
+        divide.textContent = `Inside longer words: ${inside}`;
+        fragment.append(divide);
+      }
+      fragment.append(result(matching[index], query, typed));
+    }
+    drawn = end;
+    list.append(fragment);
+    const left = matching.length - drawn;
+    more.hidden = !left;
+    more.textContent = left ? `Show ${Math.min(PAGE, left)} more · ${left.toLocaleString("en")} not shown` : '';
+    window.lexiconDisplay?.render(list);
+  }
+
   function apply() {
     const typed = search.value.trim(), query = fold(typed);
     remember(typed);
     if (!query) {
-      rendered = null; show(false); list.replaceChildren();
+      rendered = null; current = null; drawn = 0; more.hidden = true; busy(false); show(false); list.replaceChildren();
       count.textContent = resting; empty.style.display = 'none';
       return;
     }
     if (!data) {
-      count.textContent = 'Searching…';
-      load().then(apply, () => { count.textContent = 'The search could not load.'; });
+      count.textContent = 'Loading the lexicon…'; busy(true);
+      load().then(apply, () => { busy(false); count.textContent = 'The search could not load. Check the connection and try again.'; loading = null; });
       return;
     }
+    busy(false);
     if (query + '|' + scope === rendered) return;
     rendered = query + '|' + scope;
     const rank = line => ({ d: 0, e: 1, n: 2 })[line.line[0]];
@@ -263,16 +297,9 @@
         item.matches = answer ? [answer] : [];
       });
     }
-    const fragment = document.createDocumentFragment();
-    matching.forEach((item, index) => {
-      if (inside && !close && index === matching.length - inside) {
-        const divide = document.createElement('h2'); divide.className = 'results-divide';
-        divide.textContent = `Inside longer words: ${inside}`;
-        fragment.append(divide);
-      }
-      fragment.append(result(item, query, typed));
-    });
-    list.replaceChildren(fragment);
+    current = { matching, inside, close, query, typed }; drawn = 0;
+    list.replaceChildren();
+    draw();
     show(true);
     const where = scope ? ' in ' + data.categories[scope] : '';
     count.textContent = close && matching.length
@@ -282,7 +309,6 @@
     emptyMessage.textContent = scope ? 'No matches' + where + '.' : 'No entries match that search.';
     searchAll.hidden = !scope || matching.length > 0;
     empty.style.display = matching.length ? 'none' : 'block';
-    window.lexiconDisplay?.render(list);
   }
 
   // The address follows the query, so that a search can be bookmarked or sent.
@@ -300,7 +326,15 @@
 
   form.addEventListener('submit', event => { event.preventDefault(); apply(); });
   ['input', 'search'].forEach(event => search.addEventListener(event, apply));
-  search.addEventListener('focus', () => { load().catch(() => {}); }, { once: true });
+  more.addEventListener('click', () => { if (current) draw(); });
+  // The data is fetched as soon as the page is idle (or at the first focus, if that comes sooner),
+  // unless the reader has asked the browser to save data; then it waits for the first search.
+  const warm = () => { load().catch(() => { loading = null; }); };
+  search.addEventListener('focus', warm, { once: true });
+  if (!navigator.connection?.saveData) {
+    const idle = () => (window.requestIdleCallback ? requestIdleCallback(warm, { timeout: 2000 }) : setTimeout(warm, 300));
+    if (document.readyState === 'complete') idle(); else addEventListener('load', idle, { once: true });
+  }
   search.addEventListener('keydown', event => { if (event.key === 'Escape') clear.click(); });
   clear.addEventListener('click', () => { search.value = ''; apply(); search.focus(); });
   searchAll.addEventListener('click', () => {

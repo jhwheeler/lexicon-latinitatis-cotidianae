@@ -332,6 +332,9 @@ class BuildTests(unittest.TestCase):
         self.assertIn('href="https://en.wiktionary.org/wiki/ius#Latin"', link)
         self.assertIn('Declension on Wiktionary', link)
         self.assertEqual(builder.wiktionary_link({'latin': 'ōlla ānsāta'}), '')
+        plain = builder.wiktionary_link({'latin': 'jam'})
+        self.assertIn('href="https://en.wiktionary.org/wiki/iam#Latin"', plain)
+        self.assertIn('>Wiktionary</a>', plain)
 
     def test_part_of_speech_validated(self):
         record = self.record('perhaps')

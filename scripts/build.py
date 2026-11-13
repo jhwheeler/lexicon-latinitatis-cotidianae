@@ -449,13 +449,15 @@ def inflection(term):
 
 
 def wiktionary_link(term):
-    """A link to the word's declension or conjugation on Wiktionary, which the lexicon does not
-    print itself (Jack, 13 November 2026). Only for a term of one word that inflects."""
-    head, label = term_head(term['latin']), inflection(term)
-    if ' ' in head or not label:
+    """A link to the word on Wiktionary, for any term of one word (Jack, 13 November 2026). The
+    lexicon prints no declensions or conjugations, so for a word that inflects the link says
+    which it leads to; for an adverb or a particle it is a plain reference."""
+    head = term_head(term['latin'])
+    if ' ' in head or '’' in head:
         return ''
+    label = inflection(term)
     return (f'<a class="wikt" href="{wiktionary_url(head)}" rel="noopener noreferrer" target="_blank">'
-            f'{label} on Wiktionary</a>')
+            + (f'{label} on Wiktionary' if label else 'Wiktionary') + '</a>')
 
 
 def fold(text):

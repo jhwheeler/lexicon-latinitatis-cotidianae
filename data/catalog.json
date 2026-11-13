@@ -2,77 +2,12 @@
   "version": 1,
   "categories": [
     {
-      "id": "corpus",
-      "english": "Body, health & movement",
-      "latin": "Corpus et mōtus"
-    },
-    {
-      "id": "natura",
-      "english": "Nature & food",
-      "latin": "Nātūra et alimenta"
-    },
-    {
-      "id": "vectura",
-      "english": "Travel & transport",
-      "latin": "Itinera et vectūra"
-    },
-    {
-      "id": "urbs",
-      "english": "Town, shops & places",
-      "latin": "Urbs, vīcus et loca"
-    },
-    {
-      "id": "ludi",
-      "english": "Playground equipment, sandbox toys, vehicles and play",
-      "latin": "Lūdī et lūdibria"
-    },
-    {
       "id": "sermo",
       "english": "Conversation, family & daily routines",
       "latin": "Sermō cotīdiānus",
       "aliases": [
         "theodorus"
       ]
-    },
-    {
-      "id": "culina",
-      "english": "Kitchen, meals & drinks",
-      "latin": "Culīna et potūs"
-    },
-    {
-      "id": "vestitus",
-      "english": "Clothes & getting dressed",
-      "latin": "Vestītus"
-    },
-    {
-      "id": "domus",
-      "english": "Household, washing & chores",
-      "latin": "Domus et cūra"
-    },
-    {
-      "id": "officina",
-      "english": "Tools, fasteners & household repair",
-      "latin": "Officīna et īnstrūmenta"
-    },
-    {
-      "id": "aedificatio",
-      "english": "Construction, trades & building materials",
-      "latin": "Aedificātiō et materiae"
-    },
-    {
-      "id": "domus-structura",
-      "english": "House layout, roofs, rooms & furnishings",
-      "latin": "Domūs partēs et supellex"
-    },
-    {
-      "id": "labor",
-      "english": "Work & responsibility",
-      "latin": "Labor et cūra"
-    },
-    {
-      "id": "computatra",
-      "english": "Computing & programming",
-      "latin": "Ars computātrālis"
     },
     {
       "id": "verba",
@@ -85,14 +20,79 @@
       "latin": "Tempus et fēstī diēs"
     },
     {
+      "id": "corpus",
+      "english": "Body, health & movement",
+      "latin": "Corpus et mōtus"
+    },
+    {
+      "id": "vestitus",
+      "english": "Clothes & getting dressed",
+      "latin": "Vestītus"
+    },
+    {
+      "id": "domus",
+      "english": "Household, washing & chores",
+      "latin": "Domus et cūra"
+    },
+    {
+      "id": "domus-structura",
+      "english": "House layout, roofs, rooms & furnishings",
+      "latin": "Domūs partēs et supellex"
+    },
+    {
+      "id": "culina",
+      "english": "Kitchen, meals & drinks",
+      "latin": "Culīna et potūs"
+    },
+    {
+      "id": "natura",
+      "english": "Nature & food",
+      "latin": "Nātūra et alimenta"
+    },
+    {
+      "id": "urbs",
+      "english": "Town, shops & places",
+      "latin": "Urbs, vīcus et loca"
+    },
+    {
+      "id": "vectura",
+      "english": "Travel & transport",
+      "latin": "Itinera et vectūra"
+    },
+    {
+      "id": "ludi",
+      "english": "Playground equipment, sandbox toys, vehicles and play",
+      "latin": "Lūdī et lūdibria"
+    },
+    {
       "id": "schola",
       "english": "School & learning",
       "latin": "Schola et studia"
     },
     {
+      "id": "labor",
+      "english": "Work & responsibility",
+      "latin": "Labor et cūra"
+    },
+    {
       "id": "pecunia",
       "english": "Money, work & business",
       "latin": "Pecūnia et negōtia"
+    },
+    {
+      "id": "officina",
+      "english": "Tools, fasteners & household repair",
+      "latin": "Officīna et īnstrūmenta"
+    },
+    {
+      "id": "aedificatio",
+      "english": "Construction, trades & building materials",
+      "latin": "Aedificātiō et materiae"
+    },
+    {
+      "id": "computatra",
+      "english": "Computing & programming",
+      "latin": "Ars computātrālis"
     },
     {
       "id": "res-publica",
@@ -107,25 +107,25 @@
   ],
   "filters": [
     "all",
-    "ludi",
-    "corpus",
-    "natura",
-    "vectura",
-    "urbs",
     "sermo",
     "verba",
     "tempus",
-    "schola",
-    "culina",
+    "corpus",
     "vestitus",
     "domus",
+    "domus-structura",
+    "culina",
+    "natura",
+    "urbs",
+    "vectura",
+    "ludi",
+    "schola",
+    "labor",
+    "pecunia",
     "officina",
     "aedificatio",
-    "domus-structura",
-    "pecunia",
-    "labor",
+    "computatra",
     "res-publica",
-    "ecclesia",
-    "computatra"
+    "ecclesia"
   ]
 }

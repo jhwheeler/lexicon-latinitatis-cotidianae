@@ -62,6 +62,8 @@ The lexicon installs from the browser, with no app store. In Safari on an iPhone
 
 A service worker (`src/sw.js`, built to `sw.js`) keeps the lexicon on the device: the front page, the category pages, the stylesheet, the scripts, the search data and the fonts when it installs, and each entry or word page as it is read (the 600 most recent). So the lexicon opens at once, and the search works offline, showing each entry's words and examples; an entry page never opened on that device needs a connection. The worker's version is a hash of the files it keeps, so a published change replaces them: a reader sees it at the second opening after it is published. `node scripts/make_icons.mjs` redraws the icons.
 
+Opened from the home screen of an iPhone, a link to another site (Wiktionary, Logeion) would open in a sheet inside the app. `src/page.js` sends such links to Safari itself, through the `x-safari-https://` address Safari answers to; if nothing takes it, the link opens in the sheet as before. iOS documents no setting for this, so check it on a phone after an iOS update.
+
 ## Publishing and exports
 
 GitHub Pages continues to publish `main`, folder `/(root)`. No deployment-setting change is needed. The site is static files with relative links: a downloaded copy of the repository can be opened from disk, and searched there.

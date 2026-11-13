@@ -157,6 +157,32 @@ test('the lexicon is kept on the device: it opens and searches offline, as an ap
   await context.close();
 });
 
+test('as a home-screen app on an iPhone, a link to another site is sent to Safari, and still opens if Safari does not answer', async () => {
+  const context = await browser.newContext({ viewport: { width: 390, height: 800 } });
+  await context.addInitScript(() => { Object.defineProperty(Navigator.prototype, 'standalone', { get: () => true }); });
+  const app = await context.newPage();
+  const asked = [];
+  await context.route(/wiktionary\.org/, route => { asked.push(route.request().url()); return route.fulfill({ contentType: 'text/html', body: '<title>Wiktionary</title>' }); });
+  await app.goto(pageUrl('c/train.html'));
+  // The link is not followed in the app's own sheet: it is handed to Safari's address.
+  const prevented = await app.evaluate(() => new Promise(resolve => {
+    const link = document.querySelector('a.wikt');
+    link.addEventListener('click', event => setTimeout(() => resolve(event.defaultPrevented)));
+    link.click();
+  }));
+  assert.equal(prevented, true);
+  // No Safari here to take it, so a moment later the link opens as before.
+  // (The browser reports the address it could not open as an aborted navigation, so wait by looking.)
+  for (let i = 0; i < 50 && !/wiktionary\.org\/wiki\/tramen/.test(app.url()); i++) await app.waitForTimeout(100);
+  assert.match(app.url(), /wiktionary\.org\/wiki\/tramen/);
+  assert.equal(asked.length, 1);
+  // A link within the lexicon is left alone.
+  await app.goto(pageUrl('c/train.html'));
+  await app.locator('p.see a').first().click();
+  await app.waitForURL(/\/c\/railway\.html/);
+  await context.close();
+});
+
 test('source notes and alternative search terms are explained', async () => {
   await search('short final vowel');
   assert.match(await page.locator('[data-result-for="c-perhaps"] .eyebrow').textContent(), /Source note/);

@@ -6,6 +6,21 @@
     addEventListener('load', () => { navigator.serviceWorker.register(new URL("../sw.js", script.src)).catch(() => {}); });
   }
 
+  // Opened from the home screen of an iPhone or iPad, the lexicon has no browser around it, and
+  // iOS shows a link to another site (Wiktionary, Logeion) in a sheet inside the app. Jack wants
+  // such links in Safari itself (13 November 2026). iOS has no setting for that; Safari answers
+  // to addresses that begin x-safari-https://, so the link is sent there. Should that address not
+  // be taken up (the page is still in view a moment later), the link opens as it used to.
+  if (navigator.standalone === true) {
+    document.addEventListener('click', event => {
+      const link = event.target.closest && event.target.closest('a[href]');
+      if (!link || event.defaultPrevented || !/^https?:$/.test(link.protocol) || link.origin === location.origin) return;
+      event.preventDefault();
+      location.href = 'x-safari-' + link.href;
+      setTimeout(() => { if (!document.hidden) location.href = link.href; }, 900);
+    });
+  }
+
   // Theme (light is the default; the choice is kept where storage allows), chosen in the settings.
   const root = document.documentElement;
   const color = document.querySelector('meta[name="theme-color"]');

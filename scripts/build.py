@@ -81,7 +81,7 @@ POS = ('noun', 'verb', 'adjective', 'adverb', 'pronoun', 'preposition', 'conjunc
 # Grammar derived from a term's dictionary form: "caccabus, caccabī m." is a noun of the second
 # declension, "tītillō, tītillāre" a verb of the first conjugation. A term's own "grammar" wins.
 NOUN_FORM = re.compile(r'^(?P<head>[^\s,()]+)(?: \([^)]*\))?, (?P<gen>[^\s,]+) (?P<gender>m|f|n|c)\.(?P<pl> pl\.)?$')
-VERB_FORM = re.compile(r'^(?P<head>[^\s,()]+(?:ō|or))(?: \([^)]*\))?, (?P<inf>[^\s,]+)(?:, [^\s,]+)*$')
+VERB_FORM = re.compile(r'^(?P<head>[^\s,()]+(?:ō|or))(?: \([^)]*\))?, (?P<inf>[^\s,]+)(?:, [^\s,]+(?: sum)?)*$')
 DECLENSIONS = (('ēī', 'fifth'), ('eī', 'fifth'), ('ārum', 'first'), ('ae', 'first'), ('ōrum', 'second'), ('uum', 'fourth'),
                ('ūs', 'fourth'), ('is', 'third'), ('um', 'third'), ('ī', 'second'))
 CONJUGATIONS = (('ārī', 'first conjugation, deponent'), ('ērī', 'second conjugation, deponent'),
@@ -394,7 +394,7 @@ def grammar(term):
             name = 'second'   # malleus, malleī; hypogēum, hypogēī
         return (f'noun, {name} declension' if name else 'noun') + (', plural' if match['pl'] else '')
     match = VERB_FORM.match(term['latin'])
-    if match:
+    if match and match['inf'].endswith(('re', 'rī', 'ī', 'sse')):   # not "major, majus" or "jūnior, jūniōris"
         name = next((n for ending, n in CONJUGATIONS if match['inf'].endswith(ending)), None)
         return f'verb, {name}' if name else 'verb'
     return ''
@@ -403,6 +403,59 @@ def grammar(term):
 def term_head(latin):
     """The dictionary headword of a term: "caccabus" in "caccabus (cacabus), caccabī m."."""
     return TERM_HEAD.match(latin).group(1)
+
+
+def wiktionary_title(head):
+    """The page of English Wiktionary where a Latin word's forms are set out: the word without
+    its macrons and with i for consonantal j, as Wiktionary writes its Latin headwords (jam is at
+    "iam", Jēsus at "Iesus"); v and the capital of a name are kept."""
+    text = unicodedata.normalize('NFD', head.replace('æ', 'ae').replace('œ', 'oe'))
+    text = ''.join(c for c in text if not unicodedata.combining(c)).replace('j', 'i').replace('J', 'I')
+    bare = text.rstrip('.!?')
+    return bare.lower() if bare != text else text   # a one-word saying: "Ecce!" is at "ecce"
+
+
+def wiktionary_url(head):
+    return f'https://en.wiktionary.org/wiki/{quote(wiktionary_title(head))}#Latin'
+
+
+# What a term's dictionary form shows of how it inflects, more loosely than the grammar line reads
+# it: "auctor, auctōris m./f.", "mōtus, mōtūs m. (animī)", "vehor, vehī, vectus sum"; and an
+# adjective's or a pronoun's forms: "bonus, bona, bonum", "ille, illa, illud", "ācer, ācris, ācre",
+# "fidēlis, fidēle", "major, majus", "plūrēs, plūra", and the one-ending kind, "pār, paris".
+_W = r'[^\s,()]+'
+DECLINED = re.compile(rf'^{_W}(?: \([^)]*\))?, {_W} [mfnc](?:/[mfn])?\.'
+                      rf'|^{_W}, {_W}(?:a|ae|aec), [^\s,()]*(?:um|ud|od|id|oc|em|a|ō)$|^{_W}(?:er|is), {_W}is, {_W}e$'
+                      rf'|^{_W}(?:is|er), {_W}e$|^{_W}or, {_W}us$'
+                      rf'|^{_W}ēs, {_W}a$|^{_W}(?:[ārx]|ns|ēs), {_W}is$')
+CONJUGATED = re.compile(rf'^{_W}(?:ō|or|um)(?: \([^)]*\))?, {_W}(?:re|rī|ī|sse|lle)(?:,|$)')
+INFLECTED = {'noun': 'Declension', 'adjective': 'Declension', 'pronoun': 'Declension', 'numeral': 'Declension',
+             'verb': 'Conjugation'}
+
+
+def inflection(term):
+    """"Declension" or "Conjugation" where the term is a word given in its dictionary form, or a
+    bare word whose grammar names its kind ("verb, third conjugation"); nothing for an adverb or
+    a particle, a form of another word (animī, fīat) or a saying."""
+    latin = re.sub(r' \(\+[^)]*\)$', '', term['latin'])   # "manifestus, manifesta, manifestum (+ gen.)"
+    if CONJUGATED.match(latin):
+        return 'Conjugation'
+    if DECLINED.match(latin):
+        return 'Declension'
+    kind = re.match(r'(noun|adjective|pronoun|numeral|verb)(?=,|$)', term.get('grammar', ''))
+    if kind and re.fullmatch(rf'{_W}(?: \([^)]*\))?', latin) and latin[-1] not in '.!?’' and ' of ' not in term['grammar']:
+        return INFLECTED[kind[1]]
+    return ''
+
+
+def wiktionary_link(term):
+    """A link to the word's declension or conjugation on Wiktionary, which the lexicon does not
+    print itself (Jack, 13 November 2026). Only for a term of one word that inflects."""
+    head, label = term_head(term['latin']), inflection(term)
+    if ' ' in head or not label:
+        return ''
+    return (f'<a class="wikt" href="{wiktionary_url(head)}" rel="noopener noreferrer" target="_blank">'
+            f'{label} on Wiktionary</a>')
 
 
 def fold(text):
@@ -818,8 +871,9 @@ def render_concept(record, site):
     gloss = main.get('gloss', '')
     block = [f'<aside class="side"><p>{labels(main)}</p>{evidence}</aside>', notes(main),
              f'<p class="lemma" lang="la">{ours_mark(main)}<b>{head}</b>{refs(main)}{escape(rest)}</p>']
-    if grammar(main):
-        block.append(f'<p class="gram">{escape(grammar(main))}</p>')
+    forms = wiktionary_link(main)
+    if grammar(main) or forms:
+        block.append('<p class="gram">' + ' · '.join(x for x in (escape(grammar(main)), forms) if x) + '</p>')
     if gloss and gloss.strip().lower() != record['english'].strip().lower():
         block.append(f'<p class="def">{escape(gloss)}</p>')
     if 'register' in main:
@@ -835,7 +889,7 @@ def render_concept(record, site):
         for term in others:
             head, rest = links.latin(term['latin'])
             side = notes(term)
-            meta = term_meta(term)
+            meta = ' · '.join(x for x in (term_meta(term), wiktionary_link(term)) if x)
             gloss = f'<span class="gloss" lang="en"> — {escape(term["gloss"])}</span>' if term.get('gloss') else ''
             item = [side, f'<p class="lemma" lang="la">{ours_mark(term)}<b>{head}</b>{refs(term)}{escape(rest)}{gloss}</p>',
                     f'<p class="meta-line">{meta}</p>']
@@ -897,8 +951,9 @@ def render_word_page(head, info, site):
     if first['latin'] != head:
         parts.append(f'<p class="forms" lang="la">{escape(first["latin"])}</p>')
     gram = next((grammar(t) for _, t in uses if grammar(t)), '')
-    if gram:
-        parts.append(f'<p class="gram">{escape(gram)}</p>')
+    forms = next((wiktionary_link(t) for _, t in uses if wiktionary_link(t)), '')
+    if gram or forms:
+        parts.append('<p class="gram">' + ' · '.join(x for x in (escape(gram), forms) if x) + '</p>')
     meanings = list(dict.fromkeys(t.get('gloss', r['english']) for r, t in uses))
     parts.append(f'<p class="def">{escape("; ".join(meanings))}</p>')
 
@@ -953,7 +1008,10 @@ def render_word_page(head, info, site):
     lookup = re.sub(r'[^a-z]', '', fold(head))
     parts.append(f'<footer class="c-sources"><p><span class="sc">Dictionaries</span>'
                  f'<a href="https://logeion.uchicago.edu/{lookup}" rel="noopener noreferrer" target="_blank">Logeion: {escape(head)}</a>'
-                 ' (Lewis &amp; Short and others)</p>' + suggest_link(f'l/{info["slug"]}.html', head) + '</footer>')
+                 ' (Lewis &amp; Short and others)'
+                 + ('' if '’' in head else
+                    f' · <a href="{wiktionary_url(head)}" rel="noopener noreferrer" target="_blank">Wiktionary: {escape(head)}</a>')
+                 + '</p>' + suggest_link(f'l/{info["slug"]}.html', head) + '</footer>')
     return page_shell(f'{head}: a Latin word · {SITE_NAME}',
                       f'The Latin word {head} ({"; ".join(meanings)}): where the lexicon uses it, with its notes and examples.',
                       f'l/{info["slug"]}.html', '../', resolve_anchors('<article class="word">\n' + '\n'.join(parts) + '\n</article>', site, '../', f'l/{info["slug"]}.html'))

@@ -33,7 +33,7 @@ A phrase book's Latin is checked in Lewis & Short like any other, and what the c
 - the book's Latin is entered under what it really means, in the record for that sense (*grātiam facere* under forgive, not under "do a favour");
 - a usage for which we have found no classical instance but which is current in modern Latin stays, with a plain sentence saying so (we have found no classical instance of bare *Grātiās!* without *agere*, but it is used so in modern Latin).
 
-Traupman is cited as `Traupman 103` (the printed page).
+Traupman is cited as `Traupman 103` (the printed page) in a term's evidence and an example's source. In the record's `sources` he has one line with every page, `John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 103, 211.`, and nothing about how the book was read (see "Sources are citations" in [records.md](records.md)).
 
 ### Saying that something is not attested
 

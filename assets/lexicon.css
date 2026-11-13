@@ -322,6 +322,10 @@ span.kind, p.kind:not(:has(a)) { display:block; padding:10px 0; }
 .filter button { min-height:44px; padding:0 8px; border:0; background:none; color:var(--muted); cursor:pointer; }
 .filter button:hover { color:var(--ink); }
 .filter button[aria-pressed="true"] { color:var(--ink); text-decoration:underline; text-decoration-color:var(--accent); text-decoration-thickness:2px; text-underline-offset:.45em; }
+.kind-filter { align-items:center; margin:6px 0 2px -8px; }
+.kind-filter[hidden] { display:none; }
+.kind-count { margin-left:auto; padding-right:8px; color:var(--muted); font-size:.92rem; }
+.az-nav a[hidden] { display:none; }
 .ex, .words, .uses, .notes-list { margin:0; padding:0; list-style:none; }
 .ex > li, .words > li, .uses > li { margin:0 0 14px; }
 .uses > li > a { display:inline-flex; align-items:center; min-height:44px; }

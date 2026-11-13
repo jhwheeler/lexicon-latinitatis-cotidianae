@@ -6,21 +6,6 @@
     addEventListener('load', () => { navigator.serviceWorker.register(new URL("../sw.js", script.src)).catch(() => {}); });
   }
 
-  // Opened from the home screen of an iPhone or iPad, the lexicon has no browser around it, and
-  // iOS shows a link to another site (Wiktionary, Logeion) in a sheet inside the app. Jack wants
-  // such links in Safari itself (13 November 2026). iOS has no setting for that; Safari answers
-  // to addresses that begin x-safari-https://, so the link is sent there. Should that address not
-  // be taken up (the page is still in view a moment later), the link opens as it used to.
-  if (navigator.standalone === true) {
-    document.addEventListener('click', event => {
-      const link = event.target.closest && event.target.closest('a[href]');
-      if (!link || event.defaultPrevented || !/^https?:$/.test(link.protocol) || link.origin === location.origin) return;
-      event.preventDefault();
-      location.href = 'x-safari-' + link.href;
-      setTimeout(() => { if (!document.hidden) location.href = link.href; }, 900);
-    });
-  }
-
   // Theme (light is the default; the choice is kept where storage allows), chosen in the settings.
   const root = document.documentElement;
   const color = document.querySelector('meta[name="theme-color"]');
@@ -103,6 +88,37 @@
   syncDisplay();
   if (settings.macrons === 'off' || settings.j === 'i' || settings.v === 'u') render();
   window.lexiconDisplay = { render };
+
+  // Words or phrases: in a category's list and in the English A–Z, keep only the words or only the
+  // phrases. The choice is kept, so it holds from one list to the next; a letter left with nothing
+  // to show is hidden with its link.
+  document.querySelectorAll('[data-kind-filter]').forEach(group => {
+    const buttons = [...group.querySelectorAll('button[data-kind]')], count = group.querySelector('.kind-count');
+    const items = [...document.querySelectorAll('.wlist > li[data-kind]')];
+    const letters = [...document.querySelectorAll('.az-letter')];
+    function apply(kind) {
+      buttons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.kind === kind)));
+      let shown = 0;
+      items.forEach(item => { item.hidden = kind !== 'all' && item.dataset.kind !== kind; if (!item.hidden) shown++; });
+      letters.forEach(letter => {
+        letter.hidden = !letter.querySelector('li[data-kind]:not([hidden])');
+        const link = document.querySelector(`.az-nav a[href="#${letter.id}"]`);
+        if (link) link.hidden = letter.hidden;
+      });
+      count.textContent = kind === 'all' ? '' : `${shown.toLocaleString('en')} ${kind === 'word' ? 'words' : 'phrases'}`;
+    }
+    buttons.forEach(button => button.addEventListener('click', () => {
+      try { localStorage.setItem('lexicon-kind', button.dataset.kind); } catch {}
+      apply(button.dataset.kind);
+    }));
+    let kept = 'all';
+    try { if (['word', 'phrase'].includes(localStorage.getItem('lexicon-kind'))) kept = localStorage.getItem('lexicon-kind'); } catch {}
+    // A list with no phrases (or no words) offers no choice.
+    const kinds = new Set(items.map(item => item.dataset.kind));
+    if (kinds.size < 2) return;
+    group.hidden = false;
+    if (kept !== 'all') apply(kept);
+  });
 
   // Example filters: all examples show without JavaScript; with it, a reader can keep
   // only the quotations from authors or only the sentences we composed.

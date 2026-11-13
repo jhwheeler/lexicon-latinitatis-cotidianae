@@ -33,7 +33,9 @@ before(async () => {
     executablePath: process.env.LEXICON_CHROMIUM_EXECUTABLE || undefined,
     args: JSON.parse(process.env.LEXICON_CHROMIUM_ARGS || '[]')
   });
-  page = await browser.newPage({ viewport: { width: 1280, height: 900 } });
+  // The shared page goes without the service worker, so that each test sees the files as they are
+  // fetched (a held or counted request is a real one); the offline test has a context of its own.
+  page = await browser.newPage({ viewport: { width: 1280, height: 900 }, serviceWorkers: 'block' });
 });
 beforeEach(async () => {
   await page.setViewportSize({ width: 1280, height: 900 });
@@ -154,32 +156,6 @@ test('the lexicon is kept on the device: it opens and searches offline, as an ap
   // A page never opened here says so, and leads back to the search.
   await app.goto(pageUrl('c/soap.html'));
   assert.match(await app.locator('h1').textContent(), /not saved on this device/);
-  await context.close();
-});
-
-test('as a home-screen app on an iPhone, a link to another site is sent to Safari, and still opens if Safari does not answer', async () => {
-  const context = await browser.newContext({ viewport: { width: 390, height: 800 } });
-  await context.addInitScript(() => { Object.defineProperty(Navigator.prototype, 'standalone', { get: () => true }); });
-  const app = await context.newPage();
-  const asked = [];
-  await context.route(/wiktionary\.org/, route => { asked.push(route.request().url()); return route.fulfill({ contentType: 'text/html', body: '<title>Wiktionary</title>' }); });
-  await app.goto(pageUrl('c/train.html'));
-  // The link is not followed in the app's own sheet: it is handed to Safari's address.
-  const prevented = await app.evaluate(() => new Promise(resolve => {
-    const link = document.querySelector('a.wikt');
-    link.addEventListener('click', event => setTimeout(() => resolve(event.defaultPrevented)));
-    link.click();
-  }));
-  assert.equal(prevented, true);
-  // No Safari here to take it, so a moment later the link opens as before.
-  // (The browser reports the address it could not open as an aborted navigation, so wait by looking.)
-  for (let i = 0; i < 50 && !/wiktionary\.org\/wiki\/tramen/.test(app.url()); i++) await app.waitForTimeout(100);
-  assert.match(app.url(), /wiktionary\.org\/wiki\/tramen/);
-  assert.equal(asked.length, 1);
-  // A link within the lexicon is left alone.
-  await app.goto(pageUrl('c/train.html'));
-  await app.locator('p.see a').first().click();
-  await app.waitForURL(/\/c\/railway\.html/);
   await context.close();
 });
 
@@ -327,6 +303,35 @@ test('links to the old single page lead to the pages that hold their targets now
   await page.goto(url + '#about');
   await page.waitForTimeout(300);
   assert.match(page.url(), /index\.html#about$/);
+});
+
+test('a list can show only the words or only the phrases, and the choice carries to the next list', async () => {
+  await page.goto(pageUrl('words.html'));
+  const shown = () => page.locator('.wlist > li:not([hidden])').count();
+  const all = await shown();
+  const group = page.locator('[data-kind-filter]');
+  assert.equal(await group.isVisible(), true);
+  await group.locator('button[data-kind="phrase"]').click();
+  const phrases = await shown();
+  assert.ok(phrases > 100 && phrases < all);
+  assert.equal(await page.locator('.wlist > li:not([hidden])[data-kind="word"]').count(), 0);
+  assert.match(await group.locator('.kind-count').textContent(), /^[\d,]+ phrases$/);
+  // No letter is left as a bare heading, and its link goes with it.
+  const empty = await page.locator('.az-letter:not([hidden])').evaluateAll(sections =>
+    sections.filter(section => !section.querySelector('li:not([hidden])')).length);
+  assert.equal(empty, 0);
+  assert.equal(await page.locator('.az-nav a:not([hidden])').count(), await page.locator('.az-letter:not([hidden])').count());
+  for (const button of await group.locator('button').all()) assert.ok((await button.boundingBox()).height >= 44);
+  // The choice is kept on a category's page, and the words are the rest.
+  await page.goto(pageUrl('k/sermo.html'));
+  assert.equal(await page.locator('[data-kind-filter] button[data-kind="phrase"]').getAttribute('aria-pressed'), 'true');
+  assert.equal(await page.locator('.wlist > li:not([hidden])[data-kind="word"]').count(), 0);
+  const sermoPhrases = await shown();
+  await page.locator('[data-kind-filter] button[data-kind="word"]').click();
+  const sermoWords = await shown();
+  await page.locator('[data-kind-filter] button[data-kind="all"]').click();
+  assert.equal(await shown(), sermoPhrases + sermoWords);
+  await page.evaluate(() => localStorage.removeItem('lexicon-kind'));
 });
 
 test('the A–Z pages list every entry and every Latin word, by letter', async () => {

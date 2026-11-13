@@ -24,9 +24,13 @@ After adding or editing Latin, run `python3 scripts/consonantal_j.py --list` and
 
 ## Examples from the Theodōrus et pater readers
 
-The readers are cited as *Libellus I*–*VII* with their titles, e.g. `(Libellus III, <span lang="la">Apud avum et aviam</span>)`; the cookbook as `(<span lang="la">Culīna Theodōrī</span>)`. In the readers *fābula* now means only the tales told inside them, so it is not used for the readers themselves (Jack, 30 October 2026); their entries' anchors are `libelli-N` (renamed from `fabulae-N` on 7 November 2026; nothing linked to them).
+The readers (the libellī, and the cookbook that goes with them) are Jack's own and unpublished; whether they will be published is undecided. A reader of the lexicon cannot be expected to know them as he knows Cicero, so the site never cites them (Jack, 13 November 2026):
 
-Examples cited this way quote the text word for word, and the readers are still being revised, so quotations drift. Whenever the readers change, run `python3 scripts/check_libelli.py --latinitas <path to a latinitas checkout>`: it checks every cited example, in the grouped entries and in the concept records, against the current texts and each title against the reader's `@title`, and lists looser mentions to look over. Re-quote what it reports from the current text and correct the English to match. Household words follow the series bible in the latinitas repository (pyjamas are *vestis nocturna*, not Traupman's *synthesis dormītōria*); when a reader drops or changes a word, correct any entry that calls it "the word of the libellī".
+- In the data an example taken from them keeps its place as its `source`: `Libellus III, <span lang="la">Apud avum et aviam</span>`, or `<span lang="la">Culīna Theodōrī</span>` for the cookbook. The site shows it as "composed", like our other sentences, and the search does the same. A record's source line that names the readers (it begins *Theodōrus et pater*) stays in the data and is not shown.
+- Prose never leans on them: no "the word of the libellī", "as in Libellus VII", "the series spelling". Say what is true without them: "our household word", "the house spelling", "a description of ours". Do not give a libellus as a term's `evidence`.
+- In the readers *fābula* means only the tales told inside them, so it is not used for the readers themselves (Jack, 30 October 2026).
+
+Examples kept this way quote the text word for word, and the readers are still being revised, so quotations drift. Whenever the readers change, run `python3 scripts/check_libelli.py --latinitas <path to a latinitas checkout>`: it checks every such example against the current texts and each title against the reader's `@title`, and lists looser mentions to look over. Re-quote what it reports from the current text and correct the English to match. Household words follow the series bible in the latinitas repository (pyjamas are *vestis nocturna*, not Traupman's *synthesis dormītōria*).
 
 ## Languages: English and Latin
 
@@ -48,6 +52,10 @@ Jack's requirements (13 November 2026): the search must feel instant, with no ba
 - `manifest.webmanifest`, the icons (`src/icons/`, drawn by `scripts/make_icons.mjs`) and the tags `app_head` puts in every page make "Add to Home Screen" open the lexicon in its own window, not a browser tab.
 - The service worker (`src/sw.js`, built to `sw.js` at the root) keeps the front page, the category pages, the guidance pages, the stylesheet, the scripts, the search data, the fonts and the icons on the device when it installs, and the entry and word pages as they are read (the 600 most recent). The lexicon then opens at once and searches offline. Its version is a hash of the files it saves, so every build that changes them makes browsers fetch them afresh: a reader sees a change at the second opening after it is published, not the first. Do not give the saved files names that change, and do not add a second cache for them.
 - The browser tests cover the batches, the loading state, the manifest and offline use.
+
+## Words or phrases
+
+Jack's request (13 November 2026): the category lists and the English A–Z have a filter, All / Words / Phrases, so the sayings can be browsed by themselves and the words are not buried under them. A record is a phrase when its `pos` is `phrase` (or includes it); give every saying or sentence that part of speech. The choice is kept on the device and carries from one list to the next.
 
 ## Sources are citations
 

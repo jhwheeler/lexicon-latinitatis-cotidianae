@@ -50,6 +50,22 @@ THEME_INIT = ("<script>\ndocument.documentElement.classList.add('js');\ntry {\n 
               "localStorage.getItem('lexicon-theme') === 'dark' ? 'dark' : 'light';\n} catch {}\n</script>")
 DARK_PAPER = '#1c1b19'
 TRAUPMAN = 'Conversational Latin for Oral Proficiency'
+# The Theodōrus et pater readers (the libellī, and the cookbook that goes with them) are Jack's own
+# and unpublished, and a reader of the lexicon cannot be expected to know them as he knows Cicero
+# (Jack, 13 November 2026). The data keeps each example's place in them ("Libellus IV, …"), which
+# scripts/check_libelli.py needs; the site shows such an example as "composed", and leaves out the
+# source lines that name the readers.
+READER_EXAMPLE = re.compile(r'Libellus [IVX]+\b|<span lang="la">Culīna Theodōrī</span>')
+READER_SOURCE = re.compile(r'(?:<span lang="la">)?Theodōrus et pater')
+
+
+def composed(phrase):
+    """An example we wrote ourselves: marked so, or taken from the readers."""
+    return phrase['source'] == 'composed' or bool(READER_EXAMPLE.match(phrase['source']))
+
+
+def shown_sources(record):
+    return [source for source in record['sources'] if not READER_SOURCE.match(source)]
 SOURCE_METHOD = re.compile(r'searchable text|supplied PDF|printed page|page images?\b|rendered page')
 # The lexicon as an app on a phone's home screen (Jack, 13 November 2026): with the manifest and the
 # icons, "Add to Home Screen" opens it in a window of its own, not in a browser tab; the service
@@ -408,9 +424,9 @@ def note_numbers(record):
 def record_tags(record):
     tags = {PERIOD_TAGS[t['period']] for t in record['terms']}
     phrases = record.get('phrases', [])
-    if any(p['source'] != 'composed' for p in phrases) or any('lang="la"' in e for t in record['terms'] for e in t.get('evidence', [])):
+    if any(not composed(p) for p in phrases) or any('lang="la"' in e for t in record['terms'] for e in t.get('evidence', [])):
         tags.add('Quotations')
-    if any(p['source'] == 'composed' for p in phrases):
+    if any(composed(p) for p in phrases):
         tags.add('Composed phrases')
     if record['review']['status'] == 'draft':
         tags.add('Draft')
@@ -981,7 +997,7 @@ def render_concept(record, site):
 
     phrases = record.get('phrases', [])
     if phrases:
-        kinds = {'composed' if p['source'] == 'composed' else 'author' for p in phrases}
+        kinds = {'composed' if composed(p) else 'author' for p in phrases}
         control = ''
         if len(kinds) == 2:
             control = (f'<div class="filter" role="group" aria-label="Show examples" data-example-filter="ex-{key}" hidden>'
@@ -990,7 +1006,7 @@ def render_concept(record, site):
                        '<button type="button" data-show="composed" aria-pressed="false">Composed</button></div>')
         items = []
         for phrase in phrases:
-            kind = 'composed' if phrase['source'] == 'composed' else 'author'
+            kind = 'composed' if composed(phrase) else 'author'
             source = ('<span class="src composed">composed</span>' if kind == 'composed'
                       else f'<span class="src">{phrase["source"]}</span>')
             side = notes(phrase)
@@ -1003,8 +1019,9 @@ def render_concept(record, site):
     if record.get('related'):
         parts.append('<p class="see">See also ' + ', '.join(
             f'<a href="{links.related(r)}">{links.label(r)}</a>' for r in record['related']) + '.</p>')
-    sources = record['sources']
-    parts.append('<footer class="c-sources"><p><span class="sc">Sources</span>' + sources[0] + '</p>'
+    sources = shown_sources(record)
+    parts.append('<footer class="c-sources">'
+                 + (f'<p><span class="sc">Sources</span>{sources[0]}</p>' if sources else '')
                  + ''.join(f'<p>{s}</p>' for s in sources[1:]) + f'<p>{review_state(record["review"])}</p>'
                  + suggest_link(f'c/{record["id"]}.html', record['english'] + (f' ({record["sense"]})' if 'sense' in record else ''))
                  + '</footer>')
@@ -1074,7 +1091,7 @@ def render_word_page(head, info, site):
         main = ordered_terms(record)[0] is term
         for phrase in record.get('phrases', []):
             if main or word.search(fold(phrase['latin'])):
-                source = ('<span class="src composed">composed</span>' if phrase['source'] == 'composed'
+                source = ('<span class="src composed">composed</span>' if composed(phrase)
                           else f'<span class="src">{phrase["source"]}</span>')
                 examples.append(f'<li><p class="la" lang="la">{escape(phrase["latin"])}</p>'
                                 f'<p class="en">{escape(phrase["english"])}{source}</p>'
@@ -1266,12 +1283,30 @@ def category_entries(key, site):
     return sorted(rows, key=lambda row: (row[0], row[4]))
 
 
+def is_phrase(source):
+    """A saying or a sentence, not a word: a record whose part of speech is "phrase"."""
+    pos = source.get('pos', '')
+    return 'phrase' in ([pos] if isinstance(pos, str) else pos)
+
+
+# Words or phrases (Jack, 13 November 2026): in the category lists and the English A–Z, a reader can
+# keep only the words or only the phrases, so that the sayings can be browsed by themselves and the
+# words are not buried under every phrase that begins with the same letter. It needs scripts, so
+# without them it is hidden and the whole list stands.
+KIND_FILTER = ('<div class="filter kind-filter" role="group" aria-label="Show" data-kind-filter hidden>'
+               '<button type="button" data-kind="all" aria-pressed="true">All</button>'
+               '<button type="button" data-kind="word" aria-pressed="false">Words</button>'
+               '<button type="button" data-kind="phrase" aria-pressed="false">Phrases</button>'
+               '<span class="kind-count" role="status" aria-live="polite"></span></div>')
+
+
 def word_list(rows, up, show_category=None):
     items = []
     for _, english, pos, latin, path, source in rows:
         mark = ours_mark(ordered_terms(source)[0]) if 'terms' in source else ''
         extra = (f'<span class="w-cat" lang="la">{escape(show_category(path))}</span>' if show_category else '')
-        items.append(f'<li><a href="{up}{path}"><span class="w-en">{escape(english)}'
+        kind = 'phrase' if is_phrase(source) else 'word'
+        items.append(f'<li data-kind="{kind}"><a href="{up}{path}"><span class="w-en">{escape(english)}'
                      + (f' <span class="w-pos">{escape(pos)}</span>' if pos else '')
                      + f'</span><span class="w-la" lang="la">{mark}{escape(latin)}</span>{extra}</a></li>')
     return '<ul class="wlist">' + ''.join(items) + '</ul>'
@@ -1302,7 +1337,7 @@ def render_category_page(key, site):
             + category_nav(site, up, key) + '<div class="cat-main">' + search_block(up, key, len(rows))
             + f'<div id="category-view">{aliases}<header class="category-heading"><h1 lang="la">{escape(category["latin"])}</h1>'
             f'<p class="eyebrow">{escape(category["english"])} · {len(rows)} entries</p></header>'
-            + word_list(rows, up) + older + '</div></div></div>')
+            + KIND_FILTER + word_list(rows, up) + older + '</div></div></div>')
     body = resolve_anchors(body, site, up, f'k/{key}.html')
     return page_shell(f'{category["latin"]}: {category["english"]} · {SITE_NAME}',
                       f'Everyday Latin for {category["english"].lower()}: {len(rows)} entries, each with its sources.',
@@ -1347,7 +1382,7 @@ def render_az_pages(site):
     pages['words.html'] = page_shell(f'English words A–Z · {SITE_NAME}',
                                      'Every English headword of the lexicon, from A to Z, with its Latin.', 'words.html', '',
                                      f'<h1 class="page-title">English words, A–Z</h1><p class="lead">{len(rows)} entries. '
-                                     'For the Latin words, see <a href="latin.html">the Latin index</a>.</p>' + english)
+                                     'For the Latin words, see <a href="latin.html">the Latin index</a>.</p>' + KIND_FILTER + english)
     pages['latin.html'] = page_shell(f'Latin words A–Z · {SITE_NAME}',
                                      'Every Latin word that heads an entry of the lexicon, from A to Z, with its meanings.', 'latin.html', '',
                                      f'<h1 class="page-title">Latin words, A–Z</h1><p class="lead">{len(words)} words, each with a page '
@@ -1378,7 +1413,7 @@ def search_data(site):
                 if record['domain'] != key:
                     continue   # listed here too, but indexed once, under its own category
                 lines = [['d', t['latin'], t.get('gloss', ''), plain(term_meta(t))] for t in ordered_terms(record)]
-                lines += [['e', p['latin'], p['english'], plain(p['source'])] for p in record.get('phrases', [])]
+                lines += [['e', p['latin'], p['english'], 'composed' if composed(p) else plain(p['source'])] for p in record.get('phrases', [])]
                 lines += [['n', plain(note_html(record['notes'][n]))] for n in note_numbers(record)]
                 # Each term's head and the stems its forms are built on: [head, class, stem, class, stem…]
                 # The search folds v as u, as it folds j as i (videō, uideō), so the stems are sent folded.

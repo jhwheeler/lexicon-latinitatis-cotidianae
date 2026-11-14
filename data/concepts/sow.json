@@ -3,7 +3,9 @@
   "english": "sow",
   "pos": "verb",
   "also": [
-    "plant"
+    "plant",
+    "plant a tree",
+    "set out plants"
   ],
   "domain": "domus",
   "terms": [
@@ -15,6 +17,17 @@
       "evidence": [
         "Traupman 166"
       ]
+    },
+    {
+      "latin": "plantō, plantāre",
+      "status": "alternative",
+      "period": "post-classical",
+      "gloss": "set (a plant, a cutting) in the ground",
+      "evidence": [
+        "Plin. NH 17.67: <span lang=\"la\">hōc modō plantantur Pūnicae</span> (Lewis &amp; Short)",
+        "Pall. 4.5 (Lewis &amp; Short)"
+      ],
+      "comment": "From <span lang=\"la\">planta</span>, a cutting or seedling. The classical writers say <span lang=\"la\">serere</span> or <span lang=\"la\">pōnere</span>."
     }
   ],
   "phrases": [
@@ -27,16 +40,21 @@
   "related": [
     "pick",
     "tend-the-garden",
-    "grow-plants"
+    "grow-plants",
+    "transplant",
+    "furrow",
+    "seed",
+    "plant-nursery"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/sero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sero</a>",
+    "<a href=\"https://logeion.uchicago.edu/planto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: planto</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 166.",
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026. Examples marked “Libellus” quote those texts word for word."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

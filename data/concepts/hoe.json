@@ -3,7 +3,11 @@
   "english": "hoe",
   "pos": "noun",
   "also": [
-    "mattock"
+    "mattock",
+    "drag-hoe",
+    "two-pronged hoe",
+    "pick",
+    "grub up"
   ],
   "domain": "domus",
   "terms": [
@@ -25,18 +29,56 @@
         "M-O s.v. hoe",
         "Hor. Epod. 5.30"
       ]
+    },
+    {
+      "latin": "rāstrum, rāstrī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a heavy toothed hoe, a drag-hoe (plural usually rāstrī, rāstrōrum m.)",
+      "evidence": [
+        "Verg. G. 1.94: <span lang=\"la\">rāstrīs glēbās quī frangit inertēs</span> (Lewis &amp; Short)",
+        "Cato Agr. 10.3 (Lewis &amp; Short)",
+        "Ter. Heaut. 1.1.36 (Lewis &amp; Short)"
+      ],
+      "comment": "For breaking clods and working the soil; <span lang=\"la\">rāstellus</span>, the rake, is its diminutive."
+    },
+    {
+      "latin": "bidēns, bidentis m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a heavy two-pronged hoe, a mattock",
+      "evidence": [
+        "Lucr. 5.209: <span lang=\"la\">validō bidentī ingemere</span> (Lewis &amp; Short)",
+        "Verg. G. 2.400: <span lang=\"la\">glaebam frangere bidentibus</span> (Lewis &amp; Short)",
+        "Tib. 1.1.29 (Lewis &amp; Short)"
+      ],
+      "comment": "“Two-toothed”."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nōn rāstrōs patiētur humus, nōn vīnea falcem",
+      "english": "the soil will not suffer the hoe, nor the vineyard the pruning hook",
+      "source": "Verg. E. 4.40"
     }
   ],
   "related": [
-    "dig"
+    "dig",
+    "weed-verb",
+    "rake",
+    "spade",
+    "sickle",
+    "pitchfork"
   ],
   "sources": [
     "<a href=\"https://logeion.org/sarculum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sarculum</a> · <a href=\"https://logeion.org/ligo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ligo</a>",
-    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. yard, yard: backyard, lawn, lawn: lawn-mower, lawn: mow the lawn, sprinkler, hoe. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 38, 39, 320, 409."
+    "<a href=\"https://logeion.uchicago.edu/rastrum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: rastrum</a> · <a href=\"https://logeion.uchicago.edu/bidens\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: bidens</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. yard, yard: backyard, lawn, lawn: lawn-mower, lawn: mow the lawn, sprinkler, hoe. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 38, 39, 320, 409.",
+    "Vergil, <em>Eclogae</em> 4.40."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

@@ -2,6 +2,11 @@
   "id": "farmer",
   "english": "farmer",
   "pos": "noun",
+  "also": [
+    "ploughman",
+    "plowman",
+    "smallholder"
+  ],
   "domain": "urbs",
   "terms": [
     {
@@ -12,6 +17,17 @@
         "Traupman 166",
         "Traupman 313"
       ]
+    },
+    {
+      "latin": "arātor, arātōris m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a ploughman; in the poets, a farmer",
+      "evidence": [
+        "Lucr. 2.1164 (Lewis &amp; Short)",
+        "Tib. 2.1.5: <span lang=\"la\">lūce sacrā requiēscat arātor</span> (Lewis &amp; Short)",
+        "Cic. Verr. 2.5.38 (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -19,20 +35,30 @@
       "latin": "Agricola equum suum ad stabulum dūcit.",
       "english": "The farmer is leading his horse to the stable.",
       "source": "composed"
+    },
+    {
+      "latin": "lūce sacrā requiēscat humus, requiēscat arātor",
+      "english": "on the holy day let the soil rest, let the ploughman rest",
+      "source": "Tib. 2.1.5"
     }
   ],
   "related": [
     "shepherd",
-    "gardener"
+    "gardener",
+    "plough",
+    "field",
+    "reaper"
   ],
   "sources": [
     "<a href=\"https://logeion.org/agricola\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: agricola</a>",
+    "<a href=\"https://logeion.uchicago.edu/arator\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: arator</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 166, 313.",
-    "The example sentence marked “composed” is ours."
+    "The example sentence marked “composed” is ours.",
+    "Tibullus, <em>Elegiae</em> 2.1.5."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

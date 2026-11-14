@@ -2,6 +2,10 @@
   "id": "fern",
   "english": "fern",
   "pos": "noun",
+  "also": [
+    "bracken",
+    "ferns"
+  ],
   "domain": "natura",
   "terms": [
     {
@@ -10,15 +14,25 @@
       "period": "classical"
     }
   ],
+  "phrases": [
+    {
+      "latin": "neglēctīs ūrenda filix innāscitur agrīs",
+      "english": "in neglected fields the bracken grows up, fit only for burning",
+      "source": "Hor. S. 1.3.37"
+    }
+  ],
   "related": [
-    "moss"
+    "moss",
+    "undergrowth",
+    "forest"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/filix\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: filix</a>"
+    "<a href=\"https://logeion.uchicago.edu/filix\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: filix</a>",
+    "Horace, <em>Sermones</em> 1.3.37."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

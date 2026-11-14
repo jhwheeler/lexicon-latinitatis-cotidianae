@@ -2,6 +2,12 @@
   "id": "snake",
   "english": "snake",
   "pos": "noun",
+  "also": [
+    "serpent",
+    "grass snake",
+    "water snake",
+    "snakes"
+  ],
   "domain": "natura",
   "terms": [
     {
@@ -19,23 +25,30 @@
       "evidence": [
         "Traupman 144"
       ]
+    },
+    {
+      "latin": "coluber, colubrī m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a snake",
+      "register": "vōx poētica: Verg., Ov.",
+      "evidence": [
+        "Verg. G. 2.320 (Lewis &amp; Short)",
+        "Verg. G. 3.418 (Lewis &amp; Short)",
+        "Ov. Met. 4.620 (Lewis &amp; Short)"
+      ],
+      "comment": "The feminine is <span lang=\"la\">colubra</span> (Hor. C. 1.17.8)."
+    },
+    {
+      "latin": "natrix, natrīcis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a water snake",
+      "evidence": [
+        "Cic. Ac. 2.120: <span lang=\"la\">cūr deus tantam vim natrīcum vīperārumque fēcerit?</span> (Lewis &amp; Short)"
+      ],
+      "comment": "From <span lang=\"la\">nō</span>, to swim. Zoologists name the grass snake <em>Natrix natrix</em>."
     }
-  ],
-  "related": [
-    "hiss",
-    "lizard"
-  ],
-  "sources": [
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 144.",
-    "<a href=\"https://logeion.org/anguis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: anguis</a>"
-  ],
-  "review": {
-    "status": "draft",
-    "date": "2026-11-09",
-    "by": "Claude"
-  },
-  "also": [
-    "serpent"
   ],
   "phrases": [
     {
@@ -43,5 +56,20 @@
       "english": "Serpents bite (crawl, hiss).",
       "source": "Traupman 376"
     }
-  ]
+  ],
+  "related": [
+    "hiss",
+    "lizard",
+    "viper"
+  ],
+  "sources": [
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 144.",
+    "<a href=\"https://logeion.org/anguis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: anguis</a>",
+    "<a href=\"https://logeion.uchicago.edu/coluber\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: coluber</a> · <a href=\"https://logeion.uchicago.edu/natrix\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: natrix</a>"
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-15",
+    "by": "Claude"
+  }
 }

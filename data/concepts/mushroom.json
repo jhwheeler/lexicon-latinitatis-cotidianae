@@ -2,6 +2,13 @@
   "id": "mushroom",
   "english": "mushroom",
   "pos": "noun",
+  "also": [
+    "toadstool",
+    "fungus",
+    "mushrooms",
+    "boletus",
+    "porcini"
+  ],
   "domain": "natura",
   "terms": [
     {
@@ -11,15 +18,40 @@
       "evidence": [
         "Traupman 72"
       ]
+    },
+    {
+      "latin": "bōlētus, bōlētī m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a choice mushroom",
+      "evidence": [
+        "Plin. NH 22.92 (Lewis &amp; Short)",
+        "Mart. 1.21 (Lewis &amp; Short)",
+        "Juv. 14.8 (Lewis &amp; Short)"
+      ],
+      "comment": "The best kind of mushroom, much prized at Rome (Lewis &amp; Short); in modern botany the name of the porcini and their kin."
     }
+  ],
+  "phrases": [
+    {
+      "latin": "aut viridēs malvās aut fungōs colligit albōs",
+      "english": "she gathers green mallows or white mushrooms",
+      "source": "Ov. F. 4.697"
+    }
+  ],
+  "related": [
+    "forest",
+    "moss"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/fungus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fungus</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 71–72."
+    "<a href=\"https://logeion.uchicago.edu/boletus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: boletus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 71–72.",
+    "Ovid, <em>Fasti</em> 4.697."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

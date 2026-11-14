@@ -2,6 +2,10 @@
   "id": "garden",
   "english": "garden",
   "pos": "noun",
+  "also": [
+    "vegetable garden",
+    "kitchen garden"
+  ],
   "domain": "domus",
   "terms": [
     {
@@ -25,10 +29,28 @@
       "comment": "<span lang=\"la\">Holitōrius</span>, “of vegetables”, is classical (<span lang=\"la\">forum holitōrium</span>, the vegetable market, Liv., Lewis &amp; Short s.v. <span lang=\"la\">olitōrius</span>)."
     }
   ],
+  "phrases": [
+    {
+      "latin": "hortus holitōrius",
+      "english": "a vegetable garden",
+      "source": "Traupman 320"
+    }
+  ],
   "related": [
     "yard",
     "tend-the-garden",
-    "flower-bed"
+    "flower-bed",
+    "hedge",
+    "orchard",
+    "sow",
+    "weed-verb",
+    "water-plants",
+    "dung",
+    "hoe",
+    "spade",
+    "rake",
+    "stake",
+    "gardener"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/hortus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: hortus</a>",
@@ -39,16 +61,5 @@
     "status": "draft",
     "date": "2026-11-12",
     "by": "Claude"
-  },
-  "also": [
-    "vegetable garden",
-    "kitchen garden"
-  ],
-  "phrases": [
-    {
-      "latin": "hortus holitōrius",
-      "english": "a vegetable garden",
-      "source": "Traupman 320"
-    }
-  ]
+  }
 }

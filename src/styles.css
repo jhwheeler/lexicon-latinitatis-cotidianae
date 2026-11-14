@@ -19,7 +19,7 @@
 :root {
   color-scheme:light;
   --paper:#ffffff; --ink:#141414; --soft:#3d3d3d; --muted:#666666; --hair:#dadada; --rule:#141414;
-  --rubric:#b0171f; --accent:#b0171f; --mark:#fbe1dd;
+  --rubric:#b0171f; --accent:#b0171f; --mark:#fbe1dd; --ground:#f2f0eb; --card:#ffffff;
   --serif:"Lexicon Serif","Gentium Book Plus",Gentium,"Iowan Old Style","Palatino Linotype",Georgia,serif;
   --sans:"Alegreya Sans","Gill Sans","Segoe UI",system-ui,sans-serif;
   --top:1rem;
@@ -27,11 +27,16 @@
 :root[data-theme="dark"] {
   color-scheme:dark;
   --paper:#1c1b19; --ink:#e4dfd6; --soft:#c7c1b6; --muted:#9e988d; --hair:#3a3733; --rule:#615c54;
-  --rubric:#d8d1c4; --accent:#d4968a; --mark:#59482a;
+  --rubric:#d8d1c4; --accent:#d4968a; --mark:#59482a; --ground:#141311; --card:#24221f;
 }
 
 *, *::before, *::after { box-sizing:border-box; }
 html { -webkit-text-size-adjust:100%; text-size-adjust:100%; scroll-padding-top:var(--top); }
+/* Opened from the home screen of an iPhone, a scrolled page showed through under the clock and the
+   battery (Jack, 14 November 2026). A strip of paper as tall as the status bar stays at the top of
+   the screen, above everything, and what sticks to the top (the search, the letters, the deck)
+   sticks under it. Where there is no such bar the strip has no height. */
+body::before { content:""; position:fixed; inset:0 0 auto; z-index:1000; height:env(safe-area-inset-top, 0px); background:var(--paper); }
 body { margin:0; background:var(--paper); color:var(--ink); font:400 1.0625rem/1.5 var(--serif); overflow-wrap:break-word; -webkit-tap-highlight-color:transparent; }
 @media (min-width:600px) { body { font-size:1.125rem; } }
 a { color:inherit; text-decoration-line:underline; text-decoration-color:var(--accent); text-decoration-thickness:1px; text-underline-offset:.2em; }
@@ -102,7 +107,7 @@ button { font:inherit; color:inherit; }
 /* Search bar ----------------------------------------------------------------------------
    One rule under the search: it runs under Clear to the edge of the column, and when the bar
    sticks to the top of the screen it is the line the page scrolls under. */
-.toolbar { position:sticky; top:0; z-index:20; display:flex; align-items:center; gap:14px; padding-top:6px; background:var(--paper); border-bottom:1.5px solid var(--accent); }
+.toolbar { position:sticky; top:env(safe-area-inset-top, 0px); z-index:20; display:flex; align-items:center; gap:14px; padding-top:6px; background:var(--paper); border-bottom:1.5px solid var(--accent); }
 .toolbar:focus-within { box-shadow:0 1px 0 var(--accent); }
 .search { flex:1; min-width:0; min-height:48px; margin:0; padding:6px 2px 4px; border:0; border-radius:0; background:transparent; color:var(--ink); font:italic 400 1.3rem/1.3 var(--serif); -webkit-appearance:none; appearance:none; }
 .search::placeholder { color:var(--muted); opacity:1; }
@@ -164,7 +169,7 @@ html:not(.js) :is(.toolbar, .meta, #search-results, .empty, .settings) { display
   .catpage { grid-template-columns:220px minmax(0,1fr); column-gap:44px; }
   .cat-menu { display:none; }
   /* The list of categories starts level with the search and sticks with it. */
-  .cat-side { display:block; position:sticky; top:0; padding-top:10px; max-height:100dvh; overflow-y:auto; scrollbar-width:thin; }
+  .cat-side { display:block; position:sticky; top:env(safe-area-inset-top, 0px); padding-top:10px; max-height:100dvh; overflow-y:auto; scrollbar-width:thin; }
   .cat-side li a { min-height:36px; padding:4px 0; }
   .cat-side .cat-home { min-height:49.5px; margin-bottom:6px; border-bottom:1.5px solid transparent; }
 }
@@ -190,7 +195,7 @@ html:not(.js) :is(.toolbar, .meta, #search-results, .empty, .settings) { display
 .az-nav { display:flex; flex-wrap:wrap; margin:10px 0 0; padding:4px 0; background:var(--paper); border-bottom:1px solid var(--rule); font:400 1.05rem var(--sans); }
 .az-nav a { display:inline-flex; align-items:center; justify-content:center; min-width:44px; min-height:44px; color:var(--soft); text-decoration:none; }
 /* Where the letters fit on one line, they stay at the top of the screen. */
-@media (min-width:720px) { .az-nav { position:sticky; top:0; z-index:10; } .az-nav a { min-width:34px; } }
+@media (min-width:720px) { .az-nav { position:sticky; top:env(safe-area-inset-top, 0px); z-index:10; } .az-nav a { min-width:34px; } }
 .az-nav a:hover { color:var(--ink); text-decoration:underline; text-decoration-color:var(--accent); }
 .az-letter { scroll-margin-top:0; }
 /* Below the letters, which stay at the top of a wider screen. */
@@ -365,19 +370,20 @@ span.kind, p.kind:not(:has(a)) { display:block; padding:10px 0; }
 }
 
 /* Practice (practice.html) ------------------------------------------------------------------
-   The deck's own line always gives what is chosen and the count; it opens the groups of choices.
-   A choice in a row carries a red bar at its left, as the current category does; a choice in a
-   line is underlined, as the other filters are. Nothing is boxed. The marks stand on a rule at
-   the foot of the card and stay at the foot of the screen, within reach of the thumb. */
+   The page is the lobby: the deck, the meter and the way into a round. The deck's own line always
+   gives what is chosen and the count; it opens the groups of choices. A choice in a row carries a
+   red bar at its left, as the current category does; a choice in a line is underlined, as the
+   other filters are. Nothing in the lobby is boxed but the button that starts a round. */
 .practice .category-heading, #practice { max-width:40rem; }
-.practice .category-heading { margin-top:14px; }
+.practice .category-heading { display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; column-gap:16px; margin-top:14px; }
+.p-lang { margin-bottom:-6px; }
 .practice summary { cursor:pointer; list-style:none; }
 .practice summary::-webkit-details-marker { display:none; }
 .practice summary::after { content:"+"; width:1ch; color:var(--accent); font:400 1.35rem/1 var(--sans); }
 .practice details[open] > summary::after { content:"−"; }
 .deck { border-bottom:1px solid var(--rule); }
 .deck > summary { display:grid; grid-template-columns:auto minmax(0,1fr) auto; column-gap:12px; align-items:baseline; min-height:48px; padding:9px 0 8px; background:var(--paper); color:var(--soft); font:400 1rem/1.35 var(--sans); }
-.deck[open] > summary { position:sticky; top:0; z-index:6; border-bottom:1px solid var(--hair); }
+.deck[open] > summary { position:sticky; top:env(safe-area-inset-top, 0px); z-index:6; border-bottom:1px solid var(--hair); }
 .deck-label, .pg-name { color:var(--rubric); font:400 1.15rem/1.3 var(--serif); font-variant-caps:small-caps; letter-spacing:.05em; }
 .deck-label { grid-area:1 / 1; }
 .deck-now { grid-area:1 / 2; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; color:var(--ink); }
@@ -423,42 +429,87 @@ span.kind, p.kind:not(:has(a)) { display:block; padding:10px 0; }
 .practice :is(input[type="text"], textarea):focus { outline:none; border-bottom-color:var(--accent); box-shadow:0 1px 0 var(--accent); }
 .p-button { min-height:44px; margin-right:18px; padding:0 2px; border:0; background:none; color:var(--ink); font:400 1rem var(--sans); cursor:pointer; text-decoration:underline; text-decoration-color:var(--accent); text-underline-offset:.25em; }
 .p-button:hover { text-decoration-thickness:2px; }
-.pcard { margin-top:16px; }
-.p-pos { min-height:1.4em; margin:0; color:var(--muted); font:400 .95rem/1.4 var(--sans); }
-.p-cue { margin:2px 0 0; font:700 clamp(1.7rem,7vw,2.3rem)/1.15 var(--serif); overflow-wrap:anywhere; }
-.p-cue .pos { margin-left:.2em; color:var(--muted); font-size:.5em; font-weight:400; font-style:italic; white-space:nowrap; }
-.p-cue.p-note { font:400 1.2rem/1.45 var(--serif); }
-.p-back { margin-top:14px; padding-top:12px; border-top:1px solid var(--hair); }
-.p-la b { font-size:1.6em; }
-.p-la.p-long b { font-size:1.3em; line-height:1.3; }
-.p-cite { margin:2px 0 0; color:var(--muted); font-size:.98rem; }
-.p-back .def { font-size:1.1rem; color:var(--soft); }
-.p-ex { margin-top:12px; }
-.p-ex .la { margin:0; font-size:1.1em; font-style:italic; line-height:1.4; }
-.p-ex .en { margin:1px 0 0; color:var(--soft); }
-.p-entry { margin:4px 0 0; font:400 1rem var(--sans); }
-.p-entry a { display:inline-flex; align-items:center; min-height:44px; color:var(--soft); }
-.p-actions { position:sticky; bottom:0; z-index:4; display:grid; grid-auto-flow:column; grid-auto-columns:minmax(0,1fr); margin-top:14px; background:var(--paper); border-top:1px solid var(--rule); border-bottom:1px solid var(--rule); }
-.p-actions button { min-height:56px; padding:0 8px; border:0; background:none; color:var(--ink); font:500 1.12rem var(--sans); cursor:pointer; }
-.p-actions button:not([hidden]) ~ button:not([hidden]) { border-left:1px solid var(--hair); }
-.p-actions button:hover, .p-actions button:focus-visible { text-decoration:underline; text-decoration-color:var(--accent); text-decoration-thickness:2px; text-underline-offset:.35em; }
-.p-keys { margin:8px 0 0; color:var(--muted); font:400 .92rem var(--sans); }
-/* A phone has no keys to speak of. */
-@media (hover:none) { .p-keys { display:none; } }
-.p-meter { margin-top:22px; }
+.p-meter { margin-top:18px; }
+.p-go { margin-top:20px; }
+.p-go .pbtn { width:100%; max-width:22rem; }
+.p-state { margin:0 0 12px; font-size:1.1rem; }
+.p-saved { margin:10px 0 0; color:var(--muted); font:400 .92rem/1.4 var(--sans); }
 .p-bar { display:flex; height:3px; background:var(--hair); }
 #p-bar-known { background:var(--ink); }
 #p-bar-learning { background:var(--muted); }
 .p-meter p { margin:6px 0 0; color:var(--muted); font:400 .92rem/1.4 var(--sans); font-variant-numeric:tabular-nums; }
-.pgroup.backup { margin-top:22px; border-top:1px solid var(--hair); padding-bottom:0; }
+.pgroup.backup { margin-top:26px; border-top:1px solid var(--hair); padding-bottom:0; }
 .pgroup.backup[open] { padding-bottom:10px; }
 .p-more { margin:10px 0 0; color:var(--muted); font:400 1rem var(--sans); }
 .p-more a { display:inline-block; padding:11px 0; line-height:1.4; color:var(--soft); }
-html:not(.js) #practice { display:none; }
+html:not(.js) :is(#practice, .p-lang) { display:none; }
+
+/* The round (Jack, 14 November 2026: "a separate experience… you could X out of it… actual cards,
+   rounded cornered cards… the buttons don't really feel like buttons"). A round is played in a
+   layer over the whole page: a bar with the way out, the card, and the buttons under the thumb.
+   Here, and only here, the design leaves "rules, not boxes": the card is a card, with corners, a
+   border and a shadow, on a tinted ground, and the buttons are buttons. The faces and the ink, red
+   and paper are the lexicon's. The two marks differ in more than their words: Again is outlined,
+   in red, with a turning arrow; Got it is filled, in ink, with a tick. */
+html.pgame-open, html.pgame-open body { overflow:hidden; }
+.pgame { position:fixed; inset:0; width:100%; max-width:none; height:100%; height:100dvh; max-height:none; margin:0; padding:0; border:0; background:var(--ground); color:var(--ink); overflow:hidden; overscroll-behavior:contain; }
+.pgame[open] { display:flex; flex-direction:column; }
+.pgame::backdrop { background:var(--ground); }
+.pgame-top { flex:none; display:grid; grid-template-columns:auto minmax(0,1fr) auto auto; align-items:center; column-gap:8px; padding:max(6px, env(safe-area-inset-top, 0px)) max(12px, env(safe-area-inset-right, 0px)) 4px max(6px, env(safe-area-inset-left, 0px)); font:400 1rem/1.3 var(--sans); }
+.pgame-icon, .pgame-undo { display:inline-flex; align-items:center; justify-content:center; gap:6px; min-width:44px; min-height:44px; padding:0 8px; border:0; border-radius:12px; background:none; color:var(--soft); font:inherit; cursor:pointer; }
+:is(.pgame-icon, .pgame-undo):hover { color:var(--ink); background:var(--card); }
+.pgame-undo:disabled { visibility:hidden; }
+.pgame-deck { margin:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; color:var(--soft); }
+.pgame-pos { min-width:3.2em; margin:0; padding:0 4px; text-align:right; color:var(--muted); font-variant-numeric:tabular-nums; white-space:nowrap; }
+.pgame-bar { flex:none; height:3px; margin:0 16px; border-radius:2px; background:var(--hair); overflow:hidden; }
+#g-bar { display:block; height:100%; background:var(--ink); transition:width .2s; }
+.pgame-stage { flex:1; min-height:0; display:flex; padding:16px max(16px, env(safe-area-inset-right, 0px)) 12px max(16px, env(safe-area-inset-left, 0px)); overflow-y:auto; overscroll-behavior:contain; -webkit-overflow-scrolling:touch; }
+.pgame-card { display:flex; flex-direction:column; justify-content:center; width:min(100%, 34rem); min-height:min(100%, 24rem); margin:auto; padding:22px 22px 26px; border:1px solid var(--hair); border-radius:20px; background:var(--card); box-shadow:0 1px 2px rgb(0 0 0 / .05), 0 10px 28px rgb(0 0 0 / .09); text-align:center; }
+.pgame-card.front { cursor:pointer; }
+.pgame-status { margin:0 0 auto; color:var(--muted); font:400 .95rem/1.4 var(--sans); font-variant-caps:all-small-caps; letter-spacing:.08em; text-align:left; }
+.pgame-cue { margin:18px 0; font:700 clamp(1.8rem,8vw,2.5rem)/1.15 var(--serif); overflow-wrap:anywhere; }
+.pgame-cue .pos { margin-left:.2em; color:var(--muted); font-size:.48em; font-weight:400; font-style:italic; white-space:nowrap; }
+.pgame-card.front .pgame-cue { margin-bottom:auto; padding-bottom:1.4rem; }
+.pgame-card:not(.front) .pgame-cue { margin:10px 0 0; color:var(--soft); font-size:1.25rem; font-weight:400; }
+.pgame-back { margin:14px 0 auto; padding-top:16px; border-top:1px solid var(--hair); }
+.pgame-back p { margin:0; }
+.pgame-la { font-size:1.2rem; line-height:1.3; overflow-wrap:anywhere; }
+.pgame-la b { font-size:1.75em; }
+.pgame-la.long b { font-size:1.35em; line-height:1.3; }
+.pgame-origin, .pgame-also { margin-top:6px !important; color:var(--muted); font-size:.98rem; line-height:1.4; }
+.pgame-period { color:var(--rubric); font-variant-caps:all-small-caps; letter-spacing:.07em; }
+.pgame-also { margin-top:2px !important; }
+.pgame-also span { color:var(--soft); }
+.pgame-gloss { margin-top:10px !important; color:var(--soft); font-size:1.08rem; }
+.pgame-ex { margin-top:16px; }
+.pgame-ex .la { font-size:1.12em; font-style:italic; line-height:1.4; }
+.pgame-ex .en { margin-top:1px; color:var(--soft); }
+.pgame-ex .src { margin-left:0; }
+.pgame-entry { margin-top:8px !important; font:400 1rem var(--sans); }
+.pgame-entry a { display:inline-flex; align-items:center; min-height:44px; color:var(--soft); }
+.pgame-end { margin:auto 0; font-size:1.2rem; line-height:1.45; }
+.pgame-tally { display:block; margin-bottom:8px; font-weight:700; font-size:1.25em; }
+.pgame-missed { display:block; margin-top:14px; color:var(--muted); font-size:.92em; }
+.pgame-missed span { color:var(--ink); }
+.pgame-pos:empty { display:none; }
+.pgame-actions { flex:none; width:min(100%, 36rem); margin-inline:auto; padding:4px max(16px, env(safe-area-inset-right, 0px)) max(14px, env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); }
+.pgame-row { display:grid; grid-auto-flow:column; grid-auto-columns:minmax(0,1fr); column-gap:12px; }
+/* At the end of a round the way out is the lesser button. */
+#g-done { grid-auto-flow:row; grid-template-columns:minmax(6.5rem, auto) minmax(0, 1fr); }
+.pbtn { display:inline-flex; align-items:center; justify-content:center; gap:.5em; min-height:56px; padding:0 16px; border:1.5px solid var(--rule); border-radius:16px; background:var(--card); color:var(--ink); font:500 1.15rem/1.2 var(--sans); cursor:pointer; -webkit-tap-highlight-color:transparent; touch-action:manipulation; }
+.pbtn svg { flex:none; }
+.pbtn:active { transform:translateY(1px); }
+.pbtn-fill, .pbtn-got { border-color:var(--ink); background:var(--ink); color:var(--paper); }
+.pbtn-again { border-color:var(--accent); color:var(--rubric); }
+.pbtn-again svg { color:var(--accent); }
+.pgame-keys { margin:8px 0 0; color:var(--muted); font:400 .9rem var(--sans); text-align:center; }
+/* A phone has no keys to speak of. */
+@media (hover:none) { .pgame-keys { display:none; } }
+@media (prefers-reduced-motion:reduce) { #g-bar { transition:none; } .pbtn:active { transform:none; } }
 
 @media print {
   :root, :root[data-theme] { color-scheme:light; --paper:#fff; --ink:#000; --soft:#222; --muted:#444; --hair:#bbb; --rule:#000; --rubric:#a0121a; --accent:#a0121a; }
-  .toolbar, .meta, .cat-side, .cat-menu, .az-nav, .head-search, .settings, .filter, .deck, .backup, .p-actions { display:none !important; }
+  .toolbar, .meta, .cat-side, .cat-menu, .az-nav, .head-search, .settings, .filter, .deck, .backup, .p-go, .pgame { display:none !important; }
   .catpage { display:block; }
   .wlist { columns:2; }
 }

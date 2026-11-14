@@ -1630,9 +1630,83 @@ def citation_label(citation):
     return re.sub(r'\s*\([^()]*\)', '', plain(citation)).split(': ')[0].rstrip(' :;,')
 
 
+# An example belongs on a card only if it contains the card's answer (Jack, 14 November 2026: the
+# card for cūra showed "nihil labōrō, nisi ut salvus sīs", an example of another word of its
+# record). The test is made here, with the stems the search is built on: an example is kept when
+# one of its words is a form of the answer's head. A term of several words needs each of them in
+# the example, in any order and any form (dentēs pūrgāre: "dentēs pūrgandī"), so that a phrase is
+# not dropped for being inflected; that reading of "contains the answer" is Claude's.
+_LETTERS = re.compile(r'[^\W\d_]+')
+_UNINFLECTED = {'a', 'ab', 'ad', 'cum', 'de', 'e', 'et', 'ex', 'in', 'per', 'pro', 'sub', 'ut', 'ne', 'non', 'aut', 'uel', 'an', 'si'}
+
+
+def _folded(text):
+    """Folded as the search folds what is typed: no macrons, i for j, u for v."""
+    return uv_fold(search_fold(text))
+
+
+def _forms(stems):
+    return {_folded(stem + ending) for cls, stem in stems for ending in ENDINGS[cls]}
+
+
+def form_index(records):
+    """Every form of every term of the lexicon, each with all the stems of the terms it may belong
+    to: what a word inside a longer term is a form of (dentēs → dēns; flectere → flectō, and so
+    flexīs with it)."""
+    index = {}
+    for record in records:
+        for term in record['terms']:
+            stems = [tuple(stem) for stem in search_stems(term)]
+            for cls, stem in stems:
+                for ending in ENDINGS[cls]:
+                    index.setdefault(_folded(stem + ending), set()).update(stems)
+    return index
+
+
+def example_words(latin):
+    """The words of an example, folded, each also without an enclitic -que, -ne or -ve."""
+    words = set(_LETTERS.findall(_folded(latin)))
+    return words | {word[:-len(enclitic)] for word in words for enclitic in ('que', 'ne', 'ue')
+                    if word.endswith(enclitic) and len(word) > len(enclitic) + 1}
+
+
+def answer_test(term, index):
+    """A test of an example's words (see example_words): do they contain this term's answer?"""
+    head = term_head(term['latin'])
+    words = _LETTERS.findall(head)
+    if len(words) <= 1:
+        forms = {_folded(head)} | set(map(_folded, words)) | _forms(search_stems(term))
+        return lambda found: bool(forms & found)
+
+    def forms_of(word):
+        folded = _folded(word)
+        if len(folded) < 3 or folded in _UNINFLECTED:
+            return lambda found: folded in found
+        stems = [tuple(stem) for stem in search_stems({'latin': word})] + sorted(index.get(folded, ()))
+        if stems:
+            forms = {folded} | _forms(stems)
+            return lambda found: bool(forms & found)
+        # A word the lexicon does not know (cursuālis): the same word but for its ending.
+        stem = folded[:max(4, len(folded) - 2)]
+        return lambda found: any(other.startswith(stem) and len(other) <= len(folded) + 3 for other in found)
+    tests = [forms_of(word) for word in words]
+    return lambda found: all(test(found) for test in tests)
+
+
+def origin(term):
+    """Where a term comes from, as the back of its card says it: its period, and the first one or
+    two places it is cited from, without what they quote ("Cic. Tusc. 5.97", "Traupman 211")."""
+    # A citation that runs on ("M-O s.v. lighthouse, citing Plin. NH 36.83 and Suet.") is cut at its
+    # first comma or semicolon: the entry's page has the rest.
+    short = lambda label: label if len(label) <= 40 else re.split(r'[,;]', label)[0]
+    labels = list(dict.fromkeys(short(label) for label in map(citation_label, term.get('evidence', [])) if label))
+    return list(PERIODS).index(term['period']), labels[:2]
+
+
 def practice_cards(site):
     """The source tags offered as choices, and one card per record: (tags, cards)."""
     records = sorted(site['records'].values(), key=lambda r: (fold(record_english(r)), r['id']))
+    forms = form_index(records)
     found = {}
     for record in records:
         main = ordered_terms(record)[0]
@@ -1668,21 +1742,29 @@ def practice_cards(site):
             card['x'] = record['also_under']
         if practice_kind(record) != 'w':
             card['t'] = practice_kind(record)
-        if main['period'] == 'ours':
-            card['o'] = 1
         if offered(set(own).union(*examples)):
             card['s'] = offered(set(own).union(*examples))
-        # A saying is somebody's: the back of its card says whose ("Sen. Ep. 66.3").
-        if card.get('t') == 's' and main.get('evidence'):
-            card['c'] = citation_label(main['evidence'][0])
-        # Up to two examples: the first, and with it one from an author the first does not have (or,
-        # failing that, from any other source), so that a reader who chose a source is more often
-        # shown its sentence. An example of ours has no label; the readers are never named (see
-        # composed()).
+        # Where the answer comes from (Jack, 14 November 2026): its period and its evidence.
+        period, cited = origin(main)
+        if period:
+            card['r'] = period
+        if cited:
+            card['v'] = cited
+        # The record's other words, so that a reader who said a good alternative knows it (the
+        # coordinating session's idea, 14 November 2026, not Jack's).
+        others = list(dict.fromkeys(term_head(term['latin']) for term in ordered_terms(record)[1:] if term['status'] != 'avoid'))
+        if others:
+            card['a'] = others[:3]
+        # Up to two of the examples that contain the answer: the first, and with it one from an
+        # author the first does not have (or, failing that, from any other source), so that a reader
+        # who chose a source is more often shown its sentence. An example of ours has no label; the
+        # readers are never named (see composed()).
+        has_answer = answer_test(main, forms)
+        kept = [(phrase, names) for phrase, names in zip(record.get('phrases', []), examples) if has_answer(example_words(phrase['latin']))]
         rows = [[phrase['latin'], phrase['english'], '' if composed(phrase) else plain(phrase['source'])] + ([offered(names)] if offered(names) else [])
-                for phrase, names in zip(record.get('phrases', []), examples)]
+                for phrase, names in kept]
         if rows:
-            authors = [{name for name in names if name not in PRACTICE_HANDBOOKS and name in index} for names in examples]
+            authors = [{name for name in names if name not in PRACTICE_HANDBOOKS and name in index} for _, names in kept]
             second = (next((row for row, names in zip(rows[1:], authors[1:]) if names - authors[0]), None)
                       or next((row for row in rows[1:] if row[3:] and row[3:] != rows[0][3:]), None) or next(iter(rows[1:]), None))
             card['q'] = [rows[0]] + ([second] if second else [])
@@ -1695,13 +1777,15 @@ def practice_data(site):
     a card has i (record id), e (English, with its sense in brackets), p (part of speech), l (the
     recommended Latin, in its dictionary form), g (its gloss, where it differs from the headword),
     k (category), x (the other categories it is listed under), t (kind: none for a word, p for an
-    everyday phrase, s for a saying), o (1 for a form of our own), s (its sources, as numbers into
-    "sources"), c (for a saying, where it is cited from) and q (up to two examples: Latin, English,
-    source label or none for a sentence of ours, and that example's sources)."""
+    everyday phrase, s for a saying), s (its sources, as numbers into "sources"), r (the answer's
+    period, as a number into "periods"; none for classical), v (the first places it is cited from),
+    a (the heads of the record's other words, those to avoid left out) and q (up to two examples
+    that contain the answer: Latin, English, source label or none for a sentence of ours, and that
+    example's sources)."""
     tags, cards = practice_cards(site)
     categories = [[key, site['categories'][key]['latin'], site['categories'][key]['english']]
                   for key in site['catalog']['filters'] if key != 'all']
-    data = {'categories': categories, 'sources': tags, 'cards': cards}
+    data = {'categories': categories, 'periods': list(PERIODS), 'sources': tags, 'cards': cards}
     return 'window.lexiconPractice = ' + json.dumps(data, ensure_ascii=False, separators=(',', ':')) + ';\n'
 
 

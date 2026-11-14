@@ -63,7 +63,9 @@
   // Display options: macrons shown or hidden, consonantal i written j or i, consonantal u written
   // v or u (Jack, 11 November 2026: lower case only, so Venus and Vt keep their capital V). They
   // change only what is shown (search ignores all three anyway); each text node under lang="la"
-  // keeps its original, so switching back restores it exactly.
+  // keeps its original, so switching back restores it exactly. A node's language is that of the
+  // nearest element that names one, so English inside Latin (a gloss after a term, the cue of a
+  // practice card on a page whose interface is Latin) is left alone.
   const original = new WeakMap();
   const settings = { macrons: 'on', j: 'j', v: 'v' };
   const keys = { macrons: 'lexicon-macrons', j: 'lexicon-j', v: 'lexicon-v' };
@@ -80,7 +82,7 @@
   }
   function render(scope = document) {
     const walker = document.createTreeWalker(scope, NodeFilter.SHOW_TEXT, {
-      acceptNode: node => node.parentElement?.closest('[lang="la"]') && !node.parentElement.closest('script, style')
+      acceptNode: node => node.parentElement?.closest('[lang]')?.getAttribute('lang') === 'la' && !node.parentElement.closest('script, style')
         ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT });
     for (let node; (node = walker.nextNode());) {
       if (!original.has(node)) original.set(node, node.data);

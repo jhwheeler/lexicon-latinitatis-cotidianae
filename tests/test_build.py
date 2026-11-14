@@ -537,9 +537,9 @@ class BuildTests(unittest.TestCase):
         self.assertEqual((hovel.get('r'), hovel['v']), (None, ['Sen. Ep. 66.3']))
         train = cards['train']
         self.assertEqual((data['periods'][train['r']], train['v']), ('modern', ['M-O s.v. train', 'Traupman 211, 219, 397']))
-        pyjamas = cards['pyjamas']
-        self.assertEqual(data['periods'][pyjamas['r']], 'ours')
-        self.assertNotIn('v', pyjamas)                     # our own word: nothing to cite
+        dough = cards['play-dough']
+        self.assertEqual(data['periods'][dough['r']], 'ours')
+        self.assertNotIn('v', dough)                       # our own word: nothing to cite
         # The record's other words, heads only, those to avoid left out, three at most.
         record = self.record('perhaps')
         others = [builder.term_head(t['latin']) for t in builder.ordered_terms(record)[1:] if t['status'] != 'avoid']

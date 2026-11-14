@@ -1027,7 +1027,7 @@ test('the round’s layer covers the page; X and Escape close it; a round left o
 
 test('the back of a card: where the answer comes from, the other words, and an example only if it has the answer', async () => {
   await openPractice();
-  await listDeck(['train', 'concern', 'pyjamas', 'perhaps', 'bone']);
+  await listDeck(['train', 'concern', 'play-dough', 'perhaps', 'bone']);
   await startRound();
   const backs = {};
   while (await page.locator('#g-show').isVisible()) {
@@ -1044,8 +1044,8 @@ test('the back of a card: where the answer comes from, the other words, and an e
   assert.equal(backs.train.origin, 'modern · M-O s.v. train; Traupman 211, 219, 397');
   assert.equal(backs.perhaps.origin, 'classical · Cic. Div. Caec. 40; Traupman 344');
   // A word of our own says so in words, beside its asterisk.
-  assert.equal(backs.pyjamas.origin, 'our formation');
-  assert.deepEqual([backs.pyjamas.star, backs.train.star], [true, false]);
+  assert.equal(backs['play-dough'].origin, 'our formation');
+  assert.deepEqual([backs['play-dough'].star, backs.train.star], [true, false]);
   // The record's other words.
   assert.equal(backs.train.also, 'Also: trāmen ferriviārium, hamaxostichus, trāmen commūne');
   assert.equal(backs.bone.also, null);
@@ -1053,7 +1053,7 @@ test('the back of a card: where the answer comes from, the other words, and an e
   assert.match(backs.train.example, /[Tt]rām(en|ine)/);
   assert.equal(backs.perhaps.example, 'Fortasse.');
   assert.equal(backs.perhaps.source, 'composed');
-  assert.match(backs.pyjamas.example, /veste nocturnā/);
+  assert.match(backs['play-dough'].example, /massā lūsōriā/);
   assert.equal(backs.concern.la, 'cūra, cūrae f.');
   assert.equal(backs.concern.example, null, 'none of its record’s examples has cūra in it');
   assert.equal(backs.bone.example, null);
@@ -1153,7 +1153,7 @@ test('the practice interface is in Latin unless English is chosen; the two marks
   assert.equal(await page.locator('#p-src button[data-id="cicero"] .pt-name span').getAttribute('lang'), 'en');
   await page.locator('#p-deck > summary').click();
   // The round.
-  await listDeck(['judge', 'pyjamas'], { kind: ['w'] });
+  await listDeck(['judge', 'play-dough'], { kind: ['w'] });
   assert.equal(await lang(), 'la');
   await startRound();
   assert.equal(await page.locator('#g-show').textContent(), 'Respōnsum ostende');
@@ -1181,7 +1181,7 @@ test('the practice interface is in Latin unless English is chosen; the two marks
     await page.locator('#g-got').click();
   }
   assert.equal(origins.judge, 'aetātis classicae · Phaedr. 3.13.3; Traupman 195, 335');
-  assert.equal(origins.pyjamas, 'locūtiō nostra');
+  assert.equal(origins['play-dough'], 'locūtiō nostra');
   assert.match(await page.locator('#g-end').textContent(), /^Cursus cōnfectus: «Teneō» 2, «Iterum» 0\. Nihil hīc repetendum\. Proxima charta redībit post diem\.$/);
   assert.equal(await page.locator('#g-early').textContent(), 'Repete tamen nunc');
   await page.locator('#g-exit').click();

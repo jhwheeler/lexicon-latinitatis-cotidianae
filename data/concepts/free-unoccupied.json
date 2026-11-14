@@ -12,8 +12,19 @@
   "domain": "verba",
   "terms": [
     {
-      "latin": "vacō, vacāre, vacāvī, vacātum",
+      "latin": "vacuus, vacua, vacuum",
       "status": "recommended",
+      "period": "classical",
+      "gloss": "empty, unoccupied, free",
+      "grammar": "adjective",
+      "evidence": [
+        "Hor. Ep. 2.2.130: <span lang=\"la\">vacuum theātrum</span> (Lewis &amp; Short)",
+        "Liv. 25.3.18: <span lang=\"la\">per vacuum locum</span> (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "vacō, vacāre, vacāvī, vacātum",
+      "status": "alternative",
       "period": "classical",
       "gloss": "be free, be empty, not be taken",
       "grammar": "verb, first conjugation; of a place",
@@ -22,17 +33,6 @@
         "Caes. BG 1.28: <span lang=\"la\">locus</span> (Lewis &amp; Short)"
       ],
       "comment": "The same verb serves for a person who is free (see available, of a person). A seat in a theatre is <span lang=\"la\">locus</span> (Cic. Sen. 63)."
-    },
-    {
-      "latin": "vacuus, vacua, vacuum",
-      "status": "alternative",
-      "period": "classical",
-      "gloss": "empty, unoccupied, free",
-      "grammar": "adjective",
-      "evidence": [
-        "Hor. Ep. 2.2.130: <span lang=\"la\">vacuum theātrum</span> (Lewis &amp; Short)",
-        "Liv. 25.3.18: <span lang=\"la\">per vacuum locum</span> (Lewis &amp; Short)"
-      ]
     }
   ],
   "phrases": [

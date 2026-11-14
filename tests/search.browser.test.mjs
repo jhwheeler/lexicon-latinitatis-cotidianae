@@ -155,7 +155,9 @@ test('the lexicon is kept on the device: it opens and searches offline, as an ap
   assert.equal(await app.locator('h1.hw').count(), 1);
   // The practice pages too: the cards and the clock.
   await app.goto(pageUrl('practice.html'));
-  assert.equal(await app.locator('#p-show').isVisible(), true);
+  assert.equal(await app.locator('#p-start').isVisible(), true);
+  await app.locator('#p-start').click();
+  assert.equal(await app.locator('#g-show').isVisible(), true);
   await app.goto(pageUrl('hora.html'));
   assert.equal(await app.locator('#go').isVisible(), true);
   assert.equal(await app.evaluate(() => document.fonts.check('18px "Lexicon Serif"')), true);
@@ -481,7 +483,7 @@ test('every page is usable on a phone: no sideways scrolling, 44px controls, no 
       assert.equal(await overflows(), false, `${path} overflows at ${width}px`);
       const small = await page.evaluate(() => [...document.querySelectorAll(
         '.settings > summary, .head-search-field, .filter button, .cat-menu > summary, .cat-home, .clear, .page-contents a, .toc a, .hero h1 a, .site-name, .wlist a, .az-nav a, .az a, .suggest a, '
-        + '.plist a, #practice summary, #practice button, #practice a, .icon-btn, .mode-chip, .go, #answer, .keys button, .ref summary, .links a')]
+        + '.plist a, .practice summary, .practice button, .practice a, .icon-btn, .mode-chip, .go, #answer, .keys button, .ref summary, .links a')]
         .filter(el => el.getClientRects().length && getComputedStyle(el).visibility !== 'hidden')
         .map(el => [el.textContent.trim().slice(0, 24), Math.round(el.getBoundingClientRect().height)])
         .filter(([, height]) => height < 44));
@@ -835,12 +837,18 @@ test('a tap anywhere on a search result opens its entry', async () => {
 
 // Practice --------------------------------------------------------------------------------------
 
-// What practice keeps on the device; each test starts without it.
-const PRACTICE_KEYS = ['lexicon-practice', 'lexicon-practice-deck', 'lexicon-seen', 'lexicon-lists'];
-const openPractice = async (fresh = true) => {
+// What practice keeps on the device; each test starts without it. Most tests read the interface in
+// English; Latin, the default, has a test of its own.
+const PRACTICE_KEYS = ['lexicon-practice', 'lexicon-practice-deck', 'lexicon-seen', 'lexicon-lists', 'lexicon-practice-lang'];
+const forgetPractice = () => page.evaluate(keys => {
+  keys.forEach(key => localStorage.removeItem(key));
+  sessionStorage.removeItem('lexicon-practice-round');
+}, PRACTICE_KEYS);
+const openPractice = async (fresh = true, language = 'en') => {
   if (fresh) {
     await page.goto(pageUrl('practice.html'));
-    await page.evaluate(keys => keys.forEach(key => localStorage.removeItem(key)), PRACTICE_KEYS);
+    await forgetPractice();
+    if (language) await page.evaluate(code => localStorage.setItem('lexicon-practice-lang', code), language);
     await settle();
   }
   await page.goto(pageUrl('practice.html'));
@@ -854,48 +862,67 @@ const deckCount = async () => {
   return found.slice(1).map(n => Number(n.replace(/,/g, '')));
 };
 const kept = key => page.evaluate(k => JSON.parse(localStorage.getItem(k)), key);
-const shownCard = async () => (await page.locator('#p-entry').getAttribute('href')).slice(2, -5);
+const keep = (key, value) => page.evaluate(([k, v]) => localStorage.setItem(k, JSON.stringify(v)), [key, value]);
+const gameOpen = () => page.locator('#p-game').evaluate(node => node.open);
+const startRound = async () => { await page.locator('#p-start').click(); await page.locator('#p-game[open]').waitFor(); };
+const shownCard = async () => (await page.locator('#g-entry').getAttribute('href')).slice(2, -5);
 // Show each card of the round and mark it; the ids, in order.
-const playRound = async (mark = '#p-got') => {
+const playRound = async (mark = '#g-got') => {
   const ids = [];
-  while (await page.locator('#p-show').isVisible()) {
-    await page.locator('#p-show').click();
+  while (await page.locator('#g-show').isVisible()) {
+    await page.locator('#g-show').click();
     ids.push(await shownCard());
     await page.locator(mark).click();
   }
   return ids;
 };
 const openGroup = id => page.locator(`.pgroup:has(#${id}) > summary`).click();
+// A deck of the reader's own, so that a test knows its cards.
+const listDeck = async (items, extra = {}) => {
+  await keep('lexicon-lists', [{ id: 'l1', name: 'Test', items }]);
+  await keep('lexicon-practice-deck', { kind: ['w', 'p', 's'], part: [], cat: [], src: [], mine: ['list:l1'], ...extra });
+  await settle();
+  await openPractice(false);
+};
 
-test('a practice round: the Latin on request, a mark that is saved, and a card that is not due again', async () => {
+test('a practice round: a layer of its own, the Latin on request, a mark that is saved, a card not due again', async () => {
   await openPractice();
   const [total, due, fresh] = await deckCount();
   assert.ok(total > 5000 && due === 0 && fresh === total, 'the deck starts as every word, all new');
   assert.equal(await page.locator('#p-now').textContent(), 'Words');
-  assert.equal(await page.locator('#p-pos').textContent(), 'new · 1 of 12');
-  assert.equal(await page.locator('#p-back').isVisible(), false);
-  assert.ok((await page.locator('#p-cue').textContent()).length > 0);
-  await page.locator('#p-show').click();
-  assert.ok((await page.locator('#p-la').textContent()).length > 0);
-  assert.equal(await page.locator('#p-la').getAttribute('lang'), 'la');
+  assert.equal(await page.locator('#p-start').textContent(), 'Start');
+  assert.equal(await gameOpen(), false);
+  await startRound();
+  assert.equal(await page.locator('#g-pos').textContent(), '1 / 12');
+  assert.equal(await page.locator('#g-status').textContent(), 'new');
+  assert.equal(await page.locator('#g-deck').textContent(), 'Words');
+  assert.equal(await page.locator('#g-back').isVisible(), false);
+  assert.ok((await page.locator('#g-cue').textContent()).length > 0);
+  // A tap on the card itself shows its answer.
+  await page.locator('#g-card').click();
+  assert.equal(await page.locator('#g-back').isVisible(), true);
+  assert.ok((await page.locator('#g-la').textContent()).length > 0);
+  assert.equal(await page.locator('#g-la').getAttribute('lang'), 'la');
+  assert.equal(await page.locator('#g-cue').getAttribute('lang'), 'en');
   const first = await shownCard();
   assert.match(first, /^[a-z0-9-]+$/);
   // Got it: a new card that is right first time comes back in a day.
   const before = Date.now();
-  await page.locator('#p-got').click();
+  await page.locator('#g-got').click();
   let saved = (await kept('lexicon-practice')).cards;
   assert.equal(saved[first].b, 2);
   assert.ok(saved[first].due >= before + 23 * 3600e3 && saved[first].t >= before);
-  assert.equal(await page.locator('#p-pos').textContent(), 'new · 2 of 12');
+  assert.equal(await page.locator('#g-pos').textContent(), '2 / 12');
   // The keyboard: Space shows, 1 is Again (back in ten minutes), 2 is Got it.
-  await page.locator('#p-cue').click();
+  await page.evaluate(() => document.activeElement.blur());
   await page.keyboard.press('Space');
-  assert.equal(await page.locator('#p-back').isVisible(), true);
+  assert.equal(await page.locator('#g-back').isVisible(), true);
   const second = await shownCard();
   await page.keyboard.press('1');
   saved = (await kept('lexicon-practice')).cards;
   assert.equal(saved[second].b, 0);
   assert.ok(saved[second].due <= Date.now() + 11 * 60e3);
+  await page.evaluate(() => document.activeElement.blur());
   await page.keyboard.press('Enter');
   const third = await shownCard();
   await page.keyboard.press('2');
@@ -904,31 +931,293 @@ test('a practice round: the Latin on request, a mark that is saved, and a card t
   const rest = await playRound();
   assert.equal(rest.length, 9);
   assert.equal(new Set([first, second, third, ...rest]).size, 12);
-  assert.match(await page.locator('#p-cue').textContent(), /^Round done: Got it 11, Again 1\. [\d,]+ new\.$/);
-  assert.equal(await page.locator('#p-next').isVisible(), true);
-  assert.equal(await page.locator('#p-early').isVisible(), false);
-  assert.match(await page.locator('#p-meter-text').textContent(), /^In this deck: 0 known · 12 learning · [\d,]+ new$/);
+  const head = await page.evaluate(id => /^(.+?)(?=\s*(?:,|\(|$))/.exec(window.lexiconPractice.cards.find(card => card.i === id).l)[1], second);
+  assert.equal(await page.locator('#g-end').textContent(), `Round done: Got it 11, Again 1. ${(total - 12).toLocaleString('en')} new. «Again»: ${head}`,
+               'the summary names the word that was missed');
+  assert.equal(await page.locator('#g-next').isVisible(), true);
+  assert.equal(await page.locator('#g-early').isVisible(), false);
+  // The way out leads to the lobby, with its meter brought up to date.
+  await page.locator('#g-exit').click();
+  assert.equal(await gameOpen(), false);
+  assert.match(await page.locator('#p-meter-text').textContent(), /^0 known · 12 learning · [\d,]+ new$/);
+  assert.equal(await page.locator('#p-start').textContent(), 'Start');
   // Opened again, nothing marked is due, so none of it comes back.
   await openPractice(false);
   assert.deepEqual(await deckCount(), [total, 0, total - 12]);
+  await startRound();
   const next = await playRound();
   assert.equal(next.length, 12);
   assert.equal(next.some(id => [first, second, third, ...rest].includes(id)), false);
+  // Another round from the end of one.
+  await page.locator('#g-next').click();
+  assert.equal(await page.locator('#g-pos').textContent(), '1 / 12');
   // Once its time has come, a card is due, and due cards come first.
   await page.evaluate(id => {
     const progress = JSON.parse(localStorage.getItem('lexicon-practice'));
     progress.cards[id].due = Date.now() - 1000;
     localStorage.setItem('lexicon-practice', JSON.stringify(progress));
+    sessionStorage.removeItem('lexicon-practice-round');
   }, first);
   await settle();
   await openPractice(false);
   assert.equal((await deckCount())[1], 1);
-  assert.match(await page.locator('#p-pos').textContent(), /^review · 1 of 12$/);
-  await page.locator('#p-show').click();
+  await startRound();
+  assert.equal(await page.locator('#g-status').textContent(), 'due');
+  await page.locator('#g-show').click();
   assert.equal(await shownCard(), first);
-  await page.locator('#p-got').click();
+  await page.locator('#g-got').click();
   assert.equal((await kept('lexicon-practice')).cards[first].b, 3);
-  await page.evaluate(keys => keys.forEach(key => localStorage.removeItem(key)), PRACTICE_KEYS);
+  await forgetPractice();
+});
+
+test('the round’s layer covers the page; X and Escape close it; a round left open is taken up again', async () => {
+  await page.setViewportSize({ width: 390, height: 760 });
+  await openPractice();
+  await listDeck(['train', 'soap', 'bone', 'perhaps']);
+  const covered = () => page.evaluate(() => [[195, 20], [195, 380], [195, 740]].every(([x, y]) => !!document.elementFromPoint(x, y).closest('#p-game')));
+  const locked = () => page.evaluate(() => getComputedStyle(document.documentElement).overflow === 'hidden');
+  assert.equal(await locked(), false);
+  await startRound();
+  assert.equal(await covered(), true, 'no header, search or footer shows');
+  assert.equal(await locked(), true, 'the page does not scroll under the layer');
+  assert.equal(await page.locator('header.site-top').evaluate(node => !!document.elementFromPoint(100, 30).closest('header.site-top')), false);
+  await page.locator('#g-show').click();
+  const card = await shownCard();
+  // X closes; the lobby offers to go on, and going on finds the same card with its answer.
+  await page.locator('#g-close').click();
+  assert.equal(await gameOpen(), false);
+  assert.equal(await locked(), false);
+  assert.equal(await page.locator('#p-start').textContent(), 'Continue');
+  await startRound();
+  assert.equal(await shownCard(), card);
+  assert.equal(await page.locator('#g-marks').isVisible(), true);
+  // Escape closes too.
+  await page.keyboard.press('Escape');
+  assert.equal(await gameOpen(), false);
+  assert.equal(await page.locator('#p-start').textContent(), 'Continue');
+  await startRound();
+  // The entry's page and back: the round is still there, at the same card, with the answer shown.
+  await page.locator('#g-entry').click();
+  await page.waitForURL(new RegExp(`c/${card}\\.html$`));
+  assert.match(await page.locator('h1.hw').textContent(), /\w/);
+  await page.goBack();
+  await page.locator('#p-game[open]').waitFor();
+  assert.equal(await shownCard(), card);
+  assert.equal(await page.locator('#g-marks').isVisible(), true);
+  assert.equal(await page.locator('#g-pos').textContent(), '1 / 4');
+  assert.equal(await covered(), true);
+  // So it is when the page is loaded afresh.
+  await page.reload();
+  await page.locator('#p-game[open]').waitFor();
+  assert.equal(await shownCard(), card);
+  assert.equal(await page.locator('#g-marks').isVisible(), true);
+  await page.locator('#g-got').click();
+  assert.equal(await page.locator('#g-pos').textContent(), '2 / 4');
+  assert.ok(card in (await kept('lexicon-practice')).cards);
+  // A change of deck drops the round that was begun with the old one.
+  await page.locator('#g-close').click();
+  await page.locator('#p-deck > summary').click();
+  await page.locator('#p-kind button[data-id="s"]').click();
+  assert.equal(await page.locator('#p-start').textContent(), 'Start');
+  await page.reload();
+  await page.locator('#practice:not([hidden])').waitFor();
+  assert.equal(await gameOpen(), false);
+  await forgetPractice();
+});
+
+test('the back of a card: where the answer comes from, the other words, and an example only if it has the answer', async () => {
+  await openPractice();
+  await listDeck(['train', 'concern', 'play-dough', 'perhaps', 'bone']);
+  await startRound();
+  const backs = {};
+  while (await page.locator('#g-show').isVisible()) {
+    await page.locator('#g-show').click();
+    backs[await shownCard()] = await page.evaluate(() => {
+      const text = id => { const node = document.getElementById(id); return node.getClientRects().length ? node.textContent : null; };
+      return { la: text('g-la'), origin: text('g-origin'), also: text('g-also'), example: text('g-ex-la'), source: document.querySelector('#g-ex-en .src')?.textContent,
+        star: !!document.querySelector('#g-la .ours') };
+    });
+    await page.locator('#g-got').click();
+  }
+  // The period and the first citations, as the entry's page gives them.
+  assert.equal(backs.train.la, 'trāmen, trāminis n.');
+  assert.equal(backs.train.origin, 'modern · M-O s.v. train; Traupman 211, 219, 397');
+  assert.equal(backs.perhaps.origin, 'classical · Cic. Div. Caec. 40; Traupman 344');
+  // A word of our own says so in words, beside its asterisk.
+  assert.equal(backs['play-dough'].origin, 'our formation');
+  assert.deepEqual([backs['play-dough'].star, backs.train.star], [true, false]);
+  // The record's other words.
+  assert.equal(backs.train.also, 'Also: trāmen ferriviārium, hamaxostichus, trāmen commūne');
+  assert.equal(backs.bone.also, null);
+  // The example has the answer in it, or there is none.
+  assert.match(backs.train.example, /[Tt]rām(en|ine)/);
+  assert.equal(backs.perhaps.example, 'Fortasse.');
+  assert.equal(backs.perhaps.source, 'composed');
+  assert.match(backs['play-dough'].example, /massā lūsōriā/);
+  assert.equal(backs.concern.la, 'cūra, cūrae f.');
+  assert.equal(backs.concern.example, null, 'none of its record’s examples has cūra in it');
+  assert.equal(backs.bone.example, null);
+  // With a source chosen, its sentence is the one shown.
+  await page.locator('#g-exit').click();
+  await forgetPractice();
+  await page.evaluate(() => localStorage.setItem('lexicon-practice-lang', 'en'));
+  await listDeck(['double-verb'], { src: ['cicero'] });
+  await startRound();
+  await page.locator('#g-show').click();
+  assert.match(await page.locator('#g-ex-la').textContent(), /^prīncipiō duplicāvit/);
+  assert.equal(await page.locator('#g-ex-en .src').textContent(), 'Cic. Rep. 2.35');
+  await forgetPractice();
+});
+
+test('one step back: a mark is undone, for a new card and for a known one, until the next mark', async () => {
+  await openPractice();
+  const known = { b: 4, due: Date.now() - 5000, t: 5 };
+  await keep('lexicon-practice', { cards: { soap: known }, at: 5 });
+  await listDeck(['train', 'soap', 'bone']);
+  await startRound();
+  const undo = page.locator('#g-undo');
+  const cards = async () => (await kept('lexicon-practice')).cards;
+  assert.equal(await undo.isVisible(), false, 'nothing to undo yet');
+  // The known card is due, so it comes first: Got it, then back, and its record is as it was.
+  await page.locator('#g-show').click();
+  assert.equal(await shownCard(), 'soap');
+  await page.locator('#g-got').click();
+  assert.equal((await cards()).soap.b, 5);
+  assert.equal(await page.locator('#g-pos').textContent(), '2 / 3');
+  assert.equal(await undo.isVisible(), true);
+  await undo.click();
+  assert.deepEqual((await cards()).soap, known);
+  assert.equal(await shownCard(), 'soap');
+  assert.equal(await page.locator('#g-marks').isVisible(), true, 'the answer is shown, ready to be marked again');
+  assert.equal(await page.locator('#g-pos').textContent(), '1 / 3');
+  assert.equal(await page.locator('#g-status').textContent(), 'due');
+  assert.equal(await undo.isVisible(), false, 'one step only');
+  // Marked again, the other way; Backspace takes that back too.
+  await page.locator('#g-again').click();
+  assert.equal((await cards()).soap.b, 0);
+  await page.keyboard.press('Backspace');
+  assert.deepEqual((await cards()).soap, known);
+  await page.locator('#g-got').click();
+  // A new card: back means it has no record again.
+  await page.locator('#g-show').click();
+  const fresh = await shownCard();
+  await page.locator('#g-got').click();
+  assert.equal((await cards())[fresh].b, 2);
+  await page.keyboard.press('z');
+  assert.equal(fresh in (await cards()), false);
+  assert.equal(await shownCard(), fresh);
+  assert.equal(await page.locator('#g-status').textContent(), 'new');
+  await page.locator('#g-again').click();
+  assert.equal((await cards())[fresh].b, 0);
+  // The last card of the round can be taken back from the summary, and the tally with it.
+  await page.locator('#g-show').click();
+  const last = await shownCard();
+  await page.locator('#g-got').click();
+  assert.match(await page.locator('#g-end').textContent(), /^Round done: Got it 2, Again 1\..* «Again»: \S+$/);
+  await undo.click();
+  assert.equal(await shownCard(), last);
+  assert.equal(last in (await cards()), false);
+  assert.equal(await page.locator('#g-pos').textContent(), '3 / 3');
+  // The step back is kept with the round: it is still offered after the page is loaded again.
+  await page.locator('#g-again').click();
+  await page.reload();
+  await page.locator('#p-game[open]').waitFor();
+  assert.match(await page.locator('#g-end').textContent(), /^Round done: Got it 1, Again 2\./);
+  await undo.click();
+  assert.equal(await shownCard(), last);
+  assert.equal(last in (await cards()), false);
+  await forgetPractice();
+});
+
+test('the practice interface is in Latin unless English is chosen; the two marks differ by more than their words', async () => {
+  await openPractice(true, null);
+  const lang = () => page.locator('html').getAttribute('lang');
+  assert.equal(await lang(), 'la');
+  assert.equal(await page.locator('h1').textContent(), 'Exercitātiō');
+  assert.equal(await page.title(), 'Exercitātiō · Lexicon Latīnitātis Cotīdiānae');
+  assert.equal(await page.locator('#p-start').textContent(), 'Incipe');
+  assert.match(await page.locator('#p-count').textContent(), /^[\d,]+ chartae · 0 nunc repetendae · [\d,]+ novae$/);
+  assert.match(await page.locator('#p-meter-text').textContent(), /^0 nōtae · 0 discuntur · [\d,]+ novae$/);
+  assert.equal(await page.locator('#p-saved').textContent(), 'Prōgressus in hōc nāvigātrō servātur.');
+  assert.equal(await page.locator('#p-lang button[data-lang="la"]').getAttribute('aria-pressed'), 'true');
+  // The site's own header and footer stay English, and say so.
+  assert.deepEqual(await page.locator('header.site-top, footer.site-foot').evaluateAll(nodes => nodes.map(n => n.lang)), ['en', 'en']);
+  await page.locator('#p-deck > summary').click();
+  assert.equal(await page.locator('#p-deck .deck-label').textContent(), 'Fasciculus');
+  assert.deepEqual(await page.locator('#p-kind .pt-name').allTextContents(), ['Verba singula', 'Locūtiōnēs cotīdiānae', 'Sententiae et dicta']);
+  assert.deepEqual(await page.locator('#p-part .pt-name').allTextContents(), ['Nōmina', 'Verba', 'Adjectīva', 'Adverbia', 'Cētera']);
+  // The categories go by their Latin names alone; the authors keep theirs.
+  await openGroup('p-cat');
+  assert.match(await page.locator('#p-cat button[data-id="culina"]').textContent(), /^Culīna et potūs[\d,]+$/);
+  assert.equal(await page.locator('#p-cat .pt-en').count(), 0);
+  assert.equal(await page.locator('#p-src button[data-id="cicero"] .pt-name span').getAttribute('lang'), 'en');
+  await page.locator('#p-deck > summary').click();
+  // The round.
+  await listDeck(['judge', 'play-dough'], { kind: ['w'] });
+  assert.equal(await lang(), 'la');
+  await startRound();
+  assert.equal(await page.locator('#g-show').textContent(), 'Respōnsum ostende');
+  assert.equal(await page.locator('#g-status').textContent(), 'nova');
+  assert.equal(await page.locator('#g-close').getAttribute('aria-label'), 'Exī');
+  const origins = {};
+  for (let n = 0; n < 2; n++) {
+    await page.locator('#g-show').click();
+    origins[await shownCard()] = await page.locator('#g-origin').textContent();
+    if (n === 0) {
+      assert.equal(await page.locator('#g-again').textContent(), 'Iterum');
+      assert.equal(await page.locator('#g-got').textContent(), 'Teneō');
+      assert.equal(await page.locator('#g-entry').textContent(), 'In lexicō īnspice');
+      assert.match(await page.locator('#g-also').textContent(), /^Item: /);
+      // An icon each, and not the same colours: one is outlined, the other filled.
+      const looks = await page.locator('#g-again, #g-got').evaluateAll(nodes => nodes.map(node => {
+        const style = getComputedStyle(node);
+        return { icon: !!node.querySelector('svg'), fill: style.backgroundColor, ink: style.color, edge: style.borderTopColor, round: parseFloat(style.borderTopLeftRadius) };
+      }));
+      assert.ok(looks.every(look => look.icon && look.round >= 8));
+      assert.notEqual(looks[0].fill, looks[1].fill);
+      assert.notEqual(looks[0].ink, looks[1].ink);
+      assert.notEqual(looks[0].edge, looks[1].edge);
+    }
+    await page.locator('#g-got').click();
+  }
+  assert.equal(origins.judge, 'aetātis classicae · Phaedr. 3.13.3; Traupman 195, 335');
+  assert.equal(origins['play-dough'], 'locūtiō nostra');
+  assert.match(await page.locator('#g-end').textContent(), /^Cursus cōnfectus: «Teneō» 2, «Iterum» 0\. Nihil hīc repetendum\. Proxima charta redībit post diem\.$/);
+  assert.equal(await page.locator('#g-early').textContent(), 'Repete tamen nunc');
+  await page.locator('#g-exit').click();
+  // English on request, kept on the device.
+  await page.locator('#p-lang button[data-lang="en"]').click();
+  assert.equal(await lang(), 'en');
+  assert.equal(await page.locator('h1').textContent(), 'Practice');
+  assert.match(await page.locator('#p-count').textContent(), /^2 cards · 0 due now · 0 new$/);
+  assert.equal(await page.evaluate(() => localStorage.getItem('lexicon-practice-lang')), 'en');
+  await settle();
+  await openPractice(false);
+  assert.equal(await lang(), 'en');
+  assert.equal(await page.locator('#p-start').textContent(), 'Practise early');
+  await page.locator('#p-lang button[data-lang="la"]').click();
+  assert.equal(await page.locator('#p-start').textContent(), 'Repete tamen nunc');
+  assert.equal(await page.locator('#p-state').textContent(), 'Nihil hīc repetendum. Proxima charta redībit post diem.');
+  // The display options write the Latin their way, the interface's too, and leave the English alone.
+  await page.evaluate(() => { localStorage.setItem('lexicon-macrons', 'off'); localStorage.setItem('lexicon-j', 'i'); });
+  await settle();
+  await openPractice(false);
+  assert.equal(await page.locator('h1').textContent(), 'Exercitatio');
+  await startRound();
+  let seen = 0;
+  while (await page.locator('#g-show').isVisible()) {
+    await page.locator('#g-show').click();
+    if (await shownCard() === 'judge') {
+      seen++;
+      assert.equal(await page.locator('#g-cue').textContent(), 'judge (in a court of law) noun');
+      assert.equal(await page.locator('#g-la').textContent(), 'iudex, iudicis m./f.');
+      assert.match(await page.locator('#g-origin').textContent(), /Phaedr\. 3\.13\.3/);
+    }
+    await page.locator('#g-got').click();
+  }
+  assert.equal(seen, 1);
+  await page.evaluate(() => { localStorage.removeItem('lexicon-macrons'); localStorage.removeItem('lexicon-j'); });
+  await forgetPractice();
 });
 
 test('the deck: a category and a source narrow it, choices in a group add up, and the choice is kept', async () => {
@@ -939,7 +1228,7 @@ test('the deck: a category and a source narrow it, choices in a group add up, an
   const pressed = (group, id) => page.locator(`#p-deck button[data-group="${group}"][data-id="${id}"]`).getAttribute('aria-pressed');
   // A category narrows; a second category adds to the first.
   await openGroup('p-cat');
-  assert.equal(await page.locator('#p-cat button').count(), 20);
+  assert.equal(await page.locator('#p-cat button').count(), await page.evaluate(() => window.lexiconPractice.categories.length));
   assert.match(await page.locator('#p-cat button[data-id="culina"]').textContent(), /^Culīna et potūsKitchen, meals & drinks[\d,]+$/);
   await pick('cat', 'culina');
   const [kitchen] = await deckCount();
@@ -965,9 +1254,12 @@ test('the deck: a category and a source narrow it, choices in a group add up, an
     const data = window.lexiconPractice, wanted = ['cicero', 'vergil'].map(id => data.sources.findIndex(source => source.id === id));
     return { wanted, cards: Object.fromEntries(data.cards.map(card => [card.i, card])) };
   });
-  await page.locator('#p-show').click();
+  await startRound();
+  assert.equal(await page.locator('#g-deck').textContent(), 'Words · Culīna et potūs · Cicero, Vergil');
+  await page.locator('#g-show').click();
   const card = round.cards[await shownCard()];
   assert.ok([card.k, ...(card.x || [])].includes('culina') && card.s.some(n => round.wanted.includes(n)) && !card.t);
+  await page.keyboard.press('Escape');
   // The choices are kept on the device.
   await settle();
   await openPractice(false);
@@ -1009,14 +1301,16 @@ test('the deck: a category and a source narrow it, choices in a group add up, an
   // The sayings by themselves, from every category.
   await pick('cat', 'culina'); await pick('kind', 's'); await pick('kind', 'p');
   assert.equal(await page.locator('#p-now').textContent(), 'Sayings and quotations');
-  await page.locator('#p-show').click();
+  await startRound();
+  await page.locator('#g-show').click();
   assert.equal(round.cards[await shownCard()].t, 's');
+  await page.locator('#g-close').click();
   await pick('kind', 'w'); await pick('kind', 's'); await pick('cat', 'culina'); await pick('part', 'n');
   // Clearing the choices gives every word again.
   await page.locator('#p-clear').click();
   assert.deepEqual((await deckCount())[0], words);
   assert.equal(await page.locator('#p-clear').isVisible(), false);
-  await page.evaluate(keys => keys.forEach(key => localStorage.removeItem(key)), PRACTICE_KEYS);
+  await forgetPractice();
 });
 
 test('words looked up are remembered on the device and can be practised', async () => {
@@ -1040,13 +1334,21 @@ test('words looked up are remembered on the device and can be practised', async 
   // The phrase looked up is there once the phrases are chosen.
   await page.locator('#p-kind button[data-id="p"]').click();
   assert.deepEqual(await deckCount(), [3, 0, 3]);
+  await startRound();
   const ids = await playRound();
   assert.deepEqual([...ids].sort(), ['cooking-pot', 'how-are-you', 'soap']);
   // Nothing due and nothing new: when the next card comes back, and practising early.
-  assert.equal(await page.locator('#p-cue').textContent(), 'Round done: Got it 3, Again 0. Nothing is due. The next card comes back in a day.');
-  assert.equal(await page.locator('#p-next').isVisible(), false);
-  await page.locator('#p-early').click();
-  assert.equal(await page.locator('#p-pos').textContent(), 'review · 1 of 3');
+  assert.equal(await page.locator('#g-end').textContent(), 'Round done: Got it 3, Again 0. Nothing is due. The next card comes back in a day.');
+  assert.equal(await page.locator('#g-next').isVisible(), false);
+  await page.locator('#g-early').click();
+  assert.equal(await page.locator('#g-pos').textContent(), '1 / 3');
+  assert.equal(await page.locator('#g-status').textContent(), 'due');
+  // The lobby says the same, and offers the same.
+  await page.locator('#g-close').click();
+  assert.equal(await page.locator('#p-start').textContent(), 'Continue');
+  await page.locator('#p-kind button[data-id="p"]').click(); await page.locator('#p-kind button[data-id="p"]').click();
+  assert.equal(await page.locator('#p-state').textContent(), 'Nothing is due. The next card comes back in a day.');
+  assert.equal(await page.locator('#p-start').textContent(), 'Practise early');
   // Only the 500 most recent are kept.
   await page.evaluate(() => {
     const many = Object.fromEntries(Array.from({ length: 505 }, (_, n) => [`old-${n}`, 1000 + n]));
@@ -1057,7 +1359,7 @@ test('words looked up are remembered on the device and can be practised', async 
   const trimmed = await kept('lexicon-seen');
   assert.equal(Object.keys(trimmed).length, 500);
   assert.ok('tickle' in trimmed && 'old-504' in trimmed && !('old-0' in trimmed));
-  await page.evaluate(keys => keys.forEach(key => localStorage.removeItem(key)), PRACTICE_KEYS);
+  await forgetPractice();
 });
 
 test('a list of one’s own: pasted, matched by id, English or Latin, chosen, kept and deleted', async () => {
@@ -1085,7 +1387,9 @@ test('a list of one’s own: pasted, matched by id, English or Latin, chosen, ke
   const lists = await kept('lexicon-lists');
   assert.equal(lists.length, 1);
   assert.deepEqual([lists[0].name, lists[0].items], ['Morning', ['brush-teeth', 'Cooking Pot', 'SAPO', 'sheet (of paper)', 'how are you?', 'nonsenseword']]);
+  await startRound();
   assert.deepEqual((await playRound()).sort(), expected);
+  await page.locator('#g-exit').click();
   for (const field of ['#p-list-name', '#p-list-text']) {
     assert.ok(parseFloat(await page.locator(field).evaluate(el => getComputedStyle(el).fontSize)) >= 16, field);
   }
@@ -1115,7 +1419,7 @@ test('a list of one’s own: pasted, matched by id, English or Latin, chosen, ke
   assert.deepEqual(await kept('lexicon-lists'), []);
   assert.deepEqual((await kept('lexicon-practice-deck')).mine, []);
   assert.equal(await page.locator('#p-mine-now').textContent(), 'not chosen');
-  await page.evaluate(keys => keys.forEach(key => localStorage.removeItem(key)), PRACTICE_KEYS);
+  await forgetPractice();
 });
 
 test('progress is exported as text and imported, also from the hub drill; the later answer wins', async () => {
@@ -1136,7 +1440,7 @@ test('progress is exported as text and imported, also from the hub drill; the la
   assert.deepEqual(Object.keys(cards).sort(), ['cooking-pot', 'soap']);
   assert.deepEqual(cards['cooking-pot'], { b: 3, due: now + 3 * day, t: 1000 });
   assert.deepEqual((await deckCount()).slice(1, 2), [1], 'soap is due');
-  assert.match(await page.locator('#p-meter-text').textContent(), /^In this deck: 1 known · 1 learning · /);
+  assert.match(await page.locator('#p-meter-text').textContent(), /^1 known · 1 learning · /);
   // An older answer does not replace a later one; a later one does.
   assert.equal(await give({ cards: { 'v:cooking-pot': { b: 0, due: 0, t: 500 } } }), 'Imported 0 cards; 1 left as they were, marked here more recently.');
   assert.equal((await kept('lexicon-practice')).cards['cooking-pot'].b, 3);
@@ -1144,7 +1448,7 @@ test('progress is exported as text and imported, also from the hub drill; the la
   assert.equal((await kept('lexicon-practice')).cards['cooking-pot'].b, 5);
   assert.match(await give('not progress'), /^That is not an export of progress/);
   // Export gives it back, with the reader's lists.
-  await page.evaluate(() => localStorage.setItem('lexicon-lists', JSON.stringify([{ id: 'l1', name: 'Kitchen', items: ['soap'] }])));
+  await keep('lexicon-lists', [{ id: 'l1', name: 'Kitchen', items: ['soap'] }]);
   await settle();
   await openPractice(false);
   await page.locator('#p-backup > summary').click();
@@ -1154,52 +1458,87 @@ test('progress is exported as text and imported, also from the hub drill; the la
   assert.equal(exported.cards['cooking-pot'].b, 5);
   assert.deepEqual(exported.lists, [{ name: 'Kitchen', items: ['soap'] }]);
   assert.equal(await page.locator('#p-copy').isVisible(), true);
-  // On another device (nothing kept), the export brings both back.
-  await page.evaluate(keys => keys.forEach(key => localStorage.removeItem(key)), PRACTICE_KEYS);
+  // On another device (nothing kept), the export brings both back; in Latin it says so in Latin.
+  await forgetPractice();
   await settle();
   await openPractice(false);
   await page.locator('#p-backup > summary').click();
-  assert.equal(await give(exported), 'Imported 2 cards; 1 list added.');
+  assert.equal(await give(exported), 'Importātae 2 chartae; 1 index additus.');
   assert.equal((await kept('lexicon-lists'))[0].name, 'Kitchen');
   assert.equal((await kept('lexicon-practice')).cards.soap.b, 0);
-  await page.evaluate(keys => keys.forEach(key => localStorage.removeItem(key)), PRACTICE_KEYS);
+  await forgetPractice();
 });
 
-test('practice on a phone: every choice open, nothing scrolls sideways, 44px controls, 16px fields', async () => {
-  for (const width of [320, 390]) {
-    await page.setViewportSize({ width, height: 760 });
-    await openPractice();
-    await page.evaluate(() => localStorage.setItem('lexicon-lists', JSON.stringify([{ id: 'l1', name: 'A list with a rather long name to wrap', items: ['soap', 'nowhere-to-be-found'] }])));
-    await settle();
-    await openPractice(false);
-    await page.locator('#p-show').click();
-    for (const summary of await page.locator('#practice summary').all()) await summary.click();
-    await page.locator('#p-export').click();
-    assert.equal(await overflows(), false, `practice.html overflows at ${width}px`);
-    const small = await page.evaluate(() => [...document.querySelectorAll('#practice button, #practice summary, #practice a, #practice input, #practice textarea')]
-      .filter(el => el.getClientRects().length)
-      .map(el => [el.textContent.trim().slice(0, 24) || el.id, Math.round(el.getBoundingClientRect().height)])
-      .filter(([, height]) => height < 44));
-    assert.deepEqual(small, [], `practice.html at ${width}px has controls under 44px`);
-    const fields = await page.locator('#practice input, #practice textarea').evaluateAll(nodes => nodes.map(n => parseFloat(getComputedStyle(n).fontSize)));
-    assert.ok(fields.length >= 4 && fields.every(size => size >= 16));
-    // The marks stay within reach: at the foot of the screen when the card runs long.
-    const marks = await page.locator('#p-marks').boundingBox();
-    assert.ok(marks.y + marks.height <= 760 + 1);
+test('practice on a phone: the lobby and the round fit, with controls for a thumb and fields that do not zoom', async () => {
+  const sizes = selector => page.evaluate(sel => [...document.querySelectorAll(sel)]
+    .filter(el => el.getClientRects().length && getComputedStyle(el).visibility !== 'hidden')
+    .map(el => [el.textContent.trim().slice(0, 24) || el.id, Math.round(el.getBoundingClientRect().height)]), selector);
+  for (const [width, height] of [[390, 760], [320, 568]]) {
+    await page.setViewportSize({ width, height });
+    for (const language of ['la', 'en']) {
+      await openPractice(true, language);
+      await keep('lexicon-lists', [{ id: 'l1', name: 'A list with a rather long name to wrap', items: ['train', 'judge', 'pyjamas', 'nowhere-to-be-found'] }]);
+      await settle();
+      await openPractice(false);
+      // The lobby, with everything open.
+      for (const summary of await page.locator('#practice summary').all()) await summary.click();
+      await page.locator('#p-export').click();
+      assert.equal(await overflows(), false, `the lobby overflows at ${width}px (${language})`);
+      const small = (await sizes('.practice button, .practice summary, .practice a, .practice input, .practice textarea')).filter(([, h]) => h < 44);
+      assert.deepEqual(small, [], `the lobby at ${width}px (${language}) has controls under 44px`);
+      const fields = await page.locator('#practice input, #practice textarea').evaluateAll(nodes => nodes.map(n => parseFloat(getComputedStyle(n).fontSize)));
+      assert.ok(fields.length >= 4 && fields.every(size => size >= 16));
+      assert.ok((await page.locator('#p-start').boundingBox()).height >= 52);
+      // The round: front, back, and the end.
+      await page.locator('#p-mine button[data-group="mine"]:not([data-id="seen"])').click();
+      await startRound();
+      const check = async what => {
+        assert.equal(await overflows(), false, `${what} overflows at ${width}px (${language})`);
+        const box = await page.locator('#p-game').boundingBox();
+        assert.deepEqual([box.x, box.y, box.width, box.height], [0, 0, width, height], `${what}: the layer is the whole screen`);
+        assert.deepEqual((await sizes('#p-game button, #p-game a')).filter(([, h]) => h < 44), [], `${what} at ${width}px (${language})`);
+        assert.deepEqual((await sizes('#p-game .pbtn')).filter(([, h]) => h < 52), [], `${what}: its buttons are 52px or more`);
+        // The buttons stay at the foot of the screen, and the card stands clear of them.
+        const actions = await page.locator('.pgame-actions').boundingBox(), stage = await page.locator('#g-stage').boundingBox();
+        assert.ok(actions.y + actions.height <= height + 1 && stage.y + stage.height <= actions.y + 1, what);
+        const card = await page.locator('#g-card').evaluate(node => { const s = getComputedStyle(node); return [parseFloat(s.borderTopLeftRadius), s.boxShadow !== 'none', parseFloat(s.borderTopWidth)]; });
+        assert.ok(card[0] >= 12 && card[1] && card[2] >= 1, 'the card is a card: corners, a border, a shadow');
+        assert.ok((await page.locator('#g-card').boundingBox()).width <= width - 24);
+      };
+      await check('the front of a card');
+      for (let n = 0; n < 3; n++) {
+        await page.locator('#g-show').click();
+        await check('the back of a card');
+        await page.locator(n ? '#g-got' : '#g-again').click();
+      }
+      await check('the end of a round');
+      assert.equal(await page.locator('#g-undo').isVisible(), true);
+      await page.locator('#g-exit').click();
+    }
   }
-  await page.evaluate(keys => keys.forEach(key => localStorage.removeItem(key)), PRACTICE_KEYS);
+  await forgetPractice();
 });
 
 test('practice works when nothing can be saved, and says so', async () => {
   const context = await browser.newContext({ viewport: { width: 390, height: 760 }, serviceWorkers: 'block' });
   const blocked = await context.newPage();
-  await blocked.addInitScript(() => Object.defineProperty(window, 'localStorage', { get() { throw new Error('Storage blocked'); } }));
+  await blocked.addInitScript(() => {
+    Object.defineProperty(window, 'localStorage', { get() { throw new Error('Storage blocked'); } });
+    Object.defineProperty(window, 'sessionStorage', { get() { throw new Error('Storage blocked'); } });
+  });
   await blocked.goto(pageUrl('practice.html'));
-  await blocked.locator('#p-show').click();
-  assert.equal(await blocked.locator('#p-saved').isVisible(), false);
-  await blocked.locator('#p-got').click();
-  assert.equal(await blocked.locator('#p-saved').isVisible(), true);
-  assert.equal(await blocked.locator('#p-pos').textContent(), 'new · 2 of 12');
+  assert.equal(await blocked.locator('#p-saved').textContent(), 'Prōgressus in hōc nāvigātrō servātur.');
+  await blocked.locator('#p-start').click();
+  await blocked.locator('#g-show').click();
+  await blocked.locator('#g-got').click();
+  assert.equal(await blocked.locator('#g-pos').textContent(), '2 / 12');
+  await blocked.locator('#g-undo').click();
+  assert.equal(await blocked.locator('#g-pos').textContent(), '1 / 12');
+  await blocked.locator('#g-close').click();
+  assert.equal(await blocked.locator('#p-saved').textContent(), 'Prōgressus in hōc nāvigātrō servārī nōn potest: pāginā clausā perībit.');
+  // The language can still be changed for the visit.
+  await blocked.locator('#p-lang button[data-lang="en"]').click();
+  assert.equal(await blocked.locator('#p-start').textContent(), 'Continue');
   await blocked.goto(pageUrl('c/soap.html'));
   assert.match(await blocked.locator('h1').textContent(), /^soap/);
   await context.close();
@@ -1212,7 +1551,7 @@ test('practice is reached from the front page and from every footer, never from 
   assert.ok(practice.y < contents.y, 'above the list of categories');
   await links.first().click();
   await page.waitForURL(/practice\.html$/);
-  assert.equal(await page.locator('h1').textContent(), 'Practice');
+  assert.equal(await page.locator('h1').textContent(), 'Exercitātiō');
   await page.locator('.p-more a').click();
   await page.waitForURL(/hora\.html$/);
   for (const [path, href] of [['index.html', 'practice.html'], ['c/kind.html', '../practice.html'], ['k/culina.html', '../practice.html'], ['practice.html', 'practice.html']]) {
@@ -1220,13 +1559,32 @@ test('practice is reached from the front page and from every footer, never from 
     assert.equal(await page.locator('footer').getByRole('link', { name: 'Practice', exact: true }).getAttribute('href'), href, path);
     assert.equal(await page.locator('header.site-top a[href*="practice"]').count(), 0, path);
   }
-  // Without scripts the page says what it needs and leads elsewhere.
+  // Without scripts the page says what it needs, in English, and leads elsewhere.
   const context = await browser.newContext({ javaScriptEnabled: false });
   const plain = await context.newPage();
   await plain.goto(pageUrl('practice.html'));
   assert.equal(await plain.locator('.noscript-note').isVisible(), true);
   assert.equal(await plain.locator('#practice').isVisible(), false);
+  assert.equal(await plain.locator('#p-lang').isVisible(), false);
+  assert.equal(await plain.locator('#p-game').isVisible(), false);
+  assert.equal(await plain.locator('html').getAttribute('lang'), 'en');
   await context.close();
+});
+
+test('a strip of paper stands where a phone’s status bar is, and has no height where there is none', async () => {
+  for (const path of ['index.html', 'k/culina.html', 'c/soap.html', 'words.html', 'practice.html']) {
+    await page.goto(pageUrl(path));
+    const strip = await page.evaluate(() => {
+      const style = getComputedStyle(document.body, '::before');
+      return { position: style.position, top: style.top, height: style.height, paper: style.backgroundColor === getComputedStyle(document.body).backgroundColor,
+        above: Number(style.zIndex) };
+    });
+    assert.deepEqual(strip, { position: 'fixed', top: '0px', height: '0px', paper: true, above: 1000 }, path);
+  }
+  // What sticks to the top still sticks at the top.
+  await page.goto(pageUrl('k/culina.html'));
+  await page.evaluate(() => window.scrollTo(0, 600));
+  assert.ok(Math.abs((await page.locator('.toolbar').boundingBox()).y) < 2);
 });
 
 // The clock ---------------------------------------------------------------------------------------
@@ -1280,6 +1638,6 @@ test('the clock game asks nothing of other sites, keeps its score, and leads bac
   assert.equal(await clock.locator('.links a[href="index.html"]').isVisible(), true);
   await clock.locator('.links a[href="practice.html"]').click();
   await clock.waitForURL(/practice\.html$/);
-  assert.equal(await clock.locator('#p-show').isVisible(), true);
+  assert.equal(await clock.locator('#p-start').isVisible(), true);
   await context.close();
 });

@@ -64,7 +64,18 @@ A word or phrase we made ourselves (a term whose `period` is `ours`) belongs in 
 - **A coinage that is needed says why**, in its `comment`: what was searched and what was found wanting ("No reference work has a word for a phone's notification", "Traupman has only the adjective"). Follow "Saying that something is not attested" in [drafting.md](drafting.md).
 - **Household words the editor has ruled on stay** (*vestis nocturna*, *lūsōrium*), marked as what they are.
 
-The builder enforces one part of this: a record may not have a `recommended` term of period `ours` when it also has a `recommended` term of another period. It does not yet require a stated reason on every `ours` term. The pass of 13 November 2026 went through the 153 coinages that stood beside an attested term (`notes/coinages-2026-11-13.md` lists each, with what was done and why); the 263 in records with no attested term are still to be gone through.
+The builder enforces one part of this: a record may not have a `recommended` term of period `ours` when it also has a `recommended` term of another period. It does not yet require a stated reason on every `ours` term. The pass of 13 November 2026 went through the 153 coinages that stood beside an attested term, and the editor ruled on the doubtful ones the next day (`notes/coinages-2026-11-13.md` lists each, with what was done and why); the 262 in records with no attested term are still to be gone through.
+
+### The answer answers the headword
+
+A record's first recommended term is its answer: the page prints it first, and the practice cards ask the English headword and show it. So it must be the kind of word the headword is (Jack, 14 November 2026, after *mountain range*, a noun, was answered only by the verb phrase *perpetuīs jugīs tendere*, "stretch in an unbroken range", and looked broken):
+
+- **A noun headword is answered by a noun, a verb by a verb, an adjective by an adjective**, wherever the sources have one that truly answers it: confirmed in Lewis & Short, or cited from Traupman or Morgan–Owens by page or headword. *Mountain range* is now *montēs perpetuī* (Traupman 205), with *jugum* beside it; the verb phrase, which is Pliny's, is an alternative with its own gloss.
+- **Where Latin really says the thing with a verb** (*accountability* is *ratiōnem reddere*), the verb stays, and the record is honest about it: the gloss reads as the verbal phrase ("give an account"), and the comment says that Latin uses a verb here. The same holds for an adverb or a genitive that does an English adjective's work.
+- **Where the headword is truthfully two parts of speech** (*balance*, *gallop*), `pos` lists both; put the other English wording in `also`.
+- **Never make up a noun to make the card neat.** A word of the right kind that is rare, late or technical may stay below the classical idiom when the comment says why.
+
+`python3 scripts/answer_kinds.py` lists the records whose answer does not look like their headword's kind. It is a list to read, not a check: most of what it still reports are records of the second kind. The pass of 14 November 2026 is written up in `notes/answers-2026-11-14.md`.
 
 ### Sources are citations
 

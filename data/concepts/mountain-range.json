@@ -4,20 +4,45 @@
   "pos": "noun",
   "also": [
     "mountain chain",
-    "unbroken chain"
+    "unbroken chain",
+    "range of mountains",
+    "chain of mountains"
   ],
   "domain": "natura",
   "terms": [
     {
-      "latin": "perpetuīs jugīs tendere",
+      "latin": "montēs perpetuī",
       "status": "recommended",
-      "period": "classical",
-      "gloss": "stretch in an unbroken range",
+      "period": "modern",
+      "gloss": "a mountain chain, a mountain range",
+      "grammar": "noun phrase: montēs, montium m. pl., with perpetuus, unbroken",
       "evidence": [
-        "Traupman 201, 203",
-        "Traupman 203"
+        "Traupman 205: mountain chain"
       ],
-      "comment": "<span lang=\"la\">jugum</span> is in the mountain entry."
+      "comment": "Traupman’s phrase: mountains that run on without a break. <span lang=\"la\">Perpetuus</span> is Pliny’s word for the unbroken ridges of the Apennines (below)."
+    },
+    {
+      "latin": "jugum, jugī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a ridge; a chain of mountains",
+      "evidence": [
+        "Lewis &amp; Short: “a height or summit of a mountain, a ridge; also, a chain of mountains” (Verg. E. 5.76; Caes. BC 1.70)",
+        "M-O s.v. mountain range or chain",
+        "Traupman 202: <span lang=\"la\">Alpium juga</span>, the Alpine chain"
+      ],
+      "comment": "First a yoke; of mountains, the ridge, and so a range (see ridge). Morgan–Owens gives it for a mountain range, from the naturalists Desfontaines and Pallas."
+    },
+    {
+      "latin": "perpetuīs jugīs tendere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "to stretch in an unbroken range",
+      "evidence": [
+        "Plin. NH 3.48: <span lang=\"la\">Apennīnus perpetuīs jugīs ab Alpibus tendēns ad Siculum fretum</span> (Lewis &amp; Short s.v. <span lang=\"la\">perpetuus</span>)",
+        "Traupman 201, 203"
+      ],
+      "comment": "The verb phrase, for saying where a range runs: Pliny’s words, which Traupman borrows."
     }
   ],
   "phrases": [
@@ -30,20 +55,17 @@
       "latin": "Appennīnus mōns perpetuīs jugīs ab Alpibus tendēns ad …",
       "english": "the Apennines extending in an unbroken chain from the Alps to …",
       "source": "Traupman 203"
-    },
-    {
-      "latin": "montēs perpetuī",
-      "english": "a mountain chain",
-      "source": "Traupman 205"
     }
   ],
   "related": [
-    "mountain"
+    "mountain",
+    "ridge"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/jugum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: jugum</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 201, 203.",
-    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+    "<a href=\"https://logeion.uchicago.edu/jugum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: jugum</a> · <a href=\"https://logeion.uchicago.edu/perpetuus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: perpetuus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 201–203, 205.",
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. mountain range or chain."
   ],
   "review": {
     "status": "draft",

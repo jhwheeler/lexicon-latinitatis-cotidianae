@@ -2,7 +2,10 @@
   "id": "occupy-busy",
   "english": "occupy",
   "sense": "keep busy; take up time",
-  "pos": "verb",
+  "pos": [
+    "verb",
+    "adjective"
+  ],
   "also": [
     "busy",
     "be busy",
@@ -24,6 +27,17 @@
   "domain": "verba",
   "terms": [
     {
+      "latin": "occupō, occupāre, occupāvī, occupātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "take up, occupy (time, a person)",
+      "evidence": [
+        "Cael. ap. Cic. Fam. 8.10.3: <span lang=\"la\">haec causa prīmōs mēnsēs occupābit</span> (Lewis &amp; Short)",
+        "Traupman 353"
+      ],
+      "comment": "Of a task that takes up time or attention; its first sense is to seize (see occupy-seize)."
+    },
+    {
       "latin": "occupātus, occupāta, occupātum",
       "status": "recommended",
       "period": "classical",
@@ -35,17 +49,6 @@
         "Traupman 285"
       ],
       "comment": "Busy with something is <span lang=\"la\">in aliquā rē occupātus</span>. The opposite is <span lang=\"la\">ōtiōsus</span>, at leisure (Cic. Tusc. 1.5); for “free, not busy” see available."
-    },
-    {
-      "latin": "occupō, occupāre, occupāvī, occupātum",
-      "status": "alternative",
-      "period": "classical",
-      "gloss": "take up, occupy (time, a person)",
-      "evidence": [
-        "Cael. ap. Cic. Fam. 8.10.3: <span lang=\"la\">haec causa prīmōs mēnsēs occupābit</span> (Lewis &amp; Short)",
-        "Traupman 353"
-      ],
-      "comment": "Of a task that takes up time or attention; its first sense is to seize (see occupy-seize)."
     },
     {
       "latin": "dētineō, dētinēre, dētinuī, dētentum",

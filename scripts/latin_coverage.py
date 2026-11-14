@@ -56,7 +56,7 @@ def fold(text):
 
 
 # The corpus's lemma → the lexicon's head, where the two name one word differently.
-ALIASES = {'tanto': ['tantus'], 'quanto': ['quantus'], 'iure': ['ius'], 'nocte': ['nox'], 'posterius': ['posterus', 'postea'],
+ALIASES = {'rastri': ['rastrum'], 'tanto': ['tantus'], 'quanto': ['quantus'], 'iure': ['ius'], 'nocte': ['nox'], 'posterius': ['posterus', 'postea'],
            'alternis': ['alternus'], 'nescioquis': ['nescio'], 'huiusmodi': ['modus'], 'utrumne': ['utrum'], 'ociter': ['ocius'],
            'propior': ['prope', 'proximus'], 'reuertor': ['reuerto'], 'percunctor': ['percontor'], 'luxuries': ['luxuria'],
            'nostri': ['noster'], 'uestri': ['uester'], 'tui': ['tuus'], 'mei': ['meus'], 'boni': ['bonus'], 'hercules': ['hercle', 'hercule', 'mehercule', 'mehercle'],

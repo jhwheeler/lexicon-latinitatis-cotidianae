@@ -1,0 +1,67 @@
+{
+  "id": "weed-verb",
+  "english": "weed",
+  "sense": "pull up weeds",
+  "pos": "verb",
+  "also": [
+    "weed the garden",
+    "pull up weeds",
+    "do the weeding",
+    "hoe (verb)"
+  ],
+  "domain": "domus",
+  "also_under": [
+    "natura"
+  ],
+  "terms": [
+    {
+      "latin": "runcō, runcāre",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "weed out; clear of weeds",
+      "evidence": [
+        "Cato Agr. 2: <span lang=\"la\">spīnās</span> (Lewis &amp; Short)",
+        "Varr. RR 1.30: <span lang=\"la\">segetēs</span> (Lewis &amp; Short)",
+        "Col. 11.2.40 (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "sāriō, sārīre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "hoe, weed with a hoe",
+      "evidence": [
+        "Cato Agr. 161.1 (Lewis &amp; Short)",
+        "Col. 11.2.10 (Lewis &amp; Short)"
+      ],
+      "comment": "To work the soil round the plants with the <span lang=\"la\">sarculum</span> and so kill the weeds; also written <span lang=\"la\">sarriō</span>.",
+      "notes": [
+        "sario"
+      ]
+    }
+  ],
+  "related": [
+    "weed",
+    "hoe",
+    "tend-the-garden",
+    "dig"
+  ],
+  "notes": {
+    "sario": {
+      "form": "sāriō",
+      "claim": "long a, single r",
+      "against": "Lewis &amp; Short <span lang=\"la\">sarrio (sario)</span>, unmarked",
+      "html": "De Vaan 539, s.v. <span lang=\"la\">sāriō</span>: the form with a long vowel and one r is the older, <span lang=\"la\">sarriō</span> the newer, as <span lang=\"la\">narrāre</span> beside <span lang=\"la\">*gnārāre</span>.",
+      "ruling": "quantity-authorities"
+    }
+  },
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/runco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: runco</a> · <a href=\"https://logeion.uchicago.edu/sarrio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sarrio</a>",
+    "Michiel de Vaan, <em>Etymological Dictionary of Latin and the other Italic Languages</em> (2008), p. 539."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-15",
+    "by": "Claude"
+  }
+}

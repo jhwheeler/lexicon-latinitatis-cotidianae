@@ -3,7 +3,9 @@
   "english": "cobweb",
   "pos": "noun",
   "also": [
-    "spider web"
+    "spider web",
+    "spider’s web",
+    "web"
   ],
   "domain": "natura",
   "terms": [
@@ -13,6 +15,17 @@
       "period": "classical",
       "evidence": [
         "Traupman 144, 293"
+      ]
+    },
+    {
+      "latin": "tēla, tēlae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a web: a spider’s, or cloth on the loom",
+      "evidence": [
+        "Plaut. Stich. 2.2.25: <span lang=\"la\">dējiciamque eōrum omnēs tēlās</span> (Lewis &amp; Short)",
+        "Catull. 68.49 (Lewis &amp; Short)",
+        "Juv. 14.61 (Lewis &amp; Short)"
       ]
     }
   ],
@@ -28,11 +41,12 @@
   ],
   "sources": [
     "<a href=\"https://logeion.org/aranea\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aranea</a>",
+    "<a href=\"https://logeion.uchicago.edu/tela\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tela</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 144, 293."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

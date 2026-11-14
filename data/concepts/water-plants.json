@@ -6,7 +6,10 @@
   "also": [
     "water the flowers",
     "watering",
-    "water (flowers)"
+    "water (flowers)",
+    "irrigate",
+    "water the garden",
+    "water the plants"
   ],
   "domain": "domus",
   "terms": [
@@ -24,6 +27,17 @@
         "Traupman 39, 404"
       ],
       "comment": "<span lang=\"la\">adaquō</span>, give water to."
+    },
+    {
+      "latin": "irrigō, irrigāre, irrigāvī, irrigātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "lead water to; water, irrigate",
+      "evidence": [
+        "Cato Agr. 151: <span lang=\"la\">aquam in āreās</span> (Lewis &amp; Short)",
+        "Cic. ND 2.130: <span lang=\"la\">Aegyptum Nīlus irrigat</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Also written <span lang=\"la\">inrigō</span>."
     }
   ],
   "phrases": [
@@ -31,21 +45,30 @@
       "latin": "Tubulum tenē; flōrēs adaquēmus.",
       "english": "Hold the hose; let’s water the flowers.",
       "source": "composed"
+    },
+    {
+      "latin": "fīgat humō plantās et amīcōs inriget imbrēs",
+      "english": "let him set the plants in the ground and water them with kindly showers",
+      "source": "Verg. G. 4.115"
     }
   ],
   "related": [
     "garden-hose",
     "sprinkler",
-    "tend-the-garden"
+    "tend-the-garden",
+    "flower-bed",
+    "watering-can"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/rigo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: rigo</a> · <a href=\"https://logeion.org/adaquo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: adaquo</a>",
+    "<a href=\"https://logeion.uchicago.edu/irrigo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: irrigo</a>",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. yard, yard: backyard, lawn, lawn: lawn-mower, lawn: mow the lawn, sprinkler, hoe. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 38, 39, 320, 409.",
-    "The example sentence marked “composed” is ours."
+    "The example sentence marked “composed” is ours.",
+    "Vergil, <em>Georgica</em> 4.115."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

@@ -12,11 +12,14 @@
   "domain": "computatra",
   "terms": [
     {
-      "latin": "catalogus dēstinātāriōrum",
+      "latin": "grex, gregis m.",
       "status": "recommended",
-      "period": "ours",
-      "gloss": "recipient list",
-      "comment": "Our descriptive “recipient list” from the email-platform discussion. <strong lang=\"la\">catalogus, catalogī m.</strong> — catalogue or list; <strong lang=\"la\">dēstinātārius, dēstinātāriī m.</strong> is modern vocabulary for a recipient; the full phrase is not claimed as an established platform label."
+      "period": "modern",
+      "gloss": "a mailing list",
+      "evidence": [
+        "Traupman 261"
+      ],
+      "comment": "Traupman’s word for a mailing list (p. 261): the flock of people on it, whose owner is the <span lang=\"la\">gregis moderātor</span>. For the stored list of recipients that a mailing platform keeps, a plain description serves: <span lang=\"la\">catalogus dēstinātāriōrum</span> (<span lang=\"la\">catalogus</span>, a list of names, is post-classical in Lewis &amp; Short; <span lang=\"la\">dēstinātārius</span> is a modern word for a recipient)."
     },
     {
       "latin": "grex Internetī",
@@ -25,16 +28,7 @@
       "evidence": [
         "Vocabula computatralia s.v. list"
       ],
-      "comment": "The computing glossary instead proposes <strong lang=\"la\">grex Internetī</strong> for a mailing list. That emphasizes a group; an email-marketing platform’s stored list of recipients can be described more directly with <strong lang=\"la\">catalogus</strong>. These alternatives need not name exactly the same kind of resource."
-    },
-    {
-      "latin": "grex, gregis m.",
-      "status": "alternative",
-      "period": "modern",
-      "gloss": "mailing list",
-      "evidence": [
-        "Traupman 261"
-      ]
+      "comment": "The phrase of the computing glossary <em>Vocabula computatralia</em>: like Traupman’s, it names the group of people on the list."
     },
     {
       "latin": "grex interrētiālis",
@@ -61,13 +55,18 @@
       "latin": "gregis moderātor (moderātrīx)",
       "english": "list owner",
       "source": "Traupman 261"
+    },
+    {
+      "latin": "catalogus dēstinātāriōrum",
+      "english": "a list of recipients",
+      "source": "composed"
     }
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/grex\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: grex</a>",
     "<a href=\"https://alatius.com/ls/index.php?l=catalogus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: catalogus</a> · <a href=\"https://www.culturaclasica.com/lingualatina/vocabula_computatralia.pdf\" rel=\"noopener noreferrer\" target=\"_blank\">Vocabula computatralia: list</a>. Dictionary links support the component words; the modern technical expressions are labelled separately.",
     "The example sentences marked “composed” are ours.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 340."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 261, 340."
   ],
   "replaces": [
     "entry-140"

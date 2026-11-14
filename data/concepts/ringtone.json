@@ -10,31 +10,25 @@
   "domain": "computatra",
   "terms": [
     {
-      "latin": "sonus, sonī m.",
+      "latin": "tinnītus tēlephōnicus",
       "status": "recommended",
-      "period": "ours",
-      "gloss": "the sound a phone makes when it rings",
-      "comment": "No reference work has a word for a ringtone. The phone rings with <span lang=\"la\">sonāre</span> (see the phone is ringing; Andresian p. 14), so the sound it rings with is its <span lang=\"la\">sonus</span>, the plain classical word for a sound; <span lang=\"la\">sonus tēlephōnī</span> where it must be said whose."
+      "period": "modern",
+      "gloss": "the ring of a telephone: a ringtone",
+      "evidence": [
+        "Traupman 391"
+      ],
+      "comment": "Traupman’s phrase for a telephone’s ring (p. 391); no reference work has a separate word for a ringtone. A plain description also serves: the phone rings with <span lang=\"la\">sonāre</span> (see the phone is ringing; Andresian p. 14), so the sound it rings with is its <span lang=\"la\">sonus</span>."
     },
     {
       "latin": "tinnītus, tinnītūs m.",
       "status": "alternative",
-      "period": "ours",
+      "period": "classical",
       "gloss": "a ringing, jingling",
       "register": "vōx poētica: Verg., Ov.; in ōrātiōne solūtā post Augustum (Sen., Plin.)",
       "evidence": [
         "Verg. G. 4.64; Ov. Met. 5.204 (Lewis &amp; Short)"
       ],
-      "comment": "Classically the ring of bronze and cymbals, so apt for a bell-like tone."
-    },
-    {
-      "latin": "tinnītus tēlephōnicus",
-      "status": "alternative",
-      "period": "modern",
-      "gloss": "the ring of a telephone",
-      "evidence": [
-        "Traupman 391"
-      ]
+      "comment": "Classically the ring of bronze and cymbals: the noun of Traupman’s phrase, enough by itself where the phone is understood."
     }
   ],
   "related": [
@@ -45,7 +39,8 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/sonus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sonus</a> · <a href=\"https://logeion.uchicago.edu/tinnitus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tinnitus</a>",
     "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 14: <span lang=\"la\">sonō</span> for a ringing phone.",
-    "No source has a word for a ringtone."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 391.",
+    "The example sentence marked “composed” is ours."
   ],
   "review": {
     "status": "draft",
@@ -57,6 +52,11 @@
       "latin": "Tēlephōnum tinnit.",
       "english": "The telephone is ringing.",
       "source": "Traupman 391"
+    },
+    {
+      "latin": "sonus tēlephōnī",
+      "english": "the sound of the phone: its ringtone",
+      "source": "composed"
     }
   ]
 }

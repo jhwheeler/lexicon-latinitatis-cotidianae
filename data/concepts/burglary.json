@@ -13,13 +13,33 @@
   "domain": "res-publica",
   "terms": [
     {
-      "latin": "parietēs perfodere",
+      "latin": "effrāctūra, effrāctūrae f.",
       "status": "recommended",
+      "period": "post-classical",
+      "gloss": "house-breaking, burglary",
+      "evidence": [
+        "Dig. 1.15.3.2: <span lang=\"la\">effrāctūrae fīunt plērumque in īnsulīs in horreīsque</span> (Lewis &amp; Short)"
+      ],
+      "comment": "The lawyers’ word (Lewis &amp; Short: “house-breaking, burglary”, juridical Latin)."
+    },
+    {
+      "latin": "domūs latrōcinium",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "burglary",
+      "evidence": [
+        "Traupman 194, 284"
+      ],
+      "comment": "Traupman’s phrase. Classically <span lang=\"la\">latrōcinium</span> is freebooting, robbery, highway robbery (Lewis &amp; Short)."
+    },
+    {
+      "latin": "parietēs perfodere",
+      "status": "alternative",
       "period": "classical",
-      "gloss": "break into a house (by digging through the walls)",
+      "gloss": "commit a burglary: break into a house (by digging through the walls)",
       "evidence": [
         "Plaut. As. 3.2.17: <span lang=\"la\">parietēs</span> (Lewis &amp; Short s.v. <span lang=\"la\">perfodiō</span>)",
-        "Traupman 283, 284"
+        "Traupman 194, 284: commit a burglary"
       ],
       "comment": "Roman burglars dug through the house wall; so a burglar is a <span lang=\"la\">perfossor parietum</span> (Plaut. Ps. 980, Lewis &amp; Short)."
     },
@@ -42,24 +62,14 @@
         "Dig. 1.15.3 (Lewis &amp; Short)",
         "Traupman 284"
       ]
-    },
-    {
-      "latin": "effrāctūra, effrāctūrae f.",
-      "status": "alternative",
-      "period": "post-classical",
-      "gloss": "a break-in, breaking and entering",
-      "evidence": [
-        "Lewis &amp; Short",
-        "Traupman 283"
-      ]
     }
   ],
   "related": [
     "thief"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/perfossor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: perfossor</a> · <a href=\"https://logeion.uchicago.edu/effractor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: effractor</a> · <a href=\"https://logeion.uchicago.edu/effractura\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: effractura</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 283, 284.",
+    "<a href=\"https://logeion.uchicago.edu/perfossor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: perfossor</a> · <a href=\"https://logeion.uchicago.edu/effractor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: effractor</a> · <a href=\"https://logeion.uchicago.edu/effractura\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: effractura</a> · <a href=\"https://logeion.uchicago.edu/latrocinium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: latrocinium</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 194, 284.",
     "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
   ],
   "review": {

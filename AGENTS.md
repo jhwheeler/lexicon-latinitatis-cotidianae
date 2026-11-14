@@ -65,9 +65,18 @@ Jack's principle (13 November 2026): a word or phrase we came up with (a term wh
 - An ordinary combination of attested words (*crēta colōrāta*, *pīsa viridia*, *grūs lūsōria*) is not a coinage and not a term: put it among the record's `phrases` as a composed example.
 - A coinage that is needed says why in its `comment`: what was searched and found wanting.
 - Household words Jack has ruled on stay (pyjamas are *vestis nocturna*; the playground is *lūsōrium*). Never delete or replace a word a comment calls the household word or our family's own word; ask.
-- The builder refuses a record with a `recommended` term of period `ours` beside a `recommended` term of another period. It does not yet require a reason on every `ours` term: the pass of 13 November 2026 covered the coinages standing beside an attested term (`notes/coinages-2026-11-13.md`), and those in records with no attested term are still to do.
+- The builder refuses a record with a `recommended` term of period `ours` beside a `recommended` term of another period. It does not yet require a reason on every `ours` term: the pass of 13 November 2026 covered the coinages standing beside an attested term, and Jack ruled on the doubtful ones on 14 November (`notes/coinages-2026-11-13.md`); those in records with no attested term are still to do.
 
 See "Coinages only where needed" in `docs/records.md`.
+
+## The answer answers the headword
+
+Jack's rule (14 November 2026): a record's first recommended term is what the page prints first and what the practice cards show, so it must be the kind of word the headword is. *Mountain range*, a noun, had only the verb phrase *perpetuīs jugīs tendere*, and looked broken.
+
+- A noun headword gets a noun, a verb a verb, an adjective an adjective, wherever the sources have one that truly answers it (Lewis & Short, or Traupman or Morgan–Owens by page or headword). The verbal expression stays as an alternative with its own gloss, or as an example.
+- Where Latin really says the thing with a verb (*accountability* is *ratiōnem reddere*), keep the verb and say so: the gloss reads as the verbal phrase and the comment says that Latin uses a verb. Where the headword is truthfully two parts of speech, list both in `pos`.
+- Never make up a noun to make the card neat.
+- `python3 scripts/answer_kinds.py` lists the records to look at; read it after adding records. See "The answer answers the headword" in `docs/records.md` and `notes/answers-2026-11-14.md`.
 
 ## Practice
 

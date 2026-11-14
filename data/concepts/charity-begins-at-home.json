@@ -2,6 +2,10 @@
   "id": "charity-begins-at-home",
   "english": "charity begins at home",
   "pos": "phrase",
+  "also": [
+    "near is my shirt, but nearer is my skin",
+    "look after number one"
+  ],
   "domain": "sermo",
   "terms": [
     {
@@ -12,10 +16,30 @@
         "Traupman 254"
       ],
       "comment": "We have found no ancient source for it in Lewis &amp; Short or the loci collections."
+    },
+    {
+      "latin": "Tunica propior palliō est.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "my tunic is nearer than my cloak: my own interest comes first",
+      "register": "vōx cōmica: Plaut.",
+      "evidence": [
+        "Plaut. Trin. 1154: <span lang=\"la\">tunica propior palliōst</span>"
+      ],
+      "comment": "Lewis &amp; Short s.v. <span lang=\"la\">tunica</span>, comparing the English “near is my shirt, but nearer is my skin”."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "hunc priōrem aequomst mē habēre: tunica propior palliōst",
+      "english": "it’s only right that I should put him first: my shirt is nearer than my coat",
+      "source": "Plaut. Trin. 1154"
     }
   ],
   "sources": [
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>."
+    "<a href=\"https://logeion.uchicago.edu/tunica\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tunica</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>.",
+    "Plautus, <em>Trinummus</em> 1154."
   ],
   "review": {
     "status": "draft",

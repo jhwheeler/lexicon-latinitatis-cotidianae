@@ -6,7 +6,9 @@
   "also": [
     "drain the cup",
     "drink up",
-    "down it in one gulp"
+    "down it in one gulp",
+    "drink it all up",
+    "finish your drink"
   ],
   "domain": "culina",
   "terms": [
@@ -21,11 +23,30 @@
         "Cic.",
         "Liv."
       ]
+    },
+    {
+      "latin": "ēbibō, ēbibere, ēbibī, ēbibitum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "drink up, drink to the last drop",
+      "evidence": [
+        "Plaut. Curc. 359: <span lang=\"la\">propīnō magnum pōclum: ille ēbibit</span>",
+        "Ter. Heaut. 255: <span lang=\"la\">Quid comedent? quid ēbibent?</span>"
+      ],
+      "comment": "Not in Cicero or Caesar (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "propīnō magnum pōclum: ille ēbibit, caput dēpōnit, condormīscit",
+      "english": "I drink his health in a big cup; he drinks it off, lays his head down and falls asleep",
+      "source": "Plaut. Curc. 359–360"
     }
   ],
   "sources": [
-    "<a href=\"https://logeion.org/epoto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: epoto</a>",
-    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. drink (something) in a single gulp."
+    "<a href=\"https://logeion.org/epoto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: epoto</a> · <a href=\"https://logeion.uchicago.edu/ebibo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ebibo</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. drink (something) in a single gulp.",
+    "Plautus, <em>Curculio</em> 359–360. Terence, <em>Heautontimorumenos</em> 255."
   ],
   "review": {
     "status": "draft",

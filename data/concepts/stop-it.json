@@ -6,7 +6,10 @@
     "cut it out",
     "lay off!",
     "lay off",
-    "cut that out right now"
+    "cut that out right now",
+    "are you still at it?",
+    "will you stop?",
+    "still going on?"
   ],
   "domain": "sermo",
   "terms": [
@@ -40,6 +43,18 @@
         "Plaut. Ep. 1.1.37: <span lang=\"la\">istīs rēbus</span> (Lewis &amp; Short s.v. <span lang=\"la\">supersedeō</span>: “to refrain or desist from”, with the ablative)",
         "Traupman 300"
       ]
+    },
+    {
+      "latin": "Pergin'?",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "are you still at it? will you stop?",
+      "grammar": "pergis with -ne: “are you going on?”; often with an infinitive",
+      "register": "vōx cōmica: Plaut., Ter.",
+      "evidence": [
+        "Plaut. Amph. 539: <span lang=\"la\">Pergin' autem?</span>",
+        "Plaut. Cist. 666c: <span lang=\"la\">Pergin'?</span>"
+      ]
     }
   ],
   "related": [
@@ -50,7 +65,8 @@
   "sources": [
     "<a href=\"https://logeion.org/desino\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: desino</a> · <a href=\"https://logeion.org/desisto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: desisto</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 96, 102, 300, 338.",
-    "<a href=\"https://logeion.uchicago.edu/supersedeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: supersedeo</a>"
+    "<a href=\"https://logeion.uchicago.edu/supersedeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: supersedeo</a>",
+    "Plautus, <em>Amphitruo</em> 539; <em>Captivi</em> 591; <em>Cistellaria</em> 666c."
   ],
   "review": {
     "status": "draft",
@@ -67,6 +83,16 @@
       "latin": "Supersedē istīs rēbus jam.",
       "english": "Cut that out right now.",
       "source": "Traupman 96"
+    },
+    {
+      "latin": "Pergin' autem? nōnne ego possum, furcifer, tē perdere?",
+      "english": "Still at it, are you? Don’t you know I can be the ruin of you, you rascal?",
+      "source": "Plaut. Amph. 539"
+    },
+    {
+      "latin": "Pergin' servom mē exprobrāre esse, id quod vī hostīlī optigit?",
+      "english": "Will you go on throwing it in my face that I am a slave, when that came about by an enemy’s violence?",
+      "source": "Plaut. Capt. 591"
     }
   ]
 }

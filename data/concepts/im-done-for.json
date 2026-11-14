@@ -41,6 +41,18 @@
         "Traupman 322"
       ],
       "comment": "Literally “I am nobody”; Lewis &amp; Short: “I am lost, undone” (ante-classical)."
+    },
+    {
+      "latin": "Disperiī!",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "I’m ruined! it’s all up with me!",
+      "register": "vōx cōmica: Plaut., Ter.",
+      "evidence": [
+        "Plaut. Bacch. 1116c: <span lang=\"la\">Ei mihi, disperiī.</span>",
+        "Plaut. Aul. 242"
+      ],
+      "comment": "A stronger <span lang=\"la\">periī</span>: colloquial (Lewis &amp; Short s.v. <span lang=\"la\">dispereō</span>)."
     }
   ],
   "related": [
@@ -49,12 +61,13 @@
     "lose-something"
   ],
   "sources": [
-    "<a href=\"https://logeion.org/pereo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pereo</a>",
+    "<a href=\"https://logeion.org/pereo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pereo</a> · <a href=\"https://logeion.uchicago.edu/dispereo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dispereo</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 93, 96, 97, 99, 301, 305, 322.",
     "Ter. Ph. 386 from the Latinitas loci collection (loci-terentius), checked against the edition named there.",
     "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
     "<a href=\"https://logeion.uchicago.edu/nullus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nullus</a> · <a href=\"https://logeion.uchicago.edu/plaustrum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: plaustrum</a> · <a href=\"https://logeion.uchicago.edu/percello\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: percello</a>",
-    "Quotations from the Latinitas loci collections (loci-plautus), checked against the editions named there."
+    "Quotations from the Latinitas loci collections (loci-plautus), checked against the editions named there.",
+    "Plautus, <em>Aulularia</em> 242; <em>Bacchides</em> 1116c."
   ],
   "review": {
     "status": "draft",
@@ -93,6 +106,11 @@
       "latin": "ubi illic est scelus, quī mē perdidit?",
       "english": "where is that scoundrel who has done me in?",
       "source": "Ter. And. 3.5.1 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "Ei mihi, disperiī.",
+      "english": "Oh no, I’m ruined.",
+      "source": "Plaut. Bacch. 1116c"
     }
   ]
 }

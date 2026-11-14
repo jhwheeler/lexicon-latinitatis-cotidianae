@@ -7,7 +7,11 @@
     "scamp",
     "heel (slang)",
     "worthless fellow",
-    "worthless (of a person)"
+    "worthless (of a person)",
+    "scoundrel",
+    "villain",
+    "gallows-bird",
+    "rogue"
   ],
   "domain": "sermo",
   "terms": [
@@ -35,6 +39,51 @@
         "Traupman 99",
         "Traupman 322"
       ]
+    },
+    {
+      "latin": "furcifer, furciferī m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "scoundrel, gallows-bird (literally one who carries the furca, the fork tied on a slave’s neck as a punishment)",
+      "register": "vōx convīciī: Plaut., Ter.; Cic., Hor.",
+      "evidence": [
+        "Plaut. Asin. 677b: <span lang=\"la\">Furcifer, etiam mē dēlūsistī?</span>",
+        "Cic. Vat. 15: <span lang=\"la\">id tū tibi, furcifer, sūmēs</span> (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "verberō, verberōnis m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "scoundrel (one who deserves a flogging)",
+      "register": "vōx convīciī: Plaut., Ter.; Cic. in epistulīs",
+      "evidence": [
+        "Plaut. Amph. 284: <span lang=\"la\">Ain' vērō, verberō?</span>",
+        "Cic. Att. 14.6.1 (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "mastīgia, mastīgiae m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "scoundrel, whipping-post",
+      "register": "vōx cōmica: Plaut., Ter.",
+      "evidence": [
+        "Plaut. Cas. 361: <span lang=\"la\">adsūdāscis jam ex metū, mastīgia</span>",
+        "Ter. Ad. 781: <span lang=\"la\">nōn manum abstinēs, mastīgia?</span>"
+      ],
+      "comment": "Greek μαστιγίας, one who is always being whipped."
+    },
+    {
+      "latin": "carnifex (carnufex), carnificis m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "villain, scoundrel (literally hangman)",
+      "register": "vōx convīciī: Plaut., Ter.; Cic.",
+      "evidence": [
+        "Plaut. Amph. 518: <span lang=\"la\">Carnufex, nōn ego tē nōvī?</span>",
+        "Cic. Pis. 11 (Lewis &amp; Short)"
+      ]
     }
   ],
   "related": [
@@ -42,10 +91,11 @@
     "cheeky"
   ],
   "sources": [
-    "<a href=\"https://logeion.org/nequam\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nequam</a>",
+    "<a href=\"https://logeion.org/nequam\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nequam</a> · <a href=\"https://logeion.uchicago.edu/furcifer\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: furcifer</a> · <a href=\"https://logeion.uchicago.edu/verbero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: verbero</a> · <a href=\"https://logeion.uchicago.edu/mastigia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mastigia</a> · <a href=\"https://logeion.uchicago.edu/carnifex\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: carnifex</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 99, 322, 327.",
     "<a href=\"https://logeion.uchicago.edu/homo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: homo</a>",
-    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "Plautus, <em>Amphitruo</em> 284, 518; <em>Asinaria</em> 677b; <em>Casina</em> 361. Terence, <em>Adelphoe</em> 781."
   ],
   "review": {
     "status": "draft",
@@ -62,6 +112,16 @@
       "latin": "nēquissimus homō",
       "english": "a worthless fellow",
       "source": "Traupman 409"
+    },
+    {
+      "latin": "Ain' vērō, verberō? Deōs esse tuī similīs putās?",
+      "english": "What’s that, you scoundrel? Do you think the gods are like you?",
+      "source": "Plaut. Amph. 284"
+    },
+    {
+      "latin": "Carnufex, nōn ego tē nōvī? Abīn' ē cōnspectū meō?",
+      "english": "You villain, don’t I know you? Get out of my sight, will you?",
+      "source": "Plaut. Amph. 518"
     }
   ]
 }

@@ -60,13 +60,24 @@ npx playwright install chromium
 npm test
 ```
 
-The checks cover the front page and its contents, the category pages and the A–Z pages, the pyjama lookup, highlighting and Unicode normalization, inflected forms and close spellings, the search within a category and linkable searches, alias and source matches, literal input, the old single page's links, every page without scripts, the header's search and the `/` key, the footer's links, the theme and display options, the phone layout of every kind of page, and practice: a round, the deck's choices, the words looked up, a pasted list, export and import, and the clock game. They serve the pages over HTTP with Python's `http.server`, as the published site is served. CI also runs them in Chromium. For an existing browser installation, set `LEXICON_CHROMIUM_EXECUTABLE`; `LEXICON_CHROMIUM_ARGS` optionally supplies a JSON array of launch arguments.
+The checks cover the front page and its contents, the category pages and the A–Z pages, the pyjama lookup, highlighting and Unicode normalization, inflected forms and close spellings, the search within a category and linkable searches, alias and source matches, literal input, the old single page's links, every page without scripts, the header's search and the `/` key, the footer's links, the theme and display options, the phone layout of every kind of page, and practice: a round in its layer, the back of a card, the step back, Latin and English, the deck's choices, the words looked up, a pasted list, export and import, the phone layout of the lobby and of the round, and the clock game. They serve the pages over HTTP with Python's `http.server`, as the published site is served. CI also runs them in Chromium. For an existing browser installation, set `LEXICON_CHROMIUM_EXECUTABLE`; `LEXICON_CHROMIUM_ARGS` optionally supplies a JSON array of launch arguments.
 
 ## Practice
 
 Two pages for practising, linked from the front page and from every footer (Jack, 13 November 2026). The header gains no link.
 
-**Vocabulary** (`practice.html`, from `src/practice.html` and `src/practice.js`). An English cue; say the Latin aloud; show it; mark "Got it" or "Again". Spaced repetition in seven boxes, with waits of 10 minutes, 1 hour, 1, 3, 7, 16 and 35 days, as in the drill of the editor's own hub: "Got it" moves a card up a box (a new card that is right first time starts in the third), "Again" sends it back to the first. A round has 12 cards, the due ones first, then new ones in no order, one card for each Latin headword. The back of a card gives the Latin, its gloss, one example and a link to the entry. Keys: Space or Enter shows, then 1 is Again and 2 is Got it.
+**Vocabulary** (`practice.html`, from `src/practice.html` and `src/practice.js`). An English cue; say the Latin aloud; show it; mark "Got it" or "Again". Spaced repetition in seven boxes, with waits of 10 minutes, 1 hour, 1, 3, 7, 16 and 35 days, as in the drill of the editor's own hub: "Got it" moves a card up a box (a new card that is right first time starts in the third), "Again" sends it back to the first. A round has 12 cards, the due ones first, then new ones in no order, one card for each Latin headword.
+
+Since 14 November 2026 it is a game of its own (Jack: "it doesn't feel like a standalone game… you could X out of it… actual cards, rounded cornered cards"):
+
+- **The page is the lobby**: the deck with its counts, a meter (known, learning, new), a Start button, the language, the backup and the link to the clock.
+- **A round is played in a layer over the whole page** (a `<dialog>`; no header, search or footer shows). Its top bar has the way out (X, or Escape), the deck's name, a step back, and the position ("4 / 12") over a line that fills as the round goes. The card is a real card on a tinted ground; a tap on it shows the answer. The buttons are at the foot of the screen: *Respōnsum ostende*, then *Iterum* (outlined, red, a turning arrow) and *Teneō* (filled, a tick), so that they can be told apart without reading them. Keys: Space or Enter shows, 1 is Again, 2 is Got it, z or Backspace steps back.
+- **The back of a card** gives the Latin; under it where the answer comes from (its period and its first one or two citations: "classical · Cic. Tusc. 5.97"; a word of our own says "our formation", *locūtiō nostra*, beside its asterisk); the record's other words that are not to be avoided ("Also: …", up to three); the gloss; one example; and a link to the entry.
+- **An example is shown only if it contains the answer.** A record's examples illustrate all its terms, and a card used to show a sentence without its word. The builder keeps an example only when one of its words is a form of the answer's head, by the stems the search is built on (`answer_test`); for a term of several words each of them must be there, in any order and any form. No such example, none is shown.
+- **One step back** (*Redī*): the card just marked comes back with its answer shown and its record exactly as it was before the mark (a new card has none again), to be marked again. It is offered until the next mark, also from the end of the round.
+- **The end of a round** gives the tally, what is waiting or when the next card comes back, and the words that were marked Again.
+- **The round is kept for the visit** (`sessionStorage`): a reader who opens a card's entry and comes back finds the same card with its answer shown, and a round left with X is taken up again from the lobby until the deck is changed.
+- **In Latin by default**, with a switch *Latīnē / English* (kept on the device). The Latin of the round is the hub drill's own; the rest was composed for the page and is marked in `src/practice.js` as awaiting the editor's review. The page's `lang` follows the choice; the English cue, the glosses and the authors' names are marked English, and the Latin Latin, so the display options (macrons, j, v) change the Latin only.
 
 Vocabulary is the primary thing and phrases are secondary, so the deck starts as the words. The reader narrows it under "Deck", by groups of choices:
 
@@ -86,6 +97,8 @@ Everything the reader does stays on the device, in the browser's storage, and no
 | --- | --- |
 | `lexicon-practice` | progress: for each card its box, when it is due and when it was marked |
 | `lexicon-practice-deck` | the choices under "Deck" |
+| `lexicon-practice-lang` | the language of the practice page, when it is English |
+| `lexicon-practice-round` | the round in progress (in `sessionStorage`: it lasts for the visit) |
 | `lexicon-seen` | the entries opened, with the time (the 500 most recent); written by `src/page.js` on every entry page |
 | `lexicon-lists` | the reader's own lists, as they were pasted |
 | `hcu-…` | the clock game's language, drill, options and score |
@@ -99,6 +112,8 @@ No list is shipped with the site. A word set that is private to the editor, such
 Both pages are saved by the service worker with the rest, so they work offline.
 
 ## On a phone: the app and offline use
+
+Opened from the home screen, a scrolled page showed through under the iPhone's clock and battery. Every page now has a strip of paper as tall as the status bar (`env(safe-area-inset-top)`) fixed at the top of the screen, and what sticks to the top sticks under it (14 November 2026). It could not be tried on a phone here; in a browser without such a bar the strip has no height.
 
 The lexicon installs from the browser, with no app store. In Safari on an iPhone: Share, then Add to Home Screen. It then opens from its icon in a window of its own, not in a browser tab (`manifest.webmanifest`, the icons in `src/icons/`, and the tags `app_head` adds to every page).
 

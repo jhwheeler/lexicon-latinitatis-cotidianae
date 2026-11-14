@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
 <title>Practice · Lexicon Latīnitātis Cotīdiānae</title>
-<meta name="description" content="Practise the vocabulary of the Lexicon Latīnitātis Cotīdiānae: an English cue, the Latin to say, and spaced repetition kept on your own device.">
+<meta name="description" content="Practise the vocabulary of the Lexicon Latīnitātis Cotīdiānae: an English cue, the Latin to say, and spaced repetition kept on your own device. In Latin or English.">
 <link rel="canonical" href="https://jhwheeler.github.io/lexicon-latinitatis-cotidianae/practice.html">
 {{theme}}
 {{app}}
@@ -19,72 +19,93 @@
 <body class="subpage">
 {{header}}
 <main class="wrap page-main practice">
-<header class="category-heading"><h1>Practice</h1>
-<p class="eyebrow">English to Latin: say the Latin aloud, then check it</p></header>
-<p class="noscript-note">Practice needs JavaScript. Without it, browse <a href="words.html">the English words</a> or <a href="index.html">the contents</a>.</p>
+<header class="category-heading plobby-head"><div><h1 id="p-title" data-t="title">Practice</h1>
+<p class="eyebrow" data-t="sub">English to Latin: say it aloud, then check.</p></div>
+<div class="filter p-lang" role="group" id="p-lang" data-t-label="langLabel" aria-label="Language" hidden><button type="button" data-lang="la" lang="la" aria-pressed="false">Latīnē</button><button type="button" data-lang="en" lang="en" aria-pressed="true">English</button></div></header>
+<p class="noscript-note" lang="en">Practice needs JavaScript. Without it, browse <a href="words.html">the English words</a> or <a href="index.html">the contents</a>.</p>
 <div id="practice" hidden>
 
 <details class="deck" id="p-deck">
-<summary><span class="deck-label">Deck</span><span class="deck-now" id="p-now"></span><span class="deck-count" id="p-count" role="status" aria-live="polite"></span></summary>
+<summary><span class="deck-label" data-t="deck">Deck</span><span class="deck-now" id="p-now"></span><span class="deck-count" id="p-count" role="status" aria-live="polite"></span></summary>
 <div class="deck-body">
-<div class="pgroup-line"><span class="pg-name" id="p-kind-h">Kind</span><div class="filter" role="group" aria-labelledby="p-kind-h" id="p-kind"></div></div>
-<div class="pgroup-line" id="p-part-line"><span class="pg-name" id="p-part-h">Part of speech</span><div class="filter" role="group" aria-labelledby="p-part-h" id="p-part"></div></div>
-<details class="pgroup"><summary><span class="pg-name">Category</span><span class="pg-now" id="p-cat-now"></span></summary>
-<div class="ptoggles pcats" role="group" aria-label="Category" id="p-cat"></div></details>
-<details class="pgroup"><summary><span class="pg-name">Source</span><span class="pg-now" id="p-src-now"></span></summary>
-<div class="ptoggles psrc" role="group" aria-label="Source" id="p-src"></div>
-<details class="pworks"><summary>Single works</summary><div id="p-works"></div></details></details>
-<details class="pgroup" id="p-mine-group"><summary><span class="pg-name">Mine</span><span class="pg-now" id="p-mine-now"></span></summary>
-<div class="ptoggles pmine" role="group" aria-label="Mine" id="p-mine"></div>
+<div class="pgroup-line"><span class="pg-name" id="p-kind-h" data-t="kind">Kind</span><div class="filter" role="group" aria-labelledby="p-kind-h" id="p-kind"></div></div>
+<div class="pgroup-line" id="p-part-line"><span class="pg-name" id="p-part-h" data-t="part">Part of speech</span><div class="filter" role="group" aria-labelledby="p-part-h" id="p-part"></div></div>
+<details class="pgroup"><summary><span class="pg-name" id="p-cat-h" data-t="cat">Category</span><span class="pg-now" id="p-cat-now"></span></summary>
+<div class="ptoggles pcats" role="group" aria-labelledby="p-cat-h" id="p-cat"></div></details>
+<details class="pgroup"><summary><span class="pg-name" id="p-src-h" data-t="src">Source</span><span class="pg-now" id="p-src-now"></span></summary>
+<div class="ptoggles psrc" role="group" aria-labelledby="p-src-h" id="p-src"></div>
+<details class="pworks"><summary data-t="works">Single works</summary><div id="p-works"></div></details></details>
+<details class="pgroup" id="p-mine-group"><summary><span class="pg-name" id="p-mine-h" data-t="mine">Mine</span><span class="pg-now" id="p-mine-now"></span></summary>
+<div class="ptoggles pmine" role="group" aria-labelledby="p-mine-h" id="p-mine"></div>
 <form class="plist-form" id="p-list-form" autocomplete="off">
-<h3>Add a list of your own</h3>
-<p class="p-help">One item per line, or separated by commas: an English headword, a Latin word (macrons optional) or the last part of an entry’s address (<code>brush-teeth</code>). The list stays on this device.</p>
-<label for="p-list-name">Name</label>
-<input id="p-list-name" type="text" maxlength="60" required>
-<label for="p-list-text">Words</label>
-<textarea id="p-list-text" rows="5" spellcheck="false" autocapitalize="off" required></textarea>
-<button type="submit" class="p-button">Add the list</button>
+<h3 data-t="addList">Add a list</h3>
+<p class="p-help" id="p-list-help"></p>
+<label for="p-list-name" data-t="name">Name</label>
+<input id="p-list-name" type="text" maxlength="60" required lang="">
+<label for="p-list-text" data-t="items">Words</label>
+<textarea id="p-list-text" rows="5" spellcheck="false" autocapitalize="off" required lang=""></textarea>
+<button type="submit" class="p-button" data-t="addList">Add a list</button>
 <p class="p-status" id="p-list-status" role="status" aria-live="polite"></p>
 </form></details>
-<p class="p-help deck-help">Within a group the choices add up (Cicero or Vergil); between groups they narrow (Cicero, within the kitchen). A group with nothing chosen does not narrow.</p>
-<button type="button" class="p-button" id="p-clear">Clear the choices</button>
+<p class="p-help deck-help" data-t="deckHelp"></p>
+<button type="button" class="p-button" id="p-clear" data-t="clear">Clear the choices</button>
 </div>
 </details>
-
-<section class="pcard" id="p-card" aria-label="Card">
-<p class="p-pos" id="p-pos"></p>
-<p class="p-cue" id="p-cue" aria-live="polite"></p>
-<div class="p-back" id="p-back" hidden>
-<p class="lemma p-la" lang="la" id="p-la"></p>
-<p class="p-cite" id="p-cite"></p>
-<p class="def" id="p-gloss"></p>
-<div class="p-ex" id="p-ex"><p class="la" lang="la" id="p-ex-la"></p><p class="en" id="p-ex-en"></p></div>
-<p class="p-entry"><a id="p-entry" href="index.html">Open the entry</a></p>
-</div>
-<div class="p-actions" id="p-front"><button type="button" id="p-show">Show the Latin</button></div>
-<div class="p-actions" id="p-marks" hidden><button type="button" id="p-again">Again</button><button type="button" id="p-got">Got it</button></div>
-<div class="p-actions" id="p-end" hidden><button type="button" id="p-next">Another round</button><button type="button" id="p-early">Practise early</button></div>
-<p class="p-keys" id="p-keys">Space or Enter shows the Latin; then 1 for Again, 2 for Got it.</p>
-</section>
 
 <div class="p-meter" id="p-meter"><div class="p-bar" aria-hidden="true"><span id="p-bar-known"></span><span id="p-bar-learning"></span></div>
-<p id="p-meter-text"></p><p class="p-saved" id="p-saved" hidden>Progress cannot be saved in this browser: it will last only until the page is closed.</p></div>
+<p id="p-meter-text"></p></div>
 
-<details class="pgroup backup" id="p-backup"><summary><span class="pg-name">Backup</span><span class="pg-now">export or import your progress</span></summary>
-<p class="p-help">Your progress and your lists are kept on this device only. Export them as text to keep, or to move to another device; import puts them back, and for each card the later answer wins.</p>
-<button type="button" class="p-button" id="p-export">Export progress</button>
-<div id="p-export-box" hidden><label for="p-export-text">Your progress</label>
-<textarea id="p-export-text" rows="5" readonly spellcheck="false"></textarea>
-<button type="button" class="p-button" id="p-copy">Copy</button></div>
-<label for="p-import-text">Import progress: paste the exported text here</label>
-<textarea id="p-import-text" rows="5" spellcheck="false" autocapitalize="off" autocomplete="off"></textarea>
-<button type="button" class="p-button" id="p-import">Import progress</button>
+<div class="p-go">
+<p class="p-state" id="p-state" role="status"></p>
+<button type="button" class="pbtn pbtn-fill" id="p-start">Start</button>
+<p class="p-saved" id="p-saved"></p>
+</div>
+
+<details class="pgroup backup" id="p-backup"><summary><span class="pg-name" data-t="backup">Backup</span><span class="pg-now" data-t="backupHint"></span></summary>
+<p class="p-help" data-t="backupHelp"></p>
+<button type="button" class="p-button" id="p-export" data-t="export">Export progress</button>
+<div id="p-export-box" hidden><label for="p-export-text" data-t="exportLabel">Your progress</label>
+<textarea id="p-export-text" rows="5" readonly spellcheck="false" lang=""></textarea>
+<button type="button" class="p-button" id="p-copy" data-t="copy">Copy</button></div>
+<label for="p-import-text" data-t="importLabel">Paste the exported text here</label>
+<textarea id="p-import-text" rows="5" spellcheck="false" autocapitalize="off" autocomplete="off" lang=""></textarea>
+<button type="button" class="p-button" id="p-import" data-t="import">Import progress</button>
 <p class="p-status" id="p-import-status" role="status" aria-live="polite"></p>
 </details>
-<p class="p-more">Another game: <a href="hora.html">the clock, <span lang="la">Hōra cum ūnciā</span></a></p>
+<p class="p-more"><span data-t="more">Another game:</span> <a href="hora.html"><span data-t="clock">the clock, </span><span lang="la">Hōra cum ūnciā</span></a></p>
 
 </div>
 </main>
 {{footer}}
+<dialog class="pgame" id="p-game" aria-labelledby="p-title">
+<div class="pgame-top">
+<button type="button" class="pgame-icon" id="g-close" data-t-label="close" aria-label="Close"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
+<p class="pgame-deck" id="g-deck"></p>
+<button type="button" class="pgame-undo" id="g-undo" disabled><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M9 7L4.5 11.5 9 16M5 11.5h9a5 5 0 0 1 0 10h-3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-t="undo">Undo</span></button>
+<p class="pgame-pos" id="g-pos"></p>
+</div>
+<div class="pgame-bar" aria-hidden="true"><span id="g-bar"></span></div>
+<div class="pgame-stage" id="g-stage">
+<article class="pgame-card" id="g-card" data-t-label="card" aria-label="Card">
+<p class="pgame-status" id="g-status"></p>
+<p class="pgame-cue" id="g-cue" lang="en" aria-live="polite"></p>
+<div class="pgame-back" id="g-back" hidden>
+<p class="pgame-la" lang="la" id="g-la"></p>
+<p class="pgame-origin" id="g-origin"></p>
+<p class="pgame-also" id="g-also"></p>
+<p class="pgame-gloss" id="g-gloss" lang="en"></p>
+<div class="pgame-ex" id="g-ex"><p class="la" lang="la" id="g-ex-la"></p><p class="en" id="g-ex-en"></p></div>
+<p class="pgame-entry"><a id="g-entry" href="index.html" data-t="entry">Open the entry</a></p>
+</div>
+<p class="pgame-end" id="g-end" hidden></p>
+</article>
+</div>
+<div class="pgame-actions">
+<div class="pgame-row" id="g-front"><button type="button" class="pbtn pbtn-fill" id="g-show" data-t="show">Show the Latin</button></div>
+<div class="pgame-row" id="g-marks" hidden><button type="button" class="pbtn pbtn-again" id="g-again"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4.5 12a7.5 7.5 0 1 0 2.4-5.5M4 4.5v3.2h3.2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-t="again">Again</span></button><button type="button" class="pbtn pbtn-got" id="g-got"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-t="got">Got it</span></button></div>
+<div class="pgame-row" id="g-done" hidden><button type="button" class="pbtn" id="g-exit" data-t="close">Close</button><button type="button" class="pbtn pbtn-fill" id="g-next" data-t="next">Another round</button><button type="button" class="pbtn pbtn-fill" id="g-early" data-t="early">Practise early</button></div>
+<p class="pgame-keys" id="g-keys" data-t="keys"></p>
+</div>
+</dialog>
 </body>
 </html>

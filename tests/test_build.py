@@ -522,7 +522,6 @@ class BuildTests(unittest.TestCase):
         self.assertEqual((pot['e'], pot['p'], pot['l'], pot['k']), ('cooking pot', 'noun', 'caccabus (cacabus), caccabī m.', 'culina'))
         self.assertNotIn('t', pot)                         # a word
         self.assertNotIn('g', pot)                         # no gloss beyond the headword
-        self.assertLessEqual(len(pot['q']), 2)
         self.assertEqual(cards['perhaps']['g'], 'maybe, perhaps')
         self.assertEqual(cards['sheet-of-paper']['e'], f'{sense["english"]} ({sense["sense"]})')
         self.assertEqual(cards['soap']['x'], self.record('soap')['also_under'])
@@ -532,7 +531,28 @@ class BuildTests(unittest.TestCase):
                           ('who-will-guard-the-guards', 's')):
             with self.subTest(key=key):
                 self.assertEqual(cards[key].get('t'), kind)
-        self.assertEqual(cards['a-great-man-can-come-from-a-hovel']['c'], 'Sen. Ep. 66.3')
+        # Where the answer comes from: its period (none for classical) and the first places it is cited from.
+        self.assertEqual(data['periods'], list(builder.PERIODS))
+        hovel = cards['a-great-man-can-come-from-a-hovel']
+        self.assertEqual((hovel.get('r'), hovel['v']), (None, ['Sen. Ep. 66.3']))
+        train = cards['train']
+        self.assertEqual((data['periods'][train['r']], train['v']), ('modern', ['M-O s.v. train', 'Traupman 211, 219, 397']))
+        pyjamas = cards['pyjamas']
+        self.assertEqual(data['periods'][pyjamas['r']], 'ours')
+        self.assertNotIn('v', pyjamas)                     # our own word: nothing to cite
+        # The record's other words, heads only, those to avoid left out, three at most.
+        record = self.record('perhaps')
+        others = [builder.term_head(t['latin']) for t in builder.ordered_terms(record)[1:] if t['status'] != 'avoid']
+        self.assertEqual(cards['perhaps']['a'], others[:3])
+        self.assertTrue(all(len(card.get('a', [])) <= 3 for card in data['cards']))
+        self.assertNotIn('a', cards['bone'])
+        # An example is on a card only if it contains the card's answer, in any of its forms.
+        self.assertEqual([example[0] for example in cards['perhaps']['q']], ['Fortasse.', 'Fortasse pluet; paenulam indue.'])
+        self.assertNotIn('q', cards['concern'])            # cūra: its record's examples are of its other words
+        self.assertNotIn('q', cards['pile'])               # cumulus: "acervus terrae" is not it
+        self.assertEqual([example[0] for example in cards['debug']['q']], ['mendum ēmendāre'])
+        self.assertRegex(cards['pyjamas']['q'][0][0], 'veste nocturnā')
+        self.assertTrue(all(len(card.get('q', [])) <= 2 for card in data['cards']))
         # Sources: the author, and the work under the author; only those with enough cards are offered.
         names = [source['id'] for source in data['sources']]
         for key in ('cicero', 'vergil', 'vergil-aeneid', 'plautus', 'traupman', 'pliny-elder', 'pliny-younger'):
@@ -544,8 +564,8 @@ class BuildTests(unittest.TestCase):
         self.assertEqual(counted, data['sources'][names.index('vergil')]['n'])
         tags = {names[n] for n in cards['perhaps']['s']}
         self.assertLessEqual({'vergil', 'vergil-aeneid', 'cicero', 'traupman'}, tags)
-        quoted = next(example for example in cards['perhaps']['q'] if example[2].startswith('Verg. A.'))
-        self.assertEqual({names[n] for n in quoted[3]}, {'vergil', 'vergil-aeneid'})
+        quoted = next(example for example in cards['double-verb']['q'] if example[2].startswith('Verg. E.'))
+        self.assertEqual({names[n] for n in quoted[3]}, {'vergil', 'vergil-eclogues'})
         self.assertEqual([category[0] for category in data['categories']], [key for key in self.read('data/catalog.json')['filters'] if key != 'all'])
         # The pages: reached from the footer of every page and from the front page, never from the header.
         self.assertIn('<a href="practice.html"><span class="toc-la">Vocabulary</span>', outputs['index.html'])
@@ -588,6 +608,43 @@ class BuildTests(unittest.TestCase):
                 self.assertEqual(builder.source_tags(citation), tags)
         self.assertEqual(builder.citation_label('Suet. Vesp. 16 (Lewis &amp; Short s.v. <span lang="la">vulpēs</span>): <span lang="la">vulpem pilum mūtāre</span>'),
                          'Suet. Vesp. 16')
+
+    def test_an_example_belongs_on_a_card_only_if_it_contains_the_answer(self):
+        index = builder.form_index([
+            {'terms': [{'latin': 'dēns, dentis m.'}, {'latin': 'genū, genūs n.'}, {'latin': 'flectō, flectere, flexī, flexum'},
+                       {'latin': 'sum, esse, fuī'}]}])
+        has = lambda latin, example: builder.answer_test({'latin': latin}, index)(builder.example_words(example))
+        # A word: any of its forms, from the stems the search is built on; i and j, u and v alike.
+        self.assertTrue(has('cūra, cūrae f.', 'Mihi cūrae est.'))
+        self.assertFalse(has('cūra, cūrae f.', 'nihil labōrō, nisi ut salvus sīs'))
+        self.assertFalse(has('ēmendō, ēmendāre, ēmendāvī, ēmendātum', 'corrige, sōdēs, hoc'))
+        self.assertTrue(has('ēmendō, ēmendāre, ēmendāvī, ēmendātum', 'lēgibus ēmendēs'))
+        self.assertFalse(has('cumulus, cumulī m.', 'acervus terrae'))
+        self.assertTrue(has('dīcō, dīcere, dīxī, dictum', 'Quid dīxistī?'))
+        self.assertTrue(has('juvenis, juvenis', 'Iuuenēs vēnērunt.'))
+        self.assertTrue(has('piper, piperis n.', 'sale pipereque'))          # the enclitic comes off
+        # A word that does not inflect: the word itself, as a word.
+        self.assertTrue(has('fortasse', 'Fortasse pluet.'))
+        self.assertFalse(has('fortasse', 'forsan et haec ōlim meminisse juvābit'))
+        self.assertFalse(has('jam', 'Jamdūdum vēnit.'))
+        # Several words: each of them, in any order and any form.
+        self.assertTrue(has('dentēs pūrgāre', 'faciēs lavanda erat, dentēs pūrgandī'))
+        self.assertTrue(has('dentēs pūrgāre', 'Pūrgā dentem!'))
+        self.assertFalse(has('dentēs pūrgāre', 'Dentēs pēnicillō fricā.'))
+        self.assertTrue(has('genua flectere', 'Flexīs genibus ōrāvit.'))   # each word by the entry it is a form of
+        self.assertFalse(has('genua flectere', 'genua dolent'))
+        self.assertTrue(has('vestis nocturna', 'veste nocturnā etiamtum indūtus'))
+        self.assertTrue(has('chartula cursuālis', 'Chartulam cursuālem aviae mittāmus.'))
+        self.assertFalse(has('rēs pūblica, reī pūblicae f.', 'rēs pāce bellōque gestās'))
+        self.assertTrue(has('in angustiīs esse (versārī)', 'In angustiīs sumus.'))
+        self.assertFalse(has('in angustiīs esse (versārī)', 'Angustiae sunt.'))  # a preposition is wanted as it stands
+        # The origin line: the period, and one or two citations without what they quote.
+        self.assertEqual(builder.origin({'latin': 'x', 'period': 'classical', 'evidence': [
+            'Cic. Tusc. 5.97: <span lang="la">cibī condīmentum esse famem</span> (Lewis &amp; Short)', 'Traupman 73', 'Traupman 73', 'M-O s.v. sauce']}),
+            (0, ['Cic. Tusc. 5.97', 'Traupman 73']))
+        self.assertEqual(builder.origin({'latin': 'x', 'period': 'ours'}), (list(builder.PERIODS).index('ours'), []))
+        self.assertEqual(builder.origin({'latin': 'x', 'period': 'modern', 'evidence': ['M-O s.v. lighthouse, citing Plin. NH 36.83 and Suet.']})[1],
+                         ['M-O s.v. lighthouse'])
 
     def test_a_phrase_is_a_saying_or_an_everyday_phrase(self):
         def kind(english, latin, evidence, pos='phrase'):

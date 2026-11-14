@@ -68,6 +68,20 @@
         "Traupman 111, 406"
       ],
       "comment": "Literally “what is there, that …”. Traupman gives the indicative; Cicero has the subjunctive when the question implies there is no reason."
+    },
+    {
+      "latin": "quāpropter",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "why? what for?; as a relative, and that is why",
+      "evidence": [
+        "Plaut. Asin. 630b: <span lang=\"la\">Quāpropter, quaesō?</span>",
+        "Plaut. Most. 208b: <span lang=\"la\">Quāpropter?</span>"
+      ],
+      "comment": "As a question it is the comic writers’ word (Lewis &amp; Short: ante- and post-classical); as a relative, “for which reason”, it is Cicero’s too.",
+      "notes": [
+        "long-a"
+      ]
     }
   ],
   "phrases": [
@@ -105,8 +119,21 @@
       "latin": "cūr, malum, …?",
       "english": "why the devil …?",
       "source": "Traupman 407"
+    },
+    {
+      "latin": "Quāpropter, quaesō? — Quia ego hanc amō et haec mē amat.",
+      "english": "Why, may I ask? — Because I love her and she loves me.",
+      "source": "Plaut. Asin. 630b–631"
     }
   ],
+  "notes": {
+    "long-a": {
+      "form": "<span lang=\"la\">quāpropter</span>",
+      "claim": "long a",
+      "against": "Lewis &amp; Short’s headword <span lang=\"la\">quă-propter</span>",
+      "html": "It is the ablative <span lang=\"la\">quā</span> with <span lang=\"la\">propter</span> after it, as the tmesis shows: <span lang=\"la\">quā mē propter addūxī</span> (Ter. Hec. 3.3.4, as Lewis &amp; Short cites it). Lewis &amp; Short writes <span lang=\"la\">quā-rē</span> for the same ablative, and in its own article prints <span lang=\"la\">Quāpropter?</span> where it quotes Plaut. Most. 3.2.140."
+    }
+  },
   "related": [
     "where-are-we-going",
     "due-to",
@@ -114,11 +141,12 @@
     "what"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/cur\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cur</a> · <a href=\"https://logeion.uchicago.edu/quare\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quare</a> · <a href=\"https://logeion.uchicago.edu/ob\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ob (quam ob rem)</a> · <a href=\"https://logeion.uchicago.edu/quis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quis</a>",
+    "<a href=\"https://logeion.uchicago.edu/cur\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cur</a> · <a href=\"https://logeion.uchicago.edu/quare\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quare</a> · <a href=\"https://logeion.uchicago.edu/ob\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ob (quam ob rem)</a> · <a href=\"https://logeion.uchicago.edu/quis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quis</a> · <a href=\"https://logeion.uchicago.edu/quapropter\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quapropter</a>",
     "Quotations from the Latinitas loci collections (loci-terentius, loci-cicero-epistulae, loci-horatius, loci-martialis, loci-catullus), checked against the editions named there.",
     "The comment on <span lang=\"la\">cūr</span> comes from the grouped card.",
     "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 111."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 111.",
+    "Plautus, <em>Asinaria</em> 630b–631; <em>Mostellaria</em> 208b."
   ],
   "review": {
     "status": "draft",

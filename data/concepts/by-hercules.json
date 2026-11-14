@@ -47,13 +47,12 @@
       "comment": "The form of Cicero’s letters, where <span lang=\"la\">hercle</span> is rare."
     },
     {
-      "latin": "edepol, pol",
+      "latin": "edepol",
       "status": "alternative",
       "period": "classical",
       "gloss": "by Pollux! indeed",
-      "register": "vōx cōmica: Plaut., Ter.; <span lang=\"la\">pol</span> also Hor.",
+      "register": "vōx cōmica: Plaut., Ter.",
       "evidence": [
-        "Ter. Ph. 1053: <span lang=\"la\">Pol vērō vocō.</span>",
         "Plaut. Most. 376: <span lang=\"la\">Quaesō edepol, exsurge; pater advenit.</span>",
         "Traupman 98: <span lang=\"la\">eu edepol</span>, <span lang=\"la\">eu hercle</span>, geez",
         "Traupman 43",
@@ -65,14 +64,13 @@
       ]
     },
     {
-      "latin": "ēcastor, mēcastor",
+      "latin": "ēcastor",
       "status": "alternative",
       "period": "classical",
       "gloss": "by Castor! (a woman’s oath)",
       "register": "vōx cōmica: Plaut., Ter.",
       "evidence": [
-        "Plaut. Amph. 508: <span lang=\"la\">Ēcastor tē experior quantī faciās uxōrem tuam.</span>",
-        "Plaut. Cas. 171: <span lang=\"la\">Salvē mēcastor.</span>"
+        "Plaut. Amph. 508: <span lang=\"la\">Ēcastor tē experior quantī faciās uxōrem tuam.</span>"
       ],
       "comment": "Mostly women’s speech.",
       "notes": [
@@ -91,6 +89,36 @@
         "Traupman 100: honest to god"
       ],
       "comment": "Lewis &amp; Short (s.v. <span lang=\"la\">Fidius</span>): an oath by the god of good faith, “as true as heaven!”; also written as one word."
+    },
+    {
+      "latin": "pol",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "by Pollux! indeed, truly",
+      "register": "vōx cōmica: Plaut., Ter.; also Hor.",
+      "evidence": [
+        "Ter. Ph. 1053: <span lang=\"la\">Pol vērō vocō.</span>",
+        "Plaut. Asin. 836b: <span lang=\"la\">Pol ego utrumque faciō, ut aequom est fīlium.</span>"
+      ],
+      "comment": "The short form of <span lang=\"la\">edepol</span>, a little more in women’s mouths than men’s.",
+      "notes": [
+        "gellius"
+      ]
+    },
+    {
+      "latin": "mēcastor",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "by Castor! upon my word (a woman’s oath)",
+      "register": "vōx cōmica: Plaut., Ter.",
+      "evidence": [
+        "Plaut. Cas. 171: <span lang=\"la\">Salvē mēcastor.</span>",
+        "Plaut. Aul. 172: <span lang=\"la\">Nōvī, hominem haud malum mēcastor.</span>"
+      ],
+      "comment": "The same oath as <span lang=\"la\">ēcastor</span>, with <span lang=\"la\">mē</span> before it as in <span lang=\"la\">mehercle</span> (Lewis &amp; Short s.v. <span lang=\"la\">Castor</span>).",
+      "notes": [
+        "gellius"
+      ]
     }
   ],
   "phrases": [
@@ -138,6 +166,11 @@
       "latin": "Eu edepol! Eu hercle!",
       "english": "Geez!",
       "source": "Traupman 320"
+    },
+    {
+      "latin": "Nōstīn' hunc senem Eucliōnem ex proximō pauperculum? — Nōvī, hominem haud malum mēcastor.",
+      "english": "Do you know old Euclio here, the poor man next door? — I do; not a bad fellow, upon my word.",
+      "source": "Plaut. Aul. 171–172"
     }
   ],
   "notes": {
@@ -155,7 +188,8 @@
     "Plautus, Terence and Cicero’s letters checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (Plautus ed. Leo, with its line numbers; Terence ed. Parry, whose line numbers can run one off the OCT’s; lines taken from the loci collections are cited by the OCT’s; Cicero’s letters ed. Purser).",
     "Lines marked as in the Latinitas loci collections (loci-plautus, loci-terentius, loci-cicero-epistulae and others) are quoted from them.",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 43, 98, 100, 108, 320, 327.",
-    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "Plautus, <em>Asinaria</em> 836b; <em>Aulularia</em> 171–172; <em>Casina</em> 171. Terence, <em>Phormio</em> 1053."
   ],
   "review": {
     "status": "draft",

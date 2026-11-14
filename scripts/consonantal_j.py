@@ -67,6 +67,7 @@ KEEP = {
     'deicio': 'Lewis & Short headword in a citation label (L&S: dē-ĭcĭo, also dejicio)',
     'aio': 'Lewis & Short headword in a citation label (L&S: aio)',
     'io': 'Lewis & Short headword in a citation label (the interjection iō)',
+    'eia': 'Lewis & Short headword in a citation label (L&S: ēiă; the Latin itself is written eja)',
 }
 
 

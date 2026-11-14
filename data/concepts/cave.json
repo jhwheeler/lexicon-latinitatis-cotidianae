@@ -4,7 +4,9 @@
   "pos": "noun",
   "also": [
     "grotto",
-    "cavern"
+    "cavern",
+    "hollow",
+    "caves"
   ],
   "domain": "natura",
   "terms": [
@@ -39,18 +41,36 @@
         "Lewis &amp; Short: “a cave, cavern, grot, den”",
         "Traupman 288"
       ]
+    },
+    {
+      "latin": "caverna, cavernae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a hollow, a cavity, a cavern",
+      "evidence": [
+        "Lucr. 6.597: <span lang=\"la\">caverna terrae</span> (Lewis &amp; Short)",
+        "Cic. ND 2.25 (Lewis &amp; Short)",
+        "Ov. Met. 5.502: <span lang=\"la\">īmae</span> (Lewis &amp; Short)"
+      ],
+      "comment": "From <span lang=\"la\">cavus</span>, hollow."
     }
+  ],
+  "related": [
+    "lair",
+    "rock",
+    "mountain"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/spelunca\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: spelunca</a>",
     "<a href=\"https://logeion.uchicago.edu/antrum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: antrum</a>",
     "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 43.",
     "<a href=\"https://logeion.uchicago.edu/specus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: specus</a>",
+    "<a href=\"https://logeion.uchicago.edu/caverna\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: caverna</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 203–205, 288."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

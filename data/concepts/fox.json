@@ -2,6 +2,9 @@
   "id": "fox",
   "english": "fox",
   "pos": "noun",
+  "also": [
+    "foxes yelp"
+  ],
   "domain": "natura",
   "terms": [
     {
@@ -14,8 +17,18 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "Vulpēs ganniunt.",
+      "english": "Foxes yelp.",
+      "source": "Traupman 318"
+    }
+  ],
   "related": [
-    "deer"
+    "deer",
+    "lair",
+    "badger",
+    "wolf"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/vulpes\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vulpes</a>",
@@ -25,15 +38,5 @@
     "status": "draft",
     "date": "2026-11-09",
     "by": "Claude"
-  },
-  "phrases": [
-    {
-      "latin": "Vulpēs ganniunt.",
-      "english": "Foxes yelp.",
-      "source": "Traupman 318"
-    }
-  ],
-  "also": [
-    "foxes yelp"
-  ]
+  }
 }

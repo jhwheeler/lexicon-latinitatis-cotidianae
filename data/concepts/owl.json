@@ -2,6 +2,12 @@
   "id": "owl",
   "english": "owl",
   "pos": "noun",
+  "also": [
+    "night owl",
+    "screech owl",
+    "tawny owl",
+    "barn owl"
+  ],
   "domain": "natura",
   "terms": [
     {
@@ -11,28 +17,57 @@
       "evidence": [
         "Traupman 351"
       ]
+    },
+    {
+      "latin": "ulula, ululae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a screech owl, a hooting owl",
+      "evidence": [
+        "Varr. LL 5.75 (Lewis &amp; Short)",
+        "Plin. NH 10.34 (Lewis &amp; Short)",
+        "Verg. E. 8.55 (Lewis &amp; Short)"
+      ],
+      "comment": "Named from its cry, which was thought ill-omened."
+    },
+    {
+      "latin": "strix, strigis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a screech owl",
+      "evidence": [
+        "Ov. F. 6.133 (Lewis &amp; Short)",
+        "Plin. NH 11.232 (Lewis &amp; Short)",
+        "Tib. 1.5.52 (Lewis &amp; Short)"
+      ],
+      "comment": "In ancient belief a bird of the night that sucked the blood of small children (Lewis &amp; Short)."
     }
   ],
-  "related": [
-    "eagle-owl",
-    "hoot"
-  ],
-  "sources": [
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 351."
-  ],
-  "review": {
-    "status": "draft",
-    "date": "2026-11-12",
-    "by": "Claude"
-  },
   "phrases": [
     {
       "latin": "noctis avis",
       "english": "a night owl (a person who stays up late)",
       "source": "Traupman 351"
+    },
+    {
+      "latin": "certent et cycnīs ululae",
+      "english": "let owls vie with swans",
+      "source": "Verg. E. 8.55"
     }
   ],
-  "also": [
-    "night owl"
-  ]
+  "related": [
+    "eagle-owl",
+    "hoot",
+    "bird"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/ulula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ulula</a> · <a href=\"https://logeion.uchicago.edu/strix\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: strix</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 351.",
+    "Vergil, <em>Eclogae</em> 8.55."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-15",
+    "by": "Claude"
+  }
 }

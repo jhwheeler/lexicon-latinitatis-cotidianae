@@ -2,23 +2,52 @@
   "id": "willow",
   "english": "willow",
   "pos": "noun",
+  "also": [
+    "willows",
+    "osier bed",
+    "willow tree"
+  ],
   "domain": "natura",
   "terms": [
     {
       "latin": "salix, salicis f.",
       "status": "recommended",
       "period": "classical"
+    },
+    {
+      "latin": "salictum, salictī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a willow bed, a thicket of willows",
+      "evidence": [
+        "Cato Agr. 1.7 (Lewis &amp; Short)",
+        "Cic. Agr. 2.36 (Lewis &amp; Short)",
+        "Verg. E. 1.55 (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "flūminibus salicēs crassīsque palūdibus alnī nāscuntur",
+      "english": "willows grow by rivers and alders in thick marshes",
+      "source": "Verg. G. 2.110–111"
     }
   ],
   "related": [
-    "poplar"
+    "poplar",
+    "tree",
+    "withy",
+    "alder",
+    "bank-river"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/salix\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: salix</a>"
+    "<a href=\"https://logeion.uchicago.edu/salix\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: salix</a>",
+    "<a href=\"https://logeion.uchicago.edu/salictum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: salictum</a>",
+    "Vergil, <em>Georgica</em> 2.110–111."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

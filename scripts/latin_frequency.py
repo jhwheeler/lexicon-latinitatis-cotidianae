@@ -15,6 +15,7 @@ CC BY-NC-SA 4.0. Clone it outside this repository and never commit it:
     python3 scripts/latin_frequency.py --works               # writes notes/coverage/works.md
     python3 scripts/latin_frequency.py --work "Vergilius, Eclogae"            # its words the lexicon has
     python3 scripts/latin_frequency.py --work eclogae --tsv refs/works/vergilius-eclogae.tsv
+    python3 scripts/latin_frequency.py --work georgica --missing             # its words the lexicon lacks
 
 --corpus names the clone (default ../corpora/lasla beside this repository, or $LASLA).
 
@@ -331,6 +332,7 @@ def main():
     parser.add_argument('--works', action='store_true', help='write the table of works')
     parser.add_argument('--work', help='list a work\'s lemmas that the lexicon has, with their records')
     parser.add_argument('--tsv', type=Path, help='with --work: also write all its lemmas and counts here')
+    parser.add_argument('--missing', action='store_true', help='with --work: list the lemmas the lexicon lacks instead')
     args = parser.parse_args()
     corpus = Corpus(corpus_folder(args.corpus))
     if args.works:
@@ -344,7 +346,10 @@ def main():
             write_list(rows, args.tsv, 0, f'The lemmas of {", ".join(work)}, most frequent first.')
         found = covered_rows(rows)
         have = [(row, ids) for row, ids in found if ids]
-        text = '\n'.join(f'{row["lemma"]}\t{row["count"]}\t{" ".join(ids)}' for row, ids in have) + '\n'
+        if args.missing:
+            text = '\n'.join(f'{row["lemma"]}\t{row["count"]}\t{row["part"]}\t{row["forms"]}' for row, ids in found if not ids) + '\n'
+        else:
+            text = '\n'.join(f'{row["lemma"]}\t{row["count"]}\t{" ".join(ids)}' for row, ids in have) + '\n'
         if args.out:
             args.out.write_text(text, encoding='utf-8')
         else:

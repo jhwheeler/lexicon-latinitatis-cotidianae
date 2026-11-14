@@ -2,6 +2,11 @@
   "id": "juice",
   "english": "juice",
   "pos": "noun",
+  "also": [
+    "orange juice",
+    "fruit juice",
+    "sap"
+  ],
   "domain": "culina",
   "terms": [
     {
@@ -26,23 +31,6 @@
       "comment": "The same word as <span lang=\"la\">sūcus</span>, in a spelling common in manuscripts and later printed texts; the lexicon writes <span lang=\"la\">sūcus</span>."
     }
   ],
-  "related": [
-    "smoothie",
-    "squeeze-out",
-    "pulp"
-  ],
-  "sources": [
-    "<a href=\"https://alatius.com/ls/index.php?l=sucus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sucus</a>",
-    "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>",
-    "<a href=\"https://logeion.uchicago.edu/succus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: succus</a>",
-    "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 7.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 71, 72, 319, 335."
-  ],
-  "review": {
-    "status": "draft",
-    "date": "2026-11-12",
-    "by": "Claude"
-  },
   "phrases": [
     {
       "latin": "aurantiī sūcus",
@@ -53,10 +41,29 @@
       "latin": "sūcus pōmārius",
       "english": "fruit juice",
       "source": "Traupman 319"
+    },
+    {
+      "latin": "stirpēs ex terrā sūcum trahunt",
+      "english": "plants draw their sap from the earth",
+      "source": "Cic. ND 2.120 (Lewis &amp; Short)"
     }
   ],
-  "also": [
-    "orange juice",
-    "fruit juice"
-  ]
+  "related": [
+    "smoothie",
+    "squeeze-out",
+    "pulp",
+    "resin"
+  ],
+  "sources": [
+    "<a href=\"https://alatius.com/ls/index.php?l=sucus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sucus</a>",
+    "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>",
+    "<a href=\"https://logeion.uchicago.edu/succus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: succus</a>",
+    "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 7.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 71, 72, 319, 335."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-15",
+    "by": "Claude"
+  }
 }

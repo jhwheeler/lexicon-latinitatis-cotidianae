@@ -3,7 +3,9 @@
   "english": "fog",
   "pos": "noun",
   "also": [
-    "mist"
+    "mist",
+    "haze",
+    "murk"
   ],
   "domain": "natura",
   "terms": [
@@ -18,6 +20,18 @@
         "Traupman 136",
         "Traupman 317"
       ]
+    },
+    {
+      "latin": "cālīgō, cālīginis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "thick mist, murk, darkness",
+      "evidence": [
+        "Liv. 33.7.2: <span lang=\"la\">dēnsa cālīgō occaecāverat diem</span> (Lewis &amp; Short)",
+        "Lucr. 6.479 (Lewis &amp; Short)",
+        "Col. 3.2.4: <span lang=\"la\">pruīnae et cālīgō</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Mostly in the poets and in prose after Augustus (Lewis &amp; Short)."
     }
   ],
   "phrases": [
@@ -35,25 +49,33 @@
       "latin": "Mox sōl eam excitābit et abīre jubēbit",
       "english": "Soon the sun will wake it and send it away",
       "source": "Libellus II, <span lang=\"la\">Sintra: castellum et puteus</span>"
+    },
+    {
+      "latin": "dēnsa cālīgō occaecāverat diem",
+      "english": "a thick mist had blotted out the daylight",
+      "source": "Liv. 33.7.2 (Lewis &amp; Short)"
     }
   ],
   "related": [
     "snow",
-    "cloud"
+    "cloud",
+    "dew",
+    "rain-cloud"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/nebula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nebula</a>",
+    "<a href=\"https://logeion.uchicago.edu/caligo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: caligo</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 132–137, 317.",
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
     "The example sentence marked “composed” is ours."
   ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-15",
+    "by": "Claude"
+  },
   "replaces": [
     "entry-197",
     "libelli-197"
-  ],
-  "review": {
-    "status": "draft",
-    "date": "2026-11-09",
-    "by": "Claude"
-  }
+  ]
 }

@@ -3,7 +3,12 @@
   "english": "swamp",
   "pos": "noun",
   "also": [
-    "marsh"
+    "marsh",
+    "bog",
+    "fen",
+    "marshland",
+    "mire",
+    "marshes"
   ],
   "domain": "natura",
   "terms": [
@@ -15,15 +20,54 @@
       "evidence": [
         "Traupman 206"
       ]
+    },
+    {
+      "latin": "ūlīgō, ūlīginis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the wetness of the ground; boggy soil",
+      "evidence": [
+        "Varr. RR 2.2.7 (Lewis &amp; Short)",
+        "Verg. G. 2.184 (Lewis &amp; Short)",
+        "Tac. Ann. 1.64 (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "lāma, lāmae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a slough, a bog",
+      "evidence": [
+        "Hor. Ep. 1.13.10: <span lang=\"la\">per clīvōs, flūmina, lāmās</span> (Lewis &amp; Short)"
+      ],
+      "comment": "A rare word; Festus explains it as a gathering of water, a <span lang=\"la\">lacūna</span> (Lewis &amp; Short)."
     }
+  ],
+  "phrases": [
+    {
+      "latin": "quamvīs lapis omnia nūdus līmōsōque palūs obdūcat pāscua juncō",
+      "english": "though bare stone and marsh with its muddy rushes cover all the pastures",
+      "source": "Verg. E. 1.47–48"
+    }
+  ],
+  "related": [
+    "reed",
+    "rush-plant",
+    "sedge",
+    "alder",
+    "pond",
+    "mud",
+    "lake"
   ],
   "sources": [
     "<a href=\"https://logeion.org/palus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: palus</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 206."
+    "<a href=\"https://logeion.uchicago.edu/uligo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: uligo</a> · <a href=\"https://logeion.uchicago.edu/lama\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lama</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 206.",
+    "Vergil, <em>Eclogae</em> 1.47–48."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

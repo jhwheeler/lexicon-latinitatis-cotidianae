@@ -3,7 +3,12 @@
   "english": "flower bed",
   "pos": "noun",
   "also": [
-    "garden bed"
+    "garden bed",
+    "vegetable patch",
+    "vegetable bed",
+    "bed (in a garden)",
+    "raised bed",
+    "border (in a garden)"
   ],
   "domain": "domus",
   "terms": [
@@ -16,6 +21,30 @@
         "Columella",
         "Plin. Ep. 5.6.21"
       ]
+    },
+    {
+      "latin": "ārea, āreae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a bed in a garden",
+      "evidence": [
+        "Col. 11.3 (Lewis &amp; Short)",
+        "Plin. NH 19.60 (Lewis &amp; Short)",
+        "Cato Agr. 151: <span lang=\"la\">aquam in āreās</span> (Lewis &amp; Short s.v. <span lang=\"la\">irrigō</span>)"
+      ],
+      "comment": "Any level open space; in the garden, a bed. <span lang=\"la\">Āreola</span> is its diminutive."
+    },
+    {
+      "latin": "pulvīnus, pulvīnī m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a raised bed, a ridge of earth",
+      "evidence": [
+        "Varr. RR 1.35.1 (Lewis &amp; Short)",
+        "Col. 11.3.20 (Lewis &amp; Short)",
+        "Plin. Ep. 5.6.16 (Lewis &amp; Short)"
+      ],
+      "comment": "“Cushion”: a bed banked up above the paths."
     }
   ],
   "phrases": [
@@ -26,15 +55,20 @@
     }
   ],
   "related": [
-    "garden"
+    "garden",
+    "dig",
+    "sow",
+    "furrow",
+    "water-plants"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/areola\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: areola</a>",
+    "<a href=\"https://logeion.uchicago.edu/area\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: area</a> · <a href=\"https://logeion.uchicago.edu/pulvinus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pulvinus</a>",
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026. Examples marked “Libellus” quote those texts word for word."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

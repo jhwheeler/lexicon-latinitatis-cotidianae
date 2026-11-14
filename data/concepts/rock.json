@@ -2,6 +2,11 @@
   "id": "rock",
   "english": "rock",
   "pos": "noun",
+  "also": [
+    "boulder",
+    "boulders",
+    "big rock"
+  ],
   "domain": "sermo",
   "terms": [
     {
@@ -11,18 +16,30 @@
       "gloss": "rock or a large stone"
     }
   ],
+  "phrases": [
+    {
+      "latin": "saxum circumspicit ingēns, saxum antīquum ingēns, campō quod forte jacēbat",
+      "english": "he catches sight of a huge rock, a huge and ancient rock, that happened to be lying in the field",
+      "source": "Verg. A. 12.896–897"
+    }
+  ],
   "related": [
-    "stone"
+    "stone",
+    "cliff",
+    "crag",
+    "pebble",
+    "flint"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/saxum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: saxum</a>"
-  ],
-  "replaces": [
-    "entry-27"
+    "<a href=\"https://logeion.uchicago.edu/saxum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: saxum</a>",
+    "Vergil, <em>Aeneis</em> 12.896–897."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
-  }
+  },
+  "replaces": [
+    "entry-27"
+  ]
 }

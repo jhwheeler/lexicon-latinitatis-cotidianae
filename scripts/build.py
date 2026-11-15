@@ -810,6 +810,626 @@ def word_index(records):
     return words
 
 
+# Every Latin word linked (Jack, 13 November 2026) --------------------------------------------------
+# On "a great man can come from a hovel" the headline is Potest ex casā vir magnus exīre, and only
+# ex, vir and magnus were links: a word was linked only when it was itself the head of a term. The
+# index below knows every form the lexicon can recognise, from the stems the search is built on
+# (search_stems) and the endings each class takes (ENDINGS), with a short table of the commonest
+# irregular forms; a word of a Latin text is looked up in it and linked to its word's page.
+#
+# Macrons decide. The stems of the search are folded, so each is kept here with the marked spelling
+# of the dictionary form it was cut from: mālus and malus, lēgēs and legēs, ēst and est are told
+# apart by what the text writes. The endings of nouns and adjectives are checked with their
+# quantities too (casā is only the ablative; pedes is not pedēs); those of verbs are not, since
+# they do not tell one word from another. The unmarked comparison (marked=False) is for a text
+# without macrons; the lexicon has none, so nothing is linked that way, and the report
+# (scripts/latin_unlinked.py) lists the words found only without their macrons: a macron is
+# probably missing or wrong there.
+#
+# A form that belongs to several words (canis to canis and canō, vīs to vīs and volō) is linked
+# only when the choice is safe: see FormIndex.choose. A wrong link is worse than none.
+LATIN_TOKEN = re.compile(r"[^\W\d_]+(?:-[^\W\d_]+)*['’]?")
+_ROMAN_NUMERAL = re.compile(r'[IVXLCDM]+')
+_SAYING = re.compile(r'[.!?]$')
+_FORM_ABBREVIATION = re.compile(r'(?:^|[\s(/])(?:[mfnc]|pl|sg|abl|acc|gen|dat|nom|voc|inf|subj|indic|impers|etc)\.$')
+_ENCLITICS = ('que', 'ne', 'ue')
+# A form is linked to the commonest of the words it may belong to only if that word is at least
+# this many times as frequent in refs/latin-frequency.tsv as each of the others (a word the list
+# lacks counts as frequent as the last word on it). Twenty to one is Claude's choice, made on the
+# links themselves: at ten to one veniam went to veniō (and not venia), partum to pars and caveam
+# to caveō; at twenty those are left alone, and quī (not queō), bellum (not bellus), suum (not
+# sūs) and erō (not erus) are still linked.
+LINK_RATIO = 20
+
+# The endings with their quantities, by class and folded ending (a: a, ā), built as ENDINGS is. An
+# ending without an entry here is not checked (the perfect of eō, the compounds' rarer forms).
+_M12 = 'us a ā um ī ae ō am ōrum ārum īs ōs ās e ē'.split()
+_M3 = 'is īs e ī em ēs ia ium ibus um a'.split()
+_SHORT = dict(zip('āēīōū', 'aeiou'))
+
+
+def _marked_persons(base, passive=False):
+    """The persons of a tense on a base that ends in a long vowel, which is short before -m, -t,
+    -nt, -r and -ntur: amābam, amābās, amābat."""
+    short = base[:-1] + _SHORT[base[-1]]
+    return ([short + 'r', base + 'ris', base + 're', base + 'tur', base + 'mur', base + 'minī', short + 'ntur'] if passive
+            else [short + 'm', base + 's', short + 't', base + 'mus', base + 'tis', short + 'nt'])
+
+
+def _marked_tense(base):
+    return _marked_persons(base) + _marked_persons(base, passive=True)
+
+
+def _marked_participles(vowel):
+    """amāns, amantis, amandus: the vowel is long only before -ns."""
+    short = vowel[:-1] + _SHORT[vowel[-1]]
+    return [vowel + 'ns'] + [short + 'nt' + e for e in _M3 if e != 'um'] + [short + 'nd' + e for e in _M12]
+
+
+_MARKED_LISTS = {
+    'n1': 'a ā ae am ārum īs ās'.split(), 'n2': 'us e ī ō um ōrum īs ōs'.split(), 'n2n': 'um ī ō a ōrum īs'.split(),
+    'n3': 'is ī em e ēs um ium ibus im īs'.split(), 'n3n': 'is ī e a ia um ium ibus'.split(),
+    'n4': 'us ūs uī ū um uum ibus ubus'.split(), 'n4n': 'ū ua ūs uum ibus'.split(), 'n5': 'ēs eī ēī em ē ērum ēbus'.split(),
+    'a12': _M12, 'a3': _M3 + ['iter'], 'cmp': 'or us ōris ōrī ōrem ōre ōrēs ōra ōrum ōribus'.split(),
+    'v1': ('ō ās at āmus ātis ant or āris āre ātur āmur āminī antur ābō ābis ābit ābimus ābitis ābunt ābor āberis ābere '
+           'ābitur ābimur ābiminī ābuntur ā āte ātō ātōte antō ātor antor ārī').split()
+          + _marked_tense('ābā') + _marked_tense('ē') + _marked_tense('ārē') + _marked_participles('ā'),
+    'v2': ('eō ēs et ēmus ētis ent eor ēris ēre ētur ēmur ēminī entur ēbō ēbis ēbit ēbimus ēbitis ēbunt ēbor ēberis ēbere '
+           'ēbitur ēbimur ēbiminī ēbuntur ē ēte ētō ētōte entō ētor entor ērī').split()
+          + _marked_tense('ēbā') + _marked_tense('eā') + _marked_tense('ērē') + _marked_participles('ē'),
+    'v3': ('ō is it imus itis unt or eris ere itur imur iminī untur ēs et ēmus ētis ent ēris ēre ētur ēmur ēminī entur '
+           'e ite itō itōte untō itor untor ī').split()
+          + _marked_tense('ēbā') + _marked_tense('ā') + _marked_tense('erē') + _marked_participles('ē') + ['und' + e for e in _M12],
+    'v3i': ('iō is it imus itis iunt ior eris ere itur imur iminī iuntur iēs iet iēmus iētis ient iēris iēre iētur iēmur '
+            'iēminī ientur e ite itō itōte iuntō ī').split()
+           + _marked_tense('iēbā') + _marked_tense('iā') + _marked_tense('erē') + _marked_participles('iē'),
+    'v4': ('iō īs it īmus ītis iunt ior īris īre ītur īmur īminī iuntur iēs iet iēmus iētis ient iēris iēre iētur iēmur '
+           'iēminī ientur ī īte ītō ītōte iuntō īrī').split()
+          + _marked_tense('iēbā') + _marked_tense('iā') + _marked_tense('īrē') + _marked_participles('iē'),
+    'pf': ('ī istī it imus istis ērunt ēre erō eris erīs erit erimus erīmus eritis erītis erint isse erim').split()
+          + _marked_persons('erā') + _marked_persons('issē'),
+    # no vocative in -e for a participle (mēnse is the month), but the adverb in -ē
+    'ppp': [e for e in _M12 if e != 'e'] + ['ūr' + e for e in _M12] + ['ū'],
+    # sum and eō: the short forms that other words share but for a macron (ēst from edō, is the pronoun)
+    'esse': 'sum es est sumus estis sunt este estō esse erō eris erit sim sīs sit'.split(),
+    'ire': 'eō īs it īmus ītis eunt ī īte ītō īre īrī ībō ībis ībit ītur iī iit'.split(),
+}
+
+# The forms of the search's irregular verbs (_IRREGULAR) with their quantities
+_MARKED_IRREGULAR = {
+    'possum': ('possum potes potest possumus potestis possunt posse potēns potentis poterō poteris poterit poterimus poteritis '
+               'poterunt').split() + _marked_persons('poterā') + _marked_persons('possī') + _marked_persons('possē'),
+    'volo': ('volō vīs vult volt volumus vultis voltis volunt velle volēns volentis volam volēs volet volēmus volētis '
+             'volent').split() + _marked_persons('volēbā') + _marked_persons('velī') + _marked_persons('vellē'),
+    'nolo': ('nōlō nōlumus nōlunt nōlle nōlī nōlīte nōlītō nōlēns nōlam nōlēs nōlet nōlēmus nōlētis '
+             'nōlent').split() + _marked_persons('nōlēbā') + _marked_persons('nōlī') + _marked_persons('nōllē'),
+    'malo': ('mālō māvīs māvult mālumus māvultis mālunt mālle mālam mālēs mālet mālēmus mālētis '
+             'mālent').split() + _marked_persons('mālēbā') + _marked_persons('mālī') + _marked_persons('māllē'),
+    'fio': ('fīō fīs fit fīmus fītis fīunt fierī fī fīte fīēs fīet fīēmus fīētis '
+            'fīent').split() + _marked_persons('fīēbā') + _marked_persons('fīā') + _marked_persons('fierē'),
+}
+# The commonest forms the stems do not reach, each under its head. A head the lexicon lacks is
+# passed over; add to the table from the report's list of forms not reached.
+IRREGULAR_FORMS = {
+    'ego': 'meī mihi mihī mī mē mēcum', 'meus': 'mī', 'tū': 'tuī tibi tibī tē tēcum',
+    'nōs': 'nostrī nostrum nōbīs nōbīscum', 'vōs': 'vestrī vestrum vōbīs vōbīscum',
+    'suī': 'sibi sibī sē sēsē sēcum', 'sē': 'suī sibi sibī sēsē sēcum',
+    'is': 'ea id ejus eī eum eam eō eā iī eae eōrum eārum iīs eīs eōs eās',
+    'hic': 'haec hoc hujus huic hunc hanc hōc hāc hī hae hōrum hārum hīs hōs hās',
+    'ille': 'illa illud illīus illī illum illam illō illā illae illōrum illārum illīs illōs illās',
+    'iste': ('ista istud istīus istī istum istam istō istā istae istōrum istārum istīs istōs istās '
+             'istuc istaec istunc istanc istōc istāc'),
+    'ipse': 'ipsa ipsum ipsīus ipsī ipsam ipsō ipsā ipsae ipsōrum ipsārum ipsīs ipsōs ipsās',
+    'īdem': ('eadem idem ejusdem eīdem eundem eandem eōdem eādem iīdem eaedem eōrundem eārundem eīsdem iīsdem '
+             'īsdem eōsdem eāsdem'),
+    'quī': 'quae quod cujus cui quem quam quō quā quōrum quārum quibus quōs quās',
+    'quis': 'quid cujus cui quem quō quibus',
+    'aliquis': ('aliquid aliqua aliquod alicujus alicui aliquem aliquam aliquō aliquā aliquī aliquae aliquōrum '
+                'aliquārum aliquibus aliquōs aliquās'),
+    'quisque': 'quaeque quidque quodque cujusque cuique quemque quamque quōque quāque',
+    'quīdam': ('quaedam quiddam quoddam cujusdam cuidam quendam quandam quōdam quādam quōrundam quārundam '
+               'quibusdam quōsdam quāsdam'),
+    'quisquam': 'quicquam quidquam cujusquam cuiquam quemquam quōquam',
+    'quisquis': 'quidquid quicquid quōquō quemquem',
+    'alius': 'alia aliud alīus aliī alium aliam aliō aliā aliae aliōrum aliārum aliīs aliōs aliās',
+    'alter': 'alterīus', 'ūnus': 'ūnīus', 'sōlus': 'sōlīus', 'tōtus': 'tōtīus', 'nūllus': 'nūllīus', 'ūllus': 'ūllīus',
+    'uter': 'utrīus', 'neuter': 'neutrīus',
+    'uterque': 'utraque utrumque utrīusque utrīque utrōque utrāque utramque',
+    'duo': 'duae duōrum duārum duōbus duābus duōs duās', 'ambō': 'ambae ambōrum ambārum ambōbus ambābus ambōs ambās',
+    'trēs': 'tria trium tribus',
+    'domus': 'domī domō domōs domōrum', 'humus': 'humī', 'rūs': 'rūrī',
+    'vīs': 'vim vī vīrēs vīrium vīribus', 'bōs': 'boum bōbus būbus', 'Juppiter': 'Jovis Jovī Jovem Jove',
+    'deus': 'dī diī dīs diīs', 'plūs': 'plūrēs plūra plūrium plūribus',
+    'dīcō': 'dīc', 'dūcō': 'dūc', 'faciō': 'fac', 'edō': 'ēs ēst ēsse ēstis',
+    'inquam': 'inquis inquit inquimus inquiunt', 'ajō': 'ais ait ajunt ajēbam ajēbat ajēbant ajās ajat',
+    'famēs': 'famē',
+    'nēmō': 'nūllīus nūllō', 'meminī': 'mementō mementōte', 'nōscō': 'nōstī nōsse nōrunt nōram nōrim',
+    # the spellings of the comic poets, which quotations keep
+    'cum': 'quom', 'sum': 'siem siēs siet sient', 'libet': 'lubet', 'ut': 'utī', 'rūrsus': 'rūrsum',
+}
+# Stems the dictionary form does not show: the suppletive comparisons, the comparison of four
+# adverbs, and a reduplicated perfect given without its perfect. (head, class, stem as marked, the
+# entry that, where the lexicon has it, takes the forms itself.)
+IRREGULAR_STEMS = (
+    ('bonus', 'cmp', 'meli', 'melior'), ('bonus', 'a12', 'optim', 'optimus'),
+    ('malus', 'cmp', 'pei', 'pejor'), ('malus', 'a12', 'pessim', 'pessimus'),
+    ('magnus', 'cmp', 'mai', 'major'), ('magnus', 'a12', 'maxim', 'maximus'),
+    ('parvus', 'cmp', 'min', 'minor'), ('parvus', 'a12', 'minim', 'minimus'),
+    ('multus', 'a12', 'plūrim', 'plūrimus'),
+    ('saepe', 'cmp', 'saepi', 'saepius'), ('saepe', 'a12', 'saepissim', 'saepissimē'),
+    ('diū', 'cmp', 'diūti', 'diūtius'), ('diū', 'a12', 'diūtissim', 'diūtissimē'),
+    ('prope', 'cmp', 'propi', 'propior'), ('prope', 'a12', 'proxim', 'proximus'),
+    ('cito', 'cmp', 'citi', 'citius'), ('cito', 'a12', 'citissim', 'citissimē'),
+    ('stō', 'pf', 'stet', 'stetī'),
+)
+# Spellings of early Latin, tried when a word is not found as written (on the word as form_key
+# writes it): servos, servom; vortō, vorsus; optumus, maxumus; lubet; faciundus.
+_EARLY_SPELLINGS = ((r'([uv])os$', r'\1us'), (r'([uv])om$', r'\1um'), (r'vor(?=[ts])', 'ver'), (r'(?<=[tx])um(?=[aāeēiīoōu])', 'im'),
+                    (r'^lub', 'lib'), (r'iund(?=[aāeēiīoōu])', 'iend'))
+# The six adjectives in -ilis with a superlative in -illimus
+_LIMUS = ('facil', 'difficil', 'simil', 'dissimil', 'gracil', 'humil')
+# Classes of the linker's own: dō and its compounds take the endings of the first conjugation
+# with a short a (dare, damus, dabam); eō and sum have a supine or a
+# future participle and no other participle (itum, futūrus: not ita, the adverb); a perfect in
+# -āvī, -ēvī, -ōvī or -īvī has the short forms amāstī, amārunt, amāsse, nōsse, audīsse.
+_LINK_ENDINGS = {**ENDINGS, 'dare': ENDINGS['v1'], 'sup': ['um', 'u'] + ['ur' + e for e in _A12],
+                 'pfc': ['sti', 'stis', 'runt', 'sse'] + _persons('sse')}
+_MARKED_LISTS['sup'] = ['um', 'ū'] + ['ūr' + e for e in _M12]
+# dō: the a is short but in dās, dā and dāns
+_MARKED_LISTS['dare'] = [e if e in ('ās', 'ā', 'āns') else e.replace('ā', 'a') for e in _MARKED_LISTS['v1']]
+
+
+def _deponent(cls, endings):
+    """The endings a deponent verb has: the passive ones, the participles, the gerund and the
+    gerundive (frūstrātur, frūstrāns, frūstrandī), not the active ones (frūstrā is the adverb)."""
+    vowel = {'v1': 'a', 'v2': 'e', 'v3': 'e', 'v3i': 'ie', 'v4': 'ie'}[cls]
+    return [e for e in endings if re.search(r'(?:r|ris|re|tur|mur|min[iī]|ntur|r[iī])$', e)
+            or (e in ('i', 'ī') and cls in ('v3', 'v3i')) or re.match(rf'(?:{vowel}|{vowel[:-1]}[āē]|u)(?:ns$|n[td](?![oō]?$))', e)]
+
+
+for _cls in ('v1', 'v2', 'v3', 'v3i', 'v4'):
+    _LINK_ENDINGS['d' + _cls[1:]] = _deponent(_cls, ENDINGS[_cls])
+    _MARKED_LISTS['d' + _cls[1:]] = _deponent(_cls, _MARKED_LISTS[_cls])
+_MARKED_ENDINGS = {cls: {} for cls in _LINK_ENDINGS}
+for _cls, _endings in _MARKED_LISTS.items():
+    for _ending in _endings:
+        _MARKED_ENDINGS[_cls].setdefault(fold(_ending), set()).add(_ending)
+# The endings by which an adverb is made from an adjective or a participle (certē, graviter, rēctē;
+# the comparative minus, potius, prius)
+_ADVERB_ENDINGS = {('a12', 'e'), ('ppp', 'e'), ('a3', 'iter'), ('cmp', 'us')}
+
+
+def form_key(word):
+    """A word as the linker compares it in a marked text: lower case, i for j, macrons kept. Unlike the
+    search, which reads u and v alike, it keeps them apart, as the lexicon writes them: voluit is
+    volō's and volvit volvō's."""
+    text = unicodedata.normalize('NFD', word.lower()).replace('\u0308', '')        # āëra is āera
+    return unicodedata.normalize('NFC', text).replace('j', 'i').replace('’', "'")
+
+
+def bare_key(word):
+    """The same without the macrons, as the search folds what is typed."""
+    return search_fold(word).replace('’', "'")
+
+
+def is_saying(latin):
+    """A term that is a sentence (Quī tacet, cōnsentit.), all of it Latin to be linked, and not a
+    dictionary form that ends in an abbreviation (Rōma, Rōmae f.; ūnus ex + abl.)."""
+    latin = latin.strip()
+    return bool(latin) and latin[0].isupper() and bool(_SAYING.search(latin)) and not _FORM_ABBREVIATION.search(latin)
+
+
+def link_stems(record, term):
+    """The stems of a term the linker trusts, as (class, stem) with the stem folded as the search
+    folds it. The search guesses the class of a bare word from its ending, which is right for
+    finding and too loose for linking (circum is not a neuter in -um, nor minus an adjective):
+    such a guess is kept only where the term's grammar, or else the record's part of speech,
+    names a noun, an adjective or a verb to match. Nor is a supine guessed for a verb given with
+    its perfect and no supine (nō, nāre, nāvī), or taken for fīō from faciō's (factus). Added:
+    dō and its compounds (dare), volō, volāre beside volō, velle, a perfect or supine among
+    principal parts the search could not read, the comparatives given as major, majus, the
+    adjectives used only in the plural (paucī, paucae, pauca) and the superlatives in -illimus."""
+    stems = [tuple(s) for s in search_stems(term)]
+    latin = re.sub(r'\s*\([^)]*\)', '', term['latin']).strip()
+    parts = [re.sub(r'\s*\+.*$', '', p).strip() for p in latin.split(';')[0].split(',')]
+    folded = [search_fold(p) for p in parts]
+    if ';' not in latin and len(parts) == 1 and stems:
+        names = record.get('pos') or []
+        names = [names] if isinstance(names, str) else list(names)
+        text = term.get('grammar', '')
+        if text:
+            names = re.findall(r'^(noun|adjective|verb)\b', text)
+            if not inflection(term) or re.search(r'plural|indeclinable|genitive|dative|ablative|accusative|impersonal', text):
+                names = []
+        cls = stems[0][0]
+        fits = ('verb' in names if cls.startswith('v') else 'noun' in names if cls.startswith('n')
+                else 'adjective' in names or 'noun' in names)
+        if not fits:
+            return []
+        if cls == 'a12' and 'adjective' not in names:
+            stems = [('n2', stems[0][1])]       # a noun in -us: dēnārius
+    if len(parts) >= 2 and re.search(r'(ō|or)$', parts[0]) and parts[1].endswith(('re', 'rī')):
+        inf = parts[1]
+        if inf.endswith('dare') and folded[0].endswith('do'):
+            stems.append(('dare', folded[1][:-3]))
+        elif folded[0] in _IRREGULAR and inf.endswith('āre'):
+            stems.append(('v1', folded[1][:-3]))
+        supine = [p for p in parts[2:] if p.endswith(('um', 'us sum', 'ūrus'))]
+        if stems and not any(cls == 'pf' for cls, _ in stems):
+            stems += [('pf', search_fold(p)[:-1]) for p in parts[2:3] if p.endswith('ī')]
+        if stems and supine and not any(cls == 'ppp' for cls, _ in stems):
+            stems.append(('ppp', search_fold(supine[0].removesuffix(' sum'))[:-2]))
+        if (len(parts) >= 3 and not supine) or folded[0] == 'fio':
+            stems = [s for s in stems if s[0] != 'ppp']
+        if any(cls == 'esse' or (cls == 'ire' and not stem) for cls, stem in stems):
+            stems = [('sup', stem) if cls == 'ppp' else (cls, stem) for cls, stem in stems]
+        stems += [('pfc', stem[:-1]) for cls, stem in stems if cls == 'pf' and stem.endswith(('av', 'ev', 'ov', 'iv'))]
+    if not stems and len(parts) >= 2 and parts[0].endswith('ī') and parts[1].endswith('isse'):
+        stems = [('pf', folded[0][:-1])] + [('ppp', search_fold(p)[:-2]) for p in parts[2:3] if p.endswith('um')]   # coepī, coepisse, coeptum
+    if not stems and len(parts) == 2 and folded[0].endswith('or') and folded[1] == folded[0][:-2] + 'us':
+        stems = [('cmp', folded[0][:-2])]       # major, majus
+    if not stems and len(parts) == 3 and folded[0].endswith('i') and folded[1:] == [folded[0][:-1] + 'ae', folded[0][:-1] + 'a']:
+        stems = [('a12', folded[0][:-1])]       # paucī, paucae, pauca
+    if len(parts) == 2 and re.search(r' [mfnc]\. pl\.', parts[1]):
+        # a noun given in the plural: mōrēs, mōrum m. pl. is of the third declension, stem mōr-
+        nominative, genitive = folded[0], search_fold(parts[1].split()[0])
+        found = next(((cls, nominative[:-len(a)]) for a, b, cls in _PLURAL_NOUNS
+                      if nominative.endswith(a) and genitive == nominative[:-len(a)] + b), None)
+        stems = [found] if found else stems
+    if parts[0].endswith('or') and len(parts) >= 2 and parts[1].endswith('ī'):
+        stems = [('d' + cls[1:], stem) if cls in ('v1', 'v2', 'v3', 'v3i', 'v4') else (cls, stem) for cls, stem in stems]
+    for cls, stem in list(stems):
+        if cls == 'a3' and stem in _LIMUS:
+            stems = [s for s in stems if s != ('a12', stem + 'issim')] + [('a12', stem + 'lim')]
+    return list(dict.fromkeys(stems))
+
+
+def _class_code(cls):
+    """A class of endings as the frequency list codes a lemma's: A noun, B verb, C adjective."""
+    return 'A' if cls.startswith('n') else 'C' if cls in ('a12', 'a3', 'cmp') else 'B'
+
+
+_PLURAL_NOUNS = (('ae', 'arum', 'n1'), ('i', 'orum', 'n2'), ('a', 'orum', 'n2n'), ('es', 'ium', 'n3'), ('es', 'um', 'n3'),
+                 ('ia', 'ium', 'n3n'), ('a', 'um', 'n3n'), ('us', 'uum', 'n4'), ('ua', 'uum', 'n4n'), ('es', 'erum', 'n5'))
+
+
+def load_frequency(root):
+    """The lemmas of refs/latin-frequency.tsv, folded: {lemma: [(count, part of speech)]}, and the
+    count of the last lemma on the list. Without the list nothing is known, and a form that may
+    belong to several words is linked only where their forms settle it."""
+    path, table, last = Path(root) / 'refs/latin-frequency.tsv', {}, 0
+    if path.exists():
+        for line in path.read_text(encoding='utf-8').splitlines():
+            cells = line.split('\t')
+            if len(cells) >= 4 and cells[0].isdigit():
+                table.setdefault(cells[1], []).append((int(cells[2]), cells[3]))      # the list writes u for v
+                last = int(cells[2])
+    return table, last
+
+
+class FormIndex:
+    """Every form the lexicon can recognise, and the word each belongs to."""
+    def __init__(self, records, words, root=ROOT):
+        self.words = words
+        self.exact = {}         # bare form: [(marked form, head)], the heads themselves
+        self.other = {}         # the same for the irregular forms and the other forms a term gives
+        self.stems = {}         # (class, stem): [(head, the marked spellings of the stem)]
+        self.paradigm = {}      # head: its (class, stem) pairs
+        self.codes = {}         # head: the kinds of word its classes show (A noun, B verb, C adjective)
+        self.declined = set()   # heads in a dictionary form the stems could not read (vīs, vīs f.; is, ea, id)
+        self.plural = set()     # heads given only in the plural (litterae, litterārum f. pl.)
+        self.cache = {}
+        self.sayings = {head for head in words if _SAYING.search(head)}
+        self.frequency, self.floor = load_frequency(root)
+        self.by_ending = {}
+        for cls, endings in _LINK_ENDINGS.items():
+            for ending in dict.fromkeys(endings):
+                self.by_ending.setdefault(ending, []).append(cls)
+        spare = []
+        for head, info in words.items():
+            word = head.strip('.!?')
+            self.exact.setdefault(bare_key(word), []).append((form_key(word), head))
+            plural = []
+            for record, term in info['uses']:
+                if inflection(term) and ',' in re.sub(r'\([^)]*\)', '', term['latin']):
+                    self.declined.add(head)
+                plural.append(bool(re.search(r'\bpl\.', term['latin']) or 'plural' in term.get('grammar', '')))
+                text = re.sub(r'\([^)]*\)', '', term['latin'])
+                tokens = [(form_key(t), bare_key(t)) for t in LATIN_TOKEN.findall(text)]
+                stems = link_stems(record, term)
+                for cls, stem in stems:
+                    self.add_stem(head, cls, stem, tokens)
+                # Another spelling in brackets after the head (atque (ac), caccabus (cacabus)) and,
+                # where the term has no stems, its other words (ā, ab; melior, melius; libet, libuit)
+                other = re.match(r'[^\s,()]+ \(([^\s()+]+)\)', term['latin'])
+                spare += [(other.group(1), head)] if other else []
+                if not stems and ',' in text:
+                    spare += [(t, head) for t in LATIN_TOKEN.findall(re.sub(r'\s\+.*$', '', text.split(';')[0]))[1:]
+                              if not re.fullmatch(r'[mfnc]|pl', t)]
+            if all(plural):
+                self.plural.add(head)
+        lower = {head.lower(): head for head in words if head.lower() not in words}
+        for head, forms in IRREGULAR_FORMS.items():
+            head = head if head in words else lower.get(head)
+            for form in forms.split() if head else ():
+                self.other.setdefault(bare_key(form), []).append((form_key(form), head))
+        for head, cls, stem, own in IRREGULAR_STEMS:
+            head = head if head in words else lower.get(head)
+            if head and own not in words:
+                kinds = set(self.codes.get(head, ()))
+                self.add_stem(head, cls, bare_key(stem), [(form_key(stem), bare_key(stem))])
+                self.codes[head] = kinds        # saepius does not make saepe an adjective
+                if not kinds:
+                    del self.codes[head]
+        # A spare form is kept only if nothing else claims it: "subolet (mihi)" does not make mihi
+        # a form of subolet, nor "est, sunt" take sunt from sum.
+        for form, head in spare:
+            if form_key(form) != form_key(head.strip('.!?')) and not self.candidates(form):
+                self.other.setdefault(bare_key(form), []).append((form_key(form), head))
+        self.cache.clear()
+
+    def add_stem(self, head, cls, stem, tokens):
+        whole = [form for form in _MARKED_IRREGULAR.get(search_fold(head), ()) if bare_key(form) == stem] if cls == 'x' else []
+        entry = (head, frozenset(whole) if whole else self._marked(cls, stem, tokens))
+        if entry not in self.stems.setdefault((cls, stem), []):
+            self.stems[cls, stem].append(entry)
+        self.paradigm.setdefault(head, set()).add((cls, stem))
+        self.codes.setdefault(head, set()).add(_class_code(cls))
+        spelling = sorted(entry[1])[0]
+        if len(spelling) != len(stem):
+            return
+        if cls in ('n2', 'n2n') and stem.endswith('i'):
+            # fīlī, the vocative of fīlius and the old genitive; ingenī
+            self.other.setdefault(stem, []).append((spelling[:-1] + 'ī', head))
+        if cls == 'pf' and stem.endswith('iv'):
+            # audiit, audiērunt beside audīvit
+            short = (head, frozenset({spelling[:-2] + 'i'}))
+            if short not in self.stems.setdefault(('pf', stem[:-1]), []):
+                self.stems['pf', stem[:-1]].append(short)
+
+    @staticmethod
+    def _marked(cls, stem, tokens):
+        """The marked spellings a stem may have, read from the part of the dictionary form the stem
+        was cut from: a perfect stem from the perfect (lēg- in lēgī), a supine stem from the
+        supine, a verb's present stem from its infinitive, a noun's stem from its genitive (ped-
+        in pedis). A stem that no part of the term begins with (amāv-, the regular perfect of amō,
+        amāre; a superlative) is marked as far as the parts agree with it."""
+        tokens = [(i, marked, bare) for i, (marked, bare) in enumerate(tokens) if len(marked) == len(bare)]
+        full = [(i, marked, bare) for i, marked, bare in tokens if bare.startswith(stem)]
+        if full:
+            if cls in ('pf', 'pfc'):
+                chosen = [t for t in full if t[0] >= 2 and t[2] in (stem + 'i', stem + 'it', stem + 'ui')]
+            elif cls in ('ppp', 'sup'):
+                chosen = [t for t in full if t[0] >= 2 and t[2] in (stem + 'um', stem + 'us', stem + 'urus')]
+            elif cls in ('esse', 'ire', 'fer'):
+                chosen = full                   # the prefix of a compound: dēsum, deesse; prōsum, prōdesse
+            else:
+                chosen = [t for t in full if t[0] == 1] or [t for t in full if t[0] == 0]
+            return frozenset(marked[:len(stem)] for _, marked, _ in chosen or full)
+        best, found = 0, {''}
+        for i, marked, bare in tokens:
+            n = 0
+            while n < min(len(stem), len(bare)) and stem[n] == bare[n]:
+                n += 1
+            if n > best:
+                best, found = n, {marked[:n]}
+            elif n == best:
+                found.add(marked[:n])
+        return frozenset(found)
+
+    def candidates(self, word, marked=True):
+        """The heads a word may be a form of, each with how it is reached: ('=', '') the head
+        itself, ('!', '') a form listed for it, or the class and ending of an inflected form."""
+        key, bare = form_key(word), bare_key(word)
+        found = {}
+        for kind, table in (('=', self.exact), ('!', self.other)):
+            for form, head in table.get(bare, ()):
+                if not marked or form == key:
+                    found.setdefault(head, set()).add((kind, ''))
+        for cut in range(len(bare) + 1):
+            stem, ending = bare[:cut], bare[cut:]
+            for cls in self.by_ending.get(ending, ()):
+                for head, spellings in self.stems.get((cls, stem), ()):
+                    if marked:
+                        if key[:len(next(iter(spellings)))] not in spellings:
+                            continue
+                        endings = _MARKED_ENDINGS[cls].get(ending)
+                        if endings and key[cut:] not in endings:
+                            continue
+                    found.setdefault(head, set()).add((cls, ending))
+        return found
+
+    def within(self, plural, other):
+        """Whether an entry for a plural is the plural of another head: the same stem in the same
+        declension (litterae, littera); a neuter plural used as a noun, of its adjective or
+        participle (bona, bonus; omnia, omnis; data, dō); or the plural of a pronoun, which the
+        table of irregular forms lists (illī, ille). Not a masculine like līberī, the children,
+        which is not līber."""
+        wider = {'n2n': ('a12', 'ppp'), 'n3n': ('a3',)}
+        mine, theirs = self.paradigm.get(plural, set()), self.paradigm.get(other, set())
+        if mine and theirs:
+            return all(any((c, stem) in theirs for c in (cls,) + wider.get(cls, ())) for cls, stem in mine)
+        word = plural.strip('.!?')
+        return any(head == other and form == form_key(word) for form, head in self.other.get(bare_key(word), ()))
+
+    def count(self, head):
+        """The least and the most a head may count in the frequency list: the lemmas spelt like it
+        that are its kind of word (a head that is not inflected is never taken for a noun, a verb
+        or an adjective: viā is not via). The list has no macrons, so where another head differs
+        only by them (malus, mālus) the least is the rarest such lemma and the most all of them.
+        A head the list lacks counts nothing at least and as much as the list's last lemma at most."""
+        bare = bare_key(head.strip('.!?'))
+        rows, codes = self.frequency.get(uv_fold(bare), []), self.codes.get(head, set())
+        kinds = {'A': ('noun',), 'B': ('verb',), 'C': ('adjective', 'pronoun', 'numeral', 'determiner')}
+        if codes:
+            rows = [row for row in rows if any(row[1] in kinds[code] for code in codes)]
+        elif head not in self.declined:
+            rows = [row for row in rows if row[1] not in ('noun', 'verb', 'adjective')]
+        if not rows:
+            return 0, self.floor
+        total = sum(row[0] for row in rows)
+        return (min(row[0] for row in rows) if len({h for _, h in self.exact.get(bare, ())}) > 1 else total), total
+
+    def choose(self, found, word=''):
+        """The one word a form is linked to, or nothing. A wrong link is worse than none, so the
+        choice is made only where it is safe. First the candidates that are the same word as
+        another are set aside:
+
+        1. a one-word saying, for the word it is made of (tacē is taceō, not the entry "Tacē.");
+           and of two heads that differ only in a capital or a final mark, the one written as
+           the text writes it (Dominus, dominus);
+        2. an entry made of a form (est, illa, omnia): a head that is not inflected and that the
+           frequency list does not know as a word of its own, for the word that has the form;
+        3. an entry for a plural (litterae, partēs), for the singular with the same stem and
+           declension;
+        4. a verb reached only as a future participle, where a noun or an adjective has the form
+           itself (nātūra, cultūra);
+        5. an adjective or a participle, where the word is the adverb made from it (in -ē or
+           -iter, or the comparative in -us) and the adverb has an entry (certē, graviter, rēctē,
+           minus).
+
+        Then one candidate is linked. Of several, the commonest is linked only if it is LINK_RATIO
+        times as frequent as each of the others, and never in place of a candidate that is the
+        word as the text writes it and a dictionary word in its own right (eō, the verb, beside
+        the ablative of is; vīs beside volō; amor beside amō): such a word is linked to itself or
+        left alone. Nor is a verb chosen for its participle where a noun or an adjective has the
+        same form (lātus, vīctus, factum)."""
+        heads, key = list(found), form_key(word)
+        if len(heads) > 1:                                               # 1
+            heads = [head for head in heads if head not in self.sayings] or heads
+            spelt = {}
+            for head in heads:
+                spelt.setdefault(form_key(head.strip('.!?')), []).append(head)
+            for same in spelt.values():
+                if len(same) > 1:
+                    keep = next((head for head in sorted(same) if head[:1].isupper() == word[:1].isupper()), sorted(same)[0])
+                    heads = [head for head in heads if head == keep or head not in same]
+        counts = {head: self.count(head) for head in heads}
+        own = [head for head in heads if form_key(head.strip('.!?')) == key
+               and (head in self.codes or head in self.declined or counts[head][0])]
+        if len(heads) > 1 and self.frequency:                            # 2
+            heads = [head for head in heads if head in own or ('=', '') not in found[head]] or heads
+        if len(heads) > 1:                                               # 3
+            heads = [head for head in heads if not (head in self.plural and any(
+                other not in self.plural and self.within(head, other) for other in heads))] or heads
+        if len(heads) > 1:                                               # 4
+            rest = [head for head in heads if not all(cls in ('ppp', 'sup') and ending.startswith('ur') for cls, ending in found[head])]
+            if rest and all(self.codes.get(head, set()) & {'A', 'C'} for head in rest):
+                heads = rest
+        if len(heads) > 1 and key.endswith(('ē', 'e', 'iter', 'us')):    # 5
+            adverbs = [head for head in heads if ('=', '') in found[head] and head not in self.codes and head not in self.declined]
+            if len(adverbs) == 1 and all(found[head] <= _ADVERB_ENDINGS for head in heads if head != adverbs[0]):
+                heads = adverbs
+        if len(heads) == 1:
+            return heads[0]
+        best = max(heads, key=lambda head: counts[head][0])
+        if (own and best not in own) or not counts[best][0]:
+            return None
+        if all(cls in ('ppp', 'sup') for cls, _ in found[best]) and any(self.codes.get(head, set()) & {'A', 'C'} for head in heads if head != best):
+            return None     # a participle beside a noun or an adjective of the same form: lāta is "wide" as well as "carried"
+        return best if all(counts[best][0] >= LINK_RATIO * counts[head][1] for head in heads if head != best) else None
+
+    def resolve(self, word, marked=True):
+        """(head, state) for a word of a Latin text: state is 'linked' (head is its word), 'ambiguous'
+        (several words, none safe to choose) or 'none' (no entry the index reaches). A word not
+        found as written is tried as a question clipped of its -ne (satin’ is satis, audīn’
+        audīs, tūn’ tū), without an enclitic -que, -ne or -ve, and in the spellings of early Latin."""
+        if (word, marked) not in self.cache:
+            key = form_key(word)
+            found = self.candidates(word, marked)
+            if not found and key.endswith("n'"):
+                found = self.candidates(key[:-2] + 's', marked) or self.candidates(key[:-2], marked)
+            elif not found:
+                bare = bare_key(word)
+                tries = [key[:-len(enclitic)] for enclitic in _ENCLITICS if bare.endswith(enclitic) and len(bare) > len(enclitic) + 1]
+                tries += [early for pattern, to in _EARLY_SPELLINGS if (early := re.sub(pattern, to, key)) != key]
+                found = next((got for attempt in tries if (got := self.candidates(attempt, marked))), {})
+            head = self.choose(found, word) if found else None
+            self.cache[word, marked] = (head, 'linked' if head else 'ambiguous' if found else 'none')
+        return self.cache[word, marked]
+
+
+# not after an initial: in "M. Tulliō" the second word does not open a sentence
+_OPENS_SENTENCE = re.compile(r'(?:^|(?<![A-Z])[.!?:…])[\s«»“”‘’()\'"—–-]*$')
+
+
+def latin_words(text, forms):
+    """The pieces of a Latin text: (piece, state, head). A word's state is 'linked' (head is the
+    word it belongs to), 'ambiguous', 'none' (no entry) or 'name' (a capitalised word inside a
+    sentence that has no entry); what lies between words, a Roman numeral, an initial and the
+    abbreviations of a dictionary form (+ abl.) have no state."""
+    at = 0
+    for match in LATIN_TOKEN.finditer(text):
+        word = match.group(0)
+        if match.start() > at:
+            yield text[at:match.start()], '', None
+        at = match.end()
+        dotted = text[at:at + 1] == '.'
+        if ((len(word) == 1 and word.isupper() and dotted) or (_ROMAN_NUMERAL.fullmatch(word) and len(word) > 1)
+                or word in ('I', 'V', 'X') or (dotted and word in _GRAMMAR_ABBREVIATIONS)):
+            yield word, '', None
+            continue
+        head, state = forms.resolve(word)
+        if word[-1] in "'’" and state == 'none':
+            word, at = word[:-1], at - 1            # a closing quotation mark, not vīn’
+            head, state = forms.resolve(word)
+        if state == 'none' and word[0].isupper() and not _OPENS_SENTENCE.search(text[:match.start()]):
+            state = 'name'
+        yield word, state, head
+    if at < len(text):
+        yield text[at:], '', None
+
+
+_GRAMMAR_ABBREVIATIONS = {'acc', 'abl', 'gen', 'dat', 'nom', 'voc', 'inf', 'subj', 'indic', 'pl', 'sg', 'm', 'f', 'n', 'c', 'etc'}
+LATIN_SPAN = re.compile(r'<(span|strong|em|b|i) lang="la">(.*?)</\1>', re.S)
+
+
+def latin_texts(site):
+    """Every piece of Latin in the records that is a text and not a dictionary form:
+    (record id, kind, text). 'head' is the head of a term of several words, or all of a saying;
+    'example' an example sentence; 'quotation' the Latin quoted in a term's evidence; 'prose' the
+    Latin quoted in comments, registers and notes."""
+    for key, record in sorted(site['records'].items()):
+        for term in ordered_terms(record):
+            head = term['latin'] if is_saying(term['latin']) else term_head(term['latin'])
+            if ' ' in head:
+                yield key, 'head', head
+            for evidence in term.get('evidence', []):
+                for match in LATIN_SPAN.finditer(evidence):
+                    yield key, 'quotation', plain(match.group(2))
+            for field in ('comment', 'register'):
+                for match in LATIN_SPAN.finditer(term.get(field, '')):
+                    yield key, 'prose', plain(match.group(2))
+        for phrase in record.get('phrases', []):
+            yield key, 'example', phrase['latin']
+        for note in record.get('notes', {}).values():
+            for match in LATIN_SPAN.finditer(note_html(note)):
+                yield key, 'prose', plain(match.group(2))
+
+
+def link_totals(site):
+    """How many words of the lexicon's Latin texts (heads of several words, examples, quotations)
+    are linked, ambiguous, without an entry, or names without one."""
+    totals = {'linked': 0, 'ambiguous': 0, 'none': 0, 'name': 0}
+    for _, kind, text in latin_texts(site):
+        if kind != 'prose':
+            for _, state, _ in latin_words(text, site['forms']):
+                if state:
+                    totals[state] += 1
+    return totals
+
+
+
+LINK_TOTALS = {}      # what the last build made of the words of the lexicon's Latin (link_totals)
+
+
+def totals_line(totals):
+    """The builder's one line on the links, so that the number is seen on every build."""
+    words = sum(totals.values())
+    return (f'Latin words in the texts: {words:,}; linked {totals["linked"]:,} ({100 * totals["linked"] / max(words, 1):.1f}%), '
+            f'ambiguous {totals["ambiguous"]:,}, without an entry {totals["none"]:,}, names without an entry {totals["name"]:,}.')
+
+
 class Links:
     """Where links point from a given page: a concept page ('concept'), a Latin word's page
     ('word') or a page at the root ('index', 'root')."""
@@ -841,19 +1461,25 @@ class Links:
     def related(self, key):
         return self.concept(key) if key in self.site['records'] else self.entry(key)
 
+    def text(self, text):
+        """A Latin text as HTML, each word linked to the page of the word it is a form of (potest to
+        possum, casā to casa), where the lexicon has it and the choice is safe; never to the page
+        the link would stand on."""
+        return ''.join(f'<a href="{self.word(head)}">{escape(piece)}</a>' if state == 'linked' and head != self.current_word
+                       else escape(piece) for piece, state, head in latin_words(text, self.site['forms']))
+
     def latin(self, text):
-        """A term's head with each Latin word that has a page linked to it, and the rest of the term."""
+        """A term's head with each of its Latin words linked, and the rest of the term, both as HTML.
+        A head of one word leads to its own page, as it always has; the words of a longer head, and
+        of the rest of a saying (Quī tacet, cōnsentit.), to the pages of the words they are forms of."""
         head = term_head(text)
         rest = text[len(head):]
-
-        def link(match):
-            word = match.group(0)
-            if word in self.site['words'] and word != self.current_word:
-                return f'<a href="{self.word(word)}">{escape(word)}</a>'
-            return escape(word)
-        linked = ''.join(link(m) if m.group(0).strip() and WORD.fullmatch(m.group(0)) else escape(m.group(0))
-                         for m in re.finditer(r'[^\s;,.:()]+|[\s;,.:()]+', head))
-        return linked, rest
+        if head in self.site['words']:
+            word = head.rstrip('.!?')
+            linked = (f'<a href="{self.word(head)}">{escape(word)}</a>' if head != self.current_word else escape(word)) + escape(head[len(word):])
+        else:
+            linked = self.text(head)
+        return linked, self.text(rest) if is_saying(text) else escape(rest)
 
 
 def suggest_link(page, what):
@@ -978,7 +1604,7 @@ def render_concept(record, site):
     evidence = ('<p>' + '<br>'.join(main['evidence']) + '</p>') if main.get('evidence') else ''
     gloss = main.get('gloss', '')
     block = [f'<aside class="side"><p>{labels(main)}</p>{evidence}</aside>', notes(main),
-             f'<p class="lemma" lang="la">{ours_mark(main)}<b>{head}</b>{refs(main)}{escape(rest)}</p>']
+             f'<p class="lemma" lang="la">{ours_mark(main)}<b>{head}</b>{refs(main)}{rest}</p>']
     if grammar_html(main):
         block.append(f'<p class="gram">{grammar_html(main)}</p>')
     if gloss and gloss.strip().lower() != record['english'].strip().lower():
@@ -998,7 +1624,7 @@ def render_concept(record, site):
             side = notes(term)
             meta = term_meta(term, linked=True)
             gloss = f'<span class="gloss" lang="en"> — {escape(term["gloss"])}</span>' if term.get('gloss') else ''
-            item = [side, f'<p class="lemma" lang="la">{ours_mark(term)}<b>{head}</b>{refs(term)}{escape(rest)}{gloss}</p>',
+            item = [side, f'<p class="lemma" lang="la">{ours_mark(term)}<b>{head}</b>{refs(term)}{rest}{gloss}</p>',
                     f'<p class="meta-line">{meta}</p>']
             if 'register' in term:
                 item.append(f'<p class="meta-line register">({term["register"]})</p>')
@@ -1024,7 +1650,7 @@ def render_concept(record, site):
                       else f'<span class="src">{phrase["source"]}</span>')
             side = notes(phrase)
             items.append(f'<li data-source="{kind}"' + (' class="has-side"' if side else '') + f'>{side}'
-                         f'<p class="la" lang="la">{escape(phrase["latin"])}{refs(phrase)}</p>'
+                         f'<p class="la tap" lang="la">{links.text(phrase["latin"])}{refs(phrase)}</p>'
                          f'<p class="en">{escape(phrase["english"])}{source}</p></li>')
         parts.append(f'<section class="sec" aria-labelledby="ex-{key}-h"><div class="sec-head"><h2 id="ex-{key}-h">Examples</h2>'
                      f'{control}</div><ul class="ex" id="ex-{key}">' + ''.join(items) + '</ul></section>')
@@ -1073,7 +1699,7 @@ def render_word_page(head, info, site):
                      + (' · ' + '; '.join(term['evidence']) if term.get('evidence') else '') + '</p></li>')
     for record, term in within:
         linked, rest = links.latin(term['latin'])
-        items.append(f'<li><b lang="la">{linked}</b><span lang="la">{escape(rest)}</span>: '
+        items.append(f'<li><b lang="la">{linked}</b><span lang="la">{rest}</span>: '
                      f'<a href="{links.concept(record["id"])}">{escape(record["english"])}</a>'
                      f'<p class="meta-line"><span class="lab">{PERIODS[term["period"]]}</span></p></li>')
     parts.append('<section class="sec" aria-labelledby="uses-h"><div class="sec-head"><h2 id="uses-h">In this lexicon</h2></div>'
@@ -1107,7 +1733,7 @@ def render_word_page(head, info, site):
             if main or word.search(fold(phrase['latin'])):
                 source = ('<span class="src composed">composed</span>' if composed(phrase)
                           else f'<span class="src">{phrase["source"]}</span>')
-                examples.append(f'<li><p class="la" lang="la">{escape(phrase["latin"])}</p>'
+                examples.append(f'<li><p class="la tap" lang="la">{links.text(phrase["latin"])}</p>'
                                 f'<p class="en">{escape(phrase["english"])}{source}</p>'
                                 f'<p class="from">In the entry for <a href="{links.concept(record["id"])}">{escape(record["english"])}</a></p></li>')
     if examples:
@@ -1223,6 +1849,7 @@ def load_site(root):
     site = {'catalog': catalog, 'categories': categories, 'entries': entries, 'legacy': legacy, 'rulings': rulings}
     site['records'] = load_records(root, categories, legacy, rulings)
     site['words'] = word_index(site['records'])
+    site['forms'] = FormIndex(site['records'], site['words'], root)
     site['latinitium'] = load_latinitium(root)
     site['anchors'] = anchor_map(site)
     for key in categories:
@@ -1890,6 +2517,7 @@ def render_sitemap(site):
 def build_site(root=ROOT):
     """Return every generated file as {path relative to the repository root: text}."""
     site = load_site(root)
+    LINK_TOTALS.update(link_totals(site))
     outputs = {'index.html': render_index(root, site)}
     for key in site['categories']:
         outputs[f'k/{key}.html'] = render_category_page(key, site)
@@ -1964,6 +2592,7 @@ def main():
                 else:
                     (ROOT / path).write_text(text, encoding='utf-8')
             print(f'Built index.html and {len(outputs) - 1} other files.')
+        print(totals_line(LINK_TOTALS))
     except (ValueError, KeyError, TypeError, OSError) as error:
         print(f'Build failed: {error}', file=sys.stderr)
         return 1

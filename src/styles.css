@@ -339,6 +339,11 @@ span.kind, p.kind:not(:has(a)) { display:block; padding:10px 0; }
 .uses > li > a { display:inline-flex; align-items:center; min-height:44px; }
 .ex .la { margin:0; font-size:1.15em; font-style:italic; line-height:1.4; }
 .ex .en { margin:1px 0 0; color:var(--soft); }
+/* Every word of an example leads to the page of the word it is a form of, quietly: the same ink and no
+   underline until the pointer or the keyboard is on it, so that a page of examples is not a web of red
+   lines. One class, on the sentence, so that it is easy to change. */
+.tap a { text-decoration-line:none; }
+.tap a:hover, .tap a:focus-visible { text-decoration-line:underline; }
 .src { display:inline-block; margin-left:.45em; color:var(--muted); font-size:.92em; }
 .src.composed { font-variant-caps:all-small-caps; letter-spacing:.07em; }
 .from { margin:1px 0 0; color:var(--muted); font:400 .98rem var(--sans); }

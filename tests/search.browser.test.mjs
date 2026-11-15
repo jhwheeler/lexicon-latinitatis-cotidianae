@@ -812,6 +812,60 @@ test('Latin words link to their own pages, which lead back to every entry that u
   await page.waitForURL(/c\/perhaps\.html$/);
 });
 
+test('every word of a Latin text leads to its word: a headline underlined, an example quietly', async () => {
+  // Potest ex casā vir magnus exīre: only ex, vir and magnus were links (Jack, 13 November 2026).
+  await page.goto(pageUrl('c/a-great-man-can-come-from-a-hovel.html'));
+  const headline = page.locator('.term .lemma b');
+  assert.equal(await headline.textContent(), 'Potest ex casā vir magnus exīre.');
+  const links = await headline.locator('a').evaluateAll(nodes => nodes.map(a => [a.textContent, a.getAttribute('href')]));
+  assert.deepEqual(links, [['Potest', '../l/possum.html'], ['ex', '../l/ex.html'], ['casā', '../l/casa.html'],
+                           ['vir', '../l/vir.html'], ['magnus', '../l/magnus.html'], ['exīre', '../l/exeo.html']]);
+  for (const [, href] of links) {
+    assert.equal((await page.request.get(new URL(href, page.url()).href)).status(), 200, href);
+  }
+  assert.equal(await headline.locator('a').first().evaluate(a => getComputedStyle(a).textDecorationLine), 'underline');
+  await headline.locator('a', { hasText: 'Potest' }).click();
+  await page.waitForURL(/l\/possum\.html$/);
+  assert.equal(await page.locator('h1').textContent(), 'possum');
+
+  // An example: every word can be tapped, in the same ink, with no underline until the pointer is on it.
+  await page.goto(pageUrl('c/hut.html'));
+  const sentence = page.locator('.ex .la.tap').first();
+  const word = sentence.locator('a').first();
+  assert.equal(await word.evaluate(a => getComputedStyle(a).textDecorationLine), 'none');
+  assert.equal(await word.evaluate(a => getComputedStyle(a).color), await sentence.evaluate(p => getComputedStyle(p).color));
+  await word.hover();
+  assert.equal(await word.evaluate(a => getComputedStyle(a).textDecorationLine), 'underline');
+  const target = (await word.getAttribute('href')).replace('../', '');
+  await word.click();
+  await page.waitForURL(address => address.pathname.endsWith('/' + target));
+  assert.equal(await page.locator('article.word h1').count(), 1);
+
+  // A word's own page does not link to itself, and nothing scrolls sideways on a phone.
+  await page.setViewportSize({ width: 390, height: 760 });
+  for (const path of ['c/a-great-man-can-come-from-a-hovel.html', 'c/hut.html', 'l/casa.html']) {
+    await page.goto(pageUrl(path));
+    assert.equal(await overflows(), false, `${path} overflows at 390px`);
+  }
+  assert.equal(await page.locator('a[href="casa.html"]').count(), 0);
+  assert.equal(await page.locator('.ex .la.tap a').count() > 0, true);
+
+  // The display options reach the linked words, and give them back exactly.
+  await page.setViewportSize({ width: 1280, height: 900 });
+  await page.goto(pageUrl('c/a-great-man-can-come-from-a-hovel.html'));
+  await page.evaluate(() => { ['lexicon-macrons', 'lexicon-j', 'lexicon-v'].forEach(key => localStorage.removeItem(key)); });
+  await page.reload();
+  await page.locator('.settings > summary').click();
+  await page.locator('.settings-panel [data-display="macrons"][data-value="off"]').click();
+  await page.locator('.settings-panel [data-display="v"][data-value="u"]').click();
+  assert.equal(await headline.textContent(), 'Potest ex casa uir magnus exire.');
+  assert.deepEqual(await headline.locator('a').evaluateAll(nodes => nodes.map(a => a.getAttribute('href'))), links.map(([, href]) => href));
+  await page.locator('.settings-panel [data-display="macrons"][data-value="on"]').click();
+  await page.locator('.settings-panel [data-display="v"][data-value="v"]').click();
+  assert.equal(await headline.textContent(), 'Potest ex casā vir magnus exīre.');
+  await settle();
+});
+
 test('on a wide screen the reasons stand in the margin; on a phone they follow the word', async () => {
   await page.goto(pageUrl('c/cooking-pot.html'));
   const box = selector => page.locator(selector).first().boundingBox();

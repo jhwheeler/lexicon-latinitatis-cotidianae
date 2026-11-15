@@ -223,6 +223,188 @@ class LinkTests(unittest.TestCase):
         self.assertEqual(unlinked.likely_lemma('īnspicere', {'inspicio': 'īnspiciō'}), 'īnspiciō')
 
 
+class FamilyTests(unittest.TestCase):
+    """Word families: the headwords made from one root, on the word's page and the concept's."""
+    @classmethod
+    def setUpClass(cls):
+        cls.site = builder.load_site(ROOT)
+        cls.families = cls.site['families']
+
+    def family(self, head, concept=None):
+        """The heads in the family of a word (of the one entered under a concept, if the head is several)."""
+        found = [lexeme for lexeme in self.families.by_head[head] if concept is None or concept in lexeme.concepts()]
+        self.assertEqual(len(found), 1, f'{head} is {len(found)} words')
+        return [other.head for other in self.families.of(found[0])]
+
+    def joined(self, one, other):
+        return any(b in self.families.family.get(a, ()) for a in self.families.by_head[one] for b in self.families.by_head[other])
+
+    def test_the_acrobat_leads_to_the_trampoline(self):
+        self.assertEqual(self.family('petaurista'), ['petauristārius', 'petaurum'])
+        self.assertEqual(sorted(self.family('petaurum')), ['petaurista', 'petauristārius'])
+        words = self.site['words']
+        page = builder.render_word_page('petaurista', words['petaurista'], self.site)
+        line = re.search(r'<p class="see family">(.*?)</p>', page).group(1)
+        self.assertIn('Same family:', line)
+        self.assertIn(f'<a href="{words["petaurum"]["slug"]}.html" lang="la">petaurum</a> (trampoline)', line)
+        self.assertIn(f'<a href="{words["petauristārius"]["slug"]}.html" lang="la">petauristārius</a> (acrobat)', line)
+        self.assertTrue(anchors(page).sound)
+        # The concept's page: the family of its answer, linked to the concepts where the words are
+        # entered; a word entered only on this page is not repeated, and "See also" keeps its label.
+        entry = builder.render_concept_page(self.site['records']['acrobat'], self.site, self.site['categories'])
+        line = re.search(r'<p class="see family">(.*?)</p>', entry).group(1)
+        self.assertEqual(line, '<span class="fam-label">Same family:</span> <span lang="la">petaurum</span> '
+                               '(<a href="trampoline.html">trampoline</a>).')
+        self.assertTrue(anchors(entry).sound)
+        back = builder.render_concept_page(self.site['records']['trampoline'], self.site, self.site['categories'])
+        self.assertIn('<span lang="la">petaurista</span> (<a href="acrobat.html">acrobat</a>)',
+                      re.search(r'<p class="see family">(.*?)</p>', back).group(1))
+        related = next(record for record in self.site['records'].values() if record.get('related'))
+        self.assertIn('<p class="see">See also ', builder.render_concept_page(related, self.site, self.site['categories']))
+
+    def test_look_alikes_are_not_joined(self):
+        for one, other in (('malus', 'mālum'), ('malus', 'mālus'), ('os', 'ōs'), ('liber', 'līber'), ('populus', 'pōpulus'),
+                           ('canis', 'canō'), ('canis', 'cānus'), ('canō', 'cānus'), ('aurum', 'auris'), ('aurum', 'aura'),
+                           ('auris', 'aura'), ('cōmō', 'coma'), ('dīcō', 'dicō'), ('ferō', 'lātus'), ('calamitās', 'calamus'),
+                           ('veniō', 'ventus'), ('aper', 'Aprīlis'), ('doleō', 'redoleō'), ('Crēta', 'crēta')):
+            self.assertFalse(self.joined(one, other), f'{one} and {other}')
+        # Vowel lengths decide: the people's adjective is not the poplar's, and the golden is gold's
+        self.assertIn('populāris', self.family('populus'))
+        self.assertNotIn('pōpulus', self.families.family or ())
+        self.assertIn('aurum', self.family('aureus'))
+        self.assertIn('auris', self.family('auricula'))
+        # One head, two words: each has its own family, and neither is in the other's
+        for head, a, b, mine, theirs in (('volō', 'fly', 'want', 'volātus', 'voluntās'), ('jūs', 'law', 'soup', 'jūrō', 'jūsculum'),
+                                         ('mālus', 'apple-tree', 'mast', None, None)):
+            one, other = self.family(head, a), self.family(head, b)
+            self.assertNotIn(head, one + other, head)
+            if mine:
+                self.assertIn(mine, one)
+                self.assertNotIn(theirs, one)
+                self.assertIn(theirs, other)
+                self.assertNotIn(mine, other)
+        page = builder.render_word_page('volō', self.site['words']['volō'], self.site)
+        self.assertEqual(len(re.findall(r'<p class="see family">', page)), 2)
+        self.assertIn('Same family as <span lang="la">volō, velle, voluī</span>:', page)
+
+    def test_a_compound_agrees_with_its_verb_in_both_stems(self):
+        self.assertIn('faciō', self.family('cōnficiō'))        # cōnficiō, cōnfectum: faciō, factum
+        self.assertIn('caedō', self.family('occīdō'))
+        self.assertIn('emō', self.family('redimō'))
+        self.assertFalse(self.joined('dēserō', 'serō'))        # dēsertum is not satum
+        self.assertEqual(builder.weakenings('fac'), ['fac', 'fic', 'fec'])
+        self.assertEqual(builder.weakenings('caed'), ['caed', 'cīd'])
+        self.assertEqual(builder.weakenings('claud'), ['claud', 'clūd', 'clōd'])
+        self.assertEqual(builder.weakenings('mitt'), ['mitt'])
+
+    def test_a_phrase_has_no_family_and_a_word_is_not_in_its_own(self):
+        families = self.families
+        self.assertFalse(any(' ' in lexeme.head for lexeme in families.lexemes))
+        record = self.site['records']['a-great-man-can-come-from-a-hovel']
+        self.assertIsNone(families.of_term(record, record['terms'][0]))
+        self.assertNotIn('class="see family"', builder.render_concept_page(record, self.site, self.site['categories']))
+        for lexeme, family in families.family.items():
+            self.assertIn(lexeme, family)
+            self.assertNotIn(lexeme, families.of(lexeme))
+            self.assertGreater(len(family), 1)
+        # amīcus the noun and amīcus the adjective are one family: the page does not list itself
+        info = self.site['words']['amīcus']
+        page = builder.render_word_page('amīcus', info, self.site)
+        line = re.search(r'<p class="see family">(.*?)</p>', page).group(1)
+        self.assertIn('amīcitia', line)
+        self.assertNotIn(f'href="{info["slug"]}.html"', line)
+        self.assertNotIn('>amīcus<', line)
+        # a word alone has no line
+        alone = next(lexeme for lexeme in families.lexemes if lexeme not in families.family and len(families.by_head[lexeme.head]) == 1)
+        self.assertEqual(families.of(alone), [])
+        self.assertNotIn('class="see family"', builder.render_word_page(alone.head, self.site['words'][alone.head], self.site))
+
+    def test_a_large_family_is_shortened_on_a_concepts_page(self):
+        lexeme = next(l for l in self.families.lexemes if l.head == 'mittō')
+        self.assertGreater(len(self.families.of(lexeme)), builder.FAMILY_SHOWN + 5)
+        record = next(r for r, t in lexeme.uses if builder.ordered_terms(r)[0] is t)
+        entry = builder.render_concept_page(record, self.site, self.site['categories'])
+        line = re.search(r'<p class="see family">(.*?)</p>', entry).group(1)
+        self.assertEqual(line.count('<span lang="la">'), builder.FAMILY_SHOWN)
+        self.assertRegex(line, r', and \d+ more on the page of <a href="\.\./l/mitto\.html" lang="la">mittō</a>\.$')
+        page = builder.render_word_page('mittō', self.site['words']['mittō'], self.site)
+        self.assertEqual(page.count(' lang="la">', page.index('class="see family"'), page.index('</p>', page.index('class="see family"'))),
+                         len({other.head for other in self.families.of(lexeme)}))
+
+    def test_the_hand_kept_file_is_honoured(self):
+        words, records = self.site['words'], self.site['records']
+        bare = builder.Families(words, records, {})
+
+        def joined(families, one, other):
+            return any(b in families.family.get(a, ()) for a in families.by_head[one] for b in families.by_head[other])
+
+        # apart: the method alone joins the reed to the disaster, and the wide to the carried
+        self.assertTrue(joined(bare, 'calamitās', 'calamus'))
+        self.assertTrue(joined(bare, 'lātus', 'ferō'))
+        self.assertFalse(joined(self.families, 'calamitās', 'calamus'))
+        # ... and words listed apart are not brought together through a third: petauristārius, which is
+        # made from petaurista, stays out of the family rather than join petaurum by way of it
+        kept = builder.Families(words, records, {'apart': [{'words': ['petaurum', 'petauristārius'], 'note': 'for the test'}]})
+        self.assertTrue(joined(kept, 'petaurum', 'petaurista'))
+        self.assertFalse(joined(kept, 'petaurum', 'petauristārius'))
+        # together: the participle of absum, which the method cannot see
+        self.assertFalse(joined(bare, 'absum', 'absēns'))
+        self.assertTrue(joined(self.families, 'absum', 'absēns'))
+        by_hand = builder.Families(words, records, {'together': [{'words': ['petaurum', 'calamus'], 'note': 'for the test'}]})
+        self.assertTrue(joined(by_hand, 'petaurista', 'calamitās'))
+        # homographs: jūs is one word by its forms, two by the file
+        self.assertEqual(len(bare.by_head['jūs']), 1)
+        self.assertEqual(len(self.families.by_head['jūs']), 2)
+        # every entry of the repository's file has a note, and its words are words
+        rules = builder.json.loads((ROOT / 'data/families.json').read_text(encoding='utf-8'))
+        self.assertEqual(set(rules), {'version', 'apart', 'together', 'homographs'})
+        for item in rules['apart'] + rules['together'] + rules['homographs']:
+            self.assertTrue(item['note'].strip())
+
+    def test_errors_in_the_hand_kept_file_are_refused(self):
+        words, records = self.site['words'], self.site['records']
+        for rules, message in (
+                ({'apart': [{'words': ['calamitās', 'calamistrātus'], 'note': 'x'}]}, 'calamistrātus is not a word of the lexicon'),
+                ({'together': [{'words': ['absum', 'nūllumverbum'], 'note': 'x'}]}, 'nūllumverbum is not a word of the lexicon'),
+                ({'homographs': [{'word': 'jūsjūs', 'concepts': ['soup'], 'note': 'x'}]}, 'jūsjūs is not a word of the lexicon'),
+                ({'homographs': [{'word': 'jūs', 'concepts': ['acrobat'], 'note': 'x'}]}, 'jūs is not a term of the concept acrobat'),
+                ({'apart': [{'words': ['calamitās', 'calamus'], 'note': ' '}]}, 'no note of its authority'),
+                ({'apart': [{'words': ['calamitās', 'calamus']}]}, 'Missing fields'),
+                ({'apart': [{'words': ['calamitās'], 'note': 'x'}]}, 'takes two different words'),
+                ({'together': [{'words': ['absum'], 'note': 'x'}]}, 'takes two words or more'),
+                ({'apart': [{'words': ['volō', 'volātus'], 'note': 'x'}]}, 'volō is several words; say which by a concept'),
+                ({'apart': [{'words': ['volō@acrobat', 'volātus'], 'note': 'x'}]}, 'volō is not a term of the concept acrobat'),
+                ({'apart': [{'words': ['absum', 'absēns'], 'note': 'x'}], 'together': [{'words': ['absum', 'absēns'], 'note': 'x'}]},
+                 'joins absum, absēns by hand, but lists two of them'),
+                ({'near': []}, 'Unknown fields'),
+                ({'version': 2}, 'Unsupported version')):
+            with self.subTest(message), self.assertRaisesRegex(ValueError, message):
+                builder.Families(words, records, rules)
+
+    def test_the_builder_reads_the_file_and_refuses_a_bad_one(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            for path in ('data', 'src'):
+                shutil.copytree(ROOT / path, root / path)
+            (root / 'data/families.json').write_text('{"version": 1, "apart": [{"words": ["calamitās", "nōnest"], "note": "x"}]}',
+                                                     encoding='utf-8')
+            with self.assertRaisesRegex(ValueError, 'data/families.json: nōnest is not a word of the lexicon'):
+                builder.load_site(root)
+            (root / 'data/families.json').unlink()         # without the file the method stands alone
+            self.assertTrue(any(lexeme.head == 'calamus' for lexeme in next(
+                family for lexeme, family in builder.load_site(root)['families'].family.items() if lexeme.head == 'calamitās')))
+
+    def test_every_suffix_and_prefix_is_listed_once_and_documented(self):
+        suffixes = [(kinds, suffix, classes) for kinds, suffix, classes in builder.FAMILY_SUFFIXES]
+        self.assertEqual(len(suffixes), len(set(suffixes)))
+        prefixes = [prefix for prefix, _ in builder.FAMILY_PREFIXES]
+        self.assertEqual(len(prefixes), len(set(prefixes)))
+        self.assertEqual(builder.FAMILY_MIN_ROOT, 3)
+        text = (ROOT / 'docs/records.md').read_text(encoding='utf-8')
+        for words in ('## Word families', 'data/families.json', 'A wrong family is worse than none'):
+            self.assertTrue(words in text, f'docs/records.md does not say: {words}')
+
+
 class LinkBuildTests(unittest.TestCase):
     """A site of its own: a term's head and an example are linked, and every link is good."""
     def test_a_built_site_has_good_links_in_heads_and_examples(self):

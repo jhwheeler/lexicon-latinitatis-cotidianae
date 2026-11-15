@@ -104,7 +104,7 @@ A line of `sources` is a citation as a book would print it: the author, the work
 
 ## Latin word pages: `l/<word>.html`
 
-Every Latin word that heads a one-word term (`caccabus` in `caccabus (cacabus), caccabī m.`) gets a page. It lists every record that uses the word, and the longer terms it appears in (`ōlla` in `ōlla ānsāta`, once `ōlla` has a term of its own). It also gives the notes on the word, the rulings whose `forms` include it, and the examples from the entries where it is the recommended word or that contain it. The page name drops macrons (`l/tyrocnestis.html`). Two words that differ only in macrons get `-2` and so on, in sorted order.
+Every Latin word that heads a one-word term (`caccabus` in `caccabus (cacabus), caccabī m.`) gets a page. It lists every record that uses the word, and the longer terms it appears in (`ōlla` in `ōlla ānsāta`, once `ōlla` has a term of its own). It also gives the words of its family (below, "Word families"), the notes on the word, the rulings whose `forms` include it, and the examples from the entries where it is the recommended word or that contain it. The page name drops macrons (`l/tyrocnestis.html`). Two words that differ only in macrons get `-2` and so on, in sorted order.
 
 ### Every Latin word linked
 
@@ -117,6 +117,40 @@ How a word is found (`FormIndex` in `scripts/build.py`):
 - **One word or none.** A form that could belong to several words is linked only when the choice is safe. Entries that are the same word are no ambiguity: a one-word saying yields to the word it is made of (*tacē* is *taceō*), an entry made of a form to the word that has the form (*est*, *illa*, *omnia*), an entry for a plural to its singular (*litterae*, *mōrēs*), an adjective to the adverb made from it when the adverb has an entry (*certē*, *minus*). Of words that really differ, the commonest is taken only if it is twenty times as frequent in `refs/latin-frequency.tsv` as each of the others (`LINK_RATIO`), never in place of a word that stands in the text in its own dictionary form (*eō* the verb, *vīs*, *amor*), and never a verb for its participle against a noun or adjective of the same form (*lāta*). Everything else is left unlinked: *canis*, *quod*, *quam*, *prīmum*. A wrong link is worse than none.
 
 The builder prints the totals on every build. `python3 scripts/latin_unlinked.py` writes `notes/coverage/unlinked.md`: the words without an entry by likely lemma (the list for new records), the forms not reached although the word has an entry, the words found only without their macrons, the names, and the ambiguous forms. Run it after adding records.
+
+## Word families
+
+The page for *acrobat* gave *petaurista* and did not lead to *petaurum*, which the lexicon has under *trampoline* (Jack, 13 November 2026). A word's **family** is the other headwords of the lexicon made from the same root: *petaurum, petaurista, petauristārius*. The builder works the families out from the dictionary forms alone, with the stems the linker reads from them, and shows them in two places:
+
+- on a Latin word's page, after "In this lexicon": a line "Same family:" with the words, each a link to its page, each with the English it is entered under: *petaurum* (trampoline), *petauristārius* (acrobat). A head that is two words (*volō, velle* and *volō, volāre*) has a line for each, named by its dictionary form;
+- on a concept's page, under its answer: the family of that word, each with links to the concepts where it is entered (*acrobat* leads to *trampoline*). A word entered only on that page is not repeated, and of a large family the nearest eight are shown, with a link to the word's own page for the rest. "See also" stays as it is, at the foot of the entry; the labels tell the two lines apart.
+
+A phrase has no family, a word is not listed in its own, and a word alone has no line. The words are in the order of nearness: those a word is made from or that are made from it, then theirs.
+
+**A wrong family is worse than none**, as a wrong link is. Latin is full of look-alikes (*malus, mālum, mālus*; *os, ōs*; *populus, pōpulus*; *aurum, auris, aura*), so the method (`family_edges` and `join_families` in `scripts/build.py`) is narrow on purpose:
+
+- **Stems are compared with their vowel lengths**, never folded: *populāris* is of *populus*, and *mālum* is no kin of *malus*.
+- **A word B is joined to a word A** when a stem of B is a stem of A with a suffix of the list, or with a prefix of the list before it, or is A's supine stem in another kind of word (*cursus* from *currō, cursum*; the frequentative *cantō* from *canō, cantum*). The stems are a noun's or adjective's (from the genitive), a verb's present stem without its vowel (*am-, mon-, reg-, aud-*) and its supine stem (*amāt-, āct-*).
+- **The suffixes** (`FAMILY_SUFFIXES`), each only on the kind of word it is mostly made from. On a noun: *-ārius, -ālis, -āris, -ōsus, -ulus/-olus, -iculus, -ista, -īnus, -eus, -āceus, -icus, -āticus, -īlis, -ānus, -iānus, -ēnsis, -ātus, -ētum, -īvus, -fer, -ger, -igāre*. On an adjective: *-ulus, -tūdō, -itia, -ēscere*, and the adverbs in *-ē, -iter, -er*. On either: *-ia, -ium, -tās*, the verbs in *-āre* and *-īre* (*cūrō* from *cūra*), *-icāre, -ificāre, -itus, -ātim*. On a present stem: *-bilis, -mentum, -men, -culum, -bulum, -āx, -āns/-ēns, -antia/-entia*, the gerundive, *-idus* and *-or* (of the second conjugation only), *-ulus, -ium, -ēla, -ilis, -uus, -ēscere, -itāre*. On a supine stem: *-tor, -trīx, -tiō, -tūra, -tōrius, -tīvus, -tilis, -tīcius, -turīre*. On a nominative: *-culus* (*jūsculum*).
+- **The prefixes** (`FAMILY_PREFIXES`), each in its assimilated forms and only before the letters that form stands before: *ad-, con-, dē-, ex-, in-, ob-, per-, prae-, prō-, re-, sub-, trāns-, ab-, dis-, inter-, intrō-, circum-, sē-, super-, ante-, post-, praeter-, subter-*. A compound verb must be of the same conjugation as its simple verb, and where both give a supine the supines must agree too (*dēserō, dēsertum* is not from *serō, satum*). After a prefix the first vowel of a verb may be weakened (*faciō, cōnficiō, cōnfectum*; *caedō, occīdō*; *claudō, inclūdō*); a noun or adjective must stand as it is.
+- **The root has at least three letters** (`FAMILY_MIN_ROOT`). A shorter root joins nothing, but it counts against another derivation: *redoleō* could be *re-* before *doleō* only if it could not also be *red-* before *oleō*.
+- **A word the rules would derive from words of several families is joined to none**: *crēta* looks like the participle of *crēscō* and of *cernō*, and is neither.
+- **A name is joined only to names** and a common word to common words: *Crētēnsis* is of *Crēta*, not of *crēta*.
+- **One word under two heads is one word**: the same stem in the same declension or conjugation (*fīnēs* beside *fīnis*, *vincor* beside *vincō*), the same stem in two words entered under one concept (*cerva, cervus*), an adjective used as a noun under the same head (*amīcus*).
+
+### `data/families.json`
+
+What the method cannot see is kept by hand, each entry with a `note` of its authority (Lewis & Short's derivation, or de Vaan where Lewis & Short is silent). The builder refuses a word the lexicon does not have, an entry without a note, and a family joined by hand against a pair listed apart.
+
+- `apart`: `{"words": [a, b], "note": …}`: two words never to be in one family (*calamitās* and *calamus*, *lātus*, wide, and *ferō, lātum*). The derivation of one from the other is not made, and no later join brings them together.
+- `together`: `{"words": [a, b, …], "note": …}`: a family the method cannot see, because the form is irregular or the root too short (*absēns* with *absum*, *nōlō* and *mālō* with *volō*, *inimīcus* with *amīcus*, the compounds of *dō*).
+- `homographs`: `{"word": head, "concepts": […], "note": …}`: the terms of these concepts are another word than the rest under the same head with the same forms (*jūs*, broth, beside *jūs*, law). The two are never joined, and a word made from *jūs* is joined to neither until a `together` says which.
+
+A word is named by its head; where the head is several words, by the head and a concept it is entered under: `volō@fly`, `jūs@soup`.
+
+The pairs and families in the file came out of reading every family the method proposed against Lewis & Short, and two seeded samples checked pair by pair (`notes/families-2026-11-15.md`). `python3 scripts/family_sample.py` draws such a sample again, with Lewis & Short's bracketed derivation beside each word; `--list` prints every family, `--ambiguous` the words left out because their bases are in several families, and `--word petaurista` one family with the derivations that made it. After adding many records, read the new families (`--list`, compared with the last run) before publishing: a new look-alike goes into `apart`.
+
+The request is the editor's (13 and 15 November 2026); the method, the lists, the minimum and the number of words a concept's page shows (`FAMILY_SHOWN`) are Claude's, for him to judge. Nearby concepts (acrobat, juggler, circus), which "See also" lists by hand, are a separate thing and still to do.
 
 ## Notes (footnotes)
 
@@ -145,7 +179,7 @@ Change a ruling by editing it and adding a `history` line; withdraw it rather th
 
 ## Checks
 
-`python3 scripts/build.py` validates records and rulings (fields, slugs, statuses, periods, no coinage of ours recommended beside an attested recommended term, notes cited and defined, rulings and related targets that exist, replaced entries that are really gone) and checks every link between the generated pages. A renamed category keeps its old ID in `aliases` in `data/catalog.json`, so old links still land on it. `--check` also fails on a stale or leftover page in `c/` or `l/`, or a leftover font in `assets/fonts/`. `scripts/consonantal_j.py` covers records and rulings. The tests include records, notes, pages and the rulings page.
+`python3 scripts/build.py` validates records and rulings (fields, slugs, statuses, periods, no coinage of ours recommended beside an attested recommended term, notes cited and defined, rulings and related targets that exist, replaced entries that are really gone) and `data/families.json` (every word named is a word of the lexicon, every entry has its note), and checks every link between the generated pages. A renamed category keeps its old ID in `aliases` in `data/catalog.json`, so old links still land on it. `--check` also fails on a stale or leftover page in `c/` or `l/`, or a leftover font in `assets/fonts/`. `scripts/consonantal_j.py` covers records and rulings. The tests include records, notes, pages and the rulings page.
 
 ## Converting a grouped entry
 

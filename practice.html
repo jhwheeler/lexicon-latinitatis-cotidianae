@@ -23,6 +23,7 @@ try {
 <link rel="stylesheet" href="assets/lexicon.css">
 <script src="assets/lexicon.js" defer></script>
 <script src="assets/practice-data.js" defer></script>
+<script src="assets/review.js" defer></script>
 <script src="assets/practice.js" defer></script>
 </head>
 <body class="subpage">
@@ -85,7 +86,7 @@ try {
 
 </div>
 </main>
-<footer class="site-foot"><div class="wrap"><p><a href="how-we-decide.html">How we decide</a> · <a href="rulings.html">Rulings</a> · <a href="index.html#about">About</a> · <a href="practice.html">Practice</a> · <a href="index.html">Search the lexicon</a> · <a href="https://github.com/jhwheeler/lexicon-latinitatis-cotidianae">Source and history</a> · <a href="https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/issues">Report a problem</a></p></div></footer>
+<footer class="site-foot"><div class="wrap"><p><a href="how-we-decide.html">How we decide</a> · <a href="rulings.html">Rulings</a> · <a href="index.html#about">About</a> · <a href="practice.html">Practice</a> · <a href="review.html">Review</a> · <a href="index.html">Search the lexicon</a> · <a href="https://github.com/jhwheeler/lexicon-latinitatis-cotidianae">Source and history</a> · <a href="https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/issues">Report a problem</a></p></div></footer>
 <dialog class="pgame" id="p-game" aria-labelledby="p-title">
 <div class="pgame-top">
 <button type="button" class="pgame-icon" id="g-close" data-t-label="close" aria-label="Close"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
@@ -104,7 +105,7 @@ try {
 <p class="pgame-also" id="g-also"></p>
 <p class="pgame-gloss" id="g-gloss" lang="en"></p>
 <div class="pgame-ex" id="g-ex"><p class="la" lang="la" id="g-ex-la"></p><p class="en" id="g-ex-en"></p></div>
-<p class="pgame-entry"><a id="g-entry" href="index.html" data-t="entry">Open the entry</a></p>
+<div class="pgame-entry"><a id="g-entry" href="index.html" data-t="entry">Open the entry</a><div id="g-verdict"></div></div>
 </div>
 <p class="pgame-end" id="g-end" hidden></p>
 </article>

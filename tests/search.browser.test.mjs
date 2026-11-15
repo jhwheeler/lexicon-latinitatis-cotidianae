@@ -475,7 +475,7 @@ test('on a phone the categories fold into a menu above the search', async () => 
 
 test('every page is usable on a phone: no sideways scrolling, 44px controls, no zoom on search', async () => {
   const pages = ['index.html', 'k/culina.html', 'words.html', 'latin.html', 'c/cooking-pot.html', 'c/tickle.html',
-                 'c/perhaps.html', 'l/fortasse.html', 'rulings.html', 'how-we-decide.html', 'practice.html', 'hora.html'];
+                 'c/perhaps.html', 'l/fortasse.html', 'rulings.html', 'how-we-decide.html', 'practice.html', 'hora.html', 'review.html'];
   for (const width of [320, 375, 390]) {
     await page.setViewportSize({ width, height: 800 });
     for (const path of pages) {
@@ -483,7 +483,7 @@ test('every page is usable on a phone: no sideways scrolling, 44px controls, no 
       assert.equal(await overflows(), false, `${path} overflows at ${width}px`);
       const small = await page.evaluate(() => [...document.querySelectorAll(
         '.settings > summary, .head-search-field, .filter button, .cat-menu > summary, .cat-home, .clear, .page-contents a, .toc a, .hero h1 a, .site-name, .wlist a, .az-nav a, .az a, .suggest a, '
-        + '.plist a, .practice summary, .practice button, .practice a, .icon-btn, .mode-chip, .go, #answer, .keys button, .ref summary, .links a')]
+        + '.plist a, .practice summary, .practice button, .practice a, .verdict button, .verdict a, .icon-btn, .mode-chip, .go, #answer, .keys button, .ref summary, .links a')]
         .filter(el => el.getClientRects().length && getComputedStyle(el).visibility !== 'hidden')
         .map(el => [el.textContent.trim().slice(0, 24), Math.round(el.getBoundingClientRect().height)])
         .filter(([, height]) => height < 44));
@@ -810,6 +810,60 @@ test('Latin words link to their own pages, which lead back to every entry that u
   assert.match(await page.locator('.notes-list').textContent(), /short final vowel/);
   await page.locator('.uses a', { hasText: 'perhaps' }).click();
   await page.waitForURL(/c\/perhaps\.html$/);
+});
+
+test('every word of a Latin text leads to its word: a headline underlined, an example quietly', async () => {
+  // Potest ex casā vir magnus exīre: only ex, vir and magnus were links (Jack, 13 November 2026).
+  await page.goto(pageUrl('c/a-great-man-can-come-from-a-hovel.html'));
+  const headline = page.locator('.term .lemma b');
+  assert.equal(await headline.textContent(), 'Potest ex casā vir magnus exīre.');
+  const links = await headline.locator('a').evaluateAll(nodes => nodes.map(a => [a.textContent, a.getAttribute('href')]));
+  assert.deepEqual(links, [['Potest', '../l/possum.html'], ['ex', '../l/ex.html'], ['casā', '../l/casa.html'],
+                           ['vir', '../l/vir.html'], ['magnus', '../l/magnus.html'], ['exīre', '../l/exeo.html']]);
+  for (const [, href] of links) {
+    assert.equal((await page.request.get(new URL(href, page.url()).href)).status(), 200, href);
+  }
+  assert.equal(await headline.locator('a').first().evaluate(a => getComputedStyle(a).textDecorationLine), 'underline');
+  await headline.locator('a', { hasText: 'Potest' }).click();
+  await page.waitForURL(/l\/possum\.html$/);
+  assert.equal(await page.locator('h1').textContent(), 'possum');
+
+  // An example: every word can be tapped, in the same ink, with no underline until the pointer is on it.
+  await page.goto(pageUrl('c/hut.html'));
+  const sentence = page.locator('.ex .la.tap').first();
+  const word = sentence.locator('a').first();
+  assert.equal(await word.evaluate(a => getComputedStyle(a).textDecorationLine), 'none');
+  assert.equal(await word.evaluate(a => getComputedStyle(a).color), await sentence.evaluate(p => getComputedStyle(p).color));
+  await word.hover();
+  assert.equal(await word.evaluate(a => getComputedStyle(a).textDecorationLine), 'underline');
+  const target = (await word.getAttribute('href')).replace('../', '');
+  await word.click();
+  await page.waitForURL(address => address.pathname.endsWith('/' + target));
+  assert.equal(await page.locator('article.word h1').count(), 1);
+
+  // A word's own page does not link to itself, and nothing scrolls sideways on a phone.
+  await page.setViewportSize({ width: 390, height: 760 });
+  for (const path of ['c/a-great-man-can-come-from-a-hovel.html', 'c/hut.html', 'l/casa.html']) {
+    await page.goto(pageUrl(path));
+    assert.equal(await overflows(), false, `${path} overflows at 390px`);
+  }
+  assert.equal(await page.locator('a[href="casa.html"]').count(), 0);
+  assert.equal(await page.locator('.ex .la.tap a').count() > 0, true);
+
+  // The display options reach the linked words, and give them back exactly.
+  await page.setViewportSize({ width: 1280, height: 900 });
+  await page.goto(pageUrl('c/a-great-man-can-come-from-a-hovel.html'));
+  await page.evaluate(() => { ['lexicon-macrons', 'lexicon-j', 'lexicon-v'].forEach(key => localStorage.removeItem(key)); });
+  await page.reload();
+  await page.locator('.settings > summary').click();
+  await page.locator('.settings-panel [data-display="macrons"][data-value="off"]').click();
+  await page.locator('.settings-panel [data-display="v"][data-value="u"]').click();
+  assert.equal(await headline.textContent(), 'Potest ex casa uir magnus exire.');
+  assert.deepEqual(await headline.locator('a').evaluateAll(nodes => nodes.map(a => a.getAttribute('href'))), links.map(([, href]) => href));
+  await page.locator('.settings-panel [data-display="macrons"][data-value="on"]').click();
+  await page.locator('.settings-panel [data-display="v"][data-value="v"]').click();
+  assert.equal(await headline.textContent(), 'Potest ex casā vir magnus exīre.');
+  await settle();
 });
 
 test('on a wide screen the reasons stand in the margin; on a phone they follow the word', async () => {
@@ -1585,6 +1639,414 @@ test('a strip of paper stands where a phone’s status bar is, and has no height
   await page.goto(pageUrl('k/culina.html'));
   await page.evaluate(() => window.scrollTo(0, 600));
   assert.ok(Math.abs((await page.locator('.toolbar').boundingBox()).y) < 2);
+});
+
+// Review ------------------------------------------------------------------------------------------
+
+// What the review keeps on the device and for the visit; each test starts and ends without it.
+const forgetReview = () => page.evaluate(keys => {
+  ['lexicon-review', ...keys].forEach(key => localStorage.removeItem(key));
+  ['lexicon-review-queue', 'lexicon-review-skipped', 'lexicon-practice-round'].forEach(key => sessionStorage.removeItem(key));
+}, PRACTICE_KEYS);
+// A fresh device, reading in English (Latin, the default, has a test of its own), editor or not.
+const beginReview = async ({ editor = false, language = 'en', verdicts = {} } = {}) => {
+  await page.goto(pageUrl('review.html'));
+  await forgetReview();
+  if (language) await page.evaluate(code => localStorage.setItem('lexicon-practice-lang', code), language);
+  if (editor || Object.keys(verdicts).length) await keep('lexicon-review', { editor, verdicts });
+  await settle();
+};
+const openReview = async () => { await page.goto(pageUrl('review.html')); await page.locator('#review:not([hidden])').waitFor(); };
+const verdicts = async () => ((await kept('lexicon-review')) || { verdicts: {} }).verdicts;
+const revisionOf = id => page.locator('article.concept').getAttribute('data-rev');
+const reviewCount = async key => Number((await page.locator(`#r-counts [data-count="${key}"] dt`).textContent()).replace(/,/g, ''));
+
+test('an entry is flagged in one tap: a box of reasons and a line to write, kept on the device and shown on return', async () => {
+  await page.setViewportSize({ width: 390, height: 760 });
+  await beginReview();
+  await page.goto(pageUrl('c/soap.html'));
+  const rev = await revisionOf();
+  assert.match(rev, /^[0-9a-f]{8}$/);
+  // The flag stands where "Suggest a correction" stood; "looks right" is the editor's alone.
+  assert.equal(await page.locator('.suggest').isVisible(), false);
+  const flag = page.locator('.verdict-flag');
+  assert.equal(await flag.textContent(), 'Flag');
+  assert.equal(await flag.getAttribute('aria-pressed'), 'false');
+  assert.equal(await page.locator('.verdict-ok').count(), 0);
+  assert.equal(await page.locator('.verdict-state').count(), 0);
+  assert.equal(await page.locator('.flagbox').count(), 0);
+  // One tap opens the box.
+  await flag.click();
+  assert.equal(await page.locator('.flagbox').isVisible(), true);
+  assert.deepEqual(await page.locator('.flagbox-chip').allTextContents(), ['wrong word', 'vowel length', 'meaning', 'example', 'source', 'other']);
+  // On a phone: nothing sideways, controls for a thumb, a field that does not zoom.
+  assert.equal(await overflows(), false);
+  const small = await page.evaluate(() => [...document.querySelectorAll('.verdict button, .verdict a, .verdict input')]
+    .filter(el => el.getClientRects().length).map(el => [el.textContent.trim() || el.className, Math.round(el.getBoundingClientRect().height)]).filter(([, h]) => h < 44));
+  assert.deepEqual(small, []);
+  assert.ok(parseFloat(await page.locator('.flagbox-note').evaluate(el => getComputedStyle(el).fontSize)) >= 16);
+  // Cancel leaves nothing behind.
+  await page.locator('.flagbox-cancel').click();
+  assert.equal(await page.locator('.flagbox').count(), 0);
+  assert.deepEqual(await verdicts(), {});
+  // Two reasons, a few words, Save.
+  await flag.click();
+  await page.locator('.flagbox-chip[data-reason="quantity"]').click();
+  await page.locator('.flagbox-chip[data-reason="example"]').click();
+  await page.locator('.flagbox-chip[data-reason="word"]').click(); await page.locator('.flagbox-chip[data-reason="word"]').click();
+  await page.locator('.flagbox-note').fill('  sāpō   or sapō? ');
+  // For a stranger with an account, the same flag as a GitHub issue, filled in.
+  const issue = page.locator('.flagbox-alt a');
+  await issue.evaluate(link => { link.addEventListener('click', event => event.preventDefault()); link.click(); });
+  const address = new URL(await issue.getAttribute('href'));
+  assert.equal(address.origin + address.pathname, 'https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/issues/new');
+  assert.equal(address.searchParams.get('title'), 'Correction: soap');
+  assert.match(address.searchParams.get('body'), new RegExp(`c/soap\\.html\\nRevision: ${rev}\\n\\nWhat looks wrong: vowel length, example\\n\\nsāpō   or sapō\\?`));
+  const before = Date.now();
+  await page.locator('.flagbox-save').click();
+  assert.equal(await page.locator('.flagbox').count(), 0);
+  const saved = (await verdicts()).soap;
+  assert.deepEqual({ ...saved, t: 0 }, { v: 'flag', r: ['quantity', 'example'], n: 'sāpō or sapō?', t: 0, rev });
+  assert.ok(saved.t >= before);
+  assert.equal(await flag.getAttribute('aria-pressed'), 'true');
+  const state = /^You flagged this, \d+ [A-Z][a-z]+: vowel length, example\. sāpō or sapō\? Kept on this device until you send it: Review\.$/;
+  assert.match(await page.locator('.verdict-state').textContent(), state);
+  assert.equal(await page.locator('.verdict-state a').getAttribute('href'), '../review.html');
+  assert.equal(await overflows(), false);
+  // It is there on return, and the box opens with what was said.
+  await page.reload();
+  assert.match(await page.locator('.verdict-state').textContent(), state);
+  assert.equal(await page.locator('.verdict-flag').getAttribute('aria-pressed'), 'true');
+  await page.locator('.verdict-flag').click();
+  assert.deepEqual(await page.locator('.flagbox-chip[aria-pressed="true"]').allTextContents(), ['vowel length', 'example']);
+  assert.equal(await page.locator('.flagbox-note').inputValue(), 'sāpō or sapō?');
+  // Changed, then withdrawn.
+  await page.locator('.flagbox-chip[data-reason="example"]').click();
+  await page.locator('.flagbox-save').click();
+  assert.deepEqual((await verdicts()).soap.r, ['quantity']);
+  await page.locator('.verdict-flag').click();
+  await page.locator('.flagbox-withdraw').click();
+  assert.deepEqual(await verdicts(), {});
+  assert.equal(await page.locator('.verdict-state').count(), 0);
+  assert.equal(await page.locator('.verdict-flag').getAttribute('aria-pressed'), 'false');
+  // A bare flag, with no reason and no words, is still a flag.
+  await page.locator('.verdict-flag').click();
+  await page.locator('.flagbox-save').click();
+  assert.match(await page.locator('.verdict-state').textContent(), /^You flagged this, \d+ [A-Z][a-z]+\. Kept on this device/);
+  await forgetReview();
+});
+
+test('in editor mode an entry is marked right in one tap; a verdict holds only for the text it was given on', async () => {
+  await beginReview();
+  await openReview();
+  const editor = page.locator('#r-editor');
+  assert.equal(await editor.getAttribute('aria-checked'), 'false', 'off by default');
+  assert.equal(await page.locator('#r-counts [data-count="ok"]').count(), 0);
+  await editor.click();
+  assert.equal(await editor.getAttribute('aria-checked'), 'true');
+  assert.equal((await kept('lexicon-review')).editor, true);
+  assert.equal(await reviewCount('ok'), 0);
+  await settle();
+  await page.goto(pageUrl('c/soap.html'));
+  const rev = await revisionOf();
+  const ok = page.locator('.verdict-ok');
+  assert.equal(await ok.textContent(), 'Looks right');
+  assert.equal(await ok.getAttribute('aria-pressed'), 'false');
+  // One tap, no box.
+  await ok.click();
+  assert.equal(await page.locator('.flagbox').count(), 0);
+  assert.deepEqual({ ...(await verdicts()).soap, t: 0 }, { v: 'ok', r: [], n: '', t: 0, rev });
+  assert.equal(await page.locator('.verdict-ok').getAttribute('aria-pressed'), 'true');
+  assert.match(await page.locator('.verdict-state').textContent(), /^You marked this right, \d+ [A-Z][a-z]+\. Kept on this device until you send it: Review\.$/);
+  // A flag takes its place; "looks right" again takes the flag's.
+  await page.locator('.verdict-flag').click();
+  await page.locator('.flagbox-chip[data-reason="meaning"]').click();
+  await page.locator('.flagbox-save').click();
+  assert.equal((await verdicts()).soap.v, 'flag');
+  assert.equal(await page.locator('.verdict-ok').getAttribute('aria-pressed'), 'false');
+  await page.locator('.verdict-ok').click();
+  assert.equal((await verdicts()).soap.v, 'ok');
+  // Tapped again, it is withdrawn.
+  await page.locator('.verdict-ok').click();
+  assert.deepEqual(await verdicts(), {});
+  // A verdict given on another text of the record does not stand for this one.
+  await keep('lexicon-review', { editor: true, verdicts: { soap: { v: 'ok', r: [], n: '', t: Date.now() - 86400000, rev: 'deadbeef' } } });
+  await settle();
+  await page.reload();
+  assert.match(await page.locator('.verdict-state').textContent(), /^This entry has changed since you gave your verdict \(\d+ [A-Z][a-z]+\)\.$/);
+  assert.equal(await page.locator('.verdict-ok').getAttribute('aria-pressed'), 'false');
+  await page.locator('.verdict-ok').click();
+  assert.equal((await verdicts()).soap.rev, rev);
+  // Out of editor mode the mark is not offered, though the verdict is still shown.
+  await keep('lexicon-review', { editor: false, verdicts: await verdicts() });
+  await settle();
+  await page.reload();
+  assert.equal(await page.locator('.verdict-ok').count(), 0);
+  assert.match(await page.locator('.verdict-state').textContent(), /^You marked this right/);
+  await forgetReview();
+});
+
+test('the queue: what was looked up, then what was practised, then the rest by category; Skip and Next lead on', async () => {
+  await page.setViewportSize({ width: 390, height: 760 });
+  await beginReview({ editor: true });
+  await page.goto(pageUrl('c/tickle.html'));           // looked up
+  await keep('lexicon-practice', { cards: { bone: { b: 2, due: Date.now() + 86400000, t: Date.now() } }, at: Date.now() });
+  await settle();
+  await openReview();
+  const total = await page.evaluate(() => window.lexiconPractice.cards.length);
+  const first = await page.evaluate(() => { const data = window.lexiconPractice; return data.cards.find(card => card.k === data.categories[0][0] && !['tickle', 'bone'].includes(card.i)).i; });
+  assert.equal(await reviewCount('done'), 0);
+  assert.equal(await reviewCount('left'), total);
+  const queue = () => page.locator('#r-queue a').evaluateAll(links => links.map(link => [link.getAttribute('href'), link.querySelector('.r-why').textContent]));
+  const listed = await queue();
+  assert.equal(listed.length, 20);
+  assert.deepEqual(listed.slice(0, 3), [['c/tickle.html?review=1', 'looked up'], ['c/bone.html?review=1', 'practised'],
+    [`c/${first}.html?review=1`, await page.evaluate(() => window.lexiconPractice.categories[0][1])]]);
+  await page.locator('#r-more').click();
+  assert.equal(await page.locator('#r-queue a').count(), 40);
+  // Start opens the first; its controls stay at the foot of the screen, with Skip beside them.
+  assert.equal(await page.locator('#r-start').getAttribute('href'), 'c/tickle.html?review=1');
+  await page.locator('#r-start').click();
+  await page.waitForURL(/c\/tickle\.html\?review=1$/);
+  const bar = await page.locator('.verdict-bar').boundingBox();
+  assert.ok(Math.abs(bar.y + bar.height - 760) < 1 && bar.x === 0 && bar.width === 390, 'the controls are at the foot of the screen');
+  assert.equal(await overflows(), false);
+  const onward = page.locator('.verdict-next');
+  assert.equal(await onward.textContent(), 'Skip');
+  // A verdict, then Next: the next in the queue, opened the same way.
+  await page.locator('.verdict-ok').click();
+  assert.equal(await onward.textContent(), 'Next');
+  assert.ok((await onward.boundingBox()).height >= 44);
+  assert.match(await page.locator('.verdict-state').textContent(), /^You marked this right, \d+ [A-Z][a-z]+\.$/);
+  await onward.click();
+  await page.waitForURL(/c\/bone\.html\?review=1$/);
+  // Skip goes on without a verdict; a flag in the queue leads on like a mark.
+  await page.locator('.verdict-next').click();
+  await page.waitForURL(new RegExp(`c/${first}\\.html\\?review=1$`));
+  await page.locator('.verdict-flag').click();
+  assert.equal(await overflows(), false);
+  await page.locator('.flagbox-chip[data-reason="source"]').click();
+  await page.locator('.flagbox-save').click();
+  assert.equal(await page.locator('.verdict-next').textContent(), 'Next');
+  assert.match(await page.locator('.verdict-next').getAttribute('href'), /^[a-z0-9-]+\.html\?review=1$/);
+  // Back on the review page: what was judged has left the queue, what was skipped stands at its end.
+  await openReview();
+  assert.equal(await reviewCount('left'), total - 2);
+  assert.equal(await reviewCount('ok'), 1);
+  assert.equal(await reviewCount('flag'), 1);
+  const hrefs = (await queue()).map(row => row[0]);
+  assert.equal(hrefs.includes('c/tickle.html?review=1') || hrefs.includes('c/bone.html?review=1') || hrefs.includes(`c/${first}.html?review=1`), false);
+  assert.equal(await page.evaluate(() => JSON.parse(sessionStorage.getItem('lexicon-review-queue')).pop()), 'bone');
+  // An entry opened in the ordinary way has no bar and no Skip.
+  await page.goto(pageUrl('c/bone.html'));
+  assert.equal(await page.locator('.verdict-bar, .verdict-next').count(), 0);
+  // A verdict on a text that has since changed puts the entry back in the queue.
+  const all = await kept('lexicon-review');
+  all.verdicts.tickle.rev = 'deadbeef';
+  await keep('lexicon-review', all);
+  await settle();
+  await openReview();
+  assert.equal((await queue())[0][0], 'c/tickle.html?review=1');
+  assert.equal(await reviewCount('ok'), 0);
+  assert.match(await page.locator('#r-pending').textContent(), /1 marked right has changed since: it wants reading again\./);
+  await forgetReview();
+});
+
+test('the report: every verdict not yet sent, as text and JSON; shared, copied or opened as an issue; Sent keeps them as sent', async () => {
+  await beginReview({ editor: true });
+  const revs = {};
+  for (const id of ['soap', 'tickle', 'bone']) { await page.goto(pageUrl(`c/${id}.html`)); revs[id] = await revisionOf(); }
+  const t = Date.now() - 3600e3;
+  await keep('lexicon-review', { editor: true, verdicts: {
+    soap: { v: 'flag', r: ['quantity', 'source'], n: 'sāpō or sapō?', t, rev: revs.soap },
+    tickle: { v: 'ok', r: [], n: '', t: t + 1000, rev: revs.tickle },
+    bone: { v: 'ok', r: [], n: '', t: t + 2000, rev: 'deadbeef' } } });   // given on an earlier text: not sent
+  await settle();
+  await openReview();
+  assert.deepEqual([await reviewCount('flag'), await reviewCount('ok')], [1, 1]);
+  assert.match(await page.locator('#r-pending').textContent(), /^soap: vowel length, source sāpō or sapō\?Marked right: 11 marked right has changed since/);
+  assert.equal(await page.locator('#r-report-box').isVisible(), false);
+  await page.evaluate(() => { navigator.share = async data => { window.shared = data; }; });
+  await page.locator('#r-build').click();
+  const text = await page.locator('#r-report').inputValue();
+  // A few lines to read…
+  assert.match(text, /^Lexicon review report, \d+ [A-Z][a-z]+ 20\d\d: 1 marked right, 1 flagged\.\nTo apply it: python3 scripts\/apply_review\.py/);
+  assert.match(text, /\nFlagged:\n- soap \(c\/soap\.html\): vowel length, source\. “sāpō or sapō\?”\n\nMarked right: tickle\n/);
+  // …and the verdicts for scripts/apply_review.py.
+  const block = /```json\n([\s\S]*?)\n```$/.exec(text);
+  assert.ok(block, 'the report ends with a fenced JSON block');
+  const report = JSON.parse(block[1]);
+  assert.equal(report['lexicon-review'], 1);
+  const day = new Date(t), two = n => String(n).padStart(2, '0'), date = `${day.getFullYear()}-${two(day.getMonth() + 1)}-${two(day.getDate())}`;
+  assert.deepEqual(report.verdicts, [
+    { id: 'soap', rev: revs.soap, verdict: 'flag', reasons: ['quantity', 'source'], note: 'sāpō or sapō?', t, date },
+    { id: 'tickle', rev: revs.tickle, verdict: 'ok', reasons: [], note: '', t: t + 1000, date }]);
+  // Share where the device has it; an issue filled in from a link.
+  assert.equal(await page.locator('#r-share').isVisible(), true);
+  await page.locator('#r-share').click();
+  assert.equal(await page.evaluate(() => window.shared.text), text);
+  const issue = new URL(await page.locator('#r-issue').getAttribute('href'));
+  assert.equal(issue.origin + issue.pathname, 'https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/issues/new');
+  assert.equal(issue.searchParams.get('body'), text);
+  assert.equal(await page.locator('#r-status').textContent(), '');
+  assert.equal(await page.locator('#r-copy').isVisible(), true);
+  // Sent: nothing waits to go, and nothing is lost.
+  await page.locator('#r-sent').click();
+  assert.deepEqual([await reviewCount('flag'), await reviewCount('ok')], [0, 0]);
+  assert.equal(await page.locator('#r-report-box').isVisible(), false);
+  assert.equal(await page.locator('#r-build').isVisible(), false);
+  assert.equal(await page.locator('#r-send-help').textContent(), 'Nothing to send.');
+  const stored = await verdicts();
+  assert.ok(stored.soap.sent > t && stored.tickle.sent > t && !('sent' in stored.bone));
+  assert.equal(stored.soap.n, 'sāpō or sapō?');
+  assert.equal(await reviewCount('waiting'), 2);
+  await settle();
+  await page.goto(pageUrl('c/tickle.html'));
+  assert.match(await page.locator('.verdict-state').textContent(), /^You marked this right, \d+ [A-Z][a-z]+\. Sent\.$/);
+  // A report that was lost can be sent again.
+  await openReview();
+  assert.match(await page.locator('#r-waiting').textContent(), /^2 sent, not yet on the site\. Send again$/);
+  await page.locator('#r-waiting button').click();
+  assert.deepEqual([await reviewCount('flag'), await reviewCount('ok')], [1, 1]);
+  // A report too long for a link is copied, not opened.
+  const many = await page.evaluate(() => Object.fromEntries(window.lexiconPractice.cards.slice(0, 150).map(card => [card.i, { v: 'flag', r: ['other'], n: 'a note of some length, as a reader would write it', t: Date.now(), rev: card.h }])));
+  await keep('lexicon-review', { editor: true, verdicts: many });
+  await settle();
+  await openReview();
+  await page.locator('#r-build').click();
+  assert.match(await page.locator('#r-status').textContent(), /^The report is too long to open as an issue/);
+  assert.equal(new URL(await page.locator('#r-issue').getAttribute('href')).searchParams.get('body'), null);
+  assert.equal(JSON.parse(/```json\n([\s\S]*?)\n```$/.exec(await page.locator('#r-report').inputValue())[1]).verdicts.length, 150);
+  await forgetReview();
+});
+
+test('a practice card is flagged, or marked right by the editor, without leaving the round or losing the step back', async () => {
+  await page.setViewportSize({ width: 390, height: 760 });
+  await openPractice();
+  await keep('lexicon-review', { editor: true, verdicts: {} });
+  await listDeck(['train', 'soap']);
+  await startRound();
+  await page.locator('#g-show').click();
+  await page.locator('#g-got').click();
+  await page.locator('#g-show').click();
+  const card = await shownCard();
+  const rev = await page.evaluate(id => window.lexiconPractice.cards.find(c => c.i === id).h, card);
+  const flag = page.locator('#g-verdict .verdict-flag'), ok = page.locator('#g-verdict .verdict-ok');
+  assert.equal(await flag.getAttribute('aria-label'), 'Flag');
+  assert.deepEqual([await flag.getAttribute('aria-pressed'), await ok.getAttribute('aria-pressed')], ['false', 'false']);
+  for (const control of [flag, ok]) assert.ok((await control.boundingBox()).height >= 44 && (await control.boundingBox()).width >= 44);
+  // The flag's box comes up over the round; its keys are its own.
+  await flag.click();
+  const sheet = page.locator('.flagsheet[open]');
+  await sheet.waitFor();
+  assert.equal(await overflows(), false);
+  const box = await sheet.boundingBox();
+  assert.ok(box.y + box.height <= 760 + 1 && box.width <= 390);
+  await sheet.locator('.flagbox-chip[data-reason="example"]').click();
+  await sheet.locator('.flagbox-note').fill('12 z');
+  await page.keyboard.press('1');
+  assert.equal(await sheet.locator('.flagbox-note').inputValue(), '12 z1');
+  assert.ok(parseFloat(await sheet.locator('.flagbox-note').evaluate(el => getComputedStyle(el).fontSize)) >= 16);
+  assert.deepEqual((await sheet.locator('button').evaluateAll(nodes => nodes.map(n => n.getBoundingClientRect().height))).filter(h => h < 44), []);
+  await sheet.locator('.flagbox-save').click();
+  assert.equal(await page.locator('.flagsheet').count(), 0);
+  assert.deepEqual({ ...(await verdicts())[card], t: 0 }, { v: 'flag', r: ['example'], n: '12 z1', t: 0, rev });
+  // The round is as it was: the same card, its answer shown, the step back still offered.
+  assert.equal(await gameOpen(), true);
+  assert.equal(await shownCard(), card);
+  assert.equal(await page.locator('#g-marks').isVisible(), true);
+  assert.equal(await page.locator('#g-pos').textContent(), '2 / 2');
+  assert.equal(await page.locator('#g-undo').isVisible(), true);
+  assert.equal(card in (await kept('lexicon-practice')).cards, false, 'the card itself is not marked');
+  assert.equal(await page.locator('#g-verdict .verdict-flag').getAttribute('aria-pressed'), 'true');
+  // Escape closes the box, not the round.
+  await page.locator('#g-verdict .verdict-flag').click();
+  await page.locator('.flagsheet[open]').waitFor();
+  await page.keyboard.press('Escape');
+  await page.locator('.flagsheet').waitFor({ state: 'detached' });
+  assert.equal(await gameOpen(), true);
+  // The editor's mark, in one tap.
+  await page.locator('#g-verdict .verdict-ok').click();
+  assert.equal((await verdicts())[card].v, 'ok');
+  assert.equal(await page.locator('#g-verdict .verdict-ok').getAttribute('aria-pressed'), 'true');
+  assert.equal(await shownCard(), card);
+  // The step back still goes to the card before, and the verdict is on the card when it returns.
+  await page.locator('#g-undo').click();
+  assert.notEqual(await shownCard(), card);
+  await page.locator('#g-got').click();
+  await page.locator('#g-show').click();
+  assert.equal(await shownCard(), card);
+  assert.equal(await page.locator('#g-verdict .verdict-ok').getAttribute('aria-pressed'), 'true');
+  // A reader who is not the editor has the flag alone.
+  await keep('lexicon-review', { editor: false, verdicts: {} });
+  await settle();
+  await page.reload();
+  await page.locator('#p-game[open]').waitFor();
+  assert.equal(await page.locator('#g-verdict .verdict-flag').count(), 1);
+  assert.equal(await page.locator('#g-verdict .verdict-ok').count(), 0);
+  await forgetReview();
+});
+
+test('the review is in Latin unless English was chosen for practice; its page fits a phone in both', async () => {
+  for (const [width, height] of [[390, 760], [320, 568]]) {
+    await page.setViewportSize({ width, height });
+    for (const language of [null, 'en']) {
+      await beginReview({ editor: true, language });
+      await page.goto(pageUrl('c/soap.html'));
+      const rev = await revisionOf();
+      await keep('lexicon-review', { editor: true, verdicts: { soap: { v: 'flag', r: ['quantity'], n: 'a note long enough to wrap over the line on a narrow phone', t: Date.now(), rev } } });
+      await settle();
+      await openReview();
+      assert.equal(await page.locator('html').getAttribute('lang'), language || 'la');
+      await page.locator('#r-build').click();
+      assert.equal(await overflows(), false, `review.html overflows at ${width}px (${language})`);
+      const small = await page.evaluate(() => [...document.querySelectorAll('.review button, .review a, .review textarea')]
+        .filter(el => el.getClientRects().length).map(el => [el.textContent.trim().slice(0, 24) || el.id, Math.round(el.getBoundingClientRect().height)]).filter(([, h]) => h < 44));
+      assert.deepEqual(small, [], `review.html at ${width}px (${language})`);
+      assert.ok(parseFloat(await page.locator('#r-report').evaluate(el => getComputedStyle(el).fontSize)) >= 16);
+    }
+  }
+  // Latin, the default.
+  await beginReview({ editor: true, language: null });
+  await openReview();
+  assert.equal(await page.locator('h1').textContent(), 'Recēnsiō');
+  assert.equal(await page.title(), 'Recēnsiō · Lexicon Latīnitātis Cotīdiānae');
+  assert.equal(await page.locator('#r-editor').textContent(), 'Recēnsor sum');
+  assert.equal(await page.locator('#r-build').count(), 1);
+  assert.equal(await page.locator('#r-send-h').textContent(), 'Mitte');
+  assert.deepEqual(await page.locator('header.site-top, footer.site-foot').evaluateAll(nodes => nodes.map(n => n.lang)), ['en', 'en']);
+  await page.locator('#r-start').click();
+  await page.waitForURL(/\?review=1$/);
+  assert.equal(await page.locator('.verdict').getAttribute('lang'), 'la');
+  assert.deepEqual(await page.locator('.verdict-row > *').allTextContents(), ['Notā', 'Rēctē', 'Praeterī']);
+  await page.locator('.verdict-flag').click();
+  assert.equal(await page.locator('.flagbox-ask').textContent(), 'Quid vitiī est?');
+  assert.deepEqual(await page.locator('.flagbox-chip').allTextContents(), ['verbum', 'quantitās', 'sēnsus', 'exemplum', 'fōns', 'aliud']);
+  await page.locator('.flagbox-chip[data-reason="quantity"]').click();
+  await page.locator('.flagbox-save').click();
+  assert.match(await page.locator('.verdict-state').textContent(), /^Notāvistī diē \d+ [A-Z][a-zāī]+: quantitās\.$/);
+  assert.equal(await page.locator('.verdict-next').textContent(), 'Proxima');
+  await page.locator('.verdict-ok').click();
+  assert.match(await page.locator('.verdict-state').textContent(), /^«Rēctē» dīxistī diē \d+ [A-Z][a-zāī]+\.$/);
+  // The report is in English whatever the page's language, and Sent is "Missa".
+  await openReview();
+  await page.locator('#r-build').click();
+  assert.match(await page.locator('#r-report').inputValue(), /^Lexicon review report, .*: 1 marked right, 0 flagged\./);
+  assert.equal(await page.locator('#r-sent').textContent(), 'Missa');
+  // The page's own switch changes the language for practice too.
+  await page.locator('#r-lang button[data-lang="en"]').click();
+  assert.equal(await page.locator('h1').textContent(), 'Review');
+  assert.equal(await page.evaluate(() => localStorage.getItem('lexicon-practice-lang')), 'en');
+  // Without scripts the page says how things stand and where to report a problem.
+  const context = await browser.newContext({ javaScriptEnabled: false });
+  const plain = await context.newPage();
+  await plain.goto(pageUrl('review.html'));
+  assert.match(await plain.locator('.r-static').textContent(), /^Reviewed by the editor: [\d,]+; drafts: [\d,]+\./);
+  assert.equal(await plain.locator('#review').isVisible(), false);
+  await plain.goto(pageUrl('c/soap.html'));
+  assert.equal(await plain.locator('.suggest a').isVisible(), true, 'the way to GitHub stands in for the flag');
+  await context.close();
+  await forgetReview();
 });
 
 // The clock ---------------------------------------------------------------------------------------

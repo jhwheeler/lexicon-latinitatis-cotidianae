@@ -208,3 +208,224 @@ Things to look at again:
 | 1986 | hiberna | new record `winter-quarters` (winter quarters): *hīberna*. |
 | 1988 | invictus | new record `invincible` (invincible): *invictus*. |
 | 1993 | refugio | added to `escape` (escape) as *refugiō*. |
+
+## Batch 2: from rank 2,001 (15 November 2026)
+
+Scope: the lemmas the coverage script reported as not covered, in rank order from 2,003 to 2,761 (196 lemmas). Outdoor and farm words are now part of this sweep (*pābulum, jūmentum, āridus, fēcundus*).
+
+Result: 185 Latin words entered: 95 new records, and 90 terms added to existing records. Eleven lemmas were not entered (in the table). By the script’s count after this batch, 3 of the first 2,000 are still not covered (*resistō*, *arvum*, the neuter plural *praesentia*) and 975 of the first 5,000. The next missing lemma is *impotēns* (rank 2,765).
+
+Method, as in batch 1, with these differences:
+
+- Every example this round is one of Lewis & Short’s quotations (the loci collections were not searched), with house macrons and j, cited as Lewis & Short gives it and marked so.
+- Where Lewis & Short’s reference to Cicero has a chapter number only, it was not used, since it cannot be turned into a section number without the text. Three references that had first been converted by guesswork were taken out again before the commit.
+- A word went into an existing record when that record’s headword or one of its “also” words is the English meaning; the placements were read one by one and about twenty were changed to a new record where the existing one meant something else (*plāga* is not “blow” as of the wind, *polluō* is not the “defile” that is a mountain pass).
+
+Things to look at again:
+
+- **arvum** is still not entered: it was left to the outdoor pass in batch 1 and is below this batch’s starting rank. It is the first word for the next batch.
+- **resistō** was looked for again. The Perseus XML in the `PerseusDL/lexica` repository (`lat.ls.perseus-eng1.xml`, 77 MB) has no entry with `key="resisto"`: the keys run from *resipisco* straight to *resistentia*, so the article is missing from the Perseus digitisation itself and from everything made from it. Logeion, Latinitium and lsj.gr are closed to this session, and a web search found no other copy. Not entered.
+- **Aliases.** `ALIASES` in `scripts/latin_coverage.py` now also maps *saluber* to *salūbris* and *materies* to *māteria*.
+- **Nouns and adjectives in verb records, and the reverse.** Several words stand as alternatives in a record of another part of speech, as the lexicon already does (*ultiō* in `get-even`, *rīsus* with the verb for laughing, *jussus* in `order-command`, *flagrō* in `fire`, *purpura* in `purple`). The first recommended term of each record is unchanged.
+- **rabiēs** is headed *rabiēs (rabiem, rabiē)*, since Lewis & Short says the other cases do not occur.
+- **prīmōrdium** is written with a long *ō* as a compound of *ōrdior*; Lewis & Short leaves the vowel unmarked.
+- **tribūnīcius** has a long *ī* (Lewis & Short).
+
+| Rank | Lemma | What was done |
+| ---: | --- | --- |
+| 2003 | fugo | added to `drive-away` (drive away) as *fugō*. |
+| 2004 | horreo | new record `bristle-verb` (bristle): *horreō*. |
+| 2012 | lacero | added to `tear` (tear) as *lacerō*. |
+| 2021 | aduoco | new record `call-in` (call in): *advocō*. |
+| 2024 | pabulum | new record `fodder` (fodder): *pābulum*. |
+| 2037 | indo | new record `put-into` (put into): *indō*. |
+| 2040 | prodeo | new record `come-out` (come out): *prōdeō*. |
+| 2044 | arceo | new record `keep-off` (keep off): *arceō*. |
+| 2048 | dispergo | added to `scatter` (scatter) as *dispergō*. |
+| 2064 | solutus | added to `loose` (loose) as *solūtus*. |
+| 2065 | traduco | new record `lead-across` (lead across): *trādūcō*. |
+| 2067 | caelestis | added to `divine` (divine) as *caelestis*. |
+| 2069 | dirigo | new record `straighten` (straighten): *dīrigō*. |
+| 2072 | extendo | new record `stretch-out` (stretch out): *extendō*. |
+| 2073 | fanum | added to `shrine` (shrine) as *fānum*. |
+| 2084 | flagro | added to `fire` (fire) as *flagrō*. |
+| 2086 | inspicio | added to `examine-closely` (examine closely) as *īnspiciō*. |
+| 2089 | philosophus | added to `philosophy` (philosophy) as *philosophus*. |
+| 2091 | stringo | new record `draw-tight` (draw tight): *stringō*. |
+| 2093 | curuus | new record `curved` (curved): *curvus*. |
+| 2100 | nequitia | added to `evil` (evil) as *nēquitia*. |
+| 2101 | penetro | new record `penetrate` (penetrate): *penetrō*. |
+| 2104 | signo | added to `sign` (sign) as *signō*. |
+| 2113 | turpitudo | added to `disgrace` (disgrace) as *turpitūdō*. |
+| 2118 | denuntio | added to `announce` (announce) as *dēnūntiō*. |
+| 2121 | irrumpo | new record `burst-in` (burst in): *irrumpō*. |
+| 2122 | iussus | added to `order-command` (order) as *jussus*. |
+| 2125 | rogus | new record `funeral-pyre` (funeral pyre): *rogus*. |
+| 2129 | interpono | new record `put-between` (put between): *interpōnō*. |
+| 2131 | mentio | added to `mention` (mention) as *mentiō*. |
+| 2132 | pando | new record `spread-out` (spread out): *pandō*. |
+| 2135 | risus | new record `laughter` (laughter): *rīsus*. |
+| 2136 | sceptrum | new record `sceptre` (sceptre): *scēptrum*. |
+| 2137 | similitudo | new record `likeness` (likeness): *similitūdō*. |
+| 2139 | uasto | added to `plunder` (plunder) as *vāstō*. |
+| 2141 | antecedo | new record `go-before` (go before): *antecēdō*. |
+| 2143 | carina | not entered: Lewis & Short gives references without quotations, and the loci collections have no line. |
+| 2167 | assumo | new record `take-to-oneself` (take to oneself): *assūmō*. |
+| 2168 | attendo | added to `attention` (attention) as *attendō*. |
+| 2169 | bellua | added to `animal` (animal) as *bēlua*. |
+| 2180 | patrimonium | added to `inheritance` (inheritance) as *patrimōnium*. |
+| 2184 | saucius | added to `injure` (injure) as *saucius*. |
+| 2192 | frumentarius | added to `grain-cereal` (grain) as *frūmentārius*. |
+| 2196 | meritus | added to `earn-deserve` (earn) as *meritus*. |
+| 2200 | sublimis | new record `lofty` (lofty): *sublīmis*. |
+| 2202 | attineo | added to `concern-matter` (concern) as *attineō*. |
+| 2205 | ferreus | added to `iron` (iron) as *ferreus*. |
+| 2213 | splendor | new record `brightness` (brightness): *splendor*. |
+| 2214 | ales | added to `bird` (bird) as *āles*. |
+| 2215 | amens | added to `crazy` (crazy) as *āmēns*. |
+| 2225 | penes | new record `in-the-hands-of` (in the hands of): *penes*. |
+| 2227 | plaga | new record `blow-stroke` (blow): *plāga*. |
+| 2230 | resoluo | new record `untie` (untie): *resolvō*. |
+| 2232 | uelo | added to `cover` (cover) as *vēlō*. |
+| 2233 | uulgo | new record `make-common` (make common): *vulgō*. |
+| 2248 | tarde | added to `slowly` (slowly) as *tardē*. |
+| 2249 | adigo | new record `drive-to` (drive to): *adigō*. |
+| 2255 | impudentia | new record `shamelessness` (shamelessness): *impudentia*. |
+| 2257 | libere | new record `freely` (freely): *līberē*. |
+| 2259 | occasus | added to `sunset` (sunset) as *occāsus*. |
+| 2263 | subdo | new record `put-under` (put under): *subdō*. |
+| 2265 | ueneror | new record `revere` (revere): *veneror*. |
+| 2271 | flagito | new record `demand` (demand): *flāgitō*. |
+| 2275 | infensus | added to `hostile` (hostile) as *īnfēnsus*. |
+| 2278 | munimentum | added to `fortify` (fortify) as *mūnīmentum*. |
+| 2280 | praecipito | new record `throw-headlong` (throw headlong): *praecipitō*. |
+| 2283 | adulatio | added to `flattery` (flattery) as *adūlātiō*. |
+| 2290 | coetus | new record `gathering` (gathering): *coetus*. |
+| 2292 | daps | added to `banquet` (banquet) as *daps*. |
+| 2294 | emineo | new record `stand-out` (stand out): *ēmineō*. |
+| 2297 | innumerabilis | added to `countless` (countless) as *innumerābilis*. |
+| 2305 | submoueo | added to `drive-away` (drive away) as *summoveō*. |
+| 2309 | decurro | new record `run-down` (run down): *dēcurrō*. |
+| 2313 | muliebris | new record `womanly` (womanly): *muliebris*. |
+| 2314 | simulatio | new record `pretence` (pretence): *simulātiō*. |
+| 2315 | ultio | added to `get-even` (get even) as *ultiō*. |
+| 2318 | cieo | new record `set-in-motion` (set in motion): *cieō*. |
+| 2321 | inermis | added to `armed` (armed) as *inermis*. |
+| 2324 | modius | new record `corn-measure` (corn measure): *modius*. |
+| 2325 | perfidia | new record `treachery` (treachery): *perfidia*. |
+| 2326 | permisceo | added to `mix` (mix) as *permisceō*. |
+| 2342 | opportunus | added to `suitable` (suitable) as *opportūnus*. |
+| 2345 | tribunatus | added to `tribune` (tribune) as *tribūnātus*. |
+| 2346 | trux | new record `grim` (grim): *trux*. |
+| 2362 | sortior | new record `draw-lots` (draw lots): *sortior*. |
+| 2367 | alternus | new record `alternate` (alternate): *alternus*. |
+| 2382 | aridus | added to `dry-adjective` (dry) as *āridus*. |
+| 2387 | fictus | new record `feigned` (feigned): *fictus*. |
+| 2389 | moderatio | new record `moderation` (moderation): *moderātiō*. |
+| 2392 | perimo | added to `destroy` (destroy) as *perimō*. |
+| 2393 | perniciosus | new record `harmful` (harmful): *perniciōsus*. |
+| 2398 | uigeo | new record `thrive` (thrive): *vigeō*. |
+| 2401 | fecundus | added to `productivity` (productivity) as *fēcundus*. |
+| 2403 | interitus | added to `destroy` (destroy) as *interitus*. |
+| 2404 | largior | new record `give-generously` (give generously): *largior*. |
+| 2411 | abrumpo | new record `break-off` (break off): *abrumpō*. |
+| 2415 | expers | new record `devoid-of` (devoid of): *expers*. |
+| 2417 | fetus | added to `offspring` (offspring) as *fētus*. |
+| 2419 | intactus | new record `untouched` (untouched): *intāctus*. |
+| 2420 | nescius | added to `ignorant` (ignorant) as *nescius*. |
+| 2421 | obsum | added to `hurt` (hurt) as *obsum*. |
+| 2422 | paueo | added to `be-afraid` (be afraid) as *paveō*. |
+| 2423 | primordium | added to `beginning` (beginning) as *prīmōrdium*. |
+| 2429 | approbo | added to `approve` (approve) as *approbō*. |
+| 2432 | discutio | new record `shatter` (shatter): *discutiō*. |
+| 2441 | necto | added to `tie` (tie) as *nectō*. |
+| 2443 | permoueo | new record `move-deeply` (move deeply): *permoveō*. |
+| 2446 | tribus | new record `tribe` (tribe): *tribus*. |
+| 2452 | capesso | new record `take-in-hand` (take in hand): *capessō*. |
+| 2456 | fascis | new record `bundle` (bundle): *fascis*. |
+| 2458 | iumentum | new record `beast-of-burden` (beast of burden): *jūmentum*. |
+| 2460 | leuitas | new record `lightness` (lightness): *levitās*. |
+| 2462 | marmor | new record `marble` (marble): *marmor*. |
+| 2466 | purpura | added to `purple` (purple) as *purpura*. |
+| 2467 | recuperator | added to `regain` (regain) as *recuperātor*. |
+| 2471 | delubrum | added to `shrine` (shrine) as *dēlūbrum*. |
+| 2472 | disicio | added to `scatter` (scatter) as *disjiciō*. |
+| 2478 | languidus | new record `languid` (languid): *languidus*. |
+| 2486 | unum | skipped: a grammatical variant (the neuter of *ūnus*). |
+| 2489 | defectio | new record `revolt` (revolt): *dēfectiō*. |
+| 2490 | edico | new record `proclaim` (proclaim): *ēdīcō*. |
+| 2499 | perinde | added to `as-in-the-way-that` (as) as *perinde*. |
+| 2507 | conuoco | new record `call-together` (call together): *convocō*. |
+| 2509 | decemuir | not entered: Lewis & Short’s article is *decemvirī*; no quotation with a sure reference was found for an example. |
+| 2511 | exquiro | new record `search-out` (search out): *exquīrō*. |
+| 2520 | augur | new record `augur` (augur): *augur*. |
+| 2535 | saluber | not entered: the lexicon has the word as *salūbris*; the coverage script now counts it (ALIASES). |
+| 2537 | tribunicius | added to `tribune` (tribune) as *tribūnicius*. |
+| 2544 | formo | added to `form-shape` (form) as *fōrmō*. |
+| 2548 | maritimus | new record `maritime` (maritime): *maritimus*. |
+| 2556 | rigidus | new record `stiff` (stiff): *rigidus*. |
+| 2557 | salutaris | new record `wholesome` (wholesome): *salūtāris*. |
+| 2558 | sepelio | added to `bury` (bury) as *sepeliō*. |
+| 2561 | suppono | added to `put-under` (put under) as *suppōnō*. |
+| 2563 | accio | added to `get-fetch` (get) as *acciō*. |
+| 2564 | amplexus | added to `hug` (hug) as *amplexus*. |
+| 2567 | decimanus | not entered: no short quotation with a sure reference was found for an example. |
+| 2571 | furens | skipped: a grammatical variant (the participle of *furō*, which is in). |
+| 2572 | grauidus | added to `pregnant` (pregnant) as *gravidus*. |
+| 2576 | sancio | new record `ratify` (ratify): *sanciō*. |
+| 2579 | subsisto | new record `halt` (halt): *subsistō*. |
+| 2580 | triumpho | added to `triumph` (triumph) as *triumphō*. |
+| 2585 | decido | new record `fall-down` (fall down): *dēcidō*. |
+| 2594 | inficio | added to `dye` (dye) as *īnficiō*. |
+| 2596 | macto | new record `sacrifice` (sacrifice): *mactō*. |
+| 2597 | materies | not entered: the lexicon has *māteria*; the coverage script now counts it (ALIASES). |
+| 2599 | mitigo | new record `soften` (soften): *mītigō*. |
+| 2602 | polluo | new record `defile-pollute` (defile): *polluō*. |
+| 2603 | polus | added to `sky` (sky) as *polus*. |
+| 2604 | priuatim | added to `private-confidential` (private) as *prīvātim*. |
+| 2605 | quocumque | new record `wherever` (wherever): *quōcumque*. |
+| 2614 | conquiro | new record `seek-out` (seek out): *conquīrō*. |
+| 2616 | defungor | new record `have-done-with` (have done with): *dēfungor*. |
+| 2617 | dominatio | not entered: no quotation was found for an example. |
+| 2620 | imbuo | added to `soak` (soak) as *imbuō*. |
+| 2622 | inultus | new record `unavenged` (unavenged): *inultus*. |
+| 2631 | apto | added to `fit` (fit) as *aptō*. |
+| 2632 | audaciter | new record `boldly` (boldly): *audācter*. |
+| 2633 | benignitas | added to `favour-goodwill` (favour) as *benignitās*. |
+| 2638 | indomitus | added to `wild-animal` (wild) as *indomitus*. |
+| 2641 | nefandus | new record `unspeakable` (unspeakable): *nefandus*. |
+| 2643 | tabernaculum | added to `tent` (tent) as *tabernāculum*. |
+| 2647 | biduum | new record `two-days` (two days): *biduum*. |
+| 2652 | eloquor | new record `speak-out` (speak out): *ēloquor*. |
+| 2653 | funestus | added to `destructive` (destructive) as *fūnestus*. |
+| 2654 | generosus | new record `noble` (noble): *generōsus*. |
+| 2655 | immemor | new record `forgetful` (forgetful): *immemor*. |
+| 2659 | reprimo | added to `control-restrain` (control) as *reprimō*. |
+| 2666 | assuesco | added to `get-used-to` (get used to) as *assuēscō*. |
+| 2668 | consecro | new record `consecrate` (consecrate): *cōnsecrō*. |
+| 2670 | diffundo | added to `pour-out` (pour out) as *diffundō*. |
+| 2672 | fastidium | new record `disgust` (disgust): *fastīdium*. |
+| 2675 | iniquitas | new record `unfairness` (unfairness): *inīquitās*. |
+| 2681 | perfidus | added to `treachery` (treachery) as *perfidus*. |
+| 2688 | applico | not entered: the lexicon has it only as a term to avoid in one modern sense; its own record is left for the next batch. |
+| 2691 | assideo | new record `sit-by` (sit by): *assideō*. |
+| 2698 | imum | skipped: a grammatical variant (the neuter of *īmus*). |
+| 2699 | indulgentia | added to `humour-someone` (humour someone) as *indulgentia*. |
+| 2701 | miserabilis | new record `pitiable` (pitiable): *miserābilis*. |
+| 2704 | profundo | added to `pour-out` (pour out) as *profundō*. |
+| 2709 | sagittarius | added to `archery` (archery) as *sagittārius*. |
+| 2713 | ultimum | skipped: a grammatical variant (the neuter of *ultimus*). |
+| 2719 | dirimo | added to `separate` (separate) as *dirimō*. |
+| 2720 | dissipo | added to `scatter` (scatter) as *dissipō*. |
+| 2723 | interpres | new record `interpreter` (interpreter): *interpres*. |
+| 2726 | munitus | added to `fortify` (fortify) as *mūnītus*. |
+| 2727 | necessario | added to `necessary` (necessary) as *necessāriō*. |
+| 2729 | obliuio | added to `forget` (forget) as *oblīviō*. |
+| 2733 | rabies | added to `madness` (madness) as *rabiēs*. |
+| 2737 | triennium | new record `three-years` (three years): *triennium*. |
+| 2742 | arripio | added to `grab` (grab) as *arripiō*. |
+| 2745 | extorqueo | new record `wrench-away` (wrench away): *extorqueō*. |
+| 2749 | oppugnatio | added to `siege` (siege) as *oppugnātiō*. |
+| 2752 | tuto | added to `safe` (safe) as *tūtō*. |
+| 2753 | addico | new record `adjudge` (adjudge): *addīcō*. |
+| 2761 | conuello | added to `tear` (tear) as *convellō*. |

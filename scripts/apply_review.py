@@ -1,20 +1,26 @@
 #!/usr/bin/env python3
 """Apply a review report to the records.
 
-    python3 scripts/apply_review.py report.txt      # a report saved to a file
-    python3 scripts/apply_review.py -               # a report pasted on standard input
-    python3 scripts/apply_review.py - --by "Name"   # another reviewer than Jack
+    python3 scripts/apply_review.py report.txt               # a report saved to a file
+    python3 scripts/apply_review.py -                        # a report on standard input
+    python3 scripts/apply_review.py - --flags-only           # a report from anyone but the editor
+    python3 scripts/apply_review.py - --by "Name"            # another reviewer than Jack
 
-The editor gives his verdicts on his phone, on the entries' pages and on the backs of the practice
-cards, and review.html gathers them into one report: a few lines to read and, below them, a block
-of JSON (see docs/review.md). This script finds that block in whatever surrounds it (a chat
-message, a GitHub issue) and applies each verdict:
+Only the editor reviews (Jack, 15 November 2026). He gives his verdicts in a private page of his
+own, which saves them in its database; scripts/editor_review.py --report turns them into a report.
+A reader of the site can flag an entry, and review.html gathers the flags into a report of the
+same format: a few lines to read and, below them, a block of JSON (see docs/review.md). This script
+finds that block in whatever surrounds it (a chat message, a GitHub issue) and applies each verdict:
 
   ok    The record is marked reviewed, with the verdict's date, if it still reads as it did when
         the verdict was given (its revision is the verdict's). If it has changed since, the
         verdict is NOT applied and the record is listed: it wants reading again.
   flag  An item is added to notes/review-flags.md, newest first, for an agent to act on. A
         flagged record that was reviewed goes back to draft.
+
+A report is plain text, so anyone could write "ok" into one. Apply a report that did not come from
+the editor himself (a GitHub issue, a message from a reader) with --flags-only: its flags are
+written, and any verdict that would mark a record reviewed is left out and counted.
 
 It prints what it did and exits non-zero on a malformed report. A record's revision is
 record_revision in scripts/build.py, the same function that puts it on the page. Marking a record
@@ -43,7 +49,7 @@ Entries a reader flagged as looking wrong, newest first, written here by `script
 from a review report (see `docs/review.md`). Each line gives the record, the revision it was
 flagged on, the reasons and the reader's words. An agent acts on a flag (reads the entry against
 its sources and corrects it, or answers why it stands), then deletes its line. A corrected entry
-has a new revision, so it comes back into the editor's queue by itself.
+has a new revision, so it is a draft again and comes back to the editor by itself.
 
 <!-- flags -->
 """
@@ -112,11 +118,12 @@ def flag_line(verdict, record, changed):
             + (f' · “{note}”' if note else '') + f' <!-- {verdict["id"]} {int(verdict["t"])} -->\n')
 
 
-def apply(verdicts, root=ROOT, by='Jack'):
+def apply(verdicts, root=ROOT, by='Jack', flags_only=False):
     """Apply the verdicts to the records under root. Returns what was done, as lists of record ids:
     reviewed, already (reviewed before), changed (ok refused: the record has changed), flagged,
-    reopened (flagged and sent back to draft), repeated (a flag already written), unknown."""
-    done = {key: [] for key in ('reviewed', 'already', 'changed', 'flagged', 'reopened', 'repeated', 'unknown')}
+    reopened (flagged and sent back to draft), repeated (a flag already written), unknown, and
+    ignored (ok left out because flags_only is set: the report is not the editor's)."""
+    done = {key: [] for key in ('reviewed', 'already', 'changed', 'flagged', 'reopened', 'repeated', 'unknown', 'ignored')}
     flags_path = root / FLAGS
     flags = flags_path.read_text(encoding='utf-8') if flags_path.exists() else FLAGS_HEAD
     if MARK not in flags:
@@ -133,7 +140,9 @@ def apply(verdicts, root=ROOT, by='Jack'):
         current = builder.record_revision(record)
         write = False
         if verdict['verdict'] == 'ok':
-            if current != verdict['rev']:
+            if flags_only:
+                done['ignored'].append(key)
+            elif current != verdict['rev']:
                 done['changed'].append(key)
             elif record['review']['status'] == 'reviewed':
                 done['already'].append(key)
@@ -174,6 +183,8 @@ def summary(done):
         say('reopened', 'flagged record was reviewed and is a draft again', 'flagged records were reviewed and are drafts again')
     if done['repeated']:
         say('repeated', 'flag was written before', 'flags were written before')
+    if done['ignored']:
+        say('ignored', 'verdict of "looks right" left out: only the editor reviews', 'verdicts of "looks right" left out: only the editor reviews')
     if done['unknown']:
         say('unknown', 'record is not in the lexicon', 'records are not in the lexicon')
     if done['reviewed'] or done['reopened']:
@@ -185,6 +196,8 @@ def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument('report', help='the file holding the report, or - for standard input')
     parser.add_argument('--by', default='Jack', help='the reviewer’s name (default: Jack)')
+    parser.add_argument('--flags-only', action='store_true',
+                        help='write the flags and leave out every "looks right": for a report that is not the editor’s own')
     parser.add_argument('--root', type=Path, default=ROOT, help=argparse.SUPPRESS)
     args = parser.parse_args(argv)
     try:
@@ -193,7 +206,7 @@ def main(argv=None):
     except (Malformed, OSError) as error:
         print(f'Not applied: {error}', file=sys.stderr)
         return 1
-    print(summary(apply(verdicts, args.root, args.by)))
+    print(summary(apply(verdicts, args.root, args.by, args.flags_only)))
     return 0
 
 

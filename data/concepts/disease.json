@@ -12,7 +12,9 @@
     "ailment",
     "ills",
     "contract an illness",
-    "serious illness"
+    "serious illness",
+    "plague",
+    "pestilence"
   ],
   "domain": "corpus",
   "terms": [
@@ -70,6 +72,16 @@
         "Traupman 331"
       ],
       "comment": "Any evil or misfortune, and so a complaint of the body; plural <span lang=\"la\">mala</span>, ills."
+    },
+    {
+      "latin": "pestis, pestis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a plague, a pestilence; ruin, a curse",
+      "evidence": [
+        "Cic. ND 1.101: <span lang=\"la\">ībēs āvertunt pestem ab Aegyptō</span> (Lewis &amp; Short)",
+        "Liv. 25.19 (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -92,6 +104,11 @@
       "latin": "morbum (adversam valētūdinem) contrahere",
       "english": "to contract an illness",
       "source": "Traupman 296"
+    },
+    {
+      "latin": "ībēs āvertunt pestem ab Aegyptō",
+      "english": "the ibises keep the plague away from Egypt",
+      "source": "Cic. ND 1.101 (Lewis &amp; Short)"
     }
   ],
   "related": [
@@ -109,7 +126,8 @@
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 62, 63, 64, 296, 304, 331.",
     "Quotations from the Latinitas loci collections (loci-terentius, loci-ovidius), checked against the editions named there.",
     "Cicero, Fam. 7.26 (Purser), checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> and the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026).",
-    "Citations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them and have not been checked against an edition."
+    "Citations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them and have not been checked against an edition.",
+    "<a href=\"https://logeion.uchicago.edu/pestis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pestis</a>"
   ],
   "review": {
     "status": "draft",

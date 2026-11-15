@@ -5,7 +5,9 @@
   "also": [
     "slaves",
     "slavery",
-    "enslaved"
+    "enslaved",
+    "servitude",
+    "bondage"
   ],
   "domain": "res-publica",
   "terms": [
@@ -36,6 +38,27 @@
       "period": "classical",
       "gloss": "a slave, as property",
       "comment": "A legal word: first the formal purchase by taking in hand, then the slave so bought; it treats the person as a thing owned."
+    },
+    {
+      "latin": "servitūs, servitūtis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the condition of a slave: slavery, servitude",
+      "evidence": [
+        "Caes. BG 7.14: <span lang=\"la\">conjugēs in servitūtem abstrahī</span> (Lewis &amp; Short)",
+        "Cic. Rep. 1.68: <span lang=\"la\">līberum populum servitūte adficere</span> (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "servitium, servitiī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "slavery, servitude",
+      "evidence": [
+        "Liv. 2.23.6: <span lang=\"la\">ductus ab crēditōre in servitium</span> (Lewis &amp; Short)",
+        "Sall. Jug. 94.4 (Lewis &amp; Short)"
+      ],
+      "comment": "Not so in Cicero, who has <span lang=\"la\">servitūs</span> (Lewis &amp; Short)."
     }
   ],
   "phrases": [
@@ -48,6 +71,16 @@
       "latin": "Ulixēs domī etiam contumēliās servōrum ancillārumque pertulit",
       "english": "at home Ulysses even put up with the insults of the slaves and the maids",
       "source": "Cic. Off. 1.113 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "conjugēs in servitūtem abstrahī",
+      "english": "that their wives are dragged off into slavery",
+      "source": "Caes. BG 7.14 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "ductus ab crēditōre in servitium",
+      "english": "led off into slavery by his creditor",
+      "source": "Liv. 2.23.6 (Lewis &amp; Short)"
     }
   ],
   "related": [
@@ -55,7 +88,8 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/servus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: servus</a> · <a href=\"https://logeion.uchicago.edu/ancilla\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ancilla</a> · <a href=\"https://logeion.uchicago.edu/mancipium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mancipium</a> · <a href=\"https://logeion.uchicago.edu/servitus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: servitus</a>",
-    "Quotations from the Latinitas loci collections (loci-seneca-epistulae), checked there against the editions they name."
+    "Quotations from the Latinitas loci collections (loci-seneca-epistulae), checked there against the editions they name.",
+    "<a href=\"https://logeion.uchicago.edu/servitium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: servitium</a>"
   ],
   "review": {
     "status": "draft",

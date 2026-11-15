@@ -82,6 +82,37 @@
         "Traupman 336"
       ],
       "comment": "Traupman prints <span lang=\"la\">animam bullīre</span>; the phrase Lewis &amp; Short cites from Petronius and Seneca is with <span lang=\"la\">ēbullīre</span>."
+    },
+    {
+      "latin": "lētum, lētī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "death",
+      "register": "vōx plērumque poētica: Verg., Ov.",
+      "evidence": [
+        "Cic. Leg. 2.22: <span lang=\"la\">sōs lētō datōs dīvōs habentō</span> (Lewis &amp; Short)",
+        "Verg. A. 5.806 (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "obeō, obīre, obiī (obīvī), obitum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "meet (one’s day, death): die; go to meet, go round",
+      "evidence": [
+        "Nep. Milt. 7.6: <span lang=\"la\">diem suprēmum</span> (Lewis &amp; Short)",
+        "Cic. Phil. 5.48 (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "intereō, interīre, interiī, interitum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "perish, be lost, come to nothing; die",
+      "evidence": [
+        "Caes. BG 5.30: <span lang=\"la\">aut ferrō aut famē interīre</span> (Lewis &amp; Short)",
+        "Ov. Met. 2.305 (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -99,6 +130,21 @@
       "latin": "Moriendum enim certē est, et incertum an hōc ipsō diē.",
       "english": "For die we certainly must, and no one knows whether it will be this very day.",
       "source": "Cic. Sen. 74"
+    },
+    {
+      "latin": "sōs lētō datōs dīvōs habentō",
+      "english": "let them hold their dead to be gods (an old law, with sōs for suōs)",
+      "source": "Cic. Leg. 2.22 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "diem suprēmum obīre",
+      "english": "to meet one’s last day, to die",
+      "source": "Nep. Milt. 7.6 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "omnia mūtantur, nihil interit",
+      "english": "everything changes, nothing perishes",
+      "source": "Ov. Met. 15.165"
     }
   ],
   "related": [
@@ -113,7 +159,10 @@
     "Quotations from the Latinitas loci collections (loci-catullus, loci-varro, loci-phaedrus), checked against the editions named there.",
     "Cicero’s letters (Att. 1.6, 8.6) and <em>De senectute</em>, checked against the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026).",
     "<a href=\"https://logeion.uchicago.edu/ebullio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ebullio</a>",
-    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "<a href=\"https://logeion.uchicago.edu/letum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: letum</a>",
+    "<a href=\"https://logeion.uchicago.edu/obeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: obeo</a>",
+    "<a href=\"https://logeion.uchicago.edu/intereo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: intereo</a>"
   ],
   "review": {
     "status": "draft",

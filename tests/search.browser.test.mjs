@@ -896,7 +896,7 @@ test('a tap anywhere on a search result opens its entry', async () => {
 const PRACTICE_KEYS = ['lexicon-practice', 'lexicon-practice-deck', 'lexicon-seen', 'lexicon-lists', 'lexicon-practice-lang'];
 const forgetPractice = () => page.evaluate(keys => {
   keys.forEach(key => localStorage.removeItem(key));
-  sessionStorage.removeItem('lexicon-practice-round');
+  localStorage.removeItem('lexicon-practice-round');
 }, PRACTICE_KEYS);
 const openPractice = async (fresh = true, language = 'en') => {
   if (fresh) {
@@ -931,6 +931,31 @@ const playRound = async (mark = '#g-got') => {
   return ids;
 };
 const openGroup = id => page.locator(`.pgroup:has(#${id}) > summary`).click();
+// The start of the day n days after a moment, by the browser's clock: a day starts at 04:00.
+const dayStart = (moment, n) => page.evaluate(([at, days]) => {
+  const date = new Date(at);
+  return new Date(date.getFullYear(), date.getMonth(), date.getDate() - (date.getHours() < 4 ? 1 : 0) + days, 4).getTime();
+}, [moment, n]);
+// Chance held still, until the page is loaded again. At 0.999 nothing is shuffled, so a round is
+// its due cards (the missed first, then the longest overdue) and then its new ones, and every
+// spread wait is its longest; at 0 every spread wait is its shortest.
+const holdChance = (value = 0.999) => page.evaluate(fixed => { Math.random = () => fixed; }, value);
+// Chance that can be repeated: a small generator with a seed, in place of Math.random.
+const seedChance = seed => page.evaluate(start => {
+  let state = start >>> 0;
+  Math.random = () => { state = (state + 0x6D2B79F5) >>> 0; let x = Math.imul(state ^ (state >>> 15), 1 | state); x = (x + Math.imul(x ^ (x >>> 7), 61 | x)) ^ x; return ((x ^ (x >>> 14)) >>> 0) / 4294967296; };
+}, seed);
+// Show each card of the round and mark it "Got it"; for each its id and what it was called (new, due, lapsed).
+const playAndNote = async () => {
+  const seen = [];
+  while (await page.locator('#g-show').isVisible()) {
+    const status = await page.locator('#g-status').textContent();
+    await page.locator('#g-show').click();
+    seen.push({ id: await shownCard(), status });
+    await page.locator('#g-got').click();
+  }
+  return seen;
+};
 // A deck of the reader's own, so that a test knows its cards.
 const listDeck = async (items, extra = {}) => {
   await keep('lexicon-lists', [{ id: 'l1', name: 'Test', items }]);
@@ -960,12 +985,13 @@ test('a practice round: a layer of its own, the Latin on request, a mark that is
   assert.equal(await page.locator('#g-cue').getAttribute('lang'), 'en');
   const first = await shownCard();
   assert.match(first, /^[a-z0-9-]+$/);
-  // Got it: a new card that is right first time comes back in a day.
+  // Got it: a new card that is right first time was known already, and comes back in three or
+  // four days, at the start of the day.
   const before = Date.now();
   await page.locator('#g-got').click();
   let saved = (await kept('lexicon-practice')).cards;
-  assert.equal(saved[first].b, 2);
-  assert.ok(saved[first].due >= before + 23 * 3600e3 && saved[first].t >= before);
+  assert.equal(saved[first].b, 3);
+  assert.ok([await dayStart(before, 3), await dayStart(before, 4)].includes(saved[first].due) && saved[first].t >= before);
   assert.equal(await page.locator('#g-pos').textContent(), '2 / 12');
   // The keyboard: Space shows, 1 is Again (back in ten minutes), 2 is Got it.
   await page.evaluate(() => document.activeElement.blur());
@@ -980,7 +1006,7 @@ test('a practice round: a layer of its own, the Latin on request, a mark that is
   await page.keyboard.press('Enter');
   const third = await shownCard();
   await page.keyboard.press('2');
-  assert.equal((await kept('lexicon-practice')).cards[third].b, 2);
+  assert.equal((await kept('lexicon-practice')).cards[third].b, 3);
   // The rest of the round, then its summary.
   const rest = await playRound();
   assert.equal(rest.length, 9);
@@ -993,7 +1019,7 @@ test('a practice round: a layer of its own, the Latin on request, a mark that is
   // The way out leads to the lobby, with its meter brought up to date.
   await page.locator('#g-exit').click();
   assert.equal(await gameOpen(), false);
-  assert.match(await page.locator('#p-meter-text').textContent(), /^0 known · 12 learning · [\d,]+ new$/);
+  assert.match(await page.locator('#p-meter-text').textContent(), /^11 known · 1 learning · [\d,]+ new$/);
   assert.equal(await page.locator('#p-start').textContent(), 'Start');
   // Opened again, nothing marked is due, so none of it comes back.
   await openPractice(false);
@@ -1005,22 +1031,22 @@ test('a practice round: a layer of its own, the Latin on request, a mark that is
   // Another round from the end of one.
   await page.locator('#g-next').click();
   assert.equal(await page.locator('#g-pos').textContent(), '1 / 12');
-  // Once its time has come, a card is due, and due cards come first.
+  // Once its time has come, a card is due, and is in the next round, among the new ones.
   await page.evaluate(id => {
     const progress = JSON.parse(localStorage.getItem('lexicon-practice'));
     progress.cards[id].due = Date.now() - 1000;
     localStorage.setItem('lexicon-practice', JSON.stringify(progress));
-    sessionStorage.removeItem('lexicon-practice-round');
+    localStorage.removeItem('lexicon-practice-round');
   }, first);
   await settle();
   await openPractice(false);
   assert.equal((await deckCount())[1], 1);
   await startRound();
-  assert.equal(await page.locator('#g-status').textContent(), 'due');
-  await page.locator('#g-show').click();
-  assert.equal(await shownCard(), first);
-  await page.locator('#g-got').click();
-  assert.equal((await kept('lexicon-practice')).cards[first].b, 3);
+  const again = await playAndNote();
+  assert.equal(again.length, 12);
+  assert.deepEqual(again.filter(card => card.status === 'due').map(card => card.id), [first]);
+  assert.equal(again.filter(card => card.status === 'new').length, 11);
+  assert.equal((await kept('lexicon-practice')).cards[first].b, 4);
   await forgetPractice();
 });
 
@@ -1128,11 +1154,13 @@ test('one step back: a mark is undone, for a new card and for a known one, until
   const known = { b: 4, due: Date.now() - 5000, t: 5 };
   await keep('lexicon-practice', { cards: { soap: known }, at: 5 });
   await listDeck(['train', 'soap', 'bone']);
+  await holdChance();
   await startRound();
   const undo = page.locator('#g-undo');
   const cards = async () => (await kept('lexicon-practice')).cards;
   assert.equal(await undo.isVisible(), false, 'nothing to undo yet');
-  // The known card is due, so it comes first: Got it, then back, and its record is as it was.
+  // The known card is due and, the round not being shuffled here, comes first: Got it, then back,
+  // and its record is as it was.
   await page.locator('#g-show').click();
   assert.equal(await shownCard(), 'soap');
   await page.locator('#g-got').click();
@@ -1156,7 +1184,7 @@ test('one step back: a mark is undone, for a new card and for a known one, until
   await page.locator('#g-show').click();
   const fresh = await shownCard();
   await page.locator('#g-got').click();
-  assert.equal((await cards())[fresh].b, 2);
+  assert.equal((await cards())[fresh].b, 3);
   await page.keyboard.press('z');
   assert.equal(fresh in (await cards()), false);
   assert.equal(await shownCard(), fresh);
@@ -1180,6 +1208,313 @@ test('one step back: a mark is undone, for a new card and for a known one, until
   await undo.click();
   assert.equal(await shownCard(), last);
   assert.equal(last in (await cards()), false);
+  await forgetPractice();
+});
+
+// Spacing (Jack, 15 November 2026) ------------------------------------------------------------
+// A page of its own, on Sofia's time, whose clock the test sets; the helpers above act on it
+// meanwhile. The time stands still at what was set, so a record's times can be compared exactly.
+const sofia = (day, time) => new Date(`2026-11-${day}T${time}:00+02:00`).getTime();   // 16 November 2026 is a Monday
+const withClock = async run => {
+  const context = await browser.newContext({ viewport: { width: 1280, height: 900 }, serviceWorkers: 'block', timezoneId: 'Europe/Sofia' });
+  const shared = page;
+  page = await context.newPage();
+  // The clock is set, and the lobby opened at that time: the cards due then.
+  const at = async moment => { await page.clock.setFixedTime(new Date(moment)); await openPractice(false); return (await deckCount())[1]; };
+  try { await page.clock.setFixedTime(new Date(sofia(16, '20:00'))); await run(at); } finally { page = shared; await context.close(); }
+};
+// Play the round: "Again" for these ids, "Got it" for the rest; then leave it. What each card was called.
+const playMissing = async (...missed) => {
+  const called = {};
+  await startRound();
+  while (await page.locator('#g-show').isVisible()) {
+    const status = await page.locator('#g-status').textContent();
+    await page.locator('#g-show').click();
+    const id = await shownCard();
+    called[id] = status;
+    await page.locator(missed.includes(id) ? '#g-again' : '#g-got').click();
+  }
+  const end = await page.locator('#g-end').textContent();
+  await page.locator('#g-exit').click();
+  return { called, end };
+};
+const progressCards = async () => (await kept('lexicon-practice')).cards;
+// The round as it is kept for the visit: its cards in order.
+const roundIds = async () => { const round = await page.evaluate(() => JSON.parse(localStorage.getItem('lexicon-practice-round'))); return [round.current, ...round.queue]; };
+
+test('the round outlives the visit: an entry opened from its card leads back to it, a new visit takes it up, and after twelve hours it is gone', async () => {
+  await openPractice();
+  await startRound();
+  await page.locator('#g-show').click();
+  const card = await shownCard();
+  // The entry opened from the card has a quiet link back to the round, in the practice's language.
+  await page.locator('#g-entry').click();
+  await page.waitForURL(new RegExp(`c/${card}\\.html$`));
+  const back = page.locator('.round-back a');
+  assert.equal(await back.textContent(), '← Back to the round');
+  assert.equal(await back.getAttribute('lang'), 'en');
+  assert.equal((await back.boundingBox()).height >= 44, true);
+  await page.evaluate(() => localStorage.removeItem('lexicon-practice-lang'));
+  await page.reload();
+  assert.equal(await back.textContent(), '← Redī ad cursum');
+  assert.equal(await back.getAttribute('lang'), 'la');
+  await page.evaluate(() => localStorage.setItem('lexicon-practice-lang', 'en'));
+  // Another entry has none.
+  await page.goto(pageUrl(`c/${card === 'soap' ? 'bone' : 'soap'}.html`));
+  assert.equal(await page.locator('.round-back').count(), 0);
+  // A new visit, as after a sheet over the app on an iPhone: nothing of the session is left and
+  // there is nothing to go back to. The link leads to the round, at that card, its answer shown.
+  await page.goto(pageUrl(`c/${card}.html`));
+  await page.evaluate(() => sessionStorage.clear());
+  await back.click();
+  await page.locator('#p-game[open]').waitFor();
+  assert.equal(await shownCard(), card);
+  assert.equal(await page.locator('#g-marks').isVisible(), true);
+  // So does the practice page opened afresh, with nothing of the session left.
+  await page.evaluate(() => sessionStorage.clear());
+  await page.goto(pageUrl('practice.html'));
+  await page.locator('#p-game[open]').waitFor();
+  assert.equal(await shownCard(), card);
+  // A round the version before left in sessionStorage is taken up once, and moved.
+  await page.evaluate(() => {
+    const round = JSON.parse(localStorage.getItem('lexicon-practice-round'));
+    delete round.at;
+    sessionStorage.setItem('lexicon-practice-round', JSON.stringify(round));
+    localStorage.removeItem('lexicon-practice-round');
+  });
+  await page.reload();
+  await page.locator('#p-game[open]').waitFor();
+  assert.equal(await shownCard(), card);
+  assert.equal(await page.evaluate(() => sessionStorage.getItem('lexicon-practice-round')), null);
+  // Two hours on, the lobby offers the round and does not open it by itself; the entry still leads back.
+  const age = hours => page.evaluate(h => {
+    const round = JSON.parse(localStorage.getItem('lexicon-practice-round'));
+    round.at = Date.now() - h * 3600e3;
+    localStorage.setItem('lexicon-practice-round', JSON.stringify(round));
+  }, hours);
+  await age(2);
+  await page.goto(pageUrl('practice.html'));
+  await page.locator('#practice:not([hidden])').waitFor();
+  assert.equal(await page.locator('#p-game[open]').count(), 0);
+  assert.equal(await page.locator('#p-start').textContent(), 'Continue');
+  await page.goto(pageUrl(`c/${card}.html`));
+  assert.equal(await page.locator('.round-back').count(), 1);
+  // Thirteen hours on it is gone, from the entry and from the lobby.
+  await age(13);
+  await page.reload();
+  assert.equal(await page.locator('.round-back').count(), 0);
+  await page.goto(pageUrl('practice.html'));
+  await page.locator('#practice:not([hidden])').waitFor();
+  assert.equal(await page.locator('#p-start').textContent(), 'Start');
+  assert.equal(await page.evaluate(() => localStorage.getItem('lexicon-practice-round')), null);
+  await forgetPractice();
+});
+
+test('spacing: a missed word comes back the same day, the next day, then three days on; a word known at sight after three or four days', async () => {
+  await withClock(async at => {
+    const monday = sofia(16, '20:00');
+    await openPractice();
+    await listDeck(['soap', 'bone']);
+    await holdChance();   // every spread wait is its longest
+    // Monday 20:00: soap is missed; bone, never seen before, is known.
+    let round = await playMissing('soap');
+    assert.deepEqual(round.called, { soap: 'new', bone: 'new' });
+    let cards = await progressCards();
+    assert.deepEqual(cards.soap, { b: 0, due: monday + 600e3, t: monday }, 'missed: the first box, ten minutes');
+    assert.deepEqual(cards.bone, { b: 3, due: sofia(20, '04:00'), t: monday }, 'known at sight: the 3-day box, due at the start of Friday');
+    assert.equal(round.end, 'Round done: Got it 1, Again 1. Nothing is due. The next card comes back within the hour. «Again»: sāpō');
+    // Ten minutes later it is due, and not before. Got right, it skips the hour and waits for the next day.
+    assert.equal(await at(sofia(16, '20:09')), 0);
+    assert.equal(await at(sofia(16, '20:10')), 1);
+    round = await playMissing();
+    assert.deepEqual(round.called, { soap: 'lapsed' });
+    assert.deepEqual((await progressCards()).soap, { b: 2, due: sofia(17, '04:00'), t: sofia(16, '20:10') }, 'relearnt: the 1-day box, due from the start of Tuesday');
+    assert.equal(round.end, 'Round done: Got it 1, Again 0. Nothing is due. The next card comes back in 8 hours.');
+    // Not again on Monday, however late; Tuesday begins at 04:00, and at 17:00, 21 hours after the mark, the word is due.
+    assert.equal(await at(sofia(16, '23:59')), 0);
+    assert.equal(await at(sofia(17, '03:59')), 0);
+    assert.equal(await at(sofia(17, '04:00')), 1);
+    assert.equal(await at(sofia(17, '17:00')), 1);
+    await holdChance();
+    round = await playMissing();
+    assert.deepEqual(round.called, { soap: 'due' });
+    assert.deepEqual((await progressCards()).soap, { b: 3, due: sofia(21, '04:00'), t: sofia(17, '17:00') }, 'up a box: three or four days, here four');
+    assert.equal(round.end, 'Round done: Got it 1, Again 0. Nothing is due. The next card comes back in 3 days.', 'bone, on Friday: days of the calendar');
+    // A card got right in the 1-day box is not shown again that day, nor the next.
+    assert.equal(await at(sofia(17, '23:00')), 0);
+    assert.equal(await at(sofia(18, '17:00')), 0);
+    // The word known at sight on Monday comes back on Friday, the other on Saturday.
+    assert.equal(await at(sofia(20, '03:59')), 0);
+    assert.equal(await at(sofia(20, '04:00')), 1);
+    assert.equal(await at(sofia(21, '04:00')), 2);
+    await forgetPractice();
+  });
+});
+
+test('spacing: a day starts at 04:00, so a session after midnight belongs to the evening before', async () => {
+  await withClock(async at => {
+    // 01:00 on Tuesday is still Monday.
+    const night = sofia(17, '01:00');
+    await page.clock.setFixedTime(new Date(night));
+    await openPractice();
+    await listDeck(['soap', 'bone']);
+    await holdChance(0);   // every spread wait is its shortest
+    await playMissing('soap');
+    assert.deepEqual((await progressCards()).bone, { b: 3, due: sofia(19, '04:00'), t: night }, 'three days after Monday: Thursday');
+    assert.equal(await at(sofia(17, '01:10')), 1);
+    const round = await playMissing();
+    assert.deepEqual((await progressCards()).soap, { b: 2, due: sofia(17, '04:00'), t: sofia(17, '01:10') }, 'the next day begins at 04:00 the same morning');
+    assert.equal(round.end, 'Round done: Got it 1, Again 0. Nothing is due. The next card comes back in 3 hours.');
+    assert.equal(await at(sofia(17, '03:59')), 0);
+    assert.equal(await at(sofia(17, '09:00')), 1);
+    // Marked at 04:00 or after, a card belongs to the new day.
+    await holdChance(0);
+    await playMissing();
+    assert.deepEqual((await progressCards()).soap, { b: 3, due: sofia(20, '04:00'), t: sofia(17, '09:00') });
+    await forgetPractice();
+  });
+});
+
+test('spacing: the longer waits are spread over whole days, and a card missed in any box starts again', async () => {
+  await withClock(async at => {
+    const now = sofia(16, '20:00'), ids = ['soap', 'bone', 'train', 'judge', 'cooking-pot', 'perhaps'];
+    const stored = () => ({ cards: Object.fromEntries(ids.map((id, n) => [id, { b: n + 1, due: now - 1000, t: 5 }])), at: 5 });
+    const days = async chance => {
+      await keep('lexicon-practice', stored());
+      await listDeck(ids);
+      await holdChance(chance);
+      await playMissing();
+      const cards = await progressCards();
+      return ids.map(id => [cards[id].b, (cards[id].due - sofia(16, '04:00')) / 86400e3]);
+    };
+    await openPractice();
+    // From the boxes 1 to 6: the hour box (a card of the hub's) goes to the 1-day box; the top box stays the top.
+    assert.deepEqual(await days(0), [[2, 1], [3, 3], [4, 6], [5, 14], [6, 30], [6, 30]]);
+    assert.deepEqual(await days(0.999), [[2, 1], [3, 4], [4, 8], [5, 18], [6, 40], [6, 40]]);
+    // With chance as it comes, each wait is a whole number of days within its bounds.
+    await keep('lexicon-practice', stored());
+    await listDeck(ids);
+    await seedChance(7);
+    await playMissing('judge');
+    const cards = await progressCards();
+    const bounds = { soap: [1, 1], bone: [3, 4], train: [6, 8], 'cooking-pot': [30, 40], perhaps: [30, 40] };
+    for (const [id, [fewest, most]] of Object.entries(bounds)) {
+      const wait = (cards[id].due - sofia(16, '04:00')) / 86400e3;
+      assert.ok(Number.isInteger(wait) && wait >= fewest && wait <= most, `${id}: ${wait}`);
+    }
+    assert.deepEqual(cards.judge, { b: 0, due: now + 600e3, t: now }, 'missed in the 7-day box: the first box, ten minutes');
+    await forgetPractice();
+  });
+});
+
+test('spacing: at most half of a round is repetition while the deck has new words, and the two are mixed', async () => {
+  await openPractice();
+  const [total] = await deckCount();
+  // Thirty words with a record, all due: three missed a few minutes ago, two due ten days ago, the rest yesterday.
+  const now = Date.now(), day = 86400e3;
+  const ids = await page.evaluate(() => {
+    const heads = new Set();
+    return window.lexiconPractice.cards.filter(card => !card.t).filter(card => { const head = /^(.+?)(?=\s*(?:,|\(|$))/.exec(card.l)[1]; return !heads.has(head) && heads.add(head); })
+      .slice(0, 30).map(card => card.i);
+  });
+  const missed = ids.slice(0, 3), old = ids.slice(3, 5), yesterday = ids.slice(5);
+  const stored = { cards: {}, at: 5 };
+  missed.forEach(id => { stored.cards[id] = { b: 0, due: now - 60e3, t: now - 660e3 }; });
+  old.forEach(id => { stored.cards[id] = { b: 4, due: now - 10 * day, t: now - 17 * day }; });
+  yesterday.forEach(id => { stored.cards[id] = { b: 2, due: now - day, t: now - 2 * day }; });
+  await keep('lexicon-practice', stored);
+  await settle();
+  // Two rounds from the same state, each with its own chance.
+  const begin = async seed => {
+    await page.evaluate(() => localStorage.removeItem('lexicon-practice-round'));
+    await openPractice(false);
+    await seedChance(seed);
+    await startRound();
+    return roundIds();
+  };
+  const first = await begin(1);
+  assert.deepEqual(await deckCount(), [total, 30, total - 30]);
+  assert.equal(first.length, 12);
+  const due = first.filter(id => ids.includes(id));
+  assert.equal(due.length, 6, 'six repetitions');
+  assert.equal(first.filter(id => !ids.includes(id)).length, 6, 'six new words');
+  // Which repetitions: the missed ones, then the longest overdue, then one of yesterday's.
+  assert.deepEqual(due.filter(id => missed.includes(id)).sort(), [...missed].sort());
+  assert.deepEqual(due.filter(id => old.includes(id)).sort(), [...old].sort());
+  assert.equal(due.filter(id => yesterday.includes(id)).length, 1);
+  // Mixed: not the repetitions and then the new words, nor the other way round.
+  const turns = round => round.filter((id, n) => n && ids.includes(id) !== ids.includes(round[n - 1])).length;
+  assert.ok(turns(first) > 1, first.map(id => (ids.includes(id) ? 'd' : 'n')).join(''));
+  // No two cards of a round share a Latin headword.
+  const headsOf = round => page.evaluate(list => list.map(id => /^(.+?)(?=\s*(?:,|\(|$))/.exec(window.lexiconPractice.cards.find(card => card.i === id).l)[1]), round);
+  assert.equal(new Set(await headsOf(first)).size, 12);
+  // Another time, the same rule gives another round: other new words, another of yesterday's, another order.
+  const others = [await begin(2), await begin(3)], second = others[1];
+  for (const round of others) {
+    assert.equal(round.filter(id => ids.includes(id)).length, 6);
+    assert.deepEqual(round.filter(id => missed.includes(id) || old.includes(id)).sort(), [...missed, ...old].sort());
+    assert.notDeepEqual(round, first);
+    assert.notDeepEqual(round.filter(id => !ids.includes(id)).sort(), first.filter(id => !ids.includes(id)).sort());
+  }
+  assert.ok(new Set([first, ...others].map(round => round.find(id => yesterday.includes(id)))).size > 1, 'among cards due on the same day the choice is by chance');
+  // The round played: the cards are called what they are, and what was not taken is still waiting.
+  const played = await playAndNote();
+  assert.deepEqual(played.map(card => card.id), second);
+  assert.deepEqual(played.map(card => card.status), second.map(id => (missed.includes(id) ? 'lapsed' : ids.includes(id) ? 'due' : 'new')));
+  assert.equal(await page.locator('#g-end').textContent(), `Round done: Got it 12, Again 0. 24 due now, ${(total - 36).toLocaleString('en')} new.`);
+  assert.equal(await page.locator('#g-next').isVisible(), true);
+  // The next round again has six of each, and nothing that was just marked.
+  await page.locator('#g-next').click();
+  const third = await roundIds();
+  assert.equal(third.filter(id => ids.includes(id)).length, 6);
+  assert.equal(third.some(id => second.includes(id)), false, 'nothing of the round just played');
+  await forgetPractice();
+});
+
+test('spacing: with no new words left a round is all repetitions, and with few new ones the due fill it', async () => {
+  await openPractice();
+  const ids = await page.evaluate(() => {
+    const heads = new Set();
+    return window.lexiconPractice.cards.filter(card => !card.t).filter(card => { const head = /^(.+?)(?=\s*(?:,|\(|$))/.exec(card.l)[1]; return !heads.has(head) && heads.add(head); })
+      .slice(0, 14).map(card => card.i);
+  });
+  const now = Date.now();
+  const due = list => ({ cards: Object.fromEntries(list.map((id, n) => [id, { b: 2, due: now - (n + 1) * 86400e3, t: 5 }])), at: 5 });
+  // Fourteen words, all due: twelve of them, the longest overdue, and no new one.
+  await keep('lexicon-practice', due(ids));
+  await listDeck(ids);
+  assert.deepEqual(await deckCount(), [14, 14, 0]);
+  await seedChance(3);
+  await startRound();
+  let round = await roundIds();
+  assert.deepEqual([...round].sort(), ids.slice(2).sort(), 'the two due most lately wait for the next round');
+  assert.notDeepEqual(round, ids.slice(2).reverse(), 'and they are not in the order of their dates');
+  let played = await playAndNote();
+  assert.deepEqual([...new Set(played.map(card => card.status))], ['due']);
+  assert.equal(await page.locator('#g-end').textContent(), 'Round done: Got it 12, Again 0. 2 due now.');
+  await page.locator('#g-exit').click();
+  // Twelve due and two new: six repetitions, the two new words, and four more repetitions to fill the round.
+  await keep('lexicon-practice', due(ids.slice(0, 12)));
+  await listDeck(ids);
+  assert.deepEqual(await deckCount(), [14, 12, 2]);
+  await seedChance(3);
+  await startRound();
+  round = await roundIds();
+  assert.equal(round.length, 12);
+  assert.deepEqual(round.filter(id => ids.indexOf(id) >= 12).sort(), ids.slice(12).sort());
+  assert.deepEqual(round.filter(id => ids.indexOf(id) < 12).sort(), ids.slice(2, 12).sort());
+  // Three due and the deck full of new words: the three, and nine new.
+  await keep('lexicon-practice', due(ids.slice(0, 3)));
+  await keep('lexicon-practice-deck', { kind: ['w'], part: [], cat: [], src: [], mine: [] });
+  await page.evaluate(() => localStorage.removeItem('lexicon-practice-round'));
+  await settle();
+  await openPractice(false);
+  assert.deepEqual((await deckCount()).slice(1), [3, (await deckCount())[0] - 3]);
+  await startRound();
+  played = await playAndNote();
+  assert.equal(played.length, 12);
+  assert.deepEqual(played.filter(card => card.status === 'due').map(card => card.id).sort(), ids.slice(0, 3).sort());
+  assert.equal(played.filter(card => card.status === 'new').length, 9);
   await forgetPractice();
 });
 
@@ -1236,7 +1571,7 @@ test('the practice interface is in Latin unless English is chosen; the two marks
   }
   assert.equal(origins.judge, 'aetātis classicae · Phaedr. 3.13.3; Traupman 195, 335');
   assert.equal(origins['play-dough'], 'locūtiō nostra');
-  assert.match(await page.locator('#g-end').textContent(), /^Cursus cōnfectus: «Teneō» 2, «Iterum» 0\. Nihil hīc repetendum\. Proxima charta redībit post diem\.$/);
+  assert.match(await page.locator('#g-end').textContent(), /^Cursus cōnfectus: «Teneō» 2, «Iterum» 0\. Nihil hīc repetendum\. Proxima charta redībit post [34] diēs\.$/);
   assert.equal(await page.locator('#g-early').textContent(), 'Repete tamen nunc');
   await page.locator('#g-exit').click();
   // English on request, kept on the device.
@@ -1251,7 +1586,7 @@ test('the practice interface is in Latin unless English is chosen; the two marks
   assert.equal(await page.locator('#p-start').textContent(), 'Practise early');
   await page.locator('#p-lang button[data-lang="la"]').click();
   assert.equal(await page.locator('#p-start').textContent(), 'Repete tamen nunc');
-  assert.equal(await page.locator('#p-state').textContent(), 'Nihil hīc repetendum. Proxima charta redībit post diem.');
+  assert.match(await page.locator('#p-state').textContent(), /^Nihil hīc repetendum\. Proxima charta redībit post [34] diēs\.$/);
   // The display options write the Latin their way, the interface's too, and leave the English alone.
   await page.evaluate(() => { localStorage.setItem('lexicon-macrons', 'off'); localStorage.setItem('lexicon-j', 'i'); });
   await settle();
@@ -1392,7 +1727,7 @@ test('words looked up are remembered on the device and can be practised', async 
   const ids = await playRound();
   assert.deepEqual([...ids].sort(), ['cooking-pot', 'how-are-you', 'soap']);
   // Nothing due and nothing new: when the next card comes back, and practising early.
-  assert.equal(await page.locator('#g-end').textContent(), 'Round done: Got it 3, Again 0. Nothing is due. The next card comes back in a day.');
+  assert.match(await page.locator('#g-end').textContent(), /^Round done: Got it 3, Again 0\. Nothing is due\. The next card comes back in [34] days\.$/);
   assert.equal(await page.locator('#g-next').isVisible(), false);
   await page.locator('#g-early').click();
   assert.equal(await page.locator('#g-pos').textContent(), '1 / 3');
@@ -1401,7 +1736,7 @@ test('words looked up are remembered on the device and can be practised', async 
   await page.locator('#g-close').click();
   assert.equal(await page.locator('#p-start').textContent(), 'Continue');
   await page.locator('#p-kind button[data-id="p"]').click(); await page.locator('#p-kind button[data-id="p"]').click();
-  assert.equal(await page.locator('#p-state').textContent(), 'Nothing is due. The next card comes back in a day.');
+  assert.match(await page.locator('#p-state').textContent(), /^Nothing is due\. The next card comes back in [34] days\.$/);
   assert.equal(await page.locator('#p-start').textContent(), 'Practise early');
   // Only the 500 most recent are kept.
   await page.evaluate(() => {
@@ -1648,7 +1983,7 @@ test('a strip of paper stands where a phone’s status bar is, and has no height
 // What the review keeps on the device; each test starts and ends without it.
 const forgetReview = () => page.evaluate(keys => {
   ['lexicon-review', ...keys].forEach(key => localStorage.removeItem(key));
-  sessionStorage.removeItem('lexicon-practice-round');
+  localStorage.removeItem('lexicon-practice-round');
 }, PRACTICE_KEYS);
 // A fresh device, reading in English (Latin, the default, has a test of its own).
 const beginReview = async ({ language = 'en' } = {}) => {

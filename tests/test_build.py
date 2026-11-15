@@ -256,6 +256,59 @@ class BuildTests(unittest.TestCase):
         self.assertIn('url(fonts/lexicon-serif-400.woff2)', outputs['assets/lexicon.css'])
         self.assertIsInstance(outputs['assets/fonts/lexicon-serif-400.woff2'], bytes)
 
+    def test_how_the_practice_works_is_a_guidance_page_with_every_source_linked(self):
+        outputs = builder.build_site(self.root)
+        page = outputs['how-practice-works.html']
+        self.assertIn('<title>How the practice works · Lexicon Latīnitātis Cotīdiānae</title>', page)
+        self.assertEqual(page.count('<h1'), 1)
+        self.assertIn('<h1 class="page-title">How the practice works</h1>', page)
+        self.assertIn('<link rel="canonical" href="https://jhwheeler.github.io/lexicon-latinitatis-cotidianae/how-practice-works.html">', page)
+        self.assertNotIn('{{', page)
+        # A guidance page like How we decide: the shell's header and footer, and no script but the page's own.
+        self.assertEqual(re.findall(r'<script src="([^"]+)"', page), ['assets/lexicon.js'])
+        self.assertIn('<form class="head-search" role="search" action="index.html" method="get">', page)
+        # It leads back to Practice and to How we decide, and both lead to it.
+        main = page[page.index('<main'):page.index('</main>')]
+        self.assertIn('<a href="practice.html">Practice</a>', main)
+        self.assertIn('<a href="how-we-decide.html">How we decide</a>', main)
+        self.assertIn('<a href="how-practice-works.html" hreflang="en" data-t="how">How the practice works</a>', outputs['practice.html'])
+        script = outputs['assets/practice.js']
+        self.assertIn("how: 'Quā ratiōne repetātur',", script)
+        self.assertIn("how: 'How the practice works',", script)
+        # Every source in the list is linked, and the text cites exactly the sources the list has.
+        sources = main[main.index('<section id="sources">'):]
+        entries = re.findall(r'<li id="(s-[\w-]+)">(.*?)</li>', sources, re.S)
+        self.assertGreaterEqual(len(entries), 10)
+        for key, entry in entries:
+            with self.subTest(source=key):
+                self.assertRegex(entry, r'<a href="https://[^"]+">')
+        cited = set(re.findall(r'<a href="#(s-[\w-]+)">', main))
+        self.assertEqual(cited, {key for key, _ in entries})
+        # It states the rules the practice script has: the numbers on the page are the script's.
+        for constant in ('ROUND = 12, ROUND_DUE = 6,', 'AGAIN_WAIT = HOUR / 6,', 'DAY_STARTS = 4;',
+                         'WAIT_DAYS = [null, null, [1, 1], [3, 4], [6, 8], [14, 18], [30, 40], [70, 90], [150, 210], [300, 420]];',
+                         'ROUND_DUE_MORE = [[72, 10], [36, 8]];'):
+            self.assertIn(constant, script)
+        for said in ('A round is 12 cards', 'at most half of a round', 'due again in 10 minutes', 'due the next day',
+                     'in 3–4 days, 6–8, 14–18 and 30–40, then in 70–90, 150–210 and 300–420', 'more than 36 waiting, 8 of the 12', 'more than 72, 10',
+                     'starting at 04:00'):
+            self.assertIn(said, main)
+        # In the sitemap, kept on the device by the service worker, and in the footer of every page.
+        self.assertIn('cotidianae/how-practice-works.html</loc>', outputs['sitemap.xml'])
+        files = json.loads(re.search(r'const FILES = (\[.*?\]);', outputs['sw.js'])[1])
+        self.assertIn('how-practice-works.html', files)
+        self.assertIn('how-we-decide.html', files)
+        for path, up in (('index.html', ''), ('c/perhaps.html', '../'), ('k/sermo.html', '../'), ('l/fortasse.html', '../'),
+                         ('practice.html', ''), ('how-practice-works.html', '')):
+            with self.subTest(path=path):
+                foot = outputs[path][outputs[path].rindex('<footer'):]
+                self.assertIn(f'<a href="{up}rulings.html">Rulings</a> · <a href="{up}how-practice-works.html">How the practice works</a> · ', foot)
+                self.assertNotIn('how-practice-works', outputs[path][outputs[path].index('<header class="site-top'):outputs[path].index('</header>')])
+        # No request to another site: the page loads only the lexicon's own files.
+        self.assertEqual(re.findall(r'(?:src|<link[^>]*href)="(https?:[^"]+)"', page.replace(
+            '<link rel="canonical" href="https://jhwheeler.github.io/lexicon-latinitatis-cotidianae/how-practice-works.html">', '')), [])
+        builder.check_links(outputs)
+
     def test_old_single_page_links_lead_to_the_new_pages(self):
         outputs = builder.build_site(self.root)
         index = outputs['index.html']
@@ -295,15 +348,15 @@ class BuildTests(unittest.TestCase):
         self.assertNotIn('head-search', index)
         self.assertNotIn('<nav', header(index))
         self.assertIn('<p class="foot-links"><a href="how-we-decide.html">How we decide</a> · <a href="rulings.html">Rulings</a> · '
-                      '<a href="#about">About</a> · ', index)
+                      '<a href="how-practice-works.html">How the practice works</a> · <a href="#about">About</a> · ', index)
         record = outputs['c/kind.html']
         self.assertIn('<form class="head-search" role="search" action="../index.html" method="get">', header(record))
         self.assertIn('name="q"', header(record))
         self.assertIn('data-theme-choice="dark"', header(record))
         self.assertNotIn('<nav', header(record))
         self.assertIn('<a href="../how-we-decide.html">How we decide</a> · <a href="../rulings.html">Rulings</a> · '
-                      '<a href="../index.html#about">About</a>', record)
-        for path in ('words.html', 'latin.html', 'rulings.html', 'how-we-decide.html', 'l/caccabus.html'):
+                      '<a href="../how-practice-works.html">How the practice works</a> · <a href="../index.html#about">About</a>', record)
+        for path in ('words.html', 'latin.html', 'rulings.html', 'how-we-decide.html', 'how-practice-works.html', 'l/caccabus.html'):
             up = '../' if '/' in path else ''
             self.assertIn(f'<form class="head-search" role="search" action="{up}index.html" method="get">', outputs[path], path)
             self.assertIn(f'<a href="{up}index.html#about">About</a>', outputs[path], path)

@@ -75,7 +75,7 @@ Jack's principle (13 November 2026): a word or phrase we came up with (a term wh
 - An ordinary combination of attested words (*crēta colōrāta*, *pīsa viridia*, *grūs lūsōria*) is not a coinage and not a term: put it among the record's `phrases` as a composed example.
 - A coinage that is needed says why in its `comment`: what was searched and found wanting.
 - Household words Jack has ruled on stay (pyjamas are *vestis nocturna*; the playground is *lūsōrium*). Never delete or replace a word a comment calls the household word or our family's own word; ask.
-- The builder refuses a record with a `recommended` term of period `ours` beside a `recommended` term of another period. It does not yet require a reason on every `ours` term: the pass of 13 November 2026 covered the coinages standing beside an attested term, and Jack ruled on the doubtful ones on 14 November (`notes/coinages-2026-11-13.md`); those in records with no attested term are still to do.
+- The builder refuses a record with a `recommended` term of period `ours` beside a `recommended` term of another period. It does not yet require a reason on every `ours` term: the pass of 13 November 2026 covered the coinages standing beside an attested term, and Jack ruled on the doubtful ones on 14 November (`notes/coinages-2026-11-13.md`); those in records with no attested term (219 records) were checked on 15 November 2026 (`notes/coinages-2026-11-15-a.md`, `-b.md`): where nothing attested answers the concept, an ordinary description stays as the record's term, still marked ours, and its comment says that it is a description and what was searched. The doubtful ones are listed in those notes for Jack.
 
 See "Coinages only where needed" in `docs/records.md`.
 

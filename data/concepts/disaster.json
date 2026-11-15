@@ -7,7 +7,9 @@
     "misfortune",
     "catastrophe",
     "ruin",
-    "mishap"
+    "mishap",
+    "trouble (in store)",
+    "a hiding"
   ],
   "domain": "verba",
   "terms": [
@@ -21,6 +23,18 @@
         "Cic. Cat. 1.11: <span lang=\"la\">perniciem meam cum magnā calamitāte reī pūblicae esse conjūnctam</span> (Lewis &amp; Short)"
       ],
       "comment": "The farmers’ word for a ruined crop, hail or blight (Donatus on Ter. Eun. 79, where a courtesan is <span lang=\"la\">nostrī fundī calamitās</span>, the ruin of our farm)."
+    },
+    {
+      "latin": "īnfortūnium, īnfortūniī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "misfortune; in comedy mostly the punishment or thrashing in store for someone",
+      "register": "vōx plērumque cōmica: Plaut., Ter.; Liv. semel",
+      "evidence": [
+        "Plaut. Amph. 286: <span lang=\"la\">inveniēs īnfortūnium</span>",
+        "Liv. 1.50.9: <span lang=\"la\">habitūrum īnfortūnium esse</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Mostly ante-classical and post-Augustan, not in Cicero or Caesar (Lewis &amp; Short)."
     }
   ],
   "phrases": [
@@ -33,6 +47,11 @@
       "latin": "Sed ecca ipsa ēgreditur, nostrī fundī calamitās.",
       "english": "But look, here she comes herself, the ruin of our farm.",
       "source": "Ter. Eun. 79"
+    },
+    {
+      "latin": "modo sīs venī hūc: inveniēs īnfortūnium",
+      "english": "just you come here: you’ll find trouble",
+      "source": "Plaut. Amph. 286"
     }
   ],
   "related": [
@@ -40,8 +59,9 @@
     "damage"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/calamitas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: calamitas</a>",
-    "Plautus, <em>Captivi</em> 911. Terence, <em>Eunuchus</em> 79."
+    "<a href=\"https://logeion.uchicago.edu/calamitas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: calamitas</a> · <a href=\"https://logeion.uchicago.edu/infortunium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: infortunium</a>",
+    "Plautus, <em>Captivi</em> 911. Terence, <em>Eunuchus</em> 79.",
+    "Plautus, <em>Amphitruo</em> 286."
   ],
   "review": {
     "status": "draft",

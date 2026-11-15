@@ -5,7 +5,9 @@
   "also": [
     "bashful",
     "timid",
-    "fearful of"
+    "fearful of",
+    "fearful",
+    "easily frightened"
   ],
   "domain": "sermo",
   "terms": [
@@ -29,15 +31,35 @@
         "Traupman 157"
       ],
       "comment": "Traupman 157 gives <span lang=\"la\">timidus</span>, which is rather “fearful”."
+    },
+    {
+      "latin": "meticulōsus (metuculōsus), meticulōsa, meticulōsum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "full of fear, timid; not “meticulous”",
+      "register": "vōx cōmica: Plaut.; posteā Apul.",
+      "evidence": [
+        "Plaut. Amph. 293: <span lang=\"la\">Nūllust hōc metuculōsus aequē.</span>",
+        "Plaut. Most. 1101: <span lang=\"la\">metuculōsa rēs</span> (there “frightening”)"
+      ],
+      "comment": "From <span lang=\"la\">metus</span>. Ante- and post-classical (Lewis &amp; Short). The English word has changed its meaning."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Nūllust hōc metuculōsus aequē.",
+      "english": "There’s no one so easily frightened as this fellow.",
+      "source": "Plaut. Amph. 293"
     }
   ],
   "related": [
     "be-afraid"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/timidus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: timidus</a>",
+    "<a href=\"https://logeion.uchicago.edu/timidus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: timidus</a> · <a href=\"https://logeion.uchicago.edu/meticulosus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: meticulosus</a>",
     "<a href=\"https://logeion.org/verecundus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: verecundus</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 157, 314."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 157, 314.",
+    "Plautus, <em>Amphitruo</em> 293; <em>Mostellaria</em> 1101."
   ],
   "review": {
     "status": "draft",

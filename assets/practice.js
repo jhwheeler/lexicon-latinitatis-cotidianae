@@ -20,7 +20,7 @@
   // to choose by, so this group leaves the phrases as they are.
   const PARTS = ['n', 'v', 'a', 'd', 'o'];
   const PART_OF = { noun: 'n', verb: 'v', adjective: 'a', adverb: 'd' };
-  // The boxes are the Leitner boxes of the drill in Jack's hub, 0 to 6, and the record kept for a
+  // The boxes begin as the Leitner boxes of the drill in Jack's hub, 0 to 6, and the record kept for a
   // card is the same ({b, due, t}), so that progress still moves between the two. How a card moves
   // through them, when it is due and what a round holds differ from the hub's since 15 November
   // 2026. Jack, having played every day (15 November 2026): the day after a long session every round
@@ -41,22 +41,33 @@
   //   o'clock on the device (04:00, so that a session late at night belongs to the evening): a
   //   card due "in 1 day" is due from the start of the next day, whatever the hour it was marked.
   // - WAIT_DAYS gives for each box the fewest and the most days: the nominal waits of 1, 3, 7, 16
-  //   and 35 days, spread from box 3 up by about 15% either way (a day at least from 7 days up),
+  //   and 35 days, then 80, 180 and 365, spread from box 3 up by about 15% either way (a day at least from 7 days up),
   //   a whole number of days chosen at random, so that cards learned together do not come back
   //   together. Box 2 is always the next day.
   // - A round has ROUND cards, of which at most ROUND_DUE are repetitions while the deck still has
-  //   new cards; the two are mixed.
-  // Two grounds for the numbers. Anki's defaults: a card answered "Good" through its learning
+  //   new cards; the two are mixed. Half and half cannot last for a reader who takes new cards
+  //   every day (a card needs three to five repetitions in its first month, so more would come
+  //   due than the rounds hold: found while the page "How the practice works" was written, 15
+  //   November 2026), so the share grows as cards wait: ROUND_DUE_MORE gives, for a number of
+  //   cards waiting, how many of the round they may take.
+  // The grounds for the numbers. Anki's defaults: a card answered "Good" through its learning
   // steps graduates to an interval of 1 day, one answered "Easy" at once to 4 days (the settings
   // are "Graduating interval" and "Easy interval" in the Anki manual, Deck Options; 1 and 4 are
-  // the values the program starts with). And the finding that what matters most is that a
-  // retrieval comes after a real delay, not the exact rate at which the gaps grow (Kang, Lindsey,
-  // Mozer & Pashler 2014, "Retrieval practice over the long term: should spacing be expanding or
-  // equal-interval?", Psychonomic Bulletin & Review 21, 1544–1550).
+  // the values the program starts with). The finding that what matters is a first retrieval after
+  // a real delay (Karpicke & Roediger 2007, "Expanding retrieval practice promotes short-term
+  // retention, but equally spaced retrieval enhances long-term retention"), and that growing gaps
+  // did not in the end do better than equal ones (Kang, Lindsey, Mozer & Pashler 2014, "Retrieval
+  // practice over the long term: should spacing be expanding or equal-interval?", Psychonomic
+  // Bulletin & Review 21, 1544–1550). And for the long waits, that vocabulary kept over years was
+  // kept better with sessions 56 days apart than 14 (Bahrick et al. 1993): the boxes above 6
+  // (about 80 days, half a year, a year) were added on 15 November 2026; until then the waits
+  // stopped at 35 days. The hub's boxes are 0 to 6, a part of these. The page
+  // how-practice-works.html sets all this out with its sources; keep the two in step.
   // "Known", in the meter, is box 3 or higher: three days or more.
-  const ROUND = 12, ROUND_DUE = 6, KNOWN = 3, TOP = 6, HOUR = 3600e3, DAY = 24 * HOUR;
+  const ROUND = 12, ROUND_DUE = 6, KNOWN = 3, TOP = 9, HOUR = 3600e3, DAY = 24 * HOUR;
+  const ROUND_DUE_MORE = [[72, 10], [36, 8]];   // with more than so many cards waiting, so many of a round
   const AGAIN_WAIT = HOUR / 6, RELEARNT = 2, NEW_KNOWN = 3, DAY_STARTS = 4;
-  const WAIT_DAYS = [null, null, [1, 1], [3, 4], [6, 8], [14, 18], [30, 40]];   // by box: [fewest, most] days; boxes 0 and 1 wait less than a day
+  const WAIT_DAYS = [null, null, [1, 1], [3, 4], [6, 8], [14, 18], [30, 40], [70, 90], [150, 210], [300, 420]];   // by box: [fewest, most] days; boxes 0 and 1 wait less than a day
   const KEY = { progress: 'lexicon-practice', deck: 'lexicon-practice-deck', seen: 'lexicon-seen', lists: 'lexicon-lists',
     lang: 'lexicon-practice-lang', round: 'lexicon-practice-round' };
   const number = n => n.toLocaleString('en');
@@ -91,7 +102,9 @@
   // "Lingua" are from his clock game. The rest is Claude's wording, composed for this page, for
   // Jack to review: first what the coordinating session wrote (title, sub, undo, close, start, the
   // kinds, src, works, mine, seen, lists, addList, name, entry, also, the periods, export, import,
-  // copy), then, marked "review" below, what was still wanted.
+  // copy), then, marked "review" below, what was still wanted. "how" (Quā ratiōne repetātur, 15
+  // November 2026) is Claude's too, awaiting Jack's review: the lobby's link to the page that says
+  // how the practice chooses and spaces its cards (how-practice-works.html, which is in English).
   const one = (n, singular, many) => `${number(n)} ${n === 1 ? singular : many}`;
   const T = {
     la: {
@@ -129,6 +142,7 @@
       backupHelp: 'Prōgressus et indicēs tuī in hōc tantum nāvigātrō servantur. Exportā, ut alibī servēs vel in alium apparātum trānsferās; cum importāveris, in singulīs chartīs respōnsum recentius valēbit.',
       exportLabel: 'Prōgressus tuus', importLabel: 'Quod exportāvistī hūc glūtinā', copied: 'Exscrīptum',
       importBad: 'Hoc nōn est prōgressus exportātus. Tōtum glūtinā.',
+      how: 'Quā ratiōne repetātur',
       importDone: (taken, older, unknown, added) => (taken === 1 ? 'Importāta 1 charta' : `Importātae ${number(taken)} chartae`)
         + (older ? `; ${number(older)} ${older === 1 ? 'relicta, hīc recentius notāta' : 'relictae, hīc recentius notātae'}` : '')
         + (unknown ? `; ${number(unknown)} in lexicō nōn ${unknown === 1 ? 'est' : 'sunt'}` : '')
@@ -169,6 +183,7 @@
       backupHelp: 'Your progress and your lists are kept on this device only. Export them as text to keep, or to move to another device; import puts them back, and for each card the later answer wins.',
       exportLabel: 'Your progress', importLabel: 'Paste the exported text here', copied: 'Copied',
       importBad: 'That is not an export of progress: paste the whole text, from the first brace to the last.',
+      how: 'How the practice works',
       importDone: (taken, older, unknown, added) => `Imported ${one(taken, 'card', 'cards')}`
         + (older ? `; ${number(older)} left as they were, marked here more recently` : '')
         + (unknown ? `; ${number(unknown)} not in the lexicon` : '')
@@ -516,7 +531,8 @@
       const order = new Map();   // for each due card: 0 if it is in box 0, then the day it was due
       pool.forEach(card => { const record = rec(card.i); if (record && record.due <= now) order.set(card, [record.b === 0 ? 0 : 1, dayStart(record.due, 0)]); });
       const due = shuffled([...order.keys()]).sort((a, b) => order.get(a)[0] - order.get(b)[0] || order.get(a)[1] - order.get(b)[1]);
-      const again = take(due, fresh.length ? ROUND_DUE : ROUND), novel = take(fresh, ROUND - again.length);
+      const share = (ROUND_DUE_MORE.find(([waiting]) => due.length > waiting) || [0, ROUND_DUE])[1];
+      const again = take(due, fresh.length ? share : ROUND), novel = take(fresh, ROUND - again.length);
       // Too few new cards to fill the round: more of the due ones, if there are any.
       queue = shuffled(again.concat(novel, take(due, ROUND - again.length - novel.length)));
     }

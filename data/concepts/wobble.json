@@ -3,7 +3,10 @@
   "english": "wobble",
   "pos": "verb",
   "also": [
-    "be loose"
+    "be loose",
+    "totter",
+    "waver",
+    "give way"
   ],
   "domain": "domus",
   "terms": [
@@ -15,17 +18,35 @@
       "evidence": [
         "M-O s.v. loose tooth"
       ]
+    },
+    {
+      "latin": "labō, labāre, labāvī, labātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "totter, be ready to fall, be loose, give way; waver",
+      "evidence": [
+        "Verg. A. 2.492: <span lang=\"la\">labat ariete crēbrō jānua</span> (Lewis &amp; Short)",
+        "Cic. Verr. 2.4.95 (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "labat ariete crēbrō jānua",
+      "english": "the door totters under the blows of the ram",
+      "source": "Verg. A. 2.492 (Lewis &amp; Short)"
     }
   ],
   "related": [
     "loose-tooth"
   ],
   "sources": [
-    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: Adumbratio</a>"
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: Adumbratio</a>",
+    "<a href=\"https://logeion.uchicago.edu/labo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: labo</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

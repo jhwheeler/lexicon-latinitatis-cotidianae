@@ -10,7 +10,8 @@
     "make available",
     "if it’s available",
     "in stock",
-    "is it available?"
+    "is it available?",
+    "on the spot"
   ],
   "domain": "verba",
   "terms": [
@@ -67,6 +68,16 @@
         "Cic. Pis. 55: togulae līctōribus ad portam praestō fuērunt (Lewis &amp; Short s.v. praestō)",
         "Traupman 114: sī praestō est, if it’s available"
       ]
+    },
+    {
+      "latin": "praestō",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "at hand, ready, present, here; mostly with esse or adesse",
+      "grammar": "adverb",
+      "evidence": [
+        "Ter. Eun. 5.8.20: <span lang=\"la\">Praestō adest</span> (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -84,6 +95,11 @@
       "latin": "Estne in prōmptū placenta ex socolātā?",
       "english": "Is chocolate cake available?",
       "source": "Traupman 68"
+    },
+    {
+      "latin": "ibi mihi Tulliola mea fuit praestō nātālī suō ipsō diē",
+      "english": "there my little Tullia was waiting to meet me, on her very birthday",
+      "source": "Cic. Att. 4.1.4"
     }
   ],
   "related": [
@@ -92,13 +108,13 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/suppeto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: suppeto</a> · <a href=\"https://logeion.uchicago.edu/promptus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: promptus (in prōmptū)</a> · <a href=\"https://logeion.uchicago.edu/parabilis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: parabilis</a> · <a href=\"https://logeion.uchicago.edu/copia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: copia</a>",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. available: easily available; available: make available.",
-    "Quotations from the Latinitas loci collections (loci-gellius, loci-quintilianus), checked against the editions named there; Terence (Ph. 113), Cicero (Fam. 15.13.2) and Caesar (BG 1.16.2) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>.",
+    "Terence (Ph. 113), Cicero (Fam. 15.13.2) and Caesar (BG 1.16.2).",
     "<a href=\"https://logeion.uchicago.edu/praesto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praesto</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 68."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

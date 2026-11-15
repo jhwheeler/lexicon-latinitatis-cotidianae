@@ -8,7 +8,9 @@
     "enclose",
     "ring",
     "surrounded by",
-    "put round"
+    "put round",
+    "pour round",
+    "flow round"
   ],
   "domain": "verba",
   "terms": [
@@ -45,6 +47,16 @@
         "Caes. BG 6.16: <span lang=\"la\">circumventī flammā exanimantur hominēs</span> (Lewis &amp; Short)",
         "Tac. Ann. 15.11 (Lewis &amp; Short)"
       ]
+    },
+    {
+      "latin": "circumfundō, circumfundere, circumfūdī, circumfūsum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "pour round; in the passive, flow round, crowd round, surround",
+      "evidence": [
+        "Liv. 30.9.12: <span lang=\"la\">mare circumfūsum urbī</span> (Lewis &amp; Short)",
+        "Cato Agr. 93: <span lang=\"la\">ad oleam circumfunditō</span> (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -67,6 +79,11 @@
       "latin": "circumventī flammā exanimantur hominēs",
       "english": "the men, surrounded by the flames, are killed",
       "source": "Caes. BG 6.16 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "ut aqua piscibus, ut sicca terrēnīs, circumfūsus nōbīs spīritus volucribus convenit",
+      "english": "as water suits the fish and dry land the creatures of the earth, so the air poured round us suits the birds",
+      "source": "Quint. 12.11.13"
     }
   ],
   "related": [
@@ -75,12 +92,12 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/cingo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cingo</a> · <a href=\"https://logeion.uchicago.edu/circumdo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: circumdo</a>",
-    "Quotations from the Latinitas loci collections (loci-tacitus, loci-seneca-epistulae, loci-vergilius), checked against the editions named there; quotations marked “Lewis &amp; Short” are copied from its citations.",
-    "<a href=\"https://logeion.uchicago.edu/circumvenio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: circumvenio</a>"
+    "<a href=\"https://logeion.uchicago.edu/circumvenio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: circumvenio</a>",
+    "<a href=\"https://logeion.uchicago.edu/circumfundo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: circumfundo</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

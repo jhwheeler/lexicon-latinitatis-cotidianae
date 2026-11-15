@@ -3,6 +3,12 @@
   "english": "get on",
   "sense": "a bicycle",
   "pos": "verb",
+  "also": [
+    "board",
+    "embark",
+    "go on board",
+    "mount"
+  ],
   "domain": "vectura",
   "terms": [
     {
@@ -10,6 +16,16 @@
       "status": "recommended",
       "period": "modern",
       "gloss": "get on a bicycle"
+    },
+    {
+      "latin": "cōnscendō, cōnscendere, cōnscendī, cōnscēnsum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "mount, climb, go up; go on board (a ship), embark",
+      "evidence": [
+        "Caes. BG 4.23 (Lewis &amp; Short)",
+        "Cic. Q. fr. 2.2.4: <span lang=\"la\">velim quam prīmum cōnscendās ad mēque veniās</span> (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -17,6 +33,11 @@
       "latin": "Nunc birotam cōnscende.",
       "english": "Now get on your bicycle.",
       "source": "composed"
+    },
+    {
+      "latin": "velim quam prīmum cōnscendās ad mēque veniās",
+      "english": "I should like you to take ship as soon as you can and come to me",
+      "source": "Cic. Q. fr. 2.2.4 (Lewis &amp; Short)"
     }
   ],
   "related": [
@@ -25,11 +46,11 @@
   ],
   "sources": [
     "<a href=\"https://www.lateinlexikon.com/lexicon_latinum_hodiernum_03_fgh.pdf\" rel=\"noopener noreferrer\" target=\"_blank\">Lexicon Latinum Hodiernum: bicycle parts</a> · <a href=\"https://neolatinlexicon.org/silva-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: Silva</a>",
-    "The example sentences marked “composed” are ours."
+    "<a href=\"https://logeion.uchicago.edu/conscendo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: conscendo</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

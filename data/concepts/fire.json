@@ -11,12 +11,13 @@
     "blaze",
     "campfire",
     "put out a fire",
-    "extinguish a fire"
+    "extinguish a fire",
+    "fiery"
   ],
+  "domain": "domus",
   "also_under": [
     "natura"
   ],
-  "domain": "domus",
   "terms": [
     {
       "latin": "ignis, ignis m.",
@@ -60,6 +61,16 @@
         "Cic. Div. 1.69: <span lang=\"la\">flagrantēs onerāriae</span> (Lewis &amp; Short)",
         "Ov. F. 6.439: <span lang=\"la\">flagrābant ignēs</span> (Lewis &amp; Short)"
       ]
+    },
+    {
+      "latin": "igneus, ignea, igneum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "of fire, fiery, burning, burning-hot",
+      "evidence": [
+        "Cic. ND 2.40: <span lang=\"la\">sīdera tōta esse ignea</span> (Lewis &amp; Short)",
+        "Verg. G. 4.426 (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -87,6 +98,11 @@
       "latin": "flagrantēs onerāriae",
       "english": "merchant ships in flames",
       "source": "Cic. Div. 1.69 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "sōl, ecce, surgit igneus: piget, pudēscit, paenitet",
+      "english": "look, the sun is rising, all fire: we are weary, ashamed, sorry",
+      "source": "Prud. Cath. 2.25–26"
     }
   ],
   "related": [
@@ -104,12 +120,12 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/ignis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ignis</a> · <a href=\"https://logeion.uchicago.edu/incendium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: incendium</a> · <a href=\"https://logeion.uchicago.edu/ardeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ardeo</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 167, 315.",
-    "Quotations from the Latinitas loci collections (loci-terentius, loci-cicero-philosophica, loci-publilius, loci-horatius), checked against the editions named there.",
-    "<a href=\"https://logeion.uchicago.edu/flagro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: flagro</a>"
+    "<a href=\"https://logeion.uchicago.edu/flagro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: flagro</a>",
+    "<a href=\"https://logeion.uchicago.edu/igneus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: igneus</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

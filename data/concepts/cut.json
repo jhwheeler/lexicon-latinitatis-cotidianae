@@ -2,6 +2,10 @@
   "id": "cut",
   "english": "cut",
   "pos": "verb",
+  "also": [
+    "cut off",
+    "lop off"
+  ],
   "domain": "culina",
   "terms": [
     {
@@ -9,6 +13,16 @@
       "status": "recommended",
       "period": "classical",
       "comment": "We do not present every English cooking verb as requiring its own distinct Latin verb."
+    },
+    {
+      "latin": "praecīdō, praecīdere, praecīdī, praecīsum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "cut off in front, cut off, lop off; cut short",
+      "evidence": [
+        "Cic. Inv. 2.59: <span lang=\"la\">manum alicui gladiō</span> (Lewis &amp; Short)",
+        "Plaut. Aul. 2.2.12 (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -16,6 +30,11 @@
       "latin": "Ego secābō; tū frustula in catīnum pōne.",
       "english": "I’ll cut; you put the pieces in the bowl.",
       "source": "composed"
+    },
+    {
+      "latin": "cum pernās ēmeris, ungulās eārum praecīditō",
+      "english": "when you have bought hams, cut off their hooves",
+      "source": "Cato Agr. 162.1"
     }
   ],
   "related": [
@@ -29,15 +48,15 @@
   "sources": [
     "<a href=\"https://alatius.com/ls/index.php?l=seco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: seco</a>",
     "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>",
-    "The example sentence marked “composed” is ours."
-  ],
-  "replaces": [
-    "entry-123",
-    "smoothie-123"
+    "<a href=\"https://logeion.uchicago.edu/praecido\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praecido</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
-  }
+  },
+  "replaces": [
+    "entry-123",
+    "smoothie-123"
+  ]
 }

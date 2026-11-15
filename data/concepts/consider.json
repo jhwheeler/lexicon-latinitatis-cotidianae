@@ -8,7 +8,9 @@
     "weigh up",
     "take into account",
     "take into consideration",
-    "mull over"
+    "mull over",
+    "deliberate",
+    "take counsel"
   ],
   "domain": "verba",
   "terms": [
@@ -75,6 +77,16 @@
         "Traupman 348: mull over, <span lang=\"la\">aestuāre in</span> (+ abl.)"
       ],
       "comment": "Literally “to seethe”; in prose, to be tossed by doubt."
+    },
+    {
+      "latin": "cōnsultō, cōnsultāre, cōnsultāvī, cōnsultātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "reflect, take counsel, deliberate",
+      "evidence": [
+        "Liv. 1.21.1: <span lang=\"la\">ad haec cōnsultanda prōcūrandaque</span> (Lewis &amp; Short)",
+        "Plaut. Bacch. 1154: <span lang=\"la\">quid illaec illīc in cōnsiliō duae sēcrētō cōnsultant?</span> (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -97,29 +109,13 @@
       "latin": "Theodōrus saxa diū spectābat, dē gigante cōgitāns quī nōn est",
       "english": "Theo looked at the rocks for a long time, thinking about the giant who isn’t there",
       "source": "Libellus II, <span lang=\"la\">Sintra: castellum et puteus</span>"
+    },
+    {
+      "latin": "quid illaec illīc in cōnsiliō duae sēcrētō cōnsultant?",
+      "english": "what are those two women over there deliberating in secret council?",
+      "source": "Plaut. Bacch. 1154 (Lewis &amp; Short)"
     }
   ],
-  "related": [
-    "consider-regard",
-    "decide",
-    "decision",
-    "think-ponder"
-  ],
-  "sources": [
-    "<a href=\"https://logeion.uchicago.edu/considero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: considero</a> · <a href=\"https://logeion.uchicago.edu/delibero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: delibero</a> · <a href=\"https://logeion.uchicago.edu/cogito\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cogito</a> · <a href=\"https://logeion.uchicago.edu/ratio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ratio</a> · <a href=\"https://logeion.uchicago.edu/aestuo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aestuo</a>",
-    "Quotations from the Latinitas loci collections (loci-gellius, loci-cicero-philosophica, loci-vulgata), checked against the editions named there.",
-    "Quotations of Terence (Parry, 1857; cited by the lines of the Oxford text) and Cicero’s letters (Purser) that are not in the loci collections were checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
-    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, with its references, in the house spelling (macrons, consonantal j); they have not been checked against a modern edition.",
-    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 9 November 2026. Examples marked “Libellus” quote those texts word for word.",
-    "<a href=\"https://logeion.uchicago.edu/respicio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: respicio</a>",
-    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 109."
-  ],
-  "review": {
-    "status": "draft",
-    "date": "2026-11-12",
-    "by": "Claude"
-  },
   "notes": {
     "re-short": {
       "form": "<span lang=\"la\">respiciō</span>",
@@ -128,5 +124,23 @@
       "html": "The prefix is <span lang=\"la\">re-</span> (de Vaan 516, s.v. <span lang=\"la\">re-, red-</span>); Bennett (<em>The Latin Language</em> §48) rejects the lengthening before s and a consonant, and Lewis’s <em>Elementary Latin Dictionary</em> prints <span lang=\"la\">re-spondeō</span>.",
       "ruling": "re-s"
     }
+  },
+  "related": [
+    "consider-regard",
+    "decide",
+    "decision",
+    "think-ponder"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/considero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: considero</a> · <a href=\"https://logeion.uchicago.edu/delibero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: delibero</a> · <a href=\"https://logeion.uchicago.edu/cogito\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cogito</a> · <a href=\"https://logeion.uchicago.edu/ratio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ratio</a> · <a href=\"https://logeion.uchicago.edu/aestuo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aestuo</a>",
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 9 November 2026. Examples marked “Libellus” quote those texts word for word.",
+    "<a href=\"https://logeion.uchicago.edu/respicio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: respicio</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 109.",
+    "<a href=\"https://logeion.uchicago.edu/consulto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: consulto</a>"
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-15",
+    "by": "Claude"
   }
 }

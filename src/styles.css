@@ -365,6 +365,10 @@ span.kind, p.kind:not(:has(a)) { display:block; padding:10px 0; }
 .c-sources a { overflow-wrap:anywhere; }
 .suggest { margin-top:14px !important; font:400 1rem var(--sans); }
 .suggest a { display:inline-flex; align-items:center; min-height:44px; color:var(--soft); }
+/* Under an entry's sources: the way to "How to read the sources" on the policy page. */
+.c-sources .how-sources { margin:10px 0 0; font:400 1rem var(--sans); }
+.how-sources a { display:inline-flex; align-items:center; min-height:44px; color:var(--soft); }
+.how-sources + .suggest { margin-top:0 !important; }
 
 /* The margin: what to say in the column, why beside it. On a narrow screen the margin
    folds under the block it explains; from 1000px it stands in the right margin. */

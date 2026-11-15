@@ -2,6 +2,12 @@
   "id": "soften",
   "english": "soften",
   "pos": "verb",
+  "also": [
+    "make soft",
+    "soothe",
+    "calm",
+    "relieve"
+  ],
   "domain": "verba",
   "terms": [
     {
@@ -13,6 +19,26 @@
         "Cic. ND 2.130: <span lang=\"la\">Indus agrōs laetificat et mītigat</span> (Lewis &amp; Short)",
         "Cic. Rep. 4.6 (Lewis &amp; Short)"
       ]
+    },
+    {
+      "latin": "molliō, mollīre, mollīvī (molliī), mollītum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "make soft or supple; make milder, tame",
+      "evidence": [
+        "Cic. ND 2.26: <span lang=\"la\">frīgoribus dūrēscit ūmor, et īdem vicissim mollītur tepefactus</span> (Lewis &amp; Short)",
+        "Hor. S. 1.4.20: <span lang=\"la\">dum ferrum molliat ignis</span> (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "lēniō, lēnīre, lēnīvī (lēniī), lēnītum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "make mild, soften, soothe, calm, relieve",
+      "evidence": [
+        "Plin. NH 20.96: <span lang=\"la\">alvum lēnit et mollit</span> (Lewis &amp; Short)",
+        "Hor. S. 2.2.18 (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -20,10 +46,27 @@
       "latin": "Indus agrōs laetificat et mītigat",
       "english": "the Indus gladdens the fields and makes them mellow",
       "source": "Cic. ND 2.130 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "dextera pistillō prīmum frāglantia mollit ālia, tum pariter mixtō terit omnia sūcō",
+      "english": "his right hand first softens the strong-smelling garlic with the pestle, then grinds everything together with the juice mixed in",
+      "source": "Mor. 101–102"
+    },
+    {
+      "latin": "cum sale pānis lātrantem stomachum bene lēniet",
+      "english": "bread with salt will quiet a growling stomach well enough",
+      "source": "Hor. S. 2.2.17–18"
+    },
+    {
+      "latin": "Nīl nōn aut lēnit aut domat diūturnitās.",
+      "english": "There is nothing that length of time does not soften or tame.",
+      "source": "Publil. Sent. N 64"
     }
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/mitigo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mitigo</a>"
+    "<a href=\"https://logeion.uchicago.edu/mitigo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mitigo</a>",
+    "<a href=\"https://logeion.uchicago.edu/mollio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mollio</a>",
+    "<a href=\"https://logeion.uchicago.edu/lenio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lenio</a>"
   ],
   "review": {
     "status": "draft",

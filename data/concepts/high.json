@@ -9,7 +9,11 @@
     "high note",
     "high (on drugs)",
     "aim high",
-    "be high on drugs"
+    "be high on drugs",
+    "lofty",
+    "tall",
+    "elevated",
+    "rising"
   ],
   "domain": "verba",
   "terms": [
@@ -79,6 +83,26 @@
         "Cic. Phil. 2.28: <span lang=\"la\">cruentum altē extollēns pugiōnem</span> (Lewis &amp; Short)",
         "Cato Agr. 50 (Lewis &amp; Short)"
       ]
+    },
+    {
+      "latin": "celsus, celsa, celsum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "raised high, lofty, tall",
+      "evidence": [
+        "Cic. ND 2.140: <span lang=\"la\">humō excitātōs, celsōs et ērēctōs cōnstituit</span> (Lewis &amp; Short)",
+        "Hor. C. 2.10.10 (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "ēditus, ēdita, ēditum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "of places: raised, rising, high",
+      "evidence": [
+        "Caes. BG 2.8.3 (Lewis &amp; Short)",
+        "Sall. Jug. 92.5 (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -96,6 +120,16 @@
       "latin": "cruentum altē extollēns pugiōnem",
       "english": "raising the bloody dagger high",
       "source": "Cic. Phil. 2.28 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "cum dē fenestrā corvus raptum cāseum comēsse vellet, celsā residēns arbore, vulpēs hunc vīdit, deinde sīc coepit loquī",
+      "english": "when a crow, perched high in a tree, was about to eat a cheese he had snatched from a window, a fox saw him and then began to speak thus",
+      "source": "Phaedr. 1.13.3–5"
+    },
+    {
+      "latin": "collis … paululum ex plānitiē ēditus",
+      "english": "a hill rising a little above the plain",
+      "source": "Caes. BG 2.8.3"
     }
   ],
   "related": [
@@ -110,11 +144,13 @@
     "<a href=\"https://logeion.uchicago.edu/ardeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ardeo</a>",
     "<a href=\"https://logeion.uchicago.edu/acuo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: acuo</a>",
     "<a href=\"https://logeion.uchicago.edu/ebrius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ebrius</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 328."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 328.",
+    "<a href=\"https://logeion.uchicago.edu/celsus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: celsus</a>",
+    "<a href=\"https://logeion.uchicago.edu/edo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: edo</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

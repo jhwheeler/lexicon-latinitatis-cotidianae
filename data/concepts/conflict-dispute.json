@@ -11,7 +11,10 @@
     "conflict of opinion",
     "come into conflict",
     "be in conflict",
-    "difference of opinion"
+    "difference of opinion",
+    "at variance",
+    "discordant",
+    "quarrelling"
   ],
   "domain": "verba",
   "terms": [
@@ -57,6 +60,16 @@
         "Cic. Tusc. 2.62 (Lewis &amp; Short)"
       ],
       "comment": "Any contest, friendly or hostile: a race, a game, a fight. Of a conflict only where something is to be won."
+    },
+    {
+      "latin": "discors, discordis",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "disagreeing, at variance, inharmonious",
+      "evidence": [
+        "Liv. 2.23: <span lang=\"la\">cīvitās sēcum ipsa discors</span> (Lewis &amp; Short)",
+        "Tac. Hist. 2.10: <span lang=\"la\">in cīvitāte discordī</span> (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -64,6 +77,11 @@
       "latin": "Discordiās in hāc domō nōlō.",
       "english": "I won’t have quarrelling in this house.",
       "source": "composed"
+    },
+    {
+      "latin": "opus adgredior opīmum cāsibus, atrōx proeliīs, discors sēditiōnibus, ipsā etiam pāce saevum",
+      "english": "I take up a work rich in disasters, grim with battles, torn by mutinies, savage even in its peace",
+      "source": "Tac. Hist. 1.2"
     }
   ],
   "related": [
@@ -75,12 +93,12 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/discordia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: discordia</a> · <a href=\"https://logeion.uchicago.edu/dissensio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dissensio</a> · <a href=\"https://logeion.uchicago.edu/contentio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: contentio</a> · <a href=\"https://logeion.uchicago.edu/certamen\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: certamen</a>",
     "Sallust, <em>Bellum Jugurthīnum</em> 10.6, in the edition’s spelling <span lang=\"la\">maxumae</span>.",
-    "The example sentences marked “composed” are ours.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 303."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 303.",
+    "<a href=\"https://logeion.uchicago.edu/discors\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: discors</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

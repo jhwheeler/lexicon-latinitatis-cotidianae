@@ -429,3 +429,230 @@ Things to look at again:
 | 2752 | tuto | added to `safe` (safe) as *tūtō*. |
 | 2753 | addico | new record `adjudge` (adjudge): *addīcō*. |
 | 2761 | conuello | added to `tear` (tear) as *convellō*. |
+
+## Batch 3: from rank 2,765, and the words left behind (15 November 2026)
+
+Scope: the lemmas the coverage script reported as not covered, in rank order from 2,765 to 3,261 (183 lemmas), with the words batches 1 and 2 had left and whose reason could be answered (*resistō*, *arvum*, *carīna*, *decemvir*, *decumānus*, *dominātiō*, *applicō*). Two words beyond the range came in with others: *hostia* (3,263) stands with *victima*, and *resideō* (3,573) with *resīdō*. 192 lemmas in all.
+
+Result: 179 Latin words entered: 74 of them in 73 new records, and 105 added as terms to 96 records that already covered their meaning. Two more are now found because an existing term was given its dictionary form (*hilaris*, *citrā*). Eleven lemmas were not entered (in the table). By the script’s count after this batch, one of the first 2,000 is not covered (the neuter plural *praesentia*, a grammatical variant) and 789 of the first 5,000; before the batch it was 3 and 975. The next missing lemma is *fūmō* (rank 3,262).
+
+Method, as in batches 1 and 2, with these differences:
+
+- **Examples from the loci collections again**, where they have a short line with the word (about 70 of the examples): cited plainly, by author and place, in the lexicon’s form (*Plin. Ep. 9.33.4* for the table’s “Ep. IX 33, 4”). No sentence about the collections was added to a record’s `sources`, since such sentences are being taken out of the records. The other examples are Lewis & Short’s quotations, marked so.
+- **Lewis & Short’s quotations were compared with the texts** wherever the LASLA corpus has the work (Caesar, Cicero’s speeches, *De officiis*, *De amicitia* and *De senectute*, Sallust, Lucretius, Catullus, Vergil, Horace, Tacitus, Seneca, the younger Pliny’s letters, eight plays of Plautus, Cato’s *De agricultura*; `corpora/lasla`, outside the repository). The dictionary often adapts what it quotes: it puts a phrase in the nominative, drops a word, or prints another reading (*sequentur* for *sequuntur* at Cic. Amic. 74, *aequalitate* for *aequabilitate* at Mur. 41, *tigna* for *ligna* at Cato Agr. 144.3). Where that was so, the evidence gives the dictionary’s bare reference, and the example gives the words of the text, with the section number from the corpus and without the mark “(Lewis & Short)” (about 35 examples). Where the dictionary gave only a chapter of Cicero and the corpus has the speech, the section is the corpus’s (*Cic. Phil. 10.14*, *Cael. 42*, *Verr. 2.2.2*). Quotations from works the corpus lacks (the letters, the philosophical works other than the three named, Livy, Ovid’s *Metamorphoses*, Quintilian, the elder Pliny) could not be compared and keep the dictionary’s wording, as before.
+- **Plautus by the line** where the corpus has the play: *Plaut. Amph. 649*, *Bacch. 1154*, *Aul. 600*, for Lewis & Short’s act, scene and line. The other plays, and Terence, keep the dictionary’s numbering with the mark.
+- **A word without a quotation in Lewis & Short** was entered if the text at one of the dictionary’s references could be read in the corpus (*carīna*, Caes. BG 3.13.1; *crēditor*, Cic. Phil. 6.11; *ebur*, Verg. G. 1.57; *dominātiō*, Sall. Cat. 5.6). That answers the reason for which batch 2 left *carīna*, *decemvir*, *decumānus* and *dominātiō*.
+- Every quotation typed into a record was checked by a script against the place it is said to come from: the Lewis & Short article, the loci table, or the corpus. Nothing is quoted from memory.
+
+Things to look at again:
+
+- **resistō** is entered, in `oppose`, without Lewis & Short, whose article is still missing. Its principal parts (*resistō, -ere, restitī*) are Andresian’s (p. 62); the sense is de Vaan’s (p. 567, s.v. *sistō*: “to pause, offer resistance”, from Plautus on); Lewis & Short names the word as a synonym under *adversor*, *repugnō* and *renītor* and says of *sistō* with a dative that it is the same as *resistere*; the examples were read in Caesar (BG 2.26.2) and in the loci collections (Ov. Rem. 82). Traupman, Morgan–Owens and Levi–Bini have no entry for it. The short *e* follows the ruling on *re-* before *st*. If this is not enough, take the term out of `oppose`.
+- **līctor** is written with a long *ī*, with a note: Lewis & Short’s headword has no mark, but its article says “pronounced *līctor*, Gell. 12, 3, 4”. Gellius himself was not read, and de Vaan has no article.
+- **mūcrō or mucrō** was not entered: Lewis & Short prints no mark, the loci collections write *mūcrō*, de Vaan has no article, and the *u* stands before *cr*.
+- **Spellings where the loci collections and the lexicon differ.** The examples follow the lexicon’s entries, which follow Lewis & Short: *repente* (the loci table at Gell. 9.11.7 has *repentē*), *edepol* (the table at Plaut. Most. 376 has *ēdepol*), *biduum* (the table at Cic. Tusc. 2.40 has *bīduum*). One of the two is a slip in each case. Also seen and not touched, since they are other records: *existimātiō* is entered with a short *i* beside *exīstimō*; `previously` has *triduī* for *trīduī*.
+- **Plin. Ep. 2.17.4** (*vīlla ūsibus capāx*): the loci table gives section 3; Lewis & Short and the corpus give 4, which the record follows.
+- **Readings of the corpus’s text** that differ from Lewis & Short’s and were followed in an example: *templa* (Lucr. 2.28, for *tecta*), *ligna* (Cato Agr. 144.3, for *tigna*), *omnīs*, *cīvīs*, *hostīs* (accusatives in *-īs*). Line numbers follow the corpus where they differ by one (*Verg. G. 2.294*, *Lucr. 5.1363*).
+- **deep** had no record. It now has one, headed by *altus* (which the lexicon had only as “high”) with *profundus* beside it; *altus* is not a word from the list.
+- **Two existing terms were given their dictionary form** so that the word is found: `cheerful` had *hilarus / hilaris*, now *hilaris, hilare (hilarus)*; `on-this-side-of` had *citrā + acc.* and *cis + acc.*, now *citrā (+ acc.)* and *cis (+ acc.)*, as the other prepositions are written.
+- **Words in a record of another part of speech**, as before: *madeō* in `wet`, *invidiōsus* in `envy`, *mināx* in `threat`, *grātulātiō* in `congratulations`, *interveniō* in `intervention`, *tremulus* in `shiver`, *rubor* in `blush`, *inertia* in `lazy`, *exta* in `guts-intestines`, *servīlis* in `slave`, *legiōnārius* in `legion`, *trānsgredior* in `across`, *igneus* in `fire`, *aetherius* in `sky`, *sēditiōsus* in `mutiny`, *salveō* in `hello`, *molestē* in `annoy`. The first recommended term of each record is unchanged; of the records touched, `scripts/answer_kinds.py` lists three (`available`, `else`, `summons`), which were on its list before.
+- **English headwords that may want changing**: “champion” (*vindex*), “bountiful” (*almus*), “offence” (*offēnsiō*), “acquaintance” (*nōtitia*), “fallen” (*cadūcus*), “properly” (*commodē*), “the youth” (*pūbēs*), “duties” (*mūnia*), “set foot on” (*īnsistō*), “public thanksgiving” (*supplicātiō*), “pour a libation” (*lībō*, which also means taste and sip), “break down” (*rescindō*), “break out” (*coorior*), “cut off” (*interclūdō*), “carry away” (*dēportō*).
+- **obscēnus** is marked for adults (`audience`), as `dirty-talk` is not; the two should agree.
+- **Register labels** (*torvus*, *fēmineus*, *genetrīx*, *almus*, *pharetra*, *immōtus*, *tremulus*) follow Lewis & Short’s “poet.” or “mostly poet.”; *imputō*, *curvō*, *nūtriō*, *concieō*, *citus* and *dehinc* carry its remark on where the word is and is not found.
+- **An example was dropped for the spelling script**: Tac. Germ. 45.1 (*trāns Suionas aliud mare, pigrum ac prope immōtum*) is a good line for *immōtus*, but `consonantal_j.py` reads *Suionas* as wanting a *j*, and its list of exceptions was left alone.
+- **Aliases.** `ALIASES` in `scripts/latin_coverage.py` now also maps *nihilo* to *nihilum* and *eiusmodi* to *modus* (as *huiusmodi* already was), and *disicio* to the lexicon’s *disjiciō*, which batch 2 had entered and the script still counted as missing. *iugerum*, *requies* and *munia* map to themselves: the corpus files them under another declension than the lexicon’s, so the script took them for other words.
+- **Left for the next batch**: *interjiciō* (Lewis & Short’s article is *interjaciō*), *ēlīdō* and *cōnstanter*, whose articles were not read far enough for a quotation.
+
+| Rank | Lemma | What was done |
+| ---: | --- | --- |
+| 886 | resisto | added to `oppose` (oppose) as *resistō*. Lewis & Short’s article is still missing; the word was entered from the other references (see “Things to look at again”). |
+| 1188 | arvum | added to `field` (field) as *arvum*. |
+| 2143 | carina | new record `keel` (keel): *carīna*. |
+| 2509 | decemvir | new record `decemvir` (decemvir): *decemvir*. |
+| 2567 | decimanus | added to `tithe` (tithe) as *decumānus*. |
+| 2617 | dominatio | new record `tyranny` (tyranny): *dominātiō*. |
+| 2688 | applico | added to `attach` (attach) as *applicō*. |
+| 2765 | impotens | new record `powerless` (powerless): *impotēns*. |
+| 2767 | jugulo | added to `kill` (kill) as *jugulō*. |
+| 2773 | madeo | added to `wet` (wet) as *madeō*. |
+| 2775 | mollio | added to `soften` (soften) as *molliō*. |
+| 2779 | salveo | added to `hello` (hello) as *salveō*. |
+| 2787 | armatura | added to `armour` (armour) as *armātūra*. |
+| 2788 | capax | new record `spacious` (spacious): *capāx*. |
+| 2789 | circumfundo | added to `surround` (surround) as *circumfundō*. |
+| 2790 | complexus | added to `hug` (hug) as *complexus*. |
+| 2791 | dispar | added to `different` (different) as *dispār*. |
+| 2792 | elabor | added to `slip-away` (slip away) as *ēlābor*. |
+| 2794 | fatalis | new record `fated` (fated): *fātālis*. |
+| 2795 | invidiosus | added to `envy` (envy) as *invidiōsus*. |
+| 2796 | jugerum | new record `acre` (acre): *jūgerum*. |
+| 2798 | offensio | new record `offence` (offence): *offēnsiō*. |
+| 2799 | praecedo | added to `go-before` (go before) as *praecēdō*. |
+| 2807 | vindex | new record `champion-defender` (champion): *vindex*. |
+| 2808 | adjutor | new record `helper` (helper): *adjūtor*. |
+| 2813 | desertus | new record `deserted` (deserted): *dēsertus*. |
+| 2814 | digredior | added to `go-away` (go) as *dīgredior*. |
+| 2815 | excio | added to `get-fetch` (get) as *exciō*. |
+| 2818 | fugitivus | new record `runaway` (runaway): *fugitīvus*. |
+| 2823 | intercludo | new record `cut-off` (cut off): *interclūdō*. |
+| 2824 | intervenio | added to `intervention` (intervention) as *interveniō*. |
+| 2827 | praesto | added to `available` (available) as *praestō*. |
+| 2832 | servilis | added to `slave` (slave) as *servīlis*. |
+| 2835 | victrix | added to `winner` (winner) as *victrīx*. |
+| 2836 | ultor | new record `avenger` (avenger): *ultor*. |
+| 2838 | bello | new record `wage-war` (wage war): *bellō*. |
+| 2841 | deporto | new record `carry-away` (carry away): *dēportō*. |
+| 2849 | plausus | new record `applause` (applause): *plausus*. |
+| 2850 | proditor | new record `traitor` (traitor): *prōditor*. |
+| 2851 | turpiter | added to `disgraceful` (disgraceful) as *turpiter*. |
+| 2852 | victima | new record `sacrificial-victim` (sacrificial victim): *victima*. |
+| 2855 | aetherius | added to `sky` (sky) as *aetherius*. |
+| 2860 | celsus | added to `high` (high) as *celsus*. |
+| 2864 | displiceo | new record `displease` (displease): *displiceō*. |
+| 2868 | furiosus | added to `crazy` (crazy) as *furiōsus*. |
+| 2871 | invoco | new record `invoke` (invoke): *invocō*. |
+| 2872 | legionarius | added to `legion` (legion) as *legiōnārius*. |
+| 2873 | lenio | added to `soften` (soften) as *lēniō*. |
+| 2874 | luo | new record `atone` (atone): *luō*. |
+| 2882 | auratus | added to `golden` (golden) as *aurātus*. |
+| 2887 | defigo | added to `fix-fasten` (fix) as *dēfīgō*. |
+| 2890 | labo | added to `wobble` (wobble) as *labō*. |
+| 2892 | laudatio | added to `praise` (praise) as *laudātiō*. |
+| 2893 | libo | new record `pour-a-libation` (pour a libation): *lībō*. |
+| 2894 | lictor | new record `lictor` (lictor): *līctor*. |
+| 2895 | miseror | added to `pity` (pity) as *miseror*. |
+| 2900 | saepio | new record `fence-in` (fence in): *saepiō*. |
+| 2908 | conscendo | added to `get-on` (get on) as *cōnscendō*. |
+| 2910 | creditor | new record `creditor` (creditor): *crēditor*. |
+| 2912 | ebur | new record `ivory` (ivory): *ebur*. |
+| 2913 | editus | added to `high` (high) as *ēditus*. |
+| 2916 | fraternus | new record `brotherly` (brotherly): *frāternus*. |
+| 2919 | minax | added to `threat` (threat) as *mināx*. |
+| 2927 | profundus | new record `deep` (deep): *profundus*. |
+| 2933 | abundo | added to `abundant` (abundant) as *abundō*. |
+| 2934 | adveho | added to `bring` (bring) as *advehō*. |
+| 2936 | anteeo | added to `go-before` (go before) as *anteeō*. |
+| 2940 | confligo | added to `fight` (fight) as *cōnflīgō*. |
+| 2943 | discors | added to `conflict-dispute` (conflict) as *discors*. |
+| 2944 | eruptio | new record `eruption` (eruption): *ēruptiō*. |
+| 2950 | habena | new record `rein` (rein): *habēna*. |
+| 2951 | imputo | added to `accept-blame` (accept blame) as *imputō*. |
+| 2952 | inertia | added to `lazy` (lazy) as *inertia*. |
+| 2953 | inhibeo | added to `control-restrain` (control) as *inhibeō*. |
+| 2954 | insisto | new record `set-foot-on` (set foot on): *īnsistō*. |
+| 2960 | moleste | added to `annoy` (annoy) as *molestē*. |
+| 2962 | occulte | added to `secretly` (secretly) as *occultē*. |
+| 2963 | persolvo | added to `pay` (pay) as *persolvō*. |
+| 2966 | prosterno | added to `knock-down` (knock down) as *prōsternō*. |
+| 2967 | requiesco | added to `rest` (rest) as *requiēscō*. |
+| 2970 | tremulus | added to `shiver` (shiver) as *tremulus*. |
+| 2979 | cunctatio | added to `hesitate` (hesitate) as *cūnctātiō*. |
+| 2988 | nihilo | not entered: the ablative of *nihilum* (which is in), filed by the corpus as an adverb (*nihilō minus*, *nihilō sētius*); Lewis & Short sends it to *nihil*. The coverage script now counts it under *nihilum* (ALIASES). |
+| 2990 | obliquus | new record `slanting` (slanting): *oblīquus*. |
+| 3000 | rescindo | new record `break-down` (break down): *rescindō*. |
+| 3001 | sacramentum | added to `swear-oath` (swear) as *sacrāmentum*. |
+| 3006 | talentum | new record `talent-weight` (talent): *talentum*. |
+| 3007 | torvus | added to `grim` (grim) as *torvus*. |
+| 3008 | transgredior | added to `across` (across) as *trānsgredior*. |
+| 3012 | alio | added to `else` (else) as *aliō*. |
+| 3015 | assuetus | added to `get-used-to` (get used to) as *assuētus*. |
+| 3018 | damnatio | new record `condemnation` (condemnation): *damnātiō*. |
+| 3020 | ejusmodi | not entered: the lexicon has it as *ejus modī (hujus modī)*, written as two words, in `such`. The coverage script now counts it (ALIASES), as it already counts *hujusmodī*. |
+| 3023 | exterreo | added to `frighten` (frighten) as *exterreō*. |
+| 3025 | haruspex | new record `soothsayer` (soothsayer): *haruspex*. |
+| 3030 | naris | added to `nostrils` (nostrils) as *nāris*. |
+| 3034 | posteaquam | added to `after-conjunction` (after) as *posteāquam*. |
+| 3035 | posteritas | new record `posterity` (posterity): *posteritās*. |
+| 3037 | rite | new record `duly` (duly): *rīte*. |
+| 3039 | supplicatio | new record `public-thanksgiving` (public thanksgiving): *supplicātiō*. |
+| 3044 | assisto | new record `stand-by` (stand by): *assistō*. |
+| 3045 | aversus | added to `turn-away` (turn away) as *āversus*. |
+| 3047 | citus | added to `fast-quick` (fast) as *citus*. |
+| 3048 | conclamo | added to `shout` (shout) as *conclāmō*. |
+| 3049 | domicilium | new record `dwelling` (dwelling): *domicilium*. |
+| 3050 | femineus | added to `womanly` (womanly) as *fēmineus*. |
+| 3053 | illo | added to `there-direction` (there) as *illō*. |
+| 3056 | injustus | added to `unfair` (unfair) as *injūstus*. |
+| 3059 | notitia | new record `acquaintance` (acquaintance): *nōtitia*. |
+| 3060 | obscenus | new record `obscene` (obscene): *obscēnus*. |
+| 3063 | pirata | new record `pirate` (pirate): *pīrāta*. |
+| 3065 | procurro | new record `run-forward` (run forward): *prōcurrō*. |
+| 3066 | requies | added to `rest` (rest) as *requiēs*. |
+| 3067 | revello | added to `tear` (tear) as *revellō*. |
+| 3071 | sempiternus | added to `eternal` (eternal) as *sempiternus*. |
+| 3075 | temperantia | added to `self-control` (self-control) as *temperantia*. |
+| 3077 | valens | added to `powerful` (powerful) as *valēns*. |
+| 3079 | clamito | added to `shout` (shout) as *clāmitō*. |
+| 3080 | concieo | added to `excite` (excite) as *concieō*. |
+| 3081 | consulto | added to `consider` (consider) as *cōnsultō*. |
+| 3084 | exta | added to `guts-intestines` (guts) as *exta*. |
+| 3086 | hilaris | the term of `cheerful` (cheerful) that read *hilarus / hilaris* now has the dictionary form *hilaris (hilarus), hilare*, so that the word is found; a citation and an example were added. |
+| 3089 | immotus | new record `motionless` (motionless): *immōtus*. |
+| 3090 | incultus | new record `uncultivated` (uncultivated): *incultus*. |
+| 3092 | infringo | added to `snap-break` (snap) as *īnfringō*. |
+| 3098 | praecido | added to `cut` (cut) as *praecīdō*. |
+| 3101 | sacro | added to `consecrate` (consecrate) as *sacrō*. |
+| 3102 | satietas | new record `satiety` (satiety): *satietās*. |
+| 3104 | volucer | added to `winged` (winged) as *volucer*. |
+| 3105 | advento | added to `approach` (approach) as *adventō*. |
+| 3107 | genetrix | added to `mother` (mother) as *genetrīx*. |
+| 3111 | mucro | not entered: the length of the *u* is in doubt. Lewis & Short prints *mucro* without a mark, the loci collections write *mūcrō*, and de Vaan has no article; the word stands before *cr*, so verse does not decide. Left for the editor. |
+| 3112 | nutrio | added to `feed` (feed) as *nūtriō*. |
+| 3113 | obduco | added to `cover` (cover) as *obdūcō*. |
+| 3114 | oraculum | new record `oracle` (oracle): *ōrāculum*. |
+| 3116 | percurro | new record `run-through` (run through): *percurrō*. |
+| 3117 | perrumpo | new record `break-through` (break through): *perrumpō*. |
+| 3118 | perspicuus | added to `clear-distinct` (clear) as *perspicuus*. |
+| 3119 | pompa | new record `procession` (procession): *pompa*. |
+| 3127 | almus | new record `bountiful` (bountiful): *almus*. |
+| 3129 | cito | added to `summons` (summons) as *citō*. |
+| 3131 | commode | new record `properly` (properly): *commodē*. |
+| 3134 | coorior | new record `break-out` (break out): *coorior*. |
+| 3136 | devincio | added to `bind-oblige` (bind) as *dēvinciō*. |
+| 3143 | juratus | added to `swear-oath` (swear) as *jūrātus*. |
+| 3145 | limes | new record `boundary` (boundary): *līmes*. |
+| 3146 | naufragium | new record `shipwreck` (shipwreck): *naufragium*. |
+| 3149 | ordior | added to `begin` (begin) as *ōrdior*. |
+| 3152 | sublevo | added to `lift-raise` (lift) as *sublevō*. |
+| 3154 | absumo | new record `consume` (consume): *absūmō*. |
+| 3156 | animans | added to `animal` (animal) as *animāns*. |
+| 3157 | avello | added to `tear` (tear) as *āvellō*. |
+| 3160 | devinco | added to `defeat` (defeat) as *dēvincō*. |
+| 3161 | exanimo | added to `out-of-breath` (out of breath) as *exanimō*. |
+| 3165 | gratulatio | added to `congratulations` (congratulations!) as *grātulātiō*. |
+| 3166 | incautus | added to `careless` (careless) as *incautus*. |
+| 3167 | incertum | skipped: a grammatical variant, the neuter of *incertus* used as a noun (Lewis & Short has it under *incertus*, which is in). |
+| 3170 | interimo | added to `kill` (kill) as *interimō*. |
+| 3177 | pharetra | new record `quiver` (quiver): *pharetra*. |
+| 3183 | triduum | new record `three-days` (three days): *trīduum*. |
+| 3184 | vadimonium | new record `bail` (bail): *vadimōnium*. |
+| 3185 | vibro | new record `brandish` (brandish): *vibrō*. |
+| 3190 | axis | new record `axle` (axle): *axis*. |
+| 3192 | caducus | new record `fallen` (fallen): *cadūcus*. |
+| 3197 | dehinc | added to `then-next` (then) as *dehinc*. |
+| 3200 | emergo | new record `emerge` (emerge): *ēmergō*. |
+| 3203 | exsurgo | added to `get-up` (get up) as *exsurgō*. |
+| 3206 | inceptum | skipped: a grammatical variant, the neuter participle of *incipiō* (which is in) used as a noun; Lewis & Short has it at the end of that article. |
+| 3209 | interjicio | left for the next batch: Lewis & Short’s article is under *interjaciō*, which was not read. |
+| 3213 | munia | new record `duties` (duties): *mūnia*. |
+| 3214 | resido | added to `sit` (sit) as *resīdō*. |
+| 3215 | rubor | added to `blush` (blush) as *rubor*. |
+| 3224 | citra | the term of `on-this-side-of` (on this side of) that read *citrā + acc.* is now written *citrā (+ acc.)*, as the other prepositions are, so that the word is found (and *cis + acc.* likewise *cis (+ acc.)*). |
+| 3227 | debilito | new record `weaken` (weaken): *dēbilitō*. |
+| 3231 | elido | left for the next batch: no quotation with a sure reference was read. |
+| 3236 | fragilis | new record `fragile` (fragile): *fragilis*. |
+| 3237 | horrendus | skipped: a grammatical variant, the gerundive of *horreō* (which is in); Lewis & Short has no such headword. |
+| 3238 | igneus | added to `fire` (fire) as *igneus*. |
+| 3239 | immunis | new record `exempt` (exempt): *immūnis*. |
+| 3242 | laeva | skipped: a grammatical variant, the feminine of *laevus* used as a noun (“the left hand”); the lexicon has *laevus* and *ā laevā*. |
+| 3247 | pubes | new record `the-youth` (the youth): *pūbēs*. |
+| 3249 | revolvo | added to `roll` (roll) as *revolvō*. |
+| 3250 | sapienter | added to `wise` (wise) as *sapienter*. |
+| 3251 | sector | added to `chase` (chase) as *sector*. |
+| 3252 | seditiosus | added to `mutiny` (mutiny) as *sēditiōsus*. |
+| 3254 | superstitio | new record `superstition` (superstition): *superstitiō*. |
+| 3257 | volens | skipped: a grammatical variant, the participle of *volō* (which is in). |
+| 3259 | constanter | left for the next batch: the adverb’s section at the end of Lewis & Short’s *cōnstō* was not read in full. |
+| 3260 | curvo | added to `bend-verb` (bend) as *curvō*. |
+| 3261 | discurro | new record `run-about` (run about): *discurrō*. |
+| 3263 | hostia | new record `sacrificial-victim` (sacrificial victim): *hostia*. |
+| 3573 | resideo | added to `sit` (sit) as *resideō*. |

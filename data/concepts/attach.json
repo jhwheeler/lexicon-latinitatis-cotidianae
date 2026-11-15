@@ -2,12 +2,33 @@
   "id": "attach",
   "english": "attach",
   "pos": "verb",
+  "also": [
+    "lean against",
+    "attach oneself to"
+  ],
   "domain": "sermo",
   "terms": [
     {
       "latin": "adjungō, adjungere, adjūnxī, adjūnctum",
       "status": "recommended",
       "period": "classical"
+    },
+    {
+      "latin": "applicō, applicāre, applicāvī (applicuī), applicātum (applicitum)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "bring or put close to, lean against, join to; sē applicāre ad, attach oneself to",
+      "evidence": [
+        "Caes. BG 6.27 (Lewis &amp; Short)",
+        "Cic. Verr. 2.2.2: <span lang=\"la\">Sicilia sē ad amīcitiam fidemque populī Rōmānī applicāvit</span> (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ut vītēs arboribus applicitae īnferiōrēs prius apprehendendō rāmōs in cacūmina ēvādunt",
+      "english": "as vines trained against trees get to the top by first taking hold of the lower branches",
+      "source": "Quint. 1.2.26"
     }
   ],
   "related": [
@@ -15,11 +36,12 @@
     "separate"
   ],
   "sources": [
-    "<a href=\"https://www.alatius.com/latin/bennetthidden.html\" rel=\"noopener noreferrer\" target=\"_blank\">Bennett: hidden quantities, with later corrections</a>"
+    "<a href=\"https://www.alatius.com/latin/bennetthidden.html\" rel=\"noopener noreferrer\" target=\"_blank\">Bennett: hidden quantities, with later corrections</a>",
+    "<a href=\"https://logeion.uchicago.edu/applico\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: applico</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

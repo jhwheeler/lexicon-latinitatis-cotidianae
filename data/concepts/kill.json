@@ -7,7 +7,11 @@
     "slay",
     "put to death",
     "kill time",
-    "you’re killing me!"
+    "you’re killing me!",
+    "cut the throat",
+    "butcher",
+    "do away with",
+    "destroy"
   ],
   "domain": "verba",
   "terms": [
@@ -66,6 +70,26 @@
         "Traupman 336: <span lang=\"la\">mē ēnicās!</span>"
       ],
       "comment": "In comedy, the complaint of someone pestered past bearing."
+    },
+    {
+      "latin": "jugulō, jugulāre, jugulāvī, jugulātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "cut the throat of, butcher; murder",
+      "evidence": [
+        "Cic. Phil. 3.4 (Lewis &amp; Short)",
+        "Cic. Mil. 31 (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "interimō, interimere, interēmī, interēmptum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "take out of the midst, do away with, destroy, kill",
+      "evidence": [
+        "Cic. Mur. 27: <span lang=\"la\">interimendōrum sacrōrum causā</span> (Lewis &amp; Short)",
+        "Verg. A. 10.428 (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -88,6 +112,16 @@
       "latin": "supplicium dē aliquō sūmere",
       "english": "to put someone to death",
       "source": "Traupman 301"
+    },
+    {
+      "latin": "fortissimōs virōs optimōsque cīvīs jugulārī jusserit",
+      "english": "he ordered the bravest men and the best citizens to be butchered",
+      "source": "Cic. Phil. 3.4"
+    },
+    {
+      "latin": "interimendōrum sacrōrum causā",
+      "english": "for the sake of doing away with the rites",
+      "source": "Cic. Mur. 27 (Lewis &amp; Short)"
     }
   ],
   "related": [
@@ -98,13 +132,13 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/interficio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: interficio</a> · <a href=\"https://logeion.uchicago.edu/occido\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: occido</a> · <a href=\"https://logeion.uchicago.edu/neco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: neco</a> · <a href=\"https://logeion.uchicago.edu/trucido\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: trucido</a> · <a href=\"https://logeion.uchicago.edu/eneco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: eneco</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 301, 336.",
-    "Quotations from the Latinitas loci collections (loci-ovidius, loci-cicero-philosophica, loci-phaedrus), checked against the editions named there.",
-    "Caesar, <em>Gallic War</em> 1, and Plautus, <em>Mercator</em> (Leo, cited by his lines), checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> and the <a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">Latin Library texts (CLTK mirror)</a> (9 November 2026).",
-    "Citations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them and have not been checked against an edition."
+    "Caesar, <em>Gallic War</em> 1, and Plautus, <em>Mercator</em> (Leo, cited by his lines).",
+    "<a href=\"https://logeion.uchicago.edu/jugulo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: jugulo</a>",
+    "<a href=\"https://logeion.uchicago.edu/interimo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: interimo</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

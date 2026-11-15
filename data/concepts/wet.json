@@ -2,15 +2,29 @@
   "id": "wet",
   "english": "wet",
   "pos": "adjective",
+  "also": [
+    "be wet",
+    "drip"
+  ],
+  "domain": "culina",
   "also_under": [
     "verba"
   ],
-  "domain": "culina",
   "terms": [
     {
       "latin": "madidus, madida, madidum",
       "status": "recommended",
       "period": "classical"
+    },
+    {
+      "latin": "madeō, madēre, maduī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "be wet, drip with (+ ablative)",
+      "evidence": [
+        "Cic. Phil. 2.105: <span lang=\"la\">natābant pavīmenta vīnō, madēbant parietēs</span> (Lewis &amp; Short)",
+        "Verg. G. 3.429: <span lang=\"la\">vēre madent ūdō terrae</span> (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -18,6 +32,11 @@
       "latin": "Mēnsa madida est.",
       "english": "The table is wet.",
       "source": "composed"
+    },
+    {
+      "latin": "natābant pavīmenta vīnō, madēbant parietēs",
+      "english": "the floors were swimming with wine, the walls were dripping",
+      "source": "Cic. Phil. 2.105 (Lewis &amp; Short)"
     }
   ],
   "related": [
@@ -27,11 +46,11 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/madidus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: madidus</a>",
-    "The example sentence marked “composed” is ours."
+    "<a href=\"https://logeion.uchicago.edu/madeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: madeo</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

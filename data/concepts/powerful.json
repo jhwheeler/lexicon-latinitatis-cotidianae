@@ -8,7 +8,9 @@
     "a powerful man",
     "the powerful",
     "strong (of a person)",
-    "strong"
+    "strong",
+    "vigorous",
+    "sturdy"
   ],
   "domain": "verba",
   "terms": [
@@ -36,6 +38,16 @@
         "Traupman 66: strong (opposite <span lang=\"la\">imbēcillus</span>)"
       ],
       "comment": "Strength of body or force (a strong man, a powerful remedy); mostly poetic and post-Augustan, rare in Cicero, never in Caesar, who would say <span lang=\"la\">valēns</span> (Lewis &amp; Short)."
+    },
+    {
+      "latin": "valēns, valentis",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "strong, stout, vigorous, powerful",
+      "evidence": [
+        "Cic. Fam. 7.1.3: <span lang=\"la\">cum homō imbēcillus ā valentissimā bēstiā laniātur</span> (Lewis &amp; Short)",
+        "Cic. Agr. 2.84 (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -43,6 +55,11 @@
       "latin": "humilēs labōrant ubi potentēs dissident",
       "english": "when the powerful quarrel, the humble suffer",
       "source": "Phaedr. 1.30.1"
+    },
+    {
+      "latin": "cum homō imbēcillus ā valentissimā bēstiā laniātur",
+      "english": "when a feeble man is torn by a very powerful beast",
+      "source": "Cic. Fam. 7.1.3 (Lewis &amp; Short)"
     }
   ],
   "related": [
@@ -51,12 +68,12 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/possum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: possum</a> · <a href=\"https://logeion.uchicago.edu/validus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: validus</a>",
-    "Quotations from the Latinitas loci collections (loci-phaedrus), checked against the editions named there.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 66."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 66.",
+    "<a href=\"https://logeion.uchicago.edu/valeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: valeo</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

@@ -46,7 +46,7 @@ The builder renders each record as a page of its own at `c/<id>.html`; lists it,
 | `phrases` | no | examples: `latin`, `english`, and `source` (`composed`, or a citation in rich text) |
 | `notes` | no | footnotes, by key: `html` (rich text); for a note on a form, `form`, `claim` and optionally `against` (below); optionally `ruling` (an ID in `data/rulings.json`) |
 | `related` | no | other concept IDs (or the ID of a grouped card, should one remain) |
-| `sources` | yes | the lines of “Sources”, in rich text: citations only, each work once (see below) |
+| `sources` | yes | the lines of “Sources”, in rich text: citations only, each work once, no standing notes (see below); an empty list where there is nothing to cite |
 | `review` | yes | `status` (`draft` or `reviewed`), `date` (YYYY-MM-DD), `by` |
 | `replaces` | no | IDs and anchors of grouped entries this record absorbs; they stay valid links |
 
@@ -81,6 +81,16 @@ A record's first recommended term is its answer: the page prints it first, and t
 
 A line of `sources` is a citation as a book would print it: the author, the work, the place (Jack, 13 November 2026). It does not say how the book was read or checked ("checked against the searchable text", "supplied PDF", "printed page numbers"): that belongs in the commit or the session notes, and the builder rejects it. A work is cited once in a record, with all its pages together and in order: `John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 211, 219, 294.` When a later pass adds a page, add it to that line; never add a second line for the same work. The builder rejects a repeated line and a second citation of Traupman.
 
+**The standing notes are said once** (Jack, 15 November 2026: "We can just say it once"). Until then the same sentences stood under Sources in record after record: that quotations marked "Lewis & Short" are given as Lewis & Short cites them, that the example sentences marked "composed" are ours, that the quotations come from the Latinitas loci collections or were checked against the Perseus or Latin Library texts, how Graesse was read. They are notes on how to read the lexicon, not citations. They now stand in one place, the section "How to read the sources" of `src/how-we-decide.html` (`how-we-decide.html#sources`), and the builder draws one link to it under the sources of every entry that has any. So:
+
+- Do not write such a sentence in a record. If a new one is needed (a new mark, a new edition, a new digital text), add it to that section.
+- A citation joined to such a note keeps the citation: `Cicero, <em>De officiis</em> 1.124.`, not "Cicero, *De officiis* 1.124, checked against the Perseus Latin texts"; `J. G. Th. Graesse, <em>Orbis Latinus</em>, ed. F. Benedict (1909).`, not "…, read in the digitization at columbia.edu". A link to where a work can be read belongs in the section, not in each record.
+- The builder refuses a record that carries one, and its message gives the line as it should stand or says to delete it. The sentences it knows are the patterns `STANDING_NOTES`, `CITED_WITH_A_NOTE` and `READ_IN` beside `SOURCE_METHOD` in `scripts/build.py`; `without_standing_notes()` is the test. The three that stood in the most records (the Lewis & Short mark, "composed", Graesse's "read in the …") are refused in any wording (`STANDING_PHRASE`).
+- What is true of one record only is not a standing note and may stand, as a sentence of its own: "Quintilian keeps his edition's spelling *adfectūs*", "Cicero as Lewis & Short quotes him" (where the quotation itself carries no mark), "No source has a word for a podcast". Better still, put it where it belongs: a mark on the example, a comment on the term.
+- `sources` may be an empty list. A record whose only line was a standing note has none left (24 on 15 November 2026, most of them descriptions of ours); its page then has no "Sources" and no link. A record with an attested term should not stay so: give it its dictionary line.
+
+`notes/standing-notes-2026-11-15.md` lists each sentence that was taken out, with its count, and what was left in the records on purpose.
+
 ### How a page shows a record
 
 - A term whose period is `ours` is printed with an asterisk before it, on the record's page and in the word lists (Jack, 11 November 2026): the linguist's sign for an unattested form, chosen because it needs no colour and no icon to learn.
@@ -90,6 +100,7 @@ A line of `sources` is a citation as a book would print it: the author, the work
 - The period and the evidence of the answer stand in the margin. So do the notes, each beside the line that cites it. On a phone they fold under that line.
 - The other terms come next, under "Other words", each with its gloss, grammar, status, period and evidence. They stand before the examples because the examples illustrate every term of the record, not only the first (Jack, 11 November 2026).
 - Examples come last, each with its source. When a record has both quotations and composed sentences, a filter offers All, From authors and Composed.
+- The sources close the page: the lines of `sources` (without the lines that name the readers), then the review state, then one quiet link, "How to read the sources", to that section of How we decide, drawn only when the entry has sources to show. The practice cards and the search results have no such link.
 
 ## Latin word pages: `l/<word>.html`
 

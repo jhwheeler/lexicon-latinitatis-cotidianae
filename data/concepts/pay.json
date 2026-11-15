@@ -2,10 +2,17 @@
   "id": "pay",
   "english": "pay",
   "pos": "verb",
+  "also": [
+    "pay on time",
+    "pay off a debt",
+    "pay out",
+    "payment",
+    "pay in full"
+  ],
+  "domain": "urbs",
   "also_under": [
     "pecunia"
   ],
-  "domain": "urbs",
   "terms": [
     {
       "latin": "solvō, solvere, solvī, solūtum",
@@ -33,23 +40,18 @@
         "Cic. Off. 2.84: <span lang=\"la\">solūtiō rērum crēditārum</span> (Lewis &amp; Short)",
         "Traupman 358"
       ]
+    },
+    {
+      "latin": "persolvō, persolvere, persolvī, persolūtum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "pay in full, pay out; render what is due (thanks, honour, a vow, a penalty)",
+      "evidence": [
+        "Cic. Att. 5.14.1: <span lang=\"la\">stīpendium mīlitibus</span> (Lewis &amp; Short)",
+        "Verg. A. 1.600 (Lewis &amp; Short)"
+      ]
     }
   ],
-  "related": [
-    "pay-in-instalments",
-    "money",
-    "change",
-    "how-much-is-it"
-  ],
-  "sources": [
-    "<a href=\"https://logeion.uchicago.edu/solvo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: solvo</a> · <a href=\"https://logeion.uchicago.edu/solutio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: solutio</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 131."
-  ],
-  "review": {
-    "status": "draft",
-    "date": "2026-11-12",
-    "by": "Claude"
-  },
   "phrases": [
     {
       "latin": "ad diem solvere",
@@ -70,12 +72,27 @@
       "latin": "dēnumerāre alicui vīgintī dollarōs prō aliquā rē",
       "english": "to pay someone twenty dollars for something",
       "source": "Traupman 357"
+    },
+    {
+      "latin": "sē quae dēbērentur posterō diē persolūtūrum",
+      "english": "that he would pay what was owed the next day",
+      "source": "Cic. Pis. 92"
     }
   ],
-  "also": [
-    "pay on time",
-    "pay off a debt",
-    "pay out",
-    "payment"
-  ]
+  "related": [
+    "pay-in-instalments",
+    "money",
+    "change",
+    "how-much-is-it"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/solvo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: solvo</a> · <a href=\"https://logeion.uchicago.edu/solutio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: solutio</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 131.",
+    "<a href=\"https://logeion.uchicago.edu/persolvo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: persolvo</a>"
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-15",
+    "by": "Claude"
+  }
 }

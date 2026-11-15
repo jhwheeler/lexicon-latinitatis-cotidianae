@@ -8,7 +8,9 @@
     "start to",
     "commence",
     "make a start",
-    "you’ve made a good start"
+    "you’ve made a good start",
+    "set about",
+    "start (a web, a speech)"
   ],
   "domain": "verba",
   "terms": [
@@ -76,6 +78,16 @@
         "Plaut. Amph. 277: <span lang=\"la\">Perge, Nox, ut occēpistī</span>",
         "Plaut. Amph. 107: <span lang=\"la\">is amāre occēpit Alcumēnam clam virum</span>"
       ]
+    },
+    {
+      "latin": "ōrdior, ōrdīrī, ōrsus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "begin a web, lay the warp; hence begin, set about, undertake",
+      "evidence": [
+        "Plin. NH 11.80: <span lang=\"la\">arāneus ōrdītur tēlās</span> (Lewis &amp; Short)",
+        "Cic. Fam. 5.12.2 (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -108,6 +120,11 @@
       "latin": "Perge, Nox, ut occēpistī, gere patrī mōrem meō.",
       "english": "Go on, Night, as you have begun; do as my father wishes.",
       "source": "Plaut. Amph. 277"
+    },
+    {
+      "latin": "arāneus ōrdītur tēlās",
+      "english": "the spider begins its web",
+      "source": "Plin. NH 11.80 (Lewis &amp; Short)"
     }
   ],
   "related": [
@@ -119,16 +136,13 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/incipio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: incipio</a> · <a href=\"https://logeion.uchicago.edu/coepio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: coepio</a> · <a href=\"https://logeion.uchicago.edu/incoho\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: incoho</a> · <a href=\"https://logeion.uchicago.edu/initium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: initium</a> · <a href=\"https://logeion.uchicago.edu/occipio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: occipio</a>",
-    "Caesar and Phaedrus checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
-    "Quotations from the Latinitas loci collections (loci-horatius, loci-ovidius, loci-cicero-philosophica, loci-martialis, loci-livius), checked against the editions named there.",
-    "Quotations from the Latinitas loci collections and the note on suppletive verbs, checked against the editions named there.",
-    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 108.",
-    "Plautus, <em>Amphitruo</em> 107, 277."
+    "Plautus, <em>Amphitruo</em> 107, 277.",
+    "<a href=\"https://logeion.uchicago.edu/ordior\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ordior</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

@@ -3,12 +3,14 @@
   "english": "rest",
   "pos": "verb",
   "also": [
-    "take a break"
+    "take a break",
+    "repose",
+    "respite"
   ],
+  "domain": "sermo",
   "also_under": [
     "corpus"
   ],
-  "domain": "sermo",
   "terms": [
     {
       "latin": "quiēscō, quiēscere, quiēvī, quiētum",
@@ -21,6 +23,26 @@
       "latin": "quiēscere",
       "status": "recommended",
       "period": "classical"
+    },
+    {
+      "latin": "requiēscō, requiēscere, requiēvī, requiētum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "rest, take one’s rest, repose",
+      "evidence": [
+        "Caes. BC 3.98.3 (Lewis &amp; Short)",
+        "Cic. Div. 1.104: <span lang=\"la\">ut in ejus sellā requiēsceret</span> (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "requiēs, requiētis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "rest, repose, respite from labour or care, relaxation",
+      "evidence": [
+        "Lucr. 6.1178: <span lang=\"la\">nec requiēs erat ūlla malī</span> (Lewis &amp; Short)",
+        "Cic. Off. 2.6 (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -38,6 +60,16 @@
       "latin": "Quiēscāmus paulisper.",
       "english": "Let’s rest a little.",
       "source": "composed"
+    },
+    {
+      "latin": "In pāce in idipsum dormiam, et requiēscam",
+      "english": "In peace I will both lie down and take my rest",
+      "source": "Ps. 4, 9"
+    },
+    {
+      "latin": "nec requiēs erat ūlla malī",
+      "english": "and there was no respite from the suffering",
+      "source": "Lucr. 6.1178 (Lewis &amp; Short)"
     }
   ],
   "related": [
@@ -50,13 +82,13 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/quiesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quiesco</a>",
-    "The example sentences marked “composed” are ours.",
     "<a href=\"https://logeion.org/quiesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quiesco</a> · <a href=\"https://logeion.org/paulisper\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: paulisper</a>",
-    "Examples are composed for conversation with Theo; dictionary links document the component words, not these exact sentences or standardized modern climbing terminology."
+    "<a href=\"https://logeion.uchicago.edu/requiesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: requiesco</a>",
+    "<a href=\"https://logeion.uchicago.edu/requies\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: requies</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

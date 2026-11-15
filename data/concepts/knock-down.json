@@ -4,7 +4,10 @@
   "pos": "verb",
   "also": [
     "throw down",
-    "tackle (a player)"
+    "tackle (a player)",
+    "lay low",
+    "overthrow",
+    "prostrate"
   ],
   "domain": "sermo",
   "terms": [
@@ -28,6 +31,23 @@
         "Traupman 336"
       ],
       "comment": "Lewis &amp; Short: “to throw to the ground, overthrow, prostrate (mostly poet.)”. Traupman also uses it for a tackle in American football."
+    },
+    {
+      "latin": "prōsternō, prōsternere, prōstrāvī, prōstrātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "strew before; throw to the ground, lay low, overthrow; sē prōsternere, throw oneself down",
+      "evidence": [
+        "Cic. Phil. 14.27: <span lang=\"la\">hostem prōstrāvit, fūdit, occīdit</span> (Lewis &amp; Short)",
+        "Liv. 45.20.9: <span lang=\"la\">hīs audītīs prōstrāverant sē omnēs humī</span> (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "prōstrāvit, fūdit, occīdit",
+      "english": "he laid them low, routed them, cut them down",
+      "source": "Cic. Phil. 14.27 (Lewis &amp; Short)"
     }
   ],
   "related": [
@@ -36,11 +56,12 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/deicio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: deicio</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 46, 47, 336.",
-    "<a href=\"https://logeion.uchicago.edu/sterno\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sterno</a>"
+    "<a href=\"https://logeion.uchicago.edu/sterno\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sterno</a>",
+    "<a href=\"https://logeion.uchicago.edu/prosterno\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: prosterno</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

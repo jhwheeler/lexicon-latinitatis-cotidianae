@@ -5,7 +5,8 @@
   "also": [
     "animals",
     "creature",
-    "beast"
+    "beast",
+    "living being"
   ],
   "domain": "natura",
   "terms": [
@@ -55,6 +56,15 @@
       "evidence": [
         "Cic. ND 1.97: <span lang=\"la\">elephantō bēluārum nūlla prūdentior</span> (Lewis &amp; Short)"
       ]
+    },
+    {
+      "latin": "animāns, animantis m./f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "any living being; mostly an animal, as opposed to man (the gender varies, and is also neuter)",
+      "evidence": [
+        "Cic. ND 2.22: <span lang=\"la\">animāns composque ratiōnis mundus est</span> (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -82,6 +92,11 @@
       "latin": "elephantō bēluārum nūlla prūdentior",
       "english": "no beast is wiser than the elephant",
       "source": "Cic. ND 1.97 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "ut requīrant atque appetant ad quās sē applicent ejusdem generis animantīs",
+      "english": "so that they seek out and make for living creatures of their own kind to attach themselves to",
+      "source": "Cic. Amic. 81"
     }
   ],
   "notes": {
@@ -118,11 +133,12 @@
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 138, 141.",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. animal.",
     "Cicero checked against the Latin Library text (<a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">CLTK mirror</a>); Pliny against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (Mayhoff); the psalm and Phaedrus from the Latinitas loci collections (loci-vulgata, loci-phaedrus).",
-    "<a href=\"https://logeion.uchicago.edu/belua\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: belua</a>"
+    "<a href=\"https://logeion.uchicago.edu/belua\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: belua</a>",
+    "<a href=\"https://logeion.uchicago.edu/animo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: animo</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

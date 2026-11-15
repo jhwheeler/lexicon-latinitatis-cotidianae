@@ -8,7 +8,11 @@
     "divert",
     "ward off",
     "drive off",
-    "carry off"
+    "carry off",
+    "averse",
+    "turned away",
+    "backwards",
+    "estranged"
   ],
   "domain": "verba",
   "terms": [
@@ -20,6 +24,16 @@
       "evidence": [
         "Caes. BC 3.59: <span lang=\"la\">praedam omnem domum āvertēbant</span> (Lewis &amp; Short)",
         "Caes. BG 1.16 (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "āversus, āversa, āversum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "turned away, with the back turned; disinclined, unfriendly, hostile",
+      "evidence": [
+        "Verg. A. 2.170: <span lang=\"la\">āversa deae mēns</span> (Lewis &amp; Short)",
+        "Hor. S. 1.5.29: <span lang=\"la\">āversōs solitī compōnere amīcōs</span> (Lewis &amp; Short)"
       ]
     }
   ],
@@ -33,11 +47,20 @@
       "latin": "praedam omnem domum āvertēbant",
       "english": "they were carrying all the plunder off home",
       "source": "Caes. BC 3.59 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "āversōs bovēs eximium quemque pulchritūdine caudīs in spēluncam trāxit",
+      "english": "he dragged the finest of the cattle backwards by their tails into the cave",
+      "source": "Liv. 1.7.5"
+    },
+    {
+      "latin": "āversōs solitī compōnere amīcōs",
+      "english": "used to reconciling friends who have fallen out",
+      "source": "Hor. S. 1.5.29 (Lewis &amp; Short)"
     }
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/averto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: averto</a>",
-    "Quotations from the Latinitas loci collections, checked against the editions named there."
+    "<a href=\"https://logeion.uchicago.edu/averto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: averto</a>"
   ],
   "review": {
     "status": "draft",

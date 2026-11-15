@@ -6,7 +6,9 @@
     "threats",
     "menace",
     "make threats",
-    "empty threats"
+    "empty threats",
+    "threatening",
+    "menacing"
   ],
   "domain": "verba",
   "terms": [
@@ -39,6 +41,16 @@
       "period": "classical",
       "gloss": "a threat in the sense of a danger",
       "comment": "For a threat that is a danger rather than words (“a threat to his health”), Latin speaks of danger: see risk."
+    },
+    {
+      "latin": "mināx, minācis",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "threatening, menacing; in the poets also jutting out, overhanging",
+      "evidence": [
+        "Verg. A. 8.668: <span lang=\"la\">minācī pendentem scopulō</span> (Lewis &amp; Short)",
+        "Cic. Font. 36 (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -51,6 +63,11 @@
       "latin": "Minās tuās nōn timeō.",
       "english": "I’m not afraid of your threats.",
       "source": "composed"
+    },
+    {
+      "latin": "quōcumque aspiciō, nihil est, nisi pontus et āēr, flūctibus hic tumidus, nūbibus ille mināx",
+      "english": "wherever I look there is nothing but sea and sky, the one swollen with waves, the other threatening with clouds",
+      "source": "Ov. Tr. 1.2.23–24"
     }
   ],
   "related": [
@@ -61,11 +78,11 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/minae\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: minae</a> · <a href=\"https://logeion.uchicago.edu/minatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: minatio</a> · <a href=\"https://logeion.uchicago.edu/periculum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: periculum</a>",
-    "The example sentences marked “composed” are ours."
+    "<a href=\"https://logeion.uchicago.edu/minax\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: minax</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

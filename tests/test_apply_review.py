@@ -137,6 +137,23 @@ class ApplyReviewTests(unittest.TestCase):
         self.assertEqual((done['flagged'], done['unknown']), (['cooking-pot'], ['no-such-record']))
         self.assertIn('(the entry has changed since) · wrong word', self.flags().splitlines()[9])
 
+    def test_a_report_that_is_not_the_editors_gives_flags_and_marks_nothing_reviewed(self):
+        """Only the editor reviews (Jack, 15 November 2026): with flags_only a report's "looks
+        right" is left out and counted, and its flags are written as ever."""
+        done = review.apply([self.verdict('soap'), self.verdict('perhaps', 'flag', reasons=['meaning'])], self.root, flags_only=True)
+        self.assertEqual(done['ignored'], ['soap'])
+        self.assertEqual(done['reviewed'], [])
+        self.assertEqual(done['flagged'], ['perhaps'])
+        self.assertEqual(self.record('soap')['review']['status'], 'draft')
+        self.assertIn('**perhaps**', self.flags())
+        self.assertIn('1 verdict of "looks right" left out: only the editor reviews: soap', review.summary(done))
+        with contextlib.redirect_stdout(io.StringIO()) as out:
+            path = self.root / 'report.txt'
+            path.write_text(self.report(self.verdict('cooking-pot')), encoding='utf-8')
+            self.assertEqual(review.main([str(path), '--flags-only', '--root', str(self.root)]), 0)
+        self.assertIn('left out', out.getvalue())
+        self.assertEqual(self.record('cooking-pot')['review']['status'], 'draft')
+
     def test_from_the_command_line(self):
         path = self.root / 'report.txt'
         path.write_text(self.report(self.verdict('soap'), self.verdict('perhaps', 'flag', reasons=['meaning'])), encoding='utf-8')

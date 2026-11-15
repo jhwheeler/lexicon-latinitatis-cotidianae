@@ -512,22 +512,20 @@ html.pgame-open, html.pgame-open body { overflow:hidden; }
 @media (prefers-reduced-motion:reduce) { #g-bar { transition:none; } .pbtn:active { transform:none; } }
 
 /* Review (review.html, the foot of every entry, the back of a practice card) -----------------
-   Jack, 15 November 2026. An entry ends with two quiet controls, a flag for anyone and "looks
-   right" for the editor: small sans words with an icon, in grey, like the filters; the one in use
-   is underlined in red. The flag's box opens under them between two hairlines. Nothing here
-   should shout. Opened from the review page, an entry keeps the controls at the foot of the
-   screen, so that a queue of entries can be gone through with the thumb. */
+   Jack, 15 November 2026. An entry ends with one quiet control, the flag: a small sans word with
+   an icon, in grey, like the filters; in use it is underlined in red. The flag's box opens under
+   it between two hairlines. Nothing here should shout. The editor's own controls are not on the
+   site: he reviews in a private page of his own. */
 .verdict { margin-top:6px; color:var(--muted); font:400 1rem/1.4 var(--sans); }
 .verdict-state { margin:6px 0 0 !important; color:var(--soft); font-size:.95rem; }
 .verdict-state a { display:inline-block; padding:10px 0; margin:-10px 0; }
 .verdict-row { display:flex; flex-wrap:wrap; align-items:center; column-gap:20px; }
-.verdict-row :is(button, a) { display:inline-flex; align-items:center; gap:6px; min-height:44px; padding:0; border:0; background:none; color:var(--muted); font:inherit; cursor:pointer; text-decoration:none; }
-.verdict-row :is(button, a):hover { color:var(--ink); }
+.verdict-row button { display:inline-flex; align-items:center; gap:6px; min-height:44px; padding:0; border:0; background:none; color:var(--muted); font:inherit; cursor:pointer; text-decoration:none; }
+.verdict-row button:hover { color:var(--ink); }
 .verdict-row svg { flex:none; }
 .verdict-row button[aria-pressed="true"] { color:var(--ink); }
 .verdict-row button[aria-pressed="true"] span { text-decoration:underline; text-decoration-color:var(--accent); text-decoration-thickness:2px; text-underline-offset:.45em; }
 .verdict-row button[aria-pressed="true"] svg { color:var(--accent); }
-.verdict-row .verdict-next { margin-left:auto; color:var(--ink); text-decoration:underline; text-decoration-color:var(--accent); text-underline-offset:.25em; }
 .flagbox { margin:2px 0 4px; padding:8px 0 4px; border-top:1px solid var(--hair); border-bottom:1px solid var(--hair); }
 .flagbox-ask { margin:0 !important; color:var(--rubric); font:400 1.1rem/1.3 var(--serif); font-variant-caps:small-caps; letter-spacing:.05em; }
 .flagbox-chips { display:flex; flex-wrap:wrap; column-gap:18px; }
@@ -542,10 +540,6 @@ html.pgame-open, html.pgame-open body { overflow:hidden; }
 .flagbox-row .flagbox-save { color:var(--ink); text-decoration:underline; text-decoration-color:var(--accent); text-underline-offset:.25em; }
 .flagbox-alt { margin:0 !important; font-size:.95rem; }
 .flagbox-alt a { display:inline-flex; align-items:center; min-height:44px; color:var(--muted); }
-body.reviewing { padding-bottom:calc(60px + env(safe-area-inset-bottom, 0px)); }
-.verdict-bar { position:fixed; inset:auto 0 0; z-index:30; max-height:85dvh; margin:0; padding:2px max(16px, env(safe-area-inset-right, 0px)) max(4px, env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); overflow-y:auto; overscroll-behavior:contain; background:var(--paper); border-top:1px solid var(--rule); }
-.verdict-bar > * { max-width:38rem; }
-@media (min-width:960px) { .verdict-bar { padding-inline:max(32px, calc((100vw - 1040px) / 2)); } }
 /* A reviewed entry in a list: a small tick after its headword, drawn here, not written. */
 .wlist li.rv .w-en::after { content:""; display:inline-block; width:.28em; height:.55em; margin:0 0 .05em .5em; border:solid var(--muted); border-width:0 1.5px 1.5px 0; transform:rotate(45deg); }
 
@@ -558,17 +552,6 @@ body.reviewing { padding-bottom:calc(60px + env(safe-area-inset-bottom, 0px)); }
 .r-counts div { display:flex; align-items:baseline; gap:12px; padding:8px 0; border-bottom:1px solid var(--hair); }
 .r-counts dt { min-width:3.4em; font:700 1.25rem/1.2 var(--serif); font-variant-numeric:tabular-nums; text-align:right; }
 .r-counts dd { margin:0; color:var(--soft); font:400 1rem/1.3 var(--sans); }
-.r-editor { margin:8px 0 0; }
-.r-editor .p-help { display:block; margin:0; }
-.r-switch { display:inline-flex; align-items:center; gap:10px; min-height:44px; padding:0; border:0; background:none; color:var(--ink); font:400 1.05rem var(--sans); cursor:pointer; }
-.r-switch-box { flex:none; width:20px; height:20px; border:1.5px solid var(--rule); }
-.r-switch[aria-checked="true"] .r-switch-box { border-color:var(--accent); }
-.r-switch[aria-checked="true"] .r-switch-box::after { content:""; display:block; width:5px; height:10px; margin:1px 0 0 5.5px; border:solid var(--accent); border-width:0 2px 2px 0; transform:rotate(45deg); }
-.r-go { margin:12px 0 4px; }
-.r-go .pbtn { width:100%; max-width:22rem; text-decoration:none; }
-.r-queue { margin-bottom:0; }
-.r-queue .r-why { display:block; text-align:left; }
-@media (min-width:600px) { .r-queue a { grid-template-columns:minmax(0,1fr) minmax(0,1.2fr) minmax(6rem,auto); } .r-queue .r-why { text-align:right; } }
 .r-pending { margin:6px 0; padding-left:1.1em; color:var(--soft); }
 .r-pending li { margin:.2em 0; }
 .r-pending li::marker { color:var(--accent); }
@@ -578,8 +561,8 @@ a.p-button { display:inline-flex; align-items:center; }
 .r-sec > p { margin:.3em 0; }
 #r-sent { margin-top:4px; }
 
-/* On the back of a practice card the two controls are small buttons beside the way to the entry,
-   in the game's look, and the flag's box is a sheet that comes up over the round. */
+/* On the back of a practice card the flag is a small button beside the way to the entry, in the
+   game's look, and its box is a sheet that comes up over the round. */
 .pgame-entry { display:flex; flex-wrap:wrap; align-items:center; justify-content:center; column-gap:10px; margin-top:8px; font:400 1rem var(--sans); }
 #g-verdict:empty { display:none; }
 .verdict-game { margin:0; }

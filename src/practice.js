@@ -528,10 +528,10 @@
       q('g-ex-en').replaceChildren(el('span', '', example[1], 'en'), ' ', example[2] ? el('span', 'src', example[2], 'en') : el('span', 'src composed', t('composed')));
     }
     q('g-entry').href = `c/${card.i}.html`;
-    // Beside the way to the entry, the review's two controls (review.js; Jack, 15 November 2026: he
-    // notices most problems while practising): a flag for anyone, and for the editor "looks
-    // right". They touch neither the round nor the step back.
-    const verdict = window.lexiconReview ? window.lexiconReview.controls({ id: card.i, rev: card.h, reviewed: !!card.d, english: card.e, where: 'game' }).box : null;
+    // Beside the way to the entry, the flag (review.js; Jack, 15 November 2026: most problems
+    // are noticed while practising). It touches neither the round nor the step back. The editor's
+    // "looks right" is not here: he reviews in a private page of his own.
+    const verdict = window.lexiconReview ? window.lexiconReview.controls({ id: card.i, rev: card.h, english: card.e, where: 'game' }).box : null;
     q('g-verdict').replaceChildren(...(verdict ? [verdict] : []));
   }
   // The layer covers the whole page, which does not scroll under it.

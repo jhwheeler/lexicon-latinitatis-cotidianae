@@ -546,6 +546,15 @@ class BuildTests(unittest.TestCase):
         review = outputs['review.html']
         self.assertIn('<script src="assets/practice-data.js" defer></script>\n<script src="assets/review.js" defer></script>', review)
         self.assertIn(f'Reviewed by the editor: 0; drafts: {len(self.practice(outputs)["cards"]):,}.', review)
+        # The site keeps only the flag: the page has no reviewer's switch and no queue of drafts
+        # (the editor reviews in a private page of his own).
+        for gone in ('r-editor', 'r-switch', 'role="switch"', 'I am the reviewer', 'r-queue', 'r-start', 'r-more', 'What to review next'):
+            self.assertNotIn(gone, review)
+        script = outputs['assets/review.js']
+        for gone in ('Looks right', 'Recēnsor', 'I am the reviewer', 'verdict-ok', 'isEditor', 'lexicon-review-queue',
+                     'lexicon-review-skipped', 'review=1', 'Praeterī', 'Proxima'):
+            self.assertNotIn(gone, script)
+        self.assertNotIn('review=1', outputs['assets/practice.js'])
         self.assertIn('cotidianae/review.html</loc>', outputs['sitemap.xml'])
         for path, up in (('index.html', ''), ('c/perhaps.html', '../'), ('review.html', '')):
             page = outputs[path]
@@ -558,13 +567,21 @@ class BuildTests(unittest.TestCase):
         self.save_record(record)
         outputs = builder.build_site(self.root)
         self.assertIn(f'data-rev="{revision}" data-status="reviewed">', outputs['c/perhaps.html'])
-        self.assertIn('<p>Reviewed by Jack, 15 November 2026.</p>', outputs['c/perhaps.html'])
+        self.assertIn('<p>Reviewed 15 November 2026.</p>', outputs['c/perhaps.html'])
         card = next(card for card in self.practice(outputs)['cards'] if card['i'] == 'perhaps')
         self.assertEqual((card['h'], card['d']), (revision, 1))
         self.assertIn(' · 1 reviewed by the editor; ', outputs['index.html'])
         self.assertIn('<li data-kind="word" class="rv"><a href="../c/perhaps.html">', outputs['k/sermo.html'])
         self.assertEqual(outputs['words.html'].count(' class="rv"'), 1)
         self.assertIn('Reviewed by the editor: 1; drafts: ', outputs['review.html'])
+        # The reviewer's name stays in the record and is printed nowhere on the site.
+        record['review']['by'] = 'Xenophilus Recensor'
+        self.save_record(record)
+        outputs = builder.build_site(self.root)
+        self.assertIn('<p>Reviewed 15 November 2026.</p>', outputs['c/perhaps.html'])
+        for path, output in outputs.items():
+            if isinstance(output, str):
+                self.assertNotIn('Xenophilus', output, path)
 
     # Practice ----------------------------------------------------------------------------
 

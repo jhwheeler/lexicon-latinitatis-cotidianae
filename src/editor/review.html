@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- The editor's review page: built by scripts/editor_review.py and published privately as an
+     artifact. It is not part of the site. See docs/review.md. -->
+<html lang="la" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Recēnsiō · Lexicon Latīnitātis Cotīdiānae</title>
+<script>
+try { document.documentElement.dataset.theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; } catch (e) {}
+</script>
+<link rel="stylesheet" href="lexicon.css">
+<link rel="stylesheet" href="editor.css">
+<script src="d/index.js" defer></script>
+<script src="review.js" defer></script>
+</head>
+<body class="subpage editor">
+
+<main class="wrap page-main" id="lobby">
+<header class="e-head"><h1>Recēnsiō</h1>
+<p class="eyebrow">Lexicon Latīnitātis Cotīdiānae<span id="e-built"></span></p></header>
+<p class="e-status" id="e-store" role="status" aria-live="polite">Jūdicia quaeruntur…</p>
+
+<dl class="e-counts" id="e-counts"></dl>
+<p class="e-go"><button type="button" class="pbtn pbtn-fill" id="e-start">Incipe</button></p>
+
+<section class="e-sec" aria-labelledby="e-find-h">
+<h2 id="e-find-h">Quaere</h2>
+<input type="search" id="e-find" class="e-find" placeholder="Quaere verbum" aria-label="Quaere verbum" autocomplete="off" autocapitalize="off" spellcheck="false" lang="">
+<ol class="e-list" id="e-found"></ol>
+</section>
+
+<section class="e-sec" aria-labelledby="e-cats-h">
+<h2 id="e-cats-h">Rērum genera</h2>
+<ol class="e-list" id="e-cats"></ol>
+</section>
+
+<section class="e-sec" id="e-flags-sec" aria-labelledby="e-flags-h" hidden>
+<h2 id="e-flags-h">Notāta</h2>
+<ol class="e-list" id="e-flags"></ol>
+</section>
+
+<section class="e-sec" id="e-report-sec" aria-labelledby="e-report-h" hidden>
+<h2 id="e-report-h">Relātiō</h2>
+<p class="e-help" lang="en">The verdicts cannot be saved from this view, so they are kept in this browser. Copy the report and paste it to Claude.</p>
+<textarea id="e-report" rows="6" readonly spellcheck="false" lang="en"></textarea>
+<p><button type="button" class="p-button" id="e-copy">Exscrībe</button><span class="e-status" id="e-copied" role="status" aria-live="polite"></span></p>
+</section>
+</main>
+
+<div id="entry" hidden>
+<header class="e-top"><button type="button" class="e-x" id="e-close" aria-label="Claude"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg></button>
+<p class="e-where" id="e-where"></p></header>
+<main class="wrap page-main" id="e-page"></main>
+<div class="e-bar" id="e-bar">
+<p class="e-state" id="e-state" role="status" aria-live="polite" hidden></p>
+<form class="e-box" id="e-box" hidden>
+<p class="e-ask">Quid vitiī est?</p>
+<div class="e-chips" id="e-chips"></div>
+<label for="e-note">Paucīs verbīs, sī vīs</label>
+<input type="text" id="e-note" class="e-note" autocomplete="off" enterkeyhint="done" lang="">
+<div class="e-row"><button type="button" class="pbtn" id="e-cancel">Omitte</button><button type="submit" class="pbtn pbtn-fill">Servā</button></div>
+</form>
+<div class="e-row" id="e-buttons">
+<button type="button" class="pbtn e-small" id="e-back" aria-label="Retrō"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+<button type="button" class="pbtn e-small" id="e-skip">Praeterī</button>
+<button type="button" class="pbtn pbtn-again" id="e-flag"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V4h11l-1.5 4L16 12H5"/></svg><span>Notā</span></button>
+<button type="button" class="pbtn pbtn-fill" id="e-ok"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg><span>Rēctē</span></button>
+</div>
+</div>
+</div>
+
+</body>
+</html>

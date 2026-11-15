@@ -1401,8 +1401,11 @@ test('the front of a card says what the cue leaves open: the other English names
     const fold = s => s.toLowerCase().replace(/[^a-z]/g, '');
     return { none: cards.find(card => !card.o && !card.g && !card.q).i, same: (cards.find(card => card.q && fold(card.q[0][1]) === fold(card.e)) || {}).i || null };
   });
+  // From another page: closing the round's layer keeps the round once more a moment later (the
+  // dialog's own close event), and on a slow machine that came after the line below and undid it.
+  await page.goto(url);
   await begin(bare.none);
-  await page.reload();
+  await page.goto(pageUrl('practice.html'));
   await page.locator('#p-game[open]').waitFor();
   assert.equal(await page.locator('#g-hints p:not([hidden])').count(), 0);
   if (bare.same) {

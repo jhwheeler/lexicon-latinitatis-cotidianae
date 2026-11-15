@@ -2,6 +2,10 @@
   "id": "seeing-is-believing",
   "english": "seeing is believing",
   "pos": "phrase",
+  "also": [
+    "one eyewitness is worth ten hearsays",
+    "I’ll believe it when I see it"
+  ],
   "domain": "sermo",
   "terms": [
     {
@@ -12,10 +16,29 @@
         "Traupman 258"
       ],
       "comment": "Literally “see and believe”. We have found no ancient source for it in Lewis &amp; Short or the loci collections."
+    },
+    {
+      "latin": "Plūris est oculātus testis ūnus quam aurītī decem.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "one witness with eyes is worth more than ten with ears",
+      "register": "vōx cōmica: Plaut.",
+      "evidence": [
+        "Plaut. Truc. 489: <span lang=\"la\">plūris est oculātus testis ūnus quam aurītī decem</span>"
+      ],
+      "comment": "The soldier’s maxim in the <em>Truculentus</em>; he goes on: those who hear tell what they have heard, those who see know for certain."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "plūris est oculātus testis ūnus quam aurītī decem; quī audiunt audīta dīcunt, quī vident plānē sciunt",
+      "english": "one eyewitness is worth more than ten who have only heard; those who hear tell what they heard, those who see know for certain",
+      "source": "Plaut. Truc. 489–490"
     }
   ],
   "sources": [
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>.",
+    "Plautus, <em>Truculentus</em> 489–490."
   ],
   "review": {
     "status": "draft",

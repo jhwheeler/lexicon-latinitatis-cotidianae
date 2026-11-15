@@ -4,7 +4,10 @@
   "pos": "noun",
   "also": [
     "private tutor",
-    "home tutor"
+    "home tutor",
+    "pedagogue",
+    "child’s attendant",
+    "governor (of a boy)"
   ],
   "domain": "schola",
   "terms": [
@@ -17,14 +20,26 @@
         "Traupman 32, 399"
       ],
       "comment": "<span lang=\"la\">Praeceptor</span>, teacher, is classical (Plautus, Cicero)."
+    },
+    {
+      "latin": "paedagōgus, paedagōgī m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the slave who had charge of a boy at home and took him to school; a governor, tutor",
+      "evidence": [
+        "Plaut. Bacch. 138: <span lang=\"la\">nōn paedagōgum jam mē, sed Lȳdum vocat</span>",
+        "Cic. Lael. 74: <span lang=\"la\">nūtrīcēs et paedagōgī</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Greek παιδαγωγός. He looked after the boy’s conduct; the teaching was the <span lang=\"la\">magister</span>’s or the <span lang=\"la\">praeceptor</span>’s."
     }
   ],
   "related": [
     "teacher"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/praeceptor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praeceptor</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 32."
+    "<a href=\"https://logeion.uchicago.edu/praeceptor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praeceptor</a> · <a href=\"https://logeion.uchicago.edu/paedagogus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: paedagogus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 32.",
+    "Plautus, <em>Bacchides</em> 138."
   ],
   "review": {
     "status": "draft",
@@ -36,6 +51,11 @@
       "latin": "prīvātim īnstituere",
       "english": "to tutor",
       "source": "Traupman 399"
+    },
+    {
+      "latin": "nōn paedagōgum jam mē, sed Lȳdum vocat",
+      "english": "he no longer calls me his tutor, but plain Lydus",
+      "source": "Plaut. Bacch. 138"
     }
   ]
 }

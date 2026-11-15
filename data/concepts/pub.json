@@ -10,7 +10,8 @@
     "inn",
     "saloon",
     "bar",
-    "barroom"
+    "barroom",
+    "hot-drinks bar"
   ],
   "domain": "urbs",
   "terms": [
@@ -57,6 +58,18 @@
         "Traupman 174"
       ],
       "comment": "<span lang=\"la\">pōtōrius</span> is post-Augustan, of drinking vessels (Lewis &amp; Short)."
+    },
+    {
+      "latin": "thermopōlium (thermipōlium), thermopōliī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a place where hot drinks were sold, a tavern",
+      "register": "vōx cōmica: Plaut.",
+      "evidence": [
+        "Plaut. Curc. 292: <span lang=\"la\">quōs semper videās bibentēs esse in thermipōliō</span>",
+        "Plaut. Rud. 529"
+      ],
+      "comment": "Greek θερμοπώλιον. Lewis &amp; Short cites it from Plautus alone."
     }
   ],
   "phrases": [
@@ -69,6 +82,11 @@
       "latin": "Unde nōbīs prōdīs? Ē popīnā quāpiam?",
       "english": "Where have you sprung from? Some pub?",
       "source": "Erasm. Coll., Pietās puerīlis, I 44"
+    },
+    {
+      "latin": "quōs semper videās bibentēs esse in thermipōliō",
+      "english": "men you can always see drinking in the tavern",
+      "source": "Plaut. Curc. 292"
     }
   ],
   "related": [
@@ -79,11 +97,12 @@
     "hotel"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/caupona\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: caupona</a> · <a href=\"https://logeion.uchicago.edu/popina\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: popina</a> · <a href=\"https://logeion.uchicago.edu/taberna\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: taberna</a>",
+    "<a href=\"https://logeion.uchicago.edu/caupona\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: caupona</a> · <a href=\"https://logeion.uchicago.edu/popina\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: popina</a> · <a href=\"https://logeion.uchicago.edu/taberna\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: taberna</a> · <a href=\"https://logeion.uchicago.edu/thermopolium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: thermopolium</a>",
     "Quotations from the Latinitas loci collections (loci-erasmus), checked against the editions named there.",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 167, 276, 333.",
     "<a href=\"https://logeion.uchicago.edu/potorius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: potorius</a>",
-    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "Plautus, <em>Curculio</em> 292; <em>Rudens</em> 529."
   ],
   "review": {
     "status": "draft",

@@ -17,7 +17,9 @@
     "cut out the chatter",
     "stop chattering",
     "cut out the noise",
-    "stop that noise"
+    "stop that noise",
+    "will you be quiet?",
+    "won’t you shut up?"
   ],
   "domain": "sermo",
   "terms": [
@@ -72,6 +74,18 @@
         "Plaut. Bacch. 638a: <span lang=\"la\">Tacē modo: deus respiciet nōs aliquis.</span>",
         "Plaut. Asin. 869"
       ]
+    },
+    {
+      "latin": "Etiam tacēs?",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "will you be quiet? (an impatient question that is a command)",
+      "register": "vōx cōmica: Plaut., Ter.",
+      "evidence": [
+        "Plaut. Curc. 41c: <span lang=\"la\">Etiam tacēs?</span>",
+        "Ter. Ad. 550: <span lang=\"la\">Etiam tacēs?</span>"
+      ],
+      "comment": "<span lang=\"la\">Etiam</span> in impatient questions: <span lang=\"la\">etiam vigilās?</span>, <span lang=\"la\">etiam aperīs?</span> (Lewis &amp; Short s.v. <span lang=\"la\">etiam</span>)."
     }
   ],
   "phrases": [
@@ -109,6 +123,11 @@
       "latin": "Tacē modo: deus respiciet nōs aliquis.",
       "english": "Hush now: some god will look kindly on us.",
       "source": "Plaut. Bacch. 638a"
+    },
+    {
+      "latin": "Obsecrō, vidē nē ille hūc prōrsus sē irruat. — Etiam tacēs?",
+      "english": "Please, see that he doesn’t come charging straight in here. — Will you be quiet?",
+      "source": "Ter. Ad. 550"
     }
   ],
   "related": [
@@ -118,11 +137,12 @@
   "sources": [
     "Passages as cited on the grouped card.",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 93, 104, 106, 107.",
-    "<a href=\"https://logeion.uchicago.edu/taceo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: taceo</a> · <a href=\"https://logeion.uchicago.edu/quin\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quin</a> · <a href=\"https://logeion.uchicago.edu/obsero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: obsero</a>",
+    "<a href=\"https://logeion.uchicago.edu/taceo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: taceo</a> · <a href=\"https://logeion.uchicago.edu/quin\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quin</a> · <a href=\"https://logeion.uchicago.edu/obsero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: obsero</a> · <a href=\"https://logeion.uchicago.edu/etiam\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: etiam</a>",
     "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
     "<a href=\"https://logeion.uchicago.edu/silentium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: silentium</a>",
     "<a href=\"https://logeion.uchicago.edu/garrulitas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: garrulitas</a>",
-    "Plautus, <em>Asinaria</em> 869; <em>Bacchides</em> 638a."
+    "Plautus, <em>Asinaria</em> 869; <em>Bacchides</em> 638a.",
+    "Plautus, <em>Curculio</em> 41c. Terence, <em>Adelphoe</em> 550."
   ],
   "review": {
     "status": "draft",

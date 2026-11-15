@@ -10,7 +10,9 @@
     "plastered",
     "sloshed",
     "stewed (drunk)",
-    "stoned (drunk)"
+    "stoned (drunk)",
+    "intoxicated",
+    "full of wine"
   ],
   "domain": "culina",
   "audience": "adult",
@@ -82,6 +84,40 @@
         "Traupman 395"
       ],
       "comment": "A diminutive of <span lang=\"la\">ēbrius</span>; Lewis &amp; Short knows it perhaps only in Plautus."
+    },
+    {
+      "latin": "vīnolentus (vīnulentus), vīnolenta, vīnolentum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "full of wine, drunk",
+      "evidence": [
+        "Plaut. Cist. 159: <span lang=\"la\">vī, vīnulentus multā nocte in viā</span>",
+        "Cic. Tusc. 5.118: <span lang=\"la\">nē sōbrius in violentiam vīnolentōrum incidat</span> (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "appōtus (adpōtus), appōta, appōtum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "well soaked, drunk",
+      "register": "vōx cōmica: Plaut.",
+      "evidence": [
+        "Plaut. Curc. 354: <span lang=\"la\">postquam cēnātī atque appōtī</span>",
+        "Plaut. Amph. 282: <span lang=\"la\">adpōtum probē</span>"
+      ],
+      "comment": "Found only in Plautus (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "crēdō edepol equidem dormīre Sōlem, atque adpōtum probē",
+      "english": "upon my word, I do believe the Sun is asleep, and well soaked too",
+      "source": "Plaut. Amph. 282"
+    },
+    {
+      "latin": "Homō hic ēbrius est, ut opīnor.",
+      "english": "The man is drunk, I think.",
+      "source": "Plaut. Amph. 574"
     }
   ],
   "related": [
@@ -89,14 +125,16 @@
     "sleep-it-off"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/ebrietas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ebrietas</a>",
+    "<a href=\"https://logeion.uchicago.edu/ebrietas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ebrietas</a> · <a href=\"https://logeion.uchicago.edu/vinolentus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vinolentus</a> · <a href=\"https://logeion.uchicago.edu/appotus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: appotus</a>",
     "<a href=\"https://logeion.org/ebrius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ebrius</a>",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. drunk.",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 307.",
     "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
     "<a href=\"https://logeion.uchicago.edu/ebriositas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ebriositas</a> · <a href=\"https://logeion.uchicago.edu/madidus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: madidus</a>",
     "<a href=\"https://logeion.uchicago.edu/elixus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: elixus</a>",
-    "<a href=\"https://logeion.uchicago.edu/ebriolus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ebriolus</a>"
+    "<a href=\"https://logeion.uchicago.edu/ebriolus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ebriolus</a>",
+    "Plautus, <em>Amphitruo</em> 282; <em>Cistellaria</em> 159; <em>Curculio</em> 354.",
+    "Plautus, <em>Amphitruo</em> 574."
   ],
   "replaces": [
     "entry-410"

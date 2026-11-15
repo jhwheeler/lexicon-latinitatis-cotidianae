@@ -7,7 +7,9 @@
     "interrupt",
     "do not disturb",
     "disturbance",
-    "undisturbed"
+    "undisturbed",
+    "butt in",
+    "talk back"
   ],
   "domain": "verba",
   "terms": [
@@ -42,6 +44,16 @@
         "Cic. de Or. 2.3 (Lewis &amp; Short, s.v. <span lang=\"la\">interveniō</span>): <span lang=\"la\">verēns nē molestī vōbīs intervenīrēmus</span>"
       ],
       "comment": "The polite way to ask whether one is disturbing: <span lang=\"la\">Num molestus sum?</span>"
+    },
+    {
+      "latin": "obloquor, obloquī, oblocūtus sum (+ dat.)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "break in on someone who is speaking, interrupt; talk back",
+      "evidence": [
+        "Plaut. Cist. 753b: <span lang=\"la\">Nē obloquere rūsus.</span>",
+        "Cic. Clu. 63 (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -59,6 +71,11 @@
       "latin": "dictitābat sē hortulōs aliquōs emere velle, quō invītāre amīcōs et ubi sē oblectāre sine interpellātōribus posset",
       "english": "he kept saying he wanted to buy some little garden to invite his friends to, where he could enjoy himself undisturbed",
       "source": "Cic. Off. 3.58"
+    },
+    {
+      "latin": "Nē obloquere rūsus. Perge porrō dīcere.",
+      "english": "Don’t interrupt again. Go on with what you were saying.",
+      "source": "Plaut. Cist. 753b"
     }
   ],
   "related": [
@@ -67,9 +84,10 @@
     "shock"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/interpello\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: interpello</a> · <a href=\"https://logeion.uchicago.edu/perturbo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: perturbo</a> · <a href=\"https://logeion.uchicago.edu/molestus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: molestus</a>",
+    "<a href=\"https://logeion.uchicago.edu/interpello\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: interpello</a> · <a href=\"https://logeion.uchicago.edu/perturbo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: perturbo</a> · <a href=\"https://logeion.uchicago.edu/molestus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: molestus</a> · <a href=\"https://logeion.uchicago.edu/obloquor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: obloquor</a>",
     "Quotations from the Latinitas loci collections (loci-plautus, loci-cicero-epistulae, loci-cicero-philosophica), checked against the editions named there.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 334."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 334.",
+    "Plautus, <em>Cistellaria</em> 753b."
   ],
   "review": {
     "status": "draft",

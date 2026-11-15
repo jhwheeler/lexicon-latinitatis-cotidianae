@@ -161,6 +161,11 @@ test('the lexicon is kept on the device: it opens and searches offline, as an ap
   await app.goto(pageUrl('hora.html'));
   assert.equal(await app.locator('#go').isVisible(), true);
   assert.equal(await app.evaluate(() => document.fonts.check('18px "Lexicon Serif"')), true);
+  // The guidance pages, never opened here, were saved when the lexicon was.
+  for (const [path, title] of [['how-we-decide.html', 'How we decide'], ['how-practice-works.html', 'How the practice works']]) {
+    await app.goto(pageUrl(path));
+    assert.equal(await app.locator('h1').textContent(), title, `${path} offline`);
+  }
   // A page never opened here says so, and leads back to the search.
   await app.goto(pageUrl('c/soap.html'));
   assert.match(await app.locator('h1').textContent(), /not saved on this device/);
@@ -392,6 +397,20 @@ test('without scripts every page still works: the contents and the lists stand i
   await plain.locator('.cat-menu a[href="../k/vestitus.html"]').click();
   await plain.waitForURL(/k\/vestitus\.html$/);
   assert.equal(await plain.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
+  // The guidance pages have no script of their own: all of each is there, and its links work.
+  await plain.goto(pageUrl('how-we-decide.html'));
+  assert.equal(await plain.locator('ol.rules li').count(), 11);
+  await plain.goto(pageUrl('how-practice-works.html'));
+  assert.equal(await plain.locator('h1').textContent(), 'How the practice works');
+  assert.equal(await plain.locator('main script').count(), 0);
+  assert.ok(await plain.locator('#sources li').count() >= 10);
+  assert.equal(await plain.locator('.settings').isVisible(), false);
+  assert.equal(await plain.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
+  await plain.locator('#evidence a[href="#s-cepeda-2006"]').first().click();
+  assert.match(plain.url(), /#s-cepeda-2006$/);
+  assert.equal(await plain.locator('#s-cepeda-2006').isVisible(), true);
+  await plain.locator('.lead a[href="how-we-decide.html"]').click();
+  await plain.waitForURL(/how-we-decide\.html$/);
   // The header's search is a plain form: it opens the front page with the query.
   await plain.goto(pageUrl('c/kind.html'));
   await plain.locator('#site-search').fill('pyjama');
@@ -475,7 +494,7 @@ test('on a phone the categories fold into a menu above the search', async () => 
 
 test('every page is usable on a phone: no sideways scrolling, 44px controls, no zoom on search', async () => {
   const pages = ['index.html', 'k/culina.html', 'words.html', 'latin.html', 'c/cooking-pot.html', 'c/tickle.html',
-                 'c/perhaps.html', 'l/fortasse.html', 'rulings.html', 'how-we-decide.html', 'practice.html', 'hora.html', 'review.html'];
+                 'c/perhaps.html', 'l/fortasse.html', 'rulings.html', 'how-we-decide.html', 'how-practice-works.html', 'practice.html', 'hora.html', 'review.html'];
   for (const width of [320, 375, 390]) {
     await page.setViewportSize({ width, height: 800 });
     for (const path of pages) {
@@ -501,7 +520,8 @@ test('every page is usable on a phone: no sideways scrolling, 44px controls, no 
 
 test('the header: the name, one search field, and the settings; the pages are in the footer', async () => {
   for (const [path, inPlace] of [['index.html', true], ['k/culina.html', true], ['c/kind.html', false], ['l/caccabus.html', false],
-                                 ['words.html', false], ['latin.html', false], ['rulings.html', false], ['how-we-decide.html', false]]) {
+                                 ['words.html', false], ['latin.html', false], ['rulings.html', false], ['how-we-decide.html', false],
+                                 ['how-practice-works.html', false]]) {
     for (const width of [1280, 390]) {
       await page.setViewportSize({ width, height: 844 });
       await page.goto(pageUrl(path));
@@ -552,14 +572,27 @@ test('on a phone the search is in view at once, under the name, full width', asy
   }
 });
 
-test('the footer of every page links to How we decide, Rulings and About', async () => {
+test('the footer of every page links to How we decide, Rulings, How the practice works and About', async () => {
   for (const [path, about] of [['index.html', '#about'], ['c/kind.html', '../index.html#about'], ['k/culina.html', '../index.html#about'],
-                               ['words.html', 'index.html#about'], ['rulings.html', 'index.html#about']]) {
+                               ['words.html', 'index.html#about'], ['rulings.html', 'index.html#about'], ['practice.html', 'index.html#about'],
+                               ['how-practice-works.html', 'index.html#about']]) {
     await page.goto(pageUrl(path));
     const foot = page.locator('footer');
-    for (const label of ['How we decide', 'Rulings']) assert.equal(await foot.getByRole('link', { name: label, exact: true }).count(), 1, `${path}: ${label}`);
+    for (const label of ['How we decide', 'Rulings', 'How the practice works']) assert.equal(await foot.getByRole('link', { name: label, exact: true }).count(), 1, `${path}: ${label}`);
     assert.equal(await foot.getByRole('link', { name: 'About', exact: true }).getAttribute('href'), about, path);
+    assert.equal(await foot.getByRole('link', { name: 'How the practice works', exact: true }).getAttribute('href'),
+                 (path.includes('/') ? '../' : '') + 'how-practice-works.html', path);
+    // The guidance stands together, before About; on a phone the footer still fits.
+    assert.deepEqual((await page.locator('footer.site-foot a, .foot-links a').allTextContents()).slice(0, 4),
+                     ['How we decide', 'Rulings', 'How the practice works', 'About'], path);
+    await page.setViewportSize({ width: 320, height: 700 });
+    assert.equal(await overflows(), false, `${path}: the footer fits a phone`);
+    await page.setViewportSize({ width: 1280, height: 900 });
   }
+  await page.goto(pageUrl('k/culina.html'));
+  await page.locator('footer').getByRole('link', { name: 'How the practice works', exact: true }).click();
+  await page.waitForURL(/how-practice-works\.html$/);
+  assert.equal(await page.locator('h1').textContent(), 'How the practice works');
   await page.goto(pageUrl('c/kind.html'));
   await page.locator('footer').getByRole('link', { name: 'About', exact: true }).click();
   await page.waitForURL(/index\.html#about$/);
@@ -1982,6 +2015,87 @@ test('practice works when nothing can be saved, and says so', async () => {
   await blocked.goto(pageUrl('c/soap.html'));
   assert.match(await blocked.locator('h1').textContent(), /^soap/);
   await context.close();
+});
+
+test('how the practice works: one page, every source linked, nothing asked of other sites, and it fits a phone', async () => {
+  const asked = [];
+  const note = request => { if (!request.url().startsWith(base)) asked.push(request.url()); };
+  page.on('request', note);
+  await page.goto(pageUrl('how-practice-works.html'));
+  await page.waitForLoadState('networkidle');
+  page.off('request', note);
+  assert.deepEqual(asked, [], 'no request to another site');
+  assert.equal(await page.title(), 'How the practice works · Lexicon Latīnitātis Cotīdiānae');
+  assert.equal(await page.locator('h1').count(), 1);
+  assert.equal(await page.locator('html').getAttribute('lang'), 'en');
+  assert.deepEqual(await page.locator('main h2').allTextContents(),
+                   ['A round', 'When a word comes back', 'The evidence', 'Our own choices', 'What it does not do', 'Sources']);
+  // The contents lead to each section.
+  const contents = await page.locator('.page-contents a').evaluateAll(nodes => nodes.map(n => n.getAttribute('href')));
+  assert.deepEqual(contents, ['#round', '#waits', '#evidence', '#choices', '#limits', '#sources']);
+  for (const href of contents) assert.equal(await page.locator(href).count(), 1, href);
+  // Every source has a link to the work, and every citation in the text leads to a source in the list.
+  const sources = await page.locator('#sources li').evaluateAll(nodes => nodes.map(n => [n.id, [...n.querySelectorAll('a')].map(a => a.href)]));
+  assert.ok(sources.length >= 10);
+  for (const [id, links] of sources) {
+    assert.match(id, /^s-[a-z0-9-]+$/);
+    assert.ok(links.length >= 1 && links.every(href => /^https:\/\//.test(href)), `${id} is linked`);
+  }
+  const cited = await page.locator('main a[href^="#s-"]').evaluateAll(nodes => [...new Set(nodes.map(n => n.getAttribute('href').slice(1)))]);
+  assert.deepEqual(cited.sort(), sources.map(([id]) => id).sort());
+  await page.locator('#evidence a[href="#s-kang-2014"]').click();
+  assert.match(page.url(), /#s-kang-2014$/);
+  assert.equal(await page.locator('#s-kang-2014 a').getAttribute('href'), 'https://doi.org/10.3758/s13423-014-0636-z');
+  // The Latin of the two marks is Latin to the display options: without macrons on request.
+  assert.deepEqual(await page.locator('#round [lang="la"]').allTextContents(), ['Teneō', 'Iterum']);
+  // Back to Practice and to How we decide.
+  assert.equal(await page.locator('.lead a[href="practice.html"]').count(), 1);
+  assert.equal(await page.locator('.lead a[href="how-we-decide.html"]').count(), 1);
+  // The measure of the text is that of How we decide.
+  const measure = selector => page.locator(selector).first().evaluate(el => Math.round(el.getBoundingClientRect().width));
+  const here = await measure('#evidence');
+  await page.goto(pageUrl('how-we-decide.html'));
+  assert.equal(await measure('#rules'), here);
+  // On a phone, in both themes: nothing scrolls sideways, not even the longest link of the sources.
+  for (const theme of ['light', 'dark']) {
+    await page.evaluate(value => localStorage.setItem('lexicon-theme', value), theme);
+    for (const width of [390, 320]) {
+      await page.setViewportSize({ width, height: 844 });
+      await page.goto(pageUrl('how-practice-works.html'));
+      assert.equal(await page.locator('html').getAttribute('data-theme'), theme);
+      assert.equal(await overflows(), false, `${theme} at ${width}px`);
+      const wide = await page.locator('main a, main li, main p').evaluateAll(nodes => nodes
+        .filter(n => n.getBoundingClientRect().right > innerWidth + 0.5).map(n => n.textContent.slice(0, 30)));
+      assert.deepEqual(wide, [], `${theme} at ${width}px`);
+    }
+  }
+  await page.evaluate(() => localStorage.removeItem('lexicon-theme'));
+});
+
+test('the practice lobby links to How the practice works, in Latin and in English', async () => {
+  await openPractice(true, null);
+  const link = page.locator('#practice .p-how a');
+  assert.equal(await page.locator('html').getAttribute('lang'), 'la');
+  assert.equal(await link.textContent(), 'Quā ratiōne repetātur');
+  assert.equal(await link.getAttribute('href'), 'how-practice-works.html');
+  // It stands with the note that progress is kept on the device, under Start.
+  const saved = await page.locator('#p-saved').boundingBox(), how = await link.boundingBox(), start = await page.locator('#p-start').boundingBox();
+  assert.ok(start.y < saved.y && saved.y < how.y, 'under the note');
+  assert.ok(how.height >= 44, 'a target for a thumb');
+  await page.locator('#p-lang button[data-lang="en"]').click();
+  assert.equal(await link.textContent(), 'How the practice works');
+  await page.setViewportSize({ width: 390, height: 844 });
+  assert.equal(await overflows(), false);
+  await link.click();
+  await page.waitForURL(/how-practice-works\.html$/);
+  assert.equal(await page.locator('h1').textContent(), 'How the practice works');
+  // And back.
+  await page.locator('.lead a[href="practice.html"]').click();
+  await page.waitForURL(/practice\.html$/);
+  assert.equal(await page.locator('#p-saved').textContent(), 'Progress is kept in this browser.');
+  await page.locator('#p-lang button[data-lang="la"]').click();
+  assert.equal(await page.locator('#practice .p-how a').textContent(), 'Quā ratiōne repetātur');
+  await forgetPractice();
 });
 
 test('practice is reached from the front page and from every footer, never from the header', async () => {

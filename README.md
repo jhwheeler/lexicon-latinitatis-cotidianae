@@ -12,7 +12,7 @@ Site: https://jhwheeler.github.io/lexicon-latinitatis-cotidianae/
 - `data/concepts/<concept>.json`: one record per concept, with notes (footnotes) on every departure from a dictionary or source; each gets its own page in `c/`. See [docs/records.md](docs/records.md).
 - `data/rulings.json`: editorial rulings, listed on `rulings.html`; `src/how-we-decide.html` holds the editorial policy.
 - `data/entries/<category>.json`: the grouped topic cards of the first edition. Every card was converted to records by 9 November 2026, so the files are empty; the builder still reads the format.
-- `src/page.html`: the front page and its editorial review notes; `src/how-we-decide.html`: the policy page.
+- `src/page.html`: the front page and its editorial review notes; `src/how-we-decide.html`: the policy page; `src/how-practice-works.html`: how the practice chooses and spaces its cards, with the research and its sources (see Practice below).
 - `src/styles.css`: styling; `src/page.js`: the theme and display options and the example filters, on every page.
 - `src/search.js`: the search, on the front page and the category pages.
 - `src/practice.html`, `src/practice.js`: the vocabulary practice; `src/hora.html`: the clock game (see Practice below).
@@ -31,7 +31,7 @@ python3 scripts/build.py --check
 python3 -m unittest discover -s tests -v
 ```
 
-Commit the source changes **and the regenerated files** (`index.html`, `k/`, `c/`, `l/`, `words.html`, `latin.html`, `how-we-decide.html`, `rulings.html`, `practice.html`, `hora.html`, `review.html`, `sitemap.xml`, `manifest.webmanifest`, `sw.js`, and `assets/` with the stylesheet, the scripts, the search data, the fonts and the icons) together. Do not edit generated files directly. The PR check rejects invalid data, a broken link between pages, or a stale generated file. The counts, the lists and the contents are generated.
+Commit the source changes **and the regenerated files** (`index.html`, `k/`, `c/`, `l/`, `words.html`, `latin.html`, `how-we-decide.html`, `how-practice-works.html`, `rulings.html`, `practice.html`, `hora.html`, `review.html`, `sitemap.xml`, `manifest.webmanifest`, `sw.js`, and `assets/` with the stylesheet, the scripts, the search data, the fonts and the icons) together. Do not edit generated files directly. The PR check rejects invalid data, a broken link between pages, or a stale generated file. The counts, the lists and the contents are generated.
 
 See [the data format and architecture decision](docs/data-format.md) for an entry example, field definitions, and why generation happens before publication rather than in the browser.
 
@@ -50,7 +50,7 @@ The category lists and both A–Z indexes have a filter, All / Words / Phrases (
 
 Links to the old single page still work: `index.html#culina` leads to `k/culina.html`, `#entry-528` to the record that replaced that card, `#c-socks` to `c/socks.html`. The table is `assets/legacy.js`, which the front page loads only when an address carries such a fragment.
 
-Practice is linked from the front page, above the contents, and from every page's footer (see Practice below).
+Practice is linked from the front page, above the contents, and from every page's footer (see Practice below). The guidance pages, `how-we-decide.html`, `rulings.html` and `how-practice-works.html`, are linked from every footer, in that order, before About.
 
 Every page's header has the name, a search field and one settings control ("Aa"). The field opens the front page with the query (`index.html?q=…`), as a plain form; the front page and the category pages show only their own search, which runs in place. On a phone the field has its own line under the name. `/` focuses the search. How we decide, Rulings and About are linked from every page's footer. The settings hold the theme and the display options: light mode is the default, dark mode can be chosen and is saved locally; the display options hide the macrons, write consonantal i as i, or write consonantal u as u (lower case only, so *Venus* keeps its V), for readers of other traditions; it changes only what is shown, on every page, and the choice is kept the same way. Saved preferences are applied before the page is drawn, and the toggle still works when browser storage is unavailable. The design ("Minium") and its phone requirements are in AGENTS.md; the fonts and their licences are in `src/fonts/`.
 
@@ -78,7 +78,9 @@ Two pages for practising, linked from the front page and from every footer (Jack
 - **The longer waits are spread**, so that words learned together do not all come back together: 3 or 4 days, 6 to 8, 14 to 18, 30 to 40, a whole number of days chosen at random. The 1-day wait is always the next day.
 - **A round has 12 cards**, one for each Latin headword. While the deck still has new cards, at most 6 of them are repetitions: first the cards that were missed and are waiting, then the longest overdue, and among cards due on the same day in no order. New cards, in no order, are the rest, and the round is mixed. With fewer than 6 due, new cards fill the round; with no new cards left, due ones do.
 
-The numbers are constants at the top of `src/practice.js` and are the coordinating session's choice, not the editor's. They follow Anki's defaults (a learned card graduates to 1 day, an easy one to 4) and the finding that a retrieval after a real delay matters more than the rate at which the gaps grow (Kang, Lindsey, Mozer & Pashler 2014, *Psychonomic Bulletin & Review* 21, 1544–1550). Records already kept on a device keep the day they were due.
+The numbers are constants at the top of `src/practice.js` and are the coordinating session's choice, not the editor's. They follow Anki's defaults (a learned card graduates to 1 day, an easy one to 4; a forgotten one waits 10 minutes and then a day) and two findings: that a first retrieval after a real delay matters more than whether the later gaps grow (Karpicke & Roediger 2007, *Journal of Experimental Psychology: Learning, Memory, and Cognition* 33, 704–719), and that growing and equal gaps left much the same recall in the end (Kang, Lindsey, Mozer & Pashler 2014, *Psychonomic Bulletin & Review* 21, 1544–1550). Records already kept on a device keep the day they were due.
+
+**How the practice works** (`how-practice-works.html`, from `src/how-practice-works.html`; Jack, 15 November 2026: the research on spacing, with its sources, on a page of the site, "similar to how we rule about words"). A guidance page beside How we decide: what a round is, when a word comes back, the evidence with each claim's source, which numbers are our own choice, and what the practice does not do. It is linked from every footer and from the lobby, under the note that progress is kept on the device (*Quā ratiōne repetātur* / "How the practice works"; the Latin is Claude's, awaiting the editor's review). It states the constants of `src/practice.js`: change them and the page together (a test compares the two). Every source in its list was read, and `notes/practice-spacing-2026-11-15.md` records for each the address read, whether it was the full text, and what in it supports the page; a claim goes on the page only with a source that was read, and a source that could not be read is not cited.
 
 Since 14 November 2026 it is a game of its own (Jack: "it doesn't feel like a standalone game… you could X out of it… actual cards, rounded cornered cards"):
 

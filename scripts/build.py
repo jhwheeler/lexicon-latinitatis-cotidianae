@@ -9,7 +9,8 @@ Outputs, all plain pages that work without scripts: index.html (the front page:
 search and contents), k/<category>.html (a category's entries), words.html and
 latin.html (the English and Latin headwords from A to Z), c/<concept>.html (one
 page per concept record), l/<word>.html (one page per Latin word that heads a
-term), how-we-decide.html (editorial policy), rulings.html (the rulings
+term), how-we-decide.html (editorial policy), how-practice-works.html (how the
+practice chooses and spaces its cards, with its sources), rulings.html (the rulings
 register), practice.html (vocabulary practice), hora.html (the clock game) and
 review.html (what is reviewed, and a reader's flags), sitemap.xml, and in assets/ the stylesheet,
 the page, search, practice and review scripts, the search data, the practice cards (practice-data.js), the redirects
@@ -98,7 +99,7 @@ def service_worker(root, outputs):
     fonts and icons. Its version is a hash of them, so a change to any of them makes the browser
     fetch them all afresh. The entry and word pages are saved as they are read."""
     files = sorted(path for path in outputs
-                   if path in ('index.html', 'how-we-decide.html', 'rulings.html', 'practice.html', 'hora.html', 'review.html', 'manifest.webmanifest')
+                   if path in ('index.html', 'how-we-decide.html', 'how-practice-works.html', 'rulings.html', 'practice.html', 'hora.html', 'review.html', 'manifest.webmanifest')
                    or path.startswith('k/') or (path.startswith('assets/') and not path.endswith(('.txt', 'legacy.js'))))
     digest = hashlib.sha256()
     for path in files:
@@ -1534,8 +1535,10 @@ def site_header(up, search=True):
 
 def footer_links(up, about, search=True):
     """The pages that left the header (Jack, 11 November 2026) stand at the foot of every page, and
-    Practice and Review with them (Jack, 13 and 15 November 2026): the header is fixed and gains no link."""
+    Practice and Review with them (Jack, 13 and 15 November 2026): the header is fixed and gains no link.
+    How the practice works (Jack, 15 November 2026) stands with the other guidance, before About."""
     return (f'<a href="{up}how-we-decide.html">How we decide</a> · <a href="{up}rulings.html">Rulings</a> · '
+            f'<a href="{up}how-practice-works.html">How the practice works</a> · '
             f'<a href="{about}">About</a> · <a href="{up}practice.html">Practice</a> · <a href="{up}review.html">Review</a> · '
             + (f'<a href="{up}index.html">Search the lexicon</a> · ' if search else '')
             + f'<a href="{REPO}">Source and history</a> · <a href="{REPO}/issues">Report a problem</a>')
@@ -2515,7 +2518,7 @@ def fill(path, replacements):
 
 
 def render_sitemap(site):
-    pages = (['', 'how-we-decide.html', 'rulings.html', 'words.html', 'latin.html', 'practice.html', 'hora.html', 'review.html']
+    pages = (['', 'how-we-decide.html', 'how-practice-works.html', 'rulings.html', 'words.html', 'latin.html', 'practice.html', 'hora.html', 'review.html']
              + [f'k/{key}.html' for key in site['categories']] + [f'c/{key}.html' for key in sorted(site['records'])]
              + [f'l/{slug}.html' for slug in sorted(w['slug'] for w in site['words'].values())])
     return ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
@@ -2536,6 +2539,10 @@ def build_site(root=ROOT):
     outputs['how-we-decide.html'] = fill(root / 'src/how-we-decide.html', {
         'ruling_count': str(len(site['rulings'])), 'theme': THEME_INIT, 'app': app_head(''),
         'header': site_header(''), 'footer': site_footer('')})
+    # How the practice chooses and spaces its cards, with the research and its sources (Jack, 15
+    # November 2026): a guidance page like How we decide, with no script of its own.
+    outputs['how-practice-works.html'] = fill(root / 'src/how-practice-works.html', {
+        'theme': THEME_INIT, 'app': app_head(''), 'header': site_header(''), 'footer': site_footer('')})
     outputs['rulings.html'] = fill(root / 'src/rulings.html', {
         'rulings': render_rulings(site), 'ruling_count': str(len(site['rulings'])), 'theme': THEME_INIT, 'app': app_head(''),
         'header': site_header(''), 'footer': site_footer('')})

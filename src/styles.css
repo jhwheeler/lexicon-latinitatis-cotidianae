@@ -292,6 +292,10 @@ footer details p { margin:.6em 0; max-width:46rem; }
 .rules { margin:0; padding-left:1.4em; }
 .rules li { margin:.7em 0; }
 .rules li::marker { color:var(--accent); font:700 1em var(--sans); }
+/* A list of sources, set as a bibliography prints one: no bullets, each entry hanging from its first line. */
+.refs { margin:0; padding:0; list-style:none; }
+.refs li { margin:.6em 0; padding-left:1.4em; text-indent:-1.4em; scroll-margin-top:16px; }
+.refs a { overflow-wrap:anywhere; }
 .ruling-group { max-width:42rem; }
 .ruling { padding:14px 0 16px; border-top:1px solid var(--hair); scroll-margin-top:16px; }
 .ruling:target { padding-left:14px; box-shadow:inset 3px 0 0 var(--accent); }
@@ -450,8 +454,8 @@ span.kind, p.kind:not(:has(a)) { display:block; padding:10px 0; }
 .p-meter p { margin:6px 0 0; color:var(--muted); font:400 .92rem/1.4 var(--sans); font-variant-numeric:tabular-nums; }
 .pgroup.backup { margin-top:26px; border-top:1px solid var(--hair); padding-bottom:0; }
 .pgroup.backup[open] { padding-bottom:10px; }
-.p-more { margin:10px 0 0; color:var(--muted); font:400 1rem var(--sans); }
-.p-more a { display:inline-block; padding:11px 0; line-height:1.4; color:var(--soft); }
+.p-more, .p-how { margin:10px 0 0; color:var(--muted); font:400 1rem var(--sans); }
+:is(.p-more, .p-how) a { display:inline-block; padding:11px 0; line-height:1.4; color:var(--soft); }
 html:not(.js) :is(#practice, #review, .p-lang) { display:none; }
 
 /* The round (Jack, 14 November 2026: "a separate experience… you could X out of it… actual cards,

@@ -91,7 +91,9 @@
   // "Lingua" are from his clock game. The rest is Claude's wording, composed for this page, for
   // Jack to review: first what the coordinating session wrote (title, sub, undo, close, start, the
   // kinds, src, works, mine, seen, lists, addList, name, entry, also, the periods, export, import,
-  // copy), then, marked "review" below, what was still wanted.
+  // copy), then, marked "review" below, what was still wanted. "how" (Quā ratiōne repetātur, 15
+  // November 2026) is Claude's too, awaiting Jack's review: the lobby's link to the page that says
+  // how the practice chooses and spaces its cards (how-practice-works.html, which is in English).
   const one = (n, singular, many) => `${number(n)} ${n === 1 ? singular : many}`;
   const T = {
     la: {
@@ -129,6 +131,7 @@
       backupHelp: 'Prōgressus et indicēs tuī in hōc tantum nāvigātrō servantur. Exportā, ut alibī servēs vel in alium apparātum trānsferās; cum importāveris, in singulīs chartīs respōnsum recentius valēbit.',
       exportLabel: 'Prōgressus tuus', importLabel: 'Quod exportāvistī hūc glūtinā', copied: 'Exscrīptum',
       importBad: 'Hoc nōn est prōgressus exportātus. Tōtum glūtinā.',
+      how: 'Quā ratiōne repetātur',
       importDone: (taken, older, unknown, added) => (taken === 1 ? 'Importāta 1 charta' : `Importātae ${number(taken)} chartae`)
         + (older ? `; ${number(older)} ${older === 1 ? 'relicta, hīc recentius notāta' : 'relictae, hīc recentius notātae'}` : '')
         + (unknown ? `; ${number(unknown)} in lexicō nōn ${unknown === 1 ? 'est' : 'sunt'}` : '')
@@ -169,6 +172,7 @@
       backupHelp: 'Your progress and your lists are kept on this device only. Export them as text to keep, or to move to another device; import puts them back, and for each card the later answer wins.',
       exportLabel: 'Your progress', importLabel: 'Paste the exported text here', copied: 'Copied',
       importBad: 'That is not an export of progress: paste the whole text, from the first brace to the last.',
+      how: 'How the practice works',
       importDone: (taken, older, unknown, added) => `Imported ${one(taken, 'card', 'cards')}`
         + (older ? `; ${number(older)} left as they were, marked here more recently` : '')
         + (unknown ? `; ${number(unknown)} not in the lexicon` : '')

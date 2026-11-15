@@ -1242,6 +1242,57 @@ const progressCards = async () => (await kept('lexicon-practice')).cards;
 // The round as it is kept for the visit: its cards in order.
 const roundIds = async () => { const round = await page.evaluate(() => JSON.parse(localStorage.getItem('lexicon-practice-round'))); return [round.current, ...round.queue]; };
 
+test('the front of a card says what the cue leaves open: the other English names, the gloss, an example in English', async () => {
+  await openPractice();
+  // A round at the card for "in turn", which could be several Latin words (Jack, 15 November 2026).
+  const begin = current => page.evaluate(id => localStorage.setItem('lexicon-practice-round', JSON.stringify(
+    { queue: ['soap'], current: id, shown: false, done: false, got: 0, again: 0, missed: [], size: 2, last: '', undo: null, open: true, at: Date.now() })), current);
+  await begin('in-turn');
+  await page.reload();
+  await page.locator('#p-game[open]').waitFor();
+  assert.equal(await page.locator('#g-cue').textContent(), 'in turn adverb');
+  assert.equal(await page.locator('#g-more').textContent(), 'Also: take turns, in turns, alternately');
+  assert.equal(await page.locator('#g-gloss').textContent(), 'in turn, back');
+  const context = await page.locator('#g-context').textContent();
+  assert.match(context, /^“.+ in turn”$/);
+  // Nothing on the front is Latin: the answer is not given away.
+  assert.equal(await page.locator('#g-back').isHidden(), true);
+  assert.equal(await page.locator('#g-hints [lang="la"]').count(), 0);
+  assert.doesNotMatch(await page.locator('#g-hints').textContent(), /vicissim|invicem/);
+  // Turned, the example stands on the back with its Latin and is not said twice.
+  await page.locator('#g-show').click();
+  assert.equal(await page.locator('#g-context').isHidden(), true);
+  assert.equal(await page.locator('#g-more').isVisible(), true);
+  assert.equal(await page.locator('#g-ex-en span').first().textContent(), context.slice(1, -1));
+  assert.match(await page.locator('#g-ex-la').textContent(), /vicissim/);
+  // In Latin the label is the back's own: Item.
+  await page.locator('#g-close').click();
+  await page.evaluate(() => localStorage.setItem('lexicon-practice-lang', 'la'));
+  await page.reload();
+  await page.locator('#p-start').click();
+  await page.locator('#p-game[open]').waitFor();
+  assert.match(await page.locator('#g-more').textContent(), /^Item: take turns/);
+  await page.locator('#g-close').click();
+  // A card with nothing to add has none of the three lines, and a saying is not given as its own example.
+  await page.evaluate(() => localStorage.setItem('lexicon-practice-lang', 'en'));
+  const bare = await page.evaluate(() => {
+    const cards = window.lexiconPractice.cards;
+    const fold = s => s.toLowerCase().replace(/[^a-z]/g, '');
+    return { none: cards.find(card => !card.o && !card.g && !card.q).i, same: (cards.find(card => card.q && fold(card.q[0][1]) === fold(card.e)) || {}).i || null };
+  });
+  await begin(bare.none);
+  await page.reload();
+  await page.locator('#p-game[open]').waitFor();
+  assert.equal(await page.locator('#g-hints p:not([hidden])').count(), 0);
+  if (bare.same) {
+    await begin(bare.same);
+    await page.reload();
+    await page.locator('#p-game[open]').waitFor();
+    assert.equal(await page.locator('#g-context').isHidden(), true);
+  }
+  await forgetPractice();
+});
+
 test('the round outlives the visit: an entry opened from its card leads back to it, a new visit takes it up, and after twelve hours it is gone', async () => {
   await openPractice();
   await startRound();

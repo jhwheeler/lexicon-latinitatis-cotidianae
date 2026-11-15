@@ -479,7 +479,14 @@ html.pgame-open, html.pgame-open body { overflow:hidden; }
 .pgame-status { margin:0 0 auto; color:var(--muted); font:400 .95rem/1.4 var(--sans); font-variant-caps:all-small-caps; letter-spacing:.08em; text-align:left; }
 .pgame-cue { margin:18px 0; font:700 clamp(1.8rem,8vw,2.5rem)/1.15 var(--serif); overflow-wrap:anywhere; }
 .pgame-cue .pos { margin-left:.2em; color:var(--muted); font-size:.48em; font-weight:400; font-style:italic; white-space:nowrap; }
-.pgame-card.front .pgame-cue { margin-bottom:auto; padding-bottom:1.4rem; }
+/* Under the cue, what it leaves open: the headword's other English names, the gloss, and the
+   English of an example (Jack, 15 November 2026). Quiet, and smaller still once the card is turned. */
+.pgame-card.front .pgame-cue { margin-bottom:6px; }
+.pgame-hints { margin:0 0 auto; padding-bottom:1.4rem; color:var(--soft); font-size:1.08rem; line-height:1.4; }
+.pgame-hints p { margin:0; }
+.pgame-more { color:var(--muted); font-style:italic; }
+.pgame-context { margin-top:12px !important; color:var(--muted); }
+.pgame-card:not(.front) .pgame-hints { margin:2px 0 0; padding-bottom:0; font-size:.98rem; }
 .pgame-card:not(.front) .pgame-cue { margin:10px 0 0; color:var(--soft); font-size:1.25rem; font-weight:400; }
 .pgame-back { margin:14px 0 auto; padding-top:16px; border-top:1px solid var(--hair); }
 .pgame-back p { margin:0; }
@@ -490,7 +497,6 @@ html.pgame-open, html.pgame-open body { overflow:hidden; }
 .pgame-period { color:var(--rubric); font-variant-caps:all-small-caps; letter-spacing:.07em; }
 .pgame-also { margin-top:2px !important; }
 .pgame-also span { color:var(--soft); }
-.pgame-gloss { margin-top:10px !important; color:var(--soft); font-size:1.08rem; }
 .pgame-ex { margin-top:16px; }
 .pgame-ex .la { font-size:1.12em; font-style:italic; line-height:1.4; }
 .pgame-ex .en { margin-top:1px; color:var(--soft); }

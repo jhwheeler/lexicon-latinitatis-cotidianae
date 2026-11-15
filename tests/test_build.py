@@ -498,7 +498,8 @@ class BuildTests(unittest.TestCase):
         files = json.loads(re.search(r'const FILES = (\[.*?\]);', worker)[1])
         for path in ('index.html', 'k/sermo.html', 'assets/search-data.js', 'assets/search.js', 'assets/lexicon.css',
                      'assets/fonts/lexicon-serif-400.woff2', 'manifest.webmanifest',
-                     'practice.html', 'hora.html', 'assets/practice.js', 'assets/practice-data.js'):
+                     'practice.html', 'hora.html', 'assets/practice.js', 'assets/practice-data.js',
+                     'review.html', 'assets/review.js'):
             self.assertIn(path, files)
         self.assertTrue(all(path in outputs for path in files))
         self.assertFalse(any(path.startswith(('c/', 'l/')) for path in files))   # saved as they are read
@@ -508,6 +509,62 @@ class BuildTests(unittest.TestCase):
         self.save_record(record)
         version = lambda text: re.search(r"const VERSION = '(\w+)'", text)[1]
         self.assertNotEqual(version(worker), version(builder.build_site(self.root)['sw.js']))
+
+    # Review -------------------------------------------------------------------------------
+
+    def test_a_records_revision_names_its_text_and_not_its_review(self):
+        record = self.record('perhaps')
+        revision = builder.record_revision(record)
+        self.assertRegex(revision, r'^[0-9a-f]{8}$')
+        # The same whatever the review says, and however the fields are ordered.
+        marked = copy.deepcopy(record)
+        marked['review'] = {'status': 'reviewed', 'date': '2026-11-15', 'by': 'Jack'}
+        self.assertEqual(builder.record_revision(marked), revision)
+        self.assertEqual(builder.record_revision(dict(reversed(list(record.items())))), revision)
+        # Another as soon as anything else changes: a term, an example, a note.
+        for change in (lambda r: r['terms'][0].update(latin='fortassē'), lambda r: r['phrases'][0].update(english='Perhaps so.'),
+                       lambda r: r.update(also=r.get('also', []) + ['perchance']), lambda r: r['terms'].reverse()):
+            changed = copy.deepcopy(record)
+            change(changed)
+            self.assertNotEqual(builder.record_revision(changed), revision)
+
+    def test_the_site_carries_the_revision_and_shows_what_is_reviewed(self):
+        outputs = builder.build_site(self.root)
+        revision = builder.record_revision(self.record('perhaps'))
+        self.assertIn(f'<article class="concept" data-record data-rev="{revision}" data-status="draft">', outputs['c/perhaps.html'])
+        self.assertIn('<script src="../assets/review.js" defer></script>', outputs['c/perhaps.html'])
+        self.assertIn('Draft of ', outputs['c/perhaps.html'])
+        # Without scripts the way to GitHub stands where the flag will be.
+        self.assertIn('<p class="suggest"><a href="https://github.com/', outputs['c/perhaps.html'])
+        self.assertNotIn('review.js', outputs['l/fortasse.html'])
+        card = next(card for card in self.practice(outputs)['cards'] if card['i'] == 'perhaps')
+        self.assertEqual(card['h'], revision)
+        self.assertNotIn('d', card)
+        self.assertIn(' · 0 reviewed by the editor; the rest are drafts and await <a href="review.html">review</a></p>', outputs['index.html'])
+        self.assertNotIn(' class="rv"', outputs['k/sermo.html'])
+        # The review page: on the device, in the sitemap, linked from every footer beside Practice.
+        review = outputs['review.html']
+        self.assertIn('<script src="assets/practice-data.js" defer></script>\n<script src="assets/review.js" defer></script>', review)
+        self.assertIn(f'Reviewed by the editor: 0; drafts: {len(self.practice(outputs)["cards"]):,}.', review)
+        self.assertIn('cotidianae/review.html</loc>', outputs['sitemap.xml'])
+        for path, up in (('index.html', ''), ('c/perhaps.html', '../'), ('review.html', '')):
+            page = outputs[path]
+            self.assertIn(f'<a href="{up}practice.html">Practice</a> · <a href="{up}review.html">Review</a> · ', page[page.rindex('<footer'):])
+            self.assertNotIn('review.html', page[page.index('<header class="site-top'):page.index('</header>')])
+        self.assertIn('<script src="assets/review.js" defer></script>\n<script src="assets/practice.js" defer></script>', outputs['practice.html'])
+        # Marked reviewed (as scripts/apply_review.py marks it), the record says so everywhere, under the same revision.
+        record = self.record('perhaps')
+        record['review'] = {'status': 'reviewed', 'date': '2026-11-15', 'by': 'Jack'}
+        self.save_record(record)
+        outputs = builder.build_site(self.root)
+        self.assertIn(f'data-rev="{revision}" data-status="reviewed">', outputs['c/perhaps.html'])
+        self.assertIn('<p>Reviewed by Jack, 15 November 2026.</p>', outputs['c/perhaps.html'])
+        card = next(card for card in self.practice(outputs)['cards'] if card['i'] == 'perhaps')
+        self.assertEqual((card['h'], card['d']), (revision, 1))
+        self.assertIn(' · 1 reviewed by the editor; ', outputs['index.html'])
+        self.assertIn('<li data-kind="word" class="rv"><a href="../c/perhaps.html">', outputs['k/sermo.html'])
+        self.assertEqual(outputs['words.html'].count(' class="rv"'), 1)
+        self.assertIn('Reviewed by the editor: 1; drafts: ', outputs['review.html'])
 
     # Practice ----------------------------------------------------------------------------
 

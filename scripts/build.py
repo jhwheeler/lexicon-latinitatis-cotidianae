@@ -1273,6 +1273,7 @@ class FormIndex:
         self.declined = set()   # heads in a dictionary form the stems could not read (vīs, vīs f.; is, ea, id)
         self.plural = set()     # heads given only in the plural (litterae, litterārum f. pl.)
         self.cache = {}
+        self.term_stems = {}    # (record ID, a term's Latin): its stems, for the families
         self.sayings = {head for head in words if _SAYING.search(head)}
         self.frequency, self.floor = load_frequency(root)
         self.by_ending = {}
@@ -1290,7 +1291,7 @@ class FormIndex:
                 plural.append(bool(re.search(r'\bpl\.', term['latin']) or 'plural' in term.get('grammar', '')))
                 text = re.sub(r'\([^)]*\)', '', term['latin'])
                 tokens = [(form_key(t), bare_key(t)) for t in LATIN_TOKEN.findall(text)]
-                stems = link_stems(record, term)
+                stems = self.term_stems[record['id'], term['latin']] = link_stems(record, term)
                 for cls, stem in stems:
                     self.add_stem(head, cls, stem, tokens)
                 # Another spelling in brackets after the head (atque (ac), caccabus (cacabus)) and,
@@ -1584,6 +1585,500 @@ def totals_line(totals):
             f'ambiguous {totals["ambiguous"]:,}, without an entry {totals["none"]:,}, names without an entry {totals["name"]:,}.')
 
 
+# Word families (Jack, 13 and 15 November 2026) ------------------------------------------------------
+# The page for acrobat gave petaurista and did not lead to petaurum, which the lexicon has under
+# trampoline. A word's family is the other headwords of the lexicon made from the same root:
+# petaurum, petaurista, petauristārius. It is worked out from the dictionary forms alone, with the
+# stems the linker reads from them (link_stems), and shown on the word's page and under the answer
+# on the page of each concept it answers.
+#
+# A word B is joined to a word A when a stem of B is a stem of A with one of the suffixes below, or
+# with one of the prefixes before it, or is A's supine stem in another kind of word (cursus from
+# currō, cursum). Stems are compared with their vowel lengths, never folded: mālum is not malus,
+# and populāris is from populus, not from pōpulus. The families are then whatever these joins
+# connect.
+#
+# A wrong family is worse than none, as with the links (FormIndex.choose). So:
+# - the root must have FAMILY_MIN_ROOT letters. At two letters the method joins 58 more words,
+#   and about one in six of the new joins is wrong (spīna to spēs, flōs to fleō, viola to via,
+#   ūrīna to ūrus); at four it loses 419 words, nearly all of them right (cūra, cūrō; rēx,
+#   rēgīna; nāvis, nāvālis), to be rid of look-alikes that are better listed by hand;
+# - a word the rules would derive from words of several families is joined to none of them (crēta
+#   looks like the participle of crēscō and of cernō), and a derivation from a root too short to
+#   join on still counts as one of the several;
+# - each suffix is put only on the kind of word it is mostly made from, and a name is joined only
+#   to names;
+# - a compound verb must agree with its simple verb in the present and, where both give one, in
+#   the supine (dēserō, dēsertum is not from serō, satum);
+# - data/families.json lists the pairs never to join, the families joined by hand and the
+#   homographs to keep apart, each with its authority.
+# The request is Jack's; the method, the lists and the minimum are Claude's, for him to judge.
+# scripts/family_sample.py draws a sample of the families with Lewis & Short's derivations, for
+# checking; notes/families-2026-11-15.md records the checks made and what each changed.
+FAMILY_MIN_ROOT = 3
+_VOWELS = 'aāeēiīoōuūyȳ'
+_NOUNS = ('n1', 'n2', 'n2n', 'n3', 'n3n', 'n4', 'n4n', 'n5')
+_ADJECTIVES = ('a12', 'a3')
+_NOMINAL = _NOUNS + _ADJECTIVES
+_N12 = ('n1', 'n2', 'n2n')
+_VERBS = ('v1', 'v2', 'v3', 'v4')
+# The conjugation a class of endings belongs to: a deponent and a verb in -iō with their own
+_CONJUGATION = {'v1': 'v1', 'v2': 'v2', 'v3': 'v3', 'v3i': 'v3', 'v4': 'v4', 'd1': 'v1', 'd2': 'v2', 'd3': 'v3', 'd3i': 'v3', 'd4': 'v4'}
+
+# The suffixes: (the kinds of stem a suffix is put on, the suffix as it stands between that stem
+# and the ending, the classes of the word it makes). A stem is a noun's or an adjective's (by
+# class), a verb's present stem (by conjugation, without its vowel: am-, mon-, reg-, aud-), a
+# verb's supine stem ('sup': amāt-, āct-) or a nominative ('nom'); 'adv' is the class of an adverb.
+# Each suffix is put only on the kind of word it is mostly made from: an adjective in -ālis,
+# -ārius, -ōsus, -eus, -icus, -īnus or -ānus on a noun (nāvālis is from nāvis, not from nāvus), an
+# abstract in -tūdō or -itia on an adjective (fortitūdō is from fortis, not from fors), a
+# diminutive on a word of its own kind.
+FAMILY_SUFFIXES = (
+    # on a noun
+    (_NOUNS, 'āri', ('a12', 'n1', 'n2', 'n2n')),              # -ārius, -āria, -ārium: petauristārius, librārius
+    (_NOUNS, 'āl', ('a3', 'n3n')),                            # -ālis, -al: nāvālis, tribūnal
+    (_NOUNS, 'ār', ('a3', 'n3n')),                            # -āris, -ar: populāris
+    (_NOUNS, 'ōs', ('a12',)),                                 # -ōsus: squāmōsus
+    (('n4', 'n4n'), 'uōs', ('a12',)),                         # -uōsus: aestuōsus
+    (_NOUNS, 'ul', _N12), (_NOUNS, 'ol', _N12),               # -ulus, -olus: rīvulus, bēstiola
+    (_NOUNS, 'icul', _N12),                                   # -iculus: nāvicula, crāticula
+    (_NOUNS, 'ist', ('n1',)),                                 # -ista: petaurista
+    (_NOUNS, 'īn', ('a12', 'n1', 'n2')),                      # -īnus, -īna: rēgīna
+    (_NOUNS, 'e', ('a12',)),                                  # -eus: ferreus
+    (_NOUNS, 'āce', ('a12',)),                                # -āceus: chartāceus
+    (_NOUNS, 'ic', ('a12',)),                                 # -icus: classicus
+    (_NOUNS, 'ātic', ('a12',)),                               # -āticus: Asiāticus
+    (_NOUNS, 'īl', ('a3', 'n3n')),                            # -īlis, -īle: cīvīlis, bovīle
+    (_NOUNS, 'ān', ('a12', 'n1', 'n2')),                      # -ānus: Americānus
+    (_NOUNS, 'iān', ('a12', 'n2')),                           # -iānus: Brasiliānus
+    (_NOUNS, 'ēns', ('a3',)), (_NOUNS, 'iēns', ('a3',)),      # -ēnsis: Canadēnsis, Athēniēnsis
+    (_NOUNS, 'āt', ('a12', 'n4')),                            # -ātus: barbātus, cōnsulātus
+    (_NOUNS, 'ēt', ('n2n',)),                                 # -ētum: dūmētum
+    (_NOUNS, 'īv', ('a12',)),                                 # -īvus: aestīvus
+    (_NOUNS, 'ifer', ('a12',)), (_NOUNS, 'iger', ('a12',)),   # -fer, -ger
+    (_NOUNS, 'ig', ('v1',)),                                  # -igāre: rēmigō
+    # on an adjective
+    (_ADJECTIVES, 'ul', ('a12',)), (_ADJECTIVES, 'ol', ('a12',)),             # -ulus: parvulus, ēbriolus
+    (_ADJECTIVES, 'itūdin', ('n3',)), (_ADJECTIVES, 'tūdin', ('n3',)),        # -tūdō: altitūdō
+    (_ADJECTIVES, 'iti', ('n1', 'n5')),                       # -itia, -itiēs: avāritia
+    (_ADJECTIVES, 'ēsc', ('v3',)),                            # -ēscō: dūrēscō
+    (_ADJECTIVES, 'ē', ('adv',)), (_ADJECTIVES, 'iter', ('adv',)), (_ADJECTIVES, 'er', ('adv',)),   # certē, celeriter, prūdenter
+    # on either
+    (_NOMINAL, 'i', ('n1', 'n2n')),                           # -ia, -ium: audācia, sacerdōtium
+    (_NOMINAL, 'tāt', ('n3',)), (_NOMINAL, 'itāt', ('n3',)), (_NOMINAL, 'etāt', ('n3',)),     # -tās: paupertās, cīvitās, pietās
+    (_NOMINAL, '', ('v1',)),                                  # a verb in -āre: cūrō from cūra, aequō from aequus
+    (_NOMINAL, '', ('v4',)),                                  # a verb in -īre: custōdiō, saeviō
+    (_NOMINAL, 'ic', ('v1',)), (_NOMINAL, 'ific', ('v1',)),   # -icāre, -ificāre
+    (_NOMINAL, 'itus', ('adv',)), (_NOMINAL, 'ātim', ('adv',)),       # funditus, gradātim
+    # on the present stem of a verb
+    (('v1',), 'ābil', ('a3',)), (('v2', 'v3'), 'ibil', ('a3',)), (('v4',), 'ībil', ('a3',)),      # -bilis: crēdibilis
+    (('v1',), 'āment', ('n2n',)), (('v2', 'v3'), 'iment', ('n2n',)), (('v2', 'v3'), 'ument', ('n2n',)),
+    (('v4',), 'īment', ('n2n',)),                             # -mentum: documentum, condīmentum
+    (('v1',), 'āmin', ('n3n',)), (('v2', 'v3'), 'imin', ('n3n',)), (('v3',), 'min', ('n3n',)), (('v4',), 'īmin', ('n3n',)),   # -men
+    (('v1',), 'ācul', ('n2n',)), (('v1',), 'ābul', ('n2n',)), (('v1', 'v2', 'v3'), 'icul', ('n2n', 'a12')),   # -culum, -bulum
+    (('v1', 'v2', 'v3'), 'āc', ('a3',)),                      # -āx: audāx
+    (('v1',), 'ant', ('a3', 'n3')), (('v2', 'v3'), 'ent', ('a3', 'n3')), (('v3', 'v4'), 'ient', ('a3', 'n3')),    # the participle
+    (('v1',), 'anti', ('n1',)), (('v2', 'v3'), 'enti', ('n1',)), (('v3', 'v4'), 'ienti', ('n1',)),   # -antia, -entia
+    (('v1',), 'and', ('a12', 'n1', 'n2n')), (('v2', 'v3'), 'end', ('a12', 'n1', 'n2n')),            # the gerundive
+    (('v2',), 'id', ('a12',)),                                # -idus: calidus
+    (('v2',), 'ōr', ('n3',)),                                 # -or: calor
+    (('v2', 'v3'), 'ul', ('a12', 'n2n')),                     # -ulus, -ulum: crēdulus, cingulum
+    (_VERBS, 'i', ('n2n',)),                                  # -ium: dēsīderium, colloquium
+    (('v2', 'v3'), 'ēl', ('n1',)),                            # -ēla
+    (('v2', 'v3'), 'il', ('a3',)),                            # -ilis
+    (('v1', 'v2', 'v3'), 'u', ('a12',)),                      # -uus: continuus
+    (('v1',), 'āsc', ('v3',)), (('v2',), 'ēsc', ('v3',)), (('v4',), 'īsc', ('v3',)),                # -ēscō: calēscō
+    (_VERBS, 'it', ('v1',)),                                  # -itāre: cōgitō
+    # on the supine stem
+    (('sup',), 'ōr', ('n3',)),                                # -tor, -sor: āctor, cursor
+    (('sup',), 'rīc', ('n3',)),                               # -trīx: āctrīx
+    (('sup',), 'iōn', ('n3',)),                               # -tiō: āctiō
+    (('sup',), 'ūr', ('n1',)),                                # -tūra: cultūra
+    (('sup',), 'ōri', ('a12', 'n2n', 'n1')),                  # -tōrius, -tōrium: audītōrium
+    (('sup',), 'īv', ('a12', 'n1', 'n2', 'n2n')),             # -tīvus: āctīvus
+    (('sup',), '', ('n4', 'n1', 'n2', 'n2n', 'a12')),         # cursus, dictum, the participle as an adjective
+    (('sup',), '', ('v1',)),                                  # the frequentative: cantō, dictō
+    (('sup',), 'it', ('v1',)),                                # -titāre: dictitō
+    (('sup',), 'il', ('a3',)), (('sup',), 'ibil', ('a3',)),   # -tilis, -sibilis
+    (('sup',), 'īci', ('a12',)),                              # -tīcius: adventīcius
+    (('sup',), 'uri', ('v4',)),                               # -turiō
+    # on the nominative
+    (('nom',), 'cul', _N12),                                  # -culus on a nominative: jūsculum, corpusculum
+)
+# The prefixes, each in its forms, with the letters a form stands before (None: any)
+_OPEN = 'aāeēiīoōuūh'
+FAMILY_PREFIXES = (
+    ('ad', None), ('ac', 'cq'), ('af', 'f'), ('ag', 'g'), ('al', 'l'), ('an', 'n'), ('ap', 'p'), ('ar', 'r'), ('as', 's'), ('at', 't'), ('a', 's'),
+    ('con', 'cdfgijnqstv'), ('cōn', 'sf'), ('com', 'bmp'), ('col', 'l'), ('cor', 'r'), ('co', _OPEN),
+    ('dē', None), ('de', _OPEN),
+    ('ex', None), ('ē', 'bdgilmnrv'), ('ef', 'f'),
+    ('in', None), ('īn', 'sf'), ('im', 'bmp'), ('il', 'l'), ('ir', 'r'),
+    ('ob', None), ('oc', 'c'), ('of', 'f'), ('op', 'p'), ('o', 'm'), ('os', 't'),
+    ('per', None), ('pel', 'l'),
+    ('prae', None),
+    ('prō', None), ('pro', 'f'), ('prōd', _OPEN),
+    ('re', None), ('red', _OPEN),
+    ('sub', None), ('suc', 'c'), ('suf', 'f'), ('sug', 'g'), ('sum', 'm'), ('sup', 'p'), ('sur', 'r'), ('sus', 'cpt'), ('su', 's'),
+    ('trāns', None), ('trā', 'din'), ('trān', 's'),
+    ('ab', None), ('abs', 'ct'), ('ā', 'mv'), ('au', 'f'),
+    ('dis', None), ('dī', 'bdgilmnrv'), ('dif', 'f'), ('dir', _OPEN),
+    ('inter', None), ('intel', 'l'), ('intrō', None), ('circum', None), ('sē', None), ('super', None), ('ante', None),
+    ('post', None), ('praeter', None), ('subter', None),
+)
+# The first vowel of a word after a prefix: faciō, cōnficiō, cōnfectum; caedō, occīdō; claudō, inclūdō
+_WEAKENED = (('ae', ('ī',)), ('au', ('ū', 'ō')), ('a', ('i', 'e')), ('e', ('i',)))
+
+
+def weakenings(stem):
+    """A stem as it may stand after a prefix: as it is, or with its first vowel weakened."""
+    found = [stem]
+    match = re.search(f'[{_VOWELS}]', stem)
+    for old, new in _WEAKENED if match else ():
+        if stem.startswith(old, match.start()):
+            found += [stem[:match.start()] + n + stem[match.start() + len(old):] for n in new]
+            break
+    return found
+
+
+def _weakened_bases(index, kind, rest):
+    """The words whose stem of this kind, with its first vowel weakened, is what stands after a prefix."""
+    found = []
+    match = re.search(f'[{_VOWELS}]', rest)
+    for old, new in _WEAKENED if match else ():
+        for n in new:
+            if rest.startswith(n, match.start()):
+                found += index.get((kind, rest[:match.start()] + old + rest[match.start() + len(n):]), ())
+    return found
+
+
+class Lexeme:
+    """One word, for the families: a head with the terms that give it one dictionary form. A head
+    is several words when its terms are (volō, velle and volō, volāre; turbō the verb and turbō
+    the noun)."""
+    def __init__(self, head, key):
+        self.head, self.key, self.uses = head, key, []
+        self.bases = {}         # the kind of stem (as in FAMILY_SUFFIXES): its marked spellings
+        self.compound = None    # of eō, sum or ferō: (class, prefix)
+
+    def __repr__(self):
+        return f'<{self.head} {self.key[0]} {self.key[1]}>'
+
+    @property
+    def form(self):
+        """The dictionary form, to tell two words of one head apart."""
+        return re.sub(r'\s*\([^)]*\)', '', self.uses[0][1]['latin']).split(';')[0].strip()
+
+    def concepts(self):
+        return list(dict.fromkeys(record['id'] for record, _ in self.uses))
+
+
+def _marked_stems(record, term, known=None):
+    """The stems of a term by class, each with its macrons as the dictionary form writes them.
+    `known` is the linker's table of stems, which saves working them out again."""
+    stems = (known or {}).get((record['id'], term['latin'])) if ';' not in term['latin'] else None
+    term = dict(term, latin=term['latin'].split(';')[0])        # magister, magistrī m.; magistra, magistrae f.
+    tokens = [(form_key(t), bare_key(t)) for t in LATIN_TOKEN.findall(re.sub(r'\([^)]*\)', '', term['latin']))]
+    found, stems = {}, link_stems(record, term) if stems is None else stems
+    for cls, stem in stems:
+        marked = FormIndex._marked(cls, stem, tokens)
+        spelling = next(iter(marked)) if len(marked) == 1 else ''
+        if len(spelling) == len(stem):
+            found.setdefault(cls, []).append(spelling)
+    # The regular supine of a verb given without it: amō, amāre has amāt-
+    for cls, ending in (('v1', 'āt'), ('v4', 'īt')):
+        if cls in found and 'ppp' not in found and any(c == 'ppp' for c, _ in stems):
+            found['ppp'] = [found[cls][0] + ending]
+    return found
+
+
+def family_lexemes(words, homographs=(), known=None):
+    """The words the families are made of: every head of one word with a dictionary form the
+    stems can be read from, and every adverb. A phrase or a saying is none. Terms of one head are
+    one word when they have the same main stem in the same class; `homographs` names the terms to
+    keep apart although they have (jūs, law, and jūs, broth), as (head, concept IDs)."""
+    lexemes = []
+    for head, info in words.items():
+        if not re.fullmatch(r'[^\W\d_]+', head):
+            continue
+        mine = {}
+        for record, term in info['uses']:
+            stems = _marked_stems(record, term, known)
+            main = next(((cls, stems[cls][0]) for kinds in (tuple(_CONJUGATION) + _NOMINAL, ('ire', 'esse', 'fer', 'dare', 'x'))
+                         for cls in stems if cls in kinds), None)
+            if main is None:
+                names = record.get('pos') or []
+                if re.sub(r'\s*\([^)]*\)', '', term['latin']).strip() != head or names not in ('adverb', ['adverb']):
+                    continue
+                main = ('adv', form_key(head))
+            elif main[0] == 'x':
+                main = ('x', bare_key(head))
+            key = main + tuple(n for n, (word, concepts) in enumerate(homographs) if word == head and record['id'] in concepts)
+            lexeme = mine.setdefault(key, Lexeme(head, key))
+            lexeme.uses.append((record, term))
+            if main[0] == 'adv':
+                lexeme.bases.setdefault('adv', set()).add(main[1])
+                continue
+            for cls, spellings in stems.items():
+                kind = cls if cls in _NOMINAL else _CONJUGATION.get(cls) or ('sup' if cls == 'ppp' else None)
+                if cls in ('ire', 'esse', 'fer'):
+                    lexeme.compound = (cls, spellings[0][:-3] if cls == 'fer' else spellings[0])
+                for spelling in spellings if kind else ():
+                    if cls == 'a12' and spelling != main[1] and spelling.endswith(('issim', 'rim', 'lim')):
+                        continue                # the superlative is not a stem to derive from
+                    lexeme.bases.setdefault(kind, set()).add(spelling)
+            if main[0] in ('n3', 'n3n', 'n4', 'n5'):
+                lexeme.bases.setdefault('nom', set()).add(form_key(head))
+        lexemes += mine.values()
+    return lexemes
+
+
+SAME_WORD = ('the same word', 'the same stem under one concept', 'the adjective as a noun')
+
+
+def family_edges(lexemes, minimum=FAMILY_MIN_ROOT):
+    """Every derivation the rules propose, as (the derived word, its base, how, whether the root
+    is long enough to join on). A derivation from a root of two letters joins nothing, but it
+    counts against another: redoleō is red- before oleō as well as re- before doleō."""
+    index, by_head = {}, {}
+    for lexeme in lexemes:
+        by_head.setdefault(lexeme.head, []).append(lexeme)
+        for kind, stems in lexeme.bases.items():
+            for stem in stems:
+                index.setdefault((kind, stem), []).append(lexeme)
+    simple = {cls: [lexeme for lexeme in lexemes if lexeme.compound == (cls, '')] for cls in ('ire', 'esse', 'fer')}
+    prefixes = {prefix for prefix, _ in FAMILY_PREFIXES}
+    suffixes = {}
+    for kinds, suffix, classes in FAMILY_SUFFIXES:
+        for cls in classes:
+            suffixes.setdefault(cls, []).append((kinds, suffix))
+    edges = []
+    for derived in lexemes:
+        # A name is made from a name and a common word from a common word: Crētēnsis is from
+        # Crēta and not from crēta, Aprīlis is not from aper.
+        def fits(base):
+            return base.head != derived.head and base.head[0].isupper() == derived.head[0].isupper()
+
+        for kind, stems in derived.bases.items():
+            for stem in stems:
+                # a suffix
+                for kinds, suffix in suffixes.get(kind, ()):
+                    root = stem[:len(stem) - len(suffix)]
+                    if stem.endswith(suffix) and len(root) >= 2:
+                        edges += [(derived, base, f'{root}- with -{suffix}-' if suffix else f'the stem {root}-', len(root) >= minimum)
+                                  for base_kind in kinds for base in index.get((base_kind, root), ()) if fits(base)]
+                # a prefix before a verb of the same conjugation: its first vowel as it is, or
+                # else weakened; and of these the verbs that agree in the supine too, if any does
+                found = []
+                for prefix, before in FAMILY_PREFIXES if kind in _VERBS else ():
+                    rest = stem[len(prefix):]
+                    if not stem.startswith(prefix) or len(rest) < 2 or (before is not None and rest[0] not in before):
+                        continue
+                    for exact, bases in ((True, index.get((kind, rest), ())), (False, _weakened_bases(index, kind, rest))):
+                        for base in bases:
+                            mine, theirs = derived.bases.get('sup'), base.bases.get('sup')
+                            both = bool(mine and theirs)
+                            if fits(base) and not (both and not any(m == prefix + w for m in mine for t in theirs for w in weakenings(t))):
+                                found.append((exact, both, base, f'{prefix}- before {base.head}', len(rest) >= minimum or both))
+                edges += [(derived, base, how, strong) for exact, both, base, how, strong in found
+                          if not any((e, b) != (exact, both) and e >= exact and b >= both for e, b, _, _, _ in found)]
+                # a prefix before a noun or adjective of the same kind, as it stands
+                for prefix, before in FAMILY_PREFIXES if kind in _NOMINAL else ():
+                    rest = stem[len(prefix):]
+                    if stem.startswith(prefix) and len(rest) >= 2 and (before is None or rest[0] in before):
+                        edges += [(derived, base, f'{prefix}- before {base.head}', len(rest) >= minimum)
+                                  for base_kind in ((kind,) if kind in _NOUNS else _ADJECTIVES)
+                                  for base in index.get((base_kind, rest), ()) if fits(base)]
+        if derived.compound and derived.compound[1] in prefixes:
+            edges += [(derived, base, f'{derived.compound[1]}- before {base.head}', True) for base in simple[derived.compound[0]]]
+    # The same word under another head: the same stem in the same declension or conjugation
+    # (fīnēs beside fīnis, clāmat and clāmāre beside clāmō, vincor beside vincō), or the same stem
+    # in two nouns or adjectives entered under one concept (cerva and cervus, deer). Two heads
+    # that differ only by a capital letter are a name and a common word (Gallus, gallus).
+    for (kind, stem), group in index.items():
+        if kind in _NOMINAL or kind in _VERBS:
+            edges += [(one, other, 'the same word', True) for one in group for other in group
+                      if one.head.lower() != other.head.lower()]
+    for kind, stem in [key for key in index if key[0] in _NOMINAL]:
+        for other_kind in _NOMINAL:
+            edges += [(one, other, 'the same stem under one concept', True)
+                      for one in index[kind, stem] for other in index.get((other_kind, stem), ()) if other_kind != kind
+                      if one is not other and set(one.concepts()) & set(other.concepts())]
+    # An adjective used as a noun, under the same head: amīcus, amīcī m. beside amīcus, amīca, amīcum
+    for group in by_head.values():
+        for noun in group:
+            for adjective in group:
+                if any(noun.bases.get(n, set()) & adjective.bases.get(a, set())
+                       for a, nouns in (('a12', _N12), ('a3', ('n3', 'n3n'))) for n in nouns):
+                    edges.append((noun, adjective, 'the adjective as a noun', True))
+    return edges
+
+
+def join_families(lexemes, apart=(), together=(), minimum=FAMILY_MIN_ROOT):
+    """The families: {word: the words of its family, itself among them}, the derivations used,
+    and the words left out as ambiguous with the bases proposed for them. A word is joined to its
+    bases only when all of them are, or come to be, in one family. `apart` (pairs of words) takes
+    the derivation of one from the other away, and no later join may bring the two into one
+    family; `together` (lists of words) joins by hand."""
+    apart = {frozenset(pair) for pair in apart}
+    proposed = {}
+    for derived, base, how, strong in family_edges(lexemes, minimum):
+        if frozenset((derived, base)) not in apart:
+            proposed.setdefault(derived, []).append((base, how, strong))
+    leader = {lexeme: lexeme for lexeme in lexemes}
+    members = {lexeme: [lexeme] for lexeme in lexemes}
+    kept_from = {}
+    for one, other in map(tuple, apart):
+        kept_from.setdefault(one, set()).add(other)
+        kept_from.setdefault(other, set()).add(one)
+
+    def find(lexeme):
+        while leader[lexeme] is not lexeme:
+            leader[lexeme] = lexeme = leader[leader[lexeme]]
+        return lexeme
+
+    def join(one, other):
+        """Make one family of two, unless that brings together words listed apart."""
+        one, other = find(one), find(other)
+        if one is other:
+            return True
+        if any(kept_from.get(lexeme, set()) & set(members[other]) for lexeme in members[one]):
+            return False
+        leader[one] = other
+        members[other] += members.pop(one)
+        return True
+
+    for group in together:
+        for other in group[1:]:
+            join(other, group[0])
+    # One word under two heads is joined first, so that a word made from it does not wait for both
+    used = []
+    for derived, bases in proposed.items():
+        for base, how, strong in bases:
+            if how in SAME_WORD and join(derived, base):
+                used.append((derived, base, how))
+        proposed[derived] = [(base, how, strong) for base, how, strong in bases if how not in SAME_WORD]
+    waiting, changed = {derived: bases for derived, bases in proposed.items() if any(strong for _, _, strong in bases)}, True
+    while changed:
+        changed = False
+        for derived, bases in list(waiting.items()):
+            # A base in a family that holds a word listed apart from this one does not count
+            away = kept_from.get(derived, ())
+            bases = waiting[derived] = [(base, how, strong) for base, how, strong in bases
+                                        if not any(other in away for other in members[find(base)])]
+            found = {find(base) for base, _, _ in bases} - {find(derived)}
+            if not found:
+                used += [(derived, base, how) for base, how, strong in waiting.pop(derived) if strong]
+            elif len(found) == 1 and any(strong and find(base) in found for base, _, strong in bases) and join(derived, found.pop()):
+                used += [(derived, base, how) for base, how, strong in waiting.pop(derived) if strong]
+                changed = True
+    families = {lexeme: group for group in members.values() if len(group) > 1 for lexeme in group}
+    return families, used, {derived: [(base, how) for base, how, _ in bases] for derived, bases in waiting.items()}
+
+
+class Families:
+    """The families of the lexicon's words, with what data/families.json says of them."""
+    def __init__(self, words, records, rules=None, known=None):
+        rules = rules or {}
+        fields(rules, (), ('version', 'apart', 'together', 'homographs'))
+        require(rules.get('version', 1) == 1, 'Unsupported version of data/families.json')
+        homographs = []
+        for item in self._items(rules, 'homographs', ('word', 'concepts', 'note')):
+            head, concepts = string(item['word']), strings(item['concepts'], 'Concepts of a homograph in data/families.json')
+            require(head in words, f'data/families.json: {head} is not a word of the lexicon')
+            entered = {record['id'] for record, _ in words[head]['uses']}
+            for concept in concepts:
+                require(concept in entered, f'data/families.json: {head} is not a term of the concept {concept}')
+            homographs.append((head, set(concepts)))
+        self.lexemes = family_lexemes(words, homographs, known)
+        self.by_head, self.by_term = {}, {}
+        for lexeme in self.lexemes:
+            self.by_head.setdefault(lexeme.head, []).append(lexeme)
+            for record, term in lexeme.uses:
+                self.by_term[record['id'], term['latin']] = lexeme
+        apart = [self._words(item, 'apart') for item in self._items(rules, 'apart', ('words', 'note'))]
+        # The words a homograph was split into are never joined: jūs, law, and jūs, broth
+        split = [(one, other) for group in self.by_head.values() for one in group for other in group
+                 if one is not other and one.key[:2] == other.key[:2]]
+        together = [self._words(item, 'together') for item in self._items(rules, 'together', ('words', 'note'))]
+        for pair in apart:
+            require(len(pair) == 2 and pair[0] is not pair[1], 'data/families.json: "apart" takes two different words: '
+                    + ', '.join(lexeme.head for lexeme in pair))
+        for group in together:
+            require(len(set(group)) >= 2, 'data/families.json: "together" takes two words or more: ' + ', '.join(lexeme.head for lexeme in group))
+        self.family, self.used, self.ambiguous = join_families(self.lexemes, apart + split, together)
+        self._near = None
+        for group in together:
+            require(all(other in self.family.get(group[0], ()) for other in group[1:]),
+                    'data/families.json joins ' + ', '.join(lexeme.head for lexeme in group) + ' by hand, but lists two of them, or words '
+                    'of their families, apart')
+        for one, other in apart:
+            how = '; '.join(f'{derived.head} from {base.head} ({text})' for derived, base, text in self.used if derived in (one, other))
+            require(other not in self.family.get(one, ()),
+                    f'data/families.json lists {one.head} and {other.head} apart, but they are joined through other words '
+                    f'({how}); list those pairs apart too, or take this one out')
+
+    @staticmethod
+    def _items(rules, name, required):
+        items = rules.get(name, [])
+        require(isinstance(items, list), f'data/families.json: "{name}" must be a list')
+        for item in items:
+            fields(item, required)
+            require(isinstance(item['note'], str) and item['note'].strip(),
+                    f'data/families.json: an entry of "{name}" has no note of its authority')
+        return items
+
+    def _words(self, item, name):
+        return [self.word(name_) for name_ in strings(item['words'], f'Words of "{name}" in data/families.json')]
+
+    def word(self, name):
+        """The word a name in data/families.json means: a head, or head@concept where the head is
+        several words (volō@fly)."""
+        head, _, concept = name.partition('@')
+        found = self.by_head.get(head, [])
+        require(found, f'data/families.json: {head} is not a word of the lexicon with a dictionary form' if head else
+                'data/families.json: an empty word')
+        if concept:
+            found = [lexeme for lexeme in found if concept in lexeme.concepts()]
+            require(found, f'data/families.json: {head} is not a term of the concept {concept}')
+        require(len(found) == 1, f'data/families.json: {head} is several words; say which by a concept: '
+                + ', '.join(f'{head}@{lexeme.concepts()[0]}' for lexeme in found))
+        return found[0]
+
+    def of(self, lexeme):
+        """The other words of a word's family, the nearest first: the words it is made from or
+        that are made from it, then theirs, and those at one remove in the order of the Latin index."""
+        if lexeme not in self.family:
+            return []
+        if self._near is None:
+            self._near = {}
+            for derived, base, _ in self.used:
+                self._near.setdefault(derived, []).append(base)
+                self._near.setdefault(base, []).append(derived)
+        steps, reached = {lexeme: 0}, [lexeme]
+        for one in reached:
+            for other in self._near.get(one, ()):
+                if other not in steps:
+                    steps[other] = steps[one] + 1
+                    reached.append(other)
+        return sorted((other for other in self.family[lexeme] if other is not lexeme),
+                      key=lambda other: (steps.get(other, len(steps)), fold(other.head), other.head, other.form))
+
+    def of_term(self, record, term):
+        """The word a term is, if it is one word with a family or without."""
+        return self.by_term.get((record['id'], term['latin']))
+
+    def totals(self):
+        groups = {id(group): group for group in self.family.values()}
+        return len(groups), len(self.family)
+
+
+def load_families(root, words, records, known=None):
+    """The families, with the pairs kept apart, the families joined by hand and the homographs
+    of data/families.json (docs/records.md, "Word families")."""
+    path = Path(root) / 'data/families.json'
+    return Families(words, records, json.loads(path.read_text(encoding='utf-8')) if path.exists() else None, known)
+
+
 class Links:
     """Where links point from a given page: a concept page ('concept'), a Latin word's page
     ('word') or a page at the root ('index', 'root')."""
@@ -1634,6 +2129,64 @@ class Links:
         else:
             linked = self.text(head)
         return linked, self.text(rest) if is_saying(text) else escape(rest)
+
+
+FAMILY_SHOWN = 8      # the words of a family a concept's page lists; the word's own page lists them all
+
+
+def _family_english(lexeme, limit=3):
+    """The English headwords a word is entered under, the first few."""
+    names = list(dict.fromkeys(record['english'] for record, _ in lexeme.uses))
+    return names[:limit], len(names) > limit
+
+
+def word_family_lines(head, site, links):
+    """A Latin word's page: "Same family", the other headwords made from the same root, each a link
+    to its page with the English it is entered under. A head that is several words (volō, velle
+    and volō, volāre) has a line for each, named by its dictionary form."""
+    families, lines, seen = site['families'], [], []
+    mine = families.by_head.get(head, [])
+    for lexeme in mine:
+        family = families.family.get(lexeme)
+        if family is None or any(family is other for other in seen):
+            continue
+        seen.append(family)
+        items = []
+        for other in families.of(lexeme):
+            if other.head == head or any(other.head == listed for listed, _ in items):
+                continue
+            names, more = _family_english(other)
+            items.append((other.head, f'<a href="{links.word(other.head)}" lang="la">{escape(other.head)}</a> '
+                                      f'({escape(", ".join(names))}{", …" if more else ""})'))
+        if items:
+            which = f' as <span lang="la">{escape(lexeme.form)}</span>' if any(other not in family for other in mine) else ''
+            lines.append(f'<p class="see family"><span class="fam-label">Same family{which}:</span> '
+                         + ', '.join(html for _, html in items) + '.</p>')
+    return ''.join(lines)
+
+
+def concept_family_line(record, site, links):
+    """A concept's page: the family of its answer, each word with links to the concepts it is
+    entered under. The words entered only on this page are left out (they stand on it already);
+    of a large family the nearest are shown, and the word's own page has the rest."""
+    families = site['families']
+    main = ordered_terms(record)[0]
+    lexeme = families.of_term(record, main)
+    items = []
+    for other in families.of(lexeme) if lexeme else ():
+        concepts = list({r['english']: r for r, _ in reversed(other.uses) if r['id'] != record['id']}.values())[::-1]
+        if not concepts or any(other.head == listed for listed, _ in items):
+            continue
+        shown = ', '.join(f'<a href="{links.concept(r["id"])}">{escape(r["english"])}</a>' for r in concepts[:3])
+        items.append((other.head, f'<span lang="la">{escape(other.head)}</span> ({shown}{", …" if len(concepts) > 3 else ""})'))
+    if not items:
+        return ''
+    more = ''
+    if len(items) > FAMILY_SHOWN:
+        more = (f', and {len(items) - FAMILY_SHOWN} more on the page of '
+                f'<a href="{links.word(lexeme.head)}" lang="la">{escape(lexeme.head)}</a>')
+    return ('<p class="see family"><span class="fam-label">Same family:</span> '
+            + ', '.join(html for _, html in items[:FAMILY_SHOWN]) + more + '.</p>')
 
 
 def suggest_link(page, what):
@@ -1771,6 +2324,7 @@ def render_concept(record, site):
         block.append(f'<p class="meta-line register">({main["register"]})</p>')
     if 'comment' in main:
         block.append(f'<p class="comment">{main["comment"]}</p>')
+    block.append(concept_family_line(record, site, links))
     parts.append('<section class="term has-side" aria-label="The Latin">' + ''.join(block) + '</section>')
 
     # The other words come before the examples: the examples illustrate every term of the record,
@@ -1866,6 +2420,7 @@ def render_word_page(head, info, site):
                      f'<p class="meta-line"><span class="lab">{PERIODS[term["period"]]}</span></p></li>')
     parts.append('<section class="sec" aria-labelledby="uses-h"><div class="sec-head"><h2 id="uses-h">In this lexicon</h2></div>'
                  '<ul class="uses">' + ''.join(items) + '</ul></section>')
+    parts.append(word_family_lines(head, site, links))
 
     notes, seen = [], set()
     for record, term in uses:
@@ -2031,6 +2586,7 @@ def load_site(root):
     site['records'] = load_records(root, categories, legacy, rulings)
     site['words'] = word_index(site['records'])
     site['forms'] = FormIndex(site['records'], site['words'], root)
+    site['families'] = load_families(root, site['words'], site['records'], site['forms'].term_stems)
     site['latinitium'] = load_latinitium(root)
     site['anchors'] = anchor_map(site)
     for key in categories:

@@ -49,7 +49,7 @@ Read first: `AGENTS.md`, `records.md` (the record format and the note shape), an
   - `notes`: only where the card explains a departure from Lewis & Short or a source (a vowel length, a spelling), in the shape of `records.md`: `form`, `claim`, `against`, `html` with the evidence, and `ruling` if one in `data/rulings.json` applies. Don't invent departures.
 - `phrases`: `latin` word for word from the card; `english` as the card gives it; `source`: `composed` for the card's own sentences, or the citation as the card gives it: `Libellus III, <span lang="la">Apud avum et aviam</span>`, `Comen. OP 54`, `Plin. NH 11.198`.
 - `related`: other records (in your batch or existing), or cards not yet converted (`entry-301`) that the card refers to.
-- `sources`: give each record the card's source lines that support it: each Lewis & Short link to the record of its word, and the Traupman, Morgan–Owens, Bennett and libellī lines to the records that use them. Add “The example sentences marked “composed” are ours.” to a record with composed examples. Every link in the card must reach some record.
+- `sources`: give each record the card's source lines that support it: each Lewis & Short link to the record of its word, and the Traupman, Morgan–Owens, Bennett and libellī lines to the records that use them. Do not add a sentence saying that the examples marked “composed” are ours, or any other note that holds for every entry: those are said once on How we decide (see "Sources are citations" in [records.md](records.md)). Every link in the card must reach some record.
 
 ## What you must not do
 

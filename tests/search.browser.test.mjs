@@ -501,7 +501,7 @@ test('every page is usable on a phone: no sideways scrolling, 44px controls, no 
       await page.goto(pageUrl(path));
       assert.equal(await overflows(), false, `${path} overflows at ${width}px`);
       const small = await page.evaluate(() => [...document.querySelectorAll(
-        '.settings > summary, .head-search-field, .filter button, .cat-menu > summary, .cat-home, .clear, .page-contents a, .toc a, .hero h1 a, .site-name, .wlist a, .az-nav a, .az a, .suggest a, '
+        '.settings > summary, .head-search-field, .filter button, .cat-menu > summary, .cat-home, .clear, .page-contents a, .toc a, .hero h1 a, .site-name, .wlist a, .az-nav a, .az a, .suggest a, .how-sources a, '
         + '.plist a, .practice summary, .practice button, .practice a, .verdict button, .verdict a, .icon-btn, .mode-chip, .go, #answer, .keys button, .ref summary, .links a')]
         .filter(el => el.getClientRects().length && getComputedStyle(el).visibility !== 'hidden')
         .map(el => [el.textContent.trim().slice(0, 24), Math.round(el.getBoundingClientRect().height)])
@@ -802,6 +802,33 @@ test('a note on a form opens with the form, the claim and the authority it depar
   await page.goto(pageUrl('c/perhaps.html'));
   assert.match(await page.locator('.side.note').textContent(), /^1fortasse: short final e \(Lewis & Short fortassē, without evidence\)\. Catull\. 85\.1/);
   assert.equal(await page.locator('.side.note span[lang="la"]').first().evaluate(el => getComputedStyle(el).fontStyle), 'italic');
+});
+
+test('under an entry’s sources one quiet link leads to How to read the sources; on a phone it is 44px tall', async () => {
+  // The notes that stood under Sources in record after record are said once (Jack, 15 November 2026).
+  await page.setViewportSize({ width: 390, height: 800 });
+  await page.goto(pageUrl('c/perhaps.html'));
+  const link = page.locator('.c-sources .how-sources a');
+  assert.equal(await link.count(), 1);
+  assert.equal(await link.textContent(), 'How to read the sources');
+  const box = await link.boundingBox();
+  assert.ok(box.height >= 44, `the link is ${box.height}px tall`);
+  // Quiet: the grey of the page's other small links, not ink, and after the sources themselves.
+  assert.equal(await link.evaluate(el => getComputedStyle(el).color),
+               await page.evaluate(() => { const probe = document.createElement('i'); probe.style.color = 'var(--soft)'; document.body.append(probe); const colour = getComputedStyle(probe).color; probe.remove(); return colour; }));
+  assert.ok(box.y > (await page.locator('.c-sources p').first().boundingBox()).y);
+  assert.doesNotMatch(await page.locator('.c-sources').textContent(), /marked “(Lewis & Short|composed)”/);
+  await link.click();
+  await page.waitForURL(/how-we-decide\.html#sources$/);
+  const heading = page.locator('#sources h2');
+  assert.equal(await heading.textContent(), 'How to read the sources');
+  await page.waitForFunction(() => { const top = document.querySelector('#sources').getBoundingClientRect().top; return top >= 0 && top < innerHeight / 2; });
+  assert.match(await page.locator('#sources').textContent(), /is given as Lewis & Short’s dictionary cites it/);
+  assert.match(await page.locator('#sources').textContent(), /marked composed is a sentence of ours/);
+  assert.equal(await overflows(), false);
+  // The page's own contents lead to it too, with a control for a thumb.
+  const jump = page.locator('.page-contents a[href="#sources"]');
+  assert.ok((await jump.boundingBox()).height >= 44);
 });
 
 test('a concept page has its notes, a ruling link and no horizontal overflow on a phone', async () => {

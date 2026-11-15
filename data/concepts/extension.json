@@ -11,13 +11,11 @@
     {
       "latin": "aedificium adstrūctum",
       "status": "recommended",
-      "period": "ours"
-    },
-    {
-      "latin": "pars domūs nova, veterī adstrūcta",
-      "status": "alternative",
-      "period": "ours",
-      "gloss": "the new wing, extension"
+      "period": "classical",
+      "evidence": [
+        "Col. 1.5: <span lang=\"la\">cum veterī adstruitur recēns aedificium</span> (Lewis &amp; Short s.v. <span lang=\"la\">astruō</span>)"
+      ],
+      "comment": "The participle of Columella’s expression for a new building added to an old one; <span lang=\"la\">adstruere</span> is to build on in addition (also Plin. Ep. 9.7, of his villas). Traupman and Morgan–Owens have no word for an extension."
     }
   ],
   "related": [
@@ -25,11 +23,19 @@
     "wing"
   ],
   "sources": [
-    "<a href=\"https://www.alatius.com/ls/index.php?l=astruo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: astruo</a>"
+    "<a href=\"https://www.alatius.com/ls/index.php?l=astruo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: astruo</a>",
+    "The example sentence marked “composed” is ours."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "pars domūs nova, veterī adstrūcta",
+      "english": "the new wing, built on to the old house",
+      "source": "composed"
+    }
+  ]
 }

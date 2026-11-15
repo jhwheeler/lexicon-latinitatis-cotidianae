@@ -286,10 +286,12 @@ class BuildTests(unittest.TestCase):
         self.assertEqual(cited, {key for key, _ in entries})
         # It states the rules the practice script has: the numbers on the page are the script's.
         for constant in ('ROUND = 12, ROUND_DUE = 6,', 'AGAIN_WAIT = HOUR / 6,', 'DAY_STARTS = 4;',
-                         'WAIT_DAYS = [null, null, [1, 1], [3, 4], [6, 8], [14, 18], [30, 40]];'):
+                         'WAIT_DAYS = [null, null, [1, 1], [3, 4], [6, 8], [14, 18], [30, 40], [70, 90], [150, 210], [300, 420]];',
+                         'ROUND_DUE_MORE = [[72, 10], [36, 8]];'):
             self.assertIn(constant, script)
         for said in ('A round is 12 cards', 'at most half of a round', 'due again in 10 minutes', 'due the next day',
-                     'in 3–4 days, 6–8, 14–18 and 30–40', 'starting at 04:00'):
+                     'in 3–4 days, 6–8, 14–18 and 30–40, then in 70–90, 150–210 and 300–420', 'more than 36 waiting, 8 of the 12', 'more than 72, 10',
+                     'starting at 04:00'):
             self.assertIn(said, main)
         # In the sitemap, kept on the device by the service worker, and in the footer of every page.
         self.assertIn('cotidianae/how-practice-works.html</loc>', outputs['sitemap.xml'])

@@ -1472,16 +1472,16 @@ test('spacing: the longer waits are spread over whole days, and a card missed in
       return ids.map(id => [cards[id].b, (cards[id].due - sofia(16, '04:00')) / 86400e3]);
     };
     await openPractice();
-    // From the boxes 1 to 6: the hour box (a card of the hub's) goes to the 1-day box; the top box stays the top.
-    assert.deepEqual(await days(0), [[2, 1], [3, 3], [4, 6], [5, 14], [6, 30], [6, 30]]);
-    assert.deepEqual(await days(0.999), [[2, 1], [3, 4], [4, 8], [5, 18], [6, 40], [6, 40]]);
+    // From the boxes 1 to 6: the hour box (a card of the hub's) goes to the 1-day box; the 35-day box to about 80 days.
+    assert.deepEqual(await days(0), [[2, 1], [3, 3], [4, 6], [5, 14], [6, 30], [7, 70]]);
+    assert.deepEqual(await days(0.999), [[2, 1], [3, 4], [4, 8], [5, 18], [6, 40], [7, 90]]);
     // With chance as it comes, each wait is a whole number of days within its bounds.
     await keep('lexicon-practice', stored());
     await listDeck(ids);
     await seedChance(7);
     await playMissing('judge');
     const cards = await progressCards();
-    const bounds = { soap: [1, 1], bone: [3, 4], train: [6, 8], 'cooking-pot': [30, 40], perhaps: [30, 40] };
+    const bounds = { soap: [1, 1], bone: [3, 4], train: [6, 8], 'cooking-pot': [30, 40], perhaps: [70, 90] };
     for (const [id, [fewest, most]] of Object.entries(bounds)) {
       const wait = (cards[id].due - sofia(16, '04:00')) / 86400e3;
       assert.ok(Number.isInteger(wait) && wait >= fewest && wait <= most, `${id}: ${wait}`);
@@ -1552,6 +1552,47 @@ test('spacing: at most half of a round is repetition while the deck has new word
   const third = await roundIds();
   assert.equal(third.filter(id => ids.includes(id)).length, 6);
   assert.equal(third.some(id => second.includes(id)), false, 'nothing of the round just played');
+  await forgetPractice();
+});
+
+test('spacing: the more words wait, the more of a round is repetition; the waits grow to a year and stop', async () => {
+  await openPractice();
+  const now = Date.now(), day = 86400e3;
+  const ids = await page.evaluate(() => {
+    const heads = new Set();
+    return window.lexiconPractice.cards.filter(card => !card.t).filter(card => { const head = /^(.+?)(?=\s*(?:,|\(|$))/.exec(card.l)[1]; return !heads.has(head) && heads.add(head); })
+      .slice(0, 80).map(card => card.i);
+  });
+  // How many of a new round are repetitions when so many words are waiting (the deck has thousands of new ones).
+  const share = async count => {
+    const waiting = ids.slice(0, count);
+    // From another page: the practice page keeps its round as it is left.
+    await page.goto(url);
+    await keep('lexicon-practice', { cards: Object.fromEntries(waiting.map(id => [id, { b: 2, due: now - day, t: now - 2 * day }])), at: 5 });
+    await page.evaluate(() => localStorage.removeItem('lexicon-practice-round'));
+    await openPractice(false);
+    await startRound();
+    const round = await roundIds();
+    await page.locator('#g-close').click();
+    return round.filter(id => waiting.includes(id)).length;
+  };
+  assert.equal(await share(36), 6);
+  assert.equal(await share(37), 8);
+  assert.equal(await share(72), 8);
+  assert.equal(await share(73), 10);
+  // A card in the top box stays there, and comes back in about a year.
+  await page.goto(url);
+  await page.evaluate(() => localStorage.removeItem('lexicon-practice-round'));
+  await keep('lexicon-practice', { cards: { [ids[0]]: { b: 9, due: now - day, t: 5 }, [ids[1]]: { b: 8, due: now - day, t: 5 } }, at: 5 });
+  await listDeck(ids.slice(0, 2));
+  await startRound();
+  for (let n = 0; n < 2; n++) { await page.locator('#g-show').click(); await page.locator('#g-got').click(); }
+  const cards = await progressCards();
+  for (const id of ids.slice(0, 2)) {
+    assert.equal(cards[id].b, 9);
+    const wait = (cards[id].due - now) / day;
+    assert.ok(wait > 298 && wait < 421, `${id}: ${wait}`);
+  }
   await forgetPractice();
 });
 

@@ -77,6 +77,146 @@ def composed(phrase):
 def shown_sources(record):
     return [source for source in record['sources'] if not READER_SOURCE.match(source)]
 SOURCE_METHOD = re.compile(r'searchable text|supplied PDF|printed page|page images?\b|rendered page')
+# The standing notes (Jack, 15 November 2026: "we can just say it once"). Until then the same
+# sentences stood under Sources in record after record: that quotations marked "Lewis & Short" are
+# given as the dictionary cites them, that the sentences marked "composed" are ours, which digital
+# text an author was checked against. They are notes on how to read the lexicon, not citations, and
+# are now said once, in the section "How to read the sources" of src/how-we-decide.html, to which
+# every entry with sources links. The patterns below are those sentences as the records had them;
+# without_standing_notes() gives a source line without them, and a record that carries one is
+# refused. A sentence that says something of its own record besides ("…; the quotation keeps that
+# edition's spelling") fits no pattern and stands.
+SOURCES_SECTION = 'how-we-decide.html#sources'
+SOURCES_LINK = 'How to read the sources'
+_BLANK = r'(?: rel="noopener noreferrer" target="_blank")?'
+_PERSEUS = (rf'(?:<a href="https://github\.com/PerseusDL/canonical-latinLit"{_BLANK}>Perseus Latin texts?</a>'
+            r'|Perseus Latin texts?|Perseus texts?)')
+_LIBRARY = (rf'(?:<a href="https://github\.com/cltk/lat_text_latin_library"{_BLANK}>Latin Library texts \(CLTK mirror\)</a>'
+            rf'|Latin Library text \(<a href="https://github\.com/cltk/lat_text_latin_library"{_BLANK}>CLTK mirror</a>(?:, \d+ November 2026)?\)'
+            r'|Latin Library texts?)')
+_DIGITAL = rf'(?:(?:{_PERSEUS}|{_LIBRARY})(?: and the (?:{_PERSEUS}|{_LIBRARY}))?|Perseus and Latin Library texts|Latin Library and Perseus texts)'
+_DATE = r'(?: \(\d+ November 2026\))?'
+_EDITION = (r'(?: \((?:ed\. )?(?:Greenough|Mayhoff|Parry|Purser|Kauer–Lindsay)(?:’s (?:text|sections|section numbers))?'
+            r'(?:; \d+ November 2026)?\))?')
+_LOCI = r'loci-[a-z-]+(?: \((?:for |appendix: |with its appendix of |the )?(?:Columella|Varro|Moretum)\)|, which also holds Columella)?'
+_COLLECTIONS = rf'the Lat[iī]nit[aā]s loci collections?(?: \({_LOCI}(?:[,;] {_LOCI})*(?: and others)?\)| loci-[a-z-]+)?'
+_CHECKED_THERE = r'(?:as )?checked (?:there )?against the (?:editions?|transcriptions?) (?:named there|they name)'
+_AS_CITED = (r'marked “Lewis &amp; Short” are (?:copied from its citations|given as Lewis &amp; Short cites them'
+             r'(?:, with its references)?(?:, in the house spelling(?: \(macrons, consonantal j\))?)?'
+             r'(?:[;,]? (?:and|they) have not been checked against an? (?:modern )?edition)?)')
+# Whole sentences that say how to read the entries or how we worked.
+STANDING_NOTES = [re.compile(pattern) for pattern in (
+    rf'(?:Quotations|Citations) {_AS_CITED}\.',
+    r'The example sentences? marked “composed” (?:is|are) ours\.',
+    rf'Quotations? from {_COLLECTIONS}(?: and the note on [a-z ]+)?(?: and the (?:psalter of the )?<em>Precēs</em>(?: \(psalmi\))?)?'
+    rf', {_CHECKED_THERE}(?:; quotations {_AS_CITED})?\.',
+    rf'Lines marked as in {_COLLECTIONS} are quoted from them\.',
+    r'Prayers from the Latinitas <em>Precēs</em> collection \(preces\.md\), checked against the sources named there\.',
+    rf'(?:Quotations of classical authors|Classical quotations|Quotations) checked against the {_DIGITAL}{_DATE}'
+    r'(?: and given in the house spelling \(macrons, consonantal j\))?\.',
+    r'Quotations not in Lewis &amp; Short or the loci collections were checked against the Perseus Digital Library’s Latin texts \(canonical-latinLit\)\.',
+    rf'Quotations of .{{1,300}}? that are not in the loci collections were checked against the {_DIGITAL}{_DATE}\.',
+    rf'Quintilian (?:checked against|passages not in Lewis &amp; Short were read in) the {_PERSEUS}, and cited by its numbering\.',
+    rf'Plautus, Terence and Cicero’s letters checked against the {_PERSEUS} \(Plautus ed\. Leo, with its line numbers; Terence ed\. Parry, '
+    r'whose line numbers can run one off the OCT’s; lines taken from the loci collections are cited by the OCT’s; Cicero’s letters ed\. Purser\)\.',
+    rf'Vulgate verses checked against the Clementine Vulgate \(CrossWire <em>VulgClementine</em>, via the '
+    rf'<a href="https://github\.com/scrollmapper/bible_databases"{_BLANK}>scrollmapper <em>bible_databases</em></a> repository\) '
+    r'and Hetzenauer’s edition, in Clementine spelling\.',
+    rf'Vulgate quotations checked against the Clementine text \(the <em>VulgClementine</em> file of the '
+    rf'<a href="https://github\.com/scrollmapper/bible_databases"{_BLANK}>scrollmapper Bible databases</a>, the text the loci collection uses\){_DATE}\.',
+    rf'Vulgate verses checked against the Clementine text at Bible Study Tools and the {_LIBRARY}{_DATE}\.',
+    r'The Vulgate checked against the Clementine text\.',
+    r'The Latin Library texts \(thelatinlibrary\.com\), read in a local copy, for ancient passages not quoted in Lewis &amp; Short; cited by book and section\.',
+    r'Publilius is cited as the loci collection numbers him, by position under each initial letter in the Latin Library text'
+    r'(?:; from N onwards that numbering differs from Meyer’s)?\.',
+    r'“Ps\.-Publil\.” marks lines from the later collections printed with him\.',
+    r'Dictionary links support the component words; the modern technical expressions are labelled separately\.',
+    r'Descriptions and prompts labelled as ours are composed for family conversation\.',
+    r'Recorded vocabulary does not imply universal technical standardization\.',
+    r'(?:Examples are composed|The composed examples are) for conversation with (?:Theo|the child); dictionary links document the component words, '
+    r'not these exact sentences or standardized modern climbing terminology\.',
+)]
+# A citation with a note on how the work was read: the citation stays, as a book prints one.
+CITED_WITH_A_NOTE = [(re.compile(pattern), citation) for pattern, citation in (
+    (r'(J\. G\. Th\. Graesse, <em>Orbis Latinus</em>), edition of F\. Benedict \(1909\), Latin–German, read in the digitization at columbia\.edu '
+     r'\(cited as Graesse, <em>Orbis Latinus</em> s\.v\.\); its forms are post-classical unless Lewis &amp; Short has them\.',
+     r'\1, ed. F. Benedict (1909).'),
+    (r'(J\. G\. Th\. Graesse, <em>Orbis Latinus</em> \(Dresden, 1861\)), German–Latin index, read in the scan at archive\.org'
+     r'(?: \(the 1909 edition at columbia\.edu could not be reached page by page\); its forms are post-classical unless Lewis &amp; Short has them'
+     r'|; cited only where it differs from the 1909 edition)\.', r'\1.'),
+    (r'(Morgan–Owens, <em>Adumbratio</em>, geographical section), with the authorities it cites \(cited as M-O s\.v\.\)\.', r'\1.'),
+    (r'(Pliny, <em>Naturalis Historia</em>, ed\. Mayhoff \(Teubner, 1906\)), read in the Perseus Digital Library\.', r'\1.'),
+    (r'(The Vulgate), read in the Latin Library text \(thelatinlibrary\.com\), cited by book, chapter and verse\.', r'\1.'),
+)]
+# "Cicero’s letters checked against the Perseus Latin texts." names no place: the passage is cited
+# beside the example, and the sentence goes. "Cicero, De officiis 1.124, checked against …" keeps
+# its citation.
+READ_IN = [re.compile(pattern) for pattern in (
+    rf'(?P<cited>.+?),? (?:also )?(?:checked against|read in) the {_DIGITAL}{_EDITION}{_DATE}'
+    rf'(?:, with section numbers from the {_PERSEUS}{_DATE})?(?:, which follow the Oxford text)?\.',
+    rf'Checked against the {_DIGITAL}{_DATE}: (?P<cited>.+)\.',
+    rf'(?P<cited>.+?),? (?:quoted )?(?:from|as in) {_COLLECTIONS}(?:, {_CHECKED_THERE})?\.',
+)]
+# The three sentences that stood in the most records are refused in any wording, even with a
+# remark of the record's own joined to them: the remark is written as a sentence of its own.
+STANDING_PHRASE = re.compile(r'marked “Lewis &amp; Short” are (?:given|copied)|marked “composed” (?:is|are) ours'
+                             r'|read in the (?:digitization|scan) at')
+_MORE_THAN_A_NAME = re.compile(r':|<a |<span|\b(?:checked|quoted|from the|as|which|prints|reads|misprints|spelling|record)\b')
+# A full stop after one of these ends no sentence (Cic. Att. 1.2, s.v., John C. Traupman).
+ABBREVIATIONS = frozenset("""C p pp s.v s.vv ed ch chs cf fr vb vol Cic Fam Att Ter Plaut Off Or Ep Epp Heaut Sen And Ph Eun Caes
+Phil Ad Men Div Rep B.G Am Aul Brut Agr Tusc Amic Most Mil Liv Fin Lael Cat S J G Th A Hec Plin D Arch Trin Amph Sest Ac Bacch Poen
+Phorm F N.D Q Capt N Gai Inst Rosc Curc Caecin Hor Cael Ann E Phaedr Fōrm P Top As Serm Clu Br Paus Cist Epid Col Leg Truc Eum Carm
+Pont Progymn Ov L Tr Rud Planc Fr Met Lig Merc Clem Ben Aug Par praef Suet Man Mart Imp Pomp M Inv Verg Catull Quint Mor Asin Tac
+Vulg Publil Ps Ps.-Publil Cels Varr Lucr Mt Cor Sall Nep Gell Petr Juv Prop Tib Stat Curt Vitr Apic""".split())
+
+
+def source_sentences(source):
+    """The sentences of a source line; joined with spaces they are the line again."""
+    parts, start = [], 0
+    for stop in re.finditer(r'\. (?=[A-Z<“(])', source):
+        word = re.split(r'[ (>]', source[start:stop.start()])[-1]
+        if word not in ABBREVIATIONS and source.count('<a ', 0, stop.start()) == source.count('</a>', 0, stop.start()):
+            parts.append(source[start:stop.start() + 1])
+            start = stop.end()
+    return parts + [source[start:]]
+
+
+def _citation_only(sentence):
+    """A sentence of a source line without its standing note: what is left of it, or '' when it
+    is nothing but the note."""
+    if any(pattern.fullmatch(sentence) for pattern in STANDING_NOTES):
+        return ''
+    for pattern, citation in CITED_WITH_A_NOTE:
+        if pattern.fullmatch(sentence):
+            return pattern.sub(citation, sentence)
+    for pattern in READ_IN:
+        match = pattern.fullmatch(sentence)
+        if match and not _MORE_THAN_A_NAME.search(match['cited']):
+            return match['cited'] + '.' if re.search(r'\d|<em>', match['cited']) else ''
+    return sentence
+
+
+def without_standing_notes(source):
+    """A line of a record's sources as it should stand: the citation, without the sentences that
+    are said once on the policy page. '' when the line is nothing but such sentences."""
+    kept = []
+    for sentence in source_sentences(source):
+        left = _citation_only(sentence)
+        if left == sentence and '; ' in sentence:
+            # "Quotations from the loci collections, checked …; Cicero (Att. 1.5.5) checked against …":
+            # only when every part is such a note; a part that says anything else keeps the sentence
+            # whole. A semicolon inside brackets divides nothing.
+            parts = [part + '.' for part in re.split(r'; (?![^()]*\))', sentence[:-1])]
+            now = [_citation_only(part) for part in parts]
+            if len(parts) > 1 and all(a != b for a, b in zip(now, parts)):
+                left = '; '.join(part[:-1] for part in now if part) + '.' if any(now) else ''
+        if left:
+            kept.append(left)
+    line = ' '.join(kept)
+    # A line of links had its full stop from the sentence that followed it.
+    if line != source and re.fullmatch(r'(?:<a [^>]*>[^<]*</a>(?: · )?)+\.', line):
+        line = line[:-1]
+    return line
 # The lexicon as an app on a phone's home screen (Jack, 13 November 2026): with the manifest and the
 # icons, "Add to Home Screen" opens it in a window of its own, not in a browser tab; the service
 # worker (src/sw.js) keeps it on the device, so it opens at once and works offline.
@@ -390,10 +530,14 @@ def load_records(root, categories, legacy, rulings):
             # A source line is a citation, as a book would print it: the author, the work, the place
             # (Jack, 13 November 2026). How the book was read or checked is not part of it.
             require(not SOURCE_METHOD.search(source), f'A source in {where} describes how it was read; give only the citation: {source}')
+            citation = without_standing_notes(source)
+            said_once = (f'A source in {where} carries a standing note, which is said once, in “{SOURCES_LINK}” '
+                         'on src/how-we-decide.html; ')
+            require(citation == source, said_once + (f'give only the citation: {citation}' if citation else f'delete the line: {source}'))
+            require(not STANDING_PHRASE.search(source), said_once + f'take it out of the line: {source}')
         require(len(record['sources']) == len(set(record['sources'])), f'The same source twice in {where}')
         require(sum(TRAUPMAN in source for source in record['sources']) <= 1,
                 f'Traupman is cited more than once in {where}; give one citation with all its pages')
-        require(record['sources'], f'No sources in {where}')
         fields(record['review'], ('status', 'date', 'by'))
         require(record['review']['status'] in ('draft', 'reviewed'), f'Invalid review status in {where}')
         require(re.fullmatch(DATE, string(record['review']['date'])), f'Invalid review date in {where}')
@@ -1673,9 +1817,13 @@ def render_concept(record, site):
         parts.append('<p class="see">See also ' + ', '.join(
             f'<a href="{links.related(r)}">{links.label(r)}</a>' for r in record['related']) + '.</p>')
     sources = shown_sources(record)
+    # What is true of every entry's sources (what "Lewis & Short" after a quotation means, which
+    # editions the authors are quoted from) is said once, on the policy page; an entry that has
+    # sources leads there.
     parts.append('<footer class="c-sources">'
                  + (f'<p><span class="sc">Sources</span>{sources[0]}</p>' if sources else '')
                  + ''.join(f'<p>{s}</p>' for s in sources[1:]) + f'<p>{review_state(record["review"])}</p>'
+                 + (f'<p class="how-sources"><a href="{links.up}{SOURCES_SECTION}">{SOURCES_LINK}</a></p>' if sources else '')
                  + suggest_link(f'c/{record["id"]}.html', record['english'] + (f' ({record["sense"]})' if 'sense' in record else ''))
                  + '</footer>')
     return concept_article(record) + '\n' + '\n'.join(parts) + '\n</article>'

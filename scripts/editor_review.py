@@ -41,10 +41,11 @@ SEGMENT = r'[A-Za-z0-9_\-.~:@+]+'
 
 def entry_html(record, site):
     """The entry as its page on the site draws it, without what only works there: the links (the
-    page has nowhere to follow them; the words stay) and the line that opens a GitHub issue."""
+    page has nowhere to follow them; the words stay), the line that opens a GitHub issue and the
+    line that leads to "How to read the sources"."""
     key = record['id']
     html = builder.resolve_anchors(builder.render_concept(record, site), site, '../', f'c/{key}.html')
-    html = re.sub(r'<p class="suggest">.*?</p>', '', html, flags=re.S)
+    html = re.sub(r'<p class="(?:suggest|how-sources)">.*?</p>', '', html, flags=re.S)
     return re.sub(r'</?a\b[^>]*>', '', html)
 
 

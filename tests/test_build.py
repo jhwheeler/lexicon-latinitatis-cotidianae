@@ -585,6 +585,94 @@ class BuildTests(unittest.TestCase):
         self.assertIn('<em>Conversational Latin for Oral Proficiency</em>, pp. 211, 219, 294.</p>',
                       builder.build_site(self.root)['c/perhaps.html'])
 
+    def test_the_standing_notes_under_sources_are_said_once(self):
+        # Jack, 15 November 2026: the sentences repeated from record to record under Sources are
+        # said once, on the policy page, and every entry that has sources leads there.
+        outputs = builder.build_site(self.root)
+        page = outputs['how-we-decide.html']
+        self.assertIn('<section id="sources">\n<h2>How to read the sources</h2>', page)
+        self.assertIn('<a href="#sources">Sources</a>', page)
+        section = page[page.index('<section id="sources">'):page.index('<section id="rulings">')]
+        # Each sentence taken out of the records is answered there.
+        for said in ('is given as Lewis &amp; Short’s dictionary cites it', 'not been checked against a modern edition',
+                     'marked <em>composed</em> is a sentence of ours', 'the Latinitas loci collections',
+                     'href="https://github.com/PerseusDL/canonical-latinLit"', 'href="https://github.com/cltk/lat_text_latin_library"',
+                     'Leo (1896)', 'Parry (1857)', 'Purser', 'Mayhoff (Teubner, 1906)', 'Clementine Vulgate', 'Hetzenauer',
+                     'From N onwards that numbering differs from Meyer’s', '“Traupman 103”', '“M-O s.v. sieve”', '“Levi–Bini p. 23”',
+                     '“Andresian p. 24”', 'digitisation at columbia.edu', 'scan at archive.org',
+                     'post-classical unless Lewis &amp; Short has them', 'supports the word it names'):
+            with self.subTest(said=said):
+                self.assertIn(said, section)
+        link = '<p class="how-sources"><a href="../how-we-decide.html#sources">How to read the sources</a></p>'
+        self.assertEqual(outputs['c/perhaps.html'].count(link), 1)
+        self.assertLess(outputs['c/perhaps.html'].index('<span class="sc">Sources</span>'), outputs['c/perhaps.html'].index(link))
+        # A word's page has no sources of its own, and no such line.
+        self.assertNotIn('how-sources', outputs['l/fortasse.html'])
+        # No entry repeats them.
+        gone = re.compile(r'marked “Lewis &amp; Short” are (?:given|copied)|marked “composed” (?:is|are) ours|read in the (?:digitization|scan) at'
+                          r'|Quotations? from the Lat[iī]nit[aā]s loci collections?[^<.;]*, (?:as )?checked (?:there )?against the editions? (?:named there|they name)\.<'
+                          r'|labelled as ours are composed for family conversation|Dictionary links (?:support|document) the component words'
+                          # "Cicero’s letters checked against the Perseus Latin texts (9 November 2026).", a whole line.
+                          r'|<p>(?:<span class="sc">Sources</span>)?[A-Z][\w’ ,]* checked against the <a href="[^"]+"[^>]*>'
+                          r'(?:Perseus Latin texts|Latin Library texts \(CLTK mirror\))</a>(?: \(\d+ November 2026\))?\.</p>')
+        for path, text in outputs.items():
+            if path.startswith(('c/', 'l/')) and gone.search(text):
+                self.fail(f'{path} still carries a standing note: {gone.search(text).group(0)}')
+        # An entry without sources has no "Sources" and no way to the section; its other lines stand.
+        record = self.record('perhaps')
+        record['sources'] = []
+        self.save_record(record)
+        page = builder.build_site(self.root)['c/perhaps.html']
+        self.assertNotIn('how-sources', page)
+        self.assertNotIn('<span class="sc">Sources</span>', page)
+        self.assertIn('<footer class="c-sources"><p>Draft of ', page)
+        self.assertIn('<p class="suggest">', page)
+        # Nor has one whose only source is the readers, which the site does not cite.
+        record['sources'] = ['<span lang="la">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026.']
+        self.save_record(record)
+        self.assertNotIn('how-sources', builder.build_site(self.root)['c/perhaps.html'])
+
+    def test_a_record_that_carries_a_standing_note_is_refused(self):
+        perseus = '<a href="https://github.com/PerseusDL/canonical-latinLit" rel="noopener noreferrer" target="_blank">Perseus Latin texts</a>'
+        graesse = 'J. G. Th. Graesse, <em>Orbis Latinus</em>'
+        for source, advice in (
+                ('Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; '
+                 'they have not been checked against a modern edition.', 'delete the line: Quotations marked'),
+                ('The example sentences marked “composed” are ours.', 'delete the line: The example sentences'),
+                ('The example sentence marked “composed” is ours.', 'delete the line: The example sentence '),
+                ('Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-plautus), checked against the editions named there.',
+                 'delete the line: Quotations from'),
+                (f'Cicero’s letters checked against the {perseus} (9 November 2026).', 'delete the line: Cicero’s letters'),
+                (f'Cicero, <em>De officiis</em> 1.124, checked against the {perseus}.', r'give only the citation: Cicero, <em>De officiis</em> 1\.124\.$'),
+                (graesse + ', edition of F. Benedict (1909), Latin–German, read in the digitization at columbia.edu (cited as Graesse, '
+                 '<em>Orbis Latinus</em> s.v.); its forms are post-classical unless Lewis &amp; Short has them.',
+                 r'give only the citation: J\. G\. Th\. Graesse, <em>Orbis Latinus</em>, ed\. F\. Benedict \(1909\)\.$'),
+                ('<a href="https://logeion.org/fortasse" rel="noopener noreferrer" target="_blank">Lewis &amp; Short: fortasse</a>. '
+                 'The example sentence marked “composed” is ours.', r'give only the citation: <a href=[^>]+>Lewis &amp; Short: fortasse</a>$'),
+                # In any wording, and with a remark of the record's own joined to it.
+                ('The example sentence marked “composed” is ours, after Terence.', 'take it out of the line'),
+                (graesse + ' (1861), read in the scan at archive.org, pp. 12–13.', 'take it out of the line')):
+            with self.subTest(source=source[:50]):
+                record = self.record('perhaps')
+                record['sources'] = [source]
+                self.save_record(record)
+                with self.assertRaisesRegex(ValueError, 'concept perhaps carries a standing note, which is said once, in “How to read the sources” '
+                                                        'on src/how-we-decide.html; ' + advice):
+                    builder.build_site(self.root)
+        # A citation that recurs is not one, nor a sentence that says something of its own record.
+        kept = ['John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 344, 359.',
+                graesse + ', ed. F. Benedict (1909).', 'Cicero, <em>De officiis</em> 1.124.',
+                f'Caesar checked against the {perseus}; the quotations keep that edition’s spelling <span lang="la">conloquium</span>.',
+                'Cicero as Lewis &amp; Short quotes him.']
+        for source in kept:
+            self.assertEqual(builder.without_standing_notes(source), source)
+        record = self.record('perhaps')
+        record['sources'] = kept
+        self.save_record(record)
+        page = builder.build_site(self.root)['c/perhaps.html']
+        for source in kept:
+            self.assertIn(f'{source}</p>', page)
+
     def test_a_coinage_is_not_recommended_beside_an_attested_word(self):
         # Coinages only where needed (Jack, 13 November 2026).
         original = self.record('perhaps')

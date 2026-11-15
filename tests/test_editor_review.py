@@ -61,6 +61,9 @@ class EditorReviewTests(unittest.TestCase):
                 self.assertNotIn('<a ', html)
                 self.assertNotIn('</a>', html)
                 self.assertNotIn('class="suggest"', html)
+                # Nor the words of the link to "How to read the sources", which would stand there dead.
+                self.assertNotIn('how-sources', html)
+                self.assertNotIn('How to read the sources', html)
                 self.assertIn(f'data-rev="{editor.builder.record_revision(self.records[key])}"', html)
             self.assertFalse(seen & set(entries))
             seen |= set(entries)

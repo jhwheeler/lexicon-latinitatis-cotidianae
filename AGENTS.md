@@ -127,6 +127,8 @@ Jack's requirement (15 November 2026): every record is a draft until he has read
 
 Jack's decision (13 November 2026): a line under Sources is a citation as a book prints one, not an account of how we read the book, and a work is cited once per record with all its pages. See "Sources are citations" in `docs/records.md`; the builder enforces it.
 
+The notes that hold for every entry are said once (Jack, 15 November 2026): what "Lewis & Short" after a quotation means, that a sentence marked "composed" is ours, which collections and digital texts the quotations were checked against, how each reference work is cited, how Graesse was read. They stand in the section "How to read the sources" of `src/how-we-decide.html`, and every entry with sources links to it. Never write such a sentence in a record's `sources`: the builder refuses it and says what the line should be. A new note of the kind goes into that section; a remark true of one record only goes into a comment, a mark on the example, or a sentence of its own. `python3 scripts/standing_notes.py --write` takes the sentences out of records that still carry them (a branch drafted before the rule, a converted batch); `notes/standing-notes-2026-11-15.md` lists what was taken out and what was left.
+
 ## Exported copies
 
 Library and downloaded HTML files are snapshots. They may be stale and are not automatically synchronized with this repository. Never make a requested lexicon change only in an exported copy, and never overwrite newer repository content with an older export.

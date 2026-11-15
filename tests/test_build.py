@@ -658,6 +658,29 @@ class BuildTests(unittest.TestCase):
         self.assertIn('url(assets/fonts/lexicon-serif-400.woff2)', hora)
         self.assertNotIn('claude:', hora)
         self.assertIn("navigator.serviceWorker.register('sw.js')", hora)
+        # Its colours are the lexicon's (Jack, 15 November 2026): the stylesheet's names and values,
+        # copied into the page, with lapis beside them; its theme is set as on every page, and the
+        # browser's bar takes the ground's colour. Nothing of its old palette is left.
+        styles = (self.root / 'src/styles.css').read_text(encoding='utf-8')
+        names = ('paper', 'ink', 'soft', 'muted', 'hair', 'rule', 'rubric', 'accent', 'mark', 'ground', 'card')
+
+        def palette(text, selector):
+            block = text[text.index(selector):]
+            return dict(re.findall(r'--([a-z-]+):(#[0-9a-f]{6})', block[:block.index('}')]))
+        for selector in (':root {', ':root[data-theme="dark"] {'):
+            with self.subTest(selector=selector):
+                ours, theirs = palette(hora, selector.replace(' {', '{')), palette(styles, selector)
+                self.assertEqual({name: ours.get(name) for name in names}, {name: theirs[name] for name in names})
+                self.assertEqual(set(ours) - set(names), {'lapis', 'lapis-soft'})
+        self.assertIn(builder.THEME_INIT, hora)
+        self.assertIn('<html lang="la" data-theme="light">', hora)
+        self.assertEqual(re.findall(r'<meta name="theme-color"[^>]*>', hora), ['<meta name="theme-color" content="#f2f0eb">'])
+        dark_ground = palette(styles, ':root[data-theme="dark"] {')['ground']
+        self.assertIn(f"content = '{dark_ground}'", hora)
+        self.assertNotIn('prefers-color-scheme', hora)
+        for name in ('--bg', '--surface', '--sunk', '--line', '--bronze', '--verdigris', '--good', '--bad', '--warn'):
+            self.assertNotIn(name + ':', hora)
+            self.assertNotIn(f'var({name})', hora)
 
     def test_sources_are_read_from_the_opening_of_a_citation(self):
         cases = {

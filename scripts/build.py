@@ -2545,7 +2545,7 @@ def build_site(root=ROOT):
         outputs[f'l/{info["slug"]}.html'] = render_word_page(head, info, site)
     outputs['practice.html'] = fill(root / 'src/practice.html', {
         'theme': THEME_INIT, 'app': app_head(''), 'header': site_header(''), 'footer': site_footer('')})
-    outputs['hora.html'] = fill(root / 'src/hora.html', {'app': app_head('')})
+    outputs['hora.html'] = fill(root / 'src/hora.html', {'theme': THEME_INIT, 'app': app_head('')})
     outputs['assets/practice.js'] = (root / 'src/practice.js').read_text(encoding='utf-8')
     outputs['assets/practice-data.js'] = practice_data(site)
     outputs['review.html'] = render_review_page(root, site)

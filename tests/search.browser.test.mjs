@@ -2472,8 +2472,8 @@ test('the clock game asks nothing of other sites, keeps its score, and leads bac
   await clock.locator('#closeMenu').click();
   assert.equal(await clock.locator('#cueLabel').textContent(), 'Quot ūnciae?');
   assert.equal(await clock.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
-  // A theme chosen in the lexicon holds here; without one the game follows the system.
-  assert.equal(await clock.locator('html').getAttribute('data-theme'), null);
+  // The theme is the lexicon's: light until dark is chosen there.
+  assert.equal(await clock.locator('html').getAttribute('data-theme'), 'light');
   await clock.evaluate(() => localStorage.setItem('lexicon-theme', 'dark'));
   await clock.reload();
   assert.equal(await clock.locator('html').getAttribute('data-theme'), 'dark');
@@ -2482,5 +2482,153 @@ test('the clock game asks nothing of other sites, keeps its score, and leads bac
   await clock.locator('.links a[href="practice.html"]').click();
   await clock.waitForURL(/practice\.html$/);
   assert.equal(await clock.locator('#p-start').isVisible(), true);
+  await context.close();
+});
+
+// The clock's colours are the lexicon's (Jack, 15 November 2026): the ground, the card, the ink and
+// the red of the practice round, with lapis for the twelfths and for a right answer. Its theme is
+// the lexicon's too, whatever the system prefers.
+test('the clock wears the lexicon’s colours in both themes and follows its theme, not the system’s', async () => {
+  const rgb = hex => `rgb(${[1, 3, 5].map(at => parseInt(hex.slice(at, at + 2), 16)).join(', ')})`;
+  const lexicon = {
+    light: { paper: '#ffffff', ink: '#141414', rubric: '#b0171f', accent: '#b0171f', ground: '#f2f0eb', card: '#ffffff', lapis: '#24457a', lapisSoft: '#e1e8f3' },
+    dark: { paper: '#1c1b19', ink: '#e4dfd6', rubric: '#d8d1c4', accent: '#d4968a', ground: '#141311', card: '#24221f', lapis: '#9db4d6', lapisSoft: '#2a3345' }
+  };
+  // What the game wore until then: its grounds and ink, bronze, verdigris, green and its own red.
+  const old = ['#e8ecea', '#f7f8f6', '#eef1ef', '#1c2422', '#5a6662', '#c8d0cc', '#94642a', '#fbf8f2', '#2d7767', '#d3e6e0', '#2c7546', '#a3392f',
+               '#131917', '#151c1a', '#e5eae7', '#99a7a2', '#33403c', '#d2a163', '#1c1710', '#6bc1ad', '#22413a', '#7bc693', '#e6897e'].map(rgb);
+  const twelfths = { 'ūncia': 1, 'sextāns': 2, 'quadrāns': 3, 'triēns': 4, 'quīncūnx': 5, 'sēmis': 6, 'septūnx': 7, 'bēs': 8, 'dōdrāns': 9, 'dēxtāns': 10, 'deūnx': 11 };
+  const hours = ['prīma', 'secunda', 'tertia', 'quārta', 'quīnta', 'sexta', 'septima', 'octāva', 'nōna', 'decima', 'ūndecima', 'duodecima'];
+  const parts = ['ūnciā', 'sextante', 'quadrante', 'triente', 'quīncūnce', 'sēmisse', 'septūnce', 'besse', 'dōdrante', 'dēxtante', 'deūnce'];
+  const style = (page, selector, property) => page.locator(selector).first().evaluate((node, name) => getComputedStyle(node)[name], property);
+  // Every colour that any element of the page computes to, the dial's fills and strokes included.
+  const colours = page => page.evaluate(() => {
+    const found = new Set();
+    const names = ['color', 'backgroundColor', 'borderTopColor', 'borderRightColor', 'borderBottomColor', 'borderLeftColor',
+                   'outlineColor', 'textDecorationColor', 'accentColor', 'caretColor', 'fill', 'stroke'];
+    for (const node of document.querySelectorAll('*')) {
+      for (const pseudo of [null, '::before', '::after', '::placeholder', '::backdrop']) {
+        const computed = getComputedStyle(node, pseudo);
+        for (const name of names) found.add(computed[name]);
+      }
+    }
+    return [...found];
+  });
+
+  for (const [theme, system] of [['light', 'dark'], ['dark', 'light']]) {
+    const want = lexicon[theme];
+    const context = await browser.newContext({ viewport: { width: 390, height: 760 }, serviceWorkers: 'block', colorScheme: system });
+    const page = await context.newPage();
+    await page.goto(pageUrl('index.html'));
+    await page.evaluate(chosen => {
+      if (chosen === 'dark') localStorage.setItem('lexicon-theme', 'dark');
+      localStorage.setItem('hcu-mode', '"w2n"');
+    }, theme);
+
+    // The practice round, for comparison.
+    await page.goto(pageUrl('practice.html'));
+    await page.locator('#p-start').click();
+    await page.locator('#g-show').click();
+    const round = {
+      ground: await style(page, '#p-game', 'backgroundColor'), ink: await style(page, '#p-game', 'color'),
+      card: await style(page, '.pgame-card', 'backgroundColor'), hair: await style(page, '.pgame-card', 'borderTopColor'),
+      fill: await style(page, '#g-got', 'backgroundColor'), onFill: await style(page, '#g-got', 'color'),
+      rubric: await style(page, '#g-again', 'color'), accent: await style(page, '#g-again', 'borderTopColor')
+    };
+    assert.equal(round.ground, rgb(want.ground), `${theme}: the round's ground is the stylesheet's`);
+
+    await page.goto(pageUrl('hora.html'));
+    await page.locator('#go').waitFor();
+    // The system prefers the other scheme, and the clock does not follow it.
+    assert.equal(await page.evaluate(() => matchMedia('(prefers-color-scheme: dark)').matches), system === 'dark');
+    assert.equal(await page.locator('html').getAttribute('data-theme'), theme);
+    assert.equal(await page.locator('meta[name="theme-color"]').count(), 1);
+    assert.equal(await page.locator('meta[name="theme-color"]').getAttribute('content'), want.ground);
+    assert.equal(await style(page, 'html', 'colorScheme'), theme);
+    // Ground, card, ink and lines as in the round; the main button filled with ink, as Teneō is.
+    assert.equal(await style(page, 'body', 'backgroundColor'), round.ground);
+    assert.equal(await style(page, '.top', 'backgroundColor'), round.ground);
+    assert.equal(await style(page, 'body', 'color'), round.ink);
+    assert.equal(await style(page, '.card', 'backgroundColor'), round.card);
+    assert.equal(await style(page, '.card', 'borderTopColor'), round.hair);
+    assert.equal(await style(page, '.ref', 'backgroundColor'), round.card);
+    assert.equal(await style(page, '#go', 'backgroundColor'), round.fill);
+    assert.equal(await style(page, '#go', 'color'), round.onFill);
+    assert.equal(await style(page, '#answer', 'backgroundColor'), rgb(want.paper));
+
+    // Five right answers: right is lapis, with a tick, and so is a run of five.
+    for (let turn = 0; turn < 5; turn += 1) {
+      await page.locator('#answer').fill(String(twelfths[await page.locator('#cue').textContent()]));
+      await page.locator('#go').click();
+      assert.equal(await style(page, '#fb .v', 'color'), rgb(want.lapis));
+      assert.equal(await page.locator('#fb .v.ok svg').count(), 1, 'a tick, not the colour alone');
+      assert.equal(await style(page, '#fb .v svg', 'color'), rgb(want.lapis));
+      if (turn < 4) await page.locator('#go').click();
+    }
+    assert.equal(await style(page, '#tRun.hot', 'color'), rgb(want.lapis));
+    // The twelfths are lapis: the sectors of the dial and the coin sign under it.
+    const fills = await page.locator('#dial .sec').evaluateAll(nodes => nodes.map(node => getComputedStyle(node).fill));
+    assert.equal(fills.length, 12);
+    assert.ok(fills.includes(rgb(want.lapis)));
+    assert.deepEqual([...new Set(fills)].filter(fill => fill !== rgb(want.lapis) && fill !== rgb(want.lapisSoft)), []);
+    assert.equal(await style(page, '#dialCap', 'color'), rgb(want.lapis));
+    const seen = new Set(await colours(page));
+
+    // A wrong answer is red as Iterum is: the word in the rubric's colour, the cross in the mark's.
+    await page.locator('#go').click();
+    await page.locator('#answer').fill('99');
+    await page.locator('#go').click();
+    assert.equal(await style(page, '#fb .v.no', 'color'), round.rubric);
+    assert.equal(await page.locator('#fb .v.no svg').count(), 1, 'a cross, not the colour alone');
+    assert.equal(await style(page, '#fb .v svg', 'color'), round.accent);
+    assert.equal(await page.locator('#tRun.hot').count(), 0);
+    (await colours(page)).forEach(colour => seen.add(colour));
+
+    // A clock question, with the hands and the mark at twelve; the long vowels left out is nearly right.
+    await page.evaluate(() => { localStorage.setItem('hcu-mode', '"t2w"'); localStorage.setItem('hcu-mkeys', 'true'); });
+    await page.reload();
+    await page.locator('#go').waitFor();
+    assert.equal(await page.locator('#dial .hand').count(), 4, 'two hands, each on a ground of its own');
+    assert.deepEqual(await page.locator('#dial .hand').evaluateAll(nodes => nodes.map(node => getComputedStyle(node).stroke)),
+      [rgb(want.paper), rgb(want.paper), round.ink, round.ink]);
+    assert.equal(await page.locator('#dial path:not(.sec)').last().evaluate(node => getComputedStyle(node).stroke), round.accent);
+    for (let turn = 0; ; turn += 1) {
+      assert.ok(turn < 40, 'a time whose Latin has a long vowel');
+      const [hour, minutes] = (await page.locator('#cue').textContent()).split(':').map(Number);
+      const latin = `${hours[hour - 1]} cum ${parts[minutes / 5 - 1]}`;
+      const bare = latin.normalize('NFD').replace(/\u0304/g, '').normalize('NFC');
+      await page.locator('#answer').fill(bare);
+      await page.locator('#go').click();
+      if (bare !== latin) break;
+      await page.locator('#go').click();
+    }
+    assert.equal(await style(page, '#fb .v.half', 'color'), round.rubric);
+    assert.equal(await style(page, '#fb .v svg', 'color'), round.accent);
+    // The table and the drawer: headings in the rubric's colour, the control in use underlined in the mark's.
+    await page.locator('#ref summary').click();
+    assert.equal(await style(page, '#ref th', 'color'), round.rubric);
+    assert.equal(await style(page, '#ref td.nota', 'color'), rgb(want.lapis));
+    await page.locator('#openMenu').click();
+    assert.equal(await style(page, '#menu', 'backgroundColor'), round.card);
+    assert.equal(await style(page, '#menu h2', 'color'), round.rubric);
+    assert.equal(await style(page, '.seg button[aria-pressed="true"]', 'textDecorationColor'), round.accent);
+    assert.equal(await style(page, '.opt input', 'accentColor'), round.accent);
+    (await colours(page)).forEach(colour => seen.add(colour));
+
+    // Nothing of the old palette is left: no bronze, no verdigris, no green.
+    assert.deepEqual(old.filter(colour => seen.has(colour)), [], `${theme}: the old colours`);
+    for (const colour of [want.ground, want.card, want.ink, want.accent, want.lapis, want.lapisSoft]) assert.ok(seen.has(rgb(colour)), `${theme}: ${colour}`);
+    await context.close();
+  }
+
+  // Where the system prefers dark and nothing was chosen in the lexicon, the clock is light.
+  const context = await browser.newContext({ viewport: { width: 390, height: 760 }, serviceWorkers: 'block', colorScheme: 'dark' });
+  const page = await context.newPage();
+  await page.goto(pageUrl('hora.html'));
+  await page.locator('#go').waitFor();
+  assert.equal(await page.locator('html').getAttribute('data-theme'), 'light');
+  assert.equal(await style(page, 'body', 'backgroundColor'), rgb(lexicon.light.ground));
+  assert.equal(await style(page, 'body', 'color'), rgb(lexicon.light.ink));
+  assert.equal(await page.locator('meta[name="theme-color"]').getAttribute('content'), lexicon.light.ground);
   await context.close();
 });

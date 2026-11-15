@@ -9,12 +9,12 @@ The site is static and has no server. A reader's flags are kept on the reader's 
 ## Who does what
 
 1. **Agents draft and pre-check.** A record goes in as a draft (`"review": {"status": "draft", …}`) and must pass the builder's checks, `scripts/check_quantities.py` (vowel lengths against Lewis & Short), `scripts/consonantal_j.py --check` and, for its answer, `scripts/answer_kinds.py`. Quotations are checked against their texts and citations against the place they name (see `docs/drafting.md` and `docs/records.md`). None of this makes a record reviewed.
-2. **The editor gives the verdict** in his private page: looks right, or a flag with a few words if he likes. The page writes his verdicts as a report.
+2. **The editor gives the verdict** in his private page: looks right, or a flag with a few words if he likes. The page saves each verdict in its own database, where an agent reads them.
 3. **A reader flags what looks wrong**, on the entry's page or on the back of a practice card: *Notā* (Flag), with a reason and a few words if he likes. `review.html` gathers the flags not yet sent into a report: Share, Copy or a GitHub issue.
 4. **An agent applies a report**, the editor's or a reader's, with `python3 scripts/apply_review.py <file or ->`, rebuilds the site, and commits. Records marked right become reviewed. Flags are written to `notes/review-flags.md`.
 5. **An agent acts on each flag**: reads the entry against its sources, corrects it or answers why it stands, and deletes the flag's line. A corrected record has a new revision, so it is a draft to be read again.
 
-Agents never set `review.status` to `reviewed` themselves. Only `scripts/apply_review.py` does, from the editor's report. A report that marks entries right is applied only when it comes from the editor: the site gives a reader no way to make one, but the format is plain text, so look at where a report came from before applying it (Claude's caution, 15 November 2026, not a ruling of Jack's).
+Agents never set `review.status` to `reviewed` themselves. Only `scripts/apply_review.py` does, from the editor's verdicts. A verdict that marks an entry right counts only when it comes from the editor: from his page's database, or from a report he pastes himself. The site gives a reader no way to make one, but a report is plain text and anyone could write one, so a report from anywhere else (a GitHub issue, a reader's message) is applied with `--flags-only`, which writes its flags and leaves out every "looks right" (Jack, 15 November 2026: only he reviews; the option is Claude's way of keeping to that).
 
 ## What a review checks
 
@@ -39,7 +39,28 @@ It does not promise that the entry is beyond improvement, that every quotation w
 
 ## The editor's page
 
-Written by the coordinating session.
+The editor reviews in a page of his own, published privately as a claude.ai artifact titled *Recēnsiō · Lexicon Latīnitātis Cotīdiānae*. Only his account can open it; it is not part of the site and nothing on the site leads to it. Its source is `src/editor/` (`review.html`, `review.js`, `editor.css`) and `scripts/editor_review.py` builds it.
+
+- **What it shows.** The lobby has the counts (reviewed in the lexicon; marked right and not yet applied; flagged; left to read), *Incipe* (Start), a search by English or Latin, the categories with what is left in each, and the list of what he has flagged. An entry is drawn exactly as its page on the site draws it, from the same function of the builder, without links. Under it, at the foot of the screen: *Retrō* (the entry before), *Praeterī* (skip), *Notā* (flag: six reasons to tap and a line to write) and *Rēctē* (looks right). A verdict moves on to the next entry still to read; a verdict can be taken back (*Tolle*).
+- **Where the verdicts go.** Each is saved at once in the artifact's own database, as the document `verdicts/<record id>`: `{"id", "rev", "verdict": "ok" | "flag", "reasons", "note", "t", "date"}`, a verdict of a review report, with the revision of the text he read. The database's rules let only the artifact's owner read or write. A verdict that could not be saved is kept in the browser, said to be unsaved, and saved at the next chance. If the page is opened where it has no database, it keeps the verdicts in the browser and offers them as a report to copy.
+- **What it cannot do.** An artifact loads nothing from other sites, so the page carries the lexicon as it stood when it was built: the site's stylesheet and fonts, an index of every record with its revision, and one file of entries per category. It shows its date. After the records change it is built and published again. A verdict given on an older text is refused by `apply_review.py`, as ever, and the page shows such an entry as still to read.
+
+To build it and publish it (an agent does this, with the artifact tools of the session):
+
+```sh
+python3 scripts/editor_review.py          # writes .editor-review/ (not committed)
+```
+
+Publish every file of `.editor-review/` to the existing artifact (find it by its title; do not make a second one), keeping its declaration: the capabilities `db`, with the one rule `{"path": "", "read": "owner", "write": "owner"}`, and `user`.
+
+To apply his verdicts (when he asks, or before the records he has read are changed):
+
+1. Read every document of the collection `verdicts` from the artifact's database and save the lines to a file, one JSON object per line as the tool gives them.
+2. `python3 scripts/editor_review.py --report <file> | python3 scripts/apply_review.py -`, then `python3 scripts/build.py`. Read the summary and tell him what was not applied.
+3. Commit the records, `notes/review-flags.md` and the site.
+4. Build and publish the page again, then delete from the database the documents that were applied (an entry marked right is now reviewed in the page's own data; a flag is now in `notes/review-flags.md`). Not before: until the page is published again, those documents are what tells it the entries are done.
+
+The Latin of the page is the wording of the site's flag where that has a word; the rest is Claude's, listed in a comment at the top of `src/editor/review.js`, awaiting the editor's review. The page is tested in `tests/editor.browser.test.mjs` (with a stand-in for the database) and its data in `tests/test_editor_review.py`. It was first published on 15 November 2026 and had not then been tried by the editor on his phone.
 
 ## On the site: the flag
 
@@ -81,6 +102,7 @@ Marked right: bone, train
 
 ```sh
 python3 scripts/apply_review.py report.txt     # or: python3 scripts/apply_review.py - < pasted text
+python3 scripts/apply_review.py report.txt --flags-only    # a report that is not the editor's own
 python3 scripts/build.py
 ```
 

@@ -17,6 +17,7 @@ Site: https://jhwheeler.github.io/lexicon-latinitatis-cotidianae/
 - `src/search.js`: the search, on the front page and the category pages.
 - `src/practice.html`, `src/practice.js`: the vocabulary practice; `src/hora.html`: the clock game (see Practice below).
 - `src/review.html`, `src/review.js`: the flag on every entry and the page that gathers a reader's flags into a report; `scripts/apply_review.py` applies a review report to the records. The editor does not review on the site: he has a private page of his own, built by `scripts/editor_review.py` (see Review below and [docs/review.md](docs/review.md)).
+- `src/editor/`, `scripts/editor_review.py`: the editor's private review page, published as an artifact and not part of the site; the script builds it into `.editor-review/` (not committed) and turns its saved verdicts into a report.
 - `scripts/build.py`: validates the data and generates the site: the front page, a page per category, the English and Latin words from A to Z, a page per record and per Latin word, the rulings, the search data, the practice pages with their cards, and the redirects from the old single page.
 - `scripts/consonantal_j.py`: writes consonantal i as j in the Latin (the lexicon's orthography; see AGENTS.md) and checks that none is left.
 - `scripts/convert_cards.py`, `scripts/check_quantities.py`, `scripts/check_libelli.py`, `scripts/coverage.py`, `scripts/lookup.py`: converting cards, checking vowel lengths against Lewis & Short and quotations against the readers, measuring coverage of core word lists, and looking words up in the reference works (see AGENTS.md and `docs/`).
@@ -60,6 +61,8 @@ npm ci
 npx playwright install chromium
 npm test
 ```
+
+`npm test` runs two files: `tests/search.browser.test.mjs`, the site, and `tests/editor.browser.test.mjs`, the editor's private review page, which it builds into a temporary folder and serves with a stand-in for the artifact's database.
 
 The checks cover the front page and its contents, the category pages and the A–Z pages, the pyjama lookup, highlighting and Unicode normalization, inflected forms and close spellings, the search within a category and linkable searches, alias and source matches, literal input, the old single page's links, every page without scripts, the header's search and the `/` key, the footer's links, the theme and display options, the phone layout of every kind of page, and practice: a round in its layer, the back of a card, the step back, Latin and English, the deck's choices, the words looked up, a pasted list, export and import, the phone layout of the lobby and of the round, the clock game, and the review: flagging an entry, that the site offers the flag and none of the editor's controls, the report and Sent, a flag from a practice card, both languages. They serve the pages over HTTP with Python's `http.server`, as the published site is served. CI also runs them in Chromium. For an existing browser installation, set `LEXICON_CHROMIUM_EXECUTABLE`; `LEXICON_CHROMIUM_ARGS` optionally supplies a JSON array of launch arguments.
 
@@ -117,10 +120,10 @@ Both pages are saved by the service worker with the rest, so they work offline.
 
 Every record is a draft until the editor has read it (Jack, 15 November 2026). The whole process is in [docs/review.md](docs/review.md); in short:
 
-- **Only the editor reviews, and not on the site** (Jack, 15 November 2026). He reads the drafts and marks them right in a private page of his own, built by `scripts/editor_review.py`, which writes a report of his verdicts. The public site has none of his controls and never prints his name.
+- **Only the editor reviews, and not on the site** (Jack, 15 November 2026). He reads the drafts and marks them right in a private page of his own, built by `scripts/editor_review.py`, which saves his verdicts in its own database for an agent to apply. The public site has none of his controls and never prints his name.
 - **On every entry's page**, at its foot, the site offers the flag: *Notā* (Flag) opens a small box with six reasons to tap and a line to write. The back of a practice card has the same. A flag is kept on the device (`lexicon-review`) with the revision of the record it was given on.
 - **`review.html`** (linked from every footer): how many entries are reviewed and how many are drafts, and *Mitte*: one report of the reader's flags not yet sent, to share, copy or open as a GitHub issue.
-- **`scripts/apply_review.py`** reads a pasted report, the editor's or a reader's (one format): an entry marked right becomes reviewed if it has not changed since; a flag goes to `notes/review-flags.md` for an agent to act on, and sends a reviewed entry back to draft.
+- **`scripts/apply_review.py`** reads a report, the editor's or a reader's (one format; a reader's is applied with `--flags-only`, so that only the editor's verdict marks an entry reviewed): an entry marked right becomes reviewed if it has not changed since; a flag goes to `notes/review-flags.md` for an agent to act on, and sends a reviewed entry back to draft.
 - **The site** says "Reviewed 15 November 2026." or "Draft of …" at the foot of each entry, with no name, counts the reviewed entries on the front page and ticks them quietly in the lists.
 
 Agents never mark a record reviewed. The flag's interface is Latin unless English was chosen on the practice page.

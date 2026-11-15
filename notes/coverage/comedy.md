@@ -426,7 +426,7 @@ Already in the lexicon and so not entered again: *meretrīx, scortum, lupa* (`pr
 
 Left out:
 
-- The plain obscenities that Plautus and Terence do not use and that belong to Catullus, Martial and the graffiti: *paedīcō (pēdīcō), irrumō, fellō, verpa, landīca, pathicus*. Lewis & Short prints most of them, but they are not words of the comic stage, and a decision on them belongs with the records for the body and for sex, not with this sweep.
+- The plain obscenities that Plautus and Terence do not use and that belong to Catullus, Martial and the graffiti: *paedīcō (pēdīcō), irrumō, fellō, verpa, landīca, pathicus*. Lewis & Short prints most of them, but they are not words of the comic stage, and a decision on them belongs with the records for the body and for sex, not with this sweep. (Decided on 15 November 2026: they are entered; see `notes/fixes-2026-11-15.md`.)
 - Diminutives and derivatives that add no new English headword: *scortillum, meretrīcula, meretrīcius, lēnōnius, amātiō, amātrīx, dēamō, subigitātiō, subigitātrīx, stuprātor, adulterīnus* in its sexual sense.
 
 ## Looked at and left out

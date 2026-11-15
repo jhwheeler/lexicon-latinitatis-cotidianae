@@ -315,11 +315,49 @@ Two things have no ancient name that we found: the jay (*garrulus*, the zoologis
 
 Round three: the foxglove is *digitālis purpurea*, the botanists’ name, from Morgan–Owens s.v. flowers: foxglove (which cites Grosse 1846). The tulip is *tulipa* (Morgan–Owens s.v. flowers: tulip, from Noël) and the gooseberry *grossulāria* (Morgan–Owens s.v. berry: currant: gooseberry, from Linnaeus), both modern. The currant is *ribes*, medieval (Morgan–Owens s.v. berry: currant, with a fourteenth-century source in Latham and the OED, and Mattioli 1571 for the declension); the rhubarb is Isidore’s *rheubarbarum* (late), through Morgan–Owens s.v. rhubarb. Nothing in this round is marked as ours either.
 
+## The words left without an answer (15 November 2026)
+
+A short fourth pass over the list “From the walk, no entry yet”, after Jack’s remark that stump, anthill and petal are common words and each deserves an honest entry. Fifteen new records and changes to seven. Pliny was read in Mayhoff’s text in the Perseus Digital Library (the loci collections do not have these passages), and the records that quote it say so.
+
+| English | Latin | On what evidence |
+| --- | --- | --- |
+| stump | *stirps*; beside it *truncus*, *caudex (cōdex)*, *stīpes* | Lewis & Short: “the lower part of the trunk of plants, including the roots; a stock”; Verg. A. 12.208 *īmō dē stirpe recīsum*; Cato Agr. 161.3 and Liv. 21.36.1 from the loci. The other three name the trunk, a block or a log. |
+| petal | *folium*; *petalum* as the botanists’ word | Plin. NH 21.16–17 counts the *folia* of the rose and names the *centifolia*. *petalum* of a flower is of the seventeenth century (Morgan–Owens, from the OED). Lewis & Short’s article *folium* does not mention the use. |
+| anthill | *formīcārum cavernae* | Plin. NH 28.86 *ad cavernās formīcārum*; NH 11.111 has the ants *in cunīculōs*. No word for the heap itself was found. |
+| service tree | *sorbus*, *sorbum* | Lewis & Short; Plin. NH 16.74. |
+| burdock | *persōnāta*; *lappa* | Lewis & Short (“a kind of large burdock”); Plin. NH 25.104 describes it: the broadest of leaves, large burs. `bur` no longer answers “burdock”. |
+| nightshade | *sōlānum*; *strychnos* | Lewis & Short (Pliny, Celsus). |
+| plantain | *plantāgō* | Lewis & Short; Plin. NH 25.80. |
+| vetch | *vicia* | Lewis & Short (Cato, Varro, Vergil). |
+| tree frog | *calamītēs* | Plin. NH 32.122: the smallest and greenest frog, living among reeds and bushes. Lewis & Short says “the green frog”; that it is the tree frog rests on the description. |
+| plateau | *plānitiēs excelsa*; *oropedium* | Morgan–Owens (Humboldt; Egger). *plānitiēs* among mountains is in Sall. Cat. 59.2. |
+| roost | *stabulor* | Lewis & Short (“to stable, kennel, harbor, roost”); Varr. RR 3.3.7. |
+| pounce | *involō* | Lewis & Short (“to fly at, rush upon”). |
+| soar | *subvolō* | Lewis & Short (“to fly up or upwards”). |
+| swoop | *dēvolō* | Lewis & Short (“to fly down”). |
+| thin out | *interlūcō*; *disrārō* | Lewis & Short; Plin. NH 17.94, 17.214; Columella. |
+| dogwood | added to the “also” words of `cornelian-cherry-tree` (*cornus*) | Lewis & Short has only the cornelian cherry; the comment says dogwood is entered there as the nearest tree. Plin. NH 16.74 has *sanguineī fruticēs* among the hill trees, which may be the dogwood; no reference work here says so. |
+| midge | added to `gnat` (*culex*) | Lewis & Short: “a gnat, midge”. |
+| polecat | *fēlēs* added to `ferret` | Lewis & Short: in Varro and Columella “a marten, ferret, polecat”. |
+| foothill | added to `foot-of-a-mountain` (*rādīx montis*) | already answered there. |
+| hollow (in the ground) | *lacūna* added to `hollow` | Lewis & Short: “a ditch, pit, hole”. |
+| prickle | *acūleus* added to `thorn` | Lewis & Short: “of plants, a spine or prickle” (Pliny). |
+
+Not answered, and why:
+
+- **aspen, primrose, cowslip, snowdrop, bluebell, bumblebee, wildcat.** Lewis & Short, Traupman and Morgan–Owens have no word, and the botanical or zoological name could not be given with a source: none of the reference works here has it, and the usual sites were closed to this session. The names to check are *Populus tremula*, *Primula vulgaris*, *Primula veris*, *Galanthus nivalis*, *Hyacinthoides non-scripta*, *Bombus*, *Felis silvestris*. Pliny’s third poplar, *quae Libyca appellatur, minima foliō ac nigerrima* (NH 16.85), is sometimes taken for the aspen; nothing here confirms it.
+- **forget-me-not.** Lewis & Short has *myosōta, myosōtis*, “mouse-ear, a plant” (Plin. NH 27.105). That the botanists gave this name to the forget-me-nots is not in any reference work here, so it was not entered.
+- **rowan.** It stays under *ornus* in `manna-ash`; *sorbus* is now in as the service tree, and no ancient name for the rowan itself was found.
+- **stag beetle.** Plin. NH 11.97 describes it (a large beetle with long forked horns) and gives Nigidius’s name for it; Mayhoff prints *lucavos*, other editions *lucanos*, whence the zoologists’ *Lucanus*. Lewis & Short has neither form, so the quantities are unknown and the word was not entered.
+- **scree, heath as a place.** No word found. Lewis & Short has *erīcē* only for the plant.
+- **burrow, peck, prowl.** No clear verb: *cunīculus* is the burrow (and Pliny has ants *in cunīculōs*), *vellicō* is to pluck or nip (*cornīx vulturiōs vellicat*, Plaut.), *grassor* is to go about; none is glossed with the English word.
+- **mulch, secateurs.** Nothing in the three reference works; `sickle` (*falx*) still answers “secateurs” and “pruning knife”.
+
 ## Left for a later round
 
 After round three.
 
-**From the walk, no entry yet.** Trees and plants: aspen, rowan, dogwood, burdock as a plant of its own, primrose, snowdrop, bluebell, cowslip, forget-me-not, nightshade, plantain, vetch, toadstools by kind. Parts: prickle, stump, petal. Animals: a polecat distinct from the ferret, wildcat, tree frog, stag beetle, bumblebee, midge; anthill. Land: scree, plateau, foothill, heath as a place, hollow. Garden: mulch, secateurs as a tool of their own, to thin out, medlar, marigold; a greenhouse as a building. For most of these Lewis & Short, Traupman and Morgan–Owens gave no clean answer, or only a botanist’s binomial for a plant few people name.
+**From the walk, still no entry.** Trees and plants: aspen, rowan as a tree of its own (it stands under *ornus*, which Lewis & Short calls the mountain ash), primrose, snowdrop, bluebell, cowslip, forget-me-not, toadstools by kind. Animals: wildcat, stag beetle, bumblebee, a polecat distinct from the ferret. Land: scree, heath as a place. Garden: mulch, secateurs as a tool of their own, medlar, marigold; a greenhouse as a building. Verbs: burrow, peck, prowl. The reasons are in the section “The words left without an answer” above.
 
 **From the authors, read and not entered (57).** With the number of times the outdoor works have each: marmor (28), lympha (22), favilla (17), armus (17), lotos (10), colubra (10), suboles (9), bipennis (9), rastri (8), casia (8), verbena (7), thyrsus (7), temo (7), fluentum (7), cytisus (7), oleaster (6), ocinum (6), myrice (6), ervum (6), petra (5), mergus (5), aesculus (5), veratrum (4), stiva (3), tribulus (2), tinus (2), palear (2), nubecula (2), hibiscum (2), baccar (2), vulturius (1), vulpecula (1), thymbra (1), spelaeum (1), sisymbrium (1), siler (1), scilla (1), scatebra (1), scapus (1), saliunca (1), parra (1), paliurus (1), oscen (1), onager (1), oestrus (1), merops (1), melisphyllum (1), gelicidium (1), filicula (1), dentale (1), cupressetum (1), cerintha (1), caprificus (1), attagen (1), aesculetum (1), acalanthis (1), abrotonum (1). Most are the poets’ plants and birds, parts of the plough, or words of the verse only.
 

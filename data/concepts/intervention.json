@@ -10,7 +10,11 @@
     "get involved",
     "veto (verb)",
     "interpose a veto",
-    "meddle"
+    "meddle",
+    "come between",
+    "drop in",
+    "turn up",
+    "interrupt"
   ],
   "domain": "verba",
   "terms": [
@@ -47,6 +51,16 @@
         "Traupman 334"
       ],
       "comment": "To put oneself into a matter, for good or ill; <span lang=\"la\">mē nihil interpōnō</span> is “I’m staying out of it”."
+    },
+    {
+      "latin": "interveniō, intervenīre, intervēnī, interventum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "come between, come in during, come upon, break in on; intervene",
+      "evidence": [
+        "Caes. BG 6.37: <span lang=\"la\">cāsū Germānī equitēs interveniunt</span> (Lewis &amp; Short)",
+        "Ter. And. 4.3.17: <span lang=\"la\">spōnsae pater intervenit</span> (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -54,6 +68,16 @@
       "latin": "Rixantur frātrēs; nōlō mē interpōnere.",
       "english": "The brothers are squabbling; I don’t want to get involved.",
       "source": "composed"
+    },
+    {
+      "latin": "saepe audīvī inter ōs atque offam multa intervenīre posse",
+      "english": "I have often heard that much can come between the mouth and the morsel",
+      "source": "Gell. 13.18.1"
+    },
+    {
+      "latin": "interveniunt amīcī ex proximīs oppidīs, partemque diēī ad sē trahunt",
+      "english": "friends drop in from the nearest towns and take part of the day for themselves",
+      "source": "Plin. Ep. 9.36.5"
     }
   ],
   "related": [
@@ -64,11 +88,12 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/intercedo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: intercedo</a> · <a href=\"https://logeion.uchicago.edu/interpono\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: interpono</a> · <a href=\"https://logeion.uchicago.edu/interventus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: interventus</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 181, 334."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 181, 334.",
+    "<a href=\"https://logeion.uchicago.edu/intervenio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: intervenio</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

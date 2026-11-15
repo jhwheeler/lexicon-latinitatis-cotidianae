@@ -5,7 +5,10 @@
   "also": [
     "serve a summons on",
     "summon to court",
-    "impeach"
+    "impeach",
+    "summon",
+    "cite",
+    "call (to court)"
   ],
   "domain": "res-publica",
   "audience": "adult",
@@ -39,6 +42,23 @@
         "Cic. Quinct. 61: <span lang=\"la\">in jūs vocās: sequitur</span> (Lewis &amp; Short s.v. <span lang=\"la\">vocō</span>)"
       ],
       "comment": "The plaintiff’s summons in private law: the defendant had to follow him before the magistrate (see court)."
+    },
+    {
+      "latin": "citō, citāre, citāvī, citātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "set in quick motion, rouse; call, summon (the senate, the judges, a party to a suit)",
+      "evidence": [
+        "Liv. 1.47.8: <span lang=\"la\">patrēs in cūriam per praecōnem ad rēgem Tarquinium citārī jussit</span> (Lewis &amp; Short)",
+        "Cic. Verr. 2.1.19: <span lang=\"la\">jūdicēs citātī in hunc reum cōnsēdistis</span> (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "patrēs in cūriam per praecōnem ad rēgem Tarquinium citārī jussit",
+      "english": "he ordered the senators to be summoned by a herald to the senate-house, to King Tarquin",
+      "source": "Liv. 1.47.8 (Lewis &amp; Short)"
     }
   ],
   "related": [
@@ -47,11 +67,12 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/dies\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dies</a> · <a href=\"https://logeion.uchicago.edu/voco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: voco</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 196."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 196.",
+    "<a href=\"https://logeion.uchicago.edu/cito\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cito</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

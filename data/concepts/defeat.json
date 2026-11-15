@@ -10,7 +10,8 @@
     "be defeated",
     "conquer",
     "lose a battle",
-    "suffer a defeat"
+    "suffer a defeat",
+    "subdue"
   ],
   "domain": "res-publica",
   "terms": [
@@ -59,6 +60,16 @@
         "Lewis &amp; Short: “a refusal, denial, repulse in soliciting for an office”",
         "Traupman 302"
       ]
+    },
+    {
+      "latin": "dēvincō, dēvincere, dēvīcī, dēvictum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "conquer completely, overcome, subdue",
+      "evidence": [
+        "Cic. Agr. 2.90 (Lewis &amp; Short)",
+        "Caes. BC 3.87 (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -91,6 +102,11 @@
       "latin": "clādem accipere",
       "english": "to suffer a defeat (in battle)",
       "source": "Traupman 302"
+    },
+    {
+      "latin": "Capua dēvicta atque capta est",
+      "english": "Capua was conquered and taken",
+      "source": "Cic. Agr. 2.90"
     }
   ],
   "related": [
@@ -103,11 +119,12 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/repulsa\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: repulsa</a>",
     "<a href=\"https://logeion.uchicago.edu/clades\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: clades</a> · <a href=\"https://logeion.uchicago.edu/vinco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vinco</a> · <a href=\"https://logeion.uchicago.edu/supero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: supero</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 186, 295, 302."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 186, 295, 302.",
+    "<a href=\"https://logeion.uchicago.edu/devinco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: devinco</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

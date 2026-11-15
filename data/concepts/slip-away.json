@@ -5,7 +5,8 @@
   "also": [
     "sneak out",
     "slip out",
-    "sneak off"
+    "sneak off",
+    "glide away"
   ],
   "domain": "sermo",
   "terms": [
@@ -27,20 +28,18 @@
         "Liv. 45.42: <span lang=\"la\">nāvēs rēgiae in campō Mārtiō subductae sunt</span> (Lewis &amp; Short)",
         "Cic. Tusc. 2.40: <span lang=\"la\">subdūc cibum ūnum diem āthlētae</span> (Lewis &amp; Short)"
       ]
+    },
+    {
+      "latin": "ēlābor, ēlābī, ēlāpsus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "slip or glide away, slip out, escape",
+      "evidence": [
+        "Plaut. Ps. 2.4.57: <span lang=\"la\">anguilla est, ēlābitur</span> (Lewis &amp; Short)",
+        "Caes. BC 2.11.1: <span lang=\"la\">quicquid incidit, fastīgiō mūsculī ēlābitur</span> (Lewis &amp; Short)"
+      ]
     }
   ],
-  "related": [
-    "on-tiptoe",
-    "creep-out"
-  ],
-  "sources": [
-    "<a href=\"https://logeion.uchicago.edu/subduco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: subduco</a>"
-  ],
-  "review": {
-    "status": "draft",
-    "date": "2026-11-09",
-    "by": "Claude"
-  },
   "phrases": [
     {
       "latin": "clanculum abīre",
@@ -51,6 +50,29 @@
       "latin": "subdūc cibum ūnum diem āthlētae",
       "english": "take an athlete’s food away for a single day",
       "source": "Cic. Tusc. 2.40 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "magna pars vītae ēlābitur male agentibus, maxima nihil agentibus, tōta vīta aliud agentibus",
+      "english": "a great part of life slips away from those who do badly, the greatest part from those who do nothing, the whole of it from those who do something else",
+      "source": "Sen. Ep. 1.1"
+    },
+    {
+      "latin": "anguilla est, ēlābitur",
+      "english": "he’s an eel, he slips away",
+      "source": "Plaut. Ps. 2.4.57 (Lewis &amp; Short)"
     }
-  ]
+  ],
+  "related": [
+    "on-tiptoe",
+    "creep-out"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/subduco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: subduco</a>",
+    "<a href=\"https://logeion.uchicago.edu/elabor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: elabor</a>"
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-15",
+    "by": "Claude"
+  }
 }

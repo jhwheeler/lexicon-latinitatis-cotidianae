@@ -10,7 +10,9 @@
     "feel pity for",
     "show sympathy for",
     "I feel sorry for",
-    "sympathy"
+    "sympathy",
+    "lament",
+    "bewail"
   ],
   "domain": "verba",
   "terms": [
@@ -69,23 +71,18 @@
         "Traupman 158"
       ],
       "comment": "Lewis &amp; Short: classical but rare."
+    },
+    {
+      "latin": "miseror, miserārī, miserātus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "lament, bewail; feel pity for, pity (+ accusative)",
+      "evidence": [
+        "Verg. A. 6.332: <span lang=\"la\">sortemque animō miserātus inīquam</span> (Lewis &amp; Short)",
+        "Cic. Mur. 55 (Lewis &amp; Short)"
+      ]
     }
   ],
-  "related": [
-    "poor-pitiable"
-  ],
-  "sources": [
-    "<a href=\"https://logeion.uchicago.edu/commiseror\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: commiseror</a>",
-    "<a href=\"https://logeion.uchicago.edu/commiseresco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: commiseresco</a>",
-    "<a href=\"https://logeion.uchicago.edu/misericordia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: misericordia</a>",
-    "<a href=\"https://logeion.uchicago.edu/misereo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: misereo</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 105."
-  ],
-  "review": {
-    "status": "draft",
-    "date": "2026-11-12",
-    "by": "Claude"
-  },
   "phrases": [
     {
       "latin": "Mē miseret aliōrum.",
@@ -96,6 +93,27 @@
       "latin": "commiserēscere alicujus",
       "english": "to feel pity for someone",
       "source": "Traupman 360"
+    },
+    {
+      "latin": "sortemque animō miserātus inīquam",
+      "english": "and pitying in his heart their unfair lot",
+      "source": "Verg. A. 6.332 (Lewis &amp; Short)"
     }
-  ]
+  ],
+  "related": [
+    "poor-pitiable"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/commiseror\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: commiseror</a>",
+    "<a href=\"https://logeion.uchicago.edu/commiseresco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: commiseresco</a>",
+    "<a href=\"https://logeion.uchicago.edu/misericordia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: misericordia</a>",
+    "<a href=\"https://logeion.uchicago.edu/misereo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: misereo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 105.",
+    "<a href=\"https://logeion.uchicago.edu/miseror\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: miseror</a>"
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-15",
+    "by": "Claude"
+  }
 }

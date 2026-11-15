@@ -4,7 +4,9 @@
   "pos": "verb",
   "also": [
     "pursue",
-    "hound (someone)"
+    "hound (someone)",
+    "run after",
+    "follow about"
   ],
   "domain": "ludi",
   "terms": [
@@ -21,6 +23,15 @@
       "evidence": [
         "Traupman 330"
       ]
+    },
+    {
+      "latin": "sector, sectārī, sectātus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "follow continually or eagerly, run after, attend; chase, pursue",
+      "evidence": [
+        "Plaut. Pers. 2.1.5: <span lang=\"la\">equidem tē jam sector quīntum hunc annum</span> (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -28,6 +39,11 @@
       "latin": "Tē persequor!",
       "english": "I’m chasing you!",
       "source": "composed"
+    },
+    {
+      "latin": "equidem tē jam sector quīntum hunc annum",
+      "english": "why, I have been running after you for five years now",
+      "source": "Plaut. Pers. 2.1.5 (Lewis &amp; Short)"
     }
   ],
   "related": [
@@ -38,11 +54,12 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/consector\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: consector</a>",
     "<a href=\"https://www.alatius.com/ls/index.php?l=persequor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: persequor</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 330."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 330.",
+    "<a href=\"https://logeion.uchicago.edu/sector\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sector</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

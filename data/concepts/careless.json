@@ -7,7 +7,11 @@
     "carelessness",
     "negligence",
     "indifferent",
-    "slack"
+    "slack",
+    "unwary",
+    "off guard",
+    "heedless",
+    "incautious"
   ],
   "domain": "verba",
   "terms": [
@@ -62,6 +66,16 @@
         "Cic. Brut. 239: <span lang=\"la\">sōcors nātūrā neglegēnsque</span> (Lewis &amp; Short)"
       ],
       "comment": "Its noun is <span lang=\"la\">sōcordia</span>: <span lang=\"la\">nimia nōs sōcordia hodiē tenuit</span> (Plaut. Poen. 317)."
+    },
+    {
+      "latin": "incautus, incauta, incautum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "incautious, heedless, off one’s guard",
+      "evidence": [
+        "Caes. BG 6.30.2 (Lewis &amp; Short)",
+        "Cic. Phil. 11.5 (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -69,6 +83,11 @@
       "latin": "sī era mea mē sciat tam sōcordem esse quam sum",
       "english": "if my mistress knew that I am as careless as I am",
       "source": "Plaut. Cist. 674"
+    },
+    {
+      "latin": "ut in ipsum incautum etiam atque imparātum incideret",
+      "english": "so that he came upon the man himself off his guard and unprepared too",
+      "source": "Caes. BG 6.30.2"
     }
   ],
   "related": [
@@ -80,11 +99,12 @@
     "<a href=\"https://logeion.uchicago.edu/neglegentia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: neglegentia</a>",
     "<a href=\"https://logeion.uchicago.edu/incuria\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: incuria</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>.",
-    "Plautus, <em>Cistellaria</em> 674."
+    "Plautus, <em>Cistellaria</em> 674.",
+    "<a href=\"https://logeion.uchicago.edu/incautus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: incautus</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

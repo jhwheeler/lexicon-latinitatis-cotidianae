@@ -2,10 +2,14 @@
   "id": "bend-verb",
   "english": "bend",
   "pos": "verb",
+  "also": [
+    "curve",
+    "bow"
+  ],
+  "domain": "sermo",
   "also_under": [
     "verba"
   ],
-  "domain": "sermo",
   "terms": [
     {
       "latin": "flectō, flectere",
@@ -14,6 +18,23 @@
       "evidence": [
         "Traupman 202"
       ]
+    },
+    {
+      "latin": "curvō, curvāre, curvāvī, curvātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "crook, bend, bow, curve",
+      "evidence": [
+        "Ov. Met. 2.479: <span lang=\"la\">curvārī manūs et aduncōs crēscere in unguēs</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Not found before the Augustan age (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "flectitur obsequiō curvātus ab arbore rāmus",
+      "english": "a branch bent down from the tree gives way if you humour it",
+      "source": "Ov. Ars 2.179"
     }
   ],
   "related": [
@@ -21,11 +42,12 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/flecto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: flecto</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>.",
+    "<a href=\"https://logeion.uchicago.edu/curvo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: curvo</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

@@ -5,7 +5,9 @@
   "also": [
     "shameful",
     "dishonourable",
-    "dishonorable"
+    "dishonorable",
+    "shamefully",
+    "basely"
   ],
   "domain": "verba",
   "terms": [
@@ -34,6 +36,24 @@
         "Quint. 7.1.8 (Lewis &amp; Short: not frequent until after Augustus)",
         "Traupman 305"
       ]
+    },
+    {
+      "latin": "turpiter",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "basely, shamefully, dishonourably",
+      "grammar": "adverb",
+      "evidence": [
+        "Cic. Att. 9.7.1: <span lang=\"la\">ūnum illud extimēscēbam, nē quid turpiter facerem</span> (Lewis &amp; Short)",
+        "Caes. BG 7.20 (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ūnum illud extimēscēbam, nē quid turpiter facerem",
+      "english": "the one thing I was afraid of was doing something dishonourable",
+      "source": "Cic. Att. 9.7.1 (Lewis &amp; Short)"
     }
   ],
   "related": [
@@ -47,7 +67,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

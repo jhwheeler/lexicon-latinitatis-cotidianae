@@ -7,7 +7,9 @@
     "fight against",
     "fight for",
     "do battle",
-    "combat"
+    "combat",
+    "clash",
+    "contend"
   ],
   "domain": "res-publica",
   "terms": [
@@ -31,6 +33,16 @@
         "Caes. BC 1.20.4: <span lang=\"la\">manum cōnserere atque armīs dīmicāre</span> (Lewis &amp; Short)",
         "Caes. BG 3.24.2 (Lewis &amp; Short)"
       ]
+    },
+    {
+      "latin": "cōnflīgō, cōnflīgere, cōnflīxī, cōnflīctum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "strike together; clash, fight, contend (cum, contrā, inter sē)",
+      "evidence": [
+        "Cic. Off. 1.81: <span lang=\"la\">manū cum hoste cōnflīgere</span> (Lewis &amp; Short)",
+        "Cic. Imp. Pomp. 28 (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -48,6 +60,11 @@
       "latin": "cornibus inter sē dīmicant",
       "english": "they fight one another with their horns",
       "source": "Plin. NH 9.95"
+    },
+    {
+      "latin": "manū cum hoste cōnflīgere",
+      "english": "to fight the enemy hand to hand",
+      "source": "Cic. Off. 1.81 (Lewis &amp; Short)"
     }
   ],
   "related": [
@@ -58,11 +75,12 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/pugno\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pugno</a>",
-    "<a href=\"https://logeion.uchicago.edu/dimico\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dimico</a>"
+    "<a href=\"https://logeion.uchicago.edu/dimico\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dimico</a>",
+    "<a href=\"https://logeion.uchicago.edu/confligo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: confligo</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-13",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

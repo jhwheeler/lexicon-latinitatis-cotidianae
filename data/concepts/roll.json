@@ -5,12 +5,14 @@
   "also": [
     "tumble",
     "roll around",
-    "wallow"
+    "wallow",
+    "roll back",
+    "unroll"
   ],
+  "domain": "sermo",
   "also_under": [
     "verba"
   ],
-  "domain": "sermo",
   "terms": [
     {
       "latin": "volūtō, volūtāre",
@@ -31,6 +33,16 @@
         "Cic. Fat. 42: <span lang=\"la\">cylindrum volvī et versārī turbinem putant</span> (Lewis &amp; Short)",
         "Cic. Brut. 298: <span lang=\"la\">volvendī sunt librī</span> (Lewis &amp; Short)"
       ]
+    },
+    {
+      "latin": "revolvō, revolvere, revolvī, revolūtum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "roll back; unroll, unwind; go back over, turn over again",
+      "evidence": [
+        "Col. 8.17.1: <span lang=\"la\">gelidum ab īmō flūctum revolvit in partem superiōrem</span> (Lewis &amp; Short)",
+        "Tac. Ann. 6.33 (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -48,6 +60,11 @@
       "latin": "cylindrum volvī et versārī turbinem putant",
       "english": "they think that a cylinder rolls and a top spins",
       "source": "Cic. Fat. 42 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "gelidum ab īmō flūctum revolvit in partem superiōrem",
+      "english": "it rolls the cold water up from the bottom to the top",
+      "source": "Col. 8.17.1 (Lewis &amp; Short)"
     }
   ],
   "related": [
@@ -56,11 +73,12 @@
   ],
   "sources": [
     "<a href=\"https://alatius.com/ls/index.php?l=voluto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: voluto, including reflexive se</a>",
-    "<a href=\"https://logeion.uchicago.edu/volvo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: volvo</a>"
+    "<a href=\"https://logeion.uchicago.edu/volvo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: volvo</a>",
+    "<a href=\"https://logeion.uchicago.edu/revolvo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: revolvo</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

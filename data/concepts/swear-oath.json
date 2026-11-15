@@ -10,7 +10,9 @@
     "on oath",
     "under oath",
     "sworn",
-    "swear to"
+    "swear to",
+    "oath of allegiance",
+    "military oath"
   ],
   "domain": "verba",
   "terms": [
@@ -47,6 +49,26 @@
         "Ter. Eun. 2.3.39 (Lewis &amp; Short)"
       ],
       "comment": "Morgan–Owens, after Vives, gives it for swearing in the sense of bad language; classically it is only taking an oath (Lewis &amp; Short). For swearing at someone, see abuse."
+    },
+    {
+      "latin": "sacrāmentum, sacrāmentī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the soldier’s oath of allegiance; in law, the sum that the parties to a suit deposited",
+      "evidence": [
+        "Caes. BC 1.23: <span lang=\"la\">mīlitēs Domitiānōs sacrāmentum apud sē dīcere jubet</span> (Lewis &amp; Short)",
+        "Caes. BG 6.1 (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "jūrātus, jūrāta, jūrātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "having sworn, under oath, sworn",
+      "evidence": [
+        "Plaut. Amph. 437: <span lang=\"la\">mihi quam jūrātō tibi</span> (Lewis &amp; Short)",
+        "Cic. Sull. 34"
+      ]
     }
   ],
   "phrases": [
@@ -54,6 +76,16 @@
       "latin": "altāribus admōtum tāctīs sacrīs jūre jūrandō adāctum sē cum prīmum posset hostem fore populō Rōmānō",
       "english": "brought to the altar, his hand on the offerings, he was made to swear that as soon as he could he would be an enemy of Rome",
       "source": "Liv. 21.1.4"
+    },
+    {
+      "latin": "mīlitēs Domitiānōs sacrāmentum apud sē dīcere jubet",
+      "english": "he orders Domitius’s soldiers to take the oath of allegiance to himself",
+      "source": "Caes. BC 1.23 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "quae jūrātus in maximā contiōne dīxissem",
+      "english": "which I had said on oath before a very great assembly",
+      "source": "Cic. Sull. 34"
     }
   ],
   "related": [
@@ -63,11 +95,12 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/juro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: juro</a> · <a href=\"https://logeion.uchicago.edu/jusjurandum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: jusjurandum</a> · <a href=\"https://logeion.uchicago.edu/dejero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dejero</a>",
-    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. swear."
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. swear.",
+    "<a href=\"https://logeion.uchicago.edu/sacramentum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sacramentum</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

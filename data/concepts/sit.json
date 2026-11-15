@@ -8,12 +8,16 @@
     "take a seat",
     "be seated",
     "take your seats",
-    "back to your seats"
+    "back to your seats",
+    "settle",
+    "subside",
+    "remain sitting",
+    "stay behind"
   ],
+  "domain": "verba",
   "also_under": [
     "corpus"
   ],
-  "domain": "verba",
   "terms": [
     {
       "latin": "sedeō, sedēre, sēdī, sessum",
@@ -48,6 +52,26 @@
         "Plaut. Stich. 90b: <span lang=\"la\">īlicō agite assīdite</span>",
         "Cic. Ac. 1.14: <span lang=\"la\">adsīdāmus, sī vidētur</span> (Lewis &amp; Short)"
       ]
+    },
+    {
+      "latin": "resīdō, resīdere, resēdī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "sit down, settle; sink down, subside, abate",
+      "evidence": [
+        "Cic. Fin. 3.9: <span lang=\"la\">resīdāmus, sī placet</span> (Lewis &amp; Short)",
+        "Verg. A. 8.467 (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "resideō, residēre, resēdī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "sit back, remain sitting; stay behind, remain, linger",
+      "evidence": [
+        "Cic. Cat. 1.12: <span lang=\"la\">sī tē interficī jusserō, residēbit in rē pūblicā reliqua conjūrātōrum manus</span> (Lewis &amp; Short)",
+        "Ov. F. 3.749: <span lang=\"la\">piger pandī tergō residēbat asellī</span> (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -75,6 +99,16 @@
       "latin": "Salvē, mī pater. — Et vōs ambae. Īlicō agite assīdite.",
       "english": "Hello, father. — And hello to you both. Come, sit down at once.",
       "source": "Plaut. Stich. 90–90b"
+    },
+    {
+      "latin": "resīdāmus, sī placet",
+      "english": "let us sit down, if you like",
+      "source": "Cic. Fin. 3.9 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "piger pandī tergō residēbat asellī",
+      "english": "lazily he sat on the back of a sway-backed donkey",
+      "source": "Ov. F. 3.749 (Lewis &amp; Short)"
     }
   ],
   "related": [
@@ -89,11 +123,13 @@
     "<a href=\"https://logeion.uchicago.edu/sedeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sedeo</a> · <a href=\"https://logeion.uchicago.edu/consido\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: consido</a> · <a href=\"https://logeion.uchicago.edu/assido\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: assido</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 34.",
     "<a href=\"https://logeion.uchicago.edu/subsellium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: subsellium</a>",
-    "Plautus, <em>Stichus</em> 90–90b."
+    "Plautus, <em>Stichus</em> 90–90b.",
+    "<a href=\"https://logeion.uchicago.edu/resido\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: resido</a>",
+    "<a href=\"https://logeion.uchicago.edu/resideo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: resideo</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

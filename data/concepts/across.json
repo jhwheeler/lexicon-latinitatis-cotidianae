@@ -9,7 +9,8 @@
   "also": [
     "over (a river, a wall)",
     "on the other side of",
-    "cross"
+    "cross",
+    "step over"
   ],
   "domain": "verba",
   "terms": [
@@ -37,6 +38,16 @@
         "Plin. NH 8.11: <span lang=\"la\">amnem trānsitūrī</span>"
       ],
       "comment": "Latin often puts “across” in the verb and the thing crossed in the accusative: <span lang=\"la\">flūmen trānsīre</span>, cross the river; <span lang=\"la\">trādūcere</span>, take across; <span lang=\"la\">trānāre</span>, swim across."
+    },
+    {
+      "latin": "trānsgredior, trānsgredī, trānsgressus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "step across, step over, climb over, cross",
+      "evidence": [
+        "Caes. BG 2.19 (Lewis &amp; Short)",
+        "Cic. Div. 1.33 (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -59,6 +70,11 @@
       "latin": "amnem trānsitūrī minimōs praemittunt",
       "english": "when they are about to cross a river, they send the smallest ahead",
       "source": "Plin. NH 8.11"
+    },
+    {
+      "latin": "equitēs nostrī cum funditōribus sagittāriīsque flūmen trānsgressī cum hostium equitātū proelium commīsērunt",
+      "english": "our cavalry, with the slingers and archers, crossed the river and joined battle with the enemy’s horse",
+      "source": "Caes. BG 2.19.4"
     }
   ],
   "related": [
@@ -69,11 +85,12 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/trans\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: trans</a> · <a href=\"https://logeion.uchicago.edu/transeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: transeo</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 268."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 268.",
+    "<a href=\"https://logeion.uchicago.edu/transgredior\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: transgredior</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

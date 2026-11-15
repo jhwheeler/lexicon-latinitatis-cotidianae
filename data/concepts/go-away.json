@@ -15,7 +15,9 @@
     "clear out of here!",
     "get out of here!",
     "scram!",
-    "take off (go away)"
+    "take off (go away)",
+    "part",
+    "depart"
   ],
   "domain": "verba",
   "also_under": [
@@ -73,6 +75,16 @@
         "Traupman 389"
       ],
       "comment": "Traupman’s colloquial word; not found in Lewis &amp; Short or the loci collections, so its quantities are Traupman’s."
+    },
+    {
+      "latin": "dīgredior, dīgredī, dīgressus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "go apart, part; go away, depart",
+      "evidence": [
+        "Cic. ND 2.103: <span lang=\"la\">lūna tum congrediēns cum sōle, tum dīgrediēns</span> (Lewis &amp; Short)",
+        "Sall. Jug. 22.5: <span lang=\"la\">ita utrīque dīgrediuntur</span> (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -95,6 +107,11 @@
       "latin": "Hinc apage!",
       "english": "Clear out of here!",
       "source": "Traupman 95"
+    },
+    {
+      "latin": "ita utrīque dīgrediuntur",
+      "english": "so the two sides part",
+      "source": "Sall. Jug. 22.5 (Lewis &amp; Short)"
     }
   ],
   "related": [
@@ -109,11 +126,12 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/abeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: abeo</a> · <a href=\"https://logeion.uchicago.edu/discedo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: discedo</a> · <a href=\"https://logeion.uchicago.edu/apage\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: apage</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 95, 292, 338."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 95, 292, 338.",
+    "<a href=\"https://logeion.uchicago.edu/digredior\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: digredior</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

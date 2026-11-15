@@ -11,7 +11,8 @@
     "excite interest",
     "excitement",
     "stir up (feelings)",
-    "feel excitement"
+    "feel excitement",
+    "call together"
   ],
   "domain": "verba",
   "terms": [
@@ -82,6 +83,17 @@
         "Lewis &amp; Short",
         "Traupman 273"
       ]
+    },
+    {
+      "latin": "concieō (conciō), conciēre, concīvī, concitum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "rouse and bring together, assemble; stir up, rouse",
+      "evidence": [
+        "Liv. 1.59.3: <span lang=\"la\">hominēs mīrāculō reī novae</span> (Lewis &amp; Short)",
+        "Liv. 4.55.3: <span lang=\"la\">nunc concienda plēbs</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Not in Cicero; frequent in Lucretius, Livy and Tacitus (Lewis &amp; Short)."
     }
   ],
   "phrases": [
@@ -99,6 +111,11 @@
       "latin": "mē miserum, quī nōn adfuerim! quōs ego rīsūs excitāssem!",
       "english": "too bad I wasn’t there! what laughs I’d have raised!",
       "source": "Cic. Fam. 3.11.3"
+    },
+    {
+      "latin": "nunc concienda plēbs",
+      "english": "now the commons must be roused",
+      "source": "Liv. 4.55.3 (Lewis &amp; Short)"
     }
   ],
   "related": [
@@ -110,11 +127,12 @@
     "<a href=\"https://logeion.uchicago.edu/suscito\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: suscito</a>",
     "<a href=\"https://logeion.uchicago.edu/exagito\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: exagito</a>",
     "<a href=\"https://logeion.uchicago.edu/excito\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: excito</a> · <a href=\"https://logeion.uchicago.edu/concito\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: concito</a> · <a href=\"https://logeion.uchicago.edu/incendo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: incendo</a> · <a href=\"https://logeion.uchicago.edu/commotio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: commotio</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 152, 288, 311."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 152, 288, 311.",
+    "<a href=\"https://logeion.uchicago.edu/concieo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: concieo</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

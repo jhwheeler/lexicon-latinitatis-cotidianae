@@ -9,7 +9,12 @@
     "tear down",
     "tear to pieces",
     "tear up",
-    "tear along"
+    "tear along",
+    "pull out",
+    "tear off",
+    "pluck away",
+    "tear away",
+    "wrench away"
   ],
   "domain": "vestitus",
   "terms": [
@@ -86,27 +91,28 @@
         "Cic. Verr. 2.4.94: <span lang=\"la\">convellere repāgula, effringere valvās</span> (Lewis &amp; Short)",
         "Cic. Dom. 54 (Lewis &amp; Short)"
       ]
+    },
+    {
+      "latin": "revellō, revellere, revellī, revulsum (revolsum)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "pluck or pull away, tear out, tear off",
+      "evidence": [
+        "Cic. Pis. 25 (Lewis &amp; Short)",
+        "Verg. G. 4.523 (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "āvellō, āvellere, āvellī (āvulsī), āvulsum (āvolsum)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "tear off or away, pull off, wrench away",
+      "evidence": [
+        "Verg. A. 2.558 (Lewis &amp; Short)",
+        "Lucr. 6.241: <span lang=\"la\">āvellere tigna trabēsque</span> (Lewis &amp; Short)"
+      ]
     }
   ],
-  "related": [
-    "mend"
-  ],
-  "sources": [
-    "<a href=\"https://logeion.org/scindo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: scindo</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 391.",
-    "<a href=\"https://logeion.uchicago.edu/lanio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lanio</a>",
-    "<a href=\"https://logeion.uchicago.edu/dilacero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dilacero</a>",
-    "<a href=\"https://logeion.uchicago.edu/discindo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: discindo</a>",
-    "<a href=\"https://logeion.uchicago.edu/diruo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: diruo</a>",
-    "<a href=\"https://logeion.uchicago.edu/voro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: voro</a>",
-    "<a href=\"https://logeion.uchicago.edu/lacero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lacero</a>",
-    "<a href=\"https://logeion.uchicago.edu/convello\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: convello</a>"
-  ],
-  "review": {
-    "status": "draft",
-    "date": "2026-11-09",
-    "by": "Claude"
-  },
   "phrases": [
     {
       "latin": "viam vorāre",
@@ -122,6 +128,37 @@
       "latin": "convellere repāgula, effringere valvās",
       "english": "to wrench out the bars and break open the doors",
       "source": "Cic. Verr. 2.4.94 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "ego stirpem ingentem, vestīgiō pedis ejus haerentem, revellī",
+      "english": "I pulled out a huge splinter that was stuck in the sole of his foot",
+      "source": "Gell. 5.14.22"
+    },
+    {
+      "latin": "āvolsumque umerīs caput et sine nōmine corpus",
+      "english": "a head torn from its shoulders and a body without a name",
+      "source": "Verg. A. 2.558"
     }
-  ]
+  ],
+  "related": [
+    "mend"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.org/scindo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: scindo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 391.",
+    "<a href=\"https://logeion.uchicago.edu/lanio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lanio</a>",
+    "<a href=\"https://logeion.uchicago.edu/dilacero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dilacero</a>",
+    "<a href=\"https://logeion.uchicago.edu/discindo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: discindo</a>",
+    "<a href=\"https://logeion.uchicago.edu/diruo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: diruo</a>",
+    "<a href=\"https://logeion.uchicago.edu/voro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: voro</a>",
+    "<a href=\"https://logeion.uchicago.edu/lacero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lacero</a>",
+    "<a href=\"https://logeion.uchicago.edu/convello\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: convello</a>",
+    "<a href=\"https://logeion.uchicago.edu/revello\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: revello</a>",
+    "<a href=\"https://logeion.uchicago.edu/avello\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: avello</a>"
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-15",
+    "by": "Claude"
+  }
 }

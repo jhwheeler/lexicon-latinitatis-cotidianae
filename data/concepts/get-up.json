@@ -11,7 +11,8 @@
     "classroom commands",
     "get up (of several people)",
     "stand up together",
-    "stand up (all together)"
+    "stand up (all together)",
+    "rise up"
   ],
   "domain": "sermo",
   "terms": [
@@ -50,6 +51,16 @@
         "Cic. Pis. 12: <span lang=\"la\">an quisquam in cūriam venientī adsurrēxit?</span> (Lewis &amp; Short)",
         "Traupman 34: stand up (as a mark of respect), <span lang=\"la\">assurge (assurgite)</span>"
       ]
+    },
+    {
+      "latin": "exsurgō (exurgō), exsurgere, exsurrēxī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "rise up, get up, stand up",
+      "evidence": [
+        "Plaut. Bacch. 758: <span lang=\"la\">nē quōquam exsurgātis</span> (Lewis &amp; Short)",
+        "Liv. 27.41.7: <span lang=\"la\">ex īnsidiīs</span> (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -67,6 +78,11 @@
       "latin": "surge et ambulā",
       "english": "get up and walk: Dad, lifting the sleeping boy out of bed (Mt 9, 5, in jest)",
       "source": "Libellus I, <span lang=\"la\">Iter in Lūsitāniam</span>"
+    },
+    {
+      "latin": "Quaesō edepol, exsurge; pater advenit.",
+      "english": "Please, for heaven’s sake, get up; father is coming.",
+      "source": "Plaut. Most. 376"
     }
   ],
   "related": [
@@ -78,14 +94,15 @@
     "<a href=\"https://logeion.uchicago.edu/consurgo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: consurgo</a>",
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
     "<a href=\"https://logeion.uchicago.edu/assurgo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: assurgo</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 35, 38, 57, 62, 321."
-  ],
-  "replaces": [
-    "entry-55"
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 35, 38, 57, 62, 321.",
+    "<a href=\"https://logeion.uchicago.edu/exsurgo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: exsurgo</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-15",
     "by": "Claude"
-  }
+  },
+  "replaces": [
+    "entry-55"
+  ]
 }

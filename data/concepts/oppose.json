@@ -11,7 +11,9 @@
     "stand in the way",
     "resistance",
     "put up resistance",
-    "offer resistance"
+    "offer resistance",
+    "withstand",
+    "halt"
   ],
   "domain": "verba",
   "terms": [
@@ -60,6 +62,18 @@
         "Cic. Balb. 26: <span lang=\"la\">oppōnere sē perīculīs prō rē pūblicā</span> (Lewis &amp; Short)",
         "Caes. BC 3.30 (Lewis &amp; Short)"
       ]
+    },
+    {
+      "latin": "resistō, resistere, restitī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "stand still, halt, pause; stand against, withstand, resist (+ dative)",
+      "evidence": [
+        "de Vaan 567, s.v. <span lang=\"la\">sistō</span>: “to pause, offer resistance”, from Plautus on",
+        "Andresian p. 62",
+        "Caes. BG 2.26.2"
+      ],
+      "comment": "Lewis &amp; Short’s own article on this word is missing from the text of the dictionary that we read; it names the word as a synonym under <span lang=\"la\">adversor</span>, <span lang=\"la\">repugnō</span> and <span lang=\"la\">renītor</span>. The principal parts are Andresian’s, the sense de Vaan’s, and the examples are read in Caesar and Ovid."
     }
   ],
   "phrases": [
@@ -82,6 +96,16 @@
       "latin": "quōcircā vīvite fortēs fortiaque adversīs oppōnite pectora rēbus",
       "english": "so live as brave men, and set brave hearts against misfortune",
       "source": "Hor. S. 2.2.135–136"
+    },
+    {
+      "latin": "audācius resistere ac fortius pugnāre coepērunt",
+      "english": "they began to resist more boldly and to fight more bravely",
+      "source": "Caes. BG 2.26.2"
+    },
+    {
+      "latin": "et tuus incipiēns īre resistat equus",
+      "english": "and let your horse stop just as it starts to go",
+      "source": "Ov. Rem. 82"
     }
   ],
   "related": [
@@ -94,11 +118,13 @@
     "<a href=\"https://logeion.uchicago.edu/adversor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: adversor</a> · <a href=\"https://logeion.uchicago.edu/repugno\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: repugno</a> · <a href=\"https://logeion.uchicago.edu/obsisto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: obsisto</a>",
     "Ter. Hec. 270–271, 654 and Cic. Fam. 1.2.2.",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 353.",
-    "<a href=\"https://logeion.uchicago.edu/oppono\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: oppono</a>"
+    "<a href=\"https://logeion.uchicago.edu/oppono\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: oppono</a>",
+    "Michiel de Vaan, <em>Etymological Dictionary of Latin and the other Italic Languages</em> (2008), p. 567.",
+    "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 62."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

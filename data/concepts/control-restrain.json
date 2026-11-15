@@ -15,7 +15,8 @@
     "repress",
     "repression",
     "clamp down on",
-    "curb"
+    "curb",
+    "check"
   ],
   "domain": "verba",
   "terms": [
@@ -105,6 +106,16 @@
       "evidence": [
         "Caes. BG 7.8: <span lang=\"la\">repressō jam Lucteriō et remōtō</span> (Lewis &amp; Short)"
       ]
+    },
+    {
+      "latin": "inhibeō, inhibēre, inhibuī, inhibitum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "hold back, restrain, check; of rowers, back water",
+      "evidence": [
+        "Liv. 1.48.6 (Lewis &amp; Short)",
+        "Verg. A. 12.693 (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -127,6 +138,11 @@
       "latin": "repressō jam Lucteriō et remōtō",
       "english": "now that Lucterius had been checked and forced back",
       "source": "Caes. BG 7.8 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "parce, puer, stimulīs et fortius ūtere lōrīs: sponte suā properant; labor est inhibēre volentēs",
+      "english": "spare the whip, boy, and use the reins more firmly: they hurry of their own accord; the work is to hold them back when they are eager",
+      "source": "Ov. Met. 2.127–128"
     }
   ],
   "related": [
@@ -140,11 +156,12 @@
     "<a href=\"https://logeion.uchicago.edu/compesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: compesco</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 150, 291, 296.",
     "<a href=\"https://logeion.uchicago.edu/contineo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: contineo</a>",
-    "<a href=\"https://logeion.uchicago.edu/reprimo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: reprimo</a>"
+    "<a href=\"https://logeion.uchicago.edu/reprimo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: reprimo</a>",
+    "<a href=\"https://logeion.uchicago.edu/inhibeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: inhibeo</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

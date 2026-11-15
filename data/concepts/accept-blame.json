@@ -3,7 +3,10 @@
   "english": "accept blame",
   "pos": "verb",
   "also": [
-    "acknowledge blame"
+    "acknowledge blame",
+    "charge to",
+    "put down to",
+    "impute"
   ],
   "domain": "labor",
   "terms": [
@@ -18,6 +21,23 @@
       "status": "alternative",
       "period": "classical",
       "gloss": "attribute something to oneself"
+    },
+    {
+      "latin": "imputō, imputāre, imputāvī, imputātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "enter in the account, reckon, charge; put down to someone as a merit or a fault",
+      "evidence": [
+        "Col. 1.7: <span lang=\"la\">vīlicī servī longē plūs imputant sēminis jactī quam quod sēverint</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Not found before the Augustan age (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "gaudent mūneribus, sed nec data imputant nec acceptīs obligantur",
+      "english": "they delight in gifts, but they neither count what they have given as a claim nor feel bound by what they receive",
+      "source": "Tac. Germ. 21.3"
     }
   ],
   "related": [
@@ -29,7 +49,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

@@ -10,7 +10,10 @@
     "jealous",
     "jealousy",
     "envious",
-    "be jealous of"
+    "be jealous of",
+    "invidious",
+    "envied",
+    "odious"
   ],
   "domain": "sermo",
   "terms": [
@@ -56,6 +59,16 @@
         "Traupman 310",
         "Traupman 335"
       ]
+    },
+    {
+      "latin": "invidiōsus, invidiōsa, invidiōsum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "arousing envy or hatred, envied, hated, odious; also envious",
+      "evidence": [
+        "Cic. Att. 8.3.6: <span lang=\"la\">triumphum accipere, invidiōsum ad bonōs</span> (Lewis &amp; Short)",
+        "Ov. Met. 15.234 (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -68,6 +81,11 @@
       "latin": "nōn equidem invideō; mīror magis",
       "english": "I don’t envy you; rather, I wonder",
       "source": "Verg. Ecl. 1.11"
+    },
+    {
+      "latin": "tempus edāx rērum, tūque, invidiōsa vetustās, omnia dēstruitis",
+      "english": "time, devourer of things, and you, envious old age, you destroy everything",
+      "source": "Ov. Met. 15.234–235"
     }
   ],
   "related": [
@@ -78,11 +96,12 @@
     "<a href=\"https://logeion.uchicago.edu/invideo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: invideo</a> · <a href=\"https://logeion.uchicago.edu/invidia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: invidia</a>",
     "<a href=\"https://logeion.uchicago.edu/invidia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: invidia</a>",
     "<a href=\"https://logeion.uchicago.edu/invidus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: invidus</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 22, 310, 335."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 22, 310, 335.",
+    "<a href=\"https://logeion.uchicago.edu/invidiosus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: invidiosus</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

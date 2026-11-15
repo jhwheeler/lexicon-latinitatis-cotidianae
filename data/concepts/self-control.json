@@ -2,6 +2,14 @@
   "id": "self-control",
   "english": "self-control",
   "pos": "noun",
+  "also": [
+    "self-controlled",
+    "self-restraint",
+    "restraint",
+    "temperance",
+    "moderation",
+    "sobriety"
+  ],
   "domain": "verba",
   "terms": [
     {
@@ -37,6 +45,22 @@
         "Traupman 376"
       ],
       "comment": "In Livy minds estranged by discord are made <span lang=\"la\">compotēs suī</span> again, brought back to their senses: it is being master of oneself, not the virtue of restraint (see sane)."
+    },
+    {
+      "latin": "temperantia, temperantiae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "moderateness, moderation, sobriety, temperance, as a moral quality",
+      "evidence": [
+        "Cic. Inv. 2.164: <span lang=\"la\">temperantia est ratiōnis in libīdinem atque in aliōs nōn rēctōs impetūs animī firma et moderāta dominātiō</span> (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "temperantia est ratiōnis in libīdinem atque in aliōs nōn rēctōs impetūs animī firma et moderāta dominātiō",
+      "english": "temperance is reason’s firm and measured rule over desire and the other wrong impulses of the mind",
+      "source": "Cic. Inv. 2.164 (Lewis &amp; Short)"
     }
   ],
   "related": [
@@ -47,16 +71,12 @@
     "<a href=\"https://logeion.uchicago.edu/continentia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: continentia</a>",
     "<a href=\"https://logeion.uchicago.edu/abstinentia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: abstinentia</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>.",
-    "<a href=\"https://logeion.uchicago.edu/compos\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: compos</a>"
+    "<a href=\"https://logeion.uchicago.edu/compos\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: compos</a>",
+    "<a href=\"https://logeion.uchicago.edu/temperantia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: temperantia</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-15",
     "by": "Claude"
-  },
-  "also": [
-    "self-controlled",
-    "self-restraint",
-    "restraint"
-  ]
+  }
 }

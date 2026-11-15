@@ -7,7 +7,9 @@
     "snapped",
     "snap in two",
     "snap off",
-    "give way (of a branch, a rope)"
+    "give way (of a branch, a rope)",
+    "break off",
+    "weaken"
   ],
   "domain": "verba",
   "terms": [
@@ -40,6 +42,16 @@
       "period": "classical",
       "gloss": "break, burst; of a rope or a string, snap",
       "comment": "For what breaks by being pulled or swelling: a string, a rope, a bag (see burst)."
+    },
+    {
+      "latin": "īnfringō, īnfringere, īnfrēgī, īnfrāctum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "break off, break, bruise; weaken, impair",
+      "evidence": [
+        "Liv. 40.40.7: <span lang=\"la\">īnfrāctīs omnibus hastīs</span> (Lewis &amp; Short)",
+        "Ov. Met. 10.191 (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -52,6 +64,11 @@
       "latin": "Cavē: rāmus frangētur!",
       "english": "Careful: the branch will snap!",
       "source": "composed"
+    },
+    {
+      "latin": "īnfrāctīs omnibus hastīs",
+      "english": "with all their spears broken",
+      "source": "Liv. 40.40.7 (Lewis &amp; Short)"
     }
   ],
   "related": [
@@ -61,11 +78,12 @@
     "flexible"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/frango\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: frango</a> · <a href=\"https://logeion.uchicago.edu/dissilio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dissilio</a> · <a href=\"https://logeion.uchicago.edu/rumpo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: rumpo</a>"
+    "<a href=\"https://logeion.uchicago.edu/frango\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: frango</a> · <a href=\"https://logeion.uchicago.edu/dissilio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dissilio</a> · <a href=\"https://logeion.uchicago.edu/rumpo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: rumpo</a>",
+    "<a href=\"https://logeion.uchicago.edu/infringo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: infringo</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

@@ -5,7 +5,8 @@
   "also": [
     "legions",
     "regiment",
-    "regimental commander"
+    "regimental commander",
+    "legionary"
   ],
   "domain": "res-publica",
   "audience": "adult",
@@ -19,6 +20,16 @@
         "Lewis &amp; Short s.v. <span lang=\"la\">legiō</span>",
         "Traupman 187"
       ]
+    },
+    {
+      "latin": "legiōnārius, legiōnāria, legiōnārium",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "of or belonging to a legion, legionary",
+      "evidence": [
+        "Caes. BG 1.42 (Lewis &amp; Short)",
+        "Caes. BC 1.73 (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -26,6 +37,11 @@
       "latin": "legiōnis lēgātus",
       "english": "the commander of a legion (a regimental commander)",
       "source": "Traupman 187"
+    },
+    {
+      "latin": "legiōnāriōs mīlitēs legiōnis decimae",
+      "english": "legionary soldiers of the tenth legion",
+      "source": "Caes. BG 1.42.5"
     }
   ],
   "related": [
@@ -34,11 +50,12 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/legio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: legio</a> · <a href=\"https://logeion.uchicago.edu/legatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: legatus</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 187."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 187.",
+    "<a href=\"https://logeion.uchicago.edu/legionarius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: legionarius</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

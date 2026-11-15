@@ -2,6 +2,10 @@
   "id": "field",
   "english": "field",
   "pos": "noun",
+  "also": [
+    "ploughed field",
+    "arable land"
+  ],
   "domain": "natura",
   "terms": [
     {
@@ -22,6 +26,23 @@
         "Traupman 166, 204",
         "Traupman 314"
       ]
+    },
+    {
+      "latin": "arvum, arvī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "ploughed land, an arable field; in the poets, fields, the countryside",
+      "evidence": [
+        "Cic. ND 1.122: <span lang=\"la\">prāta et arva et pecudum gregēs dīliguntur</span> (Lewis &amp; Short)",
+        "Sall. Jug. 90.1: <span lang=\"la\">pābulō pecoris magis quam arvō student</span> (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nōs patriae fīnēs et dulcia linquimus arva",
+      "english": "we are leaving our country’s bounds and our sweet fields",
+      "source": "Verg. E. 1.3"
     }
   ],
   "related": [
@@ -30,11 +51,12 @@
   ],
   "sources": [
     "<a href=\"https://logeion.org/ager\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ager</a> · <a href=\"https://logeion.org/campus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: campus</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 166, 204, 314."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 166, 204, 314.",
+    "<a href=\"https://logeion.uchicago.edu/arvus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: arvus</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

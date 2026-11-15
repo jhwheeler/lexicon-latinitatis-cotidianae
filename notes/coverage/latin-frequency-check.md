@@ -10,4 +10,4 @@ What the check cannot see:
 
 - Two words spelt alike and declined alike (*ōs*, a mouth, and *os*, a bone) are told apart only where the lexicon heads two terms; the section "To check by hand" lists the cases. The corpus's genders proved unreliable and are not used.
 - The corpus files participles used as adjectives (*parātus, doctus*) and adverbs (*fortiter, acriter*) as lemmas of their own, as Lewis & Short often does not; they are counted here as words the lexicon should have.
-- *resistō* (rank 886) is missing from the lexicon and also from the Perseus text of Lewis & Short that `scripts/lookup.py` reads, which has no article between *resistentia* and *resolūbilis*; it waits for another copy of the dictionary.
+- *resistō* (rank 886) has no article in the Perseus text of Lewis & Short that `scripts/lookup.py` reads (nothing stands between *resistentia* and *resolūbilis*). It was entered on 15 November 2026 from de Vaan and Andresian (`frequency-batches.md`, batch 3) and still waits to be checked against another copy of the dictionary.

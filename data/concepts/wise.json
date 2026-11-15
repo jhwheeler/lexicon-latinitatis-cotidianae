@@ -8,7 +8,8 @@
     "a wise man",
     "sage",
     "unwise",
-    "sensible"
+    "sensible",
+    "sensibly"
   ],
   "domain": "verba",
   "terms": [
@@ -35,6 +36,17 @@
         "Traupman 376"
       ],
       "comment": "From <span lang=\"la\">prōvidēns</span>: wise in practical matters, far-sighted, and also “skilled in” (with the genitive). Unwise is <span lang=\"la\">imprūdēns</span>, which also means “without meaning to”."
+    },
+    {
+      "latin": "sapienter",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "wisely, sensibly",
+      "grammar": "adverb",
+      "evidence": [
+        "Cic. Fam. 2.7.1: <span lang=\"la\">nēmō est, quī tibi sapientius suādēre possit tē ipsō</span> (Lewis &amp; Short)",
+        "Nep. Epam. 3.1 (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -52,6 +64,16 @@
       "latin": "Ex vitiō alius sapiēns ēmendat suum.",
       "english": "The wise man mends his own fault from another’s.",
       "source": "Publil. Syr. E 4"
+    },
+    {
+      "latin": "sed tū sapientius optā",
+      "english": "but you, wish more wisely",
+      "source": "Ov. Met. 2.102"
+    },
+    {
+      "latin": "nēmō est, quī tibi sapientius suādēre possit tē ipsō",
+      "english": "there is no one who can advise you more wisely than you yourself",
+      "source": "Cic. Fam. 2.7.1 (Lewis &amp; Short)"
     }
   ],
   "related": [
@@ -61,11 +83,12 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/sapiens\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sapiens</a> · <a href=\"https://logeion.uchicago.edu/sapientia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sapientia</a> · <a href=\"https://logeion.uchicago.edu/prudens\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: prudens</a>",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. wise man, sage.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 133."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 133.",
+    "<a href=\"https://logeion.uchicago.edu/sapio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sapio</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

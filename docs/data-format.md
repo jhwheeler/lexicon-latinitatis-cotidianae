@@ -84,10 +84,9 @@ Unknown fields, unsupported block types, duplicate entry IDs or HTML anchors, un
 1. Fetch current `main` and read `AGENTS.md`.
 2. Edit the relevant topic JSON. Add a catalog category and filter only when necessary.
 3. Keep attested words, later technical uses and our working formations clearly distinguished; preserve citations and macrons. Write consonantal i as j (`python3 scripts/consonantal_j.py --list`, then `--write`; rules in `AGENTS.md`).
-4. Run `python3 scripts/build.py`.
-5. Run `python3 scripts/build.py --check` and `python3 -m unittest discover -s tests -v`.
-6. Open the affected pages in a browser (the category page, the entry's page) and check the search.
-7. Commit both sources and generated output. Open a PR; merging still publishes through the existing Pages configuration.
+4. Run `python3 scripts/build.py` and `python3 -m unittest discover -s tests -v`.
+5. Open the affected pages in a browser (the category page, the entry's page) and check the search.
+6. Commit the sources only; the site is not kept in the repository (since 15 November 2026). Open a PR; on `main` the workflow `.github/workflows/pages.yml` builds the site and publishes it.
 
 ## Converting a hand-edited page
 
@@ -101,7 +100,7 @@ Against main commit `da9364bcb61a476709c96f44249bd1147c7039c5`:
 - All 13 categories and 14 filter buttons retain their order and labels.
 - CSS and search JavaScript are unchanged byte-for-byte.
 - 231 search queries (including every original English heading), all 14 filters, Clear, Escape and the empty state match the original page in a DOM harness executing the actual search script.
-- All 12 builder tests pass, and `--check` confirms the committed output matches its sources.
+- All 12 builder tests pass, and `--check` confirmed the committed output matched its sources (the output was committed until 15 November 2026).
 - A real-browser layout check could not be run: the Chromium download returned an invalid archive. CSS is byte-identical, but DOM checks do not substitute for visual QA.
 - No vocabulary corrections or additions are bundled with this structural migration.
 

@@ -16,6 +16,12 @@ review.html (what is reviewed, and a reader's flags), sitemap.xml, and in assets
 the page, search, practice and review scripts, the search data, the practice cards (practice-data.js), the redirects
 from the old single page (legacy.js) and the fonts. See docs/data-format.md and
 docs/records.md.
+
+    python3 scripts/build.py              # validate the data and write the site beside the sources
+    python3 scripts/build.py --out _site  # write the site alone into a folder (the published build)
+
+The site is not kept in the repository: git ignores what a local build writes, and the workflow
+.github/workflows/pages.yml builds and publishes it on every push to main.
 """
 import unicodedata
 import argparse
@@ -2608,7 +2614,6 @@ def stale(root, outputs):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument('--check', action='store_true', help='Fail if any generated file needs rebuilding')
     parser.add_argument('--out', type=Path, metavar='DIR',
                         help='Write the site into this folder, and nothing else: what the deployment publishes')
     args = parser.parse_args()
@@ -2625,13 +2630,6 @@ def main():
                 else:
                     (args.out / path).write_text(text, encoding='utf-8')
             print(f'Wrote the site, {len(outputs)} files, to {args.out}.')
-        elif args.check:
-            changed = [p for p, text in outputs.items() if not (ROOT / p).exists() or (
-                (ROOT / p).read_bytes() != text if isinstance(text, bytes) else (ROOT / p).read_text(encoding='utf-8') != text)]
-            leftover = stale(ROOT, outputs)
-            require(not changed and not leftover,
-                    f'Generated files are stale ({", ".join(changed + leftover)}); run python3 scripts/build.py and commit the result')
-            print(f'Generated files are up to date ({len(outputs)} files).')
         else:
             for path in stale(ROOT, outputs):
                 (ROOT / path).unlink()

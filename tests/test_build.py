@@ -125,15 +125,15 @@ class BuildTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'Duplicate HTML ID: twice'):
             builder.Scanned('<p id="twice"></p><p id="twice"></p>')
 
-    def test_committed_output_matches_sources(self):
-        self.assertEqual(builder.build(), (ROOT / 'index.html').read_text(encoding='utf-8'))
-        for path, text in builder.build_site().items():
-            with self.subTest(path=path):
-                if isinstance(text, bytes):
-                    self.assertEqual(text, (ROOT / path).read_bytes())
-                else:
-                    self.assertEqual(text, (ROOT / path).read_text(encoding='utf-8'))
-        self.assertEqual(builder.stale(ROOT, builder.build_site()), [])
+    def test_the_generated_site_is_not_kept_in_the_repository(self):
+        """The site is built when it is published (.github/workflows/pages.yml), and what a local
+        build writes beside the sources is ignored by git (Jack, 15 November 2026): every file the
+        builder writes is under a name that .gitignore lists."""
+        ignored = {line.strip() for line in (ROOT / '.gitignore').read_text(encoding='utf-8').splitlines()}
+        for path in builder.build_site():
+            top = path.split('/')[0]
+            self.assertIn(f'/{top}/' if '/' in path else f'/{top}', ignored, path)
+        self.assertEqual(builder.stale(self.root, builder.build_site(self.root)), [])
 
     def test_deterministic_build(self):
         self.assertEqual(builder.build(self.root), builder.build(self.root))

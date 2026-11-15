@@ -359,6 +359,12 @@ span.kind, p.kind:not(:has(a)) { display:block; padding:10px 0; }
 .notes-list li { margin:0 0 12px; color:var(--soft); }
 .notes-list .n { margin-right:.35em; color:var(--accent); font:700 .95em var(--sans); }
 .see { margin:22px 0 0; color:var(--soft); font-style:italic; }
+/* The words of the same root (the builder's word families): a line like "See also", told from it by
+   its label. The label is italic as "See also" is; the Latin stands upright, as headwords do. Under
+   an answer it comes after the margin's notes on a phone. */
+.family { margin-top:14px; font-style:normal; }
+.family .fam-label { font-style:italic; }
+.has-side > .family { order:3; }
 .c-sources { margin-top:34px; padding-top:8px; border-top:1px solid var(--hair); color:var(--muted); font-size:.95rem; }
 .c-sources p { margin:.4em 0; }
 .c-sources .sc { margin-right:.4em; color:var(--ink); font-variant-caps:small-caps; letter-spacing:.04em; }

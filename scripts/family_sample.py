@@ -3,7 +3,7 @@
 word's derivation, so that every pair can be checked by reading.
 
     python3 scripts/family_sample.py --seed 2 --count 100                # a sample, to read
-    python3 scripts/family_sample.py --seed 2 --count 100 --exclude notes/coverage/families-sample-1.txt
+    python3 scripts/family_sample.py --seed 2 --count 100 --exclude notes/families-sample-1.txt
     python3 scripts/family_sample.py --list                              # every family, one per line
     python3 scripts/family_sample.py --ambiguous                         # the words left out as ambiguous
     python3 scripts/family_sample.py --word petaurista                   # one word's family and how it was joined

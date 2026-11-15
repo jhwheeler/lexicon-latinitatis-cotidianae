@@ -845,6 +845,67 @@ test('Latin words link to their own pages, which lead back to every entry that u
   await page.waitForURL(/c\/perhaps\.html$/);
 });
 
+test('the words of one root lead to one another: the acrobat to the trampoline, on the entry and on the word’s page', async () => {
+  // The page for acrobat gave petaurista and did not lead to petaurum, which the lexicon has under
+  // trampoline (Jack, 13 November 2026).
+  await page.goto(pageUrl('c/acrobat.html'));
+  const line = page.locator('.term .family');
+  assert.equal(await line.textContent(), 'Same family: petaurum (trampoline).');
+  assert.equal(await line.locator('.fam-label').evaluate(el => getComputedStyle(el).fontStyle), 'italic');
+  assert.equal(await line.locator('[lang="la"]').evaluate(el => getComputedStyle(el).fontStyle), 'normal');
+  await line.locator('a', { hasText: 'trampoline' }).click();
+  await page.waitForURL(/c\/trampoline\.html$/);
+  assert.match(await page.locator('.term .family').textContent(), /^Same family: petaurista \(acrobat\), petauristārius \(acrobat\)\.$/);
+  // "See also" keeps its own line and label
+  await page.goto(pageUrl('c/send.html'));
+  const labels = await page.locator('.see').evaluateAll(nodes => nodes.map(p => p.textContent.slice(0, 12)));
+  assert.equal(labels.filter(text => text.startsWith('Same family:')).length, 1);
+  assert.equal(labels.filter(text => text.startsWith('See also ')).length, 1);
+  // The word's page: each word of the family leads to its own page, with the English it is entered under
+  await page.goto(pageUrl('l/petaurista.html'));
+  const family = page.locator('.word .family');
+  assert.equal(await family.textContent(), 'Same family: petauristārius (acrobat), petaurum (trampoline).');
+  assert.deepEqual(await family.locator('a').evaluateAll(nodes => nodes.map(a => [a.textContent, a.getAttribute('href')])),
+                   [['petauristārius', 'petauristarius.html'], ['petaurum', 'petaurum.html']]);
+  await family.locator('a', { hasText: 'petaurum' }).click();
+  await page.waitForURL(/l\/petaurum\.html$/);
+  assert.equal(await page.locator('h1').textContent(), 'petaurum');
+  assert.match(await page.locator('.word .family').textContent(), /petaurista \(acrobat\)/);
+  // A word without a family has no line; a word that is two words has a line for each
+  await page.goto(pageUrl('l/fortasse.html'));
+  assert.equal(await page.locator('.family').count(), 0);
+  await page.goto(pageUrl('l/volo.html'));
+  assert.deepEqual(await page.locator('.family .fam-label').allTextContents(),
+                   ['Same family as volō, volāre, volāvī, volātum:', 'Same family as volō, velle, voluī:']);
+});
+
+test('a long family: every link reaches a page, the entry shows the nearest and sends on, and a phone does not scroll sideways', async () => {
+  await page.goto(pageUrl('c/send.html'));
+  const line = page.locator('.term .family');
+  assert.equal(await line.locator('span[lang="la"]').count(), 8);
+  assert.match(await line.textContent(), /, and \d+ more on the page of mittō\.$/);
+  const hrefs = await line.locator('a').evaluateAll(nodes => nodes.map(a => a.href));
+  assert.ok(hrefs.length > 8);
+  for (const href of hrefs) assert.equal((await page.request.get(href)).status(), 200, href);
+  await line.locator('a[lang="la"]').click();
+  await page.waitForURL(/l\/mitto\.html$/);
+  const all = await page.locator('.word .family a').evaluateAll(nodes => nodes.map(a => a.href));
+  assert.ok(all.length > 20, 'the word’s own page lists the whole family');
+  for (const href of all) assert.equal((await page.request.get(href)).status(), 200, href);
+  for (const path of ['l/mitto.html', 'c/send.html', 'l/eo.html', 'l/facio.html', 'c/acrobat.html']) {
+    for (const width of [320, 390]) {
+      await page.setViewportSize({ width, height: 844 });
+      await page.goto(pageUrl(path));
+      assert.equal(await page.locator('.family').first().isVisible(), true, path);
+      assert.equal(await overflows(), false, `${path} overflows at ${width}px`);
+    }
+  }
+  // On a phone the family comes after the reasons that fold under the answer
+  await page.goto(pageUrl('c/send.html'));
+  const side = await page.locator('.term .side').first().boundingBox(), under = await page.locator('.term .family').boundingBox();
+  assert.ok(under.y >= side.y + side.height - 1, 'the family line is the last thing under the answer');
+});
+
 test('every word of a Latin text leads to its word: a headline underlined, an example quietly', async () => {
   // Potest ex casā vir magnus exīre: only ex, vir and magnus were links (Jack, 13 November 2026).
   await page.goto(pageUrl('c/a-great-man-can-come-from-a-hovel.html'));

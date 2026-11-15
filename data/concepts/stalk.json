@@ -3,12 +3,14 @@
   "english": "stalk",
   "pos": "noun",
   "also": [
-    "stem"
+    "stem",
+    "straw (a single stalk)",
+    "blade (of corn)"
   ],
+  "domain": "culina",
   "also_under": [
     "natura"
   ],
-  "domain": "culina",
   "terms": [
     {
       "latin": "caulis, caulis m.",
@@ -16,20 +18,43 @@
       "period": "classical",
       "gloss": "stalk or stem",
       "comment": "Our practical broad term for a celery stalk, rather than a claim about precise botanical organ terminology."
+    },
+    {
+      "latin": "culmus, culmī m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the stalk of corn, a straw",
+      "evidence": [
+        "Cic. Sen. 51 (Lewis &amp; Short)",
+        "Verg. G. 1.111 (Lewis &amp; Short)",
+        "Varr. RR 1.48.3 (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nē gravidīs prōcumbat culmus aristīs",
+      "english": "so that the stalk may not fall flat under its heavy ears",
+      "source": "Verg. G. 1.111"
     }
   ],
   "related": [
     "fibre",
     "celery",
-    "kale"
+    "kale",
+    "stubble",
+    "straw-material",
+    "grain-cereal"
   ],
   "sources": [
     "<a href=\"https://alatius.com/ls/index.php?l=caulis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: caulis</a>",
-    "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>"
+    "<a href=\"https://logeion.uchicago.edu/culmus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: culmus</a>",
+    "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>",
+    "Vergil, <em>Georgica</em> 1.111."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

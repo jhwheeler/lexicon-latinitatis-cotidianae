@@ -4,13 +4,15 @@
   "pos": "verb",
   "also": [
     "dig out",
-    "dig a hole through"
+    "dig a hole through",
+    "dig in",
+    "bury (in the ground)"
   ],
+  "domain": "aedificatio",
   "also_under": [
     "domus",
     "ludi"
   ],
-  "domain": "aedificatio",
   "terms": [
     {
       "latin": "fodiō, fodere, fōdī, fossum",
@@ -37,6 +39,17 @@
         "Cic. Vat. 5.11: <span lang=\"la\">parietem perfodere</span> (Lewis &amp; Short)",
         "Traupman 304"
       ]
+    },
+    {
+      "latin": "dēfodiō, dēfodere, dēfōdī, dēfossum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "dig deep; bury in the ground",
+      "evidence": [
+        "Col. 7.5.17: <span lang=\"la\">scrobem</span> (Lewis &amp; Short)",
+        "Hor. S. 1.1.42 (Lewis &amp; Short)",
+        "Verg. G. 3.376 (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -58,22 +71,26 @@
     "hoe",
     "hole",
     "shovel",
-    "scoop-up"
+    "scoop-up",
+    "planting-hole",
+    "spade",
+    "uproot"
   ],
   "sources": [
     "<a href=\"https://www.alatius.com/ls/index.php?l=fodio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fodio</a>",
     "<a href=\"https://logeion.uchicago.edu/fodio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fodio</a>",
+    "<a href=\"https://logeion.uchicago.edu/defodio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: defodio</a>",
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026. Examples marked “Libellus” quote those texts word for word.",
     "The example sentences marked “composed” are ours.",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 304."
   ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-15",
+    "by": "Claude"
+  },
   "replaces": [
     "entry-266",
     "libelli-266"
-  ],
-  "review": {
-    "status": "draft",
-    "date": "2026-11-09",
-    "by": "Claude"
-  }
+  ]
 }

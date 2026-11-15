@@ -2,25 +2,50 @@
   "id": "pine",
   "english": "pine",
   "pos": "noun",
+  "also": [
+    "pine wood",
+    "pine forest",
+    "pinewood"
+  ],
   "domain": "natura",
   "terms": [
     {
       "latin": "pīnus, pīnī f.",
       "status": "recommended",
       "period": "classical"
+    },
+    {
+      "latin": "pīnētum, pīnētī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a pine wood",
+      "evidence": [
+        "Ov. F. 2.275 (Lewis &amp; Short)",
+        "Plin. NH 27.66 (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "prōtinus innumerae caedunt pīnēta secūrēs",
+      "english": "at once countless axes fell the pine woods",
+      "source": "Ov. F. 4.273"
     }
   ],
   "related": [
     "pine-cone",
     "pine-adjective",
-    "tree"
+    "tree",
+    "forest"
   ],
   "sources": [
-    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+    "<a href=\"https://logeion.uchicago.edu/pinetum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pinetum</a>",
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+    "Ovid, <em>Fasti</em> 4.273."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

@@ -4,7 +4,10 @@
   "sense": "put forth shoots",
   "pos": "verb",
   "also": [
-    "germinate"
+    "germinate",
+    "bud (verb)",
+    "come into bud",
+    "put out buds"
   ],
   "domain": "natura",
   "terms": [
@@ -19,17 +22,32 @@
       "status": "alternative",
       "period": "classical",
       "gloss": "sprout or multiply"
+    },
+    {
+      "latin": "gemmō, gemmāre, gemmāvī, gemmātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "put out buds, bud",
+      "evidence": [
+        "Varr. RR 1.40.4: <span lang=\"la\">id fit antequam gemmāre aut flōrēre quid incipit</span> (Lewis &amp; Short)",
+        "Col. 4.27.1 (Lewis &amp; Short)",
+        "Cic. de Or. 3.155: <span lang=\"la\">gemmāre vītēs</span> (Lewis &amp; Short)"
+      ],
+      "comment": "From <span lang=\"la\">gemma</span>, a bud."
     }
   ],
   "related": [
-    "sprout-noun"
+    "sprout-noun",
+    "bud",
+    "come-into-leaf"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/germino\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: germino</a> · <a href=\"https://logeion.uchicago.edu/pullulo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pullulo</a>"
+    "<a href=\"https://logeion.uchicago.edu/germino\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: germino</a> · <a href=\"https://logeion.uchicago.edu/pullulo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pullulo</a>",
+    "<a href=\"https://logeion.uchicago.edu/gemmo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gemmo</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

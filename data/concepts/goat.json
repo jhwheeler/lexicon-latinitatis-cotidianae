@@ -4,7 +4,9 @@
   "pos": "noun",
   "also": [
     "billy goat",
-    "nanny goat"
+    "nanny goat",
+    "he-goat",
+    "buck (goat)"
   ],
   "domain": "natura",
   "terms": [
@@ -25,6 +27,24 @@
       "evidence": [
         "Traupman 143, 322"
       ]
+    },
+    {
+      "latin": "hircus, hircī m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a he-goat, a buck",
+      "evidence": [
+        "Verg. E. 3.8 (Lewis &amp; Short)",
+        "Verg. G. 3.312 (Lewis &amp; Short)",
+        "Hor. Epod. 16.34 (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "atque īdem jungat vulpēs et mulgeat hircōs",
+      "english": "and let the same man yoke foxes and milk he-goats",
+      "source": "Verg. E. 3.91"
     }
   ],
   "related": [
@@ -33,14 +53,16 @@
   ],
   "sources": [
     "<a href=\"https://logeion.org/caper\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: caper</a> · <a href=\"https://logeion.org/capra\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: capra</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 143, 322."
-  ],
-  "replaces": [
-    "entry-508"
+    "<a href=\"https://logeion.uchicago.edu/hircus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: hircus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 143, 322.",
+    "Vergil, <em>Eclogae</em> 3.91."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
-  }
+  },
+  "replaces": [
+    "entry-508"
+  ]
 }

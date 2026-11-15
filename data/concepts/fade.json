@@ -12,7 +12,9 @@
     "fade out",
     "wilt",
     "wither",
-    "withered"
+    "withered",
+    "droop",
+    "go limp"
   ],
   "domain": "verba",
   "terms": [
@@ -59,6 +61,16 @@
         "Col. 2.11, of corn (Lewis &amp; Short)"
       ],
       "comment": "Of a plant past its flowering, and by a figure of anything past its best: <span lang=\"la\">dēliciae … celeriter dēflōrēscunt</span> (Cic. Cael. 44)."
+    },
+    {
+      "latin": "flaccēscō, flaccēscere, flaccuī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "wilt, droop, wither",
+      "evidence": [
+        "Col. 12.7.4: <span lang=\"la\">faeniculum cum lēgeris, sub tēctō expōnitō, dum flaccēscat</span> (Lewis &amp; Short)",
+        "Vitr. 2.9.2: <span lang=\"la\">flaccēscente fronde</span> (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -72,16 +84,18 @@
     "disappear",
     "colour",
     "light-colour",
-    "rot"
+    "rot",
+    "dry-up"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/evanesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: evanesco</a> · <a href=\"https://logeion.uchicago.edu/pallesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pallesco</a> · <a href=\"https://logeion.uchicago.edu/marcesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: marcesco</a> · <a href=\"https://logeion.uchicago.edu/defloresco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: defloresco</a>",
+    "<a href=\"https://logeion.uchicago.edu/flaccesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: flaccesco</a>",
     "Cicero, <em>de Divinatione</em> 2.117 and <em>pro Caelio</em> 44, checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>.",
     "The example sentence marked “composed” is ours."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

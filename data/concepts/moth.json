@@ -3,7 +3,11 @@
   "english": "moth",
   "pos": "noun",
   "also": [
-    "cockroach"
+    "cockroach",
+    "clothes moth",
+    "bookworm",
+    "grub",
+    "maggot"
   ],
   "domain": "natura",
   "terms": [
@@ -17,18 +21,41 @@
         "Traupman 293"
       ],
       "comment": "L&amp;S: several light-shunning insects."
+    },
+    {
+      "latin": "tinea, tineae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a clothes moth or bookworm: any grub that gnaws",
+      "evidence": [
+        "Cato Agr. 98.1 (Lewis &amp; Short)",
+        "Hor. S. 2.3.119 (Lewis &amp; Short)",
+        "Hor. Ep. 1.20.12 (Lewis &amp; Short)",
+        "Plin. NH 11.117 (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "blattārum ac tineārum epulae",
+      "english": "a feast for moths and grubs",
+      "source": "Hor. S. 2.3.119"
     }
   ],
   "related": [
-    "butterfly"
+    "butterfly",
+    "caterpillar",
+    "worm"
   ],
   "sources": [
     "<a href=\"https://logeion.org/blatta\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: blatta</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 142–143, 293."
+    "<a href=\"https://logeion.uchicago.edu/tinea\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tinea</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 142–143, 293.",
+    "Horace, <em>Sermones</em> 2.3.119."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

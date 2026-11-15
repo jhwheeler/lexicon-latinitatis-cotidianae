@@ -8,7 +8,8 @@
     "fruitfulness",
     "fertile",
     "productive",
-    "fertility"
+    "fertility",
+    "fruitful"
   ],
   "domain": "natura",
   "terms": [
@@ -32,6 +33,18 @@
       "evidence": [
         "Cic. Tusc. 2.13: <span lang=\"la\">ager, quamvīs fertilis, sine cultūrā frūctuōsus esse nōn potest</span> (Lewis &amp; Short)"
       ]
+    },
+    {
+      "latin": "ferāx, ferācis",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "fruitful, fertile, bearing much",
+      "evidence": [
+        "Cic. Verr. 2.3.104: <span lang=\"la\">agrī</span> (Lewis &amp; Short)",
+        "Caes. BG 2.4.6 (Lewis &amp; Short)",
+        "Hor. C. 1.31.4 (Lewis &amp; Short)"
+      ],
+      "comment": "From <span lang=\"la\">ferō</span>: of land that bears well."
     }
   ],
   "related": [
@@ -40,12 +53,13 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/fertilitas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fertilitas</a> · <a href=\"https://logeion.uchicago.edu/fertilis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fertilis</a>",
+    "<a href=\"https://logeion.uchicago.edu/ferax\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ferax</a>",
     "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 205, 365."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

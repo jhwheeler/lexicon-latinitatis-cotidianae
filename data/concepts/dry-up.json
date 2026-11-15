@@ -2,23 +2,60 @@
   "id": "dry-up",
   "english": "dry up",
   "pos": "verb",
+  "also": [
+    "be parched",
+    "parched",
+    "dry out",
+    "wither"
+  ],
   "domain": "natura",
   "terms": [
     {
       "latin": "exārēscō, exārēscere, exāruī",
       "status": "recommended",
       "period": "classical"
+    },
+    {
+      "latin": "ārēscō, ārēscere, āruī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "become dry",
+      "evidence": [
+        "Plaut. Rud. 2.7.17: <span lang=\"la\">dum mea ārēscunt</span> (Lewis &amp; Short)",
+        "Tac. Ann. 13.57: <span lang=\"la\">ārēscente undā</span> (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "āreō, ārēre, āruī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "be dry, be parched",
+      "evidence": [
+        "Cato Agr. 76 (Lewis &amp; Short)",
+        "Ov. Met. 2.211 (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "āret ager; vitiō moriēns sitit āëris herba",
+      "english": "the field is parched; the grass is dying of thirst in the bad air",
+      "source": "Verg. E. 7.57"
     }
   ],
   "related": [
-    "stream"
+    "stream",
+    "dry-adjective",
+    "fade"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/exaresco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: exaresco</a>"
+    "<a href=\"https://logeion.uchicago.edu/exaresco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: exaresco</a>",
+    "<a href=\"https://logeion.uchicago.edu/aresco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aresco</a> · <a href=\"https://logeion.uchicago.edu/areo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: areo</a>",
+    "Vergil, <em>Eclogae</em> 7.57."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

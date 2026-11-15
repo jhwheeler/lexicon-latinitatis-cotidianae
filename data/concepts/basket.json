@@ -2,6 +2,11 @@
   "id": "basket",
   "english": "basket",
   "pos": "noun",
+  "also": [
+    "wicker basket",
+    "punnet",
+    "flower basket"
+  ],
   "domain": "natura",
   "terms": [
     {
@@ -11,18 +16,67 @@
       "evidence": [
         "Traupman 277"
       ]
+    },
+    {
+      "latin": "fiscina, fiscinae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a small basket of rushes or twigs, for fruit, cheese, olives",
+      "evidence": [
+        "Cic. Fl. 41: <span lang=\"la\">fīcōrum</span> (Lewis &amp; Short)",
+        "Col. 12.39.3 (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "fiscella, fiscellae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a little woven basket",
+      "evidence": [
+        "Tib. 2.3.15 (Lewis &amp; Short)",
+        "Verg. E. 10.71 (Lewis &amp; Short)",
+        "Ov. F. 4.743 (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "calathus, calathī m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a wicker basket for flowers, fruit or wool",
+      "evidence": [
+        "Verg. E. 2.46 (Lewis &amp; Short)",
+        "Ov. F. 4.435 (Lewis &amp; Short)",
+        "Plin. NH 21.23 (Lewis &amp; Short)"
+      ],
+      "comment": "A Greek word; a hand basket made in the shape of a lily (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nunc facilis rubeā texātur fiscina virgā",
+      "english": "now let the pliant basket be woven of bramble twigs",
+      "source": "Verg. G. 1.266"
+    },
+    {
+      "latin": "dum sedet et gracilī fiscellam texit hibiscō",
+      "english": "while he sits and weaves a little basket of slender mallow",
+      "source": "Verg. E. 10.71"
     }
   ],
   "related": [
-    "pick"
+    "pick",
+    "willow",
+    "harvest"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/corbis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: corbis</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 277."
+    "<a href=\"https://logeion.uchicago.edu/fiscina\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fiscina</a> · <a href=\"https://logeion.uchicago.edu/fiscella\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fiscella</a> · <a href=\"https://logeion.uchicago.edu/calathus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: calathus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 277.",
+    "Vergil, <em>Georgica</em> 1.266; <em>Eclogae</em> 10.71."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

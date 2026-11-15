@@ -3,6 +3,10 @@
   "english": "graze",
   "sense": "of animals",
   "pos": "verb",
+  "also": [
+    "graze down",
+    "crop (grass)"
+  ],
   "domain": "natura",
   "terms": [
     {
@@ -24,20 +28,43 @@
         "Verg. E. 3.96: <span lang=\"la\">pāscentēs capellae</span>; Verg. G. 3.143 (Lewis &amp; Short)"
       ],
       "comment": "Intransitive “graze” is poetic (Lewis &amp; Short); in prose the animals <span lang=\"la\">pāscuntur</span>."
+    },
+    {
+      "latin": "dēpāscō, dēpāscere, dēpāvī, dēpāstum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "graze down, eat off",
+      "evidence": [
+        "Col. 2.10.31 (Lewis &amp; Short)",
+        "Ov. F. 5.283: <span lang=\"la\">saltūs</span> (Lewis &amp; Short)",
+        "Verg. G. 1.112: <span lang=\"la\">luxuriem segetum</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Of the herdsman who puts his animals on the land and of the animals that eat it bare; also deponent, <span lang=\"la\">dēpāscor</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "luxuriem segetum tenerā dēpāscit in herbā",
+      "english": "he grazes down the rank growth of the crop while the blade is young",
+      "source": "Verg. G. 1.112"
     }
   ],
   "related": [
     "feed",
-    "livestock"
+    "livestock",
+    "pasture",
+    "grassy"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/pasco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pasco</a>",
+    "<a href=\"https://logeion.uchicago.edu/depasco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: depasco</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>.",
-    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "Vergil, <em>Georgica</em> 1.112."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

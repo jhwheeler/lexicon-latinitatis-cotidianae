@@ -6,7 +6,8 @@
     "sow",
     "hog",
     "oink",
-    "grunt"
+    "grunt",
+    "breeding sow"
   ],
   "domain": "natura",
   "terms": [
@@ -36,6 +37,24 @@
         "Traupman 144, 360, 383, 143",
         "Traupman 328"
       ]
+    },
+    {
+      "latin": "scrōfa, scrōfae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a breeding sow",
+      "evidence": [
+        "Varr. RR 2.4.4 (Lewis &amp; Short)",
+        "Col. 7.9.2 (Lewis &amp; Short)",
+        "Juv. 6.177 (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Porcī grunniunt.",
+      "english": "Pigs oink.",
+      "source": "Traupman 360"
     }
   ],
   "related": [
@@ -46,18 +65,12 @@
   ],
   "sources": [
     "<a href=\"https://logeion.org/porcus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: porcus</a> · <a href=\"https://logeion.org/sus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sus</a>",
+    "<a href=\"https://logeion.uchicago.edu/scrofa\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: scrofa</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 144, 328, 360, 383."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-15",
     "by": "Claude"
-  },
-  "phrases": [
-    {
-      "latin": "Porcī grunniunt.",
-      "english": "Pigs oink.",
-      "source": "Traupman 360"
-    }
-  ]
+  }
 }

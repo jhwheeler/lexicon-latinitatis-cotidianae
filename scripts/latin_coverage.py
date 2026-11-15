@@ -64,6 +64,7 @@ ALIASES = {'rastri': ['rastrum'], 'tanto': ['tantus'], 'quanto': ['quantus'], 'i
            'uos': ['tu'], 'inquio': ['inquam'], 'coepio': ['coepi'], 'quatuor': ['quattuor'], 'necesse': ['necesse'],
            'plerusque': ['plerique'], 'ceterus': ['ceteri'], 'reliquum': ['reliquus'], 'nequeo': ['nequeo'],
            'ample': ['amplius'], 'pudeo': ['pudet'], 'spons': ['sponte'], 'potis': ['potior'], 'suum': ['suus'],
+           'saluber': ['salubris'], 'materies': ['materia'],
            'tres': ['tres'], 'ambo': ['ambo'], 'complures': ['complures'], 'parum': ['parum', 'minus', 'minime']}
 # Pairs of spellings, either of which a text or a dictionary may print.
 SPELLINGS = [('numus', 'nummus'), ('brachium', 'bracchium'), ('teter', 'taeter'), ('bellua', 'belua'), ('pellex', 'paelex'),

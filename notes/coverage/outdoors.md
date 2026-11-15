@@ -353,11 +353,28 @@ Not answered, and why:
 - **burrow, peck, prowl.** No clear verb: *cunīculus* is the burrow (and Pliny has ants *in cunīculōs*), *vellicō* is to pluck or nip (*cornīx vulturiōs vellicat*, Plaut.), *grassor* is to go about; none is glossed with the English word.
 - **mulch, secateurs.** Nothing in the three reference works; `sickle` (*falx*) still answers “secateurs” and “pruning knife”.
 
+## The botanical and zoological names (15 November 2026)
+
+The names the last pass could not source were entered, one term each, as `modern`, each from a page that states the name: seven plants from Rob Wilson’s *Flora Checklist of Northamptonshire & The Soke of Peterborough* (2014, on the BSBI’s website), which prints the name, its author and the English name; the wildcat from the Mammal Diversity Database; the bumblebee from the New World Encyclopedia; the stag beetle from Wikipedia’s article (read in a Kiwix copy), which gives Linnaeus and 1758 for the species under its first name, *Scarabaeus cervus*. Vowel lengths are marked only on the words Lewis & Short has; each comment says which are left unmarked.
+
+| English | Name | Source |
+| --- | --- | --- |
+| aspen | *pōpulus tremula* (L.) | Wilson |
+| rowan | *sorbus aucuparia* (L.) | Wilson; `manna-ash` no longer answers “rowan” |
+| primrose | *primula vulgāris* (Huds.) | Wilson |
+| cowslip | *primula vēris* (L.) | Wilson |
+| snowdrop | *galanthus nivālis* (L.) | Wilson |
+| bluebell | *hyacinthoides nōn-scrīpta* ((L.) Chouard ex Rothm.) | Wilson |
+| forget-me-not | *myosōtis* (the genus; Wilson has *Myosotis arvensis* (L.) Hill, field forget-me-not) | Wilson; the word is Pliny’s (Lewis & Short) |
+| wildcat | *fēlēs silvestris* (von Schreber, 1777) | Mammal Diversity Database |
+| stag beetle | *lucanus cervus* | Wikipedia |
+| bumblebee | *bombus* (Latreille, 1802) | New World Encyclopedia |
+
 ## Left for a later round
 
 After round three.
 
-**From the walk, still no entry.** Trees and plants: aspen, rowan as a tree of its own (it stands under *ornus*, which Lewis & Short calls the mountain ash), primrose, snowdrop, bluebell, cowslip, forget-me-not, toadstools by kind. Animals: wildcat, stag beetle, bumblebee, a polecat distinct from the ferret. Land: scree, heath as a place. Garden: mulch, secateurs as a tool of their own, medlar, marigold; a greenhouse as a building. Verbs: burrow, peck, prowl. The reasons are in the section “The words left without an answer” above.
+**From the walk, still no entry.** Toadstools by kind; a polecat distinct from the ferret; scree, heath as a place; mulch, secateurs as a tool of their own, medlar, marigold; a greenhouse as a building; the verbs burrow, peck, prowl. The reasons are in the section “The words left without an answer” above.
 
 **From the authors, read and not entered (57).** With the number of times the outdoor works have each: marmor (28), lympha (22), favilla (17), armus (17), lotos (10), colubra (10), suboles (9), bipennis (9), rastri (8), casia (8), verbena (7), thyrsus (7), temo (7), fluentum (7), cytisus (7), oleaster (6), ocinum (6), myrice (6), ervum (6), petra (5), mergus (5), aesculus (5), veratrum (4), stiva (3), tribulus (2), tinus (2), palear (2), nubecula (2), hibiscum (2), baccar (2), vulturius (1), vulpecula (1), thymbra (1), spelaeum (1), sisymbrium (1), siler (1), scilla (1), scatebra (1), scapus (1), saliunca (1), parra (1), paliurus (1), oscen (1), onager (1), oestrus (1), merops (1), melisphyllum (1), gelicidium (1), filicula (1), dentale (1), cupressetum (1), cerintha (1), caprificus (1), attagen (1), aesculetum (1), acalanthis (1), abrotonum (1). Most are the poets’ plants and birds, parts of the plough, or words of the verse only.
 

@@ -121,7 +121,7 @@ Everything the reader does stays on the device, in the browser's storage, and no
 
 No list is shipped with the site. A word set that is private to the editor, such as the vocabulary of his unpublished readers, is practised by pasting it as a list on his own device; do not add a list tied to the readers to the data or the pages.
 
-**The clock** (`hora.html`, from `src/hora.html`): *Hōra cum ūnciā*, the editor's game for the twelfths of the Roman *as* and for telling the time with them, with a Latin and an English interface. It keeps its own look. It asks nothing of other sites: the serif is the lexicon's own, from `assets/fonts/`, and the monospace is the system's. A theme chosen in the lexicon holds there too; without one it follows the system.
+**The clock** (`hora.html`, from `src/hora.html`): *Hōra cum ūnciā*, the editor's game for the twelfths of the Roman *as* and for telling the time with them, with a Latin and an English interface. Since 15 November 2026 it wears the lexicon's colours (ink, red and paper on the practice round's tinted ground, in both themes), with lapis blue as a third colour for the twelfths and for a right answer; its layout and behaviour are its own. It asks nothing of other sites: the serif is the lexicon's own, from `assets/fonts/`, and the monospace is the system's. Its theme is the lexicon's: light, or dark when that was chosen in the lexicon, whatever the system prefers.
 
 Both pages are saved by the service worker with the rest, so they work offline.
 

@@ -11,7 +11,7 @@ latin.html (the English and Latin headwords from A to Z), c/<concept>.html (one
 page per concept record), l/<word>.html (one page per Latin word that heads a
 term), how-we-decide.html (editorial policy), rulings.html (the rulings
 register), practice.html (vocabulary practice), hora.html (the clock game) and
-review.html (the editor's review), sitemap.xml, and in assets/ the stylesheet,
+review.html (what is reviewed, and a reader's flags), sitemap.xml, and in assets/ the stylesheet,
 the page, search, practice and review scripts, the search data, the practice cards (practice-data.js), the redirects
 from the old single page (legacy.js) and the fonts. See docs/data-format.md and
 docs/records.md.
@@ -1494,7 +1494,9 @@ def suggest_link(page, what):
 
 
 def review_state(review):
-    return (f'Reviewed by {escape(review["by"])}, {human_date(review["date"])}.' if review['status'] == 'reviewed'
+    """The last line of an entry's sources. The reviewer's name (review.by) stays in the data and
+    is not printed anywhere on the site (Jack, 15 November 2026)."""
+    return (f'Reviewed {human_date(review["date"])}.' if review['status'] == 'reviewed'
             else f'Draft of {human_date(review["date"])}, not yet reviewed.')
 
 
@@ -2102,10 +2104,12 @@ def search_data(site):
 
 
 # Review (Jack, 15 November 2026) ----------------------------------------------------------------
-# Every record is a draft until the editor says it is right. He gives that verdict on his phone, on
-# the entry's page or on the back of a practice card, and a reader can flag an entry the same way;
-# the verdicts are kept on the device, gathered into one report on review.html, and applied to the
-# records by scripts/apply_review.py. See docs/review.md.
+# Every record is a draft until the editor says it is right. He does not give that verdict on the
+# site: he reviews in a private page of his own, built by scripts/editor_review.py, and the site
+# never prints his name. What the site offers is the flag: a reader flags an entry on its page or on
+# the back of a practice card; the flags are kept on the device and gathered into one report on
+# review.html. The editor's report and a reader's have one format, and scripts/apply_review.py
+# applies either to the records. See docs/review.md.
 def record_revision(record):
     """A short name for the text of a record as it stands: a hash of its JSON without the `review`
     field. A verdict is tied to it, so that "looks right" given on one text is not applied to
@@ -2128,8 +2132,9 @@ def concept_article(record):
 
 
 def render_review_page(root, site):
-    """review.html: the editor's switch, what to review next, and the report to send. All of it is
-    drawn by assets/review.js from the practice cards, which carry each record's revision."""
+    """review.html: how many entries are reviewed, and the reader's flags gathered into a report to
+    send. With scripts it is drawn by assets/review.js from the practice cards, which carry each
+    record's revision and whether it is reviewed; without them the line of totals stands."""
     total = len(site['records'])
     done = sum(reviewed(record) for record in site['records'].values())
     return fill(root / 'src/review.html', {

@@ -1,16 +1,20 @@
 (() => {
-  // Review (Jack, 15 November 2026): every entry is a draft until the editor has read it, and he
-  // reads on his phone. An entry's page ends with two quiet controls: Flag, for anyone, which
-  // opens a small box (a few reasons to tap, a line to write); and Looks right, for the editor
-  // alone, in one tap. The back of a practice card has the same two. A verdict is kept on the
-  // device with the revision of the record it was given on (data-rev, from record_revision in
-  // the builder), so it is never applied to a text the reader did not see. review.html gathers
-  // what has not been sent into one report, to share, copy or open as an issue; in the
-  // repository scripts/apply_review.py reads it. There is no server. See docs/review.md.
+  // Review (Jack, 15 November 2026): every entry is a draft until the editor has read it. The
+  // site offers a reader one thing, the flag. An entry's page ends with one quiet control, Flag,
+  // which opens a small box (a few reasons to tap, a line to write); the back of a practice card
+  // has the same. A flag is kept on the device with the revision of the record it was given on
+  // (data-rev, from record_revision in the builder), so it is never applied to a text the reader
+  // did not see. review.html gathers what has not been sent into one report, to share, copy or
+  // open as an issue; in the repository scripts/apply_review.py reads it. There is no server.
+  //
+  // The editor does not review here (Jack, 15 November 2026): he reads the drafts and marks them
+  // right in a private page of his own, built by scripts/editor_review.py, which writes its
+  // report in the same format. This site has no "looks right", no reviewer's switch and no queue,
+  // and never prints the reviewer's name. See docs/review.md.
   //
   // This script runs on every entry's page, on review.html and on practice.html (where
-  // practice.js asks it for the controls of a card).
-  const KEY = 'lexicon-review', LANG = 'lexicon-practice-lang', QUEUE = 'lexicon-review-queue', SKIPPED = 'lexicon-review-skipped';
+  // practice.js asks it for the flag of a card).
+  const KEY = 'lexicon-review', LANG = 'lexicon-practice-lang';
   const REPO = 'https://github.com/jhwheeler/lexicon-latinitatis-cotidianae';
   const SITE = 'https://jhwheeler.github.io/lexicon-latinitatis-cotidianae/';
   const REASONS = ['word', 'quantity', 'meaning', 'example', 'source', 'other'];
@@ -21,65 +25,52 @@
 
   // The words of the interface. It follows the practice page's choice: Latin unless the reader
   // chose English there. The Latin is Claude's wording throughout, awaiting Jack's review; the
-  // coordinating session gave Rēctē, Notā, Recēnsiō, Proxima, Praeterī, Mitte, Missa, Recēnsor
-  // sum and the six reasons, and "Incipe", "Exscrībe" and "Lingua" are already in use on the
-  // practice page.
+  // coordinating session gave Notā, Recēnsiō, Mitte, Missa and the six reasons, and "Exscrībe"
+  // and "Lingua" are already in use on the practice page.
   const MONTHS = {
     la: ['Jānuāriī', 'Februāriī', 'Mārtiī', 'Aprīlis', 'Majī', 'Jūniī', 'Jūliī', 'Augustī', 'Septembris', 'Octōbris', 'Novembris', 'Decembris'],
     en: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
   };
   const T = {
     la: {
-      flag: 'Notā', ok: 'Rēctē', title: 'Recēnsiō', next: 'Proxima', skip: 'Praeterī', send: 'Mitte', sent: 'Missa', editor: 'Recēnsor sum',
+      flag: 'Notā', title: 'Recēnsiō', send: 'Mitte', sent: 'Missa',
       reasons: { word: 'verbum', quantity: 'quantitās', meaning: 'sēnsus', example: 'exemplum', source: 'fōns', other: 'aliud' },
-      langLabel: 'Lingua', start: 'Incipe', copy: 'Exscrībe', copied: 'Exscrīptum',
+      langLabel: 'Lingua', copy: 'Exscrībe', copied: 'Exscrīptum',
       ask: 'Quid vitiī est?', note: 'Paucīs verbīs, sī vīs', save: 'Servā', cancel: 'Omitte', withdraw: 'Notam tolle', alt: 'Vel per GitHub mitte',
-      okState: date => `«Rēctē» dīxistī ${date}.`,
       flagState: (reasons, date) => `Notāvistī ${date}${reasons ? ': ' + reasons : ''}.`,
-      stale: date => `Haec pāgina mūtāta est postquam jūdicāvistī (${date}).`,
+      stale: date => `Haec pāgina mūtāta est postquam notāvistī (${date}).`,
       unsent: 'In hōc nāvigātrō servātur, dōnec mittās:', isSent: 'Missum.',
       date: when => `diē ${when.getDate()} ${MONTHS.la[when.getMonth()]}`,
       sub: 'Nihil hīc prō certō habētur, nisi quod recēnsor lēgit et probāvit.',
       intro: 'Sī quid in lexicō vitiōsum vidētur, in ipsā pāginā notā. Notae in hōc nāvigātrō servantur, dōnec eās hinc mittās.',
       countH: 'Summa',
-      counts: { done: 'in lexicō probāta', ok: '«Rēctē», nōndum missa', flag: 'notāta, nōndum missa', left: 'recēnsenda restant', waiting: 'missa, nōndum in lexicō' },
-      editorHelp: 'Recēnsōrī sōlī licet «Rēctē» dīcere; cēterī notant.',
-      queueH: 'Proxima recēnsenda',
-      queueHelp: 'Prīmum quae quaesīvistī, deinde quae exercuistī, tum cētera per rērum genera.',
-      why: { seen: 'quaesītum', practised: 'exercitātum' }, more: 'Plūra', queueEmpty: 'Nihil restat.',
+      counts: { done: 'in lexicō probāta', drafts: 'recēnsenda restant', flag: 'notāta, nōndum missa', waiting: 'missa, nōndum in lexicō' },
       sendH: 'Mitte',
-      sendHelp: 'Quae jūdicāvistī nec adhūc mīsistī in ūnam relātiōnem colliguntur. Eam commūnicā, exscrībe, vel per GitHub mitte; deinde «Missa» tange.',
+      sendHelp: 'Quae notāvistī nec adhūc mīsistī in ūnam relātiōnem colliguntur. Eam commūnicā, exscrībe, vel per GitHub mitte; deinde «Missa» tange.',
       sendNothing: 'Nihil mittendum est.',
       reportLabel: 'Relātiō', share: 'Commūnicā', issue: 'Per GitHub mitte',
       tooLong: 'Longior est relātiō quam ut per GitHub aperīrī possit: exscrībe et ibi glūtinā.',
-      staleOk: n => `«Rēctē» dīxistī dē ${number(n)}, ${n === 1 ? 'quod posteā mūtātum est: dēnuō legendum est' : 'quae posteā mūtāta sunt: dēnuō legenda sunt'}.`,
       waiting: n => `${number(n)} ${n === 1 ? 'missum' : 'missa'}, nōndum in lexicō.`, resend: 'Iterum mitte',
       pendingOk: n => `«Rēctē»: ${number(n)}`
     },
     en: {
-      flag: 'Flag', ok: 'Looks right', title: 'Review', next: 'Next', skip: 'Skip', send: 'Send', sent: 'Sent', editor: 'I am the reviewer',
+      flag: 'Flag', title: 'Review', send: 'Send', sent: 'Sent',
       reasons: { word: 'wrong word', quantity: 'vowel length', meaning: 'meaning', example: 'example', source: 'source', other: 'other' },
-      langLabel: 'Language', start: 'Start', copy: 'Copy', copied: 'Copied',
+      langLabel: 'Language', copy: 'Copy', copied: 'Copied',
       ask: 'What looks wrong?', note: 'A few words, if you like', save: 'Save', cancel: 'Cancel', withdraw: 'Withdraw the flag', alt: 'Or send it as a GitHub issue',
-      okState: date => `You marked this right, ${date}.`,
       flagState: (reasons, date) => `You flagged this, ${date}${reasons ? ': ' + reasons : ''}.`,
-      stale: date => `This entry has changed since you gave your verdict (${date}).`,
+      stale: date => `This entry has changed since you flagged it (${date}).`,
       unsent: 'Kept on this device until you send it:', isSent: 'Sent.',
       date: when => `${when.getDate()} ${MONTHS.en[when.getMonth()]}`,
       sub: 'Every entry is a draft until the editor has read it.',
       intro: 'If something in the lexicon looks wrong, flag it on its own page. Flags are kept on this device until you send them from here.',
       countH: 'Where it stands',
-      counts: { done: 'reviewed on the site', ok: 'marked right, not yet sent', flag: 'flagged, not yet sent', left: 'drafts to review', waiting: 'sent, not yet on the site' },
-      editorHelp: 'Only the reviewer marks an entry right; everyone else flags.',
-      queueH: 'What to review next',
-      queueHelp: 'First what you looked up, then what you practised, then the rest by category.',
-      why: { seen: 'looked up', practised: 'practised' }, more: 'More', queueEmpty: 'Nothing is left.',
+      counts: { done: 'reviewed by the editor', drafts: 'drafts, not yet reviewed', flag: 'flagged, not yet sent', waiting: 'sent, not yet on the site' },
       sendH: 'Send',
-      sendHelp: 'Your verdicts not yet sent are gathered into one report. Share it, copy it, or open it as a GitHub issue; then tap “Sent”.',
+      sendHelp: 'Your flags not yet sent are gathered into one report. Share it, copy it, or open it as a GitHub issue; then tap “Sent”.',
       sendNothing: 'Nothing to send.',
       reportLabel: 'The report', share: 'Share', issue: 'Open a GitHub issue',
       tooLong: 'The report is too long to open as an issue from a link: copy it and paste it there.',
-      staleOk: n => `${number(n)} marked right ${n === 1 ? 'has' : 'have'} changed since: ${n === 1 ? 'it wants' : 'they want'} reading again.`,
       waiting: n => `${number(n)} sent, not yet on the site.`, resend: 'Send again',
       pendingOk: n => `Marked right: ${number(n)}`
     }
@@ -107,18 +98,24 @@
     svg.append(shape);
     return svg;
   }
-  const FLAG = 'M6 21V4M6 5h11l-2.5 4L17 13H6', TICK = 'M5 12.5l4.5 4.5L19 7.5';
+  const FLAG = 'M6 21V4M6 5h11l-2.5 4L17 13H6';
 
   // The verdicts ------------------------------------------------------------------------------------
-  // One record for the device: {editor: is the reader the reviewer, verdicts: {id: {v: 'ok' or
-  // 'flag', r: reasons, n: note, t: when, rev: the record's revision, sent: when it was sent}}}.
-  // Where storage is blocked the verdicts last for the visit.
+  // One record for the device: {verdicts: {id: {v: 'flag', r: reasons, n: note, t: when, rev: the
+  // record's revision, sent: when it was sent}}}. Where storage is blocked the flags last for
+  // the visit.
+  //
+  // The site gives no verdict but 'flag'. On the morning of 15 November 2026 it also offered the
+  // editor "looks right", so a device may still hold verdicts with v: 'ok' (and an "editor" field,
+  // which is dropped at the next save). They are read and kept here, and the review page puts
+  // them into the report with the flags (see "ok" in standing), so that nothing tapped that
+  // morning is lost. Nothing else on the site shows or makes one.
   let memory = null;
   function load() {
     if (memory) return memory;
     let kept = null;
     try { kept = JSON.parse(localStorage.getItem(KEY)); } catch {}
-    const state = { editor: !!(kept && kept.editor), verdicts: {} };
+    const state = { verdicts: {} };
     Object.entries(kept && kept.verdicts && typeof kept.verdicts === 'object' ? kept.verdicts : {}).forEach(([id, verdict]) => {
       if (!verdict || (verdict.v !== 'ok' && verdict.v !== 'flag') || typeof verdict.rev !== 'string' || !Number.isFinite(verdict.t)) return;
       state.verdicts[id] = { v: verdict.v, r: Array.isArray(verdict.r) ? verdict.r.filter(reason => REASONS.includes(reason)) : [],
@@ -135,7 +132,6 @@
     if (verdict) state.verdicts[id] = verdict; else delete state.verdicts[id];
     save(state);
   }
-  const isEditor = () => load().editor;
 
   // The flag box: reasons to tap, a line to write, Save -------------------------------------------------
   function flagForm({ id, rev, english, done }) {
@@ -185,17 +181,17 @@
     return form;
   }
 
-  // What a verdict says of itself, on the entry's page.
-  function stateLine(id, rev, up, brief) {
+  // What a flag says of itself, on the entry's page.
+  function stateLine(id, rev, up) {
     const verdict = verdictOf(id);
-    if (!verdict) return null;
+    if (!verdict || verdict.v !== 'flag') return null;
     const date = t('date')(new Date(verdict.t));
     if (verdict.rev !== rev) return el('p', 'verdict-state', t('stale')(date));
     const reasons = verdict.r.map(reason => t('reasons')[reason]).join(', ');
-    const pieces = [verdict.v === 'ok' ? t('okState')(date) : t('flagState')(reasons, date)];
-    if (verdict.v === 'flag' && verdict.n) pieces.push(' ', el('q', '', verdict.n, ''));
+    const pieces = [t('flagState')(reasons, date)];
+    if (verdict.n) pieces.push(' ', el('q', '', verdict.n, ''));
     if (verdict.sent) pieces.push(' ', t('isSent'));
-    else if (!brief) {
+    else {
       const link = el('a', '', t('title'));
       link.href = `${up}review.html`;
       pieces.push(' ', t('unsent'), ' ', link, '.');
@@ -203,9 +199,9 @@
     return el('p', 'verdict-state', pieces);
   }
 
-  // The two controls of a record: on its page (with the box under them and a line saying what was
-  // decided) and on the back of a practice card (as two small buttons; the box opens over the round).
-  function controls({ id, rev, reviewed, english, where, up = '', brief = false, extra, changed }) {
+  // The flag of a record: on its page (with the box under it and a line saying what was flagged)
+  // and on the back of a practice card (as a small button; the box opens over the round).
+  function controls({ id, rev, english, where, up = '', changed }) {
     const box = el('div', `verdict verdict-${where}`, [], language());
     let form = null, sheet = null;
     const current = () => { const verdict = verdictOf(id); return verdict && verdict.rev === rev ? verdict : null; };
@@ -244,27 +240,10 @@
           form.querySelector('.flagbox-chip').focus({ preventScroll: true });
         }
       });
-      const row = [flag];
-      // Looks right is the editor's word, and is wanted only for a record that is still a draft.
-      if (isEditor() && !reviewed) {
-        const ok = el('button', 'verdict-ok', [icon(TICK), el('span', '', t('ok'))]);
-        ok.type = 'button';
-        ok.setAttribute('aria-pressed', String(!!mine && mine.v === 'ok'));
-        ok.addEventListener('click', event => {
-          event.stopPropagation();
-          give(id, mine && mine.v === 'ok' ? null : { v: 'ok', r: [], n: '', t: Date.now(), rev });
-          finished(true);
-        });
-        row.push(ok);
-      }
-      if (where === 'game') {
-        flag.setAttribute('aria-label', t('flag')); flag.title = t('flag');
-        if (row[1]) { row[1].setAttribute('aria-label', t('ok')); row[1].title = t('ok'); }
-      }
-      const state = where === 'entry' ? stateLine(id, rev, up, brief) : null;
+      if (where === 'game') { flag.setAttribute('aria-label', t('flag')); flag.title = t('flag'); }
+      const state = where === 'entry' ? stateLine(id, rev, up) : null;
       if (state) state.setAttribute('role', 'status');
-      const more = extra ? extra(!!mine) : null;
-      box.replaceChildren(...(state ? [state] : []), el('div', 'verdict-row', more ? row.concat(more) : row));
+      box.replaceChildren(...(state ? [state] : []), el('div', 'verdict-row', flag));
       form = null;
       if (box.isConnected) polish(box);
     }
@@ -273,34 +252,18 @@
   }
 
   // An entry's page ---------------------------------------------------------------------------------
-  // The controls stand where "Suggest a correction" stood (which is still there without scripts,
-  // and is the way to GitHub inside the box). Opened from the review page (?review=1), the entry
-  // is one of a queue: the controls stay at the foot of the screen, with Skip beside them, and
-  // after a verdict Next leads to the following entry.
+  // The flag stands where "Suggest a correction" stood (which is still there without scripts, and
+  // is the way to GitHub inside the box).
   const article = document.querySelector('article.concept[data-rev]');
   const entry = article && /\/c\/([a-z0-9-]+?)(?:\.html)?$/.exec(location.pathname);
   if (article && entry) {
     const id = entry[1], suggest = article.querySelector('.suggest'), foot = article.querySelector('.c-sources');
-    const reviewing = new URLSearchParams(location.search).get('review') === '1';
-    const stored = key => { try { const list = JSON.parse(sessionStorage.getItem(key)); return Array.isArray(list) ? list : []; } catch { return []; } };
-    const queue = reviewing ? stored(QUEUE) : [], at = queue.indexOf(id);
-    const following = queue.slice(at + 1).find(other => other !== id && !verdictOf(other));
-    const onward = following ? `${following}.html?review=1` : '../review.html';
-    // Skip before a verdict, Next after one: one tap either way.
-    function onwardLink(judged) {
-      const link = el('a', 'verdict-next', judged ? t('next') : t('skip'));
-      link.href = onward;
-      if (!judged) link.addEventListener('click', () => { try { sessionStorage.setItem(SKIPPED, JSON.stringify([...new Set(stored(SKIPPED).concat(id))])); } catch {} });
-      return link;
-    }
     const made = controls({
-      id, rev: article.dataset.rev, reviewed: article.dataset.status === 'reviewed', where: 'entry', up: '../', brief: reviewing,
-      english: (article.querySelector('h1.hw')?.firstChild?.textContent || id).trim(),
-      extra: reviewing ? onwardLink : null
+      id, rev: article.dataset.rev, where: 'entry', up: '../',
+      english: (article.querySelector('h1.hw')?.firstChild?.textContent || id).trim()
     });
     if (suggest) suggest.hidden = true;
     (foot || article).append(made.box);
-    if (reviewing) { made.box.classList.add('verdict-bar'); document.body.classList.add('reviewing'); }
     polish(made.box);
   }
 
@@ -308,33 +271,22 @@
   const page = q('review'), data = window.lexiconPractice;
   if (page && data) {
     const cards = data.cards, byId = new Map(cards.map(card => [card.i, card]));
-    const headOf = latin => /^(.+?)(?=\s*(?:,|\(|$))/.exec(latin)[1];
-    const local = key => { try { const value = JSON.parse(localStorage.getItem(key)); return value && typeof value === 'object' ? value : {}; } catch { return {}; } };
-    const session = key => { try { const list = JSON.parse(sessionStorage.getItem(key)); return Array.isArray(list) ? list : []; } catch { return []; } };
-    const PAGE = 20;
-    let shown = PAGE, report = null;
+    let report = null;
 
-    // What stands where: the site's own count, the verdicts given here, and the queue.
+    // What stands where: the site's own count, and the reader's flags.
     function standing() {
-      const state = load(), verdicts = Object.entries(state.verdicts).filter(([id]) => byId.has(id));
+      const verdicts = Object.entries(load().verdicts).filter(([id]) => byId.has(id));
       const fresh = ([id, verdict]) => verdict.rev === byId.get(id).h;
       const unsent = verdicts.filter(([, verdict]) => !verdict.sent);
-      // A record judged on its present text is out of the queue; one that has changed since comes back.
-      const judged = new Set(verdicts.filter(fresh).map(([id]) => id));
-      const drafts = cards.filter(card => !card.d && !judged.has(card.i));
-      const seen = local('lexicon-seen'), practised = (local('lexicon-practice').cards) || {};
-      const skipped = new Set(session(SKIPPED));
-      const rank = card => (skipped.has(card.i) ? 3 : seen[card.i] ? 0 : practised[card.i] ? 1 : 2);
-      const order = new Map(data.categories.map(([key], n) => [key, n]));
-      const recent = card => -(rank(card) === 0 ? seen[card.i] : rank(card) === 1 ? (practised[card.i].t || 0) : 0);
-      const queue = drafts.map((card, n) => [rank(card), recent(card), order.get(card.k), n, card])
-        .sort((a, b) => a[0] - b[0] || a[1] - b[1] || a[2] - b[2] || a[3] - b[3]).map(row => row[4]);
+      const done = cards.filter(card => card.d).length;
       return {
-        done: cards.filter(card => card.d).length, queue, seen, practised,
-        ok: unsent.filter(pair => pair[1].v === 'ok' && fresh(pair)),
-        staleOk: unsent.filter(pair => pair[1].v === 'ok' && !fresh(pair)),
+        done, drafts: cards.length - done,
         flags: unsent.filter(pair => pair[1].v === 'flag'),
-        // Sent, and the site does not show it yet: an entry marked right is still a draft, a flagged one still reads as it did.
+        // An entry marked right on this site before it kept only the flag (see load): still sent,
+        // if the entry reads as it did then. apply_review.py would refuse it otherwise.
+        ok: unsent.filter(pair => pair[1].v === 'ok' && fresh(pair)),
+        // Sent, and the site does not show it yet: a flagged entry still reads as it did (and an
+        // entry marked right that morning is still a draft).
         waiting: verdicts.filter(pair => pair[1].sent && fresh(pair) && !(pair[1].v === 'ok' && byId.get(pair[0]).d))
       };
     }
@@ -368,31 +320,14 @@
       document.querySelectorAll('[data-t]').forEach(node => { node.textContent = t(node.dataset.t); });
       document.querySelectorAll('[data-t-label]').forEach(node => node.setAttribute('aria-label', t(node.dataset.tLabel)));
       q('r-lang').querySelectorAll('button').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.lang === lang)));
-      q('r-editor').setAttribute('aria-checked', String(isEditor()));
       // The counts.
-      const rows = [['done', state.done], ['left', state.queue.length], ['flag', state.flags.length]];
-      if (isEditor() || state.ok.length) rows.push(['ok', state.ok.length]);
+      const rows = [['done', state.done], ['drafts', state.drafts], ['flag', state.flags.length]];
       if (state.waiting.length) rows.push(['waiting', state.waiting.length]);
       q('r-counts').replaceChildren(...rows.map(([key, n]) => {
         const row = el('div', '', [el('dt', '', number(n)), el('dd', '', t('counts')[key])]);
         row.dataset.count = key;
         return row;
       }));
-      // The queue: kept for the visit, so that an entry knows which comes after it.
-      try { sessionStorage.setItem(QUEUE, JSON.stringify(state.queue.map(card => card.i))); } catch {}
-      const names = new Map(data.categories.map(([key, latin]) => [key, latin]));
-      q('r-queue').replaceChildren(...state.queue.slice(0, shown).map(card => {
-        const why = state.seen[card.i] ? el('span', 'w-cat r-why', t('why').seen) : state.practised[card.i] ? el('span', 'w-cat r-why', t('why').practised)
-          : el('span', 'w-cat r-why', names.get(card.k), 'la');
-        const link = el('a', '', [el('span', 'w-en', card.e, 'en'), el('span', 'w-la', headOf(card.l), 'la'), why]);
-        link.href = `c/${card.i}.html?review=1`;
-        return el('li', '', link);
-      }));
-      q('r-more').hidden = state.queue.length <= shown;
-      const start = q('r-start');
-      start.hidden = !state.queue.length;
-      if (state.queue.length) start.href = `c/${state.queue[0].i}.html?review=1`;
-      q('r-queue-help').textContent = state.queue.length ? t('queueHelp') : t('queueEmpty');
       // What is to be sent.
       const pending = state.flags.length + state.ok.length;
       q('r-send-help').textContent = pending ? t('sendHelp') : t('sendNothing');
@@ -403,8 +338,7 @@
           const reasons = verdict.r.map(reason => t('reasons')[reason]).join(', ');
           return el('li', '', [link, reasons ? ': ' + reasons : '', ...(verdict.n ? [' ', el('q', '', verdict.n, '')] : [])]);
         }),
-        ...(state.ok.length ? [el('li', '', t('pendingOk')(state.ok.length))] : []),
-        ...(state.staleOk.length ? [el('li', 'p-help', t('staleOk')(state.staleOk.length))] : []));
+        ...(state.ok.length ? [el('li', '', t('pendingOk')(state.ok.length))] : []));
       q('r-build').hidden = !pending;
       if (!pending || !report) { q('r-report-box').hidden = true; report = null; }
       const waiting = q('r-waiting');
@@ -427,8 +361,6 @@
       try { localStorage.setItem(LANG, button.dataset.lang); } catch {}
       draw();
     }));
-    q('r-editor').addEventListener('click', () => { const state = load(); state.editor = !state.editor; save(state); draw(); });
-    q('r-more').addEventListener('click', () => { shown += PAGE; draw(); });
     q('r-build').addEventListener('click', () => {
       report = build(standing());
       q('r-report').value = report.text;
@@ -449,7 +381,7 @@
       q('r-copy').textContent = t('copied'); polish(q('r-copy'));
       setTimeout(() => { q('r-copy').textContent = t('copy'); polish(q('r-copy')); }, 2000);
     });
-    // The reader says that the report has gone: its verdicts are kept, as sent.
+    // The reader says that the report has gone: its flags are kept, as sent.
     q('r-sent').addEventListener('click', () => {
       if (!report) return;
       const state = load(), now = Date.now();
@@ -458,7 +390,7 @@
       report = null;
       draw();
     });
-    // Back from an entry without the page being loaded again: its verdict counts at once.
+    // Back from an entry without the page being loaded again: its flag counts at once.
     addEventListener('pageshow', event => { if (event.persisted) draw(); });
     q('r-lang').hidden = false;
     document.querySelector('.r-static')?.remove();
@@ -466,5 +398,5 @@
     draw();
   }
 
-  window.lexiconReview = { controls, verdictOf, isEditor };
+  window.lexiconReview = { controls, verdictOf };
 })();

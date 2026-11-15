@@ -10,7 +10,7 @@ Read first: `AGENTS.md`, `records.md` (the record format and the note shape), an
 2. Write the spec (format below) in `notes/conversions/<batch>.json`.
 3. `python3 scripts/convert_cards.py notes/conversions/<batch>.json` and fix what it reports. Repeat until it passes.
 4. `python3 scripts/convert_cards.py notes/conversions/<batch>.json --write`, then `python3 scripts/build.py`, `python3 scripts/consonantal_j.py --check` and `python3 -m unittest discover -s tests`. If your records cite the readers, also `python3 scripts/check_libelli.py --latinitas /home/claude/latinitas`.
-5. Commit `data/` and the spec only (`git add data notes/conversions/<batch>.json`), not the generated pages; the reviewer rebuilds them when merging.
+5. Commit `data/` and the spec only (`git add data notes/conversions/<batch>.json`). The generated pages are not kept in the repository.
 
 ## The spec
 

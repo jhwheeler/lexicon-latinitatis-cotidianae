@@ -57,7 +57,7 @@ To apply his verdicts (when he asks, or before the records he has read are chang
 
 1. Read every document of the collection `verdicts` from the artifact's database and save the lines to a file, one JSON object per line as the tool gives them.
 2. `python3 scripts/editor_review.py --report <file> | python3 scripts/apply_review.py -`, then `python3 scripts/build.py`. Read the summary and tell him what was not applied.
-3. Commit the records, `notes/review-flags.md` and the site.
+3. Commit the records and `notes/review-flags.md`; the site is built when it is published.
 4. Build and publish the page again, then delete from the database the documents that were applied (an entry marked right is now reviewed in the page's own data; a flag is now in `notes/review-flags.md`). Not before: until the page is published again, those documents are what tells it the entries are done.
 
 The Latin of the page is the wording of the site's flag where that has a word; the rest is Claude's, listed in a comment at the top of `src/editor/review.js`, awaiting the editor's review. The page is tested in `tests/editor.browser.test.mjs` (with a stand-in for the database) and its data in `tests/test_editor_review.py`. It was first published on 15 November 2026 and had not then been tried by the editor on his phone.
@@ -113,7 +113,7 @@ The script finds the JSON in whatever text surrounds it and for each verdict:
 - **`flag`**: a line is added to `notes/review-flags.md`, newest first, with the record, its link, the revision, the reasons and the note. A reviewed record that is flagged becomes a draft again. A flag already written (the same record and time) is not written twice.
 - A record the lexicon does not have is listed.
 
-It prints a summary and exits non-zero on a malformed report, having changed nothing. Commit the changed records, `notes/review-flags.md` and the rebuilt site together.
+It prints a summary and exits non-zero on a malformed report, having changed nothing. Commit the changed records and `notes/review-flags.md` together; the site is built when it is published.
 
 ## On the site
 

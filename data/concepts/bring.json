@@ -5,7 +5,9 @@
   "also": [
     "bring along",
     "bring here",
-    "bring over"
+    "bring over",
+    "carry to",
+    "import"
   ],
   "domain": "verba",
   "terms": [
@@ -43,6 +45,16 @@
         "Caes. BG 7.13: <span lang=\"la\">comprehēnsōs eōs ad Caesarem perdūxērunt</span> (Lewis &amp; Short)",
         "Cic. Verr. 2.5.31 (Lewis &amp; Short)"
       ]
+    },
+    {
+      "latin": "advehō, advehere, advexī, advectum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "carry or bring to a place; in the passive, ride or sail to",
+      "evidence": [
+        "Ter. Eun. 1.2.81: <span lang=\"la\">istam nunc timēs, quae advectast</span> (Lewis &amp; Short)",
+        "Sall. Jug. 86.4 (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -70,6 +82,11 @@
       "latin": "comprehēnsōs eōs ad Caesarem perdūxērunt",
       "english": "they seized them and brought them to Caesar",
       "source": "Caes. BG 7.13 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "diēbus paucīs Uticam advehitur",
+      "english": "within a few days he lands at Utica",
+      "source": "Sall. Jug. 86.4"
     }
   ],
   "related": [
@@ -83,11 +100,12 @@
     "Plautus and Cicero’s letters checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
     "Quotations from the Latinitas loci collections (loci-catullus, loci-plinius, loci-petronius), checked against the editions named there.",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 283.",
-    "<a href=\"https://logeion.uchicago.edu/perduco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: perduco</a>"
+    "<a href=\"https://logeion.uchicago.edu/perduco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: perduco</a>",
+    "<a href=\"https://logeion.uchicago.edu/adveho\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: adveho</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

@@ -10,7 +10,9 @@
     "feel pity for",
     "show sympathy for",
     "I feel sorry for",
-    "sympathy"
+    "sympathy",
+    "lament",
+    "bewail"
   ],
   "domain": "verba",
   "terms": [
@@ -69,6 +71,33 @@
         "Traupman 158"
       ],
       "comment": "Lewis &amp; Short: classical but rare."
+    },
+    {
+      "latin": "miseror, miserārī, miserātus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "lament, bewail; feel pity for, pity (+ accusative)",
+      "evidence": [
+        "Verg. A. 6.332: <span lang=\"la\">sortemque animō miserātus inīquam</span> (Lewis &amp; Short)",
+        "Cic. Mur. 55 (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Mē miseret aliōrum.",
+      "english": "I feel sorry for the others.",
+      "source": "Traupman 383"
+    },
+    {
+      "latin": "commiserēscere alicujus",
+      "english": "to feel pity for someone",
+      "source": "Traupman 360"
+    },
+    {
+      "latin": "sortemque animō miserātus inīquam",
+      "english": "and pitying in his heart their unfair lot",
+      "source": "Verg. A. 6.332 (Lewis &amp; Short)"
     }
   ],
   "related": [
@@ -80,23 +109,12 @@
     "<a href=\"https://logeion.uchicago.edu/misericordia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: misericordia</a>",
     "<a href=\"https://logeion.uchicago.edu/misereo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: misereo</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 105.",
-    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "<a href=\"https://logeion.uchicago.edu/miseror\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: miseror</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-15",
     "by": "Claude"
-  },
-  "phrases": [
-    {
-      "latin": "Mē miseret aliōrum.",
-      "english": "I feel sorry for the others.",
-      "source": "Traupman 383"
-    },
-    {
-      "latin": "commiserēscere alicujus",
-      "english": "to feel pity for someone",
-      "source": "Traupman 360"
-    }
-  ]
+  }
 }

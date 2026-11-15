@@ -10,12 +10,13 @@
     "summon",
     "send for (summon)",
     "call out",
-    "call forth"
+    "call forth",
+    "rouse"
   ],
+  "domain": "verba",
   "also_under": [
     "sermo"
   ],
-  "domain": "verba",
   "terms": [
     {
       "latin": "petō, petere, petīvī, petītum",
@@ -77,6 +78,16 @@
         "Cic. Att. 5.1.3: <span lang=\"la\">tū invītā mulierēs, ego accīverō puerōs</span> (Lewis &amp; Short)",
         "Tac. Hist. 2.3 (Lewis &amp; Short)"
       ]
+    },
+    {
+      "latin": "exciō, excīre, excīvī (exciī), excitum (excītum)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "call out, summon forth; rouse",
+      "evidence": [
+        "Liv. 4.27.6: <span lang=\"la\">clāmor subitō ortus dictātōrem quoque ex somnō excīvit</span> (Lewis &amp; Short)",
+        "Plaut. Ep. 4.2.1: <span lang=\"la\">quid est quod mē excīvistī ante aedēs?</span> (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -104,6 +115,11 @@
       "latin": "tū invītā mulierēs, ego accīverō puerōs",
       "english": "you invite the women, I shall have sent for the boys",
       "source": "Cic. Att. 5.1.3 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "clāmor subitō ortus dictātōrem quoque ex somnō excīvit",
+      "english": "a shout that suddenly went up roused the dictator too from his sleep",
+      "source": "Liv. 4.27.6 (Lewis &amp; Short)"
     }
   ],
   "related": [
@@ -121,11 +137,12 @@
     "<a href=\"https://logeion.uchicago.edu/affero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: affero</a>",
     "<a href=\"https://logeion.uchicago.edu/adduco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: adduco</a>",
     "<a href=\"https://logeion.uchicago.edu/evoco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: evoco</a>",
-    "<a href=\"https://logeion.uchicago.edu/accio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: accio</a>"
+    "<a href=\"https://logeion.uchicago.edu/accio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: accio</a>",
+    "<a href=\"https://logeion.uchicago.edu/excio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: excio</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

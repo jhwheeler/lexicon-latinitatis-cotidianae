@@ -6,7 +6,9 @@
     "differently",
     "unlike",
     "not the same",
-    "different from"
+    "different from",
+    "unequal",
+    "ill-matched"
   ],
   "domain": "verba",
   "terms": [
@@ -66,6 +68,16 @@
         "Cic. Caecin. 39: <span lang=\"la\">quid hoc ab illō differt?</span>"
       ],
       "comment": "Transitive, the same verb means “put off”, “postpone”."
+    },
+    {
+      "latin": "dispār, disparis",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "unlike, unequal, ill-matched",
+      "evidence": [
+        "Cic. Amic. 74",
+        "Caes. BG 5.16.2 (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -88,16 +100,22 @@
       "latin": "nōn vidēs quam dīversus sit dēscendentium habitus et ēscendentium?",
       "english": "don’t you see how differently people carry themselves going down and going up?",
       "source": "Sen. Ep. 123.14"
+    },
+    {
+      "latin": "disparēs enim mōrēs disparia studia sequuntur",
+      "english": "for unlike characters are followed by unlike pursuits",
+      "source": "Cic. Amic. 74"
     }
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/alius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: alius</a> · <a href=\"https://logeion.uchicago.edu/aliter\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aliter</a> · <a href=\"https://logeion.uchicago.edu/diverto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: diverto (dīversus)</a> · <a href=\"https://logeion.uchicago.edu/dissimilis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dissimilis</a> · <a href=\"https://logeion.uchicago.edu/differo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: differo</a>",
     "Quotations from the Latinitas loci collections (loci-gellius, loci-seneca-epistulae, loci-tacitus, loci-vergilius), checked against the editions named there.",
-    "Terence (And. 189, Ph. 684), Sallust (Cat. 6.2), Cicero (Fam. 3.7.5, Caecin. 39) and Gellius (16.14.2, Cato’s words from his speech <span lang=\"la\">Dē suīs virtūtibus</span>) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+    "Terence (And. 189, Ph. 684), Sallust (Cat. 6.2), Cicero (Fam. 3.7.5, Caecin. 39) and Gellius (16.14.2, Cato’s words from his speech <span lang=\"la\">Dē suīs virtūtibus</span>) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>.",
+    "<a href=\"https://logeion.uchicago.edu/dispar\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dispar</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

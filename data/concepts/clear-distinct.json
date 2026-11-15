@@ -6,7 +6,10 @@
   "also": [
     "clear (bright)",
     "clear voice",
-    "clearly (distinctly)"
+    "clearly (distinctly)",
+    "transparent",
+    "evident",
+    "plain"
   ],
   "domain": "verba",
   "terms": [
@@ -19,6 +22,23 @@
         "Traupman 292"
       ],
       "comment": "Bright to the eye, distinct to the ear, and so famous. A clear sky is <span lang=\"la\">serēnus</span> (see clear sky); clear in meaning, <span lang=\"la\">perspicuus, apertus</span>."
+    },
+    {
+      "latin": "perspicuus, perspicua, perspicuum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "transparent; evident, clear, plain",
+      "evidence": [
+        "Cic. ND 3.11: <span lang=\"la\">quasi vērō hoc perspicuum sit cōnstetque inter omnēs</span> (Lewis &amp; Short)",
+        "Ov. Met. 5.588 (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "quasi vērō hoc perspicuum sit cōnstetque inter omnēs",
+      "english": "as if this were plain and agreed among all",
+      "source": "Cic. ND 3.11 (Lewis &amp; Short)"
     }
   ],
   "related": [
@@ -28,11 +48,12 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/clarus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: clarus</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 292."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 292.",
+    "<a href=\"https://logeion.uchicago.edu/perspicuus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: perspicuus</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

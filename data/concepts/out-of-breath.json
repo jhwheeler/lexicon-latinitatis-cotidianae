@@ -7,7 +7,9 @@
     "winded",
     "panting",
     "scared to death",
-    "puffed"
+    "puffed",
+    "exhaust",
+    "wind"
   ],
   "domain": "corpus",
   "terms": [
@@ -21,6 +23,16 @@
         "Caes. BG 2.23.1: <span lang=\"la\">cursū ac lassitūdine exanimātī</span> (Lewis &amp; Short)"
       ],
       "comment": "The participle of <span lang=\"la\">exanimō</span>, take the breath (<span lang=\"la\">anima</span>) out of."
+    },
+    {
+      "latin": "exanimō, exanimāre, exanimāvī, exanimātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "deprive of breath: in the passive, be out of breath, be exhausted; also terrify, and kill",
+      "evidence": [
+        "Caes. BG 2.23.1 (Lewis &amp; Short)",
+        "Caes. BC 3.92.2 (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -33,6 +45,11 @@
       "latin": "nimis male timuī. Prius quam intrō rediī, exanimātus fuī.",
       "english": "I was dreadfully frightened. Before I got back inside, I was half dead.",
       "source": "Plaut. Aul. 208"
+    },
+    {
+      "latin": "cursū ac lassitūdine exanimātōs",
+      "english": "breathless with running and weariness",
+      "source": "Caes. BG 2.23.1"
     }
   ],
   "related": [

@@ -10,7 +10,9 @@
     "cover up",
     "cover up (against the cold)",
     "take cover",
-    "under cover of darkness"
+    "under cover of darkness",
+    "draw over",
+    "overspread"
   ],
   "domain": "domus",
   "terms": [
@@ -53,6 +55,16 @@
         "Cic. ND 2.10: <span lang=\"la\">capite vēlātō</span> (Lewis &amp; Short)",
         "Liv. 1.32.6: <span lang=\"la\">caput vēlātum fīlō</span> (Lewis &amp; Short)"
       ]
+    },
+    {
+      "latin": "obdūcō, obdūcere, obdūxī, obductum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "draw before or over; cover over, overspread",
+      "evidence": [
+        "Cic. ND 2.120: <span lang=\"la\">truncī obdūcuntur librō, aut cortice</span> (Lewis &amp; Short)",
+        "Caes. BG 2.8 (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -80,6 +92,11 @@
       "latin": "capite vēlātō",
       "english": "with the head covered",
       "source": "Cic. ND 2.10 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "mūtāta omnia altōque cinere tamquam nive obducta",
+      "english": "everything changed, and covered deep in ash as if in snow",
+      "source": "Plin. Ep. 6.20.18"
     }
   ],
   "related": [
@@ -94,11 +111,12 @@
     "<a href=\"https://logeion.uchicago.edu/tego\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tego</a>",
     "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 298.",
-    "<a href=\"https://logeion.uchicago.edu/velo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: velo</a>"
+    "<a href=\"https://logeion.uchicago.edu/velo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: velo</a>",
+    "<a href=\"https://logeion.uchicago.edu/obduco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: obduco</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-13",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

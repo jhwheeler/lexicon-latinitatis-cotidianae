@@ -3,7 +3,8 @@
   "english": "blush",
   "pos": "verb",
   "also": [
-    "go red"
+    "go red",
+    "redness"
   ],
   "domain": "corpus",
   "terms": [
@@ -15,15 +16,33 @@
         "Traupman 149",
         "Cic."
       ]
+    },
+    {
+      "latin": "rubor, rubōris m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "redness; a blush; shame",
+      "evidence": [
+        "Cic. ND 1.75: <span lang=\"la\">candōre mixtus rubor</span> (Lewis &amp; Short)",
+        "Verg. A. 12.66 (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Rubōrem amīcō excutere amīcum est perdere.",
+      "english": "To make a friend blush is to lose a friend.",
+      "source": "Publil. Sent. R 21"
     }
   ],
   "sources": [
     "<a href=\"https://logeion.org/erubesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: erubesco</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 149."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 149.",
+    "<a href=\"https://logeion.uchicago.edu/rubor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: rubor</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

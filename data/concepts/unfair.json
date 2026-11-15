@@ -4,7 +4,8 @@
   "pos": "adjective",
   "also": [
     "unfairly",
-    "unjust"
+    "unjust",
+    "wrongful"
   ],
   "domain": "verba",
   "terms": [
@@ -25,6 +26,23 @@
       "evidence": [
         "Traupman 159, 400"
       ]
+    },
+    {
+      "latin": "injūstus, injūsta, injūstum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "contrary to right, unjust, wrongful; also excessive, oppressive",
+      "evidence": [
+        "Cic. Tusc. 5.57: <span lang=\"la\">vir maleficus nātūrā et injūstus</span> (Lewis &amp; Short)",
+        "Cic. Or. 35 (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "vir maleficus nātūrā et injūstus",
+      "english": "a man wicked by nature and unjust",
+      "source": "Cic. Tusc. 5.57 (Lewis &amp; Short)"
     }
   ],
   "related": [
@@ -33,11 +51,12 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/iniquus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: iniquus</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>.",
+    "<a href=\"https://logeion.uchicago.edu/injustus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: injustus</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

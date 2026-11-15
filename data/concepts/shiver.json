@@ -7,7 +7,10 @@
     "shivers",
     "shivering",
     "tremble",
-    "tremble all over"
+    "tremble all over",
+    "trembling",
+    "quivering",
+    "shaky"
   ],
   "domain": "corpus",
   "terms": [
@@ -47,6 +50,29 @@
         "Cic. Tusc. 4.19: <span lang=\"la\">terrōrem pallor et tremor cōnsequitur</span> (Lewis &amp; Short)",
         "Traupman 377"
       ]
+    },
+    {
+      "latin": "tremulus, tremula, tremulum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "shaking, quivering, trembling",
+      "register": "vōx plērumque poētica: Catull., Ov.",
+      "evidence": [
+        "Ter. Eun. 2.3.45: <span lang=\"la\">incurvus, tremulus, labiīs dēmissīs, gemēns</span> (Lewis &amp; Short)",
+        "Ov. Met. 15.212 (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "membrōrum quassātiō",
+      "english": "a severe fit of shivering",
+      "source": "Traupman 377"
+    },
+    {
+      "latin": "puerī īnstar bimulī tremulā patris dormientis in ulnā",
+      "english": "like a two-year-old boy asleep on his father’s rocking arm",
+      "source": "Catull. 17.12–13"
     }
   ],
   "related": [
@@ -57,18 +83,12 @@
     "<a href=\"https://logeion.org/tremo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tremo</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 65.",
     "<a href=\"https://neolatinlexicon.org/\" rel=\"noopener noreferrer\" target=\"_blank\">Neo-Latin Lexicon</a> s.v. shivers, chill.",
-    "<a href=\"https://logeion.uchicago.edu/tremor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tremor</a>"
+    "<a href=\"https://logeion.uchicago.edu/tremor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tremor</a>",
+    "<a href=\"https://logeion.uchicago.edu/tremulus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tremulus</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-15",
     "by": "Claude"
-  },
-  "phrases": [
-    {
-      "latin": "membrōrum quassātiō",
-      "english": "a severe fit of shivering",
-      "source": "Traupman 377"
-    }
-  ]
+  }
 }

@@ -7,7 +7,9 @@
     "slavery",
     "enslaved",
     "servitude",
-    "bondage"
+    "bondage",
+    "servile",
+    "slavish"
   ],
   "domain": "res-publica",
   "terms": [
@@ -59,6 +61,16 @@
         "Sall. Jug. 94.4 (Lewis &amp; Short)"
       ],
       "comment": "Not so in Cicero, who has <span lang=\"la\">servitūs</span> (Lewis &amp; Short)."
+    },
+    {
+      "latin": "servīlis, servīle",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "of a slave or of slaves, slavish, servile",
+      "evidence": [
+        "Caes. BG 6.19: <span lang=\"la\">dē uxōribus in servīlem modum quaestiōnem habent</span> (Lewis &amp; Short)",
+        "Liv. 3.16 (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -81,6 +93,11 @@
       "latin": "ductus ab crēditōre in servitium",
       "english": "led off into slavery by his creditor",
       "source": "Liv. 2.23.6 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "dē uxōribus in servīlem modum quaestiōnem habent",
+      "english": "they examine the wives under torture, as is done with slaves",
+      "source": "Caes. BG 6.19 (Lewis &amp; Short)"
     }
   ],
   "related": [
@@ -89,11 +106,12 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/servus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: servus</a> · <a href=\"https://logeion.uchicago.edu/ancilla\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ancilla</a> · <a href=\"https://logeion.uchicago.edu/mancipium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mancipium</a> · <a href=\"https://logeion.uchicago.edu/servitus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: servitus</a>",
     "Quotations from the Latinitas loci collections (loci-seneca-epistulae), checked there against the editions they name.",
-    "<a href=\"https://logeion.uchicago.edu/servitium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: servitium</a>"
+    "<a href=\"https://logeion.uchicago.edu/servitium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: servitium</a>",
+    "<a href=\"https://logeion.uchicago.edu/servilis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: servilis</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

@@ -12,10 +12,10 @@
     "faster",
     "fastest"
   ],
+  "domain": "verba",
   "also_under": [
     "corpus"
   ],
-  "domain": "verba",
   "terms": [
     {
       "latin": "celer, celeris, celere",
@@ -53,6 +53,17 @@
         "Lewis &amp; Short: of waters, winds and fire"
       ],
       "comment": "First tearing, seizing (of fire and heat); then rushing along, of rivers, winds and horses. Not the everyday word for a fast person (that is <span lang=\"la\">celer</span>)."
+    },
+    {
+      "latin": "citus, cita, citum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "quick, swift, rapid",
+      "evidence": [
+        "Plaut. Aul. 600: <span lang=\"la\">quod jubeat citīs quadrīgīs citius properet persequī</span> (Lewis &amp; Short)",
+        "Sall. Cat. 15.5 (Lewis &amp; Short)"
+      ],
+      "comment": "Classical, but commonest in verse and rare in Cicero (Lewis &amp; Short)."
     }
   ],
   "phrases": [
@@ -65,6 +76,11 @@
       "latin": "cum vēnātōrem celerī pede fugeret lepus",
       "english": "when a hare was running from a hunter on swift feet",
       "source": "Phaedr. App. 28.1"
+    },
+    {
+      "latin": "quod jubeat citīs quadrīgīs citius properet persequī",
+      "english": "let him hurry to carry out what he is told faster than a swift four-horse chariot",
+      "source": "Plaut. Aul. 600 (Lewis &amp; Short)"
     }
   ],
   "related": [
@@ -77,11 +93,12 @@
     "<a href=\"https://logeion.uchicago.edu/celer\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: celer</a> · <a href=\"https://logeion.uchicago.edu/velox\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: velox</a> · <a href=\"https://logeion.uchicago.edu/rapidus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: rapidus</a>",
     "Quotations from the Latinitas loci collections (loci-ovidius, loci-plinius, loci-phaedrus), checked against the editions named there.",
     "Plautus as Lewis &amp; Short quotes him.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 313, 367."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 313, 367.",
+    "<a href=\"https://logeion.uchicago.edu/cieo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cieo</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

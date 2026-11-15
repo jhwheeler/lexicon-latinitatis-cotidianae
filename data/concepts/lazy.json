@@ -2,6 +2,13 @@
   "id": "lazy",
   "english": "lazy",
   "pos": "adjective",
+  "also": [
+    "laziness",
+    "apathetic",
+    "idle",
+    "idleness",
+    "sluggish"
+  ],
   "domain": "sermo",
   "terms": [
     {
@@ -66,6 +73,16 @@
         "Cic. Brut. 8: <span lang=\"la\">nōn inertiae neque dēsidiae</span> (Lewis &amp; Short)"
       ],
       "comment": "From <span lang=\"la\">dēsideō</span>, sit idle."
+    },
+    {
+      "latin": "inertia, inertiae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "want of skill; idleness, laziness",
+      "evidence": [
+        "Cic. de Or. 1.185: <span lang=\"la\">castīgāre sēgnitiem hominum atque inertiam</span> (Lewis &amp; Short)",
+        "Cic. Rosc. Com. 24 (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -73,6 +90,11 @@
       "latin": "nihil mē est inertius",
       "english": "nothing is lazier than I am",
       "source": "Cic. Att. 2.8.1"
+    },
+    {
+      "latin": "Inertia est labōris excūsātiō.",
+      "english": "Laziness is an excuse from work.",
+      "source": "Publil. Sent. I 50"
     }
   ],
   "sources": [
@@ -84,18 +106,12 @@
     "Quotations from the Latinitas loci collections, checked against the editions named there.",
     "<a href=\"https://logeion.uchicago.edu/iners\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: iners</a>",
     "<a href=\"https://logeion.uchicago.edu/desidia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: desidia</a>",
-    "Plautus, <em>Bacchides</em> 1083. Terence, <em>Andria</em> 608."
+    "Plautus, <em>Bacchides</em> 1083. Terence, <em>Andria</em> 608.",
+    "<a href=\"https://logeion.uchicago.edu/inertia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: inertia</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-15",
     "by": "Claude"
-  },
-  "also": [
-    "laziness",
-    "apathetic",
-    "idle",
-    "idleness",
-    "sluggish"
-  ]
+  }
 }

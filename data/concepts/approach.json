@@ -12,7 +12,8 @@
     "draw near",
     "go up to",
     "get closer",
-    "be coming"
+    "be coming",
+    "come on"
   ],
   "domain": "verba",
   "terms": [
@@ -59,6 +60,16 @@
         "Cic. Fam. 2.6.1: <span lang=\"la\">cum adpropinquāre tuus adventus putārētur</span>"
       ],
       "comment": "The noun for someone’s coming."
+    },
+    {
+      "latin": "adventō, adventāre, adventāvī, adventātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "come ever nearer, approach, arrive; often of an army on the march",
+      "evidence": [
+        "Cic. de Or. 1.199: <span lang=\"la\">quod jam tempus adventat</span> (Lewis &amp; Short)",
+        "Cic. Sen. 2 (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -76,6 +87,11 @@
       "latin": "ubi es? — Ecce mē. accēde ad mē atque adī contrā.",
       "english": "where are you? — Here I am. Come up to me, come this way.",
       "source": "Plaut. Rud. 241–242"
+    },
+    {
+      "latin": "quod jam tempus adventat",
+      "english": "and that time is now coming on fast",
+      "source": "Cic. de Or. 1.199 (Lewis &amp; Short)"
     }
   ],
   "related": [
@@ -86,11 +102,12 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/appropinquo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: appropinquo</a> · <a href=\"https://logeion.uchicago.edu/accedo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: accedo</a> · <a href=\"https://logeion.uchicago.edu/adeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: adeo</a> · <a href=\"https://logeion.uchicago.edu/adventus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: adventus</a>",
     "Cicero’s letters and Plautus’ <em>Rudens</em> checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (9 November 2026).",
-    "Quotations from the Latinitas loci collections (loci-gellius, loci-varro, loci-plautus), checked against the editions named there."
+    "Quotations from the Latinitas loci collections (loci-gellius, loci-varro, loci-plautus), checked against the editions named there.",
+    "<a href=\"https://logeion.uchicago.edu/advento\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: advento</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

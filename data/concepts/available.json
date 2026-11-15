@@ -10,7 +10,8 @@
     "make available",
     "if it’s available",
     "in stock",
-    "is it available?"
+    "is it available?",
+    "on the spot"
   ],
   "domain": "verba",
   "terms": [
@@ -67,6 +68,16 @@
         "Cic. Pis. 55: togulae līctōribus ad portam praestō fuērunt (Lewis &amp; Short s.v. praestō)",
         "Traupman 114: sī praestō est, if it’s available"
       ]
+    },
+    {
+      "latin": "praestō",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "at hand, ready, present, here; mostly with esse or adesse",
+      "grammar": "adverb",
+      "evidence": [
+        "Ter. Eun. 5.8.20: <span lang=\"la\">Praestō adest</span> (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -84,6 +95,11 @@
       "latin": "Estne in prōmptū placenta ex socolātā?",
       "english": "Is chocolate cake available?",
       "source": "Traupman 68"
+    },
+    {
+      "latin": "ibi mihi Tulliola mea fuit praestō nātālī suō ipsō diē",
+      "english": "there my little Tullia was waiting to meet me, on her very birthday",
+      "source": "Cic. Att. 4.1.4"
     }
   ],
   "related": [
@@ -98,7 +114,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

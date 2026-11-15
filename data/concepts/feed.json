@@ -4,7 +4,10 @@
   "sense": "give food to",
   "pos": "verb",
   "also": [
-    "feeding"
+    "feeding",
+    "nourish",
+    "suckle",
+    "rear"
   ],
   "domain": "culina",
   "terms": [
@@ -40,6 +43,17 @@
         "Tac. Germ. 20.1: <span lang=\"la\">sua quemque māter ūberibus alit</span>"
       ],
       "comment": "Feeding that brings up: a mother nursing her baby."
+    },
+    {
+      "latin": "nūtriō, nūtrīre, nūtrīvī (nūtriī), nūtrītum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "suckle, nourish, feed, bring up, rear",
+      "evidence": [
+        "Ov. F. 2.415: <span lang=\"la\">quōs lupa nūtrit</span> (Lewis &amp; Short)",
+        "Hor. S. 2.4.40: <span lang=\"la\">īlignā nūtrītus glande</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Not in Cicero (Lewis &amp; Short)."
     }
   ],
   "phrases": [
@@ -52,6 +66,16 @@
       "latin": "Respicite volātilia caelī … et Pater vester caelestis pāscit illa.",
       "english": "Look at the birds of the air … and your heavenly Father feeds them.",
       "source": "Vulg. Mt. 6.26"
+    },
+    {
+      "latin": "quōs lupa nūtrit",
+      "english": "whom the she-wolf suckles",
+      "source": "Ov. F. 2.415 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "hōc pinguem et placitam Pācī nūtrītor olīvam",
+      "english": "in this way rear the rich olive that Peace loves",
+      "source": "Verg. G. 2.425"
     }
   ],
   "related": [
@@ -62,11 +86,12 @@
     "<a href=\"https://logeion.uchicago.edu/pasco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pasco</a> · <a href=\"https://logeion.uchicago.edu/cibo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cibo</a> · <a href=\"https://logeion.uchicago.edu/alo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: alo</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 166, 314.",
     "Quotations from the Latinitas loci collections (loci-vergilius, loci-vulgata, loci-tacitus), checked against the editions named there.",
-    "Cicero (Att. 6.1.13) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>."
+    "Cicero (Att. 6.1.13) checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a>.",
+    "<a href=\"https://logeion.uchicago.edu/nutrio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nutrio</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

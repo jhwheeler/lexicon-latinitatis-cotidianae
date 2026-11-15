@@ -10,12 +10,14 @@
     "afterwards",
     "subsequently",
     "the next point is",
-    "the next thing is"
+    "the next thing is",
+    "henceforth",
+    "from now on"
   ],
+  "domain": "sermo",
   "also_under": [
     "verba"
   ],
-  "domain": "sermo",
   "terms": [
     {
       "latin": "deinde (dein)",
@@ -97,6 +99,18 @@
       "evidence": [
         "Traupman 351"
       ]
+    },
+    {
+      "latin": "dehinc",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "from here; from this time on, henceforth; next, then",
+      "grammar": "adverb",
+      "evidence": [
+        "Hor. AP 143 (Lewis &amp; Short)",
+        "Verg. G. 3.167 (Lewis &amp; Short)"
+      ],
+      "comment": "Frequent in Plautus and Terence and from the Augustan age; not in Cicero, Caesar or Quintilian (Lewis &amp; Short)."
     }
   ],
   "phrases": [
@@ -119,6 +133,11 @@
       "latin": "unde … dein … dein … inde …",
       "english": "next comes …, then …, then …, after that …",
       "source": "Traupman 351"
+    },
+    {
+      "latin": "dehinc quīntus Quīntīlis et sīc deinceps ūsque ad Decembrem ā numerō",
+      "english": "then the fifth month is Quintilis, and so on in order as far as December, each from its number",
+      "source": "Varr. LL 6.34"
     }
   ],
   "related": [
@@ -134,11 +153,12 @@
     "<a href=\"https://logeion.uchicago.edu/proximus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: proximus</a>",
     "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 37, 40, 42, 351.",
-    "<a href=\"https://logeion.uchicago.edu/postilla\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: postilla</a>"
+    "<a href=\"https://logeion.uchicago.edu/postilla\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: postilla</a>",
+    "<a href=\"https://logeion.uchicago.edu/dehinc\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dehinc</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

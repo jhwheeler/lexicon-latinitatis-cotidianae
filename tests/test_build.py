@@ -13,6 +13,59 @@ spec = importlib.util.spec_from_file_location('build', ROOT / 'scripts/build.py'
 builder = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(builder)
 
+# Building the site takes several seconds, and most tests build it from an untouched copy of the
+# data. Those builds are all the same, so the first is kept and handed out again (each caller gets
+# a dictionary of its own). A test that changes a file gets a build of its own, as before. The
+# copy is known to be untouched by a hash of every file under data/ and src/, names and bytes.
+import hashlib
+
+_build_site = builder.build_site
+_untouched = {}
+
+
+def _state(root):
+    digest = hashlib.blake2b(_state_of_data(root).encode(), digest_size=16)
+    # The builder also reads two tables under refs/ where they exist (a temporary copy has none).
+    for path in sorted((Path(root) / 'refs').glob('*.tsv')) if (Path(root) / 'refs').exists() else []:
+        digest.update(f'{path.name} {path.stat().st_size}\0'.encode())
+    return digest.hexdigest()
+
+
+def build_site(root=ROOT):
+    state = _state(root)
+    # Two states are kept: the repository's own, and its data and sources copied without refs/,
+    # which is what a test's temporary copy is until the test changes it.
+    if state not in _untouched and len(_untouched) < 2 and _first_of_its_kind(root):
+        _untouched[state] = (_build_site(root), None)
+        _untouched[state] = (_untouched[state][0], dict(builder.LINK_TOTALS))
+    if state not in _untouched:
+        return _build_site(root)
+    outputs, totals = _untouched[state]
+    builder.LINK_TOTALS.update(totals)
+    return dict(outputs)
+
+
+def _first_of_its_kind(root):
+    """Whether this tree is the repository's data and sources, unchanged."""
+    if '' not in _pristine:
+        _pristine[''] = _state_of_data(ROOT)
+    return _state_of_data(root) == _pristine['']
+
+
+_pristine = {}
+
+
+def _state_of_data(root):
+    digest = hashlib.blake2b(digest_size=16)
+    for folder in ('data', 'src'):
+        for path in sorted((Path(root) / folder).rglob('*')):
+            if path.is_file():
+                digest.update(str(path.relative_to(root)).encode() + b'\0' + path.read_bytes() + b'\0')
+    return digest.hexdigest()
+
+
+builder.build_site = build_site
+
 
 class BuildTests(unittest.TestCase):
     def setUp(self):
@@ -50,6 +103,27 @@ class BuildTests(unittest.TestCase):
         script = outputs['assets/practice-data.js']
         self.assertTrue(script.startswith('window.lexiconPractice = ') and script.endswith(';\n'))
         return json.loads(script[len('window.lexiconPractice = '):-2])
+
+    def test_the_fast_scan_of_a_page_agrees_with_the_parser(self):
+        """check_links reads the pages with patterns, not with the HTML parser, which took most of a
+        build. On a sample of every kind of page the two must find the same IDs and the same links."""
+        outputs = builder.build_site()
+        pages = [path for path in sorted(outputs) if path.endswith('.html')]
+        sample = [path for path in pages if '/' not in path] + pages[::40]
+        self.assertGreater(len(sample), 400)
+        for path in sample:
+            parsed, scanned = builder.Document(), builder.Scanned(outputs[path])
+            parsed.feed(outputs[path])
+            self.assertEqual(scanned.ids, parsed.ids, path)
+            self.assertEqual(scanned.links, parsed.links, path)
+        # Scripts, styles and comments are not markup, and entities are read as the parser reads them.
+        page = builder.Scanned('<!-- <a id="no" href="no.html"> --><script>var a = \'<a id="no2" href="x.html">\';</script>'
+                               '<style>a[href="y"] {}</style><p id="yes"><a data-id="z" href="c/a.html?x=1&amp;y=2">a</a>'
+                               '<a href="https://example.org/">b</a></p>')
+        self.assertEqual(page.ids, {'yes'})
+        self.assertEqual(page.links, ['c/a.html?x=1&y=2'])
+        with self.assertRaisesRegex(ValueError, 'Duplicate HTML ID: twice'):
+            builder.Scanned('<p id="twice"></p><p id="twice"></p>')
 
     def test_committed_output_matches_sources(self):
         self.assertEqual(builder.build(), (ROOT / 'index.html').read_text(encoding='utf-8'))

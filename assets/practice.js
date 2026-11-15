@@ -20,14 +20,67 @@
   // to choose by, so this group leaves the phrases as they are.
   const PARTS = ['n', 'v', 'a', 'd', 'o'];
   const PART_OF = { noun: 'n', verb: 'v', adjective: 'a', adverb: 'd' };
-  // The Leitner boxes of the drill in Jack's hub, so that progress moves between the two: a card
-  // waits 10 minutes, 1 hour, 1, 3, 7, 16, 35 days as it climbs; "Again" sends it back to the first
-  // box; a new card that is right first time starts in the third. "Known" is three days or more.
-  const ROUND = 12, KNOWN = 3, TOP = 6, HOUR = 3600e3, DAY = 24 * HOUR;
-  const WAIT = [HOUR / 6, HOUR, DAY, 3 * DAY, 7 * DAY, 16 * DAY, 35 * DAY];
+  // The boxes are the Leitner boxes of the drill in Jack's hub, 0 to 6, and the record kept for a
+  // card is the same ({b, due, t}), so that progress still moves between the two. How a card moves
+  // through them, when it is due and what a round holds differ from the hub's since 15 November
+  // 2026. Jack, having played every day (15 November 2026): the day after a long session every round
+  // was yesterday's words and nothing else, "really boring"; a word missed once came back four
+  // times in two days, three of them right; it "needs some mental variety". The cause: a missed
+  // card climbed through 10 minutes, 1 hour, 1 day and 3 days; a new card known at sight came back
+  // the next day; a round took every due card before any new one; and cards learned together came
+  // due together ever after.
+  //
+  // The rules now. The numbers are the coordinating session's choice, not Jack's, and are here to
+  // be tuned:
+  // - "Again", any card: box 0, due in AGAIN_WAIT (10 minutes). It is not put back into the round.
+  // - "Got it" on a card in box 0 or 1 (one that was missed, or one imported from the hub in its
+  //   hour box): box RELEARNT (2), due the next day. The hour step is no longer climbed.
+  // - "Got it" on a new card: box NEW_KNOWN (3), 3 or 4 days. It was known without being shown.
+  // - "Got it" on a card in box 2 or higher: up one box, to TOP.
+  // - Waits of a day or more are counted in days of the calendar, a day starting at DAY_STARTS
+  //   o'clock on the device (04:00, so that a session late at night belongs to the evening): a
+  //   card due "in 1 day" is due from the start of the next day, whatever the hour it was marked.
+  // - WAIT_DAYS gives for each box the fewest and the most days: the nominal waits of 1, 3, 7, 16
+  //   and 35 days, spread from box 3 up by about 15% either way (a day at least from 7 days up),
+  //   a whole number of days chosen at random, so that cards learned together do not come back
+  //   together. Box 2 is always the next day.
+  // - A round has ROUND cards, of which at most ROUND_DUE are repetitions while the deck still has
+  //   new cards; the two are mixed.
+  // Two grounds for the numbers. Anki's defaults: a card answered "Good" through its learning
+  // steps graduates to an interval of 1 day, one answered "Easy" at once to 4 days (the settings
+  // are "Graduating interval" and "Easy interval" in the Anki manual, Deck Options; 1 and 4 are
+  // the values the program starts with). And the finding that what matters most is that a
+  // retrieval comes after a real delay, not the exact rate at which the gaps grow (Kang, Lindsey,
+  // Mozer & Pashler 2014, "Retrieval practice over the long term: should spacing be expanding or
+  // equal-interval?", Psychonomic Bulletin & Review 21, 1544–1550).
+  // "Known", in the meter, is box 3 or higher: three days or more.
+  const ROUND = 12, ROUND_DUE = 6, KNOWN = 3, TOP = 6, HOUR = 3600e3, DAY = 24 * HOUR;
+  const AGAIN_WAIT = HOUR / 6, RELEARNT = 2, NEW_KNOWN = 3, DAY_STARTS = 4;
+  const WAIT_DAYS = [null, null, [1, 1], [3, 4], [6, 8], [14, 18], [30, 40]];   // by box: [fewest, most] days; boxes 0 and 1 wait less than a day
   const KEY = { progress: 'lexicon-practice', deck: 'lexicon-practice-deck', seen: 'lexicon-seen', lists: 'lexicon-lists',
     lang: 'lexicon-practice-lang', round: 'lexicon-practice-round' };
   const number = n => n.toLocaleString('en');
+
+  // The start of the day n days after this moment, on the device's clock: a day starts at
+  // DAY_STARTS o'clock, so 01:00 on Tuesday is still Monday. With n = 0, the start of its own day.
+  // It is read from the clock's own date and hour, so a day of 23 or 25 hours is still one day.
+  function dayStart(moment, n) {
+    const date = new Date(moment);
+    return new Date(date.getFullYear(), date.getMonth(), date.getDate() - (date.getHours() < DAY_STARTS ? 1 : 0) + n, DAY_STARTS).getTime();
+  }
+  // When a card marked at this moment into this box is due: box 0 in ten minutes, a higher box at
+  // the start of a day, as many days on as WAIT_DAYS allows, chosen at random between its two ends.
+  function dueFrom(now, b) {
+    if (!WAIT_DAYS[b]) return now + AGAIN_WAIT;
+    const [fewest, most] = WAIT_DAYS[b];
+    return dayStart(now, fewest + Math.min(most - fewest, Math.floor(Math.random() * (most - fewest + 1))));
+  }
+  // The box a mark sends a card to; record is null for a new card.
+  function boxAfter(record, got) {
+    if (!got) return 0;
+    if (!record) return NEW_KNOWN;
+    return record.b < RELEARNT ? RELEARNT : Math.min(TOP, record.b + 1);
+  }
 
   // The words of the interface --------------------------------------------------------------------
   // Latin is the default (Jack, 14 November 2026: "I wish it were in Latin"), English the other
@@ -360,9 +413,12 @@
 
   // The lobby: the deck's count, the meter, and the way in ---------------------------------------------
   const dueIn = (list, now) => list.filter(card => rec(card.i) && rec(card.i).due <= now).length;
-  function when(ms) {
-    const hours = ms < HOUR ? 0 : Math.round(ms / HOUR);
-    return t('wait')(hours, Math.max(1, Math.round(ms / DAY)));
+  // How long until a card comes back: under a day, in hours, as it always was; from a day up, in
+  // days of the calendar (dayStart), since that is how the waits are counted: a card marked on
+  // Monday evening for Thursday comes back "in 3 days", though that is 56 hours.
+  function when(due, now) {
+    const ms = due - now, hours = ms < HOUR ? 0 : Math.round(ms / HOUR);
+    return t('wait')(hours, Math.max(1, Math.round((dayStart(due, 0) - dayStart(now, 0)) / DAY)));
   }
   // What the deck holds now: cards due, cards new, and if neither, when the next one comes back.
   function standing() {
@@ -371,7 +427,7 @@
     const waiting = [due ? t('due')(due) : '', fresh ? t('fresh')(fresh) : ''].filter(Boolean).join(', ') + '.';
     if (due || fresh) return { more: true, early: false, due, fresh, text: waiting };
     if (!met.length) return { more: false, early: false, due, fresh, text: t('none') };
-    return { more: false, early: true, due, fresh, text: t('nothing')(when(Math.min(...met.map(card => rec(card.i).due)) - now)) };
+    return { more: false, early: true, due, fresh, text: t('nothing')(when(Math.min(...met.map(card => rec(card.i).due)), now)) };
   }
   function drawLobby() {
     const state = standing();
@@ -392,21 +448,39 @@
     polish(root);
   }
 
-  // Rounds: the cards that are due, the longest overdue first, then new ones in no order; twelve to
-  // a round, and one card for each Latin headword (guard and security officer are both custōs).
-  // The round is kept for the visit (sessionStorage), so that a reader who opens a card's entry
-  // and comes back finds the same card, with its answer still shown (Jack, 14 November 2026).
+  // Rounds: twelve cards, one for each Latin headword (guard and security officer are both
+  // custōs). While the deck has new cards, at most half of a round is repetition (ROUND_DUE), so
+  // that the day after a long session is not that session over again (Jack, 15 November 2026);
+  // new cards, in no order, are the rest. With fewer due, new cards fill the round; with no new
+  // cards left, due ones do. The due cards taken are first those in box 0 (missed, and waiting
+  // to be seen again), then the rest, the longest overdue first, and among cards due on the same
+  // day in no order. The round is then mixed, repetitions among new cards. An early round, when
+  // nothing is due and nothing is new, takes the cards that are due soonest, in that order.
+  // The round is kept on the device, so that a reader who opens a card's entry and comes back
+  // finds the same card, with its answer still shown (Jack, 14 November 2026). It was kept for the
+  // visit only (sessionStorage) until 15 November 2026, when Jack found it lost on his iPhone: a
+  // link from the entry to another site opens a sheet over the app, and after it the app had a new
+  // visit, with no way back and no round. So it is in localStorage, with the time it was kept: a
+  // round can be taken up again for ROUND_KEPT (12 hours), and opens by itself, over the lobby,
+  // for ROUND_REOPENS (1 hour); after that the lobby offers it (Perge). An entry opened from the
+  // current card shows a link back to the round (src/page.js reads this key).
   const idle = () => ({ queue: [], current: null, shown: false, done: false, got: 0, again: 0, missed: [], size: 0, last: '', undo: null });
   let round = idle();
+  const ROUND_KEPT = 12 * HOUR, ROUND_REOPENS = HOUR;
+  const forget = () => { try { localStorage.removeItem(KEY.round); } catch {} };
   function keep() {
-    try {
-      if (!round.current && !round.done) { sessionStorage.removeItem(KEY.round); return; }
-      sessionStorage.setItem(KEY.round, JSON.stringify({ ...round, queue: round.queue.map(card => card.i), current: round.current ? round.current.i : null, open: game.open }));
-    } catch {}
+    if (!round.current && !round.done) { forget(); return; }
+    write(KEY.round, { ...round, queue: round.queue.map(card => card.i), current: round.current ? round.current.i : null, open: game.open, at: Date.now() });
   }
   function restore() {
-    let kept = null;
-    try { kept = JSON.parse(sessionStorage.getItem(KEY.round)); } catch {}
+    let kept = read(KEY.round, null), age = 0;
+    if (kept && typeof kept === 'object') {
+      age = Date.now() - kept.at;
+      if (!(age >= 0 && age <= ROUND_KEPT)) { forget(); return false; }
+    } else {
+      // A round in progress when the round moved out of sessionStorage: taken up once from there.
+      try { kept = JSON.parse(sessionStorage.getItem(KEY.round)); sessionStorage.removeItem(KEY.round); } catch {}
+    }
     if (!kept || typeof kept !== 'object' || !Array.isArray(kept.queue)) return false;
     const queue = kept.queue.map(id => byId.get(id)), current = kept.current ? byId.get(kept.current) : null;
     const count = value => (Number.isFinite(value) && value >= 0 ? value : 0);
@@ -415,19 +489,39 @@
     const undo = kept.undo && byId.has(kept.undo.id) ? { id: kept.undo.id, before: sane(kept.undo.before), got: count(kept.undo.got), again: count(kept.undo.again), missed: ids(kept.undo.missed) } : null;
     round = { queue, current, shown: !!kept.shown && !!current, done: !current, got: count(kept.got), again: count(kept.again), missed: ids(kept.missed),
       size: Math.max(count(kept.size), queue.length + (current ? 1 : 0)), last: String(kept.last || ''), undo };
-    return !!kept.open;
+    const reopen = !!kept.open && age <= ROUND_REOPENS;
+    if (round.done && !reopen) { round = idle(); forget(); }   // a finished round is not offered again
+    return reopen;
   }
   function shuffled(list) {
     for (let i = list.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [list[i], list[j]] = [list[j], list[i]]; }
     return list;
   }
   function newRound(early) {
-    const now = Date.now(), byDue = (a, b) => rec(a.i).due - rec(b.i).due, last = round.last;
-    const pick = early ? pool.filter(card => rec(card.i)).sort(byDue)
-      : pool.filter(card => rec(card.i) && rec(card.i).due <= now).sort(byDue).concat(shuffled(pool.filter(card => !rec(card.i))));
-    const heads = new Set();
+    const now = Date.now(), last = round.last, heads = new Set();
+    // Up to so many cards of a list, in its order, none with a headword the round already has.
+    const take = (list, most) => {
+      const taken = [];
+      for (const card of list) {
+        if (taken.length >= most) break;
+        if (!heads.has(card.head)) { heads.add(card.head); taken.push(card); }
+      }
+      return taken;
+    };
+    let queue;
+    if (early) queue = take(pool.filter(card => rec(card.i)).sort((a, b) => rec(a.i).due - rec(b.i).due), ROUND);
+    else {
+      const fresh = shuffled(pool.filter(card => !rec(card.i)));
+      // Shuffled first: the sort keeps that order among cards of the same rank and the same day.
+      const order = new Map();   // for each due card: 0 if it is in box 0, then the day it was due
+      pool.forEach(card => { const record = rec(card.i); if (record && record.due <= now) order.set(card, [record.b === 0 ? 0 : 1, dayStart(record.due, 0)]); });
+      const due = shuffled([...order.keys()]).sort((a, b) => order.get(a)[0] - order.get(b)[0] || order.get(a)[1] - order.get(b)[1]);
+      const again = take(due, fresh.length ? ROUND_DUE : ROUND), novel = take(fresh, ROUND - again.length);
+      // Too few new cards to fill the round: more of the due ones, if there are any.
+      queue = shuffled(again.concat(novel, take(due, ROUND - again.length - novel.length)));
+    }
     round = idle();
-    round.queue = pick.filter(card => !heads.has(card.head) && heads.add(card.head)).slice(0, ROUND);
+    round.queue = queue;
     if (round.queue.length > 1 && round.queue[0].i === last) round.queue.push(round.queue.shift());
     round.size = round.queue.length;
     if (round.queue.length) next();
@@ -450,8 +544,9 @@
     // One step back (Jack, 14 November 2026: "sometimes I press the wrong button"): what the card's
     // record was before this mark, a new card having none, and the round's tally.
     round.undo = { id, before: progress.cards[id] || null, got: round.got, again: round.again, missed: round.missed.slice() };
-    if (got) { const b = !record ? 2 : Math.min(TOP, record.b + 1); progress.cards[id] = { b, due: now + WAIT[b], t: now }; round.got++; }
-    else { progress.cards[id] = { b: 0, due: now + WAIT[0], t: now }; round.again++; round.missed.push(id); }   // not put back into this round
+    const b = boxAfter(record, got);
+    progress.cards[id] = { b, due: dueFrom(now, b), t: now };
+    if (got) round.got++; else { round.again++; round.missed.push(id); }   // a missed card is not put back into this round
     save(); next();
     drawCard(); keep();
     const button = round.done ? [q('g-next'), q('g-early'), q('g-exit')].find(b => !b.hidden) : q('g-show');

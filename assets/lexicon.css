@@ -305,6 +305,11 @@ footer details p { margin:.6em 0; max-width:46rem; }
 
 /* A word's page (c/) and a Latin word's page (l/) ---------------------------------------- */
 .concept, .word { max-width:38rem; }
+/* The way back to a round of the practice game, above an entry opened from one of its cards
+   (Jack, 15 November 2026): a quiet line of the controls' sans, grey until it is pointed at. */
+.round-back { margin:8px 0 -10px; font:400 1rem var(--sans); }
+.round-back a { display:inline-flex; align-items:center; min-height:44px; color:var(--muted); text-decoration:none; }
+.round-back a:hover, .round-back a:focus-visible { color:var(--ink); text-decoration:underline; text-decoration-color:var(--accent); text-underline-offset:.25em; }
 .kind { margin:12px 0 0; color:var(--muted); font:400 1rem var(--sans); }
 .kind a { display:inline-flex; align-items:center; min-height:44px; color:inherit; text-decoration-color:var(--hair); }
 span.kind, p.kind:not(:has(a)) { display:block; padding:10px 0; }

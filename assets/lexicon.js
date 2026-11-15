@@ -22,6 +22,32 @@
     }
   }
 
+  // Back to the round (Jack, 15 November 2026). An entry opened from a card of the practice game
+  // was left by going back; but on an iPhone a link from the entry to another site opens a sheet
+  // over the app, and after it there is nothing to go back to. So while a round is in progress
+  // whose current card is this entry (practice.js keeps the round in localStorage, with its time,
+  // for 12 hours), the entry has one quiet link above it, back to the round. The words follow the
+  // practice page's language; "Redī ad cursum" is Claude's wording, awaiting Jack's review (the
+  // round is "cursus" in the game: Novus cursus, Cursus cōnfectus).
+  const article = document.querySelector('article.concept[data-record]');
+  const here = /\/c\/([a-z0-9-]+?)(?:\.html)?$/.exec(location.pathname);
+  if (article && here) {
+    try {
+      const kept = JSON.parse(localStorage.getItem('lexicon-practice-round'));
+      const age = kept && typeof kept === 'object' ? Date.now() - kept.at : -1;
+      if (kept.current === here[1] && age >= 0 && age <= 12 * 3600e3) {
+        const latin = localStorage.getItem('lexicon-practice-lang') !== 'en';
+        const line = document.createElement('p'), link = document.createElement('a');
+        line.className = 'round-back';
+        link.href = '../practice.html';
+        link.lang = latin ? 'la' : 'en';
+        link.textContent = latin ? '← Redī ad cursum' : '← Back to the round';
+        line.append(link);
+        article.before(line);
+      }
+    } catch {}
+  }
+
   // Theme (light is the default; the choice is kept where storage allows), chosen in the settings.
   const root = document.documentElement;
   const color = document.querySelector('meta[name="theme-color"]');

@@ -18,16 +18,6 @@
         "Cic. <em>Clu.</em> 37: <span lang=\"la\">cum ibi pernoctāret</span> (Lewis &amp; Short)"
       ],
       "comment": "Our phrase, and a verb: Latin says what one does. <span lang=\"la\">Sub pellibus</span>, “under hides”, is Caesar’s and Livy’s for soldiers living in tents, which were made of leather; <span lang=\"la\">pernoctāre</span> is to spend the night. We have found no word for camping as a pastime; Traupman gives only the camp ground and the tent."
-    },
-    {
-      "latin": "sub dīvō pernoctāre",
-      "status": "alternative",
-      "period": "ours",
-      "gloss": "sleep out under the open sky",
-      "evidence": [
-        "Hor. <em>C.</em> 3.2.5: <span lang=\"la\">vītamque sub dīvō … agat</span>"
-      ],
-      "comment": "<span lang=\"la\">Sub dīvō</span>, under the open sky, in the open air (Cic., Hor.)."
     }
   ],
   "phrases": [
@@ -39,6 +29,11 @@
     {
       "latin": "Hāc aestāte sub pellibus pernoctābimus.",
       "english": "This summer we’ll go camping.",
+      "source": "composed"
+    },
+    {
+      "latin": "sub dīvō pernoctāre",
+      "english": "to sleep out under the open sky",
       "source": "composed"
     }
   ],
@@ -53,11 +48,11 @@
     "<a href=\"https://logeion.uchicago.edu/pellis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pellis</a> · <a href=\"https://logeion.uchicago.edu/pernocto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pernocto</a> · <a href=\"https://logeion.uchicago.edu/divum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: divum</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 286, 392 (campsite and tent; no word for camping). Morgan–Owens has only the camping stove.",
     "Caesar and Horace checked against the Latin Library text (<a href=\"https://github.com/cltk/lat_text_latin_library\" rel=\"noopener noreferrer\" target=\"_blank\">CLTK mirror</a>).",
-    "The example sentence marked “composed” is ours."
+    "The example sentences marked “composed” are ours."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

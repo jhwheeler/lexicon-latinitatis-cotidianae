@@ -8,7 +8,7 @@
       "latin": "recōgnitiō cōdicis",
       "status": "recommended",
       "period": "ours",
-      "comment": "Our description for a code review. <strong lang=\"la\">recōgnitiō, recōgnitiōnis f.</strong> — examination or review; <strong lang=\"la\">cōdicis</strong> is the genitive of <strong lang=\"la\">cōdex</strong>. The computing phrase is not presented as an independently attested standard. Use ordinary Latin case syntax to make the relationship between technical nouns explicit: <strong lang=\"la\">recōgnitiō cōdicis</strong>, <strong lang=\"la\">cursus ēlabōrātiōnis</strong>. The grammaticality of a phrase does not establish that it is idiomatic or widely used technical Latin; our new computing phrases remain labelled as working formations. Preserve exact commands, filenames, branch names and protocol tokens where translation would alter their identity.",
+      "comment": "Our description: Traupman and Morgan–Owens have no word for a code review. <span lang=\"la\">Recōgnitiō</span> is a reviewing or examination (Col. 11.1.21; Suet. Claud. 16, in Lewis &amp; Short), and Egger’s word for going over what has been learned (M-O s.v. review); <span lang=\"la\">cōdicis</span> is the genitive of <span lang=\"la\">cōdex</span>, our word for code (see code).",
       "notes": [
         "recognitio"
       ]
@@ -29,7 +29,8 @@
     "development-cycle"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/recognitio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: recognitio</a> · <a href=\"https://logeion.uchicago.edu/codex\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: codex</a> · <a href=\"https://atlas.perseus.tufts.edu/dictionaries/entry/urn%3Acite2%3Ascaife-viewer%3Adictionaries.v1%3Aelementary-latin-n13773/\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis: recognitio</a>"
+    "<a href=\"https://logeion.uchicago.edu/recognitio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: recognitio</a> · <a href=\"https://logeion.uchicago.edu/codex\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: codex</a> · <a href=\"https://atlas.perseus.tufts.edu/dictionaries/entry/urn%3Acite2%3Ascaife-viewer%3Adictionaries.v1%3Aelementary-latin-n13773/\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis: recognitio</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. review."
   ],
   "replaces": [
     "entry-52",
@@ -37,7 +38,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

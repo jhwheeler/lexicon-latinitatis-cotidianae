@@ -5,10 +5,24 @@
   "domain": "culina",
   "terms": [
     {
-      "latin": "in duās partēs secāre",
+      "latin": "in duās partēs dīvidere",
       "status": "recommended",
-      "period": "ours",
-      "gloss": "cut into two parts or halve"
+      "period": "classical",
+      "gloss": "divide into two parts, halve",
+      "evidence": [
+        "Caes. BG 3.1.6; Cic. Rep. 1.19 (Lewis &amp; Short s.v. <span lang=\"la\">dīvidō</span>)"
+      ],
+      "comment": "The classical phrase: Caesar has it of a village divided in two by a river, Cicero of a people. In the kitchen, with a knife, <span lang=\"la\">in duās partēs secāre</span>."
+    },
+    {
+      "latin": "mediō, mediāre",
+      "status": "alternative",
+      "period": "late",
+      "gloss": "halve, divide in the middle",
+      "evidence": [
+        "Apic. 3.9 (Lewis &amp; Short)"
+      ],
+      "comment": "Apicius’s kitchen verb; post-classical (Lewis &amp; Short). The finite <span lang=\"la\">dīmidiāre</span> is very rare (Tertullian), though the participle <span lang=\"la\">dīmidiātus</span>, halved, is common (Lewis &amp; Short)."
     }
   ],
   "related": [
@@ -17,11 +31,20 @@
   ],
   "sources": [
     "<a href=\"https://alatius.com/ls/index.php?l=seco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: seco</a>",
-    "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>"
+    "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>",
+    "The example sentence marked “composed” is ours.",
+    "<a href=\"https://logeion.uchicago.edu/divido\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: divido</a> · <a href=\"https://logeion.uchicago.edu/medio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: medio</a> · <a href=\"https://logeion.uchicago.edu/dimidio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dimidio</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
-  }
+  },
+  "phrases": [
+    {
+      "latin": "Mālum in duās partēs secā.",
+      "english": "Cut the apple in half.",
+      "source": "composed"
+    }
+  ]
 }

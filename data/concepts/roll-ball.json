@@ -6,10 +6,22 @@
   "domain": "ludi",
   "terms": [
     {
-      "latin": "pilam volvere",
+      "latin": "volvō, volvere, volvī, volūtum",
       "status": "recommended",
-      "period": "ours",
-      "gloss": "roll the ball"
+      "period": "classical",
+      "gloss": "roll (a thing) along",
+      "evidence": [
+        "Lucr. 1.288: <span lang=\"la\">(amnis) volvit sub undīs grandia saxa</span> (Lewis &amp; Short)",
+        "Hor. C. 3.29.38: <span lang=\"la\">flūmen lapidēs volvēns</span> (Lewis &amp; Short)"
+      ],
+      "comment": "The classical verb for rolling a thing along, as a river rolls stones; with the ball as its object in the example."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "pilam volvere",
+      "english": "to roll the ball",
+      "source": "composed"
     }
   ],
   "related": [
@@ -17,11 +29,13 @@
     "ball"
   ],
   "sources": [
-    "Descriptions and prompts labelled as ours are composed for family conversation. Recorded vocabulary does not imply universal technical standardization."
+    "Descriptions and prompts labelled as ours are composed for family conversation. Recorded vocabulary does not imply universal technical standardization.",
+    "<a href=\"https://logeion.uchicago.edu/volvo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: volvo</a>",
+    "The example sentence marked “composed” is ours."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

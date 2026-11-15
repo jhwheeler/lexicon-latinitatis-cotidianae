@@ -3,12 +3,15 @@
   "english": "grass",
   "pos": "noun",
   "also": [
-    "lawn"
+    "lawn",
+    "greensward",
+    "turf",
+    "green (a grassy place)"
   ],
+  "domain": "natura",
   "also_under": [
     "ludi"
   ],
-  "domain": "natura",
   "terms": [
     {
       "latin": "herba, herbae f.",
@@ -22,6 +25,16 @@
       "status": "alternative",
       "period": "classical",
       "gloss": "grass, lawn"
+    },
+    {
+      "latin": "virectum, virectī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a green place, greensward (mostly plural, virecta)",
+      "evidence": [
+        "Verg. A. 6.638: <span lang=\"la\">virecta nemorum</span> (Lewis &amp; Short)"
+      ],
+      "comment": "From <span lang=\"la\">vireō</span>, be green; less correctly <span lang=\"la\">virētum</span> (Lewis &amp; Short)."
     }
   ],
   "related": [
@@ -30,11 +43,12 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/gramen\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gramen</a>",
+    "<a href=\"https://logeion.uchicago.edu/virectum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: virectum</a>",
     "Descriptions and prompts labelled as ours are composed for family conversation. Recorded vocabulary does not imply universal technical standardization."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

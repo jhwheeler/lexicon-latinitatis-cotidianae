@@ -6,10 +6,10 @@
     "swimming",
     "swim across"
   ],
+  "domain": "natura",
   "also_under": [
     "corpus"
   ],
-  "domain": "natura",
   "terms": [
     {
       "latin": "natō, natāre, natāvī, natātum",
@@ -32,6 +32,17 @@
       "status": "alternative",
       "period": "classical",
       "gloss": "swim across"
+    },
+    {
+      "latin": "nō, nāre, nāvī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "swim, float",
+      "evidence": [
+        "Plaut. Aul. 4.1.9 (Lewis &amp; Short)",
+        "Ov. Met. 1.304: <span lang=\"la\">nat lupus</span> (Lewis &amp; Short)"
+      ],
+      "comment": "The simple verb, of which <span lang=\"la\">natō</span> is the frequentative."
     }
   ],
   "phrases": [
@@ -44,6 +55,11 @@
       "latin": "Vīsne natāre?",
       "english": "Do you want to swim?",
       "source": "composed"
+    },
+    {
+      "latin": "nat lupus inter ovēs, fulvōs vehit unda leōnēs",
+      "english": "the wolf swims among the sheep, the water carries tawny lions along",
+      "source": "Ov. Met. 1.304"
     }
   ],
   "related": [
@@ -58,13 +74,15 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/nato\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nato</a>",
     "<a href=\"https://logeion.org/nato\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nato</a> · <a href=\"https://logeion.uchicago.edu/trano\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: trano</a>",
+    "<a href=\"https://logeion.uchicago.edu/no\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: no</a>",
     "Pliny checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> and the Latinitas loci collections.",
     "The example sentence marked “composed” is ours.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 60."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 60.",
+    "Ovid, <em>Metamorphoses</em> 1.304."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

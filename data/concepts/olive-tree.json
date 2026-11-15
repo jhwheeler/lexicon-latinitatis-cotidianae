@@ -2,6 +2,10 @@
   "id": "olive-tree",
   "english": "olive tree",
   "pos": "noun",
+  "also": [
+    "olive grove",
+    "olive orchard"
+  ],
   "domain": "natura",
   "terms": [
     {
@@ -21,6 +25,17 @@
       "evidence": [
         "L&amp;S"
       ]
+    },
+    {
+      "latin": "olīvētum, olīvētī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "an olive grove",
+      "evidence": [
+        "Cic. ND 3.86: <span lang=\"la\">vīnēta, segetēs, olīvēta</span> (Lewis &amp; Short)",
+        "Varr. RR 1.22.3 (Lewis &amp; Short)",
+        "Col. 5.9.15 (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -28,18 +43,28 @@
       "latin": "Cui avia: «At hīc olīva est. Ascende, sīmiole.»",
       "english": "Grandma answered, “But here there’s an olive tree. Climb up, little monkey.”",
       "source": "Libellus IV, <span lang=\"la\">Diēs Grātulātiōnis</span>"
+    },
+    {
+      "latin": "eum quī aret olīvētum, rogāre frūctum; quī stercoret, exōrāre; quī caedat, cōgere",
+      "english": "he who ploughs the olive grove asks it for fruit; he who manures it wins the fruit by asking; he who prunes it forces it",
+      "source": "Col. 5.9.15 (Lewis &amp; Short)"
     }
   ],
   "related": [
-    "fig-tree"
+    "fig-tree",
+    "orchard",
+    "olive",
+    "olive-oil",
+    "manure-verb"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/oliva\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: oliva</a>",
+    "<a href=\"https://logeion.uchicago.edu/olivetum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: olivetum</a>",
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

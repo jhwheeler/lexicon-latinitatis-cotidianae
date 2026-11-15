@@ -3,7 +3,9 @@
   "english": "sheepfold",
   "pos": "noun",
   "also": [
-    "pen"
+    "pen",
+    "fold",
+    "sheep pen"
   ],
   "domain": "natura",
   "terms": [
@@ -15,6 +17,15 @@
         "Traupman 166",
         "Traupman 144"
       ]
+    },
+    {
+      "latin": "caulae, caulārum f. pl.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a sheepfold; the bars of a fold",
+      "evidence": [
+        "Verg. A. 9.60 (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -22,20 +33,29 @@
       "latin": "Ovēs in ovīle redeunt.",
       "english": "The sheep are going back into the fold.",
       "source": "composed"
+    },
+    {
+      "latin": "cum fremit ad caulās, ventōs perpessus et imbrīs",
+      "english": "when he growls at the fold, after enduring winds and rain",
+      "source": "Verg. A. 9.60"
     }
   ],
   "related": [
     "sheep",
-    "flock"
+    "flock",
+    "fence",
+    "manger"
   ],
   "sources": [
     "<a href=\"https://logeion.org/ovile\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ovile</a>",
+    "<a href=\"https://logeion.uchicago.edu/caulae\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: caulae</a>",
     "The example sentence marked “composed” is ours.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 166."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 166.",
+    "Vergil, <em>Aeneis</em> 9.60."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

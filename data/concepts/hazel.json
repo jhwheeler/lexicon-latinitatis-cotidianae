@@ -2,24 +2,50 @@
   "id": "hazel",
   "english": "hazel",
   "pos": "noun",
+  "also": [
+    "hazel tree",
+    "hazel bush",
+    "hazel copse"
+  ],
   "domain": "natura",
   "terms": [
     {
       "latin": "corylus, corylī f.",
       "status": "recommended",
       "period": "classical"
+    },
+    {
+      "latin": "corylētum, corylētī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a hazel thicket",
+      "evidence": [
+        "Ov. F. 2.587 (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "illa modo in silvīs inter corylēta latēbat",
+      "english": "now she would hide in the woods among the hazel thickets",
+      "source": "Ov. F. 2.587"
     }
   ],
   "related": [
     "walnut",
-    "tree"
+    "tree",
+    "catkin",
+    "hazelnut",
+    "undergrowth"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/corylus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: corylus</a>"
+    "<a href=\"https://logeion.uchicago.edu/corylus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: corylus</a>",
+    "<a href=\"https://logeion.uchicago.edu/coryletum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: coryletum</a>",
+    "Ovid, <em>Fasti</em> 2.587."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

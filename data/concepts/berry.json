@@ -3,7 +3,9 @@
   "english": "berry",
   "pos": "noun",
   "also": [
-    "berries"
+    "berries",
+    "grape (a single one)",
+    "pip"
   ],
   "domain": "natura",
   "terms": [
@@ -21,6 +23,17 @@
       "status": "alternative",
       "period": "classical",
       "comment": "An ancient spelling too, which Lewis &amp; Short calls less correct."
+    },
+    {
+      "latin": "acinus, acinī m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a berry that grows in a cluster: a grape, an ivy or elder berry",
+      "evidence": [
+        "Col. 11.2.60 (Lewis &amp; Short)",
+        "Plin. NH 15.100: <span lang=\"la\">hederae sambūcīque</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Also neuter, <span lang=\"la\">acinum</span>. Also the pip inside."
     }
   ],
   "related": [
@@ -28,16 +41,22 @@
     "dog-rose",
     "bramble",
     "blackberry",
-    "cranberry"
+    "cranberry",
+    "grape",
+    "elder-tree",
+    "ivy",
+    "currant",
+    "gooseberry"
   ],
   "sources": [
     "<a href=\"https://alatius.com/ls/index.php?l=bacca\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: bacca</a>",
     "<a href=\"https://logeion.uchicago.edu/baca\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: baca</a>",
+    "<a href=\"https://logeion.uchicago.edu/acinus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: acinus</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 70."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

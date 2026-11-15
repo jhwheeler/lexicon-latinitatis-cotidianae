@@ -2,16 +2,33 @@
   "id": "mud",
   "english": "mud",
   "pos": "noun",
+  "also": [
+    "slime",
+    "mire",
+    "silt",
+    "sludge"
+  ],
+  "domain": "ludi",
   "also_under": [
     "sermo"
   ],
-  "domain": "ludi",
   "terms": [
     {
       "latin": "lutum, lutī n.",
       "status": "recommended",
       "period": "classical",
       "comment": "Ordinary physical sense."
+    },
+    {
+      "latin": "līmus, līmī m.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "slime, mud, mire",
+      "evidence": [
+        "Lucr. 5.496 (Lewis &amp; Short)",
+        "Liv. 2.5: <span lang=\"la\">frūmentī acervōs sēdisse illitōs līmō</span> (Lewis &amp; Short)"
+      ],
+      "comment": "“Slime, mud, mire” (Lewis &amp; Short): in the examples there, what a river or a flood leaves."
     }
   ],
   "phrases": [
@@ -19,23 +36,32 @@
       "latin": "Cavē lutum.",
       "english": "Mind the mud.",
       "source": "composed"
+    },
+    {
+      "latin": "et veterem in līmō rānae cecinēre querēlam",
+      "english": "and the frogs in the mud have sung their old complaint",
+      "source": "Verg. G. 1.378"
     }
   ],
   "related": [
     "puddle",
-    "ground"
+    "ground",
+    "muddy",
+    "wallow"
   ],
   "sources": [
     "<a href=\"https://www.alatius.com/ls/index.php?l=lutum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lutum</a>",
     "<a href=\"https://logeion.uchicago.edu/lutum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lutum</a>",
-    "The example sentence marked “composed” is ours."
-  ],
-  "replaces": [
-    "entry-28"
+    "<a href=\"https://logeion.uchicago.edu/limus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: limus</a>",
+    "The example sentence marked “composed” is ours.",
+    "Vergil, <em>Georgica</em> 1.378."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
-  }
+  },
+  "replaces": [
+    "entry-28"
+  ]
 }

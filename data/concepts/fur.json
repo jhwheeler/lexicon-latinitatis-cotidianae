@@ -5,6 +5,13 @@
     "noun",
     "adjective"
   ],
+  "also": [
+    "fur coat",
+    "fur jacket",
+    "shaggy hair",
+    "coat (of an animal)",
+    "pelt"
+  ],
   "domain": "vestitus",
   "terms": [
     {
@@ -23,21 +30,19 @@
       "evidence": [
         "Traupman 116: <span lang=\"la\">amiculum pellicium</span>"
       ]
+    },
+    {
+      "latin": "villus, villī m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "shaggy hair, a tuft of hair on an animal",
+      "evidence": [
+        "Cic. ND 2.121 (Lewis &amp; Short)",
+        "Cic. ND 2.158 (Lewis &amp; Short)",
+        "Verg. G. 3.446 (Lewis &amp; Short)"
+      ]
     }
   ],
-  "related": [
-    "leather",
-    "coat"
-  ],
-  "sources": [
-    "<a href=\"https://logeion.org/pellis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pellis</a> · <a href=\"https://logeion.org/pellicius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pellicius</a>",
-    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. cloth, types: fur. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 116, 319."
-  ],
-  "review": {
-    "status": "draft",
-    "date": "2026-11-09",
-    "by": "Claude"
-  },
   "phrases": [
     {
       "latin": "amīculum pellicium",
@@ -48,10 +53,28 @@
       "latin": "jacca pellicia",
       "english": "a fur jacket",
       "source": "Traupman 319"
+    },
+    {
+      "latin": "in villōs abeunt vestēs, in crūra lacertī",
+      "english": "his clothes turn into shaggy hair, his arms into legs",
+      "source": "Ov. Met. 1.236"
     }
   ],
-  "also": [
-    "fur coat",
-    "fur jacket"
-  ]
+  "related": [
+    "leather",
+    "coat",
+    "bristle",
+    "fleece"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.org/pellis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pellis</a> · <a href=\"https://logeion.org/pellicius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pellicius</a>",
+    "<a href=\"https://logeion.uchicago.edu/villus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: villus</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. cloth, types: fur. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 116, 319.",
+    "Ovid, <em>Metamorphoses</em> 1.236."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-15",
+    "by": "Claude"
+  }
 }

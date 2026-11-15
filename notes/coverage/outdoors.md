@@ -151,6 +151,134 @@ Every Latin word was confirmed in Lewis & Short (`scripts/lookup.py ls`). Verse 
 
 Also: *laurel* now finds the bay (*laurus*), *bracken* the fern (*filix*), *boulder* the rock (*saxum*), *sap* the juice (*sūcus*), *bog* and *fen* the swamp, *wilt* the entry for fading; and the general records (tree, bird, flower, plant, animal, insect, garden, forest, mountain, stream) now link to their kinds.
 
+## Round three: 131 more Latin words
+
+A third round, the same day, took what round two left: the rest of the walk and the garden, the authors' words that had been read and not entered, and the adjectives and verbs of the field. 72 new records, and new words in 26 existing ones. The method was the same; the candidate list was made again against the lexicon as it then stood (6,081 missing lemmas in the outdoor works, 784 of them with a word of the domain in the head of their Lewis & Short article). Words of general use among the 2,500 commonest lemmas (*cavus, āridus, fēcundus, arvum, pābulum, jūmentum*) were left to the sweep in rank order.
+
+### Trees, shrubs and plants
+
+- holly: *aquifolium*
+- cedar: *cedrus*
+- privet: *ligustrum*
+- strawberry tree: *arbutus*
+- wayfaring tree: *vīburnum*
+- cork oak: *sūber*
+- thorn bush: *veprēs*
+- honeysuckle: *periclymenos*
+- bindweed: *convolvulus*
+- buttercup: *rānunculus*
+- foxglove: *digitālis purpurea*
+- monkshood: *aconītum*
+- rue (the herb): *rūta*
+- tulip: *tulipa*
+- currant (the garden berry): *ribes*
+- gooseberry: *grossulāria*
+- rhubarb: *rheubarbarum*, *rhecoma*
+- hazel (existing record): *corylētum*
+- sedge (existing record): *cārectum*
+- undergrowth (existing record): *spīnētum*
+- grass (existing record): *virectum*
+- pine (existing record): *pīnētum*
+- olive tree (existing record): *olīvētum*
+- oak (existing record): *quernus*
+
+### Parts of a plant and what lies on the ground
+
+- catkin: *iūlus*
+- oak gall: *galla*
+- berry (existing record): *acinus*
+- stalk (existing record): *culmus*
+- stubble: *stipula*
+- brushwood (cut or fallen twigs): *sarmenta*, *rāmālia*
+- sheaf: *manipulus*, *merges*
+- torch (a burning brand) (existing record): *taeda*
+- pumice: *pūmex*
+- whetstone: *cōs*
+- mud (existing record): *līmus*
+
+### Animals and their parts
+
+- ferret: *viverra*
+- shrew (the small animal): *sorex*
+- slow-worm: *caecilia*
+- centipede: *centipeda*, *millepeda*
+- woodlouse: *oniscus*, *multipeda*
+- coot: *fulica*
+- moth (existing record): *tinea*
+- claw: *unguis*
+- fur (existing record): *villus*
+- fleece: *vellus*
+- wallow (a muddy place where pigs roll): *volūtābrum*
+- goat (existing record): *hircus*
+- pig (existing record): *scrōfa*
+
+### Bees
+
+- honeycomb: *favus*
+- drone (the male bee): *fūcus*
+- beekeeper: *mellārius*, *apiārius*
+- beehive (existing record): *apiārium*
+
+### Farm and garden: things
+
+- ploughshare: *vōmer*
+- yoke: *jugum*
+- harrow: *crātis*, *irpex*, *occō*
+- manger: *praesaepe*
+- sheepfold (existing record): *caulae*
+- basket (existing record): *fiscina*, *fiscella*, *calathus*
+- snare: *laqueus*, *pedica*
+- scarecrow: *terricula*, *formīdō*
+- greenhouse: *speculāria*
+- trellis: *cantērius*
+- planting hole: *scrobis*
+
+### Farm and garden: tasks
+
+- propagate (raise new plants from a parent): *propāgō* the verb, *propāgō* the layer
+- uproot: *ērādīcō*, *exstirpō*
+- thresh: *terō*, *trītūra*
+- manure (spread dung on the soil): *stercorō*
+- tame (make an animal tame): *domō*, *mānsuēfaciō*
+- dig (existing record): *dēfodiō*
+- graze (of animals) (existing record): *dēpāscō*
+
+### Adjectives of the field
+
+- leafy: *frondōsus*, *frondeus*
+- shady: *umbrōsus*, *opācus*
+- mossy: *muscōsus*
+- thorny: *spīnōsus*
+- grassy: *herbōsus*, *grāmineus*
+- rocky: *saxōsus*, *lapidōsus*
+- marshy: *palūster*
+- muddy: *līmōsus*, *lutulentus*
+- wooded: *nemorōsus*, *silvōsus*
+- dewy: *roscidus*
+- damp (existing record): *ūdus*, *ūvidus*
+- shaggy: *hirsūtus*, *hirtus*, *villōsus*, *saetōsus*
+- winged: *pennātus*, *ālātus*
+- horned: *cornūtus*, *corniger*
+- tame: *mānsuētus*, *cicur*
+- edible: *ēsculentus*, *edūlis*
+- productivity (of fields, mines) (existing record): *ferāx*
+
+### Verbs of the field
+
+- come into leaf: *frondēscō*, *frondeō*
+- sprout (put forth shoots) (existing record): *gemmō*
+- dry up (existing record): *ārēscō*, *āreō*
+- fade (lose colour, strength or freshness) (existing record): *flaccēscō*
+- hatch (bring young out of the egg): *exclūdō*
+- flutter: *volitō*
+- swim (existing record): *nō*
+- drip: *stillō*
+- gush: *scateō*
+- gnaw: *rōdō*
+- shade (cast shade on): *opācō*, *obumbrō*
+
+Also: *polecat* now finds the ferret, *wolfsbane* the monkshood, *brier* the thorn bush, *apiary* the beekeeper and the beehive, *wilt* and *droop* the entry for fading, *stony* the entry for rocky, *bristly* and *hairy (of an animal)* the entry for shaggy; *wildcat* no longer points to the lynx, which was wrong.
+
 ## Identifications that are not certain
 
 - *picea* (spruce): Lewis & Short makes it the pitch-pine; botanists give the name to the spruces.
@@ -164,14 +292,37 @@ Also: *laurel* now finds the bay (*laurus*), *bracken* the fern (*filix*), *boul
 - *erīcē* (heather): “heath, broom, ling”. *secāle* (rye): “rye; or, according to others, black spelt”. *rumex* (sorrel): also the docks.
 - *ridica* (stake): the length of its first vowel is not marked in Lewis & Short or de Vaan, and is left unmarked.
 
+Round three:
+
+- *aquifolium* (holly): “the holly-tree, or the scarlet holm” in Lewis & Short.
+- *cedrus* (cedar): Lewis & Short takes it for the prickly juniper; the cedar of Lebanon bears the same name.
+- *periclymenos* (honeysuckle): “a climbing plant, the woodbine or honeysuckle”, in Pliny only.
+- *rānunculus* (buttercup): a medicinal plant in Pliny, “perhaps crowfoot”; the botanists’ name for the buttercups.
+- *vīburnum* (wayfaring tree): Lewis & Short’s identification, from one line of Vergil.
+- *convolvulus* (bindweed): one place in Pliny; in Cato the word is a caterpillar.
+- *caecilia* (slow-worm): “a kind of lizard” in Lewis & Short; the slow-worm is the usual identification.
+- *viverra* (ferret): the ferret in Pliny; it also answers *polecat*, the ferret’s wild form, for which we found no name of its own.
+- *oniscus, multipeda, millepeda, centipeda* (woodlouse, centipede): the ancient names run into one another; Lewis & Short glosses *millepeda* as millipede, woodlouse and a hairy caterpillar.
+- *fulica* (coot): “a coot, a water-fowl”.
+- *rhecoma* (rhubarb): “a root, perhaps rhubarb”, in Pliny.
+- *speculāria* (greenhouse): window panes, and in Pliny and Columella the glazed frames behind which plants were kept in winter; not a building.
+- *terricula* (scarecrow): Lewis & Short gives “scarecrow, bugbear”, but Livy’s two places are of empty threats; *formīdō* is what Horace’s garden Priapus calls himself.
+- Vowel lengths: *roscidus* is left with its first vowel unmarked, as Lewis & Short and de Vaan leave it; *sorex* and *veprēs* have vowels Lewis & Short gives as common, left unmarked; *ēsculentus* is written with the long vowel of *ēsca*, which Lewis & Short does not mark; *ribes* and *rheubarbarum* are written without marks, as Morgan–Owens writes them; Morgan–Owens writes *rhēcoma* where Lewis & Short, followed here, leaves the vowel unmarked.
+
 ## Modern names
 
 Two things have no ancient name that we found: the jay (*garrulus*, the zoologists’ name, Brisson 1760; Linnaeus’s *Corvus glandarius*, 1758) and the dragonfly (*lībellula*, Linnaeus 1758). Both are marked modern. *pārus* (tit) is late Latin, from one poem. Nothing in this round is marked as ours.
 
+Round three: the foxglove is *digitālis purpurea*, the botanists’ name, from Morgan–Owens s.v. flowers: foxglove (which cites Grosse 1846). The tulip is *tulipa* (Morgan–Owens s.v. flowers: tulip, from Noël) and the gooseberry *grossulāria* (Morgan–Owens s.v. berry: currant: gooseberry, from Linnaeus), both modern. The currant is *ribes*, medieval (Morgan–Owens s.v. berry: currant, with a fourteenth-century source in Latham and the OED, and Mattioli 1571 for the declension); the rhubarb is Isidore’s *rheubarbarum* (late), through Morgan–Owens s.v. rhubarb. Nothing in this round is marked as ours either.
+
 ## Left for a later round
 
-**From the walk, no entry yet.** Trees and plants: aspen, rowan, holly, cedar, privet, dogwood, honeysuckle, burdock as a plant of its own, primrose, snowdrop, nightshade, foxglove, buttercup, plantain, vetch, toadstools by kind. Parts: catkin (*iūlus*, Pliny), prickle, stump, petal. Animals: polecat, shrew (*sorex*), wildcat, slow-worm (*caecilia* is “a kind of lizard” in Lewis & Short), tree frog, stag beetle, bumblebee, midge, centipede, woodlouse; anthill, claw. Land: scree, plateau, foothill, heath as a place, hollow. Garden: greenhouse, trellis, mulch, scarecrow, secateurs as a tool of their own, to uproot, to thin out, currant, gooseberry, medlar, rhubarb, tulip, marigold.
+After round three.
 
-**From the authors, read and not entered (86).** With the number of times the outdoor works have each: taeda (39), vellus (37), vomer (31), marmor (28), lympha (22), scrobis (19), favilla (17), armus (17), pumex (12), villus (11), propago (11), lotos (10), colubra (10), suboles (9), fiscina (9), culmus (9), bipennis (9), rastri (8), casia (8), calathus (8), verbena (7), thyrsus (7), temo (7), sarmentum (7), fluentum (7), fiscella (7), cytisus (7), cedrus (7), arbutus (7), tinea (6), oleaster (6), ocinum (6), myrice (6), ervum (6), petra (5), mergus (5), cos (5), aesculus (5), veratrum (4), ruta (4), stiva (3), tribulus (2), tinus (2), suber (2), palear (2), nubecula (2), hibiscum (2), fulica (2), baccar (2), vulturius (1), vulpecula (1), volutabrum (1), virectum (1), viburnum (1), thymbra (1), spinetum (1), spelaeum (1), sorex (1), sisymbrium (1), siler (1), scilla (1), scatebra (1), scapus (1), saliunca (1), ramale (1), parra (1), paliurus (1), oscen (1), onager (1), oestrus (1), merops (1), melisphyllum (1), ligustrum (1), gelicidium (1), filicula (1), dentale (1), cupressetum (1), coryletum (1), cerintha (1), carectum (1), caprificus (1), attagen (1), aesculetum (1), acinus (1), acalanthis (1), abrotonum (1).
+**From the walk, no entry yet.** Trees and plants: aspen, rowan, dogwood, burdock as a plant of its own, primrose, snowdrop, bluebell, cowslip, forget-me-not, nightshade, plantain, vetch, toadstools by kind. Parts: prickle, stump, petal. Animals: a polecat distinct from the ferret, wildcat, tree frog, stag beetle, bumblebee, midge; anthill. Land: scree, plateau, foothill, heath as a place, hollow. Garden: mulch, secateurs as a tool of their own, to thin out, medlar, marigold; a greenhouse as a building. For most of these Lewis & Short, Traupman and Morgan–Owens gave no clean answer, or only a botanist’s binomial for a plant few people name.
 
-Not read at all: the adjectives and verbs of the same lists (*frondeō, virēscō, silvestris, palūster, saxōsus* …), and the farm words of Cato beyond the garden (the press, the vats, the measures).
+**From the authors, read and not entered (57).** With the number of times the outdoor works have each: marmor (28), lympha (22), favilla (17), armus (17), lotos (10), colubra (10), suboles (9), bipennis (9), rastri (8), casia (8), verbena (7), thyrsus (7), temo (7), fluentum (7), cytisus (7), oleaster (6), ocinum (6), myrice (6), ervum (6), petra (5), mergus (5), aesculus (5), veratrum (4), stiva (3), tribulus (2), tinus (2), palear (2), nubecula (2), hibiscum (2), baccar (2), vulturius (1), vulpecula (1), thymbra (1), spelaeum (1), sisymbrium (1), siler (1), scilla (1), scatebra (1), scapus (1), saliunca (1), parra (1), paliurus (1), oscen (1), onager (1), oestrus (1), merops (1), melisphyllum (1), gelicidium (1), filicula (1), dentale (1), cupressetum (1), cerintha (1), caprificus (1), attagen (1), aesculetum (1), acalanthis (1), abrotonum (1). Most are the poets’ plants and birds, parts of the plough, or words of the verse only.
+
+**Adjectives and verbs not yet entered.** To perch or roost (the record for a bird settling has *īnsīdō*), to burrow, peck, prowl, pounce, soar and swoop; the adjectives of material (*fāgineus, ulmeus, fraxineus, saxeus*) and *silvāticus, nemorālis, herbidus*. General words left to the sweep in rank order: *cavus, āridus, fēcundus, arvum, pābulum, jūmentum*.
+
+**Not read at all:** the farm words of Cato beyond the garden (the press, the vats, the measures).

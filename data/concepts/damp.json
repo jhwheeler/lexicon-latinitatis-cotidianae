@@ -2,6 +2,11 @@
   "id": "damp",
   "english": "damp",
   "pos": "adjective",
+  "also": [
+    "humid",
+    "moist",
+    "soggy"
+  ],
   "domain": "culina",
   "terms": [
     {
@@ -11,22 +16,57 @@
       "evidence": [
         "Traupman 330"
       ]
+    },
+    {
+      "latin": "ūdus, ūda, ūdum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "wet, moist",
+      "evidence": [
+        "Sen. QN 2.25 (Lewis &amp; Short)",
+        "Ov. F. 6.401 (Lewis &amp; Short)",
+        "Hor. C. 3.2.23 (Lewis &amp; Short)"
+      ],
+      "comment": "Contracted from <span lang=\"la\">ūvidus</span>; mostly in the poets and later prose."
+    },
+    {
+      "latin": "ūvidus, ūvida, ūvidum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "wet, moist, damp",
+      "evidence": [
+        "Plaut. Rud. 4.3.5 (Lewis &amp; Short)",
+        "Plaut. Rud. 2.7.15 (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "inclūdunt ūdōque docent inolēscere librō",
+      "english": "they shut it in and teach it to grow into the moist bark",
+      "source": "Verg. G. 2.77"
+    },
+    {
+      "latin": "ūvidus hībernā vēnit dē glande Menalcās",
+      "english": "Menalcas came, wet from the winter acorns",
+      "source": "Verg. E. 10.20"
     }
   ],
   "related": [
     "wet",
-    "dry-adjective"
+    "dry-adjective",
+    "dewy",
+    "marshy"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/umidus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: umidus</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 330."
+    "<a href=\"https://logeion.uchicago.edu/udus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: udus</a> · <a href=\"https://logeion.uchicago.edu/uvidus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: uvidus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 330.",
+    "Vergil, <em>Georgica</em> 2.77; <em>Eclogae</em> 10.20."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
-  },
-  "also": [
-    "humid"
-  ]
+  }
 }

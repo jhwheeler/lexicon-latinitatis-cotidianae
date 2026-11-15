@@ -9,7 +9,9 @@
     "the very",
     "very (the very one)",
     "just then",
-    "just as"
+    "just as",
+    "to a T",
+    "perfectly"
   ],
   "domain": "verba",
   "terms": [
@@ -36,6 +38,18 @@
         "Traupman 335"
       ],
       "comment": "<span lang=\"la\">nunc cum maximē</span>, right now, at this very time (Cic. Sen. 38, Lewis &amp; Short)."
+    },
+    {
+      "latin": "examussim",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "by the rule: exactly, perfectly, to a T",
+      "register": "vōx cōmica: Plaut.; posteā Apul.",
+      "evidence": [
+        "Plaut. Amph. 843: <span lang=\"la\">examussim est optima</span>",
+        "Plaut. Men. 50: <span lang=\"la\">ut hanc rem vōbīs examussim disputem</span>"
+      ],
+      "comment": "From <span lang=\"la\">amussis</span>, a carpenter’s rule; the same as <span lang=\"la\">ad amussim</span> (Varro, Gellius)."
     }
   ],
   "phrases": [
@@ -53,6 +67,11 @@
       "latin": "ōlim mihi nūllās epistulās mittis. nihil est, inquis, quod scrībam. at hoc ipsum scrībe, nihil esse quod scrībās",
       "english": "you haven’t sent me a letter for ages. ‘There’s nothing to write,’ you say. Then write just that: that there’s nothing to write",
       "source": "Plin. Ep. 1.11.1"
+    },
+    {
+      "latin": "Nē ista edepol, sī haec vēra loquitur, examussim est optima.",
+      "english": "Upon my word, if what she says is true, she is the best of women, to a T.",
+      "source": "Plaut. Amph. 843"
     }
   ],
   "related": [
@@ -61,9 +80,10 @@
     "moment-time"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/ipse\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ipse</a> · <a href=\"https://logeion.uchicago.edu/maxime\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: maxime</a>",
+    "<a href=\"https://logeion.uchicago.edu/ipse\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ipse</a> · <a href=\"https://logeion.uchicago.edu/maxime\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: maxime</a> · <a href=\"https://logeion.uchicago.edu/examussim\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: examussim</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 87, 335.",
-    "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-terentius, loci-plinius), checked against the editions named there."
+    "Quotations from the Latinitas loci collections (loci-cicero-epistulae, loci-terentius, loci-plinius), checked against the editions named there.",
+    "Plautus, <em>Amphitruo</em> 843; <em>Menaechmi</em> 50."
   ],
   "review": {
     "status": "draft",

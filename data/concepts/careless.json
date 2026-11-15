@@ -6,7 +6,8 @@
     "negligent",
     "carelessness",
     "negligence",
-    "indifferent"
+    "indifferent",
+    "slack"
   ],
   "domain": "verba",
   "terms": [
@@ -50,18 +51,37 @@
         "Cic. Prov. Cons. 3 (Lewis &amp; Short)",
         "Traupman 150, 156"
       ]
+    },
+    {
+      "latin": "sōcors, sōcordis",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "slack, careless, sluggish; also dull-witted",
+      "evidence": [
+        "Plaut. Cist. 674: <span lang=\"la\">tam sōcordem esse quam sum</span>",
+        "Cic. Brut. 239: <span lang=\"la\">sōcors nātūrā neglegēnsque</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Its noun is <span lang=\"la\">sōcordia</span>: <span lang=\"la\">nimia nōs sōcordia hodiē tenuit</span> (Plaut. Poen. 317)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "sī era mea mē sciat tam sōcordem esse quam sum",
+      "english": "if my mistress knew that I am as careless as I am",
+      "source": "Plaut. Cist. 674"
     }
   ],
   "related": [
     "diligent"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/neglegens\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: neglegens</a>",
+    "<a href=\"https://logeion.uchicago.edu/neglegens\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: neglegens</a> · <a href=\"https://logeion.uchicago.edu/socors\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: socors</a>",
     "<a href=\"https://logeion.uchicago.edu/incuriosus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: incuriosus</a>",
     "<a href=\"https://logeion.uchicago.edu/neglegentia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: neglegentia</a>",
     "<a href=\"https://logeion.uchicago.edu/incuria\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: incuria</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>.",
-    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "Plautus, <em>Cistellaria</em> 674."
   ],
   "review": {
     "status": "draft",

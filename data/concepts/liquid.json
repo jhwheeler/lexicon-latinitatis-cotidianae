@@ -8,13 +8,47 @@
       "latin": "liquor, liquōris m.",
       "status": "recommended",
       "period": "classical"
+    },
+    {
+      "latin": "ūmor (hūmor), ūmōris m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a liquid, a fluid; moisture",
+      "evidence": [
+        "Cic. ND 2.26: <span lang=\"la\">aquilōnibus reliquīsque frīgoribus dūrēscit ūmor</span> (Lewis &amp; Short)",
+        "Cic. ND 2.59 (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "liquidus, liquida, liquidum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "flowing, liquid; clear, bright",
+      "evidence": [
+        "Cato Agr. 73: <span lang=\"la\">aqua bona et liquida</span> (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "quācumque locō mōveris humum, obvius et parātus ūmor occurrit",
+      "english": "wherever you turn the soil, water is there to meet you, ready to hand",
+      "source": "Plin. Ep. 2.17.25"
+    },
+    {
+      "latin": "tum liquidā jam lūce",
+      "english": "then, the light being now clear",
+      "source": "Liv. 22.6.9"
     }
   ],
   "related": [
     "juice"
   ],
   "sources": [
-    "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>"
+    "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>",
+    "Quotations from the Latinitas loci collections, checked against the editions named there.",
+    "<a href=\"https://logeion.uchicago.edu/umor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: umor</a>",
+    "<a href=\"https://logeion.uchicago.edu/liquidus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: liquidus</a>"
   ],
   "review": {
     "status": "draft",

@@ -2,6 +2,9 @@
   "id": "kill-two-birds-with-one-stone",
   "english": "kill two birds with one stone",
   "pos": "phrase",
+  "also": [
+    "two birds with one stone"
+  ],
   "domain": "sermo",
   "terms": [
     {
@@ -13,11 +16,31 @@
         "Traupman 256"
       ],
       "comment": "Literally “to whitewash two walls from the same pot”."
+    },
+    {
+      "latin": "ūnō in saltū aprōs capere duōs",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "to catch two boars in one thicket",
+      "register": "vōx cōmica: Plaut.",
+      "evidence": [
+        "Plaut. Cas. 476: <span lang=\"la\">jam ego ūnō in saltū lepidē aprōs capiam duōs</span>",
+        "Lewis &amp; Short s.v. <span lang=\"la\">aper</span>: “to kill two birds with one stone”"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "jam ego ūnō in saltū lepidē aprōs capiam duōs",
+      "english": "now I shall neatly catch two boars in one thicket",
+      "source": "Plaut. Cas. 476"
     }
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/aper\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aper</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>.",
-    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "Plautus, <em>Casina</em> 476."
   ],
   "review": {
     "status": "draft",

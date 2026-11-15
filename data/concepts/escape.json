@@ -17,7 +17,9 @@
     "take to one’s heels",
     "take to his heels",
     "run for it",
-    "make a run for it"
+    "make a run for it",
+    "burst out",
+    "sally out"
   ],
   "domain": "verba",
   "terms": [
@@ -81,6 +83,36 @@
         "Traupman 100",
         "Traupman 327"
       ]
+    },
+    {
+      "latin": "profugiō, profugere, profūgī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "flee, run away; flee for refuge",
+      "evidence": [
+        "Cic. Att. 15.21.1: <span lang=\"la\">sē profugere ad Brūtum</span> (Lewis &amp; Short)",
+        "Caes. BC 2.23 (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "refugiō, refugere, refūgī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "flee back, run away; shrink from",
+      "evidence": [
+        "Caes. BC 2.34: <span lang=\"la\">admissīs equīs ad suōs refūgērunt</span> (Lewis &amp; Short)",
+        "Caes. BC 3.95 (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "ērumpō, ērumpere, ērūpī, ēruptum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "break out, burst out; of troops, sally out",
+      "evidence": [
+        "Caes. BC 2.14.1: <span lang=\"la\">portīs sē forās ērumpunt</span> (Lewis &amp; Short)",
+        "Caes. BC 1.81.2 (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -93,6 +125,21 @@
       "latin": "cervus nemorōsīs excitātus latibulīs, ut vēnātōrum effugeret īnstantem necem, caecō timōre proximam vīllam petit",
       "english": "a stag, roused from his woodland hiding-places, made blindly for the nearest farm to escape the hunters closing in",
       "source": "Phaedr. 2.8.1–3"
+    },
+    {
+      "latin": "sē profugere ad Brūtum",
+      "english": "that he is fleeing for refuge to Brutus",
+      "source": "Cic. Att. 15.21.1 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "admissīs equīs ad suōs refūgērunt",
+      "english": "giving their horses the rein, they fled back to their own men",
+      "source": "Caes. BC 2.34 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "vōs modo, inquit, parcite; occāsiōne rūrsus ērumpam datā",
+      "english": "only spare me, he said; when I get the chance I shall break out again",
+      "source": "Phaedr. 2.8.8–9"
     }
   ],
   "related": [
@@ -107,7 +154,10 @@
     "Quotations from the Latinitas loci collections (loci-phaedrus), checked against the editions named there.",
     "<a href=\"https://logeion.uchicago.edu/conicio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: conicio</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 56, 100, 310, 321, 327.",
-    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "<a href=\"https://logeion.uchicago.edu/profugio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: profugio</a>",
+    "<a href=\"https://logeion.uchicago.edu/refugio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: refugio</a>",
+    "<a href=\"https://logeion.uchicago.edu/erumpo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: erumpo</a>"
   ],
   "review": {
     "status": "draft",

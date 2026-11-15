@@ -5,7 +5,12 @@
   "also": [
     "worthlessness",
     "empty",
-    "vain"
+    "vain",
+    "idle",
+    "groundless",
+    "good-for-nothing",
+    "no good",
+    "a nobody"
   ],
   "domain": "verba",
   "terms": [
@@ -35,12 +40,49 @@
       "evidence": [
         "Traupman 409"
       ]
+    },
+    {
+      "latin": "vānus, vāna, vānum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "empty; idle, groundless, without effect",
+      "evidence": [
+        "Liv. 3.16.5: <span lang=\"la\">nōn bellum sed vānam imāginem bellī īnsēdisse</span> (Lewis &amp; Short)",
+        "Cic. Rosc. Am. 117: <span lang=\"la\">ōrātiōnī vānae crēdidērunt</span> (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "nihilī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "of no worth, good for nothing: said of a person or a thing",
+      "grammar": "genitive of value, used like an indeclinable adjective: homō nihilī",
+      "evidence": [
+        "Plaut. Asin. 472: <span lang=\"la\">Impūre, nihilī.</span>",
+        "Plaut. Cas. 2.3.29: <span lang=\"la\">unde is nihilī?</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Varro: <span lang=\"la\">quem putāmus esse nōn hīlī, dīcimus nihilī</span> (LL 10.81, Lewis &amp; Short). <span lang=\"la\">Nihilī facere</span> or <span lang=\"la\">pendere</span>, to think nothing of."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ōrātiōnī vānae crēdidērunt",
+      "english": "they believed empty talk",
+      "source": "Cic. Rosc. Am. 117 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "nunc ego illum nihilī dēcrepitum meum virum veniat velim",
+      "english": "now I’d like that worthless, decrepit husband of mine to come",
+      "source": "Plaut. Cas. 559"
     }
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/inanis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: inanis</a>",
     "<a href=\"https://logeion.uchicago.edu/inanitas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: inanitas</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>.",
+    "<a href=\"https://logeion.uchicago.edu/vanus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vanus</a>",
+    "<a href=\"https://logeion.uchicago.edu/nihil\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nihil</a>",
+    "Plautus, <em>Asinaria</em> 472; <em>Casina</em> 559."
   ],
   "review": {
     "status": "draft",

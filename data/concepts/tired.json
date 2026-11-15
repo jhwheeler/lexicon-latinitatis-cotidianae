@@ -5,7 +5,10 @@
   "also": [
     "tiredness",
     "I’m so tired",
-    "fatigued"
+    "fatigued",
+    "worn out",
+    "exhausted",
+    "weary"
   ],
   "also_under": [
     "corpus"
@@ -22,6 +25,18 @@
       ]
     },
     {
+      "latin": "lassus, lassa, lassum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "tired, weary, worn out",
+      "register": "vōx sermōnis cotīdiānī et poētārum: Plaut., Hor., Juv.; nōn apud Cic. aut Caes.",
+      "evidence": [
+        "Plaut. Amph. 329: <span lang=\"la\">Lassus sum hercle, nāvī ut vectus hūc sum</span>",
+        "Plaut. Asin. 873"
+      ],
+      "comment": "The everyday word of comedy and the poets, the source of Italian <em>lasso</em> and French <em>las</em>; Cicero and Caesar say <span lang=\"la\">fessus</span> and <span lang=\"la\">dēfessus</span> (Lewis &amp; Short). A search of the twenty plays of Plautus and the six of Terence found <span lang=\"la\">lassus</span> twelve times, <span lang=\"la\">dēfessus</span> thirteen times and <span lang=\"la\">fessus</span> not once."
+    },
+    {
       "latin": "fatīgātus, fatīgāta, fatīgātum",
       "status": "alternative",
       "period": "classical",
@@ -34,16 +49,16 @@
       "comment": "Wearied by something; stronger than <span lang=\"la\">fessus</span>, and rare before Augustus (Lewis &amp; Short)."
     },
     {
-      "latin": "lassus, lassa, lassum",
+      "latin": "dēfessus, dēfessa, dēfessum",
       "status": "alternative",
       "period": "classical",
-      "gloss": "tired, weary, worn out",
-      "register": "vōx sermōnis cotīdiānī et poētārum: Plaut., Hor., Juv.; nōn apud Cic. aut Caes.",
+      "gloss": "tired out, worn out",
+      "grammar": "adjective (participle of dēfetīscor), often with the ablative of a gerund: dēfessus ambulandō",
       "evidence": [
-        "Plaut. Amph. 329: <span lang=\"la\">Lassus sum hercle, nāvī ut vectus hūc sum</span>",
-        "Plaut. Asin. 873"
+        "Ter. Ad. 713: <span lang=\"la\">Dēfessus sum ambulandō.</span>",
+        "Plaut. Stich. 313: <span lang=\"la\">dēfessus sum pultandō</span>"
       ],
-      "comment": "The everyday word of comedy and the poets, the source of Italian <em>lasso</em> and French <em>las</em>; Cicero and Caesar say <span lang=\"la\">fessus</span> and <span lang=\"la\">dēfessus</span> (Lewis &amp; Short)."
+      "comment": "The word of the comedies and of Cicero for being tired out by doing something. Classical and frequent as a participle (Lewis &amp; Short s.v. <span lang=\"la\">dēfetīscor</span>)."
     }
   ],
   "phrases": [
@@ -66,6 +81,16 @@
       "latin": "Lassus sum hercle, nāvī ut vectus hūc sum: etiam nunc nauseō.",
       "english": "I’m worn out, by Hercules, after coming here by ship: I still feel seasick.",
       "source": "Plaut. Amph. 329"
+    },
+    {
+      "latin": "Dēfessus sum ambulandō.",
+      "english": "I’m worn out with walking.",
+      "source": "Ter. Ad. 713"
+    },
+    {
+      "latin": "ille opere forīs faciendō lassus noctū ad mē advenit",
+      "english": "he comes home to me at night tired from working out of doors",
+      "source": "Plaut. Asin. 873"
     }
   ],
   "related": [
@@ -75,14 +100,14 @@
     "sleepy"
   ],
   "sources": [
-    "<a href=\"https://logeion.org/fessus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fessus</a> · <a href=\"https://logeion.uchicago.edu/lassus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lassus</a>",
+    "<a href=\"https://logeion.org/fessus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fessus</a> · <a href=\"https://logeion.uchicago.edu/lassus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lassus</a> · <a href=\"https://logeion.uchicago.edu/defetiscor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: defetiscor</a>",
     "Examples are composed for conversation with Theo; dictionary links document the component words, not these exact sentences or standardized modern climbing terminology.",
     "<a href=\"https://logeion.uchicago.edu/fessus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fessus</a>",
     "<a href=\"https://logeion.uchicago.edu/fatigo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fatigo</a>",
     "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 36.",
     "The example sentences marked “composed” are ours.",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 35, 39, 313.",
-    "Plautus, <em>Amphitruo</em> 329; <em>Asinaria</em> 873."
+    "Plautus, <em>Amphitruo</em> 329; <em>Asinaria</em> 873; <em>Stichus</em> 313. Terence, <em>Adelphoe</em> 713."
   ],
   "review": {
     "status": "draft",

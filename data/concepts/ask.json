@@ -40,6 +40,18 @@
         "Traupman 28: <span lang=\"la\">docentem (discentem) interrogāre</span>, to ask the teacher (student) a question",
         "Traupman 334"
       ]
+    },
+    {
+      "latin": "rogitō, rogitāre, rogitāvī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "keep asking, ask eagerly",
+      "register": "vōx cōmica: Plaut., Ter.",
+      "evidence": [
+        "Plaut. Asin. 578b: <span lang=\"la\">Rogitā quod vīs.</span>",
+        "Plaut. Curc. 726b: <span lang=\"la\">Quid tum, rogitās?</span>"
+      ],
+      "comment": "The frequentative of <span lang=\"la\">rogō</span>, a favourite word of Plautus and Terence and very rare elsewhere (Lewis &amp; Short)."
     }
   ],
   "related": [
@@ -47,11 +59,12 @@
     "what-do-you-want"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/quaero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quaero</a>",
+    "<a href=\"https://logeion.uchicago.edu/quaero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quaero</a> · <a href=\"https://logeion.uchicago.edu/rogito\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: rogito</a>",
     "<a href=\"https://logeion.uchicago.edu/interrogo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: interrogo</a>",
     "<a href=\"https://logeion.uchicago.edu/rogo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: rogo</a> · <a href=\"https://logeion.uchicago.edu/quaero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quaero</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 28, 93, 334.",
-    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition."
+    "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
+    "Plautus, <em>Asinaria</em> 578b; <em>Curculio</em> 726b."
   ],
   "review": {
     "status": "draft",
@@ -97,6 +110,11 @@
       "latin": "Quid mē istud rogās?",
       "english": "Why do you ask me that?",
       "source": "Traupman 93"
+    },
+    {
+      "latin": "Rogitā quod vīs.",
+      "english": "Ask away, whatever you like.",
+      "source": "Plaut. Asin. 578b"
     }
   ]
 }

@@ -4,7 +4,11 @@
   "pos": "phrase",
   "also": [
     "fight tooth and nail",
-    "with might and main"
+    "with might and main",
+    "doggedly",
+    "with the teeth",
+    "with all one’s might",
+    "with hands and feet"
   ],
   "domain": "sermo",
   "terms": [
@@ -20,12 +24,50 @@
         "Traupman 396"
       ],
       "comment": "Literally “with the whole body and all the claws”: Latin fights with hooves and talons where English has teeth and nails."
+    },
+    {
+      "latin": "mordicus",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "with the teeth; and so holding on for all one is worth",
+      "grammar": "adverb",
+      "evidence": [
+        "Plaut. Curc. 597: <span lang=\"la\">manum arripuit mordicus</span>",
+        "Cic. Ac. 2.51: <span lang=\"la\">rem mordicus tenēre</span> (Lewis &amp; Short)"
+      ],
+      "comment": "From <span lang=\"la\">mordeō</span>. <span lang=\"la\">Mordicus tenēre</span>, to hold fast to a thing and not give it up."
+    },
+    {
+      "latin": "manibus pedibus",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "with hands and feet: with all one’s might",
+      "register": "vōx cōmica: Ter.",
+      "evidence": [
+        "Ter. And. 676: <span lang=\"la\">cōnārī manibus pedibus noctēsque et diēs</span>",
+        "Ter. And. 161: <span lang=\"la\">manibus pedibus obnīxē omnia factūrum</span>"
+      ],
+      "comment": "Lewis &amp; Short s.v. <span lang=\"la\">manus</span> gives it as <span lang=\"la\">manibus pedibusque</span>, “with might and main”; Terence has the two words without <span lang=\"la\">-que</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ut eum ēriperet, manum arripuit mordicus",
+      "english": "to snatch it away, she seized my hand with her teeth",
+      "source": "Plaut. Curc. 597"
+    },
+    {
+      "latin": "cōnārī manibus pedibus noctēsque et diēs",
+      "english": "to strive with hand and foot, night and day",
+      "source": "Ter. And. 676"
     }
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/ungula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ungula</a>",
+    "<a href=\"https://logeion.uchicago.edu/ungula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ungula</a> · <a href=\"https://logeion.uchicago.edu/mordicus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mordicus</a> · <a href=\"https://logeion.uchicago.edu/manus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: manus</a>",
     "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 109."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 109.",
+    "Plautus, <em>Curculio</em> 597.",
+    "Terence, <em>Andria</em> 161, 676."
   ],
   "review": {
     "status": "draft",

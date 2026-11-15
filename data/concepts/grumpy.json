@@ -7,7 +7,11 @@
     "crabby",
     "moody",
     "crabbiness",
-    "crab (person)"
+    "crab (person)",
+    "surly",
+    "gruff",
+    "churlish",
+    "fierce"
   ],
   "domain": "sermo",
   "terms": [
@@ -33,6 +37,29 @@
         "Cic. Off. 1.88: <span lang=\"la\">sī in mōrōsitātem inūtilem et odiōsam incidāmus</span> (Lewis &amp; Short)",
         "Traupman 298"
       ]
+    },
+    {
+      "latin": "truculentus, truculenta, truculentum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "savage-tempered, grim, gruff",
+      "evidence": [
+        "Plaut. Truc. 265: <span lang=\"la\">nimis quidem hic truculentust</span>",
+        "Ter. Ad. 866: <span lang=\"la\">agrestis, saevus, trīstis, parcus, truculentus, tenāx</span>"
+      ],
+      "comment": "From <span lang=\"la\">trux</span>. It gives Plautus’s play its name, after the surly slave in it."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Nimis quidem hic truculentust.",
+      "english": "This fellow really is a savage one.",
+      "source": "Plaut. Truc. 265"
+    },
+    {
+      "latin": "Ego ille agrestis, saevus, trīstis, parcus, truculentus, tenāx",
+      "english": "I, that boorish, harsh, gloomy, stingy, surly, tight-fisted man",
+      "source": "Ter. Ad. 866"
     }
   ],
   "related": [
@@ -41,11 +68,12 @@
     "hot-tempered"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/morositas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: morositas</a>",
+    "<a href=\"https://logeion.uchicago.edu/morositas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: morositas</a> · <a href=\"https://logeion.uchicago.edu/truculentus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: truculentus</a>",
     "<a href=\"https://logeion.org/morosus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: morosus</a>",
     "Cicero (Sen.) from the Latinitas loci collections.",
     "Quotations marked “Lewis &amp; Short” are given as Lewis &amp; Short cites them, in the house spelling; they have not been checked against a modern edition.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 151, 298."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 151, 298.",
+    "Plautus, <em>Truculentus</em> 265. Terence, <em>Adelphoe</em> 866."
   ],
   "review": {
     "status": "draft",

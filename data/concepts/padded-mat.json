@@ -10,15 +10,20 @@
     {
       "latin": "culcita, culcitae f.",
       "status": "recommended",
-      "period": "ours",
+      "period": "classical",
       "gloss": "cushion or mattress",
-      "comment": "Our contextual application to a padded climbing mat, not an attested ancient sports-mat sense."
-    },
+      "evidence": [
+        "Cic. Tusc. 3.46; Sen. Ep. 87.2 (Lewis &amp; Short)",
+        "Traupman 124, 344: mattress"
+      ],
+      "comment": "The classical word for a sack stuffed with wool, feathers or hair to lie on, a mattress or cushion (Lewis &amp; Short). A padded mat in a gym or under a climbing wall is the same thing; that application is ours."
+    }
+  ],
+  "phrases": [
     {
       "latin": "culcita mollis",
-      "status": "alternative",
-      "period": "ours",
-      "gloss": "a soft cushion"
+      "english": "a soft mat",
+      "source": "composed"
     }
   ],
   "related": [
@@ -26,11 +31,13 @@
   ],
   "sources": [
     "<a href=\"https://logeion.org/culcita\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: culcita</a>",
-    "These are names and conversational prompts, not instructions for fitting a harness, tying a knot or operating a belay. Examples are composed for conversation with the child; dictionary links document the component words, not these exact sentences or standardized modern climbing terminology."
+    "These are names and conversational prompts, not instructions for fitting a harness, tying a knot or operating a belay. Examples are composed for conversation with the child; dictionary links document the component words, not these exact sentences or standardized modern climbing terminology.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 124, 344.",
+    "The example sentence marked “composed” is ours."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

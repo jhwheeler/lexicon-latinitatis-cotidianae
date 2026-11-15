@@ -11,7 +11,24 @@
       "latin": "fūnis ad saliendum",
       "status": "recommended",
       "period": "ours",
-      "comment": "Our purpose phrase. <span lang=\"la\">Per fūnem salīre</span> describes jumping over the rope."
+      "comment": "Our purpose phrase for the rope itself: Traupman has only the verb phrase (below), and no reference work names the rope."
+    },
+    {
+      "latin": "ad fūnem salīre",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "jump rope, skip",
+      "evidence": [
+        "Traupman 335",
+        "Traupman 83: <span lang=\"la\">Quotiēns ad fūnem salīs?</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Quotiēns ad fūnem salīs?",
+      "english": "How often do you jump rope?",
+      "source": "Traupman 83"
     }
   ],
   "related": [
@@ -21,7 +38,8 @@
   ],
   "sources": [
     "<a href=\"https://www.alatius.com/ls/index.php?l=funis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: funis</a>",
-    "Descriptions and prompts labelled as ours are composed for family conversation. Recorded vocabulary does not imply universal technical standardization."
+    "Descriptions and prompts labelled as ours are composed for family conversation. Recorded vocabulary does not imply universal technical standardization.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 83, 84, 335."
   ],
   "replaces": [
     "entry-185",
@@ -29,7 +47,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

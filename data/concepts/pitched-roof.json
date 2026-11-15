@@ -8,11 +8,21 @@
   "domain": "domus-structura",
   "terms": [
     {
-      "latin": "tēctum in utramque partem dēclīve",
+      "latin": "tēctum pectinātum",
       "status": "recommended",
-      "period": "ours",
-      "gloss": "gable roof, a roof sloping in both directions",
-      "comment": "Our explanatory description of the shape, not an attested fixed technical name."
+      "period": "classical",
+      "gloss": "a roof sloping two ways, like a comb",
+      "evidence": [
+        "Fest. p. 212–213 Müll.: <span lang=\"la\">pectenātum tēctum dīcitur ā similitūdine pectinis in duās partēs dēvexum, ut testūdinātum in quattuor</span> (Lewis &amp; Short s.v. <span lang=\"la\">pectinō</span>)"
+      ],
+      "comment": "Festus’s name for the roof that slopes two ways from the ridge, as a hipped roof, <span lang=\"la\">testūdinātum</span>, slopes four ways. Festus writes <span lang=\"la\">pectenātum</span>; Lewis &amp; Short’s headword is <span lang=\"la\">pectinātus</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "tēctum in utramque partem dēclīve",
+      "english": "a roof sloping to either side",
+      "source": "composed"
     }
   ],
   "related": [
@@ -21,11 +31,13 @@
     "sloping-down"
   ],
   "sources": [
-    "<a href=\"https://www.alatius.com/ls/index.php?l=tectum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tectum</a> · <a href=\"https://www.alatius.com/ls/index.php?l=declivis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: declivis</a>"
+    "<a href=\"https://www.alatius.com/ls/index.php?l=tectum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tectum</a> · <a href=\"https://www.alatius.com/ls/index.php?l=declivis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: declivis</a>",
+    "<a href=\"https://logeion.uchicago.edu/pectino\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pectino</a>",
+    "The example sentence marked “composed” is ours."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

@@ -5,13 +5,22 @@
   "domain": "ludi",
   "terms": [
     {
-      "latin": "Nunc ego",
+      "latin": "Nunc mē ōrdō vocat.",
       "status": "recommended",
-      "period": "ours",
-      "comment": "A short composed prompt."
+      "period": "modern",
+      "gloss": "it’s my turn now",
+      "evidence": [
+        "Traupman 399: <span lang=\"la\">nunc tē ōrdō vocat</span>, it’s your turn now"
+      ],
+      "comment": "Traupman’s sentence for your turn (see your turn), with the pronoun changed."
     }
   ],
   "phrases": [
+    {
+      "latin": "Nunc ego!",
+      "english": "Now me! My turn!",
+      "source": "composed"
+    },
     {
       "latin": "Nunc mihi licet?",
       "english": "May I have a turn now?",
@@ -23,11 +32,12 @@
     "take-turns"
   ],
   "sources": [
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 399.",
     "The example sentences marked “composed” are ours."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

@@ -9,10 +9,23 @@
   "domain": "ludi",
   "terms": [
     {
-      "latin": "fōrma ad harēnam fingendam",
+      "latin": "fōrma, fōrmae f.",
       "status": "recommended",
-      "period": "ours",
-      "comment": "Our purpose phrase based on <span lang=\"la\">fōrma, fōrmae f.</span>, mould/form."
+      "period": "classical",
+      "gloss": "a mould",
+      "evidence": [
+        "Col. 7.8.7: <span lang=\"la\">(cāseus) vel manū figūrātur vel buxeīs fōrmīs exprimitur</span> (Lewis &amp; Short)",
+        "Plin. NH 36.168: <span lang=\"la\">fōrmae in quibus aera funduntur</span> (Lewis &amp; Short)",
+        "M-O s.v. mold"
+      ],
+      "comment": "The classical word for a mould that gives a thing its shape: cheese is pressed in boxwood moulds and bronze cast in them (Lewis &amp; Short). What the mould is for is said with <span lang=\"la\">ad</span> and the gerundive, as in the example."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "fōrma ad harēnam fingendam",
+      "english": "a mould for shaping sand",
+      "source": "composed"
     }
   ],
   "related": [
@@ -21,11 +34,13 @@
   ],
   "sources": [
     "<a href=\"https://www.alatius.com/ls/index.php?l=forma\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: forma</a>",
-    "Descriptions and prompts labelled as ours are composed for family conversation. Recorded vocabulary does not imply universal technical standardization."
+    "Descriptions and prompts labelled as ours are composed for family conversation. Recorded vocabulary does not imply universal technical standardization.",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. mold.",
+    "The example sentence marked “composed” is ours."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

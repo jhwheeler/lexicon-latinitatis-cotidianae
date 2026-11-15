@@ -5,24 +5,45 @@
   "domain": "natura",
   "terms": [
     {
-      "latin": "brassica muriā condīta",
+      "latin": "brassica acida",
       "status": "recommended",
-      "period": "ours",
+      "period": "modern",
+      "gloss": "sour cabbage: sauerkraut",
       "evidence": [
-        "Catō Agr. 7, 4: <span lang=\"la\">conduntur … viridēs in muriā</span>"
+        "M-O s.v. cabbage: sauerkraut (Scheller)"
       ],
-      "comment": "Our phrase after Catō’s brined olives."
+      "comment": "Scheller’s phrase, in Morgan–Owens: it names the cabbage, and <span lang=\"la\">acidus</span> is Pliny’s word for sour milk and sour cheese (Lewis &amp; Short)."
+    },
+    {
+      "latin": "holus acidum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "sauerkraut; literally a sour vegetable",
+      "evidence": [
+        "M-O s.v. cabbage: sauerkraut (Plin. NH 26.88; André)"
+      ],
+      "comment": "Pliny’s phrase, which Morgan–Owens, following André, takes to be sauerkraut. We have not read the passage in Pliny, so the identification rests on Morgan–Owens."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "brassica muriā condīta",
+      "english": "cabbage preserved in brine",
+      "source": "composed"
     }
   ],
   "related": [
     "cabbage"
   ],
   "sources": [
-    "Catō Agr. 156, 1 and 7, 4, checked against the project’s Catō loci table."
+    "Catō Agr. 156, 1 and 7, 4, checked against the project’s Catō loci table.",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. cabbage: sauerkraut.",
+    "<a href=\"https://logeion.uchicago.edu/holus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: holus</a> · <a href=\"https://logeion.uchicago.edu/acidus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: acidus</a> · <a href=\"https://logeion.uchicago.edu/brassica\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: brassica</a>",
+    "The example sentence marked “composed” is ours."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-15",
     "by": "Claude"
   }
 }

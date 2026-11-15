@@ -57,6 +57,14 @@ Jack's requirements (13 November 2026): the search must feel instant, with no ba
 
 Jack's request (13 November 2026): the category lists and both A–Z indexes have a filter, All / Words / Phrases, so the sayings can be browsed by themselves and the words are not buried under them. A record is a phrase when its `pos` is `phrase` (or includes it); give every saying or sentence that part of speech. The choice is kept on the device and carries from one list to the next. The Latin index lists the Latin of every phrase record beside the words, so phrases can be found from their Latin. The front page links to the A–Z indexes above the categories.
 
+## Every Latin word linked
+
+Jack's request (13 November 2026): every word of the lexicon's Latin leads to its entry, and every word used has one. The builder links each word of a term and of an example to the page of the word it is a form of (*potest* to *possum*, *casā* to *casa*), reading the forms from the dictionary forms in the data with their macrons; see "Every Latin word linked" in `docs/records.md`.
+
+- Give every term its full dictionary form, correctly marked: the genitive and gender of a noun, all the principal parts of a verb. A form the dictionary form does not show is not found, and a macron that differs between an example and its entry breaks the link.
+- A form that could belong to several words is linked only when the choice is safe, and otherwise left alone. Never loosen that to raise the count: a wrong link is worse than none. The rules are in `FormIndex.choose` in `scripts/build.py`; the ratio by which a commoner word may take a form (`LINK_RATIO`) and the quiet style of the links in examples (the class `tap`) are Claude's choices, for Jack to judge.
+- After adding records, run `python3 scripts/latin_unlinked.py` and read `notes/coverage/unlinked.md`: the words without an entry are the list for new records, and the words "found only when the macrons are ignored" are usually slips to correct.
+
 ## Coinages only where needed
 
 Jack's principle (13 November 2026): a word or phrase we came up with (a term whose `period` is `ours`) belongs in the lexicon only when it is needed: when no author of any period has a word for the concept, or a circumlocution has a really good reason. Otherwise take the word from earlier authors; they need not be classical, though the closer to Cicero the more weight. The modern reference works count as sources (Traupman's *Conversational Latin*, Morgan–Owens, Levi–Bini, Andresian).

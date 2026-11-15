@@ -10,9 +10,9 @@ search and contents), k/<category>.html (a category's entries), words.html and
 latin.html (the English and Latin headwords from A to Z), c/<concept>.html (one
 page per concept record), l/<word>.html (one page per Latin word that heads a
 term), how-we-decide.html (editorial policy), rulings.html (the rulings
-register), practice.html (vocabulary practice) and hora.html (the clock game),
-sitemap.xml, and in assets/ the stylesheet, the page, search and practice
-scripts, the search data, the practice cards (practice-data.js), the redirects
+register), practice.html (vocabulary practice), hora.html (the clock game) and
+review.html (the editor's review), sitemap.xml, and in assets/ the stylesheet,
+the page, search, practice and review scripts, the search data, the practice cards (practice-data.js), the redirects
 from the old single page (legacy.js) and the fonts. See docs/data-format.md and
 docs/records.md.
 """
@@ -94,11 +94,11 @@ def manifest():
 
 def service_worker(root, outputs):
     """sw.js, with the files it saves when it installs: the front page, the category pages, the
-    guidance pages, the practice pages, and the stylesheet, scripts, search data, practice cards,
+    guidance pages, the practice pages, the review page, and the stylesheet, scripts, search data, practice cards,
     fonts and icons. Its version is a hash of them, so a change to any of them makes the browser
     fetch them all afresh. The entry and word pages are saved as they are read."""
     files = sorted(path for path in outputs
-                   if path in ('index.html', 'how-we-decide.html', 'rulings.html', 'practice.html', 'hora.html', 'manifest.webmanifest')
+                   if path in ('index.html', 'how-we-decide.html', 'rulings.html', 'practice.html', 'hora.html', 'review.html', 'manifest.webmanifest')
                    or path.startswith('k/') or (path.startswith('assets/') and not path.endswith(('.txt', 'legacy.js'))))
     digest = hashlib.sha256()
     for path in files:
@@ -906,9 +906,9 @@ def site_header(up, search=True):
 
 def footer_links(up, about, search=True):
     """The pages that left the header (Jack, 11 November 2026) stand at the foot of every page, and
-    Practice with them (Jack, 13 November 2026): the header is fixed and gains no link."""
+    Practice and Review with them (Jack, 13 and 15 November 2026): the header is fixed and gains no link."""
     return (f'<a href="{up}how-we-decide.html">How we decide</a> · <a href="{up}rulings.html">Rulings</a> · '
-            f'<a href="{about}">About</a> · <a href="{up}practice.html">Practice</a> · '
+            f'<a href="{about}">About</a> · <a href="{up}practice.html">Practice</a> · <a href="{up}review.html">Review</a> · '
             + (f'<a href="{up}index.html">Search the lexicon</a> · ' if search else '')
             + f'<a href="{REPO}">Source and history</a> · <a href="{REPO}/issues">Report a problem</a>')
 
@@ -1038,7 +1038,7 @@ def render_concept(record, site):
                  + ''.join(f'<p>{s}</p>' for s in sources[1:]) + f'<p>{review_state(record["review"])}</p>'
                  + suggest_link(f'c/{record["id"]}.html', record['english'] + (f' ({record["sense"]})' if 'sense' in record else ''))
                  + '</footer>')
-    return '<article class="concept" data-record>\n' + '\n'.join(parts) + '\n</article>'
+    return concept_article(record) + '\n' + '\n'.join(parts) + '\n</article>'
 
 
 def render_concept_page(record, site, categories):
@@ -1046,7 +1046,8 @@ def render_concept_page(record, site, categories):
     lemma = term_head(ordered_terms(record)[0]['latin'])
     return page_shell(f'{english} in Latin: {lemma} · {SITE_NAME}',
                       f'How to say “{english}” in Latin: {heading}. With the period of each form, its sources and examples.',
-                      f'c/{record["id"]}.html', '../', resolve_anchors(render_concept(record, site), site, '../', f'c/{record["id"]}.html'))
+                      f'c/{record["id"]}.html', '../', resolve_anchors(render_concept(record, site), site, '../', f'c/{record["id"]}.html'),
+                      scripts=('review',))
 
 
 def render_word_page(head, info, site):
@@ -1319,7 +1320,8 @@ def word_list(rows, up, show_category=None):
         mark = ours_mark(ordered_terms(source)[0]) if 'terms' in source else ''
         extra = (f'<span class="w-cat" lang="la">{escape(show_category(path))}</span>' if show_category else '')
         kind = 'phrase' if is_phrase(source) else 'word'
-        items.append(f'<li data-kind="{kind}"><a href="{up}{path}"><span class="w-en">{escape(english)}'
+        mark_reviewed = ' class="rv"' if 'review' in source and reviewed(source) else ''   # a quiet tick, drawn by the stylesheet
+        items.append(f'<li data-kind="{kind}"{mark_reviewed}><a href="{up}{path}"><span class="w-en">{escape(english)}'
                      + (f' <span class="w-pos">{escape(pos)}</span>' if pos else '')
                      + f'</span><span class="w-la" lang="la">{mark}{escape(latin)}</span>{extra}</a></li>')
     return '<ul class="wlist">' + ''.join(items) + '</ul>'
@@ -1470,6 +1472,42 @@ def search_data(site):
                               'al': entry.get('keywords', ''), 'l': lines})
     data = {'categories': {key: c['latin'] for key, c in site['categories'].items()}, 'endings': {cls: [uv_fold(e) for e in endings] for cls, endings in ENDINGS.items()}, 'items': items}
     return 'window.lexiconData = ' + json.dumps(data, ensure_ascii=False, separators=(',', ':')) + ';\n'
+
+
+# Review (Jack, 15 November 2026) ----------------------------------------------------------------
+# Every record is a draft until the editor says it is right. He gives that verdict on his phone, on
+# the entry's page or on the back of a practice card, and a reader can flag an entry the same way;
+# the verdicts are kept on the device, gathered into one report on review.html, and applied to the
+# records by scripts/apply_review.py. See docs/review.md.
+def record_revision(record):
+    """A short name for the text of a record as it stands: a hash of its JSON without the `review`
+    field. A verdict is tied to it, so that "looks right" given on one text is not applied to
+    another, and marking a record reviewed does not change it. The page (data-rev), the practice
+    cards and scripts/apply_review.py all use this one function."""
+    text = json.dumps({key: value for key, value in record.items() if key != 'review'},
+                      ensure_ascii=False, sort_keys=True, separators=(',', ':'))
+    return hashlib.sha256(text.encode('utf-8')).hexdigest()[:8]
+
+
+def reviewed(record):
+    return record['review']['status'] == 'reviewed'
+
+
+def concept_article(record):
+    """The opening tag of an entry's article, with what the review needs: the record's revision
+    and whether the editor has reviewed it."""
+    return (f'<article class="concept" data-record data-rev="{record_revision(record)}" '
+            f'data-status="{record["review"]["status"]}">')
+
+
+def render_review_page(root, site):
+    """review.html: the editor's switch, what to review next, and the report to send. All of it is
+    drawn by assets/review.js from the practice cards, which carry each record's revision."""
+    total = len(site['records'])
+    done = sum(reviewed(record) for record in site['records'].values())
+    return fill(root / 'src/review.html', {
+        'theme': THEME_INIT, 'app': app_head(''), 'header': site_header(''), 'footer': site_footer(''),
+        'reviewed': f'{done:,}', 'drafts': f'{total - done:,}'})
 
 
 # Practice (Jack, 13 November 2026) ---------------------------------------------------------------
@@ -1742,6 +1780,9 @@ def practice_cards(site):
             card['x'] = record['also_under']
         if practice_kind(record) != 'w':
             card['t'] = practice_kind(record)
+        card['h'] = record_revision(record)
+        if reviewed(record):
+            card['d'] = 1
         if offered(set(own).union(*examples)):
             card['s'] = offered(set(own).union(*examples))
         # Where the answer comes from (Jack, 14 November 2026): its period and its evidence.
@@ -1779,7 +1820,8 @@ def practice_data(site):
     k (category), x (the other categories it is listed under), t (kind: none for a word, p for an
     everyday phrase, s for a saying), s (its sources, as numbers into "sources"), r (the answer's
     period, as a number into "periods"; none for classical), v (the first places it is cited from),
-    a (the heads of the record's other words, those to avoid left out) and q (up to two examples
+    a (the heads of the record's other words, those to avoid left out), h (the record's revision,
+    see record_revision), d (1 when the editor has reviewed the record) and q (up to two examples
     that contain the answer: Latin, English, source label or none for a sentence of ours, and that
     example's sources)."""
     tags, cards = practice_cards(site)
@@ -1805,7 +1847,8 @@ def render_index(root, site):
     total = len(site['records']) + len(site['legacy'])
     replacements = {'theme': THEME_INIT, 'app': app_head(''), 'legacy': redirect, 'settings': SETTINGS, 'footer_links': footer_links('', '#about', False),
                     'search': search_block('', None, total), 'contents': contents, 'total': f'{total:,}',
-                    'record_count': f'{len(site["records"]):,}'}
+                    'record_count': f'{len(site["records"]):,}',
+                    'reviewed_count': f'{sum(reviewed(record) for record in site["records"].values()):,}'}
     return resolve_anchors(fill(root / 'src/page.html', replacements), site, '', 'index.html')
 
 
@@ -1837,7 +1880,7 @@ def fill(path, replacements):
 
 
 def render_sitemap(site):
-    pages = (['', 'how-we-decide.html', 'rulings.html', 'words.html', 'latin.html', 'practice.html', 'hora.html']
+    pages = (['', 'how-we-decide.html', 'rulings.html', 'words.html', 'latin.html', 'practice.html', 'hora.html', 'review.html']
              + [f'k/{key}.html' for key in site['categories']] + [f'c/{key}.html' for key in sorted(site['records'])]
              + [f'l/{slug}.html' for slug in sorted(w['slug'] for w in site['words'].values())])
     return ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
@@ -1869,6 +1912,8 @@ def build_site(root=ROOT):
     outputs['hora.html'] = fill(root / 'src/hora.html', {'app': app_head('')})
     outputs['assets/practice.js'] = (root / 'src/practice.js').read_text(encoding='utf-8')
     outputs['assets/practice-data.js'] = practice_data(site)
+    outputs['review.html'] = render_review_page(root, site)
+    outputs['assets/review.js'] = (root / 'src/review.js').read_text(encoding='utf-8')
     outputs['sitemap.xml'] = render_sitemap(site)
     outputs['assets/lexicon.css'] = (root / 'src/styles.css').read_text(encoding='utf-8')
     outputs['assets/lexicon.js'] = (root / 'src/page.js').read_text(encoding='utf-8')

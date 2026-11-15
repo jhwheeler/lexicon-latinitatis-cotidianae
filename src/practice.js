@@ -528,6 +528,11 @@
       q('g-ex-en').replaceChildren(el('span', '', example[1], 'en'), ' ', example[2] ? el('span', 'src', example[2], 'en') : el('span', 'src composed', t('composed')));
     }
     q('g-entry').href = `c/${card.i}.html`;
+    // Beside the way to the entry, the review's two controls (review.js; Jack, 15 November 2026: he
+    // notices most problems while practising): a flag for anyone, and for the editor "looks
+    // right". They touch neither the round nor the step back.
+    const verdict = window.lexiconReview ? window.lexiconReview.controls({ id: card.i, rev: card.h, reviewed: !!card.d, english: card.e, where: 'game' }).box : null;
+    q('g-verdict').replaceChildren(...(verdict ? [verdict] : []));
   }
   // The layer covers the whole page, which does not scroll under it.
   function openGame() {
@@ -570,7 +575,8 @@
   q('g-card').addEventListener('click', event => { if (!event.target.closest('a')) reveal(); });
   q('p-clear').addEventListener('click', () => { deck.part = []; deck.cat = []; deck.src = []; deck.mine = []; write(KEY.deck, deck); refresh(); });
   document.addEventListener('keydown', event => {
-    if (!game.open || event.metaKey || event.ctrlKey || event.altKey) return;
+    // Not while the flag's box is open over the round: its keys are its own.
+    if (!game.open || event.metaKey || event.ctrlKey || event.altKey || document.querySelector('.flagsheet[open]') || event.target.closest('input, textarea')) return;
     if (event.key === 'Escape') { event.preventDefault(); closeGame(); }
     else if ((event.key === ' ' || event.key === 'Enter') && round.current && !round.shown && !event.target.closest('button, a')) { event.preventDefault(); reveal(); }
     else if (event.key === '1' && round.shown) mark(false);

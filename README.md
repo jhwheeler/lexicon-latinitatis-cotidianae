@@ -33,6 +33,8 @@ python3 -m unittest discover -s tests -v
 
 Commit the source changes **and the regenerated files** (`index.html`, `k/`, `c/`, `l/`, `words.html`, `latin.html`, `how-we-decide.html`, `rulings.html`, `practice.html`, `hora.html`, `review.html`, `sitemap.xml`, `manifest.webmanifest`, `sw.js`, and `assets/` with the stylesheet, the scripts, the search data, the fonts and the icons) together. Do not edit generated files directly. The PR check rejects invalid data, a broken link between pages, or a stale generated file. The counts, the lists and the contents are generated.
 
+**Publishing is changing** (Jack, 15 November 2026: every change touched thousands of generated files). `.github/workflows/pages.yml` builds the site on every push to `main` (`python3 scripts/build.py --out _site`, the site alone in a folder of its own) and publishes that build. It takes effect when GitHub Pages is set to take the site from GitHub Actions (Settings, Pages, Source); until then Pages publishes the generated files committed here, and the workflow's last step fails. Once the workflow is seen to publish, the generated files leave the repository.
+
 See [the data format and architecture decision](docs/data-format.md) for an entry example, field definitions, and why generation happens before publication rather than in the browser.
 
 ## Pages and search

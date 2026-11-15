@@ -18,6 +18,7 @@ docs/records.md.
 """
 import unicodedata
 import argparse
+import functools
 import hashlib
 from html import escape, unescape
 from html.parser import HTMLParser
@@ -563,8 +564,10 @@ def latinitium_url(head, table):
     return 'https://latinitium.com/latin-dictionaries/?t=' + ','.join(f'lsn{n}' for n in ids) if ids else ''
 
 
+@functools.lru_cache(maxsize=400_000)
 def fold(text):
-    """Lower case without macrons or other marks, as search compares words."""
+    """Lower case without macrons or other marks, as search compares words. The same words are
+    folded over and over in a build, so the answers are kept."""
     text = unicodedata.normalize('NFD', text.lower()).replace('æ', 'ae').replace('œ', 'oe')
     return ''.join(c for c in text if not unicodedata.combining(c))
 
@@ -1803,14 +1806,33 @@ class Document(HTMLParser):
             self.links.append(href)
 
 
+# Reading sixteen thousand pages with the parser above took most of a build's time, so the pages
+# are scanned for the same two attributes with patterns instead: scripts, styles and comments are
+# set aside, then every id and href of a start tag is taken, as the builder writes them (double
+# quotes, entities for & < > and "). The tests compare the two on a sample of pages.
+_NOT_MARKUP = re.compile(r'<script\b.*?</script>|<style\b.*?</style>|<!--.*?-->', re.S)
+_START_TAG = re.compile(r'<[a-zA-Z][^<>]*>')
+_ID_OR_HREF = re.compile(r'\s(id|href)="([^"]*)"')
+
+
+class Scanned:
+    """The element IDs and local links of one generated page, as Document collects them."""
+    def __init__(self, text):
+        self.ids, self.links = set(), []
+        for tag in _START_TAG.findall(_NOT_MARKUP.sub('', text)):
+            for name, value in _ID_OR_HREF.findall(tag):
+                if '&' in value:
+                    value = unescape(value)
+                if name == 'id':
+                    require(value not in self.ids, f'Duplicate HTML ID: {value}')
+                    self.ids.add(value)
+                elif value and not value.startswith(('https://', 'http://', 'mailto:')):
+                    self.links.append(value)
+
+
 def check_links(outputs):
     """Every local link must reach a generated page and, with a fragment, an ID on it."""
-    documents = {}
-    for path, text in outputs.items():
-        if path.endswith('.html'):
-            doc = Document()
-            doc.feed(text)
-            documents[path] = doc
+    documents = {path: Scanned(text) for path, text in outputs.items() if path.endswith('.html')}
     broken = []
     for path, doc in documents.items():
         for link in doc.links:
@@ -2580,10 +2602,23 @@ def stale(root, outputs):
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument('--check', action='store_true', help='Fail if any generated file needs rebuilding')
+    parser.add_argument('--out', type=Path, metavar='DIR',
+                        help='Write the site into this folder, and nothing else: what the deployment publishes')
     args = parser.parse_args()
     try:
         outputs = build_site()
-        if args.check:
+        if args.out:
+            # The site alone, in a folder of its own, for the workflow that publishes it
+            # (.github/workflows/pages.yml): the generated pages without the data, the sources and
+            # the documents that stand beside them in the repository.
+            for path, text in outputs.items():
+                (args.out / path).parent.mkdir(parents=True, exist_ok=True)
+                if isinstance(text, bytes):
+                    (args.out / path).write_bytes(text)
+                else:
+                    (args.out / path).write_text(text, encoding='utf-8')
+            print(f'Wrote the site, {len(outputs)} files, to {args.out}.')
+        elif args.check:
             changed = [p for p, text in outputs.items() if not (ROOT / p).exists() or (
                 (ROOT / p).read_bytes() != text if isinstance(text, bytes) else (ROOT / p).read_text(encoding='utf-8') != text)]
             leftover = stale(ROOT, outputs)

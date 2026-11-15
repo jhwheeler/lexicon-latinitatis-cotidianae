@@ -2408,6 +2408,8 @@ def practice_cards(site):
         gloss = main.get('gloss', '')
         if gloss and gloss.strip().lower() != record['english'].strip().lower():
             card['g'] = gloss
+        if record.get('also'):
+            card['o'] = record['also']   # the headword's other English names, for the front of the card
         if record.get('also_under'):
             card['x'] = record['also_under']
         if practice_kind(record) != 'w':
@@ -2449,6 +2451,7 @@ def practice_data(site):
     """The practice cards, as a script (so that practice.html also works from disk). Keys are short:
     a card has i (record id), e (English, with its sense in brackets), p (part of speech), l (the
     recommended Latin, in its dictionary form), g (its gloss, where it differs from the headword),
+    o (the headword's other English names, the record's "also"),
     k (category), x (the other categories it is listed under), t (kind: none for a word, p for an
     everyday phrase, s for a saying), s (its sources, as numbers into "sources"), r (the answer's
     period, as a number into "periods"; none for classical), v (the first places it is cited from),

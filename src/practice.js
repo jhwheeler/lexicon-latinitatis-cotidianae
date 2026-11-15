@@ -587,6 +587,16 @@
     q('g-keys').hidden = round.done;
     if (card) {
       q('g-cue').replaceChildren(card.e, ...(card.p ? [' ', el('span', 'pos', card.p)] : []));
+      // What the cue alone leaves open (Jack, 15 November 2026: "in turn" is not enough to know
+      // which word is wanted): the headword's other English names, the Latin word's own gloss
+      // where it says more, and the English of the example, which shows the word at work. All of
+      // it is English, so none of it gives the answer away. Once the card is turned the example
+      // stands on the back with its Latin, and is not said twice.
+      const plain = text => fold(text).replace(/[^a-z0-9]+/g, '');   // a saying is not given as its own example
+      const example = exampleOf(card), context = example && plain(example[1]) !== plain(card.e) ? example[1] : '';
+      q('g-more').textContent = card.o ? `${t('also')} ${card.o.join(', ')}` : ''; q('g-more').hidden = !card.o;
+      q('g-gloss').textContent = card.g || ''; q('g-gloss').hidden = !card.g;
+      q('g-context').textContent = context ? `“${context}”` : ''; q('g-context').hidden = !context || round.shown;
       if (round.shown) drawBack(card);
     } else {
       // Between rounds: what the round came to, what is waiting, and when the next card comes back.
@@ -597,6 +607,12 @@
       q('g-next').hidden = !state.more; q('g-early').hidden = !state.early;
     }
     polish(game);
+  }
+  // One example, and only one that contains the answer (the builder keeps no other): from a
+  // chosen source if the card has one, else its first.
+  function exampleOf(card) {
+    const chosen = deck.src.map(id => sourceNumber.get(id));
+    return (card.q || []).find(row => (row[3] || []).some(n => chosen.includes(n))) || (card.q || [])[0];
   }
   function drawBack(card) {
     const period = card.r || 0, ours = period === data.periods.indexOf('ours');
@@ -612,11 +628,7 @@
     // The record's other words, for the reader who said one of them (the coordinating session's idea).
     q('g-also').replaceChildren(t('also') + ' ', el('span', '', (card.a || []).join(', '), 'la'));
     q('g-also').hidden = !card.a;
-    q('g-gloss').textContent = card.g || ''; q('g-gloss').hidden = !card.g;
-    // One example, and only one that contains the answer (the builder keeps no other): from a
-    // chosen source if the card has one, else its first.
-    const chosen = deck.src.map(id => sourceNumber.get(id));
-    const example = (card.q || []).find(row => (row[3] || []).some(n => chosen.includes(n))) || (card.q || [])[0];
+    const example = exampleOf(card);
     q('g-ex').hidden = !example;
     if (example) {
       q('g-ex-la').textContent = example[0];

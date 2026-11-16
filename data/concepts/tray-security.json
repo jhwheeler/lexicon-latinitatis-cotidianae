@@ -6,11 +6,22 @@
   "domain": "vectura",
   "terms": [
     {
-      "latin": "cista, cistae f.",
+      "latin": "alveolus, alveolī m.",
       "status": "recommended",
+      "period": "classical",
+      "gloss": "a tray or small trough: the tray at a security check",
+      "evidence": [
+        "Phaedr. 2.5: <span lang=\"la\">alveolus ligneus</span> (Lewis &amp; Short)",
+        "Liv. 28.45 (Lewis &amp; Short)"
+      ],
+      "comment": "Classically a small hollow vessel, “a tray, trough, basin” (Lewis &amp; Short), the diminutive of <span lang=\"la\">alveus</span>; its use for the tray one’s things go through the scanner in is modern, and ours. Traupman and Morgan–Owens have a tray only for serving food, <span lang=\"la\">ferculum</span> (Traupman 73) and <span lang=\"la\">repositōrium</span> (M-O s.v. dish: tray)."
+    },
+    {
+      "latin": "cista, cistae f.",
+      "status": "alternative",
       "period": "ours",
-      "gloss": "box or chest",
-      "comment": "Applied by us to the tray at the security check."
+      "gloss": "box or basket",
+      "comment": "A wooden box or a woven basket for keeping money, clothes, books or fruit (Lewis &amp; Short), applied by us to the tray at the security check, which is shallower than a box."
     }
   ],
   "phrases": [
@@ -25,11 +36,14 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/cista\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cista</a>",
-    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+    "<a href=\"https://logeion.uchicago.edu/alveolus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: alveolus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 73.",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. dish: tray."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-16",
     "by": "Claude"
   }
 }

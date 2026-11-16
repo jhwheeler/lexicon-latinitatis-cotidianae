@@ -6,11 +6,23 @@
   "domain": "vectura",
   "terms": [
     {
-      "latin": "columna, columnae f.",
+      "latin": "pertica, perticae f.",
       "status": "recommended",
+      "period": "classical",
+      "gloss": "a pole or long staff: the pole to hold on to",
+      "evidence": [
+        "Plin. NH 15.11: <span lang=\"la\">perticīs oleās dēcutere</span> (Lewis &amp; Short)",
+        "Ov. F. 3.117 (Lewis &amp; Short)",
+        "Traupman 49"
+      ],
+      "comment": "The classical word for a pole or a long staff (Lewis &amp; Short), and Traupman’s word for a pole (p. 49). Its use for the pole one holds on to in a bus or a metro carriage is modern, and ours: Traupman and Morgan–Owens have no word for it."
+    },
+    {
+      "latin": "columna, columnae f.",
+      "status": "alternative",
       "period": "ours",
       "gloss": "pillar",
-      "comment": "Here the pole to hold on to."
+      "comment": "Classically a column, pillar or post (Lewis &amp; Short). Our use of it for the pole in a carriage, which is a fixed upright as a pillar is; the <span lang=\"la\">perticae</span> of the authors are mostly loose poles held in the hand."
     }
   ],
   "phrases": [
@@ -25,11 +37,13 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/columna\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: columna</a>",
-    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+    "<a href=\"https://logeion.uchicago.edu/pertica\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pertica</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 49."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-16",
     "by": "Claude"
   }
 }

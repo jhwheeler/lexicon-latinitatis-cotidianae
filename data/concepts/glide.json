@@ -1,20 +1,51 @@
 {
   "id": "glide",
   "english": "glide",
-  "sense": "standing, on a balance bike",
+  "sense": "through the air, over water or over ice",
   "pos": "verb",
+  "also": [
+    "glide along"
+  ],
   "domain": "ludi",
   "terms": [
     {
       "latin": "lābor, lābī, lāpsus sum",
       "status": "recommended",
       "period": "classical",
-      "gloss": "glide",
+      "gloss": "glide: move smoothly along, through the air, over water or over ice",
       "evidence": [
-        "Verg. A. 6.202; Ov. H. 10.65 (Lewis &amp; Short: “to move gently along a smooth surface, … to slide, slip, or glide”)",
+        "Verg. A. 6.202: <span lang=\"la\">liquidumque per āëra lāpsae</span> (Lewis &amp; Short, “of flying”)",
+        "Verg. A. 8.91: <span lang=\"la\">lābitur ūncta vadīs abiēs</span> (Lewis &amp; Short)",
         "Traupman 49, 372: <span lang=\"la\">pedirotīs lābī</span>, to rollerblade"
       ],
-      "comment": "The classical verb for gliding, said of snakes, ships and birds; Traupman uses it of skating on rollerblades. Standing on the bike, <span lang=\"la\">stāns lābitur</span>. See also slip."
+      "comment": "The classical verb for gliding, said of snakes, of ships and of birds on the wing (Lewis &amp; Short); Traupman uses it of skating on rollerblades. Of a child standing on a balance bike, <span lang=\"la\">stāns lābitur</span>. Losing one’s footing is the same verb in another of its senses (see slip)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "liquidumque per āëra lāpsae",
+      "english": "and gliding through the clear air (of doves)",
+      "source": "Verg. A. 6.202 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "pennīs lāpsa per aurās",
+      "english": "gliding on wings through the air",
+      "source": "Ov. M. 8.51 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "lābitur ūncta vadīs abiēs",
+      "english": "the tarred fir glides over the shallows (of a ship)",
+      "source": "Verg. A. 8.91 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "Puerī per glaciem lābuntur.",
+      "english": "The children are gliding over the ice.",
+      "source": "composed"
+    },
+    {
+      "latin": "stāns lābī",
+      "english": "to glide standing",
+      "source": "composed"
     }
   ],
   "related": [
@@ -30,14 +61,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-15",
+    "date": "2026-11-16",
     "by": "Claude"
-  },
-  "phrases": [
-    {
-      "latin": "stāns lābī",
-      "english": "to glide standing",
-      "source": "composed"
-    }
-  ]
+  }
 }

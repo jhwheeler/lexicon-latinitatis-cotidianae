@@ -2,6 +2,16 @@
   "id": "seat",
   "english": "seat",
   "pos": "noun",
+  "also": [
+    "aisle seat",
+    "seat near the exit",
+    "first-class seat",
+    "second-class seat",
+    "tourist-class seat",
+    "back seat",
+    "front seat",
+    "reserved seat"
+  ],
   "domain": "vectura",
   "terms": [
     {
@@ -24,39 +34,6 @@
       ],
       "comment": "Lewis &amp; Short: mostly poetic and post-Augustan prose; not in Cicero."
     }
-  ],
-  "related": [
-    "window-seat",
-    "row-of-seats",
-    "seatbelt",
-    "reserved-seat",
-    "front-seat",
-    "back-seat",
-    "child-seat"
-  ],
-  "sources": [
-    "<a href=\"https://logeion.uchicago.edu/sedes\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sedes</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 212, 218, 291.",
-    "<a href=\"https://logeion.uchicago.edu/sedile\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sedile</a>"
-  ],
-  "replaces": [
-    "entry-218",
-    "libelli-218"
-  ],
-  "review": {
-    "status": "draft",
-    "date": "2026-11-12",
-    "by": "Claude"
-  },
-  "also": [
-    "aisle seat",
-    "seat near the exit",
-    "first-class seat",
-    "second-class seat",
-    "tourist-class seat",
-    "back seat",
-    "front seat",
-    "reserved seat"
   ],
   "phrases": [
     {
@@ -99,5 +76,28 @@
       "english": "a reserved seat",
       "source": "Traupman 375"
     }
-  ]
+  ],
+  "related": [
+    "window-seat",
+    "row-of-seats",
+    "seatbelt",
+    "reserved-seat",
+    "front-seat",
+    "back-seat",
+    "car-seat"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/sedes\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sedes</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 212, 218, 291.",
+    "<a href=\"https://logeion.uchicago.edu/sedile\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sedile</a>"
+  ],
+  "replaces": [
+    "entry-218",
+    "libelli-218"
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-16",
+    "by": "Claude"
+  }
 }

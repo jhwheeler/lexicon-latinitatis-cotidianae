@@ -36,9 +36,13 @@ const saved = () => page.evaluate(() => JSON.parse(sessionStorage.getItem('stub-
 const count = async label => Number((await page.locator('#e-counts div', { hasText: label }).locator('dt').textContent()).replace(/,/g, ''));
 const heading = () => page.locator('#e-page h1.hw').textContent();
 // The queue as the page orders it: the highest priority first, then by the English headword.
-const ranking = () => page.evaluate(() => window.editorIndex.records
-  .map(([id, , english, , cat, , priority, reasons]) => ({ id, english: english.toLowerCase(), cat, priority, reasons }))
-  .sort((a, b) => b.priority - a.priority || (a.english < b.english ? -1 : a.english > b.english ? 1 : a.id < b.id ? -1 : 1)));
+// The queue as the page should read it: the bands from the highest (a record's band is the highest
+// its reasons give, by the script's table), the priority inside a band, then the headword. The
+// reasons are in the order the page names them: the risk first.
+const ranking = () => page.evaluate(() => { const bands = window.editorIndex.bands; return window.editorIndex.records
+  .map(([id, , english, , cat, , priority, reasons]) => ({ id, english: english.toLowerCase(), cat, priority,
+    band: Math.max(0, ...reasons.map(code => bands[code] || 0)), reasons: [...reasons].sort((a, b) => (bands[b] || 0) - (bands[a] || 0)) }))
+  .sort((a, b) => b.band - a.band || b.priority - a.priority || (a.english < b.english ? -1 : a.english > b.english ? 1 : a.id < b.id ? -1 : 1)); });
 // Wait until the entry of this record is the one shown.
 const shown = id => page.waitForFunction(id => document.querySelector('.e-open a')?.href.endsWith(`/c/${id}.html`), id);
 
@@ -61,7 +65,7 @@ for path in pathlib.Path(sys.argv[1], 'data/concepts').glob('*.json'):
         path.write_text(json.dumps(record, ensure_ascii=False), encoding='utf-8')
 `, repo]);
   const said = String(execFileSync('python3', [join(repo, 'scripts/editor_review.py'), '--out', out, '--mine', list]));
-  assert.match(said, /3 records, first in the queue\. Ids that are not records, ignored: 1\./);
+  assert.match(said, /3 records, ahead inside each band\. Ids that are not records, ignored: 1\./);
   server = spawn('python3', ['-u', '-m', 'http.server', '0', '--bind', '127.0.0.1', '--directory', out],
                  { stdio: ['ignore', 'pipe', 'pipe'] });
   base = await new Promise((resolve, reject) => {
@@ -99,10 +103,16 @@ test('the lobby counts the entries, and Incipe opens the first still to read as 
 
 test('Incipe opens the entry of highest priority still to read, and the queue goes on in that order', async () => {
   const order = await ranking(), alphabet = await page.evaluate(() => window.editorIndex.records[0][0]);
-  assert.deepEqual(order.slice(0, 3).map(record => record.reasons[0]), ['mine', 'mine', 'mine']);
-  assert.deepEqual(order.slice(0, 3).map(record => record.id).sort(), ['bread', 'pyjamas', 'window']);
+  // Risk first: the queue opens in the highest band, where a judgement of ours stands in place of
+  // a source, and an attested word of his own list (bread) waits in a lower one for all that.
+  assert.equal(order[0].band, 3);
+  assert.equal(['ours', 'unsourced', 'quantity'].includes(order[0].reasons[0]), true);
+  assert.equal(order.every((record, n) => !n || order[n - 1].band >= record.band), true);
+  const bread = order.find(record => record.id === 'bread');
+  assert.equal(bread.reasons.includes('mine') && bread.band < 3, true);
+  assert.equal(order.indexOf(bread) > order.filter(record => record.band === 3).length - 1, true);
   assert.notEqual(order[0].id, alphabet);
-  assert.equal(order[3].priority >= order[4].priority && order[4].priority >= order[200].priority, true);
+  assert.equal(order[3].priority >= order[4].priority || order[3].band > order[4].band, true);
   await page.locator('#e-start').click();
   await shown(order[0].id);
   await page.locator('#e-ok').click();
@@ -119,13 +129,13 @@ test('Incipe opens the entry of highest priority still to read, and the queue go
 
 test('a quiet line under the strip says why an entry is here, three reasons at most; none, no line', async () => {
   const LABELS = { mine: 'in libellīs', frequent: 'verbum frequēns', daily: 'vītae cotīdiānae', ours: 'verbum nostrum', recent: 'verbum recēns',
-    quantity: 'ā fonte discēdit', kind: 'respōnsum dubium', unsourced: 'sine fonte', composed: 'exempla nostra tantum', phrase: 'plūra verba prō ūnō' };
+    quantity: 'ā fonte discēdit', kind: 'respōnsum dubium', unsourced: 'sine fonte', composed: 'exemplum nostrum', phrase: 'plūra verba prō ūnō' };
   const order = await ranking();
   await page.locator('#e-start').click();
   await shown(order[0].id);
   assert.equal(await page.locator('#e-why').isVisible(), true);
   assert.equal(await page.locator('#e-why').textContent(), order[0].reasons.slice(0, 3).map(code => LABELS[code]).join(' · '));
-  assert.match(await page.locator('#e-why').textContent(), /^in libellīs/);
+  assert.match(await page.locator('#e-why').textContent(), /^(verbum nostrum|sine fonte|ā fonte discēdit)/);
   const strip = await page.locator('.e-top').boundingBox(), why = await page.locator('#e-why').boundingBox();
   assert.equal(why.y >= strip.y + strip.height, true);
   // An entry with more than three reasons shows the three weightiest.
@@ -149,38 +159,35 @@ test('a quiet line under the strip says why an entry is here, three reasons at m
   assert.equal(await page.locator('#e-why').isVisible(), true);
 });
 
-test('Prīma: his own list and the two hundred highest after it are counted, and each starts its queue', async () => {
+test('Ōrdō: the four bands are counted, the riskiest first, and each starts its queue', async () => {
   const order = await ranking();
   const first = page.locator('#e-first button');
-  assert.equal(await page.locator('#e-first-h').textContent(), 'Prīma');
-  assert.equal(await first.count(), 2);
-  assert.match(await first.nth(0).textContent(), /^In libellīs.*3 ex 3 restant$/);
-  assert.match(await first.nth(1).textContent(), /^Proxima ducenta.*200 ex 200 restant$/);
+  assert.equal(await page.locator('#e-first-h').textContent(), 'Ōrdō');
+  assert.equal(await first.count(), 4);
+  const sizes = [3, 2, 1, 0].map(band => order.filter(record => record.band === band).length);
+  const number = n => n.toLocaleString('en');
+  for (const [n, name] of ['Nostra et disputāta', 'Verba recentia', 'Exempla nostra', 'Cētera'].entries()) {
+    const text = await first.nth(n).textContent();
+    assert.equal(text.startsWith(name) && text.endsWith(`${number(sizes[n])} ex ${number(sizes[n])} restant`), true, text);
+  }
+  // Far fewer call for a judgement than there are entries, and most have nothing of ours.
+  assert.equal(sizes[0] > 100 && sizes[0] < 1000 && sizes[3] > sizes[0], true);
   // The section stands above the categories.
   assert.equal((await page.locator('#e-first').boundingBox()).y < (await page.locator('#e-cats').boundingBox()).y, true);
   await first.nth(0).click();
   await shown(order[0].id);
-  assert.match(await page.locator('#e-where').textContent(), / · 3 restant$/);
+  assert.match(await page.locator('#e-where').textContent(), new RegExp(` · ${number(sizes[0])} restant$`));
   await page.locator('#e-ok').click();
   await shown(order[1].id);
-  await page.locator('#e-ok').click();
-  await shown(order[2].id);
   await page.locator('#e-close').click();
-  assert.match(await first.nth(0).textContent(), /1 ex 3 restant$/);
+  assert.equal((await first.nth(0).textContent()).endsWith(`${number(sizes[0] - 1)} ex ${number(sizes[0])} restant`), true);
+  // The second band starts where the first ends.
   await first.nth(1).click();
-  await shown(order[3].id);
-  assert.match(await page.locator('#e-where').textContent(), / · 200 restant$/);
+  await shown(order[sizes[0]].id);
   await page.locator('#e-ok').click();
-  await shown(order[4].id);
+  await shown(order[sizes[0] + 1].id);
   await page.locator('#e-close').click();
-  assert.match(await first.nth(1).textContent(), /199 ex 200 restant$/);
-  // The last of his list done, its line says so.
-  await first.nth(0).click();
-  await shown(order[2].id);
-  await page.locator('#e-ok').click();
-  await page.waitForSelector('.e-done');
-  await page.locator('#e-close').click();
-  assert.match(await first.nth(0).textContent(), /3 ✓$/);
+  assert.equal((await first.nth(1).textContent()).endsWith(`${number(sizes[1] - 1)} ex ${number(sizes[1])} restant`), true);
 });
 
 test('a category opened from the lobby runs in order of priority, not of the alphabet', async () => {
@@ -193,7 +200,7 @@ test('a category opened from the lobby runs in order of priority, not of the alp
     await page.locator('#e-ok').click();
     await shown(record.id);
   }
-  assert.equal(order[0].priority >= order[3].priority, true);
+  assert.equal(order[0].band >= order[3].band, true);
 });
 
 test('Rēctē saves a verdict on the text as it stands and goes on; Retrō comes back; Tolle takes it away', async () => {

@@ -80,19 +80,32 @@ class EditorReviewTests(unittest.TestCase):
         self.assertEqual(rows['and'][6:], [editor.FREQUENT[0][1] + editor.DAILY, ['frequent', 'daily']])
         self.assertEqual(editor.frequency_ranks(self.site)['and'], 2)
 
-    def test_the_editors_own_list_comes_first_and_an_id_that_is_no_record_is_ignored(self):
+    def test_risk_sets_the_band_and_the_editors_own_list_only_orders_inside_it(self):
+        """Jack, 16 November 2026, on the first order, which put his own list before everything:
+        "it is giving me words like mālum, really? come on". An attested word is not read first
+        because he says it often: the band comes from the risk, the list from --mine adds a
+        little inside the band, and an id that is no record is ignored."""
         rows = self.index['records']
         mine = [row for row in rows if 'mine' in row[7]]
         self.assertEqual(sorted(row[0] for row in mine), ['perhaps', 'soap'])
-        self.assertTrue(all(row[7][0] == 'mine' for row in mine))
-        self.assertGreater(min(row[6] for row in mine), max(row[6] for row in rows if 'mine' not in row[7]))
-        # The list outweighs every other reason together, and without it there is no such group.
-        others = sum(max(w for _, w in weight) if isinstance(weight, tuple) else weight
-                     for code, weight in editor.REASONS.items() if code != 'mine')
-        self.assertGreater(editor.MINE, others)
         plain = editor.priorities(self.site)
         self.assertFalse(any('mine' in reasons for _, reasons in plain.values()))
         self.assertEqual(plain['soap'][0], editor.priorities(self.site, mine=MINE)['soap'][0] - editor.MINE)
+        # The list weighs no more than a very frequent word, and no use makes a band.
+        self.assertLessEqual(editor.MINE, editor.FREQUENT[0][1])
+        self.assertEqual(editor.band(['mine', 'frequent', 'daily']), 0)
+        self.assertEqual([editor.band([code]) for code in ('ours', 'unsourced', 'quantity', 'recent', 'kind', 'composed', 'phrase')],
+                         [3, 3, 3, 2, 2, 1, 1])
+        self.assertEqual(editor.band(['frequent', 'composed', 'recent']), 2)
+        self.assertEqual(editor.band([]), 0)
+        self.assertLessEqual(set(editor.BANDS), set(editor.REASONS))
+        # The page is given the table, so that it and the script cannot disagree.
+        self.assertEqual(self.index['bands'], editor.BANDS)
+        # As the lexicon stands: a few hundred entries call for a judgement, and most have nothing of ours.
+        sizes = [sum(editor.band(row[7]) == band for row in rows) for band in (3, 2, 1, 0)]
+        self.assertTrue(100 < sizes[0] < 1000 < sizes[3], sizes)
+        # apple, an attested word with one sentence of ours, is in the lowest band but one.
+        self.assertEqual(editor.band(next(row for row in rows if row[0] == 'apple')[7]), 1)
 
     def test_the_list_is_read_from_a_file_outside_the_repository(self):
         with tempfile.TemporaryDirectory() as folder:
@@ -124,7 +137,8 @@ class EditorReviewTests(unittest.TestCase):
         self.assertEqual(ranked['t-unsourced'], (editor.UNSOURCED, ['unsourced']))
         self.assertEqual(ranked['t-daily'], (editor.DAILY, ['daily']))
         self.assertEqual(ranked['t-composed'], (editor.COMPOSED, ['composed']))
-        self.assertEqual(ranked['t-quoted'], (0, []))
+        # One sentence of ours is enough, whatever else is quoted.
+        self.assertEqual(ranked['t-quoted'], (editor.COMPOSED, ['composed']))
         self.assertEqual(ranked['t-note'], (editor.QUANTITY, ['quantity']))
         # Evidence that is Andresian's alone counts as recent, and two words for one as a phrase.
         self.assertEqual(ranked['t-phrase'], (editor.RECENT + editor.PHRASE, ['recent', 'phrase']))

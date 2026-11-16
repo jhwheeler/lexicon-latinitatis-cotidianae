@@ -3,7 +3,7 @@
 
     python3 scripts/editor_review.py                  # write the page's files to .editor-review/
     python3 scripts/editor_review.py --out DIR        # … or to another folder
-    python3 scripts/editor_review.py --mine FILE      # … with the editor's own list first in the queue
+    python3 scripts/editor_review.py --mine FILE      # … with the editor's own list ahead inside each band of the queue
     python3 scripts/editor_review.py --report FILE    # verdict documents (one JSON object per line,
                                                       # or - for standard input) → a review report
 
@@ -22,10 +22,11 @@ it again; a verdict is tied to the revision it was given on, so one given on an 
 applied to a newer one.
 
 The queue is in order of priority (Jack, 16 November 2026: "i can review whatever i can review.
-would be good to have more high prio items first"). A record's priority is how much it is used
-plus how likely it is to be wrong, from what the data says: the weights are below. --mine FILE
-names a text file of record ids, one per line: the words the editor says himself. They come before
-everything else. That list is private: it is kept outside the repository, never committed, and
+would be good to have more high prio items first"). How likely a record is to be wrong puts it in
+a band, and the bands are read from the highest; how much it is used orders it inside its band.
+The weights and the bands are below. --mine FILE names a text file of record ids, one per line:
+the words the editor says himself. They stand ahead inside their band, not ahead of everything
+(the first order did that, and led with attested words like mālum). That list is private: it is kept outside the repository, never committed, and
 written nowhere but into the page's own data.
 """
 import argparse
@@ -57,8 +58,13 @@ answer_kinds = _load('answer_kinds')
 # coordinating session's choice (16 November 2026), for Jack to judge; change a number here and
 # build the page again. Each constant's code, in REASONS below, is what the page's data carries.
 #
-# Use.
-MINE = 1000        # on the editor's own list (--mine): more than everything else together
+# Risk decides the order, in bands; use only orders the entries inside a band (Jack, 16 November
+# 2026, on finding the queue led by his own list and the commonest words: "it just again seems
+# like...everything … it is giving me words like mālum, really? come on"). An attested word whose
+# forms the scripts check against Lewis & Short does not need him first because he says it often.
+#
+# Use: the order inside a band.
+MINE = 25          # on the editor's own list (--mine): about as much as a very frequent word
 FREQUENT = ((1000, 30), (2000, 20), (5000, 10))    # the answer's rank in refs/latin-frequency.tsv: up to this rank, this weight
 DAILY = 5          # in one of the categories nearest the person: the first DAILY_CATEGORIES of the catalog's filters
 DAILY_CATEGORIES = 8
@@ -68,8 +74,12 @@ RECENT = 15        # the answer is modern, or its evidence is Levi–Bini or And
 QUANTITY = 15      # a note departs from an authority on a form (`against`), or applies a ruling
 KIND = 20          # scripts/answer_kinds.py lists it: the answer may not be the kind of word the headword is
 UNSOURCED = 20     # no line of sources
-COMPOSED = 5       # it has examples and every one is composed by us
+COMPOSED = 5       # it has an example or phrase composed by us
 PHRASE = 5         # the headword is one word and the answer is several
+# The bands, the highest read first: 3, where a judgement of ours stands in place of a source;
+# 2, modern words and answers that may be the wrong kind of word; 1, attested words that carry a
+# sentence of ours; 0, the rest, attested words with nothing of ours.
+BANDS = {'ours': 3, 'unsourced': 3, 'quantity': 3, 'recent': 2, 'kind': 2, 'composed': 1, 'phrase': 1}
 REASONS = {'mine': MINE, 'frequent': FREQUENT, 'daily': DAILY, 'ours': OURS, 'recent': RECENT, 'quantity': QUANTITY,
            'kind': KIND, 'unsourced': UNSOURCED, 'composed': COMPOSED, 'phrase': PHRASE}
 CAUTIOUS = re.compile(r'Levi[–-]Bini|Andresian')    # the reference works the house rules treat with caution
@@ -141,12 +151,17 @@ def priorities(site, root=ROOT, mine=()):
             'quantity': QUANTITY if any('against' in note or 'ruling' in note for note in notes) else 0,
             'kind': KIND if key in suspects else 0,
             'unsourced': UNSOURCED if not record.get('sources') else 0,
-            'composed': COMPOSED if phrases and all(phrase['source'] == 'composed' for phrase in phrases) else 0,
+            'composed': COMPOSED if any(phrase['source'] == 'composed' for phrase in phrases) else 0,
             'phrase': PHRASE if len(record['english'].split()) == 1 and answer_words(term) > 1 else 0,
         }
         reasons = sorted((code for code in REASONS if weights[code]), key=lambda code: -weights[code])
         out[key] = (sum(weights.values()), reasons)
     return out
+
+
+def band(reasons):
+    """The band of a record with these reasons: the highest any of them gives, 0 with none."""
+    return max((BANDS.get(code, 0) for code in reasons), default=0)
 
 
 def read_mine(path):
@@ -186,7 +201,7 @@ def page_files(root=ROOT, today=None, mine=(), site=None):
     data = {'built': (today or datetime.date.today()).isoformat(), 'site': builder.SITE_URL,
             'categories': [{'id': key, 'english': site['categories'][key]['english'], 'latin': site['categories'][key]['latin']}
                            for key in categories],
-            'records': index}
+            'bands': BANDS, 'records': index}
     files['d/index.js'] = f'window.editorIndex={json.dumps(data, ensure_ascii=False, separators=(",", ":"))};\n'
     files['index.html'] = (root / 'src/editor/review.html').read_text(encoding='utf-8')
     files['review.js'] = (root / 'src/editor/review.js').read_text(encoding='utf-8')
@@ -243,7 +258,7 @@ def main():
         print(f'Wrote {len(files)} files ({size / 1048576:.1f} MiB) to {out}.')
         if args.mine:
             known = sum(1 for key in mine if key in site['records'])
-            print(f'The editor\'s own list: {known} records, first in the queue. Ids that are not records, ignored: {len(mine) - known}.')
+            print(f'The editor\'s own list: {known} records, ahead inside each band. Ids that are not records, ignored: {len(mine) - known}.')
     except (ValueError, KeyError, TypeError, OSError) as error:
         print(f'Failed: {error}', file=sys.stderr)
         return 1

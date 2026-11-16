@@ -138,7 +138,7 @@ Every record is a draft until the editor has read it (Jack, 15 November 2026). T
 - **On every entry's page**, at its foot, the site offers the flag: *Notā* (Flag) opens a small box with six reasons to tap and a line to write. The back of a practice card has the same. A flag is kept on the device (`lexicon-review`) with the revision of the record it was given on.
 - **`review.html`** (linked from every footer): how many entries are reviewed and how many are drafts, and *Mitte*: one report of the reader's flags not yet sent, to share, copy or open as a GitHub issue.
 - **`scripts/apply_review.py`** reads a report, the editor's or a reader's (one format; a reader's is applied with `--flags-only`, so that only the editor's verdict marks an entry reviewed): an entry marked right becomes reviewed if it has not changed since; a flag goes to `notes/review-flags.md` for an agent to act on, and sends a reviewed entry back to draft.
-- **The site** says "Reviewed 15 November 2026." or "Draft of …" at the foot of each entry, with no name, counts the reviewed entries on the front page and ticks them quietly in the lists.
+- **The site** says "Reviewed 15 November 2026." or "Not yet reviewed" (a link to About) at the foot of each entry, with no name, counts the reviewed entries on the front page and ticks them quietly in the lists.
 
 Agents never mark a record reviewed. The flag's interface is Latin unless English was chosen on the practice page.
 

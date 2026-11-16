@@ -347,15 +347,20 @@ class BuildTests(unittest.TestCase):
         self.assertIn('<details class="settings"><summary aria-label="Display and theme"', index)
         self.assertNotIn('head-search', index)
         self.assertNotIn('<nav', header(index))
-        self.assertIn('<p class="foot-links"><a href="how-we-decide.html">How we decide</a> · <a href="rulings.html">Rulings</a> · '
-                      '<a href="how-practice-works.html">How the practice works</a> · <a href="#about">About</a> · ', index)
+        # The foot: three short rows, each under its name; the front page searches in place, so its
+        # first row has Practice alone.
+        self.assertIn('<nav class="foot-links" aria-label="The lexicon’s pages"><p><span class="foot-h">Use</span> <span class="foot-l">'
+                      '<a href="practice.html">Practice</a></span></p><p><span class="foot-h">How it is made</span> <span class="foot-l">'
+                      '<a href="#about">About</a> · <a href="how-we-decide.html">How we decide</a> · <a href="rulings.html">Rulings</a> · '
+                      '<a href="how-practice-works.html">How the practice works</a> · <a href="review.html">Review</a></span></p>'
+                      '<p><span class="foot-h">Project</span> ', index)
         record = outputs['c/kind.html']
         self.assertIn('<form class="head-search" role="search" action="../index.html" method="get">', header(record))
         self.assertIn('name="q"', header(record))
         self.assertIn('data-theme-choice="dark"', header(record))
         self.assertNotIn('<nav', header(record))
-        self.assertIn('<a href="../how-we-decide.html">How we decide</a> · <a href="../rulings.html">Rulings</a> · '
-                      '<a href="../how-practice-works.html">How the practice works</a> · <a href="../index.html#about">About</a>', record)
+        self.assertIn('<a href="../index.html#about">About</a> · <a href="../how-we-decide.html">How we decide</a> · <a href="../rulings.html">Rulings</a> · '
+                      '<a href="../how-practice-works.html">How the practice works</a> · <a href="../review.html">Review</a>', record)
         for path in ('words.html', 'latin.html', 'rulings.html', 'how-we-decide.html', 'how-practice-works.html', 'l/caccabus.html'):
             up = '../' if '/' in path else ''
             self.assertIn(f'<form class="head-search" role="search" action="{up}index.html" method="get">', outputs[path], path)
@@ -636,7 +641,7 @@ class BuildTests(unittest.TestCase):
         page = builder.build_site(self.root)['c/perhaps.html']
         self.assertNotIn('how-sources', page)
         self.assertNotIn('<span class="sc">Sources</span>', page)
-        self.assertIn('<footer class="c-sources"><p>Draft of ', page)
+        self.assertIn('<footer class="c-sources"><p class="review-state"><a href="../index.html#about">Not yet reviewed</a>.</p>', page)
         self.assertIn('<p class="suggest">', page)
         # Nor has one whose only source is the readers, which the site does not cite.
         record['sources'] = ['<span lang="la">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026.']
@@ -813,11 +818,20 @@ class BuildTests(unittest.TestCase):
             self.assertNotEqual(builder.record_revision(changed), revision)
 
     def test_the_site_carries_the_revision_and_shows_what_is_reviewed(self):
+        # The test counts from nought: the entries the editor has reviewed are drafts again here.
+        for path in (self.root / 'data/concepts').glob('*.json'):
+            text = path.read_text(encoding='utf-8')
+            if '"reviewed"' in text:
+                record = json.loads(text)
+                record['review'] = {'status': 'draft', 'date': '2026-11-09', 'by': 'Claude'}
+                self.save_record(record, path.stem)
         outputs = builder.build_site(self.root)
         revision = builder.record_revision(self.record('perhaps'))
         self.assertIn(f'<article class="concept" data-record data-rev="{revision}" data-status="draft">', outputs['c/perhaps.html'])
         self.assertIn('<script src="../assets/review.js" defer></script>', outputs['c/perhaps.html'])
-        self.assertIn('Draft of ', outputs['c/perhaps.html'])
+        # A draft says so in three words that lead to About, where the editor says what that means; it gives no date.
+        self.assertIn('<p class="review-state"><a href="../index.html#about">Not yet reviewed</a>.</p>', outputs['c/perhaps.html'])
+        self.assertNotIn('Draft of ', outputs['c/perhaps.html'])
         # Without scripts the way to GitHub stands where the flag will be.
         self.assertIn('<p class="suggest"><a href="https://github.com/', outputs['c/perhaps.html'])
         self.assertNotIn('review.js', outputs['l/fortasse.html'])
@@ -826,7 +840,7 @@ class BuildTests(unittest.TestCase):
         self.assertNotIn('d', card)
         self.assertIn(' · 0 reviewed by the editor; the rest are drafts and await <a href="review.html">review</a></p>', outputs['index.html'])
         self.assertNotIn(' class="rv"', outputs['k/sermo.html'])
-        # The review page: on the device, in the sitemap, linked from every footer beside Practice.
+        # The review page: on the device, in the sitemap, linked from every footer.
         review = outputs['review.html']
         self.assertIn('<script src="assets/practice-data.js" defer></script>\n<script src="assets/review.js" defer></script>', review)
         self.assertIn(f'Reviewed by the editor: 0; drafts: {len(self.practice(outputs)["cards"]):,}.', review)
@@ -842,7 +856,8 @@ class BuildTests(unittest.TestCase):
         self.assertIn('cotidianae/review.html</loc>', outputs['sitemap.xml'])
         for path, up in (('index.html', ''), ('c/perhaps.html', '../'), ('review.html', '')):
             page = outputs[path]
-            self.assertIn(f'<a href="{up}practice.html">Practice</a> · <a href="{up}review.html">Review</a> · ', page[page.rindex('<footer'):])
+            for link in (f'<a href="{up}practice.html">Practice</a>', f'<a href="{up}review.html">Review</a>'):
+                self.assertIn(link, page[page.rindex('<footer'):])
             self.assertNotIn('review.html', page[page.index('<header class="site-top'):page.index('</header>')])
         self.assertIn('<script src="assets/review.js" defer></script>\n<script src="assets/practice.js" defer></script>', outputs['practice.html'])
         # Marked reviewed (as scripts/apply_review.py marks it), the record says so everywhere, under the same revision.
@@ -851,7 +866,7 @@ class BuildTests(unittest.TestCase):
         self.save_record(record)
         outputs = builder.build_site(self.root)
         self.assertIn(f'data-rev="{revision}" data-status="reviewed">', outputs['c/perhaps.html'])
-        self.assertIn('<p>Reviewed 15 November 2026.</p>', outputs['c/perhaps.html'])
+        self.assertIn('<p class="review-state">Reviewed 15 November 2026.</p>', outputs['c/perhaps.html'])
         card = next(card for card in self.practice(outputs)['cards'] if card['i'] == 'perhaps')
         self.assertEqual((card['h'], card['d']), (revision, 1))
         self.assertIn(' · 1 reviewed by the editor; ', outputs['index.html'])
@@ -862,7 +877,7 @@ class BuildTests(unittest.TestCase):
         record['review']['by'] = 'Xenophilus Recensor'
         self.save_record(record)
         outputs = builder.build_site(self.root)
-        self.assertIn('<p>Reviewed 15 November 2026.</p>', outputs['c/perhaps.html'])
+        self.assertIn('<p class="review-state">Reviewed 15 November 2026.</p>', outputs['c/perhaps.html'])
         for path, output in outputs.items():
             if isinstance(output, str):
                 self.assertNotIn('Xenophilus', output, path)

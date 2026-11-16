@@ -141,4 +141,4 @@ It prints a summary and exits non-zero on a malformed report, having changed not
 
 ## On the site
 
-The foot of an entry says "Reviewed 15 November 2026." or "Draft of …, not yet reviewed."; the reviewer's name is not printed there or anywhere else on the site. The front page's line of totals gives the number reviewed, and so does `review.html`. In the category lists and the English A–Z a reviewed entry carries a small tick after its headword (a class on its `li`, drawn by the stylesheet).
+The foot of an entry says "Reviewed 15 November 2026." or "Not yet reviewed.", which is a link to About on the front page, where the editor says in his own words what that means (Jack, 16 November 2026; it read "Draft of …, not yet reviewed." before); the reviewer's name is not printed there or anywhere else on the site. The front page's line of totals gives the number reviewed, and so does `review.html`. In the category lists and the English A–Z a reviewed entry carries a small tick after its headword (a class on its `li`, drawn by the stylesheet).

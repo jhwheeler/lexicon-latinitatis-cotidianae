@@ -264,6 +264,8 @@ mark { background:var(--mark); color:var(--ink); padding:0 .06em; border-radius:
 footer { border-top:1px solid var(--rule); color:var(--soft); padding:16px 0 56px; }
 #about { scroll-margin-top:16px; }
 #about h2 { margin:0 0 6px; color:var(--rubric); font:400 1.45rem var(--serif); font-variant-caps:small-caps; letter-spacing:.05em; }
+.about-what { margin:0 0 18px; }
+.about-what p { margin:.6em 0; max-width:46rem; color:var(--ink); }
 footer details { border-top:1px solid var(--hair); }
 footer details > summary { display:flex; align-items:center; min-height:48px; cursor:pointer; color:var(--ink); font:500 1.02rem var(--sans); }
 footer details[open] > summary { color:var(--rubric); }
@@ -276,9 +278,14 @@ footer details p { margin:.6em 0; max-width:46rem; }
 .source-card li::marker { color:var(--accent); }
 .source-card p { margin:.3em 0; color:var(--muted); }
 .footer-note { margin-top:18px; color:var(--muted); font:400 .95rem/1.55 var(--sans); }
-.site-foot p, .foot-links { margin:0; font:400 1rem/1.6 var(--sans); }
-.foot-links { margin-top:14px; padding-top:6px; border-top:1px solid var(--hair); }
-:is(.site-foot, .foot-links) a { display:inline-block; padding:8px 0; color:var(--soft); }
+/* The foot of every page: three short rows, each under its own name (the links had grown to nine
+   in one line). On a phone the name stands above its links. */
+.foot-links { margin:14px 0 0; padding-top:10px; border-top:1px solid var(--hair); font:400 1rem/1.6 var(--sans); text-align:left; }
+.site-foot .foot-links { margin-top:0; padding-top:0; border-top:0; }
+.foot-links p { display:grid; grid-template-columns:8.5rem minmax(0,1fr); column-gap:1rem; align-items:baseline; margin:0; color:var(--muted); }
+.foot-h { padding:8px 0; color:var(--muted); font-variant-caps:all-small-caps; letter-spacing:.06em; }
+.foot-links a { display:inline-block; padding:8px 0; color:var(--soft); }
+@media (max-width:560px) { .foot-links p { display:block; margin:.5em 0; } .foot-h { display:block; padding:0; } }
 
 /* The other pages: How we decide, Rulings ------------------------------------------ */
 .subpage .wrap { width:min(calc(100% - 32px), 1040px); }

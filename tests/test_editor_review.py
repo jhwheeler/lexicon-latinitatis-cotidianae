@@ -159,7 +159,7 @@ class EditorReviewTests(unittest.TestCase):
         soap = self.chunk(self.records['soap']['domain'])['soap']
         self.assertIn('<h1 class="hw">soap', soap)
         self.assertIn('class="lemma" lang="la"', soap)
-        self.assertRegex(soap, r'<footer class="c-sources">.*(Draft of|Reviewed) ')
+        self.assertRegex(soap, r'<footer class="c-sources">.*(Not yet reviewed\.|Reviewed )')
 
     def test_the_page_asks_nothing_of_other_sites(self):
         for path in ('index.html', 'review.js', 'editor.css'):

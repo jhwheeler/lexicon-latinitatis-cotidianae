@@ -582,9 +582,11 @@ test('the footer of every page links to How we decide, Rulings, How the practice
     assert.equal(await foot.getByRole('link', { name: 'About', exact: true }).getAttribute('href'), about, path);
     assert.equal(await foot.getByRole('link', { name: 'How the practice works', exact: true }).getAttribute('href'),
                  (path.includes('/') ? '../' : '') + 'how-practice-works.html', path);
-    // The guidance stands together, before About; on a phone the footer still fits.
-    assert.deepEqual((await page.locator('footer.site-foot a, .foot-links a').allTextContents()).slice(0, 4),
-                     ['How we decide', 'Rulings', 'How the practice works', 'About'], path);
+    // Three rows, each under its name: what a reader uses, how the lexicon is made (About first,
+    // the guidance together after it), the project; on a phone the footer still fits.
+    assert.deepEqual(await page.locator('.foot-links .foot-h').allTextContents(), ['Use', 'How it is made', 'Project'], path);
+    assert.deepEqual(await page.locator('.foot-links p:nth-of-type(2) a').allTextContents(),
+                     ['About', 'How we decide', 'Rulings', 'How the practice works', 'Review'], path);
     await page.setViewportSize({ width: 320, height: 700 });
     assert.equal(await overflows(), false, `${path}: the footer fits a phone`);
     await page.setViewportSize({ width: 1280, height: 900 });
@@ -2435,7 +2437,8 @@ test('the site keeps only the flag: no “looks right”, no reviewer’s switch
   const total = await page.evaluate(() => window.lexiconPractice.cards.length);
   assert.deepEqual(await page.locator('#r-counts [data-count]').evaluateAll(rows => rows.map(row => [row.dataset.count, row.querySelector('dd').textContent])),
     [['done', 'reviewed by the editor'], ['drafts', 'drafts, not yet reviewed'], ['flag', 'flagged, not yet sent']]);
-  assert.deepEqual([await reviewCount('done'), await reviewCount('drafts'), await reviewCount('flag')], [0, total, 0]);
+  const done = await page.evaluate(() => window.lexiconPractice.cards.filter(card => card.d).length);
+  assert.deepEqual([await reviewCount('done'), await reviewCount('drafts'), await reviewCount('flag')], [done, total - done, 0]);
   // What was marked right that morning is not lost: it waits to be sent, and goes into the report.
   assert.equal(await page.locator('#r-pending').textContent(), 'Marked right: 1');
   assert.equal(await page.locator('#r-build').isVisible(), true);

@@ -2225,11 +2225,13 @@ def suggest_link(page, what):
             'Suggest a correction or a better word</a></p>')
 
 
-def review_state(review):
+def review_state(review, up=''):
     """The last line of an entry's sources. The reviewer's name (review.by) stays in the data and
-    is not printed anywhere on the site (Jack, 15 November 2026)."""
+    is not printed anywhere on the site (Jack, 15 November 2026). A draft says only that, and leads
+    to About, where the editor says what that means (Jack, 16 November 2026: "it can just say 'not yet
+    reviewed' and have a link"); until then it read "Draft of <date>, not yet reviewed."."""
     return (f'Reviewed {human_date(review["date"])}.' if review['status'] == 'reviewed'
-            else f'Draft of {human_date(review["date"])}, not yet reviewed.')
+            else f'<a href="{up}index.html#about">Not yet reviewed</a>.')
 
 
 OURS_MARK = ('<span class="ours" title="Our own formation: no source has this word or phrase">*</span>'
@@ -2267,16 +2269,18 @@ def site_header(up, search=True):
 def footer_links(up, about, search=True):
     """The pages that left the header (Jack, 11 November 2026) stand at the foot of every page, and
     Practice and Review with them (Jack, 13 and 15 November 2026): the header is fixed and gains no link.
-    How the practice works (Jack, 15 November 2026) stands with the other guidance, before About."""
-    return (f'<a href="{up}how-we-decide.html">How we decide</a> · <a href="{up}rulings.html">Rulings</a> · '
-            f'<a href="{up}how-practice-works.html">How the practice works</a> · '
-            f'<a href="{about}">About</a> · <a href="{up}practice.html">Practice</a> · <a href="{up}review.html">Review</a> · '
-            + (f'<a href="{up}index.html">Search the lexicon</a> · ' if search else '')
-            + f'<a href="{REPO}">Source and history</a> · <a href="{REPO}/issues">Report a problem</a>')
+    They had grown to nine in one line, which Jack found messy (16 November 2026), so they stand in
+    three short rows, each under its own name: what a reader uses, how the lexicon is made, and
+    the project. The grouping and the three names are Claude's."""
+    row = lambda name, links: f'<p><span class="foot-h">{name}</span> <span class="foot-l">' + ' · '.join(f'<a href="{href}">{label}</a>' for href, label in links) + '</span></p>'
+    return (row('Use', ([(f'{up}index.html', 'Search the lexicon')] if search else []) + [(f'{up}practice.html', 'Practice')])
+            + row('How it is made', [(about, 'About'), (f'{up}how-we-decide.html', 'How we decide'), (f'{up}rulings.html', 'Rulings'),
+                                     (f'{up}how-practice-works.html', 'How the practice works'), (f'{up}review.html', 'Review')])
+            + row('Project', [(REPO, 'Source and history'), (f'{REPO}/issues', 'Report a problem')]))
 
 
 def site_footer(up):
-    return f'<footer class="site-foot"><div class="wrap"><p>{footer_links(up, up + "index.html#about")}</p></div></footer>'
+    return f'<footer class="site-foot"><div class="wrap"><nav class="foot-links" aria-label="The lexicon’s pages">{footer_links(up, up + "index.html#about")}</nav></div></footer>'
 
 
 def page_shell(title, description, canonical, up, body, scripts=(), search=True):
@@ -2401,7 +2405,7 @@ def render_concept(record, site):
     # sources leads there.
     parts.append('<footer class="c-sources">'
                  + (f'<p><span class="sc">Sources</span>{sources[0]}</p>' if sources else '')
-                 + ''.join(f'<p>{s}</p>' for s in sources[1:]) + f'<p>{review_state(record["review"])}</p>'
+                 + ''.join(f'<p>{s}</p>' for s in sources[1:]) + f'<p class="review-state">{review_state(record["review"], links.up)}</p>'
                  + (f'<p class="how-sources"><a href="{links.up}{SOURCES_SECTION}">{SOURCES_LINK}</a></p>' if sources else '')
                  + suggest_link(f'c/{record["id"]}.html', record['english'] + (f' ({record["sense"]})' if 'sense' in record else ''))
                  + '</footer>')

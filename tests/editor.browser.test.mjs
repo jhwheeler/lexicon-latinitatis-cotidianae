@@ -1,7 +1,7 @@
 import { before, beforeEach, after, test } from 'node:test';
 import assert from 'node:assert/strict';
 import { spawn, execFileSync } from 'node:child_process';
-import { mkdtempSync, rmSync, writeFileSync } from 'node:fs';
+import { cpSync, mkdtempSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -47,7 +47,20 @@ before(async () => {
   folder = mkdtempSync(join(tmpdir(), 'editor-review-'));
   const out = join(folder, 'page'), list = join(folder, 'mine.txt');
   writeFileSync(list, MINE.join('\n') + '\n');
-  const said = String(execFileSync('python3', [join(root, 'scripts/editor_review.py'), '--out', out, '--mine', list]));
+  // The page is built from a copy of the repository in which no entry is reviewed yet: the tests
+  // count from nought and follow the queue from its top, whatever the editor has read since.
+  const repo = join(folder, 'repo');
+  for (const part of ['data', 'src', 'scripts', 'refs']) cpSync(join(root, part), join(repo, part), { recursive: true });
+  execFileSync('python3', ['-c', `
+import json, pathlib, sys
+for path in pathlib.Path(sys.argv[1], 'data/concepts').glob('*.json'):
+    text = path.read_text(encoding='utf-8')
+    if '"reviewed"' in text:
+        record = json.loads(text)
+        record['review'] = {'status': 'draft', 'date': '2026-11-09', 'by': 'Claude'}
+        path.write_text(json.dumps(record, ensure_ascii=False), encoding='utf-8')
+`, repo]);
+  const said = String(execFileSync('python3', [join(repo, 'scripts/editor_review.py'), '--out', out, '--mine', list]));
   assert.match(said, /3 records, first in the queue\. Ids that are not records, ignored: 1\./);
   server = spawn('python3', ['-u', '-m', 'http.server', '0', '--bind', '127.0.0.1', '--directory', out],
                  { stdio: ['ignore', 'pipe', 'pipe'] });

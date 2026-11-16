@@ -823,8 +823,10 @@ test('under an entry’s sources one quiet link leads to How to read the sources
   const heading = page.locator('#sources h2');
   assert.equal(await heading.textContent(), 'How to read the sources');
   await page.waitForFunction(() => { const top = document.querySelector('#sources').getBoundingClientRect().top; return top >= 0 && top < innerHeight / 2; });
-  assert.match(await page.locator('#sources').textContent(), /is given as Lewis & Short’s dictionary cites it/);
-  assert.match(await page.locator('#sources').textContent(), /marked composed is a sentence of ours/);
+  // The section is cut to the essentials (Jack, 16 November 2026): four points.
+  assert.match(await page.locator('#sources').textContent(), /are given as Lewis & Short’s dictionary cites them/);
+  assert.match(await page.locator('#sources').textContent(), /“Composed”\. The sentence is ours/);
+  assert.equal(await page.locator('#sources li').count(), 4);
   assert.equal(await overflows(), false);
   // The page's own contents lead to it too, with a control for a thumb.
   const jump = page.locator('.page-contents a[href="#sources"]');

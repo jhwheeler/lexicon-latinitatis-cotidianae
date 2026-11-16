@@ -161,6 +161,24 @@ READ_IN = [re.compile(pattern) for pattern in (
 # remark of the record's own joined to them: the remark is written as a sentence of its own.
 STANDING_PHRASE = re.compile(r'marked “Lewis &amp; Short” are (?:given|copied)|marked “composed” (?:is|are) ours'
                              r'|read in the (?:digitization|scan) at')
+# "Cicero as Lewis & Short quotes him.", "Plautus as cited by L&S.", "the other passages as Lewis &
+# Short quotes them." Such a line says under Sources what belongs beside the quotation: the mark
+# "(Lewis & Short)" at the end of the example's source or of the term's evidence line (Jack,
+# 16 November 2026: "do the pass: mark the quotation, delete the line"). The pass was made that
+# day; the line is refused, in the wordings the records had. No script can take it out, since only
+# a reader of the record and of the dictionary's article knows which quotation is meant.
+_LS = r'(?:Lewis &amp; Short|L&amp;S)'
+AS_LEWIS_AND_SHORT_QUOTES = re.compile(
+    rf'\bas {_LS}(?: or [\w–-]+)? (?:quotes?|cites?) (?:him|them|it)\b|\bas (?:cited|quoted) (?:by|in|there and in) {_LS}'
+    rf'|\bcitations (?:are )?from {_LS}|{_LS}’s citations are marked')
+# Four records keep such a line until the editor has looked at them: in three the line names
+# authors the record does not quote, in one two quotations could not be settled (see
+# notes/standing-notes-2026-11-15.md, "16 November 2026"). Take a record out when its line goes.
+LEFT_FOR_THE_EDITOR = frozenset({'detergent', 'fold', 'rubbish', 'twelfth'})
+# A public entry does not cite a working note of ours (Jack, 16 November 2026): no source line
+# links to a file of this repository or of the latinitas repository, or names one.
+OUR_WORKING_NOTES = re.compile(r'jhwheeler/(?:lexicon-latinitatis-cotidianae|latinitas)\b'
+                               r'|(?<![\w/.-])(?:notes|docs)/[\w./-]+\.md\b|(?<![\w/.-])(?:AGENTS|CLAUDE|README)\.md\b')
 _MORE_THAN_A_NAME = re.compile(r':|<a |<span|\b(?:checked|quoted|from the|as|which|prints|reads|misprints|spelling|record)\b')
 # A full stop after one of these ends no sentence (Cic. Att. 1.2, s.v., John C. Traupman).
 ABBREVIATIONS = frozenset("""C p pp s.v s.vv ed ch chs cf fr vb vol Cic Fam Att Ter Plaut Off Or Ep Epp Heaut Sen And Ph Eun Caes
@@ -535,6 +553,13 @@ def load_records(root, categories, legacy, rulings):
                          'on src/how-we-decide.html; ')
             require(citation == source, said_once + (f'give only the citation: {citation}' if citation else f'delete the line: {source}'))
             require(not STANDING_PHRASE.search(source), said_once + f'take it out of the line: {source}')
+            require(not AS_LEWIS_AND_SHORT_QUOTES.search(source) or record['id'] in LEFT_FOR_THE_EDITOR,
+                    f'A source in {where} says that a passage is given as Lewis & Short quotes it. The mark belongs on the quotation, '
+                    'not under Sources: put “(Lewis &amp; Short)” at the end of that example’s source or of that line of the term’s '
+                    f'evidence, and delete this from the sources: {source}')
+            require(not OUR_WORKING_NOTES.search(source),
+                    f'A source in {where} cites a working note of ours; a public entry cites the published source the note names, '
+                    f'once it has been read, or nothing: {source}')
         require(len(record['sources']) == len(set(record['sources'])), f'The same source twice in {where}')
         require(sum(TRAUPMAN in source for source in record['sources']) <= 1,
                 f'Traupman is cited more than once in {where}; give one citation with all its pages')

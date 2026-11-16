@@ -1,6 +1,6 @@
 # The standing notes under Sources, said once (15 November 2026)
 
-Jack, 15 November 2026: "The standing notes under sources, yeah, that is a bit annoying. We can just say it once, for sure." This follows his ruling of 13 November that a line under Sources is a citation as a book prints one. This file records what was taken out of the records, what answers it on the site, and what was left in the records on purpose. The choices of scope below are Claude's, for Jack to judge.
+Jack, 15 November 2026: "The standing notes under sources, yeah, that is a bit annoying. We can just say it once, for sure." This follows his ruling of 13 November that a line under Sources is a citation as a book prints one. This file records what was taken out of the records, what answers it on the site, and what was left in the records on purpose. The choices of scope below are Claude's, for Jack to judge. Jack ruled on what was left on 16 November 2026: the last section says what was done then, and where it differs, the earlier sections describe the state of 15 November.
 
 ## What was done
 
@@ -98,3 +98,127 @@ Their only lines were standing notes. The builder required at least one source; 
 ## Also changed
 
 `docs/drafting.md` and `docs/converting.md` told drafters to add "The example sentences marked “composed” are ours." to a record with composed examples. They now say not to. A branch drafted from the older text will carry the sentence and be refused by the builder after merging: `python3 scripts/standing_notes.py --write` takes it out.
+
+## 16 November 2026: the editor's rulings
+
+Jack answered the four questions this file left "for the editor" (16 November 2026). What follows is what was done for each, with counts and the lists he will want. The method and the choices of scope are Claude's, for him to judge. 304 record files changed; in each only lines of `sources`, of a term's `evidence` or of an example's `source` differ. `review` was not touched: none of the 304 was a reviewed record. As on 15 November, every one of the 7,464 records was first read and written back in the repository's format and came back byte for byte; each changed record was then written afresh from its changed data, and a comparison of the two texts line by line found no changed line of any other kind.
+
+### 1. The entries with no source ("add the seven lines")
+
+Of the 24 records of 15 November, 11 had been given sources by other work since (`hop`, `lemon-juice`, `loader`, `my-turn`, `play-together`, `playhouse`, `pump`, `roll-ball`, `scoop-up`, `spring-rider`, `stuffed-animal`). Thirteen were still empty. Seven lines were added, each after the article or the page was read on 16 November 2026:
+
+| Record | Word | Line added | What was read |
+| --- | --- | --- | --- |
+| `bottom-part` | *īmus* | Lewis & Short: imus · Lewis & Short: inferus | *imus* is a headword that sends to *inferus*, where the superlative is treated ("Form imus, a, um, the lowest, deepest, last") |
+| `moat` | *fossa* | Lewis & Short: fossa | "a ditch, trench, fosse" |
+| `slower` | *lentius* | Lewis & Short: lentus | the adverb is at the end of *lentus*: "lentē, slowly … Comp.: … lentius subsequitur, Caes. B. C. 2, 40" |
+| `together` | *ūnā* | Lewis & Short: una · Lewis & Short: unus | *una* is a headword that sends to the end of *unus*: "in one and the same place, at the same time, in company, together" |
+| `uncover` | *aperiō* | Lewis & Short: aperio | "to uncover, make or lay bare" |
+| `top-part` | *summus* | Traupman, p. 396 | "top adj summus -a -um" |
+| `turn-rotate` | *vertō* | Traupman, pp. 219, 399 | p. 219 "turn intr vertor"; p. 399 "turn tr (con)vertō" |
+
+The links are in the form of the other records (`https://logeion.uchicago.edu/<headword>`, "Lewis &amp; Short: <headword>"). Where the record's word is a headword that only sends to another article, both are linked; that is Claude's choice (`total-complete` does the same for *summus* and *superus*).
+
+Not done, because the ruling was for seven lines: `top-part` and `turn-rotate` still have no Lewis & Short line for *summus*, *vertō* and *circumagō*. Recommended: add them.
+
+**Records without a source line now: 8.** All are words or descriptions of ours (`period` "ours"), with nothing to cite: `dump-truck`, `i-did-it`, `marbles`, `ride-on-car`, `toy-car`, `toy-kitchen` (of the 24), and `core`, `pepper-relish`, whose only line was a link to a working note (number 4).
+
+### 2. "How to read the sources" ("cut it to the essentials")
+
+The section of `src/how-we-decide.html` had nine points and 752 words. It has four points and 137 words: what "Lewis & Short" after a quotation means; what "composed" means; how the reference works are cited; where the other quotations were checked. The anchor (`#sources`), the heading and the link from every entry are unchanged. The fuller account (which texts and editions the quotations were checked against, the days, the Vulgate, Publilius, Morgan–Owens's saved copy and geographical section, Graesse's two digitisations, what a link to a dictionary supports) is in `docs/records.md`, "How the sources were read", under "Sources are citations". Nothing of the old section was dropped: `test_the_standing_notes_under_sources_are_said_once` now holds the section to four points and under 150 words, and looks for the words of the fuller account in the document.
+
+The last point keeps one sentence of the old section, "Where it was not, the entry says so" (of a quotation not checked against a text), because lines of that kind remain in the records (see "Left in the records on purpose" above).
+
+### 3. "… as Lewis & Short quotes him" ("do the pass: mark the quotation, delete the line")
+
+The family was found by its wording, not by the author: "… as Lewis & Short quotes him / them / it", "… quoted as Lewis & Short quotes them", "… as cited by L&S", "… as quoted in L&S", "the other passages as Lewis & Short quotes them", "the other citations from Lewis & Short", "Lewis & Short’s citations are marked". It had 134 lines in 134 records (15 November counted 130).
+
+What was done to them:
+
+| | Lines |
+| --- | ---: |
+| deleted | 116 |
+| shortened to what else the line said (below) | 14 |
+| kept for the editor (below) | 4 |
+
+and to the quotations: **66 marks added** in 40 records (53 on a quotation, 13 on a bare reference of the same line's authors) and **11 marks reworded** in 10 records into the lexicon's form ("Cic. Phil. 2.15, as cited in L&S" is now `Cic. Phil. 2.15 (Lewis &amp; Short)`). 48 records had a mark added or reworded (47 of the 130 whose line went or was shortened, and `twelfth`); in the other 83, every quotation the line spoke of carried its mark already, was found in a text, or was not in the record (below). The form is that of the other records: ` (Lewis &amp; Short)` at the end of the example's `source` or of the line of `evidence`; where the line named an article that is not the record's own word, the mark names it (`(Lewis &amp; Short s.v. <span lang="la">reclīnō</span>)`: `moose`, `picture`, `telling-the-time`).
+
+**How a quotation was matched.** The line names authors ("Cicero and Caesar as …"), or says "the other passages" after naming those that come from the loci collections. Every quotation of those authors among the record's examples and evidence was looked at, and the mark was added only where the words were found in Lewis & Short that night:
+
+- a quotation of three words or more: its words in a row in an article of the dictionary (the Perseus text in `refs/`, macrons, j and v folded; a bracketed gloss of the dictionary's inside the quotation is skipped, as in *ad eas (arbores) se applicant*);
+- a quotation of one or two words (*in scrībendō*, *homō*): only in the article of one of the record's own words, with the reference's numbers directly after it;
+- a bare reference (`Cic. Clu. 72`): the work and the numbers in the article of one of the record's own words ("Clu. 26, 72"), or the same reference as a quotation of the record that is marked.
+
+A quotation was left **unmarked**, and did not hold the line back, where it was found word for word in a text of its author, since the mark says that a quotation was not checked against one: in the loci tables (49 quotations), or in the texts kept on this machine (16: Perseus's Plautus, Terence, Horace and Pliny; LASLA's Plautus and Horace). A line of Plautus cited by the line of the play, not by Lewis & Short's act and scene, counts as read in a text when it is found there, even if the dictionary quotes it too (`docs/drafting.md`): `invent` (Asin. 102), `mop` (Men. 77–78), `stupid` (Pers. 169, Bacch. 1088). The others found in a text and not in the dictionary: `greet` (Cas. 1, Most. 568), `knock` (Bacch. 581), `lover` (Cas. 590, Truc. 658), `cheer-up-verb` (Ter. Ad. 839, also in the loci), `revise` (Hor. A. P. 441, which carries Morgan–Owens's mark), `telling-the-time` (Plin. NH 6.214). So `mop`, which this file named on 15 November as wanting the mark, has none: its line is in the Perseus text of the *Menaechmi*.
+
+**Decided by reading, not by rule** (each read in the article that night):
+
+- `age`: the whole line was the sentence on the loci collections in another wording, with "Lewis & Short’s citations are marked"; they are. Deleted.
+- `too-excessively`: "Ter. And. 61 as cited there and in Lewis & Short, s.v. nimis (And. 1.1.34)". The quotation is cited by the line of the play and stands in the Perseus text of the *Andria*; it stays unmarked. Deleted.
+- `frown`: the line spoke of the bare reference `Cic. Clu. 72`; the article *frons* has "frontem contrahere, to contract or knit the brows, id. Clu. 26, 72". Marked.
+- `hold-ones-breath`: `Cic. de Or. 1.261` is in the article *contineo* ("animam in dicendo, Cic. de Or. 1, 61, 261"), which the record does not link. Marked.
+- `relevant`: `Cic. Fam. 13.13: sī quid hoc ad rem pertinet` is in *pertineo*, where the dictionary prints *siquid* as one word. Marked.
+- `twelfth`: `Plin. NH 18.324: dēxtāns hōrae` is how *dextans* cites it ("horae, Plin. 18, 32, 75, § 324"). Marked.
+- `picture`: "A. 1.464 as Lewis & Short quotes it (s.v. pāscō)" names no author; the example `Verg. A. 1.464` is in *pasco*. Marked, with the article.
+- `firstly`, `tone-voice`, `urban`: the line itself excludes one quotation ("Cicero (Att. 3.7.1) as in the record secondly"; "Gellius 13.20", not 1.26.8; "Varro’s *Res rusticae* III", not II praef.). Those were not touched.
+- `clean-the-house`: the line also said "(edition spelling ecferte kept)". It is now "The quotation of Plautus keeps the spelling *ecferte*." (Claude's wording); the dictionary prints *ecferte* (s.v. *munditia*).
+
+**Shortened lines** (what the line said besides, as the builder's rule of 15 November leaves it):
+
+- `clean-the-house`: The quotation of Plautus keeps the spelling *ecferte*.
+- `exhaust-tire`: Terence (*And.* 669).
+- `exhaust-use-up`: Cicero (*Sen.* 17) and Schottennius from the Latinitas loci collections (loci-cicero-philosophica, loci-schottenius); Schottennius is sixteenth-century school Latin.
+- `firstly`: Quintilian and Seneca from the Latinitas loci collections (loci-quintilianus, loci-seneca-epistulae); Cicero (*Att.* 3.7.1) as in the record secondly.
+- `greet`: Cato and Cicero (*Sen.* 63).
+- `hesitate`: Cicero (*Sen.* 25, *Amic.* 44) and Livy.
+- `mop`: Traupman, Morgan–Owens and Levi–Bini have no word for a mop.
+- `mount`: Comenius is post-classical (*stapēs*, stirrup, is a modern word).
+- `picture`: Vergil, A. 8.730.
+- `recover`: Corderius’s colloquies are post-classical school Latin; the line is checked against one transcription only.
+- `romantic`: Seneca (*Ep.* 9.6).
+- `servant`: Virgil and the *Moretum*.
+- `tall`: Erasmus’s Latin is post-classical.
+- `telling-the-time`: Pliny, *Natural History* 2.58, 6.213–218, 18.219, 18.324: 6.214 checked against LacusCurtius (a link).
+
+**Lines kept: 4.** The builder's refusal passes these four by name (`LEFT_FOR_THE_EDITOR` in `scripts/build.py`); a test fails when one of them no longer carries its line, so that the name is taken out.
+
+| Record | Line | Why it was kept | Recommended |
+| --- | --- | --- | --- |
+| `detergent` | Cicero from the Latinitas loci collection; Laberius and Martial as cited by L&S. | The record quotes neither Laberius nor Martial (its comment refers to Mart. 3.42.1 without quoting). The line came with the card it was split from. | Delete the line. |
+| `fold` | the same | The record's one quotation is Cicero's (Att. 12.1.2), which is in the loci. No Laberius, no Martial. | Delete the line. |
+| `rubbish` | Cato, Livy and Petronius from the Latinitas loci collections; Plautus as cited by L&S (edition spelling ecferte kept). | The record quotes no Plautus; the line belongs to `clean-the-house`, split from the same card. | Delete the line. |
+| `twelfth` | Horace and Gellius from the Latinitas loci collections; the other citations from Lewis & Short. | Eight marks were added, but two quotations could not be settled. `Plin. NH 18.219: dōdrāns hōrae`: the dictionary gives the reference without words ("As a measure of time, three quarters of an hour"), and Pliny's text (Perseus, Mayhoff) has *dodrantes horarum*. `Liv. 2.33.11: … sextantibus conlātīs in capita`: the dictionary prints *collatis* and cites "2, 33 fin."; the record's spelling and section are an edition's, and no text of Livy 2 was to hand. | Quote Pliny's words (*dōdrantēs hōrārum*), check the Livy against a text, then delete the line. |
+
+**Lines that named an author the record does not quote** (the line went, since its other authors were matched; nothing was there to mark for these): `dialogue` (Varro), `iron` (Laberius), `laundry` (Martial), `mop` (Festus), `overseas` (Quintilian), `stomach` (Cicero).
+
+**Bare references of the lines' authors left without a mark** (not found in the article of the record's own words; a bare reference without a mark claims nothing): `bright-colour` Plin. NH 35.97; `cheer-up-verb` Ter. Ad. 839; `entry-going-in` Cic. Off. 1.131 (gait); `fan` Ter. Eun. 595; `mop` Plaut. Men. 77–78; `stupid` Plaut. Bacch. 1088. In `twelfth`, `Col. 5.1.11` and `Liv. 23.19.16` end in a bracketed gloss and were left for the same pass as its line.
+
+**Not in the family, and left:** "…, as Morgan–Owens quotes it" (`card-game`, `dealer`) says the same of Morgan–Owens; its mark is "(M-O s.v. …)". The same pass would suit it.
+
+**Refused from now on.** `scripts/build.py` refuses a source line of the family (`AS_LEWIS_AND_SHORT_QUOTES`), and the message says where the mark belongs: at the end of the example's source or of the line of the term's evidence. `python3 scripts/standing_notes.py` lists such a line with the same advice and ends with an error; it does not rewrite it, since no script can know which quotation is meant. Tests: `test_a_line_that_belongs_on_the_quotation_is_refused` (`tests/test_build.py`), `test_a_line_only_a_person_can_put_right_is_listed_not_rewritten` and `test_the_records_carry_none` (`tests/test_standing_notes.py`).
+
+### 4. Links to our working notes ("a public entry should not cite a working note: remove them")
+
+165 source lines linked to a file of this repository, in 165 records: 152 to `notes/smoothie-vocabulary-audit.md` ("Smoothie vocabulary: source audit and coverage") and 13 to `notes/food-vocabulary-bulgaria-and-fabulae.md` ("Food vocabulary: source notes"). None linked to the latinitas repository. One more line cited a file of that repository by name without a link, and was treated the same (Claude's reading of the ruling): `and`, "Caesar and Cicero (Att. 4.2.4) as quoted in the Latinitas house standards (AGENTS.md §4.1)". 166 lines in 166 records in all.
+
+Both notes were read for what they were cited for. Each is a general account of one batch of entries (what was consulted, which entries cover which words), cited in the same words from every record of the batch; no record cited it for a fact of its own. 160 of the 165 records had other source lines for their words (a Lewis & Short link, a Traupman or Morgan–Owens line, or both), and their line was deleted. In five the link was the only source line:
+
+| Record | Was the note the only statement of a published source? | Now |
+| --- | --- | --- |
+| `calcium` | Yes: the note names Morgan–Owens, section 445. Read: "445 calcium (symbol Ca) calcium, i* n." | Morgan–Owens, Adumbratio: s.v. calcium. |
+| `flaxseed` | Yes: the note names Morgan–Owens's preliminary botanical vocabulary. Read: "linseed lini semen (PLIN. 20, 249 et passim …)" | Morgan–Owens, Adumbratio: s.v. linseed. |
+| `refrigerate` | Yes: the note names Traupman p. 124 and Morgan–Owens, section 932, for the refrigerator, on which the record's two phrases are built. Read: Traupman 124 "refrigerator frīgidārium -ī n"; Morgan–Owens "932 refrigerator armarium frigidarium … | frigidarium, i n." | Traupman, p. 124; Morgan–Owens, Adumbratio: s.v. refrigerator. |
+| `core` | No: a description of ours. | no source line |
+| `pepper-relish` | No: a description of ours; its comment says what was searched. | no source line |
+
+`and`: the Caesar is an example of the record with its reference (B.G. 7.88) and was checked that night against LASLA's text of the *Bellum Gallicum* (7.88.3, *hostes terga vertunt fugientibus equites occurrunt*); Cicero, Att. 4.2.4, is a reference in the term's comment, not a quotation. The line was deleted.
+
+**Records whose line carried a fact that could not be turned into a citation:** none beyond `core` and `pepper-relish`, where there is nothing to cite. What the notes say of single words (that Morgan–Owens questions the quantities of *spinacia*, that *incīsōrium* is a medieval trencher, that the metric units come from a reproduced prescription appendix) is in those records' comments or in their own source lines already; the notes themselves stay in `notes/`.
+
+**Refused from now on.** The builder refuses a source line that links to this repository or to the latinitas repository, or names a file of either (`notes/….md`, `docs/….md`, `AGENTS.md`): `OUR_WORKING_NOTES`. `scripts/standing_notes.py` lists such a line and fails. Test: `test_a_source_that_cites_a_working_note_is_refused`.
+
+### Found on the way, not changed
+
+- **172 records cite Traupman beside a word and have no Traupman line under Sources** (`top-part` and `turn-rotate` were two of 174). Eight of them lost a note link in number 4 (`cloth-wiping`, `flavour`, `heat`, `remove`, `smell`, `sponge`, `thick`, `toast-verb`); the note did not name their pages, so no line was made for them. Recommended: a pass that reads each page and adds the one Traupman line; the test is short: a term's evidence or an example's source that begins "Traupman" and a number, and no source line with Traupman's title.
+- **Lines of the kinds left on 15 November are unchanged** ("checked against … " with a remark, the loci collections with a remark, remarks on the record, "the grouped card gave no source"). The 14 shortened lines above are of those kinds, or bare citations.
+- The builder splits a sentence at "; " without regard to `&amp;` (`without_standing_notes`), so "Lewis &amp; Short" divides a sentence in two there. It did no harm in this pass, because a divided sentence is rewritten only when every part is a standing note; it is noted for whoever next touches the patterns.

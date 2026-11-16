@@ -38,16 +38,19 @@
       ]
     },
     {
-      "latin": "prōmptō, prōmptāre",
+      "latin": "promptō, promptāre",
       "status": "alternative",
       "period": "classical",
       "gloss": "dispense, hand out freely",
       "register": "vōx cōmica: Plaut.",
       "evidence": [
         "Plaut. Ps. 2.2.33: <span lang=\"la\">thēsaurōs Jovis</span> (Lewis &amp; Short)",
-        "Traupman 33: hand out the papers, <span lang=\"la\">prōmptā (prōmptāte) chartās</span>"
+        "Traupman 33: hand out the papers, <span lang=\"la\">promptā (promptāte) chartās</span>"
       ],
-      "comment": "A Plautine frequentative of <span lang=\"la\">prōmō</span>, “to give out abundantly, to have the disposal of” (Lewis &amp; Short); <span lang=\"la\">distribuere</span> is the plain word."
+      "comment": "A Plautine frequentative of <span lang=\"la\">prōmō</span>, “to give out abundantly, to have the disposal of” (Lewis &amp; Short); <span lang=\"la\">distribuere</span> is the plain word.",
+      "notes": [
+        "prompto"
+      ]
     }
   ],
   "phrases": [
@@ -67,6 +70,15 @@
       "source": "Traupman 325"
     }
   ],
+  "notes": {
+    "prompto": {
+      "form": "promptō",
+      "claim": "short o",
+      "against": "Traupman 33 <span lang=\"la\">prōmptā (prōmptāte)</span>",
+      "html": "De Vaan 188, s.v. <span lang=\"la\">emō</span>, prints <span lang=\"la\">promptāre</span>; Lewis &amp; Short leaves the vowel unmarked. Traupman himself prints <span lang=\"la\">promptus</span> and <span lang=\"la\">in promptū</span> elsewhere.",
+      "ruling": "promptus"
+    }
+  },
   "related": [
     "pass-hand",
     "submit",

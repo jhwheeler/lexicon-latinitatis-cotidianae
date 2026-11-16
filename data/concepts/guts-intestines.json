@@ -26,14 +26,17 @@
       "comment": "Also singular, <span lang=\"la\">intestīnum</span>, a gut. <span lang=\"la\">Ex intestīnīs labōrāre</span> is to have trouble with one’s bowels (see bowels)."
     },
     {
-      "latin": "viscera, viscerum n. pl.",
+      "latin": "vīscera, vīscerum n. pl.",
       "status": "alternative",
       "period": "classical",
       "gloss": "the inner organs, innards",
       "evidence": [
         "Cels. 4.11; Lucr. 3.249 (Lewis &amp; Short)"
       ],
-      "comment": "All the inner organs, heart, lungs and liver as well as the guts; in classical prose only plural (Lewis &amp; Short)."
+      "comment": "All the inner organs, heart, lungs and liver as well as the guts; in classical prose only plural (Lewis &amp; Short).",
+      "notes": [
+        "viscus"
+      ]
     },
     {
       "latin": "exta, extōrum n. pl.",
@@ -58,6 +61,15 @@
       "source": "Cic. Div. 2.28 (Lewis &amp; Short)"
     }
   ],
+  "notes": {
+    "viscus": {
+      "form": "vīscus, vīscera",
+      "claim": "long i",
+      "against": "Lewis &amp; Short leaves it unmarked",
+      "html": "De Vaan 683 heads the entry <span lang=\"la\">vīscus, -eris</span> and prints <span lang=\"la\">vīscerātim</span> and <span lang=\"la\">ēvīscerāre</span>. <span lang=\"la\">Viscum</span>, mistletoe and birdlime, is another word, with a short i.",
+      "ruling": "viscus"
+    }
+  },
   "related": [
     "bowels",
     "belly",

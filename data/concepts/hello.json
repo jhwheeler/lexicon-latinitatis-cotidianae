@@ -91,9 +91,12 @@
       "source": "Plaut. Rud. 2.4.3 (Lewis &amp; Short s.v. <span lang=\"la\">salveō</span>)"
     },
     {
-      "latin": "Eho istic!",
+      "latin": "Eho istīc!",
       "english": "Hello there!",
-      "source": "Traupman 327"
+      "source": "Traupman 327",
+      "notes": [
+        "istic"
+      ]
     },
     {
       "latin": "salvē, inquit, frāter",
@@ -115,7 +118,15 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-15",
+    "date": "2026-11-16",
     "by": "Claude"
+  },
+  "notes": {
+    "istic": {
+      "form": "istīc",
+      "claim": "long i: the adverb",
+      "against": "Traupman 327 prints <span lang=\"la\">istic</span>, unmarked",
+      "html": "Traupman translates “Hello there!”, which is the adverb <span lang=\"la\">istīc</span>, “there, where you are” (Lewis &amp; Short s.v. istic, adv.), not the pronoun <span lang=\"la\">istic</span>. The editor left the choice open; this reading is Claude’s (16 November 2026)."
+    }
   }
 }

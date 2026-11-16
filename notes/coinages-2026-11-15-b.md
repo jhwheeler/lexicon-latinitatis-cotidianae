@@ -337,3 +337,9 @@ Given with the rulings above, and recorded here so that they stand in one place.
 - `zip-line`: zip line, zipline, flying fox, cableway
 
 Levi–Bini were searched for: metropolitana, sotterraneo, perdere, stampo, forma, muto, rete, cazzuola, acquario, materasso, tappeto, carta, sbucciare, pelapatate, peperone, permesso, tetto, recinto, palo, sbarra, cacciavite, rosario, linguaggio, ricetta, stivale, soprascarpa, galoscia, gomma, baccalà, merluzzo, castello, sabbia, arena, crauti, cavolo, schermo, controllo, ispezione, forbici, cesoie, lista, elenco, carrello, spatola, corda, fetta, frullato, tuta, vapore, minerale, gassosa, solare, rubinetto, collaudo, prova, piano, giocattolo, balocco, vassoio, aggiornare, utente, videochiamata, girello, tassello, burro, salvietta, valigia, formaggio, teleferica, funivia, funicolare, vitamina, altoparlante, trasmissione, radio, fotografia, autoritratto, negozio, spesa, acquisto, stalla, banco, bancarella, mercato, erbivendolo, scivolare, dondolo, cavalluccio, triciclo, monopattino, automobile, ascensore, sicurezza, dogana, visita, bolla, crema, altalena, bambola, fantoccio.
+
+## 16 November 2026, later: two more rulings
+
+- **vītamīnicus**: deleted (Jack, 16 November 2026). The record answers with the genitive *vītamīnōrum*, on Traupman's noun.
+- **acroāma**: written with a short first *a* (Jack, 16 November 2026), against Lewis & Short's *ācrŏāmă*, after the Greek ἀκρόαμα. Recorded as the ruling `acroama`.
+- **core**: *vitium* is not to be offered (Jack, 16 November 2026). The comment names Pliny's word as what the sources have; the term stays our description.

@@ -20,20 +20,23 @@
       "comment": "The participle of <span lang=\"la\">parāre</span>, prepare. Of a person, “ready to” takes the infinitive or <span lang=\"la\">ad</span> + acc."
     },
     {
-      "latin": "promptus, prompta, promptum",
+      "latin": "prōmptus, prōmpta, prōmptum",
       "status": "alternative",
       "period": "classical",
       "gloss": "ready, quick, willing",
       "evidence": [
-        "Caes. BC 1.3: <span lang=\"la\">laudat promptōs</span> (Lewis &amp; Short s.v. <span lang=\"la\">prōmō</span>)",
+        "Caes. BC 1.3: <span lang=\"la\">laudat prōmptōs</span> (Lewis &amp; Short s.v. <span lang=\"la\">prōmō</span>)",
         "Traupman 69"
       ],
-      "comment": "Lewis &amp; Short: “at hand, prepared, ready, quick, prompt”; it stresses willingness more than <span lang=\"la\">parātus</span> does."
+      "comment": "Lewis &amp; Short: “at hand, prepared, ready, quick, prompt”; it stresses willingness more than <span lang=\"la\">parātus</span> does.",
+      "notes": [
+        "promptus"
+      ]
     }
   ],
   "phrases": [
     {
-      "latin": "Esne prompta?",
+      "latin": "Esne prōmpta?",
       "english": "Are you ready?",
       "source": "Traupman 69"
     }
@@ -50,5 +53,14 @@
     "status": "draft",
     "date": "2026-11-12",
     "by": "Claude"
+  },
+  "notes": {
+    "promptus": {
+      "form": "prōmptus",
+      "claim": "long o",
+      "against": "Traupman 69 <span lang=\"la\">promptus</span>; Lewis &amp; Short leaves it unmarked",
+      "html": "The participle of <span lang=\"la\">prōmō</span>, whose ō comes from <span lang=\"la\">prō</span> and <span lang=\"la\">emō</span> run together; Bennett prints <span lang=\"la\">prōmptus</span>.",
+      "ruling": "promptus"
+    }
   }
 }

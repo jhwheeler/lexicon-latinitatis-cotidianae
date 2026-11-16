@@ -28,11 +28,13 @@ body.editor { min-height:100dvh; }
 .e-list .e-mark { flex:none; width:1.1em; color:var(--accent); font:400 1rem/1.3 var(--sans); }
 #e-report { display:block; width:100%; padding:8px; border:1px solid var(--hair); background:transparent; color:var(--ink); font:400 .85rem/1.4 ui-monospace,monospace; }
 
-/* An entry: a thin strip at the top with the way out and where one is; the bar at the foot. */
+/* An entry: a thin strip at the top with the way out and where one is, a quiet line under it that
+   says why the entry stands here in the queue, and the bar at the foot. */
 #entry { padding-bottom:calc(150px + env(safe-area-inset-bottom, 0px)); }
 .e-top { position:sticky; top:0; z-index:20; display:flex; align-items:center; gap:6px; padding:0 max(8px, env(safe-area-inset-right, 0px)) 0 max(8px, env(safe-area-inset-left, 0px)); border-bottom:1px solid var(--hair); background:var(--paper); }
 .e-x { display:inline-flex; align-items:center; justify-content:center; width:44px; height:44px; padding:0; border:0; background:none; color:var(--ink); cursor:pointer; }
 .e-where { flex:1; min-width:0; margin:0; overflow:hidden; color:var(--muted); font:400 .95rem/1.3 var(--sans); text-overflow:ellipsis; white-space:nowrap; }
+.e-why { margin-block:8px 0; color:var(--muted); font:400 .95rem/1.4 var(--sans); }
 .e-bar { position:fixed; inset:auto 0 0; z-index:30; max-height:85dvh; padding:8px max(12px, env(safe-area-inset-right, 0px)) max(10px, env(safe-area-inset-bottom, 0px)) max(12px, env(safe-area-inset-left, 0px)); overflow-y:auto; overscroll-behavior:contain; border-top:1px solid var(--hair); background:var(--paper); }
 .e-bar > * { max-width:38rem; margin-inline:auto; }
 .e-row { display:flex; gap:8px; }

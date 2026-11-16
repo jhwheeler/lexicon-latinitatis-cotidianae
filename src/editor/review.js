@@ -20,8 +20,22 @@
   // was not asked about them: "In lexicō probātum est", "restant", and the other lines about
   // saving and reading ("Jūdicia in hōc nāvigātrō tantum servantur", "Jūdicia legī nōn
   // potuērunt", "Jūdicia quaeruntur…", "Pāgina legī nōn potuit").
+  //
+  // The queue is in order of priority (Jack, 16 November 2026: "would be good to have more high
+  // prio items first"): the script gives every record a number and its reasons, and the page reads
+  // the highest first, among the entries still to read. Claude's wording of 16 November 2026,
+  // awaiting his review: the reasons shown under the strip at the top of an entry, "in libellīs",
+  // "verbum frequēns", "vītae cotīdiānae", "verbum nostrum", "verbum recēns", "ā Lewis et Short
+  // discēdit", "respōnsum dubium", "sine fonte", "exempla nostra tantum", "plūra verba prō ūnō";
+  // and in the lobby the heading "Prīma", its two lines "In libellīs" and "Proxima ducenta"
+  // ("Prīma ducenta" when the page was built without his list), and their count, "N ex M restant".
   const INDEX = window.editorIndex;
   const UNSAVED = 'lexicon-editor-unsaved', LOCAL = 'lexicon-editor-verdicts';
+  // Why an entry stands where it does in the queue: the codes of scripts/editor_review.py.
+  const WHY = { mine: 'in libellīs', frequent: 'verbum frequēns', daily: 'vītae cotīdiānae', ours: 'verbum nostrum', recent: 'verbum recēns',
+    quantity: 'ā Lewis et Short discēdit', kind: 'respōnsum dubium', unsourced: 'sine fonte', composed: 'exempla nostra tantum', phrase: 'plūra verba prō ūnō' };
+  const SHOWN = 3;      // so many reasons at most, the weightiest first
+  const FIRST = 200;    // the lobby's second group: so many of the highest after his own list ("ducenta")
   const REASONS = { word: 'verbum', quantity: 'quantitās', meaning: 'sēnsus', example: 'exemplum', source: 'fōns', other: 'aliud' };
   const MONTHS = ['Jānuāriī', 'Februāriī', 'Mārtiī', 'Aprīlis', 'Majī', 'Jūniī', 'Jūliī', 'Augustī', 'Septembris', 'Octōbris', 'Novembris', 'Decembris'];
   const q = id => document.getElementById(id);
@@ -32,13 +46,22 @@
   const fold = text => text.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/j/g, 'i').replace(/v/g, 'u');
   const el = (tag, cls, text) => { const node = document.createElement(tag); if (cls) node.className = cls; if (text != null) node.textContent = text; return node; };
 
-  const records = INDEX.records.map(([id, rev, english, latin, cat, done]) => ({ id, rev, english, latin, cat, done: !!done, key: fold(english + ' ' + latin) }));
+  const records = INDEX.records.map(([id, rev, english, latin, cat, done, priority, reasons]) =>
+    ({ id, rev, english, latin, cat, done: !!done, priority: priority || 0, reasons: reasons || [], key: fold(english + ' ' + latin) }));
   const byId = new Map(records.map(record => [record.id, record]));
+  // The queue: the highest priority first, and those of one priority by their English headword.
+  const headword = record => record.english.toLowerCase();
+  const ranked = [...records].sort((a, b) => b.priority - a.priority || (headword(a) < headword(b) ? -1 : headword(a) > headword(b) ? 1 : a.id < b.id ? -1 : 1));
+  const mine = ranked.filter(record => record.reasons.includes('mine'));
+  const groups = [['In libellīs', 'the words of your readers', mine],
+    [mine.length ? 'Proxima ducenta' : 'Prīma ducenta', mine.length ? 'the two hundred highest after them' : 'the two hundred highest',
+      ranked.filter(record => !record.reasons.includes('mine')).slice(0, FIRST)]].filter(([, , list]) => list.length);
   const verdicts = new Map();     // id → verdict
   const dirty = new Map();        // id → verdict or null: given, not yet saved in the database
   const chunks = new Map();       // category id → Promise of {id: html}
   let db = null, mode = 'wait';   // 'wait' until the database answers, then 'db' or 'local'
-  let queue = records, current = null, history = [];
+  let queue = ranked, current = null, history = [];
+  let aside = null;               // an entry opened by name, from the search or the list of flags
 
   const read = key => { try { return JSON.parse(localStorage.getItem(key)) || {}; } catch (e) { return {}; } };
   const write = (key, value) => { try { localStorage.setItem(key, JSON.stringify(value)); } catch (e) {} };
@@ -145,9 +168,32 @@
     main.append(english, sub);
     button.append(main);
     if (mark) button.append(el('span', 'e-n', mark));
-    button.addEventListener('click', () => { queue = records.filter(other => other.cat === record.cat); history = []; show(record); });
+    button.addEventListener('click', () => start(ranked, record, true));
     item.append(button);
     return item;
+  }
+
+  // A line of the lobby that starts a queue: its name, a word of English under it, what is left.
+  function queueButton(latin, english, list, mark) {
+    const item = el('li'), button = el('button');
+    button.type = 'button';
+    const main = el('span', 'e-main', latin);
+    const sub = el('span', 'e-sub', english);
+    sub.lang = 'en';
+    main.append(sub);
+    button.append(main, el('span', 'e-n', mark));
+    button.addEventListener('click', () => start(list, list.find(open) || list[0]));
+    item.append(button);
+    return item;
+  }
+
+  // Begin a queue at an entry. One opened by name stands outside the order: the queue goes on
+  // from the top after it, not from its own place.
+  function start(list, record, byName) {
+    queue = list;
+    history = [];
+    aside = byName ? record : null;
+    show(record);
   }
 
   function drawLobby() {
@@ -165,22 +211,12 @@
       return row;
     }));
     q('e-start').disabled = !count.left;
-    q('e-cats').replaceChildren(...INDEX.categories.map((category, n) => {
-      const item = el('li'), button = el('button');
-      button.type = 'button';
-      const main = el('span', 'e-main', category.latin);
-      const sub = el('span', 'e-sub', category.english);
-      sub.lang = 'en';
-      main.append(sub);
-      button.append(main, el('span', 'e-n', left[n] ? `${number(left[n])} restant` : '✓'));
-      button.addEventListener('click', () => {
-        queue = records.filter(record => record.cat === n);
-        history = [];
-        show(queue.find(open) || queue[0]);
-      });
-      item.append(button);
-      return item;
+    q('e-first').replaceChildren(...groups.map(([latin, english, list]) => {
+      const still = list.filter(open).length;
+      return queueButton(latin, english, list, still ? `${number(still)} ex ${number(list.length)} restant` : `${number(list.length)} ✓`);
     }));
+    q('e-cats').replaceChildren(...INDEX.categories.map((category, n) =>
+      queueButton(category.latin, category.english, ranked.filter(record => record.cat === n), left[n] ? `${number(left[n])} restant` : '✓')));
     const flagged = records.filter(record => state(record) === 'flag');
     q('e-flags-sec').hidden = !flagged.length;
     q('e-flags').replaceChildren(...flagged.map(record => {
@@ -252,6 +288,9 @@
     const record = current, verdict = verdicts.get(record.id), s = state(record);
     const left = queue.filter(open).length;
     q('e-where').textContent = `${INDEX.categories[record.cat].latin} · ${left ? number(left) + ' restant' : 'nihil restat'}`;
+    const why = record.reasons.map(code => WHY[code]).filter(Boolean).slice(0, SHOWN).join(' · ');
+    q('e-why').textContent = why;
+    q('e-why').hidden = !why;
     q('e-back').disabled = !history.length;
     q('e-ok').setAttribute('aria-pressed', String(s === 'ok'));
     q('e-flag').setAttribute('aria-pressed', String(s === 'flag'));
@@ -274,10 +313,12 @@
     line.hidden = !line.textContent;
   }
 
-  // The next entry still to read after this one in the queue; from the top when the end is reached.
+  // The next entry still to read after this one in the queue; from the top when the end is reached,
+  // or when this one was opened by name.
   function next() {
-    const at = queue.indexOf(current);
-    const found = queue.slice(at + 1).find(open) || queue.slice(0, Math.max(at, 0)).find(open);
+    const at = current === aside ? -1 : queue.indexOf(current);
+    const still = record => record !== current && open(record);
+    const found = queue.slice(at + 1).find(still) || queue.slice(0, Math.max(at, 0)).find(still);
     if (found) return show(found);
     closeBox();
     drawState();
@@ -319,7 +360,7 @@
     q('e-buttons').hidden = false;
   }
 
-  q('e-start').addEventListener('click', () => { queue = records; history = []; show(records.find(open)); });
+  q('e-start').addEventListener('click', () => start(ranked, ranked.find(open)));
   q('e-find').addEventListener('input', find);
   q('e-close').addEventListener('click', lobby);
   q('e-back').addEventListener('click', () => { if (history.length) show(history.pop(), true); });

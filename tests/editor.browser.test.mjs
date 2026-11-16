@@ -1,7 +1,7 @@
 import { before, beforeEach, after, test } from 'node:test';
 import assert from 'node:assert/strict';
 import { spawn, execFileSync } from 'node:child_process';
-import { mkdtempSync, rmSync } from 'node:fs';
+import { mkdtempSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -10,8 +10,11 @@ import { chromium } from 'playwright';
 // The editor's review page (scripts/editor_review.py, src/editor/): built into a folder of its
 // own and served from there, as the artifact serves it. The artifact's database is stood in for
 // by a small one kept in sessionStorage, with the calls the page makes (doc().set, doc().delete,
-// collection().get), so that a reload finds what was saved.
-let browser, page, server, base, out;
+// collection().get), so that a reload finds what was saved. The editor's own list, which is
+// private and kept outside the repository, is stood in for by three records and an id that is
+// none, written beside the page in the temporary folder.
+const MINE = ['pyjamas', 'bread', 'window', 'no-such-record'];
+let browser, page, server, base, folder;
 const stub = () => {
   const KEY = 'stub-db';
   const all = () => JSON.parse(sessionStorage.getItem(KEY) || '{}');
@@ -32,11 +35,20 @@ const stub = () => {
 const saved = () => page.evaluate(() => JSON.parse(sessionStorage.getItem('stub-db') || '{}'));
 const count = async label => Number((await page.locator('#e-counts div', { hasText: label }).locator('dt').textContent()).replace(/,/g, ''));
 const heading = () => page.locator('#e-page h1.hw').textContent();
+// The queue as the page orders it: the highest priority first, then by the English headword.
+const ranking = () => page.evaluate(() => window.editorIndex.records
+  .map(([id, , english, , cat, , priority, reasons]) => ({ id, english: english.toLowerCase(), cat, priority, reasons }))
+  .sort((a, b) => b.priority - a.priority || (a.english < b.english ? -1 : a.english > b.english ? 1 : a.id < b.id ? -1 : 1)));
+// Wait until the entry of this record is the one shown.
+const shown = id => page.waitForFunction(id => document.querySelector('.e-open a')?.href.endsWith(`/c/${id}.html`), id);
 
 before(async () => {
   const root = fileURLToPath(new URL('..', import.meta.url));
-  out = mkdtempSync(join(tmpdir(), 'editor-review-'));
-  execFileSync('python3', [join(root, 'scripts/editor_review.py'), '--out', out]);
+  folder = mkdtempSync(join(tmpdir(), 'editor-review-'));
+  const out = join(folder, 'page'), list = join(folder, 'mine.txt');
+  writeFileSync(list, MINE.join('\n') + '\n');
+  const said = String(execFileSync('python3', [join(root, 'scripts/editor_review.py'), '--out', out, '--mine', list]));
+  assert.match(said, /3 records, first in the queue\. Ids that are not records, ignored: 1\./);
   server = spawn('python3', ['-u', '-m', 'http.server', '0', '--bind', '127.0.0.1', '--directory', out],
                  { stdio: ['ignore', 'pipe', 'pipe'] });
   base = await new Promise((resolve, reject) => {
@@ -57,7 +69,7 @@ beforeEach(async () => {
   await page.goto(base);
   await page.waitForFunction(() => document.getElementById('e-store').textContent === 'Jūdicia servantur.');
 });
-after(async () => { await browser?.close(); server?.kill(); if (out) rmSync(out, { recursive: true, force: true }); });
+after(async () => { await browser?.close(); server?.kill(); if (folder) rmSync(folder, { recursive: true, force: true }); });
 
 test('the lobby counts the entries, and Incipe opens the first still to read as the site draws it', async () => {
   const left = await count('recēnsenda restant');
@@ -70,6 +82,105 @@ test('the lobby counts the entries, and Incipe opens the first still to read as 
   assert.equal(await page.locator('#e-page article a').count(), 0);
   assert.match(await page.locator('.e-open a').getAttribute('href'), /^https:\/\/jhwheeler\.github\.io\/lexicon-latinitatis-cotidianae\/c\/[a-z0-9-]+\.html$/);
   assert.match(await page.locator('#e-where').textContent(), /restant$/);
+});
+
+test('Incipe opens the entry of highest priority still to read, and the queue goes on in that order', async () => {
+  const order = await ranking(), alphabet = await page.evaluate(() => window.editorIndex.records[0][0]);
+  assert.deepEqual(order.slice(0, 3).map(record => record.reasons[0]), ['mine', 'mine', 'mine']);
+  assert.deepEqual(order.slice(0, 3).map(record => record.id).sort(), ['bread', 'pyjamas', 'window']);
+  assert.notEqual(order[0].id, alphabet);
+  assert.equal(order[3].priority >= order[4].priority && order[4].priority >= order[200].priority, true);
+  await page.locator('#e-start').click();
+  await shown(order[0].id);
+  await page.locator('#e-ok').click();
+  await shown(order[1].id);
+  await page.locator('#e-skip').click();
+  await shown(order[2].id);
+  await page.locator('#e-ok').click();
+  await shown(order[3].id);
+  // The one skipped is still to read, so Incipe comes back to it, not to the one marked right.
+  await page.locator('#e-close').click();
+  await page.locator('#e-start').click();
+  await shown(order[1].id);
+});
+
+test('a quiet line under the strip says why an entry is here, three reasons at most; none, no line', async () => {
+  const LABELS = { mine: 'in libellīs', frequent: 'verbum frequēns', daily: 'vītae cotīdiānae', ours: 'verbum nostrum', recent: 'verbum recēns',
+    quantity: 'ā Lewis et Short discēdit', kind: 'respōnsum dubium', unsourced: 'sine fonte', composed: 'exempla nostra tantum', phrase: 'plūra verba prō ūnō' };
+  const order = await ranking();
+  await page.locator('#e-start').click();
+  await shown(order[0].id);
+  assert.equal(await page.locator('#e-why').isVisible(), true);
+  assert.equal(await page.locator('#e-why').textContent(), order[0].reasons.slice(0, 3).map(code => LABELS[code]).join(' · '));
+  assert.match(await page.locator('#e-why').textContent(), /^in libellīs/);
+  const strip = await page.locator('.e-top').boundingBox(), why = await page.locator('#e-why').boundingBox();
+  assert.equal(why.y >= strip.y + strip.height, true);
+  // An entry with more than three reasons shows the three weightiest.
+  const many = order.find(record => record.reasons.length > 3 && !record.english.includes('('));
+  await page.locator('#e-close').click();
+  await page.locator('#e-find').fill(many.english);
+  await page.locator('#e-found button').first().click();
+  await shown(many.id);
+  assert.equal(await page.locator('#e-why').textContent(), many.reasons.slice(0, 3).map(code => LABELS[code]).join(' · '));
+  // An entry with no reason has no line. It was opened by name, so the queue goes on from the top.
+  const none = order.find(record => !record.reasons.length && !record.english.includes('('));
+  assert.equal(none.priority, 0);
+  await page.locator('#e-close').click();
+  await page.locator('#e-find').fill(none.english);
+  await page.locator('#e-found button').first().click();
+  await shown(none.id);
+  assert.equal(await page.locator('#e-why').isHidden(), true);
+  assert.equal(await page.locator('#e-why').textContent(), '');
+  await page.locator('#e-ok').click();
+  await shown(order[0].id);
+  assert.equal(await page.locator('#e-why').isVisible(), true);
+});
+
+test('Prīma: his own list and the two hundred highest after it are counted, and each starts its queue', async () => {
+  const order = await ranking();
+  const first = page.locator('#e-first button');
+  assert.equal(await page.locator('#e-first-h').textContent(), 'Prīma');
+  assert.equal(await first.count(), 2);
+  assert.match(await first.nth(0).textContent(), /^In libellīs.*3 ex 3 restant$/);
+  assert.match(await first.nth(1).textContent(), /^Proxima ducenta.*200 ex 200 restant$/);
+  // The section stands above the categories.
+  assert.equal((await page.locator('#e-first').boundingBox()).y < (await page.locator('#e-cats').boundingBox()).y, true);
+  await first.nth(0).click();
+  await shown(order[0].id);
+  assert.match(await page.locator('#e-where').textContent(), / · 3 restant$/);
+  await page.locator('#e-ok').click();
+  await shown(order[1].id);
+  await page.locator('#e-ok').click();
+  await shown(order[2].id);
+  await page.locator('#e-close').click();
+  assert.match(await first.nth(0).textContent(), /1 ex 3 restant$/);
+  await first.nth(1).click();
+  await shown(order[3].id);
+  assert.match(await page.locator('#e-where').textContent(), / · 200 restant$/);
+  await page.locator('#e-ok').click();
+  await shown(order[4].id);
+  await page.locator('#e-close').click();
+  assert.match(await first.nth(1).textContent(), /199 ex 200 restant$/);
+  // The last of his list done, its line says so.
+  await first.nth(0).click();
+  await shown(order[2].id);
+  await page.locator('#e-ok').click();
+  await page.waitForSelector('.e-done');
+  await page.locator('#e-close').click();
+  assert.match(await first.nth(0).textContent(), /3 ✓$/);
+});
+
+test('a category opened from the lobby runs in order of priority, not of the alphabet', async () => {
+  const order = (await ranking()).filter(record => record.cat === 7);
+  const alphabet = await page.evaluate(() => window.editorIndex.records.find(row => row[4] === 7)[0]);
+  assert.notEqual(order[0].id, alphabet);
+  await page.locator('#e-cats button').nth(7).click();
+  await shown(order[0].id);
+  for (const record of order.slice(1, 4)) {
+    await page.locator('#e-ok').click();
+    await shown(record.id);
+  }
+  assert.equal(order[0].priority >= order[3].priority, true);
 });
 
 test('Rēctē saves a verdict on the text as it stands and goes on; Retrō comes back; Tolle takes it away', async () => {
@@ -181,8 +292,12 @@ test('without the database the verdicts stay in the browser and are offered as a
 test('on a phone nothing scrolls sideways and every control is tall enough for a thumb', async () => {
   const wide = () => page.evaluate(() => document.documentElement.scrollWidth > innerWidth);
   assert.equal(await wide(), false);
-  await page.locator('#e-cats button').first().click();
+  for (const button of await page.locator('#e-first button, #e-cats button').all()) assert.equal((await button.boundingBox()).height >= 44, true);
+  // An entry with as many reasons as any: its line may wrap, and nothing runs off the side.
+  const most = (await ranking()).reduce((a, b) => b.reasons.length > a.reasons.length ? b : a);
+  await page.locator('#e-cats button').nth(most.cat).click();
   await page.waitForSelector('#e-page article.concept');
+  assert.equal(await page.locator('#e-why').isVisible(), true);
   assert.equal(await wide(), false);
   for (const id of ['e-back', 'e-skip', 'e-flag', 'e-ok', 'e-close']) {
     const box = await page.locator('#' + id).boundingBox();

@@ -25,6 +25,11 @@ try { document.documentElement.dataset.theme = matchMedia('(prefers-color-scheme
 <dl class="e-counts" id="e-counts"></dl>
 <p class="e-go"><button type="button" class="pbtn pbtn-fill" id="e-start">Incipe</button></p>
 
+<section class="e-sec" aria-labelledby="e-first-h">
+<h2 id="e-first-h">Prīma</h2>
+<ol class="e-list" id="e-first"></ol>
+</section>
+
 <section class="e-sec" aria-labelledby="e-find-h">
 <h2 id="e-find-h">Quaere</h2>
 <input type="search" id="e-find" class="e-find" placeholder="Quaere verbum" aria-label="Quaere verbum" autocomplete="off" autocapitalize="off" spellcheck="false" lang="">
@@ -52,6 +57,7 @@ try { document.documentElement.dataset.theme = matchMedia('(prefers-color-scheme
 <div id="entry" hidden>
 <header class="e-top"><button type="button" class="e-x" id="e-close" aria-label="Claude"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg></button>
 <p class="e-where" id="e-where"></p></header>
+<p class="wrap e-why" id="e-why" hidden></p>
 <main class="wrap page-main" id="e-page"></main>
 <div class="e-bar" id="e-bar">
 <p class="e-state" id="e-state" role="status" aria-live="polite" hidden></p>

@@ -41,15 +41,18 @@ It does not promise that the entry is beyond improvement, that every quotation w
 
 The editor reviews in a page of his own, published privately as a claude.ai artifact titled *Recēnsiō · Lexicon Latīnitātis Cotīdiānae*. Only his account can open it; it is not part of the site and nothing on the site leads to it. Its source is `src/editor/` (`review.html`, `review.js`, `editor.css`) and `scripts/editor_review.py` builds it.
 
-- **What it shows.** The lobby has the counts (reviewed in the lexicon; marked right and not yet applied; flagged; left to read), *Incipe* (Start), a search by English or Latin, the categories with what is left in each, and the list of what he has flagged. An entry is drawn exactly as its page on the site draws it, from the same function of the builder, without links. Under it, at the foot of the screen: *Retrō* (the entry before), *Praeterī* (skip), *Notā* (flag: six reasons to tap and a line to write) and *Rēctē* (looks right). A verdict moves on to the next entry still to read; a verdict can be taken back (*Tolle*).
+- **What it shows.** The lobby has the counts (reviewed in the lexicon; marked right and not yet applied; flagged; left to read), *Incipe* (Start), *Prīma* (first things: his own list and the two hundred highest after it, each with what is left), a search by English or Latin, the categories with what is left in each, and the list of what he has flagged. An entry is drawn exactly as its page on the site draws it, from the same function of the builder, without links. Above it, under the strip that names the category, one line says why the entry stands where it does in the queue. Under it, at the foot of the screen: *Retrō* (the entry before), *Praeterī* (skip), *Notā* (flag: six reasons to tap and a line to write) and *Rēctē* (looks right). A verdict moves on to the next entry still to read; a verdict can be taken back (*Tolle*).
 - **Where the verdicts go.** Each is saved at once in the artifact's own database, as the document `verdicts/<record id>`: `{"id", "rev", "verdict": "ok" | "flag", "reasons", "note", "t", "date"}`, a verdict of a review report, with the revision of the text he read. The database's rules let only the artifact's owner read or write. A verdict that could not be saved is kept in the browser, said to be unsaved, and saved at the next chance. If the page is opened where it has no database, it keeps the verdicts in the browser and offers them as a report to copy.
+- **The order of the queue.** One person reads about 7,500 records. Jack, 16 November 2026, after starting on the page: "it's ~7.5k entries, this will take me forever … i think we should have a more judicious way of deciding what really needs review. in principle someone should go through all of these, not just AIs, but that is not feasible … i can review whatever i can review. would be good to have more high prio items first or something like that." So the queue runs by priority, highest first, among the entries still to read; until then it ran through the categories in order and each from A to Z. *Incipe* opens the highest, a category opened from the lobby runs in that order within it, and after an entry opened by name (from the search or the list of flags) the queue goes on from the top. The priority is worked out by the script from the record: how much the word is used, plus how likely the entry is to be wrong. See "How the queue is ordered" below.
 - **What it cannot do.** An artifact loads nothing from other sites, so the page carries the lexicon as it stood when it was built: the site's stylesheet and fonts, an index of every record with its revision, and one file of entries per category. It shows its date. After the records change it is built and published again. A verdict given on an older text is refused by `apply_review.py`, as ever, and the page shows such an entry as still to read.
 
 To build it and publish it (an agent does this, with the artifact tools of the session):
 
 ```sh
-python3 scripts/editor_review.py          # writes .editor-review/ (not committed)
+python3 scripts/editor_review.py --mine <file>    # writes .editor-review/ (not committed)
 ```
+
+`--mine` names the editor's own list (below). It is not in the repository: ask for it. Built without the option, the page has no such group, and the words of the list fall back among the rest.
 
 Publish every file of `.editor-review/` to the existing artifact (find it by its title; do not make a second one), keeping its declaration: the capabilities `db`, with the one rule `{"path": "", "read": "owner", "write": "owner"}`, and `user`.
 
@@ -60,7 +63,28 @@ To apply his verdicts (when he asks, or before the records he has read are chang
 3. Commit the records and `notes/review-flags.md`; the site is built when it is published.
 4. Build and publish the page again, then delete from the database the documents that were applied (an entry marked right is now reviewed in the page's own data; a flag is now in `notes/review-flags.md`). Not before: until the page is published again, those documents are what tells it the entries are done.
 
-The Latin of the page is the wording of the site's flag where that has a word; the rest is Claude's, listed in a comment at the top of `src/editor/review.js`. The editor approved part of it on 16 November 2026 (*Retrō*, *Tolle*, *Quaere verbum*, *Rērum genera*, *In lexicō aperī*, *Jūdicia servantur*, *Nōndum servātum*, *Iterum temptā*); what he was not asked about (*In lexicō probātum est*, "restant", *Jūdicia legī nōn potuērunt* and the rest the comment names) still awaits his review. The page is tested in `tests/editor.browser.test.mjs` (with a stand-in for the database) and its data in `tests/test_editor_review.py`. It was first published on 15 November 2026 and had not then been tried by the editor on his phone.
+The Latin of the page is the wording of the site's flag where that has a word; the rest is Claude's, listed in a comment at the top of `src/editor/review.js`. The editor approved part of it on 16 November 2026 (*Retrō*, *Tolle*, *Quaere verbum*, *Rērum genera*, *In lexicō aperī*, *Jūdicia servantur*, *Nōndum servātum*, *Iterum temptā*); what he was not asked about (*In lexicō probātum est*, "restant", *Jūdicia legī nōn potuērunt* and the rest the comment names) still awaits his review, and so do the strings of 16 November 2026 for the queue: the ten reasons in the table below, *Prīma*, *In libellīs*, *Proxima ducenta* and "N ex M restant". The page is tested in `tests/editor.browser.test.mjs` (with a stand-in for the database) and its data in `tests/test_editor_review.py`. It was first published on 15 November 2026 and had not then been tried by the editor on his phone.
+
+### How the queue is ordered
+
+A record's priority is a sum of weights, one for each of the signals below that applies to it. The page's data (`d/index.js`) carries the number and the codes of its reasons at the end of each record's row; the page reads the highest number first, those of one number by their English headword, and shows up to three of the reasons, the weightiest first. "The answer" is the record's first recommended term.
+
+| Code | On the page | The signal | Weight |
+| --- | --- | --- | ---: |
+| `mine` | *in libellīs* | the record is on the editor's own list | 1,000 |
+| `frequent` | *verbum frequēns* | the answer is one word and among the commonest lemmas of classical Latin (`refs/latin-frequency.tsv`): the first 1,000, to 2,000, to 5,000 | 30, 20, 10 |
+| `daily` | *vītae cotīdiānae* | the record's category is one of the eight nearest the person, the first eight of `filters` in `data/catalog.json` (conversation, common words, time, body, clothes, household, the house, the kitchen) | 5 |
+| `ours` | *verbum nostrum* | the answer is a term of ours: no author stands behind it | 30 |
+| `recent` | *verbum recēns* | the answer's period is `modern`, or every line of its evidence is Levi–Bini or Andresian | 15 |
+| `quantity` | *ā Lewis et Short discēdit* | a note of the record departs from an authority on a form (`against`) or applies a ruling | 15 |
+| `kind` | *respōnsum dubium* | `scripts/answer_kinds.py` lists the record: the answer may not be the kind of word the headword is | 20 |
+| `unsourced` | *sine fonte* | the record has no line of sources | 20 |
+| `composed` | *exempla nostra tantum* | the record has examples, and every one is marked `composed` | 5 |
+| `phrase` | *plūra verba prō ūnō* | the headword is one word and the answer is several | 5 |
+
+The first three measure use, the rest risk. The signals and the numbers are the coordinating session's choice (16 November 2026), for the editor to judge; the numbers are named constants at the top of `scripts/editor_review.py`, and changing one and building the page again is all it takes. A frequency rank is found with the functions of `scripts/latin_coverage.py`, which match a lemma of the list to the lexicon's terms for the coverage report; the queue has no matcher of its own.
+
+**The editor's own list** is a text file of record ids, one per line: on 16 November 2026 the words of his unpublished readers, the ones he says himself. Those records come before everything else, in order of the rest of their priority. The list is private. It is kept outside the repository, the script refuses a file inside it, and its ids are written nowhere but into the page's own data, which only the editor can open: never commit it, copy it into a note or a test, or print it. An id of the list that is not a record is ignored, and the script says how many were.
 
 ## On the site: the flag
 

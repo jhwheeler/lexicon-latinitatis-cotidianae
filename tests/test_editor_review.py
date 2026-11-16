@@ -4,7 +4,9 @@ import importlib.util
 import json
 from pathlib import Path
 import re
+import tempfile
 import unittest
+from unittest import mock
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -18,6 +20,9 @@ def load(name):
 
 editor = load('editor_review')
 review = load('apply_review')
+# A stand-in for the editor's own list, which is private and kept outside the repository: two
+# records and an id that is none.
+MINE = ['soap', 'perhaps', 'no-such-record']
 
 
 class EditorReviewTests(unittest.TestCase):
@@ -26,7 +31,8 @@ class EditorReviewTests(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.files = editor.page_files(today=datetime.date(2026, 11, 15))
+        cls.site = editor.builder.load_site(ROOT)
+        cls.files = editor.page_files(today=datetime.date(2026, 11, 15), mine=MINE, site=cls.site)
         cls.index = json.loads(cls.files['d/index.js'][len('window.editorIndex='):-2])
         cls.records = {path.stem: json.loads(path.read_text(encoding='utf-8')) for path in (ROOT / 'data/concepts').glob('*.json')}
 
@@ -43,7 +49,7 @@ class EditorReviewTests(unittest.TestCase):
         self.assertEqual(self.index['site'], editor.builder.SITE_URL)
         catalog = json.loads((ROOT / 'data/catalog.json').read_text(encoding='utf-8'))
         self.assertEqual([category['id'] for category in self.index['categories']], [category['id'] for category in catalog['categories']])
-        for key, rev, english, latin, category, done in rows:
+        for key, rev, english, latin, category, done, priority, reasons in rows:
             record = self.records[key]
             self.assertEqual(rev, editor.builder.record_revision(record))
             self.assertEqual(self.index['categories'][category]['id'], record['domain'])
@@ -51,6 +57,88 @@ class EditorReviewTests(unittest.TestCase):
             self.assertTrue(english.startswith(record['english']) and latin)
             # A verdict's document is named by the record.
             self.assertRegex(key, r'\A[A-Za-z0-9_\-.~:@+]+\Z')
+
+    def test_every_row_carries_a_priority_that_its_reasons_explain(self):
+        """Jack, 16 November 2026: "would be good to have more high prio items first". The page
+        reads the highest first and says why, so the number must be the sum of the named weights."""
+        bands = {weight for _, weight in editor.FREQUENT}
+        for key, _, _, _, _, _, priority, reasons in self.index['records']:
+            self.assertIsInstance(priority, int, key)
+            self.assertEqual(len(set(reasons)), len(reasons), key)
+            self.assertLessEqual(set(reasons), set(editor.REASONS), key)
+            # What is left when the fixed weights are taken away is the frequency's band, or nothing.
+            rest = priority - sum(editor.REASONS[code] for code in reasons if code != 'frequent')
+            if 'frequent' in reasons:
+                self.assertIn(rest, bands, key)
+            else:
+                self.assertEqual(rest, 0, key)
+            # The weightiest reason first.
+            weights = [rest if code == 'frequent' else editor.REASONS[code] for code in reasons]
+            self.assertEqual(weights, sorted(weights, reverse=True), key)
+        rows = {row[0]: row for row in self.index['records']}
+        # et is the second lemma of the frequency list, and "and" is in the first category.
+        self.assertEqual(rows['and'][6:], [editor.FREQUENT[0][1] + editor.DAILY, ['frequent', 'daily']])
+        self.assertEqual(editor.frequency_ranks(self.site)['and'], 2)
+
+    def test_the_editors_own_list_comes_first_and_an_id_that_is_no_record_is_ignored(self):
+        rows = self.index['records']
+        mine = [row for row in rows if 'mine' in row[7]]
+        self.assertEqual(sorted(row[0] for row in mine), ['perhaps', 'soap'])
+        self.assertTrue(all(row[7][0] == 'mine' for row in mine))
+        self.assertGreater(min(row[6] for row in mine), max(row[6] for row in rows if 'mine' not in row[7]))
+        # The list outweighs every other reason together, and without it there is no such group.
+        others = sum(max(w for _, w in weight) if isinstance(weight, tuple) else weight
+                     for code, weight in editor.REASONS.items() if code != 'mine')
+        self.assertGreater(editor.MINE, others)
+        plain = editor.priorities(self.site)
+        self.assertFalse(any('mine' in reasons for _, reasons in plain.values()))
+        self.assertEqual(plain['soap'][0], editor.priorities(self.site, mine=MINE)['soap'][0] - editor.MINE)
+
+    def test_the_list_is_read_from_a_file_outside_the_repository(self):
+        with tempfile.TemporaryDirectory() as folder:
+            path = Path(folder) / 'mine.txt'
+            path.write_text('soap\n\n# a comment\n  perhaps \nsoap\n', encoding='utf-8')
+            self.assertEqual(editor.read_mine(path), ['soap', 'perhaps'])
+        with self.assertRaisesRegex(ValueError, 'private'):
+            editor.read_mine(ROOT / 'README.md')
+
+    def test_a_word_of_ours_outranks_an_attested_one_otherwise_equal_and_the_weights_are_named(self):
+        def record(key, period, **more):
+            return {'id': key, 'english': 'thing', 'pos': 'noun', 'domain': 'natura', 'sources': ['A book.'],
+                    'terms': [{'latin': 'xyzzum, xyzzī n.', 'status': 'recommended', 'period': period, 'evidence': ['Cic. Off. 1.1']}],
+                    'review': {'status': 'draft', 'date': '2026-11-16', 'by': 'Claude'}, **more}
+        site = {'catalog': {'filters': ['all', 'sermo']},
+                'records': {r['id']: r for r in (
+                    record('t-attested', 'classical'), record('t-ours', 'ours'), record('t-modern', 'modern'),
+                    record('t-unsourced', 'classical', sources=[]), record('t-daily', 'classical', domain='sermo'),
+                    record('t-composed', 'classical', phrases=[{'latin': 'Xyzzum cape.', 'english': 'Take it.', 'source': 'composed'}]),
+                    record('t-quoted', 'classical', phrases=[{'latin': 'Xyzzum cape.', 'english': 'Take it.', 'source': 'composed'},
+                                                             {'latin': 'Xyzzum cēpit.', 'english': 'He took it.', 'source': 'Cic. Off. 1.1'}]),
+                    record('t-note', 'classical', notes={'a': {'form': 'xyzzum', 'claim': 'short y', 'against': 'Lewis &amp; Short', 'html': ''}}))}}
+        site['records']['t-phrase'] = dict(record('t-phrase', 'classical'), terms=[
+            {'latin': 'xyzzum (xyzum) magnum', 'status': 'recommended', 'period': 'classical', 'evidence': ['Andresian p. 9']}])
+        ranked = editor.priorities(site)
+        self.assertEqual(ranked['t-attested'], (0, []))
+        self.assertEqual(ranked['t-ours'], (editor.OURS, ['ours']))
+        self.assertEqual(ranked['t-modern'], (editor.RECENT, ['recent']))
+        self.assertEqual(ranked['t-unsourced'], (editor.UNSOURCED, ['unsourced']))
+        self.assertEqual(ranked['t-daily'], (editor.DAILY, ['daily']))
+        self.assertEqual(ranked['t-composed'], (editor.COMPOSED, ['composed']))
+        self.assertEqual(ranked['t-quoted'], (0, []))
+        self.assertEqual(ranked['t-note'], (editor.QUANTITY, ['quantity']))
+        # Evidence that is Andresian's alone counts as recent, and two words for one as a phrase.
+        self.assertEqual(ranked['t-phrase'], (editor.RECENT + editor.PHRASE, ['recent', 'phrase']))
+        # The numbers are the script's named constants: change one and the order changes with it.
+        with mock.patch.object(editor, 'OURS', 0):
+            self.assertEqual(editor.priorities(site)['t-ours'], (0, []))
+        for name in ('MINE', 'DAILY', 'OURS', 'RECENT', 'QUANTITY', 'KIND', 'UNSOURCED', 'COMPOSED', 'PHRASE'):
+            self.assertIsInstance(getattr(editor, name), int, name)
+            self.assertGreater(getattr(editor, name), 0, name)
+        self.assertEqual([limit for limit, _ in editor.FREQUENT], [1000, 2000, 5000])
+        self.assertEqual(sorted((w for _, w in editor.FREQUENT), reverse=True), [w for _, w in editor.FREQUENT])
+        # A record the answer-kinds script lists carries that reason.
+        suspect = next(editor.answer_kinds.suspects(ROOT))[0]['id']
+        self.assertIn('kind', editor.priorities(self.site)[suspect][1])
 
     def test_each_entry_is_in_its_category_as_the_site_draws_it_without_links(self):
         seen = set()

@@ -11,15 +11,18 @@
   "domain": "officina",
   "terms": [
     {
-      "latin": "terēbra / terebra, -ae f.",
+      "latin": "terebra, terebrae f.",
       "status": "recommended",
       "period": "classical",
       "gloss": "boring tool, auger or gimlet",
       "grammar": "noun, first declension",
-      "comment": "The ancient boring tool, and the natural inherited word for a modern drill. Lewis &amp; Short marks the second vowel as variable (<span lang=\"la\">tĕrē̆bra</span>). Both forms are therefore shown rather than silently choosing one reconstruction; the example <span lang=\"la\">Terēbram affer</span> adopts the long-vowel variant.",
+      "comment": "The ancient boring tool, and the natural inherited word for a modern drill.",
       "evidence": [
         "Traupman 165",
         "Traupman 307"
+      ],
+      "notes": [
+        "terebra"
       ]
     },
     {
@@ -42,11 +45,20 @@
   ],
   "phrases": [
     {
-      "latin": "Terēbram affer.",
+      "latin": "Terebram affer.",
       "english": "Bring the drill.",
       "source": "composed"
     }
   ],
+  "notes": {
+    "terebra": {
+      "form": "terebra",
+      "claim": "second vowel unmarked",
+      "against": "Lewis &amp; Short <span lang=\"la\">tĕrē̆bra</span>, marked common",
+      "html": "A vowel Lewis &amp; Short marks common is left unmarked. Traupman 165 and 307 prints <span lang=\"la\">terebra</span>.",
+      "ruling": "common-vowels"
+    }
+  },
   "related": [
     "electric-drill",
     "adze"

@@ -12,30 +12,42 @@
   "domain": "schola",
   "terms": [
     {
-      "latin": "impar, imparis",
+      "latin": "impār, imparis",
       "status": "recommended",
       "period": "classical",
       "gloss": "odd (of a number); unequal",
       "grammar": "adjective, third declension, one ending; ablative singular imparī",
       "evidence": [
-        "Cic. Ac. 2.32 (Lewis &amp; Short): <span lang=\"la\">stēllārum numerus pār an impar sit, nescītur</span>",
+        "Cic. Ac. 2.32 (Lewis &amp; Short): <span lang=\"la\">stēllārum numerus pār an impār sit, nescītur</span>",
         "Verg. E. 8.75 (Lewis &amp; Short): <span lang=\"la\">numerō deus impare gaudet</span>"
       ],
-      "comment": "The opposite of <span lang=\"la\">pār</span>, even: <span lang=\"la\">numerus pār, numerus impar</span>. It also means unequal, no match for: <span lang=\"la\">impar esse</span> + dative, “be unable to cope with” (Traupman 150; Lewis &amp; Short)."
+      "comment": "The opposite of <span lang=\"la\">pār</span>, even: <span lang=\"la\">numerus pār, numerus impār</span>. It also means unequal, no match for: <span lang=\"la\">impār esse</span> + dative, “be unable to cope with” (Traupman 150; Lewis &amp; Short).",
+      "notes": [
+        "impar"
+      ]
     }
   ],
   "phrases": [
     {
-      "latin": "stēllārum numerus pār an impar sit, nescītur",
+      "latin": "stēllārum numerus pār an impār sit, nescītur",
       "english": "nobody knows whether the number of the stars is even or odd",
       "source": "Cic. Ac. 2.32 (Lewis &amp; Short)"
     },
     {
-      "latin": "lūdere pār impar",
+      "latin": "lūdere pār impār",
       "english": "to play odds and evens",
       "source": "Hor. S. 2.3.248 (Lewis &amp; Short, s.v. <span lang=\"la\">pār</span>)"
     }
   ],
+  "notes": {
+    "impar": {
+      "form": "impār",
+      "claim": "long a in the nominative",
+      "against": "Lewis &amp; Short <span lang=\"la\">impar</span>, unmarked",
+      "html": "As <span lang=\"la\">pār</span>, which Lewis &amp; Short marks long. De Vaan 444, s.v. <span lang=\"la\">pār</span>, prints <span lang=\"la\">impār, dispār, compār</span>; Traupman 150 and 297 prints <span lang=\"la\">impār esse</span>. The other cases are short: <span lang=\"la\">imparis, imparī</span>.",
+      "ruling": "par"
+    }
+  },
   "related": [
     "number",
     "count",

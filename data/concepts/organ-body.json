@@ -10,16 +10,28 @@
   "domain": "corpus",
   "terms": [
     {
-      "latin": "viscus, visceris n.",
+      "latin": "vīscus, vīsceris n.",
       "status": "recommended",
       "period": "classical",
-      "gloss": "an internal organ; plural viscera, the inner organs",
+      "gloss": "an internal organ; plural vīscera, the inner organs",
       "evidence": [
         "Traupman 59"
       ],
-      "comment": "Usually plural, <span lang=\"la\">viscera</span>: heart, lungs and liver as much as the entrails (Lewis &amp; Short)."
+      "comment": "Usually plural, <span lang=\"la\">vīscera</span>: heart, lungs and liver as much as the entrails (Lewis &amp; Short).",
+      "notes": [
+        "viscus"
+      ]
     }
   ],
+  "notes": {
+    "viscus": {
+      "form": "vīscus, vīscera",
+      "claim": "long i",
+      "against": "Lewis &amp; Short leaves it unmarked",
+      "html": "De Vaan 683 heads the entry <span lang=\"la\">vīscus, -eris</span> and prints <span lang=\"la\">vīscerātim</span> and <span lang=\"la\">ēvīscerāre</span>. <span lang=\"la\">Viscum</span>, mistletoe and birdlime, is another word, with a short i.",
+      "ruling": "viscus"
+    }
+  },
   "related": [
     "guts-intestines",
     "heart",

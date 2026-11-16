@@ -31,14 +31,17 @@
       "comment": "Of a wanted person, a thief, a runaway: see arrest."
     },
     {
-      "latin": "prēndō (prehendō), prēndere, prēndī, prēnsum",
+      "latin": "prendō (prehendō), prendere, prendī, prēnsum",
       "status": "alternative",
       "period": "classical",
       "gloss": "grab, catch hold of",
       "evidence": [
         "Phaedr. 1.22.1: <span lang=\"la\">mustēla ab homine prēnsa</span>"
       ],
-      "comment": "To lay hold of with the hand: a person by the arm, an animal by the scruff."
+      "comment": "To lay hold of with the hand: a person by the arm, an animal by the scruff.",
+      "notes": [
+        "prendo"
+      ]
     }
   ],
   "phrases": [
@@ -53,6 +56,15 @@
       "source": "Plin. Ep. 9.36.6"
     }
   ],
+  "notes": {
+    "prendo": {
+      "form": "prendō",
+      "claim": "short e",
+      "against": "Lewis &amp; Short leaves the contracted form unmarked",
+      "html": "De Vaan 487, s.v. <span lang=\"la\">prehendō</span>: “contracted <span lang=\"la\">prendō</span>”. The participle has the long vowel that stands before <span lang=\"la\">ns</span>: <span lang=\"la\">prēnsum</span>.",
+      "ruling": "prendo"
+    }
+  },
   "related": [
     "capture-city",
     "arrest",

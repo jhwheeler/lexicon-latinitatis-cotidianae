@@ -2296,6 +2296,37 @@ def page_shell(title, description, canonical, up, body, scripts=(), search=True)
             '</body>\n</html>\n')
 
 
+def other_senses(site):
+    """{record id: [(other record id, label)]}: the other entries that answer to the same English
+    headword, so that an entry does not read as if its sense were the only one (Jack, 16 November
+    2026, on "charge", whose entry is the battery's: "it's as if you only charge batteries. charge
+    can mean many things. either it needs multiple entries or multiple sections in the same entry,
+    which is more like how proper dictionaries do it"). The lexicon has one record per sense, so
+    the senses are other records: those with the same headword (labelled by their `sense`), then
+    those that list the headword under `also`, bare or with a sense in brackets ("charge (in
+    battle)" under attack, labelled "in battle"; "charge" under price, labelled "see price").
+    Worked out once for the site."""
+    if '_senses' not in site:
+        index = {}
+        for key, record in site['records'].items():
+            index.setdefault(record['english'].lower(), []).append((0, key, record.get('sense')))
+            for also in record.get('also', []):
+                bracketed = re.fullmatch(r'(.+?)\s*\(([^)]+)\)', also)
+                base, label = (bracketed.group(1), bracketed.group(2)) if bracketed else (also, None)
+                index.setdefault(base.lower(), []).append((1, key, label))
+        senses = {}
+        for key, record in site['records'].items():
+            seen, found = {key}, []
+            for _, other, label in sorted(index[record['english'].lower()], key=lambda row: row[0]):
+                if other not in seen:
+                    seen.add(other)
+                    found.append((other, label))
+            if found:
+                senses[key] = found
+        site['_senses'] = senses
+    return site['_senses']
+
+
 def render_concept(record, site):
     """A concept's own page: the headword line, the recommended Latin with its grammar and usage,
     the examples (filterable by source), the other words, and the margin of periods, evidence and
@@ -2339,6 +2370,14 @@ def render_concept(record, site):
         parts.append(f'<p class="sense">{escape(record["sense"])}</p>')
     if record.get('also'):
         parts.append(f'<p class="also">also {escape(", ".join(record["also"]))}</p>')
+    senses = other_senses(site).get(record['id'])
+    if senses:
+        def sense(other, label):
+            there = site['records'][other]
+            name = label or (there.get('sense') if there['english'].lower() == record['english'].lower() else None)
+            return (f'<a href="{links.concept(other)}">{escape(name or "see " + there["english"])}</a> '
+                    f'<span lang="la">{escape(term_head(ordered_terms(there)[0]["latin"]))}</span>')
+        parts.append('<p class="senses"><span class="sc">Other senses</span>' + ' · '.join(sense(*found) for found in senses) + '</p>')
 
     head, rest = links.latin(main['latin'])
     evidence = ('<p>' + '<br>'.join(main['evidence']) + '</p>') if main.get('evidence') else ''

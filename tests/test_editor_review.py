@@ -94,8 +94,8 @@ class EditorReviewTests(unittest.TestCase):
         # The list weighs no more than a very frequent word, and no use makes a band.
         self.assertLessEqual(editor.MINE, editor.FREQUENT[0][1])
         self.assertEqual(editor.band(['mine', 'frequent', 'daily']), 0)
-        self.assertEqual([editor.band([code]) for code in ('ours', 'unsourced', 'quantity', 'recent', 'kind', 'composed', 'phrase')],
-                         [3, 3, 3, 2, 2, 1, 1])
+        self.assertEqual([editor.band([code]) for code in ('ours', 'unsourced', 'provisional', 'recent', 'kind', 'quantity', 'composed', 'phrase')],
+                         [3, 3, 3, 2, 2, 2, 1, 1])
         self.assertEqual(editor.band(['frequent', 'composed', 'recent']), 2)
         self.assertEqual(editor.band([]), 0)
         self.assertLessEqual(set(editor.BANDS), set(editor.REASONS))
@@ -140,12 +140,28 @@ class EditorReviewTests(unittest.TestCase):
         # One sentence of ours is enough, whatever else is quoted.
         self.assertEqual(ranked['t-quoted'], (editor.COMPOSED, ['composed']))
         self.assertEqual(ranked['t-note'], (editor.QUANTITY, ['quantity']))
+        # A note is no reason by itself (Jack, 16 November 2026: "why am i checking breakfast? …
+        # or is it just because of the vowel length?"): not where Lewis & Short leaves the vowel
+        # unmarked, not against another book, not under a ruling the editor has made. A ruling
+        # that still awaits him is one.
+        note = lambda **fields: {'form': 'xyzzum', 'claim': 'short y', 'html': '', **fields}
+        rulings = {'his': {'by': 'Jack', 'status': 'current'}, 'ours': {'by': 'Claude; awaiting Jack’s review', 'status': 'provisional'}}
+        self.assertTrue(editor.disputed(note(against='Lewis &amp; Short xȳzzum'), rulings))
+        self.assertFalse(editor.disputed(note(against='Lewis &amp; Short leaves it unmarked'), rulings))
+        self.assertFalse(editor.disputed(note(against='Traupman 70 xȳzzum'), rulings))
+        self.assertFalse(editor.disputed(note(against='Lewis &amp; Short xȳzzum', ruling='his'), rulings))
+        self.assertTrue(editor.disputed(note(against='Lewis &amp; Short xȳzzum', ruling='ours'), rulings))
+        self.assertTrue(editor.awaited(note(ruling='ours'), rulings))
+        self.assertFalse(editor.awaited(note(ruling='his'), rulings))
+        self.assertFalse(editor.awaited(note(against='Traupman 70'), rulings))
+        # breakfast, whose only note is against Bennett, is not among the first.
+        self.assertLess(editor.band(editor.priorities(self.site)['breakfast'][1]), 2)
         # Evidence that is Andresian's alone counts as recent, and two words for one as a phrase.
         self.assertEqual(ranked['t-phrase'], (editor.RECENT + editor.PHRASE, ['recent', 'phrase']))
         # The numbers are the script's named constants: change one and the order changes with it.
         with mock.patch.object(editor, 'OURS', 0):
             self.assertEqual(editor.priorities(site)['t-ours'], (0, []))
-        for name in ('MINE', 'DAILY', 'OURS', 'RECENT', 'QUANTITY', 'KIND', 'UNSOURCED', 'COMPOSED', 'PHRASE'):
+        for name in ('MINE', 'DAILY', 'OURS', 'RECENT', 'QUANTITY', 'PROVISIONAL', 'KIND', 'UNSOURCED', 'COMPOSED', 'PHRASE'):
             self.assertIsInstance(getattr(editor, name), int, name)
             self.assertGreater(getattr(editor, name), 0, name)
         self.assertEqual([limit for limit, _ in editor.FREQUENT], [1000, 2000, 5000])

@@ -63,7 +63,7 @@ To apply his verdicts (when he asks, or before the records he has read are chang
 3. Commit the records and `notes/review-flags.md`; the site is built when it is published.
 4. Build and publish the page again, then delete from the database the documents that were applied (an entry marked right is now reviewed in the page's own data; a flag is now in `notes/review-flags.md`). Not before: until the page is published again, those documents are what tells it the entries are done.
 
-The Latin of the page is the wording of the site's flag where that has a word; the rest is Claude's, listed in a comment at the top of `src/editor/review.js`. The editor approved part of it on 16 November 2026 (*Retrō*, *Tolle*, *Quaere verbum*, *Rērum genera*, *In lexicō aperī*, *Jūdicia servantur*, *Nōndum servātum*, *Iterum temptā*); what he was not asked about (*In lexicō probātum est*, "restant", *Jūdicia legī nōn potuērunt* and the rest the comment names) still awaits his review, and so do the strings of 16 November 2026 for the queue: the ten reasons in the tables below, *Ōrdō*, *Nostra et disputāta*, *Verba recentia*, *Exempla nostra*, *Cētera* and "N ex M restant". The page is tested in `tests/editor.browser.test.mjs` (with a stand-in for the database) and its data in `tests/test_editor_review.py`. It was first published on 15 November 2026 and had not then been tried by the editor on his phone.
+The Latin of the page is the wording of the site's flag where that has a word; the rest is Claude's, listed in a comment at the top of `src/editor/review.js`. The editor approved part of it on 16 November 2026 (*Retrō*, *Tolle*, *Quaere verbum*, *Rērum genera*, *In lexicō aperī*, *Jūdicia servantur*, *Nōndum servātum*, *Iterum temptā*); what he was not asked about (*In lexicō probātum est*, "restant", *Jūdicia legī nōn potuērunt* and the rest the comment names) still awaits his review, and so do the strings of 16 November 2026 for the queue: the eleven reasons in the tables below, *Ōrdō*, *Nostra*, *Recentia et disputāta*, *Exempla nostra*, *Cētera* and "N ex M restant". The page is tested in `tests/editor.browser.test.mjs` (with a stand-in for the database) and its data in `tests/test_editor_review.py`. It was first published on 15 November 2026 and had not then been tried by the editor on his phone.
 
 ### How the queue is ordered
 
@@ -73,8 +73,8 @@ Risk decides the order, and use only orders the entries inside a band. The first
 
 | Band | In the lobby | What is in it | Reasons that give it |
 | ---: | --- | --- | --- |
-| 3 | *Nostra et disputāta* | a judgement of ours stands in place of a source | `ours`, `unsourced`, `quantity` |
-| 2 | *Verba recentia* | modern words, and answers that may be the wrong kind of word | `recent`, `kind` |
+| 3 | *Nostra* | a judgement of ours stands in place of a source, or a ruling waits for the editor | `ours`, `unsourced`, `provisional` |
+| 2 | *Recentia et disputāta* | modern words, departures from what Lewis & Short marks that he has not ruled on, and answers that may be the wrong kind of word | `recent`, `quantity`, `kind` |
 | 1 | *Exempla nostra* | attested words that carry a sentence or phrase of ours | `composed`, `phrase` |
 | 0 | *Cētera* | attested words with nothing of ours | none |
 
@@ -84,7 +84,8 @@ Risk decides the order, and use only orders the entries inside a band. The first
 | --- | --- | --- | ---: |
 | `ours` | *verbum nostrum* | the answer is a term of ours: no author stands behind it | 30 |
 | `unsourced` | *sine fonte* | the record has no line of sources | 20 |
-| `quantity` | *ā fonte discēdit* | a note of the record departs from an authority on a form (`against`) or applies a ruling | 15 |
+| `provisional` | *jūdicium exspectat* | a note applies a ruling whose status is `provisional`: it awaits the editor | 20 |
+| `quantity` | *ā Lewis et Short discēdit* | a note departs from a quantity or form that Lewis & Short marks (`against` names it), and no current ruling by the editor covers it | 15 |
 | `kind` | *respōnsum dubium* | `scripts/answer_kinds.py` lists the record: the answer may not be the kind of word the headword is | 20 |
 | `recent` | *verbum recēns* | the answer's period is `modern`, or every line of its evidence is Levi–Bini or Andresian | 15 |
 | `composed` | *exemplum nostrum* | the record has an example or phrase marked `composed` | 5 |
@@ -93,7 +94,9 @@ Risk decides the order, and use only orders the entries inside a band. The first
 | `mine` | *in libellīs* | the record is on the editor's own list | 25 |
 | `daily` | *vītae cotīdiānae* | the record's category is one of the eight nearest the person, the first eight of `filters` in `data/catalog.json` (conversation, common words, time, body, clothes, household, the house, the kitchen) | 5 |
 
-The first seven measure risk, the last three use. The signals, the bands and the numbers are the coordinating session's choice (16 November 2026), for the editor to judge; they are named constants at the top of `scripts/editor_review.py`, and changing one and building the page again is all it takes. A frequency rank is found with the functions of `scripts/latin_coverage.py`, which match a lemma of the list to the lexicon's terms for the coverage report; the queue has no matcher of its own.
+The first eight measure risk, the last three use. The signals, the bands and the numbers are the coordinating session's choice (16 November 2026), for the editor to judge; they are named constants at the top of `scripts/editor_review.py`, and changing one and building the page again is all it takes. A frequency rank is found with the functions of `scripts/latin_coverage.py`, which match a lemma of the list to the lexicon's terms for the coverage report; the queue has no matcher of its own.
+
+**A note is not a reason by itself.** The first version of the bands put every record with a note on a form into the highest, and the editor met *jentāculum* there (Jack, 16 November 2026: "why am i checking breakfast? jentaculum is quite attested. or is it just because of the vowel length?"). Most notes fill in a vowel that Lewis & Short leaves unmarked by a house rule, correct a modern dictionary by Lewis & Short, or follow a ruling he has made. None of those is counted. What is counted is a departure from what Lewis & Short marks that he has not ruled on (`quantity`, band 2) and a ruling that still awaits him (`provisional`, band 3).
 
 What the lowest band does not promise: its entries are the least likely to be wrong, not checked. The scripts compare the forms with Lewis & Short; nobody but the model that wrote the entry has compared the English with the Latin's sense, or read each quotation in its edition.
 

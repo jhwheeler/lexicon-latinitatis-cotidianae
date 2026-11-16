@@ -328,6 +328,10 @@ span.kind, p.kind:not(:has(a)) { display:block; padding:10px 0; }
 .hw .pos { margin-left:.35em; color:var(--muted); font-size:.46em; font-weight:400; font-style:italic; white-space:nowrap; }
 .sense, .also { margin:4px 0 0; color:var(--soft); font-style:italic; }
 .also { color:var(--muted); }
+/* The other senses of the headword, each an entry of its own. */
+.senses { margin:8px 0 0; color:var(--soft); font:400 .98rem/1.5 var(--sans); }
+.senses .sc { margin-right:.5em; color:var(--muted); font-variant-caps:all-small-caps; letter-spacing:.05em; }
+.senses span[lang="la"] { font-style:italic; color:var(--muted); }
 .term { margin-top:20px; }
 .lemma { margin:0; font-size:1.2rem; line-height:1.35; }
 .term > .lemma b { font-size:1.6em; }

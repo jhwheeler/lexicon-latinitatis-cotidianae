@@ -106,7 +106,7 @@ test('Incipe opens the entry of highest priority still to read, and the queue go
   // Risk first: the queue opens in the highest band, where a judgement of ours stands in place of
   // a source, and an attested word of his own list (bread) waits in a lower one for all that.
   assert.equal(order[0].band, 3);
-  assert.equal(['ours', 'unsourced', 'quantity'].includes(order[0].reasons[0]), true);
+  assert.equal(['ours', 'unsourced', 'provisional'].includes(order[0].reasons[0]), true);
   assert.equal(order.every((record, n) => !n || order[n - 1].band >= record.band), true);
   const bread = order.find(record => record.id === 'bread');
   assert.equal(bread.reasons.includes('mine') && bread.band < 3, true);
@@ -129,13 +129,13 @@ test('Incipe opens the entry of highest priority still to read, and the queue go
 
 test('a quiet line under the strip says why an entry is here, three reasons at most; none, no line', async () => {
   const LABELS = { mine: 'in libellīs', frequent: 'verbum frequēns', daily: 'vītae cotīdiānae', ours: 'verbum nostrum', recent: 'verbum recēns',
-    quantity: 'ā fonte discēdit', kind: 'respōnsum dubium', unsourced: 'sine fonte', composed: 'exemplum nostrum', phrase: 'plūra verba prō ūnō' };
+    quantity: 'ā Lewis et Short discēdit', provisional: 'jūdicium exspectat', kind: 'respōnsum dubium', unsourced: 'sine fonte', composed: 'exemplum nostrum', phrase: 'plūra verba prō ūnō' };
   const order = await ranking();
   await page.locator('#e-start').click();
   await shown(order[0].id);
   assert.equal(await page.locator('#e-why').isVisible(), true);
   assert.equal(await page.locator('#e-why').textContent(), order[0].reasons.slice(0, 3).map(code => LABELS[code]).join(' · '));
-  assert.match(await page.locator('#e-why').textContent(), /^(verbum nostrum|sine fonte|ā fonte discēdit)/);
+  assert.match(await page.locator('#e-why').textContent(), /^(verbum nostrum|sine fonte|jūdicium exspectat)/);
   const strip = await page.locator('.e-top').boundingBox(), why = await page.locator('#e-why').boundingBox();
   assert.equal(why.y >= strip.y + strip.height, true);
   // An entry with more than three reasons shows the three weightiest.
@@ -166,7 +166,7 @@ test('Ōrdō: the four bands are counted, the riskiest first, and each starts it
   assert.equal(await first.count(), 4);
   const sizes = [3, 2, 1, 0].map(band => order.filter(record => record.band === band).length);
   const number = n => n.toLocaleString('en');
-  for (const [n, name] of ['Nostra et disputāta', 'Verba recentia', 'Exempla nostra', 'Cētera'].entries()) {
+  for (const [n, name] of ['Nostra', 'Recentia et disputāta', 'Exempla nostra', 'Cētera'].entries()) {
     const text = await first.nth(n).textContent();
     assert.equal(text.startsWith(name) && text.endsWith(`${number(sizes[n])} ex ${number(sizes[n])} restant`), true, text);
   }

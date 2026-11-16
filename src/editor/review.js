@@ -25,17 +25,17 @@
   // prio items first"): the script gives every record a number and its reasons, and the page reads
   // the highest first, among the entries still to read. Claude's wording of 16 November 2026,
   // awaiting his review: the reasons shown under the strip at the top of an entry, "in libellīs",
-  // "verbum frequēns", "vītae cotīdiānae", "verbum nostrum", "verbum recēns", "ā fonte
-  // discēdit", "respōnsum dubium", "sine fonte", "exemplum nostrum", "plūra verba prō ūnō";
-  // and in the lobby the heading "Ōrdō" with its four lines, "Nostra et disputāta", "Verba
-  // recentia", "Exempla nostra" and "Cētera", and their count, "N ex M restant". (The first order,
+  // "verbum frequēns", "vītae cotīdiānae", "verbum nostrum", "verbum recēns", "ā Lewis et Short
+  // discēdit", "jūdicium exspectat", "respōnsum dubium", "sine fonte", "exemplum nostrum", "plūra verba prō ūnō";
+  // and in the lobby the heading "Ōrdō" with its four lines, "Nostra", "Recentia et
+  // disputāta", "Exempla nostra" and "Cētera", and their count, "N ex M restant". (The first order,
   // of the same day, put his own list before everything under "Prīma"; he found it led with
   // attested words like mālum, so risk now decides and his list only orders inside a band.)
   const INDEX = window.editorIndex;
   const UNSAVED = 'lexicon-editor-unsaved', LOCAL = 'lexicon-editor-verdicts';
   // Why an entry stands where it does in the queue: the codes of scripts/editor_review.py.
   const WHY = { mine: 'in libellīs', frequent: 'verbum frequēns', daily: 'vītae cotīdiānae', ours: 'verbum nostrum', recent: 'verbum recēns',
-    quantity: 'ā fonte discēdit', kind: 'respōnsum dubium', unsourced: 'sine fonte', composed: 'exemplum nostrum', phrase: 'plūra verba prō ūnō' };
+    quantity: 'ā Lewis et Short discēdit', provisional: 'jūdicium exspectat', kind: 'respōnsum dubium', unsourced: 'sine fonte', composed: 'exemplum nostrum', phrase: 'plūra verba prō ūnō' };
   const SHOWN = 3;      // so many reasons at most, the weightiest first
   const REASONS = { word: 'verbum', quantity: 'quantitās', meaning: 'sēnsus', example: 'exemplum', source: 'fōns', other: 'aliud' };
   const MONTHS = ['Jānuāriī', 'Februāriī', 'Mārtiī', 'Aprīlis', 'Majī', 'Jūniī', 'Jūliī', 'Augustī', 'Septembris', 'Octōbris', 'Novembris', 'Decembris'];
@@ -59,8 +59,8 @@
   // The line of reasons names the risk first (what to look at), then the use.
   for (const record of records) record.reasons = [...record.reasons].sort((a, b) => (BANDS[b] || 0) - (BANDS[a] || 0));
   const ranked = [...records].sort((a, b) => b.band - a.band || b.priority - a.priority || (headword(a) < headword(b) ? -1 : headword(a) > headword(b) ? 1 : a.id < b.id ? -1 : 1));
-  const groups = [[3, 'Nostra et disputāta', 'our own words, departures from a dictionary, no source'],
-    [2, 'Verba recentia', 'modern words, and answers that may be the wrong kind of word'],
+  const groups = [[3, 'Nostra', 'our own words, entries with no source, rulings that await you'],
+    [2, 'Recentia et disputāta', 'modern words, departures from Lewis & Short, answers of the wrong kind'],
     [1, 'Exempla nostra', 'attested words with a sentence of ours'],
     [0, 'Cētera', 'attested words with nothing of ours: least likely to be wrong']]
     .map(([band, latin, english]) => [latin, english, ranked.filter(record => record.band === band)]).filter(([, , list]) => list.length);

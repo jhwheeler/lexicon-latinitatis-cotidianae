@@ -817,6 +817,29 @@ class BuildTests(unittest.TestCase):
             change(changed)
             self.assertNotEqual(builder.record_revision(changed), revision)
 
+    def test_an_entry_names_the_other_senses_of_its_headword(self):
+        """Jack, 16 November 2026, on "charge": "it's as if you only charge batteries. charge can
+        mean many things". Each sense is a record of its own, so an entry leads to the others:
+        the records with the same headword by their sense, then those that list the headword
+        under `also`, by the sense in brackets there or as "see <their headword>"."""
+        outputs = builder.build_site(self.root)
+        page = outputs['c/charge-battery.html']
+        self.assertIn('<p class="senses"><span class="sc">Other senses</span>'
+                      '<a href="charge-accusation.html">an accusation</a> <span lang="la">crīmen</span> · '
+                      '<a href="attack.html">in battle</a> <span lang="la">adorior</span> · '
+                      '<a href="price.html">see price</a> <span lang="la">pretium</span></p>', page)
+        # It stands under the headword, before the Latin; and it goes both ways.
+        self.assertLess(page.index('class="senses"'), page.index('class="lemma"'))
+        self.assertIn('<a href="charge-battery.html">a battery, a phone</a> <span lang="la">repleō</span>', outputs['c/charge-accusation.html'])
+        # An entry never names itself, names another entry once, and has no line when it is alone.
+        senses = builder.other_senses(builder.load_site(self.root))
+        for key, found in senses.items():
+            others = [other for other, _ in found]
+            self.assertNotIn(key, others, key)
+            self.assertEqual(len(others), len(set(others)), key)
+        self.assertNotIn('perhaps', senses)
+        self.assertNotIn('class="senses"', outputs['c/perhaps.html'])
+
     def test_the_site_carries_the_revision_and_shows_what_is_reviewed(self):
         # The test counts from nought: the entries the editor has reviewed are drafts again here.
         for path in (self.root / 'data/concepts').glob('*.json'):

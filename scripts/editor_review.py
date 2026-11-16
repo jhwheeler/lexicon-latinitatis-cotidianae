@@ -71,16 +71,23 @@ DAILY_CATEGORIES = 8
 # Risk. "The answer" is the record's first recommended term, the one the page shows first.
 OURS = 30          # the answer is a term of ours: no author stands behind it
 RECENT = 15        # the answer is modern, or its evidence is Levi–Bini or Andresian alone
-QUANTITY = 15      # a note departs from an authority on a form (`against`), or applies a ruling
+QUANTITY = 15      # a note departs from what Lewis & Short marks, and no current ruling of the editor's covers it
+PROVISIONAL = 20   # a note applies a ruling that still awaits the editor (its status is provisional)
 KIND = 20          # scripts/answer_kinds.py lists it: the answer may not be the kind of word the headword is
 UNSOURCED = 20     # no line of sources
 COMPOSED = 5       # it has an example or phrase composed by us
 PHRASE = 5         # the headword is one word and the answer is several
-# The bands, the highest read first: 3, where a judgement of ours stands in place of a source;
-# 2, modern words and answers that may be the wrong kind of word; 1, attested words that carry a
-# sentence of ours; 0, the rest, attested words with nothing of ours.
-BANDS = {'ours': 3, 'unsourced': 3, 'quantity': 3, 'recent': 2, 'kind': 2, 'composed': 1, 'phrase': 1}
-REASONS = {'mine': MINE, 'frequent': FREQUENT, 'daily': DAILY, 'ours': OURS, 'recent': RECENT, 'quantity': QUANTITY,
+# The bands, the highest read first: 3, where a judgement of ours stands in place of a source or
+# waits for the editor; 2, modern words, departures from Lewis & Short that he has not ruled on,
+# and answers that may be the wrong kind of word; 1, attested words that carry a sentence of
+# ours; 0, the rest, attested words with nothing of ours.
+#
+# A note is not a reason by itself (Jack, 16 November 2026: "why am i checking breakfast?
+# jentaculum is quite attested. or is it just because of the vowel length?"). Most notes apply a
+# house rule to a vowel Lewis & Short leaves unmarked, correct a modern dictionary by Lewis &
+# Short, or follow a ruling the editor has already made: none of those needs him again.
+BANDS = {'ours': 3, 'unsourced': 3, 'provisional': 3, 'recent': 2, 'kind': 2, 'quantity': 2, 'composed': 1, 'phrase': 1}
+REASONS = {'mine': MINE, 'frequent': FREQUENT, 'daily': DAILY, 'ours': OURS, 'recent': RECENT, 'quantity': QUANTITY, 'provisional': PROVISIONAL,
            'kind': KIND, 'unsourced': UNSOURCED, 'composed': COMPOSED, 'phrase': PHRASE}
 CAUTIOUS = re.compile(r'Levi[–-]Bini|Andresian')    # the reference works the house rules treat with caution
 
@@ -127,6 +134,22 @@ def frequency_ranks(site, root=ROOT):
     return ranks
 
 
+def awaited(note, rulings):
+    """The note applies a ruling that is still provisional: the editor has not judged it."""
+    return rulings.get(note.get('ruling'), {}).get('status') == 'provisional'
+
+
+def disputed(note, rulings):
+    """The note departs from a quantity or form that Lewis & Short marks, and no current ruling
+    of the editor's own covers it. Not counted: a vowel Lewis & Short leaves unmarked (a house
+    rule fills it in), a departure from another book, and a form he has already ruled on."""
+    against = note.get('against', '')
+    if 'Lewis' not in against or re.search(r'unmarked|marks only|does not mark|no mark', against):
+        return False
+    ruling = rulings.get(note.get('ruling'), {})
+    return not (ruling.get('by') == 'Jack' and ruling.get('status') == 'current')
+
+
 def priorities(site, root=ROOT, mine=()):
     """{record id: (priority, reasons)}: the sum of the weights that apply to the record, and their
     codes with the weightiest first (those of equal weight in the order of REASONS). Ids of `mine`
@@ -135,6 +158,7 @@ def priorities(site, root=ROOT, mine=()):
     ranks = frequency_ranks(site, root)
     daily = [key for key in site['catalog']['filters'] if key != 'all'][:DAILY_CATEGORIES]
     suspects = {record['id'] for record, _, _ in answer_kinds.suspects(root)}
+    rulings = site.get('rulings', {})
     out = {}
     for key, record in site['records'].items():
         term = answer(record)
@@ -148,7 +172,8 @@ def priorities(site, root=ROOT, mine=()):
             'daily': DAILY if record['domain'] in daily else 0,
             'ours': OURS if term['period'] == 'ours' else 0,
             'recent': RECENT if term['period'] == 'modern' or evidence and all(CAUTIOUS.search(line) for line in evidence) else 0,
-            'quantity': QUANTITY if any('against' in note or 'ruling' in note for note in notes) else 0,
+            'quantity': QUANTITY if any(disputed(note, rulings) for note in notes) else 0,
+            'provisional': PROVISIONAL if any(awaited(note, rulings) for note in notes) else 0,
             'kind': KIND if key in suspects else 0,
             'unsourced': UNSOURCED if not record.get('sources') else 0,
             'composed': COMPOSED if any(phrase['source'] == 'composed' for phrase in phrases) else 0,

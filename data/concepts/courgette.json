@@ -8,10 +8,21 @@
   "domain": "natura",
   "terms": [
     {
-      "latin": "cucurbitula, cucurbitulae f.",
+      "latin": "cucurbita Ītalica",
       "status": "recommended",
+      "period": "modern",
+      "gloss": "Italian squash: a courgette",
+      "evidence": [
+        "M-O s.v. squash: zucchini, courgette"
+      ],
+      "comment": "Morgan–Owens’s phrase, “Italian squash”, for this variety of <em>Cucurbita pepo</em>. Classically <span lang=\"la\">cucurbita</span> is a gourd (Col. 11.3.48; Plin. NH 19.69, Lewis &amp; Short); modern Latin carried the name over to the squashes, which come from the New World (M-O s.v. squash: gourd)."
+    },
+    {
+      "latin": "cucurbitula, cucurbitulae f.",
+      "status": "alternative",
       "period": "ours",
-      "comment": "The <span lang=\"la\">Culīna</span>’s diminutive of <span lang=\"la\">cucurbita</span>. The attested classical senses are a wild gourd and Celsus’s cupping-glass (Cels. II 11), so the vegetable sense is our extension."
+      "gloss": "a little squash",
+      "comment": "Our diminutive of <span lang=\"la\">cucurbita</span> for the small squash. Its attested senses are a wild gourd (Scrib. Comp. 106) and the physician’s cupping-glass (Cels. 2.11; 3.18) (Lewis &amp; Short), so the vegetable sense is our extension."
     }
   ],
   "related": [
@@ -20,11 +31,13 @@
   "sources": [
     "<a href=\"https://alatius.com/ls/index.php?l=cucurbitula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cucurbitula</a>",
     "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/food-vocabulary-bulgaria-and-fabulae.md\">Food vocabulary: source notes</a>",
-    "Theodōrus et pater: Epp. VI–VII and Culīna Theodōrī."
+    "Theodōrus et pater: Epp. VI–VII and Culīna Theodōrī.",
+    "<a href=\"https://logeion.uchicago.edu/cucurbita\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cucurbita</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.vv. squash: zucchini, courgette; squash: gourd."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-16",
     "by": "Claude"
   }
 }

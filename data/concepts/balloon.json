@@ -5,22 +5,34 @@
   "domain": "corpus",
   "terms": [
     {
-      "latin": "vēsīca, vēsīcae f.",
+      "latin": "folliculus, folliculī m.",
       "status": "recommended",
-      "period": "ours",
-      "gloss": "bladder; extended here to an inflated balloon"
+      "period": "classical",
+      "gloss": "a little ball blown up with air: a balloon",
+      "evidence": [
+        "Suet. Aug. 83: <span lang=\"la\">ad pilam folliculumque trānsiit</span> (Lewis &amp; Short)",
+        "Levi–Bini p. 45"
+      ],
+      "comment": "Classically a small bag, and so “a ball to play with, inflated with air” (Lewis &amp; Short), the game Augustus took up after the civil wars (Suet. Aug. 83). Its use for a toy balloon is modern: Levi and Bini give it for the Italian <em>palloncino</em> (p. 45). Traupman and Morgan–Owens have no word for a balloon."
     },
     {
-      "latin": "vēsīca īnflāta",
+      "latin": "vēsīca, vēsīcae f.",
       "status": "alternative",
       "period": "ours",
-      "comment": "Makes the image explicit."
+      "gloss": "bladder; extended here to an inflated balloon",
+      "comment": "Our extension of the word for a bladder, which is used classically of things made of one, a purse, a lantern or a football (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "vēsīca īnflāta",
+      "english": "a blown-up balloon",
+      "source": "composed"
     },
     {
       "latin": "follis īnflātus",
-      "status": "alternative",
-      "period": "ours",
-      "comment": "From <span lang=\"la\">follis</span>, a bag or inflated ball (L&amp;S)."
+      "english": "a ball blown up with air",
+      "source": "composed"
     }
   ],
   "related": [
@@ -29,11 +41,13 @@
     "bladder"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/vesica\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vesica</a> · <a href=\"https://logeion.uchicago.edu/follis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: follis</a>"
+    "<a href=\"https://logeion.uchicago.edu/vesica\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vesica</a> · <a href=\"https://logeion.uchicago.edu/follis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: follis</a>",
+    "<a href=\"https://logeion.uchicago.edu/folliculus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: folliculus</a>",
+    "Enrico Levi and Arturo Bini, <em>Il latino come lingua viva</em> (1937), p. 45, s.v. palloncino."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-16",
     "by": "Claude"
   }
 }

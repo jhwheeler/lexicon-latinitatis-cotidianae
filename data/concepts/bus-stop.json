@@ -14,9 +14,13 @@
     {
       "latin": "statiō, statiōnis f.",
       "status": "recommended",
-      "period": "ours",
+      "period": "classical",
       "gloss": "a stopping place: a bus stop",
-      "comment": "Our use, as in the lexicon’s <span lang=\"la\">statiō ferriviāria</span> (train station): classically a place where one stands or waits (Lewis &amp; Short; <span lang=\"la\">stationēs</span>, public places where people sit about, Plin. Ep. 1.13.2). In full, <span lang=\"la\">statiō autoraedārum longārum</span>, after Traupman’s <span lang=\"la\">hōrārium autoraedārum longārum</span> (bus timetable, p. 218). No reference work has a word for a bus stop."
+      "evidence": [
+        "Plin. Ep. 1.13.2: <span lang=\"la\">plērīque in statiōnibus sedent</span> (Lewis &amp; Short)",
+        "Cic. Att. 6.9.5: <span lang=\"la\">Athēnīs statiō mea nunc placet</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Classically a standing still, and so a place where people or things stay or wait: a post, an abode, the public places where people sat about (Plin. Ep. 1.13.2) (Lewis &amp; Short). Its use for a bus stop is modern, and ours: no reference work has a word for one. Traupman has the word for a railway station, <span lang=\"la\">statiō ferriviāria</span> (pp. 219, 397; see train station). In full, <span lang=\"la\">statiō autoraedārum longārum</span>, after Traupman’s <span lang=\"la\">hōrārium autoraedārum longārum</span> (bus timetable, p. 218)."
     }
   ],
   "phrases": [
@@ -33,11 +37,11 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/statio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: statio</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 218."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 218, 219, 397."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-16",
     "by": "Claude"
   }
 }

@@ -5,10 +5,10 @@
   "domain": "computatra",
   "terms": [
     {
-      "latin": "probātiō automatica",
+      "latin": "probātiō automata",
       "status": "recommended",
       "period": "ours",
-      "comment": "This and <strong lang=\"la\">probātiō manuālis</strong> recover our earlier proposals; the quantity of every modern technical stem is not independently established here."
+      "comment": "Our phrase: Traupman and Morgan–Owens have no term for automated testing. <span lang=\"la\">Probātiō</span> is the lexicon’s word for testing (see testing). <span lang=\"la\">Automatus</span> is self-moving, spontaneous (Petr. 50.1, Lewis &amp; Short), and the modern works use it of machines that work by themselves: an automatic rifle is <span lang=\"la\">sclopētum automatum</span> (Traupman 371) and a motorcycle <span lang=\"la\">birota automata</span> (M-O s.v. bicycle: motorcycle). Testing by hand is <span lang=\"la\">probātiō manuālis</span> (see manual testing)."
     }
   ],
   "related": [
@@ -16,11 +16,14 @@
     "manual-testing"
   ],
   "sources": [
-    "<a href=\"https://alatius.com/ls/index.php?l=probatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: probatio</a>"
+    "<a href=\"https://alatius.com/ls/index.php?l=probatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: probatio</a>",
+    "<a href=\"https://logeion.uchicago.edu/automatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: automatus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 371.",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. bicycle: motorcycle."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-16",
     "by": "Claude"
   }
 }

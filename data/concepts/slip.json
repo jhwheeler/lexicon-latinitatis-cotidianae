@@ -1,9 +1,11 @@
 {
   "id": "slip",
   "english": "slip",
+  "sense": "lose one’s footing",
   "pos": "verb",
   "also": [
-    "glide"
+    "lose one’s footing",
+    "slip over"
   ],
   "domain": "sermo",
   "terms": [
@@ -12,30 +14,44 @@
       "status": "recommended",
       "period": "classical",
       "grammar": "verb, third conjugation, deponent",
-      "gloss": "slip or glide",
+      "gloss": "slip, lose one’s footing; slip down",
       "evidence": [
+        "Hor. S. 2.1.15; Cic. Fat. 5 (Lewis &amp; Short: “of sinking, slipping down”)",
         "Traupman 381"
-      ]
+      ],
+      "comment": "To slide and begin to fall, as when a foot goes from under one (Lewis &amp; Short: “to sink as the beginning of a fall”). Moving smoothly through the air or over ice is the same verb in another sense (see glide)."
     }
   ],
-  "related": [
-    "trip",
-    "fall",
-    "slippery"
-  ],
-  "sources": [
-    "<a href=\"https://logeion.uchicago.edu/labor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: labor</a>"
-  ],
-  "review": {
-    "status": "draft",
-    "date": "2026-11-09",
-    "by": "Claude"
-  },
   "phrases": [
+    {
+      "latin": "Cavē nē lābāris: pavīmentum lūbricum est.",
+      "english": "Mind you don’t slip: the floor is slippery.",
+      "source": "composed"
+    },
+    {
+      "latin": "In glaciē lāpsus cecidit.",
+      "english": "He slipped on the ice and fell.",
+      "source": "composed"
+    },
     {
       "latin": "fūrtim dare",
       "english": "to slip (something to someone)",
       "source": "Traupman 381"
     }
-  ]
+  ],
+  "related": [
+    "trip",
+    "fall",
+    "slippery",
+    "glide"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/labor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: labor</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 381."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-16",
+    "by": "Claude"
+  }
 }

@@ -103,8 +103,11 @@
   // Jack to review: first what the coordinating session wrote (title, sub, undo, close, start, the
   // kinds, src, works, mine, seen, lists, addList, name, entry, also, the periods, export, import,
   // copy), then, marked "review" below, what was still wanted. "how" (Quā ratiōne repetātur, 15
-  // November 2026) is Claude's too, awaiting Jack's review: the lobby's link to the page that says
-  // how the practice chooses and spaces its cards (how-practice-works.html, which is in English).
+  // November 2026) is Claude's wording, approved by Jack on 16 November 2026 ("bene habet"): the
+  // lobby's link to the page that says how the practice chooses and spaces its cards
+  // (how-practice-works.html, which is in English).
+  // "also" (Item: / Also:) labels the back's line of other Latin words. The front's line of other
+  // English names does not use it: see drawing the front, below.
   const one = (n, singular, many) => `${number(n)} ${n === 1 ? singular : many}`;
   const T = {
     la: {
@@ -608,9 +611,15 @@
       // where it says more, and the English of the example, which shows the word at work. All of
       // it is English, so none of it gives the answer away. Once the card is turned the example
       // stands on the back with its Latin, and is not said twice.
+      // The other names are English, so their label is English whatever the interface's language,
+      // and is written as an entry's own page writes it: "also take turns, in turns, alternately",
+      // lower case, no colon (Jack, 16 November 2026: in the Latin interface the line began
+      // "Item:", and "it looks like the english word 'item', which is confusing since the rest of
+      // the ux here is in english"). The back's line of other Latin words keeps the interface's
+      // label (Item: / Also:).
       const plain = text => fold(text).replace(/[^a-z0-9]+/g, '');   // a saying is not given as its own example
       const example = exampleOf(card), context = example && plain(example[1]) !== plain(card.e) ? example[1] : '';
-      q('g-more').textContent = card.o ? `${t('also')} ${card.o.join(', ')}` : ''; q('g-more').hidden = !card.o;
+      q('g-more').textContent = card.o ? `also ${card.o.join(', ')}` : ''; q('g-more').hidden = !card.o;
       q('g-gloss').textContent = card.g || ''; q('g-gloss').hidden = !card.g;
       q('g-context').textContent = context ? `“${context}”` : ''; q('g-context').hidden = !context || round.shown;
       if (round.shown) drawBack(card);

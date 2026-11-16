@@ -1372,7 +1372,7 @@ test('the front of a card says what the cue leaves open: the other English names
   await page.reload();
   await page.locator('#p-game[open]').waitFor();
   assert.equal(await page.locator('#g-cue').textContent(), 'in turn adverb');
-  assert.equal(await page.locator('#g-more').textContent(), 'Also: take turns, in turns, alternately');
+  assert.equal(await page.locator('#g-more').textContent(), 'also take turns, in turns, alternately');
   assert.equal(await page.locator('#g-gloss').textContent(), 'in turn, back');
   const context = await page.locator('#g-context').textContent();
   assert.match(context, /^“.+ in turn”$/);
@@ -1386,13 +1386,20 @@ test('the front of a card says what the cue leaves open: the other English names
   assert.equal(await page.locator('#g-more').isVisible(), true);
   assert.equal(await page.locator('#g-ex-en span').first().textContent(), context.slice(1, -1));
   assert.match(await page.locator('#g-ex-la').textContent(), /vicissim/);
-  // In Latin the label is the back's own: Item.
+  // In Latin the line is the same: the names are English, so their label is English, written as
+  // an entry's page writes it (Jack, 16 November 2026: "Item:" before English words read as the
+  // English word "item"). The back's line of other Latin words keeps the interface's label.
   await page.locator('#g-close').click();
   await page.evaluate(() => localStorage.setItem('lexicon-practice-lang', 'la'));
   await page.reload();
   await page.locator('#p-start').click();
   await page.locator('#p-game[open]').waitFor();
-  assert.match(await page.locator('#g-more').textContent(), /^Item: take turns/);
+  assert.equal(await page.locator('#g-more').textContent(), 'also take turns, in turns, alternately');
+  assert.equal(await page.locator('#g-more').evaluate(node => node.closest('[lang]').lang), 'en');
+  assert.doesNotMatch(await page.locator('#g-hints').textContent(), /Item/);
+  if (await page.locator('#g-back').isHidden()) await page.locator('#g-show').click();
+  await page.locator('#g-also').waitFor();
+  assert.match(await page.locator('#g-also').textContent(), /^Item: /);
   await page.locator('#g-close').click();
   // A card with nothing to add has none of the three lines, and a saying is not given as its own example.
   await page.evaluate(() => localStorage.setItem('lexicon-practice-lang', 'en'));
@@ -2689,6 +2696,7 @@ test('the clock game asks nothing of other sites, keeps its score, and leads bac
   await clock.locator('#go').waitFor();
   await clock.waitForLoadState('networkidle');
   assert.ok(requested.some(address => address.endsWith('assets/fonts/lexicon-serif-400.woff2')), 'the lexicon’s own serif');
+  assert.ok(requested.some(address => address.endsWith('assets/fonts/alegreya-sans-400.woff2')), 'the lexicon’s own sans');
   assert.deepEqual(requested.filter(address => !address.startsWith(base)), []);
   assert.equal(await clock.title(), 'Hōra cum ūnciā · Lexicon Latīnitātis Cotīdiānae');
   assert.equal(await clock.locator('link[rel="manifest"]').getAttribute('href'), 'manifest.webmanifest');
@@ -2876,5 +2884,105 @@ test('the clock wears the lexicon’s colours in both themes and follows its the
   assert.equal(await style(page, 'body', 'backgroundColor'), rgb(lexicon.light.ground));
   assert.equal(await style(page, 'body', 'color'), rgb(lexicon.light.ink));
   assert.equal(await page.locator('meta[name="theme-color"]').getAttribute('content'), lexicon.light.ground);
+  await context.close();
+});
+
+// The clock's faces are the lexicon's (Jack, 16 November 2026: its tally, chip and headings were
+// still in the system's monospace; "set them in the lexicon's faces"): the serif for text and, in
+// small capitals, for rubrics; the sans for controls and counters, as in the practice round.
+test('the clock is set in the lexicon’s faces, from the site’s own files: nothing is monospace', async () => {
+  const context = await browser.newContext({ viewport: { width: 390, height: 844 }, serviceWorkers: 'block' });
+  const clock = await context.newPage();
+  const fonts = [];
+  clock.on('request', request => { if (/\.(woff2?|ttf|otf)(\?|$)/.test(request.url())) fonts.push(request.url()); });
+  const style = (selector, property) => clock.locator(selector).first().evaluate((node, name) => getComputedStyle(node)[name], property);
+  // The first family of every element of the page, and of what it draws before and after itself.
+  const families = () => clock.evaluate(() => {
+    const found = new Map();
+    for (const node of document.querySelectorAll('body, body *')) {
+      if (['SCRIPT', 'STYLE'].includes(node.tagName)) continue;
+      for (const pseudo of [null, '::before', '::after', '::placeholder', '::marker']) {
+        const family = getComputedStyle(node, pseudo).fontFamily;
+        if (!found.has(family)) found.set(family, node.tagName.toLowerCase() + (node.id ? '#' + node.id : node.className && node.className.baseVal === undefined ? '.' + node.className : '') + (pseudo || ''));
+      }
+    }
+    return [...found];
+  });
+  const seen = new Map();
+  const look = async () => { for (const [family, where] of await families()) if (!seen.has(family)) seen.set(family, where); };
+
+  await clock.goto(pageUrl('index.html'));
+  await clock.evaluate(() => { localStorage.setItem('hcu-mode', '"t2w"'); localStorage.setItem('hcu-mkeys', 'true'); localStorage.setItem('hcu-whole', 'true'); });
+  await clock.goto(pageUrl('hora.html'));
+  await clock.locator('#go').waitFor();
+  // A time asked: the cue is a number, in the serif, as the Latin cue is.
+  assert.match(await clock.locator('#cue').textContent(), /^\d+:\d\d$/);
+  assert.match(await style('#cue', 'fontFamily'), /^"Lexicon Serif"/);
+  assert.match(await style('#cue', 'fontVariantNumeric'), /tabular-nums/);
+  await look();
+  // Answered: the verdict, the solution, and the word under the dial at a whole hour.
+  await clock.locator('#answer').fill('nescio');
+  await clock.locator('#go').click();
+  await clock.locator('#fb .v').waitFor();
+  await clock.evaluate(() => { document.getElementById('dialCap').innerHTML = '<span>hōra plēna</span>'; });
+  await look();
+  // Rubrics are the serif's small capitals; controls and counters are the sans, with figures of one width.
+  assert.match(await style('.dial-cap', 'fontFamily'), /^"Lexicon Serif"/);
+  assert.equal(await style('.dial-cap', 'fontVariantCaps'), 'all-small-caps');
+  for (const selector of ['.tally', '#tRun', '.mode-chip span', '#go']) assert.match(await style(selector, 'fontFamily'), /^"Alegreya Sans"/, selector);
+  assert.match(await style('.tally', 'fontVariantNumeric'), /tabular-nums/);
+  assert.equal(await style('.mode-chip span', 'fontVariantCaps'), 'all-small-caps');
+  assert.equal(await style('.mode-chip span', 'textTransform'), 'none');
+  // A number to type (Latin to time) is in the serif too.
+  await clock.evaluate(() => localStorage.setItem('hcu-mode', '"w2t"'));
+  await clock.reload();
+  await clock.locator('#go').waitFor();
+  assert.equal(await clock.locator('#answer').getAttribute('class'), 'num');
+  assert.match(await style('#answer', 'fontFamily'), /^"Lexicon Serif"/);
+  await clock.locator('#answer').fill('8:20');
+  await look();
+  // The table: its heads, and its numbers.
+  await clock.locator('#ref summary').click();
+  assert.match(await style('#ref th', 'fontFamily'), /^"Lexicon Serif"/);
+  assert.equal(await style('#ref th', 'fontVariantCaps'), 'all-small-caps');
+  assert.equal(await style('#ref th', 'textTransform'), 'none');
+  assert.match(await style('#ref td.n', 'fontFamily'), /^"Lexicon Serif"/);
+  assert.match(await style('#ref td.n', 'fontVariantNumeric'), /tabular-nums/);
+  await look();
+  // On a phone the table fits its box in both languages, and the page does not scroll sideways.
+  for (const language of ['la', 'en']) {
+    await clock.evaluate(chosen => document.querySelector(`.seg button[data-lang="${chosen}"]`).click(), language);
+    assert.equal(await clock.locator('html').getAttribute('lang'), language);
+    assert.deepEqual(await clock.locator('.tbl').evaluate(box => [box.scrollWidth > box.clientWidth, document.documentElement.scrollWidth > innerWidth]), [false, false], language);
+  }
+  // The drawer: headings, options with their examples, the language, the score.
+  await clock.locator('#openMenu').click();
+  await clock.waitForTimeout(300);
+  assert.match(await style('#menu h2', 'fontFamily'), /^"Lexicon Serif"/);
+  assert.equal(await style('#menu h2', 'fontVariantCaps'), 'small-caps');
+  assert.equal(await style('#menu h2', 'textTransform'), 'none');
+  for (const selector of ['.opt', '.seg button', '.stats', '.stats b', '.reset']) assert.match(await style(selector, 'fontFamily'), /^"Alegreya Sans"/, selector);
+  assert.match(await style('.opt small', 'fontFamily'), /^"Lexicon Serif"/);
+  assert.match(await style('.stats', 'fontVariantNumeric'), /tabular-nums/);
+  await look();
+  const small = await clock.evaluate(() => [...document.querySelectorAll('.icon-btn, .opt, .seg button, .reset, .go, #answer, .mode-chip, .ref summary, .links a')]
+    .filter(el => el.getClientRects().length)
+    .map(el => [el.textContent.trim().slice(0, 24) || el.id, Math.round(el.getBoundingClientRect().height)])
+    .filter(([, height]) => height < 44));
+  assert.deepEqual(small, []);
+
+  // Every element is in one of the two faces; none is monospace, or falls to the browser's own.
+  const strangers = [...seen].filter(([family]) => !/^"(Lexicon Serif|Alegreya Sans)"/.test(family));
+  assert.deepEqual(strangers, []);
+  assert.deepEqual([...seen].filter(([family]) => /mono|Menlo|Consolas|Courier/i.test(family)), []);
+  assert.equal(await clock.evaluate(() => /monospace|--mono/.test([...document.querySelectorAll('style')].map(node => node.textContent.replace(/\/\*[^]*?\*\//g, '')).join(''))), false);
+  // The faces were fetched, and from the site's own folder.
+  await clock.evaluate(() => document.fonts.ready);
+  for (const file of ['lexicon-serif-400.woff2', 'lexicon-serif-400-italic.woff2', 'alegreya-sans-400.woff2', 'alegreya-sans-500.woff2']) {
+    assert.ok(fonts.includes(pageUrl('assets/fonts/' + file)), file);
+  }
+  assert.deepEqual(fonts.filter(address => !address.startsWith(pageUrl('assets/fonts/'))), []);
+  assert.deepEqual(await clock.evaluate(() => [...document.fonts].filter(face => face.status === 'loaded').map(face => face.family.replace(/"/g, '')).filter((name, at, all) => all.indexOf(name) === at).sort()),
+    ['Alegreya Sans', 'Lexicon Serif']);
   await context.close();
 });

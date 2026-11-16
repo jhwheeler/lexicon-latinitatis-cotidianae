@@ -28,18 +28,35 @@ if (document.documentElement.dataset.theme === 'dark') document.querySelector('m
    the twelfths (the dial's sectors and the coin signs) and a right answer. Lapis is the lexicon's
    third colour, used so far only here: the coordinating session's choice, for Jack to judge. The
    layout and the behaviour are the game's own.
+   The faces are the lexicon's too (Jack, 16 November 2026: the tally, the chip and the headings were
+   still in the system's monospace; "set them in the lexicon's faces"). Nothing on the page is
+   monospace now. They are used as the practice round uses them (src/styles.css, .pgame-*, .pbtn):
+   - Alegreya Sans for controls and counters: the tally and the run in the bar (as .pgame-pos), the
+     drill's chip (small capitals, letter-spaced, as .pgame-status), the main button (weight 500, as
+     .pbtn), the options' labels, the language's two buttons, the score and "start over";
+   - Lexicon Serif in small capitals for rubrics: the drawer's headings (as the lobby's h3), the
+     table's heads and the word under the dial (all small capitals, as .pgame-period);
+   - Lexicon Serif for text, which the Latin is: the cue, the answer, the table, and the examples
+     under the options (the sans has no sign for "is not").
+   The time asked ("8:20") is the serif as well, not a monospace: the cue is then one voice whether
+   it is a number or Latin words, as the round's cue is. Numbers that change keep their width by
+   font-variant-numeric (the serif's figures are all of one width; the sans is given its lining
+   tabular figures, because its old-style nought reads as the letter o when it stands alone in the
+   chip). Which element takes which face, and the serif for the time, are Claude's choices.
    Layout: sticky top bar (menu · name · tally); one drill card whose cue and clock dial sit side by side, so the dial stays above the phone keyboard; every setting lives in the left drawer.
-   The page asks nothing of other sites, so that it works offline: the serif is the lexicon's own (Lexicon Serif, in assets/fonts/), the monospace the system's. Every control is at least 44px tall. */
+   The page asks nothing of other sites, so that it works offline: both faces are the lexicon's own files (assets/fonts/), declared here because the page stands by itself. Every control is at least 44px tall. */
 @font-face{font-family:"Lexicon Serif";src:url(assets/fonts/lexicon-serif-400.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}
 @font-face{font-family:"Lexicon Serif";src:url(assets/fonts/lexicon-serif-400-italic.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}
 @font-face{font-family:"Lexicon Serif";src:url(assets/fonts/lexicon-serif-700.woff2) format("woff2");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Alegreya Sans";src:url(assets/fonts/alegreya-sans-400.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Alegreya Sans";src:url(assets/fonts/alegreya-sans-500.woff2) format("woff2");font-weight:500;font-style:normal;font-display:swap}
 :root{
   color-scheme:light;
   --paper:#ffffff; --ink:#141414; --soft:#3d3d3d; --muted:#666666; --hair:#dadada; --rule:#141414;
   --rubric:#b0171f; --accent:#b0171f; --mark:#fbe1dd; --ground:#f2f0eb; --card:#ffffff;
   --lapis:#24457a; --lapis-soft:#e1e8f3;
-  --serif:"Lexicon Serif","Gentium Book Plus","Gentium Plus",Georgia,serif;
-  --mono:ui-monospace,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;
+  --serif:"Lexicon Serif","Gentium Book Plus",Gentium,"Iowan Old Style","Palatino Linotype",Georgia,serif;
+  --sans:"Alegreya Sans","Gill Sans","Segoe UI",system-ui,sans-serif;
 }
 :root[data-theme="dark"]{
   color-scheme:dark;
@@ -66,7 +83,7 @@ button{cursor:pointer}
 .icon-btn:hover{background:var(--card)}
 .menu .icon-btn:hover{background:var(--ground)}
 .top h1{margin:0;font-size:1.25rem;font-weight:500;letter-spacing:.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.tally{display:flex;align-items:baseline;gap:8px;font-family:var(--mono);font-size:.82rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.tally{display:flex;align-items:baseline;gap:8px;font:400 1rem/1.3 var(--sans);color:var(--muted);font-variant-numeric:lining-nums tabular-nums}
 .tally b{color:var(--ink);font-weight:500}
 .run{border:1px solid var(--hair);border-radius:999px;padding:1px 8px}
 .run.hot{border-color:var(--lapis);color:var(--lapis)}
@@ -79,22 +96,22 @@ main{max-width:600px;margin:0 auto;padding-block:16px 40px;
 .head{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px;align-items:start}
 .mode-chip{align-self:flex-start;max-width:100%;min-height:44px;margin:-10px 0;display:flex;align-items:center;border:0;background:none;padding:0}
 .mode-chip span{max-width:100%;border:1px solid var(--hair);background:var(--ground);border-radius:999px;padding:2px 10px;
-  font-family:var(--mono);font-size:.72rem;letter-spacing:.06em;color:var(--muted)}
+  font:400 .95rem/1.3 var(--sans);font-variant-caps:all-small-caps;letter-spacing:.08em;color:var(--muted)}
 .mode-chip:hover span{color:var(--ink)}
 .cue-wrap{display:flex;flex-direction:column;gap:6px;min-width:0}
 .cue-label{font-size:1rem;color:var(--muted);font-style:italic}
 .cue{font-size:2rem;line-height:1.12;overflow-wrap:anywhere;text-wrap:balance}
-.cue.num{font-family:var(--mono);font-size:2.4rem;font-weight:500;letter-spacing:-.01em}
+.cue.num{font-size:2.6rem;line-height:1.03;font-variant-numeric:tabular-nums}
 .dialbox{width:104px;display:flex;flex-direction:column;align-items:center;gap:4px}
 svg.dial{width:104px;height:104px;display:block}
-.dial-cap{min-height:22px;display:flex;align-items:center;justify-content:center;gap:6px;color:var(--lapis);font-family:var(--mono);font-size:.75rem}
+.dial-cap{min-height:22px;display:flex;align-items:center;justify-content:center;gap:6px;color:var(--lapis);font-size:.95rem;font-variant-caps:all-small-caps;letter-spacing:.07em}
 .dial-cap svg{display:block}
 
 form{display:flex;gap:8px}
 #answer{flex:1 1 auto;min-width:0;font-size:1.3rem;padding:10px 12px;border:1px solid var(--rule);border-radius:8px;background:var(--paper);color:var(--ink)}
-#answer.num{font-family:var(--mono)}
+#answer.num{font-variant-numeric:tabular-nums}
 #answer::placeholder{color:var(--muted);opacity:1}
-.go{flex:none;min-width:6.5rem;padding:0 16px;border:1px solid var(--ink);background:var(--ink);color:var(--paper);border-radius:8px;font-size:1.1rem}
+.go{flex:none;min-width:6.5rem;padding:0 16px;border:1px solid var(--ink);background:var(--ink);color:var(--paper);border-radius:8px;font:500 1.15rem/1.2 var(--sans)}
 .keys{display:flex;gap:6px;flex-wrap:wrap}
 .keys button{width:44px;height:44px;border:1px solid var(--hair);background:var(--ground);border-radius:8px;font-size:1.2rem}
 .fb{min-height:2.9em;font-size:1.05rem}
@@ -114,9 +131,10 @@ form{display:flex;gap:8px}
 .ref summary{cursor:pointer;padding:10px 0;font-size:1.05rem}
 .tbl{overflow-x:auto;padding-bottom:12px}
 table{border-collapse:collapse;width:100%;font-size:1rem}
-th,td{text-align:left;padding:5px 12px 5px 0;border-bottom:1px solid var(--hair);white-space:nowrap}
-th{font-family:var(--mono);font-size:.68rem;text-transform:uppercase;letter-spacing:.1em;color:var(--rubric);font-weight:400}
-td.n,td.m{font-family:var(--mono);font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:5px 11px 5px 0;border-bottom:1px solid var(--hair);white-space:nowrap}
+th{font:400 .95rem/1.3 var(--serif);font-variant-caps:all-small-caps;letter-spacing:.06em;color:var(--rubric)}
+th:last-child,td:last-child{padding-right:0}
+td.n,td.m{font-variant-numeric:tabular-nums}
 td.nota{color:var(--lapis)}
 .about{color:var(--muted);font-size:.95rem;max-width:62ch;margin:0 0 12px}
 .about p{margin:0 0 8px}
@@ -135,22 +153,22 @@ dialog.menu::backdrop{background:rgb(20 19 17 / .45)}
 .menu-top{display:flex;align-items:center;justify-content:space-between;margin-left:-8px}
 .menu-top span{font-size:1.15rem}
 .grp{display:flex;flex-direction:column;gap:4px}
-.grp h2{margin:0 0 4px;font-family:var(--mono);font-size:.7rem;font-weight:400;text-transform:uppercase;letter-spacing:.12em;color:var(--rubric)}
-.opt{display:grid;grid-template-columns:22px 1fr;gap:10px;align-items:start;min-height:44px;padding:9px 0;cursor:pointer}
+.grp h2{margin:0 0 3px;font:400 1.1rem/1.1 var(--serif);font-variant-caps:small-caps;letter-spacing:.05em;color:var(--rubric)}
+.opt{display:grid;grid-template-columns:22px 1fr;gap:10px;align-items:start;min-height:44px;padding:9px 0;cursor:pointer;font:400 1.0625rem/1.35 var(--sans)}
 .opt input{margin:4px 0 0;width:18px;height:18px;accent-color:var(--accent)}
-.opt small{display:block;color:var(--muted);font-size:.85rem;font-family:var(--mono)}
+.opt small{display:block;color:var(--muted);font:400 .95rem/1.35 var(--serif)}
 .seg{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--hair);border-radius:8px;overflow:hidden}
-.seg button{border:0;background:var(--ground);color:var(--soft);min-height:44px;padding:8px}
+.seg button{border:0;background:var(--ground);color:var(--soft);min-height:44px;padding:8px;font:400 1.0625rem/1.2 var(--sans)}
 /* the control in use: ink, underlined in red, as the lexicon's filters are */
 .seg button[aria-pressed="true"]{background:var(--card);color:var(--ink);text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:2px;text-underline-offset:.4em}
-.stats{font-family:var(--mono);font-size:.85rem;color:var(--muted);display:grid;grid-template-columns:1fr auto;gap:2px 12px}
+.stats{font:400 1rem/1.3 var(--sans);font-variant-numeric:lining-nums tabular-nums;color:var(--muted);display:grid;grid-template-columns:1fr auto;gap:2px 12px}
 .stats b{color:var(--ink);font-weight:500;text-align:right}
-.reset{align-self:start;min-height:44px;border:1px solid var(--rule);background:none;border-radius:8px;padding:6px 12px;font-size:.95rem;margin-top:6px}
+.reset{align-self:start;min-height:44px;border:1px solid var(--rule);background:none;border-radius:8px;padding:6px 12px;font:400 1rem/1.2 var(--sans);margin-top:6px}
 
 @media (min-width:560px){
   .card{padding:22px}
   .cue{font-size:2.3rem}
-  .cue.num{font-size:2.8rem}
+  .cue.num{font-size:3rem}
   .dialbox{width:132px} svg.dial{width:132px;height:132px}
 }
 @media (prefers-reduced-motion:no-preference){

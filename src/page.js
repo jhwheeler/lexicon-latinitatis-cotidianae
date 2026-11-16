@@ -27,8 +27,9 @@
   // over the app, and after it there is nothing to go back to. So while a round is in progress
   // whose current card is this entry (practice.js keeps the round in localStorage, with its time,
   // for 12 hours), the entry has one quiet link above it, back to the round. The words follow the
-  // practice page's language; "Redī ad cursum" is Claude's wording, awaiting Jack's review (the
-  // round is "cursus" in the game: Novus cursus, Cursus cōnfectus).
+  // practice page's language; "Redī ad cursum" is Claude's wording, approved by Jack on 16
+  // November 2026 ("bene habet"; the round is "cursus" in the game: Novus cursus, Cursus
+  // cōnfectus).
   const article = document.querySelector('article.concept[data-record]');
   const here = /\/c\/([a-z0-9-]+?)(?:\.html)?$/.exec(location.pathname);
   if (article && here) {

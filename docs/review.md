@@ -76,7 +76,7 @@ A record's priority is a sum of weights, one for each of the signals below that 
 | `daily` | *vītae cotīdiānae* | the record's category is one of the eight nearest the person, the first eight of `filters` in `data/catalog.json` (conversation, common words, time, body, clothes, household, the house, the kitchen) | 5 |
 | `ours` | *verbum nostrum* | the answer is a term of ours: no author stands behind it | 30 |
 | `recent` | *verbum recēns* | the answer's period is `modern`, or every line of its evidence is Levi–Bini or Andresian | 15 |
-| `quantity` | *ā Lewis et Short discēdit* | a note of the record departs from an authority on a form (`against`) or applies a ruling | 15 |
+| `quantity` | *ā fonte discēdit* | a note of the record departs from an authority on a form (`against`) or applies a ruling | 15 |
 | `kind` | *respōnsum dubium* | `scripts/answer_kinds.py` lists the record: the answer may not be the kind of word the headword is | 20 |
 | `unsourced` | *sine fonte* | the record has no line of sources | 20 |
 | `composed` | *exempla nostra tantum* | the record has examples, and every one is marked `composed` | 5 |

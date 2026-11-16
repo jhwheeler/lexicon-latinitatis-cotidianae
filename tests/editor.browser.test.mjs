@@ -106,7 +106,7 @@ test('Incipe opens the entry of highest priority still to read, and the queue go
 
 test('a quiet line under the strip says why an entry is here, three reasons at most; none, no line', async () => {
   const LABELS = { mine: 'in libellīs', frequent: 'verbum frequēns', daily: 'vītae cotīdiānae', ours: 'verbum nostrum', recent: 'verbum recēns',
-    quantity: 'ā Lewis et Short discēdit', kind: 'respōnsum dubium', unsourced: 'sine fonte', composed: 'exempla nostra tantum', phrase: 'plūra verba prō ūnō' };
+    quantity: 'ā fonte discēdit', kind: 'respōnsum dubium', unsourced: 'sine fonte', composed: 'exempla nostra tantum', phrase: 'plūra verba prō ūnō' };
   const order = await ranking();
   await page.locator('#e-start').click();
   await shown(order[0].id);

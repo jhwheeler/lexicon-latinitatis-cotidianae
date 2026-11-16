@@ -25,7 +25,7 @@
   // prio items first"): the script gives every record a number and its reasons, and the page reads
   // the highest first, among the entries still to read. Claude's wording of 16 November 2026,
   // awaiting his review: the reasons shown under the strip at the top of an entry, "in libellīs",
-  // "verbum frequēns", "vītae cotīdiānae", "verbum nostrum", "verbum recēns", "ā Lewis et Short
+  // "verbum frequēns", "vītae cotīdiānae", "verbum nostrum", "verbum recēns", "ā fonte
   // discēdit", "respōnsum dubium", "sine fonte", "exempla nostra tantum", "plūra verba prō ūnō";
   // and in the lobby the heading "Prīma", its two lines "In libellīs" and "Proxima ducenta"
   // ("Prīma ducenta" when the page was built without his list), and their count, "N ex M restant".
@@ -33,7 +33,7 @@
   const UNSAVED = 'lexicon-editor-unsaved', LOCAL = 'lexicon-editor-verdicts';
   // Why an entry stands where it does in the queue: the codes of scripts/editor_review.py.
   const WHY = { mine: 'in libellīs', frequent: 'verbum frequēns', daily: 'vītae cotīdiānae', ours: 'verbum nostrum', recent: 'verbum recēns',
-    quantity: 'ā Lewis et Short discēdit', kind: 'respōnsum dubium', unsourced: 'sine fonte', composed: 'exempla nostra tantum', phrase: 'plūra verba prō ūnō' };
+    quantity: 'ā fonte discēdit', kind: 'respōnsum dubium', unsourced: 'sine fonte', composed: 'exempla nostra tantum', phrase: 'plūra verba prō ūnō' };
   const SHOWN = 3;      // so many reasons at most, the weightiest first
   const FIRST = 200;    // the lobby's second group: so many of the highest after his own list ("ducenta")
   const REASONS = { word: 'verbum', quantity: 'quantitās', meaning: 'sēnsus', example: 'exemplum', source: 'fōns', other: 'aliud' };

@@ -14,19 +14,26 @@
     {
       "latin": "ācroāma, ācroāmatis n.",
       "status": "recommended",
-      "period": "ours",
-      "gloss": "something to listen to: a podcast",
+      "period": "classical",
+      "gloss": "something heard with pleasure: a podcast",
       "evidence": [
-        "Plin. Ep. 6.31.13; Suet. Vesp. 19 (Lewis &amp; Short)"
+        "Plin. Ep. 6.31.13; Suet. Vesp. 19 (Lewis &amp; Short)",
+        "Nep. Att. 14.1: <span lang=\"la\">nēmō in convīviō ejus aliud ācroāma audīvit quam anagnōstēn</span>",
+        "<em>Legio XIII</em> and <em>Quid Es Tu?</em>, two Latin podcasts, of themselves"
       ],
-      "comment": "Our choice: no reference work has a word for a podcast. The Greek-Latin <span lang=\"la\">ācroāma</span> is “that which is heard with pleasure”, music or a reading given to entertain guests at dinner (Lewis &amp; Short); at Atticus’ table the only <span lang=\"la\">ācroāma</span> was a reader (Nep. Att. 14.1). It names a podcast by what one does with it: listen. Classically also the performer himself (Cic. Sest. 54, Lewis &amp; Short)."
+      "comment": "Classically “that which is heard with pleasure”, the music or reading that entertained guests at dinner, and also the performer who gave it (Lewis &amp; Short); at Atticus’ table the only <span lang=\"la\">ācroāma</span> was a reader (Nep. Att. 14.1). Its use for a podcast is modern: it is the word Latin podcasters use for a podcast. The notes of <em>Legio XIII</em> speak of <span lang=\"la\">seriēs ācroāmatum</span>, and <em>Quid Es Tu?</em> opens its description <span lang=\"la\">dē ācroāmate</span>. Traupman, Morgan–Owens, Levi–Bini and Andresian have no word for one."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "nēmō in convīviō ejus aliud ācroāma audīvit quam anagnōstēn",
+      "english": "at his dinners no one heard any entertainment but a reader",
+      "source": "Nep. Att. 14.1"
     },
     {
-      "latin": "podcast",
-      "status": "alternative",
-      "period": "ours",
-      "grammar": "name, indeclinable",
-      "comment": "The international word, which a Latin speaker will be understood to mean."
+      "latin": "Inter ambulandum ācroāma audiō.",
+      "english": "I listen to a podcast while I walk.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -36,11 +43,13 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/acroama\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: acroama</a>",
-    "No source has a word for a podcast."
+    "<em>Legio XIII</em> (podcast), episode notes at <a href=\"https://podcasts.apple.com/podcast/id1338542908\" rel=\"noopener noreferrer\" target=\"_blank\">podcasts.apple.com/podcast/id1338542908</a>, read 16 November 2026.",
+    "Levi Baus, <em>Quid Es Tu?</em> (podcast), description at <a href=\"https://podcasts.apple.com/us/podcast/quid-es-tu/id1508912347\" rel=\"noopener noreferrer\" target=\"_blank\">podcasts.apple.com/us/podcast/quid-es-tu/id1508912347</a>, read 16 November 2026.",
+    "Cornelius Nepos, <em>Atticus</em> 14.1."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-16",
     "by": "Claude"
   }
 }

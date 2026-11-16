@@ -22,13 +22,16 @@
       ]
     },
     {
-      "latin": "pējerō, pējerāre, pējerāvī, pējerātum",
+      "latin": "pejerō, pejerāre, pejerāvī, pejerātum",
       "status": "alternative",
       "period": "classical",
       "gloss": "swear falsely, perjure oneself",
       "evidence": [
-        "Lewis &amp; Short s.v. <span lang=\"la\">pējerō</span>",
+        "Lewis &amp; Short s.v. <span lang=\"la\">pejerō</span>",
         "Traupman 196"
+      ],
+      "notes": [
+        "pejero"
       ]
     },
     {
@@ -49,6 +52,15 @@
       "source": "Plaut. Mil. 1066"
     }
   ],
+  "notes": {
+    "pejero": {
+      "form": "pejerō",
+      "claim": "no macron before j",
+      "against": "Lewis &amp; Short <span lang=\"la\">pējĕro</span>; Traupman 196 <span lang=\"la\">pēierāre</span>",
+      "html": "House orthography: the vowel before an intervocalic j takes no macron, the syllable being heavy by the double j (<span lang=\"la\">pejor, ejus</span>). The word is <span lang=\"la\">perjūrō</span> reshaped (Lewis &amp; Short), not a compound with a long prefix such as <span lang=\"la\">dē-</span> or <span lang=\"la\">prō-</span>, which would keep its macron.",
+      "ruling": "consonantal-j"
+    }
+  },
   "related": [
     "swear-oath",
     "witness"

@@ -14,7 +14,8 @@
       "major",
       "conjungō",
       "adjuvō",
-      "Jōannēs"
+      "Jōannēs",
+      "pejerō"
     ],
     "history": [
       {
@@ -24,6 +25,10 @@
       {
         "date": "2026-10-29",
         "html": "Applied to the whole lexicon."
+      },
+      {
+        "date": "2026-11-16",
+        "html": "<span lang=\"la\">pejerō</span> is written without a macron, by the rule for the vowel before an intervocalic j: its <span lang=\"la\">pe-</span> is not a long prefix (Lewis &amp; Short <span lang=\"la\">pējĕro</span>, from <span lang=\"la\">per-jūrō</span>)."
       }
     ]
   },
@@ -502,14 +507,144 @@
     "id": "common-vowels",
     "kind": "quantity",
     "title": "Vowels Lewis & Short marks common",
-    "decision": "A vowel Lewis &amp; Short marks common (long or short) is left unmarked: <span lang=\"la\">Nēreis</span>, <span lang=\"la\">Nēreidēs</span>. <span lang=\"la\">corōna</span> is the exception and is written long.",
+    "decision": "A vowel Lewis &amp; Short marks common (long or short) is left unmarked: <span lang=\"la\">Nēreis</span>, <span lang=\"la\">Nēreidēs</span>, <span lang=\"la\">terebra</span>, <span lang=\"la\">cochlea</span>, <span lang=\"la\">icō, icere</span>. <span lang=\"la\">corōna</span> is the exception and is written long.",
     "date": "2026-11-12",
     "by": "Jack",
     "status": "current",
     "html": "The same rule as for biblical names. <span lang=\"la\">corōna</span> keeps its macron because the Greek is κορώνη.",
     "forms": [
       "Nēreis",
-      "corōna"
+      "corōna",
+      "terebra",
+      "cochlea",
+      "icō"
+    ],
+    "history": [
+      {
+        "date": "2026-11-16",
+        "html": "Applied to <span lang=\"la\">terebra</span> (Lewis &amp; Short <span lang=\"la\">tĕrē̆bra</span>), <span lang=\"la\">cochlea</span> (<span lang=\"la\">cō̆chlĕa</span>) and the present of <span lang=\"la\">icō, icere</span> (<span lang=\"la\">ī̆cĭo, ī̆co</span>); the entries had given the first two in both forms and the third with a long vowel. The perfect <span lang=\"la\">īcī</span> stays long."
+      }
+    ]
+  },
+  {
+    "id": "caffea",
+    "kind": "quantity",
+    "title": "caffea with a short e",
+    "decision": "Write <span lang=\"la\">caffea, caffeae</span> for coffee, as Traupman prints it, and so <span lang=\"la\">caffea expressa</span> and <span lang=\"la\">caffea spūmōsa</span>. Morgan–Owens’s <span lang=\"la\">caffēa</span> is noted as a variant.",
+    "date": "2026-11-16",
+    "by": "Jack",
+    "status": "current",
+    "html": "Traupman (70, 293) prints <span lang=\"la\">caffea -ae</span> f. and <span lang=\"la\">caffeārius</span> with no long vowel in the stem. Morgan–Owens (s.v. coffee) writes <span lang=\"la\">cafêa</span> and <span lang=\"la\">caffêa</span>, with a long e, citing Bartal. The word is modern and has no ancient quantity to follow. The entry had Morgan–Owens’s <span lang=\"la\">caffēa</span> while the examples had Traupman’s <span lang=\"la\">caffeae</span>.",
+    "forms": [
+      "caffea"
+    ]
+  },
+  {
+    "id": "par",
+    "kind": "quantity",
+    "title": "impār, dispār and compār with a long ā",
+    "decision": "Write the nominatives <span lang=\"la\">impār</span>, <span lang=\"la\">dispār</span> and <span lang=\"la\">compār</span> with a long ā, as <span lang=\"la\">pār</span>. The other cases are short: <span lang=\"la\">imparis</span>, <span lang=\"la\">disparī</span>.",
+    "date": "2026-11-16",
+    "by": "Jack",
+    "status": "current",
+    "html": "Lewis &amp; Short marks <span lang=\"la\">pār</span> long and leaves the nominatives of its compounds unmarked (<span lang=\"la\">impar</span>, <span lang=\"la\">dis-par</span>, <span lang=\"la\">com-par</span>). De Vaan (444, s.v. <span lang=\"la\">pār</span>) prints <span lang=\"la\">compār</span>, <span lang=\"la\">dispār</span> and <span lang=\"la\">impār</span>, and Traupman (150, 297) <span lang=\"la\">impār esse</span>. The entry for an odd number had <span lang=\"la\">impar</span>; the other entries had the long vowel.",
+    "forms": [
+      "impār",
+      "dispār",
+      "compār"
+    ]
+  },
+  {
+    "id": "prendo",
+    "kind": "quantity",
+    "title": "prendō with a short e",
+    "decision": "Write <span lang=\"la\">prendō, prendere, prendī, prēnsum</span>.",
+    "date": "2026-11-16",
+    "by": "Jack",
+    "status": "current",
+    "html": "Lewis &amp; Short gives the contracted form of <span lang=\"la\">prehendō</span> without a mark. De Vaan (487, s.v. <span lang=\"la\">prehendō</span>) prints “contracted <span lang=\"la\">prendō</span>” and the compounds <span lang=\"la\">apprendere</span>, <span lang=\"la\">compre(he)ndere</span>, <span lang=\"la\">dēpre(he)ndere</span> and <span lang=\"la\">repre(he)ndere</span>. The vowel is long only before <span lang=\"la\">ns</span>: <span lang=\"la\">prēnsum</span>, <span lang=\"la\">prēnsō</span>, <span lang=\"la\">dēprēnsus</span>. The entry had <span lang=\"la\">prēndō</span>.",
+    "forms": [
+      "prendō"
+    ]
+  },
+  {
+    "id": "viscus",
+    "kind": "quantity",
+    "title": "vīscus, vīscera with a long ī",
+    "decision": "Write <span lang=\"la\">vīscus, vīsceris</span> and the plural <span lang=\"la\">vīscera</span> with a long ī. <span lang=\"la\">viscum</span>, mistletoe and birdlime, is another word and keeps its short i.",
+    "date": "2026-11-16",
+    "by": "Jack",
+    "status": "current",
+    "html": "Lewis &amp; Short leaves <span lang=\"la\">viscus, -eris</span> unmarked. De Vaan (683) heads the entry <span lang=\"la\">vīscus, -eris</span> and prints <span lang=\"la\">vīscerātim</span> and <span lang=\"la\">ēvīscerāre</span>; on the same page he heads <span lang=\"la\">viscum</span>, mistletoe, with a short i.",
+    "forms": [
+      "vīscus",
+      "vīscera"
+    ]
+  },
+  {
+    "id": "compesco",
+    "kind": "quantity",
+    "title": "compescō with a short e",
+    "decision": "Write <span lang=\"la\">compescō, compescere, compescuī</span>.",
+    "date": "2026-11-16",
+    "by": "Jack",
+    "status": "current",
+    "html": "Lewis &amp; Short leaves the vowel unmarked. De Vaan (445, s.v. <span lang=\"la\">parcō</span>) lists <span lang=\"la\">compescere</span> and <span lang=\"la\">dispescere</span> among the derivatives, with a short e. Traupman prints <span lang=\"la\">compēscō</span> (291) and <span lang=\"la\">compēsce mentem</span> (101, 336), which the entries had followed.",
+    "forms": [
+      "compescō"
+    ]
+  },
+  {
+    "id": "abdomen",
+    "kind": "quantity",
+    "title": "abdōmen with a long ō",
+    "decision": "Write <span lang=\"la\">abdōmen, abdōminis</span>.",
+    "date": "2026-11-16",
+    "by": "Jack",
+    "status": "current",
+    "html": "Lewis &amp; Short’s headword is <span lang=\"la\">abdŏmĕn</span>. Verse shows the vowel long. In Juv. 4.107, <span lang=\"la\">Montānī quoque venter adest abdōmine tardus</span>, which Lewis &amp; Short itself cites, and in Juv. 2.86, <span lang=\"la\">atque bonam tenerae plācant abdōmine porcae</span>, <span lang=\"la\">-dōmine</span> is the dactyl of the fifth foot; its first syllable is open, so only a long vowel fills the place. De Vaan (20) heads the entry <span lang=\"la\">abdōmen</span>. The ruling was for <span lang=\"la\">abdōmen</span> once the verse had been checked; both lines were read in the LASLA text of Juvenal.",
+    "forms": [
+      "abdōmen"
+    ]
+  },
+  {
+    "id": "aer",
+    "kind": "orthography",
+    "title": "āëra, āëria with a diaeresis",
+    "decision": "Write the forms of <span lang=\"la\">āēr</span> and its derivatives with a diaeresis wherever the e is short: <span lang=\"la\">āëris, āëra, āëre</span>, <span lang=\"la\">āërius, āëria</span>, <span lang=\"la\">āëroplanum</span>. The nominative <span lang=\"la\">āēr</span> has a macron on its e and needs none.",
+    "date": "2026-11-16",
+    "by": "Jack",
+    "status": "current",
+    "html": "The a and the e are two syllables (Lewis &amp; Short <span lang=\"la\">āēr, āĕris</span>, Greek ἀήρ), and the diaeresis keeps <span lang=\"la\">āëris</span>, of the air, apart from <span lang=\"la\">aeris</span>, of bronze, where ae is a diphthong. This is the house spelling; a few entries and quotations had been written without it (<span lang=\"la\">āera</span>, <span lang=\"la\">āeria</span>, <span lang=\"la\">āeris</span>).",
+    "forms": [
+      "āëra",
+      "āëria"
+    ]
+  },
+  {
+    "id": "lictor",
+    "kind": "quantity",
+    "title": "līctor with a long ī",
+    "decision": "Write <span lang=\"la\">līctor, līctōris</span>.",
+    "date": "2026-11-16",
+    "by": "Jack",
+    "status": "current",
+    "html": "Lewis &amp; Short’s headword is unmarked, but its article says “pronounced <span lang=\"la\">līctor</span>, Gell. 12, 3, 4”. Gellius (12.3.4), who derives the word from <span lang=\"la\">ligāre</span> against Tiro’s derivation from <span lang=\"la\">līcium</span>, grants that <span lang=\"la\">prīma syllaba in “līctōre”, sīcutī in “līciō”, prōducta est et in eō verbō quod est “ligō” correpta est</span>, and answers that <span lang=\"la\">līctor</span> from <span lang=\"la\">ligandō</span>, <span lang=\"la\">lēctor</span> from <span lang=\"la\">legendō</span>, <span lang=\"la\">vītor</span> from <span lang=\"la\">viendō</span>, <span lang=\"la\">tūtor</span> from <span lang=\"la\">tuendō</span> and <span lang=\"la\">strūctor</span> from <span lang=\"la\">struendō</span> were all made <span lang=\"la\">prōductīs quae corripiēbantur vōcālibus</span>, with vowels lengthened that were short. He names the vowel, so this is evidence for its length and not only for a heavy syllable. De Vaan (341, s.v. <span lang=\"la\">ligō</span>) prints <span lang=\"la\">līctor</span>. Gellius was read in J. C. Rolfe’s text (1927), as the Perseus Digital Library gives it; <span lang=\"la\">vītor</span> there is Lachmann’s correction of the manuscripts.",
+    "forms": [
+      "līctor"
+    ]
+  },
+  {
+    "id": "mucro",
+    "kind": "quantity",
+    "title": "mūcrō with a long ū",
+    "decision": "Write <span lang=\"la\">mūcrō, mūcrōnis</span>.",
+    "date": "2026-11-16",
+    "by": "Jack",
+    "status": "current",
+    "html": "Lewis &amp; Short prints <span lang=\"la\">mucro</span> without a mark, and the vowel stands before <span lang=\"la\">cr</span>, where a heavy syllable in verse does not prove it long. De Vaan (391) heads the entry <span lang=\"la\">mūcrō</span>, and the Latinitas loci collections write it so (Ambrose’s hymn <span lang=\"la\">Aeterne rērum</span>, 23).",
+    "forms": [
+      "mūcrō"
     ]
   }
 ]

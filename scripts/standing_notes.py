@@ -16,6 +16,12 @@ and a citation joined to one keeps the citation. The sentences are the builder's
 Only the lines of "sources" change: every other byte of a record stays as it was. It is wanted
 again whenever records written before the rule come in (a branch drafted from the older
 docs/drafting.md, a batch converted from cards).
+
+Two kinds of line the script cannot put right, and so lists and fails on (Jack, 16 November 2026):
+a line that says a passage is given "as Lewis & Short quotes it", since the mark "(Lewis & Short)"
+belongs on the quotation and only a reader of the record knows which quotation is meant; and a
+line that cites a working note of ours, since the published source the note names has to be read
+before it is cited.
 """
 import argparse
 import importlib.util
@@ -57,14 +63,29 @@ def cleaned(text):
     return out, changed
 
 
+def by_hand(record):
+    """The lines of a record's sources that a person must put right, each with what to do."""
+    out = []
+    for source in record['sources']:
+        if builder.AS_LEWIS_AND_SHORT_QUOTES.search(source) and record['id'] not in builder.LEFT_FOR_THE_EDITOR:
+            out.append((source, 'the mark belongs on the quotation: put “(Lewis &amp; Short)” at the end of that example’s source '
+                                'or of that line of the term’s evidence, then delete this line'))
+        if builder.OUR_WORKING_NOTES.search(source):
+            out.append((source, 'a public entry does not cite a working note of ours: cite the published source the note names, '
+                                'once it has been read, or delete this line'))
+    return out
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__.split('\n')[0])
     parser.add_argument('--write', action='store_true', help='change the records')
     parser.add_argument('--root', type=Path, default=ROOT)
     args = parser.parse_args()
     files = lines = 0
+    hand = []
     for path in sorted((args.root / 'data/concepts').glob('*.json')):
         text = path.read_text(encoding='utf-8')
+        hand += [(path.stem, source, advice) for source, advice in by_hand(json.loads(text))]
         try:
             out, changed = cleaned(text)
         except ValueError as error:
@@ -78,6 +99,10 @@ def main():
             path.write_text(out, encoding='utf-8')
     print(f'{lines} line(s) in {files} record(s) ' + ('changed.' if args.write else 'would change.') if lines
           else 'No record carries a standing note.')
+    for name, source, advice in hand:
+        print(f'{name}\n  ! {source}\n    {advice}')
+    if hand:
+        raise SystemExit(f'{len(hand)} line(s) to put right by hand, listed above.')
 
 
 if __name__ == '__main__':

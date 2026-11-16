@@ -6,9 +6,21 @@
   "domain": "culina",
   "terms": [
     {
-      "latin": "in segmenta secāre",
+      "latin": "in frusta dissecāre",
       "status": "recommended",
-      "period": "ours"
+      "period": "modern",
+      "gloss": "cut up into pieces: slice",
+      "evidence": [
+        "Levi–Bini p. 2"
+      ],
+      "comment": "Levi and Bini’s phrase for the Italian <em>affettare</em>, to cut into slices (p. 2). <span lang=\"la\">Frusta</span> are pieces or bits, classically of food (<span lang=\"la\">in frusta secant</span>, Verg. A. 1.212, Lewis &amp; Short); <span lang=\"la\">dissecāre</span>, to cut in pieces, is post-Augustan and frequent in the elder Pliny (Lewis &amp; Short)."
+    },
+    {
+      "latin": "in segmenta secāre",
+      "status": "alternative",
+      "period": "ours",
+      "gloss": "cut into slices",
+      "comment": "Our phrase on <span lang=\"la\">segmentum</span>, which is the slice of Traupman (pp. 73, 380) and Morgan–Owens (s.v. slice) and “a piece cut off, a slice” in Lewis &amp; Short; <span lang=\"la\">frusta</span> are pieces of any shape."
     }
   ],
   "related": [
@@ -17,11 +29,14 @@
   ],
   "sources": [
     "<a href=\"https://alatius.com/ls/index.php?l=seco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: seco</a>",
-    "<a href=\"https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/blob/main/notes/smoothie-vocabulary-audit.md\">Smoothie vocabulary: source audit and coverage</a>"
+    "<a href=\"https://logeion.uchicago.edu/disseco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: disseco</a> · <a href=\"https://logeion.uchicago.edu/frustum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: frustum</a> · <a href=\"https://logeion.uchicago.edu/segmentum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: segmentum</a>",
+    "Enrico Levi and Arturo Bini, <em>Il latino come lingua viva</em> (1937), p. 2, s.v. affettare.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 73, 380.",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. slice."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-16",
     "by": "Claude"
   }
 }

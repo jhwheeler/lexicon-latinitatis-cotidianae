@@ -2,25 +2,48 @@
   "id": "vitaminic",
   "english": "vitaminic",
   "pos": "adjective",
+  "also": [
+    "of vitamins",
+    "vitamin (as an adjective)"
+  ],
   "domain": "natura",
   "terms": [
     {
-      "latin": "vītamīnicus, vītamīnica, vītamīnicum",
+      "latin": "vītamīnōrum",
       "status": "recommended",
+      "period": "modern",
+      "gloss": "of vitamins",
+      "grammar": "genitive plural of vītamīnum, with its noun",
+      "evidence": [
+        "Traupman 66, 402: <span lang=\"la\">vītamīnum</span>, a vitamin"
+      ],
+      "comment": "Latin says “of vitamins”: no reference work has an adjective. Traupman has the noun <span lang=\"la\">vītamīnum</span> (pp. 66, 402) and Morgan–Owens the feminine <span lang=\"la\">vitamina</span> (s.v. vitamin); Levi–Bini and Andresian have neither the noun nor an adjective. See vitamin."
+    },
+    {
+      "latin": "vītamīnicus, vītamīnica, vītamīnicum",
+      "status": "alternative",
       "period": "ours",
       "gloss": "pertaining to vitamins",
-      "comment": "A transparent derivative, not claimed here to be corpus-verified."
+      "comment": "A transparent derivative of ours from the noun. No reference work has it, and the genitive does its work."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "cibus vītamīnōrum plēnus",
+      "english": "food rich in vitamins",
+      "source": "composed"
     }
   ],
   "related": [
     "vitamin"
   ],
   "sources": [
-    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: Adumbratio</a> · <a href=\"https://latin-dictionary.net/definition/38972/vitaminum-vitamini\" rel=\"noopener noreferrer\" target=\"_blank\">Vitaminum: Calepinus Novus attribution</a>"
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: Adumbratio</a> · <a href=\"https://latin-dictionary.net/definition/38972/vitaminum-vitamini\" rel=\"noopener noreferrer\" target=\"_blank\">Vitaminum: Calepinus Novus attribution</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 66, 402."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-16",
     "by": "Claude"
   }
 }

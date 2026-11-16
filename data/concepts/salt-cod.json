@@ -2,17 +2,39 @@
   "id": "salt-cod",
   "english": "salt cod",
   "pos": "noun",
+  "domain": "culina",
   "also_under": [
     "natura"
   ],
-  "domain": "culina",
   "terms": [
     {
-      "latin": "asellus sale condītus et siccātus",
+      "latin": "merlūcius, merlūciī m.",
       "status": "recommended",
-      "period": "ours"
+      "period": "modern",
+      "evidence": [
+        "Levi–Bini p. 8"
+      ],
+      "comment": "Levi and Bini’s word for the Italian <em>baccalà</em>, salt cod (p. 8); for the hake they have another, <span lang=\"la\">merula</span> (p. 42). It is not in Lewis &amp; Short, Traupman or Morgan–Owens. In zoology the name is the hake’s: Linnaeus’s <em>Gadus merluccius</em>, now the genus <em>Merluccius</em>. For the fish itself the lexicon has the classical <span lang=\"la\">asellus</span> (see cod).",
+      "notes": [
+        "merlucius"
+      ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "asellus sale condītus et siccātus",
+      "english": "cod preserved in salt and dried",
+      "source": "composed"
+    }
+  ],
+  "notes": {
+    "merlucius": {
+      "form": "merlūcius",
+      "claim": "long u",
+      "against": "Levi and Bini print <span lang=\"la\">merlucius, ii</span> without marks, and the word is not in Lewis &amp; Short",
+      "html": "The long vowel is that of <span lang=\"la\">lūcius</span>, the pike (Aus. Mos. 123, Lewis &amp; Short), if the name is “sea pike”, <span lang=\"la\">mare</span> with <span lang=\"la\">lūcius</span>. That is one of two derivations given for the fish’s name, the other being from <span lang=\"la\">merula</span>, and the ETYFish Project calls the etymology uncertain; so the length is probable, not established. No source marks the other vowels, and they are written short."
+    }
+  },
   "related": [
     "fish",
     "fritter",
@@ -20,11 +42,14 @@
   ],
   "sources": [
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
-    "<a href=\"https://logeion.uchicago.edu/asellus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: asellus</a>"
+    "<a href=\"https://logeion.uchicago.edu/asellus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: asellus</a>",
+    "Enrico Levi and Arturo Bini, <em>Il latino come lingua viva</em> (1937), p. 8, s.v. baccalà; p. 42, s.v. nasello.",
+    "<a href=\"https://logeion.uchicago.edu/lucius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lucius</a>",
+    "Christopher Scharpf, <a href=\"https://etyfish.org/merlucciidae/\" rel=\"noopener noreferrer\" target=\"_blank\"><em>The ETYFish Project</em>: Family Merlucciidae</a> (revised 14 November 2025)."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-16",
     "by": "Claude"
   }
 }

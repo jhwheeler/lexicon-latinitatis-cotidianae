@@ -13,8 +13,13 @@
   //
   // The data (window.editorIndex, then one file of entries per category) is written by
   // scripts/editor_review.py. The Latin of the interface is the site's review wording where it
-  // has one; "Retrō", "Quaere verbum", "Rērum genera", "Tolle", "In lexicō aperī", "In lexicō
-  // probātum est", "restant" and the lines about saving are Claude's, awaiting Jack's review.
+  // has one; the rest is Claude's. Of that, Jack approved these on 16 November 2026 ("bene
+  // habent"): "Retrō", "Tolle", "Quaere verbum", "Rērum genera", "In lexicō aperī", and of the
+  // lines about saving "Jūdicia servantur", "Nōndum servātum" (with its count, "N nōndum
+  // servātum / servāta") and "Iterum temptā". Still Claude's, awaiting his review, because he
+  // was not asked about them: "In lexicō probātum est", "restant", and the other lines about
+  // saving and reading ("Jūdicia in hōc nāvigātrō tantum servantur", "Jūdicia legī nōn
+  // potuērunt", "Jūdicia quaeruntur…", "Pāgina legī nōn potuit").
   const INDEX = window.editorIndex;
   const UNSAVED = 'lexicon-editor-unsaved', LOCAL = 'lexicon-editor-verdicts';
   const REASONS = { word: 'verbum', quantity: 'quantitās', meaning: 'sēnsus', example: 'exemplum', source: 'fōns', other: 'aliud' };

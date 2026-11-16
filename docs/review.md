@@ -60,7 +60,7 @@ To apply his verdicts (when he asks, or before the records he has read are chang
 3. Commit the records and `notes/review-flags.md`; the site is built when it is published.
 4. Build and publish the page again, then delete from the database the documents that were applied (an entry marked right is now reviewed in the page's own data; a flag is now in `notes/review-flags.md`). Not before: until the page is published again, those documents are what tells it the entries are done.
 
-The Latin of the page is the wording of the site's flag where that has a word; the rest is Claude's, listed in a comment at the top of `src/editor/review.js`, awaiting the editor's review. The page is tested in `tests/editor.browser.test.mjs` (with a stand-in for the database) and its data in `tests/test_editor_review.py`. It was first published on 15 November 2026 and had not then been tried by the editor on his phone.
+The Latin of the page is the wording of the site's flag where that has a word; the rest is Claude's, listed in a comment at the top of `src/editor/review.js`. The editor approved part of it on 16 November 2026 (*Retrō*, *Tolle*, *Quaere verbum*, *Rērum genera*, *In lexicō aperī*, *Jūdicia servantur*, *Nōndum servātum*, *Iterum temptā*); what he was not asked about (*In lexicō probātum est*, "restant", *Jūdicia legī nōn potuērunt* and the rest the comment names) still awaits his review. The page is tested in `tests/editor.browser.test.mjs` (with a stand-in for the database) and its data in `tests/test_editor_review.py`. It was first published on 15 November 2026 and had not then been tried by the editor on his phone.
 
 ## On the site: the flag
 

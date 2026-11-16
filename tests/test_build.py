@@ -896,6 +896,18 @@ class BuildTests(unittest.TestCase):
         for name in ('--bg', '--surface', '--sunk', '--line', '--bronze', '--verdigris', '--good', '--bad', '--warn'):
             self.assertNotIn(name + ':', hora)
             self.assertNotIn(f'var({name})', hora)
+        # Its faces are the lexicon's too (Jack, 16 November 2026): the stylesheet's two stacks under
+        # the stylesheet's names, each face declared from the site's own files, and no monospace.
+        for name in ('serif', 'sans'):
+            with self.subTest(face=name):
+                stack = re.search(rf'--{name}:([^;]+);', styles).group(1)
+                self.assertIn(f'--{name}:{stack};', hora)
+        for file in ('alegreya-sans-400.woff2', 'alegreya-sans-500.woff2'):
+            self.assertIn(f'url(assets/fonts/{file})', hora)
+            self.assertTrue((self.root / 'src/fonts' / file).is_file())
+        hora_styles = re.sub(r'/\*.*?\*/', '', hora[hora.index('<style>'):hora.index('</style>')], flags=re.S)
+        self.assertNotIn('mono', hora_styles)
+        self.assertEqual(set(re.findall(r'var\(--(serif|sans|mono)\)', hora_styles)), {'serif', 'sans'})
 
     def test_sources_are_read_from_the_opening_of_a_citation(self):
         cases = {

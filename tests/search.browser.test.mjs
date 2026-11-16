@@ -2955,7 +2955,10 @@ test('the clock is set in the lexicon’s faces, from the site’s own files: no
   for (const language of ['la', 'en']) {
     await clock.evaluate(chosen => document.querySelector(`.seg button[data-lang="${chosen}"]`).click(), language);
     assert.equal(await clock.locator('html').getAttribute('lang'), language);
-    assert.deepEqual(await clock.locator('.tbl').evaluate(box => [box.scrollWidth > box.clientWidth, document.documentElement.scrollWidth > innerWidth]), [false, false], language);
+    // Measured once the page's own faces have arrived (in a fallback face the heads are wider), and
+    // with two pixels' grace: machines round the widths of letters differently.
+    await clock.evaluate(() => document.fonts.ready);
+    assert.deepEqual(await clock.locator('.tbl').evaluate(box => [box.scrollWidth > box.clientWidth + 2, document.documentElement.scrollWidth > innerWidth]), [false, false], language);
   }
   // The drawer: headings, options with their examples, the language, the score.
   await clock.locator('#openMenu').click();

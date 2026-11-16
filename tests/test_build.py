@@ -593,16 +593,27 @@ class BuildTests(unittest.TestCase):
         self.assertIn('<section id="sources">\n<h2>How to read the sources</h2>', page)
         self.assertIn('<a href="#sources">Sources</a>', page)
         section = page[page.index('<section id="sources">'):page.index('<section id="rulings">')]
-        # Each sentence taken out of the records is answered there.
-        for said in ('is given as Lewis &amp; Short’s dictionary cites it', 'not been checked against a modern edition',
-                     'marked <em>composed</em> is a sentence of ours', 'the Latinitas loci collections',
-                     'href="https://github.com/PerseusDL/canonical-latinLit"', 'href="https://github.com/cltk/lat_text_latin_library"',
-                     'Leo (1896)', 'Parry (1857)', 'Purser', 'Mayhoff (Teubner, 1906)', 'Clementine Vulgate', 'Hetzenauer',
-                     'From N onwards that numbering differs from Meyer’s', '“Traupman 103”', '“M-O s.v. sieve”', '“Levi–Bini p. 23”',
-                     '“Andresian p. 24”', 'digitisation at columbia.edu', 'scan at archive.org',
-                     'post-classical unless Lewis &amp; Short has them', 'supports the word it names'):
+        # The section is cut to the essentials (Jack, 16 November 2026): what a reader needs in order
+        # to read an entry's Sources, in four points or fewer and under 150 words.
+        for said in ('“Lewis &amp; Short” after a quotation', 'as Lewis &amp; Short’s dictionary cites them',
+                     'not been checked against a modern edition', '“Composed”', 'The sentence is ours',
+                     '“Traupman 103”', '“M-O s.v. sieve”', 'by printed page', 'by headword',
+                     'checked against a text of that author', 'our own collections of quotations',
+                     'href="https://github.com/PerseusDL/canonical-latinLit"', 'href="https://github.com/cltk/lat_text_latin_library"'):
             with self.subTest(said=said):
                 self.assertIn(said, section)
+        self.assertLessEqual(section.count('<li>'), 4)
+        words = re.sub(r'<[^>]+>', ' ', section).split()
+        self.assertLess(len(words), 150, 'the section is for a reader; what an editor needs goes in docs/records.md')
+        # What was cut is kept for the editor, under "Sources are citations" in docs/records.md.
+        docs = (ROOT / 'docs/records.md').read_text(encoding='utf-8')
+        fuller = docs[docs.index('#### How the sources were read'):docs.index('### How a page shows a record')]
+        for kept in ('Leo (1896)', 'Parry (1857)', 'Purser', 'Mayhoff (Teubner, 1906)', 'Clementine Vulgate', 'Hetzenauer',
+                     'on 9, 11 and 12 November 2026', "From N onwards that numbering differs from Meyer's", '"Levi–Bini p. 23"',
+                     '"Andresian p. 24"', 'digitisation at columbia.edu', 'scan at archive.org', 'saved on 4 November 2026',
+                     'post-classical unless Lewis & Short has them', 'supports the word it names'):
+            with self.subTest(kept=kept):
+                self.assertIn(kept, fuller)
         link = '<p class="how-sources"><a href="../how-we-decide.html#sources">How to read the sources</a></p>'
         self.assertEqual(outputs['c/perhaps.html'].count(link), 1)
         self.assertLess(outputs['c/perhaps.html'].index('<span class="sc">Sources</span>'), outputs['c/perhaps.html'].index(link))
@@ -663,7 +674,7 @@ class BuildTests(unittest.TestCase):
         kept = ['John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 344, 359.',
                 graesse + ', ed. F. Benedict (1909).', 'Cicero, <em>De officiis</em> 1.124.',
                 f'Caesar checked against the {perseus}; the quotations keep that edition’s spelling <span lang="la">conloquium</span>.',
-                'Cicero as Lewis &amp; Short quotes him.']
+                'Lewis &amp; Short cites the Livy passage as Liv. 39.15.']
         for source in kept:
             self.assertEqual(builder.without_standing_notes(source), source)
         record = self.record('perhaps')
@@ -672,6 +683,64 @@ class BuildTests(unittest.TestCase):
         page = builder.build_site(self.root)['c/perhaps.html']
         for source in kept:
             self.assertIn(f'{source}</p>', page)
+
+    def test_a_line_that_belongs_on_the_quotation_is_refused(self):
+        # Jack, 16 November 2026: "do the pass: mark the quotation, delete the line". A line under
+        # Sources that says a passage is as Lewis & Short quotes it is refused, and the message
+        # says where the mark belongs.
+        for source in ('Cicero as Lewis &amp; Short quotes him.', 'Passages as Lewis &amp; Short quotes them.',
+                       'Plautus as cited by L&amp;S.', 'Cicero (ND 2.143) as quoted in L&amp;S.',
+                       'Horace quoted as Lewis &amp; Short cites him (s.v. quilibet: A. P. 9).',
+                       'Tacitus from the Latinitas loci collection (loci-tacitus); the other passages as Lewis &amp; Short quotes them.',
+                       'Horace and Gellius from the Latinitas loci collections; the other citations from Lewis &amp; Short.',
+                       'Erasmus’s Latin is post-classical. Ovid, Suetonius and Cicero as Lewis &amp; Short quotes them.'):
+            with self.subTest(source=source[:50]):
+                record = self.record('perhaps')
+                record['sources'] = [source]
+                self.save_record(record)
+                with self.assertRaisesRegex(ValueError, 'concept perhaps says that a passage is given as Lewis & Short quotes it. '
+                                                        'The mark belongs on the quotation, not under Sources: put “\\(Lewis &amp; Short\\)” '
+                                                        'at the end of that example’s source or of that line of the term’s evidence'):
+                    builder.build_site(self.root)
+        # The mark itself is where it belongs, and a remark on the dictionary is no such line.
+        record = self.record('perhaps')
+        record['sources'] = ['Lewis &amp; Short cites the Livy passage as Liv. 39.15.',
+                             'Lewis &amp; Short has no entry for <span lang="la">chemicum</span>.']
+        record['phrases'][0]['source'] = 'Verg. A. 1.203 (Lewis &amp; Short)'
+        self.save_record(record)
+        builder.build_site(self.root)
+        # The records the pass left for the editor are the only ones that still carry such a line.
+        left = set()
+        for path in sorted((ROOT / 'data/concepts').glob('*.json')):
+            if any(builder.AS_LEWIS_AND_SHORT_QUOTES.search(source) for source in json.loads(path.read_text(encoding='utf-8'))['sources']):
+                left.add(path.stem)
+        self.assertEqual(left, set(builder.LEFT_FOR_THE_EDITOR))
+
+    def test_a_source_that_cites_a_working_note_is_refused(self):
+        # Jack, 16 November 2026: "a public entry should not cite a working note: remove them".
+        repository = 'https://github.com/jhwheeler/lexicon-latinitatis-cotidianae'
+        for source in (f'<a href="{repository}/blob/main/notes/smoothie-vocabulary-audit.md">Smoothie vocabulary: source audit and coverage</a>',
+                       f'<a href="{repository}/blob/main/docs/records.md">Concept records</a>',
+                       f'<a href="{repository}">The lexicon’s repository</a>',
+                       '<a href="https://raw.githubusercontent.com/jhwheeler/latinitas/main/src/loci-plautus.md">loci-plautus</a>',
+                       '<a href="https://github.com/jhwheeler/latinitas/blob/main/AGENTS.md">The house standards</a>',
+                       'Caesar and Cicero (Att. 4.2.4) as quoted in the Latinitas house standards (AGENTS.md §4.1).',
+                       'See notes/coinages-2026-11-13.md.'):
+            with self.subTest(source=source[:60]):
+                record = self.record('perhaps')
+                record['sources'] = [source]
+                self.save_record(record)
+                with self.assertRaisesRegex(ValueError, 'concept perhaps cites a working note of ours; a public entry cites the published '
+                                                        'source the note names, once it has been read, or nothing'):
+                    builder.build_site(self.root)
+        # Another repository, or a text kept at GitHub, is not ours.
+        record = self.record('perhaps')
+        record['sources'] = ['<a href="https://github.com/PerseusDL/canonical-latinLit/blob/master/README.md">Perseus Latin texts</a>, on the editions.']
+        self.save_record(record)
+        builder.build_site(self.root)
+        for path in sorted((ROOT / 'data/concepts').glob('*.json')):
+            for source in json.loads(path.read_text(encoding='utf-8'))['sources']:
+                self.assertIsNone(builder.OUR_WORKING_NOTES.search(source), path.name)
 
     def test_a_coinage_is_not_recommended_beside_an_attested_word(self):
         # Coinages only where needed (Jack, 13 November 2026).

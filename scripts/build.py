@@ -2881,6 +2881,10 @@ def search_data(site):
                 if record['domain'] != key:
                     continue   # listed here too, but indexed once, under its own category
                 lines = [['d', t['latin'], t.get('gloss', ''), plain(term_meta(t))] for t in ordered_terms(record)]
+                # The page of each answer's Latin word (l/<slug>.html), where it has one, in the order of
+                # the 'd' lines: a tap on the Latin word in a result opens the word, not the English entry
+                # (Jack, 16 November 2026). Empty for a phrase, which has no page of its own.
+                word_pages = [site['words'].get(term_head(t['latin']), {}).get('slug', '') for t in ordered_terms(record)]
                 lines += [['e', p['latin'], p['english'], 'composed' if composed(p) else plain(p['source'])] for p in record.get('phrases', [])]
                 lines += [['n', plain(note_html(record['notes'][n]))] for n in note_numbers(record)]
                 # Each term's head and the stems its forms are built on: [head, class, stem, class, stem…]
@@ -2889,6 +2893,7 @@ def search_data(site):
                          for t in ordered_terms(record) if (stems := search_stems(t))]
                 items.append({'id': f'c-{record["id"]}', 'u': path, 'k': key, 'en': english, 'pos': pos,
                               'al': '; '.join(record.get('also', [])), 'l': lines,
+                              **({'w': word_pages} if any(word_pages) else {}),
                               **({'x': record['also_under']} if record.get('also_under') else {}),
                               **({'f': forms} if forms else {})})
             else:

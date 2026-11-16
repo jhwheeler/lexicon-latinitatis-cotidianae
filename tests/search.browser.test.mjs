@@ -58,6 +58,30 @@ test('pyjama shows the matching lemma first, with the matching lines, linked to 
   assert.match(await page.locator('h1').textContent(), /^pyjamas/);
 });
 
+test('an entry\u2019s other word, typed whole, finds it first: tv, telly, loo, cab', async () => {
+  // Jack, 16 November 2026: "tv" found television far down, below every entry with Latin tū (the
+  // search folds v as u). One of an entry's other words, typed whole, now ranks with its headword.
+  for (const [query, id] of [['tv', 'c-television'], ['TV', 'c-television'], ['telly', 'c-television'], ['loo', 'c-toilet'], ['cab', 'c-taxi'], ['specs', 'c-glasses']]) {
+    await search(query);
+    assert.equal(await page.locator('.search-result').first().getAttribute('data-result-for'), id, query);
+  }
+});
+
+test('a tap on the Latin word of a result opens the word\u2019s page; the rest of the card opens the entry', async () => {
+  // Jack, 16 November 2026: the Latin word in a result led to the English entry.
+  await search('perhaps');
+  const first = page.locator('.search-result').first();
+  assert.equal(await first.getAttribute('data-result-for'), 'c-perhaps');
+  assert.equal(await first.locator('h3 a').getAttribute('href'), 'l/fortasse.html');
+  await first.locator('h3 a').click();
+  await page.waitForURL(/\/l\/[a-z]+\.html$/);
+  assert.match(await page.locator('.kind').first().textContent(), /Latin word/);
+  await page.goBack();
+  await search('perhaps');
+  await page.locator('.search-result').first().locator('.r-en').click();
+  await page.waitForURL(/c\/perhaps\.html$/);
+});
+
 test('macrons, decomposed accents and i/j share matching and visible highlights', async () => {
   await search('synthesis dormitoria');
   assert.equal(await page.locator('.search-result').first().locator('h3 mark').textContent(), 'synthesis dormītōria');

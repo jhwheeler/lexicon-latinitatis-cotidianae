@@ -197,6 +197,8 @@ from four fields:
 
 A note on anything else (usage, a sense, a source's error) is plain `html`, written the same way: the point first, then the evidence. A ruling keeps the full argument; the note gives the reader what they need on the spot.
 
+A note cites a ruling only when that ruling decides the form in question (`re-s` for *restō*, `lachmann` for *āctus*). It does not cite the general rule `macrons`: the entry would end "Ruling: Macrons are spelling.", which tells the reader nothing about the word (Jack, 16 November 2026, on *cīnctūra*: "this is unnecessary fluff"). The note's own sentence gives the reason.
+
 The notes answer the reader who asks why we differ from a dictionary, and they let us trace a mistake to the decision that caused it.
 
 ## Rulings: `data/rulings.json`

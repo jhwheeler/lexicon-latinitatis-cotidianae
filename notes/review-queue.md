@@ -1,12 +1,12 @@
 # Questions for review
 
-Every record converted from the cards or drafted since is on the site and marked *Draft*. Most need only reading. The points below need a decision first. Each names the records concerned and the pull request where the evidence is set out. Collected on 9 November 2026 from the pull requests' "For your review" sections. Settled the same day and now in the rulings: *heri*, *sēsquihōra* and Lachmann's law (*frāctus*). Once a point is settled, delete it here; a ruling that applies across the house goes in `data/rulings.json`.
+Every record converted from the cards or drafted since is on the site and marked *Draft*. Most need only reading. The points below need a decision first. Each names the records concerned and the pull request where the evidence is set out. Collected on 9 November 2026 from the pull requests' "For your review" sections. Settled the same day and now in the rulings: *heri*, *sēsquihōra*, and Lachmann's law (*frāctus*). Once a point is settled, delete it here; a ruling that applies across the house goes in `data/rulings.json`.
 
 Records: `https://jhwheeler.github.io/lexicon-latinitatis-cotidianae/c/<id>.html`. Pull requests: `https://github.com/jhwheeler/lexicon-latinitatis-cotidianae/pull/<n>`.
 
 ## Vowel lengths that want a house ruling
 
-- **Final *o*.** *aliquandō*, *immō*, *porrō* and *quandō* are written long, after de Vaan; *aliquandō* may want a ruling of its own. (#53)
+- **Final *o*.** *aliquandō*, *immō*, *porrō*, and *quandō* are written long, after de Vaan; *aliquandō* may want a ruling of its own. (#53)
 - ***coërceō*** is written with a diaeresis, like the house's *āër* (`control-restrain`). (#60)
 - **Greek words.**
   - *episcopus* and *epistola* have a short *i*, from Greek ἐπί (`bishop`, `epistle`).
@@ -15,7 +15,7 @@ Records: `https://jhwheeler.github.io/lexicon-latinitatis-cotidianae/c/<id>.html
   - *acadēmīa* has a long *ī*, after Lewis & Short and Cicero's verse, against Traupman and Morgan–Owens.
   - *Paraclītus* follows the Clementine spelling.
   - (#58, #60, #61)
-- ***citō* or *cito*.** The house texts write *citō* 56 times and *cito* 8; Lewis & Short has *cĭto*. It is an iambically shortened word like *heri*, which is now written short (ruling of 9 November), as *modo*, *mihi* and *tibi* are. Lc. 15.22 was flagged as a slip and left as *Citō*.
+- ***citō* or *cito*.** The house texts write *citō* 56 times and *cito* 8; Lewis & Short has *cĭto*. It is an iambically shortened word like *heri*, which is now written short (ruling of 9 November), as *modo*, *mihi*, and *tibi* are. Lc. 15.22 was flagged as a slip and left as *Citō*.
 - ***fūrtum*.** The loci write it long (*fūrta*, *fūrtī*, *fūrtīvī*, *fūrtum*), and so do Bennett and most school texts. De Vaan reports Forssman's view that it originally had a short vowel (from *\*bʰr̥tom*, not a derivative of *fūr*); Lewis & Short leaves it unmarked.
 - **Single words with notes:**
   - *hic* has a short *i* (de Vaan 284; #63).
@@ -62,7 +62,7 @@ Records: `https://jhwheeler.github.io/lexicon-latinitatis-cotidianae/c/<id>.html
   - Should *wealth* have a record of its own led by *dīvitiae*? Today it sits in `resources`.
   - `pension` recommends the classical *annua* (an annual stipend), with Levi–Bini's *beneficium annuum* as the modern form.
   - `salary` prefers *salārium* to Traupman's *mercēs*.
-  - `employer` (*conductor*), `haggle` (*dē pretiō pacīscī*, Suet. Gram. 7.2) and `budget` (*ratiō impēnsārum*, Suet. Ner. 30.1) are thin.
+  - `employer` (*conductor*), `haggle` (*dē pretiō pacīscī*, Suet. Gram. 7.2), and `budget` (*ratiō impēnsārum*, Suet. Ner. 30.1) are thin.
   - `cash-machine` uses our own *māchina nummāria*.
   - `insurance` (*cautiō*) is labelled modern (#65).
 - **From the converted cards:**
@@ -74,20 +74,20 @@ Records: `https://jhwheeler.github.io/lexicon-latinitatis-cotidianae/c/<id>.html
   - `apron`, `sauce`, `napkin`, `pancake` (#37).
   - `delicatessen`: is *cuppēdināria* a cake shop or a delicatessen? (#35)
   - `storeroom` has two recommended terms.
-  - The leading form for `tape-measure`, `insulation`, `build-up`, `scaffold-pole`, `base-plate` and `coupler` (#28, #29).
+  - The leading form for `tape-measure`, `insulation`, `build-up`, `scaffold-pole`, `base-plate`, and `coupler` (#28, #29).
   - `tuna`: the cards' *thynnus*, against *thunnus* (#38).
   - `rim` and `tyre`: the cards disagree on *canthus* (#36).
 
 ## Periods and labels
 
-- **Christian terms dated medieval without a source:** *Ascēnsiō*, *Adventus*, *Deī Genetrīx* and *Fēria VI in Parascēvē* are probably older (#58).
+- **Christian terms dated medieval without a source:** *Ascēnsiō*, *Adventus*, *Deī Genetrīx*, and *Fēria VI in Parascēvē* are probably older (#58).
 - **Composed phrase terms dated modern for want of an ancient instance** (#39).
 - **`jelly`** needs a sense label, now that `jello` holds the dessert (#49).
 - ***sociālis*** for "social" is Seneca's sense; classically it means "of allies" (#53).
 
 ## Records to keep or drop
 
-- **Animal sounds:** quack, hoot and cackle recommend *clāmat*. Do they need records of their own? (#38)
+- **Animal sounds:** quack, hoot, and cackle recommend *clāmat*. Do they need records of their own? (#38)
 
 ## Slips in the loci collections (latinitas)
 
@@ -97,7 +97,7 @@ Fixed on 9 November 2026 in latinitas:
 - *vēnit* (Hor. S. 1.5.88, where the metre needs it);
 - the whole of Hor. Epist. 1.16.55–56, with a gloss that no longer inverts it, here and in the quantity note;
 - *ēsse* and *hoc noctis* (Plaut. Amph. 310);
-- *succīncta*, *Mediōlānium*, *factūrusne*, *Vēnditor* and *Ēmptor*;
+- *succīncta*, *Mediōlānium*, *factūrusne*, *Vēnditor*, and *Ēmptor*;
 - *āëra* with the house diaeresis, in the loci and in the Carmina.
 
 Two flagged items turned out to be questions of quantity, not slips, and are listed under vowel lengths above: *citō* and *fūrtum*.

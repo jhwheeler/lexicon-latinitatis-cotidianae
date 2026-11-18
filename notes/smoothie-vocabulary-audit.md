@@ -7,9 +7,9 @@ Search **smoothie** in the [live lexicon](https://jhwheeler.github.io/lexicon-la
 ## Sources actually consulted
 
 - John C. Traupman, *Conversational Latin for Oral Proficiency*, the user's uploaded PDF. Food-and-drink vocabulary: printed pp. 70–73; kitchen knife and refrigerator: p. 124; blender: p. 280; peanut butter: p. 358; spinach: p. 383. This copy's PDF page number is one higher than its printed number. The original p. 280 image was rendered and inspected to verify the blender's spelling and macrons; extracted text alone encodes several marked vowels incorrectly.
-- [Morgan–Owens, Adumbratio Lexici Anglico-Latini](https://neolatinlexicon.org/adumbratio-old/): sections 341–342 (produce), 348 (herbs, spices and sesame), 954 (kitchen equipment), 932 (refrigerator), 302 (nutrition), 445 (calcium), 76 (time), and the preliminary botanical vocabulary. These are lexicographic records and proposals; not all expressions there have an independent quotation.
-- [Morgan–Owens, Silva](https://neolatinlexicon.org/silva-old/): the freezer entry under kitchen vocabulary and protein under eating vocabulary. References to Helfer, Eichenseer, Heyse, the Lexicon Recentis Latinitatis and Du Cange are reported through Morgan–Owens, not represented as independently inspected original editions.
-- Lewis & Short through [Alatius](https://alatius.com/ls/) and [Logeion](https://logeion.uchicago.edu/), particularly the preparation verbs and older utensil words linked in the entries. Readable Alatius entries were obtained for *tero, contero, seco, minuo, exprimo, eluo, decortico, rado, misceo, metior, pendo, calefacio, refrigerare, zingiber, radula, rudicula, manipulus, juglans, butyrum, holus, cortex* and *fibra*. Some headword requests returned server errors; they are not treated as successfully inspected evidence. The readable *refrigerare* page supplies the cooling verb. The distinction between *concīdo* and *concido* was also checked in the [Corriere Latin dictionary](https://dizionari.corriere.it/dizionario_latino/Latino/C/concido_2.shtml).
+- [Morgan–Owens, Adumbratio Lexici Anglico-Latini](https://neolatinlexicon.org/adumbratio-old/): sections 341–342 (produce), 348 (herbs, spices, and sesame), 954 (kitchen equipment), 932 (refrigerator), 302 (nutrition), 445 (calcium), 76 (time), and the preliminary botanical vocabulary. These are lexicographic records and proposals; not all expressions there have an independent quotation.
+- [Morgan–Owens, Silva](https://neolatinlexicon.org/silva-old/): the freezer entry under kitchen vocabulary and protein under eating vocabulary. References to Helfer, Eichenseer, Heyse, the Lexicon Recentis Latinitatis, and Du Cange are reported through Morgan–Owens, not represented as independently inspected original editions.
+- Lewis & Short through [Alatius](https://alatius.com/ls/) and [Logeion](https://logeion.uchicago.edu/), particularly the preparation verbs and older utensil words linked in the entries. Readable Alatius entries were obtained for *tero, contero, seco, minuo, exprimo, eluo, decortico, rado, misceo, metior, pendo, calefacio, refrigerare, zingiber, radula, rudicula, manipulus, juglans, butyrum, holus, cortex*, and *fibra*. Some headword requests returned server errors; they are not treated as successfully inspected evidence. The readable *refrigerare* page supplies the cooling verb. The distinction between *concīdo* and *concido* was also checked in the [Corriere Latin dictionary](https://dizionari.corriere.it/dizionario_latino/Latino/C/concido_2.shtml).
 - [Prescription-abbreviation appendix, reproduced veterinary prescription rules](https://docs.dtkt.ua/doc/z1452-22): the full reproduced appendix explicitly equates **gramma** with gram and **millilitrum** with millilitre. This supplies modern technical usage, not an ancient metric sense or certain quantities for every modern stem vowel. University PDF search excerpts corroborated the forms, but direct access to those PDFs was blocked; they are not cited as inspected pages.
 
 ## Coverage of ingredients and food nouns
@@ -34,7 +34,7 @@ Search **smoothie** in the [live lexicon](https://jhwheeler.github.io/lexicon-la
 
 The recipes contain no oats. The existing oat entry was preserved because it belongs to the broader lexicon.
 
-## Equipment, preparation and other practical nouns
+## Equipment, preparation, and other practical nouns
 
 | Vocabulary | Entry or entries |
 | --- | --- |
@@ -46,7 +46,7 @@ The recipes contain no oats. The existing oat entry was preserved because it bel
 | Oven, pot, stove, steam | 126; existing steam entry 38 |
 | Refrigerator, freezer, storage container, leftovers | 127 |
 | Tools/utensils, wood, glass, iron/steel, plastic, cloth/towel, sponge, soap | 128; existing household entry 64 |
-| Table, chair, family members and body parts used in prompts | Existing 81, 54 and 69; phrases in 130–131 |
+| Table, chair, family members, and body parts used in prompts | Existing 81, 54, and 69; phrases in 130–131 |
 
 ## Actions and speaking together
 
@@ -62,7 +62,7 @@ The recipes contain no oats. The existing oat entry was preserved because it bel
 | Measure, weigh | 120 |
 | Choose, pass, prepare, start/stop the appliance, taste, share, drink, clean together | 130–131; existing eating/drinking entry 84 |
 
-Entries 130–131 give twenty short prompts in a practical order, from choosing fruit and washing hands to blending, tasting, sharing and rinsing the jug. Other entries give action-specific examples. All family sentences are newly composed; none is presented as a quotation from a classical author or modern textbook.
+Entries 130–131 give twenty short prompts in a practical order, from choosing fruit and washing hands to blending, tasting, sharing, and rinsing the jug. Other entries give action-specific examples. All family sentences are newly composed; none is presented as a quotation from a classical author or modern textbook.
 
 ## Attestation and quantity decisions
 

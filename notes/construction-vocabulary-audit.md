@@ -1,4 +1,4 @@
-# Construction, tools and house-layout vocabulary audit
+# Construction, tools, and house-layout vocabulary audit
 
 Reviewed 24 October 2026. This addition starts from current `main` at
 `3d837af4c017f4935d0155d525048076c0c20081`, including the recent programming
@@ -8,7 +8,7 @@ The change adds 17 grouped entries (142–158), extends the existing workshop
 section, and adds **Aedificātiō et materiae** and **Domūs partēs et supellex**.
 English–Bulgarian glosses are added to 13 relevant existing entries (57, 81,
 86–89, 97–103). New entries provide English and Bulgarian meanings alongside
-Latin, noun genitives and genders. Bulgarian search uses the existing search
+Latin, noun genitives, and genders. Bulgarian search uses the existing search
 implementation; no translation service or runtime dependency was added.
 
 ## Sources consulted
@@ -17,12 +17,12 @@ implementation; no translation service or runtime dependency was added.
   uploaded PDF, searched and read directly. **Printed page numbers** are used
   below; this copy's PDF page number is one higher.
   - pp. 122–125: attic, armchair, bucket, ceiling, doors, living room, roof,
-    roof tile, sofa and storey.
+    roof tile, sofa, and storey.
   - pp. 162–163: the house-building dialogue, checked alongside the vocabulary.
   - p. 165: builder, bricklayer, carpenter, hand tools, nail, plane, ruler,
     square and pliers.
   - p. 168: concrete, mortar, lime (under an overly broad English “cement”
-    gloss), plummet, trowel, plaster and plasterer.
+    gloss), plummet, trowel, plaster, and plasterer.
   - p. 278: beam (*trabs*); p. 281: wooden board (*tabula*).
   - p. 309: **fūniculus ēlectricus**, electric cord.
   - p. 375: screw; the book's screwdriver spelling in this copy was not
@@ -31,7 +31,7 @@ implementation; no translation service or runtime dependency was added.
   entries linked in the HTML were read for **trowel, spatula, crowbar, cable,
   spool/reel/bobbin, reel, screwdriver, power drill, tape measure, measuring
   stick/meter rule/tape measure, insulation, furnished attic, garret/attic room,
-  studio, cement**. Citations to Levine, Helfer and Eichenseer are reported
+  studio, cement**. Citations to Levine, Helfer, and Eichenseer are reported
   through Morgan–Owens, not presented as independent readings of those books.
 - [Older Morgan draft, text edition](https://archive.org/stream/TheLexiconAnglumEtLatinumByDavidMorgan/MorganAndSilvaFurmanUniversityLexicon_djvu.txt):
   its warning under **attic** about the uncertain sense of *subtegulaneus*
@@ -83,7 +83,7 @@ specialized shear attachment's identity and name.
 | 148 | Bucket and plumb bob/line | **Situla**, **perpendiculum**; link to the existing **scālae** entry for a ladder. |
 | 149 | Builder, craftsman, carpenter, bricklayer, plasterer, architect | Traupman and ancient lexical bases; modern trade boundaries are context-sensitive. |
 | 150 | Brick, stone, timber, board, beam | Ancient material/tool vocabulary, with Bulgarian construction meanings. *Later coctilis* has a short i (Lewis & Short *coctĭlis*; corrected 26 October 2026). |
-| 151 | Plaster, lime, sand, mortar, cement, concrete | Distinguish **calx** (вар), **lithocolla** (цимент), **concrētum** (бетон) and mortar (строителен разтвор / хоросан). Do not turn ancient *caementum* or *calx* into an unqualified modern shopping equivalent. |
+| 151 | Plaster, lime, sand, mortar, cement, concrete | Distinguish **calx** (вар), **lithocolla** (цимент), **concrētum** (бетон), and mortar (строителен разтвор / хоросан). Do not turn ancient *caementum* or *calx* into an unqualified modern shopping equivalent. |
 | 152 | Insulation and insulation board | Morgan–Owens records **insulatio**; the thermal qualifier and heat-retaining-board description are explicitly ours. Do not infer a particular EPS/XPS product solely from that functional term. |
 | 153 | Building site, foundations, building, repair, demolition | Ancient nouns/verbs; the site relative clause and examples are composed. |
 | 154 | Roof, tile, gable, two roof slopes | **Tēctum, tēgula, fastīgium**; gable-roof shape is described rather than declared a verified fixed expression. |
@@ -105,7 +105,7 @@ drill/impact driver, and the long arm/bracket stabilizes the attachment.
 
 No unverified screw-feeder entry was added on the basis of that image.
 
-## Pronunciation, grammar and translation
+## Pronunciation, grammar, and translation
 
 - Preserve existing quantity variants instead of silently replacing them with
   one conversational form. Supply inherited roots and productive endings for
@@ -131,9 +131,9 @@ Validated with a parsed HTML DOM and the actual embedded search script:
 - All 12 category counts and the hero total agree with the DOM.
 - The embedded script parses and executes; both new category filters, the
   empty state and Clear control work.
-- Seventeen English, macron-insensitive Latin and Bulgarian search queries
+- Seventeen English, macron-insensitive Latin, and Bulgarian search queries
   retrieve the expected entries, including кози крак, ролетка, макара,
-  удължител, ламарина, subtegulaneum and taenia mensuralis.
+  удължител, ламарина, subtegulaneum, and taenia mensuralis.
 - New internal entry links resolve, and git diff --check passes.
 
 Full browser rendering and mobile screenshots were not completed: the runtime

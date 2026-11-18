@@ -28,7 +28,7 @@ The records never print the editor’s name, and no note in them had one. So eac
 | 2 | “terebra alone” | Head *terebra, terebrae f.* in drill; example *Terebram affer*; the two sentences of the comment that explained the double head are gone, and a note says what Lewis & Short prints (*tĕrē̆bra*). | 3 places, 1 record |
 | 3 | “cochlea alone” | Head *cochlea, cochleae f.* in screw; the sentence of the comment about the two forms is gone, and a note replaces it. The note in snail now names the ruling. | 2 places, 1 record |
 | 4 | “icō, icere, īcī, ictum (the common-vowels ruling)” | The entries in strike and sting, each with a note. Present forms in the texts: *icere* in golf, kick (2), league (2), shot-goal, treaty (2); *icunt* in scorpion and snake; *icī*, the passive infinitive, in thunderbolt (lightning already had it); the label *iciō* for Lewis & Short’s headword in treaty (2) and lightning. | 16 places, 11 records |
-| 5 | “impār everywhere” | *impār, imparis* in odd-number, and *impār* in its evidence, comment (twice) and two examples. *dispār* (different) and *compār* (compare) were already written so, and no unmarked nominative of either was found. | 6 places, 1 record |
+| 5 | “impār everywhere” | *impār, imparis* in odd-number, and *impār* in its evidence, comment (twice), and two examples. *dispār* (different) and *compār* (compare) were already written so, and no unmarked nominative of either was found. | 6 places, 1 record |
 | 6 | “prendō, prendere, prendī, prēnsum” | The entry in capture-catch, with a note. The texts (*prendam*, *prendet*) and *prehendō (prendō)* in arrest were already short; *prēnsō*, *prēnsiō*, *dēprēnsus* keep the long vowel before *ns*. | 1 place (3 words) |
 | 7 | “promptus, in promptū, promptuārium” | See “The family of *prōmō*” below. | 26 places, 15 records |
 | 8 | “vīscus, vīscera” | *vīscus, vīsceris n.* in organ-body, with *vīscera* in its gloss and comment; *vīscera, vīscerum n. pl.* in guts-intestines; a note on each. The one text (Verg. A. 6.253) already had *vīscera*. | 4 places, 2 records |
@@ -64,7 +64,7 @@ The ruling `promptus` says which of these Jack named and which were written to m
 
 Two things follow from this, for the editor:
 
-- The participles in freezer, set-the-table and wardrobe are quotations from the readers, which still have *prōmpt-* (list below). Until the readers are corrected, `scripts/check_libelli.py` reports those three examples as not found.
+- The participles in freezer, set-the-table, and wardrobe are quotations from the readers, which still have *prōmpt-* (list below). Until the readers are corrected, `scripts/check_libelli.py` reports those three examples as not found.
 - The forms *promptus, promptī, promptōs, promptum, prompta, promptīs, promptā* now belong both to the adjective and to the verb, so the linker leaves them unlinked as ambiguous (11 words). Before, the long spelling linked most of them to the verb. This is the linker being careful, not a slip.
 
 ## The verse for *abdōmen*
@@ -77,11 +77,11 @@ Gellius 12.3 was read in J. C. Rolfe’s text (Loeb, 1927) as the Perseus Digita
 
 > Si quis autem est qui propterea putat probabilius esse quod Tiro dixit, quoniam prima syllaba in “lictore”, sicuti in “licio”, producta est et in eo verbo quod est “ligo” correpta est, nihil ad rem istud pertinet. Nam sicut a “ligando” “lictor” et a “legendo” “lector” et a “viendo” “vitor” et “tuendo” “tutor” et “struendo” “structor” productis quae corripiebantur vocalibus dicta sunt.
 
-So Gellius says outright that the first syllable of *līctor* is long while that of *ligō* is short, and that the word was made, like *lēctor*, *vītor*, *tūtor* and *strūctor*, “with vowels lengthened that were short”. He names the vowel, so this is evidence for the vowel’s length and not only for a heavy syllable. (*vītor* is Lachmann’s correction of the manuscripts’ *vivendo victor*, as Rolfe’s note says.) De Vaan prints *līctor* too, under *ligō* (p. 341); batch 3’s note that he has no article was a slip, since the word is in his index. The note in lictor and the ruling `lictor` quote the passage. The passage is also ancient testimony for *lēctor* and *strūctor*, which the ruling `lachmann` could cite beside Gell. 9.6.3; I did not add it there.
+So Gellius says outright that the first syllable of *līctor* is long while that of *ligō* is short, and that the word was made, like *lēctor*, *vītor*, *tūtor*, and *strūctor*, “with vowels lengthened that were short”. He names the vowel, so this is evidence for the vowel’s length and not only for a heavy syllable. (*vītor* is Lachmann’s correction of the manuscripts’ *vivendo victor*, as Rolfe’s note says.) De Vaan prints *līctor* too, under *ligō* (p. 341); batch 3’s note that he has no article was a slip, since the word is in his index. The note in lictor and the ruling `lictor` quote the passage. The passage is also ancient testimony for *lēctor* and *strūctor*, which the ruling `lachmann` could cite beside Gell. 9.6.3; I did not add it there.
 
 ## The record for *mūcrō*
 
-New record `point-of-a-sword`: “point”, sense “the sharp end of a sword or blade”, a noun, in the category of the weapons (`res-publica`, where sword, dagger and spear are). It is a record of its own and not a term in `tip-end`, whose words (*apex*, *cacūmen*) are tops.
+New record `point-of-a-sword`: “point”, sense “the sharp end of a sword or blade”, a noun, in the category of the weapons (`res-publica`, where sword, dagger, and spear are). It is a record of its own and not a term in `tip-end`, whose words (*apex*, *cacūmen*) are tops.
 
 - Term: *mūcrō, mūcrōnis m.*, classical; the gloss is Lewis & Short’s (“a sharp point or edge; esp., the point of a sword”; by transfer, a sword).
 - Evidence, from Lewis & Short’s article: Cic. Phil. 14.6, Verg. A. 2.333, and its *mucro falcis* (Col. 4.25.1). The first two are bare references because the dictionary adapts the words.
@@ -104,7 +104,7 @@ Nothing was added to `data/families.json`, and it named none of the changed word
 
 ## Reader texts that now disagree
 
-Searched: `src/fabula-*.txt` and `src/coquina-theodori.txt` in the Latinitas checkout, for every old spelling. No *caffēa*, *in prōmptū*, *terēbra*, *cōchlea*, *impar*, *prēndō*, *compēscō*, *abdomen*, *pējerō*, *āera*, unmarked *lictor* or *mucrō*, and no present form of *īcō*, was found. What was found:
+Searched: `src/fabula-*.txt` and `src/coquina-theodori.txt` in the Latinitas checkout, for every old spelling. No *caffēa*, *in prōmptū*, *terēbra*, *cōchlea*, *impar*, *prēndō*, *compēscō*, *abdomen*, *pējerō*, *āera*, unmarked *lictor*, or *mucrō*, and no present form of *īcō*, was found. What was found:
 
 | File | Line | Has | By the rulings |
 | --- | ---: | --- | --- |
@@ -120,7 +120,7 @@ Searched: `src/fabula-*.txt` and `src/coquina-theodori.txt` in the Latinitas che
 | `fabula-07-osoitsa.txt` | 20 | prōmptōs | promptōs |
 | `coquina-theodori.txt` | 407 | viscera | vīscera |
 
-All ten *prōmpt-* are participles of *prōmō*, so they depend on the extension of the ruling to the participle. Lines 96, 176 and 242 are the three quoted in the lexicon (wardrobe, freezer, set-the-table). Outside the readers, the loci collection still has *Dēterge faciem sūdāriolō* (`loci-corderius.md`, line 278).
+All ten *prōmpt-* are participles of *prōmō*, so they depend on the extension of the ruling to the participle. Lines 96, 176, and 242 are the three quoted in the lexicon (wardrobe, freezer, set-the-table). Outside the readers, the loci collection still has *Dēterge faciem sūdāriolō* (`loci-corderius.md`, line 278).
 
 ## For the editor
 

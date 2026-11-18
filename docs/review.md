@@ -2,7 +2,7 @@
 
 Every record of the lexicon is a draft until the editor has read it and found it right. Agents draft records by the hundred; nothing is reviewed until Jack says so. This is how a record gets from draft to reviewed (Jack, 15 November 2026: "a review process... not just a to-do item, a process", with "a way to give that verdict from the phone in one tap").
 
-Only the editor reviews, and he does not review on the site (Jack, 15 November 2026). He reads the drafts and marks them right in a private page of his own, built by `scripts/editor_review.py`; see "The editor's page" below. The public site offers a reader one thing, the flag, and never prints the reviewer's name. The first version, on the morning of 15 November 2026, had the editor's controls on the site (a "looks right" control, a reviewer's switch and a queue of drafts on `review.html`); they were taken out the same day.
+Only the editor reviews, and he does not review on the site (Jack, 15 November 2026). He reads the drafts and marks them right in a private page of his own, built by `scripts/editor_review.py`; see "The editor's page" below. The public site offers a reader one thing, the flag, and never prints the reviewer's name. The first version, on the morning of 15 November 2026, had the editor's controls on the site (a "looks right" control, a reviewer's switch, and a queue of drafts on `review.html`); they were taken out the same day.
 
 The site is static and has no server. A reader's flags are kept on the reader's device, gathered into one report, and sent; the editor's verdicts come from his page as a report in the same format. An agent applies either to the repository.
 
@@ -10,7 +10,7 @@ The site is static and has no server. A reader's flags are kept on the reader's 
 
 1. **Agents draft and pre-check.** A record goes in as a draft (`"review": {"status": "draft", …}`) and must pass the builder's checks, `scripts/check_quantities.py` (vowel lengths against Lewis & Short), `scripts/consonantal_j.py --check` and, for its answer, `scripts/answer_kinds.py`. Quotations are checked against their texts and citations against the place they name (see `docs/drafting.md` and `docs/records.md`). None of this makes a record reviewed.
 2. **The editor gives the verdict** in his private page: looks right, or a flag with a few words if he likes. The page saves each verdict in its own database, where an agent reads them.
-3. **A reader flags what looks wrong**, on the entry's page or on the back of a practice card: *Notā* (Flag), with a reason and a few words if he likes. `review.html` gathers the flags not yet sent into a report: Share, Copy or a GitHub issue.
+3. **A reader flags what looks wrong**, on the entry's page or on the back of a practice card: *Notā* (Flag), with a reason and a few words if he likes. `review.html` gathers the flags not yet sent into a report: Share, Copy, or a GitHub issue.
 4. **An agent applies a report**, the editor's or a reader's, with `python3 scripts/apply_review.py <file or ->`, rebuilds the site, and commits. Records marked right become reviewed. Flags are written to `notes/review-flags.md`.
 5. **An agent acts on each flag**: reads the entry against its sources, corrects it or answers why it stands, and deletes the flag's line. A corrected record has a new revision, so it is a draft to be read again.
 
@@ -23,7 +23,7 @@ A record is right when:
 - **The Latin answers the headword**: it means what the English says, and it is the kind of word the headword is (a noun for a noun), or the gloss says why not.
 - **The quantities are right**: every long vowel marked, none marked that is short, consonantal i written j.
 - **The status and the period are right**: the recommended word is the one to say; a word marked classical is in a classical author in that sense.
-- **Each citation is where it says**: the author, work and place hold the word, in that sense.
+- **Each citation is where it says**: the author, work, and place hold the word, in that sense.
 - **The example contains the word and means what its English says.**
 - **Nothing of ours stands where an attested word exists** (see "Coinages only where needed" in `docs/records.md`).
 
@@ -35,7 +35,7 @@ It does not promise that the entry is beyond improvement, that every quotation w
 
 ## The revision
 
-`record_revision` in `scripts/build.py` is a short hash (eight hexadecimal digits) of the record's JSON without its `review` field, with the keys sorted. Marking a record reviewed does not change it; changing a term, an example, a note or a source does. The builder puts it on the entry's page (`data-rev` on the article, with `data-status`) and in the practice cards (`h`; `d` is 1 for a reviewed record), and `apply_review.py` computes it from the record's file. A verdict carries the revision it was given on.
+`record_revision` in `scripts/build.py` is a short hash (eight hexadecimal digits) of the record's JSON without its `review` field, with the keys sorted. Marking a record reviewed does not change it; changing a term, an example, a note, or a source does. The builder puts it on the entry's page (`data-rev` on the article, with `data-status`) and in the practice cards (`h`; `d` is 1 for a reviewed record), and `apply_review.py` computes it from the record's file. A verdict carries the revision it was given on.
 
 ## The editor's page
 
@@ -63,7 +63,7 @@ To apply his verdicts (when he asks, or before the records he has read are chang
 3. Commit the records and `notes/review-flags.md`; the site is built when it is published.
 4. Build and publish the page again, then delete from the database the documents that were applied (an entry marked right is now reviewed in the page's own data; a flag is now in `notes/review-flags.md`). Not before: until the page is published again, those documents are what tells it the entries are done.
 
-The Latin of the page is the wording of the site's flag where that has a word; the rest is Claude's, listed in a comment at the top of `src/editor/review.js`. The editor approved part of it on 16 November 2026 (*Retrō*, *Tolle*, *Quaere verbum*, *Rērum genera*, *In lexicō aperī*, *Jūdicia servantur*, *Nōndum servātum*, *Iterum temptā*); what he was not asked about (*In lexicō probātum est*, "restant", *Jūdicia legī nōn potuērunt* and the rest the comment names) still awaits his review, and so do the strings of 16 November 2026 for the queue: the eleven reasons in the tables below, *Ōrdō*, *Nostra*, *Recentia et disputāta*, *Exempla nostra*, *Cētera* and "N ex M restant". The page is tested in `tests/editor.browser.test.mjs` (with a stand-in for the database) and its data in `tests/test_editor_review.py`. It was first published on 15 November 2026 and had not then been tried by the editor on his phone.
+The Latin of the page is the wording of the site's flag where that has a word; the rest is Claude's, listed in a comment at the top of `src/editor/review.js`. The editor approved part of it on 16 November 2026 (*Retrō*, *Tolle*, *Quaere verbum*, *Rērum genera*, *In lexicō aperī*, *Jūdicia servantur*, *Nōndum servātum*, *Iterum temptā*); what he was not asked about (*In lexicō probātum est*, "restant", *Jūdicia legī nōn potuērunt*, and the rest the comment names) still awaits his review, and so do the strings of 16 November 2026 for the queue: the eleven reasons in the tables below, *Ōrdō*, *Nostra*, *Recentia et disputāta*, *Exempla nostra*, *Cētera*, and "N ex M restant". The page is tested in `tests/editor.browser.test.mjs` (with a stand-in for the database) and its data in `tests/test_editor_review.py`. It was first published on 15 November 2026 and had not then been tried by the editor on his phone.
 
 ### How the queue is ordered
 
@@ -94,7 +94,7 @@ Risk decides the order, and use only orders the entries inside a band. The first
 | `mine` | *in libellīs* | the record is on the editor's own list | 25 |
 | `daily` | *vītae cotīdiānae* | the record's category is one of the eight nearest the person, the first eight of `filters` in `data/catalog.json` (conversation, common words, time, body, clothes, household, the house, the kitchen) | 5 |
 
-The first eight measure risk, the last three use. The signals, the bands and the numbers are the coordinating session's choice (16 November 2026), for the editor to judge; they are named constants at the top of `scripts/editor_review.py`, and changing one and building the page again is all it takes. A frequency rank is found with the functions of `scripts/latin_coverage.py`, which match a lemma of the list to the lexicon's terms for the coverage report; the queue has no matcher of its own.
+The first eight measure risk, the last three use. The signals, the bands, and the numbers are the coordinating session's choice (16 November 2026), for the editor to judge; they are named constants at the top of `scripts/editor_review.py`, and changing one and building the page again is all it takes. A frequency rank is found with the functions of `scripts/latin_coverage.py`, which match a lemma of the list to the lexicon's terms for the coverage report; the queue has no matcher of its own.
 
 **A note is not a reason by itself.** The first version of the bands put every record with a note on a form into the highest, and the editor met *jentāculum* there (Jack, 16 November 2026: "why am i checking breakfast? jentaculum is quite attested. or is it just because of the vowel length?"). Most notes fill in a vowel that Lewis & Short leaves unmarked by a house rule, correct a modern dictionary by Lewis & Short, or follow a ruling he has made. None of those is counted. What is counted is a departure from what Lewis & Short marks that he has not ruled on (`quantity`, band 2) and a ruling that still awaits him (`provisional`, band 3).
 
@@ -104,7 +104,7 @@ What the lowest band does not promise: its entries are the least likely to be wr
 
 ## On the site: the flag
 
-The site offers a reader the flag and nothing else of the review. Everything is in `src/review.js` (built to `assets/review.js`), which runs on every entry's page, on `practice.html` and on `review.html`.
+The site offers a reader the flag and nothing else of the review. Everything is in `src/review.js` (built to `assets/review.js`), which runs on every entry's page, on `practice.html`, and on `review.html`.
 
 - **An entry's page** ends with *Notā* (Flag): one tap opens a small box with six reasons to tap (wrong word, vowel length, meaning, example, source, other) and a line to write, both optional; Save. A flag can be changed or withdrawn (tap the flag again). The entry says what was flagged and when, or, if its text has changed since, that it has changed since it was flagged. Without scripts the old link "Suggest a correction or a better word" stands there instead; with them it is inside the flag's box, filled in, for a reader who would rather open a GitHub issue.
 - **The back of a practice card** has the flag as a small button beside the link to the entry. Its box comes up over the round as a sheet; the round and its step back are untouched.
@@ -150,7 +150,7 @@ The script finds the JSON in whatever text surrounds it and for each verdict:
 
 - **`ok`**, the record's revision being the verdict's: `review` becomes `{"status": "reviewed", "date": <the verdict's date>, "by": "Jack"}` (`--by` names another reviewer).
 - **`ok`**, the record having changed since: not applied, and listed as changed since it was read.
-- **`flag`**: a line is added to `notes/review-flags.md`, newest first, with the record, its link, the revision, the reasons and the note. A reviewed record that is flagged becomes a draft again. A flag already written (the same record and time) is not written twice.
+- **`flag`**: a line is added to `notes/review-flags.md`, newest first, with the record, its link, the revision, the reasons, and the note. A reviewed record that is flagged becomes a draft again. A flag already written (the same record and time) is not written twice.
 - A record the lexicon does not have is listed.
 
 It prints a summary and exits non-zero on a malformed report, having changed nothing. Commit the changed records and `notes/review-flags.md` together; the site is built when it is published.

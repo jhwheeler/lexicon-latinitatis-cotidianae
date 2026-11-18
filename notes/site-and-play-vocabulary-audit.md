@@ -20,7 +20,7 @@ previous cards and their IDs remain. The total becomes 175.
 | Pipe | 161 | **fistula**, especially **fistula aquāria**; **tubulus** |
 | Plank | 150 extended | Existing **tabula** retained; turning-over example and cross-link added |
 | Gravel | 162 | **glārea**, not the medical sense of *calculus* |
-| Blanket | 57 extended | Existing **lōdīx**; direct Morgan–Owens, Traupman and Vicipaedia support added |
+| Blanket | 57 extended | Existing **lōdīx**; direct Morgan–Owens, Traupman, and Vicipaedia support added |
 | Move, noun | 163 | **mōtus**; game sense **mōtus / tractus** recorded by Morgan–Owens |
 | Flip, verb | 164 | **invertō, invertere** for turning over; **cernuō, cernuāre** for somersaulting |
 | Flip, noun | 164 | **saltus cernuus**; singular inflected from Morgan–Owens's listed plural |
@@ -41,7 +41,7 @@ previous cards and their IDs remain. The total becomes 175.
 | Quest | 170 | **expedītiō** as our playtime extension; **investīgātiō** for searching; respect existing **ausum** adventure choice |
 | Crush | 168; 124 cross-linked | **contundō** pounding, **conterō** grinding/crushing into small pieces |
 
-The eight affected old cards are 24, 57, 91, 117, 124, 125, 144 and 150.
+The eight affected old cards are 24, 57, 91, 117, 124, 125, 144, and 150.
 The new content follows the existing responsive cards and expandable source
 blocks; no wide vocabulary table is added to the site.
 
@@ -84,7 +84,7 @@ Direct headwords checked:
 - [Hat: cap](https://neolatinlexicon.org/latin/hat__cap/): **pilleus**, among alternatives.
 - [Collision (auto)](https://neolatinlexicon.org/latin/collision_auto/): **collisio** citing CL; **collisus** citing LRL.
 
-### Ancient dictionaries, Vatican and Vicipaedia
+### Ancient dictionaries, Vatican, and Vicipaedia
 
 Lewis & Short supplies the relevant ancient meanings and forms. Direct entries
 linked in the cards cover *uncus, hamus, affigo, libro, oscillo, impello,
@@ -96,7 +96,7 @@ contero, collido, fragor, munus, mandatum, expeditio*, and others.
 - **oscillāre**: dictionary cites Festus for swinging oneself. The ancient verb is not relabelled a modern invention.
 - **contundere**: perfect quantity varies in the cited evidence; **contudī** deliberately has no added root-vowel macron. The supine **contūsum** follows the marked dictionary form.
 - **pilleus** follows Traupman's spelling; the alternative **pīleus** is distinguished rather than combining its vowel quantity with the double-l spelling.
-- **virga ferrea**, the hook-verb phrases, the swing-pushing prompt and all family examples are our compositions from recorded words. They are not separately attested technical headwords.
+- **virga ferrea**, the hook-verb phrases, the swing-pushing prompt, and all family examples are our compositions from recorded words. They are not separately attested technical headwords.
 - The Vatican's public [*Parvum verborum novatorum lexicon*](https://www.vatican.va/roman_curia/institutions_connected/latinitas/documents/rc_latinitas_20040601_lexicon_it.html) was checked in the lookup; it furnished no better match for these physical senses. Its online selection is not the complete *Lexicon recentis Latinitatis*. The **collīsus** LRL attribution above is specifically Morgan–Owens's citation, not a claim to have inspected the full Vatican volume.
 - [Vicipaedia: Lodix](https://la.wikipedia.org/wiki/Lodix) supports contemporary blanket usage and supplies ancient dictionary references. It is corroboration, not the sole authority for quantities.
 - Quest/mission choices are explicitly contextual: ancient *expeditio* is primarily a campaign/expedition; a playful quest is our application. *Investigatio* names searching, while *munus* and *mandatum* name an assigned duty or commission. Card 96's established *ausum* preference for adventure remains.
@@ -131,7 +131,7 @@ connections and assembly/dismantling vocabulary. English–Latin only.
 - **Fistula ferrea**, **fistula ad perpendiculum posita**: our descriptions of a scaffold tube and upright. Ancient **ad perpendiculum** supplies the vertical relation.
 - **Ferrum trānsversum**: recorded [gymnastics horizontal bar](https://neolatinlexicon.org/latin/horizontal_bar/), applied here to the scaffold crossbar; **fistula trānsversa** specifies a hollow tube. No exact ledger/transom distinction is claimed.
 - **Fulcīmentum**: ancient post-classical support/stay; **fulcīmentum oblīquum** is our diagonal-brace description.
-- **Tabulātum**, **tabula**, **scālae**, **gradus**: ancient platform/floor, board, ladder and step vocabulary applied in the scaffold context. Existing cards retain their original senses.
+- **Tabulātum**, **tabula**, **scālae**, **gradus**: ancient platform/floor, board, ladder, and step vocabulary applied in the scaffold context. Existing cards retain their original senses.
 - **Repāgula**: ancient bars/barriers, especially door bars; guardrail is an explicitly marked functional extension. **Lāmina sub fistulā posita** is our base-plate description.
 - **Iūnctūra**: ancient joint/connection; **vinculum quō duae fistulae coniunguntur** is our functional coupler description. It is not an attested specialized hardware name.
 - **Cōnstruere, ērigere, coniungere, firmāre, fulcīre, dissolvere**: ancient verbs used in composed scaffold sentences. **Dissolvere** has ancient bridge-dismantling use.

@@ -254,7 +254,7 @@ def manifest():
              for size in (192, 512) for purpose in ('any', 'maskable')]
     return json.dumps({'name': APP_NAME, 'short_name': APP_SHORT_NAME, 'id': 'index.html', 'start_url': 'index.html', 'scope': './',
                        'display': 'standalone', 'background_color': '#ffffff', 'theme_color': '#ffffff', 'lang': 'en',
-                       'description': 'Everyday English–Latin vocabulary, with macrons, examples and sources.',
+                       'description': 'Everyday English–Latin vocabulary, with macrons, examples, and sources.',
                        'icons': icons}, ensure_ascii=False, indent=2) + '\n'
 
 

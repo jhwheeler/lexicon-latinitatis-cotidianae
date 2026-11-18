@@ -2,11 +2,11 @@
 
 Phase 2 fills the gaps in the core word lists (`notes/coverage/`) with new concept records. Unlike a conversion, which only moves Latin that was already checked, a new record makes new choices: which Latin to recommend, how its vowels are measured, where it is attested. So each record carries its evidence, and it goes in as a draft for Jack to review on the site.
 
-Read first: `AGENTS.md`, `records.md`, `how-we-decide.html` (the editorial rules, as the site states them), and these records as models: `data/concepts/underpants.json`, `perhaps.json`, `heel.json`, `cooking-pot.json`. The house standards for Latin are in the latinitas repository's `AGENTS.md`, sections 2 (orthography), 4 (idiom) and 5 (lexical rules): read them before writing a record.
+Read first: `AGENTS.md`, `records.md`, `how-we-decide.html` (the editorial rules, as the site states them), and these records as models: `data/concepts/underpants.json`, `perhaps.json`, `heel.json`, `cooking-pot.json`. The house standards for Latin are in the latinitas repository's `AGENTS.md`, sections 2 (orthography), 4 (idiom), and 5 (lexical rules): read them before writing a record.
 
 ## The tools
 
-- `python3 scripts/lookup.py en <english word>`: Morgan–Owens, Traupman and Lewis & Short glosses for an English word. Try synonyms: Morgan–Owens has *undershorts*, not *underpants*.
+- `python3 scripts/lookup.py en <english word>`: Morgan–Owens, Traupman, and Lewis & Short glosses for an English word. Try synonyms: Morgan–Owens has *undershorts*, not *underpants*.
 - `python3 scripts/lookup.py ls <latin headword>`: the Lewis & Short entry, with its quantities and citations.
 - `python3 scripts/lookup.py it <italian word>`: Levi & Bini (1937), for classical periphrases of modern things.
 - `python3 scripts/lookup.py devaan <word>`: de Vaan's etymological dictionary, where a vowel's length is in doubt.
@@ -26,7 +26,7 @@ The sweep of the authors (README, "To do") starts from Latin: `notes/coverage/la
 - For the words of one field (the outdoors, the kitchen), list what each relevant work lacks (`python3 scripts/latin_frequency.py --work georgica --missing`), keep the lemmas whose Lewis & Short article shows them to belong, and add a checklist of the English words a person would want; `notes/coverage/outdoors.md` is the model. A plant or animal name is entered with Lewis & Short's identification, called an identification, and with a plain sentence where it is uncertain; a common thing with no ancient name gets one honest answer (the reference works' word, or the botanical or zoological name marked `modern`), and rare species are left out.
 - A verse example is read in a text, not taken from a dictionary's paraphrase: Lewis & Short quotes Horace's *nātūram expellēs furcā* as *expellas*. Where an old edition numbers lines differently (the first Eclogue after line 17), cite the modern number.
 
-Lewis & Short's citations of Plautus and Terence count by act, scene and line (`Ter. Heaut. 4.3.41`); the records otherwise cite them by the line of the play. Where only Lewis & Short's number is to hand, give it with the mark "(Lewis & Short)" and prefer a citation from prose.
+Lewis & Short's citations of Plautus and Terence count by act, scene, and line (`Ter. Heaut. 4.3.41`); the records otherwise cite them by the line of the play. Where only Lewis & Short's number is to hand, give it with the mark "(Lewis & Short)" and prefer a citation from prose.
 
 ## Choosing the Latin
 
@@ -51,7 +51,7 @@ Traupman is cited as `Traupman 103` (the printed page) in a term's evidence and 
 
 ### Saying that something is not attested
 
-Say what the search found, not what the language lacks: "we have found no classical instance", "not found in Lewis & Short or the loci collections". Write "unattested", "does not occur" or "is not classical" only when a reliable authority says so in terms (Lewis & Short, de Vaan, Allen & Greenough), and name it: "the nominative does not occur (Lewis & Short)". Our not finding a phrase is a fact about our search.
+Say what the search found, not what the language lacks: "we have found no classical instance", "not found in Lewis & Short or the loci collections". Write "unattested", "does not occur", or "is not classical" only when a reliable authority says so in terms (Lewis & Short, de Vaan, Allen & Greenough), and name it: "the nominative does not occur (Lewis & Short)". Our not finding a phrase is a fact about our search.
 
 ## Spelling the Latin
 
@@ -62,19 +62,19 @@ Say what the search found, not what the language lacks: "we have found no classi
 
 ## Function words and interjections
 
-The lexicon has them too (Jack, 9 November 2026): pronouns, pointing and question words, quantifiers, conjunctions, prepositions, auxiliaries, interjections. An English function word rarely answers to one Latin word: *of* is a case, *would* a mood, *the* nothing at all. So the terms of such a record are the Latin means of saying it, each with its condition of use in the grammar line and the comment (the case, the mood, its place in the clause); where the means is a construction, the term names it or gives the pattern (`secundum + acc.`), as `seem.json`, `however.json` and `due-to.json` do. The examples carry the weight: four to eight short ones, most of them real, one for each use the record names. Keep the comments short: this is a lexicon, not a grammar. An interjection record is headed by what a person would say in English (*phew!*), with who says the Latin word and in what feeling, from Lewis & Short, and a register label.
+The lexicon has them too (Jack, 9 November 2026): pronouns, pointing and question words, quantifiers, conjunctions, prepositions, auxiliaries, interjections. An English function word rarely answers to one Latin word: *of* is a case, *would* a mood, *the* nothing at all. So the terms of such a record are the Latin means of saying it, each with its condition of use in the grammar line and the comment (the case, the mood, its place in the clause); where the means is a construction, the term names it or gives the pattern (`secundum + acc.`), as `seem.json`, `however.json`, and `due-to.json` do. The examples carry the weight: four to eight short ones, most of them real, one for each use the record names. Keep the comments short: this is a lexicon, not a grammar. An interjection record is headed by what a person would say in English (*phew!*), with who says the Latin word and in what feeling, from Lewis & Short, and a register label.
 
 ## Examples
 
-- An example's Latin and English, and a term's `gloss` and `grammar`, are plain text: write `with tēlephōnō`, not `with <span lang="la">tēlephōnō</span>`. Markup belongs in `comment`, `register`, `evidence`, notes and sources.
+- An example's Latin and English, and a term's `gloss` and `grammar`, are plain text: write `with tēlephōnō`, not `with <span lang="la">tēlephōnō</span>`. Markup belongs in `comment`, `register`, `evidence`, notes, and sources.
 
 - Prefer a quotation from the loci collections or from Lewis & Short's citations: quote it exactly, in the house orthography, with the citation as the source (`Cic. Off. 1.129`). Only in the sense it has in its source.
 - A composed example (`"source": "composed"`) must be short and plain, everyday speech (a parent to a child, a host to a guest), and pass latinitas `AGENTS.md` §4: back-translate it word for word, and if the English is already natural English, ask what Cicero or Terence would say instead. No more than two composed examples per record; none is better than a doubtful one.
-- No personal names except in examples. Names of characters and of the family's own places stay out too: Jack dropped the Totoro, Osoitsa and Antanhol records (9 November 2026). A section of whimsical words for children's stories may come later, as may the batches of specialised jargon; until then, leave such words out.
+- No personal names except in examples. Names of characters and of the family's own places stay out too: Jack dropped the Totoro, Osoitsa, and Antanhol records (9 November 2026). A section of whimsical words for children's stories may come later, as may the batches of specialised jargon; until then, leave such words out.
 
 ## The record
 
-No names or dates in an entry's text (Jack, 11 November 2026): a comment or note says what the word is and why, not who decided it or when. "Our formation", "a house ruling" and the like are enough; the history is in the repository and in `data/rulings.json`, whose page shows each ruling's date but not its author.
+No names or dates in an entry's text (Jack, 11 November 2026): a comment or note says what the word is and why, not who decided it or when. "Our formation", "a house ruling", and the like are enough; the history is in the repository and in `data/rulings.json`, whose page shows each ruling's date but not its author.
 
 As in `records.md`, written directly as `data/concepts/<id>.json`, with `"review": {"status": "draft", "date": "<today>", "by": "Claude"}`. One record per English sense; look for an existing record first (`grep -l '"english": "towel"' data/concepts/*.json`), and add to it rather than duplicating. `sources`: a Lewis & Short link for every Latin word you recommend or list (`<a href="https://logeion.uchicago.edu/subligaculum" rel="noopener noreferrer" target="_blank">Lewis &amp; Short: subligaculum</a>`), and a line for each other work you used, with pages. Citations only: do not add the sentences that are true of every entry (that the examples marked “composed” are ours, that quotations marked “Lewis & Short” are given as it cites them, which text a quotation was checked against); they are said once, in “How to read the sources” on How we decide, and the builder refuses them in a record (see "Sources are citations" in [records.md](records.md); `python3 scripts/standing_notes.py --write` takes them out). Nor a line that says a passage is given "as Lewis & Short quotes it": put the mark `(Lewis &amp; Short)` at the end of that example's `source` or of that line of the term's `evidence`. Nor a link to a note or document of ours (`notes/`, `docs/`, the latinitas repository): cite the published source the note names, after reading it (Jack, 16 November 2026). The builder refuses both.
 

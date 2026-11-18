@@ -290,7 +290,7 @@ class BuildTests(unittest.TestCase):
                          'ROUND_DUE_MORE = [[72, 10], [36, 8]];'):
             self.assertIn(constant, script)
         for said in ('A round is 12 cards', 'at most half of a round', 'due again in 10 minutes', 'due the next day',
-                     'in 3–4 days, 6–8, 14–18 and 30–40, then in 70–90, 150–210 and 300–420', 'more than 36 waiting, 8 of the 12', 'more than 72, 10',
+                     'in 3–4 days, 6–8, 14–18, and 30–40, then in 70–90, 150–210, and 300–420', 'more than 36 waiting, 8 of the 12', 'more than 72, 10',
                      'starting at 04:00'):
             self.assertIn(said, main)
         # In the sitemap, kept on the device by the service worker, and in the footer of every page.
@@ -543,6 +543,8 @@ class BuildTests(unittest.TestCase):
     def test_lists_mark_words_and_phrases(self):
         record = self.record('perhaps')
         record['pos'] = 'phrase'
+        # A reviewed entry carries a class in the lists; the test's own copy is a draft, whatever the editor has read.
+        record['review'] = {'status': 'draft', 'date': '2026-11-09', 'by': 'Claude'}
         self.save_record(record)
         outputs = builder.build_site(self.root)
         for path, link in (('k/sermo.html', '../c/perhaps.html'), ('words.html', 'c/perhaps.html')):
@@ -614,7 +616,7 @@ class BuildTests(unittest.TestCase):
         docs = (ROOT / 'docs/records.md').read_text(encoding='utf-8')
         fuller = docs[docs.index('#### How the sources were read'):docs.index('### How a page shows a record')]
         for kept in ('Leo (1896)', 'Parry (1857)', 'Purser', 'Mayhoff (Teubner, 1906)', 'Clementine Vulgate', 'Hetzenauer',
-                     'on 9, 11 and 12 November 2026', "From N onwards that numbering differs from Meyer's", '"Levi–Bini p. 23"',
+                     'on 9, 11, and 12 November 2026', "From N onwards that numbering differs from Meyer's", '"Levi–Bini p. 23"',
                      '"Andresian p. 24"', 'digitisation at columbia.edu', 'scan at archive.org', 'saved on 4 November 2026',
                      'post-classical unless Lewis & Short has them', 'supports the word it names'):
             with self.subTest(kept=kept):
@@ -637,6 +639,8 @@ class BuildTests(unittest.TestCase):
         # An entry without sources has no "Sources" and no way to the section; its other lines stand.
         record = self.record('perhaps')
         record['sources'] = []
+        # The test's own copy is a draft, whatever the editor has read.
+        record['review'] = {'status': 'draft', 'date': '2026-11-09', 'by': 'Claude'}
         self.save_record(record)
         page = builder.build_site(self.root)['c/perhaps.html']
         self.assertNotIn('how-sources', page)

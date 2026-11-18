@@ -49,10 +49,10 @@ Lewis & Short uses older numbers, the card says so.
 | 143 | **norma, normae f.** without a macron (see Decisions). Adds Pliny, NH 7.198, and the sentence *Normam et lībellam Theodōrus invēnit.* | Lewis & Short *norma*; text verified |
 | 149 | Adds **redēmptor** (Hor. Ep. 2.2.72), **conductor** (Cato, Agr. 14; Cic. Q. fr. 3.1.5), **māchinārius**, one who works on a scaffold (Digest 9.2.31), and **calcārius** (Cato, Agr. 16). Adds Digest 13.6.5.7 for *tēctor*. | Lewis & Short; texts verified |
 | 150 | **later coctilis**: short i. | Lewis & Short *coctĭlis* |
-| 151 | **harēnātum** has classical support: Cato, Agr. 18.7; Vitruvius 7.3.5; Pliny, NH 36.176. Adds **māteria** (the mortar mix, Vitruvius 2.5.1; 2.8.2), **caementa**, **rūdus** and **statūmen** (Vitruvius 7.1.1). | Lewis & Short; texts verified |
+| 151 | **harēnātum** has classical support: Cato, Agr. 18.7; Vitruvius 7.3.5; Pliny, NH 36.176. Adds **māteria** (the mortar mix, Vitruvius 2.5.1; 2.8.2), **caementa**, **rūdus**, and **statūmen** (Vitruvius 7.1.1). | Lewis & Short; texts verified |
 | 152 | Adds **tabula spūmea** (working formation; see Decisions) with a Latin gloss, and the functional **mūnīmentum adversus frīgus / parietēs adversus frīgus mūnīre**. Classical anchor: Columella 9.7.4. Adds the tag "Working formation". | Lewis & Short *spūmeus*, *mūnīmentum*; text verified |
 | 153 | Adds **opus, operis n.** for the works (Cic. Q. fr. 3.1.2 *opus Diphilī*; Cato, Agr. 14). Adds Pliny, Ep. 9.39.1 *in melius et in maius* to *Domum reficimus*. | Texts verified |
-| 154 | **fastīgium** also means slope or gradient (Caes. BC 1.45.5). Adds **clīvus**, **dēclīvis** and **acclīvis** (Cic. Q. fr. 3.1.4). The eyebrow adds "slope". | Lewis & Short; texts verified |
+| 154 | **fastīgium** also means slope or gradient (Caes. BC 1.45.5). Adds **clīvus**, **dēclīvis**, and **acclīvis** (Cic. Q. fr. 3.1.4). The eyebrow adds "slope". | Lewis & Short; texts verified |
 | 155 | **subtēgulāneum** "attic" is relabelled a modern application. Pliny's sense is not uncertain: NH 36.185 *pavīmenta … barbarica atque subtēgulānea*, "under the roof, indoors". The tag "Attestation caveat" becomes "Modern application". Notes that Lewis & Short prints *sub-tĕgŭlānĕus* against its own *tēgula*; the ē is kept. | Lewis & Short *subtegulaneus*; text verified |
 | 156 | *Parietēs extulimus* becomes **Parietēs altius exstrūximus et novum tēctum imposuimus.** *extollō* has no classical perfect; *extulī* belongs to *efferō*. Adds **exstruō**. | Lewis & Short *extollō*, *efferō*, *exstruō* |
 | 158 | **sessōrium** is tagged "Modern application (Traupman)". The ancient senses are "seat, stool" and, late, "dwelling". | Lewis & Short *sessōrium* |
@@ -61,8 +61,8 @@ Lewis & Short uses older numbers, the card says so.
 | 161 | Adds Vitruvius 8.6.1 *fistulīs plumbeīs seu tubulīs fictilibus* and Varro, LL 5.123. | Texts verified |
 | 162 | Adds building loci for **glārea**: Cato, Agr. 18.7; Vitruvius 2.4.2; Cic. Q. fr. 3.1.4. | Texts verified |
 | 165 | Adds Varro, LL 5.143 on *fossa* and *mūrus*. | Text verified |
-| 167 | Adds **cumulus** (Verg. G. 1.105; Ov. Met. 14.137) as the word for a child's heap, **congestus, congestūs m.** (Sen. Const. 12.2) and **coacervāre**. Gives *tumulus* its poetic funerary weight (Verg. Ecl. 5.42). Notes that physical *cumulāre* is "mostly post-Aug.". | Lewis & Short; texts verified |
-| 168 | Adds tamping verbs: **fistūcāre** (Cato, Agr. 18.7; Vitruvius 7.1.1), **pīnsere**, **calcāre** (Pliny, NH 36.173) and **īnfercīre** (Pliny, NH 35.169). | Lewis & Short; texts verified |
+| 167 | Adds **cumulus** (Verg. G. 1.105; Ov. Met. 14.137) as the word for a child's heap, **congestus, congestūs m.** (Sen. Const. 12.2), and **coacervāre**. Gives *tumulus* its poetic funerary weight (Verg. Ecl. 5.42). Notes that physical *cumulāre* is "mostly post-Aug.". | Lewis & Short; texts verified |
+| 168 | Adds tamping verbs: **fistūcāre** (Cato, Agr. 18.7; Vitruvius 7.1.1), **pīnsere**, **calcāre** (Pliny, NH 36.173), and **īnfercīre** (Pliny, NH 35.169). | Lewis & Short; texts verified |
 | 170 | Adds **opus** for a self-set task: *Opus perfēcistī!* *mūnus* remains for an assigned mission. | Lewis & Short *mūnus*, *opus* |
 | 172 | **māchina** is the sole headword. Primary loci: Digest 13.6.5.7, quoted (*tēctor*, *dē plānō*, *ligāta*, *fūnēs*, *perticae*); Vitruvius 7.2.2; 10.1.1. Pliny, NH 19.30 is identified as building machinery (hoists), not scaffolding. *compāgēs* is demoted to modern lexicographic (Morgan–Owens). Adds *Dē plānō lūde, nōn in māchinā.* | Texts verified |
 | 173 | Leads with **arrēctārium** and **trānsversārium** (Vitruvius 2.8.20; 7.3.11; 10.1.1; 10.13.4; Caes. BC 2.15), plus **pertica** (Digest). *fistula ferrea* / *tubus ferreus* are kept as material glosses. New example: *Theodōrus bacillum aduncum ex trānsversāriō māchinae suspendit.* | Texts verified |
@@ -74,7 +74,7 @@ Lewis & Short uses older numbers, the card says so.
 | Card | Coverage | Evidence |
 | --- | --- | --- |
 | 190 | **ascia, asciae f.** (adze; Bulgarian тесла) and **dolō, dolāre** (hew). In *Officīna et īnstrūmenta*, after card 143. | Pliny, NH 7.198 (Daedalus: saw, adze, plumb line, drill); NH 16.207 (lime wood blunts adzes); Vitruvius 7.2.2 (the adze tests slaked lime); Cato, Agr. 14; Cic. Div. 2.86 via Lewis & Short |
-| 191 | **plānō pede**, **hypogēum**, **sōlārium** (with *subdiālia*), **diaeta**, **adstruō / aedificium adstrūctum**, **arrēctāria / trānsversāria**, **harēnārium** and **fornāx calcāria**. In *Domūs partēs et supellex*, after card 158. | Vitruvius 6.8.1; 7.4.1; 2.4.2; Plautus, Mil. 340; Suetonius, Claud. 10.1; Pliny, Ep. 2.17.20; 9.7.4; Columella 1.5.10; Pliny, NH 36.186; Cato, Agr. 38.1 |
+| 191 | **plānō pede**, **hypogēum**, **sōlārium** (with *subdiālia*), **diaeta**, **adstruō / aedificium adstrūctum**, **arrēctāria / trānsversāria**, **harēnārium**, and **fornāx calcāria**. In *Domūs partēs et supellex*, after card 158. | Vitruvius 6.8.1; 7.4.1; 2.4.2; Plautus, Mil. 340; Suetonius, Claud. 10.1; Pliny, Ep. 2.17.20; 9.7.4; Columella 1.5.10; Pliny, NH 36.186; Cato, Agr. 38.1 |
 
 ## Quantities and forms checked
 
@@ -88,7 +88,7 @@ Every headword touched or added was checked in Lewis & Short. Points of note:
   **ascia** and **spūmeus** follow Lewis & Short's marking.
 - Lewis & Short does not mark hidden quantities in **arrēctārius** (*rēctus*),
   **adstrūxī, adstrūctum** and **exstrūxī, exstrūctum** (*strūctum*),
-  **redēmptor** (*ēmptum*), **pīnsō** (*ī* before *ns*) and **īnferciō** (*īn-*
+  **redēmptor** (*ēmptum*), **pīnsō** (*ī* before *ns*), and **īnferciō** (*īn-*
   before *f*). These follow the lexicon's existing hidden-quantity convention
   (Bennett, with later corrections).
 - **statūmen** is given without a genitive. Lewis & Short prints "*īnis*", against
@@ -108,7 +108,7 @@ Every headword touched or added was checked in Lewis & Short. Points of note:
 
 ## Not verified
 
-The review could not reach Vicipaedia, Morgan–Owens or any inscription
+The review could not reach Vicipaedia, Morgan–Owens, or any inscription
 database. Morgan–Owens attributions already in the cards are retained as
 earlier batches recorded them. No new claim rests on those sources. The
 working formation **tabula spūmea** is not checked against a modern Neo-Latin
@@ -121,13 +121,13 @@ polystyrene entry.
 - 38 search queries without macrons found their expected cards, including
   *ascia*, *тесла*, *plano pede*, *hypogeum*, *harenarium*, *fornax calcaria*,
   *tabula spumea*, *norma*, *coctilis*, *arrectaria*, *transversarium*,
-  *bacillum*, *cumulus* and *subtegulanea*. *extulimus* no longer matches.
+  *bacillum*, *cumulus*, and *subtegulanea*. *extulimus* no longer matches.
 - On every touched or new card, `data-search` contains the eyebrow, the heading
   and every Latin headword, and is synchronized with the visible card text. The
-  keyword-style cards 97, 101 and 103 received the new keywords instead.
+  keyword-style cards 97, 101, and 103 received the new keywords instead.
 - The other 162 cards are byte-identical to `main`. The hero total and the
   *Officīna* (17) and *Domūs partēs* (6) category counts agree with the DOM.
-- Every internal `#` link resolves. Cards 103, 143 and 149 gained `id`
+- Every internal `#` link resolves. Cards 103, 143, and 149 gained `id`
   attributes so that the new cross-links reach them.
 - `git diff --check` passes. No deployment is performed for this unmerged PR.
 

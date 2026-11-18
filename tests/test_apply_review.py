@@ -26,6 +26,11 @@ class ApplyReviewTests(unittest.TestCase):
         (self.root / 'data/concepts').mkdir(parents=True)
         for key in ('soap', 'perhaps', 'cooking-pot'):
             shutil.copy(ROOT / f'data/concepts/{key}.json', self.root / f'data/concepts/{key}.json')
+            # The editor's verdicts change the data every day (perhaps was reviewed on 16 November
+            # 2026): each test starts from drafts in its own copy, whatever the records say.
+            record = self.record(key)
+            record['review'] = {'status': 'draft', 'date': '2026-11-09', 'by': 'Claude'}
+            self.save(record)
 
     def record(self, key):
         return json.loads((self.root / f'data/concepts/{key}.json').read_text(encoding='utf-8'))

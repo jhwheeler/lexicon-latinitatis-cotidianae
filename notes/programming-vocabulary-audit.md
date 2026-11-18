@@ -20,9 +20,9 @@ Updated 21 October 2026. The live repository had 12 computing groups but omitted
 | 136 | Test case, condition, expected/observed result |
 | 137 | Bug report, defect, reporting and correcting a bug |
 | 138 | Reproducing a bug and reproduction steps |
-| 139 | Metric, metrics, analytics and figures |
+| 139 | Metric, metrics, analytics, and figures |
 | 140 | Mailing / recipient list |
-| 141 | API key, scopes and permissions |
+| 141 | API key, scopes, and permissions |
 
 ## Evidence and limits
 

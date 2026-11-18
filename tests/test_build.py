@@ -1117,6 +1117,31 @@ class BuildTests(unittest.TestCase):
         self.assertEqual(builder.stale(self.root, builder.build_site(self.root)),
                          ['assets/fonts/old.woff2', 'c/removed.html', 'l/gone.html'])
 
+    def test_a_saying_is_not_a_page_for_its_first_word(self):
+        # Jack, 18 November 2026: the page for Eho was the saying "Eho, nōn tam cito!", defined
+        # as "whoa, not so fast!", with an example of ohē that has no eho in it.
+        self.assertEqual(builder.term_head('Eho, nōn tam cito!'), 'Eho, nōn tam cito!')
+        self.assertEqual(builder.term_head('Grātulor (tibi)!'), 'Grātulor')
+        self.assertEqual(builder.term_head('Rōma, Rōmae f.'), 'Rōma')
+        record = self.record('perhaps')
+        record['terms'] += [
+            {'latin': 'Eho!', 'status': 'alternative', 'period': 'classical', 'gloss': 'ho!'},
+            {'latin': 'Eho, nōn tam cito!', 'status': 'alternative', 'period': 'classical', 'gloss': 'whoa, not so fast!'},
+            {'latin': 'Ohē!', 'status': 'alternative', 'period': 'classical', 'gloss': 'whoa!'}]
+        record['phrases'] = [{'latin': 'etiam nunc — etiam — ohē, istīc astātō.', 'english': 'More, more: whoa, stand there.',
+                              'source': 'Plaut. Aul. 55–56'}]
+        self.save_record(record)
+        outputs = builder.build_site(self.root)
+        pages = [page for path, page in outputs.items() if path.startswith('l/') and '<h1 class="hw" lang="la">Eho' in page]
+        self.assertEqual(len(pages), 1)
+        self.assertIn('<h1 class="hw" lang="la">Eho!</h1>', pages[0])
+        self.assertIn('<a href="cito.html">cito</a>!</b><span lang="la"></span>: <a href="../c/perhaps.html">', pages[0])   # the saying is listed under the word
+        self.assertNotIn('astātō', pages[0])          # and the example of ohē is not its example
+        ohe = next(page for path, page in outputs.items() if path.startswith('l/') and '<h1 class="hw" lang="la">Ohē!</h1>' in page)
+        self.assertIn('astātō', ohe)
+        # The word an entry recommends shows only the examples that have it, too.
+        self.assertNotIn('astātō', outputs['l/fortasse.html'])
+
     def test_broken_link_between_pages_rejected(self):
         record = self.record('perhaps')
         record['related'] = [self.card]

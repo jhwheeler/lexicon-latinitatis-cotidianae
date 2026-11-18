@@ -314,6 +314,7 @@ CONJUGATIONS = (('ārī', 'first conjugation, deponent'), ('ērī', 'second conj
                 ('īrī', 'fourth conjugation, deponent'), ('āre', 'first conjugation'), ('ēre', 'second conjugation'),
                 ('īre', 'fourth conjugation'), ('ere', 'third conjugation'), ('ī', 'third conjugation, deponent'))
 TERM_HEAD = re.compile(r'^(.+?)(?=\s*(?:,|\(|$))')
+SAYING_HEAD = re.compile(r'^(.+?)(?=\s*(?:\(|$))')
 WORD = re.compile(r'[^\s;,.:()]+')
 
 
@@ -653,7 +654,12 @@ def grammar(term):
 
 
 def term_head(latin):
-    """The dictionary headword of a term: "caccabus" in "caccabus (cacabus), caccabī m."."""
+    """The dictionary headword of a term: "caccabus" in "caccabus (cacabus), caccabī m.". A saying
+    is its own head, commas and all: the comma in "Eho, nōn tam cito!" divides a sentence, not a
+    headword from its forms, and cut there the saying became a page for the word eho that defined
+    it as "whoa, not so fast!" (Jack, 18 November 2026)."""
+    if is_saying(latin):
+        return SAYING_HEAD.match(latin).group(1)
     return TERM_HEAD.match(latin).group(1)
 
 
@@ -971,13 +977,20 @@ def word_index(records):
             head = term_head(term['latin'])
             if ' ' not in head:
                 words.setdefault(head, {'uses': [], 'within': []})['uses'].append((record, term))
+    sayings = {}
+    for head in words:
+        if head.rstrip('.!?') != head:
+            sayings.setdefault(head.rstrip('.!?').lower(), []).append(head)
     for record in sorted(records.values(), key=lambda r: (r['english'].lower(), r['id'])):
         for term in ordered_terms(record):
             head = term_head(term['latin'])
             if ' ' in head:
+                # A word of a saying also leads to the page of a one-word saying of that word
+                # (Eho tū! to Eho!), whatever its capital and its stop.
                 for word in dict.fromkeys(WORD.findall(head)):
-                    if word in words:
-                        words[word]['within'].append((record, term))
+                    for found in dict.fromkeys([word] + sayings.get(word.rstrip('.!?').lower(), [])):
+                        if found in words and (record, term) not in words[found]['within']:
+                            words[found]['within'].append((record, term))
     taken = set()
     for head in sorted(words):
         base = re.sub(r'[^a-z0-9]+', '-', fold(head)).strip('-') or 'word'
@@ -2513,9 +2526,11 @@ def render_word_page(head, info, site):
 
     examples, word = [], re.compile(r'\b' + re.escape(fold(head)) + r'\b')
     for record, term in uses:
-        main = ordered_terms(record)[0] is term
+        # An example stands here only if it has the word in it: an entry's examples may be of its
+        # other words (ohē under "not so fast!"), and on this page they read as examples of this one.
+        has_word = answer_test(term, site['answer_forms'])
         for phrase in record.get('phrases', []):
-            if main or word.search(fold(phrase['latin'])):
+            if word.search(fold(phrase['latin'])) or has_word(example_words(phrase['latin'])):
                 source = ('<span class="src composed">composed</span>' if composed(phrase)
                           else f'<span class="src">{phrase["source"]}</span>')
                 examples.append(f'<li><p class="la tap" lang="la">{links.text(phrase["latin"])}</p>'
@@ -2654,6 +2669,7 @@ def load_site(root):
     site['records'] = load_records(root, categories, legacy, rulings)
     site['words'] = word_index(site['records'])
     site['forms'] = FormIndex(site['records'], site['words'], root)
+    site['answer_forms'] = form_index(site['records'].values())
     site['families'] = load_families(root, site['words'], site['records'], site['forms'].term_stems)
     site['latinitium'] = load_latinitium(root)
     site['anchors'] = anchor_map(site)

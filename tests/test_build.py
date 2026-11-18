@@ -1146,6 +1146,44 @@ class BuildTests(unittest.TestCase):
         # The word an entry recommends shows only the examples that have it, too.
         self.assertNotIn('astātō', outputs['l/fortasse.html'])
 
+    def test_a_bracket_inside_a_saying_does_not_cut_it(self):
+        self.assertEqual(builder.term_head('Nōlī (nōlīte) exscrībere ex proximō.'), 'Nōlī (nōlīte) exscrībere ex proximō.')
+        self.assertEqual(builder.term_head('Attende (attendite).'), 'Attende')
+        self.assertEqual(builder.term_head('caccabus (cacabus), caccabī m.'), 'caccabus')
+
+    def test_a_one_word_saying_and_its_word_list_each_other(self):
+        record = self.record('perhaps')
+        record['terms'] += [
+            {'latin': 'Sānē.', 'status': 'alternative', 'period': 'classical', 'gloss': 'certainly (as an answer)'},
+            {'latin': 'sānē', 'status': 'alternative', 'period': 'classical', 'gloss': 'by all means'},
+            {'latin': 'Sānē!', 'status': 'alternative', 'period': 'classical', 'gloss': 'indeed!'}]
+        self.save_record(record)
+        words = builder.word_index({record['id']: record})
+        listed = lambda head: {term['latin'] for _, term in words[head]['within']}
+        self.assertEqual(listed('sānē'), {'Sānē.', 'Sānē!'})
+        self.assertEqual(listed('Sānē.'), {'sānē', 'Sānē!'})
+        self.assertEqual(listed('Sānē!'), {'sānē', 'Sānē.'})
+        builder.build_site(self.root)
+
+    def test_words_that_share_a_head_are_set_out_apart(self):
+        # volō, velle and volō, volāre had one page with the forms of whichever came first.
+        use = lambda latin, gloss, **more: ({'id': gloss, 'english': gloss}, dict({'latin': latin, 'gloss': gloss}, **more))
+        fly, want = use('volō, volāre, volāvī, volātum', 'fly'), use('volō, velle, voluī', 'want')
+        short, loose = use('volō, volāre', 'hurry'), use('volō, volēbam', 'no auxiliary')
+        groups = builder.word_homographs([fly, want, short, loose])
+        self.assertEqual([(shown['latin'], [term['gloss'] for _, term in mine]) for shown, mine in groups],
+                         [('volō, volāre, volāvī, volātum', ['fly', 'hurry']), ('volō, velle, voluī', ['want'])])
+        self.assertEqual(builder.word_homographs([loose]), [])
+        record = self.record('perhaps')
+        record['terms'] += [dict(fly[1], status='alternative', period='classical'), dict(want[1], status='alternative', period='classical'),
+                            {'latin': 'volō, volēbam', 'status': 'alternative', 'period': 'classical', 'gloss': 'no auxiliary'}]
+        self.save_record(record)
+        outputs = builder.build_site(self.root)
+        page = next(page for path, page in outputs.items() if path.startswith('l/') and '<h1 class="hw" lang="la">volō</h1>' in page)
+        self.assertIn('<p class="forms" lang="la">volō, volāre, volāvī, volātum</p>', page)
+        self.assertIn('<p class="forms" lang="la">volō, velle, voluī</p>', page)
+        self.assertNotIn('<p class="forms" lang="la">volō, volēbam</p>', page)
+
     def test_broken_link_between_pages_rejected(self):
         record = self.record('perhaps')
         record['related'] = [self.card]

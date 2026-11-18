@@ -314,7 +314,7 @@ CONJUGATIONS = (('ārī', 'first conjugation, deponent'), ('ērī', 'second conj
                 ('īrī', 'fourth conjugation, deponent'), ('āre', 'first conjugation'), ('ēre', 'second conjugation'),
                 ('īre', 'fourth conjugation'), ('ere', 'third conjugation'), ('ī', 'third conjugation, deponent'))
 TERM_HEAD = re.compile(r'^(.+?)(?=\s*(?:,|\(|$))')
-SAYING_HEAD = re.compile(r'^(.+?)(?=\s*(?:\(|$))')
+SAYING_HEAD = re.compile(r'^(.+?)(?=\s*(?:\([^)]*\)[.!?…]*)?$)')
 WORD = re.compile(r'[^\s;,.:()]+')
 
 
@@ -657,7 +657,9 @@ def term_head(latin):
     """The dictionary headword of a term: "caccabus" in "caccabus (cacabus), caccabī m.". A saying
     is its own head, commas and all: the comma in "Eho, nōn tam cito!" divides a sentence, not a
     headword from its forms, and cut there the saying became a page for the word eho that defined
-    it as "whoa, not so fast!" (Jack, 18 November 2026)."""
+    it as "whoa, not so fast!" (Jack, 18 November 2026). Nor is it cut at a bracket inside it
+    ("Nōlī (nōlīte) exscrībere ex proximō." is not the word nōlī), only at one that ends it
+    ("Grātulor (tibi)!")."""
     if is_saying(latin):
         return SAYING_HEAD.match(latin).group(1)
     return TERM_HEAD.match(latin).group(1)
@@ -991,6 +993,20 @@ def word_index(records):
                     for found in dict.fromkeys([word] + sayings.get(word.rstrip('.!?').lower(), [])):
                         if found in words and (record, term) not in words[found]['within']:
                             words[found]['within'].append((record, term))
+    # A one-word saying has a page of its own (Sānē. beside sānē, Ecce! beside Ecce.): each such
+    # page lists the others of the same word, so that none reads as the whole of it.
+    for bare, heads in sayings.items():
+        same = [head for head in words if head.rstrip('.!?').lower() == bare]
+        for head in heads:
+            for other in same:
+                if other != head:
+                    for pair in words[head]['uses']:
+                        if pair not in words[other]['within']:
+                            words[other]['within'].append(pair)
+                    if other not in sayings[bare]:
+                        for pair in words[other]['uses']:
+                            if pair not in words[head]['within']:
+                                words[head]['within'].append(pair)
     taken = set()
     for head in sorted(words):
         base = re.sub(r'[^a-z0-9]+', '-', fold(head)).strip('-') or 'word'
@@ -2473,20 +2489,47 @@ def render_concept_page(record, site, categories):
                       scripts=('review',))
 
 
+def word_homographs(uses):
+    """The words that share a head, each as (the term whose dictionary form stands for it, its
+    uses): volō, velle beside volō, volāre; frōns, frondis beside frōns, frontis; the noun medicus
+    beside the adjective. Two dictionary forms are one word when they are of the same kind and
+    their second form is the same (addō, addere and addō, addere, addidī, additum; canis m. and
+    canis m./f.); the form shown is the commonest, and of those the fullest. A use that is not a
+    dictionary form (legō, legēbam, under "be"; a bare word) makes no word of its own: with one
+    word it is part of it, and with several it is only listed below."""
+    groups = {}
+    for record, term in uses:
+        latin = re.sub(r'\s*\([^)]*\)', '', term['latin'])
+        if (CONJUGATED.match(latin) or DECLINED.match(latin)) and ',' in latin:
+            second = latin.split(',')[1].split(';')[0].split()
+            groups.setdefault((inflection(term), second[0] if second else ''), []).append((record, term))
+    chosen = []
+    for mine in groups.values():
+        counts = {}
+        for _, term in mine:
+            counts[term['latin']] = counts.get(term['latin'], 0) + 1
+        best = max(counts, key=lambda latin: (counts[latin], len(latin)))
+        chosen.append((next(term for _, term in mine if term['latin'] == best), mine))
+    return chosen
+
+
 def render_word_page(head, info, site):
     """A Latin word's page: the forms and grammar, every entry that uses it, its notes and the
     rulings on it, and examples from the entries where it is the recommended word."""
     links = Links(site, 'word', current_word=head)
     uses, within = info['uses'], info['within']
-    first = uses[0][1]
     parts = ['<p class="kind">Latin word</p>', f'<h1 class="hw" lang="la">{escape(head)}</h1>']
-    if first['latin'] != head:
-        parts.append(f'<p class="forms" lang="la">{escape(first["latin"])}</p>')
-    gram = next((grammar_html(t) for _, t in uses if grammar_html(t)), '')
-    if gram:
-        parts.append(f'<p class="gram">{gram}</p>')
-    meanings = list(dict.fromkeys(t.get('gloss', r['english']) for r, t in uses))
-    parts.append(f'<p class="def">{escape("; ".join(meanings))}</p>')
+    groups = word_homographs(uses)
+    if len(groups) == 1:    # one word: its dictionary form, and its own senses before those of the looser uses
+        groups = [(groups[0][0], groups[0][1] + [use for use in uses if use not in groups[0][1]])]
+    for shown, mine in groups or [(uses[0][1], uses)]:
+        if shown['latin'] != head:
+            parts.append(f'<p class="forms" lang="la">{escape(shown["latin"])}</p>')
+        gram = grammar_html(shown) or next((grammar_html(t) for _, t in mine if grammar_html(t)), '')
+        if gram:
+            parts.append(f'<p class="gram">{gram}</p>')
+        meanings = list(dict.fromkeys(t.get('gloss', r['english']) for r, t in mine))
+        parts.append(f'<p class="def">{escape("; ".join(meanings))}</p>')
 
     items = []
     for record, term in uses:

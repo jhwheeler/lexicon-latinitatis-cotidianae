@@ -339,6 +339,7 @@ span.kind, p.kind:not(:has(a)) { display:block; padding:10px 0; }
 .gram { margin:2px 0 0; color:var(--muted); font-style:italic; }
 .wikt { white-space:nowrap; }
 .def { margin:6px 0 0; font-size:1.25rem; }
+.def + .forms { margin-top:18px; }   /* a second word under the same head: volō, velle after volō, volāre */
 .comment { margin:8px 0 0; }
 .meta-line { margin:2px 0 0; color:var(--muted); font-size:.98rem; }
 .lemma > .fn { font-size:.8em; }

@@ -313,7 +313,9 @@ DECLENSIONS = (('ēī', 'fifth'), ('eī', 'fifth'), ('ārum', 'first'), ('ae', '
 CONJUGATIONS = (('ārī', 'first conjugation, deponent'), ('ērī', 'second conjugation, deponent'),
                 ('īrī', 'fourth conjugation, deponent'), ('āre', 'first conjugation'), ('ēre', 'second conjugation'),
                 ('īre', 'fourth conjugation'), ('ere', 'third conjugation'), ('ī', 'third conjugation, deponent'))
-TERM_HEAD = re.compile(r'^(.+?)(?=\s*(?:,|\(|$))')
+# A bracket ends the head only where it gives a variant of the word (caccabus (cacabus), caccabī m.;
+# adversus (adversum) + acc.), not inside a phrase: plūris (minōris) cōnstāre is not the word plūris.
+TERM_HEAD = re.compile(r'^(.+?)(?=\s*(?:,|\([^)]*\)\s*(?:,|\+|[mfn]\.|$)|$))')
 SAYING_HEAD = re.compile(r'^(.+?)(?=\s*(?:\([^)]*\)[.!?…]*)?$)')
 WORD = re.compile(r'[^\s;,.:()]+')
 
@@ -2513,6 +2515,22 @@ def word_homographs(uses):
     return chosen
 
 
+def distinct_glosses(glosses):
+    """The glosses of a word's uses, without the ones that only say again what an earlier one said
+    in another order ("depressed, downcast; downcast, depressed") or in part ("heat" before "heat;
+    temperature")."""
+    kept, said = [], set()
+    for gloss in dict.fromkeys(glosses):
+        parts = [frozenset(piece.strip().lower() for piece in part.split(',')) for part in gloss.split(';')]
+        new = [part for part in parts if part not in said]
+        if not new:
+            continue
+        kept.append(gloss if len(new) == len(parts) else '; '.join(
+            piece.strip() for piece, part in zip(gloss.split(';'), parts) if part in new))
+        said.update(parts)
+    return kept
+
+
 def use_sense(record):
     """On a Latin word's page, the sense of an entry it is used in, after the entry's name: two
     entries called "more" are otherwise the same link twice (Jack, 18 November 2026)."""
@@ -2546,7 +2564,7 @@ def render_word_page(head, info, site):
         gram = grammar_html(shown) or next((grammar_html(t) for _, t in mine if grammar_html(t)), '')
         if gram:
             parts.append(f'<p class="gram">{gram}</p>')
-        found = list(dict.fromkeys(t.get('gloss', r['english']) for r, t in mine))
+        found = distinct_glosses(t.get('gloss', r['english']) for r, t in mine)
         parts.append(f'<p class="def">{escape("; ".join(found))}</p>')
         meanings = found if n == 0 else meanings + [m for m in found if m not in meanings]
 

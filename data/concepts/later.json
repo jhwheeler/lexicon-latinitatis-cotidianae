@@ -1,42 +1,83 @@
 {
   "id": "later",
   "english": "later",
+  "sense": "at a later time, not now",
   "pos": "adverb",
+  "also": [
+    "afterwards",
+    "later on",
+    "another time",
+    "not now"
+  ],
   "also_under": [
     "tempus"
   ],
   "domain": "sermo",
   "terms": [
     {
-      "latin": "sērius",
-      "status": "recommended",
-      "period": "classical"
-    },
-    {
       "latin": "posteā",
-      "status": "alternative",
+      "status": "recommended",
       "period": "classical",
       "gloss": "later, afterwards",
+      "grammar": "adverb",
       "evidence": [
+        "Cic. Fam. 7.16.3: <span lang=\"la\">posteā vīderō</span>",
         "Traupman 337"
-      ]
+      ],
+      "comment": "After now, or after whatever has just been spoken of: <span lang=\"la\">posteā vīderō</span>, I’ll look into it later. For “in a little while” the spoken word is <span lang=\"la\">mox</span>; see in a little while."
+    },
+    {
+      "latin": "posterius",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "later, at a later time",
+      "grammar": "adverb",
+      "evidence": [
+        "Plaut. Epid. 656: <span lang=\"la\">cētera haec posterius faxō scībis, ubi erit ōtium</span>",
+        "Cic. Att. 6.1.19: <span lang=\"la\">vērum haec posterius et cōram fortasse commodius</span>"
+      ],
+      "comment": "How a speaker puts a thing off to another time. Cicero drops a subject in his letters with <span lang=\"la\">sed haec posterius</span>, but more of that later (Fam. 12.23, 15.16)."
+    },
+    {
+      "latin": "sērius",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "later than one should, later than expected; too late",
+      "grammar": "adverb, the comparative of sērō",
+      "evidence": [
+        "Cic. Fam. 14.10: <span lang=\"la\">scrīpsī ad Pompōnium sērius quam oportuit</span>"
+      ],
+      "comment": "The comparative of “late”, not of “after”: it measures against the right time or against someone else (<span lang=\"la\">sērius quam oportuit</span>, later than I should have). It does not answer “not now, later”."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "abī intrō ac jubē huic aquam calefierī; cētera haec posterius faxō scībis, ubi erit ōtium",
+      "english": "go in and have water heated for her; the rest I’ll tell you later, when there’s time",
+      "source": "Plaut. Epid. 655–656"
+    },
+    {
+      "latin": "Nōn nunc; posteā faciēmus.",
+      "english": "Not now; we’ll do it later.",
+      "source": "composed"
     }
   ],
   "related": [
+    "in-a-little-while",
+    "a-little-later",
+    "soon",
     "late",
-    "a-little-later"
+    "not-yet"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/postea\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: postea</a>",
-    "<a href=\"https://logeion.org/serus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: serus</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 337."
+    "<a href=\"https://logeion.uchicago.edu/postea\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: postea</a> · <a href=\"https://logeion.uchicago.edu/posterus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: posterus</a> · <a href=\"https://logeion.uchicago.edu/serus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: serus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 337.",
+    "Plautus, <em>Epidicus</em> 655–656.",
+    "Cicero, <em>Epistulae ad familiares</em> 7.16.3, 12.23, 14.10, 15.16; <em>Epistulae ad Atticum</em> 6.1.19."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-18",
     "by": "Claude"
-  },
-  "also": [
-    "afterwards"
-  ]
+  }
 }

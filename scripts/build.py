@@ -2513,6 +2513,12 @@ def word_homographs(uses):
     return chosen
 
 
+def use_sense(record):
+    """On a Latin word's page, the sense of an entry it is used in, after the entry's name: two
+    entries called "more" are otherwise the same link twice (Jack, 18 November 2026)."""
+    return f' <span class="use-sense">({escape(record["sense"])})</span>' if 'sense' in record else ''
+
+
 def render_word_page(head, info, site):
     """A Latin word's page: the forms and grammar, every entry that uses it, its notes and the
     rulings on it, and examples from the entries where it is the recommended word."""
@@ -2520,27 +2526,40 @@ def render_word_page(head, info, site):
     uses, within = info['uses'], info['within']
     parts = ['<p class="kind">Latin word</p>', f'<h1 class="hw" lang="la">{escape(head)}</h1>']
     groups = word_homographs(uses)
-    if len(groups) == 1:    # one word: its dictionary form, and its own senses before those of the looser uses
-        groups = [(groups[0][0], groups[0][1] + [use for use in uses if use not in groups[0][1]])]
-    for shown, mine in groups or [(uses[0][1], uses)]:
+    if len(groups) == 1:
+        # One word: its dictionary form, and its own senses before those of the looser uses. A looser
+        # use with a grammar of its own (the adverb plūs beside the noun plūs, plūris) is set out
+        # after it under that grammar, not run into the noun's line (Jack, 18 November 2026: the
+        # page said "used in the nominative and accusative" over "love more").
+        shown, mine = groups[0]
+        own = grammar(shown)
+        loose = [use for use in uses if use not in mine]
+        apart = {}
+        for use in loose:
+            if grammar(use[1]) and grammar(use[1]) != own:
+                apart.setdefault(grammar(use[1]), []).append(use)
+        groups = [(shown, mine + [use for use in loose if not (grammar(use[1]) and grammar(use[1]) != own)])]
+        groups += [(found[0][1], found) for found in apart.values()]
+    for n, (shown, mine) in enumerate(groups or [(uses[0][1], uses)]):
         if shown['latin'] != head:
             parts.append(f'<p class="forms" lang="la">{escape(shown["latin"])}</p>')
         gram = grammar_html(shown) or next((grammar_html(t) for _, t in mine if grammar_html(t)), '')
         if gram:
             parts.append(f'<p class="gram">{gram}</p>')
-        meanings = list(dict.fromkeys(t.get('gloss', r['english']) for r, t in mine))
-        parts.append(f'<p class="def">{escape("; ".join(meanings))}</p>')
+        found = list(dict.fromkeys(t.get('gloss', r['english']) for r, t in mine))
+        parts.append(f'<p class="def">{escape("; ".join(found))}</p>')
+        meanings = found if n == 0 else meanings + [m for m in found if m not in meanings]
 
     items = []
     for record, term in uses:
         status = 'the recommended word' if term['status'] == 'recommended' else STATUS_LABELS[term['status']]
-        items.append(f'<li><a href="{links.concept(record["id"])}">{escape(record["english"])}</a>'
+        items.append(f'<li><a href="{links.concept(record["id"])}">{escape(record["english"])}</a>{use_sense(record)}'
                      f'<p class="meta-line"><span class="lab">{escape(status)}</span> · <span class="lab">{PERIODS[term["period"]]}</span>'
                      + (' · ' + '; '.join(term['evidence']) if term.get('evidence') else '') + '</p></li>')
     for record, term in within:
         linked, rest = links.latin(term['latin'])
         items.append(f'<li><b lang="la">{linked}</b><span lang="la">{rest}</span>: '
-                     f'<a href="{links.concept(record["id"])}">{escape(record["english"])}</a>'
+                     f'<a href="{links.concept(record["id"])}">{escape(record["english"])}</a>{use_sense(record)}'
                      f'<p class="meta-line"><span class="lab">{PERIODS[term["period"]]}</span></p></li>')
     parts.append('<section class="sec" aria-labelledby="uses-h"><div class="sec-head"><h2 id="uses-h">In this lexicon</h2></div>'
                  '<ul class="uses">' + ''.join(items) + '</ul></section>')

@@ -7,7 +7,10 @@
     "drill a hole",
     "bore a hole",
     "drill",
-    "drill (verb)"
+    "drill (verb)",
+    "pierce",
+    "perforate",
+    "make a hole in"
   ],
   "domain": "officina",
   "terms": [
@@ -37,6 +40,18 @@
         "Lewis &amp; Short s.v. <span lang=\"la\">terebrō</span>: syn. <span lang=\"la\">perforō</span>"
       ],
       "comment": "To make a hole right through."
+    },
+    {
+      "latin": "pertundō, pertundere, pertudī, pertūsum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "make a hole through",
+      "grammar": "verb, third conjugation, transitive",
+      "evidence": [
+        "Plaut. Ps. 369: <span lang=\"la\">in pertūsum ingerimus dicta dōlium</span>",
+        "Juv. 5.131: <span lang=\"la\">pertūsā … laenā</span>"
+      ],
+      "comment": "Mostly early Latin, and not in Cicero or Caesar (Lewis &amp; Short). Its participle <span lang=\"la\">pertūsus</span> is said of a thing with a hole in it: a jar, a cloak, a purse."
     }
   ],
   "phrases": [
@@ -44,6 +59,11 @@
       "latin": "terebrā vītem pertunditō",
       "english": "bore through the vine with an auger",
       "source": "Cato Agr. 41.3 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "In pertūsum ingerimus dicta dōlium.",
+      "english": "We are pouring our words into a jar with a hole in it.",
+      "source": "Plaut. Ps. 369"
     }
   ],
   "notes": {
@@ -59,12 +79,14 @@
     "electric-drill"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/terebro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: terebro</a> · <a href=\"https://logeion.uchicago.edu/perforo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: perforo</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 165, 307."
+    "<a href=\"https://logeion.uchicago.edu/terebro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: terebro</a> · <a href=\"https://logeion.uchicago.edu/perforo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: perforo</a> · <a href=\"https://logeion.uchicago.edu/pertundo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pertundo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 165, 307.",
+    "Plautus, <em>Pseudolus</em> 369.",
+    "Juvenal 5.131."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-19",
     "by": "Claude"
   }
 }

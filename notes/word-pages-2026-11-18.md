@@ -23,11 +23,11 @@ Jack, on the page for *plūs*: "This entry is all sorts of confusion", and then:
 
 ## For Jack
 
-- *inedia* stands under **appetite** as "also used", with a comment that it is not appetite but going without food (it is there because Traupman gives it for "lack of appetite"). On the page for *inedia* this reads "appetite · also used". Should a word entered only to say what it is not be `avoid`, or go under fasting?
-- *repulsa* stands under **apply** in the same way ("rejection, being turned down"; *repulsam ferre* is under fail).
+- *inedia* stood under **appetite** and *repulsa* under **apply** as "also used", each for an English it does not mean. Jack, 19 November 2026: "Moved to their true sense". *inedia* is now the answer of a new entry, **fasting** (going without food), with *jējūnium*; *repulsa* is under **defeat**, where it already stood, and "defeat at the polls" and "lose an election" went with it.
+- *Mihi male est.* stood under **I’m having a lovely time** in the same way (seen on the new page for *male*); it is now the answer of **I’m having a bad time**. So did *malā fidē* under **honestly**: now **in bad faith**.
 - *plūrēs* and *complūrēs* cannot be named in `data/families.json`: a plural adjective of two forms (*plūrēs, plūra*) is not a word the family method knows, so the family of *plūs* shows *plūrimī, plūrimum, plūrālis* and not those two.
 - Morgan–Owens cites Mart. 9.100 for *plūs minus*; that was not checked. Lewis & Short has Hirt. B.G. 8.20.1, which is now the evidence, and gives Mart. 8.71.4 for *plūsve minusve*.
-- *male* has no entry of its own: its page was the phrase *male (mehercule) dē* ("too bad about"), which is no longer the headword *male*.
+- *male* had no entry of its own: its page was the phrase *male (mehercule) dē* ("too bad about"). Jack, 19 November 2026: "make the male page". It is now the answer of a new entry, **badly**.
 
 ## What this did not do
 

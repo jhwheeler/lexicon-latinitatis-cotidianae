@@ -7,9 +7,7 @@
     "having fun",
     "I’m enjoying myself",
     "enjoying myself",
-    "he’s having a good time",
-    "I’m having a lousy time",
-    "I’m in a bad way"
+    "he’s having a good time"
   ],
   "domain": "sermo",
   "terms": [
@@ -20,18 +18,6 @@
       "evidence": [
         "Traupman 109, 394"
       ]
-    },
-    {
-      "latin": "Mihi male est.",
-      "status": "alternative",
-      "period": "classical",
-      "gloss": "I’m having a bad time; I’m in a bad way",
-      "evidence": [
-        "Cic. Verr. 2.4.95: <span lang=\"la\">numquam tam male est Siculīs, quīn aliquid facētē et commodē dīcant</span> (Lewis &amp; Short s.v. <span lang=\"la\">facētus</span>)",
-        "Catull. 38.1",
-        "Traupman 109, 111, 394, 404"
-      ],
-      "comment": "The opposite of <span lang=\"la\">mihi bene est</span>: the dative of the person with the adverb, “it is badly with me”."
     }
   ],
   "phrases": [
@@ -44,16 +30,12 @@
       "latin": "Eī bene est sōlī.",
       "english": "He’s having a good time by himself.",
       "source": "Traupman 109"
-    },
-    {
-      "latin": "malest, Cornificī, tuō Catullō, malest, mē hercule, et labōriōsē",
-      "english": "your Catullus is not well, Cornificius, not well, by Hercules, and it’s hard going",
-      "source": "Catull. 38.1–2"
     }
   ],
   "related": [
     "im-fine",
-    "enjoy"
+    "enjoy",
+    "im-having-a-bad-time"
   ],
   "sources": [
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 109, 111.",
@@ -61,7 +43,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-19",
     "by": "Claude"
   }
 }

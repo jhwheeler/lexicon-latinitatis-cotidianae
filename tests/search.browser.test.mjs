@@ -94,6 +94,63 @@ test('macrons, decomposed accents and i/j share matching and visible highlights'
   assert.equal(await page.locator('.search-result mark').count() > 0, true);
 });
 
+test('Back leads from one search to the one before it, not off the site', async () => {
+  // Jack, 19 November 2026: after a second search, Back left the lexicon for the site he had come
+  // from; he expected the word he had searched for before.
+  const steps = () => page.evaluate(() => history.length);
+  const start = await steps();
+  // A word being typed rewrites the address in place, and typing on is the same search.
+  await search('pyj');
+  await page.waitForURL(/index\.html\?q=pyj$/);
+  await page.waitForTimeout(1500);
+  await search('pyjama');
+  await page.waitForURL(/index\.html\?q=pyjama$/);
+  assert.equal(await steps(), start);
+  // Once it has been looked at, the next search is a new step.
+  await page.waitForTimeout(1500);
+  await search('soap');
+  await page.waitForURL(/index\.html\?q=soap$/);
+  assert.equal(await steps(), start + 1);
+  const soap = await resultIds();
+  await page.goBack();
+  await page.waitForURL(/index\.html\?q=pyjama$/);
+  assert.equal(await page.locator('#search').inputValue(), 'pyjama');
+  assert.equal(await page.locator('.search-result').count(), 6);
+  await page.goForward();
+  await page.waitForURL(/index\.html\?q=soap$/);
+  assert.equal(await page.locator('#search').inputValue(), 'soap');
+  assert.deepEqual(await resultIds(), soap);
+  // Enter marks a search as looked at without the wait; a search with nothing found is not a step.
+  await page.locator('#search').press('Enter');
+  await search('pyjama');
+  await page.waitForURL(/index\.html\?q=pyjama$/);
+  assert.equal(await steps(), start + 2);
+  await page.locator('#search').fill('pyjamz');
+  await page.waitForURL(/index\.html\?q=pyjamz$/);
+  await page.waitForTimeout(1500);
+  await search('soap');
+  await page.waitForURL(/index\.html\?q=soap$/);
+  assert.equal(await steps(), start + 2);
+  // Opening a result is looking at the search too: after coming back, a new search is a step,
+  // and Back from it shows the search the entry was opened from.
+  await page.locator('.search-result').first().click();
+  await page.waitForURL(/\/c\/[a-z0-9-]+\.html$/);
+  await page.goBack();
+  await page.waitForURL(/index\.html\?q=soap$/);
+  await search('pyjama');
+  await page.waitForURL(/index\.html\?q=pyjama$/);
+  await page.goBack();
+  await page.waitForURL(/index\.html\?q=soap$/);
+  assert.equal(await page.locator('#search').inputValue(), 'soap');
+  // Clearing a search that was looked at leaves it one step back.
+  await page.locator('#clear').click();
+  await page.waitForURL(/index\.html$/);
+  assert.equal(await page.locator('#contents').isVisible(), true);
+  await page.goBack();
+  await page.waitForURL(/index\.html\?q=soap$/);
+  assert.equal(await page.locator('#contents').isVisible(), false);
+});
+
 test('a search can be linked to: the address keeps the query, and the category it is limited to', async () => {
   await search('pyjama');
   await page.waitForURL(/index\.html\?q=pyjama$/);

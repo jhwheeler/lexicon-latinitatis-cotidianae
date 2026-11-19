@@ -325,20 +325,59 @@
     empty.style.display = matching.length ? 'none' : 'block';
   }
 
-  // The address follows the query, so that a search can be bookmarked or sent.
-  let timer;
+  // The address follows the query, so that a search can be bookmarked or sent. While a word is
+  // being typed the address is rewritten in place. A search the reader has looked at becomes a
+  // step of its own in the browser's history when the next one begins, so that Back leads from
+  // the second search to the first and not off the site (Jack, 19 November 2026: Back took him
+  // to another website, where he expected the word he had searched for before). A search counts
+  // as looked at when the page opened with it, when Enter is pressed, when its results are
+  // clicked, or when it has stood for LOOKED milliseconds with something found. Typing on from it
+  // (tow, towel) is the same search, not a new step. The rule and the number are Claude's, for
+  // Jack to judge.
+  const LOOKED = 1200;
+  let timer, looking, held = (params.get('q') || '').trim(), looked = Boolean(held);
+  function write(typed) {
+    clearTimeout(timer);
+    const next = new URLSearchParams();
+    if (typed) next.set('q', typed);
+    if (typed && scope && !page) next.set('cat', scope);
+    const url = location.pathname + (next.toString() ? '?' + next : '');
+    if (url !== location.pathname + location.search) {
+      const step = looked && !fold(typed).startsWith(fold(held));
+      history[step ? 'pushState' : 'replaceState'](null, '', url);
+      looked = false;
+    }
+    held = typed;
+    clearTimeout(looking);
+    if (!looked && typed) looking = setTimeout(look, LOOKED);
+  }
+  function look() {
+    if (!data) looking = setTimeout(look, LOOKED);
+    else if (current && !current.close && current.query === fold(held)) looked = true;
+  }
   function remember(typed) {
     clearTimeout(timer);
-    timer = setTimeout(() => {
-      const next = new URLSearchParams();
-      if (typed) next.set('q', typed);
-      if (typed && scope && !page) next.set('cat', scope);
-      const url = location.pathname + (next.toString() ? '?' + next : '');
-      if (url !== location.pathname + location.search) history.replaceState(null, '', url);
-    }, 250);
+    timer = setTimeout(() => write(typed), 250);
   }
+  // The reader has acted on the search as it stands: its address is written at once.
+  function settle() {
+    write(search.value.trim());
+    clearTimeout(looking);
+    looked = Boolean(held);
+  }
+  // Back or Forward between two searches made on this page: show the one the address names.
+  addEventListener('popstate', () => {
+    const now = new URLSearchParams(location.search);
+    clearTimeout(timer); clearTimeout(looking);
+    search.value = now.get('q') || '';
+    if (!page) scope = now.get('cat') || '';
+    held = search.value.trim(); looked = Boolean(held);
+    rendered = null;
+    apply();
+  });
+  results.addEventListener('click', settle, true);
 
-  form.addEventListener('submit', event => { event.preventDefault(); apply(); });
+  form.addEventListener('submit', event => { event.preventDefault(); apply(); settle(); });
   ['input', 'search'].forEach(event => search.addEventListener(event, apply));
   more.addEventListener('click', () => { if (current) draw(); });
   // The data is fetched as soon as the page is idle (or at the first focus, if that comes sooner),

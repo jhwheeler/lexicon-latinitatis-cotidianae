@@ -94,6 +94,35 @@ test('macrons, decomposed accents and i/j share matching and visible highlights'
   assert.equal(await page.locator('.search-result mark').count() > 0, true);
 });
 
+test('a Latin word typed whole finds its own entry first, before the entries that quote it', async () => {
+  // Jack, 19 November 2026: mons found summus, tendō, immānis, and Appennīnus, each for a quotation
+  // with mōns in it, and mōns itself fifth.
+  await search('mons');
+  const ids = await resultIds();
+  assert.equal(ids[0], 'c-mountain');
+  const first = page.locator('.search-result').first();
+  assert.equal(await first.locator('h3').textContent(), 'mōns, montis m.');
+  assert.match(await first.locator('.eyebrow').textContent(), /Definition/);
+  // Then the terms with the word in them, then those that have it only in their evidence.
+  const quoting = 'c-apennines';
+  assert.equal(ids.indexOf('c-volcano') > 0 && ids.indexOf('c-volcano') < ids.indexOf(quoting), true);
+  assert.equal(ids.indexOf('c-volcano') < ids.indexOf('c-huge'), true);
+  assert.match(await page.locator(`[data-result-for="${quoting}"] .eyebrow`).textContent(), /Evidence or grammar/);
+  // The record whose answer it is comes before a record that has it among its other words.
+  await search('pluvia');
+  assert.deepEqual((await resultIds()).slice(0, 2), ['c-rain', 'c-shower-bathroom']);
+  // tu is tū; tv is the television, though v is otherwise read as u.
+  await search('tu');
+  assert.equal(await page.locator('.search-result').first().locator('h3').textContent(), 'tū, tuī');
+  await search('tv');
+  assert.equal((await resultIds())[0], 'c-television');
+  // A form of the word still finds it, and so does i for j.
+  await search('montem');
+  assert.equal((await resultIds())[0], 'c-mountain');
+  await search('iam');
+  assert.equal((await resultIds()).slice(0, 3).some(id => /^c-(already|now)/.test(id)), true);
+});
+
 test('Back leads from one search to the one before it, not off the site', async () => {
   // Jack, 19 November 2026: after a second search, Back left the lexicon for the site he had come
   // from; he expected the word he had searched for before.

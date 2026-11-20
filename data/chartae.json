@@ -1795,7 +1795,7 @@
    "id": "asellus",
    "latin": "asellus, asellī m.",
    "english": "cod",
-   "scientific": "Gadiformes",
+   "scientific": "Gadus morhua",
    "group": "mare",
    "line": "ille Lūsitānōrum cibus patrius, asellus sale condītus et siccātus",
    "source": "Libellus IV",
@@ -1900,6 +1900,580 @@
    }
   },
   {
+   "id": "ilex",
+   "latin": "īlex, īlicis f.",
+   "english": "holm oak",
+   "scientific": "Quercus ilex",
+   "group": "arbores",
+   "line": "flāvaque dē viridī stillābant īlice mella",
+   "source": "Ov. Met. I 112",
+   "bears": "Glandēs.",
+   "record": "holm-oak",
+   "image": {
+    "file": "Montes de Vitoria - Quercus ilex 01.jpg",
+    "author": "Basotxerri",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Montes_de_Vitoria_-_Quercus_ilex_01.jpg"
+   }
+  },
+  {
+   "id": "suber",
+   "latin": "sūber, sūberis n.",
+   "english": "cork oak",
+   "scientific": "Quercus suber",
+   "group": "arbores",
+   "line": "tegmina quīs capitum raptus dē sūbere cortex",
+   "source": "Verg. A. VII 742",
+   "bears": "Glandēs.",
+   "record": "cork-oak",
+   "image": {
+    "file": "Cork oak December 2015-1.jpg",
+    "author": "Alvesgaspar",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Cork_oak_December_2015-1.jpg"
+   }
+  },
+  {
+   "id": "fagus",
+   "latin": "fāgus, fāgī f.",
+   "english": "beech",
+   "scientific": "Fagus sylvatica",
+   "group": "arbores",
+   "line": "Tītyre, tū patulae recubāns sub tegmine fāgī",
+   "source": "Verg. E. 1, 1",
+   "bears": "Glandēs.",
+   "record": "beech",
+   "image": {
+    "file": "20220528 Buche Eichenhart (END)-DJI 0234.jpg",
+    "author": "Zinnmann",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:20220528_Buche_Eichenhart_(END)-DJI_0234.jpg"
+   }
+  },
+  {
+   "id": "castanea",
+   "latin": "castanea, castaneae f.",
+   "english": "chestnut",
+   "scientific": "Castanea sativa",
+   "group": "arbores",
+   "line": "nucēs vocāmus et castaneās, quamquam adcommodātiōrēs glandium generī",
+   "source": "Plin. NH XV 92",
+   "bears": "Castaneās.",
+   "record": "chestnut",
+   "image": {
+    "file": "Castanea sativa - Anatolian sweet chestnut 04.jpg",
+    "author": "Zeynel Cebeci",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Castanea_sativa_-_Anatolian_sweet_chestnut_04.jpg"
+   }
+  },
+  {
+   "id": "betula",
+   "latin": "betula, betulae f.",
+   "english": "birch",
+   "scientific": "Betula",
+   "group": "arbores",
+   "line": "gaudet frīgidīs sorbus, sed magis etiam betulla",
+   "source": "Plin. NH XVI 74",
+   "record": "birch",
+   "image": {
+    "file": "Lonely birch (14616433241).jpg",
+    "author": "YuJeen from Riga, Latvia",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Lonely_birch_(14616433241).jpg"
+   }
+  },
+  {
+   "id": "populus",
+   "latin": "pōpulus, pōpulī f.",
+   "english": "poplar",
+   "scientific": "Populus",
+   "group": "arbores",
+   "line": "quercus Jovī et myrtus Venerī placuit, Phoebō laurea, pīnus Cybēbae, pōpulus celsa Herculī",
+   "source": "Phaedr. III 17, 2–4",
+   "record": "poplar",
+   "image": {
+    "file": "Populus alba Topola biała 2020-10-25 01.jpg",
+    "author": "Agnieszka Kwiecień, Nova",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Populus_alba_Topola_bia%C5%82a_2020-10-25_01.jpg"
+   }
+  },
+  {
+   "id": "populustremula",
+   "latin": "pōpulus tremula",
+   "english": "aspen",
+   "scientific": "Populus tremula",
+   "group": "arbores",
+   "line": "Pōpulī tremulae folia levissimō quoque ventō moventur.",
+   "source": "composed",
+   "record": "aspen",
+   "image": {
+    "file": "Populus tremula 004.jpg",
+    "author": "Willow",
+    "licence": "CC BY-SA 2.5",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.5/",
+    "page": "https://commons.wikimedia.org/wiki/File:Populus_tremula_004.jpg"
+   }
+  },
+  {
+   "id": "salix",
+   "latin": "salix, salicis f.",
+   "english": "willow",
+   "scientific": "Salix",
+   "group": "arbores",
+   "line": "amnicolaeque simul salicēs et aquātica lōtos",
+   "source": "Ov. Met. X 96",
+   "record": "willow",
+   "image": {
+    "file": "Salix alba 4 seasons Summer (001).jpg",
+    "author": "Hans-Jürgen Neubert",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Salix_alba_4_seasons_Summer_(001).jpg"
+   }
+  },
+  {
+   "id": "alnus",
+   "latin": "alnus, alnī f.",
+   "english": "alder",
+   "scientific": "Alnus glutinosa",
+   "group": "arbores",
+   "line": "flūminibus salicēs crassīsque palūdibus alnī / nāscuntur",
+   "source": "Verg. G. II 110–111",
+   "record": "alder",
+   "image": {
+    "file": "Alnus glutinosa sl23.jpg",
+    "author": "Stefan.lefnaer",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Alnus_glutinosa_sl23.jpg"
+   }
+  },
+  {
+   "id": "ulmus",
+   "latin": "ulmus, ulmī f.",
+   "english": "elm",
+   "scientific": "Ulmus",
+   "group": "arbores",
+   "line": "ulmus erat contrā speciōsa nitentibus ūvīs",
+   "source": "Ov. Met. XIV 661",
+   "record": "elm",
+   "image": {
+    "file": "Ulmus glabra in Golden Valley Tree Park, May 2022.jpg",
+    "author": "Calistemon",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Ulmus_glabra_in_Golden_Valley_Tree_Park,_May_2022.jpg"
+   }
+  },
+  {
+   "id": "fraxinus",
+   "latin": "fraxinus, fraxinī f.",
+   "english": "ash",
+   "scientific": "Fraxinus",
+   "group": "arbores",
+   "line": "Fraxinus in silvīs pulcherrima, pīnus in hortīs",
+   "source": "Verg. E. 7, 65",
+   "record": "ash-tree",
+   "image": {
+    "file": "Berlin Naturdenkmale Bezirk Spandau Kladow Gemeine Esche 5-44 B.jpg",
+    "author": "Polimorph",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Berlin_Naturdenkmale_Bezirk_Spandau_Kladow_Gemeine_Esche_5-44_B.jpg"
+   }
+  },
+  {
+   "id": "ornus",
+   "latin": "ornus, ornī f.",
+   "english": "manna ash",
+   "scientific": "Fraxinus ornus",
+   "group": "arbores",
+   "line": "advolvunt ingentēs montibus ornōs",
+   "source": "Verg. A. VI 182",
+   "record": "manna-ash",
+   "image": {
+    "file": "Fraxinus ornus Jesion mannowy 2021-05-26 01.jpg",
+    "author": "Agnieszka Kwiecień, Nova",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Fraxinus_ornus_Jesion_mannowy_2021-05-26_01.jpg"
+   }
+  },
+  {
+   "id": "tilia",
+   "latin": "tilia, tiliae f.",
+   "english": "lime tree, linden",
+   "scientific": "Tilia",
+   "group": "arbores",
+   "line": "nec tiliae mollēs, nec fāgus et innuba laurus",
+   "source": "Ov. Met. X 92",
+   "record": "lime-tree",
+   "image": {
+    "file": "Large-leaved Lime (Tilia platyphyllos) avenue - Kvinnherad, Norway 2021-07-29.jpg",
+    "author": "Ryan Hodnett",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Large-leaved_Lime_(Tilia_platyphyllos)_avenue_-_Kvinnherad,_Norway_2021-07-29.jpg"
+   }
+  },
+  {
+   "id": "acer",
+   "latin": "acer, aceris n.",
+   "english": "maple",
+   "scientific": "Acer",
+   "group": "arbores",
+   "line": "et platanus geniālis acerque colōribus impār",
+   "source": "Ov. Met. X 95",
+   "record": "maple",
+   "image": {
+    "file": "Entzia - Acer Campestre 02.jpg",
+    "author": "Basotxerri",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Entzia_-_Acer_Campestre_02.jpg"
+   }
+  },
+  {
+   "id": "carpinus",
+   "latin": "carpīnus, carpīnī f.",
+   "english": "hornbeam",
+   "scientific": "Carpinus",
+   "group": "arbores",
+   "line": "Quīn etiam cornus et carpīnus et ornus nōnnumquam … in hoc ipsum dispōnitur",
+   "source": "Col. V 7, 1",
+   "record": "hornbeam",
+   "image": {
+    "file": "Naturdenkmal Hainbuche Döhren Melle -Unterm Baum- Datei 3.jpg",
+    "author": "Eloise65",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Naturdenkmal_Hainbuche_D%C3%B6hren_Melle_-Unterm_Baum-_Datei_3.jpg"
+   }
+  },
+  {
+   "id": "platanus",
+   "latin": "platanus, platanī f.",
+   "english": "plane tree",
+   "scientific": "Platanus orientalis",
+   "group": "arbores",
+   "line": "jamque ministrantem platanum pōtantibus umbrās",
+   "source": "Verg. G. IV 146",
+   "record": "plane-tree",
+   "image": {
+    "file": "Platanus orientalis fruits, Thasos.jpg",
+    "author": "Lokal_Profil",
+    "licence": "CC BY-SA 2.5",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.5/",
+    "page": "https://commons.wikimedia.org/wiki/File:Platanus_orientalis_fruits,_Thasos.jpg"
+   }
+  },
+  {
+   "id": "corylus",
+   "latin": "corylus, corylī f.",
+   "english": "hazel",
+   "scientific": "Corylus avellana",
+   "group": "arbores",
+   "line": "et corylī fragilēs et fraxinus ūtilis hastīs",
+   "source": "Ov. Met. X 93",
+   "bears": "Avellānās.",
+   "record": "hazel",
+   "image": {
+    "file": "Corylus avellana shrub.jpg",
+    "author": "MPF",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Corylus_avellana_shrub.jpg"
+   }
+  },
+  {
+   "id": "cornus",
+   "latin": "cornus, cornī f.",
+   "english": "cornelian cherry tree",
+   "scientific": "Cornus mas",
+   "group": "arbores",
+   "line": "at myrtus validīs hastīlibus et bona bellō / cornus",
+   "source": "Verg. G. II 447–448",
+   "bears": "Corna.",
+   "record": "cornelian-cherry-tree",
+   "image": {
+    "file": "Cornus mas sl2.jpg",
+    "author": "Stefan.lefnaer",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Cornus_mas_sl2.jpg"
+   }
+  },
+  {
+   "id": "sorbus",
+   "latin": "sorbus, sorbī f.",
+   "english": "service tree",
+   "scientific": "Sorbus domestica",
+   "group": "arbores",
+   "line": "gaudet frīgidīs sorbus, sed magis etiam betulla",
+   "source": "Plin. NH XVI 74",
+   "bears": "Sorba.",
+   "record": "service-tree",
+   "image": {
+    "file": "073 2015 05 25 Speierling südlich von Meckenheim (Wiki Loves Earth 2015).jpg",
+    "author": "Friedrich Haag",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:073_2015_05_25_Speierling_s%C3%BCdlich_von_Meckenheim_(Wiki_Loves_Earth_2015).jpg"
+   }
+  },
+  {
+   "id": "sorbusaucuparia",
+   "latin": "sorbus aucuparia",
+   "english": "rowan",
+   "scientific": "Sorbus aucuparia",
+   "group": "arbores",
+   "line": "Sorbī aucupariae bācae autumnō rubent.",
+   "source": "composed",
+   "record": "rowan",
+   "image": {
+    "file": "Laub und Früchte der Eberesche bei Sommerhitze im August 2018 mit Trockenstress, Marburg (Germany) 2018-08-06.jpg",
+    "author": "Ludwig Sebastian Micheler",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Laub_und_Fr%C3%BCchte_der_Eberesche_bei_Sommerhitze_im_August_2018_mit_Trockenstress,_Marburg_(Germany)_2018-08-06.jpg"
+   }
+  },
+  {
+   "id": "sambucus",
+   "latin": "sambūcus, sambūcī f.",
+   "english": "elder",
+   "scientific": "Sambucus nigra",
+   "group": "arbores",
+   "line": "Sambūcus flōrēs albōs, deinde bācās nigrās fert.",
+   "source": "composed",
+   "bears": "Bācās.",
+   "record": "elder-tree",
+   "image": {
+    "file": "Sambucus nigra kz18.jpg",
+    "author": "Krzysztof Ziarnek, Kenraiz",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Sambucus_nigra_kz18.jpg"
+   }
+  },
+  {
+   "id": "pinus",
+   "latin": "pīnus, pīnī f.",
+   "english": "pine",
+   "scientific": "Pinus",
+   "group": "arbores",
+   "line": "cujus similitūdinem et fōrmam nōn alia magis arbor quam pīnus expresserit",
+   "source": "Plin. Ep. VI 16, 5",
+   "bears": "Nucēs pīneās.",
+   "record": "pine",
+   "image": {
+    "file": "Pinus pinea Pompeii.jpg",
+    "author": "Jebulon",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Pinus_pinea_Pompeii.jpg"
+   }
+  },
+  {
+   "id": "abies",
+   "latin": "abiēs, abietis f.",
+   "english": "fir",
+   "scientific": "Abies",
+   "group": "arbores",
+   "line": "ēnōdisque abiēs curvātaque glandibus īlex",
+   "source": "Ov. Met. X 94",
+   "record": "fir",
+   "image": {
+    "file": "Abies alba Silesian Beskids.jpg",
+    "author": "Crusier",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Abies_alba_Silesian_Beskids.jpg"
+   }
+  },
+  {
+   "id": "picea",
+   "latin": "picea, piceae f.",
+   "english": "spruce",
+   "scientific": "Picea",
+   "group": "arbores",
+   "line": "prōcumbunt piceae, sonat icta secūribus īlex",
+   "source": "Verg. A. VI 180",
+   "record": "spruce",
+   "image": {
+    "file": "Pëc de Poz Urtijëi Picea abies.jpg",
+    "author": "Wolfgang Moroder",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:P%C3%ABc_de_Poz_Urtij%C3%ABi_Picea_abies.jpg"
+   }
+  },
+  {
+   "id": "taxus",
+   "latin": "taxus, taxī f.",
+   "english": "yew",
+   "scientific": "Taxus baccata",
+   "group": "arbores",
+   "line": "Bacchus amat collēs, Aquilōnem et frīgora taxī",
+   "source": "Verg. G. II 113",
+   "record": "yew",
+   "image": {
+    "file": "Taxus baccata Lviv.JPG",
+    "author": "Mykola Swarnyk",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Taxus_baccata_Lviv.JPG"
+   }
+  },
+  {
+   "id": "juniperus",
+   "latin": "jūniperus, jūniperī f.",
+   "english": "juniper",
+   "scientific": "Juniperus",
+   "group": "arbores",
+   "line": "stant et jūniperī et castaneae hirsūtae",
+   "source": "Verg. E. 7, 53",
+   "bears": "Bācās.",
+   "record": "juniper",
+   "image": {
+    "file": "Juniperus communis in Yyteri 2.jpg",
+    "author": "kallerna",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Juniperus_communis_in_Yyteri_2.jpg"
+   }
+  },
+  {
+   "id": "cupressus",
+   "latin": "cupressus, cupressī f.",
+   "english": "cypress",
+   "scientific": "Cupressus sempervirens",
+   "group": "arbores",
+   "line": "quantum lenta solent inter vīburna cupressī",
+   "source": "Verg. E. 1, 25",
+   "record": "cypress",
+   "image": {
+    "file": "Viale cipressi.jpg",
+    "author": "Repuli",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Viale_cipressi.jpg"
+   }
+  },
+  {
+   "id": "laurus",
+   "latin": "laurus, laurī f.",
+   "english": "bay, laurel",
+   "scientific": "Laurus nobilis",
+   "group": "arbores",
+   "line": "laurus erat tēctī mediō in penetrālibus altīs",
+   "source": "Verg. A. VII 59",
+   "bears": "Bācās.",
+   "record": "bay-herb",
+   "image": {
+    "file": "Drupe mature di alloro (Laurus nobilis)-2026-10-22-Pisa.jpg",
+    "author": "Harlock81",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Drupe_mature_di_alloro_(Laurus_nobilis)-2026-10-22-Pisa.jpg"
+   }
+  },
+  {
+   "id": "myrtus",
+   "latin": "myrtus, myrtī f.",
+   "english": "myrtle",
+   "scientific": "Myrtus communis",
+   "group": "arbores",
+   "line": "fōrmōsae myrtus Venerī, sua laurea Phoebō",
+   "source": "Verg. E. 7, 62",
+   "bears": "Bācās.",
+   "record": "myrtle",
+   "image": {
+    "file": "Myrtaceae - Myrtus communis-1 (8304698448).jpg",
+    "author": "Ettore Balocchi",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Myrtaceae_-_Myrtus_communis-1_(8304698448).jpg"
+   }
+  },
+  {
+   "id": "arbutus",
+   "latin": "arbutus, arbutī f.",
+   "english": "strawberry tree",
+   "scientific": "Arbutus unedo",
+   "group": "arbores",
+   "line": "īnseritur vērō et fētū nucis arbutus horrida",
+   "source": "Verg. G. II 69",
+   "bears": "Arbuta.",
+   "record": "strawberry-tree",
+   "image": {
+    "file": "Arbutus unedo FruitsandFlowersCloseup 2009November15 SierraMadrona.jpg",
+    "author": "Javier martin",
+    "licence": "Public domain",
+    "licence_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Arbutus_unedo_FruitsandFlowersCloseup_2009November15_SierraMadrona.jpg"
+   }
+  },
+  {
+   "id": "buxus",
+   "latin": "buxus, buxī f.",
+   "english": "box tree",
+   "scientific": "Buxus sempervirens",
+   "group": "arbores",
+   "line": "buxus intervenit in fōrmās mīlle dēscrīpta",
+   "source": "Plin. Ep. V 6, 35",
+   "record": "box-tree",
+   "image": {
+    "file": "Buxus sempervirens, Buchskugeln.jpg",
+    "author": "Burkhard Mücke",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Buxus_sempervirens,_Buchskugeln.jpg"
+   }
+  },
+  {
+   "id": "eucalyptus",
+   "latin": "eucalyptus, eucalyptī f.",
+   "english": "eucalyptus",
+   "scientific": "Eucalyptus",
+   "group": "arbores",
+   "line": "Eucalyptus ex Austrāliā in Lūsitāniam advecta est.",
+   "source": "composed",
+   "record": "eucalyptus",
+   "image": {
+    "file": "2026-03-28 Tasmanian blue gum in Moledo.jpg",
+    "author": "Alexkom000",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:2026-03-28_Tasmanian_blue_gum_in_Moledo.jpg"
+   }
+  },
+  {
+   "id": "palma",
+   "latin": "palma, palmae f.",
+   "english": "palm",
+   "scientific": "Phoenix dactylifera",
+   "group": "arbores",
+   "line": "etiam ardua palma nāscitur",
+   "source": "Verg. G. II 67–68",
+   "record": "palm-tree",
+   "image": {
+    "file": "Palmier Dattier.jpg",
+    "author": "Benzita Abdelhadi",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Palmier_Dattier.jpg"
+   }
+  },
+  {
    "id": "papaver",
    "latin": "papāver, papāveris n.",
    "english": "poppy",
@@ -1914,6 +2488,686 @@
     "licence": "CC BY-SA 4.0",
     "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
     "page": "https://commons.wikimedia.org/wiki/File:D%C3%BClmen,_Fr%C3%B6belstra%C3%9Fe,_Mohn_am_Feldrand_--_2021_--_9174.jpg"
+   }
+  },
+  {
+   "id": "rubus",
+   "latin": "rubus, rubī m.",
+   "english": "bramble",
+   "scientific": "Rubus fruticosus",
+   "group": "frutices",
+   "line": "mella fluant illī, ferat et rubus asper amōmum",
+   "source": "Verg. E. 3, 89",
+   "bears": "Mōra.",
+   "record": "bramble",
+   "image": {
+    "file": "Blackberry fruits 2008 G1.jpg",
+    "author": "George Chernilevsky",
+    "licence": "Public domain",
+    "licence_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Blackberry_fruits_2008_G1.jpg"
+   }
+  },
+  {
+   "id": "spinus",
+   "latin": "spīnus, spīnī f.",
+   "english": "blackthorn",
+   "scientific": "Prunus spinosa",
+   "group": "frutices",
+   "line": "ēdūramque pirum et spīnōs jam prūna ferentēs",
+   "source": "Verg. G. IV 145",
+   "bears": "Prūna silvestria.",
+   "record": "blackthorn",
+   "image": {
+    "file": "Schlehdorn P1250894.jpg",
+    "author": "Fischer.H",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Schlehdorn_P1250894.jpg"
+   }
+  },
+  {
+   "id": "aquifolium",
+   "latin": "aquifolium, aquifoliī n.",
+   "english": "holly",
+   "scientific": "Ilex aquifolium",
+   "group": "frutices",
+   "line": "Aquifoliī folia spīnōsa sunt, bācae rubrae.",
+   "source": "composed",
+   "record": "holly",
+   "image": {
+    "file": "Fruits of holly (Ilex aquifolium). Locatie, Jonkersvallei.jpg",
+    "author": "Dominicus Johannes Bergsma",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Fruits_of_holly_(Ilex_aquifolium)._Locatie,_Jonkersvallei.jpg"
+   }
+  },
+  {
+   "id": "hedera",
+   "latin": "hedera, hederae f.",
+   "english": "ivy",
+   "scientific": "Hedera helix",
+   "group": "frutices",
+   "line": "vōs quoque, flexipedēs hederae, vēnistis",
+   "source": "Ov. Met. X 99",
+   "record": "ivy",
+   "image": {
+    "file": "Hedera helix Dover.jpg",
+    "author": "kallerna",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Hedera_helix_Dover.jpg"
+   }
+  },
+  {
+   "id": "viburnum",
+   "latin": "vīburnum, vīburnī n.",
+   "english": "wayfaring tree",
+   "scientific": "Viburnum lantana",
+   "group": "frutices",
+   "line": "quantum lenta solent inter vīburna cupressī",
+   "source": "Verg. E. 1, 25",
+   "record": "wayfaring-tree",
+   "image": {
+    "file": "Wolliger Schneeball mit reifen Früchten (schwarz), Viburnum lantana.jpg",
+    "author": "Georg Buzin",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Wolliger_Schneeball_mit_reifen_Fr%C3%BCchten_(schwarz),_Viburnum_lantana.jpg"
+   }
+  },
+  {
+   "id": "ligustrum",
+   "latin": "ligustrum, ligustrī n.",
+   "english": "privet",
+   "scientific": "Ligustrum vulgare",
+   "group": "frutices",
+   "line": "alba ligustra cadunt, vaccīnia nigra leguntur",
+   "source": "Verg. E. 2, 18",
+   "record": "privet",
+   "image": {
+    "file": "Ligustrum vulgare flowers TK 2022-06-10 1.jpg",
+    "author": "T. Kebert",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Ligustrum_vulgare_flowers_TK_2022-06-10_1.jpg"
+   }
+  },
+  {
+   "id": "genista",
+   "latin": "genista, genistae f.",
+   "english": "broom",
+   "scientific": "Genisteae",
+   "group": "frutices",
+   "line": "salicēs humilēsque genestae aut illae pecorī frondem aut pāstōribus umbram sufficiunt",
+   "source": "Verg. G. II 434–436",
+   "record": "broom-plant",
+   "image": {
+    "file": "Το σπάρτο (Spartium junceum), Ποταμός, Επανομή, Θεσσαλονίκη, 16052021 DSC 0191.jpg",
+    "author": "PLAKLE",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:%CE%A4%CE%BF_%CF%83%CF%80%CE%AC%CF%81%CF%84%CE%BF_(Spartium_junceum),_%CE%A0%CE%BF%CF%84%CE%B1%CE%BC%CF%8C%CF%82,_%CE%95%CF%80%CE%B1%CE%BD%CE%BF%CE%BC%CE%AE,_%CE%98%CE%B5%CF%83%CF%83%CE%B1%CE%BB%CE%BF%CE%BD%CE%AF%CE%BA%CE%B7,_16052021_DSC_0191.jpg"
+   }
+  },
+  {
+   "id": "erice",
+   "latin": "erīcē, erīcēs f.",
+   "english": "heather",
+   "scientific": "Erica",
+   "group": "frutices",
+   "line": "Apēs ex erīcē mel colligunt.",
+   "source": "composed",
+   "record": "heather",
+   "image": {
+    "file": "Erica australis kz02.jpg",
+    "author": "Krzysztof Ziarnek, Kenraiz",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Erica_australis_kz02.jpg"
+   }
+  },
+  {
+   "id": "rosacanina",
+   "latin": "rosa canīna",
+   "english": "dog rose",
+   "scientific": "Rosa canina",
+   "group": "frutices",
+   "line": "Nōn sunt corna; rosae canīnae bācae sunt, quae crūdae rārō eduntur.",
+   "source": "Libellus VII",
+   "record": "dog-rose",
+   "image": {
+    "file": "Hunds-Rose Rosa canina Nationalpark Donau-Auen Lobau Mai 2016 02.jpg",
+    "author": "Manfred Werner - Tsui",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Hunds-Rose_Rosa_canina_Nationalpark_Donau-Auen_Lobau_Mai_2016_02.jpg"
+   }
+  },
+  {
+   "id": "viscum",
+   "latin": "viscum, viscī n.",
+   "english": "mistletoe",
+   "scientific": "Viscum album",
+   "group": "frutices",
+   "line": "quāle solet silvīs brūmālī frīgore viscum fronde virēre novā",
+   "source": "Verg. A. VI 205–206",
+   "record": "mistletoe",
+   "image": {
+    "file": "Viscum album apple-tree 2011 G1.jpg",
+    "author": "George Chernilevsky",
+    "licence": "Public domain",
+    "licence_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Viscum_album_apple-tree_2011_G1.jpg"
+   }
+  },
+  {
+   "id": "filix",
+   "latin": "filix, filicis f.",
+   "english": "fern",
+   "scientific": "Polypodiopsida",
+   "group": "frutices",
+   "line": "neglēctīs ūrenda filix innāscitur agrīs",
+   "source": "Hor. Serm. I 3, 37",
+   "record": "fern",
+   "image": {
+    "file": "Pörtschach Winklern 10.-Oktober-Straße 69 Echter Wurmfarn 21062024 1142.jpg",
+    "author": "Johann Jaritz",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:P%C3%B6rtschach_Winklern_10.-Oktober-Stra%C3%9Fe_69_Echter_Wurmfarn_21062024_1142.jpg"
+   }
+  },
+  {
+   "id": "muscus",
+   "latin": "muscus, muscī m.",
+   "english": "moss",
+   "scientific": "Bryophyta",
+   "group": "frutices",
+   "line": "at liquidī fontēs et stagna virentia muscō adsint",
+   "source": "Verg. G. IV 18–19",
+   "record": "moss",
+   "image": {
+    "file": "Moss-covered stone.jpg",
+    "author": "Alit Variatos",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Moss-covered_stone.jpg"
+   }
+  },
+  {
+   "id": "lichen",
+   "latin": "līchēn, līchēnis m.",
+   "english": "lichen",
+   "group": "frutices",
+   "line": "Līchēn in saxīs et in cortice arborum crēscit.",
+   "source": "composed",
+   "record": "lichen",
+   "image": {
+    "file": "Xanthoria parietina on elm.jpg",
+    "author": "Von.grzanka",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Xanthoria_parietina_on_elm.jpg"
+   }
+  },
+  {
+   "id": "fungus",
+   "latin": "fungus, fungī m.",
+   "english": "mushroom",
+   "scientific": "Agaricomycetes",
+   "group": "frutices",
+   "line": "prātēnsibus optima fungīs nātūra est",
+   "source": "Hor. Serm. II 4, 20–21",
+   "record": "mushroom",
+   "image": {
+    "file": "Fly Agaric mushroom 04.jpg",
+    "author": "Tony Wills",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Fly_Agaric_mushroom_04.jpg"
+   }
+  },
+  {
+   "id": "harundo",
+   "latin": "harundō, harundinis f.",
+   "english": "reed",
+   "scientific": "Phragmites australis",
+   "group": "frutices",
+   "line": "hīc viridīs tenerā praetexit harundine rīpās Mincius",
+   "source": "Verg. E. 7, 12–13",
+   "record": "reed",
+   "image": {
+    "file": "Common reed (Phragmites australis), Jardins Garcia de Orta, Parque das Nações, Lisbon, Portugal julesvernex2.jpg",
+    "author": "Jules Verne Times Two",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Common_reed_(Phragmites_australis),_Jardins_Garcia_de_Orta,_Parque_das_Na%C3%A7%C3%B5es,_Lisbon,_Portugal_julesvernex2.jpg"
+   }
+  },
+  {
+   "id": "juncus",
+   "latin": "juncus, juncī m.",
+   "english": "rush",
+   "scientific": "Juncus",
+   "group": "frutices",
+   "line": "vīminibus mollīque parās dētexere juncō",
+   "source": "Verg. E. 2, 72",
+   "record": "rush-plant",
+   "image": {
+    "file": "Juncus maritimus - Seaside rush, Mersin 2016-10-01 01-2.jpg",
+    "author": "Zeynel Cebeci",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Juncus_maritimus_-_Seaside_rush,_Mersin_2016-10-01_01-2.jpg"
+   }
+  },
+  {
+   "id": "alga",
+   "latin": "alga, algae f.",
+   "english": "seaweed",
+   "group": "frutices",
+   "line": "saxa fremunt laterīque inlīsa refunditur alga",
+   "source": "Verg. A. VII 590",
+   "record": "seaweed",
+   "image": {
+    "file": "Fucus vésiculeux (Fucus vesiculosus) - Sainte-Cécile-Plage.jpg",
+    "author": "JackyM59",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Fucus_v%C3%A9siculeux_(Fucus_vesiculosus)_-_Sainte-C%C3%A9cile-Plage.jpg"
+   }
+  },
+  {
+   "id": "rosa",
+   "latin": "rosa, rosae f.",
+   "english": "rose",
+   "scientific": "Rosa",
+   "group": "frutices",
+   "line": "Spīna etiam grāta est, ex quā spectātur rosa.",
+   "source": "Publil. Sent. S 47",
+   "record": "rose",
+   "image": {
+    "file": "Rosa Red Leonardo da Vinci 2023-08-28 9192.jpg",
+    "author": "Salicyna",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Rosa_Red_Leonardo_da_Vinci_2023-08-28_9192.jpg"
+   }
+  },
+  {
+   "id": "lilium",
+   "latin": "līlium, līliī n.",
+   "english": "lily",
+   "scientific": "Lilium",
+   "group": "frutices",
+   "line": "Cōnsīderāte līlia agrī quōmodo crēscunt",
+   "source": "Mt. 6, 28",
+   "record": "lily",
+   "image": {
+    "file": "20230705 Lilium candidum Panewniki Poland.jpg",
+    "author": "Abraham",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:20230705_Lilium_candidum_Panewniki_Poland.jpg"
+   }
+  },
+  {
+   "id": "viola",
+   "latin": "viola, violae f.",
+   "english": "violet",
+   "scientific": "Viola odorata",
+   "group": "frutices",
+   "line": "jam violam puerīque legunt hilarēsque puellae, rūstica quae nūllō nāta serente venit",
+   "source": "Ov. Trist. III 12, 5–6",
+   "record": "violet",
+   "image": {
+    "file": "Viola odorata 20210226.jpg",
+    "author": "Uoaei1",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Viola_odorata_20210226.jpg"
+   }
+  },
+  {
+   "id": "narcissus",
+   "latin": "narcissus, narcissī m.",
+   "english": "narcissus",
+   "scientific": "Narcissus",
+   "group": "frutices",
+   "line": "narcissum et flōrem jungit bene olentis anēthī",
+   "source": "Verg. E. 2, 48",
+   "record": "narcissus",
+   "image": {
+    "file": "Narcisă (Narcissus poeticus) în Poiana Narciselor, județul Brașov.JPG",
+    "author": "Firilacroco",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Narcis%C4%83_(Narcissus_poeticus)_%C3%AEn_Poiana_Narciselor,_jude%C8%9Bul_Bra%C8%99ov.JPG"
+   }
+  },
+  {
+   "id": "crocus",
+   "latin": "crocus, crocī m.",
+   "english": "crocus",
+   "scientific": "Crocus",
+   "group": "frutices",
+   "line": "ipsa crocōs tenuēs līliaque alba legit",
+   "source": "Ov. Fast. IV 442",
+   "record": "crocus",
+   "image": {
+    "file": "Krokussen (Crocus), Locatie, Tuinreservaat Jonkervallei.jpg",
+    "author": "Dominicus Johannes Bergsma",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Krokussen_(Crocus),_Locatie,_Tuinreservaat_Jonkervallei.jpg"
+   }
+  },
+  {
+   "id": "bellis",
+   "latin": "bellis, bellidis f.",
+   "english": "daisy",
+   "scientific": "Bellis perennis",
+   "group": "frutices",
+   "line": "Ecce, bellidēs in prātō!",
+   "source": "composed",
+   "record": "daisy",
+   "image": {
+    "file": "Five daisies (Bellis perennis).jpg",
+    "author": "Friedrich Haag",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Five_daisies_(Bellis_perennis).jpg"
+   }
+  },
+  {
+   "id": "chamaemelon",
+   "latin": "chamaemēlon, chamaemēlī n.",
+   "english": "chamomile",
+   "scientific": "Matricaria chamomilla",
+   "group": "frutices",
+   "line": "chamaemēlon, quoniam odōrem mālī habeat",
+   "source": "Plin. NH XXII 53",
+   "record": "chamomile",
+   "image": {
+    "file": "Matricaria chamomilla, Santa Coloma de Farners.jpg",
+    "author": "Josep Gesti",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Matricaria_chamomilla,_Santa_Coloma_de_Farners.jpg"
+   }
+  },
+  {
+   "id": "primula",
+   "latin": "primula vulgāris",
+   "english": "primrose",
+   "scientific": "Primula vulgaris",
+   "group": "frutices",
+   "line": "Primula vulgāris prīmō vēre flōret.",
+   "source": "composed",
+   "record": "primrose",
+   "image": {
+    "file": "2018-04-09 (111) Primula vulgaris (primrose) at Bichlhäusl at Haltgraben in Frankenfels.jpg",
+    "author": "GT1976",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:2018-04-09_(111)_Primula_vulgaris_(primrose)_at_Bichlh%C3%A4usl_at_Haltgraben_in_Frankenfels.jpg"
+   }
+  },
+  {
+   "id": "galanthus",
+   "latin": "galanthus nivālis",
+   "english": "snowdrop",
+   "scientific": "Galanthus nivalis",
+   "group": "frutices",
+   "line": "Galanthus nivālis hieme exeunte ē nive ēmergit.",
+   "source": "composed",
+   "record": "snowdrop",
+   "image": {
+    "file": "Schneeglöckchen (Galanthus nivalis)-20230220-RM-155123.jpg",
+    "author": "Ermell",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Schneegl%C3%B6ckchen_(Galanthus_nivalis)-20230220-RM-155123.jpg"
+   }
+  },
+  {
+   "id": "trifolium",
+   "latin": "trifolium, trifoliī n.",
+   "english": "clover",
+   "scientific": "Trifolium",
+   "group": "frutices",
+   "line": "Trifolium terna folia habet, rārō quaterna.",
+   "source": "composed",
+   "record": "clover",
+   "image": {
+    "file": "Red Clover 2011 G1.jpg",
+    "author": "George Chernilevsky",
+    "licence": "Public domain",
+    "licence_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Red_Clover_2011_G1.jpg"
+   }
+  },
+  {
+   "id": "malva",
+   "latin": "malva, malvae f.",
+   "english": "mallow",
+   "scientific": "Malva",
+   "group": "frutices",
+   "line": "fēcundusque rumex malvaeque inulaeque virēbant",
+   "source": "Mor. 73",
+   "record": "mallow",
+   "image": {
+    "file": "Malva sylvestris, Frontignan 01.jpg",
+    "author": "Christian Ferrer",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Malva_sylvestris,_Frontignan_01.jpg"
+   }
+  },
+  {
+   "id": "plantago",
+   "latin": "plantāgō, plantāginis f.",
+   "english": "plantain",
+   "scientific": "Plantago",
+   "group": "frutices",
+   "line": "Omnisque dolor oculōrum inūnctiōne sūcī plantāginis cum melle acapnō … celeriter levātur",
+   "source": "Col. VI 33, 2",
+   "record": "plantain",
+   "image": {
+    "file": "Plantago major RF.jpg",
+    "author": "Robert Flogaus-Faust",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Plantago_major_RF.jpg"
+   }
+  },
+  {
+   "id": "ranunculus",
+   "latin": "rānunculus, rānunculī m.",
+   "english": "buttercup",
+   "scientific": "Ranunculus",
+   "group": "frutices",
+   "line": "Rānunculī flōrēs flāvī in prātīs nitent.",
+   "source": "composed",
+   "record": "buttercup",
+   "image": {
+    "file": "Scherpe boterbloem (Ranunculus acris) 01.JPG",
+    "author": "Dominicus Johannes Bergsma",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Scherpe_boterbloem_(Ranunculus_acris)_01.JPG"
+   }
+  },
+  {
+   "id": "urtica",
+   "latin": "urtīca, urtīcae f.",
+   "english": "nettle",
+   "scientific": "Urtica dioica",
+   "group": "frutices",
+   "line": "et ecce tōtum replēverant urtīcae",
+   "source": "Prov. 24, 31",
+   "record": "nettle",
+   "image": {
+    "file": "Urtica Dioica March 2026-1.jpg",
+    "author": "Alvesgaspar",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Urtica_Dioica_March_2026-1.jpg"
+   }
+  },
+  {
+   "id": "carduus",
+   "latin": "carduus, carduī m.",
+   "english": "thistle",
+   "scientific": "Cardueae",
+   "group": "frutices",
+   "line": "carduus et spīnīs surgit paliūrus acūtīs",
+   "source": "Verg. E. 5, 39",
+   "record": "thistle",
+   "image": {
+    "file": "Mooie bloeiwijze van een Speerdistel (Cirsium vulgare) 03.jpg",
+    "author": "Dominicus Johannes Bergsma",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Mooie_bloeiwijze_van_een_Speerdistel_(Cirsium_vulgare)_03.jpg"
+   }
+  },
+  {
+   "id": "lappa",
+   "latin": "lappa, lappae f.",
+   "english": "bur, burdock",
+   "scientific": "Arctium",
+   "group": "frutices",
+   "line": "intereunt segetēs, subit aspera silva, lappaeque tribolīque",
+   "source": "Verg. G. I 152–153",
+   "record": "bur",
+   "image": {
+    "file": "Arctium (fruit).jpg",
+    "author": "Martin Ehrensberger",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Arctium_(fruit).jpg"
+   }
+  },
+  {
+   "id": "cicuta",
+   "latin": "cicūta, cicūtae f.",
+   "english": "hemlock",
+   "scientific": "Conium maculatum",
+   "group": "frutices",
+   "line": "edit cicūtīs ālium nocentius",
+   "source": "Hor. Epod. 3, 3",
+   "record": "hemlock",
+   "image": {
+    "file": "Conium maculatum kz01 2021-06-23 Równe.jpg",
+    "author": "Krzysztof Ziarnek, Kenraiz",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Conium_maculatum_kz01_2021-06-23_R%C3%B3wne.jpg"
+   }
+  },
+  {
+   "id": "absinthium",
+   "latin": "absinthium, absinthiī n.",
+   "english": "wormwood",
+   "scientific": "Artemisia absinthium",
+   "group": "frutices",
+   "line": "trīstia per vacuōs horrent absinthia campōs",
+   "source": "Ov. Pont. III 1, 23",
+   "record": "wormwood",
+   "image": {
+    "file": "Artemisia absinthium Bylica piołun 2022-05-22 01.jpg",
+    "author": "Agnieszka Kwiecień, Nova",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Artemisia_absinthium_Bylica_pio%C5%82un_2022-05-22_01.jpg"
+   }
+  },
+  {
+   "id": "lavandula",
+   "latin": "lavandula, lavandulae f.",
+   "english": "lavender",
+   "scientific": "Lavandula",
+   "group": "frutices",
+   "line": "Lavandulae flōrēs suāviter olent.",
+   "source": "composed",
+   "record": "lavender",
+   "image": {
+    "file": "Lavande off FR 2012.jpg",
+    "author": "JLPC",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Lavande_off_FR_2012.jpg"
+   }
+  },
+  {
+   "id": "nerium",
+   "latin": "nērium, nēriī n.",
+   "english": "oleander",
+   "scientific": "Nerium oleander",
+   "group": "frutices",
+   "line": "Rhododendros nē nōmen quidem apud nōs invēnit Latīnum; rhododaphnēn vocant aut nērium.",
+   "source": "Plin. NH XXIV 90",
+   "record": "oleander",
+   "image": {
+    "file": "Laurier rose FR 2014.jpg",
+    "author": "JLPC",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Laurier_rose_FR_2014.jpg"
+   }
+  },
+  {
+   "id": "paeonia",
+   "latin": "paeōnia, paeōniae f.",
+   "english": "peony",
+   "scientific": "Paeonia",
+   "group": "frutices",
+   "line": "vetustissima inventū paeōnia est nōmenque auctōris retinet",
+   "source": "Plin. NH XXV 29",
+   "record": "peony",
+   "image": {
+    "file": "Red Peonia in the Large Pálffy garden under the castle of Prague 02.jpg",
+    "author": "Kritzolina",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Red_Peonia_in_the_Large_P%C3%A1lffy_garden_under_the_castle_of_Prague_02.jpg"
+   }
+  },
+  {
+   "id": "iris",
+   "latin": "īris, īridis f.",
+   "english": "iris",
+   "scientific": "Iris",
+   "group": "frutices",
+   "line": "Īris Illyrica ā similitūdine Īris caelestis nōmen accēpit.",
+   "source": "Isid. Etym. XVII 9, 9",
+   "record": "iris-flower",
+   "image": {
+    "file": "Schwertlilie -- 2025 -- 7603.jpg",
+    "author": "Dietmar Rabich",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Schwertlilie_--_2025_--_7603.jpg"
+   }
+  },
+  {
+   "id": "cichorium",
+   "latin": "cichorium, cichoriī n.",
+   "english": "chicory",
+   "scientific": "Cichorium intybus",
+   "group": "frutices",
+   "line": "mē pāscunt olīvae, mē cichorēa levēsque malvae",
+   "source": "Hor. Carm. I 31, 15–16",
+   "record": "chicory",
+   "image": {
+    "file": "Cichorium intybus 01.JPG",
+    "author": "Uoaei1",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Cichorium_intybus_01.JPG"
    }
   },
   {
@@ -1935,6 +3189,1220 @@
    }
   },
   {
+   "id": "malus",
+   "latin": "mālus, mālī f.",
+   "english": "apple tree",
+   "scientific": "Malus domestica",
+   "group": "pomarium",
+   "line": "et sterilēs platanī mālōs gessēre valentēs",
+   "source": "Verg. G. II 70",
+   "bears": "Māla.",
+   "record": "apple-tree",
+   "image": {
+    "file": "Apple tree, Streuobstwiese in Ehrenbach, 1.jpg",
+    "author": "Gerda Arendt",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Apple_tree,_Streuobstwiese_in_Ehrenbach,_1.jpg"
+   }
+  },
+  {
+   "id": "malum",
+   "latin": "mālum, mālī n.",
+   "english": "apple",
+   "scientific": "Malus domestica",
+   "group": "pomarium",
+   "line": "prūnaque et in patulīs redolentia māla canistrīs",
+   "source": "Ov. Met. VIII 675",
+   "record": "apple",
+   "image": {
+    "file": "Apples on tree 2011 G1.jpg",
+    "author": "George Chernilevsky",
+    "licence": "Public domain",
+    "licence_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Apples_on_tree_2011_G1.jpg"
+   }
+  },
+  {
+   "id": "pirus",
+   "latin": "pirus, pirī f.",
+   "english": "pear tree",
+   "scientific": "Pyrus communis",
+   "group": "pomarium",
+   "line": "arbor erat pirus in vīcīniā nostrae vīneae",
+   "source": "Aug. Conf. II 4, 9",
+   "bears": "Pira.",
+   "record": "pear-tree",
+   "image": {
+    "file": "Wild Pear tree (Pyrus communis), Cunninghamhead, North Ayrshire.jpg",
+    "author": "Rosser1954",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Wild_Pear_tree_(Pyrus_communis),_Cunninghamhead,_North_Ayrshire.jpg"
+   }
+  },
+  {
+   "id": "pirum",
+   "latin": "pirum, pirī n.",
+   "english": "pear",
+   "scientific": "Pyrus communis",
+   "group": "pomarium",
+   "line": "māla et pira dulcissimī sapōris, mediocriter mātūra ēliguntur",
+   "source": "Col. XII 14",
+   "record": "pear",
+   "image": {
+    "file": "Pears in basket 2022 G1.jpg",
+    "author": "George Chernilevsky",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Pears_in_basket_2022_G1.jpg"
+   }
+  },
+  {
+   "id": "prunus",
+   "latin": "prūnus, prūnī f.",
+   "english": "plum tree",
+   "scientific": "Prunus domestica",
+   "group": "pomarium",
+   "line": "et prūnīs lapidōsa rubēscere corna",
+   "source": "Verg. G. II 34",
+   "bears": "Prūna.",
+   "record": "plum-tree",
+   "image": {
+    "file": "Damson plum tree in Kazanlak, Bulgaria.jpg",
+    "author": "Aniket Mone (www.aniketmone.com)",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Damson_plum_tree_in_Kazanlak,_Bulgaria.jpg"
+   }
+  },
+  {
+   "id": "prunum",
+   "latin": "prūnum, prūnī n.",
+   "english": "plum",
+   "scientific": "Prunus domestica",
+   "group": "pomarium",
+   "line": "addam cērea prūna (honōs erit huic quoque pōmō)",
+   "source": "Verg. E. 2, 53",
+   "record": "plum",
+   "image": {
+    "file": "Susina prugna.jpg",
+    "author": "Anna.Massini",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Susina_prugna.jpg"
+   }
+  },
+  {
+   "id": "cerasus",
+   "latin": "cerasus, cerasī f.",
+   "english": "cherry tree",
+   "scientific": "Prunus avium",
+   "group": "pomarium",
+   "line": "cerasī ante victōriam Mithridāticam L. Lūcullī nōn fuēre in Ītaliā",
+   "source": "Plin. NH XV 102",
+   "bears": "Cerasa.",
+   "record": "cherry-tree",
+   "image": {
+    "file": "Beilstein - Billensbach - blühender Kirschbaum.jpg",
+    "author": "Roman Eisele",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Beilstein_-_Billensbach_-_bl%C3%BChender_Kirschbaum.jpg"
+   }
+  },
+  {
+   "id": "cerasum",
+   "latin": "cerasum, cerasī n.",
+   "english": "cherry",
+   "scientific": "Prunus avium",
+   "group": "pomarium",
+   "line": "Quid cerasa vestra, suntne mātūra?",
+   "source": "Pont. Progymn. I 41",
+   "record": "cherry",
+   "image": {
+    "file": "Cherry Stella444.jpg",
+    "author": "Benjamint444 , edited by Fir0002",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Cherry_Stella444.jpg"
+   }
+  },
+  {
+   "id": "ficus",
+   "latin": "fīcus, fīcī f.",
+   "english": "fig tree",
+   "scientific": "Ficus carica",
+   "group": "pomarium",
+   "line": "hortum mōrus et fīcus frequēns vestit",
+   "source": "Plin. Ep. II 17, 15",
+   "bears": "Fīcūs.",
+   "record": "fig-tree",
+   "image": {
+    "file": "Ficus carica o higuera.jpg",
+    "author": "Juan Emilio Prades Bel",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Ficus_carica_o_higuera.jpg"
+   }
+  },
+  {
+   "id": "ficuspomum",
+   "latin": "fīcus, fīcūs f.",
+   "english": "fig",
+   "scientific": "Ficus carica",
+   "group": "pomarium",
+   "line": "et nux ōrnābat mēnsās cum duplice fīcū",
+   "source": "Hor. Serm. II 2, 122",
+   "record": "fig",
+   "image": {
+    "file": "Ripe fig fruit on tree (Ficus Carica) in Southern France.JPG",
+    "author": "Stefan Thiesen",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Ripe_fig_fruit_on_tree_(Ficus_Carica)_in_Southern_France.JPG"
+   }
+  },
+  {
+   "id": "oliva",
+   "latin": "olīva, olīvae f.",
+   "english": "olive tree",
+   "scientific": "Olea europaea",
+   "group": "pomarium",
+   "line": "olīva nōbīs propter frūctum est grātior",
+   "source": "Phaedr. III 17, 9",
+   "bears": "Olīvās.",
+   "record": "olive-tree",
+   "image": {
+    "file": "Koroneiki-Olive-Tree-Sitia-Crete-Greece.jpg",
+    "author": "Petro Stelte",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Koroneiki-Olive-Tree-Sitia-Crete-Greece.jpg"
+   }
+  },
+  {
+   "id": "uva",
+   "latin": "ūva, ūvae f.",
+   "english": "grapes",
+   "scientific": "Vitis vinifera",
+   "group": "pomarium",
+   "line": "sunt aurō similēs longīs in vītibus ūvae",
+   "source": "Ov. Met. XIII 813",
+   "record": "grape",
+   "image": {
+    "file": "Uva nera da vino - grappoli 1.jpg",
+    "author": "Anna.Massini",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Uva_nera_da_vino_-_grappoli_1.jpg"
+   }
+  },
+  {
+   "id": "juglans",
+   "latin": "jūglāns, jūglandis f.",
+   "english": "walnut",
+   "scientific": "Juglans regia",
+   "group": "pomarium",
+   "line": "haec glāns optima et maxima ā Jove et glande jūglāns est appellāta",
+   "source": "Varr. LL V 102",
+   "bears": "Nucēs.",
+   "record": "walnut",
+   "image": {
+    "file": "Walnuts - whole and open with halved kernel.jpg",
+    "author": "Ivar Leidus",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Walnuts_-_whole_and_open_with_halved_kernel.jpg"
+   }
+  },
+  {
+   "id": "avellana",
+   "latin": "avellāna, avellānae f.",
+   "english": "hazelnut",
+   "scientific": "Corylus avellana",
+   "group": "pomarium",
+   "line": "nucēs calvās, Abellānās, Praenestīnās, Graecās, haec facitō utī serantur",
+   "source": "Cato Agr. 8, 2",
+   "record": "hazelnut",
+   "image": {
+    "file": "Hazelnuts (Corylus avellana) - whole with kernels.jpg",
+    "author": "Ivar Leidus",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Hazelnuts_(Corylus_avellana)_-_whole_with_kernels.jpg"
+   }
+  },
+  {
+   "id": "amygdalum",
+   "latin": "amygdalum, amygdalī n.",
+   "english": "almond",
+   "scientific": "Prunus dulcis",
+   "group": "pomarium",
+   "line": "ecce, istās septem fīcūs, cum hīsce amygdalīs praemium tollēs.",
+   "source": "Pont. Progymn. I 45",
+   "record": "almond",
+   "image": {
+    "file": "Almonds - in shell, shell cracked open, shelled, blanched.jpg",
+    "author": "Ivar Leidus",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Almonds_-_in_shell,_shell_cracked_open,_shelled,_blanched.jpg"
+   }
+  },
+  {
+   "id": "persicum",
+   "latin": "Persicum, Persicī n.",
+   "english": "peach",
+   "scientific": "Prunus persica",
+   "group": "pomarium",
+   "line": "Vīlia māternīs fuerāmus Persica rāmīs: nunc in adoptīvīs Persica cāra sumus.",
+   "source": "Mart. XIII 46",
+   "record": "peach",
+   "image": {
+    "file": "Autumn Red peaches.jpg",
+    "author": "Jack Dykinga, USDA",
+    "licence": "Public domain",
+    "licence_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Autumn_Red_peaches.jpg"
+   }
+  },
+  {
+   "id": "armeniacum",
+   "latin": "Armeniacum, Armeniacī n.",
+   "english": "apricot",
+   "scientific": "Prunus armeniaca",
+   "group": "pomarium",
+   "line": "Sorbī quoque et Armeniacī atque Persicī nōn minima est grātia.",
+   "source": "Col. V 10, 19",
+   "record": "apricot",
+   "image": {
+    "file": "Apricot fruits on tree, Niğde 2017-08-05 01-1.jpg",
+    "author": "Zeynel Cebeci",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Apricot_fruits_on_tree,_Ni%C4%9Fde_2017-08-05_01-1.jpg"
+   }
+  },
+  {
+   "id": "cydonium",
+   "latin": "cydōnium, cydōniī n.",
+   "english": "quince",
+   "scientific": "Cydonia oblonga",
+   "group": "pomarium",
+   "line": "cydōnea mātūrissima integra sine maculā et serēnō caelō dēcrēscente lūnā legantur",
+   "source": "Col. XII 47, 2",
+   "record": "quince",
+   "image": {
+    "file": "Quince fruit in Dabrica, Bosnia and Herzegovina-bs.jpg",
+    "author": "Minja Klarić",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Quince_fruit_in_Dabrica,_Bosnia_and_Herzegovina-bs.jpg"
+   }
+  },
+  {
+   "id": "malumgranatum",
+   "latin": "mālum grānātum",
+   "english": "pomegranate",
+   "scientific": "Punica granatum",
+   "group": "pomarium",
+   "line": "dē mālīs quoque grānātīs et dē fīcīs locī illīus tulērunt",
+   "source": "Num. 13, 24",
+   "record": "pomegranate",
+   "image": {
+    "file": "Pomegranate (opened).jpg",
+    "author": "Ivar Leidus",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Pomegranate_(opened).jpg"
+   }
+  },
+  {
+   "id": "malumaurantium",
+   "latin": "mālum aurantium",
+   "english": "orange",
+   "scientific": "Citrus × sinensis",
+   "group": "pomarium",
+   "line": "Māla aurantia in Lūsitāniā hieme mātūrēscunt.",
+   "source": "composed",
+   "record": "orange-fruit",
+   "image": {
+    "file": "Oranges - whole-halved-segment.jpg",
+    "author": "Ivar Leidus",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Oranges_-_whole-halved-segment.jpg"
+   }
+  },
+  {
+   "id": "citreum",
+   "latin": "citreum, citreī n.",
+   "english": "lemon",
+   "scientific": "Citrus × limon",
+   "group": "pomarium",
+   "line": "Citreum flāvum est, sūcus ejus acidus.",
+   "source": "composed",
+   "record": "lemon",
+   "image": {
+    "file": "Lemon - whole and split.jpg",
+    "author": "Ivar Leidus",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Lemon_-_whole_and_split.jpg"
+   }
+  },
+  {
+   "id": "cornum",
+   "latin": "cornum, cornī n.",
+   "english": "cornelian cherry",
+   "scientific": "Cornus mas",
+   "group": "pomarium",
+   "line": "vīctum īnfēlīcem, bācās lapidōsaque corna, dant rāmī",
+   "source": "Verg. A. III 649–650",
+   "record": "cornelian-cherry",
+   "image": {
+    "file": "Cornus mas drupes.JPG",
+    "author": "Wlodzimierz",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Cornus_mas_drupes.JPG"
+   }
+  },
+  {
+   "id": "prunumsilvestre",
+   "latin": "prūnum silvestre",
+   "english": "sloe",
+   "scientific": "Prunus spinosa",
+   "group": "pomarium",
+   "line": "ēdūramque pirum et spīnōs jam prūna ferentēs",
+   "source": "Verg. G. IV 145",
+   "record": "sloe",
+   "image": {
+    "file": "Closeup of blackthorn aka sloe aka prunus spinosa sweden 20050924.jpg",
+    "author": "Martin Olsson",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Closeup_of_blackthorn_aka_sloe_aka_prunus_spinosa_sweden_20050924.jpg"
+   }
+  },
+  {
+   "id": "morum",
+   "latin": "mōrum, mōrī n.",
+   "english": "blackberry",
+   "scientific": "Rubus fruticosus",
+   "group": "pomarium",
+   "line": "ille domum glandēs excussaque mōra rubētīs portat et ārsūrīs ārida ligna focīs",
+   "source": "Ov. Fast. IV 509–510",
+   "record": "blackberry",
+   "image": {
+    "file": "Blackberry fruits 2008 G1.jpg",
+    "author": "George Chernilevsky",
+    "licence": "Public domain",
+    "licence_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Blackberry_fruits_2008_G1.jpg"
+   }
+  },
+  {
+   "id": "morumidaeum",
+   "latin": "mōrum Īdaeum",
+   "english": "raspberry",
+   "scientific": "Rubus idaeus",
+   "group": "pomarium",
+   "line": "Mōra Īdaea rubra et dulcia aestāte leguntur.",
+   "source": "composed",
+   "record": "raspberry",
+   "image": {
+    "file": "Raspberries (Rubus idaeus).jpg",
+    "author": "Ivar Leidus",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Raspberries_(Rubus_idaeus).jpg"
+   }
+  },
+  {
+   "id": "fragum",
+   "latin": "frāgum, frāgī n.",
+   "english": "strawberry",
+   "scientific": "Fragaria",
+   "group": "pomarium",
+   "line": "ipsa tuīs manibus silvestrī nāta sub umbrā mollia frāga legēs",
+   "source": "Ov. Met. XIII 815–816",
+   "record": "strawberry",
+   "image": {
+    "file": "Erdbeere 25 05 2009.JPG",
+    "author": "Blackerking",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Erdbeere_25_05_2009.JPG"
+   }
+  },
+  {
+   "id": "pepo",
+   "latin": "pepō, peponis m.",
+   "english": "melon",
+   "scientific": "Cucumis melo",
+   "group": "pomarium",
+   "line": "in mentem nōbīs veniunt cucumerēs et peponēs porrīque et cēpae et ālia",
+   "source": "Num. 11, 5",
+   "record": "melon",
+   "image": {
+    "file": "Cucumis melo on white background.jpg",
+    "author": "Filo gèn'",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Cucumis_melo_on_white_background.jpg"
+   }
+  },
+  {
+   "id": "citrullus",
+   "latin": "citrullus, citrullī m.",
+   "english": "watermelon",
+   "scientific": "Citrullus lanatus",
+   "group": "pomarium",
+   "line": "Citrullus foris viridis, intus ruber est.",
+   "source": "composed",
+   "record": "watermelon",
+   "image": {
+    "file": "Watermelon cut.jpg",
+    "author": "B SAYnT",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Watermelon_cut.jpg"
+   }
+  },
+  {
+   "id": "brassica",
+   "latin": "brassica, brassicae f.",
+   "english": "cabbage",
+   "scientific": "Brassica oleracea",
+   "group": "hortus",
+   "line": "brassica est quae omnibus holeribus antistat",
+   "source": "Cato Agr. 156, 1",
+   "record": "cabbage",
+   "image": {
+    "file": "Brassica oleracea 2011 G1.jpg",
+    "author": "George Chernilevsky",
+    "licence": "Public domain",
+    "licence_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Brassica_oleracea_2011_G1.jpg"
+   }
+  },
+  {
+   "id": "lactuca",
+   "latin": "lactūca, lactūcae f.",
+   "english": "lettuce",
+   "scientific": "Lactuca sativa",
+   "group": "hortus",
+   "line": "clūdere quae cēnās lactūca solēbat avōrum, dīc mihi, cūr nostrās inchoat illa dapēs?",
+   "source": "Mart. XIII 14, 1–2",
+   "record": "lettuce",
+   "image": {
+    "file": "Lactuca sativa 'Ashbrook'.jpg",
+    "author": "DeFacto",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Lactuca_sativa_'Ashbrook'.jpg"
+   }
+  },
+  {
+   "id": "spinacia",
+   "latin": "spinacia, spinaciae f.",
+   "english": "spinach",
+   "scientific": "Spinacia oleracea",
+   "group": "hortus",
+   "line": "Spinaciae folia viridia crūda aut cocta eduntur.",
+   "source": "composed",
+   "record": "spinach",
+   "image": {
+    "file": "Spinach in greenhouse.jpg",
+    "author": "Lars Mogren (SLU)",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Spinach_in_greenhouse.jpg"
+   }
+  },
+  {
+   "id": "caepa",
+   "latin": "caepa, caepae f.",
+   "english": "onion",
+   "scientific": "Allium cepa",
+   "group": "hortus",
+   "line": "caedenda est hortīs ēruta cēpa meīs",
+   "source": "Ov. Fast. III 340",
+   "record": "onion",
+   "image": {
+    "file": "Zwiebeln auf Antigua.jpg",
+    "author": "CHK46",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Zwiebeln_auf_Antigua.jpg"
+   }
+  },
+  {
+   "id": "alium",
+   "latin": "ālium, āliī n.",
+   "english": "garlic",
+   "scientific": "Allium sativum",
+   "group": "hortus",
+   "line": "ac prīmum leviter digitīs tellūre refossā quattuor ēdūcit cum spissīs ālia fibrīs",
+   "source": "Mor. 88–89",
+   "record": "garlic",
+   "image": {
+    "file": "Münster, Domplatz, Wochenmarkt -- 2019 -- 2683.jpg",
+    "author": "Dietmar Rabich",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:M%C3%BCnster,_Domplatz,_Wochenmarkt_--_2019_--_2683.jpg"
+   }
+  },
+  {
+   "id": "porrum",
+   "latin": "porrum, porrī n.",
+   "english": "leek",
+   "scientific": "Allium ampeloprasum",
+   "group": "hortus",
+   "line": "inde domum mē ad porrī et ciceris referō laganīque catīnum",
+   "source": "Hor. Serm. I 6, 114–115",
+   "record": "leek",
+   "image": {
+    "file": "Porree Ernte von Hand-4-Josef Schlaghecken.jpg",
+    "author": "Schlaghecken Josef",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Porree_Ernte_von_Hand-4-Josef_Schlaghecken.jpg"
+   }
+  },
+  {
+   "id": "cucumis",
+   "latin": "cucumis, cucumeris m.",
+   "english": "cucumber",
+   "scientific": "Cucumis sativus",
+   "group": "hortus",
+   "line": "cucumis, mīrā voluptāte Tiberiō prīncipī expetītus. nūllō quippe nōn diē contigit eī",
+   "source": "Plin. NH XIX 64",
+   "record": "cucumber",
+   "image": {
+    "file": "Melbourne (AU), Queen Victoria Market -- 2019 -- 1543.jpg",
+    "author": "Dietmar Rabich",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Melbourne_(AU),_Queen_Victoria_Market_--_2019_--_1543.jpg"
+   }
+  },
+  {
+   "id": "cucurbita",
+   "latin": "cucurbita, cucurbitae f.",
+   "english": "pumpkin, gourd",
+   "scientific": "Cucurbita",
+   "group": "hortus",
+   "line": "Cucurbitam coctam adde.",
+   "source": "composed",
+   "record": "pumpkin",
+   "image": {
+    "file": "Cucurbita 2011 G1.jpg",
+    "author": "George Chernilevsky",
+    "licence": "Public domain",
+    "licence_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Cucurbita_2011_G1.jpg"
+   }
+  },
+  {
+   "id": "lycopersicum",
+   "latin": "lycopersicum, lycopersicī n.",
+   "english": "tomato",
+   "scientific": "Solanum lycopersicum",
+   "group": "hortus",
+   "line": "Lycopersicum secō.",
+   "source": "composed",
+   "record": "tomato",
+   "image": {
+    "file": "Tomatoes 2026 G1.jpg",
+    "author": "George Chernilevsky",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Tomatoes_2026_G1.jpg"
+   }
+  },
+  {
+   "id": "capsicum",
+   "latin": "capsicum, capsicī n.",
+   "english": "bell pepper",
+   "scientific": "Capsicum",
+   "group": "hortus",
+   "line": "Capsicum rubrum secā et sēmina exime.",
+   "source": "composed",
+   "record": "bell-pepper",
+   "image": {
+    "file": "Peppers in basket 2025 G1.jpg",
+    "author": "George Chernilevsky",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Peppers_in_basket_2025_G1.jpg"
+   }
+  },
+  {
+   "id": "melongena",
+   "latin": "melongēna, melongēnae f.",
+   "english": "eggplant",
+   "scientific": "Solanum melongena",
+   "group": "hortus",
+   "line": "Melongēnae cutis purpurea nitet.",
+   "source": "composed",
+   "record": "eggplant",
+   "image": {
+    "file": "Solanum melongena 24 08 2012 (1).JPG",
+    "author": "Joydeep",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Solanum_melongena_24_08_2012_(1).JPG"
+   }
+  },
+  {
+   "id": "pomumterrestre",
+   "latin": "pōmum terrestre",
+   "english": "potato",
+   "scientific": "Solanum tuberosum",
+   "group": "hortus",
+   "line": "pōmum terrestre in furnō coctum",
+   "source": "Traupman 72",
+   "record": "potato",
+   "image": {
+    "file": "King Edward.jpg",
+    "author": "Hangsna",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:King_Edward.jpg"
+   }
+  },
+  {
+   "id": "carota",
+   "latin": "carōta, carōtae f.",
+   "english": "carrot",
+   "scientific": "Daucus carota",
+   "group": "hortus",
+   "line": "Carōtās ēlixātās concīsās in cumīnātō oleō modicō coquēs et īnferēs.",
+   "source": "Apic. III 21, 3",
+   "record": "carrot",
+   "image": {
+    "file": "Carrot harvest.jpg",
+    "author": "woodleywonderworks",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Carrot_harvest.jpg"
+   }
+  },
+  {
+   "id": "beta",
+   "latin": "bēta, bētae f.",
+   "english": "beetroot",
+   "scientific": "Beta vulgaris",
+   "group": "hortus",
+   "line": "hīc holus, hīc lātē fundentēs bracchia bētae fēcundusque rumex malvaeque inulaeque virēbant",
+   "source": "Mor. 72–73",
+   "record": "beetroot",
+   "image": {
+    "file": "Beta vulgaris Detroit 2 (beetroot) (SaatPilot).jpg",
+    "author": "Steffen Bauer ( saatpilot.de )",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Beta_vulgaris_Detroit_2_(beetroot)_(SaatPilot).jpg"
+   }
+  },
+  {
+   "id": "rapum",
+   "latin": "rāpum, rāpī n.",
+   "english": "turnip",
+   "scientific": "Brassica rapa",
+   "group": "hortus",
+   "line": "Rāpa quam rotundissima sūmitō",
+   "source": "Col. XII 56, 1",
+   "record": "turnip",
+   "image": {
+    "file": "Turnip 2622027.jpg",
+    "author": "thebittenword.com",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Turnip_2622027.jpg"
+   }
+  },
+  {
+   "id": "radicula",
+   "latin": "rādīcula, rādīculae f.",
+   "english": "radish",
+   "scientific": "Raphanus sativus",
+   "group": "hortus",
+   "line": "Rādīcula foris rubet, intus alba est.",
+   "source": "composed",
+   "record": "radish",
+   "image": {
+    "file": "Raphanus sativus Saxa 2 (radish), harvested roots (SaatPilot).jpg",
+    "author": "Steffen Bauer ( saatpilot.de )",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Raphanus_sativus_Saxa_2_(radish),_harvested_roots_(SaatPilot).jpg"
+   }
+  },
+  {
+   "id": "faba",
+   "latin": "faba, fabae f.",
+   "english": "broad bean",
+   "scientific": "Vicia faba",
+   "group": "hortus",
+   "line": "eōdem diē vīdī fabam metentēs, milium serentēs",
+   "source": "Sen. Ep. 86, 16",
+   "record": "broad-bean",
+   "image": {
+    "file": "Dicke Bohne Samen neben den Hülsen, Josef Schlaghecken.jpg",
+    "author": "Schlaghecken Josef",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Dicke_Bohne_Samen_neben_den_H%C3%BClsen,_Josef_Schlaghecken.jpg"
+   }
+  },
+  {
+   "id": "phaselus",
+   "latin": "phasēlus, phasēlī m.",
+   "english": "bean",
+   "scientific": "Phaseolus vulgaris",
+   "group": "hortus",
+   "line": "et gravis ātriplicī cōnsurgit longa phasēlos",
+   "source": "Col. X 377",
+   "record": "bean",
+   "image": {
+    "file": "Green beans 169clue.jpg",
+    "author": "16:9clue",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Green_beans_169clue.jpg"
+   }
+  },
+  {
+   "id": "pisum",
+   "latin": "pīsum, pīsī n.",
+   "english": "pea",
+   "scientific": "Pisum sativum",
+   "group": "hortus",
+   "line": "in lance argenteā pīsum pūrgābat",
+   "source": "Petr. Sat. 28, 4",
+   "record": "pea",
+   "image": {
+    "file": "Pisum sativum Kelvedon Wonder (garden pea), harvested pods (SaatPilot).jpg",
+    "author": "Steffen Bauer ( saatpilot.de )",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Pisum_sativum_Kelvedon_Wonder_(garden_pea),_harvested_pods_(SaatPilot).jpg"
+   }
+  },
+  {
+   "id": "cicer",
+   "latin": "cicer, ciceris n.",
+   "english": "chickpea",
+   "scientific": "Cicer arietinum",
+   "group": "hortus",
+   "line": "et fervēns cicer et tepēns lupīnus",
+   "source": "Mart. V 78, 21",
+   "record": "chickpea",
+   "image": {
+    "file": "Ordinary chickpeas in a ceramic bowl.jpg",
+    "author": "AlixSaz",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Ordinary_chickpeas_in_a_ceramic_bowl.jpg"
+   }
+  },
+  {
+   "id": "lens",
+   "latin": "lēns, lentis f.",
+   "english": "lentil",
+   "scientific": "Lens culinaris",
+   "group": "hortus",
+   "line": "aula ūna lentis Aegyptiae et cucurbitae inibi minūtim caesae",
+   "source": "Gell. XVII 8, 2",
+   "record": "lentil",
+   "image": {
+    "file": "Green Lentils.JPG",
+    "author": "Adiel lo",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Green_Lentils.JPG"
+   }
+  },
+  {
+   "id": "asparagus",
+   "latin": "asparagus, asparagī m.",
+   "english": "asparagus",
+   "scientific": "Asparagus officinalis",
+   "group": "hortus",
+   "line": "cavētōque nē asparagus ūnā cum herbā vellātur",
+   "source": "Cato Agr. 161, 2",
+   "record": "asparagus",
+   "image": {
+    "file": "Asparagus (8587634357).jpg",
+    "author": "Neil Conway from Oakland, USA",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Asparagus_(8587634357).jpg"
+   }
+  },
+  {
+   "id": "cinara",
+   "latin": "cinara, cinarae f.",
+   "english": "artichoke",
+   "scientific": "Cynara cardunculus",
+   "group": "hortus",
+   "line": "Hispida pōnātur cinara",
+   "source": "Col. X 235",
+   "record": "artichoke",
+   "image": {
+    "file": "Artichoke stack.JPG",
+    "author": "Toby Hudson",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Artichoke_stack.JPG"
+   }
+  },
+  {
+   "id": "apium",
+   "latin": "apium, apiī n.",
+   "english": "celery",
+   "scientific": "Apium graveolens",
+   "group": "hortus",
+   "line": "Nunc apiō viridī crispētur flōrida tellūs",
+   "source": "Col. X 166",
+   "record": "celery",
+   "image": {
+    "file": "Celery stacks.jpg",
+    "author": "Jeffery Martin",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Celery_stacks.jpg"
+   }
+  },
+  {
+   "id": "petroselinum",
+   "latin": "petroselīnum, petroselīnī n.",
+   "english": "parsley",
+   "scientific": "Petroselinum crispum",
+   "group": "hortus",
+   "line": "Terēs piper, cumīnum, petroselīnum, rūtam, cēpam, mel, liquāmen, passum, oleī guttās.",
+   "source": "Apic. IV 2, 32",
+   "record": "parsley",
+   "image": {
+    "file": "Petersilie - Nahaufnahme.JPG",
+    "author": "Blackerking",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Petersilie_-_Nahaufnahme.JPG"
+   }
+  },
+  {
+   "id": "anethum",
+   "latin": "anēthum, anēthī n.",
+   "english": "dill",
+   "scientific": "Anethum graveolens",
+   "group": "hortus",
+   "line": "narcissum et flōrem jungit bene olentis anēthī",
+   "source": "Verg. E. 2, 48",
+   "record": "dill",
+   "image": {
+    "file": "Anethum graveolens20090812 475.jpg",
+    "author": "Bff",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Anethum_graveolens20090812_475.jpg"
+   }
+  },
+  {
+   "id": "faeniculum",
+   "latin": "faeniculum, faeniculī n.",
+   "english": "fennel",
+   "scientific": "Foeniculum vulgare",
+   "group": "hortus",
+   "line": "additō oleum, acētum coriandrum, cumīnum fēniculum rūtam, mentam",
+   "source": "Cato Agr. 119",
+   "record": "fennel",
+   "image": {
+    "file": "Foeniculum July 2011-1a.jpg",
+    "author": "Alvesgaspar",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Foeniculum_July_2011-1a.jpg"
+   }
+  },
+  {
+   "id": "menta",
+   "latin": "menta, mentae f.",
+   "english": "mint",
+   "scientific": "Mentha",
+   "group": "hortus",
+   "line": "quae in hortīs nāscuntur, alia peregrīnīs vocābulīs, ut Graecīs ōcimum, menta, rūta",
+   "source": "Varr. LL V 103",
+   "record": "mint",
+   "image": {
+    "file": "Mint leaves (Mentha spicata).jpg",
+    "author": "Commonists",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Mint_leaves_(Mentha_spicata).jpg"
+   }
+  },
+  {
+   "id": "ocimum",
+   "latin": "ōcimum, ōcimī n.",
+   "english": "basil",
+   "scientific": "Ocimum basilicum",
+   "group": "hortus",
+   "line": "in hortō satōrum celerrimē nāscuntur ōcimum, blitum, nāpus, ērūca",
+   "source": "Plin. NH XIX 117",
+   "record": "basil",
+   "image": {
+    "file": "Ocimum basilicum CG NBG LR.jpg",
+    "author": "PumpkinSky",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Ocimum_basilicum_CG_NBG_LR.jpg"
+   }
+  },
+  {
+   "id": "salvia",
+   "latin": "salvia, salviae f.",
+   "english": "sage",
+   "scientific": "Salvia officinalis",
+   "group": "hortus",
+   "line": "Salviae foliīs cibus condītur.",
+   "source": "composed",
+   "record": "sage",
+   "image": {
+    "file": "Salvia officinalis in Cardaillac (1).jpg",
+    "author": "Krzysztof Golik",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Salvia_officinalis_in_Cardaillac_(1).jpg"
+   }
+  },
+  {
+   "id": "thymum",
+   "latin": "thymum, thymī n.",
+   "english": "thyme",
+   "scientific": "Thymus vulgaris",
+   "group": "hortus",
+   "line": "fervet opus, redolentque thymō frāgrantia mella",
+   "source": "Verg. G. IV 169",
+   "record": "thyme",
+   "image": {
+    "file": "Thymus vulgaris 4zz.jpg",
+    "author": "David J. Stang",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Thymus_vulgaris_4zz.jpg"
+   }
+  },
+  {
+   "id": "rosmarinus",
+   "latin": "rōs marīnus, rōris marīnī m.",
+   "english": "rosemary",
+   "scientific": "Salvia rosmarinus",
+   "group": "hortus",
+   "line": "parvōs corōnantem marīnō rōre deōs fragilīque myrtō",
+   "source": "Hor. Carm. III 23, 15–16",
+   "record": "rosemary",
+   "image": {
+    "file": "Salvia rosmarinus flowering Coves del Drac Mallorca.jpg",
+    "author": "Steffen Mokosch",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Salvia_rosmarinus_flowering_Coves_del_Drac_Mallorca.jpg"
+   }
+  },
+  {
+   "id": "ruta",
+   "latin": "rūta, rūtae f.",
+   "english": "rue",
+   "scientific": "Ruta graveolens",
+   "group": "hortus",
+   "line": "mox vetus et tenuī major cordyla lacertō, sed quam cum rūtae frondibus ōva tegant",
+   "source": "Mart. XI 52, 7–8",
+   "record": "rue",
+   "image": {
+    "file": "Ruta graveolens Ruta zwyczajna 2023-06-08 01.jpg",
+    "author": "Agnieszka Kwiecień, Nova",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Ruta_graveolens_Ruta_zwyczajna_2023-06-08_01.jpg"
+   }
+  },
+  {
+   "id": "origanum",
+   "latin": "orīganum, orīganī n.",
+   "english": "oregano",
+   "scientific": "Origanum vulgare",
+   "group": "hortus",
+   "line": "Orīganum, quod vī sapōrem cunīlae aemulātur, ut dīximus, plūra genera in medicīnā habet.",
+   "source": "Plin. NH XX 175",
+   "record": "oregano",
+   "image": {
+    "file": "Fleurs d'Origan (Origanum vulgare).jpg",
+    "author": "JackyM59",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Fleurs_d%27Origan_(Origanum_vulgare).jpg"
+   }
+  },
+  {
+   "id": "triticum",
+   "latin": "trīticum, trīticī n.",
+   "english": "wheat",
+   "scientific": "Triticum aestivum",
+   "group": "segetes",
+   "line": "sēlībram trīticī pūrī in mortārium pūrum indat",
+   "source": "Cato Agr. 86",
+   "record": "wheat",
+   "image": {
+    "file": "Haltern am See, Naturpark Hohe Mark, Weizenfeld -- 2024 -- 4444.jpg",
+    "author": "Dietmar Rabich",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Haltern_am_See,_Naturpark_Hohe_Mark,_Weizenfeld_--_2024_--_4444.jpg"
+   }
+  },
+  {
+   "id": "hordeum",
+   "latin": "hordeum, hordeī n.",
+   "english": "barley",
+   "scientific": "Hordeum vulgare",
+   "group": "segetes",
+   "line": "ūnus ferēbat fiscōs cum pecūniā, / alter tumentēs multō saccōs hordeō",
+   "source": "Phaedr. II 7, 2–3",
+   "record": "barley",
+   "image": {
+    "file": "Texel - Den Hoorn - Mokweg - Barley (Hordeum vulgare) field 03.jpg",
+    "author": "Txllxt TxllxT",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Texel_-_Den_Hoorn_-_Mokweg_-_Barley_(Hordeum_vulgare)_field_03.jpg"
+   }
+  },
+  {
+   "id": "avena",
+   "latin": "avēna, avēnae f.",
+   "english": "oats",
+   "scientific": "Avena sativa",
+   "group": "segetes",
+   "line": "ūrit enim līnī campum seges, ūrit avēnae",
+   "source": "Verg. G. I 77",
+   "record": "oats",
+   "image": {
+    "file": "Avena sativa 001.JPG",
+    "author": "H. Zell",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Avena_sativa_001.JPG"
+   }
+  },
+  {
+   "id": "secale",
+   "latin": "secāle, secālis n.",
+   "english": "rye",
+   "scientific": "Secale cereale",
+   "group": "segetes",
+   "line": "Ē secālī pānis āter fit.",
+   "source": "composed",
+   "record": "rye",
+   "image": {
+    "file": "Secale cereale sl1.jpg",
+    "author": "Stefan.lefnaer",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Secale_cereale_sl1.jpg"
+   }
+  },
+  {
+   "id": "milium",
+   "latin": "milium, miliī n.",
+   "english": "millet",
+   "scientific": "Panicum miliaceum",
+   "group": "segetes",
+   "line": "eōdem diē vīdī fabam metentēs, milium serentēs",
+   "source": "Sen. Ep. 86, 16",
+   "record": "millet",
+   "image": {
+    "file": "Mature Proso Millet Panicles.jpg",
+    "author": "Jschnable",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Mature_Proso_Millet_Panicles.jpg"
+   }
+  },
+  {
+   "id": "oryza",
+   "latin": "orȳza, orȳzae f.",
+   "english": "rice",
+   "scientific": "Oryza sativa",
+   "group": "segetes",
+   "line": "tū cessās? agedum sūme hoc tisanārium orȳzae",
+   "source": "Hor. Serm. II 3, 155",
+   "record": "rice",
+   "image": {
+    "file": "Rice fields, Bedulu near Ubud, Bali, Indonesia, 20220824 1039 0665.jpg",
+    "author": "Jakub Hałun",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Rice_fields,_Bedulu_near_Ubud,_Bali,_Indonesia,_20220824_1039_0665.jpg"
+   }
+  },
+  {
+   "id": "maizium",
+   "latin": "maizium, maiziī n.",
+   "english": "maize",
+   "scientific": "Zea mays",
+   "group": "segetes",
+   "line": "Spīcam maiziī tenēs.",
+   "source": "composed",
+   "record": "maize",
+   "image": {
+    "file": "Maiskolben-20170916-RM-170343.jpg",
+    "author": "Reinhold Möller Ermell",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Maiskolben-20170916-RM-170343.jpg"
+   }
+  },
+  {
+   "id": "helianthus",
+   "latin": "hēlianthus, hēlianthī m.",
+   "english": "sunflower",
+   "scientific": "Helianthus annuus",
+   "group": "segetes",
+   "line": "Hēlianthus ad sōlem sē vertit.",
+   "source": "composed",
+   "record": "sunflower",
+   "image": {
+    "file": "Sunflowers cultivated in Southern France 06.jpg",
+    "author": "Krzysztof Golik",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Sunflowers_cultivated_in_Southern_France_06.jpg"
+   }
+  },
+  {
+   "id": "linum",
+   "latin": "līnum, līnī n.",
+   "english": "flax",
+   "scientific": "Linum usitatissimum",
+   "group": "segetes",
+   "line": "tum sēmen seritō crēbrum tamquam līnum",
+   "source": "Cato Agr. 48, 1",
+   "record": "flax",
+   "image": {
+    "file": "Linseed field in Hampshire, July 2011 a.jpg",
+    "author": "Herry Lawford",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Linseed_field_in_Hampshire,_July_2011_a.jpg"
+   }
+  },
+  {
    "id": "glans",
    "latin": "glāns, glandis f.",
    "english": "acorn",
@@ -1948,6 +4416,486 @@
     "licence": "CC BY-SA 4.0",
     "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
     "page": "https://commons.wikimedia.org/wiki/File:Quercus_robur_acorns_in_Tuntorp_1.jpg"
+   }
+  },
+  {
+   "id": "radix",
+   "latin": "rādīx, rādīcis f.",
+   "english": "root",
+   "group": "partes",
+   "line": "trūditur ē siccō rādīx oleāgina lignō",
+   "source": "Verg. G. II 31",
+   "record": "root",
+   "image": {
+    "file": "Deidesheim Herrensbrunner Hang 001 2020 05 30.jpg",
+    "author": "Friedrich Haag",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Deidesheim_Herrensbrunner_Hang_001_2020_05_30.jpg"
+   }
+  },
+  {
+   "id": "truncus",
+   "latin": "truncus, truncī m.",
+   "english": "trunk",
+   "group": "partes",
+   "line": "atque avidē truncō condita mella petit",
+   "source": "Ov. Fast. III 752",
+   "record": "trunk-tree",
+   "image": {
+    "file": "Dülmen, Wildpark, Baum -- 2021 -- 7425.jpg",
+    "author": "Dietmar Rabich",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:D%C3%BClmen,_Wildpark,_Baum_--_2021_--_7425.jpg"
+   }
+  },
+  {
+   "id": "stirps",
+   "latin": "stirps, stirpis f.",
+   "english": "stump",
+   "group": "partes",
+   "line": "nam sī dēfringēs, stirpēs fīent et intermorientur",
+   "source": "Cato Agr. 161, 3",
+   "record": "stump",
+   "image": {
+    "file": "Felsenegg-Kante Tree Stump Autumn.jpg",
+    "author": "Daniel Kraft",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Felsenegg-Kante_Tree_Stump_Autumn.jpg"
+   }
+  },
+  {
+   "id": "cortex",
+   "latin": "cortex, corticis m.",
+   "english": "bark",
+   "group": "partes",
+   "line": "dum novus in viridī coalēscit cortice rāmus",
+   "source": "Ov. Ars II 649",
+   "record": "bark-tree",
+   "image": {
+    "file": "Münster, Boniburger Wald -- 2019 -- 4240.jpg",
+    "author": "Dietmar Rabich",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:M%C3%BCnster,_Boniburger_Wald_--_2019_--_4240.jpg"
+   }
+  },
+  {
+   "id": "ramus",
+   "latin": "rāmus, rāmī m.",
+   "english": "branch",
+   "group": "partes",
+   "line": "nunc avis in rāmō tēcta laremque parat",
+   "source": "Ov. Fast. III 242",
+   "record": "branch",
+   "image": {
+    "file": "Broken branch with lichens, Lisbon, Portugal (approx. GPS location) julesvernex2.jpg",
+    "author": "Jules Verne Times Two",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Broken_branch_with_lichens,_Lisbon,_Portugal_(approx._GPS_location)_julesvernex2.jpg"
+   }
+  },
+  {
+   "id": "ramulus",
+   "latin": "rāmulus, rāmulī m.",
+   "english": "twig",
+   "group": "partes",
+   "line": "tum adjiciēs rāmulōs rōris marīnī āridī līnō colligātōs",
+   "source": "Col. XII 36",
+   "record": "twig",
+   "image": {
+    "file": "Hickory buds NBG.jpg",
+    "author": "PumpkinSky",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Hickory_buds_NBG.jpg"
+   }
+  },
+  {
+   "id": "folium",
+   "latin": "folium, foliī n.",
+   "english": "leaf",
+   "group": "partes",
+   "line": "quam multa in silvīs autumnī frīgore prīmō / lāpsa cadunt folia",
+   "source": "Verg. A. VI 309–310",
+   "record": "leaf",
+   "image": {
+    "file": "Green Ginkgo Tree Leaf.jpg",
+    "author": "Brayden A.",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Green_Ginkgo_Tree_Leaf.jpg"
+   }
+  },
+  {
+   "id": "gemma",
+   "latin": "gemma, gemmae f.",
+   "english": "bud",
+   "group": "partes",
+   "line": "ūvidaque in tenerō palmite gemma tumet",
+   "source": "Ov. Fast. III 238",
+   "record": "bud",
+   "image": {
+    "file": "Zwarte populier (Populus nigra), 06-02-2026. (d.j.b.).jpg 04.jpg",
+    "author": "Dominicus Johannes Bergsma.",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Zwarte_populier_(Populus_nigra),_06-02-2026._(d.j.b.).jpg_04.jpg"
+   }
+  },
+  {
+   "id": "germen",
+   "latin": "germen, germinis n.",
+   "english": "sprout",
+   "group": "partes",
+   "line": "nec germen sudibus perarmat / carduus horrēns",
+   "source": "Prud. Cath. VIII 43–44",
+   "record": "sprout-noun",
+   "image": {
+    "file": "Young seedling of tomato emerging from soil - India.jpg",
+    "author": "Ksheera Piraati",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Young_seedling_of_tomato_emerging_from_soil_-_India.jpg"
+   }
+  },
+  {
+   "id": "semen",
+   "latin": "sēmen, sēminis n.",
+   "english": "seed",
+   "group": "partes",
+   "line": "sēmina tum prīmum longīs Cereālia sulcīs / obruta sunt",
+   "source": "Ov. Met. I 123–124",
+   "record": "seed",
+   "image": {
+    "file": "Pumpkin Seeds macro 1.jpg",
+    "author": "Daniel Schwen",
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Pumpkin_Seeds_macro_1.jpg"
+   }
+  },
+  {
+   "id": "baca",
+   "latin": "bāca, bācae f.",
+   "english": "berry",
+   "group": "partes",
+   "line": "ergō arborēs seret dīligēns agricola, quārum aspiciet bācam ipse numquam",
+   "source": "Cic. Tusc. I 31",
+   "record": "berry",
+   "image": {
+    "file": "Purple beautyberry, October 2015 - Stacking.jpg",
+    "author": "Laitche",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Purple_beautyberry,_October_2015_-_Stacking.jpg"
+   }
+  },
+  {
+   "id": "nuxpinea",
+   "latin": "nux pīnea, nucis pīneae f.",
+   "english": "pine cone",
+   "group": "partes",
+   "line": "nōn nūllī … viridēs pīneās nucēs in mulctram dēmittunt",
+   "source": "Col. VII 8, 6",
+   "record": "pine-cone",
+   "image": {
+    "file": "A pine cone.jpg",
+    "author": "Petar Milošević",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:A_pine_cone.jpg"
+   }
+  },
+  {
+   "id": "galla",
+   "latin": "galla, gallae f.",
+   "english": "oak gall",
+   "group": "partes",
+   "line": "prōderit et tūnsum gallae admiscēre sapōrem",
+   "source": "Verg. G. IV 267",
+   "record": "oak-gall",
+   "image": {
+    "file": "Andricus kollari galls. 21-11-2025. (d.j.b.).jpg",
+    "author": "Dominicus Johannes Bergsma.",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Andricus_kollari_galls._21-11-2025._(d.j.b.).jpg"
+   }
+  },
+  {
+   "id": "putamen",
+   "latin": "putāmen, putāminis n.",
+   "english": "nutshell",
+   "group": "partes",
+   "line": "ut candentibus jūglandium putāminibus barbam sibi et capillum adūrerent",
+   "source": "Cic. Tusc. V 58",
+   "record": "shell-nut",
+   "image": {
+    "file": "Empty nutshell on top of the top-case of my motorscooter, just after a squirrel had decided to use it as a safe location for having lunch.jpg",
+    "author": "Pittigrilli",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Empty_nutshell_on_top_of_the_top-case_of_my_motorscooter,_just_after_a_squirrel_had_decided_to_use_it_as_a_safe_location_for_having_lunch.jpg"
+   }
+  },
+  {
+   "id": "nucleus",
+   "latin": "nucleus, nucleī m.",
+   "english": "kernel, stone",
+   "group": "partes",
+   "line": "ex oleīs albīs nigrīs variīsque nucleōs ējicitō",
+   "source": "Cato Agr. 119",
+   "record": "kernel",
+   "image": {
+    "file": "Pine Nuts Macro.jpg",
+    "author": "Prosthetic Head",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Pine_Nuts_Macro.jpg"
+   }
+  },
+  {
+   "id": "siliqua",
+   "latin": "siliqua, siliquae f.",
+   "english": "pod",
+   "group": "partes",
+   "line": "nōs holeris coma, nōs siliqua / fēta legūmine multimodō / pāverit innocuīs epulīs",
+   "source": "Prud. Cath. III 63–65",
+   "record": "pod",
+   "image": {
+    "file": "Carob tree unripe pods in majorca arp.jpg",
+    "author": "Adrian Pingstone",
+    "licence": "Public domain",
+    "licence_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Carob_tree_unripe_pods_in_majorca_arp.jpg"
+   }
+  },
+  {
+   "id": "bulbus",
+   "latin": "bulbus, bulbī m.",
+   "english": "bulb",
+   "group": "partes",
+   "line": "olīvae bētāceī cucurbitae bulbī, alia mīlle nōn minus lauta",
+   "source": "Plin. Ep. I 15, 2",
+   "record": "bulb",
+   "image": {
+    "file": "Bulbs.jpg",
+    "author": "pixel_addict",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Bulbs.jpg"
+   }
+  },
+  {
+   "id": "iulus",
+   "latin": "iūlus, iūlī m.",
+   "english": "catkin",
+   "group": "partes",
+   "line": "Iūlī vēre ē rāmīs corylī pendent.",
+   "source": "composed",
+   "record": "catkin",
+   "image": {
+    "file": "Corylus avellana 2 RF.jpg",
+    "author": "Robert Flogaus-Faust",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Corylus_avellana_2_RF.jpg"
+   }
+  },
+  {
+   "id": "spina",
+   "latin": "spīna, spīnae f.",
+   "english": "thorn",
+   "group": "partes",
+   "line": "Spīna etiam grāta est, ex quā spectātur rosa.",
+   "source": "Publ. S 47",
+   "record": "thorn",
+   "image": {
+    "file": "Thorns on a rose, Chapeltoun, North Ayrshire.jpg",
+    "author": "Rosser1954",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Thorns_on_a_rose,_Chapeltoun,_North_Ayrshire.jpg"
+   }
+  },
+  {
+   "id": "spica",
+   "latin": "spīca, spīcae f.",
+   "english": "ear of grain",
+   "group": "partes",
+   "line": "trīticum, quod trītum ē spīcīs",
+   "source": "Varr. LL V 106",
+   "record": "ear-of-grain",
+   "image": {
+    "file": "Wheat ear.jpg",
+    "author": "Optograph",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Wheat_ear.jpg"
+   }
+  },
+  {
+   "id": "caulis",
+   "latin": "caulis, caulis m.",
+   "english": "stalk, stem",
+   "group": "partes",
+   "line": "nē tibi pallentēs moveant fastīdia caulēs, / nitrāta viridis brassica fīat aquā",
+   "source": "Mart. XIII 17, 1–2",
+   "record": "stalk",
+   "image": {
+    "file": "CSA-Rhubarb.jpg",
+    "author": "Evan-Amos",
+    "licence": "Public domain",
+    "licence_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:CSA-Rhubarb.jpg"
+   }
+  },
+  {
+   "id": "clavicula",
+   "latin": "clāvicula, clāviculae f.",
+   "english": "tendril",
+   "group": "partes",
+   "line": "vītis quidem … clāviculīs suīs quasi manibus quicquid est nacta complectitur",
+   "source": "Cic. Sen. 52",
+   "record": "tendril",
+   "image": {
+    "file": "Spiral tendril of Passiflora caerulea.jpg",
+    "author": "Franz van Duns",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Spiral_tendril_of_Passiflora_caerulea.jpg"
+   }
+  },
+  {
+   "id": "palmes",
+   "latin": "palmes, palmitis m.",
+   "english": "vine shoot",
+   "group": "partes",
+   "line": "quōque locō est vītis, dē palmite gemma movētur",
+   "source": "Ov. Trist. III 12, 13",
+   "record": "vine-shoot",
+   "image": {
+    "file": "Portugal - Algarve - vines beginning to shoot (25806277791).jpg",
+    "author": "muffinn from Worcester, UK",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Portugal_-_Algarve_-_vines_beginning_to_shoot_(25806277791).jpg"
+   }
+  },
+  {
+   "id": "racemus",
+   "latin": "racēmus, racēmī m.",
+   "english": "bunch of grapes",
+   "group": "partes",
+   "line": "tempus ut extēnsīs tumeat facit ūva racēmīs",
+   "source": "Ov. Trist. IV 6, 9",
+   "record": "bunch-grapes",
+   "image": {
+    "file": "Bunch Of Grapes On Vine.jpg",
+    "author": "Panelxf",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Bunch_Of_Grapes_On_Vine.jpg"
+   }
+  },
+  {
+   "id": "resina",
+   "latin": "rēsīna, rēsīnae f.",
+   "english": "resin",
+   "group": "partes",
+   "line": "picem meminisse dēbēmus nōn aliud esse quam combustae rēsīnae flūxum",
+   "source": "Plin. NH XXIII 47",
+   "record": "resin",
+   "image": {
+    "file": "Droplet of Picea schrenkiana resin in Almaty, Kazakhstan.jpg",
+    "author": "Arizhura",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Droplet_of_Picea_schrenkiana_resin_in_Almaty,_Kazakhstan.jpg"
+   }
+  },
+  {
+   "id": "stipes",
+   "latin": "stīpes, stīpitis m.",
+   "english": "log",
+   "group": "partes",
+   "line": "ignis in hesternō stīpite parvus erat",
+   "source": "Ov. Fast. V 506",
+   "record": "log-wood",
+   "image": {
+    "file": "Logs UA 2024 G1.jpg",
+    "author": "George Chernilevsky",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Logs_UA_2024_G1.jpg"
+   }
+  },
+  {
+   "id": "lignum",
+   "latin": "lignum, lignī n.",
+   "english": "wood",
+   "group": "partes",
+   "line": "suggerunt affatim ligna proximae silvae",
+   "source": "Plin. Ep. II 17, 26",
+   "record": "wood",
+   "image": {
+    "file": "Stack of firewood.jpg",
+    "author": "Mobius",
+    "licence": "Public domain",
+    "licence_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Stack_of_firewood.jpg"
+   }
+  },
+  {
+   "id": "faenum",
+   "latin": "faenum, faenī n.",
+   "english": "hay",
+   "group": "partes",
+   "line": "faenum, ubi tempus erit, secātō cavētōque nē sērō secēs",
+   "source": "Cato Agr. 53",
+   "record": "hay",
+   "image": {
+    "file": "Пойма Иртыша сено.jpg",
+    "author": "Ivan ideia",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%BE%D0%B9%D0%BC%D0%B0_%D0%98%D1%80%D1%82%D1%8B%D1%88%D0%B0_%D1%81%D0%B5%D0%BD%D0%BE.jpg"
+   }
+  },
+  {
+   "id": "stipula",
+   "latin": "stipula, stipulae f.",
+   "english": "stubble",
+   "group": "partes",
+   "line": "atque levem stipulam crepitantibus ūrere flammīs",
+   "source": "Verg. G. I 85",
+   "record": "stubble",
+   "image": {
+    "file": "Paddy Stubble Balamuri Coorg Feb24 A7C 09417.jpg",
+    "author": "Timothy A. Gonsalves",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Paddy_Stubble_Balamuri_Coorg_Feb24_A7C_09417.jpg"
+   }
+  },
+  {
+   "id": "pampinus",
+   "latin": "pampinus, pampinī m.",
+   "english": "vine leaf",
+   "group": "partes",
+   "line": "heu, male tum mītīs dēfendet pampinus ūvās",
+   "source": "Verg. G. I 448",
+   "record": "vine-leaf",
+   "image": {
+    "file": "Vine leaf in the afternoon sun.jpg",
+    "author": "August Geyler",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Vine_leaf_in_the_afternoon_sun.jpg"
    }
   }
  ]

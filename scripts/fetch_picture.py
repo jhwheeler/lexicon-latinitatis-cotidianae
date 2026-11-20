@@ -109,7 +109,8 @@ def get(url, patience=None):
 
 def plain(value):
     """Text from the HTML of a metadata field: tags dropped, entities read, spaces made single."""
-    text = html.unescape(re.sub(r'<[^>]+>', ' ', value or ''))
+    value = re.sub(r'<(style|script)\b.*?</\1>', ' ', value or '', flags=re.S)   # a creator template brings its stylesheet with it
+    text = html.unescape(re.sub(r'<[^>]+>', ' ', value))
     return re.sub(r'\s+', ' ', text).strip()
 
 

@@ -106,6 +106,7 @@ main{max-width:600px;margin:0 auto;padding-block:16px 40px;
    field and, when asked for, the pronoun under it, so the line makes room for both and no gap ever
    lies over the line below. */
 .prose{margin:0;font-size:1.15rem;line-height:2.1;overflow-wrap:break-word}
+.gap-stop{white-space:nowrap}
 .gap{display:inline-flex;flex-direction:column;align-items:center;vertical-align:baseline;margin:3px 0}
 .gap input{width:6.4em;height:44px;padding:0 .2em;border:0;border-bottom:2px solid var(--muted);border-radius:6px 6px 0 0;
   background:var(--ground);color:var(--ink);text-align:center;font:inherit;line-height:1.2}
@@ -365,8 +366,17 @@ function renderRound() {
   $q.textContent = r.q;
   $prose.textContent = "";
   let n = 0;
+  /* A stop that follows a gap stays on the gap's line: the gap and the stop share a span that does
+     not break, so that no line begins with a comma or a question mark (Claude, 20 November 2026). */
+  let hold = null;
   r.parts.forEach(p => {
-    if (typeof p === "string") { $prose.appendChild(document.createTextNode(p)); return; }
+    if (typeof p === "string") {
+      const stop = hold ? (p.match(/^[.,;:?!»]+/) || [""])[0] : "";
+      if (stop) hold.appendChild(document.createTextNode(stop));
+      hold = null;
+      if (p.length > stop.length) $prose.appendChild(document.createTextNode(p.slice(stop.length)));
+      return;
+    }
     const i = n++;
     const wrap = document.createElement("span");
     wrap.className = "gap";
@@ -399,7 +409,10 @@ function renderRound() {
     under.appendChild(hint);
     wrap.appendChild(inp);
     wrap.appendChild(under);
-    $prose.appendChild(wrap);
+    hold = document.createElement("span");
+    hold.className = "gap-stop";
+    hold.appendChild(wrap);
+    $prose.appendChild(hold);
   });
   setMessage("", "");
   update();

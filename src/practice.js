@@ -150,7 +150,7 @@
         + (older ? `; ${number(older)} ${older === 1 ? 'relicta, hīc recentius notāta' : 'relictae, hīc recentius notātae'}` : '')
         + (unknown ? `; ${number(unknown)} in lexicō nōn ${unknown === 1 ? 'est' : 'sunt'}` : '')
         + (added ? `; ${number(added)} ${added === 1 ? 'index additus' : 'indicēs additī'}` : '') + '.',
-      // "more" was Alius lūdus: until the animal cards made the games three (Claude's wording, 20 November 2026); Ubi est Theodōrus? made them four the same day.
+      // "more" was Alius lūdus: until the picture cards (then the animal cards) made the games three (Claude's wording, 20 November 2026); Ubi est Theodōrus? made them four the same day.
       more: 'Aliī lūdī:', clock: '', pictures: '', places: ''
     },
     en: {
@@ -192,7 +192,7 @@
         + (older ? `; ${number(older)} left as they were, marked here more recently` : '')
         + (unknown ? `; ${number(unknown)} not in the lexicon` : '')
         + (added ? `; ${one(added, 'list', 'lists')} added` : '') + '.',
-      more: 'Other games:', clock: 'the clock, ', pictures: 'animal cards, ', places: 'the adverbs of place, '
+      more: 'Other games:', clock: 'the clock, ', pictures: 'picture cards, ', places: 'the adverbs of place, '
     }
   };
   let lang = 'la';

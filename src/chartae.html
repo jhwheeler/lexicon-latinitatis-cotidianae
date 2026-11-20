@@ -5,8 +5,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
-<title>Animal cards · Lexicon Latīnitātis Cotīdiānae</title>
-<meta name="description" content="Picture cards of {{count}} animals with their Latin names, a line from a Latin author, and what each one eats: a game of spaced repetition kept on your own device. In Latin or English.">
+<title>Picture cards · Lexicon Latīnitātis Cotīdiānae</title>
+<meta name="description" content="{{count}} picture cards of animals and plants ({{animals}} of animals, {{plants}} of plants and their parts) with their Latin names, a line from a Latin author, and what each animal eats: a game of spaced repetition kept on your own device. In Latin or English.">
 <link rel="canonical" href="https://jhwheeler.github.io/lexicon-latinitatis-cotidianae/chartae.html">
 {{theme}}
 {{app}}
@@ -19,12 +19,13 @@
 <body class="subpage">
 {{header}}
 <main class="wrap page-main practice chartae">
-<header class="category-heading plobby-head"><div><h1 id="p-title" data-t="title">Animal cards</h1>
+<header class="category-heading plobby-head"><div><h1 id="p-title" data-t="title">Picture cards</h1>
 <p class="eyebrow" data-t="sub">Look at the picture, say the Latin name aloud, then show the answer.</p></div>
 <div class="filter p-lang" role="group" id="p-lang" data-t-label="langLabel" aria-label="Language" hidden><button type="button" data-lang="la" lang="la" aria-pressed="false">Latīnē</button><button type="button" data-lang="en" lang="en" aria-pressed="true">English</button></div></header>
 <p class="noscript-note" lang="en">The game needs JavaScript. Without it, browse <a href="k/natura.html">the words of nature</a> or <a href="index.html">the contents</a>.</p>
 <div id="chartae" hidden>
 
+<div class="pgroup-line c-deck"><span class="pg-name" id="c-subjects-h" data-t="subjects">Subjects</span><div class="filter" role="group" aria-labelledby="c-subjects-h" id="c-subjects"></div></div>
 <div class="pgroup-line c-deck"><span class="pg-name" id="c-groups-h" data-t="groups">Kinds</span><div class="filter" role="group" aria-labelledby="c-groups-h" id="c-groups"></div></div>
 <p class="c-count" id="p-count" role="status" aria-live="polite"></p>
 
@@ -64,6 +65,7 @@
 <p class="ccard-en" id="g-en"></p>
 <div class="pgame-ex"><p class="la" lang="la" id="g-ex-la"></p><p class="en" id="g-ex-src"></p></div>
 <p class="ccard-food" lang="la" id="g-food"></p>
+<p class="ccard-food" lang="la" id="g-bears" hidden></p>
 <div class="pgame-entry"><a id="g-entry" href="index.html" data-t="entry">Open the entry</a></div>
 <p class="ccard-credit" id="g-credit"></p>
 </div>

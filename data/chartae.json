@@ -1,34 +1,88 @@
 {
+ "subjects": [
+  {
+   "id": "animalia",
+   "latin": "Animālia",
+   "english": "Animals"
+  },
+  {
+   "id": "plantae",
+   "latin": "Plantae",
+   "english": "Plants"
+  }
+ ],
  "groups": [
   {
    "id": "villa",
+   "subject": "animalia",
    "latin": "Vīlla",
    "english": "Farm and house"
   },
   {
    "id": "silva",
+   "subject": "animalia",
    "latin": "Silva et ager",
    "english": "Woods and fields"
   },
   {
    "id": "aves",
+   "subject": "animalia",
    "latin": "Avēs",
    "english": "Birds"
   },
   {
    "id": "bestiolae",
+   "subject": "animalia",
    "latin": "Bēstiolae",
    "english": "Small creatures"
   },
   {
    "id": "mare",
+   "subject": "animalia",
    "latin": "Mare",
    "english": "Sea"
   },
   {
    "id": "longinqua",
+   "subject": "animalia",
    "latin": "Longinqua",
    "english": "Far away"
+  },
+  {
+   "id": "arbores",
+   "subject": "plantae",
+   "latin": "Arborēs",
+   "english": "Trees"
+  },
+  {
+   "id": "frutices",
+   "subject": "plantae",
+   "latin": "Fruticēs et herbae",
+   "english": "Shrubs and wild plants"
+  },
+  {
+   "id": "pomarium",
+   "subject": "plantae",
+   "latin": "Pōmārium et vīnea",
+   "english": "Orchard and vineyard"
+  },
+  {
+   "id": "hortus",
+   "subject": "plantae",
+   "latin": "Hortus",
+   "english": "Garden"
+  },
+  {
+   "id": "segetes",
+   "subject": "plantae",
+   "latin": "Segetēs",
+   "english": "Crops"
+  },
+  {
+   "id": "partes",
+   "subject": "plantae",
+   "latin": "Partēs plantārum",
+   "english": "Parts of plants"
   }
  ],
  "cards": [

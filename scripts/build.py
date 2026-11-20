@@ -12,7 +12,7 @@ page per concept record), l/<word>.html (one page per Latin word that heads a
 term), how-we-decide.html (editorial policy), how-practice-works.html (how the
 practice chooses and spaces its cards, with its sources), rulings.html (the rulings
 register), practice.html (vocabulary practice), hora.html (the clock game), chartae.html (the animal
-picture cards, with their pictures in chartae/) and
+picture cards, with their pictures in chartae/), theodorus.html (the game of the adverbs of place), and
 review.html (what is reviewed, and a reader's flags), sitemap.xml, and in assets/ the stylesheet,
 the page, search, practice and review scripts, the search data, the practice cards (practice-data.js), the picture cards (chartae-data.js), the redirects
 from the old single page (legacy.js) and the fonts. See docs/data-format.md and
@@ -266,7 +266,7 @@ def service_worker(root, outputs):
     are saved as they are read, like the entry pages (src/chartae.js fetches them once the page has been opened). Its version is a hash of them, so a change to any of them makes the browser
     fetch them all afresh. The entry and word pages are saved as they are read."""
     files = sorted(path for path in outputs
-                   if path in ('index.html', 'how-we-decide.html', 'how-practice-works.html', 'rulings.html', 'practice.html', 'hora.html', 'chartae.html', 'review.html', 'manifest.webmanifest')
+                   if path in ('index.html', 'how-we-decide.html', 'how-practice-works.html', 'rulings.html', 'practice.html', 'hora.html', 'chartae.html', 'theodorus.html', 'review.html', 'manifest.webmanifest')
                    or path.startswith('k/') or (path.startswith('assets/') and not path.endswith(('.txt', 'legacy.js'))))
     digest = hashlib.sha256()
     for path in files:
@@ -3439,7 +3439,7 @@ def fill(path, replacements):
 
 
 def render_sitemap(site):
-    pages = (['', 'how-we-decide.html', 'how-practice-works.html', 'rulings.html', 'words.html', 'latin.html', 'practice.html', 'hora.html', 'chartae.html', 'review.html']
+    pages = (['', 'how-we-decide.html', 'how-practice-works.html', 'rulings.html', 'words.html', 'latin.html', 'practice.html', 'hora.html', 'chartae.html', 'theodorus.html', 'review.html']
              + [f'k/{key}.html' for key in site['categories']] + [f'c/{key}.html' for key in sorted(site['records'])]
              + [f'l/{slug}.html' for slug in sorted(w['slug'] for w in site['words'].values())])
     return ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
@@ -3474,6 +3474,8 @@ def build_site(root=ROOT):
     outputs['practice.html'] = fill(root / 'src/practice.html', {
         'theme': THEME_INIT, 'app': app_head(''), 'header': site_header(''), 'footer': site_footer('')})
     outputs['hora.html'] = fill(root / 'src/hora.html', {'theme': THEME_INIT, 'app': app_head('')})
+    # Ubi est Theodōrus?, the game of the adverbs of place (20 November 2026), a page that stands by itself as the clock does.
+    outputs['theodorus.html'] = fill(root / 'src/theodorus.html', {'theme': THEME_INIT, 'app': app_head('')})
     outputs['assets/practice.js'] = (root / 'src/practice.js').read_text(encoding='utf-8')
     chartae, pictures = picture_cards(root, site)
     outputs['chartae.html'] = fill(root / 'src/chartae.html', {

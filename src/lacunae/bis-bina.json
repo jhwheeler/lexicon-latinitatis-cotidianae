@@ -1,0 +1,189 @@
+{
+  "id": "bis-bina",
+  "order": 4,
+  "file": "bis-bina.html",
+  "name": "Bis bīna",
+  "prefix": "bb-",
+  "description": "Bis bīna: a game of the Latin numbers, how many, which in order, how many each, and how many times (trēs, tertius, ternī, ter). Fill the gaps, in Latin or with an English interface.",
+  "eyebrow": {
+    "la": "Lūdus numerōrum",
+    "en": "A game of the numbers"
+  },
+  "hints": {
+    "la": "Numerōs ostendere",
+    "en": "Show the numbers"
+  },
+  "tabulae": [
+    {
+      "heads": [
+        "Numerus",
+        "Quot?",
+        "Quotus?",
+        "Quotēnī?",
+        "Quotiēns?"
+      ],
+      "rows": [
+        [
+          "1",
+          "ūnus, ūna, ūnum",
+          "prīmus",
+          "singulī",
+          "semel"
+        ],
+        [
+          "2",
+          "duo, duae, duo",
+          "secundus (alter)",
+          "bīnī",
+          "bis"
+        ],
+        [
+          "3",
+          "trēs, tria",
+          "tertius",
+          "ternī (trīnī)",
+          "ter"
+        ],
+        [
+          "4",
+          "quattuor",
+          "quārtus",
+          "quaternī",
+          "quater"
+        ],
+        [
+          "5",
+          "quīnque",
+          "quīntus",
+          "quīnī",
+          "quīnquiēs"
+        ],
+        [
+          "6",
+          "sex",
+          "sextus",
+          "sēnī",
+          "sexiēs"
+        ],
+        [
+          "7",
+          "septem",
+          "septimus",
+          "septēnī",
+          "septiēs"
+        ],
+        [
+          "8",
+          "octō",
+          "octāvus",
+          "octōnī",
+          "octiēs"
+        ],
+        [
+          "9",
+          "novem",
+          "nōnus",
+          "novēnī",
+          "noviēs"
+        ],
+        [
+          "10",
+          "decem",
+          "decimus",
+          "dēnī",
+          "deciēs"
+        ],
+        [
+          "11",
+          "ūndecim",
+          "ūndecimus",
+          "ūndēnī",
+          "ūndeciēs"
+        ],
+        [
+          "12",
+          "duodecim",
+          "duodecimus",
+          "duodēnī",
+          "duodeciēs"
+        ],
+        [
+          "20",
+          "vīgintī",
+          "vīcēsimus",
+          "vīcēnī",
+          "vīciēs"
+        ],
+        [
+          "100",
+          "centum",
+          "centēsimus",
+          "centēnī",
+          "centiēs"
+        ],
+        [
+          "1000",
+          "mīlle",
+          "mīllēsimus",
+          "singula mīlia",
+          "mīliēs"
+        ]
+      ]
+    }
+  ],
+  "rounds": [
+    {
+      "id": "quot",
+      "tab": "Quot?",
+      "q": "Quot sunt?",
+      "text": [
+        "Homō {ūnum|1} caput habet, {duōs/duo|2} oculōs, {duās|2} manūs. Manus {quīnque|5} digitōs habet, ambae igitur {decem|10}. ",
+        "Canis {quattuor|4} pedibus ambulat, avis {duōbus|2}. Triangulum {tria|3} latera habet. ",
+        "Hebdomas {septem|7} diēs habet, annus {duodecim|12} mēnsēs. Arānea {octō|8} pedēs habet, musca {sex|6}. ",
+        "{Trēs|3} Grātiae sunt, Mūsae {novem|9}. {Ūna|1} hirundō nōn facit vēr."
+      ]
+    },
+    {
+      "id": "quotus",
+      "tab": "Quotus?",
+      "q": "Quotus mēnsis est?",
+      "text": [
+        "Jānuārius {prīmus|1} mēnsis annī est, Februārius {secundus|2}, Mārtius {tertius|3}, Aprīlis {quārtus|4}, Majus {quīntus|5}, Jūnius {sextus|6}. ",
+        "September ōlim {septimus|7} mēnsis erat, Octōber {octāvus|8}, November {nōnus|9}, December {decimus|10}; inde nōmina habent. ",
+        "Nunc autem November {ūndecimus|11} est, December {duodecimus|12}. Merīdiēs {sexta|6} hōra diēī est."
+      ]
+    },
+    {
+      "id": "quoteni",
+      "tab": "Quotēnī?",
+      "q": "Quotēnōs pedēs habent?",
+      "text": [
+        "Hominēs {singula|1} capita habent, {bīnōs|2} oculōs, {dēnōs|10} digitōs in manibus. Triangula {terna|3} latera habent. ",
+        "Canēs {quaternīs|4} pedibus ambulant. Manūs {quīnōs|5} digitōs habent. Muscae {sēnōs|6} pedēs habent, arāneae {octōnōs|8}. ",
+        "Hebdomadēs {septēnōs|7} diēs habent. Puerīs {bīna|2} māla dedī; duo erant puerī, quattuor māla. ",
+        "Ā tē nōn {ūnās|1} litterās accēpī, sed {bīnās|2}, alterās heri, alterās hodiē. Hostēs {trīna|3} castra posuērunt, ūna in colle, altera in valle, tertia ad flūmen."
+      ]
+    },
+    {
+      "id": "quotiens",
+      "tab": "Quotiēns?",
+      "q": "Quotiēns in diē edimus?",
+      "text": [
+        "Sōl {semel|1} in diē oritur. In diē {ter|3} edimus, māne, merīdiē, vesperī. {Quater|4} in annō tempora mūtantur. ",
+        "Petrus Dominum {ter|3} negāvit, priusquam gallus {bis|2} cantāvit. Quī mēnsēs annī singulōs numerat, {duodeciēs/duodeciēns|12} numerat. ",
+        "Sī digitōs manūs numerās, {quīnquiēs/quīnquiēns|5} numerās; sī pedēs muscae, {sexiēs/sexiēns|6}; sī arāneae, {octiēs/octiēns|8}. ",
+        "Septem diēbus sōl {septiēs/septiēns|7} oritur, decem diēbus {deciēs/deciēns|10}. Quī novem Mūsās singulās salūtat, {noviēs/noviēns|9} salūtat."
+      ]
+    },
+    {
+      "id": "bis-bina",
+      "tab": "Bis bīna",
+      "q": "Bis bīna quot sunt?",
+      "text": [
+        "Bis bīna sunt {quattuor|4}. Bis {terna|3} sunt sex, {ter|3} terna novem. Ter {quaterna|4} sunt duodecim, ter {quīna|5} quīndecim. ",
+        "{Bis|2} quīna sunt decem, bis {sēna|6} duodecim. {Quater|4} quaterna sunt sēdecim. ",
+        "Bis {dēna|10} sunt vīgintī, {quīnquiēs/quīnquiēns|5} quaterna totidem. {Deciēs/Deciēns|10} dēna sunt centum."
+      ]
+    }
+  ]
+}

@@ -3630,3 +3630,56 @@ test('Quis pulsat? takes i for j and gives the house spelling, takes alternative
   await game.evaluate(() => { for (const key of Object.keys(localStorage)) if (/^(qp|uet)-/.test(key)) localStorage.removeItem(key); });
   await context.close();
 });
+
+// The table of forms in both gap games (Jack, 20 November 2026: "a table of all the forms for someone
+// who does not know them («Mōnstrā fōrmās» or something of the kind, and it opens)").
+test('the gap games show their table of forms on request, closed at first, and it fits a phone', async () => {
+  const context = await browser.newContext({ viewport: { width: 375, height: 760 }, serviceWorkers: 'block' });
+  const game = await context.newPage();
+  const second = { 'theodorus.html': ['hic', 'hīc', 'hūc', 'hinc', 'hāc'], 'quis-pulsat.html': ['aliquis', 'aliquis', 'aliquid', 'aliquem', 'alicujus', 'alicui'] };
+  assert.deepEqual(GAP_GAMES.map(g => g.file).filter(file => second[file]), ['theodorus.html', 'quis-pulsat.html']);
+  await game.goto(pageUrl('index.html'));
+  await game.evaluate(() => localStorage.removeItem('lexicon-practice-lang'));
+  for (const file of Object.keys(second)) {
+    await game.goto(pageUrl(file));
+    await game.locator('#check').waitFor();
+    const control = game.locator('#forms > summary'), table = game.locator('#forms table').first();
+    assert.equal(await table.isVisible(), false, `${file}: closed at first`);
+    assert.equal(await control.innerText(), 'Mōnstrā fōrmās');
+    assert.ok((await control.boundingBox()).height >= 44, `${file}: the control is 44px or more`);
+    await control.click();
+    assert.equal(await table.isVisible(), true, `${file}: open`);
+    assert.equal(await control.innerText(), 'Cēlā fōrmās');
+    const row = await table.locator('tbody tr').nth(1).locator('th, td').allTextContents();
+    assert.deepEqual(row, second[file], file);
+    assert.equal(await table.locator('tbody tr').first().locator('th').textContent(), 'quis?');
+    // The heads are rubrics, the serif's small capitals; the forms are Latin.
+    assert.match(await table.locator('thead th').first().evaluate(node => getComputedStyle(node).fontFamily), /^"Lexicon Serif"/);
+    assert.equal(await table.locator('thead th').first().evaluate(node => getComputedStyle(node).fontVariantCaps), 'all-small-caps');
+    assert.equal(await game.locator('#forms-body').getAttribute('lang'), 'la');
+    // Open, the page still does not scroll sideways: the table scrolls in its own box.
+    assert.equal(await game.evaluate(() => document.documentElement.scrollWidth > innerWidth), false, `${file}: open at 375px`);
+    // It closes again, and a new round opens with it closed.
+    await control.click();
+    assert.equal(await table.isVisible(), false, `${file}: closed again`);
+    await control.click();
+    await game.locator('.tab').nth(1).click();
+    assert.equal(await table.isVisible(), false, `${file}: closed on a new round`);
+    // The keyboard opens it too.
+    await control.focus();
+    await game.keyboard.press('Enter');
+    assert.equal(await table.isVisible(), true, `${file}: open by the keyboard`);
+  }
+  // In English the control is English, and the forms, captions, and heads stay Latin.
+  await game.evaluate(() => localStorage.setItem('lexicon-practice-lang', 'en'));
+  await game.goto(pageUrl('quis-pulsat.html'));
+  await game.locator('#check').waitFor();
+  assert.equal(await game.locator('#forms > summary').innerText(), 'Show the forms');
+  await game.locator('#forms > summary').click();
+  assert.equal(await game.locator('#forms > summary').innerText(), 'Hide the forms');
+  assert.deepEqual(await game.locator('#forms caption').allTextContents(), ['Dē plūribus', 'Dē duōbus']);
+  assert.equal(await game.locator('html').getAttribute('lang'), 'en');
+  assert.equal(await game.locator('#forms-body').getAttribute('lang'), 'la');
+  await game.evaluate(() => localStorage.removeItem('lexicon-practice-lang'));
+  await context.close();
+});

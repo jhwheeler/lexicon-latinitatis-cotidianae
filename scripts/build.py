@@ -270,7 +270,9 @@ def gap_games(root=ROOT):
     and its docs. A game: id, order, file (the page it makes), name (its Latin name, the page's heading),
     description (the page's meta description, English), eyebrow (the line over the question, la and
     en), prefix (of its storage keys: <prefix>hints, <prefix>strict, <prefix>done; never change one, or a
-    reader's progress is lost), and rounds: id (also the page's #hash), tab, q (the question), and text,
+    reader's progress is lost), tabulae (the tables of forms behind "Mōnstrā fōrmās": each with heads,
+    rows whose first cell is the row's label and which have a cell for every head, "—" where there is no
+    form in use, and an optional caption), and rounds: id (also the page's #hash), tab, q (the question), and text,
     a list of pieces joined as they stand, with each gap written {form/other form|hint}."""
     games = []
     for path in sorted((root / 'src/lacunae').glob('*.json')):
@@ -280,7 +282,7 @@ def gap_games(root=ROOT):
         except ValueError as error:
             raise ValueError(f'{where}: not valid JSON ({error})') from None
         try:
-            fields(game, ('id', 'order', 'file', 'name', 'description', 'eyebrow', 'prefix', 'rounds'))
+            fields(game, ('id', 'order', 'file', 'name', 'description', 'eyebrow', 'prefix', 'tabulae', 'rounds'))
             require(re.fullmatch(r'[a-z][a-z0-9-]*', string(game['id'])) and game['id'] == path.stem, f'the id must be the file\'s name, {path.stem}')
             require(isinstance(game['order'], int), 'order must be a whole number')
             require(re.fullmatch(r'[a-z][a-z0-9-]*\.html', string(game['file'])), 'file must be a page name such as quis-pulsat.html')
@@ -288,6 +290,18 @@ def gap_games(root=ROOT):
             string(game['name']), string(game['description'])
             fields(game['eyebrow'], ('la', 'en'))
             string(game['eyebrow']['la']), string(game['eyebrow']['en'])
+            require(isinstance(game['tabulae'], list) and game['tabulae'], 'no tables of forms (tabulae)')
+            for number, table in enumerate(game['tabulae'], 1):
+                fields(table, ('heads', 'rows'), ('caption',))
+                if 'caption' in table:
+                    string(table['caption'])
+                strings(table['heads'], f'table {number}: heads')
+                require(isinstance(table['rows'], list) and table['rows'], f'table {number}: no rows')
+                for line, row in enumerate(table['rows'], 1):
+                    require(isinstance(row, list) and len(row) == len(table['heads']),
+                            f'table {number}, row {line}: {len(row) if isinstance(row, list) else "no"} cells for {len(table["heads"])} heads')
+                    require(all(isinstance(cell, str) and cell.strip() == cell and cell for cell in row),
+                            f'table {number}, row {line}: an empty cell (write — where there is no form)')
             require(isinstance(game['rounds'], list) and game['rounds'], 'no rounds')
             seen = set()
             for number, round_ in enumerate(game['rounds'], 1):
@@ -317,7 +331,7 @@ def gap_games(root=ROOT):
 def gap_game_page(root, game, games):
     """A gap game's page: the engine, src/lacunae.html, with the game's data written in."""
     data = {'rounds': [{'id': r['id'], 'tab': r['tab'], 'q': r['q'], 'text': ''.join(r['text'])} for r in game['rounds']],
-            'eyebrow': game['eyebrow'], 'prefix': game['prefix']}
+            'eyebrow': game['eyebrow'], 'prefix': game['prefix'], 'tabulae': game['tabulae']}
     siblings = ''.join(f'    <a href="{other["file"]}" lang="la">{escape(other["name"])}</a>\n' for other in games if other is not game)
     return fill(root / 'src/lacunae.html', {
         'title': escape(f'{game["name"]} · {APP_NAME}'), 'description': escape(game['description']),

@@ -6,6 +6,28 @@
   "description": "Ubi est Theodōrus? A game of the Latin adverbs of place (ubi, quō, unde, quā): fill the gaps in short dialogues, in Latin or with an English interface.",
   "eyebrow": {"la": "Lūdus adverbiōrum locī", "en": "A game of the adverbs of place"},
   "prefix": "uet-",
+  "tabulae": [
+    {
+      "heads": ["Prōnōmen", "Ubi?", "Quō?", "Unde?", "Quā?"],
+      "rows": [
+        ["quis?", "ubi", "quō", "unde", "quā"],
+        ["hic", "hīc", "hūc", "hinc", "hāc"],
+        ["iste", "istīc", "istūc", "istinc", "istāc"],
+        ["ille", "illīc", "illūc", "illinc", "illāc"],
+        ["is", "ibi", "eō", "inde", "eā"],
+        ["īdem", "ibīdem", "eōdem", "indidem", "eādem"],
+        ["aliquis", "alicubi", "aliquō", "alicunde", "aliquā"],
+        ["quis (post sī, nē)", "sīcubi, nēcubi", "sī quō, nē quō", "sīcunde, nēcunde", "sī quā, nē quā"],
+        ["alius", "alibī", "aliō", "aliunde", "aliā"],
+        ["quisquis", "ubiubi", "quōquō", "undeunde", "quāquā"],
+        ["quīcumque", "ubicumque", "quōcumque", "undecumque", "quācumque"],
+        ["quīvīs", "ubivīs", "quōvīs", "—", "quāvīs"],
+        ["quisque", "ubīque", "—", "undique", "—"],
+        ["ūllus", "usquam", "usquam, quōquam", "—", "—"],
+        ["nūllus", "nusquam", "nusquam", "—", "—"]
+      ]
+    }
+  ],
   "rounds": [
     {
       "id": "ubi", "tab": "Ubi?", "q": "Ubi est Theodōrus?",

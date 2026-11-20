@@ -1135,10 +1135,16 @@ class BuildTests(unittest.TestCase):
                 for other in ['index.html', 'practice.html', 'hora.html', 'chartae.html'] + [g['file'] for g in games if g is not game]:
                     self.assertIn(f'href="{other}"', links)
                 self.assertNotIn(f'href="{game["file"]}"', links)
+                # The tables of forms behind "Mōnstrā fōrmās" (Jack, 20 November 2026) are in the page.
+                self.assertIn('"tabulae": ' + json.dumps(game['tabulae'], ensure_ascii=False), page)
                 # The engine reads j as i (and cunque as cumque) in what is typed and in the forms.
                 self.assertIn('.replace(/cunque/g, "cumque").replace(/j/g, "i")', page)
         self.assertIn('<title>Quis pulsat? · Lexicon Latīnitātis Cotīdiānae</title>', outputs['quis-pulsat.html'])
         self.assertIn('"prefix": "uet-"', outputs['theodorus.html'])
+        self.assertEqual([(len(t['rows']), len(t['heads'])) for t in games[0]['tabulae']], [(15, 5)])
+        self.assertEqual([(t.get('caption'), len(t['rows']), len(t['heads'])) for t in games[1]['tabulae']],
+                         [('Dē plūribus', 12, 6), ('Dē duōbus', 7, 2)])
+        self.assertIn('Mōnstrā fōrmās', outputs['quis-pulsat.html'])
         # A malformed game file stops the build, and says which file and what is wrong.
         path = self.root / 'src/lacunae/quis-pulsat.json'
         good = path.read_text(encoding='utf-8')
@@ -1157,6 +1163,11 @@ class BuildTests(unittest.TestCase):
         broken(lambda g: g['rounds'][0].update(text=['Nesciō quis pulset.']), 'round quis: no gaps')
         broken(lambda g: g['rounds'][0].update(text=['Nesciō {Aliquis|aliquis} quis {pulset.']), 'a brace outside a gap')
         broken(lambda g: g.update(prefix='uet-'), 'two games with the same prefix')
+        broken(lambda g: g.pop('tabulae'), r'Missing fields')
+        broken(lambda g: g['tabulae'][1]['rows'][2].pop(), r'quis-pulsat\.json: table 2, row 3: 1 cells for 2 heads')
+        broken(lambda g: g['tabulae'][0]['rows'][0].__setitem__(4, ''), r'table 1, row 1: an empty cell')
+        broken(lambda g: g['tabulae'][0]['rows'][0].__setitem__(4, ' cujus'), r'table 1, row 1: an empty cell')
+        broken(lambda g: g['tabulae'].clear(), 'no tables of forms')
         path.write_text('{"id": ', encoding='utf-8')
         with self.assertRaisesRegex(ValueError, r'quis-pulsat\.json: not valid JSON'):
             builder.gap_games(self.root)

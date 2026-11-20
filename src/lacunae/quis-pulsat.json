@@ -6,6 +6,39 @@
   "description": "Quis pulsat? A game of the Latin indefinite pronouns (aliquis, quisquam, quīdam, quisque, quīvīs, nēmō): fill the gaps in short dialogues, in Latin or with an English interface.",
   "eyebrow": {"la": "Lūdus prōnōminum indēfīnītōrum", "en": "A game of the indefinite pronouns"},
   "prefix": "qp-",
+  "tabulae": [
+    {
+      "caption": "Dē plūribus",
+      "heads": ["Prōnōmen", "Quis?", "Quid?", "Quem?", "Cujus?", "Cui?"],
+      "rows": [
+        ["quis?", "quis", "quid", "quem", "cujus", "cui"],
+        ["aliquis", "aliquis", "aliquid", "aliquem", "alicujus", "alicui"],
+        ["quis (post sī, nē, num)", "quis", "quid", "quem", "cujus", "cui"],
+        ["quīdam", "quīdam", "quiddam", "quendam", "cujusdam", "cuidam"],
+        ["quisquam", "quisquam", "quicquam", "quemquam", "cujusquam", "cuiquam"],
+        ["quisque", "quisque", "quidque", "quemque", "cujusque", "cuique"],
+        ["quīvīs", "quīvīs", "quidvīs", "quemvīs", "cujusvīs", "cuivīs"],
+        ["quīlibet", "quīlibet", "quidlibet", "quemlibet", "cujuslibet", "cuilibet"],
+        ["quisquis", "quisquis", "quicquid", "quemquem", "—", "—"],
+        ["quīcumque", "quīcumque", "quodcumque", "quemcumque", "cujuscumque", "cuicumque"],
+        ["ecquis", "ecquis", "ecquid", "ecquem", "—", "—"],
+        ["nēmō", "nēmō", "nihil", "nēminem", "nūllīus", "nēminī"]
+      ]
+    },
+    {
+      "caption": "Dē duōbus",
+      "heads": ["Dē duōbus", "Dē plūribus"],
+      "rows": [
+        ["uter?", "quis?"],
+        ["alter", "alius"],
+        ["uterque", "quisque"],
+        ["neuter", "nēmō"],
+        ["alteruter", "aliquis"],
+        ["utercumque", "quīcumque"],
+        ["utervīs, uterlibet", "quīvīs, quīlibet"]
+      ]
+    }
+  ],
   "rounds": [
     {
       "id": "quis", "tab": "Quis?", "q": "Quis pulsat?",

@@ -136,6 +136,23 @@ body.hints .gap .hint{display:inline}
 .keys-label{font:400 1rem/1.2 var(--sans);color:var(--muted);margin-right:4px}
 .keys button{width:44px;height:44px;border:1px solid var(--hair);background:var(--ground);border-radius:8px;font-size:1.2rem}
 
+/* the table of forms (Jack, 20 November 2026: "a table of all the forms for someone who does not know
+   them"), closed at first, as the clock's reference is (.ref, .tbl in src/hora.html): a card that
+   opens, the table scrolling sideways in its own box so that the page never does. The heads and the
+   captions are rubrics, the serif's small capitals; the row's label is the pronoun, in italic; the
+   cells are the forms, in ink. */
+.ref{background:var(--card);border:1px solid var(--hair);border-radius:12px;padding:0 16px}
+.ref summary{cursor:pointer;min-height:44px;display:flex;align-items:center;font:400 1.0625rem/1.2 var(--sans)}
+.ref .when-open,.ref[open] .when-closed{display:none}
+.ref[open] .when-open{display:inline}
+.tbl{overflow-x:auto;padding-bottom:12px}
+.tbl table{border-collapse:collapse;width:100%;font-size:1rem;margin-bottom:10px}
+.tbl caption{text-align:left;padding:8px 0 2px;font:400 1.05rem/1.3 var(--serif);font-variant-caps:all-small-caps;letter-spacing:.06em;color:var(--rubric)}
+.tbl th,.tbl td{text-align:left;padding:5px 11px 5px 0;border-bottom:1px solid var(--hair);white-space:nowrap}
+.tbl th:last-child,.tbl td:last-child{padding-right:0}
+.tbl thead th{font:400 .95rem/1.3 var(--serif);font-variant-caps:all-small-caps;letter-spacing:.06em;color:var(--rubric)}
+.tbl tbody th{font-weight:400;font-style:italic;color:var(--soft)}
+
 /* the options, the language, and the way back, on the ground under the card */
 .grp{display:flex;flex-direction:column;gap:4px;padding:0 2px}
 .grp h2{margin:0 0 3px;font:400 1.1rem/1.1 var(--serif);font-variant-caps:small-caps;letter-spacing:.05em;color:var(--rubric)}
@@ -187,6 +204,11 @@ body.hints .gap .hint{display:inline}
       <button type="button" data-ch="ā">ā</button><button type="button" data-ch="ē">ē</button><button type="button" data-ch="ī">ī</button><button type="button" data-ch="ō">ō</button><button type="button" data-ch="ū">ū</button>
     </div>
   </section>
+
+  <details class="ref" id="forms">
+    <summary><span class="when-closed" data-i18n="showForms"></span><span class="when-open" data-i18n="hideForms"></span></summary>
+    <div class="tbl" id="forms-body" lang="la"></div>
+  </details>
 
   <div class="grp">
     <h2 data-i18n="optH"></h2>
@@ -257,13 +279,15 @@ const T={
    score:(n,m)=>`Rēctē: ${n} ex ${m}`,wrong:'Nōndum. Iterum temptā.',apex:'Fōrma rēcta est, apicēs dēsunt.',
    perfect:'Euge! Omnia ipse explēvistī.',finished:(n,m)=>`Perfectum est; ${n} ex ${m} ipse explēvistī.`,
    tabs:'Interrogātiōnēs',done:'perfectum',gap:'lacūna',optH:'Optiōnēs',langH:'Lingua',
-   back:'Ad exercitātiōnem',links:'Ad lexicon',practice:'Vocābulōrum exercitātiō'},
+   back:'Ad exercitātiōnem',links:'Ad lexicon',practice:'Vocābulōrum exercitātiō',
+   showForms:'Mōnstrā fōrmās',hideForms:'Cēlā fōrmās'},
  en:{eyebrow:GAME.eyebrow.en,task:'Fill the gaps.',check:'Check',reveal:'Show',reset:'Start over',next:'Next question',
    keys:'Macrons',keysLabel:'Letters with macrons',hints:'Show the pronouns',strict:'Require macrons',
    score:(n,m)=>`Right: ${n} of ${m}`,wrong:'Not yet. Try again.',apex:'The form is right; the macrons are missing.',
    perfect:'Well done! You filled them all yourself.',finished:(n,m)=>`Done; you filled ${n} of ${m} yourself.`,
    tabs:'Questions',done:'done',gap:'gap',optH:'Options',langH:'Language',
-   back:'Back to practice',links:'To the lexicon',practice:'Vocabulary practice'}
+   back:'Back to practice',links:'To the lexicon',practice:'Vocabulary practice',
+   showForms:'Show the forms',hideForms:'Hide the forms'}
 };
 
 /* Everything stays on the device, in localStorage, each access inside try/catch, under the game's own
@@ -452,6 +476,7 @@ function focusNextOpen(from) {
 
 function go(i) {
   current = (i + rounds.length) % rounds.length;
+  el("forms").open = false;
   renderTabs();
   renderRound();
   try { history.replaceState(null, "", "#" + rounds[current].id); } catch (e) {}
@@ -569,8 +594,27 @@ function fromHash() {
 }
 window.addEventListener("hashchange", () => {
   const i = fromHash();
-  if (i !== current) { current = i; renderTabs(); renderRound(); }
+  if (i !== current) { current = i; el("forms").open = false; renderTabs(); renderRound(); }
 });
+/* The table of forms, behind "Mōnstrā fōrmās" (Jack's words, 20 November 2026; "Cēlā fōrmās" and the
+   English are Claude's): the game's tables, the first cell of a row its label. The forms, the captions,
+   and the heads are Latin in both interfaces. It opens closed on every visit and every round, and
+   whether it is open is not kept. The tables are Claude's compilation, for Jack's review. */
+GAME.tabulae.forEach(t => {
+  const table = document.createElement("table");
+  if (t.caption) { const c = document.createElement("caption"); c.textContent = t.caption; table.appendChild(c); }
+  const thead = document.createElement("thead"), hr = document.createElement("tr");
+  t.heads.forEach(h => { const th = document.createElement("th"); th.scope = "col"; th.textContent = h; hr.appendChild(th); });
+  thead.appendChild(hr); table.appendChild(thead);
+  const tbody = document.createElement("tbody");
+  t.rows.forEach(r => {
+    const tr = document.createElement("tr");
+    r.forEach((cell, i) => { const c = document.createElement(i ? "td" : "th"); if (!i) c.scope = "row"; c.textContent = cell; tr.appendChild(c); });
+    tbody.appendChild(tr);
+  });
+  table.appendChild(tbody); el("forms-body").appendChild(table);
+});
+
 current = fromHash();
 renderRound();
 applyLang();

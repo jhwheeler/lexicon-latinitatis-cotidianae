@@ -8,7 +8,8 @@
     "time to get up",
     "it’s time to get up",
     "time for bed",
-    "it’s time for"
+    "it’s time for",
+    "time for sleeping"
   ],
   "domain": "sermo",
   "terms": [
@@ -30,11 +31,13 @@
       "status": "alternative",
       "period": "classical",
       "gloss": "it’s time for …",
-      "grammar": "tempus est with the genitive of a noun or gerund",
+      "grammar": "tempus est with the genitive of a noun or a gerund; a verb with an object goes into the gerundive",
       "evidence": [
-        "Sen. Ep. 122.9: <span lang=\"la\">lūcet: somnī tempus est</span>"
+        "Sen. Ep. 122.9: <span lang=\"la\">lūcet: somnī tempus est</span>",
+        "Caes. BG 2.19.6: <span lang=\"la\">quod tempus inter eōs committendī proeliī convēnerat</span>",
+        "Cic. Fam. 3.10.6: <span lang=\"la\">aliēnum tempus est mihi tēcum expostulandī</span> (Lewis &amp; Short s.v. <span lang=\"la\">tempus</span>)"
       ],
-      "comment": "“Time for sleep”, “time for supper”: the thing in the genitive."
+      "comment": "“Time for sleep”, “time for supper”: the thing in the genitive. A verb goes into the genitive of the gerund (<span lang=\"la\">tempus est dormiendī</span>, it’s time for sleeping), and one with an object into the gerundive (<span lang=\"la\">tempus committendī proeliī</span>, the time for joining battle). The two constructions differ a little: with the gerund <span lang=\"la\">tempus</span> is the proper time or season for a thing, with the infinitive it is high time to do it (Gildersleeve &amp; Lodge §428, n. 2)."
     }
   ],
   "phrases": [
@@ -52,6 +55,16 @@
       "latin": "lūcet: somnī tempus est.",
       "english": "it’s getting light: time for bed!",
       "source": "Sen. Ep. 122.9"
+    },
+    {
+      "latin": "quod tempus inter eōs committendī proeliī convēnerat",
+      "english": "the moment they had agreed on among themselves for joining battle",
+      "source": "Caes. BG 2.19.6"
+    },
+    {
+      "latin": "Tempus est dormiendī.",
+      "english": "It’s time for sleeping.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -62,11 +75,12 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/tempus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tempus</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 35."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 35.",
+    "B. L. Gildersleeve and Gonzalez Lodge, <em>Gildersleeve’s Latin Grammar</em>, 3rd ed. (1895), §428, n. 2."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-20",
     "by": "Claude"
   }
 }

@@ -54,13 +54,13 @@
   // hōc nāvigātrō servātur, In lexicō īnspice, exemplum nostrum, Quā ratiōne repetātur). "Chartae
   // animālium" is the name the cards have had from the start, and "Quō vēscitur?" and "Anglicē"
   // are printed on them. The rest is Claude's wording, composed for this page on 20 November 2026,
-  // for Jack to review: sub, groups, all, gallery, ask, picture, credit, cropped, offline, more,
-  // vocabulary, and the English names of the groups (in data/chartae.json).
+  // for Jack to review: sub, groups, all, gallery, ask, prev, forth, picture, credit, cropped,
+  // offline, more, vocabulary, and the English names of the groups (in data/chartae.json).
   const one = (n, singular, many) => `${number(n)} ${n === 1 ? singular : many}`;
   const T = {
     la: {
       title: 'Chartae animālium', sub: 'Imāginem īnspice, nōmen Latīnum clārā vōce dīc, deinde respōnsum ostende.', langLabel: 'Lingua',
-      groups: 'Genera', all: 'Omnia', gallery: 'Omnēs chartae', ask: 'Quid est?',
+      groups: 'Genera', all: 'Omnia', gallery: 'Omnēs chartae', ask: 'Quid est?', prev: 'Prior', forth: 'Proxima',
       start: 'Incipe', resume: 'Perge', early: 'Repete tamen nunc', next: 'Novus cursus',
       show: 'Respōnsum ostende', again: 'Iterum', got: 'Teneō', undo: 'Redī', close: 'Exī', card: 'Charta',
       status: { new: 'nova', due: 'repetenda', lapsed: 'ēlāpsa' },
@@ -80,7 +80,7 @@
     },
     en: {
       title: 'Animal cards', sub: 'Look at the picture, say the Latin name aloud, then show the answer.', langLabel: 'Language',
-      groups: 'Kinds', all: 'All', gallery: 'All the cards', ask: 'What is it?',
+      groups: 'Kinds', all: 'All', gallery: 'All the cards', ask: 'What is it?', prev: 'Previous', forth: 'Next',
       start: 'Start', resume: 'Continue', early: 'Practise early', next: 'Another round',
       show: 'Show the Latin', again: 'Again', got: 'Got it', undo: 'Undo', close: 'Close', card: 'Card',
       status: { new: 'new', due: 'due', lapsed: 'lapsed' },
@@ -207,21 +207,36 @@
     polish(root);
   }
 
-  // Every card, to look through with a child: the picture, the name, and the way to the entry. The
+  // Every card, to look through with a child: the picture and the name. A tile opens its card, with
+  // the sentence and the rest of its back (Jack, 20 November 2026: "bene esset chartam aperīre
+  // posse ut videātur sententiola etc. (de indice)"); the way to the entry is on the card. The
   // pictures are fetched as they come into view, and not at all while the list is closed.
   function drawGallery() {
     q('c-gallery').replaceChildren(...groups.flatMap(group => {
       const tiles = cards.filter(card => card.group === group.id).map(card => {
         const picture = el('img'); picture.src = card.picture; picture.alt = ''; picture.loading = 'lazy'; picture.width = 720; picture.height = 511;
-        const caption = el('figcaption', '', [el('b', '', card.head, 'la'), ' ', el('span', 'c-en', card.english, 'en')]);
-        const figure = el('figure', 'c-tile', [picture, caption]);
-        if (!card.record) return figure;
-        const link = el('a', 'c-tile-link', figure); link.href = `c/${card.record}.html`;
-        return link;
+        const tile = el('button', 'c-tile', [picture, el('span', 'c-name', [el('b', '', card.head, 'la'), ' ', el('span', 'c-en', card.english, 'en')])]);
+        tile.type = 'button'; tile.dataset.card = card.id;
+        return tile;
       });
       return [el('h2', 'c-group', nameOf(group), lang === 'la' ? 'la' : 'en'), el('div', 'c-tiles', tiles)];
     }));
   }
+  // A card opened from the list is looked at, not played: its back is shown, there are no marks,
+  // and nothing is recorded. The cards before and after it follow in the list's order. The page's
+  // address names the card (#taurus), so that the way back from its entry leads to it again.
+  let look = null;   // the card being looked at, or null
+  function openLook(id) {
+    if (!byId.has(id)) return;
+    look = byId.get(id);
+    try { history.replaceState(null, '', '#' + id); } catch {}
+    openGame();
+  }
+  const lookStep = by => { if (look) openLook(cards[(cards.indexOf(look) + by + cards.length) % cards.length].id); };
+  q('c-gallery').addEventListener('click', event => {
+    const tile = event.target.closest('button[data-card]');
+    if (tile) openLook(tile.dataset.card);
+  });
 
   // Rounds, as in the vocabulary practice: twelve cards; while the deck has new cards at most half
   // of a round is repetition, first the cards that were missed, then the longest overdue; the rest
@@ -284,13 +299,13 @@
     if (round.current) round.last = round.current.id;
   }
   function reveal() {
-    if (!round.current || round.shown) return;
+    if (look || !round.current || round.shown) return;
     round.shown = true;
     drawCard(); keep();
     q('g-got').focus({ preventScroll: true });
   }
   function mark(got) {
-    if (!round.current || !round.shown) return;
+    if (look || !round.current || !round.shown) return;
     const now = Date.now(), id = round.current.id, record = rec(id);
     // One step back: what the card's record was before this mark, a new card having none, and the round's tally.
     round.undo = { id, before: progress.cards[id] || null, got: round.got, again: round.again, missed: round.missed.slice() };
@@ -305,7 +320,7 @@
   }
   function undo() {
     const step = round.undo;
-    if (!step) return;
+    if (look || !step) return;
     if (step.before) progress.cards[step.id] = step.before; else delete progress.cards[step.id];
     save();
     if (round.current) round.queue.unshift(round.current);
@@ -317,6 +332,26 @@
 
   // The round's layer: the card, and what can be done with it ------------------------------------------
   function drawCard() {
+    q('g-look').hidden = !look;
+    q('g-deck').hidden = !!look; q('g-list').hidden = !look;
+    if (look) {
+      // A card from the list: its picture and its back, and the ways to the cards beside it.
+      const at = cards.indexOf(look);
+      q('g-pos').textContent = `${at + 1} / ${cards.length}`;
+      q('g-bar').style.width = '0';
+      q('g-undo').disabled = true;
+      q('g-card').classList.remove('front', 'finished');
+      q('g-ask').hidden = true; q('g-picture').hidden = false; q('g-end').hidden = true;
+      q('g-back').hidden = false; q('g-back').setAttribute('aria-hidden', 'false');
+      q('g-front').hidden = true; q('g-marks').hidden = true; q('g-done').hidden = true; q('g-keys').hidden = true;
+      if (q('g-picture').getAttribute('src') !== look.picture) q('g-picture').src = look.picture;
+      q('g-picture').alt = look.english; q('g-picture').lang = 'en';
+      drawBack(look);
+      [-1, 1].forEach(by => { new Image().src = cards[(at + by + cards.length) % cards.length].picture; });
+      polish(game);
+      return;
+    }
+    q('g-picture').removeAttribute('lang');
     const card = round.current, record = card ? rec(card.id) : null;
     const position = round.size - round.queue.length;
     q('g-pos').textContent = round.done ? '' : `${position} / ${round.size}`;
@@ -371,16 +406,28 @@
   }
   // The layer covers the whole page, which does not scroll under it.
   function openGame() {
-    if (!game.open) { try { game.showModal(); } catch { game.setAttribute('open', ''); } }
+    const opened = !game.open;
+    if (opened) { try { game.showModal(); } catch { game.setAttribute('open', ''); } }
     document.documentElement.classList.add('pgame-open');
-    drawCard(); keep();
+    drawCard();
     q('g-stage').scrollTop = 0;
+    if (look) { if (opened) q('g-forth').focus({ preventScroll: true }); return; }   // a round left in the middle stays as it was kept
+    keep();
     const button = [q('g-show'), q('g-got'), q('g-next'), q('g-early'), q('g-exit')].find(b => !b.hidden && !b.parentElement.hidden);
     if (button) button.focus({ preventScroll: true });
   }
   function closeGame() {
     if (game.open) { try { game.close(); } catch { game.removeAttribute('open'); } }
     document.documentElement.classList.remove('pgame-open');
+    if (look) {
+      // Back to the list, at the card that was looked at last.
+      const tile = q('c-gallery').querySelector(`button[data-card="${look.id}"]`);
+      look = null;
+      try { history.replaceState(null, '', location.pathname + location.search); } catch {}
+      drawLobby();
+      if (tile) { tile.focus({ preventScroll: true }); tile.scrollIntoView({ block: 'nearest' }); }
+      return;
+    }
     if (round.done) round = idle();   // a finished round is over; one left in the middle can be taken up again
     keep();
     drawLobby();
@@ -391,6 +438,8 @@
   }
 
   q('p-start').addEventListener('click', () => start(!round.current && !standing().more));
+  q('g-prev').addEventListener('click', () => lookStep(-1));
+  q('g-forth').addEventListener('click', () => lookStep(1));
   q('g-close').addEventListener('click', closeGame);
   q('g-exit').addEventListener('click', closeGame);
   game.addEventListener('close', closeGame);   // Escape closes a dialog by itself
@@ -405,6 +454,7 @@
   document.addEventListener('keydown', event => {
     if (!game.open || event.metaKey || event.ctrlKey || event.altKey) return;
     if (event.key === 'Escape') { event.preventDefault(); closeGame(); }
+    else if (look) { if (event.key === 'ArrowLeft') lookStep(-1); else if (event.key === 'ArrowRight') lookStep(1); }
     else if ((event.key === ' ' || event.key === 'Enter') && round.current && !round.shown && !event.target.closest('button, a')) { event.preventDefault(); reveal(); }
     else if (event.key === '1' && round.shown) mark(false);
     else if (event.key === '2' && round.shown) mark(true);
@@ -466,7 +516,9 @@
   if (round.current && chosen.length && ![round.current, ...round.queue].every(card => chosen.includes(card.group))) { round = idle(); forget(); }
   root.hidden = false;
   applyLanguage();
-  if (reopen && (round.current || round.done)) openGame();
+  // The address may name a card to look at: the way back from its entry, or a link to it.
+  if (byId.has(location.hash.slice(1))) { q('c-all').open = true; openLook(location.hash.slice(1)); }
+  else if (reopen && (round.current || round.done)) openGame();
   if (navigator.serviceWorker) {
     // On a first visit the worker takes the page over a moment after it is ready.
     navigator.serviceWorker.addEventListener('controllerchange', () => setTimeout(savePictures, 1500));

@@ -3294,7 +3294,41 @@ test('the animal cards: Latin unless English is chosen, a deck by kind, every ca
   await page.locator('#c-all > summary').click();
   assert.equal(await page.locator('#c-gallery .c-group').count(), 6);
   assert.equal(await page.locator('#c-gallery .c-tile b[lang="la"]').count(), total);
-  assert.match(await page.locator('#c-gallery a.c-tile-link').first().getAttribute('href'), /^c\/[a-z-]+\.html$/);
+  // A tile opens its card to be looked at: the back at once, no marks, nothing recorded, and the cards beside it.
+  const before = await page.evaluate(() => [localStorage.getItem('lexicon-chartae'), localStorage.getItem('lexicon-chartae-round')]);
+  await page.locator('#c-gallery button[data-card="taurus"]').click();
+  await page.locator('#p-game[open]').waitFor();
+  assert.equal(await page.locator('#g-la b').textContent(), 'taurus');
+  assert.equal(await page.locator('#g-ex-la').isVisible(), true);
+  assert.equal(await page.locator('#g-food').isVisible(), true);
+  assert.equal(await page.locator('#g-entry').getAttribute('href'), 'c/bull.html');
+  assert.deepEqual([await page.locator('#g-marks').isVisible(), await page.locator('#g-front').isVisible(), await page.locator('#g-ask').isVisible()], [false, false, false]);
+  assert.equal(await page.locator('#g-list').textContent(), 'All the cards');
+  assert.match(await page.locator('#g-pos').textContent(), new RegExp(`^\\d+ / ${total}$`));
+  assert.match(page.url(), /chartae\.html#taurus$/);
+  for (const key of ['1', '2', 'z']) await page.keyboard.press(key);   // the round's marks and its step back do nothing here
+  assert.equal(await page.locator('#g-la b').textContent(), 'taurus');
+  await page.locator('#g-forth').click();
+  assert.equal(await page.locator('#g-la b').textContent(), 'ovis');
+  await page.keyboard.press('ArrowLeft');
+  await page.locator('#g-prev').click();
+  assert.equal(await page.locator('#g-la b').textContent(), 'vacca');
+  // The way back from the entry leads to the same card.
+  await page.locator('#g-entry').click();
+  await page.waitForURL(/c\/cow\.html$/);
+  await page.goBack();
+  await page.locator('#p-game[open]').waitFor();
+  assert.equal(await page.locator('#g-la b').textContent(), 'vacca');
+  await page.locator('#g-close').click();
+  assert.equal(await gameOpen(), false);
+  assert.doesNotMatch(page.url(), /#/);
+  assert.equal(await page.locator('#c-all').evaluate(node => node.open), true);
+  assert.deepEqual(await page.evaluate(() => [localStorage.getItem('lexicon-chartae'), localStorage.getItem('lexicon-chartae-round')]), before);
+  // A round begun afterwards is a round: the front first, and the marks.
+  await startRound();
+  assert.equal(await page.locator('#g-show').isVisible(), true);
+  assert.equal(await page.locator('#g-look').isVisible(), false);
+  await page.locator('#g-close').click();
   // The display options reach the cards: without macrons, the Latin has none and the English is untouched.
   await page.evaluate(() => localStorage.setItem('lexicon-macrons', 'off'));
   await openChartae(false);
@@ -3339,6 +3373,9 @@ test('the animal cards: Latin unless English is chosen, a deck by kind, every ca
       }
       await check('the end of a round');
       await page.locator('#g-exit').click();
+      await page.locator('#c-gallery button[data-card="lutramarina"]').click();
+      await check('a card opened from the list');
+      await page.locator('#g-close').click();
     }
   }
   await page.evaluate(keys => keys.forEach(key => localStorage.removeItem(key)), CHARTAE_KEYS);

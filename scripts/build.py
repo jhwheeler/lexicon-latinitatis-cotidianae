@@ -366,7 +366,7 @@ def service_worker(root, outputs):
     """sw.js, with the files it saves when it installs: the front page, the category pages, the
     guidance pages, the practice pages, the review page, and the stylesheet, scripts, search data, practice cards,
     fonts and icons. The pictures of the animal cards (chartae/) are not among them: they are six megabytes, and
-    are saved as they are read, like the entry pages (src/chartae.js fetches them once the page has been opened). Its version is a hash of them, so a change to any of them makes the browser
+    are saved as they are read, like the entry pages (src/chartae.js fetches them once the page has been opened), and unlike them are never cleared away to make room. Its version is a hash of them, so a change to any of them makes the browser
     fetch them all afresh. The entry and word pages are saved as they are read."""
     files = sorted(path for path in outputs
                    if path in ('index.html', 'how-we-decide.html', 'how-practice-works.html', 'rulings.html', 'practice.html', 'hora.html', 'chartae.html', 'review.html', 'manifest.webmanifest')

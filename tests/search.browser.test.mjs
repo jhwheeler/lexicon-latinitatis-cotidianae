@@ -3483,6 +3483,106 @@ test('the picture cards: a line of subjects narrows the kinds and the deck, the 
   await page.evaluate(keys => keys.forEach(key => localStorage.removeItem(key)), CHARTAE_KEYS);
 });
 
+test('the picture cards: the scientific name follows the English one, untouched by the display options, and the card keeps its height', async () => {
+  // Jack, 20 November 2026: the scientific names of every animal and plant beside the English ones,
+  // "Hōc modō discēmus discrīmina". The name is in italic after a middle dot, in a language of its
+  // own (la-x-taxon) that the display options do not rewrite.
+  const data = await page.evaluate(async address => {
+    const text = await (await fetch(address)).text();
+    return JSON.parse(text.slice(text.indexOf('{'), text.lastIndexOf('}') + 1));
+  }, pageUrl('assets/chartae-data.js'));
+  const card = id => data.cards.find(item => item.id === id);
+  assert.equal(card('quercus').scientific, 'Quercus');
+  assert.equal(card('vulpes').scientific, 'Vulpes vulpes');
+  assert.equal(card('glans').scientific, undefined);
+  const backOf = async id => {
+    await page.locator(`#c-gallery button[data-card="${id}"]`).click();
+    await page.locator('#p-game[open]').waitFor();
+    return page.locator('#g-en');
+  };
+  // In the Latin interface: "Anglicē fox · Vulpes vulpes", the name italic, after the English name.
+  await openChartae(true, 'la');
+  await page.locator('#c-all > summary').click();
+  let line = await backOf('vulpes');
+  assert.equal(await line.textContent(), 'Anglicē fox · Vulpes vulpes');
+  const taxon = line.locator('i.c-sci');
+  assert.equal(await taxon.getAttribute('lang'), 'la-x-taxon');
+  assert.equal(await taxon.getAttribute('translate'), 'no');
+  assert.equal(await taxon.evaluate(node => getComputedStyle(node).fontStyle), 'italic');
+  assert.equal(await taxon.evaluate(node => node.previousElementSibling.getAttribute('lang') + '|' + node.previousElementSibling.textContent), 'en|fox');
+  // A card without one shows the line as before.
+  await page.locator('#g-close').click();
+  line = await backOf('glans');
+  assert.equal(await line.textContent(), 'Anglicē acorn');
+  assert.equal(await line.locator('.c-sci').count(), 0);
+  await page.locator('#g-close').click();
+  // In English, with no label: "fox · Vulpes vulpes". The tiles of "All the cards" keep the Latin and the English only.
+  await page.locator('#p-lang button[data-lang="en"]').click();
+  line = await backOf('vulpes');
+  assert.equal(await line.textContent(), 'fox · Vulpes vulpes');
+  await page.locator('#g-close').click();
+  assert.equal(await page.locator('#c-gallery .c-sci').count(), 0);
+  assert.equal(await page.locator('#c-gallery button[data-card="vulpes"]').textContent(), 'vulpēs fox');
+  // The display options (no macrons, i for j, u for v) change the Latin and leave the scientific name
+  // alone: Vulpes vulpes stays, and so does a name with a J (the oak given Juniperus communis for the test).
+  await page.route('**/assets/chartae-data.js', async route => {
+    const response = await route.fetch();
+    await route.fulfill({ response, body: (await response.text()).replace('"scientific":"Quercus"', '"scientific":"Juniperus communis"') });
+  });
+  for (const [key, value] of [['lexicon-macrons', 'off'], ['lexicon-j', 'i'], ['lexicon-v', 'u']]) await page.evaluate(([k, v]) => localStorage.setItem(k, v), [key, value]);
+  await openChartae(false);
+  await page.locator('#c-all > summary').click();
+  line = await backOf('vulpes');
+  assert.equal(await line.textContent(), 'fox · Vulpes vulpes');
+  assert.equal(await page.locator('#g-la').textContent(), 'uulpes, uulpis f.');
+  await page.locator('#g-close').click();
+  line = await backOf('quercus');
+  assert.equal(await line.locator('.c-sci').textContent(), 'Juniperus communis');
+  await page.locator('#g-close').click();
+  // Switched on the page itself, they still leave it alone.
+  await page.unroute('**/assets/chartae-data.js');
+  for (const key of ['lexicon-macrons', 'lexicon-j', 'lexicon-v']) await page.evaluate(k => localStorage.removeItem(k), key);
+  await openChartae(false);
+  await page.locator('#c-all > summary').click();
+  line = await backOf('vulpes');
+  await page.evaluate(() => {
+    for (const [option, value] of [['j', 'i'], ['v', 'u'], ['macrons', 'off']]) document.querySelector(`[data-display="${option}"][data-value="${value}"]`).click();
+  });
+  assert.equal(await page.locator('#g-la').textContent(), 'uulpes, uulpis f.');
+  assert.equal(await line.locator('.c-sci').textContent(), 'Vulpes vulpes');
+  await page.evaluate(() => {
+    for (const [option, value] of [['j', 'j'], ['v', 'v'], ['macrons', 'on']]) document.querySelector(`[data-display="${option}"][data-value="${value}"]`).click();
+  });
+  await page.locator('#g-close').click();
+  // On a phone the card keeps its height when it is turned, a long name wrapping on its back.
+  await page.route('**/assets/chartae-data.js', async route => {
+    const response = await route.fetch();
+    await route.fulfill({ response, body: (await response.text()).replace('"scientific":"Quercus"', '"scientific":"Quercus pubescens subsp. palensis"') });
+  });
+  for (const width of [390, 320]) {
+    await page.setViewportSize({ width, height: 760 });
+    for (const kind of ['arbores', 'partes']) {
+      await keep('lexicon-chartae-deck', { subjects: [], groups: [kind] });
+      await keep('lexicon-chartae-round', null);
+      await openChartae(false);
+      await startRound();
+      await pictureShown();
+      const before = await page.locator('#g-card').boundingBox();
+      await page.locator('#g-show').click();
+      assert.deepEqual(await page.locator('#g-card').boundingBox(), before, `${kind} at ${width}px: the card keeps its height`);
+      assert.equal(await overflows(), false);
+      if (kind === 'arbores') {
+        const lineHeight = await page.locator('#g-en').evaluate(node => parseFloat(getComputedStyle(node).lineHeight) || 20);
+        if (width === 320) assert.ok((await page.locator('#g-en').boundingBox()).height > lineHeight * 1.5, 'the long name wraps');
+      }
+      await page.locator('#g-close').click();
+    }
+  }
+  await page.unroute('**/assets/chartae-data.js');
+  await page.setViewportSize({ width: 1280, height: 900 });
+  await page.evaluate(keys => keys.forEach(key => localStorage.removeItem(key)), CHARTAE_KEYS);
+});
+
 // Ubi est Theodōrus? ------------------------------------------------------------------------------
 
 // The game of the adverbs of place (20 November 2026): gaps in short dialogues, judged as the

@@ -3389,11 +3389,34 @@ def legacy_script(site):
 # as the answer to "Quid fert?"); neither is allowed on a card of another subject. Only pictures
 # that anyone may reuse, commercially too, are taken, so the licences are a closed list (which
 # scripts/fetch_picture.py imports); the page names the author and the licence beside every picture.
+# A card of an animal or a plant may have scientific, right after english (Jack, 20 November 2026:
+# "inclūdāmus nōmina scientifica omnium … animālium plantārumque, fortasse jūxtā nōmina Anglica …
+# Hōc modō discēmus discrīmina"): the name of the taxon that the Latin word names, as nearly as
+# science has one (a species where the word means one species, or the one it ordinarily means in
+# Europe; a genus, family, order, or other group where the word is wider; a domestic animal's
+# binomial in current use, and the same on the cards of its young and of one sex; none where the
+# word is not a taxon, such as a part of a plant). That rule is the coordinating session's, for
+# Jack to judge. The name is written as zoology and botany write it, not as the lexicon writes
+# Latin: genus capitalised, the rest lower case, no macrons or other marks, no author (Juniperus,
+# Quercus ilex; × and subsp. where nomenclature uses them). The page shows it after the English
+# name in a language of its own (la-x-taxon), so that the display options leave it alone.
 PICTURE_LICENCES = {
     'CC0': 'https://creativecommons.org/publicdomain/zero/1.0/', 'Public domain': '',
     'CC BY 2.0': 'https://creativecommons.org/licenses/by/2.0/', 'CC BY 3.0': 'https://creativecommons.org/licenses/by/3.0/',
     'CC BY 4.0': 'https://creativecommons.org/licenses/by/4.0/', 'CC BY-SA 2.5': 'https://creativecommons.org/licenses/by-sa/2.5/',
     'CC BY-SA 3.0': 'https://creativecommons.org/licenses/by-sa/3.0/', 'CC BY-SA 4.0': 'https://creativecommons.org/licenses/by-sa/4.0/'}
+
+
+def scientific_name(name, where):
+    """A picture card's scientific name, written as nomenclature writes it: refused, with the reason, if it is not."""
+    require(isinstance(name, str) and name, f'{where}: scientific is not a name')
+    require(name == name.strip() and '  ' not in name, f'{where}: the scientific name “{name}” has stray spaces')
+    marks = sorted({ch for ch in name if ch != '×' and not (ch.isascii() and (ch.isalpha() or ch in ' .-'))})
+    require(not marks, f'{where}: the scientific name “{name}” has {" ".join(marks)}: it is written as zoology and botany write it, '
+                       'in plain a–z without macrons or other marks (× and the stop of subsp. are the only signs allowed)')
+    require(name[0].isupper(), f'{where}: the scientific name “{name}” must begin with a capital letter (the genus or the higher taxon)')
+    require(all(word.islower() or word == '×' for word in name.split(' ')[1:]),
+            f'{where}: in the scientific name “{name}” only the first word has a capital (the epithets are lower case)')
 
 
 def picture_cards(root, site):
@@ -3421,11 +3444,13 @@ def picture_cards(root, site):
         require(not animal or 'food' in card, f'{where}: a card of an animal needs food (what it eats, in the ablative)')
         require(animal or 'food' not in card, f'{where}: food (what an animal eats) is only for a card of an animal')
         require(subject_of[card['group']] == 'plantae' or 'bears' not in card, f'{where}: bears (what a plant bears) is only for a card of a plant')
-        fields(card, ('id', 'latin', 'english', 'group', 'line', 'source', 'image'), ('record', 'food', 'bears'))
+        fields(card, ('id', 'latin', 'english', 'group', 'line', 'source', 'image'), ('scientific', 'record', 'food', 'bears'))
         require(re.fullmatch(r'[a-z][a-z0-9-]*', key) and f'chartae/{key}.jpg' not in pictures, f'{where}: bad or repeated id')
         for name in ('latin', 'english', 'line', 'source', 'food', 'bears'):
             if name in card:
                 require(string(card[name]).strip() == card[name] and card[name], f'{where}: {name} is empty or has stray spaces')
+        if 'scientific' in card:
+            scientific_name(card['scientific'], where)
         require('record' not in card or card['record'] in site['records'], f'{where}: no record {card.get("record")}')
         image = card['image']
         fields(image, ('file', 'author', 'licence', 'licence_url', 'page'))
@@ -3437,7 +3462,8 @@ def picture_cards(root, site):
         require(picture.exists(), f'{where}: src/chartae/{key}.jpg is missing')
         pictures[f'chartae/{key}.jpg'] = picture.read_bytes()
         ours = composed({'source': card['source']})
-        cards.append({'id': key, 'latin': card['latin'], 'english': card['english'], 'group': card['group'], 'line': card['line'],
+        cards.append({'id': key, 'latin': card['latin'], 'english': card['english'], **({'scientific': card['scientific']} if 'scientific' in card else {}),
+                      'group': card['group'], 'line': card['line'],
                       'source': '' if ours else card['source'], **{name: card[name] for name in ('food', 'bears', 'record') if name in card},
                       'picture': f'chartae/{key}.jpg', 'image': {name: image[name] for name in ('author', 'licence', 'licence_url', 'page')}})
     unused = sorted(p.name for p in (root / 'src/chartae').glob('*') if f'chartae/{p.name}' not in pictures)

@@ -1047,6 +1047,45 @@ class BuildTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'bad or repeated id'):
             builder.build_site(self.root)
 
+    def test_the_picture_cards_carry_scientific_names_written_as_nomenclature_writes_them(self):
+        """A card of an animal or a plant may give its scientific name after the English one (Jack,
+        20 November 2026: "Hōc modō discēmus discrīmina"), written as zoology and botany write it:
+        a capital on the first word only, and no macrons or other marks. A card without one is taken."""
+        cards = self.read('data/chartae.json')
+        named = [card for card in cards['cards'] if 'scientific' in card]
+        self.assertTrue(named and any('scientific' not in card for card in cards['cards']))
+        outputs = builder.build_site(self.root)
+        script = outputs['assets/chartae-data.js']
+        built = {card['id']: card for card in json.loads(script[script.index('{'):script.rindex('}') + 1])['cards']}
+        for card in cards['cards']:
+            self.assertEqual(built[card['id']].get('scientific'), card.get('scientific'), card['id'])
+        # In the data the field stands right after the English name.
+        first = named[0]
+        self.assertEqual(list(first)[list(first).index('english') + 1], 'scientific')
+
+        def with_name(name):
+            data = json.loads(json.dumps(cards))
+            data['cards'][0]['scientific'] = name
+            self.write('data/chartae.json', data)
+        for name in ('Quercus ilex', 'Platanus × hispanica', 'Capsella bursa-pastoris', 'Brassica oleracea subsp. capitata'):
+            with_name(name)
+            builder.build_site(self.root)
+        with_name('Canis lūpus')
+        with self.assertRaisesRegex(ValueError, 'scientific name “Canis lūpus” has ū: it is written as zoology and botany write it'):
+            builder.build_site(self.root)
+        with_name('canis lupus')
+        with self.assertRaisesRegex(ValueError, 'must begin with a capital letter'):
+            builder.build_site(self.root)
+        with_name('Canis Lupus')
+        with self.assertRaisesRegex(ValueError, 'only the first word has a capital'):
+            builder.build_site(self.root)
+        with_name('Canis  lupus')
+        with self.assertRaisesRegex(ValueError, 'has stray spaces'):
+            builder.build_site(self.root)
+        with_name(' Canis lupus')
+        with self.assertRaisesRegex(ValueError, 'has stray spaces'):
+            builder.build_site(self.root)
+
     def test_practice_cards_are_one_per_record_with_kind_and_sources(self):
         sense = self.record('sheet-of-paper')
         outputs = builder.build_site(self.root)

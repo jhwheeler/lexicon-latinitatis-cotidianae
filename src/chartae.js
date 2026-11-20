@@ -437,7 +437,14 @@
   function drawBack(card) {
     q('g-la').replaceChildren(el('b', '', card.head), card.latin.slice(card.head.length));
     q('g-la').classList.toggle('long', card.head.includes(' '));
-    q('g-en').replaceChildren(...(lang === 'la' ? [t('english') + ' '] : []), el('span', '', card.english, 'en'));
+    // The scientific name follows the English one (Jack, 20 November 2026: "inclūdāmus nōmina
+    // scientifica … jūxtā nōmina Anglica … Hōc modō discēmus discrīmina"), in italic, as zoology and
+    // botany write it. Its language is la-x-taxon: Latin to a screen reader, which reads the
+    // primary tag, but not "la", the only language the display options rewrite, so that no option
+    // turns Juniperus into Iuniperus or Vulpes into Uulpes. No new words: only a middle dot.
+    const taxon = card.scientific ? el('i', 'c-sci', card.scientific, 'la-x-taxon') : null;
+    if (taxon) taxon.translate = false;
+    q('g-en').replaceChildren(...(lang === 'la' ? [t('english') + ' '] : []), el('span', '', card.english, 'en'), ...(taxon ? [' · ', taxon] : []));
     // The sentence: a line of an author with its place, or one of ours, which is marked as the
     // lexicon marks its own examples.
     q('g-ex-la').textContent = card.line;

@@ -3495,7 +3495,7 @@ test('Ubi est Theodōrus? judges the gaps, counts only the reader’s own, follo
   assert.equal(await style('#gap-ubi-1', 'borderBottomStyle'), 'dotted');
   assert.equal(await game.locator('.gap input:not([readonly])').count(), 0);
   assert.equal(await game.locator('#score').textContent(), 'Rēctē: 5 ex 11');
-  assert.equal(await game.locator('#message').textContent(), 'Perfectum est; 5 ex 11 ipse explēvistī.');
+  assert.equal(await game.locator('#message').textContent(), 'Cōnfectum est; 5 ex 11 ipse explēvistī.');
   // The struck-through answer is kept in the round, through a change of tab.
   await game.locator('.tab[data-id="quo"]').click();
   await game.locator('.tab[data-id="ubi"]').click();
@@ -3726,7 +3726,7 @@ test('Bis bīna, Heri, hodiē, crās, and Hic an ille?: the hint switch, a numer
   // Heri, hodiē, crās: the switch shows the tenses; the forms show only the open round's table, and follow the tab.
   await game.goto(pageUrl('heri-hodie-cras.html#lego'));
   await game.locator('#check').waitFor();
-  assert.equal(await game.locator('label[for="opt-hints"]').innerText(), 'Tempora ostendere');
+  assert.equal(await game.locator('label[for="opt-hints"]').innerText(), 'Persōnās et tempora ostendere');
   await game.locator('#forms > summary').click();
   const shown = () => game.locator('#forms table').evaluateAll(tables => tables.filter(t => t.getClientRects().length).map(t => t.caption.textContent));
   assert.deepEqual(await shown(), ['legō, legere, lēgī, lēctum']);

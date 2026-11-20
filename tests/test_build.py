@@ -1124,7 +1124,7 @@ class BuildTests(unittest.TestCase):
                          [['nom', 'acc', 'gen', 'dat', 'abl', 'plur', 'plur2'], ['quot', 'quotus', 'quoteni', 'quotiens', 'bis-bina'],
                           ['ambulo', 'video', 'lego', 'venio', 'sum', 'eo', 'volo', 'fero']])
         self.assertEqual([sum(''.join(r['text']).count('{') for r in g['rounds']) for g in games], [46, 50, 64, 64, 83])
-        self.assertEqual([g['hints']['la'] for g in games], ['Prōnōmina ostendere'] * 3 + ['Numerōs ostendere', 'Tempora ostendere'])
+        self.assertEqual([g['hints']['la'] for g in games], ['Prōnōmina ostendere'] * 3 + ['Numerōs ostendere', 'Persōnās et tempora ostendere'])
         # The verbs have a table each, shown only with its round.
         self.assertEqual([t.get('round') for t in games[4]['tabulae']], [r['id'] for r in games[4]['rounds']])
         self.assertEqual([r['id'] for r in games[0]['rounds']], ['ubi', 'quo', 'unde', 'qua', 'iter'])

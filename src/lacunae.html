@@ -275,14 +275,14 @@ function judge(forms, value, strict) {
 }
 
 const T={
- la:{eyebrow:GAME.eyebrow.la,task:'Lacūnās explē.',check:'Probā',reveal:'Ostende',reset:'Dēnuō',next:'Proxima interrogātiō',
-   keys:'Apicēs',keysLabel:'Litterae cum apicibus',hints:GAME.hints.la,strict:'Apicēs exigere',
+ la:{eyebrow:GAME.eyebrow.la,task:'Lacūnās explē.',check:'Probā',reveal:'Ostende',reset:'Dēnuō',next:'Perge',
+   keys:'Apicēs',keysLabel:'Vōcālēs apice notātae',hints:GAME.hints.la,strict:'Apicēs exigere',
    score:(n,m)=>`Rēctē: ${n} ex ${m}`,wrong:'Nōndum. Iterum temptā.',apex:'Fōrma rēcta est, apicēs dēsunt.',
-   perfect:'Euge! Omnia ipse explēvistī.',finished:(n,m)=>`Perfectum est; ${n} ex ${m} ipse explēvistī.`,
-   tabs:'Interrogātiōnēs',done:'perfectum',gap:'lacūna',note:'nota',optH:'Optiōnēs',langH:'Lingua',
+   perfect:'Euge! Omnia ipse explēvistī.',finished:(n,m)=>`Cōnfectum est; ${n} ex ${m} ipse explēvistī.`,
+   tabs:'Interrogātiōnēs',done:'cōnfectum',gap:'lacūna',note:'nota',optH:'Optiōnēs',langH:'Lingua',
    back:'Ad exercitātiōnem',links:'Ad lexicon',practice:'Vocābulōrum exercitātiō',
    showForms:'Mōnstrā fōrmās',hideForms:'Cēlā fōrmās'},
- en:{eyebrow:GAME.eyebrow.en,task:'Fill the gaps.',check:'Check',reveal:'Show',reset:'Start over',next:'Next question',
+ en:{eyebrow:GAME.eyebrow.en,task:'Fill the gaps.',check:'Check',reveal:'Show',reset:'Start over',next:'Go on',
    keys:'Macrons',keysLabel:'Letters with macrons',hints:GAME.hints.en,strict:'Require macrons',
    score:(n,m)=>`Right: ${n} of ${m}`,wrong:'Not yet. Try again.',apex:'The form is right; the macrons are missing.',
    perfect:'Well done! You filled them all yourself.',finished:(n,m)=>`Done; you filled ${n} of ${m} yourself.`,

@@ -793,6 +793,7 @@ class BuildTests(unittest.TestCase):
                      'assets/fonts/lexicon-serif-400.woff2', 'manifest.webmanifest',
                      'practice.html', 'hora.html', 'assets/practice.js', 'assets/practice-data.js',
                      'chartae.html', 'assets/chartae.js', 'assets/chartae-data.js',
+                     'theodorus.html',
                      'review.html', 'assets/review.js'):
             self.assertIn(path, files)
         self.assertTrue(all(path in outputs for path in files))
@@ -1047,56 +1048,62 @@ class BuildTests(unittest.TestCase):
         # The pages: reached from the footer of every page and from the front page, never from the header.
         self.assertIn('<a href="practice.html"><span class="toc-la">Vocabulary</span>', outputs['index.html'])
         self.assertIn('<a href="hora.html"><span class="toc-la" lang="la">Hōra cum ūnciā</span>', outputs['index.html'])
+        self.assertIn('<a href="theodorus.html"><span class="toc-la" lang="la">Ubi est Theodōrus?</span>', outputs['index.html'])
+        self.assertIn('<a href="theodorus.html">', outputs['practice.html'])
         for path, up in (('index.html', ''), ('c/perhaps.html', '../'), ('k/sermo.html', '../'), ('practice.html', '')):
             with self.subTest(path=path):
                 page = outputs[path]
                 self.assertIn(f'<a href="{up}practice.html">Practice</a>', page[page.rindex('<footer'):])
                 self.assertNotIn('practice.html', page[page.index('<header class="site-top'):page.index('</header>')])
         self.assertIn('<a href="chartae.html"><span class="toc-la" lang="la">Chartae animālium</span>', outputs['index.html'])
-        for path in ('practice.html', 'hora.html', 'chartae.html'):
+        for path in ('practice.html', 'hora.html', 'chartae.html', 'theodorus.html'):
             self.assertIn(f'cotidianae/{path}</loc>', outputs['sitemap.xml'])
             self.assertIn('<link rel="manifest" href="manifest.webmanifest">', outputs[path])
-        # The clock asks nothing of other sites: its only address is its own.
-        hora = outputs['hora.html']
-        self.assertEqual(re.findall(r'https?://[^"\s)]+', hora), [builder.SITE_URL + 'hora.html'])
-        self.assertIn('url(assets/fonts/lexicon-serif-400.woff2)', hora)
-        self.assertNotIn('claude:', hora)
-        self.assertIn("navigator.serviceWorker.register('sw.js')", hora)
-        # Its colours are the lexicon's (Jack, 15 November 2026): the stylesheet's names and values,
-        # copied into the page, with lapis beside them; its theme is set as on every page, and the
-        # browser's bar takes the ground's colour. Nothing of its old palette is left.
+        # Both games (the clock, and Ubi est Theodōrus? since 20 November 2026) stand by themselves and
+        # are held to the same rules.
         styles = (self.root / 'src/styles.css').read_text(encoding='utf-8')
         names = ('paper', 'ink', 'soft', 'muted', 'hair', 'rule', 'rubric', 'accent', 'mark', 'ground', 'card')
 
         def palette(text, selector):
             block = text[text.index(selector):]
             return dict(re.findall(r'--([a-z-]+):(#[0-9a-f]{6})', block[:block.index('}')]))
-        for selector in (':root {', ':root[data-theme="dark"] {'):
-            with self.subTest(selector=selector):
-                ours, theirs = palette(hora, selector.replace(' {', '{')), palette(styles, selector)
-                self.assertEqual({name: ours.get(name) for name in names}, {name: theirs[name] for name in names})
-                self.assertEqual(set(ours) - set(names), {'lapis', 'lapis-soft'})
-        self.assertIn(builder.THEME_INIT, hora)
-        self.assertIn('<html lang="la" data-theme="light">', hora)
-        self.assertEqual(re.findall(r'<meta name="theme-color"[^>]*>', hora), ['<meta name="theme-color" content="#f2f0eb">'])
-        dark_ground = palette(styles, ':root[data-theme="dark"] {')['ground']
-        self.assertIn(f"content = '{dark_ground}'", hora)
-        self.assertNotIn('prefers-color-scheme', hora)
-        for name in ('--bg', '--surface', '--sunk', '--line', '--bronze', '--verdigris', '--good', '--bad', '--warn'):
-            self.assertNotIn(name + ':', hora)
-            self.assertNotIn(f'var({name})', hora)
-        # Its faces are the lexicon's too (Jack, 16 November 2026): the stylesheet's two stacks under
-        # the stylesheet's names, each face declared from the site's own files, and no monospace.
-        for name in ('serif', 'sans'):
-            with self.subTest(face=name):
-                stack = re.search(rf'--{name}:([^;]+);', styles).group(1)
-                self.assertIn(f'--{name}:{stack};', hora)
-        for file in ('alegreya-sans-400.woff2', 'alegreya-sans-500.woff2'):
-            self.assertIn(f'url(assets/fonts/{file})', hora)
-            self.assertTrue((self.root / 'src/fonts' / file).is_file())
-        hora_styles = re.sub(r'/\*.*?\*/', '', hora[hora.index('<style>'):hora.index('</style>')], flags=re.S)
-        self.assertNotIn('mono', hora_styles)
-        self.assertEqual(set(re.findall(r'var\(--(serif|sans|mono)\)', hora_styles)), {'serif', 'sans'})
+        for game in ('hora.html', 'theodorus.html'):
+            with self.subTest(game=game):
+                hora = outputs[game]
+                # The game asks nothing of other sites: its only address is its own.
+                self.assertEqual(re.findall(r'https?://[^"\s)]+', hora), [builder.SITE_URL + game])
+                self.assertIn('url(assets/fonts/lexicon-serif-400.woff2)', hora)
+                self.assertNotIn('claude:', hora)
+                self.assertIn("navigator.serviceWorker.register('sw.js')", hora)
+                # Its colours are the lexicon's (Jack, 15 November 2026): the stylesheet's names and values,
+                # copied into the page, with lapis beside them; its theme is set as on every page, and the
+                # browser's bar takes the ground's colour. Nothing of its old palette is left.
+                for selector in (':root {', ':root[data-theme="dark"] {'):
+                    with self.subTest(selector=selector):
+                        ours, theirs = palette(hora, selector.replace(' {', '{')), palette(styles, selector)
+                        self.assertEqual({name: ours.get(name) for name in names}, {name: theirs[name] for name in names})
+                        self.assertEqual(set(ours) - set(names), {'lapis', 'lapis-soft'})
+                self.assertIn(builder.THEME_INIT, hora)
+                self.assertIn('<html lang="la" data-theme="light">', hora)
+                self.assertEqual(re.findall(r'<meta name="theme-color"[^>]*>', hora), ['<meta name="theme-color" content="#f2f0eb">'])
+                dark_ground = palette(styles, ':root[data-theme="dark"] {')['ground']
+                self.assertIn(f"content = '{dark_ground}'", hora)
+                self.assertNotIn('prefers-color-scheme', hora)
+                for name in ('--bg', '--surface', '--sunk', '--line', '--bronze', '--verdigris', '--good', '--bad', '--warn'):
+                    self.assertNotIn(name + ':', hora)
+                    self.assertNotIn(f'var({name})', hora)
+                # Its faces are the lexicon's too (Jack, 16 November 2026): the stylesheet's two stacks under
+                # the stylesheet's names, each face declared from the site's own files, and no monospace.
+                for name in ('serif', 'sans'):
+                    with self.subTest(face=name):
+                        stack = re.search(rf'--{name}:([^;]+);', styles).group(1)
+                        self.assertIn(f'--{name}:{stack};', hora)
+                for file in ('alegreya-sans-400.woff2', 'alegreya-sans-500.woff2'):
+                    self.assertIn(f'url(assets/fonts/{file})', hora)
+                    self.assertTrue((self.root / 'src/fonts' / file).is_file())
+                hora_styles = re.sub(r'/\*.*?\*/', '', hora[hora.index('<style>'):hora.index('</style>')], flags=re.S)
+                self.assertNotIn('mono', hora_styles)
+                self.assertEqual(set(re.findall(r'var\(--(serif|sans|mono)\)', hora_styles)), {'serif', 'sans'})
 
     def test_sources_are_read_from_the_opening_of_a_citation(self):
         cases = {

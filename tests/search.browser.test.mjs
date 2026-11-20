@@ -281,6 +281,9 @@ test('the lexicon is kept on the device: it opens and searches offline, as an ap
     await app.locator('#g-show').click();
     await app.locator('#g-got').click();
   }
+  await app.goto(pageUrl('theodorus.html'));
+  assert.equal(await app.locator('#check').isVisible(), true);
+  assert.equal(await app.locator('.gap input').count() > 0, true);
   // The guidance pages, never opened here, were saved when the lexicon was.
   for (const [path, title] of [['how-we-decide.html', 'How we decide'], ['how-practice-works.html', 'How the practice works']]) {
     await app.goto(pageUrl(path));
@@ -614,7 +617,7 @@ test('on a phone the categories fold into a menu above the search', async () => 
 
 test('every page is usable on a phone: no sideways scrolling, 44px controls, no zoom on search', async () => {
   const pages = ['index.html', 'k/culina.html', 'words.html', 'latin.html', 'c/cooking-pot.html', 'c/tickle.html',
-                 'c/perhaps.html', 'l/fortasse.html', 'rulings.html', 'how-we-decide.html', 'how-practice-works.html', 'practice.html', 'hora.html', 'chartae.html', 'review.html'];
+                 'c/perhaps.html', 'l/fortasse.html', 'rulings.html', 'how-we-decide.html', 'how-practice-works.html', 'practice.html', 'hora.html', 'chartae.html', 'theodorus.html', 'review.html'];
   for (const width of [320, 375, 390]) {
     await page.setViewportSize({ width, height: 800 });
     for (const path of pages) {
@@ -622,7 +625,8 @@ test('every page is usable on a phone: no sideways scrolling, 44px controls, no 
       assert.equal(await overflows(), false, `${path} overflows at ${width}px`);
       const small = await page.evaluate(() => [...document.querySelectorAll(
         '.settings > summary, .head-search-field, .filter button, .cat-menu > summary, .cat-home, .clear, .page-contents a, .toc a, .hero h1 a, .site-name, .wlist a, .az-nav a, .az a, .suggest a, .how-sources a, '
-        + '.plist a, .practice summary, .practice button, .practice a, .verdict button, .verdict a, .icon-btn, .mode-chip, .go, #answer, .keys button, .ref summary, .links a')]
+        + '.plist a, .practice summary, .practice button, .practice a, .verdict button, .verdict a, .icon-btn, .mode-chip, .go, #answer, .keys button, .ref summary, .links a, '
+        + '.gap input, .ubtn, .tab, .opt, .seg button')]
         .filter(el => el.getClientRects().length && getComputedStyle(el).visibility !== 'hidden')
         .map(el => [el.textContent.trim().slice(0, 24), Math.round(el.getBoundingClientRect().height)])
         .filter(([, height]) => height < 44));
@@ -630,7 +634,7 @@ test('every page is usable on a phone: no sideways scrolling, 44px controls, no 
     }
   }
   for (const [path, field] of [['index.html', '#search'], ['k/culina.html', '#search'], ['c/kind.html', '#site-search'], ['words.html', '#site-search'],
-                               ['practice.html', '#site-search'], ['chartae.html', '#site-search'], ['hora.html', '#answer']]) {
+                               ['practice.html', '#site-search'], ['chartae.html', '#site-search'], ['hora.html', '#answer'], ['theodorus.html', '#gap-ubi-0']]) {
     await page.goto(pageUrl(path));
     assert.ok(parseFloat(await page.locator(field).evaluate(el => getComputedStyle(el).fontSize)) >= 16, path);
   }
@@ -2363,15 +2367,18 @@ test('the practice lobby links to How the practice works, in Latin and in Englis
 
 test('practice is reached from the front page and from every footer, never from the header', async () => {
   const links = page.locator('.plist a');
-  assert.deepEqual(await links.evaluateAll(nodes => nodes.map(n => n.getAttribute('href'))), ['practice.html', 'hora.html', 'chartae.html']);
+  assert.deepEqual(await links.evaluateAll(nodes => nodes.map(n => n.getAttribute('href'))), ['practice.html', 'hora.html', 'chartae.html', 'theodorus.html']);
   const practice = await page.locator('#practice-title').boundingBox(), contents = await page.locator('#contents-title').boundingBox();
   assert.ok(practice.y < contents.y, 'above the list of categories');
   await links.first().click();
   await page.waitForURL(/practice\.html$/);
   assert.equal(await page.locator('h1').textContent(), 'Exercitātiō');
-  assert.deepEqual(await page.locator('.p-more a').evaluateAll(nodes => nodes.map(n => n.getAttribute('href'))), ['hora.html', 'chartae.html']);
+  assert.deepEqual(await page.locator('.p-more a').evaluateAll(nodes => nodes.map(n => n.getAttribute('href'))), ['hora.html', 'chartae.html', 'theodorus.html']);
   await page.locator('.p-more a[href="hora.html"]').click();
   await page.waitForURL(/hora\.html$/);
+  await page.goBack();
+  await page.locator('.p-more a[href="theodorus.html"]').click();
+  await page.waitForURL(/theodorus\.html$/);
   for (const [path, href] of [['index.html', 'practice.html'], ['c/kind.html', '../practice.html'], ['k/culina.html', '../practice.html'], ['practice.html', 'practice.html']]) {
     await page.goto(pageUrl(path));
     assert.equal(await page.locator('footer').getByRole('link', { name: 'Practice', exact: true }).getAttribute('href'), href, path);
@@ -3342,4 +3349,165 @@ test('the animal cards: Latin unless English is chosen, a deck by kind, every ca
     }
   }
   await page.evaluate(keys => keys.forEach(key => localStorage.removeItem(key)), CHARTAE_KEYS);
+});
+
+// Ubi est Theodōrus? ------------------------------------------------------------------------------
+
+// The game of the adverbs of place (20 November 2026): gaps in short dialogues, judged as the
+// prototype judged them, in the clock's colours, asking nothing of other sites.
+test('Ubi est Theodōrus? judges the gaps, counts only the reader’s own, follows the language, and fits a phone', async () => {
+  const context = await browser.newContext({ viewport: { width: 375, height: 760 }, serviceWorkers: 'block' });
+  const game = await context.newPage();
+  const requested = [];
+  game.on('request', request => requested.push(request.url()));
+  await game.goto(pageUrl('index.html'));
+  await game.evaluate(() => { for (const key of ['uet-hints', 'uet-strict', 'uet-done', 'lexicon-practice-lang']) localStorage.removeItem(key); });
+  await game.goto(pageUrl('theodorus.html'));
+  await game.locator('#check').waitFor();
+  await game.waitForLoadState('networkidle');
+  assert.deepEqual(requested.filter(address => !address.startsWith(base)), []);
+  assert.ok(requested.some(address => address.endsWith('assets/fonts/lexicon-serif-400.woff2')));
+  assert.equal(await game.title(), 'Ubi est Theodōrus? · Lexicon Latīnitātis Cotīdiānae');
+  assert.equal(await game.locator('html').getAttribute('lang'), 'la');
+  assert.equal(await game.locator('#question').textContent(), 'Ubi est Theodōrus?');
+  const style = (selector, property) => game.locator(selector).first().evaluate((node, name) => getComputedStyle(node)[name], property);
+  const lapis = 'rgb(36, 69, 122)', red = 'rgb(176, 23, 31)';
+  const gap = n => game.locator(`#gap-ubi-${n}`);
+
+  // A form typed without macrons counts as right and is given its macrons; Enter goes on to the next gap.
+  await gap(0).fill('alicubi');
+  await gap(0).press('Enter');
+  assert.equal(await gap(0).inputValue(), 'Alicubi');
+  assert.match(await gap(0).getAttribute('class'), /\bright\b/);
+  assert.equal(await style('#gap-ubi-0', 'color'), lapis);
+  assert.equal(await style('#gap-ubi-0', 'fontWeight'), '700');
+  assert.equal(await game.evaluate(() => document.activeElement.id), 'gap-ubi-1');
+  await gap(2).fill('hic');
+  await gap(2).press('Enter');
+  assert.equal(await gap(2).inputValue(), 'hīc');
+  assert.equal(await game.locator('#score').textContent(), 'Rēctē: 2 ex 11');
+
+  // A wrong form is marked wrong, in red, with a cross and a dashed rule; it stays open.
+  await gap(1).fill('ubique');
+  await gap(1).press('Enter');
+  assert.match(await gap(1).getAttribute('class'), /\bwrong\b/);
+  assert.equal(await gap(1).getAttribute('readonly'), null);
+  assert.equal(await game.locator('#message').textContent(), 'Nōndum. Iterum temptā.');
+  assert.equal(await game.locator('#message.bad svg').count(), 1, 'a cross, not the colour alone');
+  assert.equal(await style('#message .v', 'color'), red);
+  assert.equal(await style('#gap-ubi-1', 'borderBottomStyle'), 'dashed');
+
+  // With "require macrons", the bare form is not taken until the macrons are typed (here with the keys).
+  await game.locator('#opt-strict').check();
+  assert.equal(await game.evaluate(() => localStorage.getItem('uet-strict')), 'true');
+  await gap(3).fill('istic');
+  await gap(3).press('Enter');
+  assert.match(await gap(3).getAttribute('class'), /\bapex\b/);
+  assert.equal(await gap(3).inputValue(), 'istic');
+  assert.equal(await game.locator('#message').textContent(), 'Fōrma rēcta est, apicēs dēsunt.');
+  assert.equal(await game.locator('#message.apex svg').count(), 1);
+  assert.equal(await style('#gap-ubi-3', 'borderBottomStyle'), 'double');
+  await gap(3).fill('ist');
+  await gap(3).focus();
+  await game.locator('#keys button[data-ch="ī"]').click();
+  await gap(3).press('End');
+  await gap(3).type('c');
+  assert.equal(await gap(3).inputValue(), 'istīc');
+  await gap(3).press('Enter');
+  assert.match(await gap(3).getAttribute('class'), /\bright\b/);
+  // cunque is read as cumque, and an alternative form is taken.
+  await gap(8).fill('ubicunque');
+  await gap(8).press('Enter');
+  assert.equal(await gap(8).inputValue(), 'Ubicumque');
+  assert.equal(await game.locator('#score').textContent(), 'Rēctē: 4 ex 11');
+
+  // Show judges what was typed and not yet checked: a right form stays the reader's and is counted; a
+  // wrong one gives way to the form, and is kept under it, struck through. The rest is filled, set
+  // apart from the reader's own, and the score counts only the reader's.
+  await gap(6).fill('usquam');
+  await gap(7).fill('ibi');
+  await game.locator('#reveal').click();
+  assert.match(await gap(6).getAttribute('class'), /\bright\b/);
+  assert.equal(await gap(7).inputValue(), 'alibī');
+  assert.match(await gap(7).getAttribute('class'), /\bshown\b/);
+  const struck = game.locator('#gap-ubi-7 + .under .was');
+  assert.equal(await struck.textContent(), 'ibi');
+  assert.equal(await struck.isVisible(), true);
+  assert.match(await struck.evaluate(node => getComputedStyle(node).textDecorationLine), /line-through/);
+  assert.equal(await game.locator('#gap-ubi-1 + .under .was').textContent(), 'ubique');
+  assert.equal(await game.locator('#gap-ubi-4 + .under .was').isVisible(), false, 'nothing was typed there');
+  assert.equal(await gap(1).inputValue(), 'nusquam');
+  assert.match(await gap(1).getAttribute('class'), /\bshown\b/);
+  assert.equal(await style('#gap-ubi-1', 'fontStyle'), 'italic');
+  assert.equal(await style('#gap-ubi-1', 'borderBottomStyle'), 'dotted');
+  assert.equal(await game.locator('.gap input:not([readonly])').count(), 0);
+  assert.equal(await game.locator('#score').textContent(), 'Rēctē: 5 ex 11');
+  assert.equal(await game.locator('#message').textContent(), 'Perfectum est; 5 ex 11 ipse explēvistī.');
+  // The struck-through answer is kept in the round, through a change of tab.
+  await game.locator('.tab[data-id="quo"]').click();
+  await game.locator('.tab[data-id="ubi"]').click();
+  assert.equal(await game.locator('#gap-ubi-7 + .under .was').textContent(), 'ibi');
+  assert.equal(await game.locator('#score').textContent(), 'Rēctē: 5 ex 11');
+  assert.equal(await game.locator('#next').isVisible(), true);
+  assert.equal(await game.locator('#check').isVisible(), false);
+  assert.equal(await game.evaluate(() => localStorage.getItem('uet-done')), null, 'a round with shown gaps is not perfect');
+
+  // The language follows the choice, kept as the practice page's; the Latin keeps its own lang.
+  await game.locator('#lang button[data-lang="en"]').click();
+  assert.equal(await game.locator('html').getAttribute('lang'), 'en');
+  assert.equal(await game.evaluate(() => localStorage.getItem('lexicon-practice-lang')), 'en');
+  assert.equal(await game.locator('#score').textContent(), 'Right: 5 of 11');
+  assert.equal(await game.locator('#message').textContent(), 'Done; you filled 5 of 11 yourself.');
+  assert.equal(await game.locator('#reveal').textContent(), 'Show');
+  assert.equal(await game.locator('#prose').getAttribute('lang'), 'la');
+  assert.equal(await game.locator('#question').getAttribute('lang'), 'la');
+
+  // The next question; a round filled by the reader alone is marked done on its tab, and the tabs follow #quo.
+  await game.locator('#next').click();
+  assert.match(game.url(), /#quo$/);
+  assert.equal(await game.locator('#question').textContent(), 'Quō it Theodōrus?');
+  // Start over clears the round, the struck-through answers with it.
+  await game.locator('#gap-quo-0').fill('quo');
+  await game.locator('#reveal').click();
+  assert.equal(await game.locator('#gap-quo-0 + .under .was').textContent(), 'quo');
+  await game.locator('#reset').click();
+  assert.equal(await game.locator('#score').textContent(), 'Right: 0 of 9');
+  assert.equal(await game.locator('#gap-quo-0').inputValue(), '');
+  assert.equal(await game.locator('#gap-quo-0 + .under .was').isVisible(), false);
+  await game.goto(pageUrl('theodorus.html#iter'));
+  assert.equal(await game.locator('.tab[aria-pressed="true"]').textContent(), 'Iter');
+  assert.equal(await game.locator('#check').textContent(), 'Check');
+  await game.locator('#opt-strict').uncheck();
+  const iter = ['hinc', 'ibi', 'inde', 'eo', 'ubique', 'usquam', 'eadem', 'huc'];
+  for (const [n, form] of iter.entries()) {
+    await game.locator(`#gap-iter-${n}`).fill(form);
+    await game.locator(`#gap-iter-${n}`).press('Enter');
+  }
+  assert.equal(await game.locator('#message').textContent(), 'Well done! You filled them all yourself.');
+  assert.equal(await game.locator('#message.good svg').count(), 1);
+  assert.equal(await style('#message .v', 'color'), lapis);
+  assert.deepEqual(JSON.parse(await game.evaluate(() => localStorage.getItem('uet-done'))), { iter: true });
+  assert.equal(await game.locator('.tab[data-id="iter"] .done svg').count(), 1);
+
+  // On a phone of 375px, with the pronouns shown: nothing scrolls sideways, every gap and button is 44px
+  // or more, the text in the gaps is 16px or more, and no gap lies over another.
+  await game.goto(pageUrl('theodorus.html#unde'));
+  await game.locator('#opt-hints').check();
+  assert.equal(await game.locator('.gap .hint').first().isVisible(), true);
+  assert.equal(await game.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
+  const small = await game.evaluate(() => [...document.querySelectorAll('.gap input, .ubtn, .tab, .keys button, .opt, .seg button, .icon-btn, .links a')]
+    .filter(el => el.getClientRects().length)
+    .map(el => [el.id || el.textContent.trim().slice(0, 24), Math.round(el.getBoundingClientRect().height)])
+    .filter(([, height]) => height < 44));
+  assert.deepEqual(small, []);
+  assert.ok(parseFloat(await style('.gap input', 'fontSize')) >= 16);
+  assert.equal(await game.evaluate(() => {
+    const boxes = [...document.querySelectorAll('.gap')].map(node => node.getBoundingClientRect());
+    return boxes.some((a, i) => boxes.slice(i + 1).some(b => a.left < b.right && b.left < a.right && a.top < b.bottom && b.top < a.bottom));
+  }), false);
+  // Back to the practice.
+  await game.locator('#back').click();
+  await game.waitForURL(/practice\.html$/);
+  await game.evaluate(() => { for (const key of ['uet-hints', 'uet-strict', 'uet-done', 'lexicon-practice-lang']) localStorage.removeItem(key); });
+  await context.close();
 });

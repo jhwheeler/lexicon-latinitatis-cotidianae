@@ -45,6 +45,7 @@ USER_AGENT = f'LexiconLatinitatisCotidianae-PictureFetcher/1.0 ({REPOSITORY}) Py
 WIDTH, HEIGHT = 720, 511
 RENDITION = 1920   # the width asked of the API: one of the thumbnail widths Wikimedia serves (1600 is refused
                    # with HTTP 400, "Use thumbnail sizes listed on https://w.wiki/GHai"); far less than an original
+STANDARD_WIDTHS = (1920, 1280, 960)   # widths Wikimedia serves (https://w.wiki/GHai), widest first; a card is 720 wide
 QUALITY = 80       # the quality of the existing pictures (their quantisation tables are libjpeg's at 80)
 PAUSE = 1.0        # seconds between requests, at least
 TRIES = 6        # failures other than 429 before giving up
@@ -149,7 +150,7 @@ def page_info(name):
     bare = re.sub(r'^(?:File|Image):', '', name.strip()).replace(' ', '_')
     quoted = urllib.parse.quote(bare, safe="(),'!*-._~:;@$")
     address = f'https://commons.wikimedia.org/wiki/File:{quoted}'
-    page = get(address, patience=PATIENCE[0]).decode('utf-8', 'replace')
+    page = get(address, patience=max(PATIENCE[0], 300)).decode('utf-8', 'replace').replace('&#95;', '_')   # Commons writes the underscore of these class names and ids as an entity
     title = re.search(r'<title>(.*?) - Wikimedia Commons</title>', page, re.S)
     author = re.search(r'id="fileinfotpl_aut"[^>]*>.*?</td>\s*<td[^>]*>(.*?)</td>', page, re.S)
     size = re.search(r'class="fullMedia".*?\(([\d,]+) × ([\d,]+) pixels', page, re.S)
@@ -230,7 +231,22 @@ def main():
     licence = check_licence(info, table)
     if not info['author']:
         raise SystemExit(f'The file’s metadata names no author: read its page and add the author by hand. {info["page"]}')
-    picture = Image.open(io.BytesIO(get(info['url'])))
+    # Wikimedia serves renditions only in its standard widths, and refuses the original itself to a
+    # shared address (HTTP 429, "use thumbnail images in sizes listed"): a file narrower than the
+    # width asked for comes back from the API as its original, so the widest standard width that
+    # the file has is asked for instead, through Special:FilePath, which is also the way round a
+    # download that is still refused (20 November 2026).
+    width = next((w for w in STANDARD_WIDTHS if not info['size'] or info['size'][0] >= w), None)
+    if width is None:
+        raise SystemExit(f'{info["title"]} is only {info["size"][0]} pixels wide: too small for a card (the narrowest rendition taken is {STANDARD_WIDTHS[-1]})')
+    by_path = ('https://commons.wikimedia.org/wiki/Special:FilePath/'
+               + urllib.parse.quote(info['title'].removeprefix('File:').replace(' ', '_'), safe="(),'!*-._~:;@$") + f'?width={width}')
+    try:
+        data = get(by_path if width != RENDITION else info['url'])
+    except Busy:
+        print('The download is refused (429): taking the picture through Special:FilePath, patiently', file=sys.stderr)
+        data = get(by_path, patience=max(PATIENCE[0], 600))
+    picture = Image.open(io.BytesIO(data))
     picture = ImageOps.exif_transpose(picture)
     if picture.mode != 'RGB':
         if picture.mode in ('RGBA', 'LA', 'P') and 'transparency' in picture.info or picture.mode in ('RGBA', 'LA'):

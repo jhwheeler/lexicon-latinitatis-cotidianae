@@ -3148,10 +3148,17 @@ test('the animal cards: a picture for the cue, the name on request, and a back w
   await pictureShown();
   assert.equal(await page.locator('#g-picture').getAttribute('src'), card.picture);
   assert.equal(await page.locator('#g-picture').getAttribute('alt'), 'Picture of an animal');
-  assert.equal((await page.locator('#g-card').innerText()).trim().toLowerCase(), 'new');
+  assert.equal((await page.locator('#g-card').innerText()).trim().toLowerCase().replace(/\s+/g, ' '), 'new what is it?');
+  assert.equal(await page.locator('#g-la').isVisible(), false);
+  assert.equal(await page.locator('#g-back').getAttribute('aria-hidden'), 'true');
   assert.equal(await page.locator('#g-marks').isVisible(), false);
-  // A tap on the card turns it.
+  // A tap on the card turns it, and the card neither grows nor moves: the back had its room from the start.
+  const before = [await page.locator('#g-card').boundingBox(), await page.locator('#g-picture').boundingBox()];
   await page.locator('#g-picture').click();
+  assert.deepEqual([await page.locator('#g-card').boundingBox(), await page.locator('#g-picture').boundingBox()], before);
+  assert.equal(await page.locator('#g-la').isVisible(), true);
+  assert.equal(await page.locator('#g-ask').isVisible(), false);
+  assert.equal(await page.locator('#g-back').getAttribute('aria-hidden'), 'false');
   assert.equal(await page.locator('#g-la b').textContent(), head);
   assert.equal(await page.locator('#g-la').textContent(), card.latin);
   assert.equal(await page.locator('#g-la').getAttribute('lang'), 'la');

@@ -564,9 +564,14 @@ html.pgame-open, html.pgame-open body { overflow:hidden; }
 .c-tile-link:hover b { text-decoration:underline; text-decoration-color:var(--accent); text-decoration-thickness:1px; text-underline-offset:.2em; }
 .ccard { justify-content:flex-start; min-height:0; padding:0; overflow:hidden; }
 .ccard-picture { display:block; width:100%; height:auto; aspect-ratio:720 / 511; object-fit:cover; background:var(--hair); }
-.ccard-text { display:flex; flex-direction:column; padding:10px 22px 14px; }
-.ccard:not(.front) .ccard-text { padding-bottom:18px; }
+/* The card keeps its height when it is turned (Jack, 20 November 2026): the question and the back
+   lie one over the other in the same place, the back there from the start and unseen. */
+.ccard-text { display:grid; padding:10px 22px 18px; }
 .ccard.finished .ccard-text { padding:44px 22px; }
+.ccard-ask, .ccard .pgame-back { grid-area:1 / 1; }
+.ccard-ask { display:flex; flex-direction:column; }
+.ccard-quid { margin:auto; padding-bottom:1.2rem; color:var(--muted); font-size:1.5rem; font-style:italic; }
+.ccard.front .pgame-back, .ccard:not(.front) .ccard-ask { visibility:hidden; }
 .ccard .pgame-status { margin:0; }
 .ccard .pgame-back { margin:0; padding-top:2px; border-top:0; }
 .ccard-en { color:var(--soft); }

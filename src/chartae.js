@@ -54,13 +54,13 @@
   // hōc nāvigātrō servātur, In lexicō īnspice, exemplum nostrum, Quā ratiōne repetātur). "Chartae
   // animālium" is the name the cards have had from the start, and "Quō vēscitur?" and "Anglicē"
   // are printed on them. The rest is Claude's wording, composed for this page on 20 November 2026,
-  // for Jack to review: sub, groups, all, gallery, picture, credit, cropped, offline, more,
+  // for Jack to review: sub, groups, all, gallery, ask, picture, credit, cropped, offline, more,
   // vocabulary, and the English names of the groups (in data/chartae.json).
   const one = (n, singular, many) => `${number(n)} ${n === 1 ? singular : many}`;
   const T = {
     la: {
       title: 'Chartae animālium', sub: 'Imāginem īnspice, nōmen Latīnum clārā vōce dīc, deinde respōnsum ostende.', langLabel: 'Lingua',
-      groups: 'Genera', all: 'Omnia', gallery: 'Omnēs chartae',
+      groups: 'Genera', all: 'Omnia', gallery: 'Omnēs chartae', ask: 'Quid est?',
       start: 'Incipe', resume: 'Perge', early: 'Repete tamen nunc', next: 'Novus cursus',
       show: 'Respōnsum ostende', again: 'Iterum', got: 'Teneō', undo: 'Redī', close: 'Exī', card: 'Charta',
       status: { new: 'nova', due: 'repetenda', lapsed: 'ēlāpsa' },
@@ -80,7 +80,7 @@
     },
     en: {
       title: 'Animal cards', sub: 'Look at the picture, say the Latin name aloud, then show the answer.', langLabel: 'Language',
-      groups: 'Kinds', all: 'All', gallery: 'All the cards',
+      groups: 'Kinds', all: 'All', gallery: 'All the cards', ask: 'What is it?',
       start: 'Start', resume: 'Continue', early: 'Practise early', next: 'Another round',
       show: 'Show the Latin', again: 'Again', got: 'Got it', undo: 'Undo', close: 'Close', card: 'Card',
       status: { new: 'new', due: 'due', lapsed: 'lapsed' },
@@ -325,9 +325,11 @@
     q('g-card').classList.toggle('front', !!card && !round.shown);
     q('g-card').classList.toggle('finished', round.done);
     q('g-status').textContent = card ? t('status')[!record ? 'new' : record.b === 0 ? 'lapsed' : 'due'] : '';
-    q('g-status').hidden = !card || round.shown;
+    // The back is drawn with the front and kept unseen until the card is turned, so that the card
+    // is as tall before as after (Jack, 20 November 2026: "Melius esset sī altitūdō chartae nōn mūtāret cum eam premam").
+    q('g-ask').hidden = !card; q('g-ask').setAttribute('aria-hidden', String(round.shown));
     q('g-picture').hidden = !card;
-    q('g-back').hidden = !card || !round.shown;
+    q('g-back').hidden = !card; q('g-back').setAttribute('aria-hidden', String(!round.shown));
     q('g-end').hidden = !round.done;
     q('g-front').hidden = !card || round.shown;
     q('g-marks').hidden = !card || !round.shown;
@@ -337,7 +339,7 @@
       // The picture's description does not give the answer away.
       if (q('g-picture').getAttribute('src') !== card.picture) q('g-picture').src = card.picture;
       q('g-picture').alt = t('picture');
-      if (round.shown) drawBack(card);
+      drawBack(card);
       // The next card's picture is fetched while this one is looked at.
       if (round.queue[0]) new Image().src = round.queue[0].picture;
     } else {

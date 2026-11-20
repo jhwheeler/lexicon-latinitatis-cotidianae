@@ -53,6 +53,8 @@ Traupman is cited as `Traupman 103` (the printed page) in a term's evidence and 
 
 Say what the search found, not what the language lacks: "we have found no classical instance", "not found in Lewis & Short or the loci collections". Write "unattested", "does not occur", or "is not classical" only when a reliable authority says so in terms (Lewis & Short, de Vaan, Allen & Greenough), and name it: "the nominative does not occur (Lewis & Short)". Our not finding a phrase is a fact about our search.
 
+Say that a reference work lacks a word only where the reader needs it: to justify a coinage, a description, or our own use of an old word for a new thing ("no reference work has a word for a bus stop"). A word that stands on its own evidence needs no such remark (Jack, 20 November 2026, on *ērināceus*, Pliny's word, whose comment was "It is not in either book (Traupman, Morgan–Owens)": if the word is classical, why say so?). That Traupman or Morgan–Owens was searched in vain is a note for the commit, not for the entry.
+
 ## Spelling the Latin
 
 - **Macrons are spelling.** Copy Lewis & Short's marks. Where it leaves a vowel unmarked that is hidden-long, follow Bennett; where de Vaan discusses the vowel, he decides. Vowels before *ns* and *nf* are long; before *gn* short unless the stem is long; before *nct* and *nx* long. If you cannot establish a vowel, leave it unmarked and flag it. Where Lewis & Short and de Vaan agree on a vowel, write what they write: depart from the two together only for a really good reason, such as newer scholarship or the metre of a quoted line, and say what it is in a note (Jack, 11 November 2026).

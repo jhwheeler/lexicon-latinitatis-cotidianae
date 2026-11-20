@@ -304,6 +304,54 @@ test('the lexicon is kept on the device: it opens and searches offline, as an ap
   await context.close();
 });
 
+test('the animal cards\' pictures stay on the device however many pages are read after them', async () => {
+  const context = await browser.newContext({ viewport: { width: 390, height: 800 } });
+  const app = await context.newPage();
+  await app.goto(url);
+  await app.evaluate(() => navigator.serviceWorker.ready);
+  await app.waitForFunction(() => navigator.serviceWorker.controller);
+  await app.goto(pageUrl('chartae.html'));
+  await app.locator('#c-offline:not([hidden])').waitFor();
+  const saved = () => app.evaluate(async () => {
+    const paths = (await (await caches.open('lexicon-pages')).keys()).map(key => new URL(key.url).pathname);
+    return { pictures: paths.filter(path => /\/chartae\/[^/]+$/.test(path)).sort(), pages: paths.filter(path => !/\/chartae\/[^/]+$/.test(path)) };
+  });
+  const pictures = (await saved()).pictures;
+  const cards = await app.evaluate(() => window.lexiconChartae.cards.map(card => new URL(card.picture, location.href).pathname).sort());
+  assert.deepEqual(pictures, cards, 'every card has its picture saved');
+  // More pages than the worker keeps are saved after the pictures, a picture of a card that is gone
+  // among them; then one more page is read, which makes the worker clear the oldest away.
+  await app.evaluate(async () => {
+    const cache = await caches.open('lexicon-pages');
+    const folder = new URL('.', location.href).pathname;
+    await cache.put(folder + 'chartae/gone.jpg', new Response('gone'));
+    for (let n = 0; n < 650; n++) await cache.put(`${folder}c/filler-${n}.html`, new Response('filler'));
+  });
+  await app.goto(pageUrl('c/pyjamas.html'));
+  await app.waitForFunction(async () => (await (await caches.open('lexicon-pages')).keys()).length < 720);
+  let now = await saved();
+  assert.equal(now.pages.length, 600, 'the pages are cut to the 600 most recent');
+  assert.equal(now.pages.includes(new URL(pageUrl('c/pyjamas.html')).pathname), true, 'the page just read is kept');
+  assert.deepEqual(now.pictures.filter(path => !path.endsWith('/gone.jpg')), cards, 'and no picture was cleared away');
+  // The cards' page removes the picture of the card that is gone, and offline every card has its picture.
+  await app.goto(pageUrl('chartae.html'));
+  await app.locator('#c-offline:not([hidden])').waitFor();
+  await app.waitForFunction(async () => !(await (await caches.open('lexicon-pages')).match(new URL('chartae/gone.jpg', location.href).pathname)));
+  await context.setOffline(true);
+  await app.reload();
+  const broken = await app.evaluate(async () => {
+    const failed = [];
+    for (const card of window.lexiconChartae.cards) {
+      const picture = new Image();
+      picture.src = card.picture;
+      await picture.decode().catch(() => failed.push(card.id));
+    }
+    return failed;
+  });
+  assert.deepEqual(broken, [], 'every picture is shown offline');
+  await context.close();
+});
+
 test('source notes and alternative search terms are explained', async () => {
   await search('short final vowel');
   assert.match(await page.locator('[data-result-for="c-perhaps"] .eyebrow').textContent(), /Source note/);

@@ -2,6 +2,7 @@ import { before, beforeEach, after, test } from 'node:test';
 import assert from 'node:assert/strict';
 import { spawn } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
+import { readdirSync, readFileSync } from 'node:fs';
 import { chromium } from 'playwright';
 
 // The pages are served over HTTP, as the published site is: pages opened from disk share their
@@ -14,6 +15,12 @@ const search = async query => {
   await page.locator('#search').fill(query);
   if (query) await page.waitForFunction(() => /matching/.test(document.getElementById('results').textContent));
 };
+// The gap games (src/lacunae/, one file per game; 20 November 2026), in their order: each page's name,
+// its first round, and the prefix of its storage keys.
+const GAP_GAMES = readdirSync(new URL('../src/lacunae/', import.meta.url)).filter(name => name.endsWith('.json'))
+  .map(name => JSON.parse(readFileSync(new URL(`../src/lacunae/${name}`, import.meta.url), 'utf-8')))
+  .sort((a, b) => a.order - b.order)
+  .map(game => ({ file: game.file, first: game.rounds[0].id, prefix: game.prefix, name: game.name }));
 const overflows = () => page.evaluate(() => document.documentElement.scrollWidth > innerWidth);
 // A preference saved on one page is read by the next.
 const settle = () => page.waitForTimeout(200);
@@ -281,9 +288,11 @@ test('the lexicon is kept on the device: it opens and searches offline, as an ap
     await app.locator('#g-show').click();
     await app.locator('#g-got').click();
   }
-  await app.goto(pageUrl('theodorus.html'));
-  assert.equal(await app.locator('#check').isVisible(), true);
-  assert.equal(await app.locator('.gap input').count() > 0, true);
+  for (const game of GAP_GAMES) {
+    await app.goto(pageUrl(game.file));
+    assert.equal(await app.locator('#check').isVisible(), true, game.file);
+    assert.equal(await app.locator('.gap input').count() > 0, true, game.file);
+  }
   // The guidance pages, never opened here, were saved when the lexicon was.
   for (const [path, title] of [['how-we-decide.html', 'How we decide'], ['how-practice-works.html', 'How the practice works']]) {
     await app.goto(pageUrl(path));
@@ -617,7 +626,7 @@ test('on a phone the categories fold into a menu above the search', async () => 
 
 test('every page is usable on a phone: no sideways scrolling, 44px controls, no zoom on search', async () => {
   const pages = ['index.html', 'k/culina.html', 'words.html', 'latin.html', 'c/cooking-pot.html', 'c/tickle.html',
-                 'c/perhaps.html', 'l/fortasse.html', 'rulings.html', 'how-we-decide.html', 'how-practice-works.html', 'practice.html', 'hora.html', 'chartae.html', 'theodorus.html', 'review.html'];
+                 'c/perhaps.html', 'l/fortasse.html', 'rulings.html', 'how-we-decide.html', 'how-practice-works.html', 'practice.html', 'hora.html', 'chartae.html', ...GAP_GAMES.map(game => game.file), 'review.html'];
   for (const width of [320, 375, 390]) {
     await page.setViewportSize({ width, height: 800 });
     for (const path of pages) {
@@ -634,7 +643,7 @@ test('every page is usable on a phone: no sideways scrolling, 44px controls, no 
     }
   }
   for (const [path, field] of [['index.html', '#search'], ['k/culina.html', '#search'], ['c/kind.html', '#site-search'], ['words.html', '#site-search'],
-                               ['practice.html', '#site-search'], ['chartae.html', '#site-search'], ['hora.html', '#answer'], ['theodorus.html', '#gap-ubi-0']]) {
+                               ['practice.html', '#site-search'], ['chartae.html', '#site-search'], ['hora.html', '#answer'], ...GAP_GAMES.map(game => [game.file, `#gap-${game.first}-0`])]) {
     await page.goto(pageUrl(path));
     assert.ok(parseFloat(await page.locator(field).evaluate(el => getComputedStyle(el).fontSize)) >= 16, path);
   }
@@ -2367,18 +2376,21 @@ test('the practice lobby links to How the practice works, in Latin and in Englis
 
 test('practice is reached from the front page and from every footer, never from the header', async () => {
   const links = page.locator('.plist a');
-  assert.deepEqual(await links.evaluateAll(nodes => nodes.map(n => n.getAttribute('href'))), ['practice.html', 'hora.html', 'chartae.html', 'theodorus.html']);
+  assert.deepEqual(await links.evaluateAll(nodes => nodes.map(n => n.getAttribute('href'))), ['practice.html', 'hora.html', 'chartae.html', 'theodorus.html', 'quis-pulsat.html']);
   const practice = await page.locator('#practice-title').boundingBox(), contents = await page.locator('#contents-title').boundingBox();
   assert.ok(practice.y < contents.y, 'above the list of categories');
   await links.first().click();
   await page.waitForURL(/practice\.html$/);
   assert.equal(await page.locator('h1').textContent(), 'Exercitātiō');
-  assert.deepEqual(await page.locator('.p-more a').evaluateAll(nodes => nodes.map(n => n.getAttribute('href'))), ['hora.html', 'chartae.html', 'theodorus.html']);
+  assert.deepEqual(await page.locator('.p-more a').evaluateAll(nodes => nodes.map(n => n.getAttribute('href'))), ['hora.html', 'chartae.html', 'theodorus.html', 'quis-pulsat.html']);
   await page.locator('.p-more a[href="hora.html"]').click();
   await page.waitForURL(/hora\.html$/);
   await page.goBack();
   await page.locator('.p-more a[href="theodorus.html"]').click();
   await page.waitForURL(/theodorus\.html$/);
+  await page.goBack();
+  await page.locator('.p-more a[href="quis-pulsat.html"]').click();
+  await page.waitForURL(/quis-pulsat\.html$/);
   for (const [path, href] of [['index.html', 'practice.html'], ['c/kind.html', '../practice.html'], ['k/culina.html', '../practice.html'], ['practice.html', 'practice.html']]) {
     await page.goto(pageUrl(path));
     assert.equal(await page.locator('footer').getByRole('link', { name: 'Practice', exact: true }).getAttribute('href'), href, path);
@@ -3546,5 +3558,75 @@ test('Ubi est Theodōrus? judges the gaps, counts only the reader’s own, follo
   await game.locator('#back').click();
   await game.waitForURL(/practice\.html$/);
   await game.evaluate(() => { for (const key of ['uet-hints', 'uet-strict', 'uet-done', 'lexicon-practice-lang']) localStorage.removeItem(key); });
+  await context.close();
+});
+
+// Quis pulsat? ------------------------------------------------------------------------------------
+
+// The second gap game (20 November 2026), on the engine of Ubi est Theodōrus?: the indefinite pronouns.
+test('Quis pulsat? takes i for j and gives the house spelling, takes alternatives, opens a round by its hash, and keeps its own keys', async () => {
+  const context = await browser.newContext({ viewport: { width: 375, height: 760 }, serviceWorkers: 'block' });
+  const game = await context.newPage();
+  const requested = [];
+  game.on('request', request => requested.push(request.url()));
+  await game.goto(pageUrl('index.html'));
+  await game.evaluate(() => {
+    for (const key of ['qp-hints', 'qp-strict', 'qp-done', 'lexicon-practice-lang']) localStorage.removeItem(key);
+    localStorage.setItem('uet-done', '{"ubi":true}');
+    localStorage.setItem('uet-hints', 'true');
+  });
+  // The hash opens its round.
+  await game.goto(pageUrl('quis-pulsat.html#cujus'));
+  await game.locator('#check').waitFor();
+  await game.waitForLoadState('networkidle');
+  assert.deepEqual(requested.filter(address => !address.startsWith(base)), []);
+  assert.equal(await game.title(), 'Quis pulsat? · Lexicon Latīnitātis Cotīdiānae');
+  assert.equal(await game.locator('h1').textContent(), 'Quis pulsat?');
+  assert.equal(await game.locator('.eyebrow').textContent(), 'Lūdus prōnōminum indēfīnītōrum');
+  assert.equal(await game.locator('#question').textContent(), 'Cujus est hic pilleus?');
+  assert.equal(await game.locator('.tab[aria-pressed="true"]').getAttribute('data-id'), 'cujus');
+  assert.deepEqual(await game.locator('.tab').evaluateAll(nodes => nodes.map(n => n.dataset.id)), ['quis', 'quid', 'quem', 'cujus', 'cui', 'uter']);
+  // Another game's keys are not this game's: Ubi est Theodōrus?'s pronouns were on, these are not.
+  assert.equal(await game.locator('#opt-hints').isChecked(), false);
+  assert.equal(await game.locator('.tab .done').count(), 0);
+  // i for j: alicuius is right, and is given the house spelling with j; so is cujusquam, in strict mode too.
+  const gap = n => game.locator(`#gap-cujus-${n}`);
+  await gap(0).fill('alicuius');
+  await gap(0).press('Enter');
+  assert.match(await gap(0).getAttribute('class'), /\bright\b/);
+  assert.equal(await gap(0).inputValue(), 'Alicujus');
+  await game.locator('#opt-strict').check();
+  await gap(1).fill('cuiusquam');
+  await gap(1).press('Enter');
+  assert.equal(await gap(1).inputValue(), 'cujusquam');
+  // An alternative is taken, and kept as the form typed, in the house spelling: cuiuslibet is Cujuslibet, not Cujusvīs.
+  await game.locator('#opt-strict').uncheck();
+  await gap(4).fill('cuiuslibet');
+  await gap(4).press('Enter');
+  assert.equal(await gap(4).inputValue(), 'Cujuslibet');
+  assert.equal(await game.locator('#score').textContent(), 'Rēctē: 3 ex 8');
+  // The other rounds by their hashes, and the alternatives of the round of two.
+  await game.goto(pageUrl('quis-pulsat.html#uter'));
+  assert.equal(await game.locator('#question').textContent(), 'Uter vīcit?');
+  await game.locator('#gap-uter-6').fill('uterlibet');
+  await game.locator('#gap-uter-6').press('Enter');
+  assert.equal(await game.locator('#gap-uter-6').inputValue(), 'Uterlibet');
+  await game.goto(pageUrl('quis-pulsat.html#quid'));
+  await game.locator('#gap-quid-4').fill('quidquid');
+  await game.locator('#gap-quid-4').press('Enter');
+  assert.equal(await game.locator('#gap-quid-4').inputValue(), 'Quidquid');
+  // Its storage keys are qp-…, and Ubi est Theodōrus?'s are as they were.
+  const keys = await game.evaluate(() => Object.fromEntries(Object.keys(localStorage).filter(key => /^(qp|uet)-/.test(key)).map(key => [key, localStorage.getItem(key)])));
+  assert.deepEqual(keys, { 'qp-strict': 'false', 'uet-done': '{"ubi":true}', 'uet-hints': 'true' });
+  // The foot links lead to the other practice pages, the sibling game among them.
+  assert.deepEqual(await game.locator('.links a').evaluateAll(nodes => nodes.map(n => n.getAttribute('href'))),
+    ['index.html', 'practice.html', 'hora.html', 'chartae.html', 'theodorus.html']);
+  await game.locator('.links a[href="theodorus.html"]').click();
+  await game.waitForURL(/theodorus\.html$/);
+  assert.equal(await game.locator('#opt-hints').isChecked(), true);
+  assert.equal(await game.locator('.tab[data-id="ubi"] .done').count(), 1);
+  assert.deepEqual(await game.locator('.links a').evaluateAll(nodes => nodes.map(n => n.getAttribute('href'))),
+    ['index.html', 'practice.html', 'hora.html', 'chartae.html', 'quis-pulsat.html']);
+  await game.evaluate(() => { for (const key of Object.keys(localStorage)) if (/^(qp|uet)-/.test(key)) localStorage.removeItem(key); });
   await context.close();
 });

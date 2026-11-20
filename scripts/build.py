@@ -12,7 +12,8 @@ page per concept record), l/<word>.html (one page per Latin word that heads a
 term), how-we-decide.html (editorial policy), how-practice-works.html (how the
 practice chooses and spaces its cards, with its sources), rulings.html (the rulings
 register), practice.html (vocabulary practice), hora.html (the clock game), chartae.html (the animal
-picture cards, with their pictures in chartae/), theodorus.html (the game of the adverbs of place), and
+picture cards, with their pictures in chartae/), the gap games (theodorus.html, quis-pulsat.html: one
+page for each file in src/lacunae/, made from src/lacunae.html), and
 review.html (what is reviewed, and a reader's flags), sitemap.xml, and in assets/ the stylesheet,
 the page, search, practice and review scripts, the search data, the practice cards (practice-data.js), the picture cards (chartae-data.js), the redirects
 from the old single page (legacy.js) and the fonts. See docs/data-format.md and
@@ -259,6 +260,71 @@ def manifest():
                        'icons': icons}, ensure_ascii=False, indent=2) + '\n'
 
 
+GAP_GAME_TEXT = re.compile(r'\{([^|{}]*)\|([^{}]*)\}')
+
+
+def gap_games(root=ROOT):
+    """The gap games (lacūnae), one file each in src/lacunae/, in their order (Ubi est Theodōrus?, Quis
+    pulsat?, 20 November 2026). One engine (src/lacunae.html) with a data file per game is the
+    coordinating session's choice, for Jack to judge: a new game of the kind is a new file, its links,
+    and its docs. A game: id, order, file (the page it makes), name (its Latin name, the page's heading),
+    description (the page's meta description, English), eyebrow (the line over the question, la and
+    en), prefix (of its storage keys: <prefix>hints, <prefix>strict, <prefix>done; never change one, or a
+    reader's progress is lost), and rounds: id (also the page's #hash), tab, q (the question), and text,
+    a list of pieces joined as they stand, with each gap written {form/other form|hint}."""
+    games = []
+    for path in sorted((root / 'src/lacunae').glob('*.json')):
+        where = f'src/lacunae/{path.name}'
+        try:
+            game = json.loads(path.read_text(encoding='utf-8'))
+        except ValueError as error:
+            raise ValueError(f'{where}: not valid JSON ({error})') from None
+        try:
+            fields(game, ('id', 'order', 'file', 'name', 'description', 'eyebrow', 'prefix', 'rounds'))
+            require(re.fullmatch(r'[a-z][a-z0-9-]*', string(game['id'])) and game['id'] == path.stem, f'the id must be the file\'s name, {path.stem}')
+            require(isinstance(game['order'], int), 'order must be a whole number')
+            require(re.fullmatch(r'[a-z][a-z0-9-]*\.html', string(game['file'])), 'file must be a page name such as quis-pulsat.html')
+            require(re.fullmatch(r'[a-z]+-', string(game['prefix'])), 'prefix must be letters and a hyphen, such as qp-')
+            string(game['name']), string(game['description'])
+            fields(game['eyebrow'], ('la', 'en'))
+            string(game['eyebrow']['la']), string(game['eyebrow']['en'])
+            require(isinstance(game['rounds'], list) and game['rounds'], 'no rounds')
+            seen = set()
+            for number, round_ in enumerate(game['rounds'], 1):
+                fields(round_, ('id', 'tab', 'q', 'text'))
+                key = string(round_['id'])
+                require(re.fullmatch(r'[a-z]+', key), f'round {number}: the id must be lower-case letters (it is the page\'s #hash)')
+                require(key not in seen, f'round {key}: the id is used twice')
+                seen.add(key)
+                string(round_['tab']), string(round_['q'])
+                strings(round_['text'], f'round {key}: text')
+                text = ''.join(round_['text'])
+                gaps = GAP_GAME_TEXT.findall(text)
+                require(gaps, f'round {key}: no gaps')
+                require('{' not in GAP_GAME_TEXT.sub('', text) and '}' not in GAP_GAME_TEXT.sub('', text), f'round {key}: a brace outside a gap {{form|hint}}')
+                for forms, hint in gaps:
+                    require(all(form.strip() == form and form for form in forms.split('/')), f'round {key}: a gap with an empty form, {{{forms}|{hint}}}')
+        except ValueError as error:
+            raise ValueError(f'{where}: {error}') from None
+        games.append(game)
+    for name in ('id', 'file', 'prefix', 'order'):
+        values = [game[name] for game in games]
+        require(len(set(values)) == len(values), f'src/lacunae: two games with the same {name}')
+    require(games, 'src/lacunae: no gap games')
+    return sorted(games, key=lambda game: game['order'])
+
+
+def gap_game_page(root, game, games):
+    """A gap game's page: the engine, src/lacunae.html, with the game's data written in."""
+    data = {'rounds': [{'id': r['id'], 'tab': r['tab'], 'q': r['q'], 'text': ''.join(r['text'])} for r in game['rounds']],
+            'eyebrow': game['eyebrow'], 'prefix': game['prefix']}
+    siblings = ''.join(f'    <a href="{other["file"]}" lang="la">{escape(other["name"])}</a>\n' for other in games if other is not game)
+    return fill(root / 'src/lacunae.html', {
+        'title': escape(f'{game["name"]} · {APP_NAME}'), 'description': escape(game['description']),
+        'canonical': SITE_URL + game['file'], 'name': escape(game['name']), 'links': siblings.rstrip('\n'),
+        'game': json.dumps(data, ensure_ascii=False).replace('</', '<\\/'), 'theme': THEME_INIT, 'app': app_head('')})
+
+
 def service_worker(root, outputs):
     """sw.js, with the files it saves when it installs: the front page, the category pages, the
     guidance pages, the practice pages, the review page, and the stylesheet, scripts, search data, practice cards,
@@ -266,7 +332,8 @@ def service_worker(root, outputs):
     are saved as they are read, like the entry pages (src/chartae.js fetches them once the page has been opened). Its version is a hash of them, so a change to any of them makes the browser
     fetch them all afresh. The entry and word pages are saved as they are read."""
     files = sorted(path for path in outputs
-                   if path in ('index.html', 'how-we-decide.html', 'how-practice-works.html', 'rulings.html', 'practice.html', 'hora.html', 'chartae.html', 'theodorus.html', 'review.html', 'manifest.webmanifest')
+                   if path in ('index.html', 'how-we-decide.html', 'how-practice-works.html', 'rulings.html', 'practice.html', 'hora.html', 'chartae.html', 'review.html', 'manifest.webmanifest')
+                   or path in {game['file'] for game in gap_games(root)}
                    or path.startswith('k/') or (path.startswith('assets/') and not path.endswith(('.txt', 'legacy.js'))))
     digest = hashlib.sha256()
     for path in files:
@@ -3438,8 +3505,9 @@ def fill(path, replacements):
     return page
 
 
-def render_sitemap(site):
-    pages = (['', 'how-we-decide.html', 'how-practice-works.html', 'rulings.html', 'words.html', 'latin.html', 'practice.html', 'hora.html', 'chartae.html', 'theodorus.html', 'review.html']
+def render_sitemap(site, root=ROOT):
+    pages = (['', 'how-we-decide.html', 'how-practice-works.html', 'rulings.html', 'words.html', 'latin.html', 'practice.html', 'hora.html', 'chartae.html']
+             + [game['file'] for game in gap_games(root)] + ['review.html']
              + [f'k/{key}.html' for key in site['categories']] + [f'c/{key}.html' for key in sorted(site['records'])]
              + [f'l/{slug}.html' for slug in sorted(w['slug'] for w in site['words'].values())])
     return ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
@@ -3474,8 +3542,10 @@ def build_site(root=ROOT):
     outputs['practice.html'] = fill(root / 'src/practice.html', {
         'theme': THEME_INIT, 'app': app_head(''), 'header': site_header(''), 'footer': site_footer('')})
     outputs['hora.html'] = fill(root / 'src/hora.html', {'theme': THEME_INIT, 'app': app_head('')})
-    # Ubi est Theodōrus?, the game of the adverbs of place (20 November 2026), a page that stands by itself as the clock does.
-    outputs['theodorus.html'] = fill(root / 'src/theodorus.html', {'theme': THEME_INIT, 'app': app_head('')})
+    # The gap games (Ubi est Theodōrus?, Quis pulsat?; 20 November 2026): pages that stand by themselves as the clock does.
+    games = gap_games(root)
+    for game in games:
+        outputs[game['file']] = gap_game_page(root, game, games)
     outputs['assets/practice.js'] = (root / 'src/practice.js').read_text(encoding='utf-8')
     chartae, pictures = picture_cards(root, site)
     outputs['chartae.html'] = fill(root / 'src/chartae.html', {
@@ -3487,7 +3557,7 @@ def build_site(root=ROOT):
     outputs['assets/practice-data.js'] = practice_data(site)
     outputs['review.html'] = render_review_page(root, site)
     outputs['assets/review.js'] = (root / 'src/review.js').read_text(encoding='utf-8')
-    outputs['sitemap.xml'] = render_sitemap(site)
+    outputs['sitemap.xml'] = render_sitemap(site, root)
     outputs['assets/lexicon.css'] = (root / 'src/styles.css').read_text(encoding='utf-8')
     outputs['assets/lexicon.js'] = (root / 'src/page.js').read_text(encoding='utf-8')
     for font in sorted((root / 'src/fonts').iterdir()) if (root / 'src/fonts').exists() else []:

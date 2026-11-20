@@ -5,9 +5,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
-<title>Ubi est Theodōrus? · Lexicon Latīnitātis Cotīdiānae</title>
-<meta name="description" content="Ubi est Theodōrus? A game of the Latin adverbs of place (ubi, quō, unde, quā): fill the gaps in short dialogues, in Latin or with an English interface.">
-<link rel="canonical" href="https://jhwheeler.github.io/lexicon-latinitatis-cotidianae/theodorus.html">
+<title>{{title}}</title>
+<meta name="description" content="{{description}}">
+<link rel="canonical" href="{{canonical}}">
 <meta name="theme-color" content="#f2f0eb">
 {{theme}}
 <script>
@@ -17,8 +17,12 @@ if (document.documentElement.dataset.theme === 'dark') document.querySelector('m
 </script>
 {{app}}
 <style>
-/* Ubi est Theodōrus? (20 November 2026): a game of the adverbs of place, built on a game Jack invented in
-   conversation, dressed as the clock (src/hora.html) is dressed, which solved the same problems.
+/* The gap games (lacūnae): short dialogues with gaps to fill. One engine, this template, makes a
+   standalone page for each game in src/lacunae/ (scripts/build.py, gap_games): Ubi est Theodōrus? (20
+   November 2026), the adverbs of place, built on a game Jack invented in conversation, and Quis pulsat?
+   (20 November 2026), the indefinite pronouns. One engine with a data file per game is the
+   coordinating session's choice, for Jack to judge. The page is dressed as the clock (src/hora.html)
+   is dressed, which solved the same problems.
    The colours are the lexicon's: the Minium scheme of src/styles.css, with the same names and values,
    copied here so that the page stands by itself, the page on --ground and the cards on --card. The
    roles are the clock's: ink for the text and the main button; red for the rubrics, the control in use,
@@ -156,7 +160,7 @@ body.hints .gap .hint{display:inline}
     <a class="icon-btn" id="back" href="practice.html">
       <svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><path d="M13.5 4.5L7 11l6.5 6.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
     </a>
-    <h1 lang="la">Ubi est Theodōrus?</h1>
+    <h1 lang="la">{{name}}</h1>
   </div>
 </header>
 
@@ -199,54 +203,24 @@ body.hints .gap .hint{display:inline}
     <a href="index.html" lang="la">Lexicon Latīnitātis Cotīdiānae</a>
     <a href="practice.html" data-i18n="practice"></a>
     <a href="hora.html" lang="la">Hōra cum ūnciā</a>
+    <a href="chartae.html" lang="la">Chartae animālium</a>
+{{links}}
   </nav>
 </main>
 
 <script>
 (function(){
-/* The dialogues (ROUNDS) and every Latin string of the interface below are Claude's wording (20
-   November 2026), built on a game Jack invented in conversation, for Jack's review: they are not his,
-   and are not approved. The name in the game, Theodōrus, is Jack's choice (20 November 2026). Do not change the dialogues without Jack. The rules of judging (parse, norm,
-   strip, judge) are the prototype's, unchanged. "Optiōnēs", "Lingua", and "Vocābulōrum exercitātiō" are
-   the clock's own strings (src/hora.html). */
-/* Each gap is {fōrma/altera fōrma|prōnōmen}. The first form is the one shown by "Ostende". */
-const ROUNDS = [
-  {
-    id: "ubi", tab: "Ubi?", q: "Ubi est Theodōrus?",
-    text: "Nesciō ubi sit. {Alicubi|aliquis} certē est, nam {nusquam|nūllus} esse nōn potest. " +
-      "Neque {hīc|hic} est apud mē, neque {istīc|iste} apud tē; fortasse {illīc|ille} est, trāns flūmen. " +
-      "Domī quidem {ubīque|quisque} quaesīvī neque {usquam|ūllus} invēnī; {alibī|alius} igitur quaerendus est. " +
-      "{Ubiubi/Ubicumque|quisquis} est, {ibi|is} est; {ibīdem|īdem} maneat, dum veniam."
-  },
-  {
-    id: "quo", tab: "Quō?", q: "Quō it Theodōrus?",
-    text: "Nesciō quō eat. {Aliquō|aliquis} certē it, neque enim domī manet. " +
-      "Nōn {hūc|hic} venit ad mē, neque {istūc|iste} ad tē; {illūc|ille} potius tendit, trāns flūmen. " +
-      "{Quōquō/Quōcumque|quisquis} it, {eō|is} sequar, nam {eōdem|īdem} mihi quoque eundum est. " +
-      "Sī {aliō|alius} sē verterit, ego item mē vertam. {Nusquam|nūllus} sine mē abībit."
-  },
-  {
-    id: "unde", tab: "Unde?", q: "Unde venit Theodōrus?",
-    text: "Nesciō unde veniat. {Alicunde|aliquis} certē venit, nam fessus est dē viā. " +
-      "Nōn {hinc|hic} profectus est ā mē, neque {istinc|iste} ā tē; {illinc|ille} venīre vidētur, ā monte. " +
-      "{Undecumque/Undeunde|quisquis} venit, {inde|is} aliquid novī affert. " +
-      "Frāter ejus, quī heri {indidem|īdem} vēnit, eadem narrāvit. " +
-      "Sī {aliunde|alius} vēnisset, alia narrāret. Jam amīcī {undique|quisque} concurrunt, ut eum salūtent."
-  },
-  {
-    id: "qua", tab: "Quā?", q: "Quā fūgit fūr?",
-    text: "Nesciō quā fūgerit. {Aliquā|aliquis} certē ēvāsit, nam in aedibus nōn est. " +
-      "Nōn {hāc|hic} trānsiit, ubi ego stō, neque {istāc/istā|iste}, ubi tū stās; {illāc/illā|ille} igitur ēlāpsus est, per hortum. " +
-      "{Quāquā/Quācumque|quisquis} fūgit, {eā|is} vestīgia relīquit, et canēs {eādem|īdem} sequentur. " +
-      "Sī {aliā|alius} redīre cōnābitur, capiētur. Portās tamen claudite, nē {quā|quis} effugiat."
-  },
-  {
-    id: "iter", tab: "Iter", q: "Quid ēgit Theodōrus?",
-    text: "Theodōrus nūper {hinc|hic · unde?} profectus est. Prīmum Rōmam iit; {ibi|is · ubi?} trēs diēs mānsit. " +
-      "{Inde|is · unde?} Neāpolim contendit. {Eō|is · quō?} cum pervēnisset, amīcum {ubīque|quisque · ubi?} quaesīvit " +
-      "neque {usquam|ūllus · ubi?} invēnit. Itaque {eādem|īdem · quā?} quā vēnerat redīre coepit; crās {hūc|hic · quō?} aderit."
-  }
-];
+/* The game's data, from its file in src/lacunae/, written in by the builder: its rounds, its line over
+   the question in both languages, and the prefix of its storage keys. The dialogues and every Latin
+   string of the interface below are Claude's wording (20 November 2026), built on a game Jack invented
+   in conversation, for Jack's review: they are not his, and are not approved. The name in the games,
+   Theodōrus, is Jack's choice (20 November 2026). Do not change the dialogues without Jack. The rules of
+   judging (parse, norm, strip, judge) are the prototype's; since Quis pulsat? norm also reads j as i,
+   so that alicuius is taken for alicujus and given the house spelling. "Optiōnēs", "Lingua", and
+   "Vocābulōrum exercitātiō" are the clock's own strings (src/hora.html).
+   Each gap is {fōrma/altera fōrma|prōnōmen}. The first form is the one shown by "Ostende". */
+const GAME = {{game}};
+const ROUNDS = GAME.rounds;
 
 function parse(text) {
   const parts = [];
@@ -261,7 +235,7 @@ function parse(text) {
   return parts;
 }
 function norm(s) {
-  return s.normalize("NFC").toLowerCase().replace(/\s+/g, "").replace(/cunque/g, "cumque");
+  return s.normalize("NFC").toLowerCase().replace(/\s+/g, "").replace(/cunque/g, "cumque").replace(/j/g, "i");
 }
 function strip(s) {
   return s.normalize("NFD").replace(/[̀-ͯ]/g, "");
@@ -278,13 +252,13 @@ function judge(forms, value, strict) {
 }
 
 const T={
- la:{eyebrow:'Lūdus adverbiōrum locī',task:'Lacūnās explē.',check:'Probā',reveal:'Ostende',reset:'Dēnuō',next:'Proxima interrogātiō',
+ la:{eyebrow:GAME.eyebrow.la,task:'Lacūnās explē.',check:'Probā',reveal:'Ostende',reset:'Dēnuō',next:'Proxima interrogātiō',
    keys:'Apicēs',keysLabel:'Litterae cum apicibus',hints:'Prōnōmina ostendere',strict:'Apicēs exigere',
    score:(n,m)=>`Rēctē: ${n} ex ${m}`,wrong:'Nōndum. Iterum temptā.',apex:'Fōrma rēcta est, apicēs dēsunt.',
    perfect:'Euge! Omnia ipse explēvistī.',finished:(n,m)=>`Perfectum est; ${n} ex ${m} ipse explēvistī.`,
    tabs:'Interrogātiōnēs',done:'perfectum',gap:'lacūna',optH:'Optiōnēs',langH:'Lingua',
    back:'Ad exercitātiōnem',links:'Ad lexicon',practice:'Vocābulōrum exercitātiō'},
- en:{eyebrow:'A game of the adverbs of place',task:'Fill the gaps.',check:'Check',reveal:'Show',reset:'Start over',next:'Next question',
+ en:{eyebrow:GAME.eyebrow.en,task:'Fill the gaps.',check:'Check',reveal:'Show',reset:'Start over',next:'Next question',
    keys:'Macrons',keysLabel:'Letters with macrons',hints:'Show the pronouns',strict:'Require macrons',
    score:(n,m)=>`Right: ${n} of ${m}`,wrong:'Not yet. Try again.',apex:'The form is right; the macrons are missing.',
    perfect:'Well done! You filled them all yourself.',finished:(n,m)=>`Done; you filled ${n} of ${m} yourself.`,
@@ -292,16 +266,16 @@ const T={
    back:'Back to practice',links:'To the lexicon',practice:'Vocabulary practice'}
 };
 
-/* Everything stays on the device, in localStorage, each access inside try/catch: uet-hints, uet-strict,
-   uet-done. The language is the practice page's own choice (lexicon-practice-lang), as the review page's
+/* Everything stays on the device, in localStorage, each access inside try/catch, under the game's own
+   prefix: <prefix>hints, <prefix>strict, <prefix>done (uet- for Ubi est Theodōrus?, qp- for Quis pulsat?). The language is the practice page's own choice (lexicon-practice-lang), as the review page's
    is: Latin unless English was chosen there or here. */
 const store = {
   get(key, fallback) {
-    try { const v = localStorage.getItem("uet-" + key); return v === null ? fallback : JSON.parse(v); }
+    try { const v = localStorage.getItem(GAME.prefix + key); return v === null ? fallback : JSON.parse(v); }
     catch (e) { return fallback; }
   },
   set(key, value) {
-    try { localStorage.setItem("uet-" + key, JSON.stringify(value)); } catch (e) {}
+    try { localStorage.setItem(GAME.prefix + key, JSON.stringify(value)); } catch (e) {}
   }
 };
 const LANG = 'lexicon-practice-lang';

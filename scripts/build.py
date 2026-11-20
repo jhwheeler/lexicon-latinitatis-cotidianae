@@ -11,9 +11,10 @@ latin.html (the English and Latin headwords from A to Z), c/<concept>.html (one
 page per concept record), l/<word>.html (one page per Latin word that heads a
 term), how-we-decide.html (editorial policy), how-practice-works.html (how the
 practice chooses and spaces its cards, with its sources), rulings.html (the rulings
-register), practice.html (vocabulary practice), hora.html (the clock game) and
+register), practice.html (vocabulary practice), hora.html (the clock game), chartae.html (the animal
+picture cards, with their pictures in chartae/) and
 review.html (what is reviewed, and a reader's flags), sitemap.xml, and in assets/ the stylesheet,
-the page, search, practice and review scripts, the search data, the practice cards (practice-data.js), the redirects
+the page, search, practice and review scripts, the search data, the practice cards (practice-data.js), the picture cards (chartae-data.js), the redirects
 from the old single page (legacy.js) and the fonts. See docs/data-format.md and
 docs/records.md.
 
@@ -261,10 +262,11 @@ def manifest():
 def service_worker(root, outputs):
     """sw.js, with the files it saves when it installs: the front page, the category pages, the
     guidance pages, the practice pages, the review page, and the stylesheet, scripts, search data, practice cards,
-    fonts and icons. Its version is a hash of them, so a change to any of them makes the browser
+    fonts and icons. The pictures of the animal cards (chartae/) are not among them: they are six megabytes, and
+    are saved as they are read, like the entry pages (src/chartae.js fetches them once the page has been opened). Its version is a hash of them, so a change to any of them makes the browser
     fetch them all afresh. The entry and word pages are saved as they are read."""
     files = sorted(path for path in outputs
-                   if path in ('index.html', 'how-we-decide.html', 'how-practice-works.html', 'rulings.html', 'practice.html', 'hora.html', 'review.html', 'manifest.webmanifest')
+                   if path in ('index.html', 'how-we-decide.html', 'how-practice-works.html', 'rulings.html', 'practice.html', 'hora.html', 'chartae.html', 'review.html', 'manifest.webmanifest')
                    or path.startswith('k/') or (path.startswith('assets/') and not path.endswith(('.txt', 'legacy.js'))))
     digest = hashlib.sha256()
     for path in files:
@@ -3371,6 +3373,61 @@ def legacy_script(site):
             '})();\n')
 
 
+# The animal picture cards (chartae.html; Jack, 20 November 2026). data/chartae.json has the kinds
+# ("groups") and the cards. A card: id (the picture is src/chartae/<id>.jpg, 720 by 511), latin (the
+# dictionary form), english, group, line (a sentence with the word in it) and its source (a place
+# in an author; "composed" for a sentence of ours; a place in the readers, which the site shows as
+# composed, like every example taken from them), food (what the animal eats, in the ablative, as
+# the answer to "Quō vēscitur?"), record (the lexicon's entry for the animal, where there is one),
+# and image: the file's name on Wikimedia Commons, its author, the licence and its address, and the
+# file's page. Only pictures that anyone may reuse, commercially too, are taken, so the licences
+# are a closed list; the page names the author and the licence beside every picture.
+PICTURE_LICENCES = {
+    'CC0': 'https://creativecommons.org/publicdomain/zero/1.0/', 'Public domain': '',
+    'CC BY 2.0': 'https://creativecommons.org/licenses/by/2.0/', 'CC BY 3.0': 'https://creativecommons.org/licenses/by/3.0/',
+    'CC BY 4.0': 'https://creativecommons.org/licenses/by/4.0/', 'CC BY-SA 2.5': 'https://creativecommons.org/licenses/by-sa/2.5/',
+    'CC BY-SA 3.0': 'https://creativecommons.org/licenses/by-sa/3.0/', 'CC BY-SA 4.0': 'https://creativecommons.org/licenses/by-sa/4.0/'}
+
+
+def picture_cards(root, site):
+    """The picture cards as a script (assets/chartae-data.js) and their pictures ({path: bytes})."""
+    data = json.loads((root / 'data/chartae.json').read_text(encoding='utf-8'))
+    fields(data, ('groups', 'cards'))
+    groups, cards, pictures = [], [], {}
+    for group in data['groups']:
+        fields(group, ('id', 'latin', 'english'))
+        require(re.fullmatch(r'[a-z][a-z0-9-]*', string(group['id'])) and group['id'] not in [g['id'] for g in groups], f'Picture cards: bad or repeated kind {group["id"]}')
+        groups.append({key: string(group[key]) for key in ('id', 'latin', 'english')})
+    kinds = {group['id'] for group in groups}
+    for card in data['cards']:
+        fields(card, ('id', 'latin', 'english', 'group', 'line', 'source', 'food', 'image'), ('record',))
+        key = string(card['id'])
+        where = f'Picture card {key}'
+        require(re.fullmatch(r'[a-z][a-z0-9-]*', key) and f'chartae/{key}.jpg' not in pictures, f'{where}: bad or repeated id')
+        for name in ('latin', 'english', 'line', 'source', 'food'):
+            require(string(card[name]).strip() == card[name] and card[name], f'{where}: {name} is empty or has stray spaces')
+        require(card['group'] in kinds, f'{where}: unknown kind {card["group"]}')
+        require('record' not in card or card['record'] in site['records'], f'{where}: no record {card.get("record")}')
+        image = card['image']
+        fields(image, ('file', 'author', 'licence', 'licence_url', 'page'))
+        require(image['licence'] in PICTURE_LICENCES and image['licence_url'] == PICTURE_LICENCES[image['licence']],
+                f'{where}: the licence {image["licence"]} is not one of {", ".join(PICTURE_LICENCES)}, or its address is not that licence’s')
+        require(string(image['author']).strip() and string(image['file']).strip(), f'{where}: the picture needs its author and its file name')
+        require(image['page'].startswith('https://commons.wikimedia.org/wiki/File:'), f'{where}: the picture’s page is not on Wikimedia Commons')
+        picture = root / f'src/chartae/{key}.jpg'
+        require(picture.exists(), f'{where}: src/chartae/{key}.jpg is missing')
+        pictures[f'chartae/{key}.jpg'] = picture.read_bytes()
+        ours = composed({'source': card['source']})
+        cards.append({'id': key, 'latin': card['latin'], 'english': card['english'], 'group': card['group'], 'line': card['line'],
+                      'source': '' if ours else card['source'], 'food': card['food'], **({'record': card['record']} if 'record' in card else {}),
+                      'picture': f'chartae/{key}.jpg', 'image': {name: image[name] for name in ('author', 'licence', 'licence_url', 'page')}})
+    unused = sorted(p.name for p in (root / 'src/chartae').glob('*') if f'chartae/{p.name}' not in pictures)
+    require(not unused, f'Picture cards: src/chartae has files that no card uses: {unused[:8]}')
+    require(cards, 'No picture cards')
+    return ('// Generated by scripts/build.py from data/chartae.json. Do not edit.\nwindow.lexiconChartae = '
+            + json.dumps({'groups': groups, 'cards': cards}, ensure_ascii=False, separators=(',', ':')) + ';\n'), pictures
+
+
 def fill(path, replacements):
     page = path.read_text(encoding='utf-8')
     for name, value in replacements.items():
@@ -3382,7 +3439,7 @@ def fill(path, replacements):
 
 
 def render_sitemap(site):
-    pages = (['', 'how-we-decide.html', 'how-practice-works.html', 'rulings.html', 'words.html', 'latin.html', 'practice.html', 'hora.html', 'review.html']
+    pages = (['', 'how-we-decide.html', 'how-practice-works.html', 'rulings.html', 'words.html', 'latin.html', 'practice.html', 'hora.html', 'chartae.html', 'review.html']
              + [f'k/{key}.html' for key in site['categories']] + [f'c/{key}.html' for key in sorted(site['records'])]
              + [f'l/{slug}.html' for slug in sorted(w['slug'] for w in site['words'].values())])
     return ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
@@ -3418,6 +3475,13 @@ def build_site(root=ROOT):
         'theme': THEME_INIT, 'app': app_head(''), 'header': site_header(''), 'footer': site_footer('')})
     outputs['hora.html'] = fill(root / 'src/hora.html', {'theme': THEME_INIT, 'app': app_head('')})
     outputs['assets/practice.js'] = (root / 'src/practice.js').read_text(encoding='utf-8')
+    chartae, pictures = picture_cards(root, site)
+    outputs['chartae.html'] = fill(root / 'src/chartae.html', {
+        'count': str(len(json.loads(chartae[chartae.index('{'):chartae.rindex('}') + 1])['cards'])),
+        'theme': THEME_INIT, 'app': app_head(''), 'header': site_header(''), 'footer': site_footer('')})
+    outputs['assets/chartae.js'] = (root / 'src/chartae.js').read_text(encoding='utf-8')
+    outputs['assets/chartae-data.js'] = chartae
+    outputs.update(pictures)
     outputs['assets/practice-data.js'] = practice_data(site)
     outputs['review.html'] = render_review_page(root, site)
     outputs['assets/review.js'] = (root / 'src/review.js').read_text(encoding='utf-8')
@@ -3442,7 +3506,7 @@ def build(root=ROOT):
 
 def stale(root, outputs):
     """Generated pages and fonts that no longer have a source."""
-    found = [p for folder, pattern in (('c', '*.html'), ('l', '*.html'), ('k', '*.html'), ('assets/fonts', '*'), ('assets/icons', '*'))
+    found = [p for folder, pattern in (('c', '*.html'), ('l', '*.html'), ('k', '*.html'), ('assets/fonts', '*'), ('assets/icons', '*'), ('chartae', '*.jpg'))
              if (root / folder).exists() for p in (root / folder).glob(pattern)]
     return sorted(str(PurePosixPath(p.relative_to(root))) for p in found
                   if str(PurePosixPath(p.relative_to(root))) not in outputs)

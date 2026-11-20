@@ -130,7 +130,7 @@ html:not(.js) :is(.toolbar, .meta, #search-results, .empty, .settings) { display
 .home { margin:22px 0 44px; }
 .home-lead { margin:0 0 28px; max-width:40rem; color:var(--soft); font-size:1.12rem; }
 .home h2 { margin:0; padding-bottom:6px; border-bottom:1px solid var(--rule); color:var(--rubric); font:400 1.6rem/1.2 var(--serif); font-variant-caps:small-caps; letter-spacing:.04em; }
-/* The contents (.toc), and above them the two ways to practise (.plist), set the same way. */
+/* The contents (.toc), and above them the ways to practise (.plist), set the same way. */
 :is(.toc, .plist) { display:grid; grid-template-columns:minmax(0,1fr); column-gap:48px; margin:0; padding:0; list-style:none; }
 @media (min-width:720px) { :is(.toc, .plist) { grid-template-columns:repeat(2,minmax(0,1fr)); } }
 :is(.toc, .plist) li { border-bottom:1px solid var(--hair); }
@@ -410,7 +410,7 @@ span.kind, p.kind:not(:has(a)) { display:block; padding:10px 0; }
    gives what is chosen and the count; it opens the groups of choices. A choice in a row carries a
    red bar at its left, as the current category does; a choice in a line is underlined, as the
    other filters are. Nothing in the lobby is boxed but the button that starts a round. */
-.practice .category-heading, #practice { max-width:40rem; }
+.practice .category-heading, #practice, #chartae { max-width:40rem; }
 .practice .category-heading { display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; column-gap:16px; margin-top:14px; }
 .p-lang { margin-bottom:-6px; }
 .practice summary { cursor:pointer; list-style:none; }
@@ -478,7 +478,7 @@ span.kind, p.kind:not(:has(a)) { display:block; padding:10px 0; }
 .pgroup.backup[open] { padding-bottom:10px; }
 .p-more, .p-how { margin:10px 0 0; color:var(--muted); font:400 1rem var(--sans); }
 :is(.p-more, .p-how) a { display:inline-block; padding:11px 0; line-height:1.4; color:var(--soft); }
-html:not(.js) :is(#practice, #review, .p-lang) { display:none; }
+html:not(.js) :is(#practice, #chartae, #review, .p-lang) { display:none; }
 
 /* The round (Jack, 14 November 2026: "a separate experience… you could X out of it… actual cards,
    rounded cornered cards… the buttons don't really feel like buttons"). A round is played in a
@@ -546,6 +546,37 @@ html.pgame-open, html.pgame-open body { overflow:hidden; }
 .pgame-keys { margin:8px 0 0; color:var(--muted); font:400 .9rem var(--sans); text-align:center; }
 /* A phone has no keys to speak of. */
 @media (hover:none) { .pgame-keys { display:none; } }
+/* The animal picture cards (chartae.html): the practice's lobby and its round, with a picture for
+   the cue. The round's card is the picture, edge to edge, and under it the card's back. The list of
+   every card is plain pictures with their names: no boxes outside the round. */
+.c-deck .count, .c-count { color:var(--muted); font-variant-numeric:tabular-nums; }
+.c-deck .count { font-size:.88em; }
+.c-count { margin:10px 0 0; font:400 .95rem/1.4 var(--sans); }
+.c-all { margin-top:26px; border-top:1px solid var(--hair); }
+.chartae .c-group { margin:18px 0 10px; color:var(--rubric); font:400 1.15rem/1.3 var(--serif); font-variant-caps:small-caps; letter-spacing:.05em; }
+.c-tiles { display:grid; grid-template-columns:repeat(auto-fill, minmax(8.75rem, 1fr)); gap:16px 12px; padding-bottom:10px; }
+.c-tile { margin:0; }
+.c-tile img { display:block; width:100%; height:auto; aspect-ratio:720 / 511; background:var(--hair); }
+.c-tile figcaption { padding:5px 0 6px; line-height:1.3; }
+.c-tile b { display:block; font-weight:400; font-size:1.12rem; }
+.c-tile .c-en { color:var(--muted); font:400 .95rem/1.3 var(--sans); }
+.c-tile-link { color:var(--ink); text-decoration:none; }
+.c-tile-link:hover b { text-decoration:underline; text-decoration-color:var(--accent); text-decoration-thickness:1px; text-underline-offset:.2em; }
+.ccard { justify-content:flex-start; min-height:0; padding:0; overflow:hidden; }
+.ccard-picture { display:block; width:100%; height:auto; aspect-ratio:720 / 511; object-fit:cover; background:var(--hair); }
+.ccard-text { display:flex; flex-direction:column; padding:10px 22px 14px; }
+.ccard:not(.front) .ccard-text { padding-bottom:18px; }
+.ccard.finished .ccard-text { padding:44px 22px; }
+.ccard .pgame-status { margin:0; }
+.ccard .pgame-back { margin:0; padding-top:2px; border-top:0; }
+.ccard-en { color:var(--soft); }
+.ccard .pgame-ex { margin-top:12px; }
+.ccard-food { margin-top:12px !important; line-height:1.4; }
+.c-ask { color:var(--rubric); font-variant-caps:small-caps; letter-spacing:.05em; }
+.ccard .pgame-entry { margin-top:4px; }
+.ccard-credit { color:var(--muted); font:400 .85rem/1.45 var(--sans); }
+.ccard-credit a { display:inline-block; padding:12px 0; color:inherit; }
+.ccard .pgame-entry + .ccard-credit { margin-top:-8px; }
 @media (prefers-reduced-motion:reduce) { #g-bar { transition:none; } .pbtn:active { transform:none; } }
 
 /* Review (review.html, the foot of every entry, the back of a practice card) -----------------

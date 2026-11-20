@@ -255,6 +255,9 @@ test('the lexicon is kept on the device: it opens and searches offline, as an ap
   // An entry read while online is there offline; so are the front page, a category and the search.
   await app.goto(pageUrl('c/pyjamas.html'));
   await app.waitForLoadState('networkidle');
+  // The animal cards' pictures are fetched once their page has been opened, and the page says when they are all there.
+  await app.goto(pageUrl('chartae.html'));
+  await app.locator('#c-offline:not([hidden])').waitFor();
   await context.setOffline(true);
   await app.goto(pageUrl('index.html?q=pyjama'));
   await app.waitForFunction(() => /matching/.test(document.getElementById('results').textContent));
@@ -271,6 +274,13 @@ test('the lexicon is kept on the device: it opens and searches offline, as an ap
   await app.goto(pageUrl('hora.html'));
   assert.equal(await app.locator('#go').isVisible(), true);
   assert.equal(await app.evaluate(() => document.fonts.check('18px "Lexicon Serif"')), true);
+  await app.goto(pageUrl('chartae.html'));
+  await app.locator('#p-start').click();
+  for (let n = 0; n < 3; n++) {
+    await app.waitForFunction(() => { const picture = document.getElementById('g-picture'); return picture.complete && picture.naturalWidth === 720; });
+    await app.locator('#g-show').click();
+    await app.locator('#g-got').click();
+  }
   // The guidance pages, never opened here, were saved when the lexicon was.
   for (const [path, title] of [['how-we-decide.html', 'How we decide'], ['how-practice-works.html', 'How the practice works']]) {
     await app.goto(pageUrl(path));
@@ -604,7 +614,7 @@ test('on a phone the categories fold into a menu above the search', async () => 
 
 test('every page is usable on a phone: no sideways scrolling, 44px controls, no zoom on search', async () => {
   const pages = ['index.html', 'k/culina.html', 'words.html', 'latin.html', 'c/cooking-pot.html', 'c/tickle.html',
-                 'c/perhaps.html', 'l/fortasse.html', 'rulings.html', 'how-we-decide.html', 'how-practice-works.html', 'practice.html', 'hora.html', 'review.html'];
+                 'c/perhaps.html', 'l/fortasse.html', 'rulings.html', 'how-we-decide.html', 'how-practice-works.html', 'practice.html', 'hora.html', 'chartae.html', 'review.html'];
   for (const width of [320, 375, 390]) {
     await page.setViewportSize({ width, height: 800 });
     for (const path of pages) {
@@ -620,7 +630,7 @@ test('every page is usable on a phone: no sideways scrolling, 44px controls, no 
     }
   }
   for (const [path, field] of [['index.html', '#search'], ['k/culina.html', '#search'], ['c/kind.html', '#site-search'], ['words.html', '#site-search'],
-                               ['practice.html', '#site-search'], ['hora.html', '#answer']]) {
+                               ['practice.html', '#site-search'], ['chartae.html', '#site-search'], ['hora.html', '#answer']]) {
     await page.goto(pageUrl(path));
     assert.ok(parseFloat(await page.locator(field).evaluate(el => getComputedStyle(el).fontSize)) >= 16, path);
   }
@@ -2353,13 +2363,14 @@ test('the practice lobby links to How the practice works, in Latin and in Englis
 
 test('practice is reached from the front page and from every footer, never from the header', async () => {
   const links = page.locator('.plist a');
-  assert.deepEqual(await links.evaluateAll(nodes => nodes.map(n => n.getAttribute('href'))), ['practice.html', 'hora.html']);
+  assert.deepEqual(await links.evaluateAll(nodes => nodes.map(n => n.getAttribute('href'))), ['practice.html', 'hora.html', 'chartae.html']);
   const practice = await page.locator('#practice-title').boundingBox(), contents = await page.locator('#contents-title').boundingBox();
   assert.ok(practice.y < contents.y, 'above the list of categories');
   await links.first().click();
   await page.waitForURL(/practice\.html$/);
   assert.equal(await page.locator('h1').textContent(), 'Exercitātiō');
-  await page.locator('.p-more a').click();
+  assert.deepEqual(await page.locator('.p-more a').evaluateAll(nodes => nodes.map(n => n.getAttribute('href'))), ['hora.html', 'chartae.html']);
+  await page.locator('.p-more a[href="hora.html"]').click();
   await page.waitForURL(/hora\.html$/);
   for (const [path, href] of [['index.html', 'practice.html'], ['c/kind.html', '../practice.html'], ['k/culina.html', '../practice.html'], ['practice.html', 'practice.html']]) {
     await page.goto(pageUrl(path));
@@ -3103,4 +3114,225 @@ test('the clock is set in the lexicon’s faces, from the site’s own files: no
   assert.deepEqual(await clock.evaluate(() => [...document.fonts].filter(face => face.status === 'loaded').map(face => face.family.replace(/"/g, '')).filter((name, at, all) => all.indexOf(name) === at).sort()),
     ['Alegreya Sans', 'Lexicon Serif']);
   await context.close();
+});
+
+// The animal picture cards ---------------------------------------------------------------------
+
+const CHARTAE_KEYS = ['lexicon-chartae', 'lexicon-chartae-deck', 'lexicon-chartae-round', 'lexicon-practice-lang'];
+const openChartae = async (fresh = true, language = 'en') => {
+  if (fresh) {
+    await page.goto(pageUrl('chartae.html'));
+    await page.evaluate(keys => keys.forEach(key => localStorage.removeItem(key)), CHARTAE_KEYS);
+    if (language) await page.evaluate(code => localStorage.setItem('lexicon-practice-lang', code), language);
+    await settle();
+  }
+  await page.goto(pageUrl('chartae.html'));
+  await page.locator('#chartae:not([hidden])').waitFor();
+};
+const chartaeRound = async () => { const round = await kept('lexicon-chartae-round'); return [round.current, ...round.queue]; };
+const pictureShown = () => page.waitForFunction(() => { const picture = document.getElementById('g-picture'); return picture.complete && picture.naturalWidth === 720; });
+
+test('the animal cards: a picture for the cue, the name on request, and a back with its line, its entry, and the picture’s credit', async () => {
+  const cards = await page.evaluate(async address => {
+    const text = await (await fetch(address)).text();
+    return JSON.parse(text.slice(text.indexOf('{'), text.lastIndexOf('}') + 1)).cards;
+  }, pageUrl('assets/chartae-data.js'));
+  await openChartae();
+  assert.equal(await page.locator('h1').textContent(), 'Animal cards');
+  assert.deepEqual(await deckCount(), [cards.length, 0, cards.length]);
+  await startRound();
+  assert.equal(await page.locator('#g-pos').textContent(), '1 / 12');
+  const ids = await chartaeRound(), card = cards.find(c => c.id === ids[0]), head = card.latin.split(',')[0];
+  assert.equal(new Set(ids).size, 12);
+  // The front is the picture and nothing that names the animal.
+  await pictureShown();
+  assert.equal(await page.locator('#g-picture').getAttribute('src'), card.picture);
+  assert.equal(await page.locator('#g-picture').getAttribute('alt'), 'Picture of an animal');
+  assert.equal((await page.locator('#g-card').innerText()).trim().toLowerCase(), 'new');
+  assert.equal(await page.locator('#g-marks').isVisible(), false);
+  // A tap on the card turns it.
+  await page.locator('#g-picture').click();
+  assert.equal(await page.locator('#g-la b').textContent(), head);
+  assert.equal(await page.locator('#g-la').textContent(), card.latin);
+  assert.equal(await page.locator('#g-la').getAttribute('lang'), 'la');
+  assert.equal(await page.locator('#g-en [lang="en"]').textContent(), card.english);
+  assert.equal(await page.locator('#g-ex-la').textContent(), card.line);
+  assert.equal(await page.locator('#g-ex-src').textContent(), card.source || 'composed');
+  assert.equal(await page.locator('#g-food').textContent(), `Quō vēscitur? ${card.food}`);
+  assert.equal(await page.locator('#g-food').getAttribute('lang'), 'la');
+  const credit = page.locator('#g-credit');
+  assert.match(await credit.textContent(), /^Picture: .+, from Wikimedia Commons; cropped\.$/);
+  assert.equal(await credit.locator('a').first().getAttribute('href'), card.image.page);
+  if (card.image.licence_url) assert.equal(await credit.locator('a').nth(1).getAttribute('href'), card.image.licence_url);
+  // The marks are the practice's: Again at the left, outlined; Got it at the right, filled.
+  const again = await page.locator('#g-again').boundingBox(), got = await page.locator('#g-got').boundingBox();
+  assert.ok(again.x < got.x);
+  // The entry is a page of the lexicon, and the round is as it was on coming back.
+  if (card.record) {
+    await page.locator('#g-entry').click();
+    await page.waitForURL(new RegExp(`c/${card.record}\\.html$`));
+    assert.equal(await page.locator('h1.hw').count(), 1);
+    await page.goBack();
+    await page.locator('#p-game[open]').waitFor();
+    assert.equal(await page.locator('#g-la b').textContent(), head);
+  }
+  await page.locator('#g-got').click();
+  assert.equal(await page.locator('#g-pos').textContent(), '2 / 12');
+  assert.equal((await kept('lexicon-chartae')).cards[card.id].b, 3);
+  // The step back restores the card as it was: new, with no record.
+  await page.locator('#g-undo').click();
+  assert.equal(await page.locator('#g-la b').textContent(), head);
+  assert.equal((await kept('lexicon-chartae')).cards[card.id], undefined);
+  // Every card of the deck has its picture and, where it has an entry, the entry's page.
+  const missing = await page.evaluate(async list => {
+    const absent = [];
+    for (const item of list) {
+      for (const address of [item.picture, ...(item.record ? [`c/${item.record}.html`] : [])]) {
+        if (!(await fetch(address, { method: 'HEAD' })).ok) absent.push(address);
+      }
+    }
+    return absent;
+  }, cards);
+  assert.deepEqual(missing, []);
+});
+
+test('the animal cards are spaced as the vocabulary is: a card marked Again comes back after ten minutes, not in the same round', async () => {
+  const context = await browser.newContext({ viewport: { width: 1280, height: 900 }, serviceWorkers: 'block', timezoneId: 'Europe/Sofia' });
+  const shared = page;
+  page = await context.newPage();
+  try {
+    const evening = sofia(16, '20:00');
+    await page.clock.setFixedTime(new Date(evening));
+    await openChartae();
+    await startRound();
+    const first = await chartaeRound();
+    // The first card is missed, the rest are known.
+    const seen = [];
+    for (let n = 0; n < 12; n++) {
+      seen.push((await kept('lexicon-chartae-round')).current);
+      await page.locator('#g-show').click();
+      await page.locator(n === 0 ? '#g-again' : '#g-got').click();
+    }
+    assert.deepEqual(seen, first, 'the missed card was not put back into the round');
+    assert.match(await page.locator('#g-end').textContent(), /^Round done: Got it 11, Again 1\./);
+    const progress = (await kept('lexicon-chartae')).cards;
+    assert.deepEqual(progress[first[0]], { b: 0, due: evening + 10 * 60e3, t: evening });
+    // A new card known at sight comes back in three or four days, at the start of a day (04:00).
+    for (const id of first.slice(1)) {
+      assert.equal(progress[id].b, 3, id);
+      assert.ok([sofia(19, '04:00'), sofia(20, '04:00')].includes(progress[id].due), id);
+    }
+    // The vocabulary's progress is another thing: nothing was written there.
+    assert.equal(await kept('lexicon-practice'), null);
+    await page.locator('#g-exit').click();
+    assert.match(await page.locator('#p-meter-text').textContent(), /^11 known · 1 learning · /);
+    // Five minutes on nothing is due; after ten the missed card is, and the next round has it once.
+    await page.clock.setFixedTime(new Date(evening + 5 * 60e3));
+    await openChartae(false);
+    assert.equal((await deckCount())[1], 0);
+    await page.clock.setFixedTime(new Date(evening + 11 * 60e3));
+    await openChartae(false);
+    assert.equal((await deckCount())[1], 1);
+    await startRound();
+    const second = await chartaeRound();
+    assert.equal(second.length, 12);
+    assert.equal(second.filter(id => id === first[0]).length, 1);
+    assert.deepEqual(second.filter(id => first.slice(1).includes(id)), [], 'the cards just learned are not due');
+    // Known this time, it goes to the next day.
+    while ((await kept('lexicon-chartae-round')).current !== first[0]) { await page.locator('#g-show').click(); await page.locator('#g-got').click(); }
+    assert.equal(await page.locator('#g-status').textContent(), 'lapsed');
+    await page.locator('#g-show').click();
+    assert.equal(await page.locator('#g-status').isVisible(), false);
+    await page.locator('#g-got').click();
+    const relearnt = (await kept('lexicon-chartae')).cards[first[0]];
+    assert.deepEqual([relearnt.b, relearnt.due], [2, sofia(17, '04:00')]);
+  } finally { page = shared; await context.close(); }
+});
+
+test('the animal cards: Latin unless English is chosen, a deck by kind, every card in a list, and a phone’s screen', async () => {
+  await openChartae(true, null);
+  assert.equal(await page.locator('h1').textContent(), 'Chartae animālium');
+  assert.equal(await page.evaluate(() => document.documentElement.lang), 'la');
+  assert.equal(await page.locator('#p-start').textContent(), 'Incipe');
+  assert.equal(await page.locator('#g-again span').textContent(), 'Iterum');
+  assert.equal(await page.locator('#g-got span').textContent(), 'Teneō');
+  assert.equal(await page.locator('header.site-top').getAttribute('lang'), 'en');
+  // The kinds: all of them unless some are chosen, and the choice is kept.
+  const kinds = page.locator('#c-groups button');
+  assert.equal(await kinds.count(), 7);
+  assert.equal(await kinds.first().getAttribute('aria-pressed'), 'true');
+  const total = Number(await kinds.first().locator('.count').textContent());
+  const counts = await kinds.locator('.count').evaluateAll(nodes => nodes.map(n => Number(n.textContent)));
+  assert.equal(counts.slice(1).reduce((a, b) => a + b, 0), total);
+  await page.locator('#c-groups button[data-group="longinqua"]').click();
+  assert.match(await page.locator('#p-count').textContent(), /^4 chartae · /);
+  await startRound();
+  assert.equal(await page.locator('#g-pos').textContent(), '1 / 4');
+  assert.equal(await page.locator('#g-deck').textContent(), 'Longinqua');
+  await page.locator('#g-close').click();
+  await page.reload();
+  await page.locator('#chartae:not([hidden])').waitFor();
+  assert.equal(await page.locator('#c-groups button[data-group="longinqua"]').getAttribute('aria-pressed'), 'true');
+  assert.equal(await page.locator('#p-start').textContent(), 'Perge');
+  // English, by the practice's own switch: the kinds' names change, the Latin of a card does not.
+  await page.locator('#p-lang button[data-lang="en"]').click();
+  assert.equal(await page.locator('h1').textContent(), 'Animal cards');
+  assert.equal(await page.locator('#c-groups button[data-group="longinqua"] span').first().textContent(), 'Far away');
+  assert.equal(await page.evaluate(() => localStorage.getItem('lexicon-practice-lang')), 'en');
+  await page.locator('#c-groups button[data-group=""]').click();
+  assert.deepEqual((await deckCount()).slice(0, 1), [total]);
+  // Every card, to look through: closed, it fetches no picture; open, each kind has its cards, with the way to the entry.
+  assert.equal(await page.locator('#c-gallery img').count(), total);
+  assert.equal(await page.locator('#c-gallery img:not([loading="lazy"])').count(), 0);
+  await page.locator('#c-all > summary').click();
+  assert.equal(await page.locator('#c-gallery .c-group').count(), 6);
+  assert.equal(await page.locator('#c-gallery .c-tile b[lang="la"]').count(), total);
+  assert.match(await page.locator('#c-gallery a.c-tile-link').first().getAttribute('href'), /^c\/[a-z-]+\.html$/);
+  // The display options reach the cards: without macrons, the Latin has none and the English is untouched.
+  await page.evaluate(() => localStorage.setItem('lexicon-macrons', 'off'));
+  await openChartae(false);
+  await page.locator('#c-all > summary').click();
+  assert.equal(await page.locator('#c-gallery .c-tile b').evaluateAll(nodes => nodes.filter(n => /[āēīōūȳ]/.test(n.textContent)).length), 0);
+  await startRound();
+  await page.locator('#g-show').click();
+  assert.doesNotMatch(await page.locator('#g-la').textContent() + await page.locator('#g-ex-la').textContent() + await page.locator('#g-food').textContent(), /[āēīōūȳĀĒĪŌŪ]/);
+  await page.locator('#g-close').click();
+  await page.evaluate(() => localStorage.removeItem('lexicon-macrons'));
+  // On a phone: nothing sideways, the layer is the screen, the buttons are for a thumb.
+  const sizes = selector => page.evaluate(sel => [...document.querySelectorAll(sel)]
+    .filter(el => el.getClientRects().length && getComputedStyle(el).visibility !== 'hidden')
+    .map(el => [el.textContent.trim().slice(0, 24) || el.id, Math.round(el.getBoundingClientRect().height)]), selector);
+  for (const [width, height] of [[390, 760], [320, 568]]) {
+    await page.setViewportSize({ width, height });
+    for (const language of ['la', 'en']) {
+      await openChartae(true, language);
+      await page.locator('#c-all > summary').click();
+      assert.equal(await overflows(), false, `the lobby overflows at ${width}px (${language})`);
+      assert.deepEqual((await sizes('.chartae button, .chartae summary, .chartae a')).filter(([, h]) => h < 44), [], `the lobby at ${width}px (${language})`);
+      assert.ok((await page.locator('#p-start').boundingBox()).height >= 52);
+      await startRound();
+      const check = async what => {
+        assert.equal(await overflows(), false, `${what} overflows at ${width}px (${language})`);
+        const box = await page.locator('#p-game').boundingBox();
+        assert.deepEqual([box.x, box.y, box.width, box.height], [0, 0, width, height], `${what}: the layer is the whole screen`);
+        assert.deepEqual((await sizes('#p-game button, #p-game a')).filter(([, h]) => h < 44), [], `${what} at ${width}px (${language})`);
+        assert.deepEqual((await sizes('#p-game .pbtn')).filter(([, h]) => h < 52), [], `${what}: its buttons are 52px or more`);
+        const actions = await page.locator('.pgame-actions').boundingBox(), stage = await page.locator('#g-stage').boundingBox();
+        assert.ok(actions.y + actions.height <= height + 1 && stage.y + stage.height <= actions.y + 1, what);
+        assert.ok((await page.locator('#g-card').boundingBox()).width <= width - 24);
+      };
+      await check('the front of a card');
+      // The picture runs from edge to edge of its card.
+      const picture = await page.locator('#g-picture').boundingBox(), card = await page.locator('#g-card').boundingBox();
+      assert.ok(Math.abs(picture.width - card.width) <= 3 && Math.abs(picture.y - card.y) <= 2);
+      for (let n = 0; n < 12; n++) {
+        await page.locator('#g-show').click();
+        if (n < 3) await check('the back of a card');
+        await page.locator(n % 2 ? '#g-again' : '#g-got').click();
+      }
+      await check('the end of a round');
+      await page.locator('#g-exit').click();
+    }
+  }
+  await page.evaluate(keys => keys.forEach(key => localStorage.removeItem(key)), CHARTAE_KEYS);
 });

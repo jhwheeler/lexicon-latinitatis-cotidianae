@@ -792,6 +792,7 @@ class BuildTests(unittest.TestCase):
         for path in ('index.html', 'k/sermo.html', 'assets/search-data.js', 'assets/search.js', 'assets/lexicon.css',
                      'assets/fonts/lexicon-serif-400.woff2', 'manifest.webmanifest',
                      'practice.html', 'hora.html', 'assets/practice.js', 'assets/practice-data.js',
+                     'chartae.html', 'assets/chartae.js', 'assets/chartae-data.js',
                      'review.html', 'assets/review.js'):
             self.assertIn(path, files)
         self.assertTrue(all(path in outputs for path in files))
@@ -911,6 +912,82 @@ class BuildTests(unittest.TestCase):
 
     # Practice ----------------------------------------------------------------------------
 
+    def test_the_animal_cards_have_their_pictures_their_credits_and_the_spacing_of_the_practice(self):
+        """chartae.html (Jack, 20 November 2026): picture cards of animals, each with its Latin
+        name, a sentence, what it eats, and the photographer's credit, spaced as the vocabulary
+        practice spaces its cards (Jack, the same day: "do we not have a way of repeating in our
+        other game already?")."""
+        outputs = builder.build_site(self.root)
+        script = outputs['assets/chartae-data.js']
+        self.assertTrue(script.endswith(';\n') and 'window.lexiconChartae = ' in script)
+        data = json.loads(script[script.index('{'):script.rindex('}') + 1])
+        source = self.read('data/chartae.json')
+        self.assertEqual([card['id'] for card in data['cards']], [card['id'] for card in source['cards']])
+        self.assertEqual([group['id'] for group in data['groups']], [group['id'] for group in source['groups']])
+        self.assertIn(f'Picture cards of {len(data["cards"])} animals', outputs['chartae.html'])
+        linked = 0
+        for card in data['cards']:
+            with self.subTest(card=card['id']):
+                self.assertEqual(card['picture'], f'chartae/{card["id"]}.jpg')
+                self.assertEqual(outputs[card['picture']][:3], b'\xff\xd8\xff')   # a JPEG
+                self.assertTrue(card['latin'].startswith(card['latin'].split(',')[0]) and ',' in card['latin'])
+                if 'record' in card:
+                    linked += 1
+                    self.assertIn(f'c/{card["record"]}.html', outputs)
+                # Every picture is one that anyone may reuse, and says whose it is.
+                image = card['image']
+                self.assertIn(image['licence'], builder.PICTURE_LICENCES)
+                self.assertEqual(image['licence_url'], builder.PICTURE_LICENCES[image['licence']])
+                self.assertTrue(image['author'] and image['page'].startswith('https://commons.wikimedia.org/wiki/File:'))
+        self.assertGreater(linked, len(data['cards']) * .9)
+        # The pictures are the cards' and no others, and none is saved when the lexicon installs.
+        self.assertEqual(sorted(path for path in outputs if path.startswith('chartae/')), sorted(card['picture'] for card in data['cards']))
+        files = json.loads(re.search(r'const FILES = (\[.*?\]);', outputs['sw.js'])[1])
+        self.assertFalse(any(path.startswith('chartae/') for path in files))
+        # A sentence taken from the readers is shown as one of ours, and the readers are not named.
+        readers = [card['id'] for card in source['cards'] if builder.composed({'source': card['source']})]
+        self.assertTrue(readers)
+        shown = {card['id']: card for card in data['cards']}
+        self.assertTrue(all(shown[key]['source'] == '' for key in readers))
+        self.assertTrue(all(shown[card['id']]['source'] == card['source'] for card in source['cards'] if card['id'] not in readers))
+        for path in ('chartae.html', 'assets/chartae-data.js', 'assets/chartae.js'):
+            self.assertNotRegex(outputs[path], r'Libellus|Theodōrus et pater|libell[īi]', path)
+        # The spacing is the vocabulary practice's own: the same constants and the same functions.
+        practice, game = outputs['assets/practice.js'], outputs['assets/chartae.js']
+        for start in ('  const ROUND = ', '  const ROUND_DUE_MORE = ', '  const AGAIN_WAIT = ', '  const WAIT_DAYS = '):
+            line = next(line for line in practice.splitlines() if line.startswith(start))
+            self.assertIn(line + '\n', game, start)
+        for name in ('dayStart', 'dueFrom', 'boxAfter'):
+            body = re.search(r'^  function %s\(.*?^  \}\n' % name, practice, re.S | re.M)[0]
+            self.assertIn(body, game, name)
+        self.assertIn("progress: 'lexicon-chartae'", game)
+        self.assertIn("lang: 'lexicon-practice-lang'", game)
+        # The page: the site's header and footer, the two marks of the practice, and the ways to and from it.
+        page = outputs['chartae.html']
+        self.assertEqual(re.findall(r'<script src="([^"]+)"', page), ['assets/lexicon.js', 'assets/chartae-data.js', 'assets/chartae.js'])
+        self.assertIn('<a href="how-practice-works.html" hreflang="en" data-t="how">How the practice works</a>', page)
+        self.assertLess(page.index('class="pbtn pbtn-again" id="g-again"'), page.index('class="pbtn pbtn-got" id="g-got"'))
+        self.assertIn('<a href="practice.html" data-t="vocabulary">Vocabulary</a>', page)
+        self.assertIn('<a href="chartae.html">', outputs['practice.html'])
+        # The builder refuses a card whose entry, licence or picture is not what it says.
+        cards = self.read('data/chartae.json')
+        broken = json.loads(json.dumps(cards)); broken['cards'][0]['record'] = 'no-such-record'
+        self.write('data/chartae.json', broken)
+        with self.assertRaisesRegex(ValueError, 'no record no-such-record'):
+            builder.build_site(self.root)
+        broken = json.loads(json.dumps(cards)); broken['cards'][0]['image']['licence'] = 'CC BY-NC 4.0'
+        self.write('data/chartae.json', broken)
+        with self.assertRaisesRegex(ValueError, 'the licence CC BY-NC 4.0 is not one of'):
+            builder.build_site(self.root)
+        self.write('data/chartae.json', cards)
+        (self.root / 'src/chartae/stray.jpg').write_bytes(b'x')
+        with self.assertRaisesRegex(ValueError, 'files that no card uses'):
+            builder.build_site(self.root)
+        (self.root / 'src/chartae/stray.jpg').unlink()
+        (self.root / f'src/chartae/{cards["cards"][0]["id"]}.jpg').unlink()
+        with self.assertRaisesRegex(ValueError, 'is missing'):
+            builder.build_site(self.root)
+
     def test_practice_cards_are_one_per_record_with_kind_and_sources(self):
         sense = self.record('sheet-of-paper')
         outputs = builder.build_site(self.root)
@@ -975,7 +1052,8 @@ class BuildTests(unittest.TestCase):
                 page = outputs[path]
                 self.assertIn(f'<a href="{up}practice.html">Practice</a>', page[page.rindex('<footer'):])
                 self.assertNotIn('practice.html', page[page.index('<header class="site-top'):page.index('</header>')])
-        for path in ('practice.html', 'hora.html'):
+        self.assertIn('<a href="chartae.html"><span class="toc-la" lang="la">Chartae animālium</span>', outputs['index.html'])
+        for path in ('practice.html', 'hora.html', 'chartae.html'):
             self.assertIn(f'cotidianae/{path}</loc>', outputs['sitemap.xml'])
             self.assertIn('<link rel="manifest" href="manifest.webmanifest">', outputs[path])
         # The clock asks nothing of other sites: its only address is its own.

@@ -275,17 +275,17 @@ function judge(forms, value, strict) {
 
 const T={
  la:{eyebrow:GAME.eyebrow.la,task:'Lacūnās explē.',check:'Probā',reveal:'Ostende',reset:'Dēnuō',next:'Proxima interrogātiō',
-   keys:'Apicēs',keysLabel:'Litterae cum apicibus',hints:'Prōnōmina ostendere',strict:'Apicēs exigere',
+   keys:'Apicēs',keysLabel:'Litterae cum apicibus',hints:GAME.hints.la,strict:'Apicēs exigere',
    score:(n,m)=>`Rēctē: ${n} ex ${m}`,wrong:'Nōndum. Iterum temptā.',apex:'Fōrma rēcta est, apicēs dēsunt.',
    perfect:'Euge! Omnia ipse explēvistī.',finished:(n,m)=>`Perfectum est; ${n} ex ${m} ipse explēvistī.`,
-   tabs:'Interrogātiōnēs',done:'perfectum',gap:'lacūna',optH:'Optiōnēs',langH:'Lingua',
+   tabs:'Interrogātiōnēs',done:'perfectum',gap:'lacūna',note:'nota',optH:'Optiōnēs',langH:'Lingua',
    back:'Ad exercitātiōnem',links:'Ad lexicon',practice:'Vocābulōrum exercitātiō',
    showForms:'Mōnstrā fōrmās',hideForms:'Cēlā fōrmās'},
  en:{eyebrow:GAME.eyebrow.en,task:'Fill the gaps.',check:'Check',reveal:'Show',reset:'Start over',next:'Next question',
-   keys:'Macrons',keysLabel:'Letters with macrons',hints:'Show the pronouns',strict:'Require macrons',
+   keys:'Macrons',keysLabel:'Letters with macrons',hints:GAME.hints.en,strict:'Require macrons',
    score:(n,m)=>`Right: ${n} of ${m}`,wrong:'Not yet. Try again.',apex:'The form is right; the macrons are missing.',
    perfect:'Well done! You filled them all yourself.',finished:(n,m)=>`Done; you filled ${n} of ${m} yourself.`,
-   tabs:'Questions',done:'done',gap:'gap',optH:'Options',langH:'Language',
+   tabs:'Questions',done:'done',gap:'gap',note:'hint',optH:'Options',langH:'Language',
    back:'Back to practice',links:'To the lexicon',practice:'Vocabulary practice',
    showForms:'Show the forms',hideForms:'Hide the forms'}
 };
@@ -353,10 +353,15 @@ function renderTabs() {
 
 function inputs() { return Array.from($prose.querySelectorAll("input")); }
 
-function gapLabel(i, hint) { return t("gap") + " " + (i + 1) + (hint ? " (" + hint + ")" : ""); }
+/* "gap 3, hint: 5", "lacūna 3, nota: 1 sg. perf.": the hint is named as such, so that a number or a
+   tense reads as a hint and not as a count. */
+function gapLabel(i, hint) { return t("gap") + " " + (i + 1) + (hint ? ", " + t("note") + ": " + hint : ""); }
 
 function renderRound() {
   const r = rounds[current];
+  /* A table of forms that belongs to a round (one verb of Heri, hodiē, crās) is shown only while that
+     round is open; the others always. */
+  el("forms-body").querySelectorAll("table[data-round]").forEach(table => { table.hidden = table.dataset.round !== r.id; });
   $q.textContent = r.q;
   $prose.textContent = "";
   let n = 0;
@@ -476,7 +481,6 @@ function focusNextOpen(from) {
 
 function go(i) {
   current = (i + rounds.length) % rounds.length;
-  el("forms").open = false;
   renderTabs();
   renderRound();
   try { history.replaceState(null, "", "#" + rounds[current].id); } catch (e) {}
@@ -594,14 +598,16 @@ function fromHash() {
 }
 window.addEventListener("hashchange", () => {
   const i = fromHash();
-  if (i !== current) { current = i; el("forms").open = false; renderTabs(); renderRound(); }
+  if (i !== current) { current = i; renderTabs(); renderRound(); }
 });
 /* The table of forms, behind "Mōnstrā fōrmās" (Jack's words, 20 November 2026; "Cēlā fōrmās" and the
    English are Claude's): the game's tables, the first cell of a row its label. The forms, the captions,
-   and the heads are Latin in both interfaces. It opens closed on every visit and every round, and
-   whether it is open is not kept. The tables are Claude's compilation, for Jack's review. */
+   and the heads are Latin in both interfaces. It opens closed on every visit, and whether it is open is
+   not kept; a change of round leaves it as it is, and a table that belongs to a round follows the round.
+   The tables are Claude's compilation, for Jack's review. */
 GAME.tabulae.forEach(t => {
   const table = document.createElement("table");
+  if (t.round) table.dataset.round = t.round;
   if (t.caption) { const c = document.createElement("caption"); c.textContent = t.caption; table.appendChild(c); }
   const thead = document.createElement("thead"), hr = document.createElement("tr");
   t.heads.forEach(h => { const th = document.createElement("th"); th.scope = "col"; th.textContent = h; hr.appendChild(th); });

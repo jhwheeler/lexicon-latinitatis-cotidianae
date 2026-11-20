@@ -1,0 +1,659 @@
+{
+  "id": "heri-hodie-cras",
+  "order": 5,
+  "file": "heri-hodie-cras.html",
+  "name": "Heri, hodiē, crās",
+  "prefix": "hc-",
+  "description": "Heri, hodiē, crās: a game of the forms of the Latin verb, the six tenses of the indicative active of eight verbs (ambulō, videō, legō, veniō, sum, eō, volō, ferō). Fill the gaps, in Latin or with an English interface.",
+  "eyebrow": {
+    "la": "Lūdus fōrmārum verbī",
+    "en": "A game of the forms of the verb"
+  },
+  "hints": {
+    "la": "Tempora ostendere",
+    "en": "Show the tenses"
+  },
+  "tabulae": [
+    {
+      "round": "ambulo",
+      "caption": "ambulō, ambulāre, ambulāvī, ambulātum",
+      "heads": [
+        "Persōna",
+        "Praes.",
+        "Imperf.",
+        "Fut.",
+        "Perf.",
+        "Plūsq.",
+        "Fut. perf."
+      ],
+      "rows": [
+        [
+          "1 sg.",
+          "ambulō",
+          "ambulābam",
+          "ambulābō",
+          "ambulāvī",
+          "ambulāveram",
+          "ambulāverō"
+        ],
+        [
+          "2 sg.",
+          "ambulās",
+          "ambulābās",
+          "ambulābis",
+          "ambulāvistī",
+          "ambulāverās",
+          "ambulāveris"
+        ],
+        [
+          "3 sg.",
+          "ambulat",
+          "ambulābat",
+          "ambulābit",
+          "ambulāvit",
+          "ambulāverat",
+          "ambulāverit"
+        ],
+        [
+          "1 pl.",
+          "ambulāmus",
+          "ambulābāmus",
+          "ambulābimus",
+          "ambulāvimus",
+          "ambulāverāmus",
+          "ambulāverimus"
+        ],
+        [
+          "2 pl.",
+          "ambulātis",
+          "ambulābātis",
+          "ambulābitis",
+          "ambulāvistis",
+          "ambulāverātis",
+          "ambulāveritis"
+        ],
+        [
+          "3 pl.",
+          "ambulant",
+          "ambulābant",
+          "ambulābunt",
+          "ambulāvērunt",
+          "ambulāverant",
+          "ambulāverint"
+        ]
+      ]
+    },
+    {
+      "round": "video",
+      "caption": "videō, vidēre, vīdī, vīsum",
+      "heads": [
+        "Persōna",
+        "Praes.",
+        "Imperf.",
+        "Fut.",
+        "Perf.",
+        "Plūsq.",
+        "Fut. perf."
+      ],
+      "rows": [
+        [
+          "1 sg.",
+          "videō",
+          "vidēbam",
+          "vidēbō",
+          "vīdī",
+          "vīderam",
+          "vīderō"
+        ],
+        [
+          "2 sg.",
+          "vidēs",
+          "vidēbās",
+          "vidēbis",
+          "vīdistī",
+          "vīderās",
+          "vīderis"
+        ],
+        [
+          "3 sg.",
+          "videt",
+          "vidēbat",
+          "vidēbit",
+          "vīdit",
+          "vīderat",
+          "vīderit"
+        ],
+        [
+          "1 pl.",
+          "vidēmus",
+          "vidēbāmus",
+          "vidēbimus",
+          "vīdimus",
+          "vīderāmus",
+          "vīderimus"
+        ],
+        [
+          "2 pl.",
+          "vidētis",
+          "vidēbātis",
+          "vidēbitis",
+          "vīdistis",
+          "vīderātis",
+          "vīderitis"
+        ],
+        [
+          "3 pl.",
+          "vident",
+          "vidēbant",
+          "vidēbunt",
+          "vīdērunt",
+          "vīderant",
+          "vīderint"
+        ]
+      ]
+    },
+    {
+      "round": "lego",
+      "caption": "legō, legere, lēgī, lēctum",
+      "heads": [
+        "Persōna",
+        "Praes.",
+        "Imperf.",
+        "Fut.",
+        "Perf.",
+        "Plūsq.",
+        "Fut. perf."
+      ],
+      "rows": [
+        [
+          "1 sg.",
+          "legō",
+          "legēbam",
+          "legam",
+          "lēgī",
+          "lēgeram",
+          "lēgerō"
+        ],
+        [
+          "2 sg.",
+          "legis",
+          "legēbās",
+          "legēs",
+          "lēgistī",
+          "lēgerās",
+          "lēgeris"
+        ],
+        [
+          "3 sg.",
+          "legit",
+          "legēbat",
+          "leget",
+          "lēgit",
+          "lēgerat",
+          "lēgerit"
+        ],
+        [
+          "1 pl.",
+          "legimus",
+          "legēbāmus",
+          "legēmus",
+          "lēgimus",
+          "lēgerāmus",
+          "lēgerimus"
+        ],
+        [
+          "2 pl.",
+          "legitis",
+          "legēbātis",
+          "legētis",
+          "lēgistis",
+          "lēgerātis",
+          "lēgeritis"
+        ],
+        [
+          "3 pl.",
+          "legunt",
+          "legēbant",
+          "legent",
+          "lēgērunt",
+          "lēgerant",
+          "lēgerint"
+        ]
+      ]
+    },
+    {
+      "round": "venio",
+      "caption": "veniō, venīre, vēnī, ventum",
+      "heads": [
+        "Persōna",
+        "Praes.",
+        "Imperf.",
+        "Fut.",
+        "Perf.",
+        "Plūsq.",
+        "Fut. perf."
+      ],
+      "rows": [
+        [
+          "1 sg.",
+          "veniō",
+          "veniēbam",
+          "veniam",
+          "vēnī",
+          "vēneram",
+          "vēnerō"
+        ],
+        [
+          "2 sg.",
+          "venīs",
+          "veniēbās",
+          "veniēs",
+          "vēnistī",
+          "vēnerās",
+          "vēneris"
+        ],
+        [
+          "3 sg.",
+          "venit",
+          "veniēbat",
+          "veniet",
+          "vēnit",
+          "vēnerat",
+          "vēnerit"
+        ],
+        [
+          "1 pl.",
+          "venīmus",
+          "veniēbāmus",
+          "veniēmus",
+          "vēnimus",
+          "vēnerāmus",
+          "vēnerimus"
+        ],
+        [
+          "2 pl.",
+          "venītis",
+          "veniēbātis",
+          "veniētis",
+          "vēnistis",
+          "vēnerātis",
+          "vēneritis"
+        ],
+        [
+          "3 pl.",
+          "veniunt",
+          "veniēbant",
+          "venient",
+          "vēnērunt",
+          "vēnerant",
+          "vēnerint"
+        ]
+      ]
+    },
+    {
+      "round": "sum",
+      "caption": "sum, esse, fuī",
+      "heads": [
+        "Persōna",
+        "Praes.",
+        "Imperf.",
+        "Fut.",
+        "Perf.",
+        "Plūsq.",
+        "Fut. perf."
+      ],
+      "rows": [
+        [
+          "1 sg.",
+          "sum",
+          "eram",
+          "erō",
+          "fuī",
+          "fueram",
+          "fuerō"
+        ],
+        [
+          "2 sg.",
+          "es",
+          "erās",
+          "eris",
+          "fuistī",
+          "fuerās",
+          "fueris"
+        ],
+        [
+          "3 sg.",
+          "est",
+          "erat",
+          "erit",
+          "fuit",
+          "fuerat",
+          "fuerit"
+        ],
+        [
+          "1 pl.",
+          "sumus",
+          "erāmus",
+          "erimus",
+          "fuimus",
+          "fuerāmus",
+          "fuerimus"
+        ],
+        [
+          "2 pl.",
+          "estis",
+          "erātis",
+          "eritis",
+          "fuistis",
+          "fuerātis",
+          "fueritis"
+        ],
+        [
+          "3 pl.",
+          "sunt",
+          "erant",
+          "erunt",
+          "fuērunt",
+          "fuerant",
+          "fuerint"
+        ]
+      ]
+    },
+    {
+      "round": "eo",
+      "caption": "eō, īre, iī, itum",
+      "heads": [
+        "Persōna",
+        "Praes.",
+        "Imperf.",
+        "Fut.",
+        "Perf.",
+        "Plūsq.",
+        "Fut. perf."
+      ],
+      "rows": [
+        [
+          "1 sg.",
+          "eō",
+          "ībam",
+          "ībō",
+          "iī",
+          "ieram",
+          "ierō"
+        ],
+        [
+          "2 sg.",
+          "īs",
+          "ībās",
+          "ībis",
+          "īstī",
+          "ierās",
+          "ieris"
+        ],
+        [
+          "3 sg.",
+          "it",
+          "ībat",
+          "ībit",
+          "iit",
+          "ierat",
+          "ierit"
+        ],
+        [
+          "1 pl.",
+          "īmus",
+          "ībāmus",
+          "ībimus",
+          "iimus",
+          "ierāmus",
+          "ierimus"
+        ],
+        [
+          "2 pl.",
+          "ītis",
+          "ībātis",
+          "ībitis",
+          "īstis",
+          "ierātis",
+          "ieritis"
+        ],
+        [
+          "3 pl.",
+          "eunt",
+          "ībant",
+          "ībunt",
+          "iērunt",
+          "ierant",
+          "ierint"
+        ]
+      ]
+    },
+    {
+      "round": "volo",
+      "caption": "volō, velle, voluī",
+      "heads": [
+        "Persōna",
+        "Praes.",
+        "Imperf.",
+        "Fut.",
+        "Perf.",
+        "Plūsq.",
+        "Fut. perf."
+      ],
+      "rows": [
+        [
+          "1 sg.",
+          "volō",
+          "volēbam",
+          "volam",
+          "voluī",
+          "volueram",
+          "voluerō"
+        ],
+        [
+          "2 sg.",
+          "vīs",
+          "volēbās",
+          "volēs",
+          "voluistī",
+          "voluerās",
+          "volueris"
+        ],
+        [
+          "3 sg.",
+          "vult",
+          "volēbat",
+          "volet",
+          "voluit",
+          "voluerat",
+          "voluerit"
+        ],
+        [
+          "1 pl.",
+          "volumus",
+          "volēbāmus",
+          "volēmus",
+          "voluimus",
+          "voluerāmus",
+          "voluerimus"
+        ],
+        [
+          "2 pl.",
+          "vultis",
+          "volēbātis",
+          "volētis",
+          "voluistis",
+          "voluerātis",
+          "volueritis"
+        ],
+        [
+          "3 pl.",
+          "volunt",
+          "volēbant",
+          "volent",
+          "voluērunt",
+          "voluerant",
+          "voluerint"
+        ]
+      ]
+    },
+    {
+      "round": "fero",
+      "caption": "ferō, ferre, tulī, lātum",
+      "heads": [
+        "Persōna",
+        "Praes.",
+        "Imperf.",
+        "Fut.",
+        "Perf.",
+        "Plūsq.",
+        "Fut. perf."
+      ],
+      "rows": [
+        [
+          "1 sg.",
+          "ferō",
+          "ferēbam",
+          "feram",
+          "tulī",
+          "tuleram",
+          "tulerō"
+        ],
+        [
+          "2 sg.",
+          "fers",
+          "ferēbās",
+          "ferēs",
+          "tulistī",
+          "tulerās",
+          "tuleris"
+        ],
+        [
+          "3 sg.",
+          "fert",
+          "ferēbat",
+          "feret",
+          "tulit",
+          "tulerat",
+          "tulerit"
+        ],
+        [
+          "1 pl.",
+          "ferimus",
+          "ferēbāmus",
+          "ferēmus",
+          "tulimus",
+          "tulerāmus",
+          "tulerimus"
+        ],
+        [
+          "2 pl.",
+          "fertis",
+          "ferēbātis",
+          "ferētis",
+          "tulistis",
+          "tulerātis",
+          "tuleritis"
+        ],
+        [
+          "3 pl.",
+          "ferunt",
+          "ferēbant",
+          "ferent",
+          "tulērunt",
+          "tulerant",
+          "tulerint"
+        ]
+      ]
+    }
+  ],
+  "rounds": [
+    {
+      "id": "ambulo",
+      "tab": "ambulō",
+      "q": "ambulō, ambulāre, ambulāvī, ambulātum",
+      "text": [
+        "Ego hodiē in hortō {ambulō|1 sg. praes.}. Heri ad flūmen {ambulāvī|1 sg. perf.}; crās in silvā {ambulābō|1 sg. fut.}. ",
+        "Ōlim, cum puer eram, cotīdiē cum avō {ambulābam|1 sg. imperf.}. Tū cūr nōn {ambulās|2 sg. praes.}? ",
+        "Theodōrus heri nōbīscum {ambulāvit|3 sg. perf.}, et crās iterum {ambulābit|3 sg. fut.}. ",
+        "Nōs semper māne {ambulāmus|1 pl. praes.}; vōs vesperī {ambulātis|2 pl. praes.}. Avus et avia ōlim multum {ambulābant|3 pl. imperf.}. ",
+        "Fessus eram, quia tōtum diem {ambulāveram|1 sg. plūsq.}. Cum hūc redieris, ego jam mīlle passūs {ambulāverō|1 sg. fut. perf.}."
+      ]
+    },
+    {
+      "id": "video",
+      "tab": "videō",
+      "q": "videō, vidēre, vīdī, vīsum",
+      "text": [
+        "Ego nunc montem {videō|1 sg. praes.}. Heri mare {vīdī|1 sg. perf.}; crās urbem {vidēbō|1 sg. fut.}. Tū quid {vidēs|2 sg. praes.}? ",
+        "Theodōrus heri aquilam {vīdit|3 sg. perf.}. Ōlim ex hāc fenestrā silvam {vidēbāmus|1 pl. imperf.}; nunc domōs tantum {vidēmus|1 pl. praes.}. ",
+        "Vōs crās avum {vidēbitis|2 pl. fut.}. Puerī numquam anteā elephantum {vīderant|3 pl. plūsq.}. ",
+        "Sī canem meum {vīderis|2 sg. fut. perf.}, rīdēbis."
+      ]
+    },
+    {
+      "id": "lego",
+      "tab": "legō",
+      "q": "legō, legere, lēgī, lēctum",
+      "text": [
+        "Ego nunc librum {legō|1 sg. praes.}. Heri epistulam tuam {lēgī|1 sg. perf.}; crās fābulam {legam|1 sg. fut.}. Tū nihil {legis|2 sg. praes.}? ",
+        "Theodōrus nōndum {legit|3 sg. praes.}, sed mox {leget|3 sg. fut.}. Avus heri tōtum librum {lēgit|3 sg. perf.}. ",
+        "Ōlim vesperī carmina {legēbāmus|1 pl. imperf.}. Vōs crās quid {legētis|2 pl. fut.}? ",
+        "Discipulī librum jam {lēgerant|3 pl. plūsq.}, cum magister intrāvit. Cum hunc librum {lēgerō|1 sg. fut. perf.}, tibi dabō."
+      ]
+    },
+    {
+      "id": "venio",
+      "tab": "veniō",
+      "q": "veniō, venīre, vēnī, ventum",
+      "text": [
+        "Ego nunc ad tē {veniō|1 sg. praes.}. Heri sērō {vēnī|1 sg. perf.}; crās mātūrē {veniam|1 sg. fut.}. Tū unde {venīs|2 sg. praes.}? ",
+        "Theodōrus heri cum mātre {vēnit|3 sg. perf.}; hodiē sōlus {venit|3 sg. praes.}. Ōlim hūc cotīdiē {veniēbāmus|1 pl. imperf.}. ",
+        "Vōs quandō {veniētis|2 pl. fut.}? Amīcī nōndum {vēnerant|3 pl. plūsq.}, cum cēna parāta est. ",
+        "Sī crās {vēneris|2 sg. fut. perf.}, gaudēbō."
+      ]
+    },
+    {
+      "id": "sum",
+      "tab": "sum",
+      "q": "sum, esse, fuī",
+      "text": [
+        "Ego nunc domī {sum|1 sg. praes.}. Heri in urbe {fuī|1 sg. perf.}; crās rūrī {erō|1 sg. fut.}. Tū ubi {es|2 sg. praes.}? ",
+        "Ōlim hīc silva {erat|3 sg. imperf.}; nunc domus {est|3 sg. praes.}. Nōs amīcī {sumus|1 pl. praes.}, et semper {erimus|1 pl. fut.}. ",
+        "Vōs ubi heri {fuistis|2 pl. perf.}? Puerī fessī {erant|3 pl. imperf.}, quia tōtum diem in silvā {fuerant|3 pl. plūsq.}. ",
+        "Sī crās domī {fueris|2 sg. fut. perf.}, tē vīsam."
+      ]
+    },
+    {
+      "id": "eo",
+      "tab": "eō",
+      "q": "eō, īre, iī, itum",
+      "text": [
+        "Ego nunc domum {eō|1 sg. praes.}. Heri ad forum {iī/īvī|1 sg. perf.}; crās rūs {ībō|1 sg. fut.}. Tū quō {īs|2 sg. praes.}? ",
+        "Theodōrus ad avum {it|3 sg. praes.}; heri ad mare {iit/īvit|3 sg. perf.}. Ōlim pedibus in lūdum {ībāmus|1 pl. imperf.}. ",
+        "Vōs crās nōbīscum {ībitis|2 pl. fut.}? Puerī jam cubitum {ierant/īverant|3 pl. plūsq.}, cum pater rediit. ",
+        "Parentēs hodiē in urbem {eunt|3 pl. praes.}."
+      ]
+    },
+    {
+      "id": "volo",
+      "tab": "volō",
+      "q": "volō, velle, voluī",
+      "text": [
+        "Ego dormīre {volō|1 sg. praes.}. Tū quid {vīs|2 sg. praes.}? Theodōrus lūdere {vult|3 sg. praes.}. ",
+        "Nōs cēnāre {volumus|1 pl. praes.}; vōs quid {vultis|2 pl. praes.}? Puerī natāre {volunt|3 pl. praes.}. ",
+        "Heri īre {voluī|1 sg. perf.}, sed nōn potuī. Ōlim nauta esse {volēbam|1 sg. imperf.}. Crās quid facere {volēs|2 sg. fut.}?"
+      ]
+    },
+    {
+      "id": "fero",
+      "tab": "ferō",
+      "q": "ferō, ferre, tulī, lātum",
+      "text": [
+        "Ego saccum {ferō|1 sg. praes.}. Tū quid {fers|2 sg. praes.}? Theodōrus pilam {fert|3 sg. praes.}. ",
+        "Nōs aquam {ferimus|1 pl. praes.}, vōs pānem {fertis|2 pl. praes.}; puerī nihil {ferunt|3 pl. praes.}. ",
+        "Heri māter dōna {tulit|3 sg. perf.}. Crās ego saccum tuum {feram|1 sg. fut.}. Ōlim servī onera {ferēbant|3 pl. imperf.}."
+      ]
+    }
+  ]
+}

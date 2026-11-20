@@ -2376,13 +2376,17 @@ test('the practice lobby links to How the practice works, in Latin and in Englis
 
 test('practice is reached from the front page and from every footer, never from the header', async () => {
   const links = page.locator('.plist a');
-  assert.deepEqual(await links.evaluateAll(nodes => nodes.map(n => n.getAttribute('href'))), ['practice.html', 'hora.html', 'chartae.html', 'theodorus.html', 'quis-pulsat.html']);
+  assert.deepEqual(await links.evaluateAll(nodes => nodes.map(n => n.getAttribute('href'))), ['practice.html', 'hora.html', 'chartae.html', ...GAP_GAMES.map(game => game.file)]);
+  // The gap games are one item, «Lacūnae», with the games' names as links (the coordinating session's choice).
+  assert.equal(await page.locator('.plist-group .toc-la').textContent(), 'Lacūnae');
+  assert.deepEqual(await page.locator('.plist-games a').allTextContents(), GAP_GAMES.map(game => game.name));
   const practice = await page.locator('#practice-title').boundingBox(), contents = await page.locator('#contents-title').boundingBox();
   assert.ok(practice.y < contents.y, 'above the list of categories');
   await links.first().click();
   await page.waitForURL(/practice\.html$/);
   assert.equal(await page.locator('h1').textContent(), 'Exercitātiō');
-  assert.deepEqual(await page.locator('.p-more a').evaluateAll(nodes => nodes.map(n => n.getAttribute('href'))), ['hora.html', 'chartae.html', 'theodorus.html', 'quis-pulsat.html']);
+  assert.deepEqual(await page.locator('.p-more a').evaluateAll(nodes => nodes.map(n => n.getAttribute('href'))), ['hora.html', 'chartae.html', ...GAP_GAMES.map(game => game.file)]);
+  assert.equal(await page.locator('.p-gaps [data-t="gaps"]').textContent(), 'Lacūnae:');
   await page.locator('.p-more a[href="hora.html"]').click();
   await page.waitForURL(/hora\.html$/);
   await page.goBack();
@@ -3620,13 +3624,13 @@ test('Quis pulsat? takes i for j and gives the house spelling, takes alternative
   assert.deepEqual(keys, { 'qp-strict': 'false', 'uet-done': '{"ubi":true}', 'uet-hints': 'true' });
   // The foot links lead to the other practice pages, the sibling game among them.
   assert.deepEqual(await game.locator('.links a').evaluateAll(nodes => nodes.map(n => n.getAttribute('href'))),
-    ['index.html', 'practice.html', 'hora.html', 'chartae.html', 'theodorus.html']);
+    ['index.html', 'practice.html', 'hora.html', 'chartae.html', ...GAP_GAMES.map(g => g.file).filter(file => file !== 'quis-pulsat.html')]);
   await game.locator('.links a[href="theodorus.html"]').click();
   await game.waitForURL(/theodorus\.html$/);
   assert.equal(await game.locator('#opt-hints').isChecked(), true);
   assert.equal(await game.locator('.tab[data-id="ubi"] .done').count(), 1);
   assert.deepEqual(await game.locator('.links a').evaluateAll(nodes => nodes.map(n => n.getAttribute('href'))),
-    ['index.html', 'practice.html', 'hora.html', 'chartae.html', 'quis-pulsat.html']);
+    ['index.html', 'practice.html', 'hora.html', 'chartae.html', ...GAP_GAMES.map(g => g.file).filter(file => file !== 'theodorus.html')]);
   await game.evaluate(() => { for (const key of Object.keys(localStorage)) if (/^(qp|uet)-/.test(key)) localStorage.removeItem(key); });
   await context.close();
 });
@@ -3659,17 +3663,34 @@ test('the gap games show their table of forms on request, closed at first, and i
     assert.equal(await game.locator('#forms-body').getAttribute('lang'), 'la');
     // Open, the page still does not scroll sideways: the table scrolls in its own box.
     assert.equal(await game.evaluate(() => document.documentElement.scrollWidth > innerWidth), false, `${file}: open at 375px`);
-    // It closes again, and a new round opens with it closed.
+    // It closes again; open, it stays open through a change of round, and it opens closed on the next visit.
     await control.click();
     assert.equal(await table.isVisible(), false, `${file}: closed again`);
     await control.click();
     await game.locator('.tab').nth(1).click();
-    assert.equal(await table.isVisible(), false, `${file}: closed on a new round`);
+    assert.equal(await table.isVisible(), true, `${file}: still open in the next round`);
+    await game.reload();
+    assert.equal(await table.isVisible(), false, `${file}: closed on a new visit`);
     // The keyboard opens it too.
     await control.focus();
     await game.keyboard.press('Enter');
     assert.equal(await table.isVisible(), true, `${file}: open by the keyboard`);
   }
+  // Every gap game, with its forms open, fits a phone: nothing sideways, the control 44px or more, every round.
+  for (const width of [320, 375]) {
+    await game.setViewportSize({ width, height: 760 });
+    for (const { file } of GAP_GAMES) {
+      await game.goto(pageUrl(file));
+      await game.locator('#forms > summary').click();
+      for (let n = 0; n < await game.locator('.tab').count(); n++) {
+        await game.locator('.tab').nth(n).click();
+        assert.equal(await game.locator('#forms table:not([hidden])').first().isVisible(), true, `${file} round ${n}`);
+        assert.equal(await game.evaluate(() => document.documentElement.scrollWidth > innerWidth), false, `${file} round ${n} at ${width}px with the forms open`);
+      }
+      assert.ok((await game.locator('#forms > summary').boundingBox()).height >= 44, file);
+    }
+  }
+  await game.setViewportSize({ width: 375, height: 760 });
   // In English the control is English, and the forms, captions, and heads stay Latin.
   await game.evaluate(() => localStorage.setItem('lexicon-practice-lang', 'en'));
   await game.goto(pageUrl('quis-pulsat.html'));
@@ -3681,5 +3702,62 @@ test('the gap games show their table of forms on request, closed at first, and i
   assert.equal(await game.locator('html').getAttribute('lang'), 'en');
   assert.equal(await game.locator('#forms-body').getAttribute('lang'), 'la');
   await game.evaluate(() => localStorage.removeItem('lexicon-practice-lang'));
+  await context.close();
+});
+
+// The three gap games of 20 November 2026 (Jack: "all three please"): what is their own.
+test('Bis bīna, Heri, hodiē, crās, and Hic an ille?: the hint switch, a numeral for a hint, a table per verb, and alternatives', async () => {
+  const context = await browser.newContext({ viewport: { width: 375, height: 760 }, serviceWorkers: 'block' });
+  const game = await context.newPage();
+  await game.goto(pageUrl('index.html'));
+  await game.evaluate(() => { for (const key of Object.keys(localStorage)) if (/^(bb|hc|hi)-|^lexicon-practice-lang$/.test(key)) localStorage.removeItem(key); });
+  // Bis bīna: the switch shows the numbers, and a gap's hint is a numeral, named as a hint for a screen reader.
+  await game.goto(pageUrl('bis-bina.html'));
+  await game.locator('#check').waitFor();
+  assert.equal(await game.locator('label[for="opt-hints"]').innerText(), 'Numerōs ostendere');
+  await game.locator('#opt-hints').check();
+  assert.equal(await game.evaluate(() => localStorage.getItem('bb-hints')), 'true');
+  const hint = game.locator('#gap-quot-0 + .under .hint');
+  assert.equal(await hint.isVisible(), true);
+  assert.match(await hint.textContent(), /^\d+$/);
+  assert.equal(await game.locator('#gap-quot-0').getAttribute('aria-label'), `lacūna 1, nota: ${await hint.textContent()}`);
+  await game.goto(pageUrl('bis-bina.html#bis-bina'));
+  assert.equal(await game.locator('.tab[aria-pressed="true"]').getAttribute('data-id'), 'bis-bina');
+  // Heri, hodiē, crās: the switch shows the tenses; the forms show only the open round's table, and follow the tab.
+  await game.goto(pageUrl('heri-hodie-cras.html#lego'));
+  await game.locator('#check').waitFor();
+  assert.equal(await game.locator('label[for="opt-hints"]').innerText(), 'Tempora ostendere');
+  await game.locator('#forms > summary').click();
+  const shown = () => game.locator('#forms table').evaluateAll(tables => tables.filter(t => t.getClientRects().length).map(t => t.caption.textContent));
+  assert.deepEqual(await shown(), ['legō, legere, lēgī, lēctum']);
+  await game.locator('.tab[data-id="venio"]').click();
+  assert.deepEqual(await shown(), ['veniō, venīre, vēnī, ventum']);
+  assert.equal(await game.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
+  // A perfect typed without macrons in the lēgit gap is right and given them; with macrons required it is not.
+  await game.locator('.tab[data-id="lego"]').click();
+  assert.deepEqual(await shown(), ['legō, legere, lēgī, lēctum']);
+  const legit = game.locator('#gap-lego-6');
+  await legit.fill('legit');
+  await legit.press('Enter');
+  assert.equal(await legit.inputValue(), 'lēgit');
+  assert.match(await legit.getAttribute('class'), /\bright\b/);
+  await game.locator('#reset').click();
+  await game.locator('#opt-strict').check();
+  await legit.fill('legit');
+  await legit.press('Enter');
+  assert.match(await legit.getAttribute('class'), /\bapex\b/);
+  assert.equal(await legit.inputValue(), 'legit');
+  await legit.fill('lēgit');
+  await legit.press('Enter');
+  assert.match(await legit.getAttribute('class'), /\bright\b/);
+  assert.deepEqual(Object.keys(await game.evaluate(() => ({ ...localStorage }))).filter(key => /^(bb|hc|hi)-/.test(key)).sort(), ['bb-hints', 'hc-strict']);
+  // Hic an ille?: an alternative form is taken and kept as typed.
+  await game.goto(pageUrl('hic-an-ille.html#plur2'));
+  await game.locator('#check').waitFor();
+  await game.locator('#gap-plur2-7').fill('iis');
+  await game.locator('#gap-plur2-7').press('Enter');
+  assert.equal(await game.locator('#gap-plur2-7').inputValue(), 'iīs');
+  assert.match(await game.locator('#gap-plur2-7').getAttribute('class'), /\bright\b/);
+  await game.evaluate(() => { for (const key of Object.keys(localStorage)) if (/^(bb|hc|hi)-/.test(key)) localStorage.removeItem(key); });
   await context.close();
 });

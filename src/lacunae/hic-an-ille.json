@@ -1,0 +1,202 @@
+{
+  "id": "hic-an-ille",
+  "order": 3,
+  "file": "hic-an-ille.html",
+  "name": "Hic an ille?",
+  "prefix": "hi-",
+  "description": "Hic an ille? A game of the Latin demonstrative pronouns (hic, iste, ille, is, īdem, ipse): fill the gaps in short dialogues, in Latin or with an English interface.",
+  "eyebrow": {
+    "la": "Lūdus prōnōminum dēmōnstrātīvōrum",
+    "en": "A game of the demonstrative pronouns"
+  },
+  "hints": {
+    "la": "Prōnōmina ostendere",
+    "en": "Show the pronouns"
+  },
+  "tabulae": [
+    {
+      "caption": "Singulāris",
+      "heads": [
+        "Cāsus",
+        "hic",
+        "iste",
+        "ille",
+        "is",
+        "īdem",
+        "ipse"
+      ],
+      "rows": [
+        [
+          "Nōm.",
+          "hic, haec, hoc",
+          "iste, ista, istud",
+          "ille, illa, illud",
+          "is, ea, id",
+          "īdem, eadem, idem",
+          "ipse, ipsa, ipsum"
+        ],
+        [
+          "Acc.",
+          "hunc, hanc, hoc",
+          "istum, istam, istud",
+          "illum, illam, illud",
+          "eum, eam, id",
+          "eundem, eandem, idem",
+          "ipsum, ipsam, ipsum"
+        ],
+        [
+          "Gen.",
+          "hujus",
+          "istīus",
+          "illīus",
+          "ejus",
+          "ejusdem",
+          "ipsīus"
+        ],
+        [
+          "Dat.",
+          "huic",
+          "istī",
+          "illī",
+          "eī",
+          "eīdem",
+          "ipsī"
+        ],
+        [
+          "Abl.",
+          "hōc, hāc, hōc",
+          "istō, istā, istō",
+          "illō, illā, illō",
+          "eō, eā, eō",
+          "eōdem, eādem, eōdem",
+          "ipsō, ipsā, ipsō"
+        ]
+      ]
+    },
+    {
+      "caption": "Plūrālis",
+      "heads": [
+        "Cāsus",
+        "hic",
+        "iste",
+        "ille",
+        "is",
+        "īdem",
+        "ipse"
+      ],
+      "rows": [
+        [
+          "Nōm.",
+          "hī, hae, haec",
+          "istī, istae, ista",
+          "illī, illae, illa",
+          "eī (iī), eae, ea",
+          "eīdem (īdem), eaedem, eadem",
+          "ipsī, ipsae, ipsa"
+        ],
+        [
+          "Acc.",
+          "hōs, hās, haec",
+          "istōs, istās, ista",
+          "illōs, illās, illa",
+          "eōs, eās, ea",
+          "eōsdem, eāsdem, eadem",
+          "ipsōs, ipsās, ipsa"
+        ],
+        [
+          "Gen.",
+          "hōrum, hārum, hōrum",
+          "istōrum, istārum, istōrum",
+          "illōrum, illārum, illōrum",
+          "eōrum, eārum, eōrum",
+          "eōrundem, eārundem, eōrundem",
+          "ipsōrum, ipsārum, ipsōrum"
+        ],
+        [
+          "Dat., Abl.",
+          "hīs",
+          "istīs",
+          "illīs",
+          "eīs (iīs)",
+          "eīsdem (īsdem)",
+          "ipsīs"
+        ]
+      ]
+    }
+  ],
+  "rounds": [
+    {
+      "id": "nom",
+      "tab": "Quis?",
+      "q": "Hic an ille?",
+      "text": [
+        "{Hic|hic} liber, quem manū teneō, meus est; {iste|iste}, quem tū tenēs, tuus; {ille|ille}, quī in mēnsā jacet, Theodōrī. ",
+        "{Haec|hic} pila mea est, {ista|iste} tua; {illa|ille}, quam procul vidēs, vīcīnī est. ",
+        "{Hoc|hic} mālum, quod edō, acerbum est; {illud|ille} in summā arbore mātūrum. ",
+        "{Is|is}, quī librum āmīsit, nunc flet; {īdem|īdem} heri pilleum āmīsit. Māter {ipsa|ipse} librum quaerit."
+      ]
+    },
+    {
+      "id": "acc",
+      "tab": "Quem?",
+      "q": "Quem librum vīs?",
+      "text": [
+        "Librum ēligō. {Hunc|hic}, quem teneō, jam lēgī; {istum|iste}, quem tū tenēs, nōndum lēgī; {illum|ille} in summō pluteō attingere nōn possum. ",
+        "Pilam quaerimus. {Hanc|hic} nōlō, quia parva est; {istam|iste} dā mihi; {illam|ille} canis abstulit. ",
+        "{Hoc|hic} mālum edam, {illud|ille} tibi servābō. Theodōrum vocā; {eum|is} enim diū nōn vīdī. ",
+        "Librum {eundem|īdem} bis legere nōlō. Mātrem {ipsam|ipse} rogābō."
+      ]
+    },
+    {
+      "id": "gen",
+      "tab": "Cujus?",
+      "q": "Cujus pāginae sordidae sunt?",
+      "text": [
+        "{Hujus|hic} librī, quem teneō, pāginae sordidae sunt; {istīus|iste}, quem tū tenēs, pūrae; {illīus|ille} autem, quī in mēnsā jacet, nē titulum quidem legere possum. ",
+        "Theodōrus amīcum habet; nōmen {ejus|is} Mārcus est. Soror {ejusdem|īdem} puerī saepe nōbīscum lūdit. ",
+        "Nōlī mihi crēdere; mātris {ipsīus|ipse} verba audī."
+      ]
+    },
+    {
+      "id": "dat",
+      "tab": "Cui?",
+      "q": "Cui mālum dās?",
+      "text": [
+        "Māla dīvidō. {Huic|hic} puerō, quī mēcum sedet, ūnum dō; {istī|iste}, quī tēcum est, alterum; {illī|ille}, quī procul stat, nihil, nisi accesserit. ",
+        "Theodōrus ēsurit; {eī|is} pānem quoque dabō. {Eīdem|īdem} heri bis dedī. Mihi {ipsī|ipse} nihil relinquitur."
+      ]
+    },
+    {
+      "id": "abl",
+      "tab": "Quō?",
+      "q": "Quō stilō scrībis?",
+      "text": [
+        "Scrībimus. Ego {hōc|hic} stilō scrībō, tū {istō|iste}; {illō|ille}, quī in mēnsā jacet, nēmō ūtitur. ",
+        "{Hāc|hic} manū scrībō, {illā|ille} chartam teneō. Theodōrus pilam invēnit et cum {eā|is} tōtum diem lūsit. ",
+        "Soror {eādem|īdem} pilā lūdere vult. Eō {ipsō|ipse} diē pila periit."
+      ]
+    },
+    {
+      "id": "plur",
+      "tab": "Quī?",
+      "q": "Quī cantant?",
+      "text": [
+        "{Hī|hic} puerī, quī mēcum sunt, cantant; {istī|iste}, quī tēcum sunt, tacent; {illī|ille} trāns flūmen clāmant. ",
+        "{Hae|hic} puellae saltant, {illae|ille} spectant. {Haec|hic} māla mātūra sunt, {illa|ille} nōndum. ",
+        "Puerōs vocō. {Hōs|hic} videō, {illōs|ille} nōn videō. Amīcī vēnērunt; {eōs|is} māter ad cēnam invītāvit. ",
+        "{Eīdem/Īdem/Iīdem|īdem} heri quoque vēnerant. Puerī {ipsī|ipse} mēnsam parant."
+      ]
+    },
+    {
+      "id": "plur2",
+      "tab": "Quōrum?",
+      "q": "Quōrum librī novī sunt?",
+      "text": [
+        "Librī {hōrum|hic} puerōrum novī sunt, {illōrum|ille} veterēs. Mātrēs {hārum|hic} puellārum adsunt. ",
+        "Theodōrus duōs amīcōs habet; nōmina {eōrum|is} sunt Mārcus et Quīntus. ",
+        "{Hīs|hic} puerīs māla dō, {istīs|iste} tū pānem dā; {illīs|ille} nihil datur, quia absunt. ",
+        "Cum amīcīs lūdō et cum {eīs/iīs|is} cēnō. {Eīsdem/Īsdem/Iīsdem|īdem} crās librōs ostendam. Puerīs {ipsīs|ipse} lūdus placet."
+      ]
+    }
+  ]
+}

@@ -272,7 +272,9 @@ def gap_games(root=ROOT):
     en), prefix (of its storage keys: <prefix>hints, <prefix>strict, <prefix>done; never change one, or a
     reader's progress is lost), tabulae (the tables of forms behind "Mōnstrā fōrmās": each with heads,
     rows whose first cell is the row's label and which have a cell for every head, "—" where there is no
-    form in use, and an optional caption), and rounds: id (also the page's #hash), tab, q (the question), and text,
+    form in use, an optional caption, and an optional round: a table with one is shown only while that round is
+    open), hints (the label of the switch that shows the hints under the gaps, la and en: the pronouns,
+    the numbers, the tenses), and rounds: id (also the page's #hash), tab, q (the question), and text,
     a list of pieces joined as they stand, with each gap written {form/other form|hint}."""
     games = []
     for path in sorted((root / 'src/lacunae').glob('*.json')):
@@ -282,7 +284,7 @@ def gap_games(root=ROOT):
         except ValueError as error:
             raise ValueError(f'{where}: not valid JSON ({error})') from None
         try:
-            fields(game, ('id', 'order', 'file', 'name', 'description', 'eyebrow', 'prefix', 'tabulae', 'rounds'))
+            fields(game, ('id', 'order', 'file', 'name', 'description', 'eyebrow', 'hints', 'prefix', 'tabulae', 'rounds'))
             require(re.fullmatch(r'[a-z][a-z0-9-]*', string(game['id'])) and game['id'] == path.stem, f'the id must be the file\'s name, {path.stem}')
             require(isinstance(game['order'], int), 'order must be a whole number')
             require(re.fullmatch(r'[a-z][a-z0-9-]*\.html', string(game['file'])), 'file must be a page name such as quis-pulsat.html')
@@ -290,9 +292,11 @@ def gap_games(root=ROOT):
             string(game['name']), string(game['description'])
             fields(game['eyebrow'], ('la', 'en'))
             string(game['eyebrow']['la']), string(game['eyebrow']['en'])
+            fields(game['hints'], ('la', 'en'))
+            string(game['hints']['la']), string(game['hints']['en'])
             require(isinstance(game['tabulae'], list) and game['tabulae'], 'no tables of forms (tabulae)')
             for number, table in enumerate(game['tabulae'], 1):
-                fields(table, ('heads', 'rows'), ('caption',))
+                fields(table, ('heads', 'rows'), ('caption', 'round'))
                 if 'caption' in table:
                     string(table['caption'])
                 strings(table['heads'], f'table {number}: heads')
@@ -303,11 +307,14 @@ def gap_games(root=ROOT):
                     require(all(isinstance(cell, str) and cell.strip() == cell and cell for cell in row),
                             f'table {number}, row {line}: an empty cell (write — where there is no form)')
             require(isinstance(game['rounds'], list) and game['rounds'], 'no rounds')
+            round_ids = {r.get('id') for r in game['rounds'] if isinstance(r, dict)}
+            for number, table in enumerate(game['tabulae'], 1):
+                require('round' not in table or table['round'] in round_ids, f'table {number}: no round {table.get("round")!r} in this game')
             seen = set()
             for number, round_ in enumerate(game['rounds'], 1):
                 fields(round_, ('id', 'tab', 'q', 'text'))
                 key = string(round_['id'])
-                require(re.fullmatch(r'[a-z]+', key), f'round {number}: the id must be lower-case letters (it is the page\'s #hash)')
+                require(re.fullmatch(r'[a-z][a-z0-9-]*', key), f'round {number}: the id must be lower-case letters, digits, and hyphens (it is the page\'s #hash)')
                 require(key not in seen, f'round {key}: the id is used twice')
                 seen.add(key)
                 string(round_['tab']), string(round_['q'])
@@ -328,10 +335,26 @@ def gap_games(root=ROOT):
     return sorted(games, key=lambda game: game['order'])
 
 
+# The front page's line for the gap games, which stand there as one item (the coordinating session's
+# choice, 20 November 2026, for Jack to judge). A new game whose subject this does not name wants a word here.
+GAP_GAMES_LINE = ('Gaps to fill in short dialogues: the adverbs of place, the indefinite and the demonstrative pronouns, '
+                  'the numbers, and the forms of the verb')
+
+
+def gap_game_links(games, sep=''):
+    return sep.join(f'<a href="{game["file"]}" lang="la">{escape(game["name"])}</a>' for game in games)
+
+
+def gap_games_item(games):
+    """The front page's item for the gap games: «Lacūnae», its line, and each game's name as a link."""
+    return ('<li class="plist-group"><p class="plist-head"><span class="toc-la" lang="la">Lacūnae</span>'
+            f'<span class="toc-en">{escape(GAP_GAMES_LINE)}</span></p><p class="plist-games">{gap_game_links(games)}</p></li>')
+
+
 def gap_game_page(root, game, games):
     """A gap game's page: the engine, src/lacunae.html, with the game's data written in."""
     data = {'rounds': [{'id': r['id'], 'tab': r['tab'], 'q': r['q'], 'text': ''.join(r['text'])} for r in game['rounds']],
-            'eyebrow': game['eyebrow'], 'prefix': game['prefix'], 'tabulae': game['tabulae']}
+            'eyebrow': game['eyebrow'], 'hints': game['hints'], 'prefix': game['prefix'], 'tabulae': game['tabulae']}
     siblings = ''.join(f'    <a href="{other["file"]}" lang="la">{escape(other["name"])}</a>\n' for other in games if other is not game)
     return fill(root / 'src/lacunae.html', {
         'title': escape(f'{game["name"]} · {APP_NAME}'), 'description': escape(game['description']),
@@ -3432,6 +3455,7 @@ def render_index(root, site):
     total = len(site['records']) + len(site['legacy'])
     replacements = {'theme': THEME_INIT, 'app': app_head(''), 'legacy': redirect, 'settings': SETTINGS, 'footer_links': footer_links('', '#about', False),
                     'search': search_block('', None, total), 'contents': contents, 'total': f'{total:,}',
+                    'gap_games': gap_games_item(gap_games(root)),
                     'record_count': f'{len(site["records"]):,}',
                     'reviewed_count': f'{sum(reviewed(record) for record in site["records"].values()):,}'}
     return resolve_anchors(fill(root / 'src/page.html', replacements), site, '', 'index.html')
@@ -3554,7 +3578,8 @@ def build_site(root=ROOT):
     for head, info in sorted(site['words'].items(), key=lambda item: item[1]['slug']):
         outputs[f'l/{info["slug"]}.html'] = render_word_page(head, info, site)
     outputs['practice.html'] = fill(root / 'src/practice.html', {
-        'theme': THEME_INIT, 'app': app_head(''), 'header': site_header(''), 'footer': site_footer('')})
+        'theme': THEME_INIT, 'app': app_head(''), 'header': site_header(''), 'footer': site_footer(''),
+        'gap_games': gap_game_links(gap_games(root), ' · ')})
     outputs['hora.html'] = fill(root / 'src/hora.html', {'theme': THEME_INIT, 'app': app_head('')})
     # The gap games (Ubi est Theodōrus?, Quis pulsat?; 20 November 2026): pages that stand by themselves as the clock does.
     games = gap_games(root)

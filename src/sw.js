@@ -3,7 +3,7 @@
 // version is a hash of the files below, so any change to them replaces the saved copies.
 const VERSION = '{{version}}';
 const CORE = 'lexicon-core-' + VERSION;   // the pages and files every visit needs, saved when the worker installs
-const PAGES = 'lexicon-pages';            // entry and word pages, and the animal cards' pictures, saved as they are read
+const PAGES = 'lexicon-pages';            // entry and word pages, and the picture cards' pictures, saved as they are read
 const PAGES_MAX = 600;
 const FILES = {{files}};
 
@@ -19,7 +19,7 @@ self.addEventListener('activate', event => {
     .then(() => self.clients.claim()));
 });
 
-// The oldest saved pages make room for new ones. The animal cards' pictures (chartae/) are saved in
+// The oldest saved pages make room for new ones. The picture cards' pictures (chartae/) are saved in
 // the same cache and are never among them (Jack, 20 November 2026: the cards must work offline; until
 // then a picture counted as a page, and reading entries could push the pictures out). They are few,
 // and src/chartae.js removes those of cards that are gone.

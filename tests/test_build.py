@@ -913,11 +913,11 @@ class BuildTests(unittest.TestCase):
 
     # Practice ----------------------------------------------------------------------------
 
-    def test_the_animal_cards_have_their_pictures_their_credits_and_the_spacing_of_the_practice(self):
-        """chartae.html (Jack, 20 November 2026): picture cards of animals, each with its Latin
-        name, a sentence, what it eats, and the photographer's credit, spaced as the vocabulary
-        practice spaces its cards (Jack, the same day: "do we not have a way of repeating in our
-        other game already?")."""
+    def test_the_picture_cards_have_their_pictures_their_credits_and_the_spacing_of_the_practice(self):
+        """chartae.html (Jack, 20 November 2026): picture cards, Chartae pictae, each with its
+        Latin name, a sentence, and the photographer's credit, an animal's with what it eats, spaced
+        as the vocabulary practice spaces its cards (Jack, the same day: "do we not have a way of
+        repeating in our other game already?")."""
         outputs = builder.build_site(self.root)
         script = outputs['assets/chartae-data.js']
         self.assertTrue(script.endswith(';\n') and 'window.lexiconChartae = ' in script)
@@ -925,7 +925,13 @@ class BuildTests(unittest.TestCase):
         source = self.read('data/chartae.json')
         self.assertEqual([card['id'] for card in data['cards']], [card['id'] for card in source['cards']])
         self.assertEqual([group['id'] for group in data['groups']], [group['id'] for group in source['groups']])
-        self.assertIn(f'Picture cards of {len(data["cards"])} animals', outputs['chartae.html'])
+        self.assertEqual([(group['id'], group['subject']) for group in data['groups']], [(group['id'], group['subject']) for group in source['groups']])
+        self.assertEqual([subject['id'] for subject in data['subjects']][:2], ['animalia', 'plantae'])
+        subject_of = {group['id']: group['subject'] for group in data['groups']}
+        animals = sum(subject_of[card['group']] == 'animalia' for card in data['cards'])
+        self.assertIn(f'content="{len(data["cards"])} picture cards of animals and plants ({animals} of animals, {len(data["cards"]) - animals} of plants',
+                      outputs['chartae.html'])
+        self.assertIn('<title>Picture cards · ', outputs['chartae.html'])
         linked = 0
         for card in data['cards']:
             with self.subTest(card=card['id']):
@@ -987,6 +993,97 @@ class BuildTests(unittest.TestCase):
         (self.root / 'src/chartae/stray.jpg').unlink()
         (self.root / f'src/chartae/{cards["cards"][0]["id"]}.jpg').unlink()
         with self.assertRaisesRegex(ValueError, 'is missing'):
+            builder.build_site(self.root)
+
+    def test_the_picture_cards_have_subjects_and_kinds_and_food_only_for_animals(self):
+        """The picture cards are one game for every subject (Jack, 20 November 2026): each kind
+        belongs to a subject; an animal's card says what it eats (food), a plant's may say what it
+        bears (bears), and neither goes on a card of the other; a kind may wait for its cards."""
+        cards = self.read('data/chartae.json')
+        animal = next(card for card in cards['cards'] if card['group'] == 'villa')
+        plant_kind = next(group['id'] for group in cards['groups'] if group['subject'] == 'plantae')
+
+        def plant(**extra):
+            data = json.loads(json.dumps(cards))
+            card = {key: value for key, value in animal.items() if key not in ('food', 'record')}
+            card.update(id='planta-probata', group=plant_kind, **extra)
+            data['cards'].append(card)
+            return data
+        shutil.copy(self.root / f'src/chartae/{animal["id"]}.jpg', self.root / 'src/chartae/planta-probata.jpg')
+        # A plant's card with what it bears, and an empty kind, are taken; the data says both.
+        data = plant(bears='Glandēs.')
+        data['groups'].append({'id': 'vacua', 'subject': 'plantae', 'latin': 'Vacua', 'english': 'Empty'})
+        self.write('data/chartae.json', data)
+        outputs = builder.build_site(self.root)
+        script = outputs['assets/chartae-data.js']
+        built = json.loads(script[script.index('{'):script.rindex('}') + 1])
+        shown = {card['id']: card for card in built['cards']}
+        self.assertEqual(shown['planta-probata']['bears'], 'Glandēs.')
+        self.assertNotIn('food', shown['planta-probata'])
+        self.assertIn({'id': 'vacua', 'subject': 'plantae', 'latin': 'Vacua', 'english': 'Empty'}, built['groups'])
+        self.assertTrue(all(card['group'] != 'vacua' for card in built['cards']))
+        # A plant's card without bears is taken too.
+        self.write('data/chartae.json', plant())
+        builder.build_site(self.root)
+        # What is refused: food on a plant, bears on an animal, an animal without food, an unknown subject.
+        self.write('data/chartae.json', plant(food='Aquā.'))
+        with self.assertRaisesRegex(ValueError, 'food \\(what an animal eats\\) is only for a card of an animal'):
+            builder.build_site(self.root)
+        data = plant(); data['cards'][0]['bears'] = 'Ossa.'
+        self.write('data/chartae.json', data)
+        with self.assertRaisesRegex(ValueError, 'bears \\(what a plant bears\\) is only for a card of a plant'):
+            builder.build_site(self.root)
+        data = plant(); del data['cards'][0]['food']
+        self.write('data/chartae.json', data)
+        with self.assertRaisesRegex(ValueError, 'a card of an animal needs food'):
+            builder.build_site(self.root)
+        data = plant(); data['groups'][0]['subject'] = 'instrumenta'
+        self.write('data/chartae.json', data)
+        with self.assertRaisesRegex(ValueError, 'has an unknown subject instrumenta'):
+            builder.build_site(self.root)
+        # An id is one across every subject: it names the picture and the card's progress.
+        data = plant(); data['cards'][-1]['id'] = animal['id']
+        self.write('data/chartae.json', data)
+        with self.assertRaisesRegex(ValueError, 'bad or repeated id'):
+            builder.build_site(self.root)
+
+    def test_the_picture_cards_carry_scientific_names_written_as_nomenclature_writes_them(self):
+        """A card of an animal or a plant may give its scientific name after the English one (Jack,
+        20 November 2026: "Hōc modō discēmus discrīmina"), written as zoology and botany write it:
+        a capital on the first word only, and no macrons or other marks. A card without one is taken."""
+        cards = self.read('data/chartae.json')
+        named = [card for card in cards['cards'] if 'scientific' in card]
+        self.assertTrue(named and any('scientific' not in card for card in cards['cards']))
+        outputs = builder.build_site(self.root)
+        script = outputs['assets/chartae-data.js']
+        built = {card['id']: card for card in json.loads(script[script.index('{'):script.rindex('}') + 1])['cards']}
+        for card in cards['cards']:
+            self.assertEqual(built[card['id']].get('scientific'), card.get('scientific'), card['id'])
+        # In the data the field stands right after the English name.
+        first = named[0]
+        self.assertEqual(list(first)[list(first).index('english') + 1], 'scientific')
+
+        def with_name(name):
+            data = json.loads(json.dumps(cards))
+            data['cards'][0]['scientific'] = name
+            self.write('data/chartae.json', data)
+        for name in ('Quercus ilex', 'Platanus × hispanica', 'Capsella bursa-pastoris', 'Brassica oleracea subsp. capitata'):
+            with_name(name)
+            builder.build_site(self.root)
+        with_name('Canis lūpus')
+        with self.assertRaisesRegex(ValueError, 'scientific name “Canis lūpus” has ū: it is written as zoology and botany write it'):
+            builder.build_site(self.root)
+        with_name('canis lupus')
+        with self.assertRaisesRegex(ValueError, 'must begin with a capital letter'):
+            builder.build_site(self.root)
+        with_name('Canis Lupus')
+        with self.assertRaisesRegex(ValueError, 'only the first word has a capital'):
+            builder.build_site(self.root)
+        with_name('Canis  lupus')
+        with self.assertRaisesRegex(ValueError, 'has stray spaces'):
+            builder.build_site(self.root)
+        with_name(' Canis lupus')
+        with self.assertRaisesRegex(ValueError, 'has stray spaces'):
             builder.build_site(self.root)
 
     def test_practice_cards_are_one_per_record_with_kind_and_sources(self):
@@ -1059,7 +1156,7 @@ class BuildTests(unittest.TestCase):
                 page = outputs[path]
                 self.assertIn(f'<a href="{up}practice.html">Practice</a>', page[page.rindex('<footer'):])
                 self.assertNotIn('practice.html', page[page.index('<header class="site-top'):page.index('</header>')])
-        self.assertIn('<a href="chartae.html"><span class="toc-la" lang="la">Chartae animālium</span>', outputs['index.html'])
+        self.assertIn('<a href="chartae.html"><span class="toc-la" lang="la">Chartae pictae</span>', outputs['index.html'])
         gap_games = [game['file'] for game in builder.gap_games(self.root)]
         self.assertEqual(gap_games[:2], ['theodorus.html', 'quis-pulsat.html'])
         for path in ('practice.html', 'hora.html', 'chartae.html', *gap_games):

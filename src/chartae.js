@@ -1,9 +1,12 @@
 (() => {
-  // Animal picture cards (Jack, 20 November 2026): a picture, the Latin name to say aloud, then the
-  // back of the card and a mark, "Got it" or "Again". The cards are data/chartae.json, made for
-  // Jack and his son from freely licensed pictures on Wikimedia Commons; the builder writes them
-  // into assets/chartae-data.js and copies the pictures to chartae/. Each card that has an entry in
-  // the lexicon links to it.
+  // Picture cards, Chartae pictae (Jack, 20 November 2026): a picture, the Latin name to say aloud,
+  // then the back of the card and a mark, "Got it" or "Again". The cards are data/chartae.json,
+  // made for Jack and his son from freely licensed pictures on Wikimedia Commons; the builder writes
+  // them into assets/chartae-data.js and copies the pictures to chartae/. Each card that has an
+  // entry in the lexicon links to it. The cards were animals at first; the same day Jack decided
+  // that the other subjects (plants and their parts first, later tools and actions) go into this
+  // one exercise, in which the reader chooses the subjects and the kinds, with one spacing and one
+  // progress for every card, not into games of their own.
   //
   // The page is built as the vocabulary practice is (src/practice.js): a lobby with the deck, the
   // meter and a Start button, and a round played in a layer over the whole page, with the same
@@ -52,15 +55,19 @@
   // (Incipe, Perge, Respōnsum ostende, Iterum, Teneō, Redī, Exī, Novus cursus, Repete tamen nunc,
   // nova / repetenda / ēlāpsa, Cursus cōnfectus, the meter, Nihil hīc repetendum, Prōgressus in
   // hōc nāvigātrō servātur, In lexicō īnspice, exemplum nostrum, Quā ratiōne repetātur). "Chartae
-  // animālium" is the name the cards have had from the start, and "Quō vēscitur?" and "Anglicē"
-  // are printed on them. The rest is Claude's wording, composed for this page on 20 November 2026,
-  // for Jack to review: sub, groups, all, gallery, ask, prev, forth, picture, credit, cropped,
-  // offline, more, vocabulary, and the English names of the groups (in data/chartae.json).
+  // animālium" was the name the cards had from the start until they took in the plants, and "Quō
+  // vēscitur?" and "Anglicē" are printed on them. The rest is Claude's wording, composed for this
+  // page on 20 November 2026, for Jack to review: sub, groups, all, gallery, ask, prev, forth,
+  // credit, cropped, offline, more, vocabulary, and the English names of the animal kinds (in
+  // data/chartae.json); and, when the plants came in the same day, title (Chartae pictae / Picture
+  // cards), subjects (Rēs), picture (Imāgō, for Imāgō animālis), the question on the back of a
+  // plant's card ("Quid fert?", in drawBack), and the Latin and English names of the subjects and
+  // of the plant kinds (in data/chartae.json).
   const one = (n, singular, many) => `${number(n)} ${n === 1 ? singular : many}`;
   const T = {
     la: {
-      title: 'Chartae animālium', sub: 'Imāginem īnspice, nōmen Latīnum clārā vōce dīc, deinde respōnsum ostende.', langLabel: 'Lingua',
-      groups: 'Genera', all: 'Omnia', gallery: 'Omnēs chartae', ask: 'Quid est?', prev: 'Prior', forth: 'Proxima',
+      title: 'Chartae pictae', sub: 'Imāginem īnspice, nōmen Latīnum clārā vōce dīc, deinde respōnsum ostende.', langLabel: 'Lingua',
+      subjects: 'Rēs', groups: 'Genera', all: 'Omnia', gallery: 'Omnēs chartae', ask: 'Quid est?', prev: 'Prior', forth: 'Proxima',
       start: 'Incipe', resume: 'Perge', early: 'Repete tamen nunc', next: 'Novus cursus',
       show: 'Respōnsum ostende', again: 'Iterum', got: 'Teneō', undo: 'Redī', close: 'Exī', card: 'Charta',
       status: { new: 'nova', due: 'repetenda', lapsed: 'ēlāpsa' },
@@ -68,7 +75,7 @@
       saved: 'Prōgressus in hōc nāvigātrō servātur.',
       notSaved: 'Prōgressus in hōc nāvigātrō servārī nōn potest: pāginā clausā perībit.',
       offline: 'Imāginēs in hōc apparātū servātae sunt: sine rēte quoque lūdere licet.',
-      entry: 'In lexicō īnspice', composed: 'exemplum nostrum', english: 'Anglicē', picture: 'Imāgō animālis',
+      entry: 'In lexicō īnspice', composed: 'exemplum nostrum', english: 'Anglicē', picture: 'Imāgō',
       credit: 'Imāgō:', from: 'ex', cropped: 'recīsa',
       cards: n => one(n, 'charta', 'chartae'), due: n => `${number(n)} nunc ${n === 1 ? 'repetenda' : 'repetendae'}`, fresh: n => one(n, 'nova', 'novae'),
       known: n => one(n, 'nōta', 'nōtae'), learning: n => one(n, 'discitur', 'discuntur'),
@@ -79,8 +86,8 @@
       how: 'Quā ratiōne repetātur', more: 'Aliī lūdī:', vocabulary: 'Exercitātiō', clock: ''
     },
     en: {
-      title: 'Animal cards', sub: 'Look at the picture, say the Latin name aloud, then show the answer.', langLabel: 'Language',
-      groups: 'Kinds', all: 'All', gallery: 'All the cards', ask: 'What is it?', prev: 'Previous', forth: 'Next',
+      title: 'Picture cards', sub: 'Look at the picture, say the Latin name aloud, then show the answer.', langLabel: 'Language',
+      subjects: 'Subjects', groups: 'Kinds', all: 'All', gallery: 'All the cards', ask: 'What is it?', prev: 'Previous', forth: 'Next',
       start: 'Start', resume: 'Continue', early: 'Practise early', next: 'Another round',
       show: 'Show the Latin', again: 'Again', got: 'Got it', undo: 'Undo', close: 'Close', card: 'Card',
       status: { new: 'new', due: 'due', lapsed: 'lapsed' },
@@ -88,7 +95,7 @@
       saved: 'Progress is kept in this browser.',
       notSaved: 'Progress cannot be saved in this browser: it will last only until the page is closed.',
       offline: 'The pictures are saved on this device: the game also works offline.',
-      entry: 'Open the entry', composed: 'composed', english: 'English', picture: 'Picture of an animal',
+      entry: 'Open the entry', composed: 'composed', english: 'English', picture: 'Picture',
       credit: 'Picture:', from: 'from', cropped: 'cropped',
       cards: n => one(n, 'card', 'cards'), due: n => `${number(n)} due now`, fresh: n => `${number(n)} new`,
       known: n => `${number(n)} known`, learning: n => `${number(n)} learning`,
@@ -104,7 +111,7 @@
   const t = key => T[lang][key];
 
   // A piece of text with its language: the interface's own words take the page's language; what is
-  // always Latin (the names, the sentences, what an animal eats) says "la", what is always English
+  // always Latin (the names, the sentences, what an animal eats or a plant bears) says "la", what is always English
   // (the English name, citations, the photographer and the licence) says "en".
   function el(tag, className, content, language) {
     const node = document.createElement(tag);
@@ -127,33 +134,71 @@
   }
 
   // The cards and the deck ------------------------------------------------------------------------
-  const cards = data.cards, byId = new Map(), groups = data.groups;
+  // A kind with no cards yet (the builder allows it) is not shown, nor a subject with none.
+  const cards = data.cards, byId = new Map();
   cards.forEach(card => { card.head = headOf(card.latin); byId.set(card.id, card); });
-  // The deck is the kinds chosen; none chosen is all of them.
-  let chosen = (() => { const kept = read(KEY.deck, []); return Array.isArray(kept) ? kept.filter(id => groups.some(group => group.id === id)) : []; })();
+  const groups = data.groups.filter(group => cards.some(card => card.group === group.id));
+  const subjects = data.subjects.filter(subject => groups.some(group => group.subject === subject.id));
+  const subjectOf = new Map(groups.map(group => [group.id, group.subject]));
+  // The cards in the order of the list of every card: by subject, then by kind.
+  const listed = subjects.flatMap(subject => groups.filter(group => group.subject === subject.id).flatMap(group => cards.filter(card => card.group === group.id)));
+  // The deck is the subjects and the kinds chosen, two groups of choices as in the vocabulary's
+  // deck: choices within a group add up, the groups narrow one another, and a group with nothing
+  // chosen does not narrow. The kinds offered are those of the subjects chosen, and a kind whose
+  // subject is not chosen is dropped. Choosing every one is the same as choosing none. The first
+  // version kept a plain list of kinds under the same key: it is read as the kinds.
+  const chosen = { subjects: [], groups: [] };
+  const shownGroups = () => groups.filter(group => !chosen.subjects.length || chosen.subjects.includes(group.subject));
+  function tidy() {
+    if (chosen.subjects.length === subjects.length) chosen.subjects = [];
+    chosen.groups = chosen.groups.filter(id => shownGroups().some(group => group.id === id));
+    if (chosen.groups.length && chosen.groups.length === shownGroups().length) chosen.groups = [];
+  }
+  {
+    const kept = read(KEY.deck, null), list = value => (Array.isArray(value) ? value.filter(id => typeof id === 'string') : []);
+    const old = Array.isArray(kept);
+    chosen.subjects = old ? [] : list(kept && kept.subjects).filter(id => subjects.some(subject => subject.id === id));
+    chosen.groups = (old ? list(kept) : list(kept && kept.groups)).filter(id => groups.some(group => group.id === id));
+    tidy();
+  }
+  const inDeck = card => (!chosen.subjects.length || chosen.subjects.includes(subjectOf.get(card.group))) && (!chosen.groups.length || chosen.groups.includes(card.group));
   let pool = [];
   const nameOf = group => (lang === 'la' ? group.latin : group.english);
   function drawDeck() {
-    pool = cards.filter(card => !chosen.length || chosen.includes(card.group));
-    const button = (id, label, language, count) => {
+    pool = cards.filter(inDeck);
+    const button = (dataset, id, picked, label, language, count) => {
       const node = el('button', '', [el('span', '', label, language), ' ', el('span', 'count', number(count))]);
-      node.type = 'button'; node.dataset.group = id;
-      node.setAttribute('aria-pressed', String(id ? chosen.includes(id) : !chosen.length));
+      node.type = 'button'; node.dataset[dataset] = id;
+      node.setAttribute('aria-pressed', String(id ? picked.includes(id) : !picked.length));
       return node;
     };
-    q('c-groups').replaceChildren(button('', t('all'), undefined, cards.length),
-      ...groups.map(group => button(group.id, nameOf(group), lang === 'la' ? 'la' : 'en', cards.filter(card => card.group === group.id).length)));
-    q('g-deck').replaceChildren(...(chosen.length ? groups.filter(group => chosen.includes(group.id)).flatMap((group, n) => [...(n ? [', '] : []), el('span', '', nameOf(group), lang === 'la' ? 'la' : 'en')]) : [t('title')]));
+    const language = lang === 'la' ? 'la' : 'en';
+    q('c-subjects').replaceChildren(button('subject', '', chosen.subjects, t('all'), undefined, cards.length),
+      ...subjects.map(subject => button('subject', subject.id, chosen.subjects, nameOf(subject), language, cards.filter(card => subjectOf.get(card.group) === subject.id).length)));
+    const offered = shownGroups();
+    q('c-groups').replaceChildren(button('group', '', chosen.groups, t('all'), undefined, cards.filter(card => offered.some(group => group.id === card.group)).length),
+      ...offered.map(group => button('group', group.id, chosen.groups, nameOf(group), language, cards.filter(card => card.group === group.id).length)));
+    // The deck's name in the round: the kinds chosen, else the subjects chosen, else the game's name.
+    const names = chosen.groups.length ? groups.filter(group => chosen.groups.includes(group.id)) : subjects.filter(subject => chosen.subjects.includes(subject.id));
+    q('g-deck').replaceChildren(...(names.length ? names.flatMap((item, n) => [...(n ? [', '] : []), el('span', '', nameOf(item), language)]) : [t('title')]));
   }
-  q('c-groups').addEventListener('click', event => {
-    const button = event.target.closest('button');
-    if (!button) return;
-    const id = button.dataset.group;
-    chosen = !id ? [] : chosen.includes(id) ? chosen.filter(other => other !== id) : chosen.concat(id);
-    if (chosen.length === groups.length) chosen = [];
-    write(KEY.deck, chosen);
+  function choose(kind, id) {
+    const list = chosen[kind];
+    chosen[kind] = !id ? [] : list.includes(id) ? list.filter(other => other !== id) : list.concat(id);
+    // A subject un-chosen takes its chosen kinds with it.
+    if (kind === 'subjects') chosen.groups = chosen.groups.filter(group => !list.includes(subjectOf.get(group)) || chosen.subjects.includes(subjectOf.get(group)));
+    tidy();
+    write(KEY.deck, { subjects: chosen.subjects, groups: chosen.groups });
     round = idle(); keep();   // a round begun with the old deck is dropped
     drawDeck(); drawLobby();
+  }
+  q('c-subjects').addEventListener('click', event => {
+    const button = event.target.closest('button');
+    if (button) choose('subjects', button.dataset.subject);
+  });
+  q('c-groups').addEventListener('click', event => {
+    const button = event.target.closest('button');
+    if (button) choose('groups', button.dataset.group);
   });
 
   // Progress: one record per card, {b: box, due: when it comes back, t: when it was marked}.
@@ -211,16 +256,19 @@
   // the sentence and the rest of its back (Jack, 20 November 2026: "bene esset chartam aperīre
   // posse ut videātur sententiola etc. (de indice)"); the way to the entry is on the card. The
   // pictures are fetched as they come into view, and not at all while the list is closed.
+  // The list is set out by subject (a heading of the second level) and under it by kind (the third).
   function drawGallery() {
-    q('c-gallery').replaceChildren(...groups.flatMap(group => {
-      const tiles = cards.filter(card => card.group === group.id).map(card => {
-        const picture = el('img'); picture.src = card.picture; picture.alt = ''; picture.loading = 'lazy'; picture.width = 720; picture.height = 511;
-        const tile = el('button', 'c-tile', [picture, el('span', 'c-name', [el('b', '', card.head, 'la'), ' ', el('span', 'c-en', card.english, 'en')])]);
-        tile.type = 'button'; tile.dataset.card = card.id;
-        return tile;
-      });
-      return [el('h2', 'c-group', nameOf(group), lang === 'la' ? 'la' : 'en'), el('div', 'c-tiles', tiles)];
-    }));
+    const language = lang === 'la' ? 'la' : 'en';
+    q('c-gallery').replaceChildren(...subjects.flatMap(subject => [el('h2', 'c-subject', nameOf(subject), language),
+      ...groups.filter(group => group.subject === subject.id).flatMap(group => {
+        const tiles = cards.filter(card => card.group === group.id).map(card => {
+          const picture = el('img'); picture.src = card.picture; picture.alt = ''; picture.loading = 'lazy'; picture.width = 720; picture.height = 511;
+          const tile = el('button', 'c-tile', [picture, el('span', 'c-name', [el('b', '', card.head, 'la'), ' ', el('span', 'c-en', card.english, 'en')])]);
+          tile.type = 'button'; tile.dataset.card = card.id;
+          return tile;
+        });
+        return [el('h3', 'c-group', nameOf(group), language), el('div', 'c-tiles', tiles)];
+      })]));
   }
   // A card opened from the list is looked at, not played: its back is shown, there are no marks,
   // and nothing is recorded. The cards before and after it follow in the list's order. The page's
@@ -232,7 +280,7 @@
     try { history.replaceState(null, '', '#' + id); } catch {}
     openGame();
   }
-  const lookStep = by => { if (look) openLook(cards[(cards.indexOf(look) + by + cards.length) % cards.length].id); };
+  const lookStep = by => { if (look) openLook(listed[(listed.indexOf(look) + by + listed.length) % listed.length].id); };
   q('c-gallery').addEventListener('click', event => {
     const tile = event.target.closest('button[data-card]');
     if (tile) openLook(tile.dataset.card);
@@ -336,8 +384,8 @@
     q('g-deck').hidden = !!look; q('g-list').hidden = !look;
     if (look) {
       // A card from the list: its picture and its back, and the ways to the cards beside it.
-      const at = cards.indexOf(look);
-      q('g-pos').textContent = `${at + 1} / ${cards.length}`;
+      const at = listed.indexOf(look);
+      q('g-pos').textContent = `${at + 1} / ${listed.length}`;
       q('g-bar').style.width = '0';
       q('g-undo').disabled = true;
       q('g-card').classList.remove('front', 'finished');
@@ -347,7 +395,7 @@
       if (q('g-picture').getAttribute('src') !== look.picture) q('g-picture').src = look.picture;
       q('g-picture').alt = look.english; q('g-picture').lang = 'en';
       drawBack(look);
-      [-1, 1].forEach(by => { new Image().src = cards[(at + by + cards.length) % cards.length].picture; });
+      [-1, 1].forEach(by => { new Image().src = listed[(at + by + listed.length) % listed.length].picture; });
       polish(game);
       return;
     }
@@ -389,13 +437,24 @@
   function drawBack(card) {
     q('g-la').replaceChildren(el('b', '', card.head), card.latin.slice(card.head.length));
     q('g-la').classList.toggle('long', card.head.includes(' '));
-    q('g-en').replaceChildren(...(lang === 'la' ? [t('english') + ' '] : []), el('span', '', card.english, 'en'));
+    // The scientific name follows the English one (Jack, 20 November 2026: "inclūdāmus nōmina
+    // scientifica … jūxtā nōmina Anglica … Hōc modō discēmus discrīmina"), in italic, as zoology and
+    // botany write it. Its language is la-x-taxon: Latin to a screen reader, which reads the
+    // primary tag, but not "la", the only language the display options rewrite, so that no option
+    // turns Juniperus into Iuniperus or Vulpes into Uulpes. No new words: only a middle dot.
+    const taxon = card.scientific ? el('i', 'c-sci', card.scientific, 'la-x-taxon') : null;
+    if (taxon) taxon.translate = false;
+    q('g-en').replaceChildren(...(lang === 'la' ? [t('english') + ' '] : []), el('span', '', card.english, 'en'), ...(taxon ? [' · ', taxon] : []));
     // The sentence: a line of an author with its place, or one of ours, which is marked as the
     // lexicon marks its own examples.
     q('g-ex-la').textContent = card.line;
     q('g-ex-src').replaceChildren(card.source ? el('span', 'src', card.source, 'en') : el('span', 'src composed', t('composed')));
-    // What it eats: the question and its answer are the card's own Latin in either language.
-    q('g-food').replaceChildren(el('span', 'c-ask', 'Quō vēscitur?'), ' ', card.food);
+    // What an animal eats, or what a plant bears: the question and its answer are the card's own
+    // Latin in either language. A card with neither has no such line.
+    q('g-food').hidden = !card.food;
+    q('g-food').replaceChildren(...(card.food ? [el('span', 'c-ask', 'Quō vēscitur?'), ' ', card.food] : []));
+    q('g-bears').hidden = !card.bears;
+    q('g-bears').replaceChildren(...(card.bears ? [el('span', 'c-ask', 'Quid fert?'), ' ', card.bears] : []));
     q('g-entry').hidden = !card.record;
     if (card.record) q('g-entry').href = `c/${card.record}.html`;
     // The picture's author and licence, as the licences ask: both are links, and the picture is said to be cropped.
@@ -525,8 +584,8 @@
   q('p-lang').hidden = false;
 
   const reopen = restore();
-  // A round kept from another deck (the kinds were changed in another tab) is not taken up.
-  if (round.current && chosen.length && ![round.current, ...round.queue].every(card => chosen.includes(card.group))) { round = idle(); forget(); }
+  // A round kept from another deck (the subjects or kinds were changed in another tab) is not taken up.
+  if (round.current && ![round.current, ...round.queue].every(inDeck)) { round = idle(); forget(); }
   root.hidden = false;
   applyLanguage();
   // The address may name a card to look at: the way back from its entry, or a link to it.

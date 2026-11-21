@@ -793,7 +793,7 @@ class BuildTests(unittest.TestCase):
                      'assets/fonts/lexicon-serif-400.woff2', 'manifest.webmanifest',
                      'practice.html', 'hora.html', 'assets/practice.js', 'assets/practice-data.js',
                      'chartae.html', 'assets/chartae.js', 'assets/chartae-data.js',
-                     'theodorus.html',
+                     *[game['file'] for game in builder.gap_games(self.root)],
                      'review.html', 'assets/review.js'):
             self.assertIn(path, files)
         self.assertTrue(all(path in outputs for path in files))
@@ -1145,26 +1145,32 @@ class BuildTests(unittest.TestCase):
         # The pages: reached from the footer of every page and from the front page, never from the header.
         self.assertIn('<a href="practice.html"><span class="toc-la">Vocabulary</span>', outputs['index.html'])
         self.assertIn('<a href="hora.html"><span class="toc-la" lang="la">Hōra cum ūnciā</span>', outputs['index.html'])
-        self.assertIn('<a href="theodorus.html"><span class="toc-la" lang="la">Ubi est Theodōrus?</span>', outputs['index.html'])
-        self.assertIn('<a href="theodorus.html">', outputs['practice.html'])
+        # The gap games are one item of the front page's list, «Lacūnae», with every game's name as a link
+        # (the coordinating session's choice, 20 November 2026), and a line of their own on the practice page.
+        self.assertIn('<li class="plist-group"><p class="plist-head"><span class="toc-la" lang="la">Lacūnae</span>', outputs['index.html'])
+        for game in builder.gap_games(self.root):
+            self.assertIn(f'<a href="{game["file"]}" lang="la">{game["name"]}</a>', outputs['index.html'])
+            self.assertIn(f'<a href="{game["file"]}" lang="la">{game["name"]}</a>', outputs['practice.html'])
         for path, up in (('index.html', ''), ('c/perhaps.html', '../'), ('k/sermo.html', '../'), ('practice.html', '')):
             with self.subTest(path=path):
                 page = outputs[path]
                 self.assertIn(f'<a href="{up}practice.html">Practice</a>', page[page.rindex('<footer'):])
                 self.assertNotIn('practice.html', page[page.index('<header class="site-top'):page.index('</header>')])
         self.assertIn('<a href="chartae.html"><span class="toc-la" lang="la">Chartae pictae</span>', outputs['index.html'])
-        for path in ('practice.html', 'hora.html', 'chartae.html', 'theodorus.html'):
+        gap_games = [game['file'] for game in builder.gap_games(self.root)]
+        self.assertEqual(gap_games[:2], ['theodorus.html', 'quis-pulsat.html'])
+        for path in ('practice.html', 'hora.html', 'chartae.html', *gap_games):
             self.assertIn(f'cotidianae/{path}</loc>', outputs['sitemap.xml'])
             self.assertIn('<link rel="manifest" href="manifest.webmanifest">', outputs[path])
-        # Both games (the clock, and Ubi est Theodōrus? since 20 November 2026) stand by themselves and
-        # are held to the same rules.
+        # The games that stand by themselves (the clock, and the gap games: Ubi est Theodōrus? and Quis
+        # pulsat? since 20 November 2026) are held to the same rules.
         styles = (self.root / 'src/styles.css').read_text(encoding='utf-8')
         names = ('paper', 'ink', 'soft', 'muted', 'hair', 'rule', 'rubric', 'accent', 'mark', 'ground', 'card')
 
         def palette(text, selector):
             block = text[text.index(selector):]
             return dict(re.findall(r'--([a-z-]+):(#[0-9a-f]{6})', block[:block.index('}')]))
-        for game in ('hora.html', 'theodorus.html'):
+        for game in ('hora.html', *gap_games):
             with self.subTest(game=game):
                 hora = outputs[game]
                 # The game asks nothing of other sites: its only address is its own.
@@ -1201,6 +1207,81 @@ class BuildTests(unittest.TestCase):
                 hora_styles = re.sub(r'/\*.*?\*/', '', hora[hora.index('<style>'):hora.index('</style>')], flags=re.S)
                 self.assertNotIn('mono', hora_styles)
                 self.assertEqual(set(re.findall(r'var\(--(serif|sans|mono)\)', hora_styles)), {'serif', 'sans'})
+
+    def test_the_gap_games_are_one_engine_with_a_file_per_game(self):
+        """The gap games (20 November 2026): one engine, src/lacunae.html, and one data file per game in
+        src/lacunae/; the builder writes a page for each and refuses a malformed file."""
+        outputs = builder.build_site(self.root)
+        games = builder.gap_games(self.root)
+        self.assertEqual([(g['id'], g['file'], g['prefix']) for g in games],
+                         [('theodorus', 'theodorus.html', 'uet-'), ('quis-pulsat', 'quis-pulsat.html', 'qp-'),
+                          ('hic-an-ille', 'hic-an-ille.html', 'hi-'), ('bis-bina', 'bis-bina.html', 'bb-'),
+                          ('heri-hodie-cras', 'heri-hodie-cras.html', 'hc-')])
+        self.assertEqual([[r['id'] for r in g['rounds']] for g in games[2:]],
+                         [['nom', 'acc', 'gen', 'dat', 'abl', 'plur', 'plur2'], ['quot', 'quotus', 'quoteni', 'quotiens', 'bis-bina'],
+                          ['ambulo', 'video', 'lego', 'venio', 'sum', 'eo', 'volo', 'fero']])
+        self.assertEqual([sum(''.join(r['text']).count('{') for r in g['rounds']) for g in games], [46, 50, 64, 64, 83])
+        self.assertEqual([g['hints']['la'] for g in games], ['Prōnōmina ostendere'] * 3 + ['Numerōs ostendere', 'Persōnās et tempora ostendere'])
+        # The verbs have a table each, shown only with its round.
+        self.assertEqual([t.get('round') for t in games[4]['tabulae']], [r['id'] for r in games[4]['rounds']])
+        self.assertEqual([r['id'] for r in games[0]['rounds']], ['ubi', 'quo', 'unde', 'qua', 'iter'])
+        self.assertEqual([r['id'] for r in games[1]['rounds']], ['quis', 'quid', 'quem', 'cujus', 'cui', 'uter'])
+        self.assertEqual(sum(''.join(r['text']).count('{') for r in games[1]['rounds']), 50)
+        self.assertFalse((self.root / 'src/theodorus.html').exists(), 'the old page is the engine now')
+        for game in games:
+            with self.subTest(game=game['id']):
+                page = outputs[game['file']]
+                self.assertIn(f'<title>{game["name"]} · Lexicon Latīnitātis Cotīdiānae</title>', page)
+                self.assertIn(f'<h1 lang="la">{game["name"]}</h1>', page)
+                self.assertIn(f'"prefix": "{game["prefix"]}"', page)
+                self.assertIn('"hints": ' + json.dumps(game['hints'], ensure_ascii=False), page)
+                self.assertNotIn('{{', page)
+                # The foot links lead to the other practice pages, the other gap games among them.
+                links = page[page.index('<nav class="links"'):]
+                links = links[:links.index('</nav>')]
+                for other in ['index.html', 'practice.html', 'hora.html', 'chartae.html'] + [g['file'] for g in games if g is not game]:
+                    self.assertIn(f'href="{other}"', links)
+                self.assertNotIn(f'href="{game["file"]}"', links)
+                # The tables of forms behind "Mōnstrā fōrmās" (Jack, 20 November 2026) are in the page.
+                self.assertIn('"tabulae": ' + json.dumps(game['tabulae'], ensure_ascii=False), page)
+                # The engine reads j as i (and cunque as cumque) in what is typed and in the forms.
+                self.assertIn('.replace(/cunque/g, "cumque").replace(/j/g, "i")', page)
+        self.assertIn('<title>Quis pulsat? · Lexicon Latīnitātis Cotīdiānae</title>', outputs['quis-pulsat.html'])
+        self.assertIn('"prefix": "uet-"', outputs['theodorus.html'])
+        self.assertEqual([(len(t['rows']), len(t['heads'])) for t in games[0]['tabulae']], [(15, 5)])
+        self.assertEqual([(t.get('caption'), len(t['rows']), len(t['heads'])) for t in games[1]['tabulae']],
+                         [('Dē plūribus', 12, 6), ('Dē duōbus', 7, 2)])
+        self.assertIn('Mōnstrā fōrmās', outputs['quis-pulsat.html'])
+        # A malformed game file stops the build, and says which file and what is wrong.
+        path = self.root / 'src/lacunae/quis-pulsat.json'
+        good = path.read_text(encoding='utf-8')
+
+        def broken(change, message):
+            game = json.loads(good)
+            change(game)
+            path.write_text(json.dumps(game, ensure_ascii=False), encoding='utf-8')
+            with self.assertRaisesRegex(ValueError, message):
+                builder.gap_games(self.root)
+            path.write_text(good, encoding='utf-8')
+        broken(lambda g: g.pop('prefix'), r'quis-pulsat\.json: Missing fields')
+        broken(lambda g: g['rounds'][1].update(id='quis'), r'quis-pulsat\.json: round quis: the id is used twice')
+        broken(lambda g: g['rounds'][0].update(text=['Nesciō {|aliquis} quis pulset.']), r'quis-pulsat\.json: round quis: a gap with an empty form')
+        broken(lambda g: g['rounds'][0].update(text=['Nesciō {Aliquis/|aliquis} quis.']), 'a gap with an empty form')
+        broken(lambda g: g['rounds'][0].update(text=['Nesciō quis pulset.']), 'round quis: no gaps')
+        broken(lambda g: g['rounds'][0].update(text=['Nesciō {Aliquis|aliquis} quis {pulset.']), 'a brace outside a gap')
+        broken(lambda g: g.update(prefix='uet-'), 'two games with the same prefix')
+        broken(lambda g: g.pop('tabulae'), r'Missing fields')
+        broken(lambda g: g['tabulae'][1]['rows'][2].pop(), r'quis-pulsat\.json: table 2, row 3: 1 cells for 2 heads')
+        broken(lambda g: g['tabulae'][0]['rows'][0].__setitem__(4, ''), r'table 1, row 1: an empty cell')
+        broken(lambda g: g['tabulae'][0]['rows'][0].__setitem__(4, ' cujus'), r'table 1, row 1: an empty cell')
+        broken(lambda g: g['tabulae'].clear(), 'no tables of forms')
+        broken(lambda g: g.pop('hints'), r'Missing fields')
+        broken(lambda g: g['hints'].pop('en'), r'Missing fields')
+        broken(lambda g: g['tabulae'][0].update(round='cuius'), r"quis-pulsat\.json: table 1: no round 'cuius' in this game")
+        broken(lambda g: g['rounds'][0].update(id='Quis'), 'the id must be lower-case')
+        path.write_text('{"id": ', encoding='utf-8')
+        with self.assertRaisesRegex(ValueError, r'quis-pulsat\.json: not valid JSON'):
+            builder.gap_games(self.root)
 
     def test_sources_are_read_from_the_opening_of_a_citation(self):
         cases = {

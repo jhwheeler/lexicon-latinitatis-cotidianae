@@ -525,6 +525,11 @@
   // worker has the page, the pictures it has not saved yet are fetched one after another, which
   // saves them (src/sw.js keeps whatever is read), and the page says when all are there. Nothing
   // is fetched twice, and nothing at all for a reader who has asked the browser to save data.
+  // The worker never clears a picture away to make room for pages (Jack, 20 November 2026: "maximī
+  // mōmentī est mē chartīs ūtī posse sine interrēte"), so once all are there the pictures of cards
+  // that are gone are removed here. Opened from the home screen, the page also asks the browser not
+  // to clear the lexicon's storage when the device runs short (Claude's addition, untried on a phone;
+  // only there, because one browser asks the reader's leave for it in a tab).
   let offline = false;
   async function savePictures() {
     if (offline || !('caches' in window) || !navigator.serviceWorker.controller || (navigator.connection && navigator.connection.saveData)) return;
@@ -546,6 +551,14 @@
       }
       offline = true;
       q('c-offline').textContent = t('offline'); q('c-offline').hidden = false;
+      const wanted = new Set(cards.map(card => new URL(card.picture, location.href).pathname));
+      const folder = new URL('chartae/', location.href).pathname;
+      for (const key of await cache.keys()) {
+        const path = new URL(key.url).pathname;
+        if (path.startsWith(folder) && !wanted.has(path)) await cache.delete(key);
+      }
+      const installed = navigator.standalone || matchMedia('(display-mode: standalone)').matches;
+      if (installed && navigator.storage && navigator.storage.persist) navigator.storage.persist().catch(() => {});
     } catch {}
   }
 

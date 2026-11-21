@@ -1,0 +1,107 @@
+{
+  "id": "quis-pulsat",
+  "order": 2,
+  "file": "quis-pulsat.html",
+  "name": "Quis pulsat?",
+  "description": "Quis pulsat? A game of the Latin indefinite pronouns (aliquis, quisquam, quīdam, quisque, quīvīs, nēmō): fill the gaps in short dialogues, in Latin or with an English interface.",
+  "eyebrow": {"la": "Lūdus prōnōminum indēfīnītōrum", "en": "A game of the indefinite pronouns"},
+  "prefix": "qp-",
+  "hints": {"la": "Prōnōmina ostendere", "en": "Show the pronouns"},
+  "tabulae": [
+    {
+      "caption": "Dē plūribus",
+      "heads": ["Prōnōmen", "Quis?", "Quid?", "Quem?", "Cujus?", "Cui?"],
+      "rows": [
+        ["quis?", "quis", "quid", "quem", "cujus", "cui"],
+        ["aliquis", "aliquis", "aliquid", "aliquem", "alicujus", "alicui"],
+        ["quis (post sī, nē, num)", "quis", "quid", "quem", "cujus", "cui"],
+        ["quīdam", "quīdam", "quiddam", "quendam", "cujusdam", "cuidam"],
+        ["quisquam", "quisquam", "quicquam", "quemquam", "cujusquam", "cuiquam"],
+        ["quisque", "quisque", "quidque", "quemque", "cujusque", "cuique"],
+        ["quīvīs", "quīvīs", "quidvīs", "quemvīs", "cujusvīs", "cuivīs"],
+        ["quīlibet", "quīlibet", "quidlibet", "quemlibet", "cujuslibet", "cuilibet"],
+        ["quisquis", "quisquis", "quicquid", "quemquem", "—", "—"],
+        ["quīcumque", "quīcumque", "quodcumque", "quemcumque", "cujuscumque", "cuicumque"],
+        ["ecquis", "ecquis", "ecquid", "ecquem", "—", "—"],
+        ["nēmō", "nēmō", "nihil", "nēminem", "nūllīus", "nēminī"]
+      ]
+    },
+    {
+      "caption": "Dē duōbus",
+      "heads": ["Dē duōbus", "Dē plūribus"],
+      "rows": [
+        ["uter?", "quis?"],
+        ["alter", "alius"],
+        ["uterque", "quisque"],
+        ["neuter", "nēmō"],
+        ["alteruter", "aliquis"],
+        ["utercumque", "quīcumque"],
+        ["utervīs, uterlibet", "quīvīs, quīlibet"]
+      ]
+    }
+  ],
+  "rounds": [
+    {
+      "id": "quis", "tab": "Quis?", "q": "Quis pulsat?",
+      "text": [
+        "Nesciō quis pulset. {Aliquis|aliquis} certē adest, neque enim jānua suā sponte sonat. ",
+        "Heri {quīdam|quīdam} vēnit, cujus nōmen nōn audīvī; fortasse īdem redit. ",
+        "Rogō: «Quis es?», neque {quisquam|quisquam} respondet. Sī {quis|quis (post sī)} mē quaerit, cūr tacet? ",
+        "{Quisquis/Quīcumque|quisquis} est, exspectet, dum aperiam. Pulsāre {quīvīs/quīlibet|quīvīs} potest, intrāre nōn item. ",
+        "Vesperī suam {quisque|quisque} domum redit; hic autem ad meam venit. ",
+        "Jānuam aperiō. {Nēmō|nēmō} adest. Clāmō: «Heus, {ecquis|ecquis} hīc est?»"
+      ]
+    },
+    {
+      "id": "quid", "tab": "Quid?", "q": "Quid est in arcā?",
+      "text": [
+        "Nesciō quid in arcā sit. {Aliquid|aliquis} certē inest, nam gravis est. ",
+        "Avia {quiddam|quīdam} mihi prōmīsit, neque dīxit quid esset. Sī {quid|quis (post sī)} fragile inest, cautē ferenda est. ",
+        "Arcam quatiō, neque {quicquam/quidquam|quisquam} sonat. {Quicquid/Quidquid/Quodcumque|quisquis} est, meum est. ",
+        "Puerō {quidvīs/quidlibet|quīvīs} placet, dum novum sit. Optimum {quidque|quisque} diūtissimē exspectātur. ",
+        "Arcam aperiō. {Nihil/Nīl|nēmō} inest praeter chartam. {Ecquid|ecquis} in chartā scrīptum est?"
+      ]
+    },
+    {
+      "id": "quem", "tab": "Quem?", "q": "Quem exspectat Theodōrus?",
+      "text": [
+        "Nesciō quem exspectet. {Aliquem|aliquis} certē exspectat, nam ad fenestram stat. ",
+        "Rogātus negat sē {quemquam|quisquam} exspectāre. Heri {quendam|quīdam} in hortō convēnit, quem jam amīcum vocat. ",
+        "Sī {quem|quis (post sī)} in viā videt, statim salūtat; {quemcumque/quemquem|quīcumque} videt, rogat ut sēcum lūdat. ",
+        "Nōn tamen {quemvīs/quemlibet|quīvīs} domum invītat. Amīcōs suō {quemque|quisque} nōmine appellat. ",
+        "Hodiē via vacua est; {nēminem|nēmō} videt. {Ecquem|ecquis} tū vīdistī?"
+      ]
+    },
+    {
+      "id": "cujus", "tab": "Cujus?", "q": "Cujus est hic pilleus?",
+      "text": [
+        "Nesciō cujus sit. {Alicujus|aliquis} certē est, neque enim pilleī dē caelō cadunt. ",
+        "Īnspiciō, neque {cujusquam|quisquam} nōmen inveniō. In lūdō suum {cujusque|quisque} nōmen in pilleō scrīptum est. ",
+        "Fortasse puerī {cujusdam|quīdam} est, quī heri hīc lūsit. {Cujusvīs/Cujuslibet|quīvīs} est pilleum āmittere. ",
+        "Sī {cujus|quis (post sī)} pilleum invēneris, reddere dēbēs. ",
+        "{Cujuscumque|quīcumque} est, reddētur; quod autem {nūllīus|nēmō} est, inventōris fit."
+      ]
+    },
+    {
+      "id": "cui", "tab": "Cui?", "q": "Cui mālum dabit Theodōrus?",
+      "text": [
+        "Nesciō cui datūrus sit. {Alicui|aliquis} certē dabit, nam duo māla habet. ",
+        "Heri puerō {cuidam|quīdam}, quem numquam anteā vīderat, pānem dedit. ",
+        "Avus dīcit jūstum esse suum {cuique|quisque} tribuere. ",
+        "Nōn {cuivīs/cuilibet|quīvīs} dat, neque tamen {cuiquam|quisquam} rogantī negat. ",
+        "Sī {cui|quis (post sī)} cibus deest, libenter dat; {cuicumque|quīcumque} dederit, is grātiās aget. ",
+        "Hodiē autem {nēminī|nēmō} dat, sed ipse utrumque edit."
+      ]
+    },
+    {
+      "id": "uter", "tab": "Uter?", "q": "Uter vīcit?",
+      "text": [
+        "Duo puerī cucurrērunt. Nesciō uter vīcerit. {Alter|alius ē duōbus} dīcit sē vīcisse, {alter|alius ē duōbus} negat. ",
+        "{Uterque|quisque ē duōbus} celeriter cucurrit, {neuter|nēmō ē duōbus} cecidit. ",
+        "{Alteruter|aliquis ē duōbus} certē vīcit, nisi simul ad mētam pervēnērunt. ",
+        "{Utercumque|quīcumque ē duōbus} vīcit, ambō laudandī sunt. ",
+        "{Utervīs/Uterlibet|quīvīs ē duōbus} praemium ferat; meā nihil interest."
+      ]
+    }
+  ]
+}

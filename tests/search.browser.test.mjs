@@ -2,6 +2,7 @@ import { before, beforeEach, after, test } from 'node:test';
 import assert from 'node:assert/strict';
 import { spawn } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
+import { readdirSync, readFileSync } from 'node:fs';
 import { chromium } from 'playwright';
 
 // The pages are served over HTTP, as the published site is: pages opened from disk share their
@@ -14,6 +15,12 @@ const search = async query => {
   await page.locator('#search').fill(query);
   if (query) await page.waitForFunction(() => /matching/.test(document.getElementById('results').textContent));
 };
+// The gap games (src/lacunae/, one file per game; 20 November 2026), in their order: each page's name,
+// its first round, and the prefix of its storage keys.
+const GAP_GAMES = readdirSync(new URL('../src/lacunae/', import.meta.url)).filter(name => name.endsWith('.json'))
+  .map(name => JSON.parse(readFileSync(new URL(`../src/lacunae/${name}`, import.meta.url), 'utf-8')))
+  .sort((a, b) => a.order - b.order)
+  .map(game => ({ file: game.file, first: game.rounds[0].id, prefix: game.prefix, name: game.name }));
 const overflows = () => page.evaluate(() => document.documentElement.scrollWidth > innerWidth);
 // A preference saved on one page is read by the next.
 const settle = () => page.waitForTimeout(200);
@@ -281,9 +288,11 @@ test('the lexicon is kept on the device: it opens and searches offline, as an ap
     await app.locator('#g-show').click();
     await app.locator('#g-got').click();
   }
-  await app.goto(pageUrl('theodorus.html'));
-  assert.equal(await app.locator('#check').isVisible(), true);
-  assert.equal(await app.locator('.gap input').count() > 0, true);
+  for (const game of GAP_GAMES) {
+    await app.goto(pageUrl(game.file));
+    assert.equal(await app.locator('#check').isVisible(), true, game.file);
+    assert.equal(await app.locator('.gap input').count() > 0, true, game.file);
+  }
   // The guidance pages, never opened here, were saved when the lexicon was.
   for (const [path, title] of [['how-we-decide.html', 'How we decide'], ['how-practice-works.html', 'How the practice works']]) {
     await app.goto(pageUrl(path));
@@ -292,6 +301,55 @@ test('the lexicon is kept on the device: it opens and searches offline, as an ap
   // A page never opened here says so, and leads back to the search.
   await app.goto(pageUrl('c/soap.html'));
   assert.match(await app.locator('h1').textContent(), /not saved on this device/);
+  await context.close();
+});
+
+test('the picture cards\' pictures stay on the device however many pages are read after them', async () => {
+  const context = await browser.newContext({ viewport: { width: 390, height: 800 } });
+  const app = await context.newPage();
+  await app.goto(url);
+  await app.evaluate(() => navigator.serviceWorker.ready);
+  await app.waitForFunction(() => navigator.serviceWorker.controller);
+  await app.goto(pageUrl('chartae.html'));
+  await app.locator('#c-offline:not([hidden])').waitFor();
+  const saved = () => app.evaluate(async () => {
+    const paths = (await (await caches.open('lexicon-pages')).keys()).map(key => new URL(key.url).pathname);
+    return { pictures: paths.filter(path => /\/chartae\/[^/]+$/.test(path)).sort(), pages: paths.filter(path => !/\/chartae\/[^/]+$/.test(path)) };
+  });
+  const pictures = (await saved()).pictures;
+  const cards = await app.evaluate(() => window.lexiconChartae.cards.map(card => new URL(card.picture, location.href).pathname).sort());
+  assert.deepEqual(pictures, cards, 'every card has its picture saved');
+  // More pages than the worker keeps are saved after the pictures, a picture of a card that is gone
+  // among them; then one more page is read, which makes the worker clear the oldest away.
+  await app.evaluate(async () => {
+    const cache = await caches.open('lexicon-pages');
+    const folder = new URL('.', location.href).pathname;
+    await cache.put(folder + 'chartae/gone.jpg', new Response('gone'));
+    for (let n = 0; n < 650; n++) await cache.put(`${folder}c/filler-${n}.html`, new Response('filler'));
+  });
+  await app.goto(pageUrl('c/pyjamas.html'));
+  // Once cleared: the 600 pages, every card's picture, and the one that is gone.
+  await app.waitForFunction(async limit => (await (await caches.open('lexicon-pages')).keys()).length <= limit, 600 + cards.length + 1);
+  let now = await saved();
+  assert.equal(now.pages.length, 600, 'the pages are cut to the 600 most recent');
+  assert.equal(now.pages.includes(new URL(pageUrl('c/pyjamas.html')).pathname), true, 'the page just read is kept');
+  assert.deepEqual(now.pictures.filter(path => !path.endsWith('/gone.jpg')), cards, 'and no picture was cleared away');
+  // The cards' page removes the picture of the card that is gone, and offline every card has its picture.
+  await app.goto(pageUrl('chartae.html'));
+  await app.locator('#c-offline:not([hidden])').waitFor();
+  await app.waitForFunction(async () => !(await (await caches.open('lexicon-pages')).match(new URL('chartae/gone.jpg', location.href).pathname)));
+  await context.setOffline(true);
+  await app.reload();
+  const broken = await app.evaluate(async () => {
+    const failed = [];
+    for (const card of window.lexiconChartae.cards) {
+      const picture = new Image();
+      picture.src = card.picture;
+      await picture.decode().catch(() => failed.push(card.id));
+    }
+    return failed;
+  });
+  assert.deepEqual(broken, [], 'every picture is shown offline');
   await context.close();
 });
 
@@ -617,7 +675,7 @@ test('on a phone the categories fold into a menu above the search', async () => 
 
 test('every page is usable on a phone: no sideways scrolling, 44px controls, no zoom on search', async () => {
   const pages = ['index.html', 'k/culina.html', 'words.html', 'latin.html', 'c/cooking-pot.html', 'c/tickle.html',
-                 'c/perhaps.html', 'l/fortasse.html', 'rulings.html', 'how-we-decide.html', 'how-practice-works.html', 'practice.html', 'hora.html', 'chartae.html', 'theodorus.html', 'review.html'];
+                 'c/perhaps.html', 'l/fortasse.html', 'rulings.html', 'how-we-decide.html', 'how-practice-works.html', 'practice.html', 'hora.html', 'chartae.html', ...GAP_GAMES.map(game => game.file), 'review.html'];
   for (const width of [320, 375, 390]) {
     await page.setViewportSize({ width, height: 800 });
     for (const path of pages) {
@@ -634,7 +692,7 @@ test('every page is usable on a phone: no sideways scrolling, 44px controls, no 
     }
   }
   for (const [path, field] of [['index.html', '#search'], ['k/culina.html', '#search'], ['c/kind.html', '#site-search'], ['words.html', '#site-search'],
-                               ['practice.html', '#site-search'], ['chartae.html', '#site-search'], ['hora.html', '#answer'], ['theodorus.html', '#gap-ubi-0']]) {
+                               ['practice.html', '#site-search'], ['chartae.html', '#site-search'], ['hora.html', '#answer'], ...GAP_GAMES.map(game => [game.file, `#gap-${game.first}-0`])]) {
     await page.goto(pageUrl(path));
     assert.ok(parseFloat(await page.locator(field).evaluate(el => getComputedStyle(el).fontSize)) >= 16, path);
   }
@@ -2367,18 +2425,25 @@ test('the practice lobby links to How the practice works, in Latin and in Englis
 
 test('practice is reached from the front page and from every footer, never from the header', async () => {
   const links = page.locator('.plist a');
-  assert.deepEqual(await links.evaluateAll(nodes => nodes.map(n => n.getAttribute('href'))), ['practice.html', 'hora.html', 'chartae.html', 'theodorus.html']);
+  assert.deepEqual(await links.evaluateAll(nodes => nodes.map(n => n.getAttribute('href'))), ['practice.html', 'hora.html', 'chartae.html', ...GAP_GAMES.map(game => game.file)]);
+  // The gap games are one item, «Lacūnae», with the games' names as links (the coordinating session's choice).
+  assert.equal(await page.locator('.plist-group .toc-la').textContent(), 'Lacūnae');
+  assert.deepEqual(await page.locator('.plist-games a').allTextContents(), GAP_GAMES.map(game => game.name));
   const practice = await page.locator('#practice-title').boundingBox(), contents = await page.locator('#contents-title').boundingBox();
   assert.ok(practice.y < contents.y, 'above the list of categories');
   await links.first().click();
   await page.waitForURL(/practice\.html$/);
   assert.equal(await page.locator('h1').textContent(), 'Exercitātiō');
-  assert.deepEqual(await page.locator('.p-more a').evaluateAll(nodes => nodes.map(n => n.getAttribute('href'))), ['hora.html', 'chartae.html', 'theodorus.html']);
+  assert.deepEqual(await page.locator('.p-more a').evaluateAll(nodes => nodes.map(n => n.getAttribute('href'))), ['hora.html', 'chartae.html', ...GAP_GAMES.map(game => game.file)]);
+  assert.equal(await page.locator('.p-gaps [data-t="gaps"]').textContent(), 'Lacūnae:');
   await page.locator('.p-more a[href="hora.html"]').click();
   await page.waitForURL(/hora\.html$/);
   await page.goBack();
   await page.locator('.p-more a[href="theodorus.html"]').click();
   await page.waitForURL(/theodorus\.html$/);
+  await page.goBack();
+  await page.locator('.p-more a[href="quis-pulsat.html"]').click();
+  await page.waitForURL(/quis-pulsat\.html$/);
   for (const [path, href] of [['index.html', 'practice.html'], ['c/kind.html', '../practice.html'], ['k/culina.html', '../practice.html'], ['practice.html', 'practice.html']]) {
     await page.goto(pageUrl(path));
     assert.equal(await page.locator('footer').getByRole('link', { name: 'Practice', exact: true }).getAttribute('href'), href, path);
@@ -3674,7 +3739,7 @@ test('Ubi est Theodōrus? judges the gaps, counts only the reader’s own, follo
   assert.equal(await style('#gap-ubi-1', 'borderBottomStyle'), 'dotted');
   assert.equal(await game.locator('.gap input:not([readonly])').count(), 0);
   assert.equal(await game.locator('#score').textContent(), 'Rēctē: 5 ex 11');
-  assert.equal(await game.locator('#message').textContent(), 'Perfectum est; 5 ex 11 ipse explēvistī.');
+  assert.equal(await game.locator('#message').textContent(), 'Cōnfectum est; 5 ex 11 ipse explēvistī.');
   // The struck-through answer is kept in the round, through a change of tab.
   await game.locator('.tab[data-id="quo"]').click();
   await game.locator('.tab[data-id="ubi"]').click();
@@ -3741,5 +3806,202 @@ test('Ubi est Theodōrus? judges the gaps, counts only the reader’s own, follo
   await game.locator('#back').click();
   await game.waitForURL(/practice\.html$/);
   await game.evaluate(() => { for (const key of ['uet-hints', 'uet-strict', 'uet-done', 'lexicon-practice-lang']) localStorage.removeItem(key); });
+  await context.close();
+});
+
+// Quis pulsat? ------------------------------------------------------------------------------------
+
+// The second gap game (20 November 2026), on the engine of Ubi est Theodōrus?: the indefinite pronouns.
+test('Quis pulsat? takes i for j and gives the house spelling, takes alternatives, opens a round by its hash, and keeps its own keys', async () => {
+  const context = await browser.newContext({ viewport: { width: 375, height: 760 }, serviceWorkers: 'block' });
+  const game = await context.newPage();
+  const requested = [];
+  game.on('request', request => requested.push(request.url()));
+  await game.goto(pageUrl('index.html'));
+  await game.evaluate(() => {
+    for (const key of ['qp-hints', 'qp-strict', 'qp-done', 'lexicon-practice-lang']) localStorage.removeItem(key);
+    localStorage.setItem('uet-done', '{"ubi":true}');
+    localStorage.setItem('uet-hints', 'true');
+  });
+  // The hash opens its round.
+  await game.goto(pageUrl('quis-pulsat.html#cujus'));
+  await game.locator('#check').waitFor();
+  await game.waitForLoadState('networkidle');
+  assert.deepEqual(requested.filter(address => !address.startsWith(base)), []);
+  assert.equal(await game.title(), 'Quis pulsat? · Lexicon Latīnitātis Cotīdiānae');
+  assert.equal(await game.locator('h1').textContent(), 'Quis pulsat?');
+  assert.equal(await game.locator('.eyebrow').textContent(), 'Lūdus prōnōminum indēfīnītōrum');
+  assert.equal(await game.locator('#question').textContent(), 'Cujus est hic pilleus?');
+  assert.equal(await game.locator('.tab[aria-pressed="true"]').getAttribute('data-id'), 'cujus');
+  assert.deepEqual(await game.locator('.tab').evaluateAll(nodes => nodes.map(n => n.dataset.id)), ['quis', 'quid', 'quem', 'cujus', 'cui', 'uter']);
+  // Another game's keys are not this game's: Ubi est Theodōrus?'s pronouns were on, these are not.
+  assert.equal(await game.locator('#opt-hints').isChecked(), false);
+  assert.equal(await game.locator('.tab .done').count(), 0);
+  // i for j: alicuius is right, and is given the house spelling with j; so is cujusquam, in strict mode too.
+  const gap = n => game.locator(`#gap-cujus-${n}`);
+  await gap(0).fill('alicuius');
+  await gap(0).press('Enter');
+  assert.match(await gap(0).getAttribute('class'), /\bright\b/);
+  assert.equal(await gap(0).inputValue(), 'Alicujus');
+  await game.locator('#opt-strict').check();
+  await gap(1).fill('cuiusquam');
+  await gap(1).press('Enter');
+  assert.equal(await gap(1).inputValue(), 'cujusquam');
+  // An alternative is taken, and kept as the form typed, in the house spelling: cuiuslibet is Cujuslibet, not Cujusvīs.
+  await game.locator('#opt-strict').uncheck();
+  await gap(4).fill('cuiuslibet');
+  await gap(4).press('Enter');
+  assert.equal(await gap(4).inputValue(), 'Cujuslibet');
+  assert.equal(await game.locator('#score').textContent(), 'Rēctē: 3 ex 8');
+  // The other rounds by their hashes, and the alternatives of the round of two.
+  await game.goto(pageUrl('quis-pulsat.html#uter'));
+  assert.equal(await game.locator('#question').textContent(), 'Uter vīcit?');
+  await game.locator('#gap-uter-6').fill('uterlibet');
+  await game.locator('#gap-uter-6').press('Enter');
+  assert.equal(await game.locator('#gap-uter-6').inputValue(), 'Uterlibet');
+  await game.goto(pageUrl('quis-pulsat.html#quid'));
+  await game.locator('#gap-quid-4').fill('quidquid');
+  await game.locator('#gap-quid-4').press('Enter');
+  assert.equal(await game.locator('#gap-quid-4').inputValue(), 'Quidquid');
+  // Its storage keys are qp-…, and Ubi est Theodōrus?'s are as they were.
+  const keys = await game.evaluate(() => Object.fromEntries(Object.keys(localStorage).filter(key => /^(qp|uet)-/.test(key)).map(key => [key, localStorage.getItem(key)])));
+  assert.deepEqual(keys, { 'qp-strict': 'false', 'uet-done': '{"ubi":true}', 'uet-hints': 'true' });
+  // The foot links lead to the other practice pages, the sibling game among them.
+  assert.deepEqual(await game.locator('.links a').evaluateAll(nodes => nodes.map(n => n.getAttribute('href'))),
+    ['index.html', 'practice.html', 'hora.html', 'chartae.html', ...GAP_GAMES.map(g => g.file).filter(file => file !== 'quis-pulsat.html')]);
+  await game.locator('.links a[href="theodorus.html"]').click();
+  await game.waitForURL(/theodorus\.html$/);
+  assert.equal(await game.locator('#opt-hints').isChecked(), true);
+  assert.equal(await game.locator('.tab[data-id="ubi"] .done').count(), 1);
+  assert.deepEqual(await game.locator('.links a').evaluateAll(nodes => nodes.map(n => n.getAttribute('href'))),
+    ['index.html', 'practice.html', 'hora.html', 'chartae.html', ...GAP_GAMES.map(g => g.file).filter(file => file !== 'theodorus.html')]);
+  await game.evaluate(() => { for (const key of Object.keys(localStorage)) if (/^(qp|uet)-/.test(key)) localStorage.removeItem(key); });
+  await context.close();
+});
+
+// The table of forms in both gap games (Jack, 20 November 2026: "a table of all the forms for someone
+// who does not know them («Mōnstrā fōrmās» or something of the kind, and it opens)").
+test('the gap games show their table of forms on request, closed at first, and it fits a phone', async () => {
+  const context = await browser.newContext({ viewport: { width: 375, height: 760 }, serviceWorkers: 'block' });
+  const game = await context.newPage();
+  const second = { 'theodorus.html': ['hic', 'hīc', 'hūc', 'hinc', 'hāc'], 'quis-pulsat.html': ['aliquis', 'aliquis', 'aliquid', 'aliquem', 'alicujus', 'alicui'] };
+  assert.deepEqual(GAP_GAMES.map(g => g.file).filter(file => second[file]), ['theodorus.html', 'quis-pulsat.html']);
+  await game.goto(pageUrl('index.html'));
+  await game.evaluate(() => localStorage.removeItem('lexicon-practice-lang'));
+  for (const file of Object.keys(second)) {
+    await game.goto(pageUrl(file));
+    await game.locator('#check').waitFor();
+    const control = game.locator('#forms > summary'), table = game.locator('#forms table').first();
+    assert.equal(await table.isVisible(), false, `${file}: closed at first`);
+    assert.equal(await control.innerText(), 'Mōnstrā fōrmās');
+    assert.ok((await control.boundingBox()).height >= 44, `${file}: the control is 44px or more`);
+    await control.click();
+    assert.equal(await table.isVisible(), true, `${file}: open`);
+    assert.equal(await control.innerText(), 'Cēlā fōrmās');
+    const row = await table.locator('tbody tr').nth(1).locator('th, td').allTextContents();
+    assert.deepEqual(row, second[file], file);
+    assert.equal(await table.locator('tbody tr').first().locator('th').textContent(), 'quis?');
+    // The heads are rubrics, the serif's small capitals; the forms are Latin.
+    assert.match(await table.locator('thead th').first().evaluate(node => getComputedStyle(node).fontFamily), /^"Lexicon Serif"/);
+    assert.equal(await table.locator('thead th').first().evaluate(node => getComputedStyle(node).fontVariantCaps), 'all-small-caps');
+    assert.equal(await game.locator('#forms-body').getAttribute('lang'), 'la');
+    // Open, the page still does not scroll sideways: the table scrolls in its own box.
+    assert.equal(await game.evaluate(() => document.documentElement.scrollWidth > innerWidth), false, `${file}: open at 375px`);
+    // It closes again; open, it stays open through a change of round, and it opens closed on the next visit.
+    await control.click();
+    assert.equal(await table.isVisible(), false, `${file}: closed again`);
+    await control.click();
+    await game.locator('.tab').nth(1).click();
+    assert.equal(await table.isVisible(), true, `${file}: still open in the next round`);
+    await game.reload();
+    assert.equal(await table.isVisible(), false, `${file}: closed on a new visit`);
+    // The keyboard opens it too.
+    await control.focus();
+    await game.keyboard.press('Enter');
+    assert.equal(await table.isVisible(), true, `${file}: open by the keyboard`);
+  }
+  // Every gap game, with its forms open, fits a phone: nothing sideways, the control 44px or more, every round.
+  for (const width of [320, 375]) {
+    await game.setViewportSize({ width, height: 760 });
+    for (const { file } of GAP_GAMES) {
+      await game.goto(pageUrl(file));
+      await game.locator('#forms > summary').click();
+      for (let n = 0; n < await game.locator('.tab').count(); n++) {
+        await game.locator('.tab').nth(n).click();
+        assert.equal(await game.locator('#forms table:not([hidden])').first().isVisible(), true, `${file} round ${n}`);
+        assert.equal(await game.evaluate(() => document.documentElement.scrollWidth > innerWidth), false, `${file} round ${n} at ${width}px with the forms open`);
+      }
+      assert.ok((await game.locator('#forms > summary').boundingBox()).height >= 44, file);
+    }
+  }
+  await game.setViewportSize({ width: 375, height: 760 });
+  // In English the control is English, and the forms, captions, and heads stay Latin.
+  await game.evaluate(() => localStorage.setItem('lexicon-practice-lang', 'en'));
+  await game.goto(pageUrl('quis-pulsat.html'));
+  await game.locator('#check').waitFor();
+  assert.equal(await game.locator('#forms > summary').innerText(), 'Show the forms');
+  await game.locator('#forms > summary').click();
+  assert.equal(await game.locator('#forms > summary').innerText(), 'Hide the forms');
+  assert.deepEqual(await game.locator('#forms caption').allTextContents(), ['Dē plūribus', 'Dē duōbus']);
+  assert.equal(await game.locator('html').getAttribute('lang'), 'en');
+  assert.equal(await game.locator('#forms-body').getAttribute('lang'), 'la');
+  await game.evaluate(() => localStorage.removeItem('lexicon-practice-lang'));
+  await context.close();
+});
+
+// The three gap games of 20 November 2026 (Jack: "all three please"): what is their own.
+test('Bis bīna, Heri, hodiē, crās, and Hic an ille?: the hint switch, a numeral for a hint, a table per verb, and alternatives', async () => {
+  const context = await browser.newContext({ viewport: { width: 375, height: 760 }, serviceWorkers: 'block' });
+  const game = await context.newPage();
+  await game.goto(pageUrl('index.html'));
+  await game.evaluate(() => { for (const key of Object.keys(localStorage)) if (/^(bb|hc|hi)-|^lexicon-practice-lang$/.test(key)) localStorage.removeItem(key); });
+  // Bis bīna: the switch shows the numbers, and a gap's hint is a numeral, named as a hint for a screen reader.
+  await game.goto(pageUrl('bis-bina.html'));
+  await game.locator('#check').waitFor();
+  assert.equal(await game.locator('label[for="opt-hints"]').innerText(), 'Numerōs ostendere');
+  await game.locator('#opt-hints').check();
+  assert.equal(await game.evaluate(() => localStorage.getItem('bb-hints')), 'true');
+  const hint = game.locator('#gap-quot-0 + .under .hint');
+  assert.equal(await hint.isVisible(), true);
+  assert.match(await hint.textContent(), /^\d+$/);
+  assert.equal(await game.locator('#gap-quot-0').getAttribute('aria-label'), `lacūna 1, nota: ${await hint.textContent()}`);
+  await game.goto(pageUrl('bis-bina.html#bis-bina'));
+  assert.equal(await game.locator('.tab[aria-pressed="true"]').getAttribute('data-id'), 'bis-bina');
+  // Heri, hodiē, crās: the switch shows the tenses; the forms show only the open round's table, and follow the tab.
+  await game.goto(pageUrl('heri-hodie-cras.html#lego'));
+  await game.locator('#check').waitFor();
+  assert.equal(await game.locator('label[for="opt-hints"]').innerText(), 'Persōnās et tempora ostendere');
+  await game.locator('#forms > summary').click();
+  const shown = () => game.locator('#forms table').evaluateAll(tables => tables.filter(t => t.getClientRects().length).map(t => t.caption.textContent));
+  assert.deepEqual(await shown(), ['legō, legere, lēgī, lēctum']);
+  await game.locator('.tab[data-id="venio"]').click();
+  assert.deepEqual(await shown(), ['veniō, venīre, vēnī, ventum']);
+  assert.equal(await game.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
+  // A perfect typed without macrons in the lēgit gap is right and given them; with macrons required it is not.
+  await game.locator('.tab[data-id="lego"]').click();
+  assert.deepEqual(await shown(), ['legō, legere, lēgī, lēctum']);
+  const legit = game.locator('#gap-lego-6');
+  await legit.fill('legit');
+  await legit.press('Enter');
+  assert.equal(await legit.inputValue(), 'lēgit');
+  assert.match(await legit.getAttribute('class'), /\bright\b/);
+  await game.locator('#reset').click();
+  await game.locator('#opt-strict').check();
+  await legit.fill('legit');
+  await legit.press('Enter');
+  assert.match(await legit.getAttribute('class'), /\bapex\b/);
+  assert.equal(await legit.inputValue(), 'legit');
+  await legit.fill('lēgit');
+  await legit.press('Enter');
+  assert.match(await legit.getAttribute('class'), /\bright\b/);
+  assert.deepEqual(Object.keys(await game.evaluate(() => ({ ...localStorage }))).filter(key => /^(bb|hc|hi)-/.test(key)).sort(), ['bb-hints', 'hc-strict']);
+  // Hic an ille?: an alternative form is taken and kept as typed.
+  await game.goto(pageUrl('hic-an-ille.html#plur2'));
+  await game.locator('#check').waitFor();
+  await game.locator('#gap-plur2-7').fill('iis');
+  await game.locator('#gap-plur2-7').press('Enter');
+  assert.equal(await game.locator('#gap-plur2-7').inputValue(), 'iīs');
+  assert.match(await game.locator('#gap-plur2-7').getAttribute('class'), /\bright\b/);
+  await game.evaluate(() => { for (const key of Object.keys(localStorage)) if (/^(bb|hc|hi)-/.test(key)) localStorage.removeItem(key); });
   await context.close();
 });

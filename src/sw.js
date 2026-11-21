@@ -21,8 +21,10 @@ self.addEventListener('activate', event => {
 
 // The oldest saved pages make room for new ones. The picture cards' pictures (chartae/) are saved in
 // the same cache and are never among them (Jack, 20 November 2026: the cards must work offline; until
-// then a picture counted as a page, and reading entries could push the pictures out). They are few,
-// and src/chartae.js removes those of cards that are gone.
+// then a picture counted as a page, and reading entries could push the pictures out). They are many
+// (hundreds, and more with every subject added), but they are what the cards need offline; they are
+// fetched by src/chartae.js, the round's first, and it removes those of cards that are gone. Until a
+// picture is here, the card shows the small preview carried in assets/chartae-data.js.
 const PICTURE = /\/chartae\/[^/]+$/;
 async function trim(cache) {
   const keys = (await cache.keys()).filter(key => !PICTURE.test(new URL(key.url).pathname));

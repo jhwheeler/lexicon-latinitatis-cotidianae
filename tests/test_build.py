@@ -1001,6 +1001,63 @@ class BuildTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'is missing'):
             builder.build_site(self.root)
 
+    def test_every_picture_card_carries_the_preview_of_its_own_picture(self):
+        """Jack, 21 November 2026, on 4G, of a card shown with its picture's place empty: "Saepe sīc
+        fit"; and "Cōnsilium habeō: imāginēs in indice ipsō inclūdere possumus". Every card carries a
+        small preview of its picture in the card data, made from the picture as it is now (its JPEG
+        comment names the picture by a hash); the builder refuses a card whose preview is missing or
+        was made from another picture, and a preview that no card uses."""
+        import base64
+        outputs = builder.build_site(self.root)
+        script = outputs['assets/chartae-data.js']
+        data = json.loads(script[script.index('{'):script.rindex('}') + 1])
+        for card in data['cards']:
+            with self.subTest(card=card['id']):
+                preview = base64.b64decode(card['preview'], validate=True)
+                self.assertEqual(preview, (self.root / builder.PREVIEWS / f'{card["id"]}.jpg').read_bytes())
+                self.assertEqual(preview[:3], b'\xff\xd8\xff')
+                self.assertLessEqual(len(preview), builder.PREVIEW_MOST)
+                self.assertEqual(builder.jpeg_comment(preview), builder.preview_mark(outputs[card['picture']]))
+                # Its size, from the frame header (SOF0 or SOF2): 102 high and 144 wide.
+                at = re.search(rb'\xff[\xc0\xc2]', preview).start()
+                self.assertEqual((int.from_bytes(preview[at + 7:at + 9], 'big'), int.from_bytes(preview[at + 5:at + 7], 'big')), builder.PREVIEW_SIZE)
+        # The previews are not pictures of the site: they are in the card data, which the worker saves when it installs.
+        self.assertFalse(any('chartae-previews' in path for path in outputs))
+        files = json.loads(re.search(r'const FILES = (\[.*?\]);', outputs['sw.js'])[1])
+        self.assertIn('assets/chartae-data.js', files)
+        first = data['cards'][0]['id']
+        preview = self.root / builder.PREVIEWS / f'{first}.jpg'
+        kept = preview.read_bytes()
+        # A preview made from another picture (the picture was fetched again, the preview not) is refused.
+        preview.write_bytes((self.root / builder.PREVIEWS / f'{data["cards"][1]["id"]}.jpg').read_bytes())
+        with self.assertRaisesRegex(ValueError, f'its preview data/chartae-previews/{first}.jpg was not made from the picture'):
+            builder.build_site(self.root)
+        # So is a picture changed under its preview.
+        preview.write_bytes(kept)
+        picture = self.root / f'src/chartae/{first}.jpg'
+        picture.write_bytes(picture.read_bytes() + b'\0')
+        with self.assertRaisesRegex(ValueError, 'was not made from the picture .* --previews'):
+            builder.build_site(self.root)
+        # A missing preview is refused, and says how to make it.
+        preview.unlink()
+        with self.assertRaisesRegex(ValueError, f'its preview data/chartae-previews/{first}.jpg is missing \\(run python3 scripts/fetch_picture.py --previews\\)'):
+            builder.build_site(self.root)
+        # A preview that no card uses is refused.
+        preview.write_bytes(kept)
+        (self.root / f'src/chartae/{first}.jpg').write_bytes(outputs[f'chartae/{first}.jpg'])
+        (self.root / builder.PREVIEWS / 'stray.jpg').write_bytes(kept)
+        with self.assertRaisesRegex(ValueError, 'chartae-previews has files that no card uses'):
+            builder.build_site(self.root)
+
+    def test_a_previews_jpeg_comment_is_read_from_the_segments_before_the_image(self):
+        """The preview check reads the JPEG's comment without Pillow (the build has none)."""
+        segment = lambda marker, body: b'\xff' + marker + (len(body) + 2).to_bytes(2, 'big') + body
+        jpeg = b'\xff\xd8' + segment(b'\xe0', b'JFIF\0\1\1') + segment(b'\xfe', b'lexicon-preview of sha256:ab') + b'\xff\xda' + b'\0' * 8
+        self.assertEqual(builder.jpeg_comment(jpeg), 'lexicon-preview of sha256:ab')
+        self.assertEqual(builder.jpeg_comment(b'\xff\xd8' + segment(b'\xe0', b'JFIF') + b'\xff\xda\xff\xfe\0\4ab'), '')
+        self.assertEqual(builder.jpeg_comment(b'GIF89a'), '')
+        self.assertEqual(builder.preview_mark(b'x'), 'lexicon-preview of sha256:' + hashlib.sha256(b'x').hexdigest())
+
     def test_the_picture_cards_have_subjects_and_kinds_and_food_only_for_animals(self):
         """The picture cards are one game for every subject (Jack, 20 November 2026): each kind
         belongs to a subject; an animal's card says what it eats (food), a plant's may say what it
@@ -1016,6 +1073,7 @@ class BuildTests(unittest.TestCase):
             data['cards'].append(card)
             return data
         shutil.copy(self.root / f'src/chartae/{animal["id"]}.jpg', self.root / 'src/chartae/planta-probata.jpg')
+        shutil.copy(self.root / builder.PREVIEWS / f'{animal["id"]}.jpg', self.root / builder.PREVIEWS / 'planta-probata.jpg')
         # A plant's card with what it bears, and an empty kind, are taken; the data says both.
         data = plant(bears='Glandēs.')
         data['groups'].append({'id': 'vacua', 'subject': 'plantae', 'latin': 'Vacua', 'english': 'Empty'})

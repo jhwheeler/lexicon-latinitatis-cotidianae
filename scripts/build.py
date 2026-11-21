@@ -27,6 +27,7 @@ The site is not kept in the repository: git ignores what a local build writes, a
 """
 import unicodedata
 import argparse
+import base64
 import functools
 import hashlib
 from html import escape, unescape
@@ -3489,8 +3490,8 @@ def legacy_script(site):
 # the plant card truncus), and nothing confuses them, since kinds are only ever looked up among the
 # kinds and cards among the cards (in the data, the page's buttons, and the stored deck, which holds
 # kinds, while the progress holds cards).
-# A card: id (unique across every subject: the picture is src/chartae/<id>.jpg, 720 by 511, and
-# the id is the key of the card's progress), latin (the dictionary form), also (optional, on a card
+# A card: id (unique across every subject: the picture is src/chartae/<id>.jpg, 720 by 511, its
+# preview data/chartae-previews/<id>.jpg, and the id is the key of the card's progress), latin (the dictionary form), also (optional, on a card
 # of any subject: a second Latin word for the same thing, as a full dictionary form, shown on the
 # back under the first; Jack, 20 November 2026: where two words mean the same thing, as coma and
 # capillus, one card with the second word on its back), english, group (its kind), line (a sentence
@@ -3520,6 +3521,49 @@ def legacy_script(site):
 # drink has none: a loaf, a dish, or a drink is not a taxon. The page shows it
 # after the English name in a language of its own (la-x-taxon), so that the display options leave
 # it alone.
+# Every card has a small preview of its picture in the card data itself (Jack, 21 November 2026, on his
+# iPhone on 4G, of a card shown with its picture's place empty: "Saepe sīc fit"; and his proposal:
+# "Cōnsilium habeō: imāginēs in indice ipsō inclūdere possumus"). The page shows it at once, and the
+# picture itself takes its place when its file has come, so a card is never without its cue, offline
+# either. The builder has no Pillow (the workflows install nothing), so the previews are small files
+# kept in the repository, data/chartae-previews/<id>.jpg, written by scripts/fetch_picture.py with
+# every picture it writes (and by its --previews pass for the rest); the builder only reads them,
+# writes them into assets/chartae-data.js in base64, and refuses a card whose preview is missing or
+# was made from another picture. A preview names the picture it was made from in its JPEG comment
+# (PREVIEW_MARK, with a hash of the picture's bytes): git keeps no file times, so the check is of the
+# content. The size and quality (PREVIEW_SIZE, PREVIEW_QUALITY, used by fetch_picture.py) are Claude's
+# choice: about 2.5 KB each, softened on the page so that the JPEG's blocks do not show.
+PREVIEWS = 'data/chartae-previews'
+PREVIEW_SIZE, PREVIEW_QUALITY, PREVIEW_MOST = (144, 102), 45, 8000   # pixels; JPEG quality; the most bytes a preview may have
+PREVIEW_MARK = 'lexicon-preview of sha256:{}'
+
+
+def preview_mark(picture):
+    """The comment a preview of this picture (its bytes) carries."""
+    return PREVIEW_MARK.format(hashlib.sha256(picture).hexdigest())
+
+
+def jpeg_comment(data):
+    """The text of a JPEG's first comment segment (COM), or '' if it has none before the image data."""
+    if data[:2] != b'\xff\xd8':
+        return ''
+    at = 2
+    while at + 4 <= len(data):
+        if data[at] != 0xFF:
+            return ''
+        marker = data[at + 1]
+        if marker == 0xFF:   # a fill byte
+            at += 1
+            continue
+        if marker in (0xDA, 0xD9):   # the image data, or the end
+            return ''
+        length = int.from_bytes(data[at + 2:at + 4], 'big')
+        if marker == 0xFE:
+            return data[at + 4:at + 2 + length].decode('latin-1')
+        at += 2 + length
+    return ''
+
+
 FOOD_SUBJECT, BEARS_SUBJECT = 'animalia', 'plantae'   # food only and always on an animal's card; bears only on a plant's
 PICTURE_LICENCES = {
     'CC0': 'https://creativecommons.org/publicdomain/zero/1.0/', 'Public domain': '',
@@ -3583,14 +3627,24 @@ def picture_cards(root, site):
         picture = root / f'src/chartae/{key}.jpg'
         require(picture.exists(), f'{where}: src/chartae/{key}.jpg is missing')
         pictures[f'chartae/{key}.jpg'] = picture.read_bytes()
+        preview = root / PREVIEWS / f'{key}.jpg'
+        again = 'run python3 scripts/fetch_picture.py --previews'
+        require(preview.exists(), f'{where}: its preview {PREVIEWS}/{key}.jpg is missing ({again})')
+        small = preview.read_bytes()
+        require(jpeg_comment(small) == preview_mark(pictures[f'chartae/{key}.jpg']),
+                f'{where}: its preview {PREVIEWS}/{key}.jpg was not made from the picture src/chartae/{key}.jpg as it is now ({again})')
+        require(len(small) <= PREVIEW_MOST, f'{where}: its preview has {len(small):,} bytes, more than the {PREVIEW_MOST:,} a preview may have')
         ours = composed({'source': card['source']})
         cards.append({'id': key, 'latin': card['latin'], **({'also': card['also']} if 'also' in card else {}),
                       'english': card['english'], **({'scientific': card['scientific']} if 'scientific' in card else {}),
                       'group': card['group'], 'line': card['line'],
                       'source': '' if ours else card['source'], **{name: card[name] for name in ('food', 'bears', 'record') if name in card},
-                      'picture': f'chartae/{key}.jpg', 'image': {name: image[name] for name in ('author', 'licence', 'licence_url', 'page')}})
+                      'picture': f'chartae/{key}.jpg', 'preview': base64.b64encode(small).decode('ascii'),
+                      'image': {name: image[name] for name in ('author', 'licence', 'licence_url', 'page')}})
     unused = sorted(p.name for p in (root / 'src/chartae').glob('*') if f'chartae/{p.name}' not in pictures)
     require(not unused, f'Picture cards: src/chartae has files that no card uses: {unused[:8]}')
+    unused = sorted(p.name for p in (root / PREVIEWS).glob('*') if f'chartae/{p.name}' not in pictures) if (root / PREVIEWS).exists() else []
+    require(not unused, f'Picture cards: {PREVIEWS} has files that no card uses: {unused[:8]}')
     require(cards, 'No picture cards')
     return ('// Generated by scripts/build.py from data/chartae.json. Do not edit.\nwindow.lexiconChartae = '
             + json.dumps({'subjects': subjects, 'groups': groups, 'cards': cards}, ensure_ascii=False, separators=(',', ':')) + ';\n'), pictures

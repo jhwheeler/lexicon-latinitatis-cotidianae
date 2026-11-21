@@ -7,8 +7,16 @@ It asks the Commons API for the file, reads the licence from the file's own meta
 any licence that the builder does not take (PICTURE_LICENCES in scripts/build.py, imported from
 there so that the two cannot drift). It downloads a scaled rendition (1920 pixels wide, a width
 Wikimedia serves, not the original), crops it to the cards' ratio of 720:511, resizes it to exactly 720 by 511, writes
-src/chartae/<card-id>.jpg (a progressive JPEG at the quality of the existing pictures), and prints
-the card's "image" block for data/chartae.json, ready to paste.
+src/chartae/<card-id>.jpg (a progressive JPEG at the quality of the existing pictures) and its
+preview, data/chartae-previews/<card-id>.jpg (144 by 102, which the card data carries so that the
+page has a cue before the picture has come; 21 November 2026), and prints the card's "image" block
+for data/chartae.json, ready to paste.
+
+    python3 scripts/fetch_picture.py --previews
+
+fetches nothing: it writes every preview that is missing or was made from an earlier picture (each
+names the picture it was made from, by a hash, in its JPEG comment, which the builder checks), and
+removes those whose picture is gone.
 
 The crop is the largest piece of the picture in the cards' ratio, centred on the focus as nearly as
 the edges allow: by default the centre; --focus 0.4,0.6 puts it at 40% of the width from the left
@@ -55,12 +63,61 @@ PAUSE = 1.0        # seconds between requests, at least
 TRIES = 6        # failures other than 429 before giving up
 
 
+_builder = []
+
+
+def builder():
+    """scripts/build.py as a module, loaded once: the licences and the previews' rules are its own."""
+    if not _builder:
+        spec = importlib.util.spec_from_file_location('lexicon_build', ROOT / 'scripts/build.py')
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        _builder.append(module)
+    return _builder[0]
+
+
 def licences():
     """The builder's table of licences: {short name: address}."""
-    spec = importlib.util.spec_from_file_location('lexicon_build', ROOT / 'scripts/build.py')
-    module = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(module)
-    return module.PICTURE_LICENCES
+    return builder().PICTURE_LICENCES
+
+
+def write_preview(picture_path, root=ROOT):
+    """Write the card's preview (data/chartae-previews/<id>.jpg) from its picture: the small copy that
+    the card data carries, so that the page has a cue before the picture's own file has come (Jack,
+    21 November 2026). Its JPEG comment names the picture it was made from (a hash of its bytes), which
+    the builder checks. Returns the preview's path."""
+    from PIL import Image
+    build = builder()
+    data = Path(picture_path).read_bytes()
+    with Image.open(io.BytesIO(data)) as picture:
+        small = picture.convert('RGB').resize(build.PREVIEW_SIZE, Image.LANCZOS)
+    out = root / build.PREVIEWS / Path(picture_path).name
+    out.parent.mkdir(parents=True, exist_ok=True)
+    small.save(out, 'JPEG', quality=build.PREVIEW_QUALITY, optimize=True, comment=build.preview_mark(data).encode('ascii'))
+    return out
+
+
+def preview_is_current(picture_path, root=ROOT):
+    """Whether the picture's preview exists and was made from the picture as it is now."""
+    build = builder()
+    out = root / build.PREVIEWS / Path(picture_path).name
+    return out.exists() and build.jpeg_comment(out.read_bytes()) == build.preview_mark(Path(picture_path).read_bytes())
+
+
+def write_previews(root=ROOT):
+    """Bring every preview up to date with its picture, without the network: write those that are
+    missing or were made from an earlier picture, and remove those whose picture is gone. Returns
+    (written, removed), the names."""
+    build = builder()
+    pictures = sorted((root / 'src/chartae').glob('*.jpg'))
+    written = [write_preview(path, root).name for path in pictures if not preview_is_current(path, root)]
+    names = {path.name for path in pictures}
+    removed = []
+    for path in sorted((root / build.PREVIEWS).glob('*')) if (root / build.PREVIEWS).exists() else []:
+        if path.name not in names:
+            path.unlink()
+            removed.append(path.name)
+    return written, removed
 
 
 _last = [0.0]
@@ -248,14 +305,28 @@ def crop_box(size, focus=(0.5, 0.5), box=None):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument('card', help='the card’s id: the picture is written to src/chartae/<id>.jpg')
-    parser.add_argument('file', help='the file’s name on Wikimedia Commons, with or without "File:"')
+    parser.add_argument('card', nargs='?', help='the card’s id: the picture is written to src/chartae/<id>.jpg')
+    parser.add_argument('file', nargs='?', help='the file’s name on Wikimedia Commons, with or without "File:"')
+    parser.add_argument('--previews', action='store_true',
+                        help='fetch nothing: write every preview that is missing or older than its picture, and remove those whose picture is gone')
     parser.add_argument('--focus', metavar='X,Y', help='the point to centre the crop on, as fractions of the width and height (default 0.5,0.5)')
     parser.add_argument('--box', metavar='L,T,R,B', help='crop to this box first, as fractions of the width and height')
     parser.add_argument('--wait', type=float, default=1, metavar='MINUTES',
                         help='how long to keep trying the API while it answers 429 before reading the file’s page instead (default 1); the page and the download wait as long')
     args = parser.parse_args()
     PATIENCE[0] = args.wait * 60
+    if args.previews:
+        if args.card or args.file or args.focus or args.box:
+            raise SystemExit('--previews takes no card, file, focus, or box')
+        try:
+            import PIL   # noqa: F401
+        except ImportError:
+            raise SystemExit('Pillow is needed: pip install --break-system-packages pillow')
+        written, removed = write_previews()
+        print(f'Previews written: {len(written)}; removed: {len(removed)}' + (f' ({", ".join(removed)})' if removed else ''), file=sys.stderr)
+        return
+    if not args.card or not args.file:
+        parser.error('give the card’s id and the file’s name (or --previews)')
     if not re.fullmatch(r'[a-z][a-z0-9-]*', args.card):
         raise SystemExit('A card’s id is lower-case letters, digits, and hyphens, beginning with a letter')
     if args.focus and args.box:
@@ -314,9 +385,10 @@ def main():
     card = picture.crop(crop).resize((WIDTH, HEIGHT), Image.LANCZOS)
     out = ROOT / 'src/chartae' / f'{args.card}.jpg'
     card.save(out, 'JPEG', quality=QUALITY, progressive=True, optimize=True)
+    preview = write_preview(out)
     share = (crop[2] - crop[0]) * (crop[3] - crop[1]) / (picture.size[0] * picture.size[1])
     print(f'Wrote {out.relative_to(ROOT)} ({out.stat().st_size // 1024} KB) from a rendition of {picture.size[0]} by {picture.size[1]}, '
-          f'cropped to {crop} ({share:.0%} of it). Look at it before using it.', file=sys.stderr)
+          f'cropped to {crop} ({share:.0%} of it), and its preview {preview.relative_to(ROOT)}. Look at it before using it.', file=sys.stderr)
     image = {'file': info['title'].removeprefix('File:'), 'author': info['author'], 'licence': licence,
              'licence_url': table[licence], 'page': info['page']}
     lines = json.dumps(image, indent=1, ensure_ascii=False).splitlines()

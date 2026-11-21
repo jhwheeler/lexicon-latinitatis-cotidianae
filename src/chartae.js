@@ -71,8 +71,10 @@
   // When food and drink came in (21 November 2026) the subject's Latin name, Cibī, was the word of
   // Jack's request; its English name (Food and drink) and the names of its six kinds (Pānis et lība,
   // Fercula, Lac et ōva, Carō, Condīmenta et dulcia, Pōtiōnēs, in data/chartae.json) are the
-  // coordinating session's wording, for Jack's review.
-  const one = (n, singular, many) => `${number(n)} ${n === 1 ? singular : many}`;
+  // coordinating session's wording, for Jack's review. When the previews came in (21 November 2026)
+  // the line that says how far the saving of the pictures has got (saving: "Imāginēs servantur: 212 ex
+  // 422." / "Saving the pictures: 212 of 422.") was Claude's wording, for Jack's review.
+  const one =(n, singular, many) => `${number(n)} ${n === 1 ? singular : many}`;
   const T = {
     la: {
       title: 'Chartae pictae', sub: 'Imāginem īnspice, nōmen Latīnum clārā vōce dīc, deinde respōnsum ostende.', langLabel: 'Lingua',
@@ -84,6 +86,7 @@
       saved: 'Prōgressus in hōc nāvigātrō servātur.',
       notSaved: 'Prōgressus in hōc nāvigātrō servārī nōn potest: pāginā clausā perībit.',
       offline: 'Imāginēs in hōc apparātū servātae sunt: sine rēte quoque lūdere licet.',
+      saving: (done, total) => ['Imāginēs servantur: ', done, ` ex ${total}.`],
       entry: 'In lexicō īnspice', composed: 'exemplum nostrum', english: 'Anglicē', picture: 'Imāgō', also: 'Item:',
       credit: 'Imāgō:', from: 'ex', cropped: 'recīsa',
       cards: n => one(n, 'charta', 'chartae'), due: n => `${number(n)} nunc ${n === 1 ? 'repetenda' : 'repetendae'}`, fresh: n => one(n, 'nova', 'novae'),
@@ -104,6 +107,7 @@
       saved: 'Progress is kept in this browser.',
       notSaved: 'Progress cannot be saved in this browser: it will last only until the page is closed.',
       offline: 'The pictures are saved on this device: the game also works offline.',
+      saving: (done, total) => ['Saving the pictures: ', done, ` of ${total}.`],
       entry: 'Open the entry', composed: 'composed', english: 'English', picture: 'Picture', also: 'Also:',
       credit: 'Picture:', from: 'from', cropped: 'cropped',
       cards: n => one(n, 'card', 'cards'), due: n => `${number(n)} due now`, fresh: n => `${number(n)} new`,
@@ -264,15 +268,20 @@
   // Every card, to look through with a child: the picture and the name. A tile opens its card, with
   // the sentence and the rest of its back (Jack, 20 November 2026: "bene esset chartam aperīre
   // posse ut videātur sententiola etc. (de indice)"); the way to the entry is on the card. The
-  // pictures are fetched as they come into view, and not at all while the list is closed.
+  // pictures are fetched as they come into view, and not at all while the list is closed; until a
+  // picture has come, and if it cannot come, its preview from the card data stands in its place.
   // The list is set out by subject (a heading of the second level) and under it by kind (the third).
   function drawGallery() {
     const language = lang === 'la' ? 'la' : 'en';
     q('c-gallery').replaceChildren(...subjects.flatMap(subject => [el('h2', 'c-subject', nameOf(subject), language),
       ...groups.filter(group => group.subject === subject.id).flatMap(group => {
         const tiles = cards.filter(card => card.group === group.id).map(card => {
-          const picture = el('img'); picture.src = card.picture; picture.alt = ''; picture.loading = 'lazy'; picture.width = 720; picture.height = 511;
-          const tile = el('button', 'c-tile', [picture, el('span', 'c-name', [el('b', '', card.head, 'la'), ' ', el('span', 'c-en', card.english, 'en')])]);
+          // loading is set before src: set after it, the list fetched every picture at once whenever it was
+          // drawn again (each change of language), which on a slow connection held up the round's pictures.
+          const picture = el('img', 'c-full'); picture.loading = 'lazy'; picture.alt = ''; picture.width = 720; picture.height = 511; picture.src = card.picture;
+          const small = el('img', 'c-preview'); small.alt = ''; small.width = 144; small.height = 102;
+          if (card.preview) small.src = previewOf(card);
+          const tile = el('button', 'c-tile', [el('span', 'c-thumb', [small, picture]), el('span', 'c-name', [el('b', '', card.head, 'la'), ' ', el('span', 'c-en', card.english, 'en')])]);
           tile.type = 'button'; tile.dataset.card = card.id;
           return tile;
         });
@@ -294,6 +303,10 @@
     const tile = event.target.closest('button[data-card]');
     if (tile) openLook(tile.dataset.card);
   });
+  // A tile's picture that cannot come is hidden, so that its preview shows and no broken icon does; one
+  // that has come is on the device (the service worker keeps what is read) and is not fetched again.
+  q('c-gallery').addEventListener('error', event => { if (event.target.matches('img.c-full')) event.target.classList.add('failed'); }, true);
+  q('c-gallery').addEventListener('load', event => { if (event.target.matches('img.c-full')) { event.target.classList.remove('failed'); arrived(event.target.currentSrc); } }, true);
 
   // Rounds, as in the vocabulary practice: twelve cards; while the deck has new cards at most half
   // of a round is repetition, first the cards that were missed, then the longest overdue; the rest
@@ -397,24 +410,44 @@
   // The pictures of the next two cards of the round, or of the cards beside the one looked at, are
   // fetched ahead, so that the change is usually at once: they are simply read early, and the
   // service worker saves them as it saves every picture that is read (src/sw.js).
-  const picture = q('g-picture');
-  let pictureFor = '';   // the address of the picture the card now shown wants
+  //
+  // Under the picture lies its preview (Jack, 21 November 2026, on his iPhone on 4G, of a new card shown
+  // with the ground where its picture should be: "Saepe sīc fit"; and "Cōnsilium habeō: imāginēs in
+  // indice ipsō inclūdere possumus"): a copy of 144 by 102 pixels that the card data itself carries
+  // (assets/chartae-data.js, saved with the lexicon), shown at once, covering the frame, softened so
+  // that its blocks do not show, until the picture's own file has loaded over it. It keeps every rule
+  // of the picture: unseen from the moment its card changes until its own image is there, and only
+  // the preview of the card now shown counts. A picture that fails leaves the preview, so with no
+  // connection and nothing saved the card still has its cue.
+  const picture = q('g-picture'), preview = q('g-preview');
+  const previewOf = card => (card.preview ? 'data:image/jpeg;base64,' + card.preview : '');
+  let pictureFor = '', previewFor = '', pictureFailed = '';   // what the card now shown wants, and a picture of it that failed
   const pictureReady = () => picture.complete && picture.naturalWidth > 0 && picture.currentSrc === new URL(pictureFor, location.href).href;
-  picture.addEventListener('load', () => { if (pictureReady()) picture.classList.remove('waiting'); });
-  function showPicture(address) {
+  const previewReady = () => !!previewFor && preview.complete && preview.naturalWidth > 0 && preview.currentSrc === previewFor;
+  picture.addEventListener('load', () => { if (pictureReady()) { picture.classList.remove('waiting'); arrived(picture.currentSrc); } });
+  picture.addEventListener('error', () => { if (picture.getAttribute('src') === pictureFor) pictureFailed = pictureFor; });
+  preview.addEventListener('load', () => { if (previewReady()) preview.classList.remove('waiting'); });
+  function showPicture(card) {
+    const address = card.picture;
     if (address === pictureFor && picture.getAttribute('src') === address) return;   // the same card, drawn again
-    pictureFor = address;
+    pictureFor = address; previewFor = previewOf(card); pictureFailed = '';
     picture.classList.add('waiting');
+    preview.classList.add('waiting');
+    if (previewFor) preview.src = previewFor; else preview.removeAttribute('src');
+    if (previewReady()) preview.classList.remove('waiting');
     picture.src = address;
-    // A picture already in memory (fetched ahead) is there at once, with no frame of ground.
+    // A picture already in memory (fetched ahead) is there at once, over its preview.
     if (pictureReady()) picture.classList.remove('waiting');
+    wake(true);   // the saving of the pictures waits for this one, and tries again after a failure
   }
   let ahead = [];   // the pictures being fetched ahead, held so that they are not dropped half-way
   function fetchAhead(list) {
     ahead = list.filter(Boolean).slice(0, 2).map(card => {
       const kept = ahead.find(image => image.dataset.card === card.id);
       if (kept) return kept;
-      const image = new Image(); image.dataset.card = card.id; image.src = card.picture;
+      const image = new Image(); image.dataset.card = card.id;
+      image.addEventListener('load', () => arrived(image.currentSrc));
+      image.src = card.picture;
       return image;
     });
   }
@@ -433,7 +466,7 @@
       q('g-ask').hidden = true; q('g-frame').hidden = false; q('g-end').hidden = true;
       q('g-back').hidden = false; q('g-back').setAttribute('aria-hidden', 'false');
       q('g-front').hidden = true; q('g-marks').hidden = true; q('g-done').hidden = true; q('g-keys').hidden = true;
-      showPicture(look.picture);
+      showPicture(look);
       picture.alt = look.english; picture.lang = 'en';
       drawBack(look);
       fetchAhead([1, -1].map(by => listed[(at + by + listed.length) % listed.length]));
@@ -461,7 +494,7 @@
     q('g-keys').hidden = round.done;
     if (card) {
       // The picture's description does not give the answer away.
-      showPicture(card.picture);
+      showPicture(card);
       picture.alt = t('picture');
       drawBack(card);
       // The next two cards' pictures are fetched while this one is looked at.
@@ -577,36 +610,117 @@
   // that are gone are removed here. Opened from the home screen, the page also asks the browser not
   // to clear the lexicon's storage when the device runs short (Claude's addition, untried on a phone;
   // only there, because one browser asks the reader's leave for it in a tab).
-  let offline = false;
-  async function savePictures() {
-    if (offline || !('caches' in window) || !navigator.serviceWorker.controller || (navigator.connection && navigator.connection.saveData)) return;
-    try {
-      const cache = await caches.open(PAGES);
-      const missing = async () => {
-        const absent = [];
-        for (const card of cards) if (!await cache.match(new URL(card.picture, location.href).pathname)) absent.push(card);
-        return absent;
-      };
-      for (const card of await missing()) {
-        const response = await fetch(card.picture);
-        if (!response.ok) return;
+  //
+  // The order and the stamina (21 November 2026, when Jack, on 4G, met a card of the body shown without
+  // its picture: "Saepe sīc fit"). The pictures were fetched in the order of the file, animals first,
+  // so after new cards were published the pictures of the round came last, behind hundreds of others,
+  // and one failed fetch ended the saving until the page was opened again. Now the pictures are taken
+  // in this order: the cards of the round in progress (or the card looked at and those beside it),
+  // then the cards of the deck now chosen, then the rest; before each fetch the saving waits for the
+  // picture of the card now shown, so that it never competes with it; each picture is read whole
+  // before the next is asked for; a picture already read in this visit (shown, fetched ahead, or in
+  // the list) is not fetched again. A failed fetch puts that picture at the back and makes the saving
+  // pause, longer after each failure in a row (RETRY_FIRST doubling up to RETRY_MOST), and it goes on
+  // at the end of the pause, when the browser is online again, or when the next card is shown. While
+  // it runs, the line under Start says how far it has got, in numbers of a fixed width so that the
+  // line does not move as it counts. The order, the pauses, and the line are Claude's, for Jack to judge.
+  const RETRY_FIRST = 5e3, RETRY_MOST = 5 * 60e3;
+  const fetched = new Set();   // the pictures (their paths) known to be on the device, or read through the worker in this visit
+  const skipped = new Set();   // the cards whose picture failed, put at the back until the rest are done
+  const waking = new Set();
+  const retried = new Set();   // the cards whose picture was fetched a second time because the worker had not kept it
+  let offline = false, saveRun = null, failures = 0, saveCount = null;
+  const pathOf = address => new URL(address, location.href).pathname;
+  function arrived(address) { if (address && navigator.serviceWorker && navigator.serviceWorker.controller) fetched.add(pathOf(address)); }
+  // The pause after a failure, which ends early when a card is shown or the browser comes online.
+  const nap = ms => new Promise(resolve => {
+    const done = () => { clearTimeout(timer); waking.delete(done); resolve(); };
+    const timer = setTimeout(done, ms);
+    waking.add(done);
+  });
+  function wake(restart) {
+    [...waking].forEach(done => done());
+    if (restart && !saveRun && !offline && saveCount) savePictures();   // a saving that stopped short starts again
+  }
+  addEventListener('online', () => { failures = 0; skipped.clear(); wake(true); });
+  function saveOrder() {
+    const first = look ? [look, ...[1, -1].map(by => listed[(listed.indexOf(look) + by + listed.length) % listed.length])]
+      : round.current ? [round.current, ...round.queue] : [];
+    return [...new Set([...first, ...pool, ...listed])];
+  }
+  // The line under Start: how far the saving has got, or that every picture is there.
+  function drawSaving() {
+    const line = q('c-offline');
+    line.dataset.state = offline ? 'saved' : saveCount ? 'saving' : '';
+    if (offline) { line.textContent = t('offline'); line.hidden = false; return; }
+    if (!saveCount) { line.textContent = ''; line.hidden = true; return; }
+    // The number done keeps the width of the total (drawn unseen in the same place by the
+    // stylesheet), so that nothing after it moves as it grows.
+    const total = number(saveCount.total), done = el('span', 'c-done', el('span', '', number(saveCount.done)));
+    done.dataset.total = total;
+    line.replaceChildren(...t('saving')(done, total));
+    line.hidden = false;
+  }
+  function savePictures() {
+    if (saveRun || offline || !('caches' in window) || !navigator.serviceWorker || !navigator.serviceWorker.controller || (navigator.connection && navigator.connection.saveData)) return;
+    saveRun = saveAll().catch(() => {}).finally(() => { saveRun = null; });
+  }
+  async function saveAll() {
+    const cache = await caches.open(PAGES);
+    const onDevice = async () => new Set((await cache.keys()).map(key => new URL(key.url).pathname));
+    (await onDevice()).forEach(path => fetched.add(path));
+    const todo = () => saveOrder().filter(card => !fetched.has(pathOf(card.picture)));
+    const count = () => { saveCount = { done: cards.length - todo().length, total: cards.length }; drawSaving(); };
+    for (;;) {
+      if (todo().length) {
+        count();
+        // The picture of the card now shown first: wait while it is on its way.
+        while (game.open && pictureFor && !pictureReady() && pictureFailed !== pictureFor) await new Promise(resolve => setTimeout(resolve, 250));
+        // A picture on its way already (the one shown, or one fetched ahead) is left to come by itself.
+        const coming = new Set([...ahead.filter(image => !image.complete).map(image => pathOf(image.src)),
+          ...(game.open && pictureFor && !picture.complete ? [pathOf(pictureFor)] : [])]);
+        const open = todo().filter(item => !coming.has(pathOf(item.picture)));
+        if (!open.length) { await new Promise(resolve => setTimeout(resolve, 250)); continue; }
+        let card = open.find(item => !skipped.has(item.id));
+        if (!card) { skipped.clear(); card = open[0]; }
+        let got = false;
+        try {
+          const response = await fetch(card.picture);
+          got = response.ok;
+          await response.arrayBuffer();   // the whole file, before the next is asked for
+        } catch {}
+        if (got) { fetched.add(pathOf(card.picture)); failures = 0; skipped.delete(card.id); continue; }
+        skipped.add(card.id);
+        failures++;
+        await nap(Math.min(RETRY_MOST, RETRY_FIRST * 2 ** (failures - 1)));
+        continue;
       }
+      if (saveCount) count();
       // The worker saves a picture a moment after it hands it over: look again before saying so.
-      for (let tries = 0; (await missing()).length; tries++) {
-        if (tries === 10) return;
+      let missing = [];
+      for (let tries = 0; tries <= 10; tries++) {
+        const saved = await onDevice();
+        missing = cards.filter(card => !saved.has(pathOf(card.picture)));
+        if (!missing.length) break;
         await new Promise(resolve => setTimeout(resolve, 300));
       }
-      offline = true;
-      q('c-offline').textContent = t('offline'); q('c-offline').hidden = false;
-      const wanted = new Set(cards.map(card => new URL(card.picture, location.href).pathname));
-      const folder = new URL('chartae/', location.href).pathname;
-      for (const key of await cache.keys()) {
-        const path = new URL(key.url).pathname;
-        if (path.startsWith(folder) && !wanted.has(path)) await cache.delete(key);
-      }
-      const installed = navigator.standalone || matchMedia('(display-mode: standalone)').matches;
-      if (installed && navigator.storage && navigator.storage.persist) navigator.storage.persist().catch(() => {});
-    } catch {}
+      if (!missing.length) break;
+      // A picture read before the worker had the page, or not kept by it, is fetched once more; one
+      // already fetched again is left for another time (the next card shown, or the next visit).
+      const again = missing.filter(card => !retried.has(card.id));
+      if (!again.length) return;
+      again.forEach(card => { retried.add(card.id); fetched.delete(pathOf(card.picture)); });
+    }
+    offline = true;
+    drawSaving();
+    const wanted = new Set(cards.map(card => pathOf(card.picture)));
+    const folder = new URL('chartae/', location.href).pathname;
+    for (const key of await cache.keys()) {
+      const path = new URL(key.url).pathname;
+      if (path.startsWith(folder) && !wanted.has(path)) await cache.delete(key);
+    }
+    const installed = navigator.standalone || matchMedia('(display-mode: standalone)').matches;
+    if (installed && navigator.storage && navigator.storage.persist) navigator.storage.persist().catch(() => {});
   }
 
   // The page's own language follows the choice; the site's header and footer stay in English.
@@ -617,7 +731,7 @@
     document.querySelectorAll('[data-t]').forEach(node => { node.textContent = t(node.dataset.t); });
     document.querySelectorAll('[data-t-label]').forEach(node => node.setAttribute('aria-label', t(node.dataset.tLabel)));
     q('p-lang').querySelectorAll('button').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.lang === lang)));
-    q('c-offline').textContent = offline ? t('offline') : ''; q('c-offline').hidden = !offline;
+    drawSaving();
     drawDeck(); drawGallery(); drawLobby();
     if (game.open) drawCard();
     polish(document.body);

@@ -32,6 +32,31 @@ class FetchPictureTest(unittest.TestCase):
             with self.subTest(name=name), self.assertRaises(SystemExit):
                 fetch.check_licence(info(name, url), table)
 
+    def test_a_file_under_several_licences_is_taken_under_the_first_the_builder_takes(self):
+        """The Getty's files state "No restrictions" first and CC0 second (21 November 2026): the page's
+        licences are read in order, each with its own address, and the first acceptable one is taken."""
+        table = builder.PICTURE_LICENCES
+        page = ('<td><span class="licensetpl_short">No restrictions</span><span class="licensetpl_long">No known copyright restrictions</span>'
+                '<span class="licensetpl_link">http://www.getty.edu/about/opencontent.html</span></td>'
+                '<td><span class="licensetpl_short">Public domain</span></td>'
+                '<td><span class="licensetpl_short">CC0</span><span class="licensetpl_link">http://creativecommons.org/publicdomain/zero/1.0/deed.en</span></td>')
+        found = fetch.page_licences(page)
+        self.assertEqual(found, [('No restrictions', 'https://www.getty.edu/about/opencontent.html/'), ('Public domain', ''),
+                                 ('CC0', 'https://creativecommons.org/publicdomain/zero/1.0/')])
+        info = {'licence': found[0][0], 'licence_url': found[0][1], 'licences': found, 'title': 'File:X.jpg', 'page': 'https://commons.wikimedia.org/wiki/File:X.jpg'}
+        self.assertEqual(fetch.check_licence(info, table), 'Public domain')
+        info['licences'] = [found[0], found[2]]
+        self.assertEqual(fetch.check_licence(info, table), 'CC0')
+        info['licences'] = [found[0], ('CC BY-NC 4.0', 'https://creativecommons.org/licenses/by-nc/4.0/')]
+        with self.assertRaisesRegex(SystemExit, 'No restrictions'):
+            fetch.check_licence(info, table)
+
+    def test_an_svg_is_rendered_at_the_full_width_and_a_photograph_at_the_widest_it_has(self):
+        self.assertEqual(fetch.rendition_width('File:Brain human lateral view.svg', (512, 600)), fetch.RENDITION)
+        self.assertEqual(fetch.rendition_width('File:Heart.jpg', (4000, 3000)), 1920)
+        self.assertEqual(fetch.rendition_width('File:Heart.png', (1000, 800)), 960)
+        self.assertIsNone(fetch.rendition_width('File:Small.jpg', (800, 600)))
+
     def test_the_crop_is_the_largest_piece_in_the_ratio_about_the_focus(self):
         ratio = fetch.WIDTH / fetch.HEIGHT
         for size in ((1920, 1280), (1920, 2880), (1920, 900)):

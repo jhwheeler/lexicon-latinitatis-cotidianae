@@ -3413,11 +3413,14 @@ test('the picture cards: a line of subjects narrows the kinds and the deck, the 
   const offered = () => page.locator('#c-groups button').evaluateAll(nodes => nodes.map(n => n.dataset.group));
   await openChartae(true, null);
   assert.equal(await page.locator('#c-subjects-h').textContent(), 'Rēs');
-  assert.deepEqual(await page.locator('#c-subjects button > span:first-child').allTextContents(), ['Omnia', 'Animālia', 'Plantae']);
+  // Three subjects since the body came in (20 November 2026), each with its count.
+  assert.deepEqual(await page.locator('#c-subjects button > span:first-child').allTextContents(), ['Omnia', 'Animālia', 'Plantae', 'Corpus']);
+  assert.deepEqual(await page.locator('#c-subjects button > span:first-child').evaluateAll(nodes => nodes.map(n => n.lang)), ['', 'la', 'la', 'la']);
   await page.locator('#p-lang button[data-lang="en"]').click();
   assert.equal(await page.locator('#c-subjects-h').textContent(), 'Subjects');
-  assert.deepEqual(await page.locator('#c-subjects button > span:first-child').allTextContents(), ['All', 'Animals', 'Plants']);
-  assert.deepEqual(await page.locator('#c-subjects .count').allTextContents(), [data.cards.length, of('animalia').length, of('plantae').length].map(String));
+  assert.deepEqual(await page.locator('#c-subjects button > span:first-child').allTextContents(), ['All', 'Animals', 'Plants', 'The body']);
+  assert.deepEqual(await page.locator('#c-subjects .count').allTextContents(), [data.cards.length, of('animalia').length, of('plantae').length, of('corpus').length].map(String));
+  assert.ok(of('corpus').length > 0);
   assert.deepEqual(await pressed('#c-subjects'), ['']);
   // A kind with no cards yet has no button, and the subjects line sits above the kinds.
   assert.deepEqual(await offered(), ['', ...shownKinds.map(group => group.id)]);
@@ -3436,6 +3439,9 @@ test('the picture cards: a line of subjects narrows the kinds and the deck, the 
   await page.locator('#g-close').click();
   // Every subject chosen is none chosen; a kind of a subject still offered stays chosen.
   await page.locator('#c-subjects button[data-subject="animalia"]').click();
+  assert.deepEqual(await pressed('#c-subjects'), ['animalia', 'plantae']);
+  assert.deepEqual(await pressed('#c-groups'), ['arbores']);
+  await page.locator('#c-subjects button[data-subject="corpus"]').click();
   assert.deepEqual(await pressed('#c-subjects'), ['']);
   assert.deepEqual(await pressed('#c-groups'), ['arbores']);
   assert.equal((await deckCount())[0], inKind('arbores'));
@@ -3444,7 +3450,9 @@ test('the picture cards: a line of subjects narrows the kinds and the deck, the 
   assert.deepEqual(await pressed('#c-subjects'), ['animalia']);
   assert.deepEqual(await pressed('#c-groups'), ['']);
   assert.equal((await deckCount())[0], of('animalia').length);
-  await page.locator('#c-subjects button[data-subject="plantae"]').click();   // both: none
+  await page.locator('#c-subjects button[data-subject="plantae"]').click();
+  await page.locator('#c-subjects button[data-subject="corpus"]').click();   // all three: none
+  assert.deepEqual(await pressed('#c-subjects'), ['']);
   await page.locator('#c-subjects button[data-subject="plantae"]').click();
   await page.locator('#c-groups button[data-group="partes"]').click();
   await page.locator('#c-subjects button[data-subject="plantae"]').click();
@@ -3579,6 +3587,81 @@ test('the picture cards: the scientific name follows the English one, untouched 
     }
   }
   await page.unroute('**/assets/chartae-data.js');
+  await page.setViewportSize({ width: 1280, height: 900 });
+  await page.evaluate(keys => keys.forEach(key => localStorage.removeItem(key)), CHARTAE_KEYS);
+});
+
+test('the picture cards: a second Latin word stands under the first, with the practice’s label, and the card keeps its height', async () => {
+  // Jack, 20 November 2026: where two Latin words mean the same thing (coma and capillus), one card,
+  // with the second word on its back. The label is the vocabulary practice's for its other Latin words.
+  const data = await page.evaluate(async address => {
+    const text = await (await fetch(address)).text();
+    return JSON.parse(text.slice(text.indexOf('{'), text.lastIndexOf('}') + 1));
+  }, pageUrl('assets/chartae-data.js'));
+  const card = id => data.cards.find(item => item.id === id);
+  assert.equal(card('capillus').also, 'coma, comae f.');
+  assert.equal(card('oculus').also, undefined);
+  const backOf = async id => {
+    await page.locator(`#c-gallery button[data-card="${id}"]`).click();
+    await page.locator('#p-game[open]').waitFor();
+  };
+  await openChartae(true, 'la');
+  await page.locator('#c-all > summary').click();
+  await backOf('capillus');
+  const also = page.locator('#g-also');
+  assert.equal(await also.isVisible(), true);
+  assert.equal(await also.textContent(), 'Item: coma, comae f.');
+  assert.equal(await also.locator('span').getAttribute('lang'), 'la');
+  // Directly under the dictionary form.
+  assert.equal(await also.evaluate(node => node.previousElementSibling.id), 'g-la');
+  const [la, line] = [await page.locator('#g-la').boundingBox(), await also.boundingBox()];
+  assert.ok(line.y >= la.y + la.height - 1 && line.y < la.y + la.height + 30);
+  await page.locator('#g-close').click();
+  // A card without a second word has no such line.
+  await backOf('oculus');
+  assert.equal(await also.isVisible(), false);
+  assert.equal(await also.textContent(), '');
+  await page.locator('#g-close').click();
+  // In English the label is "Also:"; the word stays Latin.
+  await page.locator('#p-lang button[data-lang="en"]').click();
+  await backOf('capillus');
+  assert.equal(await also.textContent(), 'Also: coma, comae f.');
+  await page.locator('#g-close').click();
+  // The display options reach the second word as they reach the first.
+  await page.evaluate(() => localStorage.setItem('lexicon-macrons', 'off'));
+  await openChartae(false);
+  await page.locator('#c-all > summary').click();
+  await backOf('tergum');
+  assert.doesNotMatch(await also.textContent(), /[āēīōū]/);
+  assert.match(await also.textContent(), /^Also: \S/);
+  await page.locator('#g-close').click();
+  await page.evaluate(() => localStorage.removeItem('lexicon-macrons'));
+  // On a phone the card keeps its height when it is turned, with the line (every card given a long
+  // second word, since a round may begin with any card of its kind) and without it.
+  const everyCardAlso = async route => {
+    const response = await route.fetch();
+    await route.fulfill({ response, body: (await response.text()).replace(/"latin":"([^"]*)","english"/g, '"latin":"$1","also":"caesariēs, caesariēī f.","english"') });
+  };
+  // Without the line first: a script fulfilled by a route may be kept by the browser's cache.
+  for (const [kind, routed] of [['intus', false], ['caput', true]]) {
+    if (routed) await page.route('**/assets/chartae-data.js', everyCardAlso);
+    for (const width of [390, 320]) {
+      await page.setViewportSize({ width, height: 760 });
+      await keep('lexicon-chartae-deck', { subjects: [], groups: [kind] });
+      await keep('lexicon-chartae-round', null);
+      await openChartae(false);
+      await startRound();
+      await pictureShown();
+      const id = (await kept('lexicon-chartae-round')).current;
+      const before = await page.locator('#g-card').boundingBox();
+      await page.locator('#g-show').click();
+      assert.deepEqual(await page.locator('#g-card').boundingBox(), before, `${id} at ${width}px: the card keeps its height`);
+      assert.equal(await also.isVisible(), routed || !!card(id).also, id);
+      assert.equal(await overflows(), false);
+      await page.locator('#g-close').click();
+    }
+  }
+  await page.unroute('**/assets/chartae-data.js', everyCardAlso);
   await page.setViewportSize({ width: 1280, height: 900 });
   await page.evaluate(keys => keys.forEach(key => localStorage.removeItem(key)), CHARTAE_KEYS);
 });

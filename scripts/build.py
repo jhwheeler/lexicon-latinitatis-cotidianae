@@ -12,7 +12,7 @@ page per concept record), l/<word>.html (one page per Latin word that heads a
 term), how-we-decide.html (editorial policy), how-practice-works.html (how the
 practice chooses and spaces its cards, with its sources), rulings.html (the rulings
 register), practice.html (vocabulary practice), hora.html (the clock game), chartae.html (the picture
-cards of animals and plants, with their pictures in chartae/), theodorus.html (the game of the adverbs of place), and
+cards of animals, plants, and the body, with their pictures in chartae/), theodorus.html (the game of the adverbs of place), and
 review.html (what is reviewed, and a reader's flags), sitemap.xml, and in assets/ the stylesheet,
 the page, search, practice and review scripts, the search data, the practice cards (practice-data.js), the picture cards (chartae-data.js), the redirects
 from the old single page (legacy.js) and the fonts. See docs/data-format.md and
@@ -3375,31 +3375,45 @@ def legacy_script(site):
 
 # The picture cards, Chartae pictae (chartae.html; Jack, 20 November 2026: first the animals, and the
 # same day one exercise for every subject, the reader choosing which, not a game for each).
-# data/chartae.json has three lists. "subjects" are the subjects (animalia, plantae), each with id,
-# latin, and english. "groups" are the kinds, each with id, subject (one of the subjects), latin, and
-# english; a kind may have no cards yet, and the page then does not show it. "cards" are the cards.
+# data/chartae.json has three lists. "subjects" are the subjects (animalia, plantae, and since 20
+# November 2026 corpus, the human body), each with id, latin, and english. "groups" are the kinds,
+# each with id, subject (one of the subjects), latin, and english; a kind may have no cards yet, and
+# the page then does not show it. "cards" are the cards. Kinds and cards are two sets of names: a
+# kind may share its id with a card (the kind caput and the card caput; the body's kind truncus and
+# the plant card truncus), and nothing confuses them, since kinds are only ever looked up among the
+# kinds and cards among the cards (in the data, the page's buttons, and the stored deck, which holds
+# kinds, while the progress holds cards).
 # A card: id (unique across every subject: the picture is src/chartae/<id>.jpg, 720 by 511, and
-# the id is the key of the card's progress), latin (the dictionary form), english, group (its
-# kind), line (a sentence with the word in it) and its source (a place in an author; "composed" for
-# a sentence of ours; a place in the readers, which the site shows as composed, like every example
-# taken from them), record (the lexicon's entry for the thing, where there is one), and image: the
-# file's name on Wikimedia Commons, its author, the licence and its address, and the file's page.
+# the id is the key of the card's progress), latin (the dictionary form), also (optional, on a card
+# of any subject: a second Latin word for the same thing, as a full dictionary form, shown on the
+# back under the first; Jack, 20 November 2026: where two words mean the same thing, as coma and
+# capillus, one card with the second word on its back), english, group (its kind), line (a sentence
+# with the word in it) and its source (a place in an author; "composed" for a sentence of ours; a
+# place in the readers, which the site shows as composed, like every example taken from them),
+# record (the lexicon's entry for the thing, where there is one), and image: the file's name on
+# Wikimedia Commons, its author, the licence and its address, and the file's page.
 # A card of an animal kind must have food (what the animal eats, in the ablative, as the answer to
 # "Quō vēscitur?"); a card of a plant kind may have bears (what the plant bears, in the accusative,
-# as the answer to "Quid fert?"); neither is allowed on a card of another subject. Only pictures
-# that anyone may reuse, commercially too, are taken, so the licences are a closed list (which
-# scripts/fetch_picture.py imports); the page names the author and the licence beside every picture.
-# A card of an animal or a plant may have scientific, right after english (Jack, 20 November 2026:
-# "inclūdāmus nōmina scientifica omnium … animālium plantārumque, fortasse jūxtā nōmina Anglica …
-# Hōc modō discēmus discrīmina"): the name of the taxon that the Latin word names, as nearly as
-# science has one (a species where the word means one species, or the one it ordinarily means in
-# Europe; a genus, family, order, or other group where the word is wider; a domestic animal's
-# binomial in current use, and the same on the cards of its young and of one sex; none where the
-# word is not a taxon, such as a part of a plant). That rule is the coordinating session's, for
-# Jack to judge. The name is written as zoology and botany write it, not as the lexicon writes
-# Latin: genus capitalised, the rest lower case, no macrons or other marks, no author (Juniperus,
-# Quercus ilex; × and subsp. where nomenclature uses them). The page shows it after the English
-# name in a language of its own (la-x-taxon), so that the display options leave it alone.
+# as the answer to "Quid fert?"); neither is allowed on a card of any other subject (FOOD_SUBJECT,
+# BEARS_SUBJECT). Only pictures that anyone may reuse, commercially too, are taken, so the licences
+# are a closed list (which scripts/fetch_picture.py imports); the page names the author and the
+# licence beside every picture.
+# A card may have scientific, right after english (Jack, 20 November 2026: "inclūdāmus nōmina
+# scientifica omnium … animālium plantārumque, fortasse jūxtā nōmina Anglica … Hōc modō discēmus
+# discrīmina"; and the same day, for the body, that on these cards the scientific names matter most).
+# On a card of an animal or a plant it is the name of the taxon that the Latin word names, as
+# nearly as science has one (a species where the word means one species, or the one it ordinarily
+# means in Europe; a genus, family, order, or other group where the word is wider; a domestic
+# animal's binomial in current use, and the same on the cards of its young and of one sex; none
+# where the word is not a taxon, such as a part of a plant). That rule is the coordinating
+# session's, for Jack to judge. It is written as zoology and botany write it, not as the lexicon
+# writes Latin: genus capitalised, the rest lower case, no macrons or other marks, no author
+# (Juniperus, Quercus ilex; × and subsp. where nomenclature uses them). On a card of the body it is
+# the term of the Terminologia Anatomica, the anatomists' international Latin, written as they write
+# it: the first word capitalised, no macrons (Hepar, Vesica urinaria, Encephalon). The page shows it
+# after the English name in a language of its own (la-x-taxon), so that the display options leave
+# it alone.
+FOOD_SUBJECT, BEARS_SUBJECT = 'animalia', 'plantae'   # food only and always on an animal's card; bears only on a plant's
 PICTURE_LICENCES = {
     'CC0': 'https://creativecommons.org/publicdomain/zero/1.0/', 'Public domain': '',
     'CC BY 2.0': 'https://creativecommons.org/licenses/by/2.0/', 'CC BY 3.0': 'https://creativecommons.org/licenses/by/3.0/',
@@ -3413,7 +3427,7 @@ def scientific_name(name, where):
     require(isinstance(name, str) and name, f'{where}: scientific is not a name')
     require(name == name.strip() and '  ' not in name, f'{where}: the scientific name “{name}” has stray spaces')
     marks = sorted({ch for ch in name if ch != '×' and not (ch.isascii() and (ch.isalpha() or ch in ' .-'))})
-    require(not marks, f'{where}: the scientific name “{name}” has {" ".join(marks)}: it is written as zoology and botany write it, '
+    require(not marks, f'{where}: the scientific name “{name}” has {" ".join(marks)}: it is written as zoology, botany, and anatomy write it, '
                        'in plain a–z without macrons or other marks (× and the stop of subsp. are the only signs allowed)')
     require(name[0].isupper(), f'{where}: the scientific name “{name}” must begin with a capital letter (the genus or the higher taxon)')
     require(all(word.islower() or word == '×' for word in name.split(' ')[1:]),
@@ -3429,7 +3443,7 @@ def picture_cards(root, site):
         fields(subject, ('id', 'latin', 'english'))
         require(re.fullmatch(r'[a-z][a-z0-9-]*', string(subject['id'])) and subject['id'] not in [s['id'] for s in subjects], f'Picture cards: bad or repeated subject {subject["id"]}')
         subjects.append({key: string(subject[key]) for key in ('id', 'latin', 'english')})
-    require({'animalia', 'plantae'} <= {s['id'] for s in subjects}, 'Picture cards: the subjects animalia and plantae must be there (food and bears belong to them)')
+    require({FOOD_SUBJECT, BEARS_SUBJECT} <= {s['id'] for s in subjects}, f'Picture cards: the subjects {FOOD_SUBJECT} and {BEARS_SUBJECT} must be there (food and bears belong to them)')
     for group in data['groups']:
         fields(group, ('id', 'subject', 'latin', 'english'))
         require(re.fullmatch(r'[a-z][a-z0-9-]*', string(group['id'])) and group['id'] not in [g['id'] for g in groups], f'Picture cards: bad or repeated kind {group["id"]}')
@@ -3441,13 +3455,13 @@ def picture_cards(root, site):
         key = string(card.get('id'))
         where = f'Picture card {key}'
         require(card.get('group') in subject_of, f'{where}: unknown kind {card.get("group")}')
-        animal = subject_of[card['group']] == 'animalia'
-        require(not animal or 'food' in card, f'{where}: a card of an animal needs food (what it eats, in the ablative)')
-        require(animal or 'food' not in card, f'{where}: food (what an animal eats) is only for a card of an animal')
-        require(subject_of[card['group']] == 'plantae' or 'bears' not in card, f'{where}: bears (what a plant bears) is only for a card of a plant')
-        fields(card, ('id', 'latin', 'english', 'group', 'line', 'source', 'image'), ('scientific', 'record', 'food', 'bears'))
+        subject = subject_of[card['group']]
+        require(subject != FOOD_SUBJECT or 'food' in card, f'{where}: a card of an animal needs food (what it eats, in the ablative)')
+        require(subject == FOOD_SUBJECT or 'food' not in card, f'{where}: food (what an animal eats) is only for a card of an animal')
+        require(subject == BEARS_SUBJECT or 'bears' not in card, f'{where}: bears (what a plant bears) is only for a card of a plant')
+        fields(card, ('id', 'latin', 'english', 'group', 'line', 'source', 'image'), ('also', 'scientific', 'record', 'food', 'bears'))
         require(re.fullmatch(r'[a-z][a-z0-9-]*', key) and f'chartae/{key}.jpg' not in pictures, f'{where}: bad or repeated id')
-        for name in ('latin', 'english', 'line', 'source', 'food', 'bears'):
+        for name in ('latin', 'also', 'english', 'line', 'source', 'food', 'bears'):
             if name in card:
                 require(string(card[name]).strip() == card[name] and card[name], f'{where}: {name} is empty or has stray spaces')
         if 'scientific' in card:
@@ -3463,7 +3477,8 @@ def picture_cards(root, site):
         require(picture.exists(), f'{where}: src/chartae/{key}.jpg is missing')
         pictures[f'chartae/{key}.jpg'] = picture.read_bytes()
         ours = composed({'source': card['source']})
-        cards.append({'id': key, 'latin': card['latin'], 'english': card['english'], **({'scientific': card['scientific']} if 'scientific' in card else {}),
+        cards.append({'id': key, 'latin': card['latin'], **({'also': card['also']} if 'also' in card else {}),
+                      'english': card['english'], **({'scientific': card['scientific']} if 'scientific' in card else {}),
                       'group': card['group'], 'line': card['line'],
                       'source': '' if ours else card['source'], **{name: card[name] for name in ('food', 'bears', 'record') if name in card},
                       'picture': f'chartae/{key}.jpg', 'image': {name: image[name] for name in ('author', 'licence', 'licence_url', 'page')}})
@@ -3481,6 +3496,21 @@ def picture_counts(cards, groups):
     for card in cards:
         counts[subject_of[card['group']]] = counts.get(subject_of[card['group']], 0) + 1
     return counts
+
+
+def english_series(items):
+    """Items joined as our English joins them, with the serial comma: "a", "a and b", "a, b, and c"."""
+    items = list(items)
+    return ' and '.join(items) if len(items) < 3 else ', '.join(items[:-1]) + ', and ' + items[-1]
+
+
+def picture_description(data):
+    """The picture cards' description for the page's meta tag, from the data: how many cards, of
+    which subjects, and how many of each (a subject without cards is not named)."""
+    counts = picture_counts(data['cards'], data['groups'])
+    named = [(subject['english'][0].lower() + subject['english'][1:], counts[subject['id']]) for subject in data['subjects'] if counts.get(subject['id'])]
+    return (f'{len(data["cards"])} picture cards of {english_series(name for name, _ in named)} '
+            f'({english_series(f"{count} of {name}" for name, count in named)})')
 
 
 def fill(path, replacements):
@@ -3534,9 +3564,8 @@ def build_site(root=ROOT):
     outputs['assets/practice.js'] = (root / 'src/practice.js').read_text(encoding='utf-8')
     chartae, pictures = picture_cards(root, site)
     picture_data = json.loads(chartae[chartae.index('{'):chartae.rindex('}') + 1])
-    counts = picture_counts(picture_data['cards'], picture_data['groups'])
     outputs['chartae.html'] = fill(root / 'src/chartae.html', {
-        'count': str(len(picture_data['cards'])), 'animals': str(counts.get('animalia', 0)), 'plants': str(counts.get('plantae', 0)),
+        'described': escape(picture_description(picture_data)),
         'theme': THEME_INIT, 'app': app_head(''), 'header': site_header(''), 'footer': site_footer('')})
     outputs['assets/chartae.js'] = (root / 'src/chartae.js').read_text(encoding='utf-8')
     outputs['assets/chartae-data.js'] = chartae

@@ -9,6 +9,11 @@
    "id": "plantae",
    "latin": "Plantae",
    "english": "Plants"
+  },
+  {
+   "id": "corpus",
+   "latin": "Corpus",
+   "english": "The body"
   }
  ],
  "groups": [
@@ -83,6 +88,36 @@
    "subject": "plantae",
    "latin": "Partēs plantārum",
    "english": "Parts of plants"
+  },
+  {
+   "id": "caput",
+   "subject": "corpus",
+   "latin": "Caput et faciēs",
+   "english": "Head and face"
+  },
+  {
+   "id": "truncus",
+   "subject": "corpus",
+   "latin": "Truncus",
+   "english": "Trunk"
+  },
+  {
+   "id": "bracchium",
+   "subject": "corpus",
+   "latin": "Bracchium et manus",
+   "english": "Arm and hand"
+  },
+  {
+   "id": "crus",
+   "subject": "corpus",
+   "latin": "Crūs et pēs",
+   "english": "Leg and foot"
+  },
+  {
+   "id": "intus",
+   "subject": "corpus",
+   "latin": "Intus",
+   "english": "Inside"
   }
  ],
  "cards": [
@@ -4896,6 +4931,161 @@
     "licence": "CC BY-SA 4.0",
     "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
     "page": "https://commons.wikimedia.org/wiki/File:Vine_leaf_in_the_afternoon_sun.jpg"
+   }
+  },
+  {
+   "id": "oculus",
+   "latin": "oculus, oculī m.",
+   "english": "eye",
+   "scientific": "Oculus",
+   "group": "caput",
+   "line": "Caecī sunt oculī, cum animus aliās rēs agit.",
+   "source": "Publil. Sent. C 31",
+   "record": "eye",
+   "image": {
+    "file": "A woman's eye.JPG",
+    "author": "Petar Milošević",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:A_woman's_eye.JPG"
+   }
+  },
+  {
+   "id": "caput",
+   "latin": "caput, capitis n.",
+   "english": "head",
+   "scientific": "Caput",
+   "group": "caput",
+   "line": "Ecce autem iterum hīc dēposīvit caput et dormit.",
+   "source": "Plaut. Most. 382",
+   "record": "head",
+   "image": {
+    "file": "Bust of Germanicus, front - Getty Museum (2021.66).jpg",
+    "author": "J. Paul Getty Museum",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Bust_of_Germanicus,_front_-_Getty_Museum_(2021.66).jpg"
+   }
+  },
+  {
+   "id": "capillus",
+   "latin": "capillus, capillī m.",
+   "also": "coma, comae f.",
+   "english": "hair",
+   "scientific": "Capilli",
+   "group": "caput",
+   "line": "saepe sonant mōtī glaciē pendente capillī",
+   "source": "Ov. Trist. III 10, 21",
+   "record": "hair",
+   "image": {
+    "file": "Braided Hair (Unsplash).jpg",
+    "author": "Pete Bellis",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Braided_Hair_(Unsplash).jpg"
+   }
+  },
+  {
+   "id": "tergum",
+   "latin": "tergum, tergī n.",
+   "also": "dorsum, dorsī n.",
+   "english": "back",
+   "scientific": "Dorsum",
+   "group": "truncus",
+   "line": "pērās imposuit Juppiter nōbīs duās: / propriīs replētam vitiīs post tergum dedit",
+   "source": "Phaedr. IV 10, 1–2",
+   "record": "back-body",
+   "image": {
+    "file": "Venus de Milo back 2023.jpg",
+    "author": "Caeciliusinhorto",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Venus_de_Milo_back_2023.jpg"
+   }
+  },
+  {
+   "id": "manus",
+   "latin": "manus, manūs f.",
+   "english": "hand",
+   "scientific": "Manus",
+   "group": "bracchium",
+   "line": "Ostende hūc manūs. — Em tibi, ostendī, eccās.",
+   "source": "Plaut. Aul. 640b–641",
+   "record": "hand",
+   "image": {
+    "file": "Left-palm.jpg",
+    "author": "些細な日常",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Left-palm.jpg"
+   }
+  },
+  {
+   "id": "genu",
+   "latin": "genū, genūs n.; plural genua",
+   "english": "knee",
+   "scientific": "Genu",
+   "group": "crus",
+   "line": "ipse genū nīxus flammās exsuscitat aurā",
+   "source": "Ov. Fast. V 507",
+   "record": "knee",
+   "image": {
+    "file": "Human knees.jpg",
+    "author": "Genusfotografen (Tomas Gunnarsson) / Wikimedia Sverige",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Human_knees.jpg"
+   }
+  },
+  {
+   "id": "cor",
+   "latin": "cor, cordis n.",
+   "english": "heart",
+   "scientific": "Cor",
+   "group": "intus",
+   "line": "frontem locumque cordis / crucis figūra signet",
+   "source": "Prud. Cath. VI 131–132",
+   "record": "heart",
+   "image": {
+    "file": "Heart anterior exterior view.jpg",
+    "author": "Patrick J. Lynch, medical illustrator",
+    "licence": "CC BY 2.5",
+    "licence_url": "https://creativecommons.org/licenses/by/2.5/",
+    "page": "https://commons.wikimedia.org/wiki/File:Heart_anterior_exterior_view.jpg"
+   }
+  },
+  {
+   "id": "cerebrum",
+   "latin": "cerebrum, cerebrī n.",
+   "english": "brain",
+   "scientific": "Encephalon",
+   "group": "intus",
+   "line": "persōnam tragicam forte vulpēs vīderat: / ō quanta speciēs, inquit, cerebrum nōn habet!",
+   "source": "Phaedr. I 7, 1–2",
+   "record": "brain",
+   "image": {
+    "file": "Brain human lateral view.svg",
+    "author": "Patrick J. Lynch, medical illustrator",
+    "licence": "CC BY 2.5",
+    "licence_url": "https://creativecommons.org/licenses/by/2.5/",
+    "page": "https://commons.wikimedia.org/wiki/File:Brain_human_lateral_view.svg"
+   }
+  },
+  {
+   "id": "jecur",
+   "latin": "jecur, jecoris n.",
+   "english": "liver",
+   "scientific": "Hepar",
+   "group": "intus",
+   "line": "aspice quam tumeat magnō jecur ānsere majus!",
+   "source": "Mart. XIII 58, 1",
+   "record": "liver",
+   "image": {
+    "file": "Liver (organ).png",
+    "author": "BruceBlaus",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Liver_(organ).png"
    }
   }
  ]

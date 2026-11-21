@@ -926,11 +926,16 @@ class BuildTests(unittest.TestCase):
         self.assertEqual([card['id'] for card in data['cards']], [card['id'] for card in source['cards']])
         self.assertEqual([group['id'] for group in data['groups']], [group['id'] for group in source['groups']])
         self.assertEqual([(group['id'], group['subject']) for group in data['groups']], [(group['id'], group['subject']) for group in source['groups']])
-        self.assertEqual([subject['id'] for subject in data['subjects']][:2], ['animalia', 'plantae'])
+        self.assertEqual([subject['id'] for subject in data['subjects']][:3], ['animalia', 'plantae', 'corpus'])
         subject_of = {group['id']: group['subject'] for group in data['groups']}
-        animals = sum(subject_of[card['group']] == 'animalia' for card in data['cards'])
-        self.assertIn(f'content="{len(data["cards"])} picture cards of animals and plants ({animals} of animals, {len(data["cards"]) - animals} of plants',
+        of = {key: sum(subject_of[card['group']] == key for card in data['cards']) for key in ('animalia', 'plantae', 'corpus')}
+        # The description is made from the data, for every subject with cards, with the serial comma.
+        self.assertIn(f'content="{len(data["cards"])} picture cards of animals, plants, and the body '
+                      f'({of["animalia"]} of animals, {of["plantae"]} of plants, and {of["corpus"]} of the body) with their Latin names',
                       outputs['chartae.html'])
+        self.assertEqual(builder.english_series(['a']), 'a')
+        self.assertEqual(builder.english_series(['a', 'b']), 'a and b')
+        self.assertEqual(builder.english_series(['a', 'b', 'c']), 'a, b, and c')
         self.assertIn('<title>Picture cards · ', outputs['chartae.html'])
         linked = 0
         for card in data['cards']:
@@ -1067,11 +1072,12 @@ class BuildTests(unittest.TestCase):
             data = json.loads(json.dumps(cards))
             data['cards'][0]['scientific'] = name
             self.write('data/chartae.json', data)
-        for name in ('Quercus ilex', 'Platanus × hispanica', 'Capsella bursa-pastoris', 'Brassica oleracea subsp. capitata'):
+        # The anatomists' terms (Terminologia Anatomica) are written the same way: Hepar, Vesica urinaria.
+        for name in ('Quercus ilex', 'Platanus × hispanica', 'Capsella bursa-pastoris', 'Brassica oleracea subsp. capitata', 'Hepar', 'Vesica urinaria'):
             with_name(name)
             builder.build_site(self.root)
         with_name('Canis lūpus')
-        with self.assertRaisesRegex(ValueError, 'scientific name “Canis lūpus” has ū: it is written as zoology and botany write it'):
+        with self.assertRaisesRegex(ValueError, 'scientific name “Canis lūpus” has ū: it is written as zoology, botany, and anatomy write it'):
             builder.build_site(self.root)
         with_name('canis lupus')
         with self.assertRaisesRegex(ValueError, 'must begin with a capital letter'):
@@ -1085,6 +1091,49 @@ class BuildTests(unittest.TestCase):
         with_name(' Canis lupus')
         with self.assertRaisesRegex(ValueError, 'has stray spaces'):
             builder.build_site(self.root)
+
+    def test_a_picture_card_may_carry_a_second_latin_word(self):
+        """Where two Latin words mean the same thing (Jack, 20 November 2026: coma and capillus), one
+        card has the second on its back: also, a full dictionary form, on a card of any subject,
+        validated as the first word is, and carried into the page's data right after it."""
+        cards = self.read('data/chartae.json')
+        self.assertEqual(next(card for card in cards['cards'] if card['id'] == 'capillus')['also'], 'coma, comae f.')
+        outputs = builder.build_site(self.root)
+        script = outputs['assets/chartae-data.js']
+        built = {card['id']: card for card in json.loads(script[script.index('{'):script.rindex('}') + 1])['cards']}
+        for card in cards['cards']:
+            self.assertEqual(built[card['id']].get('also'), card.get('also'), card['id'])
+        self.assertEqual(list(built['capillus'])[:3], ['id', 'latin', 'also'])
+        # On an animal's card too, and refused when it is empty or has stray spaces.
+        data = json.loads(json.dumps(cards))
+        data['cards'][0]['also'] = 'catulus, catulī m.'
+        self.write('data/chartae.json', data)
+        builder.build_site(self.root)
+        for bad in ('', ' coma, comae f.', 'coma, comae f. '):
+            data['cards'][0]['also'] = bad
+            self.write('data/chartae.json', data)
+            with self.subTest(also=bad), self.assertRaisesRegex(ValueError, 'also is empty or has stray spaces|Expected nonempty text'):
+                builder.build_site(self.root)
+
+    def test_the_body_is_a_third_subject_that_takes_neither_food_nor_bears(self):
+        """The body came in as a third subject (Jack, 20 November 2026): its cards take neither what
+        an animal eats nor what a plant bears; the animals still must have food, and only plants bear."""
+        cards = self.read('data/chartae.json')
+        self.assertIn({'id': 'corpus', 'latin': 'Corpus', 'english': 'The body'}, cards['subjects'])
+        self.assertEqual([group['id'] for group in cards['groups'] if group['subject'] == 'corpus'], ['caput', 'truncus', 'bracchium', 'crus', 'intus'])
+        body = [card for card in cards['cards'] if card['group'] in ('caput', 'truncus', 'bracchium', 'crus', 'intus')]
+        self.assertTrue(body and all('food' not in card and 'bears' not in card for card in body))
+        builder.build_site(self.root)
+        index = cards['cards'].index(body[0])
+        for name, value, message in (('food', 'Carne.', 'food \\(what an animal eats\\) is only for a card of an animal'),
+                                     ('bears', 'Glandēs.', 'bears \\(what a plant bears\\) is only for a card of a plant')):
+            data = json.loads(json.dumps(cards))
+            data['cards'][index][name] = value
+            self.write('data/chartae.json', data)
+            with self.subTest(name=name), self.assertRaisesRegex(ValueError, message):
+                builder.build_site(self.root)
+        # A kind may share its id with a card (the kind caput and the card caput): the two are kept apart.
+        self.assertTrue({group['id'] for group in cards['groups']} & {card['id'] for card in cards['cards']})
 
     def test_practice_cards_are_one_per_record_with_kind_and_sources(self):
         sense = self.record('sheet-of-paper')

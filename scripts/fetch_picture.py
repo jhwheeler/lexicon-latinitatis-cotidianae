@@ -22,7 +22,11 @@ after the one before, and backs off and tries again on HTTP 429 (for up to --wai
 1) or a server error. Commons limits requests by address, and this machine's address is shared: when
 the API still answers 429 after that, the script reads the same data from the file's own page (its
 machine-readable licence, licensetpl_short and licensetpl_link, and its Author field) and takes the
-picture through Special:FilePath, which were answering when the API was not (20 November 2026). The proxy of the
+picture through Special:FilePath, which were answering when the API was not (20 November 2026). A file
+under several licences (the Getty's carry "No restrictions" and CC0) is taken under the first its page
+states that the builder takes; the API names only one, so a refusal there is checked against the page.
+A drawing in SVG is taken as Wikimedia's PNG rendering of it, 1920 pixels wide, whatever its nominal size;
+a transparent ground becomes white (21 November 2026). The proxy of the
 environment is used as it is configured; TLS is always verified.
 """
 import argparse
@@ -137,10 +141,33 @@ def file_info(name):
             'author': plain(meta.get('Artist')), 'size': (info['width'], info['height'])}
 
 
+def spans(page, name):
+    """The text of every element of a class on a file's page (Commons's machine-readable licence data), in order."""
+    return [plain(found) for found in re.findall(r'<[a-z]+[^>]*class="[^"]*\b%s\b[^"]*"[^>]*>(.*?)</[a-z]+>' % re.escape(name), page, re.S)]
+
+
 def span(page, name):
-    """The text of the first element of a class on a file's page (Commons's machine-readable licence data)."""
-    found = re.search(r'<[a-z]+[^>]*class="[^"]*\b%s\b[^"]*"[^>]*>(.*?)</[a-z]+>' % re.escape(name), page, re.S)
-    return plain(found[1]) if found else ''
+    """The text of the first element of a class on a file's page."""
+    found = spans(page, name)
+    return found[0] if found else ''
+
+
+def page_licences(page):
+    """Every licence a file's page states, as (short name, address), in the page's order. A file
+    may be under several (the Getty's files carry "No restrictions" and CC0, 21 November 2026);
+    each licence template writes its short name and, if it has one, its address."""
+    # A template without an address (public domain) writes no link: each short name is paired with
+    # the link that follows it before the next short name.
+    element = r'<[a-z]+[^>]*class="[^"]*\b%s\b[^"]*"[^>]*>(.*?)</[a-z]+>'
+    marks = sorted([(m.start(), 'short', plain(m[1])) for m in re.finditer(element % 'licensetpl_short', page, re.S)]
+                   + [(m.start(), 'link', plain(m[1])) for m in re.finditer(element % 'licensetpl_link', page, re.S)])
+    found = []
+    for _, kind, text in marks:
+        if kind == 'short':
+            found.append([text, ''])
+        elif found and not found[-1][1]:
+            found[-1][1] = licence_address(text)
+    return [tuple(pair) for pair in found]
 
 
 def page_info(name):
@@ -154,26 +181,41 @@ def page_info(name):
     page = get(address, patience=max(PATIENCE[0], 300)).decode('utf-8', 'replace').replace('&#95;', '_')   # Commons writes the underscore of these class names and ids as an entity
     title = re.search(r'<title>(.*?) - Wikimedia Commons</title>', page, re.S)
     author = re.search(r'id="fileinfotpl_aut"[^>]*>.*?</td>\s*<td[^>]*>(.*?)</td>', page, re.S)
-    size = re.search(r'class="fullMedia".*?\(([\d,]+) × ([\d,]+) pixels', page, re.S)
+    size = re.search(r'class="fullMedia".*?\((?:SVG file, nominally )?([\d,]+) × ([\d,]+) pixels', page, re.S)
+    licences_found = page_licences(page)
     return {'title': html.unescape(title[1]).strip() if title else 'File:' + bare.replace('_', ' '), 'page': address,
             'url': f'https://commons.wikimedia.org/wiki/Special:FilePath/{quoted}?width={RENDITION}',
-            'licence': span(page, 'licensetpl_short'), 'licence_url': licence_address(span(page, 'licensetpl_link')),
+            'licence': licences_found[0][0] if licences_found else '', 'licence_url': licences_found[0][1] if licences_found else '',
+            'licences': licences_found,
             'author': plain(author[1]) if author else '',
             'size': tuple(int(n.replace(',', '')) for n in size.groups()) if size else None}
 
 
 def check_licence(info, table):
-    """The licence as the builder names it, or an exit that says why the picture cannot be taken."""
-    name = info['licence']
-    if name.lower() in ('public domain', 'pd'):
-        name = 'Public domain'
-    if name not in table:
-        raise SystemExit(f'Refused: the licence of {info["title"]} is "{info["licence"] or "not stated"}", '
-                         f'and the cards take only {", ".join(table)}. Read the file’s page: {info["page"]}')
-    if table[name] and info['licence_url'] and info['licence_url'] != table[name]:
-        raise SystemExit(f'Refused: the file names the licence {name} with the address {info["licence_url"]}, '
-                         f'not {table[name]}. Read the file’s page: {info["page"]}')
-    return name
+    """The licence as the builder names it, or an exit that says why the picture cannot be taken.
+    A file under several licences (info["licences"], read from its page) is taken under the first
+    of them that the builder takes."""
+    offered = info.get('licences') or [(info['licence'], info['licence_url'])]
+    reasons = []
+    for given, url in offered:
+        name = 'Public domain' if given.lower() in ('public domain', 'pd') else given
+        if name not in table:
+            reasons.append(f'Refused: the licence of {info["title"]} is "{given or "not stated"}", '
+                           f'and the cards take only {", ".join(table)}. Read the file’s page: {info["page"]}')
+        elif table[name] and url and url != table[name]:
+            reasons.append(f'Refused: the file names the licence {name} with the address {url}, '
+                           f'not {table[name]}. Read the file’s page: {info["page"]}')
+        else:
+            return name
+    raise SystemExit('\n'.join(reasons) or f'Refused: {info["title"]} states no licence. Read the file’s page: {info["page"]}')
+
+
+def rendition_width(title, size):
+    """The width of the rendition to ask for: the widest standard width the file has, or the full
+    width for an SVG, which Wikimedia renders at any width; None if the file is too narrow."""
+    if title.lower().endswith('.svg'):
+        return RENDITION
+    return next((w for w in STANDARD_WIDTHS if not size or size[0] >= w), None)
 
 
 def fractions(text, count, what):
@@ -229,7 +271,15 @@ def main():
     except Busy:
         print('The Commons API is still answering 429: reading the file’s own page instead', file=sys.stderr)
         info = page_info(args.file)
-    licence = check_licence(info, table)
+    try:
+        licence = check_licence(info, table)
+    except SystemExit:
+        if 'licences' in info:
+            raise
+        # The API names one licence only, and a file may have several: its page lists them all.
+        print('The licence the API names is refused: reading the file’s own page for any other', file=sys.stderr)
+        info = page_info(args.file)
+        licence = check_licence(info, table)
     if not info['author']:
         raise SystemExit(f'The file’s metadata names no author: read its page and add the author by hand. {info["page"]}')
     # Wikimedia serves renditions only in its standard widths, and refuses the original itself to a
@@ -237,7 +287,9 @@ def main():
     # width asked for comes back from the API as its original, so the widest standard width that
     # the file has is asked for instead, through Special:FilePath, which is also the way round a
     # download that is still refused (20 November 2026).
-    width = next((w for w in STANDARD_WIDTHS if not info['size'] or info['size'][0] >= w), None)
+    # A drawing in SVG has no width of its own: Wikimedia renders it, as a PNG, at any width asked
+    # for, so it is asked for at the full width whatever its nominal size (21 November 2026).
+    width = rendition_width(info['title'], info['size'])
     if width is None:
         raise SystemExit(f'{info["title"]} is only {info["size"][0]} pixels wide: too small for a card (the narrowest rendition taken is {STANDARD_WIDTHS[-1]})')
     by_path = ('https://commons.wikimedia.org/wiki/Special:FilePath/'

@@ -62,7 +62,11 @@
   // data/chartae.json); and, when the plants came in the same day, title (Chartae pictae / Picture
   // cards), subjects (Rēs), picture (Imāgō, for Imāgō animālis), the question on the back of a
   // plant's card ("Quid fert?", in drawBack), and the Latin and English names of the subjects and
-  // of the plant kinds (in data/chartae.json).
+  // of the plant kinds (in data/chartae.json). When the body came in (20 November 2026) the Latin
+  // and English names of its subject (Corpus / The body) and of its five kinds (Caput et faciēs,
+  // Truncus, Bracchium et manus, Crūs et pēs, Intus) were the coordinating session's wording, in
+  // data/chartae.json, for Jack's review; the label of a card's second Latin word ("also": Item: /
+  // Also:) is the vocabulary practice's own label for its line of other Latin words, which is Jack's.
   const one = (n, singular, many) => `${number(n)} ${n === 1 ? singular : many}`;
   const T = {
     la: {
@@ -75,7 +79,7 @@
       saved: 'Prōgressus in hōc nāvigātrō servātur.',
       notSaved: 'Prōgressus in hōc nāvigātrō servārī nōn potest: pāginā clausā perībit.',
       offline: 'Imāginēs in hōc apparātū servātae sunt: sine rēte quoque lūdere licet.',
-      entry: 'In lexicō īnspice', composed: 'exemplum nostrum', english: 'Anglicē', picture: 'Imāgō',
+      entry: 'In lexicō īnspice', composed: 'exemplum nostrum', english: 'Anglicē', picture: 'Imāgō', also: 'Item:',
       credit: 'Imāgō:', from: 'ex', cropped: 'recīsa',
       cards: n => one(n, 'charta', 'chartae'), due: n => `${number(n)} nunc ${n === 1 ? 'repetenda' : 'repetendae'}`, fresh: n => one(n, 'nova', 'novae'),
       known: n => one(n, 'nōta', 'nōtae'), learning: n => one(n, 'discitur', 'discuntur'),
@@ -95,7 +99,7 @@
       saved: 'Progress is kept in this browser.',
       notSaved: 'Progress cannot be saved in this browser: it will last only until the page is closed.',
       offline: 'The pictures are saved on this device: the game also works offline.',
-      entry: 'Open the entry', composed: 'composed', english: 'English', picture: 'Picture',
+      entry: 'Open the entry', composed: 'composed', english: 'English', picture: 'Picture', also: 'Also:',
       credit: 'Picture:', from: 'from', cropped: 'cropped',
       cards: n => one(n, 'card', 'cards'), due: n => `${number(n)} due now`, fresh: n => `${number(n)} new`,
       known: n => `${number(n)} known`, learning: n => `${number(n)} learning`,
@@ -437,6 +441,12 @@
   function drawBack(card) {
     q('g-la').replaceChildren(el('b', '', card.head), card.latin.slice(card.head.length));
     q('g-la').classList.toggle('long', card.head.includes(' '));
+    // A second Latin word for the same thing (Jack, 20 November 2026: one card for coma and
+    // capillus, the second word on its back), under the first, quietly, with the vocabulary
+    // practice's label for its line of other Latin words; the word itself is Latin, so that the
+    // display options reach it.
+    q('g-also').hidden = !card.also;
+    q('g-also').replaceChildren(...(card.also ? [t('also') + ' ', el('span', '', card.also, 'la')] : []));
     // The scientific name follows the English one (Jack, 20 November 2026: "inclūdāmus nōmina
     // scientifica … jūxtā nōmina Anglica … Hōc modō discēmus discrīmina"), in italic, as zoology and
     // botany write it. Its language is la-x-taxon: Latin to a screen reader, which reads the

@@ -3562,14 +3562,14 @@ test('the picture cards: a line of subjects narrows the kinds and the deck, the 
   const offered = () => page.locator('#c-groups button').evaluateAll(nodes => nodes.map(n => n.dataset.group));
   await openChartae(true, null);
   assert.equal(await page.locator('#c-subjects-h').textContent(), 'Rēs');
-  // Three subjects since the body came in (20 November 2026), each with its count.
-  assert.deepEqual(await page.locator('#c-subjects button > span:first-child').allTextContents(), ['Omnia', 'Animālia', 'Plantae', 'Corpus']);
-  assert.deepEqual(await page.locator('#c-subjects button > span:first-child').evaluateAll(nodes => nodes.map(n => n.lang)), ['', 'la', 'la', 'la']);
+  // Four subjects since food and drink came in (21 November 2026; the body on 20 November), each with its count.
+  assert.deepEqual(await page.locator('#c-subjects button > span:first-child').allTextContents(), ['Omnia', 'Animālia', 'Plantae', 'Corpus', 'Cibī']);
+  assert.deepEqual(await page.locator('#c-subjects button > span:first-child').evaluateAll(nodes => nodes.map(n => n.lang)), ['', 'la', 'la', 'la', 'la']);
   await page.locator('#p-lang button[data-lang="en"]').click();
   assert.equal(await page.locator('#c-subjects-h').textContent(), 'Subjects');
-  assert.deepEqual(await page.locator('#c-subjects button > span:first-child').allTextContents(), ['All', 'Animals', 'Plants', 'The body']);
-  assert.deepEqual(await page.locator('#c-subjects .count').allTextContents(), [data.cards.length, of('animalia').length, of('plantae').length, of('corpus').length].map(String));
-  assert.ok(of('corpus').length > 0);
+  assert.deepEqual(await page.locator('#c-subjects button > span:first-child').allTextContents(), ['All', 'Animals', 'Plants', 'The body', 'Food and drink']);
+  assert.deepEqual(await page.locator('#c-subjects .count').allTextContents(), [data.cards.length, of('animalia').length, of('plantae').length, of('corpus').length, of('cibi').length].map(String));
+  assert.ok(of('corpus').length > 0 && of('cibi').length > 0);
   assert.deepEqual(await pressed('#c-subjects'), ['']);
   // A kind with no cards yet has no button, and the subjects line sits above the kinds.
   assert.deepEqual(await offered(), ['', ...shownKinds.map(group => group.id)]);
@@ -3591,6 +3591,9 @@ test('the picture cards: a line of subjects narrows the kinds and the deck, the 
   assert.deepEqual(await pressed('#c-subjects'), ['animalia', 'plantae']);
   assert.deepEqual(await pressed('#c-groups'), ['arbores']);
   await page.locator('#c-subjects button[data-subject="corpus"]').click();
+  assert.deepEqual(await pressed('#c-subjects'), ['animalia', 'plantae', 'corpus']);
+  assert.deepEqual(await pressed('#c-groups'), ['arbores']);
+  await page.locator('#c-subjects button[data-subject="cibi"]').click();
   assert.deepEqual(await pressed('#c-subjects'), ['']);
   assert.deepEqual(await pressed('#c-groups'), ['arbores']);
   assert.equal((await deckCount())[0], inKind('arbores'));
@@ -3600,7 +3603,8 @@ test('the picture cards: a line of subjects narrows the kinds and the deck, the 
   assert.deepEqual(await pressed('#c-groups'), ['']);
   assert.equal((await deckCount())[0], of('animalia').length);
   await page.locator('#c-subjects button[data-subject="plantae"]').click();
-  await page.locator('#c-subjects button[data-subject="corpus"]').click();   // all three: none
+  await page.locator('#c-subjects button[data-subject="corpus"]').click();
+  await page.locator('#c-subjects button[data-subject="cibi"]').click();   // all four: none
   assert.deepEqual(await pressed('#c-subjects'), ['']);
   await page.locator('#c-subjects button[data-subject="plantae"]').click();
   await page.locator('#c-groups button[data-group="partes"]').click();

@@ -926,12 +926,13 @@ class BuildTests(unittest.TestCase):
         self.assertEqual([card['id'] for card in data['cards']], [card['id'] for card in source['cards']])
         self.assertEqual([group['id'] for group in data['groups']], [group['id'] for group in source['groups']])
         self.assertEqual([(group['id'], group['subject']) for group in data['groups']], [(group['id'], group['subject']) for group in source['groups']])
-        self.assertEqual([subject['id'] for subject in data['subjects']][:3], ['animalia', 'plantae', 'corpus'])
+        self.assertEqual([subject['id'] for subject in data['subjects']][:4], ['animalia', 'plantae', 'corpus', 'cibi'])
         subject_of = {group['id']: group['subject'] for group in data['groups']}
-        of = {key: sum(subject_of[card['group']] == key for card in data['cards']) for key in ('animalia', 'plantae', 'corpus')}
+        of = {key: sum(subject_of[card['group']] == key for card in data['cards']) for key in ('animalia', 'plantae', 'corpus', 'cibi')}
         # The description is made from the data, for every subject with cards, with the serial comma.
-        self.assertIn(f'content="{len(data["cards"])} picture cards of animals, plants, and the body '
-                      f'({of["animalia"]} of animals, {of["plantae"]} of plants, and {of["corpus"]} of the body) with their Latin names',
+        self.assertIn(f'content="{len(data["cards"])} picture cards of animals, plants, the body, and food and drink '
+                      f'({of["animalia"]} of animals, {of["plantae"]} of plants, {of["corpus"]} of the body, '
+                      f'and {of["cibi"]} of food and drink) with their Latin names',
                       outputs['chartae.html'])
         self.assertEqual(builder.english_series(['a']), 'a')
         self.assertEqual(builder.english_series(['a', 'b']), 'a and b')
@@ -1134,6 +1135,26 @@ class BuildTests(unittest.TestCase):
                 builder.build_site(self.root)
         # A kind may share its id with a card (the kind caput and the card caput): the two are kept apart.
         self.assertTrue({group['id'] for group in cards['groups']} & {card['id'] for card in cards['cards']})
+
+    def test_food_and_drink_is_a_fourth_subject_without_scientific_names(self):
+        """Food and drink came in as a fourth subject (Jack, 21 November 2026: "Postquam chartās
+        partium corporum perfēceris, perge quaesō: 1. Cibī 2. Rēs familiārēs domesticaeque"): its
+        cards take neither food nor bears, and carry no scientific name, since a dish is not a taxon."""
+        cards = self.read('data/chartae.json')
+        self.assertIn({'id': 'cibi', 'latin': 'Cibī', 'english': 'Food and drink'}, cards['subjects'])
+        kinds = ['panes', 'fercula', 'lactea', 'carnes', 'condimenta', 'potiones']
+        self.assertEqual([group['id'] for group in cards['groups'] if group['subject'] == 'cibi'], kinds)
+        food = [card for card in cards['cards'] if card['group'] in kinds]
+        self.assertTrue(food and all('food' not in card and 'bears' not in card and 'scientific' not in card for card in food))
+        builder.build_site(self.root)
+        index = cards['cards'].index(food[0])
+        for name, value, message in (('food', 'Carne.', 'food \\(what an animal eats\\) is only for a card of an animal'),
+                                     ('bears', 'Glandēs.', 'bears \\(what a plant bears\\) is only for a card of a plant')):
+            data = json.loads(json.dumps(cards))
+            data['cards'][index][name] = value
+            self.write('data/chartae.json', data)
+            with self.subTest(name=name), self.assertRaisesRegex(ValueError, message):
+                builder.build_site(self.root)
 
     def test_practice_cards_are_one_per_record_with_kind_and_sources(self):
         sense = self.record('sheet-of-paper')

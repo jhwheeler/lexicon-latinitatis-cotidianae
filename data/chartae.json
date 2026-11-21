@@ -14,6 +14,11 @@
    "id": "corpus",
    "latin": "Corpus",
    "english": "The body"
+  },
+  {
+   "id": "cibi",
+   "latin": "Cibī",
+   "english": "Food and drink"
   }
  ],
  "groups": [
@@ -118,6 +123,42 @@
    "subject": "corpus",
    "latin": "Intus",
    "english": "Inside"
+  },
+  {
+   "id": "panes",
+   "subject": "cibi",
+   "latin": "Pānis et lība",
+   "english": "Bread and cakes"
+  },
+  {
+   "id": "fercula",
+   "subject": "cibi",
+   "latin": "Fercula",
+   "english": "Dishes"
+  },
+  {
+   "id": "lactea",
+   "subject": "cibi",
+   "latin": "Lac et ōva",
+   "english": "Milk and eggs"
+  },
+  {
+   "id": "carnes",
+   "subject": "cibi",
+   "latin": "Carō",
+   "english": "Meat"
+  },
+  {
+   "id": "condimenta",
+   "subject": "cibi",
+   "latin": "Condīmenta et dulcia",
+   "english": "Seasonings and sweets"
+  },
+  {
+   "id": "potiones",
+   "subject": "cibi",
+   "latin": "Pōtiōnēs",
+   "english": "Drinks"
   }
  ],
  "cards": [
@@ -5200,11 +5241,11 @@
    "source": "Varr. LL VI 84",
    "record": "mouth",
    "image": {
-    "file": "Portrait head of Agrippina the Younger - Getty Museum (70.AA.101).jpg",
-    "author": "J. Paul Getty Museum",
-    "licence": "CC0",
-    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "page": "https://commons.wikimedia.org/wiki/File:Portrait_head_of_Agrippina_the_Younger_-_Getty_Museum_(70.AA.101).jpg"
+    "file": "Theatrical mask, S 1167, Roman period, from Villa Altieri, marble - Musei Capitolini - Rome, Italy - DSC05917.jpg",
+    "author": "Daderot",
+    "licence": "Public domain",
+    "licence_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Theatrical_mask,_S_1167,_Roman_period,_from_Villa_Altieri,_marble_-_Musei_Capitolini_-_Rome,_Italy_-_DSC05917.jpg"
    }
   },
   {
@@ -5712,11 +5753,11 @@
    "source": "Plaut. Aul. 640b–641",
    "record": "hand",
    "image": {
-    "file": "Left Hand of a Female Human.png",
-    "author": "Lezlie Rewatch",
-    "licence": "CC0",
-    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "page": "https://commons.wikimedia.org/wiki/File:Left_Hand_of_a_Female_Human.png"
+    "file": "Hand 4.jpg",
+    "author": "Gurbandhan singh",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Hand_4.jpg"
    }
   },
   {
@@ -6515,6 +6556,824 @@
     "licence": "Public domain",
     "licence_url": "",
     "page": "https://commons.wikimedia.org/wiki/File:Human_Pancreas_(NIH_BioArt_239).png"
+   }
+  },
+  {
+   "id": "panis",
+   "latin": "pānis, pānis m.",
+   "english": "bread",
+   "group": "panes",
+   "line": "pānem et aquam nātūra dēsīderat",
+   "source": "Sen. Ep. 25, 4",
+   "record": "bread",
+   "image": {
+    "file": "6312 sourdough bread.jpg",
+    "author": "Virtual-Pano",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:6312_sourdough_bread.jpg"
+   }
+  },
+  {
+   "id": "panistostus",
+   "latin": "pānis tostus, pānis tostī m.",
+   "english": "toast",
+   "group": "panes",
+   "line": "Pānis tostus calidus būtȳrō illinitur.",
+   "source": "composed",
+   "record": "toast-bread",
+   "image": {
+    "file": "2 Slices of Toast in the kitchen.jpg",
+    "author": "LogoFever",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:2_Slices_of_Toast_in_the_kitchen.jpg"
+   }
+  },
+  {
+   "id": "paniculus",
+   "latin": "pāniculus, pāniculī m.",
+   "english": "bread roll",
+   "group": "panes",
+   "line": "Pāniculī calidī ē furnō prōmuntur.",
+   "source": "composed",
+   "record": "bread-roll",
+   "image": {
+    "file": "Korb mit Brötchen.JPG",
+    "author": "3268zauber",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Korb_mit_Br%C3%B6tchen.JPG"
+   }
+  },
+  {
+   "id": "farina",
+   "latin": "farīna, farīnae f.",
+   "english": "flour",
+   "group": "panes",
+   "line": "farīnam in mortārium inditō, aquae paulātim additō subigitōque pulchrē",
+   "source": "Cato Agr. 74",
+   "record": "flour",
+   "image": {
+    "file": "All-Purpose Flour (4107895947).jpg",
+    "author": "Veganbaking.net",
+    "licence": "CC BY-SA 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:All-Purpose_Flour_(4107895947).jpg"
+   }
+  },
+  {
+   "id": "massa",
+   "latin": "massa, massae f.",
+   "english": "dough",
+   "group": "panes",
+   "line": "tum affundit aquam, et facit massam, depsitque spathā ligneā",
+   "source": "Comen. OP 49",
+   "record": "dough",
+   "image": {
+    "file": "Bread dough 2018.jpg",
+    "author": "Kotivalo",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Bread_dough_2018.jpg"
+   }
+  },
+  {
+   "id": "crustulum",
+   "latin": "crustulum, crustulī n.",
+   "english": "biscuit",
+   "group": "panes",
+   "line": "ut puerīs ōlim dant crustula blandī doctōrēs, elementa velint ut discere prīma",
+   "source": "Hor. Serm. I 1, 25–26",
+   "record": "biscuit",
+   "image": {
+    "file": "Danish-butter-cookies-1032894.jpg",
+    "author": "sdnet01",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Danish-butter-cookies-1032894.jpg"
+   }
+  },
+  {
+   "id": "placenta",
+   "latin": "placenta, placentae f.",
+   "english": "cake",
+   "group": "panes",
+   "line": "rīdiculus tōtās semel absorbēre placentās",
+   "source": "Hor. Serm. II 8, 24",
+   "record": "cake",
+   "image": {
+    "file": "Victoria sponge.jpg",
+    "author": "Gordonplant",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Victoria_sponge.jpg"
+   }
+  },
+  {
+   "id": "libumnatale",
+   "latin": "lībum nātāle, lībī nātālis n.",
+   "also": "lībum nātālīcium, lībī nātālīciī n.",
+   "english": "birthday cake",
+   "group": "panes",
+   "line": "ūna celebrāta est per duo lība diēs",
+   "source": "Ov. Trist. IV 10, 12",
+   "record": "birthday-cake",
+   "image": {
+    "file": "Birthday cake with 6 candles.JPG",
+    "author": "Ardfern",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Birthday_cake_with_6_candles.JPG"
+   }
+  },
+  {
+   "id": "laganum",
+   "latin": "laganum, laganī n.",
+   "english": "pancake",
+   "group": "panes",
+   "line": "Mel laganō tuō īnfundam?",
+   "source": "composed",
+   "record": "pancake",
+   "image": {
+    "file": "Pancake stack.jpg",
+    "author": "Shisma",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Pancake_stack.jpg"
+   }
+  },
+  {
+   "id": "crustum",
+   "latin": "crustum, crustī n.",
+   "english": "pie",
+   "group": "panes",
+   "line": "«Duo crusta faciēmus,» inquit pater, «alterum ex mālīs, alterum ex cucurbitā …»",
+   "source": "Libellus IV",
+   "record": "pie",
+   "image": {
+    "file": "Apple Pie (baked).jpg",
+    "author": "RoySmith",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Apple_Pie_(baked).jpg"
+   }
+  },
+  {
+   "id": "mica",
+   "latin": "mīca, mīcae f.",
+   "english": "crumb",
+   "group": "panes",
+   "line": "nam et catellī edunt dē mīcīs quae cadunt dē mēnsā dominōrum suōrum.",
+   "source": "Mt. 15, 27",
+   "record": "crumb",
+   "image": {
+    "file": "Miettes de pain.jpg",
+    "author": "Jeangagnon",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Miettes_de_pain.jpg"
+   }
+  },
+  {
+   "id": "puls",
+   "latin": "puls, pultis f.",
+   "english": "porridge",
+   "group": "fercula",
+   "line": "pulte autem, nōn pāne, vīxisse longō tempore Rōmānōs manifestum",
+   "source": "Plin. NH XVIII 83",
+   "record": "porridge",
+   "image": {
+    "file": "Macroom oatmeal porridge, topped with muscovado sugar and butter.jpg",
+    "author": "Valereee",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Macroom_oatmeal_porridge,_topped_with_muscovado_sugar_and_butter.jpg"
+   }
+  },
+  {
+   "id": "collyra",
+   "latin": "collȳra, collȳrae f.",
+   "english": "pasta",
+   "group": "fercula",
+   "line": "Collȳrae in aquā ferventī coquuntur.",
+   "source": "composed",
+   "record": "pasta",
+   "image": {
+    "file": "Fusilli bulk.jpg",
+    "author": "Popo le Chien",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Fusilli_bulk.jpg"
+   }
+  },
+  {
+   "id": "spacelli",
+   "latin": "spacellī, spacellōrum m. pl.",
+   "english": "spaghetti",
+   "group": "fercula",
+   "line": "Spacellōs furcillā convolve.",
+   "source": "composed",
+   "record": "spaghetti",
+   "image": {
+    "file": "Liat Portal for Foodie Disorder - Spaghetti with Tomato Sauce.jpg",
+    "author": "HaJunkiyada",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_-_Spaghetti_with_Tomato_Sauce.jpg"
+   }
+  },
+  {
+   "id": "pitta",
+   "latin": "pitta, pittae f.",
+   "english": "pizza",
+   "group": "fercula",
+   "line": "pittam prandērunt, orbem ē pāne tenuī, cāseō, holeribus",
+   "source": "Libellus VI",
+   "record": "pizza",
+   "image": {
+    "file": "Eq it-na pizza-margherita sep2005 sml.jpg",
+    "author": "Valerio Capello",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Eq_it-na_pizza-margherita_sep2005_sml.jpg"
+   }
+  },
+  {
+   "id": "jus",
+   "latin": "jūs, jūris n.",
+   "english": "soup",
+   "group": "fercula",
+   "line": "Jūs ex holeribus in ōllā fervet.",
+   "source": "composed",
+   "record": "soup",
+   "image": {
+    "file": "Fire-Roasted Vegetable Soup.jpg",
+    "author": "HarshLight",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Fire-Roasted_Vegetable_Soup.jpg"
+   }
+  },
+  {
+   "id": "acetaria",
+   "latin": "acētāria, acētāriōrum n.",
+   "english": "salad",
+   "group": "fercula",
+   "line": "In reditū trānsī per macellum, et eme acētārium et raphanum et cerasa",
+   "source": "Vives Exerc. 4",
+   "record": "salad",
+   "image": {
+    "file": "Ensalada de Lechuga.JPG",
+    "author": "Marco Antonio Correa Flores",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Ensalada_de_Lechuga.JPG"
+   }
+  },
+  {
+   "id": "lac",
+   "latin": "lac, lactis n.",
+   "english": "milk",
+   "group": "lactea",
+   "line": "lac mihi semper adest niveum",
+   "source": "Ov. Met. XIII 829",
+   "record": "milk",
+   "image": {
+    "file": "Glass of Milk (33657535532).jpg",
+    "author": "NIAID",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Glass_of_Milk_(33657535532).jpg"
+   }
+  },
+  {
+   "id": "butyrum",
+   "latin": "būtȳrum, būtȳrī n.",
+   "english": "butter",
+   "group": "lactea",
+   "line": "Frustum pānis būtȳrō illitum",
+   "source": "Vives Exerc. 2",
+   "record": "butter",
+   "image": {
+    "file": "Butter and Knive.jpg",
+    "author": "Julikalucky",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Butter_and_Knive.jpg"
+   }
+  },
+  {
+   "id": "caseus",
+   "latin": "cāseus, cāseī m.",
+   "english": "cheese",
+   "group": "lactea",
+   "line": "cāseus Etruscae signātus imāgine Lūnae praestābit puerīs prandia mīlle tuīs",
+   "source": "Mart. XIII 30, 1–2",
+   "record": "cheese",
+   "image": {
+    "file": "Emmental (fromage) 01.jpg",
+    "author": "Coyau",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Emmental_(fromage)_01.jpg"
+   }
+  },
+  {
+   "id": "caseusalbus",
+   "latin": "cāseus albus, cāseī albī m.",
+   "english": "white cheese",
+   "group": "lactea",
+   "line": "Cāseus albus in muriā servātur.",
+   "source": "composed",
+   "record": "white-cheese",
+   "image": {
+    "file": "Feta Cheese.jpg",
+    "author": "JJ Harrison",
+    "licence": "CC BY-SA 2.5",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.5/",
+    "page": "https://commons.wikimedia.org/wiki/File:Feta_Cheese.jpg"
+   }
+  },
+  {
+   "id": "caseusflavus",
+   "latin": "cāseus flāvus, cāseī flāvī m.",
+   "english": "yellow cheese",
+   "group": "lactea",
+   "line": "Cāseus flāvus in pāne calidō liquēscit.",
+   "source": "composed",
+   "record": "yellow-cheese",
+   "image": {
+    "file": "Kashkaval-Galichki-Republik of Macedonia.jpg",
+    "author": "Nnikolce",
+    "licence": "Public domain",
+    "licence_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Kashkaval-Galichki-Republik_of_Macedonia.jpg"
+   }
+  },
+  {
+   "id": "cremum",
+   "latin": "cremum, cremī n.",
+   "english": "cream",
+   "group": "lactea",
+   "line": "Cremum agitātum spissēscit.",
+   "source": "composed",
+   "record": "cream",
+   "image": {
+    "file": "Crème Chantilly.jpg",
+    "author": "Paul Downey",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Cr%C3%A8me_Chantilly.jpg"
+   }
+  },
+  {
+   "id": "jogurtum",
+   "latin": "jogurtum, jogurtī n.",
+   "english": "yogurt",
+   "group": "lactea",
+   "line": "Jogurtum edis?",
+   "source": "composed",
+   "record": "yogurt",
+   "image": {
+    "file": "Yoghurt and spoon.jpg",
+    "author": "Julikalucky",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Yoghurt_and_spoon.jpg"
+   }
+  },
+  {
+   "id": "ovum",
+   "latin": "ōvum, ōvī n.",
+   "english": "egg",
+   "group": "lactea",
+   "line": "inveniēmus quod mandūcēmus, pullum, ōva: bellē erit",
+   "source": "Petr. Sat. 46, 1",
+   "record": "egg",
+   "image": {
+    "file": "Plain Brown Egg (35079524905).jpg",
+    "author": "Willis Lam",
+    "licence": "CC BY-SA 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Plain_Brown_Egg_(35079524905).jpg"
+   }
+  },
+  {
+   "id": "vitellus",
+   "latin": "vitellus, vitellī m.",
+   "english": "yolk",
+   "group": "lactea",
+   "line": "candida sī croceōs circumfluit unda vitellōs, Hesperius scombrī temperet ōva liquor",
+   "source": "Mart. XIII 40, 1–2",
+   "record": "yolk",
+   "image": {
+    "file": "Broken egg on black surface.jpg",
+    "author": "Balise42",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Broken_egg_on_black_surface.jpg"
+   }
+  },
+  {
+   "id": "albumen",
+   "latin": "albūmen, albūminis n.",
+   "also": "album ōvī, albī ōvī n.",
+   "english": "egg white",
+   "group": "lactea",
+   "line": "Ōvum tegitur testā, sub quā est albūmen, in hōc vitellus.",
+   "source": "Comen. OP 18",
+   "record": "egg-white",
+   "image": {
+    "file": "Chicken egg01 monovular.jpg",
+    "author": "miya",
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Chicken_egg01_monovular.jpg"
+   }
+  },
+  {
+   "id": "ovumfrictum",
+   "latin": "ōvum frīctum, ōvī frīctī n.",
+   "english": "fried egg",
+   "group": "lactea",
+   "line": "Vīsne ōvum frīctum an dūrum?",
+   "source": "composed",
+   "record": "fried-egg",
+   "image": {
+    "file": "Fried Egg 2.jpg",
+    "author": "Matthew Murdoch",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Fried_Egg_2.jpg"
+   }
+  },
+  {
+   "id": "ovumdurum",
+   "latin": "ōvum dūrum, ōvī dūrī n.",
+   "english": "hard-boiled egg",
+   "group": "lactea",
+   "line": "ōvum dūrum valentissimae māteriae est",
+   "source": "Cels. II 18, 10",
+   "record": "hard-boiled-egg",
+   "image": {
+    "file": "Boiled egg - Two pieces.jpg",
+    "author": "Ramesh NG",
+    "licence": "CC BY-SA 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Boiled_egg_-_Two_pieces.jpg"
+   }
+  },
+  {
+   "id": "bubula",
+   "latin": "būbula, būbulae f.",
+   "english": "beef",
+   "group": "carnes",
+   "line": "super taurum būbulae frustum",
+   "source": "Petr. Sat. 35, 1",
+   "record": "beef",
+   "image": {
+    "file": "Raw beef steak, 2011.jpg",
+    "author": "Jellaluna",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Raw_beef_steak,_2011.jpg"
+   }
+  },
+  {
+   "id": "agnina",
+   "latin": "agnīna, agnīnae f.",
+   "english": "lamb",
+   "group": "carnes",
+   "line": "agnīnam cāram, cāram būbulam, vitulīnam, cētum, porcīnam: cāra omnia.",
+   "source": "Plaut. Aul. 374–375",
+   "record": "lamb-meat",
+   "image": {
+    "file": "Lammracks 2.jpg",
+    "author": "Inapond",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Lammracks_2.jpg"
+   }
+  },
+  {
+   "id": "gallinacea",
+   "latin": "gallīnācea, gallīnāceae f.",
+   "english": "chicken",
+   "group": "carnes",
+   "line": "Gallīnācea assa cum holeribus appōnitur.",
+   "source": "composed",
+   "record": "chicken-meat",
+   "image": {
+    "file": "Whole spiced chicken (roasted).jpg",
+    "author": "Jameswasswa",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Whole_spiced_chicken_(roasted).jpg"
+   }
+  },
+  {
+   "id": "perna",
+   "latin": "perna, pernae f.",
+   "english": "ham",
+   "group": "carnes",
+   "line": "deinde pernam pōnitō, cutis deorsum spectet",
+   "source": "Cato Agr. 162, 1",
+   "record": "ham",
+   "image": {
+    "file": "A plate of Jamón serrano, Madrid, Spain Jamón serrano is a type of jamón (dry-cured Spanish ham), which is generally served in thin slices.jpg",
+    "author": "David Adam Kess",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:A_plate_of_Jam%C3%B3n_serrano,_Madrid,_Spain_Jam%C3%B3n_serrano_is_a_type_of_jam%C3%B3n_(dry-cured_Spanish_ham),_which_is_generally_served_in_thin_slices.jpg"
+   }
+  },
+  {
+   "id": "lardum",
+   "latin": "lārdum, lārdī n.",
+   "english": "bacon",
+   "group": "carnes",
+   "line": "et pallēns faba cum rubente lārdō",
+   "source": "Mart. V 78, 10",
+   "record": "bacon",
+   "image": {
+    "file": "Bacon (25275884163).jpg",
+    "author": "huber.edith",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Bacon_(25275884163).jpg"
+   }
+  },
+  {
+   "id": "farcimen",
+   "latin": "farcīmen, farcīminis n.",
+   "english": "sausage",
+   "group": "carnes",
+   "line": "Farcīmina in crātīculā torrentur.",
+   "source": "composed",
+   "record": "sausage",
+   "image": {
+    "file": "Rows of grilled sausages on a hot plate, Hamburg Christmas market 2025.jpg",
+    "author": "Fidan Masimova",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Rows_of_grilled_sausages_on_a_hot_plate,_Hamburg_Christmas_market_2025.jpg"
+   }
+  },
+  {
+   "id": "globuluscarneus",
+   "latin": "globulus carneus, globulī carneī m.",
+   "english": "meatball",
+   "group": "carnes",
+   "line": "Globulī carneī in sartāgine frīguntur.",
+   "source": "composed",
+   "record": "meatball",
+   "image": {
+    "file": "Albóndigas de la carnicería.jpg",
+    "author": "Juan Emilio Prades Bel",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Alb%C3%B3ndigas_de_la_carnicer%C3%ADa.jpg"
+   }
+  },
+  {
+   "id": "assum",
+   "latin": "assum, assī n.",
+   "english": "roast",
+   "group": "carnes",
+   "line": "integram famem ad ōvum adferō, itaque ūsque ad assum vitulīnum opera perdūcitur",
+   "source": "Cic. Fam. IX 20, 1",
+   "record": "roast-dish",
+   "image": {
+    "file": "Roast topside of beef.jpg",
+    "author": "Acabashi",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Roast_topside_of_beef.jpg"
+   }
+  },
+  {
+   "id": "sal",
+   "latin": "sāl, salis m.",
+   "english": "salt",
+   "group": "condimenta",
+   "line": "cum sale pānis lātrantem stomachum bene lēniet",
+   "source": "Hor. Serm. II 2, 17–18",
+   "record": "salt",
+   "image": {
+    "file": "Table salt with salt shaker V1.jpg",
+    "author": "Poyraz 72",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Table_salt_with_salt_shaker_V1.jpg"
+   }
+  },
+  {
+   "id": "piper",
+   "latin": "piper, piperis n.",
+   "english": "pepper",
+   "group": "condimenta",
+   "line": "Fortūnāta molā buxeā piper trīvit",
+   "source": "Petr. Sat. 74, 1",
+   "record": "pepper-spice",
+   "image": {
+    "file": "Tellicherry Black Peppercorns.jpg",
+    "author": "Misterneedlemouse",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Tellicherry_Black_Peppercorns.jpg"
+   }
+  },
+  {
+   "id": "saccharum",
+   "latin": "saccharum, saccharī n.",
+   "english": "sugar",
+   "group": "condimenta",
+   "line": "Saccaron et Arabia fert, sed laudātius India.",
+   "source": "Plin. NH XII 32",
+   "record": "sugar",
+   "image": {
+    "file": "Würfelzucker -- 2018 -- 3564.jpg",
+    "author": "Dietmar Rabich",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:W%C3%BCrfelzucker_--_2018_--_3564.jpg"
+   }
+  },
+  {
+   "id": "mel",
+   "latin": "mel, mellis n.",
+   "english": "honey",
+   "group": "condimenta",
+   "line": "Mel invēnistī: comede quod sufficit tibi",
+   "source": "Prov. 25, 16",
+   "record": "honey",
+   "image": {
+    "file": "Runny hunny.jpg",
+    "author": "Scott Bauer, USDA ARS",
+    "licence": "Public domain",
+    "licence_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Runny_hunny.jpg"
+   }
+  },
+  {
+   "id": "sinapi",
+   "latin": "sināpi, sināpis n.",
+   "english": "mustard",
+   "group": "condimenta",
+   "line": "Simile est rēgnum caelōrum grānō sināpis",
+   "source": "Mt. 13, 31",
+   "record": "mustard",
+   "image": {
+    "file": "Senf-3.jpg",
+    "author": "Rainer Zenz",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Senf-3.jpg"
+   }
+  },
+  {
+   "id": "conditura",
+   "latin": "bācārum condītūra, bācārum condītūrae f.",
+   "english": "jam",
+   "group": "condimenta",
+   "line": "Bācārum condītūra pānī illinitur.",
+   "source": "composed",
+   "record": "jam",
+   "image": {
+    "file": "Strawberry jam (home preservation).jpg",
+    "author": "Nutrition, Food Safety & Health",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Strawberry_jam_(home_preservation).jpg"
+   }
+  },
+  {
+   "id": "socolata",
+   "latin": "socolāta, socolātae f.",
+   "english": "chocolate",
+   "group": "condimenta",
+   "line": "Utrum māvīs, socolātam an cremum?",
+   "source": "composed",
+   "record": "chocolate",
+   "image": {
+    "file": "Cooking chocolate, broken bar.jpg",
+    "author": "SKopp",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Cooking_chocolate,_broken_bar.jpg"
+   }
+  },
+  {
+   "id": "gelatum",
+   "latin": "gelātum, gelātī n.",
+   "english": "ice cream",
+   "group": "condimenta",
+   "line": "Vīs gelātum?",
+   "source": "composed",
+   "record": "ice-cream",
+   "image": {
+    "file": "Ice cream cone with spoon.jpg",
+    "author": "Thegreatmutata",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Ice_cream_cone_with_spoon.jpg"
+   }
+  },
+  {
+   "id": "dulcia",
+   "latin": "dulcia, dulcium n.",
+   "english": "sweets",
+   "group": "condimenta",
+   "line": "Dulcia dentibus nocent.",
+   "source": "composed",
+   "record": "sweets",
+   "image": {
+    "file": "Sweets ..By G,Russ.jpg",
+    "author": "Russty67",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Sweets_..By_G,Russ.jpg"
+   }
+  },
+  {
+   "id": "vinum",
+   "latin": "vīnum, vīnī n.",
+   "english": "wine",
+   "group": "potiones",
+   "line": "pānis emātur, holus, vīnī sextārius",
+   "source": "Hor. Serm. I 1, 74",
+   "record": "wine",
+   "image": {
+    "file": "A glass of red wine.jpg",
+    "author": "Davide Restivo",
+    "licence": "CC BY-SA 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:A_glass_of_red_wine.jpg"
+   }
+  },
+  {
+   "id": "sucus",
+   "latin": "sūcus, sūcī m.",
+   "english": "juice",
+   "group": "potiones",
+   "line": "Papae, quam mītia! Quam bonī succī!",
+   "source": "Corder. Coll. IV 23",
+   "record": "juice",
+   "image": {
+    "file": "Orange juice 1 edit1.jpg",
+    "author": "USDA (edited by Arad)",
+    "licence": "Public domain",
+    "licence_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Orange_juice_1_edit1.jpg"
+   }
+  },
+  {
+   "id": "coffea",
+   "latin": "coffea, coffeae f.",
+   "english": "coffee",
+   "group": "potiones",
+   "line": "Vīsne ut coffeam parem?",
+   "source": "composed",
+   "record": "coffee",
+   "image": {
+    "file": "Coffee cup and coffee bean.jpg",
+    "author": "mcfoodie",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Coffee_cup_and_coffee_bean.jpg"
+   }
+  },
+  {
+   "id": "thea",
+   "latin": "thea, theae f.",
+   "english": "tea",
+   "group": "potiones",
+   "line": "Thea calida in pōculō fūmat.",
+   "source": "composed",
+   "record": "tea",
+   "image": {
+    "file": "Nice Cup of Black Tea.jpg",
+    "author": "Ian Smith, after Vanderdecken and David J. Fred",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Nice_Cup_of_Black_Tea.jpg"
+   }
+  },
+  {
+   "id": "cocoa",
+   "latin": "cōcoa, cōcoae f.",
+   "english": "cocoa",
+   "group": "potiones",
+   "line": "Cōcoa calida hieme puerīs placet.",
+   "source": "composed",
+   "record": "cocoa",
+   "image": {
+    "file": "Becher Kakao mit Sahnehäubchen.JPG",
+    "author": "4028mdk09",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Becher_Kakao_mit_Sahneh%C3%A4ubchen.JPG"
    }
   }
  ]

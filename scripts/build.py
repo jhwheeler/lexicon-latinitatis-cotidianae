@@ -12,7 +12,7 @@ page per concept record), l/<word>.html (one page per Latin word that heads a
 term), how-we-decide.html (editorial policy), how-practice-works.html (how the
 practice chooses and spaces its cards, with its sources), rulings.html (the rulings
 register), practice.html (vocabulary practice), hora.html (the clock game), chartae.html (the picture
-cards of animals, plants, and the body, with their pictures in chartae/), the gap games (theodorus.html, quis-pulsat.html: one
+cards of animals, plants, the body, and food and drink, with their pictures in chartae/), the gap games (theodorus.html, quis-pulsat.html: one
 page for each file in src/lacunae/, made from src/lacunae.html), and
 review.html (what is reviewed, and a reader's flags), sitemap.xml, and in assets/ the stylesheet,
 the page, search, practice and review scripts, the search data, the practice cards (practice-data.js), the picture cards (chartae-data.js), the redirects
@@ -3480,8 +3480,9 @@ def legacy_script(site):
 
 # The picture cards, Chartae pictae (chartae.html; Jack, 20 November 2026: first the animals, and the
 # same day one exercise for every subject, the reader choosing which, not a game for each).
-# data/chartae.json has three lists. "subjects" are the subjects (animalia, plantae, and since 20
-# November 2026 corpus, the human body), each with id, latin, and english. "groups" are the kinds,
+# data/chartae.json has three lists. "subjects" are the subjects (animalia, plantae, since 20
+# November 2026 corpus, the human body, and since 21 November 2026 cibi, food and drink), each with
+# id, latin, and english. "groups" are the kinds,
 # each with id, subject (one of the subjects), latin, and english; a kind may have no cards yet, and
 # the page then does not show it. "cards" are the cards. Kinds and cards are two sets of names: a
 # kind may share its id with a card (the kind caput and the card caput; the body's kind truncus and
@@ -3515,7 +3516,8 @@ def legacy_script(site):
 # writes Latin: genus capitalised, the rest lower case, no macrons or other marks, no author
 # (Juniperus, Quercus ilex; × and subsp. where nomenclature uses them). On a card of the body it is
 # the term of the Terminologia Anatomica, the anatomists' international Latin, written as they write
-# it: the first word capitalised, no macrons (Hepar, Vesica urinaria, Encephalon). The page shows it
+# it: the first word capitalised, no macrons (Hepar, Vesica urinaria, Encephalon). A card of food and
+# drink has none: a loaf, a dish, or a drink is not a taxon. The page shows it
 # after the English name in a language of its own (la-x-taxon), so that the display options leave
 # it alone.
 FOOD_SUBJECT, BEARS_SUBJECT = 'animalia', 'plantae'   # food only and always on an animal's card; bears only on a plant's

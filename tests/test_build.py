@@ -941,8 +941,8 @@ class BuildTests(unittest.TestCase):
         linked = 0
         for card in data['cards']:
             with self.subTest(card=card['id']):
-                self.assertEqual(card['picture'], f'chartae/{card["id"]}.jpg')
-                self.assertEqual(outputs[card['picture']][:3], b'\xff\xd8\xff')   # a JPEG
+                self.assertRegex(card['picture'], rf'^chartae/{card["id"]}\.jpg\?v=[0-9a-f]{{8}}$')
+                self.assertEqual(outputs[card['picture'].split('?')[0]][:3], b'\xff\xd8\xff')   # a JPEG
                 self.assertTrue(card['latin'].startswith(card['latin'].split(',')[0]) and ',' in card['latin'])
                 if 'record' in card:
                     linked += 1
@@ -954,7 +954,7 @@ class BuildTests(unittest.TestCase):
                 self.assertTrue(image['author'] and image['page'].startswith('https://commons.wikimedia.org/wiki/File:'))
         self.assertGreater(linked, len(data['cards']) * .9)
         # The pictures are the cards' and no others, and none is saved when the lexicon installs.
-        self.assertEqual(sorted(path for path in outputs if path.startswith('chartae/')), sorted(card['picture'] for card in data['cards']))
+        self.assertEqual(sorted(path for path in outputs if path.startswith('chartae/')), sorted(card['picture'].split('?')[0] for card in data['cards']))
         files = json.loads(re.search(r'const FILES = (\[.*?\]);', outputs['sw.js'])[1])
         self.assertFalse(any(path.startswith('chartae/') for path in files))
         # A sentence taken from the readers is shown as one of ours, and the readers are not named.
@@ -1017,7 +1017,7 @@ class BuildTests(unittest.TestCase):
                 self.assertEqual(preview, (self.root / builder.PREVIEWS / f'{card["id"]}.jpg').read_bytes())
                 self.assertEqual(preview[:3], b'\xff\xd8\xff')
                 self.assertLessEqual(len(preview), builder.PREVIEW_MOST)
-                self.assertEqual(builder.jpeg_comment(preview), builder.preview_mark(outputs[card['picture']]))
+                self.assertEqual(builder.jpeg_comment(preview), builder.preview_mark(outputs[card['picture'].split('?')[0]]))
                 # Its size, from the frame header (SOF0 or SOF2): 102 high and 144 wide.
                 at = re.search(rb'\xff[\xc0\xc2]', preview).start()
                 self.assertEqual((int.from_bytes(preview[at + 7:at + 9], 'big'), int.from_bytes(preview[at + 5:at + 7], 'big')), builder.PREVIEW_SIZE)
@@ -1048,6 +1048,26 @@ class BuildTests(unittest.TestCase):
         (self.root / builder.PREVIEWS / 'stray.jpg').write_bytes(kept)
         with self.assertRaisesRegex(ValueError, 'chartae-previews has files that no card uses'):
             builder.build_site(self.root)
+
+    def test_a_pictures_address_carries_its_version_and_changes_with_its_file(self):
+        """The service worker answers a saved picture from the device without asking the network
+        (21 November 2026), so a picture's address in the card data carries a version taken from its
+        file: a picture taken again under the same id has a new address, an unchanged one keeps its own."""
+        def load():
+            script = builder.build_site(self.root)['assets/chartae-data.js']
+            return {card['id']: card['picture'] for card in json.loads(script[script.index('{'):script.rindex('}') + 1])['cards']}
+        before = load()
+        first, second = list(before)[:2]
+        picture = self.root / f'src/chartae/{first}.jpg'
+        self.assertEqual(before[first], f'chartae/{first}.jpg?v=' + hashlib.sha256(picture.read_bytes()).hexdigest()[:builder.PICTURE_VERSION])
+        self.assertEqual(builder.picture_address(first, picture.read_bytes()), before[first])
+        # A new file for the first card (here the second card's picture, with its preview): a new address for it, the same for the rest.
+        picture.write_bytes((self.root / f'src/chartae/{second}.jpg').read_bytes())
+        shutil.copy(self.root / builder.PREVIEWS / f'{second}.jpg', self.root / builder.PREVIEWS / f'{first}.jpg')
+        after = load()
+        self.assertNotEqual(after[first], before[first])
+        self.assertEqual(after[first], f'chartae/{first}.jpg?v=' + before[second].split('?v=')[1])
+        self.assertEqual({key: value for key, value in after.items() if key != first}, {key: value for key, value in before.items() if key != first})
 
     def test_a_previews_jpeg_comment_is_read_from_the_segments_before_the_image(self):
         """The preview check reads the JPEG's comment without Pillow (the build has none)."""

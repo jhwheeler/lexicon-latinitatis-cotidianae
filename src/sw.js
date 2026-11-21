@@ -31,8 +31,25 @@ async function trim(cache) {
   await Promise.all(keys.slice(0, Math.max(0, keys.length - PAGES_MAX)).map(key => cache.delete(key)));
 }
 
+// A picture of the cards is answered from the device when it is there, with no request to the network
+// at all; only a picture not yet saved is fetched, and saved (the coordinating session's decision, 21
+// November 2026: until then a saved picture was fetched afresh every time it was shown, a download per
+// card on a slow connection). Its address carries a version taken from its file (chartae/<id>.jpg?v=…,
+// written by the builder), so a picture taken again has a new address and is fetched once; the address
+// is matched whole, version included. src/chartae.js clears away the versions no card wants.
+async function picture(request, url) {
+  const pages = await caches.open(PAGES);
+  const address = url.pathname + url.search;
+  const saved = await pages.match(address);
+  if (saved) return saved;
+  const response = await fetch(request);
+  if (response.ok) pages.put(address, response.clone()).catch(() => {});
+  return response;
+}
+
 async function respond(request) {
   const url = new URL(request.url);
+  if (PICTURE.test(url.pathname)) return picture(request, url);
   // The front page is index.html however it is addressed (the folder, or with a search in its address).
   const key = url.pathname.endsWith('/') ? url.pathname + 'index.html' : url.pathname;
   const core = await caches.open(CORE);

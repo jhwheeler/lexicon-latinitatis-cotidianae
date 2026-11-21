@@ -630,8 +630,10 @@
   const waking = new Set();
   const retried = new Set();   // the cards whose picture was fetched a second time because the worker had not kept it
   let offline = false, saveRun = null, failures = 0, saveCount = null;
-  const pathOf = address => new URL(address, location.href).pathname;
-  function arrived(address) { if (address && navigator.serviceWorker && navigator.serviceWorker.controller) fetched.add(pathOf(address)); }
+  // A picture is known by its whole address, with the version the builder put in it (chartae/<id>.jpg?v=…),
+  // as the service worker keys it: another version of the same picture is another file.
+  const addressOf = address => { const url = new URL(address, location.href); return url.pathname + url.search; };
+  function arrived(address) { if (address && navigator.serviceWorker && navigator.serviceWorker.controller) fetched.add(addressOf(address)); }
   // The pause after a failure, which ends early when a card is shown or the browser comes online.
   const nap = ms => new Promise(resolve => {
     const done = () => { clearTimeout(timer); waking.delete(done); resolve(); };
@@ -667,9 +669,9 @@
   }
   async function saveAll() {
     const cache = await caches.open(PAGES);
-    const onDevice = async () => new Set((await cache.keys()).map(key => new URL(key.url).pathname));
+    const onDevice = async () => new Set((await cache.keys()).map(key => addressOf(key.url)));
     (await onDevice()).forEach(path => fetched.add(path));
-    const todo = () => saveOrder().filter(card => !fetched.has(pathOf(card.picture)));
+    const todo = () => saveOrder().filter(card => !fetched.has(addressOf(card.picture)));
     const count = () => { saveCount = { done: cards.length - todo().length, total: cards.length }; drawSaving(); };
     for (;;) {
       if (todo().length) {
@@ -677,9 +679,9 @@
         // The picture of the card now shown first: wait while it is on its way.
         while (game.open && pictureFor && !pictureReady() && pictureFailed !== pictureFor) await new Promise(resolve => setTimeout(resolve, 250));
         // A picture on its way already (the one shown, or one fetched ahead) is left to come by itself.
-        const coming = new Set([...ahead.filter(image => !image.complete).map(image => pathOf(image.src)),
-          ...(game.open && pictureFor && !picture.complete ? [pathOf(pictureFor)] : [])]);
-        const open = todo().filter(item => !coming.has(pathOf(item.picture)));
+        const coming = new Set([...ahead.filter(image => !image.complete).map(image => addressOf(image.src)),
+          ...(game.open && pictureFor && !picture.complete ? [addressOf(pictureFor)] : [])]);
+        const open = todo().filter(item => !coming.has(addressOf(item.picture)));
         if (!open.length) { await new Promise(resolve => setTimeout(resolve, 250)); continue; }
         let card = open.find(item => !skipped.has(item.id));
         if (!card) { skipped.clear(); card = open[0]; }
@@ -689,7 +691,7 @@
           got = response.ok;
           await response.arrayBuffer();   // the whole file, before the next is asked for
         } catch {}
-        if (got) { fetched.add(pathOf(card.picture)); failures = 0; skipped.delete(card.id); continue; }
+        if (got) { fetched.add(addressOf(card.picture)); failures = 0; skipped.delete(card.id); continue; }
         skipped.add(card.id);
         failures++;
         await nap(Math.min(RETRY_MOST, RETRY_FIRST * 2 ** (failures - 1)));
@@ -700,7 +702,7 @@
       let missing = [];
       for (let tries = 0; tries <= 10; tries++) {
         const saved = await onDevice();
-        missing = cards.filter(card => !saved.has(pathOf(card.picture)));
+        missing = cards.filter(card => !saved.has(addressOf(card.picture)));
         if (!missing.length) break;
         await new Promise(resolve => setTimeout(resolve, 300));
       }
@@ -709,15 +711,18 @@
       // already fetched again is left for another time (the next card shown, or the next visit).
       const again = missing.filter(card => !retried.has(card.id));
       if (!again.length) return;
-      again.forEach(card => { retried.add(card.id); fetched.delete(pathOf(card.picture)); });
+      again.forEach(card => { retried.add(card.id); fetched.delete(addressOf(card.picture)); });
     }
     offline = true;
     drawSaving();
-    const wanted = new Set(cards.map(card => pathOf(card.picture)));
+    // Once every wanted picture is there, the rest are cleared away: pictures of cards that are gone,
+    // the old versions of pictures taken again, and the plain addresses (no version) saved before 21
+    // November 2026. A cache key is matched whole, with its version.
+    const wanted = new Set(cards.map(card => addressOf(card.picture)));
     const folder = new URL('chartae/', location.href).pathname;
     for (const key of await cache.keys()) {
-      const path = new URL(key.url).pathname;
-      if (path.startsWith(folder) && !wanted.has(path)) await cache.delete(key);
+      const address = addressOf(key.url);
+      if (address.startsWith(folder) && !wanted.has(address)) await cache.delete(key, { ignoreSearch: false });
     }
     const installed = navigator.standalone || matchMedia('(display-mode: standalone)').matches;
     if (installed && navigator.storage && navigator.storage.persist) navigator.storage.persist().catch(() => {});

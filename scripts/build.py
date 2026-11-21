@@ -3543,6 +3543,20 @@ def preview_mark(picture):
     return PREVIEW_MARK.format(hashlib.sha256(picture).hexdigest())
 
 
+# A picture's address in the card data carries a version, the start of the hash of its file
+# (chartae/taurus.jpg?v=1a2b3c4d; the file itself stays chartae/<id>.jpg). The service worker answers
+# a picture from the device without asking the network again (the coordinating session's decision,
+# 21 November 2026: until then it fetched every picture afresh each time it was shown, a download per
+# card on a slow connection), so a picture taken again under the same id must have a new address to
+# be fetched; an unchanged picture keeps its address for ever. src/chartae.js clears the old versions.
+PICTURE_VERSION = 8   # hex digits of the hash in the address
+
+
+def picture_address(key, picture):
+    """The address of a card's picture (its bytes) in the card data, with its version."""
+    return f'chartae/{key}.jpg?v={hashlib.sha256(picture).hexdigest()[:PICTURE_VERSION]}'
+
+
 def jpeg_comment(data):
     """The text of a JPEG's first comment segment (COM), or '' if it has none before the image data."""
     if data[:2] != b'\xff\xd8':
@@ -3639,7 +3653,7 @@ def picture_cards(root, site):
                       'english': card['english'], **({'scientific': card['scientific']} if 'scientific' in card else {}),
                       'group': card['group'], 'line': card['line'],
                       'source': '' if ours else card['source'], **{name: card[name] for name in ('food', 'bears', 'record') if name in card},
-                      'picture': f'chartae/{key}.jpg', 'preview': base64.b64encode(small).decode('ascii'),
+                      'picture': picture_address(key, pictures[f'chartae/{key}.jpg']), 'preview': base64.b64encode(small).decode('ascii'),
                       'image': {name: image[name] for name in ('author', 'licence', 'licence_url', 'page')}})
     unused = sorted(p.name for p in (root / 'src/chartae').glob('*') if f'chartae/{p.name}' not in pictures)
     require(not unused, f'Picture cards: src/chartae has files that no card uses: {unused[:8]}')

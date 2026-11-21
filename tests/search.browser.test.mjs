@@ -21,7 +21,9 @@ const GAP_GAMES = readdirSync(new URL('../src/lacunae/', import.meta.url)).filte
   .map(name => JSON.parse(readFileSync(new URL(`../src/lacunae/${name}`, import.meta.url), 'utf-8')))
   .sort((a, b) => a.order - b.order)
   .map(game => ({ file: game.file, first: game.rounds[0].id, prefix: game.prefix, name: game.name }));
-const overflows = () => page.evaluate(() => document.documentElement.scrollWidth > innerWidth);
+// A picture of the picture cards, with or without the version its address carries (chartae/<id>.jpg?v=…).
+const PICTURE_URL = /\/chartae\/[^/?]+\.jpg(\?[^/]*)?$/;
+const overflows = () =>page.evaluate(() => document.documentElement.scrollWidth > innerWidth);
 // A preference saved on one page is read by the next.
 const settle = () => page.waitForTimeout(200);
 
@@ -362,7 +364,7 @@ test('the picture cards save the round’s pictures first, then the deck’s, th
   const context = await browser.newContext({ viewport: { width: 390, height: 800 } });
   const app = await context.newPage();
   const images = [];   // pictures asked for by <img> elements (the card shown, those fetched ahead, the list's tiles)
-  context.on('request', request => { if (!request.serviceWorker() && request.resourceType() === 'image' && /\/chartae\/[^/]+\.jpg$/.test(request.url())) images.push(request.url()); });
+  context.on('request', request => { if (!request.serviceWorker() && request.resourceType() === 'image' && /\/chartae\/[^/]+\.jpg$/.test(new URL(request.url()).pathname)) images.push(request.url()); });
   await app.addInitScript(() => {
     const original = window.fetch;
     const failOnce = new Set(JSON.parse(localStorage.getItem('test-fail-once') || '[]'));
@@ -447,6 +449,60 @@ test('the picture cards save the round’s pictures first, then the deck’s, th
   // Every picture is saved, those of the round's first cards by their own <img> elements.
   const saved = await app.evaluate(async () => (await (await caches.open('lexicon-pages')).keys()).map(key => new URL(key.url).pathname));
   assert.deepEqual(data.cards.map(path).filter(item => !saved.includes(item)), []);
+  await context.close();
+});
+
+test('a saved picture is shown from the device without asking the network; a picture taken again is fetched under its new address, and the old ones are cleared', async () => {
+  // The coordinating session's decision (21 November 2026): the worker had fetched a saved picture
+  // afresh each time it was shown. Now a saved picture is answered from the cache alone, and the
+  // address in the card data carries the picture's version, so that a new file has a new address.
+  const context = await browser.newContext({ viewport: { width: 390, height: 800 } });
+  const app = await context.newPage();
+  const address = text => { const at = new URL(text, pageUrl('')); return at.pathname + at.search; };
+  const network = [];   // the pictures the service worker asked of the network
+  context.on('request', request => { if (request.serviceWorker() && PICTURE_URL.test(request.url())) network.push(address(request.url())); });
+  const kept = () => app.evaluate(async () => (await (await caches.open('lexicon-pages')).keys())
+    .map(key => { const at = new URL(key.url); return at.pathname + at.search; }).filter(path => /\/chartae\//.test(path)).sort());
+  await app.goto(url);
+  await app.evaluate(() => navigator.serviceWorker.ready);
+  await app.waitForFunction(() => navigator.serviceWorker.controller);
+  await app.goto(pageUrl('chartae.html'));
+  await app.locator('#c-offline[data-state="saved"]').waitFor({ timeout: 120000 });
+  const cards = await app.evaluate(() => window.lexiconChartae.cards.map(card => card.picture));
+  const taurus = cards.find(picture => picture.startsWith('chartae/taurus.jpg'));
+  assert.match(taurus, /^chartae\/taurus\.jpg\?v=[0-9a-f]{8}$/);
+  assert.deepEqual(await kept(), cards.map(address).sort(), 'every picture is saved under its address with its version');
+  // Saved pictures shown again, in the list's card and after a reload, ask nothing of the network.
+  network.length = 0;
+  await app.goto(url);   // (from chartae.html itself, the address with #taurus would only change the hash)
+  await app.goto(pageUrl('chartae.html#taurus'));
+  await app.locator('#p-game[open]').waitFor();
+  const shown = () => app.waitForFunction(() => getComputedStyle(document.getElementById('g-picture')).visibility === 'visible');
+  await shown();
+  await app.locator('#g-forth').click(); await shown();
+  await app.locator('#g-prev').click(); await shown();
+  await app.reload();
+  await app.locator('#p-game[open]').waitFor();
+  await shown();
+  await app.locator('#c-offline[data-state="saved"]').waitFor({ timeout: 30000 });
+  await app.waitForTimeout(500);
+  assert.deepEqual(network, [], 'no picture was fetched again');
+  // The bull's picture is taken again: the card data gives it a new version. A picture saved under a
+  // plain address (before versions) is there too. The new version is fetched once; the old ones go.
+  await app.evaluate(async () => { await (await caches.open('lexicon-pages')).put(new URL('chartae/canis.jpg', location.href).pathname, new Response('old')); });
+  await app.addInitScript(() => {
+    let data;
+    Object.defineProperty(window, 'lexiconChartae', { configurable: true, get: () => data,
+      set: value => { value.cards.find(card => card.id === 'taurus').picture = 'chartae/taurus.jpg?v=00000000'; data = value; } });
+  });
+  await app.goto(pageUrl('chartae.html'));
+  await app.locator('#c-offline[data-state="saved"]').waitFor({ timeout: 60000 });
+  // The clearing follows the line that says all are saved.
+  await app.waitForFunction(async count => (await (await caches.open('lexicon-pages')).keys()).filter(key => /\/chartae\//.test(key.url)).length === count, cards.length);
+  assert.deepEqual(network, [address('chartae/taurus.jpg?v=00000000')], 'only the new version is fetched');
+  const now = await kept();
+  assert.deepEqual(now.filter(path => path.includes('/taurus.')), [address('chartae/taurus.jpg?v=00000000')], 'the old version is cleared');
+  assert.equal(now.length, cards.length, 'and no plain address is left');
   await context.close();
 });
 
@@ -3406,7 +3462,7 @@ test('the picture cards: a new card never shows the last card’s picture, and t
   }, path);
   const boxes = async () => [await page.locator('#g-card').boundingBox(), await page.locator('#g-frame').boundingBox()];
   await openChartae();
-  await page.route('**/chartae/*.jpg', pictures);
+  await page.route(PICTURE_URL, pictures);
   try {
     await startRound();
     const paths = await page.evaluate(() => Object.fromEntries(window.lexiconChartae.cards.map(card => [card.id, new URL(card.picture, location.href).pathname])));
@@ -3470,7 +3526,7 @@ test('the picture cards: a new card never shows the last card’s picture, and t
     assert.equal((await state()).src, fifth);
     assert.equal(await page.locator('#g-pos').textContent(), '5 / 12');
   } finally {
-    await page.unroute('**/chartae/*.jpg', pictures);
+    await page.unroute(PICTURE_URL, pictures);
     for (const item of held.splice(0)) await item.route.continue().catch(() => {});
   }
 });

@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
 <title>Picture cards · Lexicon Latīnitātis Cotīdiānae</title>
-<meta name="description" content="{{count}} picture cards of animals and plants ({{animals}} of animals, {{plants}} of plants and their parts) with their Latin names, a line from a Latin author, and what each animal eats: a game of spaced repetition kept on your own device. In Latin or English.">
+<meta name="description" content="{{described}} with their Latin names, a line from a Latin author, and what each animal eats: a game of spaced repetition kept on your own device. In Latin or English.">
 <link rel="canonical" href="https://jhwheeler.github.io/lexicon-latinitatis-cotidianae/chartae.html">
 {{theme}}
 {{app}}
@@ -57,11 +57,12 @@
 <div class="pgame-bar" aria-hidden="true"><span id="g-bar"></span></div>
 <div class="pgame-stage" id="g-stage">
 <article class="pgame-card ccard" id="g-card" data-t-label="card" aria-label="Card">
-<img class="ccard-picture" id="g-picture" alt="" width="720" height="511" hidden>
+<div class="ccard-frame" id="g-frame" hidden><img class="ccard-picture waiting" id="g-picture" alt="" width="720" height="511"></div>
 <div class="ccard-text">
 <div class="ccard-ask" id="g-ask"><p class="pgame-status" id="g-status"></p><p class="ccard-quid" data-t="ask">What is it?</p></div>
 <div class="pgame-back" id="g-back" hidden>
 <p class="pgame-la" lang="la" id="g-la"></p>
+<p class="pgame-also" id="g-also" hidden></p>
 <p class="ccard-en" id="g-en"></p>
 <div class="pgame-ex"><p class="la" lang="la" id="g-ex-la"></p><p class="en" id="g-ex-src"></p></div>
 <p class="ccard-food" lang="la" id="g-food"></p>

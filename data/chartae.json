@@ -9,6 +9,11 @@
    "id": "plantae",
    "latin": "Plantae",
    "english": "Plants"
+  },
+  {
+   "id": "corpus",
+   "latin": "Corpus",
+   "english": "The body"
   }
  ],
  "groups": [
@@ -83,6 +88,36 @@
    "subject": "plantae",
    "latin": "Partēs plantārum",
    "english": "Parts of plants"
+  },
+  {
+   "id": "caput",
+   "subject": "corpus",
+   "latin": "Caput et faciēs",
+   "english": "Head and face"
+  },
+  {
+   "id": "truncus",
+   "subject": "corpus",
+   "latin": "Truncus",
+   "english": "Trunk"
+  },
+  {
+   "id": "bracchium",
+   "subject": "corpus",
+   "latin": "Bracchium et manus",
+   "english": "Arm and hand"
+  },
+  {
+   "id": "crus",
+   "subject": "corpus",
+   "latin": "Crūs et pēs",
+   "english": "Leg and foot"
+  },
+  {
+   "id": "intus",
+   "subject": "corpus",
+   "latin": "Intus",
+   "english": "Inside"
   }
  ],
  "cards": [
@@ -4896,6 +4931,1590 @@
     "licence": "CC BY-SA 4.0",
     "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
     "page": "https://commons.wikimedia.org/wiki/File:Vine_leaf_in_the_afternoon_sun.jpg"
+   }
+  },
+  {
+   "id": "oculus",
+   "latin": "oculus, oculī m.",
+   "english": "eye",
+   "scientific": "Oculus",
+   "group": "caput",
+   "line": "Caecī sunt oculī, cum animus aliās rēs agit.",
+   "source": "Publ. Syr. C 31",
+   "record": "eye",
+   "image": {
+    "file": "A woman's eye.JPG",
+    "author": "Petar Milošević",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:A_woman's_eye.JPG"
+   }
+  },
+  {
+   "id": "caput",
+   "latin": "caput, capitis n.",
+   "english": "head",
+   "scientific": "Caput",
+   "group": "caput",
+   "line": "Ecce autem iterum hīc dēposīvit caput et dormit.",
+   "source": "Plaut. Most. 382",
+   "record": "head",
+   "image": {
+    "file": "Bust of Germanicus, front - Getty Museum (2021.66).jpg",
+    "author": "J. Paul Getty Museum",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Bust_of_Germanicus,_front_-_Getty_Museum_(2021.66).jpg"
+   }
+  },
+  {
+   "id": "capillus",
+   "latin": "capillus, capillī m.",
+   "also": "coma, comae f.",
+   "english": "hair",
+   "scientific": "Capilli",
+   "group": "caput",
+   "line": "saepe sonant mōtī glaciē pendente capillī",
+   "source": "Ov. Trist. III 10, 21",
+   "record": "hair",
+   "image": {
+    "file": "Braided Hair (Unsplash).jpg",
+    "author": "Pete Bellis",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Braided_Hair_(Unsplash).jpg"
+   }
+  },
+  {
+   "id": "vertex",
+   "latin": "vertex, verticis m.",
+   "english": "crown",
+   "scientific": "Vertex",
+   "group": "caput",
+   "line": "sublīmī feriam sīdera vertice",
+   "source": "Hor. Carm. I 1, 36",
+   "record": "crown-head",
+   "image": {
+    "file": "Mon beau-frère.jpg",
+    "author": "Doalex",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Mon_beau-fr%C3%A8re.jpg"
+   }
+  },
+  {
+   "id": "occipitium",
+   "latin": "occipitium, occipitiī n.",
+   "english": "back of the head",
+   "scientific": "Occiput",
+   "group": "caput",
+   "line": "frōns occipitiō prior est",
+   "source": "Cato Agr. 4",
+   "record": "back-of-the-head",
+   "image": {
+    "file": "Portrait head of Tiberius, back - Getty Museum (71.AA.275).jpg",
+    "author": "J. Paul Getty Museum",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Portrait_head_of_Tiberius,_back_-_Getty_Museum_(71.AA.275).jpg"
+   }
+  },
+  {
+   "id": "tempora",
+   "latin": "tempora, temporum n.",
+   "english": "temple",
+   "scientific": "Tempora",
+   "group": "caput",
+   "line": "jam mea cycnēās imitantur tempora plūmās",
+   "source": "Ov. Trist. IV 8, 1",
+   "record": "temple-head",
+   "image": {
+    "file": "Portrait head of Tiberius, right profile - Getty Museum (71.AA.275).jpg",
+    "author": "J. Paul Getty Museum",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Portrait_head_of_Tiberius,_right_profile_-_Getty_Museum_(71.AA.275).jpg"
+   }
+  },
+  {
+   "id": "frons",
+   "latin": "frōns, frontis f.",
+   "english": "forehead",
+   "scientific": "Sinciput",
+   "group": "caput",
+   "line": "dā tē hodiē mihi: exporge frontem.",
+   "source": "Ter. Ad. 839",
+   "record": "forehead",
+   "image": {
+    "file": "Portrait Head of Caligula - Getty Museum (72.AA.155).jpg",
+    "author": "J. Paul Getty Museum",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Portrait_Head_of_Caligula_-_Getty_Museum_(72.AA.155).jpg"
+   }
+  },
+  {
+   "id": "facies",
+   "latin": "faciēs, faciēī f.",
+   "english": "face",
+   "scientific": "Facies",
+   "group": "caput",
+   "line": "Cor gaudēns exhilarat faciem.",
+   "source": "Prov. 15, 13",
+   "record": "face",
+   "image": {
+    "file": "Portrait head of Tiberius, front - Getty Museum (71.AA.275).jpg",
+    "author": "J. Paul Getty Museum",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Portrait_head_of_Tiberius,_front_-_Getty_Museum_(71.AA.275).jpg"
+   }
+  },
+  {
+   "id": "pupilla",
+   "latin": "pūpilla, pūpillae f.",
+   "also": "pūpula, pūpulae f.",
+   "english": "pupil",
+   "scientific": "Pupilla",
+   "group": "caput",
+   "line": "custōdī mē ut pūpillam oculī.",
+   "source": "Ps. 16, 8",
+   "record": "pupil-eye",
+   "image": {
+    "file": "Радужка глаза( автопортрет).jpg",
+    "author": "Gribkov",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:%D0%A0%D0%B0%D0%B4%D1%83%D0%B6%D0%BA%D0%B0_%D0%B3%D0%BB%D0%B0%D0%B7%D0%B0(_%D0%B0%D0%B2%D1%82%D0%BE%D0%BF%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82).jpg"
+   }
+  },
+  {
+   "id": "palpebra",
+   "latin": "palpebra, palpebrae f.",
+   "english": "eyelid",
+   "scientific": "Palpebra superior",
+   "group": "caput",
+   "line": "Mūnītaeque sunt palpebrae tamquam vallō pilōrum.",
+   "source": "Cic. ND II 143",
+   "record": "eyelid",
+   "image": {
+    "file": "Closed human eye, superior view.jpg",
+    "author": "Rapidreflex",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Closed_human_eye,_superior_view.jpg"
+   }
+  },
+  {
+   "id": "supercilium",
+   "latin": "supercilium, superciliī n.",
+   "english": "eyebrow",
+   "scientific": "Supercilium",
+   "group": "caput",
+   "line": "dēme superciliō nūbem",
+   "source": "Hor. Epist. I 18, 94",
+   "record": "eyebrow",
+   "image": {
+    "file": "Detailaufnahme Augenbraue 20200405 123219 crop.jpg",
+    "author": "PantheraLeo1359531",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Detailaufnahme_Augenbraue_20200405_123219_crop.jpg"
+   }
+  },
+  {
+   "id": "auris",
+   "latin": "auris, auris f.",
+   "english": "ear",
+   "scientific": "Auris",
+   "group": "caput",
+   "line": "erat in tantā cālīgine major ūsus aurium quam oculōrum",
+   "source": "Liv. XXII 5, 3",
+   "record": "ear",
+   "image": {
+    "file": "Portrait head of Tiberius, right profile - Getty Museum (71.AA.275).jpg",
+    "author": "J. Paul Getty Museum",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Portrait_head_of_Tiberius,_right_profile_-_Getty_Museum_(71.AA.275).jpg"
+   }
+  },
+  {
+   "id": "nasus",
+   "latin": "nāsus, nāsī m.",
+   "english": "nose",
+   "scientific": "Nasus",
+   "group": "caput",
+   "line": "quod tū cum olfaciēs, deōs rogābis, / tōtum ut tē faciant, Fabulle, nāsum",
+   "source": "Catull. 13, 13–14",
+   "record": "nose",
+   "image": {
+    "file": "Portrait head of Tiberius, right profile - Getty Museum (71.AA.275).jpg",
+    "author": "J. Paul Getty Museum",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Portrait_head_of_Tiberius,_right_profile_-_Getty_Museum_(71.AA.275).jpg"
+   }
+  },
+  {
+   "id": "nares",
+   "latin": "nārēs, nārium f.",
+   "english": "nostrils",
+   "scientific": "Nares",
+   "group": "caput",
+   "line": "būcula caelum / suspiciēns patulīs captāvit nāribus aurās",
+   "source": "Verg. G. I 375–376",
+   "record": "nostrils",
+   "image": {
+    "file": "Greek Marble Head of a Bearded Man, 160-150 BC (10458792395).jpg",
+    "author": "Gary Todd",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Greek_Marble_Head_of_a_Bearded_Man,_160-150_BC_(10458792395).jpg"
+   }
+  },
+  {
+   "id": "gena",
+   "latin": "gena, genae f.",
+   "english": "cheek",
+   "scientific": "Bucca",
+   "group": "caput",
+   "line": "genae deinde ab īnferiōre parte tūtantur subjectae leviterque ēminentēs",
+   "source": "Cic. ND II 143",
+   "record": "cheek",
+   "image": {
+    "file": "Portrait Head of Caligula - Getty Museum (72.AA.155).jpg",
+    "author": "J. Paul Getty Museum",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Portrait_Head_of_Caligula_-_Getty_Museum_(72.AA.155).jpg"
+   }
+  },
+  {
+   "id": "os",
+   "latin": "ōs, ōris n.",
+   "english": "mouth",
+   "scientific": "Os",
+   "group": "caput",
+   "line": "ōre edō, sorbeō, bibō, pōtō",
+   "source": "Varr. LL VI 84",
+   "record": "mouth",
+   "image": {
+    "file": "Portrait head of Agrippina the Younger - Getty Museum (70.AA.101).jpg",
+    "author": "J. Paul Getty Museum",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Portrait_head_of_Agrippina_the_Younger_-_Getty_Museum_(70.AA.101).jpg"
+   }
+  },
+  {
+   "id": "labrum",
+   "latin": "labrum, labrī n.",
+   "english": "lip",
+   "scientific": "Labia oris",
+   "group": "caput",
+   "line": "prīmōribus labrīs sorbēbat exiguum",
+   "source": "Aug. Conf. IX 8, 18",
+   "record": "lip",
+   "image": {
+    "file": "Adult human mouth (modified).jpg",
+    "author": "Tomas Gunnarsson (Genusfotografen)",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Adult_human_mouth_(modified).jpg"
+   }
+  },
+  {
+   "id": "dens",
+   "latin": "dēns, dentis m.",
+   "english": "tooth",
+   "scientific": "Dentes",
+   "group": "caput",
+   "line": "hic quidem ait nōs eandem crisin habēre, quia utrīque dentēs cadunt",
+   "source": "Sen. Ep. 83, 4",
+   "record": "tooth",
+   "image": {
+    "file": "Adult human teeth.jpg",
+    "author": "Tomas Gunnarsson (Genusfotografen)",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Adult_human_teeth.jpg"
+   }
+  },
+  {
+   "id": "gingiva",
+   "latin": "gingīva, gingīvae f.",
+   "english": "gum",
+   "scientific": "Gingiva",
+   "group": "caput",
+   "line": "Ūvārum avidissimus est. … nec cessāvit per tōtōs paene diēs … labrīs sāviārī ac gingīvīs lacessere ac lūdificārī.",
+   "source": "Front. Amic. I 12, 2",
+   "record": "gum-teeth",
+   "image": {
+    "file": "Healthy gingiva.jpg",
+    "author": "Mohamed Hamze",
+    "licence": "Public domain",
+    "licence_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Healthy_gingiva.jpg"
+   }
+  },
+  {
+   "id": "lingua",
+   "latin": "lingua, linguae f.",
+   "english": "tongue",
+   "scientific": "Lingua",
+   "group": "caput",
+   "line": "calculōs linguā volvēns dīcere domī solēbat",
+   "source": "Quint. XI 3, 54",
+   "record": "tongue-body",
+   "image": {
+    "file": "Person with tongue sticking out.jpg",
+    "author": "Tomas Gunnarsson (Genusfotografen)",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Person_with_tongue_sticking_out.jpg"
+   }
+  },
+  {
+   "id": "palatum",
+   "latin": "palātum, palātī n.",
+   "english": "palate",
+   "scientific": "Palatum",
+   "group": "caput",
+   "line": "intellēctus sapōrum cēterīs in prīmā linguā, hominī et in palātō.",
+   "source": "Plin. NH XI 174",
+   "record": "palate",
+   "image": {
+    "file": "Male human mouth.jpg",
+    "author": "Sonyarabert30",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Male_human_mouth.jpg"
+   }
+  },
+  {
+   "id": "fauces",
+   "latin": "faucēs, faucium f. pl.",
+   "english": "throat",
+   "scientific": "Fauces",
+   "group": "caput",
+   "line": "caret ōs ūmōre loquentis / et faucēs ārent",
+   "source": "Ov. Met. VI 354–355",
+   "record": "throat",
+   "image": {
+    "file": "Uvula of an adult.jpg",
+    "author": "JonaLane",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Uvula_of_an_adult.jpg"
+   }
+  },
+  {
+   "id": "mentum",
+   "latin": "mentum, mentī n.",
+   "english": "chin",
+   "scientific": "Mentum",
+   "group": "caput",
+   "line": "Mentum nūllī praeter hominem, nec mālae.",
+   "source": "Plin. NH XI 159",
+   "record": "chin",
+   "image": {
+    "file": "Bust of Germanicus, right front - Getty Museum (2021.66).jpg",
+    "author": "J. Paul Getty Museum",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Bust_of_Germanicus,_right_front_-_Getty_Museum_(2021.66).jpg"
+   }
+  },
+  {
+   "id": "maxilla",
+   "latin": "maxilla, maxillae f.",
+   "english": "jaw",
+   "scientific": "Mandibula",
+   "group": "caput",
+   "line": "maxillās crocodīlus tantum superiōrēs movet",
+   "source": "Plin. NH XI 159",
+   "record": "jaw",
+   "image": {
+    "file": "Cranium - mandibula (lateral view).jpg",
+    "author": "MAKY.OREL",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Cranium_-_mandibula_(lateral_view).jpg"
+   }
+  },
+  {
+   "id": "barba",
+   "latin": "barba, barbae f.",
+   "english": "beard",
+   "scientific": "Barba",
+   "group": "caput",
+   "line": "barba gravis nimbīs, cānīs fluit unda capillīs",
+   "source": "Ov. Met. I 266",
+   "record": "beard",
+   "image": {
+    "file": "Greek Marble Head of a Bearded Man, 160-150 BC (10458792395).jpg",
+    "author": "Gary Todd",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Greek_Marble_Head_of_a_Bearded_Man,_160-150_BC_(10458792395).jpg"
+   }
+  },
+  {
+   "id": "collum",
+   "latin": "collum, collī n.",
+   "english": "neck",
+   "scientific": "Collum",
+   "group": "caput",
+   "line": "accurrēns cecidit super collum ejus, et ōsculātus est eum",
+   "source": "Lc. 15, 20",
+   "record": "neck",
+   "image": {
+    "file": "Bust of Germanicus, left front - Getty Museum (2021.66).jpg",
+    "author": "J. Paul Getty Museum",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Bust_of_Germanicus,_left_front_-_Getty_Museum_(2021.66).jpg"
+   }
+  },
+  {
+   "id": "cervix",
+   "latin": "cervīx, cervīcis f.",
+   "english": "nape",
+   "scientific": "Regio cervicalis posterior",
+   "group": "caput",
+   "line": "ergō age, cāre pater, cervīcī impōnere nostrae",
+   "source": "Verg. A. II 707",
+   "record": "nape",
+   "image": {
+    "file": "Bust of Germanicus, back - Getty Museum (2021.66).jpg",
+    "author": "J. Paul Getty Museum",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Bust_of_Germanicus,_back_-_Getty_Museum_(2021.66).jpg"
+   }
+  },
+  {
+   "id": "tergum",
+   "latin": "tergum, tergī n.",
+   "also": "dorsum, dorsī n.",
+   "english": "back",
+   "scientific": "Dorsum",
+   "group": "truncus",
+   "line": "pērās imposuit Juppiter nōbīs duās: / propriīs replētam vitiīs post tergum dedit",
+   "source": "Phaedr. IV 10, 1–2",
+   "record": "back-body",
+   "image": {
+    "file": "Venus de Milo back 2023.jpg",
+    "author": "Caeciliusinhorto",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Venus_de_Milo_back_2023.jpg"
+   }
+  },
+  {
+   "id": "umerus",
+   "latin": "umerus, umerī m.",
+   "english": "shoulder",
+   "scientific": "Regio deltoidea",
+   "group": "truncus",
+   "line": "ipse subībō umerīs nec mē labor iste gravābit",
+   "source": "Verg. A. II 708",
+   "record": "shoulder",
+   "image": {
+    "file": "Bronzi di riace, statua A detta il giovane, V secolo ac. 11.jpg",
+    "author": "Sailko",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Bronzi_di_riace,_statua_A_detta_il_giovane,_V_secolo_ac._11.jpg"
+   }
+  },
+  {
+   "id": "scapulae",
+   "latin": "scapulae, scapulārum f.",
+   "english": "shoulder blade",
+   "scientific": "Scapula",
+   "group": "truncus",
+   "line": "Rūrsus ā cervīce duo lāta ossa utrimque ad scapulās tendunt",
+   "source": "Cels. VIII 1, 15",
+   "record": "shoulder-blade",
+   "image": {
+    "file": "Bronzi di riace, statua B detta il vecchio, V secolo ac. 08.jpg",
+    "author": "Sailko",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Bronzi_di_riace,_statua_B_detta_il_vecchio,_V_secolo_ac._08.jpg"
+   }
+  },
+  {
+   "id": "ala",
+   "latin": "āla, ālae f.",
+   "english": "armpit",
+   "scientific": "Axilla",
+   "group": "truncus",
+   "line": "sīc positum servābis onus, nē forte sub ālā / fasciculum portēs librōrum, ut rūsticus agnum",
+   "source": "Hor. Epist. I 13, 12–13",
+   "record": "armpit",
+   "image": {
+    "file": "Fauno Barberini - Gliptoteca de Múnich (4).jpg",
+    "author": "Laci3",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Fauno_Barberini_-_Gliptoteca_de_M%C3%BAnich_(4).jpg"
+   }
+  },
+  {
+   "id": "pectus",
+   "latin": "pectus, pectoris n.",
+   "english": "chest",
+   "scientific": "Pectus",
+   "group": "truncus",
+   "line": "illum et lābentem Teucrī et rīsēre natantem / et salsōs rīdent revomentem pectore flūctūs",
+   "source": "Verg. A. V 181–182",
+   "record": "chest-body",
+   "image": {
+    "file": "Bronzi di riace, statua A detta il giovane, V secolo ac. 18.jpg",
+    "author": "Sailko",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Bronzi_di_riace,_statua_A_detta_il_giovane,_V_secolo_ac._18.jpg"
+   }
+  },
+  {
+   "id": "mamma",
+   "latin": "mamma, mammae f.",
+   "english": "breast",
+   "scientific": "Mamma",
+   "group": "truncus",
+   "line": "Puerō istī date mammam.",
+   "source": "Plaut. Truc. 449",
+   "record": "breast-female",
+   "image": {
+    "file": "Venus de Milo Louvre Ma399 n13.jpg",
+    "author": "Jastrow",
+    "licence": "Public domain",
+    "licence_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Venus_de_Milo_Louvre_Ma399_n13.jpg"
+   }
+  },
+  {
+   "id": "papilla",
+   "latin": "papilla, papillae f.",
+   "english": "nipple",
+   "scientific": "Papilla mammaria",
+   "group": "truncus",
+   "line": "Cor animālibus cēterīs mediō pectore est, hominī tantum īnfrā laevam papillam",
+   "source": "Plin. NH XI 181",
+   "record": "nipple",
+   "image": {
+    "file": "Bronzi di riace, statua A detta il giovane, V secolo ac. 18.jpg",
+    "author": "Sailko",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Bronzi_di_riace,_statua_A_detta_il_giovane,_V_secolo_ac._18.jpg"
+   }
+  },
+  {
+   "id": "costa",
+   "latin": "costa, costae f.",
+   "english": "rib",
+   "scientific": "Costa",
+   "group": "truncus",
+   "line": "Īnfrā cervīcem vērō summa costa contrā umerum sita est",
+   "source": "Cels. VIII 1, 14",
+   "record": "rib",
+   "image": {
+    "file": "Skeleton 8 -- Smart-Servier.png",
+    "author": "Laboratoires Servier",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Skeleton_8_--_Smart-Servier.png"
+   }
+  },
+  {
+   "id": "spinadorsi",
+   "latin": "spīna, spīnae f.",
+   "english": "spine",
+   "scientific": "Columna vertebralis",
+   "group": "truncus",
+   "line": "Caput autem spīna excipit.",
+   "source": "Cels. VIII 1, 11",
+   "record": "spine",
+   "image": {
+    "file": "Spine - Vertebral column I -- Smart-Servier.jpg",
+    "author": "Laboratoires Servier",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Spine_-_Vertebral_column_I_--_Smart-Servier.jpg"
+   }
+  },
+  {
+   "id": "lumbus",
+   "latin": "lumbus, lumbī m.",
+   "english": "loins",
+   "scientific": "Regio lumbalis",
+   "group": "truncus",
+   "line": "Lumbī sedendō, oculī spectandō dolent",
+   "source": "Plaut. Men. 882",
+   "record": "loins",
+   "image": {
+    "file": "Bronzi di riace, statua B detta il vecchio, V secolo ac. 08.jpg",
+    "author": "Sailko",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Bronzi_di_riace,_statua_B_detta_il_vecchio,_V_secolo_ac._08.jpg"
+   }
+  },
+  {
+   "id": "latus",
+   "latin": "latus, lateris n.",
+   "english": "side",
+   "scientific": "Latus",
+   "group": "truncus",
+   "line": "prōcubuit tenerāque latus submīsit in herbā",
+   "source": "Ov. Met. III 23",
+   "record": "side",
+   "image": {
+    "file": "Torso del belvedere, forse aiace telamonio che medita suicidio, I sec. ac. di apollonios, forse da bronzo greco del 200-150 ac. ca 02.JPG",
+    "author": "Sailko",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Torso_del_belvedere,_forse_aiace_telamonio_che_medita_suicidio,_I_sec._ac._di_apollonios,_forse_da_bronzo_greco_del_200-150_ac._ca_02.JPG"
+   }
+  },
+  {
+   "id": "venter",
+   "latin": "venter, ventris m.",
+   "english": "belly",
+   "scientific": "Abdomen",
+   "group": "truncus",
+   "line": "venter praecepta nōn audit: poscit, appellat",
+   "source": "Sen. Ep. 21, 11",
+   "record": "belly",
+   "image": {
+    "file": "Altes Museum - Torso des Doryphoros des Polyklet von Argos.jpg",
+    "author": "Ophelia2",
+    "licence": "Public domain",
+    "licence_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Altes_Museum_-_Torso_des_Doryphoros_des_Polyklet_von_Argos.jpg"
+   }
+  },
+  {
+   "id": "umbilicus",
+   "latin": "umbilīcus, umbilīcī m.",
+   "english": "belly button",
+   "scientific": "Umbilicus",
+   "group": "truncus",
+   "line": "vēnārum in umbilīcō nōdus ac coitus.",
+   "source": "Plin. NH XI 220",
+   "record": "belly-button",
+   "image": {
+    "file": "Doryphoros torso.jpg",
+    "author": "Renatus Crians",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Doryphoros_torso.jpg"
+   }
+  },
+  {
+   "id": "coxa",
+   "latin": "coxa, coxae f.",
+   "english": "hip",
+   "scientific": "Coxa",
+   "group": "truncus",
+   "line": "Īma vērō spīna in coxārum osse dēsīdit",
+   "source": "Cels. VIII 1, 23",
+   "record": "hip",
+   "image": {
+    "file": "Bronzi di riace, statua B detta il vecchio, V secolo ac. 12 torso.jpg",
+    "author": "Sailko",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Bronzi_di_riace,_statua_B_detta_il_vecchio,_V_secolo_ac._12_torso.jpg"
+   }
+  },
+  {
+   "id": "inguen",
+   "latin": "inguen, inguinis n.",
+   "english": "groin",
+   "scientific": "Inguen",
+   "group": "truncus",
+   "line": "inguen nē intumēscat ex ulcere, satis est surculum tantum myrtī habēre sēcum nec ferrō nec terrā contāctum",
+   "source": "Plin. NH XXIII 163",
+   "record": "groin",
+   "image": {
+    "file": "Ubekendt, Torso af stående nøgen ung mand, Spydbæreren eller Doryforos, Pourtalès-torsoen, , KAS1242, Statens Museum for Kunst.jpg",
+    "author": "Statens Museum for Kunst",
+    "licence": "Public domain",
+    "licence_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Ubekendt,_Torso_af_st%C3%A5ende_n%C3%B8gen_ung_mand,_Spydb%C3%A6reren_eller_Doryforos,_Pourtal%C3%A8s-torsoen,_,_KAS1242,_Statens_Museum_for_Kunst.jpg"
+   }
+  },
+  {
+   "id": "nates",
+   "latin": "natēs, natium f.",
+   "also": "clūnēs, clūnium m./f.",
+   "english": "bottom",
+   "scientific": "Nates",
+   "group": "truncus",
+   "line": "vulpem rogābat partem caudae sīmius, / contegere honestē posset ut nūdās natēs",
+   "source": "Phaedr. App. 1, 1–2",
+   "record": "bottom-body",
+   "image": {
+    "file": "Bronzi di riace, statua A detta il giovane, V secolo ac. 27 glutei.jpg",
+    "author": "Sailko",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Bronzi_di_riace,_statua_A_detta_il_giovane,_V_secolo_ac._27_glutei.jpg"
+   }
+  },
+  {
+   "id": "coles",
+   "latin": "cōlēs, cōlis m.",
+   "english": "penis",
+   "scientific": "Penis",
+   "group": "truncus",
+   "line": "Tum in masculīs iter ūrīnae spatiōsius et conpressius ā cervīce hujus dēscendit ad cōlem",
+   "source": "Cels. IV 1, 12",
+   "record": "penis",
+   "image": {
+    "file": "Bronzi di riace, statua A detta il giovane, V secolo ac. 26 pube.jpg",
+    "author": "Sailko",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Bronzi_di_riace,_statua_A_detta_il_giovane,_V_secolo_ac._26_pube.jpg"
+   }
+  },
+  {
+   "id": "testiculus",
+   "latin": "testiculus, testiculī m.",
+   "english": "testicle",
+   "scientific": "Testis",
+   "group": "truncus",
+   "line": "Igitur testiculī simile quiddam medullīs habent",
+   "source": "Cels. VII 18, 1",
+   "record": "testicle",
+   "image": {
+    "file": "Bronzi di riace, statua A detta il giovane, V secolo ac. 25 pene.jpg",
+    "author": "Sailko",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Bronzi_di_riace,_statua_A_detta_il_giovane,_V_secolo_ac._25_pene.jpg"
+   }
+  },
+  {
+   "id": "manus",
+   "latin": "manus, manūs f.",
+   "english": "hand",
+   "scientific": "Manus",
+   "group": "bracchium",
+   "line": "Ostende hūc manūs. — Em tibi, ostendī, eccās.",
+   "source": "Plaut. Aul. 640b–641",
+   "record": "hand",
+   "image": {
+    "file": "Left Hand of a Female Human.png",
+    "author": "Lezlie Rewatch",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Left_Hand_of_a_Female_Human.png"
+   }
+  },
+  {
+   "id": "bracchium",
+   "latin": "bracchium, bracchiī n.",
+   "english": "arm",
+   "scientific": "Membrum superius",
+   "group": "bracchium",
+   "line": "brachia et crūra cotīdiē abluēbant",
+   "source": "Sen. Ep. 86, 12",
+   "record": "arm",
+   "image": {
+    "file": "Extended arm.jpg",
+    "author": "Tomas Gunnarsson (Genusfotografen)",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Extended_arm.jpg"
+   }
+  },
+  {
+   "id": "lacertus",
+   "latin": "lacertus, lacertī m.",
+   "english": "upper arm",
+   "scientific": "Brachium",
+   "group": "bracchium",
+   "line": "bracchiaque et nūdōs mediā plūs parte lacertōs",
+   "source": "Ov. Met. I 501",
+   "record": "upper-arm",
+   "image": {
+    "file": "Arm2.jpg",
+    "author": "אנדר-ויק",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Arm2.jpg"
+   }
+  },
+  {
+   "id": "ulna",
+   "latin": "ulna, ulnae f.",
+   "english": "forearm",
+   "scientific": "Antebrachium",
+   "group": "bracchium",
+   "line": "puerī īnstar / bīmulī tremulā patris dormientis in ulnā",
+   "source": "Catull. 17, 12–13",
+   "record": "forearm",
+   "image": {
+    "file": "Extended arm.jpg",
+    "author": "Tomas Gunnarsson (Genusfotografen)",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Extended_arm.jpg"
+   }
+  },
+  {
+   "id": "cubitum",
+   "latin": "cubitum, cubitī n.",
+   "english": "elbow",
+   "scientific": "Cubitus",
+   "group": "bracchium",
+   "line": "Hominī genua et cubita contrāria",
+   "source": "Plin. NH XI 249",
+   "record": "elbow",
+   "image": {
+    "file": "Elbow on gray background.jpg",
+    "author": "Tomas Gunnarsson (Genusfotografen)",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Elbow_on_gray_background.jpg"
+   }
+  },
+  {
+   "id": "palmamanus",
+   "latin": "palma, palmae f.",
+   "english": "palm",
+   "scientific": "Palma",
+   "group": "bracchium",
+   "line": "jamque subāctum / levat opus, palmīsque suum dīlātat in orbem",
+   "source": "Mor. 47–48",
+   "record": "palm-hand",
+   "image": {
+    "file": "Right Hand Palm.png",
+    "author": "Eyefive45",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Right_Hand_Palm.png"
+   }
+  },
+  {
+   "id": "pugnus",
+   "latin": "pugnus, pugnī m.",
+   "english": "fist",
+   "group": "bracchium",
+   "line": "nam cum compresserat digitōs pugnumque fēcerat, dialecticam ajēbat ejus modī esse",
+   "source": "Cic. Orat. 113",
+   "record": "fist",
+   "image": {
+    "file": "Raised fist.jpg",
+    "author": "Tomas Gunnarsson (Genusfotografen)",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Raised_fist.jpg"
+   }
+  },
+  {
+   "id": "digitus",
+   "latin": "digitus, digitī m.",
+   "english": "finger",
+   "scientific": "Digiti manus",
+   "group": "bracchium",
+   "line": "digitī illōrum tenentur et aliēnā manū per litterārum simulācra dūcuntur",
+   "source": "Sen. Ep. 94, 51",
+   "record": "finger",
+   "image": {
+    "file": "Hand, fingers - back.jpg",
+    "author": "Tomas Gunnarsson (Genusfotografen)",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Hand,_fingers_-_back.jpg"
+   }
+  },
+  {
+   "id": "pollex",
+   "latin": "pollex, pollicis m.",
+   "english": "thumb",
+   "scientific": "Pollex",
+   "group": "bracchium",
+   "line": "flāvam modo pollice cēram / mollībat",
+   "source": "Ov. Met. VIII 198–199",
+   "record": "thumb",
+   "image": {
+    "file": "Thumb up.JPG",
+    "author": "Pogrebnoj-Alexandroff",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Thumb_up.JPG"
+   }
+  },
+  {
+   "id": "index",
+   "latin": "index, indicis m.",
+   "english": "index finger",
+   "scientific": "Index",
+   "group": "bracchium",
+   "line": "quī, sī quid forte latēret, / indice mōnstrāret digitō",
+   "source": "Hor. Serm. II 8, 25–26",
+   "record": "index-finger",
+   "image": {
+    "file": "Index finger front.JPG",
+    "author": "Pogrebnoj-Alexandroff",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Index_finger_front.JPG"
+   }
+  },
+  {
+   "id": "unguis",
+   "latin": "unguis, unguis m.",
+   "english": "fingernail",
+   "scientific": "Unguis",
+   "group": "bracchium",
+   "line": "illa papāvereās subsecat ungue comās",
+   "source": "Ov. Fast. IV 438",
+   "record": "fingernail",
+   "image": {
+    "file": "Daumen,Mann.jpg",
+    "author": "Mille.oiram",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Daumen,Mann.jpg"
+   }
+  },
+  {
+   "id": "articulus",
+   "latin": "articulus, articulī m.",
+   "english": "joint",
+   "scientific": "Articulatio",
+   "group": "bracchium",
+   "line": "hominis digitī ternōs articulōs habent, pollex bīnōs",
+   "source": "Plin. NH XI 244",
+   "record": "joint-body",
+   "image": {
+    "file": "Hand, fingers - back.jpg",
+    "author": "Tomas Gunnarsson (Genusfotografen)",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Hand,_fingers_-_back.jpg"
+   }
+  },
+  {
+   "id": "genu",
+   "latin": "genū, genūs n.",
+   "english": "knee",
+   "scientific": "Genu",
+   "group": "crus",
+   "line": "ipse genū nīxus flammās exsuscitat aurā",
+   "source": "Ov. Fast. V 507",
+   "record": "knee",
+   "image": {
+    "file": "Human knees.jpg",
+    "author": "Tomas Gunnarsson (Genusfotografen)",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Human_knees.jpg"
+   }
+  },
+  {
+   "id": "femur",
+   "latin": "femur, femoris n.",
+   "english": "thigh",
+   "scientific": "Femur",
+   "group": "crus",
+   "line": "per omnia femur umerō, crūs vērō brachiō simile est",
+   "source": "Cels. VIII 1, 25",
+   "record": "thigh",
+   "image": {
+    "file": "Leg on white background.jpg",
+    "author": "Tomas Gunnarsson (Genusfotografen)",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Leg_on_white_background.jpg"
+   }
+  },
+  {
+   "id": "patella",
+   "latin": "patella, patellae f.",
+   "english": "kneecap",
+   "scientific": "Patella",
+   "group": "crus",
+   "line": "Quae commissūra osse parvō, mollī, cartilāginōsō tegitur: patellam vocant.",
+   "source": "Cels. VIII 1, 25",
+   "record": "kneecap",
+   "image": {
+    "file": "Patella - facies anterior patellae.jpg",
+    "author": "MAKY.OREL",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Patella_-_facies_anterior_patellae.jpg"
+   }
+  },
+  {
+   "id": "poples",
+   "latin": "poples, poplitis m.",
+   "english": "back of the knee",
+   "scientific": "Poples",
+   "group": "crus",
+   "line": "paulātimque tremēns et nōndum poplite firmō / cōnstitit adjūtīs aliquō cōnāmine nervīs",
+   "source": "Ov. Met. XV 223–224",
+   "record": "back-of-the-knee",
+   "image": {
+    "file": "Buttocks, legs.jpg",
+    "author": "Tomas Gunnarsson (Genusfotografen)",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Buttocks,_legs.jpg"
+   }
+  },
+  {
+   "id": "crus",
+   "latin": "crūs, crūris n.",
+   "english": "leg",
+   "scientific": "Crus",
+   "group": "crus",
+   "line": "ambit crūra ocreīs paribus",
+   "source": "Mor. 122",
+   "record": "leg",
+   "image": {
+    "file": "Leg on white background.jpg",
+    "author": "Tomas Gunnarsson (Genusfotografen)",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Leg_on_white_background.jpg"
+   }
+  },
+  {
+   "id": "tibia",
+   "latin": "tībia, tībiae f.",
+   "english": "shin",
+   "scientific": "Regio cruris anterior",
+   "group": "crus",
+   "line": "sīquidem etiam in hōc cāsū quaedam similitūdō est femorī et umerō, tībiae et cubitō, pedī et manuī",
+   "source": "Cels. VIII 20, 1",
+   "record": "shin",
+   "image": {
+    "file": "Human knees.jpg",
+    "author": "Tomas Gunnarsson (Genusfotografen)",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Human_knees.jpg"
+   }
+  },
+  {
+   "id": "sura",
+   "latin": "sūra, sūrae f.",
+   "english": "calf",
+   "scientific": "Sura",
+   "group": "crus",
+   "line": "virginibus Tyriīs mōs est gestāre pharetram, / purpureōque altē sūrās vincīre cothurnō",
+   "source": "Verg. A. I 336–337",
+   "record": "calf-leg",
+   "image": {
+    "file": "Buttocks, legs.jpg",
+    "author": "Tomas Gunnarsson (Genusfotografen)",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Buttocks,_legs.jpg"
+   }
+  },
+  {
+   "id": "talus",
+   "latin": "tālus, tālī m.",
+   "english": "ankle",
+   "scientific": "Tarsus",
+   "group": "crus",
+   "line": "summaque vix tālōs contigit unda meōs",
+   "source": "Ov. Am. III 6, 6",
+   "record": "ankle",
+   "image": {
+    "file": "Ankle.jpg",
+    "author": "אנדר-ויק",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Ankle.jpg"
+   }
+  },
+  {
+   "id": "pes",
+   "latin": "pēs, pedis m.",
+   "english": "foot",
+   "scientific": "Pes",
+   "group": "crus",
+   "line": "Deinde mittit aquam in pelvim, et coepit lavāre pedēs discipulōrum",
+   "source": "Jo. 13, 5",
+   "record": "foot",
+   "image": {
+    "file": "Foot on white background.jpg",
+    "author": "Tomas Gunnarsson (Genusfotografen)",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Foot_on_white_background.jpg"
+   }
+  },
+  {
+   "id": "calx",
+   "latin": "calx, calcis f.",
+   "english": "heel",
+   "scientific": "Calx",
+   "group": "crus",
+   "line": "ecce volat calcemque terit jam calce Diōrēs",
+   "source": "Verg. A. V 324",
+   "record": "heel-foot",
+   "image": {
+    "file": "Ankle.jpg",
+    "author": "אנדר-ויק",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Ankle.jpg"
+   }
+  },
+  {
+   "id": "planta",
+   "latin": "planta, plantae f.",
+   "english": "sole",
+   "scientific": "Planta",
+   "group": "crus",
+   "line": "et Tyrrhēna pedum circumdat vincula plantīs",
+   "source": "Verg. A. VIII 458",
+   "record": "sole-foot",
+   "image": {
+    "file": "Left Sole of a Male Foot.jpg",
+    "author": "Eyefive45",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Left_Sole_of_a_Male_Foot.jpg"
+   }
+  },
+  {
+   "id": "digituspedis",
+   "latin": "digitus pedis, digitī pedis m.",
+   "english": "toe",
+   "scientific": "Digiti pedis",
+   "group": "crus",
+   "line": "planta palmae, digitī digitīs, unguēs unguibus respondent",
+   "source": "Cels. VIII 1, 27",
+   "record": "toe",
+   "image": {
+    "file": "Toes feet.jpg",
+    "author": "sole_lover",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Toes_feet.jpg"
+   }
+  },
+  {
+   "id": "cor",
+   "latin": "cor, cordis n.",
+   "english": "heart",
+   "scientific": "Cor",
+   "group": "intus",
+   "line": "Cor animālibus cēterīs mediō pectore est, hominī tantum īnfrā laevam papillam",
+   "source": "Plin. NH XI 181",
+   "record": "heart",
+   "image": {
+    "file": "Heart Model.png",
+    "author": "BruceBlaus",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Heart_Model.png"
+   }
+  },
+  {
+   "id": "cerebrum",
+   "latin": "cerebrum, cerebrī n.",
+   "english": "brain",
+   "scientific": "Encephalon",
+   "group": "intus",
+   "line": "quae cerebrum nōn habent, nōn dormiunt.",
+   "source": "Plin. NH XI 135",
+   "record": "brain",
+   "image": {
+    "file": "Brain human lateral view.svg",
+    "author": "Patrick J. Lynch, medical illustrator",
+    "licence": "CC BY 2.5",
+    "licence_url": "https://creativecommons.org/licenses/by/2.5/",
+    "page": "https://commons.wikimedia.org/wiki/File:Brain_human_lateral_view.svg"
+   }
+  },
+  {
+   "id": "jecur",
+   "latin": "jecur, jecoris n.",
+   "english": "liver",
+   "scientific": "Hepar",
+   "group": "intus",
+   "line": "Jecur in dexterā parte est",
+   "source": "Plin. NH XI 189",
+   "record": "liver",
+   "image": {
+    "file": "Liver (organ).png",
+    "author": "BruceBlaus",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Liver_(organ).png"
+   }
+  },
+  {
+   "id": "cutis",
+   "latin": "cutis, cutis f.",
+   "english": "skin",
+   "scientific": "Cutis",
+   "group": "intus",
+   "line": "Pilī ē cute exeunt crassā hirtī, fēminīs tenuiōrēs",
+   "source": "Plin. NH XI 229",
+   "record": "skin-body",
+   "image": {
+    "file": "Human skin close-up.jpg",
+    "author": "Montavius Howard",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Human_skin_close-up.jpg"
+   }
+  },
+  {
+   "id": "osossis",
+   "latin": "os, ossis n.",
+   "english": "bone",
+   "scientific": "Os",
+   "group": "intus",
+   "line": "Dūriōrēs osse dentēs sunt",
+   "source": "Cels. VIII 1, 9",
+   "record": "bone",
+   "image": {
+    "file": "Thigh bone - Femur -- Smart-Servier.jpg",
+    "author": "Laboratoires Servier",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Thigh_bone_-_Femur_--_Smart-Servier.jpg"
+   }
+  },
+  {
+   "id": "sceletus",
+   "latin": "sceletus, sceletī m.",
+   "english": "skeleton",
+   "scientific": "Systema skeletale",
+   "group": "intus",
+   "line": "Sceletus ducentīs ferē ossibus cōnstat.",
+   "source": "composed",
+   "record": "skeleton",
+   "image": {
+    "file": "Skeleton I -- Smart-Servier.jpg",
+    "author": "Laboratoires Servier",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Skeleton_I_--_Smart-Servier.jpg"
+   }
+  },
+  {
+   "id": "calvaria",
+   "latin": "calvāria, calvāriae f.",
+   "english": "skull",
+   "scientific": "Cranium",
+   "group": "intus",
+   "line": "Rāra autem calvāria solida sine sūtūrīs est",
+   "source": "Cels. VIII 1, 2",
+   "record": "skull",
+   "image": {
+    "file": "Skulls -- Smart-Servier.jpg",
+    "author": "Laboratoires Servier",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Skulls_--_Smart-Servier.jpg"
+   }
+  },
+  {
+   "id": "vertebra",
+   "latin": "vertebra, vertebrae f.",
+   "english": "vertebra",
+   "scientific": "Vertebra",
+   "group": "intus",
+   "line": "Frictiō cum omnibus in homine vertebrīs ūtilis sit, tum īs praecipuē, quae in collō sunt.",
+   "source": "Cels. IV 6, 4",
+   "record": "vertebra",
+   "image": {
+    "file": "Vertebra 3 -- Smart-Servier.png",
+    "author": "Laboratoires Servier",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Vertebra_3_--_Smart-Servier.png"
+   }
+  },
+  {
+   "id": "medulla",
+   "latin": "medulla, medullae f.",
+   "english": "marrow",
+   "scientific": "Medulla ossium",
+   "group": "intus",
+   "line": "Medulla … juventae rubēns, in senectā albēscēns.",
+   "source": "Plin. NH XI 214",
+   "record": "marrow",
+   "image": {
+    "file": "Bone Marrow (NIH BioArt 56).svg",
+    "author": "Ryan Kissinger, NIAID",
+    "licence": "Public domain",
+    "licence_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Bone_Marrow_(NIH_BioArt_56).svg"
+   }
+  },
+  {
+   "id": "musculus",
+   "latin": "mūsculus, mūsculī m.",
+   "english": "muscle",
+   "scientific": "Musculus",
+   "group": "intus",
+   "line": "ossa mūsculī nervī, vēnae rūgae etiam ut spīrantis appārent",
+   "source": "Plin. Ep. III 6, 2",
+   "record": "muscle",
+   "image": {
+    "file": "Rheumatology - Muscle fascicle -- Smart-Servier.png",
+    "author": "Laboratoires Servier",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Rheumatology_-_Muscle_fascicle_--_Smart-Servier.png"
+   }
+  },
+  {
+   "id": "nervus",
+   "latin": "nervus, nervī m.",
+   "english": "nerve",
+   "scientific": "Nervus",
+   "group": "intus",
+   "line": "Nervī sēnsum ā cute ad cerebrum ferunt.",
+   "source": "composed",
+   "record": "nerve",
+   "image": {
+    "file": "Nervous system - Nerve -- Smart-Servier.png",
+    "author": "Laboratoires Servier",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Nervous_system_-_Nerve_--_Smart-Servier.png"
+   }
+  },
+  {
+   "id": "vena",
+   "latin": "vēna, vēnae f.",
+   "english": "vein",
+   "scientific": "Vena",
+   "group": "intus",
+   "line": "et sanguis per vēnās in omne corpus diffunditur et spīritus per artēriās",
+   "source": "Cic. ND II 138",
+   "record": "vein",
+   "image": {
+    "file": "Cardiovascular system - Vein 12 -- Smart-Servier.png",
+    "author": "Laboratoires Servier",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Cardiovascular_system_-_Vein_12_--_Smart-Servier.png"
+   }
+  },
+  {
+   "id": "arteria",
+   "latin": "artēria, artēriae f.",
+   "english": "artery",
+   "scientific": "Arteria",
+   "group": "intus",
+   "line": "artēriārum pulsus in cacūmine māximē membrōrum ēvidēns",
+   "source": "Plin. NH XI 219",
+   "record": "artery",
+   "image": {
+    "file": "Cardiovascular system - Arteries 1 -- Smart-Servier.png",
+    "author": "Laboratoires Servier",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Cardiovascular_system_-_Arteries_1_--_Smart-Servier.png"
+   }
+  },
+  {
+   "id": "sanguis",
+   "latin": "sanguis, sanguinis m.",
+   "english": "blood",
+   "scientific": "Sanguis",
+   "group": "intus",
+   "line": "Sanguis quibus multus et pinguis, īrācundī.",
+   "source": "Plin. NH XI 221",
+   "record": "blood",
+   "image": {
+    "file": "Red blood cells illustration.jpg",
+    "author": "Donald Bliss",
+    "licence": "Public domain",
+    "licence_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Red_blood_cells_illustration.jpg"
+   }
+  },
+  {
+   "id": "pulmones",
+   "latin": "pulmōnēs, pulmōnum m.",
+   "english": "lungs",
+   "scientific": "Pulmones",
+   "group": "intus",
+   "line": "In pulmōnibus autem inest rāritās quaedam et adsimilis spongiīs mollitūdō",
+   "source": "Cic. ND II 136",
+   "record": "lungs",
+   "image": {
+    "file": "Human Lungs (NIH BioArt 231 - 630892).png",
+    "author": "Ryan Kissinger, NIAID",
+    "licence": "Public domain",
+    "licence_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Human_Lungs_(NIH_BioArt_231_-_630892).png"
+   }
+  },
+  {
+   "id": "gula",
+   "latin": "gula, gulae f.",
+   "english": "gullet",
+   "scientific": "Oesophagus",
+   "group": "intus",
+   "line": "summum gulae faucēs vocantur, extrēmum stomachus.",
+   "source": "Plin. NH XI 179",
+   "record": "gullet",
+   "image": {
+    "file": "Tractus intestinalis esophagus.svg",
+    "author": "Olek Remesz",
+    "licence": "CC BY-SA 2.5",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.5/",
+    "page": "https://commons.wikimedia.org/wiki/File:Tractus_intestinalis_esophagus.svg"
+   }
+  },
+  {
+   "id": "asperaarteria",
+   "latin": "aspera artēria, asperae artēriae f.",
+   "english": "windpipe",
+   "scientific": "Trachea",
+   "group": "intus",
+   "line": "Deinde duo itinera incipiunt: alterum asperam artēriam nōminant, alterum stomachum.",
+   "source": "Cels. IV 1, 3",
+   "record": "windpipe",
+   "image": {
+    "file": "Human Lungs (NIH BioArt 231 - 630892).png",
+    "author": "Ryan Kissinger, NIAID",
+    "licence": "Public domain",
+    "licence_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Human_Lungs_(NIH_BioArt_231_-_630892).png"
+   }
+  },
+  {
+   "id": "stomachus",
+   "latin": "stomachus, stomachī m.",
+   "english": "stomach",
+   "scientific": "Gaster",
+   "group": "intus",
+   "line": "Secunda mēnsa bonō stomachō nihil nocet, in inbēcillō coacēscit.",
+   "source": "Cels. I 2, 9",
+   "record": "stomach",
+   "image": {
+    "file": "Tractus intestinalis ventriculus alt.svg",
+    "author": "FoeNyx, after Olek Remesz",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Tractus_intestinalis_ventriculus_alt.svg"
+   }
+  },
+  {
+   "id": "lien",
+   "latin": "liēn, liēnis m.",
+   "english": "spleen",
+   "scientific": "Splen",
+   "group": "intus",
+   "line": "huic adnectitur liēn in sinistrā parte adversus jecorī",
+   "source": "Plin. NH XI 204",
+   "record": "spleen",
+   "image": {
+    "file": "Human Spleen (NIH BioArt 243).svg",
+    "author": "Ryan Kissinger, NIAID",
+    "licence": "Public domain",
+    "licence_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Human_Spleen_(NIH_BioArt_243).svg"
+   }
+  },
+  {
+   "id": "renes",
+   "latin": "rēnēs, rēnum m.",
+   "english": "kidneys",
+   "scientific": "Ren",
+   "group": "intus",
+   "line": "At ā rēnibus singulae vēnae, colōre albae, ad vēsīcam feruntur",
+   "source": "Cels. IV 1, 10",
+   "record": "kidneys",
+   "image": {
+    "file": "Human Kidney (NIH BioArt 229).png",
+    "author": "Ryan Kissinger, NIAID",
+    "licence": "Public domain",
+    "licence_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Human_Kidney_(NIH_BioArt_229).png"
+   }
+  },
+  {
+   "id": "intestina",
+   "latin": "intestīna, intestīnōrum n. pl.",
+   "english": "intestines, guts",
+   "scientific": "Intestinum tenue",
+   "group": "intus",
+   "line": "Inde tenuius intestīnum est, in sinūs vehementer inplicitum",
+   "source": "Cels. IV 1, 8",
+   "record": "guts-intestines",
+   "image": {
+    "file": "Tractus intestinalis intestinum tenue.svg",
+    "author": "Olek Remesz",
+    "licence": "CC BY-SA 2.5",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.5/",
+    "page": "https://commons.wikimedia.org/wiki/File:Tractus_intestinalis_intestinum_tenue.svg"
+   }
+  },
+  {
+   "id": "colon",
+   "latin": "cōlon, cōlī n.",
+   "english": "colon",
+   "scientific": "Colon",
+   "group": "intus",
+   "line": "ā Graecīs appellātur cōlon, ubi dolōrum magna causa",
+   "source": "Plin. NH XI 202",
+   "record": "colon-gut",
+   "image": {
+    "file": "Tractus intestinalis intestinum crassum.svg",
+    "author": "Olek Remesz",
+    "licence": "CC BY-SA 2.5",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.5/",
+    "page": "https://commons.wikimedia.org/wiki/File:Tractus_intestinalis_intestinum_crassum.svg"
+   }
+  },
+  {
+   "id": "vesica",
+   "latin": "vēsīca, vēsīcae f.",
+   "english": "bladder",
+   "scientific": "Vesica urinaria",
+   "group": "intus",
+   "line": "Īnfrā alvum est ā priōre parte vēsīca",
+   "source": "Plin. NH XI 208",
+   "record": "bladder",
+   "image": {
+    "file": "Urinary System Large Unlabeled.jpg",
+    "author": "Andrewmeyerson",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Urinary_System_Large_Unlabeled.jpg"
+   }
+  },
+  {
+   "id": "pancreas",
+   "latin": "pancreas, pancreatis n.",
+   "english": "pancreas",
+   "scientific": "Pancreas",
+   "group": "intus",
+   "line": "Pancreas post ventriculum latet.",
+   "source": "composed",
+   "record": "pancreas",
+   "image": {
+    "file": "Human Pancreas (NIH BioArt 239).png",
+    "author": "Ryan Kissinger, NIAID",
+    "licence": "Public domain",
+    "licence_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Human_Pancreas_(NIH_BioArt_239).png"
    }
   }
  ]

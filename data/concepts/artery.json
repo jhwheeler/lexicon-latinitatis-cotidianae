@@ -2,36 +2,34 @@
   "id": "artery",
   "english": "artery",
   "pos": "noun",
-  "also": [
-    "windpipe",
-    "trachea"
-  ],
   "domain": "corpus",
   "terms": [
     {
       "latin": "artēria, artēriae f.",
       "status": "recommended",
       "period": "classical",
-      "gloss": "an artery; the windpipe",
+      "gloss": "an artery",
       "evidence": [
-        "Cic. ND 2.139 (Lewis &amp; Short s.v. <span lang=\"la\">vēna</span>)",
-        "Traupman 57, 59, 407"
+        "Cic. ND 2.138: <span lang=\"la\">sanguis per vēnās in omne corpus diffunditur et spīritus per artēriās</span>",
+        "Traupman 57, 273"
       ],
-      "comment": "Ancient anatomy thought the arteries carried air, so the same word is the windpipe (Plin. 11.175)."
+      "comment": "Ancient anatomy held that the arteries carried air (<span lang=\"la\">spīritus</span>, Cic. ND 2.138). The word’s older sense is the windpipe (see windpipe), which the physicians called <span lang=\"la\">aspera artēria</span>."
     }
   ],
   "related": [
     "vein",
-    "throat",
+    "heart",
+    "windpipe",
     "lungs"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/arteria\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: arteria</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 57, 59."
+    "Cicero, <em>De natura deorum</em> 2.138.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 57, 273."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-21",
     "by": "Claude"
   }
 }

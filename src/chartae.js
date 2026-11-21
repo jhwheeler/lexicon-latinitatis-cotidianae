@@ -62,7 +62,11 @@
   // data/chartae.json); and, when the plants came in the same day, title (Chartae pictae / Picture
   // cards), subjects (Rēs), picture (Imāgō, for Imāgō animālis), the question on the back of a
   // plant's card ("Quid fert?", in drawBack), and the Latin and English names of the subjects and
-  // of the plant kinds (in data/chartae.json).
+  // of the plant kinds (in data/chartae.json). When the body came in (20 November 2026) the Latin
+  // and English names of its subject (Corpus / The body) and of its five kinds (Caput et faciēs,
+  // Truncus, Bracchium et manus, Crūs et pēs, Intus) were the coordinating session's wording, in
+  // data/chartae.json, for Jack's review; the label of a card's second Latin word ("also": Item: /
+  // Also:) is the vocabulary practice's own label for its line of other Latin words, which is Jack's.
   const one = (n, singular, many) => `${number(n)} ${n === 1 ? singular : many}`;
   const T = {
     la: {
@@ -75,7 +79,7 @@
       saved: 'Prōgressus in hōc nāvigātrō servātur.',
       notSaved: 'Prōgressus in hōc nāvigātrō servārī nōn potest: pāginā clausā perībit.',
       offline: 'Imāginēs in hōc apparātū servātae sunt: sine rēte quoque lūdere licet.',
-      entry: 'In lexicō īnspice', composed: 'exemplum nostrum', english: 'Anglicē', picture: 'Imāgō',
+      entry: 'In lexicō īnspice', composed: 'exemplum nostrum', english: 'Anglicē', picture: 'Imāgō', also: 'Item:',
       credit: 'Imāgō:', from: 'ex', cropped: 'recīsa',
       cards: n => one(n, 'charta', 'chartae'), due: n => `${number(n)} nunc ${n === 1 ? 'repetenda' : 'repetendae'}`, fresh: n => one(n, 'nova', 'novae'),
       known: n => one(n, 'nōta', 'nōtae'), learning: n => one(n, 'discitur', 'discuntur'),
@@ -95,7 +99,7 @@
       saved: 'Progress is kept in this browser.',
       notSaved: 'Progress cannot be saved in this browser: it will last only until the page is closed.',
       offline: 'The pictures are saved on this device: the game also works offline.',
-      entry: 'Open the entry', composed: 'composed', english: 'English', picture: 'Picture',
+      entry: 'Open the entry', composed: 'composed', english: 'English', picture: 'Picture', also: 'Also:',
       credit: 'Picture:', from: 'from', cropped: 'cropped',
       cards: n => one(n, 'card', 'cards'), due: n => `${number(n)} due now`, fresh: n => `${number(n)} new`,
       known: n => `${number(n)} known`, learning: n => `${number(n)} learning`,
@@ -378,6 +382,38 @@
     q('g-got').focus({ preventScroll: true });
   }
 
+  // The card's picture (Jack, 21 November 2026, on his iPhone: "Interdum imāgō in chartā nōn statim
+  // mūtātur cum ad proximam chartam trānseō"). A browser keeps showing an image's old file until a new
+  // src has loaded, so the last card's picture stayed on the next card, and on a slow connection the
+  // cue was the wrong picture. Now the picture is hidden the moment its card changes, and its place
+  // shows the frame's quiet ground, of the same size, until the new file has loaded; a load counts
+  // only if it is the file of the card now shown, so a late load of an earlier picture never shows on
+  // a later card. A file that fails (offline, not yet saved) leaves the ground, and the card works.
+  // The pictures of the next two cards of the round, or of the cards beside the one looked at, are
+  // fetched ahead, so that the change is usually at once: they are simply read early, and the
+  // service worker saves them as it saves every picture that is read (src/sw.js).
+  const picture = q('g-picture');
+  let pictureFor = '';   // the address of the picture the card now shown wants
+  const pictureReady = () => picture.complete && picture.naturalWidth > 0 && picture.currentSrc === new URL(pictureFor, location.href).href;
+  picture.addEventListener('load', () => { if (pictureReady()) picture.classList.remove('waiting'); });
+  function showPicture(address) {
+    if (address === pictureFor && picture.getAttribute('src') === address) return;   // the same card, drawn again
+    pictureFor = address;
+    picture.classList.add('waiting');
+    picture.src = address;
+    // A picture already in memory (fetched ahead) is there at once, with no frame of ground.
+    if (pictureReady()) picture.classList.remove('waiting');
+  }
+  let ahead = [];   // the pictures being fetched ahead, held so that they are not dropped half-way
+  function fetchAhead(list) {
+    ahead = list.filter(Boolean).slice(0, 2).map(card => {
+      const kept = ahead.find(image => image.dataset.card === card.id);
+      if (kept) return kept;
+      const image = new Image(); image.dataset.card = card.id; image.src = card.picture;
+      return image;
+    });
+  }
+
   // The round's layer: the card, and what can be done with it ------------------------------------------
   function drawCard() {
     q('g-look').hidden = !look;
@@ -389,17 +425,17 @@
       q('g-bar').style.width = '0';
       q('g-undo').disabled = true;
       q('g-card').classList.remove('front', 'finished');
-      q('g-ask').hidden = true; q('g-picture').hidden = false; q('g-end').hidden = true;
+      q('g-ask').hidden = true; q('g-frame').hidden = false; q('g-end').hidden = true;
       q('g-back').hidden = false; q('g-back').setAttribute('aria-hidden', 'false');
       q('g-front').hidden = true; q('g-marks').hidden = true; q('g-done').hidden = true; q('g-keys').hidden = true;
-      if (q('g-picture').getAttribute('src') !== look.picture) q('g-picture').src = look.picture;
-      q('g-picture').alt = look.english; q('g-picture').lang = 'en';
+      showPicture(look.picture);
+      picture.alt = look.english; picture.lang = 'en';
       drawBack(look);
-      [-1, 1].forEach(by => { new Image().src = listed[(at + by + listed.length) % listed.length].picture; });
+      fetchAhead([1, -1].map(by => listed[(at + by + listed.length) % listed.length]));
       polish(game);
       return;
     }
-    q('g-picture').removeAttribute('lang');
+    picture.removeAttribute('lang');
     const card = round.current, record = card ? rec(card.id) : null;
     const position = round.size - round.queue.length;
     q('g-pos').textContent = round.done ? '' : `${position} / ${round.size}`;
@@ -411,7 +447,7 @@
     // The back is drawn with the front and kept unseen until the card is turned, so that the card
     // is as tall before as after (Jack, 20 November 2026: "Melius esset sī altitūdō chartae nōn mūtāret cum eam premam").
     q('g-ask').hidden = !card; q('g-ask').setAttribute('aria-hidden', String(round.shown));
-    q('g-picture').hidden = !card;
+    q('g-frame').hidden = !card;
     q('g-back').hidden = !card; q('g-back').setAttribute('aria-hidden', String(!round.shown));
     q('g-end').hidden = !round.done;
     q('g-front').hidden = !card || round.shown;
@@ -420,11 +456,11 @@
     q('g-keys').hidden = round.done;
     if (card) {
       // The picture's description does not give the answer away.
-      if (q('g-picture').getAttribute('src') !== card.picture) q('g-picture').src = card.picture;
-      q('g-picture').alt = t('picture');
+      showPicture(card.picture);
+      picture.alt = t('picture');
       drawBack(card);
-      // The next card's picture is fetched while this one is looked at.
-      if (round.queue[0]) new Image().src = round.queue[0].picture;
+      // The next two cards' pictures are fetched while this one is looked at.
+      fetchAhead(round.queue);
     } else {
       // Between rounds: what the round came to, what is waiting, and the names marked Again.
       const state = standing();
@@ -437,6 +473,12 @@
   function drawBack(card) {
     q('g-la').replaceChildren(el('b', '', card.head), card.latin.slice(card.head.length));
     q('g-la').classList.toggle('long', card.head.includes(' '));
+    // A second Latin word for the same thing (Jack, 20 November 2026: one card for coma and
+    // capillus, the second word on its back), under the first, quietly, with the vocabulary
+    // practice's label for its line of other Latin words; the word itself is Latin, so that the
+    // display options reach it.
+    q('g-also').hidden = !card.also;
+    q('g-also').replaceChildren(...(card.also ? [t('also') + ' ', el('span', '', card.also, 'la')] : []));
     // The scientific name follows the English one (Jack, 20 November 2026: "inclūdāmus nōmina
     // scientifica … jūxtā nōmina Anglica … Hōc modō discēmus discrīmina"), in italic, as zoology and
     // botany write it. Its language is la-x-taxon: Latin to a screen reader, which reads the

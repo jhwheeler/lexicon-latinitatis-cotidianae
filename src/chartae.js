@@ -7,7 +7,8 @@
   // that the other subjects (plants and their parts first, later tools and actions) go into this
   // one exercise, in which the reader chooses the subjects and the kinds, with one spacing and one
   // progress for every card, not into games of their own. The body followed that day, and food and
-  // drink and then household things on 21 November 2026.
+  // drink and then household things on 21 November 2026, and clothes and craftsmen's tools, each a
+  // subject of its own at Jack's wish, on 21 and 22 November 2026.
   //
   // The page is built as the vocabulary practice is (src/practice.js): a lobby with the deck, the
   // meter and a Start button, and a round played in a layer over the whole page, with the same
@@ -77,7 +78,12 @@
   // household things came in (21 November 2026) the subject's Latin name, Rēs domesticae, was taken
   // from the words of Jack's request (Rēs familiārēs domesticaeque); its English name (Household
   // things) and the names of its four kinds (Supellex, Culīna et mēnsa, Balneum et munditia, Domus,
-  // in data/chartae.json) are the coordinating session's wording, for Jack's review.
+  // in data/chartae.json) are the coordinating session's wording, for Jack's review. When clothes and
+  // craftsmen's tools came in (21 and 22 November 2026) the subjects' Latin names, Vestīmenta and
+  // Īnstrūmenta fabrīlia, were Jack's words ("Vestīmenta et īnstrūmenta fabrīlia sunt alia genera
+  // quae nōbīs sunt inclūdenda"); their English names (Clothes, Craftsmen's tools) and the names of
+  // their eight kinds (Vestēs, Calceāmenta, Ōrnātus, Acus et fīlum; Ferrāmenta, Mēnsūrae, Clāvī et
+  // cochleae, Māteria, in data/chartae.json) are the coordinating session's wording, for Jack's review.
   const one =(n, singular, many) => `${number(n)} ${n === 1 ? singular : many}`;
   const T = {
     la: {

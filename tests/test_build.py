@@ -926,13 +926,15 @@ class BuildTests(unittest.TestCase):
         self.assertEqual([card['id'] for card in data['cards']], [card['id'] for card in source['cards']])
         self.assertEqual([group['id'] for group in data['groups']], [group['id'] for group in source['groups']])
         self.assertEqual([(group['id'], group['subject']) for group in data['groups']], [(group['id'], group['subject']) for group in source['groups']])
-        self.assertEqual([subject['id'] for subject in data['subjects']][:5], ['animalia', 'plantae', 'corpus', 'cibi', 'domestica'])
+        subjects = ['animalia', 'plantae', 'corpus', 'cibi', 'domestica', 'vestimenta', 'fabrilia']
+        self.assertEqual([subject['id'] for subject in data['subjects']][:7], subjects)
         subject_of = {group['id']: group['subject'] for group in data['groups']}
-        of = {key: sum(subject_of[card['group']] == key for card in data['cards']) for key in ('animalia', 'plantae', 'corpus', 'cibi', 'domestica')}
+        of = {key: sum(subject_of[card['group']] == key for card in data['cards']) for key in subjects}
         # The description is made from the data, for every subject with cards, with the serial comma.
-        self.assertIn(f'content="{len(data["cards"])} picture cards of animals, plants, the body, food and drink, and household things '
-                      f'({of["animalia"]} of animals, {of["plantae"]} of plants, {of["corpus"]} of the body, '
-                      f'{of["cibi"]} of food and drink, and {of["domestica"]} of household things) with their Latin names',
+        self.assertIn(f'content="{len(data["cards"])} picture cards of animals, plants, the body, food and drink, household things, '
+                      f'clothes, and craftsmen&#x27;s tools ({of["animalia"]} of animals, {of["plantae"]} of plants, {of["corpus"]} of the body, '
+                      f'{of["cibi"]} of food and drink, {of["domestica"]} of household things, {of["vestimenta"]} of clothes, '
+                      f'and {of["fabrilia"]} of craftsmen&#x27;s tools) with their Latin names',
                       outputs['chartae.html'])
         self.assertEqual(builder.english_series(['a']), 'a')
         self.assertEqual(builder.english_series(['a', 'b']), 'a and b')
@@ -1260,6 +1262,47 @@ class BuildTests(unittest.TestCase):
             self.write('data/chartae.json', data)
             with self.subTest(name=name), self.assertRaisesRegex(ValueError, message):
                 builder.build_site(self.root)
+
+    def check_subject_of_things(self, subject, kinds, shared):
+        """A subject of things (no food, no bears, no scientific name), its kinds in order, and the
+        cards of it that share a Latin word with a card of another subject, each under its own id."""
+        cards = self.read('data/chartae.json')
+        self.assertIn(subject, cards['subjects'])
+        self.assertEqual([group['id'] for group in cards['groups'] if group['subject'] == subject['id']], kinds)
+        things = [card for card in cards['cards'] if card['group'] in kinds]
+        self.assertTrue(things and all('food' not in card and 'bears' not in card and 'scientific' not in card for card in things))
+        by_id = {card['id']: card for card in cards['cards']}
+        for here, there in shared:
+            with self.subTest(card=here):
+                self.assertIn(by_id[here]['group'], kinds)
+                self.assertNotIn(by_id[there]['group'], kinds)
+                self.assertEqual(by_id[here]['latin'].split(',')[0], by_id[there]['latin'].split(',')[0])
+        builder.build_site(self.root)
+        index = cards['cards'].index(things[0])
+        for name, value, message in (('food', 'Carne.', 'food \\(what an animal eats\\) is only for a card of an animal'),
+                                     ('bears', 'Glandēs.', 'bears \\(what a plant bears\\) is only for a card of a plant')):
+            data = json.loads(json.dumps(cards))
+            data['cards'][index][name] = value
+            self.write('data/chartae.json', data)
+            with self.subTest(name=name), self.assertRaisesRegex(ValueError, message):
+                builder.build_site(self.root)
+
+    def test_clothes_are_a_sixth_subject_of_their_own(self):
+        """Clothes came in as a subject of their own, not a kind of the household things (Jack,
+        21 November 2026: "Vestīmenta et īnstrūmenta fabrīlia sunt alia genera quae nōbīs sunt
+        inclūdenda, sed haud ut opīnor domesticīs addenda"), with four kinds in order. A pocket is
+        loculus, as a drawer of the household things is, each under its own id."""
+        self.check_subject_of_things({'id': 'vestimenta', 'latin': 'Vestīmenta', 'english': 'Clothes'},
+                                     ['vestes', 'calceamenta', 'ornatus', 'sartoria'],
+                                     (('loculusvestis', 'loculus'),))
+
+    def test_craftsmens_tools_are_a_seventh_subject_of_their_own(self):
+        """Craftsmen's tools came in as a subject of their own (Jack, 21 November 2026, as for the
+        clothes), with four kinds in order. A screw is cochlea, as the snail is, and a ladder scālae,
+        as the stairs of the household things are, each under its own id."""
+        self.check_subject_of_things({'id': 'fabrilia', 'latin': 'Īnstrūmenta fabrīlia', 'english': "Craftsmen's tools"},
+                                     ['ferramenta', 'mensurae', 'clavi', 'materia'],
+                                     (('cochleaferrea', 'cochlea'), ('scalaefabri', 'scalae')))
 
     def test_practice_cards_are_one_per_record_with_kind_and_sources(self):
         sense = self.record('sheet-of-paper')

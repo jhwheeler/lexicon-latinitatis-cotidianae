@@ -26,11 +26,17 @@ in the ratio is kept almost whole. Look at the result (it is small) and run agai
 focus or box if the subject is cut off or small.
 
 Every request sends a User-Agent that names the lexicon and its repository, waits at least a second
-after the one before, and backs off and tries again on HTTP 429 (for up to --wait minutes, default
-1) or a server error. Commons limits requests by address, and this machine's address is shared: when
-the API still answers 429 after that, the script reads the same data from the file's own page (its
-machine-readable licence, licensetpl_short and licensetpl_link, and its Author field) and takes the
-picture through Special:FilePath, which were answering when the API was not (20 November 2026). A file
+after the one before, and backs off and tries again on HTTP 429 or a server error for as long as its
+patience allows; a 429 whose wait (Retry-After, or the doubling delay) would run past that patience
+gives up at once instead of sleeping through it (21 November 2026). Commons limits requests by
+address, and this machine's address is shared. The API is given at most 20 seconds (API_PATIENCE),
+or less if --wait says less: when it still answers 429, the script reads the same data from the
+file's own page (its machine-readable licence, licensetpl_short and licensetpl_link, and its Author
+field), which was answering when the API was not (20 and 21 November 2026). The picture is taken
+first from its rendition's own address on upload.wikimedia.org, worked out from the MD5 of the
+file's name (upload_address), which answered on 21 November 2026 when the API and Special:FilePath
+had both answered 429 for hours; failing that, from the address the API gave or Special:FilePath,
+and last through Special:FilePath, patiently (at least ten minutes). A file
 under several licences (the Getty's carry "No restrictions" and CC0) is taken under the first its page
 states that the builder takes; the API names only one, so a refusal there is checked against the page.
 A drawing in SVG is taken as Wikimedia's PNG rendering of it, 1920 pixels wide, whatever its nominal size;
@@ -38,6 +44,7 @@ a transparent ground becomes white (21 November 2026). The proxy of the
 environment is used as it is configured; TLS is always verified.
 """
 import argparse
+import hashlib
 import html
 import importlib.util
 import io
@@ -121,11 +128,12 @@ def write_previews(root=ROOT):
 
 
 _last = [0.0]
-PATIENCE = [60]   # seconds to keep trying the API while it answers 429 (--wait), before the file's page is read instead
+PATIENCE = [60]   # seconds of patience with 429 (--wait); the API is given no more than API_PATIENCE of it
+API_PATIENCE = 20   # seconds given to the API at most, whatever --wait says: when it answers 429 the file's own page has the same data and was answering (21 November 2026)
 
 
 class Busy(Exception):
-    """The API kept answering 429 for longer than --wait allows."""
+    """Commons kept answering 429 for longer than the patience given, or asked for a wait that would run past it."""
 
 
 def get(url, patience=None):
@@ -134,7 +142,10 @@ def get(url, patience=None):
     Commons limits requests by address, and the address may be shared: on 20 November 2026 it
     answered 429 to every request for a quarter of an hour at a time, to curl and Python alike,
     and then let a few through. So a 429 is waited out (Retry-After, or a wait that doubles up to
-    three minutes) for as long as --wait allows; other failures are tried a few times."""
+    three minutes) for as long as the patience given allows (--wait, unless the caller gives its
+    own); a 429 whose wait would run past that patience raises Busy at once, so that the caller can
+    try another way instead of sleeping through it (21 November 2026). Other failures are tried a
+    few times."""
     delay, deadline, failures = 10.0, time.monotonic() + (PATIENCE[0] if patience is None else patience), 0
     while True:
         wait = _last[0] + PAUSE - time.monotonic()
@@ -146,16 +157,17 @@ def get(url, patience=None):
             with urllib.request.urlopen(request, timeout=60) as response:
                 return response.read()
         except urllib.error.HTTPError as error:
-            busy = error.code == 429 or error.code >= 500
-            if error.code >= 500:
-                failures += 1
-            if error.code == 429 and time.monotonic() > deadline:
-                raise Busy(url)
-            if not busy or failures >= TRIES or time.monotonic() > deadline:
-                raise SystemExit(f'Commons answered {error.code} {error.reason} for {url}'
-                                 + (' (still busy after the time --wait allows)' if busy else ''))
-            after = error.headers.get('Retry-After', '')
+            if error.code != 429 and error.code < 500:
+                raise SystemExit(f'Commons answered {error.code} {error.reason} for {url}')
+            after = (error.headers or {}).get('Retry-After', '')
             pause = max(float(after) if after.isdigit() else 0, delay)
+            if error.code == 429:
+                if time.monotonic() + pause > deadline:
+                    raise Busy(url)   # the patience is spent, or the wait would run past it: no use sleeping through it
+            else:
+                failures += 1
+                if failures >= TRIES or time.monotonic() > deadline:
+                    raise SystemExit(f'Commons answered {error.code} {error.reason} for {url} (still busy after the patience allowed)')
             print(f'Commons answered {error.code}; trying again in {pause:.0f} s', file=sys.stderr)
             time.sleep(pause)
             delay = min(delay * 2, 180)
@@ -187,7 +199,7 @@ def file_info(name):
     title = 'File:' + re.sub(r'^(?:File|Image):', '', name.strip()).replace('_', ' ')
     query = urllib.parse.urlencode({'action': 'query', 'format': 'json', 'formatversion': 2, 'titles': title, 'prop': 'imageinfo',
                                     'iiprop': 'url|size|extmetadata', 'iiurlwidth': RENDITION})
-    pages = json.loads(get(f'{API}?{query}'))['query']['pages']
+    pages = json.loads(get(f'{API}?{query}', patience=min(PATIENCE[0], API_PATIENCE)))['query']['pages']
     page = pages[0]
     if page.get('missing') or not page.get('imageinfo'):
         raise SystemExit(f'There is no file {title} on Wikimedia Commons')
@@ -267,6 +279,21 @@ def check_licence(info, table):
     raise SystemExit('\n'.join(reasons) or f'Refused: {info["title"]} states no licence. Read the file’s page: {info["page"]}')
 
 
+def upload_address(title, width):
+    """The address of a file's rendition of a standard width on upload.wikimedia.org, worked out from
+    the file's name as MediaWiki stores it (the first two letters of the name's MD5 are its folders).
+    On 21 November 2026 this host answered when the API and Special:FilePath both answered 429.
+    The name is encoded as MediaWiki encodes it there (PHP's rawurlencode): everything but letters,
+    digits, and -_.~, so a comma is %2C and brackets %28 and %29, as the file pages' own links to
+    their renditions show (read 22 November 2026). An SVG's rendition is a PNG, and its name says so."""
+    name = title.removeprefix('File:').strip().replace(' ', '_')
+    digest = hashlib.md5(name.encode('utf-8')).hexdigest()
+    quoted = urllib.parse.quote(name, safe='')
+    lower = name.lower()
+    tail = quoted + ('.png' if lower.endswith('.svg') else '.jpg' if lower.endswith(('.tif', '.tiff')) else '')
+    return f'https://upload.wikimedia.org/wikipedia/commons/thumb/{digest[0]}/{digest[:2]}/{quoted}/{width}px-{tail}'
+
+
 def rendition_width(title, size):
     """The width of the rendition to ask for: the widest standard width narrower than the file, or
     the full width for an SVG, which Wikimedia renders at any width; None if the file is too narrow.
@@ -319,7 +346,9 @@ def main():
     parser.add_argument('--focus', metavar='X,Y', help='the point to centre the crop on, as fractions of the width and height (default 0.5,0.5)')
     parser.add_argument('--box', metavar='L,T,R,B', help='crop to this box first, as fractions of the width and height')
     parser.add_argument('--wait', type=float, default=1, metavar='MINUTES',
-                        help='how long to keep trying the API while it answers 429 before reading the file’s page instead (default 1); the page and the download wait as long')
+                        help='patience with HTTP 429 (default 1): the API is given at most 20 seconds of it before the file’s own page is read '
+                             'instead; the page is given at least 5 minutes, the rendition’s own address 1 minute, the second way to the '
+                             'picture at most 1 minute, and the last, Special:FilePath, at least 10')
     args = parser.parse_args()
     PATIENCE[0] = args.wait * 60
     if args.previews:
@@ -372,8 +401,15 @@ def main():
         raise SystemExit(f'{info["title"]} is only {info["size"][0]} pixels wide: too small for a card (the narrowest rendition taken is {STANDARD_WIDTHS[-1]})')
     by_path = ('https://commons.wikimedia.org/wiki/Special:FilePath/'
                + urllib.parse.quote(info['title'].removeprefix('File:').replace(' ', '_'), safe="(),'!*-._~:;@$") + f'?width={width}')
+    # The rendition's own address on upload.wikimedia.org is tried first: on 21 November 2026 it
+    # answered while the API and Special:FilePath answered 429 for hours. If it fails in any way (a
+    # guessed address may be wrong), the address the API gave or Special:FilePath, then Special:FilePath
+    # patiently.
     try:
-        data = get(by_path if width != RENDITION else info['url'])
+        try:
+            data = get(upload_address(info['title'], width), patience=60)
+        except (Busy, SystemExit):
+            data = get(by_path if width != RENDITION else info['url'], patience=min(PATIENCE[0], 60))
     except Busy:
         print('The download is refused (429): taking the picture through Special:FilePath, patiently', file=sys.stderr)
         data = get(by_path, patience=max(PATIENCE[0], 600))

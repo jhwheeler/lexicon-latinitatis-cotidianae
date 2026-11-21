@@ -96,6 +96,61 @@ class FetchPictureTest(unittest.TestCase):
             self.assertEqual(fetch.write_previews(root), (['una.jpg'], []))
             self.assertTrue(fetch.preview_is_current(root / 'src/chartae/una.jpg', root))
 
+    def test_the_renditions_own_address_is_worked_out_from_the_files_name(self):
+        """upload_address (21 November 2026): the folders are the first one and two hex digits of the
+        MD5 of the name with underscores, and the name is encoded as MediaWiki encodes it there. The
+        Dürer and Eiffel addresses are those the files' own pages link to (read 22 November 2026)."""
+        self.assertEqual(fetch.upload_address('File:A small cup of coffee.JPG', 330),
+                         'https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/330px-A_small_cup_of_coffee.JPG')
+        self.assertEqual(fetch.upload_address('A small cup of coffee.JPG', 330), fetch.upload_address('File:A small cup of coffee.JPG', 330))
+        # A comma and a letter outside ASCII are percent-encoded, the letter as UTF-8.
+        name = 'Albrecht_D%C3%BCrer_-_Hare%2C_1502_-_Google_Art_Project.jpg'
+        self.assertEqual(fetch.upload_address('File:Albrecht Dürer - Hare, 1502 - Google Art Project.jpg', 1280),
+                         f'https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/{name}/1280px-{name}')
+        # So are brackets.
+        name = 'Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg'
+        self.assertEqual(fetch.upload_address('File:Tour Eiffel Wikimedia Commons (cropped).jpg', 960),
+                         f'https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/{name}/960px-{name}')
+        # An SVG's rendition is a PNG: ".png" is added to the name of the rendition, not of the file.
+        import hashlib
+        digest = hashlib.md5('Brain_human_lateral_view.svg'.encode()).hexdigest()
+        self.assertEqual(fetch.upload_address('File:Brain human lateral view.svg', 1920),
+                         f'https://upload.wikimedia.org/wikipedia/commons/thumb/{digest[0]}/{digest[:2]}/'
+                         'Brain_human_lateral_view.svg/1920px-Brain_human_lateral_view.svg.png')
+
+    def test_a_429_whose_wait_runs_past_the_patience_gives_up_at_once(self):
+        """get (21 November 2026): a 429 asking for a wait longer than the patience left raises Busy at
+        once, without sleeping; one asking for a wait within it is waited out and the request made again."""
+        import email.message, io, urllib.error
+        from unittest import mock
+
+        def busy(after):
+            headers = email.message.Message()
+            headers['Retry-After'] = str(after)
+            return urllib.error.HTTPError('https://example.org/x', 429, 'Too Many Requests', headers, None)
+
+        url = 'https://upload.wikimedia.org/x.jpg'
+        with mock.patch.object(fetch.urllib.request, 'urlopen', side_effect=[busy(3600)]) as opened, \
+             mock.patch.object(fetch.time, 'sleep') as slept:
+            with self.assertRaises(fetch.Busy):
+                fetch.get(url, patience=60)
+        self.assertEqual(opened.call_count, 1)
+        self.assertFalse([call for call in slept.call_args_list if call.args[0] > fetch.PAUSE])
+        # Within the patience: the wait is slept (the clock does not move, since sleep is a stand-in) and the answer read.
+        with mock.patch.object(fetch.urllib.request, 'urlopen', side_effect=[busy(15), io.BytesIO(b'picture')]) as opened, \
+             mock.patch.object(fetch.time, 'sleep') as slept:
+            self.assertEqual(fetch.get(url, patience=60), b'picture')
+        self.assertEqual(opened.call_count, 2)
+        self.assertIn(15.0, [call.args[0] for call in slept.call_args_list])
+        # With no patience left even the shortest wait is too long; another error is not Busy.
+        with mock.patch.object(fetch.urllib.request, 'urlopen', side_effect=[busy(0)]), mock.patch.object(fetch.time, 'sleep'):
+            with self.assertRaises(fetch.Busy):
+                fetch.get(url, patience=0)
+        missing = urllib.error.HTTPError(url, 404, 'Not Found', email.message.Message(), None)
+        with mock.patch.object(fetch.urllib.request, 'urlopen', side_effect=[missing]), mock.patch.object(fetch.time, 'sleep'):
+            with self.assertRaisesRegex(SystemExit, '404'):
+                fetch.get(url, patience=60)
+
     def test_the_crop_is_the_largest_piece_in_the_ratio_about_the_focus(self):
         ratio = fetch.WIDTH / fetch.HEIGHT
         for size in ((1920, 1280), (1920, 2880), (1920, 900)):

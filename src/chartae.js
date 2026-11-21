@@ -6,7 +6,8 @@
   // entry in the lexicon links to it. The cards were animals at first; the same day Jack decided
   // that the other subjects (plants and their parts first, later tools and actions) go into this
   // one exercise, in which the reader chooses the subjects and the kinds, with one spacing and one
-  // progress for every card, not into games of their own.
+  // progress for every card, not into games of their own. The body followed that day, and food and
+  // drink on 21 November 2026.
   //
   // The page is built as the vocabulary practice is (src/practice.js): a lobby with the deck, the
   // meter and a Start button, and a round played in a layer over the whole page, with the same
@@ -67,6 +68,10 @@
   // Truncus, Bracchium et manus, Crūs et pēs, Intus) were the coordinating session's wording, in
   // data/chartae.json, for Jack's review; the label of a card's second Latin word ("also": Item: /
   // Also:) is the vocabulary practice's own label for its line of other Latin words, which is Jack's.
+  // When food and drink came in (21 November 2026) the subject's Latin name, Cibī, was the word of
+  // Jack's request; its English name (Food and drink) and the names of its six kinds (Pānis et lība,
+  // Fercula, Lac et ōva, Carō, Condīmenta et dulcia, Pōtiōnēs, in data/chartae.json) are the
+  // coordinating session's wording, for Jack's review.
   const one = (n, singular, many) => `${number(n)} ${n === 1 ? singular : many}`;
   const T = {
     la: {

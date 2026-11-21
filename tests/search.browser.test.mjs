@@ -21,7 +21,9 @@ const GAP_GAMES = readdirSync(new URL('../src/lacunae/', import.meta.url)).filte
   .map(name => JSON.parse(readFileSync(new URL(`../src/lacunae/${name}`, import.meta.url), 'utf-8')))
   .sort((a, b) => a.order - b.order)
   .map(game => ({ file: game.file, first: game.rounds[0].id, prefix: game.prefix, name: game.name }));
-const overflows = () => page.evaluate(() => document.documentElement.scrollWidth > innerWidth);
+// A picture of the picture cards, with or without the version its address carries (chartae/<id>.jpg?v=…).
+const PICTURE_URL = /\/chartae\/[^/?]+\.jpg(\?[^/]*)?$/;
+const overflows = () =>page.evaluate(() => document.documentElement.scrollWidth > innerWidth);
 // A preference saved on one page is read by the next.
 const settle = () => page.waitForTimeout(200);
 
@@ -264,7 +266,7 @@ test('the lexicon is kept on the device: it opens and searches offline, as an ap
   await app.waitForLoadState('networkidle');
   // The picture cards' pictures are fetched once their page has been opened, and the page says when they are all there.
   await app.goto(pageUrl('chartae.html'));
-  await app.locator('#c-offline:not([hidden])').waitFor();
+  await app.locator('#c-offline[data-state="saved"]').waitFor();
   await context.setOffline(true);
   await app.goto(pageUrl('index.html?q=pyjama'));
   await app.waitForFunction(() => /matching/.test(document.getElementById('results').textContent));
@@ -311,7 +313,7 @@ test('the picture cards\' pictures stay on the device however many pages are rea
   await app.evaluate(() => navigator.serviceWorker.ready);
   await app.waitForFunction(() => navigator.serviceWorker.controller);
   await app.goto(pageUrl('chartae.html'));
-  await app.locator('#c-offline:not([hidden])').waitFor();
+  await app.locator('#c-offline[data-state="saved"]').waitFor();
   const saved = () => app.evaluate(async () => {
     const paths = (await (await caches.open('lexicon-pages')).keys()).map(key => new URL(key.url).pathname);
     return { pictures: paths.filter(path => /\/chartae\/[^/]+$/.test(path)).sort(), pages: paths.filter(path => !/\/chartae\/[^/]+$/.test(path)) };
@@ -336,7 +338,7 @@ test('the picture cards\' pictures stay on the device however many pages are rea
   assert.deepEqual(now.pictures.filter(path => !path.endsWith('/gone.jpg')), cards, 'and no picture was cleared away');
   // The cards' page removes the picture of the card that is gone, and offline every card has its picture.
   await app.goto(pageUrl('chartae.html'));
-  await app.locator('#c-offline:not([hidden])').waitFor();
+  await app.locator('#c-offline[data-state="saved"]').waitFor();
   await app.waitForFunction(async () => !(await (await caches.open('lexicon-pages')).match(new URL('chartae/gone.jpg', location.href).pathname)));
   await context.setOffline(true);
   await app.reload();
@@ -350,6 +352,157 @@ test('the picture cards\' pictures stay on the device however many pages are rea
     return failed;
   });
   assert.deepEqual(broken, [], 'every picture is shown offline');
+  await context.close();
+});
+
+test('the picture cards save the round’s pictures first, then the deck’s, then the rest; a failure pauses the saving and does not end it', async () => {
+  // Jack, 21 November 2026, on 4G: a new card of the body with its picture's place empty, "Saepe sīc
+  // fit". The saving fetched the pictures in the order of the file, animals first, and stopped at the
+  // first failure. Every picture the page fetches itself (the saving does; the pictures shown and
+  // fetched ahead are <img> elements and are not counted here) is logged, with whether the picture of
+  // the card shown was there by then; the first fetch of one picture fails.
+  const context = await browser.newContext({ viewport: { width: 390, height: 800 } });
+  const app = await context.newPage();
+  const images = [];   // pictures asked for by <img> elements (the card shown, those fetched ahead, the list's tiles)
+  context.on('request', request => { if (!request.serviceWorker() && request.resourceType() === 'image' && /\/chartae\/[^/]+\.jpg$/.test(new URL(request.url()).pathname)) images.push(request.url()); });
+  await app.addInitScript(() => {
+    const original = window.fetch;
+    const failOnce = new Set(JSON.parse(localStorage.getItem('test-fail-once') || '[]'));
+    window.testFetched = [];
+    window.fetch = function (input, ...rest) {
+      const path = new URL(typeof input === 'string' ? input : input.url, location.href).pathname;
+      if (/\/chartae\/[^/]+\.jpg$/.test(path)) {
+        const dialog = document.getElementById('p-game'), picture = document.getElementById('g-picture');
+        window.testFetched.push({ path, shownThere: !dialog || !dialog.open || picture.complete });
+        if (failOnce.delete(path)) return Promise.reject(new TypeError('refused for the test'));
+      }
+      return original.call(this, input, ...rest);
+    };
+  });
+  await app.goto(url);
+  await app.evaluate(() => navigator.serviceWorker.ready);
+  await app.waitForFunction(() => navigator.serviceWorker.controller);
+  const data = await app.evaluate(async () => {
+    const text = await (await fetch('assets/chartae-data.js')).text();
+    return JSON.parse(text.slice(text.indexOf('{'), text.lastIndexOf('}') + 1));
+  });
+  const path = card => new URL(card.picture, pageUrl('')).pathname;
+  const listed = data.subjects.flatMap(subject => data.groups.filter(group => group.subject === subject.id).flatMap(group => data.cards.filter(card => card.group === group.id)));
+  const food = data.cards.filter(card => data.groups.find(group => group.id === card.group).subject === 'cibi');
+  const round = food.slice(-12), deck = food.filter(card => !round.includes(card)), failing = path(deck[0]);
+  assert.ok(deck.length > 2);
+  // A round of food and drink is in progress, open, and the deck is food and drink.
+  await app.evaluate(([roundIds, failingPath]) => {
+    localStorage.setItem('lexicon-practice-lang', 'en');
+    localStorage.setItem('lexicon-chartae-deck', JSON.stringify({ subjects: ['cibi'], groups: [] }));
+    localStorage.setItem('lexicon-chartae-round', JSON.stringify({ queue: roundIds.slice(1), current: roundIds[0], shown: false, done: false, got: 0, again: 0,
+      missed: [], size: roundIds.length, last: roundIds[0], undo: null, open: true, at: Date.now() }));
+    localStorage.setItem('test-fail-once', JSON.stringify([failingPath]));
+  }, [round.map(card => card.id), failing]);
+  await app.goto(pageUrl('chartae.html'));
+  await app.locator('#p-game[open]').waitFor();
+  // While it saves, the line under Start says how far it has got, and does not move as it counts.
+  const line = app.locator('#c-offline');
+  await app.locator('#c-offline[data-state="saving"]').waitFor({ timeout: 30000 });
+  const sample = () => app.evaluate(() => {
+    const node = document.getElementById('c-offline'), done = node.querySelector('.c-done');
+    return { text: node.textContent, done: done.getBoundingClientRect().width, line: node.getBoundingClientRect().height, number: Number(done.textContent.replace(/,/g, '')) };
+  });
+  const early = await sample();
+  assert.match(early.text, new RegExp(`^Saving the pictures: [\\d,]+ of ${data.cards.length.toLocaleString('en')}\\.$`));
+  await app.waitForFunction(([before]) => {
+    const done = document.querySelector('#c-offline .c-done');
+    return !done || Number(done.textContent.replace(/,/g, '')) >= Math.max(before + 1, 100);
+  }, [early.number], { timeout: 60000 });
+  const later = await sample().catch(() => null);
+  if (later && /^Saving/.test(later.text)) {
+    assert.ok(later.number > early.number);
+    assert.deepEqual([later.done, later.line], [early.done, early.line], 'the count keeps its width, and the line its height');
+  }
+  // In Latin too.
+  await app.locator('#p-game').evaluate(dialog => dialog.close());
+  await app.locator('#p-lang button[data-lang="la"]').click();
+  const latin = await line.textContent();
+  assert.ok(/^Imāginēs servantur: [\d,]+ ex [\d,]+\.$/.test(latin) || latin === 'Imāginēs in hōc apparātū servātae sunt: sine rēte quoque lūdere licet.', latin);
+  await app.locator('#p-lang button[data-lang="en"]').click();
+  // The list of every card, closed, asks for no picture when it is drawn again in the other language
+  // (until 21 November 2026 its tiles set src before loading="lazy", and every change of language fetched all of them).
+  await app.waitForTimeout(500);
+  assert.ok(images.length <= 3, `only the card shown and the two fetched ahead are asked for by images, not ${images.length}`);
+  // The failure did not end the saving: after a pause it went on, and every picture is saved.
+  await app.locator('#c-offline[data-state="saved"]').waitFor({ timeout: 120000 });
+  assert.equal(await line.textContent(), 'The pictures are saved on this device: the game also works offline.');
+  const log = await app.evaluate(() => window.testFetched);
+  const paths = log.map(entry => entry.path);
+  assert.deepEqual(log.filter(entry => !entry.shownThere), [], 'no fetch was begun while the picture of the card shown was on its way');
+  // The failed picture was fetched again, last, after the rest; nothing else was fetched twice.
+  assert.equal(paths.filter(item => item === failing).length, 2, JSON.stringify({ failing, at: paths.flatMap((item, n) => (item === failing ? [n] : [])), count: paths.length, first: paths.slice(0, 12) }));
+  assert.equal(paths.at(-1), failing);
+  assert.equal(new Set(paths).size, paths.length - 1);
+  // The order: the round's pictures, then the deck's, then the rest, the rest in the order of the list.
+  const rank = item => (round.some(card => path(card) === item) ? 0 : deck.some(card => path(card) === item) ? 1 : 2);
+  const ranks = paths.slice(0, -1).map(rank);
+  assert.deepEqual(ranks, [...ranks].sort((a, b) => a - b), 'round, deck, rest');
+  assert.ok(ranks.includes(0) && ranks.includes(1));
+  assert.equal(paths.find(item => rank(item) === 2), path(listed.find(card => rank(path(card)) === 2)));
+  assert.equal(paths.find(item => rank(item) === 1), failing, 'the first of the deck failed, and the saving went on with the next');
+  // Every picture is saved, those of the round's first cards by their own <img> elements.
+  const saved = await app.evaluate(async () => (await (await caches.open('lexicon-pages')).keys()).map(key => new URL(key.url).pathname));
+  assert.deepEqual(data.cards.map(path).filter(item => !saved.includes(item)), []);
+  await context.close();
+});
+
+test('a saved picture is shown from the device without asking the network; a picture taken again is fetched under its new address, and the old ones are cleared', async () => {
+  // The coordinating session's decision (21 November 2026): the worker had fetched a saved picture
+  // afresh each time it was shown. Now a saved picture is answered from the cache alone, and the
+  // address in the card data carries the picture's version, so that a new file has a new address.
+  const context = await browser.newContext({ viewport: { width: 390, height: 800 } });
+  const app = await context.newPage();
+  const address = text => { const at = new URL(text, pageUrl('')); return at.pathname + at.search; };
+  const network = [];   // the pictures the service worker asked of the network
+  context.on('request', request => { if (request.serviceWorker() && PICTURE_URL.test(request.url())) network.push(address(request.url())); });
+  const kept = () => app.evaluate(async () => (await (await caches.open('lexicon-pages')).keys())
+    .map(key => { const at = new URL(key.url); return at.pathname + at.search; }).filter(path => /\/chartae\//.test(path)).sort());
+  await app.goto(url);
+  await app.evaluate(() => navigator.serviceWorker.ready);
+  await app.waitForFunction(() => navigator.serviceWorker.controller);
+  await app.goto(pageUrl('chartae.html'));
+  await app.locator('#c-offline[data-state="saved"]').waitFor({ timeout: 120000 });
+  const cards = await app.evaluate(() => window.lexiconChartae.cards.map(card => card.picture));
+  const taurus = cards.find(picture => picture.startsWith('chartae/taurus.jpg'));
+  assert.match(taurus, /^chartae\/taurus\.jpg\?v=[0-9a-f]{8}$/);
+  assert.deepEqual(await kept(), cards.map(address).sort(), 'every picture is saved under its address with its version');
+  // Saved pictures shown again, in the list's card and after a reload, ask nothing of the network.
+  network.length = 0;
+  await app.goto(url);   // (from chartae.html itself, the address with #taurus would only change the hash)
+  await app.goto(pageUrl('chartae.html#taurus'));
+  await app.locator('#p-game[open]').waitFor();
+  const shown = () => app.waitForFunction(() => getComputedStyle(document.getElementById('g-picture')).visibility === 'visible');
+  await shown();
+  await app.locator('#g-forth').click(); await shown();
+  await app.locator('#g-prev').click(); await shown();
+  await app.reload();
+  await app.locator('#p-game[open]').waitFor();
+  await shown();
+  await app.locator('#c-offline[data-state="saved"]').waitFor({ timeout: 30000 });
+  await app.waitForTimeout(500);
+  assert.deepEqual(network, [], 'no picture was fetched again');
+  // The bull's picture is taken again: the card data gives it a new version. A picture saved under a
+  // plain address (before versions) is there too. The new version is fetched once; the old ones go.
+  await app.evaluate(async () => { await (await caches.open('lexicon-pages')).put(new URL('chartae/canis.jpg', location.href).pathname, new Response('old')); });
+  await app.addInitScript(() => {
+    let data;
+    Object.defineProperty(window, 'lexiconChartae', { configurable: true, get: () => data,
+      set: value => { value.cards.find(card => card.id === 'taurus').picture = 'chartae/taurus.jpg?v=00000000'; data = value; } });
+  });
+  await app.goto(pageUrl('chartae.html'));
+  await app.locator('#c-offline[data-state="saved"]').waitFor({ timeout: 60000 });
+  // The clearing follows the line that says all are saved.
+  await app.waitForFunction(async count => (await (await caches.open('lexicon-pages')).keys()).filter(key => /\/chartae\//.test(key.url)).length === count, cards.length);
+  assert.deepEqual(network, [address('chartae/taurus.jpg?v=00000000')], 'only the new version is fetched');
+  const now = await kept();
+  assert.deepEqual(now.filter(path => path.includes('/taurus.')), [address('chartae/taurus.jpg?v=00000000')], 'the old version is cleared');
+  assert.equal(now.length, cards.length, 'and no plain address is left');
   await context.close();
 });
 
@@ -3297,13 +3450,19 @@ test('the picture cards: a new card never shows the last card’s picture, and t
     assert.ok(check(), what);
   };
   const state = () => page.evaluate(() => {
-    const picture = document.getElementById('g-picture');
+    const picture = document.getElementById('g-picture'), preview = document.getElementById('g-preview');
     return { src: new URL(picture.getAttribute('src'), location.href).pathname, current: picture.currentSrc ? new URL(picture.currentSrc).pathname : '',
-      visible: getComputedStyle(picture).visibility === 'visible', loaded: picture.complete && picture.naturalWidth === 720 };
+      visible: getComputedStyle(picture).visibility === 'visible', loaded: picture.complete && picture.naturalWidth === 720,
+      preview: preview.getAttribute('src'), previewShown: getComputedStyle(preview).visibility === 'visible' && preview.complete && preview.naturalWidth === 144 };
   });
+  // Since 21 November 2026 the picture's place shows the card's preview, from the card data, until the picture has come.
+  const previewShown = path => page.waitForFunction(expected => {
+    const preview = document.getElementById('g-preview'), card = window.lexiconChartae.cards.find(item => new URL(item.picture, location.href).pathname === expected);
+    return preview.getAttribute('src') === 'data:image/jpeg;base64,' + card.preview && getComputedStyle(preview).visibility === 'visible' && preview.naturalWidth === 144;
+  }, path);
   const boxes = async () => [await page.locator('#g-card').boundingBox(), await page.locator('#g-frame').boundingBox()];
   await openChartae();
-  await page.route('**/chartae/*.jpg', pictures);
+  await page.route(PICTURE_URL, pictures);
   try {
     await startRound();
     const paths = await page.evaluate(() => Object.fromEntries(window.lexiconChartae.cards.map(card => [card.id, new URL(card.picture, location.href).pathname])));
@@ -3312,29 +3471,36 @@ test('the picture cards: a new card never shows the last card’s picture, and t
     await until(() => [first, second, third].every(path => requested.includes(path)), 'the first picture and the next two are requested');
     await page.waitForTimeout(200);
     assert.deepEqual([...new Set(requested)].sort(), [first, second, third].sort(), 'no more than two are fetched ahead');
-    // While its file has not come, the picture's place is the empty ground, and the card still works.
+    // While its file has not come, the picture is unseen and its preview fills its place; the card still works.
+    await previewShown(first);
     let now = await state();
     assert.equal(now.src, first);
     assert.equal(now.visible, false);
+    const previewBox = await page.locator('#g-preview').boundingBox(), frameBox = await page.locator('#g-frame').boundingBox();
+    assert.ok(previewBox.width >= frameBox.width && previewBox.height >= frameBox.height, 'the preview covers the frame');
     await page.locator('#g-show').click();
     await page.locator('#g-got').click();
-    // The second card is on screen at once, and the picture shown is not the first card's: it is unseen until its own file loads.
+    // The second card is on screen at once, with its own preview; the picture shown is not the first card's: it is unseen until its own file loads.
+    await previewShown(second);
     now = await state();
     assert.equal(now.src, second);
     assert.equal(now.visible, false, 'the picture waits for its own file');
     const waiting = await boxes();
-    // A late load of the first picture does not show on the second card.
+    // A late load of the first picture does not show on the second card, whose preview stays.
     await release(first);
     await page.waitForTimeout(300);
     now = await state();
     assert.equal(now.src, second);
     assert.equal(now.visible, false, 'a late load of an earlier picture is not shown');
-    // The second card's file comes: its picture shows, and the card has kept its height.
+    await previewShown(second);
+    // The second card's file comes: its picture shows, over the preview, and the card has kept its height.
     await release(second);
     await page.waitForFunction(() => getComputedStyle(document.getElementById('g-picture')).visibility === 'visible');
     now = await state();
     assert.deepEqual([now.src, now.current, now.loaded], [second, second, true]);
     assert.deepEqual(await boxes(), waiting, 'the card keeps its height while the picture comes');
+    const shown = await page.evaluate(() => { const box = document.getElementById('g-frame').getBoundingClientRect(); return document.elementFromPoint(box.x + box.width / 2, box.y + box.height / 2).id; });
+    assert.equal(shown, 'g-picture', 'the full picture lies over the preview');
     // The third card's picture was fetched ahead; once it is there, the change to it is instant.
     await until(() => requested.includes(fourth), 'the fourth picture is fetched ahead');
     await release(third);
@@ -3343,7 +3509,7 @@ test('the picture cards: a new card never shows the last card’s picture, and t
     await page.locator('#g-got').click();
     now = await state();
     assert.deepEqual([now.src, now.current, now.visible], [third, third, true], 'a picture fetched ahead shows at once');
-    // A picture that fails leaves the ground (no broken image), and the card can still be shown and marked.
+    // A picture that fails leaves its preview (no broken image), and the card can still be shown and marked.
     failing.add(fourth);
     for (const item of held.filter(entry => entry.path === fourth)) { held.splice(held.indexOf(item), 1); await item.route.abort().catch(() => {}); }
     await page.waitForTimeout(200);
@@ -3352,13 +3518,15 @@ test('the picture cards: a new card never shows the last card’s picture, and t
     await page.waitForTimeout(300);
     now = await state();
     assert.deepEqual([now.src, now.visible], [fourth, false]);
+    // Its preview stays: the card has its cue with no picture at all.
+    await previewShown(fourth);
     await page.locator('#g-show').click();
     assert.equal(await page.locator('#g-la').isVisible(), true);
     await page.locator('#g-got').click();
     assert.equal((await state()).src, fifth);
     assert.equal(await page.locator('#g-pos').textContent(), '5 / 12');
   } finally {
-    await page.unroute('**/chartae/*.jpg', pictures);
+    await page.unroute(PICTURE_URL, pictures);
     for (const item of held.splice(0)) await item.route.continue().catch(() => {});
   }
 });
@@ -3454,8 +3622,10 @@ test('the picture cards: Latin unless English is chosen, a deck by kind, every c
   await page.locator('#c-groups button[data-group=""]').click();
   assert.deepEqual((await deckCount()).slice(0, 1), [total]);
   // Every card, to look through: closed, it fetches no picture; open, each kind has its cards, with the way to the entry.
-  assert.equal(await page.locator('#c-gallery img').count(), total);
-  assert.equal(await page.locator('#c-gallery img:not([loading="lazy"])').count(), 0);
+  // (Each tile also has its preview, from the card data: a data: address, which fetches nothing.)
+  assert.equal(await page.locator('#c-gallery img.c-full').count(), total);
+  assert.equal(await page.locator('#c-gallery img.c-full:not([loading="lazy"])').count(), 0);
+  assert.equal(await page.locator('#c-gallery img.c-preview').evaluateAll(nodes => nodes.filter(n => n.getAttribute('src').startsWith('data:image/jpeg;base64,')).length), total);
   await page.locator('#c-all > summary').click();
   assert.equal(await page.locator('#c-gallery .c-group').count(), shownKinds.length);
   assert.equal(await page.locator('#c-gallery h2.c-subject').count(), new Set(shownKinds.map(group => group.subject)).size);
@@ -3562,14 +3732,14 @@ test('the picture cards: a line of subjects narrows the kinds and the deck, the 
   const offered = () => page.locator('#c-groups button').evaluateAll(nodes => nodes.map(n => n.dataset.group));
   await openChartae(true, null);
   assert.equal(await page.locator('#c-subjects-h').textContent(), 'Rēs');
-  // Four subjects since food and drink came in (21 November 2026; the body on 20 November), each with its count.
-  assert.deepEqual(await page.locator('#c-subjects button > span:first-child').allTextContents(), ['Omnia', 'Animālia', 'Plantae', 'Corpus', 'Cibī']);
-  assert.deepEqual(await page.locator('#c-subjects button > span:first-child').evaluateAll(nodes => nodes.map(n => n.lang)), ['', 'la', 'la', 'la', 'la']);
+  // Five subjects since household things came in (21 November 2026, after food and drink the same day; the body on 20 November), each with its count.
+  assert.deepEqual(await page.locator('#c-subjects button > span:first-child').allTextContents(), ['Omnia', 'Animālia', 'Plantae', 'Corpus', 'Cibī', 'Rēs domesticae']);
+  assert.deepEqual(await page.locator('#c-subjects button > span:first-child').evaluateAll(nodes => nodes.map(n => n.lang)), ['', 'la', 'la', 'la', 'la', 'la']);
   await page.locator('#p-lang button[data-lang="en"]').click();
   assert.equal(await page.locator('#c-subjects-h').textContent(), 'Subjects');
-  assert.deepEqual(await page.locator('#c-subjects button > span:first-child').allTextContents(), ['All', 'Animals', 'Plants', 'The body', 'Food and drink']);
-  assert.deepEqual(await page.locator('#c-subjects .count').allTextContents(), [data.cards.length, of('animalia').length, of('plantae').length, of('corpus').length, of('cibi').length].map(String));
-  assert.ok(of('corpus').length > 0 && of('cibi').length > 0);
+  assert.deepEqual(await page.locator('#c-subjects button > span:first-child').allTextContents(), ['All', 'Animals', 'Plants', 'The body', 'Food and drink', 'Household things']);
+  assert.deepEqual(await page.locator('#c-subjects .count').allTextContents(), [data.cards.length, of('animalia').length, of('plantae').length, of('corpus').length, of('cibi').length, of('domestica').length].map(String));
+  assert.ok(of('corpus').length > 0 && of('cibi').length > 0 && of('domestica').length > 0);
   assert.deepEqual(await pressed('#c-subjects'), ['']);
   // A kind with no cards yet has no button, and the subjects line sits above the kinds.
   assert.deepEqual(await offered(), ['', ...shownKinds.map(group => group.id)]);
@@ -3594,6 +3764,9 @@ test('the picture cards: a line of subjects narrows the kinds and the deck, the 
   assert.deepEqual(await pressed('#c-subjects'), ['animalia', 'plantae', 'corpus']);
   assert.deepEqual(await pressed('#c-groups'), ['arbores']);
   await page.locator('#c-subjects button[data-subject="cibi"]').click();
+  assert.deepEqual(await pressed('#c-subjects'), ['animalia', 'plantae', 'corpus', 'cibi']);
+  assert.deepEqual(await pressed('#c-groups'), ['arbores']);
+  await page.locator('#c-subjects button[data-subject="domestica"]').click();
   assert.deepEqual(await pressed('#c-subjects'), ['']);
   assert.deepEqual(await pressed('#c-groups'), ['arbores']);
   assert.equal((await deckCount())[0], inKind('arbores'));
@@ -3604,7 +3777,8 @@ test('the picture cards: a line of subjects narrows the kinds and the deck, the 
   assert.equal((await deckCount())[0], of('animalia').length);
   await page.locator('#c-subjects button[data-subject="plantae"]').click();
   await page.locator('#c-subjects button[data-subject="corpus"]').click();
-  await page.locator('#c-subjects button[data-subject="cibi"]').click();   // all four: none
+  await page.locator('#c-subjects button[data-subject="cibi"]').click();
+  await page.locator('#c-subjects button[data-subject="domestica"]').click();   // all five: none
   assert.deepEqual(await pressed('#c-subjects'), ['']);
   await page.locator('#c-subjects button[data-subject="plantae"]').click();
   await page.locator('#c-groups button[data-group="partes"]').click();

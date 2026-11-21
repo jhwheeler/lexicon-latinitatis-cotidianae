@@ -926,13 +926,13 @@ class BuildTests(unittest.TestCase):
         self.assertEqual([card['id'] for card in data['cards']], [card['id'] for card in source['cards']])
         self.assertEqual([group['id'] for group in data['groups']], [group['id'] for group in source['groups']])
         self.assertEqual([(group['id'], group['subject']) for group in data['groups']], [(group['id'], group['subject']) for group in source['groups']])
-        self.assertEqual([subject['id'] for subject in data['subjects']][:4], ['animalia', 'plantae', 'corpus', 'cibi'])
+        self.assertEqual([subject['id'] for subject in data['subjects']][:5], ['animalia', 'plantae', 'corpus', 'cibi', 'domestica'])
         subject_of = {group['id']: group['subject'] for group in data['groups']}
-        of = {key: sum(subject_of[card['group']] == key for card in data['cards']) for key in ('animalia', 'plantae', 'corpus', 'cibi')}
+        of = {key: sum(subject_of[card['group']] == key for card in data['cards']) for key in ('animalia', 'plantae', 'corpus', 'cibi', 'domestica')}
         # The description is made from the data, for every subject with cards, with the serial comma.
-        self.assertIn(f'content="{len(data["cards"])} picture cards of animals, plants, the body, and food and drink '
+        self.assertIn(f'content="{len(data["cards"])} picture cards of animals, plants, the body, food and drink, and household things '
                       f'({of["animalia"]} of animals, {of["plantae"]} of plants, {of["corpus"]} of the body, '
-                      f'and {of["cibi"]} of food and drink) with their Latin names',
+                      f'{of["cibi"]} of food and drink, and {of["domestica"]} of household things) with their Latin names',
                       outputs['chartae.html'])
         self.assertEqual(builder.english_series(['a']), 'a')
         self.assertEqual(builder.english_series(['a', 'b']), 'a and b')
@@ -941,8 +941,8 @@ class BuildTests(unittest.TestCase):
         linked = 0
         for card in data['cards']:
             with self.subTest(card=card['id']):
-                self.assertEqual(card['picture'], f'chartae/{card["id"]}.jpg')
-                self.assertEqual(outputs[card['picture']][:3], b'\xff\xd8\xff')   # a JPEG
+                self.assertRegex(card['picture'], rf'^chartae/{card["id"]}\.jpg\?v=[0-9a-f]{{8}}$')
+                self.assertEqual(outputs[card['picture'].split('?')[0]][:3], b'\xff\xd8\xff')   # a JPEG
                 self.assertTrue(card['latin'].startswith(card['latin'].split(',')[0]) and ',' in card['latin'])
                 if 'record' in card:
                     linked += 1
@@ -954,7 +954,7 @@ class BuildTests(unittest.TestCase):
                 self.assertTrue(image['author'] and image['page'].startswith('https://commons.wikimedia.org/wiki/File:'))
         self.assertGreater(linked, len(data['cards']) * .9)
         # The pictures are the cards' and no others, and none is saved when the lexicon installs.
-        self.assertEqual(sorted(path for path in outputs if path.startswith('chartae/')), sorted(card['picture'] for card in data['cards']))
+        self.assertEqual(sorted(path for path in outputs if path.startswith('chartae/')), sorted(card['picture'].split('?')[0] for card in data['cards']))
         files = json.loads(re.search(r'const FILES = (\[.*?\]);', outputs['sw.js'])[1])
         self.assertFalse(any(path.startswith('chartae/') for path in files))
         # A sentence taken from the readers is shown as one of ours, and the readers are not named.
@@ -1001,6 +1001,83 @@ class BuildTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'is missing'):
             builder.build_site(self.root)
 
+    def test_every_picture_card_carries_the_preview_of_its_own_picture(self):
+        """Jack, 21 November 2026, on 4G, of a card shown with its picture's place empty: "Saepe sīc
+        fit"; and "Cōnsilium habeō: imāginēs in indice ipsō inclūdere possumus". Every card carries a
+        small preview of its picture in the card data, made from the picture as it is now (its JPEG
+        comment names the picture by a hash); the builder refuses a card whose preview is missing or
+        was made from another picture, and a preview that no card uses."""
+        import base64
+        outputs = builder.build_site(self.root)
+        script = outputs['assets/chartae-data.js']
+        data = json.loads(script[script.index('{'):script.rindex('}') + 1])
+        for card in data['cards']:
+            with self.subTest(card=card['id']):
+                preview = base64.b64decode(card['preview'], validate=True)
+                self.assertEqual(preview, (self.root / builder.PREVIEWS / f'{card["id"]}.jpg').read_bytes())
+                self.assertEqual(preview[:3], b'\xff\xd8\xff')
+                self.assertLessEqual(len(preview), builder.PREVIEW_MOST)
+                self.assertEqual(builder.jpeg_comment(preview), builder.preview_mark(outputs[card['picture'].split('?')[0]]))
+                # Its size, from the frame header (SOF0 or SOF2): 102 high and 144 wide.
+                at = re.search(rb'\xff[\xc0\xc2]', preview).start()
+                self.assertEqual((int.from_bytes(preview[at + 7:at + 9], 'big'), int.from_bytes(preview[at + 5:at + 7], 'big')), builder.PREVIEW_SIZE)
+        # The previews are not pictures of the site: they are in the card data, which the worker saves when it installs.
+        self.assertFalse(any('chartae-previews' in path for path in outputs))
+        files = json.loads(re.search(r'const FILES = (\[.*?\]);', outputs['sw.js'])[1])
+        self.assertIn('assets/chartae-data.js', files)
+        first = data['cards'][0]['id']
+        preview = self.root / builder.PREVIEWS / f'{first}.jpg'
+        kept = preview.read_bytes()
+        # A preview made from another picture (the picture was fetched again, the preview not) is refused.
+        preview.write_bytes((self.root / builder.PREVIEWS / f'{data["cards"][1]["id"]}.jpg').read_bytes())
+        with self.assertRaisesRegex(ValueError, f'its preview data/chartae-previews/{first}.jpg was not made from the picture'):
+            builder.build_site(self.root)
+        # So is a picture changed under its preview.
+        preview.write_bytes(kept)
+        picture = self.root / f'src/chartae/{first}.jpg'
+        picture.write_bytes(picture.read_bytes() + b'\0')
+        with self.assertRaisesRegex(ValueError, 'was not made from the picture .* --previews'):
+            builder.build_site(self.root)
+        # A missing preview is refused, and says how to make it.
+        preview.unlink()
+        with self.assertRaisesRegex(ValueError, f'its preview data/chartae-previews/{first}.jpg is missing \\(run python3 scripts/fetch_picture.py --previews\\)'):
+            builder.build_site(self.root)
+        # A preview that no card uses is refused.
+        preview.write_bytes(kept)
+        (self.root / f'src/chartae/{first}.jpg').write_bytes(outputs[f'chartae/{first}.jpg'])
+        (self.root / builder.PREVIEWS / 'stray.jpg').write_bytes(kept)
+        with self.assertRaisesRegex(ValueError, 'chartae-previews has files that no card uses'):
+            builder.build_site(self.root)
+
+    def test_a_pictures_address_carries_its_version_and_changes_with_its_file(self):
+        """The service worker answers a saved picture from the device without asking the network
+        (21 November 2026), so a picture's address in the card data carries a version taken from its
+        file: a picture taken again under the same id has a new address, an unchanged one keeps its own."""
+        def load():
+            script = builder.build_site(self.root)['assets/chartae-data.js']
+            return {card['id']: card['picture'] for card in json.loads(script[script.index('{'):script.rindex('}') + 1])['cards']}
+        before = load()
+        first, second = list(before)[:2]
+        picture = self.root / f'src/chartae/{first}.jpg'
+        self.assertEqual(before[first], f'chartae/{first}.jpg?v=' + hashlib.sha256(picture.read_bytes()).hexdigest()[:builder.PICTURE_VERSION])
+        self.assertEqual(builder.picture_address(first, picture.read_bytes()), before[first])
+        # A new file for the first card (here the second card's picture, with its preview): a new address for it, the same for the rest.
+        picture.write_bytes((self.root / f'src/chartae/{second}.jpg').read_bytes())
+        shutil.copy(self.root / builder.PREVIEWS / f'{second}.jpg', self.root / builder.PREVIEWS / f'{first}.jpg')
+        after = load()
+        self.assertNotEqual(after[first], before[first])
+        self.assertEqual(after[first], f'chartae/{first}.jpg?v=' + before[second].split('?v=')[1])
+        self.assertEqual({key: value for key, value in after.items() if key != first}, {key: value for key, value in before.items() if key != first})
+
+    def test_a_previews_jpeg_comment_is_read_from_the_segments_before_the_image(self):
+        """The preview check reads the JPEG's comment without Pillow (the build has none)."""
+        segment = lambda marker, body: b'\xff' + marker + (len(body) + 2).to_bytes(2, 'big') + body
+        jpeg = b'\xff\xd8' + segment(b'\xe0', b'JFIF\0\1\1') + segment(b'\xfe', b'lexicon-preview of sha256:ab') + b'\xff\xda' + b'\0' * 8
+        self.assertEqual(builder.jpeg_comment(jpeg), 'lexicon-preview of sha256:ab')
+        self.assertEqual(builder.jpeg_comment(b'\xff\xd8' + segment(b'\xe0', b'JFIF') + b'\xff\xda\xff\xfe\0\4ab'), '')
+        self.assertEqual(builder.jpeg_comment(b'GIF89a'), '')
+        self.assertEqual(builder.preview_mark(b'x'), 'lexicon-preview of sha256:' + hashlib.sha256(b'x').hexdigest())
+
     def test_the_picture_cards_have_subjects_and_kinds_and_food_only_for_animals(self):
         """The picture cards are one game for every subject (Jack, 20 November 2026): each kind
         belongs to a subject; an animal's card says what it eats (food), a plant's may say what it
@@ -1016,6 +1093,7 @@ class BuildTests(unittest.TestCase):
             data['cards'].append(card)
             return data
         shutil.copy(self.root / f'src/chartae/{animal["id"]}.jpg', self.root / 'src/chartae/planta-probata.jpg')
+        shutil.copy(self.root / builder.PREVIEWS / f'{animal["id"]}.jpg', self.root / builder.PREVIEWS / 'planta-probata.jpg')
         # A plant's card with what it bears, and an empty kind, are taken; the data says both.
         data = plant(bears='Glandēs.')
         data['groups'].append({'id': 'vacua', 'subject': 'plantae', 'latin': 'Vacua', 'english': 'Empty'})
@@ -1148,6 +1226,33 @@ class BuildTests(unittest.TestCase):
         self.assertTrue(food and all('food' not in card and 'bears' not in card and 'scientific' not in card for card in food))
         builder.build_site(self.root)
         index = cards['cards'].index(food[0])
+        for name, value, message in (('food', 'Carne.', 'food \\(what an animal eats\\) is only for a card of an animal'),
+                                     ('bears', 'Glandēs.', 'bears \\(what a plant bears\\) is only for a card of a plant')):
+            data = json.loads(json.dumps(cards))
+            data['cards'][index][name] = value
+            self.write('data/chartae.json', data)
+            with self.subTest(name=name), self.assertRaisesRegex(ValueError, message):
+                builder.build_site(self.root)
+
+    def test_household_things_are_a_fifth_subject_without_scientific_names(self):
+        """Household things came in as a fifth subject (Jack, 21 November 2026: "Postquam chartās
+        partium corporum perfēceris, perge quaesō: 1. Cibī 2. Rēs familiārēs domesticaeque"), with
+        four kinds in order: its cards take neither food nor bears, and carry no scientific name.
+        Two of its cards share a Latin word with a card of another subject, each under its own id."""
+        cards = self.read('data/chartae.json')
+        self.assertIn({'id': 'domestica', 'latin': 'Rēs domesticae', 'english': 'Household things'}, cards['subjects'])
+        kinds = ['supellex', 'culina', 'balneum', 'domus']
+        self.assertEqual([group['id'] for group in cards['groups'] if group['subject'] == 'domestica'], kinds)
+        things = [card for card in cards['cards'] if card['group'] in kinds]
+        self.assertTrue(things and all('food' not in card and 'bears' not in card and 'scientific' not in card for card in things))
+        by_id = {card['id']: card for card in cards['cards']}
+        for here, there in (('patellavas', 'patella'), ('spongiaculinae', 'spongia')):
+            with self.subTest(card=here):
+                self.assertIn(by_id[here]['group'], kinds)
+                self.assertNotIn(by_id[there]['group'], kinds)
+                self.assertEqual(by_id[here]['latin'].split(',')[0], by_id[there]['latin'].split(',')[0])
+        builder.build_site(self.root)
+        index = cards['cards'].index(things[0])
         for name, value, message in (('food', 'Carne.', 'food \\(what an animal eats\\) is only for a card of an animal'),
                                      ('bears', 'Glandēs.', 'bears \\(what a plant bears\\) is only for a card of a plant')):
             data = json.loads(json.dumps(cards))

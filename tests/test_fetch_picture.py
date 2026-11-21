@@ -57,6 +57,45 @@ class FetchPictureTest(unittest.TestCase):
         self.assertEqual(fetch.rendition_width('File:Heart.png', (1000, 800)), 960)
         self.assertIsNone(fetch.rendition_width('File:Small.jpg', (800, 600)))
 
+    def test_a_file_exactly_a_standard_width_takes_the_next_smaller_one(self):
+        """Asked for its own width, Wikimedia sends the unscaled original, which it refuses to this
+        machine (21 November 2026): a file 1920 pixels wide is asked for at 1280, one 1280 wide at
+        960. The narrowest standard width stays the least a file may have."""
+        self.assertEqual(fetch.rendition_width('File:Plate.jpg', (1920, 1280)), 1280)
+        self.assertEqual(fetch.rendition_width('File:Plate.jpg', (1921, 1280)), 1920)
+        self.assertEqual(fetch.rendition_width('File:Plate.jpg', (1280, 960)), 960)
+        self.assertEqual(fetch.rendition_width('File:Plate.jpg', (960, 640)), 960)
+        self.assertIsNone(fetch.rendition_width('File:Plate.jpg', (959, 640)))
+        self.assertEqual(fetch.rendition_width('File:Plate.svg', (1920, 1280)), fetch.RENDITION)
+
+    def test_the_previews_are_written_from_the_pictures_and_kept_up_to_date(self):
+        """Every picture has a preview, data/chartae-previews/<id>.jpg (21 November 2026), written with the
+        picture and by --previews for the rest: 144 by 102, naming the picture it was made from, so that
+        the builder can tell a preview older than its picture. Needs Pillow, as fetching a picture does."""
+        try:
+            from PIL import Image
+        except ImportError:
+            self.skipTest('Pillow is not installed')
+        import io, shutil, tempfile
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            (root / 'src/chartae').mkdir(parents=True)
+            for name in ('una.jpg', 'altera.jpg'):
+                Image.new('RGB', (720, 511), (200, 120, 40) if name == 'una.jpg' else (40, 90, 160)).save(root / 'src/chartae' / name, 'JPEG', quality=80)
+            (root / builder.PREVIEWS).mkdir(parents=True)
+            (root / builder.PREVIEWS / 'gone.jpg').write_bytes(b'x')
+            self.assertEqual(fetch.write_previews(root), (['altera.jpg', 'una.jpg'], ['gone.jpg']))
+            preview = (root / builder.PREVIEWS / 'una.jpg').read_bytes()
+            self.assertEqual(Image.open(io.BytesIO(preview)).size, builder.PREVIEW_SIZE)
+            self.assertEqual(builder.jpeg_comment(preview), builder.preview_mark((root / 'src/chartae/una.jpg').read_bytes()))
+            self.assertLessEqual(len(preview), builder.PREVIEW_MOST)
+            # Nothing to do the second time; a picture replaced gets a new preview, and only it.
+            self.assertEqual(fetch.write_previews(root), ([], []))
+            shutil.copy(root / 'src/chartae/altera.jpg', root / 'src/chartae/una.jpg')
+            self.assertFalse(fetch.preview_is_current(root / 'src/chartae/una.jpg', root))
+            self.assertEqual(fetch.write_previews(root), (['una.jpg'], []))
+            self.assertTrue(fetch.preview_is_current(root / 'src/chartae/una.jpg', root))
+
     def test_the_crop_is_the_largest_piece_in_the_ratio_about_the_focus(self):
         ratio = fetch.WIDTH / fetch.HEIGHT
         for size in ((1920, 1280), (1920, 2880), (1920, 900)):

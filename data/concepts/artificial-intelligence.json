@@ -1,0 +1,74 @@
+{
+  "id": "artificial-intelligence",
+  "english": "artificial intelligence",
+  "pos": "noun",
+  "also": [
+    "AI (the field)",
+    "machine intelligence"
+  ],
+  "domain": "computatra",
+  "terms": [
+    {
+      "latin": "intellegentia artificiālis, intellegentiae artificiālis f.",
+      "status": "recommended",
+      "period": "modern",
+      "gloss": "artificial intelligence",
+      "evidence": [
+        "Vicipaedia, the discussion page of its article <span lang=\"la\">Intellegentia artificialis</span>",
+        "Quint. 5.1.1: <span lang=\"la\">probātiōnēs artificiālēs</span>, proofs made by the art (Lewis &amp; Short s.v. <span lang=\"la\">artificiālis</span>)"
+      ],
+      "comment": "The name in current Latin use, matching the modern languages; Vicipaedia’s article is so titled, which is weak evidence by itself. <span lang=\"la\">artificiālis</span> is Quintilian’s word for what is made by the rules of an art, as against what is given. Chosen over Cicero’s <span lang=\"la\">artificiōsus</span> (next) because that word also means skilful, so that <span lang=\"la\">intellegentia artificiōsa</span> could be heard as “skilful intelligence”. In talk the thing one speaks to is plainly <span lang=\"la\">māchina</span> (see AI, a system one talks to).",
+      "notes": [
+        "ai-name"
+      ]
+    },
+    {
+      "latin": "intellegentia artificiōsa",
+      "status": "alternative",
+      "period": "ours",
+      "gloss": "intelligence made by art, not by nature",
+      "evidence": [
+        "Cic. Div. 1.72: <span lang=\"la\">ea genera dīvīnandī nōn nātūrālia, sed artificiōsa dīcuntur</span> (Lewis &amp; Short s.v. <span lang=\"la\">artificiōsus</span>)",
+        "M-O s.v. artificial, man-made: <span lang=\"la\">artificiosus, a, um</span> (Egger)"
+      ],
+      "comment": "Cicero’s word for what comes from art as opposed to nature, and Egger’s for things man-made (an artificial leg, an artificial satellite). Its first sense is skilful, accomplished (Lewis &amp; Short)."
+    }
+  ],
+  "notes": {
+    "ai-name": {
+      "html": "On Vicipaedia’s discussion page (2009–2015) the editors weighed <span lang=\"la\">artificiōsus</span>, which the classical dictionaries give for “artificial”, against <span lang=\"la\">artificiālis</span>, defended as a Neo-Latin term needed for a modern idea; <span lang=\"la\">prūdentia artis</span> and <span lang=\"la\">intellegentia arte facta</span> were also put forward. A report of the article quotes its first line as <span lang=\"la\">Intellegentia artificialis, vel intellegentia ficticia, est subdisciplina informatica</span>. Morgan–Owens lists “artificial intelligence” under “artificial, man-made” without giving Latin for it."
+    }
+  },
+  "phrases": [
+    {
+      "latin": "Pater programmata intellegentiae artificiālis compōnit.",
+      "english": "Dad writes artificial intelligence programs.",
+      "source": "composed"
+    },
+    {
+      "latin": "Num māchina vērē intellegit? Id etiam doctī ambigunt.",
+      "english": "Does the machine really understand? Even learned people argue about that.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "ai-system",
+    "intelligence",
+    "machine-learning",
+    "ai-model",
+    "computer",
+    "program",
+    "robot"
+  ],
+  "sources": [
+    "<a href=\"https://la.wikipedia.org/wiki/Disputatio:Intellegentia_artificialis\" rel=\"noopener noreferrer\" target=\"_blank\">Vicipaedia: Disputatio: Intellegentia artificialis</a>",
+    "<a href=\"https://www.matmedia.it/lintelligenza-artificiale-in-lingua-latina/\" rel=\"noopener noreferrer\" target=\"_blank\">MatMedia, “L’Intelligenza Artificiale in lingua latina!”</a>",
+    "<a href=\"https://logeion.uchicago.edu/artificialis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: artificialis</a> · <a href=\"https://logeion.uchicago.edu/artificiosus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: artificiosus</a> · <a href=\"https://logeion.uchicago.edu/intellegentia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: intellegentia</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. artificial, man-made."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-21",
+    "by": "Claude"
+  }
+}

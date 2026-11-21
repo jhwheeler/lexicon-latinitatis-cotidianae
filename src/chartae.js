@@ -7,7 +7,7 @@
   // that the other subjects (plants and their parts first, later tools and actions) go into this
   // one exercise, in which the reader chooses the subjects and the kinds, with one spacing and one
   // progress for every card, not into games of their own. The body followed that day, and food and
-  // drink on 21 November 2026.
+  // drink and then household things on 21 November 2026.
   //
   // The page is built as the vocabulary practice is (src/practice.js): a lobby with the deck, the
   // meter and a Start button, and a round played in a layer over the whole page, with the same
@@ -73,7 +73,11 @@
   // Fercula, Lac et ōva, Carō, Condīmenta et dulcia, Pōtiōnēs, in data/chartae.json) are the
   // coordinating session's wording, for Jack's review. When the previews came in (21 November 2026)
   // the line that says how far the saving of the pictures has got (saving: "Imāginēs servantur: 212 ex
-  // 422." / "Saving the pictures: 212 of 422.") was Claude's wording, for Jack's review.
+  // 422." / "Saving the pictures: 212 of 422.") was Claude's wording, for Jack's review. When
+  // household things came in (21 November 2026) the subject's Latin name, Rēs domesticae, was taken
+  // from the words of Jack's request (Rēs familiārēs domesticaeque); its English name (Household
+  // things) and the names of its four kinds (Supellex, Culīna et mēnsa, Balneum et munditia, Domus,
+  // in data/chartae.json) are the coordinating session's wording, for Jack's review.
   const one =(n, singular, many) => `${number(n)} ${n === 1 ? singular : many}`;
   const T = {
     la: {

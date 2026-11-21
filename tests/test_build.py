@@ -926,13 +926,13 @@ class BuildTests(unittest.TestCase):
         self.assertEqual([card['id'] for card in data['cards']], [card['id'] for card in source['cards']])
         self.assertEqual([group['id'] for group in data['groups']], [group['id'] for group in source['groups']])
         self.assertEqual([(group['id'], group['subject']) for group in data['groups']], [(group['id'], group['subject']) for group in source['groups']])
-        self.assertEqual([subject['id'] for subject in data['subjects']][:4], ['animalia', 'plantae', 'corpus', 'cibi'])
+        self.assertEqual([subject['id'] for subject in data['subjects']][:5], ['animalia', 'plantae', 'corpus', 'cibi', 'domestica'])
         subject_of = {group['id']: group['subject'] for group in data['groups']}
-        of = {key: sum(subject_of[card['group']] == key for card in data['cards']) for key in ('animalia', 'plantae', 'corpus', 'cibi')}
+        of = {key: sum(subject_of[card['group']] == key for card in data['cards']) for key in ('animalia', 'plantae', 'corpus', 'cibi', 'domestica')}
         # The description is made from the data, for every subject with cards, with the serial comma.
-        self.assertIn(f'content="{len(data["cards"])} picture cards of animals, plants, the body, and food and drink '
+        self.assertIn(f'content="{len(data["cards"])} picture cards of animals, plants, the body, food and drink, and household things '
                       f'({of["animalia"]} of animals, {of["plantae"]} of plants, {of["corpus"]} of the body, '
-                      f'and {of["cibi"]} of food and drink) with their Latin names',
+                      f'{of["cibi"]} of food and drink, and {of["domestica"]} of household things) with their Latin names',
                       outputs['chartae.html'])
         self.assertEqual(builder.english_series(['a']), 'a')
         self.assertEqual(builder.english_series(['a', 'b']), 'a and b')
@@ -1226,6 +1226,33 @@ class BuildTests(unittest.TestCase):
         self.assertTrue(food and all('food' not in card and 'bears' not in card and 'scientific' not in card for card in food))
         builder.build_site(self.root)
         index = cards['cards'].index(food[0])
+        for name, value, message in (('food', 'Carne.', 'food \\(what an animal eats\\) is only for a card of an animal'),
+                                     ('bears', 'Glandēs.', 'bears \\(what a plant bears\\) is only for a card of a plant')):
+            data = json.loads(json.dumps(cards))
+            data['cards'][index][name] = value
+            self.write('data/chartae.json', data)
+            with self.subTest(name=name), self.assertRaisesRegex(ValueError, message):
+                builder.build_site(self.root)
+
+    def test_household_things_are_a_fifth_subject_without_scientific_names(self):
+        """Household things came in as a fifth subject (Jack, 21 November 2026: "Postquam chartās
+        partium corporum perfēceris, perge quaesō: 1. Cibī 2. Rēs familiārēs domesticaeque"), with
+        four kinds in order: its cards take neither food nor bears, and carry no scientific name.
+        Two of its cards share a Latin word with a card of another subject, each under its own id."""
+        cards = self.read('data/chartae.json')
+        self.assertIn({'id': 'domestica', 'latin': 'Rēs domesticae', 'english': 'Household things'}, cards['subjects'])
+        kinds = ['supellex', 'culina', 'balneum', 'domus']
+        self.assertEqual([group['id'] for group in cards['groups'] if group['subject'] == 'domestica'], kinds)
+        things = [card for card in cards['cards'] if card['group'] in kinds]
+        self.assertTrue(things and all('food' not in card and 'bears' not in card and 'scientific' not in card for card in things))
+        by_id = {card['id']: card for card in cards['cards']}
+        for here, there in (('patellavas', 'patella'), ('spongiaculinae', 'spongia')):
+            with self.subTest(card=here):
+                self.assertIn(by_id[here]['group'], kinds)
+                self.assertNotIn(by_id[there]['group'], kinds)
+                self.assertEqual(by_id[here]['latin'].split(',')[0], by_id[there]['latin'].split(',')[0])
+        builder.build_site(self.root)
+        index = cards['cards'].index(things[0])
         for name, value, message in (('food', 'Carne.', 'food \\(what an animal eats\\) is only for a card of an animal'),
                                      ('bears', 'Glandēs.', 'bears \\(what a plant bears\\) is only for a card of a plant')):
             data = json.loads(json.dumps(cards))

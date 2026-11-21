@@ -19,6 +19,11 @@
    "id": "cibi",
    "latin": "Cibī",
    "english": "Food and drink"
+  },
+  {
+   "id": "domestica",
+   "latin": "Rēs domesticae",
+   "english": "Household things"
   }
  ],
  "groups": [
@@ -159,6 +164,30 @@
    "subject": "cibi",
    "latin": "Pōtiōnēs",
    "english": "Drinks"
+  },
+  {
+   "id": "supellex",
+   "subject": "domestica",
+   "latin": "Supellex",
+   "english": "Furniture"
+  },
+  {
+   "id": "culina",
+   "subject": "domestica",
+   "latin": "Culīna et mēnsa",
+   "english": "Kitchen and table"
+  },
+  {
+   "id": "balneum",
+   "subject": "domestica",
+   "latin": "Balneum et munditia",
+   "english": "Bath and cleaning"
+  },
+  {
+   "id": "domus",
+   "subject": "domestica",
+   "latin": "Domus",
+   "english": "The house"
   }
  ],
  "cards": [
@@ -7025,6 +7054,22 @@
    }
   },
   {
+   "id": "caro",
+   "latin": "carō, carnis f.",
+   "english": "meat",
+   "group": "carnes",
+   "line": "cavētō nē carō carnem tangat",
+   "source": "Cato Agr. 162, 1",
+   "record": "meat",
+   "image": {
+    "file": "FoodMeat.jpg",
+    "author": "Unknown photographer",
+    "licence": "Public domain",
+    "licence_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:FoodMeat.jpg"
+   }
+  },
+  {
    "id": "bubula",
    "latin": "būbula, būbulae f.",
    "english": "beef",
@@ -7150,6 +7195,23 @@
     "licence": "CC BY-SA 4.0",
     "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
     "page": "https://commons.wikimedia.org/wiki/File:Roast_topside_of_beef.jpg"
+   }
+  },
+  {
+   "id": "porcina",
+   "latin": "porcīna, porcīnae f.",
+   "also": "suilla, suillae f.",
+   "english": "pork",
+   "group": "carnes",
+   "line": "Porcīna in furnō coquitur.",
+   "source": "composed",
+   "record": "pork",
+   "image": {
+    "file": "Schweinebauch-2.jpg",
+    "author": "Rainer Zenz",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Schweinebauch-2.jpg"
    }
   },
   {
@@ -7297,6 +7359,38 @@
    }
   },
   {
+   "id": "oleum",
+   "latin": "oleum, oleī n.",
+   "english": "olive oil",
+   "group": "condimenta",
+   "line": "quam acerbissimā oleā oleum faciēs, tam oleum optimum erit",
+   "source": "Cato Agr. 65, 1",
+   "record": "olive-oil",
+   "image": {
+    "file": "Bottle of olive oil.jpg",
+    "author": "margenauer from Pixabay",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Bottle_of_olive_oil.jpg"
+   }
+  },
+  {
+   "id": "acetum",
+   "latin": "acētum, acētī n.",
+   "english": "vinegar",
+   "group": "condimenta",
+   "line": "succendunt ārdentiaque saxa īnfūsō acētō putrefaciunt",
+   "source": "Liv. XXI 37, 2",
+   "record": "vinegar",
+   "image": {
+    "file": "Balsamic vinegar (drops).jpg",
+    "author": "Andrea Levers",
+    "licence": "CC BY-SA 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Balsamic_vinegar_(drops).jpg"
+   }
+  },
+  {
    "id": "vinum",
    "latin": "vīnum, vīnī n.",
    "english": "wine",
@@ -7374,6 +7468,1514 @@
     "licence": "CC BY-SA 3.0",
     "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
     "page": "https://commons.wikimedia.org/wiki/File:Becher_Kakao_mit_Sahneh%C3%A4ubchen.JPG"
+   }
+  },
+  {
+   "id": "aqua",
+   "latin": "aqua, aquae f.",
+   "english": "water",
+   "group": "potiones",
+   "line": "haustus aquae mihi nectar erit",
+   "source": "Ov. Met. VI 356",
+   "record": "water",
+   "image": {
+    "file": "Glass of Water.JPG",
+    "author": "Jorge Barrios",
+    "licence": "Public domain",
+    "licence_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Glass_of_Water.JPG"
+   }
+  },
+  {
+   "id": "cervisia",
+   "latin": "cervisia, cervisiae f.",
+   "english": "beer",
+   "group": "potiones",
+   "line": "Et tū singulīs pōculum adde cervisiae.",
+   "source": "Schott. Conf., Dē modō sternendī mēnsam",
+   "record": "beer",
+   "image": {
+    "file": "Pilstulpe.jpg",
+    "author": "Felix Stember",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Pilstulpe.jpg"
+   }
+  },
+  {
+   "id": "mensa",
+   "latin": "mēnsa, mēnsae f.",
+   "english": "table",
+   "group": "supellex",
+   "line": "sēparātae singulīs sēdēs et sua cuique mēnsa",
+   "source": "Tac. Germ. 22, 1",
+   "record": "table",
+   "image": {
+    "file": "Dinner table side pine wood large table 2.png",
+    "author": "Kurtkaiser",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Dinner_table_side_pine_wood_large_table_2.png"
+   }
+  },
+  {
+   "id": "sella",
+   "latin": "sella, sellae f.",
+   "english": "chair",
+   "group": "supellex",
+   "line": "Sellam igitur ūnā cum pulvīnō mihi pōnī jubē.",
+   "source": "Erasm. Coll., Nova omnia, I 61",
+   "record": "chair",
+   "image": {
+    "file": "Kitchen chair made by Lübke. Germany.jpeg",
+    "author": "Ditigibt",
+    "licence": "Public domain",
+    "licence_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Kitchen_chair_made_by_L%C3%BCbke._Germany.jpeg"
+   }
+  },
+  {
+   "id": "cathedra",
+   "latin": "cathedra, cathedrae f.",
+   "english": "armchair",
+   "group": "supellex",
+   "line": "hī speculum, in cathedrā mātris ut positum fuit, puerīliter lūdentēs forte īnspexērunt",
+   "source": "Phaedr. III 8, 4–5",
+   "record": "armchair",
+   "image": {
+    "file": "Yellow upholstered armchair in IKEA Torp Uddevalla.jpg",
+    "author": "W.carter",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Yellow_upholstered_armchair_in_IKEA_Torp_Uddevalla.jpg"
+   }
+  },
+  {
+   "id": "torustomentofartus",
+   "latin": "torus tōmentō fartus, torī tōmentō fartī m.",
+   "english": "sofa",
+   "group": "supellex",
+   "line": "inde torō pater Aenēās sīc ōrsus ab altō",
+   "source": "Verg. A. II 2",
+   "record": "sofa",
+   "image": {
+    "file": "Home24sofa.jpg",
+    "author": "Lear 21",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Home24sofa.jpg"
+   }
+  },
+  {
+   "id": "scabellum",
+   "latin": "scabellum, scabellī n.",
+   "english": "stool",
+   "group": "supellex",
+   "line": "Appōne scabella, assideāmus jam",
+   "source": "Vives Exerc. 21",
+   "record": "stool",
+   "image": {
+    "file": "Vintage wooden farmers stool. Tegernsee, Bavaria, Germany.jpeg",
+    "author": "Ditigibt",
+    "licence": "Public domain",
+    "licence_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Vintage_wooden_farmers_stool._Tegernsee,_Bavaria,_Germany.jpeg"
+   }
+  },
+  {
+   "id": "sellaalta",
+   "latin": "sella alta, sellae altae f.",
+   "english": "high chair",
+   "group": "supellex",
+   "line": "Tē in sellam altam impōnam; tum cēnābimus.",
+   "source": "composed",
+   "record": "high-chair",
+   "image": {
+    "file": "Baby High Chair (50841207558).jpg",
+    "author": "ajay_suresh",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Baby_High_Chair_(50841207558).jpg"
+   }
+  },
+  {
+   "id": "lectus",
+   "latin": "lectus, lectī m.",
+   "english": "bed",
+   "group": "supellex",
+   "line": "peregrīnō labōre fessī vēnimus larem ad nostrum, dēsīderātōque acquiēscimus lectō",
+   "source": "Catull. 31, 8–10",
+   "record": "bed",
+   "image": {
+    "file": "Bedroom large double bed.jpg",
+    "author": "IFERREIRO",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Bedroom_large_double_bed.jpg"
+   }
+  },
+  {
+   "id": "cunae",
+   "latin": "cūnae, cūnārum f. pl.",
+   "english": "cot",
+   "group": "supellex",
+   "line": "cūnārum fuerās mōtor, Charidēme, meārum",
+   "source": "Mart. XI 39, 1",
+   "record": "cot",
+   "image": {
+    "file": "Baby Crib (49935766018).jpg",
+    "author": "Ajay Suresh",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Baby_Crib_(49935766018).jpg"
+   }
+  },
+  {
+   "id": "culcita",
+   "latin": "culcita, culcitae f.",
+   "english": "mattress",
+   "group": "supellex",
+   "line": "culcita in terrā jacet, ego in culcitā",
+   "source": "Sen. Ep. 87, 2",
+   "record": "mattress",
+   "image": {
+    "file": "Pillowtop-mattress.jpg",
+    "author": "Jeffrey M. Vinocur",
+    "licence": "CC BY 2.5",
+    "licence_url": "https://creativecommons.org/licenses/by/2.5/",
+    "page": "https://commons.wikimedia.org/wiki/File:Pillowtop-mattress.jpg"
+   }
+  },
+  {
+   "id": "pulvinus",
+   "latin": "pulvīnus, pulvīnī m.",
+   "english": "pillow",
+   "group": "supellex",
+   "line": "tum ego reclīnō caput in pulvīnum ac dēmittō pedēs",
+   "source": "Corder. Coll. III 42",
+   "record": "pillow",
+   "image": {
+    "file": "Pillows on a hotel bed.jpg",
+    "author": "Amin",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Pillows_on_a_hotel_bed.jpg"
+   }
+  },
+  {
+   "id": "lodix",
+   "latin": "lōdīx, lōdīcis f.",
+   "english": "blanket",
+   "group": "supellex",
+   "line": "Sine lōdīce? — Etiam. — Algēbis, nam surgis ab studiīs extenuātō corpore.",
+   "source": "Vives Exerc. 14",
+   "record": "blanket",
+   "image": {
+    "file": "Grey knitted blanket.jpg",
+    "author": "Hannah Clover",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Grey_knitted_blanket.jpg"
+   }
+  },
+  {
+   "id": "armarium",
+   "latin": "armārium, armāriī n.",
+   "english": "cupboard",
+   "group": "supellex",
+   "line": "armārium īnsertum est, quod nōn legendōs librōs sed lēctitandōs capit",
+   "source": "Plin. Ep. II 17, 8",
+   "record": "cupboard",
+   "image": {
+    "file": "American wall cupboard, c. 1820, cherry, Dayton Art Institute.JPG",
+    "author": "Wmpearl",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:American_wall_cupboard,_c._1820,_cherry,_Dayton_Art_Institute.JPG"
+   }
+  },
+  {
+   "id": "armariumloculatum",
+   "latin": "armārium loculātum, armāriī loculātī n.",
+   "english": "chest of drawers",
+   "group": "supellex",
+   "line": "In armāriō loculātō vestēs servantur.",
+   "source": "composed",
+   "record": "chest-of-drawers",
+   "image": {
+    "file": "Chest of drawers MET DP104735.jpg",
+    "author": "John Townsend",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Chest_of_drawers_MET_DP104735.jpg"
+   }
+  },
+  {
+   "id": "loculus",
+   "latin": "loculus, loculī m.",
+   "english": "drawer",
+   "group": "supellex",
+   "line": "Loculum aperī. Quid intus est?",
+   "source": "composed",
+   "record": "drawer",
+   "image": {
+    "file": "Side table drawer.jpg",
+    "author": "Aral Balkan",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Side_table_drawer.jpg"
+   }
+  },
+  {
+   "id": "arca",
+   "latin": "arca, arcae f.",
+   "also": "cista, cistae f.",
+   "english": "chest",
+   "group": "supellex",
+   "line": "arca, quod arcēbantur fūrēs ab eā clausā",
+   "source": "Varro LL V 128",
+   "record": "chest-box",
+   "image": {
+    "file": "Budapest, Hungarian National Museum, chest.jpg",
+    "author": "Dguendel",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Budapest,_Hungarian_National_Museum,_chest.jpg"
+   }
+  },
+  {
+   "id": "speculum",
+   "latin": "speculum, speculī n.",
+   "english": "mirror",
+   "group": "supellex",
+   "line": "cotīdiē, inquit, speculō vōs ūtī volō",
+   "source": "Phaedr. III 8, 14",
+   "record": "mirror",
+   "image": {
+    "file": "Modern wooden vanity with round mirror in minimalistic interior design.jpg",
+    "author": "Shixart1985",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Modern_wooden_vanity_with_round_mirror_in_minimalistic_interior_design.jpg"
+   }
+  },
+  {
+   "id": "horologium",
+   "latin": "hōrologium, hōrologiī n.",
+   "english": "clock",
+   "group": "supellex",
+   "line": "hōrologium mittam et librōs, sī erit sūdum",
+   "source": "Cic. Fam. XVI 18, 3",
+   "record": "clock",
+   "image": {
+    "file": "Wall clock quartz.jpg",
+    "author": "Sridhar Rao",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Wall_clock_quartz.jpg"
+   }
+  },
+  {
+   "id": "suscitabulum",
+   "latin": "suscitābulum, suscitābulī n.",
+   "english": "alarm clock",
+   "group": "supellex",
+   "line": "Nōndum lūcēbat, cum suscitābulum sonuit.",
+   "source": "Libellus I",
+   "record": "alarm-clock",
+   "image": {
+    "file": "Old alarm clock on the bookshelf - 50233824038.jpg",
+    "author": "Nenad Stojkovic",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Old_alarm_clock_on_the_bookshelf_-_50233824038.jpg"
+   }
+  },
+  {
+   "id": "lucerna",
+   "latin": "lucerna, lucernae f.",
+   "english": "lamp",
+   "group": "supellex",
+   "line": "lucerna post inventa, quae dicta ā lūce",
+   "source": "Varro LL V 119",
+   "record": "lamp",
+   "image": {
+    "file": "Lamp with a lampshade illuminated by sunlight.jpg",
+    "author": "LoMit",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Lamp_with_a_lampshade_illuminated_by_sunlight.jpg"
+   }
+  },
+  {
+   "id": "globuluselectricus",
+   "latin": "globulus ēlectricus, globulī ēlectricī m.",
+   "english": "light bulb",
+   "group": "supellex",
+   "line": "Globulus ēlectricus conclāve illūstrat.",
+   "source": "composed",
+   "record": "light-bulb",
+   "image": {
+    "file": "Small incandescent light bulb with standard screw (E27).jpg",
+    "author": "Jakub Kolář",
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Small_incandescent_light_bulb_with_standard_screw_(E27).jpg"
+   }
+  },
+  {
+   "id": "candela",
+   "latin": "candēla, candēlae f.",
+   "english": "candle",
+   "group": "supellex",
+   "line": "Annus est, priusquam accendās candēlam.",
+   "source": "Erasm. Coll., Herīlia, I 33",
+   "record": "candle",
+   "image": {
+    "file": "Burning candle.jpg",
+    "author": "Photos public domain.com",
+    "licence": "Public domain",
+    "licence_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Burning_candle.jpg"
+   }
+  },
+  {
+   "id": "patellavas",
+   "latin": "patella, patellae f.",
+   "english": "plate",
+   "group": "culina",
+   "line": "quamvīs lāta gerat patella rhombum, rhombus lātior est tamen patellā",
+   "source": "Mart. XIII 81, 1–2",
+   "record": "plate",
+   "image": {
+    "file": "Dinner plate (AM 2014.19.180-1).jpg",
+    "author": "Crown Lynn Potteries Ltd",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Dinner_plate_(AM_2014.19.180-1).jpg"
+   }
+  },
+  {
+   "id": "catinus",
+   "latin": "catīnus, catīnī m.",
+   "english": "bowl",
+   "group": "culina",
+   "line": "ubi omnia bene conmiscueris, in catīnum inditō, catīnum testō operītō",
+   "source": "Cato Agr. 84",
+   "record": "bowl",
+   "image": {
+    "file": "A white bowl.jpg",
+    "author": "Captain MarcusL",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:A_white_bowl.jpg"
+   }
+  },
+  {
+   "id": "calix",
+   "latin": "calix, calicis m.",
+   "english": "wine glass",
+   "group": "culina",
+   "line": "Calix vitreus facile frangitur.",
+   "source": "composed",
+   "record": "wine-glass",
+   "image": {
+    "file": "DZ6 2648 A cozy candlelit dinner setup a delicate orchid soft lamp glow and an empty wine glass waiting for the evening to begin.jpg",
+    "author": "PattayaPatrol",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:DZ6_2648_A_cozy_candlelit_dinner_setup_a_delicate_orchid_soft_lamp_glow_and_an_empty_wine_glass_waiting_for_the_evening_to_begin.jpg"
+   }
+  },
+  {
+   "id": "cochlear",
+   "latin": "cochlear, cochleāris n.",
+   "english": "spoon",
+   "group": "culina",
+   "line": "sum cocleīs habilis, sed nec minus ūtilis ōvīs",
+   "source": "Mart. XIV 121, 1",
+   "record": "spoon",
+   "image": {
+    "file": "Wheat Spoon.jpg",
+    "author": "Adanyimpex",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Wheat_Spoon.jpg"
+   }
+  },
+  {
+   "id": "furcilla",
+   "latin": "furcilla, furcillae f.",
+   "english": "fork",
+   "group": "culina",
+   "line": "Furcillā et cultrō edimus.",
+   "source": "composed",
+   "record": "fork",
+   "image": {
+    "file": "Dinner fork on white wood surface, close up.jpg",
+    "author": "Deavmi",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Dinner_fork_on_white_wood_surface,_close_up.jpg"
+   }
+  },
+  {
+   "id": "culter",
+   "latin": "culter, cultrī m.",
+   "english": "knife",
+   "group": "culina",
+   "line": "Tolle cultrum meum, quī humī dēcidit.",
+   "source": "Erasm. Coll., Conv. prof. I 88",
+   "record": "knife",
+   "image": {
+    "file": "Kyotop Kitchen Knife (46899633822).jpg",
+    "author": "Steve Hodgson",
+    "licence": "CC BY-SA 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Kyotop_Kitchen_Knife_(46899633822).jpg"
+   }
+  },
+  {
+   "id": "mappa",
+   "latin": "mappa, mappae f.",
+   "english": "napkin",
+   "group": "culina",
+   "line": "ecce in mappā alligāta habeō",
+   "source": "Petr. Sat. 66",
+   "record": "napkin",
+   "image": {
+    "file": "Red check luncheon napkin.jpg",
+    "author": "Top Napkin",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Red_check_luncheon_napkin.jpg"
+   }
+  },
+  {
+   "id": "lagoena",
+   "latin": "lagoena, lagoenae f.",
+   "english": "bottle",
+   "group": "culina",
+   "line": "intrītō cibō plēnam lagōnam posuit",
+   "source": "Phaedr. I 26, 7–8",
+   "record": "bottle",
+   "image": {
+    "file": "Clear empty glass bottle.jpg",
+    "author": "Santeri Viinamäki",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Clear_empty_glass_bottle.jpg"
+   }
+  },
+  {
+   "id": "fidelia",
+   "latin": "fidēlia, fidēliae f.",
+   "english": "jar",
+   "group": "culina",
+   "line": "mulsī congiālem plēnam faciam tibi fidēliam",
+   "source": "Plaut. Aul. 622",
+   "record": "jar",
+   "image": {
+    "file": "Mason jar family.jpg",
+    "author": "Dvortygirl",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Mason_jar_family.jpg"
+   }
+  },
+  {
+   "id": "urceolusthearius",
+   "latin": "urceolus theārius, urceolī theāriī m.",
+   "english": "teapot",
+   "group": "culina",
+   "line": "Thea ex urceolō theāriō funditur.",
+   "source": "composed",
+   "record": "teapot",
+   "image": {
+    "file": "China Teapot with Red Flowers.jpg",
+    "author": "Wallendorf Porcelain",
+    "licence": "Public domain",
+    "licence_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:China_Teapot_with_Red_Flowers.jpg"
+   }
+  },
+  {
+   "id": "caccabus",
+   "latin": "caccabus, caccabī m.",
+   "english": "cooking pot",
+   "group": "culina",
+   "line": "Piscēs in caccabum mittēs.",
+   "source": "Apic. IV 3, 1",
+   "record": "cooking-pot",
+   "image": {
+    "file": "Kochtopf Aluminium.jpg",
+    "author": "Robesware",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Kochtopf_Aluminium.jpg"
+   }
+  },
+  {
+   "id": "ollaansata",
+   "latin": "ōlla ānsāta, ōllae ānsātae f.",
+   "english": "saucepan",
+   "group": "culina",
+   "line": "posteā ōllam statuitō cum aquā",
+   "source": "Cato Agr. 156, 2",
+   "record": "saucepan",
+   "image": {
+    "file": "Saucepan.jpg",
+    "author": "Donovan Govan",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Saucepan.jpg"
+   }
+  },
+  {
+   "id": "sartago",
+   "latin": "sartāgō, sartāginis f.",
+   "english": "frying pan",
+   "group": "culina",
+   "line": "Ōva in sartāgine frīguntur.",
+   "source": "composed",
+   "record": "frying-pan",
+   "image": {
+    "file": "Stainless Steel Frying Pan.jpg",
+    "author": "Jim Stonos",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Stainless_Steel_Frying_Pan.jpg"
+   }
+  },
+  {
+   "id": "operculum",
+   "latin": "operculum, operculī n.",
+   "english": "lid",
+   "group": "culina",
+   "line": "operculum inpōnitō, relinquitō quā interspīret",
+   "source": "Cato Agr. 112, 1",
+   "record": "lid",
+   "image": {
+    "file": "A lid for a pot.jpg",
+    "author": "BogTar201213",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:A_lid_for_a_pot.jpg"
+   }
+  },
+  {
+   "id": "furnus",
+   "latin": "furnus, furnī m.",
+   "english": "oven",
+   "group": "culina",
+   "line": "sīc calet tanquam furnus",
+   "source": "Petr. Sat. 72",
+   "record": "oven",
+   "image": {
+    "file": "Hands open oven door to take out baked food from inside in a modern kitchen.jpg",
+    "author": "Shixart1985",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Hands_open_oven_door_to_take_out_baked_food_from_inside_in_a_modern_kitchen.jpg"
+   }
+  },
+  {
+   "id": "foculus",
+   "latin": "foculus, foculī m.",
+   "english": "stove",
+   "group": "culina",
+   "line": "domus intereā sēcūra patellās jam lavat et buccā foculum excitat",
+   "source": "Juv. 3, 261–262",
+   "record": "stove",
+   "image": {
+    "file": "Gas Stove Burners.jpg",
+    "author": "Tony Webster",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Gas_Stove_Burners.jpg"
+   }
+  },
+  {
+   "id": "fusorium",
+   "latin": "fūsōrium, fūsōriī n.",
+   "english": "sink",
+   "group": "culina",
+   "line": "Vāsa in fūsōriō lavantur.",
+   "source": "composed",
+   "record": "sink",
+   "image": {
+    "file": "HK 69 Pokfulam Road 錦明閣 King Ming Mansion 洗碗盤 Kitchen Sink July-2011.jpg",
+    "author": "Wu Samkors",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:HK_69_Pokfulam_Road_%E9%8C%A6%E6%98%8E%E9%96%A3_King_Ming_Mansion_%E6%B4%97%E7%A2%97%E7%9B%A4_Kitchen_Sink_July-2011.jpg"
+   }
+  },
+  {
+   "id": "epitonium",
+   "latin": "epitonium, epitoniī n.",
+   "english": "tap",
+   "group": "culina",
+   "line": "Epitoniō versō aqua fluit.",
+   "source": "composed",
+   "record": "tap",
+   "image": {
+    "file": "Kitchen water tap 20190408.jpg",
+    "author": "Santeri Viinamäki",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Kitchen_water_tap_20190408.jpg"
+   }
+  },
+  {
+   "id": "incisorium",
+   "latin": "incīsōrium, incīsōriī n.",
+   "english": "cutting board",
+   "group": "culina",
+   "line": "Mālum in incīsōriō secā.",
+   "source": "composed",
+   "record": "cutting-board",
+   "image": {
+    "file": "Wooden cutting board 2017.jpg",
+    "author": "Fructibus",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Wooden_cutting_board_2017.jpg"
+   }
+  },
+  {
+   "id": "colum",
+   "latin": "cōlum, cōlī n.",
+   "english": "colander",
+   "group": "culina",
+   "line": "Urtīcam accipiēs, lavās, cōlās per cōlum",
+   "source": "Apic. IV 2, 36",
+   "record": "colander",
+   "image": {
+    "file": "Blue colander.jpg",
+    "author": "FAP",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Blue_colander.jpg"
+   }
+  },
+  {
+   "id": "infundibulum",
+   "latin": "īnfundibulum, īnfundibulī n.",
+   "english": "funnel",
+   "group": "culina",
+   "line": "Per īnfundibulum oleum in lagoenam funditur.",
+   "source": "composed",
+   "record": "funnel",
+   "image": {
+    "file": "Kitchen Funnel.jpg",
+    "author": "Donovan Govan",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Kitchen_Funnel.jpg"
+   }
+  },
+  {
+   "id": "mortarium",
+   "latin": "mortārium, mortāriī n.",
+   "english": "mortar",
+   "group": "culina",
+   "line": "et clārā famulam poscit mortāria vōce",
+   "source": "Mor. 93",
+   "record": "mortar-bowl",
+   "image": {
+    "file": "White-Mortar-and-Pestle.jpg",
+    "author": "Evan-Amos",
+    "licence": "Public domain",
+    "licence_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:White-Mortar-and-Pestle.jpg"
+   }
+  },
+  {
+   "id": "cylindrus",
+   "latin": "cylindrus, cylindrī m.",
+   "english": "rolling pin",
+   "group": "culina",
+   "line": "Massa ē frīgidāriō relāta cylindrō in orbēs tenuēs extenta est",
+   "source": "Libellus IV",
+   "record": "rolling-pin",
+   "image": {
+    "file": "Rolling pin 2017.jpg",
+    "author": "Fructibus",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Rolling_pin_2017.jpg"
+   }
+  },
+  {
+   "id": "radula",
+   "latin": "rādula, rādulae f.",
+   "english": "cheese grater",
+   "group": "culina",
+   "line": "Cāseus rādulā rāditur.",
+   "source": "composed",
+   "record": "cheese-grater",
+   "image": {
+    "file": "Cheese grater.png",
+    "author": "Robert Krampl",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Cheese_grater.png"
+   }
+  },
+  {
+   "id": "fasciculusferreus",
+   "latin": "fasciculus ferreus, fasciculī ferreī m.",
+   "english": "whisk",
+   "group": "culina",
+   "line": "Ōva fasciculō ferreō agitā.",
+   "source": "composed",
+   "record": "whisk",
+   "image": {
+    "file": "Whisk (IMG 0265).jpg",
+    "author": "Matti Blume",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Whisk_(IMG_0265).jpg"
+   }
+  },
+  {
+   "id": "rudicula",
+   "latin": "rudicula, rudiculae f.",
+   "english": "spatula",
+   "group": "culina",
+   "line": "Posteā ignī lēnī coquitō, rudiculā agitātō crēbrō",
+   "source": "Cato Agr. 95, 1",
+   "record": "spatula",
+   "image": {
+    "file": "Kitchen-spatula.jpg",
+    "author": "Evan-Amos",
+    "licence": "Public domain",
+    "licence_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Kitchen-spatula.jpg"
+   }
+  },
+  {
+   "id": "trutina",
+   "latin": "trutina, trutinae f.",
+   "english": "kitchen scales",
+   "group": "culina",
+   "line": "inde Marōnem atque aliā parte in trutinā suspendit Homērum",
+   "source": "Juv. 6, 436–437",
+   "record": "kitchen-scales",
+   "image": {
+    "file": "Kitchen scale at MODO museum 1.jpg",
+    "author": "Apoptosical",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Kitchen_scale_at_MODO_museum_1.jpg"
+   }
+  },
+  {
+   "id": "extraculum",
+   "latin": "extrāculum, extrāculī n.",
+   "english": "corkscrew",
+   "group": "culina",
+   "line": "Ubi est extrāculum? Lagoenam aperīre volō.",
+   "source": "composed",
+   "record": "corkscrew",
+   "image": {
+    "file": "Corkscrew P1150886.jpg",
+    "author": "David Monniaux",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Corkscrew_P1150886.jpg"
+   }
+  },
+  {
+   "id": "salinum",
+   "latin": "salīnum, salīnī n.",
+   "english": "salt cellar",
+   "group": "culina",
+   "line": "vīvitur parvō bene, cui paternum splendet in mēnsā tenuī salīnum",
+   "source": "Hor. Carm. II 16, 13–14",
+   "record": "salt-cellar",
+   "image": {
+    "file": "Salt shaker.jpg",
+    "author": "NeoMeesje",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Salt_shaker.jpg"
+   }
+  },
+  {
+   "id": "spongiaculinae",
+   "latin": "spongia, spongiae f.",
+   "english": "sponge",
+   "group": "culina",
+   "line": "Pīcentīna Cerēs niveō sīc nectare crēscit ut levis acceptā spongea turget aquā.",
+   "source": "Mart. XIII 47, 1–2",
+   "record": "sponge",
+   "image": {
+    "file": "Plain blue and pink polyurethane kitchen sponges (4273918578).jpg",
+    "author": "Old Photo Profile",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Plain_blue_and_pink_polyurethane_kitchen_sponges_(4273918578).jpg"
+   }
+  },
+  {
+   "id": "tostrum",
+   "latin": "tostrum, tostrī n.",
+   "english": "toaster",
+   "group": "culina",
+   "line": "Pānem tostum, quī modo ē tostrō prōsiluerat, Theodōrus būtȳrō oblitum comedēbat",
+   "source": "Libellus IV",
+   "record": "toaster",
+   "image": {
+    "file": "Toaster.jpg",
+    "author": "Donovan Govan",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Toaster.jpg"
+   }
+  },
+  {
+   "id": "machinaelutoria",
+   "latin": "māchina ēlūtōria, māchinae ēlūtōriae f.",
+   "english": "dishwasher",
+   "group": "culina",
+   "line": "avia argentea ēscāria ē māchinā ēlūtōriā prōmpsit mēnsamque posuit",
+   "source": "Libellus III",
+   "record": "dishwasher",
+   "image": {
+    "file": "Asko D3112 dishwasher open.JPG",
+    "author": "BrokenSphere",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Asko_D3112_dishwasher_open.JPG"
+   }
+  },
+  {
+   "id": "amphora",
+   "latin": "amphora, amphorae f.",
+   "english": "amphora",
+   "group": "culina",
+   "line": "anus jacēre vīdit ēpōtam amphoram",
+   "source": "Phaedr. III 1, 1",
+   "record": "amphora",
+   "image": {
+    "file": "Transport amphora, Roman, 1st-3rd century AD, clay - Fitchburg Art Museum - DSC08645.JPG",
+    "author": "Daderot",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Transport_amphora,_Roman,_1st-3rd_century_AD,_clay_-_Fitchburg_Art_Museum_-_DSC08645.JPG"
+   }
+  },
+  {
+   "id": "cupa",
+   "latin": "cūpa, cūpae f.",
+   "english": "barrel",
+   "group": "culina",
+   "line": "pānis et vīnum ā propōlā atque dē cūpā",
+   "source": "Cic. Pis. 67",
+   "record": "barrel",
+   "image": {
+    "file": "Oak-wine-barrel-at-toneleria-nacional-chile.jpg",
+    "author": "Gerard Prins",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Oak-wine-barrel-at-toneleria-nacional-chile.jpg"
+   }
+  },
+  {
+   "id": "peniculusdentarius",
+   "latin": "pēniculus dentārius, pēniculī dentāriī m.",
+   "english": "toothbrush",
+   "group": "balneum",
+   "line": "Dentēs pēniculō dentāriō fricāmus.",
+   "source": "composed",
+   "record": "toothbrush",
+   "image": {
+    "file": "Colorful toothbrush.jpg",
+    "author": "Gausanchennai",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Colorful_toothbrush.jpg"
+   }
+  },
+  {
+   "id": "dentifricium",
+   "latin": "dentifricium, dentifriciī n.",
+   "english": "toothpaste",
+   "group": "balneum",
+   "line": "Dentifricium pēniculō impōnitur.",
+   "source": "composed",
+   "record": "toothpaste",
+   "image": {
+    "file": "Close-up of a toothbrush with toothpaste (49842101773).jpg",
+    "author": "Ivan Radic",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Close-up_of_a_toothbrush_with_toothpaste_(49842101773).jpg"
+   }
+  },
+  {
+   "id": "pecten",
+   "latin": "pecten, pectinis m.",
+   "english": "comb",
+   "group": "balneum",
+   "line": "invēnit calvus forte in triviō pectinem.",
+   "source": "Phaedr. V 6, 1",
+   "record": "comb",
+   "image": {
+    "file": "Plastic comb, 2015-06-07.jpg",
+    "author": "Crisco 1492",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Plastic_comb,_2015-06-07.jpg"
+   }
+  },
+  {
+   "id": "peniculuscomatorius",
+   "latin": "pēniculus comātōrius, pēniculī comātōriī m.",
+   "english": "hairbrush",
+   "group": "balneum",
+   "line": "Pēniculō comātōriō capillī pectuntur.",
+   "source": "composed",
+   "record": "hairbrush",
+   "image": {
+    "file": "Hairbrush flat.JPG",
+    "author": "Musical Linguist",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Hairbrush_flat.JPG"
+   }
+  },
+  {
+   "id": "novacula",
+   "latin": "novācula, novāculae f.",
+   "english": "razor",
+   "group": "balneum",
+   "line": "novācula nōn ascendet super caput ejus",
+   "source": "1 Reg. 1, 11",
+   "record": "razor",
+   "image": {
+    "file": "Chrome-Safety-Razor.jpg",
+    "author": "Evan-Amos",
+    "licence": "Public domain",
+    "licence_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Chrome-Safety-Razor.jpg"
+   }
+  },
+  {
+   "id": "forficula",
+   "latin": "forficula, forficulae f.",
+   "english": "nail clippers",
+   "group": "balneum",
+   "line": "Cedo forficulam; unguēs tibi resecābō.",
+   "source": "composed",
+   "record": "nail-clippers",
+   "image": {
+    "file": "Nail clippers silver.JPG",
+    "author": "BarberJP",
+    "licence": "Public domain",
+    "licence_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Nail_clippers_silver.JPG"
+   }
+  },
+  {
+   "id": "chartulahygienica",
+   "latin": "chartula hygiēnica, chartulae hygiēnicae f.",
+   "english": "toilet paper",
+   "group": "balneum",
+   "line": "Chartula hygiēnica in lātrīnā pendet.",
+   "source": "composed",
+   "record": "toilet-paper",
+   "image": {
+    "file": "Toilet paper orientation over.jpg",
+    "author": "Elya",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Toilet_paper_orientation_over.jpg"
+   }
+  },
+  {
+   "id": "linteolum",
+   "latin": "linteolum, linteolī n.",
+   "also": "sūdārium, sūdāriī n.",
+   "english": "handkerchief",
+   "group": "balneum",
+   "line": "Linteolum cape.",
+   "source": "composed",
+   "record": "handkerchief",
+   "image": {
+    "file": "Chustka do nosa1.jpg",
+    "author": "Łeba",
+    "licence": "Public domain",
+    "licence_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Chustka_do_nosa1.jpg"
+   }
+  },
+  {
+   "id": "balneumpluvium",
+   "latin": "balneum pluvium, balneī pluviī n.",
+   "english": "shower",
+   "group": "balneum",
+   "line": "In cubiculō, quod balneō pluviō īnstrūctum erat, duo lectī et fenestra ūna erant.",
+   "source": "Libellus I",
+   "record": "shower-bathroom",
+   "image": {
+    "file": "Chuveiro moderno.jpg",
+    "author": "Msilva9",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Chuveiro_moderno.jpg"
+   }
+  },
+  {
+   "id": "machinalavatoria",
+   "latin": "māchina lavātōria, māchinae lavātōriae f.",
+   "english": "washing machine",
+   "group": "balneum",
+   "line": "Māchina lavātōria vestēs sordidās lavat.",
+   "source": "composed",
+   "record": "washing-machine",
+   "image": {
+    "file": "Washing-machine.jpg",
+    "author": "Baruzza",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Washing-machine.jpg"
+   }
+  },
+  {
+   "id": "scopae",
+   "latin": "scōpae, scōpārum f. pl.",
+   "english": "broom",
+   "group": "balneum",
+   "line": "Munditiās volō fierī. ecferte hūc scōpās simulque harundinem",
+   "source": "Plaut. Stich. 347",
+   "record": "broom",
+   "image": {
+    "file": "Miotla przyklad 01.JPG",
+    "author": "Szlomo Lejb",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Miotla_przyklad_01.JPG"
+   }
+  },
+  {
+   "id": "vatillum",
+   "latin": "vatillum, vatillī n.",
+   "english": "dustpan",
+   "group": "balneum",
+   "line": "Pulvis scōpīs in vatillum verritur.",
+   "source": "composed",
+   "record": "dustpan",
+   "image": {
+    "file": "Gfp-plastic-dustpan.jpg",
+    "author": "Yinan Chen",
+    "licence": "Public domain",
+    "licence_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Gfp-plastic-dustpan.jpg"
+   }
+  },
+  {
+   "id": "situla",
+   "latin": "situla, situlae f.",
+   "english": "bucket",
+   "group": "balneum",
+   "line": "Implē hanc situlam aquā.",
+   "source": "Erasm. Coll., Vēnātiō, I 55",
+   "record": "bucket",
+   "image": {
+    "file": "One blue bucket.jpg",
+    "author": "DracoEssentialis",
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:One_blue_bucket.jpg"
+   }
+  },
+  {
+   "id": "excipulumpurgamentarium",
+   "latin": "excipulum pūrgāmentārium, excipulī pūrgāmentāriī n.",
+   "english": "rubbish bin",
+   "group": "balneum",
+   "line": "Hoc in excipulum abjice.",
+   "source": "composed",
+   "record": "rubbish-bin",
+   "image": {
+    "file": "Pedal bin closed.jpg",
+    "author": "DrThneed",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Pedal_bin_closed.jpg"
+   }
+  },
+  {
+   "id": "domus",
+   "latin": "domus, domūs f.",
+   "also": "aedēs, aedium f. pl.",
+   "english": "house",
+   "group": "domus",
+   "line": "domus utrīusque nostrum aedificātur strēnuē",
+   "source": "Cic. Q. fr. II 4, 2",
+   "record": "house",
+   "image": {
+    "file": "Modern house exterior with red roof and landscaped garden under clear blue sky.jpg",
+    "author": "Shixart1985",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Modern_house_exterior_with_red_roof_and_landscaped_garden_under_clear_blue_sky.jpg"
+   }
+  },
+  {
+   "id": "janua",
+   "latin": "jānua, jānuae f.",
+   "english": "door",
+   "group": "domus",
+   "line": "abī intrō, occlūde jānuam. jam ego hīc erō.",
+   "source": "Plaut. Aul. 89",
+   "record": "door",
+   "image": {
+    "file": "Juist, Haustür (Friesenstraße) -- 2014 -- 3583.jpg",
+    "author": "Dietmar Rabich",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Juist,_Haust%C3%BCr_(Friesenstra%C3%9Fe)_--_2014_--_3583.jpg"
+   }
+  },
+  {
+   "id": "manubriumjanuae",
+   "latin": "manūbrium jānuae, manūbriī jānuae n.",
+   "english": "door handle",
+   "group": "domus",
+   "line": "Manūbrium jānuae Theodōrus nōn tetigit",
+   "source": "Libellus III",
+   "record": "door-handle",
+   "image": {
+    "file": "Poignées sur une plaque carrée, couleur chrome brossé.jpg",
+    "author": "Michero85",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Poign%C3%A9es_sur_une_plaque_carr%C3%A9e,_couleur_chrome_bross%C3%A9.jpg"
+   }
+  },
+  {
+   "id": "claustrum",
+   "latin": "claustrum, claustrī n.",
+   "english": "lock",
+   "group": "domus",
+   "line": "Ā dextrīs sunt cardinēs, ā quibus pendent forēs; ā sinistrīs claustrum aut pessulus.",
+   "source": "Comen. OP 66",
+   "record": "lock",
+   "image": {
+    "file": "2019-06-07 altes Türschloss 01.jpg",
+    "author": "YvoBentele",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:2019-06-07_altes_T%C3%BCrschloss_01.jpg"
+   }
+  },
+  {
+   "id": "tintinnabulumostii",
+   "latin": "tintinnābulum ōstiī, tintinnābulī ōstiī n.",
+   "english": "doorbell",
+   "group": "domus",
+   "line": "Adeāmus, pulsēmus forēs tintinnābulō, nē irrumpāmus inexspectātī.",
+   "source": "Vives Exerc. 12",
+   "record": "doorbell",
+   "image": {
+    "file": "Doorbell button (53244196905).jpg",
+    "author": "Abdulla Al Muhairi",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Doorbell_button_(53244196905).jpg"
+   }
+  },
+  {
+   "id": "storeaostii",
+   "latin": "storea ōstiī, storeae ōstiī f.",
+   "english": "doormat",
+   "group": "domus",
+   "line": "Pedēs in storeā terge.",
+   "source": "composed",
+   "record": "doormat",
+   "image": {
+    "file": "Coconut peat mat.jpg",
+    "author": "Vis M",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Coconut_peat_mat.jpg"
+   }
+  },
+  {
+   "id": "limen",
+   "latin": "līmen, līminis n.",
+   "english": "threshold",
+   "group": "domus",
+   "line": "haec, inquit, līmina victor Alcīdēs subiit, haec illum rēgia cēpit",
+   "source": "Verg. A. VIII 362–363",
+   "record": "threshold",
+   "image": {
+    "file": "NMP 1780s House interior Door Sill.JPG",
+    "author": "Infrogmation of New Orleans",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:NMP_1780s_House_interior_Door_Sill.JPG"
+   }
+  },
+  {
+   "id": "fenestra",
+   "latin": "fenestra, fenestrae f.",
+   "english": "window",
+   "group": "domus",
+   "line": "clausae fenestrae manent",
+   "source": "Plin. Ep. IX 36, 1",
+   "record": "window",
+   "image": {
+    "file": "Beilstein - Schmidhausen - Ob dem Weiler - Fenster mit Spiegelung eines Baumes (RQCE1070).jpg",
+    "author": "Roman Eisele",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Beilstein_-_Schmidhausen_-_Ob_dem_Weiler_-_Fenster_mit_Spiegelung_eines_Baumes_(RQCE1070).jpg"
+   }
+  },
+  {
+   "id": "foricula",
+   "latin": "foricula, foriculae f.",
+   "english": "shutter",
+   "group": "domus",
+   "line": "Foriculae noctū clauduntur.",
+   "source": "composed",
+   "record": "shutter",
+   "image": {
+    "file": "Window with wooden shutters of an old house in Motovun (52828690212).jpg",
+    "author": "Jernej Furman",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Window_with_wooden_shutters_of_an_old_house_in_Motovun_(52828690212).jpg"
+   }
+  },
+  {
+   "id": "tectum",
+   "latin": "tēctum, tēctī n.",
+   "english": "roof",
+   "group": "domus",
+   "line": "Cicōnia in tēctō nīdificat.",
+   "source": "Comen. OP 19",
+   "record": "roof",
+   "image": {
+    "file": "Tiled roof Great Easton Essex England 01.jpg",
+    "author": "Acabashi",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Tiled_roof_Great_Easton_Essex_England_01.jpg"
+   }
+  },
+  {
+   "id": "tegula",
+   "latin": "tēgula, tēgulae f.",
+   "english": "roof tile",
+   "group": "domus",
+   "line": "tēgula pūblicē praebita est",
+   "source": "Liv. V 55, 3",
+   "record": "roof-tile",
+   "image": {
+    "file": "\"Clay tile roof close up shot.jpg",
+    "author": "Arivumathi",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:%22Clay_tile_roof_close_up_shot.jpg"
+   }
+  },
+  {
+   "id": "caminus",
+   "latin": "camīnus, camīnī m.",
+   "english": "fireplace",
+   "group": "domus",
+   "line": "Valdē metuō, nē frīgeās in hībernīs; quamobrem camīnō lūculentō ūtendum cēnseō",
+   "source": "Cic. Fam. VII 10, 2",
+   "record": "fireplace",
+   "image": {
+    "file": "Kominek.JPG",
+    "author": "Tomasz Halszka",
+    "licence": "CC BY-SA 2.5",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.5/",
+    "page": "https://commons.wikimedia.org/wiki/File:Kominek.JPG"
+   }
+  },
+  {
+   "id": "scalae",
+   "latin": "scālae, scālārum f. pl.",
+   "english": "stairs",
+   "group": "domus",
+   "line": "semel hic cessāvit et, ut fit, in scālīs latuit",
+   "source": "Hor. Epist. II 2, 14–15",
+   "record": "stairs",
+   "image": {
+    "file": "Wooden stairs to gallery council chamber Aarhus City Hall Rådhuset 01.jpg",
+    "author": "Ciara Ní Riain",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Wooden_stairs_to_gallery_council_chamber_Aarhus_City_Hall_R%C3%A5dhuset_01.jpg"
+   }
+  },
+  {
+   "id": "maenianum",
+   "latin": "maeniānum, maeniānī n.",
+   "english": "balcony",
+   "group": "domus",
+   "line": "In maeniānō stantēs montēs spectābimus.",
+   "source": "composed",
+   "record": "balcony",
+   "image": {
+    "file": "Fleurey-sur-Ouche balcon en fer forgé 2.jpg",
+    "author": "Marc Roussel",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Fleurey-sur-Ouche_balcon_en_fer_forg%C3%A9_2.jpg"
+   }
+  },
+  {
+   "id": "saeptum",
+   "latin": "saeptum, saeptī n.",
+   "english": "fence",
+   "group": "domus",
+   "line": "Nunc dē saeptīs, quae tūtandī causā fundī aut partis fīant, dīcam.",
+   "source": "Varro RR I 14, 1",
+   "record": "fence",
+   "image": {
+    "file": "Wood fence.jpg",
+    "author": "Idlir Fida",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Wood_fence.jpg"
+   }
+  },
+  {
+   "id": "saepes",
+   "latin": "saepēs, saepis f.",
+   "english": "hedge",
+   "group": "domus",
+   "line": "saepēs Hyblaeīs apibus flōrem dēpāsta salictī saepe levī somnum suādēbit inīre susurrō",
+   "source": "Verg. E. 1, 53–55",
+   "record": "hedge",
+   "image": {
+    "file": "Miltitz Nebelschütz Grünes Gartentor 7023.jpg",
+    "author": "ErichanderElbe",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Miltitz_Nebelsch%C3%BCtz_Gr%C3%BCnes_Gartentor_7023.jpg"
+   }
+  },
+  {
+   "id": "culina",
+   "latin": "culīna, culīnae f.",
+   "english": "kitchen",
+   "group": "domus",
+   "line": "alget adhūc nūdō clūsa culīna focō",
+   "source": "Mart. VIII 67, 8",
+   "record": "kitchen",
+   "image": {
+    "file": "Blue white kitchen interior (Unsplash).jpg",
+    "author": "NeONBRAND",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Blue_white_kitchen_interior_(Unsplash).jpg"
+   }
+  },
+  {
+   "id": "cubiculum",
+   "latin": "cubiculum, cubiculī n.",
+   "english": "bedroom",
+   "group": "domus",
+   "line": "Quō ascendis? — In cubiculum nostrum.",
+   "source": "Corder. Coll. II 19",
+   "record": "bedroom",
+   "image": {
+    "file": "Gfp-bedroom-2.jpg",
+    "author": "Yinan Chen",
+    "licence": "Public domain",
+    "licence_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Gfp-bedroom-2.jpg"
+   }
+  },
+  {
+   "id": "balneum",
+   "latin": "balneum, balneī n.",
+   "english": "bathroom",
+   "group": "domus",
+   "line": "lābrum sī in balineō nōn est, ut sit",
+   "source": "Cic. Fam. XIV 20, 1",
+   "record": "bathroom",
+   "image": {
+    "file": "Bathroom with bathtube.jpg",
+    "author": "Gürkan Sengün",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Bathroom_with_bathtube.jpg"
+   }
+  },
+  {
+   "id": "triclinium",
+   "latin": "trīclīnium, trīclīniī n.",
+   "also": "cēnātiō, cēnātiōnis f.",
+   "english": "dining room",
+   "group": "domus",
+   "line": "nihil est melius quam dē cubiculō rēctā in trīclīnium īre",
+   "source": "Petr. Sat. 41",
+   "record": "dining-room",
+   "image": {
+    "file": "Modern dining area with stylish table and chairs in cozy interior design.jpg",
+    "author": "Shixart1985",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Modern_dining_area_with_stylish_table_and_chairs_in_cozy_interior_design.jpg"
+   }
+  },
+  {
+   "id": "ignis",
+   "latin": "ignis, ignis m.",
+   "english": "fire",
+   "group": "domus",
+   "line": "Bonō animō es: accēde ad ignem hunc; jam calēscēs plūs satis.",
+   "source": "Ter. Eun. 84–85",
+   "record": "fire",
+   "image": {
+    "file": "Fire burning in a fireplace.jpg",
+    "author": "Pöllö",
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Fire_burning_in_a_fireplace.jpg"
+   }
+  },
+  {
+   "id": "fumus",
+   "latin": "fūmus, fūmī m.",
+   "english": "smoke",
+   "group": "domus",
+   "line": "parvulus exustō remanēbat stīpite fūmus",
+   "source": "Mor. 8",
+   "record": "smoke",
+   "image": {
+    "file": "Charcoal and smoke, crop.jpg",
+    "author": "Tomascastelazo",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Charcoal_and_smoke,_crop.jpg"
+   }
+  },
+  {
+   "id": "cinis",
+   "latin": "cinis, cineris m.",
+   "english": "ashes",
+   "group": "domus",
+   "line": "et sua nōn ēmptus praeparat ōva cinis",
+   "source": "Mart. I 55, 12",
+   "record": "ashes",
+   "image": {
+    "file": "Campfire scar 08319.JPG",
+    "author": "Walter Siegmund",
+    "licence": "CC BY 2.5",
+    "licence_url": "https://creativecommons.org/licenses/by/2.5/",
+    "page": "https://commons.wikimedia.org/wiki/File:Campfire_scar_08319.JPG"
    }
   }
  ]

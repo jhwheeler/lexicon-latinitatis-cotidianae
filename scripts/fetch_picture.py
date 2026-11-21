@@ -268,11 +268,18 @@ def check_licence(info, table):
 
 
 def rendition_width(title, size):
-    """The width of the rendition to ask for: the widest standard width the file has, or the full
-    width for an SVG, which Wikimedia renders at any width; None if the file is too narrow."""
+    """The width of the rendition to ask for: the widest standard width narrower than the file, or
+    the full width for an SVG, which Wikimedia renders at any width; None if the file is too narrow.
+    A file exactly as wide as a standard width takes the next smaller one: asked for its own width,
+    Wikimedia answers with the unscaled original, which it refuses to this machine (21 November
+    2026: a file 1920 pixels wide). The narrowest standard width is still the least a file may have:
+    one exactly that wide is asked for at that width, as before, there being no smaller one."""
     if title.lower().endswith('.svg'):
         return RENDITION
-    return next((w for w in STANDARD_WIDTHS if not size or size[0] >= w), None)
+    if not size:
+        return STANDARD_WIDTHS[0]
+    narrower = next((w for w in STANDARD_WIDTHS if size[0] > w), None)
+    return narrower or (STANDARD_WIDTHS[-1] if size[0] == STANDARD_WIDTHS[-1] else None)
 
 
 def fractions(text, count, what):

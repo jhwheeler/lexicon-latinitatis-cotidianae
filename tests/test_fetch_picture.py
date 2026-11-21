@@ -57,6 +57,17 @@ class FetchPictureTest(unittest.TestCase):
         self.assertEqual(fetch.rendition_width('File:Heart.png', (1000, 800)), 960)
         self.assertIsNone(fetch.rendition_width('File:Small.jpg', (800, 600)))
 
+    def test_a_file_exactly_a_standard_width_takes_the_next_smaller_one(self):
+        """Asked for its own width, Wikimedia sends the unscaled original, which it refuses to this
+        machine (21 November 2026): a file 1920 pixels wide is asked for at 1280, one 1280 wide at
+        960. The narrowest standard width stays the least a file may have."""
+        self.assertEqual(fetch.rendition_width('File:Plate.jpg', (1920, 1280)), 1280)
+        self.assertEqual(fetch.rendition_width('File:Plate.jpg', (1921, 1280)), 1920)
+        self.assertEqual(fetch.rendition_width('File:Plate.jpg', (1280, 960)), 960)
+        self.assertEqual(fetch.rendition_width('File:Plate.jpg', (960, 640)), 960)
+        self.assertIsNone(fetch.rendition_width('File:Plate.jpg', (959, 640)))
+        self.assertEqual(fetch.rendition_width('File:Plate.svg', (1920, 1280)), fetch.RENDITION)
+
     def test_the_previews_are_written_from_the_pictures_and_kept_up_to_date(self):
         """Every picture has a preview, data/chartae-previews/<id>.jpg (21 November 2026), written with the
         picture and by --previews for the rest: 144 by 102, naming the picture it was made from, so that

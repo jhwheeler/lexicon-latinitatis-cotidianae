@@ -1,0 +1,59 @@
+{
+  "id": "train-model",
+  "english": "train",
+  "sense": "a model, in machine learning",
+  "pos": "verb",
+  "also": [
+    "train a model",
+    "training (of a model)",
+    "training data"
+  ],
+  "domain": "computatra",
+  "terms": [
+    {
+      "latin": "ērudiō, ērudīre, ērudīvī, ērudītum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "to instruct, to educate; here, to train a model",
+      "evidence": [
+        "Cic. Off. 1.156: <span lang=\"la\">studiōsōs discendī ērudiunt atque docent</span> (Lewis &amp; Short)",
+        "Cic. Fam. 1.7: <span lang=\"la\">aliquem artibus</span>, with the ablative of what is taught (Lewis &amp; Short)"
+      ],
+      "comment": "Classically to instruct or educate a person (see teach); used of a model it is modern, and ours. Training a model is teaching it from examples, and <span lang=\"la\">ērudīre</span> takes the means in the ablative, as Cicero’s <span lang=\"la\">aliquem artibus ērudīre</span>: <span lang=\"la\">māchinam imāginibus ērudīre</span>. The noun is <span lang=\"la\">ērudītiō</span> (see machine learning)."
+    },
+    {
+      "latin": "īnstituō, īnstituere, īnstituī, īnstitūtum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "to train, to bring up",
+      "comment": "To instruct, train, educate (Lewis &amp; Short), often beside <span lang=\"la\">ērudīre</span> in Cicero; it also means to set up or begin, so it is less clear on its own."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Māchinam multīs mīlibus imāginum ērudīvimus.",
+      "english": "We trained the machine on many thousands of pictures.",
+      "source": "composed"
+    },
+    {
+      "latin": "data quibus māchina ērudītur",
+      "english": "the data the machine is trained on; training data",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "teach",
+    "machine-learning",
+    "ai-model",
+    "data",
+    "learn"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/erudio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: erudio</a> · <a href=\"https://logeion.uchicago.edu/instituo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: instituo</a>"
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-21",
+    "by": "Claude"
+  }
+}

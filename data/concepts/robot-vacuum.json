@@ -1,0 +1,54 @@
+{
+  "id": "robot-vacuum",
+  "english": "robot vacuum cleaner",
+  "pos": "noun",
+  "also": [
+    "robot vacuum",
+    "robot hoover",
+    "robotic vacuum"
+  ],
+  "domain": "domus",
+  "also_under": [
+    "computatra"
+  ],
+  "terms": [
+    {
+      "latin": "pulveris haurītōrium automatum",
+      "status": "recommended",
+      "period": "ours",
+      "gloss": "a vacuum cleaner that works by itself",
+      "evidence": [
+        "Traupman 39: <span lang=\"la\">pulveris haurītōrium</span>, vacuum cleaner",
+        "Traupman 371: <span lang=\"la\">sclopētum automatum</span>, automatic rifle"
+      ],
+      "comment": "Traupman’s vacuum cleaner (see vacuum) with <span lang=\"la\">automatus</span>, self-moving (Petr. 50.1, Lewis &amp; Short), the adjective the modern works use for machines that work by themselves (see automated testing). No reference work has a word for the robot itself. At home <span lang=\"la\">robōtum</span> alone is enough when only one robot cleans the floor."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Haurītōrium automatum sub lectō haesit.",
+      "english": "The robot vacuum has got stuck under the bed.",
+      "source": "composed"
+    },
+    {
+      "latin": "Robōtum pavīmentum pūrgat; pedēs tolle!",
+      "english": "The robot is cleaning the floor; lift your feet!",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "vacuum",
+    "robot",
+    "floor",
+    "dust"
+  ],
+  "sources": [
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 39, 371.",
+    "<a href=\"https://logeion.uchicago.edu/automatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: automatus</a> · <a href=\"https://logeion.uchicago.edu/haurio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: haurio</a>"
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-21",
+    "by": "Claude"
+  }
+}

@@ -3557,7 +3557,7 @@ test('the picture cards: the scientific name follows the English one, untouched 
   // On a phone the card keeps its height when it is turned, a long name wrapping on its back.
   await page.route('**/assets/chartae-data.js', async route => {
     const response = await route.fetch();
-    await route.fulfill({ response, body: (await response.text()).replace('"scientific":"Quercus"', '"scientific":"Quercus pubescens subsp. palensis"') });
+    await route.fulfill({ response, body: (await response.text()).replace(/"scientific":"[^"]*"/g, '"scientific":"Quercus pubescens subsp. palensis"') });   // every card: the round's first card is any tree
   });
   for (const width of [390, 320]) {
     await page.setViewportSize({ width, height: 760 });

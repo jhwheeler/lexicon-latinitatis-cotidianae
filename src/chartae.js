@@ -382,6 +382,38 @@
     q('g-got').focus({ preventScroll: true });
   }
 
+  // The card's picture (Jack, 21 November 2026, on his iPhone: "Interdum imāgō in chartā nōn statim
+  // mūtātur cum ad proximam chartam trānseō"). A browser keeps showing an image's old file until a new
+  // src has loaded, so the last card's picture stayed on the next card, and on a slow connection the
+  // cue was the wrong picture. Now the picture is hidden the moment its card changes, and its place
+  // shows the frame's quiet ground, of the same size, until the new file has loaded; a load counts
+  // only if it is the file of the card now shown, so a late load of an earlier picture never shows on
+  // a later card. A file that fails (offline, not yet saved) leaves the ground, and the card works.
+  // The pictures of the next two cards of the round, or of the cards beside the one looked at, are
+  // fetched ahead, so that the change is usually at once: they are simply read early, and the
+  // service worker saves them as it saves every picture that is read (src/sw.js).
+  const picture = q('g-picture');
+  let pictureFor = '';   // the address of the picture the card now shown wants
+  const pictureReady = () => picture.complete && picture.naturalWidth > 0 && picture.currentSrc === new URL(pictureFor, location.href).href;
+  picture.addEventListener('load', () => { if (pictureReady()) picture.classList.remove('waiting'); });
+  function showPicture(address) {
+    if (address === pictureFor && picture.getAttribute('src') === address) return;   // the same card, drawn again
+    pictureFor = address;
+    picture.classList.add('waiting');
+    picture.src = address;
+    // A picture already in memory (fetched ahead) is there at once, with no frame of ground.
+    if (pictureReady()) picture.classList.remove('waiting');
+  }
+  let ahead = [];   // the pictures being fetched ahead, held so that they are not dropped half-way
+  function fetchAhead(list) {
+    ahead = list.filter(Boolean).slice(0, 2).map(card => {
+      const kept = ahead.find(image => image.dataset.card === card.id);
+      if (kept) return kept;
+      const image = new Image(); image.dataset.card = card.id; image.src = card.picture;
+      return image;
+    });
+  }
+
   // The round's layer: the card, and what can be done with it ------------------------------------------
   function drawCard() {
     q('g-look').hidden = !look;
@@ -393,17 +425,17 @@
       q('g-bar').style.width = '0';
       q('g-undo').disabled = true;
       q('g-card').classList.remove('front', 'finished');
-      q('g-ask').hidden = true; q('g-picture').hidden = false; q('g-end').hidden = true;
+      q('g-ask').hidden = true; q('g-frame').hidden = false; q('g-end').hidden = true;
       q('g-back').hidden = false; q('g-back').setAttribute('aria-hidden', 'false');
       q('g-front').hidden = true; q('g-marks').hidden = true; q('g-done').hidden = true; q('g-keys').hidden = true;
-      if (q('g-picture').getAttribute('src') !== look.picture) q('g-picture').src = look.picture;
-      q('g-picture').alt = look.english; q('g-picture').lang = 'en';
+      showPicture(look.picture);
+      picture.alt = look.english; picture.lang = 'en';
       drawBack(look);
-      [-1, 1].forEach(by => { new Image().src = listed[(at + by + listed.length) % listed.length].picture; });
+      fetchAhead([1, -1].map(by => listed[(at + by + listed.length) % listed.length]));
       polish(game);
       return;
     }
-    q('g-picture').removeAttribute('lang');
+    picture.removeAttribute('lang');
     const card = round.current, record = card ? rec(card.id) : null;
     const position = round.size - round.queue.length;
     q('g-pos').textContent = round.done ? '' : `${position} / ${round.size}`;
@@ -415,7 +447,7 @@
     // The back is drawn with the front and kept unseen until the card is turned, so that the card
     // is as tall before as after (Jack, 20 November 2026: "Melius esset sī altitūdō chartae nōn mūtāret cum eam premam").
     q('g-ask').hidden = !card; q('g-ask').setAttribute('aria-hidden', String(round.shown));
-    q('g-picture').hidden = !card;
+    q('g-frame').hidden = !card;
     q('g-back').hidden = !card; q('g-back').setAttribute('aria-hidden', String(!round.shown));
     q('g-end').hidden = !round.done;
     q('g-front').hidden = !card || round.shown;
@@ -424,11 +456,11 @@
     q('g-keys').hidden = round.done;
     if (card) {
       // The picture's description does not give the answer away.
-      if (q('g-picture').getAttribute('src') !== card.picture) q('g-picture').src = card.picture;
-      q('g-picture').alt = t('picture');
+      showPicture(card.picture);
+      picture.alt = t('picture');
       drawBack(card);
-      // The next card's picture is fetched while this one is looked at.
-      if (round.queue[0]) new Image().src = round.queue[0].picture;
+      // The next two cards' pictures are fetched while this one is looked at.
+      fetchAhead(round.queue);
     } else {
       // Between rounds: what the round came to, what is waiting, and the names marked Again.
       const state = standing();

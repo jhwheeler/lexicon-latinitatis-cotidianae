@@ -3279,6 +3279,90 @@ test('the picture cards: a picture for the cue, the name on request, and a back 
   assert.deepEqual(missing, []);
 });
 
+test('the picture cards: a new card never shows the last card’s picture, and the next pictures are fetched ahead', async () => {
+  // Jack, 21 November 2026: the last card's picture stayed on the next card until the new file came.
+  // Every picture is held here until the test lets it through, as on a slow connection.
+  const held = [], requested = [], failing = new Set();
+  const pictures = async route => {
+    const path = new URL(route.request().url()).pathname;
+    requested.push(path);
+    if (failing.has(path)) await route.abort().catch(() => {});
+    else held.push({ path, route });
+  };
+  const release = async path => {
+    for (const item of held.filter(entry => entry.path === path)) { held.splice(held.indexOf(item), 1); await item.route.continue().catch(() => {}); }
+  };
+  const until = async (check, what) => {
+    for (let n = 0; n < 100 && !check(); n++) await page.waitForTimeout(50);
+    assert.ok(check(), what);
+  };
+  const state = () => page.evaluate(() => {
+    const picture = document.getElementById('g-picture');
+    return { src: new URL(picture.getAttribute('src'), location.href).pathname, current: picture.currentSrc ? new URL(picture.currentSrc).pathname : '',
+      visible: getComputedStyle(picture).visibility === 'visible', loaded: picture.complete && picture.naturalWidth === 720 };
+  });
+  const boxes = async () => [await page.locator('#g-card').boundingBox(), await page.locator('#g-frame').boundingBox()];
+  await openChartae();
+  await page.route('**/chartae/*.jpg', pictures);
+  try {
+    await startRound();
+    const paths = await page.evaluate(() => Object.fromEntries(window.lexiconChartae.cards.map(card => [card.id, new URL(card.picture, location.href).pathname])));
+    const [first, second, third, fourth, fifth] = (await chartaeRound()).map(id => paths[id]);
+    // The first card's picture and, ahead of time, the next two cards' are asked for, and no more.
+    await until(() => [first, second, third].every(path => requested.includes(path)), 'the first picture and the next two are requested');
+    await page.waitForTimeout(200);
+    assert.deepEqual([...new Set(requested)].sort(), [first, second, third].sort(), 'no more than two are fetched ahead');
+    // While its file has not come, the picture's place is the empty ground, and the card still works.
+    let now = await state();
+    assert.equal(now.src, first);
+    assert.equal(now.visible, false);
+    await page.locator('#g-show').click();
+    await page.locator('#g-got').click();
+    // The second card is on screen at once, and the picture shown is not the first card's: it is unseen until its own file loads.
+    now = await state();
+    assert.equal(now.src, second);
+    assert.equal(now.visible, false, 'the picture waits for its own file');
+    const waiting = await boxes();
+    // A late load of the first picture does not show on the second card.
+    await release(first);
+    await page.waitForTimeout(300);
+    now = await state();
+    assert.equal(now.src, second);
+    assert.equal(now.visible, false, 'a late load of an earlier picture is not shown');
+    // The second card's file comes: its picture shows, and the card has kept its height.
+    await release(second);
+    await page.waitForFunction(() => getComputedStyle(document.getElementById('g-picture')).visibility === 'visible');
+    now = await state();
+    assert.deepEqual([now.src, now.current, now.loaded], [second, second, true]);
+    assert.deepEqual(await boxes(), waiting, 'the card keeps its height while the picture comes');
+    // The third card's picture was fetched ahead; once it is there, the change to it is instant.
+    await until(() => requested.includes(fourth), 'the fourth picture is fetched ahead');
+    await release(third);
+    await page.waitForTimeout(300);
+    await page.locator('#g-show').click();
+    await page.locator('#g-got').click();
+    now = await state();
+    assert.deepEqual([now.src, now.current, now.visible], [third, third, true], 'a picture fetched ahead shows at once');
+    // A picture that fails leaves the ground (no broken image), and the card can still be shown and marked.
+    failing.add(fourth);
+    for (const item of held.filter(entry => entry.path === fourth)) { held.splice(held.indexOf(item), 1); await item.route.abort().catch(() => {}); }
+    await page.waitForTimeout(200);
+    await page.locator('#g-show').click();
+    await page.locator('#g-got').click();
+    await page.waitForTimeout(300);
+    now = await state();
+    assert.deepEqual([now.src, now.visible], [fourth, false]);
+    await page.locator('#g-show').click();
+    assert.equal(await page.locator('#g-la').isVisible(), true);
+    await page.locator('#g-got').click();
+    assert.equal((await state()).src, fifth);
+    assert.equal(await page.locator('#g-pos').textContent(), '5 / 12');
+  } finally {
+    await page.unroute('**/chartae/*.jpg', pictures);
+    for (const item of held.splice(0)) await item.route.continue().catch(() => {});
+  }
+});
+
 test('the picture cards are spaced as the vocabulary is: a card marked Again comes back after ten minutes, not in the same round', async () => {
   const context = await browser.newContext({ viewport: { width: 1280, height: 900 }, serviceWorkers: 'block', timezoneId: 'Europe/Sofia' });
   const shared = page;
@@ -3724,6 +3808,9 @@ test('the picture cards: a second Latin word stands under the first, with the pr
       assert.equal(await also.isVisible(), routed || !!card(id).also, id);
       assert.equal(await overflows(), false);
       await page.locator('#g-close').click();
+      // The dialog's own close event comes a moment later and keeps the round again: wait for it,
+      // or it rewrites the round after the next line clears it, and the next width (same deck) takes it up.
+      await settle();
     }
   }
   await page.unroute('**/assets/chartae-data.js', everyCardAlso);

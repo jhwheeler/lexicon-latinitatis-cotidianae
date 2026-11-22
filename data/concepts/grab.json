@@ -3,7 +3,10 @@
   "english": "grab",
   "pos": "verb",
   "also": [
-    "take hold of"
+    "take hold of",
+    "snatch",
+    "don’t snatch",
+    "snatch it away"
   ],
   "domain": "sermo",
   "terms": [
@@ -32,6 +35,16 @@
         "Liv. 3.35: <span lang=\"la\">impedīmentum prō occāsiōne arripere</span> (Lewis &amp; Short)",
         "Ov. Met. 5.64 (Lewis &amp; Short)"
       ]
+    },
+    {
+      "latin": "ēripiō, ēripere, ēripuī, ēreptum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "snatch away (from someone)",
+      "evidence": [
+        "Plaut. Aul. 827: <span lang=\"la\">jam ut ēriperēs apparābās</span>"
+      ],
+      "comment": "To snatch or tear something away from someone (Lewis &amp; Short), where <span lang=\"la\">arripiō</span> is to snatch it up for oneself."
     }
   ],
   "phrases": [
@@ -49,6 +62,16 @@
       "latin": "impedīmentum prō occāsiōne arripere",
       "english": "to seize on a hindrance as an opportunity",
       "source": "Liv. 3.35 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "Nōlī ēripere; rogā prius.",
+      "english": "Don’t snatch; ask first.",
+      "source": "composed"
+    },
+    {
+      "latin": "lepidē hercle animum tuom temptāvī. jam ut ēriperēs apparābās",
+      "english": "I tested you nicely, by Hercules: you were getting ready to snatch it straight away",
+      "source": "Plaut. Aul. 827"
     }
   ],
   "related": [
@@ -57,13 +80,14 @@
     "arm"
   ],
   "sources": [
-    "<a href=\"https://alatius.com/ls/index.php?l=prehendo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: prehendo</a>",
+    "<a href=\"https://alatius.com/ls/index.php?l=prehendo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: prehendo</a> · <a href=\"https://logeion.uchicago.edu/eripio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: eripio</a>",
     "<a href=\"https://logeion.uchicago.edu/corripio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: corripio</a>",
-    "<a href=\"https://logeion.uchicago.edu/arripio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: arripio</a>"
+    "<a href=\"https://logeion.uchicago.edu/arripio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: arripio</a>",
+    "Plautus, <em>Aulularia</em> 827."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

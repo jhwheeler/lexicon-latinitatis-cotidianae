@@ -3,7 +3,11 @@
   "english": "sunny",
   "pos": "adjective",
   "also": [
-    "sunshine"
+    "sunshine",
+    "it’s sunny",
+    "the sun’s come out",
+    "the sun has come out",
+    "the sun is out"
   ],
   "domain": "natura",
   "terms": [
@@ -19,16 +23,34 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "At sōl lūcet et ventulus mītis flat.",
+      "english": "But the sun is shining and a gentle breeze is blowing.",
+      "source": "Traupman 132"
+    },
+    {
+      "latin": "mox diēs vērus; sōl etiam effulsit",
+      "english": "then real daylight; the sun even came out",
+      "source": "Plin. Ep. 6.20.18"
+    },
+    {
+      "latin": "Sōl effulsit! Eāmus in hortum.",
+      "english": "The sun’s come out! Let’s go into the garden.",
+      "source": "composed"
+    }
+  ],
   "related": [
     "clear-sky"
   ],
   "sources": [
     "<a href=\"https://logeion.org/apricus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: apricus</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 136."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 132, 136.",
+    "Pliny, <em>Letters</em> 6.20.18."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

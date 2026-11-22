@@ -2,12 +2,46 @@
   "id": "share",
   "english": "share",
   "pos": "verb",
+  "also": [
+    "share your toys",
+    "share with your friend",
+    "let him have some",
+    "share it"
+  ],
   "domain": "ludi",
   "terms": [
     {
       "latin": "commūnicō, commūnicāre",
       "status": "recommended",
       "period": "classical"
+    },
+    {
+      "latin": "impertiō, impertīre, impertīvī, impertītum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "give someone a share of something",
+      "grammar": "aliquid alicui",
+      "evidence": [
+        "Cic. Lael. 70: <span lang=\"la\">impertiant ea suīs commūnicentque cum proximīs</span>"
+      ],
+      "comment": "Beside <span lang=\"la\">commūnicāre</span> (to have or use a thing in common with someone), <span lang=\"la\">impertīre</span> is to hand some of it over."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Pilam cum amīcō commūnicā; ūnā lūdite.",
+      "english": "Share the ball with your friend; play together.",
+      "source": "composed"
+    },
+    {
+      "latin": "ut, sī quam praestantiam virtūtis, ingeniī, fortūnae cōnsecūtī sint, impertiant ea suīs commūnicentque cum proximīs",
+      "english": "that if they have gained any distinction of character, talent, or fortune, they should give their own people a part of it and share it with those closest to them",
+      "source": "Cic. Lael. 70"
+    },
+    {
+      "latin": "Cum hīs praemium commūnicat",
+      "english": "He shares the reward with them",
+      "source": "Caes. BG 7.37"
     }
   ],
   "related": [
@@ -15,11 +49,13 @@
     "take-turns"
   ],
   "sources": [
-    "<a href=\"https://www.alatius.com/ls/index.php?l=communico\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: communico</a>"
+    "<a href=\"https://www.alatius.com/ls/index.php?l=communico\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: communico</a> · <a href=\"https://logeion.uchicago.edu/impertio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: impertio</a>",
+    "Cicero, <em>Laelius</em> 70.",
+    "Caesar, <em>Gallic War</em> 7.37."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

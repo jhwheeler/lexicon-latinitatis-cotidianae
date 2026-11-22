@@ -12,7 +12,10 @@
     "shuffle",
     "cut the cards",
     "deal the cards",
-    "trick (cards)"
+    "trick (cards)",
+    "pick a card",
+    "draw a card",
+    "choose a card"
   ],
   "domain": "ludi",
   "terms": [
@@ -92,6 +95,11 @@
       "latin": "vicēs (singulae, bīnae)",
       "english": "a trick (one, two tricks)",
       "source": "Traupman 51"
+    },
+    {
+      "latin": "Ūnam ex chartulīs ēlige; nōlī mihi ostendere.",
+      "english": "Pick one of the cards; don’t show me.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -103,7 +111,7 @@
     "suit-cards"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/chartula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: chartula</a> · <a href=\"https://logeion.uchicago.edu/lusorius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lusorius</a> · <a href=\"https://logeion.uchicago.edu/folium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: folium</a>",
+    "<a href=\"https://logeion.uchicago.edu/chartula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: chartula</a> · <a href=\"https://logeion.uchicago.edu/lusorius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lusorius</a> · <a href=\"https://logeion.uchicago.edu/folium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: folium</a> · <a href=\"https://logeion.uchicago.edu/eligo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: eligo</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 51, 286.",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. card game; card: playing card.",
     "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 16.",
@@ -111,7 +119,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

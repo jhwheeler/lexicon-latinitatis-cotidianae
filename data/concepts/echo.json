@@ -2,6 +2,11 @@
   "id": "echo",
   "english": "echo",
   "pos": "noun",
+  "also": [
+    "echoes",
+    "it echoes",
+    "there’s an echo"
+  ],
   "domain": "sermo",
   "terms": [
     {
@@ -9,17 +14,48 @@
       "status": "recommended",
       "period": "classical",
       "grammar": "noun, Greek declension"
+    },
+    {
+      "latin": "imāgō, imāginis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "an echo, the image of a voice",
+      "grammar": "often vōcis imāgō",
+      "evidence": [
+        "Verg. G. 4.50: <span lang=\"la\">vōcisque offēnsa resultat imāgō</span>",
+        "Hor. C. 1.12.3–4: <span lang=\"la\">cujus recinet jocōsa nōmen imāgō</span>"
+      ],
+      "comment": "The Latin word for an echo, the “image” of a voice (Lewis &amp; Short: the pure Latin word); <span lang=\"la\">ēchō</span> is the Greek one, and as a proper name the nymph."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Clāmā magnā vōce: imāgō vōcem tibi reddet.",
+      "english": "Shout loudly: the echo will give your voice back to you.",
+      "source": "composed"
+    },
+    {
+      "latin": "aut ubi concava pulsū saxa sonant vōcisque offēnsa resultat imāgō",
+      "english": "or where hollow rocks ring when struck, and the echo of a voice bounces back off them",
+      "source": "Verg. G. 4.49–50"
+    },
+    {
+      "latin": "ut paternī flūminis rīpae simul et jocōsa redderet laudēs tibi Vāticānī montis imāgō",
+      "english": "so that the banks of your native river and the playful echo of the Vatican hill gave back your praises together",
+      "source": "Hor. C. 1.20.5–8"
     }
   ],
   "related": [
     "nymph"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/Echo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: Echo</a>"
+    "<a href=\"https://logeion.uchicago.edu/Echo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: Echo</a> · <a href=\"https://logeion.uchicago.edu/imago\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: imago</a>",
+    "Vergil, <em>Georgica</em> 4.49–50.",
+    "Horace, <em>Carmina</em> 1.12.3–4; 1.20.5–8."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

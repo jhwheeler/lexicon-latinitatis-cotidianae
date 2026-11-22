@@ -8,7 +8,11 @@
     "airplane",
     "jet",
     "jet plane",
-    "cockpit"
+    "cockpit",
+    "paper aeroplane",
+    "paper plane",
+    "paper airplane",
+    "make a paper plane"
   ],
   "domain": "vectura",
   "terms": [
@@ -21,19 +25,6 @@
       ]
     }
   ],
-  "related": [
-    "airport",
-    "travel-by-plane",
-    "pilot"
-  ],
-  "sources": [
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 215, 217, 293, 335."
-  ],
-  "review": {
-    "status": "draft",
-    "date": "2026-11-12",
-    "by": "Claude"
-  },
   "phrases": [
     {
       "latin": "āëroplanum pyraulocīnēticum",
@@ -44,6 +35,30 @@
       "latin": "cella āëroplanī",
       "english": "the cockpit",
       "source": "Traupman 293"
+    },
+    {
+      "latin": "āëroplanum chartāceum",
+      "english": "a paper aeroplane",
+      "source": "composed"
+    },
+    {
+      "latin": "Ex hāc chartā āëroplanum faciāmus.",
+      "english": "Let’s make a plane out of this sheet of paper.",
+      "source": "composed"
     }
-  ]
+  ],
+  "related": [
+    "airport",
+    "travel-by-plane",
+    "pilot"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/chartaceus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: chartaceus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 215, 217, 293, 335."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-22",
+    "by": "Claude"
+  }
 }

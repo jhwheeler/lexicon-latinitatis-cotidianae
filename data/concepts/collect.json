@@ -8,7 +8,12 @@
     "gather together",
     "drive together",
     "collect the papers",
-    "classroom commands"
+    "classroom commands",
+    "collect shells",
+    "collect leaves",
+    "gather shells",
+    "pick up shells",
+    "collect conkers"
   ],
   "domain": "domus",
   "terms": [
@@ -31,6 +36,17 @@
         "Traupman 320"
       ],
       "comment": "From <span lang=\"la\">co-agō</span>, “drive together”: the shepherd’s verb for bringing in the flock."
+    },
+    {
+      "latin": "legō, legere, lēgī, lēctum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "pick up, gather one by one (shells, acorns, leaves)",
+      "evidence": [
+        "Cic. de Or. 2.22: <span lang=\"la\">conchās eōs et umbilīcōs ad Cajētam et ad Laurentum legere cōnsuēsse</span>",
+        "Suet. Cal. 46: <span lang=\"la\">ut conchās legerent</span>"
+      ],
+      "comment": "The verb for picking things up off the ground one at a time; see also “pick”."
     }
   ],
   "phrases": [
@@ -43,6 +59,26 @@
       "latin": "Collige (colligite) chartās.",
       "english": "Collect the papers.",
       "source": "Traupman 33"
+    },
+    {
+      "latin": "Conchās in lītore legāmus.",
+      "english": "Let’s collect shells on the beach.",
+      "source": "composed"
+    },
+    {
+      "latin": "Folia rubra et flāva legāmus.",
+      "english": "Let’s collect red and yellow leaves.",
+      "source": "composed"
+    },
+    {
+      "latin": "conchās eōs et umbilīcōs ad Cajētam et ad Laurentum legere cōnsuēsse et ad omnem animī remissiōnem lūdumque dēscendere",
+      "english": "that they used to collect shells and pebbles at Caieta and Laurentum, and stoop to every kind of relaxation and play (Scipio and Laelius, on holiday)",
+      "source": "Cic. de Or. 2.22"
+    },
+    {
+      "latin": "repente ut conchās legerent galeāsque et sinūs replērent imperāvit",
+      "english": "suddenly he ordered them to collect shells and fill their helmets and the folds of their clothes",
+      "source": "Suet. Cal. 46"
     }
   ],
   "related": [
@@ -50,14 +86,16 @@
     "tidy-up"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/colligo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: colligo</a>",
+    "<a href=\"https://logeion.uchicago.edu/colligo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: colligo</a> · <a href=\"https://logeion.uchicago.edu/lego\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lego</a> · <a href=\"https://logeion.uchicago.edu/concha\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: concha</a>",
     "<a href=\"https://logeion.uchicago.edu/cogo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cogo</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 320.",
-    "<a href=\"https://logeion.uchicago.edu/charta\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: charta</a>"
+    "<a href=\"https://logeion.uchicago.edu/charta\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: charta</a>",
+    "Cicero, <em>De oratore</em> 2.22.",
+    "Suetonius, <em>Caligula</em> 46."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

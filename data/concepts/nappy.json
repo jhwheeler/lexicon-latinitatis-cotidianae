@@ -3,7 +3,12 @@
   "english": "nappy",
   "pos": "noun",
   "also": [
-    "diaper"
+    "diaper",
+    "change a nappy",
+    "change the nappy",
+    "change a diaper",
+    "nappy change",
+    "dirty nappy"
   ],
   "domain": "sermo",
   "terms": [
@@ -17,17 +22,30 @@
       "comment": "Classically <span lang=\"la\">subligāculum</span> is a loin-cloth."
     }
   ],
+  "phrases": [
+    {
+      "latin": "Subligāculum tibi mūtandum est; recumbe.",
+      "english": "Your nappy needs changing; lie down.",
+      "source": "composed"
+    },
+    {
+      "latin": "domum vēnit; calceōs et vestīmenta mūtāvit",
+      "english": "he came home and changed his shoes and clothes",
+      "source": "Cic. Mil. 28"
+    }
+  ],
   "related": [
     "baby",
     "underpants"
   ],
   "sources": [
-    "<a href=\"https://logeion.org/subligaculum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: subligaculum</a>",
-    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. diaper."
+    "<a href=\"https://logeion.org/subligaculum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: subligaculum</a> · <a href=\"https://logeion.uchicago.edu/muto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: muto</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. diaper.",
+    "Cicero, <em>Pro Milone</em> 28."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

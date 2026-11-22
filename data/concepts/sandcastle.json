@@ -2,6 +2,13 @@
   "id": "sandcastle",
   "english": "sandcastle",
   "pos": "noun",
+  "also": [
+    "build a sandcastle",
+    "make a sandcastle",
+    "sandcastles",
+    "bucket and spade",
+    "sand house"
+  ],
   "domain": "ludi",
   "terms": [
     {
@@ -9,6 +16,23 @@
       "status": "recommended",
       "period": "ours",
       "comment": "Our transparent description: a castle made from sand; <span lang=\"la\">castellum, castellī n.</span> No reference work has a word for a sandcastle."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Castellum ex harēnā exstruāmus; cape situlam et pālam.",
+      "english": "Let’s build a sandcastle; get your bucket and spade.",
+      "source": "composed"
+    },
+    {
+      "latin": "illī in lītoribus harēnae congestū simulācra domuum excitant",
+      "english": "the children, on the beach, heap up sand and raise make-believe houses",
+      "source": "Sen. Const. 12.2"
+    },
+    {
+      "latin": "aedificāre casās, plōstellō adjungere mūrīs",
+      "english": "to build little houses, to harness mice to a toy cart",
+      "source": "Hor. S. 2.3.247"
     }
   ],
   "related": [
@@ -20,15 +44,17 @@
     "sand"
   ],
   "sources": [
-    "<a href=\"https://www.alatius.com/ls/index.php?l=castellum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: castellum</a>"
-  ],
-  "replaces": [
-    "entry-181",
-    "play-181"
+    "<a href=\"https://www.alatius.com/ls/index.php?l=castellum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: castellum</a>",
+    "Seneca, <em>De constantia sapientis</em> 12.2.",
+    "Horace, <em>Satires</em> 2.3.247."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-15",
+    "date": "2026-11-22",
     "by": "Claude"
-  }
+  },
+  "replaces": [
+    "entry-181",
+    "play-181"
+  ]
 }

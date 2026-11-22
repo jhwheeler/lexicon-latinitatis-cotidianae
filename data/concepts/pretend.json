@@ -9,7 +9,23 @@
     "pretend that",
     "feign",
     "make believe",
-    "make believe that"
+    "make believe that",
+    "let’s pretend",
+    "I’m the doctor, you’re the patient",
+    "play doctor",
+    "play doctors",
+    "play doctors and nurses",
+    "role play",
+    "play at being",
+    "you be the …, I’ll be the …",
+    "play house",
+    "play houses",
+    "play shop",
+    "play shops",
+    "tea party",
+    "dolls’ tea party",
+    "teddy bears’ tea party",
+    "play at keeping house"
   ],
   "domain": "ludi",
   "terms": [
@@ -41,6 +57,18 @@
         "Ter. Eun. 3.2.8: <span lang=\"la\">assimulābō quasi nunc exeam</span>, “will pretend to be just going out” (Lewis &amp; Short s.v. <span lang=\"la\">quasi</span>)",
         "Traupman 106: I’ll pretend I’m leaving, <span lang=\"la\">assimulābō quasi abeam</span>"
       ]
+    },
+    {
+      "latin": "agō, agere, ēgī, āctum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "play the part of (someone)",
+      "grammar": "with the accusative of the person: medicum agere, to be the doctor",
+      "evidence": [
+        "Cic. Rosc. Com. 20: <span lang=\"la\">Balliōnem illum … cum agit, agit Chaeream</span>",
+        "Tac. H. 1.30: <span lang=\"la\">etiam cum amīcum imperātōris ageret</span>"
+      ],
+      "comment": "Of an actor taking a part, and of anyone acting as someone else (Lewis &amp; Short). Our use extends it to a child’s part in pretend play, after the children’s games in the examples: <span lang=\"la\">medicum agere</span>, <span lang=\"la\">ducātūs et imperia lūdere</span>."
     }
   ],
   "phrases": [
@@ -63,6 +91,36 @@
       "latin": "sed ita adsimulātōte, quasi ego sim peregrīnus",
       "english": "but make believe that I am a stranger",
       "source": "Plaut. Poen. 3.2.23 (Lewis &amp; Short s.v. <span lang=\"la\">assimulō</span>)"
+    },
+    {
+      "latin": "Ego medicum agam, tū aegrum.",
+      "english": "I’ll be the doctor, and you be the patient.",
+      "source": "composed"
+    },
+    {
+      "latin": "At puerī lūdentēs ‘Rēx eris’ ajunt, ‘sī rēctē faciēs.’",
+      "english": "But the boys at play say, “You’ll be king if you do it right.”",
+      "source": "Hor. Ep. 1.1.59–60"
+    },
+    {
+      "latin": "quia ferēbātur ducātūs et imperia lūdere",
+      "english": "because he was said to play at generals and emperors",
+      "source": "Suet. Ner. 35.5"
+    },
+    {
+      "latin": "illī inter ipsōs magistrātūs gerunt et praetextam fascēsque ac tribūnal imitantur",
+      "english": "among themselves they hold magistracies, and imitate the bordered toga, the rods, and the judge’s platform",
+      "source": "Sen. Const. 12.2"
+    },
+    {
+      "latin": "Fingāmus hanc mēnsam esse tabernam: ego vēndam, tū emēs.",
+      "english": "Let’s pretend this table is a shop: I’ll sell, and you’ll buy.",
+      "source": "composed"
+    },
+    {
+      "latin": "aedificāre casās, plōstellō adjungere mūrīs, lūdere pār inpār, equitāre in harundine longā",
+      "english": "building play-houses, harnessing mice to a little cart, playing odds and evens, riding about on a long cane",
+      "source": "Hor. S. 2.3.247–248"
     }
   ],
   "related": [
@@ -70,13 +128,19 @@
     "toy-kitchen"
   ],
   "sources": [
-    "<a href=\"https://www.alatius.com/ls/index.php?l=fingo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fingo</a>",
+    "<a href=\"https://www.alatius.com/ls/index.php?l=fingo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fingo</a> · <a href=\"https://logeion.uchicago.edu/ago\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ago</a>",
     "<a href=\"https://logeion.uchicago.edu/dissimulo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dissimulo</a> · <a href=\"https://logeion.uchicago.edu/assimulo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: assimulo</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 106."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 106.",
+    "Horace, <em>Epistles</em> 1.1.59–60.",
+    "Suetonius, <em>Nero</em> 35.5.",
+    "Seneca, <em>De constantia sapientis</em> 12.2.",
+    "Cicero, <em>Pro Roscio comoedo</em> 20.",
+    "Tacitus, <em>Histories</em> 1.30.",
+    "Horace, <em>Satires</em> 2.3.247–248."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

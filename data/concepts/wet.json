@@ -4,7 +4,13 @@
   "pos": "adjective",
   "also": [
     "be wet",
-    "drip"
+    "drip",
+    "get wet",
+    "soaked",
+    "soaked through",
+    "soaked to the skin",
+    "drenched",
+    "wet through"
   ],
   "domain": "culina",
   "also_under": [
@@ -25,6 +31,16 @@
         "Cic. Phil. 2.105: <span lang=\"la\">natābant pavīmenta vīnō, madēbant parietēs</span> (Lewis &amp; Short)",
         "Verg. G. 3.429: <span lang=\"la\">vēre madent ūdō terrae</span> (Lewis &amp; Short)"
       ]
+    },
+    {
+      "latin": "madefīō, madefierī, madefactus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "get wet",
+      "grammar": "the passive of madefaciō",
+      "evidence": [
+        "Suet. Caes. 64: <span lang=\"la\">nē libellī quōs tenēbat madefierent</span>"
+      ]
     }
   ],
   "phrases": [
@@ -37,6 +53,26 @@
       "latin": "natābant pavīmenta vīnō, madēbant parietēs",
       "english": "the floors were swimming with wine, the walls were dripping",
       "source": "Cic. Phil. 2.105 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "Nōlī sine paenulā exīre; tōtus madefīēs.",
+      "english": "Don’t go out without your coat; you’ll get soaked.",
+      "source": "composed"
+    },
+    {
+      "latin": "Tōtus madeō!",
+      "english": "I’m soaked to the skin!",
+      "source": "composed"
+    },
+    {
+      "latin": "fasciculum illum epistulārum … tōtum sibi aquā madidum redditum esse",
+      "english": "that the bundle of letters had reached him soaked right through",
+      "source": "Cic. Q. fr. 2.10.4"
+    },
+    {
+      "latin": "ēlātā laevā, nē libellī quōs tenēbat madefierent",
+      "english": "holding his left hand up, so that the papers he was carrying should not get wet",
+      "source": "Suet. Caes. 64"
     }
   ],
   "related": [
@@ -45,12 +81,14 @@
     "spill"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/madidus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: madidus</a>",
-    "<a href=\"https://logeion.uchicago.edu/madeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: madeo</a>"
+    "<a href=\"https://logeion.uchicago.edu/madidus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: madidus</a> · <a href=\"https://logeion.uchicago.edu/madefacio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: madefacio</a>",
+    "<a href=\"https://logeion.uchicago.edu/madeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: madeo</a>",
+    "Cicero, <em>Letters to his brother Quintus</em> 2.10.4.",
+    "Suetonius, <em>Julius</em> 64."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-15",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

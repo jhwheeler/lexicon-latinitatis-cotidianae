@@ -2,6 +2,12 @@
   "id": "button-up",
   "english": "button up",
   "pos": "verb",
+  "also": [
+    "do up your buttons",
+    "do up (buttons)",
+    "button your coat",
+    "do up your coat"
+  ],
   "domain": "vestitus",
   "terms": [
     {
@@ -12,6 +18,29 @@
         "Traupman 116",
         "Traupman 285"
       ]
+    },
+    {
+      "latin": "fībulā subnectere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "fasten (a cloak or garment) with a brooch or clasp",
+      "grammar": "subnectō, subnectere, subnexuī, subnexum",
+      "evidence": [
+        "Verg. A. 4.139: <span lang=\"la\">aurea purpuream subnectit fībula vestem</span>"
+      ],
+      "comment": "The Roman way of doing up a cloak: with a brooch or clasp, not buttons. For buttons, Traupman’s <span lang=\"la\">globulīs stringere</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Paenulam tibi globulīs stringam; stā quiētus.",
+      "english": "I’ll do up your coat; stand still.",
+      "source": "composed"
+    },
+    {
+      "latin": "aurea purpuream subnectit fībula vestem",
+      "english": "a golden brooch fastens her purple cloak",
+      "source": "Verg. A. 4.139"
     }
   ],
   "related": [
@@ -19,16 +48,17 @@
     "zip"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/globulus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: globulus</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 116, 285."
-  ],
-  "replaces": [
-    "entry-263",
-    "libelli-263"
+    "<a href=\"https://logeion.uchicago.edu/globulus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: globulus</a> · <a href=\"https://logeion.uchicago.edu/fibula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fibula</a> · <a href=\"https://logeion.uchicago.edu/subnecto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: subnecto</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 116, 285.",
+    "Vergil, <em>Aeneid</em> 4.139."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-22",
     "by": "Claude"
-  }
+  },
+  "replaces": [
+    "entry-263",
+    "libelli-263"
+  ]
 }

@@ -1,0 +1,78 @@
+{
+  "id": "did-you-sleep-well",
+  "english": "did you sleep well?",
+  "pos": "phrase",
+  "also": [
+    "did you sleep well",
+    "how did you sleep?",
+    "I slept well",
+    "I didn’t sleep well",
+    "did you have a good night?"
+  ],
+  "domain": "sermo",
+  "terms": [
+    {
+      "latin": "Bene quiēvistī?",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "Did you sleep well?",
+      "grammar": "perfect of quiēscō, quiēscere, quiēvī, quiētum, rest, sleep",
+      "evidence": [
+        "Plin. Ep. 3.16: <span lang=\"la\">Bene quiēvit, libenter cibum sūmpsit.</span>",
+        "Plaut. Merc. 370: <span lang=\"la\">poste hāc nocte nōn quiēvī satis meā ex sententiā.</span>"
+      ],
+      "comment": "The verb of a night’s rest is <span lang=\"la\">quiēscere</span> (Lewis &amp; Short: “to rest, sleep”). Pliny tells how Arria answered her sick husband each time he asked after their son, who had in fact died: <span lang=\"la\">Bene quiēvit, libenter cibum sūmpsit</span>. In Plautus a young man explains his pale face to his father: <span lang=\"la\">nōn quiēvī satis meā ex sententiā</span>, I didn’t sleep as well as I’d have liked. The answer repeats the verb: <span lang=\"la\">Bene quiēvī</span>, or <span lang=\"la\">Nōn satis quiēvī</span>."
+    },
+    {
+      "latin": "Bene dormīvistī?",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "Did you sleep well?",
+      "evidence": [
+        "Publil. Syr.: <span lang=\"la\">Bene dormit, quī nōn sentit quam male dormiat.</span>"
+      ],
+      "comment": "The same question with the everyday verb <span lang=\"la\">dormīre</span>; <span lang=\"la\">bene dormīre</span> is in Publilius."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Salvē, mī fīlī. Bene quiēvistī?",
+      "english": "Good morning, my boy. Did you sleep well?",
+      "source": "composed"
+    },
+    {
+      "latin": "Nōn satis quiēvī; somnium mē terruit.",
+      "english": "I didn’t sleep well; a dream frightened me.",
+      "source": "composed"
+    },
+    {
+      "latin": "Bene quiēvit, libenter cibum sūmpsit.",
+      "english": "He has slept well, and eaten with an appetite.",
+      "source": "Plin. Ep. 3.16"
+    },
+    {
+      "latin": "poste hāc nocte nōn quiēvī satis meā ex sententiā.",
+      "english": "and then last night I didn’t sleep as well as I’d have liked.",
+      "source": "Plaut. Merc. 370"
+    }
+  ],
+  "related": [
+    "sleep-well",
+    "sleep",
+    "wake-up",
+    "dream",
+    "rest",
+    "morning"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/quiesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quiesco</a> · <a href=\"https://logeion.uchicago.edu/dormio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dormio</a>",
+    "Pliny, <em>Letters</em> 3.16.",
+    "Plautus, <em>Mercator</em> 370.",
+    "Publilius Syrus, <em>Sententiae</em>."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-22",
+    "by": "Claude"
+  }
+}

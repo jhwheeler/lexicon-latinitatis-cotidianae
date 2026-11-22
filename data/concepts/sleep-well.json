@@ -2,6 +2,10 @@
   "id": "sleep-well",
   "english": "sleep well",
   "pos": "phrase",
+  "also": [
+    "sweet dreams",
+    "sleep tight"
+  ],
   "domain": "sermo",
   "terms": [
     {
@@ -10,16 +14,30 @@
       "period": "classical"
     }
   ],
+  "phrases": [
+    {
+      "latin": "Dormī bene, mī ocelle.",
+      "english": "Sleep well, my darling.",
+      "source": "composed"
+    },
+    {
+      "latin": "Bene valē, ocule mī.",
+      "english": "Goodbye, my darling.",
+      "source": "Plaut. Curc. 203"
+    }
+  ],
   "related": [
     "sleep",
     "its-time-to-sleep"
   ],
   "sources": [
-    "The phrase is composed; the grouped card gave no source."
+    "<a href=\"https://logeion.uchicago.edu/ocellus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ocellus</a>",
+    "The phrase is composed; the grouped card gave no source.",
+    "Plautus, <em>Curculio</em> 203."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

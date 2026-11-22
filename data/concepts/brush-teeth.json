@@ -5,7 +5,9 @@
   "also": [
     "brush your teeth",
     "rinse",
-    "rinse your mouth"
+    "rinse your mouth",
+    "clean your teeth",
+    "wash your teeth"
   ],
   "domain": "domus",
   "terms": [
@@ -15,6 +17,25 @@
       "period": "modern",
       "evidence": [
         "Traupman 36"
+      ]
+    },
+    {
+      "latin": "dentēs lavāre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "wash, clean the teeth",
+      "evidence": [
+        "Plin. Ep. 8.18.9: <span lang=\"la\">dentēs lavandōs fricandōsque praebēbat</span>"
+      ],
+      "comment": "The classical words for cleaning the teeth: <span lang=\"la\">lavāre</span>, and <span lang=\"la\">fricāre</span> of rubbing them clean, as with a brush."
+    },
+    {
+      "latin": "dentēs fricāre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "rub the teeth clean, brush the teeth",
+      "evidence": [
+        "Plin. Ep. 8.18.9: <span lang=\"la\">dentēs lavandōs fricandōsque praebēbat</span>"
       ]
     }
   ],
@@ -38,6 +59,11 @@
       "latin": "id perfēcit quod puer coeperat, fricāns ubi ille lamberat. «Ōs aperī. Lātius. Jam ēlue. Exspue. Satis est.»",
       "english": "he finished what the boy had begun, brushing where he had only licked. “Open your mouth. Wider. Now rinse. Spit. That’s enough.”",
       "source": "Libellus I, <span lang=\"la\">Iter in Lūsitāniam</span>"
+    },
+    {
+      "latin": "dentēs lavandōs fricandōsque praebēbat",
+      "english": "he would hold out his teeth for others to wash and rub clean",
+      "source": "Plin. Ep. 8.18.9"
     }
   ],
   "related": [
@@ -47,13 +73,14 @@
     "tooth"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/frico\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: frico</a> · <a href=\"https://logeion.uchicago.edu/eluo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: eluo</a> · <a href=\"https://gikanenos.blogspot.com/\" rel=\"noopener noreferrer\" target=\"_blank\">Mir: morning routine (transcription)</a>",
+    "<a href=\"https://logeion.uchicago.edu/frico\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: frico</a> · <a href=\"https://logeion.uchicago.edu/eluo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: eluo</a> · <a href=\"https://gikanenos.blogspot.com/\" rel=\"noopener noreferrer\" target=\"_blank\">Mir: morning routine (transcription)</a> · <a href=\"https://logeion.uchicago.edu/lavo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lavo</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 36.",
-    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026. Examples marked “Libellus” quote those texts word for word."
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026. Examples marked “Libellus” quote those texts word for word.",
+    "Pliny, <em>Letters</em> 8.18.9."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

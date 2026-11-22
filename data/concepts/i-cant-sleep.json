@@ -1,0 +1,96 @@
+{
+  "id": "i-cant-sleep",
+  "english": "I can’t sleep",
+  "pos": "phrase",
+  "also": [
+    "can’t sleep",
+    "can’t get to sleep",
+    "unable to sleep",
+    "sleepless",
+    "sleeplessness",
+    "wake up in the night",
+    "woke up in the night",
+    "can’t get back to sleep"
+  ],
+  "domain": "sermo",
+  "also_under": [
+    "domus"
+  ],
+  "terms": [
+    {
+      "latin": "Dormīre nequeō.",
+      "status": "recommended",
+      "period": "classical",
+      "evidence": [
+        "Hor. S. 2.1.7: <span lang=\"la\">vērum nequeō dormīre</span>"
+      ],
+      "comment": "Horace’s words to Trebatius. <span lang=\"la\">Nequeō</span> is the plain “I can’t” of comedy and conversation; <span lang=\"la\">nōn possum dormīre</span> says the same."
+    },
+    {
+      "latin": "somnum capere nōn posse",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "be unable to get to sleep",
+      "evidence": [
+        "Cic. Tusc. 4.44: <span lang=\"la\">quod somnum capere nōn posset</span>"
+      ]
+    },
+    {
+      "latin": "īnsomnia, īnsomniae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "sleeplessness",
+      "evidence": [
+        "Suet. Cal. 50: <span lang=\"la\">incitābātur īnsomniā</span> (Lewis &amp; Short)"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Pater, dormīre nequeō. — Assidēbō tibi, dum obdormīscis.",
+      "english": "Dad, I can’t sleep. — I’ll sit with you until you drop off.",
+      "source": "composed"
+    },
+    {
+      "latin": "Noctū experrēctus sum nec rūrsus obdormīscere potuī.",
+      "english": "I woke up in the night and couldn’t get back to sleep.",
+      "source": "composed"
+    },
+    {
+      "latin": "peream male, sī nōn optimum erat; vērum nequeō dormīre",
+      "english": "hang me if that wouldn’t be best; but I can’t sleep",
+      "source": "Hor. S. 2.1.6–7"
+    },
+    {
+      "latin": "noctū ambulābat in pūblicō Themistoclēs, quod somnum capere nōn posset",
+      "english": "Themistocles used to walk about the streets at night, because he could not get to sleep",
+      "source": "Cic. Tusc. 4.44"
+    },
+    {
+      "latin": "nē eās quidem continuās, sed ut in illō temporis spatiō ter aut quater expergīscerētur",
+      "english": "not even those hours unbroken, but so that in that time he woke three or four times",
+      "source": "Suet. Aug. 78"
+    }
+  ],
+  "related": [
+    "sleep",
+    "be-awake",
+    "wake-up",
+    "im-sleepy",
+    "nightmare",
+    "night-light",
+    "tuck-in",
+    "late-at-night"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/nequeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nequeo</a> · <a href=\"https://logeion.uchicago.edu/insomnia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: insomnia</a> · <a href=\"https://logeion.uchicago.edu/obdormisco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: obdormisco</a>",
+    "Horace, <em>Satires</em> 2.1.6–7.",
+    "Cicero, <em>Tusculan Disputations</em> 4.44.",
+    "Suetonius, <em>Augustus</em> 78."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-22",
+    "by": "Claude"
+  }
+}

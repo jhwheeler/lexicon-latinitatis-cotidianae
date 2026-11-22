@@ -7,7 +7,13 @@
   ],
   "also": [
     "dreams",
-    "what did you dream"
+    "what did you dream",
+    "I had a dream",
+    "I dreamt",
+    "I dreamed",
+    "have a dream",
+    "dream about",
+    "in my dream"
   ],
   "domain": "corpus",
   "terms": [
@@ -23,6 +29,18 @@
       "latin": "somniō, somniāre",
       "status": "recommended",
       "period": "classical"
+    },
+    {
+      "latin": "in somnīs vidērī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "appear in a dream: “I dreamt of …”",
+      "grammar": "what is dreamt of is the subject; the dreamer, if named, in the dative",
+      "evidence": [
+        "Plaut. Mil. 383: <span lang=\"la\">hāc nocte in somnīs mea soror geminast germāna vīsa</span>",
+        "Verg. A. 2.270–271: <span lang=\"la\">in somnīs, ecce, ante oculōs maestissimus Hector vīsus adesse mihi</span>"
+      ],
+      "comment": "How Latin says whom or what one dreamt of: the person <span lang=\"la\">vīsus est</span>, “seemed”, to the dreamer <span lang=\"la\">in somnīs</span>. For the dream itself, <span lang=\"la\">somniāre</span> with an object or a clause, as Plautus’s girl says <span lang=\"la\">quod noctū hāc somniāvī</span>."
     }
   ],
   "phrases": [
@@ -35,6 +53,21 @@
       "latin": "Quid somniāvistī?",
       "english": "What did you dream?",
       "source": "composed"
+    },
+    {
+      "latin": "Vīn' tibi narrem quid hāc nocte somniāverim?",
+      "english": "Shall I tell you what I dreamt last night?",
+      "source": "composed"
+    },
+    {
+      "latin": "mī hau falsum ēvēnit somnium, quod noctū hāc somniāvī. — Quid somniāstī? — Ego ēloquar.",
+      "english": "the dream I dreamt last night has come true! — What did you dream? — I’ll tell you.",
+      "source": "Plaut. Mil. 381–382"
+    },
+    {
+      "latin": "in somnīs, ecce, ante oculōs maestissimus Hector vīsus adesse mihi largōsque effundere flētūs",
+      "english": "in my sleep, look, Hector seemed to stand before my eyes, full of grief and shedding floods of tears",
+      "source": "Verg. A. 2.270–271"
     }
   ],
   "related": [
@@ -43,11 +76,13 @@
     "be-awake"
   ],
   "sources": [
-    "<a href=\"https://logeion.org/somnium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: somnium</a> · <a href=\"https://logeion.org/somnio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: somnio</a>"
+    "<a href=\"https://logeion.org/somnium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: somnium</a> · <a href=\"https://logeion.org/somnio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: somnio</a>",
+    "Plautus, <em>Miles gloriosus</em> 381–383.",
+    "Vergil, <em>Aeneid</em> 2.270–271."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

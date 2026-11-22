@@ -6,12 +6,15 @@
   "also": [
     "pluck",
     "harvest",
-    "gather"
+    "gather",
+    "pick flowers",
+    "pick a flower",
+    "gather flowers"
   ],
+  "domain": "domus",
   "also_under": [
     "natura"
   ],
-  "domain": "domus",
   "terms": [
     {
       "latin": "legō, legere, lēgī, lēctum",
@@ -42,6 +45,21 @@
       "latin": "Olīvās avia in corbem lēgit",
       "english": "Grandma gathered the olives into a basket",
       "source": "Libellus III, <span lang=\"la\">Apud avum et aviam</span>"
+    },
+    {
+      "latin": "Flōrēs mātrī carpāmus.",
+      "english": "Let’s pick some flowers for Mummy.",
+      "source": "composed"
+    },
+    {
+      "latin": "quō dum Prōserpina lūcō lūdit et aut violās aut candida līlia carpit",
+      "english": "while Proserpina was playing in this grove, picking violets or white lilies",
+      "source": "Ov. M. 5.391–392"
+    },
+    {
+      "latin": "sī flōrem acerbumve pirum aliudve quid dēcerpseris, in eōdem locō eōdem annō nihil renāscitur",
+      "english": "if you pick a blossom or an unripe pear or anything else, nothing grows again in that place the same year",
+      "source": "Varr. RR 1.44.4"
     }
   ],
   "related": [
@@ -53,11 +71,13 @@
     "<a href=\"https://logeion.uchicago.edu/decerpo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: decerpo</a>",
     "<a href=\"https://logeion.uchicago.edu/carpo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: carpo</a>",
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 359."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 359.",
+    "Ovid, <em>Metamorphoses</em> 5.391–392.",
+    "Varro, <em>Res rusticae</em> 1.44.4."
   ],
   "review": {
-    "status": "reviewed",
-    "date": "2026-11-16",
+    "status": "draft",
+    "date": "2026-11-22",
     "by": "Jack"
   }
 }

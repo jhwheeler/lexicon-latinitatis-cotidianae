@@ -10,12 +10,19 @@
     "wash yourself",
     "have a wash",
     "get washed",
-    "wash (oneself)"
+    "wash (oneself)",
+    "have a bath",
+    "take a bath",
+    "go for a bath",
+    "bathe (oneself)",
+    "wash your hair",
+    "wash one’s hair",
+    "hair wash"
   ],
+  "domain": "culina",
   "also_under": [
     "domus"
   ],
-  "domain": "culina",
   "terms": [
     {
       "latin": "lavō, lavāre, lāvī, lavātum",
@@ -81,6 +88,36 @@
       "latin": "Agedum, tē lavā et dentēs pūrgā.",
       "english": "Come on, wash and brush your teeth.",
       "source": "Traupman 36"
+    },
+    {
+      "latin": "Hodiē post cēnam lavābimur.",
+      "english": "Today we’ll have a bath after supper.",
+      "source": "composed"
+    },
+    {
+      "latin": "Ego, nisi quid mē vīs, eō lavātum, ut sacruficem.",
+      "english": "If you don’t need me for anything, I’m off to have a bath, so that I can offer the sacrifice.",
+      "source": "Plaut. Aul. 579"
+    },
+    {
+      "latin": "iterum ambulō ungor exerceor lavor",
+      "english": "another walk, then oil, exercise, and a bath",
+      "source": "Plin. Ep. 9.36.4"
+    },
+    {
+      "latin": "nōn cotīdiē lavor",
+      "english": "I don’t have a bath every day.",
+      "source": "Petr. 42"
+    },
+    {
+      "latin": "Caput tibi lavābō; oculōs claude.",
+      "english": "I’m going to wash your hair; shut your eyes.",
+      "source": "composed"
+    },
+    {
+      "latin": "Scīlicet ego semper comam lavō antequam eam cōmō.",
+      "english": "Of course I always wash the hair before I set it.",
+      "source": "Traupman 160"
     }
   ],
   "related": [
@@ -94,16 +131,19 @@
   "sources": [
     "<a href=\"https://alatius.com/ls/index.php?l=lavo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lavo</a>",
     "<a href=\"https://logeion.uchicago.edu/lavo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lavo</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 36, 39."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 36, 39, 160.",
+    "Plautus, <em>Aulularia</em> 579.",
+    "Pliny, <em>Letters</em> 9.36.4.",
+    "Petronius, <em>Satyrica</em> 42."
   ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-22",
+    "by": "Claude"
+  },
   "replaces": [
     "entry-122",
     "smoothie-122",
     "entry-63"
-  ],
-  "review": {
-    "status": "draft",
-    "date": "2026-11-12",
-    "by": "Claude"
-  }
+  ]
 }

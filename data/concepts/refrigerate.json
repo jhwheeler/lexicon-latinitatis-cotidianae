@@ -4,7 +4,11 @@
   "pos": "verb",
   "also": [
     "chill",
-    "keep refrigerated"
+    "keep refrigerated",
+    "put in the fridge",
+    "put it in the fridge",
+    "take out of the fridge",
+    "get out of the fridge"
   ],
   "domain": "culina",
   "terms": [
@@ -22,18 +26,31 @@
       "gloss": "keep refrigerated"
     }
   ],
+  "phrases": [
+    {
+      "latin": "Lac in frīgidārium repōne.",
+      "english": "Put the milk back in the fridge.",
+      "source": "composed"
+    },
+    {
+      "latin": "Būtȳrum ē frīgidāriō prōme, ut mollēscat.",
+      "english": "Take the butter out of the fridge so it gets soft.",
+      "source": "composed"
+    }
+  ],
   "related": [
     "refrigerator",
     "cool",
     "keep"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/promo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: promo</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 124.",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. refrigerator."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

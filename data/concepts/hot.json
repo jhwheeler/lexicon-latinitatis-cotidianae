@@ -11,12 +11,18 @@
     "scorching",
     "blazing hot",
     "boiling hot",
-    "it is hot today"
+    "it is hot today",
+    "it’s too hot",
+    "too hot",
+    "piping hot",
+    "steaming hot",
+    "hot from the stove",
+    "fresh off the fire"
   ],
+  "domain": "culina",
   "also_under": [
     "verba"
   ],
-  "domain": "culina",
   "terms": [
     {
       "latin": "calidus, calida, calidum",
@@ -54,25 +60,20 @@
       "evidence": [
         "Traupman 329"
       ]
+    },
+    {
+      "latin": "fervēns, ferventis",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "boiling hot, steaming: of food just off the fire, piping hot",
+      "evidence": [
+        "Cic. Fam. 9.20: <span lang=\"la\">praeter jūs fervēns</span>",
+        "Mart. 5.78.21: <span lang=\"la\">et fervēns cicer et tepēns lupīnus</span>",
+        "Traupman 73: <span lang=\"la\">jūs fervēns</span>, hot soup"
+      ],
+      "comment": "The participle of <span lang=\"la\">ferveō</span>, “be boiling hot”: a dish brought straight from the fire. Cicero’s cook could imitate every dish of Hirtius’s table except its piping-hot sauce."
     }
   ],
-  "related": [
-    "cold",
-    "heat",
-    "spicy"
-  ],
-  "sources": [
-    "<a href=\"https://logeion.uchicago.edu/calidus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: calidus</a>",
-    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
-    "<a href=\"https://logeion.uchicago.edu/flagro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: flagro</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 329.",
-    "<a href=\"https://logeion.uchicago.edu/fervidus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fervidus</a>"
-  ],
-  "review": {
-    "status": "draft",
-    "date": "2026-11-09",
-    "by": "Claude"
-  },
   "phrases": [
     {
       "latin": "Calidum est.",
@@ -88,6 +89,45 @@
       "latin": "Hodiē calētur.",
       "english": "It is hot today.",
       "source": "Traupman 329"
+    },
+    {
+      "latin": "Cavē, nimis calidum est!",
+      "english": "Careful, it’s too hot!",
+      "source": "composed"
+    },
+    {
+      "latin": "Cavē, fervet! Sufflā prius.",
+      "english": "Careful, it’s piping hot! Blow on it first.",
+      "source": "composed"
+    },
+    {
+      "latin": "in eā cēnā cocus meus praeter jūs fervēns nihil nōn potuit imitārī",
+      "english": "at that dinner my cook managed to copy everything except the piping-hot sauce",
+      "source": "Cic. Fam. 9.20"
+    },
+    {
+      "latin": "et fervēns cicer et tepēns lupīnus",
+      "english": "and piping-hot chickpeas and warm lupins",
+      "source": "Mart. 5.78.21"
     }
-  ]
+  ],
+  "related": [
+    "cold",
+    "heat",
+    "spicy"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/calidus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: calidus</a> · <a href=\"https://logeion.uchicago.edu/ferveo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ferveo</a>",
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+    "<a href=\"https://logeion.uchicago.edu/flagro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: flagro</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 73, 329.",
+    "<a href=\"https://logeion.uchicago.edu/fervidus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fervidus</a>",
+    "Cicero, <em>Letters to Friends</em> 9.20.",
+    "Martial 5.78.21."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-22",
+    "by": "Claude"
+  }
 }

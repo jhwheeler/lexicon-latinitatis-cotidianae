@@ -5,6 +5,14 @@
     "adjective",
     "verb"
   ],
+  "also": [
+    "I’m vegetarian",
+    "I’m a vegetarian",
+    "without meat",
+    "meat-free",
+    "no meat",
+    "I don’t eat meat"
+  ],
   "domain": "culina",
   "terms": [
     {
@@ -35,6 +43,34 @@
         "Traupman 401"
       ],
       "comment": "Traupman’s word, from <span lang=\"la\">holus</span>, vegetables; not in Lewis &amp; Short."
+    },
+    {
+      "latin": "animālibus abstinēre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "abstain from animal food, live without meat",
+      "evidence": [
+        "Sen. Ep. 108.22: <span lang=\"la\">abstinēre animālibus coepī</span>",
+        "Sen. Ep. 108.17: <span lang=\"la\">quārē ille animālibus abstinuisset</span>"
+      ],
+      "comment": "Seneca’s phrase for the meatless diet he kept for a year as a young man, after Sotion had told him why Pythagoras, and later Sextius, <span lang=\"la\">animālibus abstinuisset</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Carne abstineō.",
+      "english": "I’m a vegetarian.",
+      "source": "M-O s.v. diet: vegetarian"
+    },
+    {
+      "latin": "Hīs ego īnstīnctus abstinēre animālibus coepī, et annō perāctō nōn tantum facilis erat mihi cōnsuētūdō sed dulcis.",
+      "english": "Spurred by this, I gave up eating meat, and after a year the habit was not only easy for me but pleasant.",
+      "source": "Sen. Ep. 108.22"
+    },
+    {
+      "latin": "Estne aliquid sine carne?",
+      "english": "Is there anything without meat?",
+      "source": "composed"
     }
   ],
   "related": [
@@ -42,11 +78,12 @@
   ],
   "sources": [
     "<a href=\"https://logeion.org/abstineo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: abstineo</a>",
-    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. diet: vegetarian."
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. diet: vegetarian.",
+    "Seneca, <em>Letters</em> 108.17, 22."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

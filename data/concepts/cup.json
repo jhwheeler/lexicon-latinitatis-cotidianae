@@ -8,7 +8,10 @@
     "cup of coffee",
     "cup of tea",
     "mug",
-    "teacup"
+    "teacup",
+    "a cupful",
+    "cupful",
+    "cupfuls"
   ],
   "domain": "culina",
   "terms": [
@@ -45,21 +48,6 @@
       ]
     }
   ],
-  "related": [
-    "glass-drinking",
-    "tea",
-    "coffee"
-  ],
-  "sources": [
-    "<a href=\"https://logeion.uchicago.edu/poculum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: poculum</a> · <a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: Adumbratio</a>",
-    "<a href=\"https://logeion.uchicago.edu/pocillum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pocillum</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 67, 70, 71, 299."
-  ],
-  "review": {
-    "status": "draft",
-    "date": "2026-11-12",
-    "by": "Claude"
-  },
   "phrases": [
     {
       "latin": "pōcillum caffeārium",
@@ -80,6 +68,32 @@
       "latin": "pōcillum theānum",
       "english": "a teacup",
       "source": "Traupman 391"
+    },
+    {
+      "latin": "Pōculum lactis plēnum in ōllam īnfunde.",
+      "english": "Pour a cupful of milk into the pot.",
+      "source": "composed"
+    },
+    {
+      "latin": "Tribus aut novem miscentur cyathīs pōcula commodīs?",
+      "english": "Are the cups mixed with three ladlefuls or with nine, as is fitting?",
+      "source": "Hor. C. 3.19.11–12"
     }
-  ]
+  ],
+  "related": [
+    "glass-drinking",
+    "tea",
+    "coffee"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/poculum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: poculum</a> · <a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: Adumbratio</a>",
+    "<a href=\"https://logeion.uchicago.edu/pōcillum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pōcillum</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 67, 70, 71, 299.",
+    "Horace, <em>Odes</em> 3.19.11–12."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-22",
+    "by": "Claude"
+  }
 }

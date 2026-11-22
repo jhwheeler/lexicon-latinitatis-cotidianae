@@ -2,6 +2,11 @@
   "id": "recipe",
   "english": "recipe",
   "pos": "noun",
+  "also": [
+    "follow a recipe",
+    "according to the recipe",
+    "as the recipe says"
+  ],
   "domain": "natura",
   "terms": [
     {
@@ -29,15 +34,26 @@
       "latin": "ratiō parandī",
       "english": "the way of preparing it",
       "source": "composed"
+    },
+    {
+      "latin": "Ita faciāmus ut praecipitur: duo ōva, nōn tria.",
+      "english": "Let’s do as the recipe says: two eggs, not three.",
+      "source": "composed"
+    },
+    {
+      "latin": "quod sī nōn ita, ut praecēpimus, permiscueris, subsīdent arōmata et adūrentur",
+      "english": "but if you don’t stir it as we have told you, the spices will sink and burn",
+      "source": "Col. 12.20.4"
     }
   ],
   "sources": [
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. recipe.",
-    "<a href=\"https://logeion.uchicago.edu/formula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: formula</a> · <a href=\"https://logeion.uchicago.edu/culinarius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: culinarius</a> · <a href=\"https://logeion.uchicago.edu/praeceptum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praeceptum</a>"
+    "<a href=\"https://logeion.uchicago.edu/formula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: formula</a> · <a href=\"https://logeion.uchicago.edu/culinarius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: culinarius</a> · <a href=\"https://logeion.uchicago.edu/praeceptum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praeceptum</a> · <a href=\"https://logeion.uchicago.edu/praecipio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praecipio</a>",
+    "Columella, <em>De re rustica</em> 12.20.4."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-15",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

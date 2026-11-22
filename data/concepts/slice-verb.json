@@ -3,6 +3,10 @@
   "english": "slice",
   "sense": "cut into slices",
   "pos": "verb",
+  "also": [
+    "cut into pieces",
+    "cut up into pieces"
+  ],
   "domain": "culina",
   "terms": [
     {
@@ -23,6 +27,13 @@
       "comment": "Our phrase on <span lang=\"la\">segmentum</span>, which is the slice of Traupman (pp. 73, 380) and Morgan–Owens (s.v. slice) and “a piece cut off, a slice” in Lewis &amp; Short; <span lang=\"la\">frusta</span> are pieces of any shape."
     }
   ],
+  "phrases": [
+    {
+      "latin": "pars in frusta secant veribusque trementia fīgunt",
+      "english": "some cut the meat into pieces and fix it, still quivering, on spits",
+      "source": "Verg. A. 1.212"
+    }
+  ],
   "related": [
     "slice-noun",
     "cut"
@@ -32,11 +43,12 @@
     "<a href=\"https://logeion.uchicago.edu/disseco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: disseco</a> · <a href=\"https://logeion.uchicago.edu/frustum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: frustum</a> · <a href=\"https://logeion.uchicago.edu/segmentum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: segmentum</a>",
     "Enrico Levi and Arturo Bini, <em>Il latino come lingua viva</em> (1937), p. 2, s.v. affettare.",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 73, 380.",
-    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. slice."
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. slice.",
+    "Vergil, <em>Aeneid</em> 1.212."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-16",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

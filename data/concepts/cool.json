@@ -2,6 +2,19 @@
   "id": "cool",
   "english": "cool",
   "pos": "verb",
+  "also": [
+    "cool off",
+    "cool (great)",
+    "that's cool!",
+    "let it cool down",
+    "let it cool",
+    "cool down",
+    "wait for it to cool",
+    "leave it to cool",
+    "cool down (of food)",
+    "let it rest",
+    "leave it to rest"
+  ],
   "domain": "culina",
   "terms": [
     {
@@ -22,12 +35,47 @@
         "Traupman 150"
       ],
       "comment": "Traupman’s colloquial “cool!”, <span lang=\"la\">Mīrandum est!</span> The gerundive means “to be wondered at, wonderful” (Lewis &amp; Short s.v. <span lang=\"la\">mīror</span>); the slang sense is modern."
+    },
+    {
+      "latin": "refrīgēscō, refrīgēscere, refrīxī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "grow cool, cool down (of something hot)",
+      "evidence": [
+        "Cato Agr. 105: <span lang=\"la\">ubi id vīnum refrīxerit</span>"
+      ],
+      "comment": "The intransitive verb: the food cools by itself, where <span lang=\"la\">refrīgerō</span> is to cool it. Cato also says <span lang=\"la\">frīgēscō</span>: <span lang=\"la\">sinitō frīgēscat</span>, let it cool (Agr. 95)."
     }
   ],
   "phrases": [
     {
       "latin": "cucurbita cocta et refrīgerāta",
       "english": "cooked and cooled pumpkin",
+      "source": "composed"
+    },
+    {
+      "latin": "ubi erit tam crassum quam viscum, sinitō frīgēscat",
+      "english": "when it is as thick as birdlime, let it cool",
+      "source": "Cato Agr. 95"
+    },
+    {
+      "latin": "Nimis calidum est; sine frīgēscat.",
+      "english": "It’s too hot; let it cool down.",
+      "source": "composed"
+    },
+    {
+      "latin": "Cum ferbuerit, coctum tollēs ut refrīgēscat.",
+      "english": "When it has boiled, take it off the heat to cool.",
+      "source": "Apic. 4.2.36"
+    },
+    {
+      "latin": "Nimis calidum est; sine paulisper refrīgēscat.",
+      "english": "It’s too hot; let it cool for a bit.",
+      "source": "composed"
+    },
+    {
+      "latin": "Carnem ē furnō exēmimus; sine paulisper quiēscat.",
+      "english": "We’ve taken the meat out of the oven; let it rest for a bit.",
       "source": "composed"
     }
   ],
@@ -37,18 +85,17 @@
     "refrigerate"
   ],
   "sources": [
-    "<a href=\"https://alatius.com/ls/index.php?l=refrigero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: refrigero</a>",
+    "<a href=\"https://alatius.com/ls/index.php?l=refrigero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: refrigero</a> · <a href=\"https://logeion.uchicago.edu/refrigesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: refrigesco</a> · <a href=\"https://logeion.uchicago.edu/frigesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: frigesco</a>",
     "<a href=\"https://logeion.uchicago.edu/miror\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: miror</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 63, 297."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 63, 297.",
+    "Cato, <em>De agricultura</em> 95, 105.",
+    "Cato, <em>De agri cultura</em> 95; 105.",
+    "Columella, <em>De re rustica</em> 12.48.3.",
+    "Apicius, <em>De re coquinaria</em> 4.2.36."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "by": "Claude"
-  },
-  "also": [
-    "cool off",
-    "cool (great)",
-    "that's cool!"
-  ]
+  }
 }

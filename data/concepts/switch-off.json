@@ -7,9 +7,15 @@
     "turn the light off",
     "turn off the phone",
     "turn off the computer",
-    "shut down"
+    "shut down",
+    "turn off the stove",
+    "turn off the oven",
+    "turn off the heat"
   ],
   "domain": "domus",
+  "also_under": [
+    "computatra"
+  ],
   "terms": [
     {
       "latin": "exstinguō, exstinguere",
@@ -48,6 +54,11 @@
       "latin": "Exstingue lūmen.",
       "english": "Turn the light off.",
       "source": "composed"
+    },
+    {
+      "latin": "Foculum exstingue; cēna cocta est.",
+      "english": "Turn off the stove; dinner is cooked.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -62,11 +73,8 @@
     "<a href=\"https://logeion.uchicago.edu/expedio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: expedio</a>"
   ],
   "review": {
-    "status": "reviewed",
-    "date": "2026-11-16",
+    "status": "draft",
+    "date": "2026-11-22",
     "by": "Jack"
-  },
-  "also_under": [
-    "computatra"
-  ]
+  }
 }

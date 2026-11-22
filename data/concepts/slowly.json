@@ -9,14 +9,18 @@
     "speak slowly",
     "speak more slowly",
     "speak louder",
-    "classroom commands"
+    "classroom commands",
+    "eat slowly",
+    "don’t eat so fast",
+    "chew properly",
+    "don’t gobble"
   ],
+  "domain": "culina",
   "also_under": [
     "corpus",
     "sermo",
     "verba"
   ],
-  "domain": "culina",
   "terms": [
     {
       "latin": "lentē",
@@ -61,6 +65,16 @@
       "latin": "tardē percipere",
       "english": "to be slow to grasp",
       "source": "Cic. Rosc. Com. 31 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "Nōlī tam avidē ēsse; lentē mande.",
+      "english": "Don’t eat so fast; chew slowly.",
+      "source": "composed"
+    },
+    {
+      "latin": "asinī lentissimē mandunt",
+      "english": "donkeys chew very slowly",
+      "source": "Plin. NH 17.54 (Lewis &amp; Short)"
     }
   ],
   "related": [
@@ -74,11 +88,12 @@
     "<a href=\"https://logeion.org/lente\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lente</a>",
     "<a href=\"https://logeion.uchicago.edu/lentus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lentus</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>.",
-    "<a href=\"https://logeion.uchicago.edu/tardus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tardus</a>"
+    "<a href=\"https://logeion.uchicago.edu/tardus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tardus</a>",
+    "Pliny, <em>Naturalis historia</em> 17.54."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

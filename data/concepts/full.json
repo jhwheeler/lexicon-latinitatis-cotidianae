@@ -4,12 +4,17 @@
   "sense": "having eaten enough",
   "pos": "adjective",
   "also": [
-    "stuffed"
+    "stuffed",
+    "I’m full",
+    "I’ve had enough",
+    "no more for me",
+    "full up",
+    "I’ve eaten enough"
   ],
+  "domain": "culina",
   "also_under": [
     "verba"
   ],
-  "domain": "culina",
   "terms": [
     {
       "latin": "satur, satura, saturum",
@@ -23,6 +28,21 @@
       "latin": "Saturī erant omnēs.",
       "english": "Everyone was full.",
       "source": "Libellus IV, <span lang=\"la\">Diēs Grātulātiōnis</span>"
+    },
+    {
+      "latin": "Ubi satur sum, nūlla crepitant; quandō ēsuriō, tum crepant.",
+      "english": "When I’m full, my insides don’t rumble at all; when I’m hungry, then they rumble.",
+      "source": "Plaut. Men. 926"
+    },
+    {
+      "latin": "exāctō contentus tempore vītā cēdat utī convīva satur",
+      "english": "content with the time he has had, let him leave life like a guest who has eaten his fill",
+      "source": "Hor. S. 1.1.118–119"
+    },
+    {
+      "latin": "Satur sum, mamma; nihil amplius volō.",
+      "english": "I’m full, Mum; I don’t want any more.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -31,11 +51,13 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/satur\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: satur</a>",
-    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+    "Plautus, <em>Menaechmi</em> 926.",
+    "Horace, <em>Satires</em> 1.1.118–119."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

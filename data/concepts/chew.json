@@ -2,6 +2,10 @@
   "id": "chew",
   "english": "chew",
   "pos": "verb",
+  "also": [
+    "chew properly",
+    "chew your food"
+  ],
   "domain": "culina",
   "terms": [
     {
@@ -9,6 +13,17 @@
       "status": "recommended",
       "period": "classical",
       "gloss": "chew or eat"
+    },
+    {
+      "latin": "mandō, mandere, mandī, mānsum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "chew",
+      "evidence": [
+        "Cic. N. D. 2.122: <span lang=\"la\">alia sūgunt, alia carpunt, alia vorant, alia mandunt</span>",
+        "Plin. NH 17.54: <span lang=\"la\">asinī lentissimē mandunt</span> (Lewis &amp; Short)"
+      ],
+      "comment": "The classical verb for chewing (Cicero). <span lang=\"la\">Mandūcō</span>, its lengthened form, is ante-classical and post-Augustan (Lewis &amp; Short) and became the Romance word for eating. Not <span lang=\"la\">mandō, mandāre</span>, entrust."
     }
   ],
   "phrases": [
@@ -22,11 +37,12 @@
     "eat"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/manduco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: manduco</a> · <a href=\"https://logeion.uchicago.edu/lentus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lentus</a>"
+    "<a href=\"https://logeion.uchicago.edu/manduco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: manduco</a> · <a href=\"https://logeion.uchicago.edu/lentus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lentus</a> · <a href=\"https://logeion.uchicago.edu/mando\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mando</a>",
+    "Cicero, <em>De natura deorum</em> 2.122."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

@@ -2,6 +2,13 @@
   "id": "play",
   "english": "play",
   "pos": "verb",
+  "also": [
+    "go outside and play",
+    "go out to play",
+    "may I go out to play?",
+    "don’t play with your food",
+    "playing with food"
+  ],
   "domain": "sermo",
   "terms": [
     {
@@ -25,6 +32,11 @@
       "latin": "Exī forās et lūde cum amīcīs tuīs.",
       "english": "Go outside and play with your friends.",
       "source": "Traupman 37"
+    },
+    {
+      "latin": "Nōlī cibō lūdere; aut ēs aut surge.",
+      "english": "Don’t play with your food; either eat or get down.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -38,17 +50,12 @@
     "<a href=\"https://logeion.uchicago.edu/ludo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ludo</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 37."
   ],
-  "replaces": [
-    "entry-75"
-  ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "by": "Claude"
   },
-  "also": [
-    "go outside and play",
-    "go out to play",
-    "may I go out to play?"
+  "replaces": [
+    "entry-75"
   ]
 }

@@ -2,6 +2,12 @@
   "id": "oven",
   "english": "oven",
   "pos": "noun",
+  "also": [
+    "turn on the oven",
+    "preheat the oven",
+    "heat the oven",
+    "a hot oven"
+  ],
   "domain": "culina",
   "terms": [
     {
@@ -13,18 +19,30 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "Furnum accende, ut calefīat priusquam placentam indimus.",
+      "english": "Turn the oven on, so that it heats up before we put the cake in.",
+      "source": "composed"
+    },
+    {
+      "latin": "Ūnā edepol operā in furnum calidum conditō atque ibi torrētō mē prō pāne rubidō",
+      "english": "While you’re at it, shove me into a hot oven and bake me there like a brown loaf",
+      "source": "Plaut. Cas. 2.5.1 (Lewis &amp; Short)"
+    }
+  ],
   "related": [
     "hearth",
     "cook",
     "roast"
   ],
   "sources": [
-    "<a href=\"https://alatius.com/ls/index.php?l=furnus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: furnus</a>",
+    "<a href=\"https://alatius.com/ls/index.php?l=furnus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: furnus</a> · <a href=\"https://logeion.uchicago.edu/calefacio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: calefacio</a> · <a href=\"https://logeion.uchicago.edu/accendo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: accendo</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 165."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

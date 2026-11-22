@@ -3,10 +3,29 @@
   "english": "cold",
   "sense": "in temperature",
   "pos": "adjective",
+  "also": [
+    "it’s cold",
+    "it’s cold today",
+    "freezing (cold)",
+    "turn cold",
+    "get cold",
+    "grow cold",
+    "it’s getting cold",
+    "ice-cold",
+    "icy cold",
+    "very cold",
+    "cold weather",
+    "it’s gone cold",
+    "it’s got cold",
+    "your food’s getting cold",
+    "this is cold",
+    "the food is cold",
+    "served cold"
+  ],
+  "domain": "culina",
   "also_under": [
     "verba"
   ],
-  "domain": "culina",
   "terms": [
     {
       "latin": "frīgidus, frīgida, frīgidum",
@@ -75,6 +94,31 @@
       "latin": "tempestās frīgida (gelida)",
       "english": "cold weather",
       "source": "Traupman 293"
+    },
+    {
+      "latin": "Cēna refrīxit; calefaciam.",
+      "english": "Dinner’s gone cold; I’ll heat it up.",
+      "source": "composed"
+    },
+    {
+      "latin": "Comede, priusquam frīgēscat.",
+      "english": "Eat it before it gets cold.",
+      "source": "composed"
+    },
+    {
+      "latin": "Ubi id vīnum refrīxerit, in dōlium quadrāgēnārium īnfunditō.",
+      "english": "When the wine has cooled, pour it into a forty-amphora jar.",
+      "source": "Cato Agr. 105"
+    },
+    {
+      "latin": "Hoc jūs frīgidum appositum est; calefac, quaesō.",
+      "english": "This soup was served cold; please heat it up.",
+      "source": "composed"
+    },
+    {
+      "latin": "sequēns ferculum fuit sciribilīta frīgida et suprā mel caldum īnfūsum excellente Hispānum",
+      "english": "the next course was a cold tart with excellent hot Spanish honey poured over it",
+      "source": "Petr. 66.1"
     }
   ],
   "related": [
@@ -82,29 +126,18 @@
     "ice"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/perfrigidus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: perfrigidus</a>",
+    "<a href=\"https://logeion.uchicago.edu/perfrigidus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: perfrigidus</a> · <a href=\"https://logeion.uchicago.edu/refrigesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: refrigesco</a>",
     "<a href=\"https://logeion.uchicago.edu/frigidus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: frigidus</a>",
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
     "<a href=\"https://logeion.uchicago.edu/gelidus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gelidus</a>",
     "<a href=\"https://logeion.uchicago.edu/frigesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: frigesco</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 43, 293."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 43, 293.",
+    "Cato, <em>De agricultura</em> 105.",
+    "Petronius, <em>Satyrica</em> 66.1."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "by": "Claude"
-  },
-  "also": [
-    "it’s cold",
-    "it’s cold today",
-    "freezing (cold)",
-    "turn cold",
-    "get cold",
-    "grow cold",
-    "it’s getting cold",
-    "ice-cold",
-    "icy cold",
-    "very cold",
-    "cold weather"
-  ]
+  }
 }

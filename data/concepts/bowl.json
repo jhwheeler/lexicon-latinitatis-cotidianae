@@ -3,7 +3,10 @@
   "english": "bowl",
   "pos": "noun",
   "also": [
-    "dish"
+    "dish",
+    "a bowl of soup",
+    "bowl of soup",
+    "a bowl of"
   ],
   "domain": "culina",
   "terms": [
@@ -41,6 +44,18 @@
       "comment": "Classically the bowl in which wine was mixed with water; Andresian’s large bowl. The form <span lang=\"la\">crātēr</span> is mostly poetic."
     }
   ],
+  "phrases": [
+    {
+      "latin": "Catīnum jūris calidī tibi apposuī.",
+      "english": "I’ve put a bowl of hot soup in front of you.",
+      "source": "composed"
+    },
+    {
+      "latin": "In summō habuimus cāseum mollem … et hēpatia in catillīs",
+      "english": "To finish we had soft cheese … and little livers in bowls",
+      "source": "Petr. 66"
+    }
+  ],
   "related": [
     "small-dish",
     "cup",
@@ -53,15 +68,16 @@
     "<a href=\"https://logeion.uchicago.edu/catillus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: catillus</a>",
     "<a href=\"https://logeion.uchicago.edu/cratera\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cratera</a>",
     "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 5.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 282, 305."
-  ],
-  "replaces": [
-    "entry-119",
-    "smoothie-119"
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 282, 305.",
+    "Petronius, <em>Satyrica</em> 66."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-22",
     "by": "Claude"
-  }
+  },
+  "replaces": [
+    "entry-119",
+    "smoothie-119"
+  ]
 }

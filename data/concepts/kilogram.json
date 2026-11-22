@@ -3,7 +3,11 @@
   "english": "kilogram",
   "pos": "noun",
   "also": [
-    "kilo"
+    "kilo",
+    "half a kilo",
+    "a kilo",
+    "a kilo of",
+    "half a kilogram"
   ],
   "domain": "urbs",
   "terms": [
@@ -13,17 +17,32 @@
       "period": "modern"
     }
   ],
+  "phrases": [
+    {
+      "latin": "Dīmidium chīliogrammatis cerasōrum emāmus.",
+      "english": "Let’s buy half a kilo of cherries.",
+      "source": "composed"
+    },
+    {
+      "latin": "ego contrā plūs lībram comēdī",
+      "english": "I, on the other hand, ate more than a pound",
+      "source": "Petr. 66"
+    }
+  ],
   "related": [
     "pound",
     "scales",
     "tablespoon"
   ],
   "sources": [
-    "Neo-Latin."
+    "<a href=\"https://logeion.uchicago.edu/dimidium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dimidium</a> · <a href=\"https://logeion.uchicago.edu/selibra\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: selibra</a>",
+    "Neo-Latin.",
+    "Cato, <em>De agri cultura</em> 84.",
+    "Petronius, <em>Satyrica</em> 66."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

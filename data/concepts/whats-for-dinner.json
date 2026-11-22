@@ -1,0 +1,78 @@
+{
+  "id": "whats-for-dinner",
+  "english": "what’s for dinner?",
+  "pos": "phrase",
+  "also": [
+    "what’s for breakfast?",
+    "what’s for lunch?",
+    "what’s for supper?",
+    "what are we having?",
+    "what are we having for dinner?",
+    "what’s for tea?"
+  ],
+  "domain": "culina",
+  "terms": [
+    {
+      "latin": "Quid cēnae est?",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "what is there for dinner?",
+      "grammar": "quid with the partitive genitive; for the other meals jentāculī, prandiī",
+      "evidence": [
+        "Ter. Haut. 211–212: <span lang=\"la\">ut videam nōbīs quid cēnae siet</span>"
+      ],
+      "comment": "Terence’s old man goes indoors “to see what we have for dinner”: <span lang=\"la\">quid</span> with the genitive asks what there is of a thing, as <span lang=\"la\">quid novī?</span> asks for news. The same question serves the other meals: <span lang=\"la\">Quid jentāculī est?</span>, <span lang=\"la\">Quid prandiī est?</span>."
+    },
+    {
+      "latin": "Quid in cēnā habēbimus?",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "what are we having for dinner?",
+      "evidence": [
+        "Petr. 66.1: <span lang=\"la\">quid habuistis in cēnā?</span>",
+        "Traupman 304: <span lang=\"la\">Quid in cēnā habēbis?</span>"
+      ],
+      "comment": "Trimalchio asks a guest what they had at a dinner: <span lang=\"la\">habēre in cēnā</span> is Petronius’s own idiom, not an English calque."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Ego ībō hinc intrō, ut videam nōbīs quid cēnae siet.",
+      "english": "I’ll go in and see what we have for dinner.",
+      "source": "Ter. Haut. 211–212"
+    },
+    {
+      "latin": "quid habuistis in cēnā?",
+      "english": "what did you have at dinner?",
+      "source": "Petr. 66.1"
+    },
+    {
+      "latin": "Quid cēnae est, tata? — Pullus et pīsa.",
+      "english": "What’s for dinner, Dad? — Chicken and peas.",
+      "source": "composed"
+    },
+    {
+      "latin": "Quid jentāculī est? — Puls cum melle.",
+      "english": "What’s for breakfast? — Porridge with honey.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "dinner",
+    "breakfast",
+    "lunch",
+    "meal",
+    "dinner-is-ready"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/cena\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cena</a>",
+    "Terence, <em>Heauton timorumenos</em> 211–212.",
+    "Petronius, <em>Satyrica</em> 66.1.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 304."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-22",
+    "by": "Claude"
+  }
+}

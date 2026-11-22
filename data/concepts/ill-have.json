@@ -1,0 +1,82 @@
+{
+  "id": "ill-have",
+  "english": "I’ll have …",
+  "sense": "ordering in a café or restaurant",
+  "pos": "phrase",
+  "also": [
+    "I’d like … (ordering)",
+    "I’d like …, please",
+    "can I have …?",
+    "I’ll take …",
+    "for me, …"
+  ],
+  "domain": "urbs",
+  "terms": [
+    {
+      "latin": "… velim, quaesō.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "I’d like …, please.",
+      "grammar": "the polite present subjunctive of volō, with the dish in the accusative",
+      "evidence": [
+        "Traupman 68: <span lang=\"la\">Būbulam assam velim, quaesō.</span>"
+      ],
+      "comment": "<span lang=\"la\">Velim</span>, “I should like”, is the polite way of saying what one wants, everywhere in Cicero’s letters; see “want”. To a child: <span lang=\"la\">Quid vīs?</span>"
+    },
+    {
+      "latin": "… sūmam.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "I’ll have (a meal, a dish)",
+      "evidence": [
+        "Traupman 67: <span lang=\"la\">Itaque jentāculum sūmam, quaesō.</span>"
+      ],
+      "comment": "<span lang=\"la\">Sūmere</span> of taking a meal (<span lang=\"la\">cibum sūmere</span>, Lewis &amp; Short s.v. <span lang=\"la\">sūmō</span>)."
+    },
+    {
+      "latin": "Accipiam …",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "I’ll take …",
+      "evidence": [
+        "Traupman 68: <span lang=\"la\">Accipiam acētāria.</span>",
+        "Traupman 68: <span lang=\"la\">Accipiam vīnum sanguineum.</span>"
+      ],
+      "comment": "Traupman’s waiter dialogue; we have found no classical instance of accipere for ordering a dish."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Piscem assum velim, quaesō; puer pānem et cāseum vult.",
+      "english": "I’d like the grilled fish, please; the boy wants bread and cheese.",
+      "source": "composed"
+    },
+    {
+      "latin": "Būbulam assam velim, quaesō.",
+      "english": "I’d like roast beef, please.",
+      "source": "Traupman 68"
+    },
+    {
+      "latin": "Quīn bene māne est. Itaque jentāculum sūmam, quaesō.",
+      "english": "Why, it’s early in the morning. So I’ll have breakfast, please.",
+      "source": "Traupman 67"
+    }
+  ],
+  "related": [
+    "want",
+    "order-restaurant",
+    "waiter",
+    "menu",
+    "the-same-for-me",
+    "could-we-have"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/volo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: volo</a> · <a href=\"https://logeion.uchicago.edu/sumo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sumo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 67, 68."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-22",
+    "by": "Claude"
+  }
+}

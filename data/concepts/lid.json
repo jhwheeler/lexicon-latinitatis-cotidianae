@@ -3,7 +3,12 @@
   "english": "lid",
   "pos": "noun",
   "also": [
-    "cap"
+    "cap",
+    "cover with a lid",
+    "put the lid on",
+    "take the lid off",
+    "lift the lid",
+    "uncover the pan"
   ],
   "domain": "culina",
   "terms": [
@@ -32,6 +37,21 @@
       "latin": "Dōnec māchina movērī dēsierit, operculum nōlī aperīre.",
       "english": "Don’t open the lid until the machine has stopped moving.",
       "source": "composed"
+    },
+    {
+      "latin": "Operculum inpōnitō, relinquitō quā interspīret.",
+      "english": "Put the lid on, and leave a gap for it to breathe.",
+      "source": "Cato Agr. 112"
+    },
+    {
+      "latin": "posteā trānsfunditō in fidēliam pīcātam, operculō tegitō",
+      "english": "then pour it into a pitched jar and cover it with a lid",
+      "source": "Col. 12.48.3"
+    },
+    {
+      "latin": "Operculum tolle, ut vapor exeat.",
+      "english": "Take the lid off to let the steam out.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -41,13 +61,15 @@
     "cap"
   ],
   "sources": [
-    "<a href=\"https://neolatinlexicon.org/latin/lid_cap_of_container/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: lid / container cap</a> · <a href=\"https://alatius.com/ls/index.php?l=operculum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: operculum</a>",
+    "<a href=\"https://neolatinlexicon.org/latin/lid_cap_of_container/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: lid / container cap</a> · <a href=\"https://alatius.com/ls/index.php?l=operculum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: operculum</a> · <a href=\"https://logeion.uchicago.edu/tego\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tego</a> · <a href=\"https://logeion.uchicago.edu/tollo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tollo</a>",
     "<a href=\"https://alatius.com/ls/index.php?l=desino\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: desino</a> · <a href=\"https://alatius.com/ls/index.php?l=aperio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aperio</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 298."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 298.",
+    "Cato, <em>De agri cultura</em> 112.",
+    "Columella, <em>De re rustica</em> 12.48.3."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

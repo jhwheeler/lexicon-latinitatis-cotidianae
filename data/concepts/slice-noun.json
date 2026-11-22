@@ -5,7 +5,11 @@
   "pos": "noun",
   "also": [
     "strip",
-    "strip (of bacon)"
+    "strip (of bacon)",
+    "a slice of bread",
+    "slice of bread",
+    "a slice of cheese",
+    "slice of toast"
   ],
   "domain": "culina",
   "terms": [
@@ -18,6 +22,41 @@
         "Traupman 67",
         "Traupman 73"
       ]
+    },
+    {
+      "latin": "quadra, quadrae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a square piece; a slice of bread, cheese, or cake",
+      "evidence": [
+        "Mart. 12.32.18: <span lang=\"la\">Nec quadra deerat cāseī Tolōsātis</span>",
+        "Hor. Ep. 1.17.49: <span lang=\"la\">dīviduō findētur mūnere quadra</span>",
+        "Sen. Ben. 4.29.2: <span lang=\"la\">quadra pānis</span> (Lewis &amp; Short)",
+        "M-O s.v. slice: <span lang=\"la\">quadra</span>, if square, as a slice of bread"
+      ],
+      "comment": "A piece cut from a round loaf scored into sections, or from a cheese or a cake. Vergil’s Trojans eat even the <span lang=\"la\">quadrae</span> of bread they had used as plates (A. 7.115), and <span lang=\"la\">alienā vīvere quadrā</span> is to live off another man’s table (Juv. 5.2)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "pauca segmenta",
+      "english": "just a few strips",
+      "source": "Traupman 67"
+    },
+    {
+      "latin": "Vīn' quadram pānis cum būtȳrō?",
+      "english": "Would you like a slice of bread and butter?",
+      "source": "composed"
+    },
+    {
+      "latin": "Nec quadra deerat cāseī Tolōsātis",
+      "english": "Nor was there any lack of a slice of Toulouse cheese",
+      "source": "Mart. 12.32.18"
+    },
+    {
+      "latin": "dīviduō findētur mūnere quadra",
+      "english": "the slice will be split, a gift shared between two",
+      "source": "Hor. Ep. 1.17.49"
     }
   ],
   "related": [
@@ -25,19 +64,17 @@
     "piece"
   ],
   "sources": [
-    "<a href=\"https://alatius.com/ls/index.php?l=segmentum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: segmentum</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 67, 73."
+    "<a href=\"https://alatius.com/ls/index.php?l=segmentum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: segmentum</a> · <a href=\"https://logeion.uchicago.edu/quadra\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quadra</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 67, 73.",
+    "Martial 12.32.18.",
+    "Horace, <em>Epistles</em> 1.17.49.",
+    "Vergil, <em>Aeneid</em> 7.115.",
+    "Juvenal, <em>Satires</em> 5.2.",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. slice."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "by": "Claude"
-  },
-  "phrases": [
-    {
-      "latin": "pauca segmenta",
-      "english": "just a few strips",
-      "source": "Traupman 67"
-    }
-  ]
+  }
 }

@@ -2,6 +2,9 @@
   "id": "fork",
   "english": "fork",
   "pos": "noun",
+  "also": [
+    "use your fork"
+  ],
   "domain": "culina",
   "terms": [
     {
@@ -28,6 +31,13 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "Furcillā ūtere.",
+      "english": "Use your fork.",
+      "source": "composed"
+    }
+  ],
   "notes": {
     "furcilla": {
       "html": "Classically a small (pitch)fork (Varro, RR 1.49.1; Cicero, Att. 16.2.4); the table fork is a modern application (Traupman 71). Not <span lang=\"la\">fuscinula</span>, a Vulgate word for a sacrificial three-pronged fork.",
@@ -43,8 +53,8 @@
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 318."
   ],
   "review": {
-    "status": "reviewed",
-    "date": "2026-11-16",
+    "status": "draft",
+    "date": "2026-11-22",
     "by": "Jack"
   }
 }

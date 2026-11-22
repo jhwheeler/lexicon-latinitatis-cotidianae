@@ -2,6 +2,15 @@
   "id": "ferment",
   "english": "ferment",
   "pos": "verb",
+  "also": [
+    "let it rise",
+    "let the dough rise",
+    "rise (of dough)",
+    "prove (dough)",
+    "leaven",
+    "leavened",
+    "has the dough risen?"
+  ],
   "domain": "natura",
   "terms": [
     {
@@ -27,6 +36,26 @@
       "latin": "Lac fermentātur.",
       "english": "The milk is fermenting.",
       "source": "composed"
+    },
+    {
+      "latin": "tulit igitur populus cōnspersam farīnam antequam fermentārētur",
+      "english": "so the people took their dough before it was leavened",
+      "source": "Vulg. Ex. 12.34"
+    },
+    {
+      "latin": "fīcus … in dōleum vel in amphorās conditur et ibi sinitur fermentārī",
+      "english": "the figs are put into a jar or into amphorae and there left to ferment",
+      "source": "Col. 12.17.1"
+    },
+    {
+      "latin": "Sine fermentētur; post hōram in furnum mittēmus.",
+      "english": "Let it rise; in an hour we’ll put it in the oven.",
+      "source": "composed"
+    },
+    {
+      "latin": "Jamne fermentāta est? — Nōndum; exspectēmus paulisper.",
+      "english": "Has it risen yet? — Not yet; let’s wait a little.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -36,11 +65,13 @@
     "begin-to-boil"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/fermento\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fermento</a> · <a href=\"https://logeion.uchicago.edu/fermentesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fermentesco</a>"
+    "<a href=\"https://logeion.uchicago.edu/fermento\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fermento</a> · <a href=\"https://logeion.uchicago.edu/fermentesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fermentesco</a>",
+    "Vulgate, Exodus 12.34.",
+    "Columella, <em>De re rustica</em> 12.17.1."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

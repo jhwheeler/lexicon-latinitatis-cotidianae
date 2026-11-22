@@ -3,6 +3,12 @@
   "english": "glass",
   "sense": "for drinking",
   "pos": "noun",
+  "also": [
+    "a glass of water",
+    "a glass of wine",
+    "glass of water",
+    "glass of wine"
+  ],
   "domain": "culina",
   "terms": [
     {
@@ -35,6 +41,16 @@
       "latin": "Hoc pōculum tibi est, illud mātrī, hoc mihi.",
       "english": "This glass is for you, that one for Mum, this one for me.",
       "source": "composed"
+    },
+    {
+      "latin": "Dā mihi, sīs, pōculum aquae.",
+      "english": "Give me a glass of water, please.",
+      "source": "composed"
+    },
+    {
+      "latin": "quīcumque pōtum dederit ūnī ex minimīs istīs calicem aquae frīgidae tantum in nōmine discipulī",
+      "english": "whoever gives one of these little ones even a cup of cold water to drink because he is a disciple",
+      "source": "Vulg. Mt. 10.42"
     }
   ],
   "related": [
@@ -44,11 +60,12 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/hyalus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: hyalus</a>",
     "<a href=\"https://alatius.com/ls/index.php?l=poculum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: poculum</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 321."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 321.",
+    "The Vulgate: Matthew 10.42."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

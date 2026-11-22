@@ -4,7 +4,10 @@
   "pos": "noun",
   "also": [
     "chunk",
-    "bit"
+    "bit",
+    "a piece of cake",
+    "a bit of cake",
+    "a slice of cake"
   ],
   "domain": "culina",
   "terms": [
@@ -48,8 +51,27 @@
       "latin": "pānis",
       "english": "a piece of bread (often no separate word for “piece”)",
       "source": "Traupman 360"
+    },
+    {
+      "latin": "Frustum placentae tibi servāvī.",
+      "english": "I’ve saved you a piece of cake.",
+      "source": "composed"
+    },
+    {
+      "latin": "Cum mittis turdumve mihi quadramve placentae",
+      "english": "When you send me a thrush or a piece of cake",
+      "source": "Mart. 6.75.1"
     }
   ],
+  "notes": {
+    "frustum": {
+      "form": "frustum",
+      "claim": "short u",
+      "against": "Traupman <span lang=\"la\">frūstum</span>, pp. 72, 360",
+      "html": "A different word from <span lang=\"la\">frūstrā</span>, “in vain”, whose u is long; Traupman himself prints <span lang=\"la\">frustum</span> on pp. 282 and 336.",
+      "ruling": "frustra"
+    }
+  },
   "related": [
     "crumb",
     "slice-noun",
@@ -59,20 +81,12 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/frustum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: frustum</a> · <a href=\"https://atlas.perseus.tufts.edu/dictionaries/entry/urn%3Acite2%3Ascaife-viewer%3Adictionaries.v1%3Aelementary-latin-n6508/\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis: frustum</a> · <a href=\"https://www.alatius.com/latin/bennetthidden.html\" rel=\"noopener noreferrer\" target=\"_blank\">Bennett: hidden quantities, with later corrections</a> · <a href=\"https://logeion.uchicago.edu/particula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: particula</a>",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio: numbered food and kitchen sections</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 72, 360."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 72, 360.",
+    "Martial 6.75.1."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "by": "Claude"
-  },
-  "notes": {
-    "frustum": {
-      "form": "frustum",
-      "claim": "short u",
-      "against": "Traupman <span lang=\"la\">frūstum</span>, pp. 72, 360",
-      "html": "A different word from <span lang=\"la\">frūstrā</span>, “in vain”, whose u is long; Traupman himself prints <span lang=\"la\">frustum</span> on pp. 282 and 336.",
-      "ruling": "frustra"
-    }
   }
 }

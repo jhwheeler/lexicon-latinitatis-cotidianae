@@ -9,7 +9,10 @@
     "I’m starving",
     "I’m dying of hunger",
     "starve",
-    "I’m starved"
+    "I’m starved",
+    "I’m not hungry",
+    "not hungry",
+    "are you hungry?"
   ],
   "domain": "culina",
   "terms": [
@@ -69,6 +72,11 @@
       "latin": "fame cōnficī",
       "english": "to starve",
       "source": "Traupman 384"
+    },
+    {
+      "latin": "Nōn ēsuriō; modo prandī.",
+      "english": "I’m not hungry; I’ve just had lunch.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -85,14 +93,14 @@
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 67, 330."
   ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-22",
+    "by": "Claude"
+  },
   "replaces": [
     "entry-80",
     "entry-261",
     "libelli-261"
-  ],
-  "review": {
-    "status": "draft",
-    "date": "2026-11-12",
-    "by": "Claude"
-  }
+  ]
 }

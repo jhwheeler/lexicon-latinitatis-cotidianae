@@ -1,0 +1,106 @@
+{
+  "id": "turn-down-the-heat",
+  "english": "turn down the heat",
+  "pos": "verb",
+  "also": [
+    "lower the heat",
+    "reduce the heat",
+    "turn up the heat",
+    "on a low heat",
+    "over a low heat",
+    "over a gentle heat",
+    "on a high heat",
+    "take it off the heat",
+    "put it on the heat"
+  ],
+  "domain": "culina",
+  "terms": [
+    {
+      "latin": "ignem subtrahere",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "turn down the heat, draw off some of the fire",
+      "grammar": "subtrahō, subtrahere, subtrāxī, subtractum, with ignem",
+      "evidence": [
+        "Col. 12.20.4: <span lang=\"la\">cum deinde ad tertiās subsēderit coctūra, subtrahe ignem</span>",
+        "Apic. 1.1.1: <span lang=\"la\">subtractō ignī in sē redit</span>"
+      ],
+      "comment": "On a hearth the heat is the fire itself, and the cook turns it down by drawing some of it out from under the pot. The words serve for a stove today. For turning it up we have found no instance in a kitchen; <span lang=\"la\">ignem augēre</span> is ours (see the examples)."
+    },
+    {
+      "latin": "lentō ignī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "on a low heat",
+      "grammar": "ablative; also lēnī ignī, ad ignem lēnem",
+      "evidence": [
+        "Col. 12.42.2: <span lang=\"la\">lentō ignī, nē adūrantur, carbōnibus dēcoquuntur</span>",
+        "Col. 7.5.10: <span lang=\"la\">igne lentō coctus</span>",
+        "Cato Agr. 95: <span lang=\"la\">ignī lēnī coquitō</span>",
+        "Apic. 4.2.1: <span lang=\"la\">ad ignem lēnem</span>"
+      ],
+      "comment": "The usual words for a gentle fire: Columella’s <span lang=\"la\">lentō ignī</span>, Cato’s <span lang=\"la\">lēnī ignī</span>, Apicius’s <span lang=\"la\">ad ignem lēnem</span> and <span lang=\"la\">lentō ignī</span>. For a high heat we have found no set phrase; Vitruvius speaks of a pot on a fire <span lang=\"la\">vehementī fervōre</span> (8.3.3), and <span lang=\"la\">ācrī ignī</span> would be ours."
+    },
+    {
+      "latin": "ignem subdūcere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "take off the heat, take the fire away",
+      "grammar": "subdūcō, subdūcere, subdūxī, subductum, with ignem",
+      "evidence": [
+        "Cato Agr. 105: <span lang=\"la\">ignem subditō. Ubi bullābit vīnum, ignem subdūcitō</span>"
+      ],
+      "comment": "Cato’s pair: <span lang=\"la\">ignem subdere</span>, put the fire under (put it on the heat), and <span lang=\"la\">ignem subdūcere</span>, take it away. Columella says <span lang=\"la\">ab igne removēre</span> of taking the pot off the fire; see the examples."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Jūs fervet; subtrahe ignem, ut lentō ignī coquātur.",
+      "english": "The soup is boiling; turn the heat down so it cooks slowly.",
+      "source": "composed"
+    },
+    {
+      "latin": "Aqua nōndum fervet; augē ignem.",
+      "english": "The water isn’t boiling yet; turn up the heat.",
+      "source": "composed"
+    },
+    {
+      "latin": "Posteā ignī lēnī coquitō, rudiculā agitātō crēbrō",
+      "english": "Then cook it on a low heat, stirring often with a wooden spoon",
+      "source": "Cato Agr. 95"
+    },
+    {
+      "latin": "quae cum īnferbuerit, tāleolās inulae adjicitō et statim ab igne removētō",
+      "english": "when it has come to the boil, add the slips of elecampane and take it off the heat at once",
+      "source": "Col. 12.48.3"
+    },
+    {
+      "latin": "Musti Q. XX in ahēneum aut plumbeum īnfunditō, ignem subditō. Ubi bullābit vīnum, ignem subdūcitō.",
+      "english": "Pour twenty quadrantals of must into a bronze or lead pot and light the fire under it. When the wine bubbles, take the fire away.",
+      "source": "Cato Agr. 105"
+    }
+  ],
+  "related": [
+    "stove",
+    "hob",
+    "hearth",
+    "fire",
+    "stew",
+    "boil",
+    "boil-over",
+    "cook-until-soft",
+    "switch-off"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/subtraho\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: subtraho</a> · <a href=\"https://logeion.uchicago.edu/subduco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: subduco</a> · <a href=\"https://logeion.uchicago.edu/subdo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: subdo</a> · <a href=\"https://logeion.uchicago.edu/lentus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lentus</a> · <a href=\"https://logeion.uchicago.edu/lenis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lenis</a> · <a href=\"https://logeion.uchicago.edu/ignis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ignis</a>",
+    "Cato, <em>De agri cultura</em> 95; 105.",
+    "Columella, <em>De re rustica</em> 7.5.10; 12.20.4; 12.42.2; 12.48.3.",
+    "Apicius, <em>De re coquinaria</em> 1.1.1; 4.2.1.",
+    "Vitruvius, <em>De architectura</em> 8.3.3."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-22",
+    "by": "Claude"
+  }
+}

@@ -4,7 +4,9 @@
   "sense": "a can",
   "pos": "noun",
   "also": [
-    "can"
+    "can",
+    "open a tin",
+    "open a can"
   ],
   "domain": "culina",
   "terms": [
@@ -29,6 +31,18 @@
       "comment": "<span lang=\"la\">pyxis</span>, a small box, Cic."
     }
   ],
+  "phrases": [
+    {
+      "latin": "Vāsculum pīsōrum aperculō aperiāmus.",
+      "english": "Let’s open a tin of peas with the tin opener.",
+      "source": "composed"
+    },
+    {
+      "latin": "Cavē digitōs: ōra vāsculī apertī acūta est.",
+      "english": "Mind your fingers: the edge of an open tin is sharp.",
+      "source": "composed"
+    }
+  ],
   "related": [
     "can-opener",
     "jar"
@@ -40,7 +54,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

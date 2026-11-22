@@ -1,0 +1,60 @@
+{
+  "id": "overcooked",
+  "english": "overcooked",
+  "pos": "adjective",
+  "also": [
+    "overdone",
+    "cooked too long",
+    "boiled too long"
+  ],
+  "domain": "culina",
+  "terms": [
+    {
+      "latin": "nimis coctus, nimis cocta, nimis coctum",
+      "status": "recommended",
+      "period": "ours",
+      "gloss": "cooked too long",
+      "comment": "A description of ours: we have found no Latin word for overcooked in Lewis &amp; Short, Traupman, Morgan–Owens, or Levi–Bini, nor a set phrase in Cato, Columella, or Apicius. Columella’s warning not to let grapes cook through (<span lang=\"la\">nē excoquantur</span>) comes nearest; see the next term."
+    },
+    {
+      "latin": "excoquō, excoquere, excoxī, excoctum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "boil away; cook right through, cook too long",
+      "evidence": [
+        "Col. 12.16.1: <span lang=\"la\">nec rūrsus committere, ut excoquantur</span>",
+        "Cato Agr. 107: <span lang=\"la\">ūsque coquitō, dum dīmidium excoquās</span>"
+      ],
+      "comment": "To boil out or boil away (Cato boils a liquid down by half), and so to cook a thing right through: Columella dips grapes in boiling lye only until they change colour, and not so long that they cook through."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "dum dēcolōrentur, nec rūrsus committere, ut excoquantur; nam quādam moderātiōne temperāmentōque opus est",
+      "english": "until they change colour, but not to let them cook through either: it takes a sense of measure and balance",
+      "source": "Col. 12.16.1"
+    },
+    {
+      "latin": "Nimis diū coxistī holera; jam nimis mollia sunt.",
+      "english": "You’ve cooked the vegetables too long; now they’re too soft.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "well-done",
+    "rare",
+    "cook",
+    "cook-until-soft",
+    "is-it-done"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/excoquo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: excoquo</a> · <a href=\"https://logeion.uchicago.edu/coquo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: coquo</a>",
+    "Columella, <em>De re rustica</em> 12.16.1.",
+    "Cato, <em>De agri cultura</em> 107."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-22",
+    "by": "Claude"
+  }
+}

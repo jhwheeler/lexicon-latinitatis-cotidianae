@@ -3,7 +3,10 @@
   "english": "pour into",
   "pos": "verb",
   "also": [
-    "pour in"
+    "pour in",
+    "pour me some water",
+    "pour me a drink",
+    "pour me some"
   ],
   "domain": "culina",
   "terms": [
@@ -20,6 +23,11 @@
     {
       "latin": "Pōtiōnem in pōcula īnfunde.",
       "english": "Pour the smoothie into the glasses.",
+      "source": "composed"
+    },
+    {
+      "latin": "Aquam mihi īnfunde, sīs.",
+      "english": "Pour me some water, please.",
       "source": "composed"
     }
   ],
@@ -38,15 +46,16 @@
     "add"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/infundo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: infundo</a> · <a href=\"https://atlas.perseus.tufts.edu/dictionaries/entry/urn%3Acite2%3Ascaife-viewer%3Adictionaries.v1%3Aelementary-latin-n8014/\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis: infundo</a>"
-  ],
-  "replaces": [
-    "entry-125",
-    "smoothie-125"
+    "<a href=\"https://logeion.uchicago.edu/infundo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: infundo</a> · <a href=\"https://atlas.perseus.tufts.edu/dictionaries/entry/urn%3Acite2%3Ascaife-viewer%3Adictionaries.v1%3Aelementary-latin-n8014/\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis: infundo</a>",
+    "Horace, <em>Epodes</em> 5.77–78."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-22",
     "by": "Claude"
-  }
+  },
+  "replaces": [
+    "entry-125",
+    "smoothie-125"
+  ]
 }

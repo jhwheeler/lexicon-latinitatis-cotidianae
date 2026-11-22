@@ -1,0 +1,73 @@
+{
+  "id": "ingredients",
+  "english": "ingredients",
+  "pos": "noun",
+  "also": [
+    "ingredient",
+    "what’s in it?",
+    "what is it made of?",
+    "what goes in it?"
+  ],
+  "domain": "culina",
+  "terms": [
+    {
+      "latin": "impēnsa, impēnsae f.",
+      "status": "recommended",
+      "period": "post-classical",
+      "gloss": "the materials of a dish, its ingredients; in Apicius, the mixture made of them",
+      "evidence": [
+        "Apic. 4.5.3: <span lang=\"la\">impēnsam ad eās sīc faciēs</span>",
+        "Apic. 5.4.6: <span lang=\"la\">impēnsam … parās</span>"
+      ],
+      "comment": "Classically <span lang=\"la\">impēnsa</span> is outlay, expense; from the first century on it is also what is used up in making a thing, its materials or ingredients (Lewis &amp; Short), and Apicius uses it of the mixture he fills or tops a dish with. Classical Latin has no noun for an ingredient: a recipe names the things and then says <span lang=\"la\">haec omnia</span> or <span lang=\"la\">ea omnia</span>, and one asks <span lang=\"la\">quid inest?</span> or <span lang=\"la\">ex quibus rēbus fit?</span>; see the examples."
+    },
+    {
+      "latin": "ingredientia, ingredientium n. pl.",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "ingredients (of a medicine)",
+      "evidence": [
+        "M-O s.v. ingredients"
+      ],
+      "comment": "A word of modern pharmaceutical Latin; Morgan–Owens gives <span lang=\"la\">cōnstituentia</span> beside it."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Quid inest in hāc placentā?",
+      "english": "What’s in this cake?",
+      "source": "composed"
+    },
+    {
+      "latin": "Ex quibus rēbus fit hoc jūs?",
+      "english": "What is this soup made of?",
+      "source": "composed"
+    },
+    {
+      "latin": "additō in mortārium saturejam, mentam, rūtam, coriandrum, apium … et cāseum recentem et salsum. ea omnia pariter conteritō",
+      "english": "put in the mortar savory, mint, rue, coriander, celery … and fresh salted cheese. Pound all of them together",
+      "source": "Col. 12.59.1"
+    },
+    {
+      "latin": "impēnsam ad eās sīc faciēs",
+      "english": "you will make the filling for them like this",
+      "source": "Apic. 4.5.3"
+    }
+  ],
+  "related": [
+    "recipe",
+    "seasoning",
+    "mix"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/impensa\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: impensa</a>",
+    "Apicius, <em>De re coquinaria</em> 4.5.3; 5.4.6.",
+    "Columella, <em>De re rustica</em> 12.59.1.",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. ingredients."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-22",
+    "by": "Claude"
+  }
+}

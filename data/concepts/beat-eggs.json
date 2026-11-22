@@ -1,0 +1,96 @@
+{
+  "id": "beat-eggs",
+  "english": "beat the eggs",
+  "pos": "verb",
+  "also": [
+    "beat eggs",
+    "whisk the eggs",
+    "crack an egg",
+    "crack the eggs",
+    "break an egg",
+    "separate the eggs",
+    "separate the yolk from the white"
+  ],
+  "domain": "culina",
+  "terms": [
+    {
+      "latin": "ōva dissolvere",
+      "status": "recommended",
+      "period": "late",
+      "gloss": "beat eggs",
+      "grammar": "dissolvō, dissolvere, dissolvī, dissolūtum, with ōva",
+      "evidence": [
+        "Apic. 4.2.15: <span lang=\"la\">ōva cōnfringēs in caccabum et dissolvēs</span>",
+        "Apic. 2.1.5: <span lang=\"la\">adjiciēs ōva quīnque et dissolvēs dīligenter, ut ūnum corpus efficiās</span>"
+      ],
+      "comment": "Apicius’s phrase, many times over: <span lang=\"la\">dissolvere</span>, classically to loosen or break up, of eggs beaten until they run together into one. He also says <span lang=\"la\">agitāre</span>, to stir or shake: <span lang=\"la\">frangēs ōva VIII et agitābis</span>. See “whip”."
+    },
+    {
+      "latin": "ōva frangere",
+      "status": "recommended",
+      "period": "late",
+      "gloss": "crack eggs",
+      "grammar": "frangō, frangere, frēgī, frāctum, with ōva; also cōnfringere",
+      "evidence": [
+        "Apic. 4.2.36: <span lang=\"la\">frangēs ōva VIII et agitābis</span>",
+        "Apic. 4.2.20: <span lang=\"la\">ōva cōnfringēs</span>"
+      ],
+      "comment": "Apicius has both <span lang=\"la\">frangere</span> and <span lang=\"la\">cōnfringere</span>. Of breaking into an egg at table, Petronius says <span lang=\"la\">pertundere</span>, to pierce: see the examples."
+    },
+    {
+      "latin": "album ā vitellō sēcernere",
+      "status": "alternative",
+      "period": "ours",
+      "gloss": "separate the white from the yolk",
+      "evidence": [
+        "Cels. 6.6.1: <span lang=\"la\">ōvī album in vās</span> (Lewis &amp; Short s.v. <span lang=\"la\">dēfundō</span>)"
+      ],
+      "comment": "A description of ours in classical words (<span lang=\"la\">sēcernere</span>, put apart; <span lang=\"la\">album ōvī</span>; <span lang=\"la\">vitellus</span>): we have found no set phrase for separating eggs. Celsus has the white poured off into a vessel, <span lang=\"la\">ōvī album in vās dēfundere</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ōva cōnfringēs in caccabum et dissolvēs",
+      "english": "crack the eggs into the pot and beat them",
+      "source": "Apic. 4.2.15"
+    },
+    {
+      "latin": "frangēs ōva VIII et agitābis",
+      "english": "crack eight eggs and beat them",
+      "source": "Apic. 4.2.36"
+    },
+    {
+      "latin": "Tū ōva frange, ego dissolvam.",
+      "english": "You crack the eggs, and I’ll beat them.",
+      "source": "composed"
+    },
+    {
+      "latin": "Album ā vitellō cautē sēcerne.",
+      "english": "Carefully separate the white from the yolk.",
+      "source": "composed"
+    },
+    {
+      "latin": "ōvaque ex farīnā pinguī figūrāta pertundimus",
+      "english": "and we broke open the eggs, which were made of rich pastry",
+      "source": "Petr. 33"
+    }
+  ],
+  "related": [
+    "egg",
+    "whip",
+    "whisk",
+    "yolk",
+    "egg-white",
+    "scrambled-eggs"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/dissolvo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dissolvo</a> · <a href=\"https://logeion.uchicago.edu/frango\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: frango</a> · <a href=\"https://logeion.uchicago.edu/confringo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: confringo</a> · <a href=\"https://logeion.uchicago.edu/secerno\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: secerno</a> · <a href=\"https://logeion.uchicago.edu/defundo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: defundo</a>",
+    "Apicius, <em>De re coquinaria</em> 2.1.5; 4.2.15, 20, 36.",
+    "Petronius, <em>Satyrica</em> 33."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-22",
+    "by": "Claude"
+  }
+}

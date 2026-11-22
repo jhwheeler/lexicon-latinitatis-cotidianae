@@ -6,7 +6,11 @@
     "contactless",
     "pay contactless",
     "tap your card",
-    "card payment"
+    "card payment",
+    "card or cash?",
+    "by card or in cash?",
+    "do you take cards?",
+    "can I pay by card?"
   ],
   "domain": "pecunia",
   "also_under": [
@@ -32,6 +36,16 @@
       "latin": "tabellam māchinae appōnere",
       "english": "to hold the card to the reader: pay contactless",
       "source": "composed"
+    },
+    {
+      "latin": "Tabellāne an argentō praesentāriō solvēs?",
+      "english": "Card or cash?",
+      "source": "composed"
+    },
+    {
+      "latin": "Licetne tabellā solvere?",
+      "english": "Can I pay by card?",
+      "source": "composed"
     }
   ],
   "related": [
@@ -46,7 +60,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-15",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

@@ -15,7 +15,10 @@
     "I like something best",
     "if you like",
     "stay if you like",
-    "I like to watch"
+    "I like to watch",
+    "I don’t like it",
+    "I love it",
+    "I love this"
   ],
   "domain": "sermo",
   "terms": [
@@ -104,6 +107,16 @@
       "latin": "Manē, sī tibi placēbit.",
       "english": "Stay if you like.",
       "source": "Traupman 340"
+    },
+    {
+      "latin": "Hoc nōn placet.",
+      "english": "I don’t like it.",
+      "source": "composed"
+    },
+    {
+      "latin": "Perplacet!",
+      "english": "I love it!",
+      "source": "composed"
     }
   ],
   "related": [
@@ -118,7 +131,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

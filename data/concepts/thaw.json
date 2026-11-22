@@ -2,6 +2,12 @@
   "id": "thaw",
   "english": "thaw",
   "pos": "verb",
+  "also": [
+    "defrost",
+    "defrosting",
+    "defrosted",
+    "thaw out"
+  ],
   "domain": "culina",
   "terms": [
     {
@@ -32,20 +38,45 @@
         "Cic. N.D. 2.26: <span lang=\"la\">mollītur tepefactus et tābēscit calōre</span> (Lewis &amp; Short)",
         "Traupman 393"
       ]
+    },
+    {
+      "latin": "regelō, regelāre, regelāvī, regelātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "thaw out, unfreeze (something)",
+      "evidence": [
+        "Col. 10.78: <span lang=\"la\">candidus aprīcā Zephyrus regelāverit aurā</span>",
+        "Mart. 11.8.6: <span lang=\"la\">sūcina virgineā quod regelāta manū</span>"
+      ],
+      "comment": "Post-Augustan (Columella, Seneca, Martial): to take the frost out of something, and so to warm it. Lewis &amp; Short glosses it “to unfreeze, i.e. to thaw, warm”."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Pānem ex arcā gelātōriā prōme, ut regelētur.",
+      "english": "Take the bread out of the freezer so it can defrost.",
+      "source": "composed"
+    },
+    {
+      "latin": "Cibum in furnō undārum brevium regelā.",
+      "english": "Defrost the food in the microwave.",
+      "source": "composed"
     }
   ],
   "related": [
     "freeze"
   ],
   "sources": [
-    "<a href=\"https://alatius.com/ls/index.php?l=liquefacio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: liquefacio</a>",
+    "<a href=\"https://alatius.com/ls/index.php?l=liquefacio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: liquefacio</a> · <a href=\"https://logeion.uchicago.edu/regelo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: regelo</a>",
     "<a href=\"https://logeion.uchicago.edu/dissolvo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dissolvo</a>",
     "<a href=\"https://logeion.uchicago.edu/tabesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tabesco</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 393."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 124, 393.",
+    "Columella, <em>De re rustica</em> 10.78.",
+    "Martial 11.8.6."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

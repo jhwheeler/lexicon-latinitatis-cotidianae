@@ -2,10 +2,15 @@
   "id": "fill",
   "english": "fill",
   "pos": "verb",
+  "also": [
+    "fill the glass",
+    "fill my glass",
+    "fill it up"
+  ],
+  "domain": "culina",
   "also_under": [
     "ludi"
   ],
-  "domain": "culina",
   "terms": [
     {
       "latin": "impleō, implēre",
@@ -26,6 +31,11 @@
       "latin": "Sitellam harēnā implē.",
       "english": "Fill the little bucket with sand.",
       "source": "composed"
+    },
+    {
+      "latin": "Pōculum mihi implē, sīs.",
+      "english": "Fill my glass, please.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -41,7 +51,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

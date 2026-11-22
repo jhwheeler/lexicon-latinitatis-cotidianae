@@ -2,6 +2,10 @@
   "id": "halve",
   "english": "halve",
   "pos": "verb",
+  "also": [
+    "cut in half",
+    "cut in two"
+  ],
   "domain": "culina",
   "terms": [
     {
@@ -25,24 +29,35 @@
       "comment": "Apicius’s kitchen verb; post-classical (Lewis &amp; Short). The finite <span lang=\"la\">dīmidiāre</span> is very rare (Tertullian), though the participle <span lang=\"la\">dīmidiātus</span>, halved, is common (Lewis &amp; Short)."
     }
   ],
+  "phrases": [
+    {
+      "latin": "Mālum in duās partēs secā.",
+      "english": "Cut the apple in half.",
+      "source": "composed"
+    },
+    {
+      "latin": "Cōliculōs ēlixātōs mediābis.",
+      "english": "Cut the boiled cabbage shoots in half.",
+      "source": "Apic. 3.9.2"
+    },
+    {
+      "latin": "Pānem in duās partēs frange: dīmidium tibi, dīmidium frātrī.",
+      "english": "Break the bread in half: half for you, half for your brother.",
+      "source": "composed"
+    }
+  ],
   "related": [
     "half",
     "cut"
   ],
   "sources": [
     "<a href=\"https://alatius.com/ls/index.php?l=seco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: seco</a>",
-    "<a href=\"https://logeion.uchicago.edu/divido\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: divido</a> · <a href=\"https://logeion.uchicago.edu/medio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: medio</a> · <a href=\"https://logeion.uchicago.edu/dimidio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dimidio</a>"
+    "<a href=\"https://logeion.uchicago.edu/divido\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: divido</a> · <a href=\"https://logeion.uchicago.edu/medio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: medio</a> · <a href=\"https://logeion.uchicago.edu/dimidio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dimidio</a>",
+    "Apicius, <em>De re coquinaria</em> 3.9.2."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-15",
+    "date": "2026-11-22",
     "by": "Claude"
-  },
-  "phrases": [
-    {
-      "latin": "Mālum in duās partēs secā.",
-      "english": "Cut the apple in half.",
-      "source": "composed"
-    }
-  ]
+  }
 }

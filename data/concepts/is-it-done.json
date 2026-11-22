@@ -1,0 +1,88 @@
+{
+  "id": "is-it-done",
+  "english": "is it done?",
+  "pos": "phrase",
+  "also": [
+    "is it cooked?",
+    "is it ready?",
+    "it’s ready",
+    "it’s done",
+    "dinner’s ready",
+    "is dinner ready?",
+    "how soon will dinner be ready?"
+  ],
+  "domain": "culina",
+  "terms": [
+    {
+      "latin": "Jamne coctum est?",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "is it cooked yet?",
+      "evidence": [
+        "Plaut. Stich. 251: <span lang=\"la\">jamne exta cocta sunt?</span>"
+      ],
+      "comment": "Plautus’s question, with the dish named or understood: <span lang=\"la\">jamne cocta est cēna?</span> The answer is <span lang=\"la\">Coctum est</span> (next term) or <span lang=\"la\">Nōndum</span>."
+    },
+    {
+      "latin": "Coctum est.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "it’s done, it’s ready",
+      "evidence": [
+        "Plaut. Men. 225: <span lang=\"la\">cocta sunt, jubē īre accubitum</span>"
+      ],
+      "comment": "The cook’s word in the <span lang=\"la\">Menaechmī</span>, and the plain way to call people to the table. For the wider sense of ready, see “ready”."
+    },
+    {
+      "latin": "Quam mox coctum est?",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "how soon will it be ready?",
+      "evidence": [
+        "Plaut. Rud. 342: <span lang=\"la\">sed quam mox coctum est prandium?</span>",
+        "Plaut. Stich. 533: <span lang=\"la\">quam mox coctast cēna?</span>"
+      ],
+      "comment": "The hungry man’s question, twice in Plautus, with the present for the near future."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "quam mox coctast cēna? inprānsus ego sum.",
+      "english": "How soon will dinner be ready? I haven’t had any lunch.",
+      "source": "Plaut. Stich. 533"
+    },
+    {
+      "latin": "cocta sunt, jubē īre accubitum.",
+      "english": "It’s all cooked; tell them to come and take their places.",
+      "source": "Plaut. Men. 225"
+    },
+    {
+      "latin": "Jamne coctum est? — Nōndum; exspectā paulisper.",
+      "english": "Is it done yet? — Not yet; wait a little.",
+      "source": "composed"
+    },
+    {
+      "latin": "Cēna cocta est! Venīte, accumbite.",
+      "english": "Dinner’s ready! Come and sit down.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "ready",
+    "cook",
+    "dinner",
+    "cook-until-soft",
+    "well-done",
+    "rare",
+    "recline-at-table"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/coquo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: coquo</a>",
+    "Plautus, <em>Menaechmi</em> 225; <em>Rudens</em> 342; <em>Stichus</em> 251, 533."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-22",
+    "by": "Claude"
+  }
+}

@@ -3,6 +3,16 @@
   "english": "order",
   "sense": "in a café or restaurant",
   "pos": "verb",
+  "also": [
+    "are you ready to order?",
+    "we’re ready to order",
+    "may I take your order?",
+    "what will you have?",
+    "this isn’t what I ordered",
+    "I didn’t order this",
+    "I ordered …",
+    "wrong order"
+  ],
   "domain": "urbs",
   "terms": [
     {
@@ -12,6 +22,28 @@
       "gloss": "ask for, order"
     }
   ],
+  "phrases": [
+    {
+      "latin": "Quid in cēnā sūmēs?",
+      "english": "What will you have for dinner?",
+      "source": "Traupman 68"
+    },
+    {
+      "latin": "Quid vōbīs appōnam?",
+      "english": "What can I bring you? Are you ready to order?",
+      "source": "composed"
+    },
+    {
+      "latin": "Jam scīmus quid velīmus; ministrum vocā.",
+      "english": "We’re ready to order; call the waiter.",
+      "source": "composed"
+    },
+    {
+      "latin": "Nōn hoc poposcī; piscem poposcī.",
+      "english": "This isn’t what I ordered; I ordered the fish.",
+      "source": "composed"
+    }
+  ],
   "related": [
     "restaurant",
     "waiter",
@@ -19,11 +51,12 @@
     "order-goods"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/posco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: posco</a>"
+    "<a href=\"https://logeion.uchicago.edu/posco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: posco</a> · <a href=\"https://logeion.uchicago.edu/appono\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: appono</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 68."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

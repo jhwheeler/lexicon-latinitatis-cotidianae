@@ -2,6 +2,14 @@
   "id": "salt",
   "english": "salt",
   "pos": "noun",
+  "also": [
+    "a pinch of salt",
+    "add salt",
+    "add a pinch of salt",
+    "needs more salt",
+    "needs salt",
+    "not salty enough"
+  ],
   "domain": "natura",
   "terms": [
     {
@@ -13,32 +21,45 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "mēnsūra salis duōrum (trium) digitōrum",
+      "english": "a pinch of salt",
+      "source": "Traupman 360"
+    },
+    {
+      "latin": "posteā salem additō et cumīnī paululum",
+      "english": "then add salt and a little cumin",
+      "source": "Cato Agr. 156"
+    },
+    {
+      "latin": "Īnsulsum est; adde salis paululum.",
+      "english": "It needs salt; add a little.",
+      "source": "composed"
+    },
+    {
+      "latin": "Satisne salis inest? — Gustā ipse.",
+      "english": "Is there enough salt in it? — Taste it yourself.",
+      "source": "composed"
+    }
+  ],
   "related": [
     "season-food",
     "vinegar",
     "preserve-in-salt"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/sal\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sal</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 73."
-  ],
-  "replaces": [
-    "entry-212",
-    "libelli-212"
+    "<a href=\"https://logeion.uchicago.edu/sal\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sal</a> · <a href=\"https://logeion.uchicago.edu/insulsus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: insulsus</a> · <a href=\"https://logeion.uchicago.edu/addo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: addo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 73.",
+    "Cato, <em>De agri cultura</em> 156."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "by": "Claude"
   },
-  "phrases": [
-    {
-      "latin": "mēnsūra salis duōrum (trium) digitōrum",
-      "english": "a pinch of salt",
-      "source": "Traupman 360"
-    }
-  ],
-  "also": [
-    "a pinch of salt"
+  "replaces": [
+    "entry-212",
+    "libelli-212"
   ]
 }

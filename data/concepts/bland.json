@@ -4,7 +4,12 @@
   "pos": "adjective",
   "also": [
     "mild",
-    "plain"
+    "plain",
+    "tasteless",
+    "insipid",
+    "has no taste",
+    "tastes of nothing",
+    "watery (of taste)"
   ],
   "domain": "culina",
   "terms": [
@@ -18,6 +23,26 @@
         "Traupman 280",
         "Traupman 70"
       ]
+    },
+    {
+      "latin": "īnsulsus, īnsulsa, īnsulsum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "unsalted, tasteless, insipid",
+      "evidence": [
+        "Col. 2.9: <span lang=\"la\">amurcā īnsulsā</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Literally “unsalted”; more often of a joke or a person: silly."
+    },
+    {
+      "latin": "ēlūtus, ēlūta, ēlūtum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "washed out, watery, without flavour",
+      "evidence": [
+        "Hor. S. 2.4.16: <span lang=\"la\">inriguō nihil est ēlūtius hortō</span>"
+      ],
+      "comment": "Horace’s word for cabbage from a watered garden, which tastes washed out beside one grown in dry fields."
     }
   ],
   "phrases": [
@@ -25,6 +50,21 @@
       "latin": "Īnsulsum est. Salem adde.",
       "english": "It’s bland. Add some salt.",
       "source": "composed"
+    },
+    {
+      "latin": "Nīl sapit hoc jūs; salem, quaesō.",
+      "english": "This soup tastes of nothing; the salt, please.",
+      "source": "composed"
+    },
+    {
+      "latin": "cōle suburbānō quī siccīs crēvit in agrīs dulcior: inriguō nihil est ēlūtius hortō",
+      "english": "sweeter than a cabbage from the suburbs is one grown in dry fields: nothing is more washed-out than a watered garden’s",
+      "source": "Hor. S. 2.4.15–16"
+    },
+    {
+      "latin": "at nunc dīvitibus cēnandī nūlla voluptās, nīl rhombus, nīl damma sapit",
+      "english": "but now the rich get no pleasure from dining; turbot tastes of nothing to them, nor venison",
+      "source": "Juv. 11.120–121"
     }
   ],
   "related": [
@@ -32,12 +72,14 @@
     "tasty"
   ],
   "sources": [
-    "<a href=\"https://logeion.org/lenis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lenis</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 70, 280."
+    "<a href=\"https://logeion.org/lenis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lenis</a> · <a href=\"https://logeion.uchicago.edu/insulsus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: insulsus</a> · <a href=\"https://logeion.uchicago.edu/eluo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: eluo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 70, 280.",
+    "Horace, <em>Satires</em> 2.4.15–16.",
+    "Juvenal 11.120–121."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

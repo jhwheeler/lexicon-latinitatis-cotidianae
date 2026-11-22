@@ -4,7 +4,14 @@
   "pos": "noun",
   "also": [
     "make coffee",
-    "coffee break"
+    "coffee break",
+    "black coffee",
+    "coffee with milk",
+    "white coffee",
+    "with milk",
+    "without sugar",
+    "no sugar",
+    "with sugar"
   ],
   "domain": "culina",
   "terms": [
@@ -75,6 +82,26 @@
       "latin": "caffeāria pausa",
       "english": "a coffee break",
       "source": "Traupman 293"
+    },
+    {
+      "latin": "Coffeam sine lacte et sine saccharō, quaesō.",
+      "english": "Black coffee, please, no sugar.",
+      "source": "composed"
+    },
+    {
+      "latin": "Coffeam cum lacte bibō; saccharum nōn addō.",
+      "english": "I take my coffee with milk; I don’t add sugar.",
+      "source": "composed"
+    },
+    {
+      "latin": "pōcillum caffeae cum cremō",
+      "english": "a cup of coffee with cream",
+      "source": "Traupman 67"
+    },
+    {
+      "latin": "lac coffeātum",
+      "english": "a latte, milky coffee",
+      "source": "M-O s.v. coffee"
     }
   ],
   "notes": {
@@ -93,15 +120,15 @@
     "tea"
   ],
   "sources": [
-    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: Adumbratio</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 70 (<span lang=\"la\">caffea</span>), 293."
-  ],
-  "replaces": [
-    "entry-33"
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. coffee.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 67, 70 (<span lang=\"la\">caffea</span>), 293."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-22",
     "by": "Claude"
-  }
+  },
+  "replaces": [
+    "entry-33"
+  ]
 }

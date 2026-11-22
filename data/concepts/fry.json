@@ -3,7 +3,15 @@
   "english": "fry",
   "pos": "verb",
   "also": [
-    "frying"
+    "frying",
+    "deep-fry",
+    "deep-fried",
+    "fry in hot oil",
+    "sauté",
+    "sautéed",
+    "pan-fry",
+    "fry lightly",
+    "fry gently"
   ],
   "domain": "culina",
   "terms": [
@@ -17,18 +25,42 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "In ahēnum caldum unguen inditō. Singulōs aut bīnōs coquitō versātōque crēbrō duābus rudibus, coctōs eximitō.",
+      "english": "Put fat into a hot pan. Fry them one or two at a time, turning them often with two spoons, and take them out when done.",
+      "source": "Cato Agr. 79"
+    },
+    {
+      "latin": "Piscēs in multō oleō frīgēmus.",
+      "english": "We’ll deep-fry the fish in plenty of oil.",
+      "source": "composed"
+    },
+    {
+      "latin": "Oleī modicum in sartāginem mitte; tum cēpam concīsam leviter frīge.",
+      "english": "Put a little oil in the pan; then fry the chopped onion gently.",
+      "source": "composed"
+    },
+    {
+      "latin": "Piscēs quālēslibet cūrātōs frīgēs, in patinam compōnēs",
+      "english": "Fry any kind of fish, cleaned, and arrange them in a dish",
+      "source": "Apic. 4.2.23"
+    }
+  ],
   "related": [
     "frying-pan",
     "fried-egg"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/frigo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: frigo</a>",
+    "<a href=\"https://logeion.uchicago.edu/frigo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: frigo</a> · <a href=\"https://logeion.uchicago.edu/unguen\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: unguen</a>",
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 71, 319."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 71, 319.",
+    "Cato, <em>De agri cultura</em> 79.",
+    "Apicius, <em>De re coquinaria</em> 4.2.23."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

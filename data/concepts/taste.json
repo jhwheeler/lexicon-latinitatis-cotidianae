@@ -2,6 +2,23 @@
   "id": "taste",
   "english": "taste",
   "pos": "verb",
+  "also": [
+    "taste like",
+    "taste of",
+    "it tastes of",
+    "sense of taste",
+    "not to my taste",
+    "have a taste",
+    "try it",
+    "try a bit",
+    "try some",
+    "it tastes good",
+    "it tastes bad",
+    "it tastes like …",
+    "tastes good",
+    "tastes nice",
+    "tastes awful"
+  ],
   "domain": "culina",
   "terms": [
     {
@@ -52,6 +69,36 @@
       "latin": "Hoc nōn meī stomachī est.",
       "english": "This is not to my taste.",
       "source": "Traupman 390"
+    },
+    {
+      "latin": "Paulum gustā; fortasse placēbit.",
+      "english": "Have a little taste; maybe you’ll like it.",
+      "source": "composed"
+    },
+    {
+      "latin": "sī colligere est nōn numquam dēcerpere ūvam, torculum invīsere, gustāre dē lacū mustum",
+      "english": "if gathering means now and then picking a grape, looking in at the press, tasting the must from the vat",
+      "source": "Plin. Ep. 9.20.2"
+    },
+    {
+      "latin": "Quam jūcundē sapit!",
+      "english": "How good it tastes!",
+      "source": "composed"
+    },
+    {
+      "latin": "Vāsō ahēneō neque nucleīs ad oleum nē ūtātur. Nam sī ūtētur, oleum male sapiet.",
+      "english": "He is not to use a bronze vessel or the stones for the oil; for if he does, the oil will taste bad.",
+      "source": "Cato Agr. 66"
+    },
+    {
+      "latin": "nec dubium quīn fīcī rāmulīs glaciātus cāseus jūcundissimē sapiat",
+      "english": "and there is no doubt that cheese curdled with fig twigs tastes best of all",
+      "source": "Col. 7.8.2"
+    },
+    {
+      "latin": "ego contrā plūs lībram comēdī, nam ipsum aprum sapiēbat",
+      "english": "I, on the other hand, ate more than a pound, because it tasted just like wild boar",
+      "source": "Petr. 66"
     }
   ],
   "related": [
@@ -62,18 +109,15 @@
     "<a href=\"https://logeion.uchicago.edu/gusto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gusto</a> · <a href=\"https://alatius.com/ls/index.php?l=placeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: placeo</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 59, 73.",
     "<a href=\"https://logeion.uchicago.edu/sapio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sapio</a>",
-    "<a href=\"https://logeion.uchicago.edu/gustatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gustatus</a>"
+    "<a href=\"https://logeion.uchicago.edu/gustatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gustatus</a>",
+    "Pliny, <em>Letters</em> 9.20.2.",
+    "Cato, <em>De agri cultura</em> 66.",
+    "Columella, <em>De re rustica</em> 7.8.2.",
+    "Petronius, <em>Satyrica</em> 66."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "by": "Claude"
-  },
-  "also": [
-    "taste like",
-    "taste of",
-    "it tastes of",
-    "sense of taste",
-    "not to my taste"
-  ]
+  }
 }

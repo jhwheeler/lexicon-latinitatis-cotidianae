@@ -3,7 +3,12 @@
   "english": "menu",
   "pos": "noun",
   "also": [
-    "bill of fare"
+    "bill of fare",
+    "the menu, please",
+    "could we see the menu?",
+    "may I see the menu?",
+    "children’s menu",
+    "kids’ menu"
   ],
   "domain": "urbs",
   "terms": [
@@ -33,6 +38,23 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "Indicem ēscārum, quaesō.",
+      "english": "The menu, please.",
+      "source": "composed"
+    },
+    {
+      "latin": "Affer nōbīs, sīs, indicem ēscārum.",
+      "english": "Could you bring us the menu, please?",
+      "source": "composed"
+    },
+    {
+      "latin": "Estne vōbīs index ēscārum puerīlis?",
+      "english": "Do you have a children’s menu?",
+      "source": "composed"
+    }
+  ],
   "related": [
     "restaurant",
     "waiter",
@@ -45,7 +67,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

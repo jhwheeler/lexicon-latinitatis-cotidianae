@@ -10,7 +10,11 @@
     "is this seat free?",
     "is this seat taken?",
     "is this place taken?",
-    "is anyone sitting here?"
+    "is anyone sitting here?",
+    "is this table free?",
+    "is this table taken?",
+    "can we sit here?",
+    "may we sit here?"
   ],
   "domain": "verba",
   "terms": [
@@ -52,6 +56,16 @@
     {
       "latin": "Vacatne hic locus? — Vacat; cōnsīde, sīs.",
       "english": "Is this seat taken? — No, it’s free; do sit down.",
+      "source": "composed"
+    },
+    {
+      "latin": "Vacatne haec mēnsa? — Vacat; cōnsīdite.",
+      "english": "Is this table free? — Yes, it is; sit down.",
+      "source": "composed"
+    },
+    {
+      "latin": "Licetne nōbīs hīc cōnsīdere?",
+      "english": "Can we sit here?",
       "source": "composed"
     }
   ],

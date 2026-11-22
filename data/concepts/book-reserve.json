@@ -8,7 +8,11 @@
     "booking",
     "reserve",
     "book a table",
-    "make a reservation"
+    "make a reservation",
+    "reserve a table",
+    "we have a reservation",
+    "I have a reservation",
+    "table reservation"
   ],
   "domain": "urbs",
   "also_under": [
@@ -42,6 +46,16 @@
       "latin": "Mēnsam nōbīs reservāvī.",
       "english": "I’ve booked us a table.",
       "source": "composed"
+    },
+    {
+      "latin": "Mēnsa nōbīs reservāta est.",
+      "english": "We have a reservation.",
+      "source": "composed"
+    },
+    {
+      "latin": "Mēnsam quattuor hominibus in hunc vesperum reservāre velim.",
+      "english": "I’d like to reserve a table for four for this evening.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -54,8 +68,8 @@
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 217–218, 370."
   ],
   "review": {
-    "status": "reviewed",
-    "date": "2026-11-16",
+    "status": "draft",
+    "date": "2026-11-22",
     "by": "Jack"
   }
 }

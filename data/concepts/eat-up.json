@@ -4,7 +4,11 @@
   "pos": "verb",
   "also": [
     "finish",
-    "finish your food"
+    "finish your food",
+    "finish your plate",
+    "clean your plate",
+    "you don’t have to finish it",
+    "eat it all up"
   ],
   "domain": "culina",
   "terms": [
@@ -53,6 +57,16 @@
       "latin": "Hoc nōn vīs?",
       "english": "Don’t you want this?",
       "source": "composed"
+    },
+    {
+      "latin": "Nōn necesse est tōtum comedere.",
+      "english": "You don’t have to finish it.",
+      "source": "composed"
+    },
+    {
+      "latin": "Mel invēnistī: comede quod sufficit tibi, nē forte satiātus ēvomās illud.",
+      "english": "You have found honey: eat as much as is enough for you, or you may have too much and bring it up.",
+      "source": "Vulg. Prov. 25.16"
     }
   ],
   "related": [
@@ -63,11 +77,12 @@
   "sources": [
     "<a href=\"https://logeion.org/comedo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: comedo</a> · <a href=\"https://logeion.org/peredo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: peredo</a>",
     "<a href=\"https://logeion.uchicago.edu/consumo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: consumo</a>",
-    "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 10."
+    "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 10.",
+    "The Vulgate, Proverbs 25.16."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

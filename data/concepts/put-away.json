@@ -6,7 +6,10 @@
     "put back",
     "replace",
     "put your book away",
-    "put your books away"
+    "put your books away",
+    "put away the dishes",
+    "put the dishes away",
+    "put the plates away"
   ],
   "domain": "domus",
   "terms": [
@@ -25,6 +28,16 @@
         "Cic. Att. 11.24.2: <span lang=\"la\">sēpōnī et occultārī</span> (Lewis &amp; Short)",
         "Traupman 367"
       ]
+    },
+    {
+      "latin": "compōnō, compōnere, composuī, compositum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "put away in order, put back in its place",
+      "evidence": [
+        "Petr. 67: <span lang=\"la\">nisi argentum composuerit</span>"
+      ],
+      "comment": "Of things put back where they belong when the work is done: Fortunata will not sit down to dinner until she has put the silver away."
     }
   ],
   "phrases": [
@@ -37,6 +50,16 @@
       "latin": "Sēpōne librum (sēpōnite librōs).",
       "english": "Put your book (your books) away.",
       "source": "Traupman 34"
+    },
+    {
+      "latin": "Patellās in armārium repōne, catīnōs in pluteum.",
+      "english": "Put the plates away in the cupboard and the bowls on the shelf.",
+      "source": "composed"
+    },
+    {
+      "latin": "nisi argentum composuerit, nisi reliquiās puerīs dīvīserit, aquam in ōs suum nōn conjiciet",
+      "english": "until she’s put away the silver and shared out the leftovers among the slaves, she won’t put a drop of water in her mouth",
+      "source": "Petr. 67"
     }
   ],
   "related": [
@@ -46,15 +69,16 @@
   ],
   "sources": [
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 367.",
-    "<a href=\"https://logeion.uchicago.edu/sepono\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sepono</a>",
-    "<a href=\"https://logeion.uchicago.edu/repono\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: repono</a> · <a href=\"https://logeion.uchicago.edu/sepono\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sepono</a>"
-  ],
-  "replaces": [
-    "entry-90"
+    "<a href=\"https://logeion.uchicago.edu/sepono\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sepono</a> · <a href=\"https://logeion.uchicago.edu/compono\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: compono</a>",
+    "<a href=\"https://logeion.uchicago.edu/repono\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: repono</a> · <a href=\"https://logeion.uchicago.edu/sepono\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sepono</a>",
+    "Petronius, <em>Satyrica</em> 67."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "by": "Claude"
-  }
+  },
+  "replaces": [
+    "entry-90"
+  ]
 }

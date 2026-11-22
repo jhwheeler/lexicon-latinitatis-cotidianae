@@ -1,0 +1,73 @@
+{
+  "id": "what-do-you-recommend",
+  "english": "what do you recommend?",
+  "pos": "phrase",
+  "also": [
+    "what would you recommend?",
+    "what do you suggest?",
+    "what’s good here?",
+    "what do you advise?"
+  ],
+  "domain": "urbs",
+  "terms": [
+    {
+      "latin": "Quid suādēs?",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "What do you advise? What do you recommend?",
+      "evidence": [
+        "Juv. 9.125: <span lang=\"la\">nunc mihi quid suādēs …?</span>"
+      ],
+      "comment": "<span lang=\"la\">Suādeō</span> takes the thing advised in the accusative, “to advise, recommend” (Lewis &amp; Short). Add <span lang=\"la\">mihi</span> or <span lang=\"la\">nōbīs</span>, and name the choices if there are any."
+    },
+    {
+      "latin": "Quid mihi auctor es?",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "What do you advise me to do?",
+      "evidence": [
+        "Cic. Att. 13.40.2: <span lang=\"la\">etsī quid mī auctor es? advolōne an maneō?</span>"
+      ],
+      "comment": "Cicero’s question to Atticus about a course of action, “what do you advise?”; see “advice” for <span lang=\"la\">tē auctōre</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Quid nōbīs suādēs, piscemne an agnīnam?",
+      "english": "What do you recommend, the fish or the lamb?",
+      "source": "composed"
+    },
+    {
+      "latin": "Quod tū suāseris, id sūmam.",
+      "english": "I’ll have whatever you recommend.",
+      "source": "composed"
+    },
+    {
+      "latin": "nunc mihi quid suādēs post damnum temporis et spēs dēceptās?",
+      "english": "now what do you advise me, after the time I have lost and the hopes that have failed me?",
+      "source": "Juv. 9.125–126"
+    },
+    {
+      "latin": "etsī quid mī auctor es? advolōne an maneō?",
+      "english": "but what do you advise? Shall I hurry to you, or stay?",
+      "source": "Cic. Att. 13.40.2"
+    }
+  ],
+  "related": [
+    "advice",
+    "waiter",
+    "menu",
+    "order-restaurant",
+    "what-am-i-to-do"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/suadeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: suadeo</a> · <a href=\"https://logeion.uchicago.edu/auctor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: auctor</a>",
+    "Juvenal 9.125–126.",
+    "Cicero, <em>Letters to Atticus</em> 13.40.2."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-22",
+    "by": "Claude"
+  }
+}

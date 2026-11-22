@@ -2,6 +2,15 @@
   "id": "portion",
   "english": "portion",
   "pos": "noun",
+  "also": [
+    "dose",
+    "small dose",
+    "half portion",
+    "a half portion",
+    "helping",
+    "serving",
+    "a smaller portion"
+  ],
   "domain": "culina",
   "terms": [
     {
@@ -14,21 +23,25 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "Puerō dīmidiam portiōnem, quaesō.",
+      "english": "A half portion for the boy, please.",
+      "source": "composed"
+    }
+  ],
   "related": [
     "part",
     "half"
   ],
   "sources": [
     "<a href=\"https://alatius.com/ls/index.php?l=portio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: portio</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 63, 306."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 63, 306.",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. serving (at meal)."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "by": "Claude"
-  },
-  "also": [
-    "dose",
-    "small dose"
-  ]
+  }
 }

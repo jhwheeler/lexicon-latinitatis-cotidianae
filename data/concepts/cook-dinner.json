@@ -1,0 +1,87 @@
+{
+  "id": "cook-dinner",
+  "english": "cook dinner",
+  "pos": "verb",
+  "also": [
+    "make dinner",
+    "make supper",
+    "cook supper",
+    "make lunch",
+    "cook lunch",
+    "make breakfast",
+    "get dinner ready",
+    "what shall we cook?",
+    "what are we cooking?"
+  ],
+  "domain": "culina",
+  "terms": [
+    {
+      "latin": "cēnam coquere",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "cook dinner",
+      "grammar": "coquō, coquere, coxī, coctum, with cēnam; of lunch, prandium coquere",
+      "evidence": [
+        "Plaut. Aul. 458: <span lang=\"la\">ī et cēnam coque</span>",
+        "Plaut. Ps. 890: <span lang=\"la\">intrō abī et cēnam coque</span>",
+        "Plaut. Merc. 579: <span lang=\"la\">prandium quī percoquat</span>"
+      ],
+      "comment": "What Plautus’s masters say to the hired cook. The same verb serves for lunch, <span lang=\"la\">prandium coquere</span> or <span lang=\"la\">percoquere</span>. For a breakfast that is set out rather than cooked, <span lang=\"la\">jentāculum parāre</span> (see the next term)."
+    },
+    {
+      "latin": "cēnam parāre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "get dinner ready",
+      "evidence": [
+        "Phaedr. 3.19.2: <span lang=\"la\">parāre cēnam jussus est mātūrius</span>"
+      ],
+      "comment": "The wider phrase: getting the meal ready, cooking and all, as Aesop is told to do. See “prepare”."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Quid hodiē coquēmus?",
+      "english": "What shall we cook today?",
+      "source": "composed"
+    },
+    {
+      "latin": "Tū holera lavā; ego cēnam coquam.",
+      "english": "You wash the vegetables; I’ll make dinner.",
+      "source": "composed"
+    },
+    {
+      "latin": "intrō abī et cēnam coque. properā.",
+      "english": "Go inside and cook the dinner. Hurry.",
+      "source": "Plaut. Ps. 890–891"
+    },
+    {
+      "latin": "Jubē domī mī tibique tuaeque uxōrī celeriter cēnam coquī.",
+      "english": "Have dinner cooked at home for me, for you, and for your wife, and quickly.",
+      "source": "Plaut. Stich. 608–609"
+    },
+    {
+      "latin": "Aesōpus dominō sōlus cum esset familia, parāre cēnam jussus est mātūrius.",
+      "english": "Aesop, the only slave his master had, was told to get dinner ready earlier than usual.",
+      "source": "Phaedr. 3.19.1–2"
+    }
+  ],
+  "related": [
+    "cook",
+    "dinner",
+    "lunch",
+    "breakfast",
+    "prepare",
+    "cook-person"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/coquo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: coquo</a> · <a href=\"https://logeion.uchicago.edu/percoquo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: percoquo</a> · <a href=\"https://logeion.uchicago.edu/cena\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cena</a> · <a href=\"https://logeion.uchicago.edu/prandium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: prandium</a> · <a href=\"https://logeion.uchicago.edu/paro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: paro</a>",
+    "Plautus, <em>Aulularia</em> 458; <em>Mercator</em> 579; <em>Pseudolus</em> 890–891; <em>Stichus</em> 608–609.",
+    "Phaedrus 3.19.1–2."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-22",
+    "by": "Claude"
+  }
+}

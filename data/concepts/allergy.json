@@ -5,7 +5,12 @@
   "also": [
     "allergic",
     "be allergic to",
-    "allergies"
+    "allergies",
+    "does it contain nuts?",
+    "I’m allergic to …",
+    "I’m allergic to nuts",
+    "nut allergy",
+    "contains nuts"
   ],
   "domain": "corpus",
   "terms": [
@@ -30,6 +35,16 @@
       "latin": "Nucēs eī nocent; nē dederīs.",
       "english": "He’s allergic to nuts; don’t give him any.",
       "source": "composed"
+    },
+    {
+      "latin": "Suntne nucēs in hōc cibō?",
+      "english": "Are there nuts in this?",
+      "source": "composed"
+    },
+    {
+      "latin": "Nucēs mihi nocent; nihil nucum edere possum.",
+      "english": "I’m allergic to nuts; I can’t eat anything with nuts in it.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -41,7 +56,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

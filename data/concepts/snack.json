@@ -2,6 +2,15 @@
   "id": "snack",
   "english": "snack",
   "pos": "noun",
+  "also": [
+    "a bite to eat",
+    "afternoon snack",
+    "have a snack",
+    "snack time",
+    "elevenses",
+    "midnight snack",
+    "eat between meals"
+  ],
   "domain": "culina",
   "terms": [
     {
@@ -25,27 +34,35 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "merendam capere",
+      "english": "to have a snack",
+      "source": "Traupman 381"
+    },
+    {
+      "latin": "vidē sīs, nē forte ad merendam quōpiam dēvorterīs atque ibi ampliusculē quam satis fuerit biberīs.",
+      "english": "Mind you haven’t dropped in somewhere for an afternoon snack, perhaps, and had a bit more to drink there than was good for you.",
+      "source": "Plaut. Most. 966–967"
+    },
+    {
+      "latin": "Hōra merendae est: vīs pōmum?",
+      "english": "It’s snack time: would you like an apple?",
+      "source": "composed"
+    }
+  ],
   "related": [
     "snack-box",
     "lunch"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/merenda\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: merenda</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 38."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 38.",
+    "Plautus, <em>Mostellaria</em> 966–967."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-22",
     "by": "Claude"
-  },
-  "also": [
-    "a bite to eat"
-  ],
-  "phrases": [
-    {
-      "latin": "merendam capere",
-      "english": "to have a snack",
-      "source": "Traupman 381"
-    }
-  ]
+  }
 }

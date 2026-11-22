@@ -28,6 +28,8 @@
   more.type = 'button'; more.id = 'more-results'; more.className = 'more-results'; more.hidden = true;
   results.append(more);
   const fold = s => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/æ/g, 'ae').replace(/œ/g, 'oe').replace(/j/g, 'i').replace(/v/g, 'u');
+  // The same without reading j as i or v as u: tv is not tū, though the search finds both.
+  const strict = s => String(s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/æ/g, 'ae').replace(/œ/g, 'oe');
   const KINDS = { d: 'Definition', e: 'Example or phrase', n: 'Source note' };
   const stems = new Map();
 
@@ -43,7 +45,12 @@
           // Its other English words, each as a whole (TV, telly), so that a query that is one of them
           // ranks with the headword (Jack, 16 November 2026: "tv" found television far down the list).
           item.alts = new Set(String(item.al || '').split(';').map(alt => fold(alt).replace(/\s*\(.*\)$/, '').trim()).filter(Boolean));
-          item.lines = item.l.map(line => ({ line, text: fold(line.slice(1).join(' ')) }));
+          // Each line keeps, beside its whole text, a term's own words (its Latin and its gloss, without
+          // its grammar and evidence) and its headword alone (mons, of mōns, montis m.): the ranking
+          // tells a word that is the term from a word quoted in its evidence.
+          item.lines = item.l.map(line => ({ line, text: fold(line.slice(1).join(' ')),
+            own: line[0] === 'd' ? fold(line[1] + ' ' + line[2]) : '',
+            head: line[0] === 'd' ? strict(line[1]).split(/[,(]/)[0].replace(/[.!?…]+$/, '').trim() : '' }));
           item.text = fold([item.en, item.la, item.al].join(' ')) + ' ' + item.lines.map(l => l.text).join(' ');
           // The names a misspelling is measured against: the headword, its other English words, its Latin terms.
           item.names = [item.heading.replace(/\s*\(.*\)$/, ''), ...String(item.al || '').split(';').map(fold),
@@ -174,7 +181,7 @@
     card.className = 'search-result'; card.dataset.resultFor = item.id;
     const best = item.matches[0];
     const label = document.createElement('p'); label.className = 'eyebrow';
-    label.textContent = data.categories[item.k] + ' · ' + (item.close ? 'Close spelling' : best ? KINDS[best.line[0]] : 'Related entry');
+    label.textContent = data.categories[item.k] + ' · ' + (item.close ? 'Close spelling' : item.cited ? 'Evidence or grammar' : best ? KINDS[best.line[0]] : 'Related entry');
     const lead = best && best.line[0] !== 'n' ? best.line[1]
       : item.la || (item.l.find(line => line[0] === 'd') || [])[1] || item.en;
     if (best && best.line[0] === 'e') card.classList.add('search-example');
@@ -263,20 +270,27 @@
       return;
     }
     busy(false);
-    if (query + '|' + scope === rendered) return;
-    rendered = query + '|' + scope;
-    const rank = line => ({ d: 0, e: 1, n: 2 })[line.line[0]];
+    // What was typed, not only what it folds to: tu and tv are one search and two orders.
+    if (strict(typed) + '|' + scope === rendered) return;
+    rendered = strict(typed) + '|' + scope;
+    // A term that has the query in its own words comes before an example, and an example before a
+    // term that has it only in its grammar or evidence (Jack, 19 November 2026: mons found summus,
+    // tendō, immānis, and Appennīnus, each for a quotation with mōns in it, before mōns itself).
+    const rank = line => line.line[0] === 'd' ? (line.own.includes(query) ? 0 : 1.5) : ({ e: 1, n: 2 })[line.line[0]];
     const inScope = item => !scope || item.k === scope || (item.x || []).includes(scope);
     const forms = formsOf(query);
+    const whole = new RegExp('(^|[^a-z0-9])' + query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '($|[^a-z0-9])');
+    const written = strict(typed);
     let matching = data.items.filter(item => inScope(item) && (item.text.includes(query) || forms.has(item)));
     matching.forEach(item => {
-      item.close = false;
+      item.close = false; item.cited = false;
       item.form = forms.get(item) || null;
+      let led = false;
       item.matches = item.lines.filter(line => line.text.includes(query)).sort((a, b) => rank(a) - rank(b));
       // A form of one of the record's terms leads with that term.
       if (item.form) {
         const answer = item.lines.find(line => line.line[0] === 'd' && line.text.startsWith(fold(item.form)));
-        if (answer) item.matches = [answer, ...item.matches.filter(line => line !== answer)];
+        if (answer) { item.matches = [answer, ...item.matches.filter(line => line !== answer)]; led = true; }
       }
       const heading = item.heading.includes(query);
       // A record's answer doesn't repeat its headword; a match on the headword finds the answer.
@@ -284,20 +298,34 @@
       // before sāpōnis quadrula, "a bar of soap").
       if (heading && item.id.startsWith('c-') && !item.form) {
         const answer = item.lines.find(line => line.line[0] === 'd');
-        if (answer && item.matches[0] !== answer) item.matches = [answer, ...item.matches.filter(line => line !== answer)];
+        if (answer) { if (item.matches[0] !== answer) item.matches = [answer, ...item.matches.filter(line => line !== answer)]; led = true; }
       }
-      const definition = item.matches[0]?.line[0] === 'd';
+      // The query is the headword of one of the record's terms, whole: that term leads. It is the
+      // word as typed (tu is tū), or as typed by a reader who writes i for j and u for v (iam is
+      // jam, uideo is videō); failing those, whatever folds to the same letters (tv and tū).
+      const typedAs = line => line.head === written || (line.head && fold(line.head) === written);
+      const word = item.lines.find(typedAs) || item.lines.find(line => line.head && fold(line.head) === query);
+      if (word) { item.matches = [word, ...item.matches.filter(line => line !== word)]; item.form = null; }
+      const first = item.matches[0];
+      const definition = first?.line[0] === 'd' && (led || first.own.includes(query));
+      item.cited = first?.line[0] === 'd' && !definition;
       // The headword itself (soap, or soap with a sense) before longer ones that contain it (soap bubble).
       const exact = item.heading === query || item.heading.startsWith(query + ' (');
       item.rank = definition && heading ? (exact ? 0 : 1) : definition ? 2 : heading ? 3 : item.matches.length ? 4 : 5;
+      // A term that has the query as a word of its own (mōns ignivomus) before one that has it only
+      // inside a longer word (monstrous, in the gloss of immānis).
+      if (item.rank === 2 && !led && !whole.test(first.own)) item.rank = 2.5;
       // The query is one of the entry's other words, whole: it ranks just after the headword itself.
       // Its card still leads with the answer and says it matched an alternative search term.
       if (item.alts.has(query) && item.rank > 0) item.rank = 0.5;
       // A Latin form (piscinam) comes after the English headwords and before matches inside entries.
       if (item.form && item.rank > 1) item.rank = 1.5;
+      // The Latin word itself ranks with the English headword itself: first where it is the record's
+      // answer, then where it is one of the record's other words.
+      // A word found only by reading a typed v as u (tv, tū) comes after the English word typed whole (TV).
+      if (word) item.rank = Math.min(item.rank, (word === item.lines.find(line => line.line[0] === 'd') ? 0 : 0.5) + (typedAs(word) ? 0 : 0.6));
     });
     // The word itself (ship) before the entries that only have it inside a longer word (relationship, worship).
-    const whole = new RegExp('(^|[^a-z0-9])' + query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '($|[^a-z0-9])');
     matching.forEach(item => { item.whole = Boolean(item.form) || whole.test(item.text); });
     matching.sort((a, b) => b.whole - a.whole || a.rank - b.rank || a.order - b.order);
     const inside = matching.some(item => item.whole) ? matching.filter(item => !item.whole).length : 0;
@@ -306,7 +334,7 @@
     if (close) {
       matching = closeTo(query, inScope);
       matching.forEach(item => {
-        item.close = true; item.form = null;
+        item.close = true; item.form = null; item.cited = false;
         const answer = item.lines.find(line => line.line[0] === 'd');
         item.matches = answer ? [answer] : [];
       });
@@ -325,20 +353,59 @@
     empty.style.display = matching.length ? 'none' : 'block';
   }
 
-  // The address follows the query, so that a search can be bookmarked or sent.
-  let timer;
+  // The address follows the query, so that a search can be bookmarked or sent. While a word is
+  // being typed the address is rewritten in place. A search the reader has looked at becomes a
+  // step of its own in the browser's history when the next one begins, so that Back leads from
+  // the second search to the first and not off the site (Jack, 19 November 2026: Back took him
+  // to another website, where he expected the word he had searched for before). A search counts
+  // as looked at when the page opened with it, when Enter is pressed, when its results are
+  // clicked, or when it has stood for LOOKED milliseconds with something found. Typing on from it
+  // (tow, towel) is the same search, not a new step. The rule and the number are Claude's, for
+  // Jack to judge.
+  const LOOKED = 1200;
+  let timer, looking, held = (params.get('q') || '').trim(), looked = Boolean(held);
+  function write(typed) {
+    clearTimeout(timer);
+    const next = new URLSearchParams();
+    if (typed) next.set('q', typed);
+    if (typed && scope && !page) next.set('cat', scope);
+    const url = location.pathname + (next.toString() ? '?' + next : '');
+    if (url !== location.pathname + location.search) {
+      const step = looked && !fold(typed).startsWith(fold(held));
+      history[step ? 'pushState' : 'replaceState'](null, '', url);
+      looked = false;
+    }
+    held = typed;
+    clearTimeout(looking);
+    if (!looked && typed) looking = setTimeout(look, LOOKED);
+  }
+  function look() {
+    if (!data) looking = setTimeout(look, LOOKED);
+    else if (current && !current.close && current.query === fold(held)) looked = true;
+  }
   function remember(typed) {
     clearTimeout(timer);
-    timer = setTimeout(() => {
-      const next = new URLSearchParams();
-      if (typed) next.set('q', typed);
-      if (typed && scope && !page) next.set('cat', scope);
-      const url = location.pathname + (next.toString() ? '?' + next : '');
-      if (url !== location.pathname + location.search) history.replaceState(null, '', url);
-    }, 250);
+    timer = setTimeout(() => write(typed), 250);
   }
+  // The reader has acted on the search as it stands: its address is written at once.
+  function settle() {
+    write(search.value.trim());
+    clearTimeout(looking);
+    looked = Boolean(held);
+  }
+  // Back or Forward between two searches made on this page: show the one the address names.
+  addEventListener('popstate', () => {
+    const now = new URLSearchParams(location.search);
+    clearTimeout(timer); clearTimeout(looking);
+    search.value = now.get('q') || '';
+    if (!page) scope = now.get('cat') || '';
+    held = search.value.trim(); looked = Boolean(held);
+    rendered = null;
+    apply();
+  });
+  results.addEventListener('click', settle, true);
 
-  form.addEventListener('submit', event => { event.preventDefault(); apply(); });
+  form.addEventListener('submit', event => { event.preventDefault(); apply(); settle(); });
   ['input', 'search'].forEach(event => search.addEventListener(event, apply));
   more.addEventListener('click', () => { if (current) draw(); });
   // The data is fetched as soon as the page is idle (or at the first focus, if that comes sooner),

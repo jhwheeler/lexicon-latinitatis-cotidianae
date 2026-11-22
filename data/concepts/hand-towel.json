@@ -9,7 +9,6 @@
       "status": "recommended",
       "period": "classical",
       "evidence": [
-        "Varr. LL 6.85: <span lang=\"la\">mantēlium, ubi manūs terguntur</span>",
         "Verg. A. 1.702"
       ],
       "comment": "The hand towel; later also a tablecloth.",
@@ -18,15 +17,25 @@
       ]
     },
     {
-      "latin": "manutergium",
+      "latin": "mantēlium, mantēliī n.",
+      "status": "alternative",
+      "period": "classical",
+      "evidence": [
+        "Varr. LL 6.85: <span lang=\"la\">mantēlium, ubi manūs terguntur</span>"
+      ],
+      "comment": "Varro’s form of the same word; Lewis &amp; Short gives both under <span lang=\"la\">mantēle</span>."
+    },
+    {
+      "latin": "manutergium, manutergiī n.",
       "status": "avoid",
       "period": "late",
       "evidence": [
-        "Isid.",
+        "Isid. Orig. 19.26 (Lewis &amp; Short)",
+        "M-O s.v. towel",
         "Andresian p. 4",
         "Traupman 125, 396"
       ],
-      "comment": "Traupman’s word; only Isidore has it."
+      "comment": "Traupman’s word, and Andresian’s; only Isidore has it."
     }
   ],
   "phrases": [
@@ -48,12 +57,15 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/mantele\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mantele</a>",
+    "<a href=\"https://logeion.uchicago.edu/manutergium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: manutergium</a>",
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026. Examples marked “Libellus” quote those texts word for word.",
-    "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 4."
+    "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 4.",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. towel.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 125, 396."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-19",
     "by": "Claude"
   }
 }

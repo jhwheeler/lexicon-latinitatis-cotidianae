@@ -1,0 +1,80 @@
+{
+  "id": "robot",
+  "english": "robot",
+  "pos": "noun",
+  "also": [
+    "robots",
+    "industrial robot"
+  ],
+  "domain": "computatra",
+  "also_under": [
+    "officina"
+  ],
+  "terms": [
+    {
+      "latin": "robōtum, robōtī n.",
+      "status": "recommended",
+      "period": "modern",
+      "gloss": "a robot: a machine that senses and moves by a program",
+      "evidence": [
+        "M-O s.v. robot: <span lang=\"la\">robôtum, i</span> (Egger D.L. 38)",
+        "Vicipaedia s.v. Catena cinematica: <span lang=\"la\">ATHLETE, robotum mobile JPL</span>"
+      ],
+      "comment": "The international word, from Czech <em>robot</em> (Čapek, 1920), made a neuter of the second declension. Morgan–Owens gives it from Egger and marks the second <em>o</em> long, as we write it; the Czech vowels are short, so the length is the source’s, and it puts the stress where most languages put it (ro-BŌ-tum). Vicipaedia uses the word as a common noun; it is weak evidence by itself. Preferred to the classical <span lang=\"la\">automatum</span> because a robot is more than a self-moving contrivance, and because modern Latin also uses <span lang=\"la\">automatum</span> of motor vehicles (see automaton).",
+      "notes": [
+        "robotum-o"
+      ]
+    },
+    {
+      "latin": "automatum, automatī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "an automaton, a self-moving machine; of a robot, a modern use",
+      "evidence": [
+        "Suet. Claud. 34.2: <span lang=\"la\">sī automatum vel pēgma vel quid tāle aliud parum cessisset</span>",
+        "M-O s.v. machine: <span lang=\"la\">automatum, i n.</span>"
+      ],
+      "comment": "Greek αὐτόματον, with every vowel short. Classically a mechanical figure or stage device that moves by itself (Vitruvius, Petronius, Suetonius; Lewis &amp; Short); used of a robot it is wider and older-sounding, and the case for it is that it is the classical word. See automaton."
+    }
+  ],
+  "notes": {
+    "robotum-o": {
+      "form": "robōtum",
+      "claim": "long second o",
+      "html": "Morgan–Owens prints <span lang=\"la\">robôtum</span>, its circumflex marking a long vowel. The word is not in Lewis &amp; Short, and the Czech <em>robot</em> has two short vowels: with a short <em>o</em> the Latin stress would fall on the first syllable (RO-bo-tum), as Czech has it. We follow the source; the choice is open to review."
+    }
+  },
+  "phrases": [
+    {
+      "latin": "Hoc robōtum nōn ambulat, sed volvitur.",
+      "english": "This robot doesn’t walk; it rolls.",
+      "source": "composed"
+    },
+    {
+      "latin": "Robōtum pavīmentum pūrgat; pedēs tolle!",
+      "english": "The robot is cleaning the floor; lift your feet!",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "automaton",
+    "toy-robot",
+    "robot-arm",
+    "humanoid-robot",
+    "robot-vacuum",
+    "machine",
+    "sensor",
+    "artificial-intelligence"
+  ],
+  "sources": [
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.vv. machine; robot.",
+    "<a href=\"https://la.wikipedia.org/wiki/Catena_cinematica\" rel=\"noopener noreferrer\" target=\"_blank\">Vicipaedia: Catena cinematica</a>",
+    "<a href=\"https://logeion.uchicago.edu/automatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: automatus</a>",
+    "Suetonius, <em>Divus Claudius</em> 34.2."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-21",
+    "by": "Claude"
+  }
+}

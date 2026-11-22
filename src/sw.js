@@ -3,7 +3,7 @@
 // version is a hash of the files below, so any change to them replaces the saved copies.
 const VERSION = '{{version}}';
 const CORE = 'lexicon-core-' + VERSION;   // the pages and files every visit needs, saved when the worker installs
-const PAGES = 'lexicon-pages';            // entry and word pages, saved as they are read
+const PAGES = 'lexicon-pages';            // entry and word pages, and the picture cards' pictures, saved as they are read
 const PAGES_MAX = 600;
 const FILES = {{files}};
 
@@ -19,14 +19,37 @@ self.addEventListener('activate', event => {
     .then(() => self.clients.claim()));
 });
 
-// The oldest saved pages make room for new ones.
+// The oldest saved pages make room for new ones. The picture cards' pictures (chartae/) are saved in
+// the same cache and are never among them (Jack, 20 November 2026: the cards must work offline; until
+// then a picture counted as a page, and reading entries could push the pictures out). They are many
+// (hundreds, and more with every subject added), but they are what the cards need offline; they are
+// fetched by src/chartae.js, the round's first, and it removes those of cards that are gone. Until a
+// picture is here, the card shows the small preview carried in assets/chartae-data.js.
+const PICTURE = /\/chartae\/[^/]+$/;
 async function trim(cache) {
-  const keys = await cache.keys();
+  const keys = (await cache.keys()).filter(key => !PICTURE.test(new URL(key.url).pathname));
   await Promise.all(keys.slice(0, Math.max(0, keys.length - PAGES_MAX)).map(key => cache.delete(key)));
+}
+
+// A picture of the cards is answered from the device when it is there, with no request to the network
+// at all; only a picture not yet saved is fetched, and saved (the coordinating session's decision, 21
+// November 2026: until then a saved picture was fetched afresh every time it was shown, a download per
+// card on a slow connection). Its address carries a version taken from its file (chartae/<id>.jpg?v=…,
+// written by the builder), so a picture taken again has a new address and is fetched once; the address
+// is matched whole, version included. src/chartae.js clears away the versions no card wants.
+async function picture(request, url) {
+  const pages = await caches.open(PAGES);
+  const address = url.pathname + url.search;
+  const saved = await pages.match(address);
+  if (saved) return saved;
+  const response = await fetch(request);
+  if (response.ok) pages.put(address, response.clone()).catch(() => {});
+  return response;
 }
 
 async function respond(request) {
   const url = new URL(request.url);
+  if (PICTURE.test(url.pathname)) return picture(request, url);
   // The front page is index.html however it is addressed (the folder, or with a search in its address).
   const key = url.pathname.endsWith('/') ? url.pathname + 'index.html' : url.pathname;
   const core = await caches.open(CORE);

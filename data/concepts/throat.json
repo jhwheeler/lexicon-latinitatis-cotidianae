@@ -3,11 +3,9 @@
   "english": "throat",
   "pos": "noun",
   "also": [
-    "gullet",
     "my throat hurts",
     "clear one’s throat",
-    "a lump in one’s throat",
-    "esophagus"
+    "a lump in one’s throat"
   ],
   "domain": "corpus",
   "terms": [
@@ -17,11 +15,9 @@
       "period": "classical",
       "gloss": "throat, the back of the mouth",
       "evidence": [
-        "Plin. NH 11.179: <span lang=\"la\">summum gulae faucēs vocantur</span> (Lewis &amp; Short)",
+        "Plin. NH 11.179: <span lang=\"la\">summum gulae faucēs vocantur</span>",
         "Quint. 11.3.20: <span lang=\"la\">faucēs tumentēs</span> (Lewis &amp; Short)",
-        "Traupman 56, 393",
-        "Traupman 59",
-        "Traupman 66"
+        "Traupman 56, 59, 66, 393"
       ],
       "comment": "The everyday word for the throat as it gets sore, dry, or hoarse; plural in prose (the singular <span lang=\"la\">fauce</span> is poetic). Also the narrow entrance of anything, a pass or a gorge (see gorge)."
     },
@@ -40,13 +36,11 @@
       "latin": "gula, gulae f.",
       "status": "alternative",
       "period": "classical",
-      "gloss": "gullet",
+      "gloss": "throat, neck (as one is seized or throttled by it)",
       "evidence": [
-        "Plin. NH 11.179 (Lewis &amp; Short)",
-        "Traupman 58",
-        "Traupman 310"
+        "Cic. Verr. 2.4.24: <span lang=\"la\">quem obtortā gulā dē convīviō in vincla atque in tenebrās abripī jussit</span>"
       ],
-      "comment": "The gullet, the passage food goes down; much more often greed for food (<span lang=\"la\">gulae parēre</span>, Lewis &amp; Short)."
+      "comment": "Properly the gullet (see gullet), and much more often greed for food (see glutton); the throat in phrases of seizing and strangling, as <span lang=\"la\">obtortā gulā</span>, “by the twisted throat”."
     }
   ],
   "phrases": [
@@ -64,15 +58,19 @@
   "related": [
     "sore-throat",
     "neck",
+    "gullet",
+    "windpipe",
     "gorge"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/fauces\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fauces</a> · <a href=\"https://logeion.uchicago.edu/guttur\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: guttur</a> · <a href=\"https://logeion.uchicago.edu/gula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gula</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 56, 58, 59, 66, 310."
+    "Cicero, <em>In Verrem</em> 2.4.24.",
+    "Pliny, <em>Naturalis historia</em> 11.179.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 56, 59, 66, 393."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-21",
     "by": "Claude"
   }
 }

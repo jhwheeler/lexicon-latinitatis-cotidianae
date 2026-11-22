@@ -792,6 +792,8 @@ class BuildTests(unittest.TestCase):
         for path in ('index.html', 'k/sermo.html', 'assets/search-data.js', 'assets/search.js', 'assets/lexicon.css',
                      'assets/fonts/lexicon-serif-400.woff2', 'manifest.webmanifest',
                      'practice.html', 'hora.html', 'assets/practice.js', 'assets/practice-data.js',
+                     'chartae.html', 'assets/chartae.js', 'assets/chartae-data.js',
+                     *[game['file'] for game in builder.gap_games(self.root)],
                      'review.html', 'assets/review.js'):
             self.assertIn(path, files)
         self.assertTrue(all(path in outputs for path in files))
@@ -911,6 +913,397 @@ class BuildTests(unittest.TestCase):
 
     # Practice ----------------------------------------------------------------------------
 
+    def test_the_picture_cards_have_their_pictures_their_credits_and_the_spacing_of_the_practice(self):
+        """chartae.html (Jack, 20 November 2026): picture cards, Chartae pictae, each with its
+        Latin name, a sentence, and the photographer's credit, an animal's with what it eats, spaced
+        as the vocabulary practice spaces its cards (Jack, the same day: "do we not have a way of
+        repeating in our other game already?")."""
+        outputs = builder.build_site(self.root)
+        script = outputs['assets/chartae-data.js']
+        self.assertTrue(script.endswith(';\n') and 'window.lexiconChartae = ' in script)
+        data = json.loads(script[script.index('{'):script.rindex('}') + 1])
+        source = self.read('data/chartae.json')
+        self.assertEqual([card['id'] for card in data['cards']], [card['id'] for card in source['cards']])
+        self.assertEqual([group['id'] for group in data['groups']], [group['id'] for group in source['groups']])
+        self.assertEqual([(group['id'], group['subject']) for group in data['groups']], [(group['id'], group['subject']) for group in source['groups']])
+        subjects = ['animalia', 'plantae', 'corpus', 'cibi', 'domestica', 'vestimenta', 'fabrilia']
+        self.assertEqual([subject['id'] for subject in data['subjects']][:7], subjects)
+        subject_of = {group['id']: group['subject'] for group in data['groups']}
+        of = {key: sum(subject_of[card['group']] == key for card in data['cards']) for key in subjects}
+        # The description is made from the data, for every subject with cards, with the serial comma.
+        self.assertIn(f'content="{len(data["cards"])} picture cards of animals, plants, the body, food and drink, household things, '
+                      f'clothes, and craftsmen&#x27;s tools ({of["animalia"]} of animals, {of["plantae"]} of plants, {of["corpus"]} of the body, '
+                      f'{of["cibi"]} of food and drink, {of["domestica"]} of household things, {of["vestimenta"]} of clothes, '
+                      f'and {of["fabrilia"]} of craftsmen&#x27;s tools) with their Latin names',
+                      outputs['chartae.html'])
+        self.assertEqual(builder.english_series(['a']), 'a')
+        self.assertEqual(builder.english_series(['a', 'b']), 'a and b')
+        self.assertEqual(builder.english_series(['a', 'b', 'c']), 'a, b, and c')
+        self.assertIn('<title>Picture cards · ', outputs['chartae.html'])
+        linked = 0
+        for card in data['cards']:
+            with self.subTest(card=card['id']):
+                self.assertRegex(card['picture'], rf'^chartae/{card["id"]}\.jpg\?v=[0-9a-f]{{8}}$')
+                self.assertEqual(outputs[card['picture'].split('?')[0]][:3], b'\xff\xd8\xff')   # a JPEG
+                self.assertTrue(card['latin'].startswith(card['latin'].split(',')[0]) and ',' in card['latin'])
+                if 'record' in card:
+                    linked += 1
+                    self.assertIn(f'c/{card["record"]}.html', outputs)
+                # Every picture is one that anyone may reuse, and says whose it is.
+                image = card['image']
+                self.assertIn(image['licence'], builder.PICTURE_LICENCES)
+                self.assertEqual(image['licence_url'], builder.PICTURE_LICENCES[image['licence']])
+                self.assertTrue(image['author'] and image['page'].startswith('https://commons.wikimedia.org/wiki/File:'))
+        self.assertGreater(linked, len(data['cards']) * .9)
+        # The pictures are the cards' and no others, and none is saved when the lexicon installs.
+        self.assertEqual(sorted(path for path in outputs if path.startswith('chartae/')), sorted(card['picture'].split('?')[0] for card in data['cards']))
+        files = json.loads(re.search(r'const FILES = (\[.*?\]);', outputs['sw.js'])[1])
+        self.assertFalse(any(path.startswith('chartae/') for path in files))
+        # A sentence taken from the readers is shown as one of ours, and the readers are not named.
+        readers = [card['id'] for card in source['cards'] if builder.composed({'source': card['source']})]
+        self.assertTrue(readers)
+        shown = {card['id']: card for card in data['cards']}
+        self.assertTrue(all(shown[key]['source'] == '' for key in readers))
+        self.assertTrue(all(shown[card['id']]['source'] == card['source'] for card in source['cards'] if card['id'] not in readers))
+        for path in ('chartae.html', 'assets/chartae-data.js', 'assets/chartae.js'):
+            self.assertNotRegex(outputs[path], r'Libellus|Theodōrus et pater|libell[īi]', path)
+        # The spacing is the vocabulary practice's own: the same constants and the same functions.
+        practice, game = outputs['assets/practice.js'], outputs['assets/chartae.js']
+        for start in ('  const ROUND = ', '  const ROUND_DUE_MORE = ', '  const AGAIN_WAIT = ', '  const WAIT_DAYS = '):
+            line = next(line for line in practice.splitlines() if line.startswith(start))
+            self.assertIn(line + '\n', game, start)
+        for name in ('dayStart', 'dueFrom', 'boxAfter'):
+            body = re.search(r'^  function %s\(.*?^  \}\n' % name, practice, re.S | re.M)[0]
+            self.assertIn(body, game, name)
+        self.assertIn("progress: 'lexicon-chartae'", game)
+        self.assertIn("lang: 'lexicon-practice-lang'", game)
+        # The page: the site's header and footer, the two marks of the practice, and the ways to and from it.
+        page = outputs['chartae.html']
+        self.assertEqual(re.findall(r'<script src="([^"]+)"', page), ['assets/lexicon.js', 'assets/chartae-data.js', 'assets/chartae.js'])
+        self.assertIn('<a href="how-practice-works.html" hreflang="en" data-t="how">How the practice works</a>', page)
+        self.assertLess(page.index('class="pbtn pbtn-again" id="g-again"'), page.index('class="pbtn pbtn-got" id="g-got"'))
+        self.assertIn('<a href="practice.html" data-t="vocabulary">Vocabulary</a>', page)
+        self.assertIn('<a href="chartae.html">', outputs['practice.html'])
+        # The builder refuses a card whose entry, licence or picture is not what it says.
+        cards = self.read('data/chartae.json')
+        broken = json.loads(json.dumps(cards)); broken['cards'][0]['record'] = 'no-such-record'
+        self.write('data/chartae.json', broken)
+        with self.assertRaisesRegex(ValueError, 'no record no-such-record'):
+            builder.build_site(self.root)
+        broken = json.loads(json.dumps(cards)); broken['cards'][0]['image']['licence'] = 'CC BY-NC 4.0'
+        self.write('data/chartae.json', broken)
+        with self.assertRaisesRegex(ValueError, 'the licence CC BY-NC 4.0 is not one of'):
+            builder.build_site(self.root)
+        self.write('data/chartae.json', cards)
+        (self.root / 'src/chartae/stray.jpg').write_bytes(b'x')
+        with self.assertRaisesRegex(ValueError, 'files that no card uses'):
+            builder.build_site(self.root)
+        (self.root / 'src/chartae/stray.jpg').unlink()
+        (self.root / f'src/chartae/{cards["cards"][0]["id"]}.jpg').unlink()
+        with self.assertRaisesRegex(ValueError, 'is missing'):
+            builder.build_site(self.root)
+
+    def test_every_picture_card_carries_the_preview_of_its_own_picture(self):
+        """Jack, 21 November 2026, on 4G, of a card shown with its picture's place empty: "Saepe sīc
+        fit"; and "Cōnsilium habeō: imāginēs in indice ipsō inclūdere possumus". Every card carries a
+        small preview of its picture in the card data, made from the picture as it is now (its JPEG
+        comment names the picture by a hash); the builder refuses a card whose preview is missing or
+        was made from another picture, and a preview that no card uses."""
+        import base64
+        outputs = builder.build_site(self.root)
+        script = outputs['assets/chartae-data.js']
+        data = json.loads(script[script.index('{'):script.rindex('}') + 1])
+        for card in data['cards']:
+            with self.subTest(card=card['id']):
+                preview = base64.b64decode(card['preview'], validate=True)
+                self.assertEqual(preview, (self.root / builder.PREVIEWS / f'{card["id"]}.jpg').read_bytes())
+                self.assertEqual(preview[:3], b'\xff\xd8\xff')
+                self.assertLessEqual(len(preview), builder.PREVIEW_MOST)
+                self.assertEqual(builder.jpeg_comment(preview), builder.preview_mark(outputs[card['picture'].split('?')[0]]))
+                # Its size, from the frame header (SOF0 or SOF2): 102 high and 144 wide.
+                at = re.search(rb'\xff[\xc0\xc2]', preview).start()
+                self.assertEqual((int.from_bytes(preview[at + 7:at + 9], 'big'), int.from_bytes(preview[at + 5:at + 7], 'big')), builder.PREVIEW_SIZE)
+        # The previews are not pictures of the site: they are in the card data, which the worker saves when it installs.
+        self.assertFalse(any('chartae-previews' in path for path in outputs))
+        files = json.loads(re.search(r'const FILES = (\[.*?\]);', outputs['sw.js'])[1])
+        self.assertIn('assets/chartae-data.js', files)
+        first = data['cards'][0]['id']
+        preview = self.root / builder.PREVIEWS / f'{first}.jpg'
+        kept = preview.read_bytes()
+        # A preview made from another picture (the picture was fetched again, the preview not) is refused.
+        preview.write_bytes((self.root / builder.PREVIEWS / f'{data["cards"][1]["id"]}.jpg').read_bytes())
+        with self.assertRaisesRegex(ValueError, f'its preview data/chartae-previews/{first}.jpg was not made from the picture'):
+            builder.build_site(self.root)
+        # So is a picture changed under its preview.
+        preview.write_bytes(kept)
+        picture = self.root / f'src/chartae/{first}.jpg'
+        picture.write_bytes(picture.read_bytes() + b'\0')
+        with self.assertRaisesRegex(ValueError, 'was not made from the picture .* --previews'):
+            builder.build_site(self.root)
+        # A missing preview is refused, and says how to make it.
+        preview.unlink()
+        with self.assertRaisesRegex(ValueError, f'its preview data/chartae-previews/{first}.jpg is missing \\(run python3 scripts/fetch_picture.py --previews\\)'):
+            builder.build_site(self.root)
+        # A preview that no card uses is refused.
+        preview.write_bytes(kept)
+        (self.root / f'src/chartae/{first}.jpg').write_bytes(outputs[f'chartae/{first}.jpg'])
+        (self.root / builder.PREVIEWS / 'stray.jpg').write_bytes(kept)
+        with self.assertRaisesRegex(ValueError, 'chartae-previews has files that no card uses'):
+            builder.build_site(self.root)
+
+    def test_a_pictures_address_carries_its_version_and_changes_with_its_file(self):
+        """The service worker answers a saved picture from the device without asking the network
+        (21 November 2026), so a picture's address in the card data carries a version taken from its
+        file: a picture taken again under the same id has a new address, an unchanged one keeps its own."""
+        def load():
+            script = builder.build_site(self.root)['assets/chartae-data.js']
+            return {card['id']: card['picture'] for card in json.loads(script[script.index('{'):script.rindex('}') + 1])['cards']}
+        before = load()
+        first, second = list(before)[:2]
+        picture = self.root / f'src/chartae/{first}.jpg'
+        self.assertEqual(before[first], f'chartae/{first}.jpg?v=' + hashlib.sha256(picture.read_bytes()).hexdigest()[:builder.PICTURE_VERSION])
+        self.assertEqual(builder.picture_address(first, picture.read_bytes()), before[first])
+        # A new file for the first card (here the second card's picture, with its preview): a new address for it, the same for the rest.
+        picture.write_bytes((self.root / f'src/chartae/{second}.jpg').read_bytes())
+        shutil.copy(self.root / builder.PREVIEWS / f'{second}.jpg', self.root / builder.PREVIEWS / f'{first}.jpg')
+        after = load()
+        self.assertNotEqual(after[first], before[first])
+        self.assertEqual(after[first], f'chartae/{first}.jpg?v=' + before[second].split('?v=')[1])
+        self.assertEqual({key: value for key, value in after.items() if key != first}, {key: value for key, value in before.items() if key != first})
+
+    def test_a_previews_jpeg_comment_is_read_from_the_segments_before_the_image(self):
+        """The preview check reads the JPEG's comment without Pillow (the build has none)."""
+        segment = lambda marker, body: b'\xff' + marker + (len(body) + 2).to_bytes(2, 'big') + body
+        jpeg = b'\xff\xd8' + segment(b'\xe0', b'JFIF\0\1\1') + segment(b'\xfe', b'lexicon-preview of sha256:ab') + b'\xff\xda' + b'\0' * 8
+        self.assertEqual(builder.jpeg_comment(jpeg), 'lexicon-preview of sha256:ab')
+        self.assertEqual(builder.jpeg_comment(b'\xff\xd8' + segment(b'\xe0', b'JFIF') + b'\xff\xda\xff\xfe\0\4ab'), '')
+        self.assertEqual(builder.jpeg_comment(b'GIF89a'), '')
+        self.assertEqual(builder.preview_mark(b'x'), 'lexicon-preview of sha256:' + hashlib.sha256(b'x').hexdigest())
+
+    def test_the_picture_cards_have_subjects_and_kinds_and_food_only_for_animals(self):
+        """The picture cards are one game for every subject (Jack, 20 November 2026): each kind
+        belongs to a subject; an animal's card says what it eats (food), a plant's may say what it
+        bears (bears), and neither goes on a card of the other; a kind may wait for its cards."""
+        cards = self.read('data/chartae.json')
+        animal = next(card for card in cards['cards'] if card['group'] == 'villa')
+        plant_kind = next(group['id'] for group in cards['groups'] if group['subject'] == 'plantae')
+
+        def plant(**extra):
+            data = json.loads(json.dumps(cards))
+            card = {key: value for key, value in animal.items() if key not in ('food', 'record')}
+            card.update(id='planta-probata', group=plant_kind, **extra)
+            data['cards'].append(card)
+            return data
+        shutil.copy(self.root / f'src/chartae/{animal["id"]}.jpg', self.root / 'src/chartae/planta-probata.jpg')
+        shutil.copy(self.root / builder.PREVIEWS / f'{animal["id"]}.jpg', self.root / builder.PREVIEWS / 'planta-probata.jpg')
+        # A plant's card with what it bears, and an empty kind, are taken; the data says both.
+        data = plant(bears='Glandēs.')
+        data['groups'].append({'id': 'vacua', 'subject': 'plantae', 'latin': 'Vacua', 'english': 'Empty'})
+        self.write('data/chartae.json', data)
+        outputs = builder.build_site(self.root)
+        script = outputs['assets/chartae-data.js']
+        built = json.loads(script[script.index('{'):script.rindex('}') + 1])
+        shown = {card['id']: card for card in built['cards']}
+        self.assertEqual(shown['planta-probata']['bears'], 'Glandēs.')
+        self.assertNotIn('food', shown['planta-probata'])
+        self.assertIn({'id': 'vacua', 'subject': 'plantae', 'latin': 'Vacua', 'english': 'Empty'}, built['groups'])
+        self.assertTrue(all(card['group'] != 'vacua' for card in built['cards']))
+        # A plant's card without bears is taken too.
+        self.write('data/chartae.json', plant())
+        builder.build_site(self.root)
+        # What is refused: food on a plant, bears on an animal, an animal without food, an unknown subject.
+        self.write('data/chartae.json', plant(food='Aquā.'))
+        with self.assertRaisesRegex(ValueError, 'food \\(what an animal eats\\) is only for a card of an animal'):
+            builder.build_site(self.root)
+        data = plant(); data['cards'][0]['bears'] = 'Ossa.'
+        self.write('data/chartae.json', data)
+        with self.assertRaisesRegex(ValueError, 'bears \\(what a plant bears\\) is only for a card of a plant'):
+            builder.build_site(self.root)
+        data = plant(); del data['cards'][0]['food']
+        self.write('data/chartae.json', data)
+        with self.assertRaisesRegex(ValueError, 'a card of an animal needs food'):
+            builder.build_site(self.root)
+        data = plant(); data['groups'][0]['subject'] = 'instrumenta'
+        self.write('data/chartae.json', data)
+        with self.assertRaisesRegex(ValueError, 'has an unknown subject instrumenta'):
+            builder.build_site(self.root)
+        # An id is one across every subject: it names the picture and the card's progress.
+        data = plant(); data['cards'][-1]['id'] = animal['id']
+        self.write('data/chartae.json', data)
+        with self.assertRaisesRegex(ValueError, 'bad or repeated id'):
+            builder.build_site(self.root)
+
+    def test_the_picture_cards_carry_scientific_names_written_as_nomenclature_writes_them(self):
+        """A card of an animal or a plant may give its scientific name after the English one (Jack,
+        20 November 2026: "Hōc modō discēmus discrīmina"), written as zoology and botany write it:
+        a capital on the first word only, and no macrons or other marks. A card without one is taken."""
+        cards = self.read('data/chartae.json')
+        named = [card for card in cards['cards'] if 'scientific' in card]
+        self.assertTrue(named and any('scientific' not in card for card in cards['cards']))
+        outputs = builder.build_site(self.root)
+        script = outputs['assets/chartae-data.js']
+        built = {card['id']: card for card in json.loads(script[script.index('{'):script.rindex('}') + 1])['cards']}
+        for card in cards['cards']:
+            self.assertEqual(built[card['id']].get('scientific'), card.get('scientific'), card['id'])
+        # In the data the field stands right after the English name.
+        first = named[0]
+        self.assertEqual(list(first)[list(first).index('english') + 1], 'scientific')
+
+        def with_name(name):
+            data = json.loads(json.dumps(cards))
+            data['cards'][0]['scientific'] = name
+            self.write('data/chartae.json', data)
+        # The anatomists' terms (Terminologia Anatomica) are written the same way: Hepar, Vesica urinaria.
+        for name in ('Quercus ilex', 'Platanus × hispanica', 'Capsella bursa-pastoris', 'Brassica oleracea subsp. capitata', 'Hepar', 'Vesica urinaria'):
+            with_name(name)
+            builder.build_site(self.root)
+        with_name('Canis lūpus')
+        with self.assertRaisesRegex(ValueError, 'scientific name “Canis lūpus” has ū: it is written as zoology, botany, and anatomy write it'):
+            builder.build_site(self.root)
+        with_name('canis lupus')
+        with self.assertRaisesRegex(ValueError, 'must begin with a capital letter'):
+            builder.build_site(self.root)
+        with_name('Canis Lupus')
+        with self.assertRaisesRegex(ValueError, 'only the first word has a capital'):
+            builder.build_site(self.root)
+        with_name('Canis  lupus')
+        with self.assertRaisesRegex(ValueError, 'has stray spaces'):
+            builder.build_site(self.root)
+        with_name(' Canis lupus')
+        with self.assertRaisesRegex(ValueError, 'has stray spaces'):
+            builder.build_site(self.root)
+
+    def test_a_picture_card_may_carry_a_second_latin_word(self):
+        """Where two Latin words mean the same thing (Jack, 20 November 2026: coma and capillus), one
+        card has the second on its back: also, a full dictionary form, on a card of any subject,
+        validated as the first word is, and carried into the page's data right after it."""
+        cards = self.read('data/chartae.json')
+        self.assertEqual(next(card for card in cards['cards'] if card['id'] == 'capillus')['also'], 'coma, comae f.')
+        outputs = builder.build_site(self.root)
+        script = outputs['assets/chartae-data.js']
+        built = {card['id']: card for card in json.loads(script[script.index('{'):script.rindex('}') + 1])['cards']}
+        for card in cards['cards']:
+            self.assertEqual(built[card['id']].get('also'), card.get('also'), card['id'])
+        self.assertEqual(list(built['capillus'])[:3], ['id', 'latin', 'also'])
+        # On an animal's card too, and refused when it is empty or has stray spaces.
+        data = json.loads(json.dumps(cards))
+        data['cards'][0]['also'] = 'catulus, catulī m.'
+        self.write('data/chartae.json', data)
+        builder.build_site(self.root)
+        for bad in ('', ' coma, comae f.', 'coma, comae f. '):
+            data['cards'][0]['also'] = bad
+            self.write('data/chartae.json', data)
+            with self.subTest(also=bad), self.assertRaisesRegex(ValueError, 'also is empty or has stray spaces|Expected nonempty text'):
+                builder.build_site(self.root)
+
+    def test_the_body_is_a_third_subject_that_takes_neither_food_nor_bears(self):
+        """The body came in as a third subject (Jack, 20 November 2026): its cards take neither what
+        an animal eats nor what a plant bears; the animals still must have food, and only plants bear."""
+        cards = self.read('data/chartae.json')
+        self.assertIn({'id': 'corpus', 'latin': 'Corpus', 'english': 'The body'}, cards['subjects'])
+        self.assertEqual([group['id'] for group in cards['groups'] if group['subject'] == 'corpus'], ['caput', 'truncus', 'bracchium', 'crus', 'intus'])
+        body = [card for card in cards['cards'] if card['group'] in ('caput', 'truncus', 'bracchium', 'crus', 'intus')]
+        self.assertTrue(body and all('food' not in card and 'bears' not in card for card in body))
+        builder.build_site(self.root)
+        index = cards['cards'].index(body[0])
+        for name, value, message in (('food', 'Carne.', 'food \\(what an animal eats\\) is only for a card of an animal'),
+                                     ('bears', 'Glandēs.', 'bears \\(what a plant bears\\) is only for a card of a plant')):
+            data = json.loads(json.dumps(cards))
+            data['cards'][index][name] = value
+            self.write('data/chartae.json', data)
+            with self.subTest(name=name), self.assertRaisesRegex(ValueError, message):
+                builder.build_site(self.root)
+        # A kind may share its id with a card (the kind caput and the card caput): the two are kept apart.
+        self.assertTrue({group['id'] for group in cards['groups']} & {card['id'] for card in cards['cards']})
+
+    def test_food_and_drink_is_a_fourth_subject_without_scientific_names(self):
+        """Food and drink came in as a fourth subject (Jack, 21 November 2026: "Postquam chartās
+        partium corporum perfēceris, perge quaesō: 1. Cibī 2. Rēs familiārēs domesticaeque"): its
+        cards take neither food nor bears, and carry no scientific name, since a dish is not a taxon."""
+        cards = self.read('data/chartae.json')
+        self.assertIn({'id': 'cibi', 'latin': 'Cibī', 'english': 'Food and drink'}, cards['subjects'])
+        kinds = ['panes', 'fercula', 'lactea', 'carnes', 'condimenta', 'potiones']
+        self.assertEqual([group['id'] for group in cards['groups'] if group['subject'] == 'cibi'], kinds)
+        food = [card for card in cards['cards'] if card['group'] in kinds]
+        self.assertTrue(food and all('food' not in card and 'bears' not in card and 'scientific' not in card for card in food))
+        builder.build_site(self.root)
+        index = cards['cards'].index(food[0])
+        for name, value, message in (('food', 'Carne.', 'food \\(what an animal eats\\) is only for a card of an animal'),
+                                     ('bears', 'Glandēs.', 'bears \\(what a plant bears\\) is only for a card of a plant')):
+            data = json.loads(json.dumps(cards))
+            data['cards'][index][name] = value
+            self.write('data/chartae.json', data)
+            with self.subTest(name=name), self.assertRaisesRegex(ValueError, message):
+                builder.build_site(self.root)
+
+    def test_household_things_are_a_fifth_subject_without_scientific_names(self):
+        """Household things came in as a fifth subject (Jack, 21 November 2026: "Postquam chartās
+        partium corporum perfēceris, perge quaesō: 1. Cibī 2. Rēs familiārēs domesticaeque"), with
+        four kinds in order: its cards take neither food nor bears, and carry no scientific name.
+        Two of its cards share a Latin word with a card of another subject, each under its own id."""
+        cards = self.read('data/chartae.json')
+        self.assertIn({'id': 'domestica', 'latin': 'Rēs domesticae', 'english': 'Household things'}, cards['subjects'])
+        kinds = ['supellex', 'culina', 'balneum', 'domus']
+        self.assertEqual([group['id'] for group in cards['groups'] if group['subject'] == 'domestica'], kinds)
+        things = [card for card in cards['cards'] if card['group'] in kinds]
+        self.assertTrue(things and all('food' not in card and 'bears' not in card and 'scientific' not in card for card in things))
+        by_id = {card['id']: card for card in cards['cards']}
+        for here, there in (('patellavas', 'patella'), ('spongiaculinae', 'spongia')):
+            with self.subTest(card=here):
+                self.assertIn(by_id[here]['group'], kinds)
+                self.assertNotIn(by_id[there]['group'], kinds)
+                self.assertEqual(by_id[here]['latin'].split(',')[0], by_id[there]['latin'].split(',')[0])
+        builder.build_site(self.root)
+        index = cards['cards'].index(things[0])
+        for name, value, message in (('food', 'Carne.', 'food \\(what an animal eats\\) is only for a card of an animal'),
+                                     ('bears', 'Glandēs.', 'bears \\(what a plant bears\\) is only for a card of a plant')):
+            data = json.loads(json.dumps(cards))
+            data['cards'][index][name] = value
+            self.write('data/chartae.json', data)
+            with self.subTest(name=name), self.assertRaisesRegex(ValueError, message):
+                builder.build_site(self.root)
+
+    def check_subject_of_things(self, subject, kinds, shared):
+        """A subject of things (no food, no bears, no scientific name), its kinds in order, and the
+        cards of it that share a Latin word with a card of another subject, each under its own id."""
+        cards = self.read('data/chartae.json')
+        self.assertIn(subject, cards['subjects'])
+        self.assertEqual([group['id'] for group in cards['groups'] if group['subject'] == subject['id']], kinds)
+        things = [card for card in cards['cards'] if card['group'] in kinds]
+        self.assertTrue(things and all('food' not in card and 'bears' not in card and 'scientific' not in card for card in things))
+        by_id = {card['id']: card for card in cards['cards']}
+        for here, there in shared:
+            with self.subTest(card=here):
+                self.assertIn(by_id[here]['group'], kinds)
+                self.assertNotIn(by_id[there]['group'], kinds)
+                self.assertEqual(by_id[here]['latin'].split(',')[0], by_id[there]['latin'].split(',')[0])
+        builder.build_site(self.root)
+        index = cards['cards'].index(things[0])
+        for name, value, message in (('food', 'Carne.', 'food \\(what an animal eats\\) is only for a card of an animal'),
+                                     ('bears', 'Glandēs.', 'bears \\(what a plant bears\\) is only for a card of a plant')):
+            data = json.loads(json.dumps(cards))
+            data['cards'][index][name] = value
+            self.write('data/chartae.json', data)
+            with self.subTest(name=name), self.assertRaisesRegex(ValueError, message):
+                builder.build_site(self.root)
+
+    def test_clothes_are_a_sixth_subject_of_their_own(self):
+        """Clothes came in as a subject of their own, not a kind of the household things (Jack,
+        21 November 2026: "Vestīmenta et īnstrūmenta fabrīlia sunt alia genera quae nōbīs sunt
+        inclūdenda, sed haud ut opīnor domesticīs addenda"), with four kinds in order. A pocket is
+        loculus, as a drawer of the household things is, each under its own id."""
+        self.check_subject_of_things({'id': 'vestimenta', 'latin': 'Vestīmenta', 'english': 'Clothes'},
+                                     ['vestes', 'calceamenta', 'ornatus', 'sartoria'],
+                                     (('loculusvestis', 'loculus'),))
+
+    def test_craftsmens_tools_are_a_seventh_subject_of_their_own(self):
+        """Craftsmen's tools came in as a subject of their own (Jack, 21 November 2026, as for the
+        clothes), with four kinds in order. A screw is cochlea, as the snail is, and a ladder scālae,
+        as the stairs of the household things are, each under its own id."""
+        self.check_subject_of_things({'id': 'fabrilia', 'latin': 'Īnstrūmenta fabrīlia', 'english': "Craftsmen's tools"},
+                                     ['ferramenta', 'mensurae', 'clavi', 'materia'],
+                                     (('cochleaferrea', 'cochlea'), ('scalaefabri', 'scalae')))
+
     def test_practice_cards_are_one_per_record_with_kind_and_sources(self):
         sense = self.record('sheet-of-paper')
         outputs = builder.build_site(self.root)
@@ -970,55 +1363,143 @@ class BuildTests(unittest.TestCase):
         # The pages: reached from the footer of every page and from the front page, never from the header.
         self.assertIn('<a href="practice.html"><span class="toc-la">Vocabulary</span>', outputs['index.html'])
         self.assertIn('<a href="hora.html"><span class="toc-la" lang="la">Hōra cum ūnciā</span>', outputs['index.html'])
+        # The gap games are one item of the front page's list, «Lacūnae», with every game's name as a link
+        # (the coordinating session's choice, 20 November 2026), and a line of their own on the practice page.
+        self.assertIn('<li class="plist-group"><p class="plist-head"><span class="toc-la" lang="la">Lacūnae</span>', outputs['index.html'])
+        for game in builder.gap_games(self.root):
+            self.assertIn(f'<a href="{game["file"]}" lang="la">{game["name"]}</a>', outputs['index.html'])
+            self.assertIn(f'<a href="{game["file"]}" lang="la">{game["name"]}</a>', outputs['practice.html'])
         for path, up in (('index.html', ''), ('c/perhaps.html', '../'), ('k/sermo.html', '../'), ('practice.html', '')):
             with self.subTest(path=path):
                 page = outputs[path]
                 self.assertIn(f'<a href="{up}practice.html">Practice</a>', page[page.rindex('<footer'):])
                 self.assertNotIn('practice.html', page[page.index('<header class="site-top'):page.index('</header>')])
-        for path in ('practice.html', 'hora.html'):
+        self.assertIn('<a href="chartae.html"><span class="toc-la" lang="la">Chartae pictae</span>', outputs['index.html'])
+        gap_games = [game['file'] for game in builder.gap_games(self.root)]
+        self.assertEqual(gap_games[:2], ['theodorus.html', 'quis-pulsat.html'])
+        for path in ('practice.html', 'hora.html', 'chartae.html', *gap_games):
             self.assertIn(f'cotidianae/{path}</loc>', outputs['sitemap.xml'])
             self.assertIn('<link rel="manifest" href="manifest.webmanifest">', outputs[path])
-        # The clock asks nothing of other sites: its only address is its own.
-        hora = outputs['hora.html']
-        self.assertEqual(re.findall(r'https?://[^"\s)]+', hora), [builder.SITE_URL + 'hora.html'])
-        self.assertIn('url(assets/fonts/lexicon-serif-400.woff2)', hora)
-        self.assertNotIn('claude:', hora)
-        self.assertIn("navigator.serviceWorker.register('sw.js')", hora)
-        # Its colours are the lexicon's (Jack, 15 November 2026): the stylesheet's names and values,
-        # copied into the page, with lapis beside them; its theme is set as on every page, and the
-        # browser's bar takes the ground's colour. Nothing of its old palette is left.
+        # The games that stand by themselves (the clock, and the gap games: Ubi est Theodōrus? and Quis
+        # pulsat? since 20 November 2026) are held to the same rules.
         styles = (self.root / 'src/styles.css').read_text(encoding='utf-8')
         names = ('paper', 'ink', 'soft', 'muted', 'hair', 'rule', 'rubric', 'accent', 'mark', 'ground', 'card')
 
         def palette(text, selector):
             block = text[text.index(selector):]
             return dict(re.findall(r'--([a-z-]+):(#[0-9a-f]{6})', block[:block.index('}')]))
-        for selector in (':root {', ':root[data-theme="dark"] {'):
-            with self.subTest(selector=selector):
-                ours, theirs = palette(hora, selector.replace(' {', '{')), palette(styles, selector)
-                self.assertEqual({name: ours.get(name) for name in names}, {name: theirs[name] for name in names})
-                self.assertEqual(set(ours) - set(names), {'lapis', 'lapis-soft'})
-        self.assertIn(builder.THEME_INIT, hora)
-        self.assertIn('<html lang="la" data-theme="light">', hora)
-        self.assertEqual(re.findall(r'<meta name="theme-color"[^>]*>', hora), ['<meta name="theme-color" content="#f2f0eb">'])
-        dark_ground = palette(styles, ':root[data-theme="dark"] {')['ground']
-        self.assertIn(f"content = '{dark_ground}'", hora)
-        self.assertNotIn('prefers-color-scheme', hora)
-        for name in ('--bg', '--surface', '--sunk', '--line', '--bronze', '--verdigris', '--good', '--bad', '--warn'):
-            self.assertNotIn(name + ':', hora)
-            self.assertNotIn(f'var({name})', hora)
-        # Its faces are the lexicon's too (Jack, 16 November 2026): the stylesheet's two stacks under
-        # the stylesheet's names, each face declared from the site's own files, and no monospace.
-        for name in ('serif', 'sans'):
-            with self.subTest(face=name):
-                stack = re.search(rf'--{name}:([^;]+);', styles).group(1)
-                self.assertIn(f'--{name}:{stack};', hora)
-        for file in ('alegreya-sans-400.woff2', 'alegreya-sans-500.woff2'):
-            self.assertIn(f'url(assets/fonts/{file})', hora)
-            self.assertTrue((self.root / 'src/fonts' / file).is_file())
-        hora_styles = re.sub(r'/\*.*?\*/', '', hora[hora.index('<style>'):hora.index('</style>')], flags=re.S)
-        self.assertNotIn('mono', hora_styles)
-        self.assertEqual(set(re.findall(r'var\(--(serif|sans|mono)\)', hora_styles)), {'serif', 'sans'})
+        for game in ('hora.html', *gap_games):
+            with self.subTest(game=game):
+                hora = outputs[game]
+                # The game asks nothing of other sites: its only address is its own.
+                self.assertEqual(re.findall(r'https?://[^"\s)]+', hora), [builder.SITE_URL + game])
+                self.assertIn('url(assets/fonts/lexicon-serif-400.woff2)', hora)
+                self.assertNotIn('claude:', hora)
+                self.assertIn("navigator.serviceWorker.register('sw.js')", hora)
+                # Its colours are the lexicon's (Jack, 15 November 2026): the stylesheet's names and values,
+                # copied into the page, with lapis beside them; its theme is set as on every page, and the
+                # browser's bar takes the ground's colour. Nothing of its old palette is left.
+                for selector in (':root {', ':root[data-theme="dark"] {'):
+                    with self.subTest(selector=selector):
+                        ours, theirs = palette(hora, selector.replace(' {', '{')), palette(styles, selector)
+                        self.assertEqual({name: ours.get(name) for name in names}, {name: theirs[name] for name in names})
+                        self.assertEqual(set(ours) - set(names), {'lapis', 'lapis-soft'})
+                self.assertIn(builder.THEME_INIT, hora)
+                self.assertIn('<html lang="la" data-theme="light">', hora)
+                self.assertEqual(re.findall(r'<meta name="theme-color"[^>]*>', hora), ['<meta name="theme-color" content="#f2f0eb">'])
+                dark_ground = palette(styles, ':root[data-theme="dark"] {')['ground']
+                self.assertIn(f"content = '{dark_ground}'", hora)
+                self.assertNotIn('prefers-color-scheme', hora)
+                for name in ('--bg', '--surface', '--sunk', '--line', '--bronze', '--verdigris', '--good', '--bad', '--warn'):
+                    self.assertNotIn(name + ':', hora)
+                    self.assertNotIn(f'var({name})', hora)
+                # Its faces are the lexicon's too (Jack, 16 November 2026): the stylesheet's two stacks under
+                # the stylesheet's names, each face declared from the site's own files, and no monospace.
+                for name in ('serif', 'sans'):
+                    with self.subTest(face=name):
+                        stack = re.search(rf'--{name}:([^;]+);', styles).group(1)
+                        self.assertIn(f'--{name}:{stack};', hora)
+                for file in ('alegreya-sans-400.woff2', 'alegreya-sans-500.woff2'):
+                    self.assertIn(f'url(assets/fonts/{file})', hora)
+                    self.assertTrue((self.root / 'src/fonts' / file).is_file())
+                hora_styles = re.sub(r'/\*.*?\*/', '', hora[hora.index('<style>'):hora.index('</style>')], flags=re.S)
+                self.assertNotIn('mono', hora_styles)
+                self.assertEqual(set(re.findall(r'var\(--(serif|sans|mono)\)', hora_styles)), {'serif', 'sans'})
+
+    def test_the_gap_games_are_one_engine_with_a_file_per_game(self):
+        """The gap games (20 November 2026): one engine, src/lacunae.html, and one data file per game in
+        src/lacunae/; the builder writes a page for each and refuses a malformed file."""
+        outputs = builder.build_site(self.root)
+        games = builder.gap_games(self.root)
+        self.assertEqual([(g['id'], g['file'], g['prefix']) for g in games],
+                         [('theodorus', 'theodorus.html', 'uet-'), ('quis-pulsat', 'quis-pulsat.html', 'qp-'),
+                          ('hic-an-ille', 'hic-an-ille.html', 'hi-'), ('bis-bina', 'bis-bina.html', 'bb-'),
+                          ('heri-hodie-cras', 'heri-hodie-cras.html', 'hc-')])
+        self.assertEqual([[r['id'] for r in g['rounds']] for g in games[2:]],
+                         [['nom', 'acc', 'gen', 'dat', 'abl', 'plur', 'plur2'], ['quot', 'quotus', 'quoteni', 'quotiens', 'bis-bina'],
+                          ['ambulo', 'video', 'lego', 'venio', 'sum', 'eo', 'volo', 'fero']])
+        self.assertEqual([sum(''.join(r['text']).count('{') for r in g['rounds']) for g in games], [46, 50, 64, 64, 83])
+        self.assertEqual([g['hints']['la'] for g in games], ['Prōnōmina ostendere'] * 3 + ['Numerōs ostendere', 'Persōnās et tempora ostendere'])
+        # The verbs have a table each, shown only with its round.
+        self.assertEqual([t.get('round') for t in games[4]['tabulae']], [r['id'] for r in games[4]['rounds']])
+        self.assertEqual([r['id'] for r in games[0]['rounds']], ['ubi', 'quo', 'unde', 'qua', 'iter'])
+        self.assertEqual([r['id'] for r in games[1]['rounds']], ['quis', 'quid', 'quem', 'cujus', 'cui', 'uter'])
+        self.assertEqual(sum(''.join(r['text']).count('{') for r in games[1]['rounds']), 50)
+        self.assertFalse((self.root / 'src/theodorus.html').exists(), 'the old page is the engine now')
+        for game in games:
+            with self.subTest(game=game['id']):
+                page = outputs[game['file']]
+                self.assertIn(f'<title>{game["name"]} · Lexicon Latīnitātis Cotīdiānae</title>', page)
+                self.assertIn(f'<h1 lang="la">{game["name"]}</h1>', page)
+                self.assertIn(f'"prefix": "{game["prefix"]}"', page)
+                self.assertIn('"hints": ' + json.dumps(game['hints'], ensure_ascii=False), page)
+                self.assertNotIn('{{', page)
+                # The foot links lead to the other practice pages, the other gap games among them.
+                links = page[page.index('<nav class="links"'):]
+                links = links[:links.index('</nav>')]
+                for other in ['index.html', 'practice.html', 'hora.html', 'chartae.html'] + [g['file'] for g in games if g is not game]:
+                    self.assertIn(f'href="{other}"', links)
+                self.assertNotIn(f'href="{game["file"]}"', links)
+                # The tables of forms behind "Mōnstrā fōrmās" (Jack, 20 November 2026) are in the page.
+                self.assertIn('"tabulae": ' + json.dumps(game['tabulae'], ensure_ascii=False), page)
+                # The engine reads j as i (and cunque as cumque) in what is typed and in the forms.
+                self.assertIn('.replace(/cunque/g, "cumque").replace(/j/g, "i")', page)
+        self.assertIn('<title>Quis pulsat? · Lexicon Latīnitātis Cotīdiānae</title>', outputs['quis-pulsat.html'])
+        self.assertIn('"prefix": "uet-"', outputs['theodorus.html'])
+        self.assertEqual([(len(t['rows']), len(t['heads'])) for t in games[0]['tabulae']], [(15, 5)])
+        self.assertEqual([(t.get('caption'), len(t['rows']), len(t['heads'])) for t in games[1]['tabulae']],
+                         [('Dē plūribus', 12, 6), ('Dē duōbus', 7, 2)])
+        self.assertIn('Mōnstrā fōrmās', outputs['quis-pulsat.html'])
+        # A malformed game file stops the build, and says which file and what is wrong.
+        path = self.root / 'src/lacunae/quis-pulsat.json'
+        good = path.read_text(encoding='utf-8')
+
+        def broken(change, message):
+            game = json.loads(good)
+            change(game)
+            path.write_text(json.dumps(game, ensure_ascii=False), encoding='utf-8')
+            with self.assertRaisesRegex(ValueError, message):
+                builder.gap_games(self.root)
+            path.write_text(good, encoding='utf-8')
+        broken(lambda g: g.pop('prefix'), r'quis-pulsat\.json: Missing fields')
+        broken(lambda g: g['rounds'][1].update(id='quis'), r'quis-pulsat\.json: round quis: the id is used twice')
+        broken(lambda g: g['rounds'][0].update(text=['Nesciō {|aliquis} quis pulset.']), r'quis-pulsat\.json: round quis: a gap with an empty form')
+        broken(lambda g: g['rounds'][0].update(text=['Nesciō {Aliquis/|aliquis} quis.']), 'a gap with an empty form')
+        broken(lambda g: g['rounds'][0].update(text=['Nesciō quis pulset.']), 'round quis: no gaps')
+        broken(lambda g: g['rounds'][0].update(text=['Nesciō {Aliquis|aliquis} quis {pulset.']), 'a brace outside a gap')
+        broken(lambda g: g.update(prefix='uet-'), 'two games with the same prefix')
+        broken(lambda g: g.pop('tabulae'), r'Missing fields')
+        broken(lambda g: g['tabulae'][1]['rows'][2].pop(), r'quis-pulsat\.json: table 2, row 3: 1 cells for 2 heads')
+        broken(lambda g: g['tabulae'][0]['rows'][0].__setitem__(4, ''), r'table 1, row 1: an empty cell')
+        broken(lambda g: g['tabulae'][0]['rows'][0].__setitem__(4, ' cujus'), r'table 1, row 1: an empty cell')
+        broken(lambda g: g['tabulae'].clear(), 'no tables of forms')
+        broken(lambda g: g.pop('hints'), r'Missing fields')
+        broken(lambda g: g['hints'].pop('en'), r'Missing fields')
+        broken(lambda g: g['tabulae'][0].update(round='cuius'), r"quis-pulsat\.json: table 1: no round 'cuius' in this game")
+        broken(lambda g: g['rounds'][0].update(id='Quis'), 'the id must be lower-case')
+        path.write_text('{"id": ', encoding='utf-8')
+        with self.assertRaisesRegex(ValueError, r'quis-pulsat\.json: not valid JSON'):
+            builder.gap_games(self.root)
 
     def test_sources_are_read_from_the_opening_of_a_citation(self):
         cases = {

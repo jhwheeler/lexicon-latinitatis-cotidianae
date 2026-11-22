@@ -1,0 +1,64 @@
+{
+  "id": "hallucination",
+  "english": "hallucination",
+  "sense": "a made-up answer from an AI",
+  "pos": "noun",
+  "also": [
+    "hallucinate (of an AI)",
+    "make things up",
+    "made-up answer",
+    "confabulation"
+  ],
+  "domain": "computatra",
+  "terms": [
+    {
+      "latin": "commentum, commentī n.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a fabrication, something made up",
+      "evidence": [
+        "Cic. N.D. 2.5: <span lang=\"la\">opīniōnum commenta dēlet diēs</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Classically an invention, a fiction, a falsehood (see fiction), from <span lang=\"la\">comminīscor</span>, to make up something untrue; used of an AI’s made-up answer it is modern, and ours. English “hallucination” is a metaphor Latin need not copy: what the machine does is make things up, and Latin says so."
+    },
+    {
+      "latin": "comminīscor, comminīscī, commentus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "to make up, to invent (something untrue)",
+      "evidence": [
+        "Plaut. Asin. 102: <span lang=\"la\">fabricāre quidvīs, quidvīs comminīscere</span>",
+        "Cic. N.D. 2.59: <span lang=\"la\">Epicūrus monogrammōs deōs et nihil agentēs commentus est</span> (Lewis &amp; Short)"
+      ],
+      "comment": "The verb, for “it’s hallucinating”: <span lang=\"la\">māchina comminīscitur</span>. Lewis &amp; Short notes that it is said classically of what is untrue."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Hoc nōn est vērum; māchina id commenta est.",
+      "english": "That isn’t true; the AI made it up.",
+      "source": "composed"
+    },
+    {
+      "latin": "Cavē; māchinae saepe commenta prō vērīs narrant.",
+      "english": "Be careful; machines often tell made-up things as if they were true.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "fiction",
+    "invent",
+    "mistake",
+    "ai-system",
+    "generate"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/comminiscor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: comminiscor</a>",
+    "Plautus, <em>Asinaria</em> 102."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-21",
+    "by": "Claude"
+  }
+}

@@ -11,9 +11,11 @@ latin.html (the English and Latin headwords from A to Z), c/<concept>.html (one
 page per concept record), l/<word>.html (one page per Latin word that heads a
 term), how-we-decide.html (editorial policy), how-practice-works.html (how the
 practice chooses and spaces its cards, with its sources), rulings.html (the rulings
-register), practice.html (vocabulary practice), hora.html (the clock game) and
+register), practice.html (vocabulary practice), hora.html (the clock game), chartae.html (the picture
+cards of animals, plants, the body, food and drink, household things, clothes, and craftsmen's tools, with their pictures in chartae/), the gap games (theodorus.html, quis-pulsat.html: one
+page for each file in src/lacunae/, made from src/lacunae.html), and
 review.html (what is reviewed, and a reader's flags), sitemap.xml, and in assets/ the stylesheet,
-the page, search, practice and review scripts, the search data, the practice cards (practice-data.js), the redirects
+the page, search, practice and review scripts, the search data, the practice cards (practice-data.js), the picture cards (chartae-data.js), the redirects
 from the old single page (legacy.js) and the fonts. See docs/data-format.md and
 docs/records.md.
 
@@ -25,6 +27,7 @@ The site is not kept in the repository: git ignores what a local build writes, a
 """
 import unicodedata
 import argparse
+import base64
 import functools
 import hashlib
 from html import escape, unescape
@@ -258,13 +261,117 @@ def manifest():
                        'icons': icons}, ensure_ascii=False, indent=2) + '\n'
 
 
+GAP_GAME_TEXT = re.compile(r'\{([^|{}]*)\|([^{}]*)\}')
+
+
+def gap_games(root=ROOT):
+    """The gap games (lacūnae), one file each in src/lacunae/, in their order (Ubi est Theodōrus?, Quis
+    pulsat?, 20 November 2026). One engine (src/lacunae.html) with a data file per game is the
+    coordinating session's choice, for Jack to judge: a new game of the kind is a new file, its links,
+    and its docs. A game: id, order, file (the page it makes), name (its Latin name, the page's heading),
+    description (the page's meta description, English), eyebrow (the line over the question, la and
+    en), prefix (of its storage keys: <prefix>hints, <prefix>strict, <prefix>done; never change one, or a
+    reader's progress is lost), tabulae (the tables of forms behind "Mōnstrā fōrmās": each with heads,
+    rows whose first cell is the row's label and which have a cell for every head, "—" where there is no
+    form in use, an optional caption, and an optional round: a table with one is shown only while that round is
+    open), hints (the label of the switch that shows the hints under the gaps, la and en: the pronouns,
+    the numbers, the tenses), and rounds: id (also the page's #hash), tab, q (the question), and text,
+    a list of pieces joined as they stand, with each gap written {form/other form|hint}."""
+    games = []
+    for path in sorted((root / 'src/lacunae').glob('*.json')):
+        where = f'src/lacunae/{path.name}'
+        try:
+            game = json.loads(path.read_text(encoding='utf-8'))
+        except ValueError as error:
+            raise ValueError(f'{where}: not valid JSON ({error})') from None
+        try:
+            fields(game, ('id', 'order', 'file', 'name', 'description', 'eyebrow', 'hints', 'prefix', 'tabulae', 'rounds'))
+            require(re.fullmatch(r'[a-z][a-z0-9-]*', string(game['id'])) and game['id'] == path.stem, f'the id must be the file\'s name, {path.stem}')
+            require(isinstance(game['order'], int), 'order must be a whole number')
+            require(re.fullmatch(r'[a-z][a-z0-9-]*\.html', string(game['file'])), 'file must be a page name such as quis-pulsat.html')
+            require(re.fullmatch(r'[a-z]+-', string(game['prefix'])), 'prefix must be letters and a hyphen, such as qp-')
+            string(game['name']), string(game['description'])
+            fields(game['eyebrow'], ('la', 'en'))
+            string(game['eyebrow']['la']), string(game['eyebrow']['en'])
+            fields(game['hints'], ('la', 'en'))
+            string(game['hints']['la']), string(game['hints']['en'])
+            require(isinstance(game['tabulae'], list) and game['tabulae'], 'no tables of forms (tabulae)')
+            for number, table in enumerate(game['tabulae'], 1):
+                fields(table, ('heads', 'rows'), ('caption', 'round'))
+                if 'caption' in table:
+                    string(table['caption'])
+                strings(table['heads'], f'table {number}: heads')
+                require(isinstance(table['rows'], list) and table['rows'], f'table {number}: no rows')
+                for line, row in enumerate(table['rows'], 1):
+                    require(isinstance(row, list) and len(row) == len(table['heads']),
+                            f'table {number}, row {line}: {len(row) if isinstance(row, list) else "no"} cells for {len(table["heads"])} heads')
+                    require(all(isinstance(cell, str) and cell.strip() == cell and cell for cell in row),
+                            f'table {number}, row {line}: an empty cell (write — where there is no form)')
+            require(isinstance(game['rounds'], list) and game['rounds'], 'no rounds')
+            round_ids = {r.get('id') for r in game['rounds'] if isinstance(r, dict)}
+            for number, table in enumerate(game['tabulae'], 1):
+                require('round' not in table or table['round'] in round_ids, f'table {number}: no round {table.get("round")!r} in this game')
+            seen = set()
+            for number, round_ in enumerate(game['rounds'], 1):
+                fields(round_, ('id', 'tab', 'q', 'text'))
+                key = string(round_['id'])
+                require(re.fullmatch(r'[a-z][a-z0-9-]*', key), f'round {number}: the id must be lower-case letters, digits, and hyphens (it is the page\'s #hash)')
+                require(key not in seen, f'round {key}: the id is used twice')
+                seen.add(key)
+                string(round_['tab']), string(round_['q'])
+                strings(round_['text'], f'round {key}: text')
+                text = ''.join(round_['text'])
+                gaps = GAP_GAME_TEXT.findall(text)
+                require(gaps, f'round {key}: no gaps')
+                require('{' not in GAP_GAME_TEXT.sub('', text) and '}' not in GAP_GAME_TEXT.sub('', text), f'round {key}: a brace outside a gap {{form|hint}}')
+                for forms, hint in gaps:
+                    require(all(form.strip() == form and form for form in forms.split('/')), f'round {key}: a gap with an empty form, {{{forms}|{hint}}}')
+        except ValueError as error:
+            raise ValueError(f'{where}: {error}') from None
+        games.append(game)
+    for name in ('id', 'file', 'prefix', 'order'):
+        values = [game[name] for game in games]
+        require(len(set(values)) == len(values), f'src/lacunae: two games with the same {name}')
+    require(games, 'src/lacunae: no gap games')
+    return sorted(games, key=lambda game: game['order'])
+
+
+# The front page's line for the gap games, which stand there as one item (the coordinating session's
+# choice, 20 November 2026, for Jack to judge). A new game whose subject this does not name wants a word here.
+GAP_GAMES_LINE = ('Gaps to fill in short dialogues: the adverbs of place, the indefinite and the demonstrative pronouns, '
+                  'the numbers, and the forms of the verb')
+
+
+def gap_game_links(games, sep=''):
+    return sep.join(f'<a href="{game["file"]}" lang="la">{escape(game["name"])}</a>' for game in games)
+
+
+def gap_games_item(games):
+    """The front page's item for the gap games: «Lacūnae», its line, and each game's name as a link."""
+    return ('<li class="plist-group"><p class="plist-head"><span class="toc-la" lang="la">Lacūnae</span>'
+            f'<span class="toc-en">{escape(GAP_GAMES_LINE)}</span></p><p class="plist-games">{gap_game_links(games)}</p></li>')
+
+
+def gap_game_page(root, game, games):
+    """A gap game's page: the engine, src/lacunae.html, with the game's data written in."""
+    data = {'rounds': [{'id': r['id'], 'tab': r['tab'], 'q': r['q'], 'text': ''.join(r['text'])} for r in game['rounds']],
+            'eyebrow': game['eyebrow'], 'hints': game['hints'], 'prefix': game['prefix'], 'tabulae': game['tabulae']}
+    siblings = ''.join(f'    <a href="{other["file"]}" lang="la">{escape(other["name"])}</a>\n' for other in games if other is not game)
+    return fill(root / 'src/lacunae.html', {
+        'title': escape(f'{game["name"]} · {APP_NAME}'), 'description': escape(game['description']),
+        'canonical': SITE_URL + game['file'], 'name': escape(game['name']), 'links': siblings.rstrip('\n'),
+        'game': json.dumps(data, ensure_ascii=False).replace('</', '<\\/'), 'theme': THEME_INIT, 'app': app_head('')})
+
+
 def service_worker(root, outputs):
     """sw.js, with the files it saves when it installs: the front page, the category pages, the
     guidance pages, the practice pages, the review page, and the stylesheet, scripts, search data, practice cards,
-    fonts and icons. Its version is a hash of them, so a change to any of them makes the browser
+    fonts and icons. The pictures of the picture cards (chartae/) are not among them: they are several megabytes, and
+    are saved as they are read, like the entry pages (src/chartae.js fetches them once the page has been opened), and unlike them are never cleared away to make room. Its version is a hash of them, so a change to any of them makes the browser
     fetch them all afresh. The entry and word pages are saved as they are read."""
     files = sorted(path for path in outputs
-                   if path in ('index.html', 'how-we-decide.html', 'how-practice-works.html', 'rulings.html', 'practice.html', 'hora.html', 'review.html', 'manifest.webmanifest')
+                   if path in ('index.html', 'how-we-decide.html', 'how-practice-works.html', 'rulings.html', 'practice.html', 'hora.html', 'chartae.html', 'review.html', 'manifest.webmanifest')
+                   or path in {game['file'] for game in gap_games(root)}
                    or path.startswith('k/') or (path.startswith('assets/') and not path.endswith(('.txt', 'legacy.js'))))
     digest = hashlib.sha256()
     for path in files:
@@ -3386,6 +3493,7 @@ def render_index(root, site):
     total = len(site['records']) + len(site['legacy'])
     replacements = {'theme': THEME_INIT, 'app': app_head(''), 'legacy': redirect, 'settings': SETTINGS, 'footer_links': footer_links('', '#about', False),
                     'search': search_block('', None, total), 'contents': contents, 'total': f'{total:,}',
+                    'gap_games': gap_games_item(gap_games(root)),
                     'record_count': f'{len(site["records"]):,}',
                     'reviewed_count': f'{sum(reviewed(record) for record in site["records"].values()):,}'}
     return resolve_anchors(fill(root / 'src/page.html', replacements), site, '', 'index.html')
@@ -3408,6 +3516,224 @@ def legacy_script(site):
             '})();\n')
 
 
+# The picture cards, Chartae pictae (chartae.html; Jack, 20 November 2026: first the animals, and the
+# same day one exercise for every subject, the reader choosing which, not a game for each).
+# data/chartae.json has three lists. "subjects" are the subjects (animalia, plantae, since 20
+# November 2026 corpus, the human body, since 21 November 2026 cibi, food and drink, and
+# domestica, household things, and since 21-22 November 2026 vestimenta, clothes, and fabrilia,
+# craftsmen's tools, at Jack's wish: subjects of their own, not kinds of the household things),
+# each with id, latin, and english. The Latin names Vestīmenta and Īnstrūmenta fabrīlia are Jack's
+# words; the English names of those two subjects and the names of their kinds are the coordinating
+# session's, for Jack's review. "groups" are the kinds,
+# each with id, subject (one of the subjects), latin, and english; a kind may have no cards yet, and
+# the page then does not show it. "cards" are the cards. Kinds and cards are two sets of names: a
+# kind may share its id with a card (the kind caput and the card caput; the body's kind truncus and
+# the plant card truncus), and nothing confuses them, since kinds are only ever looked up among the
+# kinds and cards among the cards (in the data, the page's buttons, and the stored deck, which holds
+# kinds, while the progress holds cards).
+# Two cards may share a Latin word when the things differ, each under its own id (patella, the
+# kneecap, and patellavas, a plate; spongia, the sea sponge, and spongiaculinae, a kitchen sponge;
+# loculus, a drawer, and loculusvestis, a pocket; cochlea, the snail, and cochleaferrea, a screw;
+# scalae, stairs, and scalaefabri, a ladder).
+# A card: id (unique across every subject: the picture is src/chartae/<id>.jpg, 720 by 511, its
+# preview data/chartae-previews/<id>.jpg, and the id is the key of the card's progress), latin (the dictionary form), also (optional, on a card
+# of any subject: a second Latin word for the same thing, as a full dictionary form, shown on the
+# back under the first; Jack, 20 November 2026: where two words mean the same thing, as coma and
+# capillus, one card with the second word on its back), english, group (its kind), line (a sentence
+# with the word in it) and its source (a place in an author; "composed" for a sentence of ours; a
+# place in the readers, which the site shows as composed, like every example taken from them),
+# record (the lexicon's entry for the thing, where there is one), and image: the file's name on
+# Wikimedia Commons, its author, the licence and its address, and the file's page.
+# A card of an animal kind must have food (what the animal eats, in the ablative, as the answer to
+# "Quō vēscitur?"); a card of a plant kind may have bears (what the plant bears, in the accusative,
+# as the answer to "Quid fert?"); neither is allowed on a card of any other subject (FOOD_SUBJECT,
+# BEARS_SUBJECT). Only pictures that anyone may reuse, commercially too, are taken, so the licences
+# are a closed list (which scripts/fetch_picture.py imports); the page names the author and the
+# licence beside every picture.
+# A card may have scientific, right after english (Jack, 20 November 2026: "inclūdāmus nōmina
+# scientifica omnium … animālium plantārumque, fortasse jūxtā nōmina Anglica … Hōc modō discēmus
+# discrīmina"; and the same day, for the body, that on these cards the scientific names matter most).
+# On a card of an animal or a plant it is the name of the taxon that the Latin word names, as
+# nearly as science has one (a species where the word means one species, or the one it ordinarily
+# means in Europe; a genus, family, order, or other group where the word is wider; a domestic
+# animal's binomial in current use, and the same on the cards of its young and of one sex; none
+# where the word is not a taxon, such as a part of a plant). That rule is the coordinating
+# session's, for Jack to judge. It is written as zoology and botany write it, not as the lexicon
+# writes Latin: genus capitalised, the rest lower case, no macrons or other marks, no author
+# (Juniperus, Quercus ilex; × and subsp. where nomenclature uses them). On a card of the body it is
+# the term of the Terminologia Anatomica, the anatomists' international Latin, written as they write
+# it: the first word capitalised, no macrons (Hepar, Vesica urinaria, Encephalon). A card of food and
+# drink, of household things, of clothes, or of craftsmen's tools has none: a loaf, a dish, a pot, a
+# shoe, or a hammer is not a taxon. The page shows it
+# after the English name in a language of its own (la-x-taxon), so that the display options leave
+# it alone.
+# Every card has a small preview of its picture in the card data itself (Jack, 21 November 2026, on his
+# iPhone on 4G, of a card shown with its picture's place empty: "Saepe sīc fit"; and his proposal:
+# "Cōnsilium habeō: imāginēs in indice ipsō inclūdere possumus"). The page shows it at once, and the
+# picture itself takes its place when its file has come, so a card is never without its cue, offline
+# either. The builder has no Pillow (the workflows install nothing), so the previews are small files
+# kept in the repository, data/chartae-previews/<id>.jpg, written by scripts/fetch_picture.py with
+# every picture it writes (and by its --previews pass for the rest); the builder only reads them,
+# writes them into assets/chartae-data.js in base64, and refuses a card whose preview is missing or
+# was made from another picture. A preview names the picture it was made from in its JPEG comment
+# (PREVIEW_MARK, with a hash of the picture's bytes): git keeps no file times, so the check is of the
+# content. The size and quality (PREVIEW_SIZE, PREVIEW_QUALITY, used by fetch_picture.py) are Claude's
+# choice: about 2.5 KB each, softened on the page so that the JPEG's blocks do not show.
+PREVIEWS = 'data/chartae-previews'
+PREVIEW_SIZE, PREVIEW_QUALITY, PREVIEW_MOST = (144, 102), 45, 8000   # pixels; JPEG quality; the most bytes a preview may have
+PREVIEW_MARK = 'lexicon-preview of sha256:{}'
+
+
+def preview_mark(picture):
+    """The comment a preview of this picture (its bytes) carries."""
+    return PREVIEW_MARK.format(hashlib.sha256(picture).hexdigest())
+
+
+# A picture's address in the card data carries a version, the start of the hash of its file
+# (chartae/taurus.jpg?v=1a2b3c4d; the file itself stays chartae/<id>.jpg). The service worker answers
+# a picture from the device without asking the network again (the coordinating session's decision,
+# 21 November 2026: until then it fetched every picture afresh each time it was shown, a download per
+# card on a slow connection), so a picture taken again under the same id must have a new address to
+# be fetched; an unchanged picture keeps its address for ever. src/chartae.js clears the old versions.
+PICTURE_VERSION = 8   # hex digits of the hash in the address
+
+
+def picture_address(key, picture):
+    """The address of a card's picture (its bytes) in the card data, with its version."""
+    return f'chartae/{key}.jpg?v={hashlib.sha256(picture).hexdigest()[:PICTURE_VERSION]}'
+
+
+def jpeg_comment(data):
+    """The text of a JPEG's first comment segment (COM), or '' if it has none before the image data."""
+    if data[:2] != b'\xff\xd8':
+        return ''
+    at = 2
+    while at + 4 <= len(data):
+        if data[at] != 0xFF:
+            return ''
+        marker = data[at + 1]
+        if marker == 0xFF:   # a fill byte
+            at += 1
+            continue
+        if marker in (0xDA, 0xD9):   # the image data, or the end
+            return ''
+        length = int.from_bytes(data[at + 2:at + 4], 'big')
+        if marker == 0xFE:
+            return data[at + 4:at + 2 + length].decode('latin-1')
+        at += 2 + length
+    return ''
+
+
+FOOD_SUBJECT, BEARS_SUBJECT = 'animalia', 'plantae'   # food only and always on an animal's card; bears only on a plant's
+PICTURE_LICENCES = {
+    'CC0': 'https://creativecommons.org/publicdomain/zero/1.0/', 'Public domain': '',
+    'CC BY 2.0': 'https://creativecommons.org/licenses/by/2.0/', 'CC BY 3.0': 'https://creativecommons.org/licenses/by/3.0/',
+    'CC BY 2.5': 'https://creativecommons.org/licenses/by/2.5/', 'CC BY 4.0': 'https://creativecommons.org/licenses/by/4.0/',
+    'CC BY-SA 2.0': 'https://creativecommons.org/licenses/by-sa/2.0/', 'CC BY-SA 2.5': 'https://creativecommons.org/licenses/by-sa/2.5/',
+    'CC BY-SA 3.0': 'https://creativecommons.org/licenses/by-sa/3.0/', 'CC BY-SA 4.0': 'https://creativecommons.org/licenses/by-sa/4.0/'}
+
+
+def scientific_name(name, where):
+    """A picture card's scientific name, written as nomenclature writes it: refused, with the reason, if it is not."""
+    require(isinstance(name, str) and name, f'{where}: scientific is not a name')
+    require(name == name.strip() and '  ' not in name, f'{where}: the scientific name “{name}” has stray spaces')
+    marks = sorted({ch for ch in name if ch != '×' and not (ch.isascii() and (ch.isalpha() or ch in ' .-'))})
+    require(not marks, f'{where}: the scientific name “{name}” has {" ".join(marks)}: it is written as zoology, botany, and anatomy write it, '
+                       'in plain a–z without macrons or other marks (× and the stop of subsp. are the only signs allowed)')
+    require(name[0].isupper(), f'{where}: the scientific name “{name}” must begin with a capital letter (the genus or the higher taxon)')
+    require(all(word.islower() or word == '×' for word in name.split(' ')[1:]),
+            f'{where}: in the scientific name “{name}” only the first word has a capital (the epithets are lower case)')
+
+
+def picture_cards(root, site):
+    """The picture cards as a script (assets/chartae-data.js) and their pictures ({path: bytes})."""
+    data = json.loads((root / 'data/chartae.json').read_text(encoding='utf-8'))
+    fields(data, ('subjects', 'groups', 'cards'))
+    subjects, groups, cards, pictures = [], [], [], {}
+    for subject in data['subjects']:
+        fields(subject, ('id', 'latin', 'english'))
+        require(re.fullmatch(r'[a-z][a-z0-9-]*', string(subject['id'])) and subject['id'] not in [s['id'] for s in subjects], f'Picture cards: bad or repeated subject {subject["id"]}')
+        subjects.append({key: string(subject[key]) for key in ('id', 'latin', 'english')})
+    require({FOOD_SUBJECT, BEARS_SUBJECT} <= {s['id'] for s in subjects}, f'Picture cards: the subjects {FOOD_SUBJECT} and {BEARS_SUBJECT} must be there (food and bears belong to them)')
+    for group in data['groups']:
+        fields(group, ('id', 'subject', 'latin', 'english'))
+        require(re.fullmatch(r'[a-z][a-z0-9-]*', string(group['id'])) and group['id'] not in [g['id'] for g in groups], f'Picture cards: bad or repeated kind {group["id"]}')
+        require(group['subject'] in [s['id'] for s in subjects], f'Picture cards: the kind {group["id"]} has an unknown subject {group["subject"]}')
+        groups.append({key: string(group[key]) for key in ('id', 'subject', 'latin', 'english')})
+    subject_of = {group['id']: group['subject'] for group in groups}
+    for card in data['cards']:
+        require(isinstance(card, dict), 'Picture cards: a card is not an object')
+        key = string(card.get('id'))
+        where = f'Picture card {key}'
+        require(card.get('group') in subject_of, f'{where}: unknown kind {card.get("group")}')
+        subject = subject_of[card['group']]
+        require(subject != FOOD_SUBJECT or 'food' in card, f'{where}: a card of an animal needs food (what it eats, in the ablative)')
+        require(subject == FOOD_SUBJECT or 'food' not in card, f'{where}: food (what an animal eats) is only for a card of an animal')
+        require(subject == BEARS_SUBJECT or 'bears' not in card, f'{where}: bears (what a plant bears) is only for a card of a plant')
+        fields(card, ('id', 'latin', 'english', 'group', 'line', 'source', 'image'), ('also', 'scientific', 'record', 'food', 'bears'))
+        require(re.fullmatch(r'[a-z][a-z0-9-]*', key) and f'chartae/{key}.jpg' not in pictures, f'{where}: bad or repeated id')
+        for name in ('latin', 'also', 'english', 'line', 'source', 'food', 'bears'):
+            if name in card:
+                require(string(card[name]).strip() == card[name] and card[name], f'{where}: {name} is empty or has stray spaces')
+        if 'scientific' in card:
+            scientific_name(card['scientific'], where)
+        require('record' not in card or card['record'] in site['records'], f'{where}: no record {card.get("record")}')
+        image = card['image']
+        fields(image, ('file', 'author', 'licence', 'licence_url', 'page'))
+        require(image['licence'] in PICTURE_LICENCES and image['licence_url'] == PICTURE_LICENCES[image['licence']],
+                f'{where}: the licence {image["licence"]} is not one of {", ".join(PICTURE_LICENCES)}, or its address is not that licence’s')
+        require(string(image['author']).strip() and string(image['file']).strip(), f'{where}: the picture needs its author and its file name')
+        require(image['page'].startswith('https://commons.wikimedia.org/wiki/File:'), f'{where}: the picture’s page is not on Wikimedia Commons')
+        picture = root / f'src/chartae/{key}.jpg'
+        require(picture.exists(), f'{where}: src/chartae/{key}.jpg is missing')
+        pictures[f'chartae/{key}.jpg'] = picture.read_bytes()
+        preview = root / PREVIEWS / f'{key}.jpg'
+        again = 'run python3 scripts/fetch_picture.py --previews'
+        require(preview.exists(), f'{where}: its preview {PREVIEWS}/{key}.jpg is missing ({again})')
+        small = preview.read_bytes()
+        require(jpeg_comment(small) == preview_mark(pictures[f'chartae/{key}.jpg']),
+                f'{where}: its preview {PREVIEWS}/{key}.jpg was not made from the picture src/chartae/{key}.jpg as it is now ({again})')
+        require(len(small) <= PREVIEW_MOST, f'{where}: its preview has {len(small):,} bytes, more than the {PREVIEW_MOST:,} a preview may have')
+        ours = composed({'source': card['source']})
+        cards.append({'id': key, 'latin': card['latin'], **({'also': card['also']} if 'also' in card else {}),
+                      'english': card['english'], **({'scientific': card['scientific']} if 'scientific' in card else {}),
+                      'group': card['group'], 'line': card['line'],
+                      'source': '' if ours else card['source'], **{name: card[name] for name in ('food', 'bears', 'record') if name in card},
+                      'picture': picture_address(key, pictures[f'chartae/{key}.jpg']), 'preview': base64.b64encode(small).decode('ascii'),
+                      'image': {name: image[name] for name in ('author', 'licence', 'licence_url', 'page')}})
+    unused = sorted(p.name for p in (root / 'src/chartae').glob('*') if f'chartae/{p.name}' not in pictures)
+    require(not unused, f'Picture cards: src/chartae has files that no card uses: {unused[:8]}')
+    unused = sorted(p.name for p in (root / PREVIEWS).glob('*') if f'chartae/{p.name}' not in pictures) if (root / PREVIEWS).exists() else []
+    require(not unused, f'Picture cards: {PREVIEWS} has files that no card uses: {unused[:8]}')
+    require(cards, 'No picture cards')
+    return ('// Generated by scripts/build.py from data/chartae.json. Do not edit.\nwindow.lexiconChartae = '
+            + json.dumps({'subjects': subjects, 'groups': groups, 'cards': cards}, ensure_ascii=False, separators=(',', ':')) + ';\n'), pictures
+
+
+def picture_counts(cards, groups):
+    """How many cards each subject has, for the page's description: {subject id: count}."""
+    subject_of = {group['id']: group['subject'] for group in groups}
+    counts = {}
+    for card in cards:
+        counts[subject_of[card['group']]] = counts.get(subject_of[card['group']], 0) + 1
+    return counts
+
+
+def english_series(items):
+    """Items joined as our English joins them, with the serial comma: "a", "a and b", "a, b, and c"."""
+    items = list(items)
+    return ' and '.join(items) if len(items) < 3 else ', '.join(items[:-1]) + ', and ' + items[-1]
+
+
+def picture_description(data):
+    """The picture cards' description for the page's meta tag, from the data: how many cards, of
+    which subjects, and how many of each (a subject without cards is not named)."""
+    counts = picture_counts(data['cards'], data['groups'])
+    named = [(subject['english'][0].lower() + subject['english'][1:], counts[subject['id']]) for subject in data['subjects'] if counts.get(subject['id'])]
+    return (f'{len(data["cards"])} picture cards of {english_series(name for name, _ in named)} '
+            f'({english_series(f"{count} of {name}" for name, count in named)})')
+
+
 def fill(path, replacements):
     page = path.read_text(encoding='utf-8')
     for name, value in replacements.items():
@@ -3418,8 +3744,9 @@ def fill(path, replacements):
     return page
 
 
-def render_sitemap(site):
-    pages = (['', 'how-we-decide.html', 'how-practice-works.html', 'rulings.html', 'words.html', 'latin.html', 'practice.html', 'hora.html', 'review.html']
+def render_sitemap(site, root=ROOT):
+    pages = (['', 'how-we-decide.html', 'how-practice-works.html', 'rulings.html', 'words.html', 'latin.html', 'practice.html', 'hora.html', 'chartae.html']
+             + [game['file'] for game in gap_games(root)] + ['review.html']
              + [f'k/{key}.html' for key in site['categories']] + [f'c/{key}.html' for key in sorted(site['records'])]
              + [f'l/{slug}.html' for slug in sorted(w['slug'] for w in site['words'].values())])
     return ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
@@ -3452,13 +3779,26 @@ def build_site(root=ROOT):
     for head, info in sorted(site['words'].items(), key=lambda item: item[1]['slug']):
         outputs[f'l/{info["slug"]}.html'] = render_word_page(head, info, site)
     outputs['practice.html'] = fill(root / 'src/practice.html', {
-        'theme': THEME_INIT, 'app': app_head(''), 'header': site_header(''), 'footer': site_footer('')})
+        'theme': THEME_INIT, 'app': app_head(''), 'header': site_header(''), 'footer': site_footer(''),
+        'gap_games': gap_game_links(gap_games(root), ' · ')})
     outputs['hora.html'] = fill(root / 'src/hora.html', {'theme': THEME_INIT, 'app': app_head('')})
+    # The gap games (Ubi est Theodōrus?, Quis pulsat?; 20 November 2026): pages that stand by themselves as the clock does.
+    games = gap_games(root)
+    for game in games:
+        outputs[game['file']] = gap_game_page(root, game, games)
     outputs['assets/practice.js'] = (root / 'src/practice.js').read_text(encoding='utf-8')
+    chartae, pictures = picture_cards(root, site)
+    picture_data = json.loads(chartae[chartae.index('{'):chartae.rindex('}') + 1])
+    outputs['chartae.html'] = fill(root / 'src/chartae.html', {
+        'described': escape(picture_description(picture_data)),
+        'theme': THEME_INIT, 'app': app_head(''), 'header': site_header(''), 'footer': site_footer('')})
+    outputs['assets/chartae.js'] = (root / 'src/chartae.js').read_text(encoding='utf-8')
+    outputs['assets/chartae-data.js'] = chartae
+    outputs.update(pictures)
     outputs['assets/practice-data.js'] = practice_data(site)
     outputs['review.html'] = render_review_page(root, site)
     outputs['assets/review.js'] = (root / 'src/review.js').read_text(encoding='utf-8')
-    outputs['sitemap.xml'] = render_sitemap(site)
+    outputs['sitemap.xml'] = render_sitemap(site, root)
     outputs['assets/lexicon.css'] = (root / 'src/styles.css').read_text(encoding='utf-8')
     outputs['assets/lexicon.js'] = (root / 'src/page.js').read_text(encoding='utf-8')
     for font in sorted((root / 'src/fonts').iterdir()) if (root / 'src/fonts').exists() else []:
@@ -3479,7 +3819,7 @@ def build(root=ROOT):
 
 def stale(root, outputs):
     """Generated pages and fonts that no longer have a source."""
-    found = [p for folder, pattern in (('c', '*.html'), ('l', '*.html'), ('k', '*.html'), ('assets/fonts', '*'), ('assets/icons', '*'))
+    found = [p for folder, pattern in (('c', '*.html'), ('l', '*.html'), ('k', '*.html'), ('assets/fonts', '*'), ('assets/icons', '*'), ('chartae', '*.jpg'))
              if (root / folder).exists() for p in (root / folder).glob(pattern)]
     return sorted(str(PurePosixPath(p.relative_to(root))) for p in found
                   if str(PurePosixPath(p.relative_to(root))) not in outputs)

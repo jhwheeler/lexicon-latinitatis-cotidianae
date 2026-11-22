@@ -1,0 +1,79 @@
+{
+  "id": "theodorus",
+  "order": 1,
+  "file": "theodorus.html",
+  "name": "Ubi est Theodōrus?",
+  "description": "Ubi est Theodōrus? A game of the Latin adverbs of place (ubi, quō, unde, quā): fill the gaps in short dialogues, in Latin or with an English interface.",
+  "eyebrow": {"la": "Lūdus adverbiōrum locī", "en": "A game of the adverbs of place"},
+  "prefix": "uet-",
+  "hints": {"la": "Prōnōmina ostendere", "en": "Show the pronouns"},
+  "tabulae": [
+    {
+      "heads": ["Prōnōmen", "Ubi?", "Quō?", "Unde?", "Quā?"],
+      "rows": [
+        ["quis?", "ubi", "quō", "unde", "quā"],
+        ["hic", "hīc", "hūc", "hinc", "hāc"],
+        ["iste", "istīc", "istūc", "istinc", "istāc"],
+        ["ille", "illīc", "illūc", "illinc", "illāc"],
+        ["is", "ibi", "eō", "inde", "eā"],
+        ["īdem", "ibīdem", "eōdem", "indidem", "eādem"],
+        ["aliquis", "alicubi", "aliquō", "alicunde", "aliquā"],
+        ["quis (post sī, nē)", "sīcubi, nēcubi", "sī quō, nē quō", "sīcunde, nēcunde", "sī quā, nē quā"],
+        ["alius", "alibī", "aliō", "aliunde", "aliā"],
+        ["quisquis", "ubiubi", "quōquō", "undeunde", "quāquā"],
+        ["quīcumque", "ubicumque", "quōcumque", "undecumque", "quācumque"],
+        ["quīvīs", "ubivīs", "quōvīs", "—", "quāvīs"],
+        ["quisque", "ubīque", "—", "undique", "—"],
+        ["ūllus", "usquam", "usquam, quōquam", "—", "—"],
+        ["nūllus", "nusquam", "nusquam", "—", "—"]
+      ]
+    }
+  ],
+  "rounds": [
+    {
+      "id": "ubi", "tab": "Ubi?", "q": "Ubi est Theodōrus?",
+      "text": [
+        "Nesciō ubi sit. {Alicubi|aliquis} certē est, nam {nusquam|nūllus} esse nōn potest. ",
+        "Neque {hīc|hic} est apud mē, neque {istīc|iste} apud tē; fortasse {illīc|ille} est, trāns flūmen. ",
+        "Domī quidem {ubīque|quisque} quaesīvī neque {usquam|ūllus} invēnī; {alibī|alius} igitur quaerendus est. ",
+        "{Ubiubi/Ubicumque|quisquis} est, {ibi|is} est; {ibīdem|īdem} maneat, dum veniam."
+      ]
+    },
+    {
+      "id": "quo", "tab": "Quō?", "q": "Quō it Theodōrus?",
+      "text": [
+        "Nesciō quō eat. {Aliquō|aliquis} certē it, neque enim domī manet. ",
+        "Nōn {hūc|hic} venit ad mē, neque {istūc|iste} ad tē; {illūc|ille} potius tendit, trāns flūmen. ",
+        "{Quōquō/Quōcumque|quisquis} it, {eō|is} sequar, nam {eōdem|īdem} mihi quoque eundum est. ",
+        "Sī {aliō|alius} sē verterit, ego item mē vertam. {Nusquam|nūllus} sine mē abībit."
+      ]
+    },
+    {
+      "id": "unde", "tab": "Unde?", "q": "Unde venit Theodōrus?",
+      "text": [
+        "Nesciō unde veniat. {Alicunde|aliquis} certē venit, nam fessus est dē viā. ",
+        "Nōn {hinc|hic} profectus est ā mē, neque {istinc|iste} ā tē; {illinc|ille} venīre vidētur, ā monte. ",
+        "{Undecumque/Undeunde|quisquis} venit, {inde|is} aliquid novī affert. ",
+        "Frāter ejus, quī heri {indidem|īdem} vēnit, eadem narrāvit. ",
+        "Sī {aliunde|alius} vēnisset, alia narrāret. Jam amīcī {undique|quisque} concurrunt, ut eum salūtent."
+      ]
+    },
+    {
+      "id": "qua", "tab": "Quā?", "q": "Quā fūgit fūr?",
+      "text": [
+        "Nesciō quā fūgerit. {Aliquā|aliquis} certē ēvāsit, nam in aedibus nōn est. ",
+        "Nōn {hāc|hic} trānsiit, ubi ego stō, neque {istāc|iste}, ubi tū stās; {illāc/illā|ille} igitur ēlāpsus est, per hortum. ",
+        "{Quāquā/Quācumque|quisquis} fūgit, {eā|is} vestīgia relīquit, et canēs {eādem|īdem} sequentur. ",
+        "Sī {aliā|alius} exīre cōnābitur, capiētur. Portās tamen claudite, nē {quā|quis} effugiat."
+      ]
+    },
+    {
+      "id": "iter", "tab": "Iter", "q": "Quid ēgit Theodōrus?",
+      "text": [
+        "Theodōrus nūper {hinc|hic · unde?} profectus est. Prīmum Rōmam iit; {ibi|is · ubi?} trēs diēs mānsit. ",
+        "{Inde|is · unde?} Neāpolim contendit. {Eō|is · quō?} cum pervēnisset, amīcum {ubīque|quisque · ubi?} quaesīvit ",
+        "neque {usquam|ūllus · ubi?} invēnit. Itaque {eādem|īdem · quā?} quā vēnerat redīre coepit; crās {hūc|hic · quō?} veniet."
+      ]
+    }
+  ]
+}

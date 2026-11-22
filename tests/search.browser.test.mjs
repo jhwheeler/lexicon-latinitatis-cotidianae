@@ -2,6 +2,7 @@ import { before, beforeEach, after, test } from 'node:test';
 import assert from 'node:assert/strict';
 import { spawn } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
+import { readdirSync, readFileSync } from 'node:fs';
 import { chromium } from 'playwright';
 
 // The pages are served over HTTP, as the published site is: pages opened from disk share their
@@ -14,7 +15,15 @@ const search = async query => {
   await page.locator('#search').fill(query);
   if (query) await page.waitForFunction(() => /matching/.test(document.getElementById('results').textContent));
 };
-const overflows = () => page.evaluate(() => document.documentElement.scrollWidth > innerWidth);
+// The gap games (src/lacunae/, one file per game; 20 November 2026), in their order: each page's name,
+// its first round, and the prefix of its storage keys.
+const GAP_GAMES = readdirSync(new URL('../src/lacunae/', import.meta.url)).filter(name => name.endsWith('.json'))
+  .map(name => JSON.parse(readFileSync(new URL(`../src/lacunae/${name}`, import.meta.url), 'utf-8')))
+  .sort((a, b) => a.order - b.order)
+  .map(game => ({ file: game.file, first: game.rounds[0].id, prefix: game.prefix, name: game.name }));
+// A picture of the picture cards, with or without the version its address carries (chartae/<id>.jpg?v=…).
+const PICTURE_URL = /\/chartae\/[^/?]+\.jpg(\?[^/]*)?$/;
+const overflows = () =>page.evaluate(() => document.documentElement.scrollWidth > innerWidth);
 // A preference saved on one page is read by the next.
 const settle = () => page.waitForTimeout(200);
 
@@ -94,6 +103,92 @@ test('macrons, decomposed accents and i/j share matching and visible highlights'
   assert.equal(await page.locator('.search-result mark').count() > 0, true);
 });
 
+test('a Latin word typed whole finds its own entry first, before the entries that quote it', async () => {
+  // Jack, 19 November 2026: mons found summus, tendō, immānis, and Appennīnus, each for a quotation
+  // with mōns in it, and mōns itself fifth.
+  await search('mons');
+  const ids = await resultIds();
+  assert.equal(ids[0], 'c-mountain');
+  const first = page.locator('.search-result').first();
+  assert.equal(await first.locator('h3').textContent(), 'mōns, montis m.');
+  assert.match(await first.locator('.eyebrow').textContent(), /Definition/);
+  // Then the terms with the word in them, then those that have it only in their evidence.
+  const quoting = 'c-apennines';
+  assert.equal(ids.indexOf('c-volcano') > 0 && ids.indexOf('c-volcano') < ids.indexOf(quoting), true);
+  assert.equal(ids.indexOf('c-volcano') < ids.indexOf('c-huge'), true);
+  assert.match(await page.locator(`[data-result-for="${quoting}"] .eyebrow`).textContent(), /Evidence or grammar/);
+  // The record whose answer it is comes before a record that has it among its other words.
+  await search('pluvia');
+  assert.deepEqual((await resultIds()).slice(0, 2), ['c-rain', 'c-shower-bathroom']);
+  // tu is tū; tv is the television, though v is otherwise read as u.
+  await search('tu');
+  assert.equal(await page.locator('.search-result').first().locator('h3').textContent(), 'tū, tuī');
+  await search('tv');
+  assert.equal((await resultIds())[0], 'c-television');
+  // A form of the word still finds it, and so does i for j.
+  await search('montem');
+  assert.equal((await resultIds())[0], 'c-mountain');
+  await search('iam');
+  assert.equal((await resultIds()).slice(0, 3).some(id => /^c-(already|now)/.test(id)), true);
+});
+
+test('Back leads from one search to the one before it, not off the site', async () => {
+  // Jack, 19 November 2026: after a second search, Back left the lexicon for the site he had come
+  // from; he expected the word he had searched for before.
+  const steps = () => page.evaluate(() => history.length);
+  const start = await steps();
+  // A word being typed rewrites the address in place, and typing on is the same search.
+  await search('pyj');
+  await page.waitForURL(/index\.html\?q=pyj$/);
+  await page.waitForTimeout(1500);
+  await search('pyjama');
+  await page.waitForURL(/index\.html\?q=pyjama$/);
+  assert.equal(await steps(), start);
+  // Once it has been looked at, the next search is a new step.
+  await page.waitForTimeout(1500);
+  await search('soap');
+  await page.waitForURL(/index\.html\?q=soap$/);
+  assert.equal(await steps(), start + 1);
+  const soap = await resultIds();
+  await page.goBack();
+  await page.waitForURL(/index\.html\?q=pyjama$/);
+  assert.equal(await page.locator('#search').inputValue(), 'pyjama');
+  assert.equal(await page.locator('.search-result').count(), 6);
+  await page.goForward();
+  await page.waitForURL(/index\.html\?q=soap$/);
+  assert.equal(await page.locator('#search').inputValue(), 'soap');
+  assert.deepEqual(await resultIds(), soap);
+  // Enter marks a search as looked at without the wait; a search with nothing found is not a step.
+  await page.locator('#search').press('Enter');
+  await search('pyjama');
+  await page.waitForURL(/index\.html\?q=pyjama$/);
+  assert.equal(await steps(), start + 2);
+  await page.locator('#search').fill('pyjamz');
+  await page.waitForURL(/index\.html\?q=pyjamz$/);
+  await page.waitForTimeout(1500);
+  await search('soap');
+  await page.waitForURL(/index\.html\?q=soap$/);
+  assert.equal(await steps(), start + 2);
+  // Opening a result is looking at the search too: after coming back, a new search is a step,
+  // and Back from it shows the search the entry was opened from.
+  await page.locator('.search-result').first().click();
+  await page.waitForURL(/\/c\/[a-z0-9-]+\.html$/);
+  await page.goBack();
+  await page.waitForURL(/index\.html\?q=soap$/);
+  await search('pyjama');
+  await page.waitForURL(/index\.html\?q=pyjama$/);
+  await page.goBack();
+  await page.waitForURL(/index\.html\?q=soap$/);
+  assert.equal(await page.locator('#search').inputValue(), 'soap');
+  // Clearing a search that was looked at leaves it one step back.
+  await page.locator('#clear').click();
+  await page.waitForURL(/index\.html$/);
+  assert.equal(await page.locator('#contents').isVisible(), true);
+  await page.goBack();
+  await page.waitForURL(/index\.html\?q=soap$/);
+  assert.equal(await page.locator('#contents').isVisible(), false);
+});
+
 test('a search can be linked to: the address keeps the query, and the category it is limited to', async () => {
   await search('pyjama');
   await page.waitForURL(/index\.html\?q=pyjama$/);
@@ -169,6 +264,9 @@ test('the lexicon is kept on the device: it opens and searches offline, as an ap
   // An entry read while online is there offline; so are the front page, a category and the search.
   await app.goto(pageUrl('c/pyjamas.html'));
   await app.waitForLoadState('networkidle');
+  // The picture cards' pictures are fetched once their page has been opened, and the page says when they are all there.
+  await app.goto(pageUrl('chartae.html'));
+  await app.locator('#c-offline[data-state="saved"]').waitFor();
   await context.setOffline(true);
   await app.goto(pageUrl('index.html?q=pyjama'));
   await app.waitForFunction(() => /matching/.test(document.getElementById('results').textContent));
@@ -185,6 +283,18 @@ test('the lexicon is kept on the device: it opens and searches offline, as an ap
   await app.goto(pageUrl('hora.html'));
   assert.equal(await app.locator('#go').isVisible(), true);
   assert.equal(await app.evaluate(() => document.fonts.check('18px "Lexicon Serif"')), true);
+  await app.goto(pageUrl('chartae.html'));
+  await app.locator('#p-start').click();
+  for (let n = 0; n < 3; n++) {
+    await app.waitForFunction(() => { const picture = document.getElementById('g-picture'); return picture.complete && picture.naturalWidth === 720; });
+    await app.locator('#g-show').click();
+    await app.locator('#g-got').click();
+  }
+  for (const game of GAP_GAMES) {
+    await app.goto(pageUrl(game.file));
+    assert.equal(await app.locator('#check').isVisible(), true, game.file);
+    assert.equal(await app.locator('.gap input').count() > 0, true, game.file);
+  }
   // The guidance pages, never opened here, were saved when the lexicon was.
   for (const [path, title] of [['how-we-decide.html', 'How we decide'], ['how-practice-works.html', 'How the practice works']]) {
     await app.goto(pageUrl(path));
@@ -193,6 +303,206 @@ test('the lexicon is kept on the device: it opens and searches offline, as an ap
   // A page never opened here says so, and leads back to the search.
   await app.goto(pageUrl('c/soap.html'));
   assert.match(await app.locator('h1').textContent(), /not saved on this device/);
+  await context.close();
+});
+
+test('the picture cards\' pictures stay on the device however many pages are read after them', async () => {
+  const context = await browser.newContext({ viewport: { width: 390, height: 800 } });
+  const app = await context.newPage();
+  await app.goto(url);
+  await app.evaluate(() => navigator.serviceWorker.ready);
+  await app.waitForFunction(() => navigator.serviceWorker.controller);
+  await app.goto(pageUrl('chartae.html'));
+  await app.locator('#c-offline[data-state="saved"]').waitFor();
+  const saved = () => app.evaluate(async () => {
+    const paths = (await (await caches.open('lexicon-pages')).keys()).map(key => new URL(key.url).pathname);
+    return { pictures: paths.filter(path => /\/chartae\/[^/]+$/.test(path)).sort(), pages: paths.filter(path => !/\/chartae\/[^/]+$/.test(path)) };
+  });
+  const pictures = (await saved()).pictures;
+  const cards = await app.evaluate(() => window.lexiconChartae.cards.map(card => new URL(card.picture, location.href).pathname).sort());
+  assert.deepEqual(pictures, cards, 'every card has its picture saved');
+  // More pages than the worker keeps are saved after the pictures, a picture of a card that is gone
+  // among them; then one more page is read, which makes the worker clear the oldest away.
+  await app.evaluate(async () => {
+    const cache = await caches.open('lexicon-pages');
+    const folder = new URL('.', location.href).pathname;
+    await cache.put(folder + 'chartae/gone.jpg', new Response('gone'));
+    for (let n = 0; n < 650; n++) await cache.put(`${folder}c/filler-${n}.html`, new Response('filler'));
+  });
+  await app.goto(pageUrl('c/pyjamas.html'));
+  // Once cleared: the 600 pages, every card's picture, and the one that is gone.
+  await app.waitForFunction(async limit => (await (await caches.open('lexicon-pages')).keys()).length <= limit, 600 + cards.length + 1);
+  let now = await saved();
+  assert.equal(now.pages.length, 600, 'the pages are cut to the 600 most recent');
+  assert.equal(now.pages.includes(new URL(pageUrl('c/pyjamas.html')).pathname), true, 'the page just read is kept');
+  assert.deepEqual(now.pictures.filter(path => !path.endsWith('/gone.jpg')), cards, 'and no picture was cleared away');
+  // The cards' page removes the picture of the card that is gone, and offline every card has its picture.
+  await app.goto(pageUrl('chartae.html'));
+  await app.locator('#c-offline[data-state="saved"]').waitFor();
+  await app.waitForFunction(async () => !(await (await caches.open('lexicon-pages')).match(new URL('chartae/gone.jpg', location.href).pathname)));
+  await context.setOffline(true);
+  await app.reload();
+  const broken = await app.evaluate(async () => {
+    const failed = [];
+    for (const card of window.lexiconChartae.cards) {
+      const picture = new Image();
+      picture.src = card.picture;
+      await picture.decode().catch(() => failed.push(card.id));
+    }
+    return failed;
+  });
+  assert.deepEqual(broken, [], 'every picture is shown offline');
+  await context.close();
+});
+
+test('the picture cards save the round’s pictures first, then the deck’s, then the rest; a failure pauses the saving and does not end it', async () => {
+  // Jack, 21 November 2026, on 4G: a new card of the body with its picture's place empty, "Saepe sīc
+  // fit". The saving fetched the pictures in the order of the file, animals first, and stopped at the
+  // first failure. Every picture the page fetches itself (the saving does; the pictures shown and
+  // fetched ahead are <img> elements and are not counted here) is logged, with whether the picture of
+  // the card shown was there by then; the first fetch of one picture fails.
+  const context = await browser.newContext({ viewport: { width: 390, height: 800 } });
+  const app = await context.newPage();
+  const images = [];   // pictures asked for by <img> elements (the card shown, those fetched ahead, the list's tiles)
+  context.on('request', request => { if (!request.serviceWorker() && request.resourceType() === 'image' && /\/chartae\/[^/]+\.jpg$/.test(new URL(request.url()).pathname)) images.push(request.url()); });
+  await app.addInitScript(() => {
+    const original = window.fetch;
+    const failOnce = new Set(JSON.parse(localStorage.getItem('test-fail-once') || '[]'));
+    window.testFetched = [];
+    window.fetch = function (input, ...rest) {
+      const path = new URL(typeof input === 'string' ? input : input.url, location.href).pathname;
+      if (/\/chartae\/[^/]+\.jpg$/.test(path)) {
+        const dialog = document.getElementById('p-game'), picture = document.getElementById('g-picture');
+        window.testFetched.push({ path, shownThere: !dialog || !dialog.open || picture.complete });
+        if (failOnce.delete(path)) return Promise.reject(new TypeError('refused for the test'));
+      }
+      return original.call(this, input, ...rest);
+    };
+  });
+  await app.goto(url);
+  await app.evaluate(() => navigator.serviceWorker.ready);
+  await app.waitForFunction(() => navigator.serviceWorker.controller);
+  const data = await app.evaluate(async () => {
+    const text = await (await fetch('assets/chartae-data.js')).text();
+    return JSON.parse(text.slice(text.indexOf('{'), text.lastIndexOf('}') + 1));
+  });
+  const path = card => new URL(card.picture, pageUrl('')).pathname;
+  const listed = data.subjects.flatMap(subject => data.groups.filter(group => group.subject === subject.id).flatMap(group => data.cards.filter(card => card.group === group.id)));
+  const food = data.cards.filter(card => data.groups.find(group => group.id === card.group).subject === 'cibi');
+  const round = food.slice(-12), deck = food.filter(card => !round.includes(card)), failing = path(deck[0]);
+  assert.ok(deck.length > 2);
+  // A round of food and drink is in progress, open, and the deck is food and drink.
+  await app.evaluate(([roundIds, failingPath]) => {
+    localStorage.setItem('lexicon-practice-lang', 'en');
+    localStorage.setItem('lexicon-chartae-deck', JSON.stringify({ subjects: ['cibi'], groups: [] }));
+    localStorage.setItem('lexicon-chartae-round', JSON.stringify({ queue: roundIds.slice(1), current: roundIds[0], shown: false, done: false, got: 0, again: 0,
+      missed: [], size: roundIds.length, last: roundIds[0], undo: null, open: true, at: Date.now() }));
+    localStorage.setItem('test-fail-once', JSON.stringify([failingPath]));
+  }, [round.map(card => card.id), failing]);
+  await app.goto(pageUrl('chartae.html'));
+  await app.locator('#p-game[open]').waitFor();
+  // While it saves, the line under Start says how far it has got, and does not move as it counts.
+  const line = app.locator('#c-offline');
+  await app.locator('#c-offline[data-state="saving"]').waitFor({ timeout: 30000 });
+  const sample = () => app.evaluate(() => {
+    const node = document.getElementById('c-offline'), done = node.querySelector('.c-done');
+    return { text: node.textContent, done: done.getBoundingClientRect().width, line: node.getBoundingClientRect().height, number: Number(done.textContent.replace(/,/g, '')) };
+  });
+  const early = await sample();
+  assert.match(early.text, new RegExp(`^Saving the pictures: [\\d,]+ of ${data.cards.length.toLocaleString('en')}\\.$`));
+  await app.waitForFunction(([before]) => {
+    const done = document.querySelector('#c-offline .c-done');
+    return !done || Number(done.textContent.replace(/,/g, '')) >= Math.max(before + 1, 100);
+  }, [early.number], { timeout: 60000 });
+  const later = await sample().catch(() => null);
+  if (later && /^Saving/.test(later.text)) {
+    assert.ok(later.number > early.number);
+    assert.deepEqual([later.done, later.line], [early.done, early.line], 'the count keeps its width, and the line its height');
+  }
+  // In Latin too.
+  await app.locator('#p-game').evaluate(dialog => dialog.close());
+  await app.locator('#p-lang button[data-lang="la"]').click();
+  const latin = await line.textContent();
+  assert.ok(/^Imāginēs servantur: [\d,]+ ex [\d,]+\.$/.test(latin) || latin === 'Imāginēs in hōc apparātū servātae sunt: sine rēte quoque lūdere licet.', latin);
+  await app.locator('#p-lang button[data-lang="en"]').click();
+  // The list of every card, closed, asks for no picture when it is drawn again in the other language
+  // (until 21 November 2026 its tiles set src before loading="lazy", and every change of language fetched all of them).
+  await app.waitForTimeout(500);
+  assert.ok(images.length <= 3, `only the card shown and the two fetched ahead are asked for by images, not ${images.length}`);
+  // The failure did not end the saving: after a pause it went on, and every picture is saved.
+  await app.locator('#c-offline[data-state="saved"]').waitFor({ timeout: 120000 });
+  assert.equal(await line.textContent(), 'The pictures are saved on this device: the game also works offline.');
+  const log = await app.evaluate(() => window.testFetched);
+  const paths = log.map(entry => entry.path);
+  assert.deepEqual(log.filter(entry => !entry.shownThere), [], 'no fetch was begun while the picture of the card shown was on its way');
+  // The failed picture was fetched again, last, after the rest; nothing else was fetched twice.
+  assert.equal(paths.filter(item => item === failing).length, 2, JSON.stringify({ failing, at: paths.flatMap((item, n) => (item === failing ? [n] : [])), count: paths.length, first: paths.slice(0, 12) }));
+  assert.equal(paths.at(-1), failing);
+  assert.equal(new Set(paths).size, paths.length - 1);
+  // The order: the round's pictures, then the deck's, then the rest, the rest in the order of the list.
+  const rank = item => (round.some(card => path(card) === item) ? 0 : deck.some(card => path(card) === item) ? 1 : 2);
+  const ranks = paths.slice(0, -1).map(rank);
+  assert.deepEqual(ranks, [...ranks].sort((a, b) => a - b), 'round, deck, rest');
+  assert.ok(ranks.includes(0) && ranks.includes(1));
+  assert.equal(paths.find(item => rank(item) === 2), path(listed.find(card => rank(path(card)) === 2)));
+  assert.equal(paths.find(item => rank(item) === 1), failing, 'the first of the deck failed, and the saving went on with the next');
+  // Every picture is saved, those of the round's first cards by their own <img> elements.
+  const saved = await app.evaluate(async () => (await (await caches.open('lexicon-pages')).keys()).map(key => new URL(key.url).pathname));
+  assert.deepEqual(data.cards.map(path).filter(item => !saved.includes(item)), []);
+  await context.close();
+});
+
+test('a saved picture is shown from the device without asking the network; a picture taken again is fetched under its new address, and the old ones are cleared', async () => {
+  // The coordinating session's decision (21 November 2026): the worker had fetched a saved picture
+  // afresh each time it was shown. Now a saved picture is answered from the cache alone, and the
+  // address in the card data carries the picture's version, so that a new file has a new address.
+  const context = await browser.newContext({ viewport: { width: 390, height: 800 } });
+  const app = await context.newPage();
+  const address = text => { const at = new URL(text, pageUrl('')); return at.pathname + at.search; };
+  const network = [];   // the pictures the service worker asked of the network
+  context.on('request', request => { if (request.serviceWorker() && PICTURE_URL.test(request.url())) network.push(address(request.url())); });
+  const kept = () => app.evaluate(async () => (await (await caches.open('lexicon-pages')).keys())
+    .map(key => { const at = new URL(key.url); return at.pathname + at.search; }).filter(path => /\/chartae\//.test(path)).sort());
+  await app.goto(url);
+  await app.evaluate(() => navigator.serviceWorker.ready);
+  await app.waitForFunction(() => navigator.serviceWorker.controller);
+  await app.goto(pageUrl('chartae.html'));
+  await app.locator('#c-offline[data-state="saved"]').waitFor({ timeout: 120000 });
+  const cards = await app.evaluate(() => window.lexiconChartae.cards.map(card => card.picture));
+  const taurus = cards.find(picture => picture.startsWith('chartae/taurus.jpg'));
+  assert.match(taurus, /^chartae\/taurus\.jpg\?v=[0-9a-f]{8}$/);
+  assert.deepEqual(await kept(), cards.map(address).sort(), 'every picture is saved under its address with its version');
+  // Saved pictures shown again, in the list's card and after a reload, ask nothing of the network.
+  network.length = 0;
+  await app.goto(url);   // (from chartae.html itself, the address with #taurus would only change the hash)
+  await app.goto(pageUrl('chartae.html#taurus'));
+  await app.locator('#p-game[open]').waitFor();
+  const shown = () => app.waitForFunction(() => getComputedStyle(document.getElementById('g-picture')).visibility === 'visible');
+  await shown();
+  await app.locator('#g-forth').click(); await shown();
+  await app.locator('#g-prev').click(); await shown();
+  await app.reload();
+  await app.locator('#p-game[open]').waitFor();
+  await shown();
+  await app.locator('#c-offline[data-state="saved"]').waitFor({ timeout: 30000 });
+  await app.waitForTimeout(500);
+  assert.deepEqual(network, [], 'no picture was fetched again');
+  // The bull's picture is taken again: the card data gives it a new version. A picture saved under a
+  // plain address (before versions) is there too. The new version is fetched once; the old ones go.
+  await app.evaluate(async () => { await (await caches.open('lexicon-pages')).put(new URL('chartae/canis.jpg', location.href).pathname, new Response('old')); });
+  await app.addInitScript(() => {
+    let data;
+    Object.defineProperty(window, 'lexiconChartae', { configurable: true, get: () => data,
+      set: value => { value.cards.find(card => card.id === 'taurus').picture = 'chartae/taurus.jpg?v=00000000'; data = value; } });
+  });
+  await app.goto(pageUrl('chartae.html'));
+  await app.locator('#c-offline[data-state="saved"]').waitFor({ timeout: 60000 });
+  // The clearing follows the line that says all are saved.
+  await app.waitForFunction(async count => (await (await caches.open('lexicon-pages')).keys()).filter(key => /\/chartae\//.test(key.url)).length === count, cards.length);
+  assert.deepEqual(network, [address('chartae/taurus.jpg?v=00000000')], 'only the new version is fetched');
+  const now = await kept();
+  assert.deepEqual(now.filter(path => path.includes('/taurus.')), [address('chartae/taurus.jpg?v=00000000')], 'the old version is cleared');
+  assert.equal(now.length, cards.length, 'and no plain address is left');
   await context.close();
 });
 
@@ -518,7 +828,7 @@ test('on a phone the categories fold into a menu above the search', async () => 
 
 test('every page is usable on a phone: no sideways scrolling, 44px controls, no zoom on search', async () => {
   const pages = ['index.html', 'k/culina.html', 'words.html', 'latin.html', 'c/cooking-pot.html', 'c/tickle.html',
-                 'c/perhaps.html', 'l/fortasse.html', 'rulings.html', 'how-we-decide.html', 'how-practice-works.html', 'practice.html', 'hora.html', 'review.html'];
+                 'c/perhaps.html', 'l/fortasse.html', 'rulings.html', 'how-we-decide.html', 'how-practice-works.html', 'practice.html', 'hora.html', 'chartae.html', ...GAP_GAMES.map(game => game.file), 'review.html'];
   for (const width of [320, 375, 390]) {
     await page.setViewportSize({ width, height: 800 });
     for (const path of pages) {
@@ -526,7 +836,8 @@ test('every page is usable on a phone: no sideways scrolling, 44px controls, no 
       assert.equal(await overflows(), false, `${path} overflows at ${width}px`);
       const small = await page.evaluate(() => [...document.querySelectorAll(
         '.settings > summary, .head-search-field, .filter button, .cat-menu > summary, .cat-home, .clear, .page-contents a, .toc a, .hero h1 a, .site-name, .wlist a, .az-nav a, .az a, .suggest a, .how-sources a, '
-        + '.plist a, .practice summary, .practice button, .practice a, .verdict button, .verdict a, .icon-btn, .mode-chip, .go, #answer, .keys button, .ref summary, .links a')]
+        + '.plist a, .practice summary, .practice button, .practice a, .verdict button, .verdict a, .icon-btn, .mode-chip, .go, #answer, .keys button, .ref summary, .links a, '
+        + '.gap input, .ubtn, .tab, .opt, .seg button')]
         .filter(el => el.getClientRects().length && getComputedStyle(el).visibility !== 'hidden')
         .map(el => [el.textContent.trim().slice(0, 24), Math.round(el.getBoundingClientRect().height)])
         .filter(([, height]) => height < 44));
@@ -534,7 +845,7 @@ test('every page is usable on a phone: no sideways scrolling, 44px controls, no 
     }
   }
   for (const [path, field] of [['index.html', '#search'], ['k/culina.html', '#search'], ['c/kind.html', '#site-search'], ['words.html', '#site-search'],
-                               ['practice.html', '#site-search'], ['hora.html', '#answer']]) {
+                               ['practice.html', '#site-search'], ['chartae.html', '#site-search'], ['hora.html', '#answer'], ...GAP_GAMES.map(game => [game.file, `#gap-${game.first}-0`])]) {
     await page.goto(pageUrl(path));
     assert.ok(parseFloat(await page.locator(field).evaluate(el => getComputedStyle(el).fontSize)) >= 16, path);
   }
@@ -2267,14 +2578,25 @@ test('the practice lobby links to How the practice works, in Latin and in Englis
 
 test('practice is reached from the front page and from every footer, never from the header', async () => {
   const links = page.locator('.plist a');
-  assert.deepEqual(await links.evaluateAll(nodes => nodes.map(n => n.getAttribute('href'))), ['practice.html', 'hora.html']);
+  assert.deepEqual(await links.evaluateAll(nodes => nodes.map(n => n.getAttribute('href'))), ['practice.html', 'hora.html', 'chartae.html', ...GAP_GAMES.map(game => game.file)]);
+  // The gap games are one item, «Lacūnae», with the games' names as links (the coordinating session's choice).
+  assert.equal(await page.locator('.plist-group .toc-la').textContent(), 'Lacūnae');
+  assert.deepEqual(await page.locator('.plist-games a').allTextContents(), GAP_GAMES.map(game => game.name));
   const practice = await page.locator('#practice-title').boundingBox(), contents = await page.locator('#contents-title').boundingBox();
   assert.ok(practice.y < contents.y, 'above the list of categories');
   await links.first().click();
   await page.waitForURL(/practice\.html$/);
   assert.equal(await page.locator('h1').textContent(), 'Exercitātiō');
-  await page.locator('.p-more a').click();
+  assert.deepEqual(await page.locator('.p-more a').evaluateAll(nodes => nodes.map(n => n.getAttribute('href'))), ['hora.html', 'chartae.html', ...GAP_GAMES.map(game => game.file)]);
+  assert.equal(await page.locator('.p-gaps [data-t="gaps"]').textContent(), 'Lacūnae:');
+  await page.locator('.p-more a[href="hora.html"]').click();
   await page.waitForURL(/hora\.html$/);
+  await page.goBack();
+  await page.locator('.p-more a[href="theodorus.html"]').click();
+  await page.waitForURL(/theodorus\.html$/);
+  await page.goBack();
+  await page.locator('.p-more a[href="quis-pulsat.html"]').click();
+  await page.waitForURL(/quis-pulsat\.html$/);
   for (const [path, href] of [['index.html', 'practice.html'], ['c/kind.html', '../practice.html'], ['k/culina.html', '../practice.html'], ['practice.html', 'practice.html']]) {
     await page.goto(pageUrl(path));
     assert.equal(await page.locator('footer').getByRole('link', { name: 'Practice', exact: true }).getAttribute('href'), href, path);
@@ -3016,5 +3338,1026 @@ test('the clock is set in the lexicon’s faces, from the site’s own files: no
   assert.deepEqual(fonts.filter(address => !address.startsWith(pageUrl('assets/fonts/'))), []);
   assert.deepEqual(await clock.evaluate(() => [...document.fonts].filter(face => face.status === 'loaded').map(face => face.family.replace(/"/g, '')).filter((name, at, all) => all.indexOf(name) === at).sort()),
     ['Alegreya Sans', 'Lexicon Serif']);
+  await context.close();
+});
+
+// The picture cards, Chartae pictae ---------------------------------------------------------------
+
+const CHARTAE_KEYS = ['lexicon-chartae', 'lexicon-chartae-deck', 'lexicon-chartae-round', 'lexicon-practice-lang'];
+const openChartae = async (fresh = true, language = 'en') => {
+  if (fresh) {
+    await page.goto(pageUrl('chartae.html'));
+    await page.evaluate(keys => keys.forEach(key => localStorage.removeItem(key)), CHARTAE_KEYS);
+    if (language) await page.evaluate(code => localStorage.setItem('lexicon-practice-lang', code), language);
+    await settle();
+  }
+  await page.goto(pageUrl('chartae.html'));
+  await page.locator('#chartae:not([hidden])').waitFor();
+};
+const chartaeRound = async () => { const round = await kept('lexicon-chartae-round'); return [round.current, ...round.queue]; };
+const pictureShown = () => page.waitForFunction(() => { const picture = document.getElementById('g-picture'); return picture.complete && picture.naturalWidth === 720; });
+
+test('the picture cards: a picture for the cue, the name on request, and a back with its line, its entry, and the picture’s credit', async () => {
+  const cards = await page.evaluate(async address => {
+    const text = await (await fetch(address)).text();
+    return JSON.parse(text.slice(text.indexOf('{'), text.lastIndexOf('}') + 1)).cards;
+  }, pageUrl('assets/chartae-data.js'));
+  await openChartae();
+  assert.equal(await page.locator('h1').textContent(), 'Picture cards');
+  assert.deepEqual(await deckCount(), [cards.length, 0, cards.length]);
+  await startRound();
+  assert.equal(await page.locator('#g-pos').textContent(), '1 / 12');
+  const ids = await chartaeRound(), card = cards.find(c => c.id === ids[0]), head = card.latin.split(',')[0];
+  assert.equal(new Set(ids).size, 12);
+  // The front is the picture and nothing that names the thing.
+  await pictureShown();
+  assert.equal(await page.locator('#g-picture').getAttribute('src'), card.picture);
+  assert.equal(await page.locator('#g-picture').getAttribute('alt'), 'Picture');
+  assert.equal((await page.locator('#g-card').innerText()).trim().toLowerCase().replace(/\s+/g, ' '), 'new what is it?');
+  assert.equal(await page.locator('#g-la').isVisible(), false);
+  assert.equal(await page.locator('#g-back').getAttribute('aria-hidden'), 'true');
+  assert.equal(await page.locator('#g-marks').isVisible(), false);
+  // A tap on the card turns it, and the card neither grows nor moves: the back had its room from the start.
+  const before = [await page.locator('#g-card').boundingBox(), await page.locator('#g-picture').boundingBox()];
+  await page.locator('#g-picture').click();
+  assert.deepEqual([await page.locator('#g-card').boundingBox(), await page.locator('#g-picture').boundingBox()], before);
+  assert.equal(await page.locator('#g-la').isVisible(), true);
+  assert.equal(await page.locator('#g-ask').isVisible(), false);
+  assert.equal(await page.locator('#g-back').getAttribute('aria-hidden'), 'false');
+  assert.equal(await page.locator('#g-la b').textContent(), head);
+  assert.equal(await page.locator('#g-la').textContent(), card.latin);
+  assert.equal(await page.locator('#g-la').getAttribute('lang'), 'la');
+  assert.equal(await page.locator('#g-en [lang="en"]').textContent(), card.english);
+  assert.equal(await page.locator('#g-ex-la').textContent(), card.line);
+  assert.equal(await page.locator('#g-ex-src').textContent(), card.source || 'composed');
+  // An animal's card says what it eats, a plant's what it bears, if it says anything.
+  assert.equal(await page.locator('#g-food').isVisible(), !!card.food);
+  assert.equal(await page.locator('#g-bears').isVisible(), !!card.bears);
+  if (card.food) assert.equal(await page.locator('#g-food').textContent(), `Quō vēscitur? ${card.food}`);
+  if (card.bears) assert.equal(await page.locator('#g-bears').textContent(), `Quid fert? ${card.bears}`);
+  assert.equal(await page.locator('#g-food').getAttribute('lang'), 'la');
+  const credit = page.locator('#g-credit');
+  assert.match(await credit.textContent(), /^Picture: .+, from Wikimedia Commons; cropped\.$/);
+  assert.equal(await credit.locator('a').first().getAttribute('href'), card.image.page);
+  if (card.image.licence_url) assert.equal(await credit.locator('a').nth(1).getAttribute('href'), card.image.licence_url);
+  // The marks are the practice's: Again at the left, outlined; Got it at the right, filled.
+  const again = await page.locator('#g-again').boundingBox(), got = await page.locator('#g-got').boundingBox();
+  assert.ok(again.x < got.x);
+  // The entry is a page of the lexicon, and the round is as it was on coming back.
+  if (card.record) {
+    await page.locator('#g-entry').click();
+    await page.waitForURL(new RegExp(`c/${card.record}\\.html$`));
+    assert.equal(await page.locator('h1.hw').count(), 1);
+    await page.goBack();
+    await page.locator('#p-game[open]').waitFor();
+    assert.equal(await page.locator('#g-la b').textContent(), head);
+  }
+  await page.locator('#g-got').click();
+  assert.equal(await page.locator('#g-pos').textContent(), '2 / 12');
+  assert.equal((await kept('lexicon-chartae')).cards[card.id].b, 3);
+  // The step back restores the card as it was: new, with no record.
+  await page.locator('#g-undo').click();
+  assert.equal(await page.locator('#g-la b').textContent(), head);
+  assert.equal((await kept('lexicon-chartae')).cards[card.id], undefined);
+  // Every card of the deck has its picture and, where it has an entry, the entry's page.
+  const missing = await page.evaluate(async list => {
+    const absent = [];
+    for (const item of list) {
+      for (const address of [item.picture, ...(item.record ? [`c/${item.record}.html`] : [])]) {
+        if (!(await fetch(address, { method: 'HEAD' })).ok) absent.push(address);
+      }
+    }
+    return absent;
+  }, cards);
+  assert.deepEqual(missing, []);
+});
+
+test('the picture cards: a new card never shows the last card’s picture, and the next pictures are fetched ahead', async () => {
+  // Jack, 21 November 2026: the last card's picture stayed on the next card until the new file came.
+  // Every picture is held here until the test lets it through, as on a slow connection.
+  const held = [], requested = [], failing = new Set();
+  const pictures = async route => {
+    const path = new URL(route.request().url()).pathname;
+    requested.push(path);
+    if (failing.has(path)) await route.abort().catch(() => {});
+    else held.push({ path, route });
+  };
+  const release = async path => {
+    for (const item of held.filter(entry => entry.path === path)) { held.splice(held.indexOf(item), 1); await item.route.continue().catch(() => {}); }
+  };
+  const until = async (check, what) => {
+    for (let n = 0; n < 100 && !check(); n++) await page.waitForTimeout(50);
+    assert.ok(check(), what);
+  };
+  const state = () => page.evaluate(() => {
+    const picture = document.getElementById('g-picture'), preview = document.getElementById('g-preview');
+    return { src: new URL(picture.getAttribute('src'), location.href).pathname, current: picture.currentSrc ? new URL(picture.currentSrc).pathname : '',
+      visible: getComputedStyle(picture).visibility === 'visible', loaded: picture.complete && picture.naturalWidth === 720,
+      preview: preview.getAttribute('src'), previewShown: getComputedStyle(preview).visibility === 'visible' && preview.complete && preview.naturalWidth === 144 };
+  });
+  // Since 21 November 2026 the picture's place shows the card's preview, from the card data, until the picture has come.
+  const previewShown = path => page.waitForFunction(expected => {
+    const preview = document.getElementById('g-preview'), card = window.lexiconChartae.cards.find(item => new URL(item.picture, location.href).pathname === expected);
+    return preview.getAttribute('src') === 'data:image/jpeg;base64,' + card.preview && getComputedStyle(preview).visibility === 'visible' && preview.naturalWidth === 144;
+  }, path);
+  const boxes = async () => [await page.locator('#g-card').boundingBox(), await page.locator('#g-frame').boundingBox()];
+  await openChartae();
+  await page.route(PICTURE_URL, pictures);
+  try {
+    await startRound();
+    const paths = await page.evaluate(() => Object.fromEntries(window.lexiconChartae.cards.map(card => [card.id, new URL(card.picture, location.href).pathname])));
+    const [first, second, third, fourth, fifth] = (await chartaeRound()).map(id => paths[id]);
+    // The first card's picture and, ahead of time, the next two cards' are asked for, and no more.
+    await until(() => [first, second, third].every(path => requested.includes(path)), 'the first picture and the next two are requested');
+    await page.waitForTimeout(200);
+    assert.deepEqual([...new Set(requested)].sort(), [first, second, third].sort(), 'no more than two are fetched ahead');
+    // While its file has not come, the picture is unseen and its preview fills its place; the card still works.
+    await previewShown(first);
+    let now = await state();
+    assert.equal(now.src, first);
+    assert.equal(now.visible, false);
+    const previewBox = await page.locator('#g-preview').boundingBox(), frameBox = await page.locator('#g-frame').boundingBox();
+    assert.ok(previewBox.width >= frameBox.width && previewBox.height >= frameBox.height, 'the preview covers the frame');
+    await page.locator('#g-show').click();
+    await page.locator('#g-got').click();
+    // The second card is on screen at once, with its own preview; the picture shown is not the first card's: it is unseen until its own file loads.
+    await previewShown(second);
+    now = await state();
+    assert.equal(now.src, second);
+    assert.equal(now.visible, false, 'the picture waits for its own file');
+    const waiting = await boxes();
+    // A late load of the first picture does not show on the second card, whose preview stays.
+    await release(first);
+    await page.waitForTimeout(300);
+    now = await state();
+    assert.equal(now.src, second);
+    assert.equal(now.visible, false, 'a late load of an earlier picture is not shown');
+    await previewShown(second);
+    // The second card's file comes: its picture shows, over the preview, and the card has kept its height.
+    await release(second);
+    await page.waitForFunction(() => getComputedStyle(document.getElementById('g-picture')).visibility === 'visible');
+    now = await state();
+    assert.deepEqual([now.src, now.current, now.loaded], [second, second, true]);
+    assert.deepEqual(await boxes(), waiting, 'the card keeps its height while the picture comes');
+    const shown = await page.evaluate(() => { const box = document.getElementById('g-frame').getBoundingClientRect(); return document.elementFromPoint(box.x + box.width / 2, box.y + box.height / 2).id; });
+    assert.equal(shown, 'g-picture', 'the full picture lies over the preview');
+    // The third card's picture was fetched ahead; once it is there, the change to it is instant.
+    await until(() => requested.includes(fourth), 'the fourth picture is fetched ahead');
+    await release(third);
+    await page.waitForTimeout(300);
+    await page.locator('#g-show').click();
+    await page.locator('#g-got').click();
+    now = await state();
+    assert.deepEqual([now.src, now.current, now.visible], [third, third, true], 'a picture fetched ahead shows at once');
+    // A picture that fails leaves its preview (no broken image), and the card can still be shown and marked.
+    failing.add(fourth);
+    for (const item of held.filter(entry => entry.path === fourth)) { held.splice(held.indexOf(item), 1); await item.route.abort().catch(() => {}); }
+    await page.waitForTimeout(200);
+    await page.locator('#g-show').click();
+    await page.locator('#g-got').click();
+    await page.waitForTimeout(300);
+    now = await state();
+    assert.deepEqual([now.src, now.visible], [fourth, false]);
+    // Its preview stays: the card has its cue with no picture at all.
+    await previewShown(fourth);
+    await page.locator('#g-show').click();
+    assert.equal(await page.locator('#g-la').isVisible(), true);
+    await page.locator('#g-got').click();
+    assert.equal((await state()).src, fifth);
+    assert.equal(await page.locator('#g-pos').textContent(), '5 / 12');
+  } finally {
+    await page.unroute(PICTURE_URL, pictures);
+    for (const item of held.splice(0)) await item.route.continue().catch(() => {});
+  }
+});
+
+test('the picture cards are spaced as the vocabulary is: a card marked Again comes back after ten minutes, not in the same round', async () => {
+  const context = await browser.newContext({ viewport: { width: 1280, height: 900 }, serviceWorkers: 'block', timezoneId: 'Europe/Sofia' });
+  const shared = page;
+  page = await context.newPage();
+  try {
+    const evening = sofia(16, '20:00');
+    await page.clock.setFixedTime(new Date(evening));
+    await openChartae();
+    await startRound();
+    const first = await chartaeRound();
+    // The first card is missed, the rest are known.
+    const seen = [];
+    for (let n = 0; n < 12; n++) {
+      seen.push((await kept('lexicon-chartae-round')).current);
+      await page.locator('#g-show').click();
+      await page.locator(n === 0 ? '#g-again' : '#g-got').click();
+    }
+    assert.deepEqual(seen, first, 'the missed card was not put back into the round');
+    assert.match(await page.locator('#g-end').textContent(), /^Round done: Got it 11, Again 1\./);
+    const progress = (await kept('lexicon-chartae')).cards;
+    assert.deepEqual(progress[first[0]], { b: 0, due: evening + 10 * 60e3, t: evening });
+    // A new card known at sight comes back in three or four days, at the start of a day (04:00).
+    for (const id of first.slice(1)) {
+      assert.equal(progress[id].b, 3, id);
+      assert.ok([sofia(19, '04:00'), sofia(20, '04:00')].includes(progress[id].due), id);
+    }
+    // The vocabulary's progress is another thing: nothing was written there.
+    assert.equal(await kept('lexicon-practice'), null);
+    await page.locator('#g-exit').click();
+    assert.match(await page.locator('#p-meter-text').textContent(), /^11 known · 1 learning · /);
+    // Five minutes on nothing is due; after ten the missed card is, and the next round has it once.
+    await page.clock.setFixedTime(new Date(evening + 5 * 60e3));
+    await openChartae(false);
+    assert.equal((await deckCount())[1], 0);
+    await page.clock.setFixedTime(new Date(evening + 11 * 60e3));
+    await openChartae(false);
+    assert.equal((await deckCount())[1], 1);
+    await startRound();
+    const second = await chartaeRound();
+    assert.equal(second.length, 12);
+    assert.equal(second.filter(id => id === first[0]).length, 1);
+    assert.deepEqual(second.filter(id => first.slice(1).includes(id)), [], 'the cards just learned are not due');
+    // Known this time, it goes to the next day.
+    while ((await kept('lexicon-chartae-round')).current !== first[0]) { await page.locator('#g-show').click(); await page.locator('#g-got').click(); }
+    assert.equal(await page.locator('#g-status').textContent(), 'lapsed');
+    await page.locator('#g-show').click();
+    assert.equal(await page.locator('#g-status').isVisible(), false);
+    await page.locator('#g-got').click();
+    const relearnt = (await kept('lexicon-chartae')).cards[first[0]];
+    assert.deepEqual([relearnt.b, relearnt.due], [2, sofia(17, '04:00')]);
+  } finally { page = shared; await context.close(); }
+});
+
+test('the picture cards: Latin unless English is chosen, a deck by kind, every card in a list, and a phone’s screen', async () => {
+  const data = await page.evaluate(async address => {
+    const text = await (await fetch(address)).text();
+    return JSON.parse(text.slice(text.indexOf('{'), text.lastIndexOf('}') + 1));
+  }, pageUrl('assets/chartae-data.js'));
+  const shownKinds = data.groups.filter(group => data.cards.some(card => card.group === group.id));
+  await openChartae(true, null);
+  assert.equal(await page.locator('h1').textContent(), 'Chartae pictae');
+  assert.equal(await page.evaluate(() => document.documentElement.lang), 'la');
+  assert.equal(await page.locator('#p-start').textContent(), 'Incipe');
+  assert.equal(await page.locator('#g-again span').textContent(), 'Iterum');
+  assert.equal(await page.locator('#g-got span').textContent(), 'Teneō');
+  assert.equal(await page.locator('header.site-top').getAttribute('lang'), 'en');
+  // The kinds: all of them unless some are chosen, and the choice is kept.
+  const kinds = page.locator('#c-groups button');
+  assert.equal(await kinds.count(), shownKinds.length + 1);
+  assert.equal(await kinds.first().getAttribute('aria-pressed'), 'true');
+  const total = Number(await kinds.first().locator('.count').textContent());
+  const counts = await kinds.locator('.count').evaluateAll(nodes => nodes.map(n => Number(n.textContent)));
+  assert.equal(counts.slice(1).reduce((a, b) => a + b, 0), total);
+  await page.locator('#c-groups button[data-group="longinqua"]').click();
+  assert.match(await page.locator('#p-count').textContent(), /^4 chartae · /);
+  await startRound();
+  assert.equal(await page.locator('#g-pos').textContent(), '1 / 4');
+  assert.equal(await page.locator('#g-deck').textContent(), 'Longinqua');
+  await page.locator('#g-close').click();
+  await page.reload();
+  await page.locator('#chartae:not([hidden])').waitFor();
+  assert.equal(await page.locator('#c-groups button[data-group="longinqua"]').getAttribute('aria-pressed'), 'true');
+  assert.equal(await page.locator('#p-start').textContent(), 'Perge');
+  // English, by the practice's own switch: the kinds' names change, the Latin of a card does not.
+  await page.locator('#p-lang button[data-lang="en"]').click();
+  assert.equal(await page.locator('h1').textContent(), 'Picture cards');
+  assert.equal(await page.locator('#c-groups button[data-group="longinqua"] span').first().textContent(), 'Far away');
+  assert.equal(await page.evaluate(() => localStorage.getItem('lexicon-practice-lang')), 'en');
+  await page.locator('#c-groups button[data-group=""]').click();
+  assert.deepEqual((await deckCount()).slice(0, 1), [total]);
+  // Every card, to look through: closed, it fetches no picture; open, each kind has its cards, with the way to the entry.
+  // (Each tile also has its preview, from the card data: a data: address, which fetches nothing.)
+  assert.equal(await page.locator('#c-gallery img.c-full').count(), total);
+  assert.equal(await page.locator('#c-gallery img.c-full:not([loading="lazy"])').count(), 0);
+  assert.equal(await page.locator('#c-gallery img.c-preview').evaluateAll(nodes => nodes.filter(n => n.getAttribute('src').startsWith('data:image/jpeg;base64,')).length), total);
+  await page.locator('#c-all > summary').click();
+  assert.equal(await page.locator('#c-gallery .c-group').count(), shownKinds.length);
+  assert.equal(await page.locator('#c-gallery h2.c-subject').count(), new Set(shownKinds.map(group => group.subject)).size);
+  assert.equal(await page.locator('#c-gallery h3.c-group').count(), shownKinds.length);
+  assert.equal(await page.locator('#c-gallery .c-tile b[lang="la"]').count(), total);
+  // A tile opens its card to be looked at: the back at once, no marks, nothing recorded, and the cards beside it.
+  const before = await page.evaluate(() => [localStorage.getItem('lexicon-chartae'), localStorage.getItem('lexicon-chartae-round')]);
+  await page.locator('#c-gallery button[data-card="taurus"]').click();
+  await page.locator('#p-game[open]').waitFor();
+  assert.equal(await page.locator('#g-la b').textContent(), 'taurus');
+  assert.equal(await page.locator('#g-ex-la').isVisible(), true);
+  assert.equal(await page.locator('#g-food').isVisible(), true);
+  assert.equal(await page.locator('#g-entry').getAttribute('href'), 'c/bull.html');
+  assert.deepEqual([await page.locator('#g-marks').isVisible(), await page.locator('#g-front').isVisible(), await page.locator('#g-ask').isVisible()], [false, false, false]);
+  assert.equal(await page.locator('#g-list').textContent(), 'All the cards');
+  assert.match(await page.locator('#g-pos').textContent(), new RegExp(`^\\d+ / ${total}$`));
+  assert.match(page.url(), /chartae\.html#taurus$/);
+  for (const key of ['1', '2', 'z']) await page.keyboard.press(key);   // the round's marks and its step back do nothing here
+  assert.equal(await page.locator('#g-la b').textContent(), 'taurus');
+  await page.locator('#g-forth').click();
+  assert.equal(await page.locator('#g-la b').textContent(), 'ovis');
+  await page.keyboard.press('ArrowLeft');
+  await page.locator('#g-prev').click();
+  assert.equal(await page.locator('#g-la b').textContent(), 'vacca');
+  // The way back from the entry leads to the same card.
+  await page.locator('#g-entry').click();
+  await page.waitForURL(/c\/cow\.html$/);
+  await page.goBack();
+  await page.locator('#p-game[open]').waitFor();
+  assert.equal(await page.locator('#g-la b').textContent(), 'vacca');
+  await page.locator('#g-close').click();
+  assert.equal(await gameOpen(), false);
+  assert.doesNotMatch(page.url(), /#/);
+  assert.equal(await page.locator('#c-all').evaluate(node => node.open), true);
+  assert.deepEqual(await page.evaluate(() => [localStorage.getItem('lexicon-chartae'), localStorage.getItem('lexicon-chartae-round')]), before);
+  // A round begun afterwards is a round: the front first, and the marks.
+  await startRound();
+  assert.equal(await page.locator('#g-show').isVisible(), true);
+  assert.equal(await page.locator('#g-look').isVisible(), false);
+  await page.locator('#g-close').click();
+  // The display options reach the cards: without macrons, the Latin has none and the English is untouched.
+  await page.evaluate(() => localStorage.setItem('lexicon-macrons', 'off'));
+  await openChartae(false);
+  await page.locator('#c-all > summary').click();
+  assert.equal(await page.locator('#c-gallery .c-tile b').evaluateAll(nodes => nodes.filter(n => /[āēīōūȳ]/.test(n.textContent)).length), 0);
+  await startRound();
+  await page.locator('#g-show').click();
+  assert.doesNotMatch(await page.locator('#g-la').textContent() + await page.locator('#g-ex-la').textContent() + await page.locator('#g-food').textContent() + await page.locator('#g-bears').textContent(), /[āēīōūȳĀĒĪŌŪ]/);
+  await page.locator('#g-close').click();
+  await page.evaluate(() => localStorage.removeItem('lexicon-macrons'));
+  // On a phone: nothing sideways, the layer is the screen, the buttons are for a thumb.
+  const sizes = selector => page.evaluate(sel => [...document.querySelectorAll(sel)]
+    .filter(el => el.getClientRects().length && getComputedStyle(el).visibility !== 'hidden')
+    .map(el => [el.textContent.trim().slice(0, 24) || el.id, Math.round(el.getBoundingClientRect().height)]), selector);
+  for (const [width, height] of [[390, 760], [320, 568]]) {
+    await page.setViewportSize({ width, height });
+    for (const language of ['la', 'en']) {
+      await openChartae(true, language);
+      await page.locator('#c-all > summary').click();
+      assert.equal(await overflows(), false, `the lobby overflows at ${width}px (${language})`);
+      assert.deepEqual((await sizes('.chartae button, .chartae summary, .chartae a')).filter(([, h]) => h < 44), [], `the lobby at ${width}px (${language})`);
+      assert.ok((await page.locator('#p-start').boundingBox()).height >= 52);
+      await startRound();
+      const check = async what => {
+        assert.equal(await overflows(), false, `${what} overflows at ${width}px (${language})`);
+        const box = await page.locator('#p-game').boundingBox();
+        assert.deepEqual([box.x, box.y, box.width, box.height], [0, 0, width, height], `${what}: the layer is the whole screen`);
+        assert.deepEqual((await sizes('#p-game button, #p-game a')).filter(([, h]) => h < 44), [], `${what} at ${width}px (${language})`);
+        assert.deepEqual((await sizes('#p-game .pbtn')).filter(([, h]) => h < 52), [], `${what}: its buttons are 52px or more`);
+        const actions = await page.locator('.pgame-actions').boundingBox(), stage = await page.locator('#g-stage').boundingBox();
+        assert.ok(actions.y + actions.height <= height + 1 && stage.y + stage.height <= actions.y + 1, what);
+        assert.ok((await page.locator('#g-card').boundingBox()).width <= width - 24);
+      };
+      await check('the front of a card');
+      // The picture runs from edge to edge of its card.
+      const picture = await page.locator('#g-picture').boundingBox(), card = await page.locator('#g-card').boundingBox();
+      assert.ok(Math.abs(picture.width - card.width) <= 3 && Math.abs(picture.y - card.y) <= 2);
+      for (let n = 0; n < 12; n++) {
+        await page.locator('#g-show').click();
+        if (n < 3) await check('the back of a card');
+        await page.locator(n % 2 ? '#g-again' : '#g-got').click();
+      }
+      await check('the end of a round');
+      await page.locator('#g-exit').click();
+      await page.locator('#c-gallery button[data-card="lutramarina"]').click();
+      await check('a card opened from the list');
+      await page.locator('#g-close').click();
+    }
+  }
+  await page.evaluate(keys => keys.forEach(key => localStorage.removeItem(key)), CHARTAE_KEYS);
+});
+
+test('the picture cards: a line of subjects narrows the kinds and the deck, the first version’s deck is still read, and a plant’s card says what it bears', async () => {
+  // One exercise for every subject (Jack, 20 November 2026): the reader chooses the subjects and the kinds.
+  const data = await page.evaluate(async address => {
+    const text = await (await fetch(address)).text();
+    return JSON.parse(text.slice(text.indexOf('{'), text.lastIndexOf('}') + 1));
+  }, pageUrl('assets/chartae-data.js'));
+  const subjectOf = Object.fromEntries(data.groups.map(group => [group.id, group.subject]));
+  const shownKinds = data.groups.filter(group => data.cards.some(card => card.group === group.id));
+  const of = subject => data.cards.filter(card => subjectOf[card.group] === subject);
+  const inKind = kind => data.cards.filter(card => card.group === kind).length;
+  const pressed = selector => page.locator(`${selector} button[aria-pressed="true"]`).evaluateAll(nodes => nodes.map(n => n.dataset.subject ?? n.dataset.group));
+  const offered = () => page.locator('#c-groups button').evaluateAll(nodes => nodes.map(n => n.dataset.group));
+  await openChartae(true, null);
+  assert.equal(await page.locator('#c-subjects-h').textContent(), 'Rēs');
+  // Seven subjects since clothes and craftsmen's tools came in (21–22 November 2026, after household things and food and drink on 21 November; the body on 20 November), each with its count.
+  assert.deepEqual(await page.locator('#c-subjects button > span:first-child').allTextContents(), ['Omnia', 'Animālia', 'Plantae', 'Corpus', 'Cibī', 'Rēs domesticae', 'Vestīmenta', 'Īnstrūmenta fabrīlia']);
+  assert.deepEqual(await page.locator('#c-subjects button > span:first-child').evaluateAll(nodes => nodes.map(n => n.lang)), ['', 'la', 'la', 'la', 'la', 'la', 'la', 'la']);
+  await page.locator('#p-lang button[data-lang="en"]').click();
+  assert.equal(await page.locator('#c-subjects-h').textContent(), 'Subjects');
+  assert.deepEqual(await page.locator('#c-subjects button > span:first-child').allTextContents(), ['All', 'Animals', 'Plants', 'The body', 'Food and drink', 'Household things', 'Clothes', 'Craftsmen\'s tools']);
+  assert.deepEqual(await page.locator('#c-subjects .count').allTextContents(), [data.cards.length, of('animalia').length, of('plantae').length, of('corpus').length, of('cibi').length, of('domestica').length, of('vestimenta').length, of('fabrilia').length].map(String));
+  assert.ok(['corpus', 'cibi', 'domestica', 'vestimenta', 'fabrilia'].every(subject => of(subject).length > 0));
+  assert.deepEqual(await pressed('#c-subjects'), ['']);
+  // A kind with no cards yet has no button, and the subjects line sits above the kinds.
+  assert.deepEqual(await offered(), ['', ...shownKinds.map(group => group.id)]);
+  assert.ok((await page.locator('#c-subjects').boundingBox()).y < (await page.locator('#c-groups').boundingBox()).y);
+  // Plants: the kinds offered are the plants', and the deck is the plants.
+  await page.locator('#c-subjects button[data-subject="plantae"]').click();
+  assert.deepEqual(await pressed('#c-subjects'), ['plantae']);
+  assert.deepEqual(await offered(), ['', ...shownKinds.filter(group => group.subject === 'plantae').map(group => group.id)]);
+  assert.equal((await deckCount())[0], of('plantae').length);
+  // A kind narrows it further; the deck's name in the round is the kind's.
+  await page.locator('#c-groups button[data-group="arbores"]').click();
+  assert.equal((await deckCount())[0], inKind('arbores'));
+  assert.deepEqual(await kept('lexicon-chartae-deck'), { subjects: ['plantae'], groups: ['arbores'] });
+  await startRound();
+  assert.equal(await page.locator('#g-deck').textContent(), 'Trees');
+  await page.locator('#g-close').click();
+  // Every subject chosen is none chosen; a kind of a subject still offered stays chosen.
+  await page.locator('#c-subjects button[data-subject="animalia"]').click();
+  assert.deepEqual(await pressed('#c-subjects'), ['animalia', 'plantae']);
+  assert.deepEqual(await pressed('#c-groups'), ['arbores']);
+  await page.locator('#c-subjects button[data-subject="corpus"]').click();
+  assert.deepEqual(await pressed('#c-subjects'), ['animalia', 'plantae', 'corpus']);
+  assert.deepEqual(await pressed('#c-groups'), ['arbores']);
+  await page.locator('#c-subjects button[data-subject="cibi"]').click();
+  assert.deepEqual(await pressed('#c-subjects'), ['animalia', 'plantae', 'corpus', 'cibi']);
+  assert.deepEqual(await pressed('#c-groups'), ['arbores']);
+  await page.locator('#c-subjects button[data-subject="domestica"]').click();
+  assert.deepEqual(await pressed('#c-subjects'), ['animalia', 'plantae', 'corpus', 'cibi', 'domestica']);
+  assert.deepEqual(await pressed('#c-groups'), ['arbores']);
+  await page.locator('#c-subjects button[data-subject="vestimenta"]').click();
+  assert.deepEqual(await pressed('#c-subjects'), ['animalia', 'plantae', 'corpus', 'cibi', 'domestica', 'vestimenta']);
+  assert.deepEqual(await pressed('#c-groups'), ['arbores']);
+  await page.locator('#c-subjects button[data-subject="fabrilia"]').click();
+  assert.deepEqual(await pressed('#c-subjects'), ['']);
+  assert.deepEqual(await pressed('#c-groups'), ['arbores']);
+  assert.equal((await deckCount())[0], inKind('arbores'));
+  // A subject un-chosen takes its chosen kinds with it: the oak goes when only the animals are chosen.
+  await page.locator('#c-subjects button[data-subject="animalia"]').click();
+  assert.deepEqual(await pressed('#c-subjects'), ['animalia']);
+  assert.deepEqual(await pressed('#c-groups'), ['']);
+  assert.equal((await deckCount())[0], of('animalia').length);
+  await page.locator('#c-subjects button[data-subject="plantae"]').click();
+  await page.locator('#c-subjects button[data-subject="corpus"]').click();
+  await page.locator('#c-subjects button[data-subject="cibi"]').click();
+  await page.locator('#c-subjects button[data-subject="domestica"]').click();
+  await page.locator('#c-subjects button[data-subject="vestimenta"]').click();
+  await page.locator('#c-subjects button[data-subject="fabrilia"]').click();   // all seven: none
+  assert.deepEqual(await pressed('#c-subjects'), ['']);
+  await page.locator('#c-subjects button[data-subject="plantae"]').click();
+  await page.locator('#c-groups button[data-group="partes"]').click();
+  await page.locator('#c-subjects button[data-subject="plantae"]').click();
+  assert.deepEqual([await pressed('#c-subjects'), await pressed('#c-groups')], [[''], ['']]);
+  assert.equal((await deckCount())[0], data.cards.length);
+  // The first version kept a plain list of kinds under the same key: it is read as the kinds, and an unknown id is dropped.
+  await keep('lexicon-chartae-deck', ['longinqua', 'nūlla']);
+  await openChartae(false);
+  assert.deepEqual([await pressed('#c-subjects'), await pressed('#c-groups')], [[''], ['longinqua']]);
+  assert.equal((await deckCount())[0], inKind('longinqua'));
+  await keep('lexicon-chartae-deck', { subjects: ['plantae', 'nūllae'], groups: ['partes', 'villa', 'nūlla'] });
+  await openChartae(false);
+  assert.deepEqual([await pressed('#c-subjects'), await pressed('#c-groups')], [['plantae'], ['partes']]);
+  // A plant's card: "Quid fert?" and what it bears, in Latin, and the card keeps its height when it turns;
+  // a card with neither food nor bears has no such line, and keeps its height too.
+  assert.ok(data.cards.some(card => card.group === 'arbores' && card.bears) && data.cards.some(card => card.group === 'partes' && !card.bears));
+  for (const kind of ['arbores', 'partes', 'villa']) {
+    await keep('lexicon-chartae-deck', { subjects: [], groups: [kind] });
+    await keep('lexicon-chartae-round', null);
+    await openChartae(false);
+    await startRound();
+    const id = (await kept('lexicon-chartae-round')).current, card = data.cards.find(item => item.id === id);
+    await pictureShown();
+    const before = await page.locator('#g-card').boundingBox();
+    await page.locator('#g-show').click();
+    assert.deepEqual(await page.locator('#g-card').boundingBox(), before, `${id}: the card keeps its height`);
+    assert.equal(await page.locator('#g-bears').isVisible(), !!card.bears, id);
+    assert.equal(await page.locator('#g-food').isVisible(), !!card.food, id);
+    if (card.bears) {
+      assert.equal(await page.locator('#g-bears').textContent(), `Quid fert? ${card.bears}`);
+      assert.equal(await page.locator('#g-bears').getAttribute('lang'), 'la');
+      assert.equal(await page.locator('#g-bears .c-ask').textContent(), 'Quid fert?');
+    }
+    await page.locator('#g-close').click();
+  }
+  await page.evaluate(keys => keys.forEach(key => localStorage.removeItem(key)), CHARTAE_KEYS);
+});
+
+test('the picture cards: the scientific name follows the English one, untouched by the display options, and the card keeps its height', async () => {
+  // Jack, 20 November 2026: the scientific names of every animal and plant beside the English ones,
+  // "Hōc modō discēmus discrīmina". The name is in italic after a middle dot, in a language of its
+  // own (la-x-taxon) that the display options do not rewrite.
+  const data = await page.evaluate(async address => {
+    const text = await (await fetch(address)).text();
+    return JSON.parse(text.slice(text.indexOf('{'), text.lastIndexOf('}') + 1));
+  }, pageUrl('assets/chartae-data.js'));
+  const card = id => data.cards.find(item => item.id === id);
+  assert.equal(card('quercus').scientific, 'Quercus');
+  assert.equal(card('vulpes').scientific, 'Vulpes vulpes');
+  assert.equal(card('glans').scientific, undefined);
+  const backOf = async id => {
+    await page.locator(`#c-gallery button[data-card="${id}"]`).click();
+    await page.locator('#p-game[open]').waitFor();
+    return page.locator('#g-en');
+  };
+  // In the Latin interface: "Anglicē fox · Vulpes vulpes", the name italic, after the English name.
+  await openChartae(true, 'la');
+  await page.locator('#c-all > summary').click();
+  let line = await backOf('vulpes');
+  assert.equal(await line.textContent(), 'Anglicē fox · Vulpes vulpes');
+  const taxon = line.locator('i.c-sci');
+  assert.equal(await taxon.getAttribute('lang'), 'la-x-taxon');
+  assert.equal(await taxon.getAttribute('translate'), 'no');
+  assert.equal(await taxon.evaluate(node => getComputedStyle(node).fontStyle), 'italic');
+  assert.equal(await taxon.evaluate(node => node.previousElementSibling.getAttribute('lang') + '|' + node.previousElementSibling.textContent), 'en|fox');
+  // A card without one shows the line as before.
+  await page.locator('#g-close').click();
+  line = await backOf('glans');
+  assert.equal(await line.textContent(), 'Anglicē acorn');
+  assert.equal(await line.locator('.c-sci').count(), 0);
+  await page.locator('#g-close').click();
+  // In English, with no label: "fox · Vulpes vulpes". The tiles of "All the cards" keep the Latin and the English only.
+  await page.locator('#p-lang button[data-lang="en"]').click();
+  line = await backOf('vulpes');
+  assert.equal(await line.textContent(), 'fox · Vulpes vulpes');
+  await page.locator('#g-close').click();
+  assert.equal(await page.locator('#c-gallery .c-sci').count(), 0);
+  assert.equal(await page.locator('#c-gallery button[data-card="vulpes"]').textContent(), 'vulpēs fox');
+  // The display options (no macrons, i for j, u for v) change the Latin and leave the scientific name
+  // alone: Vulpes vulpes stays, and so does a name with a J (the oak given Juniperus communis for the test).
+  await page.route('**/assets/chartae-data.js', async route => {
+    const response = await route.fetch();
+    await route.fulfill({ response, body: (await response.text()).replace('"scientific":"Quercus"', '"scientific":"Juniperus communis"') });
+  });
+  for (const [key, value] of [['lexicon-macrons', 'off'], ['lexicon-j', 'i'], ['lexicon-v', 'u']]) await page.evaluate(([k, v]) => localStorage.setItem(k, v), [key, value]);
+  await openChartae(false);
+  await page.locator('#c-all > summary').click();
+  line = await backOf('vulpes');
+  assert.equal(await line.textContent(), 'fox · Vulpes vulpes');
+  assert.equal(await page.locator('#g-la').textContent(), 'uulpes, uulpis f.');
+  await page.locator('#g-close').click();
+  line = await backOf('quercus');
+  assert.equal(await line.locator('.c-sci').textContent(), 'Juniperus communis');
+  await page.locator('#g-close').click();
+  // Switched on the page itself, they still leave it alone.
+  await page.unroute('**/assets/chartae-data.js');
+  for (const key of ['lexicon-macrons', 'lexicon-j', 'lexicon-v']) await page.evaluate(k => localStorage.removeItem(k), key);
+  await openChartae(false);
+  await page.locator('#c-all > summary').click();
+  line = await backOf('vulpes');
+  await page.evaluate(() => {
+    for (const [option, value] of [['j', 'i'], ['v', 'u'], ['macrons', 'off']]) document.querySelector(`[data-display="${option}"][data-value="${value}"]`).click();
+  });
+  assert.equal(await page.locator('#g-la').textContent(), 'uulpes, uulpis f.');
+  assert.equal(await line.locator('.c-sci').textContent(), 'Vulpes vulpes');
+  await page.evaluate(() => {
+    for (const [option, value] of [['j', 'j'], ['v', 'v'], ['macrons', 'on']]) document.querySelector(`[data-display="${option}"][data-value="${value}"]`).click();
+  });
+  await page.locator('#g-close').click();
+  // On a phone the card keeps its height when it is turned, a long name wrapping on its back.
+  await page.route('**/assets/chartae-data.js', async route => {
+    const response = await route.fetch();
+    await route.fulfill({ response, body: (await response.text()).replace(/"scientific":"[^"]*"/g, '"scientific":"Quercus pubescens subsp. palensis"') });   // every card: the round's first card is any tree
+  });
+  for (const width of [390, 320]) {
+    await page.setViewportSize({ width, height: 760 });
+    for (const kind of ['arbores', 'partes']) {
+      await keep('lexicon-chartae-deck', { subjects: [], groups: [kind] });
+      await keep('lexicon-chartae-round', null);
+      await openChartae(false);
+      await startRound();
+      await pictureShown();
+      const before = await page.locator('#g-card').boundingBox();
+      await page.locator('#g-show').click();
+      assert.deepEqual(await page.locator('#g-card').boundingBox(), before, `${kind} at ${width}px: the card keeps its height`);
+      assert.equal(await overflows(), false);
+      if (kind === 'arbores') {
+        const lineHeight = await page.locator('#g-en').evaluate(node => parseFloat(getComputedStyle(node).lineHeight) || 20);
+        if (width === 320) assert.ok((await page.locator('#g-en').boundingBox()).height > lineHeight * 1.5, 'the long name wraps');
+      }
+      await page.locator('#g-close').click();
+    }
+  }
+  await page.unroute('**/assets/chartae-data.js');
+  await page.setViewportSize({ width: 1280, height: 900 });
+  await page.evaluate(keys => keys.forEach(key => localStorage.removeItem(key)), CHARTAE_KEYS);
+});
+
+test('the picture cards: a second Latin word stands under the first, with the practice’s label, and the card keeps its height', async () => {
+  // Jack, 20 November 2026: where two Latin words mean the same thing (coma and capillus), one card,
+  // with the second word on its back. The label is the vocabulary practice's for its other Latin words.
+  const data = await page.evaluate(async address => {
+    const text = await (await fetch(address)).text();
+    return JSON.parse(text.slice(text.indexOf('{'), text.lastIndexOf('}') + 1));
+  }, pageUrl('assets/chartae-data.js'));
+  const card = id => data.cards.find(item => item.id === id);
+  assert.equal(card('capillus').also, 'coma, comae f.');
+  assert.equal(card('oculus').also, undefined);
+  const backOf = async id => {
+    await page.locator(`#c-gallery button[data-card="${id}"]`).click();
+    await page.locator('#p-game[open]').waitFor();
+  };
+  await openChartae(true, 'la');
+  await page.locator('#c-all > summary').click();
+  await backOf('capillus');
+  const also = page.locator('#g-also');
+  assert.equal(await also.isVisible(), true);
+  assert.equal(await also.textContent(), 'Item: coma, comae f.');
+  assert.equal(await also.locator('span').getAttribute('lang'), 'la');
+  // Directly under the dictionary form.
+  assert.equal(await also.evaluate(node => node.previousElementSibling.id), 'g-la');
+  const [la, line] = [await page.locator('#g-la').boundingBox(), await also.boundingBox()];
+  assert.ok(line.y >= la.y + la.height - 1 && line.y < la.y + la.height + 30);
+  await page.locator('#g-close').click();
+  // A card without a second word has no such line.
+  await backOf('oculus');
+  assert.equal(await also.isVisible(), false);
+  assert.equal(await also.textContent(), '');
+  await page.locator('#g-close').click();
+  // In English the label is "Also:"; the word stays Latin.
+  await page.locator('#p-lang button[data-lang="en"]').click();
+  await backOf('capillus');
+  assert.equal(await also.textContent(), 'Also: coma, comae f.');
+  await page.locator('#g-close').click();
+  // The display options reach the second word as they reach the first.
+  await page.evaluate(() => localStorage.setItem('lexicon-macrons', 'off'));
+  await openChartae(false);
+  await page.locator('#c-all > summary').click();
+  await backOf('tergum');
+  assert.doesNotMatch(await also.textContent(), /[āēīōū]/);
+  assert.match(await also.textContent(), /^Also: \S/);
+  await page.locator('#g-close').click();
+  await page.evaluate(() => localStorage.removeItem('lexicon-macrons'));
+  // On a phone the card keeps its height when it is turned, with the line (every card given a long
+  // second word, since a round may begin with any card of its kind) and without it.
+  const everyCardAlso = async route => {
+    const response = await route.fetch();
+    await route.fulfill({ response, body: (await response.text()).replace(/"latin":"([^"]*)","english"/g, '"latin":"$1","also":"caesariēs, caesariēī f.","english"') });
+  };
+  // Without the line first: a script fulfilled by a route may be kept by the browser's cache.
+  for (const [kind, routed] of [['intus', false], ['caput', true]]) {
+    if (routed) await page.route('**/assets/chartae-data.js', everyCardAlso);
+    for (const width of [390, 320]) {
+      await page.setViewportSize({ width, height: 760 });
+      await keep('lexicon-chartae-deck', { subjects: [], groups: [kind] });
+      await keep('lexicon-chartae-round', null);
+      await openChartae(false);
+      await startRound();
+      await pictureShown();
+      const id = (await kept('lexicon-chartae-round')).current;
+      const before = await page.locator('#g-card').boundingBox();
+      await page.locator('#g-show').click();
+      assert.deepEqual(await page.locator('#g-card').boundingBox(), before, `${id} at ${width}px: the card keeps its height`);
+      assert.equal(await also.isVisible(), routed || !!card(id).also, id);
+      assert.equal(await overflows(), false);
+      await page.locator('#g-close').click();
+      // The dialog's own close event comes a moment later and keeps the round again: wait for it,
+      // or it rewrites the round after the next line clears it, and the next width (same deck) takes it up.
+      await settle();
+    }
+  }
+  await page.unroute('**/assets/chartae-data.js', everyCardAlso);
+  await page.setViewportSize({ width: 1280, height: 900 });
+  await page.evaluate(keys => keys.forEach(key => localStorage.removeItem(key)), CHARTAE_KEYS);
+});
+
+// Ubi est Theodōrus? ------------------------------------------------------------------------------
+
+// The game of the adverbs of place (20 November 2026): gaps in short dialogues, judged as the
+// prototype judged them, in the clock's colours, asking nothing of other sites.
+test('Ubi est Theodōrus? judges the gaps, counts only the reader’s own, follows the language, and fits a phone', async () => {
+  const context = await browser.newContext({ viewport: { width: 375, height: 760 }, serviceWorkers: 'block' });
+  const game = await context.newPage();
+  const requested = [];
+  game.on('request', request => requested.push(request.url()));
+  await game.goto(pageUrl('index.html'));
+  await game.evaluate(() => { for (const key of ['uet-hints', 'uet-strict', 'uet-done', 'lexicon-practice-lang']) localStorage.removeItem(key); });
+  await game.goto(pageUrl('theodorus.html'));
+  await game.locator('#check').waitFor();
+  await game.waitForLoadState('networkidle');
+  assert.deepEqual(requested.filter(address => !address.startsWith(base)), []);
+  assert.ok(requested.some(address => address.endsWith('assets/fonts/lexicon-serif-400.woff2')));
+  assert.equal(await game.title(), 'Ubi est Theodōrus? · Lexicon Latīnitātis Cotīdiānae');
+  assert.equal(await game.locator('html').getAttribute('lang'), 'la');
+  assert.equal(await game.locator('#question').textContent(), 'Ubi est Theodōrus?');
+  const style = (selector, property) => game.locator(selector).first().evaluate((node, name) => getComputedStyle(node)[name], property);
+  const lapis = 'rgb(36, 69, 122)', red = 'rgb(176, 23, 31)';
+  const gap = n => game.locator(`#gap-ubi-${n}`);
+
+  // A form typed without macrons counts as right and is given its macrons; Enter goes on to the next gap.
+  await gap(0).fill('alicubi');
+  await gap(0).press('Enter');
+  assert.equal(await gap(0).inputValue(), 'Alicubi');
+  assert.match(await gap(0).getAttribute('class'), /\bright\b/);
+  assert.equal(await style('#gap-ubi-0', 'color'), lapis);
+  assert.equal(await style('#gap-ubi-0', 'fontWeight'), '700');
+  assert.equal(await game.evaluate(() => document.activeElement.id), 'gap-ubi-1');
+  await gap(2).fill('hic');
+  await gap(2).press('Enter');
+  assert.equal(await gap(2).inputValue(), 'hīc');
+  assert.equal(await game.locator('#score').textContent(), 'Rēctē: 2 ex 11');
+
+  // A wrong form is marked wrong, in red, with a cross and a dashed rule; it stays open.
+  await gap(1).fill('ubique');
+  await gap(1).press('Enter');
+  assert.match(await gap(1).getAttribute('class'), /\bwrong\b/);
+  assert.equal(await gap(1).getAttribute('readonly'), null);
+  assert.equal(await game.locator('#message').textContent(), 'Nōndum. Iterum temptā.');
+  assert.equal(await game.locator('#message.bad svg').count(), 1, 'a cross, not the colour alone');
+  assert.equal(await style('#message .v', 'color'), red);
+  assert.equal(await style('#gap-ubi-1', 'borderBottomStyle'), 'dashed');
+
+  // With "require macrons", the bare form is not taken until the macrons are typed (here with the keys).
+  await game.locator('#opt-strict').check();
+  assert.equal(await game.evaluate(() => localStorage.getItem('uet-strict')), 'true');
+  await gap(3).fill('istic');
+  await gap(3).press('Enter');
+  assert.match(await gap(3).getAttribute('class'), /\bapex\b/);
+  assert.equal(await gap(3).inputValue(), 'istic');
+  assert.equal(await game.locator('#message').textContent(), 'Fōrma rēcta est, apicēs dēsunt.');
+  assert.equal(await game.locator('#message.apex svg').count(), 1);
+  assert.equal(await style('#gap-ubi-3', 'borderBottomStyle'), 'double');
+  await gap(3).fill('ist');
+  await gap(3).focus();
+  await game.locator('#keys button[data-ch="ī"]').click();
+  await gap(3).press('End');
+  await gap(3).type('c');
+  assert.equal(await gap(3).inputValue(), 'istīc');
+  await gap(3).press('Enter');
+  assert.match(await gap(3).getAttribute('class'), /\bright\b/);
+  // cunque is read as cumque, and an alternative form is taken.
+  await gap(8).fill('ubicunque');
+  await gap(8).press('Enter');
+  assert.equal(await gap(8).inputValue(), 'Ubicumque');
+  assert.equal(await game.locator('#score').textContent(), 'Rēctē: 4 ex 11');
+
+  // Show judges what was typed and not yet checked: a right form stays the reader's and is counted; a
+  // wrong one gives way to the form, and is kept under it, struck through. The rest is filled, set
+  // apart from the reader's own, and the score counts only the reader's.
+  await gap(6).fill('usquam');
+  await gap(7).fill('ibi');
+  await game.locator('#reveal').click();
+  assert.match(await gap(6).getAttribute('class'), /\bright\b/);
+  assert.equal(await gap(7).inputValue(), 'alibī');
+  assert.match(await gap(7).getAttribute('class'), /\bshown\b/);
+  const struck = game.locator('#gap-ubi-7 + .under .was');
+  assert.equal(await struck.textContent(), 'ibi');
+  assert.equal(await struck.isVisible(), true);
+  assert.match(await struck.evaluate(node => getComputedStyle(node).textDecorationLine), /line-through/);
+  assert.equal(await game.locator('#gap-ubi-1 + .under .was').textContent(), 'ubique');
+  assert.equal(await game.locator('#gap-ubi-4 + .under .was').isVisible(), false, 'nothing was typed there');
+  assert.equal(await gap(1).inputValue(), 'nusquam');
+  assert.match(await gap(1).getAttribute('class'), /\bshown\b/);
+  assert.equal(await style('#gap-ubi-1', 'fontStyle'), 'italic');
+  assert.equal(await style('#gap-ubi-1', 'borderBottomStyle'), 'dotted');
+  assert.equal(await game.locator('.gap input:not([readonly])').count(), 0);
+  assert.equal(await game.locator('#score').textContent(), 'Rēctē: 5 ex 11');
+  assert.equal(await game.locator('#message').textContent(), 'Cōnfectum est; 5 ex 11 ipse explēvistī.');
+  // The struck-through answer is kept in the round, through a change of tab.
+  await game.locator('.tab[data-id="quo"]').click();
+  await game.locator('.tab[data-id="ubi"]').click();
+  assert.equal(await game.locator('#gap-ubi-7 + .under .was').textContent(), 'ibi');
+  assert.equal(await game.locator('#score').textContent(), 'Rēctē: 5 ex 11');
+  assert.equal(await game.locator('#next').isVisible(), true);
+  assert.equal(await game.locator('#check').isVisible(), false);
+  assert.equal(await game.evaluate(() => localStorage.getItem('uet-done')), null, 'a round with shown gaps is not perfect');
+
+  // The language follows the choice, kept as the practice page's; the Latin keeps its own lang.
+  await game.locator('#lang button[data-lang="en"]').click();
+  assert.equal(await game.locator('html').getAttribute('lang'), 'en');
+  assert.equal(await game.evaluate(() => localStorage.getItem('lexicon-practice-lang')), 'en');
+  assert.equal(await game.locator('#score').textContent(), 'Right: 5 of 11');
+  assert.equal(await game.locator('#message').textContent(), 'Done; you filled 5 of 11 yourself.');
+  assert.equal(await game.locator('#reveal').textContent(), 'Show');
+  assert.equal(await game.locator('#prose').getAttribute('lang'), 'la');
+  assert.equal(await game.locator('#question').getAttribute('lang'), 'la');
+
+  // The next question; a round filled by the reader alone is marked done on its tab, and the tabs follow #quo.
+  await game.locator('#next').click();
+  assert.match(game.url(), /#quo$/);
+  assert.equal(await game.locator('#question').textContent(), 'Quō it Theodōrus?');
+  // Start over clears the round, the struck-through answers with it.
+  await game.locator('#gap-quo-0').fill('quo');
+  await game.locator('#reveal').click();
+  assert.equal(await game.locator('#gap-quo-0 + .under .was').textContent(), 'quo');
+  await game.locator('#reset').click();
+  assert.equal(await game.locator('#score').textContent(), 'Right: 0 of 9');
+  assert.equal(await game.locator('#gap-quo-0').inputValue(), '');
+  assert.equal(await game.locator('#gap-quo-0 + .under .was').isVisible(), false);
+  await game.goto(pageUrl('theodorus.html#iter'));
+  assert.equal(await game.locator('.tab[aria-pressed="true"]').textContent(), 'Iter');
+  assert.equal(await game.locator('#check').textContent(), 'Check');
+  await game.locator('#opt-strict').uncheck();
+  const iter = ['hinc', 'ibi', 'inde', 'eo', 'ubique', 'usquam', 'eadem', 'huc'];
+  for (const [n, form] of iter.entries()) {
+    await game.locator(`#gap-iter-${n}`).fill(form);
+    await game.locator(`#gap-iter-${n}`).press('Enter');
+  }
+  assert.equal(await game.locator('#message').textContent(), 'Well done! You filled them all yourself.');
+  assert.equal(await game.locator('#message.good svg').count(), 1);
+  assert.equal(await style('#message .v', 'color'), lapis);
+  assert.deepEqual(JSON.parse(await game.evaluate(() => localStorage.getItem('uet-done'))), { iter: true });
+  assert.equal(await game.locator('.tab[data-id="iter"] .done svg').count(), 1);
+
+  // On a phone of 375px, with the pronouns shown: nothing scrolls sideways, every gap and button is 44px
+  // or more, the text in the gaps is 16px or more, and no gap lies over another.
+  await game.goto(pageUrl('theodorus.html#unde'));
+  await game.locator('#opt-hints').check();
+  assert.equal(await game.locator('.gap .hint').first().isVisible(), true);
+  assert.equal(await game.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
+  const small = await game.evaluate(() => [...document.querySelectorAll('.gap input, .ubtn, .tab, .keys button, .opt, .seg button, .icon-btn, .links a')]
+    .filter(el => el.getClientRects().length)
+    .map(el => [el.id || el.textContent.trim().slice(0, 24), Math.round(el.getBoundingClientRect().height)])
+    .filter(([, height]) => height < 44));
+  assert.deepEqual(small, []);
+  assert.ok(parseFloat(await style('.gap input', 'fontSize')) >= 16);
+  assert.equal(await game.evaluate(() => {
+    const boxes = [...document.querySelectorAll('.gap')].map(node => node.getBoundingClientRect());
+    return boxes.some((a, i) => boxes.slice(i + 1).some(b => a.left < b.right && b.left < a.right && a.top < b.bottom && b.top < a.bottom));
+  }), false);
+  // Back to the practice.
+  await game.locator('#back').click();
+  await game.waitForURL(/practice\.html$/);
+  await game.evaluate(() => { for (const key of ['uet-hints', 'uet-strict', 'uet-done', 'lexicon-practice-lang']) localStorage.removeItem(key); });
+  await context.close();
+});
+
+// Quis pulsat? ------------------------------------------------------------------------------------
+
+// The second gap game (20 November 2026), on the engine of Ubi est Theodōrus?: the indefinite pronouns.
+test('Quis pulsat? takes i for j and gives the house spelling, takes alternatives, opens a round by its hash, and keeps its own keys', async () => {
+  const context = await browser.newContext({ viewport: { width: 375, height: 760 }, serviceWorkers: 'block' });
+  const game = await context.newPage();
+  const requested = [];
+  game.on('request', request => requested.push(request.url()));
+  await game.goto(pageUrl('index.html'));
+  await game.evaluate(() => {
+    for (const key of ['qp-hints', 'qp-strict', 'qp-done', 'lexicon-practice-lang']) localStorage.removeItem(key);
+    localStorage.setItem('uet-done', '{"ubi":true}');
+    localStorage.setItem('uet-hints', 'true');
+  });
+  // The hash opens its round.
+  await game.goto(pageUrl('quis-pulsat.html#cujus'));
+  await game.locator('#check').waitFor();
+  await game.waitForLoadState('networkidle');
+  assert.deepEqual(requested.filter(address => !address.startsWith(base)), []);
+  assert.equal(await game.title(), 'Quis pulsat? · Lexicon Latīnitātis Cotīdiānae');
+  assert.equal(await game.locator('h1').textContent(), 'Quis pulsat?');
+  assert.equal(await game.locator('.eyebrow').textContent(), 'Lūdus prōnōminum indēfīnītōrum');
+  assert.equal(await game.locator('#question').textContent(), 'Cujus est hic pilleus?');
+  assert.equal(await game.locator('.tab[aria-pressed="true"]').getAttribute('data-id'), 'cujus');
+  assert.deepEqual(await game.locator('.tab').evaluateAll(nodes => nodes.map(n => n.dataset.id)), ['quis', 'quid', 'quem', 'cujus', 'cui', 'uter']);
+  // Another game's keys are not this game's: Ubi est Theodōrus?'s pronouns were on, these are not.
+  assert.equal(await game.locator('#opt-hints').isChecked(), false);
+  assert.equal(await game.locator('.tab .done').count(), 0);
+  // i for j: alicuius is right, and is given the house spelling with j; so is cujusquam, in strict mode too.
+  const gap = n => game.locator(`#gap-cujus-${n}`);
+  await gap(0).fill('alicuius');
+  await gap(0).press('Enter');
+  assert.match(await gap(0).getAttribute('class'), /\bright\b/);
+  assert.equal(await gap(0).inputValue(), 'Alicujus');
+  await game.locator('#opt-strict').check();
+  await gap(1).fill('cuiusquam');
+  await gap(1).press('Enter');
+  assert.equal(await gap(1).inputValue(), 'cujusquam');
+  // An alternative is taken, and kept as the form typed, in the house spelling: cuiuslibet is Cujuslibet, not Cujusvīs.
+  await game.locator('#opt-strict').uncheck();
+  await gap(4).fill('cuiuslibet');
+  await gap(4).press('Enter');
+  assert.equal(await gap(4).inputValue(), 'Cujuslibet');
+  assert.equal(await game.locator('#score').textContent(), 'Rēctē: 3 ex 8');
+  // The other rounds by their hashes, and the alternatives of the round of two.
+  await game.goto(pageUrl('quis-pulsat.html#uter'));
+  assert.equal(await game.locator('#question').textContent(), 'Uter vīcit?');
+  await game.locator('#gap-uter-6').fill('uterlibet');
+  await game.locator('#gap-uter-6').press('Enter');
+  assert.equal(await game.locator('#gap-uter-6').inputValue(), 'Uterlibet');
+  await game.goto(pageUrl('quis-pulsat.html#quid'));
+  await game.locator('#gap-quid-4').fill('quidquid');
+  await game.locator('#gap-quid-4').press('Enter');
+  assert.equal(await game.locator('#gap-quid-4').inputValue(), 'Quidquid');
+  // Its storage keys are qp-…, and Ubi est Theodōrus?'s are as they were.
+  const keys = await game.evaluate(() => Object.fromEntries(Object.keys(localStorage).filter(key => /^(qp|uet)-/.test(key)).map(key => [key, localStorage.getItem(key)])));
+  assert.deepEqual(keys, { 'qp-strict': 'false', 'uet-done': '{"ubi":true}', 'uet-hints': 'true' });
+  // The foot links lead to the other practice pages, the sibling game among them.
+  assert.deepEqual(await game.locator('.links a').evaluateAll(nodes => nodes.map(n => n.getAttribute('href'))),
+    ['index.html', 'practice.html', 'hora.html', 'chartae.html', ...GAP_GAMES.map(g => g.file).filter(file => file !== 'quis-pulsat.html')]);
+  await game.locator('.links a[href="theodorus.html"]').click();
+  await game.waitForURL(/theodorus\.html$/);
+  assert.equal(await game.locator('#opt-hints').isChecked(), true);
+  assert.equal(await game.locator('.tab[data-id="ubi"] .done').count(), 1);
+  assert.deepEqual(await game.locator('.links a').evaluateAll(nodes => nodes.map(n => n.getAttribute('href'))),
+    ['index.html', 'practice.html', 'hora.html', 'chartae.html', ...GAP_GAMES.map(g => g.file).filter(file => file !== 'theodorus.html')]);
+  await game.evaluate(() => { for (const key of Object.keys(localStorage)) if (/^(qp|uet)-/.test(key)) localStorage.removeItem(key); });
+  await context.close();
+});
+
+// The table of forms in both gap games (Jack, 20 November 2026: "a table of all the forms for someone
+// who does not know them («Mōnstrā fōrmās» or something of the kind, and it opens)").
+test('the gap games show their table of forms on request, closed at first, and it fits a phone', async () => {
+  const context = await browser.newContext({ viewport: { width: 375, height: 760 }, serviceWorkers: 'block' });
+  const game = await context.newPage();
+  const second = { 'theodorus.html': ['hic', 'hīc', 'hūc', 'hinc', 'hāc'], 'quis-pulsat.html': ['aliquis', 'aliquis', 'aliquid', 'aliquem', 'alicujus', 'alicui'] };
+  assert.deepEqual(GAP_GAMES.map(g => g.file).filter(file => second[file]), ['theodorus.html', 'quis-pulsat.html']);
+  await game.goto(pageUrl('index.html'));
+  await game.evaluate(() => localStorage.removeItem('lexicon-practice-lang'));
+  for (const file of Object.keys(second)) {
+    await game.goto(pageUrl(file));
+    await game.locator('#check').waitFor();
+    const control = game.locator('#forms > summary'), table = game.locator('#forms table').first();
+    assert.equal(await table.isVisible(), false, `${file}: closed at first`);
+    assert.equal(await control.innerText(), 'Mōnstrā fōrmās');
+    assert.ok((await control.boundingBox()).height >= 44, `${file}: the control is 44px or more`);
+    await control.click();
+    assert.equal(await table.isVisible(), true, `${file}: open`);
+    assert.equal(await control.innerText(), 'Cēlā fōrmās');
+    const row = await table.locator('tbody tr').nth(1).locator('th, td').allTextContents();
+    assert.deepEqual(row, second[file], file);
+    assert.equal(await table.locator('tbody tr').first().locator('th').textContent(), 'quis?');
+    // The heads are rubrics, the serif's small capitals; the forms are Latin.
+    assert.match(await table.locator('thead th').first().evaluate(node => getComputedStyle(node).fontFamily), /^"Lexicon Serif"/);
+    assert.equal(await table.locator('thead th').first().evaluate(node => getComputedStyle(node).fontVariantCaps), 'all-small-caps');
+    assert.equal(await game.locator('#forms-body').getAttribute('lang'), 'la');
+    // Open, the page still does not scroll sideways: the table scrolls in its own box.
+    assert.equal(await game.evaluate(() => document.documentElement.scrollWidth > innerWidth), false, `${file}: open at 375px`);
+    // It closes again; open, it stays open through a change of round, and it opens closed on the next visit.
+    await control.click();
+    assert.equal(await table.isVisible(), false, `${file}: closed again`);
+    await control.click();
+    await game.locator('.tab').nth(1).click();
+    assert.equal(await table.isVisible(), true, `${file}: still open in the next round`);
+    await game.reload();
+    assert.equal(await table.isVisible(), false, `${file}: closed on a new visit`);
+    // The keyboard opens it too.
+    await control.focus();
+    await game.keyboard.press('Enter');
+    assert.equal(await table.isVisible(), true, `${file}: open by the keyboard`);
+  }
+  // Every gap game, with its forms open, fits a phone: nothing sideways, the control 44px or more, every round.
+  for (const width of [320, 375]) {
+    await game.setViewportSize({ width, height: 760 });
+    for (const { file } of GAP_GAMES) {
+      await game.goto(pageUrl(file));
+      await game.locator('#forms > summary').click();
+      for (let n = 0; n < await game.locator('.tab').count(); n++) {
+        await game.locator('.tab').nth(n).click();
+        assert.equal(await game.locator('#forms table:not([hidden])').first().isVisible(), true, `${file} round ${n}`);
+        assert.equal(await game.evaluate(() => document.documentElement.scrollWidth > innerWidth), false, `${file} round ${n} at ${width}px with the forms open`);
+      }
+      assert.ok((await game.locator('#forms > summary').boundingBox()).height >= 44, file);
+    }
+  }
+  await game.setViewportSize({ width: 375, height: 760 });
+  // In English the control is English, and the forms, captions, and heads stay Latin.
+  await game.evaluate(() => localStorage.setItem('lexicon-practice-lang', 'en'));
+  await game.goto(pageUrl('quis-pulsat.html'));
+  await game.locator('#check').waitFor();
+  assert.equal(await game.locator('#forms > summary').innerText(), 'Show the forms');
+  await game.locator('#forms > summary').click();
+  assert.equal(await game.locator('#forms > summary').innerText(), 'Hide the forms');
+  assert.deepEqual(await game.locator('#forms caption').allTextContents(), ['Dē plūribus', 'Dē duōbus']);
+  assert.equal(await game.locator('html').getAttribute('lang'), 'en');
+  assert.equal(await game.locator('#forms-body').getAttribute('lang'), 'la');
+  await game.evaluate(() => localStorage.removeItem('lexicon-practice-lang'));
+  await context.close();
+});
+
+// The three gap games of 20 November 2026 (Jack: "all three please"): what is their own.
+test('Bis bīna, Heri, hodiē, crās, and Hic an ille?: the hint switch, a numeral for a hint, a table per verb, and alternatives', async () => {
+  const context = await browser.newContext({ viewport: { width: 375, height: 760 }, serviceWorkers: 'block' });
+  const game = await context.newPage();
+  await game.goto(pageUrl('index.html'));
+  await game.evaluate(() => { for (const key of Object.keys(localStorage)) if (/^(bb|hc|hi)-|^lexicon-practice-lang$/.test(key)) localStorage.removeItem(key); });
+  // Bis bīna: the switch shows the numbers, and a gap's hint is a numeral, named as a hint for a screen reader.
+  await game.goto(pageUrl('bis-bina.html'));
+  await game.locator('#check').waitFor();
+  assert.equal(await game.locator('label[for="opt-hints"]').innerText(), 'Numerōs ostendere');
+  await game.locator('#opt-hints').check();
+  assert.equal(await game.evaluate(() => localStorage.getItem('bb-hints')), 'true');
+  const hint = game.locator('#gap-quot-0 + .under .hint');
+  assert.equal(await hint.isVisible(), true);
+  assert.match(await hint.textContent(), /^\d+$/);
+  assert.equal(await game.locator('#gap-quot-0').getAttribute('aria-label'), `lacūna 1, nota: ${await hint.textContent()}`);
+  await game.goto(pageUrl('bis-bina.html#bis-bina'));
+  assert.equal(await game.locator('.tab[aria-pressed="true"]').getAttribute('data-id'), 'bis-bina');
+  // Heri, hodiē, crās: the switch shows the tenses; the forms show only the open round's table, and follow the tab.
+  await game.goto(pageUrl('heri-hodie-cras.html#lego'));
+  await game.locator('#check').waitFor();
+  assert.equal(await game.locator('label[for="opt-hints"]').innerText(), 'Persōnās et tempora ostendere');
+  await game.locator('#forms > summary').click();
+  const shown = () => game.locator('#forms table').evaluateAll(tables => tables.filter(t => t.getClientRects().length).map(t => t.caption.textContent));
+  assert.deepEqual(await shown(), ['legō, legere, lēgī, lēctum']);
+  await game.locator('.tab[data-id="venio"]').click();
+  assert.deepEqual(await shown(), ['veniō, venīre, vēnī, ventum']);
+  assert.equal(await game.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
+  // A perfect typed without macrons in the lēgit gap is right and given them; with macrons required it is not.
+  await game.locator('.tab[data-id="lego"]').click();
+  assert.deepEqual(await shown(), ['legō, legere, lēgī, lēctum']);
+  const legit = game.locator('#gap-lego-6');
+  await legit.fill('legit');
+  await legit.press('Enter');
+  assert.equal(await legit.inputValue(), 'lēgit');
+  assert.match(await legit.getAttribute('class'), /\bright\b/);
+  await game.locator('#reset').click();
+  await game.locator('#opt-strict').check();
+  await legit.fill('legit');
+  await legit.press('Enter');
+  assert.match(await legit.getAttribute('class'), /\bapex\b/);
+  assert.equal(await legit.inputValue(), 'legit');
+  await legit.fill('lēgit');
+  await legit.press('Enter');
+  assert.match(await legit.getAttribute('class'), /\bright\b/);
+  assert.deepEqual(Object.keys(await game.evaluate(() => ({ ...localStorage }))).filter(key => /^(bb|hc|hi)-/.test(key)).sort(), ['bb-hints', 'hc-strict']);
+  // Hic an ille?: an alternative form is taken and kept as typed.
+  await game.goto(pageUrl('hic-an-ille.html#plur2'));
+  await game.locator('#check').waitFor();
+  await game.locator('#gap-plur2-7').fill('iis');
+  await game.locator('#gap-plur2-7').press('Enter');
+  assert.equal(await game.locator('#gap-plur2-7').inputValue(), 'iīs');
+  assert.match(await game.locator('#gap-plur2-7').getAttribute('class'), /\bright\b/);
+  await game.evaluate(() => { for (const key of Object.keys(localStorage)) if (/^(bb|hc|hi)-/.test(key)) localStorage.removeItem(key); });
   await context.close();
 });

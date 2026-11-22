@@ -130,7 +130,7 @@ html:not(.js) :is(.toolbar, .meta, #search-results, .empty, .settings) { display
 .home { margin:22px 0 44px; }
 .home-lead { margin:0 0 28px; max-width:40rem; color:var(--soft); font-size:1.12rem; }
 .home h2 { margin:0; padding-bottom:6px; border-bottom:1px solid var(--rule); color:var(--rubric); font:400 1.6rem/1.2 var(--serif); font-variant-caps:small-caps; letter-spacing:.04em; }
-/* The contents (.toc), and above them the two ways to practise (.plist), set the same way. */
+/* The contents (.toc), and above them the ways to practise (.plist), set the same way. */
 :is(.toc, .plist) { display:grid; grid-template-columns:minmax(0,1fr); column-gap:48px; margin:0; padding:0; list-style:none; }
 @media (min-width:720px) { :is(.toc, .plist) { grid-template-columns:repeat(2,minmax(0,1fr)); } }
 :is(.toc, .plist) li { border-bottom:1px solid var(--hair); }
@@ -140,6 +140,13 @@ html:not(.js) :is(.toolbar, .meta, #search-results, .empty, .settings) { display
 .toc-en { grid-column:1 / -1; margin-top:1px; color:var(--muted); font:400 1rem/1.35 var(--sans); }
 :is(.toc, .plist) a:hover .toc-la { text-decoration:underline; text-decoration-color:var(--accent); text-decoration-thickness:1px; text-underline-offset:.2em; }
 .plist { margin-bottom:30px; }
+/* The gap games (lacūnae), five on 20 November 2026, are one item of the list, with their names as links
+   under its line (the coordinating session's choice, for Jack to judge): written by the builder from
+   the game files (src/lacunae/). */
+.plist-head { display:grid; margin:0; padding:10px 0 0; }
+.plist-games { display:flex; flex-wrap:wrap; column-gap:20px; margin:0 0 3px; }
+.plist .plist-games a { display:inline-flex; align-items:center; min-height:44px; padding:0; color:var(--soft); font:400 1.06rem/1.3 var(--serif); text-decoration:underline; text-decoration-color:var(--accent); text-decoration-thickness:1px; text-underline-offset:.2em; }
+.plist .plist-games a:hover { color:var(--ink); }
 /* The A–Z lists stand above the categories, where they are found at once (Jack, 13 November 2026). */
 .az { margin:-14px 0 22px; color:var(--soft); font:400 1.05rem/1.5 var(--sans); }
 .az a { display:inline-flex; align-items:center; min-height:44px; }
@@ -411,7 +418,7 @@ span.kind, p.kind:not(:has(a)) { display:block; padding:10px 0; }
    gives what is chosen and the count; it opens the groups of choices. A choice in a row carries a
    red bar at its left, as the current category does; a choice in a line is underlined, as the
    other filters are. Nothing in the lobby is boxed but the button that starts a round. */
-.practice .category-heading, #practice { max-width:40rem; }
+.practice .category-heading, #practice, #chartae { max-width:40rem; }
 .practice .category-heading { display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; column-gap:16px; margin-top:14px; }
 .p-lang { margin-bottom:-6px; }
 .practice summary { cursor:pointer; list-style:none; }
@@ -471,6 +478,11 @@ span.kind, p.kind:not(:has(a)) { display:block; padding:10px 0; }
 .p-go .pbtn { width:100%; max-width:22rem; }
 .p-state { margin:0 0 12px; font-size:1.1rem; }
 .p-saved { margin:10px 0 0; color:var(--muted); font:400 .92rem/1.4 var(--sans); }
+/* The picture cards' count of pictures saved: the number done is as wide as the total, drawn unseen in the same place. */
+#c-offline { font-variant-numeric:tabular-nums lining-nums; }
+.c-done { display:inline-grid; justify-items:end; }
+.c-done > span, .c-done::after { grid-area:1 / 1; }
+.c-done::after { content:attr(data-total); visibility:hidden; }
 .p-bar { display:flex; height:3px; background:var(--hair); }
 #p-bar-known { background:var(--ink); }
 #p-bar-learning { background:var(--muted); }
@@ -479,7 +491,8 @@ span.kind, p.kind:not(:has(a)) { display:block; padding:10px 0; }
 .pgroup.backup[open] { padding-bottom:10px; }
 .p-more, .p-how { margin:10px 0 0; color:var(--muted); font:400 1rem var(--sans); }
 :is(.p-more, .p-how) a { display:inline-block; padding:11px 0; line-height:1.4; color:var(--soft); }
-html:not(.js) :is(#practice, #review, .p-lang) { display:none; }
+.p-more.p-gaps { margin-top:0; }
+html:not(.js) :is(#practice, #chartae, #review, .p-lang) { display:none; }
 
 /* The round (Jack, 14 November 2026: "a separate experience… you could X out of it… actual cards,
    rounded cornered cards… the buttons don't really feel like buttons"). A round is played in a
@@ -547,6 +560,59 @@ html.pgame-open, html.pgame-open body { overflow:hidden; }
 .pgame-keys { margin:8px 0 0; color:var(--muted); font:400 .9rem var(--sans); text-align:center; }
 /* A phone has no keys to speak of. */
 @media (hover:none) { .pgame-keys { display:none; } }
+/* The picture cards (chartae.html): the practice's lobby and its round, with a picture for the
+   cue. The round's card is the picture, edge to edge, and under it the card's back. The list of
+   every card is plain pictures with their names, under a heading for each subject and one for each
+   kind: no boxes outside the round. */
+.c-deck .count, .c-count { color:var(--muted); font-variant-numeric:tabular-nums; }
+.c-deck .count { font-size:.88em; }
+.c-count { margin:10px 0 0; font:400 .95rem/1.4 var(--sans); }
+.c-all { margin-top:26px; border-top:1px solid var(--hair); }
+.chartae .c-subject { margin:26px 0 0; color:var(--rubric); font:400 1.4rem/1.3 var(--serif); font-variant-caps:small-caps; letter-spacing:.05em; }
+.chartae .c-subject + .c-group { margin-top:6px; }
+.chartae .c-group { margin:18px 0 10px; color:var(--rubric); font:400 1.15rem/1.3 var(--serif); font-variant-caps:small-caps; letter-spacing:.05em; }
+.c-tiles { display:grid; grid-template-columns:repeat(auto-fill, minmax(8.75rem, 1fr)); gap:16px 12px; padding-bottom:10px; }
+.c-tile { display:block; width:100%; margin:0; padding:0; border:0; background:none; color:var(--ink); font:inherit; text-align:left; cursor:pointer; }
+/* A tile's picture lies over its preview (21 November 2026), which shows until the picture has come
+   and stays if it cannot come. */
+.c-thumb { position:relative; display:block; overflow:hidden; aspect-ratio:720 / 511; background:var(--hair); }
+.c-thumb img { position:absolute; inset:0; display:block; width:100%; height:100%; object-fit:cover; }
+.c-thumb .c-preview { filter:blur(1px); transform:scale(1.04); }
+.c-thumb .c-full.failed { visibility:hidden; }
+.c-tile .c-name { display:block; padding:5px 0 6px; line-height:1.3; }
+.c-tile b { display:block; font-weight:400; font-size:1.12rem; }
+.c-tile .c-en { color:var(--muted); font:400 .95rem/1.3 var(--sans); }
+.c-tile:hover b { text-decoration:underline; text-decoration-color:var(--accent); text-decoration-thickness:1px; text-underline-offset:.2em; }
+.ccard { justify-content:flex-start; min-height:0; padding:0; overflow:hidden; }
+/* The picture lies on a quiet ground of its own size, and is unseen until its own file has loaded
+   (Jack, 21 November 2026: the last card's picture stayed on the next card until the new one came):
+   so a new card shows the ground, never the old picture, and a picture that fails shows no broken icon. */
+.ccard-frame { position:relative; flex:none; width:100%; aspect-ratio:720 / 511; overflow:hidden; background:var(--hair); }
+.ccard-picture { position:relative; display:block; width:100%; height:100%; object-fit:cover; }
+/* Under the picture, its preview from the card data (21 November 2026: on a slow connection the
+   ground was often all a new card showed): shown at once, covering the frame, and softened so that
+   the small JPEG's blocks do not show; scaled a little, so that the blur's faded edge is cut off. */
+.ccard-preview { position:absolute; inset:0; display:block; width:100%; height:100%; object-fit:cover; filter:blur(3px); transform:scale(1.04); }
+.ccard-picture.waiting, .ccard-preview.waiting { visibility:hidden; }
+/* The card keeps its height when it is turned (Jack, 20 November 2026): the question and the back
+   lie one over the other in the same place, the back there from the start and unseen. */
+.ccard-text { display:grid; padding:10px 22px 18px; }
+.ccard.finished .ccard-text { padding:44px 22px; }
+.ccard-ask, .ccard .pgame-back { grid-area:1 / 1; }
+.ccard-ask { display:flex; flex-direction:column; }
+.ccard-quid { margin:auto; padding-bottom:1.2rem; color:var(--muted); font-size:1.5rem; font-style:italic; }
+.ccard.front .pgame-back, .ccard:not(.front) .ccard-ask { visibility:hidden; }
+.ccard .pgame-status { margin:0; }
+.ccard .pgame-back { margin:0; padding-top:2px; border-top:0; }
+.ccard-en { color:var(--soft); }
+.ccard-en .c-sci { font-style:italic; }
+.ccard .pgame-ex { margin-top:12px; }
+.ccard-food { margin-top:12px !important; line-height:1.4; }
+.c-ask { color:var(--rubric); font-variant-caps:small-caps; letter-spacing:.05em; }
+.ccard .pgame-entry { margin-top:4px; }
+.ccard-credit { color:var(--muted); font:400 .85rem/1.45 var(--sans); }
+.ccard-credit a { display:inline-block; padding:12px 0; color:inherit; }
+.ccard .pgame-entry + .ccard-credit { margin-top:-8px; }
 @media (prefers-reduced-motion:reduce) { #g-bar { transition:none; } .pbtn:active { transform:none; } }
 
 /* Review (review.html, the foot of every entry, the back of a practice card) -----------------

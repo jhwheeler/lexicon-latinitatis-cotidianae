@@ -2,15 +2,59 @@
   "id": "it-looks-like-rain",
   "english": "it looks like rain",
   "pos": "phrase",
+  "also": [
+    "it’s going to rain",
+    "it’s about to rain",
+    "rain is coming",
+    "it’ll rain"
+  ],
   "domain": "natura",
   "terms": [
     {
-      "latin": "Vidētur quasi pluat.",
+      "latin": "Pluet.",
       "status": "recommended",
+      "period": "classical",
+      "gloss": "it’s going to rain",
+      "evidence": [
+        "Plaut. Curc. 132: <span lang=\"la\">ecce autem bibit arcus, pluet crēdō hercle hodiē</span>"
+      ],
+      "comment": "The plain future, as Plautus’s slave says it when he sees a rainbow, often with <span lang=\"la\">crēdō</span>. Traupman’s <span lang=\"la\">Vidētur quasi pluat</span> says “it looks as if it’s raining”; the future says what is coming."
+    },
+    {
+      "latin": "Vidētur quasi pluat.",
+      "status": "alternative",
       "period": "modern",
       "evidence": [
         "Traupman 136"
       ]
+    },
+    {
+      "latin": "pluvia impendet",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "rain is threatening, rain is on the way",
+      "grammar": "impendeō, intransitive; of any weather: tempestās impendet",
+      "evidence": [
+        "Verg. G. 4.191: <span lang=\"la\">nec vērō ā stabulīs pluviā impendente recēdunt longius</span>",
+        "Cic. Div. 2.12: <span lang=\"la\">quae tempestās impendeat</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ecce autem bibit arcus, pluet crēdō hercle hodiē",
+      "english": "look, the rainbow’s drinking; it’ll rain today, I bet",
+      "source": "Plaut. Curc. 132"
+    },
+    {
+      "latin": "nec vērō ā stabulīs pluviā impendente recēdunt longius",
+      "english": "and when rain is coming they do not go far from their hives",
+      "source": "Verg. G. 4.191–192"
+    },
+    {
+      "latin": "Pluet, crēdō; paenulam indue.",
+      "english": "It’s going to rain, I think; put your coat on.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -18,11 +62,15 @@
     "shower-rain"
   ],
   "sources": [
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 136."
+    "<a href=\"https://logeion.uchicago.edu/pluo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pluo</a> · <a href=\"https://logeion.uchicago.edu/impendeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: impendeo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 136.",
+    "Plautus, <em>Curculio</em> 132.",
+    "Vergil, <em>Georgics</em> 4.191–192.",
+    "Cicero, <em>De divinatione</em> 2.12."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

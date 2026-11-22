@@ -1,0 +1,96 @@
+{
+  "id": "its-getting-light",
+  "english": "it’s getting light",
+  "pos": "phrase",
+  "also": [
+    "it’s getting light already",
+    "day is breaking",
+    "dawn is breaking",
+    "it’s light",
+    "it’s morning already"
+  ],
+  "domain": "tempus",
+  "terms": [
+    {
+      "latin": "Jam lūcēscit.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "it’s getting light already, day is breaking",
+      "grammar": "impersonal inchoative of lūceō; comedy often adds a vague hoc as subject",
+      "evidence": [
+        "Plaut. Amph. 543: <span lang=\"la\">lūcēscit hoc jam</span>",
+        "Ter. Haut. 410: <span lang=\"la\">Lūciscit hoc jam.</span>",
+        "Cic. Att. 4.17.4: <span lang=\"la\">jam enim lūciscit</span>"
+      ],
+      "comment": "What Plautus’s and Terence’s people say when the night is over, and Cicero in a letter written before dawn. The editions print <span lang=\"la\">lūciscit</span> in Terence and Cicero, <span lang=\"la\">lūcēscit</span> in Plautus; Lewis &amp; Short gives both. For its opposite see “it’s getting dark”."
+    },
+    {
+      "latin": "Lūcet.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "it’s light, day has come",
+      "evidence": [
+        "Plaut. Mil. 218: <span lang=\"la\">vigilā inquam, expergīscere inquam, lūcet hoc inquam.</span>",
+        "Sen. Ep. 122.9: <span lang=\"la\">lūcet: somnī tempus est</span>"
+      ]
+    },
+    {
+      "latin": "dīlūcēscit",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "dawn is breaking (of the first grey light)",
+      "evidence": [
+        "Cic. Cat. 3.6: <span lang=\"la\">cum jam dīlūcēsceret</span>",
+        "Liv. 36.24: <span lang=\"la\">jam dīlūcēscēbat, cum signum cōnsul dedit</span>"
+      ],
+      "comment": "The word of narrative prose, most often in a <span lang=\"la\">cum</span>-clause."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Jam lūcēscit; avēs canere incipiunt.",
+      "english": "It’s getting light already; the birds are starting to sing.",
+      "source": "composed"
+    },
+    {
+      "latin": "Lūcetne jam? — Nōndum lūcet; dormī.",
+      "english": "Is it light yet? — Not yet; go to sleep.",
+      "source": "composed"
+    },
+    {
+      "latin": "Eāmus, Amphitruō. lūcēscit hoc jam.",
+      "english": "Let’s go, Amphitryon. It’s getting light now.",
+      "source": "Plaut. Amph. 543"
+    },
+    {
+      "latin": "Lūciscit hoc jam.",
+      "english": "It’s getting light now.",
+      "source": "Ter. Haut. 410"
+    },
+    {
+      "latin": "Et jam lūcēscēbat omniaque sub oculīs erant.",
+      "english": "And by now it was getting light, and everything was in plain view.",
+      "source": "Liv. 4.28"
+    }
+  ],
+  "related": [
+    "its-getting-dark",
+    "daybreak",
+    "daylight",
+    "sunrise",
+    "its-time-to"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/lucesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lucesco</a> · <a href=\"https://logeion.uchicago.edu/dilucesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dilucesco</a> · <a href=\"https://logeion.uchicago.edu/luceo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: luceo</a>",
+    "Plautus, <em>Amphitruo</em> 543; <em>Miles gloriosus</em> 218.",
+    "Terence, <em>Heautontimorumenos</em> 410.",
+    "Cicero, <em>Letters to Atticus</em> 4.17.4; <em>In Catilinam</em> 3.6.",
+    "Livy 4.28; 36.24.",
+    "Seneca, <em>Letters</em> 122.9."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-22",
+    "by": "Claude"
+  }
+}

@@ -2,6 +2,13 @@
   "id": "temperature",
   "english": "temperature",
   "pos": "noun",
+  "also": [
+    "what’s the temperature?",
+    "below zero",
+    "below freezing",
+    "above zero",
+    "how many degrees is it?"
+  ],
   "domain": "natura",
   "terms": [
     {
@@ -33,6 +40,16 @@
       "latin": "Temperātūra lāpsa est subter duōs et trīgintā gradūs.",
       "english": "The temperature fell below thirty-two degrees.",
       "source": "Traupman 136"
+    },
+    {
+      "latin": "Temperātūra est ad duōs gradūs suprā pūnctum glaciāle.",
+      "english": "The temperature is two degrees above freezing.",
+      "source": "Traupman 392"
+    },
+    {
+      "latin": "Temperātūra lāpsa est īnfrā pūnctum glaciāle; lacūnae concrēvērunt.",
+      "english": "It’s gone below zero; the puddles have frozen.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -42,11 +59,11 @@
   "sources": [
     "<a href=\"https://logeion.org/calor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: calor</a> · <a href=\"https://logeion.org/temperatura\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: temperatura</a>",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. temperature.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 136."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 136, 392."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

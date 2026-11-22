@@ -8,12 +8,14 @@
     "fatigued",
     "worn out",
     "exhausted",
-    "weary"
+    "weary",
+    "I’m not tired",
+    "not tired"
   ],
+  "domain": "sermo",
   "also_under": [
     "corpus"
   ],
-  "domain": "sermo",
   "terms": [
     {
       "latin": "fessus, fessa, fessum",
@@ -95,6 +97,11 @@
       "latin": "ille opere forīs faciendō lassus noctū ad mē advenit",
       "english": "he comes home to me at night tired from working out of doors",
       "source": "Plaut. Asin. 873"
+    },
+    {
+      "latin": "Nōn sum fessus! — Quid ergō ōscitās?",
+      "english": "I’m not tired! — Then why are you yawning?",
+      "source": "composed"
     }
   ],
   "related": [
@@ -113,7 +120,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

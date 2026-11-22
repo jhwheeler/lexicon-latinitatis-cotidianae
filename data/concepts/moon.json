@@ -2,6 +2,9 @@
   "id": "moon",
   "english": "moon",
   "pos": "noun",
+  "also": [
+    "look at the moon"
+  ],
   "domain": "natura",
   "terms": [
     {
@@ -19,6 +22,13 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "Suspice lūnam: quam clāra est hodiē!",
+      "english": "Look up at the moon: how bright it is today!",
+      "source": "composed"
+    }
+  ],
   "related": [
     "full-moon",
     "new-moon",
@@ -28,12 +38,12 @@
     "<a href=\"https://logeion.org/luna\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: luna</a>",
     "From Lewis &amp; Short; the topic is outside Traupman’s chapters and Morgan–Owens’s sections."
   ],
-  "replaces": [
-    "entry-504"
-  ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-22",
     "by": "Claude"
-  }
+  },
+  "replaces": [
+    "entry-504"
+  ]
 }

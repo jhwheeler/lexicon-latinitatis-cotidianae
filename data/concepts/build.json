@@ -2,10 +2,18 @@
   "id": "build",
   "english": "build",
   "pos": "verb",
+  "also": [
+    "erect",
+    "put up",
+    "lay bricks",
+    "build a tower",
+    "build a tower of blocks",
+    "pile up the blocks"
+  ],
+  "domain": "aedificatio",
   "also_under": [
     "sermo"
   ],
-  "domain": "aedificatio",
   "terms": [
     {
       "latin": "aedificō, aedificāre, aedificāvī, aedificātum",
@@ -47,6 +55,16 @@
       "latin": "Theodōre, quid aedificās?",
       "english": "Theo, what are you building?",
       "source": "composed"
+    },
+    {
+      "latin": "Turrim ex cubīs exstruāmus.",
+      "english": "Let’s build a tower out of the blocks.",
+      "source": "composed"
+    },
+    {
+      "latin": "turrēs exstrūxit",
+      "english": "he built towers",
+      "source": "Caes. BC 3.54"
     }
   ],
   "related": [
@@ -68,19 +86,15 @@
     "<a href=\"https://logeion.uchicago.edu/aedifico\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aedifico</a> · <a href=\"https://dcc.dickinson.edu/latin-core-list1\" rel=\"noopener noreferrer\" target=\"_blank\">Dickinson: Latin Core Vocabulary</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 165, 284, 296, 338.",
     "<a href=\"https://logeion.uchicago.edu/exstruo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: exstruo</a>",
-    "<a href=\"https://logeion.uchicago.edu/struo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: struo</a>"
-  ],
-  "replaces": [
-    "entry-32"
+    "<a href=\"https://logeion.uchicago.edu/struo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: struo</a>",
+    "Caesar, <em>Bellum civile</em> 3.54."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "by": "Claude"
   },
-  "also": [
-    "erect",
-    "put up",
-    "lay bricks"
+  "replaces": [
+    "entry-32"
   ]
 }

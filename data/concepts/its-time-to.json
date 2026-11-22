@@ -9,7 +9,9 @@
     "it’s time to get up",
     "time for bed",
     "it’s time for",
-    "time for sleeping"
+    "time for sleeping",
+    "it’s time to go",
+    "time to go"
   ],
   "domain": "sermo",
   "terms": [
@@ -65,6 +67,11 @@
       "latin": "Tempus est dormiendī.",
       "english": "It’s time for sleeping.",
       "source": "composed"
+    },
+    {
+      "latin": "Tempus est abīre; calceōs indue.",
+      "english": "It’s time to go; put your shoes on.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -81,7 +88,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-20",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

@@ -2,6 +2,15 @@
   "id": "train",
   "english": "train",
   "pos": "noun",
+  "also": [
+    "compartment",
+    "train compartment",
+    "passenger train",
+    "toy train",
+    "train set",
+    "wooden train",
+    "play trains"
+  ],
   "domain": "vectura",
   "terms": [
     {
@@ -61,6 +70,16 @@
       "latin": "diaeta (prīmae, secundae classis)",
       "english": "a (first-class, second-class) compartment",
       "source": "Traupman 294"
+    },
+    {
+      "latin": "trāmen lūsōrium et ferrivia lūsōria",
+      "english": "a toy train and its track: a train set",
+      "source": "composed"
+    },
+    {
+      "latin": "Trāmen in ferriviā collocā; ego pontem exstruam.",
+      "english": "Put the train on the track; I’ll build a bridge.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -69,20 +88,16 @@
     "tram"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/lusorius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lusorius</a>",
     "<a href=\"https://neolatinlexicon.org/latin/train/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: train</a> · <a href=\"https://neolatinlexicon.org/silva-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: Silva</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 211, 219, 294."
   ],
-  "replaces": [
-    "entry-19"
-  ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "by": "Claude"
   },
-  "also": [
-    "compartment",
-    "train compartment",
-    "passenger train"
+  "replaces": [
+    "entry-19"
   ]
 }

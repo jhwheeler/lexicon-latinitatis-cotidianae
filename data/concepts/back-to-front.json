@@ -3,7 +3,12 @@
   "english": "back to front",
   "pos": "adverb",
   "also": [
-    "put on back to front"
+    "put on back to front",
+    "on the wrong foot",
+    "on the wrong feet",
+    "shoes on the wrong feet",
+    "the wrong way round",
+    "put on wrongly"
   ],
   "domain": "vestitus",
   "terms": [
@@ -17,6 +22,16 @@
         "Plin. NH 2.24: <span lang=\"la\">laevus calceus praeposterē inductus</span> (Lewis &amp; Short s.v. <span lang=\"la\">praeposterus</span>)"
       ],
       "comment": "Lewis &amp; Short: “in a reversed order, irregularly”. Pliny has it of a shoe put on the wrong foot; of clothes put on back to front, <span lang=\"la\">praeposterē induere</span> (our phrase)."
+    },
+    {
+      "latin": "perperam",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "wrongly, the wrong way",
+      "evidence": [
+        "Suet. Aug. 92: <span lang=\"la\">sī māne sibi calceus perperam ac sinister prō dextrō indūcerētur</span>"
+      ],
+      "comment": "Suetonius’s word for a shoe put on the wrong foot, the left for the right. Pliny tells the same of Augustus with <span lang=\"la\">praeposterē</span>."
     }
   ],
   "phrases": [
@@ -24,6 +39,21 @@
       "latin": "praeposterē induere",
       "english": "to put on back to front",
       "source": "composed"
+    },
+    {
+      "latin": "Calceōs praeposterē induistī; sinister est in dextrō pede.",
+      "english": "You’ve put your shoes on the wrong feet; the left one is on your right foot.",
+      "source": "composed"
+    },
+    {
+      "latin": "Dīvus Augustus prōdidit laevum sibi calceum praeposterē inductum quō diē sēditiōne mīlitārī prope adflīctus est.",
+      "english": "The Deified Augustus recorded that on the day a mutiny of the soldiers nearly overthrew him he had put his left shoe on the wrong foot.",
+      "source": "Plin. NH 2.24"
+    },
+    {
+      "latin": "sī māne sibi calceus perperam ac sinister prō dextrō indūcerētur, ut dīrum",
+      "english": "if in the morning his shoe was put on wrongly, the left for the right, he took it as a bad omen",
+      "source": "Suet. Aug. 92"
     }
   ],
   "related": [
@@ -31,11 +61,13 @@
     "put-on"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/praeposterus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praeposterus</a>"
+    "<a href=\"https://logeion.uchicago.edu/praeposterus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praeposterus</a> · <a href=\"https://logeion.uchicago.edu/perperam\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: perperam</a>",
+    "Pliny, <em>Natural History</em> 2.24.",
+    "Suetonius, <em>Augustus</em> 92."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

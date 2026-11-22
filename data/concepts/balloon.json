@@ -2,6 +2,14 @@
   "id": "balloon",
   "english": "balloon",
   "pos": "noun",
+  "also": [
+    "blow up a balloon",
+    "blow up the balloon",
+    "inflate a balloon",
+    "it popped",
+    "the balloon popped",
+    "balloons"
+  ],
   "domain": "corpus",
   "terms": [
     {
@@ -33,6 +41,21 @@
       "latin": "follis īnflātus",
       "english": "a ball blown up with air",
       "source": "composed"
+    },
+    {
+      "latin": "Īnflā mihi folliculum, sīs.",
+      "english": "Blow up the balloon for me, please.",
+      "source": "composed"
+    },
+    {
+      "latin": "Ēheu! Rūpta est vēsīca.",
+      "english": "Oh no! The balloon’s popped.",
+      "source": "composed"
+    },
+    {
+      "latin": "ceu spīritus ōris tendere vēsīcam solet",
+      "english": "as the breath from the mouth stretches a bladder",
+      "source": "Ov. Met. 15.303–304"
     }
   ],
   "related": [
@@ -41,13 +64,14 @@
     "bladder"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/vesica\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vesica</a> · <a href=\"https://logeion.uchicago.edu/follis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: follis</a>",
+    "<a href=\"https://logeion.uchicago.edu/vesica\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vesica</a> · <a href=\"https://logeion.uchicago.edu/follis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: follis</a> · <a href=\"https://logeion.uchicago.edu/inflo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: inflo</a>",
     "<a href=\"https://logeion.uchicago.edu/folliculus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: folliculus</a>",
-    "Enrico Levi and Arturo Bini, <em>Il latino come lingua viva</em> (1937), p. 45, s.v. palloncino."
+    "Enrico Levi and Arturo Bini, <em>Il latino come lingua viva</em> (1937), p. 45, s.v. palloncino.",
+    "Ovid, <em>Metamorphoses</em> 15.303–304."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-16",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

@@ -1,0 +1,99 @@
+{
+  "id": "i-won",
+  "english": "I won!",
+  "pos": "phrase",
+  "also": [
+    "I win",
+    "I’ve won",
+    "we won",
+    "we’ve won",
+    "you won",
+    "you win",
+    "you’ve won",
+    "I lost",
+    "I’ve lost",
+    "we lost",
+    "you lost",
+    "who won?"
+  ],
+  "domain": "ludi",
+  "terms": [
+    {
+      "latin": "Vīcī!",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "I’ve won!",
+      "grammar": "perfect of vincō",
+      "evidence": [
+        "Suet. Jul. 37: <span lang=\"la\">vēnī, vīdī, vīcī</span>"
+      ],
+      "comment": "The perfect of <span lang=\"la\">vincō</span>: <span lang=\"la\">vīcī</span> “I’ve won”, <span lang=\"la\">vīcistī</span> “you’ve won”, <span lang=\"la\">vīcimus</span> “we’ve won”. Of losing, the passive: <span lang=\"la\">victus sum</span>, <span lang=\"la\">victī sumus</span>. For the verbs, see “win” and “lose”; for a game nobody wins, see “draw”."
+    },
+    {
+      "latin": "Vīcistī.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "you’ve won, you win",
+      "evidence": [
+        "Plaut. Pers. 215: <span lang=\"la\">Jam abī, vīcistī.</span>"
+      ],
+      "comment": "In Plautus it ends a slanging match: “all right, you win.”"
+    },
+    {
+      "latin": "Victus sum.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "I’ve lost",
+      "evidence": [
+        "Liv. 22.7.8: <span lang=\"la\">pugnā … magnā victī sumus</span>"
+      ],
+      "comment": "Livy’s praetor announcing a lost battle; in play, said half in jest."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Vīcī! Vīcī!",
+      "english": "I won! I won!",
+      "source": "composed"
+    },
+    {
+      "latin": "Quis vīcit? — Tū; ego victus sum.",
+      "english": "Who won? — You did; I lost.",
+      "source": "composed"
+    },
+    {
+      "latin": "Jam abī, vīcistī.",
+      "english": "Go on with you, you win.",
+      "source": "Plaut. Pers. 215"
+    },
+    {
+      "latin": "pugnā … magnā victī sumus",
+      "english": "we have lost a great battle",
+      "source": "Liv. 22.7.8"
+    },
+    {
+      "latin": "vēnī, vīdī, vīcī",
+      "english": "I came, I saw, I conquered",
+      "source": "Suet. Jul. 37"
+    }
+  ],
+  "related": [
+    "win",
+    "lose",
+    "draw-tie",
+    "winner",
+    "victory",
+    "i-give-up"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/vinco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vinco</a>",
+    "Plautus, <em>Persa</em> 215.",
+    "Livy 22.7.8.",
+    "Suetonius, <em>Divus Julius</em> 37."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-22",
+    "by": "Claude"
+  }
+}

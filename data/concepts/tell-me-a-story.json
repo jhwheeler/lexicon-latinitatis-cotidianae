@@ -5,7 +5,11 @@
   "also": [
     "bedtime story",
     "tell a story",
-    "bedtime"
+    "bedtime",
+    "read me a story",
+    "one more story",
+    "another story",
+    "read to me"
   ],
   "domain": "sermo",
   "terms": [
@@ -25,6 +29,26 @@
       "latin": "Narrā mihi fābulam, tata.",
       "english": "Tell me a story, Dad.",
       "source": "Libellus IV, <span lang=\"la\">Diēs Grātulātiōnis</span>"
+    },
+    {
+      "latin": "Lege mihi fābulam ex hōc librō!",
+      "english": "Read me a story from this book!",
+      "source": "composed"
+    },
+    {
+      "latin": "Narrā etiam ūnam, pater! — Estō, sed ūnam modo.",
+      "english": "Tell me one more, Dad! — All right, but only one.",
+      "source": "composed"
+    },
+    {
+      "latin": "Legit mihi nūper epistulās; uxōris esse dīcēbat.",
+      "english": "He read me some letters recently; he said they were his wife’s.",
+      "source": "Plin. Ep. 1.16.6"
+    },
+    {
+      "latin": "Sī interruptum somnum reciperāre … nōn posset, lēctōribus aut fābulātōribus arcessītīs resūmēbat.",
+      "english": "If he could not get back to sleep once it was broken, he sent for readers or storytellers and so took it up again.",
+      "source": "Suet. Aug. 78"
     }
   ],
   "related": [
@@ -32,15 +56,17 @@
     "book"
   ],
   "sources": [
-    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
-  ],
-  "replaces": [
-    "entry-241",
-    "libelli-241"
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+    "Pliny, <em>Letters</em> 1.16.6.",
+    "Suetonius, <em>Augustus</em> 78."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-22",
     "by": "Claude"
-  }
+  },
+  "replaces": [
+    "entry-241",
+    "libelli-241"
+  ]
 }

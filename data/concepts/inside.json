@@ -12,12 +12,15 @@
     "is he in?",
     "in (at home)",
     "in (motion)",
-    "go in"
+    "go in",
+    "stay indoors",
+    "stay in",
+    "stay at home"
   ],
+  "domain": "sermo",
   "also_under": [
     "verba"
   ],
-  "domain": "sermo",
   "terms": [
     {
       "latin": "intrā",
@@ -82,6 +85,16 @@
       "latin": "fīcī enim sēmen nātūrāle intus in eā fīcō, quam edimus, quae sunt minūta grāna",
       "english": "for the fig’s natural seed is inside the fig we eat: those are the tiny grains",
       "source": "Varr. RR 1.41.4"
+    },
+    {
+      "latin": "Pluit; hodiē intus manēbimus.",
+      "english": "It’s raining; we’ll stay indoors today.",
+      "source": "composed"
+    },
+    {
+      "latin": "domī manētō mē.",
+      "english": "Wait for me at home.",
+      "source": "Plaut. Merc. 498"
     }
   ],
   "related": [
@@ -95,11 +108,12 @@
     "<a href=\"https://logeion.uchicago.edu/intra\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: intra</a> · <a href=\"https://logeion.uchicago.edu/intus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: intus</a>",
     "<a href=\"https://dcc.dickinson.edu/latin-core-list1\" rel=\"noopener noreferrer\" target=\"_blank\">Dickinson: Latin Core Vocabulary</a>",
     "Plautus, Terence, and Cicero (<em>Letters to Atticus</em> 3, <em>In Catilinam</em> 2).",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 101, 332."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 101, 332.",
+    "Plautus, <em>Mercator</em> 498."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

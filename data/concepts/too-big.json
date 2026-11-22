@@ -4,7 +4,10 @@
   "sense": "of shoes",
   "pos": "adjective",
   "also": [
-    "too loose"
+    "too loose",
+    "it’s too big",
+    "too big (of clothes)",
+    "loose (of clothes)"
   ],
   "domain": "vestitus",
   "terms": [
@@ -17,6 +20,17 @@
         "M-O s.v. loose",
         "Hor. Ep. 1.10.42–43"
       ]
+    },
+    {
+      "latin": "laxus, laxa, laxum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "loose, too big (of a shoe or a garment)",
+      "evidence": [
+        "Hor. S. 1.3.31–32: <span lang=\"la\">male laxus in pede calceus haeret</span>",
+        "Lewis &amp; Short: of a toga, Tib. 1.6.40"
+      ],
+      "comment": "The plain word for a shoe or garment that is too big; <span lang=\"la\">nimis laxus</span> of clothes."
     }
   ],
   "phrases": [
@@ -24,6 +38,16 @@
       "latin": "ut calceus ōlim, sī pede major erit, subvertet, sī minor, ūret",
       "english": "like a shoe: too big it trips you, too small it pinches",
       "source": "Hor. Ep. 1.10.42–43"
+    },
+    {
+      "latin": "Haec tunica tibi nimis laxa est; mox apta erit.",
+      "english": "This top is too big for you; soon it will fit.",
+      "source": "composed"
+    },
+    {
+      "latin": "toga dēfluit et male laxus in pede calceus haeret",
+      "english": "his toga slips down, and his shoe, far too loose, barely stays on his foot",
+      "source": "Hor. S. 1.3.31–32"
     }
   ],
   "related": [
@@ -32,12 +56,14 @@
     "loose"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/laxus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: laxus</a>",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. loose.",
-    "Horace (Ep. 1.10)."
+    "Horace (Ep. 1.10).",
+    "Horace, <em>Satires</em> 1.3.31–32."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

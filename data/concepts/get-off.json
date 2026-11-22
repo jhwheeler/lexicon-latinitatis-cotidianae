@@ -2,6 +2,18 @@
   "id": "get-off",
   "english": "get off",
   "pos": "verb",
+  "also": [
+    "get off the bus",
+    "get off the plane",
+    "get off (a bus, plane, ship, train)",
+    "get off (a bus, train, ship)",
+    "disembark",
+    "land (from a ship)",
+    "go ashore",
+    "where do I get off?",
+    "where should I get off?",
+    "which stop do I get off at?"
+  ],
   "domain": "vectura",
   "terms": [
     {
@@ -30,6 +42,11 @@
       "latin": "ē trāmine dēscendere",
       "english": "get off the train",
       "source": "composed"
+    },
+    {
+      "latin": "Ubi ēgrediar? — Proximā statiōne ēgredere.",
+      "english": "Where do I get off? — Get off at the next stop.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -44,16 +61,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "by": "Claude"
-  },
-  "also": [
-    "get off the bus",
-    "get off the plane",
-    "get off (a bus, plane, ship, train)",
-    "get off (a bus, train, ship)",
-    "disembark",
-    "land (from a ship)",
-    "go ashore"
-  ]
+  }
 }

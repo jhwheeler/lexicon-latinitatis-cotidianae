@@ -1,0 +1,71 @@
+{
+  "id": "how-long-does-it-take",
+  "english": "how long does it take?",
+  "pos": "phrase",
+  "also": [
+    "how long until we get there?",
+    "how long is the journey?",
+    "how much longer?",
+    "are we nearly there?"
+  ],
+  "domain": "vectura",
+  "terms": [
+    {
+      "latin": "Quot diērum via est?",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "how many days’ journey is it?",
+      "evidence": [
+        "Cic. Verr. 2.3.191: <span lang=\"la\">videō quot diērum via sit</span>"
+      ],
+      "comment": "Latin measures a journey by the days (or hours) it takes, in the genitive."
+    },
+    {
+      "latin": "Quot hōrārum iter est?",
+      "status": "alternative",
+      "period": "ours",
+      "gloss": "how many hours is the journey?",
+      "comment": "Cicero’s question with hours, for a short trip."
+    },
+    {
+      "latin": "Quam mox perveniēmus?",
+      "status": "alternative",
+      "period": "ours",
+      "gloss": "how soon will we get there?",
+      "comment": "The child’s question on the way, on the pattern of Plautus’s <span lang=\"la\">quam mox nāvigō?</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Quam mox perveniēmus? — Mox. Vidēsne jam urbem?",
+      "english": "How long till we get there? — Not long. Can you see the town yet?",
+      "source": "composed"
+    },
+    {
+      "latin": "quam mox nāvigō in Ephesum, ut aurum repetam ab Theotīmō domum?",
+      "english": "how soon do I sail for Ephesus, to fetch the gold home from Theotimus?",
+      "source": "Plaut. Bacch. 775–776"
+    },
+    {
+      "latin": "videō quid inter annōnam interesse soleat, videō quot diērum via sit",
+      "english": "I see what the difference in the price of grain usually is, I see how many days’ journey it is",
+      "source": "Cic. Verr. 2.3.191"
+    }
+  ],
+  "related": [
+    "how-long",
+    "how-far",
+    "journey",
+    "arrive"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/quot\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quot</a> · <a href=\"https://logeion.uchicago.edu/dies\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dies</a> · <a href=\"https://logeion.uchicago.edu/mox\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mox</a>",
+    "Cicero, <em>In Verrem</em> 2.3.191.",
+    "Plautus, <em>Bacchides</em> 775–776."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-22",
+    "by": "Claude"
+  }
+}

@@ -2,6 +2,12 @@
   "id": "that-way",
   "english": "that way",
   "pos": "adverb",
+  "also": [
+    "the other way",
+    "go the other way",
+    "not this way",
+    "by another way"
+  ],
   "domain": "sermo",
   "terms": [
     {
@@ -10,16 +16,36 @@
       "period": "classical"
     }
   ],
+  "phrases": [
+    {
+      "latin": "Nōn hāc; illāc īmus.",
+      "english": "Not this way; we’re going the other way.",
+      "source": "composed"
+    },
+    {
+      "latin": "ut ventum est in trivium, eādem quā cēterī fugere nōluit … cum quidem iī, quī aliā viā fūgerant, in hostium equitātum incidērunt",
+      "english": "when they came to a fork in the road, he refused to flee the same way as the rest … and those who had fled by the other road ran into the enemy’s cavalry",
+      "source": "Cic. Div. 1.123"
+    },
+    {
+      "latin": "Mē captās, quia tūte ab nāvī clanculum hūc aliā viā praecucurristī",
+      "english": "You’re trying to catch me out, because you yourself ran on ahead here from the ship by another way, on the quiet",
+      "source": "Plaut. Amph. 795–796"
+    }
+  ],
   "related": [
     "this-way",
     "fork-in-the-road"
   ],
   "sources": [
-    "The grouped card gave no source for this word."
+    "<a href=\"https://logeion.uchicago.edu/alius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: alius</a>",
+    "The grouped card gave no source for this word.",
+    "Cicero, <em>De divinatione</em> 1.123.",
+    "Plautus, <em>Amphitruo</em> 795–796."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

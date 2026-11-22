@@ -2,6 +2,13 @@
   "id": "spend-the-night",
   "english": "spend the night",
   "pos": "verb",
+  "also": [
+    "stay the night",
+    "stay overnight",
+    "overnight stay",
+    "stay over",
+    "put up at"
+  ],
   "domain": "vectura",
   "terms": [
     {
@@ -14,16 +21,34 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "Ubi pernoctābis?",
+      "english": "Where will you spend the night?",
+      "source": "Traupman 85"
+    },
+    {
+      "latin": "in Mamurrārum lassī deinde urbe manēmus, Mūrēnā praebente domum, Capitōne culīnam",
+      "english": "then, tired out, we stay the night in the city of the Mamurrae, Murena giving us a house and Capito a kitchen",
+      "source": "Hor. S. 1.5.37–38"
+    },
+    {
+      "latin": "Hāc nocte apud avum et aviam manēbimus.",
+      "english": "Tonight we’ll stay at Grandpa and Grandma’s.",
+      "source": "composed"
+    }
+  ],
   "related": [
     "hotel"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/pernocto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pernocto</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 351."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 85, 351.",
+    "Horace, <em>Satires</em> 1.5.37–38."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

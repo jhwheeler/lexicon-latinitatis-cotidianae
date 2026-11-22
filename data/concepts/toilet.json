@@ -11,7 +11,11 @@
     "go to the toilet",
     "I must go to the toilet",
     "loo",
-    "WC"
+    "WC",
+    "toilets",
+    "where are the toilets?",
+    "where is the toilet?",
+    "public toilets"
   ],
   "domain": "domus",
   "terms": [
@@ -65,6 +69,16 @@
       "latin": "Mihi eundum est in lātrīnam.",
       "english": "I must go to the toilet.",
       "source": "Traupman 395"
+    },
+    {
+      "latin": "Ubi est lātrīna, quaesō?",
+      "english": "Where are the toilets, please?",
+      "source": "composed"
+    },
+    {
+      "latin": "Estne hīc forica? Puer mingere vult.",
+      "english": "Is there a public toilet here? The boy needs a wee.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -80,12 +94,12 @@
     "<a href=\"https://logeion.uchicago.edu/forica\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: forica</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 317, 370."
   ],
-  "replaces": [
-    "entry-68"
-  ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "by": "Claude"
-  }
+  },
+  "replaces": [
+    "entry-68"
+  ]
 }

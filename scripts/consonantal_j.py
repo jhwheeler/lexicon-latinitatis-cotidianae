@@ -44,7 +44,7 @@ KEEP = {
     # vocalic i in Latin
     'iō': 'interjection, two syllables',
     'iērunt': 'form of eō', 'iēre': 'form of eō', 'ierat': 'form of eō', 'ierant': 'form of eō',
-    'ierit': 'form of eō', 'ierint': 'form of eō', 'ierim': 'form of eō', 'iēns': 'form of eō',
+    'ieram': 'form of eō', 'ierit': 'form of eō', 'ierint': 'form of eō', 'ierim': 'form of eō', 'iēns': 'form of eō',
     'superior': 'comparative, vocalic i', 'superius': 'comparative, vocalic i',
     'interior': 'comparative (also English), vocalic i', 'interius': 'comparative, vocalic i',
     'plēiades': 'Greek Πλειάδες', 'gāius': 'trisyllabic Gāĭus', 'cāius': 'trisyllabic Cāĭus',

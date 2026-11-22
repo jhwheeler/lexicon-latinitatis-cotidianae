@@ -6,7 +6,13 @@
     "floor",
     "wooden floor",
     "upstairs (position)",
-    "on the upper floor"
+    "on the upper floor",
+    "first floor",
+    "second floor",
+    "third floor",
+    "on the first floor",
+    "what floor?",
+    "how many floors up"
   ],
   "domain": "domus-structura",
   "terms": [
@@ -20,7 +26,8 @@
         "Lewis &amp; Short (ancient storey sense)",
         "Traupman 123: wooden floor, tabulātum",
         "Traupman 316"
-      ]
+      ],
+      "comment": "The authors count storeys with ordinals (Livy’s <span lang=\"la\">tertia contignātiō</span>, Juvenal’s <span lang=\"la\">tabulāta tertia</span>), and do not say whether the ground floor counts. The reference works disagree: Traupman, counting the American way, has the ground floor (<span lang=\"la\">pedeplāna</span>) and then the <span lang=\"la\">tabulātum secundum</span>, the first floor up; Levi–Bini, counting the Italian way, call the ground floor <span lang=\"la\">tabulātum īnfimum</span>, so their <span lang=\"la\">tabulātum secundum</span> is two flights up. Martial’s way avoids the question: <span lang=\"la\">scālīs habitō tribus</span>, I live up three flights."
     },
     {
       "latin": "contignātiō, contignātiōnis f.",
@@ -42,6 +49,31 @@
       "latin": "in superiōre tabulātō",
       "english": "upstairs (position)",
       "source": "Traupman 401"
+    },
+    {
+      "latin": "et scālīs habitō tribus, sed altīs",
+      "english": "and I live up three flights of stairs, and tall ones",
+      "source": "Mart. 1.117.7"
+    },
+    {
+      "latin": "bovem in tertiam contignātiōnem suā sponte ēscendisse",
+      "english": "that an ox had climbed of its own accord to the third storey",
+      "source": "Liv. 21.62"
+    },
+    {
+      "latin": "Ūcalegōn, tabulāta tibi jam tertia fūmant: tū nescīs",
+      "english": "Ucalegon is already smoking on the third floor below you, and you don’t know it",
+      "source": "Juv. 3.199–200"
+    },
+    {
+      "latin": "Quattuor cubicula in pedeplānīs sunt; cētera in tabulātō secundō sunt.",
+      "english": "There are four bedrooms on the ground floor; the rest are on the floor above.",
+      "source": "Traupman 121"
+    },
+    {
+      "latin": "Avia ūnīs scālīs habitat, nōs tribus.",
+      "english": "Grandma lives one floor up, and we live three.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -52,15 +84,19 @@
   ],
   "sources": [
     "<a href=\"https://www.alatius.com/ls/index.php?l=tabulatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tabulatus</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 125, 316.",
-    "<a href=\"https://logeion.uchicago.edu/contignatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: contignatio</a>"
-  ],
-  "replaces": [
-    "entry-155"
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 121, 125, 316.",
+    "<a href=\"https://logeion.uchicago.edu/contignatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: contignatio</a>",
+    "Martial 1.117.7.",
+    "Livy 21.62.",
+    "Juvenal 3.199–200.",
+    "Enrico Levi and Arturo Bini, <em>Il latino come lingua viva</em> (1937), p. 267."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-22",
     "by": "Claude"
-  }
+  },
+  "replaces": [
+    "entry-155"
+  ]
 }

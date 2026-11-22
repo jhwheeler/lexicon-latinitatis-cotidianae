@@ -2,6 +2,12 @@
   "id": "does-this-road-lead",
   "english": "does this road lead to …?",
   "pos": "phrase",
+  "also": [
+    "is this the right way?",
+    "is this the right way to …?",
+    "the right way",
+    "are we going the right way?"
+  ],
   "domain": "vectura",
   "terms": [
     {
@@ -14,17 +20,29 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "Rēctēne hāc ad forum ītur?",
+      "english": "Is this the right way to the square?",
+      "source": "composed"
+    },
+    {
+      "latin": "Rēctē īmus? — Rēctē; perge modo.",
+      "english": "Are we going the right way? — Yes; just keep going.",
+      "source": "composed"
+    }
+  ],
   "related": [
     "quickest-way",
     "where-is"
   ],
   "sources": [
-    "<a href=\"https://logeion.org/duco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: duco</a>",
+    "<a href=\"https://logeion.org/duco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: duco</a> · <a href=\"https://logeion.uchicago.edu/recte\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: recte</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 217."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

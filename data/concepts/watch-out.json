@@ -11,7 +11,10 @@
     "hey you, watch out!",
     "keep your eyes open",
     "look around you",
-    "look about you"
+    "look about you",
+    "be careful crossing",
+    "careful when you cross",
+    "careful crossing the road"
   ],
   "domain": "sermo",
   "terms": [
@@ -98,6 +101,11 @@
       "latin": "Heus tū, cavē!",
       "english": "Hey you, watch out!",
       "source": "Traupman 110"
+    },
+    {
+      "latin": "Cavē, dum viam trānsīmus.",
+      "english": "Careful while we cross the road.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -113,7 +121,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

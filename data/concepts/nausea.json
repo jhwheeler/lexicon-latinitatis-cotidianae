@@ -9,7 +9,14 @@
     "feel sick",
     "car sick",
     "car sickness",
-    "motion sickness"
+    "motion sickness",
+    "carsick",
+    "seasick",
+    "seasickness",
+    "be seasick",
+    "travel sick",
+    "travel sickness",
+    "feel sick on the boat"
   ],
   "domain": "corpus",
   "terms": [
@@ -50,6 +57,16 @@
       "latin": "Nauseāsne? Dīc mihi, sī vomitūrus es.",
       "english": "Do you feel sick? Tell me if you’re going to throw up.",
       "source": "composed"
+    },
+    {
+      "latin": "Lassus sum hercle, nāvī ut vectus hūc sum: etiam nunc nauseō.",
+      "english": "I’m worn out, by Hercules, from coming here by ship: I still feel sick.",
+      "source": "Plaut. Amph. 329"
+    },
+    {
+      "latin": "nāvigāvimus sine timōre et sine nauseā",
+      "english": "we sailed without fear and without seasickness",
+      "source": "Cic. Att. 5.13.1"
     }
   ],
   "related": [
@@ -57,11 +74,13 @@
   ],
   "sources": [
     "<a href=\"https://logeion.org/nausea\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nausea</a> · <a href=\"https://logeion.org/nauseo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nauseo</a>",
-    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. nausea, nausea: motion sickness."
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. nausea, nausea: motion sickness.",
+    "Plautus, <em>Amphitruo</em> 329.",
+    "Cicero, <em>Letters to Atticus</em> 5.13.1."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

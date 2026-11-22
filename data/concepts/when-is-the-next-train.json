@@ -1,0 +1,47 @@
+{
+  "id": "when-is-the-next-train",
+  "english": "when is the next train?",
+  "pos": "phrase",
+  "also": [
+    "when is the next bus?",
+    "when does the next train leave?",
+    "the next train"
+  ],
+  "domain": "vectura",
+  "terms": [
+    {
+      "latin": "Quandō proximum trāmen discēdet?",
+      "status": "recommended",
+      "period": "ours",
+      "gloss": "when does the next train leave?",
+      "comment": "Traupman’s question for a bus, <span lang=\"la\">Quandō raeda longa discēdet?</span> (84), with <span lang=\"la\">proximus</span>, the next in order or time."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Trāmen abiit. Quandō proximum discēdet? — Intrā sēmihōram.",
+      "english": "The train has gone. When is the next one? — Within half an hour.",
+      "source": "composed"
+    },
+    {
+      "latin": "Quandō raeda longa discēdet? — Mox. Profectō secundā hōrā.",
+      "english": "When does the bus leave? — Soon. In fact, at eight o’clock.",
+      "source": "Traupman 84"
+    }
+  ],
+  "related": [
+    "train",
+    "schedule",
+    "at-what-time",
+    "departure"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/proximus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: proximus</a> · <a href=\"https://logeion.uchicago.edu/discedo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: discedo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 84."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-22",
+    "by": "Claude"
+  }
+}

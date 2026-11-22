@@ -6,7 +6,12 @@
     "tire",
     "rubber tyre",
     "put air in the tyre",
-    "pump up a tyre"
+    "pump up a tyre",
+    "flat tyre",
+    "flat tire",
+    "puncture",
+    "a flat",
+    "the tyre is flat"
   ],
   "domain": "vectura",
   "terms": [
@@ -35,6 +40,18 @@
       "comment": "Tyre in modern vocabulary."
     }
   ],
+  "phrases": [
+    {
+      "latin": "cummeum canthum īnflāre",
+      "english": "to put air in the tyre",
+      "source": "Traupman 218"
+    },
+    {
+      "latin": "Canthus perforātus est; longius vehī nōn possumus.",
+      "english": "The tyre’s punctured; we can’t drive any further.",
+      "source": "composed"
+    }
+  ],
   "related": [
     "rim",
     "wheel",
@@ -47,14 +64,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "by": "Claude"
-  },
-  "phrases": [
-    {
-      "latin": "cummeum canthum īnflāre",
-      "english": "to put air in the tyre",
-      "source": "Traupman 218"
-    }
-  ]
+  }
 }

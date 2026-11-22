@@ -2,10 +2,17 @@
   "id": "be-on-holiday",
   "english": "be on holiday",
   "pos": "verb",
+  "also": [
+    "on holiday",
+    "go on holiday",
+    "be on vacation",
+    "go on vacation",
+    "on vacation"
+  ],
+  "domain": "sermo",
   "also_under": [
     "tempus"
   ],
-  "domain": "sermo",
   "terms": [
     {
       "latin": "fēriātus esse",
@@ -14,6 +21,13 @@
       "evidence": [
         "Traupman 32, 401"
       ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Decem diēs rūrī fēriātī erimus.",
+      "english": "We’ll be on holiday in the country for ten days.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -26,7 +40,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

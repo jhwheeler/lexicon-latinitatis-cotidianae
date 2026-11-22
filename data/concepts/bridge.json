@@ -2,6 +2,21 @@
   "id": "bridge",
   "english": "bridge",
   "pos": "noun",
+  "also": [
+    "cross the bridge",
+    "go over the bridge",
+    "cross by the bridge",
+    "overpass",
+    "flyover",
+    "road bridge",
+    "bridge over a road",
+    "viaduct",
+    "over the bridge",
+    "across the bridge",
+    "under the bridge",
+    "below the bridge",
+    "beneath the bridge"
+  ],
   "domain": "sermo",
   "terms": [
     {
@@ -10,12 +25,63 @@
       "period": "classical"
     }
   ],
+  "phrases": [
+    {
+      "latin": "Trānsīre pontem nōn potuit",
+      "english": "He could not cross the bridge",
+      "source": "Liv. 21.47"
+    },
+    {
+      "latin": "flūminī miscentur, quod ponte trānsmittitur",
+      "english": "they flow into the river, which is crossed by a bridge",
+      "source": "Plin. Ep. 8.8.5"
+    },
+    {
+      "latin": "Pontem trānsībimus et in alterā rīpā cēnābimus.",
+      "english": "We’ll cross the bridge and have supper on the other bank.",
+      "source": "composed"
+    },
+    {
+      "latin": "super templum Dīvī Augustī ponte trānsmissō Palātium Capitōliumque conjūnxit",
+      "english": "he joined the Palatine to the Capitol with a bridge thrown over the temple of the Deified Augustus",
+      "source": "Suet. Calig. 22"
+    },
+    {
+      "latin": "Per pontem trānsībimus; sub nōbīs vehicula currunt.",
+      "english": "We’ll cross by the bridge; the cars go by underneath us.",
+      "source": "composed"
+    },
+    {
+      "latin": "Dum pontem trānsīmus, manum mihi dā.",
+      "english": "Give me your hand while we go over the bridge.",
+      "source": "composed"
+    },
+    {
+      "latin": "Anatēs sub ponte natant.",
+      "english": "The ducks are swimming under the bridge.",
+      "source": "composed"
+    },
+    {
+      "latin": "Ecce, nāvicula subter pontem lābitur.",
+      "english": "Look, a little boat is gliding under the bridge.",
+      "source": "composed"
+    },
+    {
+      "latin": "Is terminus sacrī profānīque: in superiōre parte nāvigāre tantum, īnfrā etiam natāre concessum.",
+      "english": "That bridge is the boundary between sacred and common water: above it you may only go by boat; below it you may swim as well.",
+      "source": "Plin. Ep. 8.8.6"
+    }
+  ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/pons\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pons</a>"
+    "<a href=\"https://logeion.uchicago.edu/pons\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pons</a>",
+    "Livy 21.47.",
+    "Pliny, <em>Letters</em> 8.8.5.",
+    "Suetonius, <em>Caligula</em> 22.",
+    "Pliny, <em>Letters</em> 8.8.6."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

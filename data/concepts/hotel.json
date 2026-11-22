@@ -8,7 +8,13 @@
     "single room",
     "hole in the wall",
     "cheap lodgings",
-    "stay at a hotel"
+    "stay at a hotel",
+    "book a room",
+    "do you have a room?",
+    "have you any rooms?",
+    "room for two",
+    "a room for the night",
+    "no room at the inn"
   ],
   "domain": "vectura",
   "terms": [
@@ -41,27 +47,6 @@
       "comment": "A humble dwelling, and a low inn or tavern (Petronius, the Digest; Lewis &amp; Short); also a stable."
     }
   ],
-  "related": [
-    "check-in-hotel",
-    "check-out",
-    "floor-storey",
-    "spend-the-night"
-  ],
-  "sources": [
-    "<a href=\"https://logeion.uchicago.edu/deversorium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: deversorium</a> · <a href=\"https://logeion.uchicago.edu/hospitium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: hospitium</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 174, 306, 328, 329.",
-    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
-    "<a href=\"https://logeion.uchicago.edu/stabulum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: stabulum</a>"
-  ],
-  "replaces": [
-    "entry-222",
-    "libelli-222"
-  ],
-  "review": {
-    "status": "draft",
-    "date": "2026-11-09",
-    "by": "Claude"
-  },
   "phrases": [
     {
       "latin": "conclāve duōrum lectōrum",
@@ -77,6 +62,43 @@
       "latin": "in dēversōriō morārī",
       "english": "to stay at a hotel",
       "source": "Traupman 329"
+    },
+    {
+      "latin": "Ecquid locī est duōbus? — Est cubiculum duōrum lectōrum.",
+      "english": "Is there any room for two? — There’s a double room.",
+      "source": "composed"
+    },
+    {
+      "latin": "Cubiculum nōbīs in dēversōriō reservāvī.",
+      "english": "I’ve booked us a room at the hotel.",
+      "source": "composed"
+    },
+    {
+      "latin": "quia nōn erat eīs locus in dīversōriō",
+      "english": "because there was no room for them in the inn",
+      "source": "Vulg. Lc. 2.7"
     }
+  ],
+  "related": [
+    "check-in-hotel",
+    "check-out",
+    "floor-storey",
+    "spend-the-night"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/deversorium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: deversorium</a> · <a href=\"https://logeion.uchicago.edu/hospitium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: hospitium</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 174, 306, 328, 329.",
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+    "<a href=\"https://logeion.uchicago.edu/stabulum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: stabulum</a>",
+    "The Vulgate."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-22",
+    "by": "Claude"
+  },
+  "replaces": [
+    "entry-222",
+    "libelli-222"
   ]
 }

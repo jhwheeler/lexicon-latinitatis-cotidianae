@@ -6,7 +6,13 @@
     "go by plane",
     "travel by car",
     "travel by train",
-    "travel by ship"
+    "travel by ship",
+    "take the bus",
+    "take the train",
+    "take the metro",
+    "take the underground",
+    "go by bus",
+    "go by train"
   ],
   "domain": "vectura",
   "terms": [
@@ -25,6 +31,16 @@
       "latin": "Āëroplanō vehēmur.",
       "english": "We’ll go by plane.",
       "source": "Libellus I, <span lang=\"la\">Iter in Lūsitāniam</span>"
+    },
+    {
+      "latin": "Ferriviā subterrāneā vehēmur; celerius est.",
+      "english": "We’ll take the metro; it’s quicker.",
+      "source": "composed"
+    },
+    {
+      "latin": "autocīnētō (trāmine, āëroplanō, nāvī) vehī",
+      "english": "to travel by car (train, plane, ship)",
+      "source": "Traupman 219"
     }
   ],
   "related": [
@@ -32,12 +48,12 @@
     "fly"
   ],
   "sources": [
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 218.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 218, 219.",
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

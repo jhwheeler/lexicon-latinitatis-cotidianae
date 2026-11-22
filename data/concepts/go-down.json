@@ -8,12 +8,15 @@
     "come down",
     "downstairs",
     "he is downstairs",
-    "downstairs (position)"
+    "downstairs (position)",
+    "down the stairs",
+    "go down the stairs",
+    "run down the stairs"
   ],
+  "domain": "domus",
   "also_under": [
     "ludi"
   ],
-  "domain": "domus",
   "terms": [
     {
       "latin": "dēscendō, dēscendere, dēscendī, dēscēnsum",
@@ -39,22 +42,6 @@
       ]
     }
   ],
-  "related": [
-    "go-up",
-    "stairs",
-    "climb",
-    "slide-down"
-  ],
-  "sources": [
-    "<a href=\"https://logeion.uchicago.edu/descendo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: descendo</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 36, 123, 306.",
-    "<a href=\"https://www.alatius.com/ls/index.php?l=scando\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: scando</a>"
-  ],
-  "review": {
-    "status": "draft",
-    "date": "2026-11-12",
-    "by": "Claude"
-  },
   "phrases": [
     {
       "latin": "Venīte deorsum.",
@@ -76,5 +63,21 @@
       "english": "downstairs (direction)",
       "source": "Traupman 306"
     }
-  ]
+  ],
+  "related": [
+    "go-up",
+    "stairs",
+    "climb",
+    "slide-down"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/descendo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: descendo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 36, 123, 306.",
+    "<a href=\"https://www.alatius.com/ls/index.php?l=scando\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: scando</a>"
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-22",
+    "by": "Claude"
+  }
 }

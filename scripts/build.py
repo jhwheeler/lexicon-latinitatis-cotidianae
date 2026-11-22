@@ -1116,8 +1116,11 @@ def word_index(records):
                         for pair in words[other]['uses']:
                             if pair not in words[head]['within']:
                                 words[head]['within'].append(pair)
+    # A plain word is named before a one-word saying of it (Jack, 22 November 2026: a new saying,
+    # Volō., had moved the page of volō to volo-2.html). So the word keeps the plain address and
+    # the saying takes the number: sānē at sane.html, Sānē. at sane-2.html.
     taken = set()
-    for head in sorted(words):
+    for head in sorted(words, key=lambda h: (h.rstrip('.!?') != h, h)):
         base = re.sub(r'[^a-z0-9]+', '-', fold(head)).strip('-') or 'word'
         slug, n = base, 2
         while slug in taken:

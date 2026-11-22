@@ -45,6 +45,16 @@
       "period": "classical",
       "gloss": "up to, about (a number)",
       "comment": "With a numeral: <span lang=\"la\">ad ducentōs</span>, some two hundred."
+    },
+    {
+      "latin": "plūs minus",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "more or less (with numbers)",
+      "evidence": [
+        "Hirt. B.G. 8.20.1: <span lang=\"la\">nōn longius abesse plūs minus octō mīlibus</span> (Lewis &amp; Short)",
+        "M-O s.v. back and forth: more or less"
+      ]
     }
   ],
   "phrases": [
@@ -57,6 +67,11 @@
       "latin": "Haec ferē dīxit.",
       "english": "He said something like this.",
       "source": "Traupman 102"
+    },
+    {
+      "latin": "magis minusve",
+      "english": "more or less",
+      "source": "Traupman 347"
     }
   ],
   "related": [
@@ -65,12 +80,13 @@
     "about-concerning"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/circiter\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: circiter</a> · <a href=\"https://logeion.uchicago.edu/fere\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fere</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 102."
+    "<a href=\"https://logeion.uchicago.edu/circiter\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: circiter</a> · <a href=\"https://logeion.uchicago.edu/fere\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fere</a> · <a href=\"https://logeion.uchicago.edu/multus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: multus (plus)</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. back and forth: more or less.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 102, 347."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-18",
     "by": "Claude"
   }
 }

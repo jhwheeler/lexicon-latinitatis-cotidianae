@@ -365,6 +365,7 @@ span.kind, p.kind:not(:has(a)) { display:block; padding:10px 0; }
 .ex, .words, .uses, .notes-list { margin:0; padding:0; list-style:none; }
 .ex > li, .words > li, .uses > li { margin:0 0 14px; }
 .uses > li > a { display:inline-flex; align-items:center; min-height:44px; }
+.use-sense { color:var(--soft); font-style:italic; }
 .ex .la { margin:0; font-size:1.15em; font-style:italic; line-height:1.4; }
 .ex .en { margin:1px 0 0; color:var(--soft); }
 /* Every word of an example leads to the page of the word it is a form of, quietly: the same ink and no

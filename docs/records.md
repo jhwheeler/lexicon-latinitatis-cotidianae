@@ -133,7 +133,7 @@ This is the fuller account that stood on the site until 16 November 2026. It is 
 
 ## Latin word pages: `l/<word>.html`
 
-Every Latin word that heads a one-word term (`caccabus` in `caccabus (cacabus), caccabī m.`) gets a page. It lists every record that uses the word, and the longer terms it appears in (`ōlla` in `ōlla ānsāta`, once `ōlla` has a term of its own). It also gives the words of its family (below, "Word families"), the notes on the word, the rulings whose `forms` include it, and the examples from the entries where it is the recommended word or that contain it. The page name drops macrons (`l/tyrocnestis.html`). Two words that differ only in macrons get `-2` and so on, in sorted order.
+Every Latin word that heads a one-word term (`caccabus` in `caccabus (cacabus), caccabī m.`) gets a page. It lists every record that uses the word, and the longer terms it appears in (`ōlla` in `ōlla ānsāta`, once `ōlla` has a term of its own). It also gives the words of its family (below, "Word families"), the notes on the word, the rulings whose `forms` include it, and the examples from the entries where it is the recommended word or that contain it. The page name drops macrons (`l/tyrocnestis.html`). Two words that differ only in macrons get `-2` and so on, in sorted order. A plain word is named before a one-word saying of it, so the word keeps the plain address and the saying takes the number (*sānē* at `l/sane.html`, *Sānē.* at `l/sane-2.html`; Jack, 22 November 2026, after a new saying, *Volō.*, had moved the page of *volō*). A new saying therefore never moves the page of a word.
 
 ### Every Latin word linked
 

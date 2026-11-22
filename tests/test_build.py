@@ -499,6 +499,16 @@ class BuildTests(unittest.TestCase):
                 with self.assertRaisesRegex(ValueError, 'Invalid part of speech'):
                     builder.build_site(self.root)
 
+    def test_a_one_word_saying_never_takes_the_page_of_its_word(self):
+        # Jack, 22 November 2026: a new saying, Volō., had moved the page of volō to volo-2.html.
+        record = self.record('cooking-pot')
+        record['terms'].append({'latin': 'volō, velle, voluī', 'status': 'alternative', 'period': 'classical'})
+        record['terms'].append({'latin': 'Volō.', 'status': 'alternative', 'period': 'classical'})
+        self.save_record(record)
+        outputs = builder.build_site(self.root)
+        self.assertIn('<h1 class="hw" lang="la">volō</h1>', outputs['l/volo.html'])
+        self.assertIn('<h1 class="hw" lang="la">Volō.</h1>', outputs['l/volo-2.html'])
+
     def test_word_pages_get_distinct_slugs_and_link_within_longer_terms(self):
         record = self.record('cooking-pot')
         record['terms'].append({'latin': 'malum, malī n.', 'status': 'alternative', 'period': 'classical'})

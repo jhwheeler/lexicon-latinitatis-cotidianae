@@ -2,6 +2,13 @@
   "id": "traffic-jam",
   "english": "traffic jam",
   "pos": "noun",
+  "also": [
+    "tie-up (on the highway)",
+    "get stuck in traffic",
+    "stuck in traffic",
+    "held up in traffic",
+    "caught in traffic"
+  ],
   "domain": "vectura",
   "terms": [
     {
@@ -13,19 +20,34 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "In affluentiā vehiculāriā haerēmus; sērō adveniēmus.",
+      "english": "We’re stuck in a traffic jam; we’ll be late.",
+      "source": "composed"
+    },
+    {
+      "latin": "Vehicula viam obstruunt; prōgredī nōn possumus.",
+      "english": "The cars are blocking the road; we can’t get on.",
+      "source": "composed"
+    },
+    {
+      "latin": "trīstia rōbustīs luctantur fūnera plaustrīs",
+      "english": "gloomy funerals struggle with heavy wagons",
+      "source": "Hor. Ep. 2.2.74"
+    }
+  ],
   "related": [
     "traffic",
     "rush-hour"
   ],
   "sources": [
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 219."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 219.",
+    "Horace, <em>Epistles</em> 2.2.74."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-20",
+    "date": "2026-11-22",
     "by": "Claude"
-  },
-  "also": [
-    "tie-up (on the highway)"
-  ]
+  }
 }

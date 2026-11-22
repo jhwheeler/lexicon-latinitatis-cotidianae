@@ -3,7 +3,11 @@
   "english": "suburbs",
   "pos": "noun",
   "also": [
-    "suburb"
+    "suburb",
+    "outskirts",
+    "on the outskirts",
+    "edge of town",
+    "on the edge of town"
   ],
   "domain": "urbs",
   "terms": [
@@ -16,16 +20,35 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "quī Terminālibus nūper in suburbium, ut eōdem diē reverterer, īre nōn sum ausus",
+      "english": "I who lately, at the Terminalia, did not dare go out to the outskirts, though I meant to come back the same day",
+      "source": "Cic. Phil. 12.24"
+    },
+    {
+      "latin": "tumulus est in extrēmā parte urbis, āversus ā marī",
+      "english": "there is a hill at the far edge of the city, facing away from the sea",
+      "source": "Liv. 25.25"
+    },
+    {
+      "latin": "Avus in extrēmā urbe habitat, prope agrōs.",
+      "english": "Grandpa lives on the edge of town, near the fields.",
+      "source": "composed"
+    }
+  ],
   "related": [
     "city"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/suburbium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: suburbium</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 206."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 206.",
+    "Cicero, <em>Philippics</em> 12.24.",
+    "Livy 25.25."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

@@ -12,7 +12,9 @@
     "march (of an army)",
     "travel by car",
     "travel by train",
-    "take a trip"
+    "take a trip",
+    "go on a trip",
+    "go on a journey"
   ],
   "domain": "vectura",
   "terms": [
@@ -47,6 +49,16 @@
       "latin": "autocīnētō (trāmine, āëroplanō, nāvī) vehī",
       "english": "to travel by car (train, plane, ship)",
       "source": "Traupman 397"
+    },
+    {
+      "latin": "Ut breviter dīcam, jam dūdum gestiō iter in Ītaliam facere.",
+      "english": "To make a long story short, I’ve been itching for a long time to take a trip to Italy.",
+      "source": "Traupman 91"
+    },
+    {
+      "latin": "iter in Ciliciam faciō per Cappadociam",
+      "english": "I am travelling to Cilicia by way of Cappadocia",
+      "source": "Cic. Fam. 3.6"
     }
   ],
   "related": [
@@ -58,16 +70,17 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/iter\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: iter</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 187, 219.",
-    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
-  ],
-  "replaces": [
-    "entry-223",
-    "libelli-223"
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 91, 187, 219.",
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+    "Cicero, <em>Letters to Friends</em> 3.6."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "by": "Claude"
-  }
+  },
+  "replaces": [
+    "entry-223",
+    "libelli-223"
+  ]
 }

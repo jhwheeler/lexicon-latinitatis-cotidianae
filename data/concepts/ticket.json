@@ -10,7 +10,10 @@
     "punch the ticket",
     "first-class ticket",
     "second-class ticket",
-    "train ticket"
+    "train ticket",
+    "buy a ticket",
+    "buy tickets",
+    "get a ticket"
   ],
   "domain": "vectura",
   "terms": [
@@ -43,22 +46,6 @@
       ]
     }
   ],
-  "related": [
-    "one-way-ticket",
-    "return-ticket",
-    "e-ticket",
-    "ticket-agent",
-    "ticket-office"
-  ],
-  "sources": [
-    "<a href=\"https://logeion.uchicago.edu/tessera\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tessera</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 51, 211–218, 218–219."
-  ],
-  "review": {
-    "status": "draft",
-    "date": "2026-11-12",
-    "by": "Claude"
-  },
   "phrases": [
     {
       "latin": "tessera aditiālis",
@@ -84,6 +71,27 @@
       "latin": "tessera prīmae (secundae) classis",
       "english": "a first-class (second-class) ticket",
       "source": "Traupman 394"
+    },
+    {
+      "latin": "Prius tesserae emendae sunt; tum in trāmen ascendēmus.",
+      "english": "First we have to buy the tickets; then we’ll get on the train.",
+      "source": "composed"
     }
-  ]
+  ],
+  "related": [
+    "one-way-ticket",
+    "return-ticket",
+    "e-ticket",
+    "ticket-agent",
+    "ticket-office"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/tessera\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tessera</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 51, 211–218, 218–219."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-22",
+    "by": "Claude"
+  }
 }

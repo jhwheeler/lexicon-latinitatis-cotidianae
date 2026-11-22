@@ -2,6 +2,11 @@
   "id": "passport",
   "english": "passport",
   "pos": "noun",
+  "also": [
+    "passport control",
+    "passport check",
+    "show your passport"
+  ],
   "domain": "vectura",
   "terms": [
     {
@@ -29,6 +34,16 @@
       "latin": "Diplōmata? Tesserās?",
       "english": "Passports? Tickets?",
       "source": "Libellus I, <span lang=\"la\">Iter in Lūsitāniam</span>"
+    },
+    {
+      "latin": "Ad diplōmatum recognitiōnem venīmus: diplōmata custōdibus ostendenda sunt.",
+      "english": "We’re at passport control: we have to show our passports to the officers.",
+      "source": "composed"
+    },
+    {
+      "latin": "Custōs diplōma meum īnspexit et mihi reddidit.",
+      "english": "The officer looked at my passport and gave it back to me.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -38,15 +53,17 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/diploma\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: diploma</a> · <a href=\"https://logeion.uchicago.edu/commeatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: commeatus</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 217.",
-    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
-  ],
-  "replaces": [
-    "entry-217",
-    "libelli-217"
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+    "Caesar, <em>Gallic War</em> 1.28.",
+    "Livy 27.17."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-22",
     "by": "Claude"
-  }
+  },
+  "replaces": [
+    "entry-217",
+    "libelli-217"
+  ]
 }

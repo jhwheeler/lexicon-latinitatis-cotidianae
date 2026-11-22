@@ -1,0 +1,56 @@
+{
+  "id": "it-takes-an-hour",
+  "english": "it takes an hour",
+  "pos": "phrase",
+  "also": [
+    "it’s an hour away",
+    "it takes half an hour",
+    "it takes a day"
+  ],
+  "domain": "vectura",
+  "terms": [
+    {
+      "latin": "Hōrae iter est.",
+      "status": "recommended",
+      "period": "ours",
+      "gloss": "it’s an hour’s journey",
+      "comment": "Livy’s <span lang=\"la\">id diēī iter est</span> with an hour for the day. We have found no classical instance with <span lang=\"la\">hōrae</span>."
+    },
+    {
+      "latin": "Diēī iter est.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "it’s a day’s journey",
+      "evidence": [
+        "Liv. 45.28: <span lang=\"la\">id diēī iter est</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Quot hōrārum iter est? — Sēmihōrae; mox aderimus.",
+      "english": "How long does it take? — Half an hour; we’ll soon be there.",
+      "source": "composed"
+    },
+    {
+      "latin": "quō cum Perseus obviam Amphipolī omnī solūtus custōdiā prōcessisset — id diēī iter est —",
+      "english": "when Perseus, freed from all guard, had come out to meet him at Amphipolis (it is a day’s journey)",
+      "source": "Liv. 45.28"
+    }
+  ],
+  "related": [
+    "hour",
+    "half-an-hour",
+    "how-long",
+    "journey"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/hora\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: hora</a> · <a href=\"https://logeion.uchicago.edu/dies\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dies</a> · <a href=\"https://logeion.uchicago.edu/iter\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: iter</a>",
+    "Livy 45.28."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-22",
+    "by": "Claude"
+  }
+}

@@ -9,12 +9,16 @@
     "placard",
     "label",
     "notice board",
-    "shop sign"
+    "shop sign",
+    "road sign",
+    "street sign",
+    "signpost",
+    "direction sign"
   ],
+  "domain": "urbs",
   "also_under": [
     "verba"
   ],
-  "domain": "urbs",
   "terms": [
     {
       "latin": "titulus, titulī m.",
@@ -54,6 +58,11 @@
       "latin": "Venit Athēnās philosophus Athēnodōrus, lēgit titulum audītōque pretiō …",
       "english": "the philosopher Athenodorus came to Athens, read the notice, and when he heard the price …",
       "source": "Plin. Ep. 7.27.7"
+    },
+    {
+      "latin": "Quid in illō titulō scrīptum est? — Ad portum hāc.",
+      "english": "What does that sign say? — This way to the harbour.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -65,7 +74,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

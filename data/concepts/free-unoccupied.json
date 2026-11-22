@@ -7,7 +7,10 @@
     "vacant",
     "not taken",
     "unoccupied",
-    "is this seat free?"
+    "is this seat free?",
+    "is this seat taken?",
+    "is this place taken?",
+    "is anyone sitting here?"
   ],
   "domain": "verba",
   "terms": [
@@ -45,6 +48,11 @@
       "latin": "Vacatne hic locus?",
       "english": "Is this seat free?",
       "source": "composed"
+    },
+    {
+      "latin": "Vacatne hic locus? — Vacat; cōnsīde, sīs.",
+      "english": "Is this seat taken? — No, it’s free; do sit down.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -58,7 +66,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

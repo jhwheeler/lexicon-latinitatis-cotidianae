@@ -2,6 +2,13 @@
   "id": "taxi",
   "english": "taxi",
   "pos": "noun",
+  "also": [
+    "cab",
+    "get a taxi",
+    "call a taxi",
+    "take a taxi",
+    "hire a taxi"
+  ],
   "domain": "vectura",
   "terms": [
     {
@@ -11,6 +18,18 @@
       "evidence": [
         "Traupman 218"
       ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Raedam meritōriam arcesse, quaesō; sarcinae nimis gravēs sunt.",
+      "english": "Call a taxi, please; the bags are too heavy.",
+      "source": "composed"
+    },
+    {
+      "latin": "Ad statiōnem raedam meritōriam condūcēmus.",
+      "english": "We’ll get a taxi at the station.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -23,10 +42,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-22",
     "by": "Claude"
-  },
-  "also": [
-    "cab"
-  ]
+  }
 }

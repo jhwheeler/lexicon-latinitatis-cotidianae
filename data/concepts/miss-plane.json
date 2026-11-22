@@ -4,7 +4,10 @@
   "sense": "a plane",
   "pos": "verb",
   "also": [
-    "miss the plane"
+    "miss the plane",
+    "miss the bus",
+    "miss the train",
+    "miss the boat"
   ],
   "domain": "vectura",
   "terms": [
@@ -14,6 +17,18 @@
       "period": "ours",
       "gloss": "miss the plane",
       "comment": "A description of ours: literally, come too late for the plane, with <span lang=\"la\">sērius</span>, Traupman’s “too late” (pp. 87, 337). Traupman and Morgan–Owens have no phrase for missing a plane or a train; Traupman’s miss, <span lang=\"la\">dēsīderāre</span> (p. 155), is to feel the lack of someone."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Properā, nē ad trāmen sērius veniāmus!",
+      "english": "Hurry, or we’ll miss the train!",
+      "source": "composed"
+    },
+    {
+      "latin": "Ēheu, abiit autoraeda longa! Alteram exspectēmus.",
+      "english": "Oh no, we’ve missed the bus! Let’s wait for the next one.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -26,7 +41,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-15",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

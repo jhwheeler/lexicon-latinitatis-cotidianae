@@ -1,0 +1,59 @@
+{
+  "id": "street-name",
+  "english": "street name",
+  "pos": "noun",
+  "also": [
+    "name of a street",
+    "what street is this?",
+    "what’s this street called?"
+  ],
+  "domain": "urbs",
+  "terms": [
+    {
+      "latin": "nōmen viae",
+      "status": "recommended",
+      "period": "ours",
+      "gloss": "the name of a street",
+      "comment": "A description. We have found no set term in Lewis &amp; Short, Traupman, Morgan–Owens, or Levi–Bini. Roman streets had names (<span lang=\"la\">vīcus Tuscus, vīcus Scelerātus, Sacra Via</span>), and Latin says what a street is called with <span lang=\"la\">vocant</span> or <span lang=\"la\">appellant</span>, as Livy does, or with the dative and <span lang=\"la\">nōmen est</span>, as Cicero says of a spring: <span lang=\"la\">Quid huic viae nōmen est?</span>"
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Quid huic viae nōmen est? — Via Nova.",
+      "english": "What’s this street called? — New Street.",
+      "source": "composed"
+    },
+    {
+      "latin": "Hīs locus ad habitandum datus quem deinde Tuscum vīcum appellārunt.",
+      "english": "They were given a quarter to live in, which was afterwards called Tuscan Street.",
+      "source": "Liv. 2.14"
+    },
+    {
+      "latin": "monumentōque locus est (Scelerātum vīcum vocant)",
+      "english": "and the place is a reminder of it: they call it Wicked Street",
+      "source": "Liv. 1.48"
+    },
+    {
+      "latin": "In hāc īnsulā extrēmā est fōns aquae dulcis, cui nōmen Arethūsa est",
+      "english": "at the tip of this island there is a spring of fresh water called Arethusa",
+      "source": "Cic. Verr. 2.4.118"
+    }
+  ],
+  "related": [
+    "name",
+    "road",
+    "address-postal",
+    "street-map",
+    "where-is"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/nomen\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nomen</a> · <a href=\"https://logeion.uchicago.edu/via\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: via</a> · <a href=\"https://logeion.uchicago.edu/vicus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vicus</a>",
+    "Livy 1.48; 2.14.",
+    "Cicero, <em>In Verrem</em> 2.4.118."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-22",
+    "by": "Claude"
+  }
+}

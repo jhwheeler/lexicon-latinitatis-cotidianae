@@ -12,12 +12,19 @@
     "far be it from me",
     "not far from here",
     "be far off",
-    "be a long way off"
+    "be a long way off",
+    "is it far?",
+    "it’s not far",
+    "it isn’t far",
+    "is it far from here?",
+    "in the distance",
+    "far off in the distance",
+    "see something in the distance"
   ],
+  "domain": "verba",
   "also_under": [
     "vectura"
   ],
-  "domain": "verba",
   "terms": [
     {
       "latin": "longē",
@@ -105,6 +112,36 @@
       "latin": "longē distāre",
       "english": "to be a long way off",
       "source": "Traupman 404"
+    },
+    {
+      "latin": "Longēne abest? — Nōn longē; mox aderimus.",
+      "english": "Is it far? — Not far; we’ll soon be there.",
+      "source": "composed"
+    },
+    {
+      "latin": "Haud procul est ā stadiō.",
+      "english": "It isn’t far from the stadium.",
+      "source": "Traupman 173"
+    },
+    {
+      "latin": "ā quō locō fundus is dē quō agitur nōn longē abest",
+      "english": "not far from which lies the farm this case is about",
+      "source": "Cic. Caec. 20"
+    },
+    {
+      "latin": "Vidēsne nāvem procul in marī?",
+      "english": "Can you see the ship in the distance, out at sea?",
+      "source": "composed"
+    },
+    {
+      "latin": "et jam summa procul vīllārum culmina fūmant",
+      "english": "and already the rooftops of the farmhouses are smoking in the distance",
+      "source": "Verg. Ecl. 1.82"
+    },
+    {
+      "latin": "sed Ergasilus estne hic, procul quem videō?",
+      "english": "but is that Ergasilus I see there in the distance?",
+      "source": "Plaut. Capt. 788"
     }
   ],
   "related": [
@@ -116,11 +153,14 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/longe\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: longe</a> · <a href=\"https://logeion.uchicago.edu/procul\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: procul</a> · <a href=\"https://logeion.uchicago.edu/longinquus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: longinquus</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 313."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 173, 313.",
+    "Cicero, <em>Pro Caecina</em> 20.",
+    "Vergil, <em>Eclogues</em> 1.82.",
+    "Plautus, <em>Captivi</em> 788."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "by": "Claude"
   }
 }

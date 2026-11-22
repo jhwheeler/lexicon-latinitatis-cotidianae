@@ -7,7 +7,12 @@
     "gasoline",
     "get gas",
     "gas tank",
-    "gas pump"
+    "gas pump",
+    "run out of petrol",
+    "out of petrol",
+    "run out of gas",
+    "out of gas",
+    "the tank is empty"
   ],
   "domain": "vectura",
   "terms": [
@@ -37,6 +42,16 @@
       "latin": "immissārium benzīnārium",
       "english": "the gas tank",
       "source": "Traupman 320"
+    },
+    {
+      "latin": "Benzīnum nōs dēfēcit; ad statiōnem benzīnāriam pedibus eundum est.",
+      "english": "We’ve run out of petrol; we’ll have to walk to the petrol station.",
+      "source": "composed"
+    },
+    {
+      "latin": "ipsōs rēs frūmentāria dēficere coepit",
+      "english": "they themselves began to run short of corn",
+      "source": "Caes. BG 2.10"
     }
   ],
   "related": [
@@ -45,14 +60,15 @@
   ],
   "sources": [
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. gasoline.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 216, 320."
-  ],
-  "replaces": [
-    "entry-536"
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 216, 320.",
+    "Caesar, <em>Gallic War</em> 2.10."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-22",
     "by": "Claude"
-  }
+  },
+  "replaces": [
+    "entry-536"
+  ]
 }

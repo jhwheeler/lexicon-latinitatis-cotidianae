@@ -6,7 +6,10 @@
     "across the street from",
     "across from",
     "opposite of",
-    "opposite to"
+    "opposite to",
+    "on the other side of the road",
+    "on the other side of the street",
+    "across the road"
   ],
   "domain": "vectura",
   "terms": [
@@ -63,6 +66,28 @@
       "comment": "Placed after its noun, <span lang=\"la\">versus</span> means towards, in the direction of: <span lang=\"la\">Rōmam versus</span> (Lewis &amp; Short); it does not mean opposite."
     }
   ],
+  "phrases": [
+    {
+      "latin": "ex adversō (+ gen.)",
+      "english": "opposite (of)",
+      "source": "Traupman 354"
+    },
+    {
+      "latin": "apud ipsum lacum est pistrilla, eī exadvorsum fabrica",
+      "english": "right by the pool there’s a little mill, and a workshop opposite it",
+      "source": "Ter. Ad. 583–584"
+    },
+    {
+      "latin": "Pistrīna trāns viam est, exadversum domum nostram.",
+      "english": "The bakery is on the other side of the road, opposite our house.",
+      "source": "composed"
+    },
+    {
+      "latin": "Exspectā dum autoraedae praeterierint; tum in alteram viae partem trānsībimus.",
+      "english": "Wait till the cars have gone by; then we’ll cross to the other side of the road.",
+      "source": "composed"
+    }
+  ],
   "related": [
     "on-the-right",
     "on-the-left"
@@ -70,18 +95,12 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/adversus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: adversus</a>",
     "<a href=\"https://logeion.org/exadversum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: exadversum</a> · <a href=\"https://logeion.uchicago.edu/contra\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: contra</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 174, 354."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 174, 354.",
+    "Terence, <em>Adelphoe</em> 583–584."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-22",
     "by": "Claude"
-  },
-  "phrases": [
-    {
-      "latin": "ex adversō (+ gen.)",
-      "english": "opposite (of)",
-      "source": "Traupman 354"
-    }
-  ]
+  }
 }

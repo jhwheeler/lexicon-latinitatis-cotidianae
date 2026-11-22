@@ -2,10 +2,18 @@
   "id": "at-what-time",
   "english": "at what time?",
   "pos": "phrase",
+  "also": [
+    "what time do you get up?",
+    "what time does it leave?",
+    "what time does it arrive?",
+    "what time does the train leave?",
+    "what time does the bus come?",
+    "when do we arrive?"
+  ],
+  "domain": "sermo",
   "also_under": [
     "tempus"
   ],
-  "domain": "sermo",
   "terms": [
     {
       "latin": "Quotā hōrā …?",
@@ -16,26 +24,33 @@
       ]
     }
   ],
-  "related": [
-    "what-time-is-it"
-  ],
-  "sources": [
-    "<a href=\"https://logeion.org/quotus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quotus</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 81."
-  ],
-  "review": {
-    "status": "draft",
-    "date": "2026-11-12",
-    "by": "Claude"
-  },
-  "also": [
-    "what time do you get up?"
-  ],
   "phrases": [
     {
       "latin": "Quotā hōrā māne surgis? — Hōrā septimā mātūtīnā.",
       "english": "What time do you get up in the morning? — At seven o’clock.",
       "source": "Traupman 81"
+    },
+    {
+      "latin": "Quotā hōrā trāmen meum abscēdit? — Hōrā ūndecimā.",
+      "english": "At what time does my train leave? — At eleven o’clock.",
+      "source": "Traupman 211"
+    },
+    {
+      "latin": "Quotā hōrā Lisbōnam adveniēmus?",
+      "english": "What time will we get to Lisbon?",
+      "source": "composed"
     }
-  ]
+  ],
+  "related": [
+    "what-time-is-it"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.org/quotus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quotus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 81, 211."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-22",
+    "by": "Claude"
+  }
 }

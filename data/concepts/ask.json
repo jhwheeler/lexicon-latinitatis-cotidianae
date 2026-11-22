@@ -2,10 +2,27 @@
   "id": "ask",
   "english": "ask",
   "pos": "verb",
+  "also": [
+    "ask a question",
+    "ask further questions",
+    "he asked me whether",
+    "I want to ask you this",
+    "ask someone for something",
+    "why do you ask me that?",
+    "that’s not what I’m asking",
+    "ask someone something",
+    "ask for something",
+    "ask about",
+    "interrogate",
+    "question (someone)",
+    "ask the way",
+    "ask for directions",
+    "ask someone the way"
+  ],
+  "domain": "sermo",
   "also_under": [
     "verba"
   ],
-  "domain": "sermo",
   "terms": [
     {
       "latin": "quaerō, quaerere, quaesīvī, quaesītum",
@@ -54,36 +71,6 @@
       "comment": "The frequentative of <span lang=\"la\">rogō</span>, a favourite word of Plautus and Terence and very rare elsewhere (Lewis &amp; Short)."
     }
   ],
-  "related": [
-    "look-for",
-    "what-do-you-want"
-  ],
-  "sources": [
-    "<a href=\"https://logeion.uchicago.edu/quaero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quaero</a> · <a href=\"https://logeion.uchicago.edu/rogito\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: rogito</a>",
-    "<a href=\"https://logeion.uchicago.edu/interrogo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: interrogo</a>",
-    "<a href=\"https://logeion.uchicago.edu/rogo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: rogo</a> · <a href=\"https://logeion.uchicago.edu/quaero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quaero</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 28, 93, 334.",
-    "Plautus, <em>Asinaria</em> 578b; <em>Curculio</em> 726b."
-  ],
-  "review": {
-    "status": "draft",
-    "date": "2026-11-12",
-    "by": "Claude"
-  },
-  "also": [
-    "ask a question",
-    "ask further questions",
-    "he asked me whether",
-    "I want to ask you this",
-    "ask someone for something",
-    "why do you ask me that?",
-    "that’s not what I’m asking",
-    "ask someone something",
-    "ask for something",
-    "ask about",
-    "interrogate",
-    "question (someone)"
-  ],
   "phrases": [
     {
       "latin": "aliud tē rogō",
@@ -114,6 +101,33 @@
       "latin": "Rogitā quod vīs.",
       "english": "Ask away, whatever you like.",
       "source": "Plaut. Asin. 578b"
+    },
+    {
+      "latin": "Rogō, inquam, māter, numquid scīs ubi ego habitem?",
+      "english": "“Please, mother,” I said, “do you happen to know where I live?”",
+      "source": "Petr. 7"
+    },
+    {
+      "latin": "Rogēmus hunc senem quā ad portum ītur.",
+      "english": "Let’s ask this old man which way it is to the harbour.",
+      "source": "composed"
     }
-  ]
+  ],
+  "related": [
+    "look-for",
+    "what-do-you-want"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/quaero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quaero</a> · <a href=\"https://logeion.uchicago.edu/rogito\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: rogito</a>",
+    "<a href=\"https://logeion.uchicago.edu/interrogo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: interrogo</a>",
+    "<a href=\"https://logeion.uchicago.edu/rogo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: rogo</a> · <a href=\"https://logeion.uchicago.edu/quaero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quaero</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 28, 93, 334.",
+    "Plautus, <em>Asinaria</em> 578b; <em>Curculio</em> 726b.",
+    "Petronius, <em>Satyrica</em> 7."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-22",
+    "by": "Claude"
+  }
 }

@@ -12,7 +12,7 @@ page per concept record), l/<word>.html (one page per Latin word that heads a
 term), how-we-decide.html (editorial policy), how-practice-works.html (how the
 practice chooses and spaces its cards, with its sources), rulings.html (the rulings
 register), practice.html (vocabulary practice), hora.html (the clock game), chartae.html (the picture
-cards of animals, plants, the body, food and drink, and household things, with their pictures in chartae/), the gap games (theodorus.html, quis-pulsat.html: one
+cards of animals, plants, the body, food and drink, household things, clothes, and craftsmen's tools, with their pictures in chartae/), the gap games (theodorus.html, quis-pulsat.html: one
 page for each file in src/lacunae/, made from src/lacunae.html), and
 review.html (what is reviewed, and a reader's flags), sitemap.xml, and in assets/ the stylesheet,
 the page, search, practice and review scripts, the search data, the practice cards (practice-data.js), the picture cards (chartae-data.js), the redirects
@@ -3482,8 +3482,12 @@ def legacy_script(site):
 # The picture cards, Chartae pictae (chartae.html; Jack, 20 November 2026: first the animals, and the
 # same day one exercise for every subject, the reader choosing which, not a game for each).
 # data/chartae.json has three lists. "subjects" are the subjects (animalia, plantae, since 20
-# November 2026 corpus, the human body, and since 21 November 2026 cibi, food and drink, and
-# domestica, household things), each with id, latin, and english. "groups" are the kinds,
+# November 2026 corpus, the human body, since 21 November 2026 cibi, food and drink, and
+# domestica, household things, and since 21-22 November 2026 vestimenta, clothes, and fabrilia,
+# craftsmen's tools, at Jack's wish: subjects of their own, not kinds of the household things),
+# each with id, latin, and english. The Latin names Vestīmenta and Īnstrūmenta fabrīlia are Jack's
+# words; the English names of those two subjects and the names of their kinds are the coordinating
+# session's, for Jack's review. "groups" are the kinds,
 # each with id, subject (one of the subjects), latin, and english; a kind may have no cards yet, and
 # the page then does not show it. "cards" are the cards. Kinds and cards are two sets of names: a
 # kind may share its id with a card (the kind caput and the card caput; the body's kind truncus and
@@ -3491,7 +3495,9 @@ def legacy_script(site):
 # kinds and cards among the cards (in the data, the page's buttons, and the stored deck, which holds
 # kinds, while the progress holds cards).
 # Two cards may share a Latin word when the things differ, each under its own id (patella, the
-# kneecap, and patellavas, a plate; spongia, the sea sponge, and spongiaculinae, a kitchen sponge).
+# kneecap, and patellavas, a plate; spongia, the sea sponge, and spongiaculinae, a kitchen sponge;
+# loculus, a drawer, and loculusvestis, a pocket; cochlea, the snail, and cochleaferrea, a screw;
+# scalae, stairs, and scalaefabri, a ladder).
 # A card: id (unique across every subject: the picture is src/chartae/<id>.jpg, 720 by 511, its
 # preview data/chartae-previews/<id>.jpg, and the id is the key of the card's progress), latin (the dictionary form), also (optional, on a card
 # of any subject: a second Latin word for the same thing, as a full dictionary form, shown on the
@@ -3520,7 +3526,8 @@ def legacy_script(site):
 # (Juniperus, Quercus ilex; × and subsp. where nomenclature uses them). On a card of the body it is
 # the term of the Terminologia Anatomica, the anatomists' international Latin, written as they write
 # it: the first word capitalised, no macrons (Hepar, Vesica urinaria, Encephalon). A card of food and
-# drink or of household things has none: a loaf, a dish, a drink, or a pot is not a taxon. The page shows it
+# drink, of household things, of clothes, or of craftsmen's tools has none: a loaf, a dish, a pot, a
+# shoe, or a hammer is not a taxon. The page shows it
 # after the English name in a language of its own (la-x-taxon), so that the display options leave
 # it alone.
 # Every card has a small preview of its picture in the card data itself (Jack, 21 November 2026, on his

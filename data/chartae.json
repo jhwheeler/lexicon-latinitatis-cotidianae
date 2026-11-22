@@ -24,6 +24,16 @@
    "id": "domestica",
    "latin": "Rēs domesticae",
    "english": "Household things"
+  },
+  {
+   "id": "vestimenta",
+   "latin": "Vestīmenta",
+   "english": "Clothes"
+  },
+  {
+   "id": "fabrilia",
+   "latin": "Īnstrūmenta fabrīlia",
+   "english": "Craftsmen's tools"
   }
  ],
  "groups": [
@@ -188,6 +198,54 @@
    "subject": "domestica",
    "latin": "Domus",
    "english": "The house"
+  },
+  {
+   "id": "vestes",
+   "subject": "vestimenta",
+   "latin": "Vestēs",
+   "english": "Garments"
+  },
+  {
+   "id": "calceamenta",
+   "subject": "vestimenta",
+   "latin": "Calceāmenta",
+   "english": "Footwear"
+  },
+  {
+   "id": "ornatus",
+   "subject": "vestimenta",
+   "latin": "Ōrnātus",
+   "english": "Things worn and carried"
+  },
+  {
+   "id": "sartoria",
+   "subject": "vestimenta",
+   "latin": "Acus et fīlum",
+   "english": "Needle and thread"
+  },
+  {
+   "id": "ferramenta",
+   "subject": "fabrilia",
+   "latin": "Ferrāmenta",
+   "english": "Hand tools"
+  },
+  {
+   "id": "mensurae",
+   "subject": "fabrilia",
+   "latin": "Mēnsūrae",
+   "english": "Measuring tools"
+  },
+  {
+   "id": "clavi",
+   "subject": "fabrilia",
+   "latin": "Clāvī et cochleae",
+   "english": "Nails, screws, and the like"
+  },
+  {
+   "id": "materia",
+   "subject": "fabrilia",
+   "latin": "Māteria",
+   "english": "Materials"
   }
  ],
  "cards": [
@@ -7888,6 +7946,70 @@
    }
   },
   {
+   "id": "tapete",
+   "latin": "tapēte, tapētis n.",
+   "english": "rug",
+   "group": "supellex",
+   "line": "Tapēte molle humī strātum est.",
+   "source": "composed",
+   "record": "rug",
+   "image": {
+    "file": "Snippeteppe.jpg",
+    "author": "Heidi Thöni Sletten",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Snippeteppe.jpg"
+   }
+  },
+  {
+   "id": "aulaeum",
+   "latin": "aulaeum, aulaeī n.",
+   "english": "curtain",
+   "group": "supellex",
+   "line": "Aulaea vesperī fenestrīs obdūcuntur.",
+   "source": "composed",
+   "record": "curtain",
+   "image": {
+    "file": "Gordijnen aan venster.JPG",
+    "author": "Nieuw~commonswiki",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Gordijnen_aan_venster.JPG"
+   }
+  },
+  {
+   "id": "corbis",
+   "latin": "corbis, corbis f.",
+   "english": "basket",
+   "group": "supellex",
+   "line": "repositōrium allātum est cum corbe, in quō gallīna erat lignea",
+   "source": "Petr. Sat. 33",
+   "record": "basket",
+   "image": {
+    "file": "Açafate.jpg",
+    "author": "Hipersyl",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:A%C3%A7afate.jpg"
+   }
+  },
+  {
+   "id": "clavis",
+   "latin": "clāvis, clāvis f.",
+   "english": "key",
+   "group": "supellex",
+   "line": "jamdūdum in vīllā sedēns exspectō cum clāvī tē",
+   "source": "Varro RR I 56",
+   "record": "key",
+   "image": {
+    "file": "Clé 111.JPG",
+    "author": "Vatadoshu",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Cl%C3%A9_111.JPG"
+   }
+  },
+  {
    "id": "patellavas",
    "latin": "patella, patellae f.",
    "english": "plate",
@@ -8785,6 +8907,22 @@
    }
   },
   {
+   "id": "latrina",
+   "latin": "lātrīna, lātrīnae f.",
+   "english": "toilet",
+   "group": "balneum",
+   "line": "Lātrīna post ūsum aquā prōluitur.",
+   "source": "composed",
+   "record": "toilet",
+   "image": {
+    "file": "Toilet with flush water tank.jpg",
+    "author": "Jarlhelm",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Toilet_with_flush_water_tank.jpg"
+   }
+  },
+  {
    "id": "domus",
    "latin": "domus, domūs f.",
    "also": "aedēs, aedium f. pl.",
@@ -9168,6 +9306,1256 @@
     "licence": "CC BY-SA 4.0",
     "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
     "page": "https://commons.wikimedia.org/wiki/File:Boundary_gate_and_fence.jpg"
+   }
+  },
+  {
+   "id": "subucula",
+   "latin": "subūcula, subūculae f.",
+   "english": "shirt",
+   "group": "vestes",
+   "line": "Vīs tū, Emmanuel, recentem subūculam?",
+   "source": "Vives Exerc. 1",
+   "record": "shirt",
+   "image": {
+    "file": "Shirt, men's (AM 2015.44.1-1).jpg",
+    "author": "Manhattan",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Shirt,_men%27s_(AM_2015.44.1-1).jpg"
+   }
+  },
+  {
+   "id": "tunicula",
+   "latin": "tunicula, tuniculae f.",
+   "english": "T-shirt",
+   "group": "vestes",
+   "line": "Unde adfers istam tuniculam?",
+   "source": "Corder. Coll. II 36",
+   "record": "t-shirt",
+   "image": {
+    "file": "Worn T-shirt white.png",
+    "author": "Taylor 49",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Worn_T-shirt_white.png"
+   }
+  },
+  {
+   "id": "thoraxlaneus",
+   "latin": "thōrāx lāneus, thōrācis lāneī m.",
+   "english": "sweater",
+   "group": "vestes",
+   "line": "Sedeō in lectō, thōrācem injiciō umerīs quasi statim surrēctūrus.",
+   "source": "Corder. Coll. III 42",
+   "record": "sweater",
+   "image": {
+    "file": "Hand knitted sweater.jpg",
+    "author": "Christmas videos",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Hand_knitted_sweater.jpg"
+   }
+  },
+  {
+   "id": "jacca",
+   "latin": "jacca, jaccae f.",
+   "english": "jacket",
+   "group": "vestes",
+   "line": "Jaccam indue; forīs frīgus est.",
+   "source": "composed",
+   "record": "jacket",
+   "image": {
+    "file": "Black worn leather jacket.jpg",
+    "author": "W.carter",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Black_worn_leather_jacket.jpg"
+   }
+  },
+  {
+   "id": "paenula",
+   "latin": "paenula, paenulae f.",
+   "english": "coat",
+   "group": "vestes",
+   "line": "ex duābus paenulīs altera strāgulum, altera opertōrium facta est",
+   "source": "Sen. Ep. 87, 2",
+   "record": "coat",
+   "image": {
+    "file": "Winter coat with houndstooth pattern over long knitted dress with boots.jpg",
+    "author": "Tobias ToMar Maier",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Winter_coat_with_houndstooth_pattern_over_long_knitted_dress_with_boots.jpg"
+   }
+  },
+  {
+   "id": "bracae",
+   "latin": "brācae, brācārum f. pl.",
+   "english": "trousers",
+   "group": "vestes",
+   "line": "pellibus et sūtīs arcent mala frīgora brācīs",
+   "source": "Ov. Trist. III 10, 19",
+   "record": "trousers",
+   "image": {
+    "file": "Grey Jeans (3168533938).jpg",
+    "author": "Marcus Quigmire",
+    "licence": "CC BY-SA 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Grey_Jeans_(3168533938).jpg"
+   }
+  },
+  {
+   "id": "bracaecurtae",
+   "latin": "brācae curtae, brācārum curtārum f. pl.",
+   "english": "shorts",
+   "group": "vestes",
+   "line": "Aestāte brācās curtās gerimus.",
+   "source": "composed",
+   "record": "shorts",
+   "image": {
+    "file": "Denim Shorts.jpg",
+    "author": "Bobbi Vie",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Denim_Shorts.jpg"
+   }
+  },
+  {
+   "id": "castula",
+   "latin": "castula, castulae f.",
+   "english": "skirt",
+   "group": "vestes",
+   "line": "Castula ā lumbīs dēpendet.",
+   "source": "composed",
+   "record": "skirt",
+   "image": {
+    "file": "Full pleated skirt.jpg",
+    "author": "Monsieur Duroc",
+    "licence": "CC BY-SA 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Full_pleated_skirt.jpg"
+   }
+  },
+  {
+   "id": "globulus",
+   "latin": "globulus, globulī m.",
+   "english": "button",
+   "group": "vestes",
+   "line": "Globulus dē subūculā cecidit.",
+   "source": "composed",
+   "record": "button-clothes",
+   "image": {
+    "file": "Blue button on blue clothing.jpg",
+    "author": "martinak15",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Blue_button_on_blue_clothing.jpg"
+   }
+  },
+  {
+   "id": "loculusvestis",
+   "latin": "loculus, loculī m.",
+   "english": "pocket",
+   "group": "vestes",
+   "line": "Quid in loculō habēs? Lapidēs iterum?",
+   "source": "composed",
+   "record": "pocket",
+   "image": {
+    "file": "Jeans pocket back.jpg",
+    "author": "Dvortygirl",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Jeans_pocket_back.jpg"
+   }
+  },
+  {
+   "id": "clausuratractilis",
+   "latin": "clausūra tractilis, clausūrae tractilis f.",
+   "english": "zip",
+   "group": "vestes",
+   "line": "Clausūram tractilem sūrsum trahe.",
+   "source": "composed",
+   "record": "zip",
+   "image": {
+    "file": "Reißverschluss offen.jpg",
+    "author": "Rabensteiner",
+    "licence": "Public domain",
+    "licence_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Rei%C3%9Fverschluss_offen.jpg"
+   }
+  },
+  {
+   "id": "toga",
+   "latin": "toga, togae f.",
+   "english": "toga",
+   "group": "vestes",
+   "line": "līs numquam, toga rāra, mēns quiēta",
+   "source": "Mart. X 47, 5",
+   "record": "toga",
+   "image": {
+    "file": "Togatus (Louvre, Ma 1212).jpg",
+    "author": "Tangopaso",
+    "licence": "Public domain",
+    "licence_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Togatus_(Louvre,_Ma_1212).jpg"
+   }
+  },
+  {
+   "id": "tunica",
+   "latin": "tunica, tunicae f.",
+   "english": "tunic",
+   "group": "vestes",
+   "line": "Quī habet duās tunicās, det nōn habentī",
+   "source": "Lc. 3, 11",
+   "record": "tunic",
+   "image": {
+    "file": "Camillus Musei Capitolini MC1184.jpg",
+    "author": "Marie-Lan Nguyen",
+    "licence": "Public domain",
+    "licence_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Camillus_Musei_Capitolini_MC1184.jpg"
+   }
+  },
+  {
+   "id": "pallium",
+   "latin": "pallium, palliī n.",
+   "english": "cloak",
+   "group": "vestes",
+   "line": "pendet indecōrē in sinistrum latus pallium",
+   "source": "Pont. Progymn. I 12",
+   "record": "cloak",
+   "image": {
+    "file": "Statue of a man in a himation of the Dresden Zeus, from the Nymphaeum of Herodes Atticus at Olympia, dating from between 149 and 153 AD (posthumous), Olympia Archaeological Museum, Greece (13983898326).jpg",
+    "author": "Carole Raddato",
+    "licence": "CC BY-SA 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Statue_of_a_man_in_a_himation_of_the_Dresden_Zeus,_from_the_Nymphaeum_of_Herodes_Atticus_at_Olympia,_dating_from_between_149_and_153_AD_(posthumous),_Olympia_Archaeological_Museum,_Greece_(13983898326).jpg"
+   }
+  },
+  {
+   "id": "subligaculum",
+   "latin": "subligāculum, subligāculī n.",
+   "also": "subligar, subligāris n.",
+   "english": "underpants",
+   "group": "vestes",
+   "line": "Subligāculum indue.",
+   "source": "composed",
+   "record": "underpants",
+   "image": {
+    "file": "1945 Unterhose anagoria.JPG",
+    "author": "Anagoria",
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:1945_Unterhose_anagoria.JPG"
+   }
+  },
+  {
+   "id": "calceus",
+   "latin": "calceus, calceī m.",
+   "english": "shoe",
+   "group": "calceamenta",
+   "line": "māne lectulō continētur, hōrā secundā calceōs poscit, ambulat mīlia passuum tria",
+   "source": "Plin. Ep. III 1, 4",
+   "record": "shoe",
+   "image": {
+    "file": "Mens brown derby leather shoes.jpg",
+    "author": "Ch Th Jo",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Mens_brown_derby_leather_shoes.jpg"
+   }
+  },
+  {
+   "id": "calceigymnici",
+   "latin": "calceī gymnicī, calceōrum gymnicōrum m. pl.",
+   "english": "trainers",
+   "group": "calceamenta",
+   "line": "Calceīs gymnicīs currimus.",
+   "source": "composed",
+   "record": "trainers",
+   "image": {
+    "file": "Paar herenschoenen, gympen, rood en wit, “Corbeau”, objectnr 87248-1-2.JPG",
+    "author": "Museum Rotterdam",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Paar_herenschoenen,_gympen,_rood_en_wit,_%E2%80%9CCorbeau%E2%80%9D,_objectnr_87248-1-2.JPG"
+   }
+  },
+  {
+   "id": "pero",
+   "latin": "pērō, pērōnis m.",
+   "english": "boots",
+   "group": "calceamenta",
+   "line": "Hieme pērōnēs induimus.",
+   "source": "composed",
+   "record": "boots",
+   "image": {
+    "file": "Leather boots men's.jpg",
+    "author": "Petar Milošević",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Leather_boots_men%27s.jpg"
+   }
+  },
+  {
+   "id": "calceialticummei",
+   "latin": "calceī altī cummeī, calceōrum altōrum cummeōrum m. pl.",
+   "english": "rubber boots",
+   "group": "calceamenta",
+   "line": "Calceīs altīs cummeīs per lutum īmus.",
+   "source": "composed",
+   "record": "rubber-boots",
+   "image": {
+    "file": "Rain boots on Stairs.jpg",
+    "author": "Erikamthompson",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Rain_boots_on_Stairs.jpg"
+   }
+  },
+  {
+   "id": "solea",
+   "latin": "solea, soleae f.",
+   "english": "sandal",
+   "group": "calceamenta",
+   "line": "poscit soleās, ascendit locum ex quō maximē mīrāculum illud cōnspicī poterat",
+   "source": "Plin. Ep. VI 16, 5",
+   "record": "sandal",
+   "image": {
+    "file": "Leather sandal for men in summer 2.jpg",
+    "author": "Geoffreyrabbit",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Leather_sandal_for_men_in_summer_2.jpg"
+   }
+  },
+  {
+   "id": "soccus",
+   "latin": "soccus, soccī m.",
+   "english": "slippers",
+   "group": "calceamenta",
+   "line": "adcurrunt servī, soccōs dētrahunt",
+   "source": "Ter. Heaut. 124",
+   "record": "slippers",
+   "image": {
+    "file": "Slippers.jpg",
+    "author": "PiccoloNamek",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Slippers.jpg"
+   }
+  },
+  {
+   "id": "corrigia",
+   "latin": "corrigia, corrigiae f.",
+   "english": "shoelace",
+   "group": "calceamenta",
+   "line": "cujus ego nōn sum dignus ut solvam ejus corrigiam calceāmentī",
+   "source": "Jo. 1, 27",
+   "record": "shoelace",
+   "image": {
+    "file": "Knoten 001 2024 02 20.jpg",
+    "author": "Friedrich Haag",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Knoten_001_2024_02_20.jpg"
+   }
+  },
+  {
+   "id": "pedulia",
+   "latin": "pedūlia, pedūlium n. pl.",
+   "english": "socks",
+   "group": "calceamenta",
+   "line": "Pedūlia indue.",
+   "source": "composed",
+   "record": "socks",
+   "image": {
+    "file": "Hand knitted socks.jpg",
+    "author": "Peterdownunder",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Hand_knitted_socks.jpg"
+   }
+  },
+  {
+   "id": "petasus",
+   "latin": "petasus, petasī m.",
+   "english": "hat",
+   "group": "ornatus",
+   "line": "ego hās habēbō ūsque in petasō pinnulās",
+   "source": "Plaut. Amph. 143",
+   "record": "hat",
+   "image": {
+    "file": "Jazz straw hat.jpg",
+    "author": "Fumikas Sagisavas",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Jazz_straw_hat.jpg"
+   }
+  },
+  {
+   "id": "pilleus",
+   "latin": "pilleus, pilleī m.",
+   "english": "cap",
+   "group": "ornatus",
+   "line": "verre pilleum ac pallium",
+   "source": "Erasm. Coll., Herīlia, I 32",
+   "record": "cap",
+   "image": {
+    "file": "Blue knit-cap beanie by RobertLender.jpeg",
+    "author": "Robert Lender",
+    "licence": "CC BY-SA 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Blue_knit-cap_beanie_by_RobertLender.jpeg"
+   }
+  },
+  {
+   "id": "cucullus",
+   "latin": "cucullus, cucullī m.",
+   "english": "hood",
+   "group": "ornatus",
+   "line": "illinc cucullō prōspicit caput tēctus",
+   "source": "Mart. V 14, 6",
+   "record": "hood",
+   "image": {
+    "file": "Peter Storm vintage cagoule rear full.jpg",
+    "author": "Rocknrollmancer",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Peter_Storm_vintage_cagoule_rear_full.jpg"
+   }
+  },
+  {
+   "id": "focale",
+   "latin": "fōcāle, fōcālis n.",
+   "english": "scarf",
+   "group": "ornatus",
+   "line": "hoc fōcāle tuās adserat auriculās",
+   "source": "Mart. XIV 137, 2",
+   "record": "scarf",
+   "image": {
+    "file": "3824h Curatorial Image (54380701850).jpg",
+    "author": "San Diego Air & Space Museum Archives",
+    "licence": "Public domain",
+    "licence_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:3824h_Curatorial_Image_(54380701850).jpg"
+   }
+  },
+  {
+   "id": "digitabula",
+   "latin": "digitābula, digitābulōrum n. pl.",
+   "english": "gloves",
+   "group": "ornatus",
+   "line": "Ubi sunt digitābula tua?",
+   "source": "composed",
+   "record": "gloves",
+   "image": {
+    "file": "Handschuhe (fcm).jpg",
+    "author": "Frank C. Müller",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Handschuhe_(fcm).jpg"
+   }
+  },
+  {
+   "id": "cingulum",
+   "latin": "cingulum, cingulī n.",
+   "english": "belt",
+   "group": "ornatus",
+   "line": "cingulō mē praecīnxī",
+   "source": "Corder. Coll. II 60",
+   "record": "belt",
+   "image": {
+    "file": "Germany Belt-and-Buckle-02.jpg",
+    "author": "Uwe Aranas",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Germany_Belt-and-Buckle-02.jpg"
+   }
+  },
+  {
+   "id": "umbella",
+   "latin": "umbella, umbellae f.",
+   "english": "umbrella",
+   "group": "ornatus",
+   "line": "Sūme etiam umbellam, nē sōlis ardor īnfuscet tibi faciem.",
+   "source": "Corder. Coll. I 24",
+   "record": "umbrella",
+   "image": {
+    "file": "M0354 000727-005 1.jpg",
+    "author": "Jacques Monnin",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:M0354_000727-005_1.jpg"
+   }
+  },
+  {
+   "id": "vitraocularia",
+   "latin": "vitra oculāria, vitrōrum oculārium n. pl.",
+   "also": "perspicilla, perspicillōrum n.",
+   "english": "glasses",
+   "group": "ornatus",
+   "line": "Sine vitrīs oculāribus avus legere nōn potest.",
+   "source": "composed",
+   "record": "glasses",
+   "image": {
+    "file": "Black Framed Glasses.jpg",
+    "author": "Gaurav Dhwaj Khadka",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Black_Framed_Glasses.jpg"
+   }
+  },
+  {
+   "id": "perula",
+   "latin": "pērula, pērulae f.",
+   "english": "handbag",
+   "group": "ornatus",
+   "line": "cum vīdisset puerum cavā manū bibentem aquam, frēgit prōtinus exēmptum ē pērulā calicem",
+   "source": "Sen. Ep. 90, 14",
+   "record": "handbag",
+   "image": {
+    "file": "Leather handbag by Les cuirs d'Agathe (DSC07738).jpg",
+    "author": "Benoit Brummer",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Leather_handbag_by_Les_cuirs_d%27Agathe_(DSC07738).jpg"
+   }
+  },
+  {
+   "id": "horologiumbracchiale",
+   "latin": "hōrologium bracchiāle, hōrologiī bracchiālis n.",
+   "english": "wristwatch",
+   "group": "ornatus",
+   "line": "Hōrologium bracchiāle hōram ostendit.",
+   "source": "composed",
+   "record": "wristwatch",
+   "image": {
+    "file": "Escapement Time Pilot Flieger Chronograph.jpg",
+    "author": "Francis Flinch",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Escapement_Time_Pilot_Flieger_Chronograph.jpg"
+   }
+  },
+  {
+   "id": "monile",
+   "latin": "monīle, monīlis n.",
+   "english": "necklace",
+   "group": "ornatus",
+   "line": "dat digitīs gemmās, dat longa monīlia collō",
+   "source": "Ov. Met. X 264",
+   "record": "necklace",
+   "image": {
+    "file": "Necklace MET DP142750.jpg",
+    "author": "Metropolitan Museum of Art",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Necklace_MET_DP142750.jpg"
+   }
+  },
+  {
+   "id": "armilla",
+   "latin": "armilla, armillae f.",
+   "english": "bracelet",
+   "group": "ornatus",
+   "line": "dextrum nūdāvit lacertum armillā aureā cultum",
+   "source": "Petr. Sat. 32",
+   "record": "bracelet",
+   "image": {
+    "file": "Bracelet perlé cotonou.jpg",
+    "author": "Houss 2020",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Bracelet_perl%C3%A9_cotonou.jpg"
+   }
+  },
+  {
+   "id": "inaures",
+   "latin": "inaurēs, inaurium f. pl.",
+   "english": "earrings",
+   "group": "ornatus",
+   "line": "suspendī itaque inaurēs ad ōrnandam faciem ejus",
+   "source": "Gen. 24, 47",
+   "record": "earrings",
+   "image": {
+    "file": "Earrings (France), early 19th century (CH 18316851).jpg",
+    "author": "Cooper Hewitt, Smithsonian Design Museum",
+    "licence": "Public domain",
+    "licence_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Earrings_(France),_early_19th_century_(CH_18316851).jpg"
+   }
+  },
+  {
+   "id": "acus",
+   "latin": "acus, acūs f.",
+   "english": "needle",
+   "group": "sartoria",
+   "line": "Cavē acum; pungit.",
+   "source": "composed",
+   "record": "needle",
+   "image": {
+    "file": "Sewing needle eye with thread.jpg",
+    "author": "Dmeranda",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Sewing_needle_eye_with_thread.jpg"
+   }
+  },
+  {
+   "id": "filum",
+   "latin": "fīlum, fīlī n.",
+   "english": "thread",
+   "group": "sartoria",
+   "line": "omnia sunt hominum tenuī pendentia fīlō",
+   "source": "Ov. Pont. IV 3, 35",
+   "record": "thread",
+   "image": {
+    "file": "Spool of red thread.jpg",
+    "author": "www.photos-public-domain.com",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Spool_of_red_thread.jpg"
+   }
+  },
+  {
+   "id": "forfex",
+   "latin": "forfex, forficis f.",
+   "english": "scissors",
+   "group": "sartoria",
+   "line": "Sartor dīscindit pannum forfice, cōnsuitque acū et fīlō duplicātō.",
+   "source": "Comen. OP 61",
+   "record": "scissors",
+   "image": {
+    "file": "A pair of scissors.jpg",
+    "author": "Shane Cyrus",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:A_pair_of_scissors.jpg"
+   }
+  },
+  {
+   "id": "digitale",
+   "latin": "digitāle, digitālis n.",
+   "english": "thimble",
+   "group": "sartoria",
+   "line": "Digitāle digitum ab acū tuētur.",
+   "source": "composed",
+   "record": "thimble",
+   "image": {
+    "file": "Thimble 8 (5730685856).jpg",
+    "author": "chris_hertel",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Thimble_8_(5730685856).jpg"
+   }
+  },
+  {
+   "id": "malleus",
+   "latin": "malleus, malleī m.",
+   "english": "hammer",
+   "group": "ferramenta",
+   "line": "sī parum dēscendet, malleō aut mateolā adigitō",
+   "source": "Cato Agr. 45, 1",
+   "record": "hammer",
+   "image": {
+    "file": "Claw hammer-1.jpg",
+    "author": "Shakespeare at en.wikipedia",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Claw_hammer-1.jpg"
+   }
+  },
+  {
+   "id": "serra",
+   "latin": "serra, serrae f.",
+   "english": "saw",
+   "group": "ferramenta",
+   "line": "Faber serrā tabulam secat.",
+   "source": "composed",
+   "record": "saw",
+   "image": {
+    "file": "Handsaws876.jpg",
+    "author": "Epukas",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Handsaws876.jpg"
+   }
+  },
+  {
+   "id": "securis",
+   "latin": "secūris, secūris f.",
+   "english": "axe",
+   "group": "ferramenta",
+   "line": "Avus secūrī ligna findit.",
+   "source": "composed",
+   "record": "axe",
+   "image": {
+    "file": "Spaltaxt mit Hickory - Carya spec.- Holzstiel.jpg",
+    "author": "Lupus in Saxonia",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Spaltaxt_mit_Hickory_-_Carya_spec.-_Holzstiel.jpg"
+   }
+  },
+  {
+   "id": "ascia",
+   "latin": "ascia, asciae f.",
+   "english": "adze",
+   "group": "ferramenta",
+   "line": "Faber lignārius asciat asciā māteriam, unde cadunt assulae",
+   "source": "Comen. OP 63",
+   "record": "adze",
+   "image": {
+    "file": "Dissel (1).jpg",
+    "author": "Rasbak",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Dissel_(1).jpg"
+   }
+  },
+  {
+   "id": "scalprum",
+   "latin": "scalprum, scalprī n.",
+   "english": "chisel",
+   "group": "ferramenta",
+   "line": "fabrīle scalprum cum malleō habēbant",
+   "source": "Liv. XXVII 49, 1",
+   "record": "chisel",
+   "image": {
+    "file": "Chisel set.jpg",
+    "author": "Balurbala",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Chisel_set.jpg"
+   }
+  },
+  {
+   "id": "terebra",
+   "latin": "terebra, terebrae f.",
+   "english": "drill",
+   "group": "ferramenta",
+   "line": "terebrā vītem quam īnserēs pertunditō",
+   "source": "Cato Agr. 41",
+   "record": "drill",
+   "image": {
+    "file": "Barrena de man.jpg",
+    "author": "RaquelRendo",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Barrena_de_man.jpg"
+   }
+  },
+  {
+   "id": "terebramachinalis",
+   "latin": "terebra māchinālis, terebrae māchinālis f.",
+   "english": "electric drill",
+   "group": "ferramenta",
+   "line": "Terebrā māchinālī mūrus perforātur.",
+   "source": "composed",
+   "record": "electric-drill",
+   "image": {
+    "file": "Cordless electric (screw) drill.jpg",
+    "author": "Fructibus",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Cordless_electric_(screw)_drill.jpg"
+   }
+  },
+  {
+   "id": "lima",
+   "latin": "līma, līmae f.",
+   "english": "file",
+   "group": "ferramenta",
+   "line": "in officīnam fabrī vēnit vīpera. haec cum temptāret sī qua rēs esset cibī, līmam momordit.",
+   "source": "Phaedr. IV 8, 3–5",
+   "record": "file-tool",
+   "image": {
+    "file": "Hand File.jpg",
+    "author": "Luke Milburn",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Hand_File.jpg"
+   }
+  },
+  {
+   "id": "runcina",
+   "latin": "runcīna, runcīnae f.",
+   "english": "plane",
+   "group": "ferramenta",
+   "line": "artifex lignārius extendit normam, fōrmāvit illud in runcīnā",
+   "source": "Is. 44, 13",
+   "record": "plane-tool",
+   "image": {
+    "file": "No.6 fore plane.jpg",
+    "author": "Greg Grossmeier",
+    "licence": "CC BY-SA 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:No.6_fore_plane.jpg"
+   }
+  },
+  {
+   "id": "forceps",
+   "latin": "forceps, forcipis m./f.",
+   "english": "pliers",
+   "group": "ferramenta",
+   "line": "Pater forcipe clāvum ē tabulā ēvellit.",
+   "source": "composed",
+   "record": "pliers",
+   "image": {
+    "file": "Tool-pliers.jpg",
+    "author": "Evan-Amos",
+    "licence": "Public domain",
+    "licence_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Tool-pliers.jpg"
+   }
+  },
+  {
+   "id": "vertitorium",
+   "latin": "vertitōrium, vertitōriī n.",
+   "english": "screwdriver",
+   "group": "ferramenta",
+   "line": "Pater vertitōriō cochleās extorquet.",
+   "source": "composed",
+   "record": "screwdriver",
+   "image": {
+    "file": "Big flat screwdriver.jpg",
+    "author": "Jiří Sedláček",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Big_flat_screwdriver.jpg"
+   }
+  },
+  {
+   "id": "clavismechanica",
+   "latin": "clāvis mēchanica, clāvis mēchanicae f.",
+   "english": "wrench",
+   "group": "ferramenta",
+   "line": "Clāvem mēchanicam affer.",
+   "source": "composed",
+   "record": "wrench",
+   "image": {
+    "file": "Combination wrenches.jpg",
+    "author": "Ocdp",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Combination_wrenches.jpg"
+   }
+  },
+  {
+   "id": "trulla",
+   "latin": "trulla, trullae f.",
+   "english": "trowel",
+   "group": "ferramenta",
+   "line": "Tēctōrēs trullā tēctōrium indūcunt.",
+   "source": "composed",
+   "record": "trowel",
+   "image": {
+    "file": "Kielnia 001.JPG",
+    "author": "Mielon",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Kielnia_001.JPG"
+   }
+  },
+  {
+   "id": "pala",
+   "latin": "pāla, pālae f.",
+   "english": "shovel",
+   "group": "ferramenta",
+   "line": "Operārius pālā fossam fodit.",
+   "source": "composed",
+   "record": "shovel",
+   "image": {
+    "file": "Shovel leaning against a wall (cropped).jpg",
+    "author": "Santeri Viinamäki",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Shovel_leaning_against_a_wall_(cropped).jpg"
+   }
+  },
+  {
+   "id": "vectis",
+   "latin": "vectis, vectis m.",
+   "english": "crowbar",
+   "group": "ferramenta",
+   "line": "oppidānī saxa quam maxima possunt vectibus prōmovent",
+   "source": "Caes. BC II 11, 1",
+   "record": "crowbar",
+   "image": {
+    "file": "Crowbar lying on ground.jpg",
+    "author": "Santeri Viinamäki",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Crowbar_lying_on_ground.jpg"
+   }
+  },
+  {
+   "id": "marcus",
+   "latin": "marcus, marcī m.",
+   "english": "sledgehammer",
+   "group": "ferramenta",
+   "line": "Fabrī marcō saxa frangunt.",
+   "source": "composed",
+   "record": "sledgehammer",
+   "image": {
+    "file": "Vorschlaghammer (Ziegelsteinmauer).jpg",
+    "author": "Rhetos",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Vorschlaghammer_(Ziegelsteinmauer).jpg"
+   }
+  },
+  {
+   "id": "cos",
+   "latin": "cōs, cōtis f.",
+   "english": "whetstone",
+   "group": "ferramenta",
+   "line": "Tarquinius autem dīxit sē cōgitāsse cōtem novāculā posse praecīdī.",
+   "source": "Cic. Div. I 32",
+   "record": "whetstone",
+   "image": {
+    "file": "Sharpening stones.jpg",
+    "author": "Mauro Cateb",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Sharpening_stones.jpg"
+   }
+  },
+  {
+   "id": "retinaculum",
+   "latin": "retināculum, retināculī n.",
+   "english": "vise",
+   "group": "ferramenta",
+   "line": "Retināculum lignum firmē tenet.",
+   "source": "composed",
+   "record": "vice-tool",
+   "image": {
+    "file": "An engineer's vise.jpg",
+    "author": "Dmitry Makeev",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:An_engineer%27s_vise.jpg"
+   }
+  },
+  {
+   "id": "scalaefabri",
+   "latin": "scālae, scālārum f. pl.",
+   "english": "ladder",
+   "group": "ferramenta",
+   "line": "scālae ita utī datae erunt, ita redditō, nisi quae vetustāte frāctae erunt",
+   "source": "Cato Agr. 144",
+   "record": "ladder",
+   "image": {
+    "file": "Ladder and Wood Pile.jpg",
+    "author": "GabrielleMerk",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Ladder_and_Wood_Pile.jpg"
+   }
+  },
+  {
+   "id": "libella",
+   "latin": "lībella, lībellae f.",
+   "english": "level",
+   "group": "mensurae",
+   "line": "Faber lībellā explōrat num tabula aequa sit.",
+   "source": "composed",
+   "record": "level-instrument",
+   "image": {
+    "file": "Wasserwaage horizontal 2021.jpg",
+    "author": "VSchagow",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Wasserwaage_horizontal_2021.jpg"
+   }
+  },
+  {
+   "id": "perpendiculum",
+   "latin": "perpendiculum, perpendiculī n.",
+   "english": "plumb bob",
+   "group": "mensurae",
+   "line": "aliquandō perpendiculō et līneā discet ūtī",
+   "source": "Cic. Q. fr. III 1, 2",
+   "record": "plumb-bob",
+   "image": {
+    "file": "Plumb bob with string 1.jpg",
+    "author": "Salil Kumar Mukherjee",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Plumb_bob_with_string_1.jpg"
+   }
+  },
+  {
+   "id": "norma",
+   "latin": "norma, normae f.",
+   "english": "square",
+   "group": "mensurae",
+   "line": "Normam et lībellam Theodōrus invēnit.",
+   "source": "composed",
+   "record": "square-tool",
+   "image": {
+    "file": "Try Square.jpg",
+    "author": "Luke Milburn",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Try_Square.jpg"
+   }
+  },
+  {
+   "id": "regula",
+   "latin": "rēgula, rēgulae f.",
+   "english": "ruler",
+   "group": "mensurae",
+   "line": "rēgula nōn quam fōrmōsa, sed quam rēcta sit quaeritur",
+   "source": "Sen. Ep. 76, 14",
+   "record": "ruler",
+   "image": {
+    "file": "Ruler on table.jpg",
+    "author": "Douglas Perkins",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Ruler_on_table.jpg"
+   }
+  },
+  {
+   "id": "taeniamensuralis",
+   "latin": "taenia mēnsūrālis, taeniae mēnsūrālis f.",
+   "english": "tape measure",
+   "group": "mensurae",
+   "line": "Taeniam mēnsūrālem affer. Mētiāmur!",
+   "source": "composed",
+   "record": "tape-measure",
+   "image": {
+    "file": "2023 Zwijana taśma miernicza (1).jpg",
+    "author": "Jacek Halicki",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:2023_Zwijana_ta%C5%9Bma_miernicza_(1).jpg"
+   }
+  },
+  {
+   "id": "clavus",
+   "latin": "clāvus, clāvī m.",
+   "english": "nail",
+   "group": "clavi",
+   "line": "Clāvus clāvō pellitur, cōnsuētūdō cōnsuētūdine vincitur.",
+   "source": "Erasm. Coll., Dīlūculum, II 146",
+   "record": "nail-fastener",
+   "image": {
+    "file": "Rostige Nägel -- 2021 -- 4236.jpg",
+    "author": "Dietmar Rabich",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Rostige_N%C3%A4gel_--_2021_--_4236.jpg"
+   }
+  },
+  {
+   "id": "cochleaferrea",
+   "latin": "cochlea, cochleae f.",
+   "english": "screw",
+   "group": "clavi",
+   "line": "Cochleam vertitōriō intorquē.",
+   "source": "composed",
+   "record": "screw",
+   "image": {
+    "file": "Screw.agr.jpg",
+    "author": "ArnoldReinhold",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Screw.agr.jpg"
+   }
+  },
+  {
+   "id": "matrixcochleae",
+   "latin": "mātrix cochleae, mātrīcis cochleae f.",
+   "english": "nut",
+   "group": "clavi",
+   "line": "Mātrix cochleae clāve mēchanicā astringitur.",
+   "source": "composed",
+   "record": "nut-bolt",
+   "image": {
+    "file": "Hexagon nuts.jpg",
+    "author": "Oytun 73",
+    "licence": "Public domain",
+    "licence_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Hexagon_nuts.jpg"
+   }
+  },
+  {
+   "id": "uncus",
+   "latin": "uncus, uncī m.",
+   "english": "hook",
+   "group": "clavi",
+   "line": "Onus ex uncō pendet.",
+   "source": "composed",
+   "record": "hook",
+   "image": {
+    "file": "Black lifting hook.jpg",
+    "author": "Cjp24",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Black_lifting_hook.jpg"
+   }
+  },
+  {
+   "id": "funiculus",
+   "latin": "fūniculus, fūniculī m.",
+   "english": "cord",
+   "group": "clavi",
+   "line": "Nimium tendendō rumpī fūniculus solet.",
+   "source": "Ps.-Publ. N 18",
+   "record": "cord",
+   "image": {
+    "file": "A start - Flickr - Rosmarie Voegtli.jpg",
+    "author": "Rosmarie Voegtli",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:A_start_-_Flickr_-_Rosmarie_Voegtli.jpg"
+   }
+  },
+  {
+   "id": "elastrum",
+   "latin": "elastrum, elastrī n.",
+   "english": "spring",
+   "group": "clavi",
+   "line": "Elastrum pressum resilit.",
+   "source": "composed",
+   "record": "spring-device",
+   "image": {
+    "file": "Druckfedern NH-Federn.jpg",
+    "author": "Snewart",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Druckfedern_NH-Federn.jpg"
+   }
+  },
+  {
+   "id": "fistula",
+   "latin": "fistula, fistulae f.",
+   "english": "pipe",
+   "group": "clavi",
+   "line": "vidēmus, cum fistula aliquō locō rupta est, aquam per tenue forāmen ēlīdī",
+   "source": "Sen. NQ I 3, 2",
+   "record": "pipe-plumbing",
+   "image": {
+    "file": "Copper water pipes.jpg",
+    "author": "Santeri Viinamäki",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Copper_water_pipes.jpg"
+   }
+  },
+  {
+   "id": "lamina",
+   "latin": "lāmina, lāminae f.",
+   "english": "sheet metal",
+   "group": "clavi",
+   "line": "Faber lāminam ferream malleō tundit.",
+   "source": "composed",
+   "record": "sheet-metal",
+   "image": {
+    "file": "Blacha ~26c04jlc.jpg",
+    "author": "Grzegorz W. Tężycki",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Blacha_~26c04jlc.jpg"
+   }
+  },
+  {
+   "id": "later",
+   "latin": "later, lateris m.",
+   "english": "brick",
+   "group": "materia",
+   "line": "Venīte, faciāmus laterēs, et coquāmus eōs ignī.",
+   "source": "Gen. 11, 3",
+   "record": "brick",
+   "image": {
+    "file": "Red bricks.jpg",
+    "author": "Ramesh NG",
+    "licence": "CC BY-SA 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Red_bricks.jpg"
+   }
+  },
+  {
+   "id": "trabs",
+   "latin": "trabs, trabis f.",
+   "english": "beam",
+   "group": "materia",
+   "line": "tum blandī sōlēs, ignōtaque prōdit hirundō et luteum celsā sub trabe fīgit opus",
+   "source": "Ov. Fast. I 157–158",
+   "record": "beam",
+   "image": {
+    "file": "Eiken balken zolder gitesdelacascade.JPG",
+    "author": "Gitesdelacascade",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Eiken_balken_zolder_gitesdelacascade.JPG"
+   }
+  },
+  {
+   "id": "tabula",
+   "latin": "tabula, tabulae f.",
+   "english": "board",
+   "group": "materia",
+   "line": "Sī tabulam dē naufragiō stultus arripuerit, extorquēbitne eam sapiēns, sī potuerit?",
+   "source": "Cic. Off. III 89",
+   "record": "board",
+   "image": {
+    "file": "Velden Augsdorf Oberer Kirchenweg 5 Bretterstapel 0906202 3961.jpg",
+    "author": "Johann Jaritz",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Velden_Augsdorf_Oberer_Kirchenweg_5_Bretterstapel_0906202_3961.jpg"
+   }
+  },
+  {
+   "id": "lapis",
+   "latin": "lapis, lapidis m.",
+   "english": "stone",
+   "group": "materia",
+   "line": "gutta cavat lapidem, cōnsūmitur ānulus ūsū",
+   "source": "Ov. Pont. IV 10, 5",
+   "record": "stone",
+   "image": {
+    "file": "Granite River Cobble.jpg",
+    "author": "Wxao Zexw",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Granite_River_Cobble.jpg"
+   }
+  },
+  {
+   "id": "harena",
+   "latin": "harēna, harēnae f.",
+   "english": "sand",
+   "group": "materia",
+   "line": "similis erit virō stultō, quī aedificāvit domum suam super arēnam",
+   "source": "Mt. 7, 26",
+   "record": "sand",
+   "image": {
+    "file": "Pile of Sand for Building in Anambra State.jpg",
+    "author": "Johnnybam",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Pile_of_Sand_for_Building_in_Anambra_State.jpg"
+   }
+  },
+  {
+   "id": "glarea",
+   "latin": "glārea, glāreae f.",
+   "english": "gravel",
+   "group": "materia",
+   "line": "dē glāreā et calce harēnātō prīmum corium facitō",
+   "source": "Cato Agr. 18, 7",
+   "record": "gravel",
+   "image": {
+    "file": "10mm-crushed-pebbles.jpg",
+    "author": "a22375",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:10mm-crushed-pebbles.jpg"
    }
   }
  ]

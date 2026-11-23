@@ -1,0 +1,85 @@
+{
+  "id": "horizontal",
+  "english": "horizontal",
+  "pos": "adjective",
+  "also": [
+    "level (horizontal)",
+    "horizontally",
+    "a horizontal line",
+    "across (of a line)",
+    "flat (horizontal)"
+  ],
+  "domain": "schola",
+  "terms": [
+    {
+      "latin": "lībrātus, lībrāta, lībrātum",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "level, horizontal",
+      "evidence": [
+        "Vitr. 8.5.2: <span lang=\"la\">sī aequāliter aqua canālis summa labra tanget, sciētur esse lībrātum</span>",
+        "Vitr. 8.5.3: <span lang=\"la\">aquam nōn esse lībrātam</span>"
+      ],
+      "comment": "Levelled, as with the <span lang=\"la\">lībra</span> or <span lang=\"la\">lībella</span>, the builder’s level (see “level (instrument)”): Vitruvius’s word for what is truly horizontal, as the surface of still water is."
+    },
+    {
+      "latin": "ad lībellam",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "level, horizontal (by the level)",
+      "grammar": "adverbial phrase",
+      "evidence": [
+        "Varr. RR 1.6: <span lang=\"la\">quam is quī est ad lībellam aequos</span>",
+        "Vitr. 1.6.6: <span lang=\"la\">conlocētur ad lībellam</span>"
+      ],
+      "comment": "“By the level”: the builders’ and farmers’ phrase, as <span lang=\"la\">ad perpendiculum</span> is for upright (see “vertical”). So also <span lang=\"la\">ad lībram</span> (Caes. B.C. 3.40: <span lang=\"la\">ad lībram fēcerat turrēs</span>)."
+    },
+    {
+      "latin": "trānsversus, trānsversa, trānsversum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "lying across, crosswise",
+      "evidence": [
+        "Traupman 48, 329: <span lang=\"la\">ferrum trānsversum</span>, horizontal bar"
+      ],
+      "comment": "Of a line or a bar that lies across another, as a crossbar across uprights (see “crossbar”). In drawing it is the natural word for a line that runs across."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Līneam lībrātam ā sinistrā ad dextram dūc, quālis est summa aqua in pōculō.",
+      "english": "Draw a level line from left to right, like the top of the water in a cup.",
+      "source": "composed"
+    },
+    {
+      "latin": "et sī aequāliter aqua canālis summa labra tanget, sciētur esse lībrātum",
+      "english": "and if the water touches the top edges of the channel evenly, you will know it is level",
+      "source": "Vitr. 8.5.2"
+    },
+    {
+      "latin": "Campester locus is melior, quī tōtus aequābiliter in ūnam partem verget, quam is quī est ad lībellam aequos",
+      "english": "Flat land is better if it all slopes evenly one way than if it is dead level",
+      "source": "Varr. RR 1.6"
+    }
+  ],
+  "related": [
+    "vertical",
+    "level-instrument",
+    "flat-level",
+    "crossbar",
+    "line-drawn",
+    "slanting"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/libro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: libro</a> · <a href=\"https://logeion.uchicago.edu/libella\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: libella</a> · <a href=\"https://logeion.uchicago.edu/transverto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: transverto</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 48, 329.",
+    "Vitruvius, <em>De architectura</em> 1.6.6; 8.5.2–3.",
+    "Varro, <em>Res rusticae</em> 1.6.",
+    "Caesar, <em>Bellum civile</em> 3.40."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-23",
+    "by": "Claude"
+  }
+}

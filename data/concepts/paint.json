@@ -5,7 +5,17 @@
   "also": [
     "depict",
     "paint (noun)",
-    "paints"
+    "paints",
+    "paint eggs",
+    "paint Easter eggs",
+    "decorate eggs",
+    "paint the wall",
+    "paint a wall",
+    "paint the walls",
+    "paint the house",
+    "whitewash",
+    "paint (a wall, a door)",
+    "give it a coat of paint"
   ],
   "domain": "sermo",
   "terms": [
@@ -28,6 +38,28 @@
         "Cic. Div. 1.23: <span lang=\"la\">aspersa temere pigmenta in tabulā</span> (Lewis &amp; Short)",
         "Traupman 168"
       ]
+    },
+    {
+      "latin": "indūcō, indūcere, indūxī, inductum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "coat, spread over: paint (a wall, a door) with a colour",
+      "grammar": "the thing coated in the accusative, the coating in the ablative (postēs pice); or the coating in the accusative and the thing in the dative (parietī cēram)",
+      "evidence": [
+        "Plaut. Most. 827: <span lang=\"la\">sī sunt inductī pice</span>",
+        "Cic. Verr. 2.1.145: <span lang=\"la\">tēctōrium … novum inductum</span>",
+        "Plin. NH 33.122: <span lang=\"la\">parietī cēram liquefactam</span> (Lewis &amp; Short)"
+      ],
+      "comment": "<span lang=\"la\">pingō</span> paints a picture; a wall or a door is coated with a colour, <span lang=\"la\">indūcere</span>."
+    },
+    {
+      "latin": "dealbō, dealbāre, dealbāvī, dealbātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "whitewash",
+      "evidence": [
+        "Cic. Verr. 2.1.145: <span lang=\"la\">columnās dealbārī</span>"
+      ]
     }
   ],
   "phrases": [
@@ -40,6 +72,31 @@
       "latin": "pigmentum",
       "english": "paint (the substance)",
       "source": "Traupman 52"
+    },
+    {
+      "latin": "Age, ōva Paschālia pingāmus!",
+      "english": "Come on, let’s paint the Easter eggs!",
+      "source": "composed"
+    },
+    {
+      "latin": "Quō colōre hoc ōvum pingis? — Rubrō.",
+      "english": "What colour are you painting this egg? — Red.",
+      "source": "composed"
+    },
+    {
+      "latin": "Parietem pigmentō caeruleō indūcimus.",
+      "english": "We’re painting the wall blue.",
+      "source": "composed"
+    },
+    {
+      "latin": "dīcō esse ex quā tantum tēctōrium vetus dējectum sit et novum inductum. Quodsī tantā pecūniā columnās dealbārī putāssem, certē numquam aedīlitātem petīvissem.",
+      "english": "I say there is one from which only the old coating was knocked off and a new one put on. If I had thought it cost so much to whitewash columns, I should never have stood for the aedileship.",
+      "source": "Cic. Verr. 2.1.145"
+    },
+    {
+      "latin": "atque etiam nunc satis bonī sunt, sī sunt inductī pice",
+      "english": "and they’re good enough even now, if they’re given a coat of pitch",
+      "source": "Plaut. Most. 827"
     }
   ],
   "related": [
@@ -51,14 +108,16 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/pingo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pingo</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 52, 168.",
-    "<a href=\"https://logeion.uchicago.edu/pigmentum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pigmentum</a>"
-  ],
-  "replaces": [
-    "entry-76"
+    "<a href=\"https://logeion.uchicago.edu/pigmentum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pigmentum</a>",
+    "Cicero, <em>Verrines</em> 2.1.145.",
+    "Plautus, <em>Mostellaria</em> 827."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
-  }
+  },
+  "replaces": [
+    "entry-76"
+  ]
 }

@@ -1,0 +1,92 @@
+{
+  "id": "goosebumps",
+  "english": "goosebumps",
+  "pos": "noun",
+  "also": [
+    "goose bumps",
+    "goose pimples",
+    "gooseflesh",
+    "goose flesh",
+    "I’ve got goosebumps",
+    "it gives me goosebumps",
+    "my hair is standing on end"
+  ],
+  "domain": "corpus",
+  "terms": [
+    {
+      "latin": "pilī horrent",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "the hairs stand up: have goosebumps",
+      "grammar": "horreō, horrēre, horruī with pilī as subject; the person in the dative (mihi)",
+      "evidence": [
+        "Varr. LL 6.49: <span lang=\"la\">cum etiam in corpore pilī, ut arista in spīcā hordeī, horrent</span>"
+      ],
+      "comment": "Latin says this with a verb: the hairs on the body <span lang=\"la\">horrent</span>, stand up and bristle, as Varro says they do when someone shivers hard, like the awn on an ear of barley."
+    },
+    {
+      "latin": "inhorrēscō, inhorrēscere, inhorruī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "bristle up, come out in goosebumps; shiver",
+      "evidence": [
+        "Cels. 1.3: <span lang=\"la\">frīgida pōtiō inūtilis est iīs quī facile inhorrēscunt</span> (Lewis &amp; Short)",
+        "Plin. NH 10.116: <span lang=\"la\">gallīnae inhorrēscunt ēditō ōvō excutiuntque sēsē</span> (Lewis &amp; Short)"
+      ]
+    },
+    {
+      "latin": "horror, horrōris m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a shudder, a chill that runs over the whole body",
+      "evidence": [
+        "Cels. 3.3: <span lang=\"la\">horrōrem, ubi tōtum corpus intremit</span> (Lewis &amp; Short)"
+      ],
+      "comment": "The shiver rather than the bumps: Celsus calls it <span lang=\"la\">frīgus</span> when the hands and feet grow cold, <span lang=\"la\">horror</span> when the whole body shakes."
+    },
+    {
+      "latin": "horripilātiō, horripilātiōnis f.",
+      "status": "alternative",
+      "period": "late",
+      "gloss": "a bristling of the hair",
+      "evidence": [
+        "Vulg. Sir. 27.15: <span lang=\"la\">loquella multum jūrāns horripilātiōnem capitī statuet</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Algeō: horrent mihi pilī!",
+      "english": "I’m cold: I’ve got goosebumps!",
+      "source": "composed"
+    },
+    {
+      "latin": "cum etiam in corpore pilī, ut arista in spīcā hordeī, horrent",
+      "english": "when even the hairs on the body stand up, like the awn on an ear of barley",
+      "source": "Varr. LL 6.49"
+    },
+    {
+      "latin": "gallīnae inhorrēscunt ēditō ōvō excutiuntque sēsē",
+      "english": "when they have laid an egg, hens ruffle up and shake themselves",
+      "source": "Plin. NH 10.116 (Lewis &amp; Short)"
+    }
+  ],
+  "related": [
+    "shiver",
+    "feel-cold",
+    "cold",
+    "be-afraid"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/horreo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: horreo</a> · <a href=\"https://logeion.uchicago.edu/inhorresco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: inhorresco</a> · <a href=\"https://logeion.uchicago.edu/horror\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: horror</a> · <a href=\"https://logeion.uchicago.edu/horripilatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: horripilatio</a>",
+    "Varro, <em>De lingua Latina</em> 6.49.",
+    "Celsus, <em>De medicina</em> 1.3; 3.3.",
+    "Pliny, <em>Natural History</em> 10.116.",
+    "Vulgate, Ecclesiasticus 27.15."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-23",
+    "by": "Claude"
+  }
+}

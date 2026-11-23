@@ -6,7 +6,10 @@
     "verb"
   ],
   "also": [
-    "depart"
+    "depart",
+    "the train leaves at ten",
+    "what time does the train leave?",
+    "leave (of a train or bus)"
   ],
   "domain": "vectura",
   "terms": [
@@ -38,17 +41,29 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "Trāmen hōrā decimā abscēdit; mātūrēmus.",
+      "english": "The train leaves at ten; let’s hurry.",
+      "source": "composed"
+    },
+    {
+      "latin": "Quotā hōrā trāmen meum abscēdit? — Hōrā ūndecimā.",
+      "english": "At what time does my train leave? — At eleven o’clock.",
+      "source": "Traupman 211"
+    }
+  ],
   "related": [
     "set-out",
     "arrive"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/abscedo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: abscedo</a> · <a href=\"https://logeion.uchicago.edu/discessus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: discessus</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 216, 302, 303."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 211, 216, 302, 303."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

@@ -2,6 +2,12 @@
   "id": "jog",
   "english": "jog",
   "pos": "verb",
+  "also": [
+    "go for a run",
+    "go jogging",
+    "go for a jog",
+    "jogging"
+  ],
   "domain": "ludi",
   "terms": [
     {
@@ -26,6 +32,18 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "Ego cotīdiē tolūtim cursitō.",
+      "english": "I jog every day.",
+      "source": "Traupman 60"
+    },
+    {
+      "latin": "Crās māne in silvā cursitābimus.",
+      "english": "Tomorrow morning we’ll go for a run in the woods.",
+      "source": "composed"
+    }
+  ],
   "related": [
     "race",
     "exercise"
@@ -37,7 +55,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

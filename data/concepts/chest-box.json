@@ -7,7 +7,11 @@
     "trunk (for clothes)",
     "toy box",
     "toybox",
-    "toy chest"
+    "toy chest",
+    "treasure chest",
+    "make a house out of a box",
+    "build a house out of a box",
+    "play in a box"
   ],
   "domain": "culina",
   "terms": [
@@ -30,7 +34,23 @@
       ]
     }
   ],
-  "phrases": [],
+  "phrases": [
+    {
+      "latin": "Pīrātae arcam aurī plēnam in harēnā dēfōdērunt.",
+      "english": "The pirates buried a treasure chest full of gold in the sand.",
+      "source": "composed"
+    },
+    {
+      "latin": "populus mē sībilat, at mihi plaudō ipse domī, simul ac nummōs contemplor in arcā",
+      "english": "the people hiss me, but I applaud myself at home as soon as I gaze at the coins in my chest",
+      "source": "Hor. S. 1.1.66–67"
+    },
+    {
+      "latin": "Ex hāc cistā casam faciāmus: hīc jānua erit, hīc fenestra.",
+      "english": "Let’s make a house out of this box: here’s the door, here’s the window.",
+      "source": "composed"
+    }
+  ],
   "related": [
     "freezer",
     "container"
@@ -38,11 +58,12 @@
   "sources": [
     "<a href=\"https://alatius.com/ls/index.php?l=arca\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: arca</a>",
     "<a href=\"https://logeion.uchicago.edu/cista\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cista</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 219."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 219.",
+    "Horace, <em>Satires</em> 1.1.66–67."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

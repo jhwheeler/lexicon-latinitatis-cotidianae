@@ -4,12 +4,14 @@
   "pos": "noun",
   "also": [
     "poem",
-    "murder a song"
+    "murder a song",
+    "sing a song",
+    "sing me a song"
   ],
+  "domain": "ludi",
   "also_under": [
     "sermo"
   ],
-  "domain": "ludi",
   "terms": [
     {
       "latin": "cantus, cantūs m.",
@@ -46,6 +48,16 @@
       "latin": "canticum lacerāre",
       "english": "to murder a song",
       "source": "Traupman 349"
+    },
+    {
+      "latin": "Cantā mihi carmen, sōdēs.",
+      "english": "Sing me a song, please.",
+      "source": "composed"
+    },
+    {
+      "latin": "modo rūstica carmina cantat agrestīque suum sōlātur vōce labōrem",
+      "english": "sometimes he sings country songs and cheers his work with his rough voice",
+      "source": "Mor. 29–30"
     }
   ],
   "related": [
@@ -57,11 +69,12 @@
   "sources": [
     "<a href=\"https://logeion.org/cantus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cantus</a> · <a href=\"https://logeion.org/canticum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: canticum</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 141, 169, 349.",
-    "<a href=\"https://logeion.uchicago.edu/carmen\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: carmen</a>"
+    "<a href=\"https://logeion.uchicago.edu/carmen\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: carmen</a>",
+    "<em>Moretum</em> 29–30."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

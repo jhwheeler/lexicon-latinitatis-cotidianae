@@ -3,6 +3,11 @@
   "english": "peel",
   "sense": "remove the rind",
   "pos": "verb",
+  "also": [
+    "peel the potatoes",
+    "peel potatoes",
+    "peel the apples"
+  ],
   "domain": "culina",
   "terms": [
     {
@@ -23,6 +28,18 @@
       "comment": "Used alongside <strong lang=\"la\">dēcorticāre</strong>."
     }
   ],
+  "phrases": [
+    {
+      "latin": "Pōma terrestria dēcorticā.",
+      "english": "Peel the potatoes.",
+      "source": "composed"
+    },
+    {
+      "latin": "Resecā cutem pōmōrum terrestrium; ego ea lavābō.",
+      "english": "Peel the potatoes; I’ll wash them.",
+      "source": "composed"
+    }
+  ],
   "related": [
     "peel-noun",
     "peeler",
@@ -35,7 +52,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

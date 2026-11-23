@@ -2,6 +2,11 @@
   "id": "stir",
   "english": "stir",
   "pos": "verb",
+  "also": [
+    "stir the soup",
+    "stir it",
+    "keep stirring"
+  ],
   "domain": "culina",
   "terms": [
     {
@@ -10,6 +15,33 @@
       "period": "classical",
       "gloss": "stir or agitate",
       "comment": "In an appropriate cooking context."
+    },
+    {
+      "latin": "commoveō, commovēre, commōvī, commōtum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "stir (a pot on the fire)",
+      "evidence": [
+        "Cato Agr. 107: <span lang=\"la\">Commovētō, vidētō nē adūrās.</span>"
+      ],
+      "comment": "Cato’s word for stirring what is cooking; <span lang=\"la\">agitāre</span> is Apicius’s."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Jūs lentē agitā.",
+      "english": "Stir the soup slowly.",
+      "source": "composed"
+    },
+    {
+      "latin": "Faciēs ut ferveat. Cum ferbuerit, mittēs mulsam et jūs agitābis.",
+      "english": "Bring it to the boil. When it has boiled, add the honey-wine and stir the sauce.",
+      "source": "Apic. 4.2.23"
+    },
+    {
+      "latin": "Commovētō, vidētō nē adūrās.",
+      "english": "Stir it, and see you don’t burn it.",
+      "source": "Cato Agr. 107"
     }
   ],
   "related": [
@@ -18,11 +50,13 @@
     "spatula"
   ],
   "sources": [
-    "<a href=\"https://alatius.com/ls/index.php?l=agito\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: agito</a>"
+    "<a href=\"https://alatius.com/ls/index.php?l=agito\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: agito</a> · <a href=\"https://logeion.uchicago.edu/commoveo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: commoveo</a>",
+    "Apicius, <em>De re coquinaria</em> 4.2.23.",
+    "Cato, <em>De agri cultura</em> 107."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

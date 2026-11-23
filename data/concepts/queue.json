@@ -12,7 +12,11 @@
     "queue up",
     "form a single line",
     "form a double line",
-    "line up"
+    "line up",
+    "stand in the queue",
+    "wait in the queue",
+    "join the queue",
+    "get in line"
   ],
   "domain": "sermo",
   "terms": [
@@ -34,6 +38,11 @@
       "latin": "Fac (facite) agmen ūnicum (duplex).",
       "english": "Form a single (double) line.",
       "source": "Traupman 33"
+    },
+    {
+      "latin": "In agmine stēmus, dum nōs ōrdō vocet.",
+      "english": "Let’s stand in the queue until it’s our turn.",
+      "source": "composed"
     }
   ],
   "sources": [
@@ -42,7 +51,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

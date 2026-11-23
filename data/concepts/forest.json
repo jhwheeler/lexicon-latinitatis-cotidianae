@@ -3,7 +3,10 @@
   "english": "forest",
   "pos": "noun",
   "also": [
-    "woods"
+    "woods",
+    "enchanted forest",
+    "magic forest",
+    "enchanted wood"
   ],
   "domain": "natura",
   "terms": [
@@ -18,6 +21,13 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "In hāc silvā incantātā arborēs loquuntur.",
+      "english": "In this enchanted forest the trees talk.",
+      "source": "composed"
+    }
+  ],
   "related": [
     "oak",
     "trunk-tree",
@@ -29,11 +39,12 @@
     "wooded"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/silva\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: silva</a> · <a href=\"https://logeion.uchicago.edu/incanto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: incanto</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 204, 318."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

@@ -3,7 +3,15 @@
   "english": "shoelace",
   "pos": "noun",
   "also": [
-    "shoelaces"
+    "shoelaces",
+    "your shoelace is undone",
+    "your laces are undone",
+    "your shoe’s come undone",
+    "shoelace undone",
+    "tie your shoelaces",
+    "tie your laces",
+    "do up your shoelaces",
+    "do up your laces"
   ],
   "domain": "vestitus",
   "terms": [
@@ -21,6 +29,18 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "Corrigia tibi solūta est; cavē nē cadās.",
+      "english": "Your shoelace is undone; mind you don’t fall.",
+      "source": "composed"
+    },
+    {
+      "latin": "Corrigiās tibi ligābō; pedem hūc porrige.",
+      "english": "I’ll tie your shoelaces; put your foot out here.",
+      "source": "composed"
+    }
+  ],
   "notes": {
     "corrigia": {
       "form": "corrigia",
@@ -34,12 +54,12 @@
     "shoe"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/corrigia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: corrigia</a>",
+    "<a href=\"https://logeion.uchicago.edu/corrigia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: corrigia</a> · <a href=\"https://logeion.uchicago.edu/solvo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: solvo</a> · <a href=\"https://logeion.uchicago.edu/ligo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ligo</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 117, 377. <a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. shoelace."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

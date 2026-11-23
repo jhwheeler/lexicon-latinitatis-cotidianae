@@ -3,10 +3,17 @@
   "english": "bell",
   "sense": "of a church",
   "pos": "noun",
+  "also": [
+    "the bells are ringing",
+    "church bells",
+    "ring the bells",
+    "bells ringing",
+    "the church bell"
+  ],
+  "domain": "urbs",
   "also_under": [
     "ecclesia"
   ],
-  "domain": "urbs",
   "terms": [
     {
       "latin": "campāna, campānae f.",
@@ -18,16 +25,29 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "Audīn'? Campānae sonant; properēmus in ecclēsiam.",
+      "english": "Can you hear? The bells are ringing; let’s hurry to church.",
+      "source": "composed"
+    },
+    {
+      "latin": "aera pulsāre",
+      "english": "ring the bells",
+      "source": "Levi–Bini p. 12"
+    }
+  ],
   "related": [
     "church"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/campana\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: campana</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 278."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 278.",
+    "Enrico Levi and Arturo Bini, <em>Il latino come lingua viva</em> (1937), p. 12, s.v. campana."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

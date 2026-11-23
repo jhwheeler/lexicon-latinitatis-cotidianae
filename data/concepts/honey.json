@@ -2,11 +2,15 @@
   "id": "honey",
   "english": "honey",
   "pos": "noun",
+  "also": [
+    "a spoonful of honey",
+    "a spoon of honey"
+  ],
+  "domain": "culina",
   "also_under": [
     "corpus",
     "natura"
   ],
-  "domain": "culina",
   "terms": [
     {
       "latin": "mel, mellis n.",
@@ -28,6 +32,11 @@
       "latin": "Paulum mellis adde; sīc dulcius erit.",
       "english": "Add a little honey; it’ll be sweeter.",
       "source": "composed"
+    },
+    {
+      "latin": "Vīn' cochlear mellis?",
+      "english": "Would you like a spoonful of honey?",
+      "source": "composed"
     }
   ],
   "related": [
@@ -44,7 +53,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

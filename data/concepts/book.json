@@ -2,10 +2,22 @@
   "id": "book",
   "english": "book",
   "pos": "noun",
+  "also": [
+    "get out your book",
+    "take up your book",
+    "classroom commands",
+    "in circulation (of books)",
+    "cloth-bound book",
+    "hardback",
+    "hardcover book",
+    "picture book",
+    "picture books",
+    "illustrated book"
+  ],
+  "domain": "sermo",
   "also_under": [
     "schola"
   ],
-  "domain": "sermo",
   "terms": [
     {
       "latin": "liber, librī m.",
@@ -53,6 +65,11 @@
       "latin": "liber līnō contēctus",
       "english": "a cloth-bound book",
       "source": "Traupman 292"
+    },
+    {
+      "latin": "Prōme librum illum pictūrārum plēnum.",
+      "english": "Get out that picture book.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -61,25 +78,16 @@
     "story"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/liber\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: liber</a>",
+    "<a href=\"https://logeion.uchicago.edu/liber\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: liber</a> · <a href=\"https://logeion.uchicago.edu/pictura\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pictura</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 28, 164, 291, 292, 326.",
     "<a href=\"https://logeion.uchicago.edu/promo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: promo</a>"
   ],
-  "replaces": [
-    "entry-74"
-  ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   },
-  "also": [
-    "get out your book",
-    "take up your book",
-    "classroom commands",
-    "in circulation (of books)",
-    "cloth-bound book",
-    "hardback",
-    "hardcover book"
+  "replaces": [
+    "entry-74"
   ]
 }

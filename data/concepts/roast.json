@@ -2,15 +2,52 @@
   "id": "roast",
   "english": "roast",
   "pos": "verb",
+  "also": [
+    "roast the chicken",
+    "roast chicken",
+    "roast meat"
+  ],
   "domain": "culina",
   "terms": [
     {
       "latin": "assō, assāre",
       "status": "recommended",
-      "period": "classical",
+      "period": "late",
       "evidence": [
+        "Apic. 2.1 (Lewis &amp; Short)",
         "Traupman 372"
+      ],
+      "comment": "Lewis &amp; Short marks the verb late (Apuleius, Apicius, the Vulgate); it is the cookery books’ word and the one in use today. The classical writers say it with the adjective <span lang=\"la\">assus</span> or with <span lang=\"la\">torreō</span>."
+    },
+    {
+      "latin": "assus, assa, assum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "roasted; as a noun, assum, a roast",
+      "evidence": [
+        "Hor. S. 2.2.73–74: <span lang=\"la\">simul assīs miscueris ēlixa</span>"
       ]
+    },
+    {
+      "latin": "torreō, torrēre, torruī, tostum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "roast, bake, or toast by dry heat",
+      "evidence": [
+        "Verg. A. 1.179: <span lang=\"la\">et torrēre parant flammīs et frangere saxō</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Pullum gallīnāceum in furnō assābimus.",
+      "english": "We’re going to roast the chicken in the oven.",
+      "source": "composed"
+    },
+    {
+      "latin": "Hodiē pullum assum cēnābimus.",
+      "english": "We’re having roast chicken for dinner today.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -19,12 +56,15 @@
     "oven"
   ],
   "sources": [
-    "<a href=\"https://alatius.com/ls/index.php?l=asso\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: asso</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 372."
+    "<a href=\"https://alatius.com/ls/index.php?l=asso\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: asso</a> · <a href=\"https://logeion.uchicago.edu/assus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: assus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 372.",
+    "<a href=\"https://logeion.uchicago.edu/torreo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: torreo</a>",
+    "Horace, <em>Satires</em> 2.2.73–74.",
+    "Vergil, <em>Aeneid</em> 1.179."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

@@ -10,7 +10,9 @@
     "draw a picture",
     "do a drawing",
     "drawing (the activity)",
-    "draw a cat"
+    "draw a cat",
+    "what are you drawing?",
+    "what’s that you’re drawing?"
   ],
   "domain": "sermo",
   "terms": [
@@ -39,6 +41,11 @@
       "latin": "fōrmās geōmetricās dēscrībere",
       "english": "to draw geometrical figures",
       "source": "Traupman 306"
+    },
+    {
+      "latin": "Quid dēlīneās? Equumne an canem?",
+      "english": "What are you drawing? A horse or a dog?",
+      "source": "composed"
     }
   ],
   "related": [
@@ -51,7 +58,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

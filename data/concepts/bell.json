@@ -2,6 +2,11 @@
   "id": "bell",
   "english": "bell",
   "pos": "noun",
+  "also": [
+    "ring the bell",
+    "ring a bell",
+    "the bell is ringing"
+  ],
   "domain": "ludi",
   "terms": [
     {
@@ -25,6 +30,21 @@
       "latin": "Audīn' tintinnābulum?",
       "english": "Can you hear the bell?",
       "source": "composed"
+    },
+    {
+      "latin": "Tintinnābulum agitā: audīn'?",
+      "english": "Ring the bell: can you hear it?",
+      "source": "composed"
+    },
+    {
+      "latin": "numquam edepol temere tinnit tintinnābulum: nisi quī illud tractat aut movet, mūtumst, tacet.",
+      "english": "a bell never rings for nothing: unless someone handles it or moves it, it’s dumb, it’s silent.",
+      "source": "Plaut. Trin. 1004–1005"
+    },
+    {
+      "latin": "Redde pilam: sonat aes thermārum.",
+      "english": "Give back the ball: the bell of the baths is ringing.",
+      "source": "Mart. 14.163.1"
     }
   ],
   "related": [
@@ -32,13 +52,15 @@
     "drum"
   ],
   "sources": [
-    "<a href=\"https://logeion.org/tintinnabulum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tintinnabulum</a>",
+    "<a href=\"https://logeion.org/tintinnabulum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tintinnabulum</a> · <a href=\"https://logeion.uchicago.edu/tinnio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tinnio</a>",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. bell.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 278."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 278.",
+    "Plautus, <em>Trinummus</em> 1004–1005.",
+    "Martial 14.163.1."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

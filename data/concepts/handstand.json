@@ -1,0 +1,72 @@
+{
+  "id": "handstand",
+  "english": "do a handstand",
+  "pos": "verb",
+  "also": [
+    "handstand",
+    "handstands",
+    "stand on one’s hands",
+    "stand on your hands",
+    "walk on one’s hands",
+    "walk on your hands"
+  ],
+  "domain": "corpus",
+  "also_under": [
+    "ludi"
+  ],
+  "terms": [
+    {
+      "latin": "manibus stāre",
+      "status": "recommended",
+      "period": "ours",
+      "gloss": "stand on one’s hands: do a handstand",
+      "grammar": "stō, stāre, stetī, statum, with the ablative manibus",
+      "comment": "A description of ours: we have found no word for a handstand in Traupman, Morgan–Owens, or Levi–Bini. It is built like <span lang=\"la\">dextrō pede stāre</span>, stand on one’s right foot (Traupman 57), and like Cicero’s <span lang=\"la\">manibus ingredī</span>, walk on one’s hands."
+    },
+    {
+      "latin": "manibus ingredī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "walk on one’s hands",
+      "grammar": "ingredior, ingredī, ingressus sum, with the ablative manibus",
+      "evidence": [
+        "Cic. Fin. 5.35: <span lang=\"la\">ut sī aut manibus ingrediātur quis aut nōn ante, sed retrō</span>"
+      ],
+      "comment": "Cicero’s example of a movement against nature, beside walking backwards: the classical phrase for walking on one’s hands."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Potesne manibus stāre? Pedēs tuōs teneō.",
+      "english": "Can you do a handstand? I’ve got your feet.",
+      "source": "composed"
+    },
+    {
+      "latin": "Manibus ingredere, sī potes!",
+      "english": "Walk on your hands, if you can!",
+      "source": "composed"
+    },
+    {
+      "latin": "ut sī aut manibus ingrediātur quis aut nōn ante, sed retrō",
+      "english": "as if someone were to walk on his hands, or not forwards but backwards",
+      "source": "Cic. Fin. 5.35"
+    }
+  ],
+  "related": [
+    "cartwheel",
+    "somersault",
+    "acrobat",
+    "gymnastics",
+    "push-ups"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/sto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sto</a> · <a href=\"https://logeion.uchicago.edu/ingredior\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ingredior</a> · <a href=\"https://logeion.uchicago.edu/manus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: manus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 57.",
+    "Cicero, <em>De finibus</em> 5.35."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-23",
+    "by": "Claude"
+  }
+}

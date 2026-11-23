@@ -2,11 +2,17 @@
   "id": "merry-christmas",
   "english": "Merry Christmas!",
   "pos": "phrase",
+  "also": [
+    "happy Christmas",
+    "happy Christmas!",
+    "Christmas greetings",
+    "season’s greetings"
+  ],
+  "domain": "sermo",
   "also_under": [
     "tempus",
     "ecclesia"
   ],
-  "domain": "sermo",
   "terms": [
     {
       "latin": "Faustum ac fēlīcem Chrīstī nātālem (tibi exoptō)!",
@@ -15,6 +21,18 @@
       "evidence": [
         "Traupman 291"
       ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Fausta fēsta nātālīcia Chrīstī (tibi exoptō)!",
+      "english": "Merry Christmas!",
+      "source": "Traupman 291"
+    },
+    {
+      "latin": "Fēlīcem Chrīstī nātālem, mī fīlī!",
+      "english": "Happy Christmas, my son!",
+      "source": "composed"
     }
   ],
   "related": [
@@ -26,14 +44,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
-  },
-  "phrases": [
-    {
-      "latin": "Fausta fēsta nātālīcia Chrīstī (tibi exoptō)!",
-      "english": "Merry Christmas!",
-      "source": "Traupman 291"
-    }
-  ]
+  }
 }

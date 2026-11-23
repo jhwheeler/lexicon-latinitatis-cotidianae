@@ -2,6 +2,11 @@
   "id": "try-on",
   "english": "try on",
   "pos": "verb",
+  "also": [
+    "try it on",
+    "try them on",
+    "would you like to try it on?"
+  ],
   "domain": "vestitus",
   "terms": [
     {
@@ -21,6 +26,13 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "Hanc tunicam indue, ut videāmus num tibi apta sit.",
+      "english": "Put this top on, so we can see whether it fits you.",
+      "source": "composed"
+    }
+  ],
   "related": [
     "put-on",
     "fit"
@@ -31,7 +43,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

@@ -12,7 +12,9 @@
     "I’m starved",
     "I’m not hungry",
     "not hungry",
-    "are you hungry?"
+    "are you hungry?",
+    "are you still hungry?",
+    "still hungry?"
   ],
   "domain": "culina",
   "terms": [
@@ -77,6 +79,11 @@
       "latin": "Nōn ēsuriō; modo prandī.",
       "english": "I’m not hungry; I’ve just had lunch.",
       "source": "composed"
+    },
+    {
+      "latin": "Etiam nunc ēsurīs? — Ēsuriō; dā mihi plūs pānis.",
+      "english": "Are you still hungry? — Yes; give me some more bread.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -95,7 +102,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "by": "Claude"
   },
   "replaces": [

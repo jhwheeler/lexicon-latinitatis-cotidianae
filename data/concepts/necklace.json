@@ -2,6 +2,11 @@
   "id": "necklace",
   "english": "necklace",
   "pos": "noun",
+  "also": [
+    "make a necklace",
+    "bead necklace",
+    "string a necklace"
+  ],
   "domain": "vestitus",
   "terms": [
     {
@@ -37,6 +42,16 @@
       "latin": "Avia monīle et inaurēs gerit.",
       "english": "Grandma is wearing a necklace and earrings.",
       "source": "composed"
+    },
+    {
+      "latin": "Ex bācīs monīle faciāmus tibi et aviae.",
+      "english": "Let’s make bead necklaces for you and Grandma.",
+      "source": "composed"
+    },
+    {
+      "latin": "collōque monīle bācātum, et duplicem gemmīs aurōque corōnam",
+      "english": "and a necklace of pearls for the neck, and a crown double with jewels and gold",
+      "source": "Verg. A. 1.654–655"
     }
   ],
   "related": [
@@ -47,14 +62,15 @@
   ],
   "sources": [
     "<a href=\"https://logeion.org/monile\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: monile</a> · <a href=\"https://logeion.org/torquis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: torquis</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 115, 117."
-  ],
-  "replaces": [
-    "entry-318"
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 115, 117.",
+    "Vergil, <em>Aeneid</em> 1.654–655."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
-  }
+  },
+  "replaces": [
+    "entry-318"
+  ]
 }

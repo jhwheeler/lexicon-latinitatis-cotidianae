@@ -3,7 +3,10 @@
   "english": "strawberry",
   "pos": "noun",
   "also": [
-    "strawberries"
+    "strawberries",
+    "wild strawberry",
+    "wild strawberries",
+    "woodland strawberries"
   ],
   "domain": "natura",
   "terms": [
@@ -27,6 +30,21 @@
       "latin": "Frāga congelāta",
       "english": "frozen strawberries",
       "source": "composed"
+    },
+    {
+      "latin": "Ecce frāga silvestria! Lege quot vīs.",
+      "english": "Look, wild strawberries! Pick as many as you like.",
+      "source": "composed"
+    },
+    {
+      "latin": "Quī legitis flōrēs et humī nāscentia frāga, frīgidus, ō puerī, fugite hinc, latet anguis in herbā.",
+      "english": "You who pick flowers and strawberries growing low on the ground, run away from here, children: a cold snake is lurking in the grass.",
+      "source": "Verg. E. 3.92–93"
+    },
+    {
+      "latin": "arbuteōs fētūs montānaque frāga legēbant",
+      "english": "they gathered the fruit of the strawberry tree and mountain strawberries",
+      "source": "Ov. Met. 1.104"
     }
   ],
   "related": [
@@ -34,16 +52,18 @@
     "bramble"
   ],
   "sources": [
-    "<a href=\"https://alatius.com/ls/index.php?l=fragum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fragum</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 73."
-  ],
-  "replaces": [
-    "entry-109",
-    "smoothie-109"
+    "<a href=\"https://alatius.com/ls/index.php?l=fragum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fragum</a> · <a href=\"https://logeion.uchicago.edu/silvestris\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: silvestris</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 73.",
+    "Vergil, <em>Eclogues</em> 3.92–93.",
+    "Ovid, <em>Metamorphoses</em> 1.104."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
-  }
+  },
+  "replaces": [
+    "entry-109",
+    "smoothie-109"
+  ]
 }

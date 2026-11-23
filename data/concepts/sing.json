@@ -2,6 +2,20 @@
   "id": "sing",
   "english": "sing",
   "pos": "verb",
+  "also": [
+    "sing (of a bird)",
+    "listen, a bird is singing",
+    "the birds are singing",
+    "birdsong",
+    "a bird is singing",
+    "sing along",
+    "sing along with",
+    "join in the singing",
+    "sing together",
+    "let’s sing",
+    "let’s sing a song",
+    "shall we sing?"
+  ],
   "domain": "sermo",
   "terms": [
     {
@@ -26,6 +40,18 @@
         "Traupman 279"
       ],
       "comment": "Of birds, and of frogs too, <span lang=\"la\">canere</span> is the usual word; of a cock it is “crow”."
+    },
+    {
+      "latin": "concinō, concinere, concinuī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "sing together, sing along",
+      "grammar": "intransitive; the dative of the one sung along with",
+      "evidence": [
+        "Suet. Cal. 54: <span lang=\"la\">tragoedō prōnūntiantī concineret</span>",
+        "Liv. 9.32: <span lang=\"la\">concinuntque tubae</span>"
+      ],
+      "comment": "Of voices or instruments sounding together; Suetonius uses it of Caligula singing along with a tragic actor in the theatre."
     }
   ],
   "phrases": [
@@ -33,22 +59,59 @@
       "latin": "Ūnā cantēmus.",
       "english": "Let’s sing together.",
       "source": "composed"
+    },
+    {
+      "latin": "St! Audīn'? Avis in arbore canit.",
+      "english": "Shh! Do you hear? A bird is singing in the tree.",
+      "source": "composed"
+    },
+    {
+      "latin": "queruntur in silvīs avēs",
+      "english": "the birds make their plaint in the woods",
+      "source": "Hor. Epod. 2.26"
+    },
+    {
+      "latin": "et mātūtīnī volucrum sub culmine cantūs",
+      "english": "and the birds’ morning songs under the eaves",
+      "source": "Verg. A. 8.456"
+    },
+    {
+      "latin": "Nōstī hoc carmen? Ūnā mēcum cane.",
+      "english": "Do you know this song? Sing along with me.",
+      "source": "composed"
+    },
+    {
+      "latin": "canendī ac saltandī voluptāte ita efferēbātur, ut nē pūblicīs quidem spectāculīs temperāret quō minus et tragoedō prōnūntiantī concineret",
+      "english": "he was so carried away by the pleasure of singing and dancing that not even at the public shows could he stop himself from singing along with the tragic actor as he delivered his lines",
+      "source": "Suet. Cal. 54"
+    },
+    {
+      "latin": "Cantēmus aliquid, dum ambulāmus.",
+      "english": "Let’s sing something while we walk.",
+      "source": "composed"
+    },
+    {
+      "latin": "cantantēs licet ūsque (minus via laedit) eāmus",
+      "english": "let’s go singing all the way (the road hurts less)",
+      "source": "Verg. E. 9.64"
     }
   ],
   "related": [
     "song"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/canto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: canto</a>",
+    "<a href=\"https://logeion.uchicago.edu/canto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: canto</a> · <a href=\"https://logeion.uchicago.edu/concino\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: concino</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 169, 279.",
-    "<a href=\"https://logeion.uchicago.edu/cano\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cano</a>"
+    "<a href=\"https://logeion.uchicago.edu/cano\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cano</a>",
+    "Horace, <em>Epodes</em> 2.26.",
+    "Vergil, <em>Aeneid</em> 8.455–456.",
+    "Suetonius, <em>Caligula</em> 54.",
+    "Livy 9.32.",
+    "Vergil, <em>Eclogues</em> 9.64."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
-  },
-  "also": [
-    "sing (of a bird)"
-  ]
+  }
 }

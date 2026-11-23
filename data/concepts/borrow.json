@@ -9,7 +9,10 @@
     "may I borrow",
     "hit someone for a loan",
     "may I hit you for a loan?",
-    "touch someone for money"
+    "touch someone for money",
+    "borrow a book",
+    "can I borrow this book?",
+    "borrow a book from the library"
   ],
   "domain": "pecunia",
   "also_under": [
@@ -81,6 +84,16 @@
       "latin": "Duās aut trēs familiās habeat, unde ūtenda roget et quibus det, praetereā nēminī.",
       "english": "Let him have two or three households to borrow things from and to lend them to, and no one else.",
       "source": "Cato Agr. 5.4"
+    },
+    {
+      "latin": "Hunc librum ūtendum ā bibliothēcā accipiēmus.",
+      "english": "We’ll borrow this book from the library.",
+      "source": "composed"
+    },
+    {
+      "latin": "Quodsī ea, quae ūtenda accēperis, majōre mēnsūrā, sī modo possīs, jubet reddere Hēsiodus, …",
+      "english": "If Hesiod tells us to give back what we have borrowed in fuller measure, if we only can, …",
+      "source": "Cic. Off. 1.48"
     }
   ],
   "related": [
@@ -93,11 +106,12 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/mutuor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mutuor</a> · <a href=\"https://logeion.uchicago.edu/mutuus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mutuus</a> · <a href=\"https://logeion.uchicago.edu/utor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: utor</a>",
     "<a href=\"https://logeion.uchicago.edu/ferio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ferio</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 27, 100, 328."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 27, 100, 328.",
+    "Cicero, <em>De officiis</em> 1.48."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

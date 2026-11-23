@@ -6,7 +6,8 @@
     "venom",
     "poisonous",
     "poisoning",
-    "toxin"
+    "toxin",
+    "poisonous (of a plant or animal)"
   ],
   "domain": "corpus",
   "terms": [
@@ -20,6 +21,17 @@
         "Cic. Clu. 165 (Lewis &amp; Short)"
       ],
       "comment": "At first any drug or potion, good or bad; hence the old legal formula <span lang=\"la\">venēnum malum</span> (Cic. Clu. 148, Lewis &amp; Short)."
+    },
+    {
+      "latin": "venēnātus, venēnāta, venēnātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "poisonous, venomous",
+      "evidence": [
+        "Hor. C. 1.22.3: <span lang=\"la\">nec venēnātīs gravida sagittīs … pharetrā</span>",
+        "Cic. ND 2.126: <span lang=\"la\">venēnātīs sagittīs</span>"
+      ],
+      "comment": "The adjective, of poisoned arrows and venomous creatures; said of a mushroom or a berry it is our extension of the classical sense."
     }
   ],
   "phrases": [
@@ -27,17 +39,23 @@
       "latin": "ipsīus venēnī quae ratiō fingitur? ubi quaesītum est? quem ad modum parātum?",
       "english": "what account is made up of the poison itself? where was it got? how was it prepared?",
       "source": "Cic. Cael. 58 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "Hās bācās nē gustāverīs; venēnātae sunt.",
+      "english": "Don’t taste these berries; they’re poisonous.",
+      "source": "composed"
     }
   ],
   "related": [
     "snake"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/venenum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: venenum</a>"
+    "<a href=\"https://logeion.uchicago.edu/venenum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: venenum</a> · <a href=\"https://logeion.uchicago.edu/venenatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: venenatus</a>",
+    "Horace, <em>Odes</em> 1.22.3."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-13",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

@@ -9,12 +9,16 @@
     "grease",
     "grease job",
     "lubrication",
-    "lubricate"
+    "lubricate",
+    "grease the tin",
+    "grease the dish",
+    "grease the pan",
+    "grease the tin with butter"
   ],
+  "domain": "culina",
   "also_under": [
     "corpus"
   ],
-  "domain": "culina",
   "terms": [
     {
       "latin": "perungō, perungere",
@@ -56,8 +60,26 @@
       "latin": "ūnctiō autocīnētī",
       "english": "a grease job (on a car)",
       "source": "Traupman 323"
+    },
+    {
+      "latin": "Fōrmam būtȳrō unge, nē placenta haereat.",
+      "english": "Grease the tin with butter so the cake doesn’t stick.",
+      "source": "composed"
+    },
+    {
+      "latin": "catīnum fictile oleō unguitō",
+      "english": "grease an earthenware dish with oil",
+      "source": "Cato Agr. 84"
     }
   ],
+  "notes": {
+    "unct": {
+      "form": "ūnxī, ūnctum, ūnctiō",
+      "claim": "long u before -nx-, -nct-",
+      "against": "Lewis &amp; Short leaves it unmarked",
+      "html": "A hidden quantity: the vowel before -nct- and -nx- is long."
+    }
+  },
   "related": [
     "baste",
     "truss",
@@ -69,19 +91,12 @@
     "<a href=\"https://logeion.uchicago.edu/perungo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: perungo</a>",
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
     "<a href=\"https://logeion.org/ungo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ungo</a> · <a href=\"https://logeion.org/unctio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: unctio</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 216–217, 323."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 216–217, 323.",
+    "Cato, <em>De agri cultura</em> 84."
   ],
-  "notes": {
-    "unct": {
-      "form": "ūnxī, ūnctum, ūnctiō",
-      "claim": "long u before -nx-, -nct-",
-      "against": "Lewis &amp; Short leaves it unmarked",
-      "html": "A hidden quantity: the vowel before -nct- and -nx- is long."
-    }
-  },
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

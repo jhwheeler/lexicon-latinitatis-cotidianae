@@ -9,7 +9,11 @@
     "it’s done",
     "dinner’s ready",
     "is dinner ready?",
-    "how soon will dinner be ready?"
+    "how soon will dinner be ready?",
+    "test it with a knife",
+    "test it with a skewer",
+    "check if it’s done",
+    "the skewer comes out clean"
   ],
   "domain": "culina",
   "terms": [
@@ -65,6 +69,21 @@
       "latin": "Cēna cocta est! Venīte, accumbite.",
       "english": "Dinner’s ready! Come and sit down.",
       "source": "composed"
+    },
+    {
+      "latin": "Cultrum in medium dēmitte; sī pūrus exierit, cocta est.",
+      "english": "Push a knife into the middle; if it comes out clean, it’s done.",
+      "source": "composed"
+    },
+    {
+      "latin": "Vidētō ut bene percoquās medium, ubi altissimum erit.",
+      "english": "Make sure you bake the middle right through, where it’s deepest.",
+      "source": "Cato Agr. 84"
+    },
+    {
+      "latin": "Aperītō, dum īnspiciās, bis aut ter.",
+      "english": "Open it two or three times to look.",
+      "source": "Cato Agr. 76"
     }
   ],
   "related": [
@@ -78,11 +97,12 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/coquo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: coquo</a>",
-    "Plautus, <em>Menaechmi</em> 225; <em>Rudens</em> 342; <em>Stichus</em> 251, 533."
+    "Plautus, <em>Menaechmi</em> 225; <em>Rudens</em> 342; <em>Stichus</em> 251, 533.",
+    "Cato, <em>De agri cultura</em> 76; 84."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

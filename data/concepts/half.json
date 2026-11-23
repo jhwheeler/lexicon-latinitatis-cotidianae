@@ -2,22 +2,53 @@
   "id": "half",
   "english": "half",
   "pos": "noun",
+  "also": [
+    "half a lemon",
+    "half an apple",
+    "half of it",
+    "halved"
+  ],
+  "domain": "culina",
   "also_under": [
     "verba"
   ],
-  "domain": "culina",
   "terms": [
     {
       "latin": "dīmidium, dīmidiī n.",
       "status": "recommended",
       "period": "classical"
+    },
+    {
+      "latin": "dīmidiātus, dīmidiāta, dīmidiātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "halved, cut in half",
+      "evidence": [
+        "Gell. 3.14.3: <span lang=\"la\">dīmidiātum eum esse dīcere scyphum dēbeō, nōn dīmidium</span>"
+      ],
+      "comment": "Varro, as Gellius reports him, teaches that a thing cut in two is <span lang=\"la\">dīmidiātus</span>, while the share that is half of it is <span lang=\"la\">dīmidium</span> with the genitive: so <span lang=\"la\">citreum dīmidiātum</span>, a halved lemon, but <span lang=\"la\">dīmidium citreī</span>, half a lemon. Gellius gives Plautus’s <span lang=\"la\">dīmidium aurī</span> and <span lang=\"la\">dīmidium obsōnī</span> as models (Gell. 3.14.14–15)."
     }
   ],
   "phrases": [
     {
-      "latin": "Dīmidium pirum mihi dā.",
+      "latin": "Dīmidium pirī mihi dā.",
       "english": "Give me half a pear.",
       "source": "composed"
+    },
+    {
+      "latin": "Dīmidium citreī mihi dā; alterum dīmidium servā.",
+      "english": "Give me half a lemon; keep the other half.",
+      "source": "composed"
+    },
+    {
+      "latin": "Citreum dīmidiātum exprime.",
+      "english": "Squeeze the halved lemon.",
+      "source": "composed"
+    },
+    {
+      "latin": "dīmidiātum eum esse dīcere scyphum dēbeō, nōn dīmidium",
+      "english": "I ought to call the cup halved, not half",
+      "source": "Gell. 3.14.3"
     }
   ],
   "related": [
@@ -27,11 +58,12 @@
     "the-top-of"
   ],
   "sources": [
-    "<a href=\"https://alatius.com/ls/index.php?l=dimidium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dimidium</a>"
+    "<a href=\"https://alatius.com/ls/index.php?l=dimidium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dimidium</a> · <a href=\"https://logeion.uchicago.edu/dimidiatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dimidiatus</a>",
+    "Aulus Gellius, <em>Noctes Atticae</em> 3.14.3."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

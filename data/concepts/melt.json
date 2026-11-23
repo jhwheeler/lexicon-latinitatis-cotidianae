@@ -3,12 +3,16 @@
   "english": "melt",
   "pos": "verb",
   "also": [
-    "unfreeze"
+    "unfreeze",
+    "melt the butter",
+    "melt butter",
+    "melted butter",
+    "melt the chocolate"
   ],
+  "domain": "ludi",
   "also_under": [
     "natura"
   ],
-  "domain": "ludi",
   "terms": [
     {
       "latin": "liquēscō, liquēscere, licuī",
@@ -30,6 +34,17 @@
         "Lewis &amp; Short s.v. dissolvō",
         "Traupman 136"
       ]
+    },
+    {
+      "latin": "liquefaciō, liquefacere, liquefēcī, liquefactum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "melt (something): butter, wax, fat",
+      "evidence": [
+        "Cic. ND 2.26: <span lang=\"la\">admixtō calōre liquefacta</span>",
+        "Plin. NH 28.144: <span lang=\"la\">sēvum liquefierī prius jubent</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Mostly in the passive, <span lang=\"la\">liquefierī</span>; the active is rare (Lewis &amp; Short)."
     }
   ],
   "phrases": [
@@ -42,6 +57,11 @@
       "latin": "«Liquēscetne illa nix, tata?» «In summīs montibus nē aestāte quidem liquēscit.»",
       "english": "“Will that snow melt, Dad?” “On the highest mountains it doesn’t melt even in summer.”",
       "source": "Libellus VI, <span lang=\"la\">Reditus: per Alpēs domum</span>"
+    },
+    {
+      "latin": "Būtȳrum in patellā pōne, et sine lēniter liquēscat.",
+      "english": "Put the butter in the pan and let it melt gently.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -50,16 +70,18 @@
     "freeze-ice"
   ],
   "sources": [
-    "<a href=\"https://logeion.org/liquesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: liquesco</a>",
+    "<a href=\"https://logeion.org/liquesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: liquesco</a> · <a href=\"https://logeion.uchicago.edu/liquefacio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: liquefacio</a>",
     "No ancient name for this game is known; the calls are our own, built on the classical verbs.",
     "<a href=\"https://logeion.uchicago.edu/liquesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: liquesco</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 136.",
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
-    "<a href=\"https://logeion.uchicago.edu/dissolvo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dissolvo</a>"
+    "<a href=\"https://logeion.uchicago.edu/dissolvo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dissolvo</a>",
+    "Cicero, <em>De natura deorum</em> 2.26.",
+    "Pliny, <em>Natural History</em> 28.144."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

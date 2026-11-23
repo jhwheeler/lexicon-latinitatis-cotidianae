@@ -3,7 +3,12 @@
   "english": "cheese grater",
   "pos": "noun",
   "also": [
-    "grater"
+    "grater",
+    "fine grater",
+    "box grater",
+    "zester",
+    "lemon grater",
+    "nutmeg grater"
   ],
   "domain": "culina",
   "terms": [
@@ -26,6 +31,25 @@
         "M-O s.v. grater: cheese-grater, from Vives, 1540"
       ],
       "comment": "A Renaissance coinage from Greek."
+    },
+    {
+      "latin": "scobīna, scobīnae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a rasp, a file; a grater",
+      "evidence": [
+        "Varr. LL 7.68 (Lewis &amp; Short)",
+        "Plin. NH 11.180 (Lewis &amp; Short)",
+        "Levi–Bini p. 31: grattugia, <span lang=\"la\">scobīna</span>"
+      ],
+      "comment": "Classically a rasp; Levi–Bini gives it for the kitchen grater. <span lang=\"la\">Rādula</span> stays the first word."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Corticem citreī rādulā tenuī rāde.",
+      "english": "Grate the lemon peel on the fine grater.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -34,12 +58,13 @@
     "cutting-board"
   ],
   "sources": [
-    "<a href=\"https://logeion.org/radula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: radula</a>",
-    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. pan: saucepan, pan: pot, cutlery: spoon: slotted spoon, sieve, sieve: colander, grater: cheese-grater, wire whisk, press: garlic press."
+    "<a href=\"https://logeion.org/radula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: radula</a> · <a href=\"https://logeion.uchicago.edu/scobina\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: scobina</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. pan: saucepan, pan: pot, cutlery: spoon: slotted spoon, sieve, sieve: colander, grater: cheese-grater, wire whisk, press: garlic press.",
+    "Enrico Levi and Arturo Bini, <em>Il latino come lingua viva</em> (1937), p. 31, s.v. grattugia."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

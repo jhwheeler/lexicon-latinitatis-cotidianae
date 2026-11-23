@@ -3,7 +3,11 @@
   "english": "flatten",
   "pos": "verb",
   "also": [
-    "level"
+    "level",
+    "smooth the top",
+    "level the top",
+    "smooth it over",
+    "smooth the surface"
   ],
   "domain": "ludi",
   "terms": [
@@ -13,6 +17,15 @@
       "period": "classical",
       "gloss": "level, flatten",
       "comment": "A modern sand-play application."
+    },
+    {
+      "latin": "complānō, complānāre, complānāvī, complānātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "make even, level",
+      "evidence": [
+        "Cato Agr. 151: <span lang=\"la\">Id bene tabulā aut manibus aut pedibus conplānātō.</span>"
+      ]
     }
   ],
   "phrases": [
@@ -20,6 +33,16 @@
       "latin": "Aequa harēnam.",
       "english": "Level the sand.",
       "source": "composed"
+    },
+    {
+      "latin": "Superficiem spatulā aequā.",
+      "english": "Smooth the top with the spatula.",
+      "source": "composed"
+    },
+    {
+      "latin": "Id bene tabulā aut manibus aut pedibus conplānātō.",
+      "english": "Level it well with a board, your hands, or your feet.",
+      "source": "Cato Agr. 151"
     }
   ],
   "related": [
@@ -27,11 +50,12 @@
     "sand"
   ],
   "sources": [
-    "<a href=\"https://www.alatius.com/ls/index.php?l=aequo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aequo</a>"
+    "<a href=\"https://www.alatius.com/ls/index.php?l=aequo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aequo</a> · <a href=\"https://logeion.uchicago.edu/complano\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: complano</a> · <a href=\"https://logeion.uchicago.edu/superficies\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: superficies</a>",
+    "Cato, <em>De agri cultura</em> 151."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

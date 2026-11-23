@@ -3,12 +3,15 @@
   "english": "sieve",
   "pos": "noun",
   "also": [
-    "sift"
+    "sift",
+    "sift the flour",
+    "sift flour",
+    "sifted flour"
   ],
+  "domain": "ludi",
   "also_under": [
     "culina"
   ],
-  "domain": "ludi",
   "terms": [
     {
       "latin": "crībrum, crībrī n.",
@@ -33,6 +36,16 @@
         "M-O s.v. sieve: sifter"
       ],
       "comment": "<span lang=\"la\">Cernere</span> is first of all to separate, to sift (Lewis &amp; Short), with the sieve in the ablative or with <span lang=\"la\">per</span>."
+    },
+    {
+      "latin": "succernō, succernere, succrēvī, succrētum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "sift through a sieve",
+      "evidence": [
+        "Cato Agr. 25: <span lang=\"la\">vīnāceōs cotīdiē recentīs succernitō</span>",
+        "Plaut. Poen. 513: <span lang=\"la\">succrētust crībrō pollināriō</span>"
+      ]
     }
   ],
   "phrases": [
@@ -40,6 +53,21 @@
       "latin": "Farīnam, pulverem fermentārium, nitrum, salem per crībrum in catīnum trānsmittitō",
       "english": "Sieve the flour, baking powder, soda, and salt into a bowl",
       "source": "<span lang=\"la\">Culīna Theodōrī</span>"
+    },
+    {
+      "latin": "Farīnam crībrō cerne.",
+      "english": "Sift the flour.",
+      "source": "composed"
+    },
+    {
+      "latin": "deinde crībrum farīnārium pūrum sūmitō cāseumque per crībrum facitō trānseat in mortārium",
+      "english": "then take a clean flour sieve and push the cheese through the sieve into the bowl",
+      "source": "Cato Agr. 76"
+    },
+    {
+      "latin": "nam iste quidem gradus succrētust crībrō pollināriō",
+      "english": "why, that pace of yours has been sifted through a flour sieve",
+      "source": "Plaut. Poen. 513"
     }
   ],
   "related": [
@@ -48,17 +76,19 @@
   ],
   "sources": [
     "<a href=\"https://neolatinlexicon.org/latin/sieve/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: sieve</a>",
-    "<a href=\"https://logeion.uchicago.edu/cribrum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cribrum</a> · <a href=\"https://logeion.uchicago.edu/cerno\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cerno</a>",
+    "<a href=\"https://logeion.uchicago.edu/cribrum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cribrum</a> · <a href=\"https://logeion.uchicago.edu/cerno\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cerno</a> · <a href=\"https://logeion.uchicago.edu/succerno\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: succerno</a>",
     "<span lang=\"la\">Theodōrus et pater: Culīna Theodōrī</span>, the recipe book that goes with the libellī (<span lang=\"la\">Ad Libellōs I–VII</span>); examples marked “Culīna Theodōrī” quote it word for word.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 379."
-  ],
-  "replaces": [
-    "entry-284",
-    "vocab-284"
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 379.",
+    "Cato, <em>De agri cultura</em> 25; 76.",
+    "Plautus, <em>Poenulus</em> 513."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
-  }
+  },
+  "replaces": [
+    "entry-284",
+    "vocab-284"
+  ]
 }

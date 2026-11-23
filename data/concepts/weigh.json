@@ -2,10 +2,15 @@
   "id": "weigh",
   "english": "weigh",
   "pos": "verb",
+  "also": [
+    "weigh the flour",
+    "weigh it",
+    "weigh the sugar"
+  ],
+  "domain": "culina",
   "also_under": [
     "vectura"
   ],
-  "domain": "culina",
   "terms": [
     {
       "latin": "pendō, pendere",
@@ -26,6 +31,11 @@
       "latin": "nucēs pende.",
       "english": "weigh the nuts.",
       "source": "composed"
+    },
+    {
+      "latin": "Farīnam trutinā pende.",
+      "english": "Weigh the flour on the scales.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -40,7 +50,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

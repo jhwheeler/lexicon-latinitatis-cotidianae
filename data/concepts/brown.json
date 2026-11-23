@@ -14,7 +14,12 @@
     "hazel eyes",
     "dark brown",
     "bright brown",
-    "strawberry blond"
+    "strawberry blond",
+    "golden brown",
+    "golden (of baked food)",
+    "until golden",
+    "browned",
+    "nicely browned"
   ],
   "domain": "sermo",
   "terms": [
@@ -81,6 +86,44 @@
         "Andresian p. 50"
       ],
       "comment": "Tacitus uses it of British pearls (Lewis &amp; Short); <span lang=\"la\">sub-</span> softens <span lang=\"la\">fuscus</span>. Andresian gives it for a pale brown or beige; Traupman 251 has <span lang=\"la\">flāvidus</span> for beige."
+    },
+    {
+      "latin": "colōrō, colōrāre, colōrāvī, colōrātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "colour, brown (in the oven or the sun)",
+      "evidence": [
+        "Cato Agr. 80: <span lang=\"la\">item unguitō colōrātōque caldum nē nimium</span>",
+        "Cic. de Or. 2.60: <span lang=\"la\">cum in sōle ambulem, nātūrā fit ut colōrer</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Lewis &amp; Short: “to colour reddish or brownish”, of a man walking in the sun or pears ripening. Cato uses it of his fried honey-cakes, which are to be browned, “not too much”."
+    },
+    {
+      "latin": "rubidus, rubida, rubidum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "reddish brown: of bread baked brown",
+      "evidence": [
+        "Plaut. Cas. 2.5.2: <span lang=\"la\">prō pāne rubidō</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Plautus’s slave asks to be baked in a hot oven “like a brown loaf” (see the examples under “oven”)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Coque dōnec fulva fīat.",
+      "english": "Bake it until it’s golden brown.",
+      "source": "composed"
+    },
+    {
+      "latin": "Crusta jam colōrāta est; exime.",
+      "english": "The crust has browned; take it out.",
+      "source": "composed"
+    },
+    {
+      "latin": "Item unguitō colōrātōque caldum nē nimium.",
+      "english": "Brush it in the same way and brown it while it is hot, not too much.",
+      "source": "Cato Agr. 80"
     }
   ],
   "related": [
@@ -89,12 +132,13 @@
   "sources": [
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 167, 251, 252.",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. brown.",
-    "<a href=\"https://logeion.uchicago.edu/suffuscus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: suffuscus</a>",
-    "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 50."
+    "<a href=\"https://logeion.uchicago.edu/suffuscus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: suffuscus</a> · <a href=\"https://logeion.uchicago.edu/coloro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: coloro</a> · <a href=\"https://logeion.uchicago.edu/rubidus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: rubidus</a>",
+    "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 50.",
+    "Cato, <em>De agri cultura</em> 80."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

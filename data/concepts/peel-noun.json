@@ -7,7 +7,10 @@
     "rind",
     "apple peel",
     "orange peel",
-    "skin (of fruit)"
+    "skin (of fruit)",
+    "lemon peel",
+    "lemon rind",
+    "orange rind"
   ],
   "domain": "culina",
   "terms": [
@@ -47,6 +50,11 @@
       "latin": "corium mālī aurantiī",
       "english": "orange peel",
       "source": "Traupman 358"
+    },
+    {
+      "latin": "Corticem citreī nōlī abjicere; eum rādēmus.",
+      "english": "Don’t throw away the lemon peel; we’ll grate it.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -60,13 +68,13 @@
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio: numbered food and kitchen sections</a> · <a href=\"https://alatius.com/ls/index.php?l=cortex\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cortex</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 70–73, 358, 371."
   ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-23",
+    "by": "Claude"
+  },
   "replaces": [
     "entry-121",
     "smoothie-121"
-  ],
-  "review": {
-    "status": "draft",
-    "date": "2026-11-12",
-    "by": "Claude"
-  }
+  ]
 }

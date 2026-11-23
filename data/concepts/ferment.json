@@ -9,7 +9,11 @@
     "prove (dough)",
     "leaven",
     "leavened",
-    "has the dough risen?"
+    "has the dough risen?",
+    "it has risen",
+    "it’s risen",
+    "the cake has risen",
+    "it’s rising"
   ],
   "domain": "natura",
   "terms": [
@@ -29,6 +33,16 @@
         "Pliny"
       ],
       "comment": "Ancient, attested in Pliny, not merely a later invention."
+    },
+    {
+      "latin": "intumēscō, intumēscere, intumuī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "swell up, rise: of a cake in the oven",
+      "evidence": [
+        "Col. 1.4.10: <span lang=\"la\">locō tamen ipsō paululum intumēscente</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Lewis &amp; Short: “to swell up; to rise”, of waves and of the ground. Of a cake rising in the oven its use is ours; <span lang=\"la\">fermentārī</span> is said of dough rising with leaven."
     }
   ],
   "phrases": [
@@ -56,6 +70,11 @@
       "latin": "Jamne fermentāta est? — Nōndum; exspectēmus paulisper.",
       "english": "Has it risen yet? — Not yet; let’s wait a little.",
       "source": "composed"
+    },
+    {
+      "latin": "Ecce, placenta in furnō intumuit!",
+      "english": "Look, the cake has risen in the oven!",
+      "source": "composed"
     }
   ],
   "related": [
@@ -65,13 +84,13 @@
     "begin-to-boil"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/fermento\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fermento</a> · <a href=\"https://logeion.uchicago.edu/fermentesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fermentesco</a>",
+    "<a href=\"https://logeion.uchicago.edu/fermento\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fermento</a> · <a href=\"https://logeion.uchicago.edu/fermentesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fermentesco</a> · <a href=\"https://logeion.uchicago.edu/intumesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: intumesco</a>",
     "Vulgate, Exodus 12.34.",
     "Columella, <em>De re rustica</em> 12.17.1."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

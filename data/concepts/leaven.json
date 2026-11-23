@@ -3,7 +3,12 @@
   "english": "leaven",
   "pos": "noun",
   "also": [
-    "ferment"
+    "ferment",
+    "yeast",
+    "dried yeast",
+    "fresh yeast",
+    "baker’s yeast",
+    "sourdough starter"
   ],
   "domain": "natura",
   "terms": [
@@ -14,6 +19,13 @@
       "gloss": "leaven or ferment"
     }
   ],
+  "phrases": [
+    {
+      "latin": "Fermentum in aquam tepidam mitte, et sine paulisper quiēscat.",
+      "english": "Put the yeast in warm water and let it rest for a little while.",
+      "source": "composed"
+    }
+  ],
   "related": [
     "ferment",
     "fermentation"
@@ -21,12 +33,12 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/fermentum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fermentum</a>"
   ],
-  "replaces": [
-    "entry-13"
-  ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
-  }
+  },
+  "replaces": [
+    "entry-13"
+  ]
 }

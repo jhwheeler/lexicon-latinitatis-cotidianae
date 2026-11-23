@@ -8,7 +8,11 @@
     "put in the fridge",
     "put it in the fridge",
     "take out of the fridge",
-    "get out of the fridge"
+    "get out of the fridge",
+    "chill it in the fridge",
+    "chill in the fridge",
+    "leave it in the fridge",
+    "put it in the fridge to chill"
   ],
   "domain": "culina",
   "terms": [
@@ -36,6 +40,11 @@
       "latin": "Būtȳrum ē frīgidāriō prōme, ut mollēscat.",
       "english": "Take the butter out of the fridge so it gets soft.",
       "source": "composed"
+    },
+    {
+      "latin": "Placentam in frīgidārium pōne, ut concrēscat.",
+      "english": "Chill the cake in the fridge so that it sets.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -50,7 +59,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

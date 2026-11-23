@@ -2,6 +2,12 @@
   "id": "heart",
   "english": "heart",
   "pos": "noun",
+  "also": [
+    "heart shape",
+    "heart-shaped",
+    "a heart (the shape)",
+    "draw a heart"
+  ],
   "domain": "corpus",
   "terms": [
     {
@@ -14,6 +20,23 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "Quā fōrmā est hoc? — Cordis.",
+      "english": "What shape is this? — A heart.",
+      "source": "composed"
+    },
+    {
+      "latin": "Crustula in cordium fōrmam secēmus.",
+      "english": "Let’s cut the biscuits into heart shapes.",
+      "source": "composed"
+    },
+    {
+      "latin": "Cor avō pinge et eī dā.",
+      "english": "Draw a heart for Grandpa and give it to him.",
+      "source": "composed"
+    }
+  ],
   "related": [
     "chest-body",
     "lungs"
@@ -23,7 +46,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

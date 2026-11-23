@@ -1,0 +1,73 @@
+{
+  "id": "grandparents",
+  "english": "grandparents",
+  "pos": "noun",
+  "also": [
+    "grandparent",
+    "grandma and grandpa",
+    "grandpa and grandma",
+    "granny and grandpa",
+    "the grandparents"
+  ],
+  "domain": "sermo",
+  "terms": [
+    {
+      "latin": "avus et avia",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "grandfather and grandmother",
+      "evidence": [
+        "Plin. Pan. 39: <span lang=\"la\">avus, avia</span>, in a list of kin",
+        "Dig. 38.10.1: <span lang=\"la\">suprā avus, avia</span> (Lewis &amp; Short s.v. <span lang=\"la\">nepōs</span>)"
+      ],
+      "comment": "Latin has no single word for a grandparent of either sex: it names the pair. The masculine plural <span lang=\"la\">avī</span> covers both, as <span lang=\"la\">parentēs</span> and <span lang=\"la\">līberī</span> do, but is as often grandfathers or forefathers."
+    },
+    {
+      "latin": "avī, avōrum m. pl.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "grandparents; grandfathers; forefathers",
+      "evidence": [
+        "Plin. Ep. 5.6.6: <span lang=\"la\">videās avōs proavōsque jam juvenum</span>",
+        "Hor. C. 3.6.46: <span lang=\"la\">aetās parentum, pejor avīs</span>"
+      ],
+      "comment": "The plural of <span lang=\"la\">avus</span> (see “grandfather”); in Horace the grandparents’ generation."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Crās ad avum et aviam ībimus; jam nōs exspectant.",
+      "english": "Tomorrow we’re going to Grandpa and Grandma’s; they’re expecting us already.",
+      "source": "composed"
+    },
+    {
+      "latin": "Avō et aviae ōsculum dā.",
+      "english": "Give Grandpa and Grandma a kiss.",
+      "source": "composed"
+    },
+    {
+      "latin": "Hinc senēs multī: videās avōs proavōsque jam juvenum, audiās fābulās veterēs sermōnēsque majōrum",
+      "english": "So there are many old people: you can see the grandparents and great-grandparents of grown men, and hear old tales and the talk of the forefathers",
+      "source": "Plin. Ep. 5.6.6"
+    }
+  ],
+  "related": [
+    "grandfather",
+    "grandmother",
+    "grandson",
+    "granddaughter",
+    "great-grandfather",
+    "great-grandmother",
+    "generation"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/avus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: avus</a> · <a href=\"https://logeion.uchicago.edu/avia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: avia</a>",
+    "Pliny the Younger, <em>Letters</em> 5.6.6; <em>Panegyricus</em> 39.",
+    "Horace, <em>Odes</em> 3.6.46."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-23",
+    "by": "Claude"
+  }
+}

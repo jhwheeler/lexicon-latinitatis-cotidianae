@@ -1,0 +1,86 @@
+{
+  "id": "rectangle",
+  "english": "rectangle",
+  "pos": "noun",
+  "also": [
+    "rectangular",
+    "oblong",
+    "a rectangle",
+    "rectangle shape"
+  ],
+  "domain": "schola",
+  "terms": [
+    {
+      "latin": "quadrātum oblongum, quadrātī oblongī n.",
+      "status": "recommended",
+      "period": "renaissance",
+      "gloss": "an oblong square: a rectangle",
+      "evidence": [
+        "M-O s.v. triangle: rectangular: <span lang=\"la\">quadrātum oblongum</span>, from Mercuriale (1569): <span lang=\"la\">alia quadrātam, alia quadrātam oblongam, alia rotundiusculam, alia ōvālem</span>"
+      ],
+      "comment": "Mercuriale’s phrase, of the shapes of Roman bathtubs, and the plainest noun for the shape: a four-sided figure longer than it is wide. It is made of two classical words; Vitruvius sets <span lang=\"la\">quadrātus</span> and <span lang=\"la\">oblongus</span> side by side for square and rectangular buildings (see the examples), so for a child the adjective often does the work: <span lang=\"la\">Hoc nōn quadrātum est, sed oblongum</span>."
+    },
+    {
+      "latin": "oblongus, oblonga, oblongum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "oblong, rectangular, longer than it is wide",
+      "evidence": [
+        "Vitr. 5.11.1: <span lang=\"la\">peristȳlia quadrāta sīve oblonga</span>",
+        "Vitr. 5.2.1: <span lang=\"la\">sī quadrāta erit … sīn autem oblonga fuerit</span>",
+        "Plin. NH 37.196: <span lang=\"la\">figūra</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Vitruvius’s word for a court or a hall that is not square; Lewis &amp; Short notes it is not in Cicero or Caesar."
+    },
+    {
+      "latin": "rēctangulum, rēctangulī n.",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "a rectangle (the term of geometry)",
+      "evidence": [
+        "M-O s.v. triangle: rectangle, from Latham"
+      ],
+      "comment": "The modern geometer’s word, from <span lang=\"la\">rēctus</span> and <span lang=\"la\">angulus</span>; not in Lewis &amp; Short. The <span lang=\"la\">ē</span> is long as in <span lang=\"la\">rēctus</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Hoc nōn quadrātum est, sed oblongum: duo latera longiōra sunt.",
+      "english": "This isn’t a square, it’s a rectangle: two of the sides are longer.",
+      "source": "composed"
+    },
+    {
+      "latin": "Quā fōrmā est jānua? — Quadrātī oblongī.",
+      "english": "What shape is the door? — A rectangle.",
+      "source": "composed"
+    },
+    {
+      "latin": "In palaestrīs peristȳlia quadrāta sīve oblonga ita sint facienda, utī duōrum stadiōrum habeant ambulātiōnis circuitiōnem",
+      "english": "In the wrestling schools the colonnaded courts, whether square or rectangular, should be built so that the walk round them is two stades long",
+      "source": "Vitr. 5.11.1"
+    },
+    {
+      "latin": "Jūgerī mēnsūram ducentōs et quadrāgintā longitūdinis pedēs esse dīmidiōque in lātitūdinem patēre nōn ferē quisquam est quī ignōret",
+      "english": "There is hardly anyone who does not know that a iugerum is two hundred and forty feet long and half as much across",
+      "source": "Quint. 1.10.42"
+    }
+  ],
+  "related": [
+    "square-shape",
+    "triangle",
+    "round-shape",
+    "form-shape",
+    "line-drawn"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/oblongus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: oblongus</a> · <a href=\"https://logeion.uchicago.edu/quadratus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quadratus</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. triangle: rectangle; triangle: rectangular.",
+    "Vitruvius, <em>De architectura</em> 5.2.1; 5.11.1.",
+    "Quintilian, <em>Institutio oratoria</em> 1.10.42."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-23",
+    "by": "Claude"
+  }
+}

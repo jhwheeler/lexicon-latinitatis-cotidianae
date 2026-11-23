@@ -9,7 +9,13 @@
     "guest (staying)",
     "caller",
     "have visitors",
-    "have guests staying"
+    "have guests staying",
+    "we’re having guests",
+    "we’ve got guests coming",
+    "we have guests",
+    "guests are coming",
+    "people are coming over",
+    "company’s coming"
   ],
   "domain": "sermo",
   "terms": [
@@ -52,6 +58,26 @@
       "latin": "hospes, hīc bene manēbis, hīc summum bonum voluptās est",
       "english": "guest, you will be well off staying here; here the highest good is pleasure",
       "source": "Sen. Ep. 21.10"
+    },
+    {
+      "latin": "Vīn' ad tē ad cēnam veniam? — Sī possim, velim; vērum hīc apud mē cēnant aliēnī novem.",
+      "english": "Shall I come to yours for dinner? — I’d like that, if I could; but I’ve got nine people from outside dining with me here.",
+      "source": "Plaut. Stich. 486–487"
+    },
+    {
+      "latin": "hospite ventūrō cessābit nēmo tuōrum. ‘verre pavīmentum, nitidās ostende columnās, ārida cum tōtā dēscendat arānea tēlā, hic lēve argentum, vāsa aspera tergeat alter.’",
+      "english": "when a guest is coming, none of your household will sit idle: “Sweep the floor, make the columns shine, get every dry spider down with its web; one of you polish the smooth silver, another the embossed cups.”",
+      "source": "Juv. 14.59–62"
+    },
+    {
+      "latin": "Stella, Nepōs, Canī, Ceriālis, Flacce, venītis? septem sigma capit, sex sumus, adde Lupum.",
+      "english": "Stella, Nepos, Canius, Cerialis, Flaccus, are you coming? The couch takes seven; we are six; add Lupus.",
+      "source": "Mart. 10.48.5–6"
+    },
+    {
+      "latin": "Hodiē hospitēs ad nōs veniunt: age, adjuvā mē pavīmentum verrere.",
+      "english": "We’re having guests today: come on, help me sweep the floor.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -64,11 +90,14 @@
     "centre-building"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/hospes\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: hospes</a> · <a href=\"https://logeion.uchicago.edu/salutator\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: salutator</a>"
+    "<a href=\"https://logeion.uchicago.edu/hospes\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: hospes</a> · <a href=\"https://logeion.uchicago.edu/salutator\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: salutator</a>",
+    "Plautus, <em>Stichus</em> 486–487.",
+    "Juvenal 14.59–62.",
+    "Martial 10.48.5–6."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

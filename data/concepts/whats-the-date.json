@@ -4,12 +4,15 @@
   "pos": "phrase",
   "also": [
     "what’s the date today?",
-    "date"
+    "date",
+    "what day is it today?",
+    "what day is it?",
+    "what day of the week is it?"
   ],
+  "domain": "sermo",
   "also_under": [
     "tempus"
   ],
-  "domain": "sermo",
   "terms": [
     {
       "latin": "Quotus diēs est hodiernus?",
@@ -20,23 +23,39 @@
       ]
     }
   ],
-  "related": [
-    "calendar"
-  ],
-  "sources": [
-    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. date.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 300."
-  ],
-  "review": {
-    "status": "draft",
-    "date": "2026-11-09",
-    "by": "Claude"
-  },
   "phrases": [
     {
       "latin": "diēs, diēī f.",
       "english": "a date (day of the month)",
       "source": "Traupman 300"
+    },
+    {
+      "latin": "Quis diēs hebdomadis hodiē est? — Diēs Sāturnī.",
+      "english": "What day is it today? — Saturday.",
+      "source": "composed"
+    },
+    {
+      "latin": "At enim quō diē hebdomadis nāta es?",
+      "english": "What I mean is, on what day of the week were you born?",
+      "source": "Traupman 74"
+    },
+    {
+      "latin": "In ēdictō cōnsulum, quō ēdīcunt, quis diēs comitiīs centuriātīs futūrus sit",
+      "english": "In the consuls’ edict, in which they announce what day the assembly of the centuries will be held",
+      "source": "Gell. 13.15.1"
     }
-  ]
+  ],
+  "related": [
+    "calendar"
+  ],
+  "sources": [
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. date.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 74, 300.",
+    "Gellius 13.15.1."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-23",
+    "by": "Claude"
+  }
 }

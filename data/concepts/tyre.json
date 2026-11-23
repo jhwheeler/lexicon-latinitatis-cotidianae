@@ -11,7 +11,11 @@
     "flat tire",
     "puncture",
     "a flat",
-    "the tyre is flat"
+    "the tyre is flat",
+    "change a tyre",
+    "change the tyre",
+    "change the tyres",
+    "change a tire"
   ],
   "domain": "vectura",
   "terms": [
@@ -50,6 +54,16 @@
       "latin": "Canthus perforātus est; longius vehī nōn possumus.",
       "english": "The tyre’s punctured; we can’t drive any further.",
       "source": "composed"
+    },
+    {
+      "latin": "Canthus perforātus est; mūtandus est.",
+      "english": "The tyre’s punctured; it needs changing.",
+      "source": "composed"
+    },
+    {
+      "latin": "Canthōs cummeōs mēchanicus opifex jam mūtāvit.",
+      "english": "The mechanic has already changed the tyres.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -59,12 +73,12 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/canthus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: canthus</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 218.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 214, 218.",
     "<a href=\"https://www.lateinlexikon.com/lexicon_latinum_hodiernum_03_fgh.pdf\" rel=\"noopener noreferrer\" target=\"_blank\">Lexicon Latinum Hodiernum: bicycle parts</a> · <a href=\"https://neolatinlexicon.org/silva-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: Silva</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

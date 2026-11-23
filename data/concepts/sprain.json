@@ -7,7 +7,11 @@
   ],
   "also": [
     "dislocate",
-    "twist an ankle"
+    "twist an ankle",
+    "sprained ankle",
+    "I’ve sprained my ankle",
+    "twisted ankle",
+    "I twisted my ankle"
   ],
   "domain": "corpus",
   "terms": [
@@ -34,16 +38,28 @@
       "comment": "Traupman’s noun."
     }
   ],
+  "phrases": [
+    {
+      "latin": "Tālum luxāvī; ingredī nōn possum.",
+      "english": "I’ve sprained my ankle; I can’t walk.",
+      "source": "composed"
+    },
+    {
+      "latin": "luxō pede",
+      "english": "with a sprained (dislocated) foot",
+      "source": "Sall. Hist. 5.2 (Lewis &amp; Short s.v. <span lang=\"la\">luxus</span>)"
+    }
+  ],
   "related": [
     "fracture"
   ],
   "sources": [
-    "<a href=\"https://logeion.org/luxo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: luxo</a>",
+    "<a href=\"https://logeion.org/luxo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: luxo</a> · <a href=\"https://logeion.uchicago.edu/luxus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: luxus</a>",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. sprain: dislocate. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 65."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

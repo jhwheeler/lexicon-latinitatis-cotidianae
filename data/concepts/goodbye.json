@@ -9,7 +9,13 @@
     "goodbye for now",
     "bye for now",
     "goodbye and good luck",
-    "farewell"
+    "farewell",
+    "say goodbye",
+    "say goodbye to",
+    "say bye-bye",
+    "take leave",
+    "take one’s leave",
+    "time to say goodbye"
   ],
   "domain": "sermo",
   "terms": [
@@ -47,6 +53,29 @@
         "Plaut. Truc. 2.4.79: <span lang=\"la\">Valeās. — Valē.</span> (Lewis &amp; Short s.v. <span lang=\"la\">valeō</span>)",
         "Traupman 19"
       ]
+    },
+    {
+      "latin": "valē dīcere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "say goodbye",
+      "grammar": "valē as a quoted word, with dīcere and the dative of the person",
+      "evidence": [
+        "Ov. Tr. 1.3.57: <span lang=\"la\">saepe ‘valē’ dictō rūrsus sum multa locūtus</span>",
+        "Sen. Ep. 17.11: <span lang=\"la\">tibi valedīcere nōn licet grātīs</span> (the compound)"
+      ],
+      "comment": "The verb for taking leave, usually written as two words; Seneca has the compound <span lang=\"la\">valedīcere</span>."
+    },
+    {
+      "latin": "valēre jubēre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "say goodbye to (someone), bid farewell",
+      "grammar": "jubeō with the accusative of the person and valēre",
+      "evidence": [
+        "Cic. Att. 5.2.2: <span lang=\"la\">illum … salūtāvī, post etiam jussī valēre</span>"
+      ],
+      "comment": "Cicero’s phrase for greeting a man and then saying goodbye to him; compare <span lang=\"la\">salvēre jubeō</span> under “greet”."
     }
   ],
   "phrases": [
@@ -79,6 +108,26 @@
       "latin": "Nunc bene valē.",
       "english": "Bye for now.",
       "source": "Traupman 43"
+    },
+    {
+      "latin": "Num quid vīs? — Valē.",
+      "english": "Anything else? — Goodbye.",
+      "source": "Plaut. Aul. 175"
+    },
+    {
+      "latin": "in quō illum agentem aliquid crēdō salūtāvī, post etiam jussī valēre cum mē exiēns ē suā vīllā numquid vellem rogāsset",
+      "english": "there I said hello to him, busy with something, I think, and afterwards said goodbye too, when he came out of his villa and asked whether there was anything I wanted",
+      "source": "Cic. Att. 5.2.2"
+    },
+    {
+      "latin": "saepe ‘valē’ dictō rūrsus sum multa locūtus, et quasi discēdēns ōscula summa dedī",
+      "english": "often, after saying goodbye, I went on talking at length, and gave last kisses as if I were leaving",
+      "source": "Ov. Tr. 1.3.57–58"
+    },
+    {
+      "latin": "Avō et aviae valē dīc; jam abīmus.",
+      "english": "Say goodbye to Grandpa and Grandma; we’re going now.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -91,15 +140,19 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/valeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: valeo</a>",
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 15, 17, 19, 43, 182, 213, 285, 313, 322."
-  ],
-  "replaces": [
-    "entry-237",
-    "libelli-237"
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 15, 17, 19, 43, 182, 213, 285, 313, 322.",
+    "Plautus, <em>Aulularia</em> 175.",
+    "Cicero, <em>Letters to Atticus</em> 5.2.2.",
+    "Ovid, <em>Tristia</em> 1.3.57–58.",
+    "Seneca, <em>Letters</em> 17.11."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
-  }
+  },
+  "replaces": [
+    "entry-237",
+    "libelli-237"
+  ]
 }

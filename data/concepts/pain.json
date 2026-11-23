@@ -8,7 +8,15 @@
     "aches",
     "severe pain",
     "distress",
-    "feel pain"
+    "feel pain",
+    "it hurts here",
+    "does it still hurt?",
+    "is it still hurting?",
+    "it only hurts a little",
+    "it hurts a bit",
+    "it still hurts",
+    "it doesn’t hurt any more",
+    "does anything hurt?"
   ],
   "domain": "corpus",
   "also_under": [
@@ -51,6 +59,31 @@
       "latin": "Ubi tibi dolet?",
       "english": "Where does it hurt?",
       "source": "composed"
+    },
+    {
+      "latin": "Hīc dolet, pater.",
+      "english": "It hurts here, Daddy.",
+      "source": "composed"
+    },
+    {
+      "latin": "Etiamne dolet? — Paulum modo.",
+      "english": "Does it still hurt? — Only a little.",
+      "source": "composed"
+    },
+    {
+      "latin": "Jam nōn dolet.",
+      "english": "It doesn’t hurt any more.",
+      "source": "composed"
+    },
+    {
+      "latin": "Istuc quid est, tibi quod commūtātust color? Numquid tibi dolet?",
+      "english": "What’s this, that your colour has changed? Is anything hurting you?",
+      "source": "Plaut. Merc. 368–369"
+    },
+    {
+      "latin": "Sīquid est quod doleat, dolet; sī autem nōn est, tamen hoc hīc dolet.",
+      "english": "If there’s something to hurt, it hurts; and if there isn’t, still this hurts, here (of a heartache).",
+      "source": "Plaut. Cist. 67"
     }
   ],
   "related": [
@@ -60,14 +93,15 @@
     "sadness"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/dolor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dolor</a>",
+    "<a href=\"https://logeion.uchicago.edu/dolor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dolor</a> · <a href=\"https://logeion.uchicago.edu/doleo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: doleo</a>",
     "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 36.",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 62, 65.",
-    "<a href=\"https://logeion.uchicago.edu/afficio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: afficio</a>"
+    "<a href=\"https://logeion.uchicago.edu/afficio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: afficio</a>",
+    "Plautus, <em>Mercator</em> 368–369; <em>Cistellaria</em> 67."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

@@ -5,7 +5,11 @@
   "also": [
     "do the dishes",
     "wash the dishes",
-    "washing up"
+    "washing up",
+    "do the washing-up",
+    "washing-up",
+    "wash up the plates",
+    "clear and wash up"
   ],
   "domain": "culina",
   "terms": [
@@ -47,6 +51,21 @@
       "latin": "vāsa coquīnātōria ēluere",
       "english": "to wash the dishes",
       "source": "Traupman 305"
+    },
+    {
+      "latin": "tū argentum ēluitō, idem exstruitō.",
+      "english": "you wash the silver, and you stack it too.",
+      "source": "Plaut. Ps. 162"
+    },
+    {
+      "latin": "hic lēve argentum, vāsa aspera tergeat alter.",
+      "english": "let this one clean the plain silver, another the embossed plate.",
+      "source": "Juv. 14.62"
+    },
+    {
+      "latin": "Ego lavō, tū terge.",
+      "english": "I’ll wash, you dry.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -57,17 +76,19 @@
     "soap"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/patina\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: patina</a>",
+    "<a href=\"https://logeion.uchicago.edu/patina\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: patina</a> · <a href=\"https://logeion.uchicago.edu/eluo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: eluo</a> · <a href=\"https://logeion.uchicago.edu/exstruo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: exstruo</a> · <a href=\"https://logeion.uchicago.edu/tergeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tergeo</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 38, 305.",
-    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
-  ],
-  "replaces": [
-    "entry-259",
-    "libelli-259"
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+    "Plautus, <em>Pseudolus</em> 162.",
+    "Juvenal 14.62."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
-  }
+  },
+  "replaces": [
+    "entry-259",
+    "libelli-259"
+  ]
 }

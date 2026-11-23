@@ -20,7 +20,16 @@
     "falsely",
     "incorrectly",
     "faulty (grammar)",
-    "faulty"
+    "faulty",
+    "that’s wrong",
+    "that’s not right",
+    "that’s not correct",
+    "you said it wrong",
+    "I was wrong",
+    "I was mistaken",
+    "my mistake",
+    "I stand corrected",
+    "I got it wrong"
   ],
   "domain": "verba",
   "terms": [
@@ -87,6 +96,17 @@
       "evidence": [
         "Traupman 332"
       ]
+    },
+    {
+      "latin": "barbarē",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "incorrectly, in bad Latin (of speech)",
+      "evidence": [
+        "Gell. 5.21.5: <span lang=\"la\">«barbarē» inquit «dīxistī “plūria”»</span>",
+        "Gell. 5.21 (heading): <span lang=\"la\">nōn barbarē dīcere, sed Latīnē</span>"
+      ],
+      "comment": "The grammarians’ word for a fault of language, the opposite of <span lang=\"la\">Latīnē</span>. In Plautus’s prologues it means “in Latin”, seen from the Greek side (Plaut. Trin. 19: <span lang=\"la\">Plautus vertit barbarē</span>; see “translate”)."
     }
   ],
   "phrases": [
@@ -114,6 +134,26 @@
       "latin": "Errās perversē. — Vehementer errās.",
       "english": "You’re making a big mistake.",
       "source": "Traupman 346"
+    },
+    {
+      "latin": "Nōn rēctē: «domum» dīcimus, nōn «ad domum».",
+      "english": "That’s wrong: we say “domum”, not “ad domum”.",
+      "source": "composed"
+    },
+    {
+      "latin": "«Barbarē» inquit «dīxistī “plūria”; nam neque ratiōnem verbum hoc neque auctōritātēs habet.»",
+      "english": "“You said pluria wrongly,” he said, “for this word has neither reason nor authority behind it.”",
+      "source": "Gell. 5.21.5"
+    },
+    {
+      "latin": "Errāvī; tū rēctē dīcēbās.",
+      "english": "I was wrong; you were right.",
+      "source": "composed"
+    },
+    {
+      "latin": "cōnsōlor mē tamen, quoniam vōbīscum pariter et ūnā cum sapientissimō cōnsule errāvī",
+      "english": "yet I console myself, since I was wrong together with you and with a very wise consul",
+      "source": "Cic. Phil. 12.1"
     }
   ],
   "related": [
@@ -123,13 +163,15 @@
     "whats-the-matter"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/erro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: erro</a> · <a href=\"https://logeion.uchicago.edu/perperam\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: perperus (perperam)</a> · <a href=\"https://logeion.uchicago.edu/falsus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fallo (falsus)</a>",
+    "<a href=\"https://logeion.uchicago.edu/erro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: erro</a> · <a href=\"https://logeion.uchicago.edu/perperam\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: perperus (perperam)</a> · <a href=\"https://logeion.uchicago.edu/falsus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fallo (falsus)</a> · <a href=\"https://logeion.uchicago.edu/barbarus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: barbarus</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 112, 195, 246, 247, 249, 332, 409.",
-    "<a href=\"https://logeion.uchicago.edu/vitiosus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vitiosus</a>"
+    "<a href=\"https://logeion.uchicago.edu/vitiosus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vitiosus</a>",
+    "Aulus Gellius, <em>Noctes Atticae</em> 5.21.5.",
+    "Cicero, <em>Philippics</em> 12.1."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

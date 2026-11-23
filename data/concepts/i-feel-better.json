@@ -7,13 +7,31 @@
     "better (in health)",
     "are you better?",
     "I’m better",
-    "get better"
+    "get better",
+    "are you feeling better?",
+    "do you feel better?",
+    "is he better?",
+    "he’s getting better",
+    "she’s getting better",
+    "he’s on the mend"
   ],
   "domain": "corpus",
   "terms": [
     {
-      "latin": "Melius mē habeō.",
+      "latin": "Melius mihi est.",
       "status": "recommended",
+      "period": "classical",
+      "gloss": "I’m better; with tibi, sibi, the person who is better",
+      "evidence": [
+        "Cic. Fam. 16.22: <span lang=\"la\">Spērō ex tuīs litterīs tibi melius esse</span>",
+        "Cic. Att. 6.7.2: <span lang=\"la\">sed nūntiant melius esse</span>, of Tiro",
+        "Cic. Fam. 16.5: <span lang=\"la\">cum meliuscule tibi esset</span>"
+      ],
+      "comment": "Cicero’s way of saying that a sick person is better: the impersonal <span lang=\"la\">melius est</span> with the dative, <span lang=\"la\">meliuscule</span> for “a little better”."
+    },
+    {
+      "latin": "Melius mē habeō.",
+      "status": "alternative",
       "period": "classical",
       "evidence": [
         "Traupman 56, 98"
@@ -40,6 +58,38 @@
       "comment": "Getting better, as against feeling better: <span lang=\"la\">jam convaluisse eam</span>, that she is better now (Dolabella, of Terentia)."
     }
   ],
+  "phrases": [
+    {
+      "latin": "melius sē habēre (valēre)",
+      "english": "to feel better (physically)",
+      "source": "Traupman 314"
+    },
+    {
+      "latin": "Jamne tibi melius est?",
+      "english": "Are you feeling better now?",
+      "source": "composed"
+    },
+    {
+      "latin": "Convalēscit; crās fortasse surget.",
+      "english": "He’s getting better; maybe he’ll be up tomorrow.",
+      "source": "composed"
+    },
+    {
+      "latin": "Spērō ex tuīs litterīs tibi melius esse, cupiō certē.",
+      "english": "From your letter I hope you are better; I certainly want you to be.",
+      "source": "Cic. Fam. 16.22"
+    },
+    {
+      "latin": "Sed nūntiant melius esse.",
+      "english": "But they report that he is better (of Tiro, left behind seriously ill).",
+      "source": "Cic. Att. 6.7.2"
+    },
+    {
+      "latin": "tē plānē febrī carēre et bellē habēre",
+      "english": "that you are quite free of fever and doing nicely",
+      "source": "Cic. Fam. 16.15"
+    }
+  ],
   "related": [
     "i-dont-feel-well",
     "better"
@@ -47,18 +97,12 @@
   "sources": [
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 56, 98, 314.",
     "<a href=\"https://logeion.uchicago.edu/convalesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: convalesco</a>",
-    "Dolabella (Cic. Fam. 9.9.1)."
+    "Dolabella (Cic. Fam. 9.9.1).",
+    "Cicero, <em>Letters to Friends</em> 16.5, 16.15, 16.22; <em>Letters to Atticus</em> 6.7.2."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
-  },
-  "phrases": [
-    {
-      "latin": "melius sē habēre (valēre)",
-      "english": "to feel better (physically)",
-      "source": "Traupman 314"
-    }
-  ]
+  }
 }

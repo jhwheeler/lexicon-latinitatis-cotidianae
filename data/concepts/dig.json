@@ -7,7 +7,13 @@
     "dig a hole through",
     "dig in",
     "bury (in the ground)",
-    "dig a hole"
+    "dig a hole",
+    "dig the bed",
+    "dig the garden",
+    "dig over the bed",
+    "dig the vegetable patch",
+    "dig up the potatoes",
+    "dig up"
   ],
   "domain": "aedificatio",
   "also_under": [
@@ -51,6 +57,17 @@
         "Hor. S. 1.1.42 (Lewis &amp; Short)",
         "Verg. G. 3.376 (Lewis &amp; Short)"
       ]
+    },
+    {
+      "latin": "pastinō, pastināre, pastināvī, pastinātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "dig over and trench the ground for planting",
+      "evidence": [
+        "Col. 11.3.9: <span lang=\"la\">Mox ōrdinandī pastinandīque solī duo sunt tempora</span>",
+        "Plin. NH 17.159: <span lang=\"la\">solum</span> (Lewis &amp; Short)"
+      ],
+      "comment": "The gardener’s and vine-grower’s word for digging a bed deep before sowing or planting (Columella, Pliny)."
     }
   ],
   "phrases": [
@@ -63,6 +80,21 @@
       "latin": "Foveam fodiāmus.",
       "english": "Let’s dig a hole.",
       "source": "composed"
+    },
+    {
+      "latin": "Prīmum āreolam fodiāmus, deinde serēmus.",
+      "english": "First let’s dig the bed, then we’ll sow.",
+      "source": "composed"
+    },
+    {
+      "latin": "Pōma terrestria effodiāmus. Vidē quam multa!",
+      "english": "Let’s dig up the potatoes. Look how many there are!",
+      "source": "composed"
+    },
+    {
+      "latin": "Mox ōrdinandī pastinandīque solī duo sunt tempora, quoniam duae quoque holerum satiōnēs",
+      "english": "Then there are two seasons for laying out and digging the ground, since there are also two sowings of vegetables",
+      "source": "Col. 11.3.9"
     }
   ],
   "related": [
@@ -78,15 +110,16 @@
     "uproot"
   ],
   "sources": [
-    "<a href=\"https://www.alatius.com/ls/index.php?l=fodio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fodio</a>",
+    "<a href=\"https://www.alatius.com/ls/index.php?l=fodio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fodio</a> · <a href=\"https://logeion.uchicago.edu/pastino\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pastino</a> · <a href=\"https://logeion.uchicago.edu/effodio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: effodio</a>",
     "<a href=\"https://logeion.uchicago.edu/fodio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fodio</a>",
     "<a href=\"https://logeion.uchicago.edu/defodio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: defodio</a>",
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026. Examples marked “Libellus” quote those texts word for word.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 304."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 304.",
+    "Columella, <em>De re rustica</em> 11.3.9."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "by": "Claude"
   },
   "replaces": [

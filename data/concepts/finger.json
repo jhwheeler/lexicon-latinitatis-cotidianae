@@ -6,7 +6,11 @@
     "fingers",
     "point the finger at",
     "ring finger",
-    "fingertip"
+    "fingertip",
+    "how many fingers?",
+    "how many fingers am I holding up?",
+    "how many fingers are there?",
+    "count on your fingers"
   ],
   "domain": "corpus",
   "terms": [
@@ -40,6 +44,21 @@
       "latin": "digitus prīmōris",
       "english": "the fingertip",
       "source": "Traupman 315"
+    },
+    {
+      "latin": "Quot digitōs tibi ostendō? — Trēs.",
+      "english": "How many fingers am I holding up? — Three.",
+      "source": "composed"
+    },
+    {
+      "latin": "Quot sunt in manū digitī? Numerēmus.",
+      "english": "How many fingers are there on a hand? Let’s count them.",
+      "source": "composed"
+    },
+    {
+      "latin": "sī digitōrum saltem incertō aut indecōrō gestū ā computātiōne dissentit, jūdicātur indoctus",
+      "english": "if his fingers so much as stray from the sum with an unsure or clumsy movement, he is judged uneducated",
+      "source": "Quint. 1.10.35"
     }
   ],
   "related": [
@@ -51,11 +70,12 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/digitus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: digitus</a>",
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 58, 315."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 58, 315.",
+    "Quintilian, <em>Institutio oratoria</em> 1.10.35."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

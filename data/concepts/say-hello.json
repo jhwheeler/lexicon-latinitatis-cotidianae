@@ -12,7 +12,12 @@
     "give him my best regards",
     "give her my best regards",
     "best regards",
-    "send my regards"
+    "send my regards",
+    "say hello to her from me",
+    "say hello to him from me",
+    "say hi to her for me",
+    "send her my love",
+    "give her my love"
   ],
   "domain": "sermo",
   "terms": [
@@ -83,6 +88,11 @@
       "latin": "Cicerō tibi salūtem plūrimam dīcit.",
       "english": "Cicero sends you his warmest greetings.",
       "source": "Cic. Fam. 14.7.3 (Lewis &amp; Short s.v. <span lang=\"la\">salūs</span>)"
+    },
+    {
+      "latin": "Jubē eam meīs verbīs salvēre.",
+      "english": "Say hello to her from me.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -97,7 +107,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

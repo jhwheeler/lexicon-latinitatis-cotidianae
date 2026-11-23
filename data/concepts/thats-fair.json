@@ -8,7 +8,11 @@
     "it’s not fair",
     "I think that’s fair",
     "that’s not fair of you",
-    "unfair"
+    "unfair",
+    "fair enough",
+    "that’s reasonable",
+    "fair point",
+    "that’s a fair request"
   ],
   "domain": "sermo",
   "terms": [
@@ -37,6 +41,42 @@
         "Traupman 312"
       ],
       "comment": "Traupman gives it for “I think that’s fair”. Lewis &amp; Short renders <span lang=\"la\">aequī bonīque facere</span> “to regard as fair and reasonable, to put up with, be content with, acquiesce in”, and its examples are all of accepting what one cannot change: it answers “I’m content with it, it’s all the same to me” (see it makes no difference) better than a judgement that something is fair."
+    },
+    {
+      "latin": "Aequum dīcis.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "fair enough; what you say is fair",
+      "evidence": [
+        "Plaut. Bacch. 753: <span lang=\"la\">Aequom dīcis.</span>"
+      ]
+    },
+    {
+      "latin": "Aequum postulās.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "fair enough; that’s a fair request",
+      "evidence": [
+        "Plaut. Cist. 765: <span lang=\"la\">Aequom postulās.</span>",
+        "Plaut. Men. 1075: <span lang=\"la\">Enim vērō aequom postulās.</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Tū hodiē vāsa lavā, ego crās. — Aequum dīcis.",
+      "english": "You wash the dishes today, and I’ll do them tomorrow. — Fair enough.",
+      "source": "composed"
+    },
+    {
+      "latin": "mea fīdūciā opus condūxī et meō perīclō rem gerō. — Aequom dīcis.",
+      "english": "I took on the job on my own credit, and I run it at my own risk. — Fair enough.",
+      "source": "Plaut. Bacch. 752–753"
+    },
+    {
+      "latin": "… exquaeritōte: ego serva sum. — Aequom postulās.",
+      "english": "… ask her yourselves: I’m only a servant. — That’s fair.",
+      "source": "Plaut. Cist. 765"
     }
   ],
   "related": [
@@ -45,11 +85,12 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/aequus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aequus</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 98, 312."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 98, 312.",
+    "Plautus, <em>Bacchides</em> 752–753; <em>Cistellaria</em> 765; <em>Menaechmi</em> 1075."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

@@ -10,7 +10,10 @@
     "not so good",
     "lousy",
     "I feel lousy",
-    "feel lousy"
+    "feel lousy",
+    "I feel ill",
+    "I feel poorly",
+    "I feel bad"
   ],
   "domain": "corpus",
   "terms": [
@@ -53,6 +56,11 @@
       "latin": "Nōn optimē sānē.",
       "english": "Not too well.",
       "source": "Traupman 18"
+    },
+    {
+      "latin": "Salvē, medice. Mē male habeō hodiē.",
+      "english": "Hello, doctor. I’m not feeling well today.",
+      "source": "Traupman 55"
     }
   ],
   "related": [
@@ -66,7 +74,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

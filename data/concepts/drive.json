@@ -2,6 +2,14 @@
   "id": "drive",
   "english": "drive",
   "pos": "verb",
+  "also": [
+    "steer",
+    "drive someone home",
+    "drive a car",
+    "learn to drive",
+    "learning to drive",
+    "driving lessons"
+  ],
   "domain": "vectura",
   "terms": [
     {
@@ -36,25 +44,6 @@
       ]
     }
   ],
-  "related": [
-    "car",
-    "driver"
-  ],
-  "sources": [
-    "<a href=\"https://logeion.uchicago.edu/guberno\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: guberno</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 215–218, 286, 307.",
-    "<a href=\"https://logeion.uchicago.edu/gestatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gestatio</a>"
-  ],
-  "review": {
-    "status": "draft",
-    "date": "2026-11-12",
-    "by": "Claude"
-  },
-  "also": [
-    "steer",
-    "drive someone home",
-    "drive a car"
-  ],
   "phrases": [
     {
       "latin": "raedam gubernāre (agere)",
@@ -65,6 +54,31 @@
       "latin": "Aliquem domum autocīnētō addūcere.",
       "english": "To drive someone home.",
       "source": "Traupman 307"
+    },
+    {
+      "latin": "Cum adolēveris, autoraedam gubernāre discēs.",
+      "english": "When you’re grown up, you’ll learn to drive.",
+      "source": "composed"
+    },
+    {
+      "latin": "jam adstitī in currum, jam lōra teneō, jam stimulus in manūst.",
+      "english": "now I’m up in the chariot, now I hold the reins, now the goad is in my hand",
+      "source": "Plaut. Men. 865"
     }
-  ]
+  ],
+  "related": [
+    "car",
+    "driver"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/guberno\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: guberno</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 215–218, 286, 307.",
+    "<a href=\"https://logeion.uchicago.edu/gestatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gestatio</a>",
+    "Plautus, <em>Menaechmi</em> 865."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-23",
+    "by": "Claude"
+  }
 }

@@ -1,0 +1,78 @@
+{
+  "id": "i-feel-faint",
+  "english": "I feel faint",
+  "pos": "phrase",
+  "also": [
+    "I’m going to faint",
+    "I feel woozy",
+    "I feel funny",
+    "I feel light-headed",
+    "everything’s going dark",
+    "I feel queasy"
+  ],
+  "domain": "corpus",
+  "terms": [
+    {
+      "latin": "Animō male est.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "I feel faint, I feel sick",
+      "evidence": [
+        "Plaut. Amph. 1058: <span lang=\"la\">animō malest, aquam velim</span>",
+        "Plaut. Curc. 312: <span lang=\"la\">Animō male est.</span>",
+        "Plaut. Rud. 510: <span lang=\"la\">Periī, animō male fit.</span>",
+        "Plaut. Epid. 204: <span lang=\"la\">Animō malest.</span>"
+      ],
+      "comment": "What Plautus’s people say when they are about to faint, from fright, hunger, running, or seasickness; Lewis &amp; Short renders it “I’m fainting, my wits are going”. <span lang=\"la\">Animus</span> here is consciousness, as in <span lang=\"la\">animō linquī</span> (see “faint”). Often written <span lang=\"la\">malest</span>. The usual answer is a chair and water: <span lang=\"la\">Vīn' aquam?</span>"
+    },
+    {
+      "latin": "Tenebrae oboriuntur.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "everything is going dark",
+      "evidence": [
+        "Plaut. Curc. 309: <span lang=\"la\">Tenebrae oboriuntur, genua inediā succidunt.</span> (Lewis &amp; Short s.vv. <span lang=\"la\">oborior</span>, <span lang=\"la\">inedia</span>)"
+      ],
+      "comment": "Curculio’s words as he pretends to swoon from hunger: darkness comes over his eyes and his knees give way."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Animō male est? Cōnsīde hīc et aquam bibe.",
+      "english": "Do you feel faint? Sit down here and drink some water.",
+      "source": "composed"
+    },
+    {
+      "latin": "Quid tibist? — Tenebrae oboriuntur, genua inediā succidunt.",
+      "english": "What’s the matter? — Everything’s going dark, my knees are giving way from hunger.",
+      "source": "Plaut. Curc. 309"
+    },
+    {
+      "latin": "Datin' istī sellam, ubi assīdat, cito, et aquālem cum aquā? … — Animō male est. — Vīn' aquam?",
+      "english": "Give him a chair to sit on, quick, and a jug of water! … — I feel faint. — Do you want some water?",
+      "source": "Plaut. Curc. 311–313"
+    },
+    {
+      "latin": "Vae miserae mihi, animō malest, aquam velim.",
+      "english": "Oh dear me, I feel faint, I’d like some water.",
+      "source": "Plaut. Amph. 1057–1058"
+    }
+  ],
+  "related": [
+    "faint",
+    "dizziness",
+    "nausea",
+    "pale",
+    "i-dont-feel-well",
+    "whats-the-matter"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/animus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: animus</a> · <a href=\"https://logeion.uchicago.edu/oborior\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: oborior</a> · <a href=\"https://logeion.uchicago.edu/inedia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: inedia</a>",
+    "Plautus, <em>Amphitruo</em> 1057–1058; <em>Curculio</em> 309–313; <em>Epidicus</em> 204; <em>Rudens</em> 510."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-23",
+    "by": "Claude"
+  }
+}

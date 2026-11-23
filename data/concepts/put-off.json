@@ -8,7 +8,11 @@
     "put off till later",
     "let’s put this off to another time",
     "delay (postpone)",
-    "postpone to another time"
+    "postpone to another time",
+    "let’s put it off",
+    "let’s leave it till tomorrow",
+    "let’s do it another day",
+    "leave it for later"
   ],
   "domain": "tempus",
   "terms": [
@@ -42,15 +46,37 @@
       "latin": "differre in aliud tempus",
       "english": "to postpone to another time",
       "source": "Traupman 395"
+    },
+    {
+      "latin": "Differāmus in crāstinum; jam sērō est.",
+      "english": "Let’s put it off till tomorrow; it’s late now.",
+      "source": "composed"
+    },
+    {
+      "latin": "Crās agitō, perendiē agitō.",
+      "english": "Do it tomorrow, do it the day after.",
+      "source": "Plaut. Merc. 375"
+    },
+    {
+      "latin": "sed, sī placet, in hunc diem hāctenus; reliqua — satis enim multa restant — differāmus in crāstinum.",
+      "english": "but, if you like, that’s enough for today; let us put off the rest (for there is plenty left) till tomorrow.",
+      "source": "Cic. Rep. 2.70"
+    },
+    {
+      "latin": "remque commōvistī novā disputātiōne dignam, quam in aliud tempus differāmus",
+      "english": "you have raised a question worth a new discussion, which let us put off to another time",
+      "source": "Cic. Brut. 297"
     }
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/differo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: differo</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 106, 337, 395."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 106, 337, 395.",
+    "Plautus, <em>Mercator</em> 375.",
+    "Cicero, <em>De re publica</em> 2.70; <em>Brutus</em> 297."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

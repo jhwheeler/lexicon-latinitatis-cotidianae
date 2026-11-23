@@ -3,6 +3,14 @@
   "english": "clean",
   "sense": "make clean",
   "pos": "verb",
+  "also": [
+    "clean the kitchen",
+    "clean the windows",
+    "wash the windows",
+    "clean the bathroom",
+    "clean the toilet",
+    "clean the floor"
+  ],
   "domain": "domus",
   "terms": [
     {
@@ -27,29 +35,42 @@
       "comment": "Lewis &amp; Short: post-Augustan, and later the word of Church Latin for cleansing; <span lang=\"la\">pūrgāre</span> is the classical word."
     }
   ],
+  "phrases": [
+    {
+      "latin": "culīnam mundandam cūrāre",
+      "english": "to have the kitchen cleaned out",
+      "source": "Traupman 38"
+    },
+    {
+      "latin": "Fenestrās tergeāmus: vix quicquam per eās cernitur.",
+      "english": "Let’s clean the windows: you can hardly see a thing through them.",
+      "source": "composed"
+    },
+    {
+      "latin": "Hodiē balneum et lātrīnam pūrgābō.",
+      "english": "Today I’ll clean the bathroom and the toilet.",
+      "source": "composed"
+    },
+    {
+      "latin": "hospite ventūrō cessābit nēmo tuōrum. ‘verre pavīmentum, nitidās ostende columnās, ārida cum tōtā dēscendat arānea tēlā.’",
+      "english": "When a guest is coming, none of your household will sit idle. ‘Sweep the floor, make the columns shine, let every dry spider come down with all its web.’",
+      "source": "Juv. 14.59–61"
+    }
+  ],
   "related": [
     "clean",
     "clean-the-house",
     "wipe"
   ],
   "sources": [
-    "<a href=\"https://logeion.org/purgo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: purgo</a>",
+    "<a href=\"https://logeion.org/purgo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: purgo</a> · <a href=\"https://logeion.uchicago.edu/tergeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tergeo</a>",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. clean house, clean up, tidy up, broom: dustpan, garbage, trash, garbage can, waste basket. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 36, 38, 39, 290, 292, 307, 320, 401, 404.",
-    "<a href=\"https://logeion.uchicago.edu/mundo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mundo</a>"
+    "<a href=\"https://logeion.uchicago.edu/mundo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mundo</a>",
+    "Juvenal 14.59–61."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
-  },
-  "also": [
-    "clean the kitchen"
-  ],
-  "phrases": [
-    {
-      "latin": "culīnam mundandam cūrāre",
-      "english": "to have the kitchen cleaned out",
-      "source": "Traupman 38"
-    }
-  ]
+  }
 }

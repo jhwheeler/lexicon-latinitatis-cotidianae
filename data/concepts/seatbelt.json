@@ -6,7 +6,11 @@
     "seat belt",
     "fasten your seatbelt",
     "put on one’s seatbelt",
-    "unfasten one’s seatbelt"
+    "unfasten one’s seatbelt",
+    "undo your seatbelt",
+    "undo one’s seatbelt",
+    "take off your seatbelt",
+    "do up your seatbelt"
   ],
   "domain": "vectura",
   "terms": [
@@ -37,6 +41,16 @@
       "latin": "cīnctūram sēcūritātis laxāre",
       "english": "to unfasten one’s seatbelt",
       "source": "Traupman 375"
+    },
+    {
+      "latin": "Cīnctūram laxā; advēnimus.",
+      "english": "Undo your seatbelt; we’re here.",
+      "source": "composed"
+    },
+    {
+      "latin": "Nē cīnctūram laxāverīs, dum autoraeda movētur.",
+      "english": "Don’t undo your seatbelt while the car is moving.",
+      "source": "composed"
     }
   ],
   "notes": {
@@ -57,8 +71,8 @@
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
   ],
   "review": {
-    "status": "reviewed",
-    "date": "2026-11-16",
+    "status": "draft",
+    "date": "2026-11-23",
     "by": "Jack"
   }
 }

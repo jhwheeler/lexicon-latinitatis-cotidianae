@@ -3,7 +3,11 @@
   "english": "scratch",
   "pos": "verb",
   "also": [
-    "scrape"
+    "scrape",
+    "the cat scratched me",
+    "it scratched me",
+    "scratch (of a cat)",
+    "scratched"
   ],
   "domain": "corpus",
   "terms": [
@@ -26,6 +30,16 @@
       "latin": "Nōlī scabere.",
       "english": "Don’t scratch.",
       "source": "composed"
+    },
+    {
+      "latin": "Fēlēs mē unguibus laesit!",
+      "english": "The cat scratched me!",
+      "source": "composed"
+    },
+    {
+      "latin": "Ostende manum. Leviter tantum laesit; mox sānābitur.",
+      "english": "Show me your hand. It’s only a light scratch; it’ll soon be better.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -36,12 +50,12 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/scabo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: scabo</a> · <a href=\"https://logeion.uchicago.edu/scalpo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: scalpo</a>"
   ],
-  "replaces": [
-    "entry-1"
-  ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
-  }
+  },
+  "replaces": [
+    "entry-1"
+  ]
 }

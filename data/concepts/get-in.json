@@ -4,7 +4,11 @@
   "sense": "a car",
   "pos": "verb",
   "also": [
-    "get into the car"
+    "get into the car",
+    "get in the car!",
+    "get in!",
+    "climb in",
+    "in you get"
   ],
   "domain": "vectura",
   "terms": [
@@ -19,6 +23,18 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "Īnscende in autoraedam; jam proficīscimur.",
+      "english": "Get in the car; we’re off.",
+      "source": "composed"
+    },
+    {
+      "latin": "nunc equōs jūnctōs jubēs capere mē … atque in currum īnscendere",
+      "english": "now you order me to take the yoked horses … and climb into the chariot",
+      "source": "Plaut. Men. 862–863"
+    }
+  ],
   "related": [
     "get-out",
     "board-vehicle",
@@ -26,15 +42,16 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/inscendo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: inscendo</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 215."
-  ],
-  "replaces": [
-    "entry-274",
-    "vocab-274"
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 215.",
+    "Plautus, <em>Menaechmi</em> 862–863."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
-  }
+  },
+  "replaces": [
+    "entry-274",
+    "vocab-274"
+  ]
 }

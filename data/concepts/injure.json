@@ -8,7 +8,13 @@
     "be injured",
     "get hurt",
     "injury",
-    "wounded"
+    "wounded",
+    "I grazed my knee",
+    "grazed knee",
+    "skinned my knee",
+    "I cut my finger",
+    "cut yourself",
+    "I cut myself"
   ],
   "domain": "corpus",
   "terms": [
@@ -52,6 +58,17 @@
         "Cic. Tusc. 2.38: <span lang=\"la\">vidēmus ex aciē efferrī saepe sauciōs</span> (Lewis &amp; Short)",
         "Ov. Met. 11.373 (Lewis &amp; Short)"
       ]
+    },
+    {
+      "latin": "atterō, atterere, attrīvī, attrītum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "rub off the skin, graze",
+      "evidence": [
+        "Plin. NH 24.43: <span lang=\"la\">medētur et attrītīs partibus</span> (Lewis &amp; Short s.v. <span lang=\"la\">attrītus</span>)",
+        "Plin. NH 30.70: <span lang=\"la\">attrītīs medētur</span> (Lewis &amp; Short s.v. <span lang=\"la\">attrītus</span>)"
+      ],
+      "comment": "To rub against something and wear it away; in Pliny’s medicine <span lang=\"la\">attrīta</span> are skin rubbed raw or grazed. For a grazed knee, <span lang=\"la\">genū attrīvī</span>; the verb’s use of a child’s fall is ours."
     }
   ],
   "phrases": [
@@ -69,6 +86,16 @@
       "latin": "vidēmus ex aciē efferrī saepe sauciōs",
       "english": "we often see the wounded carried out of the battle line",
       "source": "Cic. Tusc. 2.38 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "Cecidī et genū attrīvī.",
+      "english": "I fell and grazed my knee.",
+      "source": "composed"
+    },
+    {
+      "latin": "Digitum cultellō vulnerāvī; sanguis fluit.",
+      "english": "I cut my finger with the knife; it’s bleeding.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -79,12 +106,12 @@
     "bruise"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/vulnero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vulnero</a> · <a href=\"https://logeion.uchicago.edu/laedo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: laedo</a> · <a href=\"https://logeion.uchicago.edu/saucio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: saucio</a>",
+    "<a href=\"https://logeion.uchicago.edu/vulnero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vulnero</a> · <a href=\"https://logeion.uchicago.edu/laedo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: laedo</a> · <a href=\"https://logeion.uchicago.edu/saucio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: saucio</a> · <a href=\"https://logeion.uchicago.edu/attero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: attero</a> · <a href=\"https://logeion.uchicago.edu/attritus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: attritus</a>",
     "<a href=\"https://logeion.uchicago.edu/saucius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: saucius</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

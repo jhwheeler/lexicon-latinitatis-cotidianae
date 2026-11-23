@@ -9,7 +9,12 @@
     "water (flowers)",
     "irrigate",
     "water the garden",
-    "water the plants"
+    "water the plants",
+    "it needs watering",
+    "the plants need watering",
+    "the garden needs watering",
+    "the plants are thirsty",
+    "it’s thirsty (of a plant)"
   ],
   "domain": "domus",
   "terms": [
@@ -50,6 +55,21 @@
       "latin": "fīgat humō plantās et amīcōs inriget imbrēs",
       "english": "let him set the plants in the ground and water them with kindly showers",
       "source": "Verg. G. 4.115"
+    },
+    {
+      "latin": "Hortus sitit; rigandus est.",
+      "english": "The garden needs watering.",
+      "source": "composed"
+    },
+    {
+      "latin": "cum sitiunt herbae et pecorī jam grātior umbra est",
+      "english": "when the grass is thirsty and the shade is now more welcome to the flock",
+      "source": "Verg. G. 4.402"
+    },
+    {
+      "latin": "sī quidem est eōrum gemmāre vītis, sitīre agrōs, laetās esse segetēs, luxuriōsa frūmenta",
+      "english": "since it is their way of speaking (the country people’s) to say that the vines are budding, the fields are thirsty, the crops are happy, the corn is lush",
+      "source": "Cic. Or. 81"
     }
   ],
   "related": [
@@ -63,11 +83,13 @@
     "<a href=\"https://logeion.uchicago.edu/rigo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: rigo</a> · <a href=\"https://logeion.org/adaquo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: adaquo</a>",
     "<a href=\"https://logeion.uchicago.edu/irrigo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: irrigo</a>",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. yard, yard: backyard, lawn, lawn: lawn-mower, lawn: mow the lawn, sprinkler, hoe. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 38, 39, 320, 409.",
-    "Vergil, <em>Georgica</em> 4.115."
+    "Vergil, <em>Georgica</em> 4.115.",
+    "Vergil, <em>Georgica</em> 4.115, 4.402.",
+    "Cicero, <em>Orator</em> 81."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-15",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

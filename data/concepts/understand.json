@@ -14,7 +14,11 @@
     "I get it",
     "get the point?",
     "I don’t understand",
-    "I don’t quite understand"
+    "I don’t quite understand",
+    "I understand everything",
+    "I understand a little",
+    "I understand some of it",
+    "I don’t understand a thing"
   ],
   "domain": "verba",
   "terms": [
@@ -78,6 +82,21 @@
       "latin": "Nōn satis intellegō.",
       "english": "I don’t quite understand.",
       "source": "Traupman 400"
+    },
+    {
+      "latin": "Omnia intellegō quae dīcis.",
+      "english": "I understand everything you say.",
+      "source": "composed"
+    },
+    {
+      "latin": "Partim intellegō, partim nōn.",
+      "english": "I understand some of it, not all.",
+      "source": "composed"
+    },
+    {
+      "latin": "nam prōrsum nīl intellegō",
+      "english": "for I don’t understand a thing",
+      "source": "Ter. Haut. 776"
     }
   ],
   "related": [
@@ -92,11 +111,12 @@
     "Cic. Sen. 65.",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 26, 29, 32, 110.",
     "Phaedr. 1.12.13–14.",
-    "<a href=\"https://logeion.uchicago.edu/teneo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: teneo</a>"
+    "<a href=\"https://logeion.uchicago.edu/teneo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: teneo</a>",
+    "Terence, <em>Heautontimorumenos</em> 776."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

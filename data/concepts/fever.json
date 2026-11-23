@@ -12,7 +12,16 @@
     "run a high fever",
     "the fever goes down",
     "constant fever",
-    "slight fever"
+    "slight fever",
+    "I have a fever",
+    "I’ve got a temperature",
+    "you have a temperature",
+    "you’ve got a temperature",
+    "you’re burning hot",
+    "you’re burning up",
+    "take his temperature",
+    "take your temperature",
+    "take someone’s temperature"
   ],
   "domain": "corpus",
   "terms": [
@@ -97,6 +106,21 @@
       "latin": "magna (ārdēns) febris",
       "english": "a high fever",
       "source": "Traupman 314"
+    },
+    {
+      "latin": "Febrim habeō, et caput dolet.",
+      "english": "I’ve got a fever, and my head hurts.",
+      "source": "composed"
+    },
+    {
+      "latin": "Febre calēs! Calōrem tuum thermometrō mētiāmur.",
+      "english": "You’re burning hot! Let’s take your temperature with the thermometer.",
+      "source": "composed"
+    },
+    {
+      "latin": "hominēs aegrī morbō gravī cum aestū febrīque jactantur",
+      "english": "people who are very ill toss about, burning with fever",
+      "source": "Cic. Cat. 1.31 (Lewis &amp; Short)"
     }
   ],
   "notes": {
@@ -113,16 +137,19 @@
     "forehead"
   ],
   "sources": [
-    "<a href=\"https://logeion.org/febris\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: febris</a> · <a href=\"https://logeion.org/febricula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: febricula</a> · <a href=\"https://logeion.org/febricito\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: febricito</a>",
+    "<a href=\"https://logeion.org/febris\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: febris</a> · <a href=\"https://logeion.org/febricula\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: febricula</a> · <a href=\"https://logeion.org/febricito\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: febricito</a> · <a href=\"https://logeion.uchicago.edu/caleo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: caleo</a> · <a href=\"https://logeion.uchicago.edu/metior\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: metior</a>",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. fever. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 55, 56, 64, 314, 322.",
-    "<a href=\"https://logeion.uchicago.edu/conquiesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: conquiesco</a>"
-  ],
-  "replaces": [
-    "entry-302"
+    "<a href=\"https://logeion.uchicago.edu/conquiesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: conquiesco</a>",
+    "Cicero, <em>In Catilinam</em> 1.31.",
+    "Juvenal 10.217–218.",
+    "MO: s.v. temperature: body temperature"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
-  }
+  },
+  "replaces": [
+    "entry-302"
+  ]
 }

@@ -2,6 +2,11 @@
   "id": "walk-the-dog",
   "english": "walk the dog",
   "pos": "verb",
+  "also": [
+    "take the dog out",
+    "take the dog for a walk",
+    "go out with the dog"
+  ],
   "domain": "natura",
   "terms": [
     {
@@ -13,6 +18,18 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "Canem forās ēdūcam; cōpulam mihi dā.",
+      "english": "I’ll take the dog out; give me the lead.",
+      "source": "composed"
+    },
+    {
+      "latin": "Vīn' mēcum canem dūcere?",
+      "english": "Do you want to come and walk the dog with me?",
+      "source": "composed"
+    }
+  ],
   "related": [
     "dog",
     "lead-dog"
@@ -22,7 +39,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

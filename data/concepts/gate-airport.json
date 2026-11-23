@@ -3,6 +3,12 @@
   "english": "gate",
   "sense": "at an airport",
   "pos": "noun",
+  "also": [
+    "departure gate",
+    "boarding gate",
+    "which gate?",
+    "gate number"
+  ],
   "domain": "vectura",
   "terms": [
     {
@@ -21,6 +27,21 @@
       "latin": "Ad aditum duodecimum oecus erat praestōlātōrius, sellīs multīs īnstrūctus",
       "english": "At gate twelve there was a waiting room with many seats",
       "source": "Libellus I, <span lang=\"la\">Iter in Lūsitāniam</span>"
+    },
+    {
+      "latin": "Ē quotō aditū abscēdit āëroplanum nostrum?",
+      "english": "Which gate does our plane leave from?",
+      "source": "composed"
+    },
+    {
+      "latin": "Ē quotā crepīdine trāmen abscēdit?",
+      "english": "From which platform does the train depart?",
+      "source": "Traupman 211"
+    },
+    {
+      "latin": "Ad aditum duodecimum properēmus; mox īnscendēmus.",
+      "english": "Let’s hurry to gate twelve; we’ll be boarding soon.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -29,16 +50,16 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/aditus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aditus</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 216, 320.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 211, 216, 320.",
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
   ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-23",
+    "by": "Jack"
+  },
   "replaces": [
     "entry-214",
     "libelli-214"
-  ],
-  "review": {
-    "status": "reviewed",
-    "date": "2026-11-16",
-    "by": "Jack"
-  }
+  ]
 }

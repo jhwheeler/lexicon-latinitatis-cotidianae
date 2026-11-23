@@ -4,12 +4,16 @@
   "pos": "noun",
   "also": [
     "days of the week",
-    "this week"
+    "this week",
+    "in a week’s time",
+    "in a week",
+    "a week from now",
+    "in a week from today"
   ],
+  "domain": "sermo",
   "also_under": [
     "tempus"
   ],
-  "domain": "sermo",
   "terms": [
     {
       "latin": "hebdomas, hebdomadis f.",
@@ -29,6 +33,28 @@
       "comment": "A late word (L&amp;S under <span lang=\"la\">septimānus</span>)."
     }
   ],
+  "phrases": [
+    {
+      "latin": "hāc hebdomade",
+      "english": "this week",
+      "source": "Traupman 77"
+    },
+    {
+      "latin": "Post hebdomadem avia veniet.",
+      "english": "Grandma’s coming in a week’s time.",
+      "source": "composed"
+    },
+    {
+      "latin": "Discēdēns post diem septimum sēsē reversūrum cōnfirmat",
+      "english": "as he left, he gave his word that he would be back in a week",
+      "source": "Caes. BG 6.33"
+    },
+    {
+      "latin": "per servolum suum in septimum diem distulerat",
+      "english": "through his slave he had put him off for a week",
+      "source": "Suet. Tib. 32"
+    }
+  ],
   "related": [
     "monday",
     "tuesday",
@@ -42,22 +68,17 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/hebdomas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: hebdomas</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 54, 77."
-  ],
-  "replaces": [
-    "entry-242",
-    "libelli-242"
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 54, 77.",
+    "Caesar, <em>Gallic War</em> 6.33.",
+    "Suetonius, <em>Tiberius</em> 32."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   },
-  "phrases": [
-    {
-      "latin": "hāc hebdomade",
-      "english": "this week",
-      "source": "Traupman 77"
-    }
+  "replaces": [
+    "entry-242",
+    "libelli-242"
   ]
 }

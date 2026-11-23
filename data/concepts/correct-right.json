@@ -16,7 +16,10 @@
     "you're right",
     "that’s right",
     "speak correctly",
-    "spell correctly"
+    "spell correctly",
+    "is that correct?",
+    "is that right?",
+    "did I say it right?"
   ],
   "domain": "verba",
   "also_under": [
@@ -106,6 +109,11 @@
       "latin": "Rēctē dīcis.",
       "english": "You’re right.",
       "source": "Traupman 43"
+    },
+    {
+      "latin": "Rēctēne dīxī? — Rēctē.",
+      "english": "Did I say it right? — Yes, you did.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -126,7 +134,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

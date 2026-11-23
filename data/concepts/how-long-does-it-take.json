@@ -6,7 +6,10 @@
     "how long until we get there?",
     "how long is the journey?",
     "how much longer?",
-    "are we nearly there?"
+    "are we nearly there?",
+    "how long will it take?",
+    "how long will it be?",
+    "how long till it’s ready?"
   ],
   "domain": "vectura",
   "terms": [
@@ -50,6 +53,11 @@
       "latin": "videō quid inter annōnam interesse soleat, videō quot diērum via sit",
       "english": "I see what the difference in the price of grain usually is, I see how many days’ journey it is",
       "source": "Cic. Verr. 2.3.191"
+    },
+    {
+      "latin": "Quam mox cocta erit placenta? — Intrā sēmihōram.",
+      "english": "How long will the cake take? — Less than half an hour.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -65,7 +73,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

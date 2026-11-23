@@ -9,7 +9,12 @@
     "get on the plane",
     "board a ship",
     "go on board",
-    "get on (a bus, train, ship, plane)"
+    "get on (a bus, train, ship, plane)",
+    "board the plane",
+    "boarding",
+    "we’re boarding",
+    "time to board",
+    "now boarding"
   ],
   "domain": "vectura",
   "terms": [
@@ -32,6 +37,18 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "Quam mox mihi licet trāmen ferriviārium īnscendere?",
+      "english": "How soon may I board the train?",
+      "source": "Traupman 212"
+    },
+    {
+      "latin": "Jam in āëroplanum īnscendimus; manum meam tenē.",
+      "english": "We’re getting on the plane now; hold my hand.",
+      "source": "composed"
+    }
+  ],
   "related": [
     "get-off",
     "get-on",
@@ -43,14 +60,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
-  },
-  "phrases": [
-    {
-      "latin": "Quam mox mihi licet trāmen ferriviārium īnscendere?",
-      "english": "How soon may I board the train?",
-      "source": "Traupman 212"
-    }
-  ]
+  }
 }

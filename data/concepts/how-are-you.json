@@ -9,7 +9,12 @@
     "how are things with you?",
     "how’s it going?",
     "what’s doing?",
-    "how goes it?"
+    "how goes it?",
+    "how’s the family?",
+    "how is your family?",
+    "how are your folks?",
+    "is everyone well at home?",
+    "how are the children?"
   ],
   "domain": "sermo",
   "terms": [
@@ -99,6 +104,21 @@
       "latin": "Salvē, Baba! Ut valēs? — Bene, mī Theodōre.",
       "english": "Hello, Baba! How are you? — Fine, my Theo.",
       "source": "composed"
+    },
+    {
+      "latin": "Līberī quid agunt meī, quōs relīquī hīc, fīlium atque fīliam? — Vīvont, valent.",
+      "english": "How are my children, the son and the daughter I left here? — Alive and well.",
+      "source": "Plaut. Trin. 1074–1075"
+    },
+    {
+      "latin": "Sī vōs valētis, nōs valēmus.",
+      "english": "If you are all well, we are well.",
+      "source": "Cic. Fam. 14.14.1"
+    },
+    {
+      "latin": "Quid agunt tuī? Valentne omnēs?",
+      "english": "How’s the family? Is everyone well?",
+      "source": "composed"
     }
   ],
   "related": [
@@ -109,14 +129,16 @@
   ],
   "sources": [
     "<a href=\"https://logeion.org/valeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: valeo</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 15, 17–18, 305, 330."
-  ],
-  "replaces": [
-    "entry-521"
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 15, 17–18, 305, 330.",
+    "Plautus, <em>Trinummus</em> 1074–1075.",
+    "Cicero, <em>Letters to Friends</em> 14.14.1."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
-  }
+  },
+  "replaces": [
+    "entry-521"
+  ]
 }

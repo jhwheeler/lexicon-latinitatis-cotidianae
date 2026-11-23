@@ -2,6 +2,14 @@
   "id": "lay-eggs",
   "english": "lay eggs",
   "pos": "verb",
+  "also": [
+    "the hens have laid",
+    "has the hen laid?",
+    "lay (of a hen)",
+    "collect the eggs",
+    "gather the eggs",
+    "collect eggs"
+  ],
   "domain": "natura",
   "terms": [
     {
@@ -12,6 +20,48 @@
         "Traupman 142",
         "Traupman 338"
       ]
+    },
+    {
+      "latin": "pariō, parere, peperī, partum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "lay (of a hen), with no object",
+      "evidence": [
+        "Varr. RR 3.9: <span lang=\"la\">cum peperērunt, tollere substrāmen</span>",
+        "Col. 8.5.1: <span lang=\"la\">Cōnfectā brūmā parere ferē id genus avium cōnsuēvit.</span>"
+      ],
+      "comment": "The farm writers say of hens simply that they lay, <span lang=\"la\">pariunt</span>, without <span lang=\"la\">ōva</span>."
+    },
+    {
+      "latin": "ōva ēdere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "lay eggs",
+      "evidence": [
+        "Col. 8.5.1: <span lang=\"la\">circā Kalendās Jānuāriās ōva ēdere incipiunt</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Gallīnae peperērunt? Ī, ōva collige.",
+      "english": "Have the hens laid? Go and collect the eggs.",
+      "source": "composed"
+    },
+    {
+      "latin": "In cubīlibus, cum parturient, acus substernendum; cum peperērunt, tollere substrāmen et recēns aliud subjicere",
+      "english": "When they are about to lay, chaff must be spread in the nests; when they have laid, take out the bedding and put in fresh",
+      "source": "Varr. RR 3.9"
+    },
+    {
+      "latin": "Adsiduus autem dēbet esse custōs et speculārī parientēs, quod sē facere gallīnae testantur crēbrīs singultibus interjectā vōce acūtā.",
+      "english": "The keeper must be always at hand and watch for the hens laying, which they announce with repeated clucks and a shrill cry between them.",
+      "source": "Col. 8.5.3"
+    },
+    {
+      "latin": "Observāre itaque dum ēdant ōva et cōnfestim circumīre oportēbit cubīlia, ut quae nāta sunt recolligantur",
+      "english": "So he must watch while they lay, and go round the nests at once, to collect the eggs that have been laid",
+      "source": "Col. 8.5.4"
     }
   ],
   "related": [
@@ -19,11 +69,14 @@
     "hen"
   ],
   "sources": [
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 142, 338."
+    "<a href=\"https://logeion.uchicago.edu/pario\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pario</a> · <a href=\"https://logeion.uchicago.edu/edo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: edo</a> · <a href=\"https://logeion.uchicago.edu/recolligo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: recolligo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 142, 338.",
+    "Varro, <em>Res rusticae</em> 3.9.",
+    "Columella, <em>De re rustica</em> 8.5.1, 8.5.3–4."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

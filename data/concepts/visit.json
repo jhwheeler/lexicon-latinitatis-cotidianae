@@ -12,12 +12,17 @@
     "pay someone a visit",
     "courtesy call",
     "pay a visit to",
-    "go to visit"
+    "go to visit",
+    "come and see us",
+    "come and visit us",
+    "come round",
+    "come over sometime",
+    "come and stay"
   ],
+  "domain": "verba",
   "also_under": [
     "sermo"
   ],
-  "domain": "verba",
   "terms": [
     {
       "latin": "vīsō, vīsere, vīsī, vīsum",
@@ -99,6 +104,21 @@
       "latin": "vīsere",
       "english": "to go to visit, pay a visit to",
       "source": "Traupman 402"
+    },
+    {
+      "latin": "revīse nōs aliquandō",
+      "english": "come back and see us some time",
+      "source": "Cic. Att. 1.18"
+    },
+    {
+      "latin": "Cūrā, sī mē dīligis, ut valeās et, cum tē bene cōnfirmāris, ad nōs veniās.",
+      "english": "If you love me, take care to get well, and when you are quite strong again, come and see us.",
+      "source": "Cic. Fam. 16.13"
+    },
+    {
+      "latin": "Invīse nōs, cum vacābis; semper tē libenter vidēmus.",
+      "english": "Come and see us when you’re free; we’re always glad to see you.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -112,11 +132,13 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/officium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: officium</a>",
     "<a href=\"https://logeion.uchicago.edu/viso\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: viso</a> · <a href=\"https://logeion.uchicago.edu/inviso\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: inviso</a> · <a href=\"https://logeion.uchicago.edu/visito\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: visito</a> · <a href=\"https://logeion.uchicago.edu/saluto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: saluto</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 97, 99, 105, 110, 298, 307, 322."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 97, 99, 105, 110, 298, 307, 322.",
+    "Cicero, <em>Letters to Atticus</em> 1.18.",
+    "Cicero, <em>Letters to Friends</em> 16.13."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

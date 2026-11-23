@@ -4,7 +4,11 @@
   "pos": "verb",
   "also": [
     "pronunciation",
-    "say (a word) aloud"
+    "say (a word) aloud",
+    "how is it pronounced?",
+    "how do you pronounce it?",
+    "how is this word pronounced?",
+    "is it long or short?"
   ],
   "domain": "schola",
   "terms": [
@@ -20,24 +24,40 @@
       "comment": "Also to announce and to deliver a speech or a verdict; the way one says a word is <span lang=\"la\">prōnūntiātiō</span> (Quintilian)."
     }
   ],
+  "phrases": [
+    {
+      "latin": "vōcālem correptē aut prōductē prōnūntiāre",
+      "english": "to pronounce a vowel short or long",
+      "source": "Traupman 366"
+    },
+    {
+      "latin": "Quōmodo hoc verbum prōnūntiātur? Prīmane syllaba longa est an brevis?",
+      "english": "How is this word pronounced? Is the first syllable long or short?",
+      "source": "composed"
+    },
+    {
+      "latin": "His igitur assentimus, quī «putum» esse dīcunt ā «putandō» dictum et ob eam causam prīmā syllabā brevī prōnūntiant, nōn longā",
+      "english": "So we agree with those who say that putum comes from putare, and therefore pronounce the first syllable short, not long",
+      "source": "Gell. 7.5.5"
+    },
+    {
+      "latin": "Is «affatim» ut «admodum» prīmā acūtā, nōn mediā, prōnūntiābat atque ita veterēs locūtōs cēnsēbat.",
+      "english": "He pronounced affatim, like admodum, with the accent on the first syllable, not the middle one, and believed the ancients spoke so.",
+      "source": "Gell. 6.7.2"
+    }
+  ],
   "related": [
     "say",
     "read-aloud"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/pronuntio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pronuntio</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 31."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 31.",
+    "Aulus Gellius, <em>Noctes Atticae</em> 6.7.2; 7.5.5."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
-  },
-  "phrases": [
-    {
-      "latin": "vōcālem correptē aut prōductē prōnūntiāre",
-      "english": "to pronounce a vowel short or long",
-      "source": "Traupman 366"
-    }
-  ]
+  }
 }

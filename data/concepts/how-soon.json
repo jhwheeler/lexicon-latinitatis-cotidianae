@@ -2,10 +2,16 @@
   "id": "how-soon",
   "english": "how soon?",
   "pos": "phrase",
+  "also": [
+    "how many sleeps?",
+    "how many sleeps till …?",
+    "how many more nights?",
+    "how long till …?"
+  ],
+  "domain": "sermo",
   "also_under": [
     "tempus"
   ],
-  "domain": "sermo",
   "terms": [
     {
       "latin": "Quam mox?",
@@ -17,17 +23,42 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "Quot noctēs adhūc dormiēmus, dum avia veniat? — Trēs.",
+      "english": "How many sleeps till Grandma comes? — Three.",
+      "source": "composed"
+    },
+    {
+      "latin": "Prōvīsam quam mox vir meus redeat domum.",
+      "english": "I’ll go and see how soon my husband is coming home.",
+      "source": "Plaut. Men. 704"
+    },
+    {
+      "latin": "spatia omnis temporis nōn numerō diērum sed noctium fīniunt",
+      "english": "they measure every span of time by the number not of days but of nights (of the Gauls)",
+      "source": "Caes. BG 6.18"
+    },
+    {
+      "latin": "Nec diērum numerum, ut nōs, sed noctium computant.",
+      "english": "They do not count the number of days, as we do, but of nights (of the Germans).",
+      "source": "Tac. Germ. 11"
+    }
+  ],
   "related": [
     "how-long",
     "any-day-now"
   ],
   "sources": [
     "<a href=\"https://logeion.org/mox\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mox</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 87, 330."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 87, 330.",
+    "Plautus, <em>Menaechmi</em> 704.",
+    "Caesar, <em>Gallic War</em> 6.18.",
+    "Tacitus, <em>Germania</em> 11."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

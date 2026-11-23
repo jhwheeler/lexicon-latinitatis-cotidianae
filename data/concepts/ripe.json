@@ -2,6 +2,12 @@
   "id": "ripe",
   "english": "ripe",
   "pos": "adjective",
+  "also": [
+    "it’s ripe",
+    "is it ripe?",
+    "ripe (of fruit)",
+    "they’re ripe"
+  ],
   "domain": "natura",
   "terms": [
     {
@@ -10,16 +16,30 @@
       "period": "classical"
     }
   ],
+  "phrases": [
+    {
+      "latin": "Hoc mālum mātūrum est; carpe.",
+      "english": "This apple is ripe; pick it.",
+      "source": "composed"
+    },
+    {
+      "latin": "olea ubi mātūra erit, quam prīmum cōgī oportet",
+      "english": "when the olive is ripe, it must be gathered as soon as possible",
+      "source": "Cato Agr. 64.1"
+    }
+  ],
   "related": [
     "unripe",
     "ripen"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/maturus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: maturus</a>"
+    "<a href=\"https://logeion.uchicago.edu/maturus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: maturus</a>",
+    "Cato, <em>De agri cultura</em> 64.1.",
+    "Pliny, <em>Naturalis historia</em> 15.82."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

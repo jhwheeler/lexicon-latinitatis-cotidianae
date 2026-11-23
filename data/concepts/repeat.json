@@ -10,7 +10,11 @@
     "do again",
     "repetition",
     "repeat the passage",
-    "repeat what you just said"
+    "repeat what you just said",
+    "can you repeat that?",
+    "could you say that again?",
+    "say that again, please",
+    "once more, please"
   ],
   "domain": "verba",
   "terms": [
@@ -91,6 +95,16 @@
       "latin": "Repete (repetite) locum.",
       "english": "Repeat the passage.",
       "source": "Traupman 34"
+    },
+    {
+      "latin": "Iterum mihi istaec omnia iterā, mī anime, mī Trachaliō.",
+      "english": "Tell me all that again, my dear Trachalio, again!",
+      "source": "Plaut. Rud. 1265"
+    },
+    {
+      "latin": "Iterā, sōdēs; nōn satis exaudīvī.",
+      "english": "Can you repeat that, please? I didn’t quite catch it.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -102,13 +116,14 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/itero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: itero</a> · <a href=\"https://logeion.uchicago.edu/repeto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: repeto</a>",
     "<a href=\"https://logeion.uchicago.edu/repetitio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: repetitio</a>",
-    "Cic. Att. 14.14.1 checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> (Purser, who prints <span lang=\"la\">Iteradum</span> as one word; 11 November 2026).",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 31, 34.",
-    "<a href=\"https://logeion.uchicago.edu/reddo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: reddo</a>"
+    "<a href=\"https://logeion.uchicago.edu/reddo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: reddo</a>",
+    "Plautus, <em>Rudens</em> 1265.",
+    "Cicero, <em>Letters to Atticus</em> 14.14.1."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

@@ -2,10 +2,17 @@
   "id": "breakfast",
   "english": "breakfast",
   "pos": "noun",
+  "also": [
+    "breakfast is ready",
+    "what time is breakfast?",
+    "when is breakfast?",
+    "breakfast time",
+    "is breakfast included?"
+  ],
+  "domain": "culina",
   "also_under": [
     "natura"
   ],
-  "domain": "culina",
   "terms": [
     {
       "latin": "jentāculum, jentāculī n.",
@@ -42,18 +49,17 @@
       "latin": "Vīsne sūmere jentāculum an prandium?",
       "english": "Do you want to eat breakfast or lunch?",
       "source": "Traupman 67"
+    },
+    {
+      "latin": "Quotā hōrā jentāculum sūmis?",
+      "english": "At what time do you eat breakfast?",
+      "source": "Traupman 82"
+    },
+    {
+      "latin": "Quotā hōrā jentāculum appōnitur?",
+      "english": "What time is breakfast served?",
+      "source": "composed"
     }
-  ],
-  "related": [
-    "eat-breakfast",
-    "lunch",
-    "cereal",
-    "porridge"
-  ],
-  "sources": [
-    "<a href=\"https://logeion.uchicago.edu/jentaculum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: jentaculum</a> · <a href=\"https://www.alatius.com/latin/bennetthidden.html\" rel=\"noopener noreferrer\" target=\"_blank\">Bennett: hidden quantities, with later corrections</a>",
-    "<a href=\"https://logeion.uchicago.edu/jentaculum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: jentaculum</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 36, 38, 67, 70."
   ],
   "notes": {
     "short-e": {
@@ -64,15 +70,23 @@
       "ruling": "jentaculum"
     }
   },
-  "replaces": [
-    "entry-34"
+  "related": [
+    "eat-breakfast",
+    "lunch",
+    "cereal",
+    "porridge"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/jentaculum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: jentaculum</a> · <a href=\"https://www.alatius.com/latin/bennetthidden.html\" rel=\"noopener noreferrer\" target=\"_blank\">Bennett: hidden quantities, with later corrections</a>",
+    "<a href=\"https://logeion.uchicago.edu/jentaculum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: jentaculum</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 36, 38, 67, 70, 82."
   ],
   "review": {
-    "status": "reviewed",
-    "date": "2026-11-16",
+    "status": "draft",
+    "date": "2026-11-23",
     "by": "Jack"
   },
-  "also": [
-    "breakfast is ready"
+  "replaces": [
+    "entry-34"
   ]
 }

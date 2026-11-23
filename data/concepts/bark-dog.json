@@ -10,7 +10,11 @@
     "bow-wow",
     "bow wow",
     "bark at",
-    "barking"
+    "barking",
+    "the dog is barking",
+    "the dog’s barking",
+    "why is the dog barking?",
+    "stop barking"
   ],
   "domain": "natura",
   "terms": [
@@ -77,6 +81,11 @@
       "latin": "Canis lātrat: bau bau!",
       "english": "The dog’s barking: woof woof!",
       "source": "composed"
+    },
+    {
+      "latin": "Cūr canis lātrat? Fortasse aliquis ad jānuam est.",
+      "english": "Why is the dog barking? Maybe someone’s at the door.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -92,7 +101,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

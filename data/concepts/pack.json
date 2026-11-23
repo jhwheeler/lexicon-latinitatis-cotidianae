@@ -2,6 +2,15 @@
   "id": "pack",
   "english": "pack",
   "pos": "verb",
+  "also": [
+    "pack up",
+    "pack up the luggage",
+    "pack a suitcase",
+    "pack your bag",
+    "pack your things",
+    "packing",
+    "do the packing"
+  ],
   "domain": "vectura",
   "terms": [
     {
@@ -28,6 +37,16 @@
       "latin": "vāsa colligere",
       "english": "to pack up (the baggage)",
       "source": "Cic. Verr. 2.4.40; Liv. 21.47.2 (Lewis &amp; Short s.v. <span lang=\"la\">vās</span>)"
+    },
+    {
+      "latin": "Vestīmenta tua in vidulum condāmus.",
+      "english": "Let’s pack your clothes in the suitcase.",
+      "source": "composed"
+    },
+    {
+      "latin": "Quae lūdicra tēcum ferre vīs? Duo aut tria ēlige.",
+      "english": "Which toys do you want to take with you? Pick two or three.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -35,16 +54,13 @@
     "check-out"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/condo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: condo</a> · <a href=\"https://logeion.uchicago.edu/vidulus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vidulus</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 217.",
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
-  },
-  "also": [
-    "pack up",
-    "pack up the luggage"
-  ]
+  }
 }

@@ -16,7 +16,10 @@
     "be seasick",
     "travel sick",
     "travel sickness",
-    "feel sick on the boat"
+    "feel sick on the boat",
+    "I feel sick",
+    "I’m feeling sick",
+    "do you feel sick?"
   ],
   "domain": "corpus",
   "terms": [
@@ -67,20 +70,31 @@
       "latin": "nāvigāvimus sine timōre et sine nauseā",
       "english": "we sailed without fear and without seasickness",
       "source": "Cic. Att. 5.13.1"
+    },
+    {
+      "latin": "Periī, animō male fit. Continē, quaesō, caput.",
+      "english": "Oh no, I feel sick. Hold my head, please.",
+      "source": "Plaut. Rud. 510"
+    },
+    {
+      "latin": "Animō male est? Ecce pelvis.",
+      "english": "Do you feel sick? Here’s a bowl.",
+      "source": "composed"
     }
   ],
   "related": [
     "throw-up"
   ],
   "sources": [
-    "<a href=\"https://logeion.org/nausea\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nausea</a> · <a href=\"https://logeion.org/nauseo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nauseo</a>",
+    "<a href=\"https://logeion.org/nausea\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nausea</a> · <a href=\"https://logeion.org/nauseo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nauseo</a> · <a href=\"https://logeion.uchicago.edu/pelvis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pelvis</a>",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. nausea, nausea: motion sickness.",
     "Plautus, <em>Amphitruo</em> 329.",
-    "Cicero, <em>Letters to Atticus</em> 5.13.1."
+    "Cicero, <em>Letters to Atticus</em> 5.13.1.",
+    "Plautus, <em>Rudens</em> 510."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

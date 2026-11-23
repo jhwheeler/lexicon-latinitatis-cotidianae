@@ -3,7 +3,11 @@
   "english": "how old are you?",
   "pos": "phrase",
   "also": [
-    "how old"
+    "how old",
+    "how old are you today?",
+    "how old are you now?",
+    "how many are you today?",
+    "how old are you going to be?"
   ],
   "domain": "sermo",
   "terms": [
@@ -40,6 +44,16 @@
       "latin": "Decem annōs est nātus. Ūndecimum agit (aetātis annum).",
       "english": "He’s ten: he is in his eleventh year.",
       "source": "Fōrm. VI 19"
+    },
+    {
+      "latin": "Quot annōs hodiē nātus es? — Trēs!",
+      "english": "How old are you today? — Three!",
+      "source": "composed"
+    },
+    {
+      "latin": "Hodiē quattuor annōs nāta es: ecce lībum nātāle!",
+      "english": "You’re four today: here’s your birthday cake!",
+      "source": "composed"
     }
   ],
   "related": [
@@ -56,7 +70,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

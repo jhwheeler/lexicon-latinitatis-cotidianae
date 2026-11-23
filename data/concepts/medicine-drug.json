@@ -6,7 +6,10 @@
   "also": [
     "medication",
     "drug",
-    "narcotic"
+    "narcotic",
+    "a spoonful of medicine",
+    "spoonful of medicine",
+    "take your medicine"
   ],
   "domain": "corpus",
   "terms": [
@@ -49,6 +52,16 @@
       "latin": "Medicāmentum amārum est, sed prōderit.",
       "english": "The medicine is bitter, but it’ll do you good.",
       "source": "composed"
+    },
+    {
+      "latin": "Ūnum cochlear medicāmentī sūme; nōn est amārum.",
+      "english": "Take one spoonful of medicine; it isn’t bitter.",
+      "source": "composed"
+    },
+    {
+      "latin": "cochleāre plēnum dēlingere",
+      "english": "to lick up a full spoonful (of a medicine)",
+      "source": "Cels. 3.22 (Lewis &amp; Short s.v. <span lang=\"la\">dēlingō</span>)"
     }
   ],
   "related": [
@@ -60,12 +73,12 @@
     "remedy"
   ],
   "sources": [
-    "<a href=\"https://logeion.org/medicamentum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: medicamentum</a> · <a href=\"https://logeion.org/medicamen\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: medicamen</a>",
+    "<a href=\"https://logeion.org/medicamentum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: medicamentum</a> · <a href=\"https://logeion.org/medicamen\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: medicamen</a> · <a href=\"https://logeion.uchicago.edu/coclear\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: coclear</a> · <a href=\"https://logeion.uchicago.edu/delingo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: delingo</a>",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. drug, medicine. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 56, 63, 64, 307."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

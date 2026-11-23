@@ -2,6 +2,11 @@
   "id": "wife",
   "english": "wife",
   "pos": "noun",
+  "also": [
+    "this is my wife",
+    "my wife",
+    "his wife"
+  ],
   "domain": "sermo",
   "terms": [
     {
@@ -13,16 +18,29 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "Haec est uxor mea.",
+      "english": "This is my wife.",
+      "source": "composed"
+    },
+    {
+      "latin": "Amphitruō uxōrem salūtat laetus spērātam suam.",
+      "english": "Amphitryon joyfully greets his longed-for wife.",
+      "source": "Plaut. Amph. 676"
+    }
+  ],
   "related": [
     "spouse"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/uxor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: uxor</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 24."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 24.",
+    "Plautus, <em>Amphitruo</em> 676."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

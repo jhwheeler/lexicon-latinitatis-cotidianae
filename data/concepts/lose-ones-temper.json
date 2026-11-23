@@ -3,7 +3,13 @@
   "english": "lose one’s temper",
   "pos": "verb",
   "also": [
-    "lose your temper"
+    "lose your temper",
+    "throw a tantrum",
+    "have a tantrum",
+    "tantrum",
+    "temper tantrum",
+    "fit of temper",
+    "meltdown"
   ],
   "domain": "sermo",
   "terms": [
@@ -14,6 +20,42 @@
       "evidence": [
         "Traupman 392"
       ]
+    },
+    {
+      "latin": "īrācundia, īrācundiae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a fit of temper, a tantrum; also a quick temper",
+      "evidence": [
+        "Sen. Ira 2.21.8: <span lang=\"la\">Nihil per īrācundiam exōret</span>"
+      ],
+      "comment": "Seneca’s word for the temper of a child who tries to get his way by it. Cicero separates <span lang=\"la\">īrācundia</span>, the temper, from <span lang=\"la\">īra</span>, the anger itself (Tusc. 4.27, Lewis &amp; Short)."
+    },
+    {
+      "latin": "īrācundiā exardēscere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "flare up in a temper",
+      "evidence": [
+        "Cic. Verr. 2.2.48: <span lang=\"la\">exarsit īrācundiā ac stomachō</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Nihil per īrācundiam exōret: quod flentī negātum fuerit quiētō offerātur.",
+      "english": "Let him get nothing by a tantrum: what was refused him while he cried should be offered him when he is calm.",
+      "source": "Sen. Ira 2.21.8"
+    },
+    {
+      "latin": "Plōrandō nihil impetrābis; ubi quiētus eris, vidēbimus.",
+      "english": "Crying won’t get you anything; when you’re calm, we’ll see.",
+      "source": "composed"
+    },
+    {
+      "latin": "Quantā īrācundiā exarsit, cum domum redīre jubērētur!",
+      "english": "What a tantrum he threw when he was told to go home!",
+      "source": "composed"
     }
   ],
   "related": [
@@ -21,12 +63,14 @@
     "hot-tempered"
   ],
   "sources": [
-    "<a href=\"https://logeion.org/iracundia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: iracundia</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 392."
+    "<a href=\"https://logeion.org/iracundia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: iracundia</a> · <a href=\"https://logeion.uchicago.edu/exardesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: exardesco</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 392.",
+    "Seneca, <em>De ira</em> 2.21.8.",
+    "Cicero, <em>In Verrem</em> 2.2.48."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

@@ -10,7 +10,11 @@
     "when does it open?",
     "opening hours",
     "open every day",
-    "closed today"
+    "closed today",
+    "what time do you open?",
+    "what time does the shop open?",
+    "what time do you close?",
+    "when do you open?"
   ],
   "domain": "urbs",
   "terms": [
@@ -71,6 +75,11 @@
       "latin": "Messānam ut quisque nostrum vēnerat, haec vīsere solēbat; omnibus haec ad vīsendum patēbant cotīdiē.",
       "english": "Any of us who came to Messana used to go and see these; they were open to everyone to see every day.",
       "source": "Cic. Verr. 2.4.5"
+    },
+    {
+      "latin": "Quotā hōrā aperītis? — Octāvā.",
+      "english": "What time do you open? — At eight.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -89,7 +98,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

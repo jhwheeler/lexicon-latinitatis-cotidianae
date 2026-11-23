@@ -10,7 +10,11 @@
     "just one bite",
     "one more bite",
     "take a bite",
-    "have a bite"
+    "have a bite",
+    "don’t bite",
+    "no biting",
+    "he bit me",
+    "she bit me"
   ],
   "domain": "culina",
   "terms": [
@@ -50,6 +54,21 @@
       "latin": "Semel saltem mordē; deinde, sī nōn placet, relinque.",
       "english": "Take just one bite; then, if you don’t like it, leave it.",
       "source": "composed"
+    },
+    {
+      "latin": "Nōlī mordēre! Dolet.",
+      "english": "Don’t bite! It hurts.",
+      "source": "composed"
+    },
+    {
+      "latin": "Mē momordit!",
+      "english": "He bit me!",
+      "source": "composed"
+    },
+    {
+      "latin": "calvī momordit musca nūdātum caput",
+      "english": "a fly bit a bald man on his bare head",
+      "source": "Phaedr. 5.3.1"
     }
   ],
   "related": [
@@ -57,11 +76,12 @@
   ],
   "sources": [
     "<a href=\"https://logeion.org/mordeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mordeo</a> · <a href=\"https://logeion.org/morsus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: morsus</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 280."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 280.",
+    "Phaedrus 5.3.1."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

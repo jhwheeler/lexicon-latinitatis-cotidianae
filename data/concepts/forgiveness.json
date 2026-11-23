@@ -7,7 +7,11 @@
     "remission of sins",
     "ask forgiveness",
     "grant a pardon",
-    "obtain a pardon"
+    "obtain a pardon",
+    "say sorry",
+    "say you’re sorry",
+    "apologise to",
+    "ask him to forgive you"
   ],
   "domain": "verba",
   "also_under": [
@@ -35,6 +39,15 @@
         "Tert. Adv. Marc. 4.28 (Lewis &amp; Short)"
       ],
       "comment": "The forgiveness of sins in the Vulgate and the Creed."
+    },
+    {
+      "latin": "veniam petere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "ask forgiveness, say sorry",
+      "evidence": [
+        "Cic. Mur. 62: <span lang=\"la\">fatētur aliquis sē peccāsse et suī dēlictī veniam petit</span>"
+      ]
     }
   ],
   "phrases": [
@@ -62,6 +75,21 @@
       "latin": "veniam impetrāre",
       "english": "to obtain pardon",
       "source": "Traupman 196"
+    },
+    {
+      "latin": "Ōrā ut ignōscat dēlictīs tuīs atque adulēscentiae.",
+      "english": "Ask him to forgive your wrongs and your youth.",
+      "source": "Plaut. Merc. 997"
+    },
+    {
+      "latin": "fatētur aliquis sē peccāsse et suī dēlictī veniam petit",
+      "english": "someone admits he has done wrong and asks forgiveness for his fault",
+      "source": "Cic. Mur. 62"
+    },
+    {
+      "latin": "Sorōrem ōrā ut tibi ignōscat.",
+      "english": "Say sorry to your sister.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -72,11 +100,13 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/venia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: venia</a> · <a href=\"https://logeion.uchicago.edu/remissio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: remissio</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 196, 356."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 196, 356.",
+    "Plautus, <em>Mercator</em> 997.",
+    "Cicero, <em>Pro Murena</em> 62."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

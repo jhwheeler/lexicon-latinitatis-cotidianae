@@ -1,0 +1,52 @@
+{
+  "id": "error-message",
+  "english": "error message",
+  "pos": "noun",
+  "also": [
+    "error",
+    "an error came up",
+    "error pop-up",
+    "error notice"
+  ],
+  "domain": "computatra",
+  "terms": [
+    {
+      "latin": "nūntius mendī, nūntiī mendī m.",
+      "status": "recommended",
+      "period": "ours",
+      "gloss": "a message of an error",
+      "evidence": [
+        "Traupman 261: <span lang=\"la\">nūntius</span>, message"
+      ],
+      "comment": "A description: Traupman’s word for a message with <span lang=\"la\">mendum</span>, the lexicon’s word for a bug (see “bug”). No reference work has a word for an error message."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Ecce iterum nūntius mendī!",
+      "english": "Look, the error message again!",
+      "source": "composed"
+    },
+    {
+      "latin": "Quid nūntius mendī dīcit? Lege mihi.",
+      "english": "What does the error message say? Read it to me.",
+      "source": "composed"
+    }
+  ],
+  "related": [
+    "bug",
+    "debug",
+    "mistake",
+    "notification",
+    "prompt-computer"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/nuntius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nuntius</a> · <a href=\"https://logeion.uchicago.edu/mendum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mendum</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 261."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-23",
+    "by": "Claude"
+  }
+}

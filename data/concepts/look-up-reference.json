@@ -6,7 +6,11 @@
   "also": [
     "look it up",
     "look up a word",
-    "look something up"
+    "look something up",
+    "search online",
+    "look it up online",
+    "search the internet",
+    "google it"
   ],
   "domain": "schola",
   "terms": [
@@ -23,6 +27,18 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "Nesciō; in interrēte quaerāmus.",
+      "english": "I don’t know; let’s look it up online.",
+      "source": "composed"
+    },
+    {
+      "latin": "Inquīre in interrēte quot annōs vīvant elephantī.",
+      "english": "Look up online how long elephants live.",
+      "source": "composed"
+    }
+  ],
   "related": [
     "dictionary",
     "research"
@@ -33,7 +49,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

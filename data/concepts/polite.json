@@ -2,6 +2,18 @@
   "id": "polite",
   "english": "polite",
   "pos": "adjective",
+  "also": [
+    "civil (courteous)",
+    "courteous",
+    "courtesy",
+    "politeness",
+    "courteously",
+    "be polite",
+    "mind your manners",
+    "good manners",
+    "manners",
+    "polite behaviour"
+  ],
   "domain": "sermo",
   "terms": [
     {
@@ -32,6 +44,28 @@
       "evidence": [
         "Traupman 298"
       ]
+    },
+    {
+      "latin": "urbānitās, urbānitātis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "good manners, courtesy, polish",
+      "evidence": [
+        "Cic. Fam. 3.7.5: <span lang=\"la\">addō urbānitātem, quae est virtūs, ut Stōicī rēctissimē putant</span> (Lewis &amp; Short)"
+      ],
+      "comment": "The manners of the town, as against <span lang=\"la\">rūsticitās</span>; also wit. See “well-behaved” for <span lang=\"la\">bene mōrātus</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Cōmis estō hospitibus.",
+      "english": "Be polite to our guests.",
+      "source": "composed"
+    },
+    {
+      "latin": "Mementō quid deceat: prius salūtā.",
+      "english": "Mind your manners: say hello first.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -39,21 +73,14 @@
     "gentle"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/comitas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: comitas</a>",
+    "<a href=\"https://logeion.uchicago.edu/comitas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: comitas</a> · <a href=\"https://logeion.uchicago.edu/urbanitas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: urbanitas</a>",
     "<a href=\"https://logeion.org/comis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: comis</a>",
     "<a href=\"https://logeion.uchicago.edu/comis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: comis</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 153–156, 298."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
-  },
-  "also": [
-    "civil (courteous)",
-    "courteous",
-    "courtesy",
-    "politeness",
-    "courteously"
-  ]
+  }
 }

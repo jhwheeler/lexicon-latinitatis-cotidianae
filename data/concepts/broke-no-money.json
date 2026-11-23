@@ -7,7 +7,12 @@
     "be broke",
     "penniless",
     "insolvent",
-    "can’t pay one’s debts"
+    "can’t pay one’s debts",
+    "I’m broke",
+    "I’ve run out of money",
+    "I’ve got no money left",
+    "I haven’t a penny",
+    "skint"
   ],
   "domain": "pecunia",
   "terms": [
@@ -21,6 +26,16 @@
         "Traupman 94"
       ],
       "comment": "A dative of the gerund: “not to be up to paying”. Latin says it with a verb phrase, not an adjective."
+    },
+    {
+      "latin": "nummum nūllum habēre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "not have a penny: be broke",
+      "evidence": [
+        "Plaut. Epid. 330: <span lang=\"la\">is nummum nūllum habēs</span>"
+      ],
+      "comment": "What a person says of himself; <span lang=\"la\">solvendō nōn esse</span> is to be unable to pay one’s debts, of a man or a city."
     }
   ],
   "phrases": [
@@ -28,15 +43,32 @@
       "latin": "cum solvendō cīvitātēs nōn essent",
       "english": "since the cities were broke",
       "source": "Cic. Fam. 3.8.2 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "cēnābis bene; nam tuī Catullī plēnus sacculus est arāneārum.",
+      "english": "you’ll dine well; for your Catullus’s purse is full of cobwebs.",
+      "source": "Catull. 13.7–8"
+    },
+    {
+      "latin": "quī, tibi quoi dīvitiae domī maxumae sunt, is nummum nūllum habēs",
+      "english": "you, who have the greatest riches at home, haven’t a penny",
+      "source": "Plaut. Epid. 329–330"
+    },
+    {
+      "latin": "Nūllus mihi nummus superest; omnia in librōs impendī.",
+      "english": "I’ve run out of money; I spent it all on books.",
+      "source": "composed"
     }
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/solvo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: solvo</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 94."
+    "<a href=\"https://logeion.uchicago.edu/solvo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: solvo</a> · <a href=\"https://logeion.uchicago.edu/nummus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nummus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 94.",
+    "Catullus 13.7–8.",
+    "Plautus, <em>Epidicus</em> 329–330."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

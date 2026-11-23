@@ -7,7 +7,11 @@
     "keep your cool",
     "set your mind at ease",
     "don’t worry",
-    "cheer up"
+    "cheer up",
+    "keep calm",
+    "stay calm",
+    "calm down, I tell you",
+    "keep your head"
   ],
   "domain": "sermo",
   "terms": [
@@ -54,6 +58,39 @@
         "Traupman 104: set your mind at ease, <span lang=\"la\">habē animum lēnem et tranquillum</span>"
       ],
       "comment": "Traupman’s phrase; not quoted in Lewis &amp; Short or the loci collections."
+    },
+    {
+      "latin": "Quiēsce.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "calm down; hush",
+      "evidence": [
+        "Plaut. Merc. 448: <span lang=\"la\">Quiēsce, inquam. istanc rem ego rēctē vīderō.</span>",
+        "Ter. Haut. 690: <span lang=\"la\">Ō Juppiter! — Quiēsce.</span>"
+      ],
+      "comment": "The word of comedy for calming someone who is upset or excited: a father to his son in the <em>Mercator</em>, a slave to an overjoyed young man in the <em>Heauton timorumenos</em>. See also “sit still”, where it means “keep still”."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Bonum animum habēte. … Nē, inquam, timēte.",
+      "english": "Cheer up. … Don’t be afraid, I tell you.",
+      "source": "Plaut. Rud. 687–688"
+    },
+    {
+      "latin": "Quiēsce, inquam. Istanc rem ego rēctē vīderō.",
+      "english": "Calm down, I tell you. I’ll see to that properly.",
+      "source": "Plaut. Merc. 448"
+    },
+    {
+      "latin": "Ō Juppiter! — Quiēsce.",
+      "english": "Oh, Jupiter! — Calm down.",
+      "source": "Ter. Haut. 690"
+    },
+    {
+      "latin": "Aequam mementō rēbus in arduīs servāre mentem.",
+      "english": "Remember to keep a calm mind when things are hard.",
+      "source": "Hor. C. 2.3.1–2"
     }
   ],
   "notes": {
@@ -72,19 +109,15 @@
     "control-restrain"
   ],
   "sources": [
-    "<a href=\"https://logeion.org/compesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: compesco</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 96, 101, 104, 296, 336."
+    "<a href=\"https://logeion.org/compesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: compesco</a> · <a href=\"https://logeion.uchicago.edu/quiesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quiesco</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 96, 101, 104, 296, 336.",
+    "Plautus, <em>Mercator</em> 448.",
+    "Terence, <em>Heauton timorumenos</em> 690.",
+    "Horace, <em>Carmina</em> 2.3.1–2."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
-  },
-  "phrases": [
-    {
-      "latin": "Bonum animum habēte. … Nē, inquam, timēte.",
-      "english": "Cheer up. … Don’t be afraid, I tell you.",
-      "source": "Plaut. Rud. 687–688"
-    }
-  ]
+  }
 }

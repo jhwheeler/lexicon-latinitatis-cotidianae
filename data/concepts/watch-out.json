@@ -14,7 +14,9 @@
     "look about you",
     "be careful crossing",
     "careful when you cross",
-    "careful crossing the road"
+    "careful crossing the road",
+    "be careful",
+    "careful now"
   ],
   "domain": "sermo",
   "terms": [
@@ -106,6 +108,11 @@
       "latin": "Cavē, dum viam trānsīmus.",
       "english": "Careful while we cross the road.",
       "source": "composed"
+    },
+    {
+      "latin": "Cavē! Lūbrica est via.",
+      "english": "Be careful! The path is slippery.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -121,7 +128,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

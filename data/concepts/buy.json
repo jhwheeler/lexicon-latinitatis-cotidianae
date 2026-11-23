@@ -5,12 +5,16 @@
   "also": [
     "purchase",
     "buy at a bargain",
-    "bargain"
+    "bargain",
+    "I’ll take it",
+    "I’ll have this one",
+    "I’ll buy it",
+    "we’ll take it"
   ],
+  "domain": "urbs",
   "also_under": [
     "pecunia"
   ],
-  "domain": "urbs",
   "terms": [
     {
       "latin": "emō, emere, ēmī, ēmptum",
@@ -43,6 +47,23 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "bene emere",
+      "english": "to buy at a bargain",
+      "source": "Traupman 130"
+    },
+    {
+      "latin": "Placet; hunc emam.",
+      "english": "I like it; I’ll take it.",
+      "source": "composed"
+    },
+    {
+      "latin": "sī Faberiānum explicās, emāmus vel magnō; sī minus, nē parvō quidem possumus.",
+      "english": "if you can settle the Faberius business, let’s buy, even at a high price; if not, we can’t buy even cheaply.",
+      "source": "Cic. Att. 13.29.2"
+    }
+  ],
   "related": [
     "sell",
     "pay",
@@ -55,22 +76,16 @@
     "<a href=\"https://logeion.uchicago.edu/emo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: emo</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 130, 285.",
     "<a href=\"https://logeion.uchicago.edu/paro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: paro</a>",
-    "<a href=\"https://logeion.uchicago.edu/mercor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mercor</a>"
-  ],
-  "replaces": [
-    "entry-227",
-    "libelli-227"
+    "<a href=\"https://logeion.uchicago.edu/mercor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mercor</a>",
+    "Cicero, <em>Letters to Atticus</em> 13.29.2."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   },
-  "phrases": [
-    {
-      "latin": "bene emere",
-      "english": "to buy at a bargain",
-      "source": "Traupman 130"
-    }
+  "replaces": [
+    "entry-227",
+    "libelli-227"
   ]
 }

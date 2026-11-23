@@ -9,7 +9,10 @@
     "uncouth",
     "ill-mannered",
     "unmannerly",
-    "churlish"
+    "churlish",
+    "that’s rude",
+    "that was rude",
+    "don’t be rude"
   ],
   "domain": "verba",
   "terms": [
@@ -66,6 +69,18 @@
       "comment": "The opposite of <span lang=\"la\">opportūnus</span>. Plautus has it of hunger that will not go away: <span lang=\"la\">inportūnam … famem</span> (Stich. 387)."
     }
   ],
+  "phrases": [
+    {
+      "latin": "Inurbānum est digitō aliōs mōnstrāre.",
+      "english": "It’s rude to point at people.",
+      "source": "composed"
+    },
+    {
+      "latin": "inopem quendam hūmānitātis atque inurbānum",
+      "english": "a man with no refinement and no manners",
+      "source": "Cic. de Or. 2.40"
+    }
+  ],
   "related": [
     "polite",
     "well-behaved"
@@ -75,11 +90,12 @@
     "<a href=\"https://logeion.uchicago.edu/agrestis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: agrestis</a>",
     "<a href=\"https://logeion.uchicago.edu/horridus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: horridus</a>",
     "<a href=\"https://logeion.uchicago.edu/moratus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: moratus</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 331, 332."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 331, 332.",
+    "Cicero, <em>De oratore</em> 2.40."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

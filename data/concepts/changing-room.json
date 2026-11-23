@@ -2,6 +2,11 @@
   "id": "changing-room",
   "english": "changing room",
   "pos": "noun",
+  "also": [
+    "fitting room",
+    "dressing room (in a shop)",
+    "changing cubicle"
+  ],
   "domain": "urbs",
   "terms": [
     {
@@ -14,17 +19,25 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "Licetne mihi hanc vestem in apodȳtēriō probāre?",
+      "english": "May I try this dress on in the fitting room?",
+      "source": "composed"
+    }
+  ],
   "related": [
     "spa",
     "public-baths",
     "oiling-room"
   ],
   "sources": [
-    "<a href=\"https://logeion.org/apodyterium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: apodyterium</a>"
+    "<a href=\"https://logeion.org/apodyterium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: apodyterium</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 118."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

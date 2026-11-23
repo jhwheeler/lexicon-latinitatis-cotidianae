@@ -2,6 +2,16 @@
   "id": "kick",
   "english": "kick",
   "pos": "verb",
+  "also": [
+    "kick the ball",
+    "kickoff",
+    "kick-off",
+    "heel kick",
+    "don’t kick",
+    "no kicking",
+    "kick someone",
+    "lash out (with the feet)"
+  ],
   "domain": "ludi",
   "terms": [
     {
@@ -22,6 +32,16 @@
       "evidence": [
         "Traupman 44"
       ]
+    },
+    {
+      "latin": "calce petere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "kick (a person or an animal)",
+      "evidence": [
+        "Hor. S. 2.1.55: <span lang=\"la\">ut neque calce lupus quemquam neque dente petit bōs</span>"
+      ],
+      "comment": "Horace’s phrase for an animal’s kick at someone, as against <span lang=\"la\">pede pulsāre</span> of a ball."
     }
   ],
   "phrases": [
@@ -44,6 +64,16 @@
       "latin": "calce pulsus",
       "english": "heel kick",
       "source": "Traupman 50"
+    },
+    {
+      "latin": "Nōlī frātrem calce petere!",
+      "english": "Don’t kick your brother!",
+      "source": "composed"
+    },
+    {
+      "latin": "ut neque calce lupus quemquam neque dente petit bōs",
+      "english": "just as a wolf doesn’t kick anyone, nor an ox bite",
+      "source": "Hor. S. 2.1.55"
     }
   ],
   "related": [
@@ -52,19 +82,14 @@
     "throw"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/ico\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ico</a>",
+    "<a href=\"https://logeion.uchicago.edu/ico\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ico</a> · <a href=\"https://logeion.uchicago.edu/calx\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: calx</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 44, 47, 50, 336.",
-    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+    "Horace, <em>Satires</em> 2.1.55."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
-  },
-  "also": [
-    "kick the ball",
-    "kickoff",
-    "kick-off",
-    "heel kick"
-  ]
+  }
 }

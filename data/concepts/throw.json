@@ -6,7 +6,11 @@
     "toss",
     "throw the ball",
     "let fly",
-    "hurl"
+    "hurl",
+    "don’t throw things",
+    "don’t throw your toys",
+    "no throwing",
+    "stop throwing things"
   ],
   "domain": "ludi",
   "terms": [
@@ -34,6 +38,16 @@
         "Caes. B.G. 2.23.1: <span lang=\"la\">pīla</span> (Lewis &amp; Short)",
         "Traupman 339"
       ]
+    },
+    {
+      "latin": "jactō, jactāre, jactāvī, jactātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "throw about, keep throwing, toss around",
+      "evidence": [
+        "Ov. Tr. 4.2.50: <span lang=\"la\">jactātō flōre tegente viās</span> (Lewis &amp; Short)"
+      ],
+      "comment": "The frequentative of <span lang=\"la\">jaciō</span>: throwing things about again and again, which is what a child is told not to do."
     }
   ],
   "phrases": [
@@ -56,6 +70,16 @@
       "latin": "pilam (follem) conjicere",
       "english": "throw the ball",
       "source": "Traupman 44"
+    },
+    {
+      "latin": "Nōlī lūdicra jactāre; frangentur.",
+      "english": "Don’t throw your toys about; they’ll break.",
+      "source": "composed"
+    },
+    {
+      "latin": "Nōlī quicquam jacere intus; forīs pilā lūdēmus.",
+      "english": "Don’t throw anything indoors; we’ll play ball outside.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -64,13 +88,13 @@
     "ball"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/conicio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: conicio</a> · <a href=\"https://logeion.uchicago.edu/emitto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: emitto</a>",
+    "<a href=\"https://logeion.uchicago.edu/conicio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: conicio</a> · <a href=\"https://logeion.uchicago.edu/emitto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: emitto</a> · <a href=\"https://logeion.uchicago.edu/jacto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: jacto</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 44.",
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

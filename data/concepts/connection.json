@@ -4,7 +4,10 @@
   "sense": "between flights",
   "pos": "noun",
   "also": [
-    "network connection"
+    "network connection",
+    "bad connection",
+    "poor connection",
+    "the line is bad"
   ],
   "domain": "vectura",
   "terms": [
@@ -32,6 +35,11 @@
       "latin": "Conjūnctiō bona est, neque tam brevis ut ad alterum āëroplanum sērius veniāmus, neque nimis longa.",
       "english": "It’s a good connection, not so short that we reach the second plane too late, and not too long.",
       "source": "Libellus I, <span lang=\"la\">Iter in Lūsitāniam</span>"
+    },
+    {
+      "latin": "Cōnexus malus est; vōx tua intermittitur.",
+      "english": "The connection’s bad; your voice keeps cutting out.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -39,12 +47,13 @@
     "change-planes"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/intermitto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: intermitto</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 216, 295.",
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

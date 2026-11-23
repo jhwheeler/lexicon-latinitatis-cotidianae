@@ -6,7 +6,10 @@
     "hey, I’m talking to you",
     "I’m speaking to you",
     "are you listening?",
-    "I mean you"
+    "I mean you",
+    "you’re not listening",
+    "you’re not listening to me",
+    "listen when I talk to you"
   ],
   "domain": "sermo",
   "terms": [
@@ -44,6 +47,11 @@
       "latin": "Heus tū, tibi dīcō, manē, redī.",
       "english": "Hey you, I’m talking to you: wait, come back.",
       "source": "Plaut. Men. 696–697"
+    },
+    {
+      "latin": "Heus, tibi dīcō! Nōn auscultās?",
+      "english": "Hey, I’m talking to you! Aren’t you listening?",
+      "source": "composed"
     }
   ],
   "related": [
@@ -57,7 +65,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-15",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

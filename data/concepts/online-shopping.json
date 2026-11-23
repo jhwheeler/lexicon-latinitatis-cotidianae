@@ -5,7 +5,14 @@
   "also": [
     "buy online",
     "order online",
-    "shop online"
+    "shop online",
+    "add to basket",
+    "add to cart",
+    "basket",
+    "shopping basket",
+    "shopping cart",
+    "checkout",
+    "go to checkout"
   ],
   "domain": "pecunia",
   "also_under": [
@@ -26,6 +33,16 @@
       "latin": "Calceōs novōs per interrēte ēmī; crās afferentur.",
       "english": "I bought new shoes online; they’ll be delivered tomorrow.",
       "source": "composed"
+    },
+    {
+      "latin": "Hunc librum in carrulum conjice.",
+      "english": "Add this book to the basket.",
+      "source": "composed"
+    },
+    {
+      "latin": "Calceōs in carrulum conjēcī; nunc solvendum est.",
+      "english": "I’ve put the shoes in the basket; now I have to pay.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -35,12 +52,12 @@
     "parcel"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/emo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: emo</a> · <a href=\"https://logeion.uchicago.edu/emptio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: emptio</a>",
+    "<a href=\"https://logeion.uchicago.edu/emo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: emo</a> · <a href=\"https://logeion.uchicago.edu/emptio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: emptio</a> · <a href=\"https://logeion.uchicago.edu/carrulus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: carrulus</a> · <a href=\"https://logeion.uchicago.edu/conicio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: conicio</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 261–262."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-15",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

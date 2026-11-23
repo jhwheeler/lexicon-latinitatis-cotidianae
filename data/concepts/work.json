@@ -7,7 +7,17 @@
     "a piece of work",
     "work the soil",
     "work a machine",
-    "function"
+    "function",
+    "it’s not working",
+    "it doesn’t work",
+    "it won’t work",
+    "out of order",
+    "I have to work",
+    "I’ve got to work",
+    "I must work",
+    "daddy’s working",
+    "Daddy is working",
+    "I’m working"
   ],
   "domain": "labor",
   "terms": [
@@ -70,6 +80,31 @@
       "latin": "māchinam administrāre",
       "english": "to work a machine",
       "source": "Traupman 408"
+    },
+    {
+      "latin": "Hoc tēlephōnum officiō suō nōn fungitur.",
+      "english": "This phone isn’t working.",
+      "source": "composed"
+    },
+    {
+      "latin": "Fungiturne jam? — Nōn fungitur.",
+      "english": "Is it working now? — No.",
+      "source": "composed"
+    },
+    {
+      "latin": "Labōrandum est mihi; post lūdēmus.",
+      "english": "I have to work; we’ll play afterwards.",
+      "source": "composed"
+    },
+    {
+      "latin": "Pater labōrat; nōlī eum interpellāre.",
+      "english": "Daddy’s working; don’t interrupt him.",
+      "source": "composed"
+    },
+    {
+      "latin": "Nam distringor officiō, ut maximō sīc molestissimō: sedeō prō tribūnālī, subnotō libellōs, cōnficiō tabulās, scrībō plūrimās sed illitterātissimās litterās.",
+      "english": "For I’m pulled every way by my post, a very important and a very tiresome one: I sit on the bench, sign petitions, draw up accounts, and write a great many very unliterary letters.",
+      "source": "Plin. Ep. 1.10.9"
     }
   ],
   "related": [
@@ -79,15 +114,17 @@
     "work-from-home"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/laboro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: laboro</a>",
+    "<a href=\"https://logeion.uchicago.edu/laboro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: laboro</a> · <a href=\"https://logeion.uchicago.edu/distringo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: distringo</a>",
     "<a href=\"https://logeion.uchicago.edu/opus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: opus</a>",
     "<a href=\"https://logeion.uchicago.edu/operor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: operor</a>",
     "<a href=\"https://logeion.uchicago.edu/fungor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fungor</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 408."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 408.",
+    "Cicero, <em>De officiis</em> 3.31.",
+    "Pliny, <em>Letters</em> 1.10.9."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

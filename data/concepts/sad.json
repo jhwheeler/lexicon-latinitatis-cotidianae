@@ -2,10 +2,17 @@
   "id": "sad",
   "english": "sad",
   "pos": "adjective",
+  "also": [
+    "I’m sad",
+    "I feel sad",
+    "I’m upset",
+    "it upsets me",
+    "what’s upsetting you?"
+  ],
+  "domain": "sermo",
   "also_under": [
     "verba"
   ],
-  "domain": "sermo",
   "terms": [
     {
       "latin": "trīstis, trīste",
@@ -23,6 +30,19 @@
       "evidence": [
         "Traupman 373"
       ]
+    },
+    {
+      "latin": "aegrē est (mihi)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "it upsets me, I’m upset",
+      "grammar": "impersonal, with the dative of the person; what upsets is a quod-clause, an infinitive, or a neuter pronoun",
+      "evidence": [
+        "Plaut. Men. 626: <span lang=\"la\">quid tibi aegrē est?</span>",
+        "Plaut. Capt. 129: <span lang=\"la\">Aegrē est mī</span>"
+      ],
+      "comment": "The comic stage’s everyday phrase for being upset, the opposite of <span lang=\"la\">volup est</span> (see “glad”): <span lang=\"la\">Quid tibi aegrē est?</span> is “what’s upsetting you?”.",
+      "register": "vōx cōmica: Plaut., Ter."
     }
   ],
   "phrases": [
@@ -30,6 +50,21 @@
       "latin": "Trīstis es?",
       "english": "Are you sad?",
       "source": "composed"
+    },
+    {
+      "latin": "Trīstis sum: pila mea periit.",
+      "english": "I’m sad: my ball is lost.",
+      "source": "composed"
+    },
+    {
+      "latin": "Dīc, mea uxor, quid tibi aegrē est?",
+      "english": "Tell me, wife, what’s upsetting you?",
+      "source": "Plaut. Men. 626"
+    },
+    {
+      "latin": "Aegrē est mī, hunc facere quaestum carcerārium propter suī gnātī miseriam miserum senem.",
+      "english": "It upsets me that the poor old man is driven to keeping a jail because of his son’s misfortune.",
+      "source": "Plaut. Capt. 129–130"
     }
   ],
   "related": [
@@ -37,12 +72,13 @@
     "cry-weep"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/tristis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tristis</a> · <a href=\"https://logeion.uchicago.edu/maestus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: maestus</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>."
+    "<a href=\"https://logeion.uchicago.edu/tristis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tristis</a> · <a href=\"https://logeion.uchicago.edu/maestus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: maestus</a> · <a href=\"https://logeion.uchicago.edu/aeger\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aeger</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>.",
+    "Plautus, <em>Captivi</em> 129–130; <em>Menaechmi</em> 626."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

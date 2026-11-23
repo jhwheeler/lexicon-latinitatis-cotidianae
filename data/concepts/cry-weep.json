@@ -3,6 +3,25 @@
   "english": "cry",
   "sense": "weep",
   "pos": "verb",
+  "also": [
+    "cry over",
+    "weep for",
+    "cry bitterly",
+    "weep bitterly",
+    "weep",
+    "cry (of a baby)",
+    "wail (of a baby)",
+    "shed tears",
+    "whine",
+    "why are you crying?",
+    "what are you crying for?",
+    "burst into tears",
+    "burst out crying",
+    "don’t whine",
+    "stop whining",
+    "no whining",
+    "stop crying"
+  ],
   "domain": "sermo",
   "terms": [
     {
@@ -64,40 +83,16 @@
         "Caes. BG 1.32.1: <span lang=\"la\">magnō flētū auxilium petere</span> (Lewis &amp; Short)",
         "Cic. de Or. 1.228: <span lang=\"la\">flētum populō movēre</span> (Lewis &amp; Short)"
       ]
+    },
+    {
+      "latin": "lacrimae prōrumpunt",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "tears burst out: burst into tears",
+      "evidence": [
+        "Plin. Ep. 3.16.5: <span lang=\"la\">cum diū cohibitae lacrimae prōrumperent</span> (Lewis &amp; Short s.v. <span lang=\"la\">prōrumpō</span>)"
+      ]
     }
-  ],
-  "related": [
-    "tear-weeping",
-    "wail",
-    "hurt",
-    "comfort"
-  ],
-  "sources": [
-    "<a href=\"https://logeion.uchicago.edu/fleo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fleo</a> · <a href=\"https://logeion.uchicago.edu/lacrimo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lacrimo</a>",
-    "<a href=\"https://logeion.uchicago.edu/ploro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ploro</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 280, 299.",
-    "<a href=\"https://logeion.uchicago.edu/vagio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vagio</a>",
-    "Terence, <em>Hecyra</em> 355.",
-    "<a href=\"https://logeion.uchicago.edu/fletus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fletus</a>"
-  ],
-  "replaces": [
-    "entry-71"
-  ],
-  "review": {
-    "status": "draft",
-    "date": "2026-11-12",
-    "by": "Claude"
-  },
-  "also": [
-    "cry over",
-    "weep for",
-    "cry bitterly",
-    "weep bitterly",
-    "weep",
-    "cry (of a baby)",
-    "wail (of a baby)",
-    "shed tears",
-    "whine"
   ],
   "phrases": [
     {
@@ -124,6 +119,50 @@
       "latin": "sīc cōnsōlāmur crustulō puerōs, sīc īnfantium flētum īnfūsō lacte conpescimus",
       "english": "so we comfort boys with a biscuit, so we quiet a baby’s crying by giving it milk",
       "source": "Sen. Ep. 99.27"
+    },
+    {
+      "latin": "Quid flēs, mī fīlī? Quid tibi est?",
+      "english": "Why are you crying, my boy? What’s the matter?",
+      "source": "composed"
+    },
+    {
+      "latin": "Subitō eī lacrimae prōrūpērunt.",
+      "english": "Suddenly he burst into tears.",
+      "source": "composed"
+    },
+    {
+      "latin": "date puerō pānem, nē plōret",
+      "english": "give the boy some bread, so he doesn’t cry",
+      "source": "Quint. 6.1.46"
+    },
+    {
+      "latin": "Dēsine plōrāre; dīc mihi quid velīs.",
+      "english": "Stop whining; tell me what you want.",
+      "source": "composed"
     }
+  ],
+  "related": [
+    "tear-weeping",
+    "wail",
+    "hurt",
+    "comfort"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/fleo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fleo</a> · <a href=\"https://logeion.uchicago.edu/lacrimo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lacrimo</a>",
+    "<a href=\"https://logeion.uchicago.edu/ploro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ploro</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 280, 299.",
+    "<a href=\"https://logeion.uchicago.edu/vagio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vagio</a>",
+    "Terence, <em>Hecyra</em> 355.",
+    "<a href=\"https://logeion.uchicago.edu/fletus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fletus</a>",
+    "Pliny, <em>Letters</em> 3.16.5.",
+    "Quintilian 6.1.46."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-23",
+    "by": "Claude"
+  },
+  "replaces": [
+    "entry-71"
   ]
 }

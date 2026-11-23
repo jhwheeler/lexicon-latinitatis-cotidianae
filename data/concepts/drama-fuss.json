@@ -9,7 +9,10 @@
     "make a fuss",
     "fuss",
     "a big fuss",
-    "kick up a fuss"
+    "kick up a fuss",
+    "don’t make a fuss",
+    "stop making a fuss",
+    "what’s all the fuss about?"
   ],
   "domain": "sermo",
   "terms": [
@@ -38,6 +41,16 @@
         "Caecil. ap. Non. 525.4: <span lang=\"la\">turbam aliquam dare</span> (Lewis &amp; Short)"
       ],
       "comment": "A row made by one or two people: <span lang=\"la\">turbās concīre</span> (Plautus), <span lang=\"la\">turbam dare</span> (Caecilius), to make a scene. Its everyday sense is a crowd (Lewis &amp; Short)."
+    },
+    {
+      "latin": "tumultuor, tumultuārī, tumultuātus sum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "make a fuss, kick up a commotion",
+      "evidence": [
+        "Plaut. Poen. 525: <span lang=\"la\">nōn decet tumultuārī</span>",
+        "Cic. Cael. 36: <span lang=\"la\">quid tumultuāris, soror? quid īnsānīs?</span> (Lewis &amp; Short)"
+      ]
     }
   ],
   "phrases": [
@@ -55,6 +68,21 @@
       "latin": "nam Amphitruō āctūtum uxōrī turbās conciet",
       "english": "for Amphitryon will make a scene with his wife straight away",
       "source": "Plaut. Am. 476"
+    },
+    {
+      "latin": "nōn decet tumultuārī",
+      "english": "it isn’t proper to make a fuss",
+      "source": "Plaut. Poen. 525"
+    },
+    {
+      "latin": "Nōlī tumultuārī; nihil malī est.",
+      "english": "Don’t make a fuss; nothing’s wrong.",
+      "source": "composed"
+    },
+    {
+      "latin": "Nōlī tragoediās agere ob crustulum.",
+      "english": "Don’t make a drama over a biscuit.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -63,11 +91,12 @@
     "be-quiet"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/tragoedia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tragoedia</a> · <a href=\"https://logeion.uchicago.edu/turba\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: turba</a>"
+    "<a href=\"https://logeion.uchicago.edu/tragoedia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tragoedia</a> · <a href=\"https://logeion.uchicago.edu/turba\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: turba</a> · <a href=\"https://logeion.uchicago.edu/tumultuor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tumultuor</a>",
+    "Plautus, <em>Poenulus</em> 525."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

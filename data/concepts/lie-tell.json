@@ -13,12 +13,17 @@
     "lies",
     "lying",
     "liar",
-    "fib"
+    "fib",
+    "don’t lie",
+    "don’t lie to me",
+    "no lies",
+    "you’re lying",
+    "you’re a liar"
   ],
+  "domain": "verba",
   "also_under": [
     "sermo"
   ],
-  "domain": "verba",
   "terms": [
     {
       "latin": "mentior, mentīrī, mentītus sum",
@@ -94,6 +99,16 @@
       "latin": "mendācium dīcere",
       "english": "to tell a lie",
       "source": "Traupman 339"
+    },
+    {
+      "latin": "Mentīris, nam mea gestitāvit, nōn tua.",
+      "english": "You’re lying: it was my girl who wore them, not yours.",
+      "source": "Plaut. Cist. 750"
+    },
+    {
+      "latin": "Nōlī mentīrī: vīdī tē.",
+      "english": "Don’t lie: I saw you.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -106,11 +121,12 @@
     "<a href=\"https://logeion.uchicago.edu/falsus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: falsus</a>",
     "<a href=\"https://logeion.uchicago.edu/mentior\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mentior</a> · <a href=\"https://logeion.uchicago.edu/mendacium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mendacium</a> · <a href=\"https://logeion.uchicago.edu/mendax\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mendax</a>",
     "Plautus, <em>Asinaria</em>, and Cicero, <em>De divinatione</em> 2.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>.",
+    "Plautus, <em>Cistellaria</em> 750."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

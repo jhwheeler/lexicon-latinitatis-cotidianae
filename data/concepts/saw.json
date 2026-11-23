@@ -2,6 +2,16 @@
   "id": "saw",
   "english": "saw",
   "pos": "noun",
+  "also": [
+    "saw (verb)",
+    "saw wood",
+    "power saw",
+    "chainsaw",
+    "saw the plank",
+    "saw the board",
+    "saw a plank",
+    "saw it in half"
+  ],
   "domain": "officina",
   "terms": [
     {
@@ -22,18 +32,6 @@
       ]
     }
   ],
-  "related": [
-    "tool"
-  ],
-  "sources": [
-    "<a href=\"https://logeion.uchicago.edu/serra\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: serra</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 165."
-  ],
-  "review": {
-    "status": "draft",
-    "date": "2026-11-12",
-    "by": "Claude"
-  },
   "phrases": [
     {
       "latin": "serrā secāre",
@@ -44,12 +42,29 @@
       "latin": "serram dūcere",
       "english": "to saw (without an object)",
       "source": "Traupman 165"
+    },
+    {
+      "latin": "Tenē tabulam, dum serrā secō.",
+      "english": "Hold the plank while I saw it.",
+      "source": "composed"
+    },
+    {
+      "latin": "in Umbriā et Pīcēnō et in Venetiā albus, quod etiam serrā dentātā utī lignum secātur",
+      "english": "in Umbria, Picenum, and Venetia there is a white kind, which can even be cut with a toothed saw, like wood",
+      "source": "Vitr. 2.7.1"
     }
   ],
-  "also": [
-    "saw (verb)",
-    "saw wood",
-    "power saw",
-    "chainsaw"
-  ]
+  "related": [
+    "tool"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/serra\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: serra</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 165.",
+    "Vitruvius, <em>De architectura</em> 2.7.1."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-23",
+    "by": "Claude"
+  }
 }

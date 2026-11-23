@@ -2,6 +2,14 @@
   "id": "doorpost",
   "english": "doorpost",
   "pos": "noun",
+  "also": [
+    "door frame",
+    "doorframe",
+    "door frames",
+    "door jamb",
+    "jamb",
+    "doorposts"
+  ],
   "domain": "aedificatio",
   "terms": [
     {
@@ -13,6 +21,18 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "Age spectā postēs cujus modī, quantā firmitāte factī et quantā crassitūdine.",
+      "english": "Come, look at the doorposts: what they’re like, how solidly made, and how thick.",
+      "source": "Plaut. Most. 818–819"
+    },
+    {
+      "latin": "Postēs nōndum firmī sunt; nōlī eōs tangere.",
+      "english": "The door frame isn’t firm yet; don’t touch it.",
+      "source": "composed"
+    }
+  ],
   "related": [
     "threshold",
     "lintel",
@@ -20,11 +40,12 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/postis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: postis</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 306."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 306.",
+    "Plautus, <em>Mostellaria</em> 818–819."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

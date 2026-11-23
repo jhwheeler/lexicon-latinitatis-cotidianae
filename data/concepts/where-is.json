@@ -2,6 +2,12 @@
   "id": "where-is",
   "english": "where is …?",
   "pos": "phrase",
+  "also": [
+    "where is the nearest …?",
+    "where is the nearest pharmacy?",
+    "where’s the nearest chemist?",
+    "is there a pharmacy near here?"
+  ],
   "domain": "vectura",
   "terms": [
     {
@@ -14,6 +20,13 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "Ubi est proxima medicāmentāria, quaesō?",
+      "english": "Where is the nearest pharmacy, please?",
+      "source": "composed"
+    }
+  ],
   "related": [
     "get-lost",
     "how-far",
@@ -24,7 +37,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

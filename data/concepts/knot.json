@@ -2,15 +2,32 @@
   "id": "knot",
   "english": "knot",
   "pos": "noun",
+  "also": [
+    "tie a knot",
+    "make a knot",
+    "knot (tie)"
+  ],
+  "domain": "ludi",
   "also_under": [
     "vestitus"
   ],
-  "domain": "ludi",
   "terms": [
     {
       "latin": "nōdus, nōdī m.",
       "status": "recommended",
       "period": "classical"
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Nōdum mihi necte, sōdēs: ego nōndum possum.",
+      "english": "Tie a knot for me, please: I can’t yet.",
+      "source": "composed"
+    },
+    {
+      "latin": "necte tribus nōdīs ternōs, Amarylli, colōrēs",
+      "english": "tie the three colours, Amaryllis, in three knots",
+      "source": "Verg. E. 8.77"
     }
   ],
   "related": [
@@ -19,13 +36,14 @@
     "undo"
   ],
   "sources": [
-    "<a href=\"https://logeion.org/nodus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nodus</a>",
+    "<a href=\"https://logeion.org/nodus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nodus</a> · <a href=\"https://logeion.uchicago.edu/necto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: necto</a>",
     "These are names and conversational prompts, not instructions for fitting a harness, tying a knot, or operating a belay.",
-    "<a href=\"https://logeion.uchicago.edu/nodus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nodus</a>"
+    "<a href=\"https://logeion.uchicago.edu/nodus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nodus</a>",
+    "Vergil, <em>Eclogues</em> 8.77."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

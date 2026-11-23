@@ -12,7 +12,11 @@
     "stroll",
     "would you like to take a stroll?",
     "hike",
-    "walk up and down"
+    "walk up and down",
+    "let’s go for a walk in the forest",
+    "let’s go for a walk in the woods",
+    "let’s go for a walk",
+    "a walk in the woods"
   ],
   "domain": "corpus",
   "terms": [
@@ -117,6 +121,21 @@
       "latin": "nōn ambulāmus, sed incēdimus",
       "english": "we do not walk, we step along in state",
       "source": "Sen. NQ 7.31 (Lewis &amp; Short)"
+    },
+    {
+      "latin": "Eāmus in silvam ambulātum.",
+      "english": "Let’s go for a walk in the forest.",
+      "source": "composed"
+    },
+    {
+      "latin": "an tacitum silvās inter reptāre salūbrīs",
+      "english": "or strolling quietly among the healthy woods",
+      "source": "Hor. Ep. 1.4.4"
+    },
+    {
+      "latin": "cum cuidam dīxisset «eāmus deambulātum» et ille «quid opus fuit dē?» «immō vērō» inquit «quid opus fuit tē?»",
+      "english": "when he had said to someone “let’s go for a walk” (de-ambulatum), and the man asked “what need was there of the de?”, “no,” he said, “what need was there of you (te)?”",
+      "source": "Cic. de Or. 2.256"
     }
   ],
   "related": [
@@ -131,11 +150,13 @@
     "<a href=\"https://logeion.uchicago.edu/ambulo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ambulo</a> · <a href=\"https://logeion.uchicago.edu/pes\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pes</a> · <a href=\"https://logeion.uchicago.edu/inambulo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: inambulo</a> · <a href=\"https://logeion.uchicago.edu/deambulo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: deambulo</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 40, 54, 108, 328, 403.",
     "<a href=\"https://logeion.uchicago.edu/spatior\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: spatior</a>",
-    "<a href=\"https://logeion.uchicago.edu/incedo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: incedo</a>"
+    "<a href=\"https://logeion.uchicago.edu/incedo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: incedo</a>",
+    "Horace, <em>Epistles</em> 1.4.4.",
+    "Cicero, <em>De oratore</em> 2.256."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

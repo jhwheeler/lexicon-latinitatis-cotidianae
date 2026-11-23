@@ -2,10 +2,22 @@
   "id": "write",
   "english": "write",
   "pos": "verb",
+  "also": [
+    "writing",
+    "write out",
+    "write out the sentences",
+    "write a book",
+    "write Latin",
+    "write a program",
+    "write your name",
+    "write one’s name",
+    "write your name here",
+    "sign your name"
+  ],
+  "domain": "corpus",
   "also_under": [
     "schola"
   ],
-  "domain": "corpus",
   "terms": [
     {
       "latin": "scrībō, scrībere, scrīpsī, scrīptum",
@@ -46,28 +58,6 @@
       ]
     }
   ],
-  "related": [
-    "scratch"
-  ],
-  "sources": [
-    "<a href=\"https://logeion.uchicago.edu/scribo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: scribo</a>",
-    "<a href=\"https://logeion.uchicago.edu/scriptura\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: scriptura</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 32.",
-    "<a href=\"https://logeion.uchicago.edu/perscribo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: perscribo</a>"
-  ],
-  "review": {
-    "status": "draft",
-    "date": "2026-11-12",
-    "by": "Claude"
-  },
-  "also": [
-    "writing",
-    "write out",
-    "write out the sentences",
-    "write a book",
-    "write Latin",
-    "write a program"
-  ],
   "phrases": [
     {
       "latin": "Sententiās perscrībe (perscrībite).",
@@ -88,6 +78,31 @@
       "latin": "Latīnē scrībere",
       "english": "to write Latin",
       "source": "Traupman 409"
+    },
+    {
+      "latin": "Scrībe nōmen tuum hīc, in summā pāginā.",
+      "english": "Write your name here, at the top of the page.",
+      "source": "composed"
+    },
+    {
+      "latin": "Ipsī illī philosophī etiam in eīs libellīs quōs dē contemnendā glōriā scrībunt nōmen suum īnscrībunt",
+      "english": "Those very philosophers put their own names even on the books they write about despising fame",
+      "source": "Cic. Arch. 26"
     }
-  ]
+  ],
+  "related": [
+    "scratch"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/scribo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: scribo</a>",
+    "<a href=\"https://logeion.uchicago.edu/scriptura\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: scriptura</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 32.",
+    "<a href=\"https://logeion.uchicago.edu/perscribo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: perscribo</a>",
+    "Cicero, <em>Pro Archia</em> 26."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-23",
+    "by": "Claude"
+  }
 }

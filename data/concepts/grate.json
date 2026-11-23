@@ -2,6 +2,10 @@
   "id": "grate",
   "english": "grate",
   "pos": "verb",
+  "also": [
+    "grate the cheese",
+    "grate cheese"
+  ],
   "domain": "culina",
   "terms": [
     {
@@ -17,6 +21,16 @@
       "latin": "Carōtam rādulā rāde.",
       "english": "Grate the carrot with the grater.",
       "source": "composed"
+    },
+    {
+      "latin": "Cāseum rādulā rāde, sīs.",
+      "english": "Grate the cheese, please.",
+      "source": "composed"
+    },
+    {
+      "latin": "Cāseī P. II bene disterat in mortāriō.",
+      "english": "Let him grind two pounds of cheese well in a mortar.",
+      "source": "Cato Agr. 75"
     }
   ],
   "related": [
@@ -24,15 +38,16 @@
     "grind"
   ],
   "sources": [
-    "<a href=\"https://alatius.com/ls/index.php?l=rado\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: rado</a>"
-  ],
-  "replaces": [
-    "entry-124",
-    "smoothie-124"
+    "<a href=\"https://alatius.com/ls/index.php?l=rado\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: rado</a>",
+    "Cato, <em>De agri cultura</em> 75."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
-  }
+  },
+  "replaces": [
+    "entry-124",
+    "smoothie-124"
+  ]
 }

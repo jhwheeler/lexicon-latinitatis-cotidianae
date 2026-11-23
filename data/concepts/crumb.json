@@ -2,6 +2,12 @@
   "id": "crumb",
   "english": "crumb",
   "pos": "noun",
+  "also": [
+    "breadcrumb",
+    "crumbs",
+    "breadcrumbs",
+    "crumbs on the table"
+  ],
   "domain": "culina",
   "terms": [
     {
@@ -10,27 +16,35 @@
       "period": "classical"
     }
   ],
+  "phrases": [
+    {
+      "latin": "mīca pānis",
+      "english": "a breadcrumb",
+      "source": "Traupman 282"
+    },
+    {
+      "latin": "Mīcās dē mēnsā collige, sīs.",
+      "english": "Pick the crumbs up off the table, please.",
+      "source": "composed"
+    },
+    {
+      "latin": "nam et catellī edunt dē mīcīs quae cadunt dē mēnsā dominōrum suōrum",
+      "english": "for even the little dogs eat the crumbs that fall from their masters’ table",
+      "source": "Vulg. Mt. 15.27"
+    }
+  ],
   "related": [
     "piece",
     "bread"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/mica\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mica</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 282."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 282.",
+    "The Vulgate, Matthew 15.27."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
-  },
-  "also": [
-    "breadcrumb"
-  ],
-  "phrases": [
-    {
-      "latin": "mīca pānis",
-      "english": "a breadcrumb",
-      "source": "Traupman 282"
-    }
-  ]
+  }
 }

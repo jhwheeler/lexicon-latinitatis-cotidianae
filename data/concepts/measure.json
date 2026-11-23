@@ -2,6 +2,14 @@
   "id": "measure",
   "english": "measure",
   "pos": "verb",
+  "also": [
+    "measure (be so long)",
+    "measuring ten miles around",
+    "measure it",
+    "measure the board",
+    "measure first",
+    "measure how long it is"
+  ],
   "domain": "officina",
   "terms": [
     {
@@ -22,6 +30,23 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "patēns decem mīlia passuum circuitū",
+      "english": "measuring ten miles in circumference",
+      "source": "Traupman 344"
+    },
+    {
+      "latin": "Prius mētīre, deinde secā.",
+      "english": "Measure it first, then cut.",
+      "source": "composed"
+    },
+    {
+      "latin": "Mētīre, quam longa sit tabula.",
+      "english": "Measure how long the plank is.",
+      "source": "composed"
+    }
+  ],
   "related": [
     "ruler",
     "tape-measure"
@@ -33,18 +58,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
-  },
-  "phrases": [
-    {
-      "latin": "patēns decem mīlia passuum circuitū",
-      "english": "measuring ten miles in circumference",
-      "source": "Traupman 344"
-    }
-  ],
-  "also": [
-    "measure (be so long)",
-    "measuring ten miles around"
-  ]
+  }
 }

@@ -4,7 +4,13 @@
   "pos": "verb",
   "also": [
     "dressed up",
-    "decked out"
+    "decked out",
+    "dress up as",
+    "dress up as a knight",
+    "dressed up as",
+    "dressing up",
+    "costume",
+    "fancy dress"
   ],
   "domain": "vestitus",
   "terms": [
@@ -17,6 +23,18 @@
         "Traupman 302: <span lang=\"la\">exōrnātus -a -um</span>",
         "Traupman 306"
       ]
+    },
+    {
+      "latin": "ōrnātus, ōrnātūs m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "costume, get-up: the dress of a part",
+      "evidence": [
+        "Plaut. Mil. 1177: <span lang=\"la\">facitō utī veniās ōrnātū hūc ad nōs nauclēricō</span>",
+        "Plaut. Amph. 1007: <span lang=\"la\">ōrnātum capiam</span>",
+        "Plaut. Trin. 1099: <span lang=\"la\">quis iste est tuos ōrnātus?</span>"
+      ],
+      "comment": "Plautus’s word for the dress in which someone plays a part: <span lang=\"la\">ōrnātū nauclēricō</span>, dressed as a ship’s captain; <span lang=\"la\">ōrnātum capere</span>, to put on one’s costume. So “dress up as a knight” is <span lang=\"la\">equitis ōrnātum capere</span> or <span lang=\"la\">ōrnātū equitis venīre</span>; for the knight, <span lang=\"la\">eques</span> (Morgan–Owens)."
     }
   ],
   "phrases": [
@@ -24,6 +42,21 @@
       "latin": "Quamobrem sīc subōrnātus es?",
       "english": "Why are you all dressed up?",
       "source": "Traupman 96"
+    },
+    {
+      "latin": "Equitis ōrnātum capiam: dā mihi galeam et gladium ligneum.",
+      "english": "I’ll dress up as a knight: give me a helmet and a wooden sword.",
+      "source": "composed"
+    },
+    {
+      "latin": "facitō utī veniās ōrnātū hūc ad nōs nauclēricō … adsimulātō quasi gubernātor siēs",
+      "english": "mind you come here to us dressed up as a ship’s captain … pretend you’re a helmsman",
+      "source": "Plaut. Mil. 1177, 1181"
+    },
+    {
+      "latin": "sed quis iste est tuos ōrnātus?",
+      "english": "but what’s that get-up of yours?",
+      "source": "Plaut. Trin. 1099"
     }
   ],
   "related": [
@@ -31,12 +64,14 @@
     "get-dressed"
   ],
   "sources": [
-    "<a href=\"https://logeion.org/exorno\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: exorno</a> · <a href=\"https://logeion.org/suborno\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: suborno</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 96, 116, 302, 306."
+    "<a href=\"https://logeion.org/exorno\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: exorno</a> · <a href=\"https://logeion.org/suborno\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: suborno</a> · <a href=\"https://logeion.uchicago.edu/ornatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ornatus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 96, 116, 302, 306.",
+    "Plautus, <em>Amphitruo</em> 1007; <em>Miles gloriosus</em> 1177, 1181; <em>Trinummus</em> 1099.",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. knight."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

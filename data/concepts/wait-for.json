@@ -2,6 +2,11 @@
   "id": "wait-for",
   "english": "wait for",
   "pos": "verb",
+  "also": [
+    "wait for the bus",
+    "wait for the train",
+    "wait at the bus stop"
+  ],
   "domain": "vectura",
   "terms": [
     {
@@ -29,6 +34,11 @@
       "latin": "At ego tē opperiar domī.",
       "english": "Well, I’ll wait for you at home.",
       "source": "Plaut. Asin. 827b"
+    },
+    {
+      "latin": "Hīc in statiōne autoraedam longam opperiēmur.",
+      "english": "We’ll wait for the bus here at the stop.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -40,7 +50,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

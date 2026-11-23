@@ -1,0 +1,67 @@
+{
+  "id": "pickaxe",
+  "english": "pickaxe",
+  "pos": "noun",
+  "also": [
+    "pick",
+    "pickax",
+    "pick-axe",
+    "mattock (pick)"
+  ],
+  "domain": "aedificatio",
+  "terms": [
+    {
+      "latin": "dolābra, dolābrae f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a pickaxe, a mattock",
+      "evidence": [
+        "Curt. 5.6: <span lang=\"la\">Prīmusque rēx dolābrā glaciem perfringēns iter sibi fēcit</span>",
+        "Liv. 9.37 (Lewis &amp; Short)",
+        "Tac. H. 3.27: <span lang=\"la\">ligōnēs dolābrās</span>"
+      ],
+      "comment": "The soldier’s and the labourer’s pick, for breaking hard ground, ice, and old walls."
+    },
+    {
+      "latin": "ligō, ligōnis m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a mattock, a heavy hoe",
+      "comment": "The digger’s mattock of the fields; see “hoe”."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Hīc solum dūrissimum est; dolābram affer.",
+      "english": "The ground is very hard here; bring the pickaxe.",
+      "source": "composed"
+    },
+    {
+      "latin": "Prīmusque rēx dolābrā glaciem perfringēns iter sibi fēcit",
+      "english": "and the king himself was the first to break through the ice with a pickaxe and make a path",
+      "source": "Curt. 5.6"
+    },
+    {
+      "latin": "Dolābrae cālōnibus dīviduntur ad vallum prōruendum fossāsque implendās.",
+      "english": "Pickaxes are handed out to the camp servants for pulling down the rampart and filling in the ditches.",
+      "source": "Liv. 9.37"
+    }
+  ],
+  "related": [
+    "hoe",
+    "axe",
+    "iron-tools",
+    "building-site"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/dolabra\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dolabra</a> · <a href=\"https://logeion.uchicago.edu/ligo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ligo</a>",
+    "Curtius Rufus 5.6.",
+    "Livy 9.37.",
+    "Tacitus, <em>Histories</em> 3.27."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-23",
+    "by": "Claude"
+  }
+}

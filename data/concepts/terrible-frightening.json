@@ -7,7 +7,10 @@
     "dreadful",
     "frightening",
     "fearsome",
-    "horrifying"
+    "horrifying",
+    "scary",
+    "a scary story",
+    "spooky"
   ],
   "domain": "verba",
   "terms": [
@@ -46,6 +49,15 @@
         "Traupman 306"
       ],
       "comment": "Properly of evil omen; so fearful, awful, and of people cruel (Lewis &amp; Short)."
+    },
+    {
+      "latin": "formīdulōsus, formīdulōsa, formīdulōsum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "frightening, scary",
+      "evidence": [
+        "Plaut. Amph. 1117: <span lang=\"la\">nimis formīdolōsum facinus praedicās</span>"
+      ]
     }
   ],
   "phrases": [
@@ -63,6 +75,16 @@
       "latin": "major ignōtārum rērum est terror",
       "english": "things we don’t know frighten us more",
       "source": "Liv. 28.44.3"
+    },
+    {
+      "latin": "Nōlō fābulam terribilem audīre; noctū timēbō.",
+      "english": "I don’t want to hear a scary story; I’ll be frightened at night.",
+      "source": "composed"
+    },
+    {
+      "latin": "Mīra memorās, nimis formīdolōsum facinus praedicās; nam mihi horror membra miserō percipit dictīs tuīs.",
+      "english": "You tell of marvels, a very frightening thing; your words make me shiver all over.",
+      "source": "Plaut. Amph. 1117–1118"
     }
   ],
   "related": [
@@ -71,12 +93,13 @@
     "frighten"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/terribilis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: terribilis</a> · <a href=\"https://logeion.uchicago.edu/horribilis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: horribilis</a> · <a href=\"https://logeion.uchicago.edu/dirus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dirus</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 149, 151, 154, 306, 392."
+    "<a href=\"https://logeion.uchicago.edu/terribilis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: terribilis</a> · <a href=\"https://logeion.uchicago.edu/horribilis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: horribilis</a> · <a href=\"https://logeion.uchicago.edu/dirus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dirus</a> · <a href=\"https://logeion.uchicago.edu/formidulosus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: formidulosus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 149, 151, 154, 306, 392.",
+    "Plautus, <em>Amphitruo</em> 1117–1118."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

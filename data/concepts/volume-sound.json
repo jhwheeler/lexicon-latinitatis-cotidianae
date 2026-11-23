@@ -9,7 +9,13 @@
     "turn it up",
     "turn it down",
     "louder",
-    "quieter"
+    "quieter",
+    "turn the music up",
+    "turn up the music",
+    "turn it up a bit",
+    "turn the music down",
+    "turn down the music",
+    "turn it down a bit"
   ],
   "domain": "computatra",
   "also_under": [
@@ -41,6 +47,21 @@
       "latin": "Sonum minue: īnfāns dormit.",
       "english": "Turn it down, the baby’s asleep.",
       "source": "composed"
+    },
+    {
+      "latin": "Sonum augē, sōdēs: hoc carmen amō.",
+      "english": "Turn it up, please: I love this song.",
+      "source": "composed"
+    },
+    {
+      "latin": "Remitte paulum sonum; nimis clārus est.",
+      "english": "Turn it down a little; it’s too loud.",
+      "source": "composed"
+    },
+    {
+      "latin": "vim radiophōnī remittere (amplificāre)",
+      "english": "to turn down (turn up) the radio",
+      "source": "Traupman 368"
     }
   ],
   "related": [
@@ -50,11 +71,12 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/sonus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sonus</a> · <a href=\"https://logeion.uchicago.edu/augeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: augeo</a> · <a href=\"https://logeion.uchicago.edu/minuo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: minuo</a> · <a href=\"https://logeion.uchicago.edu/quantitas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quantitas</a>",
-    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. volume (sound)."
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. volume (sound).",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 368."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

@@ -2,10 +2,17 @@
   "id": "loose-tooth",
   "english": "loose tooth",
   "pos": "noun",
+  "also": [
+    "wobbly tooth",
+    "a wobbly tooth",
+    "my tooth is wobbly",
+    "my tooth is loose",
+    "I’ve got a wobbly tooth"
+  ],
+  "domain": "corpus",
   "also_under": [
     "sermo"
   ],
-  "domain": "domus",
   "terms": [
     {
       "latin": "dēns mōbilis",
@@ -16,6 +23,28 @@
         "Plin.",
         "M-O s.v. types: loose tooth"
       ]
+    },
+    {
+      "latin": "labō, labāre, labāvī, labātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "be loose, wobble (of a tooth)",
+      "evidence": [
+        "Cels. 7.12.1: <span lang=\"la\">sī ex ictū … labant dentēs</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Celsus’s verb for a loose tooth; the lexicon’s <span lang=\"la\">dēns mōbilis</span> is the adjective for the same thing."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Dēns mihi labat! Mox excidet.",
+      "english": "My tooth is wobbly! Soon it’ll fall out.",
+      "source": "composed"
+    },
+    {
+      "latin": "sī ex ictū … labant dentēs",
+      "english": "if teeth are loose from a blow",
+      "source": "Cels. 7.12.1 (Lewis &amp; Short)"
     }
   ],
   "related": [
@@ -25,12 +54,13 @@
     "teething"
   ],
   "sources": [
-    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: Adumbratio</a>",
-    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. types: loose tooth."
+    "<a href=\"https://logeion.uchicago.edu/labo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: labo</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. types: loose tooth.",
+    "Celsus, <em>De medicina</em> 7.12.1."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

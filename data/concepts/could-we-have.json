@@ -8,7 +8,10 @@
     "can we have …?",
     "may we have …?",
     "please bring us …",
-    "bring me …"
+    "bring me …",
+    "can I have some water?",
+    "may I have some water?",
+    "can I have a drink?"
   ],
   "domain": "urbs",
   "terms": [
@@ -54,6 +57,16 @@
       "latin": "mage nunc mē amīcae dicta stimulant «dā mihi» atque «adfer mihi»",
       "english": "what goads me now is my girlfriend’s “give me” and “bring me”",
       "source": "Ter. Haut. 223"
+    },
+    {
+      "latin": "Dā mihi, sīs, aquam; sitiō.",
+      "english": "Can I have some water, please? I’m thirsty.",
+      "source": "composed"
+    },
+    {
+      "latin": "Dā mihi bibere.",
+      "english": "Give me a drink.",
+      "source": "Vulg. Jo. 4.7"
     }
   ],
   "related": [
@@ -66,11 +79,12 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/affero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: affero</a>",
     "Terence, <em>Heauton timorumenos</em> 223.",
-    "Horace, <em>Epodes</em> 9.33–34."
+    "Horace, <em>Epodes</em> 9.33–34.",
+    "The Vulgate, John 4.7."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

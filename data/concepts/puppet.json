@@ -3,7 +3,10 @@
   "english": "puppet",
   "pos": "noun",
   "also": [
-    "marionette"
+    "marionette",
+    "puppet show",
+    "puppet theatre",
+    "puppets"
   ],
   "domain": "ludi",
   "terms": [
@@ -19,6 +22,18 @@
       "notes": [
         "neurospaston"
       ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Hodiē in forō neurospasta spectābimus.",
+      "english": "Today we’ll watch a puppet show in the square.",
+      "source": "composed"
+    },
+    {
+      "latin": "dūceris ut nervīs aliēnīs mōbile lignum",
+      "english": "you are worked like a wooden puppet on someone else’s strings",
+      "source": "Hor. S. 2.7.82"
     }
   ],
   "notes": {
@@ -37,14 +52,15 @@
   "sources": [
     "<a href=\"https://logeion.org/neurospaston\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: neurospaston</a>",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. puppet: marionette.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 367."
-  ],
-  "replaces": [
-    "entry-525"
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 367.",
+    "Horace, <em>Satires</em> 2.7.82."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
-  }
+  },
+  "replaces": [
+    "entry-525"
+  ]
 }

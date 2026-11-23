@@ -2,6 +2,12 @@
   "id": "gym",
   "english": "gym",
   "pos": "noun",
+  "also": [
+    "gymnasium",
+    "go to the gym",
+    "at the gym",
+    "go to the gymnasium"
+  ],
   "domain": "ludi",
   "terms": [
     {
@@ -37,6 +43,18 @@
       "comment": "<span lang=\"la\">Gymnasticus</span> is Plautine (Lewis &amp; Short); for a school’s gym hall."
     }
   ],
+  "phrases": [
+    {
+      "latin": "Pater in palaestram it; ante cēnam redībit.",
+      "english": "Dad’s going to the gym; he’ll be back before supper.",
+      "source": "composed"
+    },
+    {
+      "latin": "ante sōlem exorientem nisi in palaestram vēnerās, gymnasī praefectō haud mediocrīs poenās penderēs",
+      "english": "if you hadn’t got to the exercise ground before sunrise, you paid no small penalty to the head of the gymnasium",
+      "source": "Plaut. Bacch. 424–425"
+    }
+  ],
   "related": [
     "exercise",
     "race",
@@ -47,17 +65,15 @@
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. gym.",
     "<a href=\"https://logeion.uchicago.edu/gymnasticus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gymnasticus</a>",
     "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 13.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 48, 60, 64, 324."
-  ],
-  "replaces": [
-    "entry-527"
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 48, 60, 64, 324.",
+    "Plautus, <em>Bacchides</em> 424–425."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   },
-  "also": [
-    "gymnasium"
+  "replaces": [
+    "entry-527"
   ]
 }

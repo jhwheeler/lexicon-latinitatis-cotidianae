@@ -4,7 +4,15 @@
   "sense": "headwear",
   "pos": "noun",
   "also": [
-    "hat"
+    "hat",
+    "woolly hat",
+    "wooly hat",
+    "knitted hat",
+    "beanie",
+    "bobble hat",
+    "party hat",
+    "festive hat",
+    "Saturnalia cap"
   ],
   "domain": "vestitus",
   "terms": [
@@ -32,6 +40,26 @@
       "latin": "Ubi est pilleus tuus?",
       "english": "Where is your cap?",
       "source": "composed"
+    },
+    {
+      "latin": "Pilleum lāneum indue, nē aurēs algeant.",
+      "english": "Put your woolly hat on, so your ears don’t get cold.",
+      "source": "composed"
+    },
+    {
+      "latin": "Pilleum indue: convīvium incipit!",
+      "english": "Put on your party hat: the party’s starting!",
+      "source": "composed"
+    },
+    {
+      "latin": "Synthesibus dum gaudet eques dominusque senātor dumque decent nostrum pillea sūmpta Jovem",
+      "english": "while the knight and the lordly senator enjoy their party clothes, and the cap he has put on becomes our Jupiter",
+      "source": "Mart. 14.1.1–2"
+    },
+    {
+      "latin": "Ūnctīs falciferī senis diēbus, rēgnātor quibus inperat fritillus, versū lūdere nōn labōriōsō permittis, putō, pilleāta Rōma.",
+      "english": "On the feast days of the old god with the sickle, when the dice-box is king, you let me play in easy verse, I think, Rome in your party caps.",
+      "source": "Mart. 11.6.1–4"
     }
   ],
   "notes": {
@@ -47,15 +75,16 @@
     "blender"
   ],
   "sources": [
-    "<a href=\"https://www.alatius.com/ls/index.php?l=pilleus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pilleus</a> · <a href=\"https://neolatinlexicon.org/latin/hat__cap/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: hat: cap</a> · <a href=\"https://paulatinygriego.wordpress.com/wp-content/uploads/2019/02/conversational-latin-for-oral-proficiency-traupman.pdf\" rel=\"noopener noreferrer\" target=\"_blank\">Traupman: Conversational Latin, fourth edition</a>"
-  ],
-  "replaces": [
-    "entry-171",
-    "daily-171"
+    "<a href=\"https://www.alatius.com/ls/index.php?l=pilleus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pilleus</a> · <a href=\"https://neolatinlexicon.org/latin/hat__cap/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: hat: cap</a> · <a href=\"https://paulatinygriego.wordpress.com/wp-content/uploads/2019/02/conversational-latin-for-oral-proficiency-traupman.pdf\" rel=\"noopener noreferrer\" target=\"_blank\">Traupman: Conversational Latin, fourth edition</a> · <a href=\"https://logeion.uchicago.edu/laneus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: laneus</a> · <a href=\"https://logeion.uchicago.edu/pilleatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pilleatus</a>",
+    "Martial 11.6.1–4; 14.1.1–2."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
-  }
+  },
+  "replaces": [
+    "entry-171",
+    "daily-171"
+  ]
 }

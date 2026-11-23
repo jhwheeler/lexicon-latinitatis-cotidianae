@@ -2,10 +2,16 @@
   "id": "church",
   "english": "church",
   "pos": "noun",
+  "also": [
+    "go to church",
+    "going to church",
+    "at church",
+    "to church"
+  ],
+  "domain": "urbs",
   "also_under": [
     "ecclesia"
   ],
-  "domain": "urbs",
   "terms": [
     {
       "latin": "ecclēsia, ecclēsiae f.",
@@ -17,17 +23,30 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "Mox in ecclēsiam ībimus; calceōs indue.",
+      "english": "We’re going to church soon; put your shoes on.",
+      "source": "composed"
+    },
+    {
+      "latin": "laetātus sum in hīs quae dicta sunt mihi: in domum Dominī ībimus",
+      "english": "I was glad when they said to me, “We will go into the house of the Lord”",
+      "source": "Vulg. Ps. 121 (122), 1"
+    }
+  ],
   "related": [
     "church-bell",
     "priest"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/ecclesia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ecclesia</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 173, 291."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 173, 291.",
+    "The Vulgate, Psalm 121 (122).1."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

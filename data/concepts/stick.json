@@ -7,7 +7,10 @@
     "walking staff",
     "club",
     "cudgel",
-    "bludgeon"
+    "bludgeon",
+    "pick up a stick",
+    "pick up the stick",
+    "find a stick"
   ],
   "domain": "sermo",
   "terms": [
@@ -60,6 +63,11 @@
       "latin": "Age tū, redde huic scīpiōnem et pallium.",
       "english": "Come on, you, give him back his stick and his cloak.",
       "source": "Plaut. Cas. 1009"
+    },
+    {
+      "latin": "Baculum humō tolle.",
+      "english": "Pick up a stick from the ground.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -73,12 +81,12 @@
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 281, 293.",
     "Plautus, <em>Casina</em> 1009."
   ],
-  "replaces": [
-    "entry-24"
-  ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
-  }
+  },
+  "replaces": [
+    "entry-24"
+  ]
 }

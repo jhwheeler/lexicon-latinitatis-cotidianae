@@ -9,7 +9,10 @@
     "bus timetable",
     "does the bus stop in …?",
     "bus driver",
-    "coach (tour bus)"
+    "coach (tour bus)",
+    "the bus is coming",
+    "here comes the bus",
+    "the bus is here"
   ],
   "domain": "vectura",
   "terms": [
@@ -97,6 +100,11 @@
       "latin": "coenautocīnētum perigēticum",
       "english": "a tour bus",
       "source": "Traupman 396"
+    },
+    {
+      "latin": "Ecce autoraeda longa! Mātūrēmus.",
+      "english": "Here comes the bus! Let’s hurry.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -108,12 +116,12 @@
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 215, 218, 284.",
     "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 40."
   ],
-  "replaces": [
-    "entry-17"
-  ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
-  }
+  },
+  "replaces": [
+    "entry-17"
+  ]
 }

@@ -11,12 +11,15 @@
     "spring break",
     "spring holidays",
     "Easter holidays",
-    "today is a holiday"
+    "today is a holiday",
+    "public holiday",
+    "bank holiday",
+    "official holiday"
   ],
+  "domain": "sermo",
   "also_under": [
     "tempus"
   ],
-  "domain": "sermo",
   "terms": [
     {
       "latin": "fēriae, fēriārum f. pl.",
@@ -74,6 +77,16 @@
       "latin": "vacātiō aestīva",
       "english": "summer vacation",
       "source": "Traupman 401"
+    },
+    {
+      "latin": "Crās fēriae pūblicae sunt; tabernae clausae erunt.",
+      "english": "Tomorrow’s a public holiday; the shops will be shut.",
+      "source": "composed"
+    },
+    {
+      "latin": "Cōnsuālia dicta ā Cōnsō, quod tum fēriae pūblicae eī deō …",
+      "english": "The Consualia are named after Consus, because at that time there is a public holiday for the god …",
+      "source": "Varr. LL 6.20"
     }
   ],
   "related": [
@@ -83,16 +96,17 @@
     "birthday"
   ],
   "sources": [
-    "<a href=\"https://logeion.org/feriae\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: feriae</a> · <a href=\"https://logeion.org/vacatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vacatio</a>",
+    "<a href=\"https://logeion.org/feriae\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: feriae</a> · <a href=\"https://logeion.org/vacatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vacatio</a> · <a href=\"https://logeion.uchicago.edu/publicus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: publicus</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 52–54, 328, 401.",
-    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. tourist: vacation."
-  ],
-  "replaces": [
-    "entry-520"
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. tourist: vacation.",
+    "Varro, <em>De lingua Latina</em> 6.20."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
-  }
+  },
+  "replaces": [
+    "entry-520"
+  ]
 }

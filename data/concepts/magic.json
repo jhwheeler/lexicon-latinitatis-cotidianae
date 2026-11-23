@@ -12,7 +12,14 @@
     "magician",
     "wizard",
     "practise magic",
-    "practice magic"
+    "practice magic",
+    "cast a spell",
+    "cast a spell on",
+    "put a spell on",
+    "enchant",
+    "bewitch",
+    "enchanted",
+    "under a spell"
   ],
   "domain": "sermo",
   "terms": [
@@ -69,6 +76,26 @@
         "Verg. A. 4.493: <span lang=\"la\">magicās … artēs</span> (Lewis &amp; Short)",
         "Traupman 343"
       ]
+    },
+    {
+      "latin": "carmen, carminis n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a spell, a charm (chanted)",
+      "evidence": [
+        "Verg. E. 8.70: <span lang=\"la\">carminibus Circē sociōs mūtāvit Ulixī</span>"
+      ]
+    },
+    {
+      "latin": "incantō, incantāre, incantāvī, incantātum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "chant a spell over; enchant",
+      "evidence": [
+        "XII Tab. ap. Plin. NH 28.17: <span lang=\"la\">quī malum carmen incantāsset</span> (Lewis &amp; Short)",
+        "Hor. S. 1.8.49: <span lang=\"la\">incantāta vincula</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Classically to chant a spell over someone or something; “bewitch” in Apuleius. <span lang=\"la\">Carmen</span> with <span lang=\"la\">cantāre</span> or <span lang=\"la\">canere</span> is the plain way to say “cast a spell”."
     }
   ],
   "phrases": [
@@ -86,19 +113,30 @@
       "latin": "magicās artēs exercēre",
       "english": "to practise magic",
       "source": "Traupman 343"
+    },
+    {
+      "latin": "Sāga carmen cecinit, et rēgis fīlius in rānam versus est.",
+      "english": "The witch cast a spell, and the prince was turned into a frog.",
+      "source": "composed"
+    },
+    {
+      "latin": "Carmina vel caelō possunt dēdūcere lūnam; carminibus Circē sociōs mūtāvit Ulixī.",
+      "english": "Spells can even bring the moon down from the sky; with spells Circe changed Ulysses’ companions.",
+      "source": "Verg. E. 8.69–70"
     }
   ],
   "related": [
     "magic-trick"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/magicus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: magicus</a> · <a href=\"https://logeion.uchicago.edu/veneficium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: veneficium</a> · <a href=\"https://logeion.uchicago.edu/magia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: magia</a> · <a href=\"https://logeion.uchicago.edu/cantio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cantio</a> · <a href=\"https://logeion.uchicago.edu/magus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: magus</a>",
+    "<a href=\"https://logeion.uchicago.edu/magicus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: magicus</a> · <a href=\"https://logeion.uchicago.edu/veneficium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: veneficium</a> · <a href=\"https://logeion.uchicago.edu/magia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: magia</a> · <a href=\"https://logeion.uchicago.edu/cantio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cantio</a> · <a href=\"https://logeion.uchicago.edu/magus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: magus</a> · <a href=\"https://logeion.uchicago.edu/carmen\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: carmen</a> · <a href=\"https://logeion.uchicago.edu/incanto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: incanto</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 167.",
-    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. magic (paranormal or supernatural)."
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. magic (paranormal or supernatural).",
+    "Vergil, <em>Eclogae</em> 8.69–70."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

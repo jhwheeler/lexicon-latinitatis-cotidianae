@@ -3,7 +3,10 @@
   "english": "knead",
   "pos": "verb",
   "also": [
-    "kneading"
+    "kneading",
+    "knead the dough",
+    "knead it",
+    "knead the bread"
   ],
   "domain": "culina",
   "terms": [
@@ -23,17 +26,35 @@
       "comment": "Cato’s own verb for working the dough."
     }
   ],
+  "phrases": [
+    {
+      "latin": "Massam bene depse; deinde requiēscat.",
+      "english": "Knead the dough well; then let it rest.",
+      "source": "composed"
+    },
+    {
+      "latin": "Deinde manibus depsitō.",
+      "english": "Then knead it with your hands.",
+      "source": "Cato Agr. 76"
+    },
+    {
+      "latin": "Farīnam in mortārium inditō, aquae paulātim additō subigitōque pulchrē.",
+      "english": "Put the flour in the mortar, add water little by little, and knead it thoroughly.",
+      "source": "Cato Agr. 74"
+    }
+  ],
   "related": [
     "dough",
     "mortar-bowl"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/depso\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: depso</a> · <a href=\"https://logeion.uchicago.edu/subigo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: subigo</a>",
-    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
+    "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
+    "Cato, <em>De agri cultura</em> 74; 76."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

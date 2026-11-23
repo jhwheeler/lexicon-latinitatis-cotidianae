@@ -11,9 +11,15 @@
     "turn on the light",
     "boot up",
     "start up (a computer)",
-    "booting up"
+    "booting up",
+    "turn on the stove",
+    "light the stove",
+    "turn on the cooker"
   ],
   "domain": "domus",
+  "also_under": [
+    "computatra"
+  ],
   "terms": [
     {
       "latin": "accendō, accendere, accendī, accēnsum",
@@ -54,6 +60,11 @@
       "latin": "initiāre systēma",
       "english": "to boot up (a computer)",
       "source": "Traupman 281"
+    },
+    {
+      "latin": "Foculum accende; aquam fervefaciēmus.",
+      "english": "Turn on the stove; we’re going to boil some water.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -69,10 +80,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
-  },
-  "also_under": [
-    "computatra"
-  ]
+  }
 }

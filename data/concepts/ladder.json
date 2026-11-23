@@ -2,16 +2,53 @@
   "id": "ladder",
   "english": "ladder",
   "pos": "noun",
+  "also": [
+    "climb the ladder",
+    "go up the ladder",
+    "climb up the ladder",
+    "ladders",
+    "hold the ladder",
+    "hold the ladder for me",
+    "steady the ladder",
+    "prop the ladder against the wall"
+  ],
+  "domain": "aedificatio",
   "also_under": [
     "ludi"
   ],
-  "domain": "aedificatio",
   "terms": [
     {
       "latin": "scālae, scālārum f. pl.",
       "status": "recommended",
       "period": "classical",
       "gloss": "ladder, stairs"
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Lentē per scālās ascende; ego teneō.",
+      "english": "Climb the ladder slowly; I’m holding it.",
+      "source": "composed"
+    },
+    {
+      "latin": "Mīlitēs positīs scālīs mūrōs ascendunt",
+      "english": "The soldiers set up ladders and climb the walls",
+      "source": "Caes. BC 1.28"
+    },
+    {
+      "latin": "oleam, quam manū tangere possīs ē terrā ac scālīs, legere oportet potius quam quatere",
+      "english": "the olives you can reach by hand from the ground or from ladders should be picked rather than beaten down",
+      "source": "Varr. RR 1.55.1"
+    },
+    {
+      "latin": "Tenē mihi scālās, dum ascendō.",
+      "english": "Hold the ladder for me while I climb.",
+      "source": "composed"
+    },
+    {
+      "latin": "Scālās ad parietem applicā.",
+      "english": "Lean the ladder against the wall.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -21,11 +58,13 @@
     "climb"
   ],
   "sources": [
-    "<a href=\"https://www.alatius.com/ls/index.php?l=scalas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: scalas</a>"
+    "<a href=\"https://www.alatius.com/ls/index.php?l=scalas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: scalas</a>",
+    "Caesar, <em>Bellum civile</em> 1.28.",
+    "Varro, <em>Res rusticae</em> 1.55.1."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

@@ -2,6 +2,12 @@
   "id": "butchers-shop",
   "english": "butcher’s shop",
   "pos": "noun",
+  "also": [
+    "butcher shop",
+    "butcher’s",
+    "the butcher’s",
+    "go to the butcher’s"
+  ],
   "domain": "urbs",
   "terms": [
     {
@@ -17,6 +23,13 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "Ad laniēnam eāmus; carne opus est.",
+      "english": "Let’s go to the butcher’s; we need meat.",
+      "source": "composed"
+    }
+  ],
   "related": [
     "butcher"
   ],
@@ -26,10 +39,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
-  },
-  "also": [
-    "butcher shop"
-  ]
+  }
 }

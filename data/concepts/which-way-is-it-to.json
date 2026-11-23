@@ -11,7 +11,10 @@
     "how do I get to …?",
     "how do we get there?",
     "how do you get to …?",
-    "how can I get to …?"
+    "how can I get to …?",
+    "how do I get to the station?",
+    "which way to the station?",
+    "how do we get to the station?"
   ],
   "domain": "urbs",
   "also_under": [
@@ -67,6 +70,11 @@
       "latin": "Quā illūc perveniēmus?",
       "english": "How do we get there?",
       "source": "composed"
+    },
+    {
+      "latin": "Quā ad statiōnem ferriviāriam ītur, quaesō?",
+      "english": "How do I get to the station, please?",
+      "source": "composed"
     }
   ],
   "related": [
@@ -88,7 +96,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

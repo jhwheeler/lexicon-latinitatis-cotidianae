@@ -5,7 +5,10 @@
   "also": [
     "lager",
     "brew beer",
-    "brewery"
+    "brewery",
+    "a beer, please",
+    "I’d like a beer",
+    "a glass of beer"
   ],
   "domain": "culina",
   "audience": "adult",
@@ -33,6 +36,23 @@
       "comment": "Another spelling of the Gaulish word, beside <span lang=\"la\">cervesia</span>; the one most modern Latin uses."
     }
   ],
+  "phrases": [
+    {
+      "latin": "cervisiam coquere",
+      "english": "to brew beer",
+      "source": "Traupman 283"
+    },
+    {
+      "latin": "Cervisiam velim, quaesō.",
+      "english": "I’d like a beer, please.",
+      "source": "composed"
+    },
+    {
+      "latin": "Cantharum cervisiae, quaesō.",
+      "english": "A mug of beer, please.",
+      "source": "composed"
+    }
+  ],
   "related": [
     "beer-mug",
     "wine"
@@ -40,23 +60,16 @@
   "sources": [
     "<a href=\"https://logeion.org/cervisia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cervisia</a>",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. beer.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 70.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 68, 70.",
     "<a href=\"https://logeion.uchicago.edu/cerevisia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cerevisia</a>",
     "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 7."
   ],
-  "replaces": [
-    "entry-409"
-  ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-23",
     "by": "Claude"
   },
-  "phrases": [
-    {
-      "latin": "cervisiam coquere",
-      "english": "to brew beer",
-      "source": "Traupman 283"
-    }
+  "replaces": [
+    "entry-409"
   ]
 }

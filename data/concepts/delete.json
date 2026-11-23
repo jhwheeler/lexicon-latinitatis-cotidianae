@@ -7,7 +7,10 @@
     "remove (a file)",
     "rub out",
     "erasure",
-    "crossing-out"
+    "crossing-out",
+    "rub it out",
+    "rub that out",
+    "rub out the mistake"
   ],
   "domain": "computatra",
   "terms": [
@@ -55,6 +58,16 @@
         "Traupman 310"
       ],
       "comment": "The smoothed wax where something written has been rubbed out."
+    },
+    {
+      "latin": "stilum vertere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "turn the stylus: rub out, correct (on a wax tablet)",
+      "evidence": [
+        "Hor. S. 1.10.72: <span lang=\"la\">saepe stilum vertās</span>"
+      ],
+      "comment": "The blunt end of the stylus smoothed the wax; so to turn it was to rub out what one had written."
     }
   ],
   "phrases": [
@@ -62,6 +75,16 @@
       "latin": "esse putā cērās, licet haec membrāna vocētur: dēlēbis, quotiēns scrīpta novāre volēs",
       "english": "think of it as wax, though it is called parchment: you will rub it out whenever you want to write afresh",
       "source": "Mart. 14.7.1–2"
+    },
+    {
+      "latin": "Hoc dēlē et dēnuō scrībe.",
+      "english": "Rub this out and write it again.",
+      "source": "composed"
+    },
+    {
+      "latin": "saepe stilum vertās, iterum quae digna legī sint scrīptūrus",
+      "english": "you should often turn your stylus, if you mean to write things worth reading twice",
+      "source": "Hor. S. 1.10.72–73"
     }
   ],
   "related": [
@@ -73,11 +96,12 @@
     "<a href=\"https://logeion.uchicago.edu/litura\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: litura</a>",
     "<a href=\"https://logeion.uchicago.edu/erado\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: erado</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 29, 260, 302, 310.",
-    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. delete."
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. delete.",
+    "Horace, <em>Satires</em> 1.10.72–73."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

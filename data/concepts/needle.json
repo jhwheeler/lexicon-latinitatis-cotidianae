@@ -3,7 +3,10 @@
   "english": "needle",
   "pos": "noun",
   "also": [
-    "pin"
+    "pin",
+    "thread a needle",
+    "thread the needle",
+    "eye of a needle"
   ],
   "domain": "vestitus",
   "terms": [
@@ -24,6 +27,16 @@
       "latin": "Cavē acum; pungit.",
       "english": "Careful with the needle; it pricks.",
       "source": "composed"
+    },
+    {
+      "latin": "Fīlum mihi in acum īnsere, sōdēs; forāmen vix videō.",
+      "english": "Thread the needle for me, please; I can hardly see the eye.",
+      "source": "composed"
+    },
+    {
+      "latin": "grāna ciceris ex spatiō distante missa in acum continuō et sine frūstrātiōne īnserēbat",
+      "english": "he would throw chickpeas from a distance and get them onto a needle every time, without a miss",
+      "source": "Quint. 2.20.3"
     }
   ],
   "related": [
@@ -34,15 +47,16 @@
     "laundry"
   ],
   "sources": [
-    "<a href=\"https://logeion.org/acus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: acus</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 350, 360."
-  ],
-  "replaces": [
-    "entry-320"
+    "<a href=\"https://logeion.org/acus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: acus</a> · <a href=\"https://logeion.uchicago.edu/insero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: insero</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 350, 360.",
+    "Quintilian, <em>Institutio oratoria</em> 2.20.3."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
-  }
+  },
+  "replaces": [
+    "entry-320"
+  ]
 }

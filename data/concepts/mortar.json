@@ -2,6 +2,12 @@
   "id": "mortar",
   "english": "mortar",
   "pos": "noun",
+  "also": [
+    "mix the cement",
+    "mix the mortar",
+    "mix cement",
+    "mixing cement"
+  ],
   "domain": "aedificatio",
   "terms": [
     {
@@ -27,6 +33,18 @@
       "comment": "In Vitruvius also the mixed mortar."
     }
   ],
+  "phrases": [
+    {
+      "latin": "Calcem cum harēnā miscē; tum aquam adde.",
+      "english": "Mix the lime with the sand; then add water.",
+      "source": "composed"
+    },
+    {
+      "latin": "Cum ea erit extīncta, tunc māteria ita misceātur, ut, sī erit fossīcia, trēs harēnae et ūna calcis īnfundātur",
+      "english": "When the lime has been slaked, let the mortar be mixed so that, if the sand is pit sand, three parts of sand are poured in to one of lime",
+      "source": "Vitr. 2.5.1"
+    }
+  ],
   "related": [
     "lime-building",
     "sand",
@@ -35,11 +53,12 @@
   ],
   "sources": [
     "<a href=\"https://www.alatius.com/ls/index.php?l=harenatus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: harenatus</a> · <a href=\"https://www.alatius.com/ls/index.php?l=materia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: materia</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 168."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 168.",
+    "Vitruvius, <em>De architectura</em> 2.5.1."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

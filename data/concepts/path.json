@@ -5,7 +5,10 @@
   "also": [
     "footpath",
     "trail",
-    "hiking trail"
+    "hiking trail",
+    "follow the path",
+    "take this path",
+    "keep along the path"
   ],
   "domain": "sermo",
   "terms": [
@@ -24,6 +27,21 @@
       "latin": "Per sēmitam eāmus.",
       "english": "Let’s take the path.",
       "source": "composed"
+    },
+    {
+      "latin": "Hanc sēmitam sequāmur; ad rīvum dūcit.",
+      "english": "Let’s follow this path; it leads to the stream.",
+      "source": "composed"
+    },
+    {
+      "latin": "Iter est, quācumque dat prior vestīgium.",
+      "english": "The path is wherever the one in front leaves a footprint.",
+      "source": "Publil. Sent. I 61"
+    },
+    {
+      "latin": "saltem aliquem velim quī mihi ex hīs locīs aut viam aut sēmitam mōnstret",
+      "english": "I wish at least there were someone to show me a road or a path out of this place",
+      "source": "Plaut. Rud. 211–212"
     }
   ],
   "related": [
@@ -32,11 +50,13 @@
     "trail-tracks"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/semita\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: semita</a>"
+    "<a href=\"https://logeion.uchicago.edu/semita\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: semita</a>",
+    "Publilius Syrus, <em>Sententiae</em> I 61.",
+    "Plautus, <em>Rudens</em> 211–212."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

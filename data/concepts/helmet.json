@@ -2,6 +2,12 @@
   "id": "helmet",
   "english": "helmet",
   "pos": "noun",
+  "also": [
+    "hard hat",
+    "safety helmet",
+    "builder’s helmet",
+    "hard hats"
+  ],
   "domain": "vectura",
   "terms": [
     {
@@ -30,6 +36,11 @@
       "latin": "Galeam indue. Genuālia et cubitālia indue.",
       "english": "Put on your helmet, knee pads, and elbow pads.",
       "source": "composed"
+    },
+    {
+      "latin": "Galeam indue: in āream ingredimur.",
+      "english": "Put on your hard hat: we’re going onto the building site.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -43,12 +54,12 @@
     "<a href=\"https://logeion.uchicago.edu/cassis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cassis</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 187, 327."
   ],
-  "replaces": [
-    "entry-21"
-  ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
-  }
+  },
+  "replaces": [
+    "entry-21"
+  ]
 }

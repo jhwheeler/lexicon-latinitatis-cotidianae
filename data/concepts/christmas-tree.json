@@ -2,10 +2,18 @@
   "id": "christmas-tree",
   "english": "Christmas tree",
   "pos": "noun",
+  "also": [
+    "decorate the Christmas tree",
+    "decorate the tree",
+    "trim the tree",
+    "star on top of the tree",
+    "put the star on top",
+    "Christmas star"
+  ],
+  "domain": "sermo",
   "also_under": [
     "tempus"
   ],
-  "domain": "sermo",
   "terms": [
     {
       "latin": "arbor nātālīcia",
@@ -28,22 +36,29 @@
       "latin": "arborem nātālīciam igniculīs et globulīs et lāminīs argenteīs ōrnāre",
       "english": "to decorate the Christmas tree with lights, balls, and tinsel",
       "source": "Traupman 291"
+    },
+    {
+      "latin": "Stēllam in summā arbore pōne.",
+      "english": "Put the star on top of the tree.",
+      "source": "composed"
+    },
+    {
+      "latin": "Ecce, stēlla in summā arbore lūcet!",
+      "english": "Look, the star’s shining on top of the tree!",
+      "source": "composed"
     }
   ],
   "related": [
     "christmas"
   ],
   "sources": [
-    "<a href=\"https://logeion.org/natalicius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: natalicius</a>",
+    "<a href=\"https://logeion.org/natalicius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: natalicius</a> · <a href=\"https://logeion.uchicago.edu/stella\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: stella</a> · <a href=\"https://logeion.uchicago.edu/summus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: summus</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 291.",
     "<a href=\"https://www.vatican.va/roman_curia/institutions_connected/latinitas/documents/rc_latinitas_20040601_lexicon_it.html\" rel=\"noopener noreferrer\" target=\"_blank\">Vatican public lexicon</a> (selection from the Lexicon Recentis Latinitatis), as cited."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
-  },
-  "also": [
-    "decorate the Christmas tree"
-  ]
+  }
 }

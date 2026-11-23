@@ -9,7 +9,10 @@
     "scared to death",
     "puffed",
     "exhaust",
-    "wind"
+    "wind",
+    "I’m out of breath",
+    "I’m puffed",
+    "I’m all out of breath"
   ],
   "domain": "corpus",
   "terms": [
@@ -50,6 +53,11 @@
       "latin": "cursū ac lassitūdine exanimātōs",
       "english": "breathless with running and weariness",
       "source": "Caes. BG 2.23.1"
+    },
+    {
+      "latin": "Exanimātus sum: tam celeriter cucurrī!",
+      "english": "I’m out of breath: I ran so fast!",
+      "source": "composed"
     }
   ],
   "related": [
@@ -64,7 +72,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-15",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

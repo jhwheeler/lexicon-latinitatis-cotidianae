@@ -2,6 +2,13 @@
   "id": "drum",
   "english": "drum",
   "pos": "noun",
+  "also": [
+    "play the drum",
+    "drummer",
+    "beat the drum",
+    "bang the drum",
+    "drumming"
+  ],
   "domain": "ludi",
   "terms": [
     {
@@ -31,6 +38,16 @@
       "latin": "tympanum pulsāre",
       "english": "play the drum",
       "source": "Traupman 53, 168"
+    },
+    {
+      "latin": "Tympanum pulsā, dum nōs saltāmus.",
+      "english": "Beat the drum while we dance.",
+      "source": "composed"
+    },
+    {
+      "latin": "cymbala prō galeīs, prō scūtīs tympana pulsant",
+      "english": "they beat cymbals instead of helmets, drums instead of shields",
+      "source": "Ov. F. 4.213"
     }
   ],
   "related": [
@@ -42,18 +59,15 @@
     "<a href=\"https://logeion.uchicago.edu/tympanista\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tympanista</a>",
     "<a href=\"https://logeion.org/tympanum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tympanum</a>",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. percussion: drum.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 53, 168, 307."
-  ],
-  "replaces": [
-    "entry-523"
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 53, 168, 307.",
+    "Ovid, <em>Fasti</em> 4.213."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   },
-  "also": [
-    "play the drum",
-    "drummer"
+  "replaces": [
+    "entry-523"
   ]
 }

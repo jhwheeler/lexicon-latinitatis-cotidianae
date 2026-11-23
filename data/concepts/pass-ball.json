@@ -6,7 +6,11 @@
   "also": [
     "pass the ball",
     "pass the puck",
-    "a pass"
+    "a pass",
+    "pass it to me",
+    "pass it!",
+    "pass me the ball",
+    "throw it to me"
   ],
   "domain": "ludi",
   "terms": [
@@ -39,6 +43,17 @@
         "Traupman 357"
       ],
       "comment": "Classically “send across, convey over”; Traupman uses it of passing the ball, and <span lang=\"la\">pedifollis trānsmissus</span> for a pass."
+    },
+    {
+      "latin": "pilam mittere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "throw the ball to someone: pass it",
+      "grammar": "mittō, mittere, mīsī, missum, with pilam; the receiver with ad + acc. or the dative",
+      "evidence": [
+        "Sen. Ben. 2.17.4: <span lang=\"la\">audācius pilam mittēmus</span>; <span lang=\"la\">aliter illam conlūsōrī longō, aliter brevī mittat</span>"
+      ],
+      "comment": "Seneca’s phrase, after Chrysippus, for the throw from one player to another in a game of catch; the plain classical way to say “pass it” in any ball game."
     }
   ],
   "phrases": [
@@ -76,15 +91,31 @@
       "latin": "pedifollis trānsmissus",
       "english": "a pass (in football)",
       "source": "Traupman 357"
+    },
+    {
+      "latin": "Pilam ad mē mitte!",
+      "english": "Pass it to me!",
+      "source": "composed"
+    },
+    {
+      "latin": "Ad mē trājice!",
+      "english": "Pass it to me! (in a ball game)",
+      "source": "composed"
+    },
+    {
+      "latin": "sī cum exercitātō et doctō negōtium est, audācius pilam mittēmus",
+      "english": "if we are playing with a practised, skilful partner, we shall throw the ball more boldly",
+      "source": "Sen. Ben. 2.17.4"
     }
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/traicio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: traicio</a> · <a href=\"https://logeion.uchicago.edu/transmitto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: transmitto</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 46, 47, 48, 50, 357."
+    "<a href=\"https://logeion.uchicago.edu/traicio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: traicio</a> · <a href=\"https://logeion.uchicago.edu/transmitto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: transmitto</a> · <a href=\"https://logeion.uchicago.edu/mitto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mitto</a> · <a href=\"https://logeion.uchicago.edu/pila\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pila</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 46, 47, 48, 50, 357.",
+    "Seneca, <em>De beneficiis</em> 2.17.4."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

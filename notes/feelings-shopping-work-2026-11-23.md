@@ -49,13 +49,27 @@ Classical words used of a modern thing, labelled classical with the new sense in
 - **it's not working**: *nōn fungitur*, used absolutely, is modern, as the record "work" says; *officiō suō nōn fungitur* is the classical construction.
 - **bite**: the record is filed under food; a child biting someone uses the same verb, and no second record was made.
 
-## Slips noticed in existing records (not changed)
+## Slips in existing records, corrected on 23 November 2026
 
-- value: its evidence cites "Cic. Dom. 44 … aestimābat"; in the text it is section 115 and reads *aestimābātur*.
-- expensive: the *percārus* evidence "Ter. Phorm. 3.3.25" is Ter. Ph. 558 by the line; cash: the evidence for *pecūnia praesēns* is a bare "Cic." (Att. 2.4.1 would serve).
-- go-food-shopping: *obsōnō* lacks its principal parts; be-cross: *stomachor* lacks its perfect; funny: *jocōsus*, *fēstīvus* lack their full forms.
-- im-glad-youre-back and again carry a standing source line from the old cards.
-- hello: Levi–Bini's phone greeting *Ades? — Adsum.* (pp. 283, 285) is not yet there.
+Jack (23 November 2026): "Please do fix any incorrect line numbers or any mistakes you find along the way. Always feel free to update them." So these were corrected, and such slips are corrected when found from now on:
+
+- value: the evidence for *aestimō* is Cic. Dom. 115 and reads *aestimābātur* (it said "Dom. 44 … aestimābat").
+- expensive: *percārus* cited as "Ter. Ph. 3.3.25 (Lewis & Short)", *cārus* as "M-O s.v. expensive"; cash: *pecūnia praesēns* has Cic. Att. 2.4.1 for its evidence.
+- go-food-shopping: *obsōnō, obsōnāre, obsōnāvī, obsōnātum*; be-cross: *stomachor, stomachārī, stomachātus sum* and *suscēnseō, suscēnsēre, suscēnsuī, suscēnsum*; funny: *jocōsus, jocōsa, jocōsum* and *fēstīvus, fēstīva, fēstīvum*.
+- im-glad-youre-back and again: the standing source lines from the old cards are gone.
+- hello: Levi–Bini's phone greeting *Ades? — Adsum, quis mē vocat?* (p. 283) is an example.
+
+## What's your job?
+
+Jack (23 November 2026): Latin speakers online ask for one's *officium*, and sometimes one's *mūnus*. The question has its own record now, taken out of "employment": *Quod est officium tuum?* leads, as it is said today (*officium* is a post from Caesar on; of any job the use is modern), with *Quō mūnere fungeris?* (on Cicero's and Pliny's *mūnere fungī*), *Quam artem exercēs?*, and Traupman's *Quem quaestum facis?*, which keeps its warning. Which of the first two should lead is for Jack to say.
+
+## The line numbers of Plautus and Terence
+
+On 23 November 2026 every reference to Plautus and Terence by line in the lexicon (2,172 of them, in evidence lines and examples) was compared by script with the numbers the Latin Library texts print at every fifth verse.
+
+- 786 agree with the text's own numbering.
+- 15 records had a number the text's numbering shows to be wrong, most by one line and eight of them in the *Eunuchus*; they are corrected (advice, at-least, at-the-house-of, cell-room, don't do that, I'm talking to you, interpretation, it makes no difference, mind, nothing in excess, shh, sometimes, sure, think, world).
+- 729 stand where the text file breaks verses over two lines, so that counting from the printed numbers cannot settle them, and 626 could not be found by their opening words (older records that cite by act and scene, quotations with omissions, other readings). These still want a numbered edition; none was open to this session.
 
 ## Housekeeping
 

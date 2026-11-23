@@ -1,0 +1,69 @@
+{
+  "id": "sweeten",
+  "english": "sweeten",
+  "pos": "verb",
+  "also": [
+    "sweeten it",
+    "make it sweeter",
+    "sweeten with honey",
+    "sweeten with sugar",
+    "sweetened"
+  ],
+  "domain": "culina",
+  "terms": [
+    {
+      "latin": "melle temperāre",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "sweeten with honey",
+      "grammar": "temperāre with the ablative of what is mixed in: melle, saccharō",
+      "evidence": [
+        "Plin. NH 14.114: <span lang=\"la\">acētum melle</span> (Lewis &amp; Short s.v. <span lang=\"la\">temperō</span>)",
+        "Apic. 1.3.1: <span lang=\"la\">eōdem modō melle temperābis</span>"
+      ],
+      "comment": "Latin says it with <span lang=\"la\">temperāre</span>, to mix in due measure, and the ablative of the sweetener: Pliny tempers vinegar with honey, and Apicius ends recipe after recipe with <span lang=\"la\">melle temperābis</span>. With sugar, <span lang=\"la\">saccharō temperāre</span>, an ordinary combination; see the examples. The one-word verbs for “sweeten” are late or Christian (Lewis &amp; Short)."
+    },
+    {
+      "latin": "dulcōrō, dulcōrāre",
+      "status": "alternative",
+      "period": "late",
+      "gloss": "sweeten",
+      "evidence": [
+        "Hier. Ep. 22.9 (Lewis &amp; Short)"
+      ],
+      "comment": "Late Latin (Jerome, the Vulgate); classical Latin uses <span lang=\"la\">temperāre</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Sūcus citreī nimis acidus est; paulum melle temperā.",
+      "english": "The lemon juice is too sour; sweeten it with a little honey.",
+      "source": "composed"
+    },
+    {
+      "latin": "Cremum saccharō temperābimus.",
+      "english": "We’ll sweeten the cream with sugar.",
+      "source": "composed"
+    },
+    {
+      "latin": "Similiter, ut suprā, et dē violā violācium faciēs, et eōdem modō melle temperābis.",
+      "english": "Likewise, as above, you will make violet wine from violets, and sweeten it with honey in the same way.",
+      "source": "Apic. 1.3.1"
+    }
+  ],
+  "related": [
+    "sweet",
+    "honey",
+    "sugar",
+    "sour"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/tempero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tempero</a> · <a href=\"https://logeion.uchicago.edu/dulcoro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: dulcoro</a>",
+    "Apicius, <em>De re coquinaria</em> 1.3.1."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-23",
+    "by": "Claude"
+  }
+}

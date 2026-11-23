@@ -2,6 +2,12 @@
   "id": "lemon-juice",
   "english": "lemon juice",
   "pos": "noun",
+  "also": [
+    "the juice of two lemons",
+    "the juice of a lemon",
+    "the juice of half a lemon",
+    "squeeze the lemons"
+  ],
   "domain": "culina",
   "terms": [
     {
@@ -19,6 +25,16 @@
       "latin": "Vīsne sūcum citreī in pisce?",
       "english": "Do you want lemon juice on your fish?",
       "source": "composed"
+    },
+    {
+      "latin": "Sūcum duōrum citreōrum exprime.",
+      "english": "Squeeze out the juice of two lemons.",
+      "source": "composed"
+    },
+    {
+      "latin": "Sūcō dīmidiī citreī opus est.",
+      "english": "We need the juice of half a lemon.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -30,7 +46,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-15",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

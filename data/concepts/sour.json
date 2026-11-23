@@ -6,7 +6,13 @@
   "also": [
     "it’s sour",
     "too sour",
-    "sour (taste)"
+    "sour (taste)",
+    "tart taste",
+    "tart (taste)",
+    "tangy",
+    "sharp (taste)",
+    "a bit sour",
+    "sourish"
   ],
   "domain": "culina",
   "also_under": [
@@ -21,6 +27,17 @@
       "evidence": [
         "Traupman 280"
       ]
+    },
+    {
+      "latin": "subacidus, subacida, subacidum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a little sour, tart",
+      "evidence": [
+        "Cato Agr. 108: <span lang=\"la\">sī subacidum erit, nōn dūrābit</span>",
+        "Plin. NH 12.120: <span lang=\"la\">sūcus</span> (Lewis &amp; Short)"
+      ],
+      "comment": "Cato’s word for a wine with a sour edge; of a pleasantly sharp taste, as of lemon, it is the softer word beside <span lang=\"la\">acidus</span>."
     }
   ],
   "phrases": [
@@ -33,6 +50,16 @@
       "latin": "quod petis, id sānē est invīsum acidumque duōbus",
       "english": "what you ask for, the other two find hateful and sour",
       "source": "Hor. Ep. 2.2.64"
+    },
+    {
+      "latin": "Citreum subacidum est, sed mihi placet.",
+      "english": "Lemon has a tart taste, but I like it.",
+      "source": "composed"
+    },
+    {
+      "latin": "Sī id sapiet, quod in dōliō est, scītō dūrātūrum; sī subacidum erit, nōn dūrābit.",
+      "english": "If it tastes like what is in the jar, you can be sure it will keep; if it is a little sour, it will not.",
+      "source": "Cato Agr. 108"
     }
   ],
   "related": [
@@ -40,10 +67,11 @@
     "bitter"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/acidus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: acidus</a>",
+    "<a href=\"https://logeion.uchicago.edu/acidus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: acidus</a> · <a href=\"https://logeion.uchicago.edu/subacidus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: subacidus</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 280.",
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
-    "Horace, <em>Epistles</em> 2.2.64."
+    "Horace, <em>Epistles</em> 2.2.64.",
+    "Cato, <em>De agri cultura</em> 108."
   ],
   "review": {
     "status": "draft",

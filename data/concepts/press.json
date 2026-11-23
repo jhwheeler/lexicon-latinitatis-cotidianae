@@ -2,6 +2,12 @@
   "id": "press",
   "english": "press",
   "pos": "verb",
+  "also": [
+    "press it into the tin",
+    "press into the tin",
+    "press it down",
+    "press it down firmly"
+  ],
   "domain": "culina",
   "terms": [
     {
@@ -13,17 +19,30 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "Crustula contūsa in fundum fōrmae digitīs preme.",
+      "english": "Press the crushed biscuits into the bottom of the tin with your fingers.",
+      "source": "composed"
+    },
+    {
+      "latin": "vel manū figūrātur vel buxeīs fōrmīs exprimitur",
+      "english": "it is either shaped by hand or pressed in boxwood moulds",
+      "source": "Col. 7.8.7"
+    }
+  ],
   "related": [
     "button-control",
     "squeeze-out"
   ],
   "sources": [
     "<a href=\"https://alatius.com/ls/index.php?l=premo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: premo</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 364."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 364.",
+    "Columella, <em>De re rustica</em> 7.8.7."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

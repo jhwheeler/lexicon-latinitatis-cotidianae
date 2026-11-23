@@ -2,6 +2,14 @@
   "id": "sugar",
   "english": "sugar",
   "pos": "noun",
+  "also": [
+    "sugar cube",
+    "cube of sugar",
+    "brown sugar",
+    "caster sugar",
+    "castor sugar",
+    "superfine sugar"
+  ],
   "domain": "culina",
   "terms": [
     {
@@ -14,6 +22,23 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "cubus saccharī",
+      "english": "a sugar cube",
+      "source": "Traupman 387"
+    },
+    {
+      "latin": "saccharum fuscum",
+      "english": "brown sugar",
+      "source": "composed"
+    },
+    {
+      "latin": "saccharum tenuissimum",
+      "english": "caster sugar",
+      "source": "composed"
+    }
+  ],
   "related": [
     "honey",
     "nutrition"
@@ -24,18 +49,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
-  },
-  "phrases": [
-    {
-      "latin": "cubus saccharī",
-      "english": "a sugar cube",
-      "source": "Traupman 387"
-    }
-  ],
-  "also": [
-    "sugar cube",
-    "cube of sugar"
-  ]
+  }
 }

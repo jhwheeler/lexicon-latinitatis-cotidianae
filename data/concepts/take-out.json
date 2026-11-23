@@ -7,7 +7,11 @@
     "scoop",
     "take it out of the oven",
     "take it out",
-    "take the cake out of the oven"
+    "take the cake out of the oven",
+    "turn it out",
+    "turn it out of the tin",
+    "turn it out onto a plate",
+    "unmould"
   ],
   "domain": "culina",
   "terms": [
@@ -17,6 +21,16 @@
       "period": "classical",
       "gloss": "take out; take or scoop out",
       "comment": "“Core” and “deseed” are expressed with ordinary objects and verbs rather than unsupported one-word technical coinages. Ordinary Latin verbs cover the actions: scooping is expressed with <span lang=\"la\">eximere</span> plus the spoon as an instrument; no separate unsupported kitchen neologism is required."
+    },
+    {
+      "latin": "in discum versāre",
+      "status": "alternative",
+      "period": "post-classical",
+      "gloss": "turn out onto a dish",
+      "evidence": [
+        "Apic. 4.2.15: <span lang=\"la\">ā superficiē versās in discum</span>"
+      ],
+      "comment": "Apicius’s phrase for turning a set dish over onto a plate; his <span lang=\"la\">patina versātilis</span> is a dish made to be turned out (Apic. 4.2.2, 4.2.16)."
     }
   ],
   "phrases": [
@@ -34,6 +48,21 @@
       "latin": "Ubi cocta erit, eximitō et melle unguitō.",
       "english": "When it is baked, take it out and spread it with honey.",
       "source": "Cato Agr. 76"
+    },
+    {
+      "latin": "Fōrmam in discum versā; placenta facile exībit.",
+      "english": "Turn the tin over onto a plate; the cake will come out easily.",
+      "source": "composed"
+    },
+    {
+      "latin": "Ā superficiē versās in discum, piper aspergēs",
+      "english": "Turn it out onto a dish, top side down, and sprinkle it with pepper",
+      "source": "Apic. 4.2.15"
+    },
+    {
+      "latin": "deinde ut fōrmīs aut calathīs exēmptus est",
+      "english": "then, once it has been taken out of the moulds or baskets",
+      "source": "Col. 7.8.4"
     }
   ],
   "related": [
@@ -43,8 +72,10 @@
     "flesh-fruit"
   ],
   "sources": [
-    "<a href=\"https://alatius.com/ls/index.php?l=eximo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: eximo</a>",
-    "Cato, <em>De agri cultura</em> 76."
+    "<a href=\"https://alatius.com/ls/index.php?l=eximo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: eximo</a> · <a href=\"https://logeion.uchicago.edu/verso\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: verso</a> · <a href=\"https://logeion.uchicago.edu/discus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: discus</a>",
+    "Cato, <em>De agri cultura</em> 76.",
+    "Apicius, <em>De re coquinaria</em> 4.2.15.",
+    "Columella, <em>De re rustica</em> 7.8.4."
   ],
   "review": {
     "status": "draft",

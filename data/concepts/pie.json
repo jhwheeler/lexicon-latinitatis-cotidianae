@@ -5,7 +5,10 @@
   "also": [
     "apple pie",
     "pumpkin pie",
-    "cherry pie"
+    "cherry pie",
+    "lemon pie",
+    "lemon meringue pie",
+    "lemon meringue"
   ],
   "domain": "culina",
   "terms": [
@@ -50,6 +53,21 @@
       "latin": "cerasa in crustō cocta",
       "english": "cherry pie",
       "source": "Traupman 290"
+    },
+    {
+      "latin": "crustum ex citreīs",
+      "english": "lemon pie",
+      "source": "composed"
+    },
+    {
+      "latin": "Hodiē crustum ex citreīs coquimus; tū corticem rāde.",
+      "english": "Today we’re baking a lemon pie; you grate the peel.",
+      "source": "composed"
+    },
+    {
+      "latin": "crustum ex citreīs spūmā ōvōrum opertum",
+      "english": "lemon meringue pie",
+      "source": "composed"
     }
   ],
   "notes": {
@@ -70,13 +88,13 @@
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 70, 72, 290.",
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
   ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-23",
+    "by": "Claude"
+  },
   "replaces": [
     "entry-253",
     "libelli-253"
-  ],
-  "review": {
-    "status": "draft",
-    "date": "2026-11-12",
-    "by": "Claude"
-  }
+  ]
 }

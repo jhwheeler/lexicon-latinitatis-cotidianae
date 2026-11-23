@@ -2,6 +2,10 @@
   "id": "flour",
   "english": "flour",
   "pos": "noun",
+  "also": [
+    "self-raising flour",
+    "self-rising flour"
+  ],
   "domain": "culina",
   "terms": [
     {
@@ -11,6 +15,13 @@
       "evidence": [
         "Traupman 316"
       ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "farīna cui pulvis fermentārius jam admixtus est",
+      "english": "self-raising flour (flour with the baking powder already mixed in)",
+      "source": "composed"
     }
   ],
   "related": [
@@ -23,7 +34,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

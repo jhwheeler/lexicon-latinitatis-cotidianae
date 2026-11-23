@@ -4,7 +4,13 @@
   "pos": "phrase",
   "also": [
     "it was on the tip of my tongue",
-    "at the tip of my tongue"
+    "at the tip of my tongue",
+    "I forgot the word",
+    "I can’t think of the word",
+    "I can’t think of the name",
+    "the word escapes me",
+    "the word won’t come",
+    "I’ve forgotten the name"
   ],
   "domain": "sermo",
   "terms": [
@@ -20,6 +26,46 @@
         "Traupman 259, 395"
       ],
       "comment": "Latin keeps the word on the front of the lips, not the tip of the tongue. <span lang=\"la\">Prīmōribus labrīs attingere</span> is something else: to touch a subject lightly (Cic. de Or. 1.87)."
+    },
+    {
+      "latin": "succurrō, succurrere, succurrī, succursum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "come to mind, occur to one: nōn succurrit, it won’t come to me",
+      "grammar": "the word or name is the subject, the person in the dative: nōmen mihi nōn succurrit",
+      "evidence": [
+        "Sen. Ep. 3.1: <span lang=\"la\">sī nōmen nōn succurrit</span>",
+        "Cic. Att. 14.1.2: <span lang=\"la\">ut enim quidque succurrit, libet scrībere</span>",
+        "Lewis &amp; Short s.v. <span lang=\"la\">succurrō</span>: “to come into the mind, occur to one (class.; esp. freq. after the Aug. period)”"
+      ],
+      "comment": "The plain prose way to say that a word or a name will not come: Seneca speaks of greeting people as <span lang=\"la\">domine</span> when their name does not come to mind."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Erat in labrīs prīmōribus.",
+      "english": "It was on the tip of my tongue.",
+      "source": "Traupman 395"
+    },
+    {
+      "latin": "Dēvorāvī nōmen imprūdēns modo. … Atque etiam modo vorsābātur mī in labrīs prīmōribus.",
+      "english": "I’ve swallowed the name without meaning to, just now. … And it was on the tip of my tongue a moment ago.",
+      "source": "Plaut. Trin. 908, 910"
+    },
+    {
+      "latin": "quōmodo obviōs, sī nōmen nōn succurrit, «dominōs» salūtāmus",
+      "english": "as we greet people we meet as “sir” when their name doesn’t come to mind",
+      "source": "Sen. Ep. 3.1"
+    },
+    {
+      "latin": "nōmen quidem scrīptōris statim dīximus, rem, dē quā scrīptum fuit, dictūrī haesimus",
+      "english": "we told him the author’s name at once, but when we came to say what the book was about, we were stuck for the word",
+      "source": "Gell. 11.16.2"
+    },
+    {
+      "latin": "Excidit mihi verbum; quid dīcimus, cum pluit et sōl lūcet?",
+      "english": "The word has gone out of my head; what do we say when it rains and the sun is shining?",
+      "source": "composed"
     }
   ],
   "related": [
@@ -27,20 +73,17 @@
     "forget"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/primoris\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: primoris</a>",
+    "<a href=\"https://logeion.uchicago.edu/primoris\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: primoris</a> · <a href=\"https://logeion.uchicago.edu/succurro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: succurro</a>",
     "<a href=\"https://logeion.uchicago.edu/labrum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: labrum</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 109."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 109.",
+    "Plautus, <em>Trinummus</em> 908–910.",
+    "Seneca, <em>Epistulae</em> 3.1.",
+    "Cicero, <em>Letters to Atticus</em> 14.1.2.",
+    "Aulus Gellius, <em>Noctes Atticae</em> 11.16.2."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
-  },
-  "phrases": [
-    {
-      "latin": "Erat in labrīs prīmōribus.",
-      "english": "It was on the tip of my tongue.",
-      "source": "Traupman 395"
-    }
-  ]
+  }
 }

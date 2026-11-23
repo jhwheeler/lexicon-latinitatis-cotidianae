@@ -8,7 +8,11 @@
   "also": [
     "broken bone",
     "break a bone",
-    "break one’s leg"
+    "break one’s leg",
+    "broken arm",
+    "broken leg",
+    "he’s broken his arm",
+    "break one’s arm"
   ],
   "domain": "corpus",
   "terms": [
@@ -31,25 +35,42 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "Fortasse crūs frēgistī.",
+      "english": "Maybe you broke your leg.",
+      "source": "Traupman 57"
+    },
+    {
+      "latin": "Bracchium frāctum est; medicus id dēligābit.",
+      "english": "The arm is broken; the doctor will bandage it up.",
+      "source": "composed"
+    },
+    {
+      "latin": "excūsāvit Vespa Terentius, quod eum bracchium frēgisse dīceret",
+      "english": "Vespa Terentius made his excuses for him, saying he had broken his arm",
+      "source": "Cic. de Or. 2.253"
+    },
+    {
+      "latin": "ait sē obligāsse crūs frāctum Aesculāpiō, Apollinī autem brachium",
+      "english": "he says he has set a broken leg for Aesculapius, and an arm for Apollo (a doctor mending statues)",
+      "source": "Plaut. Men. 885–886"
+    }
+  ],
   "related": [
     "bone",
     "plaster-cast",
     "sprain"
   ],
   "sources": [
-    "<a href=\"https://logeion.org/fractura\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fractura</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 57, 64."
+    "<a href=\"https://logeion.org/fractura\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fractura</a> · <a href=\"https://logeion.uchicago.edu/obligo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: obligo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 57, 64.",
+    "Cicero, <em>De oratore</em> 2.253.",
+    "Plautus, <em>Menaechmi</em> 885–886."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
-  },
-  "phrases": [
-    {
-      "latin": "Fortasse crūs frēgistī.",
-      "english": "Maybe you broke your leg.",
-      "source": "Traupman 57"
-    }
-  ]
+  }
 }

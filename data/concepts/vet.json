@@ -3,7 +3,12 @@
   "english": "vet",
   "pos": "noun",
   "also": [
-    "veterinarian"
+    "veterinarian",
+    "take to the vet",
+    "take the dog to the vet",
+    "take the cat to the vet",
+    "go to the vet",
+    "the vet’s"
   ],
   "domain": "urbs",
   "terms": [
@@ -36,6 +41,18 @@
       "comment": "A description on the model of Columella’s phrase."
     }
   ],
+  "phrases": [
+    {
+      "latin": "Canis aegrōtat; crās eum ad veterīnārium dūcēmus.",
+      "english": "The dog is ill; tomorrow we’ll take him to the vet.",
+      "source": "composed"
+    },
+    {
+      "latin": "Fēlem in caveā ad veterīnārium ferēmus.",
+      "english": "We’ll take the cat to the vet in a cage.",
+      "source": "composed"
+    }
+  ],
   "related": [
     "doctor"
   ],
@@ -45,7 +62,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

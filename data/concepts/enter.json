@@ -10,12 +10,17 @@
     "go inside",
     "come inside",
     "walk in",
-    "go inside!"
+    "go inside!",
+    "may I come in?",
+    "can I come in?",
+    "may we come in?",
+    "come on in",
+    "do come in"
   ],
+  "domain": "verba",
   "also_under": [
     "sermo"
   ],
-  "domain": "verba",
   "terms": [
     {
       "latin": "intrō, intrāre, intrāvī, intrātum",
@@ -87,6 +92,16 @@
       "latin": "Intrā (intrāte).",
       "english": "Come in.",
       "source": "Traupman 33"
+    },
+    {
+      "latin": "Licetne intrō īre? — Licet; ingredere.",
+      "english": "May I come in? — Yes, come in.",
+      "source": "composed"
+    },
+    {
+      "latin": "quam vīs īre intrō audācter licet",
+      "english": "you may go in as boldly as you like",
+      "source": "Plaut. Most. 852"
     }
   ],
   "related": [
@@ -99,11 +114,12 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/intro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: intro</a> · <a href=\"https://logeion.uchicago.edu/ingredior\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ingredior</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 101, 310, 333.",
-    "Plaut. Aul. 89."
+    "Plaut. Aul. 89.",
+    "Plautus, <em>Mostellaria</em> 852."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

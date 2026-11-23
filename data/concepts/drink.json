@@ -2,6 +2,11 @@
   "id": "drink",
   "english": "drink",
   "pos": "verb",
+  "also": [
+    "drink plenty of water",
+    "drink lots of water",
+    "drink plenty"
+  ],
   "domain": "culina",
   "terms": [
     {
@@ -26,6 +31,11 @@
       "latin": "Aquam bibe.",
       "english": "Drink the water.",
       "source": "composed"
+    },
+    {
+      "latin": "Bibe aquam quam plūrimam; febrim habēs.",
+      "english": "Drink plenty of water; you have a fever.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -40,7 +50,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

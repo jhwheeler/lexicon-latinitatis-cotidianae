@@ -7,7 +7,11 @@
     "not anything",
     "anything else?",
     "is there anything?",
-    "anything else I can do for you?"
+    "anything else I can do for you?",
+    "can I get you anything?",
+    "can I get you something?",
+    "do you need anything?",
+    "is there anything you need?"
   ],
   "domain": "verba",
   "terms": [
@@ -68,6 +72,16 @@
       "latin": "Vīsne quicquam aliud?",
       "english": "Do you want anything else?",
       "source": "Traupman 113, 114"
+    },
+    {
+      "latin": "Roga numquid opus sit.",
+      "english": "Ask him whether he needs anything.",
+      "source": "Plaut. Poen. 1008"
+    },
+    {
+      "latin": "Numquid tibi opus est? Vīn' aquam?",
+      "english": "Can I get you anything? Would you like some water?",
+      "source": "composed"
     }
   ],
   "related": [
@@ -78,11 +92,12 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/quisquam\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: quisquam</a> · <a href=\"https://logeion.uchicago.edu/ecquis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ecquis</a> · <a href=\"https://logeion.uchicago.edu/numquid\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: numquid</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 93."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 93.",
+    "Plautus, <em>Poenulus</em> 1008."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

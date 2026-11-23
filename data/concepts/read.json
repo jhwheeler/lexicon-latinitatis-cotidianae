@@ -2,10 +2,18 @@
   "id": "read",
   "english": "read",
   "pos": "verb",
+  "also": [
+    "read the next sentence",
+    "classroom commands",
+    "what does this say?",
+    "what does it say?",
+    "what is written here?",
+    "what’s written on it?"
+  ],
+  "domain": "sermo",
   "also_under": [
     "schola"
   ],
-  "domain": "sermo",
   "terms": [
     {
       "latin": "legō, legere, lēgī, lēctum",
@@ -26,6 +34,21 @@
       "latin": "Lege (legite) sententiam proximam.",
       "english": "Read the next sentence.",
       "source": "Traupman 34"
+    },
+    {
+      "latin": "Quid hīc scrīptum est? Lege mihi.",
+      "english": "What does it say here? Read it to me.",
+      "source": "composed"
+    },
+    {
+      "latin": "Quid istīc scrīptum? — Juxtā tēcum, sī tū nescīs, nesciō.",
+      "english": "What does it say in there? — I know as much as you: if you don’t know, I don’t.",
+      "source": "Plaut. Pers. 249"
+    },
+    {
+      "latin": "An, opsecrō hercle, habent quās gallīnae manūs? nam hās quidem gallīna scrīpsit.",
+      "english": "Good heavens, do hens have hands? Because a hen certainly wrote this.",
+      "source": "Plaut. Ps. 29–30"
     }
   ],
   "related": [
@@ -34,15 +57,12 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/lego\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lego</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 31."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 31.",
+    "Plautus, <em>Persa</em> 249; <em>Pseudolus</em> 29–30."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
-  },
-  "also": [
-    "read the next sentence",
-    "classroom commands"
-  ]
+  }
 }

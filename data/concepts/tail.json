@@ -2,6 +2,12 @@
   "id": "tail",
   "english": "tail",
   "pos": "noun",
+  "also": [
+    "don’t pull its tail",
+    "pull its tail",
+    "pull the cat’s tail",
+    "don’t pull the dog’s tail"
+  ],
   "domain": "natura",
   "terms": [
     {
@@ -14,17 +20,30 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "Mitte caudam! Nōlī fēlem caudā trahere.",
+      "english": "Let go of the tail! Don’t pull the cat by its tail.",
+      "source": "composed"
+    },
+    {
+      "latin": "āversōs bovēs eximium quemque pulchritūdine caudīs in spēluncam trāxit",
+      "english": "he dragged the finest-looking of the cattle backwards into his cave by their tails (Cacus stealing Hercules’ herd)",
+      "source": "Liv. 1.7"
+    }
+  ],
   "related": [
     "wag",
     "fan-its-tail"
   ],
   "sources": [
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 280."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 280.",
+    "Livy 1.7."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

@@ -11,7 +11,11 @@
     "take the rubbish out",
     "take out the trash",
     "take out the bins",
-    "put the bins out"
+    "put the bins out",
+    "take the bins out",
+    "take the bin out",
+    "put the bin out",
+    "put the rubbish out"
   ],
   "domain": "domus",
   "terms": [
@@ -50,6 +54,11 @@
       "latin": "Pūrgāmenta forās effer; saccus plēnus est.",
       "english": "Take the rubbish out; the bag is full.",
       "source": "composed"
+    },
+    {
+      "latin": "Crās māne pūrgāmenta colliguntur: excipula forās effer.",
+      "english": "The rubbish is collected tomorrow morning: take the bins out.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -63,7 +72,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

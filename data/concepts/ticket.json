@@ -13,7 +13,11 @@
     "train ticket",
     "buy a ticket",
     "buy tickets",
-    "get a ticket"
+    "get a ticket",
+    "plane ticket",
+    "air ticket",
+    "flight ticket",
+    "airline ticket"
   ],
   "domain": "vectura",
   "terms": [
@@ -76,6 +80,16 @@
       "latin": "Prius tesserae emendae sunt; tum in trāmen ascendēmus.",
       "english": "First we have to buy the tickets; then we’ll get on the train.",
       "source": "composed"
+    },
+    {
+      "latin": "Velim tesseram itinerāriam (ad urbem) Vindobonam in Austriam comparāre.",
+      "english": "I’d like to buy a ticket to Vienna, Austria.",
+      "source": "Traupman 212"
+    },
+    {
+      "latin": "Tesserās jam ēmī: crās Lisbōnam volābimus.",
+      "english": "I’ve already bought the tickets: tomorrow we fly to Lisbon.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -87,11 +101,11 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/tessera\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tessera</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 51, 211–218, 218–219."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 51, 211, 212, 218, 219."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

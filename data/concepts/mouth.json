@@ -2,6 +2,12 @@
   "id": "mouth",
   "english": "mouth",
   "pos": "noun",
+  "also": [
+    "open your mouth",
+    "open wide",
+    "say aah",
+    "open up"
+  ],
   "domain": "corpus",
   "terms": [
     {
@@ -13,18 +19,30 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "Ōs aperī; hiā quam maximē potes. Dīc ‘ā’.",
+      "english": "Open your mouth; open as wide as you can. Say “aah”.",
+      "source": "composed"
+    },
+    {
+      "latin": "trochilos crocodīlum invītat ad hiandum pābulī suī grātiā",
+      "english": "the little wren invites the crocodile to open wide, to get its own food (it picks his teeth)",
+      "source": "Plin. NH 8.90 (Lewis &amp; Short s.v. <span lang=\"la\">hiō</span>)"
+    }
+  ],
   "related": [
     "yawn",
     "pucker",
     "stick-out-ones-tongue"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/os\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: os</a>",
+    "<a href=\"https://logeion.uchicago.edu/os\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: os</a> · <a href=\"https://logeion.uchicago.edu/hio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: hio</a> · <a href=\"https://logeion.uchicago.edu/aperio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aperio</a> · <a href=\"https://logeion.uchicago.edu/trochilus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: trochilus</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 58."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

@@ -3,12 +3,16 @@
   "english": "go to school",
   "pos": "verb",
   "also": [
-    "attend school"
+    "attend school",
+    "first day of school",
+    "first day at school",
+    "start school",
+    "send to school"
   ],
+  "domain": "sermo",
   "also_under": [
     "schola"
   ],
-  "domain": "sermo",
   "terms": [
     {
       "latin": "in lūdum īre",
@@ -40,6 +44,16 @@
       "latin": "Annō proximō in lūdum ībis.",
       "english": "Next year you’ll go to school.",
       "source": "composed"
+    },
+    {
+      "latin": "Hodiē prīmum in lūdum ībis.",
+      "english": "Today you’re going to school for the first time.",
+      "source": "composed"
+    },
+    {
+      "latin": "nōluit in Flāvī lūdum mē mittere, magnī quō puerī magnīs ē centuriōnibus ortī, laevō suspēnsī loculōs tabulamque lacertō, ībant",
+      "english": "(my father) would not send me to Flavius’s school, where the big boys, sons of big centurions, used to go with satchel and writing tablet slung on the left arm",
+      "source": "Hor. S. 1.6.72–75"
     }
   ],
   "related": [
@@ -50,11 +64,12 @@
   "sources": [
     "<a href=\"https://logeion.org/ludus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ludus</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 31.",
-    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. school types: elementary school."
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. school types: elementary school.",
+    "Horace, <em>Satires</em> 1.6.72–75."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

@@ -6,7 +6,12 @@
   "also": [
     "tidy",
     "clean and tidy",
-    "spruce"
+    "spruce",
+    "it’s spotless",
+    "spotless",
+    "spick and span",
+    "sparkling clean",
+    "make the house shine"
   ],
   "domain": "domus",
   "terms": [
@@ -30,6 +35,15 @@
       "evidence": [
         "Plaut. Stich. 1.2.8: <span lang=\"la\">facite, sultis, nitidae ut aedēs meae sint</span> (Lewis &amp; Short)"
       ]
+    },
+    {
+      "latin": "niteō, nitēre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "shine; of a house, be spotless",
+      "evidence": [
+        "Plaut. Ps. 161: <span lang=\"la\">ut niteant aedēs</span>"
+      ]
     }
   ],
   "phrases": [
@@ -37,6 +51,21 @@
       "latin": "Optimē!",
       "english": "Neat! (Great!)",
       "source": "Traupman 350"
+    },
+    {
+      "latin": "Ecce, omnia nitent!",
+      "english": "Look, everything is spotless!",
+      "source": "composed"
+    },
+    {
+      "latin": "tibi hoc praecipiō ut niteant aedēs.",
+      "english": "Your orders are to make the house shine.",
+      "source": "Plaut. Ps. 161"
+    },
+    {
+      "latin": "facite sultis, nitidae ut aedēs meae sint, quom redeam domum.",
+      "english": "Please see to it that my house is spotless when I come home.",
+      "source": "Plaut. Stich. 65"
     }
   ],
   "related": [
@@ -44,12 +73,13 @@
     "clean"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/mundus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mundus</a> · <a href=\"https://logeion.uchicago.edu/nitidus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nitidus</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 350."
+    "<a href=\"https://logeion.uchicago.edu/mundus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mundus</a> · <a href=\"https://logeion.uchicago.edu/nitidus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nitidus</a> · <a href=\"https://logeion.uchicago.edu/niteo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: niteo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 350.",
+    "Plautus, <em>Pseudolus</em> 161; <em>Stichus</em> 65."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

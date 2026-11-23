@@ -4,7 +4,11 @@
   "sense": "bed linen",
   "pos": "noun",
   "also": [
-    "bedsheet"
+    "bedsheet",
+    "change the sheets",
+    "change the bed",
+    "put clean sheets on",
+    "clean sheets"
   ],
   "domain": "domus",
   "terms": [
@@ -25,18 +29,30 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "Lintea mūtēmus: haec jam sordida sunt.",
+      "english": "Let’s change the sheets: these are dirty now.",
+      "source": "composed"
+    },
+    {
+      "latin": "Lintea munda in lectō strāvī.",
+      "english": "I’ve put clean sheets on the bed.",
+      "source": "composed"
+    }
+  ],
   "related": [
     "bed",
     "bath-towel",
     "hand-towel"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/linteum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: linteum</a>",
+    "<a href=\"https://logeion.uchicago.edu/linteum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: linteum</a> · <a href=\"https://logeion.uchicago.edu/muto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: muto</a> · <a href=\"https://logeion.uchicago.edu/sterno\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sterno</a>",
     "<a href=\"https://logeion.uchicago.edu/stragulum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: stragulum</a>"
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

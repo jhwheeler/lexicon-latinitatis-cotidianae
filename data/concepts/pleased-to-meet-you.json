@@ -2,6 +2,13 @@
   "id": "pleased-to-meet-you",
   "english": "pleased to meet you",
   "pos": "phrase",
+  "also": [
+    "nice to meet you",
+    "good to meet you",
+    "nice to meet you too",
+    "glad to meet you",
+    "it’s a pleasure to meet you"
+  ],
   "domain": "sermo",
   "terms": [
     {
@@ -22,16 +29,29 @@
       "comment": "<span lang=\"la\">volup</span> is ante-classical (Plaut.)."
     }
   ],
+  "phrases": [
+    {
+      "latin": "Quid agis, Sceledre? — Tē, Palaestriō, volup est convēnisse.",
+      "english": "How are you, Sceledrus? — Palaestrio, I’m glad I’ve run into you.",
+      "source": "Plaut. Mil. 276–277"
+    },
+    {
+      "latin": "Tē convēnisse volup est. — Mihi quoque, mī Mārce.",
+      "english": "Nice to meet you. — Nice to meet you too, Marcus.",
+      "source": "composed"
+    }
+  ],
   "related": [
     "how-are-you"
   ],
   "sources": [
     "<a href=\"https://logeion.org/volup\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: volup</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 16, 18."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 16, 18.",
+    "Plautus, <em>Miles gloriosus</em> 276–277."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

@@ -8,7 +8,10 @@
     "you are pale",
     "go pale",
     "turn pale",
-    "pallid"
+    "pallid",
+    "you’re pale",
+    "you look a bit pale",
+    "he’s gone pale"
   ],
   "domain": "corpus",
   "terms": [
@@ -33,17 +36,35 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "Pallidus es, mī fīlī; quid tibi est?",
+      "english": "You’re pale, my boy; what’s the matter?",
+      "source": "composed"
+    },
+    {
+      "latin": "Ergō edepol pallēs.",
+      "english": "That’s why you’re so pale.",
+      "source": "Plaut. Merc. 373"
+    },
+    {
+      "latin": "Vidēn' ut expalluit? Datin' istī sellam, ubi assīdat, cito, et aquālem cum aquā?",
+      "english": "Do you see how pale he’s gone? Give him a chair to sit on, quick, and a jug of water!",
+      "source": "Plaut. Curc. 311–312"
+    }
+  ],
   "related": [
     "ill",
     "light-colour"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/pallidus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pallidus</a> · <a href=\"https://logeion.uchicago.edu/palleo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: palleo</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 55."
+    "<a href=\"https://logeion.uchicago.edu/pallidus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pallidus</a> · <a href=\"https://logeion.uchicago.edu/palleo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: palleo</a> · <a href=\"https://logeion.uchicago.edu/expallesco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: expallesco</a> · <a href=\"https://logeion.uchicago.edu/aqualis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: aqualis</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 55.",
+    "Plautus, <em>Mercator</em> 373; <em>Curculio</em> 311–312."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

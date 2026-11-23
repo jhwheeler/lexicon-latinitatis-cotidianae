@@ -6,7 +6,12 @@
     "traffic lights",
     "at the traffic lights",
     "at the lights",
-    "wait at the lights"
+    "wait at the lights",
+    "green light",
+    "the light is green",
+    "it’s green",
+    "the lights have turned green",
+    "red light"
   ],
   "domain": "vectura",
   "terms": [
@@ -35,6 +40,11 @@
       "latin": "Ad sēmaphorum cōnsistimus, dum viride fīat.",
       "english": "We stop at the lights until they turn green.",
       "source": "composed"
+    },
+    {
+      "latin": "Ecce, viride est; jam pergere licet.",
+      "english": "Look, it’s green; now we can go.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -47,7 +57,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

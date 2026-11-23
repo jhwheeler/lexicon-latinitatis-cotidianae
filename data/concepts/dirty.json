@@ -2,6 +2,13 @@
   "id": "dirty",
   "english": "dirty",
   "pos": "adjective",
+  "also": [
+    "shabby",
+    "it’s dirty",
+    "it’s filthy",
+    "that’s dirty",
+    "don’t touch, it’s dirty"
+  ],
   "domain": "domus",
   "terms": [
     {
@@ -23,20 +30,30 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "Nōlī tangere: sordidum est.",
+      "english": "Don’t touch it: it’s dirty.",
+      "source": "composed"
+    },
+    {
+      "latin": "ergō miser trepidās, nē stercore foeda canīnō ātria displiceant oculīs venientis amīcī",
+      "english": "so you fret, poor man, in case the hall, fouled with dog’s mess, offends the eyes of a friend who is coming",
+      "source": "Juv. 14.64–65"
+    }
+  ],
   "related": [
     "clean",
     "laundry"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/sordidus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sordidus</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 304."
+    "<a href=\"https://logeion.uchicago.edu/sordidus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sordidus</a> · <a href=\"https://logeion.uchicago.edu/foedus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: foedus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 304.",
+    "Juvenal 14.64–65."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
-  },
-  "also": [
-    "shabby"
-  ]
+  }
 }

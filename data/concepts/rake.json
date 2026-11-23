@@ -2,6 +2,12 @@
   "id": "rake",
   "english": "rake",
   "pos": "noun",
+  "also": [
+    "rake (verb)",
+    "rake the leaves",
+    "rake up the leaves",
+    "rake together"
+  ],
   "domain": "ludi",
   "terms": [
     {
@@ -15,6 +21,33 @@
       "notes": [
         "rastellus"
       ]
+    },
+    {
+      "latin": "corrādō, corrādere, corrāsī, corrāsum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "rake together, scrape together",
+      "evidence": [
+        "Varr. LL 5.136: <span lang=\"la\">homō in prātīs per fēnisecia eō festūcās corrādit</span>"
+      ],
+      "comment": "Varro’s verb for raking up the stalks after haymaking, and his account of the name of the rake: <span lang=\"la\">ab rāsū rāstellī dictī</span> (rightly, from <span lang=\"la\">rādō</span>). Rare, and mostly ante- and post-classical (Lewis &amp; Short)."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "rāstellō ērādere",
+      "english": "to rake",
+      "source": "Traupman 368"
+    },
+    {
+      "latin": "Folia rāstellō corrādāmus, deinde in acervum congerēmus.",
+      "english": "Let’s rake up the leaves, then we’ll pile them in a heap.",
+      "source": "composed"
+    },
+    {
+      "latin": "itaque homō in prātīs per fēnisecia eō festūcās corrādit, quō ab rāsū rāstellī dictī",
+      "english": "so in the meadows at haymaking a man rakes up the stalks with it, and from this scraping rakes are called rāstellī",
+      "source": "Varr. LL 5.136"
     }
   ],
   "notes": {
@@ -30,22 +63,14 @@
     "sandpit"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/corrado\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: corrado</a> · <a href=\"https://logeion.uchicago.edu/festuca\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: festuca</a>",
     "<a href=\"https://neolatinlexicon.org/latin/rake/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens: rake</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 368."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 368.",
+    "Varro, <em>De lingua Latina</em> 5.136."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
-  },
-  "phrases": [
-    {
-      "latin": "rāstellō ērādere",
-      "english": "to rake",
-      "source": "Traupman 368"
-    }
-  ],
-  "also": [
-    "rake (verb)"
-  ]
+  }
 }

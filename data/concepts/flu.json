@@ -1,0 +1,76 @@
+{
+  "id": "flu",
+  "english": "flu",
+  "pos": "noun",
+  "also": [
+    "influenza",
+    "the flu",
+    "have the flu",
+    "I’ve got flu",
+    "catch the flu",
+    "there’s a bug going around"
+  ],
+  "domain": "corpus",
+  "terms": [
+    {
+      "latin": "febris catarrhālis",
+      "status": "recommended",
+      "period": "modern",
+      "gloss": "influenza (literally “catarrhal fever”)",
+      "evidence": [
+        "M-O s.v. fever: flu, influenza, from eighteenth- and nineteenth-century medical treatises"
+      ],
+      "comment": "The name the medical Latin of the eighteenth and nineteenth centuries gave to influenza, <span lang=\"la\">febris</span> with <span lang=\"la\">catarrhālis</span> from <span lang=\"la\">catarrhus</span>, the late medical word for a running cold (Marcellus Empiricus, Caelius Aurelianus). There is no ancient name for the disease. In the house and to a child, plain <span lang=\"la\">febris</span> says it, as Morgan–Owens notes."
+    },
+    {
+      "latin": "febris, febris f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a fever; less precisely, the flu",
+      "evidence": [
+        "M-O s.v. fever: flu, influenza (“less precisely”)"
+      ],
+      "comment": "See “fever”."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Febrim catarrhālem contrāxī; domī manēbō.",
+      "english": "I’ve caught the flu; I’ll stay at home.",
+      "source": "composed"
+    },
+    {
+      "latin": "Febre catarrhālī labōrat; caput et membra dolent.",
+      "english": "He has the flu; his head and his limbs ache.",
+      "source": "composed"
+    },
+    {
+      "latin": "Vīrus percrēbrēscit.",
+      "english": "There’s a virus going around.",
+      "source": "Traupman 66"
+    },
+    {
+      "latin": "morbum contrahere",
+      "english": "to catch an illness",
+      "source": "Traupman 63"
+    }
+  ],
+  "related": [
+    "fever",
+    "cold-illness",
+    "cough",
+    "ill",
+    "disease"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/febris\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: febris</a> · <a href=\"https://logeion.uchicago.edu/catarrhus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: catarrhus</a> · <a href=\"https://logeion.uchicago.edu/contraho\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: contraho</a> · <a href=\"https://logeion.uchicago.edu/virus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: virus</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. fever: flu, influenza.",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 63, 66.",
+    "Enrico Levi and Arturo Bini, <em>Il latino come lingua viva</em> (1937), p. 35, s.v. influenza."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-23",
+    "by": "Claude"
+  }
+}

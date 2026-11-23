@@ -7,13 +7,31 @@
     "as you like",
     "as you please",
     "whatever you like",
-    "have it your own way"
+    "have it your own way",
+    "as you wish",
+    "just as you wish",
+    "very well",
+    "so be it",
+    "I’ll do as you say"
   ],
   "domain": "sermo",
   "terms": [
     {
-      "latin": "Estō, ut lubet!",
+      "latin": "Ut libet.",
       "status": "recommended",
+      "period": "classical",
+      "gloss": "as you like, as you please",
+      "grammar": "lubet, the older spelling of libet: “as it pleases (you)”",
+      "register": "vōx sermōnis cotīdiānī: Plaut., Ter.",
+      "evidence": [
+        "Ter. And. 310: <span lang=\"la\">Age age, ut libet.</span>",
+        "Ter. Haut. 738: <span lang=\"la\">ut libet. num ego īnstō?</span>"
+      ],
+      "comment": "What Terence’s people say when they give in to another’s wish; Traupman’s <span lang=\"la\">Estō, ut libet!</span> adds <span lang=\"la\">estō</span> to it."
+    },
+    {
+      "latin": "Estō, ut lubet!",
+      "status": "alternative",
       "period": "modern",
       "gloss": "so be it, as you please",
       "grammar": "estō, future imperative of sum, “let it be”; ut lubet (libet), “as it pleases”",
@@ -23,6 +41,48 @@
         "Traupman 404"
       ],
       "comment": "Traupman’s phrase, made of two classical pieces: <span lang=\"la\">estō</span>, granting a point (Plaut., Cic.; see agree), and <span lang=\"la\">ut lubet</span>, “as one pleases” (Plaut. Mil. 3.1.111: <span lang=\"la\">animō ut lubet</span>, Lewis &amp; Short s.v. <span lang=\"la\">bene</span>). Every word is classical; we have found no classical instance of the phrase."
+    },
+    {
+      "latin": "Faciam ita ut vīs.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "I’ll do as you wish",
+      "evidence": [
+        "Plaut. Trin. 883: <span lang=\"la\">Faciam ita ut vīs.</span>"
+      ]
+    },
+    {
+      "latin": "Fīat.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "very well, so be it (agreeing)",
+      "evidence": [
+        "Ter. Haut. 948: <span lang=\"la\">Itane vīs? — Ita. — Fīat.</span>",
+        "Ter. Eun. 100: <span lang=\"la\">auscultā. — Fīat.</span>",
+        "Traupman 110: very well (in agreement), <span lang=\"la\">fīat</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Vīsne hodiē forīs cēnāre? — Ut libet.",
+      "english": "Do you want to eat outside today? — As you wish.",
+      "source": "composed"
+    },
+    {
+      "latin": "Tū sī hīc sīs, aliter sentiās. — Age age, ut libet.",
+      "english": "If you were in my place, you’d feel differently. — All right, all right, as you wish.",
+      "source": "Ter. And. 310"
+    },
+    {
+      "latin": "Sine mē in hāc rē gerere mihi mōrem. — Sinō. Itane vīs? — Ita. — Fīat.",
+      "english": "Let me have my way in this. — I’ll let you. Is that what you want? — It is. — So be it.",
+      "source": "Ter. Haut. 947–948"
+    },
+    {
+      "latin": "Faciam ita ut vīs. Agedum, nōmen tuom prīmum memorā mihi.",
+      "english": "I’ll do as you wish. Come on, tell me your name first.",
+      "source": "Plaut. Trin. 883"
     }
   ],
   "related": [
@@ -30,12 +90,14 @@
     "want"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/sum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sum</a> · <a href=\"https://logeion.uchicago.edu/libet\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: libet</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 100, 326."
+    "<a href=\"https://logeion.uchicago.edu/sum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sum</a> · <a href=\"https://logeion.uchicago.edu/libet\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: libet</a> · <a href=\"https://logeion.uchicago.edu/fio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fio</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 100, 110, 326.",
+    "Terence, <em>Andria</em> 310; <em>Eunuchus</em> 100; <em>Heautontimorumenos</em> 738, 947–948.",
+    "Plautus, <em>Trinummus</em> 883."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

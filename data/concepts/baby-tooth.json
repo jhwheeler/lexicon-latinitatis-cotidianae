@@ -3,7 +3,12 @@
   "english": "baby tooth",
   "pos": "noun",
   "also": [
-    "milk tooth"
+    "milk tooth",
+    "my tooth fell out",
+    "my tooth came out",
+    "lose a tooth",
+    "losing teeth",
+    "his tooth fell out"
   ],
   "domain": "sermo",
   "terms": [
@@ -16,16 +21,30 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "Ecce, dēns mihi excidit!",
+      "english": "Look, my tooth fell out!",
+      "source": "composed"
+    },
+    {
+      "latin": "Hic quidem ait nōs eandem crisin habēre, quia utrīque dentēs cadunt.",
+      "english": "He says we are at the same stage of life, since both of us are losing our teeth (the old Seneca of his young slave).",
+      "source": "Sen. Ep. 83.4"
+    }
+  ],
   "related": [
     "teething",
     "loose-tooth"
   ],
   "sources": [
-    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. types: baby tooth."
+    "<a href=\"https://logeion.uchicago.edu/excido\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: excido</a> · <a href=\"https://logeion.uchicago.edu/cado\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cado</a>",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. types: baby tooth.",
+    "Seneca, <em>Letters</em> 83.4."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

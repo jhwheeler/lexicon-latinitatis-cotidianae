@@ -7,7 +7,12 @@
     "the Latin language",
     "in Latin",
     "Latin lessons",
-    "Latinity"
+    "Latinity",
+    "is that good Latin?",
+    "good Latin",
+    "bad Latin",
+    "is that Latin?",
+    "is this word Latin?"
   ],
   "domain": "schola",
   "also_under": [
@@ -60,6 +65,19 @@
         "Traupman 30"
       ],
       "comment": "Classically pure, idiomatic Latin: Cicero follows Terence rather than Caecilius, ‘a bad authority for Latinity’ (Att. 7.3.10). Traupman’s Latin teacher is a <span lang=\"la\">Latīnitātis magister</span> (p. 30)."
+    },
+    {
+      "latin": "bene Latīnē",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "in good Latin (male Latīnē, in bad Latin)",
+      "grammar": "adverbs, with dīcere or loquī",
+      "evidence": [
+        "Cic. Fin. 2.10: <span lang=\"la\">sed tū istuc dīxtī bene Latīnē, parum plānē</span>",
+        "Cic. Tusc. 3.20: <span lang=\"la\">Male Latīnē vidētur, sed praeclārē Accius</span>",
+        "Traupman 248: <span lang=\"la\">Latīnē loquī</span>, to speak correct Latin"
+      ],
+      "comment": "Bare <span lang=\"la\">Latīnē</span> can itself mean “in correct Latin”, as <span lang=\"la\">Latīnum</span> means “good Latin” of a word (Gell. 5.21.11: <span lang=\"la\">«plūria» Latīnum esse, «plūra» barbarum</span>; Gellius heads 12.10 <span lang=\"la\">Quod «aeditumus» verbum Latīnum sit</span>). Its opposite is <span lang=\"la\">barbarē</span> (see “wrong”)."
     }
   ],
   "phrases": [
@@ -72,6 +90,26 @@
       "latin": "nōn longē itaque Latīna subsequī dēbent et cito pariter īre",
       "english": "so Latin should follow not far behind, and soon the two should go side by side",
       "source": "Quint. 1.1.14"
+    },
+    {
+      "latin": "Latīnumne est hoc verbum?",
+      "english": "Is this word good Latin?",
+      "source": "composed"
+    },
+    {
+      "latin": "sed tū istuc dīxtī bene Latīnē, parum plānē",
+      "english": "but what you said was good Latin, not clear enough",
+      "source": "Cic. Fin. 2.10"
+    },
+    {
+      "latin": "Male Latīnē vidētur, sed praeclārē Accius",
+      "english": "It looks like bad Latin, but Accius wrote it splendidly",
+      "source": "Cic. Tusc. 3.20"
+    },
+    {
+      "latin": "per quās docet «plūria» Latīnum esse, «plūra» barbarum",
+      "english": "by which he shows that pluria is Latin and plura a barbarism",
+      "source": "Gell. 5.21.11"
     }
   ],
   "related": [
@@ -84,11 +122,13 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/Latinus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: Latinus</a> · <a href=\"https://logeion.uchicago.edu/lingua\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: lingua</a> · <a href=\"https://logeion.uchicago.edu/sermo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sermo</a> · <a href=\"https://logeion.uchicago.edu/latinitas\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: latinitas</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 30, 337."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 30, 248, 337.",
+    "Cicero, <em>De finibus</em> 2.10; <em>Tusculan Disputations</em> 3.20.",
+    "Aulus Gellius, <em>Noctes Atticae</em> 5.21.11; 12.10."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

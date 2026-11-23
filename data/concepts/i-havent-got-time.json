@@ -4,13 +4,29 @@
   "pos": "phrase",
   "also": [
     "no time",
-    "I haven’t the time"
+    "I haven’t the time",
+    "there’s no time",
+    "we’ve run out of time",
+    "time’s up",
+    "we haven’t time",
+    "the day isn’t long enough"
   ],
   "domain": "sermo",
   "terms": [
     {
-      "latin": "Tempus nōn est mihi.",
+      "latin": "Ōtium nōn est.",
       "status": "recommended",
+      "period": "classical",
+      "gloss": "I haven’t time",
+      "evidence": [
+        "Plaut. Merc. 374: <span lang=\"la\">Ōtium nōn est: mandātīs rēbus praevortī volō.</span>",
+        "Plaut. Mil. 252: <span lang=\"la\">occupātast, operae nōn est, nōn potest</span>"
+      ],
+      "comment": "What Plautus’s people say when they have no time; <span lang=\"la\">operae nōn est</span> says the same."
+    },
+    {
+      "latin": "Tempus nōn est mihi.",
+      "status": "alternative",
       "period": "classical",
       "evidence": [
         "Traupman 89, 394"
@@ -25,6 +41,39 @@
         "Traupman 109, 394"
       ],
       "comment": "Literally “I have no leisure”. Not found in Lewis &amp; Short or the loci collections in this form; Traupman is the only evidence."
+    },
+    {
+      "latin": "Diēs mē dēficit.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the day runs out on me: I’ve run out of time",
+      "evidence": [
+        "Cic. Fin. 2.62: <span lang=\"la\">sed diēs mē dēficiet</span>",
+        "Cic. ND 3.81: <span lang=\"la\">Diēs dēficiat, sī velim ēnumerāre …</span>"
+      ],
+      "comment": "Cicero’s and Livy’s way of saying that the day would not be long enough for something; in the perfect, <span lang=\"la\">diēs nōs dēfēcit</span>, we have run out of time."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Ōtium nōn est: mandātīs rēbus praevortī volō.",
+      "english": "I haven’t time: I want to see to my errands first.",
+      "source": "Plaut. Merc. 374"
+    },
+    {
+      "latin": "sed diēs mē dēficiet",
+      "english": "but the day would run out on me",
+      "source": "Cic. Fin. 2.62"
+    },
+    {
+      "latin": "nec satis temporis ad dēmōnstrandum habēret",
+      "english": "and he did not have time enough to show",
+      "source": "Liv. 45.36"
+    },
+    {
+      "latin": "Diēs nōs dēfēcit; reliqua crās faciēmus.",
+      "english": "We’ve run out of time; we’ll do the rest tomorrow.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -32,11 +81,15 @@
     "waste-time"
   ],
   "sources": [
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 89, 109."
+    "<a href=\"https://logeion.uchicago.edu/otium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: otium</a> · <a href=\"https://logeion.uchicago.edu/deficio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: deficio</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 89, 109.",
+    "Plautus, <em>Mercator</em> 374.",
+    "Cicero, <em>De finibus</em> 2.62; <em>De natura deorum</em> 3.81.",
+    "Livy 45.36."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

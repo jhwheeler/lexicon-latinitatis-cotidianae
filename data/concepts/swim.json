@@ -4,7 +4,14 @@
   "pos": "verb",
   "also": [
     "swimming",
-    "swim across"
+    "swim across",
+    "go for a swim",
+    "go swimming",
+    "have a swim",
+    "go in the water",
+    "get in the water",
+    "go into the sea",
+    "let’s go swimming"
   ],
   "domain": "natura",
   "also_under": [
@@ -43,6 +50,28 @@
         "Ov. Met. 1.304: <span lang=\"la\">nat lupus</span> (Lewis &amp; Short)"
       ],
       "comment": "The simple verb, of which <span lang=\"la\">natō</span> is the frequentative."
+    },
+    {
+      "latin": "natātum īre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "go for a swim",
+      "grammar": "the supine of natō after a verb of going",
+      "evidence": [
+        "Cic. Fam. 9.2: <span lang=\"la\">vidērī vēnisse in illa loca plōrātum potius quam natātum</span>",
+        "Hor. S. 1.5.48: <span lang=\"la\">lūsum it Maecēnās, dormītum ego Vergiliusque</span>"
+      ],
+      "comment": "Cicero’s supine of purpose: going to the bay of Naples “to swim”. Horace’s line shows the same turn with other verbs."
+    },
+    {
+      "latin": "in aquam dēscendere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "go into the water, get in",
+      "evidence": [
+        "Sen. Ep. 83.5: <span lang=\"la\">in frīgidam dēscendī</span>"
+      ],
+      "comment": "Seneca’s word for getting into cold water; the lexicon says <span lang=\"la\">in solium dēscendere</span> of the bath in the same way."
     }
   ],
   "phrases": [
@@ -60,6 +89,26 @@
       "latin": "nat lupus inter ovēs, fulvōs vehit unda leōnēs",
       "english": "the wolf swims among the sheep, the water carries tawny lions along",
       "source": "Ov. Met. 1.304"
+    },
+    {
+      "latin": "Eāmus natātum!",
+      "english": "Let’s go for a swim!",
+      "source": "composed"
+    },
+    {
+      "latin": "Paulātim in aquam dēscende; ego tē teneō.",
+      "english": "Get into the water slowly; I’ve got you.",
+      "source": "composed"
+    },
+    {
+      "latin": "memor artificiī meī vetus frīgidae cultor mittō mē in mare",
+      "english": "remembering my skill, an old devotee of cold water, I throw myself into the sea",
+      "source": "Sen. Ep. 53.3"
+    },
+    {
+      "latin": "Nepōtēs et litterās et natāre aliaque rudīmenta per sē plērumque docuit",
+      "english": "He taught his grandsons reading and swimming and the other first lessons himself, for the most part",
+      "source": "Suet. Aug. 64"
     }
   ],
   "related": [
@@ -77,11 +126,15 @@
     "<a href=\"https://logeion.uchicago.edu/no\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: no</a>",
     "Pliny checked against the <a href=\"https://github.com/PerseusDL/canonical-latinLit\" rel=\"noopener noreferrer\" target=\"_blank\">Perseus Latin texts</a> and the Latinitas loci collections.",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 60.",
-    "Ovid, <em>Metamorphoses</em> 1.304."
+    "Ovid, <em>Metamorphoses</em> 1.304.",
+    "Cicero, <em>Letters to Friends</em> 9.2.",
+    "Horace, <em>Satires</em> 1.5.48.",
+    "Seneca, <em>Letters</em> 53.3; 83.5.",
+    "Suetonius, <em>Augustus</em> 64."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-15",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

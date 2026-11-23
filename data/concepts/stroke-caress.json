@@ -5,7 +5,12 @@
   "also": [
     "pet (an animal)",
     "stroke the cat",
-    "caress"
+    "caress",
+    "pat the dog",
+    "pat",
+    "give the dog a pat",
+    "stroke the dog",
+    "pat on the head"
   ],
   "domain": "natura",
   "terms": [
@@ -30,6 +35,29 @@
         "Traupman 359"
       ],
       "comment": "In Plautus and Terence a sexual word, “to lie with” (Lewis &amp; Short); not for petting an animal."
+    },
+    {
+      "latin": "dēmulceō, dēmulcēre, dēmulsī, dēmulctum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "stroke down, pat (a head, a back)",
+      "evidence": [
+        "Ter. Haut. 762: <span lang=\"la\">quīn tibi caput dēmulceam</span>",
+        "Gell. 5.14.12: <span lang=\"la\">cruraque ejus et manūs … linguā lēniter dēmulcet</span>"
+      ],
+      "comment": "Chremes pats his slave’s head when he is pleased with him; Androclus’s lion licks the hands of the man it knows. Rare (Lewis &amp; Short), but plain and affectionate."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Canem lēniter dēmulcē; ecce, caudam movet.",
+      "english": "Pat the dog gently; look, he’s wagging his tail.",
+      "source": "composed"
+    },
+    {
+      "latin": "nōn possum patī quīn tibi caput dēmulceam; accēde hūc, Syre",
+      "english": "I can’t help patting your head; come here, Syrus",
+      "source": "Ter. Haut. 761–762"
     }
   ],
   "related": [
@@ -37,12 +65,14 @@
     "pet"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/permulceo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: permulceo</a> · <a href=\"https://logeion.uchicago.edu/subigito\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: subigito</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 359."
+    "<a href=\"https://logeion.uchicago.edu/permulceo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: permulceo</a> · <a href=\"https://logeion.uchicago.edu/subigito\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: subigito</a> · <a href=\"https://logeion.uchicago.edu/demulceo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: demulceo</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 359.",
+    "Terence, <em>Heauton timorumenos</em> 761–762.",
+    "Aulus Gellius, <em>Noctes Atticae</em> 5.14.12."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

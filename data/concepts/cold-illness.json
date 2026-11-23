@@ -9,7 +9,10 @@
     "runny nose",
     "blocked nose",
     "catch a cold",
-    "have a cold"
+    "have a cold",
+    "I’ve caught a cold",
+    "I’ve got a cold",
+    "he’s caught a cold"
   ],
   "domain": "corpus",
   "terms": [
@@ -84,6 +87,16 @@
       "latin": "gravēdine afflīgī",
       "english": "to catch a cold",
       "source": "Traupman 287"
+    },
+    {
+      "latin": "Gravēdinem contrāxī; nāsus fluit.",
+      "english": "I’ve caught a cold; my nose is running.",
+      "source": "composed"
+    },
+    {
+      "latin": "Fortasse tū hanc gravēdinem contrāxistī apud scholam.",
+      "english": "Maybe you caught this cold at school.",
+      "source": "Traupman 62"
     }
   ],
   "related": [
@@ -94,15 +107,15 @@
     "honey"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/gravedo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gravedo</a> · <a href=\"https://logeion.uchicago.edu/coryza\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: coryza</a> · <a href=\"https://logeion.uchicago.edu/destillatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: destillatio</a> · <a href=\"https://www.alatius.com/latin/bennetthidden.html\" rel=\"noopener noreferrer\" target=\"_blank\">Bennett: hidden quantities, with later corrections</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 56, 61, 63, 65, 287, 293."
-  ],
-  "replaces": [
-    "entry-4"
+    "<a href=\"https://logeion.uchicago.edu/gravedo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: gravedo</a> · <a href=\"https://logeion.uchicago.edu/coryza\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: coryza</a> · <a href=\"https://logeion.uchicago.edu/destillatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: destillatio</a> · <a href=\"https://www.alatius.com/latin/bennetthidden.html\" rel=\"noopener noreferrer\" target=\"_blank\">Bennett: hidden quantities, with later corrections</a> · <a href=\"https://logeion.uchicago.edu/contraho\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: contraho</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 56, 61, 62, 63, 65, 287, 293."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
-  }
+  },
+  "replaces": [
+    "entry-4"
+  ]
 }

@@ -8,12 +8,16 @@
     "paediatrician",
     "visit the doctor",
     "send for the doctor",
-    "doc"
+    "doc",
+    "go to the doctor",
+    "go to the doctor’s",
+    "the doctor will see you now",
+    "waiting for the doctor"
   ],
+  "domain": "urbs",
   "also_under": [
     "corpus"
   ],
-  "domain": "urbs",
   "terms": [
     {
       "latin": "medicus, medicī m.",
@@ -64,6 +68,16 @@
       "latin": "Medicus tē īnspiciet: ōs aperī, linguam exsere.",
       "english": "The doctor will look at you: open your mouth, stick out your tongue.",
       "source": "composed"
+    },
+    {
+      "latin": "Ingredere; jam tē medicus admittit.",
+      "english": "Go in; the doctor will see you now.",
+      "source": "composed"
+    },
+    {
+      "latin": "Lumbī sedendō, oculī spectandō dolent, manendō medicum, dum sē ex opere recipiat.",
+      "english": "My back aches from sitting and my eyes from watching, waiting for the doctor to get back from his rounds.",
+      "source": "Plaut. Men. 882–883"
     }
   ],
   "related": [
@@ -76,17 +90,18 @@
     "medicine-drug"
   ],
   "sources": [
-    "<a href=\"https://logeion.org/medicus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: medicus</a>",
+    "<a href=\"https://logeion.org/medicus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: medicus</a> · <a href=\"https://logeion.uchicago.edu/admitto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: admitto</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 55, 63, 166, 305.",
-    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. doctor."
-  ],
-  "replaces": [
-    "entry-542",
-    "entry-301"
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. doctor.",
+    "Plautus, <em>Menaechmi</em> 882–883."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
-  }
+  },
+  "replaces": [
+    "entry-542",
+    "entry-301"
+  ]
 }

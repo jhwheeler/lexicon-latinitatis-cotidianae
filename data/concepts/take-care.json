@@ -5,7 +5,11 @@
   "also": [
     "look after yourself",
     "take care of yourself",
-    "take good care of your health"
+    "take good care of your health",
+    "get well soon",
+    "get better soon",
+    "I hope you feel better soon",
+    "get well"
   ],
   "domain": "sermo",
   "terms": [
@@ -31,6 +35,16 @@
         "Traupman 19: take care (of yourself), <span lang=\"la\">tē cūrā</span>"
       ],
       "comment": "Lewis &amp; Short gives <span lang=\"la\">sē cūrāre</span>, to look after oneself, refresh oneself (Ter. Ad. 5.1.1; Cic. Phil. 9.3.6), but not as a leave-taking, which is <span lang=\"la\">Cūrā ut valeās</span>."
+    },
+    {
+      "latin": "Fac ut valeās.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "get well (said to someone who is ill)",
+      "evidence": [
+        "Cic. Fam. 16.10: <span lang=\"la\">Fac, plānē ut valeās.</span>"
+      ],
+      "comment": "Cicero’s letters to his sick secretary Tiro end again and again with <span lang=\"la\">Cūrā ut valeās</span> or <span lang=\"la\">Fac ut valeās</span>: to someone who is ill the farewell means “get well”."
     }
   ],
   "phrases": [
@@ -43,17 +57,33 @@
       "latin": "Cūrā dīligenter valētūdinem tuam!",
       "english": "Take good care of your health!",
       "source": "Traupman 287"
+    },
+    {
+      "latin": "Cūrā igitur nihil aliud nisi ut valeās; cētera ego cūrābō.",
+      "english": "So think of nothing but getting well; I’ll see to everything else.",
+      "source": "Cic. Fam. 16.5"
+    },
+    {
+      "latin": "Sed cōnfīdō, sī dīligentiam, quam īnstituistī, adhibueris, cito tē firmum fore.",
+      "english": "But I’m sure that if you keep up the care you have begun, you’ll soon be strong again.",
+      "source": "Cic. Fam. 16.20"
+    },
+    {
+      "latin": "Cūrā ut valeās, mī fīlī; crās lūdēmus.",
+      "english": "Get well soon, my boy; we’ll play tomorrow.",
+      "source": "composed"
     }
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/valeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: valeo</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 16–17, 19, 94, 287.",
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
-    "<a href=\"https://logeion.uchicago.edu/curo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: curo</a>"
+    "<a href=\"https://logeion.uchicago.edu/curo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: curo</a>",
+    "Cicero, <em>Letters to Friends</em> 16.5, 16.10, 16.20."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

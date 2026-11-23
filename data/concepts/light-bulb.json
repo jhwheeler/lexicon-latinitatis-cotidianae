@@ -2,6 +2,15 @@
   "id": "light-bulb",
   "english": "light bulb",
   "pos": "noun",
+  "also": [
+    "change the lightbulb",
+    "change the bulb",
+    "the bulb has gone",
+    "the bulb has blown",
+    "the bulb’s gone",
+    "a new bulb",
+    "replace the bulb"
+  ],
   "domain": "domus",
   "terms": [
     {
@@ -14,15 +23,28 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "Globulus ēlectricus nōn jam lūcet; novum īnseram.",
+      "english": "The bulb has gone; I’ll put in a new one.",
+      "source": "composed"
+    },
+    {
+      "latin": "Cedo scālās: globulum mūtābō.",
+      "english": "Pass me the ladder: I’ll change the bulb.",
+      "source": "composed"
+    }
+  ],
   "related": [
     "electric-light"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/insero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: insero</a> · <a href=\"https://logeion.uchicago.edu/muto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: muto</a> · <a href=\"https://logeion.uchicago.edu/scalae\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: scalae</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 124, 309, 340."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

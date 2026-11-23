@@ -3,7 +3,10 @@
   "english": "it’s getting dark",
   "pos": "phrase",
   "also": [
-    "evening is coming"
+    "evening is coming",
+    "it’s getting late",
+    "it’s late",
+    "it’s getting on"
   ],
   "domain": "sermo",
   "terms": [
@@ -23,16 +26,40 @@
       "gloss": "evening is coming"
     }
   ],
+  "phrases": [
+    {
+      "latin": "Jam advesperāscit; domum redeāmus.",
+      "english": "It’s getting late; let’s go home.",
+      "source": "composed"
+    },
+    {
+      "latin": "Sed quoniam advesperāscit, dabis nōbīs diem aliquem, ut contrā ista dīcāmus.",
+      "english": "But since it’s getting late, you’ll give us some day to reply to all this.",
+      "source": "Cic. ND 3.94"
+    },
+    {
+      "latin": "Sed quoniam et advesperāscit et mihi ad vīllam revertendum est, nunc quidem hāctenus",
+      "english": "But since it’s getting late and I must go back to the villa, that’s enough for now",
+      "source": "Cic. Fin. 4.79"
+    },
+    {
+      "latin": "tū, ut tempus est diēī, vidē sīs nē quō hinc abeās longius.",
+      "english": "and you, seeing what time of day it is, mind you don’t go off too far.",
+      "source": "Ter. Haut. 212"
+    }
+  ],
   "related": [
     "its-too-early"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/advesperasco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: advesperasco</a> · <a href=\"https://logeion.uchicago.edu/vesperasco\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vesperasco</a>",
-    "Passages as cited on the grouped card."
+    "Passages as cited on the grouped card.",
+    "Cicero, <em>De natura deorum</em> 3.94; <em>De finibus</em> 4.79.",
+    "Terence, <em>Heauton timorumenos</em> 212."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

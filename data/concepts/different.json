@@ -8,7 +8,11 @@
     "not the same",
     "different from",
     "unequal",
-    "ill-matched"
+    "ill-matched",
+    "which one is different?",
+    "the odd one out",
+    "which is the odd one out?",
+    "find the odd one out"
   ],
   "domain": "verba",
   "terms": [
@@ -105,6 +109,16 @@
       "latin": "disparēs enim mōrēs disparia studia sequuntur",
       "english": "for unlike characters are followed by unlike pursuits",
       "source": "Cic. Amic. 74"
+    },
+    {
+      "latin": "Ūnum ex hīs ā cēterīs differt: quod?",
+      "english": "One of these is different from the rest: which one?",
+      "source": "composed"
+    },
+    {
+      "latin": "Quod hōrum cēterīs dissimile est?",
+      "english": "Which of these is unlike the others?",
+      "source": "composed"
     }
   ],
   "sources": [
@@ -114,7 +128,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-15",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

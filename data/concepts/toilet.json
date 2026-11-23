@@ -18,7 +18,11 @@
     "public toilets",
     "I need the toilet",
     "I need to go",
-    "I need to go to the toilet"
+    "I need to go to the toilet",
+    "the toilet is blocked",
+    "the toilet’s blocked",
+    "blocked toilet",
+    "unblock the toilet"
   ],
   "domain": "domus",
   "terms": [
@@ -82,6 +86,11 @@
       "latin": "Estne hīc forica? Puer mingere vult.",
       "english": "Is there a public toilet here? The boy needs a wee.",
       "source": "composed"
+    },
+    {
+      "latin": "Lātrīna obstrūcta est; nōlī iterum aquam immittere.",
+      "english": "The toilet’s blocked; don’t flush it again.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -92,14 +101,14 @@
     "toilet-bowl"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/proluo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: proluo</a>",
+    "<a href=\"https://logeion.uchicago.edu/proluo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: proluo</a> · <a href=\"https://logeion.uchicago.edu/obstruo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: obstruo</a>",
     "<a href=\"https://logeion.uchicago.edu/latrina\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: latrina</a>",
     "<a href=\"https://logeion.uchicago.edu/forica\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: forica</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 317, 370."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "by": "Claude"
   },
   "replaces": [

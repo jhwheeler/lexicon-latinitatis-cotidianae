@@ -8,7 +8,12 @@
   "also": [
     "vomit",
     "be sick",
-    "vomiting"
+    "vomiting",
+    "I’m going to be sick",
+    "I think I’m going to be sick",
+    "he’s been sick",
+    "she’s been sick",
+    "he was sick"
   ],
   "domain": "corpus",
   "terms": [
@@ -32,16 +37,28 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "Pelvim, cito! Vomitūrus sum.",
+      "english": "A bowl, quick! I’m going to be sick.",
+      "source": "composed"
+    },
+    {
+      "latin": "Bis jam vomuit; nihil hodiē edet.",
+      "english": "He’s been sick twice now; he won’t eat anything today.",
+      "source": "composed"
+    }
+  ],
   "related": [
     "nausea"
   ],
   "sources": [
-    "<a href=\"https://logeion.org/vomo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vomo</a> · <a href=\"https://logeion.org/vomitus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vomitus</a>",
+    "<a href=\"https://logeion.org/vomo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vomo</a> · <a href=\"https://logeion.org/vomitus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: vomitus</a> · <a href=\"https://logeion.uchicago.edu/pelvis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pelvis</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 402."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

@@ -2,10 +2,16 @@
   "id": "happy-birthday",
   "english": "happy birthday!",
   "pos": "phrase",
+  "also": [
+    "many happy returns",
+    "many happy returns of the day",
+    "happy birthday to you",
+    "best wishes on your birthday"
+  ],
+  "domain": "sermo",
   "also_under": [
     "tempus"
   ],
-  "domain": "sermo",
   "terms": [
     {
       "latin": "Fēlīcem nātālem (tibi exoptō)!",
@@ -16,16 +22,35 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "At tū, Nātālis multōs celebrande per annōs, candidior semper candidiorque venī.",
+      "english": "And you, Birthday, may you be kept for many years to come: come ever brighter, and brighter still.",
+      "source": "Tib. 1.7.63–64"
+    },
+    {
+      "latin": "Dīcāmus bona verba: venit Nātālis ad ārās.",
+      "english": "Let us speak words of good omen: the Birthday comes to the altar.",
+      "source": "Tib. 2.2.1"
+    },
+    {
+      "latin": "Fēlīcem nātālem tibi exoptō, mī fīlī; utinam hunc diem multōs per annōs celebrēs!",
+      "english": "Happy birthday, my son, and many happy returns of the day!",
+      "source": "composed"
+    }
+  ],
   "related": [
     "birthday",
     "merry-christmas"
   ],
   "sources": [
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 280."
+    "<a href=\"https://logeion.uchicago.edu/natalis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: natalis</a> · <a href=\"https://logeion.uchicago.edu/celebro\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: celebro</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 280.",
+    "Tibullus, <em>Elegiae</em> 1.7.63–64; 2.2.1."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

@@ -14,7 +14,10 @@
     "have you any rooms?",
     "room for two",
     "a room for the night",
-    "no room at the inn"
+    "no room at the inn",
+    "hotel room",
+    "our room",
+    "the room (at a hotel)"
   ],
   "domain": "vectura",
   "terms": [
@@ -77,6 +80,16 @@
       "latin": "quia nōn erat eīs locus in dīversōriō",
       "english": "because there was no room for them in the inn",
       "source": "Vulg. Lc. 2.7"
+    },
+    {
+      "latin": "Cubiculum nostrum in tertiō tabulātō est.",
+      "english": "Our room is on the third floor.",
+      "source": "composed"
+    },
+    {
+      "latin": "Ecce cubiculum nostrum! Uter lectus tuus erit?",
+      "english": "Here’s our room! Which bed will be yours?",
+      "source": "composed"
     }
   ],
   "related": [
@@ -94,7 +107,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "by": "Claude"
   },
   "replaces": [

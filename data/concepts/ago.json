@@ -2,10 +2,15 @@
   "id": "ago",
   "english": "ago",
   "pos": "adverb",
+  "also": [
+    "a week ago",
+    "a few days ago",
+    "three years ago"
+  ],
+  "domain": "sermo",
   "also_under": [
     "tempus"
   ],
-  "domain": "sermo",
   "terms": [
     {
       "latin": "abhinc",
@@ -21,6 +26,16 @@
       "latin": "abhinc plūs mīlle annōs in summō monte castellum aedificāvērunt",
       "english": "more than a thousand years ago they built a castle on the top of the mountain",
       "source": "Libellus II, <span lang=\"la\">Sintra: castellum et puteus</span>"
+    },
+    {
+      "latin": "Abhinc septem diēs avum vīsimus.",
+      "english": "We went to see Grandpa a week ago.",
+      "source": "composed"
+    },
+    {
+      "latin": "intereā mulier quaedam abhinc triennium ex Andrō commigrāvit hūc vīcīniae",
+      "english": "meanwhile, three years ago, a certain woman moved here from Andros, into the neighbourhood",
+      "source": "Ter. And. 69–70"
     }
   ],
   "related": [
@@ -30,11 +45,12 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/abhinc\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: abhinc</a>",
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 21."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 21, 86.",
+    "Terence, <em>Andria</em> 69–70."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

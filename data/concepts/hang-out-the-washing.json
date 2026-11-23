@@ -4,7 +4,12 @@
   "pos": "verb",
   "also": [
     "clothesline",
-    "washing line"
+    "washing line",
+    "bring in the washing",
+    "take in the washing",
+    "take the washing in",
+    "get the washing in",
+    "take the washing off the line"
   ],
   "domain": "domus",
   "terms": [
@@ -15,17 +20,29 @@
       "comment": "Our description: Traupman and Morgan–Owens have no phrase for hanging out the washing and no word for a clothes line or a clothes peg (Morgan–Owens has <span lang=\"la\">vestīmenta lavāre</span>, to do the laundry). <span lang=\"la\">Fūniculus</span>, a cord (Cic.)."
     }
   ],
+  "phrases": [
+    {
+      "latin": "Pluit! Vestīmenta dē fūniculō dētrahe et intrō fer.",
+      "english": "It’s raining! Take the clothes off the line and bring them in.",
+      "source": "composed"
+    },
+    {
+      "latin": "Jam sicca sunt vestīmenta; collige ea in corbem.",
+      "english": "The washing’s dry now; gather it into the basket.",
+      "source": "composed"
+    }
+  ],
   "related": [
     "hang-up",
     "laundry"
   ],
   "sources": [
-    "<a href=\"https://logeion.org/funiculus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: funiculus</a>",
+    "<a href=\"https://logeion.org/funiculus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: funiculus</a> · <a href=\"https://logeion.uchicago.edu/detraho\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: detraho</a> · <a href=\"https://logeion.uchicago.edu/corbis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: corbis</a>",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. laundry: do the laundry."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-15",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

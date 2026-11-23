@@ -227,6 +227,65 @@
     return card;
   }
 
+  // The Latin word an entry's card leads with, when the search found the entry by that word:
+  // the address of the word's page, or the word itself where it has none. Empty for the rest.
+  function wordKey(item) {
+    const best = item.matches[0];
+    if (!best || best.line[0] !== 'd' || !(item.form || item.byWord)) return '';
+    const at = item.l.indexOf(best.line);
+    return (item.w && at > -1 && item.w[at]) || fold(best.head || best.line[1]);
+  }
+
+  // The card of a Latin word that answers several entries: the word once, then each entry with
+  // its English headword, its part of speech, its category, and what the word means there.
+  function wordResult(items, query, typed) {
+    const first = items[0], best = first.matches[0], at = first.l.indexOf(best.line);
+    const wordHref = first.w && at > -1 && first.w[at] ? up + 'l/' + first.w[at] + '.html' : '';
+    const card = document.createElement('article');
+    card.className = 'search-result search-word'; card.dataset.resultFor = first.id;
+    const label = document.createElement('p'); label.className = 'eyebrow';
+    label.textContent = `Latin word · ${items.length} entries`;
+    const title = document.createElement('h3'), link = document.createElement('a');
+    // The fullest dictionary form any of the entries gives (trānsferō, trānsferre, trānstulī, trānslātum).
+    const fullest = items.map(item => item.matches[0].line[1]).reduce((a, b) => b.length > a.length ? b : a);
+    link.href = wordHref || up + first.u; link.lang = 'la'; link.textContent = fullest;
+    title.append(link); highlight(title, query);
+    card.append(label, title);
+    if (first.form && fold(first.form) !== query) {
+      const note = document.createElement('p'); note.className = 'source-note form-of';
+      const head = document.createElement('span'); head.lang = 'la'; head.textContent = first.form;
+      note.append(`“${typed}” is a form of `, head, '.');
+      card.append(note);
+    }
+    const senses = document.createElement('ul'); senses.className = 'search-senses';
+    items.forEach(item => {
+      const li = document.createElement('li'); li.dataset.senseFor = item.id;
+      const a = document.createElement('a'); a.className = 'sense-link'; a.href = up + item.u;
+      const english = document.createElement('span'); english.className = 'sense-en'; english.textContent = item.en;
+      a.append(english);
+      if (item.pos) {
+        const pos = document.createElement('span'); pos.className = 'pos'; pos.textContent = item.pos;
+        a.append(' ', pos);
+      }
+      const where = document.createElement('span'); where.className = 'sense-cat'; where.textContent = data.categories[item.k];
+      a.append(' ', where);
+      // What the word means in this entry, where the entry says more than its headword.
+      const gloss = item.matches[0].line[2];
+      if (gloss && fold(gloss) !== fold(item.en)) {
+        const says = document.createElement('span'); says.className = 'sense-gloss'; says.textContent = gloss;
+        a.append(says);
+      }
+      highlight(a, query);
+      li.append(a); senses.append(li);
+    });
+    card.append(senses);
+    card.addEventListener('click', event => {
+      if (event.target.closest('a') || String(getSelection())) return;
+      location.href = wordHref || up + first.u;
+    });
+    return card;
+  }
+
   function show(searching) {
     results.hidden = !searching;
     if (view) view.hidden = searching;
@@ -237,20 +296,21 @@
 
   // Draw the next results of the current search.
   function draw() {
-    const { matching, inside, close, query, typed } = current;
+    const { cards, firstInside, inside, query, typed } = current;
     const fragment = document.createDocumentFragment();
-    const end = Math.min(matching.length, drawn + PAGE);
+    const end = Math.min(cards.length, drawn + PAGE);
     for (let index = drawn; index < end; index++) {
-      if (inside && !close && index === matching.length - inside) {
+      if (index === firstInside) {
         const divide = document.createElement('h2'); divide.className = 'results-divide';
         divide.textContent = `Inside longer words: ${inside}`;
         fragment.append(divide);
       }
-      fragment.append(result(matching[index], query, typed));
+      const items = cards[index].items;
+      fragment.append(items.length > 1 ? wordResult(items, query, typed) : result(items[0], query, typed));
     }
     drawn = end;
     list.append(fragment);
-    const left = matching.length - drawn;
+    const left = cards.length - drawn;
     more.hidden = !left;
     more.textContent = left ? `Show ${Math.min(PAGE, left)} more · ${left.toLocaleString("en")} not shown` : '';
     window.lexiconDisplay?.render(list);
@@ -306,6 +366,7 @@
       const typedAs = line => line.head === written || (line.head && fold(line.head) === written);
       const word = item.lines.find(typedAs) || item.lines.find(line => line.head && fold(line.head) === query);
       if (word) { item.matches = [word, ...item.matches.filter(line => line !== word)]; item.form = null; }
+      item.byWord = Boolean(word);
       const first = item.matches[0];
       const definition = first?.line[0] === 'd' && (led || first.own.includes(query));
       item.cited = first?.line[0] === 'd' && !definition;
@@ -334,12 +395,27 @@
     if (close) {
       matching = closeTo(query, inScope);
       matching.forEach(item => {
-        item.close = true; item.form = null; item.cited = false;
+        item.close = true; item.form = null; item.cited = false; item.byWord = false;
         const answer = item.lines.find(line => line.line[0] === 'd');
         item.matches = answer ? [answer] : [];
       });
     }
-    current = { matching, inside, close, query, typed }; drawn = 0;
+    // One card for a Latin word that answers several entries (Jack, 23 November 2026: "transfer"
+    // found trānsferō four times, once for each entry it stands in, each with the same heading and
+    // another category). The entries that lead with the same Latin word, found by that word or a
+    // form of it, share a card at the place of the first of them; it lists them. Everything else
+    // keeps a card of its own. The wording and the look of the shared card are Claude's, for Jack
+    // to judge.
+    const cards = [], shared = new Map();
+    matching.forEach(item => {
+      const key = close ? '' : wordKey(item), card = key && shared.get(key);
+      if (card) { card.items.push(item); return; }
+      const made = { items: [item] };
+      if (key) shared.set(key, made);
+      cards.push(made);
+    });
+    const firstInside = inside ? cards.findIndex(card => !card.items[0].whole) : -1;
+    current = { cards, firstInside, inside, close, query, typed }; drawn = 0;
     list.replaceChildren();
     draw();
     show(true);

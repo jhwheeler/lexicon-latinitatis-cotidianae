@@ -254,6 +254,16 @@ html:not(.js) :is(.toolbar, .meta, #search-results, .empty, .settings) { display
 .r-en { margin:2px 0 0; color:var(--soft); }
 .r-en .pos { margin-left:.35em; color:var(--muted); font-style:italic; font-size:.92em; }
 .search-snippets { margin-top:6px; }
+/* A Latin word that answers several entries: one card, the entries listed under the word. */
+.search-word > .form-of { margin:6px 0 0; }
+.search-senses { list-style:none; margin:10px 0 0; padding:0; }
+.search-senses li { border-top:1px solid var(--hair); }
+.sense-link { display:block; min-height:44px; padding:10px 0; color:var(--ink); text-decoration:none; overflow-wrap:anywhere; }
+.sense-en { font-weight:700; text-decoration:underline; text-decoration-color:var(--accent); text-decoration-thickness:1px; text-underline-offset:.16em; }
+.sense-link:hover .sense-en { text-decoration-thickness:2px; }
+.sense-link .pos { margin-left:.2em; color:var(--muted); font-style:italic; font-size:.92em; }
+.sense-cat { margin-left:.3em; color:var(--muted); font:400 .9rem var(--sans); white-space:nowrap; }
+.sense-gloss { display:block; margin-top:2px; color:var(--soft); }
 .search-match { margin:.45em 0; overflow-wrap:anywhere; }
 .ex-la { font-style:italic; }
 mark { background:var(--mark); color:var(--ink); padding:0 .06em; border-radius:2px; -webkit-box-decoration-break:clone; box-decoration-break:clone; }

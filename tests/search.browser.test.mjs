@@ -9,7 +9,12 @@ import { chromium } from 'playwright';
 // saved preferences unreliably between one page and the next.
 let browser, page, server, base, url;
 const pageUrl = path => base + path;
-const resultIds = () => page.locator('.search-result').evaluateAll(nodes => nodes.map(n => n.dataset.resultFor));
+// The entries found, in order. A Latin word that answers several entries has one card that lists
+// them (23 November 2026): its entries are read from the list.
+const resultIds = () => page.locator('.search-result').evaluateAll(nodes => nodes.flatMap(n => {
+  const senses = [...n.querySelectorAll('.search-senses li')].map(li => li.dataset.senseFor);
+  return senses.length ? senses : [n.dataset.resultFor];
+}));
 // Typing searches at once; only the first search waits for the data to load.
 const search = async query => {
   await page.locator('#search').fill(query);
@@ -111,7 +116,7 @@ test('a Latin word typed whole finds its own entry first, before the entries tha
   assert.equal(ids[0], 'c-mountain');
   const first = page.locator('.search-result').first();
   assert.equal(await first.locator('h3').textContent(), 'mōns, montis m.');
-  assert.match(await first.locator('.eyebrow').textContent(), /Definition/);
+  assert.match(await first.locator('.eyebrow').textContent(), /Definition|Latin word · \d+ entries/);
   // Then the terms with the word in them, then those that have it only in their evidence.
   const quoting = 'c-apennines';
   assert.equal(ids.indexOf('c-volcano') > 0 && ids.indexOf('c-volcano') < ids.indexOf(quoting), true);
@@ -528,13 +533,57 @@ test('a Latin word is found from any of its forms, with a note naming the form',
   await search('piscinam');
   const first = page.locator('.search-result').first();
   assert.equal(await first.getAttribute('data-result-for'), 'c-swimming-pool');
-  assert.match(await first.locator('.eyebrow').textContent(), /Definition/);
+  // piscīna answers two entries, the swimming pool and the fish pond: one card, the note once.
+  assert.match(await first.locator('.eyebrow').textContent(), /Latin word · 2 entries/);
+  assert.equal(await first.locator('.form-of').count(), 1);
   assert.equal(await first.locator('.form-of').textContent(), '“piscinam” is a form of piscīna.');
   await search('cucurrit');
   assert.equal(await page.locator('.search-result').first().getAttribute('data-result-for'), 'c-run');
   // The headword itself needs no note.
   await search('piscina');
   assert.equal(await page.locator('[data-result-for="c-swimming-pool"] .form-of').count(), 0);
+});
+
+test('a Latin word that answers several entries has one card, which lists them', async () => {
+  // Jack, 23 November 2026: "transfer" found trānsferō four times, once for each entry it stands
+  // in, each card with the same heading and another category.
+  await page.setViewportSize({ width: 390, height: 844 });
+  await search('transfer');
+  const card = page.locator('.search-result.search-word').first();
+  assert.equal(await page.locator('.search-result h3', { hasText: /^trānsferō/ }).count(), 1);
+  assert.equal(await card.locator('h3').textContent(), 'trānsferō, trānsferre, trānstulī, trānslātum');
+  assert.match(await card.locator('h3 a').getAttribute('href'), /l\/transfero\.html$/);
+  const senses = await card.locator('.search-senses li').evaluateAll(nodes => nodes.map(li => li.dataset.senseFor));
+  assert.deepEqual([...senses].sort(), ['c-scan', 'c-transfer', 'c-translate', 'c-transplant']);
+  assert.equal(await card.locator('.eyebrow').textContent(), `Latin word · ${senses.length} entries`);
+  assert.equal(await card.locator('.form-of').textContent(), '“transfer” is a form of trānsferō.');
+  // Each entry gives its English headword, its part of speech, and its category, and opens the entry.
+  const scan = card.locator('[data-sense-for="c-scan"] .sense-link');
+  assert.match(await scan.getAttribute('href'), /c\/scan\.html$/);
+  assert.match(await scan.locator('.sense-en').textContent(), /^scan/);
+  assert.equal(await scan.locator('.sense-cat').textContent(), 'Ars computātrālis');
+  const heights = await card.locator('.sense-link').evaluateAll(nodes => nodes.map(n => n.getBoundingClientRect().height));
+  assert.ok(heights.every(height => height >= 44), 'each entry of the card is 44px tall or more');
+  assert.equal(await overflows(), false);
+  // The count is still of entries, and an entry found by another word keeps a card of its own.
+  const shown = await page.locator('#results').textContent();
+  const whole = await page.locator('#search-result-list').evaluate(list => {
+    let entries = 0;
+    for (const node of list.children) {
+      if (node.classList.contains('results-divide')) break;
+      if (node.classList.contains('search-result')) entries += node.querySelectorAll('.search-senses li').length || 1;
+    }
+    return entries;
+  });
+  assert.equal(Number(shown.match(/^(\d+) matching/)[1]), whole);
+  assert.equal(await page.locator('.search-result[data-result-for="c-transfer-money"]').count(), 1);
+  await scan.click();
+  await page.waitForURL(/c\/scan\.html/);
+  await page.goBack();
+  await page.setViewportSize({ width: 1280, height: 800 });
+  // An English word finds entries with different Latin: nothing is joined.
+  await search('pyjamas');
+  assert.equal(await page.locator('.search-word').count(), 0);
 });
 
 test('when nothing matches, the entries one letter off are offered', async () => {

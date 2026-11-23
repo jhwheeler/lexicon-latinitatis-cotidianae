@@ -15,7 +15,12 @@
     "might I …?",
     "give one’s consent",
     "consent",
-    "may I leave?"
+    "may I leave?",
+    "you’re not allowed",
+    "not allowed",
+    "am I allowed?",
+    "am I allowed to …?",
+    "can I?"
   ],
   "domain": "verba",
   "terms": [
@@ -99,6 +104,26 @@
       "latin": "Licetne mihi abīre? — Licetne mihi (ut) abeam?",
       "english": "May I leave?",
       "source": "Traupman 344"
+    },
+    {
+      "latin": "Pater, licetne pauca? — Quid dīcēs mihi?",
+      "english": "Father, may I say a few words? — What will you say to me?",
+      "source": "Ter. And. 893"
+    },
+    {
+      "latin": "Obsecrō licet complectī prius quam proficīscō? — Licet.",
+      "english": "Please, may I hug you before I go? — You may.",
+      "source": "Plaut. Mil. 1329–1329b"
+    },
+    {
+      "latin": "Nīl magis amat cupiditās, quam quod nōn licet.",
+      "english": "Desire loves nothing so much as what is not allowed.",
+      "source": "Publil. Sent. N 35"
+    },
+    {
+      "latin": "Nōn licet: culter acūtus est.",
+      "english": "You’re not allowed: the knife is sharp.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -108,11 +133,14 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/sino\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sino</a> · <a href=\"https://logeion.uchicago.edu/licet\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: licet</a> · <a href=\"https://logeion.uchicago.edu/permitto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: permitto</a> · <a href=\"https://logeion.uchicago.edu/patior\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: patior</a>",
     "Cicero’s letters, <em>De officiis</em>, <em>De oratore</em>, and Plautus.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 28, 296."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 28, 296.",
+    "Terence, <em>Andria</em> 893.",
+    "Plautus, <em>Miles gloriosus</em> 1329–1329b.",
+    "Publilius Syrus, <em>Sententiae</em> N 35."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

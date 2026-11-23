@@ -7,7 +7,11 @@
     "be swamped",
     "be very busy",
     "have enough to do",
-    "have one’s work cut out"
+    "have one’s work cut out",
+    "I have a lot to do",
+    "I’ve got lots to do",
+    "I’ve got a lot on",
+    "so much to do"
   ],
   "domain": "sermo",
   "terms": [
@@ -24,15 +28,43 @@
         "Traupman 325"
       ],
       "comment": "Lewis &amp; Short s.v. <span lang=\"la\">satis</span>: “to have enough to do, have one’s hands full; to be in trouble”. The thing that keeps one busy is in the genitive in comedy: <span lang=\"la\">sat agere suārum rērum</span>."
+    },
+    {
+      "latin": "negōtiī plēnus esse",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "have a lot to do, be full of business",
+      "evidence": [
+        "Plaut. Ps. 380: <span lang=\"la\">negōtī nunc sum plēnus</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Jamne abīs? — Negōtī nunc sum plēnus.",
+      "english": "Are you off already? — I’ve a lot to do just now.",
+      "source": "Plaut. Ps. 380"
+    },
+    {
+      "latin": "Interim mīlle labōribus conteror",
+      "english": "Meanwhile I’m worn down by a thousand tasks",
+      "source": "Plin. Ep. 3.1.11"
+    },
+    {
+      "latin": "Multum mihi hodiē negōtī est; crās lūdēmus.",
+      "english": "I have a lot to do today; we’ll play tomorrow.",
+      "source": "composed"
     }
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/satis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: satis</a> · <a href=\"https://logeion.uchicago.edu/satago\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: satago</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 99, 325."
+    "<a href=\"https://logeion.uchicago.edu/satis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: satis</a> · <a href=\"https://logeion.uchicago.edu/satago\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: satago</a> · <a href=\"https://logeion.uchicago.edu/negotium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: negotium</a> · <a href=\"https://logeion.uchicago.edu/plenus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: plenus</a> · <a href=\"https://logeion.uchicago.edu/contero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: contero</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 99, 325.",
+    "Plautus, <em>Pseudolus</em> 380.",
+    "Pliny, <em>Letters</em> 3.1.11."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

@@ -8,7 +8,9 @@
     "have second thoughts",
     "change of heart",
     "on second thought",
-    "on second thoughts"
+    "on second thoughts",
+    "I changed my mind",
+    "I’ve changed my plans"
   ],
   "domain": "verba",
   "terms": [
@@ -57,21 +59,6 @@
       "comment": "Traupman gives <span lang=\"la\">cum ego recōgitō</span> for “on second thought”, literally “when I think it over”. Lewis &amp; Short calls the verb rare: Plautus several times, Cicero once (Q. Fr. 2.2.1)."
     }
   ],
-  "related": [
-    "decide",
-    "opinion",
-    "change-alter"
-  ],
-  "sources": [
-    "<a href=\"https://logeion.uchicago.edu/muto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: muto</a> · <a href=\"https://logeion.uchicago.edu/sententia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sententia</a> · <a href=\"https://logeion.uchicago.edu/consilium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: consilium</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 104, 289.",
-    "<a href=\"https://logeion.uchicago.edu/recogito\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: recogito</a>"
-  ],
-  "review": {
-    "status": "draft",
-    "date": "2026-11-12",
-    "by": "Claude"
-  },
   "phrases": [
     {
       "latin": "animī mūtātiō",
@@ -82,6 +69,32 @@
       "latin": "cum ego recōgitō",
       "english": "on second thought",
       "source": "Traupman 393"
+    },
+    {
+      "latin": "itaque mūtāvī cōnsilium; statueram enim rēctā Appiā Rōmam.",
+      "english": "so I changed my mind: I had decided to go straight to Rome by the Appian Way.",
+      "source": "Cic. Att. 16.10.1"
+    },
+    {
+      "latin": "Cōnsilium mūtāvī: hodiē domī manēbimus.",
+      "english": "I’ve changed my mind: we’ll stay home today.",
+      "source": "composed"
     }
-  ]
+  ],
+  "related": [
+    "decide",
+    "opinion",
+    "change-alter"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/muto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: muto</a> · <a href=\"https://logeion.uchicago.edu/sententia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sententia</a> · <a href=\"https://logeion.uchicago.edu/consilium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: consilium</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 104, 289.",
+    "<a href=\"https://logeion.uchicago.edu/recogito\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: recogito</a>",
+    "Cicero, <em>Letters to Atticus</em> 16.10.1."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-23",
+    "by": "Claude"
+  }
 }

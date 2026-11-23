@@ -5,7 +5,11 @@
   "also": [
     "warning",
     "forewarn",
-    "I warned you"
+    "I warned you",
+    "I’m warning you",
+    "you’ve been warned",
+    "don’t say I didn’t warn you",
+    "I warn you"
   ],
   "domain": "verba",
   "terms": [
@@ -40,6 +44,17 @@
         "Lewis &amp; Short s.v. <span lang=\"la\">admoneō</span>"
       ],
       "comment": "Chiefly “remind” (of what is past, Lewis &amp; Short), but also “warn, urge”."
+    },
+    {
+      "latin": "praedīcō, praedīcere, praedīxī, praedictum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "warn beforehand, tell someone in advance",
+      "evidence": [
+        "Ter. And. 205: <span lang=\"la\">neque tū haud dīcās tibi nōn praedictum: cavē!</span>",
+        "Plaut. Aul. 99: <span lang=\"la\">atque etiam hoc praedīcō tibi</span>"
+      ],
+      "comment": "Not to be confused with <span lang=\"la\">praedicō, praedicāre</span>, proclaim. <span lang=\"la\">Praedīcō tibi</span> is the comic “I’m warning you”, and <span lang=\"la\">nē dīcās tibi nōn praedictum</span> “don’t say you weren’t warned”."
     }
   ],
   "phrases": [
@@ -52,6 +67,21 @@
       "latin": "nam et monendī amīcī saepe sunt et objūrgandī",
       "english": "for friends must often be warned and scolded",
       "source": "Cic. Amic. 88"
+    },
+    {
+      "latin": "Inrīdēs? nīl mē fallis. sed dīcō tibi: nē temere faciās; neque tū haud dīcās tibi nōn praedictum: cavē!",
+      "english": "Laughing at me? You don’t fool me. But I’m warning you: don’t do anything rash; and don’t say you weren’t told: watch out!",
+      "source": "Ter. And. 204–205"
+    },
+    {
+      "latin": "atque etiam hoc praedīcō tibi, sī Bona Fortūna veniat, nē intrō mīserīs.",
+      "english": "and I warn you of this too: if Good Luck herself comes, don’t let her in.",
+      "source": "Plaut. Aul. 99–100"
+    },
+    {
+      "latin": "Tē moneō: sī iterum momorderis, domum ībimus.",
+      "english": "I’m warning you: if you bite again, we’re going home.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -59,11 +89,13 @@
     "follow-advice"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/moneo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: moneo</a> · <a href=\"https://logeion.uchicago.edu/praemoneo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praemoneo</a> · <a href=\"https://logeion.uchicago.edu/admoneo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: admoneo</a>"
+    "<a href=\"https://logeion.uchicago.edu/moneo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: moneo</a> · <a href=\"https://logeion.uchicago.edu/praemoneo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praemoneo</a> · <a href=\"https://logeion.uchicago.edu/admoneo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: admoneo</a> · <a href=\"https://logeion.uchicago.edu/praedico\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praedico</a>",
+    "Terence, <em>Andria</em> 204–205.",
+    "Plautus, <em>Aulularia</em> 99–100."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

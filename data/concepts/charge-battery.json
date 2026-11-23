@@ -9,7 +9,13 @@
     "fully charged",
     "flat",
     "dead battery",
-    "run out of battery"
+    "run out of battery",
+    "the battery is dead",
+    "the battery is low",
+    "low battery",
+    "charge the phone",
+    "charge your phone",
+    "my phone is dead"
   ],
   "domain": "domus",
   "also_under": [
@@ -45,6 +51,16 @@
       "latin": "Jam plēnum est.",
       "english": "It’s fully charged now.",
       "source": "composed"
+    },
+    {
+      "latin": "Accumulātrum jam dēficit; ubi est replētrum?",
+      "english": "The battery’s running low; where’s the charger?",
+      "source": "composed"
+    },
+    {
+      "latin": "Tēlephōnum exstīnctum est: accumulātrum exhaustum est.",
+      "english": "The phone’s dead: the battery’s flat.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -54,12 +70,12 @@
     "socket"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/repleo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: repleo</a> · <a href=\"https://logeion.uchicago.edu/onero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: onero</a> · <a href=\"https://logeion.uchicago.edu/exhaurio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: exhaurio</a>",
+    "<a href=\"https://logeion.uchicago.edu/repleo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: repleo</a> · <a href=\"https://logeion.uchicago.edu/onero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: onero</a> · <a href=\"https://logeion.uchicago.edu/exhaurio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: exhaurio</a> · <a href=\"https://logeion.uchicago.edu/deficio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: deficio</a>",
     "David Morgan and Patrick Owens, <em>Adumbratio Lexici Anglico-Latini</em>, s.v. battery; its heading “charge, recharge (battery, cell phone, etc.)” gives no Latin."
   ],
   "review": {
-    "status": "reviewed",
-    "date": "2026-11-16",
+    "status": "draft",
+    "date": "2026-11-23",
     "by": "Jack"
   }
 }

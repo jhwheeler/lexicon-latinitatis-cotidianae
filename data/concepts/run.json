@@ -8,7 +8,12 @@
     "jog",
     "at a trot",
     "run around",
-    "run up and down"
+    "run up and down",
+    "don’t run",
+    "no running",
+    "don’t run indoors",
+    "no running in the house",
+    "walk, don’t run"
   ],
   "domain": "corpus",
   "terms": [
@@ -75,6 +80,16 @@
       "latin": "modo hūc modo illūc cursāre",
       "english": "to run up and down",
       "source": "Traupman 373"
+    },
+    {
+      "latin": "Nōlī per domum cursāre; lentē ambulā.",
+      "english": "Don’t run about the house; walk slowly.",
+      "source": "composed"
+    },
+    {
+      "latin": "Intus nē currās; forīs currere licet.",
+      "english": "Don’t run indoors; you can run outside.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -88,13 +103,13 @@
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 60, 65.",
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author."
   ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-23",
+    "by": "Claude"
+  },
   "replaces": [
     "entry-196",
     "libelli-196"
-  ],
-  "review": {
-    "status": "draft",
-    "date": "2026-11-12",
-    "by": "Claude"
-  }
+  ]
 }

@@ -2,10 +2,15 @@
   "id": "receipt",
   "english": "receipt",
   "pos": "noun",
+  "also": [
+    "can I have a receipt?",
+    "could I have a receipt?",
+    "a receipt, please"
+  ],
+  "domain": "urbs",
   "also_under": [
     "pecunia"
   ],
-  "domain": "urbs",
   "terms": [
     {
       "latin": "apocha, apochae f.",
@@ -16,17 +21,30 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "Apocham mihi dā, quaesō.",
+      "english": "Could I have a receipt, please?",
+      "source": "composed"
+    },
+    {
+      "latin": "apocha nōn aliās contingit quam sī pecūnia solūta sit",
+      "english": "there is no receipt until the money has been paid",
+      "source": "Dig. 46.4.19 (Lewis &amp; Short)"
+    }
+  ],
   "related": [
     "pay",
     "bill"
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/apocha\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: apocha</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 131."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 131.",
+    "<em>Digest</em> 46.4.19."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

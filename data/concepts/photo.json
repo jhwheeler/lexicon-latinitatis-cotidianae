@@ -2,6 +2,15 @@
   "id": "photo",
   "english": "photo",
   "pos": "noun",
+  "also": [
+    "photograph",
+    "photographs",
+    "photography",
+    "pic",
+    "send me the photo",
+    "send a photo",
+    "send the picture"
+  ],
   "domain": "ludi",
   "terms": [
     {
@@ -24,6 +33,18 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "Mitte mihi, sīs, illam imāginem.",
+      "english": "Send me that photo, please.",
+      "source": "composed"
+    },
+    {
+      "latin": "Imāginem avō mīsimus.",
+      "english": "We sent the photo to Grandpa.",
+      "source": "composed"
+    }
+  ],
   "related": [
     "take-a-photo",
     "camera"
@@ -34,13 +55,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
-  },
-  "also": [
-    "photograph",
-    "photographs",
-    "photography",
-    "pic"
-  ]
+  }
 }

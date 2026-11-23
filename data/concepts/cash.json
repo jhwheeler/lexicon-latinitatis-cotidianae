@@ -5,12 +5,14 @@
   "also": [
     "ready money",
     "I don’t have the cash",
-    "pay in cash"
+    "pay in cash",
+    "pay cash",
+    "cash payment"
   ],
+  "domain": "urbs",
   "also_under": [
     "pecunia"
   ],
-  "domain": "urbs",
   "terms": [
     {
       "latin": "argentum praesentārium",
@@ -44,6 +46,23 @@
       "comment": "<span lang=\"la\">In numerātō</span>, in ready money."
     }
   ],
+  "phrases": [
+    {
+      "latin": "decem dollarōs praesentāriōs dēnumerāre prō (+ abl.)",
+      "english": "to pay ten dollars in cash for",
+      "source": "Traupman 287"
+    },
+    {
+      "latin": "Tabellā solvam an praesentī pecūniā?",
+      "english": "Shall I pay by card or in cash?",
+      "source": "composed"
+    },
+    {
+      "latin": "prō eō tibi praesentem pecūniam solvī imperāvī, nē tū expēnsum mūneribus ferrēs.",
+      "english": "I have ordered that you be paid for it in cash, so that you don’t have to enter it in your accounts as a present.",
+      "source": "Cic. Att. 2.4.1"
+    }
+  ],
   "related": [
     "money",
     "coin",
@@ -54,21 +73,15 @@
   "sources": [
     "<a href=\"https://logeion.org/praesentarius\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: praesentarius</a>",
     "<a href=\"https://logeion.uchicago.edu/numero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: numero</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 130, 287."
-  ],
-  "replaces": [
-    "entry-430"
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 130, 287.",
+    "Cicero, <em>Letters to Atticus</em> 2.4.1."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   },
-  "phrases": [
-    {
-      "latin": "decem dollarōs praesentāriōs dēnumerāre prō (+ abl.)",
-      "english": "to pay ten dollars in cash for",
-      "source": "Traupman 287"
-    }
+  "replaces": [
+    "entry-430"
   ]
 }

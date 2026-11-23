@@ -7,9 +7,15 @@
     "shopping bag",
     "carrier bag",
     "plastic bag",
-    "bag for life"
+    "bag for life",
+    "would you like a bag?",
+    "do you want a bag?",
+    "do you need a bag?"
   ],
   "domain": "culina",
+  "also_under": [
+    "urbs"
+  ],
   "terms": [
     {
       "latin": "saccus, saccī m.",
@@ -34,6 +40,23 @@
       "comment": "For a woven shopping basket."
     }
   ],
+  "phrases": [
+    {
+      "latin": "Saccum cape; ēmptum īmus.",
+      "english": "Grab a bag; we’re going shopping.",
+      "source": "composed"
+    },
+    {
+      "latin": "Vīn' saccum?",
+      "english": "Would you like a bag?",
+      "source": "composed"
+    },
+    {
+      "latin": "Nihil opus est; sportulam mēcum attulī.",
+      "english": "No need; I’ve brought my basket.",
+      "source": "composed"
+    }
+  ],
   "related": [
     "flour",
     "pantry",
@@ -46,17 +69,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-23",
     "by": "Claude"
-  },
-  "also_under": [
-    "urbs"
-  ],
-  "phrases": [
-    {
-      "latin": "Saccum cape; ēmptum īmus.",
-      "english": "Grab a bag; we’re going shopping.",
-      "source": "composed"
-    }
-  ]
+  }
 }

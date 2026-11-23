@@ -4,7 +4,12 @@
   "sense": "money given back",
   "pos": "noun",
   "also": [
-    "small change"
+    "small change",
+    "have you got change?",
+    "do you have change?",
+    "any change?",
+    "small coins",
+    "give change"
   ],
   "domain": "urbs",
   "terms": [
@@ -19,6 +24,18 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "Habēsne nummulōs?",
+      "english": "Have you got any change?",
+      "source": "composed"
+    },
+    {
+      "latin": "Hōc nummō solvam; habēsne quod reddās?",
+      "english": "I’ll pay with this coin; have you got change?",
+      "source": "composed"
+    }
+  ],
   "related": [
     "money",
     "coin",
@@ -26,11 +43,12 @@
     "change-money"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/nummulus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nummulus</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 131, 289."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

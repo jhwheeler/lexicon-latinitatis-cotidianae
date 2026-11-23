@@ -6,9 +6,16 @@
   "also": [
     "recess",
     "playtime",
-    "break time"
+    "break time",
+    "lunch break",
+    "lunch hour",
+    "midday break",
+    "take a lunch break"
   ],
   "domain": "sermo",
+  "also_under": [
+    "schola"
+  ],
   "terms": [
     {
       "latin": "pausa, pausae f.",
@@ -32,21 +39,6 @@
       "comment": "A slackening, and so a rest from work: Quintilian’s word for the break that every pupil must be given."
     }
   ],
-  "related": [
-    "lesson"
-  ],
-  "sources": [
-    "<a href=\"https://logeion.org/pausa\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pausa</a> · <a href=\"https://logeion.uchicago.edu/remissio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: remissio</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 31."
-  ],
-  "review": {
-    "status": "draft",
-    "date": "2026-11-12",
-    "by": "Claude"
-  },
-  "also_under": [
-    "schola"
-  ],
   "phrases": [
     {
       "latin": "danda est tamen omnibus aliqua remissiō; nōn sōlum quia nūlla rēs est, quae perferre possit continuum labōrem",
@@ -57,6 +49,29 @@
       "latin": "inter (post, ante) pausam",
       "english": "during (after, before) recess",
       "source": "Traupman 369"
+    },
+    {
+      "latin": "Hōra prandiī est; labōrem paulisper intermittam.",
+      "english": "It’s lunchtime; I’ll stop work for a little while.",
+      "source": "composed"
+    },
+    {
+      "latin": "in quīntam variōs extendit Rōma labōrēs, sexta quiēs lassīs, septima fīnis erit",
+      "english": "Rome stretches her various labours into the fifth hour; the sixth is rest for the weary, the seventh will be the end.",
+      "source": "Mart. 4.8.3–4"
     }
-  ]
+  ],
+  "related": [
+    "lesson"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.org/pausa\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pausa</a> · <a href=\"https://logeion.uchicago.edu/remissio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: remissio</a> · <a href=\"https://logeion.uchicago.edu/intermitto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: intermitto</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 31.",
+    "Martial 4.8.3–4."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-23",
+    "by": "Claude"
+  }
 }

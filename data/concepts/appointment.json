@@ -9,7 +9,12 @@
     "keep an appointment",
     "arrangement to meet",
     "date (to meet)",
-    "have a date with someone"
+    "have a date with someone",
+    "make an appointment",
+    "book an appointment",
+    "arrange to meet",
+    "fix a time",
+    "set a time and place"
   ],
   "domain": "verba",
   "terms": [
@@ -34,6 +39,18 @@
         "Varr. RR 2.5.1; Cic. Caecin. 33 (Lewis &amp; Short s.v. <span lang=\"la\">cōnstituō</span>)",
         "Traupman 93"
       ]
+    },
+    {
+      "latin": "cōnstituō, cōnstituere, cōnstituī, cōnstitūtum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "make an appointment, arrange (a day, a meeting) with someone",
+      "grammar": "cum aliquō or with the dative of the person; with an accusative and infinitive or an indirect question for what is arranged",
+      "evidence": [
+        "Cic. Verr. 2.2.65: <span lang=\"la\">cōnstituī cum hominibus quō diē mihi Messānae praestō essent</span>",
+        "Cic. de Or. 1.265: <span lang=\"la\">vellem nōn cōnstituissem … mē hodiē ventūrum esse L. Aeliō</span>"
+      ],
+      "comment": "The verb of business Latin for fixing a day or a meeting with someone; the noun <span lang=\"la\">cōnstitūtum</span> is its participle. Morgan–Owens gives <span lang=\"la\">hōram cōnstituere</span> for making an appointment."
     }
   ],
   "phrases": [
@@ -46,6 +63,21 @@
       "latin": "cōnstitūtum cum aliquō habēre",
       "english": "to have a date with someone",
       "source": "Traupman 300"
+    },
+    {
+      "latin": "cōnstituī cum hominibus quō diē mihi Messānae praestō essent",
+      "english": "I arranged with the men a day on which they should meet me at Messana",
+      "source": "Cic. Verr. 2.2.65"
+    },
+    {
+      "latin": "Cum medicō cōnstituī in crāstinum diem.",
+      "english": "I’ve made an appointment with the doctor for tomorrow.",
+      "source": "composed"
+    },
+    {
+      "latin": "hōram cōnstituere",
+      "english": "to make an appointment, fix a time",
+      "source": "M-O s.v. appointment: make an appointment, make a date"
     }
   ],
   "related": [
@@ -54,11 +86,13 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/constituo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: constituo</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 93, 300."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 93, 300.",
+    "Cicero, <em>In Verrem</em> 2.2.65.",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. appointment: make an appointment, make a date."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

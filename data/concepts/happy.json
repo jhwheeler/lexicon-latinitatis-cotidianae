@@ -2,10 +2,18 @@
   "id": "happy",
   "english": "happy",
   "pos": "adjective",
+  "also": [
+    "in seventh heaven",
+    "be in seventh heaven",
+    "over the moon",
+    "I’m happy",
+    "I’m so happy",
+    "I am happy"
+  ],
+  "domain": "sermo",
   "also_under": [
     "verba"
   ],
-  "domain": "sermo",
   "terms": [
     {
       "latin": "laetus, laeta, laetum",
@@ -37,6 +45,18 @@
       "comment": "Happy in one’s lot, not glad for the moment: <span lang=\"la\">laetus</span> is the cheerful one."
     }
   ],
+  "phrases": [
+    {
+      "latin": "Ō, quam laetus sum!",
+      "english": "Oh, I’m so happy!",
+      "source": "composed"
+    },
+    {
+      "latin": "Laetus sum laudārī mē abs tē, pater, ā laudātō virō.",
+      "english": "I am happy to be praised by you, father, a man who is praised himself.",
+      "source": "Naevius in Cic. Fam. 15.6"
+    }
+  ],
   "related": [
     "sad",
     "angry"
@@ -45,19 +65,15 @@
     "<a href=\"https://logeion.uchicago.edu/beo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: beo</a>",
     "<a href=\"https://logeion.uchicago.edu/laetus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: laetus</a>",
     "<a href=\"https://logeion.uchicago.edu/caelum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: caelum</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 325."
-  ],
-  "replaces": [
-    "entry-70"
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 325.",
+    "Cicero, <em>Letters to Friends</em> 15.6."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   },
-  "also": [
-    "in seventh heaven",
-    "be in seventh heaven",
-    "over the moon"
+  "replaces": [
+    "entry-70"
   ]
 }

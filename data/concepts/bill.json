@@ -4,12 +4,17 @@
   "sense": "what is owed",
   "pos": "noun",
   "also": [
-    "invoice"
+    "invoice",
+    "pay the bills",
+    "pay a bill",
+    "the bills",
+    "household bills",
+    "pay the electricity bill"
   ],
+  "domain": "urbs",
   "also_under": [
     "pecunia"
   ],
-  "domain": "urbs",
   "terms": [
     {
       "latin": "ratiō dēbitī",
@@ -39,6 +44,18 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "Hodiē mēnstruās ratiōnēs solvī.",
+      "english": "I paid the monthly bills today.",
+      "source": "composed"
+    },
+    {
+      "latin": "Prius ratiōnēs solvendae sunt quam nova emāmus.",
+      "english": "We have to pay the bills before we buy anything new.",
+      "source": "composed"
+    }
+  ],
   "related": [
     "pay",
     "receipt",
@@ -51,7 +68,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

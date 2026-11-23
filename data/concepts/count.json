@@ -7,7 +7,15 @@
     "numbers",
     "count up",
     "count out",
-    "you don’t count"
+    "you don’t count",
+    "I’m counting to three",
+    "I’ll count to three",
+    "one, two, three",
+    "count to three",
+    "count money",
+    "count the money",
+    "count out the money",
+    "count the coins"
   ],
   "domain": "sermo",
   "terms": [
@@ -40,6 +48,21 @@
       "latin": "Extrā numerum es mihi.",
       "english": "You don’t count (with me).",
       "source": "Traupman 297"
+    },
+    {
+      "latin": "Ūnum … duo … cavē nē «tria» dīcam!",
+      "english": "I’m counting to three: one … two … don’t make me say three!",
+      "source": "composed"
+    },
+    {
+      "latin": "Age age, absolve mē atque argentum numerā, nē comitēs morer. — Pernumerātumst.",
+      "english": "Come on, come on, settle up with me and count out the money, so I don’t keep my friends waiting. — It’s all counted out.",
+      "source": "Plaut. Epid. 631–632"
+    },
+    {
+      "latin": "Age, nummōs tuōs numerēmus: ūnus, duo, trēs …",
+      "english": "Come on, let’s count your coins: one, two, three …",
+      "source": "composed"
     }
   ],
   "related": [
@@ -51,15 +74,16 @@
     "<a href=\"https://logeion.uchicago.edu/enumero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: enumero</a>",
     "<a href=\"https://logeion.uchicago.edu/numero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: numero</a>",
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 297."
-  ],
-  "replaces": [
-    "entry-244",
-    "libelli-244"
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 297.",
+    "Plautus, <em>Epidicus</em> 631–632."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
-  }
+  },
+  "replaces": [
+    "entry-244",
+    "libelli-244"
+  ]
 }

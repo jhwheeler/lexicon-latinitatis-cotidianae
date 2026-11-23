@@ -7,7 +7,12 @@
     "timid",
     "fearful of",
     "fearful",
-    "easily frightened"
+    "easily frightened",
+    "I’m shy",
+    "I feel shy",
+    "don’t be shy",
+    "be shy",
+    "feel shy"
   ],
   "domain": "sermo",
   "terms": [
@@ -43,6 +48,17 @@
         "Plaut. Most. 1101: <span lang=\"la\">metuculōsa rēs</span> (there “frightening”)"
       ],
       "comment": "From <span lang=\"la\">metus</span>. Ante- and post-classical (Lewis &amp; Short). The English word has changed its meaning."
+    },
+    {
+      "latin": "verēcundor, verēcundārī",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "feel shy, be bashful",
+      "evidence": [
+        "Plaut. Trin. 478: <span lang=\"la\">verēcundārī nēminem apud mēnsam decet</span>",
+        "Cic. de Or. 3.36: <span lang=\"la\">aliquem cūnctantem et quasi verēcundantem incitāre</span> (Lewis &amp; Short)"
+      ],
+      "comment": "The verb for feeling shy; Lewis &amp; Short calls it rare but classical. Lewis &amp; Short gives no perfect."
     }
   ],
   "phrases": [
@@ -50,20 +66,31 @@
       "latin": "Nūllust hōc metuculōsus aequē.",
       "english": "There’s no one so easily frightened as this fellow.",
       "source": "Plaut. Amph. 293"
+    },
+    {
+      "latin": "Nōlī verēcundārī; salūtā hospitem.",
+      "english": "Don’t be shy; say hello to our guest.",
+      "source": "composed"
+    },
+    {
+      "latin": "verēcundārī nēminem apud mēnsam decet",
+      "english": "no one should be shy at table",
+      "source": "Plaut. Trin. 478"
     }
   ],
   "related": [
     "be-afraid"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/timidus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: timidus</a> · <a href=\"https://logeion.uchicago.edu/meticulosus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: meticulosus</a>",
+    "<a href=\"https://logeion.uchicago.edu/timidus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: timidus</a> · <a href=\"https://logeion.uchicago.edu/meticulosus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: meticulosus</a> · <a href=\"https://logeion.uchicago.edu/verecundor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: verecundor</a>",
     "<a href=\"https://logeion.org/verecundus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: verecundus</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 157, 314.",
-    "Plautus, <em>Amphitruo</em> 293; <em>Mostellaria</em> 1101."
+    "Plautus, <em>Amphitruo</em> 293; <em>Mostellaria</em> 1101.",
+    "Plautus, <em>Trinummus</em> 478."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

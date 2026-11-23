@@ -12,7 +12,10 @@
     "hurt feelings",
     "his feelings were hurt",
     "hurt someone’s feelings",
-    "state of mind"
+    "state of mind",
+    "you hurt my feelings",
+    "that hurt my feelings",
+    "I’m hurt"
   ],
   "domain": "verba",
   "terms": [
@@ -71,6 +74,16 @@
       "evidence": [
         "Traupman 314"
       ]
+    },
+    {
+      "latin": "animum alicujus offendere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "hurt someone’s feelings",
+      "evidence": [
+        "Cic. Fam. 5.7: <span lang=\"la\">nē cujus animum offenderēs</span>"
+      ],
+      "comment": "The record has Traupman’s <span lang=\"la\">aliquem offendere</span>; Cicero says it with <span lang=\"la\">animum</span>."
     }
   ],
   "phrases": [
@@ -103,6 +116,16 @@
       "latin": "affectiō animī",
       "english": "a state of mind",
       "source": "Traupman 385"
+    },
+    {
+      "latin": "Animum meum offendistī.",
+      "english": "You hurt my feelings.",
+      "source": "composed"
+    },
+    {
+      "latin": "quod verērēre nē cujus animum offenderēs",
+      "english": "because you were afraid of hurting someone’s feelings",
+      "source": "Cic. Fam. 5.7"
     }
   ],
   "related": [
@@ -112,14 +135,15 @@
     "feel-perceive"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/exprimo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: exprimo</a>",
+    "<a href=\"https://logeion.uchicago.edu/exprimo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: exprimo</a> · <a href=\"https://logeion.uchicago.edu/offendo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: offendo</a>",
     "<a href=\"https://logeion.uchicago.edu/motus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: motus</a> · <a href=\"https://logeion.uchicago.edu/affectus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: affectus</a> · <a href=\"https://logeion.uchicago.edu/perturbatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: perturbatio</a>",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. emotion. John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 152, 156, 309, 314.",
-    "Quintilian keeps his edition’s spelling <span lang=\"la\">adfectūs</span>."
+    "Quintilian keeps his edition’s spelling <span lang=\"la\">adfectūs</span>.",
+    "Cicero, <em>Letters to Friends</em> 5.7."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

@@ -7,7 +7,13 @@
     "number (phone)",
     "mobile number",
     "local number",
-    "long-distance number"
+    "long-distance number",
+    "wrong number",
+    "you’ve got the wrong number",
+    "dial the wrong number",
+    "what’s your number?",
+    "what’s your phone number?",
+    "give me your number"
   ],
   "domain": "computatra",
   "also_under": [
@@ -40,19 +46,34 @@
       "latin": "numerus longinquus",
       "english": "a long-distance number",
       "source": "Traupman 341"
+    },
+    {
+      "latin": "Hīc nēmō est eō nōmine; numerum perperam sēlēgistī.",
+      "english": "There’s nobody here of that name; you’ve dialled the wrong number.",
+      "source": "composed"
+    },
+    {
+      "latin": "Errās, opīnor: numerum falsum sēlēgistī.",
+      "english": "I think you’re mistaken: you’ve got the wrong number.",
+      "source": "composed"
+    },
+    {
+      "latin": "Quī tibi est numerus tēlephōnicus? Scrībam.",
+      "english": "What’s your phone number? I’ll write it down.",
+      "source": "composed"
     }
   ],
   "related": [
     "telephone"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/numerus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: numerus</a>",
+    "<a href=\"https://logeion.uchicago.edu/numerus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: numerus</a> · <a href=\"https://logeion.uchicago.edu/perperam\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: perperam</a> · <a href=\"https://logeion.uchicago.edu/seligo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: seligo</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 38, 39, 391.",
     "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 14."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

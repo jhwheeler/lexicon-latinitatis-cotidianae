@@ -2,6 +2,14 @@
   "id": "dont-worry",
   "english": "don’t worry!",
   "pos": "phrase",
+  "also": [
+    "don’t you worry!",
+    "it’s all right",
+    "it’s OK",
+    "it’s okay",
+    "there, there",
+    "it’s nothing"
+  ],
   "domain": "sermo",
   "terms": [
     {
@@ -21,6 +29,11 @@
       "latin": "Nōlī lacrimāre; nihil malī factum est.",
       "english": "Don’t cry; nothing bad has happened.",
       "source": "composed"
+    },
+    {
+      "latin": "Nihil est; nē plōrā.",
+      "english": "It’s all right; don’t cry.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -35,10 +48,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
-  },
-  "also": [
-    "don’t you worry!"
-  ]
+  }
 }

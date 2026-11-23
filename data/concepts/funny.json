@@ -2,11 +2,30 @@
   "id": "funny",
   "english": "funny",
   "pos": "adjective",
+  "also": [
+    "humorous",
+    "humorously",
+    "that’s funny",
+    "how funny",
+    "that’s so funny",
+    "what a funny story"
+  ],
   "domain": "sermo",
   "terms": [
     {
-      "latin": "jocōsus",
+      "latin": "rīdiculus, rīdicula, rīdiculum",
       "status": "recommended",
+      "period": "classical",
+      "gloss": "funny, laughable, amusing",
+      "evidence": [
+        "Cic. Fam. 7.32: <span lang=\"la\">quamvīs rīdicula essent, sīcut erant</span>",
+        "Hor. A. P. 139: <span lang=\"la\">rīdiculus mūs</span>, a funny little mouse (Lewis &amp; Short)"
+      ],
+      "comment": "The plain classical word for what makes one laugh, in a good sense as well as a bad (Lewis &amp; Short: “laughable, droll, funny, amusing”); see also “ridiculous”."
+    },
+    {
+      "latin": "jocōsus",
+      "status": "alternative",
       "period": "classical",
       "evidence": [
         "Traupman 153",
@@ -37,10 +56,22 @@
       ]
     }
   ],
-  "sources": [
-    "<a href=\"https://logeion.org/jocosus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: jocosus</a> · <a href=\"https://logeion.org/festivus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: festivus</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 153, 319, 330.",
-    "<a href=\"https://logeion.uchicago.edu/festivus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: festivus</a>"
+  "phrases": [
+    {
+      "latin": "Ō fābulam rīdiculam!",
+      "english": "What a funny story!",
+      "source": "composed"
+    },
+    {
+      "latin": "Illa, quamvīs rīdicula essent, sīcut erant, mihi tamen rīsum nōn mōvērunt",
+      "english": "Those things, funny as they were (and they were), still didn’t make me laugh",
+      "source": "Cic. Fam. 7.32"
+    },
+    {
+      "latin": "nāscētur rīdiculus mūs",
+      "english": "out will come a funny little mouse",
+      "source": "Hor. A. P. 139"
+    }
   ],
   "notes": {
     "jocosus": {
@@ -51,13 +82,16 @@
       "ruling": "consonantal-j"
     }
   },
+  "sources": [
+    "<a href=\"https://logeion.org/jocosus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: jocosus</a> · <a href=\"https://logeion.org/festivus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: festivus</a> · <a href=\"https://logeion.uchicago.edu/ridiculus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ridiculus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 153, 319, 330.",
+    "<a href=\"https://logeion.uchicago.edu/festivus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: festivus</a>",
+    "Cicero, <em>Letters to Friends</em> 7.32.",
+    "Horace, <em>Ars poetica</em> 139."
+  ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
-  },
-  "also": [
-    "humorous",
-    "humorously"
-  ]
+  }
 }

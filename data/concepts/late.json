@@ -10,7 +10,12 @@
     "all too late",
     "we’re late",
     "we’ll be late",
-    "you’re late"
+    "you’re late",
+    "I’m running late",
+    "running late",
+    "I’m late",
+    "later than I said",
+    "later than expected"
   ],
   "domain": "vectura",
   "also_under": [
@@ -43,6 +48,17 @@
       "evidence": [
         "Traupman 337"
       ]
+    },
+    {
+      "latin": "tardius",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "later than expected or than one said",
+      "grammar": "comparative adverb of tardē, with quam",
+      "evidence": [
+        "Cic. Att. 4.14.1: <span lang=\"la\">tardius quam dīxerās</span>",
+        "Plin. Ep. 10.17A.2: <span lang=\"la\">aliquantō tardius quam spērāveram</span>"
+      ]
     }
   ],
   "phrases": [
@@ -70,6 +86,16 @@
       "latin": "māne venī potius; nam cūr tē quīnta morētur? ut jantēs, sērō, Caeciliāne, venīs",
       "english": "come in the morning instead; why should the fifth hour keep you? For breakfast, Caecilianus, you’re late",
       "source": "Mart. 8.67.9–10"
+    },
+    {
+      "latin": "Tardius veniam quam dīxī; nē mē exspectāverīs.",
+      "english": "I’ll be later than I said; don’t wait for me.",
+      "source": "composed"
+    },
+    {
+      "latin": "tē Rōmā … putārī profectum esse tardius quam dīxerās",
+      "english": "that you are thought to have left Rome later than you had said",
+      "source": "Cic. Att. 4.14.1"
     }
   ],
   "related": [
@@ -78,15 +104,17 @@
     "later"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/serus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: serus</a>",
+    "<a href=\"https://logeion.uchicago.edu/serus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: serus</a> · <a href=\"https://logeion.uchicago.edu/tardus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: tardus</a>",
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026, with their glosses. Examples marked “Libellus” quote those texts word for word; classical passages are cited by author.",
     "<a href=\"https://logeion.org/serus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: serus</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 83, 337.",
-    "Martial 8.67.9–10."
+    "Martial 8.67.9–10.",
+    "Cicero, <em>Letters to Atticus</em> 4.14.1.",
+    "Pliny, <em>Letters</em> 10.17A.2."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

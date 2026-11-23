@@ -8,7 +8,14 @@
     "can you hear me?",
     "I hear that",
     "catch (what someone says)",
-    "I didn’t catch what you said"
+    "I didn’t catch what you said",
+    "did you hear me?",
+    "do you hear me?",
+    "are you listening properly?",
+    "I can’t hear you",
+    "you’re breaking up",
+    "I can’t hear you properly",
+    "I can barely hear you"
   ],
   "domain": "verba",
   "terms": [
@@ -71,6 +78,26 @@
       "latin": "Nōn satis exaudiēbam dicta tua.",
       "english": "I didn’t quite catch what you said.",
       "source": "Traupman 287"
+    },
+    {
+      "latin": "Properā, atque audīn'?",
+      "english": "Hurry, and, listen…",
+      "source": "Ter. And. 299"
+    },
+    {
+      "latin": "sed quae loquātur exaudīre hinc nōn queō.",
+      "english": "but I can’t hear from here what she’s saying.",
+      "source": "Plaut. Merc. 707"
+    },
+    {
+      "latin": "heri nesciō quid in strepitū videor exaudīsse cum dīcerēs tē in Tusculānum ventūrum",
+      "english": "yesterday, in all the noise, I thought I caught something of your saying you would come to Tusculum",
+      "source": "Cic. Att. 13.48.1"
+    },
+    {
+      "latin": "Vōx tua intermittitur; nōn exaudiō. Dīc iterum.",
+      "english": "You’re breaking up; I can’t hear you. Say it again.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -82,11 +109,14 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/audio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: audio</a> · <a href=\"https://logeion.uchicago.edu/exaudio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: exaudio</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 95, 287, 327."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 95, 287, 327.",
+    "Terence, <em>Andria</em> 299.",
+    "Plautus, <em>Mercator</em> 707.",
+    "Cicero, <em>Letters to Atticus</em> 13.48.1."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

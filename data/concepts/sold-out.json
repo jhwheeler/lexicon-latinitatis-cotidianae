@@ -2,10 +2,18 @@
   "id": "sold-out",
   "english": "sold out",
   "pos": "phrase",
+  "also": [
+    "out of stock",
+    "not in stock",
+    "none left",
+    "there are none left",
+    "we’ve run out",
+    "we’ve sold out"
+  ],
+  "domain": "urbs",
   "also_under": [
     "pecunia"
   ],
-  "domain": "urbs",
   "terms": [
     {
       "latin": "omnia dīvēndita sunt",
@@ -18,17 +26,29 @@
       "comment": "<span lang=\"la\">dīvēndō</span>, sell off piecemeal."
     }
   ],
+  "phrases": [
+    {
+      "latin": "Pānis jam nūllus restat; crās māne redī.",
+      "english": "There’s no bread left; come back tomorrow morning.",
+      "source": "composed"
+    },
+    {
+      "latin": "Ōva omnia vēndidimus; crās nova afferentur.",
+      "english": "We’re out of eggs; new ones are coming tomorrow.",
+      "source": "composed"
+    }
+  ],
   "related": [
     "sell",
     "for-sale"
   ],
   "sources": [
-    "<a href=\"https://logeion.org/divendo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: divendo</a>",
+    "<a href=\"https://logeion.org/divendo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: divendo</a> · <a href=\"https://logeion.uchicago.edu/resto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: resto</a>",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. sold out."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

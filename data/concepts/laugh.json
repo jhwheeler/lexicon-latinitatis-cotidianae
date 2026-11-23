@@ -2,6 +2,17 @@
   "id": "laugh",
   "english": "laugh",
   "pos": "verb",
+  "also": [
+    "laugh till one cries",
+    "I laughed till I cried",
+    "laugh at",
+    "giggle",
+    "giggling",
+    "make someone laugh",
+    "you make me laugh",
+    "can’t stop laughing",
+    "I can’t help laughing"
+  ],
   "domain": "sermo",
   "terms": [
     {
@@ -11,6 +22,52 @@
       "evidence": [
         "Traupman 338"
       ]
+    },
+    {
+      "latin": "rīsum movēre (+ dat.)",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "make someone laugh",
+      "evidence": [
+        "Cic. Att. 6.3.7: <span lang=\"la\">mihi rīsum magis quam stomachum movēre solet</span>",
+        "Cic. de Or. 2.255: <span lang=\"la\">noster error rīsum movet</span>"
+      ]
+    },
+    {
+      "latin": "rīsum tenēre",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "keep from laughing; with nōn posse, be unable to stop giggling",
+      "evidence": [
+        "Hor. A. P. 5: <span lang=\"la\">rīsum teneātis, amīcī?</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Rīsī ūsque ad lacrimās.",
+      "english": "I laughed till I cried.",
+      "source": "Traupman 102"
+    },
+    {
+      "latin": "Rīsum tenēre nōn possum!",
+      "english": "I can’t stop giggling!",
+      "source": "composed"
+    },
+    {
+      "latin": "spectātum admissī, rīsum teneātis, amīcī?",
+      "english": "if you were let in to see it, could you keep from laughing, friends?",
+      "source": "Hor. A. P. 5"
+    },
+    {
+      "latin": "in quō tamen ille mihi rīsum magis quam stomachum movēre solet",
+      "english": "but in this he usually makes me laugh rather than angry",
+      "source": "Cic. Att. 6.3.7"
+    },
+    {
+      "latin": "cum aliud exspectāmus, aliud dīcitur: hīc nōbīsmet ipsīs noster error rīsum movet",
+      "english": "when we expect one thing and another is said: here our own mistake makes us laugh",
+      "source": "Cic. de Or. 2.255"
     }
   ],
   "related": [
@@ -18,24 +75,14 @@
     "laugh-out-loud"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/rideo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: rideo</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 102, 338."
+    "<a href=\"https://logeion.uchicago.edu/rideo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: rideo</a> · <a href=\"https://logeion.uchicago.edu/risus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: risus</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 102, 338.",
+    "Horace, <em>Ars poetica</em> 5.",
+    "Cicero, <em>Letters to Atticus</em> 6.3.7; <em>De oratore</em> 2.255."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
-  },
-  "also": [
-    "laugh till one cries",
-    "I laughed till I cried",
-    "laugh at"
-  ],
-  "phrases": [
-    {
-      "latin": "Rīsī ūsque ad lacrimās.",
-      "english": "I laughed till I cried.",
-      "source": "Traupman 102"
-    }
-  ]
+  }
 }

@@ -11,7 +11,11 @@
     "telephone call",
     "telephone conversation",
     "telephone line",
-    "toll call"
+    "toll call",
+    "he’s on the phone",
+    "she’s on the phone",
+    "be on the phone",
+    "on the phone"
   ],
   "domain": "sermo",
   "terms": [
@@ -35,18 +39,6 @@
       "comment": "<span lang=\"la\">Longinquum</span>, long-distance, is classical; <span lang=\"la\">locālis</span> is late Latin (Lewis &amp; Short)."
     }
   ],
-  "related": [
-    "the-phone-is-ringing"
-  ],
-  "sources": [
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 38.",
-    "<a href=\"https://logeion.uchicago.edu/colloquium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: colloquium</a> · <a href=\"https://logeion.uchicago.edu/localis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: localis</a>"
-  ],
-  "review": {
-    "status": "draft",
-    "date": "2026-11-12",
-    "by": "Claude"
-  },
   "phrases": [
     {
       "latin": "tēlephōnēma (locāle, longinquum)",
@@ -62,6 +54,28 @@
       "latin": "tēlephōnēma longinquum",
       "english": "a toll call, a long-distance call",
       "source": "Traupman 395"
+    },
+    {
+      "latin": "Tacē paulisper: pater tēlephōnicē colloquitur.",
+      "english": "Be quiet a moment: Dad’s on the phone.",
+      "source": "composed"
+    },
+    {
+      "latin": "Māter cum aviā tēlephōnicē colloquitur; mox veniet.",
+      "english": "Mum’s on the phone with Granny; she’ll come soon.",
+      "source": "composed"
     }
-  ]
+  ],
+  "related": [
+    "the-phone-is-ringing"
+  ],
+  "sources": [
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 38.",
+    "<a href=\"https://logeion.uchicago.edu/colloquium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: colloquium</a> · <a href=\"https://logeion.uchicago.edu/localis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: localis</a>"
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-23",
+    "by": "Claude"
+  }
 }

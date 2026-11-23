@@ -6,7 +6,11 @@
     "character",
     "bad",
     "saucy",
-    "cheeky"
+    "cheeky",
+    "that’s naughty",
+    "that was naughty",
+    "that’s not nice",
+    "you’re being naughty"
   ],
   "domain": "sermo",
   "terms": [
@@ -28,12 +32,37 @@
         "Lewis &amp; Short (class.)",
         "Traupman 350: (saucy) <span lang=\"la\">petulāns</span>"
       ]
+    },
+    {
+      "latin": "male facere",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "do wrong, be naughty: male facis, that’s naughty of you",
+      "evidence": [
+        "Plaut. Merc. 873: <span lang=\"la\">Male facis, properantem quī mē commorāre.</span>"
+      ],
+      "comment": "Latin scolds the act rather than the child: <span lang=\"la\">male facis</span>, “you’re doing wrong”, or <span lang=\"la\">improbē fēcistī</span>."
     }
   ],
   "phrases": [
     {
       "latin": "Improbe! Quid fēcistī?",
       "english": "You rascal! What have you done?",
+      "source": "composed"
+    },
+    {
+      "latin": "Male facis, properantem quī mē commorāre.",
+      "english": "That’s naughty of you, holding me up when I’m in a hurry.",
+      "source": "Plaut. Merc. 873"
+    },
+    {
+      "latin": "prōtinus ergō, nē quid cupidē, nē quid improbē, nē quid impotenter faciat, monendus est puer",
+      "english": "so from the start the boy must be warned not to do anything greedily, naughtily, or without self-control",
+      "source": "Quint. 1.3.13"
+    },
+    {
+      "latin": "Improbē fēcistī; nōn decet.",
+      "english": "That was naughty; it isn’t nice.",
       "source": "composed"
     }
   ],
@@ -45,14 +74,16 @@
   ],
   "sources": [
     "<a href=\"https://logeion.org/improbus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: improbus</a> · <a href=\"https://logeion.uchicago.edu/petulans\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: petulans</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 275."
-  ],
-  "replaces": [
-    "entry-310"
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 275.",
+    "Plautus, <em>Mercator</em> 873.",
+    "Quintilian 1.3.13."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
-  }
+  },
+  "replaces": [
+    "entry-310"
+  ]
 }

@@ -2,10 +2,15 @@
   "id": "money",
   "english": "money",
   "pos": "noun",
+  "also": [
+    "how much money have you got?",
+    "how much money do you have?",
+    "have you got any money?"
+  ],
+  "domain": "urbs",
   "also_under": [
     "pecunia"
   ],
-  "domain": "urbs",
   "terms": [
     {
       "latin": "nummī, nummōrum m. pl.",
@@ -43,6 +48,16 @@
       "latin": "Habēsne nummōs, an chartulā crēditōriā solvēs?",
       "english": "Have you got cash, or will you pay by card?",
       "source": "composed"
+    },
+    {
+      "latin": "Quantum nummōrum in loculīs habēs? — Quīnque, tata.",
+      "english": "How much money have you got in your pocket? — Five, Dad.",
+      "source": "composed"
+    },
+    {
+      "latin": "Beātus videor: subdūxī ratiunculam, quantum aeris mihi sit quantumque aliēnī siet",
+      "english": "I feel a happy man: I’ve done a little sum of how much money I have and how much I owe",
+      "source": "Plaut. Curc. 371–372"
     }
   ],
   "related": [
@@ -56,11 +71,12 @@
     "<a href=\"https://logeion.uchicago.edu/nummus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: nummus</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 131.",
     "<a href=\"https://logeion.uchicago.edu/pecunia\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pecunia</a>",
-    "<a href=\"https://logeion.uchicago.edu/argentum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: argentum</a>"
+    "<a href=\"https://logeion.uchicago.edu/argentum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: argentum</a>",
+    "Plautus, <em>Curculio</em> 371–372."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

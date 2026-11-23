@@ -18,7 +18,10 @@
     "do you mean me?",
     "now you know what I mean",
     "I made up my mind not to",
-    "I had in mind to"
+    "I had in mind to",
+    "it was an accident",
+    "it was an accident, I didn’t mean to",
+    "not on purpose"
   ],
   "domain": "verba",
   "terms": [
@@ -152,6 +155,21 @@
       "latin": "Scīs jam quid loquar.",
       "english": "Now you know what I mean.",
       "source": "Traupman 103"
+    },
+    {
+      "latin": "Cāsū factum est, nōn cōnsultō.",
+      "english": "It was an accident; I didn’t do it on purpose.",
+      "source": "composed"
+    },
+    {
+      "latin": "quoniam nōn cōnsultō sed cāsū in eōrum mentiōnem incidī",
+      "english": "since I have come to mention them not on purpose but by accident",
+      "source": "Cic. Div. Caec. 50"
+    },
+    {
+      "latin": "mihi ut ignōscās, sīquid imprūdēns culpā peccāvī meā",
+      "english": "(I beg you) to forgive me, if I did you any wrong without meaning to, through my own fault",
+      "source": "Plaut. Epid. 729"
     }
   ],
   "related": [
@@ -164,11 +182,13 @@
     "<a href=\"https://logeion.uchicago.edu/destino\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: destino</a>",
     "<a href=\"https://logeion.uchicago.edu/animus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: animus</a> · <a href=\"https://logeion.uchicago.edu/volo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: volo</a> · <a href=\"https://logeion.uchicago.edu/cogito\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cogito</a> · <a href=\"https://logeion.uchicago.edu/consulto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: consulto</a> · <a href=\"https://logeion.uchicago.edu/imprudens\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: imprudens</a>",
     "Cic. Fam. 14.11 and Off. 1.27, Ter. Eun. 797, Hec. 880, and Ph. 19.",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 101, 104, 333."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 101, 104, 333.",
+    "Cicero, <em>Divinatio in Caecilium</em> 50.",
+    "Plautus, <em>Epidicus</em> 729."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

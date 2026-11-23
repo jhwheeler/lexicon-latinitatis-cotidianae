@@ -10,12 +10,16 @@
     "at a loss",
     "can’t tear myself away from (my books)",
     "be stuck on",
-    "I’m stuck"
+    "I’m stuck",
+    "it’s frozen",
+    "frozen (a computer)",
+    "the screen froze",
+    "it froze"
   ],
+  "domain": "sermo",
   "also_under": [
     "verba"
   ],
-  "domain": "sermo",
   "terms": [
     {
       "latin": "haereō, haerēre, haesī, haesum",
@@ -82,6 +86,16 @@
       "latin": "Haereō.",
       "english": "I’m stuck (out of ideas).",
       "source": "Traupman 386"
+    },
+    {
+      "latin": "Computātrum haeret; nihil movētur.",
+      "english": "The computer’s frozen; nothing moves.",
+      "source": "composed"
+    },
+    {
+      "latin": "Quadrum haeret: dēnuō excitā.",
+      "english": "The screen’s frozen: restart it.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -94,7 +108,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-23",
     "by": "Claude"
   }
 }

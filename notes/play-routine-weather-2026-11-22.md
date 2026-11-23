@@ -68,4 +68,5 @@ Conker is *castanea equīna*, Mattioli's name of 1571 (Morgan–Owens), marked r
 - **skim stones**: he knows it as skipping stones; "skipping stones", "skip rocks", and their like are among the record's wordings.
 - **did you sleep well?**: stays as it is; Plautus has the verb of a night's sleep too.
 - **a classical saying leads over a modern one**: agreed in general, with respect for what Latin speakers use today (now in `docs/drafting.md`).
-- Still open: chew (*mandō* or *mandūcō* first), echo (*imāgō* or *Ēchō* first).
+- **chew**: *mandō, mandere* leads (Cicero, Pliny); *mandūcō*, the everyday lengthened form that became the Romance word for eating, is the alternative, with Augustus's letter (Suet. Aug. 76).
+- **echo**: *imāgō* leads (Vergil, Horace); the Greek *Ēchō* is the alternative.

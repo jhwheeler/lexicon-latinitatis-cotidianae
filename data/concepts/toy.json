@@ -3,21 +3,51 @@
   "english": "toy",
   "pos": "noun",
   "also": [
-    "toys"
+    "toys",
+    "plaything",
+    "playthings"
   ],
   "domain": "ludi",
   "terms": [
     {
-      "latin": "lūdibrium, lūdibriī n.",
+      "latin": "lūdicrum, lūdicrī n.",
       "status": "recommended",
+      "period": "classical",
+      "gloss": "a plaything, a toy",
+      "evidence": [
+        "Catull. 61.23–25: <span lang=\"la\">quōs Hamādryades deae lūdicrum sibi rōscidō nūtriunt ūmōre</span>",
+        "M-O s.v. toy"
+      ],
+      "comment": "A thing to play with: in Catullus the myrtle sprigs that the wood-nymphs rear as a plaything for themselves (Lewis &amp; Short: “a sport, toy, means of sport”). In prose <span lang=\"la\">lūdicrum</span> is more often a show or public games (Livy). Morgan–Owens puts it first for “toy”, before <span lang=\"la\">lūdibrium</span>. Plural <span lang=\"la\">lūdicra, lūdicrōrum</span>."
+    },
+    {
+      "latin": "lūdibrium, lūdibriī n.",
+      "status": "alternative",
       "period": "modern",
       "evidence": [
         "Traupman 396"
       ],
-      "comment": "Plural <strong lang=\"la\">lūdibria, lūdibriōrum n. pl.</strong>, toys. Traupman 396 explicitly gives toy. Ancient <span lang=\"la\">lūdibrium</span> often means mockery/plaything; do not assume the neutral modern toy sense in every ancient occurrence.",
+      "comment": "Traupman’s word for a toy (p. 396); plural <span lang=\"la\">lūdibria, lūdibriōrum</span>. In the authors <span lang=\"la\">lūdibrium</span> is mockery, or a thing made sport of (<span lang=\"la\">lūdibria ventīs</span>, playthings of the winds), so <span lang=\"la\">lūdicrum</span> leads.",
       "notes": [
         "ludibrium"
       ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Quod lūdicrum tibi maximē placet?",
+      "english": "Which toy do you like best?",
+      "source": "composed"
+    },
+    {
+      "latin": "Lūdicra tua collige; mox cēnābimus.",
+      "english": "Pick up your toys; we’ll be having supper soon.",
+      "source": "composed"
+    },
+    {
+      "latin": "quōs Hamādryades deae lūdicrum sibi rōscidō nūtriunt ūmōre",
+      "english": "which the wood-nymphs feed with dewy moisture as a plaything for themselves",
+      "source": "Catull. 61.23–25"
     }
   ],
   "notes": {
@@ -33,9 +63,11 @@
     "play-games"
   ],
   "sources": [
-    "<a href=\"https://www.alatius.com/ls/index.php?l=ludibrium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ludibrium</a>",
+    "<a href=\"https://www.alatius.com/ls/index.php?l=ludibrium\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ludibrium</a> · <a href=\"https://www.alatius.com/ls/index.php?l=ludicer\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ludicer</a>",
     "<a href=\"https://paulatinygriego.wordpress.com/wp-content/uploads/2019/02/conversational-latin-for-oral-proficiency-traupman.pdf\" rel=\"noopener noreferrer\" target=\"_blank\">Traupman (fourth edition)</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 396."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 396.",
+    "Catullus 61.23–25.",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. toy."
   ],
   "review": {
     "status": "draft",

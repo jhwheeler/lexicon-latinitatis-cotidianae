@@ -59,3 +59,13 @@ Conker is *castanea equīna*, Mattioli's name of 1571 (Morgan–Owens), marked r
 - Word families: *excīdō* (cut out) joins *caedō*; *impertiō* joins *partior*; *merīdiātiō* joins *merīdiēs*; *siccitās* joins *siccus*. All four are right, so `data/families.json` is unchanged.
 - No existing word page changes its address. The new *excīdō* is at `l/excido-2.html`, beside *excidō* (fall out) at `l/excido.html`.
 - Several extended records still carry older source lines or examples that name the readers (hide-and-seek, slide-down); they are left for the pass on reader references.
+
+## Jack's answers (23 November 2026)
+
+- **toy**: *lūdicrum* leads (Catullus 61.24; Morgan–Owens's first word), and it is the word he uses at home; Traupman's *lūdibrium* is the alternative. The composed examples that said *lūdibria* of toys (lighter, shop window, tidy up, vacuum) now say *lūdicra*.
+- **tug of war, hide and seek**: the Greek names stand as alternatives, in Latin letters and marked ours, since we have found no Latin author who uses them: *helcystinda lūdere* (ἑλκυστίνδα, διελκυστίνδα; Pollux 9.112, Eustathius 1111.24) and *apodidrāscinda lūdere* (ἀποδιδρασκίνδα; Pollux 9.117).
+- **cartwheel**: Jack read the Morgan–Owens page: *cernuāre* is the somersault (Apuleius), *corpus rotāre* the cartwheel (German *radschlagen*; Bauer, Helfer). *Corpus rotāre* leads, and our description is the alternative.
+- **skim stones**: he knows it as skipping stones; "skipping stones", "skip rocks", and their like are among the record's wordings.
+- **did you sleep well?**: stays as it is; Plautus has the verb of a night's sleep too.
+- **a classical saying leads over a modern one**: agreed in general, with respect for what Latin speakers use today (now in `docs/drafting.md`).
+- Still open: chew (*mandō* or *mandūcō* first), echo (*imāgō* or *Ēchō* first).

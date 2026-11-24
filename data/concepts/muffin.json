@@ -5,27 +5,30 @@
   "domain": "culina",
   "terms": [
     {
-      "latin": "scriblīta",
-      "status": "recommended",
-      "period": "modern",
-      "grammar": "noun, first declension",
-      "evidence": [
-        "Traupman 72"
-      ],
-      "comment": "Traupman’s “muffin”; classically a tart (Cato, Agr. 78; Plaut.). M-O uses it for pizza."
-    },
-    {
       "latin": "lībācunculus, lībācunculī m.",
-      "status": "alternative",
+      "status": "recommended",
       "period": "modern",
       "gloss": "cupcake, muffin",
       "evidence": [
         "Andresian p. 10"
       ],
       "comment": "Andresian’s diminutive on <span lang=\"la\">lībum</span>, a cake, after <span lang=\"la\">lucunculus</span>; not in Lewis &amp; Short. Morgan–Owens puts muffin and cupcake under one heading."
+    },
+    {
+      "latin": "scriblīta, scriblītae f.",
+      "status": "alternative",
+      "period": "modern",
+      "evidence": [
+        "Traupman 72"
+      ],
+      "comment": "Traupman’s “muffin”. Classically it is a cheese tart (Cato Agr. 78; Plautus; Petronius), and it is our word for a tart (see “tart”), so a muffin is better kept apart from it. Morgan–Owens uses it for pizza.",
+      "gloss": "Traupman’s word for a muffin; classically a tart"
     }
   ],
   "related": [
+    "tart",
+    "cake",
+    "biscuit",
     "pizza"
   ],
   "sources": [
@@ -35,7 +38,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-24",
     "by": "Claude"
   },
   "also": [

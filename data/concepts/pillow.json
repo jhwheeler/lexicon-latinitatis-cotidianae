@@ -2,6 +2,13 @@
   "id": "pillow",
   "english": "pillow",
   "pos": "noun",
+  "also": [
+    "cushion",
+    "cushions",
+    "sofa cushion",
+    "scatter cushion",
+    "sit on a cushion"
+  ],
   "domain": "domus",
   "terms": [
     {
@@ -18,12 +25,37 @@
       "evidence": [
         "Traupman 124"
       ]
+    },
+    {
+      "latin": "pulvillus, pulvillī m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a little cushion",
+      "evidence": [
+        "Hor. Epod. 8.16 (Lewis &amp; Short)"
+      ],
+      "comment": "The diminutive of <span lang=\"la\">pulvīnus</span>."
     }
   ],
   "phrases": [
     {
       "latin": "Pulvīnum cape.",
       "english": "Take the pillow.",
+      "source": "composed"
+    },
+    {
+      "latin": "Tum Crassum … pulvīnōsque poposcisse et omnīs in eīs sēdibus quae erant sub platanō cōnsēdisse dīcēbat",
+      "english": "then, he said, Crassus called for cushions, and they all sat down on the seats under the plane tree",
+      "source": "Cic. de Or. 1.29"
+    },
+    {
+      "latin": "Manē, pulvīnum. — Bene prōcūrās. mihi satis sīc fultumst.",
+      "english": "Wait, a cushion. — Kind of you. I’m propped up well enough as I am.",
+      "source": "Plaut. Stich. 94"
+    },
+    {
+      "latin": "Pulvīnum tibi suppōnam, ut altius sedeās.",
+      "english": "I’ll put a cushion under you, so you can sit higher.",
       "source": "composed"
     }
   ],
@@ -33,11 +65,13 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/pulvinus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pulvinus</a> · <a href=\"https://logeion.uchicago.edu/cervical\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: cervical</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 124."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 124.",
+    "Cicero, <em>De oratore</em> 1.29.",
+    "Plautus, <em>Stichus</em> 94."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-26",
     "by": "Claude"
   }
 }

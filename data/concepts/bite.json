@@ -14,7 +14,11 @@
     "don’t bite",
     "no biting",
     "he bit me",
-    "she bit me"
+    "she bit me",
+    "I’ve been bitten",
+    "I got bitten",
+    "something bit me",
+    "a mosquito bit me"
   ],
   "domain": "culina",
   "terms": [
@@ -37,6 +41,16 @@
       "evidence": [
         "Traupman 280"
       ]
+    },
+    {
+      "latin": "īcō, īcere, īcī, ictum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "strike; bite, sting (of a snake or an insect)",
+      "evidence": [
+        "Traupman 280"
+      ],
+      "comment": "Traupman’s verb for the bite of a snake or an insect; its noun <span lang=\"la\">ictus</span> is the bite or sting (see “mosquito bite”). Only some forms are in use (Lewis &amp; Short s.v. <span lang=\"la\">īciō</span>)."
     }
   ],
   "phrases": [
@@ -69,19 +83,29 @@
       "latin": "calvī momordit musca nūdātum caput",
       "english": "a fly bit a bald man on his bare head",
       "source": "Phaedr. 5.3.1"
+    },
+    {
+      "latin": "Au! Culex mē momordit.",
+      "english": "Ow! A mosquito’s bitten me.",
+      "source": "composed"
+    },
+    {
+      "latin": "Quid tē momordit? Ostende mihi.",
+      "english": "What bit you? Show me.",
+      "source": "composed"
     }
   ],
   "related": [
     "eat-up"
   ],
   "sources": [
-    "<a href=\"https://logeion.org/mordeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mordeo</a> · <a href=\"https://logeion.org/morsus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: morsus</a>",
+    "<a href=\"https://logeion.org/mordeo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: mordeo</a> · <a href=\"https://logeion.org/morsus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: morsus</a> · <a href=\"https://logeion.uchicago.edu/icio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: icio</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 280.",
     "Phaedrus 5.3.1."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "by": "Claude"
   }
 }

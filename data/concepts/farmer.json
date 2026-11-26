@@ -5,7 +5,10 @@
   "also": [
     "ploughman",
     "plowman",
-    "smallholder"
+    "smallholder",
+    "rice farmer",
+    "rice grower",
+    "rice farmers"
   ],
   "domain": "urbs",
   "terms": [
@@ -40,6 +43,16 @@
       "latin": "lūce sacrā requiēscat humus, requiēscat arātor",
       "english": "on the holy day let the soil rest, let the ploughman rest",
       "source": "Tib. 2.1.5"
+    },
+    {
+      "latin": "Agricolae orȳzam in agrīs aquā opertīs serunt.",
+      "english": "The farmers grow rice in fields covered with water.",
+      "source": "composed"
+    },
+    {
+      "latin": "maxumē quidem orȳzā gaudent",
+      "english": "above all they love rice",
+      "source": "Plin. NH 18.71"
     }
   ],
   "related": [
@@ -50,14 +63,15 @@
     "reaper"
   ],
   "sources": [
-    "<a href=\"https://logeion.org/agricola\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: agricola</a>",
+    "<a href=\"https://logeion.org/agricola\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: agricola</a> · <a href=\"https://logeion.uchicago.edu/oryza\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: oryza</a>",
     "<a href=\"https://logeion.uchicago.edu/arator\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: arator</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 166, 313.",
-    "Tibullus, <em>Elegiae</em> 2.1.5."
+    "Tibullus, <em>Elegiae</em> 2.1.5.",
+    "Pliny, <em>Natural History</em> 18.71."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-15",
+    "date": "2026-11-26",
     "by": "Claude"
   }
 }

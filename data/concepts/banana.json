@@ -2,6 +2,12 @@
   "id": "banana",
   "english": "banana",
   "pos": "noun",
+  "also": [
+    "banana tree",
+    "banana plant",
+    "banana trees",
+    "banana leaf"
+  ],
   "domain": "natura",
   "terms": [
     {
@@ -20,7 +26,7 @@
       "period": "modern",
       "evidence": [
         "Traupman 70",
-        "Pliny, N.H. 12.24: <span lang=\"la\">arborī nōmen palae, pōmō ariēnae</span>"
+        "Pliny, N.H. 12.24: <span lang=\"la\">arborī nōmen pālae, pōmō ariēnae</span>"
       ],
       "comment": "Traupman 70, alongside <span lang=\"la\">banāna</span>; from Pliny’s Indian fruit. No modern fruit sense is presented as Classical."
     },
@@ -32,12 +38,32 @@
         "M-O s.v. banana"
       ],
       "comment": "Medieval, and Linnaeus’s genus name <span lang=\"la\">Musa</span>."
+    },
+    {
+      "latin": "pāla, pālae f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "the Indian tree whose fruit is the ariena: the banana plant",
+      "evidence": [
+        "Plin. NH 12.24 (Lewis &amp; Short s.v. <span lang=\"la\">pāla</span>)"
+      ],
+      "comment": "Pliny’s name for the tree, beside <span lang=\"la\">ariēna</span> for its fruit; Lewis &amp; Short identifies it with the banana. The same form is <span lang=\"la\">pāla</span>, a spade."
     }
   ],
   "phrases": [
     {
       "latin": "Banānam dēcorticēmus.",
       "english": "Let’s peel the banana.",
+      "source": "composed"
+    },
+    {
+      "latin": "Vidē: in hāc arbore banānae adhūc viridēs pendent.",
+      "english": "Look: on this tree the bananas are still hanging green.",
+      "source": "composed"
+    },
+    {
+      "latin": "Folium pālae tam lātum est ut nōs ab imbre tegat.",
+      "english": "A banana leaf is so broad that it keeps the rain off us.",
       "source": "composed"
     }
   ],
@@ -46,16 +72,17 @@
     "avocado"
   ],
   "sources": [
+    "<a href=\"https://logeion.uchicago.edu/pala\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: pala</a>",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio: numbered food and kitchen sections</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 70–73."
   ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-26",
+    "by": "Claude"
+  },
   "replaces": [
     "entry-108",
     "smoothie-108"
-  ],
-  "review": {
-    "status": "draft",
-    "date": "2026-11-09",
-    "by": "Claude"
-  }
+  ]
 }

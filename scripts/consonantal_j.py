@@ -47,7 +47,7 @@ KEEP = {
     'ieram': 'form of eō', 'ierit': 'form of eō', 'ierint': 'form of eō', 'ierim': 'form of eō', 'iēns': 'form of eō',
     'superior': 'comparative, vocalic i', 'superius': 'comparative, vocalic i',
     'interior': 'comparative (also English), vocalic i', 'interius': 'comparative, vocalic i',
-    'plēiades': 'Greek Πλειάδες', 'gāius': 'trisyllabic Gāĭus', 'cāius': 'trisyllabic Cāĭus',
+    'plēiades': 'Greek Πλειάδες', 'plēiadas': 'Greek Πλειάδες', 'gāius': 'trisyllabic Gāĭus', 'cāius': 'trisyllabic Cāĭus',
     'deiot': 'abbreviation of Cicero’s Pro rege Deiotaro in citations: the i is a vowel (Dēiŏtarus, Greek Δηιόταρος)',
     'dēiotarus': 'Greek Δηιόταρος, vocalic i', 'dēiotarō': 'Greek Δηιόταρος, vocalic i', 'dēiotarum': 'Greek Δηιόταρος, vocalic i',
     'gāium': 'trisyllabic Gāĭus', 'gāiō': 'trisyllabic Gāĭus', 'gāiī': 'trisyllabic Gāĭus', 'gāī': 'trisyllabic Gāĭus',
@@ -66,6 +66,8 @@ KEEP = {
     'yield': 'English verb in unmarked prose (y counts as a vowel)',
     'yields': 'English verb in unmarked prose (y counts as a vowel)',
     'pharmacopoeia': 'English noun in unmarked prose',
+    'ionic': 'English adjective in unmarked prose (the Ionic dialect)',
+    'spazzaturaio': 'Italian headword of Levi–Bini in a citation',
     # citation labels keep the dictionary's own headword (L&S prints janua, jus, but deicio)
     'deicio': 'Lewis & Short headword in a citation label (L&S: dē-ĭcĭo, also dejicio)',
     'aio': 'Lewis & Short headword in a citation label (L&S: aio)',

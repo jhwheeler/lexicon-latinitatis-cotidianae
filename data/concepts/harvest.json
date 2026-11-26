@@ -6,7 +6,11 @@
     "harvest (verb)",
     "crop",
     "crops",
-    "yield"
+    "yield",
+    "harvest the rice",
+    "reap the rice",
+    "rice harvest",
+    "bring in the rice"
   ],
   "domain": "natura",
   "terms": [
@@ -40,6 +44,16 @@
         "Traupman 326"
       ],
       "comment": "Not in Cicero (Lewis &amp; Short)."
+    },
+    {
+      "latin": "metō, metere, messuī, messum",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "reap, harvest (the plain verb)",
+      "evidence": [
+        "Cic. de Or. 2.261: <span lang=\"la\">Ut sementem fēceris, ita metēs.</span>"
+      ],
+      "comment": "The simple verb beside <span lang=\"la\">dēmetō</span>; <span lang=\"la\">messis</span> is its noun."
     }
   ],
   "phrases": [
@@ -47,6 +61,16 @@
       "latin": "tempus messis",
       "english": "harvest time",
       "source": "composed"
+    },
+    {
+      "latin": "Jam orȳzam metunt agricolae; mox orȳzēta sicca erunt.",
+      "english": "The farmers are already reaping the rice; soon the paddies will be dry.",
+      "source": "composed"
+    },
+    {
+      "latin": "Ut sementem fēceris, ita metēs.",
+      "english": "As you sow, so shall you reap.",
+      "source": "Cic. de Or. 2.261"
     }
   ],
   "related": [
@@ -57,14 +81,15 @@
     "ripen"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/messis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: messis</a>",
+    "<a href=\"https://logeion.uchicago.edu/messis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: messis</a> · <a href=\"https://logeion.uchicago.edu/meto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: meto</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 166, 326.",
     "<a href=\"https://logeion.uchicago.edu/demeto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: demeto</a>",
-    "<a href=\"https://logeion.uchicago.edu/proventus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: proventus</a>"
+    "<a href=\"https://logeion.uchicago.edu/proventus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: proventus</a>",
+    "Cicero, <em>De oratore</em> 2.261."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-12",
+    "date": "2026-11-26",
     "by": "Claude"
   }
 }

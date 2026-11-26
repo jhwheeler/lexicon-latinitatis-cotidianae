@@ -2,12 +2,31 @@
   "id": "weight",
   "english": "weight",
   "pos": "noun",
+  "also": [
+    "how much do you weigh?",
+    "how heavy are you?",
+    "what do you weigh?",
+    "how much does it weigh?",
+    "how heavy is it?"
+  ],
   "domain": "culina",
   "terms": [
     {
       "latin": "pondus, ponderis n.",
       "status": "recommended",
       "period": "classical"
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "In lībram ascende: videāmus quot chīliogrammata pendās.",
+      "english": "Get on the scales: let’s see how many kilos you weigh.",
+      "source": "composed"
+    },
+    {
+      "latin": "Quantī ponderis est haec sarcina?",
+      "english": "How heavy is this bag?",
+      "source": "composed"
     }
   ],
   "related": [
@@ -20,7 +39,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-26",
     "by": "Claude"
   }
 }

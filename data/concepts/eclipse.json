@@ -1,0 +1,79 @@
+{
+  "id": "eclipse",
+  "english": "eclipse",
+  "pos": "noun",
+  "also": [
+    "eclipses",
+    "eclipse of the sun",
+    "eclipse of the moon",
+    "solar eclipse",
+    "lunar eclipse"
+  ],
+  "domain": "natura",
+  "terms": [
+    {
+      "latin": "dēfectiō, dēfectiōnis f.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "an eclipse (“a failing”), with sōlis or lūnae",
+      "evidence": [
+        "Cic. Div. 2.17: <span lang=\"la\">Sōlis dēfectiōnēs itemque lūnae praedīcuntur in multōs annōs</span>",
+        "Cic. Rep. 1.25: <span lang=\"la\">superiōrēs sōlis dēfectiōnēs</span>"
+      ],
+      "comment": "Cicero’s word. The verb is <span lang=\"la\">dēficere</span>: <span lang=\"la\">sōl dēficit</span>, the sun is eclipsed (Cic. Rep. 1.25, below)."
+    },
+    {
+      "latin": "dēfectus, dēfectūs m.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "an eclipse",
+      "evidence": [
+        "Lucr. 5.751: <span lang=\"la\">Sōlis item quoque dēfectūs lūnaeque latebrās</span>"
+      ]
+    },
+    {
+      "latin": "eclīpsis, eclīpsis f.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "an eclipse",
+      "evidence": [
+        "Rhet. Her. 3.36: <span lang=\"la\">sōlis eclīpsis</span> (Lewis &amp; Short)",
+        "Plin. NH 2.53 (Lewis &amp; Short)"
+      ],
+      "comment": "The Greek word, used by the <em>Rhetorica ad Herennium</em> and Pliny; Lewis &amp; Short calls <span lang=\"la\">dēfectiō</span> and <span lang=\"la\">dēfectus</span> the pure Latin."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Hodiē sōl dēficiet; nōlī eum intuērī.",
+      "english": "There’s an eclipse of the sun today; don’t look straight at it.",
+      "source": "composed"
+    },
+    {
+      "latin": "erat enim tum haec nova et ignōta ratiō, sōlem lūnae oppositū solēre dēficere",
+      "english": "for this explanation was new and unknown then: that the sun is eclipsed when the moon gets in its way",
+      "source": "Cic. Rep. 1.25"
+    },
+    {
+      "latin": "Sōlis dēfectiōnēs itemque lūnae praedīcuntur in multōs annōs ab iīs quī sīderum mōtūs numerīs persequuntur",
+      "english": "eclipses of the sun, and of the moon too, are foretold many years ahead by those who follow the movements of the stars with calculations",
+      "source": "Cic. Div. 2.17"
+    }
+  ],
+  "related": [
+    "sun",
+    "moon",
+    "astronomy",
+    "predict"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/defectio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: defectio</a> · <a href=\"https://logeion.uchicago.edu/defectus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: defectus</a> · <a href=\"https://logeion.uchicago.edu/eclipsis\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: eclipsis</a>",
+    "Cicero, <em>De divinatione</em> 2.17; <em>De re publica</em> 1.25.",
+    "Lucretius 5.751."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-26",
+    "by": "Claude"
+  }
+}

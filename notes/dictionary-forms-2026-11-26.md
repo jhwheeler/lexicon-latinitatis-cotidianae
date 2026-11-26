@@ -8,7 +8,7 @@ A survey of every term found 386 nouns, verbs, and adjectives given as one bare 
 
 - **232 terms in 188 records** have their forms: nouns with genitive and gender (*mōriō, mōriōnis m.*), verbs with the parts Lewis & Short gives (*spīrō, spīrāre, spīrāvī, spīrātum*; two parts only where it gives no more, as *ganniō, gannīre*), adjectives with their endings (*āter, ātra, ātrum*; *mītis, mīte*; *patiēns, patientis*).
 - 25 grammar notes that only repeated what the form now shows ("noun, second declension") were removed.
-- 34 terms stay bare, with reason: adverbs (*fortiter*, *tūtō*), the third persons the animal-sound records give on purpose (*clāmat*, *strīdet*), *pluit*, *tepēscit*, *disserēnat*, the locative *rūrī*, the imperative *dīmitte*, *gravida* (the feminine on purpose), and *suī* in "family", which changes with the person (*meī*, *tuī*).
+- 35 terms stay bare, with reason: adverbs (*fortiter*, *tūtō*), the third persons the animal-sound records give on purpose (*clāmat*, *strīdet*), *pluit*, *tepēscit*, *disserēnat*, the locative *rūrī*, the imperative *dīmitte*, *gravida* (the feminine on purpose), and *suī* in "family", which changes with the person (*meī*, *tuī*).
 - pull and rest each had the same verb twice, once bare; the two are one term now.
 - be-awake: *vigilō* has its perfect and supine; gloves: *digitābula* is marked plural.
 - The words in the texts that find their entry rose from 125,348 to 125,483.

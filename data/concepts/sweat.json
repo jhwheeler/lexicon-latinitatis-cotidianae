@@ -4,7 +4,11 @@
   "pos": "verb",
   "also": [
     "sweating",
-    "break a sweat"
+    "break a sweat",
+    "I’m sweating",
+    "I’m all sweaty",
+    "sweaty",
+    "dripping with sweat"
   ],
   "domain": "corpus",
   "terms": [
@@ -27,21 +31,37 @@
       "comment": "The noun; to break a sweat is <span lang=\"la\">īnsūdāre</span> (Traupman 66)."
     }
   ],
-  "sources": [
-    "<a href=\"https://logeion.uchicago.edu/sudo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sudo</a>",
-    "<a href=\"https://logeion.uchicago.edu/sudor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sudor</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 59, 66, 388."
-  ],
-  "review": {
-    "status": "draft",
-    "date": "2026-11-12",
-    "by": "Claude"
-  },
   "phrases": [
     {
       "latin": "īnsūdāre",
       "english": "to break a sweat",
       "source": "Traupman 388"
+    },
+    {
+      "latin": "Sūdō; dā mihi aquam frīgidam.",
+      "english": "I’m sweating; give me some cold water.",
+      "source": "composed"
+    },
+    {
+      "latin": "Sūdāmus et sūdāmus.",
+      "english": "We sweat and sweat.",
+      "source": "Traupman 134"
+    },
+    {
+      "latin": "Quārē ego nōn sūdō, quī tēcum, Zoile, cēnō?",
+      "english": "Why don’t I sweat, when I dine with you, Zoilus?",
+      "source": "Mart. 5.79.5"
     }
-  ]
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/sudo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sudo</a>",
+    "<a href=\"https://logeion.uchicago.edu/sudor\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sudor</a>",
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 59, 66, 134, 388.",
+    "Martial 5.79.5."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-26",
+    "by": "Claude"
+  }
 }

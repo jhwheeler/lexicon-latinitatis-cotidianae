@@ -2,6 +2,10 @@
   "id": "rice",
   "english": "rice",
   "pos": "noun",
+  "also": [
+    "fried rice",
+    "nasi goreng"
+  ],
   "domain": "culina",
   "terms": [
     {
@@ -13,17 +17,29 @@
       ]
     }
   ],
+  "phrases": [
+    {
+      "latin": "Orȳzam frīctam cum ōvō cēnābimus.",
+      "english": "We’re having fried rice with an egg for dinner.",
+      "source": "composed"
+    },
+    {
+      "latin": "Orȳzam hesternam in sartāgine frīgam.",
+      "english": "I’ll fry yesterday’s rice in the pan.",
+      "source": "composed"
+    }
+  ],
   "related": [
     "pasta",
     "pantry"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/oryza\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: oryza</a>",
+    "<a href=\"https://logeion.uchicago.edu/oryza\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: oryza</a> · <a href=\"https://logeion.uchicago.edu/frigo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: frigo</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 70, 72, 124."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-26",
     "by": "Claude"
   }
 }

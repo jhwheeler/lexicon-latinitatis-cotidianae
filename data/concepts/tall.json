@@ -9,12 +9,16 @@
     "a tall tree",
     "a head taller than",
     "he is tall",
-    "be a head taller than"
+    "be a head taller than",
+    "how tall are you?",
+    "how tall is he?",
+    "what height are you?",
+    "how tall is it?"
   ],
+  "domain": "verba",
   "also_under": [
     "corpus"
   ],
-  "domain": "verba",
   "terms": [
     {
       "latin": "prōcērus, prōcēra, prōcērum",
@@ -80,6 +84,16 @@
       "latin": "tōtō vertice suprā est",
       "english": "he is taller by a whole head",
       "source": "Verg. A. 7.784 (Lewis &amp; Short s.v. <span lang=\"la\">vertex</span>); Traupman 326"
+    },
+    {
+      "latin": "Quā statūrā es? Age, ad postem tē mētiāmur.",
+      "english": "How tall are you? Come on, let’s measure you against the doorpost.",
+      "source": "composed"
+    },
+    {
+      "latin": "Quam alta est haec arbor?",
+      "english": "How tall is this tree?",
+      "source": "composed"
     }
   ],
   "related": [
@@ -95,7 +109,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-26",
     "by": "Claude"
   }
 }

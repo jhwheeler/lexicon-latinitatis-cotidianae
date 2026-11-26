@@ -6,7 +6,10 @@
   "also": [
     "palm tree",
     "palm trees",
-    "date palm"
+    "date palm",
+    "coconut palm",
+    "coconut tree",
+    "coconut palms"
   ],
   "domain": "natura",
   "terms": [
@@ -22,6 +25,16 @@
         "M-O s.v. date palm"
       ],
       "comment": "The same word as the palm of the hand and the victor’s palm (see award). Used alone it meant the date palm (Morgan–Owens s.v. date palm, after Varro and Pliny); Pliny’s book 13 names other kinds. In poetry <span lang=\"la\">palma</span> is also the date itself, which is ordinarily <span lang=\"la\">dactylus</span> (Lewis &amp; Short)."
+    },
+    {
+      "latin": "palma cocifera",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "the coconut palm",
+      "evidence": [
+        "M-O s.v. coconut palm"
+      ],
+      "comment": "Morgan–Owens’s modern name, beside <span lang=\"la\">nux Indica</span> for the tree as for the nut (see “coconut”). Plain <span lang=\"la\">palma</span> serves where it is clear which palm is meant."
     }
   ],
   "phrases": [
@@ -29,6 +42,16 @@
       "latin": "etiam ardua palma nāscitur",
       "english": "the lofty palm too springs up (from a planted slip)",
       "source": "Verg. G. 2.67–68"
+    },
+    {
+      "latin": "Vidē, in summā palmā nucēs Indicae pendent.",
+      "english": "Look, there are coconuts hanging at the top of the palm.",
+      "source": "composed"
+    },
+    {
+      "latin": "Nōlī sub hāc palmā sedēre: nux Indica in caput tibi cadere potest.",
+      "english": "Don’t sit under this palm: a coconut could fall on your head.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -41,11 +64,11 @@
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/palma\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: palma</a>",
     "Vergil, <em>Georgica</em> 2.67–68.",
-    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. date palm."
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.vv. coconut palm; date palm."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-20",
+    "date": "2026-11-26",
     "by": "Claude"
   }
 }

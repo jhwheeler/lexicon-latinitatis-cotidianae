@@ -2,6 +2,12 @@
   "id": "volcano",
   "english": "volcano",
   "pos": "noun",
+  "also": [
+    "the volcano is smoking",
+    "smoking volcano",
+    "the mountain is smoking",
+    "smoke from the volcano"
+  ],
   "domain": "natura",
   "terms": [
     {
@@ -25,17 +31,36 @@
       "comment": "The god’s name made a common noun, as in the modern languages; Morgan–Owens cites it from Egger."
     }
   ],
+  "phrases": [
+    {
+      "latin": "Ecce, mōns fūmat! — Nōlī timēre: procul abest.",
+      "english": "Look, the mountain’s smoking! — Don’t be afraid: it’s a long way off.",
+      "source": "composed"
+    },
+    {
+      "latin": "Aetnaeī verticis fūmō ac murmure pavefactus",
+      "english": "terrified by the smoke and rumbling of Etna’s summit",
+      "source": "Suet. Cal. 51"
+    },
+    {
+      "latin": "interdumque ātram prōrumpit ad aethera nūbem turbine fūmantem piceō et candente favillā",
+      "english": "and now it hurls up into the sky a black cloud, smoking with a pitchy whirl of smoke and glowing ash",
+      "source": "Verg. A. 3.572–573"
+    }
+  ],
   "related": [
     "mountain"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/ignivomus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ignivomus</a> · <a href=\"https://logeion.uchicago.edu/Vulcanus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: Vulcanus</a>",
+    "<a href=\"https://logeion.uchicago.edu/ignivomus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: ignivomus</a> · <a href=\"https://logeion.uchicago.edu/Vulcanus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: Vulcanus</a> · <a href=\"https://logeion.uchicago.edu/fumo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: fumo</a>",
     "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. volcano.",
-    "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 22."
+    "Anna Andresian, <em>Vocabula Picta</em> (2014), p. 22.",
+    "Suetonius, <em>Caligula</em> 51.",
+    "Vergil, <em>Aeneid</em> 3.572–573."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-11",
+    "date": "2026-11-26",
     "by": "Claude"
   }
 }

@@ -2,17 +2,34 @@
   "id": "sand",
   "english": "sand",
   "pos": "noun",
+  "also": [
+    "black sand",
+    "volcanic sand",
+    "black-sand beach"
+  ],
+  "domain": "aedificatio",
   "also_under": [
     "ludi",
     "natura"
   ],
-  "domain": "aedificatio",
   "terms": [
     {
       "latin": "harēna, harēnae f.",
       "status": "recommended",
       "period": "classical",
       "comment": "Material and surface vocabulary, linked conceptually to the construction entries."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Hīc harēna nigra est, nōn flāva.",
+      "english": "The sand here is black, not yellow.",
+      "source": "composed"
+    },
+    {
+      "latin": "Harēna nigra sōle calet; nōlī nūdīs pedibus īre.",
+      "english": "The black sand is hot in the sun; don’t walk barefoot.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -30,7 +47,7 @@
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-26",
     "by": "Claude"
   }
 }

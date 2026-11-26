@@ -6,7 +6,15 @@
     "woods",
     "enchanted forest",
     "magic forest",
-    "enchanted wood"
+    "enchanted wood",
+    "jungle",
+    "the jungle",
+    "tropical forest",
+    "jungles",
+    "rainforest",
+    "rain forest",
+    "tropical rainforest",
+    "rainforests"
   ],
   "domain": "natura",
   "terms": [
@@ -19,12 +27,37 @@
         "Traupman 318",
         "Traupman 204, 408"
       ]
+    },
+    {
+      "latin": "silva tropica",
+      "status": "alternative",
+      "period": "modern",
+      "gloss": "a tropical forest, a jungle",
+      "evidence": [
+        "M-O s.v. biomes: jungle, tropical rainforest"
+      ],
+      "comment": "Egger’s phrase, in Morgan–Owens, who doubts whether <span lang=\"la\">tropicus</span> (classically “of the turning of the sun”) should be taken for “tropical”. Classical Latin says <span lang=\"la\">silva</span> and describes it: Curtius’s forests of India are <span lang=\"la\">silvae … in inmēnsum spatium diffūsae</span>, shady with tall trees."
     }
   ],
   "phrases": [
     {
       "latin": "In hāc silvā incantātā arborēs loquuntur.",
       "english": "In this enchanted forest the trees talk.",
+      "source": "composed"
+    },
+    {
+      "latin": "Silvae erant prope in inmēnsum spatium diffūsae prōcērīsque et in eximiam altitūdinem ēditīs arboribus umbrōsae.",
+      "english": "There were forests spread over an almost boundless space, shady with tall trees rising to a remarkable height.",
+      "source": "Curt. 9.1"
+    },
+    {
+      "latin": "Quam dēnsa est haec silva! Vix caelum vidēmus.",
+      "english": "How thick this jungle is! We can hardly see the sky.",
+      "source": "composed"
+    },
+    {
+      "latin": "In hāc silvā cotīdiē pluit; ideō tam viridis est.",
+      "english": "It rains every day in this forest; that’s why it’s so green.",
       "source": "composed"
     }
   ],
@@ -40,11 +73,13 @@
   ],
   "sources": [
     "<a href=\"https://logeion.uchicago.edu/silva\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: silva</a> · <a href=\"https://logeion.uchicago.edu/incanto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: incanto</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 204, 318, 408."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 204, 318, 408.",
+    "Curtius 9.1.",
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio</a>: s.v. biomes: jungle, tropical rainforest."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-23",
+    "date": "2026-11-26",
     "by": "Claude"
   }
 }

@@ -2,6 +2,12 @@
   "id": "coconut",
   "english": "coconut",
   "pos": "noun",
+  "also": [
+    "open the coconut",
+    "crack the coconut",
+    "crack open a coconut",
+    "break open a coconut"
+  ],
   "domain": "culina",
   "terms": [
     {
@@ -11,15 +17,33 @@
       "comment": "The noun phrase is recorded."
     }
   ],
+  "phrases": [
+    {
+      "latin": "Nucem Indicam cultrō magnō aperiam; tū procul stā.",
+      "english": "I’ll open the coconut with the big knife; you stand well back.",
+      "source": "composed"
+    },
+    {
+      "latin": "Haec nux tam dūra est ut frangī nōn possit.",
+      "english": "This nut is so hard it won’t crack.",
+      "source": "composed"
+    },
+    {
+      "latin": "quī ē nuce nuculeum ēsse volt, frangit nucem",
+      "english": "whoever wants to eat the kernel from the nut must crack the nut",
+      "source": "Plaut. Curc. 55"
+    }
+  ],
   "related": [
     "coconut-milk"
   ],
   "sources": [
-    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio: numbered food and kitchen sections</a>"
+    "<a href=\"https://neolatinlexicon.org/adumbratio-old/\" rel=\"noopener noreferrer\" target=\"_blank\">Morgan–Owens, Adumbratio: numbered food and kitchen sections</a>",
+    "Plautus, <em>Curculio</em> 55."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-26",
     "by": "Claude"
   }
 }

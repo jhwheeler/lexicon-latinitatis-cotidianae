@@ -7,7 +7,11 @@
     "plant a tree",
     "set out plants",
     "plant seeds",
-    "sow seeds"
+    "sow seeds",
+    "plant rice",
+    "sow rice",
+    "plant out rice",
+    "plant rice seedlings"
   ],
   "domain": "domus",
   "terms": [
@@ -42,6 +46,16 @@
       "latin": "Sēmina in hortulō serāmus.",
       "english": "Let’s plant some seeds in the little garden.",
       "source": "composed"
+    },
+    {
+      "latin": "Ecce, agricolae orȳzam serunt, singulās plantās in lutum dēfīgentēs.",
+      "english": "Look, the farmers are planting rice, pushing each seedling into the mud.",
+      "source": "composed"
+    },
+    {
+      "latin": "Cum orȳzam sēvērunt, aquam in agrōs immittunt.",
+      "english": "When they have planted the rice, they let the water into the fields.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -54,14 +68,14 @@
     "plant-nursery"
   ],
   "sources": [
-    "<a href=\"https://logeion.uchicago.edu/sero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sero</a>",
+    "<a href=\"https://logeion.uchicago.edu/sero\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sero</a> · <a href=\"https://logeion.uchicago.edu/planta\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: planta</a>",
     "<a href=\"https://logeion.uchicago.edu/planto\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: planto</a>",
     "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, p. 166.",
     "<span lang=\"la\">Theodōrus et pater · Ad Larem avītum</span>, Libellī I–VII, as they stood on 7 November 2026. Examples marked “Libellus” quote those texts word for word."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-22",
+    "date": "2026-11-26",
     "by": "Claude"
   }
 }

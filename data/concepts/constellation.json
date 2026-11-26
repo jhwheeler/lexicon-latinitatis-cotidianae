@@ -1,0 +1,70 @@
+{
+  "id": "constellation",
+  "english": "constellation",
+  "pos": "noun",
+  "also": [
+    "constellations",
+    "star sign",
+    "the Plough",
+    "the Great Bear",
+    "the Big Dipper"
+  ],
+  "domain": "natura",
+  "terms": [
+    {
+      "latin": "sīdus, sīderis n.",
+      "status": "recommended",
+      "period": "classical",
+      "gloss": "a constellation, a group of stars",
+      "evidence": [
+        "Cic. N. D. 1.35: <span lang=\"la\">signīs sīderibusque caelestibus</span> (Lewis &amp; Short)",
+        "Macr. Somn. 1.14 (Lewis &amp; Short)"
+      ],
+      "comment": "Properly a group of stars making a figure, as against <span lang=\"la\">stēlla</span>, a single star (Macrobius, as Lewis &amp; Short quotes him); in the poets also a single star. The Plough is <span lang=\"la\">Septentriōnēs</span>, the seven stars, or <span lang=\"la\">Ursa Major</span>."
+    },
+    {
+      "latin": "signum, signī n.",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a constellation; a sign of the zodiac",
+      "evidence": [
+        "Cic. de Or. 3.178: <span lang=\"la\">ad brūmāle signum</span>"
+      ],
+      "comment": "A figure in the sky, used above all of the twelve signs the sun passes through."
+    },
+    {
+      "latin": "cōnstellātiō, cōnstellātiōnis f.",
+      "status": "avoid",
+      "period": "late",
+      "comment": "Late Latin (Ammianus, the <em>Historia Augusta</em>), and there a grouping of stars thought to rule a person’s fate (Lewis &amp; Short): an astrologer’s word. Say <span lang=\"la\">sīdus</span>."
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "Vidēsne illās septem stēllās? Septentriōnēs vocantur.",
+      "english": "Can you see those seven stars? They’re called the Plough.",
+      "source": "composed"
+    },
+    {
+      "latin": "nāvita tum stēllīs numerōs et nōmina fēcit, Plēiadas, Hyadas, clāramque Lycāonis Arcton",
+      "english": "then the sailor numbered the stars and named them: the Pleiades, the Hyades, and the bright Bear of Lycaon’s daughter",
+      "source": "Verg. G. 1.137–138"
+    }
+  ],
+  "related": [
+    "star",
+    "sky",
+    "milky-way",
+    "astronomy"
+  ],
+  "sources": [
+    "<a href=\"https://logeion.uchicago.edu/sidus\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: sidus</a> · <a href=\"https://logeion.uchicago.edu/signum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: signum</a> · <a href=\"https://logeion.uchicago.edu/constellatio\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: constellatio</a>",
+    "Vergil, <em>Georgics</em> 1.137–138.",
+    "Cicero, <em>De oratore</em> 3.178."
+  ],
+  "review": {
+    "status": "draft",
+    "date": "2026-11-26",
+    "by": "Claude"
+  }
+}

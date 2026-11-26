@@ -5,12 +5,19 @@
   "also": [
     "electric fan",
     "fan oven",
-    "fan (verb)"
+    "fan (verb)",
+    "ceiling fan",
+    "ceiling fans",
+    "turn on the fan",
+    "switch on the fan",
+    "put the fan on",
+    "turn off the fan",
+    "switch off the fan"
   ],
+  "domain": "domus",
   "also_under": [
     "culina"
   ],
-  "domain": "domus",
   "terms": [
     {
       "latin": "flābellum, flābellī n.",
@@ -58,6 +65,26 @@
       "latin": "māchinula ventigena",
       "english": "an electric fan",
       "source": "Traupman 313"
+    },
+    {
+      "latin": "māchina ventigena ē tēctō suspēnsa",
+      "english": "a ceiling fan",
+      "source": "composed"
+    },
+    {
+      "latin": "Māchina ventigena ē tēctō pendēns āëra movet.",
+      "english": "The ceiling fan stirs the air.",
+      "source": "composed"
+    },
+    {
+      "latin": "Quantus aestus! Excitā māchinam ventigenam.",
+      "english": "It’s so hot! Turn on the fan.",
+      "source": "composed"
+    },
+    {
+      "latin": "Māchinam ventigenam exstingue; jam frīgeō.",
+      "english": "Turn the fan off; I’m cold now.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -72,12 +99,12 @@
     "<a href=\"https://logeion.uchicago.edu/flabellum\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: flabellum</a>",
     "<span lang=\"la\">Theodōrus et pater: Culīna Theodōrī</span>, the recipe book that goes with the libellī (<span lang=\"la\">Ad Libellōs I–VII</span>); examples marked “Culīna Theodōrī” quote it word for word."
   ],
-  "replaces": [
-    "entry-423"
-  ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-26",
     "by": "Claude"
-  }
+  },
+  "replaces": [
+    "entry-423"
+  ]
 }

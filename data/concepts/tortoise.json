@@ -4,7 +4,10 @@
   "pos": "noun",
   "also": [
     "turtle",
-    "turtle shell"
+    "turtle shell",
+    "sea turtle",
+    "sea turtles",
+    "marine turtle"
   ],
   "domain": "natura",
   "terms": [
@@ -16,6 +19,32 @@
       "evidence": [
         "Traupman 145, 399"
       ]
+    },
+    {
+      "latin": "testūdō marīna",
+      "status": "alternative",
+      "period": "classical",
+      "gloss": "a sea turtle",
+      "evidence": [
+        "Plin. NH 11.180: <span lang=\"la\">testūdinī marīnae lingua nūlla nec dentēs</span>"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "latin": "ēminente tōtō dorsō per tranquilla fluitantēs",
+      "english": "floating on the calm sea with the whole shell showing",
+      "source": "Plin. NH 9.35"
+    },
+    {
+      "latin": "pariunt ōva avium ōvīs similia ad centēna numerō eaque dēfossa extrā aquās et cooperta terrā … incubant noctibus",
+      "english": "they lay eggs like birds’ eggs, up to a hundred at a time, bury them out of the water, cover them with earth, … and sit on them at night",
+      "source": "Plin. NH 9.37"
+    },
+    {
+      "latin": "Ecce testūdō marīna! Caput ex aquā extollit ut spīret.",
+      "english": "Look, a sea turtle! It’s lifting its head out of the water to breathe.",
+      "source": "composed"
     }
   ],
   "related": [
@@ -23,11 +52,12 @@
   ],
   "sources": [
     "<a href=\"https://logeion.org/testudo\" rel=\"noopener noreferrer\" target=\"_blank\">Lewis &amp; Short: testudo</a>",
-    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 145, 399."
+    "John C. Traupman, <em>Conversational Latin for Oral Proficiency</em>, pp. 145, 399.",
+    "Pliny, <em>Natural History</em> 9.35; 9.37; 11.180."
   ],
   "review": {
     "status": "draft",
-    "date": "2026-11-09",
+    "date": "2026-11-26",
     "by": "Claude"
   }
 }
